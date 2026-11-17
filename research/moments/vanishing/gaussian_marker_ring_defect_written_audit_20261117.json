@@ -1,0 +1,85 @@
+{
+  "date": "2026-11-17",
+  "classification": "progress:complete all-Q-algebra generation-defect functor for quadratic Gaussian family,sharp field/Artin-to-ring descent countercontrol.",
+  "canonical": "GAUSSIAN_MARKER_GENERATION_RING_DEFECT.tex",
+  "canonical_sha256": "e868b08219bc5092a59335f9a8b1b9993477a2c77153e1b78b6c0b2847b4ef84",
+  "model": "P_b(Y)=Y^2+bY;mean1,NOT PURE;does not refute GMC or the retained quadratic/field marker-generation theorems.",
+  "operator_algebra": "D_R=R[t]<partial_t>;coefficientb is NOT differentiated.",
+  "universal_result": "For arbitrary commutative Q-algebra R,b in R,full actual V and unit cyclic Nact:V/Nact=(R/(bR+Gamma_b(R)))tensor delta_(t=1/2). No reduced/Noetherian/domain assumption. Actual source kernel Gamma_s(M)=Gamma_b(R)tensor delta with explicit ground torsion witnesses.",
+  "generation_criterion": "bR+Gamma_b(R)=R iff some b^L(1-br)=0 iff idempotent unit/nilpotent decomposition. Finite inverse/nilpotence/idempotent witnesses retained.",
+  "proof_obligations": [
+    {
+      "id": "AMBIENT-QUOTIENT",
+      "status": "written",
+      "argument": "Even Bezout packets give every even class in Dunit;commutator bRj=nablaKj-Kj+1-b^2tEj+1 givesb(M/N)0. Right-exact cokernel base change atb0 gives exact odd delta quotient R/b."
+    },
+    {
+      "id": "ACTUAL-KERNEL",
+      "status": "written",
+      "argument": "After s inversion source free rank1,formal Gaussian unit invertible,localized rationalring injects into series,so kernel=Gamma_s. DY injective by leading degree and regulars. Direct witness reduction ats0 solves Qprime+(b/2)Q0;all solutions finite exponentials with coefficient Gamma_b. This computes FULL KERNEL ONLY FOR THIS MODEL."
+    },
+    {
+      "id": "FULL-POINT-TORSION",
+      "status": "written",
+      "argument": "Explicit finite Taylor projector pi=sum D^j s^j/j! forD=-nabla/2 and reconstruction decompose every locally s-nilpotent class. Gives Gamma_s=Gamma_b tensor delta over arbitrary Q-algebra."
+    },
+    {
+      "id": "ACTUAL-DEFECT",
+      "status": "written",
+      "argument": "Ground m_c maps to c[Y] modulo N;all higher terms even or b-divisible. Image of source kernel in R/b delta is natural Gamma_b modb;quotient gives exactformula."
+    },
+    {
+      "id": "NILPOTENT-OPERATOR",
+      "status": "written exact certificate",
+      "argument": "Forb^L0,nu=ceilL/2,polynomial gauge AL and Euler projector product(E+j+1/2)/j recover h=s^-1/2 from F with order<=nu-1. Conditionalmarkers all in R[t,s^-1]h. Unitcomponent packet and explicitidempotent combine witnesses."
+    },
+    {
+      "id": "UNIVERSAL-NONMEMBERSHIP",
+      "status": "written",
+      "argument": "R0=Q[b] hasGamma_b0,so source embeds ACTUALLY intoR0[[t]]. Source quotientdelta is nonzero,so PhiY notinD_R0F despite every field fibre and all finite Artinthickenings. Also failureoverQ[[b]]."
+    },
+    {
+      "id": "SPECIALIZATION",
+      "status": "written",
+      "argument": "Universal V=M is torsionfree/flat overPIDQ[b]. Atb0 source stillhasodd pointdelta killedbyactualJ. Exact kernel delta in VtensorQ ->actualV0. Flatuniversal module alone doesnotgive embedded actualimagebasechange."
+    }
+  ],
+  "exact_controls": {
+    "checker": "verify_gaussian_marker_ring_defect.py",
+    "checker_sha256": "9603275721c0d780f7190c4c25f933260f3017ba7c29d2882be4d59f28ef6d6b",
+    "artifact": "gaussian_marker_ring_defect_verification.json",
+    "artifact_sha256": "b9c42ef55be9d4a44283a211c468d42a770ff12c5dcc09cb837b7b39f63c7902",
+    "checks": 14,
+    "mutations_rejected": 2,
+    "thresholds": [
+      1,
+      2,
+      5
+    ],
+    "scope": "Finite algebraic transcription checks of torsion remainders,nilpotent gauge/projector,idempotent guard and finite vectors in infinite pointmodule. Universal quotient and nonmembership rely on written proof.",
+    "successful_checker_sealed": true
+  },
+  "actual_image_kernel_computed": true,
+  "actual_kernel_scope": "Only this explicit scalar quadratic model over arbitrary Q-algebras. No general Gaussian source-kernel algorithm run.",
+  "old_sealed_checkers_replayed": false,
+  "old_operator_packets_unchanged": true,
+  "old_all_ring_theorems_unchanged": true,
+  "old_nonconvergent_formal_theorems_unchanged": true,
+  "old_papers_unchanged": true,
+  "H21_proved": false,
+  "remaining": "Return to H(2,1) purity=>base-period polynomiality;retain field/ring scope and do not infer global operator membership from fibres or coefficient jets.",
+  "independent_replay": false,
+  "formal_verification": false,
+  "external_review": false,
+  "novelty_assessed": false,
+  "submission_ready": false,
+  "broader_goal_status": "active",
+  "pdf_quality": {
+    "path": "unpublished/gaussian-marker-generation-ring-defect/gaussian_marker_generation_ring_defect.pdf",
+    "pages": 5,
+    "sha256": "22b21438651538988e2b5fc45004ccea06a35c0f9261d35e3faf6e0ea603c588",
+    "source_sha256": "e868b08219bc5092a59335f9a8b1b9993477a2c77153e1b78b6c0b2847b4ef84",
+    "layout_verified": true,
+    "method": "Final source compiled twice after edits;all5pages rendered at100dpi and inspected at full size. No overfull boxes or undefined references."
+  }
+}

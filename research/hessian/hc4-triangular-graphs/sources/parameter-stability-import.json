@@ -1,0 +1,120 @@
+{
+  "review_date": "2026-11-15",
+  "title": "Parameter-stable irreducibility, moving rows and global suspension frames",
+  "retained_primary_inputs": [
+    {
+      "url": "https://arxiv.org/html/1411.5011v2",
+      "retained_file": "jelonek-lason-nonproper-1411.5011v2.html",
+      "sha256": "7a00a58a0d03ca9a24dfebbb9b7c25bae2c5ac0087d472614f873c2d9b968714",
+      "title": "Quantitative properties of the non-properness set of a polynomial map",
+      "authors": [
+        "Zbigniew Jelonek",
+        "Michal Lason"
+      ],
+      "version": "arXiv:1411.5011v2",
+      "role": "Explicit proof input: Definition 2.1, Proposition 2.2, Definition 2.3, and Theorem 3.2. For a generically finite polynomial map from complex affine space, its nonproperness set is covered by nonconstant polynomial images of A1. Only this qualitative conclusion is used, not the degree bound."
+    },
+    {
+      "url": "https://stacks.math.columbia.edu/tag/0EXQ",
+      "retained_file": "stacks-normal-boundary-dvr-0EXQ.html",
+      "sha256": "aa48a4b8ccf03b73abcc98740824ce5fbe64dd0fc968de4dda89596e8426f3d1",
+      "role": "Explicit proof input: Lemma 15.113.3 multiplicativity of ramification indices, Definition 15.113.7 and the finite-etale criterion in the proof of Lemma 15.113.8. Only finite extensions of characteristic-zero divisorial DVRs are used."
+    },
+    {
+      "url": "https://stacks.math.columbia.edu/tag/0BSD",
+      "retained_file": "stacks-monic-inertia-0BSD.html",
+      "sha256": "cd127a5a3b7d2b586600d03cc2a810bf400af445f77fb9d1248aa55f41082253",
+      "role": "Section 58.13, inertia definition, Lemmas 58.13.1-2, Example 58.13.3 and Lemma 58.13.4: inertia kernels describe the unramified quotient; for a regular base codimension-one inertia suffices by purity."
+    },
+    {
+      "url": "https://arxiv.org/html/math/0608157v2",
+      "retained_file": "arzhantsev-petravchuk-closed-math-0608157v2.html",
+      "sha256": "8042645504f3535bae9ce6d656a68015b893dbf259888ca4708e69722d658cc9",
+      "role": "Retained closed-polynomial implication and the generative-field proof HC4MYIL0, used for the exact content-fibre criterion and multivariable transfer. No additional special-fibre theorem is imported."
+    }
+  ],
+  "newly_used_primary_inputs": [
+    {
+      "url": "https://stacks.math.columbia.edu/tag/0BU7",
+      "section_url": "https://stacks.math.columbia.edu/tag/09E3",
+      "retained_file": "stacks-parameter-inertia-09E3.html",
+      "sha256": "c2c4b25576cbb893282e95eee882b9256a193cc5b3613a905bd3383946a2cde2",
+      "title": "Galois extensions and ramification: inertia restriction in a finite Galois tower",
+      "exact_import": "Stacks Lemma 15.114.11, tag 0BU7: restriction in a tower with both extensions Galois maps the upper inertia group surjectively onto the lower inertia group.",
+      "portions_inspected": "The complete lemma and proof in the primary 09E3 page, with the definition of decomposition and inertia groups. All tower hypotheses were checked for M E/F and M/F.",
+      "role": "Lift every bad horizontal inertia group from M/F to M E/F before applying the original plane-source theorem. The lifted inertia fixes the parameter cover E(V)/F because that cover is finite etale at horizontal primes. This places the projected original inertia in the source image over L E.",
+      "theorem_fully_reproved": false,
+      "new_source_bytes_downloaded": false,
+      "existing_repository_cache": "jacobian/monodromy-theory/sources/stacks-09E3.html",
+      "cache_copy_bytes_unchanged": true
+    }
+  ],
+  "retained_proof_and_source_sha256": {
+    "hessian/hc4-triangular-graphs/MULTIVARIABLE_SUSPENSIONS_AND_FIXED_MULTIPLIERS.md": "66a879db85c96347f7483c55c4c873792e50073090e2eddee64a03535911fb92",
+    "hessian/hc4-triangular-graphs/verify_multivariable_suspensions.py": "5c92e0dcc1724d24256f626e4d8d4804af3d5cd38caa48e8a2df737c3f1ce9ab",
+    "hessian/hc4-triangular-graphs/receipt-multivariable-suspensions.json": "09c6198f338652b12b03fddd0dc6ecd7233d577feca65cf4141ed2bdcf89f348",
+    "hessian/hc4-triangular-graphs/sources/multivariable-suspension-import.json": "488b35f1d0a1e3be8c58db812389785e9e3bdeaeb028a668e4d002ff9b7a182c",
+    "hessian/hc4-triangular-graphs/PARAMETER_NORMS_AND_ALL_POLYNOMIAL_OUTPUTS.md": "90269ed3af9c00bda0d2926bd49c406540d30670c97248b76bfee06b9146857a",
+    "hessian/hc4-triangular-graphs/verify_parameter_norms.py": "be46f7740bf893947e18a3f2ec23b0199ef24bd05736660df3c8052f5cd5ab23",
+    "hessian/hc4-triangular-graphs/receipt-parameter-norms.json": "b6e20e3802cbbb3534339f9f39ce98fb6099da2d4f8c646d21ca6a1664396572",
+    "hessian/hc4-triangular-graphs/sources/parameter-norm-import.json": "85ce7bf10adba07f37601a0798c638d9f9cf5e30b49744dadd8e36c9f9d5ecb0",
+    "hessian/hc4-triangular-graphs/BRANCH_CURVES_AND_RATIONAL_TRIANGULAR_PARAMETERS.md": "765a4740be042e6d52b5d1b029c47196cf2305df59143dfa39dd8477dde15e50",
+    "hessian/hc4-triangular-graphs/verify_branch_parameters.py": "5c38e9f2899be3624da42674e12444c57b44d7e4fda2e67e578e17406e301fa6",
+    "hessian/hc4-triangular-graphs/receipt-branch-parameters.json": "b5a720e19b4ae925cee2e74f16ceb89a738df9538a8d4e2f38ce7dc893e48a55",
+    "hessian/hc4-triangular-graphs/sources/branch-parameter-import.json": "0aa595c87f8c23f6b1f87f6aaca17ef6e50e612572feb41ef89a9fbc570e50df",
+    "hessian/hc4-triangular-graphs/REGULAR_PARAMETER_MONODROMY.md": "b010d2e4c62906a8a79da9dbc41ef7d0e3d5edefb4520cf487ba09ded5d86956",
+    "hessian/hc4-triangular-graphs/ABELIAN_CLASSGROUP_OUTPUT_OBSTRUCTION.md": "3a10bcc44350ae155d73f1786dbd1dc081c86b20d469e7efd0edfa408981462f",
+    "hessian/hc4-triangular-graphs/LEADING_FIBRE_UNIT_GATE.md": "1d054ba8762ea657be879b6e3568aa58c9ccb65e14ab642d45e0865e8f6382f0",
+    "hessian/hc4-triangular-graphs/SMOOTH_INFINITY_OUTPUT_OBSTRUCTION.md": "7ee0a9b293ca95a8f037cfdef0b5c0630f0fb169ec728df5b18c4dc2fb5638db",
+    "hessian/hc4-triangular-graphs/receipt-leading-fibre.json": "1e85c0ac096f9dd5de24294a5f907198fa4191824ceca82267979f5993597db8",
+    "hessian/hc4-triangular-graphs/sources/jelonek-lason-nonproper-1411.5011v2.html": "7a00a58a0d03ca9a24dfebbb9b7c25bae2c5ac0087d472614f873c2d9b968714",
+    "hessian/hc4-triangular-graphs/sources/stacks-normal-boundary-dvr-0EXQ.html": "aa48a4b8ccf03b73abcc98740824ce5fbe64dd0fc968de4dda89596e8426f3d1",
+    "hessian/hc4-triangular-graphs/sources/stacks-monic-inertia-0BSD.html": "cd127a5a3b7d2b586600d03cc2a810bf400af445f77fb9d1248aa55f41082253",
+    "hessian/hc4-triangular-graphs/sources/arzhantsev-petravchuk-closed-math-0608157v2.html": "8042645504f3535bae9ce6d656a68015b893dbf259888ca4708e69722d658cc9",
+    "hessian/hc4-triangular-graphs/sources/stacks-parameter-inertia-09E3.html": "c2c4b25576cbb893282e95eee882b9256a193cc5b3613a905bd3383946a2cde2"
+  },
+  "newly_used_external_statements": [
+    {
+      "url": "https://stacks.math.columbia.edu/tag/0BU7",
+      "retained_file": "stacks-parameter-inertia-09E3.html",
+      "sha256": "c2c4b25576cbb893282e95eee882b9256a193cc5b3613a905bd3383946a2cde2",
+      "statement": "Stacks Lemma 15.114.11, tag 0BU7: restriction in a tower with both extensions Galois maps the upper inertia group surjectively onto the lower inertia group.",
+      "theorem_fully_reproved": false,
+      "new_source_bytes_downloaded": false
+    }
+  ],
+  "direct_proof_arguments": [
+    "horizontal bad inertia lifts to the parameter compositum and fixes the unramified parameter extension",
+    "the original source-image theorem puts the lifted inertia into the source subgroup over L E",
+    "the integral monic-model norm proof remains valid after enlarging its parameter field to contain an arbitrary E",
+    "the original bad-inertia block quotient therefore proves irreducibility after every finite parameter extension",
+    "a row-splitting parameter subgroup has transitive outer-root action and kills all moving class-lattice invariants",
+    "the coefficient content gives an exact height-one geometric-integrality criterion",
+    "either a monic multiplier leading term or a monic root leading term gives a global free filtration",
+    "a uniform polynomial presentation change supplies adapted global frames when both original leading coefficients are nonunits",
+    "a determinant-one Bezout parameter matrix gives the general multivariable adapted frame under an independent multiplier-content hypothesis",
+    "a strict joint degree gap admits arbitrary polynomial remainders and coefficientwise division gives a uniform univariate leading-divisibility corollary"
+  ],
+  "parameter_extension_irreducibility_plane_only": true,
+  "original_plane_source_used_for_inertia": true,
+  "horizontal_parameter_cover_unramified_required": true,
+  "inertia_tower_surjectivity_explicitly_imported": true,
+  "moving_multiplier_generic_class_invariants_zero": true,
+  "disjoint_multiplier_and_root_variables_required": true,
+  "global_frame_and_content_fibre_conditions_separated": true,
+  "adapted_frame_proved_for_every_nonlinear_root_degree": true,
+  "unimodular_parameter_frame_with_content_hypothesis": true,
+  "strict_joint_degree_gap_frame": true,
+  "univariate_leading_divisibility_corollary": true,
+  "parameter_cover_source_assumed_affine_plane": false,
+  "vertical_parameter_inertia_asserted_trivial": false,
+  "full_splitting_group_preservation_inferred": false,
+  "every_moving_multiplier_asserted_global_frame": false,
+  "bezout_coprimality_alone_asserted_content_sufficient": false,
+  "composite_content_level_asserted_Keller_realization": false,
+  "overlapping_variables_asserted_covered": false,
+  "formal_verification": false,
+  "independent_replay": false,
+  "external_review": false,
+  "novelty_priority_asserted": false
+}

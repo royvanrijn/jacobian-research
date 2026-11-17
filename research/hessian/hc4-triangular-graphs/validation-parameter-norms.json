@@ -1,0 +1,130 @@
+{
+  "scoped_validation": "PASS",
+  "checks": [
+    "HC4MYIK0 schema, dependencies, locks, checker hash and assurance",
+    "HC4MYIK1 schema, dependencies, locks, checker hash and assurance",
+    "HC4MYIK2 schema, dependencies, locks, checker hash and assurance",
+    "HC4MYIK3 schema, dependencies, locks, checker hash and assurance",
+    "parameter norms, integral models and critical-value scaling are all-dimensional; unrestricted output closure is plane-only and gives irreducibility",
+    "parent remains open with four new forbidden attack classes and the entire plane coefficient frontier retired",
+    "fifty-seven sourced method records have current fingerprints and retire all coefficient and factor-degree subclasses in the plane",
+    "WORK-HC4-SCHUR has current fingerprints and a rewritten next step outside the closed polynomial-output class",
+    "WORK-HC4-RESIDUAL-AUDIT has current fingerprints and a rewritten next step outside the closed polynomial-output class",
+    "141 exact controls include source-unit norms, local critical scaling, polynomial blocks, branch support and all preserved byte pins",
+    "ordinary one-variable Luroth and structural smoothness imports are explicit; reduction, norm and polynomial one-pole arguments are direct",
+    "current navigation leads with the unrestricted theorem and retains older full-group and higher-dimensional evidence"
+  ],
+  "new_claims": [
+    "HC4MYIK0",
+    "HC4MYIK1",
+    "HC4MYIK2",
+    "HC4MYIK3"
+  ],
+  "previous_goal_turn_classification": "progress: all-dimensional relative central-series and product-cover gates, plus all-degree finite-critical-pole binomials registered",
+  "current_progress": "Finite-free norms replace false constant-unit assumptions on algebraic parameter-cover sources. All conjugate monic integrality gives unit target cross-resultants, yielding normal-monogenic and integral-affine-model irreducibility in all dimensions. A direct residue-characteristic-zero scaling proof converts integral critical values into integral centered monic coefficients. In the plane, contained bad inertia gives a polynomial outer block quotient whose critical values are integral, so block and within-block transitivity close every positive-degree P in C(T)[z] and the entire carried polynomial output class (T,xy-P).",
+  "exact_current_replay_checks": 141,
+  "algebraic_group_and_scope_controls": 41,
+  "retained_receipt_counts_not_newly_replayed": {
+    "receipt-central-quotients.json": 144,
+    "receipt-branch-parameters.json": 196,
+    "receipt-monic-covers.json": 48,
+    "receipt-leading-fibre.json": 43
+  },
+  "generated_views_refreshed": [
+    "index/core.md",
+    "index/hessian.md",
+    "index/README.md",
+    "index/documents.tsv",
+    "knowledge/work/core.md",
+    "knowledge/work/geometry.md",
+    "knowledge/work/hessian.md",
+    "STATUS.md"
+  ],
+  "newly_used_external_statements": [
+    {
+      "retained_file": "stacks-parameter-smooth-01V4.html",
+      "statement": "Smoothness under base change and composition; standard-smooth local descriptions",
+      "theorem_fully_reproved": false
+    },
+    {
+      "retained_file": "stacks-parameter-smooth-field-04QM.html",
+      "statement": "Smooth complex schemes are regular and normal; normal complex curves are smooth",
+      "theorem_fully_reproved": false
+    },
+    {
+      "retained_file": "bensimhoun-luroth-2004.pdf",
+      "statement": "Ordinary one-variable Luroth over an arbitrary field",
+      "theorem_fully_reproved": false
+    }
+  ],
+  "full_registry_validation_failure": "KDSQ6: missing document consumer artifacts/generated-results/README.md",
+  "full_navigation_validation_passed": false,
+  "missing_artifacts_reconstructed": false,
+  "closed_frontier": [
+    "every positive-degree P in C(T)[z] after every complex plane Keller pullback",
+    "every carried closed stable embedding through (T,xy-P(T,z)), P polynomial of positive z degree and r>=1",
+    "all former plane coefficient, leading-multiplicity, binomial, unequal-factor and critical-curve refinements of this class"
+  ],
+  "remaining_frontier": [
+    "compatible ambient observables for arbitrary HC4 graph embeddings",
+    "other ambient output geometries and class modules outside the retained global filtered certificates",
+    "unrestricted higher-dimensional polynomial-output irreducibility beyond integral-model and other retained all-dimensional tests",
+    "actual unit-Hessian representatives in singleton and coordinate source orbits",
+    "both plane endpoints and unrestricted HC4/JC2"
+  ],
+  "all_dimensional_parameter_norm_and_integral_model_theorems": true,
+  "all_dimensional_integral_critical_value_theorem": true,
+  "all_polynomial_output_irreducibility_plane_only": true,
+  "cross_resultant_unit_norm_used": true,
+  "all_parameter_conjugates_integral_required": true,
+  "polynomial_block_quotient_used": true,
+  "parameter_cover_source_assumed_affine_space": false,
+  "parameter_cover_units_assumed_constant": false,
+  "essential_surjectivity_used": false,
+  "good_reduction_dynamical_theorem_imported": false,
+  "Ritt_classification_imported": false,
+  "generic_group_classification_used": false,
+  "full_splitting_group_preservation_inferred": false,
+  "arbitrary_target_cover_group_preservation": false,
+  "nonlinear_source_Hessian_invariance_used": false,
+  "unit_ideal_endpoint_resolved": false,
+  "singleton_zero_endpoint_resolved": false,
+  "unrestricted_HC4_or_JC2_resolved": false,
+  "original_goal_complete": false,
+  "repository_checks": [
+    {
+      "command": "make render-navigation",
+      "chunk_id": "546390",
+      "wall_time_seconds": 0.3558125,
+      "exit_code": 1,
+      "original_token_count": 242,
+      "output": "make -C research PYTHON=\"/home/royvanrijn/src/jacobian-research/.venv/bin/python\" SYSTEM_PYTHON=\"python3\" \"render-navigation\"\nmake[1]: Entering directory '/home/royvanrijn/src/jacobian-research/research'\npython3 scripts/render_status.py\nTraceback (most recent call last):\n  File \"/home/royvanrijn/src/jacobian-research/research/scripts/render_status.py\", line 514, in <module>\n    main()\n  File \"/home/royvanrijn/src/jacobian-research/research/scripts/render_status.py\", line 503, in main\n    validate_index(index)\n  File \"/home/royvanrijn/src/jacobian-research/research/scripts/render_status.py\", line 360, in validate_index\n    assert consumer_path.is_file(), (\n           ^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: KDSQ6: missing document consumer artifacts/generated-results/README.md\nmake[1]: *** [Makefile:16: render-navigation] Error 1\nmake[1]: Leaving directory '/home/royvanrijn/src/jacobian-research/research'\nmake: *** [Makefile:17: render-navigation] Error 2\n"
+    },
+    {
+      "command": "make check-navigation",
+      "chunk_id": "3275f5",
+      "wall_time_seconds": 0.3394384,
+      "exit_code": 1,
+      "original_token_count": 213,
+      "output": "make -C research PYTHON=\"/home/royvanrijn/src/jacobian-research/.venv/bin/python\" SYSTEM_PYTHON=\"python3\" \"check-navigation\"\nmake[1]: Entering directory '/home/royvanrijn/src/jacobian-research/research'\npython3 scripts/audit_status.py\nTraceback (most recent call last):\n  File \"/home/royvanrijn/src/jacobian-research/research/scripts/audit_status.py\", line 8, in <module>\n    validate_index(index)\n  File \"/home/royvanrijn/src/jacobian-research/research/scripts/render_status.py\", line 360, in validate_index\n    assert consumer_path.is_file(), (\n           ^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: KDSQ6: missing document consumer artifacts/generated-results/README.md\nmake[1]: *** [Makefile:21: check-navigation] Error 1\nmake[1]: Leaving directory '/home/royvanrijn/src/jacobian-research/research'\nmake: *** [Makefile:17: check-navigation] Error 2\n"
+    },
+    {
+      "command": ".venv/bin/python research/scripts/research.py check --require-partial-review",
+      "chunk_id": "879950",
+      "wall_time_seconds": 0.1258819,
+      "exit_code": 1,
+      "original_token_count": 180,
+      "output": "Traceback (most recent call last):\n  File \"/home/royvanrijn/src/jacobian-research/research/scripts/research.py\", line 563, in <module>\n    raise SystemExit(main())\n                     ^^^^^^\n  File \"/home/royvanrijn/src/jacobian-research/research/scripts/research.py\", line 440, in main\n    validate_lessons(items, entries, check_reviews=args.command == \"check\")\n  File \"/home/royvanrijn/src/jacobian-research/research/scripts/research.py\", line 130, in validate_lessons\n    assert (ROOT / p).is_file(), f\"{item['id']}: missing source {p}\"\n           ^^^^^^^^^^^^^^^^^^^^"
+    },
+    {
+      "command": "git diff --check -- research/MATH_STATUS.json research/knowledge/lessons.json research/knowledge/work_items.json research/hessian/hc4-triangular-graphs/README.md research/index research/knowledge/work research/knowledge/WORK_LEDGER.md research/STATUS.md",
+      "chunk_id": "78e2e5",
+      "wall_time_seconds": 0.2015084,
+      "exit_code": 0,
+      "original_token_count": 0,
+      "output": ""
+    }
+  ],
+  "required_repository_checks_all_passed": false,
+  "scoped_diff_whitespace_check": "PASS"
+}

@@ -1,0 +1,115 @@
+{
+  "review_date": "2026-11-16",
+  "retained_structural_inputs": [
+    {
+      "claim": "HC4MYHX0",
+      "canonical_source": "hessian/hc4-triangular-graphs/REGULAR_PARAMETER_MONODROMY.md"
+    },
+    {
+      "claim": "KMFI1",
+      "canonical_source": "jacobian/monodromy-theory/THEORY.md"
+    },
+    {
+      "claim": "PF2RULED52",
+      "canonical_source": "jacobian/affine-complements/SOURCE_SYMMETRY_DESCENT_AND_TRACE_GATE.md"
+    },
+    {
+      "claim": "HC4MYKX0",
+      "canonical_source": "hessian/hc4-triangular-graphs/ALGEBRAIC_FLOW_DESCENT_AND_INTEGRAL_COORDINATES.md"
+    },
+    {
+      "claim": "HC4MYKZ1",
+      "canonical_source": "hessian/hc4-triangular-graphs/COMPLETE_HOLOMORPHIC_FLOW_DESCENT.md"
+    },
+    {
+      "claim": "HC4MYKY1",
+      "canonical_source": "hessian/hc4-triangular-graphs/TARGET_BOUNDARY_SYMMETRY_AND_FINITE_STABILIZER.md"
+    },
+    {
+      "claim": "KMFI47",
+      "canonical_source": "jacobian/monodromy-theory/GENERAL_DECK_RIGIDITY.md"
+    },
+    {
+      "claim": "HC4MYLD0",
+      "canonical_source": "hessian/hc4-triangular-graphs/ALL_CONJUGATE_LOCALIZATION_AND_UNIFORM_TRACE_LANDING.md"
+    },
+    {
+      "claim": "HC4MYLD1",
+      "canonical_source": "hessian/hc4-triangular-graphs/ALL_CONJUGATE_LOCALIZATION_AND_UNIFORM_TRACE_LANDING.md"
+    },
+    {
+      "claim": "HCTANG2",
+      "canonical_source": "hessian/tang-hc4-audit/STRUCTURAL_REVIEW.md"
+    },
+    {
+      "claim": "HC4MYKR0",
+      "canonical_source": "hessian/hc4-triangular-graphs/QUADRATIC_SOURCE_RECONSTRUCTION_AND_QUARTIC_RETIREMENT.md"
+    }
+  ],
+  "retained_proof_and_source_sha256": {
+    "hessian/hc4-triangular-graphs/REGULAR_PARAMETER_MONODROMY.md": "b010d2e4c62906a8a79da9dbc41ef7d0e3d5edefb4520cf487ba09ded5d86956",
+    "hessian/hc4-triangular-graphs/verify_regular_parameter.py": "640f2b1f303d9fc6232028ac6a744addd0de0380f5522ec7c11b52a30a6f175d",
+    "jacobian/monodromy-theory/THEORY.md": "71de191500c3ac73298540d8ce8b5496243b2b1a34b20313e3ab42d332532cdc",
+    "jacobian/monodromy-theory/verify.py": "f6538a84c4cb04c532be93647e808e978a165bc6dd90efef0024586ebbc80c47",
+    "jacobian/affine-complements/SOURCE_SYMMETRY_DESCENT_AND_TRACE_GATE.md": "553f95d8c66f8354d1c475bc2eb916f0b63c356d86466bd8603f8ef62452ceeb",
+    "jacobian/affine-complements/verify_source_symmetry_gate.py": "7c5d82a522f2631d50e15e5f8838f80b426cf22e47285442d3cb6c14fc2e6660",
+    "hessian/hc4-triangular-graphs/ALGEBRAIC_FLOW_DESCENT_AND_INTEGRAL_COORDINATES.md": "beaced18024b06fc918d9e665929ff2ef4820e3cffa5a18493c5f9ac2bcd53e9",
+    "hessian/hc4-triangular-graphs/verify_algebraic_flow_descent.py": "a2317510797200b71dad4d6dd7d730555f88e3abcc7e55f0d157954fb3613c2f",
+    "hessian/hc4-triangular-graphs/COMPLETE_HOLOMORPHIC_FLOW_DESCENT.md": "3711cc20f414a854a116c0455a79c2980e9480e7ba79ccc45e8fd37a76683844",
+    "hessian/hc4-triangular-graphs/verify_complete_holomorphic_flow.py": "1db11472a6133a2b15753ec4072984b20e3868c06801c2146bbc110f4866c58c",
+    "hessian/hc4-triangular-graphs/TARGET_BOUNDARY_SYMMETRY_AND_FINITE_STABILIZER.md": "63e990c696349c5fcbd1daa35f63a57ef06e6aad29d08fcab2f7f96368b7ce8c",
+    "hessian/hc4-triangular-graphs/verify_target_boundary_symmetry.py": "80e5cedcc4b7fa5e8618d88afdcc908e81144e091a9612f89433bc52b8e9ba85",
+    "jacobian/monodromy-theory/GENERAL_DECK_RIGIDITY.md": "d99a141ff87cb768763e691462d06be0aa2bffe7f31880f77450f9ec90df4015",
+    "jacobian/monodromy-theory/verify_regular_deck.py": "be0348de8326f5fa3a60e154c348ad79982668a7280a2422a92975f7175697f0",
+    "hessian/hc4-triangular-graphs/ALL_CONJUGATE_LOCALIZATION_AND_UNIFORM_TRACE_LANDING.md": "5d12ef897f00486ebbfb1d4c3f51ce422e6d6f13979baa2197d71a71e5a7d9e0",
+    "hessian/hc4-triangular-graphs/verify_conjugate_localization.py": "c8714efd2fb07abb2bd39c2828bc3b0b0c83cd29fd42f5cbf5dd4b3ce4228538",
+    "hessian/tang-hc4-audit/STRUCTURAL_REVIEW.md": "26a6a76eb579de05b8e71245b8b804bdd5f036602f2e3e6ad5d036fd9f5cd572",
+    "hessian/tang-hc4-audit/verify_structural.py": "23e87f797b4d086ede8195773092dcd42d705258ec57c05920731e87e0ce9b2d",
+    "hessian/hc4-triangular-graphs/QUADRATIC_SOURCE_RECONSTRUCTION_AND_QUARTIC_RETIREMENT.md": "c45fe8fb1c9f0eabfa8bfef32e30b96e71834ee68609e59069e8fb9039034eca",
+    "hessian/hc4-triangular-graphs/verify_quadratic_reconstruction.py": "0494f04ada75cf1cb7859bb1d86e63ea0259a6ce4e838ab4678276098d93c49f"
+  },
+  "new_primary_sha256": {
+    "sources/moskowicz-centralizer-1802.04685v2.html": "3e7f0ec460c8fbb60b8c6332934f45413c2aec05da71084a0eb4df3bdada469c"
+  },
+  "primary_context": [
+    {
+      "title": "Vered Moskowicz,The two-dimensional Centralizer Conjecture",
+      "url": "https://arxiv.org/html/1802.04685v2",
+      "inspected": "Actual v2 primary HTML Section2.1 Theorem2.3 and complete proof,introduction and Section3 coefficient-domain limits read.",
+      "role": "RELATED PRIMARY CONTEXT and credit for classical Cheng-McKay-Wang polynomial centralizer,not a new import.Our proof uses retained HX0/KMFI1 plus trace and norm.No novelty priority for standard mechanisms."
+    }
+  ],
+  "additional_literature_scope_audit": "Chau1005.3866v2 Theorem3+Section2 proof requires ALL fibres irreducible of SAME GENUS;not established here.0804.3172 currentv3 only BOTH rational components,broader v2 not substituted.No fibre/genus classification imported.",
+  "newly_imported_proved_external_statements": [],
+  "newly_used_unproved_external_statements": [],
+  "full_theorem_target": "Full HC4/JC2 proof or actual counterexample.",
+  "last_unsolved_implication": "ACTUAL polynomial plane source ==> Tr(Lambda_L*Lambda_L) subset B,or full marked canonical-energy integrality;OPEN.",
+  "previous_goal_turn_classification": "progress",
+  "single_Nambu_constants_field_exactly_complementary_coordinate_field_proved": true,
+  "scalar_affine_first_order_rational_solution_forces_target_descent_proved": true,
+  "all_positive_Nambu_derivative_iterates_reflect_target_field_membership_proved": true,
+  "one_component_and_divergence_exactly_equivalent_to_whole_target_field_descent_proved": true,
+  "one_component_complete_flow_inverse_criterion_proved": true,
+  "both_component_derivatives_escape_for_every_nonzero_locally_finite_source_field_under_failure": true,
+  "non_locally_finite_complete_H_xy_replicas_included": true,
+  "full_one_component_pencil_source_stabilizer_finite_abelian_under_failure_proved": true,
+  "six_dimensional_affine_field_image_in_source_mod_target_injective_under_failure_proved": true,
+  "all_weighted_homogeneous_single_component_Keller_pairs_inverse_proved": true,
+  "external_review_deferred": true,
+  "source_divergence_hypothesis_silently_dropped": false,
+  "constants_field_regularity_assumed_for_arbitrary_extensions": false,
+  "Galois_intermediate_obstruction_omitted_from_affine_ODE_proof": false,
+  "complete_source_field_or_derivative_landing_asserted_automatic": false,
+  "six_affine_derivative_classes_asserted_F_linearly_independent": false,
+  "all_finite_pencil_symmetries_excluded": false,
+  "unrestricted_finite_equivariance_or_odd_Keller_inverse_imported": false,
+  "all_special_fibres_assumed_irreducible_or_same_genus": false,
+  "polynomial_CMW_centralizer_claimed_new": false,
+  "new_major_external_theorem_imported": false,
+  "last_HC4_source_to_regular_inverse_Gram_implication_proved": false,
+  "whole_surviving_higher_degree_packet_excluded": false,
+  "external_review_requested": false,
+  "old_registered_mathematical_checkers_replayed": false,
+  "unrestricted_HC4_or_JC2_resolved": false,
+  "original_goal_complete": false
+}

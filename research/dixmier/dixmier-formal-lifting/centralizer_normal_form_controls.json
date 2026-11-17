@@ -1,0 +1,58 @@
+{
+  "claim": "QCR1",
+  "status": "PASS",
+  "Long_D_terms": 139,
+  "Long_D_spatial_degree": 23,
+  "Long_D_momentum_order": 5,
+  "Long_D_already_normalized": true,
+  "degree23_witness": [
+    [
+      12,
+      6,
+      0,
+      5
+    ],
+    "144/5"
+  ],
+  "momentum_order5_witness": [
+    [
+      6,
+      0,
+      0,
+      5
+    ],
+    "32/405"
+  ],
+  "central_shift_controls": [
+    {
+      "R_degree": 1,
+      "completion_degree": 23
+    },
+    {
+      "R_degree": 3,
+      "completion_degree": 23
+    },
+    {
+      "R_degree": 8,
+      "completion_degree": 24
+    }
+  ],
+  "projection_idempotence": true,
+  "deformed_coordinate_exact_commutator": true,
+  "Catalan_inverse_control_mod_h": 10,
+  "fixed_X_no_bounded_mate": "written p-order and polynomial-unit proof, including spectators",
+  "coverage_boundary": "Exact finite controls only. The all-rank classical centralizer theorem uses published polynomial-dependence theory; formal centralizer exhaustion, all-degree ambiguity, projection optimality and the fixed-triple boundedness equivalence are written proofs. No admission or boundedness for an arbitrary quantum triple, arbitrary gauge invariance or bounded Long lift is established.",
+  "independent_replay": false,
+  "formal_verification": false,
+  "external_review": false,
+  "hashes": {
+    "CENTRALIZER_NORMAL_FORM.md": "3c5180bee0a250a16a3e93d8a08d8eec42874b3cde5a7f64c06051ad079ddbd0",
+    "check_centralizer_normal_form.py": "e03383518367ab63d380361d7276ed25549430c47406282cd10e8d198797b606"
+  },
+  "retained_input": {
+    "path": "dixmier/dixmier-audit/verify_long_pbw.py",
+    "sha256": "266cfed8261bdec371bd26e2bb3a46cab9f588030adcc92c4e75dbd6b150bca2",
+    "R_sha256": "a10e1ca895fb4087b5734977ca42671831a0b28017ecf6fb51e917184f05c5ad",
+    "D_sha256": "0593cdbe0cd32214de51ce505c678127434546926cb7c138c8355aad04731487"
+  }
+}

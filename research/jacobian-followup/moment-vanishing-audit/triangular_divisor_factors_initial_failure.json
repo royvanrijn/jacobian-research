@@ -1,7 +1,0 @@
-{
-  "completed": false,
-  "returncode": 1,
-  "input_sha256": "8763148568b91759288451b7933a6f7b71ce1b32197cf7c02545aa939aee613e",
-  "stdout": "",
-  "stderr": "Traceback (most recent call last):\n  File \"/home/royvanrijn/src/jacobian-research/research/jacobian-followup/moment-vanishing-audit/verify_triangular_divisor_factors.py\", line 105, in <module>\n    if __name__=='__main__':main()\n                            ^^^^^^\n  File \"/home/royvanrijn/src/jacobian-research/research/jacobian-followup/moment-vanishing-audit/verify_triangular_divisor_factors.py\", line 97, in main\n    start=time.monotonic();residues=residue_checks();abstract=abstract_models();models=[]\n                                                              ^^^^^^^^^^^^^^^^^\n  File \"/home/royvanrijn/src/jacobian-research/research/jacobian-followup/moment-vanishing-audit/verify_triangular_divisor_factors.py\", line 38, in abstract_models\n    assert not co[0].is_zero\n           ^^^^^^^^^^^^^^^^^\nAssertionError\n"
-}

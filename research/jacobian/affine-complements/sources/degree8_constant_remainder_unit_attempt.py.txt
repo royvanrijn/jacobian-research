@@ -1,0 +1,13 @@
+from sage.all import *
+from pathlib import Path
+import gzip,json,time
+start=time.monotonic();H=Path('/home/royvanrijn/src/jacobian-research/research/jacobian/affine-complements');data=json.loads(gzip.decompress((H/'square_boundary_degree8_checkpoint.json.gz').read_bytes()))
+for sec in data['sectors']:
+ k=sec['multiplicities'][0];Y=PolynomialRing(QQ,'y');K=NumberField(Y(sec['P8']),'y');A=PolynomialRing(K,names=sec['variables'],order='degrevlex');a=A.gens();G=[A(g) for g in sec['high_groebner_basis']];g1,g2=G[1],G[2];m11=g1.derivative(a[1]);m12=g1.derivative(a[2]);m21=g2.derivative(a[1]);m22=g2.derivative(a[2]);det=m11*m22-m12*m21;assert det.degree()==0 and det!=0
+ r1=g1.subs({a[1]:0,a[2]:0});r2=g2.subs({a[1]:0,a[2]:0});mp={a[1]:(-r1*m22+r2*m12)/det,a[2]:(-r2*m11+r1*m21)/det};mp[a[0]]=-G[3].subs({a[0]:0}).subs(mp);mp[a[4]]=-G[4].subs({a[4]:0}).subs(mp);mp[a[5]]=-G[5].subs({a[5]:0}).subs(mp)
+ B=PolynomialRing(K,names=['q4','q5','q6','q7'],order='degrevlex');u=B.gens();free=A.hom([0,0,0,0,0,0,*u],B);images=[free(A(mp.get(a[j],a[j]))) for j in range(10)];phi=A.hom(images,B)
+ V=PolynomialRing(A,'v');M=V(sec['reduced_critical_remainder']);gens=[phi(M[j]) for j in range(1,6)];J=B.ideal(gens);GB=J.groebner_basis();print('k',k,'basis unit',GB==[B.one()],'time',time.monotonic()-start,flush=True)
+ if GB==[B.one()]:
+  coef=B.one().lift(J);assert sum(c*g for c,g in zip(coef,gens))==1
+  print('k',k,'EXPLICIT identity degrees',[(i,c.total_degree(),len(c.monomials())) for i,c in enumerate(coef) if c],'time',time.monotonic()-start,flush=True)
+  Path('/research/.scratch/degree8_constant_M_unit_'+str(k)+'.json').write_text(json.dumps(dict(P8=sec['P8'],vars=list(B.variable_names()),gens=list(map(str,gens)),coeffs=list(map(str,coef)))))

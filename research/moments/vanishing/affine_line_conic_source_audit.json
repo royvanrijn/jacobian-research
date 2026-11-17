@@ -1,0 +1,49 @@
+{
+  "date": "2026-11-14",
+  "claims": [
+    "G3LINECONIC20261114",
+    "G3REDUCEDLEADING20261114"
+  ],
+  "canonical_source": "moments/vanishing/LINE_CONIC_AFFINE_EXCLUSION.md",
+  "inputs": {
+    "homogeneous_line_conic_normal_forms": "moments/vanishing/REDUCIBLE_CUBIC_CLASSIFICATION.md",
+    "nodal_escape_models": "moments/vanishing/NODAL_GAUSSIAN_CRITICAL_PROFILES.md",
+    "positive_seed_and_fixed_phase": "moments/vanishing/CUSPIDAL_AFFINE_EXCLUSION.md",
+    "confluent_numerator_and_Laurent_blocks": "moments/vanishing/AFFINE_TRIANGLE_EXCLUSION.md",
+    "uniform_current_limit": "moments/vanishing/NODAL_CENTER_LINE_DECAY.md",
+    "complete_binary_frames": "moments/vanishing/CONCURRENT_LINE_EXCLUSION.md",
+    "Gaussian_frame": "moments/vanishing/RANK_ONE_WT2_CLASSIFICATION.md"
+  },
+  "retained_receipts": {
+    "reducible_cubic_moments_verification.json": "3f046506f8ab1513c951b71beae954e15c6f6ea2a7de58e5e4dcd0bddfdb0586",
+    "nodal_gaussian_critical_verification.json": "8d04af4c5001e18cab8023deec765983fae36d28f4c5f2adf9820422f443b075",
+    "cuspidal_affine_profiles_verification.json": "ab94ec462c11715b25e628b106c2e68b8d29bc8f8a4f281f9886216e9f481a5e",
+    "affine_triangle_profiles_verification.json": "382ca15df11f61d6ff4d46b3803ba8a35ef0c65917cb247d63a0b7efe990caa2",
+    "concurrent_line_profiles_verification.json": "88c22ec592ecccecba2b32f62a8af436d83f26b0ede0a95d04f9e130c97ee6ff",
+    "nodal_center_line_decay_verification.json": "b2ea8fcc625f4a45f8535b9e24070d85a2365535eeb03d1994243017acbcc161"
+  },
+  "transverse": "Full rank6. All32 support patterns split26 finite,2 hyperbola,4 axes. Finite A_mu characters plus exposed-node1/3/4/5 Gaussian escapes exhaust6. Critical hyperbola has fixed Laurent rank4 and positive t^-1 seed plus finite2. Critical axes have at most two P-values, a proved uniform gradient bound, and normalized cut/current decay on a supporting ray.",
+  "tangent": "Full rank5 from length3 at infinity. All11 normal profiles exhaust5, including a unique sextic-action escape, primary/secondary Gaussian families, fixed quartic line and parabola blocks, correlated normal charts, and a final fixed D5/Gaussian rank5 model. Every zero-action scalar seed has positive parameter valuation. Isotropic zero-F2 tangencies use the independent W-linear safety theorem.",
+  "correlated_secondary_chart": "On c!=0,c^2+h=0,f!=0, use x=u+c,s=(x-2c)T+v^2+e. The V quartic phase is order r^-4 and the normal XY pair is order r^-3. Original T fluctuations correlate with v but stay bounded. An original-coordinate Hessian alone is not used as a Gaussian validity proof.",
+  "D5_block": "Complete T in T U^2+UV^2-mT^2/2-l_T T. The remaining weighted leading phase U^4/(2m)+UV^2 has isolated gradient, positive weights1/4,3/8 and Jacobian rank5. Filtered leading-term reduction gives the fixed twisted rank5, including l_T=0. Volume t^-3/4 supplies positive seed valuation.",
+  "squarefree_corollary": "The written plane-cubic case cover combines all retained irreducible, distinct-line and line-conic theorems. Any pure-null squarefree-leading member must have an isotropic singular direction v with F2(v)=0, hence a W-linear frame and sufficient mixed cutoff m>3*deg Q. This is not a finite-prefix gate or a claim of sharp coefficient3 inside the reduced locus.",
+  "exact_evidence": {
+    "checker_sha256": "44e513f38579dbb840b84c66a6364076f8acb90dcd1cc7a170f93835957eec26",
+    "transverse_patterns": 32,
+    "tangent_profiles": 11,
+    "transverse_rank": 6,
+    "tangent_rank": 5
+  },
+  "literature_check": {
+    "queries": [
+      "Gaussian moments line conic cubic",
+      "Gaussian Moments Conjecture2026 vanishing cubic"
+    ],
+    "scope": "Targeted nonexhaustive search on14 November2026 found already audited Long/Liu sources and related Jacobian/vanishing reports, not a new external affine line-conic theorem. No source theorem is imported beyond the retained scope audits. The new line-conic and squarefree-leading conclusions are internal written derivations."
+  },
+  "proof_boundary": "Exact transverse support/rank arithmetic and tangent normal-model actions, Jacobians, quartic completions, parabola identity, D5 Jacobian basis and rank arithmetic. Formal completeness, uniform cut decay, local normal charts and quotient arguments are written mathematics.",
+  "remaining": "Only nonhomogeneous repeated-line leading ternary cubic GMC; numerical uniform gates; coefficient schemes; lower-power GVC; external review and formalization.",
+  "independent_replay": false,
+  "external_review": false,
+  "formal_verification": false
+}

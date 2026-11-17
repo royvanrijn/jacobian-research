@@ -1,0 +1,52 @@
+{
+  "date": "2026-11-15",
+  "claims": [
+    "G3REPEATED20261115",
+    "G3CUBICALL20261115",
+    "G3DEGREEMIN20261115"
+  ],
+  "canonical_source": "moments/vanishing/TERNARY_CUBIC_GMC_CLOSURE.md",
+  "inputs": {
+    "one_variable_period_exclusions_and_frame": "moments/vanishing/RANK_ONE_WT2_CLASSIFICATION.md",
+    "squarefree_leading_cover": "moments/vanishing/LINE_CONIC_AFFINE_EXCLUSION.md",
+    "quadratic_classification": "moments/vanishing/QUADRATIC_GAUSSIAN.md",
+    "known_quartic_witness": "foundations/extended-geometry/THREE_REAL_GMC_MINIMAL_FAILURES.md"
+  },
+  "retained_receipts": {
+    "rank_one_wt2_verification.json": "1590f52f27566b12ba115f73951c6aa563197106abe85ed3dcaed8a7d00f93a9",
+    "affine_line_conic_profiles_verification.json": "68c73bb4015c3f31ab483fafa138906c83d8b06b1074da615076ce7985a16882",
+    "verification.json": "a7d7db671676da463d2b3e8719ce5abb7cd1ecf44bd9fb4facbf94e2ed94c222"
+  },
+  "preclosure_snapshot": {
+    "path": "moments/vanishing/cubic_problem_preclosure_20261115.json",
+    "sha256": "8d4db4261a85d930e2797bbc895488a52cdca8714c3ae91dd94bccb76f6ae273"
+  },
+  "new_reduction": "A nonisotropic repeated factor leaves a degree<=4 one-variable phase after exact two-variable quadratic elimination. Its identically zero quartic branch supplies the isotropic singular/F2-zero frame. Every other branch has a full-degree shrinking phase, an explicit degree-drop escape model, or a fixed phase with a decaying determinant prefactor. For an isotropic repeated factor, zero W^2 coefficient is the frame branch; otherwise generic-t W/T quadratic completion gives the same exhaustive one-variable alternatives.",
+  "analytic_import": "Internal written shrinking-period and two-monomial escape arguments in RANK_ONE_WT2_CLASSIFICATION.md, including degenerate critical points and complete one-variable cut/local-block decomposition. The retained rational seed-submodule and Hien--Roucairol bridge produce an actual constant period if pure moments vanish. Neither the checker nor DLMF supplies a new general analytic theorem.",
+  "exact_evidence": {
+    "checker_sha256": "26806d397949f765f92636e1e5b0d84c1fbd4bdf010336fd599a0e23eca1ac21",
+    "degree_drop_cases": 7,
+    "sharp_shear_degrees": [
+      1,
+      2,
+      3
+    ],
+    "Long_witness_orders": 5
+  },
+  "literature_check": {
+    "date": "2026-11-15",
+    "primary_pages_rechecked": [
+      "https://arxiv.org/abs/2607.18186",
+      "https://dlmf.nist.gov/2.4"
+    ],
+    "scope": "Targeted source recheck, not a new exhaustive literature search. Long remains the source of the known dimension3/degree4 and dimension4/degree3 witnesses. DLMF is contour background only. The new repeated-line and full cubic deductions are internal, not attributed to either external source."
+  },
+  "full_cubic_certificate": "Pure nullity iff an isotropic singular/F2-zero Gaussian frame exists AND the first888 pure moments vanish. The frame condition is essential to this stated certificate;888 alone is not asserted as a global pure-only gate.",
+  "sharpness": "The shear P=W+ZT-Z^3/2 has E(W^D P^(3D))=(3D)!*(-1/2)^D for every D>=1, and all pure moments vanish.",
+  "witness_assurance": "Both Long witnesses have source series A(t/(1-t)) for multipliers A in the distinguished null coordinate. Formal circular contraction and the T central-binomial series prove the all-order identity in the canonical note; bounded regressions only check it.",
+  "proof_boundary": "Universal resolvent/quartic and isotropic elimination identities, model degree/action/count arithmetic and stated bounded Wick regressions. The one-variable period exclusions, exhaustive normal-form coverage and all-order closure/corollaries are written proofs, not machine verified.",
+  "remaining": "Independent specialist replay and external review; explicit global pure prefixes and global term-count optimality; coefficient schemes and lower-power GVC.",
+  "independent_replay": false,
+  "external_review": false,
+  "formal_verification": false
+}

@@ -1,0 +1,13 @@
+{
+  "scope": "Small determinant-power normal forms in the retained exact first-ten cuspidal generic-chart basis; no radical equality or all-order conclusion from nonzero remainders.",
+  "wall_limit_seconds": 20,
+  "memory_limit_MiB": 768,
+  "terminal": true,
+  "timed_out": false,
+  "exit_code": 0,
+  "completed": true,
+  "input_sha256": "ae7a1759ba124d24678e3c510cd8abb9439fafe26fbdcf129f8a7336885d9499",
+  "log_sha256": "07db21498f1b1a69e8b2ea258e1f5f49183f5038eed665a7f36343729c035a6f",
+  "elapsed_seconds": 15.101920999004506,
+  "stdout_tail": "DET_POWER_REMAINDER_SIZE\n1\n11\n// ** redefining remainderPoly (ta^k,G);print(\"DET_POWER_REMAINDER_SIZE\");print(k);print(size(remainderPoly));) /home/royvanrijn/src/jacobian-research/research/moments/vanishing/cuspidal_generic_small_powers_v2.sing:82\nDET_POWER_REMAINDER_SIZE\n2\n113\n// ** redefining remainderPoly (ta^k,G);print(\"DET_POWER_REMAINDER_SIZE\");print(k);print(size(remainderPoly));) /home/royvanrijn/src/jacobian-research/research/moments/vanishing/cuspidal_generic_small_powers_v2.sing:82\nDET_POWER_REMAINDER_SIZE\n3\n113\n// ** redefining remainderPoly (ta^k,G);print(\"DET_POWER_REMAINDER_SIZE\");print(k);print(size(remainderPoly));) /home/royvanrijn/src/jacobian-research/research/moments/vanishing/cuspidal_generic_small_powers_v2.sing:82\nDET_POWER_REMAINDER_SIZE\n4\n0\nEND\n"
+}

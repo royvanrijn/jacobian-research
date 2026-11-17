@@ -1,0 +1,96 @@
+{
+  "schema_version": 1,
+  "result": "focused validation passed; full navigation blocked",
+  "goal_turn_classification": "progress",
+  "new_claims": [
+    "UADOUBLE1",
+    "UABINARY1",
+    "UAK7MIN1",
+    "UADOUBLEMOD1"
+  ],
+  "changed_existing_claims": [
+    "OP-KCOMP",
+    "OP-KDESC"
+  ],
+  "new_claim_schema_dependencies_hashes_and_reciprocal_edges": "pass",
+  "dependency_closure_acyclic": "pass",
+  "affected_lesson_and_work_scope_fingerprints": "pass",
+  "exact_checks": 78,
+  "complete_fibre_controls": 6,
+  "small_characteristic_controls": [
+    "F7 rank7",
+    "F3 rank9"
+  ],
+  "rank7_coordinate_degrees": [
+    1,
+    7,
+    49,
+    47
+  ],
+  "local_links_checked": 11,
+  "local_source_pins": 7,
+  "scoped_primary_literature_inputs": 7,
+  "source_and_receipt_hashes": "pass",
+  "existing_entries_preserved_at_integration": 1833,
+  "open_problems_closed": [],
+  "implementation_boundary": "Two named predecessor routines are reused; the section condition is adapted by AST. Scaled polynomials stay in exact coefficient domains to avoid SymPy minimal-polynomial inference overflowing numerical estimates.",
+  "navigation": [
+    {
+      "command": "make render-navigation",
+      "result": "blocked",
+      "reason": "Pre-existing KDSQ6 consumer artifacts/generated-results/README.md is absent."
+    },
+    {
+      "command": "make check-navigation",
+      "result": "blocked",
+      "reason": "Pre-existing KDSQ6 consumer artifacts/generated-results/README.md is absent."
+    }
+  ],
+  "assurance": "Written universal proofs plus exact controls. Binary necessity, essential-dimension lower bound, local quadratic-form bounds and Hasse--Minkowski are explicitly imported primary literature; they are not independently replayed. No formalization, independent whole-proof verification, external review or priority certification.",
+  "links": [
+    {
+      "source": "jacobian/universal-keller-quadrics/PROOF.md",
+      "target": "jacobian/universal-keller-compression/PROOF.md"
+    },
+    {
+      "source": "jacobian/universal-keller-quadrics/PROOF.md",
+      "target": "jacobian/universal-keller-quadrics/LITERATURE_AND_GAPS.md"
+    },
+    {
+      "source": "jacobian/universal-keller-quadrics/PROOF.md",
+      "target": "jacobian/universal-keller-quadrics/verify.py"
+    },
+    {
+      "source": "jacobian/universal-keller-quadrics/README.md",
+      "target": "jacobian/universal-keller-quadrics/PROOF.md"
+    },
+    {
+      "source": "jacobian/universal-keller-quadrics/README.md",
+      "target": "jacobian/universal-keller-quadrics/LITERATURE_AND_GAPS.md"
+    },
+    {
+      "source": "jacobian/universal-keller-quadrics/README.md",
+      "target": "jacobian/universal-keller-quadrics/verify.py"
+    },
+    {
+      "source": "jacobian/universal-keller-quadrics/README.md",
+      "target": "jacobian/universal-keller-quadrics/receipt.json"
+    },
+    {
+      "source": "jacobian/universal-keller-quadrics/README.md",
+      "target": "jacobian/universal-keller-quadrics/sources.json"
+    },
+    {
+      "source": "jacobian/universal-keller-quadrics/README.md",
+      "target": "MATH_STATUS.json"
+    },
+    {
+      "source": "jacobian/universal-keller-sextic/README.md",
+      "target": "jacobian/universal-keller-quadrics/README.md"
+    },
+    {
+      "source": "jacobian/README.md",
+      "target": "jacobian/universal-keller-quadrics/README.md"
+    }
+  ]
+}

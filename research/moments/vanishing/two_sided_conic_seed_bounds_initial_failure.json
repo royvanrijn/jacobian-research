@@ -1,0 +1,7 @@
+{
+  "completed": false,
+  "returncode": 1,
+  "input_sha256": "9339df537257c32e33634ea1030f61547e0c036b6ab0692dc3733b11f611cfaf",
+  "stdout": "Seven universal source strata passed\nTwenty-three exact conic models passed\n",
+  "stderr": "Traceback (most recent call last):\n  File \"/home/royvanrijn/src/jacobian-research/research/moments/vanishing/verify_two_sided_conic_seed_bounds.py\", line 158, in <module>\n    if __name__=='__main__':main()\n                            ^^^^^^\n  File \"/home/royvanrijn/src/jacobian-research/research/moments/vanishing/verify_two_sided_conic_seed_bounds.py\", line 153, in main\n    rows,cover=arithmetic();cert={'universal_sources':sources,'models':models,'degree_cases':rows,'global_cover':cover}\n               ^^^^^^^^^^^^\n  File \"/home/royvanrijn/src/jacobian-research/research/moments/vanishing/verify_two_sided_conic_seed_bounds.py\", line 128, in arithmetic\n    assert maximum==expected,(p,q,kd,ed,maximum,expected)\n           ^^^^^^^^^^^^^^^^^\nAssertionError: (3, 2, 1, 0, 129, 130)\n"
+}

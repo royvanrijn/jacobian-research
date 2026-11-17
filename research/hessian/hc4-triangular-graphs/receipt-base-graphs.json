@@ -1,0 +1,91 @@
+{
+  "outcome": "PASS",
+  "check_count": 43,
+  "checks": [
+    "native y graph exact x=0 trace",
+    "native x graph exact y=0 trace",
+    "y trace moving-p degree-three coefficient",
+    "y trace V-independent graph leaves a moving-p quadratic",
+    "y trace remaining quadratic factors exactly",
+    "y trace annihilating p and graph is sufficient for an affine direction",
+    "y trace affine-direction coefficient is N times v(q) times graph",
+    "x trace nonconstant graph leading coefficient with moving r, degree 1",
+    "x trace nonconstant graph leading coefficient with transverse r, degree 1",
+    "x trace nonconstant graph leading coefficient with moving r, degree 2",
+    "x trace nonconstant graph leading coefficient with transverse r, degree 2",
+    "x constant graph affine-direction quadratic coefficient",
+    "x constant graph allowed direction has constant first derivative",
+    "one-dimensional base projection full Hessian determinant",
+    "constant pure-dual coefficient makes rank-one projection Hessian singular",
+    "zero-dimensional base projection full Hessian determinant",
+    "x-chart rank-zero coefficient pair is singular on the entire boundary line",
+    "y-chart rank-zero boundary Jacobian has the declared unit factors",
+    "y-chart boundary restriction is an explicitly invertible affine line map",
+    "full original first x jet on x=0",
+    "original p derivative on x=0",
+    "original q derivative on x=0",
+    "original r derivative on x=0",
+    "original y derivative on x=0",
+    "adapted source change is constant affine and invertible",
+    "adapted source change inverse left",
+    "adapted source change inverse right",
+    "adapted normal first jet retains every chain-rule contribution",
+    "positive V degree of graph normal jet raises the coefficient degree",
+    "forced graph normal jet cancels the entire V coefficient",
+    "forced normal coefficient has exact -21 and -89 terms",
+    "residual plane Jacobian is the declared first-order polynomial equation",
+    "degree-control leading coefficient at Z degree 1",
+    "degree-control leading coefficient at Z degree 2",
+    "degree-control leading coefficient at Z degree 3",
+    "forced residual pair is triangular with unit plane Jacobian",
+    "triangular first coefficient has constant Z derivative",
+    "full triangular normal form unit Hessian",
+    "triangular normal-form gradient inverse left",
+    "triangular normal-form gradient inverse right",
+    "primary Gwozdziewicz theorem source byte pin",
+    "retained Tang input hessian/tang-hc4-audit/STRUCTURAL_REVIEW.md",
+    "retained Tang input hessian/tang-hc4-audit/source-v1.pdf"
+  ],
+  "source_sha256": {
+    "verify_base_graphs.py": "23843841f17c56794ab19c3cbcecaa9282a82c18660a2818a21da5e15267903c",
+    "BASE_ELIMINATED_GRAPHS.md": "0bb8a79b87c4ae07b3a067c24968d786e76dc0e80a8de955857dbbfd2c5f5c4a",
+    "sources/critical-jet-import.json": "ee08df853a8f8546504c7386a175cfccec2243ec2f15bacf48d4e7c88721a18d",
+    "sources/gwozdziewicz-injectivity-on-one-line-v1.pdf": "4cce6a7334640ea47036b1fb8c676e28da7946dbd15d0a48868b30d94c68585a"
+  },
+  "dependencies": {
+    "hessian/tang-hc4-audit/STRUCTURAL_REVIEW.md": "26a6a76eb579de05b8e71245b8b804bdd5f036602f2e3e6ad5d036fd9f5cd572",
+    "hessian/tang-hc4-audit/source-v1.pdf": "bfcd8d2db0df78760c33b9c0b9e9a07c7d0d497a457b2547efeda13c917c29c2"
+  },
+  "written_not_finite_exhaustion": [
+    "all-degree affine-direction classification of both traces",
+    "both projection ranks for both native base graphs",
+    "arbitrary-degree 4m-1 residual equation",
+    "polynomial-unit argument and line-injectivity import",
+    "characteristic-zero descent"
+  ],
+  "native_coordinate_graph_charts_closed": [
+    "x",
+    "y",
+    "p",
+    "q",
+    "r"
+  ],
+  "x_chart_unit_Hessian_has_no_jointly_affine_two_plane": true,
+  "y_chart_surviving_plane_gradient_is_invertible": true,
+  "nonlinear_reparameterizations_of_base_eliminated_charts_closed": false,
+  "singleton_zero_properness_resolved": false,
+  "arbitrary_nonlinear_base_dual_mixing_closed": false,
+  "general_HC4_or_JC2_resolved": false,
+  "imported_theorems": [
+    "HCTANG2",
+    "HC4MYGL0 for the y-chart pure-dual-plane case"
+  ],
+  "runtime": {
+    "python": "3.12.3",
+    "sympy": "1.14.0"
+  },
+  "elapsed_seconds": 2.47,
+  "formal_verification": false,
+  "independent_replay": false,
+  "external_review": false
+}

@@ -1,8 +1,0 @@
-{"bound": 16, "rows": 2020, "columns": 985, "target_powers": [3, 4, 5], "seconds": 0.08442818801268004}
-{"bound": 16, "rows": 2020, "columns": 985, "target_powers": [3, 4, 5], "seconds": 0.08442818801268004, "modular_rank": 959, "consistent_powers": [], "outcome": "no_identity_at_bound_mod_prime"}
-{"bound": 18, "rows": 3182, "columns": 1976, "target_powers": [3, 4, 5, 6], "seconds": 0.45099581399699673}
-{"bound": 18, "rows": 3182, "columns": 1976, "target_powers": [3, 4, 5, 6], "seconds": 0.45099581399699673, "modular_rank": 1871, "consistent_powers": [], "outcome": "no_identity_at_bound_mod_prime"}
-{"bound": 20, "rows": 4820, "columns": 3657, "target_powers": [3, 4, 5, 6], "seconds": 1.8280326479871292}
-{"bound": 20, "rows": 4820, "columns": 3657, "target_powers": [3, 4, 5, 6], "seconds": 1.8280326479871292, "modular_rank": 3334, "consistent_powers": [], "outcome": "no_identity_at_bound_mod_prime"}
-{"bound": 22, "rows": 7070, "columns": 6348, "target_powers": [3, 4, 5, 6, 7], "seconds": 6.919851001002826}
-{"bound": 22, "rows": 7070, "columns": 6348, "target_powers": [3, 4, 5, 6, 7], "seconds": 6.919851001002826, "modular_rank": 5514, "consistent_powers": [], "outcome": "no_identity_at_bound_mod_prime"}

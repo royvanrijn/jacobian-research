@@ -1,9 +1,0 @@
-{"pivot": 4, "obstructed_component": 2, "rank": 354, "nullity": 9, "mixed_kernel_basis_vectors": 0, "seconds": 2.597}
-{"pivot": 5, "obstructed_component": 3, "rank": 354, "nullity": 9, "mixed_kernel_basis_vectors": 0, "seconds": 2.602}
-{"pivot": 6, "obstructed_component": 1, "rank": 353, "nullity": 10, "mixed_kernel_basis_vectors": 0, "seconds": 2.114}
-{"pivot": 7, "obstructed_component": 1, "rank": 355, "nullity": 8, "mixed_kernel_basis_vectors": 0, "seconds": 1.572}
-{"pivot": 8, "obstructed_component": 2, "rank": 353, "nullity": 10, "mixed_kernel_basis_vectors": 0, "seconds": 2.201}
-{"pivot": 9, "obstructed_component": 3, "rank": 353, "nullity": 10, "mixed_kernel_basis_vectors": 0, "seconds": 2.171}
-{"pivot": 10, "obstructed_component": 2, "rank": 353, "nullity": 10, "mixed_kernel_basis_vectors": 0, "seconds": 2.069}
-{"pivot": 11, "obstructed_component": 3, "rank": 353, "nullity": 10, "mixed_kernel_basis_vectors": 0, "seconds": 1.694}
-{"pivot": 12, "obstructed_component": 2, "rank": 353, "nullity": 10, "mixed_kernel_basis_vectors": 0, "seconds": 1.965}

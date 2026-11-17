@@ -1,0 +1,127 @@
+{
+  "as_of": "2026-11-14",
+  "outcome": "PASS",
+  "check_count": 27,
+  "checks": [
+    "exact two-variable Keller PDE identity",
+    "double-prime fourth residue",
+    "double-prime fifth residue",
+    "double-prime residue resultant",
+    "all first-seven primitive residues precede target",
+    "squarefree carrier ODE",
+    "squarefree nullity n=1",
+    "squarefree exact rank n=1",
+    "squarefree nullity n=2",
+    "squarefree exact rank n=2",
+    "squarefree nullity n=3",
+    "squarefree exact rank n=3",
+    "squarefree complete third-band generator",
+    "squarefree third-band kernel has displayed generator",
+    "squarefree order6 coefficient rank22",
+    "squarefree order6 quadratic forcing is in the image",
+    "squarefree order6 explicit particular solution",
+    "squarefree order6 particular source and terminal spaces",
+    "squarefree selected nonzero-parameter jet through order7",
+    "double carrier ODE",
+    "double explicit first-band solution",
+    "double first-band exact nullity one",
+    "double nonlinear second-band coefficient rank17",
+    "double quadratic forcing is in the image",
+    "double quadratic forcing explicit particular solution",
+    "double order2 retains one homogeneous coordinate",
+    "universal quadratic coefficient formula"
+  ],
+  "squarefree_source_rows": [
+    {
+      "n": 1,
+      "shape": [
+        42,
+        18
+      ],
+      "rank": 18,
+      "nullity": 0,
+      "k_support": "v*(k0 + k1*v)*(v - 1)**2",
+      "K_support": "v**8*(v - 1)**15*(v**15*w15 + v**14*w14 + v**13*w13 + v**12*w12 + v**11*w11 + v**10*w10 + v**9*w9 + v**8*w8 + v**7*w7 + v**6*w6 + v**5*w5 + v**4*w4 + v**3*w3 + v**2*w2 + v*w1 + w0)"
+    },
+    {
+      "n": 2,
+      "shape": [
+        43,
+        18
+      ],
+      "rank": 18,
+      "nullity": 0,
+      "k_support": "v*(k0 + k1*v)*(v - 1)**2",
+      "K_support": "v**8*(v - 1)**15*(v**15*w15 + v**14*w14 + v**13*w13 + v**12*w12 + v**11*w11 + v**10*w10 + v**9*w9 + v**8*w8 + v**7*w7 + v**6*w6 + v**5*w5 + v**4*w4 + v**3*w3 + v**2*w2 + v*w1 + w0)"
+    },
+    {
+      "n": 3,
+      "shape": [
+        43,
+        20
+      ],
+      "rank": 19,
+      "nullity": 1,
+      "k_support": "v*(v - 1)*(k0 + k1*v + k2*v**2)",
+      "K_support": "v**8*(v - 1)**14*(v**16*w16 + v**15*w15 + v**14*w14 + v**13*w13 + v**12*w12 + v**11*w11 + v**10*w10 + v**9*w9 + v**8*w8 + v**7*w7 + v**6*w6 + v**5*w5 + v**4*w4 + v**3*w3 + v**2*w2 + v*w1 + w0)"
+    }
+  ],
+  "squarefree_P14_zero": true,
+  "squarefree_P13_zero": true,
+  "squarefree_third_band_dimension": 1,
+  "squarefree_quadratic_return": {
+    "order": 6,
+    "shape": [
+      43,
+      24
+    ],
+    "rank": 22,
+    "augmented_rank": 22,
+    "homogeneous_dimension": 2,
+    "k_particular": "9 - 6*v",
+    "K_particular": "v**7*(v - 1)**13*(v**2 - 3*v + 3)**6*(221*v**5 - 1326*v**4 + 3027*v**3 - 3090*v**2 + 1137*v + 72)/244140625"
+  },
+  "double_first_band_dimension": 1,
+  "double_second_band": {
+    "shape": [
+      43,
+      18
+    ],
+    "rank": 17,
+    "augmented_rank": 17,
+    "particular_solution": [
+      "10532071*sqrt(5)/147685546875 + 1790081777/11224101562500",
+      "-2281689149/2244820312500 - 849712949*sqrt(5)/1870683593750",
+      "14910984767*sqrt(5)/11224101562500 + 16735731853/5612050781250",
+      "-60296942101/11224101562500 - 1390239217*sqrt(5)/590742187500",
+      "61429046239*sqrt(5)/22448203125000 + 51144938229/7482734375000",
+      "-165850915747/22448203125000 - 40174253471*sqrt(5)/22448203125000",
+      "2907712159/299309375000 - 7546773157*sqrt(5)/7482734375000",
+      "-16751487214/935341796875 + 5944244097*sqrt(5)/935341796875",
+      "251159001247/7482734375000 - 107649396899*sqrt(5)/7482734375000",
+      "-1150102309411/22448203125000 + 510331350023*sqrt(5)/22448203125000",
+      "443022259933/7482734375000 - 593520482863*sqrt(5)/22448203125000",
+      "-111440811911/2244820312500 + 249123042421*sqrt(5)/11224101562500",
+      "79908442019/2806025390625 - 142937560553*sqrt(5)/11224101562500",
+      "-112175115091/11224101562500 + 4180481826*sqrt(5)/935341796875",
+      "18157831601/11224101562500 - 2030103877*sqrt(5)/2806025390625",
+      "0",
+      "4078625/383116 - 806225*sqrt(5)/191558",
+      "0"
+    ],
+    "homogeneous_dimension": 1
+  },
+  "files": {
+    "SOURCE_BANDS.md": "fb9ebe05e63d2ae60a06aea6eadd18ac4123f3bb090ac32bb645afe80b8c64ac",
+    "verify_source_bands.py": "4865d143c1019486d9fe603d25d789ded658e5402cce620d77b33c648d5ca521"
+  },
+  "source_hashes": {
+    "foundations/plane-jc/F2_75_125_DERIVATION.md": "5afa29ca91526409fa7e62103f5c1fe8179414564d3c55845574b80ae1299640",
+    "foundations/plane-jc/cas/classify_f2_75_125_layers.py": "93175a9e73d6e126e8eb21840435249768d805d92c7759c481612ea6856bf751",
+    "foundations/plane-jc/F2_75_125_CARRIER_WRONSKIAN_CLASSIFIER.md": "1fc2aa96627668884f26392e41a5b5685c1664934e372404e403bb271f31252e"
+  },
+  "boundary": "Actual necessary contact507 source equations, with prior polynomial root continuation. Nonzero P14/P13 is excluded on squarefree carrier only. Double order2 solvability is not a full Keller point.",
+  "python": "3.12.3",
+  "sympy": "1.14.0",
+  "elapsed_seconds": 18.8973
+}

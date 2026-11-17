@@ -1,0 +1,19 @@
+{
+  "title": "Constant Quadratic Fibres: Base-Marker Operator Certificates",
+  "author": {
+    "name": "Roy van Rijn",
+    "orcid": "0009-0000-2808-0645"
+  },
+  "summary": "Records base-marker certificates for restricted constant-fibre Gaussian phases.",
+  "published": false,
+  "status": "partial-draft",
+  "source": "main.tex",
+  "pdf": "gaussian_constant_fibre_base_marker_certificates.pdf",
+  "build": "latexmk -pdf -interaction=nonstopmode -halt-on-error main.tex",
+  "verification": "A focused partial result with local written and exact certificate checks; it is not a complete Gaussian classification.",
+  "next_steps": [
+    "Review the exact scope and determine whether it belongs in a larger paper."
+  ],
+  "catalogued_on": "2026-11-17",
+  "source_bundle": "gaussian_constant_fibre_base_marker_source.zip"
+}

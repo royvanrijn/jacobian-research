@@ -1,0 +1,104 @@
+{
+  "date": "2026-11-16",
+  "canonical_proof": "moments/vanishing/SEMISTABLE_LOG_PERIODS_AND_SINGLE_ISOTYPIC_SAFETY.md",
+  "proof_sha256": "2d1c207085783207b425af26636fb05d0ebd07bdff3ac4ddd350c32056d52ae7",
+  "checker": "moments/vanishing/verify_semistable_isotypic_safety.py",
+  "checker_sha256": "d4169dca79a3609ecd04828af1e3ca3a21f8fe84be941b7f4b7fbb5b430e8bb6",
+  "receipt": "moments/vanishing/semistable_isotypic_verification.json",
+  "receipt_sha256": "37b994f09b0358e5cec31dc04a63d423ca1635eb3e2cc82e4a3d81386a0ce41b",
+  "repository_sources": [
+    {
+      "source": "moments/vanishing/VALUATIVE_BOUNDARY_VOLUMES_AND_TORUS_INVARIANT_CLOSURE.md",
+      "sha256": "42bab0af00fe9821dba3121de2a559f88711a0b79eb3ab4d3aad00a8b184dc78",
+      "use": "Complete torus-fixed eventual radical0,all automorphic images,finite-stabilizer necessity,and prior surface trace argument."
+    },
+    {
+      "source": "moments/vanishing/PROPER_QUADRIC_MODELS_AND_LEADING_DISCRIMINANTS.md",
+      "sha256": "bdb3192209a56c785f29181a4a541c83a14d1a528d778e4d21d33f683240ccc9",
+      "use": "Exact volume orderA-1-N*a,projective graph resolution and prior singular-leading necessity."
+    },
+    {
+      "source": "moments/vanishing/INTEGRABLE_PERIOD_DENSITIES_AND_OCTAHEDRAL_SEED.md",
+      "sha256": "040b2af803e78894074184f64e54852bd93965fa6b3e5f1b860bf70ed6d03d94",
+      "use": "All-branch subpolar Cauchy bounds after ramification;actual compact infinity germ."
+    },
+    {
+      "source": "moments/vanishing/HAAR_SHEARS_AND_GENERAL_NULLCONE_CLASSIFICATION.md",
+      "sha256": "c008f0a18de99def6211bfdcc0841dc81fd0c6c30dcf9c65ed13c6ea3cd11edc",
+      "use": "One-parameter nullcone and all-original-marker one-sided-weight safety."
+    },
+    {
+      "source": "moments/vanishing/FILTERED_MATRIX_DEGREES_AND_CUBIC_THIN_PHASES.md",
+      "sha256": "dbeb32f8c4e54adb29f32e69b2994e6ccd7eac7011d7acaf3f50a5497517e081",
+      "use": "Associated graded domain,degree multiplication,and fixed seed-power bad marker conversion."
+    },
+    {
+      "source": "moments/vanishing/COMPLEX_HEIGHT_IMAGES_AND_CAUCHY_RIGIDITY.md",
+      "sha256": "6c6260ad9d8ae0883637e4bd56b682bdd07c8e3a499c00a7b53d8e34d7840b68",
+      "use": "Normalized regular real seed for every full thin phase."
+    },
+    {
+      "source": "moments/vanishing/DEGREE12_FOUR_WEIGHT_IDEALS_AND_QUARTIC_BARRIER.md",
+      "sha256": "506b948f6b73cb09e042116fd8b4bae7d36129b9f95bfaa6c221b1ed43e88c86",
+      "use": "Ordinary V12 quartic deficit and inherited pure-prefix lower bound>=11;ordinary gap is preserved,radical question now closed."
+    },
+    {
+      "source": "moments/vanishing/exceptional_sl2_verification.json",
+      "sha256": "a8791dae61c75bf50b202d889f1ebbed175ae2e6c1bc089a8d802a2d8e55ee35",
+      "use": "Retained exact Molien data and projective rotation orders;first two nonconstant degrees8,12 and12,20."
+    }
+  ],
+  "primary_sources": [
+    {
+      "authors": "G.Kempf,F.Knudsen,D.Mumford,B.Saint-Donat",
+      "title": "Toroidal Embeddings I,ChapterII:Semi-stable reduction",
+      "url": "https://page-one.springer.com/pdf/preview/10.1007/BFb0070320",
+      "version": "LNM339(1973),publisher PUBLIC PREVIEW printed53-54,complete theorem statement only",
+      "cached_file": "moments/vanishing/sources/kkmsd_semistable_preview_pp53_54_1973.pdf",
+      "sha256": "c7dd8a8b45e01bc4c0adf059eb88bd9b68b09baa948a814310aa35b10fffd3e3",
+      "selected_passages_read": "Complete semistable reduction theorem on53-54 from web PDF extraction;53 rendered and visually checked.",
+      "exact_import": "Over a smooth curve in characteristic0,finite base change and projective modification give smooth total space with reduced SNC special fibre,isomorphic off the special fibre. The full chapter proof is not claimed read from this two-page preview."
+    },
+    {
+      "author": "J.H.M.Steenbrink",
+      "title": "Mixed Hodge Structure on the Vanishing Cohomology",
+      "url": "https://webhomes.maths.ed.ac.uk/~v1ranick/papers/steenbrink2.pdf",
+      "version": "Oslo1976 proceedings,printed525-563,original scanned paper,pinned by hash",
+      "cached_file": "moments/vanishing/sources/steenbrink_vanishing_cohomology_1977.pdf",
+      "sha256": "7338acfe3265abea52b3d642091aa44e88771d961ed5dbd72c171886610c1e73",
+      "selected_passages_read": "Section2 setup on533,relative log forms2.5-2.6 andTheorem2.7 on535,and2.9-2.12 on536-537,visually read on original scan PDF5-7.",
+      "exact_import": "For projective smooth generic families in arbitrary dimension after the reduced base change,relative log de Rham cohomology is locally free,with logarithmic Gauss-Manin connection of nilpotent residue. This Section2 scope is not limited to the later isolated-singularity application. Polynomial log growth of holomorphic sections is the elementary connection consequence written here."
+    },
+    {
+      "author": "Janos Kollar",
+      "title": "Singularities of Pairs",
+      "url": "https://arxiv.org/pdf/alg-geom/9601026v2",
+      "version": "arXiv alg-geom/9601026v2,6November1996",
+      "cached_file": "moments/vanishing/sources/kollar_singularities_pairs_9601026.pdf",
+      "sha256": "a7cb696d003c6eb64212a23796ae5dffdea4250ec7fe58f35924180c704e4883",
+      "selected_passages_read": "Theorem7.5.1 and proof,printed/PDF43;official arXiv version checked.",
+      "exact_import": "klt restriction to a smooth Cartier divisor is equivalent to plt of the ambient pair with boundary coefficient1. Both applications use rational effective divisors with no shared boundary component. No MZ theorem or common-factor criterion attributed to the paper."
+    }
+  ],
+  "source_access_boundary": "The UCDavis KKMS-chapter3 scan contains front matter andChapterIII,not the needed semistable chapter,and is NOT used as a canonical theorem source. A guessed public chapter2 URL returned404;the explicit publisher preview supplied the full theorem statement instead. No access-control bypass or inferred missing proof.",
+  "new_written_arguments": [
+    "Relative top formOmega/dt belongs the log-relative lattice after projective semistable reduction. Nilpotent-residue connection gives polynomial logarithmic periods;undoing a finite base change gives exponent-1+1/e>-1. Compact-cycle Gauss-Manin/semistable-cell gluing and finite trace extend the Cauchy exclusion to PROJECTIVE maps in every dimension without isolation.",
+    "Adjunction of the boundary coefficient1 improves the sufficient leading threshold fromN/D to(N-1)/D:plt givesA>a+c*vH>=N*a at all finite boundary divisors,so original volume orders are nonnegative.",
+    "For SL2 the coefficient is2/D. After removing maximal common left factor,the residual section restricts nontrivially to every left fibre;right polyhedral orbit size6/12 gives restricted root multiplicity<=D/r. Two applications of klt/plt adjunction show klt at2/D iff every left fibre multiplicity<D/2. Thus every pure full leading class has a common left root of multiplicity>=D/2.",
+    "On ONE Peter-Weyl isotypic component the leading map is an equivariant isomorphism. Equalityk=D/2 degenerates inside the actual left action to a nonzero torus-fixed pure phase,contradicting the previous complete closure. Thus all pure phases havek>D/2 and are one-sided/nullcone safe,with uniform2m>degQ for all original markers. All degrees and all right multiplicities are included.",
+    "Over reduced C-algebras the uniform field cutoff descends through all residue fields. Ordinary moment-ideal radical is the nullcone ideal;ordinary V12 quartic deficit remains. No nilpotent thickening is silently reduced.",
+    "For a real one-isotypic seed,antipodal common roots are paired. Strictly belowhalf gives a proper holomorphic model;at half,the pair exhausts the left degree and the seed itself is torus-fixed. Every polynomial in that seed is excluded. General thin seed degrees rise to12/20,so phase gates36/60 and fixed bad-marker boundsD-12/20 follow. Any full failure mixes degrees;full2I failures have degree>=20."
+  ],
+  "essential_boundaries": [
+    "Semistable/log-cohomology/adjunction inputs are classical. Compact-period gluing,finite trace and all MZ applications are INTERNAL WRITTEN;selected algebraic controls do not independently verify the universal analytic/geometric proofs.",
+    "The all-dimensional period statement is for PROJECTIVE maps with a holomorphic ORIGINAL top form. Arbitrary affine maps or meromorphic volume models are not presumed to satisfy it.",
+    "Half-degree leading fibre is necessary only for a full phase. Lower isotypic components can have opposite weights and prevent the actual full cocharacter limit;matrix homogenization by determinant powers does not make a phase single-isotypic.",
+    "All single Peter-Weyl components are closed for field/reduced-ring purity and safety,not all filtered spaces or mixed components. Ordinary ideals are not replaced by their radicals;no exact nilpotent-family cutoff or numeric pure prefix is computed here.",
+    "The seed polynomial exclusion uses compact self-adjoint reality and its fixed-point-free antipodal involution;it is not asserted for arbitrary complex one-isotypic seeds.",
+    "Both FULL MZ cases remainOPEN on mixed components. The originalT-invariant all-ring nilpotence theorem,finite-stabilizer necessity,graph constraints and independent symmetrized height law are retained."
+  ],
+  "new_degree_support_density_or_prefix_campaign": false,
+  "independent_replay": false,
+  "formal_verification": false,
+  "external_review": false
+}

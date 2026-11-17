@@ -1,0 +1,71 @@
+{
+  "claim": "HC4MYMU0",
+  "retained_structural_inputs": [
+    {
+      "claim": "HC4MYMR0",
+      "canonical_source": "hessian/hc4-triangular-graphs/REPLICA_DEGREE_AND_SOURCE_DERIVATIVE_FIELD_RECONSTRUCTION.md"
+    },
+    {
+      "claim": "PF2RULED139",
+      "canonical_source": "jacobian/affine-complements/REPLICA_EQUIVARIANT_DEGREE_DESCENT_AND_THE_UNIQUE_MIXED_FIBRE.md"
+    },
+    {
+      "claim": "HC4MYKW0",
+      "canonical_source": "hessian/hc4-triangular-graphs/SOURCE_LINE_CONDUCTOR_AND_PRIMITIVE_ORDER_COLLISIONS.md"
+    },
+    {
+      "claim": "HC4MYKN1",
+      "canonical_source": "hessian/hc4-triangular-graphs/CANONICAL_BOUNDARY_AND_STABLE_COMPLETE_INTERSECTION_OBSTRUCTION.md"
+    },
+    {
+      "claim": "HC4MYKO0",
+      "canonical_source": "hessian/hc4-triangular-graphs/WHOLE_SOURCE_POWER_TRACES_AND_DIFFERENTIAL_SPLITTING.md"
+    }
+  ],
+  "retained_proof_and_source_sha256": {
+    "hessian/hc4-triangular-graphs/REPLICA_DEGREE_AND_SOURCE_DERIVATIVE_FIELD_RECONSTRUCTION.md": "de702213847238998a76c14ddeb48e414592cafdb6041e9c337c2b491ec5327d",
+    "hessian/hc4-triangular-graphs/verify_replica_degree.py": "c26c225ebbf45de85146fc820db9e558153409733c686cfd5ef68329b0bce0df",
+    "jacobian/affine-complements/REPLICA_EQUIVARIANT_DEGREE_DESCENT_AND_THE_UNIQUE_MIXED_FIBRE.md": "422ba0cad443ea5de693720f49280546adffb81fda9e5b9250ad61ba59c2a817",
+    "jacobian/affine-complements/verify_replica_degree_descent.py": "5ebda14699483afb5b76f9ee16153d300b53766c17601faa7bc1bcc552eea11e",
+    "hessian/hc4-triangular-graphs/SOURCE_LINE_CONDUCTOR_AND_PRIMITIVE_ORDER_COLLISIONS.md": "1c303ba4aeb13523d39c92169f081676ead1673a6a49dc961132e96927081909",
+    "hessian/hc4-triangular-graphs/verify_source_line_conductor.py": "2df718f5a99cbc19ec11f614a7cfdee85d8b23522f5f33b241623df56b7a31fe",
+    "hessian/hc4-triangular-graphs/CANONICAL_BOUNDARY_AND_STABLE_COMPLETE_INTERSECTION_OBSTRUCTION.md": "679c5f12083b9cdc657650417315c3e881974aee62c6a372c725d6d8193b657c",
+    "hessian/hc4-triangular-graphs/verify_canonical_boundary.py": "94379f2cbb83cfd80ad374b13538391fbdc6b6c9fce997e6917f53e7f667f801",
+    "hessian/hc4-triangular-graphs/WHOLE_SOURCE_POWER_TRACES_AND_DIFFERENTIAL_SPLITTING.md": "ddd638989f0ed8807e4298e3e02fe0e72db4040dbefb22e5cb5ca8d11f9d38a9",
+    "hessian/hc4-triangular-graphs/verify_whole_source_traces.py": "aff5777ba2cd9ecaee1271884e73db74c185e1db04c36fef2a2c4a62d22f0a37"
+  },
+  "scope_flags": {
+    "actual_normalized_degree_five_factor": true,
+    "rational_slice_retained": true,
+    "relative_S5_not_deck_obstruction": true,
+    "actual_source_image_fibres": true,
+    "full_relative_order_conductor_and_codifferent": true,
+    "quadratic_trace_pole_independent_of_slice": true,
+    "all_degree_nonzero_kappa_test": true,
+    "integral_marker_target_trace_witness": true,
+    "beta_zero_assumed": false,
+    "source_image_identified_with_old_universal_cover": false,
+    "monogenic_order_identified_with_normalization": false,
+    "unmarked_absolute_trace_pole_asserted": false,
+    "actual_Keller_model_constructed": false,
+    "all_mixed_profiles_excluded": false,
+    "automatic_Mathieu_trace_transfer": false,
+    "unrestricted_HC4_or_JC2_resolved": false
+  },
+  "new_external_theorem_imports": 0,
+  "new_primary_caches": 0,
+  "new_primary_downloads": 0,
+  "source_audit": {
+    "user_steering": "User explicitly isolates normalized first mixed fibre h=y^2(y-1)^3, relative five-sheet S5 geometry, actual source-image algebra and target trace regularity with rational slice retained. No monodromy-only contradiction or beta-zero substitute.",
+    "retained_reading": "Complete shared PF139 degree-descent proof read/credited, alongside MR0 actual smooth surjective source image and permitted slice, KW0 reproduced global monogenic-conductor argument, KN0/1 finite codifferent localization and KO0 original whole-source trace/integrality distinction.",
+    "normalized_factor": "When old h0-a=H^g, pass to actual E0(H) with top degree5 and multiply slice by g*H^(g-1); do not identify its ACTUAL source image with the entire old universal finite cover. Original residual degree b arbitrary.",
+    "actual_finite_order": "C=R intersect E actual image, A=C[y] FREE rank5, T full finite normalization of C in L. At source-image component multiplicity r, source line ISO and etaleness permit u-a=t^r in completed DVR. Binomial normalization gives gcd factors, residue degree1, exact different and global conductor hprime*LambdaT. Height-one index table is not a global T/A presentation.",
+    "new_unbounded_trace": "For any wholly critical monic h, Trhprime=0 and Trhprime^2=kappa*u with kappa=2sum n_i hsecond(c_i), by trace specialization and derivative commutation. Here kappa=-8. Delta=partial_s has order2 at multiplicity3 component, so delta^2Trx^2=-16u forces a pole independent of rational beta and every complementary source shear. General nonzero-kappa test and full 2+N family proved, no higher-moment census.",
+    "target_marker": "Pole lies on ACTUAL V etale over original target, hence relative moment not in FULL intermediate LambdaE; by its definition some ACTUAL integral source marker tau in SE gives TrL/F(tau*x1^2) nonregular. Absolute unmarked trace can cancel; no explicit target/certificate or claim square belongs LambdaL^2. No automatic Mathieu transfer or complete mixed-family exclusion.",
+    "literature_screen": "Primary/author monodromy/Belyi and normalization screens only; branch-cycle S5 proof and local-binomial normalization written explicitly, no new theorem import, primary download/cache or classification adoption."
+  },
+  "registered_mathematical_checkers_replayed": [],
+  "independent_replay": false,
+  "formal_verification": false,
+  "external_review": false
+}

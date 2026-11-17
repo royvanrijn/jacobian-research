@@ -1,0 +1,74 @@
+{
+  "claim": "HC4MYMW0",
+  "retained_structural_inputs": [
+    {
+      "claim": "HC4MYMV0",
+      "canonical_source": "hessian/hc4-triangular-graphs/TRACE_FREE_RATIONAL_SLICES_AND_MIXED_SOURCE_IMAGE_GRAPH_MODELS.md"
+    },
+    {
+      "claim": "HC4MYMR0",
+      "canonical_source": "hessian/hc4-triangular-graphs/REPLICA_DEGREE_AND_SOURCE_DERIVATIVE_FIELD_RECONSTRUCTION.md"
+    },
+    {
+      "claim": "PF2RULED138",
+      "canonical_source": "jacobian/affine-complements/TRANSLATION_ATLAS_EXACTNESS_AND_UNBOUNDED_MOVING_LABEL_FIBRES.md"
+    },
+    {
+      "claim": "HC4MYKO2",
+      "canonical_source": "hessian/hc4-triangular-graphs/WHOLE_SOURCE_POWER_TRACES_AND_DIFFERENTIAL_SPLITTING.md"
+    }
+  ],
+  "retained_proof_and_source_sha256": {
+    "hessian/hc4-triangular-graphs/TRACE_FREE_RATIONAL_SLICES_AND_MIXED_SOURCE_IMAGE_GRAPH_MODELS.md": "87550c10fc518737775bd36fcd6978055ddc2cdc9e73cb352e81ee8e4855ff72",
+    "hessian/hc4-triangular-graphs/verify_trace_free_rational_slices.py": "0c95b44fd277ecef538176786d500af2818794e923ebb81b53b5b81d4eac2aa3",
+    "hessian/hc4-triangular-graphs/REPLICA_DEGREE_AND_SOURCE_DERIVATIVE_FIELD_RECONSTRUCTION.md": "de702213847238998a76c14ddeb48e414592cafdb6041e9c337c2b491ec5327d",
+    "hessian/hc4-triangular-graphs/verify_replica_degree.py": "c26c225ebbf45de85146fc820db9e558153409733c686cfd5ef68329b0bce0df",
+    "jacobian/affine-complements/TRANSLATION_ATLAS_EXACTNESS_AND_UNBOUNDED_MOVING_LABEL_FIBRES.md": "38dfc4bac9783007ca3aaa072c953c7d67dc40dc1c40348e2cb832813e7c6062",
+    "jacobian/affine-complements/verify_translation_atlas_exactness.py": "ec8db3e90cd55e36e1cef43e7b14ed412e54d07abb1acb8e2cb632fd9a02085b",
+    "hessian/hc4-triangular-graphs/WHOLE_SOURCE_POWER_TRACES_AND_DIFFERENTIAL_SPLITTING.md": "ddd638989f0ed8807e4298e3e02fe0e72db4040dbefb22e5cb5ca8d11f9d38a9",
+    "hessian/hc4-triangular-graphs/verify_whole_source_traces.py": "aff5777ba2cd9ecaee1271884e73db74c185e1db04c36fef2a2c4a62d22f0a37"
+  },
+  "primary_source_sha256": {
+    "hessian/hc4-triangular-graphs/sources/stacks-023M-affine-etale-descent.html": "6291864892b0ca41f4a7364926be6a7b7ea2cfd87e51a219b1a4bd283d5a957b"
+  },
+  "primary_sources": [
+    {
+      "url": "https://stacks.math.columbia.edu/tag/023M",
+      "cached_source": "hessian/hc4-triangular-graphs/sources/stacks-023M-affine-etale-descent.html",
+      "scope": "Lemma35.3.6 exactness of the augmented Amitsur complex for every module along a faithfully flat ring map. Full statement/proof read, characteristic-free module argument reproduced in the new proof. No classification or finite-module conclusion imported.",
+      "retrieved": "2026-11-16"
+    },
+    {
+      "url": "https://stacks.math.columbia.edu/tag/03FJ",
+      "scope": "Affine cover Cech complex identified with the same Amitsur complex, context screen only; full statement/proof read online, not separately cached."
+    }
+  ],
+  "new_external_theorem_imports": 1,
+  "new_primary_caches": 1,
+  "new_primary_downloads": 1,
+  "scope_flags": {
+    "additive_differential_descent_proved": true,
+    "polynomial_representative_automatic": true,
+    "all_degree_residue_criterion_complete": true,
+    "rational_slice_retained": true,
+    "MV0_overstatement_explicitly_corrected": true,
+    "graph_family_exclusion_retained": true,
+    "full_trace_goal_open": true,
+    "all_mixed_slices_excluded": false,
+    "rational_shear_asserted_polynomial": false,
+    "target_pair_from_primitive": false,
+    "finite_trace_lattice_stability_proved": false,
+    "unrestricted_HC4_or_JC2_resolved": false
+  },
+  "source_audit": {
+    "correction": "MV0 iff with G AND polynomial representative F0 remains true, but its assertion of an independent obstruction was too strong. Under its actual smooth affine SURJECTIVE ETALE hypotheses rational G automatically has the representative by differential-pole regularity on the actual source relation and Amitsur cocycle splitting. Frozen MV0 proof/checker/context/receipt/prereg unchanged.",
+    "global_argument": "For smooth affine SURJetale C->R in char0, d^-1(OmegaR+OmegaE)=R+E as additive sets. Rational sheet difference has regular differential => regular by divisor pole argument; its exact regular additive cocycle splits by faithfulflat Amitsur. Generic equalizer gives remainder inE. No finite degree or F0 degree bound assumed.",
+    "exactness": "Apply dG=(s-gamma)du-xdy. Thus globalOmegaexact IFF rational tracefreeG exists IFF all finite residues beta0hprime dy zero, without requiring a wholeplane translationatlas/Galois cover. Rational shear x+Gprime can have poles and is not a source polynomial coordinate.",
+    "retained": "MR0 actualsourceimage smoothaffineSURJetale;MV0 trace necessity/sufficiency and graphfamilyexclusion;PF138 affine regularcocycle mechanism at own atlas scope;KO2 fieldtrace differential compatibility retained. Full originalfiniteB/S/Lambda/energy target and marked trace marker retained. No new universal mixed exclusion or targetcoframe.",
+    "assurance": "Written unbounded proof plus new sign/pole/trace/positive-characteristic controls, not formal or independent review. No registered mathematical checker replay. Standard primary descent proof reproduced, no new surface classification."
+  },
+  "registered_mathematical_checkers_replayed": [],
+  "independent_replay": false,
+  "formal_verification": false,
+  "external_review": false
+}

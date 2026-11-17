@@ -1,0 +1,113 @@
+{
+  "review_date": "2026-11-16",
+  "title": "The actual trace-zero generated algebra is a maximal kernel-preserving etale partial completion",
+  "proof_sha256": "285168ae0ee63d5fd511e24560e1d7ad18a4cb82c0761b5916add77001236d04",
+  "retained_structural_inputs": [
+    {
+      "claim": "HC4MYKR0",
+      "canonical_source": "hessian/hc4-triangular-graphs/QUADRATIC_SOURCE_RECONSTRUCTION_AND_QUARTIC_RETIREMENT.md"
+    },
+    {
+      "claim": "HC4MYKR1",
+      "canonical_source": "hessian/hc4-triangular-graphs/QUADRATIC_SOURCE_RECONSTRUCTION_AND_QUARTIC_RETIREMENT.md"
+    },
+    {
+      "claim": "HC4MYKR2",
+      "canonical_source": "hessian/hc4-triangular-graphs/QUADRATIC_SOURCE_RECONSTRUCTION_AND_QUARTIC_RETIREMENT.md"
+    },
+    {
+      "claim": "HC4MYKQ0",
+      "canonical_source": "hessian/hc4-triangular-graphs/SOURCE_MODULE_LAYERS_AND_TRACE_ZERO_KERNEL.md"
+    },
+    {
+      "claim": "HC4MYKQ1",
+      "canonical_source": "hessian/hc4-triangular-graphs/SOURCE_MODULE_LAYERS_AND_TRACE_ZERO_KERNEL.md"
+    },
+    {
+      "claim": "HC4MYKO1",
+      "canonical_source": "hessian/hc4-triangular-graphs/WHOLE_SOURCE_POWER_TRACES_AND_DIFFERENTIAL_SPLITTING.md"
+    },
+    {
+      "claim": "HC4MYKO3",
+      "canonical_source": "hessian/hc4-triangular-graphs/CANONICAL_ENERGY_INTEGRALITY_AND_POWER_TRACES.md"
+    },
+    {
+      "claim": "HC4MYKN0",
+      "canonical_source": "hessian/hc4-triangular-graphs/CANONICAL_BOUNDARY_AND_STABLE_COMPLETE_INTERSECTION_OBSTRUCTION.md"
+    },
+    {
+      "claim": "PF2BATT1",
+      "canonical_source": "jacobian/jc2-boundary-attachment/PROOF.md"
+    },
+    {
+      "claim": "KMFI94",
+      "canonical_source": "jacobian/monodromy-theory/LOCAL_IMAGE_AND_MARKS.md"
+    },
+    {
+      "claim": "KRP1",
+      "canonical_source": "foundations/verified/KELLER_RITT_PRODUCT_THEOREM.md"
+    },
+    {
+      "claim": "HCTANG2",
+      "canonical_source": "hessian/tang-hc4-audit/STRUCTURAL_REVIEW.md"
+    },
+    {
+      "claim": "UADANVOL1",
+      "canonical_source": "jacobian/universal-keller-log-picard/PROOF.md"
+    }
+  ],
+  "retained_proof_and_source_sha256": {
+    "hessian/hc4-triangular-graphs/QUADRATIC_SOURCE_RECONSTRUCTION_AND_QUARTIC_RETIREMENT.md": "c45fe8fb1c9f0eabfa8bfef32e30b96e71834ee68609e59069e8fb9039034eca",
+    "hessian/hc4-triangular-graphs/verify_quadratic_reconstruction.py": "0494f04ada75cf1cb7859bb1d86e63ea0259a6ce4e838ab4678276098d93c49f",
+    "hessian/hc4-triangular-graphs/SOURCE_MODULE_LAYERS_AND_TRACE_ZERO_KERNEL.md": "10912b7d1074390c2a24ee9b2de6f498a8e6bbaf65d7304415a2cdc11d5f1174",
+    "hessian/hc4-triangular-graphs/verify_source_module_layers.py": "ec38b2034a93ead3dcccccd74c3e9dfa3a5512d33d434f46719f7161fe40ca43",
+    "hessian/hc4-triangular-graphs/WHOLE_SOURCE_POWER_TRACES_AND_DIFFERENTIAL_SPLITTING.md": "ddd638989f0ed8807e4298e3e02fe0e72db4040dbefb22e5cb5ca8d11f9d38a9",
+    "hessian/hc4-triangular-graphs/verify_whole_source_traces.py": "aff5777ba2cd9ecaee1271884e73db74c185e1db04c36fef2a2c4a62d22f0a37",
+    "hessian/hc4-triangular-graphs/CANONICAL_ENERGY_INTEGRALITY_AND_POWER_TRACES.md": "1ee4de68a03886a0412339b75e50256cd8dba66e16ad1402cb5626cf1e815804",
+    "hessian/hc4-triangular-graphs/verify_canonical_energy_traces.py": "ad8b9e8cba17b746cc8a4af592d2d8eb435ad1ea019a886b1bb0a7a270ebceba",
+    "hessian/hc4-triangular-graphs/CANONICAL_BOUNDARY_AND_STABLE_COMPLETE_INTERSECTION_OBSTRUCTION.md": "679c5f12083b9cdc657650417315c3e881974aee62c6a372c725d6d8193b657c",
+    "hessian/hc4-triangular-graphs/verify_canonical_boundary.py": "94379f2cbb83cfd80ad374b13538391fbdc6b6c9fce997e6917f53e7f667f801",
+    "jacobian/jc2-boundary-attachment/PROOF.md": "2cbbd8ead07f9e73f84b655940086369040cbcf55fc6578a5625744416ec6666",
+    "jacobian/jc2-boundary-attachment/verify.py": "e426651d71c51064e6dbb3fb5369ae8938adcffc4c0208be675fd5e627da9f07",
+    "jacobian/monodromy-theory/LOCAL_IMAGE_AND_MARKS.md": "65db57362d88399be778d3f2f57091802f4938fabc229f63ea7fcddcdaa886e7",
+    "jacobian/monodromy-theory/verify_local_image.py": "c879521329d95ab7d1087c750a7ed9f4c7fe3eb02426792a6e6bf4dd3e6fa414",
+    "foundations/verified/KELLER_RITT_PRODUCT_THEOREM.md": "22ffcbe5943c4a2277dbb17a47c4be5ab6040af08cf29734ea982254eb1e5b9d",
+    "foundations/scripts/verify_keller_ritt_product.py": "ab58e3caaf6d26d895983f83c6f8d9ac2f0292b23457c1925f322b609459a99d",
+    "hessian/tang-hc4-audit/STRUCTURAL_REVIEW.md": "26a6a76eb579de05b8e71245b8b804bdd5f036602f2e3e6ad5d036fd9f5cd572",
+    "hessian/tang-hc4-audit/verify_structural.py": "23e87f797b4d086ede8195773092dcd42d705258ec57c05920731e87e0ce9b2d",
+    "jacobian/universal-keller-log-picard/PROOF.md": "ed4302aacae26a7a7b97259555d80859fa704b2055d5a94009a6887b91a539a6",
+    "jacobian/universal-keller-log-picard/verify.py": "138a9b63971c18638ac3c54e9fc0407042e8c7b0de2463fd370d732c08ebe6b0",
+    "hessian/hc4-triangular-graphs/receipt-quadratic-reconstruction.json": "ce963893e4135944f7776e830d6301c1e78d398cff71c487b7be4a5be0bc4120",
+    "hessian/hc4-triangular-graphs/sources/quadratic-reconstruction-context.json": "2e64d39ceaddf2d17733b63fee35ea71660087db3f408ebc5f55eef416d5b8bd",
+    "jacobian/affine-complements/sources/intrinsic-normalization/BGV160.pdf": "fadbe8149ce9ed9c746042cb9944ab2553ade857f264b8bf95587ac090341d04"
+  },
+  "inspected_primary_context": [
+    {
+      "title": "Borisov-Gabber-Vasiu,On endomorphisms of affine spaces and the Jacobian problem",
+      "url": "https://www.ihes.fr/~/gabber/BGV160.pdf",
+      "retained_file": "jacobian/affine-complements/sources/intrinsic-normalization/BGV160.pdf",
+      "inspected": "Printedpp39-45,Lemma11.1,Theorem11.2,Corollaries11.4 and11.8;11.8(3) gives affine regular maximal etale completion.",
+      "role": "Corroboration only.Affineness is proved directly from retained cyclic-quotient Q-factoriality and local principal complements.No new preprint theorem import."
+    }
+  ],
+  "credited_prior_barrier": {
+    "claim": "UADANVOL1",
+    "contribution": "The full exponent-one volume obstruction and ALL higher-exponent global primitives were already proved and retained.Do not report exact symplectic completion as excluded or the primitive as new."
+  },
+  "newly_imported_proved_external_statements": [],
+  "newly_used_unproved_external_statements": [],
+  "mathematical_evidence": "Written geometric and valuative proof.New claims have checker=None:metadata/hash validation is not a mathematical replay or independent proof review.",
+  "actual_quadratic_image_is_normal_finite_type_etale_algebra": true,
+  "trace_zero_algebra_equals_maximal_kernel_preserving_partial_completion": true,
+  "higher_products_recover_loss_one_boundary": false,
+  "factoriality_of_actual_completion_equivalent_to_no_quadratic_defect": true,
+  "first_energy_trace_detects_all_single_unramified_lost_sheet_images": true,
+  "first_energy_trace_regularness_proved_automatic": false,
+  "first_energy_trace_regularness_proved_sufficient_for_inverse": false,
+  "volume_exactness_proved_to_exclude_all_completions": false,
+  "bare_monodromy_group_or_abstract_module_proved_to_construct_source": false,
+  "polynomial_source_for_candidate_finite_cover_constructed": false,
+  "old_registered_mathematical_checkers_replayed": false,
+  "unrestricted_HC4_or_JC2_resolved": false,
+  "original_goal_complete": false
+}

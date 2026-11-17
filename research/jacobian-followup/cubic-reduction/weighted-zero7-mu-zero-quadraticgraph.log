@@ -1,4 +1,0 @@
-{"status": "primary-boundary-basis", "source_sha256": "10a4584fac65b3668ebc70e5b73db60a0caf796de1f9bb9f0517a172dbabe5c3", "input_sha256": "12f119ec9ad1f6737e5cb72ada78dc8963053a0561d992acd6755f6214ef9ba6", "case": "mu-zero", "mode": "quadraticgraph", "boundary_equations": 8, "seconds": 0.007}
-DIM:-1
-1
-

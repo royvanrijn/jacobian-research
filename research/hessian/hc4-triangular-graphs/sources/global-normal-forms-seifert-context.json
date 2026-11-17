@@ -1,0 +1,122 @@
+{
+  "review_date": "2026-11-15",
+  "title": "Global oriented N-point normal forms,exact alignment gates and the nonproper homological Seifert barrier",
+  "newly_cached_primary_context": [
+    {
+      "url": "https://arxiv.org/html/math/9910054v1",
+      "retained_file": "neumann-norbury-unfolding-math9910054v1.html",
+      "sha256": "61ee87de73623392d5cb55bd61baa3b93019f9cba3cbfaa004c41887fd2ce888",
+      "role": "Full primary HTML read at Sections1-4,including Theorems2.2/2.3/3.2/3.3 and proofs. Its isolated-finite-singularity setup explicitly permits unrestricted singularities at infinity;the dimension-two splice results are not imported."
+    }
+  ],
+  "newly_imported_proved_external_statements": [
+    {
+      "source": "https://arxiv.org/html/math/9910054v1",
+      "retained_file": "neumann-norbury-unfolding-math9910054v1.html",
+      "location": "Theorems 2.2 and 2.3",
+      "statement": "For polynomial maps with isolated finite singularities,the positive global fibre homology is the injective direct sum of variation images of the relative homology of finite and infinite Milnor pieces.",
+      "hypotheses_checked": true,
+      "application": "All native models,explicit normal forms and required cotangent potentials have finitely many Morse singularities. KA and JZ give only H3=Z^N and an integral basis of N finite Morse cycles. Thus every positive-degree relative homology group of an infinity piece is zero. No absence or topological triviality of the pieces is inferred."
+    },
+    {
+      "source": "https://arxiv.org/html/math/9910054v1",
+      "retained_file": "neumann-norbury-unfolding-math9910054v1.html",
+      "location": "Regular-link construction and Theorem 3.2",
+      "statement": "The regular-link Seifert form exists in this nonproper setup and is block triangular in the variation decomposition,with local blocks and zero cross terms between pieces at the same value.",
+      "hypotheses_checked": true,
+      "application": "Use complex dimension n=4 and middle degree q=3. All nonzero blocks come from finite Morse pieces;each has the same rank-one sign. At collided values the theorem gives the required zero cross terms directly."
+    },
+    {
+      "source": "https://arxiv.org/html/math/9910054v1",
+      "retained_file": "neumann-norbury-unfolding-math9910054v1.html",
+      "location": "Theorem 3.3 and Section 3 graded-transpose formula",
+      "statement": "Seifert cross blocks at distinct values are determined by off-diagonal homological monodromy;the intersection form is L minus its graded transpose.",
+      "hypotheses_checked": true,
+      "application": "KA gives identity monodromy on the entire integral H3. Hence all cross blocks vanish. In degree3 the graded transpose sign is +1,so the Seifert matrix is epsilon I_N and the intersection matrix is zero. No tameness or isolated-infinity hypothesis is inserted."
+    }
+  ],
+  "newly_used_unproved_external_statements": [],
+  "retained_structural_inputs": [
+    {
+      "claim": "HC4MYJV2",
+      "statement": "Actual finite-point plane interpolation and exact GL2 orientation-ratio/determinant repair."
+    },
+    {
+      "claim": "HC4MYJX0",
+      "statement": "Explicit polynomial independent root sign twist,now weighted by a(z)."
+    },
+    {
+      "claim": "HC4MYKA0",
+      "statement": "Primitive finite cotangent vanishing-cycle basis and identity homological monodromy."
+    },
+    {
+      "claim": "HC4MYKA1",
+      "statement": "Integral native cycle bases including all three-point collisions."
+    },
+    {
+      "claim": "HC4MYJZ2",
+      "statement": "All normalized fibres have reduced integral homology only in degree3."
+    },
+    {
+      "claim": "HC4MYJQ0",
+      "statement": "Actual K2/S_rho source representatives and their critical data."
+    },
+    {
+      "claim": "HC4MYJX2",
+      "statement": "The contracted universal affine frontier and K2 universal redundancy."
+    },
+    {
+      "claim": "HC4MYHG0",
+      "statement": "Critical schemes,Hessian congruence at full critical points and Tang zero-count bridge."
+    },
+    {
+      "claim": "HCTANG2",
+      "statement": "The actual cotangent representation under hypothetical nonautomorphic unit Hessian."
+    }
+  ],
+  "retained_proof_and_source_sha256": {
+    "hessian/hc4-triangular-graphs/TWO_SLICE_RECOVERY_AND_ORIENTED_COEFFICIENT_MODELS.md": "935f4d6cd3c49c257a9e643348d5d7aa7d46eae6934d2466fdec130802b18436",
+    "hessian/hc4-triangular-graphs/verify_two_slice_recovery.py": "b7307666a2ac0d3ab2e7c9544df43953aece0cf534c97e903b49afd158a9e863",
+    "hessian/hc4-triangular-graphs/receipt-two-slice-recovery.json": "fdc76e5c3c7c9cbb1614430ca44b44755a673c078c2c5f951ba0061970f7c84c",
+    "hessian/hc4-triangular-graphs/sources/two-slice-recovery-context.json": "452707db611024b6a2c972c046f7f7deba4ddfb0e349f405b475915162521f66",
+    "hessian/hc4-triangular-graphs/GLOBAL_SIGN_TWISTS_AND_TWO_POINT_KELLER_EQUIVALENCE.md": "ce18a0e1beea6447d91873e212cce7eaf044195668b7394ac94b1fe537121a24",
+    "hessian/hc4-triangular-graphs/verify_global_sign_twists.py": "4ca5dc019b3d941959b26220f130bc548ac691da83be6b6381b0906d0ce98832",
+    "hessian/hc4-triangular-graphs/receipt-global-sign-twists.json": "ad933f9d757d87fce42af141fb3080cbf317383c248006a2dac5869a9b69b335",
+    "hessian/hc4-triangular-graphs/sources/global-sign-twists-context.json": "efc6a8b5f2edd4a9922137ebb4ed5b1d98da8c70ba9474fa3ca9357d0e8395fd",
+    "hessian/hc4-triangular-graphs/GLOBAL_INTEGRAL_VANISHING_CYCLES_AND_VOLUME_PERIODS.md": "e4edc8b2e3a6331f427264492217f5b033e4b54bf146a57ded8c8dd663ee9571",
+    "hessian/hc4-triangular-graphs/verify_global_vanishing_periods.py": "1d291e2aeb5bd8785d1fc1844a81b7ab1f667b78b233e76a69f0e55ec0cfc0d6",
+    "hessian/hc4-triangular-graphs/receipt-global-vanishing-periods.json": "8598604cdd2ab82ac2e7f88b0ad6397c4f01afe05936ab4846ee6086c27c0f9f",
+    "hessian/hc4-triangular-graphs/sources/global-vanishing-periods-context.json": "2a2ce54686c3caf9f965ac685eb5729f13c100b8709836642d488e1b282efafb",
+    "hessian/hc4-triangular-graphs/TWO_NORMAL_MODELS_AND_RELATIVE_RANK_ONE_ALIGNMENT.md": "db3a76291e820edda4dc5ed28455b54247587c40feaca55bc4a7477bf8bbebe8",
+    "hessian/hc4-triangular-graphs/verify_two_normal_models.py": "4ba21ae068f31508eefe90209e6fc9f8434306944cd1fffed15996e490944593",
+    "hessian/hc4-triangular-graphs/receipt-two-normal-models.json": "88795224e906ac36cabc2c40cc34da0ffd3dd19168e5827abbe57d7b1149909f",
+    "hessian/hc4-triangular-graphs/sources/two-normal-model-context.json": "4b06e5bac73e45636c54bf1497669bb4cac7f45391dfc71634f2620b9d1c33bc",
+    "hessian/hc4-triangular-graphs/SMOOTH_VALUE_FAMILIES_AND_THE_MOTIVIC_HOMOTOPY_BARRIER.md": "abd3520c72d367949067ed225fe6a32175d8dbcb8120d31102d34bc045f9b167",
+    "hessian/hc4-triangular-graphs/verify_motivic_family_barrier.py": "27c0749be3e2cca905d28b3b5b3c57fc93d577883dc1dbb289fc2f9365c8a6a1",
+    "hessian/hc4-triangular-graphs/receipt-motivic-family-barrier.json": "c375d22ad427fbfc16b9b72bd243295162fc46321b677da49ebe2377d807114f",
+    "hessian/hc4-triangular-graphs/sources/motivic-family-barrier-context.json": "f096041e9acc79aa35fc9e8ed894e54ad43912d5c2d7a12e5c00273f621061ef",
+    "hessian/hc4-triangular-graphs/GLOBAL_VALUE_ORBITS.md": "1dba2b511024f9da2ebd787183de66aaf42e76bf823fee76b745ffedabef2d5c",
+    "hessian/tang-hc4-audit/STRUCTURAL_REVIEW.md": "26a6a76eb579de05b8e71245b8b804bdd5f036602f2e3e6ad5d036fd9f5cd572"
+  },
+  "common_squared_orientation_cotangent_class_has_explicit_global_N_point_normal_form": true,
+  "every_N_at_least_two_normal_form_full_source_unit_existence_is_exact_E_N": true,
+  "K2_and_S_rho_unit_existence_split_into_explicit_alignment_and_Keller_gates": true,
+  "regular_link_homological_Seifert_form_is_common_signed_identity": true,
+  "infinity_Milnor_pieces_have_zero_positive_relative_homology": true,
+  "K2_h1_source_equivalence_constructed": false,
+  "S_rho_normal_form_source_alignment_constructed": false,
+  "two_point_Keller_fibre_constructed_or_excluded": false,
+  "three_point_Keller_fibre_constructed_or_excluded": false,
+  "all_four_variable_polynomials_classified": false,
+  "arbitrary_auxiliary_N_point_model_realized_as_original_graph": false,
+  "infinity_Milnor_pieces_proved_absent_or_contractible": false,
+  "regular_link_itself_classified": false,
+  "nonhomological_Milnor_piece_embeddings_classified": false,
+  "actual_singular_fibre_gluing_classified": false,
+  "fixed_K2_full_source_orbit_resolved": false,
+  "K3_rho_full_source_family_resolved": false,
+  "unit_ideal_endpoint_resolved": false,
+  "singleton_zero_endpoint_resolved": false,
+  "unrestricted_HC4_or_JC2_resolved": false,
+  "original_goal_complete": false
+}

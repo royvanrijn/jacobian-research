@@ -1,0 +1,25 @@
+{
+  "claim": "PF2RULED161",
+  "source": "Nguyen Van Chau, Two remarks on non-zero constant Jacobian polynomial maps of C2, Ann. Polon. Math.82.1(2003),39-44",
+  "retained_pdf": "jacobian/affine-complements/sources/global-boundary-topology/chau-2003-two-remarks.pdf",
+  "retained_sha256": "7889bd17c97509d7bd804e2eb2c7938c2083af1bcd4d006ed7433c01c360e36e",
+  "exact_locator": "Remark, printed43 / fullPDF page5, following Lemma6 proof",
+  "statement_used": "No irreducible exceptional-value component of a nonsingular polynomial map C2->C2 is isomorphic to A1; for Keller maps exceptional equals nonproper.",
+  "other_components_allowed": true,
+  "whole_curve_Corollary3_substituted": false,
+  "not_a_cuspidal_contractible_component_exclusion": true,
+  "previously_adopted_in": [
+    "PF2RULED112",
+    "HC4MYME0"
+  ],
+  "primary_online_recheck": [
+    "https://www.impan.pl/shop/en/publication/transaction/download/product/84523",
+    "https://arxiv.org/html/math/0408048v1"
+  ],
+  "recheck_date": "2026-11-17",
+  "published_retained_page_text_rechecked": true,
+  "new_external_theorem_import": false,
+  "independently_reproved": false,
+  "new_local_pdf_copy": false,
+  "online_primary_fetch_performed": true
+}

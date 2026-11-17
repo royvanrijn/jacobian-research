@@ -1,0 +1,28 @@
+{
+  "title": "Gaussian Moments in Two Variables: Working Revision",
+  "author": {
+    "name": "Roy van Rijn",
+    "orcid": "0009-0000-2808-0645"
+  },
+  "summary": "Retains the bivariate theorem while adding attribution and comparison with Long's stronger one-radial torus theorem.",
+  "published": false,
+  "status": "revision",
+  "source": "main.tex",
+  "pdf": "paper.pdf",
+  "build": "latexmk -pdf -interaction=nonstopmode -halt-on-error main.tex",
+  "verification": "The bivariate Lean package has no sorry; DvdK and finite-type specialization remain explicit mathematical axioms.",
+  "next_steps": [
+    "Review the new attribution and bibliography.",
+    "Deposit the revised edition before replacing the published source."
+  ],
+  "catalogued_on": "2026-11-17",
+  "published_edition": "../../results/gaussian-moments-two-variables/",
+  "abstract": "The Gaussian Moments Conjecture asks whether a polynomial whose positive\npowers all have Gaussian integral zero must eventually remain zero after\nmultiplication by any fixed polynomial.  We prove the conjecture for two\nreal Gaussian variables.  The proof uses circular coordinates to separate\nrotation from radius.  The angular part becomes a constant-term problem,\nwhile the radial part becomes the simple functional \\(U^j\\mapsto j!\\).\nAn exposed lower face of the resulting Newton diagram, the constant-term\ntheorem of Duistermaat and van der Kallen, and reduction modulo a prime then\nisolate a nonzero lowest term.  This forces every polynomial with vanishing\npure moments to have rotational weights of one strict sign, from which the\nmixed-moment conclusion is immediate.  Together with the recent\ncounterexamples of Long in every dimension at least three, this determines\nthe exact dimensional range of the conjecture.",
+  "abstract_format": "latex",
+  "abstract_source": "main.tex",
+  "resource_type": {
+    "title": "Preprint",
+    "type": "publication",
+    "subtype": "preprint"
+  }
+}

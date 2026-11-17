@@ -1,0 +1,50 @@
+{
+  "review_date": "2026-11-15",
+  "title": "Critical determinant obstruction for semisimple quadratic pencils and complete graph source orbits",
+  "newly_cached_primary_context": [
+    {
+      "url": "https://arxiv.org/html/2608.14217v1",
+      "retained_file": "ni-quartic-spectral-context-2608.14217v1.html",
+      "portions_inspected": "Introduction Theorem1.2 and Sections2.1 coordinate-change convention; no full-paper verification claimed.",
+      "role": "Related native degree-four context only. No theorem is imported, and the arbitrary-degree source-orbit nonexistence proof does not rely on the quartic claim.",
+      "sha256": "cf85a2997be27065d7a7028aeca6c9787d7c011a008818cc9b8be206920926d6"
+    },
+    {
+      "url": "https://arxiv.org/abs/2609.37839v3",
+      "retained_file": "leuschke-periodicity-spectral-context-2609.37839v3.html",
+      "portions_inspected": "Versioned v3 abstract and comments; no body theorem or original Pfister-Popescu proof inspected.",
+      "role": "Route boundary only: the stated complete-local stable-category equivalence supplies no polynomial source-recovery or ambient-rectification certificate. The v3 attribution to Pfister-Popescu is retained; no novelty is assigned to the equivalence.",
+      "sha256": "2de4ffcb6a0bae84da2e8ae57f4d5ec7ba725a3def4340b67111e9e1a43cdfba"
+    }
+  ],
+  "newly_used_unproved_external_statements": [],
+  "retained_structural_inputs": [
+    {
+      "claim": "HC4MYHG0",
+      "statement": "A polynomial source automorphism transforms the critical Hessian by congruence with one constant determinant factor; reproduced again in the new note."
+    },
+    {
+      "claim": "HC4MYHP0",
+      "statement": "Literal quadratic-similitude saturation preserves the actual source potential up to a nonzero scalar and additive constant."
+    },
+    {
+      "claim": "HC4MYHM0",
+      "statement": "The exact polynomial ambient normal form transfers quadratic-ambient images to the original Meng-Yang potential with source potential unchanged."
+    }
+  ],
+  "retained_proof_and_source_sha256": {
+    "hessian/hc4-triangular-graphs/GLOBAL_VALUE_ORBITS.md": "1dba2b511024f9da2ebd787183de66aaf42e76bf823fee76b745ffedabef2d5c",
+    "hessian/hc4-triangular-graphs/QUADRATIC_ISOMETRY_SATURATION.md": "7655380f3443c438f2d33b87b2ca9acf2c51a6db15e41b12a33a4bd0414723ad",
+    "hessian/hc4-triangular-graphs/AMBIENT_QUADRIC_GRAPHS.md": "435ead09b62a8ec765f626b66314db3a85033c2e75019f12b7b5a021408dcc1c",
+    "hessian/hc4-triangular-graphs/FORMAL_DIVISOR_RECOVERY_AND_RATIONALITY_GATE.md": "b60f7467d51f28939977b5021e6eb4dc0a1c84658993e51e6726e2013bcdf4b8",
+    "hessian/hc4-triangular-graphs/verify_formal_divisor.py": "bdaafac7115f185f74736919c1bf3eefaca963eefa46eca9972a81b87fcee6a8",
+    "hessian/hc4-triangular-graphs/receipt-formal-divisor.json": "0efe540adff581fb6260ba29d6856ba3cb41f8a6f6cb086a813a545c486d30ae",
+    "hessian/hc4-triangular-graphs/sources/formal-divisor-context.json": "23163e81f76bb60d7a36169ac8f04db9586a22224d688fd363ea46ab8c54599a"
+  },
+  "all_source_orbit_semisimple_nonlinearity_excluded": true,
+  "polynomial_graph_and_parameterization_degrees_unbounded": true,
+  "all_nonsemisimple_pencils_resolved": false,
+  "full_w_dependent_escape_excluded": false,
+  "unrestricted_HC4_or_JC2_resolved": false,
+  "original_goal_complete": false
+}

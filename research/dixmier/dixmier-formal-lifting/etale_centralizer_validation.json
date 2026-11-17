@@ -1,0 +1,65 @@
+{
+  "claim": "QET1",
+  "scoped_status": "PASS",
+  "scope_fingerprint": "d4f378a0cd52e408",
+  "schema_dependencies_hashes_consumers": "PASS",
+  "seven_affected_methods_and_existing_work_reviews": "PASS",
+  "local_links_checked": 245,
+  "unique_equation_tags": 19,
+  "py_compile": "PASS",
+  "changed_tracked_diff_check": "PASS",
+  "exact_controls_receipt_sha256": "23bef8e7a2bb86d868f11147ecbe733fdd6a025a81cce67ba66772d0e0140daf",
+  "global_checks": [
+    {
+      "command": ".venv/bin/python research/scripts/render_status.py --check",
+      "exit_code": 1,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/home/royvanrijn/src/jacobian-research/research/scripts/render_status.py\", line 514, in <module>\n    main()\n  File \"/home/royvanrijn/src/jacobian-research/research/scripts/render_status.py\", line 503, in main\n    validate_index(index)\n  File \"/home/royvanrijn/src/jacobian-research/research/scripts/render_status.py\", line 360, in validate_index\n    assert consumer_path.is_file(), (\n           ^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: KDSQ6: missing document consumer artifacts/generated-results/README.md\n"
+    },
+    {
+      "command": ".venv/bin/python research/scripts/research.py render",
+      "exit_code": 1,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/home/royvanrijn/src/jacobian-research/research/scripts/research.py\", line 563, in <module>\n    raise SystemExit(main())\n                     ^^^^^^\n  File \"/home/royvanrijn/src/jacobian-research/research/scripts/research.py\", line 440, in main\n    validate_lessons(items, entries, check_reviews=args.command == \"check\")\n  File \"/home/royvanrijn/src/jacobian-research/research/scripts/research.py\", line 130, in validate_lessons\n    assert (ROOT / p).is_file(), f\"{item['id']}: missing source {p}\"\n           ^^^^^^^^^^^^^^^^^^^^"
+    }
+  ],
+  "external_dependencies": [
+    {
+      "source": "https://arxiv.org/html/math/0401263",
+      "used": "Corollary1.6: commutative Weyl subalgebras have transcendence degree at most the rank; algebraic-closure base change covers L."
+    },
+    {
+      "source": "https://stacks.math.columbia.edu/tag/02LR",
+      "used": "Normalization form of Zariski Main: the actual etale centralizer is open in the finite normalization."
+    },
+    {
+      "source": "https://stacks.math.columbia.edu/tag/09E3",
+      "used": "Galois transitivity and equal ramification indices over a DVR."
+    },
+    {
+      "source": "https://stacks.math.columbia.edu/tag/0BMB",
+      "used": "Purity upgrades absence of codimension-one branch to finite etaleness."
+    },
+    {
+      "source": "https://www.jmilne.org/math/CourseNotes/LECc.pdf#page=27",
+      "used": "Characteristic-zero finite etale affine-space covers are constant, as in QFC1."
+    }
+  ],
+  "previous_goal_turn": {
+    "classification": "progress",
+    "evidence": "QFC1 386fdf95e3ede4d5 registered the all-rank finite-centralizer positive criterion with exact controls and reviewed consumers. This turn revalidated its receipt hashes before extending the route to actual etale centralizer geometry.",
+    "next_action_taken": "Proved and recorded finite-generation etaleness, divisor retention, birational/Galois polynomiality, all-partner Galois obstruction and the sharp non-Galois degree-three boundary."
+  },
+  "proof_boundary": "Differential simplicity, finite-generation etaleness, retained base divisors, normalization, birational/Galois polynomiality, fixed-sheet inertia and integral full completion are written proofs. The dimension bound, Zariski Main, Galois DVR transitivity, purity and constant-cover theorem are explicit external dependencies. Finite controls check declared field equations, discriminants, permutations, root expansions, Ore connections, leading-versus-actual field degree and rational commutators. Actual centralizer finite generation is not proved for every Long candidate; leading or completed fields and full quantum division indices do not replace the actual fraction field. Projective units and finite field extension need separate verification. No new Long field certificate, bounded full Long lift, finite full carrier, all-representative nonlifting, independent theorem replay, external review or DC2/JC2 resolution is asserted.",
+  "independent_replay": false,
+  "formal_verification": false,
+  "external_review": false,
+  "provenance_refresh": {
+    "date": "2026-11-15",
+    "reason": "QPD1 supplies the QST1 rational-mate/torsion converse; its admission boundary was corrected without changing QST1 scope or residue proofs. The dependent QST1/QFC1/QET1/QTB1 control chain was replayed.",
+    "prior_receipt_sha256": "df09b5ac3f43b32c024ff858cac9da82ed327da63c614a53b8f1a78b6c866964",
+    "current_receipt_sha256": "23bef8e7a2bb86d868f11147ecbe733fdd6a025a81cce67ba66772d0e0140daf",
+    "all_current_inputs_metadata_tags_and_markers": "PASS",
+    "mathematical_scope_changed": false
+  }
+}

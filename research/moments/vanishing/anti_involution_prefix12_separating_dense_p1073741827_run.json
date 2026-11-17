@@ -1,0 +1,25 @@
+{
+  "status": "wall-limit",
+  "prime": 1073741827,
+  "wall_seconds": 155.05031872697873,
+  "command": [
+    "msolve",
+    "-f",
+    "research/moments/vanishing/anti_involution_prefix12_separating_p1073741827.ms",
+    "-o",
+    "research/moments/vanishing/anti_involution_prefix12_separating_dense_p1073741827.out",
+    "-t",
+    "2",
+    "-v",
+    "2",
+    "-l",
+    "1",
+    "-m",
+    "2048",
+    "-P",
+    "1",
+    "-c",
+    "0"
+  ],
+  "scope": "One bounded dense-linear-algebra retry of the saved separating-coordinate input. No characteristic-zero claim without root/Jacobian checks."
+}

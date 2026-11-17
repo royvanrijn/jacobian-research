@@ -1,0 +1,69 @@
+{
+  "review_date": "2026-11-15",
+  "title": "Ramification-independent plane and four-variable Hessian nonlifting with sharp valuation precision",
+  "newly_cached_primary_context": [
+    {
+      "url": "https://arxiv.org/html/1507.02946v1",
+      "retained_file": "maubach-rauf-strong-Keller-1507.02946v1.html",
+      "sha256": "e10ce51847ce02d57231f09e8b9a8103330e515c22b261d02718796b8382e204",
+      "role": "Read Sections1-3 and Section4 through Lemma4.3. Credit the integer-contraction and strong-Keller definitions and motivating coefficient divisions. No strong-Keller invertibility,lift-surjectivity or sufficiency conjecture is imported. New divided identities are proved directly over Z."
+    },
+    {
+      "url": "https://arxiv.org/html/2608.02634v1",
+      "retained_file": "mondello-plane-certificate-2608.02634v1.html",
+      "sha256": "ebd82c4ac9db7fc5b955c154a9dbcdece8aece60a6ef3fc5842521ebdaba547a",
+      "role": "Read introduction and Sections2.1-2.2,including attribution,exact plane formula,Jacobian and collision. These polynomial identities are rechecked directly here. The full degree-three field theorem and formalization are not new inputs;the existing arbitrary-field audit is retained separately."
+    }
+  ],
+  "newly_imported_proved_external_statements": [],
+  "newly_used_unproved_external_statements": [],
+  "retained_structural_inputs": [
+    {
+      "claim": "HKM2W1",
+      "statement": "The already-proved unrestricted unramified plane Cartier obstruction and retained plane-tameness input;not replayed."
+    },
+    {
+      "claim": "HKM2-ALLFIELDS",
+      "statement": "The characteristic-two plane formula and its collision over every residue field."
+    },
+    {
+      "claim": "HCTANG2",
+      "statement": "The full characteristic-zero HC4/JC2 master reduction remains unresolved."
+    },
+    {
+      "claim": "HC4MYJT2",
+      "statement": "Cotangent Hessian block identity and gradient-inverse equivalence,distinct from fixed native source alignment."
+    }
+  ],
+  "retained_proof_and_source_sha256": {
+    "foundations/verified/HUQ_KURUVILLA_PLANE_W2_OBSTRUCTION.md": "a78c57569c83efe79e75cb108062d53338c222432acce627dfa40bff3efd1634",
+    "foundations/scripts/verify_huq_kuruvilla_plane_w2_obstruction.py": "e206dbd775da6c52301e56f2e7d31abd2141d7d73f90d8f0cb48a20216b57982",
+    "foundations/verified/HUQ_KURUVILLA_CHARACTERISTIC_TWO_AUDIT.md": "2e88aabf474cffdaabd72ffed9501d10c761989ca4993c06ead0882dd5ce6c34",
+    "foundations/scripts/verify_huq_kuruvilla_characteristic_two.py": "7813b5b81ab965a645e00b96cf4fa81f65d87edf0e7d89c372997508bdc7ad0f",
+    "hessian/tang-hc4-audit/STRUCTURAL_REVIEW.md": "26a6a76eb579de05b8e71245b8b804bdd5f036602f2e3e6ad5d036fd9f5cd572",
+    "hessian/tang-hc4-audit/verify_structural.py": "23e87f797b4d086ede8195773092dcd42d705258ec57c05920731e87e0ce9b2d",
+    "hessian/hc4-triangular-graphs/PRIMITIVE_QUOTIENTS_PLINTH_AND_GLOBAL_ACTION_CERTIFICATES.md": "b4856858db621b510c210c4706c6032aeec0083db0135b1cd0fc0a25c899f630",
+    "hessian/hc4-triangular-graphs/verify_primitive_quotients.py": "7fb602eb659b2746050f8d4795342d6b458f9e1eb2faba89c5017aa0d473fc4c",
+    "hessian/hc4-triangular-graphs/receipt-primitive-quotients.json": "5cc51af0a0b2098d280d0baed1436b0170e17e5d16ff45132ac989e51ecb4b36",
+    "hessian/hc4-triangular-graphs/sources/primitive-quotient-context.json": "f691d0dc7f0b35f2d262631c18814e1c7dccf3f221b75ad7a94f238446eb141a",
+    "hessian/tang-hc4-audit/structural-proof-receipt.json": "5d833d865f7f032af7ef7a3f7ab95d52321ab08ee518146bfaa33fe768d0be23",
+    "hessian/tang-hc4-audit/source-receipt.json": "73b250fb937ca59cf8f4419bbbfc3cac989a350ed4b8313b67d25dc7f2c32046"
+  },
+  "divided_plane_equations_exclude_all_ramification_and_all_degrees": true,
+  "candidate_plane_maximal_precision_equals_e": true,
+  "universal_twenty_coefficient_cubic_quartic_Hessian_identity_proved": true,
+  "arbitrary_four_variable_potential_corrections_cannot_lift_candidate": true,
+  "candidate_HC4_potential_maximal_precision_equals_two_e": true,
+  "characteristic_two_unit_Hessian_gradient_collision_checked": true,
+  "hypothetical_characteristic_zero_lift_would_give_complex_HC4_counterexample": true,
+  "potential_affine_orbit_and_plane_polynomial_orbit_nonlifting_proved": true,
+  "arbitrary_nonlinear_potential_source_orbit_excluded": false,
+  "all_characteristic_two_potential_reductions_excluded": false,
+  "divided_Keller_equations_proved_sufficient_for_invertibility": false,
+  "positive_characteristic_example_lifted_to_characteristic_zero": false,
+  "old_registered_arithmetic_checkers_replayed": false,
+  "native_critical_Gorensteinness_or_three_generator_bound_proved_automatic": false,
+  "characteristic_zero_plane_Keller_pair_counterexample_constructed": false,
+  "unrestricted_HC4_or_JC2_resolved": false,
+  "original_goal_complete": false
+}

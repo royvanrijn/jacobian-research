@@ -1,0 +1,18 @@
+from sage.all import *
+from pathlib import Path
+import gzip,json,time
+start=time.monotonic();H=Path('/home/royvanrijn/src/jacobian-research/research/jacobian/affine-complements');data=json.loads(gzip.decompress((H/'degree8_affine_reduction_certificates.json.gz').read_bytes()))
+for sec in data['sectors']:
+ k=sec['multiplicities'][0];Y=PolynomialRing(QQ,'y');K=NumberField(Y(sec['P8']),'y');A=PolynomialRing(K,names=['q4','q5','q6','q7']);V=PolynomialRing(A,'v');D=V(sec['linear_constant_D']);g=list(D);F=GF(1009);ev=lambda c:sum(F(t)*F(990)**i for i,t in enumerate(K(c).list()))
+ mons=[A.monomial(*e) for total in range(4) for e in IntegerVectors(total,4)];cols=[m*p for p in g for m in mons];support=sorted({(0,0,0,0)}.union(*({tuple(ex) for ex in p.dict()} for p in cols)),key=lambda e:(sum(e),e));pos={e:i for i,e in enumerate(support)}
+ mat=matrix(K,len(support),len(cols));mod=matrix(F,len(support),len(cols))
+ for j,p in enumerate(cols):
+  for ex,c in p.dict().items():mat[pos[tuple(ex)],j]=c;mod[pos[tuple(ex)],j]=ev(c)
+ rows=list(mod.transpose().pivots());assert len(rows)==len(cols)==175
+ square=mat.matrix_from_rows(rows);rhs=vector(K,[1 if support[i]==(0,0,0,0) else 0 for i in rows])
+ print('k',k,'solve exact175','time',time.monotonic()-start,flush=True)
+ sol=square.solve_right(rhs)
+ coeff=[sum(sol[i*len(mons)+j]*m for j,m in enumerate(mons)) for i in range(5)];assert sum(c*p for c,p in zip(coeff,g))==1
+ print('k',k,'EXACT UNIT degree3','time',time.monotonic()-start,flush=True)
+ out=dict(P8=sec['P8'],variables=list(A.variable_names()),generators=list(map(str,g)),coefficients=list(map(str,coeff)),macaulay_multiplier_degree=3,pivot_rows=rows,elapsed_seconds=time.monotonic()-start)
+ Path('/research/.scratch/degree8_D_unit_exact_'+str(k)+'.json.gz').write_bytes(gzip.compress((json.dumps(out,indent=2)+'\n').encode(),mtime=0))

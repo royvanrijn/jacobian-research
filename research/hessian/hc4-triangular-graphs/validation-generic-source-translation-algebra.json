@@ -1,0 +1,57 @@
+{
+  "outcome": "PASS",
+  "claim": "HC4MYMT0",
+  "metadata_groups": [
+    "MT0 registered with frozen proof/checker/context/receipt:72 controls48 algebraic",
+    "four retained claims,eight proof-checker pins;zero new imports/caches/downloads",
+    "generic raw polynomial algebra,finite persistent lines,actual focal generic fibre and separate finite-target premise explicit",
+    "one first new preregistration PASS,no predecessor mathematical replay or assurance upgrade",
+    "full parent open,three direct MT0 witnesses,prior plane/Mathieu results and quartic plane retirement preserved",
+    "new generic-source-translation method,four affected methods and all changed-parent lesson fingerprints refreshed",
+    "both root and both related work items plus README retain full trace-energy target and prior history",
+    "navigation matches repository renderer output;no manual generated edits",
+    "known unrelated missing-artifact baseline [2,2,1,0];affected whitespace clean"
+  ],
+  "repository_checks": [
+    {
+      "name": "render-navigation",
+      "exit_code": 2,
+      "output": "make -C research PYTHON=\"/home/royvanrijn/src/jacobian-research/.venv/bin/python\" SYSTEM_PYTHON=\"python3\" \"render-navigation\"\nmake[1]: Entering directory '/home/royvanrijn/src/jacobian-research/research'\npython3 scripts/render_status.py\nTraceback (most recent call last):\n  File \"/home/royvanrijn/src/jacobian-research/research/scripts/render_status.py\", line 515, in <module>\n    main()\n  File \"/home/royvanrijn/src/jacobian-research/research/scripts/render_status.py\", line 504, in main\n    validate_index(index)\n  File \"/home/royvanrijn/src/jacobian-research/research/scripts/render_status.py\", line 361, in validate_index\n    assert consumer_path.is_file(), (\n           ^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: KDSQ6: missing document consumer artifacts/generated-results/README.md\nmake[1]: *** [Makefile:16: render-navigation] Error 1\nmake[1]: Leaving directory '/home/royvanrijn/src/jacobian-research/research'\nmake: *** [Makefile:17: render-navigation] Error 2\n"
+    },
+    {
+      "name": "check-navigation",
+      "exit_code": 2,
+      "output": "make -C research PYTHON=\"/home/royvanrijn/src/jacobian-research/.venv/bin/python\" SYSTEM_PYTHON=\"python3\" \"check-navigation\"\nmake[1]: Entering directory '/home/royvanrijn/src/jacobian-research/research'\npython3 scripts/audit_status.py\nTraceback (most recent call last):\n  File \"/home/royvanrijn/src/jacobian-research/research/scripts/audit_status.py\", line 8, in <module>\n    validate_index(index)\n  File \"/home/royvanrijn/src/jacobian-research/research/scripts/render_status.py\", line 361, in validate_index\n    assert consumer_path.is_file(), (\n           ^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: KDSQ6: missing document consumer artifacts/generated-results/README.md\nmake[1]: *** [Makefile:21: check-navigation] Error 1\nmake[1]: Leaving directory '/home/royvanrijn/src/jacobian-research/research'\nmake: *** [Makefile:17: check-navigation] Error 2\n"
+    },
+    {
+      "name": "partial-review",
+      "exit_code": 1,
+      "output": "Traceback (most recent call last):\n  File \"/home/royvanrijn/src/jacobian-research/research/scripts/research.py\", line 563, in <module>\n    raise SystemExit(main())\n                     ^^^^^^\n  File \"/home/royvanrijn/src/jacobian-research/research/scripts/research.py\", line 440, in main\n    validate_lessons(items, entries, check_reviews=args.command == \"check\")\n  File \"/home/royvanrijn/src/jacobian-research/research/scripts/research.py\", line 130, in validate_lessons\n    assert (ROOT / p).is_file(), f\"{item['id']}: missing source {p}\"\n           ^^^^^^^^^^^^^^^^^^^^"
+    },
+    {
+      "name": "whitespace",
+      "exit_code": 0,
+      "output": ""
+    }
+  ],
+  "check_count": 72,
+  "algebraic_controls": 48,
+  "retained_claims": 4,
+  "retained_pins": 8,
+  "new_external_theorem_imports": 0,
+  "new_primary_caches": 0,
+  "new_primary_downloads": 0,
+  "preregistration_mathematical_checker_invocations": 1,
+  "registered_mathematical_checkers_executed": [],
+  "frozen_files_sha256": {
+    "research/hessian/hc4-triangular-graphs/GENERIC_SOURCE_TRANSLATION_DERIVATIVES_GENERATE_THE_POLYNOMIAL_RING.md": "857505b1345fa809b746f962af0a430dea2a03a9452b003e8f61147db8c3c699",
+    "research/hessian/hc4-triangular-graphs/verify_generic_source_translation_algebra.py": "b162e2cef6d7a88435c974d25b73f5f7ff02026f0ced5ded5d0e37822b58d32d",
+    "research/hessian/hc4-triangular-graphs/sources/generic-source-translation-algebra-context.json": "007de3a8e7326de9ca0e2e57b74d79a4eb039c70107950699c005d783d9c49e3",
+    "research/hessian/hc4-triangular-graphs/receipt-generic-source-translation-algebra.json": "8054b291b0c105b0bf20d60991425e28dc81f4b1e4f5c03cfec9686ddf2aa82e",
+    "tmp/generic-source-translation-algebra-preregistration.json": "ae70820cc738e1824c71deec9ccac0833d1da352dc941ed5d39c71aa8d9ddbfe"
+  },
+  "independent_replay": false,
+  "formal_verification": false,
+  "external_review": false,
+  "original_goal_complete": false
+}

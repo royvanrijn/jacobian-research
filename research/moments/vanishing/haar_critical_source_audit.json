@@ -1,0 +1,71 @@
+{
+  "date": "2026-11-16",
+  "canonical_proof": "moments/vanishing/CRITICAL_SECTION_CAPACITIES_AND_SHARP_SPARSE_SAFETY.md",
+  "proof_sha256": "6b1f8492913dc9fbde151c56b30224a6a544e44959daabd8d219b398871166f6",
+  "proof_mode": "Written universal valuation/adjunction/sparsity argument;no new mathematical checker",
+  "repository_sources": [
+    {
+      "source": "moments/vanishing/LOGARITHMIC_JETS_AND_SPARSE_ALL_RING_SAFETY.md",
+      "sha256": "4363280c1f346b62086d090f744367d317389a55455946ac30c55eb5ba298580",
+      "selected_use": "Exact logarithmic inequalities/root jets/global bundle and finite-base regularity;prior cutoff and nilpotent proof reused."
+    },
+    {
+      "source": "moments/vanishing/STRICT_LEADING_NULLCONES_AND_FULL_THIN_CLOSURE.md",
+      "sha256": "f806c1ace4891d7b531ede5f7af947cce2b5a29a9f2937dfcc6ca7ef9d37412e",
+      "selected_use": "Every eventually pure FULL phase has strict common left root;applied to P(f),then leading multiplicity divided by degP."
+    },
+    {
+      "source": "moments/vanishing/SEMISTABLE_LOG_PERIODS_AND_SINGLE_ISOTYPIC_SAFETY.md",
+      "sha256": "2d1c207085783207b425af26636fb05d0ebd07bdff3ac4ddd350c32056d52ae7",
+      "selected_use": "Critical boundary klt away from common left fibres of multiplicity>=halfdegree;retained klt/plt inversion adjunction and proper-volume nonpurity."
+    },
+    {
+      "source": "moments/vanishing/GLOBAL_TORUS_BUNDLE_AND_UNIT_INVISIBLE_INFINITY_POLES.md",
+      "sha256": "5c2fc018ba7d0459176fabd20118ba646b6fbc5b707ae9017f52ac58e21eba63",
+      "selected_use": "Common graph,original volume and chart[t:t xi:1:eta];left axes on diagonal are fibre sections."
+    },
+    {
+      "source": "moments/vanishing/CAPACITY_AMPLIFICATION_UNDER_POLYNOMIAL_COMPOSITION.md",
+      "sha256": "66afbf5605206d62af6915e5cb60c46a8b2884e87a42ccd77cd80c5674c91166",
+      "selected_use": "Exact power capacity3d/5d/4d;now stronger support bounds via k-1 criterion."
+    },
+    {
+      "source": "moments/vanishing/PRIMITIVE_BASE_CHARACTERS_AND_FIBRE_EULER_CONSTRAINTS.md",
+      "sha256": "93a5e0b91ec4075b82d09fa4557075752bcc462380e78c4c7bc7113b3f7f4788",
+      "selected_use": "Original primitive factor and retained2O quadratic sign branch."
+    },
+    {
+      "source": "moments/vanishing/PURE_MOMENT_CONORMAL_AMPLIFICATION.md",
+      "sha256": "73535dd66be7dcfc1f498d3c56f2c48c436211419875be917e5764c60ebecee0",
+      "selected_use": "Full ordinary ideal amplification remains unproved;not inferred from sparse closure."
+    }
+  ],
+  "reviewed_claims": {
+    "GHAARLOGJET20261116": "e2ca33b3d0fbd06f",
+    "GSTRICTPURELEADING20261116": "6e70fdc0f004ed04",
+    "GSPARSEEXCEPTIONAL20261116": "95ad9c634354176a",
+    "GSPARSEEXCEPTIONALRING20261116": "36490cae42fd3456",
+    "GHAARCOMPOSITIONCAP20261116": "f7e09dbc946def2a"
+  },
+  "new_primary_sources": [],
+  "primary_import_policy": "No new primary theorem imported. Reuse the PRECISE critical boundary klt/plt adjunction already proved in the retained semistable note,plus strict-leading necessity. Do not invoke an lc equality-case shortcut.",
+  "new_steps": [
+    "At sections c>0 makes the charged a*c term strictly positive,so capacity k-1 suffices.",
+    "For P(f) pure,the strict leading root of f is forced to an axis by sparse Vandermonde when D>=k-1.",
+    "Off that axis all finite volume poles vanish by retained critical boundary klt adjunction;on it use improved section estimate.",
+    "General all-support obstruction is min(max+cap,max-cap)<=k-2;leading-axis gauge labels the opposite low side.",
+    "All-ring five/seven closure repeats the retained finite coefficient subalgebra/Nullstellensatz/weight counting proof.",
+    "Explicit pure SAFE six/eight-weight matrix coefficients show sharpness of mixed-nonpurity threshold,not failure."
+  ],
+  "not_proved": [
+    "Full pure-to-safe inclusion or intrinsic unit splitting.",
+    "Pure fixed-marker counterexample.",
+    "Unrestricted six/eight-weight classification.",
+    "Ordinary conormal amplification in every degree."
+  ],
+  "external_review_deferred": true,
+  "independent_replay": false,
+  "formal_verification": false,
+  "external_review": false,
+  "new_CAS_or_degree_campaign": false
+}

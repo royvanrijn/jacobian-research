@@ -1,0 +1,17 @@
+{
+  "terminal": true,
+  "completed": true,
+  "exit_code": 0,
+  "observed_exec_session": 8957,
+  "input_sha256": "2e08ed3c825a68974c1d2ca49aa6fe64b89f89f868f595d7ab2085abe1f73af2",
+  "model_certificate_sha256": "012c7b5a9122c7aeed8744cd7dd69590ccba937543b598214597ff62a3809cf7",
+  "stdout_sha256": "d3c34a5efec02574afd4d0f85d2227403b2847926f3ec4305ce1e205e343bb2b",
+  "original_input_location": "tmp/probe_constant_axis_gaussian.py",
+  "original_command": ".venv/bin/python tmp/probe_constant_axis_gaussian.py",
+  "replay": "Restore the preserved input at its original tmp/ path before running; it imports the retained checker helper and writes tmp/probe_constant_axis_gaussian.json. The original tmp input/output are also retained.",
+  "fresh_full_Gaussian_models": 4,
+  "fresh_original_twisted_seed_identities": 22,
+  "prior_checker_helper": "research/moments/vanishing/verify_ordinary_rank_one_lattice.py",
+  "prior_checker_helper_sha256": "572582bffcf5cc86f4ef92924064130c1a2f8c28b164c79f8773592ec9cf1a59",
+  "boundary": "This producer calls retained model helpers with a new full Gaussian phase having constant axis coefficients. It does not run an old checker main. Models pass original exact twisted identities,old degree/valuation assertions and new zeroth-cofactor degree checks; independent universal review is not asserted."
+}

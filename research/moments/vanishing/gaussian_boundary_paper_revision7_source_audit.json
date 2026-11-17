@@ -1,0 +1,133 @@
+{
+  "date": "2026-11-17",
+  "revision": "REVISION7 ORDINARY FINITE-CRITICAL ACTION BRIDGE17November2026:35-page paper excludes ALL finite-critical no-frame members of the common Tuv family,including irreducible nodes,transverse line-conic,triangles,all a/d zero faces,isolated degeneracies and equal actions. Exact q=-S-r*Sprime plus nonisotropic no-frame directions excludes every zero-action escape without a scale/Morse table. Full generic tame rank and Roucairol NONRAMIFIED ranks AFTER base change of all critical-value curves leave exactly the constructed A_mu regular characters;unramified monodromy has no eigenvalue1. Ambient composition-factor exclusion descends to rational seed submodules;no actual-period realization or image-kernel computation needed. Every original marker is zero or not finite exponential-polynomial. Exhaustive coefficient test leaves critical conic/center-axis/hyperbola cases OPEN,plus cusp,tangent,concurrent,double-line,triple-line. Classical Pham/Roucairol inputs precisely credited. No new mathematical checker,no old replay,no arbitrary nonconvergent/all-ring inference,no novelty or assurance promotion. Paper and broad goals ACTIVE.",
+  "new_claim": {
+    "id": "G3ORDINARYFINITE20261117",
+    "kind": "theorem",
+    "state": "proved",
+    "title": "Finite-critical ordinary-node Gaussian exclusion by stationary action and complete regular rank",
+    "scope": "For the ternary common ordinary-node pair P=T(uv+h)+a*u^3+d*v^3+b*u^2+c*v^2+e*u+f*v+k and full nondegenerate affine Gaussian q with m=q_TT!=0,assume NO leading node has BOTH F2(w)=0 and q2(w)=0,and assume the AFFINE CRITICAL SET OF P IS FINITE. Then P is not pure;more strongly EVERY original marked Gaussian Phi_A is zero or is not a finite exponential-polynomial. All a/d zero faces,all isolated degeneracies and coincident actions are retained,covering irreducible nodal,transverse line-conic and triangle members at this stated finite-critical scope. Universal identity along an algebraic critical branch of S=P/r-q is q=-S-r*Sprime. Ordinary-node coercivity at a single limiting direction forces every escape toward a node with F2=0,and no-frame makes q2 nonzero there,so q has a pole;the action therefore has a polar power OTHER than r^-1. No escape can be zero-exponential or a pure alpha/r action;no Morse or escape-scale assumptions. Fixed-r strong tameness gives full generic twisted rank equal to total critical Milnor multiplicity. Locally uniform coercivity and P=r(g+q) on bounded-target fibers give a complete at-most-linear parameter lift,excluding additional finite-target infinity discriminant curves. FIRST ramify ALL critical-value curves to graphs;Roucairol NONRAMIFIED Theorem0.1(2)/Section1.2 and Theorem0.3 then give the nonzero-block ranks,with each conjugate graph and conormal Milnor multiplicity counted even when polar parts coincide. Theorem0.2 monodromy formula/separation assumption is not used. Subtracting these ranks leaves exactly the bounded finite critical points with P=0. Exact local coordinates P=alpha+sw+y^(mu+1),analytic full Gaussian amplitude units,explicit power/Gaussian formal recurrences and polynomial finite-jet separation construct this ENTIRE zero block. Over unramified C((r)) its monodromy has eigenvalues exp(2*pi*i*j/(mu+1)),j=1,...,mu,none1. Thus ambient module has no trivial composition factor;formal Gaussian restriction to a rational seed submodule gives the contradiction without an actual-period or full image-kernel computation. Constant-coefficient differential isolation stays within original markers. Exhaustive finite-critical test:h!=0 iff(a,b,c,d,e,f)!=0;h=0 iff(e,f)!=0,(a,b,e)!=0,(d,c,f)!=0. Complementary critical conic/center-axis/hyperbola cases remain OPEN in the standalone manuscript;five other geometric families also remain. Classical Pham/Roucairol mechanisms credited;not an arbitrary nonconvergent multivariable or all-ring theorem. No new mathematical checker,independent replay,formal verification,external review or novelty claim.",
+    "canonical_source": "moments/vanishing/ORDINARY_NODE_FINITE_CRITICAL_ACTION.tex",
+    "dependencies": [
+      "GGAUSSGRAD20261117",
+      "external: F.Pham,Asterisque130(1985),11-47,PartI Sections1-4,tame Milnor decomposition",
+      "external: C.Roucairol,ManuscriptaMath124(2007),299-318,Theorems0.1(2) and0.3;NONRAMIFIED Section1.2/Proposition1.2 AFTER Puiseux base change of all critical-value curves"
+    ],
+    "checker": null,
+    "proof_type": "hybrid",
+    "independent_replay": false,
+    "formal_verification": false,
+    "external_review": false,
+    "artifact_hash": null,
+    "software_lock": [
+      "moments/vanishing/ORDINARY_NODE_FINITE_CRITICAL_ACTION.tex",
+      "../unpublished/gaussian-boundary/sources/ordinary_finite_primary_manifest.json",
+      "../unpublished/gaussian-boundary/sources/roucairol_formal_math0604134v2.html",
+      "../unpublished/gaussian-boundary/sources/pham_asterisque130_1985.pdf",
+      "moments/vanishing/gaussian_boundary_paper_revision7_source_audit.json",
+      "moments/vanishing/gaussian_boundary_paper_revision7_preupdate_20261117.json"
+    ],
+    "supersedes": [],
+    "closes_problems": [],
+    "narrows_problems": [
+      "OP-MV-ALL-DEGREE"
+    ],
+    "consumers": [],
+    "invalidates_assumptions": [],
+    "replaced_by": [],
+    "priority": "derived",
+    "programme_status": "archived"
+  },
+  "canonical_proof_sha256": "85a794c2f1208934968da9f7cefe54aeec753e9f2623272fe3213666138b1e9d",
+  "proof_mode": "Written stationary-action identity,complete regular-rank accounting and local character construction with precise classical inputs;no new mathematical checker or assurance promotion.",
+  "old_whole_records_unchanged": true,
+  "mutable_draft_files_snapshot_sha256": {
+    "../unpublished/gaussian-boundary/manuscript.tex": "4e7d8e296dca5f945c44df9ff1f36cfbf4d923f7abd95cca22e59c2f5dd110a4",
+    "../unpublished/gaussian-boundary/manuscript.pdf": "cb817152bd9a59c4c6542f02540c41c7cb3281a90a8ccfafeb8dba34782fb332",
+    "../unpublished/gaussian-boundary/formal_lemmas.tex": "f7a547f2a57a3fe1e3d8c486ed7c1e7a2e044ef16f16f865f5eb44762a114b30",
+    "../unpublished/gaussian-boundary/polynomial_stationary_balls.tex": "973febc74a96afc9224a9ab8cc3eded859a9a884e1b3f016cc954f5b73165f46",
+    "../unpublished/gaussian-boundary/punctured_polynomial_frames.tex": "2d325f97719e47fb7865d200b773511808ce08ad836b8a6b4fb5259d524f1d55",
+    "../unpublished/gaussian-boundary/mixed_formal_exclusion.tex": "db2690329669c03a8ac3549da70ba4d4766db96ae7bffc618cf6d9ca00e99d13",
+    "../unpublished/gaussian-boundary/analytic_core.tex": "6228526607d51dd037393e7583ff8322e3309788152f6cae95487a59efab805a",
+    "../unpublished/gaussian-boundary/laurent_logarithmic_bound.tex": "fdedd048f21c947935f40785fbbc24536173e39309b820f968deb35ecba5e6a6",
+    "../unpublished/gaussian-boundary/gradient_exclusion.tex": "476109105e47841add12c6b9157853566bfe4801a4e7cb0d6b5a394365aff4ca",
+    "../unpublished/gaussian-boundary/ordinary_finite_exclusion.tex": "9ae5c5b255baa38ca0db322f269ef887ea4b6df8891082aa7e5ac30bb6f2d3fc",
+    "../unpublished/gaussian-boundary/frame_extraction_case_audit.json": "6b4b625705b576559c0fa525011540b6e208642f3de7e81207dfcc6c1cad88a7",
+    "../unpublished/gaussian-boundary/resolved_laurent_written_audit.json": "e699f57baa407990f85cfc582727e966e4388744f1941320c99dd45ac27eb002",
+    "../unpublished/gaussian-boundary/proof_audit.json": "66b8e372fb7c12dd49341f7eedbf27df6008b0821f235244db6d1933c2df5b66",
+    "../unpublished/gaussian-boundary/paper_goal.json": "e927f4abf68c65f070f49948e84f19b4a3d42d9dfd2d5967b953168bd2363923",
+    "../unpublished/gaussian-boundary/adversarial_audit.json": "9ca7e43b54b14a5817eeefc41c20dbdd3b1023fd169be412754b04f3d740632f",
+    "../unpublished/gaussian-boundary/literature_audit.json": "83fb97c81dd4bfddce3be553056752b482b220740d86d0add05bbec97e185912",
+    "../unpublished/gaussian-boundary/pdf_quality_check.json": "91eb7facf74abbca37e1058e98dd613281d0c6a25af7bee041f9511617e06437",
+    "../unpublished/gaussian-boundary/check_stationary_ball_controls.py": "5d4dd147915ae0748b88d82b7a53e8836620f9aa692f6eebcf32d497bac151d6",
+    "../unpublished/gaussian-boundary/stationary_ball_controls.json": "41fe862668b0af5c3df72ff86d91ff6fd3aebd9e32b522b302a560b23e35b32f",
+    "../unpublished/gaussian-boundary/check_punctured_controls.py": "6f306c21e23d59f408b1b405d34f35cac0bed009c785a0cc6160dd0a5d029f88",
+    "../unpublished/gaussian-boundary/punctured_controls.json": "61fffbb94e24939171eeffb56ee029557a943628c52fdc423ebd61bae91c1c84"
+  },
+  "mutable_policy": "Working paper files remain editable;v007 snapshot retained separately. New standalone canonical proof and all old sealed proof packets immutable.",
+  "new_primary_sources": {
+    "date": "2026-11-17",
+    "primary_sources": [
+      {
+        "author": "Roucairol",
+        "url": "https://arxiv.org/html/math/0604134v2",
+        "cached_file": "roucairol_formal_math0604134v2.html",
+        "sha256": "d193e18e88178c239568ba21eb37b4b4c6f04648335aeb848b5e8e088ffed282",
+        "locations": [
+          "Theorem0.1(2)",
+          "Theorem0.3",
+          "Section1.2/Proposition1.2"
+        ],
+        "application": "First ramify ALL critical-value curves to graphs,then use NONRAMIFIED rank formula with their conormal multiplicities. Equal polar parts add. No monodromy formula or distinctness hypothesis imported."
+      },
+      {
+        "author": "Pham",
+        "url": "https://numdam.org/item/AST_1985__130__11_0.pdf",
+        "cached_file": "pham_asterisque130_1985.pdf",
+        "sha256": "cecb8446d30b17fee23ea0c1e3073fcdeb6918aa271a75524b23b3f6e8b361fd",
+        "locations": [
+          "PartI Sections1-4"
+        ],
+        "application": "Tame isolated Milnor decomposition,including multiplicities;local conservative deformation used with explicit exact A_mu model."
+      }
+    ],
+    "not_claimed": [
+      "Arbitrary nonconvergent formal multivariable pencil theorem",
+      "All-ring descent extension",
+      "Novelty of the classical rank mechanism",
+      "Positive-dimensional ordinary critical-set exclusion",
+      "Independent replay,formal verification or external review"
+    ],
+    "new_mathematical_checker_run": false
+  },
+  "protected_prior_whole_records": 214,
+  "retained_proof_files": 378,
+  "retained_example_counts": [
+    211,
+    11,
+    37
+  ],
+  "paper_pages": 35,
+  "standalone_paper_complete": false,
+  "submission_ready": false,
+  "closed_paper_obligations": [
+    "PAPER-B-R",
+    "PAPER-B-L"
+  ],
+  "partially_closed_paper_obligations": {
+    "PAPER-A": "Smooth row and all finite-critical ordinary no-frame members proved;critical curves and five other families open."
+  },
+  "remaining_paper_obligations": [
+    "PAPER-A"
+  ],
+  "nonconvergent_formal_coefficients": false,
+  "arbitrary_ring_statement": false,
+  "novelty_assessed": false,
+  "old_terminal_UNKNOWN_jobs_restarted": false,
+  "old_sealed_checkers_replayed": false,
+  "actual_image_kernel_computed": false,
+  "independent_replay": false,
+  "formal_verification": false,
+  "external_review": false,
+  "broader_goal_status": "active"
+}

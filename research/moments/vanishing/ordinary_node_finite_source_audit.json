@@ -1,0 +1,115 @@
+{
+  "date": "2026-11-15",
+  "claims": [
+    "G3NODALFINITE20261115",
+    "G3TRANSVERSEFINITE20261115",
+    "G3TRIANGLEFINITE20261115",
+    "G3PUREGLOBAL20261115"
+  ],
+  "canonical_source": "moments/vanishing/GLOBAL_TERNARY_CUBIC_PURE_PREFIX.md",
+  "inputs": {
+    "normalization": "moments/vanishing/ordinary_node_phase_shift_checkpoint.py",
+    "nodal_analytic": "moments/vanishing/NODAL_FORMAL_FRAME.md",
+    "triangle_analytic": "moments/vanishing/AFFINE_TRIANGLE_EXCLUSION.md",
+    "transverse_analytic": "moments/vanishing/LINE_CONIC_AFFINE_EXCLUSION.md",
+    "rank_tameness": "moments/vanishing/COERCIVE_GRADIENT_MOMENTS.md",
+    "isotropic_node_conic_gate": "moments/vanishing/QUADRATIC_W_LOG_PERIODS.md",
+    "seed_cofactor_method": "moments/vanishing/REPEATED_LINE_FINITE_PREFIX.md",
+    "other_singular_class_gates": "moments/vanishing/SQUAREFREE_SINGULAR_FINITE_PREFIXES.md",
+    "global_cubic_mixed_bound": "moments/vanishing/TERNARY_CUBIC_GMC_CLOSURE.md",
+    "prior_computability": "moments/vanishing/CUBIC_FRAME_AND_PREFIX_COMPUTABILITY.md"
+  },
+  "retained_receipts": {
+    "ordinary_node_phase_shift_checkpoint.json": "ba163f9bcbc786a7decf6fe00ecd0750f3be184be39233d33b6f21fa15998903",
+    "nodal_formal_frame_verification.json": "95f95d166d1a31a83226ad51e0c66bd495e1f3e70251d325bdf363a6727d0de5",
+    "affine_triangle_profiles_verification.json": "382ca15df11f61d6ff4d46b3803ba8a35ef0c65917cb247d63a0b7efe990caa2",
+    "affine_line_conic_profiles_verification.json": "68c73bb4015c3f31ab483fafa138906c83d8b06b1074da615076ce7985a16882",
+    "quadratic_w_log_verification.json": "dfd83d95864b5d93edd19ba8c260ea68b8885bc6ca41e765cba99480dbe86f8e",
+    "tame_gaussian_verification.json": "6386698ef94b8610e84eb2ffbbd0ad97d9f19854db2e9dda0ceb7c7ac8548bbe",
+    "squarefree_singular_finite_prefixes_verification.json": "6395fd8561f50347be07673ad76f8129393abc194877f73f7acab44541d6f9e2",
+    "repeated_line_finite_prefix_verification.json": "95c3d07ad210bcaf022ccc4c315c051ca2218636e3806bdb7fcae0db08165f4f",
+    "rank_one_wt2_verification.json": "1590f52f27566b12ba115f73951c6aa563197106abe85ed3dcaed8a7d00f93a9",
+    "cubic_gmc_closure_verification.json": "8a3975cddb1b3eef5965b9100a3c58f815b4cb344d0f0f604bed9cdeb14ac7d1",
+    "cubic_frame_prefix_verification.json": "f15bf811cd86fdf0355a11fb2531a81835704477a4c6a492f090458a10f3b1fa",
+    "cuspidal_cubic_threshold_verification.json": "807595bb8f0bd3a9160b46d4451e9b4fecac4d1f211c124cea35e062ba876611",
+    "verification.json": "a7d7db671676da463d2b3e8719ce5abb7cd1ecf44bd9fb4facbf94e2ed94c222"
+  },
+  "prior_numeric_frontier": {
+    "path": "moments/vanishing/global_pure_prefix_preupdate_20261115.json",
+    "sha256": "26bfe1a68efcdd4b1b2a2440949cbdbc7b7234bb36c2b37c351eedcf192ec1a7"
+  },
+  "accepted_run": {
+    "terminal": true,
+    "completed": true,
+    "timed_out": false,
+    "exit_code": 0,
+    "seconds": 3.949,
+    "input": "ordinary_node_finite_prefix_first_input.py",
+    "input_sha256": "f602defac102555fd4bd4f0537b86f8e41f929ab11baf290e63fde819b307023",
+    "stdout_sha256": "0c8c3b77fe405b9b9767dac5e28d69a028ff94a64b3b44441bb49690c456883b",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "exact_evidence": {
+    "checker_sha256": "f602defac102555fd4bd4f0537b86f8e41f929ab11baf290e63fde819b307023",
+    "model_certificate_sha256": "2fc77cc37fe5ccff3de74fcb6a73e987138196782823d9d91c6715d5960039cc",
+    "model_certificate": "moments/vanishing/ordinary_node_connection_models.json",
+    "universal_principal_divergence_identities": 92,
+    "rational_models": 6,
+    "certified_connection_columns": 36
+  },
+  "normalization": "Keep alpha*T^2 and the full affine Gaussian; remove mixed leading cubics by a T shear and lower uT/vT/uv by translations. After T completion and the accepted u+jv/t,v+ju/t translation, phase V/delta has no mixed cubic terms, deg_t V<=4,delta=t^2*(m-2alpha*t) of degree<=3. The prefactor remains(m-2alpha*t)^(-1/2); normalized source numerator has degree<=6.",
+  "full_rank": "After the isotropic zero-F2 conic888 branch is removed, tF2-Q2 is generically nonzero at every ordinary leading node. Each infinity point has an invertible local critical-equation Jacobian and length1. Projective Bezout and the retained coercive/tame comparison give full ranks7/6/5, including alpha!=0 and D(0)=0 charts. This is a uniform written rank proof, not a sampled critical ideal.",
+  "operator_method": "Four divergence-form image operators retain all derivative terms. Their principal polynomial projections span fixed bases7/6/5. Same-degree remainders already lie in the basis. Clearing one phase-coefficient product of degree<=12 leaves correction coefficients of degree<=12 and original derivative cofactors<=8. At depth5/4/5, H=delta^2*A0^r and all matrix numerators have degrees<=66/54/66.",
+  "class_bounds": {
+    "nodal": {
+      "rank": 7,
+      "max_source": 7,
+      "minimum_reducible": 3,
+      "steps": 5,
+      "B": 66,
+      "gate": 1855
+    },
+    "transverse": {
+      "rank": 6,
+      "max_source": 6,
+      "minimum_reducible": 3,
+      "steps": 4,
+      "B": 54,
+      "gate": 1140
+    },
+    "triangle": {
+      "rank": 5,
+      "max_source": 6,
+      "minimum_reducible": 2,
+      "steps": 5,
+      "B": 66,
+      "gate": 995
+    }
+  },
+  "isotropic_frame_exclusion_gate": 888,
+  "global_cover": {
+    "quadratic": 7,
+    "smooth": 188,
+    "nodal": 1855,
+    "cusp": 720,
+    "transverse": 1140,
+    "tangent": 935,
+    "independent_triangle": 995,
+    "concurrent": 104,
+    "repeated_line": 99
+  },
+  "global_sufficient_pure_prefix": 1855,
+  "least_prefix_interval": [
+    10,
+    1855
+  ],
+  "least_prefix_computed": false,
+  "bounded_optimality_algorithm": "At most11 monotone binary-search rounds between false9 and true1855 test radical equality of I_K and I1855. No global round, expanded1855-moment target or full20-variable radical cofactor is computed.",
+  "analytic_boundary": "Nonzero zeroth scalar coefficients still use the complete retained no-constant-period/trivial-seed-quotient class proofs. Polynomial model identities alone do not prove this. The new explicit reductions avoid an unjustified commutative-critical-ideal-to-twisted-basis inference.",
+  "literature_boundary": "No new external theorem or priority claim. The retained source audits identify the analytic imports and the prior15 November literature review. This turn supplies internal exact divergence reductions and a numerical cover, not a generic Euler-Mellin or Weyl-degree theorem import.",
+  "proof_boundary": "Universal principal/divergence identities and t-degree/ordinary-degree bounds; six exact Gaussian-normal-form rational model connections with all36 column integration-by-parts certificates, including D(0)=0 and vanishing quadratic coefficients. Full rank/normal-form coverage, all-order cofactor/seed argument, analytic nonzero zeroth coefficients and global1855 conclusion require the written proof; no high-order moment expansion, optimality, independent review or formal verification.",
+  "remaining": "Optimal numerical K in[10,1855]; explicit global radical cofactors and practical complexity; independent specialist replay/external review/formalization; optimal class gates, global term-count optimality, exceptional coefficient schemes and lower-power GVC.",
+  "independent_replay": false,
+  "external_review": false,
+  "formal_verification": false
+}

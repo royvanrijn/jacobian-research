@@ -1,0 +1,91 @@
+{
+  "date": "2026-11-16",
+  "new_claims": [
+    "GMCWEIGHTMORSE20261116",
+    "GMCSEMIPOSIMAGE20261116",
+    "GMCPOSWEIGHTRINGS20261116"
+  ],
+  "new_lesson": "METHOD-GAUSSIAN-NONNEGATIVE-WEIGHTS-AND-FINITE-MORSE-20261116",
+  "retained_lessons_updated": [
+    "METHOD-GAUSSIAN-ALGEBRAIC-FIXED-POINT-AND-JACOBIAN-COMPENSATION-20261116"
+  ],
+  "owned_work": "WORK-GAUSSIAN-FORMAL-GENERAL",
+  "canonical_proofs_sha256": {
+    "moments/vanishing/SEMIPOSITIVE_WEIGHTED_GAUSSIAN_REDUCTION_AND_SAFE_NORMAL_FORMS.md": "6c1991484617f6b7435c6c05f0063c97963f584d057343e26a9130a8d6337b4f"
+  },
+  "checker": "moments/vanishing/verify_semipositive_gaussian_reduction.py",
+  "checker_sha256": "bd3f6922d7b38e4814f4bdbd723cff1c70db53694bf84adaa648cf29ed9ff7a8",
+  "receipt": "moments/vanishing/semipositive_gaussian_reduction_verification.json",
+  "receipt_sha256": "6b019c075b8a40eeaa1de5e95598a2b79c4955858f9b9d76ab8db1914cbbfe0a",
+  "certificate": "moments/vanishing/semipositive_gaussian_reduction_certificate.json",
+  "certificate_sha256": "b60169abd40e8bed711aa66d6434f675a832dd4d88eb78cc7635189da0752f1c",
+  "runtime": "moments/vanishing/semipositive_gaussian_reduction_runtime.json",
+  "runtime_sha256": "72c442a5e4c0c2c61af981d532ab55b5784f811c253ece735419afb1ca471901",
+  "frontier": "moments/vanishing/GENERAL_GAUSSIAN_RESEARCH_FRONTIER_20261116_WEIGHTS.md",
+  "frontier_sha256": "f0a4fac4e053b0c1e89e94be2639b7ec580ee233f96a82a62b9eb0614502d2f8",
+  "primary_sources": [
+    {
+      "author": "Gert-Martin Greuel and Gerhard Pfister",
+      "title": "The Splitting Lemma in any Characteristic",
+      "url": "https://arxiv.org/html/2507.17078v1",
+      "retained_file": "moments/vanishing/sources/greuel_pfister_splitting_2507_17078v1.html",
+      "version": "v1,22July2025",
+      "published_record": "https://doi.org/10.1016/j.jalgebra.2025.10.023",
+      "published": "Journal of Algebra689,610-628,March2026",
+      "exact_import": "Complete relevant Theorem2.1(2)existence proof and Theorem2.2statement/proof boundary read. Classical formal/algebraic splitting credit only;allring polynomial finite/Jacobian1 statement proved directly by weighted contraction. No analytic or characteristic2 theorem imported.",
+      "publisher_full_text": "403;notread. The selected arXivv1 is the proof source;Crossref confirms publication metadata.",
+      "sha256": "321bd24ee39c1804dda55187f20dbfb0897370e3aaded7cfb82ba6eb2c0d3778",
+      "bytes": 495131
+    },
+    {
+      "author": "Crossref DOI metadata",
+      "title": "Published record for Greuel--Pfister splitting lemma",
+      "url": "https://api.crossref.org/works/10.1016/j.jalgebra.2025.10.023",
+      "retained_file": "moments/vanishing/sources/greuel_pfister_splitting_published_crossref_20261116.json",
+      "exact_import": "Primary DOI metadata read:authors,title,JournalofAlgebra689,610-628,publishedMarch2026. Metadata only,no theorem imported.",
+      "sha256": "86cd9b288af8ab3a0921f7650e5929b4601318f607a63e78ca2b4aa3699bd4bd",
+      "bytes": 8137
+    }
+  ],
+  "retained_import_files_sha256": {
+    "moments/vanishing/ALGEBRAIC_FIXED_POINT_LIFTS_AND_UNIVERSAL_GAUSSIAN_IMAGES.md": "5c4d210def0d05b8bf098e12532b97c98f220e92dc1f1ef9fe0617958f245080",
+    "moments/vanishing/ALGEBRAIC_GAUSSIAN_ENCODING_INPUT_BOUNDARY.md": "e45afc1459c5cde2e0ad95046fee694e8995dcd9725563ee3d7ef82f025d9bff",
+    "moments/vanishing/TIME_ZERO_SATURATION_AND_PRINCIPAL_PART_RECONSTRUCTION.md": "6338ac84e85d133b96a67f9d1fdf7e0676d4a935e7b799a2f7cf0beaae35ef75",
+    "moments/vanishing/RATIONAL_GAUSSIAN_PULLBACKS_AND_IRREGULAR_RANK.md": "3d56816a5be24f6f3af1aaa0fb103ea4f728263cd3e8cbfc7bf9161861dd7dd9",
+    "moments/vanishing/NEUTRAL_FACE_ALL_DEGREE_CLASSIFICATION.md": "a523751fa58617589e5b611243dcba5d21ac0d255583e85c774af03bdee9d8fb",
+    "moments/vanishing/gaussian_generic_cutoff_producer.py": "c9b1a84b8502f339af464f044dbbf523cf93c8c7edaec79bd81f0cabd6d8dfc7",
+    "moments/vanishing/OAKU_GRAPH_CERTIFICATES_AND_ACTUAL_POLYNOMIAL_DECISION.md": "dd0a050d4bc8538b40f2ec2aafbbe5842179b21ef70c58c157af734a50595229",
+    "moments/vanishing/BERNSTEIN_CLASSICAL_CREDIT_AND_FORMAL_EXTENSIONS.md": "a2cff821b7cee9629235dec935ad231b3db389a03b3fca650b9a35c935451cd9"
+  },
+  "proof_audit": {
+    "Morse": "Ordinary-degree Euler contraction delta=-B^-1gradR_k/k;positiveweights make every nonlinearcorrection strictlylower-weight triangular,Jacobian1,polynomialinverse;finite maxdegree2/minw. Explicitallringproof,not field-source overreach.",
+    "full_image": "Normalpairs multivariateformalresidue,full momentumsource derivatives,andconditionalquadraticGaussian afterfiniteMorse. AllimagesinfL andcoordinatepowersattainL;actualrank[L:K(t)],not degreeofnonpuregaugeextension.",
+    "regularity": "Allperiodsalgebraic and connectionfinite-monodromy regularincludinginfinity. Entirecandidatearchitecture excludedforregulartranscendental,butnotarbitraryGaussianphases.",
+    "pure_safe": "ExactJ^2sigma1 overeveryQ-algebra;polynomialcoordinatefixedpoint makesdeterminants polynomialunits andalloriginaljets polynomial. R/Ann(a) gives exactcoordinate normalizationideal. Higherresidual terms retainpureideal/genericimage/safety,notglobalmixedcutoffs.",
+    "positive": "Nozero weights givesseedpolynomial iffdeterminantunit iff finitecoefficientidealnilpotent. ExactGamma normalization;reciprocal-squaretriangularordinaryideal gives first rgate. Independentchargeproof truncatesnonlinear factorspermarker andgives explicitallringbounds.",
+    "credit": "Greuel--Pfister published2026record verifiedandselectedv1existenceproofread;formal/algebraicsplitting credited. Polynomialfinite/allring/Jacobian1 application has owncompleteproof;priorityunassessed. Oaku/Sabbah/Maisonobe/formal/allring credit boundaries unchanged."
+  },
+  "exact_controls": {
+    "finite_Morse_models": 5,
+    "nonlinear_Morse_steps": 8,
+    "original_models": 4,
+    "original_Wick_identities": 70,
+    "ordinary_pure_ideal_controls": 1,
+    "nonpure_rank_controls": 1,
+    "cutoff_models": 5,
+    "rejections": 12
+  },
+  "protected_whole_records": 174,
+  "prior_example_files": 211,
+  "previous_turn_classification": "progress:universal algebraic realization,allring fixed-point safe normalform,S_d/global trace family,and explicit minimal-input guard registered;no live process wait.",
+  "literature_boundary": "Quartic Gaussian Borel/elliptic search leads concern transformed series,not an original polynomial-phase regular actualimage;no Borel-inverse Gaussian transfer or result imported.",
+  "historical_cusp_and_cone_restarted": false,
+  "actual_image_kernel_computed": false,
+  "global_lattice_equality_claimed": false,
+  "independent_replay": false,
+  "formal_verification": false,
+  "external_review": false,
+  "novelty_claimed": false,
+  "user_goal": "Complete general Gaussian/formal programme;active;all-degree architectural closure with exact allring invariants.",
+  "next_full_obligation": "GENERAL GAUSSIAN NONNEGATIVE WEIGHT MILESTONE16November2026: GMCWEIGHTMORSE20261116 supplies finite polynomial Jacobian1 relativeMorse maps over allQ-algebras for positive residualweights. GMCSEMIPOSIMAGE20261116 closes the ENTIRE nonnegativecovariant-weight2 Gaussianarchitecture:fullgenericactualmodule fK(t,g),exactrank,algebraicfinite-monodromy type,puritydeterminant,and underpurity fixedLINEAR zero-weightmarker safety/normalization. No regularTRANSCENDENTAL image canoccur inthisarchitecture. GMCPOSWEIGHTRINGS20261116 closes itsstrictlypositive part WITHOUTpuritypremise:finiteordinarypureprefixr,determinant-unit/nilpotent safety,Gamma normalization,and explicitallring cutoff. The earlier universalalgebraicrealization is included;regulartranscendentalrealization mustescape thisclass. NEXT:exhaustiveGaussian safe/connection classification and regulartranscendental realization OUTSIDE retainedcovariant-weight constructions. Broad goal active. NEXT GENERAL OBLIGATION:regular transcendental realization and exhaustiveGaussian safe/actualconnection classification OUTSIDE the nowclosed nonnegativeweighted2 architecture. Use exact fullimages and finite-volume certificates. Do not reopen regularalgebraic realization,origin restoration,ordinary/numerical/formal/allring gates,two-O2 radial sector or retainedfamilylattices. Preserve terminalUNKNOWNjobs and separately-owned exceptionalMathieu work. No degree/support/prefix campaign,restart,outreach or delegation."
+}

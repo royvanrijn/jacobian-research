@@ -1,8 +1,0 @@
-INITIAL 104 sigma -3/2
-BEST 103 sigma -3/2 step 1 seconds 0.05
-BEST 102 sigma -3/2 step 2 seconds 0.09
-BEST 101 sigma -3/2 step 3 seconds 0.11
-BEST 100 sigma -3/2 step 5 seconds 0.15
-BEST 99 sigma 6 step 111 seconds 1.04
-BEST 98 sigma -6 step 734 seconds 5.48
-DONE 98 STEPS 5313 SECONDS 40.001

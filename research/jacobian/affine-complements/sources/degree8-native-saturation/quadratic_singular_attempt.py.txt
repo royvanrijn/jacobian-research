@@ -1,0 +1,30 @@
+from sage.all import *
+from pathlib import Path
+import gzip,json,time,hashlib
+H=Path('/home/royvanrijn/src/jacobian-research/research/jacobian/affine-complements');data=json.loads(gzip.decompress((H/'square_boundary_gap_certificates.json').read_bytes())) if False else json.loads((H/'square_boundary_gap_certificates.json').read_text());old=json.loads(gzip.decompress((H/'square_boundary_degree8_checkpoint.json.gz').read_bytes()));start=time.monotonic()
+for case,orig in zip(data['sectors'],old['sectors']):
+ k=case['multiplicities'][0];Y=PolynomialRing(QQ,'y');K=NumberField(Y(case['P8']),'y');F=GF(1009);ev=lambda c:sum(F(x)*F(990)**i for i,x in enumerate(K(c).list()));Wring=PolynomialRing(F,'w');w=Wring.gen();xx=ev(K(Y(case['x_as_polynomial_in_y'])));yy=F(990);HH=(w-xx)**k*(w-yy)**(9-k);aa,bb=HH[8],HH[7];s=(24*bb+72-11*aa*aa)/(12*aa);delta=-aa/48
+ # The source reference and complete four cusp directions are reconstructed.
+ import sys;sys.path.insert(0,str(H));from verify_full_next_normal import cox_jets,combine
+ V=PolynomialRing(F,'v');v=V.gen();h=v-s;lam=3*h/4+delta
+ def Lop(f):return h*f[1]-lam*f[0].derivative()
+ T=[V.zero()]*4;bas3=cox_jets(3,V)
+ for p,idx in enumerate(json.loads((H/'second_normal_obstruction_certificates.json').read_text())['sectors'][0 if k==2 else 1]['T_symbol_lift_cox_ji']):
+  row=next(row for row in bas3 if [row['j'],row['i']]==idx);T=[T[j]+HH[9-p]*row['jets'][j] for j in range(4)]
+ bas2=cox_jets(2,V);M=matrix(F,[[Lop(row['jets'])[j] for row in bas2] for j in range(8)]);piv=case['S_cusp_inverse_pivot_columns'];free=case['S_free_cox_columns'];inverse=M[:,piv].inverse();co=vector(F,12)
+ for j,c in zip(piv,inverse*vector(F,[-Lop(T)[j] for j in range(8)])):co[j]=c
+ S0=[T[j]+combine(co,bas2)[j] for j in range(4)];directions=[]
+ for j in free:
+  co=vector(F,12);co[j]=1
+  for ii,c in zip(piv,-inverse*M.column(j)):co[ii]=c
+  directions.append(combine(co,bas2))
+ names=['b'+str(i) for i in range(9)]+['m'+str(i) for i in range(6)]+['n'+str(i) for i in range(11)]+['c'+str(i) for i in range(2,8)]+['a'+str(i) for i in range(4)]+['kap','invkap'];A=PolynomialRing(F,names=names,order='degrevlex');symbols=dict(zip(names,A.gens()));VV=PolynomialRing(A,'v');v=VV.gen();h=v-s;lam=3*h/4+delta
+ S=[VV(S0[j])+sum(symbols['a'+str(i)]*VV(directions[i][j]) for i in range(4)) for j in range(4)]
+ R=h**8+sum(symbols['c'+str(j)]*h**j for j in range(2,8));L=R.derivative()//h;r=S[0].derivative()//h;C=lam**2*r*L.derivative()+(2*h*(S[2]+v*lam*r)-lam**2*r.derivative())*L
+ B=sum(symbols['b'+str(i)]*v**i for i in range(9));Mm=sum(symbols['m'+str(i)]*v**i for i in range(6));N=sum(symbols['n'+str(i)]*v**i for i in range(11));first=C-2*S[0].derivative()*B-Mm;second=2*Mm*S[0]+2*h*L*N-symbols['kap']
+ gens=list(first)+list(second)+[symbols['kap']*symbols['invkap']-1];gens=[f for f in gens if f]
+ assert max(f.total_degree() for f in gens)==2
+ inp=dict(sector=k,prime=1009,names=names,generators=list(map(str,gens)),representation='C-2S0primeB-M=0;2MS0+2hLA-kappa=0;kappa*invkappa-1=0')
+ Path('/research/.scratch/degree8_quadratic_'+str(k)+'.json').write_text(json.dumps(inp))
+ print('sector',k,'quadratic input',len(names),'variables',len(gens),'equations; start slimgb',time.monotonic()-start,flush=True)
+ GB=A.ideal(gens).groebner_basis(algorithm='libsingular:slimgb');inp.update(GB=list(map(str,GB)),unit=GB==[A.one()],elapsed_seconds=time.monotonic()-start);Path('/research/.scratch/degree8_quadratic_'+str(k)+'_result.json').write_text(json.dumps(inp));print('sector',k,'unit',inp['unit'],'basis length',len(GB),'time',time.monotonic()-start,flush=True)

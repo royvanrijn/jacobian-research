@@ -1,0 +1,107 @@
+{
+  "scoped_validation": "PASS",
+  "claims": [
+    "HC4MYKE0",
+    "HC4MYKE1",
+    "HC4MYKE2"
+  ],
+  "checks": [
+    "HC4MYKE0 schema,dependencies,immutable input presence and assurance",
+    "HC4MYKE1 schema,dependencies,immutable input presence and assurance",
+    "HC4MYKE2 schema,dependencies,immutable input presence and assurance",
+    "local complete intersections are deduced;finite-cycle exhaustion is required for radicality;full ideal descent and actual action existence stay separate",
+    "prior radical-plinth,period and normal-form scopes now point to finite-ideal descent without changing the retained proof/checker/receipt bytes",
+    "102 sourced methods and all affected fingerprints remove reducedness and generator count as native action inputs without dropping exact ideal descent",
+    "both work actions target exact kernel and full finite-ideal descent;h-dependent scheme structure and independent E_N/endpoints are retained",
+    "82 exact controls bind Laurent pairings,Koszul socle/generator algebra,critical ranks,the whole two-Morse-point counterexample and primitive finite-cycle lattices",
+    "classical duality and principal-plinth sources are context only;all proofs and finite-cycle hypotheses are explicit and no native action is asserted",
+    "proof and leading navigation show the residue/Koszul deduction,the exact cycle-defect quotient,the genuine counterexample and remaining ideal-descent gate",
+    "generated navigation matches the latest authoritative ledger,methods and work data",
+    "original inversion,source-alignment,Keller-fibre and embedding tasks remain open with prior proved inputs retained"
+  ],
+  "scoped_check_groups": 12,
+  "exact_current_replay_checks": 82,
+  "algebraic_and_scope_controls": 54,
+  "new_proved_imports": 0,
+  "new_unproved_external_statements": 0,
+  "arbitrary_descended_finite_plinth_is_locally_complete_intersection": true,
+  "finite_Morse_cycle_defect_detects_every_nonreduced_support_point": true,
+  "finite_cycle_exhaustion_forces_entire_descended_plinth_reduced": true,
+  "native_alignment_requires_only_exact_kernel_and_finite_ideal_descent": true,
+  "explicit_affine_source_counterexample_shows_Morse_points_alone_do_not_force_radicality": true,
+  "finite_Morse_critical_set_alone_forces_radical_plinth": false,
+  "radical_cylindrical_support_alone_implies_ideal_descent": false,
+  "every_finite_plinth_ideal_is_assumed_two_generated": false,
+  "nontransverse_normal_maps_are_assumed_degree_one": false,
+  "an_individual_native_action_with_required_kernel_and_plinth_constructed": false,
+  "all_LND_kernels_classified": false,
+  "arbitrary_acyclic_fourfolds_classified": false,
+  "K2_h1_source_equivalence_constructed": false,
+  "S_rho_normal_form_source_alignment_constructed": false,
+  "two_point_Keller_fibre_constructed_or_excluded": false,
+  "three_point_Keller_fibre_constructed_or_excluded": false,
+  "unit_ideal_endpoint_resolved": false,
+  "singleton_zero_endpoint_resolved": false,
+  "unrestricted_HC4_or_JC2_resolved": false,
+  "original_goal_complete": false,
+  "repository_checks": [
+    {
+      "name": "render-navigation",
+      "command": [
+        "make",
+        "render-navigation"
+      ],
+      "exit_code": 2,
+      "output": "make -C research PYTHON=\"/home/royvanrijn/src/jacobian-research/.venv/bin/python\" SYSTEM_PYTHON=\"python3\" \"render-navigation\"\nmake[1]: Entering directory '/home/royvanrijn/src/jacobian-research/research'\npython3 scripts/render_status.py\nTraceback (most recent call last):\n  File \"/home/royvanrijn/src/jacobian-research/research/scripts/render_status.py\", line 514, in <module>\n    main()\n  File \"/home/royvanrijn/src/jacobian-research/research/scripts/render_status.py\", line 503, in main\n    validate_index(index)\n  File \"/home/royvanrijn/src/jacobian-research/research/scripts/render_status.py\", line 360, in validate_index\n    assert consumer_path.is_file(), (\n           ^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: KDSQ6: missing document consumer artifacts/generated-results/README.md\nmake[1]: *** [Makefile:16: render-navigation] Error 1\nmake[1]: Leaving directory '/home/royvanrijn/src/jacobian-research/research'\nmake: *** [Makefile:17: render-navigation] Error 2\n"
+    },
+    {
+      "name": "check-navigation",
+      "command": [
+        "make",
+        "check-navigation"
+      ],
+      "exit_code": 2,
+      "output": "make -C research PYTHON=\"/home/royvanrijn/src/jacobian-research/.venv/bin/python\" SYSTEM_PYTHON=\"python3\" \"check-navigation\"\nmake[1]: Entering directory '/home/royvanrijn/src/jacobian-research/research'\npython3 scripts/audit_status.py\nTraceback (most recent call last):\n  File \"/home/royvanrijn/src/jacobian-research/research/scripts/audit_status.py\", line 8, in <module>\n    validate_index(index)\n  File \"/home/royvanrijn/src/jacobian-research/research/scripts/render_status.py\", line 360, in validate_index\n    assert consumer_path.is_file(), (\n           ^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: KDSQ6: missing document consumer artifacts/generated-results/README.md\nmake[1]: *** [Makefile:21: check-navigation] Error 1\nmake[1]: Leaving directory '/home/royvanrijn/src/jacobian-research/research'\nmake: *** [Makefile:17: check-navigation] Error 2\n"
+    },
+    {
+      "name": "partial-review",
+      "command": [
+        "/home/royvanrijn/src/jacobian-research/.venv/bin/python",
+        "research/scripts/research.py",
+        "check",
+        "--require-partial-review"
+      ],
+      "exit_code": 1,
+      "output": "Traceback (most recent call last):\n  File \"/home/royvanrijn/src/jacobian-research/research/scripts/research.py\", line 563, in <module>\n    raise SystemExit(main())\n                     ^^^^^^\n  File \"/home/royvanrijn/src/jacobian-research/research/scripts/research.py\", line 440, in main\n    validate_lessons(items, entries, check_reviews=args.command == \"check\")\n  File \"/home/royvanrijn/src/jacobian-research/research/scripts/research.py\", line 130, in validate_lessons\n    assert (ROOT / p).is_file(), f\"{item['id']}: missing source {p}\"\n           ^^^^^^^^^^^^^^^^^^^^"
+    },
+    {
+      "name": "required-whitespace",
+      "command": [
+        "git",
+        "diff",
+        "--check",
+        "--",
+        "research/MATH_STATUS.json",
+        "research/knowledge/lessons.json",
+        "research/knowledge/work_items.json",
+        "research/hessian/hc4-triangular-graphs/README.md",
+        "research/index",
+        "research/knowledge/work",
+        "research/knowledge/WORK_LEDGER.md",
+        "research/STATUS.md"
+      ],
+      "exit_code": 0,
+      "output": ""
+    }
+  ],
+  "required_repository_checks_all_passed": false,
+  "required_diff_whitespace_check": "PASS",
+  "own_HC4_diff_whitespace_check": "PASS",
+  "new_file_whitespace_check": "PASS",
+  "own_HC4_diff_whitespace_evidence": {
+    "exit_code": 0,
+    "output": ""
+  },
+  "repository_failures_unrelated_to_HC4": true,
+  "unrelated_missing_artifacts_reconstructed": false
+}

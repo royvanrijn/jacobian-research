@@ -1,0 +1,100 @@
+{
+  "date": "2026-11-15",
+  "canonical_proof": "moments/vanishing/HAAR_LOOP_CORNERS_AND_SPHERE_SYMMETRY.md",
+  "proof_sha256": "c0c14f09f1b9d6fe04a7d2620e0140a424245ade5ad21522232cd74e50451125",
+  "checker": "moments/vanishing/verify_haar_loop_corners.py",
+  "checker_sha256": "6750b5445b3618742487d8a4fe2b7a006ba9a58740291d21a1b0920f0d9e988d",
+  "receipt": "moments/vanishing/haar_loop_corner_verification.json",
+  "receipt_sha256": "1c9aedb4f507a0a999be315990dfbc813e4f9c38f253fa423a7de12fd803238f",
+  "repository_sources": [
+    {
+      "source": "moments/vanishing/COMPLEX_HEIGHT_IMAGES_AND_CAUCHY_RIGIDITY.md",
+      "sha256": "6c6260ad9d8ae0883637e4bd56b682bdd07c8e3a499c00a7b53d8e34d7840b68",
+      "selected_use": "Regular real-seed normalization,finite graph densities,local Plemelj jump and distinct pure-phase/height graphs."
+    },
+    {
+      "source": "moments/vanishing/FINITE_CURVE_MARKERS_AND_POSITIVE_LOOP_MODEL.md",
+      "sha256": "9993d34a630648d599f45e4fa2864d27db67053f805f97e3e91a74f9669c97ca",
+      "selected_use": "Conditional fixed bad seed-power marker for every nonzero thin pure phase;abstract cubic harmonic interval model."
+    },
+    {
+      "source": "moments/vanishing/HOPF_HEIGHT_CRITERION_AND_REAL_OBSTRUCTION.md",
+      "sha256": "7c7a0114263d40b4f68d483760e408c943cf5c0d4a855463b1132b8e1d01fc05",
+      "selected_use": "Full local rank0/rank1/saddle band estimates on the sphere and original polyhedral quotient realization."
+    },
+    {
+      "source": "moments/vanishing/GLOBAL_TRIANGLE_ALGEBRAS_AND_HAAR_BOUNDARIES.md",
+      "sha256": "e1ec26e843ed61e072a05422da9a2a20eaabeebbb0b3eddd2019f40a47bb95a9",
+      "selected_use": "Complete original T-invariant function and marker domain;does not make arbitrary phases T-invariant."
+    },
+    {
+      "source": "moments/vanishing/GAUSSIAN_RADIAL_TRANSFER_AND_EXCEPTIONAL_UNIFORMITY.md",
+      "sha256": "b2e468ccb68f4e904eceb8cd9015840695998213403be0dda1a3ea4c6bf7c1a0",
+      "selected_use": "Concurrent structural context read and preserved:fixed-matrix-degree Gaussian radial uniformity;not a premise of the new geometric proofs."
+    }
+  ],
+  "primary_sources": [
+    {
+      "authors": "Christopher J.Bishop",
+      "title": "The Riemann Mapping Theorem",
+      "version": "January2010 preface",
+      "url": "https://www.math.stonybrook.edu/~bishop/classes/math626.F08/rmt.pdf",
+      "cached_file": "moments/vanishing/sources/bishop_riemann_mapping_notes.pdf",
+      "sha256": "c753f68c9688a9c745be5d20d83e8849738cc6cba3d422fa0a318d892bce8e69",
+      "selected_passages_read": "Chapter4,section3,Theorem51 and Corollaries52-54,printed141-144/PDF150-153;Corollary53 displayed formula visually inspected.",
+      "imported": "Ahlfors distortion harmonic-mass upper bound. Constant-angle and universal square-root bounds are derived explicitly in this proof. Source normalization is handled by scaling."
+    },
+    {
+      "authors": "Dmitry Beliaev",
+      "title": "Conformal Maps and Geometry",
+      "version": "June8,2015 notes",
+      "url": "https://www.math.stonybrook.edu/~bishop/classes/math627.S25/Beliaev_notes.pdf",
+      "cached_file": "moments/vanishing/sources/beliaev_conformal_maps_geometry_2015.pdf",
+      "sha256": "ee7bac33666290ff4fcbf5524f45ccfa8fca08c697a84279499d4ba55c5d9d91",
+      "selected_passages_read": "Theorems2.3.1 and2.6.6,printed11 and23;retained selected-page read/visual inspection in preceding loop construction.",
+      "imported": "Conformal disk parameterization and Jordan boundary homeomorphism."
+    },
+    {
+      "authors": "Christopher J.Bishop and Kirill Lazebnik",
+      "title": "A geometric approach to polynomial and rational approximation",
+      "url": "https://www.math.stonybrook.edu/~bishop/papers/Runge_Apr1_arxiv.pdf",
+      "cached_file": "moments/vanishing/sources/bishop_lazebnik_polynomial_rational_approximation.pdf",
+      "sha256": "07a4d9752f21c916d248fe202aa27c4ad0e01e7f3819da7ba74eb492d2b8841e",
+      "selected_passages_read": "Theorem10.7 and its proof,printed30/PDF30,ordinary Mergelyan approximation statement.",
+      "imported": "Only uniform polynomial approximation on a full compact set for functions continuous there and holomorphic inside. The stronger critical-point constraints are not used."
+    },
+    {
+      "authors": "Alex Wright and Kael Dixon",
+      "title": "The Poincare-Hopf Theorem",
+      "version": "April2008",
+      "url": "https://websites.umich.edu/~alexmw/PoincareHopf.pdf",
+      "cached_file": "moments/vanishing/sources/wright_dixon_poincare_hopf_2008.pdf",
+      "sha256": "1fb6da15226cff3a87c3c42c047c96a982373272e5476686a5182486f788f5e7",
+      "selected_passages_read": "Theorem15,printed9/PDF9;preceding index definition and invariance,printed5-8.",
+      "access": "Full PDF cached after ordinary public request with browser User-Agent;initial default urllib request returned403.",
+      "imported": "Index sum equals Euler characteristic for a smooth vector field with finitely many zeros. Degenerate-extremum and critical-circle contributions are proved explicitly in the new note."
+    }
+  ],
+  "new_all_degree_arguments": [
+    "A pure positive regular graph measure has Cauchy transform1/s on the exterior;an edge bordering that exterior on both sides has zero jump and is impossible. Interior bridges are not excluded.",
+    "Mergelyan approximation,Jordan boundary extension and Fourier uniqueness make every full-support positive pure Jordan measure the harmonic measure at0,with0 in the bounded domain.",
+    "The extremum ball lower bound epsilon^(N/2) and harmonic corner upper bound epsilon^(k*beta) force opening>=2*pi*k/N. The abstract cubic loop therefore has no C2 compact real-seed realization in dimensions1,2,3.",
+    "On the sphere,all interior seed bands are O(epsilon),including at critical polynomial parameters via the Beurling bound;hence no interior degenerate critical point or saddle survives.",
+    "The universal O(sqrt(epsilon)) endpoint bound,rank1 analytic splitting,and quartic Fatou rescaling force every nonisolated endpoint component to be a smooth critical circle with nondegenerate normal Hessian.",
+    "Critical circles have total gradient index0;isolated extrema have index+1. Poincare-Hopf leaves exactly two isolated critical points. Their invariant pair forces a cyclic or dihedral rotation group,excluding O and I even at outward cusps.",
+    "Normalized p and bar(p) recover the real parameter rationally,giving generic injectivity. A Jordan image is therefore traversed once. All simple Jordan images are excluded for full original T-invariant thin pure phases in every degree."
+  ],
+  "exact_controls": "Cubic rays,opening,orders and area;selected strict/equality corner thresholds;sector integral;saddle and critical-curve bands;positive/semidefinite quartic area;critical-circle index signs;actual dihedral sphere boundary h=z2.",
+  "logical_boundaries": [
+    "The universal harmonic,approximation,mass,index and normalization arguments are INTERNAL WRITTEN,not machine verified by the selected controls.",
+    "The all-Jordan exclusion applies to original T-invariant phases on polyhedral sphere quotients,not arbitrary full phases. Arbitrary full phases retain the three-dimensional corner bound.",
+    "Pure phase measure is UNSYMMETRIZED and has pure moments0. The SYMMETRIZED even-height law cannot be substituted for it.",
+    "No exterior hair is allowed,but a bridge lying inside an outer loop is not excluded by that lemma. Non-Jordan separating graphs with several loops or interior branches remain open.",
+    "Cyclic and dihedral rotation groups are outside the strongest sphere conclusion. h=z2 is a critical-set boundary control,not a pure-phase construction.",
+    "The cubic abstract positive law remains valid;its realization by a C2 compact real seed in dimensions<=3 is now proved impossible. No dimension4 realization is asserted.",
+    "Both exceptional MZ decisions,full non-T-invariant compatible thin graphs,and full rank2/all-marker safety remain OPEN."
+  ],
+  "independent_replay": false,
+  "formal_verification": false,
+  "external_review": false
+}

@@ -1,0 +1,73 @@
+{
+  "review_date": "2026-11-15",
+  "title": "All-offset affine polar curves and complete invertible semisimple affine-pencil inverse closure",
+  "newly_cached_primary_context": [
+    {
+      "url": "https://arxiv.org/abs/2112.08241v2",
+      "retained_file": "asok-dubouloz-ostvaer-suspension-2112.08241v2.html",
+      "sha256": "2d5c69dfacf51a24f8845a7d81baff21cb32e382239e9163ae81488e3d28ba67",
+      "portions_inspected": "Versioned primary abstract and bibliographic record.",
+      "role": "Related suspension context only. No A1-homotopy, cancellation, connectedness or suspension classification theorem is imported. Every product stratum and its inverse is explicit in the proof."
+    }
+  ],
+  "newly_used_unproved_external_statements": [],
+  "rechecked_retained_primary_context": [
+    {
+      "url": "https://stacks.math.columbia.edu/tag/0C1B",
+      "retained_file": "stacks-leading-riemann-hurwitz-0C1B.html",
+      "role": "Rechecked the already explicit characteristic-zero formula and tame ramification contribution e-1. Apply it component by component; no connectedness theorem is needed."
+    }
+  ],
+  "retained_structural_inputs": [
+    {
+      "claim": "HC4MYHG0",
+      "statement": "Whole generic profile L^3-NL under hypothetical gradient nonautomorphy and unit Hessian; actual critical schemes and source value fibres are invariant."
+    },
+    {
+      "claim": "HC4MYHC0",
+      "statement": "Explicit retained Hodge additivity, products and smooth affine curve formula with total genus and actual punctures."
+    },
+    {
+      "claim": "HC4MYIY0",
+      "statement": "Explicit retained characteristic-zero Riemann-Hurwitz foundation."
+    },
+    {
+      "claim": "HC4MYJH1",
+      "statement": "Complete simple stationary groups and exact semisimple nondegenerate-Krylov active budget."
+    },
+    {
+      "claim": "HC4MYHP0",
+      "statement": "Certified quadratic similitudes preserve literal scalar/constant potential identities."
+    },
+    {
+      "claim": "HC4MYHM0",
+      "statement": "Literal ambient normalization transfers to actual original Meng-Yang images."
+    }
+  ],
+  "retained_proof_and_source_sha256": {
+    "hessian/hc4-triangular-graphs/GLOBAL_VALUE_ORBITS.md": "1dba2b511024f9da2ebd787183de66aaf42e76bf823fee76b745ffedabef2d5c",
+    "hessian/hc4-triangular-graphs/HODGE_TRACE_CLOSURE.md": "b4958aa0e48775d39f790e8722314452b0d9852a1e98ebbfee2bd2afb2068171",
+    "hessian/hc4-triangular-graphs/CONTRACTIBLE_RADICAL_CURVES_AND_PENCIL_DEFECT.md": "c04f018658b746c338bc9571be437b74014c8d8ae836cc55e6c100e387ba3022",
+    "hessian/hc4-triangular-graphs/SIMPLE_STATIONARY_POLES_AND_NONCYCLIC_KRYLOV_CLOSURE.md": "9406013661aa9eeebbf24c1e11a3cb908b81c6a4db9eff6eb899ba00974e9852",
+    "hessian/hc4-triangular-graphs/verify_stationary_pole_masses.py": "e3808ce17d3d7ca05416ae09efce3c20eec6fb933cd2d70e524147dd9fd3ad58",
+    "hessian/hc4-triangular-graphs/receipt-stationary-pole-masses.json": "ecefd5b1860e451fcab5f6bf2d009788547b0f7c9d15f2f8c7718d105abfd35c",
+    "hessian/hc4-triangular-graphs/sources/stationary-pole-mass-context.json": "1f61f83d3da73a55a0784caaf5021fef9fc1cac22d130d840fbad49e6a622b3e",
+    "hessian/hc4-triangular-graphs/ALL_CENTERED_QUADRATIC_COMPOSITE_IMAGES.md": "4b5b7303207c9181c6f0abd63540574847318d9bedcfa60d075b7a0d688a1361",
+    "hessian/hc4-triangular-graphs/ELLIPTIC_CONE_TRACES_AND_COMPLETE_CYCLIC_CLOSURE.md": "2622bd25d5fa9145c64460039961a70347f4be83c04fd42dfe8781e4dcefc605",
+    "hessian/hc4-triangular-graphs/QUADRATIC_ISOMETRY_SATURATION.md": "7655380f3443c438f2d33b87b2ca9acf2c51a6db15e41b12a33a4bd0414723ad",
+    "hessian/hc4-triangular-graphs/AMBIENT_QUADRIC_GRAPHS.md": "435ead09b62a8ec765f626b66314db3a85033c2e75019f12b7b5a021408dcc1c",
+    "hessian/hc4-triangular-graphs/sources/stacks-leading-riemann-hurwitz-0C1B.html": "616e526d775d71ae3dd706bccfdc38115a846c7eafac1e7080d53691bc2249a3",
+    "hessian/hc4-triangular-graphs/sources/ricolfi-hodge-1907.08123v1.html": "c5fcfee336ea30011ae98d8c5d766aa41ee683b5fa98f08c7abb7ce1869147bc",
+    "hessian/hc4-triangular-graphs/sources/hodge-trace-import.json": "4804ff11d0a963ccdb9ce7ee1efad612856a91e2e4fcae2a6ecec1d58f06c5bb"
+  },
+  "affine_distinct_nonzero_plane_pencil_total_genus_proved": true,
+  "all_invertible_semisimple_affine_offsets_inverse_closed": true,
+  "isotropic_projected_offsets_and_repeated_active_primaries_covered": true,
+  "all_invertible_semisimple_unit_hessian_source_orbits_proved_nonexistent": false,
+  "all_singular_semisimple_affine_pencils_resolved": false,
+  "all_independently_centered_quadratic_composite_images_resolved": false,
+  "unit_ideal_endpoint_resolved": false,
+  "singleton_zero_endpoint_resolved": false,
+  "unrestricted_HC4_or_JC2_resolved": false,
+  "original_goal_complete": false
+}

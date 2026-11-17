@@ -1,0 +1,194 @@
+{
+  "schema": "r7-universal-contact-v1",
+  "passed": true,
+  "check_count": 69,
+  "checks": [
+    "polynomial parts agree with independent binomial expansion",
+    "retained parity gap identity",
+    "even p at b=d=0",
+    "even q at b=d=0",
+    "centered quadruple-root derivative",
+    "quadruple-root scaling",
+    "literal fourth-order-root unit identity",
+    "fourth-order-root constant nonzero",
+    "all specialized gaps affine-linear",
+    "separate Fraction unit replay",
+    "tampered unit certificate rejected",
+    "universal contact coefficient t17",
+    "universal contact coefficient t11 at h0",
+    "contact coefficient mutation rejected",
+    "universal polynomial constructed without coefficient sampling",
+    "nonaffine involution leading coefficient",
+    "bounded finite slope poles cannot reach leading order",
+    "all-r shifted-product contact t23",
+    "all-r shifted-product contact t17 at h0",
+    "shifted-product nonaffine leading obstruction",
+    "shifted-product pole contribution below leading order",
+    "degree-one reciprocal contact finite base pole bound",
+    "degree-one reciprocal contact infinite base pole bound",
+    "genuine two-contact family incidence",
+    "genuine two-contact family critical condition",
+    "positive control Hermite involution",
+    "positive control is outside degree(6,10) hypothesis",
+    "constant-leading numerator exceeds denominator k0",
+    "constant-leading field degree exceeds six k0",
+    "linear-leading field degree exceeds six k0",
+    "constant-leading numerator exceeds denominator k1",
+    "constant-leading field degree exceeds six k1",
+    "linear-leading field degree exceeds six k1",
+    "constant-leading numerator exceeds denominator k2",
+    "constant-leading field degree exceeds six k2",
+    "linear-leading field degree exceeds six k2",
+    "constant-leading numerator exceeds denominator k3",
+    "constant-leading field degree exceeds six k3",
+    "linear-leading field degree exceeds six k3",
+    "constant-leading numerator exceeds denominator k4",
+    "constant-leading field degree exceeds six k4",
+    "linear-leading field degree exceeds six k4",
+    "constant-leading numerator exceeds denominator k5",
+    "constant-leading field degree exceeds six k5",
+    "linear-leading field degree exceeds six k5",
+    "zero-A leading coefficient cannot cancel",
+    "control0 numerator degree uniform formula",
+    "control0 zero-A numerator degree uniform formula",
+    "control0 no denominator cancellation over Q(x,A)",
+    "control1 numerator degree uniform formula",
+    "control1 zero-A numerator degree uniform formula",
+    "control1 no denominator cancellation over Q(x,A)",
+    "control2 numerator degree uniform formula",
+    "control2 zero-A numerator degree uniform formula",
+    "control2 no denominator cancellation over Q(x,A)",
+    "complete three infinity escapes",
+    "balanced(3,3) excluded independently of finality",
+    "all exceptional residual budgets at most one",
+    "remaining ramified projection degrees",
+    "full determinant divisor fibre degree",
+    "reciprocal graph derivative numerator",
+    "moving pole critical value",
+    "stationary pole single cancellation",
+    "varying-direction parabola determinant",
+    "varying-direction cubic coefficient",
+    "double-line determinant factorization",
+    "immersed boundary has two exceptional curves",
+    "nonimmersed smooth-cusp boundary has three exceptional curves",
+    "genus-two positivity window"
+  ],
+  "input_sha256": {
+    "jacobian/jc2-r7-universal-contact/PROOF.md": "6650f0769c3ec7f95196d39732e988b1ae73395bc7864c3d7b5855f441706c98",
+    "jacobian/jc2-r7-universal-contact/README.md": "5c8fc17c3661c08f78f37fa52ed39caa6c171c3c93d6085545958be667ad4288",
+    "jacobian/jc2-r7-universal-contact/certificates.json": "c127cd71d35252d7d89d6ecdbb2bc858b8314950078b3494c99968f943dc8c29",
+    "jacobian/jc2-r7-universal-contact/verify.py": "5b064557f568b68c6b4a9cae76e36be51bcbfecebadb65b07678074d75e654bc",
+    "foundations/scripts/verify_f2_degree_6_10_gap.py": "a6de21ad37e59a6bab8c751dfd94fb72bdf21784bcf2f10322b11da6b77c25fe",
+    "jacobian/jc2-normal-r7/classification.json": "8efd66a04d1c1d3045b16a80ea1b5f59284cb82f0b5453ef179bf4486998cf8c",
+    "jacobian/jc2-omitted-divisors/GLOBAL_LEDGER.md": "e3b6fa954ecd67be226a87992707a67207aa377c37bad6257b5f3cbad0476ecb",
+    "jacobian/r7-adjoint-exclusion/PROOF.md": "b3839b2ff0a3a27b3ad24f2569b186e1613fd1da77b1f7782946966b8aa56f00",
+    "jacobian/r7-adjoint-exclusion/SOURCE_AUDIT.md": "fa4132f0dc949bf7bb2e2a2c61a9ef8aa8c53f9f17f3828a938f45deae337484",
+    "jacobian/minimal-resolution-positivity/PROOF.md": "e7619312633912a00a520db0048019aae00835cfb31ab3794f110b9665868185",
+    "jacobian/jc2-boundary-attachment/sources/borisov-stein-author.pdf": "dc63edc476dcd8f2b9b35329bc3bbb415bfb15496fb8fa384ff22cfae24271f4"
+  },
+  "elapsed_seconds": 0.331,
+  "fourth_order_root_constant": "1661075456/6561",
+  "universal_contact_coefficients": [
+    "3840*h**3",
+    "160*b**3/9"
+  ],
+  "degree_bounds": [
+    {
+      "gcd_degree": 0,
+      "nonzero_A": 17,
+      "zero_A": 15
+    },
+    {
+      "gcd_degree": 1,
+      "nonzero_A": 16,
+      "zero_A": 14
+    },
+    {
+      "gcd_degree": 2,
+      "nonzero_A": 15,
+      "zero_A": 13
+    },
+    {
+      "gcd_degree": 3,
+      "nonzero_A": 14,
+      "zero_A": 12
+    },
+    {
+      "gcd_degree": 4,
+      "nonzero_A": 13,
+      "zero_A": 11
+    },
+    {
+      "gcd_degree": 5,
+      "nonzero_A": 12,
+      "zero_A": 10
+    }
+  ],
+  "surviving_infinity_budgets": [
+    {
+      "indices": [
+        1,
+        5
+      ],
+      "fibre_degrees": [
+        1,
+        0
+      ],
+      "squares": [
+        -2,
+        -1
+      ],
+      "exceptional_budget": 1
+    },
+    {
+      "indices": [
+        1,
+        5
+      ],
+      "fibre_degrees": [
+        2,
+        0
+      ],
+      "squares": [
+        -3,
+        -1
+      ],
+      "exceptional_budget": 0
+    },
+    {
+      "indices": [
+        2,
+        4
+      ],
+      "fibre_degrees": [
+        1,
+        0
+      ],
+      "squares": [
+        -2,
+        -1
+      ],
+      "exceptional_budget": 0
+    }
+  ],
+  "surviving_ramified_projection_degrees": [
+    [
+      1,
+      2,
+      3
+    ],
+    [
+      4
+    ],
+    [
+      3
+    ]
+  ],
+  "surviving_projection_degrees_after_reciprocal_contact": [
+    3,
+    4,
+    3
+  ],
+  "geometry": "Written proof with cited boundary/positivity inputs; not formally or externally reviewed.",
+  "finality": "Not used for the algebra or three-escape reduction. Added only for the stronger whole single-ramified-row corollary; not independently reproved."
+}

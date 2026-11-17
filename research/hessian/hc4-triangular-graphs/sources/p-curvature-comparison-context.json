@@ -1,0 +1,106 @@
+{
+  "review_date": "2026-11-16",
+  "retained_structural_inputs": [
+    {
+      "claim": "HC4MYHX0",
+      "canonical_source": "hessian/hc4-triangular-graphs/REGULAR_PARAMETER_MONODROMY.md"
+    },
+    {
+      "claim": "HC4MYLG1",
+      "canonical_source": "hessian/hc4-triangular-graphs/UNIFORM_INTEGRATION_AND_EXACT_RELATIVE_QUOTIENT.md"
+    },
+    {
+      "claim": "HC4MYLP0",
+      "canonical_source": "hessian/hc4-triangular-graphs/SUBMERSION_GAUSS_MANIN_AND_MARKED_VOLUME_OBSTRUCTION.md"
+    },
+    {
+      "claim": "HC4MYLR0",
+      "canonical_source": "hessian/hc4-triangular-graphs/IRREDUCIBLE_TARGET_FRAMES_AND_PUNCTURE_EXTENSIONS.md"
+    },
+    {
+      "claim": "HC4MYLR1",
+      "canonical_source": "hessian/hc4-triangular-graphs/IRREDUCIBLE_TARGET_FRAMES_AND_PUNCTURE_EXTENSIONS.md"
+    },
+    {
+      "claim": "HCTANG2",
+      "canonical_source": "hessian/tang-hc4-audit/STRUCTURAL_REVIEW.md"
+    },
+    {
+      "claim": "HC4MYKR0",
+      "canonical_source": "hessian/hc4-triangular-graphs/QUADRATIC_SOURCE_RECONSTRUCTION_AND_QUARTIC_RETIREMENT.md"
+    }
+  ],
+  "retained_proof_and_source_sha256": {
+    "hessian/hc4-triangular-graphs/REGULAR_PARAMETER_MONODROMY.md": "b010d2e4c62906a8a79da9dbc41ef7d0e3d5edefb4520cf487ba09ded5d86956",
+    "hessian/hc4-triangular-graphs/verify_regular_parameter.py": "640f2b1f303d9fc6232028ac6a744addd0de0380f5522ec7c11b52a30a6f175d",
+    "hessian/hc4-triangular-graphs/UNIFORM_INTEGRATION_AND_EXACT_RELATIVE_QUOTIENT.md": "c58bd8d84d79ca59db17e1eb32aac3ba67edc1ce3c2724e55a8af55b59f514d6",
+    "hessian/hc4-triangular-graphs/verify_uniform_integration.py": "46595e67d815fd7634d2104d7dc66a0cc315fb1ad63a53629deb70abe7711404",
+    "hessian/hc4-triangular-graphs/SUBMERSION_GAUSS_MANIN_AND_MARKED_VOLUME_OBSTRUCTION.md": "d803589b668f3b16d4acf17099f4d155e1e8e8c830ea585e25bcedfb6dea109a",
+    "hessian/hc4-triangular-graphs/verify_submersion_connection.py": "905ad3b5b6fd38222aa5d0340760131040f078d1e394e22f0cc111b5d5b591bc",
+    "hessian/hc4-triangular-graphs/IRREDUCIBLE_TARGET_FRAMES_AND_PUNCTURE_EXTENSIONS.md": "2a94beb63188adda7ca79a0492d404ccbe917f99cb7e4f077c75192e4e53567e",
+    "hessian/hc4-triangular-graphs/verify_irreducible_monodromy.py": "c621a08efc63d527e92ab7d99a256c8689f5a6b614faaefc9736c08cd2ba778a",
+    "hessian/tang-hc4-audit/STRUCTURAL_REVIEW.md": "26a6a76eb579de05b8e71245b8b804bdd5f036602f2e3e6ad5d036fd9f5cd572",
+    "hessian/tang-hc4-audit/verify_structural.py": "23e87f797b4d086ede8195773092dcd42d705258ec57c05920731e87e0ce9b2d",
+    "hessian/hc4-triangular-graphs/QUADRATIC_SOURCE_RECONSTRUCTION_AND_QUARTIC_RETIREMENT.md": "c45fe8fb1c9f0eabfa8bfef32e30b96e71834ee68609e59069e8fb9039034eca",
+    "hessian/hc4-triangular-graphs/verify_quadratic_reconstruction.py": "0494f04ada75cf1cb7859bb1d86e63ea0259a6ce4e838ab4678276098d93c49f"
+  },
+  "new_primary_sha256": {
+    "../tmp/pdfs/katz-1972-algsoln.pdf": "bc428a0280a71c5237ca99db058ca9117f045bf640660e69ba30a1d97759b836"
+  },
+  "newly_imported_proved_external_statements": [
+    {
+      "id": "KATZ1972-THEOREM5.5",
+      "statement": "For smooth quasi-projective U over a complex function field K,the finite Gauss-Manin connection on H^n_dR(U/K) has a full set of algebraic solutions iff its p-curvature vanishes for almost all primes of some infinite set,in the uniform spreading sense of5.4.3.",
+      "source_url": "https://web.math.princeton.edu/~nmk/old/algsoln.pdf",
+      "doi": "10.1007/BF01389714",
+      "private_source_path": "../tmp/pdfs/katz-1972-algsoln.pdf",
+      "statement_pages": [
+        74,
+        75,
+        79
+      ],
+      "complete_proof_and_spreading_pages": [
+        73,
+        74,
+        75,
+        76,
+        77,
+        78,
+        79
+      ],
+      "assurance": "Published proved theorem imported;complete Theorem5.1 proof and5.4-5.5 deduction read,printed73-79 visually inspected.Dependencies3.3.1/4.3.3,Hodge/compactification credited,not independently reproduced.Private download retains original terms page,not mirrored in canonical research sources."
+    }
+  ],
+  "newly_used_unproved_external_statements": [],
+  "primary_inspection": {
+    "url": "https://web.math.princeton.edu/~nmk/old/algsoln.pdf",
+    "path": "../tmp/pdfs/katz-1972-algsoln.pdf",
+    "inspection": "Katz1972Theorem5.5,complete Theorem5.1 proof75-76 and birational deduction5.4-5.5/spreading quantifiers77-79 read;complete pertinent printed73-79 rendered and visually inspected.Theorem4.3.3 proof69-71 reread via full primary OCR for dependency credit.MainTheorem3.3.1 is credited dependency,not independently reproved.118-page paper NOT claimed fully read.Original private PDF in tmp/pdfs with terms page intact,pinned;not republished or added to canonical research source collection."
+  },
+  "full_theorem_target": "Full HC4/JC2 proof or actual counterexample.",
+  "last_unsolved_implication": "ACTUAL polynomial plane source ==> Tr(Lambda_L*Lambda_L) subset B,or full marked-energy integrality;OPEN.",
+  "previous_goal_turn_classification": "progress",
+  "mathematical_development_boundary": "New all-p restricted-Lie identity and integral torsion/comparison proof;new geometric Legendre control with universal nonzero finite p-curvature residue.No old registered mathematical checker replay.No prime sweep or deeper matrix iteration campaign.",
+  "raw_corrected_submersion_connection_has_zero_p_curvature_all_p": true,
+  "raw_zero_p_curvature_uses_no_Keller_mate": true,
+  "identity_Keller_map_raw_integral_torsion_at_every_prime_proved": true,
+  "geometric_commuting_lift_finite_comparison_kernel_all_odd_p_proved": true,
+  "published_finite_Gauss_Manin_arithmetic_inverse_criterion_adopted": true,
+  "uniform_spreading_quantifier_retained": true,
+  "newly_adopted_external_theorem": true,
+  "external_review_deferred": true,
+  "raw_mod_p_quotient_identified_with_finite_model_reduction": false,
+  "finite_comparison_injectivity_proved_for_actual_plane": false,
+  "finite_Gauss_Manin_p_curvature_proved_automatic_zero": false,
+  "full_p_curvature_conjecture_assumed": false,
+  "Legendre_open_surface_treated_as_whole_plane_Keller_counterexample": false,
+  "new_arithmetic_criterion_treated_as_HC4_closure": false,
+  "old_registered_mathematical_checkers_replayed": false,
+  "last_HC4_source_to_regular_inverse_Gram_implication_proved": false,
+  "independent_replay": false,
+  "formal_verification": false,
+  "external_review": false,
+  "external_review_requested": false,
+  "unrestricted_HC4_or_JC2_resolved": false,
+  "original_goal_complete": false
+}

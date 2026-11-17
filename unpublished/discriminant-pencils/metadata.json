@@ -1,0 +1,26 @@
+{
+  "title": "Generic Discriminants of Polynomial Tangent Pencils",
+  "author": {
+    "name": "Roy van Rijn",
+    "orcid": "0009-0000-2808-0645"
+  },
+  "summary": "Studies the generic cusp-node theorem for the reduced discriminant curve of H(W)-sW+t.",
+  "published": false,
+  "status": "parked",
+  "source": "main.tex",
+  "pdf": "paper.pdf",
+  "build": "latexmk -pdf -interaction=nonstopmode -halt-on-error main.tex",
+  "verification": "The Lean development is partial and does not certify the complete main theorem.",
+  "next_steps": [
+    "Reassess the scope and complete the proof review before restarting publication work."
+  ],
+  "catalogued_on": "2026-11-17",
+  "abstract": "Let \\(H\\) be a polynomial of degree \\(n\\geq3\\) over an algebraically\nclosed field of characteristic zero.  The repeated-root locus of the pencil\n\\[\n  H(W)-sW+t\n\\]\nis parameterized by\n\\[\n  r\\longmapsto\\bigl(H'(r),rH'(r)-H(r)\\bigr).\n\\]\nWe prove that, for \\(H\\) in a nonempty Zariski-open set, its projective\nclosure is a rational plane curve of degree \\(n\\), smooth at its unique\npoint at infinity, with exactly \\(n-2\\) ordinary cusps and\n\\(\\frac12(n-2)(n-3)\\) ordinary nodes, and no other singularities.\nThe proof uses the contact of the graph of \\(H\\) with affine lines to\nexclude every nongeneric singularity before the genus formula is applied.",
+  "abstract_format": "latex",
+  "abstract_source": "main.tex",
+  "resource_type": {
+    "title": "Preprint",
+    "type": "publication",
+    "subtype": "preprint"
+  }
+}

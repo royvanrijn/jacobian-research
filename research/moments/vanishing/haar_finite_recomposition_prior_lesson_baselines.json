@@ -1,0 +1,81 @@
+{
+  "METHOD-TAME-ORIGINAL-PERIOD-20261116": {
+    "id": "METHOD-TAME-ORIGINAL-PERIOD-20261116",
+    "area": "geometry",
+    "programme_status": "archived",
+    "title": "Every eventually pure original volume phase is non-tame; retain its origin V defect and original-form lattice",
+    "when": "Seeking a complete exceptional MZ theorem through tame Gauss-Manin systems, localized semisimplicity, original periods or the parameter-zero unit extension.",
+    "use": "Tame original forms lie in V_c^>-1. Strictness and CRT projectors show that every nonzero original marked period has a NONRATIONAL ordinary resolvent. Every nonconstant normalized eventually pure phase is therefore non-tame. Its original unit lies outside V_0^>-1, or V_0^>-N-1 for a degree-N polynomial period. Continue the actual all-phase/all-marker unit-generation implication on this compulsory non-tame locus.",
+    "avoid": "Trying to prove tameness for a nonconstant pure phase as a route to MZ; confusing original forms with t-dependent amplitudes; concluding that a tame source has no polynomial-period submodule. The genuine tame quadric height example has such a nonsplit submodule, while its ORIGINAL volume is not pure.",
+    "boundary": "BOTH full exceptional MZ cases remain OPEN. Non-tameness and an origin V defect are necessary for eventual purity, NOT sufficient for purity, safety or failure. No general local boundary-cycle identification or weak-tameness extension is imported. Universal proofs are internal and use the precise original-form lattice theorem; numerical controls do not prove it. External review remains deferred. The exact geometric target is now the actual integral Haar-lift variation d_P, not an arbitrary splitting. Safety on the pure locus is equivalent to d_(P,1)=0. Under semisimple fibre monodromy at 1, the linking identity puts this cycle in the invariant nearby-fibre boundary image; these sufficient hypotheses remain unproved for all phases.",
+    "reopen_when": "Control the compulsory original-unit defect in the actual wild exceptional geometry sufficiently to prove H=C[t]Omega+K from P Omega in K for every phase, or realize a genuine exceptional failure. Retain all original multipliers, coefficient nilpotents and the unlocalized source; do not substitute a tame sector or review gate for the full finish line. Use actual-cycle vanishing and right-2O/2I regularity; shared sphere topology or finite characters alone cannot close the full theorem.",
+    "claims": [
+      "GTAMEORIGINALRIGID20261116",
+      "GHAARCYCLE20261116",
+      "GHAARLINKBOUND20261116"
+    ],
+    "sources": [
+      "moments/vanishing/TAME_ORIGINAL_PERIOD_RIGIDITY_AND_PURE_BOUNDARY_DEFECTS.md",
+      "moments/vanishing/tame_original_period_source_audit.json",
+      "moments/vanishing/HAAR_CYCLE_VARIATION_AND_FIBRE_BOUNDARY_LINKING.md",
+      "moments/vanishing/haar_cycle_linking_source_audit.json"
+    ],
+    "implementation": [
+      "moments/vanishing/verify_tame_original_period.py"
+    ],
+    "keywords": [
+      "Mathieu",
+      "original form",
+      "tameness",
+      "V filtration",
+      "origin defect",
+      "nonrational moments",
+      "all degree",
+      "closure first"
+    ],
+    "reviewed_claims": {
+      "GTAMEORIGINALRIGID20261116": "7b7fef48e9cbb7a4",
+      "GHAARCYCLE20261116": "b80a4b030a392f6b",
+      "GHAARLINKBOUND20261116": "672850e1f86c59e6"
+    }
+  },
+  "METHOD-PRIMITIVE-FIBRE-AND-SLICE-20261115": {
+    "id": "METHOD-PRIMITIVE-FIBRE-AND-SLICE-20261115",
+    "area": "geometry",
+    "title": "Inspect primitive generic fibres and slice regularity before trying to descend a witness",
+    "when": "A proposed all-degree finite-quotient construction reuses a known phase through birational coordinates,rational reparameterization,or a rational unipotent slice.",
+    "use": "Pass to the primitive pencil. For elliptic ruled generic fibres,use the intrinsic genus1 base and its metabelian automorphism group;Q8 in the finite group second derived obstructs a faithful action. Compute the j-function divisor to test all Mobius deck symmetries at once. For a rational Ga slice,use Ds1 and local nilpotence:regular unary expressions would yield a nonzero constant in D(A),impossible for normalized invariant h. Preserve the distinction between a field invariantization and regular period transfer.",
+    "avoid": "Reopening powers or nonlinear coordinate changes of P_N:its entire birational-and-rational-unary orbit is excluded on both models. Do not extrapolate elliptic ruled geometry to all bad phases:the original Hopf circuit has rational generic fibre and admits rational invariantization. Its averaged slice has no nonconstant regular rational unary expression. Clearing poles with other variables changes the phase and needs new all-order pure and marked identities.",
+    "boundary": "General birational group and LND proofs are internal written;the exact checker verifies coordinate maps,j,derived groups and translated-slice identities. Both exceptional MZ questions remain OPEN. The entire primitive elliptic ruled class is excluded for invariant primitive factors on2I;the2O involutive-base case remains possible. Rational field descent alone is not a counterexample.",
+    "reopen_when": "A new primitive fibration avoids the elliptic ruled exclusions,or a multivariable regularization comes with a justified Haar-period transfer or all-order moment identity. An all-degree positive normal form remains an alternative. Do not substitute a degree/support sweep for this missing structural step.",
+    "claims": [
+      "GELLIPTICRULED20261115",
+      "GNORMALIZERBIR20261115",
+      "GHOPFRATIONALSLICE20261115"
+    ],
+    "sources": [
+      "moments/vanishing/GENERIC_FIBRES_AND_RATIONAL_DESCENT_BARRIERS.md",
+      "moments/vanishing/normalizer_fibre_source_audit.json"
+    ],
+    "implementation": [
+      "moments/vanishing/verify_normalizer_fibre_geometry.py"
+    ],
+    "keywords": [
+      "Mathieu",
+      "Haar",
+      "all degree",
+      "generic fibre",
+      "elliptic ruled",
+      "birational descent",
+      "quaternion",
+      "rational slice",
+      "regularity"
+    ],
+    "reviewed_claims": {
+      "GELLIPTICRULED20261115": "626403f504236596",
+      "GNORMALIZERBIR20261115": "03aa5ab126fab75c",
+      "GHOPFRATIONALSLICE20261115": "1c11aecd3d247299"
+    },
+    "programme_status": "archived"
+  }
+}

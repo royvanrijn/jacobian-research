@@ -1,0 +1,4616 @@
+{
+  "as_of": "2026-11-14",
+  "outcome": "PASS",
+  "check_count": 1049,
+  "checks": [
+    "pinned external source hash",
+    "external source retains provisional lifecycle",
+    "external mathematical body byte count",
+    "external mathematical body original seal",
+    "(2,3) actual cusp degree",
+    "(2,3) source binomial exact normal form",
+    "(2,3) y,cusp bracket",
+    "(2,3) x,cusp bracket",
+    "(2,3) normal form roundtrip 0",
+    "(2,3) normal form roundtrip 1",
+    "(2,3) normal form roundtrip 2",
+    "(2,3) normal form roundtrip 3",
+    "(2,3) normal form roundtrip 4",
+    "(2,3) complete preserving-derivation kernel has dimension1",
+    "(2,3) actual Euler vector satisfies every high-degree equation",
+    "(2,5) actual cusp degree",
+    "(2,5) source binomial exact normal form",
+    "(2,5) y,cusp bracket",
+    "(2,5) x,cusp bracket",
+    "(2,5) normal form roundtrip 0",
+    "(2,5) normal form roundtrip 1",
+    "(2,5) normal form roundtrip 2",
+    "(2,5) normal form roundtrip 3",
+    "(2,5) normal form roundtrip 4",
+    "(2,5) complete preserving-derivation kernel has dimension1",
+    "(2,5) actual Euler vector satisfies every high-degree equation",
+    "(2,7) actual cusp degree",
+    "(2,7) source binomial exact normal form",
+    "(2,7) y,cusp bracket",
+    "(2,7) x,cusp bracket",
+    "(2,7) normal form roundtrip 0",
+    "(2,7) normal form roundtrip 1",
+    "(2,7) normal form roundtrip 2",
+    "(2,7) normal form roundtrip 3",
+    "(2,7) normal form roundtrip 4",
+    "(2,7) complete preserving-derivation kernel has dimension1",
+    "(2,7) actual Euler vector satisfies every high-degree equation",
+    "(3,2) actual cusp degree",
+    "(3,2) source binomial exact normal form",
+    "(3,2) y,cusp bracket",
+    "(3,2) x,cusp bracket",
+    "(3,2) normal form roundtrip 0",
+    "(3,2) normal form roundtrip 1",
+    "(3,2) normal form roundtrip 2",
+    "(3,2) normal form roundtrip 3",
+    "(3,2) normal form roundtrip 4",
+    "(3,2) normal form roundtrip 5",
+    "(3,2) normal form roundtrip 6",
+    "(3,2) complete preserving-derivation kernel has dimension1",
+    "(3,2) actual Euler vector satisfies every high-degree equation",
+    "(3,4) actual cusp degree",
+    "(3,4) source binomial exact normal form",
+    "(3,4) y,cusp bracket",
+    "(3,4) x,cusp bracket",
+    "(3,4) normal form roundtrip 0",
+    "(3,4) normal form roundtrip 1",
+    "(3,4) normal form roundtrip 2",
+    "(3,4) normal form roundtrip 3",
+    "(3,4) normal form roundtrip 4",
+    "(3,4) normal form roundtrip 5",
+    "(3,4) normal form roundtrip 6",
+    "(3,4) complete preserving-derivation kernel has dimension1",
+    "(3,4) actual Euler vector satisfies every high-degree equation",
+    "(3,5) actual cusp degree",
+    "(3,5) source binomial exact normal form",
+    "(3,5) y,cusp bracket",
+    "(3,5) x,cusp bracket",
+    "(3,5) normal form roundtrip 0",
+    "(3,5) normal form roundtrip 1",
+    "(3,5) normal form roundtrip 2",
+    "(3,5) normal form roundtrip 3",
+    "(3,5) normal form roundtrip 4",
+    "(3,5) normal form roundtrip 5",
+    "(3,5) normal form roundtrip 6",
+    "(3,5) complete preserving-derivation kernel has dimension1",
+    "(3,5) actual Euler vector satisfies every high-degree equation",
+    "(3,7) actual cusp degree",
+    "(3,7) source binomial exact normal form",
+    "(3,7) y,cusp bracket",
+    "(3,7) x,cusp bracket",
+    "(3,7) normal form roundtrip 0",
+    "(3,7) normal form roundtrip 1",
+    "(3,7) normal form roundtrip 2",
+    "(3,7) normal form roundtrip 3",
+    "(3,7) normal form roundtrip 4",
+    "(3,7) normal form roundtrip 5",
+    "(3,7) normal form roundtrip 6",
+    "(3,7) complete preserving-derivation kernel has dimension1",
+    "(3,7) actual Euler vector satisfies every high-degree equation",
+    "(3,8) actual cusp degree",
+    "(3,8) source binomial exact normal form",
+    "(3,8) y,cusp bracket",
+    "(3,8) x,cusp bracket",
+    "(3,8) normal form roundtrip 0",
+    "(3,8) normal form roundtrip 1",
+    "(3,8) normal form roundtrip 2",
+    "(3,8) normal form roundtrip 3",
+    "(3,8) normal form roundtrip 4",
+    "(3,8) normal form roundtrip 5",
+    "(3,8) normal form roundtrip 6",
+    "(3,8) complete preserving-derivation kernel has dimension1",
+    "(3,8) actual Euler vector satisfies every high-degree equation",
+    "(4,3) actual cusp degree",
+    "(4,3) source binomial exact normal form",
+    "(4,3) y,cusp bracket",
+    "(4,3) x,cusp bracket",
+    "(4,3) normal form roundtrip 0",
+    "(4,3) normal form roundtrip 1",
+    "(4,3) normal form roundtrip 2",
+    "(4,3) normal form roundtrip 3",
+    "(4,3) normal form roundtrip 4",
+    "(4,3) normal form roundtrip 5",
+    "(4,3) normal form roundtrip 6",
+    "(4,3) normal form roundtrip 7",
+    "(4,3) normal form roundtrip 8",
+    "(4,3) complete preserving-derivation kernel has dimension1",
+    "(4,3) actual Euler vector satisfies every high-degree equation",
+    "(4,5) actual cusp degree",
+    "(4,5) source binomial exact normal form",
+    "(4,5) y,cusp bracket",
+    "(4,5) x,cusp bracket",
+    "(4,5) normal form roundtrip 0",
+    "(4,5) normal form roundtrip 1",
+    "(4,5) normal form roundtrip 2",
+    "(4,5) normal form roundtrip 3",
+    "(4,5) normal form roundtrip 4",
+    "(4,5) normal form roundtrip 5",
+    "(4,5) normal form roundtrip 6",
+    "(4,5) normal form roundtrip 7",
+    "(4,5) normal form roundtrip 8",
+    "(4,5) complete preserving-derivation kernel has dimension1",
+    "(4,5) actual Euler vector satisfies every high-degree equation",
+    "(4,7) actual cusp degree",
+    "(4,7) source binomial exact normal form",
+    "(4,7) y,cusp bracket",
+    "(4,7) x,cusp bracket",
+    "(4,7) normal form roundtrip 0",
+    "(4,7) normal form roundtrip 1",
+    "(4,7) normal form roundtrip 2",
+    "(4,7) normal form roundtrip 3",
+    "(4,7) normal form roundtrip 4",
+    "(4,7) normal form roundtrip 5",
+    "(4,7) normal form roundtrip 6",
+    "(4,7) normal form roundtrip 7",
+    "(4,7) normal form roundtrip 8",
+    "(4,7) complete preserving-derivation kernel has dimension1",
+    "(4,7) actual Euler vector satisfies every high-degree equation",
+    "(5,2) actual cusp degree",
+    "(5,2) source binomial exact normal form",
+    "(5,2) y,cusp bracket",
+    "(5,2) x,cusp bracket",
+    "(5,2) normal form roundtrip 0",
+    "(5,2) normal form roundtrip 1",
+    "(5,2) normal form roundtrip 2",
+    "(5,2) normal form roundtrip 3",
+    "(5,2) normal form roundtrip 4",
+    "(5,2) normal form roundtrip 5",
+    "(5,2) normal form roundtrip 6",
+    "(5,2) normal form roundtrip 7",
+    "(5,2) normal form roundtrip 8",
+    "(5,2) normal form roundtrip 9",
+    "(5,2) normal form roundtrip 10",
+    "(5,2) complete preserving-derivation kernel has dimension1",
+    "(5,2) actual Euler vector satisfies every high-degree equation",
+    "(5,3) actual cusp degree",
+    "(5,3) source binomial exact normal form",
+    "(5,3) y,cusp bracket",
+    "(5,3) x,cusp bracket",
+    "(5,3) normal form roundtrip 0",
+    "(5,3) normal form roundtrip 1",
+    "(5,3) normal form roundtrip 2",
+    "(5,3) normal form roundtrip 3",
+    "(5,3) normal form roundtrip 4",
+    "(5,3) normal form roundtrip 5",
+    "(5,3) normal form roundtrip 6",
+    "(5,3) normal form roundtrip 7",
+    "(5,3) normal form roundtrip 8",
+    "(5,3) normal form roundtrip 9",
+    "(5,3) normal form roundtrip 10",
+    "(5,3) complete preserving-derivation kernel has dimension1",
+    "(5,3) actual Euler vector satisfies every high-degree equation",
+    "(5,4) actual cusp degree",
+    "(5,4) source binomial exact normal form",
+    "(5,4) y,cusp bracket",
+    "(5,4) x,cusp bracket",
+    "(5,4) normal form roundtrip 0",
+    "(5,4) normal form roundtrip 1",
+    "(5,4) normal form roundtrip 2",
+    "(5,4) normal form roundtrip 3",
+    "(5,4) normal form roundtrip 4",
+    "(5,4) normal form roundtrip 5",
+    "(5,4) normal form roundtrip 6",
+    "(5,4) normal form roundtrip 7",
+    "(5,4) normal form roundtrip 8",
+    "(5,4) normal form roundtrip 9",
+    "(5,4) normal form roundtrip 10",
+    "(5,4) complete preserving-derivation kernel has dimension1",
+    "(5,4) actual Euler vector satisfies every high-degree equation",
+    "(5,6) actual cusp degree",
+    "(5,6) source binomial exact normal form",
+    "(5,6) y,cusp bracket",
+    "(5,6) x,cusp bracket",
+    "(5,6) normal form roundtrip 0",
+    "(5,6) normal form roundtrip 1",
+    "(5,6) normal form roundtrip 2",
+    "(5,6) normal form roundtrip 3",
+    "(5,6) normal form roundtrip 4",
+    "(5,6) normal form roundtrip 5",
+    "(5,6) normal form roundtrip 6",
+    "(5,6) normal form roundtrip 7",
+    "(5,6) normal form roundtrip 8",
+    "(5,6) normal form roundtrip 9",
+    "(5,6) normal form roundtrip 10",
+    "(5,6) complete preserving-derivation kernel has dimension1",
+    "(5,6) actual Euler vector satisfies every high-degree equation",
+    "(5,7) actual cusp degree",
+    "(5,7) source binomial exact normal form",
+    "(5,7) y,cusp bracket",
+    "(5,7) x,cusp bracket",
+    "(5,7) normal form roundtrip 0",
+    "(5,7) normal form roundtrip 1",
+    "(5,7) normal form roundtrip 2",
+    "(5,7) normal form roundtrip 3",
+    "(5,7) normal form roundtrip 4",
+    "(5,7) normal form roundtrip 5",
+    "(5,7) normal form roundtrip 6",
+    "(5,7) normal form roundtrip 7",
+    "(5,7) normal form roundtrip 8",
+    "(5,7) normal form roundtrip 9",
+    "(5,7) normal form roundtrip 10",
+    "(5,7) complete preserving-derivation kernel has dimension1",
+    "(5,7) actual Euler vector satisfies every high-degree equation",
+    "(5,8) actual cusp degree",
+    "(5,8) source binomial exact normal form",
+    "(5,8) y,cusp bracket",
+    "(5,8) x,cusp bracket",
+    "(5,8) normal form roundtrip 0",
+    "(5,8) normal form roundtrip 1",
+    "(5,8) normal form roundtrip 2",
+    "(5,8) normal form roundtrip 3",
+    "(5,8) normal form roundtrip 4",
+    "(5,8) normal form roundtrip 5",
+    "(5,8) normal form roundtrip 6",
+    "(5,8) normal form roundtrip 7",
+    "(5,8) normal form roundtrip 8",
+    "(5,8) normal form roundtrip 9",
+    "(5,8) normal form roundtrip 10",
+    "(5,8) complete preserving-derivation kernel has dimension1",
+    "(5,8) actual Euler vector satisfies every high-degree equation",
+    "(6,5) actual cusp degree",
+    "(6,5) source binomial exact normal form",
+    "(6,5) y,cusp bracket",
+    "(6,5) x,cusp bracket",
+    "(6,5) normal form roundtrip 0",
+    "(6,5) normal form roundtrip 1",
+    "(6,5) normal form roundtrip 2",
+    "(6,5) normal form roundtrip 3",
+    "(6,5) normal form roundtrip 4",
+    "(6,5) normal form roundtrip 5",
+    "(6,5) normal form roundtrip 6",
+    "(6,5) normal form roundtrip 7",
+    "(6,5) normal form roundtrip 8",
+    "(6,5) normal form roundtrip 9",
+    "(6,5) normal form roundtrip 10",
+    "(6,5) normal form roundtrip 11",
+    "(6,5) normal form roundtrip 12",
+    "(6,5) complete preserving-derivation kernel has dimension1",
+    "(6,5) actual Euler vector satisfies every high-degree equation",
+    "(6,7) actual cusp degree",
+    "(6,7) source binomial exact normal form",
+    "(6,7) y,cusp bracket",
+    "(6,7) x,cusp bracket",
+    "(6,7) normal form roundtrip 0",
+    "(6,7) normal form roundtrip 1",
+    "(6,7) normal form roundtrip 2",
+    "(6,7) normal form roundtrip 3",
+    "(6,7) normal form roundtrip 4",
+    "(6,7) normal form roundtrip 5",
+    "(6,7) normal form roundtrip 6",
+    "(6,7) normal form roundtrip 7",
+    "(6,7) normal form roundtrip 8",
+    "(6,7) normal form roundtrip 9",
+    "(6,7) normal form roundtrip 10",
+    "(6,7) normal form roundtrip 11",
+    "(6,7) normal form roundtrip 12",
+    "(6,7) complete preserving-derivation kernel has dimension1",
+    "(6,7) actual Euler vector satisfies every high-degree equation",
+    "(7,2) actual cusp degree",
+    "(7,2) source binomial exact normal form",
+    "(7,2) y,cusp bracket",
+    "(7,2) x,cusp bracket",
+    "(7,2) normal form roundtrip 0",
+    "(7,2) normal form roundtrip 1",
+    "(7,2) normal form roundtrip 2",
+    "(7,2) normal form roundtrip 3",
+    "(7,2) normal form roundtrip 4",
+    "(7,2) normal form roundtrip 5",
+    "(7,2) normal form roundtrip 6",
+    "(7,2) normal form roundtrip 7",
+    "(7,2) normal form roundtrip 8",
+    "(7,2) normal form roundtrip 9",
+    "(7,2) normal form roundtrip 10",
+    "(7,2) normal form roundtrip 11",
+    "(7,2) normal form roundtrip 12",
+    "(7,2) normal form roundtrip 13",
+    "(7,2) normal form roundtrip 14",
+    "(7,2) complete preserving-derivation kernel has dimension1",
+    "(7,2) actual Euler vector satisfies every high-degree equation",
+    "(7,3) actual cusp degree",
+    "(7,3) source binomial exact normal form",
+    "(7,3) y,cusp bracket",
+    "(7,3) x,cusp bracket",
+    "(7,3) normal form roundtrip 0",
+    "(7,3) normal form roundtrip 1",
+    "(7,3) normal form roundtrip 2",
+    "(7,3) normal form roundtrip 3",
+    "(7,3) normal form roundtrip 4",
+    "(7,3) normal form roundtrip 5",
+    "(7,3) normal form roundtrip 6",
+    "(7,3) normal form roundtrip 7",
+    "(7,3) normal form roundtrip 8",
+    "(7,3) normal form roundtrip 9",
+    "(7,3) normal form roundtrip 10",
+    "(7,3) normal form roundtrip 11",
+    "(7,3) normal form roundtrip 12",
+    "(7,3) normal form roundtrip 13",
+    "(7,3) normal form roundtrip 14",
+    "(7,3) complete preserving-derivation kernel has dimension1",
+    "(7,3) actual Euler vector satisfies every high-degree equation",
+    "(7,4) actual cusp degree",
+    "(7,4) source binomial exact normal form",
+    "(7,4) y,cusp bracket",
+    "(7,4) x,cusp bracket",
+    "(7,4) normal form roundtrip 0",
+    "(7,4) normal form roundtrip 1",
+    "(7,4) normal form roundtrip 2",
+    "(7,4) normal form roundtrip 3",
+    "(7,4) normal form roundtrip 4",
+    "(7,4) normal form roundtrip 5",
+    "(7,4) normal form roundtrip 6",
+    "(7,4) normal form roundtrip 7",
+    "(7,4) normal form roundtrip 8",
+    "(7,4) normal form roundtrip 9",
+    "(7,4) normal form roundtrip 10",
+    "(7,4) normal form roundtrip 11",
+    "(7,4) normal form roundtrip 12",
+    "(7,4) normal form roundtrip 13",
+    "(7,4) normal form roundtrip 14",
+    "(7,4) complete preserving-derivation kernel has dimension1",
+    "(7,4) actual Euler vector satisfies every high-degree equation",
+    "(7,5) actual cusp degree",
+    "(7,5) source binomial exact normal form",
+    "(7,5) y,cusp bracket",
+    "(7,5) x,cusp bracket",
+    "(7,5) normal form roundtrip 0",
+    "(7,5) normal form roundtrip 1",
+    "(7,5) normal form roundtrip 2",
+    "(7,5) normal form roundtrip 3",
+    "(7,5) normal form roundtrip 4",
+    "(7,5) normal form roundtrip 5",
+    "(7,5) normal form roundtrip 6",
+    "(7,5) normal form roundtrip 7",
+    "(7,5) normal form roundtrip 8",
+    "(7,5) normal form roundtrip 9",
+    "(7,5) normal form roundtrip 10",
+    "(7,5) normal form roundtrip 11",
+    "(7,5) normal form roundtrip 12",
+    "(7,5) normal form roundtrip 13",
+    "(7,5) normal form roundtrip 14",
+    "(7,5) complete preserving-derivation kernel has dimension1",
+    "(7,5) actual Euler vector satisfies every high-degree equation",
+    "(7,6) actual cusp degree",
+    "(7,6) source binomial exact normal form",
+    "(7,6) y,cusp bracket",
+    "(7,6) x,cusp bracket",
+    "(7,6) normal form roundtrip 0",
+    "(7,6) normal form roundtrip 1",
+    "(7,6) normal form roundtrip 2",
+    "(7,6) normal form roundtrip 3",
+    "(7,6) normal form roundtrip 4",
+    "(7,6) normal form roundtrip 5",
+    "(7,6) normal form roundtrip 6",
+    "(7,6) normal form roundtrip 7",
+    "(7,6) normal form roundtrip 8",
+    "(7,6) normal form roundtrip 9",
+    "(7,6) normal form roundtrip 10",
+    "(7,6) normal form roundtrip 11",
+    "(7,6) normal form roundtrip 12",
+    "(7,6) normal form roundtrip 13",
+    "(7,6) normal form roundtrip 14",
+    "(7,6) complete preserving-derivation kernel has dimension1",
+    "(7,6) actual Euler vector satisfies every high-degree equation",
+    "(7,8) actual cusp degree",
+    "(7,8) source binomial exact normal form",
+    "(7,8) y,cusp bracket",
+    "(7,8) x,cusp bracket",
+    "(7,8) normal form roundtrip 0",
+    "(7,8) normal form roundtrip 1",
+    "(7,8) normal form roundtrip 2",
+    "(7,8) normal form roundtrip 3",
+    "(7,8) normal form roundtrip 4",
+    "(7,8) normal form roundtrip 5",
+    "(7,8) normal form roundtrip 6",
+    "(7,8) normal form roundtrip 7",
+    "(7,8) normal form roundtrip 8",
+    "(7,8) normal form roundtrip 9",
+    "(7,8) normal form roundtrip 10",
+    "(7,8) normal form roundtrip 11",
+    "(7,8) normal form roundtrip 12",
+    "(7,8) normal form roundtrip 13",
+    "(7,8) normal form roundtrip 14",
+    "(7,8) complete preserving-derivation kernel has dimension1",
+    "(7,8) actual Euler vector satisfies every high-degree equation",
+    "(8,3) actual cusp degree",
+    "(8,3) source binomial exact normal form",
+    "(8,3) y,cusp bracket",
+    "(8,3) x,cusp bracket",
+    "(8,3) normal form roundtrip 0",
+    "(8,3) normal form roundtrip 1",
+    "(8,3) normal form roundtrip 2",
+    "(8,3) normal form roundtrip 3",
+    "(8,3) normal form roundtrip 4",
+    "(8,3) normal form roundtrip 5",
+    "(8,3) normal form roundtrip 6",
+    "(8,3) normal form roundtrip 7",
+    "(8,3) normal form roundtrip 8",
+    "(8,3) normal form roundtrip 9",
+    "(8,3) normal form roundtrip 10",
+    "(8,3) normal form roundtrip 11",
+    "(8,3) normal form roundtrip 12",
+    "(8,3) normal form roundtrip 13",
+    "(8,3) normal form roundtrip 14",
+    "(8,3) normal form roundtrip 15",
+    "(8,3) normal form roundtrip 16",
+    "(8,3) complete preserving-derivation kernel has dimension1",
+    "(8,3) actual Euler vector satisfies every high-degree equation",
+    "(8,5) actual cusp degree",
+    "(8,5) source binomial exact normal form",
+    "(8,5) y,cusp bracket",
+    "(8,5) x,cusp bracket",
+    "(8,5) normal form roundtrip 0",
+    "(8,5) normal form roundtrip 1",
+    "(8,5) normal form roundtrip 2",
+    "(8,5) normal form roundtrip 3",
+    "(8,5) normal form roundtrip 4",
+    "(8,5) normal form roundtrip 5",
+    "(8,5) normal form roundtrip 6",
+    "(8,5) normal form roundtrip 7",
+    "(8,5) normal form roundtrip 8",
+    "(8,5) normal form roundtrip 9",
+    "(8,5) normal form roundtrip 10",
+    "(8,5) normal form roundtrip 11",
+    "(8,5) normal form roundtrip 12",
+    "(8,5) normal form roundtrip 13",
+    "(8,5) normal form roundtrip 14",
+    "(8,5) normal form roundtrip 15",
+    "(8,5) normal form roundtrip 16",
+    "(8,5) complete preserving-derivation kernel has dimension1",
+    "(8,5) actual Euler vector satisfies every high-degree equation",
+    "(8,7) actual cusp degree",
+    "(8,7) source binomial exact normal form",
+    "(8,7) y,cusp bracket",
+    "(8,7) x,cusp bracket",
+    "(8,7) normal form roundtrip 0",
+    "(8,7) normal form roundtrip 1",
+    "(8,7) normal form roundtrip 2",
+    "(8,7) normal form roundtrip 3",
+    "(8,7) normal form roundtrip 4",
+    "(8,7) normal form roundtrip 5",
+    "(8,7) normal form roundtrip 6",
+    "(8,7) normal form roundtrip 7",
+    "(8,7) normal form roundtrip 8",
+    "(8,7) normal form roundtrip 9",
+    "(8,7) normal form roundtrip 10",
+    "(8,7) normal form roundtrip 11",
+    "(8,7) normal form roundtrip 12",
+    "(8,7) normal form roundtrip 13",
+    "(8,7) normal form roundtrip 14",
+    "(8,7) normal form roundtrip 15",
+    "(8,7) normal form roundtrip 16",
+    "(8,7) complete preserving-derivation kernel has dimension1",
+    "(8,7) actual Euler vector satisfies every high-degree equation",
+    "degree inequality (2, 3, 2, 3, 3, 2, 1, 0)",
+    "zero defect classification control (2, 3, 2, 3, 3, 2, 1, 0)",
+    "degree inequality (2, 3, 2, 3, 2, 3, 9, 0)",
+    "strict off-slope inequality (2, 3, 2, 3, 2, 3)",
+    "zero defect classification control (2, 3, 2, 3, 2, 3, 9, 0)",
+    "degree inequality (2, 3, 2, 3, 3, 2, 3, 0)",
+    "zero defect classification control (2, 3, 2, 3, 3, 2, 3, 0)",
+    "degree inequality (2, 3, 2, 3, 4, 2, 8, 0)",
+    "strict off-slope inequality (2, 3, 2, 3, 4, 2)",
+    "zero defect classification control (2, 3, 2, 3, 4, 2, 8, 0)",
+    "degree inequality (2, 3, 2, 3, 3, 6, 18, 0)",
+    "strict off-slope inequality (2, 3, 2, 3, 3, 6)",
+    "zero defect classification control (2, 3, 2, 3, 3, 6, 18, 0)",
+    "degree inequality (2, 3, 2, 3, 4, 8, 24, 0)",
+    "strict off-slope inequality (2, 3, 2, 3, 4, 8)",
+    "zero defect classification control (2, 3, 2, 3, 4, 8, 24, 0)",
+    "degree inequality (2, 3, 2, 3, 3, 2, 1, 0)",
+    "zero defect classification control (2, 3, 2, 3, 3, 2, 1, 0)",
+    "degree inequality (2, 3, 2, 3, 3, 2, 6, 0)",
+    "zero defect classification control (2, 3, 2, 3, 3, 2, 6, 0)",
+    "degree inequality (2, 3, 2, 3, 9, 6, 13, 10)",
+    "zero defect classification control (2, 3, 2, 3, 9, 6, 13, 10)",
+    "degree inequality (2, 3, 2, 5, 3, 2, 10, 0)",
+    "strict off-slope inequality (2, 3, 2, 5, 3, 2)",
+    "zero defect classification control (2, 3, 2, 5, 3, 2, 10, 0)",
+    "degree inequality (2, 3, 2, 5, 2, 3, 15, 0)",
+    "strict off-slope inequality (2, 3, 2, 5, 2, 3)",
+    "zero defect classification control (2, 3, 2, 5, 2, 3, 15, 0)",
+    "degree inequality (2, 3, 2, 5, 3, 2, 10, 0)",
+    "strict off-slope inequality (2, 3, 2, 5, 3, 2)",
+    "zero defect classification control (2, 3, 2, 5, 3, 2, 10, 0)",
+    "degree inequality (2, 3, 2, 5, 4, 2, 10, 0)",
+    "strict off-slope inequality (2, 3, 2, 5, 4, 2)",
+    "zero defect classification control (2, 3, 2, 5, 4, 2, 10, 0)",
+    "degree inequality (2, 3, 2, 5, 3, 6, 30, 0)",
+    "strict off-slope inequality (2, 3, 2, 5, 3, 6)",
+    "zero defect classification control (2, 3, 2, 5, 3, 6, 30, 0)",
+    "degree inequality (2, 3, 2, 5, 4, 8, 40, 0)",
+    "strict off-slope inequality (2, 3, 2, 5, 4, 8)",
+    "zero defect classification control (2, 3, 2, 5, 4, 8, 40, 0)",
+    "degree inequality (2, 3, 2, 5, 3, 2, 10, 0)",
+    "strict off-slope inequality (2, 3, 2, 5, 3, 2)",
+    "zero defect classification control (2, 3, 2, 5, 3, 2, 10, 0)",
+    "degree inequality (2, 3, 2, 5, 3, 2, 10, 0)",
+    "strict off-slope inequality (2, 3, 2, 5, 3, 2)",
+    "zero defect classification control (2, 3, 2, 5, 3, 2, 10, 0)",
+    "degree inequality (2, 3, 2, 5, 9, 6, 30, 10)",
+    "strict off-slope inequality (2, 3, 2, 5, 9, 6)",
+    "zero defect classification control (2, 3, 2, 5, 9, 6, 30, 10)",
+    "degree inequality (2, 3, 3, 2, 3, 2, 9, 0)",
+    "strict off-slope inequality (2, 3, 3, 2, 3, 2)",
+    "zero defect classification control (2, 3, 3, 2, 3, 2, 9, 0)",
+    "degree inequality (2, 3, 3, 2, 2, 3, 1, 0)",
+    "zero defect classification control (2, 3, 3, 2, 2, 3, 1, 0)",
+    "degree inequality (2, 3, 3, 2, 3, 2, 9, 0)",
+    "strict off-slope inequality (2, 3, 3, 2, 3, 2)",
+    "zero defect classification control (2, 3, 3, 2, 3, 2, 9, 0)",
+    "degree inequality (2, 3, 3, 2, 4, 2, 12, 0)",
+    "strict off-slope inequality (2, 3, 3, 2, 4, 2)",
+    "zero defect classification control (2, 3, 3, 2, 4, 2, 12, 0)",
+    "degree inequality (2, 3, 3, 2, 3, 6, 12, 0)",
+    "strict off-slope inequality (2, 3, 3, 2, 3, 6)",
+    "zero defect classification control (2, 3, 3, 2, 3, 6, 12, 0)",
+    "degree inequality (2, 3, 3, 2, 4, 8, 16, 0)",
+    "strict off-slope inequality (2, 3, 3, 2, 4, 8)",
+    "zero defect classification control (2, 3, 3, 2, 4, 8, 16, 0)",
+    "degree inequality (2, 3, 3, 2, 3, 2, 9, 0)",
+    "strict off-slope inequality (2, 3, 3, 2, 3, 2)",
+    "zero defect classification control (2, 3, 3, 2, 3, 2, 9, 0)",
+    "degree inequality (2, 3, 3, 2, 3, 2, 9, 0)",
+    "strict off-slope inequality (2, 3, 3, 2, 3, 2)",
+    "zero defect classification control (2, 3, 3, 2, 3, 2, 9, 0)",
+    "degree inequality (2, 3, 3, 2, 9, 6, 27, 10)",
+    "strict off-slope inequality (2, 3, 3, 2, 9, 6)",
+    "zero defect classification control (2, 3, 3, 2, 9, 6, 27, 10)",
+    "degree inequality (2, 3, 5, 3, 3, 2, 15, 0)",
+    "strict off-slope inequality (2, 3, 5, 3, 3, 2)",
+    "zero defect classification control (2, 3, 5, 3, 3, 2, 15, 0)",
+    "degree inequality (2, 3, 5, 3, 2, 3, 10, 0)",
+    "strict off-slope inequality (2, 3, 5, 3, 2, 3)",
+    "zero defect classification control (2, 3, 5, 3, 2, 3, 10, 0)",
+    "degree inequality (2, 3, 5, 3, 3, 2, 15, 0)",
+    "strict off-slope inequality (2, 3, 5, 3, 3, 2)",
+    "zero defect classification control (2, 3, 5, 3, 3, 2, 15, 0)",
+    "degree inequality (2, 3, 5, 3, 4, 2, 20, 0)",
+    "strict off-slope inequality (2, 3, 5, 3, 4, 2)",
+    "zero defect classification control (2, 3, 5, 3, 4, 2, 20, 0)",
+    "degree inequality (2, 3, 5, 3, 3, 6, 18, 0)",
+    "strict off-slope inequality (2, 3, 5, 3, 3, 6)",
+    "zero defect classification control (2, 3, 5, 3, 3, 6, 18, 0)",
+    "degree inequality (2, 3, 5, 3, 4, 8, 24, 0)",
+    "strict off-slope inequality (2, 3, 5, 3, 4, 8)",
+    "zero defect classification control (2, 3, 5, 3, 4, 8, 24, 0)",
+    "degree inequality (2, 3, 5, 3, 3, 2, 15, 0)",
+    "strict off-slope inequality (2, 3, 5, 3, 3, 2)",
+    "zero defect classification control (2, 3, 5, 3, 3, 2, 15, 0)",
+    "degree inequality (2, 3, 5, 3, 3, 2, 15, 0)",
+    "strict off-slope inequality (2, 3, 5, 3, 3, 2)",
+    "zero defect classification control (2, 3, 5, 3, 3, 2, 15, 0)",
+    "degree inequality (2, 3, 5, 3, 9, 6, 45, 10)",
+    "strict off-slope inequality (2, 3, 5, 3, 9, 6)",
+    "zero defect classification control (2, 3, 5, 3, 9, 6, 45, 10)",
+    "degree inequality (2, 3, 2, 3, 3, 2, 1, 0)",
+    "zero defect classification control (2, 3, 2, 3, 3, 2, 1, 0)",
+    "power sharpness (2, 3, 1)",
+    "degree inequality (2, 3, 2, 3, 6, 4, 7, 5)",
+    "zero defect classification control (2, 3, 2, 3, 6, 4, 7, 5)",
+    "power sharpness (2, 3, 2)",
+    "degree inequality (2, 3, 2, 3, 9, 6, 13, 10)",
+    "zero defect classification control (2, 3, 2, 3, 9, 6, 13, 10)",
+    "power sharpness (2, 3, 3)",
+    "degree inequality (2, 3, 2, 3, 12, 8, 19, 15)",
+    "zero defect classification control (2, 3, 2, 3, 12, 8, 19, 15)",
+    "power sharpness (2, 3, 4)",
+    "degree inequality (2, 3, 2, 3, 15, 10, 25, 20)",
+    "zero defect classification control (2, 3, 2, 3, 15, 10, 25, 20)",
+    "power sharpness (2, 3, 5)",
+    "degree inequality (2, 3, 2, 3, 18, 12, 31, 25)",
+    "zero defect classification control (2, 3, 2, 3, 18, 12, 31, 25)",
+    "power sharpness (2, 3, 6)",
+    "degree inequality (2, 3, 2, 3, 21, 14, 37, 30)",
+    "zero defect classification control (2, 3, 2, 3, 21, 14, 37, 30)",
+    "power sharpness (2, 3, 7)",
+    "degree inequality (2, 3, 2, 3, 24, 16, 43, 35)",
+    "zero defect classification control (2, 3, 2, 3, 24, 16, 43, 35)",
+    "power sharpness (2, 3, 8)",
+    "degree inequality (2, 5, 2, 3, 5, 2, 10, 0)",
+    "strict off-slope inequality (2, 5, 2, 3, 5, 2)",
+    "zero defect classification control (2, 5, 2, 3, 5, 2, 10, 0)",
+    "degree inequality (2, 5, 2, 3, 2, 5, 15, 0)",
+    "strict off-slope inequality (2, 5, 2, 3, 2, 5)",
+    "zero defect classification control (2, 5, 2, 3, 2, 5, 15, 0)",
+    "degree inequality (2, 5, 2, 3, 5, 2, 10, 0)",
+    "strict off-slope inequality (2, 5, 2, 3, 5, 2)",
+    "zero defect classification control (2, 5, 2, 3, 5, 2, 10, 0)",
+    "degree inequality (2, 5, 2, 3, 5, 2, 10, 0)",
+    "strict off-slope inequality (2, 5, 2, 3, 5, 2)",
+    "zero defect classification control (2, 5, 2, 3, 5, 2, 10, 0)",
+    "degree inequality (2, 5, 2, 3, 5, 10, 30, 0)",
+    "strict off-slope inequality (2, 5, 2, 3, 5, 10)",
+    "zero defect classification control (2, 5, 2, 3, 5, 10, 30, 0)",
+    "degree inequality (2, 5, 2, 3, 5, 10, 30, 0)",
+    "strict off-slope inequality (2, 5, 2, 3, 5, 10)",
+    "zero defect classification control (2, 5, 2, 3, 5, 10, 30, 0)",
+    "degree inequality (2, 5, 2, 3, 5, 2, 10, 0)",
+    "strict off-slope inequality (2, 5, 2, 3, 5, 2)",
+    "zero defect classification control (2, 5, 2, 3, 5, 2, 10, 0)",
+    "degree inequality (2, 5, 2, 3, 5, 2, 10, 0)",
+    "strict off-slope inequality (2, 5, 2, 3, 5, 2)",
+    "zero defect classification control (2, 5, 2, 3, 5, 2, 10, 0)",
+    "degree inequality (2, 5, 2, 3, 15, 6, 30, 14)",
+    "strict off-slope inequality (2, 5, 2, 3, 15, 6)",
+    "zero defect classification control (2, 5, 2, 3, 15, 6, 30, 14)",
+    "degree inequality (2, 5, 2, 5, 5, 2, 3, 0)",
+    "zero defect classification control (2, 5, 2, 5, 5, 2, 3, 0)",
+    "degree inequality (2, 5, 2, 5, 2, 5, 25, 0)",
+    "strict off-slope inequality (2, 5, 2, 5, 2, 5)",
+    "zero defect classification control (2, 5, 2, 5, 2, 5, 25, 0)",
+    "degree inequality (2, 5, 2, 5, 5, 2, 5, 0)",
+    "zero defect classification control (2, 5, 2, 5, 5, 2, 5, 0)",
+    "degree inequality (2, 5, 2, 5, 5, 2, 9, 0)",
+    "zero defect classification control (2, 5, 2, 5, 5, 2, 9, 0)",
+    "degree inequality (2, 5, 2, 5, 5, 10, 50, 0)",
+    "strict off-slope inequality (2, 5, 2, 5, 5, 10)",
+    "zero defect classification control (2, 5, 2, 5, 5, 10, 50, 0)",
+    "degree inequality (2, 5, 2, 5, 5, 10, 50, 0)",
+    "strict off-slope inequality (2, 5, 2, 5, 5, 10)",
+    "zero defect classification control (2, 5, 2, 5, 5, 10, 50, 0)",
+    "degree inequality (2, 5, 2, 5, 5, 2, 3, 0)",
+    "zero defect classification control (2, 5, 2, 5, 5, 2, 3, 0)",
+    "degree inequality (2, 5, 2, 5, 5, 2, 10, 0)",
+    "zero defect classification control (2, 5, 2, 5, 5, 2, 10, 0)",
+    "degree inequality (2, 5, 2, 5, 15, 6, 23, 14)",
+    "zero defect classification control (2, 5, 2, 5, 15, 6, 23, 14)",
+    "degree inequality (2, 5, 5, 2, 5, 2, 25, 0)",
+    "strict off-slope inequality (2, 5, 5, 2, 5, 2)",
+    "zero defect classification control (2, 5, 5, 2, 5, 2, 25, 0)",
+    "degree inequality (2, 5, 5, 2, 2, 5, 3, 0)",
+    "zero defect classification control (2, 5, 5, 2, 2, 5, 3, 0)",
+    "degree inequality (2, 5, 5, 2, 5, 2, 25, 0)",
+    "strict off-slope inequality (2, 5, 5, 2, 5, 2)",
+    "zero defect classification control (2, 5, 5, 2, 5, 2, 25, 0)",
+    "degree inequality (2, 5, 5, 2, 5, 2, 25, 0)",
+    "strict off-slope inequality (2, 5, 5, 2, 5, 2)",
+    "zero defect classification control (2, 5, 5, 2, 5, 2, 25, 0)",
+    "degree inequality (2, 5, 5, 2, 5, 10, 25, 0)",
+    "strict off-slope inequality (2, 5, 5, 2, 5, 10)",
+    "zero defect classification control (2, 5, 5, 2, 5, 10, 25, 0)",
+    "degree inequality (2, 5, 5, 2, 5, 10, 25, 0)",
+    "strict off-slope inequality (2, 5, 5, 2, 5, 10)",
+    "zero defect classification control (2, 5, 5, 2, 5, 10, 25, 0)",
+    "degree inequality (2, 5, 5, 2, 5, 2, 25, 0)",
+    "strict off-slope inequality (2, 5, 5, 2, 5, 2)",
+    "zero defect classification control (2, 5, 5, 2, 5, 2, 25, 0)",
+    "degree inequality (2, 5, 5, 2, 5, 2, 25, 0)",
+    "strict off-slope inequality (2, 5, 5, 2, 5, 2)",
+    "zero defect classification control (2, 5, 5, 2, 5, 2, 25, 0)",
+    "degree inequality (2, 5, 5, 2, 15, 6, 75, 14)",
+    "strict off-slope inequality (2, 5, 5, 2, 15, 6)",
+    "zero defect classification control (2, 5, 5, 2, 15, 6, 75, 14)",
+    "degree inequality (2, 5, 5, 3, 5, 2, 25, 0)",
+    "strict off-slope inequality (2, 5, 5, 3, 5, 2)",
+    "zero defect classification control (2, 5, 5, 3, 5, 2, 25, 0)",
+    "degree inequality (2, 5, 5, 3, 2, 5, 15, 0)",
+    "strict off-slope inequality (2, 5, 5, 3, 2, 5)",
+    "zero defect classification control (2, 5, 5, 3, 2, 5, 15, 0)",
+    "degree inequality (2, 5, 5, 3, 5, 2, 25, 0)",
+    "strict off-slope inequality (2, 5, 5, 3, 5, 2)",
+    "zero defect classification control (2, 5, 5, 3, 5, 2, 25, 0)",
+    "degree inequality (2, 5, 5, 3, 5, 2, 25, 0)",
+    "strict off-slope inequality (2, 5, 5, 3, 5, 2)",
+    "zero defect classification control (2, 5, 5, 3, 5, 2, 25, 0)",
+    "degree inequality (2, 5, 5, 3, 5, 10, 30, 0)",
+    "strict off-slope inequality (2, 5, 5, 3, 5, 10)",
+    "zero defect classification control (2, 5, 5, 3, 5, 10, 30, 0)",
+    "degree inequality (2, 5, 5, 3, 5, 10, 30, 0)",
+    "strict off-slope inequality (2, 5, 5, 3, 5, 10)",
+    "zero defect classification control (2, 5, 5, 3, 5, 10, 30, 0)",
+    "degree inequality (2, 5, 5, 3, 5, 2, 25, 0)",
+    "strict off-slope inequality (2, 5, 5, 3, 5, 2)",
+    "zero defect classification control (2, 5, 5, 3, 5, 2, 25, 0)",
+    "degree inequality (2, 5, 5, 3, 5, 2, 25, 0)",
+    "strict off-slope inequality (2, 5, 5, 3, 5, 2)",
+    "zero defect classification control (2, 5, 5, 3, 5, 2, 25, 0)",
+    "degree inequality (2, 5, 5, 3, 15, 6, 75, 14)",
+    "strict off-slope inequality (2, 5, 5, 3, 15, 6)",
+    "zero defect classification control (2, 5, 5, 3, 15, 6, 75, 14)",
+    "degree inequality (2, 5, 2, 5, 5, 2, 3, 0)",
+    "zero defect classification control (2, 5, 2, 5, 5, 2, 3, 0)",
+    "power sharpness (2, 5, 1)",
+    "degree inequality (2, 5, 2, 5, 10, 4, 13, 7)",
+    "zero defect classification control (2, 5, 2, 5, 10, 4, 13, 7)",
+    "power sharpness (2, 5, 2)",
+    "degree inequality (2, 5, 2, 5, 15, 6, 23, 14)",
+    "zero defect classification control (2, 5, 2, 5, 15, 6, 23, 14)",
+    "power sharpness (2, 5, 3)",
+    "degree inequality (2, 5, 2, 5, 20, 8, 33, 21)",
+    "zero defect classification control (2, 5, 2, 5, 20, 8, 33, 21)",
+    "power sharpness (2, 5, 4)",
+    "degree inequality (2, 5, 2, 5, 25, 10, 43, 28)",
+    "zero defect classification control (2, 5, 2, 5, 25, 10, 43, 28)",
+    "power sharpness (2, 5, 5)",
+    "degree inequality (2, 5, 2, 5, 30, 12, 53, 35)",
+    "zero defect classification control (2, 5, 2, 5, 30, 12, 53, 35)",
+    "power sharpness (2, 5, 6)",
+    "degree inequality (2, 5, 2, 5, 35, 14, 63, 42)",
+    "zero defect classification control (2, 5, 2, 5, 35, 14, 63, 42)",
+    "power sharpness (2, 5, 7)",
+    "degree inequality (2, 5, 2, 5, 40, 16, 73, 49)",
+    "zero defect classification control (2, 5, 2, 5, 40, 16, 73, 49)",
+    "power sharpness (2, 5, 8)",
+    "degree inequality (3, 4, 2, 3, 4, 3, 9, 0)",
+    "strict off-slope inequality (3, 4, 2, 3, 4, 3)",
+    "zero defect classification control (3, 4, 2, 3, 4, 3, 9, 0)",
+    "degree inequality (3, 4, 2, 3, 3, 4, 12, 0)",
+    "strict off-slope inequality (3, 4, 2, 3, 3, 4)",
+    "zero defect classification control (3, 4, 2, 3, 3, 4, 12, 0)",
+    "degree inequality (3, 4, 2, 3, 4, 3, 9, 0)",
+    "strict off-slope inequality (3, 4, 2, 3, 4, 3)",
+    "zero defect classification control (3, 4, 2, 3, 4, 3, 9, 0)",
+    "degree inequality (3, 4, 2, 3, 6, 3, 12, 0)",
+    "strict off-slope inequality (3, 4, 2, 3, 6, 3)",
+    "zero defect classification control (3, 4, 2, 3, 6, 3, 12, 0)",
+    "degree inequality (3, 4, 2, 3, 4, 8, 24, 0)",
+    "strict off-slope inequality (3, 4, 2, 3, 4, 8)",
+    "zero defect classification control (3, 4, 2, 3, 4, 8, 24, 0)",
+    "degree inequality (3, 4, 2, 3, 6, 12, 36, 0)",
+    "strict off-slope inequality (3, 4, 2, 3, 6, 12)",
+    "zero defect classification control (3, 4, 2, 3, 6, 12, 36, 0)",
+    "degree inequality (3, 4, 2, 3, 4, 3, 9, 0)",
+    "strict off-slope inequality (3, 4, 2, 3, 4, 3)",
+    "zero defect classification control (3, 4, 2, 3, 4, 3, 9, 0)",
+    "degree inequality (3, 4, 2, 3, 4, 3, 9, 0)",
+    "strict off-slope inequality (3, 4, 2, 3, 4, 3)",
+    "zero defect classification control (3, 4, 2, 3, 4, 3, 9, 0)",
+    "degree inequality (3, 4, 2, 3, 12, 9, 27, 14)",
+    "strict off-slope inequality (3, 4, 2, 3, 12, 9)",
+    "zero defect classification control (3, 4, 2, 3, 12, 9, 27, 14)",
+    "degree inequality (3, 4, 2, 5, 4, 3, 15, 0)",
+    "strict off-slope inequality (3, 4, 2, 5, 4, 3)",
+    "zero defect classification control (3, 4, 2, 5, 4, 3, 15, 0)",
+    "degree inequality (3, 4, 2, 5, 3, 4, 20, 0)",
+    "strict off-slope inequality (3, 4, 2, 5, 3, 4)",
+    "zero defect classification control (3, 4, 2, 5, 3, 4, 20, 0)",
+    "degree inequality (3, 4, 2, 5, 4, 3, 15, 0)",
+    "strict off-slope inequality (3, 4, 2, 5, 4, 3)",
+    "zero defect classification control (3, 4, 2, 5, 4, 3, 15, 0)",
+    "degree inequality (3, 4, 2, 5, 6, 3, 15, 0)",
+    "strict off-slope inequality (3, 4, 2, 5, 6, 3)",
+    "zero defect classification control (3, 4, 2, 5, 6, 3, 15, 0)",
+    "degree inequality (3, 4, 2, 5, 4, 8, 40, 0)",
+    "strict off-slope inequality (3, 4, 2, 5, 4, 8)",
+    "zero defect classification control (3, 4, 2, 5, 4, 8, 40, 0)",
+    "degree inequality (3, 4, 2, 5, 6, 12, 60, 0)",
+    "strict off-slope inequality (3, 4, 2, 5, 6, 12)",
+    "zero defect classification control (3, 4, 2, 5, 6, 12, 60, 0)",
+    "degree inequality (3, 4, 2, 5, 4, 3, 15, 0)",
+    "strict off-slope inequality (3, 4, 2, 5, 4, 3)",
+    "zero defect classification control (3, 4, 2, 5, 4, 3, 15, 0)",
+    "degree inequality (3, 4, 2, 5, 4, 3, 15, 0)",
+    "strict off-slope inequality (3, 4, 2, 5, 4, 3)",
+    "zero defect classification control (3, 4, 2, 5, 4, 3, 15, 0)",
+    "degree inequality (3, 4, 2, 5, 12, 9, 45, 14)",
+    "strict off-slope inequality (3, 4, 2, 5, 12, 9)",
+    "zero defect classification control (3, 4, 2, 5, 12, 9, 45, 14)",
+    "degree inequality (3, 4, 3, 4, 4, 3, 5, 0)",
+    "zero defect classification control (3, 4, 3, 4, 4, 3, 5, 0)",
+    "degree inequality (3, 4, 3, 4, 3, 4, 16, 0)",
+    "strict off-slope inequality (3, 4, 3, 4, 3, 4)",
+    "zero defect classification control (3, 4, 3, 4, 3, 4, 16, 0)",
+    "degree inequality (3, 4, 3, 4, 4, 3, 8, 0)",
+    "zero defect classification control (3, 4, 3, 4, 4, 3, 8, 0)",
+    "degree inequality (3, 4, 3, 4, 6, 3, 18, 0)",
+    "strict off-slope inequality (3, 4, 3, 4, 6, 3)",
+    "zero defect classification control (3, 4, 3, 4, 6, 3, 18, 0)",
+    "degree inequality (3, 4, 3, 4, 4, 8, 32, 0)",
+    "strict off-slope inequality (3, 4, 3, 4, 4, 8)",
+    "zero defect classification control (3, 4, 3, 4, 4, 8, 32, 0)",
+    "degree inequality (3, 4, 3, 4, 6, 12, 48, 0)",
+    "strict off-slope inequality (3, 4, 3, 4, 6, 12)",
+    "zero defect classification control (3, 4, 3, 4, 6, 12, 48, 0)",
+    "degree inequality (3, 4, 3, 4, 4, 3, 5, 0)",
+    "zero defect classification control (3, 4, 3, 4, 4, 3, 5, 0)",
+    "degree inequality (3, 4, 3, 4, 4, 3, 12, 0)",
+    "zero defect classification control (3, 4, 3, 4, 4, 3, 12, 0)",
+    "degree inequality (3, 4, 3, 4, 12, 9, 29, 14)",
+    "zero defect classification control (3, 4, 3, 4, 12, 9, 29, 14)",
+    "degree inequality (3, 4, 4, 3, 4, 3, 16, 0)",
+    "strict off-slope inequality (3, 4, 4, 3, 4, 3)",
+    "zero defect classification control (3, 4, 4, 3, 4, 3, 16, 0)",
+    "degree inequality (3, 4, 4, 3, 3, 4, 5, 0)",
+    "zero defect classification control (3, 4, 4, 3, 3, 4, 5, 0)",
+    "degree inequality (3, 4, 4, 3, 4, 3, 16, 0)",
+    "strict off-slope inequality (3, 4, 4, 3, 4, 3)",
+    "zero defect classification control (3, 4, 4, 3, 4, 3, 16, 0)",
+    "degree inequality (3, 4, 4, 3, 6, 3, 24, 0)",
+    "strict off-slope inequality (3, 4, 4, 3, 6, 3)",
+    "zero defect classification control (3, 4, 4, 3, 6, 3, 24, 0)",
+    "degree inequality (3, 4, 4, 3, 4, 8, 24, 0)",
+    "strict off-slope inequality (3, 4, 4, 3, 4, 8)",
+    "zero defect classification control (3, 4, 4, 3, 4, 8, 24, 0)",
+    "degree inequality (3, 4, 4, 3, 6, 12, 36, 0)",
+    "strict off-slope inequality (3, 4, 4, 3, 6, 12)",
+    "zero defect classification control (3, 4, 4, 3, 6, 12, 36, 0)",
+    "degree inequality (3, 4, 4, 3, 4, 3, 16, 0)",
+    "strict off-slope inequality (3, 4, 4, 3, 4, 3)",
+    "zero defect classification control (3, 4, 4, 3, 4, 3, 16, 0)",
+    "degree inequality (3, 4, 4, 3, 4, 3, 16, 0)",
+    "strict off-slope inequality (3, 4, 4, 3, 4, 3)",
+    "zero defect classification control (3, 4, 4, 3, 4, 3, 16, 0)",
+    "degree inequality (3, 4, 4, 3, 12, 9, 48, 14)",
+    "strict off-slope inequality (3, 4, 4, 3, 12, 9)",
+    "zero defect classification control (3, 4, 4, 3, 12, 9, 48, 14)",
+    "degree inequality (3, 4, 5, 3, 4, 3, 20, 0)",
+    "strict off-slope inequality (3, 4, 5, 3, 4, 3)",
+    "zero defect classification control (3, 4, 5, 3, 4, 3, 20, 0)",
+    "degree inequality (3, 4, 5, 3, 3, 4, 15, 0)",
+    "strict off-slope inequality (3, 4, 5, 3, 3, 4)",
+    "zero defect classification control (3, 4, 5, 3, 3, 4, 15, 0)",
+    "degree inequality (3, 4, 5, 3, 4, 3, 20, 0)",
+    "strict off-slope inequality (3, 4, 5, 3, 4, 3)",
+    "zero defect classification control (3, 4, 5, 3, 4, 3, 20, 0)",
+    "degree inequality (3, 4, 5, 3, 6, 3, 30, 0)",
+    "strict off-slope inequality (3, 4, 5, 3, 6, 3)",
+    "zero defect classification control (3, 4, 5, 3, 6, 3, 30, 0)",
+    "degree inequality (3, 4, 5, 3, 4, 8, 24, 0)",
+    "strict off-slope inequality (3, 4, 5, 3, 4, 8)",
+    "zero defect classification control (3, 4, 5, 3, 4, 8, 24, 0)",
+    "degree inequality (3, 4, 5, 3, 6, 12, 36, 0)",
+    "strict off-slope inequality (3, 4, 5, 3, 6, 12)",
+    "zero defect classification control (3, 4, 5, 3, 6, 12, 36, 0)",
+    "degree inequality (3, 4, 5, 3, 4, 3, 20, 0)",
+    "strict off-slope inequality (3, 4, 5, 3, 4, 3)",
+    "zero defect classification control (3, 4, 5, 3, 4, 3, 20, 0)",
+    "degree inequality (3, 4, 5, 3, 4, 3, 20, 0)",
+    "strict off-slope inequality (3, 4, 5, 3, 4, 3)",
+    "zero defect classification control (3, 4, 5, 3, 4, 3, 20, 0)",
+    "degree inequality (3, 4, 5, 3, 12, 9, 60, 14)",
+    "strict off-slope inequality (3, 4, 5, 3, 12, 9)",
+    "zero defect classification control (3, 4, 5, 3, 12, 9, 60, 14)",
+    "degree inequality (3, 4, 3, 4, 4, 3, 5, 0)",
+    "zero defect classification control (3, 4, 3, 4, 4, 3, 5, 0)",
+    "power sharpness (3, 4, 1)",
+    "degree inequality (3, 4, 3, 4, 8, 6, 17, 7)",
+    "zero defect classification control (3, 4, 3, 4, 8, 6, 17, 7)",
+    "power sharpness (3, 4, 2)",
+    "degree inequality (3, 4, 3, 4, 12, 9, 29, 14)",
+    "zero defect classification control (3, 4, 3, 4, 12, 9, 29, 14)",
+    "power sharpness (3, 4, 3)",
+    "degree inequality (3, 4, 3, 4, 16, 12, 41, 21)",
+    "zero defect classification control (3, 4, 3, 4, 16, 12, 41, 21)",
+    "power sharpness (3, 4, 4)",
+    "degree inequality (3, 4, 3, 4, 20, 15, 53, 28)",
+    "zero defect classification control (3, 4, 3, 4, 20, 15, 53, 28)",
+    "power sharpness (3, 4, 5)",
+    "degree inequality (3, 4, 3, 4, 24, 18, 65, 35)",
+    "zero defect classification control (3, 4, 3, 4, 24, 18, 65, 35)",
+    "power sharpness (3, 4, 6)",
+    "degree inequality (3, 4, 3, 4, 28, 21, 77, 42)",
+    "zero defect classification control (3, 4, 3, 4, 28, 21, 77, 42)",
+    "power sharpness (3, 4, 7)",
+    "degree inequality (3, 4, 3, 4, 32, 24, 89, 49)",
+    "zero defect classification control (3, 4, 3, 4, 32, 24, 89, 49)",
+    "power sharpness (3, 4, 8)",
+    "degree inequality (3, 5, 2, 3, 5, 3, 10, 0)",
+    "strict off-slope inequality (3, 5, 2, 3, 5, 3)",
+    "zero defect classification control (3, 5, 2, 3, 5, 3, 10, 0)",
+    "degree inequality (3, 5, 2, 3, 3, 5, 15, 0)",
+    "strict off-slope inequality (3, 5, 2, 3, 3, 5)",
+    "zero defect classification control (3, 5, 2, 3, 3, 5, 15, 0)",
+    "degree inequality (3, 5, 2, 3, 5, 3, 10, 0)",
+    "strict off-slope inequality (3, 5, 2, 3, 5, 3)",
+    "zero defect classification control (3, 5, 2, 3, 5, 3, 10, 0)",
+    "degree inequality (3, 5, 2, 3, 6, 3, 12, 0)",
+    "strict off-slope inequality (3, 5, 2, 3, 6, 3)",
+    "zero defect classification control (3, 5, 2, 3, 6, 3, 12, 0)",
+    "degree inequality (3, 5, 2, 3, 5, 10, 30, 0)",
+    "strict off-slope inequality (3, 5, 2, 3, 5, 10)",
+    "zero defect classification control (3, 5, 2, 3, 5, 10, 30, 0)",
+    "degree inequality (3, 5, 2, 3, 6, 12, 36, 0)",
+    "strict off-slope inequality (3, 5, 2, 3, 6, 12)",
+    "zero defect classification control (3, 5, 2, 3, 6, 12, 36, 0)",
+    "degree inequality (3, 5, 2, 3, 5, 3, 10, 0)",
+    "strict off-slope inequality (3, 5, 2, 3, 5, 3)",
+    "zero defect classification control (3, 5, 2, 3, 5, 3, 10, 0)",
+    "degree inequality (3, 5, 2, 3, 5, 3, 10, 0)",
+    "strict off-slope inequality (3, 5, 2, 3, 5, 3)",
+    "zero defect classification control (3, 5, 2, 3, 5, 3, 10, 0)",
+    "degree inequality (3, 5, 2, 3, 15, 9, 30, 16)",
+    "strict off-slope inequality (3, 5, 2, 3, 15, 9)",
+    "zero defect classification control (3, 5, 2, 3, 15, 9, 30, 16)",
+    "degree inequality (3, 5, 2, 5, 5, 3, 15, 0)",
+    "strict off-slope inequality (3, 5, 2, 5, 5, 3)",
+    "zero defect classification control (3, 5, 2, 5, 5, 3, 15, 0)",
+    "degree inequality (3, 5, 2, 5, 3, 5, 25, 0)",
+    "strict off-slope inequality (3, 5, 2, 5, 3, 5)",
+    "zero defect classification control (3, 5, 2, 5, 3, 5, 25, 0)",
+    "degree inequality (3, 5, 2, 5, 5, 3, 15, 0)",
+    "strict off-slope inequality (3, 5, 2, 5, 5, 3)",
+    "zero defect classification control (3, 5, 2, 5, 5, 3, 15, 0)",
+    "degree inequality (3, 5, 2, 5, 6, 3, 15, 0)",
+    "strict off-slope inequality (3, 5, 2, 5, 6, 3)",
+    "zero defect classification control (3, 5, 2, 5, 6, 3, 15, 0)",
+    "degree inequality (3, 5, 2, 5, 5, 10, 50, 0)",
+    "strict off-slope inequality (3, 5, 2, 5, 5, 10)",
+    "zero defect classification control (3, 5, 2, 5, 5, 10, 50, 0)",
+    "degree inequality (3, 5, 2, 5, 6, 12, 60, 0)",
+    "strict off-slope inequality (3, 5, 2, 5, 6, 12)",
+    "zero defect classification control (3, 5, 2, 5, 6, 12, 60, 0)",
+    "degree inequality (3, 5, 2, 5, 5, 3, 15, 0)",
+    "strict off-slope inequality (3, 5, 2, 5, 5, 3)",
+    "zero defect classification control (3, 5, 2, 5, 5, 3, 15, 0)",
+    "degree inequality (3, 5, 2, 5, 5, 3, 15, 0)",
+    "strict off-slope inequality (3, 5, 2, 5, 5, 3)",
+    "zero defect classification control (3, 5, 2, 5, 5, 3, 15, 0)",
+    "degree inequality (3, 5, 2, 5, 15, 9, 45, 16)",
+    "strict off-slope inequality (3, 5, 2, 5, 15, 9)",
+    "zero defect classification control (3, 5, 2, 5, 15, 9, 45, 16)",
+    "degree inequality (3, 5, 3, 5, 5, 3, 7, 0)",
+    "zero defect classification control (3, 5, 3, 5, 5, 3, 7, 0)",
+    "degree inequality (3, 5, 3, 5, 3, 5, 25, 0)",
+    "strict off-slope inequality (3, 5, 3, 5, 3, 5)",
+    "zero defect classification control (3, 5, 3, 5, 3, 5, 25, 0)",
+    "degree inequality (3, 5, 3, 5, 5, 3, 10, 0)",
+    "zero defect classification control (3, 5, 3, 5, 5, 3, 10, 0)",
+    "degree inequality (3, 5, 3, 5, 6, 3, 18, 0)",
+    "strict off-slope inequality (3, 5, 3, 5, 6, 3)",
+    "zero defect classification control (3, 5, 3, 5, 6, 3, 18, 0)",
+    "degree inequality (3, 5, 3, 5, 5, 10, 50, 0)",
+    "strict off-slope inequality (3, 5, 3, 5, 5, 10)",
+    "zero defect classification control (3, 5, 3, 5, 5, 10, 50, 0)",
+    "degree inequality (3, 5, 3, 5, 6, 12, 60, 0)",
+    "strict off-slope inequality (3, 5, 3, 5, 6, 12)",
+    "zero defect classification control (3, 5, 3, 5, 6, 12, 60, 0)",
+    "degree inequality (3, 5, 3, 5, 5, 3, 7, 0)",
+    "zero defect classification control (3, 5, 3, 5, 5, 3, 7, 0)",
+    "degree inequality (3, 5, 3, 5, 5, 3, 15, 0)",
+    "zero defect classification control (3, 5, 3, 5, 5, 3, 15, 0)",
+    "degree inequality (3, 5, 3, 5, 15, 9, 37, 16)",
+    "zero defect classification control (3, 5, 3, 5, 15, 9, 37, 16)",
+    "degree inequality (3, 5, 5, 3, 5, 3, 25, 0)",
+    "strict off-slope inequality (3, 5, 5, 3, 5, 3)",
+    "zero defect classification control (3, 5, 5, 3, 5, 3, 25, 0)",
+    "degree inequality (3, 5, 5, 3, 3, 5, 7, 0)",
+    "zero defect classification control (3, 5, 5, 3, 3, 5, 7, 0)",
+    "degree inequality (3, 5, 5, 3, 5, 3, 25, 0)",
+    "strict off-slope inequality (3, 5, 5, 3, 5, 3)",
+    "zero defect classification control (3, 5, 5, 3, 5, 3, 25, 0)",
+    "degree inequality (3, 5, 5, 3, 6, 3, 30, 0)",
+    "strict off-slope inequality (3, 5, 5, 3, 6, 3)",
+    "zero defect classification control (3, 5, 5, 3, 6, 3, 30, 0)",
+    "degree inequality (3, 5, 5, 3, 5, 10, 30, 0)",
+    "strict off-slope inequality (3, 5, 5, 3, 5, 10)",
+    "zero defect classification control (3, 5, 5, 3, 5, 10, 30, 0)",
+    "degree inequality (3, 5, 5, 3, 6, 12, 36, 0)",
+    "strict off-slope inequality (3, 5, 5, 3, 6, 12)",
+    "zero defect classification control (3, 5, 5, 3, 6, 12, 36, 0)",
+    "degree inequality (3, 5, 5, 3, 5, 3, 25, 0)",
+    "strict off-slope inequality (3, 5, 5, 3, 5, 3)",
+    "zero defect classification control (3, 5, 5, 3, 5, 3, 25, 0)",
+    "degree inequality (3, 5, 5, 3, 5, 3, 25, 0)",
+    "strict off-slope inequality (3, 5, 5, 3, 5, 3)",
+    "zero defect classification control (3, 5, 5, 3, 5, 3, 25, 0)",
+    "degree inequality (3, 5, 5, 3, 15, 9, 75, 16)",
+    "strict off-slope inequality (3, 5, 5, 3, 15, 9)",
+    "zero defect classification control (3, 5, 5, 3, 15, 9, 75, 16)",
+    "degree inequality (3, 5, 3, 5, 5, 3, 7, 0)",
+    "zero defect classification control (3, 5, 3, 5, 5, 3, 7, 0)",
+    "power sharpness (3, 5, 1)",
+    "degree inequality (3, 5, 3, 5, 10, 6, 22, 8)",
+    "zero defect classification control (3, 5, 3, 5, 10, 6, 22, 8)",
+    "power sharpness (3, 5, 2)",
+    "degree inequality (3, 5, 3, 5, 15, 9, 37, 16)",
+    "zero defect classification control (3, 5, 3, 5, 15, 9, 37, 16)",
+    "power sharpness (3, 5, 3)",
+    "degree inequality (3, 5, 3, 5, 20, 12, 52, 24)",
+    "zero defect classification control (3, 5, 3, 5, 20, 12, 52, 24)",
+    "power sharpness (3, 5, 4)",
+    "degree inequality (3, 5, 3, 5, 25, 15, 67, 32)",
+    "zero defect classification control (3, 5, 3, 5, 25, 15, 67, 32)",
+    "power sharpness (3, 5, 5)",
+    "degree inequality (3, 5, 3, 5, 30, 18, 82, 40)",
+    "zero defect classification control (3, 5, 3, 5, 30, 18, 82, 40)",
+    "power sharpness (3, 5, 6)",
+    "degree inequality (3, 5, 3, 5, 35, 21, 97, 48)",
+    "zero defect classification control (3, 5, 3, 5, 35, 21, 97, 48)",
+    "power sharpness (3, 5, 7)",
+    "degree inequality (3, 5, 3, 5, 40, 24, 112, 56)",
+    "zero defect classification control (3, 5, 3, 5, 40, 24, 112, 56)",
+    "power sharpness (3, 5, 8)",
+    "dependent-pair guard",
+    "degree inequality (2, 5, 2, 5, 5, 2, 5, 0)",
+    "zero defect classification control (2, 5, 2, 5, 5, 2, 5, 0)",
+    "translation defeats component-degrees-only premise",
+    "degree inequality (2, 5, 2, 5, 15, 6, 23, 14)",
+    "zero defect classification control (2, 5, 2, 5, 15, 6, 23, 14)",
+    "nonconstant Jacobian saturates sharp bound",
+    "graded (2, 5)->(2, 5), e=3 lies in actual source cusp ring",
+    "graded (2, 5)->(2, 5), e=3 binomial relation",
+    "graded (2, 5)->(2, 5), e=3 bracket U,V",
+    "graded (2, 5)->(2, 5), e=3 bracket V,H",
+    "graded (2, 5)->(2, 5), e=3 bracket U,H",
+    "graded (2, 5)->(2, 5), e=3 nonzero bracket certifies dominance in written argument",
+    "graded (2, 5)->(2, 5), e=3 three exact graded degrees",
+    "graded (2, 5)->(2, 3), e=5 lies in actual source cusp ring",
+    "graded (2, 5)->(2, 3), e=5 binomial relation",
+    "graded (2, 5)->(2, 3), e=5 bracket U,V",
+    "graded (2, 5)->(2, 3), e=5 bracket V,H",
+    "graded (2, 5)->(2, 3), e=5 bracket U,H",
+    "graded (2, 5)->(2, 3), e=5 nonzero bracket certifies dominance in written argument",
+    "graded (2, 5)->(2, 3), e=5 three exact graded degrees",
+    "graded (2, 5)->(5, 3), e=65 lies in actual source cusp ring",
+    "graded (2, 5)->(5, 3), e=65 binomial relation",
+    "graded (2, 5)->(5, 3), e=65 bracket U,V",
+    "graded (2, 5)->(5, 3), e=65 bracket V,H",
+    "graded (2, 5)->(5, 3), e=65 bracket U,H",
+    "graded (2, 5)->(5, 3), e=65 nonzero bracket certifies dominance in written argument",
+    "graded (2, 5)->(5, 3), e=65 three exact graded degrees",
+    "F2 carrier weight calibration (1, 2, 3)",
+    "F2 carrier weight calibration (5, -1, 7)",
+    "F2 envelope lattice count 75",
+    "F2 envelope unique auxiliary cusp maximum 75",
+    "F2 envelope lattice count 125",
+    "F2 envelope unique auxiliary cusp maximum 125",
+    "F2 scalar normalization",
+    "F2 equal-slope exact threshold",
+    "F2 source and target cusp types are distinct up to swap"
+  ],
+  "preserving_derivation_kernels": [
+    {
+      "source": [
+        2,
+        3
+      ],
+      "variables": 11,
+      "constraints": 10,
+      "kernel": 1
+    },
+    {
+      "source": [
+        2,
+        5
+      ],
+      "variables": 8,
+      "constraints": 7,
+      "kernel": 1
+    },
+    {
+      "source": [
+        2,
+        7
+      ],
+      "variables": 9,
+      "constraints": 8,
+      "kernel": 1
+    },
+    {
+      "source": [
+        3,
+        2
+      ],
+      "variables": 11,
+      "constraints": 10,
+      "kernel": 1
+    },
+    {
+      "source": [
+        3,
+        4
+      ],
+      "variables": 5,
+      "constraints": 4,
+      "kernel": 1
+    },
+    {
+      "source": [
+        3,
+        5
+      ],
+      "variables": 5,
+      "constraints": 4,
+      "kernel": 1
+    },
+    {
+      "source": [
+        3,
+        7
+      ],
+      "variables": 6,
+      "constraints": 5,
+      "kernel": 1
+    },
+    {
+      "source": [
+        3,
+        8
+      ],
+      "variables": 6,
+      "constraints": 5,
+      "kernel": 1
+    },
+    {
+      "source": [
+        4,
+        3
+      ],
+      "variables": 5,
+      "constraints": 4,
+      "kernel": 1
+    },
+    {
+      "source": [
+        4,
+        5
+      ],
+      "variables": 5,
+      "constraints": 4,
+      "kernel": 1
+    },
+    {
+      "source": [
+        4,
+        7
+      ],
+      "variables": 5,
+      "constraints": 4,
+      "kernel": 1
+    },
+    {
+      "source": [
+        5,
+        2
+      ],
+      "variables": 8,
+      "constraints": 7,
+      "kernel": 1
+    },
+    {
+      "source": [
+        5,
+        3
+      ],
+      "variables": 5,
+      "constraints": 4,
+      "kernel": 1
+    },
+    {
+      "source": [
+        5,
+        4
+      ],
+      "variables": 5,
+      "constraints": 4,
+      "kernel": 1
+    },
+    {
+      "source": [
+        5,
+        6
+      ],
+      "variables": 5,
+      "constraints": 4,
+      "kernel": 1
+    },
+    {
+      "source": [
+        5,
+        7
+      ],
+      "variables": 5,
+      "constraints": 4,
+      "kernel": 1
+    },
+    {
+      "source": [
+        5,
+        8
+      ],
+      "variables": 5,
+      "constraints": 4,
+      "kernel": 1
+    },
+    {
+      "source": [
+        6,
+        5
+      ],
+      "variables": 5,
+      "constraints": 4,
+      "kernel": 1
+    },
+    {
+      "source": [
+        6,
+        7
+      ],
+      "variables": 5,
+      "constraints": 4,
+      "kernel": 1
+    },
+    {
+      "source": [
+        7,
+        2
+      ],
+      "variables": 9,
+      "constraints": 8,
+      "kernel": 1
+    },
+    {
+      "source": [
+        7,
+        3
+      ],
+      "variables": 6,
+      "constraints": 5,
+      "kernel": 1
+    },
+    {
+      "source": [
+        7,
+        4
+      ],
+      "variables": 5,
+      "constraints": 4,
+      "kernel": 1
+    },
+    {
+      "source": [
+        7,
+        5
+      ],
+      "variables": 5,
+      "constraints": 4,
+      "kernel": 1
+    },
+    {
+      "source": [
+        7,
+        6
+      ],
+      "variables": 5,
+      "constraints": 4,
+      "kernel": 1
+    },
+    {
+      "source": [
+        7,
+        8
+      ],
+      "variables": 5,
+      "constraints": 4,
+      "kernel": 1
+    },
+    {
+      "source": [
+        8,
+        3
+      ],
+      "variables": 6,
+      "constraints": 5,
+      "kernel": 1
+    },
+    {
+      "source": [
+        8,
+        5
+      ],
+      "variables": 5,
+      "constraints": 4,
+      "kernel": 1
+    },
+    {
+      "source": [
+        8,
+        7
+      ],
+      "variables": 5,
+      "constraints": 4,
+      "kernel": 1
+    }
+  ],
+  "polynomial_controls": [
+    {
+      "algebraically_independent": true,
+      "source": [
+        2,
+        3
+      ],
+      "target": [
+        2,
+        3
+      ],
+      "component_degrees": [
+        3,
+        2
+      ],
+      "cusp_difference_degree": 1,
+      "jacobian_degree": 0,
+      "slope": "1",
+      "defect": "0",
+      "jacobian_lower_bound_sharp": true,
+      "control": "identity"
+    },
+    {
+      "algebraically_independent": true,
+      "source": [
+        2,
+        3
+      ],
+      "target": [
+        2,
+        3
+      ],
+      "component_degrees": [
+        2,
+        3
+      ],
+      "cusp_difference_degree": 9,
+      "jacobian_degree": 0,
+      "slope": "3/2",
+      "defect": "15/2",
+      "jacobian_lower_bound_sharp": false,
+      "control": "swap"
+    },
+    {
+      "algebraically_independent": true,
+      "source": [
+        2,
+        3
+      ],
+      "target": [
+        2,
+        3
+      ],
+      "component_degrees": [
+        3,
+        2
+      ],
+      "cusp_difference_degree": 3,
+      "jacobian_degree": 0,
+      "slope": "1",
+      "defect": "2",
+      "jacobian_lower_bound_sharp": false,
+      "control": "translation"
+    },
+    {
+      "algebraically_independent": true,
+      "source": [
+        2,
+        3
+      ],
+      "target": [
+        2,
+        3
+      ],
+      "component_degrees": [
+        4,
+        2
+      ],
+      "cusp_difference_degree": 8,
+      "jacobian_degree": 0,
+      "slope": "4/3",
+      "defect": "20/3",
+      "jacobian_lower_bound_sharp": false,
+      "control": "x shear"
+    },
+    {
+      "algebraically_independent": true,
+      "source": [
+        2,
+        3
+      ],
+      "target": [
+        2,
+        3
+      ],
+      "component_degrees": [
+        3,
+        6
+      ],
+      "cusp_difference_degree": 18,
+      "jacobian_degree": 0,
+      "slope": "3",
+      "defect": "15",
+      "jacobian_lower_bound_sharp": false,
+      "control": "y shear"
+    },
+    {
+      "algebraically_independent": true,
+      "source": [
+        2,
+        3
+      ],
+      "target": [
+        2,
+        3
+      ],
+      "component_degrees": [
+        4,
+        8
+      ],
+      "cusp_difference_degree": 24,
+      "jacobian_degree": 0,
+      "slope": "4",
+      "defect": "20",
+      "jacobian_lower_bound_sharp": false,
+      "control": "mixed automorphism"
+    },
+    {
+      "algebraically_independent": true,
+      "source": [
+        2,
+        3
+      ],
+      "target": [
+        2,
+        3
+      ],
+      "component_degrees": [
+        3,
+        2
+      ],
+      "cusp_difference_degree": 1,
+      "jacobian_degree": 0,
+      "slope": "1",
+      "defect": "0",
+      "jacobian_lower_bound_sharp": true,
+      "control": "matched scaling"
+    },
+    {
+      "algebraically_independent": true,
+      "source": [
+        2,
+        3
+      ],
+      "target": [
+        2,
+        3
+      ],
+      "component_degrees": [
+        3,
+        2
+      ],
+      "cusp_difference_degree": 6,
+      "jacobian_degree": 0,
+      "slope": "1",
+      "defect": "5",
+      "jacobian_lower_bound_sharp": false,
+      "control": "unmatched scaling"
+    },
+    {
+      "algebraically_independent": true,
+      "source": [
+        2,
+        3
+      ],
+      "target": [
+        2,
+        3
+      ],
+      "component_degrees": [
+        9,
+        6
+      ],
+      "cusp_difference_degree": 13,
+      "jacobian_degree": 10,
+      "slope": "3",
+      "defect": "10",
+      "jacobian_lower_bound_sharp": true,
+      "control": "power n=3"
+    },
+    {
+      "algebraically_independent": true,
+      "source": [
+        2,
+        3
+      ],
+      "target": [
+        2,
+        5
+      ],
+      "component_degrees": [
+        3,
+        2
+      ],
+      "cusp_difference_degree": 10,
+      "jacobian_degree": 0,
+      "slope": "1",
+      "defect": "7",
+      "jacobian_lower_bound_sharp": false,
+      "control": "identity"
+    },
+    {
+      "algebraically_independent": true,
+      "source": [
+        2,
+        3
+      ],
+      "target": [
+        2,
+        5
+      ],
+      "component_degrees": [
+        2,
+        3
+      ],
+      "cusp_difference_degree": 15,
+      "jacobian_degree": 0,
+      "slope": "3/2",
+      "defect": "21/2",
+      "jacobian_lower_bound_sharp": false,
+      "control": "swap"
+    },
+    {
+      "algebraically_independent": true,
+      "source": [
+        2,
+        3
+      ],
+      "target": [
+        2,
+        5
+      ],
+      "component_degrees": [
+        3,
+        2
+      ],
+      "cusp_difference_degree": 10,
+      "jacobian_degree": 0,
+      "slope": "1",
+      "defect": "7",
+      "jacobian_lower_bound_sharp": false,
+      "control": "translation"
+    },
+    {
+      "algebraically_independent": true,
+      "source": [
+        2,
+        3
+      ],
+      "target": [
+        2,
+        5
+      ],
+      "component_degrees": [
+        4,
+        2
+      ],
+      "cusp_difference_degree": 10,
+      "jacobian_degree": 0,
+      "slope": "1",
+      "defect": "7",
+      "jacobian_lower_bound_sharp": false,
+      "control": "x shear"
+    },
+    {
+      "algebraically_independent": true,
+      "source": [
+        2,
+        3
+      ],
+      "target": [
+        2,
+        5
+      ],
+      "component_degrees": [
+        3,
+        6
+      ],
+      "cusp_difference_degree": 30,
+      "jacobian_degree": 0,
+      "slope": "3",
+      "defect": "21",
+      "jacobian_lower_bound_sharp": false,
+      "control": "y shear"
+    },
+    {
+      "algebraically_independent": true,
+      "source": [
+        2,
+        3
+      ],
+      "target": [
+        2,
+        5
+      ],
+      "component_degrees": [
+        4,
+        8
+      ],
+      "cusp_difference_degree": 40,
+      "jacobian_degree": 0,
+      "slope": "4",
+      "defect": "28",
+      "jacobian_lower_bound_sharp": false,
+      "control": "mixed automorphism"
+    },
+    {
+      "algebraically_independent": true,
+      "source": [
+        2,
+        3
+      ],
+      "target": [
+        2,
+        5
+      ],
+      "component_degrees": [
+        3,
+        2
+      ],
+      "cusp_difference_degree": 10,
+      "jacobian_degree": 0,
+      "slope": "1",
+      "defect": "7",
+      "jacobian_lower_bound_sharp": false,
+      "control": "matched scaling"
+    },
+    {
+      "algebraically_independent": true,
+      "source": [
+        2,
+        3
+      ],
+      "target": [
+        2,
+        5
+      ],
+      "component_degrees": [
+        3,
+        2
+      ],
+      "cusp_difference_degree": 10,
+      "jacobian_degree": 0,
+      "slope": "1",
+      "defect": "7",
+      "jacobian_lower_bound_sharp": false,
+      "control": "unmatched scaling"
+    },
+    {
+      "algebraically_independent": true,
+      "source": [
+        2,
+        3
+      ],
+      "target": [
+        2,
+        5
+      ],
+      "component_degrees": [
+        9,
+        6
+      ],
+      "cusp_difference_degree": 30,
+      "jacobian_degree": 10,
+      "slope": "3",
+      "defect": "21",
+      "jacobian_lower_bound_sharp": false,
+      "control": "power n=3"
+    },
+    {
+      "algebraically_independent": true,
+      "source": [
+        2,
+        3
+      ],
+      "target": [
+        3,
+        2
+      ],
+      "component_degrees": [
+        3,
+        2
+      ],
+      "cusp_difference_degree": 9,
+      "jacobian_degree": 0,
+      "slope": "3/2",
+      "defect": "15/2",
+      "jacobian_lower_bound_sharp": false,
+      "control": "identity"
+    },
+    {
+      "algebraically_independent": true,
+      "source": [
+        2,
+        3
+      ],
+      "target": [
+        3,
+        2
+      ],
+      "component_degrees": [
+        2,
+        3
+      ],
+      "cusp_difference_degree": 1,
+      "jacobian_degree": 0,
+      "slope": "1",
+      "defect": "0",
+      "jacobian_lower_bound_sharp": true,
+      "control": "swap"
+    },
+    {
+      "algebraically_independent": true,
+      "source": [
+        2,
+        3
+      ],
+      "target": [
+        3,
+        2
+      ],
+      "component_degrees": [
+        3,
+        2
+      ],
+      "cusp_difference_degree": 9,
+      "jacobian_degree": 0,
+      "slope": "3/2",
+      "defect": "15/2",
+      "jacobian_lower_bound_sharp": false,
+      "control": "translation"
+    },
+    {
+      "algebraically_independent": true,
+      "source": [
+        2,
+        3
+      ],
+      "target": [
+        3,
+        2
+      ],
+      "component_degrees": [
+        4,
+        2
+      ],
+      "cusp_difference_degree": 12,
+      "jacobian_degree": 0,
+      "slope": "2",
+      "defect": "10",
+      "jacobian_lower_bound_sharp": false,
+      "control": "x shear"
+    },
+    {
+      "algebraically_independent": true,
+      "source": [
+        2,
+        3
+      ],
+      "target": [
+        3,
+        2
+      ],
+      "component_degrees": [
+        3,
+        6
+      ],
+      "cusp_difference_degree": 12,
+      "jacobian_degree": 0,
+      "slope": "2",
+      "defect": "10",
+      "jacobian_lower_bound_sharp": false,
+      "control": "y shear"
+    },
+    {
+      "algebraically_independent": true,
+      "source": [
+        2,
+        3
+      ],
+      "target": [
+        3,
+        2
+      ],
+      "component_degrees": [
+        4,
+        8
+      ],
+      "cusp_difference_degree": 16,
+      "jacobian_degree": 0,
+      "slope": "8/3",
+      "defect": "40/3",
+      "jacobian_lower_bound_sharp": false,
+      "control": "mixed automorphism"
+    },
+    {
+      "algebraically_independent": true,
+      "source": [
+        2,
+        3
+      ],
+      "target": [
+        3,
+        2
+      ],
+      "component_degrees": [
+        3,
+        2
+      ],
+      "cusp_difference_degree": 9,
+      "jacobian_degree": 0,
+      "slope": "3/2",
+      "defect": "15/2",
+      "jacobian_lower_bound_sharp": false,
+      "control": "matched scaling"
+    },
+    {
+      "algebraically_independent": true,
+      "source": [
+        2,
+        3
+      ],
+      "target": [
+        3,
+        2
+      ],
+      "component_degrees": [
+        3,
+        2
+      ],
+      "cusp_difference_degree": 9,
+      "jacobian_degree": 0,
+      "slope": "3/2",
+      "defect": "15/2",
+      "jacobian_lower_bound_sharp": false,
+      "control": "unmatched scaling"
+    },
+    {
+      "algebraically_independent": true,
+      "source": [
+        2,
+        3
+      ],
+      "target": [
+        3,
+        2
+      ],
+      "component_degrees": [
+        9,
+        6
+      ],
+      "cusp_difference_degree": 27,
+      "jacobian_degree": 10,
+      "slope": "9/2",
+      "defect": "45/2",
+      "jacobian_lower_bound_sharp": false,
+      "control": "power n=3"
+    },
+    {
+      "algebraically_independent": true,
+      "source": [
+        2,
+        3
+      ],
+      "target": [
+        5,
+        3
+      ],
+      "component_degrees": [
+        3,
+        2
+      ],
+      "cusp_difference_degree": 15,
+      "jacobian_degree": 0,
+      "slope": "1",
+      "defect": "8",
+      "jacobian_lower_bound_sharp": false,
+      "control": "identity"
+    },
+    {
+      "algebraically_independent": true,
+      "source": [
+        2,
+        3
+      ],
+      "target": [
+        5,
+        3
+      ],
+      "component_degrees": [
+        2,
+        3
+      ],
+      "cusp_difference_degree": 10,
+      "jacobian_degree": 0,
+      "slope": "2/3",
+      "defect": "16/3",
+      "jacobian_lower_bound_sharp": false,
+      "control": "swap"
+    },
+    {
+      "algebraically_independent": true,
+      "source": [
+        2,
+        3
+      ],
+      "target": [
+        5,
+        3
+      ],
+      "component_degrees": [
+        3,
+        2
+      ],
+      "cusp_difference_degree": 15,
+      "jacobian_degree": 0,
+      "slope": "1",
+      "defect": "8",
+      "jacobian_lower_bound_sharp": false,
+      "control": "translation"
+    },
+    {
+      "algebraically_independent": true,
+      "source": [
+        2,
+        3
+      ],
+      "target": [
+        5,
+        3
+      ],
+      "component_degrees": [
+        4,
+        2
+      ],
+      "cusp_difference_degree": 20,
+      "jacobian_degree": 0,
+      "slope": "4/3",
+      "defect": "32/3",
+      "jacobian_lower_bound_sharp": false,
+      "control": "x shear"
+    },
+    {
+      "algebraically_independent": true,
+      "source": [
+        2,
+        3
+      ],
+      "target": [
+        5,
+        3
+      ],
+      "component_degrees": [
+        3,
+        6
+      ],
+      "cusp_difference_degree": 18,
+      "jacobian_degree": 0,
+      "slope": "6/5",
+      "defect": "48/5",
+      "jacobian_lower_bound_sharp": false,
+      "control": "y shear"
+    },
+    {
+      "algebraically_independent": true,
+      "source": [
+        2,
+        3
+      ],
+      "target": [
+        5,
+        3
+      ],
+      "component_degrees": [
+        4,
+        8
+      ],
+      "cusp_difference_degree": 24,
+      "jacobian_degree": 0,
+      "slope": "8/5",
+      "defect": "64/5",
+      "jacobian_lower_bound_sharp": false,
+      "control": "mixed automorphism"
+    },
+    {
+      "algebraically_independent": true,
+      "source": [
+        2,
+        3
+      ],
+      "target": [
+        5,
+        3
+      ],
+      "component_degrees": [
+        3,
+        2
+      ],
+      "cusp_difference_degree": 15,
+      "jacobian_degree": 0,
+      "slope": "1",
+      "defect": "8",
+      "jacobian_lower_bound_sharp": false,
+      "control": "matched scaling"
+    },
+    {
+      "algebraically_independent": true,
+      "source": [
+        2,
+        3
+      ],
+      "target": [
+        5,
+        3
+      ],
+      "component_degrees": [
+        3,
+        2
+      ],
+      "cusp_difference_degree": 15,
+      "jacobian_degree": 0,
+      "slope": "1",
+      "defect": "8",
+      "jacobian_lower_bound_sharp": false,
+      "control": "unmatched scaling"
+    },
+    {
+      "algebraically_independent": true,
+      "source": [
+        2,
+        3
+      ],
+      "target": [
+        5,
+        3
+      ],
+      "component_degrees": [
+        9,
+        6
+      ],
+      "cusp_difference_degree": 45,
+      "jacobian_degree": 10,
+      "slope": "3",
+      "defect": "24",
+      "jacobian_lower_bound_sharp": false,
+      "control": "power n=3"
+    },
+    {
+      "algebraically_independent": true,
+      "source": [
+        2,
+        5
+      ],
+      "target": [
+        2,
+        3
+      ],
+      "component_degrees": [
+        5,
+        2
+      ],
+      "cusp_difference_degree": 10,
+      "jacobian_degree": 0,
+      "slope": "5/3",
+      "defect": "25/3",
+      "jacobian_lower_bound_sharp": false,
+      "control": "identity"
+    },
+    {
+      "algebraically_independent": true,
+      "source": [
+        2,
+        5
+      ],
+      "target": [
+        2,
+        3
+      ],
+      "component_degrees": [
+        2,
+        5
+      ],
+      "cusp_difference_degree": 15,
+      "jacobian_degree": 0,
+      "slope": "5/2",
+      "defect": "25/2",
+      "jacobian_lower_bound_sharp": false,
+      "control": "swap"
+    },
+    {
+      "algebraically_independent": true,
+      "source": [
+        2,
+        5
+      ],
+      "target": [
+        2,
+        3
+      ],
+      "component_degrees": [
+        5,
+        2
+      ],
+      "cusp_difference_degree": 10,
+      "jacobian_degree": 0,
+      "slope": "5/3",
+      "defect": "25/3",
+      "jacobian_lower_bound_sharp": false,
+      "control": "translation"
+    },
+    {
+      "algebraically_independent": true,
+      "source": [
+        2,
+        5
+      ],
+      "target": [
+        2,
+        3
+      ],
+      "component_degrees": [
+        5,
+        2
+      ],
+      "cusp_difference_degree": 10,
+      "jacobian_degree": 0,
+      "slope": "5/3",
+      "defect": "25/3",
+      "jacobian_lower_bound_sharp": false,
+      "control": "x shear"
+    },
+    {
+      "algebraically_independent": true,
+      "source": [
+        2,
+        5
+      ],
+      "target": [
+        2,
+        3
+      ],
+      "component_degrees": [
+        5,
+        10
+      ],
+      "cusp_difference_degree": 30,
+      "jacobian_degree": 0,
+      "slope": "5",
+      "defect": "25",
+      "jacobian_lower_bound_sharp": false,
+      "control": "y shear"
+    },
+    {
+      "algebraically_independent": true,
+      "source": [
+        2,
+        5
+      ],
+      "target": [
+        2,
+        3
+      ],
+      "component_degrees": [
+        5,
+        10
+      ],
+      "cusp_difference_degree": 30,
+      "jacobian_degree": 0,
+      "slope": "5",
+      "defect": "25",
+      "jacobian_lower_bound_sharp": false,
+      "control": "mixed automorphism"
+    },
+    {
+      "algebraically_independent": true,
+      "source": [
+        2,
+        5
+      ],
+      "target": [
+        2,
+        3
+      ],
+      "component_degrees": [
+        5,
+        2
+      ],
+      "cusp_difference_degree": 10,
+      "jacobian_degree": 0,
+      "slope": "5/3",
+      "defect": "25/3",
+      "jacobian_lower_bound_sharp": false,
+      "control": "matched scaling"
+    },
+    {
+      "algebraically_independent": true,
+      "source": [
+        2,
+        5
+      ],
+      "target": [
+        2,
+        3
+      ],
+      "component_degrees": [
+        5,
+        2
+      ],
+      "cusp_difference_degree": 10,
+      "jacobian_degree": 0,
+      "slope": "5/3",
+      "defect": "25/3",
+      "jacobian_lower_bound_sharp": false,
+      "control": "unmatched scaling"
+    },
+    {
+      "algebraically_independent": true,
+      "source": [
+        2,
+        5
+      ],
+      "target": [
+        2,
+        3
+      ],
+      "component_degrees": [
+        15,
+        6
+      ],
+      "cusp_difference_degree": 30,
+      "jacobian_degree": 14,
+      "slope": "5",
+      "defect": "25",
+      "jacobian_lower_bound_sharp": false,
+      "control": "power n=3"
+    },
+    {
+      "algebraically_independent": true,
+      "source": [
+        2,
+        5
+      ],
+      "target": [
+        2,
+        5
+      ],
+      "component_degrees": [
+        5,
+        2
+      ],
+      "cusp_difference_degree": 3,
+      "jacobian_degree": 0,
+      "slope": "1",
+      "defect": "0",
+      "jacobian_lower_bound_sharp": true,
+      "control": "identity"
+    },
+    {
+      "algebraically_independent": true,
+      "source": [
+        2,
+        5
+      ],
+      "target": [
+        2,
+        5
+      ],
+      "component_degrees": [
+        2,
+        5
+      ],
+      "cusp_difference_degree": 25,
+      "jacobian_degree": 0,
+      "slope": "5/2",
+      "defect": "35/2",
+      "jacobian_lower_bound_sharp": false,
+      "control": "swap"
+    },
+    {
+      "algebraically_independent": true,
+      "source": [
+        2,
+        5
+      ],
+      "target": [
+        2,
+        5
+      ],
+      "component_degrees": [
+        5,
+        2
+      ],
+      "cusp_difference_degree": 5,
+      "jacobian_degree": 0,
+      "slope": "1",
+      "defect": "2",
+      "jacobian_lower_bound_sharp": false,
+      "control": "translation"
+    },
+    {
+      "algebraically_independent": true,
+      "source": [
+        2,
+        5
+      ],
+      "target": [
+        2,
+        5
+      ],
+      "component_degrees": [
+        5,
+        2
+      ],
+      "cusp_difference_degree": 9,
+      "jacobian_degree": 0,
+      "slope": "1",
+      "defect": "6",
+      "jacobian_lower_bound_sharp": false,
+      "control": "x shear"
+    },
+    {
+      "algebraically_independent": true,
+      "source": [
+        2,
+        5
+      ],
+      "target": [
+        2,
+        5
+      ],
+      "component_degrees": [
+        5,
+        10
+      ],
+      "cusp_difference_degree": 50,
+      "jacobian_degree": 0,
+      "slope": "5",
+      "defect": "35",
+      "jacobian_lower_bound_sharp": false,
+      "control": "y shear"
+    },
+    {
+      "algebraically_independent": true,
+      "source": [
+        2,
+        5
+      ],
+      "target": [
+        2,
+        5
+      ],
+      "component_degrees": [
+        5,
+        10
+      ],
+      "cusp_difference_degree": 50,
+      "jacobian_degree": 0,
+      "slope": "5",
+      "defect": "35",
+      "jacobian_lower_bound_sharp": false,
+      "control": "mixed automorphism"
+    },
+    {
+      "algebraically_independent": true,
+      "source": [
+        2,
+        5
+      ],
+      "target": [
+        2,
+        5
+      ],
+      "component_degrees": [
+        5,
+        2
+      ],
+      "cusp_difference_degree": 3,
+      "jacobian_degree": 0,
+      "slope": "1",
+      "defect": "0",
+      "jacobian_lower_bound_sharp": true,
+      "control": "matched scaling"
+    },
+    {
+      "algebraically_independent": true,
+      "source": [
+        2,
+        5
+      ],
+      "target": [
+        2,
+        5
+      ],
+      "component_degrees": [
+        5,
+        2
+      ],
+      "cusp_difference_degree": 10,
+      "jacobian_degree": 0,
+      "slope": "1",
+      "defect": "7",
+      "jacobian_lower_bound_sharp": false,
+      "control": "unmatched scaling"
+    },
+    {
+      "algebraically_independent": true,
+      "source": [
+        2,
+        5
+      ],
+      "target": [
+        2,
+        5
+      ],
+      "component_degrees": [
+        15,
+        6
+      ],
+      "cusp_difference_degree": 23,
+      "jacobian_degree": 14,
+      "slope": "3",
+      "defect": "14",
+      "jacobian_lower_bound_sharp": true,
+      "control": "power n=3"
+    },
+    {
+      "algebraically_independent": true,
+      "source": [
+        2,
+        5
+      ],
+      "target": [
+        5,
+        2
+      ],
+      "component_degrees": [
+        5,
+        2
+      ],
+      "cusp_difference_degree": 25,
+      "jacobian_degree": 0,
+      "slope": "5/2",
+      "defect": "35/2",
+      "jacobian_lower_bound_sharp": false,
+      "control": "identity"
+    },
+    {
+      "algebraically_independent": true,
+      "source": [
+        2,
+        5
+      ],
+      "target": [
+        5,
+        2
+      ],
+      "component_degrees": [
+        2,
+        5
+      ],
+      "cusp_difference_degree": 3,
+      "jacobian_degree": 0,
+      "slope": "1",
+      "defect": "0",
+      "jacobian_lower_bound_sharp": true,
+      "control": "swap"
+    },
+    {
+      "algebraically_independent": true,
+      "source": [
+        2,
+        5
+      ],
+      "target": [
+        5,
+        2
+      ],
+      "component_degrees": [
+        5,
+        2
+      ],
+      "cusp_difference_degree": 25,
+      "jacobian_degree": 0,
+      "slope": "5/2",
+      "defect": "35/2",
+      "jacobian_lower_bound_sharp": false,
+      "control": "translation"
+    },
+    {
+      "algebraically_independent": true,
+      "source": [
+        2,
+        5
+      ],
+      "target": [
+        5,
+        2
+      ],
+      "component_degrees": [
+        5,
+        2
+      ],
+      "cusp_difference_degree": 25,
+      "jacobian_degree": 0,
+      "slope": "5/2",
+      "defect": "35/2",
+      "jacobian_lower_bound_sharp": false,
+      "control": "x shear"
+    },
+    {
+      "algebraically_independent": true,
+      "source": [
+        2,
+        5
+      ],
+      "target": [
+        5,
+        2
+      ],
+      "component_degrees": [
+        5,
+        10
+      ],
+      "cusp_difference_degree": 25,
+      "jacobian_degree": 0,
+      "slope": "5/2",
+      "defect": "35/2",
+      "jacobian_lower_bound_sharp": false,
+      "control": "y shear"
+    },
+    {
+      "algebraically_independent": true,
+      "source": [
+        2,
+        5
+      ],
+      "target": [
+        5,
+        2
+      ],
+      "component_degrees": [
+        5,
+        10
+      ],
+      "cusp_difference_degree": 25,
+      "jacobian_degree": 0,
+      "slope": "5/2",
+      "defect": "35/2",
+      "jacobian_lower_bound_sharp": false,
+      "control": "mixed automorphism"
+    },
+    {
+      "algebraically_independent": true,
+      "source": [
+        2,
+        5
+      ],
+      "target": [
+        5,
+        2
+      ],
+      "component_degrees": [
+        5,
+        2
+      ],
+      "cusp_difference_degree": 25,
+      "jacobian_degree": 0,
+      "slope": "5/2",
+      "defect": "35/2",
+      "jacobian_lower_bound_sharp": false,
+      "control": "matched scaling"
+    },
+    {
+      "algebraically_independent": true,
+      "source": [
+        2,
+        5
+      ],
+      "target": [
+        5,
+        2
+      ],
+      "component_degrees": [
+        5,
+        2
+      ],
+      "cusp_difference_degree": 25,
+      "jacobian_degree": 0,
+      "slope": "5/2",
+      "defect": "35/2",
+      "jacobian_lower_bound_sharp": false,
+      "control": "unmatched scaling"
+    },
+    {
+      "algebraically_independent": true,
+      "source": [
+        2,
+        5
+      ],
+      "target": [
+        5,
+        2
+      ],
+      "component_degrees": [
+        15,
+        6
+      ],
+      "cusp_difference_degree": 75,
+      "jacobian_degree": 14,
+      "slope": "15/2",
+      "defect": "105/2",
+      "jacobian_lower_bound_sharp": false,
+      "control": "power n=3"
+    },
+    {
+      "algebraically_independent": true,
+      "source": [
+        2,
+        5
+      ],
+      "target": [
+        5,
+        3
+      ],
+      "component_degrees": [
+        5,
+        2
+      ],
+      "cusp_difference_degree": 25,
+      "jacobian_degree": 0,
+      "slope": "5/3",
+      "defect": "40/3",
+      "jacobian_lower_bound_sharp": false,
+      "control": "identity"
+    },
+    {
+      "algebraically_independent": true,
+      "source": [
+        2,
+        5
+      ],
+      "target": [
+        5,
+        3
+      ],
+      "component_degrees": [
+        2,
+        5
+      ],
+      "cusp_difference_degree": 15,
+      "jacobian_degree": 0,
+      "slope": "1",
+      "defect": "8",
+      "jacobian_lower_bound_sharp": false,
+      "control": "swap"
+    },
+    {
+      "algebraically_independent": true,
+      "source": [
+        2,
+        5
+      ],
+      "target": [
+        5,
+        3
+      ],
+      "component_degrees": [
+        5,
+        2
+      ],
+      "cusp_difference_degree": 25,
+      "jacobian_degree": 0,
+      "slope": "5/3",
+      "defect": "40/3",
+      "jacobian_lower_bound_sharp": false,
+      "control": "translation"
+    },
+    {
+      "algebraically_independent": true,
+      "source": [
+        2,
+        5
+      ],
+      "target": [
+        5,
+        3
+      ],
+      "component_degrees": [
+        5,
+        2
+      ],
+      "cusp_difference_degree": 25,
+      "jacobian_degree": 0,
+      "slope": "5/3",
+      "defect": "40/3",
+      "jacobian_lower_bound_sharp": false,
+      "control": "x shear"
+    },
+    {
+      "algebraically_independent": true,
+      "source": [
+        2,
+        5
+      ],
+      "target": [
+        5,
+        3
+      ],
+      "component_degrees": [
+        5,
+        10
+      ],
+      "cusp_difference_degree": 30,
+      "jacobian_degree": 0,
+      "slope": "2",
+      "defect": "16",
+      "jacobian_lower_bound_sharp": false,
+      "control": "y shear"
+    },
+    {
+      "algebraically_independent": true,
+      "source": [
+        2,
+        5
+      ],
+      "target": [
+        5,
+        3
+      ],
+      "component_degrees": [
+        5,
+        10
+      ],
+      "cusp_difference_degree": 30,
+      "jacobian_degree": 0,
+      "slope": "2",
+      "defect": "16",
+      "jacobian_lower_bound_sharp": false,
+      "control": "mixed automorphism"
+    },
+    {
+      "algebraically_independent": true,
+      "source": [
+        2,
+        5
+      ],
+      "target": [
+        5,
+        3
+      ],
+      "component_degrees": [
+        5,
+        2
+      ],
+      "cusp_difference_degree": 25,
+      "jacobian_degree": 0,
+      "slope": "5/3",
+      "defect": "40/3",
+      "jacobian_lower_bound_sharp": false,
+      "control": "matched scaling"
+    },
+    {
+      "algebraically_independent": true,
+      "source": [
+        2,
+        5
+      ],
+      "target": [
+        5,
+        3
+      ],
+      "component_degrees": [
+        5,
+        2
+      ],
+      "cusp_difference_degree": 25,
+      "jacobian_degree": 0,
+      "slope": "5/3",
+      "defect": "40/3",
+      "jacobian_lower_bound_sharp": false,
+      "control": "unmatched scaling"
+    },
+    {
+      "algebraically_independent": true,
+      "source": [
+        2,
+        5
+      ],
+      "target": [
+        5,
+        3
+      ],
+      "component_degrees": [
+        15,
+        6
+      ],
+      "cusp_difference_degree": 75,
+      "jacobian_degree": 14,
+      "slope": "5",
+      "defect": "40",
+      "jacobian_lower_bound_sharp": false,
+      "control": "power n=3"
+    },
+    {
+      "algebraically_independent": true,
+      "source": [
+        3,
+        4
+      ],
+      "target": [
+        2,
+        3
+      ],
+      "component_degrees": [
+        4,
+        3
+      ],
+      "cusp_difference_degree": 9,
+      "jacobian_degree": 0,
+      "slope": "3/2",
+      "defect": "15/2",
+      "jacobian_lower_bound_sharp": false,
+      "control": "identity"
+    },
+    {
+      "algebraically_independent": true,
+      "source": [
+        3,
+        4
+      ],
+      "target": [
+        2,
+        3
+      ],
+      "component_degrees": [
+        3,
+        4
+      ],
+      "cusp_difference_degree": 12,
+      "jacobian_degree": 0,
+      "slope": "2",
+      "defect": "10",
+      "jacobian_lower_bound_sharp": false,
+      "control": "swap"
+    },
+    {
+      "algebraically_independent": true,
+      "source": [
+        3,
+        4
+      ],
+      "target": [
+        2,
+        3
+      ],
+      "component_degrees": [
+        4,
+        3
+      ],
+      "cusp_difference_degree": 9,
+      "jacobian_degree": 0,
+      "slope": "3/2",
+      "defect": "15/2",
+      "jacobian_lower_bound_sharp": false,
+      "control": "translation"
+    },
+    {
+      "algebraically_independent": true,
+      "source": [
+        3,
+        4
+      ],
+      "target": [
+        2,
+        3
+      ],
+      "component_degrees": [
+        6,
+        3
+      ],
+      "cusp_difference_degree": 12,
+      "jacobian_degree": 0,
+      "slope": "2",
+      "defect": "10",
+      "jacobian_lower_bound_sharp": false,
+      "control": "x shear"
+    },
+    {
+      "algebraically_independent": true,
+      "source": [
+        3,
+        4
+      ],
+      "target": [
+        2,
+        3
+      ],
+      "component_degrees": [
+        4,
+        8
+      ],
+      "cusp_difference_degree": 24,
+      "jacobian_degree": 0,
+      "slope": "4",
+      "defect": "20",
+      "jacobian_lower_bound_sharp": false,
+      "control": "y shear"
+    },
+    {
+      "algebraically_independent": true,
+      "source": [
+        3,
+        4
+      ],
+      "target": [
+        2,
+        3
+      ],
+      "component_degrees": [
+        6,
+        12
+      ],
+      "cusp_difference_degree": 36,
+      "jacobian_degree": 0,
+      "slope": "6",
+      "defect": "30",
+      "jacobian_lower_bound_sharp": false,
+      "control": "mixed automorphism"
+    },
+    {
+      "algebraically_independent": true,
+      "source": [
+        3,
+        4
+      ],
+      "target": [
+        2,
+        3
+      ],
+      "component_degrees": [
+        4,
+        3
+      ],
+      "cusp_difference_degree": 9,
+      "jacobian_degree": 0,
+      "slope": "3/2",
+      "defect": "15/2",
+      "jacobian_lower_bound_sharp": false,
+      "control": "matched scaling"
+    },
+    {
+      "algebraically_independent": true,
+      "source": [
+        3,
+        4
+      ],
+      "target": [
+        2,
+        3
+      ],
+      "component_degrees": [
+        4,
+        3
+      ],
+      "cusp_difference_degree": 9,
+      "jacobian_degree": 0,
+      "slope": "3/2",
+      "defect": "15/2",
+      "jacobian_lower_bound_sharp": false,
+      "control": "unmatched scaling"
+    },
+    {
+      "algebraically_independent": true,
+      "source": [
+        3,
+        4
+      ],
+      "target": [
+        2,
+        3
+      ],
+      "component_degrees": [
+        12,
+        9
+      ],
+      "cusp_difference_degree": 27,
+      "jacobian_degree": 14,
+      "slope": "9/2",
+      "defect": "45/2",
+      "jacobian_lower_bound_sharp": false,
+      "control": "power n=3"
+    },
+    {
+      "algebraically_independent": true,
+      "source": [
+        3,
+        4
+      ],
+      "target": [
+        2,
+        5
+      ],
+      "component_degrees": [
+        4,
+        3
+      ],
+      "cusp_difference_degree": 15,
+      "jacobian_degree": 0,
+      "slope": "3/2",
+      "defect": "21/2",
+      "jacobian_lower_bound_sharp": false,
+      "control": "identity"
+    },
+    {
+      "algebraically_independent": true,
+      "source": [
+        3,
+        4
+      ],
+      "target": [
+        2,
+        5
+      ],
+      "component_degrees": [
+        3,
+        4
+      ],
+      "cusp_difference_degree": 20,
+      "jacobian_degree": 0,
+      "slope": "2",
+      "defect": "14",
+      "jacobian_lower_bound_sharp": false,
+      "control": "swap"
+    },
+    {
+      "algebraically_independent": true,
+      "source": [
+        3,
+        4
+      ],
+      "target": [
+        2,
+        5
+      ],
+      "component_degrees": [
+        4,
+        3
+      ],
+      "cusp_difference_degree": 15,
+      "jacobian_degree": 0,
+      "slope": "3/2",
+      "defect": "21/2",
+      "jacobian_lower_bound_sharp": false,
+      "control": "translation"
+    },
+    {
+      "algebraically_independent": true,
+      "source": [
+        3,
+        4
+      ],
+      "target": [
+        2,
+        5
+      ],
+      "component_degrees": [
+        6,
+        3
+      ],
+      "cusp_difference_degree": 15,
+      "jacobian_degree": 0,
+      "slope": "3/2",
+      "defect": "21/2",
+      "jacobian_lower_bound_sharp": false,
+      "control": "x shear"
+    },
+    {
+      "algebraically_independent": true,
+      "source": [
+        3,
+        4
+      ],
+      "target": [
+        2,
+        5
+      ],
+      "component_degrees": [
+        4,
+        8
+      ],
+      "cusp_difference_degree": 40,
+      "jacobian_degree": 0,
+      "slope": "4",
+      "defect": "28",
+      "jacobian_lower_bound_sharp": false,
+      "control": "y shear"
+    },
+    {
+      "algebraically_independent": true,
+      "source": [
+        3,
+        4
+      ],
+      "target": [
+        2,
+        5
+      ],
+      "component_degrees": [
+        6,
+        12
+      ],
+      "cusp_difference_degree": 60,
+      "jacobian_degree": 0,
+      "slope": "6",
+      "defect": "42",
+      "jacobian_lower_bound_sharp": false,
+      "control": "mixed automorphism"
+    },
+    {
+      "algebraically_independent": true,
+      "source": [
+        3,
+        4
+      ],
+      "target": [
+        2,
+        5
+      ],
+      "component_degrees": [
+        4,
+        3
+      ],
+      "cusp_difference_degree": 15,
+      "jacobian_degree": 0,
+      "slope": "3/2",
+      "defect": "21/2",
+      "jacobian_lower_bound_sharp": false,
+      "control": "matched scaling"
+    },
+    {
+      "algebraically_independent": true,
+      "source": [
+        3,
+        4
+      ],
+      "target": [
+        2,
+        5
+      ],
+      "component_degrees": [
+        4,
+        3
+      ],
+      "cusp_difference_degree": 15,
+      "jacobian_degree": 0,
+      "slope": "3/2",
+      "defect": "21/2",
+      "jacobian_lower_bound_sharp": false,
+      "control": "unmatched scaling"
+    },
+    {
+      "algebraically_independent": true,
+      "source": [
+        3,
+        4
+      ],
+      "target": [
+        2,
+        5
+      ],
+      "component_degrees": [
+        12,
+        9
+      ],
+      "cusp_difference_degree": 45,
+      "jacobian_degree": 14,
+      "slope": "9/2",
+      "defect": "63/2",
+      "jacobian_lower_bound_sharp": false,
+      "control": "power n=3"
+    },
+    {
+      "algebraically_independent": true,
+      "source": [
+        3,
+        4
+      ],
+      "target": [
+        3,
+        4
+      ],
+      "component_degrees": [
+        4,
+        3
+      ],
+      "cusp_difference_degree": 5,
+      "jacobian_degree": 0,
+      "slope": "1",
+      "defect": "0",
+      "jacobian_lower_bound_sharp": true,
+      "control": "identity"
+    },
+    {
+      "algebraically_independent": true,
+      "source": [
+        3,
+        4
+      ],
+      "target": [
+        3,
+        4
+      ],
+      "component_degrees": [
+        3,
+        4
+      ],
+      "cusp_difference_degree": 16,
+      "jacobian_degree": 0,
+      "slope": "4/3",
+      "defect": "28/3",
+      "jacobian_lower_bound_sharp": false,
+      "control": "swap"
+    },
+    {
+      "algebraically_independent": true,
+      "source": [
+        3,
+        4
+      ],
+      "target": [
+        3,
+        4
+      ],
+      "component_degrees": [
+        4,
+        3
+      ],
+      "cusp_difference_degree": 8,
+      "jacobian_degree": 0,
+      "slope": "1",
+      "defect": "3",
+      "jacobian_lower_bound_sharp": false,
+      "control": "translation"
+    },
+    {
+      "algebraically_independent": true,
+      "source": [
+        3,
+        4
+      ],
+      "target": [
+        3,
+        4
+      ],
+      "component_degrees": [
+        6,
+        3
+      ],
+      "cusp_difference_degree": 18,
+      "jacobian_degree": 0,
+      "slope": "3/2",
+      "defect": "21/2",
+      "jacobian_lower_bound_sharp": false,
+      "control": "x shear"
+    },
+    {
+      "algebraically_independent": true,
+      "source": [
+        3,
+        4
+      ],
+      "target": [
+        3,
+        4
+      ],
+      "component_degrees": [
+        4,
+        8
+      ],
+      "cusp_difference_degree": 32,
+      "jacobian_degree": 0,
+      "slope": "8/3",
+      "defect": "56/3",
+      "jacobian_lower_bound_sharp": false,
+      "control": "y shear"
+    },
+    {
+      "algebraically_independent": true,
+      "source": [
+        3,
+        4
+      ],
+      "target": [
+        3,
+        4
+      ],
+      "component_degrees": [
+        6,
+        12
+      ],
+      "cusp_difference_degree": 48,
+      "jacobian_degree": 0,
+      "slope": "4",
+      "defect": "28",
+      "jacobian_lower_bound_sharp": false,
+      "control": "mixed automorphism"
+    },
+    {
+      "algebraically_independent": true,
+      "source": [
+        3,
+        4
+      ],
+      "target": [
+        3,
+        4
+      ],
+      "component_degrees": [
+        4,
+        3
+      ],
+      "cusp_difference_degree": 5,
+      "jacobian_degree": 0,
+      "slope": "1",
+      "defect": "0",
+      "jacobian_lower_bound_sharp": true,
+      "control": "matched scaling"
+    },
+    {
+      "algebraically_independent": true,
+      "source": [
+        3,
+        4
+      ],
+      "target": [
+        3,
+        4
+      ],
+      "component_degrees": [
+        4,
+        3
+      ],
+      "cusp_difference_degree": 12,
+      "jacobian_degree": 0,
+      "slope": "1",
+      "defect": "7",
+      "jacobian_lower_bound_sharp": false,
+      "control": "unmatched scaling"
+    },
+    {
+      "algebraically_independent": true,
+      "source": [
+        3,
+        4
+      ],
+      "target": [
+        3,
+        4
+      ],
+      "component_degrees": [
+        12,
+        9
+      ],
+      "cusp_difference_degree": 29,
+      "jacobian_degree": 14,
+      "slope": "3",
+      "defect": "14",
+      "jacobian_lower_bound_sharp": true,
+      "control": "power n=3"
+    },
+    {
+      "algebraically_independent": true,
+      "source": [
+        3,
+        4
+      ],
+      "target": [
+        4,
+        3
+      ],
+      "component_degrees": [
+        4,
+        3
+      ],
+      "cusp_difference_degree": 16,
+      "jacobian_degree": 0,
+      "slope": "4/3",
+      "defect": "28/3",
+      "jacobian_lower_bound_sharp": false,
+      "control": "identity"
+    },
+    {
+      "algebraically_independent": true,
+      "source": [
+        3,
+        4
+      ],
+      "target": [
+        4,
+        3
+      ],
+      "component_degrees": [
+        3,
+        4
+      ],
+      "cusp_difference_degree": 5,
+      "jacobian_degree": 0,
+      "slope": "1",
+      "defect": "0",
+      "jacobian_lower_bound_sharp": true,
+      "control": "swap"
+    },
+    {
+      "algebraically_independent": true,
+      "source": [
+        3,
+        4
+      ],
+      "target": [
+        4,
+        3
+      ],
+      "component_degrees": [
+        4,
+        3
+      ],
+      "cusp_difference_degree": 16,
+      "jacobian_degree": 0,
+      "slope": "4/3",
+      "defect": "28/3",
+      "jacobian_lower_bound_sharp": false,
+      "control": "translation"
+    },
+    {
+      "algebraically_independent": true,
+      "source": [
+        3,
+        4
+      ],
+      "target": [
+        4,
+        3
+      ],
+      "component_degrees": [
+        6,
+        3
+      ],
+      "cusp_difference_degree": 24,
+      "jacobian_degree": 0,
+      "slope": "2",
+      "defect": "14",
+      "jacobian_lower_bound_sharp": false,
+      "control": "x shear"
+    },
+    {
+      "algebraically_independent": true,
+      "source": [
+        3,
+        4
+      ],
+      "target": [
+        4,
+        3
+      ],
+      "component_degrees": [
+        4,
+        8
+      ],
+      "cusp_difference_degree": 24,
+      "jacobian_degree": 0,
+      "slope": "2",
+      "defect": "14",
+      "jacobian_lower_bound_sharp": false,
+      "control": "y shear"
+    },
+    {
+      "algebraically_independent": true,
+      "source": [
+        3,
+        4
+      ],
+      "target": [
+        4,
+        3
+      ],
+      "component_degrees": [
+        6,
+        12
+      ],
+      "cusp_difference_degree": 36,
+      "jacobian_degree": 0,
+      "slope": "3",
+      "defect": "21",
+      "jacobian_lower_bound_sharp": false,
+      "control": "mixed automorphism"
+    },
+    {
+      "algebraically_independent": true,
+      "source": [
+        3,
+        4
+      ],
+      "target": [
+        4,
+        3
+      ],
+      "component_degrees": [
+        4,
+        3
+      ],
+      "cusp_difference_degree": 16,
+      "jacobian_degree": 0,
+      "slope": "4/3",
+      "defect": "28/3",
+      "jacobian_lower_bound_sharp": false,
+      "control": "matched scaling"
+    },
+    {
+      "algebraically_independent": true,
+      "source": [
+        3,
+        4
+      ],
+      "target": [
+        4,
+        3
+      ],
+      "component_degrees": [
+        4,
+        3
+      ],
+      "cusp_difference_degree": 16,
+      "jacobian_degree": 0,
+      "slope": "4/3",
+      "defect": "28/3",
+      "jacobian_lower_bound_sharp": false,
+      "control": "unmatched scaling"
+    },
+    {
+      "algebraically_independent": true,
+      "source": [
+        3,
+        4
+      ],
+      "target": [
+        4,
+        3
+      ],
+      "component_degrees": [
+        12,
+        9
+      ],
+      "cusp_difference_degree": 48,
+      "jacobian_degree": 14,
+      "slope": "4",
+      "defect": "28",
+      "jacobian_lower_bound_sharp": false,
+      "control": "power n=3"
+    },
+    {
+      "algebraically_independent": true,
+      "source": [
+        3,
+        4
+      ],
+      "target": [
+        5,
+        3
+      ],
+      "component_degrees": [
+        4,
+        3
+      ],
+      "cusp_difference_degree": 20,
+      "jacobian_degree": 0,
+      "slope": "4/3",
+      "defect": "32/3",
+      "jacobian_lower_bound_sharp": false,
+      "control": "identity"
+    },
+    {
+      "algebraically_independent": true,
+      "source": [
+        3,
+        4
+      ],
+      "target": [
+        5,
+        3
+      ],
+      "component_degrees": [
+        3,
+        4
+      ],
+      "cusp_difference_degree": 15,
+      "jacobian_degree": 0,
+      "slope": "1",
+      "defect": "8",
+      "jacobian_lower_bound_sharp": false,
+      "control": "swap"
+    },
+    {
+      "algebraically_independent": true,
+      "source": [
+        3,
+        4
+      ],
+      "target": [
+        5,
+        3
+      ],
+      "component_degrees": [
+        4,
+        3
+      ],
+      "cusp_difference_degree": 20,
+      "jacobian_degree": 0,
+      "slope": "4/3",
+      "defect": "32/3",
+      "jacobian_lower_bound_sharp": false,
+      "control": "translation"
+    },
+    {
+      "algebraically_independent": true,
+      "source": [
+        3,
+        4
+      ],
+      "target": [
+        5,
+        3
+      ],
+      "component_degrees": [
+        6,
+        3
+      ],
+      "cusp_difference_degree": 30,
+      "jacobian_degree": 0,
+      "slope": "2",
+      "defect": "16",
+      "jacobian_lower_bound_sharp": false,
+      "control": "x shear"
+    },
+    {
+      "algebraically_independent": true,
+      "source": [
+        3,
+        4
+      ],
+      "target": [
+        5,
+        3
+      ],
+      "component_degrees": [
+        4,
+        8
+      ],
+      "cusp_difference_degree": 24,
+      "jacobian_degree": 0,
+      "slope": "8/5",
+      "defect": "64/5",
+      "jacobian_lower_bound_sharp": false,
+      "control": "y shear"
+    },
+    {
+      "algebraically_independent": true,
+      "source": [
+        3,
+        4
+      ],
+      "target": [
+        5,
+        3
+      ],
+      "component_degrees": [
+        6,
+        12
+      ],
+      "cusp_difference_degree": 36,
+      "jacobian_degree": 0,
+      "slope": "12/5",
+      "defect": "96/5",
+      "jacobian_lower_bound_sharp": false,
+      "control": "mixed automorphism"
+    },
+    {
+      "algebraically_independent": true,
+      "source": [
+        3,
+        4
+      ],
+      "target": [
+        5,
+        3
+      ],
+      "component_degrees": [
+        4,
+        3
+      ],
+      "cusp_difference_degree": 20,
+      "jacobian_degree": 0,
+      "slope": "4/3",
+      "defect": "32/3",
+      "jacobian_lower_bound_sharp": false,
+      "control": "matched scaling"
+    },
+    {
+      "algebraically_independent": true,
+      "source": [
+        3,
+        4
+      ],
+      "target": [
+        5,
+        3
+      ],
+      "component_degrees": [
+        4,
+        3
+      ],
+      "cusp_difference_degree": 20,
+      "jacobian_degree": 0,
+      "slope": "4/3",
+      "defect": "32/3",
+      "jacobian_lower_bound_sharp": false,
+      "control": "unmatched scaling"
+    },
+    {
+      "algebraically_independent": true,
+      "source": [
+        3,
+        4
+      ],
+      "target": [
+        5,
+        3
+      ],
+      "component_degrees": [
+        12,
+        9
+      ],
+      "cusp_difference_degree": 60,
+      "jacobian_degree": 14,
+      "slope": "4",
+      "defect": "32",
+      "jacobian_lower_bound_sharp": false,
+      "control": "power n=3"
+    },
+    {
+      "algebraically_independent": true,
+      "source": [
+        3,
+        5
+      ],
+      "target": [
+        2,
+        3
+      ],
+      "component_degrees": [
+        5,
+        3
+      ],
+      "cusp_difference_degree": 10,
+      "jacobian_degree": 0,
+      "slope": "5/3",
+      "defect": "25/3",
+      "jacobian_lower_bound_sharp": false,
+      "control": "identity"
+    },
+    {
+      "algebraically_independent": true,
+      "source": [
+        3,
+        5
+      ],
+      "target": [
+        2,
+        3
+      ],
+      "component_degrees": [
+        3,
+        5
+      ],
+      "cusp_difference_degree": 15,
+      "jacobian_degree": 0,
+      "slope": "5/2",
+      "defect": "25/2",
+      "jacobian_lower_bound_sharp": false,
+      "control": "swap"
+    },
+    {
+      "algebraically_independent": true,
+      "source": [
+        3,
+        5
+      ],
+      "target": [
+        2,
+        3
+      ],
+      "component_degrees": [
+        5,
+        3
+      ],
+      "cusp_difference_degree": 10,
+      "jacobian_degree": 0,
+      "slope": "5/3",
+      "defect": "25/3",
+      "jacobian_lower_bound_sharp": false,
+      "control": "translation"
+    },
+    {
+      "algebraically_independent": true,
+      "source": [
+        3,
+        5
+      ],
+      "target": [
+        2,
+        3
+      ],
+      "component_degrees": [
+        6,
+        3
+      ],
+      "cusp_difference_degree": 12,
+      "jacobian_degree": 0,
+      "slope": "2",
+      "defect": "10",
+      "jacobian_lower_bound_sharp": false,
+      "control": "x shear"
+    },
+    {
+      "algebraically_independent": true,
+      "source": [
+        3,
+        5
+      ],
+      "target": [
+        2,
+        3
+      ],
+      "component_degrees": [
+        5,
+        10
+      ],
+      "cusp_difference_degree": 30,
+      "jacobian_degree": 0,
+      "slope": "5",
+      "defect": "25",
+      "jacobian_lower_bound_sharp": false,
+      "control": "y shear"
+    },
+    {
+      "algebraically_independent": true,
+      "source": [
+        3,
+        5
+      ],
+      "target": [
+        2,
+        3
+      ],
+      "component_degrees": [
+        6,
+        12
+      ],
+      "cusp_difference_degree": 36,
+      "jacobian_degree": 0,
+      "slope": "6",
+      "defect": "30",
+      "jacobian_lower_bound_sharp": false,
+      "control": "mixed automorphism"
+    },
+    {
+      "algebraically_independent": true,
+      "source": [
+        3,
+        5
+      ],
+      "target": [
+        2,
+        3
+      ],
+      "component_degrees": [
+        5,
+        3
+      ],
+      "cusp_difference_degree": 10,
+      "jacobian_degree": 0,
+      "slope": "5/3",
+      "defect": "25/3",
+      "jacobian_lower_bound_sharp": false,
+      "control": "matched scaling"
+    },
+    {
+      "algebraically_independent": true,
+      "source": [
+        3,
+        5
+      ],
+      "target": [
+        2,
+        3
+      ],
+      "component_degrees": [
+        5,
+        3
+      ],
+      "cusp_difference_degree": 10,
+      "jacobian_degree": 0,
+      "slope": "5/3",
+      "defect": "25/3",
+      "jacobian_lower_bound_sharp": false,
+      "control": "unmatched scaling"
+    },
+    {
+      "algebraically_independent": true,
+      "source": [
+        3,
+        5
+      ],
+      "target": [
+        2,
+        3
+      ],
+      "component_degrees": [
+        15,
+        9
+      ],
+      "cusp_difference_degree": 30,
+      "jacobian_degree": 16,
+      "slope": "5",
+      "defect": "25",
+      "jacobian_lower_bound_sharp": false,
+      "control": "power n=3"
+    },
+    {
+      "algebraically_independent": true,
+      "source": [
+        3,
+        5
+      ],
+      "target": [
+        2,
+        5
+      ],
+      "component_degrees": [
+        5,
+        3
+      ],
+      "cusp_difference_degree": 15,
+      "jacobian_degree": 0,
+      "slope": "3/2",
+      "defect": "21/2",
+      "jacobian_lower_bound_sharp": false,
+      "control": "identity"
+    },
+    {
+      "algebraically_independent": true,
+      "source": [
+        3,
+        5
+      ],
+      "target": [
+        2,
+        5
+      ],
+      "component_degrees": [
+        3,
+        5
+      ],
+      "cusp_difference_degree": 25,
+      "jacobian_degree": 0,
+      "slope": "5/2",
+      "defect": "35/2",
+      "jacobian_lower_bound_sharp": false,
+      "control": "swap"
+    },
+    {
+      "algebraically_independent": true,
+      "source": [
+        3,
+        5
+      ],
+      "target": [
+        2,
+        5
+      ],
+      "component_degrees": [
+        5,
+        3
+      ],
+      "cusp_difference_degree": 15,
+      "jacobian_degree": 0,
+      "slope": "3/2",
+      "defect": "21/2",
+      "jacobian_lower_bound_sharp": false,
+      "control": "translation"
+    },
+    {
+      "algebraically_independent": true,
+      "source": [
+        3,
+        5
+      ],
+      "target": [
+        2,
+        5
+      ],
+      "component_degrees": [
+        6,
+        3
+      ],
+      "cusp_difference_degree": 15,
+      "jacobian_degree": 0,
+      "slope": "3/2",
+      "defect": "21/2",
+      "jacobian_lower_bound_sharp": false,
+      "control": "x shear"
+    },
+    {
+      "algebraically_independent": true,
+      "source": [
+        3,
+        5
+      ],
+      "target": [
+        2,
+        5
+      ],
+      "component_degrees": [
+        5,
+        10
+      ],
+      "cusp_difference_degree": 50,
+      "jacobian_degree": 0,
+      "slope": "5",
+      "defect": "35",
+      "jacobian_lower_bound_sharp": false,
+      "control": "y shear"
+    },
+    {
+      "algebraically_independent": true,
+      "source": [
+        3,
+        5
+      ],
+      "target": [
+        2,
+        5
+      ],
+      "component_degrees": [
+        6,
+        12
+      ],
+      "cusp_difference_degree": 60,
+      "jacobian_degree": 0,
+      "slope": "6",
+      "defect": "42",
+      "jacobian_lower_bound_sharp": false,
+      "control": "mixed automorphism"
+    },
+    {
+      "algebraically_independent": true,
+      "source": [
+        3,
+        5
+      ],
+      "target": [
+        2,
+        5
+      ],
+      "component_degrees": [
+        5,
+        3
+      ],
+      "cusp_difference_degree": 15,
+      "jacobian_degree": 0,
+      "slope": "3/2",
+      "defect": "21/2",
+      "jacobian_lower_bound_sharp": false,
+      "control": "matched scaling"
+    },
+    {
+      "algebraically_independent": true,
+      "source": [
+        3,
+        5
+      ],
+      "target": [
+        2,
+        5
+      ],
+      "component_degrees": [
+        5,
+        3
+      ],
+      "cusp_difference_degree": 15,
+      "jacobian_degree": 0,
+      "slope": "3/2",
+      "defect": "21/2",
+      "jacobian_lower_bound_sharp": false,
+      "control": "unmatched scaling"
+    },
+    {
+      "algebraically_independent": true,
+      "source": [
+        3,
+        5
+      ],
+      "target": [
+        2,
+        5
+      ],
+      "component_degrees": [
+        15,
+        9
+      ],
+      "cusp_difference_degree": 45,
+      "jacobian_degree": 16,
+      "slope": "9/2",
+      "defect": "63/2",
+      "jacobian_lower_bound_sharp": false,
+      "control": "power n=3"
+    },
+    {
+      "algebraically_independent": true,
+      "source": [
+        3,
+        5
+      ],
+      "target": [
+        3,
+        5
+      ],
+      "component_degrees": [
+        5,
+        3
+      ],
+      "cusp_difference_degree": 7,
+      "jacobian_degree": 0,
+      "slope": "1",
+      "defect": "0",
+      "jacobian_lower_bound_sharp": true,
+      "control": "identity"
+    },
+    {
+      "algebraically_independent": true,
+      "source": [
+        3,
+        5
+      ],
+      "target": [
+        3,
+        5
+      ],
+      "component_degrees": [
+        3,
+        5
+      ],
+      "cusp_difference_degree": 25,
+      "jacobian_degree": 0,
+      "slope": "5/3",
+      "defect": "40/3",
+      "jacobian_lower_bound_sharp": false,
+      "control": "swap"
+    },
+    {
+      "algebraically_independent": true,
+      "source": [
+        3,
+        5
+      ],
+      "target": [
+        3,
+        5
+      ],
+      "component_degrees": [
+        5,
+        3
+      ],
+      "cusp_difference_degree": 10,
+      "jacobian_degree": 0,
+      "slope": "1",
+      "defect": "3",
+      "jacobian_lower_bound_sharp": false,
+      "control": "translation"
+    },
+    {
+      "algebraically_independent": true,
+      "source": [
+        3,
+        5
+      ],
+      "target": [
+        3,
+        5
+      ],
+      "component_degrees": [
+        6,
+        3
+      ],
+      "cusp_difference_degree": 18,
+      "jacobian_degree": 0,
+      "slope": "6/5",
+      "defect": "48/5",
+      "jacobian_lower_bound_sharp": false,
+      "control": "x shear"
+    },
+    {
+      "algebraically_independent": true,
+      "source": [
+        3,
+        5
+      ],
+      "target": [
+        3,
+        5
+      ],
+      "component_degrees": [
+        5,
+        10
+      ],
+      "cusp_difference_degree": 50,
+      "jacobian_degree": 0,
+      "slope": "10/3",
+      "defect": "80/3",
+      "jacobian_lower_bound_sharp": false,
+      "control": "y shear"
+    },
+    {
+      "algebraically_independent": true,
+      "source": [
+        3,
+        5
+      ],
+      "target": [
+        3,
+        5
+      ],
+      "component_degrees": [
+        6,
+        12
+      ],
+      "cusp_difference_degree": 60,
+      "jacobian_degree": 0,
+      "slope": "4",
+      "defect": "32",
+      "jacobian_lower_bound_sharp": false,
+      "control": "mixed automorphism"
+    },
+    {
+      "algebraically_independent": true,
+      "source": [
+        3,
+        5
+      ],
+      "target": [
+        3,
+        5
+      ],
+      "component_degrees": [
+        5,
+        3
+      ],
+      "cusp_difference_degree": 7,
+      "jacobian_degree": 0,
+      "slope": "1",
+      "defect": "0",
+      "jacobian_lower_bound_sharp": true,
+      "control": "matched scaling"
+    },
+    {
+      "algebraically_independent": true,
+      "source": [
+        3,
+        5
+      ],
+      "target": [
+        3,
+        5
+      ],
+      "component_degrees": [
+        5,
+        3
+      ],
+      "cusp_difference_degree": 15,
+      "jacobian_degree": 0,
+      "slope": "1",
+      "defect": "8",
+      "jacobian_lower_bound_sharp": false,
+      "control": "unmatched scaling"
+    },
+    {
+      "algebraically_independent": true,
+      "source": [
+        3,
+        5
+      ],
+      "target": [
+        3,
+        5
+      ],
+      "component_degrees": [
+        15,
+        9
+      ],
+      "cusp_difference_degree": 37,
+      "jacobian_degree": 16,
+      "slope": "3",
+      "defect": "16",
+      "jacobian_lower_bound_sharp": true,
+      "control": "power n=3"
+    },
+    {
+      "algebraically_independent": true,
+      "source": [
+        3,
+        5
+      ],
+      "target": [
+        5,
+        3
+      ],
+      "component_degrees": [
+        5,
+        3
+      ],
+      "cusp_difference_degree": 25,
+      "jacobian_degree": 0,
+      "slope": "5/3",
+      "defect": "40/3",
+      "jacobian_lower_bound_sharp": false,
+      "control": "identity"
+    },
+    {
+      "algebraically_independent": true,
+      "source": [
+        3,
+        5
+      ],
+      "target": [
+        5,
+        3
+      ],
+      "component_degrees": [
+        3,
+        5
+      ],
+      "cusp_difference_degree": 7,
+      "jacobian_degree": 0,
+      "slope": "1",
+      "defect": "0",
+      "jacobian_lower_bound_sharp": true,
+      "control": "swap"
+    },
+    {
+      "algebraically_independent": true,
+      "source": [
+        3,
+        5
+      ],
+      "target": [
+        5,
+        3
+      ],
+      "component_degrees": [
+        5,
+        3
+      ],
+      "cusp_difference_degree": 25,
+      "jacobian_degree": 0,
+      "slope": "5/3",
+      "defect": "40/3",
+      "jacobian_lower_bound_sharp": false,
+      "control": "translation"
+    },
+    {
+      "algebraically_independent": true,
+      "source": [
+        3,
+        5
+      ],
+      "target": [
+        5,
+        3
+      ],
+      "component_degrees": [
+        6,
+        3
+      ],
+      "cusp_difference_degree": 30,
+      "jacobian_degree": 0,
+      "slope": "2",
+      "defect": "16",
+      "jacobian_lower_bound_sharp": false,
+      "control": "x shear"
+    },
+    {
+      "algebraically_independent": true,
+      "source": [
+        3,
+        5
+      ],
+      "target": [
+        5,
+        3
+      ],
+      "component_degrees": [
+        5,
+        10
+      ],
+      "cusp_difference_degree": 30,
+      "jacobian_degree": 0,
+      "slope": "2",
+      "defect": "16",
+      "jacobian_lower_bound_sharp": false,
+      "control": "y shear"
+    },
+    {
+      "algebraically_independent": true,
+      "source": [
+        3,
+        5
+      ],
+      "target": [
+        5,
+        3
+      ],
+      "component_degrees": [
+        6,
+        12
+      ],
+      "cusp_difference_degree": 36,
+      "jacobian_degree": 0,
+      "slope": "12/5",
+      "defect": "96/5",
+      "jacobian_lower_bound_sharp": false,
+      "control": "mixed automorphism"
+    },
+    {
+      "algebraically_independent": true,
+      "source": [
+        3,
+        5
+      ],
+      "target": [
+        5,
+        3
+      ],
+      "component_degrees": [
+        5,
+        3
+      ],
+      "cusp_difference_degree": 25,
+      "jacobian_degree": 0,
+      "slope": "5/3",
+      "defect": "40/3",
+      "jacobian_lower_bound_sharp": false,
+      "control": "matched scaling"
+    },
+    {
+      "algebraically_independent": true,
+      "source": [
+        3,
+        5
+      ],
+      "target": [
+        5,
+        3
+      ],
+      "component_degrees": [
+        5,
+        3
+      ],
+      "cusp_difference_degree": 25,
+      "jacobian_degree": 0,
+      "slope": "5/3",
+      "defect": "40/3",
+      "jacobian_lower_bound_sharp": false,
+      "control": "unmatched scaling"
+    },
+    {
+      "algebraically_independent": true,
+      "source": [
+        3,
+        5
+      ],
+      "target": [
+        5,
+        3
+      ],
+      "component_degrees": [
+        15,
+        9
+      ],
+      "cusp_difference_degree": 75,
+      "jacobian_degree": 16,
+      "slope": "5",
+      "defect": "40",
+      "jacobian_lower_bound_sharp": false,
+      "control": "power n=3"
+    }
+  ],
+  "graded_controls": [
+    {
+      "source": [
+        2,
+        5
+      ],
+      "target": [
+        2,
+        5
+      ],
+      "scale": 3,
+      "graded_degrees": [
+        15,
+        6,
+        9
+      ],
+      "polynomial_Keller_lift_with_this_scaling": "excluded by written theorem"
+    },
+    {
+      "source": [
+        2,
+        5
+      ],
+      "target": [
+        2,
+        3
+      ],
+      "scale": 5,
+      "graded_degrees": [
+        15,
+        10,
+        5
+      ],
+      "polynomial_Keller_lift_with_this_scaling": "excluded by written theorem"
+    },
+    {
+      "source": [
+        2,
+        5
+      ],
+      "target": [
+        5,
+        3
+      ],
+      "scale": 65,
+      "graded_degrees": [
+        195,
+        325,
+        455
+      ],
+      "polynomial_Keller_lift_with_this_scaling": "excluded by written theorem"
+    }
+  ],
+  "f2_support_envelopes": [
+    {
+      "total_degree_cap": 75,
+      "band_cap": 15,
+      "lattice_points": 706,
+      "maximum": 195,
+      "unique_vertex": [
+        15,
+        60
+      ]
+    },
+    {
+      "total_degree_cap": 125,
+      "band_cap": 25,
+      "lattice_points": 1901,
+      "maximum": 325,
+      "unique_vertex": [
+        25,
+        100
+      ]
+    }
+  ],
+  "proof_boundary": "Universal proofs are written; finite controls are not exhaustive Keller searches.",
+  "source_commit": "15dcad7b1e65e8cb3d39e9aaac1d4c44063ec4fc",
+  "source_sha256": "1649d934ebede5d1e4040442772dfdfd1788d99fe5d5173b7651dcc80705ce4b",
+  "files": {
+    "PROOF.md": "443043527b340cd809ca8c1569f48f8f28c1d7fe611442b3b41a81754999d989",
+    "verify.py": "19b6964e33f73148bbc0d976e5a7240706c17a46a3cad3af2ee8e270330d7082",
+    "sources/manifest.json": "9fa605fb1a54462a813ddce2dacbde825d12e5f629ea1688213d3f07310aaa25",
+    "sources/uniform-cusp-filtration.md": "1649d934ebede5d1e4040442772dfdfd1788d99fe5d5173b7651dcc80705ce4b"
+  },
+  "support_source_files": {
+    "foundations/plane-jc/F2_75_125_DERIVATION.md": "5afa29ca91526409fa7e62103f5c1fe8179414564d3c55845574b80ae1299640",
+    "foundations/plane-jc/F2_75_125_CARRIER_WRONSKIAN_CLASSIFIER.md": "1fc2aa96627668884f26392e41a5b5685c1664934e372404e403bb271f31252e",
+    "foundations/plane-jc/cas/classify_f2_75_125_layers.py": "93175a9e73d6e126e8eb21840435249768d805d92c7759c481612ea6856bf751"
+  },
+  "python": "3.12.3",
+  "elapsed_seconds": 0.0441
+}

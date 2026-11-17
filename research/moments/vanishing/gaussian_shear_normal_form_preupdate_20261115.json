@@ -1,0 +1,53 @@
+{
+  "date": "2026-11-15",
+  "previous_goal_turn_classification": "progress:all-degree resolvent and weakly one-sided affine neutral-face classification,including the complete h(0,T)=0 branch,eventual vanishing and sharp mixed cutoff",
+  "previous_handoff": "neutral_face_progress",
+  "open_problem_before": {
+    "id": "OP-MV-ALL-DEGREE",
+    "kind": "open_problem",
+    "state": "open",
+    "title": "All-degree Gaussian structure and valid vanishing transfers",
+    "scope": "Classify exceptional balanced-support pure-null coefficient loci within precisely stated architectures, separating GMC-safe Gaussian conjugacies from persistent mixed failures; identify hypotheses controlling incomparable radial degrees, independently audit reusable analytic period/seed transfers, and prove valid lower-order transfers or whole-architecture obstructions preserving dimension, differential order, harmonicity and rank-one/separability. GMCDEGREEBARRIER20261115 excludes degree-independent finite pure tests and degree-free mixed constants; GMCSUPPORT20261115 closes support-universal and generic nullity. Neither closes the specialized exceptional locus. General GMC is already false in dimension3 from degree4; do not seek a false unrestricted theorem. FWT1/PSMT1 retain one radial variable; G3AFFINEW20261114 is a complete all-degree architecture; GWNONSING20261114 remains independently unreviewed analytically. DVG1/DVG4/SIC2C4 retain exact operator-order and separability boundaries. User priority is structural progress across degrees and dimensions; further fixed-cubic numeric refinements are secondary. The qualitative cubic theorem remains internally closed; its least-prefix and assurance questions remain separately open. MVLOGCURVE20261115 supplies an internal all-degree logarithmic curve-period criterion: arbitrary rational phase and finitely many moving punctures on P1,full logarithmic form with bounded residues and decaying normalization; also arbitrary-genus finite covers when both phase and form descend. The seed-submodule bridge passes its scope audit with local analytic rather than global rational extension. Analytic action-filtration/growth remains independently unreviewed. Next seek exact Gaussian eliminations meeting this criterion; no new GMC family or cubic numeric change is claimed. GWSQUAREFREE20261115 now applies the logarithmic criterion to a new Gaussian architecture in every degree: P=W*(a(Z)+b(Z)*T)+G(Z,T) has no pure-null members when b is nonconstant squarefree,with arbitrary a,G. All b(0)/a(0) faces,including the removed formal g0 component,are covered. The remaining linear-T boundary is b constant or repeated-root;both have safe pure-null examples and cannot be excluded wholesale. The analytic dependency remains internally written and independently unreviewed;numeric cubic bounds are unchanged. MVRESOLVENT20261115 proves polynomiality of E exp(tr)/(1-tH) only for H=r=0,using decaying moving residues for nonconstant H and retained univariate nullity for constant H. GMCNEUTRALFACE20261115 completely classifies arbitrary-degree weakly one-sided angular supports with neutral part ZW H(T)+r(T):eventual pure vanishing iff the neutral face vanishes,with sharp mixed cutoff m>deg Q. In particular the entire h(0,T)=0 W-linear branch is closed:Z^2 divides h and Z divides G are necessary and sufficient. Do not reopen those completed arbitrary-degree subcases. Remaining linear-T constant/repeated-root branches require h(0,T) nonzero;higher neutral radial degree and genuinely mixed-sign supports remain. Analytic review and operator-transfer boundaries are unchanged.",
+    "canonical_source": "moments/vanishing/ALL_DEGREE_STRUCTURE_AND_BARRIERS.md",
+    "dependencies": [
+      "GMCDEGREEBARRIER20261115",
+      "GMCSUPPORT20261115",
+      "G3AFFINEW20261114",
+      "G3SHEARCUTOFF20261114",
+      "GWNONSING20261114",
+      "FWT1",
+      "PSMT1",
+      "DVG1",
+      "DVG4",
+      "SIC2C4",
+      "MVLOGCURVE20261115",
+      "GWSQUAREFREE20261115",
+      "MVRESOLVENT20261115",
+      "GMCNEUTRALFACE20261115"
+    ],
+    "checker": null,
+    "proof_type": "not-applicable",
+    "independent_replay": false,
+    "formal_verification": false,
+    "external_review": false,
+    "artifact_hash": null,
+    "software_lock": [],
+    "supersedes": [],
+    "closes_problems": [],
+    "narrows_problems": [],
+    "consumers": [],
+    "invalidates_assumptions": [],
+    "replaced_by": [],
+    "priority": "primary",
+    "programme_status": "archived"
+  },
+  "retained_proof_hashes": {
+    "NEUTRAL_FACE_ALL_DEGREE_CLASSIFICATION.md": "a523751fa58617589e5b611243dcba5d21ac0d255583e85c774af03bdee9d8fb",
+    "neutral_face_source_audit.json": "41d9b0835d60801b44ecdde937e942757297ef9967e1b1d37e32eb38f849787a",
+    "SQUAREFREE_LINEAR_T_ALL_DEGREE.md": "803fc7c409c3713107d301c3c105d9f209ff07194efae4f0d1b14e13d5e1056a",
+    "LOGARITHMIC_CURVE_PERIOD_CRITERION.md": "c30318b771f2f91175a1c922ab197217d18b7fab124e4376b08ad513af40ffa2",
+    "CUBIC_AFFINE_W_CLASSIFICATION.md": "86e82cb0acbb0ff8cbb87c448f36e742317765eaf841903d3b5393160a920218",
+    "RANK_ONE_TWO_BRANCH_GLOBAL94.md": "170efb4905b486a695e4924e4c4dbdeb67df8dd48c7f1e4f519dd5259743f989",
+    "ALL_DEGREE_STRUCTURE_AND_BARRIERS.md": "f6c93353723419d9e308f2ae1d1bc7da8264f15040f8e13bc2ee366cdfac4625"
+  }
+}

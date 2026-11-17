@@ -1,0 +1,59 @@
+{
+  "schema_version": 1,
+  "purpose": "Classical Schur, cubic normal-form and etale-differential inputs, plus retained norm-torus and finite-factor proofs. No priority certificate.",
+  "local_sources": [
+    {
+      "path": "jacobian/universal-keller-homogeneous-receivers/PROOF.md",
+      "locator": "UAHOMOCOST1 central extension, UAUNIVMON1 split-fibre lemma and quotient twisting.",
+      "sha256": "d662fff15dd2c11ed34495df5d75ef072b91a8fee74b2a4d4a768365bceec37a"
+    },
+    {
+      "path": "jacobian/universal-keller-torus-receivers/PROOF.md",
+      "locator": "UAFINATOM1; UATORUSSTABLE1 vertical rule; UATORUSSYM1 norm torus and coprime cancellation.",
+      "sha256": "2f71f561ae8a687ab8a27a13027bb097c45dc14862ae315bb2a49efff72f29a3"
+    },
+    {
+      "path": "jacobian/universal-keller-homogeneous-receivers/sources/stacks-07S5.html",
+      "locator": "Free finite-group affine quotient torsors.",
+      "sha256": "3412567bd4ee9df6a6d8e518ea86526b4bfff1d86859ac98786ff3df9777c7f4"
+    },
+    {
+      "path": "jacobian/universal-keller-homogeneous-receivers/sources/stacks-0BND.html",
+      "locator": "Finite covers and fundamental groups.",
+      "sha256": "d3dbcedeef103a7cbe871e48d83d5c686c1992e5c124e62c639f6d8f16101ed5"
+    },
+    {
+      "path": "jacobian/universal-keller-torus-receivers/sources/stacks-hilbert90.html",
+      "locator": "Hilbert90 over fields and finite etale algebras.",
+      "sha256": "347dee5eadca61f15eed5c66b9a57dd1d8898479251214d97dd1281bfa21491e"
+    },
+    {
+      "path": "jacobian/universal-keller-homogeneous-receivers/verify.py",
+      "locator": "Reuse the pure exact finite-field and finite-permutation helpers; the new controls use primes5,7 and extension degrees<=4.",
+      "sha256": "fc8f97b09967dab6f25e86ad629d07387500ac489a3965130ac0802aeaa876fe"
+    }
+  ],
+  "external_sources": [
+    {
+      "path": "sources/yadav-schur-1011.2083v4.html",
+      "url": "https://arxiv.org/html/1011.2083v4",
+      "locator": "Abstract and introduction: Schur theorem and its scope.",
+      "bytes": 298937,
+      "sha256": "eaf2efe69eb951d3271d38c76402b94ac8cfcd2b77411f18370de15bc19b6f3d"
+    },
+    {
+      "path": "sources/marques-ward-cubic-1703.06219v3.html",
+      "url": "https://arxiv.org/html/1703.06219v3",
+      "locator": "Theorem1.2, proof and Corollary1.3; used for cubic fields outside characteristic3.",
+      "bytes": 2069645,
+      "sha256": "ca278490ce2bdad8473a07be9319f965686b83938d411f313eebefdab3e75c00"
+    },
+    {
+      "path": "sources/stacks-04CR.html",
+      "url": "https://stacks.math.columbia.edu/tag/04CR",
+      "locator": "Lemma76.7.1 proof and its cited37.9.9: etale differential pullback.",
+      "bytes": 33132,
+      "sha256": "64a70414ed1253b05160c186a66ac1c4c3ecd3477144752a07ceaaaf1e142e4a"
+    }
+  ]
+}

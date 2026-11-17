@@ -1,0 +1,22 @@
+{
+  "status": "unrelated-global-errors",
+  "checks": [
+    {
+      "command": [
+        "research/scripts/render_status.py"
+      ],
+      "exit_code": 1,
+      "last_message": "AssertionError: KDSQ6: missing document consumer artifacts/generated-results/README.md"
+    },
+    {
+      "command": [
+        "research/scripts/research.py",
+        "render"
+      ],
+      "exit_code": 1,
+      "last_message": "Historical navigation output omitted during repository reorganization."
+    }
+  ],
+  "math_status_sha256": "0941e34be86fd47c01673bba70a6dd380aa2a98ffc24091c87e2e42bcf08d006",
+  "scope": "Navigation only. Unrelated missing artifacts are not reconstructed."
+}

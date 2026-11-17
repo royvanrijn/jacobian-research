@@ -1,0 +1,12 @@
+load "/home/royvanrijn/src/jacobian-research/research/moments/vanishing/gaussian_family_core.m2";
+W=QQ[x0,t,c0,dx0,dt,dc0,WeylAlgebra=>{x0=>dx0,t=>dt,c0=>dc0}];
+P=sub(0,W);
+I=ideal(dx0+((1)*x0)-t*diff(x0,P),dt-P,dc0-t*diff(c0,P));
+if not isHolonomic(W^1/I) then error "exponential source not holonomic";
+M=gQuotient Dintegration(0,I,{1,0,0});
+stdio << "SOURCE_PRESENTATION|" << toString presentation M << endl;
+B=QQ[c0];
+parameterIdeal=ideal matrix(B,{{0_B}});
+R=gFamilySafeIdeal(M,B,parameterIdeal);
+stdio << "RESULT_JSON|" << toJSON R << endl;
+print("GAUSSIAN_FAMILY_COMPLETE");exit 0;

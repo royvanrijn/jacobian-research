@@ -1,0 +1,92 @@
+{
+  "date": "2026-11-16",
+  "new_claims": [
+    "GVCFORMALALLRING20261116"
+  ],
+  "new_lesson": "METHOD-GVC-FORMAL-ALLRING-CONSTRUCTIBLE-DESCENT-20261116",
+  "retained_lessons_updated": [
+    "METHOD-GVC-OPERATOR-TAIL-SAFETY-20261115",
+    "METHOD-GVC-FORMAL-BINARY-ENVELOPES-AND-ORDINARY-SEEDS-20261116",
+    "METHOD-GVC-ALGEBRAIC-FORMAL-DIAGONALS-AND-UNIT-INVARIANCE-20261116",
+    "METHOD-GVC-EXACT-JOINT-SOURCE-ALGEBRAICITY-BOUNDARY-20261116",
+    "METHOD-GVC-FORMAL-SHIFTS-AND-APOLAR-NILPOTENCE-GAP-20261116",
+    "METHOD-GVC-PAIRED-RECOMPOSITION-AND-EXACT-HEIGHT-SLOPES-20261116",
+    "METHOD-GVC-HEIGHT-CONVOLUTION-AND-FALSE-FINITE-GAPS-20261116",
+    "METHOD-GVC-PHASE-POWER-ANNIHILATOR-QUOTIENTS-20261116",
+    "METHOD-GVC-PRIME-INDEX-DRIFT-AND-ARITHMETIC-MODELS-20261116",
+    "METHOD-GVC-OPTIMAL-PRIME-DIVISIBILITY-AND-CARRY-INTERACTION-20261116",
+    "METHOD-GVC-MONOMIAL-APOLAR-NEWTON-CUTOFFS-20261116",
+    "METHOD-MV-SCALAR-FORMAL-TIME-EQUATIONS-AND-ACTUAL-GAPS-20261116",
+    "METHOD-GVC-LINEAR-SUSPENSION-AND-ACTUAL-NESTING-20261116",
+    "METHOD-GVC-UNMODIFIED-REVERSED-SOURCE-FINITENESS-FAILURE-20261116",
+    "METHOD-GVC-FIXED-IDEAL-TOPOLOGY-ADOPTION-20261116",
+    "METHOD-GVC-GENERIC-BERNSTEIN-ACTUAL-GAP-CLOSURE-20261116"
+  ],
+  "canonical_proof": "moments/vanishing/FORMAL_SAFETY_OVER_ALL_COEFFICIENT_RINGS.md",
+  "canonical_proof_sha256": "3b8cd0768af6fedf4e312cca06ccf1cb919ae2ba1c7acca7358215e3142b738e",
+  "checker": "moments/vanishing/verify_formal_ring_descent.py",
+  "checker_sha256": "fa80f3afb9963687879c45f66915d23292fabb14e8f698e40750327fb20ccc45",
+  "receipt": "moments/vanishing/formal_ring_descent_verification.json",
+  "receipt_sha256": "6a67a29924343611b1b0cb530902c5622360fc9c76aaa91bf780d191fff01beb",
+  "preupdate": "moments/vanishing/formal_ring_descent_preupdate_20261116.json",
+  "primary_scope_audit": [
+    {
+      "tag": "0901",
+      "url": "https://stacks.math.columbia.edu/tag/0901",
+      "retained_file": "moments/vanishing/sources/stacks_0901_formal_ring_descent_20261116.html",
+      "sha256": "7bf77ec9f85b7e08861e8d03cc6c48d89f6119390573565446d1b4ddcee49937",
+      "bytes": 24141
+    },
+    {
+      "tag": "08YF",
+      "url": "https://stacks.math.columbia.edu/tag/08YF",
+      "retained_file": "moments/vanishing/sources/stacks_08YF_formal_ring_descent_20261116.html",
+      "sha256": "aa7bb803799ab28f621f73b6eeac11bb8340d51c40c86e837d28784e590dfca4",
+      "bytes": 42168
+    },
+    {
+      "tag": "00F5",
+      "url": "https://stacks.math.columbia.edu/tag/00F5",
+      "retained_file": "moments/vanishing/sources/stacks_00F5_formal_ring_descent_20261116.html",
+      "sha256": "5021b82e470b771e0bdd0526065ad4836eed82965ab4b4d39a4cb47ba171b7e1",
+      "bytes": 33225
+    }
+  ],
+  "primary_read_scope": "Stacks08YF definition of constructible topology and Lemma5.23.2 proof,Stacks0901 full lemma/proof,Stacks00F5 Lemmas10.29.1-10.29.3. These apply to arbitrary spectra,not just Noetherian ones. V(I) for finitely generated I is constructible clopen.",
+  "retained_proofs_reused": [
+    "GVCFORMALALLLINEAR20261116 full field proof re-read",
+    "GVCJETCERT20261115/GVCHIGHTAIL20261115 full finite-jet and two-inequality proofs re-read",
+    "MVPOWERALIGN20261115 direct coefficient identity and regular-ring symbolic comparison proof re-read",
+    "MVNILPOTENTSCALE20261115 scope and DVG all-index identities retained"
+  ],
+  "proof_audit": {
+    "full_Q_algebra_scope": true,
+    "Noetherian_target_required": false,
+    "bounded_full_nilradical_required": false,
+    "affine_intercept_carried_through_derivatives": true,
+    "affine_tail_estimate_proved": true,
+    "coefficient_power_comparison_only_in_finite_regular_parameter_ring": true,
+    "paired_finite_certificate_cover_proved": true,
+    "constructible_not_Zariski_open_cover": true,
+    "every_prime_required": true,
+    "nonzero_symbol_constant_included": true,
+    "no_formal_tensor_base_change_identity_assumed": true,
+    "no_allring_certificate_circularity": true,
+    "purity_required_only_to_remove_intercept": true,
+    "Artin_matrix_and_primary_decomposition_route_adopted": false
+  },
+  "exact_controls": {
+    "nilpotent_formal_jets": 4,
+    "nonzero_symbol_constant": 3,
+    "DVG_seed_transcriptions": 3,
+    "idempotent_branches": 3,
+    "affine_tails": 4,
+    "paired_reconstruction": 3
+  },
+  "mathematical_boundary": "One input-dependent affine bound for every formal eventual input over every Q-algebra;full purity yields a linear bound. Qualitative safety is reduced/prime-invariant. No universal numerical slope,full positive GVC or complete exceptional MZ decision.",
+  "protected_whole_records": 135,
+  "independent_replay": false,
+  "formal_verification": false,
+  "external_review": false,
+  "broader_goal": "active;both complete exceptional Haar MZ cases and remaining general structural/producer obligations remain open;external review/outreach deferred"
+}

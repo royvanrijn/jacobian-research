@@ -1,7 +1,0 @@
-{
-  "completed": false,
-  "returncode": 1,
-  "input_sha256": "7ee6274e6c3648f0fe3fba71f7fa60d0c407f2b997a82931daf2f45bb280dcbc",
-  "stdout": "",
-  "stderr": "Traceback (most recent call last):\n  File \"/home/royvanrijn/src/jacobian-research/research/jacobian-followup/moment-vanishing-audit/verify_conic_completed_row_factors.py\", line 154, in <module>\n    if __name__=='__main__':main()\n                            ^^^^^^\n  File \"/home/royvanrijn/src/jacobian-research/research/jacobian-followup/moment-vanishing-audit/verify_conic_completed_row_factors.py\", line 137, in main\n    start=time.monotonic();sources=universal_p2q2();cases=arithmetic();replays=[]\n                                                          ^^^^^^^^^^^^\n  File \"/home/royvanrijn/src/jacobian-research/research/jacobian-followup/moment-vanishing-audit/verify_conic_completed_row_factors.py\", line 50, in arithmetic\n    assert max(z['gate'] for z in rows if z['p']==2 and z['q']==3)==95\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError\n"
-}

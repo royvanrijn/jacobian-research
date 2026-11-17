@@ -1,0 +1,62 @@
+{
+  "date": "2026-11-16",
+  "canonical_proof": "moments/vanishing/LOGARITHMIC_JETS_AND_SPARSE_ALL_RING_SAFETY.md",
+  "proof_sha256": "4363280c1f346b62086d090f744367d317389a55455946ac30c55eb5ba298580",
+  "checker": "moments/vanishing/verify_haar_sparse.py",
+  "checker_sha256": "e8c5f26d517c94719eb603e3d62caa356c17e7fdcce1afce1a83dac76a7d9635",
+  "receipt": "moments/vanishing/haar_sparse_verification.json",
+  "receipt_sha256": "22b205b20869a60e403e59335fe80490492117a1cb9e10de5657e1f69abe7f20",
+  "repository_sources": [
+    {
+      "source": "moments/vanishing/GLOBAL_TORUS_BUNDLE_AND_UNIT_INVISIBLE_INFINITY_POLES.md",
+      "sha256": "5c2fc018ba7d0459176fabd20118ba646b6fbc5b707ae9017f52ac58e21eba63",
+      "use": "ENTIRE original phase/marker coverage,exact volume order A-1-2b-c,ALL mixed finitebase unitvolume regularity and retained safe-pole controls. New argument handles infinity through logarithmicderivations/Vandermonde."
+    },
+    {
+      "source": "moments/vanishing/CONSTANT_VOLUME_MODELS_AND_ACTUAL_MARKER_DEFECTS.md",
+      "sha256": "e6441776ebf5e8e21f7714f035a5e94940e2a972bade0516ba925b3368a1560c",
+      "use": "Valuative proper ORIGINAL-volume iff and finiteconstantvolumequotientdescent. No weightedHaartransport or automatic fullmarkedreplacement."
+    },
+    {
+      "source": "moments/vanishing/SEMISTABLE_LOG_PERIODS_AND_SINGLE_ISOTYPIC_SAFETY.md",
+      "sha256": "2d1c207085783207b425af26636fb05d0ebd07bdff3ac4ddd350c32056d52ae7",
+      "use": "Proper ORIGINAL-volume phase excludes eventualpurity in every degree and every nonconstant H;retained pinned KKMSD/Steenbrink imports."
+    },
+    {
+      "source": "moments/vanishing/VALUATIVE_BOUNDARY_VOLUMES_AND_TORUS_INVARIANT_CLOSURE.md",
+      "sha256": "42bab0af00fe9821dba3121de2a559f88711a0b79eb3ab4d3aad00a8b184dc78",
+      "use": "All-degree neutralradicalZERO,leadingrightbinaryrootorbit6/12 and infinitycoordinates;used forone-sidedfieldclassification."
+    },
+    {
+      "source": "moments/vanishing/NONSPHERICAL_PAIRS_AND_EXCEPTIONAL_SL2.md",
+      "sha256": "88895898edf9d6cb9973be9136bf6e8edbd51765b9db9b36ef4a4f7f0bb3a8ef",
+      "use": "Actual minimum invariantmatrixdegrees8/12;nonzerochargedcomponents leadingbinaryforminvariants."
+    },
+    {
+      "source": "moments/vanishing/INTRINSIC_REYNOLDS_AND_FINITE_QUOTIENT_DESCENT.md",
+      "sha256": "9bc929aaac70783649f09d6faa00e45c85ae25fd9f30e9a486ad3ab34be240a7",
+      "use": "Exact intrinsicHaar/marker transport underALLalgebraicautomorphisms,fornewfive/seven necessaryfailureweightbound."
+    },
+    {
+      "source": "moments/vanishing/WEIGHTED_TORUS_COVERS_AND_ALL_ZERO_WEIGHT_TRIPLES.md",
+      "sha256": "3644774f8c73c23c63eab95c91a04aee28254546da8a4b70205a29f8c13c8e43",
+      "use": "Previous zero-containingthreeweightclosure and allringnilpotentbalancedproductcontrols preserved. Newdirectcriterioncoverszero-free3and4/6supports."
+    }
+  ],
+  "primary_sources": [],
+  "primary_import_policy": "No new literature theorem imported. Logarithmic valuation-loss lemma,coefficientrootjet bound,simple-root strengthened logcoordinates,Vandermonde extraction,capacity theorem and allringcounting proved explicitly. Retained globalbundle/valuative/orbit/minimaldegree/projectiveperiod theorems used through canonical audits. Ordinary HilbertNullstellensatz/finitelygeneratednilradical and torusweightselection standard inputs. No new lct/inversionadjunction theorem,deep literature audit or assurance promotion.",
+  "new_written_arguments": [
+    "ForALLdivisorialvaluationslogderivationsloseatmostSNC logdiscrepancy;iteratedcoefficientjetsboundh<=m*d;SIMPLErootimprovedlossd-h.",
+    "GeneralANY-support two-signcapacitycriterionexcludesALLfinitephasevolume poles andconstructs ORIGINAL propermodel,soALLnonconstantHnotpure.",
+    "ALLdegreesupport<=4 O/<=6 I closure,includingzero-free3;fieldclassificationp0one-sided;aftereveryautogenuinefailure>=5/7weights.",
+    "ForANYcoefficientring exactJ=I0+I+I- nilpotence iff eventualpurity;explicitALLmarkercutoff withordinarynilpotents/componentwiseorientation.",
+    "Forarbitrarysupportk,puremixedneedsONEENTIREchargedsidewithmatrixdegrees<3k O or<12k/5 I;wholephasedegreenotbounded."
+  ],
+  "essential_boundaries": [
+    "BOTHFULLMZcasesOPEN;newgeneralcapacityconditionnotexhaustive;largersupportsfailingitretainfullunitcouplingtarget.",
+    "No purefailure/newsearch/primitivepurityreflection/weightedHaartransfer/allmarkersholomorphicassumption.",
+    "CoefficientringnecessityviafiniteCsubalgebraNullstellensatz,NOTarbitraryringHodgebasechange;nilpotenceindexrequirescertificate.",
+    "FinitebaseunitvolumeextensionaloneNOTclaimedunitdirectionelimination;hereGLOBALoriginalvolumepropermodelexcludesmixedphaseitself.",
+    "Exactcontrolsnotmachineproofofallvaluationtheorem;reviewdeferred/Gaussianeffectivityseparate."
+  ]
+}

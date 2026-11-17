@@ -1,0 +1,89 @@
+{
+  "date": "2026-11-17",
+  "canonical_note": "../unpublished/mathieu-reductive-homogeneous-spaces/README.md",
+  "paper_source": "../unpublished/mathieu-reductive-homogeneous-spaces/main.tex",
+  "paper_source_sha256": "e1e045b4127e1b22b01bdc8755ca6a27637f2e8674fc22906d28545972704ddb",
+  "pdf_export": "unpublished/mathieu-reductive-homogeneous-spaces/exports/mathieu-reductive-homogeneous-spaces.pdf",
+  "pdf_sha256": "0db3e0826260ad1d9643d0cc6a6a2d92009812a3d61fdcd9865fb349f5751dc9",
+  "sources": [
+    {
+      "source": "../unpublished/mathieu-reductive-homogeneous-spaces/README.md",
+      "sha256": "dc6cc29acddae4480e280c15da77dceb595e0410eb7a5ee0a178437259bc994d"
+    },
+    {
+      "source": "../unpublished/mathieu-reductive-homogeneous-spaces/main.tex",
+      "sha256": "e1e045b4127e1b22b01bdc8755ca6a27637f2e8674fc22906d28545972704ddb"
+    },
+    {
+      "source": "../unpublished/mathieu-reductive-homogeneous-spaces/verify.py",
+      "sha256": "f0614b45d0551ec211b86429ac66123244280d981b7bba65b9ea65b654df141f"
+    },
+    {
+      "source": "../unpublished/mathieu-reductive-homogeneous-spaces/qa.json",
+      "sha256": "fa338a43b341b3f80d7f344320c24f178a3557b9ce103785e349ccdc9fbbc77e"
+    }
+  ],
+  "primary_sources": [
+    {
+      "source": "sources/duistermaat_vanderkallen_1998_20261117.pdf",
+      "sha256": "bb002d12b539a1ff3fdd099f343d3accd921ccf60f8a149f29b07cd0f7e87e1b",
+      "read_scope": "Printedpp221-222, general convex-hull statement explicitly read; classical torus theorem is stated as an input, not re-proved."
+    },
+    {
+      "source": "sources/long_spherical_pairs_e9edac2.tex",
+      "sha256": "934ad65de5ed4358fb33b29af15728ae86a1f7c5836e72050b00fc948c78df64",
+      "read_scope": "Structural line-doublet/root/subdirect arguments fully read and re-proved; special radial moment theorem is NOT assumed."
+    },
+    {
+      "source": "sources/molev_gelfand_tsetlin_2002v2_20261117.pdf",
+      "sha256": "0bc32869eef4d31c4700ed80b0feda574a737dee014ca5b59b68080c041391b8",
+      "read_scope": "PDF p10 Theorem2.1 and pp50-51 equation4.4/its parity convention read; two branching rules stated explicitly."
+    },
+    {
+      "source": "sources/flicker_sl2_2022.pdf",
+      "sha256": "c59aec448453dcaec1f0bb072d66be95ab671338b9a83e68f011969732ec11f1",
+      "read_scope": "Classical finite-subgroup classification, printedp215, retained primary source."
+    },
+    {
+      "source": "sources/achter_howe_cartier_2017_20261117.pdf",
+      "sha256": "3d6a312a6c30ef8aadd55acafe42e64a2b9f0c53bcda1c42aad8b7cc3f27576e",
+      "read_scope": "Cartier terminology/reference; coordinate independence and pullback rule proved directly in paper."
+    },
+    {
+      "source": "sources/sutherland_dirichlet_2021_20261117.pdf",
+      "sha256": "143fa624cb1dd51dc4852a831be24ee66c0670d405b7848191b12686ea2ae33b",
+      "read_scope": "Theorem18.1 for coprime prime progressions."
+    },
+    {
+      "source": "sources/rond_eisenstein_2024v2_20261117.pdf",
+      "sha256": "86850bfe38fc044fa56987e18162a94f20326e69f976b077598983d143f5fe7c",
+      "read_scope": "Eisenstein theorem context; finite-generation argument is proved in paper."
+    }
+  ],
+  "context_claims": {
+    "GMZALLREDUCTIVE20261117": "18bb85a851911ea7",
+    "GHAARRECOMPARITH20261117": "51eef0fc2545b2e6",
+    "GEXCEPTIONALFULLCOUNTER20261117": "c81c721fd539e80b"
+  },
+  "new_written_result": "Explicit all-order positive f4 radial identity and unified standalone construction",
+  "standard_inputs_declared": [
+    "Dirichlet prime progression theorem",
+    "Duistermaat--van der Kallen torus theorem",
+    "Matsushima affineness and basic reductive group structure",
+    "finite subgroups of SL2",
+    "two stated classical branching rules",
+    "valuation extension"
+  ],
+  "not_assumed": [
+    "special external radial moment identity",
+    "old Weyl-even normalizer circuit",
+    "boundary extension machinery",
+    "Gaussian exponential-to-ordinary transfer",
+    "earlier repository proof notes"
+  ],
+  "finite_checks_scope": "Printed polynomial identities and two beta normalizations only; not an all-degree theorem certificate.",
+  "independent_replay": false,
+  "formal_verification": false,
+  "external_review": false,
+  "external_review_deferred": true
+}

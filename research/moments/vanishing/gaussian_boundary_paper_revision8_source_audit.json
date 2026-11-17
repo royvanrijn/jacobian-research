@@ -1,0 +1,126 @@
+{
+  "date": "2026-11-17",
+  "revision": "REVISION8 ALL-DEGREE HYPERBOLIC SUSPENSION17November2026:38-page paper proves P=wxy+F(w)+k pure/safe-excluded for EVERY polynomial degree with F(0)=0,Fprime(0)!=0,full affine Gaussian AB!=0 and extra m!=0 only fordegF1. Every nonzero ORIGINAL marker is not finite exponential-polynomial. This includes an unbounded P-critical conic outside the previous gradP theorem. Full rankD+3 or5 is proved by UNIFORM complex coercivity and connected coefficient deformation BEFORE diagonal counting. Exact conic Laurent/Gaussian rank4,normal determinant-1,moving volume r^2,velocity divergence2/r,all isolated A_mu multiplicities and an invertible polynomial jet matrix give a complete formal frame. LinearF retains its nonzero quadratic-action escape. All ordinary critical conic/hyperbola rows now close by permutation,including every degree drop;only center-axis row h=e=f=0 remains in ORDINARY-UV,plus five other geometric families. Classical Pham rank input credited. No new mathematical checker,old replay,all-ring inference,novelty or assurance claim. Paper and broad goals ACTIVE.",
+  "new_claim": {
+    "id": "GGAUSSHYPER20261117",
+    "kind": "theorem",
+    "state": "proved",
+    "title": "All-degree Gaussian hyperbolic suspension exclusion with a complete critical-conic frame",
+    "scope": "Let P=wxy+F(w)+k over C,F polynomial of ANY degreeD>=1,F(0)=0,Fprime(0)=h!=0. Retain the FULL nondegenerate affine Gaussian q=(A*x^2+B*y^2+m*w^2+2Cxy+2Dxw+2Eyw)/2+means+constant,with AB!=0;require m!=0 ONLY when D=1. Then P is not pure,and EVERY original marked Gaussian period Phi_a is zero or is NOT a finite exponential-polynomial. In particular P is not safe. All means/cross terms,multiple roots of Fprime,coincident critical values and every original polynomial marker are retained. Generic top twisted rank isD+3 forD>=2,and5 forD=1. Written uniform complex gradient bound for tP-q on compact coefficient paths,connectedness of the explicit algebraic coefficient domain and conservation of gradient-intersection multiplicity justify a generic diagonal rank count;the count alone is not the proof. Pham tame Milnor decomposition is the credited classical rank input. The unbounded critical conic w=0,xy=-h gives FOUR fixed Laurent/Gaussian characters under y=(rV-h)/x,w=rU,r=t^-1/2. Restricted phase has nonzero quadratic poles at0 andinfinity;normal Gaussian determinant is-1 for every quadratic coefficient ofF. Four consecutive Laurent powers are a basis by explicit recurrence and independence. Perturbations have positive r order;exact volume r^2 and coordinate-velocity divergence2/r give spatial and time horizontality. Every original marker has conic values e^(kt)*r^2*C[[r]]. ForD>=2,the nonzero roots of Fprime give D-1 isolated A_mu characters,including all multiplicities. Polynomial Hermite jets at those roots and w=0 produce an invertible full-rank formal period matrix. ForD=1,the fifth character is an explicit escaping Gaussian with nonzero action h^2*t^2/(2m)+(k-h*ell_w/m)*t and volume t^-2;two rational polynomial cutoff families prove full rank5. After finite ramification every zero-exponential seed value for EVERY ORIGINAL marker has strictly positive order. The rational seed quotient and full-frame positive-order criterion exclude constant periods;constant-coefficient operator isolation within original markers and shiftingk exclude all finite exponential-polynomials. No actual-period realization or image-kernel computation is required. This domain has an unbounded P-critical conic and lies outside the previous gradP criterion. Applied by permutation,it closes ALL ordinary-node critical-conic and hyperbola rows with their cubic/quadratic/linear degree drops. Only ORDINARY-UV center-axis row h=e=f=0 remains open in the standalone paper,plus cusp,tangent,concurrent,double-line,triple-line. Formal valued-field argument for complex polynomials,not arbitrary all-ring or arbitrary nonconvergent family descent. No new mathematical checker,old replay,independent verification,external review or novelty claim.",
+    "canonical_source": "moments/vanishing/GAUSSIAN_HYPERBOLIC_SUSPENSION.tex",
+    "dependencies": [
+      "G3ORDINARYFINITE20261117",
+      "external: F.Pham,Asterisque130(1985),11-47,PartI Sections1-4,tame Milnor decomposition"
+    ],
+    "checker": null,
+    "proof_type": "hybrid",
+    "independent_replay": false,
+    "formal_verification": false,
+    "external_review": false,
+    "artifact_hash": null,
+    "software_lock": [
+      "moments/vanishing/GAUSSIAN_HYPERBOLIC_SUSPENSION.tex",
+      "../unpublished/gaussian-boundary/sources/hyperbolic_primary_manifest.json",
+      "../unpublished/gaussian-boundary/sources/pham_asterisque130_1985.pdf",
+      "moments/vanishing/gaussian_boundary_paper_revision8_source_audit.json",
+      "moments/vanishing/gaussian_boundary_paper_revision8_preupdate_20261117.json"
+    ],
+    "supersedes": [],
+    "closes_problems": [],
+    "narrows_problems": [
+      "OP-MV-ALL-DEGREE"
+    ],
+    "consumers": [],
+    "invalidates_assumptions": [],
+    "replaced_by": [],
+    "priority": "derived",
+    "programme_status": "archived"
+  },
+  "canonical_proof_sha256": "5a45e696f39318682858958e375525a5ad4684f6c36500b965fe723ee01cf950",
+  "proof_mode": "Written all-degree suspension rank,deformation,conic and local-character argument with precise classical tame rank input;no new mathematical checker or assurance promotion.",
+  "old_whole_records_unchanged": true,
+  "mutable_draft_files_snapshot_sha256": {
+    "../unpublished/gaussian-boundary/manuscript.tex": "1755e073576f766e85d3872c96dbaead3a396865818fdf89096c0f192b434592",
+    "../unpublished/gaussian-boundary/manuscript.pdf": "c693d51e785ad8f8e44445a730891786435711fcb1ba1fd18c0c6761600f1c6d",
+    "../unpublished/gaussian-boundary/formal_lemmas.tex": "f7a547f2a57a3fe1e3d8c486ed7c1e7a2e044ef16f16f865f5eb44762a114b30",
+    "../unpublished/gaussian-boundary/polynomial_stationary_balls.tex": "973febc74a96afc9224a9ab8cc3eded859a9a884e1b3f016cc954f5b73165f46",
+    "../unpublished/gaussian-boundary/punctured_polynomial_frames.tex": "2d325f97719e47fb7865d200b773511808ce08ad836b8a6b4fb5259d524f1d55",
+    "../unpublished/gaussian-boundary/mixed_formal_exclusion.tex": "db2690329669c03a8ac3549da70ba4d4766db96ae7bffc618cf6d9ca00e99d13",
+    "../unpublished/gaussian-boundary/analytic_core.tex": "15169a58b30655d633a61a4a66ccda194effb1d8c5eb8308c88561d57b2c67ba",
+    "../unpublished/gaussian-boundary/laurent_logarithmic_bound.tex": "fdedd048f21c947935f40785fbbc24536173e39309b820f968deb35ecba5e6a6",
+    "../unpublished/gaussian-boundary/gradient_exclusion.tex": "476109105e47841add12c6b9157853566bfe4801a4e7cb0d6b5a394365aff4ca",
+    "../unpublished/gaussian-boundary/ordinary_finite_exclusion.tex": "3336feac289628368a200d11ee2e610f3e32031fcdad141c3000d20e3a47d4ad",
+    "../unpublished/gaussian-boundary/hyperbolic_suspension.tex": "b9ab71326fa699dc1b4e9cc188f04a410394c9b912b9d3caf88aa72d47a1ca83",
+    "../unpublished/gaussian-boundary/frame_extraction_case_audit.json": "7c05c5b982f227404a27f41e8acc2b9b246d3490e707a4b0fca16ad82583b005",
+    "../unpublished/gaussian-boundary/resolved_laurent_written_audit.json": "e699f57baa407990f85cfc582727e966e4388744f1941320c99dd45ac27eb002",
+    "../unpublished/gaussian-boundary/proof_audit.json": "4559304e5482f5ed374b4eaba655b73041858d2b3fef0078891dd042f61dcb8b",
+    "../unpublished/gaussian-boundary/paper_goal.json": "7663b821371ef9efdcfc001e040dddf90f273bc63db76f5e4037c5d896b1fca2",
+    "../unpublished/gaussian-boundary/adversarial_audit.json": "f062b34465f93146cc513e31c3b43e838c4fd1efd5697135b6975715a1024991",
+    "../unpublished/gaussian-boundary/literature_audit.json": "1dcec857307a13639437ed4b6fbaf6277dc6885d6879a324ecc996c1bbcd4884",
+    "../unpublished/gaussian-boundary/pdf_quality_check.json": "7aee96cf94be98287588bb8bc0168fb70754996415a7957de0de9be8e3d548f8",
+    "../unpublished/gaussian-boundary/check_stationary_ball_controls.py": "5d4dd147915ae0748b88d82b7a53e8836620f9aa692f6eebcf32d497bac151d6",
+    "../unpublished/gaussian-boundary/stationary_ball_controls.json": "41fe862668b0af5c3df72ff86d91ff6fd3aebd9e32b522b302a560b23e35b32f",
+    "../unpublished/gaussian-boundary/check_punctured_controls.py": "6f306c21e23d59f408b1b405d34f35cac0bed009c785a0cc6160dd0a5d029f88",
+    "../unpublished/gaussian-boundary/punctured_controls.json": "61fffbb94e24939171eeffb56ee029557a943628c52fdc423ebd61bae91c1c84"
+  },
+  "mutable_policy": "Working paper files remain editable;v008 snapshot retained separately. New standalone canonical proof and all old sealed proof packets immutable.",
+  "new_primary_sources": {
+    "date": "2026-11-17",
+    "primary_sources": [
+      {
+        "author": "Pham",
+        "url": "https://numdam.org/item/AST_1985__130__11_0.pdf",
+        "cached_file": "pham_asterisque130_1985.pdf",
+        "sha256": "cecb8446d30b17fee23ea0c1e3073fcdeb6918aa271a75524b23b3f6e8b361fd",
+        "locations": [
+          "PartI Sections1-4"
+        ],
+        "application": "Full rank equals total isolated critical Milnor number under explicit complex gradient coercivity. The new proof establishes uniformity over compact coefficient paths before a generic count."
+      }
+    ],
+    "classical_mechanisms": [
+      "Gaussian integration by parts and stationary phase",
+      "One-variable power-phase characters",
+      "Laurent logarithmic twisted quotient",
+      "Conservation of local gradient-intersection multiplicity"
+    ],
+    "new_written_scope": "Every polynomial degree in F for P=wxy+F(w)+k under explicit AB/Fprime(0) conditions;full Gaussian retained. Valued-field formal frame,not all-ring statement.",
+    "assurance": {
+      "new_mathematical_checker_run": false,
+      "independent_replay": false,
+      "formal_verification": false,
+      "external_review": false,
+      "novelty_assessed": false
+    }
+  },
+  "protected_prior_whole_records": 215,
+  "retained_proof_files": 381,
+  "retained_example_counts": [
+    211,
+    11,
+    37
+  ],
+  "paper_pages": 38,
+  "standalone_paper_complete": false,
+  "submission_ready": false,
+  "closed_paper_obligations": [
+    "PAPER-B-R",
+    "PAPER-B-L"
+  ],
+  "partially_closed_paper_obligations": {
+    "PAPER-A": "Smooth,finite-critical and conic/hyperbola ordinary members proved;only center axes and five other families open."
+  },
+  "remaining_paper_obligations": [
+    "PAPER-A"
+  ],
+  "nonconvergent_formal_coefficients": false,
+  "arbitrary_ring_statement": false,
+  "novelty_assessed": false,
+  "old_terminal_UNKNOWN_jobs_restarted": false,
+  "old_sealed_checkers_replayed": false,
+  "actual_image_kernel_computed": false,
+  "independent_replay": false,
+  "formal_verification": false,
+  "external_review": false,
+  "broader_goal_status": "active"
+}

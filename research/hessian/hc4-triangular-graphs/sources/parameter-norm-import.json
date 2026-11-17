@@ -1,0 +1,155 @@
+{
+  "review_date": "2026-11-15",
+  "title": "Parameter-cover norms, integral critical values and the whole polynomial output class",
+  "retained_primary_inputs": [
+    {
+      "url": "https://arxiv.org/html/1411.5011v2",
+      "retained_file": "jelonek-lason-nonproper-1411.5011v2.html",
+      "sha256": "7a00a58a0d03ca9a24dfebbb9b7c25bae2c5ac0087d472614f873c2d9b968714",
+      "title": "Quantitative properties of the non-properness set of a polynomial map",
+      "authors": [
+        "Zbigniew Jelonek",
+        "Michal Lason"
+      ],
+      "version": "arXiv:1411.5011v2",
+      "role": "Explicit proof input: Definition 2.1, Proposition 2.2, Definition 2.3, and Theorem 3.2. For a generically finite polynomial map from complex affine space, its nonproperness set is covered by nonconstant polynomial images of A1. Only this qualitative conclusion is used, not the degree bound."
+    },
+    {
+      "url": "https://stacks.math.columbia.edu/tag/0BSD",
+      "retained_file": "stacks-monic-inertia-0BSD.html",
+      "sha256": "cd127a5a3b7d2b586600d03cc2a810bf400af445f77fb9d1248aa55f41082253",
+      "role": "Section 58.13, inertia definition, Lemmas 58.13.1-2, Example 58.13.3 and Lemma 58.13.4: inertia kernels describe the unramified quotient; for a regular base codimension-one inertia suffices by purity."
+    },
+    {
+      "url": "https://stacks.math.columbia.edu/tag/0BMB",
+      "retained_file": "stacks-monic-purity-0BMB.html",
+      "sha256": "37a491b9ddf1fed9ccbc333dfd635731e6394e64c0d1d5a27a323a63b65e8585",
+      "role": "Retained purity for the finite normal quotient cover on the smooth regular target D times A^(n-1), after every actual divisorial inertia group is killed."
+    },
+    {
+      "url": "https://www.jmilne.org/math/CourseNotes/LECc.pdf",
+      "retained_file": "milne-finite-etale-covers-lec-2.21.pdf",
+      "sha256": "718182f1a55d3af6b71f0d2faa5836851fb8611f1d7276896e3d5affdf28697b",
+      "role": "Retained Milne v2.21 Theorem 3.4 full faithfulness, already imported in HC4MYIJ1: an algebraic section restriction of a finite etale cover on D times affine space and its pullback have a topological isomorphism which is algebraic. Both covers already exist algebraically; essential surjectivity is not used.",
+      "portions_inspected_this_turn": "Entire printed page 28 via the accessible primary PDF, including the theorem, its hypotheses and the following fundamental-group identification; also printed pages 27 and 29 for context."
+    },
+    {
+      "url": "https://arxiv.org/html/math/0608157v2",
+      "retained_file": "arzhantsev-petravchuk-closed-math-0608157v2.html",
+      "sha256": "8042645504f3535bae9ce6d656a68015b893dbf259888ca4708e69722d658cc9",
+      "role": "Retained Theorem 1(i) to (iii) and the HC4MYHX0 field argument: every Keller component f_1 gives a relatively algebraically closed C(f_1), preserving every finite parameter-cover group. No new statement from this source is imported."
+    },
+    {
+      "url": "https://stacks.math.columbia.edu/tag/025P",
+      "retained_file": "stacks-monic-normal-etale-025P.html",
+      "sha256": "3830cb8d28566941d9eb78bedcf40dffd2d8faddc70edfa6064053932ce869d0",
+      "role": "Proposition 41.19.7: normality is preserved by an etale local ring map. Used after etale Keller base change of a normal monogenic cover."
+    }
+  ],
+  "newly_cached_primary_inputs": [
+    {
+      "url": "https://stacks.math.columbia.edu/tag/01V4",
+      "retained_file": "stacks-parameter-smooth-01V4.html",
+      "role": "Smoothness is stable under composition and base change, Lemmas 29.35.4-5 in the inspected current page; local standard-smooth descriptions justify the nowhere-critical polynomial parameter morphism. This structural input makes the actual source base change smooth over C.",
+      "sha256": "4327b0dc32a5b7a4fc554e6587f0d622d978e306bba4d2783a8aade3704aa3da"
+    },
+    {
+      "url": "https://stacks.math.columbia.edu/tag/04QM",
+      "retained_file": "stacks-parameter-smooth-field-04QM.html",
+      "role": "Lemmas 33.25.3-4 and 33.25.8: smooth finite-type schemes over C are regular and normal, and regular finite-type complex curves are smooth. Used for the finite normal parameter curve and its smooth source base change.",
+      "sha256": "a2ca1cc791459393ec97ca9e1f48560723dcbec8822281f0338f5b58c72e8a4a"
+    },
+    {
+      "url": "https://stacks.math.columbia.edu/tag/0BD2",
+      "retained_file": "stacks-parameter-norm-0BD2.html",
+      "role": "Lemma 31.18.6: the finite locally free norm is the determinant of multiplication and commutes with base change. The proof note repeats this determinant construction and the unit implication in its finite-free situation; this is an explicit primary reference for the convention.",
+      "sha256": "c86c43774fb078989aef18f913ff4286d20afc7ec3939e22bdcb4dd88537619d"
+    },
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/3/3e/Another_elementary_proof_of_Luroth%27s_theorem-06.2004.pdf",
+      "retained_file": "bensimhoun-luroth-2004.pdf",
+      "title": "Another elementary proof of Luroth's theorem",
+      "author": "Michael Bensimhoun",
+      "version": "Jerusalem, 10 May 2004; retained two-page primary paper",
+      "role": "Explicit ordinary one-variable Luroth import: for any field k, a nonconstant intermediate field between k and k(z) is k(S) for rational S. Both pages of the primary theorem and proof were inspected. Only the theorem is imported; the unique-pole polynomial refinement is proved directly. No Ritt classification, indecomposable-group classification or multivariate Luroth theorem is imported.",
+      "sha256": "f45823d6e3cc47454e31a3114532930b2f3631df0eddaf3917e46678c929fefe"
+    }
+  ],
+  "retained_proof_and_source_sha256": {
+    "hessian/hc4-triangular-graphs/CENTRAL_GEOMETRIC_QUOTIENTS_AND_BINOMIAL_OUTPUTS.md": "4846eb8ef79295a4ab3271632e0beb30195d1a7a4aab78562c04b41d76be8dc4",
+    "hessian/hc4-triangular-graphs/verify_central_quotients.py": "5b40a8a6def61329d1a3429ea42cdbe6846313074b1bc1e2f58d000daa76fa0f",
+    "hessian/hc4-triangular-graphs/receipt-central-quotients.json": "d73e3fe5c34b43c06da4dbdf7d9e72aec77e01f329ca03a5fec9b5d420432692",
+    "hessian/hc4-triangular-graphs/sources/central-quotient-import.json": "c3015e4eb55fbc5eacdcf2fd88dc6dcc2e7b0f555654ac28e5fa24f70b8e5797",
+    "hessian/hc4-triangular-graphs/BRANCH_CURVES_AND_RATIONAL_TRIANGULAR_PARAMETERS.md": "765a4740be042e6d52b5d1b029c47196cf2305df59143dfa39dd8477dde15e50",
+    "hessian/hc4-triangular-graphs/verify_branch_parameters.py": "5c38e9f2899be3624da42674e12444c57b44d7e4fda2e67e578e17406e301fa6",
+    "hessian/hc4-triangular-graphs/receipt-branch-parameters.json": "b5a720e19b4ae925cee2e74f16ceb89a738df9538a8d4e2f38ce7dc893e48a55",
+    "hessian/hc4-triangular-graphs/sources/branch-parameter-import.json": "0aa595c87f8c23f6b1f87f6aaca17ef6e50e612572feb41ef89a9fbc570e50df",
+    "hessian/hc4-triangular-graphs/NORMAL_MONOGENIC_COVERS.md": "223b81738c823c3658079344f57e74a1405b3fcb52eb8adc76c9ee170226226f",
+    "hessian/hc4-triangular-graphs/REGULAR_PARAMETER_MONODROMY.md": "b010d2e4c62906a8a79da9dbc41ef7d0e3d5edefb4520cf487ba09ded5d86956",
+    "hessian/hc4-triangular-graphs/LEADING_FIBRE_UNIT_GATE.md": "1d054ba8762ea657be879b6e3568aa58c9ccb65e14ab642d45e0865e8f6382f0",
+    "hessian/hc4-triangular-graphs/ABELIAN_CLASSGROUP_OUTPUT_OBSTRUCTION.md": "3a10bcc44350ae155d73f1786dbd1dc081c86b20d469e7efd0edfa408981462f",
+    "hessian/hc4-triangular-graphs/receipt-monic-covers.json": "709d7f98fe07acf4ddbc34c1c5666f27cc7c350cb72937ffc584529992812e36",
+    "hessian/hc4-triangular-graphs/receipt-leading-fibre.json": "1e85c0ac096f9dd5de24294a5f907198fa4191824ceca82267979f5993597db8",
+    "hessian/hc4-triangular-graphs/sources/jelonek-lason-nonproper-1411.5011v2.html": "7a00a58a0d03ca9a24dfebbb9b7c25bae2c5ac0087d472614f873c2d9b968714",
+    "hessian/hc4-triangular-graphs/sources/stacks-monic-inertia-0BSD.html": "cd127a5a3b7d2b586600d03cc2a810bf400af445f77fb9d1248aa55f41082253",
+    "hessian/hc4-triangular-graphs/sources/stacks-monic-purity-0BMB.html": "37a491b9ddf1fed9ccbc333dfd635731e6394e64c0d1d5a27a323a63b65e8585",
+    "hessian/hc4-triangular-graphs/sources/milne-finite-etale-covers-lec-2.21.pdf": "718182f1a55d3af6b71f0d2faa5836851fb8611f1d7276896e3d5affdf28697b",
+    "hessian/hc4-triangular-graphs/sources/arzhantsev-petravchuk-closed-math-0608157v2.html": "8042645504f3535bae9ce6d656a68015b893dbf259888ca4708e69722d658cc9",
+    "hessian/hc4-triangular-graphs/sources/stacks-monic-normal-etale-025P.html": "3830cb8d28566941d9eb78bedcf40dffd2d8faddc70edfa6064053932ce869d0",
+    "hessian/hc4-triangular-graphs/sources/stacks-parameter-smooth-01V4.html": "4327b0dc32a5b7a4fc554e6587f0d622d978e306bba4d2783a8aade3704aa3da",
+    "hessian/hc4-triangular-graphs/sources/stacks-parameter-smooth-field-04QM.html": "a2ca1cc791459393ec97ca9e1f48560723dcbec8822281f0338f5b58c72e8a4a",
+    "hessian/hc4-triangular-graphs/sources/stacks-parameter-norm-0BD2.html": "c86c43774fb078989aef18f913ff4286d20afc7ec3939e22bdcb4dd88537619d",
+    "hessian/hc4-triangular-graphs/sources/bensimhoun-luroth-2004.pdf": "f45823d6e3cc47454e31a3114532930b2f3631df0eddaf3917e46678c929fefe"
+  },
+  "newly_used_external_statements": [
+    {
+      "retained_file": "stacks-parameter-smooth-01V4.html",
+      "statement": "Smoothness under base change and composition; standard-smooth local descriptions",
+      "theorem_fully_reproved": false
+    },
+    {
+      "retained_file": "stacks-parameter-smooth-field-04QM.html",
+      "statement": "Smooth complex schemes are regular and normal; normal complex curves are smooth",
+      "theorem_fully_reproved": false
+    },
+    {
+      "retained_file": "bensimhoun-luroth-2004.pdf",
+      "statement": "Ordinary one-variable Luroth over an arbitrary field",
+      "theorem_fully_reproved": false
+    }
+  ],
+  "direct_proof_arguments": [
+    "a finite-free source-unit norm is a complex constant without asserting the original unit constant",
+    "all parameter-conjugate monic models turn the norm identity into target integrality of both a cross-resultant and its inverse",
+    "unit cross-resultants put every finite inertia group in a root-partition normal core",
+    "purity and algebraic section descent give a preserved parameter quotient over the actual normal parameter curve",
+    "integral algebraic affine monic models preserve irreducibility after Keller pullback",
+    "residue-characteristic-zero scaling shows integral critical values force integral centered monic coefficients in every degree",
+    "the unique-pole argument makes a Luroth block quotient polynomial without Ritt classification",
+    "plane bad inertia removes nonparametrizable outer branch curves; polynomial parametrizations make all remaining critical values integral",
+    "outer block transitivity and contained bad inertia prove source irreducibility for every P in C(T)[z] of positive z degree"
+  ],
+  "all_dimensional_claims": [
+    "HC4MYIK0 normal monogenic covers after a finite algebraic parameter base change",
+    "HC4MYIK1 integral algebraic affine monic models",
+    "HC4MYIK2 integral critical values and centered monic models"
+  ],
+  "plane_only_claims": [
+    "HC4MYIK3 all polynomial triangular outputs"
+  ],
+  "cross_resultant_unit_norm_used": true,
+  "all_parameter_conjugates_integral_required": true,
+  "critical_value_scaling_lemma_proved_directly": true,
+  "unique_pole_polynomial_refinement_proved_directly": true,
+  "parameter_cover_source_assumed_affine_space": false,
+  "parameter_cover_units_assumed_constant": false,
+  "essential_surjectivity_used": false,
+  "good_reduction_dynamical_theorem_imported": false,
+  "Ritt_classification_imported": false,
+  "generic_group_classification_used": false,
+  "full_splitting_group_preservation_inferred": false,
+  "formal_verification": false,
+  "independent_replay": false,
+  "external_review": false,
+  "novelty_priority_asserted": false
+}

@@ -1,0 +1,90 @@
+{
+  "review_date": "2026-11-15",
+  "title": "Exact quotient holes,socle torsor residues and the exhausted local volume-period gate",
+  "newly_cached_primary_context": [
+    {
+      "url": "https://www.numdam.org/item/AST_1978__59-60__119_0/",
+      "retained_file": "francoise-local-function-volume-1978-record.html",
+      "sha256": "5b11092b6ea2a6324e2af32d878e6920f851c07b1e6b4a0b423b1708964636af",
+      "role": "Primary article record for simultaneous local function/volume normal forms. No isochore classification theorem is imported; local periods are computed directly."
+    },
+    {
+      "url": "https://stacks.math.columbia.edu/tag/00U9",
+      "retained_file": "stacks-etale-square-presentation-00U9.html",
+      "sha256": "209ae5a0ce8d16da7a7fcf669bf1b4989bb0787bb027b3254aab999d187d71b0",
+      "role": "Primary etale presentation context. The exact plinth proof instead uses the elementary formal inverse at each simple zero and an explicit finite weight argument; no flatness transfer is needed."
+    }
+  ],
+  "newly_used_unproved_external_statements": [],
+  "retained_structural_inputs": [
+    {
+      "claim": "HC4MYJT0",
+      "statement": "Primitive embedded quotient uniqueness and the prior proper nonprincipal plinth test."
+    },
+    {
+      "claim": "HC4MYJT1",
+      "statement": "Entire standard K2 quotient-field saturation remains excluded."
+    },
+    {
+      "claim": "HC4MYJT2",
+      "statement": "Exact global coordinate-action certificate; actual coordinate inverse remains necessary."
+    },
+    {
+      "claim": "HC4MYJS0",
+      "statement": "Necessary action kernel and fixed-plane geometry."
+    },
+    {
+      "claim": "HC4MYJQ0",
+      "statement": "K2,K3_rho and exact global hyperbolic suspension with all parameter collisions."
+    },
+    {
+      "claim": "HC4MYJK0",
+      "statement": "Old suspended multiplier source-orbit reduction."
+    },
+    {
+      "claim": "HC4MYHG0",
+      "statement": "Actual critical schemes,volume scaling and remaining endpoints."
+    },
+    {
+      "claim": "HCTANG2",
+      "statement": "Four-variable nonautomorphic unit-Hessian constant Tang normal form."
+    }
+  ],
+  "retained_proof_and_source_sha256": {
+    "hessian/hc4-triangular-graphs/PRIMITIVE_QUOTIENTS_PLINTH_AND_GLOBAL_ACTION_CERTIFICATES.md": "b4856858db621b510c210c4706c6032aeec0083db0135b1cd0fc0a25c899f630",
+    "hessian/hc4-triangular-graphs/verify_primitive_quotients.py": "7fb602eb659b2746050f8d4795342d6b458f9e1eb2faba89c5017aa0d473fc4c",
+    "hessian/hc4-triangular-graphs/receipt-primitive-quotients.json": "5cc51af0a0b2098d280d0baed1436b0170e17e5d16ff45132ac989e51ecb4b36",
+    "hessian/hc4-triangular-graphs/sources/primitive-quotient-context.json": "f691d0dc7f0b35f2d262631c18814e1c7dccf3f221b75ad7a94f238446eb141a",
+    "hessian/hc4-triangular-graphs/GLOBAL_ADDITIVE_ACTIONS_AND_THE_K2_TRANSLATION_BARRIER.md": "e32d0862153093033a6caa5dbfd543ae613b3580c66cb96eb276f6a7b3f584d7",
+    "hessian/hc4-triangular-graphs/verify_global_additive_barrier.py": "df36844c66418de7497e852f908d653d093d734fb2172256387ca2e4e0f171c8",
+    "hessian/hc4-triangular-graphs/receipt-global-additive-barrier.json": "1497175e736aa94aabb845cbfd1a44a9f5d8705a292e88e46933d230ed1f723e",
+    "hessian/hc4-triangular-graphs/sources/global-additive-barrier-context.json": "ac0ec15074a0c4d7c6ca57f8d0c8cfa30d1790e034b11f77ecab10ea799ee67b",
+    "hessian/hc4-triangular-graphs/TWO_NORMAL_MODELS_AND_RELATIVE_RANK_ONE_ALIGNMENT.md": "db3a76291e820edda4dc5ed28455b54247587c40feaca55bc4a7477bf8bbebe8",
+    "hessian/hc4-triangular-graphs/verify_two_normal_models.py": "4ba21ae068f31508eefe90209e6fc9f8434306944cd1fffed15996e490944593",
+    "hessian/hc4-triangular-graphs/receipt-two-normal-models.json": "88795224e906ac36cabc2c40cc34da0ffd3dd19168e5827abbe57d7b1149909f",
+    "hessian/hc4-triangular-graphs/sources/two-normal-model-context.json": "4b06e5bac73e45636c54bf1497669bb4cac7f45391dfc71634f2620b9d1c33bc",
+    "hessian/hc4-triangular-graphs/../tang-hc4-audit/STRUCTURAL_REVIEW.md": "26a6a76eb579de05b8e71245b8b804bdd5f036602f2e3e6ad5d036fd9f5cd572",
+    "hessian/hc4-triangular-graphs/GLOBAL_VALUE_ORBITS.md": "1dba2b511024f9da2ebd787183de66aaf42e76bf823fee76b745ffedabef2d5c",
+    "hessian/hc4-triangular-graphs/SUSPENDED_MULTIPLIER_ORBITS_AND_BASE_PRESERVING_CLOSURE.md": "868748e503bcf87ce1f087c5cf9c612122ea6f3b051decd12b88fad940f5500c",
+    "hessian/hc4-triangular-graphs/ONE_HYPERBOLIC_COORDINATE_AND_INTRINSIC_CYLINDER_PLANE.md": "9abe3bdd225b8b35cdf060e9e4ae471f587ed2528466176ac9889ca42dcfc11e"
+  },
+  "exact_plinth_equal_coefficient_ideal_proved": true,
+  "exact_reduced_plinth_lines_and_missing_quotient_image_proved": true,
+  "exact_torsor_annihilators_and_affine_point_residues_proved": true,
+  "necessary_local_volume_period_gate_proved": true,
+  "all_remaining_normalized_models_pass_complete_local_volume_period_test": true,
+  "required_nonstandard_K2_action_exists": false,
+  "all_K2_preserving_actions_classified": false,
+  "K2_one_coordinate_unit_hessian_route_excluded": false,
+  "fixed_K2_full_source_orbit_resolved": false,
+  "fixed_K2_identified_with_h1": false,
+  "full_source_h0_h1_orbits_resolved": false,
+  "K3_rho_full_source_family_resolved": false,
+  "complete_isochore_classification_imported": false,
+  "local_periods_assumed_to_glue_to_global_polynomial_coordinates": false,
+  "torsor_profile_assumed_sufficient_for_coordinate_certificate": false,
+  "unit_ideal_endpoint_resolved": false,
+  "singleton_zero_endpoint_resolved": false,
+  "unrestricted_HC4_or_JC2_resolved": false,
+  "original_goal_complete": false
+}

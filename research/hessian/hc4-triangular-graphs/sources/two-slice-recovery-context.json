@@ -1,0 +1,148 @@
+{
+  "review_date": "2026-11-15",
+  "title": "Two-slice global source recovery and the oriented coefficient ideal reduction",
+  "newly_cached_primary_context": [
+    {
+      "url": "https://arxiv.org/html/2112.02272v1",
+      "retained_file": "dicks-quillen-suslin-2112.02272v1.html",
+      "sha256": "8873b8ee2b72003c43a355d570b064f09f35bc43ed078e33d8efe7d72cdaeaeb",
+      "role": "Theorem 6 and its reproduced proof: finite projective C[b1,b2]-modules are free. Applied only to the rank-two kernel of a split unimodular row."
+    },
+    {
+      "url": "https://stacks.math.columbia.edu/tag/00N7",
+      "retained_file": "stacks-cm-regular-sequence-00N7.html",
+      "sha256": "83e2348137daec0aaccb71945f31c1017a96ebd8f8a4370c1535adaae39bf362",
+      "role": "Polynomial rings are Cohen-Macaulay and a regular-sequence quotient retains that property; used for the integral hypersurface S."
+    },
+    {
+      "url": "https://stacks.math.columbia.edu/tag/031S",
+      "retained_file": "stacks-serre-normality-031S.html",
+      "sha256": "05a6f4daf4e0ce0e22731a953dc355b411931313c9e549bbec1f7b9d0a1105c9",
+      "role": "Normality follows from R1 and S2; the hypersurface has only finitely many possible singular points."
+    },
+    {
+      "url": "https://stacks.math.columbia.edu/tag/031T",
+      "retained_file": "stacks-normal-height-one-intersection-031T.html",
+      "sha256": "60ca68ba7864eb7885f7d8525b4f2071ec88f04d8e2c2bcb310ab7c23c9f46dc",
+      "role": "A normal Noetherian domain is the intersection of its height-one localizations; the removed F=G locus has codimension at least two."
+    },
+    {
+      "url": "https://stacks.math.columbia.edu/tag/02LR",
+      "retained_file": "stacks-quasi-finite-normalization-02LR.html",
+      "sha256": "73850793a7dbfa1df75a5cf36900854e2e8e1fa4f90e0aa62026d3626e93d33d",
+      "role": "Quasi-finite separated normalization factorization. In the birational case with normal target,this is an open immersion; used only for the existential JC2 bridge."
+    }
+  ],
+  "newly_imported_proved_external_statements": [
+    {
+      "source": "https://arxiv.org/html/2112.02272v1",
+      "retained_file": "dicks-quillen-suslin-2112.02272v1.html",
+      "statement": "Theorem 6 and its reproduced proof: finite projective C[b1,b2]-modules are free. Applied only to the rank-two kernel of a split unimodular row.",
+      "hypotheses_checked": true
+    },
+    {
+      "source": "https://stacks.math.columbia.edu/tag/00N7",
+      "retained_file": "stacks-cm-regular-sequence-00N7.html",
+      "statement": "Polynomial rings are Cohen-Macaulay and a regular-sequence quotient retains that property; used for the integral hypersurface S.",
+      "hypotheses_checked": true
+    },
+    {
+      "source": "https://stacks.math.columbia.edu/tag/031S",
+      "retained_file": "stacks-serre-normality-031S.html",
+      "statement": "Normality follows from R1 and S2; the hypersurface has only finitely many possible singular points.",
+      "hypotheses_checked": true
+    },
+    {
+      "source": "https://stacks.math.columbia.edu/tag/031T",
+      "retained_file": "stacks-normal-height-one-intersection-031T.html",
+      "statement": "A normal Noetherian domain is the intersection of its height-one localizations; the removed F=G locus has codimension at least two.",
+      "hypotheses_checked": true
+    },
+    {
+      "source": "https://stacks.math.columbia.edu/tag/02LR",
+      "retained_file": "stacks-quasi-finite-normalization-02LR.html",
+      "statement": "Quasi-finite separated normalization factorization. In the birational case with normal target,this is an open immersion; used only for the existential JC2 bridge.",
+      "hypotheses_checked": true
+    }
+  ],
+  "newly_used_unproved_external_statements": [],
+  "retained_structural_inputs": [
+    {
+      "claim": "HC4MYJU0",
+      "statement": "Exact reduced plinth and missing quotient image,necessary for Tang actions."
+    },
+    {
+      "claim": "HC4MYJU1",
+      "statement": "Cech class injection and its exact annihilator and point residues."
+    },
+    {
+      "claim": "HC4MYJU2",
+      "statement": "All remaining normalized local volume periods are already exhausted."
+    },
+    {
+      "claim": "HC4MYJT2",
+      "statement": "Necessary exact global coordinate-action certificate."
+    },
+    {
+      "claim": "HC4MYJT1",
+      "statement": "Standard K2 embedded quotient fields remain excluded."
+    },
+    {
+      "claim": "HC4MYJS0",
+      "statement": "Necessary action kernel and the elementary slice theorem."
+    },
+    {
+      "claim": "HC4MYHR0",
+      "statement": "All three ranks of the constant Tang plane and zero relative Hessian calculation."
+    },
+    {
+      "claim": "HC4MYHG0",
+      "statement": "Full critical scheme and common critical Hessian invariance."
+    },
+    {
+      "claim": "HC4MYJK1",
+      "statement": "Earlier full natural-base exclusions for the suspended multipliers."
+    },
+    {
+      "claim": "HCTANG2",
+      "statement": "Four-variable Tang form and HC4 equivalence with JC2."
+    }
+  ],
+  "retained_proof_and_source_sha256": {
+    "hessian/hc4-triangular-graphs/QUOTIENT_HOLES_TORSOR_RESIDUES_AND_LOCAL_PERIOD_BARRIER.md": "1e881191d24d316249eb69fbd29bc5479907939d69dbcfc45c48fda8e3c27dd2",
+    "hessian/hc4-triangular-graphs/verify_quotient_holes.py": "1c88eec8e9bcfd7ed711d8f27cb5f1c1e5593a4fe86f50e24d164666b0fc03c0",
+    "hessian/hc4-triangular-graphs/receipt-quotient-holes.json": "0c2feb82e0ed99c3d038561b19652660b468c35e1bf355d076ef0dd74996ae56",
+    "hessian/hc4-triangular-graphs/sources/quotient-holes-context.json": "62cf48a99cbd6350add08df9f1002ca5f22104b2a719c13182927387e58d9e9c",
+    "hessian/hc4-triangular-graphs/PRIMITIVE_QUOTIENTS_PLINTH_AND_GLOBAL_ACTION_CERTIFICATES.md": "b4856858db621b510c210c4706c6032aeec0083db0135b1cd0fc0a25c899f630",
+    "hessian/hc4-triangular-graphs/verify_primitive_quotients.py": "7fb602eb659b2746050f8d4795342d6b458f9e1eb2faba89c5017aa0d473fc4c",
+    "hessian/hc4-triangular-graphs/receipt-primitive-quotients.json": "5cc51af0a0b2098d280d0baed1436b0170e17e5d16ff45132ac989e51ecb4b36",
+    "hessian/hc4-triangular-graphs/sources/primitive-quotient-context.json": "f691d0dc7f0b35f2d262631c18814e1c7dccf3f221b75ad7a94f238446eb141a",
+    "hessian/hc4-triangular-graphs/GLOBAL_ADDITIVE_ACTIONS_AND_THE_K2_TRANSLATION_BARRIER.md": "e32d0862153093033a6caa5dbfd543ae613b3580c66cb96eb276f6a7b3f584d7",
+    "hessian/hc4-triangular-graphs/verify_global_additive_barrier.py": "df36844c66418de7497e852f908d653d093d734fb2172256387ca2e4e0f171c8",
+    "hessian/hc4-triangular-graphs/receipt-global-additive-barrier.json": "1497175e736aa94aabb845cbfd1a44a9f5d8705a292e88e46933d230ed1f723e",
+    "hessian/hc4-triangular-graphs/sources/global-additive-barrier-context.json": "ac0ec15074a0c4d7c6ca57f8d0c8cfa30d1790e034b11f77ecab10ea799ee67b",
+    "hessian/hc4-triangular-graphs/RELATIVE_CRITICAL_GRAPH_CLASSIFICATION.md": "2f1fb67fcc8abff242c43f8a6a1a1ec79a3d40c384067eb9c561e164fd2bbe62",
+    "hessian/hc4-triangular-graphs/GLOBAL_VALUE_ORBITS.md": "1dba2b511024f9da2ebd787183de66aaf42e76bf823fee76b745ffedabef2d5c",
+    "hessian/hc4-triangular-graphs/SUSPENDED_MULTIPLIER_ORBITS_AND_BASE_PRESERVING_CLOSURE.md": "868748e503bcf87ce1f087c5cf9c612122ea6f3b051decd12b88fad940f5500c",
+    "hessian/hc4-triangular-graphs/../tang-hc4-audit/STRUCTURAL_REVIEW.md": "26a6a76eb579de05b8e71245b8b804bdd5f036602f2e3e6ad5d036fd9f5cd572",
+    "hessian/hc4-triangular-graphs/TWO_NORMAL_MODELS_AND_RELATIVE_RANK_ONE_ALIGNMENT.md": "db3a76291e820edda4dc5ed28455b54247587c40feaca55bc4a7477bf8bbebe8"
+  },
+  "full_source_frame_recovered_from_radical_plinth_holes_and_codimension_two": true,
+  "elementary_two_slice_affine_socle_certificate_equivalent_to_unit_hessian_source": true,
+  "exact_oriented_generating_pair_GL2_criterion_proved": true,
+  "nonlinear_base_preserving_sources_add_no_new_coefficient_pairs": true,
+  "all_N_uniform_orientation_models_equivalent_to_Keller_fibre_cardinalities": true,
+  "required_nonstandard_K2_action_exists": false,
+  "all_K2_preserving_actions_classified": false,
+  "fixed_K2_full_source_orbit_resolved": false,
+  "fixed_K2_identified_with_h1": false,
+  "full_source_h0_h1_orbits_resolved": false,
+  "K3_rho_full_source_family_resolved": false,
+  "quotient_type_or_annihilator_alone_assumed_sufficient": false,
+  "global_Keller_generators_for_any_N_ge_2_constructed": false,
+  "auxiliary_T_N_assumed_in_original_affine_graph_frontier": false,
+  "unit_ideal_endpoint_resolved": false,
+  "singleton_zero_endpoint_resolved": false,
+  "unrestricted_HC4_or_JC2_resolved": false,
+  "original_goal_complete": false
+}

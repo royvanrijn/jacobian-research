@@ -1,0 +1,60 @@
+{
+  "schema_version": 1,
+  "retrieved_utc": "2026-11-15T03:29:22.863095+00:00",
+  "purpose": "Retained whole-source formulas and primary classical field/geometry facts. No independent universal proof or publication-priority certificate.",
+  "local_sources": [
+    {
+      "path": "jacobian/universal-keller-rank-one-feedback/PROOF.md",
+      "locator": "UARANKONE1 exact arbitrary-selector Schur/common-kernel gate, UAGEOMFEED1 regular descent and UACUBICFEED1 output recovery.",
+      "sha256": "d8a227b21d9d33c5d2e1db62bce50dfc562a57220a0023f35cb80cd14f5af86c"
+    },
+    {
+      "path": "jacobian/universal-keller-feedback-rigidity/PROOF.md",
+      "locator": "UAPARALLEL1 all-output profiles and polynomial partial processing.",
+      "sha256": "132ad2cc9384e5ba1e3a9bce4afceebe86d904478c6cc01dcf676fe85ab9919f"
+    },
+    {
+      "path": "jacobian/universal-keller-structure/PROOF.md",
+      "locator": "UAALLATOM1 primitive single-block profiles, used only for the displayed maximal atomic chain.",
+      "sha256": "a3dee93b955b9e449bae2fff3d2964262289572f22f0820309e6c56d8bb5cbd5"
+    },
+    {
+      "path": "jacobian/universal-keller-canonical-filter/PROOF.md",
+      "locator": "UACANFIB1 canonical fibre and the old trace selector, whose replacement gate is closed here.",
+      "sha256": "5f2177076da7c8ae318258bdbfc39b445e393dbcb4a4dab397c82aeea9ad0da1"
+    },
+    {
+      "path": "jacobian/universal-keller-compression/verify.py",
+      "locator": "Pure source_map constructor.",
+      "sha256": "a8d9b280e09868e1b1abed24443541dc29daa94744e467517a5b3d6da85457a5"
+    },
+    {
+      "path": "foundations/verified/UNIVERSAL_RELATIVE_KELLER_MAP.md",
+      "locator": "UAM1 normalized inverse equation and reconstruction.",
+      "sha256": "4cced623c100a90859996e5aea69219a241c56c20ca087f1a9d4caa50209c1c5"
+    }
+  ],
+  "external_sources": [
+    {
+      "path": "sources/stacks-09I6.html",
+      "url": "https://stacks.math.columbia.edu/tag/09I6",
+      "locator": "Elementary quadratic/Kummer context only; independent square classes are established directly by distinct linear-factor valuations.",
+      "bytes": 20065,
+      "sha256": "217511ccafe874f443e9200960862fbc0e7f8a468374c2a49e3bcd8ef0859c50"
+    },
+    {
+      "path": "sources/stacks-0G33.html",
+      "url": "https://stacks.math.columbia.edu/tag/0G33",
+      "locator": "Relative algebraic closedness and geometric irreducibility used to exclude extra constants of the multiquadratic curve.",
+      "bytes": 15112,
+      "sha256": "9ebeb36750c13fdf0e1ec683dccad3184fa71858980dc08b893335e189ca7390"
+    },
+    {
+      "path": "sources/stacks-01V4.html",
+      "url": "https://stacks.math.columbia.edu/tag/01V4",
+      "locator": "Smooth composition/flatness for polynomial descent from retained signals and untouched blocks.",
+      "bytes": 41298,
+      "sha256": "4327b0dc32a5b7a4fc554e6587f0d622d978e306bba4d2783a8aade3704aa3da"
+    }
+  ]
+}

@@ -1,0 +1,71 @@
+{
+  "schema_version": 1,
+  "purpose": "Pins tame fixed-locus geometry, the original CFSG-dependent prime-power derangement theorem, classical Picard finiteness and Kummer inputs, plus the retained finite-normalization and modular controls.",
+  "local_sources": [
+    {
+      "path": "jacobian/universal-keller-smith/PROOF.md",
+      "sha256": "406522b5e55cf92ae26326ff46a435856ea99d4b5fb4d7cc143d3f6de9ba3295"
+    },
+    {
+      "path": "jacobian/universal-keller-affine-lang/PROOF.md",
+      "sha256": "d066d69f67f54c7b9dcf8b65b657d7b9a038aa48f3f7c959352b2145cd6d083c"
+    },
+    {
+      "path": "jacobian/universal-keller-symmetry/PROOF.md",
+      "sha256": "4ec671bfa02796c638d6be4ad62844cc596ee5c6194fa7001d3f9500e1857b3e"
+    },
+    {
+      "path": "jacobian/universal-keller-costs/PROOF.md",
+      "sha256": "9aa869ff86366e92831b8aaaab32d441bea9d55b8ef0c1688acea28677299c66"
+    },
+    {
+      "path": "foundations/verified/UNIVERSAL_RELATIVE_KELLER_MAP.md",
+      "sha256": "4cced623c100a90859996e5aea69219a241c56c20ca087f1a9d4caa50209c1c5"
+    }
+  ],
+  "external_sources": [
+    {
+      "path": "sources/fks-relative-brauer.pdf",
+      "url": "https://pages.uoregon.edu/kantor/PAPERS/BrauerGroups.pdf",
+      "locator": "Theorem1, printed page41 (PDF page3), visually inspected from the original scan. The general transitive-group input uses CFSG; natural S_N does not need it.",
+      "bytes": 2466024,
+      "sha256": "3f15b2bbc534726da5383bf8124a5b1b3b0e4205a7c89c33ec1c9cecb909a77f",
+      "visual_review": "Printed pages40--41 inspected via bundled PDFium because Poppler is unavailable."
+    },
+    {
+      "path": "sources/theorem-of-the-base.pdf",
+      "url": "https://mattlarson2399.github.io/Papers/theorem-of-the-base.pdf",
+      "locator": "Cheng--Ji--Larson--Olander, Theorem7.3 and Introduction TheoremBase: finite generation of the Neron-Severi group of a smooth projective variety.",
+      "bytes": 311693,
+      "sha256": "8360197abd11f49a67ac2c297c8d1d6e47a6db92e25bbb0fa72030cb5b515dba"
+    },
+    {
+      "path": "sources/dubouloz-palka-pseudo-planes.html",
+      "url": "https://arxiv.org/html/1701.01425",
+      "locator": "TheoremsB/C, Corollary5.2 and Example5.3: published nonproper etale maps and all-degree formulas. The new proof calculates their complete images and fibre ranks; nonproperness is not an empty-fibre certificate.",
+      "bytes": 1165766,
+      "sha256": "b5e8f6184688447b21611a4b81abb689012cd6ef46d5eebf74a096e2e77b67ef"
+    },
+    {
+      "path": "sources/stacks-kummer.html",
+      "url": "https://stacks.math.columbia.edu/tag/03PK",
+      "locator": "Lemma59.28.1 and its exact cohomology sequence.",
+      "bytes": 33808,
+      "sha256": "5f76b11d5226708e082eadaad245bb303b5f2d7923183de1109f54e74935525f"
+    },
+    {
+      "path": "sources/haution-fixed-points.html",
+      "url": "https://arxiv.org/html/1507.04582",
+      "locator": "Proposition3.2.1 (tame prime-group smooth connected acyclic fixed loci) and Theorem3.3.1 (tame cyclic fixed-point nonemptiness; the proof gives Euler characteristic one).",
+      "bytes": 396270,
+      "sha256": "5c86bf7a145f6a99181684d12240324c9572e4e1b0729a4f16f9210396d381e0"
+    },
+    {
+      "path": "sources/deligne-arcata.pdf",
+      "url": "https://www.jmilne.org/math/Documents/DeligneArcata.pdf",
+      "locator": "Deligne, notes by Boutot, SGA4.5 Arcata: SectionVI, Theorem3.1 (printed page41) and compact-support extension by zero; official English translation hosted by Milne.",
+      "bytes": 511534,
+      "sha256": "bddbc28249669de4d80959658f35a2829573ae212d0aabebd9fe0c1820ef1351"
+    }
+  ]
+}

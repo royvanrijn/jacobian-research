@@ -1,0 +1,9 @@
+{
+  "terminal": true,
+  "completed": false,
+  "exit_code": 1,
+  "runtime_seconds": 3.3677147690032143,
+  "input_sha256": "73c8324fe17ebeed1d608c90c248893d4cb777a0a803647d626c6b8f65cc7065",
+  "stdout": "",
+  "stderr": "Traceback (most recent call last):\n  File \"/home/royvanrijn/src/jacobian-research/research/moments/vanishing/verify_rank_one_two_branch_projection.py\", line 121, in <module>\n    if __name__=='__main__':main()\n                            ^^^^^^\n  File \"/home/royvanrijn/src/jacobian-research/research/moments/vanishing/verify_rank_one_two_branch_projection.py\", line 105, in main\n    start=time.monotonic();univ=universal();print('Two Hensel branches,Jacobian,phase and Hermite determinant passed',flush=True)\n                                ^^^^^^^^^^^\n  File \"/home/royvanrijn/src/jacobian-research/research/moments/vanishing/verify_rank_one_two_branch_projection.py\", line 20, in universal\n    assert trunc(f*(branch-r)*(branch-z)-q*Z/t)==0\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError\n"
+}

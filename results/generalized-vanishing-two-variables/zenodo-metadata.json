@@ -1,0 +1,26 @@
+{
+  "title": "The Generalized Vanishing Conjecture: The Two-Variable Theorem and the First Failing Dimension",
+  "publication_date": "2026-08-05",
+  "description": "<p>We determine the exact dimensional range of the Generalized Vanishing Conjecture for constant-coefficient differential operators over fields of characteristic zero. We prove the conjecture in two variables for arbitrary, possibly nonhomogeneous, operators. The proof combines Hall's marriage theorem, Newton-face separation, and a prime-dilation argument; apart from the constant-term theorem of Duistermaat and van der Kallen, it is elementary and uses neither degree bounds nor computer algebra. We then construct a homogeneous counterexample in three variables. With rho=t^2+xy, A=rho+x^2, C=y rho^2-2x t^2 rho-x^3 t^2, Delta=4 partial_x partial_y+partial_t^2, Lambda=Delta^6, and P=AC^2, the paper proves that Lambda^m(P^m)=0 while Lambda^m(x^2 P^m) is nonzero for every m&gt;=1. The construction extends to an explicit cusp-profile family and gives counterexamples for every Delta^k with k&gt;=6. Consequently, the unrestricted Generalized Vanishing Conjecture, and already its homogeneous form, holds in dimension n exactly when n&lt;=2.</p>",
+  "access_right": "open",
+  "creators": [
+    {
+      "name": "van Rijn, Roy",
+      "affiliation": null,
+      "orcid": "0009-0000-2808-0645"
+    }
+  ],
+  "keywords": [
+    "Generalized Vanishing Conjecture",
+    "constant-coefficient differential operators",
+    "Newton polygons",
+    "Hall's marriage theorem",
+    "Gaussian moments",
+    "counterexample",
+    "Jacobian Conjecture",
+    "Duistermaat-van der Kallen theorem"
+  ],
+  "upload_type": "publication",
+  "publication_type": "preprint",
+  "license": "cc-by-4.0"
+}

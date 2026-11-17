@@ -1,0 +1,80 @@
+{
+  "claim": "HC4MYMN0",
+  "retained_structural_inputs": [
+    {
+      "claim": "HC4MYML0",
+      "canonical_source": "hessian/hc4-triangular-graphs/EXACT_VOLUME_AND_COMPLETE_RULING_COMPONENTS.md"
+    },
+    {
+      "claim": "HC4MYLA0",
+      "canonical_source": "hessian/hc4-triangular-graphs/GENERIC_DECK_GROUP_AND_UNRAMIFIED_BOUNDARY_COST.md"
+    },
+    {
+      "claim": "PF2RULED129",
+      "canonical_source": "jacobian/affine-complements/HEREDITARY_EULER_EXCESS_AND_QUOTIENT_DEGREE_BOUNDS.md"
+    }
+  ],
+  "retained_proof_and_source_sha256": {
+    "hessian/hc4-triangular-graphs/EXACT_VOLUME_AND_COMPLETE_RULING_COMPONENTS.md": "70dab2944314ad0c6bcf4cce20feb17119eed87ba8ec5c790bf835ee3eeb7322",
+    "hessian/hc4-triangular-graphs/verify_complete_ruling_volume.py": "39682da1aca6bbd69b629e5f29d5b64ca43340ac869df303f7952ae680d2ba6a",
+    "hessian/hc4-triangular-graphs/GENERIC_DECK_GROUP_AND_UNRAMIFIED_BOUNDARY_COST.md": "921f0fbf21920c73c536e22241a89e5ddf4f2c35ac01efe5dd745e963224f37d",
+    "hessian/hc4-triangular-graphs/verify_deck_boundary_cost.py": "678b8bc23c529a8626a9a53be6d46d7cbb5664231d3f0dcf7794a27fc80a810e",
+    "jacobian/affine-complements/HEREDITARY_EULER_EXCESS_AND_QUOTIENT_DEGREE_BOUNDS.md": "7865c9b4e415bbf3b404b616633f81a17b0597c91105f0290f166c4801ba7a1a",
+    "jacobian/affine-complements/verify_hereditary_euler_excess.py": "1eaf01418625a8754b287583c3598c4a37dc64aece4dc0325d929421e327c183",
+    "jacobian/cross-programme-connections/INWARD_COUPLED_RESTRICTIONS_2026_11_16.tex": "ee63437f179b169fbdaf848e04bde3070245e38964d49253a8bddeccf5b00d18",
+    "jacobian/cross-programme-connections/inward-coupled-restrictions-handoff-2026-11-16.json": "1b854a3f493ea201f008106d749eea2efffa1e1fa99a4693f9f5b9cb51266072",
+    "jacobian/cross-programme-connections/inward-coupled-restrictions-controls-2026-11-16.json": "e72ccc3c86be5ccbbe192d8ce39e37648d71dd76d0b7934a388e576bcfb189b0",
+    "jacobian/cross-programme-connections/check_inward_coupled_restrictions_20261116.py": "c5d90c9e15910d29f44e3e9b94f899edfca59a9c35a70b6446545da0ae23b6fc",
+    "meridional-rank/representations/LIFT_DIMENSION_AND_RADICAL_TOWERS.tex": "f1a7f9552d2deb2e2770bd0c02056c40bc7ac67913519e388a6577e7ac5bee0a",
+    "hessian/hc4-triangular-graphs/sources/affine-deck-index/Thurston13.pdf": "cee7a903a310621cb8f6616473696131b8c52e20957054d6242472d5dd5fb843",
+    "hessian/hc4-triangular-graphs/sources/affine-deck-index/dubouloz-kishimoto-1408.1328v1.pdf": "046d33d9d6ed753e205edb9898ebde47bdcda03d1b26928d61b0b9c822bd12cf"
+  },
+  "retained_prior_proof_checker_pins": 6,
+  "coordinator_and_knot_pins": 5,
+  "new_primary_cache_pins": 2,
+  "scope_flags": {
+    "full_goal_active": true,
+    "actual_complex_polynomial_plane_source": true,
+    "full_finite_normalization_and_entire_etale_open": true,
+    "all_prime_powers_and_affine_dimensions": true,
+    "every_noncyclic_generic_deck_subgroup": true,
+    "no_inertia_decoration_required": true,
+    "binary_deck_index_at_least_eight": true,
+    "full_natural_Hq_excluded_q_ge_two": true,
+    "degree_minimality_required": false,
+    "all_binary_affine_monodromy_excluded": false,
+    "cyclic_deck_cases_excluded": false,
+    "other_actions_of_abstract_Hq_excluded": false,
+    "quartic_intermediate_assumed_plane": false,
+    "relative_block_cover_assumed_etale": false,
+    "unrestricted_HC4_or_JC2_resolved": false
+  },
+  "external_imports": [
+    {
+      "name": "Miyanishi-Sugie A1-ruling existence via Dubouloz-Kishimoto1408.1328v1",
+      "statement": "Smooth affine complex surface of negative log Kodaira dimension admits an A1-fibration over a smooth curve.",
+      "reading": "Full printed/PDFpage3 Section1.2/Theorem2 and proof,adjacent pages4-5 read;page3 visually inspected. Original MiSu deep classification NOT independently reproduced.",
+      "cache": "hessian/hc4-triangular-graphs/sources/affine-deck-index/dubouloz-kishimoto-1408.1328v1.pdf"
+    },
+    {
+      "name": "Thurston good/bad orientable two-orbifold classification",
+      "statement": "Finite noncyclic sphere-orbifold group is good spherical, with finite P1 manifold cover of exact local orders. Bad teardrops/unequal spindles have cyclic groups.",
+      "reading": "Chapter13 Theorem13.3.6/table printed312/PDF18 and full pertinent proof pages18-24 read;bad-orbifold discussion read;page18 visually inspected. Standard geometric classification adopted,not independently reproved.",
+      "cache": "hessian/hc4-triangular-graphs/sources/affine-deck-index/Thurston13.pdf"
+    }
+  ],
+  "new_primary_caches": [
+    "hessian/hc4-triangular-graphs/sources/affine-deck-index/Thurston13.pdf",
+    "hessian/hc4-triangular-graphs/sources/affine-deck-index/dubouloz-kishimoto-1408.1328v1.pdf"
+  ],
+  "coordinator_credit": "Low-Euler exact-volume cyclicity and decorated tower combination credited to inward coupling packet; source/normalization hypotheses audited before adoption. Undecorated full-Hq and all-finite-field-affine deck-index consequence derived here by free deck quotient.",
+  "shared_draft_read": {
+    "path": "jacobian/affine-complements/LOW_EULER_CYCLICITY_AND_DECORATED_RADICAL_TOWER_EXCLUSION.md",
+    "registry_state_at_preparation": "proved",
+    "role": "Read complete canonical draft. No mutable draft byte pin or duplicate registry promotion; the credited coordinator proof is pinned and low-Euler argument is written in our proof."
+  },
+  "registered_mathematical_checkers_replayed": [],
+  "independent_replay": false,
+  "formal_verification": false,
+  "external_review": false
+}

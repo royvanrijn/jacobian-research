@@ -1,0 +1,37 @@
+{
+  "date": "2026-11-15",
+  "scoped_claims": [
+    "LONGSPHERICAL20261115",
+    "GSPHERICALCOMP20261115"
+  ],
+  "scoped_schema_hash_dependencies": true,
+  "new_lesson_scope_fingerprints": true,
+  "new_work_scope_fingerprints": true,
+  "source_git_blob_verified": "f33f5eaabfe73ff15d7acc0e4bb6a71ac91fd0cb",
+  "source_bytes": 31466,
+  "canonical_proof_local_links": 3,
+  "source_audit_hashes_verified": true,
+  "generated_views_from_existing_renderer_functions": [
+    "index/README.md",
+    "index/geometry.md",
+    "index/documents.tsv",
+    "knowledge/ALGORITHMS.md",
+    "knowledge/WORK_LEDGER.md",
+    "knowledge/work/geometry.md",
+    "STATUS.md"
+  ],
+  "full_navigation_gate": "FAIL: pre-existing KDSQ6 missing document consumer artifacts/generated-results/README.md.",
+  "search_cli": "Historical navigation output omitted during repository reorganization.",
+  "full_repository_validated": false,
+  "previous_goal_turn": "No earlier goal turn was available in this execution context; existing research was inspected directly.",
+  "this_goal_turn": "Progress: pinned imported theorem, wrote disconnected classification and counterexamples, passed exact controls, registered scoped claims.",
+  "objective_audit": {
+    "repository_research_reviewed": "Existing connected/disconnected compact classifications and full relevant finite-trace proof inspected; retained digit regression passed.",
+    "linked_research_reviewed": "Complete pinned 31466-byte TeX read and verified against original Git blob; MIT license retained.",
+    "new_insight_developed": "Canonical proof gives both iff classifications for all componentwise spherical pairs with disconnected reductive acting group, plus all-order counterexamples from character relations.",
+    "theorem_made_more_complete": "Connected-acting-group restriction removed; exact additional nullcone hypothesis established, including pairwise-independent counterexample and disconnected positive example.",
+    "verification": "Exact circuit and lattice controls passed; canonical source, dependency, link and scope-fingerprint checks passed. The proof remains internal and relies on the imported research-draft connected theorem.",
+    "remaining_required_work": "None for the requested synthesis and theorem extension. Independent review, nonspherical cases and minimal degrees are stated research boundaries, not claimed solved.",
+    "repository_wide_gate": "Pre-existing missing artifact prevents full navigation validation; new scoped validation passed and blocker is reported."
+  }
+}

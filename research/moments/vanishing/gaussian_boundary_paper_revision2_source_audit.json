@@ -1,0 +1,57 @@
+{
+  "date": "2026-11-17",
+  "revision": "REVISION2 ADVERSARIAL PAPER AUDIT17November2026:18-page draft adds explicit seed/period hypotheses,Airy cubic-height and linear WT proofs,and a complete FORMAL full-rank proof of W(a+T+Z2)+G in every cubic coefficient specialization. Multiple finite critical points,all quartic escapes and an explicit invertible interpolation matrix are retained;no analytic period convergence is assumed in that replacement. Six disjoint affine-W coefficient branches and all nine plane-cubic leading types are routed. Conditional cut estimates are explicitly conditional:controlled flat spanning families,regular ends and uniform tails are NOT supplied by the perfect pairing or finite checks. The exact normalized quadratic family with period sqrt(2pi)t^(k/2-1) refutes bounded-critical/zero-action decay shortcuts. The two one-variable analytic gates PAPER-B-L/PAPER-B-R and the no-frame geometric proofs PAPER-A remain OPEN in the standalone manuscript. Liu Theorems2.1/2.2,Long Proposition4.1/Theorem5.1,Wilson Theorem1 and published Hien-Roucairol are credited precisely. Limited primary searches do NOT establish novelty. All original sharp witnesses retained. No manuscript completion,independent review or assurance promotion.",
+  "proof_mode": "New written formal/algebraic subproofs and explicit adversarial analytic obligations;finite universal symbolic algebra only;no full proof or assurance promotion.",
+  "canonical_claims_unchanged": true,
+  "mutable_draft_files_snapshot_sha256": {
+    "../unpublished/gaussian-boundary/manuscript.tex": "9130da69b78ae6b2380dfd694cb54a9ed38cccc4fad5d811dc5e50d57c3eacc9",
+    "../unpublished/gaussian-boundary/manuscript.pdf": "a12b375ba43c259237e745705783d5050eb4dfc75ba09bfbf1b0928731284ba5",
+    "../unpublished/gaussian-boundary/formal_lemmas.tex": "f7a547f2a57a3fe1e3d8c486ed7c1e7a2e044ef16f16f865f5eb44762a114b30",
+    "../unpublished/gaussian-boundary/mixed_formal_exclusion.tex": "c0ac5fb2a6191732c7239d1d62934480828f1e04769fd090c3a274d4d1463dee",
+    "../unpublished/gaussian-boundary/analytic_core.tex": "1a4ce013528d77e2efc657b1df247f7ec9837ba1a357a023fd682ad873766cc7",
+    "../unpublished/gaussian-boundary/proof_audit.json": "799f7d5cdf336cd8b3729aca2742a740668047476159f5854cce6feb1ec10369",
+    "../unpublished/gaussian-boundary/paper_goal.json": "48ad178264d35e84b3173cdeca73221f84f5a62793722bb4400dbddef0c77ac1",
+    "../unpublished/gaussian-boundary/adversarial_audit.json": "1a9050a478b28d4eab4fec9803b7deb3ae8b38abfab09de9923523597ca3bb1d",
+    "../unpublished/gaussian-boundary/literature_audit.json": "a3d9439fed0dac3cc516d74b8a35a094dd8975e0f18e4c804fa2eaa005f5e35b",
+    "../unpublished/gaussian-boundary/formal_identity_check.json": "43d2fed113cce954afaadb47e6e19cb21aae410c43d5fa92114f29ed38591add",
+    "../unpublished/gaussian-boundary/check_formal_identities.py": "c32b5152757f2bf6925cd8996b274e9633c745e5f72c1159d4d4f9f31d8a977c",
+    "../unpublished/gaussian-boundary/pdf_quality_check.json": "d3709fd2d4b2758cef2360d0d684444f2164094d4f208907cc1998073346f7a6"
+  },
+  "mutable_policy": "Working paper files remain editable under active user goal;hashes record revision2. Old sealed theorem/operator/checker packets are immutable.",
+  "old_first_draft_snapshot_preserved": true,
+  "new_primary_sources": [
+    {
+      "file": "sources/hien_roucairol_2008_published.pdf",
+      "url": "https://www.numdam.org/article/BSMF_2008__136_4_505_0.pdf",
+      "sha256": "00ec2354d24c759ec25a0bdca45a6d1d07f5966f01136d6c75049727152eb8d1"
+    },
+    {
+      "file": "sources/liu_quadratic_v3.pdf",
+      "url": "https://zenodo.org/records/21688251/files/Sharp_Finite_Gaussian_Moments_Quadratic_Polynomials_Zongmin_Liu_v3.pdf",
+      "sha256": "3af1fb5c4959edb515f277c5b66423b5bf6c2f0f803da6b843235390e8221945"
+    }
+  ],
+  "protected_whole_records": 210,
+  "retained_proof_files": 363,
+  "retained_example_counts": [
+    211,
+    11,
+    37
+  ],
+  "paper_pages": 18,
+  "standalone_paper_complete": false,
+  "submission_ready": false,
+  "remaining_paper_obligations": [
+    "PAPER-A",
+    "PAPER-B-L",
+    "PAPER-B-R"
+  ],
+  "novelty_assessed": false,
+  "old_terminal_UNKNOWN_jobs_restarted": false,
+  "old_sealed_checkers_replayed": false,
+  "actual_image_kernel_computed": false,
+  "independent_replay": false,
+  "formal_verification": false,
+  "external_review": false,
+  "broader_goal_status": "active"
+}

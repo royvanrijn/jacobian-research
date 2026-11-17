@@ -1,0 +1,123 @@
+{
+  "scoped_validation": "PASS",
+  "checks": [
+    "HC4MYIL0 schema, dependencies, locks, checker hash and assurance",
+    "HC4MYIL1 schema, dependencies, locks, checker hash and assurance",
+    "HC4MYIL2 schema, dependencies, locks, checker hash and assurance",
+    "generic factor transfer, exact fixed-row class lattice and global carried theorem have explicit independent scopes and boundaries",
+    "parent remains open with three new forbidden attack classes and fixed/disjoint suspension refinements retired",
+    "fifty-eight method records have current fingerprints and exact fixed/disjoint, generic-only and plane-Keller boundaries",
+    "WORK-HC4-SCHUR has current fingerprints and a next step outside the closed fixed-multiplier class",
+    "WORK-HC4-RESIDUAL-AUDIT has current fingerprints and a next step outside the closed fixed-multiplier class",
+    "102 exact controls include factor transfer, lattice invariants, global monic division, boundary countercontrols and actual HC4 unit Hessians",
+    "the existing C-only closed-polynomial application is preserved and the C(T) field scope is newly explicit without stronger special-fibre imports",
+    "current navigation leads with the fixed-multiplier theorem and retains the outer polynomial and earlier stronger certificates"
+  ],
+  "new_claims": [
+    "HC4MYIL0",
+    "HC4MYIL1",
+    "HC4MYIL2"
+  ],
+  "previous_goal_turn_classification": "progress: all polynomial one-variable plane outputs and parameter-cover norm/critical-value theorems registered",
+  "current_progress": "Generative-polynomial reduction over C(T) transfers outer irreducibility to arbitrarily many polynomial variables. Every fixed disjoint multiplier A(X) contributes one exact outer root-lattice copy per distinct factor, independently of multiplicity. Source transitivity kills all invariants; the original polynomial relation supplies the full global free filtration and integral height-one fibres. Every carried plane fixed-multiplier suspension and its ambient/target polynomial automorphism saturation therefore closes in all admitted stable dimensions.",
+  "exact_current_replay_checks": 102,
+  "algebraic_group_and_scope_controls": 39,
+  "retained_receipt_counts_not_newly_replayed": {
+    "receipt-parameter-norms.json": 141,
+    "receipt-leading-fibre.json": 43,
+    "receipt-monic-covers.json": 48
+  },
+  "generated_views_refreshed": [
+    "index/core.md",
+    "index/hessian.md",
+    "index/README.md",
+    "index/documents.tsv",
+    "knowledge/work/core.md",
+    "knowledge/work/geometry.md",
+    "knowledge/work/hessian.md",
+    "STATUS.md"
+  ],
+  "newly_used_external_statements": [
+    {
+      "url": "https://arxiv.org/html/math/0608157v2",
+      "retained_file": "arzhantsev-petravchuk-closed-math-0608157v2.html",
+      "sha256": "8042645504f3535bae9ce6d656a68015b893dbf259888ca4708e69722d658cc9",
+      "statement": "Arzhantsev-Petravchuk Theorem 1(i) to (iii) over C(T)",
+      "expanded_field_scope": true,
+      "theorem_fully_reproved": false,
+      "new_source_bytes": false
+    }
+  ],
+  "full_registry_validation_failure": "KDSQ6: missing document consumer artifacts/generated-results/README.md",
+  "full_navigation_validation_passed": false,
+  "missing_artifacts_reconstructed": false,
+  "closed_frontier": [
+    "every positive-degree P in C(T)[Z_1,...,Z_k] after every complex plane Keller pullback",
+    "every fixed disjoint-multiplier suspension (T,A(X)Y-P(T,Z)), A in C[X] nonzero and deg_Z P>0",
+    "every ambient/target polynomial automorphism orbit of that carried-output class",
+    "all variable counts and admitted stable dimensions, with arbitrary fixed-factor multiplicities"
+  ],
+  "remaining_frontier": [
+    "parameter-dependent multipliers with correlated geometric row and outer-root actions",
+    "overlapping multiplier/root variable sets or other output geometries lacking the global filtration/fibre certificate",
+    "compatible ambient observables for arbitrary HC4 graph embeddings",
+    "unrestricted higher-dimensional outer irreducibility beyond the retained certificates",
+    "actual unit-Hessian endpoint representatives, both plane endpoints and unrestricted HC4/JC2"
+  ],
+  "arbitrary_field_outer_irreducibility_transfer": true,
+  "unrestricted_Keller_application_plane_only": true,
+  "fixed_multiplier_independent_of_T_and_Z": true,
+  "joint_Z_degree_positive_required": true,
+  "outer_degree_not_joint_degree_controls_lattice": true,
+  "multiplier_multiplicities_do_not_change_lattice": true,
+  "global_common_free_filtration_and_all_height_one_fibres_proved": true,
+  "ambient_and_target_polynomial_automorphism_saturation": true,
+  "special_fibre_classification_imported": false,
+  "proposition_2_base_extension_theorem_imported": false,
+  "generative_polynomial_assumed_coordinate": false,
+  "parameter_dependent_multiplier_asserted_covered": false,
+  "correlated_action_control_asserted_Keller_realization": false,
+  "full_splitting_group_preservation_inferred": false,
+  "arbitrary_graph_normal_form_asserted": false,
+  "nonlinear_source_Hessian_invariance_used": false,
+  "unit_ideal_endpoint_resolved": false,
+  "singleton_zero_endpoint_resolved": false,
+  "unrestricted_HC4_or_JC2_resolved": false,
+  "original_goal_complete": false,
+  "repository_checks": [
+    {
+      "command": "make render-navigation",
+      "chunk_id": "8f7489",
+      "wall_time_seconds": 0.3526951,
+      "exit_code": 1,
+      "original_token_count": 242,
+      "output": "make -C research PYTHON=\"/home/royvanrijn/src/jacobian-research/.venv/bin/python\" SYSTEM_PYTHON=\"python3\" \"render-navigation\"\nmake[1]: Entering directory '/home/royvanrijn/src/jacobian-research/research'\npython3 scripts/render_status.py\nTraceback (most recent call last):\n  File \"/home/royvanrijn/src/jacobian-research/research/scripts/render_status.py\", line 514, in <module>\n    main()\n  File \"/home/royvanrijn/src/jacobian-research/research/scripts/render_status.py\", line 503, in main\n    validate_index(index)\n  File \"/home/royvanrijn/src/jacobian-research/research/scripts/render_status.py\", line 360, in validate_index\n    assert consumer_path.is_file(), (\n           ^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: KDSQ6: missing document consumer artifacts/generated-results/README.md\nmake[1]: *** [Makefile:16: render-navigation] Error 1\nmake[1]: Leaving directory '/home/royvanrijn/src/jacobian-research/research'\nmake: *** [Makefile:17: render-navigation] Error 2\n"
+    },
+    {
+      "command": "make check-navigation",
+      "chunk_id": "0ed482",
+      "wall_time_seconds": 0.3488906,
+      "exit_code": 1,
+      "original_token_count": 213,
+      "output": "make -C research PYTHON=\"/home/royvanrijn/src/jacobian-research/.venv/bin/python\" SYSTEM_PYTHON=\"python3\" \"check-navigation\"\nmake[1]: Entering directory '/home/royvanrijn/src/jacobian-research/research'\npython3 scripts/audit_status.py\nTraceback (most recent call last):\n  File \"/home/royvanrijn/src/jacobian-research/research/scripts/audit_status.py\", line 8, in <module>\n    validate_index(index)\n  File \"/home/royvanrijn/src/jacobian-research/research/scripts/render_status.py\", line 360, in validate_index\n    assert consumer_path.is_file(), (\n           ^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: KDSQ6: missing document consumer artifacts/generated-results/README.md\nmake[1]: *** [Makefile:21: check-navigation] Error 1\nmake[1]: Leaving directory '/home/royvanrijn/src/jacobian-research/research'\nmake: *** [Makefile:17: check-navigation] Error 2\n"
+    },
+    {
+      "command": ".venv/bin/python research/scripts/research.py check --require-partial-review",
+      "chunk_id": "c2bffd",
+      "wall_time_seconds": 0.1414598,
+      "exit_code": 1,
+      "original_token_count": 180,
+      "output": "Traceback (most recent call last):\n  File \"/home/royvanrijn/src/jacobian-research/research/scripts/research.py\", line 563, in <module>\n    raise SystemExit(main())\n                     ^^^^^^\n  File \"/home/royvanrijn/src/jacobian-research/research/scripts/research.py\", line 440, in main\n    validate_lessons(items, entries, check_reviews=args.command == \"check\")\n  File \"/home/royvanrijn/src/jacobian-research/research/scripts/research.py\", line 130, in validate_lessons\n    assert (ROOT / p).is_file(), f\"{item['id']}: missing source {p}\"\n           ^^^^^^^^^^^^^^^^^^^^"
+    },
+    {
+      "command": "git diff --check -- research/MATH_STATUS.json research/knowledge/lessons.json research/knowledge/work_items.json research/hessian/hc4-triangular-graphs/README.md research/index research/knowledge/work research/knowledge/WORK_LEDGER.md research/STATUS.md",
+      "chunk_id": "6edd9f",
+      "wall_time_seconds": 0.2519049,
+      "exit_code": 0,
+      "original_token_count": 0,
+      "output": ""
+    }
+  ],
+  "required_repository_checks_all_passed": false,
+  "scoped_diff_whitespace_check": "PASS"
+}

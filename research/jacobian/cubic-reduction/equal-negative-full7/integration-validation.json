@@ -1,0 +1,89 @@
+{
+  "status": "pass",
+  "claim": "KCUB40",
+  "integration_checker_sha256": "7b2c25451ec21457cf6838c54973d332a7bed33a2edd36507e979c2e9bb94910",
+  "main_receipt_sha256": "7f6a01b37adcd3714401769b0a80ba105e5cab5124bc6f51768dd6f73bb42f36",
+  "proof_sha256": "089815f801cfc194a3e2e05a00529096bb4f853e9f07cdce46b64293d9fdb26c",
+  "model_and_import_pins_current": true,
+  "native_atoms": 33,
+  "post_leading_parameters": 21,
+  "short_coefficient_obstructions": 3,
+  "all_old_inputs_scripts_logs_checkpoints_immutable": true,
+  "old_timeout_statuses_unchanged": true,
+  "large_old_primary_certificate_unreplayed_and_unused": true,
+  "new_solver_queries": 0,
+  "parent_stage_receipts_current": true,
+  "dependency_graph_acyclic": true,
+  "affected_method_reviews": 27,
+  "work_fingerprints_current": true,
+  "links_compilation_whitespace": true,
+  "current_diagonal_weight_raw12_frontier_types": 0,
+  "only_degree7_diagonal_weight_collision_type": [
+    1,
+    -1,
+    -2
+  ],
+  "restricted_degree_support_dimension_minima": [
+    7,
+    13,
+    3
+  ],
+  "raw_count_scope": "Three-variable degree<=7 counted displayed diagonal weight coordinates;general source linear frames are outside this minimum.",
+  "matching_old_upper": {
+    "input_sha256": "c420c4b98f84b90258b22dbf1709cb12156d265be1d34232e0082962248c4c1f",
+    "degree": 7,
+    "counts": [
+      2,
+      5,
+      6
+    ],
+    "full_determinant_one": true,
+    "collision_points": [
+      [
+        0,
+        1,
+        -8
+      ],
+      [
+        -1,
+        1,
+        4
+      ]
+    ],
+    "common_image": [
+      0,
+      1,
+      0
+    ],
+    "new_witness": false
+  },
+  "previous_goal_turn_classification": "progress:KCUB39",
+  "this_goal_turn_classification": "progress:KCUB40 full111 closure and completed diagonal-weight sharp frontier",
+  "global_goal_complete": false,
+  "global_optima_still_open": [
+    "unrestricted three-variable degree within[5,7]",
+    "unrestricted raw nonlinear term minimum below existing13",
+    "normalized support within[10,48]",
+    "ordinary-cubic dimension within[4,12]",
+    "other special-form dimension and cubic/cube-linear support minima"
+  ],
+  "no_global_positive_bound_or_unrestricted_profile_change": true,
+  "navigation_attempts": [
+    {
+      "command": [
+        "research/scripts/render_status.py"
+      ],
+      "exit_code": 1,
+      "output": "Traceback (most recent call last):\n  File \"/home/royvanrijn/src/jacobian-research/research/scripts/render_status.py\", line 514, in <module>\n    main()\n  File \"/home/royvanrijn/src/jacobian-research/research/scripts/render_status.py\", line 503, in main\n    validate_index(index)\n  File \"/home/royvanrijn/src/jacobian-research/research/scripts/render_status.py\", line 360, in validate_index\n    assert consumer_path.is_file(), (\n           ^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: KDSQ6: missing document consumer artifacts/generated-results/README.md\n"
+    },
+    {
+      "command": [
+        "research/scripts/research.py",
+        "render"
+      ],
+      "exit_code": 1,
+      "output": "Traceback (most recent call last):\n  File \"/home/royvanrijn/src/jacobian-research/research/scripts/research.py\", line 563, in <module>\n    raise SystemExit(main())\n                     ^^^^^^\n  File \"/home/royvanrijn/src/jacobian-research/research/scripts/research.py\", line 440, in main\n    validate_lessons(items, entries, check_reviews=args.command == \"check\")\n  File \"/home/royvanrijn/src/jacobian-research/research/scripts/research.py\", line 130, in validate_lessons\n    assert (ROOT / p).is_file(), f\"{item['id']}: missing source {p}\"\n           ^^^^^^^^^^^^^^^^^^^^"
+    }
+  ],
+  "navigation_boundary": "Actual final-state attempts fail on the two unrelated pre-existing missing artifacts. Generated status is not hand edited;no unrelated artifact reconstruction."
+}

@@ -1,0 +1,167 @@
+{
+  "date": "2026-11-16",
+  "task": "Independent novelty/applicability audit requested by user; report leads for user to forward",
+  "report": "research/jacobian/cross-programme-connections/GAUSSIAN_INDEPENDENT_NOVELTY_AUDIT_2026_11_16.tex",
+  "report_sha256": "ea4392696a5ae76f0ba804bbf65dbe45dbcdbf90e1ec8c79ab53270ebeb3a1d8",
+  "examined_canonical_proofs": {
+    "research/moments/vanishing/GENERIC_BERNSTEIN_EQUATIONS_AND_FORMAL_GAP_CLOSURE.md": "9f3f8f003dae69abe255bcddf03606c00bcc5a4245028163a8c1750adfca4e2f",
+    "research/moments/vanishing/FORMAL_SAFETY_OVER_ALL_COEFFICIENT_RINGS.md": "3b8cd0768af6fedf4e312cca06ccf1cb919ae2ba1c7acca7358215e3142b738e",
+    "research/moments/vanishing/BOUNDED_BERNSTEIN_STEPS_AND_RATIONAL_SURVIVAL_SLOPES.md": "4a7d6bd50a5f789c27e75a9e54fd408ec83134eecb4545785328a58de0e45289",
+    "research/moments/vanishing/EFFECTIVE_BERNSTEIN_SLOPE_SELECTION_AND_CUTOFFS.md": "c77f107ebe3f1518d93d4dae121bda1afc7143988a94774d9aa477697cc138da"
+  },
+  "new_theorem_registered": false,
+  "mathematical_ledger_changed": false,
+  "peer_agents_messaged": false,
+  "external_outreach": false,
+  "novelty_certified": false,
+  "independent_full_proof_verification": false,
+  "findings": [
+    {
+      "scope": "all commutative Q-algebras, arbitrary formal symbols, all-marker safety/affine cutoffs/reduction/all-prime equivalence",
+      "verdict": "No exact antecedent located in examined sources; strongest candidate, not originality certification"
+    },
+    {
+      "scope": "rational first-survival slopes for convergent complex symbols",
+      "verdict": "Derived from classical Sabbah multivariable product-of-lines relation plus actual-image specialization and monotonicity; not a claim that literature explicitly names this sequence"
+    },
+    {
+      "scope": "rational first-survival slopes for arbitrary nonconvergent formal symbols",
+      "verdict": "Exact scope not located; meaningful distinction from analytic multivariable prior art"
+    },
+    {
+      "scope": "commutator and shifted-phase reductions",
+      "verdict": "Finite-operator mechanism already de Bondt 2013 Theorem1/Corollary2"
+    },
+    {
+      "scope": "certificate postprocessor",
+      "verdict": "Useful exact application; source packet makes no novelty claim; underlying b-algorithms and rational polynomial algebra are prior art"
+    },
+    {
+      "scope": "polynomial-input Bernstein producer",
+      "verdict": "Proposed use of Oaku2016 Algorithms3.6-3.8 on explicit Fourier exponential presentation; paper already retained for localization; implementation and uniform witnesses not supplied here"
+    }
+  ],
+  "forwardable_message": "Keep the general Gaussian/formal goal. Check Oaku1609.04676 Algorithms3.6-3.8 on the explicit polynomial Fourier exponential module to produce actual Bernstein certificates,including tracked torsion witnesses and specialization thresholds,for the current selector. Ambient identities descend to the actual image,which may avoid its full kernel. Credit Sabbah/Maisonobe for convergent-symbol rational slopes;isolate arbitrary nonconvergent formal scope and all-ring descent as strongest novelty candidates.",
+  "primary_download_metadata": [
+    {
+      "key": "debondt2013",
+      "url": "https://arxiv.org/pdf/1206.2836v2",
+      "sha256": "da2eee39043001e21221633937bd799ea366ef8274381ebb72846faf1579b65e",
+      "pages": 7,
+      "bytes": 128758
+    },
+    {
+      "key": "maisonobe2016",
+      "url": "https://arxiv.org/pdf/1610.03354",
+      "sha256": "bcdecf6e9cf1117e70b68bf426c06f98ca5c5b613b73173a8e3dc1cb923092b2",
+      "pages": 54,
+      "bytes": 388686
+    },
+    {
+      "key": "bvww2021",
+      "url": "https://arxiv.org/pdf/2111.03334v2",
+      "sha256": "9ff939d84fcfc057d316421d2015b49e6200321a4567f4639c21c8b4612e7832",
+      "pages": 17,
+      "bytes": 509141
+    },
+    {
+      "key": "ly2026",
+      "url": "https://arxiv.org/pdf/2609.05215v2",
+      "sha256": "201cfd096e3d32dc368e0b44186a80b54f4ec31d59274e5e77468deff16f9492",
+      "pages": 53,
+      "bytes": 687136
+    },
+    {
+      "key": "bahloul_oaku2008",
+      "url": "https://arxiv.org/pdf/0806.4869",
+      "pages": 15,
+      "sha256": "b335211ee8477c33ed93087da7a8a743b620293430195eda7620205fe8427462"
+    },
+    {
+      "key": "bahloul2003",
+      "url": "https://arxiv.org/pdf/math/0307179",
+      "pages": 16,
+      "sha256": "e0680ad2279a18a30f31a0142aef799656d3f80842ec4653c80dd77ef9925482"
+    },
+    {
+      "key": "bahloul2004",
+      "url": "https://arxiv.org/pdf/math/0410046",
+      "pages": 24,
+      "sha256": "067f103e05c599bfc74337cce8b1d068b305a5cae4dd0cd765352fc26ace61c9"
+    },
+    {
+      "key": "sabbah1987",
+      "url": "https://www.numdam.org/item/CM_1987__64_2_213_0.pdf",
+      "pages": 30,
+      "sha256": "8f85baa314f1baa4d4691c35169dd7945619f69a6ed027b7d634a28ddf0a97ec"
+    },
+    {
+      "key": "zhao2007",
+      "url": "https://arxiv.org/pdf/math/0702259",
+      "pages": 13,
+      "sha256": "7baf453d5c7680fd5e8ca0fa7756897043fc02bbe1cd373b6bcd78c9d42d721e",
+      "excluded": "Wrong guessed identifier: actual PDF is unrelated Ingham inequalities paper."
+    },
+    {
+      "key": "zhao2012",
+      "url": "https://arxiv.org/pdf/1005.4260",
+      "pages": 42,
+      "sha256": "59df163c1e61d3b76a71ec04a13e122265fa57ccd7338d4d4f7aa60ad216aeb6"
+    },
+    {
+      "key": "zhao2007correct",
+      "url": "https://arxiv.org/pdf/0704.1691",
+      "pages": 32,
+      "sha256": "d44f0ac697e65565c275f0444f99f6b8e7e19a9d2af48928652949043750c2ce"
+    },
+    {
+      "key": "debondt_uniform",
+      "url": "https://arxiv.org/pdf/1101.1112",
+      "pages": 27,
+      "sha256": "3d219e6593893a10993df105172bce29cb6df6fa3a1423bd9cfeeabf79750060"
+    },
+    {
+      "key": "samuel2023",
+      "error": "HTTP Error 403: Prohibido"
+    },
+    {
+      "key": "oaku2016",
+      "url": "https://arxiv.org/pdf/1609.04676",
+      "pages": 29,
+      "sha256": "d74758fe304d67a44a0d18ca1d79367126f56816b34346b07c5b937fe1ddf2c0"
+    },
+    {
+      "key": "oaku1997",
+      "url": "https://www.lab.twcu.ac.jp/oaku/aam1997.pdf",
+      "pages": 45,
+      "sha256": "9b706077fe8f98a345a4e6aae5879a22c834ef92621eadea323411bde93d7cf2"
+    },
+    {
+      "key": "samuel2023",
+      "error": "HTTP Error 403: Prohibido"
+    }
+  ],
+  "other_primary_links": [
+    "https://www.numdam.org/item/CM_1987__64_2_213_0/",
+    "https://ems.press/journals/rsmup/articles/10116774",
+    "https://link.springer.com/article/10.1007/s13163-023-00457-2",
+    "https://arxiv.org/abs/2211.13205",
+    "https://hexagonmath.org/2610.00580v2"
+  ],
+  "boundaries": [
+    "No general formal multivariable Bernstein nonvanishing theorem imported",
+    "No unrestricted coefficient-oracle algorithm claimed",
+    "No unsuspended-height bounded-error upgrade",
+    "No general pure-to-safe GVC or exceptional Haar MZ closure",
+    "No claim that every formal symbol has an effective finite polynomial presentation",
+    "2008 preprint open-question remark does not establish current general open status",
+    "Public abstract/index check of own GVC paper is not a full source audit"
+  ],
+  "validation": {
+    "json_valid": true,
+    "source_hash_matched": true,
+    "tex_compile_exit": 0,
+    "compiled_pdf_temporary_only": "/tmp/gaussian-novelty-final-fvesmv6b/GAUSSIAN_INDEPENDENT_NOVELTY_AUDIT_2026_11_16.pdf",
+    "full_mathematical_proof_validation": false
+  }
+}

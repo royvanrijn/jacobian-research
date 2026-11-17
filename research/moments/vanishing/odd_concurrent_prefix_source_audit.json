@@ -1,0 +1,171 @@
+{
+  "date": "2026-11-15",
+  "canonical_proof": "moments/vanishing/ODD_CONCURRENT36_PREFIX100.md",
+  "canonical_proof_sha256": "14fa528c9939440372fd2c6dd24a3319a0a3009923867bf272edd0f06281c54c",
+  "claims": [
+    "G3ODDCONCURRENT3620261115",
+    "G3ODD10020261115"
+  ],
+  "checker": "moments/vanishing/verify_odd_concurrent_prefix.py",
+  "checker_sha256": "e15607363f8f19376edab216968fbb6045b53ec556cdc19fe08c748d06531bdd",
+  "certificate_sha256": "e04207e029bf2b01c8b3a732468b3cf52eebc55d8800896db81d947f98e819d9",
+  "accepted_receipt_sha256": "9f60cc6ece57564b9bfcc917864db9fa5255ff3782ef67888a947fd7998fcb0a",
+  "prior_frontier": {
+    "path": "moments/vanishing/odd_concurrent100_preupdate_20261115.json",
+    "sha256": "a7e9a20f8d3064e44bf4e82083f415697798512acacffac678ce39a1248b9101"
+  },
+  "retained_inputs": {
+    "CONCURRENT_LINE_EXCLUSION.md": "9a6f0f9e16b74daf0c20627d94c248b7e02128cd182b3c6152b0ca3385a4c056",
+    "CUBIC_HEIGHT_AIRY_OBSTRUCTION.md": "6450ba70bed52431953b2cfbe87189df5e9ab5780433cab3fe4be0cf30fab8e0",
+    "SQUAREFREE_SINGULAR_FINITE_PREFIXES.md": "f42af6f91929965309498626a79e78de2c249ec0698e9713c8bf7a11e4311822",
+    "verify_concurrent_line_profiles.py": "f14a86c8587aedaf054b62a62b74a3f08ab7b8d8a7d235cfe3c78cd3db811e11",
+    "verify_cubic_height_obstruction.py": "004dbf9dcdf60b159e25b9625cd1d3ee152b8553f86431262e798fb871a325c4",
+    "verify_squarefree_singular_finite_prefixes.py": "3d5fbdbd22fe7663a0d980d071b2fd6ff55cee4540b447a989577a6c53d92eb3",
+    "concurrent_line_profiles_verification.json": "88c22ec592ecccecba2b32f62a8af436d83f26b0ede0a95d04f9e130c97ee6ff",
+    "concurrent_line_source_audit.json": "3655c07546e6aad64f7b924d152d4c4690fde7bda0630ee8f6ca9228fe9d3bb8",
+    "cubic_height_verification.json": "9a8fc5a5c6c579399f79a2aa61d7255c5a09cc2b5288813751909d1a78a5da7b",
+    "squarefree_singular_finite_source_audit.json": "bda9ec1bac0761450c4f1cfb55eadb7bc5bd0aa4c88a0bb6ecaf4612ae0bd362",
+    "conic_completed_row_factors_source_audit.json": "59f4d3cd0e2a344bda067ca699603bd9ba65db8ecec0ffd93ae53359375fd4c6",
+    "conic_completed_row_factors_verification.json": "7e69100b97521ea80fc0597a9e4fc9ab58b20adab58512ce3c7250757bdb742d",
+    "weighted_odd_prefix108_source_audit.json": "38b557c407f93545a026cb2df5f702bbd347f9d1e1f26977a3c52381112a20f0",
+    "ordinary_normal_seed_module_source_audit.json": "0528d59f58c09748117afaecb6af65f964749681c29f38216cec338d9b047b31"
+  },
+  "current_history_index": "moments/vanishing/PREFIX_PROOF_HISTORY_CURRENT.md",
+  "previous_goal_turn_classification": "progress: full negative conic row factors plus complete p2q2 endpoint cases established conic/full-W-linear96,homogeneous96 and complete odd104; authoritative records and scoped checks completed.",
+  "odd_concurrent_method": {
+    "P2_P0_zero": true,
+    "leading_normalizations_linear": true,
+    "Gaussian_center_and_cross_coefficients_retained": true,
+    "nonisotropic_vertex": "P=hT+u^3+v^3+e*u+f*v; m!=0 constant",
+    "binary_volume_factor": "t^-2",
+    "binary_normalized_phase": "u^3+v^3-q+t^2*L+c0*t^4",
+    "ordinary_volume_divergence_retained": true,
+    "binary_source_cost": 4,
+    "binary_h_zero_source_cost": 3,
+    "binary_row_degree": "c*j-|e|",
+    "binary_basis": [
+      "1",
+      "u",
+      "v",
+      "u*v"
+    ],
+    "binary_normal_cost": 0,
+    "actual_denominator": "t^(3j)",
+    "scalar_valuation": "3j",
+    "isotropic_vertex": "constant-W coefficient a; centered Witt frame; formal fixed point Z=a*t and determinant1",
+    "cubic_frame_weights": [
+      1,
+      2
+    ],
+    "cubic_frame_source_cost": 6,
+    "cubic_frame_normal_cost": 0,
+    "flat_Gaussian_denominator_unit_at_zero": true,
+    "flat_log_derivative_numerator_degree_max": 7,
+    "all_vertex_faces_retained": true
+  },
+  "class_bounds": {
+    "odd_nonisotropic_concurrent_gate": 36,
+    "odd_nonisotropic_h_zero_gate": 26,
+    "odd_isotropic_cubic_height_gate": 16,
+    "odd_isotropic_flat_gate": 8,
+    "odd_concurrent_full_gate": 36
+  },
+  "odd_cover": {
+    "quadratic": 7,
+    "smooth": 94,
+    "nodal": 100,
+    "cusp": 94,
+    "transverse": 98,
+    "tangent": 94,
+    "triangle": 96,
+    "concurrent": 36,
+    "repeated": 98
+  },
+  "global_cover_unchanged": {
+    "quadratic": 7,
+    "smooth": 94,
+    "nodal": 129,
+    "cusp": 130,
+    "transverse": 127,
+    "tangent": 120,
+    "triangle": 118,
+    "concurrent": 104,
+    "repeated": 99
+  },
+  "global_sufficient_pure_prefix": 130,
+  "odd_sufficient_pure_prefix": 100,
+  "homogeneous_sufficient_pure_prefix": 96,
+  "conic_full_W_linear_gate_unchanged": 96,
+  "least_prefix_interval": [
+    20,
+    130
+  ],
+  "odd_least_prefix_interval": [
+    20,
+    100
+  ],
+  "homogeneous_least_prefix_interval": [
+    14,
+    96
+  ],
+  "smooth_leading_least_prefix_interval": [
+    20,
+    94
+  ],
+  "smooth_homogeneous_least_prefix_interval": [
+    14,
+    56
+  ],
+  "frame_condition_required_for_global130": false,
+  "binary_search_rounds_max": 7,
+  "exact_auxiliary_evidence": {
+    "binary_source_gauge_identities": 15,
+    "binary_principal_identities": 62,
+    "cubic_frame_gauge_identities": 9,
+    "cubic_frame_principal_identities": 11,
+    "binary_models": 4,
+    "binary_seed_identities": 16,
+    "cubic_frame_models": 4,
+    "cubic_frame_seed_identities": 12,
+    "Gaussian_flat_models": 4,
+    "Gaussian_flat_direct_positive_moments": 32
+  },
+  "historical_proof_immutability": {
+    "JOINT_DEGREE_GLOBAL_353.md": "5369191d5a67c2d05750033ef3d9d19c6ad61afcfb2d532a0a0c6f1016c451f9",
+    "EULER_REPRESENTATIVES_GLOBAL_297.md": "3a7591c55c7ae52b23f00a897c58ca42105de1b680521d46a596f2d7ef3fd631",
+    "SHARED_DIVISOR_GLOBAL_258.md": "5146f6676da462bfd741bde1ec9d8184eddc292389467005207e0e3d2df8aaf9",
+    "STRUCTURED_SEEDS_GLOBAL_239.md": "c5d09c4aadac8bc9911d9460034507a446d7c507e10950b324e594273d70d924",
+    "COMMON_TIME_FACTOR_GLOBAL_224.md": "4429c2c08cbabace6b1b23e2a6f501205068a43d04810a859d81d76133ca5208",
+    "POLE_FILTERED_GLOBAL_199.md": "ac04552d1dcfd4d8ea214aae3950976ec6b30442f097ef8129d5f2682454c41f",
+    "MULTIPLE_DIVISORS_GLOBAL_174.md": "2e4d1808e43ba5fcfce4a86a8bf15a0c20166e5994346a2db2c02cbc44787bba",
+    "NORMAL_MODULE_GLOBAL_146.md": "f58675c096e137292e813852894603153a41c70bd1bff681ee788908334baa6a",
+    "TWO_SIDED_CONIC_GLOBAL_140.md": "e862be29b4eafe29d5cbc0df6ca003294e0523409afb441669527fae2a47654f",
+    "RANK_FACTORS_AND_REDUCTION_GLOBAL_130.md": "d39725481b3e733c399e60a42663d4311f9fe76f5698fce2842a5782f86762dc",
+    "CONIC108_ODD126_GLOBAL130.md": "8caf3664ebb6149f3c48c49304447df9811c5b46421ece776bb2f77415c58697",
+    "PREFIX_PROOF_HISTORY.md": "3426a5a8e60d0d14f177e23e2c9e157778eae3644ec2caa564af9c17d4b8997c",
+    "WEIGHTED_ODD_PREFIX108.md": "c9238da9e5b7e2e7242cdf999bd7105a5d131b441b9a373fad420842fc79c878",
+    "CONIC_ROW_FACTORS_96_ODD104.md": "18a67c884339a850cb02093c49988d374e3e209dc2b6e2ca25b132dc96ba11b9"
+  },
+  "analytic_boundary": "Same nonisotropic binary quotient and original Wick seed; full ordinary-volume radial Euler divergence retained, no changed metric or omitted mean/cross term. Constant h follows from oddness. Isotropic vertex is retained as constant-W frame, with cubic-height no-rational-log-derivative from the existing formal Airy Riccati theorem and an explicit flat Gaussian log derivative. Universal all-degree reductions, full vertex/class/frame cover and minimal seed/period comparison remain written inputs.",
+  "literature_boundary": "No fresh literature-coverage claim, external theorem or producer package. The selected primary-source refresh remains retained.",
+  "least_prefix_computed": false,
+  "full_coefficient_radical_search_executed": false,
+  "expanded_global_radical_cofactors_computed": false,
+  "universal_written_proof_certified_by_checker": false,
+  "independent_replay": false,
+  "external_review": false,
+  "formal_verification": false,
+  "new_external_theorems_imported": false,
+  "producer_package_executed": false,
+  "assurance": "Internal centered-odd concurrent36 and complete odd100 written proof, retaining the full isotropic vertex. Exact evidence:97 source-gauge/principal identities,28 actual seeds in eight models,32 direct flat Gaussian moments and generic completion/Schur/rescaling/log-derivative identities, plus all-rank/row arithmetic. Universal reductions/cover, nonisotropic analytic exclusion and formal Airy Riccati theorem remain written, independently unreviewed inputs. No independent, external or formal certification.",
+  "remaining": [
+    "Least global[20,130], odd[20,100], homogeneous[14,96]",
+    "Twenty/fourteen-moment sufficiency",
+    "Smaller global cusp130/node129, odd node100 and homogeneous conic96 bounds",
+    "Expanded I130 radical cofactors",
+    "Independent analytic review",
+    "Exceptional coefficient schemes",
+    "Global term-count minima",
+    "Lower-power GVC"
+  ]
+}

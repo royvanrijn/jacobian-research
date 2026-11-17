@@ -1,0 +1,42 @@
+{
+  "status": "pass",
+  "claim": "KCUB33",
+  "checker_receipt_sha256": "d9202c319012d38791c7d1571e0403be52a590fd41da16c28daaa4509d788851",
+  "canonical_proof_sha256": "3f5e65fc7614bbeecb960b4d1d335baf52e8ce9806db0913c197345c0d20b35d",
+  "checker_sha256": "58432761ef36ba32d73b22cf9bacc157b8c1ede5038ce9cb1bf13108541a2595",
+  "full_atoms": 169,
+  "reduced_atoms": 43,
+  "models": 14,
+  "universal_coefficients": 3,
+  "nonzero_support_masks": 7,
+  "leading_degree_cases": 9,
+  "inverse_controls": 14,
+  "affected_method_reviews": 16,
+  "ledger_required_fields_paths_and_reciprocity": true,
+  "work_fingerprints_sources_unique_current": true,
+  "local_proof_links_and_compilation": true,
+  "targeted_git_diff_whitespace": true,
+  "previous_goal_turn_progress": "KCUB32",
+  "this_goal_turn_progress": "KCUB33: full primitive opposite-weight(m,-q,-m),m>=2 classification throughdegree7",
+  "large_primary_units_unused": true,
+  "no_positive_bound_or_full_profile_change": true,
+  "global_goal_complete": false,
+  "navigation_attempts": [
+    {
+      "command": [
+        "research/scripts/render_status.py"
+      ],
+      "exit_code": 1,
+      "output": "Traceback (most recent call last):\n  File \"/home/royvanrijn/src/jacobian-research/research/scripts/render_status.py\", line 514, in <module>\n    main()\n  File \"/home/royvanrijn/src/jacobian-research/research/scripts/render_status.py\", line 503, in main\n    validate_index(index)\n  File \"/home/royvanrijn/src/jacobian-research/research/scripts/render_status.py\", line 360, in validate_index\n    assert consumer_path.is_file(), (\n           ^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: KDSQ6: missing document consumer artifacts/generated-results/README.md"
+    },
+    {
+      "command": [
+        "research/scripts/research.py",
+        "render"
+      ],
+      "exit_code": 1,
+      "output": "Traceback (most recent call last):\n  File \"/home/royvanrijn/src/jacobian-research/research/scripts/research.py\", line 563, in <module>\n    raise SystemExit(main())\n                     ^^^^^^\n  File \"/home/royvanrijn/src/jacobian-research/research/scripts/research.py\", line 440, in main\n    validate_lessons(items, entries, check_reviews=args.command == \"check\")\n  File \"/home/royvanrijn/src/jacobian-research/research/scripts/research.py\", line 130, in validate_lessons\n    assert (ROOT / p).is_file(), f\"{item['id']}: missing source {p}\"\n           ^^^^^^^^^^^^^^^^^^^^"
+    }
+  ],
+  "navigation_failure_scope": "Pre-existing unrelated missing source artifacts; no automatic reconstruction or generated status hand edit."
+}

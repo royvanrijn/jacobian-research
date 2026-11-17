@@ -1,0 +1,301 @@
+{
+  "date": "2026-11-15",
+  "canonical_proof": "moments/vanishing/QUADRATIC_OPERATORS_AFFINE_TERMS_AND_CLOSED_SAFETY.md",
+  "canonical_proof_sha256": "04c7ad9bdcc0ee911939fbaa2a39397a7b19e43d3b7314f4cc5826716f66fac8",
+  "claims": [
+    "GVCQUADHEAT20261115",
+    "GVCQUADCLOSED20261115",
+    "GVCNO3QUADLIFT20261115"
+  ],
+  "checker": "moments/vanishing/verify_quadratic_operator_safety.py",
+  "checker_sha256": "3f704db032258833880a9ff666c5b796afa8a9980f62af8056a441b543a9302a",
+  "receipt": "moments/vanishing/quadratic_operator_safety_verification.json",
+  "receipt_sha256": "5f9356fdb5a166db99c8f723dc6e4953b3c0d40c6777685c93e8f6950e6bff4f",
+  "prior_frontier": "moments/vanishing/quadratic_operator_safety_preupdate_20261115.json",
+  "retained_proof_hashes": {
+    "RANK_ONE_IMAGES_AND_NILPOTENT_CUTOFFS.md": "aba165edb640a2b74e448db688520d4f8a7f31477c75ac950cc6571806a29e27",
+    "rank_one_image_source_audit.json": "e2cb6a2665b0287cf5e6ea53873d4df08fece3bdc693804318c33ad21ab9014c",
+    "HOLONOMIC_SOURCES_AND_CUTOFF_LOCI.md": "667d72556c1501ae445742be48463472a687cb24acec54653d34275f5c00c9d0",
+    "holonomic_source_cutoff_source_audit.json": "7e77ba8f6dd2823a6f90053a0faf8326259f4e54f68c8f29655dadb6dc66fee3",
+    "ALGEBRAIC_SPECIALIZATION_AND_FINITE_FAMILY_DECISION.md": "b4975f1c9dd56dd66577af640d6a75044fcbb2e7f1a20e0b9fe0fc73b3c3ef87",
+    "CONSTANT_COEFFICIENT_OPERATOR_DECISION.md": "46e5f727ff999bb243adab5584697db112ac63b6503c0b896d05ae405a8613db",
+    "FINITE_MULTIPLIER_MIXED_DECISION.md": "4dc09aede00f0493238f528bf2b6a7320b3480fb45dd77c1b9ccedf22a27a56e",
+    "LINEAR_MIXED_CUTOFF_FROM_B_FUNCTION.md": "9c5842fe7f67dadc417b6c259f981caed14fc3d44f47401f572d49bcfc433ad1",
+    "CUBIC_AFFINE_W_CLASSIFICATION.md": "86e82cb0acbb0ff8cbb87c448f36e742317765eaf841903d3b5393160a920218",
+    "ACTUAL_DIRECTION_RANK_ONE_RIGIDITY.md": "525a5a306c59f2d24a9f7eb5e9a715d56f57b3acdbccbfeec7c8e082c7d0c90b",
+    "PRIMARY_THICKENING_MOMENT_IDEAL_ALGORITHM.md": "184f834e9955a536a18637f1cbb85066857a4e6df971fb95974ebd8e3e2360d9",
+    "RANK_ONE_TWO_BRANCH_GLOBAL94.md": "170efb4905b486a695e4924e4c4dbdeb67df8dd48c7f1e4f519dd5259743f989",
+    "ACTUAL_PERIOD_KERNEL_AND_ALGEBRAIC_IMAGES.md": "7beec8e370120738aa558b6dd4422ff38f2ae4670f75df5fb008e5ce6576eeb8",
+    "actual_period_kernel_source_audit.json": "b0a93e5da5a57b08c0ace1a1553eaea5ed723ffc5b77e34165ccec58b38eaee0",
+    "RATIONAL_CORES_AND_BOUNDARY_SUBSPACES.md": "3ab075933db65b79df4bbaaa411cc63fad9913e59a91f709636ffc97ae80aedb",
+    "period_boundary_geometry_source_audit.json": "d3292181d6ed809ac120fc901755d389d539d1d425291e015a07ffc8a4caeea9",
+    "LOGARITHMIC_CURVE_PERIOD_CRITERION.md": "c30318b771f2f91175a1c922ab197217d18b7fab124e4376b08ad513af40ffa2",
+    "logarithmic_curve_criterion_source_audit.json": "81d6da61726efc5b6b41243b75b6b718e678df0f617e3a659ecfbe7a1462737d",
+    "verify_actual_direction_rank_one.py": "00108d25777cc1cfebcd5179702ea1ef961c5e8088017e85af58766892096a0b",
+    "actual_direction_rank_one_source_audit.json": "024d28ab8c0f6bf16ea5b29a29cb5b23bfa8bcb6e6dd3448029456481e27dae0",
+    "LEADING_COEFFICIENT_DECAY_AND_CONSTANT_B.md": "ad73a4c317eabf9f22985aa4e0640c15066acc7cbe481935b65b5c76b7bd611a",
+    "constant_b_all_degree_source_audit.json": "5e28e0b15deb5e082a708f1bba81fdc90823f495898a2621f778c3684be2e7a5",
+    "SQUAREFREE_LINEAR_T_ALL_DEGREE.md": "803fc7c409c3713107d301c3c105d9f209ff07194efae4f0d1b14e13d5e1056a",
+    "squarefree_linear_t_source_audit.json": "ffd46efb1467a979cbb128d3ebe7fd266cb082cd782b2e6b4d97b094aac00f44",
+    "RATIONAL_GAUSSIAN_PULLBACKS_AND_IRREGULAR_RANK.md": "3d56816a5be24f6f3af1aaa0fb103ea4f728263cd3e8cbfc7bf9161861dd7dd9",
+    "rational_gaussian_pullback_source_audit.json": "6c1a2caaaf58625456df091809bed102b4e7e8fb92ed116f99104ffa432b631b",
+    "LAPLACIAN_INVERSE_CERTIFICATES_AND_CLOSED_SAFE_LOCI.md": "94c3b94b9db7804f6fe3366898936db7a5f3107dfddcc066e3416b09bbd5678d",
+    "laplacian_inverse_source_audit.json": "9cdd1b9872db519d5510e4b082c8a819cb3ee244556ec5966e3eebb74abdd02b"
+  },
+  "retained_frontier_hashes": {
+    "foundations/extended-geometry/DVORSKY_GVC5_COUNTEREXAMPLE.md": "1fa06c3d478fe9c04e3b22c3aaa62ad6fc43c01a83e27a62f34b2fb979d3497b",
+    "foundations/extended-geometry/DVORSKY_ONE_PAIR_SCHUR_OBSTRUCTION.md": "6a9f9186d130dcdf5653a105aea1e2119110aebd80cf887243baf10bbf803994",
+    "foundations/extended-geometry/GVC3_POWER_TAIL_AND_MINIMUM_FRONTIER.md": "5fff1bb5aae08c4bb968d7b4945086944d698a54fcc7bd08c8f9fdcd014b474f",
+    "foundations/extended-geometry/TWO_PAIR_IMAGE_MATHIEU_COUNTEREXAMPLE.md": "7f7c78a729910136bf5ca28eceda86778e73309bde4e9752f1cd8da4354a00aa",
+    "foundations/extended-geometry/TWO_PAIR_SIC_BIDEGREE33_FRONTIER.md": "346d8e9da14d7b64f2fa01eef95cd65dc4d9870135d8e330823d4485d22135fa"
+  },
+  "retained_auxiliary_hashes": {
+    "foundations/extended-geometry/FORMAL_GAUSSIAN_LAGRANGE_LEMMA.md": "1299752c6b71392bb00580ca3104b2ed813490034e43cf90dfbc0e0b8f573061"
+  },
+  "primary_scope_audit": [
+    {
+      "paper": "Zhao,Some Properties of and Open Problems on Hessian Nilpotent Polynomials",
+      "url": "https://arxiv.org/html/0704.1689v2",
+      "version": "v2,25February2008;the HTML body date August24,2026 is not a new arXiv version",
+      "read": "Abstract,Introduction1.1,Proposition1.2,Theorem1.3 and the normalization/time-polynomiality paragraphs",
+      "use": "Confirms the original order-at-least-two hypothesis;the new Laurent heat-log proof explicitly removes it for polynomials and singular quadratic operators",
+      "boundary": "No graph,theory-of-convergence,self-inverting or positive-characteristic theorem imported;new proof is supplied directly",
+      "retained_file": "moments/vanishing/sources/zhao_0704_1689v2.html",
+      "sha256": "93990ce2a0d57ff399ea854c5e89c1dae67cc27875c04b08ba115fb4b54d50fd"
+    },
+    {
+      "paper": "de Bondt,A few remarks on the Generalized Vanishing Conjecture",
+      "url": "https://arxiv.org/html/1206.2836v2",
+      "version": "v2,6February2013;previously retained",
+      "read": "Theorem1 and commutator proof,Corollary2 and fixed-Laplacian explanation",
+      "use": "The degree-loss commutator lemma applies to Lambda_A and converts inverse-potential time degree into every-multiplier cutoff",
+      "boundary": "No extension to first-order terms in the operator or arbitrary-order single-multiplier equivalence is inferred",
+      "retained_file": "moments/vanishing/sources/de_bondt_1206_2836v2.html",
+      "sha256": "9baa331ff6026cd553b789a85d9eff94d0abb98f6046dae251e2d75c635f56c2"
+    }
+  ],
+  "new_external_theorem_imported": false,
+  "fresh_exhaustive_literature_coverage": false,
+  "heat_log_extension": {
+    "scope": "Any characteristic-zero field,any symmetric constant A including rank0,and any polynomial P including affine terms;Lambda_A=sumAij*d_i*d_j",
+    "formal_topology": "t-adic with polynomial x coefficients;the normalized heat-log coefficients are finite Laurent polynomials in s",
+    "key_degree_lemma": "Every t coefficient of logH has s degree<=1 by its heat-log PDE",
+    "finite_pure_test": "Firstn polynomial identities Lambda_A^m P^m vanish iff (A HessP)^n=0 iff all pure identities vanish",
+    "inverse_criterion": "Full mixed safety iff single multiplier P tail is finite iff full scalar U_t polynomial iff x-tAgradientP has a polynomial K[t] inverse",
+    "potential": "U=P(G)-t/2*gradientP(G)^T*A*gradientP(G)",
+    "singular_boundary": "AgradientU alone does not determine U;the scalar formula retains time-dependent kernel potentials",
+    "pointwise_cutoff": "m>(1+deg_tU)*degQ"
+  },
+  "affine_extension": {
+    "identity": "P=Pstar+c^Tx+c0;G=Gstar(x+tAc);U=Ustar(x+tAc)+c^Tx+c0+t*c^TAc/2",
+    "consequence": "Purity and safety are invariant in both directions;the numerical cutoff need not stay unchanged"
+  },
+  "closed_uniform_family": {
+    "scope": "All symmetric A of every rank and all P of degree<=D in fixed n variables,over fields",
+    "normalization": "Remove only the constant and linear terms of P;this preserves safety and makes the global x-inverse recursion valid",
+    "B": "(D-1)^(n-1)",
+    "common_cutoff_C": "2n*(D-1)^(n-1)-n+1 forD>=2;C1 suffices forD<=1",
+    "finite_equations": "Compute the polynomial-time formal inverse of x-tAgradientPstar through homogeneous xdegreeB,and impose both composition identities",
+    "closed_across_rank_drop": true,
+    "uniform_bound_proof": "Use active rankq after scalar extension,passive fraction field,normalized inverse bounds and explicit affine translation;C(q,D)<=C(n,D)",
+    "chain": "Increasing closed field cutoff loci stabilize by C(n,D)",
+    "ordinary_nonreduced_conclusion": false,
+    "general_Gaussian_conclusion": false
+  },
+  "cubic_no_go": {
+    "positive": "Every pure degree<=3 phase satisfies GVC for every homogeneous quadratic constant-coefficient operator in every dimension",
+    "input": "Wang quadratic-map theorem,previously imported;Gabber and nilpotent-linear-part recursion make the inverse polynomial in time",
+    "excluded": "Any valid obstruction-preserving quadraticization of the Dvorsky cubic that retains polynomial phase degree<=3,in any auxiliary dimension,with any polynomial multiplier",
+    "not_excluded": "Higher-degree phases,operators with lower-order terms,or different hypotheses;DVG4 separately excludes its canonical one-pair completion in every degree",
+    "protected_frontiers_changed": false
+  },
+  "assurance": {
+    "new_proof": "Written formal algebraic extension;no contours,convergence assumptions or source-rank extrapolation",
+    "classical_inputs": "Gabber/Wang retained through the previous normalized proof/source audit;no new external theorem imported",
+    "independent_review": false,
+    "novelty_claim": false
+  },
+  "small_replay": {
+    "completed": true,
+    "python_version": "3.12.3",
+    "sympy_version": "1.14.0",
+    "affine_rank_drop_both_inverse_compositions": true,
+    "full_scalar_affine_term_mutation_rejected": true,
+    "singular_kernel_potential_mutation_rejected": true,
+    "pure_and_shifted_contraction_controls": 21,
+    "Laurent_heat_log_controls": [
+      {
+        "case": "rank_drop_affine",
+        "pure_first_two": [
+          true,
+          true
+        ],
+        "s_degree_at_most_one": true,
+        "nonpositive_s_power_present": false,
+        "HJ_coefficient_controls": 3
+      },
+      {
+        "case": "singular_kernel",
+        "pure_first_two": [
+          true,
+          true
+        ],
+        "s_degree_at_most_one": true,
+        "nonpositive_s_power_present": false,
+        "HJ_coefficient_controls": 3
+      },
+      {
+        "case": "harmonic_non_HN",
+        "pure_first_two": [
+          true,
+          false
+        ],
+        "s_degree_at_most_one": true,
+        "nonpositive_s_power_present": true,
+        "HJ_coefficient_controls": 3
+      },
+      {
+        "case": "nonharmonic",
+        "pure_first_two": [
+          false,
+          false
+        ],
+        "s_degree_at_most_one": true,
+        "nonpositive_s_power_present": true,
+        "HJ_coefficient_controls": 3
+      }
+    ],
+    "cutoff_arithmetic_controls": [
+      {
+        "n": 1,
+        "D": 2,
+        "C": 2
+      },
+      {
+        "n": 2,
+        "D": 2,
+        "C": 3
+      },
+      {
+        "n": 3,
+        "D": 2,
+        "C": 4
+      },
+      {
+        "n": 4,
+        "D": 2,
+        "C": 5
+      },
+      {
+        "n": 5,
+        "D": 2,
+        "C": 6
+      },
+      {
+        "n": 1,
+        "D": 3,
+        "C": 2
+      },
+      {
+        "n": 2,
+        "D": 3,
+        "C": 7
+      },
+      {
+        "n": 3,
+        "D": 3,
+        "C": 22
+      },
+      {
+        "n": 4,
+        "D": 3,
+        "C": 61
+      },
+      {
+        "n": 5,
+        "D": 3,
+        "C": 156
+      },
+      {
+        "n": 1,
+        "D": 4,
+        "C": 2
+      },
+      {
+        "n": 2,
+        "D": 4,
+        "C": 11
+      },
+      {
+        "n": 3,
+        "D": 4,
+        "C": 52
+      },
+      {
+        "n": 4,
+        "D": 4,
+        "C": 213
+      },
+      {
+        "n": 5,
+        "D": 4,
+        "C": 806
+      },
+      {
+        "n": 1,
+        "D": 5,
+        "C": 2
+      },
+      {
+        "n": 2,
+        "D": 5,
+        "C": 15
+      },
+      {
+        "n": 3,
+        "D": 5,
+        "C": 94
+      },
+      {
+        "n": 4,
+        "D": 5,
+        "C": 509
+      },
+      {
+        "n": 5,
+        "D": 5,
+        "C": 2556
+      }
+    ],
+    "universal_Laurent_log_proof_inferred_from_samples": false,
+    "general_inverse_or_closed_locus_producer_executed": false,
+    "general_Gaussian_uniformity_proved": false,
+    "ordinary_nonreduced_ideal_answer": false,
+    "operators_with_lower_order_terms_covered": false,
+    "higher_degree_quadraticization_excluded": false,
+    "external_quartic_witness_replayed": false,
+    "protected_ternary_frontier_changed": false,
+    "independent_review": false,
+    "formal_verification": false,
+    "novelty_claim": false,
+    "checker_sha256": "3f704db032258833880a9ff666c5b796afa8a9980f62af8056a441b543a9302a"
+  },
+  "universal_Laurent_log_proof_inferred_from_samples": false,
+  "general_inverse_or_closed_locus_producer_executed": false,
+  "general_Gaussian_uniformity_proved": false,
+  "ordinary_nonreduced_ideal_answer": false,
+  "operators_with_lower_order_terms_covered": false,
+  "higher_degree_quadraticization_excluded": false,
+  "external_quartic_witness_replayed": false,
+  "protected_ternary_frontier_changed": false,
+  "independent_review": false,
+  "formal_verification": false,
+  "novelty_claim": false,
+  "remaining": [
+    "Independent review of Laurent heat-log truncation,affine extension and rank-uniform closedness/cutoff proof",
+    "General Gaussian safe-locus uniformity;operators with lower-order terms and order>=3;ordinary nilpotent coefficient geometry",
+    "General closed-locus/inverse producers remain unimplemented;smaller quartic witnesses and external reported ancillary replay remain separate",
+    "No repeat of degree<=3 obstruction-preserving homogeneous-quadratic lifts in any auxiliary dimension;higher-degree compression remains possible",
+    "Other repeated-root Gaussian phases,several spectators,actual connection classifications,denseSIC33 and least ternary Delta powers remain open"
+  ]
+}

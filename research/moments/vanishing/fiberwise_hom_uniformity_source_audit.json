@@ -1,0 +1,381 @@
+{
+  "date": "2026-11-15",
+  "canonical_proof": "moments/vanishing/FIBERWISE_POLYNOMIAL_HOM_AND_GAUSSIAN_FIELD_UNIFORMITY.md",
+  "canonical_proof_sha256": "c0eefd0d41afd675bdd47bf62a7ad8289a1112adbc1230def39f42c860b7e231",
+  "claims": [
+    "MVFIBERHOMSTRATA20261115",
+    "GMCFIELDCLOSED20261115",
+    "GMCUNIFORMRED20261115"
+  ],
+  "checker": "moments/vanishing/verify_fiberwise_hom_uniformity.py",
+  "checker_sha256": "c2a885b22f0794f3e113d45f4aa5a22984f0872ec7aa0869ea9b8c6a3879d3c2",
+  "receipt": "moments/vanishing/fiberwise_hom_uniformity_verification.json",
+  "receipt_sha256": "7ff862bac8e4378e24d8c641670455822531d76620f1f28e29e03f5eaeead2bc",
+  "prior_frontier": "moments/vanishing/fiberwise_hom_uniformity_preupdate_20261115.json",
+  "retained_proof_hashes": {
+    "RANK_ONE_IMAGES_AND_NILPOTENT_CUTOFFS.md": "aba165edb640a2b74e448db688520d4f8a7f31477c75ac950cc6571806a29e27",
+    "rank_one_image_source_audit.json": "e2cb6a2665b0287cf5e6ea53873d4df08fece3bdc693804318c33ad21ab9014c",
+    "HOLONOMIC_SOURCES_AND_CUTOFF_LOCI.md": "667d72556c1501ae445742be48463472a687cb24acec54653d34275f5c00c9d0",
+    "holonomic_source_cutoff_source_audit.json": "7e77ba8f6dd2823a6f90053a0faf8326259f4e54f68c8f29655dadb6dc66fee3",
+    "ALGEBRAIC_SPECIALIZATION_AND_FINITE_FAMILY_DECISION.md": "b4975f1c9dd56dd66577af640d6a75044fcbb2e7f1a20e0b9fe0fc73b3c3ef87",
+    "CONSTANT_COEFFICIENT_OPERATOR_DECISION.md": "46e5f727ff999bb243adab5584697db112ac63b6503c0b896d05ae405a8613db",
+    "FINITE_MULTIPLIER_MIXED_DECISION.md": "4dc09aede00f0493238f528bf2b6a7320b3480fb45dd77c1b9ccedf22a27a56e",
+    "LINEAR_MIXED_CUTOFF_FROM_B_FUNCTION.md": "9c5842fe7f67dadc417b6c259f981caed14fc3d44f47401f572d49bcfc433ad1",
+    "CUBIC_AFFINE_W_CLASSIFICATION.md": "86e82cb0acbb0ff8cbb87c448f36e742317765eaf841903d3b5393160a920218",
+    "ACTUAL_DIRECTION_RANK_ONE_RIGIDITY.md": "525a5a306c59f2d24a9f7eb5e9a715d56f57b3acdbccbfeec7c8e082c7d0c90b",
+    "PRIMARY_THICKENING_MOMENT_IDEAL_ALGORITHM.md": "184f834e9955a536a18637f1cbb85066857a4e6df971fb95974ebd8e3e2360d9",
+    "RANK_ONE_TWO_BRANCH_GLOBAL94.md": "170efb4905b486a695e4924e4c4dbdeb67df8dd48c7f1e4f519dd5259743f989",
+    "ACTUAL_PERIOD_KERNEL_AND_ALGEBRAIC_IMAGES.md": "7beec8e370120738aa558b6dd4422ff38f2ae4670f75df5fb008e5ce6576eeb8",
+    "actual_period_kernel_source_audit.json": "b0a93e5da5a57b08c0ace1a1553eaea5ed723ffc5b77e34165ccec58b38eaee0",
+    "RATIONAL_CORES_AND_BOUNDARY_SUBSPACES.md": "3ab075933db65b79df4bbaaa411cc63fad9913e59a91f709636ffc97ae80aedb",
+    "period_boundary_geometry_source_audit.json": "d3292181d6ed809ac120fc901755d389d539d1d425291e015a07ffc8a4caeea9",
+    "LOGARITHMIC_CURVE_PERIOD_CRITERION.md": "c30318b771f2f91175a1c922ab197217d18b7fab124e4376b08ad513af40ffa2",
+    "logarithmic_curve_criterion_source_audit.json": "81d6da61726efc5b6b41243b75b6b718e678df0f617e3a659ecfbe7a1462737d",
+    "verify_actual_direction_rank_one.py": "00108d25777cc1cfebcd5179702ea1ef961c5e8088017e85af58766892096a0b",
+    "actual_direction_rank_one_source_audit.json": "024d28ab8c0f6bf16ea5b29a29cb5b23bfa8bcb6e6dd3448029456481e27dae0",
+    "LEADING_COEFFICIENT_DECAY_AND_CONSTANT_B.md": "ad73a4c317eabf9f22985aa4e0640c15066acc7cbe481935b65b5c76b7bd611a",
+    "constant_b_all_degree_source_audit.json": "5e28e0b15deb5e082a708f1bba81fdc90823f495898a2621f778c3684be2e7a5",
+    "SQUAREFREE_LINEAR_T_ALL_DEGREE.md": "803fc7c409c3713107d301c3c105d9f209ff07194efae4f0d1b14e13d5e1056a",
+    "squarefree_linear_t_source_audit.json": "ffd46efb1467a979cbb128d3ebe7fd266cb082cd782b2e6b4d97b094aac00f44",
+    "RATIONAL_GAUSSIAN_PULLBACKS_AND_IRREGULAR_RANK.md": "3d56816a5be24f6f3af1aaa0fb103ea4f728263cd3e8cbfc7bf9161861dd7dd9",
+    "rational_gaussian_pullback_source_audit.json": "6c1a2caaaf58625456df091809bed102b4e7e8fb92ed116f99104ffa432b631b",
+    "LAPLACIAN_INVERSE_CERTIFICATES_AND_CLOSED_SAFE_LOCI.md": "94c3b94b9db7804f6fe3366898936db7a5f3107dfddcc066e3416b09bbd5678d",
+    "laplacian_inverse_source_audit.json": "9cdd1b9872db519d5510e4b082c8a819cb3ee244556ec5966e3eebb74abdd02b",
+    "QUADRATIC_OPERATORS_AFFINE_TERMS_AND_CLOSED_SAFETY.md": "04c7ad9bdcc0ee911939fbaa2a39397a7b19e43d3b7314f4cc5826716f66fac8",
+    "quadratic_operator_safety_source_audit.json": "0599b40be27601e12d30c2e847f9b5b415cbb01397fde4c474d9df0ab284bf36",
+    "ORDER_TWO_DRIFT_REDUCTION_AND_UNIFORM_SAFETY.md": "3c9404f55083ce012178d971a7d99d34e6965a208fc198242d8b7df4f7e7c39d",
+    "order_two_drift_source_audit.json": "d8f9ff6611bc60c31471742e23e79890e1444ef955769b8a3c3d67d39578a47c",
+    "QUADRATIC_PHASES_FOR_ALL_OPERATOR_ORDERS.md": "f13a8a6f4c0981be1943d38eba5c8b5993f63fa560f2cf0f7a47ce4ed4bdcd1c",
+    "quadratic_phase_all_orders_source_audit.json": "5427a39e284eb230483bb2b4ecab8639662c482f6da1ad861ec3dd4b91a7b22b",
+    "FILTERED_PRINCIPAL_PAIR_GVC_TRANSFER.md": "3a70c50df41d1cb80e83e6eb6e76254b9d952c28db281d5252715b368aefdf7c",
+    "filtered_principal_transfer_source_audit.json": "24f55338d8d7dfd641f47ab581a73874301d83cd649dc0e7ff58e28761884d08",
+    "AMBIENT_COEFFICIENT_JETS_AND_INFINITY_RESTRICTION.md": "8ad41035ead81b1de3c30dff45f207345c039e6a6a7545e6beeb81f279d33c96",
+    "coefficient_restriction_source_audit.json": "8c04d1c532eaf14dc1586fc17572c16b0d08744bb912655f1f276ab56a422cb1",
+    "GAUSSIAN_FORMAL_COMPLETION_AND_POLYNOMIAL_HOM.md": "b1dd4488fe3832a56108302340c8327251c8fbcdf90baf32c1c3aaac8696db27",
+    "gaussian_completion_hom_source_audit.json": "420d06c4dd7217bf76805387fd046a7518f7bd69df4f0bd88cec970025e12044"
+  },
+  "retained_frontier_hashes": {
+    "foundations/extended-geometry/DVORSKY_GVC5_COUNTEREXAMPLE.md": "1fa06c3d478fe9c04e3b22c3aaa62ad6fc43c01a83e27a62f34b2fb979d3497b",
+    "foundations/extended-geometry/DVORSKY_ONE_PAIR_SCHUR_OBSTRUCTION.md": "6a9f9186d130dcdf5653a105aea1e2119110aebd80cf887243baf10bbf803994",
+    "foundations/extended-geometry/GVC3_POWER_TAIL_AND_MINIMUM_FRONTIER.md": "5fff1bb5aae08c4bb968d7b4945086944d698a54fcc7bd08c8f9fdcd014b474f",
+    "foundations/extended-geometry/TWO_PAIR_IMAGE_MATHIEU_COUNTEREXAMPLE.md": "7f7c78a729910136bf5ca28eceda86778e73309bde4e9752f1cd8da4354a00aa",
+    "foundations/extended-geometry/TWO_PAIR_SIC_BIDEGREE33_FRONTIER.md": "346d8e9da14d7b64f2fa01eef95cd65dc4d9870135d8e330823d4485d22135fa"
+  },
+  "retained_auxiliary_hashes": {
+    "foundations/extended-geometry/FORMAL_GAUSSIAN_LAGRANGE_LEMMA.md": "1299752c6b71392bb00580ca3104b2ed813490034e43cf90dfbc0e0b8f573061",
+    "foundations/extended-geometry/SEPARABLE_GVC_ESCAPE_OBSTRUCTIONS.md": "073a6c449cea18db953dee5827d3a19cdae2457119384a1b975d3c4c176156c1",
+    "foundations/extended-geometry/SPLIT_SYMBOL_GVC_THEOREM.md": "3b22a1567f4b1698a8eba15f5deabfb8c0be835162ebe0b05e42cc57f1d27dcf",
+    "foundations/extended-geometry/BINARY_GVC_ENVELOPE_CLOSURE.md": "7c69f138b4343c838f837b854c8e2069c7edfd836e6223f10bf5d13717f94e75",
+    "foundations/extended-geometry/DVORSKY_GVC5_COUNTEREXAMPLE.md": "1fa06c3d478fe9c04e3b22c3aaa62ad6fc43c01a83e27a62f34b2fb979d3497b",
+    "foundations/extended-geometry/THREE_VARIABLE_HOMOGENEOUS_GVC_COUNTEREXAMPLE.md": "eae8830f49d983b9c6b82589d9feeeeedd8e88becbe619bffed2b0168ffc2262",
+    "moments/vanishing/RESONANT_MULTIPLIERS_AND_UNIFORM_CHARTS.md": "0f1e12d909e2c916e7c49c92865e3ac37b0178ff6add865b34cd9f33fddb509e",
+    "moments/vanishing/FINITE_MULTIPLIER_MIXED_DECISION.md": "4dc09aede00f0493238f528bf2b6a7320b3480fb45dd77c1b9ccedf22a27a56e",
+    "moments/vanishing/HOLONOMIC_SOURCES_AND_CUTOFF_LOCI.md": "667d72556c1501ae445742be48463472a687cb24acec54653d34275f5c00c9d0",
+    "moments/vanishing/RANK_ONE_IMAGES_AND_NILPOTENT_CUTOFFS.md": "aba165edb640a2b74e448db688520d4f8a7f31477c75ac950cc6571806a29e27",
+    "moments/vanishing/ACTUAL_PERIOD_KERNEL_AND_ALGEBRAIC_IMAGES.md": "7beec8e370120738aa558b6dd4422ff38f2ae4670f75df5fb008e5ce6576eeb8",
+    "moments/vanishing/AMBIENT_COEFFICIENT_JETS_AND_INFINITY_RESTRICTION.md": "8ad41035ead81b1de3c30dff45f207345c039e6a6a7545e6beeb81f279d33c96",
+    "moments/vanishing/RATIONAL_GAUSSIAN_PULLBACKS_AND_IRREGULAR_RANK.md": "3d56816a5be24f6f3af1aaa0fb103ea4f728263cd3e8cbfc7bf9161861dd7dd9",
+    "moments/vanishing/GAUSSIAN_FORMAL_COMPLETION_AND_POLYNOMIAL_HOM.md": "b1dd4488fe3832a56108302340c8327251c8fbcdf90baf32c1c3aaac8696db27",
+    "moments/vanishing/PRIMARY_THICKENING_MOMENT_IDEAL_ALGORITHM.md": "184f834e9955a536a18637f1cbb85066857a4e6df971fb95974ebd8e3e2360d9"
+  },
+  "dependency_canonical_proof_hashes": {
+    "moments/vanishing/GAUSSIAN_FORMAL_COMPLETION_AND_POLYNOMIAL_HOM.md": "b1dd4488fe3832a56108302340c8327251c8fbcdf90baf32c1c3aaac8696db27",
+    "moments/vanishing/HOLONOMIC_SOURCES_AND_CUTOFF_LOCI.md": "667d72556c1501ae445742be48463472a687cb24acec54653d34275f5c00c9d0",
+    "moments/vanishing/PRIMARY_THICKENING_MOMENT_IDEAL_ALGORITHM.md": "184f834e9955a536a18637f1cbb85066857a4e6df971fb95974ebd8e3e2360d9",
+    "moments/vanishing/RANK_ONE_IMAGES_AND_NILPOTENT_CUTOFFS.md": "aba165edb640a2b74e448db688520d4f8a7f31477c75ac950cc6571806a29e27"
+  },
+  "primary_scope_audit": [
+    {
+      "paper": "Hotta--Takeuchi--Tanisaki,D-Modules,Perverse Sheaves,and Representation Theory",
+      "url": "https://ananddeopurkar.org/seminars/mhm/hottaetal.pdf",
+      "version": "2008 English edition,407 PDF pages",
+      "read": "Theorem1.7.3 statement and complete proof,printed54--55/PDF63--64;Corollary2.6.15 and preceding proof,printed75/PDF84;Theorem2.7.1 and proof,printed76/PDF85;Theorem2.4.6,Proposition3.1.6,Theorem3.2.3 and preservation proof;Theorem3.3.1 and AppendixE conormal facts",
+      "retained_file": "moments/vanishing/sources/hotta_takeuchi_tanisaki_dmodules_2008.pdf",
+      "use": "Algebraic derived base change,non-characteristic unshifted pullback/duality,global polynomial Hom via dual direct image,generic connections and holonomic preservation;no regularity or properness is added to the base-change input",
+      "boundary": "No commuting duality with nonproper direct image,no analytic irregular de Rham comparison,and no underived relative-Hom base-change theorem is imported",
+      "sha256": "3eb5d6502ee6721bd03445cc72b3b5a013db2fa1893efb846ee0842adb5784ba"
+    },
+    {
+      "paper": "Mustata,D-modules and singularities,Math732 lecture notes",
+      "url": "https://websites.umich.edu/mmustata/DmodulesNotes.pdf",
+      "version": "Winter2023,164 PDF pages;retained bytes bound below",
+      "read": "Sections6.6--6.7,especially shifted inverse-image definition printed63/PDF69,Theorem6.64 printed66/PDF72,and Theorem6.66 with its finite-stratification proof",
+      "retained_file": "moments/vanishing/sources/mustata_dmodules_winter2023.pdf",
+      "use": "Independent convention cross-check for fdagger=Lfstar[dimsource-dimtarget],derived base change and holonomic generic-connection strata",
+      "boundary": "The separate proper-duality theorem is not applied to the nonproper time projection",
+      "sha256": "bf4103231ac100f06416c7552d566bfc7472f4f6d0d49679015abc7acd3aec2a"
+    }
+  ],
+  "new_external_theorem_imported": true,
+  "fresh_exhaustive_literature_coverage": false,
+  "PDF_reading": {
+    "tool": "PyMuPDF2.1,MuPDF1.28.6,isolated tmp/pdf-runtime;read-only source inspection",
+    "full_pages_extracted": [
+      {
+        "file": "moments/vanishing/sources/hotta_takeuchi_tanisaki_dmodules_2008.pdf",
+        "PDF_pages": [
+          63,
+          64,
+          84,
+          85,
+          91,
+          93,
+          94,
+          95,
+          97,
+          100,
+          101,
+          102,
+          103,
+          104
+        ]
+      },
+      {
+        "file": "moments/vanishing/sources/mustata_dmodules_winter2023.pdf",
+        "PDF_pages": [
+          69,
+          72
+        ]
+      }
+    ],
+    "visually_inspected_PDF_pages": [
+      {
+        "file": "moments/vanishing/sources/hotta_takeuchi_tanisaki_dmodules_2008.pdf",
+        "PDF_pages": [
+          63,
+          85
+        ]
+      },
+      {
+        "file": "moments/vanishing/sources/mustata_dmodules_winter2023.pdf",
+        "PDF_pages": [
+          69,
+          72
+        ]
+      }
+    ],
+    "boundary": "Source PDFs unchanged;temporary renders are not proof artifacts or mathematical producers"
+  },
+  "fiber_Hom_stratification": {
+    "scope": "An algebraic joint holonomic D-module M on A1_t times a smooth finite-type complex coefficient variety B,with ordinary coefficient fibers M_a",
+    "generic_noncharacteristic_open": "Conic Lagrangian characteristic components are conormal closures;nonzero components project to subsets Z of dimension<=dimB. Dominant Z are generically finite and etale;remove lower-dimensional singular/critical images and nondominant images",
+    "formula": "RHom_Dt(M_a,C[t])=i_a^dagger(pi_+ D M)[dimB-1] on the non-characteristic open",
+    "generic_dimension": "After shrinking so all direct-image cohomology modules are vector bundles,dim Ext^j(M_a,C[t])=rank H^(j-1)(pi_+ D M)",
+    "exceptional_step": "On each smooth coefficient subvariety S,recompute M_S=H0(Li_Sstar M)=ordinary tensor restriction;it remains holonomic and its ordinary point fibers are exactly M_a",
+    "termination": "The exceptional coefficient dimension strictly decreases,with finitely many components/charts;this yields a finite algebraic stratification",
+    "effectivity": "Theoretical algorithm using characteristic supports/elimination,dual,direct image,cohomology,generic connection opens/ranks and ordinary source re-restriction",
+    "not_assumed": "Regularity at time infinity,properness of the time projection,nonproper duality,underived relative-Hom base change,or a finite V/b-function chart cover"
+  },
+  "Gaussian_field_closure": {
+    "exact_family_source": "The universal Gaussian spatial cokernel is jointly holonomic in time and differentiated phase coefficients,and ordinary coefficient restriction is the exact specialized integration source",
+    "Hom_to_safety": "GMCPOLYHOM20261115 makes polynomial Hom dimension0/1,with dimension1 exactly mixed-safe",
+    "constructibility": "The full eventual-mixed-safe locus is constructible;intersecting the closed pure-null locus gives constructible pure-safe S_nD",
+    "closedness_and_uniformity": "MVSAFELOCUS20261115 gives S_nD=union_N Z_N;constructibility over uncountable C forces S_nD=Z_N for one finite integer N",
+    "radical_statement": "sqrt(I_N) eventually stabilizes and defines the pure-null safe field locus",
+    "ordinary_statement": "No stabilization of the full ordinary I_N is claimed",
+    "assurance": "Internal written proof,independent specialist review outstanding;this closes the Gaussian field gap without making all pure phases safe"
+  },
+  "effective_and_reduced_extension": {
+    "least_integer_algorithm": "Compute the constructible safe locus and closed pure-null intersection J,then I_N for N0,1,... and stop at sqrt(I_N)=J. The first N is the least common nonnegative integer slope on the safe locus",
+    "implementation_boundary": "No universal numerical N,optimal real slope,complexity bound or general stratification/cutoff solver is computed here",
+    "all_characteristic_zero_fields": "A finite phase coefficient field embeds in C;monomial moment identities and eventuality transfer",
+    "reduced_target_functor": "For any reduced commutative Q-algebra A,prime-residue-field pure safety is equivalent to the common forbidden identities in A;the reduced closed coefficient scheme J represents this functor",
+    "nonreduced_boundary": "The genuine quartic line retains I_N=(e^N),radical(e),and sharp Artin slopeL over Q[e]/e^L,so no uniform extension over all nonreduced algebras exists"
+  },
+  "assurance": {
+    "proof": "Written conormal/generic-duality/base-change/dimension-induction proof,then the retained closed-cutoff equivalence;independent specialist review outstanding",
+    "checks": "Derived degree bookkeeping,an exact infinite point-module action formula with bounded transcription controls,Gaussian linear and graph exceptions,central Euler mutation,and retained quartic radical/thickness controls",
+    "old_notes": "Hash-bound earlier canonical notes/source audits are retained unchanged;their historical Gaussian-uniformity open wording is superseded by these new claims"
+  },
+  "small_replay": {
+    "completed": true,
+    "python_version": "3.12.3",
+    "sympy_version": "1.14.0",
+    "derived_degree_controls": [
+      {
+        "base_dimension": 0,
+        "constant_N_degree": -1,
+        "constant_dagger_degree": -1,
+        "constant_Hom_degree": 0,
+        "time_point_Ext_degree": 1
+      },
+      {
+        "base_dimension": 1,
+        "constant_N_degree": -1,
+        "constant_dagger_degree": 0,
+        "constant_Hom_degree": 0,
+        "time_point_Ext_degree": 1
+      },
+      {
+        "base_dimension": 2,
+        "constant_N_degree": -1,
+        "constant_dagger_degree": 1,
+        "constant_Hom_degree": 0,
+        "time_point_Ext_degree": 1
+      },
+      {
+        "base_dimension": 3,
+        "constant_N_degree": -1,
+        "constant_dagger_degree": 2,
+        "constant_Hom_degree": 0,
+        "time_point_Ext_degree": 1
+      },
+      {
+        "base_dimension": 4,
+        "constant_N_degree": -1,
+        "constant_dagger_degree": 3,
+        "constant_Hom_degree": 0,
+        "time_point_Ext_degree": 1
+      }
+    ],
+    "exponential_linear_point_tower_controls": [
+      {
+        "tower_index": 0,
+        "coordinate_action": "0",
+        "coordinate_preimage": "-z",
+        "de_Rham_relation": "a"
+      },
+      {
+        "tower_index": 1,
+        "coordinate_action": "-1",
+        "coordinate_preimage": "-z**2/2",
+        "de_Rham_relation": "a*t - 1"
+      },
+      {
+        "tower_index": 2,
+        "coordinate_action": "-2*z",
+        "coordinate_preimage": "-z**3/3",
+        "de_Rham_relation": "a*t**2 - 2*t"
+      },
+      {
+        "tower_index": 3,
+        "coordinate_action": "-3*z**2",
+        "coordinate_preimage": "-z**4/4",
+        "de_Rham_relation": "a*t**3 - 3*t**2"
+      },
+      {
+        "tower_index": 4,
+        "coordinate_action": "-4*z**3",
+        "coordinate_preimage": "-z**5/5",
+        "de_Rham_relation": "a*t**4 - 4*t**3"
+      },
+      {
+        "tower_index": 5,
+        "coordinate_action": "-5*z**4",
+        "coordinate_preimage": "-z**6/6",
+        "de_Rham_relation": "a*t**5 - 5*t**4"
+      }
+    ],
+    "derived_point_fiber_degree": 0,
+    "ordinary_point_fiber_zero_does_not_replace_derived": true,
+    "centered_Gaussian_linear_Hom_controls": [
+      {
+        "degree": 0,
+        "generic_top_equation": "-a**2*b0",
+        "zero_phase_polynomial_solution": "1"
+      },
+      {
+        "degree": 1,
+        "generic_top_equation": "-a**2*b1",
+        "zero_phase_polynomial_solution": "1"
+      },
+      {
+        "degree": 2,
+        "generic_top_equation": "-a**2*b2",
+        "zero_phase_polynomial_solution": "1"
+      },
+      {
+        "degree": 3,
+        "generic_top_equation": "-a**2*b3",
+        "zero_phase_polynomial_solution": "1"
+      }
+    ],
+    "graph_noncharacteristic_exception_ideal": [
+      "c"
+    ],
+    "central_Euler_commutator": "-identity",
+    "central_Euler_resonance_controls": [
+      {
+        "central_parameter": 0,
+        "polynomial_solution": "1"
+      },
+      {
+        "central_parameter": 1,
+        "polynomial_solution": "t"
+      },
+      {
+        "central_parameter": 2,
+        "polynomial_solution": "t**2"
+      },
+      {
+        "central_parameter": 3,
+        "polynomial_solution": "t**3"
+      },
+      {
+        "central_parameter": 4,
+        "polynomial_solution": "t**4"
+      }
+    ],
+    "quartic_Artin_and_radical_controls": [
+      {
+        "length": 1,
+        "last_marked_time_degree": 1,
+        "cutoff_radical_generator": "e",
+        "ordinary_next_power_strict": true
+      },
+      {
+        "length": 2,
+        "last_marked_time_degree": 2,
+        "cutoff_radical_generator": "e",
+        "ordinary_next_power_strict": true
+      },
+      {
+        "length": 3,
+        "last_marked_time_degree": 3,
+        "cutoff_radical_generator": "e",
+        "ordinary_next_power_strict": true
+      },
+      {
+        "length": 4,
+        "last_marked_time_degree": 4,
+        "cutoff_radical_generator": "e",
+        "ordinary_next_power_strict": true
+      }
+    ],
+    "Gaussian_field_uniformity_written_proof": true,
+    "reduced_target_extension_written_proof": true,
+    "universal_constructibility_inferred_from_samples": false,
+    "general_holonomic_stratification_producer_executed": false,
+    "general_cutoff_ideal_or_least_integer_producer_executed": false,
+    "explicit_universal_numeric_cutoff_computed": false,
+    "ordinary_cutoff_ideal_stabilization_claimed": false,
+    "uniformity_over_all_nonreduced_algebras_claimed": false,
+    "general_GVC_or_SIC_application_completed": false,
+    "prior_quartic_all_order_input_reproved": false,
+    "protected_ternary_frontier_changed": false,
+    "independent_review": false,
+    "formal_verification": false,
+    "novelty_claim": false,
+    "checker_sha256": "c2a885b22f0794f3e113d45f4aa5a22984f0872ec7aa0869ea9b8c6a3879d3c2"
+  },
+  "universal_constructibility_inferred_from_samples": false,
+  "general_holonomic_stratification_producer_executed": false,
+  "general_cutoff_ideal_or_least_integer_producer_executed": false,
+  "explicit_universal_numeric_cutoff_computed": false,
+  "ordinary_cutoff_ideal_stabilization_claimed": false,
+  "uniformity_over_all_nonreduced_algebras_claimed": false,
+  "general_GVC_or_SIC_application_completed": false,
+  "prior_quartic_all_order_input_reproved": false,
+  "protected_ternary_frontier_changed": false,
+  "independent_review": false,
+  "formal_verification": false,
+  "novelty_claim": false,
+  "remaining": [
+    "Independent specialist review of generic non-characteristic opens,derived shifts,ordinary source re-restriction and the Gaussian closed-cutoff application",
+    "Check exact-source/target encodings before extending the new argument to arbitrary GVC and full SIC coefficient families",
+    "Implement general characteristic/dual/direct-image stratification or least-integer cutoff producers only as a separately motivated task;none is run here",
+    "Classify repeated-root Gaussian phases,several spectators and actual connection/boundary structures;the field uniformity theorem is not a phase normal-form classification",
+    "Ordinary mixed cutoff ideals and all-nonreduced uniformity remain different;the latter is impossible by the retained quartic Artin line",
+    "Principal GVC classification,unbalanced families,higher-degree valid operator compression,denseSIC33 and protected numeric frontiers remain open"
+  ]
+}

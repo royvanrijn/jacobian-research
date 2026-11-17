@@ -1,0 +1,98 @@
+{
+  "scoped_validation": "PASS",
+  "checks": [
+    "HC4MYHC0 schema, checker hash, retained locks, dependencies and assurance",
+    "HC4MYHC1 schema, checker hash, retained locks, dependencies and assurance",
+    "HC4MYHC2 schema, checker hash, retained locks, dependencies and assurance",
+    "HC4MYHC3 schema, checker hash, retained locks, dependencies and assurance",
+    "new Hodge import and whole-curve criterion are explicit; pure-power predecessor has a reciprocal stronger replacement",
+    "parent retires positive-Hodge traces, nonlinear coordinate boundaries and branched triples without closing zero/negative coefficients or endpoints",
+    "twenty-three new/updated method records have evidence and current scope fingerprints",
+    "WORK-HC4-SCHUR starts from whole trace Hodge strata and preserves the actual outside frontier",
+    "WORK-HC4-RESIDUAL-AUDIT starts from whole trace Hodge strata and preserves the actual outside frontier",
+    "receipt-hodge-trace.json current proof/checker and retained primary/dependency byte pins",
+    "receipt-isolated-trace.json current proof/checker and retained primary/dependency byte pins",
+    "receipt-cylindrical-trace.json current proof/checker and retained primary/dependency byte pins",
+    "receipt-critical-components.json current proof/checker and retained primary/dependency byte pins",
+    "receipt-relative-critical.json current proof/checker and retained primary/dependency byte pins",
+    "the exact imported ring/curve invariant is pinned and arbitrary-cover multiplicativity is excluded",
+    "maintained navigation exposes the new trace and boundary closures with the precise sign limitation"
+  ],
+  "exact_replay_checks": {
+    "receipt-hodge-trace.json": 46,
+    "receipt-isolated-trace.json": 41,
+    "receipt-cylindrical-trace.json": 38,
+    "receipt-critical-components.json": 58,
+    "receipt-relative-critical.json": 39
+  },
+  "previous_goal_turn": "Progress: the preceding isolated-trace theorem closed all power-saddle degrees and full r-chart mixing. The present whole-Hodge argument closes arbitrary critical-value patterns and nonlinear/branched trace boundaries without an isolated-point hypothesis.",
+  "new_claims": [
+    "HC4MYHC0",
+    "HC4MYHC1",
+    "HC4MYHC2",
+    "HC4MYHC3"
+  ],
+  "written_proof_coverage": [
+    "rank-zero trace Bezout completion and nonpositive linear coefficient",
+    "whole rank-one trace Hodge polynomial and exact genus/puncture coefficients",
+    "actual A1 components and retained plane Keller-fibre theorem",
+    "all positive distinct-root degree budgets with drops and constant specializations",
+    "every arbitrary univariate H(U)+VW trace",
+    "nonlinear unit-affine-r and nonvertical plane-coordinate boundary classes",
+    "branched hyperplane trace triples with unrestricted off-slice mixing"
+  ],
+  "external_mathematical_inputs": [
+    "retained HCTANG2",
+    "retained HC4MYGR0 classical plane-line inputs",
+    "basic Hodge--Deligne ring invariant and smooth curve formula, retained Ricolfi1907.08123v1"
+  ],
+  "new_primary_source": {
+    "path": "hessian/hc4-triangular-graphs/sources/ricolfi-hodge-1907.08123v1.html",
+    "sha256": "c5fcfee336ea30011ae98d8c5d766aa41ee683b5fa98f08c7abb7ce1869147bc"
+  },
+  "new_external_classification_imported": false,
+  "generated_views_refreshed": [
+    "index/core.md",
+    "index/hessian.md",
+    "index/README.md",
+    "index/documents.tsv",
+    "knowledge/work/geometry.md",
+    "knowledge/work/hessian.md",
+    "STATUS.md"
+  ],
+  "full_registry_validation_failure": "KDSQ6: missing document consumer artifacts/generated-results/README.md",
+  "full_navigation_validation_passed": false,
+  "missing_artifacts_reconstructed": false,
+  "generic_base_Euler_hypothesis_required": false,
+  "isolated_trace_point_required": false,
+  "all_univariate_H_plus_VW_traces_closed": true,
+  "nonlinear_polynomial_coordinate_y_boundaries_closed": true,
+  "branched_hyperplane_trace_mixing_closed": true,
+  "zero_or_negative_pure_Hodge_coefficients_closed": false,
+  "broader_substitutions_asserted_embedded": false,
+  "unit_Hessian_nonexistence_asserted": false,
+  "remaining_frontier": [
+    "other genuinely old-r-dependent y boundaries",
+    "opposite x graphs with q/r dependence",
+    "trace signatures outside the positive-Hodge and retained trace criteria, and uncovered embeddings",
+    "base-only unit-ideal plane surjectivity and distinct nonlinear-p singleton-zero properness"
+  ],
+  "unit_ideal_plane_Keller_endpoint_resolved": false,
+  "singleton_zero_properness_resolved": false,
+  "unrestricted_HC4_or_JC2_resolved": false,
+  "original_goal_complete": false,
+  "final_checks": {
+    "python_compilation": "PASS",
+    "scoped_git_diff_whitespace": "PASS",
+    "new_proof_checker_and_import_whitespace": "PASS",
+    "render_navigation": "FAIL: KDSQ6: missing document consumer artifacts/generated-results/README.md",
+    "check_navigation": "FAIL: KDSQ6: missing document consumer artifacts/generated-results/README.md",
+    "research_check_require_partial_review": "Historical navigation output omitted during repository reorganization."
+  },
+  "all_degree_trace_closure_is_written_proof_not_finite_degree_inference": true,
+  "only_product_Hodge_multiplicativity_used": true,
+  "curve_genus_and_missing_point_coefficients_retained": true,
+  "positive_coefficient_hypothesis_not_dropped": true,
+  "actual_graph_embeddings_separated_from_arbitrary_substitution_theorem": true,
+  "global_research_goal_remains_active": true
+}

@@ -1,0 +1,32 @@
+{
+  "as_of": "2026-11-14",
+  "sources": [
+    {
+      "repository_path": "jacobian/gao-f4-fibres/sources/source-tangent_sweeps_v3.tex",
+      "sha256": "d8b6e32d822e765b2f6651f81ff5b8bd81d6754ba4d38cc279f65e1ca0ec730c"
+    },
+    {
+      "repository_path": "jacobian/gao-f4-fibres/sources/gao-2608.00222v2-source.tar",
+      "sha256": "c524f594c3552c764b66526b866362c39f355d3d28121c5d92b885dd745c743d"
+    },
+    {
+      "repository_path": "jacobian/gao-f6-fibres/sources/gao-latest-abs.html",
+      "sha256": "57887acf6bcd447d36c6388d4f3e9947caea6cdcd844a40af6006e6dbb381ece"
+    },
+    {
+      "repository_path": "foundations/jcsearch/sparse_macaulay.py",
+      "sha256": "edd32e3be4ea09f88ae61351a1d6014734d980d5f2fe73ee5bc7a3519f4d1c7b"
+    },
+    {
+      "repository_path": "jacobian/gao-f7-three-point/sources/schuett-shioda-0907.0298.pdf",
+      "url": "https://arxiv.org/pdf/0907.0298",
+      "sha256": "eeac47d53b52e96a1d2457a131dcce474332dd6b226e4dcd944575e995aa44b1"
+    },
+    {
+      "repository_path": "jacobian/gao-f7-three-point/sources/fisher-binary-quartics.pdf",
+      "url": "https://www.dpmms.cam.ac.uk/~taf1000/papers/bq-ctp.pdf",
+      "sha256": "9c4ed5bf1c5f39a5552a51317c627bba78993fd92cc2a5d09c6208bb906da72f"
+    }
+  ],
+  "imports": "Gao F7 and its simple-root criterion; Fisher Section2 binary-quartic Jacobian; Schuett-Shioda Table1/Sections4.4,6.7,8.2 for Kodaira fibres and Euler characteristic. The extracted PDF text is only an access copy and had font-encoding warnings; cited formulas were checked against the web PDF text."
+}

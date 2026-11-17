@@ -1,0 +1,78 @@
+{
+  "date": "2026-11-15",
+  "canonical_proof": "moments/vanishing/FINITE_CURVE_MARKERS_AND_POSITIVE_LOOP_MODEL.md",
+  "proof_sha256": "9993d34a630648d599f45e4fa2864d27db67053f805f97e3e91a74f9669c97ca",
+  "checker": "moments/vanishing/verify_finite_curve_markers.py",
+  "checker_sha256": "ba9893464bfe8e5f794bf9eba8d54a5a8dad5ecab78e4e735bd1b92bd6a952fc",
+  "receipt": "moments/vanishing/finite_curve_marker_verification.json",
+  "receipt_sha256": "f324116c92eb0f44fa306f56d6070875feacb0a49c63e6c0bcd2981e8a0d4748",
+  "repository_sources": [
+    {
+      "source": "moments/vanishing/COMPLEX_HEIGHT_IMAGES_AND_CAUCHY_RIGIDITY.md",
+      "sha256": "6c6260ad9d8ae0883637e4bd56b682bdd07c8e3a499c00a7b53d8e34d7840b68",
+      "selected_use": "Full real-seed normalization proof and distinction between unsymmetrized pure-phase and symmetrized height graphs."
+    },
+    {
+      "source": "moments/vanishing/GLOBAL_TRIANGLE_ALGEBRAS_AND_HAAR_BOUNDARIES.md",
+      "sha256": "e1ec26e843ed61e072a05422da9a2a20eaabeebbb0b3eddd2019f40a47bb95a9",
+      "selected_use": "Full T-invariant algebra and inherited regularity constraints;does not make all phases T-invariant."
+    },
+    {
+      "source": "moments/vanishing/INTRINSIC_REYNOLDS_AND_FINITE_QUOTIENT_DESCENT.md",
+      "sha256": "9bc929aaac70783649f09d6faa00e45c85ae25fd9f30e9a486ad3ab34be240a7",
+      "selected_use": "Positive compact Haar realization and original quotient setting."
+    },
+    {
+      "source": "moments/vanishing/FINITE_MULTIPLIER_MIXED_DECISION.md",
+      "sha256": "4dc09aede00f0493238f528bf2b6a7320b3480fb45dd77c1b9ccedf22a27a56e",
+      "selected_use": "Prior finite D-module amplitudes are a different finiteness mechanism from the C[P]-module used here."
+    },
+    {
+      "source": "moments/vanishing/CONSTANT_COEFFICIENT_OPERATOR_DECISION.md",
+      "sha256": "46e5f727ff999bb243adab5584697db112ac63b6503c0b896d05ae405a8613db",
+      "selected_use": "Prior D-module marker reduction is retained;not an earlier proof of the finite-curve nilpotence argument."
+    }
+  ],
+  "primary_sources": [
+    {
+      "authors": "Dmitry Beliaev",
+      "title": "Conformal Maps and Geometry",
+      "version": "June8,2015 lecture notes",
+      "url": "https://www.math.stonybrook.edu/~bishop/classes/math627.S25/Beliaev_notes.pdf",
+      "cached_file": "moments/vanishing/sources/beliaev_conformal_maps_geometry_2015.pdf",
+      "sha256": "ee7bac33666290ff4fcbf5524f45ccfa8fca08c697a84279499d4ba55c5d9d91",
+      "selected_passages_read": "Theorem2.3.1,printed11/PDF11,and Theorem2.6.6,printed23/PDF23;selected pages text extracted and boundary page visually inspected.",
+      "imported": "Riemann mapping of the bounded simply connected domain;continuous bijective Jordan boundary extension. Compactness gives the homeomorphism. Mean-value application is supplied in the proof.",
+      "not_imported": "Any exceptional Haar realization,MZ counterexample,or novelty attribution."
+    },
+    {
+      "authors": "Christopher J.Bishop",
+      "title": "The Riemann Mapping Theorem",
+      "version": "Preface January2010",
+      "url": "https://www.math.stonybrook.edu/~bishop/classes/math626.F08/rmt.pdf",
+      "cached_file": "moments/vanishing/sources/bishop_riemann_mapping_notes.pdf",
+      "sha256": "c753f68c9688a9c745be5d20d83e8849738cc6cba3d422fa0a318d892bce8e69",
+      "selected_passages_read": "Chapter2,section9,Theorems35-36,printed85-87/PDF94-96.",
+      "imported": "Corroborating continuous boundary extension only. The selected statement does not explicitly give Jordan injectivity;that stronger boundary assertion is sourced to Beliaev2.6.6."
+    }
+  ],
+  "new_all_degree_arguments": [
+    "For a commutative algebra with nondegenerate Lambda(ab),finite C[P]-module generation makes eventual safety of finitely many generators equivalent to P nilpotent.",
+    "The restricted positive pairing on C[h_real] is nondegenerate,and it is free of rank deg p over C[p(h)]. A nonzero pure p(h) therefore has a fixed infinite marked tail among h,...,h^(deg p-1).",
+    "Real-seed normalization applies this to every thin-image pure phase on BOTH FULL exceptional quotients,without T-invariance. Existence remains open;every nonzero safe pure phase must have image interior.",
+    "The explicit cubic t2-1/2+i(t3-t) bounds a Jordan domain containing0. Riemann-map harmonic measure pulls back to a positive full-support interval law with every positive pure moment0. At least one of markers t,t2 is bad."
+  ],
+  "exact_controls": "Cubic collision factorization,nonzero real derivative,implicit boundary and exact8/15 area;two selected nonmonic free-module reductions;nondegenerate nilpotent and reduced Frobenius algebras;Laurent CT finiteness boundary.",
+  "logical_boundaries": [
+    "The universal algebra,normalization application,and conformal all-order proof are INTERNAL WRITTEN,not machine verified by the selected controls.",
+    "No pure exceptional thin-image phase has been constructed or excluded. The abstract harmonic interval law has no proved Haar realization.",
+    "The marker conclusion is infinitely many nonzero values for one fixed seed power;it asserts neither eventual everywhere nonzero values,nor a sign,nor a selected j.",
+    "The ambient full ring is not finite over C[P]. Restricted nondegeneracy and finite generation cannot be omitted or silently assumed for rank2 phases.",
+    "The bound deg p-1 is a normalized-curve marker bound,not a bound in matrix-coordinate degree.",
+    "Thin auxiliary height does not imply thin associated Hopf phase. Full original markers and all triangle constraints remain in scope.",
+    "BOTH exceptional MZ decisions remain OPEN. No degree/support/moment-prefix campaign is used."
+  ],
+  "independent_replay": false,
+  "formal_verification": false,
+  "external_review": false
+}

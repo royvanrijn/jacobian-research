@@ -1,0 +1,74 @@
+{
+  "checker_files_actually_written": [],
+  "domain_failures": [],
+  "intercepted_checker_writes": [
+    "/home/royvanrijn/src/jacobian-research/research/jacobian/cubic-reduction/weighted-newfirst7/validation.json",
+    "/home/royvanrijn/src/jacobian-research/research/jacobian/cubic-reduction/weighted-unmarked7/validation.json",
+    "/home/royvanrijn/src/jacobian-research/research/jacobian/cubic-reduction/weighted-zero7/validation.json",
+    "/home/royvanrijn/src/jacobian-research/research/jacobian/cubic-reduction/weighted-sparse7/1_-2_-3/validation.json",
+    "/home/royvanrijn/src/jacobian-research/research/jacobian/cubic-reduction/weighted-213/validation.json",
+    "/home/royvanrijn/src/jacobian-research/research/jacobian/cubic-reduction/weighted-113/validation.json",
+    "/home/royvanrijn/src/jacobian-research/research/jacobian/cubic-reduction/carrier-reparam-wide/validation.json"
+  ],
+  "results": [
+    {
+      "intercepted_write_count": 1,
+      "module": "verify_weighted_newfirst7",
+      "seconds": 0.884,
+      "source_sha256": "b0b994cbf2e6f9a377a6098f691a0867adb86d5b97c477b839f44289a0bf7e69",
+      "status": "pass",
+      "substitution_calls": 282
+    },
+    {
+      "intercepted_write_count": 1,
+      "module": "verify_weighted_unmarked7",
+      "seconds": 3.159,
+      "source_sha256": "04b4233d7ec57752d57180b917a14fb67a1487466003b528391248e1e4e14ca9",
+      "status": "pass",
+      "substitution_calls": 647
+    },
+    {
+      "intercepted_write_count": 1,
+      "module": "verify_weighted_zero7",
+      "seconds": 3.539,
+      "source_sha256": "a40e3fbeada4a6ef0ab90ceee6dc2675bc18da46b117f9f5536e83797711a910",
+      "status": "pass",
+      "substitution_calls": 650
+    },
+    {
+      "intercepted_write_count": 1,
+      "module": "verify_weighted_123",
+      "seconds": 0.197,
+      "source_sha256": "5c7703525319ccba6023a2c7fd48e4ab81ac263e008f8fdf00b0ad3cfd53e3ba",
+      "status": "pass",
+      "substitution_calls": 186
+    },
+    {
+      "intercepted_write_count": 1,
+      "module": "verify_weighted_213",
+      "seconds": 0.017,
+      "source_sha256": "77b19674ec9253adcc185ffffdebd9451743831dac1455ddc20e810e2263c96e",
+      "status": "pass",
+      "substitution_calls": 73
+    },
+    {
+      "intercepted_write_count": 1,
+      "module": "verify_weighted_113",
+      "seconds": 0.234,
+      "source_sha256": "6ae13569b364623b3afdc448585e1d17ac10385650b687b4679cba0d27c18fa4",
+      "status": "pass",
+      "substitution_calls": 344
+    },
+    {
+      "intercepted_write_count": 1,
+      "module": "verify_carrier_reparam12",
+      "seconds": 0.038,
+      "source_sha256": "5a41006f0c4ddae141fc8d1b4727089424ece57a8e525667fc1105578032666a",
+      "status": "pass",
+      "substitution_calls": 244
+    }
+  ],
+  "scope": "Reject every polynomial substitution call receiving a negative input exponent while replaying the listed current arithmetic checkers. Original receipts and sources are untouched. This checks the domain boundary, not formal proof completeness.",
+  "source_sha256": "90722ea3c527c51365bd74e0888df8b0eb769d6cd7d0821c423d2b285b05b399",
+  "status": "pass"
+}

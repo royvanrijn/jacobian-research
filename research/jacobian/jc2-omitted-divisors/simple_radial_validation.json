@@ -1,0 +1,89 @@
+{
+  "as_of": "2026-11-14",
+  "outcome": "PASS scoped simple-boundary proof controls, radial algebra, metadata and renderer readback",
+  "claim": "PF2OMIT7",
+  "check_count": 146,
+  "local_staircase_checks": 43,
+  "previous_goal_turn": "Progress: all residual affine residue degrees and conditional length/singleton formulas registered",
+  "current_goal_turn": "Progress: index2 regularity, ordinary cusp/local algebra and complete singleton radial prime/image/e/f/special-length data",
+  "status_validation": "Copied schema/dependencies/new checker hash pass; unrelated consumers, narrowing reciprocity and checker freshness omitted without editing authority. New OP-PLANE reciprocity checked explicitly.",
+  "unrelated_checker_hash_drift_observed": [],
+  "other_review_staleness_observed": {},
+  "affected_lessons": [
+    "METHOD-PLANE-GLOBAL-GATE",
+    "METHOD-F2-VALUATION-AND-TRANSVERSE-POLES",
+    "METHOD-HC4-POINTED-PENCIL-20261113",
+    "METHOD-HC4-RADIAL-INTERSECTION-20261113",
+    "METHOD-PLANE-BORISOV-ATTACHMENT-20261113",
+    "METHOD-JC2-ALL-PRIME-EULER",
+    "METHOD-R7-UNIVERSAL-CONTACT-20261114",
+    "METHOD-JC2-SOURCE-FINITE-INVERSE",
+    "METHOD-R7-CONIC-FIELD-DEGREE-20261114",
+    "METHOD-JC2-NORMALIZED-DISCRIMINANT",
+    "METHOD-JC2-INFINITY-ROOT-CENSUS",
+    "METHOD-R7-UNIVERSAL-MINOR-SELECTION-20261114",
+    "METHOD-JC2-RESIDUE-AMBIENT-EXCESS",
+    "METHOD-JC2-SIMPLE-BOUNDARY-RADIAL"
+  ],
+  "affected_work": [
+    "WORK-HC4-SCHUR",
+    "WORK-PLANE-GLOBAL-GATES",
+    "WORK-HC4-RESIDUAL-AUDIT",
+    "WORK-PLANE-R7-20261113",
+    "WORK-JC2-CUSP-CONTACT-20261114",
+    "WORK-PLANE-EVEN-OMISSION-20261114"
+  ],
+  "local_links_checked": 32,
+  "python_AST": "PASS",
+  "source_whitespace": "PASS",
+  "scoped_git_diff": "PASS",
+  "generated_views": 26,
+  "generated_readback": "PASS standard renderer functions",
+  "primary_source_use": "Orevkov proof Lemma5.2 end-chain complement calculation is independent of the preceding local-degree-equality comparison. No stronger unproved extension of that comparison is used.",
+  "imported_global_theorems_independently_reproved": false,
+  "formal_verification": false,
+  "external_review": false,
+  "supersedes_navigation_validation_of": [
+    "validation.json",
+    "global_validation.json",
+    "inverse_validation.json",
+    "discriminant_validation.json",
+    "infinity_validation.json",
+    "residue_validation.json"
+  ],
+  "requirements_audit": {
+    "which_divisors_ramify": "Original residual affine generic indices remain distinct from radial indices. In particular the ordinary-cusp block has old e2 and radial e3, while the cyclic-cubic block has old e3 and radial e3. General original singular boundary points require e>=3.",
+    "which_divisors_are_omitted": "Every listed radial prime over an omitted original point is omitted; the source exceptional prime is retained. e_rad1 rows are explicitly included. Original affine boundary counts remain those of PF2OMIT6.",
+    "target_images_and_residue_degrees": "Every residual radial image is the whole target exceptional P1 with f1. Generic index2 original primes have f1, and all original omitted f are1 through degree6. Global affine image equations and actual special direction coordinates remain null.",
+    "exceptional_fibre_lengths": "Every original residual local algebra is fixed. Every radial direction has the listed block length k, including A1/A2 singular directions. Radial/strict intersections share one point and are counted once. The exact principalization and canonical vectors are retained."
+  },
+  "original_fixed_target_scope_preserved": true,
+  "all_residual_r7_local_algebra_types_determined": true,
+  "all_residual_singleton_radial_primes_and_lengths_determined": true,
+  "actual_affine_images_determined": false,
+  "actual_exceptional_target_values_determined": false,
+  "unrestricted_singleton_zero_properness_proved": false,
+  "full_goal_complete": false,
+  "source_and_evidence_sha256": {
+    "SIMPLE_RAMIFICATION_AND_RADIAL.md": "cda57b2a8b40e2b0417c7908c36a85908e3071359df6b6f4611f2b53201c5011",
+    "verify_simple_radial.py": "f3caf2b06bd88e3d2705e5cd2696a48127603fc0401ae5a174361d07d0b21215",
+    "simple_radial_ledger.json": "67e8e130bc9b21b87a4c639d1c47ad4523dec6ad24c404a2303e76b78f05709a",
+    "simple_radial_receipt.json": "8489c84d94bc8f2f0f1f9a58cb21fe99b491b4339034a46c91a20a074d816650",
+    "README.md": "66d29f589fb534a5a4bbc7c56d322c453b2a91ccc8ab9b90e50aadbf11ae2522"
+  },
+  "current_entry_sha256": "ae5088f06ed7f3b169dadca6e6d94f05830c219e5bb04186a1cfe6eb1876dfe7",
+  "full_navigation_check": {
+    "command": "make check-navigation",
+    "exit_code": 2,
+    "status": "FAIL: retained historical missing consumer",
+    "first_failure": "KDSQ6: missing document consumer artifacts/generated-results/README.md",
+    "absent_artifacts_reconstructed": false
+  },
+  "full_research_check": {
+    "command": "python3 research/scripts/research.py check",
+    "exit_code": 1,
+    "status": "FAIL: retained historical missing lesson source",
+    "first_failure": "Historical navigation output omitted during repository reorganization.",
+    "absent_artifacts_reconstructed": false
+  }
+}

@@ -1,0 +1,178 @@
+{
+  "date": "2026-11-15",
+  "canonical_proof": "moments/vanishing/TWO_SIDED_CONIC_GLOBAL_140.md",
+  "canonical_proof_sha256": "e862be29b4eafe29d5cbc0df6ca003294e0523409afb441669527fae2a47654f",
+  "claims": [
+    "G3TWOSIDEDCONIC20261115",
+    "G3PURE140_20261115"
+  ],
+  "checker": "moments/vanishing/verify_two_sided_conic_seed_bounds.py",
+  "checker_sha256": "60491c28ddbd1335807c4568047ced3298486ee1ff5e93fbcefad632431bc72c",
+  "certificate_sha256": "b80ece02e4437c45b1a8d2eb616b321114731d1ef3bd92aca5bfa7f59375c585",
+  "accepted_receipt_sha256": "d28355ccbf3009c21650be656bbddee71fa2295c553b6a0cae2aeb7b3a4df655",
+  "prior_frontier": {
+    "path": "moments/vanishing/two_sided140_preupdate_20261115.json",
+    "sha256": "0d235a4418ee9ffd387b572ca210eeaabb968307348a266be2efa2b533ad1e6f"
+  },
+  "retained_inputs": {
+    "verify_balanced_logarithmic_seed_bounds.py": "8e7ba8dba5894e958a77f9820fce53c1285b62930d5d2e9a787ba3f429b374a1",
+    "balanced_logarithmic_seed_bounds_certificate.json": "74d869cf36b9758960d65c3a105cc0ff8cfee8e185a57c414b82013b9084e390",
+    "balanced_logarithmic_seed_bounds_verification.json": "1b96fbf717ae4abc85d89a8c23533f4344223aaf9ff236065d9ff4a7ed2892b3",
+    "verify_euler_seed_bounds.py": "5d3cacf0542ec63f1da1e1c515e031bf7a9ab2b28ab458557126ac07ce4a0e63",
+    "euler_seed_bounds_source_audit.json": "8a2f21c415beb29156db21b5fefc9839d5ca578f3812818abb8b3d8a0556ee1b",
+    "structured_seed_modules_certificate.json": "62453d5b55b8f759d15ba10876216d1736f8e0783c24ddc4748efac4937b953f",
+    "structured_seed_modules_verification.json": "070f15e0993fbab1b3f6dd22bb6a4cc940c1927a6c6ad43df04d849030f5fa5b",
+    "structured_seed_modules_source_audit.json": "86c2cb3369bc827a8752d4f09d90dd352bc90eb29b91ecc44f93a65a8f00997f",
+    "multiple_divisor_seed_bounds_source_audit.json": "b53edbf2f40d7b301b17dd1a201d238af3301237cce5943e4c8b1ce5aea810c7",
+    "ordinary_normal_seed_module_certificate.json": "dbe522f22a534b3db7582ec6e2c05c02c89b517471b180575f353fad98b99fa4",
+    "ordinary_normal_seed_module_verification.json": "81d247ea0402800cfc53fddf4065b72eebf58796f11258d666203308161ab4f8",
+    "ordinary_normal_seed_module_source_audit.json": "0528d59f58c09748117afaecb6af65f964749681c29f38216cec338d9b047b31",
+    "two_sided_conic_seed_bounds_initial_input.py": "9339df537257c32e33634ea1030f61547e0c036b6ab0692dc3733b11f611cfaf",
+    "two_sided_conic_seed_bounds_initial_failure.json": "d5385745acd8f24da673614d69aaf5a0ffe8e7ab0ae72ed1ba3b5f27ccc643b3"
+  },
+  "current_history_index": "moments/vanishing/PREFIX_PROOF_HISTORY_CURRENT.md",
+  "previous_goal_turn_classification": "progress: universal axis factors and polynomial normal modules established global/odd146, ordinary complements129/132/118 and cusp131/full140. Selected primary literature refresh was recorded without importing a new polynomial closure.",
+  "q3_two_sided_method": {
+    "Kconstant_phase_coefficient_degree": "3-abs(k)",
+    "Kconstant_seed_degree": "3j-abs(k)",
+    "Klinear_phase_coefficient_degree": "3-max(k,0)",
+    "Klinear_seed_degree": "4j-max(k,0)",
+    "p3_Kdegree0_1_gates": [
+      72,
+      90
+    ],
+    "p2_Kconstant_gates_by_A2_degree": [
+      85,
+      77
+    ],
+    "p2_Klinear_gates_by_A2_degree": [
+      100,
+      91
+    ],
+    "quadratic_K_retained_p3_p2_gates": [
+      108,
+      105
+    ],
+    "p_below2_q3_gate_retained": 130,
+    "actual_endpoint_degrees_split": true,
+    "rational_degree_at_infinity_before_endpoint_clearing": true
+  },
+  "p3q2_positive_Euler_method": {
+    "same_logarithmic_measure": true,
+    "Euler_coefficient": "2/(3t)",
+    "cleared_h": "t^3*K",
+    "source": "K*(t*W_t-2W-t^2+(2/3)*y*W_y)",
+    "vertical_coefficient": "(2/3)*t^2*K",
+    "source_support": [
+      -2,
+      2
+    ],
+    "seed_support": "[-2j,2j]",
+    "negative_module_retained": true,
+    "negative_endpoint": "K^2*B2, degreeB2<=1",
+    "normal_endpoint_clear_power": "B2^(2j-2)",
+    "high_low_depths": [
+      "2j-2",
+      "2j-2"
+    ],
+    "shared_B2_K_t_factors_allowed": true,
+    "constant_K_gates_by_B2_degree": [
+      87,
+      71
+    ],
+    "linear_K_gates_by_B2_degree": [
+      129,
+      129
+    ],
+    "quadratic_K_gates_by_B2_degree": [
+      95,
+      95
+    ],
+    "other_q_below3_gate_retained": 108,
+    "row_rounding_before_determinant": true,
+    "rational_witnesses_retained": true
+  },
+  "class_bounds": {
+    "conic_full_gate": 130,
+    "full_W_linear_gate": 140,
+    "unrestricted_rank_one_gate_unchanged": 140
+  },
+  "global_cover": {
+    "quadratic": 7,
+    "smooth": 94,
+    "nodal": 130,
+    "cusp": 140,
+    "transverse": 132,
+    "tangent": 132,
+    "triangle": 130,
+    "concurrent": 104,
+    "repeated": 99
+  },
+  "global_sufficient_pure_prefix": 140,
+  "odd_sufficient_pure_prefix": 140,
+  "homogeneous_sufficient_pure_prefix": 130,
+  "least_prefix_interval": [
+    20,
+    140
+  ],
+  "odd_least_prefix_interval": [
+    20,
+    140
+  ],
+  "homogeneous_least_prefix_interval": [
+    14,
+    130
+  ],
+  "smooth_leading_least_prefix_interval": [
+    20,
+    94
+  ],
+  "smooth_homogeneous_least_prefix_interval": [
+    14,
+    56
+  ],
+  "frame_condition_required_for_global140": false,
+  "binary_search_rounds_max": 7,
+  "parity_boundary": "Both140 and130 are even; no139/129 deduction follows from oddness.",
+  "exact_auxiliary_evidence": {
+    "universal_source_strata": 7,
+    "positive_Euler_gauge_identities": 27,
+    "models": 23,
+    "actual_q2_conic_models": 3,
+    "direct_seed_identities": 69
+  },
+  "historical_proof_immutability": {
+    "JOINT_DEGREE_GLOBAL_353.md": "5369191d5a67c2d05750033ef3d9d19c6ad61afcfb2d532a0a0c6f1016c451f9",
+    "EULER_REPRESENTATIVES_GLOBAL_297.md": "3a7591c55c7ae52b23f00a897c58ca42105de1b680521d46a596f2d7ef3fd631",
+    "SHARED_DIVISOR_GLOBAL_258.md": "5146f6676da462bfd741bde1ec9d8184eddc292389467005207e0e3d2df8aaf9",
+    "STRUCTURED_SEEDS_GLOBAL_239.md": "c5d09c4aadac8bc9911d9460034507a446d7c507e10950b324e594273d70d924",
+    "COMMON_TIME_FACTOR_GLOBAL_224.md": "4429c2c08cbabace6b1b23e2a6f501205068a43d04810a859d81d76133ca5208",
+    "POLE_FILTERED_GLOBAL_199.md": "ac04552d1dcfd4d8ea214aae3950976ec6b30442f097ef8129d5f2682454c41f",
+    "MULTIPLE_DIVISORS_GLOBAL_174.md": "2e4d1808e43ba5fcfce4a86a8bf15a0c20166e5994346a2db2c02cbc44787bba",
+    "NORMAL_MODULE_GLOBAL_146.md": "f58675c096e137292e813852894603153a41c70bd1bff681ee788908334baa6a",
+    "PREFIX_PROOF_HISTORY.md": "3426a5a8e60d0d14f177e23e2c9e157778eae3644ec2caa564af9c17d4b8997c"
+  },
+  "initial_failure_boundary": "All source and23 model identities passed. Expected linear-K p3q2 gate130 was a valid coarser estimate; individual polynomial row rounding gives129, so the equality assertion failed. Accepted run records129, with the failed input and terminal receipt preserved.",
+  "analytic_boundary": "Same actual rational quotient seed, full ranks, original Wick functional and logarithmic volume normalization. Universal degree/module/path inductions and analytic exclusions remain written inputs. All higher scalar valuations remain at least3j.",
+  "literature_boundary": "No fresh literature-coverage claim or new external theorem/producer package in this algebraic refinement. Previous selected primary refresh remains retained in ordinary_normal_seed_module_source_audit.json.",
+  "least_prefix_computed": false,
+  "full_coefficient_radical_search_executed": false,
+  "expanded_global_radical_cofactors_computed": false,
+  "universal_written_proof_certified_by_checker": false,
+  "independent_replay": false,
+  "external_review": false,
+  "formal_verification": false,
+  "new_external_theorems_imported": false,
+  "producer_package_executed": false,
+  "assurance": "Internal all-coefficient two-sided source/module/path/cofactor proof with retained complete analytic exclusions. Exact seven source strata,27 positive logarithmic Euler gauge identities and69 actual seed reductions in23 models, with all endpoint-degree/rank/row arithmetic. No independent replay, external review or formal verification.",
+  "remaining": [
+    "Least global/odd[20,140], homogeneous[14,130]",
+    "Twenty/fourteen-moment sufficiency",
+    "Smaller unrestricted rank-one140 and conic130 gates",
+    "Expanded I140 radical cofactors",
+    "Independent analytic review",
+    "Exceptional coefficient schemes",
+    "Global term-count minima",
+    "Lower-power GVC"
+  ]
+}

@@ -1,0 +1,244 @@
+   ? ideal(...) failed
+   ? error occurred in or before /home/royvanrijn/src/jacobian-research/research/moments/vanishing/three_factor_colon_geometry.sing line 7: `ideal G10=std(ideal(I,P));`
+   ? expected ideal-expression. type 'help ideal;'
+GLOBAL_BASES
+815
+   ? `G10` is not defined
+   ? error occurred in or before /home/royvanrijn/src/jacobian-research/research/moments/vanishing/three_factor_colon_geometry.sing line 8: `print("GLOBAL_BASES");print(size(G8));print(size(G10));`
+NIL_POWER
+8
+285
+I8_REMAINDER_SIZE
+249
+I10_REMAINDER_SIZE
+   ? `G10` is not defined
+   ? error occurred in or before /home/royvanrijn/src/jacobian-research/research/moments/vanishing/three_factor_colon_geometry.sing line 13: ` print("I10_REMAINDER_SIZE");print(size(reduce(K,G10)));`
+NIL_POWER
+9
+385
+I8_REMAINDER_SIZE
+276
+I10_REMAINDER_SIZE
+   ? `G10` is not defined
+   ? error occurred in or before /home/royvanrijn/src/jacobian-research/research/moments/vanishing/three_factor_colon_geometry.sing line 13: ` print("I10_REMAINDER_SIZE");print(size(reduce(K,G10)));`
+NIL_POWER
+10
+506
+I8_REMAINDER_SIZE
+237
+I10_REMAINDER_SIZE
+   ? `G10` is not defined
+   ? error occurred in or before /home/royvanrijn/src/jacobian-research/research/moments/vanishing/three_factor_colon_geometry.sing line 13: ` print("I10_REMAINDER_SIZE");print(size(reduce(K,G10)));`
+NIL_POWER
+11
+650
+I8_REMAINDER_SIZE
+120
+I10_REMAINDER_SIZE
+   ? `G10` is not defined
+   ? error occurred in or before /home/royvanrijn/src/jacobian-research/research/moments/vanishing/three_factor_colon_geometry.sing line 13: ` print("I10_REMAINDER_SIZE");print(size(reduce(K,G10)));`
+NIL_POWER
+12
+819
+I8_REMAINDER_SIZE
+33
+I10_REMAINDER_SIZE
+   ? `G10` is not defined
+   ? error occurred in or before /home/royvanrijn/src/jacobian-research/research/moments/vanishing/three_factor_colon_geometry.sing line 13: ` print("I10_REMAINDER_SIZE");print(size(reduce(K,G10)));`
+NIL_POWER
+13
+1015
+I8_REMAINDER_SIZE
+6
+I10_REMAINDER_SIZE
+   ? `G10` is not defined
+   ? error occurred in or before /home/royvanrijn/src/jacobian-research/research/moments/vanishing/three_factor_colon_geometry.sing line 13: ` print("I10_REMAINDER_SIZE");print(size(reduce(K,G10)));`
+NIL_POWER
+14
+1240
+I8_REMAINDER_SIZE
+0
+I10_REMAINDER_SIZE
+   ? `G10` is not defined
+   ? error occurred in or before /home/royvanrijn/src/jacobian-research/research/moments/vanishing/three_factor_colon_geometry.sing line 13: ` print("I10_REMAINDER_SIZE");print(size(reduce(K,G10)));`
+NIL_POWER
+15
+1496
+I8_REMAINDER_SIZE
+0
+I10_REMAINDER_SIZE
+   ? `G10` is not defined
+   ? error occurred in or before /home/royvanrijn/src/jacobian-research/research/moments/vanishing/three_factor_colon_geometry.sing line 13: ` print("I10_REMAINDER_SIZE");print(size(reduce(K,G10)));`
+NIL_POWER
+16
+1785
+I8_REMAINDER_SIZE
+0
+I10_REMAINDER_SIZE
+   ? `G10` is not defined
+   ? error occurred in or before /home/royvanrijn/src/jacobian-research/research/moments/vanishing/three_factor_colon_geometry.sing line 13: ` print("I10_REMAINDER_SIZE");print(size(reduce(K,G10)));`
+NIL_POWER
+17
+2109
+I8_REMAINDER_SIZE
+0
+I10_REMAINDER_SIZE
+   ? `G10` is not defined
+   ? error occurred in or before /home/royvanrijn/src/jacobian-research/research/moments/vanishing/three_factor_colon_geometry.sing line 13: ` print("I10_REMAINDER_SIZE");print(size(reduce(K,G10)));`
+NIL_POWER
+18
+2470
+I8_REMAINDER_SIZE
+0
+I10_REMAINDER_SIZE
+   ? `G10` is not defined
+   ? error occurred in or before /home/royvanrijn/src/jacobian-research/research/moments/vanishing/three_factor_colon_geometry.sing line 13: ` print("I10_REMAINDER_SIZE");print(size(reduce(K,G10)));`
+NIL_POWER
+19
+2870
+I8_REMAINDER_SIZE
+0
+I10_REMAINDER_SIZE
+   ? `G10` is not defined
+   ? error occurred in or before /home/royvanrijn/src/jacobian-research/research/moments/vanishing/three_factor_colon_geometry.sing line 13: ` print("I10_REMAINDER_SIZE");print(size(reduce(K,G10)));`
+NIL_DONE
+COLON_RADICAL_FORWARD
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0
+COLON_RADICAL_REVERSE
+0,
+0,
+0,
+0,
+0,
+0
+COLON_LINEAR_REGULAR
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+a2ef3-abef3,
+0,
+a2df3-acdf3,
+0,
+0,
+0,
+0,
+0,
+0,
+b2de3-bcde3,
+0,
+5b2d2e2+12d4e2-5bce4+12d2e4+5a2d2f2+12d4f2+5a2e2f2+5b2e2f2-5ace2f2-5bce2f2+12e4f2-5acf4+12d2f4+12e2f4,
+0,
+bef5,
+d2f5+e2f5,
+cdf5,
+100d2f5+100e2f5,
+0,
+0,
+12ae4f2-5a2cf4+12ae2f4-12be2f4,
+71a2e3f2+100e5f2,
+b2ce2f2,
+a2ce2f2,
+0,
+852/5a2e3f2+240e5f2,
+12ad4f2-5a2bf4+12ad2f4+12be2f4,
+71a2d3f2+100d5f2,
+a2bd2f2,
+0,
+852/5a2d3f2+240d5f2,
+ae5f,
+ad5f,
+71/100a2e3f2+e5f2,
+cde5,
+0,
+12bd2e4+5a2be2f2-5a2bf4+5a2cf4+12ad2f4-12ae2f4+24be2f4,
+bcde4+acdf4,
+71/100a2d3f2+d5f2,
+0,
+bd5e,
+0,
+0,
+0,
+0,
+0
+COLON_HILBERT
+1,
+5,
+15,
+32,
+52,
+63,
+47,
+4,
+-24,
+-8,
+-1,
+0 
+END

@@ -1,0 +1,128 @@
+{
+  "result": "focused subset-orbit form integration passes",
+  "previous_goal_turn": "progress",
+  "new_claim_ids": [
+    "KMFI20",
+    "KMFI21",
+    "KMFI22"
+  ],
+  "changed_claim_ids": [
+    "OP-KMON"
+  ],
+  "reviewed_claim_ids": [
+    "OP-KMON",
+    "KMFI1",
+    "KMFI2",
+    "KMFI3",
+    "KMFI4",
+    "KMFI5",
+    "KMFI6",
+    "KMFI7",
+    "KMFI8",
+    "KMFI9",
+    "KMFI10",
+    "KMFI11",
+    "KMFI12",
+    "KMFI13",
+    "KMFI14",
+    "KMFI15",
+    "KMFI16",
+    "KMFI17",
+    "KMFI18",
+    "KMFI19",
+    "KMFI20",
+    "KMFI21",
+    "KMFI22"
+  ],
+  "claim_schema_checker_hashes_paths_dependencies_and_scope_acknowledgments": "pass",
+  "validation_scope": "Canonical validator entry loops restricted to these reviewed entries; full global reference context retained. Unrelated active-queue mismatch recorded separately.",
+  "monodromy_dependency_closure_acyclic": true,
+  "dependency_closure_claim_count": 57,
+  "full_registry_graph_audit": {
+    "dependencies": "Historical navigation output omitted during repository reorganization.",
+    "replaced_by": "pass"
+  },
+  "unrelated_active_queue_difference": {
+    "added": [
+      "OP-GMC3-CUBIC"
+    ],
+    "removed": []
+  },
+  "all_registry_ids_unique": true,
+  "updated_lesson_schema_paths_and_reviews": "pass",
+  "updated_work_sources_and_reviews": "pass",
+  "python_sources_parse": true,
+  "document_links_checked": 47,
+  "receipts": [
+    {
+      "path": "receipt.json",
+      "checks": 197,
+      "source_hashes": "pass"
+    },
+    {
+      "path": "affine_completion_receipt.json",
+      "checks": 82,
+      "source_hashes": "pass"
+    },
+    {
+      "path": "curve_descent_receipt.json",
+      "checks": 67,
+      "source_hashes": "pass"
+    },
+    {
+      "path": "alternating_realizations_receipt.json",
+      "checks": 43,
+      "source_hashes": "pass"
+    },
+    {
+      "path": "all_alternating_receipt.json",
+      "checks": 94,
+      "source_hashes": "pass"
+    },
+    {
+      "path": "subgroup_reduction_receipt.json",
+      "checks": 694,
+      "source_hashes": "pass"
+    },
+    {
+      "path": "surface_forms_receipt.json",
+      "checks": 78,
+      "source_hashes": "pass"
+    },
+    {
+      "path": "orbit_forms_receipt.json",
+      "checks": 82,
+      "source_hashes": "pass"
+    }
+  ],
+  "total_exact_checks": 1337,
+  "completion_audit": {
+    "global_form_extension": "KMFI19 local resolutions checked for all stated cut sizes",
+    "module_injection": "written incidence commutant irreducibility and universal Lagrange proof",
+    "quotient_inequalities": "p_g(cone quotient) >= r6-r1; p_g(shear quotient) >= r6-r2",
+    "all_proper_transitive_A12_subgroup_reductions": "excluded for the two specified normal closures",
+    "classification_inputs": "Beaumont-Peterson Theorem 10 and complete degree-12 PrimGrp catalogue attributed and retained",
+    "classification_completeness_independently_reproved": false,
+    "root_configurations": "source fields excluded in stated k ranges for these same normal closures",
+    "abstract_PSL2_11_actions": "neither realized nor excluded absolutely",
+    "abstract_Mathieu_or_configuration_actions": "not excluded for other normal closures",
+    "full_action_spectrum": "not classified",
+    "goal_complete": false
+  },
+  "proof_assurance": "Written proof with exact orbit, local-bound and source-hash controls; no formal verification or independent whole-proof review.",
+  "goal_status": "active",
+  "full_navigation": [
+    {
+      "command": "make render-navigation",
+      "result": "blocked",
+      "exit_code": 2,
+      "output_tail": "  File \"/home/royvanrijn/src/jacobian-research/research/scripts/render_status.py\", line 514, in <module>\n    main()\n  File \"/home/royvanrijn/src/jacobian-research/research/scripts/render_status.py\", line 503, in main\n    validate_index(index)\n  File \"/home/royvanrijn/src/jacobian-research/research/scripts/render_status.py\", line 360, in validate_index\n    assert consumer_path.is_file(), (\n           ^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: KDSQ6: missing document consumer artifacts/generated-results/README.md\nmake[1]: *** [Makefile:16: render-navigation] Error 1\nmake: *** [Makefile:17: render-navigation] Error 2"
+    },
+    {
+      "command": "make check-navigation",
+      "result": "blocked",
+      "exit_code": 2,
+      "output_tail": "\nTraceback (most recent call last):\n  File \"/home/royvanrijn/src/jacobian-research/research/scripts/audit_status.py\", line 8, in <module>\n    validate_index(index)\n  File \"/home/royvanrijn/src/jacobian-research/research/scripts/render_status.py\", line 360, in validate_index\n    assert consumer_path.is_file(), (\n           ^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: KDSQ6: missing document consumer artifacts/generated-results/README.md\nmake[1]: *** [Makefile:21: check-navigation] Error 1\nmake: *** [Makefile:17: check-navigation] Error 2"
+    }
+  ]
+}

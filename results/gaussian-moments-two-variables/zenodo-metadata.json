@@ -1,0 +1,27 @@
+{
+  "title": "The Gaussian Moments Conjecture in Two Variables",
+  "publication_date": "2026-07-23",
+  "description": "<p class=\"isSelectedEnd\">This preprint proves the Gaussian Moments Conjecture for two real Gaussian variables.</p>\n<p class=\"isSelectedEnd\">Using circular coordinates, Gaussian integration is decomposed into constant-term extraction in an angular variable followed by the factorial functional (U^j \\mapsto j!) in a radial variable. If a polynomial with vanishing positive moments contains both positive and negative rotational weights, an exposed lower face of its Newton diagram yields a nonzero lowest radial term. The Duistermaat&ndash;van der Kallen constant-term theorem and a reduction-modulo-(p) argument then show that this term cannot cancel after applying the factorial functional.</p>\n<p class=\"isSelectedEnd\">It follows that every polynomial with all positive Gaussian moments equal to zero has rotational weights of one strict sign. The mixed-moment conclusion is then immediate, proving the conjecture in dimension two.</p>\n<p>Together with Christopher Long&rsquo;s recent counterexamples in every dimension at least three, this determines the exact dimensional range in which the Gaussian Moments Conjecture holds. The main proof has also been formalized in Lean.</p>",
+  "access_right": "open",
+  "creators": [
+    {
+      "name": "van Rijn, Roy",
+      "affiliation": null,
+      "orcid": "0009-0000-2808-0645"
+    }
+  ],
+  "keywords": [
+    "Gaussian Moments Conjecture",
+    "Gaussian integration",
+    "constant terms",
+    "Laurent polynomials",
+    "Duistermaat–van der Kallen theorem",
+    "Newton polytope",
+    "reduction modulo p",
+    "Lean formalization"
+  ],
+  "language": "eng",
+  "upload_type": "publication",
+  "publication_type": "preprint",
+  "license": "cc-by-4.0"
+}

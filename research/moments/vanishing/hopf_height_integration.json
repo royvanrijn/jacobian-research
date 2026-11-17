@@ -1,0 +1,65 @@
+{
+  "date": "2026-11-15",
+  "previous_goal_turn": "PROGRESS:regular Bezout maps,global polynomial slice,six generators and all-order weighted-tail family",
+  "current_goal_turn": "PROGRESS:complete torus Hopf-height criterion,five necessary homogeneous section weights,and an all-degree real-height obstruction",
+  "new_claims": [
+    "GHOPFHEIGHT20261115",
+    "GSECTIONWEIGHTS20261115",
+    "GREALHEIGHT20261115"
+  ],
+  "schema_dependency_acyclicity_and_artifact_hashes": true,
+  "prior_records_unchanged_except_named_work_and_audited_concurrent_records": {
+    "MATH_STATUS.json": 2774,
+    "knowledge/lessons.json": 650,
+    "knowledge/work_items.json": 52
+  },
+  "concurrent_records_preserved_at_inspected_hashes": 32,
+  "concurrent_record_audit": "moments/vanishing/hopf_height_concurrent_records.json",
+  "concurrent_record_audit_sha256": "22dda3bddcb20f957c455c3d7e79bf954e574d406fa6d8fd6e060d2825bef888",
+  "concurrent_claim_changes_disjoint_from_proof_dependency_closure": true,
+  "reviewed_lesson": "METHOD-HOPF-HEIGHT-REAL-DENSITY-20261115",
+  "reviewed_work_item": "WORK-EXCEPTIONAL-SL2-MOMENTS",
+  "scope_fingerprints_reviewed": true,
+  "source_checker_receipt_and_primary_cache_hashes": true,
+  "canonical_local_links_checked": 4,
+  "all_order_architecture": "Hopf purity iff every even auxiliary-height moment is1/(2j+1);if pure,the unweighted marker u has exact positive tail c_m",
+  "necessary_homogeneous_section_weights": {
+    "2O": [
+      -20,
+      0,
+      10,
+      12,
+      20
+    ],
+    "2I": [
+      -32,
+      0,
+      16,
+      24,
+      32
+    ]
+  },
+  "real_compact_height_branch": "CLOSED for every noncyclic finite sphere rotation group;bounded density forces exactly two extrema",
+  "remaining_sufficient_family_targets": "complex equivariant heights,the other candidate homogeneous weights,and mixed-weight sections",
+  "five_weights_sufficient": false,
+  "complex_moments_force_compact_reality": false,
+  "new_literature_review": "Fasel-Hornslien2604.12541v2 Section2.6,5November2026;postcomposition retains its Jacobian and actual H3 normalization",
+  "universal_algebra_density_and_topology_proofs_machine_verified": false,
+  "exceptional_MZ_decisions": "OPEN on both models",
+  "next_gate": "Find a complex height with the exact logarithmic resolvent or close that whole branch;retain other section weights,mixed weights,and the FULL admissible pure-null classification",
+  "new_support_or_moment_prefix_campaign": false,
+  "assurance": "Internal written proofs with exact coefficient,weight,area and compact-star controls;no independent specialist replay,formal verification or external review",
+  "rendered_views": [
+    "index/README.md",
+    "index/geometry.md",
+    "index/documents.tsv",
+    "knowledge/ALGORITHMS.md",
+    "knowledge/WORK_LEDGER.md",
+    "knowledge/work/geometry.md",
+    "STATUS.md"
+  ],
+  "full_repository_navigation": "FAIL: pre-existing KDSQ6 missing document consumer artifacts/generated-results/README.md (make exit2)",
+  "full_repository_validated": false,
+  "git_diff_check": "PASS (exit0)",
+  "goal_status": "active"
+}

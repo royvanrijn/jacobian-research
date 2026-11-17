@@ -1,29 +1,20 @@
-# Elliptic Curve Research
+# AI Math Research
 
-High-rank elliptic curves, K3 constructions, exact certificates and reusable algorithms.
+Mathematical research by Roy van Rijn, developed with AI research assistants, especially OpenAI Codex. This repository brings together written proofs, exact computations and Lean formalizations around the Jacobian Conjecture, polynomial maps and moment-vanishing problems.
 
-- [Start here](research/README.md) · [Current mathematical status](research/STATUS.md).
-- [Algorithmic lessons and failed routes](research/KNOWLEDGE_BASE.md) — read before another calculation.
-- [Remaining obligations](research/knowledge/WORK_LEDGER.md) · [Source-review progress](research/knowledge/PARTIAL_REVIEW.md).
-- [Elliptic-curve cleanup status](research/elliptic-curves/CLEANUP_REPORT_2026-09-13.md) — current boundaries, preserved evidence and remaining audits.
-- [Replay guide](research/REPRODUCE.md) · [Discovery timeline](research/RESEARCH_TIMELINE.md).
-- [Archived projects](research/archive/non-elliptic/README.md) — plane Jacobian, Hessian, Keller, GVC and related work.
-- [Scoped Jacobian follow-ups](research/jacobian-followup/README.md) — the requested de Bondt audit and new normal-r7 partial result.
+Start with the published papers below. Each paper has its PDF, source, submission metadata and a short account of what was checked. Publication here means a deposited preprint; independent review and the scope of formal verification are stated separately.
 
-Find the retained method before computing:
+## Published papers
 
-```sh
-python3 research/scripts/research.py search "seed amplification" --area elliptic-curves --kind lesson
-python3 research/scripts/research.py show EC-CURVE302-RECOVERED-MW17-PARENT
-```
+| Paper | Main result | Read |
+|---|---|---|
+| **The Generalized Vanishing Conjecture: The Two-Variable Theorem and the First Failing Dimension** | Proves GVC in two variables and constructs a homogeneous failure in dimension three. | [Paper and verification](results/generalized-vanishing-two-variables/) · [Zenodo](https://zenodo.org/records/21803325) · [Hexagon](https://hexagonmath.org/2610.00580v2) |
+| **A Four-Term Counterexample to the Special Image Conjecture in Three Pairs** | An explicit counterexample with all-power identities and an exact replay checker. | [Paper and verification](results/three-pair-image-counterexample/) · [Zenodo](https://zenodo.org/records/21634058) |
+| **Sparse Minimality of Gaussian-Moments Counterexamples in Dimension Three** | Excludes degree-at-most-four counterexamples with at most four monomials in Gaussian Witt coordinates. | [Paper and verification](results/sparse-minimality-gaussian-moments-dimension-three/) · [Zenodo](https://zenodo.org/records/21534917) |
+| **The Gaussian Moments Conjecture in Two Variables** | Proves GMC(2), with a Lean development conditional on two explicit mathematical inputs. | [Paper and verification](results/gaussian-moments-two-variables/) · [Zenodo](https://zenodo.org/records/21534699) |
 
-<!-- BEGIN GENERATED ELLIPTIC CURVE TABLE -->
-## Elliptic curve inventory
+## In preparation
 
-**491 research curves · 347 exact conductors · 144 unresolved**.
+[Unpublished papers](unpublished/) include the Gaussian dimension-degree boundary, **Haar Moments and the Mathieu Property of Reductive Homogeneous Spaces**, revisions and smaller drafts. Each directory records what it proves, its review status and the remaining work.
 
-[Full inventory](research/elliptic-curves/INVENTORY.md) · [JSON](research/elliptic-curves/data/research_curves/database.json) · [CSV](research/elliptic-curves/data/research_curves/database.csv) · [Snapshot evidence](research/elliptic-curves/notes/INVENTORY_REFRESH_2026-09-09.md)
-
-Ranks are certified lower bounds. Full equations, points, conductor bounds and provenance are retained in the linked inventory.
-
-<!-- END GENERATED ELLIPTIC CURVE TABLE -->
+[Research topics](research/) contain the ongoing programme, open questions, closed routes, proofs, code and supporting evidence.

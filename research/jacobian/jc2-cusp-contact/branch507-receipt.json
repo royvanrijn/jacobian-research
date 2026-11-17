@@ -1,0 +1,367 @@
+{
+  "as_of": "2026-11-14",
+  "outcome": "PASS",
+  "checks": [
+    "pinned primary BKK source",
+    "exact P envelope",
+    "exact Q envelope",
+    "direct generic degree upper bound2175",
+    "integer-hull mixed volume L=39",
+    "integer-hull facet supports L=39",
+    "terminal local intersection budget L=39",
+    "refined sheet-degree bound L=39",
+    "integer-hull mixed volume L=40",
+    "integer-hull facet supports L=40",
+    "terminal local intersection budget L=40",
+    "refined sheet-degree bound L=40",
+    "integer-hull mixed volume L=45",
+    "integer-hull facet supports L=45",
+    "terminal local intersection budget L=45",
+    "refined sheet-degree bound L=45",
+    "integer-hull mixed volume L=50",
+    "integer-hull facet supports L=50",
+    "terminal local intersection budget L=50",
+    "refined sheet-degree bound L=50",
+    "integer-hull mixed volume L=55",
+    "integer-hull facet supports L=55",
+    "terminal local intersection budget L=55",
+    "refined sheet-degree bound L=55",
+    "integer-hull mixed volume L=60",
+    "integer-hull facet supports L=60",
+    "terminal local intersection budget L=60",
+    "refined sheet-degree bound L=60",
+    "integer-hull mixed volume L=65",
+    "integer-hull facet supports L=65",
+    "terminal local intersection budget L=65",
+    "refined sheet-degree bound L=65",
+    "integer-hull mixed volume L=70",
+    "integer-hull facet supports L=70",
+    "terminal local intersection budget L=70",
+    "refined sheet-degree bound L=70",
+    "uniform F2 geometric-degree bound2019",
+    "P terminal endpoint local weight (4, 1)",
+    "P terminal endpoint local weight (21, 6)",
+    "g terminal endpoint local weight (1, 0)",
+    "g terminal endpoint local weight (18, 5)",
+    "g terminal endpoint local weight (35, 10)",
+    "actual terminal W polynomial has degree3",
+    "terminal W has no common fast-root with P",
+    "terminal W nonzero slow-root coefficient",
+    "terminal W cleared monomials have stated local weight 39",
+    "terminal W cleared monomials have stated local weight 40",
+    "terminal W cleared monomials have stated local weight 45",
+    "terminal W cleared monomials have stated local weight 50",
+    "terminal W cleared monomials have stated local weight 55",
+    "terminal W cleared monomials have stated local weight 60",
+    "terminal W cleared monomials have stated local weight 65",
+    "terminal W cleared monomials have stated local weight 70",
+    "local weighted bound control resultant",
+    "zero seven-jet full coefficient ideal",
+    "seven-jet triangular pivot 0",
+    "seven-jet triangular pivot 1",
+    "seven-jet triangular pivot 2",
+    "seven-jet triangular pivot 3",
+    "seven-jet triangular pivot 4",
+    "first residual raw jet coefficient",
+    "second residual raw jet coefficient",
+    "raw jet nilpotence identity",
+    "raw jet length7 standard monomials",
+    "zero-jet elimination equals exact Euler eligibility scheme",
+    "explicit reverse scheme map coefficient 0",
+    "explicit reverse scheme map coefficient 1",
+    "explicit reverse scheme map coefficient 2",
+    "explicit reverse scheme map coefficient 3",
+    "explicit reverse scheme map coefficient 4",
+    "explicit reverse scheme map coefficient 5",
+    "explicit reverse scheme map coefficient 6",
+    "no geometric non-E8 zero-seven-jet row"
+  ],
+  "check_count": 73,
+  "geometric_degree_atlas": [
+    {
+      "L": 39,
+      "contact": 507,
+      "total_cap": 253,
+      "W_hull": [
+        [
+          0,
+          0
+        ],
+        [
+          7,
+          0
+        ],
+        [
+          8,
+          1
+        ],
+        [
+          39,
+          156
+        ],
+        [
+          1,
+          251
+        ],
+        [
+          0,
+          253
+        ]
+      ],
+      "mixed_volume": 4263,
+      "eta_intersection_lower_bound": 222,
+      "raw_degree_bound": 1421,
+      "refined_degree_bound": 1347
+    },
+    {
+      "L": 40,
+      "contact": 520,
+      "total_cap": 260,
+      "W_hull": [
+        [
+          0,
+          0
+        ],
+        [
+          8,
+          0
+        ],
+        [
+          40,
+          160
+        ],
+        [
+          0,
+          260
+        ]
+      ],
+      "mixed_volume": 4380,
+      "eta_intersection_lower_bound": 228,
+      "raw_degree_bound": 1460,
+      "refined_degree_bound": 1384
+    },
+    {
+      "L": 45,
+      "contact": 585,
+      "total_cap": 292,
+      "W_hull": [
+        [
+          0,
+          0
+        ],
+        [
+          9,
+          0
+        ],
+        [
+          45,
+          180
+        ],
+        [
+          1,
+          290
+        ],
+        [
+          0,
+          292
+        ]
+      ],
+      "mixed_volume": 4920,
+      "eta_intersection_lower_bound": 258,
+      "raw_degree_bound": 1640,
+      "refined_degree_bound": 1554
+    },
+    {
+      "L": 50,
+      "contact": 650,
+      "total_cap": 325,
+      "W_hull": [
+        [
+          0,
+          0
+        ],
+        [
+          10,
+          0
+        ],
+        [
+          50,
+          200
+        ],
+        [
+          0,
+          325
+        ]
+      ],
+      "mixed_volume": 5475,
+      "eta_intersection_lower_bound": 288,
+      "raw_degree_bound": 1825,
+      "refined_degree_bound": 1729
+    },
+    {
+      "L": 55,
+      "contact": 715,
+      "total_cap": 357,
+      "W_hull": [
+        [
+          0,
+          0
+        ],
+        [
+          11,
+          0
+        ],
+        [
+          55,
+          220
+        ],
+        [
+          1,
+          355
+        ],
+        [
+          0,
+          357
+        ]
+      ],
+      "mixed_volume": 6015,
+      "eta_intersection_lower_bound": 318,
+      "raw_degree_bound": 2005,
+      "refined_degree_bound": 1899
+    },
+    {
+      "L": 60,
+      "contact": 780,
+      "total_cap": 375,
+      "W_hull": [
+        [
+          0,
+          0
+        ],
+        [
+          12,
+          0
+        ],
+        [
+          60,
+          240
+        ],
+        [
+          10,
+          365
+        ],
+        [
+          0,
+          375
+        ]
+      ],
+      "mixed_volume": 6345,
+      "eta_intersection_lower_bound": 348,
+      "raw_degree_bound": 2115,
+      "refined_degree_bound": 1999
+    },
+    {
+      "L": 65,
+      "contact": 845,
+      "total_cap": 375,
+      "W_hull": [
+        [
+          0,
+          0
+        ],
+        [
+          13,
+          0
+        ],
+        [
+          65,
+          260
+        ],
+        [
+          33,
+          340
+        ],
+        [
+          31,
+          344
+        ],
+        [
+          0,
+          375
+        ]
+      ],
+      "mixed_volume": 6405,
+      "eta_intersection_lower_bound": 378,
+      "raw_degree_bound": 2135,
+      "refined_degree_bound": 2009
+    },
+    {
+      "L": 70,
+      "contact": 910,
+      "total_cap": 375,
+      "W_hull": [
+        [
+          0,
+          0
+        ],
+        [
+          14,
+          0
+        ],
+        [
+          70,
+          280
+        ],
+        [
+          54,
+          320
+        ],
+        [
+          53,
+          322
+        ],
+        [
+          0,
+          375
+        ]
+      ],
+      "mixed_volume": 6465,
+      "eta_intersection_lower_bound": 408,
+      "raw_degree_bound": 2155,
+      "refined_degree_bound": 2019
+    }
+  ],
+  "zero_seven_jet_basis": [
+    "b",
+    "-5*a + 3*eta",
+    "3*c - 5*mu",
+    "10*a**2 + 9*d",
+    "-10*a*mu + 9*nu",
+    "-a**3 + 9*mu**2",
+    "a**2*mu",
+    "a**5"
+  ],
+  "elimination_Euler_basis": [
+    "b",
+    "10*a**2/9 + d",
+    "-25*a**3/81 + c**2",
+    "a**2*c",
+    "a**5"
+  ],
+  "zero_jet_scheme_length": 7,
+  "files": {
+    "BRANCH507.md": "d984034638f6c5f822a736bbc1758f4760f934861e55bc0e7b244ccc72a5eafe",
+    "verify_branch507.py": "a3119650b7390e8eb39c1520a8aea489fba207edd427163614026a272fc6c443",
+    "sources/bkk-manifest.json": "4f01d58705fa8e935385e46476d4c9ca6e8a89722f2336dd06ea789d71aa8a6e"
+  },
+  "source_hashes": {
+    "foundations/plane-jc/F2_AFFINE_K1_KELLER_PULLBACK.md": "d541e08c86ca6c26e208dd98633025f3b050dd39101a136284791be888ccdf0d",
+    "foundations/plane-jc/F2_AFFINE_K1_CARRIER_JET_FACTORIZATION.md": "07088928ce33ad2661d32cbb2b03244eb4866dd5bc58acee51fd71cad01ecbdd",
+    "foundations/plane-jc/F2_AFFINE_PURITY_PUNCTURE_ATTACHMENT.md": "d80dd2c2bab7f2c26f3b6fe2ba485874ea9e96b3d6241d6f3f62157da770e6e6",
+    "foundations/plane-jc/F2_75_125_DERIVATION.md": "5afa29ca91526409fa7e62103f5c1fe8179414564d3c55845574b80ae1299640"
+  },
+  "mathematical_boundary": "BKK and toric/local intersection arguments are written imports/proofs. Zero-jet matching does not establish global attachment. No full F2 closure.",
+  "python": "3.12.3",
+  "sympy": "1.14.0",
+  "elapsed_seconds": 0.1216
+}

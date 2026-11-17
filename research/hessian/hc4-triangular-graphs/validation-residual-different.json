@@ -1,0 +1,49 @@
+{
+  "outcome": "PASS",
+  "metadata_groups": [
+    "HC4MYMA0 schema,proved dependencies,locks and assurance limits",
+    "acyclic graph,full target open and qualified Tang/master scope unchanged",
+    "77 controls,25 algebraic,14 retained byte pins,10 prior claims; classical KU splitting credited,no new import/cache",
+    "Residual-etaleness,Kahler/Dedekind equality,source-surjectivity,polynomial-domain and target-frame descent claims fail-closed",
+    "new method,two affected methods and all parent consumers have refreshed scope fingerprints",
+    "both work items preserve full trace objective,completed history and unadopted parity audit",
+    "written residual trace/different/discriminant identities,all-index retained-surjective controls and non-plane limits explicit",
+    "generated navigation equals current repository renderer output",
+    "same unrelated missing-artifact baseline [2,2,1,0]; affected whitespace passes"
+  ],
+  "repository_checks": [
+    {
+      "name": "render-navigation",
+      "exit_code": 2,
+      "output": "make -C research PYTHON=\"/home/royvanrijn/src/jacobian-research/.venv/bin/python\" SYSTEM_PYTHON=\"python3\" \"render-navigation\"\nmake[1]: Entering directory '/home/royvanrijn/src/jacobian-research/research'\npython3 scripts/render_status.py\nTraceback (most recent call last):\n  File \"/home/royvanrijn/src/jacobian-research/research/scripts/render_status.py\", line 514, in <module>\n    main()\n  File \"/home/royvanrijn/src/jacobian-research/research/scripts/render_status.py\", line 503, in main\n    validate_index(index)\n  File \"/home/royvanrijn/src/jacobian-research/research/scripts/render_status.py\", line 360, in validate_index\n    assert consumer_path.is_file(), (\n           ^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: KDSQ6: missing document consumer artifacts/generated-results/README.md\nmake[1]: *** [Makefile:16: render-navigation] Error 1\nmake[1]: Leaving directory '/home/royvanrijn/src/jacobian-research/research'\nmake: *** [Makefile:17: render-navigation] Error 2\n"
+    },
+    {
+      "name": "check-navigation",
+      "exit_code": 2,
+      "output": "make -C research PYTHON=\"/home/royvanrijn/src/jacobian-research/.venv/bin/python\" SYSTEM_PYTHON=\"python3\" \"check-navigation\"\nmake[1]: Entering directory '/home/royvanrijn/src/jacobian-research/research'\npython3 scripts/audit_status.py\nTraceback (most recent call last):\n  File \"/home/royvanrijn/src/jacobian-research/research/scripts/audit_status.py\", line 8, in <module>\n    validate_index(index)\n  File \"/home/royvanrijn/src/jacobian-research/research/scripts/render_status.py\", line 360, in validate_index\n    assert consumer_path.is_file(), (\n           ^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: KDSQ6: missing document consumer artifacts/generated-results/README.md\nmake[1]: *** [Makefile:21: check-navigation] Error 1\nmake[1]: Leaving directory '/home/royvanrijn/src/jacobian-research/research'\nmake: *** [Makefile:17: check-navigation] Error 2\n"
+    },
+    {
+      "name": "partial-review",
+      "exit_code": 1,
+      "output": "Traceback (most recent call last):\n  File \"/home/royvanrijn/src/jacobian-research/research/scripts/research.py\", line 563, in <module>\n    raise SystemExit(main())\n                     ^^^^^^\n  File \"/home/royvanrijn/src/jacobian-research/research/scripts/research.py\", line 440, in main\n    validate_lessons(items, entries, check_reviews=args.command == \"check\")\n  File \"/home/royvanrijn/src/jacobian-research/research/scripts/research.py\", line 130, in validate_lessons\n    assert (ROOT / p).is_file(), f\"{item['id']}: missing source {p}\"\n           ^^^^^^^^^^^^^^^^^^^^"
+    },
+    {
+      "name": "whitespace",
+      "exit_code": 0,
+      "output": ""
+    }
+  ],
+  "frozen_sha256": {
+    "hessian/hc4-triangular-graphs/SOURCE_BASE_CHANGE_AND_RESIDUAL_DIFFERENT.md": "08e61d5c064c43c7439c3eefb182c8ed04739e253d9cd0189ae610713c869415",
+    "hessian/hc4-triangular-graphs/verify_residual_different.py": "a086dfd66596f64c615c63b76af721e24ab366e475d3a3743fec50f65b40be42",
+    "hessian/hc4-triangular-graphs/sources/residual-different-context.json": "357ab8e4de1360e2d8dd3a36b00fb3726263594383e0c14ed078eab92455c373",
+    "hessian/hc4-triangular-graphs/receipt-residual-different.json": "8e024314587e8e6667583a766a3860ab98ea838ee089c5411c07e58f21193a03"
+  },
+  "mathematical_checker_invocations_before_registration": 1,
+  "successful_mathematical_checker_invocations_before_registration": 1,
+  "development_boundary": "ONE pre-registration NEW checker run PASS77,25algebraic,in0.125sec. No failed mathematical control or registered checker replay. KU0 prior idempotent credited;written universal residual-defect audit and all-index connected retained-surjective open controls not certified by finite checks. Primary Stacks HTML definitions/base-change proofs consulted;no new theorem import/cache. No independent full-proof review.",
+  "registered_mathematical_checkers_executed": [],
+  "independent_replay": false,
+  "formal_verification": false,
+  "external_review": false
+}

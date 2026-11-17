@@ -1,0 +1,83 @@
+{
+  "claim": "PF2RULED153",
+  "open_problem": "OP-HC4-FORMAL-TERMINATION",
+  "date": "2026-11-17",
+  "outcome": "PASS_TARGETED",
+  "exact_controls": 70,
+  "checked": [
+    "new theorem/open-problem schema, IDs, dependencies, locks and checker artifact hash",
+    "proof/checker/context receipt hashes and retained-source pins",
+    "original PF152 proof/checker unchanged",
+    "universal plane Hessian and three actual homogeneous faces",
+    "invertible rational quartic evaluation and triangular cubic actual-product certificate",
+    "nonempty first-jet point, explicit30x30 fiber minor and known second-jet control",
+    "affected lesson/work reviews",
+    "proof local links and new-file whitespace",
+    "scoped git diff --check",
+    "both preexisting renderer failures; all12 generated navigation hashes unchanged"
+  ],
+  "reviewed_work_items": [
+    "WORK-HC4-RODRIGUES-TRANSFER",
+    "WORK-HC4-COVERAGE",
+    "WORK-HC4-SCHUR",
+    "WORK-HC4-D5",
+    "WORK-HC4-RESIDUAL-AUDIT",
+    "WORK-QUARTIC-RULED-COMPATIBILITY"
+  ],
+  "validated_lessons": [
+    "METHOD-HC4-ARTINIAN-TAIL-PROPAGATION",
+    "METHOD-COVERAGE-BEFORE-ARCHITECTURE",
+    "METHOD-HC4-SCHEMATIC-CONE-NILPOTENCE"
+  ],
+  "renderer_attempts": [
+    {
+      "command": "render_status.py ",
+      "exit_code": 1,
+      "last_line": "AssertionError: KDSQ6: missing document consumer artifacts/generated-results/README.md"
+    },
+    {
+      "command": "research.py render",
+      "exit_code": 1,
+      "last_line": "Historical navigation output omitted during repository reorganization."
+    }
+  ],
+  "generated_navigation_sha256": {
+    "STATUS.md": "77598706134b9ec02ec98ba7db27bfdbd970ee6480d650f12a8213d50538c921",
+    "index/README.md": "5dc4808703e0e49c14a7802ba39a37932ae03b643a849538dcbec56a1810c31e",
+    "index/core.md": "0996fdf267d86a1b4562fbbc4b8001cdee82133f862ec6dc0cbd54074739f0d0",
+    "index/documents.tsv": "875e87046819d58981c9e26f11d146f5dabf6b10ee806a94d96ba0b975b8c993",
+    "index/formal.md": "98a1c07dcc0015819f9f46be556f4c3377dca880377667761225b39e95d08929",
+    "index/geometry.md": "b6dbb8dedf70417c2bc4f5d5c10e63da047b364409a5d2e35125a4fb024c4fc8",
+    "index/hessian.md": "9048a71d8380e98353a87b31f2f6e1f70c9fe988b727b0b30f225059d6fae005",
+    "index/papers.md": "4d7972cc9d53cef6b5c6f4200149901e8be868b19b73fe2d43f02ed9a4da2036",
+    "index/plane-jc.md": "5d671124aac8240bdbfbc0996ed7ddd5db314650d16d30b1417453a36c3f3425",
+    "index/resources.md": "11e67c2cb9b688d4f2ee341dd5a49880a1c10913b4ccae81e1feb815df81d068"
+  },
+  "completion_audit": {
+    "actual_first_jet_quotient_constructed": true,
+    "actual_cone_deviation_ideal_uniformly_nilpotent": true,
+    "uniform_cone_nilpotence_bound": 4096,
+    "radical_or_initial_quotient_substituted": false,
+    "finite_over_26_complementary_parameters": true,
+    "whole_trace_algebra_claimed_Artinian_over_Q": false,
+    "retained_fixed_parameter_fiber_length_one_proved": true,
+    "known_Tstar_point_claimed_surviving_degree_five_graph": false,
+    "cone_ideal_proved_tail_obstruction_ideal": false,
+    "reduced_polynomial_body_proved": false,
+    "all_normal_increasing_power_containment_proved": false,
+    "termination_inferred_from_coefficient_prefix": false,
+    "global_normal_form_coverage_proved": false,
+    "marked_polynomial_graph_collision_route_reopened": false,
+    "original_full_normalization_and_all_ramified_primes_preserved": true,
+    "PF142_mixed_minimal_retirement_preserved": true,
+    "generic_first_derivative_integrality_proved": false,
+    "full_HC4_JC2_proved": false,
+    "actual_counterexample_constructed": false
+  },
+  "goal_status": "active",
+  "new_external_theorem_imports": [],
+  "registered_predecessor_checkers_replayed": [],
+  "independent_replay": false,
+  "formal_verification": false,
+  "external_review": false
+}

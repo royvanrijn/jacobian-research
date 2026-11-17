@@ -1,0 +1,202 @@
+{
+  "date": "2026-11-15",
+  "canonical_proof": "moments/vanishing/RESCALED_SINGULAR_GLOBAL_888.md",
+  "claims": [
+    "G3RESCALEDSING20261115",
+    "G3PURE888_20261115"
+  ],
+  "previous_goal_turn_classification": "progress: graded smooth seed bounds94/56 were registered, with both lower witnesses completed. The global upper remained1855, dominated by ordinary-node complements.",
+  "checker": "moments/vanishing/verify_rescaled_singular_prefixes.py",
+  "checker_sha256": "2e5b8b46234452830ee6d11de1681cbd3c2de499b0dbb84b8721950a008f8190",
+  "certificate_sha256": "7a82d23c120cd830f8e12e093dfa0f6ce0b55c7e940031874270a6e92f97c67d",
+  "accepted_receipt_sha256": "2d8a4864c2d42d09491bc713e736d601ce749e074d63833f1c089ba7faf428c5",
+  "prior_frontier": {
+    "path": "moments/vanishing/rescaled_global888_preupdate_20261115.json",
+    "sha256": "d41338a784f83e6e68ce445c1fd786998cbb50837f7bf3394a9689da653bcc80"
+  },
+  "retained_inputs": {
+    "verify_ordinary_node_finite_prefixes.py": "f602defac102555fd4bd4f0537b86f8e41f929ab11baf290e63fde819b307023",
+    "ordinary_node_finite_prefixes_verification.json": "4ac4c1b9afb21d7ee6f7e534dbd551693624da024255c9b4520505dbe6f2efb0",
+    "ordinary_node_connection_models.json": "2fc77cc37fe5ccff3de74fcb6a73e987138196782823d9d91c6715d5960039cc",
+    "ordinary_node_finite_source_audit.json": "a06bd1fac188da5aeacd3c8e19b36a72e686bbabf34d7d6a55c35e7198e24f7e",
+    "ordinary_node_phase_shift_checkpoint.json": "ba163f9bcbc786a7decf6fe00ecd0750f3be184be39233d33b6f21fa15998903",
+    "verify_squarefree_singular_finite_prefixes.py": "3d5fbdbd22fe7663a0d980d071b2fd6ff55cee4540b447a989577a6c53d92eb3",
+    "squarefree_singular_finite_prefixes_verification.json": "6395fd8561f50347be07673ad76f8129393abc194877f73f7acab44541d6f9e2",
+    "squarefree_singular_connection_models.json": "e900d70a0ede12940e5de1da4281c533e65fd0fcc0b8515b8445f9a0661b0e61",
+    "squarefree_singular_finite_source_audit.json": "bda9ec1bac0761450c4f1cfb55eadb7bc5bd0aa4c88a0bb6ecaf4612ae0bd362",
+    "rank_one_wt2_verification.json": "1590f52f27566b12ba115f73951c6aa563197106abe85ed3dcaed8a7d00f93a9",
+    "tame_period_source_audit.json": "526771c3ed30b17221494a95e3f2b1973ff069a93049cc1254382b22469828f7",
+    "smooth_cubic_seed_bounds_verification.json": "9586e00d5d1ce00a322bbea130fd562f104be4af95f8b460cb319cbb354c1497",
+    "odd_prefix_witness_verification.json": "a7fdbe5cd2cf493fecc18bec19af121616ed73e3532a1add5480fa05d5fe16b9",
+    "rescaled_singular_prefixes_certificate.json": "7a82d23c120cd830f8e12e093dfa0f6ce0b55c7e940031874270a6e92f97c67d",
+    "rescaled_singular_prefixes_verification.json": "2d8a4864c2d42d09491bc713e736d601ce749e074d63833f1c089ba7faf428c5",
+    "rescaled_singular_prefixes_initial_input.py": "48262b7f5f2cb544f4c71ff40581bac2b905d58ca242685cd0f1df607ba8f25a",
+    "rescaled_singular_prefixes_initial_verification.json": "8fd5178417e62e1b30fbb01524302dbb08c3bff20a83a77a346c7dda25de0bea",
+    "rescaled_singular_prefixes_initial_certificate.json": "c1552c2549322c7f9f87db7483353838e34c6f8054450f953617f3496c2c0d79"
+  },
+  "normalization": {
+    "rescaling": "x=t*u,y=t*v",
+    "phase": "W=V(t,x/t,y/t),delta=t^2*D",
+    "prefactor": "t^(-2)*D^(-1/2)",
+    "source": "W_t*delta-W*delta_prime-2*t^3*D^2-t^4*D*D_prime/2",
+    "total_phase_degree": 4,
+    "total_source_degree": 6,
+    "boundary": "Pull back the original generic-t unit seed with its full volume Jacobian; do not define a new singular t=0 Gaussian integral. Ordinary-node complement removes every isotropic F2-zero ordinary node, not just the selected one."
+  },
+  "seed_method": {
+    "unreduced_denominator": "delta^(2j)",
+    "R_recurrence": "R_(j+1)=delta^2*R_j_prime-2j*delta*delta_prime*R_j+S*R_j",
+    "ordinary_costs": [
+      2,
+      3,
+      4
+    ],
+    "weighted_costs": [
+      4,
+      5
+    ],
+    "seed_numerator_degree_bounds": {
+      "nodal": "14j-4-d_i",
+      "transverse": "18j-6-d_i",
+      "triangle": "22j-4-d_i",
+      "cusp": "30j-12",
+      "tangent": "46j-20"
+    },
+    "higher_scalar_valuation": "at least4j",
+    "derivative_loss_extra_s": false
+  },
+  "class_bounds": {
+    "nodal": {
+      "rank": 7,
+      "k": 2,
+      "cost": 2,
+      "slope": 14,
+      "offset": 4,
+      "sum_grades": 11,
+      "complement_gate": 353,
+      "frame_gate": 888,
+      "full_gate": 888
+    },
+    "transverse": {
+      "rank": 6,
+      "k": 3,
+      "cost": 3,
+      "slope": 18,
+      "offset": 6,
+      "sum_grades": 8,
+      "complement_gate": 334,
+      "frame_gate": 888,
+      "full_gate": 888
+    },
+    "triangle": {
+      "rank": 5,
+      "k": 4,
+      "cost": 4,
+      "slope": 22,
+      "offset": 4,
+      "sum_grades": 6,
+      "complement_gate": 304,
+      "frame_gate": 888,
+      "full_gate": 888
+    },
+    "cusp": {
+      "rank": 6,
+      "k": 1,
+      "cost": 4,
+      "slope": 30,
+      "offset": 12,
+      "sum_grades": 0,
+      "complement_gate": 558,
+      "frame_gate": 425,
+      "full_gate": 558
+    },
+    "tangent": {
+      "rank": 5,
+      "k": 2,
+      "cost": 5,
+      "slope": 46,
+      "offset": 20,
+      "sum_grades": 0,
+      "complement_gate": 590,
+      "frame_gate": 425,
+      "full_gate": 590
+    }
+  },
+  "global_cover": {
+    "quadratic": 7,
+    "smooth": 94,
+    "nodal": 888,
+    "cusp": 558,
+    "transverse": 888,
+    "tangent": 590,
+    "triangle": 888,
+    "concurrent": 104,
+    "repeated": 99
+  },
+  "global_sufficient_pure_prefix": 888,
+  "least_prefix_interval": [
+    20,
+    888
+  ],
+  "odd_least_prefix_interval": [
+    20,
+    888
+  ],
+  "all_homogeneous_least_prefix_interval": [
+    14,
+    888
+  ],
+  "smooth_leading_least_prefix_interval": [
+    20,
+    94
+  ],
+  "smooth_homogeneous_least_prefix_interval": [
+    14,
+    56
+  ],
+  "frame_condition_required_for_global888": false,
+  "binary_search_rounds_max": 10,
+  "radical_conclusion": "radical(I888)=radical(I_infinity), without ordinary ideal equality or expanded global cofactors",
+  "exact_auxiliary_evidence": {
+    "universal_ordinary_divergence_identities": 135,
+    "universal_weighted_divergence_identities": 63,
+    "models": 10,
+    "connection_columns": 58,
+    "direct_seed_columns": 20
+  },
+  "primary_source_version_checks": [
+    {
+      "url": "https://arxiv.org/abs/2610.22767",
+      "current_version": "v2",
+      "last_revised": "2026-11-02",
+      "read_now": "Abstract/version metadata; body assumptions remain as audited in tame_period_source_audit.json."
+    },
+    {
+      "url": "https://arxiv.org/abs/2505.12458",
+      "current_version": "v1",
+      "submitted": "2025-05-18",
+      "read_now": "Abstract/version metadata; selected-body scope remains as audited in squarefree_singular_finite_source_audit.json."
+    }
+  ],
+  "new_external_theorems_imported": false,
+  "producer_package_executed": false,
+  "analytic_boundary": "Retain the complete ordinary-node, cusp/tangent and frame case cover, full ranks/bases, minimal-seed extension and analytic no-constant-normalized-period exclusions. The new checker does not independently establish these analytic steps.",
+  "least_prefix_computed": false,
+  "full_coefficient_radical_search_executed": false,
+  "expanded_global_radical_cofactors_computed": false,
+  "universal_written_proof_certified_by_checker": false,
+  "independent_replay": false,
+  "external_review": false,
+  "formal_verification": false,
+  "assurance": "Internal written all-coefficient rescaling/seed/cofactor proof with retained analytic exclusions; exact universal identities and ten complete rational connection/seed models. No independent specialist replay, external review or formal verification.",
+  "remaining": [
+    "Least K in[20,888]",
+    "Twenty/fourteen-moment sufficiency",
+    "Smaller complete W-linear/frame branch gates",
+    "Expanded global I888 radical cofactors",
+    "Independent review",
+    "Exceptional coefficient schemes",
+    "Global term-count minima",
+    "Lower-power GVC"
+  ]
+}

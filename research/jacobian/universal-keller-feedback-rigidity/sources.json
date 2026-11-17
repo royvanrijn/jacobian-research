@@ -1,0 +1,58 @@
+{
+  "schema_version": 1,
+  "retrieved_utc": "2026-11-15T02:29:31.695505+00:00",
+  "purpose": "Retained full source arguments, classical smooth-flat descent facts and direct all-degree feedback computations. Product-action primitivity is classical; new whole-proof verification and priority are not claimed.",
+  "local_sources": [
+    {
+      "path": "jacobian/universal-keller-canonical-filter/PROOF.md",
+      "locator": "UAFILTER1, UACANFIB1, UACANVOL1 seed/filter formulas and marked fibre.",
+      "sha256": "5f2177076da7c8ae318258bdbfc39b445e393dbcb4a4dab397c82aeea9ad0da1"
+    },
+    {
+      "path": "jacobian/universal-keller-structure/PROOF.md",
+      "locator": "UAQTILT1/UAALLATOM1 all-degree profile monodromy.",
+      "sha256": "a3dee93b955b9e449bae2fff3d2964262289572f22f0820309e6c56d8bb5cbd5"
+    },
+    {
+      "path": "jacobian/universal-keller-receiver/PROOF.md",
+      "locator": "UAPROFILE1 seed-independent first output and parameter-response Jacobian argument.",
+      "sha256": "8790916cd2c5e3f0458674dc50a37af18f1c1322eb2720c2071a819283cf639f"
+    },
+    {
+      "path": "foundations/verified/KELLER_RITT_PRODUCT_THEOREM.md",
+      "locator": "KRP1 Boolean interval and unique compatible affine intermediate model.",
+      "sha256": "22ffcbe5943c4a2277dbb17a47c4be5ab6040af08cf29734ea982254eb1e5b9d"
+    },
+    {
+      "path": "foundations/verified/UNIVERSAL_RELATIVE_KELLER_MAP.md",
+      "locator": "UAM1 cubic inverse chart and normalized compiler.",
+      "sha256": "4cced623c100a90859996e5aea69219a241c56c20ca087f1a9d4caa50209c1c5"
+    },
+    {
+      "path": "jacobian/universal-keller-compression/verify.py",
+      "locator": "Reuse only pure source_map for exact controls.",
+      "sha256": "a8d9b280e09868e1b1abed24443541dc29daa94744e467517a5b3d6da85457a5"
+    },
+    {
+      "path": "jacobian/universal-keller-atomic-cylinder/PROOF.md",
+      "locator": "UASELFATOM1 primitive self-map criterion and birational self-map lemma.",
+      "sha256": "c5dad73958ebb2d7d32d528f73b3c0db7d8bc4ab2ef4627d2b7b01e2291e6c2e"
+    }
+  ],
+  "external_sources": [
+    {
+      "path": "sources/stacks-01V4.html",
+      "url": "https://stacks.math.columbia.edu/tag/01V4",
+      "locator": "Smooth composition and smooth implies flat, Lemmas29.35.4,9; used for the polynomial first-integral descent.",
+      "bytes": 41298,
+      "sha256": "4327b0dc32a5b7a4fc554e6587f0d622d978e306bba4d2783a8aade3704aa3da"
+    },
+    {
+      "path": "sources/barbieri-potocnik-2024.html",
+      "url": "https://link.springer.com/article/10.1007/s10231-024-01447-x",
+      "locator": "Section2.1, Lemma11 recalls the classical product-action wreath primitivity criterion; used as literature context, not a new theorem.",
+      "bytes": 440285,
+      "sha256": "2c8afa5d7063a828aebc5a2b8a34507b7cada66c7959a5364178a6275f1b2355"
+    }
+  ]
+}

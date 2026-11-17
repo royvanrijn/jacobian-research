@@ -1,0 +1,70 @@
+{
+  "review_date": "2026-11-16",
+  "retained_structural_inputs": [
+    {
+      "claim": "HCTANG2",
+      "canonical_source": "hessian/tang-hc4-audit/STRUCTURAL_REVIEW.md"
+    },
+    {
+      "claim": "HC4MYKO3",
+      "canonical_source": "hessian/hc4-triangular-graphs/CANONICAL_ENERGY_INTEGRALITY_AND_POWER_TRACES.md"
+    },
+    {
+      "claim": "HC4MYKZ1",
+      "canonical_source": "hessian/hc4-triangular-graphs/COMPLETE_HOLOMORPHIC_FLOW_DESCENT.md"
+    },
+    {
+      "claim": "HC4MYKU1",
+      "canonical_source": "hessian/hc4-triangular-graphs/CANONICAL_TRACE_DUAL_ETALE_RECONSTRUCTION.md"
+    }
+  ],
+  "retained_proof_and_source_sha256": {
+    "hessian/tang-hc4-audit/STRUCTURAL_REVIEW.md": "26a6a76eb579de05b8e71245b8b804bdd5f036602f2e3e6ad5d036fd9f5cd572",
+    "hessian/tang-hc4-audit/verify_structural.py": "23e87f797b4d086ede8195773092dcd42d705258ec57c05920731e87e0ce9b2d",
+    "hessian/hc4-triangular-graphs/CANONICAL_ENERGY_INTEGRALITY_AND_POWER_TRACES.md": "1ee4de68a03886a0412339b75e50256cd8dba66e16ad1402cb5626cf1e815804",
+    "hessian/hc4-triangular-graphs/verify_canonical_energy_traces.py": "ad8b9e8cba17b746cc8a4af592d2d8eb435ad1ea019a886b1bb0a7a270ebceba",
+    "hessian/hc4-triangular-graphs/COMPLETE_HOLOMORPHIC_FLOW_DESCENT.md": "3711cc20f414a854a116c0455a79c2980e9480e7ba79ccc45e8fd37a76683844",
+    "hessian/hc4-triangular-graphs/verify_complete_holomorphic_flow.py": "1db11472a6133a2b15753ec4072984b20e3868c06801c2146bbc110f4866c58c",
+    "hessian/hc4-triangular-graphs/CANONICAL_TRACE_DUAL_ETALE_RECONSTRUCTION.md": "fef1bc4871537c9d073c424c9dbbd4f0296dd287728a0724c9101c5a7b5cf3c2",
+    "hessian/hc4-triangular-graphs/verify_canonical_etale_reconstruction.py": "ad7d5b53096780353298ee052c9ac4341d0eced2b7194c5c83c397c19af91b4f",
+    "hessian/hc4-triangular-graphs/HODGE_MULTIPLICATION_AND_NONPROPER_IMAGE_AUDIT.md": "52acaee46007fec3e8afbe379bc172f993a7758e7f6f5f380d5e9ffdeb44aba8"
+  },
+  "scope_flags": {
+    "full_goal_active": true,
+    "previous_goal_turn_progress": true,
+    "all_D_and_all_nonzero_a_b": true,
+    "all_nonendpoint_connection_parameters": true,
+    "explicit_polynomial_gradient_inverse": true,
+    "arbitrary_polynomial_degree": true,
+    "full_geodesic_lift_for_arbitrary_D": true,
+    "full_Levi_Civita_logarithmic_geodesic_for_D_zero": true,
+    "nonendpoint_curvature_nonzero": true,
+    "flat_dual_endpoint_distinguished_from_midpoint": true,
+    "external_review_deferred": true,
+    "metric_completeness_asserted_automatic": false,
+    "dual_endpoint_completeness_asserted_automatic": false,
+    "interpolated_completeness_asserted": false,
+    "HC4_counterexample_constructed": false,
+    "new_external_theorem_imported": false,
+    "new_primary_cache_created": false,
+    "registered_mathematical_checker_replayed": false,
+    "published_quartic_plane_queue_reopened": false,
+    "Miyanishi_odd_plane_theorem_adopted": false,
+    "finite_trace_pairing_proved_automatic": false,
+    "full_marked_energy_proved_automatic": false,
+    "unrestricted_HC4_or_JC2_resolved": false,
+    "independent_replay": false,
+    "formal_verification": false,
+    "external_review": false
+  },
+  "external_imports": [],
+  "new_primary_caches": [],
+  "literature_context_only": [
+    {
+      "url": "https://link.springer.com/article/10.1007/s41884-025-00173-4",
+      "inspection": "Complete Section2, Definitions/Propositions2.1-2.3 read in primary publisher HTML. Standard dual=2LC-primal formula is context only; all needed matrix formulas derived directly in the proof.",
+      "boundary": "No warped-product theorem, positivity/compactness rigidity theorem or completeness theorem imported; no independent full-paper reproduction/cache."
+    }
+  ],
+  "proof_boundary": "Written all-D,all-nonzero-a-b,all-lambda-outside-0-1 proof via block geodesic projection and full linear-ODE lift. Curvature from constant base connection matrices. Explicit inverse proves these are actual automorphisms, not HC4 counterexamples. Flat dual completeness remains inversion-equivalent, not automatic."
+}

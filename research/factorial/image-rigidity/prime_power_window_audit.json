@@ -1,0 +1,32 @@
+{
+  "date": "2026-11-16",
+  "previous_goal_turn": "progress",
+  "current_goal_turn": "progress",
+  "previous_evidence": "Every file hash in all five previous pass receipts matches the current retained sources, including the592-check finite-window audit.",
+  "canonical_proof": "factorial/image-rigidity/PRIME_POWER_TWO_TERM_SFC.tex",
+  "progress": [
+    "weighted initial-product lemma: squarefree edge residuals exclude all square divisors over Q_p",
+    "all-index falling-factorial unit-deformation theorem with geometric residue units",
+    "exact digit vertices and every edge residual computed as a reversed truncated exponential of degree<p",
+    "constant-plus-prime-power factorial SFC for every prime, exponent and positive starting index",
+    "same two-moment theorem for integer Gamma shapes1..d and a specified rational low-degree marker class",
+    "ordinary consecutive-pair ideal is a complete intersection of length n(n+1), with sharp coefficient nilpotence bound2n over every Q-algebra",
+    "independent-linear adjunction produces all-dimensional SFC classes",
+    "exact finite coefficient/hull/residual exporter and separate rational gcd/Bezout/countercontrols"
+  ],
+  "source_credit": "Rocks2015 author-preprint factorial-unit and Newton-vertex inputs; all edge-residual and squarefree steps are written here. No priority assertion or reliance on the unavailable final2017 scope.",
+  "boundaries": [
+    "geometric-unit deformation is stated over Q_p, not arbitrary ramified coefficient fields",
+    "test residual R(T), not its inseparable substitution R(Z^(p^i))",
+    "prime-power exponent and integer Gamma shape<=d required by this theorem",
+    "marker degree<d, nonzero mass and p-integral normalized rational divided-power coefficients required",
+    "failed residual or outside marker test makes no opposite conjecture decision",
+    "powers of the entire inhomogeneous phase do not inherit SFC windows automatically",
+    "general non-prime-power two-term SFC, unrestricted SFC and general FC>=3 remain open"
+  ],
+  "independent_replay": false,
+  "formal_verification": false,
+  "external_review": false,
+  "novelty_claim": false,
+  "whole_goal_complete": false
+}

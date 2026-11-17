@@ -1,0 +1,33 @@
+ROW_BASE
+24
+1,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+-4,
+-2,
+0,
+1,
+7,
+0,
+-3,
+1,
+-1,
+0 
+SPECIAL_RESULTANT_FIBER
+   ? `D` is not defined
+   ? error occurred in or before /home/royvanrijn/src/jacobian-research/research/moments/vanishing/three_factor_row_jump.sing line 6: `IAL_RESULTANT_FIBER");ideal F=std(I+ideal(D));print(vdim(F));print(hilb(F,1));`
+   ? expected ideal-expression. type 'help ideal;'
+   ? `F` is not defined
+   ? error occurred in or before /home/royvanrijn/src/jacobian-research/research/moments/vanishing/three_factor_row_jump.sing line 6: `IAL_RESULTANT_FIBER");ideal F=std(I+ideal(D));print(vdim(F));print(hilb(F,1));`
+   ? `F` is not defined
+   ? error occurred in or before /home/royvanrijn/src/jacobian-research/research/moments/vanishing/three_factor_row_jump.sing line 6: `IAL_RESULTANT_FIBER");ideal F=std(I+ideal(D));print(vdim(F));print(hilb(F,1));`
+ORDINARY_FIBER
+24
+END

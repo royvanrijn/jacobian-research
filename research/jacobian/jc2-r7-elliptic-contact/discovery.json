@@ -1,0 +1,34 @@
+{
+  "schema": "r7-elliptic-contact-discovery-v1",
+  "files": [
+    {
+      "file": "artifacts/local/jc2-r7-elliptic-contact-discovery/elliptic-family-discovery.json",
+      "sha256": "624f387fd105db9681de09d23e1ff71c02de55e14f09c420b6eda60c2b9a6ea9",
+      "bytes": 2868
+    },
+    {
+      "file": "artifacts/local/jc2-r7-elliptic-contact-discovery/elliptic-Weierstrass-discovery.json",
+      "sha256": "823c7b87a0284afe46bd02a31defe9a09500a7912a6514f2b3c2ed7fb2be9280",
+      "bytes": 778
+    },
+    {
+      "file": "artifacts/local/jc2-r7-elliptic-contact-discovery/elliptic-Jacobian-discovery.json",
+      "sha256": "b6319b51b203f5eb1970dd6fe8c64d0b73fe2bf36c9fa98b9e535fa96d20efaf",
+      "bytes": 139
+    },
+    {
+      "file": "artifacts/local/jc2-r7-elliptic-contact-discovery/elliptic-critical-discovery.json",
+      "sha256": "276b853e9d1a6a3df5599a2babe43a8f6b0be67080b7301dcb8eebb11393e694",
+      "bytes": 143
+    }
+  ],
+  "prior_key_identity": "jacobian/jc2-r7-global-cover/key-polynomial-discovery.json",
+  "source_reuse": "PF2OMIT16 already proves the full first-image affine ring basis; it is imported rather than recomputed by a critical-algebra campaign.",
+  "rejected_inferences": [
+    "A rational interpolation parameter does not cover a smooth genus1 coefficient fibre with C fixed.",
+    "The degree3 target polynomial map is not an automorphism and can introduce ramification.",
+    "A degree3 restriction on an image curve is not an intermediate field of the primitive degree6 source.",
+    "Locally compatible equality34 image pairs do not construct an S6 cover or source A2."
+  ],
+  "process_status": "All exploratory symbolic computations completed; no ongoing process asserted."
+}

@@ -1,0 +1,286 @@
+{
+  "date": "2026-11-14",
+  "status": "PASS",
+  "python": "3.12.3",
+  "script_sha256": "266cfed8261bdec371bd26e2bb3a46cab9f588030adcc92c4e75dbd6b150bca2",
+  "arithmetic": "fractions.Fraction; complete sparse coefficient support",
+  "source": "https://arxiv.org/html/2608.23777v1#S3",
+  "classical_sizes": {
+    "R": {
+      "terms": 2,
+      "degree": 3,
+      "sha256": "a10e1ca895fb4087b5734977ca42671831a0b28017ecf6fb51e917184f05c5ad"
+    },
+    "T": {
+      "terms": 47,
+      "degree": 15,
+      "sha256": "78e289b70592d9527018130a7634323c28e5a27932c5f2cdb61fe7d356c392a2"
+    },
+    "D": {
+      "terms": 139,
+      "degree": 23,
+      "sha256": "0593cdbe0cd32214de51ce505c678127434546926cb7c138c8355aad04731487"
+    },
+    "S": {
+      "terms": 22,
+      "degree": 11,
+      "sha256": "365489fe6573fc628be845b5a32e506f3662efd33f24ef355ac17e246ba5c4cb"
+    }
+  },
+  "relations": [
+    {
+      "pair": [
+        "R",
+        "T"
+      ],
+      "poisson": "PASS",
+      "pbw_defect_terms": 15,
+      "pbw_h_orders": [
+        2,
+        3
+      ],
+      "pbw_defect_sha256": "b7e1b93f57e1187c83341b1e359f0764fd2eb4ef0811d8dbf5e5cfb4c786aecb",
+      "pbw_h1_defect_terms": 15,
+      "pbw_h1_defect_sha256": "97fea029d5601b2c831f36874a11c5a3fa7912591a97c80007828648dc2c6099",
+      "witness": [
+        [
+          5,
+          0,
+          0,
+          0,
+          2
+        ],
+        "20"
+      ]
+    },
+    {
+      "pair": [
+        "R",
+        "D"
+      ],
+      "poisson": "PASS",
+      "pbw_defect_terms": 90,
+      "pbw_h_orders": [
+        2,
+        3
+      ],
+      "pbw_defect_sha256": "807b7fee6ed4a60bbd979a89c1f880415ff1fcc673db7d8aedf17a1e825a74f5",
+      "pbw_h1_defect_terms": 90,
+      "pbw_h1_defect_sha256": "05c043cfc32f32a3f90512bc098320090d6bb7c1e11d1c4e99cb95f78428846b",
+      "witness": [
+        [
+          3,
+          0,
+          0,
+          0,
+          2
+        ],
+        "-24"
+      ]
+    },
+    {
+      "pair": [
+        "R",
+        "S"
+      ],
+      "poisson": "PASS",
+      "pbw_defect_terms": 3,
+      "pbw_h_orders": [
+        2
+      ],
+      "pbw_defect_sha256": "1c88bcb6540741a3a6bf117b71440dade708a386ecb5b6a9b462e442a0b41f39",
+      "pbw_h1_defect_terms": 3,
+      "pbw_h1_defect_sha256": "e97b0618e7700f2a0fb59d0f5112806f0a7befdd16b039295fd37d10dbb6aef7",
+      "witness": [
+        [
+          6,
+          0,
+          0,
+          0,
+          2
+        ],
+        "-48"
+      ]
+    },
+    {
+      "pair": [
+        "T",
+        "D"
+      ],
+      "poisson": "PASS",
+      "pbw_defect_terms": 578,
+      "pbw_h_orders": [
+        2,
+        3,
+        4,
+        5
+      ],
+      "pbw_defect_sha256": "5cec24092d8bbe03ea68e57a62fdb84a5e091c2b25bb3da2bf2408670a7333b3",
+      "pbw_h1_defect_terms": 578,
+      "pbw_h1_defect_sha256": "73ea9cf0f93257c5d49a95cfbc8a3c5c810e8896ec306a16c222e54a50b99442",
+      "witness": [
+        [
+          0,
+          0,
+          0,
+          0,
+          2
+        ],
+        "20/3"
+      ]
+    },
+    {
+      "pair": [
+        "T",
+        "S"
+      ],
+      "poisson": "PASS",
+      "pbw_defect_terms": 88,
+      "pbw_h_orders": [
+        2,
+        3
+      ],
+      "pbw_defect_sha256": "46936e0e7dab011f9b214b4ee27868d24b410bc2b6fd756e0ebc0ce467eb8d5e",
+      "pbw_h1_defect_terms": 88,
+      "pbw_h1_defect_sha256": "9e7632d941a7e1c006a3aa0e20ac03aac14759e97410d8ea0500560466047e49",
+      "witness": [
+        [
+          3,
+          0,
+          0,
+          0,
+          2
+        ],
+        "-40/3"
+      ]
+    },
+    {
+      "pair": [
+        "D",
+        "S"
+      ],
+      "poisson": "PASS",
+      "pbw_defect_terms": 359,
+      "pbw_h_orders": [
+        2,
+        3,
+        4,
+        5
+      ],
+      "pbw_defect_sha256": "990cb3f449b860d68af4e42844bff9cc9307b6c6f7c8050a427099bcfba96ca9",
+      "pbw_h1_defect_terms": 359,
+      "pbw_h1_defect_sha256": "353840353b584f76163dd59414fc7754f96b4676c01f738737f7daaacbb56887",
+      "witness": [
+        [
+          1,
+          0,
+          0,
+          0,
+          2
+        ],
+        "32"
+      ]
+    }
+  ],
+  "collision": [
+    [
+      "0",
+      "0",
+      "1/24",
+      "-1/8"
+    ],
+    [
+      "1",
+      "2/3",
+      "247/96",
+      "-89/64"
+    ],
+    [
+      "-1",
+      "-2/3",
+      "247/96",
+      "-89/64"
+    ]
+  ],
+  "target": [
+    "0",
+    "1/8",
+    "0",
+    "0"
+  ],
+  "claims_reviewed": [
+    {
+      "id": "Q1",
+      "state": "proved",
+      "canonical_source": "foundations/extended-geometry/QUARTIC_WEIGHTED_GEOMETRY.md",
+      "scope_sha256": "1e0d90cee22909b52d1c9964756c3d4b234f90dcfa0b8ca68fccd8a0ccf10d78",
+      "source_sha256": "a91129e8713bee6e8e8d501cf9ccdd1e71f7c1df11c6e693d6b4cd44d97b7a08"
+    },
+    {
+      "id": "Q3",
+      "state": "proved",
+      "canonical_source": "foundations/extended-geometry/QUARTIC_WEIGHTED_GEOMETRY.md",
+      "scope_sha256": "81198c08c54c09d573c2014a0e5c8e204774fdbe2598a9b6593bf0dca9edae8c",
+      "source_sha256": "a91129e8713bee6e8e8d501cf9ccdd1e71f7c1df11c6e693d6b4cd44d97b7a08"
+    },
+    {
+      "id": "QO1",
+      "state": "proved",
+      "canonical_source": "foundations/extended-geometry/RANK_TWO_FILTERED_QUANTIZATION_OBSTRUCTION.md",
+      "scope_sha256": "e44271eacaa122f6ef883f692af433d75a7d091bd933f020f45fef121be059e7",
+      "source_sha256": "a90edb63beecc017caec229c079baa887d989bedcf4a6f3b82a0703d4f4ec89f"
+    },
+    {
+      "id": "QO2",
+      "state": "proved",
+      "canonical_source": "foundations/extended-geometry/RANK_TWO_FILTERED_QUANTIZATION_OBSTRUCTION.md",
+      "scope_sha256": "82c29fcb82fcadd4effbce1e8decfee0737a5e669ae91a8a29f6f933e3aa0d11",
+      "source_sha256": "a90edb63beecc017caec229c079baa887d989bedcf4a6f3b82a0703d4f4ec89f"
+    },
+    {
+      "id": "QO10",
+      "state": "proved",
+      "canonical_source": "foundations/extended-geometry/DEGREE_SIX_RELATIVE_QUANTIZATION_OBSTRUCTION.md",
+      "scope_sha256": "ae1e80f8f161bb05ce0c3b2808c59ba1e6a8a98efc459f074694de40622ae88d",
+      "source_sha256": "0854ab56f63cfd5d8ecd967cae47031b5a202912bfa226b6668089847186e257"
+    },
+    {
+      "id": "QRF1",
+      "state": "proved",
+      "canonical_source": "foundations/extended-geometry/QUANTUM_RESIDUE_OBSTRUCTION.md",
+      "scope_sha256": "fcdcb7bb3b08da92a1ed4f121c1b384d2c8e24ee998fbcf41911d90195d0839b",
+      "source_sha256": "96958c7b951bc3f7ef091f0f8cf37fbf45e5e520b464b7953566037d850963c4"
+    },
+    {
+      "id": "QRF2",
+      "state": "proved",
+      "canonical_source": "foundations/extended-geometry/QUANTUM_RESIDUE_OBSTRUCTION.md",
+      "scope_sha256": "74c5d2c09de60fb73b1ff55ca60fb7056c7b0b2ce52a7a6608890f5b1d9f58cd",
+      "source_sha256": "96958c7b951bc3f7ef091f0f8cf37fbf45e5e520b464b7953566037d850963c4"
+    },
+    {
+      "id": "OP-QO",
+      "state": "parked",
+      "canonical_source": "foundations/extended-geometry/QUANTUM_RESIDUE_OBSTRUCTION.md",
+      "scope_sha256": "282ddc83ed79973a1ff67fedce54e7a5f2b42acc4927829d73bafc6df0354a3d",
+      "source_sha256": "96958c7b951bc3f7ef091f0f8cf37fbf45e5e520b464b7953566037d850963c4"
+    },
+    {
+      "id": "DC2HL3",
+      "state": "proved",
+      "canonical_source": "foundations/extended-geometry/DC2_HIGHER_NILPOTENCE_R21_FRONTIER.md",
+      "scope_sha256": "24603e86509398f50ca3baf1ec72894fea9fde87869cdc5024da5790b9346581",
+      "source_sha256": "ccd33ceefed1fa9bbeb6eb746f793127b53a47682511a92b2933bc0f416a6c19"
+    },
+    {
+      "id": "DC2QB1",
+      "state": "proved",
+      "canonical_source": "foundations/extended-geometry/DC2_HIGHER_NILPOTENCE_R21_FRONTIER.md",
+      "scope_sha256": "518cb48da0acfc03763f0840ec0ab94b34700dfaafcdc83cc460c18d3f6cf741",
+      "source_sha256": "ccd33ceefed1fa9bbeb6eb746f793127b53a47682511a92b2933bc0f416a6c19"
+    }
+  ],
+  "compact_RS_defect": "-6*h^2*x^6*(3*q*x-2)*(9*q*x-4)",
+  "boundary": "Exact identities and uncorrected normal PBW failure only; no general nonliftability, independent replay of archived proofs, or DC2 conclusion.",
+  "elapsed_seconds": 0.22
+}

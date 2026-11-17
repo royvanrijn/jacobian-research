@@ -1,0 +1,55 @@
+{
+  "claim": "QFR1",
+  "scoped_status": "PASS",
+  "scope_fingerprint": "e2b5c8d091e71017",
+  "schema_dependencies_hashes_consumers": "PASS",
+  "ten_affected_methods_and_existing_work_reviews": "PASS",
+  "local_links_checked": 305,
+  "unique_equation_tags": 16,
+  "py_compile": "PASS",
+  "changed_tracked_diff_check": "PASS",
+  "exact_controls_receipt_sha256": "3d5a2323990e6006dcb09ea4657754334770c97f7739d525e2dc841e3fa97c04",
+  "unchanged_upstream_control_hashes_checked": {
+    "matrix_primitive_admission_controls.json": 8,
+    "isogeny_module_controls.json": 4,
+    "integral_graph_rigidity_controls.json": 8,
+    "matrix_carrier_controls.json": 6
+  },
+  "global_checks": [
+    {
+      "command": ".venv/bin/python research/scripts/render_status.py --check",
+      "exit_code": 1,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/home/royvanrijn/src/jacobian-research/research/scripts/render_status.py\", line 514, in <module>\n    main()\n  File \"/home/royvanrijn/src/jacobian-research/research/scripts/render_status.py\", line 503, in main\n    validate_index(index)\n  File \"/home/royvanrijn/src/jacobian-research/research/scripts/render_status.py\", line 360, in validate_index\n    assert consumer_path.is_file(), (\n           ^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: KDSQ6: missing document consumer artifacts/generated-results/README.md\n"
+    },
+    {
+      "command": ".venv/bin/python research/scripts/research.py render",
+      "exit_code": 1,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/home/royvanrijn/src/jacobian-research/research/scripts/research.py\", line 563, in <module>\n    raise SystemExit(main())\n                     ^^^^^^\n  File \"/home/royvanrijn/src/jacobian-research/research/scripts/research.py\", line 440, in main\n    validate_lessons(items, entries, check_reviews=args.command == \"check\")\n  File \"/home/royvanrijn/src/jacobian-research/research/scripts/research.py\", line 130, in validate_lessons\n    assert (ROOT / p).is_file(), f\"{item['id']}: missing source {p}\"\n           ^^^^^^^^^^^^^^^^^^^^"
+    }
+  ],
+  "research_context": [
+    {
+      "source": "https://arxiv.org/html/1403.3493v2",
+      "used": "Smooth Lagrangian line-bundle quantization does not automatically apply to this nonimmersive normalization."
+    },
+    {
+      "source": "https://arxiv.org/html/2604.16636v1",
+      "used": "First-order Hochschild obstruction methodology is comparison context, not an identification of classes."
+    },
+    {
+      "source": "https://arxiv.org/html/2607.12910v1",
+      "used": "Bundle and individual module-morphism lifting is distinct from a simultaneous multiplicative Weyl action."
+    }
+  ],
+  "previous_goal_turn": {
+    "classification": "progress",
+    "evidence": "QRA1 fingerprintfa61808ba378be86 constructed finite-free matrix actions, an elliptic energy connection, global monic-coordinate actions and an exact-primitive unit gate. Its15-tag proof and eight exact control input hashes were inspected and current. It left broken quantum primitives as a possible physical-plane escape.",
+    "next_action_taken": "Tested the unrestricted first physical-plane correction map as a polynomial S-module, obtaining a period-one reducing cusp residue. Proved its generated annihilator exactly (u,v) by two polynomial identities. An exhaustive weight decomposition proves every quadratic lower residue zero, excluding all quantum-order-two lifts without spatial bounds. Proved canonical/frame transport, finite-copy and spectator stability and an all-ramification persistent-block trace criterion. No further jet-order ladder was launched; the remaining higher-ramified mixing is structural."
+  },
+  "proof_boundary": "The ordinary residue annihilates all18 S-generators of the full correction map, not a sampled degree box. Its exact generated module is S/(u,v); localized first-order solutions do not give global admission. Quantum order two uses every relevant homogeneous cocycle sector and eight complete pairings; original coefficient-system minors prove rank and kernel completeness. Finite-copy trace, identity spectators and regular canonical transport are written universal arguments. Arbitrary added classical matrix summands are covered only for the ordinary parameter statement. For higher parameter order a commuting idempotent must persist through the sub-quantum evaluated representation; that condition is not automatic at the resonant cusp. No all-ramified exclusion is asserted. QRA1 positive surface actions use a different target Poisson structure and remain valid. The ordinary scalar forward Long graph has no compressed defect and stays formally unobstructed. No actual full rank-one Long carrier, bounded scalar lift or DC2/JC2 solution is asserted.",
+  "independent_replay": false,
+  "formal_verification": false,
+  "external_review": false
+}

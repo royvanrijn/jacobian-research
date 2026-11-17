@@ -1,0 +1,47 @@
+{
+  "state": "proved",
+  "checker": "hessian/tang-hc4-audit/verify_structural.py",
+  "proof_type": "hybrid",
+  "independent_replay": false,
+  "formal_verification": false,
+  "external_review": false,
+  "artifact_hash": "sha256:23e87f797b4d086ede8195773092dcd42d705258ec57c05920731e87e0ce9b2d",
+  "software_lock": [
+    "hessian/tang-hc4-audit/source-v1.pdf",
+    "hessian/tang-hc4-audit/source-receipt.json",
+    "hessian/tang-hc4-audit/STRUCTURAL_REVIEW.md",
+    "hessian/tang-hc4-audit/APPLICATIONS.md",
+    "hessian/tang-hc4-audit/verify_structural.py",
+    "hessian/tang-hc4-audit/structural-receipt.json",
+    "hessian/tang-hc4-audit/structural-jet.log",
+    "hessian/tang-hc4-audit/jet-certificate.json",
+    "hessian/tang-hc4-audit/check_jet.py",
+    "hessian/tang-hc4-audit/verify.py",
+    "hessian/tang-hc4-audit/receipt.json",
+    "hessian/tang-hc4-audit/structural-sources/sources.json",
+    "hessian/tang-hc4-audit/structural-sources/de-poi-0407339v1.pdf",
+    "hessian/tang-hc4-audit/structural-sources/de-bondt-1609.03904v2.html",
+    "hessian/tang-hc4-audit/structural-sources/de-poi-0407339v1.html",
+    "hessian/tang-hc4-audit/structural-sources/moh-degree100.html",
+    "hessian/tang-hc4-audit/structural-proof-receipt.json"
+  ],
+  "supersedes": [],
+  "closes_problems": [],
+  "narrows_problems": [
+    "OP-HC4-SCHUR"
+  ],
+  "consumers": [],
+  "invalidates_assumptions": [],
+  "replaced_by": [],
+  "priority": "derived",
+  "programme_status": "archived",
+  "id": "HCTANG3",
+  "kind": "corollary",
+  "title": "HC4 degree-101 bound, proper-power endpoint and degree-48 marked-graph exclusion",
+  "canonical_source": "hessian/tang-hc4-audit/APPLICATIONS.md",
+  "scope": "Using HCTANG2 and only Moh plane JC through maximum component total degree100, every four-variable constant-Hessian potential of degree at most101 has an automorphic gradient. Degree102 is also covered when the highest homogeneous part is a nonzero scalar times a proper power: in cotangent coordinates that power is independent of the fibres, forcing both coefficient degrees at most100. These assertions descend to characteristic zero by uniqueness of the formal inverse. More generally, for S=Hess(f) with nonzero constant determinant, emptiness over the algebraic closure of the projective constant-covector scheme v^T*adj(S(X))*v=0 implies invertibility. A nonautomorphic gradient necessarily admits a nonzero constant rank-one quadratic determinant-preserving direction, because the cotangent inverse Hessian has zero base/base block. Nonemptiness alone gives no counterexample. For the explicit v2 Meng--Yang potential Psi=A^2+13*A+2*B, complete support degrees by r-power are14,10,6, giving deg(Psi after r=R)<=max(14,2*deg(R)+6). Every polynomial graph of degree at most48 containing both marked points is excluded from having a nonzero constant Hessian determinant: the degree48 endpoint has square top and the graph chain rule transfers the collision independently of all graph first derivatives. Also excluded are arbitrary polynomial pullbacks of degree at most7 mapping distinct parameter points to the marked points with matching pulled-back gradient covectors; an affine p-coordinate suffices for that jet condition. Unmarked constant-determinant graphs, graph degree>=49, higher-degree or rational Schur/coisotropic reductions, unrestricted HC4 and JC2 remain open. The result narrows OP-HC4-SCHUR; no new plane degree frontier, global Schur closure, formal verification, external review or novelty priority is claimed.",
+  "dependencies": [
+    "HCTANG2",
+    "external: T.T. Moh plane degree-at-most-100 theorem, J.reine angew.Math.340(1983),140-212; primary author account https://www.math.purdue.edu/~ttm/jacobian"
+  ]
+}

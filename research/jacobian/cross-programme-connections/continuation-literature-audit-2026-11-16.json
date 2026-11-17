@@ -1,0 +1,149 @@
+{
+  "date": "2026-11-16",
+  "kind": "continuation-literature-audit",
+  "scope": "Non-EC; complete theorem closure remains priority; no external outreach",
+  "proof_draft": "research/jacobian/cross-programme-connections/LOOP_GENUS_AND_FORMAL_SUPPORT_BRIDGES_2026_11_16.tex",
+  "mathematical_status": "unregistered conditional deductions and assessed leads; no full open statement closed",
+  "internal_dependencies": [
+    "research/moments/vanishing/TATE_GRAPH_NECESSITY_AND_SEMISIMPLE_BOUNDARY_QUOTIENTS.md",
+    "research/moments/vanishing/ALGEBRAIC_BOUNDARY_ONE_MOTIVE_AND_CONSTANT_SECTION.md",
+    "research/hessian/hc4-triangular-graphs/EXACT_VOLUME_AND_BALANCED_SOURCE_TORUS_RIGIDITY.md",
+    "research/jacobian/affine-complements/RESIDUAL_MILNOR_IDENTITY_AND_MINIMAL_EXCESS_CLASSIFICATION.md"
+  ],
+  "primary_documents": [
+    {
+      "key": "caporaso-viviani",
+      "url": "https://ems.press/content/serial-article-files/31791",
+      "sha256": "2feaff53c3463b5e6226d8c6748b24148ec7d37e3677a4c4c89c6c7ba9b29d08",
+      "pages": 41,
+      "bytes": 399130
+    },
+    {
+      "key": "bernstein-formal",
+      "url": "https://web.mat.upc.edu/josep.alvarez/pdf/BernsteinSatoSurvey.pdf",
+      "sha256": "83852c08ce387828e533044ce8672337bfb82865a04ca6100c6c143a14c03caa",
+      "pages": 64,
+      "bytes": 831298
+    },
+    {
+      "key": "2611.09883v1",
+      "url": "https://arxiv.org/pdf/2611.09883v1",
+      "sha256": "f0ca3c23cf3f786df61d749e99dea94a220f6893637eda3816e18b6ac6f10c8e",
+      "pages": 15,
+      "bytes": 517585
+    },
+    {
+      "key": "2610.28135v1",
+      "url": "https://arxiv.org/pdf/2610.28135v1",
+      "sha256": "92dbcb80ad4d117c4172ad3305f0b079a4ac4da0f2e3ddbfd6eed098595284b6",
+      "pages": 15,
+      "bytes": 459041
+    },
+    {
+      "key": "2508.17572v1",
+      "url": "https://arxiv.org/pdf/2508.17572v1",
+      "sha256": "787ac01166af3fe6518cff33bf7d7755929d9086f5eb9f4ac00d11a59c670dc9",
+      "pages": 23,
+      "bytes": 700426
+    },
+    {
+      "key": "math_0412044v2",
+      "url": "https://arxiv.org/pdf/math/0412044v2",
+      "sha256": "85f5f351f7bf28bb5e6e665f67bf836b917c8d6c7fecb624ca2e62371953f5ab",
+      "pages": 34,
+      "bytes": 463205
+    }
+  ],
+  "new_deductions": [
+    {
+      "id": "loop-genus-Manin-class-landing",
+      "status": "conditional on retained rank-one lemma and canonical comparison",
+      "missing": "actual Picard-complex extension classes and proof of their constant type"
+    },
+    {
+      "id": "split-torus-all-puncture-divisor-matrix",
+      "status": "elementary conditional geometric criterion",
+      "missing": "actual torus and distinguished section, splitting cover, all divisor orders"
+    },
+    {
+      "id": "finite-affine-monoid-support-implies-positive-gap",
+      "status": "written elementary conditional proof",
+      "missing": "such an exact support description for actual arbitrary formal-symbol apolar heights"
+    }
+  ],
+  "literature_leads": [
+    {
+      "topic": "generalized Jacobian cycle-node classifying map",
+      "primary": "https://doi.org/10.4171/JEMS/281",
+      "location": "3.0--3.1.1",
+      "novelty_scope": "not found in active subtree scan; no historical-priority claim"
+    },
+    {
+      "topic": "formal local Groebner fans",
+      "primary": "https://arxiv.org/abs/math/0412044v2",
+      "location": "2.0.4,3.0.2,3.1.1",
+      "guard": "formal theorem does not supply actual filtered apolar module"
+    },
+    {
+      "topic": "formal Bernstein-Sato existence",
+      "primary": "https://arxiv.org/abs/2106.08830",
+      "location": "Definition2.1,Theorem3.3,Theorem5.6",
+      "guard": "not a raw scalar-time recurrence or an apolar gap theorem"
+    },
+    {
+      "topic": "analytic branch invariant from Bernstein roots",
+      "primary": "https://arxiv.org/abs/2611.09883v1",
+      "location": "3.0.1,3.0.2,4.0.1,6.0.1--6.0.3",
+      "guard": "one Puiseux pair; preprint; actual ramified transport missing; roots do not recover full differential semimodule"
+    },
+    {
+      "topic": "differential values to roots",
+      "primary": "https://arxiv.org/abs/2508.17572v1",
+      "guard": "semiquasihomogeneous scope and actual comparison required"
+    },
+    {
+      "topic": "orbifold equality differentiation",
+      "primary": "https://arxiv.org/abs/2610.28135v1",
+      "decision": "examined, not imported",
+      "missing": "correct global compactification, ADE conditions and equality at interior coefficient"
+    },
+    {
+      "topic": "tropical Jacobian",
+      "primary": "https://arxiv.org/abs/1308.3864",
+      "decision": "secondary bridge/guard",
+      "guard": "retraction cancels zeros/poles; degeneration skeleton not identified with generic boundary graph"
+    }
+  ],
+  "messages": [
+    {
+      "agent": "Mathieu",
+      "threadId": "01a1df31-1bbc-7582-8705-ca451bd43dfe",
+      "confirmed": true,
+      "topic": "actual genus-Tate extension Manin classes and toric all-puncture divisor matrix"
+    },
+    {
+      "agent": "Gaussian",
+      "threadId": "01a1d97f-80d4-7403-a25b-30d4eee1c7c9",
+      "confirmed": true,
+      "topic": "formal local standard bases and exact semilinear support conditional finish line"
+    },
+    {
+      "agent": "Wright",
+      "threadId": "01a1d972-24c3-7840-b2ad-336d65e98aaf",
+      "confirmed": true,
+      "topic": "November branch Bernstein-invariant paper and actual ramified comparison guard"
+    }
+  ],
+  "checks": {
+    "internal_dependency_paths_exist": true,
+    "primary_pdf_texts_read": 6,
+    "independent_proof_verification": false,
+    "MATH_STATUS_modified": false
+  },
+  "agents_left_undisturbed": [
+    {
+      "agent": "HC4",
+      "reason": "active proof audit of the previous Miyanishi import; no new actionable source-action theorem found"
+    }
+  ]
+}

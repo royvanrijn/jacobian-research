@@ -1,0 +1,77 @@
+{
+  "review_date": "2026-11-15",
+  "title": "Global sign twists and exact two-point Keller equivalence",
+  "newly_cached_primary_context": [],
+  "newly_imported_proved_external_statements": [],
+  "newly_used_unproved_external_statements": [],
+  "retained_structural_inputs": [
+    {
+      "claim": "HC4MYJV2",
+      "statement": "Exact GL2 generating-pair orientation criterion and actual finite-point plane interpolation."
+    },
+    {
+      "claim": "HC4MYHG0",
+      "statement": "Critical-scheme transport,constant Tang plane and exact critical zero-fibre cardinality."
+    },
+    {
+      "claim": "HC4MYHG2",
+      "statement": "The coordinate/unit-ideal and quadratic/singleton-zero endpoints retain universal gradient-inversion questions."
+    },
+    {
+      "claim": "HCTANG2",
+      "statement": "Unit Hessian with nonautomorphic gradient has a constant jointly affine Tang plane."
+    },
+    {
+      "claim": "HC4MYJK0",
+      "statement": "Quadratic-multiplier full-source models h0,h1 and their fixed-base exclusions."
+    },
+    {
+      "claim": "HC4MYJQ0",
+      "statement": "The exact universal all-affine test list and actual S_rho representative."
+    },
+    {
+      "claim": "HC4MYJS1",
+      "statement": "The earlier C2 comparison model and the two-point critical data of K2."
+    },
+    {
+      "claim": "HC4MYJW2",
+      "statement": "K2 one-coordinate exclusion remains proved;no unrestricted equivalence is supplied."
+    }
+  ],
+  "retained_proof_and_source_sha256": {
+    "hessian/hc4-triangular-graphs/TWO_SLICE_RECOVERY_AND_ORIENTED_COEFFICIENT_MODELS.md": "935f4d6cd3c49c257a9e643348d5d7aa7d46eae6934d2466fdec130802b18436",
+    "hessian/hc4-triangular-graphs/verify_two_slice_recovery.py": "b7307666a2ac0d3ab2e7c9544df43953aece0cf534c97e903b49afd158a9e863",
+    "hessian/hc4-triangular-graphs/receipt-two-slice-recovery.json": "fdc76e5c3c7c9cbb1614430ca44b44755a673c078c2c5f951ba0061970f7c84c",
+    "hessian/hc4-triangular-graphs/sources/two-slice-recovery-context.json": "452707db611024b6a2c972c046f7f7deba4ddfb0e349f405b475915162521f66",
+    "hessian/hc4-triangular-graphs/GENERIC_COORDINATE_SPECIALIZATION_AND_K2_ONE_COORDINATE_CLOSURE.md": "4e36fb90d0a07e2d65918a5d26a392c243670ee75ca896f6f4c858ead9748d3f",
+    "hessian/hc4-triangular-graphs/verify_coordinate_specialization.py": "565ca12d1019f1a142570762cb7a35239445f820d3591b444493902e4d8fb6f1",
+    "hessian/hc4-triangular-graphs/receipt-coordinate-specialization.json": "a0999ed1ddb3d76ee91c9f2f3313354088a5e33883b7ea02f1f40714061ad1f2",
+    "hessian/hc4-triangular-graphs/sources/coordinate-specialization-context.json": "3b6411288348dfea772f89cb5c8e8f9ac98c89e706cf72fe4586c13848ede183",
+    "hessian/hc4-triangular-graphs/TWO_NORMAL_MODELS_AND_RELATIVE_RANK_ONE_ALIGNMENT.md": "db3a76291e820edda4dc5ed28455b54247587c40feaca55bc4a7477bf8bbebe8",
+    "hessian/hc4-triangular-graphs/verify_two_normal_models.py": "4ba21ae068f31508eefe90209e6fc9f8434306944cd1fffed15996e490944593",
+    "hessian/hc4-triangular-graphs/receipt-two-normal-models.json": "88795224e906ac36cabc2c40cc34da0ffd3dd19168e5827abbe57d7b1149909f",
+    "hessian/hc4-triangular-graphs/sources/two-normal-model-context.json": "4b06e5bac73e45636c54bf1497669bb4cac7f45391dfc71634f2620b9d1c33bc",
+    "hessian/hc4-triangular-graphs/SUSPENDED_MULTIPLIER_ORBITS_AND_BASE_PRESERVING_CLOSURE.md": "868748e503bcf87ce1f087c5cf9c612122ea6f3b051decd12b88fad940f5500c",
+    "hessian/hc4-triangular-graphs/GLOBAL_ADDITIVE_ACTIONS_AND_THE_K2_TRANSLATION_BARRIER.md": "e32d0862153093033a6caa5dbfd543ae613b3580c66cb96eb276f6a7b3f584d7",
+    "hessian/hc4-triangular-graphs/GLOBAL_VALUE_ORBITS.md": "1dba2b511024f9da2ebd787183de66aaf42e76bf823fee76b745ffedabef2d5c",
+    "hessian/hc4-triangular-graphs/../tang-hc4-audit/STRUCTURAL_REVIEW.md": "26a6a76eb579de05b8e71245b8b804bdd5f036602f2e3e6ad5d036fd9f5cd572"
+  },
+  "independent_root_signs_realized_by_global_source_automorphism": true,
+  "every_hD_unit_existence_equivalent_to_two_point_Keller_fibre": true,
+  "h0_h1_unit_existence_decisions_equivalent": true,
+  "h1_identified_with_C2_by_z_preserving_automorphism": true,
+  "K2_redundant_in_universal_affine_test_list": true,
+  "two_point_Keller_fibre_constructed": false,
+  "two_point_Keller_fibre_excluded": false,
+  "h0_identified_with_h1_as_functions": false,
+  "fixed_K2_full_source_orbit_resolved": false,
+  "fixed_K2_identified_with_h1": false,
+  "fixed_K2_full_source_equivalence_to_C2_resolved": false,
+  "full_source_h0_h1_orbits_resolved": false,
+  "K3_rho_full_source_family_resolved": false,
+  "unit_ideal_endpoint_resolved": false,
+  "singleton_zero_endpoint_resolved": false,
+  "three_point_Keller_fibre_converse_proved": false,
+  "unrestricted_HC4_or_JC2_resolved": false,
+  "original_goal_complete": false
+}

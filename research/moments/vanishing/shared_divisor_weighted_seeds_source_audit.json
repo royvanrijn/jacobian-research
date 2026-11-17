@@ -1,0 +1,200 @@
+{
+  "date": "2026-11-15",
+  "canonical_proof": "moments/vanishing/SHARED_DIVISOR_GLOBAL_258.md",
+  "canonical_proof_sha256": "5146f6676da462bfd741bde1ec9d8184eddc292389467005207e0e3d2df8aaf9",
+  "history_index": "moments/vanishing/PREFIX_PROOF_HISTORY.md",
+  "history_index_sha256": "3426a5a8e60d0d14f177e23e2c9e157778eae3644ec2caa564af9c17d4b8997c",
+  "claims": [
+    "G3SHAREDDIV20261115",
+    "G3WEIGHTEULER20261115",
+    "G3PURE258_20261115"
+  ],
+  "checker": "moments/vanishing/verify_shared_divisor_weighted_seeds.py",
+  "checker_sha256": "ede92f5c878fae2ed85083f6bfe56bfe57d84360d50a4b81b27521c80b9bb129",
+  "certificate_sha256": "f9f7a94fafd7f4291787be0444bd9972be0bcd00060cec83cab20d2e0c32db63",
+  "accepted_receipt_sha256": "a27cfebdacdcc6e3d73f1348cc4f2ee28bea24526b3eb873fbda6ec52b769cec",
+  "prior_frontier": {
+    "path": "moments/vanishing/shared258_preupdate_20261115.json",
+    "sha256": "6936e5920a5f6f4ea75856f227d0873c59829f1d75ae9e650b54d3d5f3e149ec"
+  },
+  "retained_inputs": {
+    "verify_ordinary_node_finite_prefixes.py": "f602defac102555fd4bd4f0537b86f8e41f929ab11baf290e63fde819b307023",
+    "ordinary_node_phase_shift_checkpoint.json": "ba163f9bcbc786a7decf6fe00ecd0750f3be184be39233d33b6f21fa15998903",
+    "verify_rescaled_singular_prefixes.py": "2e5b8b46234452830ee6d11de1681cbd3c2de499b0dbb84b8721950a008f8190",
+    "rescaled_singular_prefixes_certificate.json": "7a82d23c120cd830f8e12e093dfa0f6ce0b55c7e940031874270a6e92f97c67d",
+    "rescaled_singular_prefixes_verification.json": "2d8a4864c2d42d09491bc713e736d601ce749e074d63833f1c089ba7faf428c5",
+    "verify_euler_seed_bounds.py": "5d3cacf0542ec63f1da1e1c515e031bf7a9ab2b28ab458557126ac07ce4a0e63",
+    "euler_seed_bounds_certificate.json": "cdf275466b7e8fe4005de74c8a74d2a217bd9bef257725aa2ae0db575bfe9b75",
+    "euler_seed_bounds_verification.json": "dea437fc063aacf5322dc6f2729122bfcd02b1e559db80430a3d44728b18be52",
+    "euler_seed_bounds_source_audit.json": "8a2f21c415beb29156db21b5fefc9839d5ca578f3812818abb8b3d8a0556ee1b",
+    "verify_squarefree_singular_finite_prefixes.py": "3d5fbdbd22fe7663a0d980d071b2fd6ff55cee4540b447a989577a6c53d92eb3",
+    "joint_degree_seed_bounds_verification.json": "7e11beeac36687563c3846c9a8da9ed8e999597d5e78d32d140bd5b7578e0c3d",
+    "joint_degree_seed_bounds_source_audit.json": "8d77371adec59bca13967bcec33ddd30ae1045fe7d06ad82ff3210c2b41dc53e",
+    "shared_divisor_weighted_seeds_certificate.json": "f9f7a94fafd7f4291787be0444bd9972be0bcd00060cec83cab20d2e0c32db63",
+    "shared_divisor_weighted_seeds_verification.json": "a27cfebdacdcc6e3d73f1348cc4f2ee28bea24526b3eb873fbda6ec52b769cec"
+  },
+  "previous_goal_turn_classification": "progress: exact Euler representatives established global297, odd296, homogeneous/full-W-linear258, ordinary complements297/271/244 and homogeneous nonisotropic-node101; tangent284 remained the second largest gate.",
+  "shared_divisor_method": {
+    "normalization": "A=a*D,B=d*D,E=D*Le,F=D*Lf, deg Le,Lf<=1",
+    "new_common_divisors": {
+      "nodal": "D",
+      "transverse": "D*Lf",
+      "triangle": "D*Le*Lf"
+    },
+    "maximum_divisor_degrees": [
+      1,
+      2,
+      3
+    ],
+    "same_connection_and_seed_recurrence": true,
+    "no_extra_parameter_open": true,
+    "coprimality_assumed": false,
+    "D_at_zero_nonzero_assumed": false,
+    "seed_depths": [
+      "3j-2",
+      "3j-2",
+      "3j-1"
+    ],
+    "seed_row_degrees": [
+      "9j-2-d_i",
+      "12j-4-d_i",
+      "15j-3-d_i"
+    ],
+    "higher_scalar_valuation": "at least4j"
+  },
+  "weighted_euler_method": {
+    "unchanged_prefactor": "t^-2*D^-1/2",
+    "beta_x": "delta_prime/4",
+    "beta_y": {
+      "cusp": "2*t*D/3",
+      "tangent": "t*D-delta_prime/8"
+    },
+    "source": "S+delta*(beta_x+beta_y)+beta_x*x*W_x+beta_y*y*W_y",
+    "source_joint_degree": 6,
+    "source_weight_bounds": {
+      "cusp": 10,
+      "tangent": 7
+    },
+    "amplitude_derivatives_required": true,
+    "volume_divergence_required": true,
+    "seed_depths": {
+      "cusp": "5j-3",
+      "tangent": "7j-4"
+    },
+    "seed_row_degrees": {
+      "cusp": "11j-3-d_i",
+      "tangent": "20j-8-d_i"
+    },
+    "higher_scalar_valuation": "at least4j"
+  },
+  "class_bounds": {
+    "ordinary_complement_gates": {
+      "nodal": 227,
+      "transverse": 220,
+      "triangle": 204
+    },
+    "ordinary_full_gates": {
+      "nodal": 258,
+      "transverse": 258,
+      "triangle": 258
+    },
+    "cusp_complement_gate": 204,
+    "cusp_full_gate": 255,
+    "tangent_complement_gate": 254,
+    "tangent_full_gate": 255
+  },
+  "global_cover": {
+    "quadratic": 7,
+    "smooth": 94,
+    "nodal": 258,
+    "cusp": 255,
+    "transverse": 258,
+    "tangent": 255,
+    "triangle": 258,
+    "concurrent": 104,
+    "repeated": 99
+  },
+  "global_sufficient_pure_prefix": 258,
+  "least_prefix_interval": [
+    20,
+    258
+  ],
+  "odd_least_prefix_interval": [
+    20,
+    258
+  ],
+  "all_homogeneous_sufficient_pure_prefix": 258,
+  "all_homogeneous_least_prefix_interval": [
+    14,
+    258
+  ],
+  "smooth_leading_least_prefix_interval": [
+    20,
+    94
+  ],
+  "smooth_homogeneous_least_prefix_interval": [
+    14,
+    56
+  ],
+  "frame_condition_required_for_global258": false,
+  "binary_search_rounds_max": 8,
+  "exact_auxiliary_evidence": {
+    "shared_symbolic_divergence_identities": 135,
+    "axis_factor_checks": 4,
+    "ordinary_models_replayed": 6,
+    "ordinary_connection_columns_replayed": 36,
+    "ordinary_seed_columns_replayed": 18,
+    "weighted_symbolic_connection_identities": 30,
+    "weighted_models": 4,
+    "weighted_connection_columns": 22,
+    "weighted_seed_columns": 12
+  },
+  "primary_source_version_checks": [
+    {
+      "url": "https://arxiv.org/abs/2607.18186",
+      "current_version": "v1",
+      "submitted": "2026-07-20",
+      "read_now": "Abstract and version metadata; retained body audit and explicit witness certificates remain authoritative."
+    },
+    {
+      "url": "https://arxiv.org/abs/2607.23887",
+      "current_version": "v1",
+      "submitted": "2026-07-26",
+      "read_now": "Abstract and version metadata; no fresh full-body review."
+    },
+    {
+      "url": "https://arxiv.org/abs/2609.16178",
+      "current_version": "v1",
+      "submitted": "2026-07-31",
+      "read_now": "Abstract and version metadata; no fresh full-body review."
+    }
+  ],
+  "literature_search_boundary": "Two targeted Gaussian/Mathieu moment queries; inspected primary versions of retained papers. Search discovery is not an exhaustive literature audit and secondary summaries are not mathematical authority.",
+  "historical_proof_immutability": {
+    "JOINT_DEGREE_GLOBAL_353.md": "5369191d5a67c2d05750033ef3d9d19c6ad61afcfb2d532a0a0c6f1016c451f9",
+    "EULER_REPRESENTATIVES_GLOBAL_297.md": "3a7591c55c7ae52b23f00a897c58ca42105de1b680521d46a596f2d7ef3fd631"
+  },
+  "new_external_theorems_imported": false,
+  "producer_package_executed": false,
+  "analytic_boundary": "Retained complete ordinary-node, weighted cusp/tangent and frame exclusions, quotient ranks/bases and analytic nonzero zeroth seed coefficients. Shared divisors preserve the existing reduction; weighted Euler identities preserve the same connection and original Wick functional. Auxiliary algebra is not independent analytic review.",
+  "first_run_completed": true,
+  "failure_receipt_expected": false,
+  "least_prefix_computed": false,
+  "full_coefficient_radical_search_executed": false,
+  "expanded_global_radical_cofactors_computed": false,
+  "universal_written_proof_certified_by_checker": false,
+  "independent_replay": false,
+  "external_review": false,
+  "formal_verification": false,
+  "assurance": "Internal all-coefficient shared-divisor/weighted-Euler/seed/cofactor proof with retained analytic exclusions;135 symbolic divisions, universal axis factors, six ordinary model replays,30 weighted source identities and four full-Gaussian weighted models. No independent replay, external review or formal verification.",
+  "remaining": [
+    "Least global and odd K in[20,258], homogeneous K in[14,258]",
+    "Twenty/fourteen-moment sufficiency",
+    "Smaller conic258 and mixed-parent255 gates",
+    "Expanded global I258 radical cofactors",
+    "Independent review",
+    "Exceptional coefficient schemes",
+    "Global term-count minima",
+    "Lower-power GVC"
+  ]
+}

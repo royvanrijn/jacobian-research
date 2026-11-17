@@ -1,0 +1,78 @@
+{
+  "date": "2026-11-17",
+  "turn_classification": "progress:new all-degree theorem,closed defective-block frontier,proved converse and exact matrix-existence classification;new all-degree architecture table leaves one explicit cell.",
+  "canonical_source": "QUADRATIC_FIBRE_JORDAN_CANCELLATION.tex",
+  "canonical_sha256": "ee165de914180729cd42b9fbe380ef77eea58da383d3655f3223da439fb59ac1",
+  "proof_type": "written formal and algebraic proof",
+  "new_mathematical_checker_run": false,
+  "old_sealed_checkers_replayed": false,
+  "proof_obligations": [
+    {
+      "id": "POLYNOMIAL-UNIT",
+      "status": "written",
+      "argument": "Divide the actual unit functional by polynomial f,shift normalization h/f,strict valuation gap gains r degf. Effective degree<=2;f^2DK=e^(2R),rational residues and polynomial DK force f=1."
+    },
+    {
+      "id": "SPECTRAL-CYCLICITY",
+      "status": "written",
+      "argument": "K=1/D has exact nonzero-eigenvalue multiplicity pole,whereas resolvent pole order is largest Jordan size. Equality forces one block."
+    },
+    {
+      "id": "SOURCE-AFFINENESS",
+      "status": "written",
+      "argument": "Coefficientwise u principal parts triangularly show all Ij degree<=2. Nondegenerate cyclic Gram is anti-triangular with c!=0. Top-pole certificate makes last source coordinate nonconstant affine;triangular induction makes every coordinate affine."
+    },
+    {
+      "id": "ORIGINAL-MARKER-POLES",
+      "status": "written",
+      "argument": "Integrate only polynomial nilpotent zero resolvent. Remaining joint precision M has polynomial entries,detM=DK=1 and inverseadjM polynomial. Conditional and joint Wick contractions retain every original marker."
+    },
+    {
+      "id": "CUTOFF",
+      "status": "written",
+      "argument": "High-degree base entry occurs once per cofactor;deg inverse<=s,base-column cofactors<=k,means<=s+1. Conditional coefficients<=r0degQ and remaining variable degree<=bdegQ. Bound[r0+(s+1)b]degQ."
+    },
+    {
+      "id": "MATRIX-EXISTENCE",
+      "status": "written",
+      "argument": "Proper H=(1+2trA*t-1/D)/t^2 has exact principal parts. Triangular resolvent basis and cyclic quadratic invariants construct constant b for every allowed matrix. Zero blocks arbitrary."
+    },
+    {
+      "id": "ALL-DEGREE-CONTROL",
+      "status": "written exact identity",
+      "argument": "P_d=2ZW+W^2+iu(2Z+3W)-2u^2+W0*u^d,d>=2. D=(1-2t)^2,source norm u^2(-12+16t)/D,DK=1;zero-fibre source norm0. All-degree,not finite regression."
+    },
+    {
+      "id": "TWO-BASE-LIMIT",
+      "status": "written and credited",
+      "argument": "Long P4 is a constant quadratic fibre over TWO ordinary Gaussian bases,with semisimple scalar fibre. Phi1=1,PhiZ2=t/(1-t). Together with Long P3,Wilson binary,Liu quadratic and newone-base theorem,only H(2,1) remains undecided by retained results."
+    }
+  ],
+  "unsupported_extensions": [
+    "No arbitrary-ring descent.",
+    "No scalar time normalization used to infer safety of original markers.",
+    "No unrestricted Gaussian safe-to-pure theorem.",
+    "No conclusion for arbitrary multiple nonlinear bases;Long already disproves two-base/two-fibre universal claim.",
+    "No actual image kernel or source-kernel computation."
+  ],
+  "classical_credit": "Quadratic results Liu;binary/dimension-only Wilson;negative examples Long;formal stationary Sabbah and Newton-Puiseux Wall;analytic Bernstein/rational directions Sabbah/Maisonobe. Full formal polynomial frame reproduced from retained proof,not new classical mechanism.",
+  "open_question": {
+    "id": "OP-GAUSS-2BASE-1FIBRE",
+    "scope": "Is every pure P(U1,U2,Y)=aY^2+B(U1,U2)Y+g(U1,U2),a constant,with arbitrary degrees,in three independent standard Gaussian coordinates safe? Unresolved by retained results;no claim of exhaustive literature novelty."
+  },
+  "paper_v011_unchanged": true,
+  "broader_goal_status": "active",
+  "independent_replay": false,
+  "formal_verification": false,
+  "external_review": false,
+  "submission_ready": false,
+  "novelty_assessed": false,
+  "pdf_quality": {
+    "path": "unpublished/gaussian-quadratic-fibre-jordan-cancellation/gaussian_quadratic_fibre_jordan_cancellation.pdf",
+    "pages": 10,
+    "sha256": "a20b50fcf96d7df37ce5512b8499479afc17cd5c901435defd7435495ea098d0",
+    "source_sha256": "ee165de914180729cd42b9fbe380ef77eea58da383d3655f3223da439fb59ac1",
+    "layout_verified": true,
+    "method": "All10 finalpages rendered at100dpi;first4 unchanged layout inspected in prior render,newpages5-10 inspected at full size. No overfull boxes or undefined references. Compilation and visual QA are not proof checks."
+  }
+}

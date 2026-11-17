@@ -1,0 +1,99 @@
+{
+  "date": "2026-11-16",
+  "canonical_proof": "moments/vanishing/STRICT_LEADING_NULLCONES_AND_FULL_THIN_CLOSURE.md",
+  "proof_sha256": "f806c1ace4891d7b531ede5f7af947cce2b5a29a9f2937dfcc6ca7ef9d37412e",
+  "checker": "moments/vanishing/verify_strict_leading_thin_closure.py",
+  "checker_sha256": "7790f2ccb00b78cb6747264e7a1498bfd2119d2283af9a1c651ac3bfdfe7211a",
+  "receipt": "moments/vanishing/strict_leading_thin_verification.json",
+  "receipt_sha256": "99afdcd996c084650fab09ab8e5960e0f7105db45536339277352f394dc6eeb8",
+  "repository_sources": [
+    {
+      "source": "moments/vanishing/SEMISTABLE_LOG_PERIODS_AND_SINGLE_ISOTYPIC_SAFETY.md",
+      "sha256": "2d1c207085783207b425af26636fb05d0ebd07bdff3ac4ddd350c32056d52ae7",
+      "use": "Projective all-dimensional nonisolated log-period exclusion;common-half-fibre criterion;all single-component field purity and uniform2m>degQ."
+    },
+    {
+      "source": "moments/vanishing/VALUATIVE_BOUNDARY_VOLUMES_AND_TORUS_INVARIANT_CLOSURE.md",
+      "sha256": "42bab0af00fe9821dba3121de2a559f88711a0b79eb3ab4d3aad00a8b184dc78",
+      "use": "Entire original torus-fixed eventual radical0;no nonzero cocharacter-limit pure phase;finite-stabilizer and automorphic exclusions."
+    },
+    {
+      "source": "moments/vanishing/COMPLEX_HEIGHT_IMAGES_AND_CAUCHY_RIGIDITY.md",
+      "sha256": "6c6260ad9d8ae0883637e4bd56b682bdd07c8e3a499c00a7b53d8e34d7840b68",
+      "use": "Every full thin phase has an actual regular real seed."
+    },
+    {
+      "source": "moments/vanishing/GAUSSIAN_RADIAL_TRANSFER_AND_EXCEPTIONAL_UNIFORMITY.md",
+      "sha256": "b2e468ccb68f4e904eceb8cd9015840695998213403be0dda1a3ea4c6bf7c1a0",
+      "use": "Even determinant homogenization and actual original quotient degree;its Gaussian field-uniformity foundation is NOT needed for the new single-component proof."
+    },
+    {
+      "source": "moments/vanishing/NILPOTENT_LIFTING_AND_FORMAL_SAFE_COMPLETION.md",
+      "sha256": "f0a2459c97743b65804fbeacadd2fbe377e15376bdc3941e4c72b70013de9975",
+      "use": "Reuse derivative/symbolic-power METHOD and exact primary imports only;new proof starts from explicit exceptional field cutoff,not general Gaussian uniformity."
+    },
+    {
+      "source": "moments/vanishing/POSITIVE_FIELD_THEOREMS_AND_ORDINARY_CUTOFF_STABILIZATION.md",
+      "sha256": "daa4a59710635232ca02f3b9730b96bc15c02334525553a6379dcea753b64606",
+      "use": "Prior abstract positive-family method;new component application written directly with coefficient1/2 and additive intercept."
+    },
+    {
+      "source": "moments/vanishing/DEGREE12_FOUR_WEIGHT_IDEALS_AND_QUARTIC_BARRIER.md",
+      "sha256": "506b948f6b73cb09e042116fd8b4bae7d36129b9f95bfaa6c221b1ed43e88c86",
+      "use": "Retain ordinary invariant-quartic deficit and numeric prefix lower bound;no ordinary ideal is replaced by its radical."
+    }
+  ],
+  "primary_sources": [
+    {
+      "author": "Janos Kollar",
+      "title": "Singularities of Pairs",
+      "url": "https://arxiv.org/pdf/alg-geom/9601026v2",
+      "version": "v2,6November1996",
+      "cached_file": "moments/vanishing/sources/kollar_singularities_pairs_9601026.pdf",
+      "sha256": "a7cb696d003c6eb64212a23796ae5dffdea4250ec7fe58f35924180c704e4883",
+      "read": "Complete Theorem7.5.1 AND7.5.2 and proof,printed/PDF43;surrounding42-44 read.",
+      "exact_import": "Smooth Cartier inversion of adjunction,klt/plt and lc/lc,with rational effective Cartier divisors. LC point perturbation is an INTERNAL new deduction,not attributed as a separate theorem."
+    },
+    {
+      "authors": "Lawrence Ein,Robert Lazarsfeld,Karen E.Smith",
+      "title": "Uniform Bounds and Symbolic Powers on Smooth Varieties",
+      "url": "https://arxiv.org/pdf/math/0005098v3",
+      "version": "v3,4October2000",
+      "cached_file": "moments/vanishing/sources/ein_lazarsfeld_smith_math0005098v3.pdf",
+      "sha256": "c2b995fc93d315566e7399141b94af79a8af07f271158bda8bda26faee43ada9",
+      "read": "TheoremA printed2 andTheorem2.2 with proof printed7-8,current cached PDF and official PDF verified.",
+      "exact_import": "For radical J in a SMOOTH ambient coefficient space,component codimension<=eta implies symbolic J^(eta*q) subset ordinary J^q. Never applied on a singular pure quotient."
+    },
+    {
+      "authors": "Jessica Sidman,Seth Sullivant",
+      "title": "Prolongations and Computational Algebra",
+      "url": "https://doi.org/10.4153/CJM-2009-047-5",
+      "version": "Canadian Journal of Mathematics61(4),2009,930-949,publisher PDF",
+      "cached_file": "moments/vanishing/sources/sidman_sullivant_prolongations_2009.pdf",
+      "sha256": "11f25831cce72ef8a86baf4845969a397446bb01ee8a440ce2f73e5efc625b5a",
+      "read": "Differential/symbolic definitions andCorollary2.9 with proof,printed937/PDF8,current retained PDF and publisher PDF checked.",
+      "exact_import": "Radical-ideal Zariski-Nagata identifies coefficient differential and symbolic powers in characteristic-zero polynomial rings."
+    }
+  ],
+  "new_written_arguments": [
+    "PGL2=P3 minus the determinant quadric has actual Haar volume pole2.The SL2 central quotient is finite etale;local volume isdy dz dv/v^2.",
+    "Critical finite log-pole lemma:root ramification plusSNC discrepancy bounds force ALL roots to agree to order>=1 in the original normal parameter;their mean lies in that parameter ring,forcing numerator multiplicity>=k. Thus lower multiplicity removes the critical pole.",
+    "At common-left multiplicity exactlyD/2,the leading boundary pair is lc with only those left fibres as lc centres. Small local Cartier perturbations exclude lc places over closed points. Eventual purity forces an opposite full weight at every critical fibre,otherwise an actual nonzeroT-fixed limit exists. That opposite weight lowers actual numerator multiplicity belowk,giving a projective holomorphic-volume model and contradiction.",
+    "All nonzero eventually pure FULL leading classes are STRICTLY unstable. Antipodal reality bounds all real-seed leading root multiplicities byhalf,including arbitrary powers. Every full thin phase is polynomial in a regular real seed,so full thin eventual radical0 in every degree.",
+    "For any fixed actual real seed,every finite-degree coefficient tail ideal has only the origin as its complex zero set. Its radical is the maximal coefficient ideal;over anyC-algebra eventual purity is exactly coefficient nilpotence,and all original markers vanish eventually. No field extension ofC is embedded back intoC.",
+    "The one-component nullcone incidence is irreducible ofcodimensioneta=r(D/2+1)-1. Exact coefficient differentiation and the explicit field cutoff imply symbolic depth;ELS gives ordinary depth and arbitrary-ring safety with additive intercept(D+2)(eta*nu-1),for any finite certificateJ^nu subsetI_N. It also gives finite ordinary pure-prefix and mixed-cutoff stabilization.",
+    "The strict leading root is unique,so every finite left stabilizer fixes a line. Averaging gives a complementary line,forcing it into a torus;all full failure stabilizers are FINITE CYCLIC,also under every automorphism-conjugated left action."
+  ],
+  "essential_boundaries": [
+    "All universal geometric,analytic and coefficient proofs are INTERNAL WRITTEN and await independent specialist review. Selected exact algebraic controls do not verify semistable period gluing,all valuations,lc perturbation,or the full classification.",
+    "A strict leading nullcone does NOT imply full-phase instability or marked safety;opposite lower components remain. Both FULL MZ decisions stayOPEN on mixed image-interior phases.",
+    "Thin existence and the old conditional36/60,D-12/20 marker gates are subsumed for ACTUAL exceptional Haar phases. Abstract positive loop measures and conditional marker theorems remain valid;the separate symmetrized height law is not a pure-phase identity and remainsOPEN.",
+    "All-ring one-component positivity includes nilpotents via actual ordinary containments;the field zero-intercept cutoff is not claimed unchanged. No actualN,nu,prefix,intercept or least slope is computed. V12 ordinary quartic deficit remains.",
+    "The formal root-factor induction uses standard formal Weierstrass preparation and Hensel lifting;it needs no unverified analytic root convergence assertion. Characteristic0 and tame divisorial ramification are essential.",
+    "No new degree/support/density/prefix campaign,Gaussian foundation proof,or general producer implementation is performed."
+  ],
+  "independent_replay": false,
+  "formal_verification": false,
+  "external_review": false,
+  "new_degree_support_density_or_prefix_campaign": false
+}

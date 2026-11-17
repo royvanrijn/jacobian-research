@@ -1,0 +1,208 @@
+{
+  "METHOD-DEG12-NORMALIZER-MOMENT-IDEAL-20261115": {
+    "id": "METHOD-DEG12-NORMALIZER-MOMENT-IDEAL-20261115",
+    "area": "geometry",
+    "title": "Use a graded torus/Weyl normal form for four weights and keep full-module quartic deficits separate",
+    "when": "A moment family has weights3r,r,-r,-3r,or one tries to copy a moment-generated invariant-ring proof toV12.",
+    "use": "Prove the elementary torus semigroup u=ad,v=bc,s=ac^3,t=b^3d,st=uv^3,and Weyl-fixed ring C[u,v,z],z=s+t. Compute H2,H4,H6 exactly;nonzero normal remainders give(v-kappa*u,z-lambda*u^2,u^3) and control all higher moments by grading. For a full type,count invariant dimensions first and apply Reynolds to ideal coefficients to expose a missing quartic at every moment order.",
+    "avoid": "Calling the four-weight sector the full V12 space,inferring radical inequality from a quartic ordinary-ideal deficit,or using six/eleven-moment controls as all-order null functions. A complete invariant-ring generator argument cannot work onV12 because the invariant quartic dimension is3 but the moment-ideal quartic dimension is at most2.",
+    "boundary": "Both actual exceptional sectors are closed:two pure planes,sharp set/ordinary prefix6,optimal zero-offset marked coefficient1/4. Full V12 has an explicit missing quartic in the ordinary moment ideal,and examples force full pure prefix>=11. Full C+V12 on2I,mixed C+V8+V12 on2O,and all-degree MZ decisions remain open. No complete duodecimic generator list or unproved HSOP is used.",
+    "reopen_when": "A family outside the four-weight sector has a justified radical criterion or actual entire marked rank excess. Recheck nonzero gamma/delta before applying the conditional criterion to another module;do not increase the closed sector prefix.",
+    "claims": [
+      "GDEG12FOURWEIGHT20261115",
+      "GDEG12QUARTICDEFECT20261115",
+      "GDEG12PREFIXLOWER20261115"
+    ],
+    "sources": [
+      "moments/vanishing/DEGREE12_FOUR_WEIGHT_IDEALS_AND_QUARTIC_BARRIER.md",
+      "moments/vanishing/degree12_four_weight_source_audit.json"
+    ],
+    "implementation": [
+      "moments/vanishing/verify_degree12_four_weights.py",
+      "moments/vanishing/degree12_four_weight_relations.json"
+    ],
+    "keywords": [
+      "Haar",
+      "Mathieu",
+      "V12",
+      "quartic deficit",
+      "four weights",
+      "normalizer",
+      "ordinary ideal",
+      "prefix lower bound"
+    ],
+    "reviewed_claims": {
+      "GDEG12FOURWEIGHT20261115": "07f337ee50375fe9",
+      "GDEG12QUARTICDEFECT20261115": "464758f7937a433a",
+      "GDEG12PREFIXLOWER20261115": "13e4fc095b93998e"
+    },
+    "programme_status": "archived"
+  },
+  "METHOD-DEG12-SPARSE-UNIT-IDEALS-20261115": {
+    "id": "METHOD-DEG12-SPARSE-UNIT-IDEALS-20261115",
+    "area": "geometry",
+    "title": "Exclude whole exceptional sparse strata with normalized moment unit identities",
+    "when": "A fixed left-weight support has opposite endpoint weights and at most four active coefficients in an actual exceptional V12.",
+    "use": "Normalize endpoint coefficients to1 using scalar and torus actions,then invert nonzero interior variables. Compute exact balanced moment polynomials and retain explicit identities sum A_m G_m+B*(z product t-1)=1. Replay identities by direct coefficient multiplication independently of the Buchberger constructor. Use Weyl reflection with exact support-set coverage. All<=4 supports on both models are closed;strict sign gives all-order pure nullity and all-marker cutoff2m>degQ.",
+    "avoid": "Testing sampled coefficients,inferring an infinite tail from a zero prefix,or treating a gcd/Groebner plateau as ideal stabilization. Do not count p_j as individual left/right matrix elements when importing old small-term results. Do not extend a set-prefix statement to ordinary generation or all V12.",
+    "boundary": "924 exact unit identities exclude all crossing supports<=4. Sharp sparse set prefix11 and marked zero-offset coefficient1/2 are proved. Full V12,mixed V8+V12,and the global models remain OPEN;ordinary quartic deficit does not decide radical equality.",
+    "reopen_when": "A candidate in actual V12 has at least five weights in every left frame,or a full radical theorem or an exact pure-null infinite marked tail is supplied. Do not revisit excluded supports with new coefficients or longer prefixes.",
+    "claims": [
+      "GDEG12SPARSE20261115",
+      "GDEG12SPARSESHARP20261115",
+      "GDEG12SUPPORTFIVE20261115"
+    ],
+    "sources": [
+      "moments/vanishing/DEGREE12_SPARSE_SUPPORT_CLASSIFICATION.md",
+      "moments/vanishing/degree12_sparse_source_audit.json"
+    ],
+    "implementation": [
+      "moments/vanishing/verify_degree12_sparse_supports.py",
+      "moments/vanishing/degree12_sparse_certificates.json"
+    ],
+    "keywords": [
+      "Haar",
+      "Mathieu",
+      "sparse supports",
+      "binary polyhedral",
+      "unit ideal",
+      "degree12",
+      "sharp prefix"
+    ],
+    "reviewed_claims": {
+      "GDEG12SPARSE20261115": "5769c3e71836b3dc",
+      "GDEG12SPARSESHARP20261115": "fa73a731131491a5",
+      "GDEG12SUPPORTFIVE20261115": "b0a284b1b3657ea1"
+    },
+    "programme_status": "archived"
+  },
+  "METHOD-THIN-MATRIX-MARKERS-20261115": {
+    "id": "METHOD-THIN-MATRIX-MARKERS-20261115",
+    "area": "geometry",
+    "programme_status": "archived",
+    "title": "Convert normalized seed markers to original matrix degrees through the associated-graded domain",
+    "when": "A thin pure phase has a finite real-seed bad-marker list but only normalized-curve degree bounds,or a cubic path is proposed on an exceptional quotient.",
+    "use": "Use the minimum matrix filtration. Its associated-graded invariant cone is a domain,so deg p(h)=deg p*deg h and every nonzero thin pure phase has a bad original marker of degree<=D-8/12,among any basis of that filtered space. Nonseparating paths force normalized degree>=3;all cubic tails are exterior,so the sphere Jordan exclusion raises the original T-invariant threshold to4.",
+    "avoid": "Keeping the obsolete normalized-degree-only caveat,substituting raw representative or generator degree,conflating full24/36 gates with restricted32/48 gates,or treating real-affine cubic coordinate changes as preserving moments or angles.",
+    "boundary": "The marker-degree bound is all-degree on both full quotients. The degree gates are necessary only,with no asserted pure endpoint. The marker is fixed with an infinite nonzero tail,but no moment cutoff,sign or selected j is supplied. Full non-T-invariant cubics and rank2 failures remain separate.",
+    "reopen_when": "A candidate has an exact full pure law and a marked tail inside the stated original filtered space,or an overarching obstruction closes the remaining architectures. No expanding degree/support campaign is justified by these lower gates.",
+    "claims": [
+      "GTHINMATRIXMARKER20261115",
+      "GTHINCUBICGATE20261115"
+    ],
+    "sources": [
+      "moments/vanishing/POSITIVE_GRAPH_HULLS_AND_INTERIOR_BALAYAGE.md",
+      "moments/vanishing/FILTERED_MATRIX_DEGREES_AND_CUBIC_THIN_PHASES.md",
+      "moments/vanishing/graph_hull_degree_source_audit.json"
+    ],
+    "implementation": [
+      "moments/vanishing/verify_graph_hulls_and_matrix_degrees.py"
+    ],
+    "keywords": [
+      "Mathieu",
+      "Haar",
+      "all degree",
+      "thin phase",
+      "polynomial graph",
+      "original matrix degree"
+    ],
+    "reviewed_claims": {
+      "GTHINMATRIXMARKER20261115": "b5147fb0b72847f0",
+      "GTHINCUBICGATE20261115": "f9d44a1527e66b1e"
+    }
+  },
+  "METHOD-PROPER-QUADRIC-LEADING-GATE-20261115": {
+    "id": "METHOD-PROPER-QUADRIC-LEADING-GATE-20261115",
+    "area": "geometry",
+    "programme_status": "archived",
+    "title": "Build the proper graph and retain its volume divisor before refining exceptional phases",
+    "when": "A Haar phase or seed is a polynomial on the sphere or determinant quadric;seek an all-degree obstruction without calculating each density.",
+    "use": "For minimaldegreeD onQ_N,check whether the leading zero divisor on the projective boundary is smooth. IfD>=N,the closed graphH=t*u^D is smooth/proper with holomorphic residue volumeu^(D-N);its finite critical locus and local Gelfand-Leray bounds exclude every polynomial in the seed. Thus every full exceptional pure phase has singular leading divisor. Nonempty smooth invariant strata exist in degrees24k/60k;both minimal real sphere seeds are closed in all polynomial degrees.",
+    "avoid": "Assuming affine maps are proper,discarding boundary volume poles,applying the criterion whenD<N or a leading divisor is repeated,assumingp(F) remains smooth-leading,or treating leading singularity as purity/failure. Do not conflate the minimal-real-T-invariant seed class with every full phase of matrixdegree8/12.",
+    "boundary": "The earlier isolated-critical proper-period theorem remains correctly scoped in higher dimensions. The new SURFACE extension permits nonisolated fibres via precise semistable-curve imports;its volume extension,sector bounds and finite-chain trace are internally written. Valuative lct/multiplicity inequalities and polyhedral orbit sizes now close ALL originalT-invariant phases on both models,in every degree,not merely smooth-leading/minimal seeds. Every FULL pure phase still has singular leading divisor;any FULL failure must also have finite stabilizer under every conjugated left action and lie outside all automorphic torus-fixed subalgebras. Restricted coefficient-ring radicals are nilpotents. Full non-T thin/image-interior problems and both FULL MZ decisions remainOPEN;independent proof review is pending.",
+    "reopen_when": "For FULL non-T-invariant phases outside all automorphic torus-fixed subalgebras,retain the prior proof constraints: A remaining original phase lies in the singular-leading locus. Resolve its actual boundary graph and volume orders,or identify actual nonintegrable continuation branches;check whether a holomorphic proper model still survives before any degree/support campaign. Retain graph constraints,marker degree bounds and the separate symmetrized height law. Do not reopen originalT-invariant purity;any full failure must have finite stabilizer under every conjugated left action.",
+    "claims": [
+      "GPROPERHOLPERIOD20261115",
+      "GQUADRICTOPGATE20261115",
+      "GEXCEPTIONALLEADING20261115",
+      "GMINIMALSPHERESEEDS20261115",
+      "GSURFACENONISOPERIOD20261115",
+      "GTORUSPURECLOSED20261115",
+      "GTORUSNILPOTENTBASE20261115",
+      "GFAILFINITELEFTSTAB20261115"
+    ],
+    "sources": [
+      "moments/vanishing/PROPER_QUADRIC_MODELS_AND_LEADING_DISCRIMINANTS.md",
+      "moments/vanishing/proper_quadric_source_audit.json",
+      "moments/vanishing/VALUATIVE_BOUNDARY_VOLUMES_AND_TORUS_INVARIANT_CLOSURE.md",
+      "moments/vanishing/torus_volume_source_audit.json"
+    ],
+    "implementation": [
+      "moments/vanishing/verify_proper_quadric_gate.py"
+    ],
+    "keywords": [
+      "Mathieu",
+      "Haar",
+      "all degree",
+      "proper graph",
+      "quadric",
+      "volume divisor",
+      "leading discriminant",
+      "Milnor periods",
+      "minimal sphere seed"
+    ],
+    "reviewed_claims": {
+      "GPROPERHOLPERIOD20261115": "12ecbe536c4d4d18",
+      "GQUADRICTOPGATE20261115": "96effe53cfecac87",
+      "GEXCEPTIONALLEADING20261115": "e02c6d2add389fc9",
+      "GMINIMALSPHERESEEDS20261115": "5e39aaac343203fc",
+      "GSURFACENONISOPERIOD20261115": "26e21f2ab3771d84",
+      "GTORUSPURECLOSED20261115": "113bcea3090fb070",
+      "GTORUSNILPOTENTBASE20261115": "c07ab30bbdfcc28d",
+      "GFAILFINITELEFTSTAB20261115": "3e357ff9711d0287"
+    }
+  },
+  "METHOD-TORUS-VOLUME-CLOSURE-20261115": {
+    "id": "METHOD-TORUS-VOLUME-CLOSURE-20261115",
+    "area": "geometry",
+    "programme_status": "archived",
+    "title": "Use finite-boundary volume valuations and polyhedral orbit size to close every original torus-invariant phase",
+    "when": "An exceptional Haar phase or construction lies in an original torus-fixed algebra,an automorphic image of one,or has positive-dimensional left stabilizer.",
+    "use": "The ENTIRE originalA_(2O)^T andA_(2I)^T eventual pure radicals are0 in ALL degrees. A leading root multiplicitym on the infinity conic obeysD>=3m/6m;log discrepancies make every finite boundary volume holomorphic,and semistable surface periods exclude eventual purity even with nonisolated fibres. Across all complex coefficient rings the eventual radical is exactly nilpotents,with fixed-degree uniform ordinary-ideal nilpotence certificates. A positive-dimensional-stabilizer pure full phase is unipotent-safe;every possible failure has finite stabilizer under every automorphism-conjugated left action.",
+    "avoid": "Leaving originalT-invariant cubic/Jordan/internal-graph existence questions active,assuming a full phase reduces toT invariants,assuming finite stabilizer implies failure,using surface semistability as an unproved higher-dimensional period theorem,or copying only0pure across nonreduced rings. Retain ordinary pure ideals and their nilpotent structure.",
+    "boundary": "Both FULL exceptional MZ questions remainOPEN. Restricted closure includes all complex/image-interior T-invariant phases and all original markers,but full non-T-invariant thin phases and image-interior marked safety remain. The separate symmetrized height law is not a pure-phase identity. Surface-period trace,lct geometry and uniform nilpotence deductions are INTERNAL WRITTEN and await independent review. No numeric universalprefix or nilpotence exponent is computed.",
+    "reopen_when": "A candidate lies outside all automorphic torus-fixed subalgebras,in the original singular-leading locus,and has finite stabilizer for every conjugated left action. Audit actual finite boundary poles or full3D continuation before further calculations. Preserve all original marker bounds,weight/Jacobian distinctions and Gaussian radial results.",
+    "claims": [
+      "GSURFACENONISOPERIOD20261115",
+      "GVALUATIVEVOLUMECERT20261115",
+      "GTORUSPURECLOSED20261115",
+      "GTORUSNILPOTENTBASE20261115",
+      "GFAILFINITELEFTSTAB20261115"
+    ],
+    "sources": [
+      "moments/vanishing/VALUATIVE_BOUNDARY_VOLUMES_AND_TORUS_INVARIANT_CLOSURE.md",
+      "moments/vanishing/torus_volume_source_audit.json"
+    ],
+    "implementation": [
+      "moments/vanishing/verify_torus_volume_closure.py"
+    ],
+    "keywords": [
+      "Mathieu",
+      "Haar",
+      "all degree",
+      "torus invariant closure",
+      "boundary volume",
+      "log discrepancy",
+      "semistable surface",
+      "nilpotent coefficient rings",
+      "finite stabilizer"
+    ],
+    "reviewed_claims": {
+      "GSURFACENONISOPERIOD20261115": "26e21f2ab3771d84",
+      "GVALUATIVEVOLUMECERT20261115": "babe9a2d7cae11de",
+      "GTORUSPURECLOSED20261115": "113bcea3090fb070",
+      "GTORUSNILPOTENTBASE20261115": "c07ab30bbdfcc28d",
+      "GFAILFINITELEFTSTAB20261115": "3e357ff9711d0287"
+    }
+  }
+}

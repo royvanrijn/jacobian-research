@@ -1,0 +1,8 @@
+from sage.all import *
+from pathlib import Path
+import json,gzip
+for k in [2,4]:
+ d=json.loads(gzip.decompress(Path('/research/.scratch/degree8_Mlinear_unit_pending_'+str(k)+'.json.gz').read_bytes()));v=json.loads(Path('/research/.scratch/degree8_Mlinear_inverse_'+str(k)+'.json').read_text());T=PolynomialRing(QQ,'t');K=NumberField(T(d['P4']),'t');A=PolynomialRing(K,names=d['variables'],order='degrevlex');V=PolynomialRing(A,'w')
+ def enc(f):return [[list(e),[str(c[j]) for j in range(4)]] for e,c in A(f).dict().items()]
+ out=dict(sector=k,P4=d['P4'],P4_coefficients=[str(T(d['P4'])[j]) for j in range(5)],variables=d['variables'],generators=[enc(g) for g in d['generators']],rules=[enc(g) for g in d['GB']],rules_in_inputs=[[enc(c) for c in row] for row in d['GB_in_input']],W=[enc(c) for c in V(d['W'])],M=[enc(c) for c in V(d['M'])],L=[enc(c) for c in V(d['L'])],s=[str(K(d['s'])[j]) for j in range(4)],reduced_E5=enc(d['reduced_E5']),basis_exponents=d['basis_exponents'],inverse=[[ex,v[4*i:4*i+4]] for i,ex in enumerate(d['basis_exponents'])])
+ Path('/research/.scratch/degree8_Mlinear_encoded_'+str(k)+'.json.gz').write_bytes(gzip.compress(json.dumps(out,indent=2).encode(),mtime=0));print('encoded',k,flush=True)

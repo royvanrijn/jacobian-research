@@ -1,0 +1,103 @@
+{
+  "review_date": "2026-11-15",
+  "title": "Intrinsic free projections, constant trace and the global immersion obligation",
+  "newly_cached_primary_context": [
+    {
+      "url": "https://arxiv.org/html/alg-geom/9305008v1",
+      "retained_file": "gwozdziewicz-one-line-alg-geom-9305008v1.html",
+      "sha256": "b6bf59b1cae5becc6c64ece15cc5d936e08cbcd3196e2d56ba7060e4b19705a8",
+      "title": "Injectivity on one line",
+      "author": "Janusz Gwozdziewicz",
+      "version": "arXiv:alg-geom/9305008v1, 19 May 1993",
+      "portions_inspected": "Full short HTML manuscript, especially Theorem 1.1, Lemma 2.3 and the proof through the cited Newton-polygon and line-embedding inputs.",
+      "role": "New HTML cache of an already retained explicit theorem: a plane Keller map injective on one affine line is invertible. The rank-two first-jet proof invokes this theorem, rather than claiming to reprove it by controls. The unchanged previously audited primary PDF remains pinned.",
+      "new_source_bytes_downloaded": true,
+      "new_unproved_theorem_imported": false,
+      "retained_theorem_used_without_new_proof": true
+    }
+  ],
+  "newly_used_unproved_external_statements": [],
+  "retained_structural_inputs": [
+    {
+      "claim": "HC4MYGL0",
+      "statement": "Gwozdziewicz Theorem 1.1: plane Keller injectivity on one affine line gives inverse",
+      "source": "sources/gwozdziewicz-injectivity-on-one-line-v1.pdf",
+      "fully_reproved_here": false
+    },
+    {
+      "claim": "HC4MYIL0",
+      "statement": "Retained generative-polynomial and relative-closedness argument gives a common polynomial parameter for algebraically dependent plane polynomials",
+      "source": "sources/arzhantsev-petravchuk-closed-math-0608157v2.html",
+      "fully_reproved_here": false
+    }
+  ],
+  "inspected_but_not_used": [
+    {
+      "url": "https://arxiv.org/html/1309.0049",
+      "version": "arXiv:1309.0049v3, 27 November 2014",
+      "portions": "Introduction and critical-point definition of Euclidean distance degree",
+      "reason": "Generic translated-distance critical counts do not establish that translated restrictions retain unit Hessian or implement arbitrary intrinsic coefficient-pair shifts. No ED-degree theorem is imported."
+    }
+  ],
+  "retained_proof_and_source_sha256": {
+    "hessian/hc4-triangular-graphs/INTRINSIC_NAMBU_DIRECTION_RIGIDITY.md": "d28e32833d3c704e051ccba973d7bbcc0abd4ea19eb1e906869901f8f9f891a3",
+    "hessian/hc4-triangular-graphs/receipt-intrinsic-nambu.json": "55165973b91f7b984816dae18a21a6fe379bec53f31a1ce66a692395d9a13e3c",
+    "hessian/hc4-triangular-graphs/CRITICAL_COORDINATE_JET.md": "035d476100acc2c5250efbfb9c4d2294587a3b46aa1ce5ab500b8fc22bb550cd",
+    "hessian/hc4-triangular-graphs/verify_critical_jet.py": "6f3c0593379c9d305c734a0fa66d5fa4cf63640971562208a6e707845dbde93d",
+    "hessian/hc4-triangular-graphs/receipt-critical-jet.json": "ede223ed913bf350d2b61ebdffbf8f964bdd4946dcfc4d34dca6288d5ccf674c",
+    "hessian/hc4-triangular-graphs/sources/critical-jet-import.json": "ee08df853a8f8546504c7386a175cfccec2243ec2f15bacf48d4e7c88721a18d",
+    "hessian/hc4-triangular-graphs/sources/gwozdziewicz-injectivity-on-one-line-v1.pdf": "4cce6a7334640ea47036b1fb8c676e28da7946dbd15d0a48868b30d94c68585a",
+    "hessian/hc4-triangular-graphs/MULTIVARIABLE_SUSPENSIONS_AND_FIXED_MULTIPLIERS.md": "66a879db85c96347f7483c55c4c873792e50073090e2eddee64a03535911fb92",
+    "hessian/hc4-triangular-graphs/sources/multivariable-suspension-import.json": "488b35f1d0a1e3be8c58db812389785e9e3bdeaeb028a668e4d002ff9b7a182c",
+    "hessian/hc4-triangular-graphs/sources/arzhantsev-petravchuk-closed-math-0608157v2.html": "8042645504f3535bae9ce6d656a68015b893dbf259888ca4708e69722d658cc9",
+    "hessian/hc4-triangular-graphs/QUADRATIC_PLANE_FIBRE_AFFINE.md": "116a2addf8c80f87cd0abd097762eb70090ebef66a47b71d69b3962484ae21ae",
+    "hessian/hc4-triangular-graphs/AMBIENT_QUADRIC_GRAPHS.md": "435ead09b62a8ec765f626b66314db3a85033c2e75019f12b7b5a021408dcc1c",
+    "hessian/hc4-triangular-graphs/POSITIVE_WEIGHT_IMAGE_RECTIFICATION.md": "ff1c82e33f56c5ca3341f9eaf362387d13681863c4fe07c2696282876a51fcd1",
+    "hessian/hc4-triangular-graphs/GLOBAL_VALUE_ORBITS.md": "1dba2b511024f9da2ebd787183de66aaf42e76bf823fee76b745ffedabef2d5c",
+    "hessian/hc4-triangular-graphs/sources/gwozdziewicz-one-line-alg-geom-9305008v1.html": "b6bf59b1cae5becc6c64ece15cc5d936e08cbcd3196e2d56ba7060e4b19705a8"
+  },
+  "direct_proof_arguments": [
+    "closed base change embeds the zero-section as an actual plane in a ternary quadric level",
+    "the three helper ranks are exhausted by singularity, units, an exact smooth-quadric class lattice and plane coordinate-ring equality",
+    "at the ambient critical value the rank-two first free jet restricts the intrinsic pair to an injective affine line and the rank-one jet is already a coordinate pair",
+    "constant free frames with polynomial base offsets are covered by a literal cotangent identity, not nonlinear Hessian invariance",
+    "a different constant value leaves only a rank-one noncritical plane and explicit normal first-jet corrections",
+    "the universal compensation has exact unit-Hessian pullback but its global immersion condition excludes distinct nonzero eigenvalues of the normal first-jet matrix",
+    "determinant one and zero discriminant leave only two nilpotent-Jacobian plane cases",
+    "the retained polynomial generative theorem and parallel level lines prove the needed plane triangularity lemma directly",
+    "an explicit genuine automorphism gives unit Hessian yet a killed source tangent in the compensation map"
+  ],
+  "actual_closed_zero_section_required": true,
+  "all_constant_trace_helper_ranks_classified": true,
+  "rank_three_quadric_class_obstruction_reproved": true,
+  "critical_value_trace_forces_carried_inverse": true,
+  "all_free_variable_helper_degrees_unrestricted": true,
+  "constant_frame_polynomial_offsets_covered": true,
+  "noncritical_constant_trace_reduces_to_rank_one": true,
+  "noncritical_first_jet_formula_proved": true,
+  "universal_compensation_substitution_has_unit_Hessian": true,
+  "global_immersion_of_compensation_forces_inverse": true,
+  "plane_nilpotent_Jacobian_lemma_reproved_with_retained_generative_input": true,
+  "automorphic_input_can_fail_compensation_immersion": true,
+  "retained_one_line_theorem_required": true,
+  "retained_generative_theorem_required": true,
+  "fibre_affine_helper_hypothesis_required": false,
+  "generic_section_assumed_closed_zero_section": false,
+  "all_noncritical_rank_one_embeddings_resolved": false,
+  "universal_substitution_asserted_closed_embedding": false,
+  "unit_Hessian_asserted_embedding": false,
+  "every_ambient_translation_assumed_unit_Hessian": false,
+  "arbitrary_intrinsic_target_shifts_assumed_ambient_translations": false,
+  "variable_frame_assumed_preserve_Keller_pair": false,
+  "higher_dimensional_nilpotent_Jacobian_inverse_asserted": false,
+  "new_unproved_external_classification_imported": false,
+  "nonlinear_source_Hessian_invariance_used": false,
+  "unit_ideal_endpoint_resolved": false,
+  "singleton_zero_endpoint_resolved": false,
+  "unrestricted_HC4_or_JC2_resolved": false,
+  "original_goal_complete": false,
+  "formal_verification": false,
+  "independent_replay": false,
+  "external_review": false,
+  "novelty_priority_asserted": false
+}

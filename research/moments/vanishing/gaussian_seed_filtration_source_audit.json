@@ -1,0 +1,98 @@
+{
+  "date": "2026-11-16",
+  "concurrent_protected_baseline_refresh": {
+    "records": {},
+    "files": {}
+  },
+  "new_claims": [
+    "GMCSEEDFILTRATION20261116",
+    "GMCPUREMARKERDELAY20261116",
+    "GMCAIRYPOWERIMAGE20261116"
+  ],
+  "new_lesson": "METHOD-GAUSSIAN-POLYNOMIAL-SEEDS-AND-PURE-MARKER-DELAY-20261116",
+  "retained_lessons_updated": [
+    "METHOD-GAUSSIAN-IDEAL-INVARIANCE-IS-NOT-ACTUAL-RANK-20261116",
+    "METHOD-GAUSSIAN-KLOOSTERMAN-AND-FAITHFUL-SYMMETRIC-IMAGES-20261116"
+  ],
+  "owned_work": "WORK-GAUSSIAN-FORMAL-GENERAL",
+  "canonical_proofs_sha256": {
+    "moments/vanishing/POLYNOMIAL_SEEDS_AND_PURE_MARKER_DELAY.md": "8cf36d08ba77d14a4b8b02031903f95c9ec41508b21455290a516b314e931bc0"
+  },
+  "producer": "moments/vanishing/gaussian_seed_filtration.py",
+  "producer_sha256": "b9ee18bf250f900b4d86ea369202dd1733e45527873bada08cbbd84b62c380d5",
+  "checker": "moments/vanishing/verify_gaussian_seed_filtration.py",
+  "checker_sha256": "394fd8281b3096185d943479aefce87337f0e41920797e9cd0faefc9e43f5178",
+  "receipt": "moments/vanishing/gaussian_seed_filtration_verification.json",
+  "receipt_sha256": "96be0f0b0a34c4b4585e5243fdfd93db73ddb26b4c0999596b0bcc3cd56698ab",
+  "certificate": "moments/vanishing/gaussian_seed_filtration_certificate.json",
+  "certificate_sha256": "713c2326f77a118e378bfe06f19a04348ba3c5d6e7598e7831929b9a7eb0a129",
+  "runtime": "moments/vanishing/gaussian_seed_filtration_runtime.json",
+  "runtime_sha256": "1f556145dd542c3d1933d02fb94993a9483861360111d508960bdcb375a1ca66",
+  "frontier": "moments/vanishing/GENERAL_GAUSSIAN_RESEARCH_FRONTIER_20261116_MARKER_FILTRATION.md",
+  "frontier_sha256": "1cbed7bdbd64a7efa5b94ad45c84a172ad7ea9a8cf3e9e1b269ce15fb0196e54",
+  "primary_sources": [
+    {
+      "author": "Ira M. Gessel",
+      "title": "Lagrange Inversion",
+      "url": "https://arxiv.org/html/1609.05988v1",
+      "published": "Journal of Combinatorial Theory Series A144(2016),212-249;DOI10.1016/j.jcta.2016.06.018",
+      "retained_file": "moments/vanishing/sources/gessel_1609_05988v1.html",
+      "exact_import": "Theorem2.1.1 including equation2.1.4 and zero-constant-R warning;Section4.1 Theorem4.1.1 residue change and full proof. Classical formal Lagrange credit only. Author assumes Q-domain;all-Q-algebra extension supplied separately by universal coefficientwise polynomial Wick identities.",
+      "sha256": "b6c904f90d27bee5a591f0d25398be0ca5588abd120b0fc261bcf06edfc73c73",
+      "bytes": 820698
+    },
+    {
+      "author": "Claude Sabbah,Jeng-Daw Yu",
+      "title": "Hodge properties of Airy moments",
+      "url": "https://arxiv.org/html/2112.13405v2",
+      "published": "Tunisian Journal of Mathematics5(2)(2023),215-271;DOI10.2140/tunis.2023.5.215;final v2 June2023",
+      "retained_file": "moments/vanishing/sources/sabbah_yu_2112_13405v2.html",
+      "exact_import": "Section6.a ENTIRE Lemma6.2/full proof and following paragraphs:operator D_x^n-x,n>=2,negative Fourier/rank-one proof of irreducibility,KatzTh4.2.7 restatement SL_n odd/Sp_n even,and formal infinity slope(n+1)/n. Section6.a duality and formal local discussion read. No Hodge/arithmetic moment theorem imported. n1 handled separately;full finite descent and actual extension groups not asserted.",
+      "sha256": "1f31b3c8791d87365d242cfa5f9210a2f8ac1c9f7ca9b3255e77e9620f2703e8",
+      "bytes": 1781556
+    }
+  ],
+  "retained_import_files_sha256": {
+    "moments/vanishing/ALGEBRAIC_FIXED_POINT_LIFTS_AND_UNIVERSAL_GAUSSIAN_IMAGES.md": "5c4d210def0d05b8bf098e12532b97c98f220e92dc1f1ef9fe0617958f245080",
+    "moments/vanishing/algebraic_gaussian_lift_source_audit.json": "3671dca04b34d87822177429254022a07b3b7352328c0c5972286315d948edbc",
+    "moments/vanishing/algebraic_gaussian_lift_verification.json": "a7de2734391160adae086cf7d2a3e92fa4afa541d9790928e7f863d67849205b",
+    "moments/vanishing/GAUSSIAN_KLOOSTERMAN_QUOTIENTS_AND_FAITHFUL_SYMMETRIC_IMAGES.md": "4807af9edb1b4c1a8d529244c692d8eb5c0b38fc0b31b5147f8fa0e45aed496f",
+    "moments/vanishing/gaussian_kloosterman_source_audit.json": "43d1f5426f65523cbf636ddc1e7373ebf50fe8c2589e38979cad7ed427d58450",
+    "moments/vanishing/OAKU_GRAPH_CERTIFICATES_AND_ACTUAL_POLYNOMIAL_DECISION.md": "dd0a050d4bc8538b40f2ec2aafbbe5842179b21ef70c58c157af734a50595229",
+    "moments/vanishing/BERNSTEIN_CLASSICAL_CREDIT_AND_FORMAL_EXTENSIONS.md": "a2cff821b7cee9629235dec935ad231b3db389a03b3fca650b9a35c935451cd9"
+  },
+  "proof_audit": {
+    "source": "Exact all-momentum formula includes U/A,Z/W,Y/V,T. Gamma derivatives polynomial in D because residual precision numerator is1 at gamma0. Alpha derivatives lower D exponent at most q. Universal coefficientwise identities give every Q-algebra.",
+    "filtration": "Every original degree<=d marker lies in f^(M-d)R[t],and original(1+Y)^d realizes its generator. External time coefficients are unrestricted;no sharp last-moment claim.",
+    "powers": "For every k>M,old unit degreeM implies all-positive pure power. Entire old low-degree packet is polynomial;bad marker has moments(kn)! at every index. Exact least degreeM+1.",
+    "image": "All old rational markers transfer by complete polynomial/pole decomposition. Exact Euler factors and A*h1 prove common full embedded D*h with unit1. Original marker filtration is additional data.",
+    "airy": "Exact cover t=(-1)^ell/(k*x^k),gauge y=xu gives negative generalized Airy. Classical source irreducibility and nonrational actual h prove rankk;finite base extension identifies connected quotient group only. Positive origin slope excludes claimed regular realization.",
+    "credit": "Gessel formal Lagrange is stated for Q-domains;universal ring extension written separately. Sabbah-Yu finalv2 Section6.a credits Katz group. Sabbah/Maisonobe convergent mechanism and separate formal/allring scopes retained;no priority claim."
+  },
+  "exact_controls": {
+    "original_marker_controls": 30,
+    "filtration_controls": 12,
+    "power_controls": 3,
+    "transfer_controls": 3,
+    "recurrence_controls": 3,
+    "airy_controls": 3,
+    "rejections": 6
+  },
+  "all_degree_at_most_two_markers_checked": 36,
+  "protected_whole_records": 192,
+  "prior_example_files": 211,
+  "retained_real_region_example_files": 11,
+  "retained_primary_backend_example_files": 37,
+  "previous_turn_classification": "no progress:new Oaku user turn replayed already-retained witnesses/hashes but added no new mathematical result. Revalidated closed gate;this turn takes next general structural action.",
+  "old_terminal_UNKNOWN_jobs_restarted": false,
+  "actual_image_kernel_computed": false,
+  "Galois_groups_computationally_proved": false,
+  "regular_transcendental_Gaussian_realization_claimed": false,
+  "field_safety_implies_purity_resolved": false,
+  "independent_replay": false,
+  "formal_verification": false,
+  "external_review": false,
+  "novelty_claimed": false,
+  "user_goal": "Complete general Gaussian/formal programme;active;general all-degree bridges and published knowledge,not deeper finite campaigns.",
+  "next_full_obligation": "GENERAL GAUSSIAN MARKER-FILTRATION MILESTONE16November2026: GMCSEEDFILTRATION20261116 realizes EVERY polynomial unit period f^M with EXACT all-ring original-marker filtration F_d=f^(M-d)R[t],full image R[t,f^-1],polynomial-unit safety and ordinary coefficient-torsion normalization. GMCPUREMARKERDELAY20261116 proves arbitrarily delayed least bad marker degree under ALL-POSITIVE PURITY in fixed Gaussian dimension5;phase degree grows,so dimension-AND-degree bounds survive. GMCAIRYPOWERIMAGE20261116 proves that for fixed k all M<k share the IDENTICAL full embedded image D*h_k and unit1,yet have least bad degrees1..k. Exact finite-cover/gauge identifies the quotient with generalized Airy of orderk-1;actual rankk,positive origin slope1/(k-1),classical Sabbah-Yu/Katz connected quotient group. Full image+unit is insufficient to recover ORIGINAL marker filtration. NEXT GENERAL OBLIGATION:exhaustive safe structure retaining that filtration;isolate whether all-marker safety over a characteristic-zero FIELD forces all-positive purity;and ORIGINAL regular-transcendental realization or a valid obstruction. These unsafe pure families do not resolve safety-to-purity. No full finite descent/extension Galois group or computed Stokes asserted. All earlier closure scopes and sealed packets retained;no deeper finite campaign;goal ACTIVE. NEXT GENERAL OBLIGATION:structural safe-phase classification WITH original marker filtration;field safety-implies-purity;and ORIGINAL regular transcendental realization or a valid general obstruction. General finite-primary backend gate is CLOSED. Do not infer marker bounds from full image+unit alone. Preserve all prior packets,UNKNOWN terminals and separately owned Mathieu/SIC work. No outreach,delegation or deeper prefix campaign."
+}

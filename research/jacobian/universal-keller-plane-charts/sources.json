@@ -1,0 +1,76 @@
+{
+  "schema_version": 1,
+  "reviewed_utc": "2026-11-15T09:33:40.371443+00:00",
+  "local_sources": [
+    {
+      "path": "jacobian/universal-keller-intermediate-surfaces/PROOF.md",
+      "sha256": "4b0bccee73b5af3e6fbe9b89cd76b61c40c5058e166226a023fa2cdc0c4cc47a"
+    },
+    {
+      "path": "jacobian/universal-keller-log-picard/PROOF.md",
+      "sha256": "ed4302aacae26a7a7b97259555d80859fa704b2055d5a94009a6887b91a539a6"
+    },
+    {
+      "path": "jacobian/universal-keller-unit-rigidity/PROOF.md",
+      "sha256": "418ee93b4fe2401e097046f5a0043aa1c280ac9fa113df5278072fe7eb3eff4a"
+    },
+    {
+      "path": "jacobian/universal-keller-structure/PROOF.md",
+      "sha256": "a3dee93b955b9e449bae2fff3d2964262289572f22f0820309e6c56d8bb5cbd5"
+    },
+    {
+      "path": "jacobian/universal-keller-receiver/PROOF.md",
+      "sha256": "8790916cd2c5e3f0458674dc50a37af18f1c1322eb2720c2071a819283cf639f"
+    },
+    {
+      "path": "hessian/hc4-triangular-graphs/sources/borisov-gabber-vasiu-weak-type-2609.05746v1.html",
+      "sha256": "76d80acb03ab2559af4a8d972a4017824031734288ba9469a9485aedd9829faf"
+    },
+    {
+      "path": "jacobian/universal-keller-feedback-normal-form/PROOF.md",
+      "sha256": "0ca1ea3bf102f7fd464c3de44e6b5dd22aba041ada38812f0c2e4fc2b2b61033"
+    }
+  ],
+  "external_sources": [
+    {
+      "title": "dubouloz-danielewski-v3.html",
+      "url": "https://arxiv.org/html/math/0401225v3",
+      "path": "sources/dubouloz-danielewski-v3.html",
+      "sha256": "83a4f7ff094a2dd8157ebb77be425353ec10b40f89db5e2426e355d44e2c3360",
+      "bytes": 777476,
+      "reviewed_scope": "Introduction and Section2: classical multiple-origin torsor and affine-plane gluing."
+    },
+    {
+      "title": "gwozdziewicz-line-v1.html",
+      "url": "https://arxiv.org/html/alg-geom/9305008v1",
+      "path": "sources/gwozdziewicz-line-v1.html",
+      "sha256": "b6bf59b1cae5becc6c64ece15cc5d936e08cbcd3196e2d56ba7060e4b19705a8",
+      "bytes": 60326,
+      "reviewed_scope": "Theorem1.1 and invoked embedded-affine-line rectification; imported through UARELPLANE1."
+    },
+    {
+      "title": "stacks-sections-024T.html",
+      "url": "https://stacks.math.columbia.edu/tag/024T",
+      "path": "sources/stacks-sections-024T.html",
+      "sha256": "fb216bd48fce5215c4d11e0a2ce5677f53b7177f4c8941dd306e74a898d88685",
+      "bytes": 14454,
+      "reviewed_scope": "Sections of separated unramified morphisms are open and closed."
+    },
+    {
+      "title": "dubouloz-basel-2009.pdf",
+      "url": "https://dubouloz.perso.math.cnrs.fr/GdTs/GdTAutos/Prog-Basel-09-11.pdf",
+      "path": "sources/dubouloz-basel-2009.pdf",
+      "sha256": "b97a28d832703e66ce874b83de2cf07254ecc28078ffc45b128e05b6f36c47f7",
+      "bytes": 123596,
+      "reviewed_scope": "Page2, Dubouloz talk abstract: established open-plane route to JC(2), and differential obstruction boundary for x^2*z=y^2-1."
+    },
+    {
+      "title": "Stacks nilpotent section lifting",
+      "url": "https://stacks.math.columbia.edu/tag/025H",
+      "path": "sources/stacks-nilpotent-sections-025H.html",
+      "bytes": 16200,
+      "sha256": "48389fe52d33ee656aee236b78ae198e0fd3e452b6d4679728fd99c7596c7cbe",
+      "reviewed_scope": "Theorem41.15.1 unique lift of a section over a nilpotent thickening."
+    }
+  ]
+}

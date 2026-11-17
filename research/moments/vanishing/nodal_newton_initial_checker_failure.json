@@ -1,0 +1,8 @@
+{
+  "terminal": true,
+  "completed": false,
+  "exit_code": 1,
+  "input": "research/moments/vanishing/nodal_newton_initial_checker_input.py",
+  "input_sha256": "ec9480ddd558cfdef0c22aa5835c2720fbc94031cf5beb61fab2d7d163039605",
+  "failure": "SymPy structural expression equality rejected an expanded polynomial versus its factored form. No mathematical counterexample; corrected to compare the expanded difference with zero."
+}

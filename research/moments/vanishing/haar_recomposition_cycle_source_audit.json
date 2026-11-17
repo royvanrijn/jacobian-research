@@ -1,0 +1,76 @@
+{
+  "date": "2026-11-16",
+  "canonical_proof": "moments/vanishing/PRIMITIVE_HAAR_VARIATION_AND_ALL_POLYNOMIAL_COMPOSITES.md",
+  "proof_sha256": "26944e8dbbb2228673247df34f9f3b5c38b552e5b40ade85d27ea7b5747d6d60",
+  "checker": "moments/vanishing/verify_haar_recomposition_cycle.py",
+  "checker_sha256": "0a66ea01f5aa847af847cb5702a00f26a9a034b101e216cec84072672f4a0317",
+  "receipt": "moments/vanishing/haar_recomposition_cycle_verification.json",
+  "receipt_sha256": "33c7813bae256743f878692704e29c4246803b9dcc5212ed031d506df53c5b16",
+  "repository_sources": [
+    {
+      "source": "moments/vanishing/HAAR_CYCLE_VARIATION_AND_FIBRE_BOUNDARY_LINKING.md",
+      "sha256": "166a7fecd754cfc800e71289281824aaa1c970e836ee307747bdea3084475d4c",
+      "use": "Integral tube exact sequence, actual Haar lift, eventually-pure safety iff eigenvalue-1 variation vanishes, and original-form de Rham detection. Apply the identical sphere-topology proof to every finite SL2 quotient."
+    },
+    {
+      "source": "moments/vanishing/ALGEBRAIC_RESOLVENT_SPLITTING_AND_ZERO_VALUE_LOGARITHMS.md",
+      "sha256": "11cc315c4ca4499ee8cb16089c329d0aa206152dbfdf73fee8ebd529c977a601",
+      "use": "Regular-singular actual complement periods and integer-class logarithms, not the ordinary generic fibre connection."
+    },
+    {
+      "source": "moments/vanishing/POLYNOMIAL_RECOMPOSITION_REFLECTION_AND_UNIVERSAL_FAILURE.md",
+      "sha256": "8ceafda92c79a808344b89da84d36017db8767bc1d240e39b7c7d4a8df59aca6",
+      "use": "All-original-marker safety reflection through EVERY polynomial and the unique safe scalar centre; no primitive purity reflection."
+    },
+    {
+      "source": "moments/vanishing/FINITE_RECOMPOSITION_OF_ORIGINAL_FORM_LATTICES.md",
+      "sha256": "2bac99f6f35256e980fa1dfd8dafe64548b7eae4f2630eb3d6e22cf0e084a24e",
+      "use": "Genuinely non-tame primitive source, root unit defect and 2O sign case; retain every composite and raw/image distinction."
+    },
+    {
+      "source": "moments/vanishing/INTRINSIC_REYNOLDS_AND_FINITE_QUOTIENT_DESCENT.md",
+      "sha256": "9bc929aaac70783649f09d6faa00e45c85ae25fd9f30e9a486ad3ab34be240a7",
+      "use": "Finite-cover trace preserves ALL original markers; 2I invariant primitive factor and the 2O/2T sign case."
+    },
+    {
+      "source": "moments/vanishing/haar_cycle_linking_source_audit.json",
+      "sha256": "c50f6af5c7321e1416c0cc92eb0ccac66694f9e6df12cc05354c1da45bf91408",
+      "use": "Retained exact classical topological and stratified-family source imports; no new unproved source comparison."
+    }
+  ],
+  "primary_sources": [
+    {
+      "author": "Allen Hatcher",
+      "title": "Algebraic Topology",
+      "url": "https://pi.math.cornell.edu/~hatcher/AT/AT.pdf",
+      "cached_file": "moments/vanishing/sources/hatcher_algebraic_topology_author.pdf",
+      "sha256": "bebb3032bf9021b956da3bd070eb6c67dc662cf849be9cdf6679f677560e5618",
+      "read": "Author-hosted 560-page version, including 2015 reprinting notice, pinned by hash. Theorem 3.43 printed 254/PDF263; Section 4.D printed 440-444/PDF449-453, especially Corollary 4D.9 and Theorem 4D.10, read.",
+      "exact_import": "Oriented Thom class and pair exact sequence; Poincare--Lefschetz duality for the compact four-dimensional fibre core. The ordinary homological tube sequence is derived fibrewise in the note, not confused with Borel--Moore homology. The new linking-functional and monodromy identities are proved by compact chain intersections."
+    },
+    {
+      "author": "Claude Sabbah",
+      "title": "Vanishing Cycles of Polynomial Maps: Topology, Hodge Structure, D-Modules",
+      "url": "https://perso.pages.math.cnrs.fr/users/claude.sabbah/livres/sabbah_nice08.pdf",
+      "cached_file": "moments/vanishing/sources/sabbah_nice_vanishing_cycles_2008.pdf",
+      "sha256": "76fa6071d6383f7f3283598e756aa23fe482c4464b0b06f2a4eeba08c92b290a",
+      "read": "Section 1.3 printed 2/PDF8 and Section 1.4 printed 3/PDF9 read, with earlier source audit retained.",
+      "exact_import": "Smooth affine nearby surfaces have CW dimension at most two; full finite bifurcation set includes infinity. Pair/complement local systems are obtained by the same stratified proper-compactification construction; no tameness or properness of P is assumed."
+    }
+  ],
+  "new_written_arguments": [
+    "For EVERY polynomial H, the actual composite fibre is a disjoint union of primitive fibres; projection of the actual Haar lift gives specified physical primitive continuations on every branch.",
+    "After L turns with L divisible by root multiplicities e_a, tube naturality gives componentwise S_L(A)d_H=S_(L/e_a)(T_a)d_a. Other tubes bound discs in the selected primitive complement, so there is no hidden cross-branch cancellation or extra multiplicity factor.",
+    "Generalized eigenvalue-1 composite motion lies in the sum of primitive eigenvalue-1 full-return blocks. S_k(T) is invertible on a unipotent block. For EVERY eventually pure H(f), all-marker safety is therefore equivalent to all induced primitive projected variations vanishing, without primitive purity.",
+    "Those primitive projected variations vanish iff all ORIGINAL marked primitive Cauchy periods have no integer-exponent logarithms, by regular singularity and full de Rham detection, even if f is not pure.",
+    "If finite local monodromy on the actual Haar orbit span W_f is semisimple at 1, EVERY eventually pure polynomial composite is safe. Unique-centre reflection then completely classifies such composites as H(c)=0 for the unique safe centre, or none if no safe centre exists.",
+    "A finite original-unit jet separates purity from eventual purity uniformly over all degrees of H. Exact cyclic-block controls retain why eventual purity cannot be dropped."
+  ],
+  "essential_boundaries": [
+    "BOTH complete exceptional MZ cases remain OPEN. The W_f hypothesis is NOT proved for all exceptional primitive factors.",
+    "No claim that f-a is pure or eventually pure; no reduction to pure primitive phases. Every polynomial composite remains covered by the exact branch test.",
+    "W_f is the actual full complement Haar monodromy orbit, not just fibre monodromy or an arbitrary fixed lift. All branches and induced physical continuations are retained.",
+    "No universal topology proof is machine verified, no general Betti producer or uniform unit/marker cutoff is computed, and no arbitrary coefficient-ring promotion is claimed.",
+    "The abstract cyclic-block countercontrol is not an actual exceptional phase. No degree/support/prefix campaign or external-review gate is introduced."
+  ]
+}

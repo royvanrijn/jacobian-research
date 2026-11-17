@@ -1,0 +1,544 @@
+FACE_SAME_START
+FACE_SAME_FORWARD
+0
+FACE_SAME_REVERSE
+0
+FACE_SAME_I_HILBERT
+1,
+0,
+0,
+-1,
+0,
+0,
+-1,
+0,
+0,
+0,
+0,
+0,
+1,
+1,
+0,
+0,
+-1,
+0 
+FACE_SAME_K_HILBERT
+1,
+0,
+0,
+-1,
+0,
+0,
+-1,
+0,
+0,
+0,
+0,
+0,
+1,
+0,
+3,
+-3,
+0 
+FACE_SAME_SAT_HILBERT
+1,
+0,
+-1,
+-1,
+0,
+1,
+0 
+// ** redefining weights (intvec weights=1,1,1,1;) /home/royvanrijn/src/jacobian-research/research/moments/vanishing/binary_factor_torsion.sing:16
+EDGE_FULL_PAIR_START
+EDGE_FULL_PAIR_FORWARD
+0
+EDGE_FULL_PAIR_REVERSE
+0
+EDGE_FULL_PAIR_I_HILBERT
+1,
+0,
+0,
+0,
+-1,
+0,
+0,
+0,
+-1,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+1,
+0,
+3,
+4,
+-12,
+4,
+1,
+0 
+EDGE_FULL_PAIR_K_HILBERT
+1,
+0,
+0,
+0,
+-1,
+0,
+0,
+0,
+-1,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+1,
+-4,
+18,
+-16,
+-2,
+4,
+0 
+// ** redefining blowup0 (LIB "elim.lib";) /home/royvanrijn/src/jacobian-research/research/moments/vanishing/binary_factor_torsion.sing:21
+// ** redefining blowup0 (LIB "elim.lib";) /home/royvanrijn/src/jacobian-research/research/moments/vanishing/binary_factor_torsion.sing:21
+// ** redefining elimRing (LIB "elim.lib";) /home/royvanrijn/src/jacobian-research/research/moments/vanishing/binary_factor_torsion.sing:21
+// ** redefining elimRing (LIB "elim.lib";) /home/royvanrijn/src/jacobian-research/research/moments/vanishing/binary_factor_torsion.sing:21
+// ** redefining elim (LIB "elim.lib";) /home/royvanrijn/src/jacobian-research/research/moments/vanishing/binary_factor_torsion.sing:21
+// ** redefining elim (LIB "elim.lib";) /home/royvanrijn/src/jacobian-research/research/moments/vanishing/binary_factor_torsion.sing:21
+// ** redefining elim2 (LIB "elim.lib";) /home/royvanrijn/src/jacobian-research/research/moments/vanishing/binary_factor_torsion.sing:21
+// ** redefining elim2 (LIB "elim.lib";) /home/royvanrijn/src/jacobian-research/research/moments/vanishing/binary_factor_torsion.sing:21
+// ** redefining elim1 (LIB "elim.lib";) /home/royvanrijn/src/jacobian-research/research/moments/vanishing/binary_factor_torsion.sing:21
+// ** redefining elim1 (LIB "elim.lib";) /home/royvanrijn/src/jacobian-research/research/moments/vanishing/binary_factor_torsion.sing:21
+// ** redefining nselect (LIB "elim.lib";) /home/royvanrijn/src/jacobian-research/research/moments/vanishing/binary_factor_torsion.sing:21
+// ** redefining nselect (LIB "elim.lib";) /home/royvanrijn/src/jacobian-research/research/moments/vanishing/binary_factor_torsion.sing:21
+// ** redefining sat (LIB "elim.lib";) /home/royvanrijn/src/jacobian-research/research/moments/vanishing/binary_factor_torsion.sing:21
+// ** redefining sat (LIB "elim.lib";) /home/royvanrijn/src/jacobian-research/research/moments/vanishing/binary_factor_torsion.sing:21
+// ** redefining sat_with_exp (LIB "elim.lib";) /home/royvanrijn/src/jacobian-research/research/moments/vanishing/binary_factor_torsion.sing:21
+// ** redefining sat_with_exp (LIB "elim.lib";) /home/royvanrijn/src/jacobian-research/research/moments/vanishing/binary_factor_torsion.sing:21
+// ** redefining select (LIB "elim.lib";) /home/royvanrijn/src/jacobian-research/research/moments/vanishing/binary_factor_torsion.sing:21
+// ** redefining select (LIB "elim.lib";) /home/royvanrijn/src/jacobian-research/research/moments/vanishing/binary_factor_torsion.sing:21
+// ** redefining select1 (LIB "elim.lib";) /home/royvanrijn/src/jacobian-research/research/moments/vanishing/binary_factor_torsion.sing:21
+// ** redefining select1 (LIB "elim.lib";) /home/royvanrijn/src/jacobian-research/research/moments/vanishing/binary_factor_torsion.sing:21
+EDGE_FULL_PAIR_SAT_HILBERT
+1,
+0,
+0,
+0,
+-1,
+0,
+0,
+0,
+-1,
+0,
+0,
+0,
+-1,
+-4,
+12,
+-4,
+-2,
+0 
+// ** redefining weights (intvec weights=1,1,1,2;) /home/royvanrijn/src/jacobian-research/research/moments/vanishing/binary_factor_torsion.sing:30
+EDGE_SAME_START
+EDGE_SAME_FORWARD
+0
+EDGE_SAME_REVERSE
+0
+EDGE_SAME_I_HILBERT
+1,
+0,
+0,
+0,
+0,
+-1,
+0,
+0,
+0,
+0,
+-1,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+1,
+1,
+0,
+3,
+-3,
+-3,
+2,
+0 
+EDGE_SAME_K_HILBERT
+1,
+0,
+0,
+0,
+0,
+-1,
+0,
+0,
+0,
+0,
+-1,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+1,
+-1,
+6,
+-1,
+-7,
+3,
+0 
+// ** redefining blowup0 (LIB "elim.lib";) /home/royvanrijn/src/jacobian-research/research/moments/vanishing/binary_factor_torsion.sing:35
+// ** redefining blowup0 (LIB "elim.lib";) /home/royvanrijn/src/jacobian-research/research/moments/vanishing/binary_factor_torsion.sing:35
+// ** redefining elimRing (LIB "elim.lib";) /home/royvanrijn/src/jacobian-research/research/moments/vanishing/binary_factor_torsion.sing:35
+// ** redefining elimRing (LIB "elim.lib";) /home/royvanrijn/src/jacobian-research/research/moments/vanishing/binary_factor_torsion.sing:35
+// ** redefining elim (LIB "elim.lib";) /home/royvanrijn/src/jacobian-research/research/moments/vanishing/binary_factor_torsion.sing:35
+// ** redefining elim (LIB "elim.lib";) /home/royvanrijn/src/jacobian-research/research/moments/vanishing/binary_factor_torsion.sing:35
+// ** redefining elim2 (LIB "elim.lib";) /home/royvanrijn/src/jacobian-research/research/moments/vanishing/binary_factor_torsion.sing:35
+// ** redefining elim2 (LIB "elim.lib";) /home/royvanrijn/src/jacobian-research/research/moments/vanishing/binary_factor_torsion.sing:35
+// ** redefining elim1 (LIB "elim.lib";) /home/royvanrijn/src/jacobian-research/research/moments/vanishing/binary_factor_torsion.sing:35
+// ** redefining elim1 (LIB "elim.lib";) /home/royvanrijn/src/jacobian-research/research/moments/vanishing/binary_factor_torsion.sing:35
+// ** redefining nselect (LIB "elim.lib";) /home/royvanrijn/src/jacobian-research/research/moments/vanishing/binary_factor_torsion.sing:35
+// ** redefining nselect (LIB "elim.lib";) /home/royvanrijn/src/jacobian-research/research/moments/vanishing/binary_factor_torsion.sing:35
+// ** redefining sat (LIB "elim.lib";) /home/royvanrijn/src/jacobian-research/research/moments/vanishing/binary_factor_torsion.sing:35
+// ** redefining sat (LIB "elim.lib";) /home/royvanrijn/src/jacobian-research/research/moments/vanishing/binary_factor_torsion.sing:35
+// ** redefining sat_with_exp (LIB "elim.lib";) /home/royvanrijn/src/jacobian-research/research/moments/vanishing/binary_factor_torsion.sing:35
+// ** redefining sat_with_exp (LIB "elim.lib";) /home/royvanrijn/src/jacobian-research/research/moments/vanishing/binary_factor_torsion.sing:35
+// ** redefining select (LIB "elim.lib";) /home/royvanrijn/src/jacobian-research/research/moments/vanishing/binary_factor_torsion.sing:35
+// ** redefining select (LIB "elim.lib";) /home/royvanrijn/src/jacobian-research/research/moments/vanishing/binary_factor_torsion.sing:35
+// ** redefining select1 (LIB "elim.lib";) /home/royvanrijn/src/jacobian-research/research/moments/vanishing/binary_factor_torsion.sing:35
+// ** redefining select1 (LIB "elim.lib";) /home/royvanrijn/src/jacobian-research/research/moments/vanishing/binary_factor_torsion.sing:35
+EDGE_SAME_SAT_HILBERT
+1,
+0,
+0,
+0,
+0,
+-1,
+0,
+0,
+0,
+0,
+-1,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+-1,
+1,
+2,
+2,
+-1,
+-2,
+0 
+// ** redefining weights (intvec weights=1,1,1,2,2;) /home/royvanrijn/src/jacobian-research/research/moments/vanishing/binary_factor_torsion.sing:44
+VERTEX_START
+VERTEX_FORWARD
+0
+VERTEX_REVERSE
+0
+VERTEX_I_HILBERT
+1,
+0,
+0,
+0,
+0,
+0,
+0,
+-1,
+0,
+0,
+0,
+0,
+0,
+0,
+-1,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+1,
+0,
+0,
+0,
+0,
+4,
+4,
+-2,
+-13,
+1,
+8,
+-2,
+0 
+VERTEX_K_HILBERT
+1,
+0,
+0,
+0,
+0,
+0,
+0,
+-1,
+0,
+0,
+0,
+0,
+0,
+0,
+-1,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+1,
+0,
+0,
+0,
+-2,
+10,
+2,
+-12,
+-3,
+3,
+2,
+0 
+// ** redefining blowup0 (LIB "elim.lib";) /home/royvanrijn/src/jacobian-research/research/moments/vanishing/binary_factor_torsion.sing:49
+// ** redefining blowup0 (LIB "elim.lib";) /home/royvanrijn/src/jacobian-research/research/moments/vanishing/binary_factor_torsion.sing:49
+// ** redefining elimRing (LIB "elim.lib";) /home/royvanrijn/src/jacobian-research/research/moments/vanishing/binary_factor_torsion.sing:49
+// ** redefining elimRing (LIB "elim.lib";) /home/royvanrijn/src/jacobian-research/research/moments/vanishing/binary_factor_torsion.sing:49
+// ** redefining elim (LIB "elim.lib";) /home/royvanrijn/src/jacobian-research/research/moments/vanishing/binary_factor_torsion.sing:49
+// ** redefining elim (LIB "elim.lib";) /home/royvanrijn/src/jacobian-research/research/moments/vanishing/binary_factor_torsion.sing:49
+// ** redefining elim2 (LIB "elim.lib";) /home/royvanrijn/src/jacobian-research/research/moments/vanishing/binary_factor_torsion.sing:49
+// ** redefining elim2 (LIB "elim.lib";) /home/royvanrijn/src/jacobian-research/research/moments/vanishing/binary_factor_torsion.sing:49
+// ** redefining elim1 (LIB "elim.lib";) /home/royvanrijn/src/jacobian-research/research/moments/vanishing/binary_factor_torsion.sing:49
+// ** redefining elim1 (LIB "elim.lib";) /home/royvanrijn/src/jacobian-research/research/moments/vanishing/binary_factor_torsion.sing:49
+// ** redefining nselect (LIB "elim.lib";) /home/royvanrijn/src/jacobian-research/research/moments/vanishing/binary_factor_torsion.sing:49
+// ** redefining nselect (LIB "elim.lib";) /home/royvanrijn/src/jacobian-research/research/moments/vanishing/binary_factor_torsion.sing:49
+// ** redefining sat (LIB "elim.lib";) /home/royvanrijn/src/jacobian-research/research/moments/vanishing/binary_factor_torsion.sing:49
+// ** redefining sat (LIB "elim.lib";) /home/royvanrijn/src/jacobian-research/research/moments/vanishing/binary_factor_torsion.sing:49
+// ** redefining sat_with_exp (LIB "elim.lib";) /home/royvanrijn/src/jacobian-research/research/moments/vanishing/binary_factor_torsion.sing:49
+// ** redefining sat_with_exp (LIB "elim.lib";) /home/royvanrijn/src/jacobian-research/research/moments/vanishing/binary_factor_torsion.sing:49
+// ** redefining select (LIB "elim.lib";) /home/royvanrijn/src/jacobian-research/research/moments/vanishing/binary_factor_torsion.sing:49
+// ** redefining select (LIB "elim.lib";) /home/royvanrijn/src/jacobian-research/research/moments/vanishing/binary_factor_torsion.sing:49
+// ** redefining select1 (LIB "elim.lib";) /home/royvanrijn/src/jacobian-research/research/moments/vanishing/binary_factor_torsion.sing:49
+// ** redefining select1 (LIB "elim.lib";) /home/royvanrijn/src/jacobian-research/research/moments/vanishing/binary_factor_torsion.sing:49
+VERTEX_SAT_HILBERT
+1,
+0,
+0,
+0,
+0,
+0,
+0,
+-1,
+0,
+0,
+0,
+0,
+0,
+0,
+-1,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+1,
+0,
+0,
+0,
+-2,
+10,
+2,
+-12,
+-3,
+3,
+2,
+0 
+// ** redefining weights (intvec weights=1,1,1,1,1,1;) /home/royvanrijn/src/jacobian-research/research/moments/vanishing/binary_factor_torsion.sing:59
+ORIGIN_START
+ORIGIN_FORWARD
+0
+ORIGIN_REVERSE
+0
+ORIGIN_I_HILBERT
+1,
+0,
+0,
+0,
+0,
+0,
+-1,
+0,
+0,
+0,
+0,
+0,
+-1,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+1,
+0,
+0,
+0,
+0,
+0,
+12,
+6,
+-45,
+20,
+21,
+-18,
+4,
+0 
+ORIGIN_K_HILBERT
+1,
+0,
+0,
+0,
+0,
+0,
+-1,
+0,
+0,
+0,
+0,
+0,
+-1,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+1,
+0,
+0,
+0,
+0,
+0,
+8,
+30,
+-105,
+100,
+-39,
+6,
+0 
+// ** redefining blowup0 (LIB "elim.lib";) /home/royvanrijn/src/jacobian-research/research/moments/vanishing/binary_factor_torsion.sing:64
+// ** redefining blowup0 (LIB "elim.lib";) /home/royvanrijn/src/jacobian-research/research/moments/vanishing/binary_factor_torsion.sing:64
+// ** redefining elimRing (LIB "elim.lib";) /home/royvanrijn/src/jacobian-research/research/moments/vanishing/binary_factor_torsion.sing:64
+// ** redefining elimRing (LIB "elim.lib";) /home/royvanrijn/src/jacobian-research/research/moments/vanishing/binary_factor_torsion.sing:64
+// ** redefining elim (LIB "elim.lib";) /home/royvanrijn/src/jacobian-research/research/moments/vanishing/binary_factor_torsion.sing:64
+// ** redefining elim (LIB "elim.lib";) /home/royvanrijn/src/jacobian-research/research/moments/vanishing/binary_factor_torsion.sing:64
+// ** redefining elim2 (LIB "elim.lib";) /home/royvanrijn/src/jacobian-research/research/moments/vanishing/binary_factor_torsion.sing:64
+// ** redefining elim2 (LIB "elim.lib";) /home/royvanrijn/src/jacobian-research/research/moments/vanishing/binary_factor_torsion.sing:64
+// ** redefining elim1 (LIB "elim.lib";) /home/royvanrijn/src/jacobian-research/research/moments/vanishing/binary_factor_torsion.sing:64
+// ** redefining elim1 (LIB "elim.lib";) /home/royvanrijn/src/jacobian-research/research/moments/vanishing/binary_factor_torsion.sing:64
+// ** redefining nselect (LIB "elim.lib";) /home/royvanrijn/src/jacobian-research/research/moments/vanishing/binary_factor_torsion.sing:64
+// ** redefining nselect (LIB "elim.lib";) /home/royvanrijn/src/jacobian-research/research/moments/vanishing/binary_factor_torsion.sing:64
+// ** redefining sat (LIB "elim.lib";) /home/royvanrijn/src/jacobian-research/research/moments/vanishing/binary_factor_torsion.sing:64
+// ** redefining sat (LIB "elim.lib";) /home/royvanrijn/src/jacobian-research/research/moments/vanishing/binary_factor_torsion.sing:64
+// ** redefining sat_with_exp (LIB "elim.lib";) /home/royvanrijn/src/jacobian-research/research/moments/vanishing/binary_factor_torsion.sing:64
+// ** redefining sat_with_exp (LIB "elim.lib";) /home/royvanrijn/src/jacobian-research/research/moments/vanishing/binary_factor_torsion.sing:64
+// ** redefining select (LIB "elim.lib";) /home/royvanrijn/src/jacobian-research/research/moments/vanishing/binary_factor_torsion.sing:64
+// ** redefining select (LIB "elim.lib";) /home/royvanrijn/src/jacobian-research/research/moments/vanishing/binary_factor_torsion.sing:64
+// ** redefining select1 (LIB "elim.lib";) /home/royvanrijn/src/jacobian-research/research/moments/vanishing/binary_factor_torsion.sing:64
+// ** redefining select1 (LIB "elim.lib";) /home/royvanrijn/src/jacobian-research/research/moments/vanishing/binary_factor_torsion.sing:64
+ORIGIN_SAT_HILBERT
+1,
+0,
+0,
+0,
+0,
+0,
+-1,
+0,
+0,
+0,
+0,
+0,
+-1,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+1,
+0,
+0,
+0,
+-3,
+12,
+-1,
+0,
+-30,
+28,
+-6,
+0 
+END

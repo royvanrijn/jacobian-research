@@ -1,0 +1,245 @@
+{
+  "date": "2026-11-15",
+  "canonical_proof": "moments/vanishing/HOLONOMIC_SOURCES_AND_CUTOFF_LOCI.md",
+  "canonical_proof_sha256": "667d72556c1501ae445742be48463472a687cb24acec54653d34275f5c00c9d0",
+  "claims": [
+    "MVHOLLINEAR20261115",
+    "GVCLINEARCUTOFF20261115",
+    "MVLINEARIDEAL20261115",
+    "MVSAFELOCUS20261115"
+  ],
+  "checker": "moments/vanishing/verify_holonomic_source_cutoffs.py",
+  "checker_sha256": "374fe5b746747ac30f24f22c6ffff66534d08ccb29f3436a2a797424e6ca26fa",
+  "receipt": "moments/vanishing/holonomic_source_cutoff_verification.json",
+  "receipt_sha256": "1e0b49904c20bc163f67858643d172456fd9c9b29a83057875b6ebc014661b0a",
+  "prior_frontier": "moments/vanishing/holonomic_source_cutoff_preupdate_20261115.json",
+  "retained_proof_hashes": {
+    "ALGEBRAIC_SPECIALIZATION_AND_FINITE_FAMILY_DECISION.md": "b4975f1c9dd56dd66577af640d6a75044fcbb2e7f1a20e0b9fe0fc73b3c3ef87",
+    "algebraic_specialization_source_audit.json": "f590f7350a1119832ad61e5d8458f1d653b11392af3190e47ba5bbca2598c7b1",
+    "CONSTANT_COEFFICIENT_OPERATOR_DECISION.md": "46e5f727ff999bb243adab5584697db112ac63b6503c0b896d05ae405a8613db",
+    "operator_gaussian_laurent_source_audit.json": "9c803d013d8b12332f71f5ab60b4443f9c09fdaed330fb032279337b55be0b85",
+    "RESONANT_MULTIPLIERS_AND_UNIFORM_CHARTS.md": "0f1e12d909e2c916e7c49c92865e3ac37b0178ff6add865b34cd9f33fddb509e",
+    "LINEAR_MIXED_CUTOFF_FROM_B_FUNCTION.md": "9c5842fe7f67dadc417b6c259f981caed14fc3d44f47401f572d49bcfc433ad1",
+    "FINITE_MULTIPLIER_MIXED_DECISION.md": "4dc09aede00f0493238f528bf2b6a7320b3480fb45dd77c1b9ccedf22a27a56e",
+    "PRIMARY_THICKENING_MOMENT_IDEAL_ALGORITHM.md": "184f834e9955a536a18637f1cbb85066857a4e6df971fb95974ebd8e3e2360d9",
+    "GENERIC_POINT_FINITE_MOMENT_ALGORITHM.md": "3529684d1c4b173beb6b3ee9f2dc6cc580dbec3f4fb0c1785e5b8848eac26900",
+    "RANK_ONE_TWO_BRANCH_GLOBAL94.md": "170efb4905b486a695e4924e4c4dbdeb67df8dd48c7f1e4f519dd5259743f989"
+  },
+  "retained_frontier_hashes": {
+    "foundations/extended-geometry/DVORSKY_GVC5_COUNTEREXAMPLE.md": "1fa06c3d478fe9c04e3b22c3aaa62ad6fc43c01a83e27a62f34b2fb979d3497b",
+    "foundations/extended-geometry/DVORSKY_ONE_PAIR_SCHUR_OBSTRUCTION.md": "6a9f9186d130dcdf5653a105aea1e2119110aebd80cf887243baf10bbf803994",
+    "foundations/extended-geometry/GVC3_POWER_TAIL_AND_MINIMUM_FRONTIER.md": "5fff1bb5aae08c4bb968d7b4945086944d698a54fcc7bd08c8f9fdcd014b474f",
+    "foundations/extended-geometry/TWO_PAIR_IMAGE_MATHIEU_COUNTEREXAMPLE.md": "7f7c78a729910136bf5ca28eceda86778e73309bde4e9752f1cd8da4354a00aa",
+    "foundations/extended-geometry/TWO_PAIR_SIC_BIDEGREE33_FRONTIER.md": "346d8e9da14d7b64f2fa01eef95cd65dc4d9870135d8e330823d4485d22135fa"
+  },
+  "primary_scope_audit": [
+    {
+      "url": "https://arxiv.org/abs/2506.22011",
+      "version_url": "https://arxiv.org/html/2506.22011v2",
+      "paper": "Chen--Chyzak--Ma--Zhu,Single-exponential bounds for diagonals of D-finite power series",
+      "version": "v2,23January2026,latest listed revision;v1 is27June2025",
+      "front_matter": "HTML template says December2025,Science China Mathematics manuscript for review,with placeholder DOI/volume;not treated as a published journal citation",
+      "read": "Section2 definitions;section3 theorems3.1/3.2 statements,selected supporting lemmas,structured-operator theorem3.25 and proof3.26,full diagonal proof3.27;section4 quantitative theorem statements/intro only,not complete quantitative proofs",
+      "retained_file": "moments/vanishing/sources/chen_chyzak_ma_zhu_diagonals_2506_22011v2.html",
+      "sha256": "a5dcf0b75db63de917b654d2c8430524bf05c34bdc9cfc747c0563fbb29a003e",
+      "use": "Formal partial-diagonal closure of multivariate D-finite series and finite structured-operator construction;paired diagonals give Hadamard filtering",
+      "boundary": "Classical closure theorem is the imported fact;no end-to-end moment algorithm complexity bound or Gaussian safety theorem is imported"
+    },
+    {
+      "url": "https://www.lab.twcu.ac.jp/oaku/MSJSI2015oakuLecture.pdf",
+      "paper": "Oaku,Algorithms for D-modules,integration,and generalized functions with applications to statistics,ASPM77(2018),253--352",
+      "version": "Retained enlarged2015lecture source with14May2018front matter",
+      "read": "Fresh recheck pp311--314:cyclic module setup,theorem5.4 full statement/proof and algorithm5.6;previous source audit retained the integration framework",
+      "retained_file": "moments/vanishing/sources/oaku_algorithms_statistics_2018.pdf",
+      "sha256": "a52f26dd9ffae381fce7188f5869095491d086347e0854d011ba8278ca4ef2df",
+      "use": "The integration b-function theorem applies to every holonomic cyclic module and yields b(theta)gr0=0,hence a lower-weight lift",
+      "boundary": "Fourier transform here is the algebraic Weyl automorphism,preserving Bernstein filtration;no convergent Fourier integral or analytic boundary theorem is imported"
+    },
+    {
+      "url": "https://www.lab.twcu.ac.jp/oaku/Oaku2013.pdf",
+      "paper": "Oaku,integration author preprint,front matter2May2012",
+      "read": "Previously retained full algebraic integration/localization and finite presentation framework",
+      "retained_file": "moments/vanishing/sources/oaku_integration_author_preprint.pdf",
+      "sha256": "1d28e3f8e19070a2e3883f54b48d2acb4e916f482cb2740f84063b532bf8664a",
+      "use": "Effective holonomic module operations used in source periods and finite-algebra oracles",
+      "boundary": "Previously imported algorithms remain unimplemented locally"
+    }
+  ],
+  "source_recurrence": {
+    "input": "Joint formal holonomic F(t,s)=sum F_alpha(t)s^alpha,with a finite module presentation and F_0=1",
+    "Fourier": "y->D_s,D_y->-s,theta_y=-sumD_y y->E_s",
+    "lift": "(b(E_s)+R)F=0,R=sum c t^k D_t^j s^u D_s^v,|u|-|v|>=1",
+    "coefficient": "b(|alpha|)F_alpha=-sum_alpha>=u c (alpha-u+v)!/(alpha-u)! t^k D_t^j F_(alpha-u+v)",
+    "finite_test": "All original monomial source degrees up to largest nonnegative integer root ofb",
+    "slope": "max(0,max(k-j)/(|u|-|v|),max base degree_t/degree_source)",
+    "conclusion": "All polynomial time coefficients imply a rational linear source-degree bound when F_0=1;otherwise an affine bound",
+    "pointwise_general_holonomicity_insufficient_without_joint_presentation": true
+  },
+  "operator_extension": {
+    "joint_series": "sum Lambda^m(x^alpha P^m)t^m s^alpha/((m!)^2 alpha!)",
+    "period": "CT_v E exp(v lambda(Z)+tP(x+W)/v+s dot(x+W))",
+    "localization": "v inverted;dv/v connection retains-1/v",
+    "all_coefficients_formally_finite": true,
+    "output_x_independent": true,
+    "conclusion": "Every pure-null GVC-safe constant-coefficient pair has rational pair-dependent m>CdegQ cutoff",
+    "all_operator_orders_dimensions_degrees": true,
+    "positive_GVC_claimed": false,
+    "variable_coefficient_extension_claimed": false,
+    "operator_order_reduced": false
+  },
+  "cutoff_ideal": {
+    "input": "Every integerN>=0 and finite rational Gaussian,GVC or full SIC parameter family",
+    "rational_filter": "R_N=t/((1-t)prod_i(1-s_i t^N))",
+    "bad_region": "m>N|alpha|;pure positive coefficients included atalpha0",
+    "operation": "Hadamard product via paired partial diagonals,not a single complete time/source diagonal",
+    "zero_test": "Independent rayt=a0u,s_i=a_i u preserves distinct coefficient monomials;finite rational derivative space gives scalar annihilator",
+    "ordinary_oracle": "Full primary components inject into finite possibly nonreduced algebras;filter each field-vector component;all scalar zeros iff every forbidden coefficient belongs toJ",
+    "termination": "A returned coefficient outsideJ gives strict ordinary ideal ascent;ACC computes full cutoff ideal",
+    "embedded_nilpotents_retained": true,
+    "closed_cutoff_locus_computable": true,
+    "descending_ideal_chain_termination_claimed": false
+  },
+  "uniformity_geometry": {
+    "safe_locus": "S=union_N Z_N,ascending closed prescribed-integer-cutoff loci",
+    "over_C_equivalence": [
+      "S constructible",
+      "S closed",
+      "one uniform finite linear coefficient on all safe points",
+      "S=Z_N for someN"
+    ],
+    "proof": "An open in an irreducible complex variety is not a countable union of proper closed sets;countable-field generic point argument included",
+    "uncountability_required_for_geometry": true,
+    "stabilization_concerns_point_sets_not_ordinary_ideals": true,
+    "supplied_universally_safe_rational_family": "Generic source slopes descend through polynomial tail identities,so a common coefficient is computable even at certificate denominator exceptions",
+    "least_integer_coefficient": "Test prescribedN ideals against the radical of the supplied pure-family ideal up to computed generic maximum",
+    "global_safe_locus_stabilization_proved": false,
+    "safe_exception_classification_proved": false,
+    "ordinary_scheme_thickness_stabilization_proved": false,
+    "general_holonomic_boundary": "H_a=1+s*((1+t)^a-1),I_N=(a(a-1)...(a-N));not a Gaussian,GVC or SIC moment example"
+  },
+  "small_replay": {
+    "completed": true,
+    "date": "2026-11-15",
+    "checker_sha256": "374fe5b746747ac30f24f22c6ffff66534d08ccb29f3436a2a797424e6ca26fa",
+    "software": "SymPy 1.14.0",
+    "original_operator_source_coefficient_checks": 54,
+    "source_b_lift_checks": 9,
+    "source_lowering_recurrence_checks": 8,
+    "non_even_b_sign_mutation_detected": true,
+    "Fourier_ordering_checks": 5,
+    "multivariate_Taylor_extraction_checks": 240,
+    "cone_rational_identity_checks": 576,
+    "strict_cone_boundary_and_zero_slope_checked": true,
+    "paired_partial_diagonal_checks": 105,
+    "complete_diagonal_shortcut_detected": true,
+    "numerical_ray_cancellation_detected": true,
+    "nilpotent_forbidden_coefficient_retained": true,
+    "nonstabilizing_holonomic_control": [
+      {
+        "N": 0,
+        "ordinary_generator": "a",
+        "closed_set": [
+          0
+        ]
+      },
+      {
+        "N": 1,
+        "ordinary_generator": "a**2 - a",
+        "closed_set": [
+          0,
+          1
+        ]
+      },
+      {
+        "N": 2,
+        "ordinary_generator": "a**3 - 3*a**2 + 2*a",
+        "closed_set": [
+          0,
+          1,
+          2
+        ]
+      },
+      {
+        "N": 3,
+        "ordinary_generator": "a**4 - 6*a**3 + 11*a**2 - 6*a",
+        "closed_set": [
+          0,
+          1,
+          2,
+          3
+        ]
+      },
+      {
+        "N": 4,
+        "ordinary_generator": "a**5 - 10*a**4 + 35*a**3 - 50*a**2 + 24*a",
+        "closed_set": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ]
+      },
+      {
+        "N": 5,
+        "ordinary_generator": "a**6 - 15*a**5 + 85*a**4 - 225*a**3 + 274*a**2 - 120*a",
+        "closed_set": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ]
+      }
+    ],
+    "not_claimed_as_Gaussian_operator_or_SIC_model": true,
+    "safe_operator_family_uniform_C": 1,
+    "safe_operator_family_least_integer_C": 1,
+    "zero_parameter_point_least_integer_C": 0,
+    "general_source_Fourier_solver_implemented": false,
+    "general_source_Fourier_solver_executed": false,
+    "general_Hadamard_solver_implemented": false,
+    "general_Hadamard_solver_executed": false,
+    "general_cutoff_ideal_solver_executed": false,
+    "general_family_uniform_solver_executed": false,
+    "universal_proofs_certified_by_checker": false,
+    "global_safe_locus_constructibility_proved": false,
+    "global_safe_subset_uniform_bound_proved": false,
+    "ordinary_ideal_chain_stabilization_claimed": false,
+    "new_SIC33_answer_computed": false,
+    "new_Delta_minimum_computed": false,
+    "numeric_cubic_frontier_changed": false,
+    "operator_order_reduced": false,
+    "independent_replay": false,
+    "external_review": false,
+    "formal_verification": false
+  },
+  "new_external_theorem_imported": true,
+  "external_input": "Classical partial-diagonal/D-finite closure,read in the January2026 Chen--Chyzak--Ma--Zhu revision;retained general Oaku b-function theorem reapplied after algebraic Fourier transform",
+  "fresh_exhaustive_literature_coverage": false,
+  "general_source_Fourier_solver_implemented": false,
+  "general_source_Fourier_solver_executed": false,
+  "general_Hadamard_solver_implemented": false,
+  "general_Hadamard_solver_executed": false,
+  "general_cutoff_ideal_solver_executed": false,
+  "general_family_uniform_solver_executed": false,
+  "universal_proofs_certified_by_checker": false,
+  "global_safe_locus_constructibility_proved": false,
+  "global_safe_subset_uniform_bound_proved": false,
+  "ordinary_ideal_chain_stabilization_claimed": false,
+  "new_SIC33_answer_computed": false,
+  "new_Delta_minimum_computed": false,
+  "numeric_cubic_frontier_changed": false,
+  "operator_order_reduced": false,
+  "independent_replay": false,
+  "external_review": false,
+  "formal_verification": false,
+  "remaining": [
+    "Independent review of Fourier-source recurrence,joint Laurent-source formal finiteness,Hadamard finite-algebra oracle and uniformity/constructibility equivalence",
+    "General Fourier/source/diagonal/ordinary-cutoff-ideal and uniform-family algorithms are not implemented or executed",
+    "Global safe-locus closedness/constructibility/uniformity is now one equivalent stabilization problem,still open for genuine moment families",
+    "Full-image kernel/pole/irregular geometry,normalized higher-rank G,higher radial degree/mixed signs and valid order compression remain open",
+    "Dense SIC33,leastDelta power,particular large schemes,cubic optimality and older analytic independent review remain open"
+  ]
+}

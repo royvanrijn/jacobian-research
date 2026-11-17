@@ -1,0 +1,1535 @@
+{
+  "date": "2026-11-17",
+  "goal_status": "active",
+  "goal_complete": false,
+  "previous_goal_turn_classification": "progress",
+  "previous_progress_evidence": [
+    "FINAL_FIVE_DOUBLE_COVERS_SHARP_FOUR.tex",
+    "final_five_cover_verification.json",
+    "final_five_source_audit.json"
+  ],
+  "this_turn_classification": "progress",
+  "completion_audit": {
+    "full_MRC_proof_or_counterexample": "NOT ACHIEVED; OP-MRC is open",
+    "exhaustive_literature_and_source_audit": "INCOMPLETE; broad46-reference map,18 frozen main snapshots and separately sealed supplementary source reads; original16known-family membership now established through AFW15/BJW18, now including primary ATLAS A5 and L32 representation lists. Classification theorems and standard cross-characteristic reduction are explicit imports; supplied modular models are checked by full matrix-algebra spans. Original Dutra gap remains checked with no affected known-family dependency. Pinned external GL4 independent-direction/det guard and bounded random three-seed search inspected; this concerns coverage, not validity of the243 certificates. Cornwell torus/maximal-braid-rank proofs and needed GGLW one-step/peripheral/iterable arguments are read; full recent papers, original Hall/LM/orbifold and broad priority audits remain open",
+    "construct_representations_and_matching_upper_bounds": "ACHIEVED for known-family controls,4earlier named simple3cover cases and all16original-target double-cover rank3 cases with individual upper4 traces. Total20named panel equalities proved here. These use explicit classical topology/rank imports and are unformalized/externally unreviewed. FullMRC remains open The four seeds now also give four explicit infinite1+6N twist families, with finite75point block actions, uniform4seed upper induction and strictly growing determinants. The uniform proof is distinct from the12 finite input samples.",
+    "new_previously_unresolved_knot_case": "NOT ESTABLISHED. All16original targets are now proved members of the existing BJW18 graph-cover MRC family using AFW15 closed rigidity; they are not cases outside known MRC families. Twenty explicit named equalities remain certified here. Exact named bridge/rank computational priority and the4earlier sharp seeds known-family scope remain UNESTABLISHED",
+    "bridge_unpublished_quadratic_argument": "ACHIEVED through signed lifts, all-field nullity, radical towers and cover homology/rank. The rank2-form part is now characterized exactly: for a fixed S3 colouring and simple3cover Y, dimension k exists iff b1(Y;F2)>=k-1. Two S4 kernels over the same S3 kernel force lower4. Every transitive rank2 image has order24*8^(k-2). This gives a construction and exact stopping condition, but no new open knot or universal MRC proof. Earlier formal icosahedral deformation boundaries retained",
+    "test_if_affine_criterion_can_solve_full_goal": "UNIVERSALITY EXCLUDED on the stated infinite torus-knot family; other methods remain necessary"
+  },
+  "verified_controls": {
+    "exhaustive_three_by_three_binary_matrices": 512,
+    "relator_word_sign_cases_through_length_six": 10544,
+    "exhaustive_connected_simple_signed_graphs_n3_n4": 644,
+    "parallel_edge_signings": 504,
+    "independent_group_enumerations": [
+      {
+        "degree": 3,
+        "permutation_group_order": 24
+      },
+      {
+        "degree": 4,
+        "permutation_group_order": 192
+      },
+      {
+        "degree": 5,
+        "permutation_group_order": 1920
+      }
+    ],
+    "invalid_symmetric_relator_rejected": true
+  },
+  "primary_snapshots_hash_checked": 18,
+  "official_repository_inputs_hash_checked": 12,
+  "lift_dimension_progress": {
+    "uniform_counting_lower_bound": "meridional rank at least full signed-lift dimension ell",
+    "S4_affine_realization": "2^(ell-1) points, form rank2, image order24*2^(3*(ell-3))",
+    "independent_small_group_orders": [
+      {
+        "bound": 3,
+        "sheets": 4,
+        "group_order": 24
+      },
+      {
+        "bound": 4,
+        "sheets": 8,
+        "group_order": 192
+      },
+      {
+        "bound": 5,
+        "sheets": 16,
+        "group_order": 1536
+      }
+    ],
+    "frozen_panel_cases_independently_replayed": 16,
+    "panel_bounds": "Binary coefficients only: lower4, upper5 under every S3/S4 colouring. The all-characteristic extension now reaches sharp5 over F5; see all_characteristic_progress",
+    "new_previously_unresolved_knot_case": false,
+    "scope": "The panel's lack of sharp finite Coxeter hits does not establish otherwise-unresolved MRC status. Uniform theorems are written proofs, not formally verified."
+  },
+  "PDF_sha256": {
+    "ALL_CHARACTERISTIC_LIFTS.pdf": "82f75934dbe2162048e1aaefacc0d7dbc51c7395ac2b367e955f11a5c1b3d36f",
+    "AUGMENTATION_COVER_HOMOLOGY.pdf": "9c9102e2283477a0c3d69d3a8031e2ef48977fe3d9a37f67e606a23dbdc77164",
+    "BRANCHED_COVER_LIFT_BOUNDS.pdf": "ae32f64737a1f506ce91003371cc2972be31598fb6aaf962aba9025934294d31",
+    "COMPACT_DOUBLE_COVER_PRESENTATIONS.pdf": "3904f2c1ca28a864b14be6673281f122453b4370e8c62bf0f554e01d6012b6b7",
+    "FINAL_FIVE_DOUBLE_COVERS_SHARP_FOUR.pdf": "835f0244dc44b7de61d4ce4e3df6bd2ae6bcf75b83f6b79d93228c9d6ef76922",
+    "FOUR_PIECE_DOUBLE_COVERS_SHARP_FOUR.pdf": "c6d687a3fceb6d0f7f2c19ef28fe7ea233ee9de7ee18c5c1cd212a899c0ca87e",
+    "GL3_QUOTIENTS_AND_SINGULAR_AFFINE_CERTIFICATES.pdf": "d173145069f855c0230eb99016035736d6c6ca427d3c89914435901bb855cae1",
+    "ICOSAHEDRAL_LIFTS_AND_QUADRATIC_COEFFICIENTS.pdf": "355dca8e84b43a12b46f523d70551a0b992e40fe467b9c4b3af9015621bb80a3",
+    "JOINT_SIMPLE_QUOTIENT_KERNELS.pdf": "23bc3bd828b5434c0dee42dc0973e14b6b7b87270fd7923addd03faac63d2055",
+    "LIFT_DIMENSION_AND_RADICAL_TOWERS.pdf": "996a6a5068f908eddd82fcdde6c32e6b4f0ee5531ab6702859088d6439366aa5",
+    "LITERATURE.pdf": "d76c27d2dc4f8f8a3746c01cdd1c5c0290ce44dab9233fde606b6a31ef10a94a",
+    "MERIDIAN_DEFORMATIONS_AND_STABILIZATION.pdf": "0db78b5aa7639dfa4b884779caa58ad5bef197fa9d47781bd3461d9c6b12627f",
+    "MUTATION_COMMON_DOUBLE_COVERS.pdf": "2a61a2aed8cc50e038408d996969c6f72dedf79282657bf90c54174e931fbfa2",
+    "ORIGINAL_SIXTEEN_KNOWN_GRAPH_COVER_FAMILY.pdf": "d3c95f6375a9135b9fe6a10d48892d140ec58c253c7f47924ea7dd6dc726fe5d",
+    "PERIODIC_TWIST_FAMILIES.pdf": "bc6ef3858d92f2ebfc29a2b96bd6f69c5a65e9cb1d0210dbc0af29333c3f12c6",
+    "PERMUTATION_INDEX_GATE.pdf": "41d1402c49bdaf13cd9abe37a5a2318d11f7c646a03898bb8db3e6f3e93b4c84",
+    "PROJECTIVE_THIRTEEN_COVER_HOMOLOGY.pdf": "8b27b880c20663ba7a6e882171c33437aba3842f6fefa11de167553dcb5dc37e",
+    "PROOF.pdf": "2468086b2d988434566a00f2b6d996049b48d7624596ea2f906b56e0eea52dbf",
+    "RANK_TWO_AFFINE_EQUIVALENCE.pdf": "9c0457d4031627af34c945b685bf862a02833691c60c155bc8d1da6c6cbd29b0",
+    "SIMPLE_COVER_RANK_ADDITIVITY.pdf": "62a1524cab1f1c686b27c3486968bef6bdbcd2c852e5e3e691c17267acf992ab",
+    "SIMPLE_MODULE_BOUNDS_AND_A5_EXHAUSTION.pdf": "c062f50ce70288ee149fe9379d94770d47b98fac1032f21f469f2ad8ec06aa96",
+    "SIX_POINT_COVERS_AND_FORMAL_ORTHOGONALITY.pdf": "7835403cdb99af3b871724eb0e4c72e704a8d3d2c7511235f09595de58570ff6",
+    "TERNARY_AFFINE_AND_COVER_CERTIFICATES.pdf": "534b2d98f12bcb2e53ba7104cc7c4d16caad31d82c3b35bea4d9428fdfc8f02a",
+    "THREE_PIECE_DOUBLE_COVERS_SHARP_FOUR.pdf": "0d3443e84d2cc9b0bd2644f29e40b644c060e2da523ee821dfcccf3620b30dbb",
+    "TORUS_WHITEHEAD_PERIPHERAL_CURVES.pdf": "3b228543f08a380fe2a0659d5cc8b5f329173ff03c5de59af534af522434de4b",
+    "TREFOIL_AMALGAMS_SHARP_FOUR.pdf": "bb2eae55e1afe7d5db502550958a021bae38c6e51806fc16119df1e1923da14a"
+  },
+  "cross_programme_handoff": {
+    "review": "CROSS_PROGRAMME_SCOPE.json",
+    "centralizer_lemma": "Written group argument audited: natural H_q centralizer is exactly constant radical translations (C2)^q",
+    "surface_exclusion": "Retained conditionally with extra Euler, exact-volume and whole-plane hypotheses; full geometric proof not independently adopted here",
+    "knot_targets_removed": false
+  },
+  "all_characteristic_progress": {
+    "uniform_bound": "mr at least dim Z over every field; exact all-characteristic maximum is number of columns minus unit Smith factors",
+    "sharp_source_table_diagrams": 16,
+    "sharp_bounds": "mr=bridge=5 via F5 lifts and five-seed upper certificates",
+    "sharp_case_novelty": "EXCLUDED for this16-case panel: all independently identified five-noninteger-tangle Montesinos, covered by Boileau-Zieschang1985",
+    "independent_lift_matrices": 512,
+    "smith_gcd_of_minors_controls": 625,
+    "current13_panel": "Same first16 now have all symmetric degrees/all fields excluded as a sharp root-lift route: maximum bound2. The original binary common-form affine criterion is impossible in every dimension; see branched_cover_progress",
+    "October_release_algebra_and_upper_certificates_independently_replayed": 243,
+    "October_release_named_census_matches": 243,
+    "KnotInfo_snapshots_checked": [
+      "2026.10.5",
+      "2026.11.2"
+    ],
+    "Montesinos_named_certificate_transfers": 16,
+    "independent_Montesinos_tangle_constructions": 16,
+    "parabolic_panel": "Same16 unresolved13crossing targets, complete normalized noncommuting SL2 transvection classes in fields3,5,7: only root-lift dimensions2 or3, no sharp4. Commuting families have dimension1. Separate matrix/dense-affine replay passes; PD parser shared. Other fields untested",
+    "binary_realization_of_F5_lifts": "NOT ASSERTED"
+  },
+  "branched_cover_progress": {
+    "uniform_rank_bound": "mr(K)>=r-1+rank pi1(Y_phi) for the simple r-sheet transposition branched cover",
+    "uniform_homology_identity": "dim Z_phi(F)=r-1+dim H1(Y_phi;F); nonunit integer Smith factors equal H1 torsion factors, including characteristics dividing r",
+    "nonabelian_count": "admissible A wreath lifts=|A|^(r-1)*|Hom(pi1 Y,A)|; r2 Kelly-Wada core-group precedent credited",
+    "sharpness_gate": "rank pi1(Y)>=b-r+1 suffices with b-bridge upper certificate; rank=genus and cover maximal genus not assumed",
+    "full_directed_edge_homology_controls": 9,
+    "known_sharp_control": "15a1381 S4 cover H1=Z+Z/5 explains characteristic5 improvement",
+    "current13_all_degrees_fields": "Bridge<=4 forces degree<=5. S3/S4/S5 have no base; S2 Smith gives maximum nullity2 over every field on all16 cases",
+    "current13_original_binary_all_dimensions": "EXCLUDED: k+1<=mr<=b<=4 implies k<=3, nonzero alternating form rank2, forcing absent S3 quotient",
+    "correction": "Earlier suggestion of higher-rank binary forms on these targets withdrawn",
+    "A5_core_counts": {
+      "1": 4,
+      "121": 8,
+      "241": 4
+    },
+    "A5_sharp_four_threshold": "Raw count: >3600 normalized colourings; no hit. Stronger same-cover kernel criterion: >=20 distinct A5 quotient kernels; see joint_simple_kernel_progress",
+    "finite_index_extension": "For an index-d subgroup J of pi1(Y), mr>=r+ceil((dim H1(J;F)-1)/d), by Schreier; index5 double-cover threshold for sharp4 is7",
+    "first_A5_witness_index5_covers": "Twelve fixed first nonconstant witnesses, all image60. All covers have H1=Z/(3D), maximum field dimension1. Independent Fox-prefix/Smith replay and free/Kurosh controls pass. Other witnesses and covers untested",
+    "verification_boundary": "Separate full-chain construction with elementary Smith replay and separate PSL2(F5) coefficient-group replay. PD parser and Smith producer/replay are shared. Uniform working proofs are unformalized and externally unreviewed",
+    "new_previously_unresolved_knot_cases": 0
+  },
+  "quadratic_coefficient_progress": {
+    "uniform_field_reduction": "O=Z[tau], tau^2=tau+1. Regular integer expansion doubles generic rank. Nonzero Smith factors isolate rank-drop primes away from5; test split/inert residues and5 separately. Every coefficient field covered after extension",
+    "uniform_cocycle_comparison": "For meridian defect rank d>0, mr>=ceil(ell_root/d)>=1+ceil((dim Z1-dim V)/d). Full cocycles cannot improve the restricted-root estimate on the same representation",
+    "original_nondegenerate_bound_recovered": "Transitivity forces direction span V; nondegenerate B gives V^G=0 and k principal cocycles. The transitive affine cocycle is nonprincipal, so ell>=k+1. Degenerate case still needs the retained stronger quadratic proof",
+    "structural_base_gate": "All12 existing first nonconstant A5 core maps have unique double-transposition deck implementers, giving onto H3 reflection bases. No new map or knot substituted",
+    "fixed_bases": 12,
+    "integer_expanded_Smith": "twenty unit factors per matrix; generic nullity3, separate characteristic5 nullity3, hence exactly3 over every field",
+    "finite_image_factorization": "Universal H3 root lifts have3 parameters in every field. Integral split maps LP=I and MP=0 plus meridian words for simple generators show every lift of these fixed bases factors through H3, image<=120",
+    "characteristic2_boundary": "F4 action on64 points has no common fixed point and image120, but four orbits12,12,20,20. Underlying binary meridian rank2, so original rank-one binary criterion not satisfied",
+    "replay": "Independent ordinary integer6x6 group and reverse affine-point evaluation, elementary Smith replay, residue bases, split factorization and bit-vector orbit replay; shared PD parser and Smith checker disclosed",
+    "source_audit": "GGLW2026 Lemma6.2 full proof/Remark6.3 checked; entire paper and general priority remain unaudited",
+    "new_previously_unresolved_knot_cases": 0,
+    "boundary": "Only fixed first-map H3 bases excluded. Other maps, representations, nonlinear deformations and geometric upper improvements remain open"
+  },
+  "joint_simple_kernel_progress": {
+    "user_proposed_application": "Twenty distinct A5 quotient kernels of one double-cover group force rank>=3 and mr>=4; with bridge<=4 this is sharp",
+    "classical_source": "Hall1936 via Burness-Crestani2013 p2 explicit delta(A5)=19;2280 generating pairs divided by120 automorphisms",
+    "uniform_bound": "kappa_S(H)>|Epi(F_d,S)|/|Aut S| forces rank H>=d+1 and mr>=r+d for a simple degree-r branched cover",
+    "joint_surjection": "For nonabelian simple S, distinct kernels on one H jointly surject H onto S^kappa",
+    "single_domain_guard": "Retained source identifiers, Aut-orbit canonicalization and rejection controls; maps on different knots are never pooled",
+    "complete_frozen_uncertainty_panel": 293,
+    "same_knot_kernel_histogram": {
+      "0": 151,
+      "1": 118,
+      "2": 22,
+      "3": 1,
+      "5": 1
+    },
+    "maximum_one_knot": 5,
+    "new_sharp_uncertainty_cases": 0,
+    "known_strict_improvement_control": {
+      "knot": "P(2,3,3,5)",
+      "kernels": 23,
+      "Hom": 2901,
+      "raw_lower": 3,
+      "joint_lower": 4,
+      "bridge_upper": 4
+    },
+    "known_family": "Four-tangle Montesinos with denominators divisible by2,3,3,5, via one-cover pullback from Gamma(2,3,3,5); already Boileau-Zieschang1985",
+    "finite_denominator_patterns": 40,
+    "patterns_reaching_twenty": 39,
+    "exception": "Gamma(2,3,3,3) has12; no universal A5 detection claim",
+    "trefoil_sum_controls": {
+      "two": 1,
+      "three": 49
+    },
+    "replay": "Separate PSL2/PGL2(F5), exhaustive orbit marking and crossing closure reproduce all counts; direct permutation relations and two independent tangle constructions checked. PD parser shared",
+    "proof_boundary": "Uniform written proofs unformalized and externally unreviewed; no novel knot or general MRC result"
+  },
+  "geometric_probe": {
+    "candidates": 30,
+    "marked_diagrams": 240,
+    "matches": 0,
+    "scope": "Exploratory bounded PD probe only; no Montesinos nonmembership, flype or isotopy exclusion; no new mathematical claim registered"
+  },
+  "augmentation_cover_progress": {
+    "user_proposed_bound": "For index-n H<=G and characteristic not dividing n, Delta=b1(H)-b1(G)=dim H1(G,V_(n-1)); rank G>=1+ceil(Delta/(n-1)); mr>=r+ceil(Delta/(n-1))",
+    "sharp_four_gate": "In the double cover with index5, gain>=5 suffices and requires no knot-group root extension",
+    "frozen_targets": 16,
+    "all_A5_kernel_classes_tested": 16,
+    "knots_with_maps": 12,
+    "all_connected_index5_covers_covered": true,
+    "completeness_reason": "All base H1 are cyclic of order coprime to30. Any transitive S5 image has trivial sign, then every proper nontrivial A5 image would force an absent abelian quotient at2,3,5. Thus every index5 cover has A5 monodromy and is in the Aut-kernel panel",
+    "integral_result": "Every base H1=Z/D and every tested subgroup H1=Z/(3D), with gcd(D,30)=1",
+    "all_prime_gains": "One at3; zero at every other prime. No gain5 and no new sharp case",
+    "old_exclusion_comparison": "Different group and module from fixed knot-root representations; the prior restricted/full comparison on one representation did not exclude this test",
+    "controls": {
+      "F2_gain": 4,
+      "two_trefoil_gain": 2,
+      "three_trefoil_gain": 5
+    },
+    "characteristic5_countercontrol": {
+      "V4_invariant_dimension": 1,
+      "H1_G_V4": 5,
+      "b1_H_minus_b1_G": 4
+    },
+    "replay": "Independent Fox-prefix integer construction and third direct augmentation-cocycle matrices; Smith-step replay and all-prime classification. PD parser and Smith replay shared",
+    "peripheral_gate": "For a diagonalizable rank-one meridian preserving a nondegenerate symmetric form, the commuting longitude has lambda^2=1, forbidden by the GGLW step. A useful deformation must escape orthogonality and come from actual augmentation points",
+    "remaining": "Other cover degrees, modules and actual peripheral curves remain open; uniform proofs unformalized and externally unreviewed"
+  },
+  "whitehead_dependency_progress": {
+    "all16_in_current_external_open_list": true,
+    "current_blob": "01c7c332a0bf1565d7558aec4c769ff36cbd31a9",
+    "independently_checked_Dutra_gap": "Original p7 nontrivial free word [2,-1,-2,1] lies in both U_alpha,U_omega, contradicting Lemma3.1 at g1; original p12 invokes it in Lemma3.8(2)",
+    "own_established_family_dependencies_on_affected_2022_theorem": 0,
+    "disposition": "Keep broader claim flagged, main conclusion not disproved. Preserve distinct2017 graph-manifold/braid-pattern result. GGLW full proof and a repair of the broader theorem remain unaudited"
+  },
+  "six_point_and_formal_progress": {
+    "mathematical_gate": "Six-point A5 augmentation module has irreducible dimension5 character, orthogonal to V4; index6 permits characteristic5",
+    "frozen_A5_kernel_classes": 16,
+    "cover_matrix_shape": [
+      84,
+      73
+    ],
+    "integral_homology": "Eight source classes have H1=Z/(4D), eight have Z/(28D); all D coprime to210",
+    "sharp_four_threshold": 6,
+    "maximum_gain": 1,
+    "new_sharp_cases": 0,
+    "all_degree6_covers_excluded": false,
+    "scope": "All A5-induced six-point covers on the retained classes only; A6/other monodromy untested",
+    "coefficient_group_replay": "Independent PSL2(F5) action on P1(F5), explicit group isomorphism and sheet bijection, transported Fox-prefix/Smith replay and direct augmentation cocycles",
+    "all_field_module_boundary": "V4 at5 has (invariants,H1,Z1)=(1,1,4); V5 at2 has(1,2,6), at3(1,1,5). With split cases, neither augmentation cocycle estimate forces ordinary cover rank3 in any field",
+    "orbifold_descent": "All V5 Q cohomology is zero at p>=5; the eight nonzero mod7 cover classes do not descend",
+    "uniform_form_lifting": "In characteristic different from2, if rho0 preserves B0 and H1(Q,Sym2 W*)=0, every formal representation rho_t reducing to rho0 preserves a varying nondegenerate symmetric form. At each order the invariance defect is a cocycle killed by a form correction",
+    "complex_application": "Sym2 of either standard icosahedral character equals the six-point permutation character. Shapiro uses finite H1(H6) and index2 restriction to give the form-lifting vanishing at every tested H3 point",
+    "formal_peripheral_boundary": "Keeping mu^2=1 keeps a rank-one meridian eigensummand; its commuting longitude preserves the lifted form, so lambda(t)^2=1. Varying meridian eigenvalues, other components/dimensions remain open",
+    "primitive_word_probe": "All16 old three-generator core presentations,444 candidate primitive consequences per knot, no certificate. Substitutions/inverse automorphisms and controls checked; failed heuristic not independently rerun or promoted to any actual group-rank conclusion",
+    "uniform_proof_assurance": "Written working proofs, unformalized and externally unreviewed; finite checks establish specific input hypotheses, not full MRC"
+  },
+  "torus_whitehead_progress": {
+    "result": "For coprime2<=p<q, ar=mr=b=p*2^N for every finite untwisted Whitehead iterate of T(p,q), for the GGLW pattern/conventions",
+    "status": "Source-derived corollary with explicit November2026 GGLW preprint dependency; no novelty claim or independent full-source certification",
+    "actual_curve": "Companion-matrix rank-p irreducible KCH family realizes Cornwell's lambda=(-1)^(p+1)*mu^(-(p-1)q); eta=mu^(-2(p-1)q) has iterable orders(-1,2(p-1)q)",
+    "broader_gate": "An n-strand closure with rank-n augmentation and nonzero writhe w has an actual curve by Cornwell2017 Theorem1.10 proof; orders(-1,2w) give equality n*2^N for all iterates",
+    "T35_control": "mu=s^3,lambda=s^-30; s=-1 gives H3 order120; actual variation escapes orthogonality",
+    "finite_torus_controls": 39,
+    "whitehead_triples": 2976,
+    "valid_whitehead_blocks": 156,
+    "panel_closures": 0,
+    "panel_varying_meridian_tangents_executed": true,
+    "not_certified": "Full MRC, broad priority, specialist/formal verification, entire GGLW microlocal/two-bridge theory and actual peripheral curves for the retained16 targets"
+  },
+  "meridian_deformation_progress": {
+    "frozen_bases": 16,
+    "knots_with_points": 12,
+    "four_no_A5_targets_not_covered": true,
+    "normalized_tangent_matrix_shape": [
+      144,
+      28
+    ],
+    "exact_rank": 23,
+    "nullity": 5,
+    "residual_conjugation_dimension": 4,
+    "modulo_conjugation_dimension": 1,
+    "eigenvalue_differential": "Nonzero in every case, over Q(tau) and both complex embeddings",
+    "fixed_eigenvalue_rigidity": "An order-by-order conjugation proof makes every formal rank3 fixed-involution family conjugate to the original point, strengthening orthogonality",
+    "integrability_gate": "After transverse gauge, the local germ is either an actual curve with parameter s=(mu+1)/2, or an isolated thick point cut out by a finite-order univariate residual. The alternative is not decided",
+    "stabilization_theorem": "If both restricted W/Wdual H1 vanish, every formal rank-one-meridian family through rho0 plus a finite trivial summand splits, even allowing varying eigenvalue",
+    "restricted_modules_checked": 32,
+    "restricted_cocycle_dimension": 3,
+    "principal_dimension": 3,
+    "formal_higher_rank_boundary": "No irreducible higher-rank family through these stabilized special fibres. Other special fibres, representations and components remain open",
+    "finite_jets": {
+      "embeddings": 32,
+      "prime": 11,
+      "degree": 3,
+      "all_pass": true,
+      "scope": "Residue-field finite jets only; no characteristic-zero curve or all-order lifting claim"
+    },
+    "replay": "Separate Fraction arithmetic, oriented dual-number relators, all minors, gauge and affine-cocycle columns. Jets use separate entrywise polynomial adjugates/scalar inverses. PD parser and retained H3 coefficient inputs shared",
+    "new_sharp_cases": 0,
+    "formal_or_specialist_review": false
+  },
+  "complete_A5_module_progress": {
+    "uniform_reduction": "The maximum dim Z1/dim V through a fixed finite quotient occurs on a simple module; composition-series inequality includes nonsplit extensions and commutes with scalar extension",
+    "classification": "Absolute simple lists imported from primary ATLAS; modular models independently identified with full matrix-algebra spans and conjugate traces",
+    "new_ordinary_W3_matrices": 16,
+    "new_characteristic2_simple_actions": 32,
+    "integer_shape": [
+      84,
+      78
+    ],
+    "nonunit_Smith_patterns": "Eight have[5], eight[7,35]; invariant factors1^4,2,2. Separate ramified5 and all etale embeddings checked",
+    "all_module_bound": "dim Z1(G,V)<=3*dim V/2 over every field and every finite-dimensional module through any single A5 homomorphism on the first16 targets, including indecomposable modules",
+    "ordinary_rank_estimate_maximum": 2,
+    "actual_rank2_proved": false,
+    "all_A5_induced_covers": "For H=phi^-1(L), n=[G:H], b1(H;k)<=floor(n/2)+1; no Schreier or split augmentation-gain threshold can force rank3. Other monodromy not covered",
+    "rational_homology": "All A5-induced covers have b1=0 over Q, including all60-sheet kernel covers",
+    "joint_product_test": {
+      "knots": 4,
+      "joint_image_order": 3600,
+      "natural_tensor_actions": 16,
+      "field": "F4",
+      "module_dimension": 4,
+      "Z1_dimension": 6,
+      "H1_dimension": 2,
+      "threshold_H1": 5,
+      "scope": "Natural2x2 tensors only, other product modules and fields untested"
+    },
+    "independent_replay": "Integer6x6 coefficient model and reverse affine-point matrices, Smith replay, residue ranks, quotient identifications, conjugate traces, matrix-algebra spans and nonsplit/freeF2/F3 controls; source PD/maps/Smith replay shared",
+    "new_sharp_cases": 0,
+    "formal_or_external_review": false
+  },
+  "GL3_and_singular_affine_progress": {
+    "uniform_affine_lemma": "An invariant-free d-dimensional linear action and nonprincipal admissible cocycle homogenize to a rank-one meridian certificate with zero fixed space in dimension d+1",
+    "known_sharp_family": "T(4,7*(2r+1)), r>=0, mr=bridge=4 by explicit binary matrices and torus meridian congruences; already known torus MRC, no new knot or priority claim",
+    "positive_control": "T47 split AGL3(F2), order1344, transitive8; no invariant alternating form on natural3; four conjugate meridians have independent functionals and pairing rank3",
+    "external_search_boundary": "Pinned glsearch requires independent4seed directions and det(pairing)!=0, excluding all homogeneous affine3 extensions. Valid criterion and243 certificates unchanged; w3 random moves are not an exhaustive3bridge exclusion",
+    "frozen_targets": 293,
+    "quotient_maps": 191,
+    "knots_with_maps": 154,
+    "kernel_histogram": {
+      "0": 139,
+      "1": 123,
+      "2": 29,
+      "7": 1,
+      "3": 1
+    },
+    "same_source_sharp_threshold": 58,
+    "deck_types": {
+      "outer": 162,
+      "inner": 29
+    },
+    "ordinary_module_Z1": {
+      "natural": {
+        "4": 179,
+        "5": 12
+      },
+      "dual": {
+        "4": 179,
+        "5": 12
+      },
+      "Steinberg": {
+        "8": 165,
+        "10": 26
+      }
+    },
+    "characteristic2_all_module_bound": "dim Z1<=5*dim V/3 through every retained epimorphism, all coefficient dimensions/fields of characteristic2 including nonsplit extensions; not all proper images or other characteristics",
+    "binary_inner_deck_root_actions": 58,
+    "F7_both_deck_root_actions": 191,
+    "all_root_dimensions": 3,
+    "independent_replay": "Mobius model and full product transport, tuple orbit marking, iterative diagram closure, reverse affine matrices, Steinberg/adjoint8 intertwiner, dense adjoint7 and positive affine control; PD parser/source conventions shared",
+    "new_open_case_closures": 0,
+    "actual_rank2_proved": false,
+    "formal_or_external_review": false
+  },
+  "rank_two_equivalence_progress": {
+    "uniform_radical_lemma": "Trivial-radical extensions with surviving meridian rank-one image lines preserve admissible cocycle spaces over every field, using knot H2=0 and meridian H1 evaluation",
+    "exact_original_criterion": "Over a fixed S3 transposition colouring, h=b1(simple3branched cover;F2) gives dimension-k transitive rank2-form certificate iff h>=k-1; maximal k=h+1 and bound h+2 when h>0, no action when h=0",
+    "relative_kernel_gate": "Exactly2^h-1 S4 transposition quotient kernels lie above the fixed S3 kernel; two distinct kernels on the same knot group force lower4 and construct a transitive eight-point original certificate",
+    "proof_mechanism": "Dependence gives an explicit invariant quadratic function. Independence restricts to full W^h on the S3 kernel, and commutators supply every radical translation. Image order24*8^(k-2)",
+    "mod2_cover_identity": "b1(Y3;F2)=1+b1(Y4;F2) for an S4 transposition colouring and its S3 quotient; no integral/all-field identity",
+    "frozen_targets": 293,
+    "symmetric_bases": {
+      "2": 293,
+      "3": 26,
+      "4": 21,
+      "5": 0
+    },
+    "S3_binary_dimensions": {
+      "2": 5,
+      "3": 21
+    },
+    "A5_decks": {
+      "inner": 170
+    },
+    "all_symmetric_degree_field_maximum_bounds": {
+      "1": 6,
+      "2": 251,
+      "3": 36
+    },
+    "original_criterion_targets_with_no_representation_any_dimension": 272,
+    "targets_with_only_dimension2_bound3": 21,
+    "all_binary3_linear_bases": "Complete subgroup/normal-generation and module reduction closes proper-image gap; prior58 full GL3 bases reused, every root dimension<=3",
+    "known_positive_controls": "Actual P233/P2333/P23333 diagrams give binary dimensions3/4/5 and transitive image orders24/192/1536, all basis-pair relators and dependent invariant checked",
+    "nonlinear_three_sheet_checkpoint": {
+      "covers": 26,
+      "initial_proved_cyclic_orders": {
+        "2": 17,
+        "4": 1,
+        "1": 1
+      },
+      "initial_unresolved_two_generator_groups": 7,
+      "finite_targets": [
+        "S3",
+        "A4",
+        "D10",
+        "D14",
+        "A5"
+      ],
+      "nonabelian_images_found": 0,
+      "coset_outcomes": {
+        "CAPPED_INCOMPLETE": 4,
+        "CYCLIC_IMAGE_ONLY": 3
+      },
+      "superseded_by": "The trefoil-amalgam continuation below now determines all26 actual ranks; the old finite/coset records are retained checkpoints, and quotient images alone still do not prove cyclicity"
+    },
+    "replay_assurance": "Independent tuple orbit/trace closure, affine-point matrices and Smith replay; separate PSL2F5 deck model, full subgroup lattice and module normal forms. Independent signed edge words/Tietze steps and generated finite targets; shared PD parser and older routines disclosed",
+    "new_open_cases": 0,
+    "uniform_proof_formal_or_specialist_review": false
+  },
+  "trefoil_amalgam_progress": {
+    "named_equalities": [
+      "13a_3145:mr=bridge=4",
+      "13a_3147:mr=bridge=4",
+      "13a_3148:mr=bridge=4",
+      "13a_3149:mr=bridge=4"
+    ],
+    "cover_models": [
+      "A+",
+      "A-",
+      "B+",
+      "B-"
+    ],
+    "cover_group_rank": 2,
+    "groups_infinite_and_nonabelian": true,
+    "uniform_proof": "The trefoil meridian/fibre subgroup injects as Z2, by infinite fibre and infinite-order meridian in C2*C3. Determinant+-1 edge maps form actual amalgams; classical normal form embeds the nonabelian vertex group. Exact two-generator presentations give rank2",
+    "lower_bound": "mr>=r-1+rank pi1Y, with r3 gives4 for every meridional generating set",
+    "upper_bound": "Four-seed diagram propagation plus published Wirtinger-number=bridge theorem gives b<=4",
+    "independent_provenance": "Four PDs literally match both archived KnotInfo releases and independent HT census(+1 labels). Planar under-to-under arcs independently regenerate branch words/upper traces; old parser is used only for index transport",
+    "all_three_sheet_ranks": {
+      "C2": 19,
+      "C4": 2,
+      "trivial": 1,
+      "rank2_trefoil_amalgams": 4
+    },
+    "all_four_sheet_ranks": {
+      "trivial": 21
+    },
+    "degree5_bases": 0,
+    "higher_simple_degrees_excluded_by_upper4": true,
+    "simple_cover_rank_route_degrees_at_least3": "Frozen degree>=3 route gives exactly4sharp named cases; the new double-cover theorem adds8other names below",
+    "abelianization_orders": [
+      37,
+      35,
+      37,
+      35
+    ],
+    "universal_abelian_cover_H1": "0 over Z, exact Schreier/Smith replay",
+    "solvable_quotient_boundary": "Each commutator subgroup is nontrivial/perfect, hence every solvable quotient is cyclic; enlarging solvable target searches cannot detect these nonabelian groups",
+    "new_named_certificates": 4,
+    "worldwide_previously_unresolved_or_priority_claim": false,
+    "source_status": "All4 in fetched external open list17Nov2026 and absent from its243 certificates; archived bridge intervals[3,4] checked. Prior-family and global novelty not established",
+    "simple3cover_original16_targets_closed": 0,
+    "checkpoint_other289_panel_names_unsettled_here": true,
+    "uniform_proof_formal_or_specialist_review": false,
+    "approximate_manifold_recognition_used": false
+  },
+  "finite_commutator_progress": {
+    "targets": [
+      "13a_3145",
+      "13a_3147",
+      "13a_3148",
+      "13a_3149"
+    ],
+    "finite_certificates": 4,
+    "degree": 25,
+    "checkpoint_relators_per_case": 6,
+    "full_cover_relators_per_case": 39,
+    "full_cover_generators_per_case": 11,
+    "commutator_witnesses": [
+      {
+        "point": 0,
+        "image": 11
+      },
+      {
+        "point": 5,
+        "image": 9
+      },
+      {
+        "point": 0,
+        "image": 3
+      },
+      {
+        "point": 0,
+        "image": 2
+      }
+    ],
+    "construction": "Trefoil A5xC5 action on F5^2 with independent peripheral translations, conjugated by linear gluing maps and transported to original generators",
+    "vertex_image_order": 300,
+    "full_two_generator_image_order": "not computed; not needed",
+    "algebra_replay": "Standalone stdlib checker plus independent reverse-letter pointwise evaluation on all25 points. Full branched words rebuilt from independent planar arc traces; parser used only for old indices",
+    "rejected_corruptions": 4,
+    "exact_cyclic_controls": [
+      [
+        "13a_3291",
+        2
+      ],
+      [
+        "13a_3346",
+        2
+      ],
+      [
+        "13n_4637",
+        4
+      ]
+    ],
+    "new_named_cases_beyond_retained_four": 0,
+    "proof_boundary": "Additional finite proofs of the same4 mr=bridge4 equalities. Finite nonabelianity needs no residual-finiteness or amalgam normal-form input. General cover-rank lemma, named PD and bridge upper certificates remain dependencies. Global priority and full MRC unclaimed; unformalized and externally unreviewed"
+  },
+  "periodic_twist_family_progress": {
+    "families": [
+      {
+        "name": "13a_3145",
+        "period_added_crossings": 6,
+        "meridional_lower": 4,
+        "bridge_upper": 4,
+        "determinant_constant": 543,
+        "determinant_slope_in_N": 1776,
+        "stabilizer_moved_point": 0,
+        "stabilizer_image": 11,
+        "samples": [
+          {
+            "N": 0,
+            "crossings": 13,
+            "determinant": 543,
+            "all_meridian_relators_and_four_seeds_pass": true
+          },
+          {
+            "N": 1,
+            "crossings": 19,
+            "determinant": 2319,
+            "all_meridian_relators_and_four_seeds_pass": true
+          },
+          {
+            "N": 2,
+            "crossings": 25,
+            "determinant": 4095,
+            "all_meridian_relators_and_four_seeds_pass": true
+          }
+        ]
+      },
+      {
+        "name": "13a_3147",
+        "period_added_crossings": 6,
+        "meridional_lower": 4,
+        "bridge_upper": 4,
+        "determinant_constant": 537,
+        "determinant_slope_in_N": 1680,
+        "stabilizer_moved_point": 5,
+        "stabilizer_image": 9,
+        "samples": [
+          {
+            "N": 0,
+            "crossings": 13,
+            "determinant": 537,
+            "all_meridian_relators_and_four_seeds_pass": true
+          },
+          {
+            "N": 1,
+            "crossings": 19,
+            "determinant": 2217,
+            "all_meridian_relators_and_four_seeds_pass": true
+          },
+          {
+            "N": 2,
+            "crossings": 25,
+            "determinant": 3897,
+            "all_meridian_relators_and_four_seeds_pass": true
+          }
+        ]
+      },
+      {
+        "name": "13a_3148",
+        "period_added_crossings": 6,
+        "meridional_lower": 4,
+        "bridge_upper": 4,
+        "determinant_constant": 543,
+        "determinant_slope_in_N": 1776,
+        "stabilizer_moved_point": 0,
+        "stabilizer_image": 3,
+        "samples": [
+          {
+            "N": 0,
+            "crossings": 13,
+            "determinant": 543,
+            "all_meridian_relators_and_four_seeds_pass": true
+          },
+          {
+            "N": 1,
+            "crossings": 19,
+            "determinant": 2319,
+            "all_meridian_relators_and_four_seeds_pass": true
+          },
+          {
+            "N": 2,
+            "crossings": 25,
+            "determinant": 4095,
+            "all_meridian_relators_and_four_seeds_pass": true
+          }
+        ]
+      },
+      {
+        "name": "13a_3149",
+        "period_added_crossings": 6,
+        "meridional_lower": 4,
+        "bridge_upper": 4,
+        "determinant_constant": 537,
+        "determinant_slope_in_N": 1680,
+        "stabilizer_moved_point": 0,
+        "stabilizer_image": 2,
+        "samples": [
+          {
+            "N": 0,
+            "crossings": 13,
+            "determinant": 537,
+            "all_meridian_relators_and_four_seeds_pass": true
+          },
+          {
+            "N": 1,
+            "crossings": 19,
+            "determinant": 2217,
+            "all_meridian_relators_and_four_seeds_pass": true
+          },
+          {
+            "N": 2,
+            "crossings": 25,
+            "determinant": 3897,
+            "all_meridian_relators_and_four_seeds_pass": true
+          }
+        ]
+      }
+    ],
+    "uniform_result": "For all N>=0, replacing the first source crossing by1+6N alternating crossings gives mr=bridge4",
+    "finite_action": {
+      "degree": 75,
+      "blocks": 3,
+      "block_size": 25,
+      "full_image_order": "not needed or computed"
+    },
+    "finite_lower_lemma": "A transitive r-block group generated by d exchanges fixing the other blocks pointwise has block-stabilizer label rank<=d-r+1, by spanning-tree gauges; nonabelian stabilizer forces d>=r+1",
+    "periodicity_proof": "T(x,y)=(y,yxy), T^2 conjugates by(xy)^-1 and(xy)^3=1, so T^6=1. All original generator images remain outside, preserving the full finite image",
+    "uniform_upper": "A fixed4outside-seed trace uses a two-input integer-tangle move, proved for arbitrary length by crossing-by-crossing induction",
+    "distinctness": "Parallel-edge tree counts give strictly positive determinant slopes1776/1680 in N, so each family contains infinitely many distinct knot types. Family mutual disjointness unclaimed",
+    "independent_replay": "Pointwise source/expanded meridian words, fixed-block/transitive-block checks and stabilizer commutators; BFS outside arcs; corner regions/direct tree enumeration; separate rational Fox determinants on12PDs;4corruptions reject",
+    "all_N_assurance": "Written uniform graph/Hurwitz/propagation proofs required; no extrapolation from finite samples. Unformalized and externally unreviewed",
+    "source_additions": [
+      "STOIM07: published determinant/tree lemma and explicit6star arborescence warning",
+      "JP25: classical finite-cycle and periodic twist construction in preprint Section3; published metadata checked, full published proof comparison open"
+    ],
+    "catalogue_distinct_sources": 37,
+    "new_supplementary_snapshots": 2,
+    "frozen_main_manifest_unchanged": true,
+    "worldwide_novelty_or_prior_family_exclusion": false,
+    "full_MRC_proved": false
+  },
+  "simple_cover_additivity_progress": {
+    "uniform_invariants": "C(K)=max(r-1+rank pi1Y) and A_k(K)=max(r-1+b1(Y;k)) over all connected simple transposition covers; well-defined finite maxima",
+    "all_knots_result": "Both C and fixed-field A_k are(-1)additive under connected sum. Every restricted coloring has one active support by knot normal generation; converse compatible supports realize individual maxima",
+    "topology": "Y=#Y_i #^beta(S1xS2), beta=sum(r_i-2)-(R-2), from every lifted sphere and capped component. Grushko adds ordinary ranks; H1 adds directly",
+    "sharpness": "C=mr implies conditional meridional additivity. With matching bridge certificates, sums stay sharp. A sum of t periodic-family members and s trefoils has mr=bridge=3t+s+1",
+    "defects": "Schubert bridge additivity makes nonnegative b-C and b-A_k additive; C=b is closed under connected sum and taking summands",
+    "strict_boundary": {
+      "double_cover_rank": 2,
+      "maximum_simple_cover_rank_bound": 3,
+      "meridional_rank": 4,
+      "seventh_power_identity_counts": {
+        "3": 1,
+        "4": 1,
+        "5": 1
+      },
+      "nonabelian_matrix_witness_checked": true
+    },
+    "unbounded_gap": "For J_n=#^nT47, C=2n+1 and A_k=1+n[char7], while known graph-manifold MRC and Schubert give mr=bridge=3n+1. No S3 coloring exists, excluding only rank-two-form original criterion in any dimension",
+    "controls": [
+      {
+        "id": "trefoil_pair",
+        "degree": 2,
+        "crossings": 6,
+        "sphere_graph_cycles": 0,
+        "H1_free_rank": 0,
+        "H1_torsion": [
+          3,
+          3
+        ],
+        "conditional_cover_rank": 2,
+        "meridional_lower": 3
+      },
+      {
+        "id": "seed_pair_shared",
+        "degree": 3,
+        "crossings": 26,
+        "sphere_graph_cycles": 1,
+        "H1_free_rank": 1,
+        "H1_torsion": [
+          1295
+        ],
+        "conditional_cover_rank": 5,
+        "meridional_lower": 7
+      },
+      {
+        "id": "seed_pair_overlap2",
+        "degree": 4,
+        "crossings": 26,
+        "sphere_graph_cycles": 0,
+        "H1_free_rank": 0,
+        "H1_torsion": [
+          1295
+        ],
+        "conditional_cover_rank": 4,
+        "meridional_lower": 7
+      },
+      {
+        "id": "seed_triple_shared",
+        "degree": 3,
+        "crossings": 39,
+        "sphere_graph_cycles": 2,
+        "H1_free_rank": 2,
+        "H1_torsion": [
+          37,
+          1295
+        ],
+        "conditional_cover_rank": 8,
+        "meridional_lower": 10
+      },
+      {
+        "id": "seed_triple_overlap2",
+        "degree": 5,
+        "crossings": 39,
+        "sphere_graph_cycles": 0,
+        "H1_free_rank": 0,
+        "H1_torsion": [
+          37,
+          1295
+        ],
+        "conditional_cover_rank": 6,
+        "meridional_lower": 10
+      },
+      {
+        "id": "seed_trefoil",
+        "degree": 3,
+        "crossings": 16,
+        "sphere_graph_cycles": 0,
+        "H1_free_rank": 0,
+        "H1_torsion": [
+          111
+        ],
+        "conditional_cover_rank": 3,
+        "meridional_lower": 5
+      },
+      {
+        "id": "seed_pair_trefoil",
+        "degree": 4,
+        "crossings": 29,
+        "sphere_graph_cycles": 0,
+        "H1_free_rank": 0,
+        "H1_torsion": [
+          3885
+        ],
+        "conditional_cover_rank": 5,
+        "meridional_lower": 8
+      },
+      {
+        "id": "seed_unknot",
+        "degree": 3,
+        "crossings": 14,
+        "sphere_graph_cycles": 0,
+        "H1_free_rank": 0,
+        "H1_torsion": [
+          35
+        ],
+        "conditional_cover_rank": 2,
+        "meridional_lower": 4
+      }
+    ],
+    "rejected_corruptions": 4,
+    "verification_boundary": "Eight finite PD/word/Smith controls and separate torus matrices check inputs. Uniform all-colorings topology and Grushko step remain written classical arguments, unformalized and externally unreviewed",
+    "source_additions": [
+      "STALL71 primary Grushko-Wagner statement and official1965 proof metadata; original full proof not audited",
+      "SCHULT03 primary bridge-additivity theorem and connected-sum argument, Schubert credit retained"
+    ],
+    "catalogue_distinct_sources": 39,
+    "new_supplementary_snapshots": 4,
+    "general_meridional_additivity_or_full_MRC_proved": false,
+    "worldwide_novelty_claim": false
+  },
+  "permutation_index_progress": {
+    "uniform_bound": "A transitive degree-r quotient with meridian index delta gives mr>=ceil((r-1)/delta), by connected transposition-edge counting",
+    "known_full_A8_control": "X=(0751)(2643),Y=(01234)(567),X^-1Y^4=(06)(25),image order20160; same quotient gives sharp known T(4,60j+15) for every j>=0",
+    "class_boundary": {
+      "A8_double_transpositions": 210,
+      "GL4_F2_transvections": 105,
+      "A8_order": 20160,
+      "AGL3_F2_order": 1344
+    },
+    "negative_scope": "Exactly original16 PDs, transitive double-transposition actions in degrees8/9; only such degrees where elementary graph lower reaches4 under certified upper4",
+    "degrees": [
+      {
+        "degree": 8,
+        "catalogue": {
+          "class_size": 210,
+          "centralizer_size": 192,
+          "prefix_counts": [
+            1,
+            10,
+            458,
+            58429
+          ],
+          "four_tuple_orbits": 58429,
+          "raw_normalized_tuples": 9261000,
+          "transitive_orbits": 18450,
+          "transitive_raw_normalized_tuples": 3529440,
+          "stabilizer_histogram": {
+            "1": 39474,
+            "2": 16473,
+            "4": 1639,
+            "6": 412,
+            "8": 320,
+            "12": 13,
+            "16": 55,
+            "32": 22,
+            "64": 7,
+            "96": 13,
+            "192": 1
+          }
+        },
+        "targets": [
+          {
+            "name": "13a_129",
+            "orbits_replayed": 18450,
+            "hits": 0
+          },
+          {
+            "name": "13a_135",
+            "orbits_replayed": 18450,
+            "hits": 0
+          },
+          {
+            "name": "13a_136",
+            "orbits_replayed": 18450,
+            "hits": 0
+          },
+          {
+            "name": "13a_137",
+            "orbits_replayed": 18450,
+            "hits": 0
+          },
+          {
+            "name": "13a_194",
+            "orbits_replayed": 18450,
+            "hits": 0
+          },
+          {
+            "name": "13a_196",
+            "orbits_replayed": 18450,
+            "hits": 0
+          },
+          {
+            "name": "13a_197",
+            "orbits_replayed": 18450,
+            "hits": 0
+          },
+          {
+            "name": "13a_198",
+            "orbits_replayed": 18450,
+            "hits": 0
+          },
+          {
+            "name": "13a_233",
+            "orbits_replayed": 18450,
+            "hits": 0
+          },
+          {
+            "name": "13a_234",
+            "orbits_replayed": 18450,
+            "hits": 0
+          },
+          {
+            "name": "13a_239",
+            "orbits_replayed": 18450,
+            "hits": 0
+          },
+          {
+            "name": "13a_242",
+            "orbits_replayed": 18450,
+            "hits": 0
+          },
+          {
+            "name": "13a_243",
+            "orbits_replayed": 18450,
+            "hits": 0
+          },
+          {
+            "name": "13a_244",
+            "orbits_replayed": 18450,
+            "hits": 0
+          },
+          {
+            "name": "13a_253",
+            "orbits_replayed": 18450,
+            "hits": 0
+          },
+          {
+            "name": "13a_265",
+            "orbits_replayed": 18450,
+            "hits": 0
+          }
+        ]
+      },
+      {
+        "degree": 9,
+        "catalogue": {
+          "class_size": 378,
+          "centralizer_size": 960,
+          "prefix_counts": [
+            1,
+            10,
+            508,
+            86231
+          ],
+          "four_tuple_orbits": 86231,
+          "raw_normalized_tuples": 54010152,
+          "transitive_orbits": 6561,
+          "transitive_raw_normalized_tuples": 6298560,
+          "stabilizer_histogram": {
+            "1": 34342,
+            "2": 38666,
+            "4": 6351,
+            "6": 5049,
+            "8": 771,
+            "12": 391,
+            "16": 64,
+            "24": 528,
+            "32": 22,
+            "48": 26,
+            "64": 7,
+            "480": 13,
+            "960": 1
+          }
+        },
+        "targets": [
+          {
+            "name": "13a_129",
+            "orbits_replayed": 6561,
+            "hits": 0
+          },
+          {
+            "name": "13a_135",
+            "orbits_replayed": 6561,
+            "hits": 0
+          },
+          {
+            "name": "13a_136",
+            "orbits_replayed": 6561,
+            "hits": 0
+          },
+          {
+            "name": "13a_137",
+            "orbits_replayed": 6561,
+            "hits": 0
+          },
+          {
+            "name": "13a_194",
+            "orbits_replayed": 6561,
+            "hits": 0
+          },
+          {
+            "name": "13a_196",
+            "orbits_replayed": 6561,
+            "hits": 0
+          },
+          {
+            "name": "13a_197",
+            "orbits_replayed": 6561,
+            "hits": 0
+          },
+          {
+            "name": "13a_198",
+            "orbits_replayed": 6561,
+            "hits": 0
+          },
+          {
+            "name": "13a_233",
+            "orbits_replayed": 6561,
+            "hits": 0
+          },
+          {
+            "name": "13a_234",
+            "orbits_replayed": 6561,
+            "hits": 0
+          },
+          {
+            "name": "13a_239",
+            "orbits_replayed": 6561,
+            "hits": 0
+          },
+          {
+            "name": "13a_242",
+            "orbits_replayed": 6561,
+            "hits": 0
+          },
+          {
+            "name": "13a_243",
+            "orbits_replayed": 6561,
+            "hits": 0
+          },
+          {
+            "name": "13a_244",
+            "orbits_replayed": 6561,
+            "hits": 0
+          },
+          {
+            "name": "13a_253",
+            "orbits_replayed": 6561,
+            "hits": 0
+          },
+          {
+            "name": "13a_265",
+            "orbits_replayed": 6561,
+            "hits": 0
+          }
+        ]
+      }
+    ],
+    "controls": [
+      {
+        "name": "T(4,7)",
+        "pairs": 14,
+        "image_orders": {
+          "1344": 14
+        }
+      },
+      {
+        "name": "T(4,15)",
+        "pairs": 15,
+        "image_orders": {
+          "20160": 15
+        }
+      }
+    ],
+    "raw_tuple_coverage": "Full centralizer orbit marking is disjoint and covers every normalized tail; no subgroup classification assumption",
+    "independent_replay": "Permutation filtering, geometric arcs, one-pass upper trace and direct pointwise crossing tests; source parser reused only for old index names",
+    "rejected_corruptions": [
+      "degree8:false_stabilizer",
+      "degree8:lost_transitivity",
+      "degree9:false_stabilizer",
+      "degree9:lost_transitivity",
+      "false_torus_meridian",
+      "false_upper_trace"
+    ],
+    "catalogue_at_checkpoint": 40,
+    "new_primary_snapshot": "ATLASA8; identification/order/list read; class counts proved independently",
+    "this_permutation_gate_original16_targets_closed": 0,
+    "worldwide_novelty_claim": false,
+    "full_MRC_proved": false
+  },
+  "ternary_affine_cover_progress": {
+    "base_scope": "Both nonidentity rank-one GL3(F3) meridian classes on the unchanged original16;104 order3 transvections and117 order2 reflections",
+    "tuple_orbits": [
+      21632,
+      34084
+    ],
+    "raw_normalized_tuples": [
+      1124864,
+      1601613
+    ],
+    "affine_boundary": "All admissible lifts of every rank-one base are principal; trivial linear bases give cyclic translations. No ternary affine3 transitive27point or homogeneous4 zero-common-fixed-space certificate on the16",
+    "order3_result": "Only one constant cyclic base on every target, root/principal dimension1",
+    "reflection_result": "Two fullGL3(F3) representation orbits on each first8 targets with root/principal dimension3; one constant root-dimension1 base on every target. Representation orbits not claimed distinct quotient kernels",
+    "cover_quotients": "Each fullGL3 image induces a fullSL3(F3) double-cover quotient by determinant parity, order5616",
+    "cover_modules": "All32 natural/dual3 ordinary F3 cover modules have Z1=4,H1=1; no root/meridian-extension condition imposed; threshold7 not reached",
+    "known_controls": "Explicit order3/order2 homogeneous rank-one matrices for the known triple-trefoil sum, full functional rank4, nine-crossing PD/four-seed upper, root dimension4, affine image orders151632/648",
+    "projective_index13_control": {
+      "points": 13,
+      "generator_cycle_lengths": [
+        [
+          1,
+          1,
+          1,
+          1,
+          3,
+          3,
+          3
+        ],
+        [
+          1,
+          1,
+          1,
+          1,
+          3,
+          3,
+          3
+        ],
+        [
+          1,
+          1,
+          1,
+          1,
+          3,
+          3,
+          3
+        ]
+      ],
+      "graph_vertices": 34,
+      "graph_edges": 39,
+      "free_rank_from_graph": 6,
+      "C3_vertex_factors": 12,
+      "H1_F3_dimension_from_written_Kurosh_argument": 18,
+      "base_H1_F3_dimension": 3,
+      "homology_gain": 15,
+      "sharp_gain_threshold": 13,
+      "assurance": "Finite permutations/cycles/connectivity checked; subgroup structure F6*(*12 C3) uses the separately written graph-of-groups/Kurosh argument. Target13point covers have not been tested."
+    },
+    "verification": "All3^9 matrix filtering, complete actual raw-orbit marking, geometric signed traces, affine-point coefficient reconstruction, exact kernels/principal columns and permutation image orders;4 independent replays reject10 corruptions",
+    "uniform_assurance": "Written cocycle/fixed-space/core-group and Kurosh arguments separate from finite inputs; unformalized and externally unreviewed",
+    "new_target_closures": 0,
+    "all_fields_or_all_SL3_modules_excluded": false,
+    "target13point_homology_at_original_checkpoint": false,
+    "current_target13point_homology_record": "MRC-SL3-PROJECTIVE13-HOMOLOGY-20261117",
+    "full_MRC_proved": false,
+    "worldwide_novelty_claim": false
+  },
+  "projective13_homology_progress": {
+    "uniform_all_characteristic_bound": "For every finite-index r>=2 subgroup H of a finitely generated G and every field, rankG>=1+ceil((b1H-b1G)/(r-1)); cocycle sum map has rank<=b1G, so no splitting is required",
+    "prime_restriction_boundary": "Only the earlier split cohomology identity needs char not dividingr; gain>=r rank3 implication is valid at every characteristic",
+    "positive_degree_characteristic_control": {
+      "status": "PASS independent positive degree-characteristic control",
+      "degree": 13,
+      "characteristic": 13,
+      "H1_torsion_factors": [
+        13,
+        13,
+        13,
+        13,
+        13,
+        13,
+        13,
+        13,
+        13,
+        13,
+        13,
+        13,
+        13,
+        13,
+        13,
+        13,
+        13,
+        13,
+        13,
+        13,
+        13,
+        13,
+        13,
+        13,
+        13,
+        13
+      ],
+      "base_b1": 3,
+      "cover_b1": 26,
+      "gain": 23,
+      "augmentation_Z1": 36,
+      "split_prediction": 35,
+      "rank_lower_bound": 3,
+      "rejected_corruptions": [
+        "omitted_C13_factor",
+        "incomplete_nonsplit_kernel"
+      ],
+      "input_sha256": {
+        "characteristic_degree_control.json": "9ecd49b1963ba0429438455c29a889dfff73a59fa3c7799fd465099dbdefa171",
+        "verify_characteristic_degree_control.py": "3093958bcfd2bc07eb0aaeeafa91dc5fdfbfab4d83fb74a2288a3e0953e669a7",
+        "verify_projective13_covers.py": "a4a1b9b30df34ffcb825d4b1055863e219e5fa3fb107d3289a6715c41a500ff1",
+        "verify_core_subgroup_homology.py": "a7b4334409e747425af8ca87270b4b8a4efc07e75334e5fd63f76dc19922cf38",
+        "verify_integer_lifts.py": "4ef7d33a3ec593f8d43d0c897e14d22e70323657d380ee9c44b657cc636ab309"
+      },
+      "scope": "Finite positive control; the all-field rank inequality and every-odd-prime family are written uniform arguments, not inferred from this single sample."
+    },
+    "uniform_known_control_family": "G0=Cp*Cp*Cp, odd primep, firstfactorpcycle and otherfactorsidentity; direct Schreier rewriting H0=*2p Cp gives gain2p-3>=p atp and augmentationZ1=3(p-1), one more than split prediction",
+    "source_actions": 32,
+    "distinct_labelled_covers": 16,
+    "knots": 8,
+    "integral_homology": "All H1=Z^2+C2+C882878 in block391 or Z^2+C2+C3128602 in block401",
+    "rational_first_Betti": 2,
+    "maximum_Betti_gain_except13": 4,
+    "augmentation_maximum_Z1_all_fields": 16,
+    "augmentation_Z1_characteristic13": 14,
+    "required_Z1": 25,
+    "quotient_kernel_correction": "Among the retained2 representations per source, one faithfulSL3 quotient kernel; point/dualGsets remain inequivalent, and no cross-knot pooling or all-quotient completeness claim",
+    "verification": "Independent plane actions, paired group5616 and stabilizer432, geometric core words, Fox/Smith replay and13coordinate augmentation kernels;4 main+2 nonsplit-control corruptions reject",
+    "structural_source_cues": [
+      {
+        "double_cover_H1_order": 391,
+        "names": [
+          "13a_129",
+          "13a_136",
+          "13a_194",
+          "13a_197"
+        ],
+        "common_Conway_polynomial": " -3*z^8 - 7*z^6 - 4*z^4 + 2*z^2 + 1 ",
+        "three_genus_values": [
+          "4"
+        ]
+      },
+      {
+        "double_cover_H1_order": 401,
+        "names": [
+          "13a_135",
+          "13a_137",
+          "13a_196",
+          "13a_198"
+        ],
+        "common_Conway_polynomial": " 3*z^8 + 7*z^6 + 6*z^4 + 4*z^2 + 1 ",
+        "three_genus_values": [
+          "4"
+        ]
+      }
+    ],
+    "common_cover_or_mutation_proved": true,
+    "structural_checkpoint_supersession": "Original source-cue audit proves no mutation; subsequent exact mutation theorem below proves common covers for exactly these2blocks",
+    "this_homology_test_target_closures": 0,
+    "actual_cover_ranks_determined_by_this_homology_test": false,
+    "all_SL3_modules_or_subgroups_excluded": false,
+    "full_MRC_proved": false,
+    "worldwide_novelty_claim": false,
+    "uniform_assurance": "All-field inequality and every-prime control require written cochain/Schreier proofs; finite controls check inputs, not all groups. Unformalized and externally unreviewed"
+  },
+  "mutation_common_cover_progress": {
+    "blocks": {
+      "391": [
+        "13a_129",
+        "13a_136",
+        "13a_194",
+        "13a_197"
+      ],
+      "401": [
+        "13a_135",
+        "13a_137",
+        "13a_196",
+        "13a_198"
+      ]
+    },
+    "source_diagrams": 8,
+    "root_to_member_pairs": 6,
+    "maximum_Whitney_switches_per_pair": 1,
+    "cycle_vectors_per_named_graph": 128,
+    "edge_subsets_per_graph": 8192,
+    "positive_controls": 2,
+    "corruptions_rejected": 4,
+    "primary_imports": "Greene Cor4.5 with classical graph/plane-drawing inputs; Morton Thm3 torus-lift proof credited to Viro1976",
+    "conclusion": "Actual Conway mutation and common double covers within each4knot block;8 ordinary cover-rank questions reduce to2",
+    "abelianizations": [
+      391,
+      401
+    ],
+    "rank_interval_at_mutation_checkpoint": [
+      2,
+      3
+    ],
+    "rank3_proved_at_mutation_checkpoint": false,
+    "current_shared_rank": 3,
+    "conditional_knot_consequence": "Rank3 for one common group settles all4members using each retained upper4; no mutation invariance of bridge or meridional rank assumed",
+    "mutation_alone_target_closures": 0,
+    "other8_original_targets_untouched_at_checkpoint": true,
+    "assurance": "Independent finite graph replay; classical topology imported, literal planar mutation movie/Tietze maps not supplied. Uniform proof unformalized and externally unreviewed; no worldwide novelty claim",
+    "catalogue_at_mutation_checkpoint": 42
+  },
+  "compact_four_port_progress": {
+    "source_roots": [
+      "13a_129",
+      "13a_135"
+    ],
+    "closed_presentations": [
+      [
+        9,
+        13,
+        15
+      ],
+      [
+        12,
+        15,
+        11
+      ]
+    ],
+    "exact_moves": "Single-occurrence Tietze, inverse free automorphisms and normal-closure relator replacements; all accepted moves and generator maps replay",
+    "formal_pieces": "Common2generator1relator groups P(length11),Q(length7)",
+    "assembly": "G_X=(P*Q*free<z>)/normal(p_e*z*q_e^-1 for4ports); right base change and17to13arc gluing give an exact algebraic identity",
+    "boundary_generation": "Outside normalized words stall exactly on5full arcs0..4 in both roots; no rank2 or rank3 implication",
+    "verification": "Two roots,3known algebraic controls,4fragment and2assembly reductions;5compact+4port corruptions reject; H1=391/401 and transported nonabelian group order5616",
+    "graph_cues": "K4 with adjacent7edge and2edge networks; branch tree/forest19/14 or14/19, total tree count11T+13F. Conductance not certified rational-tangle slope",
+    "geometry_cues": "Candidate fillings match H1 but have degenerate numerical shapes and no single-pass Regina standard recognition;4_1controlL(5,2). No peripheral/core transport or geometric classification theorem",
+    "rank_interval_at_compact_checkpoint": [
+      2,
+      3
+    ],
+    "current_shared_rank": 3,
+    "compact_presentation_alone_target_closures": 0,
+    "other8_original_targets_untouched_at_checkpoint": true,
+    "new_classical_source_imports": 0,
+    "catalogue_at_compact_checkpoint": 42,
+    "uniform_assurance": "Elementary algebraic assembly proof written; formal/external review absent. No injectivity/JSJ/Seifert/gluing rank theorem imported"
+  },
+  "four_piece_sharp_progress": {
+    "new_original_target_equalities": [
+      "13a_129",
+      "13a_135",
+      "13a_136",
+      "13a_137",
+      "13a_194",
+      "13a_196",
+      "13a_197",
+      "13a_198"
+    ],
+    "double_cover_group_rank": 3,
+    "meridional_rank_and_bridge": 4,
+    "exact_models": "P andQ each split into D(2,3) and A(2) with explicit primitive peripheral sections; ports reduce to an injective torus amalgam",
+    "graph_manifold_JSJ_chain": [
+      "D(2,3)",
+      "A(2)",
+      "A(2)",
+      "D(2,3)"
+    ],
+    "edge_fiber_intersections": [
+      1,
+      1,
+      1
+    ],
+    "unimodular_edge_maps": 3,
+    "topological_gate": "Constructed model closed orientable irreducible; negative-base fiber uniqueness makes all3tori canonical. Exact group isomorphism suffices; no source-cover homeomorphism from numerical triangulations assumed",
+    "classical_rank_input": "Boileau-Weidmann2005 Theorem2 necessary list allows at most3JSJpieces for rank2, hence model rank>=3; exact3generator upper gives equality",
+    "finite_verification": "Independent cyclic-amalgam normal forms, free-basis/port identities, slope determinants and8individual upper4 traces;5further corruptions reject",
+    "uniform_assurance": "Seifert/JSJ and classification are written/imported classical arguments, unformalized and externally unreviewed; finite receipts certify inputs only",
+    "remaining_original_targets_at_checkpoint": [
+      "13a_233",
+      "13a_234",
+      "13a_239",
+      "13a_242",
+      "13a_243",
+      "13a_244",
+      "13a_253",
+      "13a_265"
+    ],
+    "panel_names_certified_at_checkpoint": 12,
+    "panel_names_without_certificate_at_checkpoint": 281,
+    "catalogue_at_checkpoint": 45,
+    "current_refinement": "Millichap-Worden2016 Cor5.4 removes original irregular-cover type; context read, full hidden-symmetry proof not audited or needed for eight-case bound",
+    "worldwide_previously_unresolved_status_at_checkpoint": "UNESTABLISHED",
+    "full_MRC_proved": false
+  },
+  "three_piece_sharp_progress": {
+    "new_original_target_equalities": [
+      "13a_233",
+      "13a_239",
+      "13a_253"
+    ],
+    "double_cover_group_rank": 3,
+    "meridional_rank_and_bridge": 4,
+    "graph_manifold_JSJ_chain": "D(2,3)-A(m)-D(2,3),m=2,3,2",
+    "central_filling_slopes": [
+      [
+        3,
+        -2
+      ],
+      [
+        -2,
+        -1
+      ],
+      [
+        -3,
+        2
+      ]
+    ],
+    "rank_gate": "BW05 Theorem2 case6 is the only3piece type, requires central2bridge link meridians. Filling the actual attached fiber has nonabelian C_m*C_abs(r) quotient ontoS3, impossible for the solid torus from a2bridge-component meridian filling",
+    "finite_verification": "Five full core and14fragment reductions; physical arc classes/all balanced4port cuts/17to13joins, complete cyclic-amalgam normal forms, primitive slopes and3S3quotients. Eight uppers replay;5corruptions reject",
+    "failed_transfers": [
+      {
+        "source": "13a_233",
+        "target": "13a_234",
+        "source_determinant": 403,
+        "target_determinant": 389,
+        "status": "NO_TRANSFER_CLAIM"
+      },
+      {
+        "source": "13a_239",
+        "target": "13a_242",
+        "source_determinant": 361,
+        "target_determinant": 359,
+        "status": "NO_TRANSFER_CLAIM"
+      },
+      {
+        "source": "13a_239",
+        "target": "13a_243",
+        "source_determinant": 361,
+        "target_determinant": 337,
+        "status": "NO_TRANSFER_CLAIM"
+      },
+      {
+        "source": "13a_239",
+        "target": "13a_244",
+        "source_determinant": 361,
+        "target_determinant": 311,
+        "status": "NO_TRANSFER_CLAIM"
+      },
+      {
+        "source": "13a_253",
+        "target": "13a_265",
+        "source_determinant": 337,
+        "target_determinant": 311,
+        "status": "NO_TRANSFER_CLAIM"
+      }
+    ],
+    "actual_rank_transfers": 0,
+    "remaining_original_targets_at_checkpoint": [
+      "13a_234",
+      "13a_242",
+      "13a_243",
+      "13a_244",
+      "13a_265"
+    ],
+    "original_targets_certified_at_checkpoint": 11,
+    "panel_names_certified_at_checkpoint": 15,
+    "panel_names_without_certificate_at_checkpoint": 278,
+    "catalogue_at_checkpoint": 45,
+    "uniform_assurance": "Written Seifert/JSJ/classification/filling argument, explicit classical imports; unformalized and externally unreviewed. No source-cover homeomorphism from numerical geometry assumed",
+    "worldwide_previously_unresolved_status_at_checkpoint": "UNESTABLISHED",
+    "full_MRC_proved": false
+  },
+  "original_sixteen_completion_progress": {
+    "new_original_target_equalities": [
+      "13a_234",
+      "13a_242",
+      "13a_243",
+      "13a_244",
+      "13a_265"
+    ],
+    "all_original_target_equalities": [
+      "13a_129",
+      "13a_135",
+      "13a_136",
+      "13a_137",
+      "13a_194",
+      "13a_196",
+      "13a_197",
+      "13a_198",
+      "13a_233",
+      "13a_234",
+      "13a_239",
+      "13a_242",
+      "13a_243",
+      "13a_244",
+      "13a_253",
+      "13a_265"
+    ],
+    "original_targets_certified_here": 16,
+    "remaining_original_targets": [],
+    "double_cover_group_rank": 3,
+    "meridional_rank_and_bridge": 4,
+    "new_exact_models": "Five direct D(2,3)-A(m)-D(2,3) source group models; Q_R(2/3),Q_L,Q_S root presentations, common conjugations, ks/sk outer base paths and inner fiber inversion at265",
+    "central_filling_slopes": [
+      [
+        3,
+        -2
+      ],
+      [
+        -2,
+        1
+      ],
+      [
+        -3,
+        2
+      ],
+      [
+        -3,
+        2
+      ],
+      [
+        -3,
+        2
+      ]
+    ],
+    "finite_verification": "Eight source/full and32fragment reductions, all balanced4port cuts and17to13joins, complete normal forms, primitive gluing matrices,3old controls,5actual S3 filling images,5individual uppers and6corruptions",
+    "rank_gate": "Actual nonabelian central filling excludes the only three-piece BW05 rank2 JSJ type; three pieces alone do not suffice. Written classical-import realization/JSJ and exact source upper3 required",
+    "cross_knot_rank_transfers": 0,
+    "failed_transfer_checkpoint_retained": true,
+    "panel_names_certified_here": 20,
+    "panel_names_without_certificate_here": 273,
+    "catalogue_at_checkpoint": 45,
+    "uniform_assurance": "Explicit working proofs and classical imports; unformalized and externally unreviewed. No numerical source-cover identification or rank=genus assumption",
+    "worldwide_previously_unresolved_status_at_checkpoint": "UNESTABLISHED",
+    "current_known_family_status": "ESTABLISHED BJW18 graph-cover family by closed rigidity",
+    "exact_named_computational_priority": "INCOMPLETE",
+    "full_MRC_proved": false
+  },
+  "known_graph_cover_family_progress": {
+    "original_targets_known_family": 16,
+    "new_cases_outside_known_MRC_families": 0,
+    "actual_double_covers": "Closed prime graph manifolds homeomorphic up to orientation to the exact constructed models",
+    "rigidity_input": "AFW15 final-author Theorems2.1.2-2.1.3, arbitrary closed classification; infinite prime model removes lens/prime-factor exceptions and proves source primeness",
+    "existing_MRC_family": "BJW18 published Theorem1.2 and Cor1.3, actual prime graph-manifold double branched cover and exact bridge4",
+    "upper_four_scope": "Known meridional ranks1/2 and rank3 graph-cover result already imply MRC for this class with b<=4; exact cover rank3 separately determines b=mr4",
+    "finite_binding": "All16literal named PDs and individual upper4 traces, retained exact model/lower seals and first8mutation aliases; topology not proved by finite checker",
+    "unchanged_exact_equalities": 20,
+    "other_sharp_seed_family_audit_names": [
+      "13a_3145",
+      "13a_3147",
+      "13a_3148",
+      "13a_3149"
+    ],
+    "exact_named_bridge_rank_priority": "UNESTABLISHED",
+    "catalogue_current_sources": 46,
+    "source_audit": "Final AFW author pp30-31/PDF34-35 visually checked and v3 scopes compared; BJW publishedpp61-64 reread. Full constituent proofs and published-version comparison remain imported",
+    "provenance_refresh": "29cheap already frozen source/provenance/replay recipes; no broad293/base/module campaign",
+    "uniform_assurance": "Written classical-rigidity consequence, unformalized and externally unreviewed. No branch-involution transport, boundary-manifold shortcut or numerical homeomorphism assumed",
+    "full_MRC_proved": false
+  },
+  "PDF_visual_review": "Earlier proofs retained. New actual-cover/known-family scope proof and updated literature map compiled twice, rendered and final previews inspected; relevant AFW/BJW primary pages visually checked; overfull boxes and unresolved references checked.",
+  "repository_navigation": {
+    "render_navigation": "FAILED on pre-existing registry validation error (see exact_failure)",
+    "check_navigation": "FAILED on the same pre-existing registry validation error",
+    "exact_failure": "KDSQ6: missing document consumer artifacts/generated-results/README.md",
+    "earlier_prior_work_search_failure": "Historical navigation output omitted during repository reorganization.",
+    "response": "Retained failures; did not reconstruct unrelated missing artifacts or hand-edit generated status. Scoped new records and source hashes checked."
+  },
+  "next_gate": "All16original targets are established BJW18 known-family cases by actual-cover closed rigidity; their exact rank3/b4 certificates stand, but no outside-known-family MRC case follows. Next audit the4earlier sharp simple3cover seeds3145,3147,3148,3149 for actual double-cover/other known-family scope under a small frozen plan, retaining the16as known controls. For prospective new-MRC targets beyond BJW18, justify actual double-cover topology outside the graph-manifold class and check other known families; hyperbolic knot exterior or non-arborescence alone is insufficient. A rank>=3 quotient may give cover lower4 without actual graph-cover identification, but such an outside-family construction remains prospective. Keep20named equalities and273panel names without certificates here separate from worldwide novelty. Preserve failures and do not rerun original16/293/base/module campaigns as discovery. Continue original/recent full-source, named-priority and fullMRC work.",
+  "live_background_process": null
+}

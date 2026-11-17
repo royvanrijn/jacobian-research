@@ -1,7 +1,0 @@
-{
-  "completed": false,
-  "returncode": 1,
-  "input_sha256": "1044f11d68af0cbdd170aa3b3dcc89fd601da1f629d3231b19fd9fa746722478",
-  "stdout": "Universal tangent filtration passed\nUniversal parent filtration passed\nRetained tangent seeds passed\nConstant-D full Gaussian tangent passed\nParent seed identities passed\n",
-  "stderr": "Traceback (most recent call last):\n  File \"/home/royvanrijn/src/jacobian-research/research/jacobian-followup/moment-vanishing-audit/verify_pole_filtered_seed_bounds.py\", line 358, in <module>\n    if __name__=='__main__':main()\n                            ^^^^^^\n  File \"/home/royvanrijn/src/jacobian-research/research/jacobian-followup/moment-vanishing-audit/verify_pole_filtered_seed_bounds.py\", line 348, in main\n    conics.append(conic_model('synthetic_p2_K'+str(kd)+'_A'+str(Ap),s.expand(W),K))\n                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/royvanrijn/src/jacobian-research/research/jacobian-followup/moment-vanishing-audit/verify_pole_filtered_seed_bounds.py\", line 259, in conic_model\n    assert min(laurent(R))>=-2*j and max(laurent(R))<=p*j\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError\n"
-}

@@ -1,7 +1,0 @@
-{"stage": "compiled", "buckets": 1329}
-{"status": "pass", "degree": 7, "bound": 7, "source_sha256": "8ef093a33e31cdd12a01d0ea72a91fec125d6a5135770179b525d0d732cdad5d", "manifest_sha256": "de8c6953e3ca8ab05879582b533f01ca125238a678d53b5c7b6676a263af5e24", "visited": 266295, "balanced": 2326, "counts_by_size": {"6": 450, "7": 1876}, "elapsed_seconds": 3.6452357019879855, "coverage": "Exact equality with all 90 production shards; independent universe, determinant expansion and global traversal."}
-{"stage": "independent-inputs", "done": 500, "total": 2326}
-{"stage": "independent-inputs", "done": 1000, "total": 2326}
-{"stage": "independent-inputs", "done": 1500, "total": 2326}
-{"stage": "independent-inputs", "done": 2000, "total": 2326}
-{"status": "pass", "claim": "GLDC2", "source_sha256": "6cca45c7cc499166be7762dd2807917642c05a5d0c6a6bf8f6d93931e6fa0d96", "manifest_sha256": "de8c6953e3ca8ab05879582b533f01ca125238a678d53b5c7b6676a263af5e24", "coverage_sha256": "ecaa7d11aafcb210559f8363e785781b3f16c7f0debefe2d85bdfd924523f2f5", "verified_coefficient_ideals": 2326, "seven_term_orbits": 1876, "six_term_regression_orbits": 450, "independent_coverage": true, "independent_coefficient_compilation": true, "rational_backends": ["Singular", "SymPy"], "algebra_rerun": true, "scope": "No normalized degree-at-most-seven Keller collision with at most seven nonlinear monomial occurrences.", "elapsed_seconds": 10.227236477017868, "versions": {"python": "3.12.3", "sympy": "1.14.0", "singular": "Singular for x86_64-Linux version 4.3.2 (4330, 64 bit) Apr  1 2024 04:44:00"}}

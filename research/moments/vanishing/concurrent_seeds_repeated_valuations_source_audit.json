@@ -1,0 +1,236 @@
+{
+  "date": "2026-11-15",
+  "canonical_proof": "moments/vanishing/CONCURRENT_SEEDS_REPEATED_VALUATIONS_GLOBAL98.md",
+  "canonical_proof_sha256": "06eaeae2d3aa939c308f15db827ba051eda374dfcba55161f272854eef7ab57b",
+  "claims": [
+    "G3CONCURRENT9220261115",
+    "G3REPEATED9620261115",
+    "G3PURE9820261115"
+  ],
+  "checker": "moments/vanishing/verify_concurrent_seeds_repeated_valuations.py",
+  "checker_sha256": "5a6819fd40360aa91dab42a275c873c814bcf424d63483fecc1ad64f3c14b3bb",
+  "certificate_sha256": "a4b3a4fe60eadc313ffba3a92b1c7dc0579ff63f9198db8aac29237ef40b4652",
+  "accepted_receipt_sha256": "afa66dc4419f4f07dd155710d9cb4d1a76bfaf6ccd9b2d67fc3393bb496ebb9c",
+  "prior_frontier": {
+    "path": "moments/vanishing/general98_preupdate_20261115.json",
+    "sha256": "43d848a55d6fd96643d267c411eb0907a6a465fbb7349cf0a28f32c990af6bb7"
+  },
+  "retained_inputs": {
+    "verify_ordinary_rank_one_lattice.py": "572582bffcf5cc86f4ef92924064130c1a2f8c28b164c79f8773592ec9cf1a59",
+    "ordinary_rank_one_lattice_source_audit.json": "c34fc5e634ba3647954453168279f79aae49496c99bfd314b844da6c400b84aa",
+    "ordinary_rank_one_lattice_certificate.json": "2ca29283bff1b1daa439194d79b853c1eaa1d99b6a8b874da387bf6fc8d63607",
+    "ordinary_rank_one_lattice_verification.json": "5afbf8b57e9787a465456b7226f607df7de43bdd4893041d22de11c93eaf7e0e",
+    "verify_cusp_rank_one_lattice.py": "ab3b3d12d844f1de5777dec73834cbcede4786937fc0a137e120b20f471485a0",
+    "cusp_rank_one_lattice_source_audit.json": "5b44f760c29213f33f925be2ce0a9ae72b2e2be7b0ed62c3f513a9c93fbc8811",
+    "cusp_rank_one_lattice_certificate.json": "cdb2daf8b7df004d29564798d276085fb8bff19d7dd469fcf0dedb54803d0e7f",
+    "cusp_rank_one_lattice_verification.json": "1535c3368e765c7b88a6d7e5978aee5dd1ea7a1f2d34026689cac5e50196a786",
+    "verify_tangent_rank_one_lattice.py": "ca9544a20282ec2ebdc808ddb5166933b5062361581cdbea3fb10a4945aa1166",
+    "tangent_rank_one_lattice_source_audit.json": "8eff7dc278cea7268fd67a03b109309c6d6c83edfffd54b32b88a315750d7b47",
+    "tangent_rank_one_lattice_certificate.json": "76cc570f9c931dda7fea4c76cda4cac779d3a0f3040c1f6fc7b51e64cd710cd6",
+    "tangent_rank_one_lattice_verification.json": "86107564ae70694d086e48bccf283e264655ce1aea2aa1b0e5f4cb2eb5e48544",
+    "verify_triangular_divisor_factors.py": "37ddf15898dc825896a37701797a4dd6cfef8c62254e55015aa92a778cdab0c5",
+    "triangular_divisor_factors_source_audit.json": "c2518d693896368fd50364e8366f2defe3041294103500bdb3c33e79e2c885f6",
+    "triangular_divisor_factors_certificate.json": "de5edb1c5ce023b6c14595548116eae7a35a7abe9d2320ccd0e824d16af80b54",
+    "triangular_divisor_factors_verification.json": "4e47a14e5514602352c55cdbde16a40fcbfb095ba98114d0751ca08370abee78",
+    "even_time_odd_seeds_source_audit.json": "8c88da14f2d063c69eeeadb614de98f855e5a1fd0743da9d621743888f0d5800",
+    "conic_completed_row_factors_source_audit.json": "59f4d3cd0e2a344bda067ca699603bd9ba65db8ecec0ffd93ae53359375fd4c6",
+    "verify_gaussian_regular_projection.py": "718fe122604958fcf9191a5df91a54d1ae785caf9770b93392bd2625c6a87f62",
+    "gaussian_regular_projection_source_audit.json": "b3497b9b50d6e0070fb7237b621391e635166f1ee7e0dbc7a32203e1c3d0d6d4",
+    "gaussian_regular_projection_certificate.json": "47f7155c6513c308ec7fbbe45510ac2f67817221a24cb040d0f45822161874e6",
+    "gaussian_regular_projection_verification.json": "7b1f92fe13d548cd2c858dfbcd37b33a52c5984ed6dafdb8dd1126cbf0b3af88",
+    "verify_gaussian_projection_at_infinity.py": "9eb1281e91829fa3087896858bdb46aa53ce2643509c707dbd731723d3528e64",
+    "gaussian_projection_at_infinity_source_audit.json": "ec11d3d0562cf7c1f010e2a0bdc6196fc92b6e77d4d947ad4f3b1df88a03a6e5",
+    "gaussian_projection_at_infinity_certificate.json": "51634b7b5ab93d84b7f1beb463c5c0bc300a8b2bdfcfe432b8dc98cddaf04ab9",
+    "gaussian_projection_at_infinity_verification.json": "2cefd155906b69156317196f38c503d085fe9f24fd37427fd72a5fe8718414b0",
+    "verify_squarefree_singular_finite_prefixes.py": "3d5fbdbd22fe7663a0d980d071b2fd6ff55cee4540b447a989577a6c53d92eb3",
+    "squarefree_singular_finite_source_audit.json": "bda9ec1bac0761450c4f1cfb55eadb7bc5bd0aa4c88a0bb6ecaf4612ae0bd362",
+    "squarefree_singular_finite_prefixes_verification.json": "6395fd8561f50347be07673ad76f8129393abc194877f73f7acab44541d6f9e2",
+    "verify_repeated_line_finite_prefix.py": "6ae86dce8c44fc8ecb45428ede3c039d1552f50bd02dc928559b287d6ff5600b",
+    "repeated_line_finite_prefix_source_audit.json": "c5de976ef369961b072f8f817bf17908f8f7cef194f001b0a2e5114ddee106fd",
+    "repeated_line_finite_prefix_verification.json": "95c3d07ad210bcaf022ccc4c315c051ca2218636e3806bdb7fcae0db08165f4f",
+    "concurrent_line_source_audit.json": "3655c07546e6aad64f7b924d152d4c4690fde7bda0630ee8f6ca9228fe9d3bb8",
+    "concurrent_line_profiles_verification.json": "88c22ec592ecccecba2b32f62a8af436d83f26b0ede0a95d04f9e130c97ee6ff",
+    "POLE_FILTERED_GLOBAL_199.md": "ac04552d1dcfd4d8ea214aae3950976ec6b30442f097ef8129d5f2682454c41f",
+    "MIXED_PERIOD_AT_INFINITY.md": "f27dbf263f1d5ce8f30b9850ab56174a436040d41c2032611657d6f2e9ea2239"
+  },
+  "historical_proof_immutability": {
+    "JOINT_DEGREE_GLOBAL_353.md": "5369191d5a67c2d05750033ef3d9d19c6ad61afcfb2d532a0a0c6f1016c451f9",
+    "EULER_REPRESENTATIVES_GLOBAL_297.md": "3a7591c55c7ae52b23f00a897c58ca42105de1b680521d46a596f2d7ef3fd631",
+    "SHARED_DIVISOR_GLOBAL_258.md": "5146f6676da462bfd741bde1ec9d8184eddc292389467005207e0e3d2df8aaf9",
+    "STRUCTURED_SEEDS_GLOBAL_239.md": "c5d09c4aadac8bc9911d9460034507a446d7c507e10950b324e594273d70d924",
+    "COMMON_TIME_FACTOR_GLOBAL_224.md": "4429c2c08cbabace6b1b23e2a6f501205068a43d04810a859d81d76133ca5208",
+    "POLE_FILTERED_GLOBAL_199.md": "ac04552d1dcfd4d8ea214aae3950976ec6b30442f097ef8129d5f2682454c41f",
+    "MULTIPLE_DIVISORS_GLOBAL_174.md": "2e4d1808e43ba5fcfce4a86a8bf15a0c20166e5994346a2db2c02cbc44787bba",
+    "NORMAL_MODULE_GLOBAL_146.md": "f58675c096e137292e813852894603153a41c70bd1bff681ee788908334baa6a",
+    "TWO_SIDED_CONIC_GLOBAL_140.md": "e862be29b4eafe29d5cbc0df6ca003294e0523409afb441669527fae2a47654f",
+    "RANK_FACTORS_AND_REDUCTION_GLOBAL_130.md": "d39725481b3e733c399e60a42663d4311f9fe76f5698fce2842a5782f86762dc",
+    "CONIC108_ODD126_GLOBAL130.md": "8caf3664ebb6149f3c48c49304447df9811c5b46421ece776bb2f77415c58697",
+    "PREFIX_PROOF_HISTORY.md": "3426a5a8e60d0d14f177e23e2c9e157778eae3644ec2caa564af9c17d4b8997c",
+    "WEIGHTED_ODD_PREFIX108.md": "c9238da9e5b7e2e7242cdf999bd7105a5d131b441b9a373fad420842fc79c878",
+    "CONIC_ROW_FACTORS_96_ODD104.md": "18a67c884339a850cb02093c49988d374e3e209dc2b6e2ca25b132dc96ba11b9",
+    "ODD_CONCURRENT36_PREFIX100.md": "14fa528c9939440372fd2c6dd24a3319a0a3009923867bf272edd0f06281c54c",
+    "EVEN_TIME_SEEDS_ODD98.md": "e45b83608783ed7bb08f40a660a384f750f8b9ca131a2af736f0f751b379a28c",
+    "CUSP_RANK_ONE_LATTICE_GLOBAL129.md": "f797b342cd5f4b210b5b13ce38a656671fbf0961407d1b4ce0b34f83cb5153e3",
+    "ORDINARY_RANK_ONE_GLOBAL125.md": "30c7c6e4fb21e3e15ae2d6e13817281c9c4dc04c4e115526f4251f5b287cfbad",
+    "TRIANGULAR_DIVISOR_FACTORS_GLOBAL120.md": "f226f9572aadae9dace2f1e098774132b6f0448ddd48465fab6fb29eedc2cf27",
+    "TANGENT_POLE_RESIDUE_GLOBAL115.md": "3a703e2b39fa0ab1dae3665e490cf99ef54b25cddb4dfd6e49440f11a7183033",
+    "FORMAL_GAUSSIAN_PROJECTION_GLOBAL109.md": "9e2dc4261e513fa31863d9ed8b129890e8af336def9b8608a8152139ebd7babc",
+    "GAUSSIAN_PROJECTION_INFINITY_GLOBAL104.md": "982d8b7475437bb9ae810b549804423859b301914c14df7e1900ccfed8444c2a",
+    "SQUAREFREE_SINGULAR_FINITE_PREFIXES.md": "f42af6f91929965309498626a79e78de2c249ec0698e9713c8bf7a11e4311822",
+    "REPEATED_LINE_FINITE_PREFIX.md": "8a8056d24b194124c2ae4138ee754011c8d7b3843824fa8c3256db36f6488a19",
+    "CONCURRENT_LINE_EXCLUSION.md": "9a6f0f9e16b74daf0c20627d94c248b7e02128cd182b3c6152b0ca3385a4c056"
+  },
+  "previous_goal_turn_classification": "progress: formal Morse/Gaussian projection at infinity established constant-D80/91/93/71/61,full96/97/98/95/95 and general104,with exact auxiliary checks,retained immutable evidence and completed scoped records.",
+  "concurrent_actual_seed_method": {
+    "full_lower_terms_means_metric_retained": true,
+    "phase": "D*G+(p*u+q*v+r)^2/2",
+    "F_amplitude_degree": 1,
+    "phase_joint_bound": 4,
+    "linear_D_source_joint_bound": 5,
+    "constant_D_source_joint_bound": 4,
+    "source_amplitude_bound": 2,
+    "whole_h": "t^3 D^2",
+    "radial_Euler_witnesses": [
+      "2D*u*f/3",
+      "2D*v*f/3"
+    ],
+    "ordinary_volume_divergence": "4t^2 D^2/3",
+    "full_determinant_denominator_time_Euler_derivatives_retained": true,
+    "actual_R_joint_bounds": {
+      "linear_D": "5j",
+      "constant_D": "4j"
+    },
+    "actual_R_amplitude_bound": "2j",
+    "principal_D_cleared_joint_cost": 1,
+    "amplitude_depth": "2j-1",
+    "row_bounds": {
+      "linear_D": "7j-1-|e|",
+      "constant_D": "6j-1-|e|"
+    },
+    "scalar_denominator": "t^(3j) D^(4j-1)",
+    "higher_scalar_valuation_at_least": "3j",
+    "all_actual_ranks_row_sets": true,
+    "linear_D_complement": 62,
+    "constant_D_complement": 52,
+    "D_identically_zero_affine_W_frame": 92,
+    "concurrent_full_gate": 92,
+    "D_at_zero_and_all_frames_retained": true
+  },
+  "repeated_actual_valuation_method": {
+    "actual_elimination_U_D_degree_bounds": [
+      3,
+      2
+    ],
+    "actual_phase_degrees": [
+      3,
+      4
+    ],
+    "nonisotropic_U_at_zero_amplitude_at_most": 2,
+    "nonisotropic_a_at_zero": 0,
+    "isotropic_D": "t*(A*t-1/2)",
+    "isotropic_D_at_zero": 0,
+    "connection_denominator": "D^2 a^d",
+    "all_actual_H_at_zero": 0,
+    "H_not_identically_zero_required": true,
+    "H_valuation_at_least": 1,
+    "B": "4+3d",
+    "scalar_degree_bound": "B*s*(s+1)/2",
+    "higher_scalar_valuation_at_least": "j",
+    "extra_rank_order_allowance_not_needed": true,
+    "no_scalar_factor_cancelled": true,
+    "cubic_complement_gate": 39,
+    "quartic_complement_gate": 96,
+    "adapted_frame_gates_retained": [
+      35,
+      92,
+      93
+    ],
+    "all_actual_lower_degree_and_frame_faces_retained": true,
+    "repeated_full_gate": 96
+  },
+  "global_cover": {
+    "quadratic": 7,
+    "smooth": 94,
+    "nodal": 96,
+    "cusp": 95,
+    "transverse": 97,
+    "tangent": 95,
+    "triangle": 98,
+    "concurrent": 92,
+    "repeated": 96
+  },
+  "odd_cover_unchanged": {
+    "quadratic": 7,
+    "smooth": 94,
+    "nodal": 98,
+    "cusp": 94,
+    "transverse": 98,
+    "tangent": 94,
+    "triangle": 96,
+    "concurrent": 36,
+    "repeated": 98
+  },
+  "global_sufficient_pure_prefix": 98,
+  "odd_sufficient_pure_prefix": 98,
+  "homogeneous_sufficient_pure_prefix": 96,
+  "conic_full_W_linear_gate_unchanged": 96,
+  "least_prefix_interval": [
+    20,
+    98
+  ],
+  "odd_least_prefix_interval": [
+    20,
+    98
+  ],
+  "homogeneous_least_prefix_interval": [
+    14,
+    96
+  ],
+  "smooth_leading_least_prefix_interval": [
+    20,
+    94
+  ],
+  "smooth_homogeneous_least_prefix_interval": [
+    14,
+    56
+  ],
+  "current_radical_target": "I98",
+  "binary_search_rounds_max": 7,
+  "frame_condition_required_for_global98": false,
+  "exact_auxiliary_evidence": {
+    "concurrent_source_gauge_identities": 28,
+    "concurrent_principal_identities": 62,
+    "concurrent_models": 5,
+    "concurrent_original_seed_identities": 20,
+    "concurrent_full_cofactor_relations": 5,
+    "repeated_models": 4,
+    "repeated_exact_connection_columns": 10,
+    "repeated_full_cofactor_relations": 4
+  },
+  "selected_primary_record_refresh_retained": {
+    "path": "moments/vanishing/ordinary125_primary_record_refresh_20261115.json",
+    "sha256": "ba024b266a364c50d9dc636dbe9a0eb0aecf2a3508ebc12389f4f3d026373ad5"
+  },
+  "literature_boundary": "No fresh literature-coverage claim,external theorem or producer package; selected primary-record/body audits remain retained.",
+  "analytic_boundary": "Universal actual concurrent numerator/reduction/seed/minor induction,actual repeated elimination chart coverage and scalar valuation argument,full coefficient/metric/frame/leading-type choices,the seed-to-period bridge and analytic nonzero zeroth exclusions remain independently unreviewed written inputs. Finite checks support auxiliary algebra and do not certify the complete theorem.",
+  "least_prefix_computed": false,
+  "full_coefficient_radical_search_executed": false,
+  "expanded_global_radical_cofactors_computed": false,
+  "universal_written_proof_certified_by_checker": false,
+  "independent_replay": false,
+  "external_review": false,
+  "formal_verification": false,
+  "new_external_theorems_imported": false,
+  "producer_package_executed": false,
+  "assurance": "Internal written full concurrent actual-seed degree proof gives complements62/52 and full92 including the isotropic affine-W frame. Actual repeated elimination has H(0)=0 for H=D^2 a^d:nonisotropic U(0) has degree<=2,and isotropic D(0)=0. Higher scalar valuations>=j remove the old extra rank allowance, giving cubic39,quartic96 and full repeated96 with adapted frames35/92/93 retained. Exact28 source-gauge/62 principal identities,20 original concurrent seeds,five full concurrent scalar relations,actual elimination valuation identities,10 repeated connection columns,four full repeated scalar relations and all rank/row/valuation checks pass. Universal induction,complete frame/metric/chart cover and analytic nonzero-zeroth inputs remain independently unreviewed; no independent,external or formal certification.",
+  "remaining": [
+    "Least global[20,98],odd[20,98],homogeneous[14,96]",
+    "Twenty/fourteen-moment sufficiency",
+    "Smaller general triangle98/transverse97/node-repeated-conic96,odd node-transverse-repeated98 and homogeneous conic96 gates",
+    "Expanded I98 radical cofactors",
+    "Independent analytic review",
+    "Exceptional coefficient schemes",
+    "Global term-count minima",
+    "Lower-power GVC"
+  ]
+}

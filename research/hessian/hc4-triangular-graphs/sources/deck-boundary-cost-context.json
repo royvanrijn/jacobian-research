@@ -1,0 +1,124 @@
+{
+  "review_date": "2026-11-16",
+  "retained_structural_inputs": [
+    {
+      "claim": "HC4MYKU0",
+      "canonical_source": "hessian/hc4-triangular-graphs/CANONICAL_TRACE_DUAL_ETALE_RECONSTRUCTION.md"
+    },
+    {
+      "claim": "HC4MYKU1",
+      "canonical_source": "hessian/hc4-triangular-graphs/CANONICAL_TRACE_DUAL_ETALE_RECONSTRUCTION.md"
+    },
+    {
+      "claim": "HC4MYKT1",
+      "canonical_source": "hessian/hc4-triangular-graphs/KULIKOV_EXACT_COFRAME_AND_TATE_BOUNDARY_FILTER.md"
+    },
+    {
+      "claim": "KMFI47",
+      "canonical_source": "jacobian/monodromy-theory/GENERAL_DECK_RIGIDITY.md"
+    },
+    {
+      "claim": "PF2BATT1",
+      "canonical_source": "jacobian/jc2-boundary-attachment/PROOF.md"
+    },
+    {
+      "claim": "HC4MYKN1",
+      "canonical_source": "hessian/hc4-triangular-graphs/CANONICAL_BOUNDARY_AND_STABLE_COMPLETE_INTERSECTION_OBSTRUCTION.md"
+    },
+    {
+      "claim": "UADANVOL1",
+      "canonical_source": "jacobian/universal-keller-log-picard/PROOF.md"
+    },
+    {
+      "claim": "UALOGVOL1",
+      "canonical_source": "jacobian/universal-keller-log-picard/PROOF.md"
+    },
+    {
+      "claim": "HCTANG2",
+      "canonical_source": "hessian/tang-hc4-audit/STRUCTURAL_REVIEW.md"
+    },
+    {
+      "claim": "HC4MYKZ1",
+      "canonical_source": "hessian/hc4-triangular-graphs/COMPLETE_HOLOMORPHIC_FLOW_DESCENT.md"
+    },
+    {
+      "claim": "KMFI1",
+      "canonical_source": "jacobian/monodromy-theory/THEORY.md"
+    },
+    {
+      "claim": "HC4MYKR0",
+      "canonical_source": "hessian/hc4-triangular-graphs/QUADRATIC_SOURCE_RECONSTRUCTION_AND_QUARTIC_RETIREMENT.md"
+    }
+  ],
+  "retained_proof_and_source_sha256": {
+    "hessian/hc4-triangular-graphs/CANONICAL_TRACE_DUAL_ETALE_RECONSTRUCTION.md": "fef1bc4871537c9d073c424c9dbbd4f0296dd287728a0724c9101c5a7b5cf3c2",
+    "hessian/hc4-triangular-graphs/verify_canonical_etale_reconstruction.py": "ad7d5b53096780353298ee052c9ac4341d0eced2b7194c5c83c397c19af91b4f",
+    "hessian/hc4-triangular-graphs/KULIKOV_EXACT_COFRAME_AND_TATE_BOUNDARY_FILTER.md": "1d240fba9d98167b36466f948e7b49d46d11ade40368feef92496257b3e2956f",
+    "hessian/hc4-triangular-graphs/verify_kulikov_tate_control.py": "eae58fb95919131de88e2d4e5b0952d15e995270265a455c3df08b32b5fd2128",
+    "jacobian/monodromy-theory/GENERAL_DECK_RIGIDITY.md": "d99a141ff87cb768763e691462d06be0aa2bffe7f31880f77450f9ec90df4015",
+    "jacobian/monodromy-theory/verify_regular_deck.py": "be0348de8326f5fa3a60e154c348ad79982668a7280a2422a92975f7175697f0",
+    "jacobian/jc2-boundary-attachment/PROOF.md": "2cbbd8ead07f9e73f84b655940086369040cbcf55fc6578a5625744416ec6666",
+    "jacobian/jc2-boundary-attachment/verify.py": "e426651d71c51064e6dbb3fb5369ae8938adcffc4c0208be675fd5e627da9f07",
+    "hessian/hc4-triangular-graphs/CANONICAL_BOUNDARY_AND_STABLE_COMPLETE_INTERSECTION_OBSTRUCTION.md": "679c5f12083b9cdc657650417315c3e881974aee62c6a372c725d6d8193b657c",
+    "hessian/hc4-triangular-graphs/verify_canonical_boundary.py": "94379f2cbb83cfd80ad374b13538391fbdc6b6c9fce997e6917f53e7f667f801",
+    "jacobian/universal-keller-log-picard/PROOF.md": "ed4302aacae26a7a7b97259555d80859fa704b2055d5a94009a6887b91a539a6",
+    "jacobian/universal-keller-log-picard/verify.py": "138a9b63971c18638ac3c54e9fc0407042e8c7b0de2463fd370d732c08ebe6b0",
+    "hessian/tang-hc4-audit/STRUCTURAL_REVIEW.md": "26a6a76eb579de05b8e71245b8b804bdd5f036602f2e3e6ad5d036fd9f5cd572",
+    "hessian/tang-hc4-audit/verify_structural.py": "23e87f797b4d086ede8195773092dcd42d705258ec57c05920731e87e0ce9b2d",
+    "hessian/hc4-triangular-graphs/COMPLETE_HOLOMORPHIC_FLOW_DESCENT.md": "3711cc20f414a854a116c0455a79c2980e9480e7ba79ccc45e8fd37a76683844",
+    "hessian/hc4-triangular-graphs/verify_complete_holomorphic_flow.py": "1db11472a6133a2b15753ec4072984b20e3868c06801c2146bbc110f4866c58c",
+    "jacobian/monodromy-theory/THEORY.md": "71de191500c3ac73298540d8ce8b5496243b2b1a34b20313e3ab42d332532cdc",
+    "jacobian/monodromy-theory/verify.py": "f6538a84c4cb04c532be93647e808e978a165bc6dd90efef0024586ebbc80c47",
+    "hessian/hc4-triangular-graphs/QUADRATIC_SOURCE_RECONSTRUCTION_AND_QUARTIC_RETIREMENT.md": "c45fe8fb1c9f0eabfa8bfef32e30b96e71834ee68609e59069e8fb9039034eca",
+    "hessian/hc4-triangular-graphs/verify_quadratic_reconstruction.py": "0494f04ada75cf1cb7859bb1d86e63ea0259a6ce4e838ab4678276098d93c49f",
+    "jacobian/universal-keller-fixed-fibres/sources/dubouloz-palka-pseudo-planes.html": "b5e8f6184688447b21611a4b81abb689012cd6ef46d5eebf74a096e2e77b67ef"
+  },
+  "new_primary_sha256": {
+    "sources/dubouloz-palka-pseudo-planes-1701.01425v2.pdf": "41150cfda4fdf477efefc7d2ce55bc5fb49941705620b567b3333df5fe84281e"
+  },
+  "inspected_primary_context": [
+    {
+      "title": "Dubouloz-Palka,The Jacobian Conjecture fails for pseudo-planes",
+      "url": "https://arxiv.org/pdf/1701.01425v2",
+      "retained_file": "sources/dubouloz-palka-pseudo-planes-1701.01425v2.pdf",
+      "inspected": "Actual26-pagev2 PDF.Lemma2.9 printed/PDFp6 and Examples2.11/2.12 printed/PDFpp6-7 read;publisher reference Adv.Math.339(2018),248-284,DOI10.1016/j.aim.2018.09.020.",
+      "role": "ONE new proved import:Q-homology plane of negative log Kodaira dimension with finite pi1 has CYCLIC pi1.The named cyclic surfaces and free actions are prior published controls,not claimed new."
+    }
+  ],
+  "newly_imported_proved_external_statements": [
+    {
+      "theorem": "Dubouloz-Palka1701.01425v2 Lemma2.9 printed/PDFp6,crediting Miyanishi/Fujita",
+      "use": "Only the equality case c=1 is a Q-homology plane;its negative logarithmic Kodaira dimension and finite pi1 then force cyclicity.No application to arbitrary c>=2."
+    }
+  ],
+  "newly_used_unproved_external_statements": [],
+  "prior_credit": "KU constructs the ENTIRE affine etale completion and identifies omitted unramified boundary;KT gives its actual weight2 geometry;KMFI47 supplies the free-deck affine quotient and finite-cover Euler framework and already excludes polynomial source decks;UADANVOL1 gives exact volume for m>=2;UALOGVOL1 retains log-form pullback under boundary resolution;Dubouloz-Palka Examples2.11/2.12 already give the cyclic family.",
+  "full_theorem_target": "Full HC4/JC2 proof or actual counterexample.",
+  "last_unsolved_implication": "ACTUAL polynomial plane source ==> Tr(Lambda_L*Lambda_L) subset B,or full marked canonical-energy integrality;OPEN.",
+  "generic_deck_group_extends_freely_to_full_etale_completion": true,
+  "generic_deck_order_divides_degree_and_unramified_boundary_plus1": true,
+  "rational_Picard_character_augmented_regular_proved": true,
+  "quotient_Picard_torsion_equals_character_group_proved": true,
+  "noncyclic_generic_deck_group_cost_at_least_twice_order_minus1_proved": true,
+  "sharp_all_order_cyclic_controls_have_actual_open_A2_chart": true,
+  "sharp_controls_have_descended_exact_volume": true,
+  "sharp_controls_have_surjective_nonproper_etale_A2_to_pseudoplane": true,
+  "generic_deck_group_identified_with_monodromy": false,
+  "generic_decks_assumed_to_preserve_actual_A2_chart": false,
+  "integral_Picard_lattice_claimed_permutation_or_stably_regular": false,
+  "all_generic_deck_groups_proved_cyclic": false,
+  "deck_group_proved_to_exist_automatically": false,
+  "quotient_identified_with_entire_intermediate_etale_locus": false,
+  "Q_homology_plane_classification_independently_reproved": false,
+  "new_exact_volume_formula_claimed_novel": false,
+  "sharp_pseudoplane_target_claimed_A2": false,
+  "etale_pseudoplane_to_A2_constructed": false,
+  "trace_pairing_regularity_inferred_from_Hodge_purity": false,
+  "whole_surviving_higher_degree_packet_excluded": false,
+  "last_HC4_source_to_regular_inverse_Gram_implication_proved": false,
+  "external_review_deferred": true,
+  "external_review_requested": false,
+  "old_registered_mathematical_checkers_replayed": false,
+  "unrestricted_HC4_or_JC2_resolved": false,
+  "original_goal_complete": false
+}

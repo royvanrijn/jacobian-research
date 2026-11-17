@@ -1,0 +1,25 @@
+{
+  "command": [
+    "julia",
+    "--startup-file=no",
+    "--heap-size-hint=1G",
+    "--project=/home/royvanrijn/src/jacobian-research/research/jacobian/gao-f7-three-point-certificate/julia",
+    "/home/royvanrijn/src/jacobian-research/research/jacobian/gao-f7-three-point-certificate/generate_local_dag.jl",
+    "1000000009",
+    "1000000021",
+    "1000000033",
+    "1000000087",
+    "1000000093",
+    "1000000097",
+    "1000000103"
+  ],
+  "status": "completed",
+  "code": 0,
+  "seconds": 9.488746895003715,
+  "time_cap": 120,
+  "virtual_memory_cap_GB": 8,
+  "output_cap_MB": 100,
+  "source_sha256": "68498831429868c4075464a5e4901d8496f5b0eb8b54825ca66889697b6424f5",
+  "patch_sha256": "f0db8d60a9cf7bdee2294f76d0d788e34041f44198de0a14bdafb23a0bee22f1",
+  "boundary": "Modular local identities are not a characteristic-zero certificate."
+}

@@ -113,10 +113,10 @@ jobs:
         shell: bash
         run: |
           set -euo pipefail
-          python research/scripts/research_jc72_108_case1_rankdrop.py /tmp/case1-exact.sing | tee research/artifacts/verification/jc72-108-case1-generate.log
+          python research/scripts/research_jc72_108_case1_rankdrop.py /research/.scratch/case1-exact.sing | tee research/artifacts/verification/jc72-108-case1-generate.log
           grep -q '^CASE1_RECONSTRUCTION_PASS$' research/artifacts/verification/jc72-108-case1-generate.log
           grep -q '^CASE1_SPECIAL_FIBRE_PYTHON_PASS$' research/artifacts/verification/jc72-108-case1-generate.log
-          Singular -q /tmp/case1-exact.sing | tee research/artifacts/verification/jc72-108-case1-exact.log
+          Singular -q /research/.scratch/case1-exact.sing | tee research/artifacts/verification/jc72-108-case1-exact.log
           grep -q '^CASE1_SPECIAL_FIBRE_BEZOUT_PASS$' research/artifacts/verification/jc72-108-case1-exact.log
           grep -q '^CASE1_N_MOD_H_PASS$' research/artifacts/verification/jc72-108-case1-exact.log
           grep -q '^RANKDROP_EXACT_UNIT_PASS$' research/artifacts/verification/jc72-108-case1-exact.log
@@ -124,8 +124,8 @@ jobs:
         shell: bash
         run: |
           set -euo pipefail
-          python research/scripts/research_jc72_108_case1_rankdrop.py /tmp/case1-p71.sing --prime 71 --lift | tee research/artifacts/verification/jc72-108-p71-generate.log
-          Singular -q /tmp/case1-p71.sing | tee research/artifacts/verification/jc72-108-p71.log
+          python research/scripts/research_jc72_108_case1_rankdrop.py /research/.scratch/case1-p71.sing --prime 71 --lift | tee research/artifacts/verification/jc72-108-p71-generate.log
+          Singular -q /research/.scratch/case1-p71.sing | tee research/artifacts/verification/jc72-108-p71.log
           grep -q '^RANKDROP_UNIT_IDENTITY_PASS$' research/artifacts/verification/jc72-108-p71.log
           grep -q '^CASE1_H_DETERMINANTAL_PASS$' research/artifacts/verification/jc72-108-p71.log
       - name: Archive the JC72-108 replay logs

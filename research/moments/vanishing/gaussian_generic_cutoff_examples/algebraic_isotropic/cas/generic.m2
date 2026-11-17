@@ -1,0 +1,13 @@
+load "/home/royvanrijn/src/jacobian-research/research/moments/vanishing/gaussian_generic_field_core.m2";
+B=QQ[c0];
+PP=ideal matrix(B,{{(1)*1+(1)*c0^2}});
+if not isPrime PP then error "generic coefficient ideal must be PRIME";
+gCoefficientBase=B;gCoefficientQuotient=B/PP;
+K=frac gCoefficientQuotient;
+W=K[x0,x1,t,dx0,dx1,dt,WeylAlgebra=>{x0=>dx0,x1=>dx1,t=>dt}];
+P=sub((1)*x1^1*c0^1+(1)*x0^1,W);
+I=ideal(dx0+((1)*x0)-t*diff(x0,P),dx1+((1)*x1)-t*diff(x1,P),dt-P);
+R=gGenericSource(I,2);
+R=new HashTable from (pairs R | {"generic_prime_checked"=>true});
+stdio << "RESULT_JSON|" << toJSON R << endl;
+print("GENERIC_COMPLETE");exit 0;

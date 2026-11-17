@@ -1,0 +1,29 @@
+{
+  "claim": "QPA1",
+  "status": "SCOPED_PASS",
+  "claim_schema_sources_hashes_and_consumers": "PASS",
+  "new_and_changed_methods_and_scope_reviews": "PASS",
+  "work_destination_and_scope_reviews": "PASS",
+  "retained_Long_and_QSO2_localization_receipt": "PASS",
+  "python_compile": "PASS",
+  "changed_files_diff_check": "PASS",
+  "local_markdown_links_checked": 160,
+  "unique_equation_labels": 14,
+  "proof_sha256": "3272e997f36f566cf0587d5d99cabb003e377a9da5457d193ee02ad6a19d9200",
+  "checker_sha256": "b20c100989a2266f48fb366efc181bc2cea69f514ea4ecb383e7f876bfebb046",
+  "proof_boundary": "Finite symbolic identities only. The two-branch field lemma, completed quantum intersection, full positional-image theorem, all-source low-order exclusion and ambient ad-nilpotence classification use written proofs, not finite degree tests.",
+  "independent_replay": false,
+  "formal_verification": false,
+  "external_review": false,
+  "previous_goal_turn": "progress: QSO2 proved the all-order quadratic mate classification and valued partner-order obstruction, registered it and passed scoped checks",
+  "goal_status": "active",
+  "status_renderer": {
+    "exit_code": 1,
+    "result": "AssertionError: KDSQ6: missing document consumer artifacts/generated-results/README.md"
+  },
+  "navigation_renderer": {
+    "exit_code": 1,
+    "result": "Historical navigation output omitted during repository reorganization."
+  },
+  "QHR1_navigation_addendum_and_control_replay": "PASS"
+}

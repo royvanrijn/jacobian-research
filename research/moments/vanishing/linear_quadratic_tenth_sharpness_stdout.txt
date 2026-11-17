@@ -1,0 +1,23 @@
+   ? error occurred in or before /home/royvanrijn/src/jacobian-research/research/moments/vanishing/linear_quadratic_tenth_sharpness.sing line 5: `poly discr=d2^2-4d3-4d2^3-27d3^2+18d2*d3;`
+   ? expected poly-expression. type 'help poly;'
+   ? `discr` is not defined
+   ? error occurred in or before /home/royvanrijn/src/jacobian-research/research/moments/vanishing/linear_quadratic_tenth_sharpness.sing line 6: `poly good=d3*discr*(4d2+4h1-5);`
+   ? expected poly-expression. type 'help poly;'
+EIGHTH_PREFIX_DIMENSION
+0
+EIGHTH_PREFIX_LENGTH
+28
+   ? `good` is not defined
+   ? error occurred in or before /home/royvanrijn/src/jacobian-research/research/moments/vanishing/linear_quadratic_tenth_sharpness.sing line 9: `ideal Good=sat(G,ideal(good));`
+   ? expected ideal-expression. type 'help ideal;'
+GOOD_WITNESS_LENGTH
+   ? `Good` is not defined
+   ? error occurred in or before /home/royvanrijn/src/jacobian-research/research/moments/vanishing/linear_quadratic_tenth_sharpness.sing line 10: `OD_WITNESS_LENGTH");print(vdim(Good));print("GOOD_WITNESS_BASIS");print(Good);`
+GOOD_WITNESS_BASIS
+`Good`
+   ? `good` is not defined
+   ? error occurred in or before /home/royvanrijn/src/jacobian-research/research/moments/vanishing/linear_quadratic_tenth_sharpness.sing line 11: `ideal Bad=std(Good+ideal(good));print("BAD_LOCUS_IDEAL");print(Bad);`
+   ? expected ideal-expression. type 'help ideal;'
+BAD_LOCUS_IDEAL
+`Bad`
+END

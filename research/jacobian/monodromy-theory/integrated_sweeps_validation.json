@@ -1,0 +1,385 @@
+{
+  "result": "pass",
+  "audited_utc": "2026-11-15T03:23:50.621311+00:00",
+  "previous_goal_turn": "KMFI106--108 computed exceptional completion fibers, inertia powering and exact normalization class-rank growth.",
+  "claims_reviewed": [
+    "OP-KMON",
+    "KMFI1",
+    "KMFI2",
+    "KMFI3",
+    "KMFI4",
+    "KMFI5",
+    "KMFI6",
+    "KMFI7",
+    "KMFI8",
+    "KMFI9",
+    "KMFI10",
+    "KMFI11",
+    "KMFI12",
+    "KMFI13",
+    "KMFI14",
+    "KMFI15",
+    "KMFI16",
+    "KMFI17",
+    "KMFI18",
+    "KMFI19",
+    "KMFI20",
+    "KMFI21",
+    "KMFI22",
+    "KMFI23",
+    "KMFI24",
+    "KMFI25",
+    "KMFI26",
+    "KMFI27",
+    "KMFI28",
+    "KMFI29",
+    "KMFI30",
+    "KMFI31",
+    "KMFI32",
+    "KMFI33",
+    "KMFI34",
+    "KMFI35",
+    "KMFI36",
+    "KMFI37",
+    "KMFI38",
+    "KMFI39",
+    "KMFI40",
+    "KMFI41",
+    "KMFI42",
+    "KMFI43",
+    "KMFI44",
+    "KMFI45",
+    "KMFI46",
+    "KMFI47",
+    "KMFI48",
+    "KMFI49",
+    "KMFI50",
+    "KMFI51",
+    "KMFI52",
+    "KMFI53",
+    "KMFI54",
+    "KMFI55",
+    "KMFI56",
+    "KMFI57",
+    "KMFI58",
+    "KMFI59",
+    "KMFI60",
+    "KMFI61",
+    "KMFI62",
+    "KMFI63",
+    "KMFI64",
+    "KMFI65",
+    "KMFI66",
+    "KMFI67",
+    "KMFI68",
+    "KMFI69",
+    "KMFI70",
+    "KMFI71",
+    "KMFI72",
+    "KMFI73",
+    "KMFI74",
+    "KMFI75",
+    "KMFI76",
+    "KMFI77",
+    "KMFI78",
+    "KMFI79",
+    "KMFI80",
+    "KMFI81",
+    "KMFI82",
+    "KMFI83",
+    "KMFI84",
+    "KMFI85",
+    "KMFI86",
+    "KMFI87",
+    "KMFI88",
+    "KMFI89",
+    "KMFI90",
+    "KMFI91",
+    "KMFI92",
+    "KMFI93",
+    "KMFI94",
+    "KMFI95",
+    "KMFI96",
+    "KMFI97",
+    "KMFI98",
+    "KMFI99",
+    "KMFI100",
+    "KMFI101",
+    "KMFI102",
+    "KMFI103",
+    "KMFI104",
+    "KMFI105",
+    "KMFI106",
+    "KMFI107",
+    "KMFI108",
+    "KMFI109",
+    "KMFI110",
+    "KMFI111"
+  ],
+  "validation_scope": "Canonical claim-validator loops and work-action block restricted to reviewed entries with full registry references; unrelated global issues recorded separately.",
+  "claim_schema_checker_hashes_paths_dependencies_and_scope_acknowledgments": "pass",
+  "dependency_closure_claim_count": 147,
+  "monodromy_dependency_closure_acyclic": true,
+  "full_registry_graph_audit": {
+    "dependencies": "Historical navigation output omitted during repository reorganization.",
+    "replaced_by": "pass"
+  },
+  "unrelated_active_queue_difference": {
+    "added": [
+      "OP-GMC3-PURE-PREFIX"
+    ],
+    "removed": []
+  },
+  "updated_lesson_schema_paths_and_reviews": "pass",
+  "updated_work_action_schema_paths_and_reviews": "pass",
+  "python_sources_parse": true,
+  "document_links_checked": 110,
+  "receipts": [
+    {
+      "path": "affine_completion_receipt.json",
+      "checks": 82,
+      "source_hashes": "pass"
+    },
+    {
+      "path": "all_alternating_receipt.json",
+      "checks": 94,
+      "source_hashes": "pass"
+    },
+    {
+      "path": "alternating_realizations_receipt.json",
+      "checks": 43,
+      "source_hashes": "pass"
+    },
+    {
+      "path": "artin_strata_receipt.json",
+      "checks": 2225,
+      "source_hashes": "pass"
+    },
+    {
+      "path": "boundary_class_receipt.json",
+      "checks": 145,
+      "source_hashes": "pass"
+    },
+    {
+      "path": "branch_centered_receipt.json",
+      "checks": 59,
+      "source_hashes": "pass"
+    },
+    {
+      "path": "central_lift_receipt.json",
+      "checks": 242,
+      "source_hashes": "pass"
+    },
+    {
+      "path": "coefficient_graph_receipt.json",
+      "checks": 194,
+      "source_hashes": "pass"
+    },
+    {
+      "path": "completion_boundary_receipt.json",
+      "checks": 66,
+      "source_hashes": "pass"
+    },
+    {
+      "path": "cubic_wave_receipt.json",
+      "checks": 85,
+      "source_hashes": "pass"
+    },
+    {
+      "path": "curve_descent_receipt.json",
+      "checks": 67,
+      "source_hashes": "pass"
+    },
+    {
+      "path": "fiber_incidence_receipt.json",
+      "checks": 38,
+      "source_hashes": "pass"
+    },
+    {
+      "path": "higher_completion_receipt.json",
+      "checks": 88,
+      "source_hashes": "pass"
+    },
+    {
+      "path": "homogeneous_blocks_receipt.json",
+      "checks": 207,
+      "source_hashes": "pass"
+    },
+    {
+      "path": "integrated_sweeps_receipt.json",
+      "checks": 64,
+      "source_hashes": "pass"
+    },
+    {
+      "path": "linear_pencil_receipt.json",
+      "checks": 311,
+      "source_hashes": "pass"
+    },
+    {
+      "path": "local_image_receipt.json",
+      "checks": 70,
+      "source_hashes": "pass"
+    },
+    {
+      "path": "marked_wreath_receipt.json",
+      "checks": 468,
+      "source_hashes": "pass"
+    },
+    {
+      "path": "norm_finite_fibers_receipt.json",
+      "checks": 52,
+      "source_hashes": "pass"
+    },
+    {
+      "path": "norm_target_receipt.json",
+      "checks": 60,
+      "source_hashes": "pass"
+    },
+    {
+      "path": "orbit_forms_receipt.json",
+      "checks": 82,
+      "source_hashes": "pass"
+    },
+    {
+      "path": "pole_direction_receipt.json",
+      "checks": 59,
+      "source_hashes": "pass"
+    },
+    {
+      "path": "polynomial_chart_receipt.json",
+      "checks": 131,
+      "source_hashes": "pass"
+    },
+    {
+      "path": "psl11_curve_spectrum_receipt.json",
+      "checks": 88,
+      "source_hashes": "pass"
+    },
+    {
+      "path": "psl11_residue_receipt.json",
+      "checks": 178,
+      "source_hashes": "pass"
+    },
+    {
+      "path": "quadratic_continuant_receipt.json",
+      "checks": 501,
+      "source_hashes": "pass"
+    },
+    {
+      "path": "quadratic_scalar_receipt.json",
+      "checks": 154,
+      "source_hashes": "pass"
+    },
+    {
+      "path": "rational_chart_receipt.json",
+      "checks": 242,
+      "source_hashes": "pass"
+    },
+    {
+      "path": "rational_sweep_receipt.json",
+      "checks": 190,
+      "source_hashes": "pass"
+    },
+    {
+      "path": "receipt.json",
+      "checks": 197,
+      "source_hashes": "pass"
+    },
+    {
+      "path": "regular_deck_receipt.json",
+      "checks": 42,
+      "source_hashes": "pass"
+    },
+    {
+      "path": "signed_alternating_receipt.json",
+      "checks": 157,
+      "source_hashes": "pass"
+    },
+    {
+      "path": "subgroup_reduction_receipt.json",
+      "checks": 694,
+      "source_hashes": "pass"
+    },
+    {
+      "path": "surface_forms_receipt.json",
+      "checks": 78,
+      "source_hashes": "pass"
+    },
+    {
+      "path": "sweep_asymptotics_receipt.json",
+      "checks": 108,
+      "source_hashes": "pass"
+    },
+    {
+      "path": "sweep_boundary_receipt.json",
+      "checks": 62,
+      "source_hashes": "pass"
+    },
+    {
+      "path": "sweep_frontier_receipt.json",
+      "checks": 97,
+      "source_hashes": "pass"
+    },
+    {
+      "path": "sweep_monodromy_receipt.json",
+      "checks": 52,
+      "source_hashes": "pass"
+    },
+    {
+      "path": "tautological_boundary_receipt.json",
+      "checks": 86,
+      "source_hashes": "pass"
+    }
+  ],
+  "total_exact_checks": 7858,
+  "primary_source_pins_checked": 34,
+  "additional_retained_primary_inputs_rechecked": 13,
+  "recorded_unavailable_local_primary_sources": [
+    {
+      "manifest": "curve-descent-manifest.json",
+      "url": "https://wstein.org/msri06/refs/mestre-method-of-graphs/mestre-en.pdf",
+      "status": null
+    }
+  ],
+  "diff_whitespace_check": "pass",
+  "full_navigation": [
+    {
+      "command": "make render-navigation",
+      "result": "blocked",
+      "exit_code": 2,
+      "output_tail": "make -C research PYTHON=\"/home/royvanrijn/src/jacobian-research/.venv/bin/python\" SYSTEM_PYTHON=\"python3\" \"render-navigation\"\nmake[1]: Entering directory '/home/royvanrijn/src/jacobian-research/research'\npython3 scripts/render_status.py\nmake[1]: Leaving directory '/home/royvanrijn/src/jacobian-research/research'\nTraceback (most recent call last):\n  File \"/home/royvanrijn/src/jacobian-research/research/scripts/render_status.py\", line 514, in <module>\n    main()\n  File \"/home/royvanrijn/src/jacobian-research/research/scripts/render_status.py\", line 503, in main\n    validate_index(index)\n  File \"/home/royvanrijn/src/jacobian-research/research/scripts/render_status.py\", line 360, in validate_index\n    assert consumer_path.is_file(), (\n           ^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: KDSQ6: missing document consumer artifacts/generated-results/README.md\nmake[1]: *** [Makefile:16: render-navigation] Error 1\nmake: *** [Makefile:17: render-navigation] Error 2\n"
+    },
+    {
+      "command": "make check-navigation",
+      "result": "blocked",
+      "exit_code": 2,
+      "output_tail": "make -C research PYTHON=\"/home/royvanrijn/src/jacobian-research/.venv/bin/python\" SYSTEM_PYTHON=\"python3\" \"check-navigation\"\nmake[1]: Entering directory '/home/royvanrijn/src/jacobian-research/research'\npython3 scripts/audit_status.py\nmake[1]: Leaving directory '/home/royvanrijn/src/jacobian-research/research'\nTraceback (most recent call last):\n  File \"/home/royvanrijn/src/jacobian-research/research/scripts/audit_status.py\", line 8, in <module>\n    validate_index(index)\n  File \"/home/royvanrijn/src/jacobian-research/research/scripts/render_status.py\", line 360, in validate_index\n    assert consumer_path.is_file(), (\n           ^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: KDSQ6: missing document consumer artifacts/generated-results/README.md\nmake[1]: *** [Makefile:21: check-navigation] Error 1\nmake: *** [Makefile:17: check-navigation] Error 2\n"
+    }
+  ],
+  "integrated_sweep_audit": {
+    "all_rank_unit_triangular_reduction": "written unbounded proof; finite degree rd+1",
+    "rank4_geometric_groups": "C5 for d1; A_(4d+1) for d>=2",
+    "arithmetic_constants": "k(sqrt(4d+1)), d>=2",
+    "critical_value_identity": "d^4 b/da^4=24t",
+    "generic_separation_promoted_to_all_specializations": false,
+    "actual_A6_full_rank_degree9_control": true,
+    "coefficient_field_degree": 4,
+    "generic_group": "A9",
+    "entire_finite_rectifier_coefficients_serialized_and_checked": true,
+    "final_A6_Jacobian": "1-alpha^2 by KMFI104 whole-map identity",
+    "expanded_final_A6_determinant_claimed": false,
+    "geometric_normalization_class_group": "Z^8",
+    "quartic_field_class_group_equality_claimed": false,
+    "new_abstract_action_claimed": false,
+    "actual_PSL11_field_supplied": false,
+    "remaining_rank4_input_requires_nonstriangular_coordinates": true,
+    "absolute_exceptional_action_decided": false,
+    "full_action_classification_complete": false
+  },
+  "proof_assurance": {
+    "formal_verification": false,
+    "independent_whole_proof_replay": false,
+    "external_review": false
+  },
+  "goal_status": "active; full requested classification not achieved"
+}

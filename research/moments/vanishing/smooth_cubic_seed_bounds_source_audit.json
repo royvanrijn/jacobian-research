@@ -1,0 +1,133 @@
+{
+  "date": "2026-11-15",
+  "canonical_proof": "moments/vanishing/GRADED_SEED_SMOOTH_CUBIC_PREFIXES.md",
+  "claims": [
+    "GSMOOTHSEED20261115",
+    "GHOMSMOOTHSEED20261115"
+  ],
+  "previous_goal_turn_classification": "progress: both lower-bound witnesses were constructed with first nonzero orders14/20 and smooth leading forms. The strongest smooth-leading upper remained188.",
+  "checker": "moments/vanishing/verify_smooth_cubic_seed_bounds.py",
+  "checker_sha256": "bcfb3a3766c1d6c7e992d6c637b54b3795d25bb61284af044567dcc7b5fe6331",
+  "certificate_sha256": "a32b9a7f7790917422e6e949729ef63e220c25026226fdf889efbd513212b4b3",
+  "accepted_receipt_sha256": "9586e00d5d1ce00a322bbea130fd562f104be4af95f8b460cb319cbb354c1497",
+  "prior_frontier": {
+    "path": "moments/vanishing/graded_smooth_seed_preupdate_20261115.json",
+    "sha256": "2501d7842f7de3534a59d35e737a467bc31bfb01e8178c1d7ec4061fc44cc102"
+  },
+  "retained_inputs": {
+    "verify_tame_gaussian_moments.py": "150b0f269e01b730dbb3a55e0cde3f68f61e2ac7353935cbaecd9d9eb134dc1a",
+    "tame_gaussian_verification.json": "6386698ef94b8610e84eb2ffbbd0ad97d9f19854db2e9dda0ceb7c7ac8548bbe",
+    "tame_period_source_audit.json": "526771c3ed30b17221494a95e3f2b1973ff069a93049cc1254382b22469828f7",
+    "smooth_cubic_seed_bounds_certificate.json": "a32b9a7f7790917422e6e949729ef63e220c25026226fdf889efbd513212b4b3",
+    "smooth_cubic_seed_bounds_verification.json": "9586e00d5d1ce00a322bbea130fd562f104be4af95f8b460cb319cbb354c1497",
+    "homogeneous_prefix_witness_verification.json": "f043b4cf12006c22ff20d3067469a2f074b72a053422789b2ea6c14fe8c47352",
+    "odd_prefix_witness_verification.json": "a7fdbe5cd2cf493fecc18bec19af121616ed73e3532a1add5480fa05d5fe16b9"
+  },
+  "analytic_input": {
+    "claim": "GSMOOTHFINITE20261114",
+    "canonical_proof": "COERCIVE_GRADIENT_MOMENTS.md",
+    "source_audit": "tame_period_source_audit.json",
+    "source_audit_sha256": "526771c3ed30b17221494a95e3f2b1973ff069a93049cc1254382b22469828f7",
+    "used": "Actual smooth-leading twisted quotient, homogeneous regular-sequence basis, analytic no-constant-period theorem and minimal-seed equation argument.",
+    "boundary": "The new proof changes algebraic seed/cofactor degree bounds only. Retained period comparison and degenerate stationary phase are not independently replayed or replaced by the four models."
+  },
+  "new_external_theorems_imported": false,
+  "literature_probe": {
+    "queries": [
+      "Gaussian Moments finite cubic threshold",
+      "Gaussian moment vanishing Picard-Fuchs finite prefix",
+      "vanishing moments polynomial94 cubic"
+    ],
+    "outcome": "Primary search returned Liu21674142v1 already covered by the retained quadratic/binary review. No new smooth-cubic numeric theorem was imported. Search snippets or third-party status pages are not evidence for the new bounds."
+  },
+  "seed_bounds": {
+    "parameter": "z=1/t",
+    "basis_grades": [
+      0,
+      1,
+      1,
+      1,
+      2,
+      2,
+      2,
+      3
+    ],
+    "column_identity": "nabla^j[1]=[P^j]",
+    "row_degree": "deg_z v_ij<=3j-d_i",
+    "constant_row_degree": "deg_z v_0j<=3j-2 for j>=1",
+    "cofactor_A": "3*s*(s+1)/2-S-2",
+    "higher_cofactor_degree": "A+2-3j",
+    "higher_scalar_coefficient_valuation": "3j-2",
+    "rank_specific_gates": [
+      1,
+      6,
+      14,
+      25,
+      38,
+      54,
+      73,
+      94
+    ],
+    "homogeneous_support": "r<=3j-d_i<=3r and r==3j-d_i mod2",
+    "homogeneous_zeroth_cofactor_valuation": "s*(s+1)/2+2*(s-1)-S",
+    "homogeneous_scalar_zeroth_degree": "s*(s-1)"
+  },
+  "class_bounds": {
+    "smooth_leading_ternary_cubic": 94,
+    "homogeneous_smooth_ternary_cubic": 56
+  },
+  "general_cubic_bounds": {
+    "mu": "2^N",
+    "smooth": "mu*(3*mu+3-N)/2-2",
+    "homogeneous_smooth": "mu*(mu-1)"
+  },
+  "smooth_leading_least_prefix_interval": [
+    20,
+    94
+  ],
+  "smooth_homogeneous_least_prefix_interval": [
+    14,
+    56
+  ],
+  "global_least_prefix_interval": [
+    20,
+    1855
+  ],
+  "all_homogeneous_least_prefix_interval": [
+    14,
+    1854
+  ],
+  "exact_auxiliary_evidence": {
+    "models": 4,
+    "connection_columns": 32,
+    "seed_columns_through8": 32,
+    "direct_reductions_P_P2_P3": 12,
+    "ternary_row_subsets": 128,
+    "dimension_regressions_through": 12,
+    "full_seed_rank8_models": [
+      "diagonal_dense",
+      "hesse_dense",
+      "asymmetric_homogeneous"
+    ]
+  },
+  "universal_written_proof_certified_by_checker": false,
+  "optimality_proved": false,
+  "global1855_gate_improved": false,
+  "least_prefix_computed": false,
+  "expanded_global_radical_cofactors_computed": false,
+  "independent_replay": false,
+  "external_review": false,
+  "formal_verification": false,
+  "assurance": "Internal written all-coefficient filtration and scalar order proof, supported by exact model/divergence/seed and cofactor arithmetic. The original smooth-leading analytic no-constant-period result is retained. No independent specialist replay, external review or formal verification.",
+  "remaining": [
+    "Least smooth-leading and homogeneous-smooth prefixes",
+    "Twenty/fourteen-moment sufficiency",
+    "Quantitative improvement for singular leading forms",
+    "Least global/all-homogeneous prefixes",
+    "Expanded global radical cofactors",
+    "Independent review",
+    "Exceptional coefficient schemes",
+    "Global term-count minima",
+    "Lower-power GVC"
+  ]
+}

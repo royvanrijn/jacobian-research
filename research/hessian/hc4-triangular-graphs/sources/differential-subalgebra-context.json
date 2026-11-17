@@ -1,0 +1,123 @@
+{
+  "review_date": "2026-11-16",
+  "title": "Complete classification of target-differential subalgebras inside an actual plane Keller source",
+  "retained_structural_inputs": [
+    {
+      "claim": "HC4MYKU0",
+      "canonical_source": "hessian/hc4-triangular-graphs/CANONICAL_TRACE_DUAL_ETALE_RECONSTRUCTION.md"
+    },
+    {
+      "claim": "HC4MYKU1",
+      "canonical_source": "hessian/hc4-triangular-graphs/CANONICAL_TRACE_DUAL_ETALE_RECONSTRUCTION.md"
+    },
+    {
+      "claim": "HC4MYKU2",
+      "canonical_source": "hessian/hc4-triangular-graphs/CANONICAL_TRACE_DUAL_ETALE_RECONSTRUCTION.md"
+    },
+    {
+      "claim": "HC4MYKQ0",
+      "canonical_source": "hessian/hc4-triangular-graphs/SOURCE_MODULE_LAYERS_AND_TRACE_ZERO_KERNEL.md"
+    },
+    {
+      "claim": "HC4MYKQ1",
+      "canonical_source": "hessian/hc4-triangular-graphs/SOURCE_MODULE_LAYERS_AND_TRACE_ZERO_KERNEL.md"
+    },
+    {
+      "claim": "HC4MYKR1",
+      "canonical_source": "hessian/hc4-triangular-graphs/QUADRATIC_SOURCE_RECONSTRUCTION_AND_QUARTIC_RETIREMENT.md"
+    },
+    {
+      "claim": "HC4MYKS0",
+      "canonical_source": "hessian/hc4-triangular-graphs/TRACE_ZERO_ALGEBRA_AND_FIRST_ENERGY_DEFECT.md"
+    },
+    {
+      "claim": "HC4MYKN1",
+      "canonical_source": "hessian/hc4-triangular-graphs/CANONICAL_BOUNDARY_AND_STABLE_COMPLETE_INTERSECTION_OBSTRUCTION.md"
+    },
+    {
+      "claim": "HC4MYHY2",
+      "canonical_source": "hessian/hc4-triangular-graphs/NORMAL_MONOGENIC_COVERS.md"
+    },
+    {
+      "claim": "HC4MYKT0",
+      "canonical_source": "hessian/hc4-triangular-graphs/KULIKOV_EXACT_COFRAME_AND_TATE_BOUNDARY_FILTER.md"
+    },
+    {
+      "claim": "PF2BATT1",
+      "canonical_source": "jacobian/jc2-boundary-attachment/PROOF.md"
+    },
+    {
+      "claim": "PF2RULED53",
+      "canonical_source": "jacobian/affine-complements/TRACE_DUAL_PENCIL_AND_EXCESS.md"
+    },
+    {
+      "claim": "HCTANG2",
+      "canonical_source": "hessian/tang-hc4-audit/STRUCTURAL_REVIEW.md"
+    }
+  ],
+  "retained_proof_and_source_sha256": {
+    "hessian/hc4-triangular-graphs/CANONICAL_TRACE_DUAL_ETALE_RECONSTRUCTION.md": "fef1bc4871537c9d073c424c9dbbd4f0296dd287728a0724c9101c5a7b5cf3c2",
+    "hessian/hc4-triangular-graphs/verify_canonical_etale_reconstruction.py": "ad7d5b53096780353298ee052c9ac4341d0eced2b7194c5c83c397c19af91b4f",
+    "hessian/hc4-triangular-graphs/SOURCE_MODULE_LAYERS_AND_TRACE_ZERO_KERNEL.md": "10912b7d1074390c2a24ee9b2de6f498a8e6bbaf65d7304415a2cdc11d5f1174",
+    "hessian/hc4-triangular-graphs/verify_source_module_layers.py": "ec38b2034a93ead3dcccccd74c3e9dfa3a5512d33d434f46719f7161fe40ca43",
+    "hessian/hc4-triangular-graphs/QUADRATIC_SOURCE_RECONSTRUCTION_AND_QUARTIC_RETIREMENT.md": "c45fe8fb1c9f0eabfa8bfef32e30b96e71834ee68609e59069e8fb9039034eca",
+    "hessian/hc4-triangular-graphs/verify_quadratic_reconstruction.py": "0494f04ada75cf1cb7859bb1d86e63ea0259a6ce4e838ab4678276098d93c49f",
+    "hessian/hc4-triangular-graphs/TRACE_ZERO_ALGEBRA_AND_FIRST_ENERGY_DEFECT.md": "285168ae0ee63d5fd511e24560e1d7ad18a4cb82c0761b5916add77001236d04",
+    "hessian/hc4-triangular-graphs/CANONICAL_BOUNDARY_AND_STABLE_COMPLETE_INTERSECTION_OBSTRUCTION.md": "679c5f12083b9cdc657650417315c3e881974aee62c6a372c725d6d8193b657c",
+    "hessian/hc4-triangular-graphs/verify_canonical_boundary.py": "94379f2cbb83cfd80ad374b13538391fbdc6b6c9fce997e6917f53e7f667f801",
+    "hessian/hc4-triangular-graphs/NORMAL_MONOGENIC_COVERS.md": "223b81738c823c3658079344f57e74a1405b3fcb52eb8adc76c9ee170226226f",
+    "hessian/hc4-triangular-graphs/verify_monic_covers.py": "719bcbffc0841d07352fc8c02fda0907f25d98ba595da724d5e9d4687b0ed894",
+    "hessian/hc4-triangular-graphs/KULIKOV_EXACT_COFRAME_AND_TATE_BOUNDARY_FILTER.md": "1d240fba9d98167b36466f948e7b49d46d11ade40368feef92496257b3e2956f",
+    "hessian/hc4-triangular-graphs/verify_kulikov_tate_control.py": "eae58fb95919131de88e2d4e5b0952d15e995270265a455c3df08b32b5fd2128",
+    "jacobian/jc2-boundary-attachment/PROOF.md": "2cbbd8ead07f9e73f84b655940086369040cbcf55fc6578a5625744416ec6666",
+    "jacobian/jc2-boundary-attachment/verify.py": "e426651d71c51064e6dbb3fb5369ae8938adcffc4c0208be675fd5e627da9f07",
+    "jacobian/affine-complements/TRACE_DUAL_PENCIL_AND_EXCESS.md": "e90436c16bef59ca3f0324570ef1446e60941b583474c819ce4ceda62433a3e7",
+    "jacobian/affine-complements/verify_trace_dual_pencil.py": "4dbee3ea4658cf7e2f3ad29c8339a0cdef01f668dac14952665c3bcd240fd576",
+    "hessian/tang-hc4-audit/STRUCTURAL_REVIEW.md": "26a6a76eb579de05b8e71245b8b804bdd5f036602f2e3e6ad5d036fd9f5cd572",
+    "hessian/tang-hc4-audit/verify_structural.py": "23e87f797b4d086ede8195773092dcd42d705258ec57c05920731e87e0ce9b2d"
+  },
+  "new_primary_sha256": {
+    "sources/makar-limanov-d-algebras-mpim22-11.pdf": "e662a6508b48618f1e8c6666e418513c14932bfb51e557e337b703c9be92bb85",
+    "sources/adamus-crespo-hajto-sigma2019-034.pdf": "2e535c4e61ca9f43c7d1adc6e7eb43e835610c1b758bb42672038024d0a868db"
+  },
+  "inspected_primary_context": [
+    {
+      "title": "Makar-Limanov,A conjecture on D algebras,MPIM22-11",
+      "url": "https://pure.mpg.de/rest/items/item_3658498_1/component/file_3658499/content",
+      "retained_file": "sources/makar-limanov-d-algebras-mpim22-11.pdf",
+      "inspected": "Actual13-page cached PDF,especially manuscriptpp1-5(PDFpp3-7):definition,unproved nonembedding/regularity conjectures,nonsingular-hypersurface special case,rational/Galois discussion.Last references pages checked for exact attribution.",
+      "role": "DEFINITION and hypothesis audit only.The conjectures are NOT imported;the nonsingular-order reciprocal argument is reproduced directly and credited.Smoothness of D(t) is not a global nonsingular primitive presentation."
+    },
+    {
+      "title": "Adamus,Crespo,Hajto,Jacobian Conjecture via Differential Galois Theory,SIGMA15(2019),034",
+      "url": "https://doi.org/10.3842/SIGMA.2019.034",
+      "retained_file": "sources/adamus-crespo-hajto-sigma2019-034.pdf",
+      "inspected": "Actual7-page primary PDF;Theorem2.5,Theorem3.1,proof and Remarks3.2/3.3 onpp4-6 read.",
+      "role": "Context only:surjectivity of the specified tensor-constant map is an extra premise leading to strong normality/Galoisness.It is NOT inferred from finite generation or the subalgebra classification."
+    }
+  ],
+  "newly_imported_proved_external_statements": [],
+  "newly_used_unproved_external_statements": [],
+  "prior_credit": "KU0/1/2 supplies canonical etale models and the IC quadratic bridge;KQ0 supplies the actual whole-source semisimple curve quotient;KN1/HY2 already excludes global CI/monogenic finite intermediate normalizations.No priority claim for the Makar-Limanov definition or proved special cases.",
+  "full_theorem_target": "Full HC4/JC2 proof or ACTUAL counterexample,not merely classification of differential subalgebras.",
+  "last_unsolved_implication": "ACTUAL polynomial plane source ==> Tr(Lambda_L*Lambda_L) subset B (regular inverse Gram),or full marked canonical-energy integrality;OPEN.",
+  "scope_boundary": "Only subalgebras B subset C subset ACTUAL R=C[x,y] stable under target derivations;the entire KQ0 actual-source layer theorem is essential.No arbitrary affine surface or higher-dimensional extension asserted.",
+  "all_degree_all_intermediate_differential_subalgebras_classified": true,
+  "finite_Boolean_family_per_intermediate_proved": true,
+  "automatic_normality_finite_generation_and_etaleness_proved": true,
+  "pole_formula_for_every_finite_source_family_proved": true,
+  "integral_primitive_derivative_algebra_equals_canonical_model": true,
+  "generic_linear_source_coordinate_differentially_generates_R": true,
+  "finite_generation_assumed_for_input_subalgebra": false,
+  "intermediate_plane_open_or_boundary_disjointness_assumed": false,
+  "arbitrary_character_summands_allowed_without_coefficient_stability": false,
+  "smooth_D_algebra_inferred_to_have_nonsingular_primitive_hypersurface": false,
+  "Makar_Limanov_unproved_conjecture_imported": false,
+  "differential_Galois_tensor_surjectivity_proved_automatic": false,
+  "last_HC4_source_to_regular_inverse_Gram_implication_proved": false,
+  "external_review_deferred": true,
+  "external_review_requested": false,
+  "old_registered_mathematical_checkers_replayed": false,
+  "unrestricted_HC4_or_JC2_resolved": false,
+  "original_goal_complete": false
+}

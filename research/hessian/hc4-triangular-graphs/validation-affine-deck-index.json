@@ -1,0 +1,57 @@
+{
+  "outcome": "PASS",
+  "metadata_groups": [
+    "MN0 registered all-finite-field-affine bound and undecorated natural tower exclusion; frozen proof/checker/context/receipt:89 controls72 algebraic",
+    "three preregistered inputs/13 pins plus newly registered PF132 reuse/2 pins; no duplicate classical-import adoption",
+    "all-inertia/free-quotient distinction,actual source hypotheses,split-fibre normalization and explicit classical-source limits retained",
+    "one first new preregistration PASS; no registered checker replay or assurance upgrade",
+    "full parent remains open;three new forbidden attacks have direct witness dependencies",
+    "new affine deck method,three affected prior methods and every changed-parent lesson consumer refreshed",
+    "both full-goal items,two related monodromy/quartic items and README retain strengthened scope and prior history",
+    "navigation matches current repository renderer output",
+    "known unrelated missing-artifact baseline [2,2,1,0] retained;affected whitespace clean"
+  ],
+  "repository_checks": [
+    {
+      "name": "render-navigation",
+      "exit_code": 2,
+      "output": "make -C research PYTHON=\"/home/royvanrijn/src/jacobian-research/.venv/bin/python\" SYSTEM_PYTHON=\"python3\" \"render-navigation\"\nmake[1]: Entering directory '/home/royvanrijn/src/jacobian-research/research'\npython3 scripts/render_status.py\nTraceback (most recent call last):\n  File \"/home/royvanrijn/src/jacobian-research/research/scripts/render_status.py\", line 515, in <module>\n    main()\n  File \"/home/royvanrijn/src/jacobian-research/research/scripts/render_status.py\", line 504, in main\n    validate_index(index)\n  File \"/home/royvanrijn/src/jacobian-research/research/scripts/render_status.py\", line 361, in validate_index\n    assert consumer_path.is_file(), (\n           ^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: KDSQ6: missing document consumer artifacts/generated-results/README.md\nmake[1]: *** [Makefile:16: render-navigation] Error 1\nmake[1]: Leaving directory '/home/royvanrijn/src/jacobian-research/research'\nmake: *** [Makefile:17: render-navigation] Error 2\n"
+    },
+    {
+      "name": "check-navigation",
+      "exit_code": 2,
+      "output": "make -C research PYTHON=\"/home/royvanrijn/src/jacobian-research/.venv/bin/python\" SYSTEM_PYTHON=\"python3\" \"check-navigation\"\nmake[1]: Entering directory '/home/royvanrijn/src/jacobian-research/research'\npython3 scripts/audit_status.py\nTraceback (most recent call last):\n  File \"/home/royvanrijn/src/jacobian-research/research/scripts/audit_status.py\", line 8, in <module>\n    validate_index(index)\n  File \"/home/royvanrijn/src/jacobian-research/research/scripts/render_status.py\", line 361, in validate_index\n    assert consumer_path.is_file(), (\n           ^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: KDSQ6: missing document consumer artifacts/generated-results/README.md\nmake[1]: *** [Makefile:21: check-navigation] Error 1\nmake[1]: Leaving directory '/home/royvanrijn/src/jacobian-research/research'\nmake: *** [Makefile:17: check-navigation] Error 2\n"
+    },
+    {
+      "name": "partial-review",
+      "exit_code": 1,
+      "output": "Traceback (most recent call last):\n  File \"/home/royvanrijn/src/jacobian-research/research/scripts/research.py\", line 563, in <module>\n    raise SystemExit(main())\n                     ^^^^^^\n  File \"/home/royvanrijn/src/jacobian-research/research/scripts/research.py\", line 440, in main\n    validate_lessons(items, entries, check_reviews=args.command == \"check\")\n  File \"/home/royvanrijn/src/jacobian-research/research/scripts/research.py\", line 130, in validate_lessons\n    assert (ROOT / p).is_file(), f\"{item['id']}: missing source {p}\"\n           ^^^^^^^^^^^^^^^^^^^^"
+    },
+    {
+      "name": "whitespace",
+      "exit_code": 0,
+      "output": ""
+    }
+  ],
+  "claim": "HC4MYMN0",
+  "check_count": 89,
+  "algebraic_controls": 72,
+  "new_published_import_packages": 0,
+  "reused_published_import_packages": 2,
+  "new_primary_cache_copies": 2,
+  "new_primary_downloads": 0,
+  "preregistration_mathematical_checker_invocations": 1,
+  "registered_mathematical_checkers_executed": [],
+  "frozen_files_sha256": {
+    "research/hessian/hc4-triangular-graphs/AFFINE_MONODROMY_DECK_INDEX_AND_UNDECORATED_RADICAL_TOWERS.md": "f8ceefb08574ac43545e61b5681e8c84e7d031cdb8259eacae36ef6c7ad32bec",
+    "research/hessian/hc4-triangular-graphs/verify_affine_deck_index.py": "5aa15240484f8c13ff0fe5300c8e779b249e6840c4cbedbb8ad59e3dc4b182e4",
+    "research/hessian/hc4-triangular-graphs/sources/affine-deck-index-context.json": "b71d82e986d275b2c74d7393f49f629ce69bbb0a48d433f1ede0e69d53a6a1aa",
+    "research/hessian/hc4-triangular-graphs/receipt-affine-deck-index.json": "7343f2cb2c04178bf3b17815c485159589646168a9ac5e865a702d4dfb62bbf0",
+    "research/hessian/hc4-triangular-graphs/sources/affine-deck-index-registration-context.json": "d0ab4149b21662898fb84bd1532cd26e302066bb8dc38551ab58f39a955078cd",
+    "tmp/affine-deck-index-preregistration.json": "8dc867fcdb3547d59fa8c50cc9716a12e59969ebc6a09ffa2782dd7a2c11879c"
+  },
+  "independent_replay": false,
+  "formal_verification": false,
+  "external_review": false,
+  "original_goal_complete": false
+}

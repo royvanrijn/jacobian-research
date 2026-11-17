@@ -1,0 +1,54 @@
+{
+  "schema_version": 1,
+  "purpose": "Pins the retained fixed-space, canonical affine-bundle, permutation-submodule and atomicity arguments. Credits the published planar theorem and the classical torsor/cover inputs. No novelty-priority or independent whole-proof replay claim.",
+  "local_sources": [
+    {
+      "path": "jacobian/universal-keller-levels/PROOF.md",
+      "sha256": "1e7143e3319882a2580c1bac6c0e106267b1301ab5e7e498e8be23f17e99f2d1"
+    },
+    {
+      "path": "jacobian/universal-keller-quadrics/PROOF.md",
+      "sha256": "fde6467d51215e780a321862264e9f4ee969c9b276a78a848ec0bb465a4e8d21"
+    },
+    {
+      "path": "jacobian/universal-keller-structure/PROOF.md",
+      "sha256": "a3dee93b955b9e449bae2fff3d2964262289572f22f0820309e6c56d8bb5cbd5"
+    },
+    {
+      "path": "foundations/extended-geometry/WEIGHTED_INVARIANT_JACOBIAN_REDUCTION.md",
+      "sha256": "d75a2816e067427f599eb1546d0e35877dc74571785089e5044568b4b171109e"
+    }
+  ],
+  "external_sources": [
+    {
+      "title": "T. Shaska, Graded Keller maps and the Jacobian Conjecture, arXiv2607.20210v2",
+      "url": "https://arxiv.org/html/2607.20210v2",
+      "scope": "Theorem3.4: characteristic-zero planar nontrivial G_m equivariance implies automorphism; our application uses only linear actions, whose elementary proof is reproduced."
+    },
+    {
+      "title": "F. Santibanez-Leal, foundational study v0.13, primary record description",
+      "url": "https://zenodo.org/records/22834207",
+      "scope": "Related September2026 planar-rigidity reconciliation. Primary metadata/description inspected; PDF not retrieved and not used as proof dependency."
+    },
+    {
+      "title": "Stacks Project, Kummer theory",
+      "url": "https://stacks.math.columbia.edu/tag/03PK",
+      "scope": "Section59.28 units, Picard torsion and mu_ell torsors; the finite universal-map obstruction is an application."
+    },
+    {
+      "title": "J.-P. Serre, Revetements de courbes algebriques, Bourbaki749 (1992)",
+      "url": "https://www.numdam.org/article/SB_1991-1992__34__167_0.pdf",
+      "scope": "Sections2--3 classical prime-to-p/quasi-p obstruction. Only the necessary direction, reproved by tame Riemann--Hurwitz, is used."
+    },
+    {
+      "title": "Stacks Project, Riemann--Hurwitz",
+      "url": "https://stacks.math.columbia.edu/tag/0C1B",
+      "scope": "Tame prime-to-p cover of the affine line, compactified with only infinity as possible branch, must be trivial."
+    },
+    {
+      "title": "Jensen--Ledet--Yui, Generic Polynomials, AppendixA.1",
+      "url": "https://library.slmath.org/books/Book45/files/book45.pdf",
+      "scope": "Additive Hilbert90 supports the translation-torsor one-variable family; the retained UAFROB1 proof supplies the full affine-group field criterion."
+    }
+  ]
+}

@@ -1,0 +1,80 @@
+{
+  "date": "2026-11-15",
+  "canonical_proof": "moments/vanishing/ENTIRE_HAAR_PERIODS_AND_EXCEPTIONAL_DECISION.md",
+  "proof_sha256": "3c00befddf4e54d433457512526140908cb0c07fc9a451418e8d85d5a995ef72",
+  "checker": "moments/vanishing/verify_haar_period_decision.py",
+  "checker_sha256": "80bd21e7ad37b80a16fd74eba58d3a3681a972180650507ec1bee62e0d36694f",
+  "receipt": "moments/vanishing/haar_period_verification.json",
+  "receipt_sha256": "bc269060a694e46023cca9f9a1daef054f158e00eca4bd68c20a6569bfe05091",
+  "imported_arithmetic": "moments/vanishing/verify_haar_shear_witnesses.py",
+  "imported_arithmetic_sha256": "e154855aa1e255c2910a0ea657323c6737ba5f1f7cadf2169ef3a8e19195d5d9",
+  "repository_sources": [
+    {
+      "source": "moments/vanishing/FINITE_MULTIPLIER_MIXED_DECISION.md",
+      "sha256": "4dc09aede00f0493238f528bf2b6a7320b3480fb45dd77c1b9ccedf22a27a56e",
+      "selected_use": "Scalar infinity/origin indicial test; actual Gaussian image versus abstract integration module."
+    },
+    {
+      "source": "moments/vanishing/HOLONOMIC_SOURCES_AND_CUTOFF_LOCI.md",
+      "sha256": "667d72556c1501ae445742be48463472a687cb24acec54653d34275f5c00c9d0",
+      "selected_use": "Sections1--2: supplied joint holonomic source, positive source-degree b-lift and rational linear cutoff."
+    },
+    {
+      "source": "moments/vanishing/PRIMARY_THICKENING_MOMENT_IDEAL_ALGORITHM.md",
+      "sha256": "184f834e9955a536a18637f1cbb85066857a4e6df971fb95974ebd8e3e2360d9",
+      "selected_use": "Sections1--3: injective primary finite algebras, scalar zero oracle and ordinary-ideal ascent, including nilpotents."
+    },
+    {
+      "source": "moments/vanishing/ALGEBRAIC_SPECIALIZATION_AND_FINITE_FAMILY_DECISION.md",
+      "sha256": "b4975f1c9dd56dd66577af640d6a75044fcbb2e7f1a20e0b9fe0fc73b3c3ef87",
+      "selected_use": "Sections3--5: bounded-degree simultaneous integer-indicial specialization, generic pure-component finite-family decision."
+    },
+    {
+      "source": "moments/vanishing/HAAR_SHEARS_AND_GENERAL_NULLCONE_CLASSIFICATION.md",
+      "sha256": "c008f0a18de99def6211bfdcc0841dc81fd0c6c30dcf9c65ed13c6ea3cd11edc",
+      "selected_use": "Explicit invariant forms, Haar preservation, exact positive norms, all-order safety and sharp endpoints."
+    },
+    {
+      "source": "moments/vanishing/EXCEPTIONAL_SPECTRAL_BARRIER_AND_POWER_AVERAGES.md",
+      "sha256": "f15de9361d691a153e484f43f2807027e446428c85aea55d502b9240771456dc",
+      "selected_use": "Regular normalizer circuit and the scope of failed finite averaging."
+    }
+  ],
+  "primary_source": {
+    "author": "Toshinori Oaku",
+    "title": "Algorithms for D-modules,integration,and generalized functions with applications to statistics",
+    "version": "ASPM77(2018),pp253--352;enlarged MSJ SI2015 lectures",
+    "url": "https://www.lab.twcu.ac.jp/oaku/MSJSI2015oakuLecture.pdf",
+    "cached_file": "moments/vanishing/sources/oaku_algorithms_statistics_2018.pdf",
+    "sha256": "a52f26dd9ffae381fce7188f5869095491d086347e0854d011ba8278ca4ef2df",
+    "selected_passages_read": "Theorem5.1,Theorem5.4 and Algorithm5.6;printed308--314;full general recurrence already re-read in the retained source theorem.",
+    "imported": "Classical algebraic Fourier/integration holonomicity and computable integration b-function with lift.",
+    "not_imported": "Any exceptional MZ classification,rank outcome,or implemented general solver."
+  },
+  "remote_source_revalidation": {
+    "repository": "https://github.com/long-mathematics/mathieu-second-conjecture-spherical-pairs",
+    "latest_commit_seen": "e9edac262b4b64eb68feb0e6e80496cefe4a1dee",
+    "latest_commit_date": "2026-09-22",
+    "pinned_source_still_current": true,
+    "mechanism": "read-only GitHub connector commits endpoint,2026-11-15"
+  },
+  "new_deductions": [
+    "Compact entire periods: pure-null marked safety iff actual generic period rank1;every bad marked period is entire transcendental;quotient by polynomials has no polynomial torsion.",
+    "Explicit five-operator SL2 source is holonomic by tangent-conormal calculation and Fourier twist.",
+    "Finite invariant-marker averaging transports the supplied-source pointwise/linear and finite-family decision methods to both exceptional quotients.",
+    "R=a Phi_t(p)+bq has all-order moment ideal(ab),all pure-null points safe,with sharp axis cutoffs."
+  ],
+  "exact_controls": "960 source coefficient identities,sign mutation,21 direct normalizer marked and7 pure sphere integrals,16 scalar recurrence coefficients,54 exceptional parameter moment coefficients.",
+  "logical_boundaries": [
+    "Actual period rank is not the abstract integration-module rank.",
+    "A generic rational basis or seed1 annihilator does not certify all markers.",
+    "Entireness excludes a bad rational marked period;it does not make every marked period algebraic.",
+    "Pointwise and finite-family algorithms are not implemented or run on full exceptional spaces.",
+    "The exceptional MZ questions remain OPEN;the safe two-axis families contain no failure."
+  ],
+  "independent_replay": false,
+  "external_review": false,
+  "formal_verification": false,
+  "proof_hash_before_octahedral_navigation": "dac8dd8ababc92753ba562fd08e84cc2df6df9b745aa5f129e36db39e4160133",
+  "octahedral_navigation_refresh": "Forward reference to the executed degree<=11 octahedral result;original algorithm proof/checker unchanged."
+}

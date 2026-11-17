@@ -1,0 +1,135 @@
+{
+  "scoped_validation": "PASS",
+  "checks": [
+    "HC4MYIR0 schema, dependencies, locks, checker hash and assurance",
+    "HC4MYIR1 schema, dependencies, locks, checker hash and assurance",
+    "HC4MYIR2 schema, dependencies, locks, checker hash and assurance",
+    "all-helper multiplier-zero, all-stable-dimensional two-helper and admitted HC4 scopes are distinct and fail closed",
+    "parent stays open; three forbidden attack classes close the admitted family without claiming universal observables",
+    "sixty-four method records have current fingerprints, exact overlap closure and the curve-versus-surface boundary",
+    "WORK-HC4-SCHUR current fingerprints and next work outside the closed admitted HC4 overlap family",
+    "WORK-HC4-RESIDUAL-AUDIT current fingerprints and next work outside the closed admitted HC4 overlap family",
+    "131 controls include 47 algebraic/scope controls; all retained pins and primary context match with no new unproved import",
+    "navigation leads with the complete admitted closure and retains the earlier plane-curve reduction as intermediate evidence"
+  ],
+  "new_claims": [
+    "HC4MYIR0",
+    "HC4MYIR1",
+    "HC4MYIR2"
+  ],
+  "previous_goal_turn_classification": "progress: generic helper rationalization, complete one-helper overlap closure and two-helper HC4 reduction",
+  "current_progress": "Multiplier-zero images close for every helper count under the generic residual hypothesis. Generic helper-plane flatness, finite-line curve surjectivity, scalar units and the actual component bijection yield a disjoint helper pencil of outer degree [L:F], forced to one by IQ0. Every admitted two-helper overlap closes in every stable dimension; with the one-helper theorem the complete admitted HC4 overlap family is closed in all degrees.",
+  "exact_current_replay_checks": 131,
+  "algebraic_and_scope_controls": 47,
+  "retained_receipt_counts_not_newly_replayed": {
+    "receipt-one-helper-overlap.json": 124,
+    "receipt-additive-actions.json": 106,
+    "receipt-overlapping-outputs.json": 141
+  },
+  "generated_views_refreshed": [
+    "index/documents.tsv"
+  ],
+  "newly_cached_primary_context": [
+    {
+      "url": "https://arxiv.org/html/2209.08607v2",
+      "retained_file": "arzhantsev-affine-images-2209.08607v2.html",
+      "sha256": "84b1d65df48f11db08e2894d1dca78800d5f33d7ee590dc0620013d54dcdec96",
+      "title": "On images of affine spaces",
+      "author": "Ivan Arzhantsev",
+      "version": "arXiv:2209.08607v2, 18 March 2023",
+      "portions_inspected": "Section 1 through Lemma 1: Definition 1 and scalar-unit observation, Example 2 omitting the origin, Lemma 1(c) on curve images; later flexibility statements were not used.",
+      "role": "Primary context for polynomial curve images and the surface omission boundary. The needed surjectivity is proved directly by restricting to a line and making its parameter integral over the curve algebra; the scalar-unit fact and omitted-origin example are also verified directly. No curve-normalization or flexibility classification is imported.",
+      "unproved_theorem_imported": false,
+      "needed_curve_surjectivity_fully_reproved": true,
+      "new_source_bytes_downloaded": true
+    }
+  ],
+  "retained_structural_imports": [
+    {
+      "url": "https://stacks.math.columbia.edu/tag/00R4",
+      "retained_file": "stacks-pencil-flatness-00R4.html",
+      "sha256": "cc7f1947308a6c8db0d6d0d406bfecc4ef2363d710f694b1cc5fe9bb0ba8219f",
+      "statement": "Retained miracle-flatness theorem for Noetherian local rings with regular base, Cohen-Macaulay source and dimension equality.",
+      "role": "New application to the geometric generic helper plane. Expected dimensions of all nonempty fibres are proved; empty fibres are allowed, so global faithfulness is not assumed."
+    }
+  ],
+  "newly_used_unproved_external_statements": [],
+  "full_registry_validation_failure": "KDSQ6: missing document consumer artifacts/generated-results/README.md",
+  "full_navigation_validation_passed": false,
+  "missing_artifacts_reconstructed": false,
+  "closed_frontier": [
+    "actual source images contained in the multiplier divisor in every helper count under the generic residual polynomial-direction condition",
+    "all admitted two-helper overlaps in all degrees and every stable dimension",
+    "the former two-helper invariant plane-curve residual under the admitted residual/content conditions",
+    "the complete admitted HC4-size polynomial-direction overlap family"
+  ],
+  "remaining_frontier": [
+    "residual-direction failures and nonconstant composite coefficient-content levels",
+    "other observable geometries, compatible arbitrary-graph observables and actual unit-Hessian endpoint representatives",
+    "three or more multiplier helpers in larger stable dimensions, with possible full fibres over a positive-dimensional coefficient-drop locus",
+    "both plane endpoints and unrestricted HC4/JC2"
+  ],
+  "curve_dominance_implies_surjectivity_proved": true,
+  "curve_unit_groups_scalar_proved": true,
+  "multiplier_zero_images_closed_all_helper_counts": true,
+  "residual_polynomial_direction_required": true,
+  "exact_closed_content_levels_required_for_general_inverse": true,
+  "two_helper_degree_drop_locus_finite_required": true,
+  "generic_forgetful_flatness_proved": true,
+  "actual_source_helper_component_bijection_proved": true,
+  "helper_curve_disjointness_proved": true,
+  "all_two_helper_admitted_overlaps_covered": true,
+  "all_admitted_HC4_overlap_family_covered": true,
+  "generic_forgetful_faithfulness_assumed": false,
+  "generic_positive_ambient_filtration_required": false,
+  "global_free_filtration_required": false,
+  "primitive_multiplier_required": false,
+  "monic_or_Bezout_certificate_required": false,
+  "curve_normalization_classification_imported": false,
+  "Rentschler_imported": false,
+  "Abhyankar_Moh_imported": false,
+  "stable_cancellation_used": false,
+  "higher_helper_closure_asserted": false,
+  "surface_dominance_asserted_surjectivity": false,
+  "arbitrary_graph_normal_form_asserted": false,
+  "arbitrary_observable_existence_asserted": false,
+  "nonlinear_source_Hessian_invariance_used": false,
+  "composite_content_levels_asserted_covered": false,
+  "unit_ideal_endpoint_resolved": false,
+  "singleton_zero_endpoint_resolved": false,
+  "unrestricted_HC4_or_JC2_resolved": false,
+  "original_goal_complete": false,
+  "formal_verification": false,
+  "independent_replay": false,
+  "external_review": false,
+  "novelty_priority_asserted": false,
+  "required_repository_checks_all_passed": false,
+  "repository_checks": [
+    {
+      "name": "render-navigation",
+      "command": "make render-navigation",
+      "exit_code": 1,
+      "output": "make -C research PYTHON=\"/home/royvanrijn/src/jacobian-research/.venv/bin/python\" SYSTEM_PYTHON=\"python3\" \"render-navigation\"\nmake[1]: Entering directory '/home/royvanrijn/src/jacobian-research/research'\npython3 scripts/render_status.py\nTraceback (most recent call last):\n  File \"/home/royvanrijn/src/jacobian-research/research/scripts/render_status.py\", line 514, in <module>\n    main()\n  File \"/home/royvanrijn/src/jacobian-research/research/scripts/render_status.py\", line 503, in main\n    validate_index(index)\n  File \"/home/royvanrijn/src/jacobian-research/research/scripts/render_status.py\", line 360, in validate_index\n    assert consumer_path.is_file(), (\n           ^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: KDSQ6: missing document consumer artifacts/generated-results/README.md\nmake[1]: Leaving directory '/home/royvanrijn/src/jacobian-research/research'\nmake[1]: *** [Makefile:16: render-navigation] Error 1\nmake: *** [Makefile:17: render-navigation] Error 2\n"
+    },
+    {
+      "name": "check-navigation",
+      "command": "make check-navigation",
+      "exit_code": 1,
+      "output": "make -C research PYTHON=\"/home/royvanrijn/src/jacobian-research/.venv/bin/python\" SYSTEM_PYTHON=\"python3\" \"check-navigation\"\nmake[1]: Entering directory '/home/royvanrijn/src/jacobian-research/research'\npython3 scripts/audit_status.py\nTraceback (most recent call last):\n  File \"/home/royvanrijn/src/jacobian-research/research/scripts/audit_status.py\", line 8, in <module>\n    validate_index(index)\n  File \"/home/royvanrijn/src/jacobian-research/research/scripts/render_status.py\", line 360, in validate_index\n    assert consumer_path.is_file(), (\n           ^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: KDSQ6: missing document consumer artifacts/generated-results/README.md\nmake[1]: *** [Makefile:21: check-navigation] Error 1\nmake[1]: Leaving directory '/home/royvanrijn/src/jacobian-research/research'\nmake: *** [Makefile:17: check-navigation] Error 2\n"
+    },
+    {
+      "name": "research-check",
+      "command": ".venv/bin/python research/scripts/research.py check --require-partial-review",
+      "exit_code": 1,
+      "output": "Traceback (most recent call last):\n  File \"/home/royvanrijn/src/jacobian-research/research/scripts/research.py\", line 563, in <module>\n    raise SystemExit(main())\n                     ^^^^^^\n  File \"/home/royvanrijn/src/jacobian-research/research/scripts/research.py\", line 440, in main\n    validate_lessons(items, entries, check_reviews=args.command == \"check\")\n  File \"/home/royvanrijn/src/jacobian-research/research/scripts/research.py\", line 130, in validate_lessons\n    assert (ROOT / p).is_file(), f\"{item['id']}: missing source {p}\"\n           ^^^^^^^^^^^^^^^^^^^^"
+    },
+    {
+      "name": "scoped-diff-check",
+      "command": "git diff --check -- research/MATH_STATUS.json research/knowledge/lessons.json research/knowledge/work_items.json research/hessian/hc4-triangular-graphs/README.md research/index research/knowledge/work research/knowledge/WORK_LEDGER.md research/STATUS.md",
+      "exit_code": 0,
+      "output": ""
+    }
+  ],
+  "scoped_diff_whitespace_check": "PASS",
+  "repository_failures_preexisting_unrelated": true
+}

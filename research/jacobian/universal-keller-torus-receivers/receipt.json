@@ -1,0 +1,267 @@
+{
+  "schema_version": 1,
+  "result": "pass",
+  "check_count": 126,
+  "checks": [
+    "cubic source relations over integers",
+    "cubic source group has order six",
+    "source generators preserve norm over integers",
+    "cube map preserves norm hypersurface",
+    "cube equivariance translation killed on target",
+    "cube equivariance inversion on target",
+    "global invariant differential is multiplication by three",
+    "tangent generator has norm three on the norm-one torus",
+    "char0 complete cubic marked quotient rank three",
+    "char0 whole cubic curve etale ideal",
+    "char0 source three-translation has no fixed point",
+    "char0 actual full natural S3 marked action",
+    "char2 complete cubic marked quotient rank three",
+    "char2 whole cubic curve etale ideal",
+    "char2 source three-translation has no fixed point",
+    "char2 actual full natural S3 marked action",
+    "char5 complete cubic marked quotient rank three",
+    "char5 whole cubic curve etale ideal",
+    "char5 source three-translation has no fixed point",
+    "char5 actual full natural S3 marked action",
+    "char7 complete cubic marked quotient rank three",
+    "char7 whole cubic curve etale ideal",
+    "char7 source three-translation has no fixed point",
+    "char7 actual full natural S3 marked action",
+    "char11 complete cubic marked quotient rank three",
+    "char11 whole cubic curve etale ideal",
+    "char11 source three-translation has no fixed point",
+    "char11 actual full natural S3 marked action",
+    "characteristic three excludes the cubic differential",
+    "quartic natural action is all twenty-four permutations",
+    "quartic geometric group is regular V4",
+    "quartic V4 is imprimitive",
+    "connected cyclic cubic resolvent gives primitive arithmetic A4",
+    "full cubic resolvent gives primitive arithmetic S4",
+    "quadratic resolvent arithmetic D8 remains imprimitive",
+    "all V4 translations fix all three quartic resolvent labels",
+    "quartic resolvent quotient is full S3 with kernel V4",
+    "char0 whole quartic marked quotient rank four",
+    "char0 whole quartic torus etale ideal",
+    "char3 whole quartic marked quotient rank four",
+    "char3 whole quartic torus etale ideal",
+    "char5 whole quartic marked quotient rank four",
+    "char5 whole quartic torus etale ideal",
+    "char7 whole quartic marked quotient rank four",
+    "char7 whole quartic torus etale ideal",
+    "abelian(2,) exact kernel lattice index",
+    "abelian(2,) character quotient relations",
+    "abelian(2,) cyclotomic1 kernel invariant",
+    "abelian(2,) cyclotomic1 constant kernel descent",
+    "abelian(3,) exact kernel lattice index",
+    "abelian(3,) character quotient relations",
+    "abelian(3,) cyclotomic1 kernel invariant",
+    "abelian(3,) cyclotomic1 constant kernel descent",
+    "abelian(3,) cyclotomic2 kernel invariant",
+    "abelian(3,) cyclotomic2 constant kernel descent",
+    "abelian(4,) exact kernel lattice index",
+    "abelian(4,) character quotient relations",
+    "abelian(4,) cyclotomic1 kernel invariant",
+    "abelian(4,) cyclotomic1 constant kernel descent",
+    "abelian(4,) cyclotomic3 kernel invariant",
+    "abelian(4,) cyclotomic3 constant kernel descent",
+    "abelian(2, 2) exact kernel lattice index",
+    "abelian(2, 2) character quotient relations",
+    "abelian(2, 2) cyclotomic1 kernel invariant",
+    "abelian(2, 2) cyclotomic1 constant kernel descent",
+    "abelian(2, 2, 2) exact kernel lattice index",
+    "abelian(2, 2, 2) character quotient relations",
+    "abelian(2, 2, 2) cyclotomic1 kernel invariant",
+    "abelian(2, 2, 2) cyclotomic1 constant kernel descent",
+    "abelian(6,) exact kernel lattice index",
+    "abelian(6,) character quotient relations",
+    "abelian(6,) cyclotomic1 kernel invariant",
+    "abelian(6,) cyclotomic1 constant kernel descent",
+    "abelian(6,) cyclotomic5 kernel invariant",
+    "abelian(6,) cyclotomic5 constant kernel descent",
+    "regular degree-six S3 normalizes C6 without containing it",
+    "S2 abelian nontrivial normal closure is regular",
+    "S2 exact abelian regular normal census",
+    "S3 abelian nontrivial normal closure is regular",
+    "S3 exact abelian regular normal census",
+    "S4 abelian nontrivial normal closure is regular",
+    "S4 exact abelian regular normal census",
+    "S5 exact abelian regular normal census",
+    "cyclic degree2 symmetric-normality boundary",
+    "cyclic degree3 symmetric-normality boundary",
+    "cyclic degree4 symmetric-normality boundary",
+    "cyclic degree5 symmetric-normality boundary",
+    "cyclic degree6 symmetric-normality boundary",
+    "cyclic degree7 symmetric-normality boundary",
+    "cyclic degree8 symmetric-normality boundary",
+    "cyclic degree9 symmetric-normality boundary",
+    "cyclic degree10 symmetric-normality boundary",
+    "cyclic degree11 symmetric-normality boundary",
+    "cyclic degree12 symmetric-normality boundary",
+    "cyclic degree13 symmetric-normality boundary",
+    "cyclic degree14 symmetric-normality boundary",
+    "cyclic degree15 symmetric-normality boundary",
+    "cyclic degree16 symmetric-normality boundary",
+    "cyclic degree17 symmetric-normality boundary",
+    "cyclic degree18 symmetric-normality boundary",
+    "cyclic degree19 symmetric-normality boundary",
+    "cyclic degree20 symmetric-normality boundary",
+    "cyclic degree21 symmetric-normality boundary",
+    "cyclic degree22 symmetric-normality boundary",
+    "cyclic degree23 symmetric-normality boundary",
+    "cyclic degree24 symmetric-normality boundary",
+    "quadratic restriction torus endomorphism norm",
+    "no degree two endomorphism over quadratic restriction torus",
+    "two quadratic factors exist through a different torus lattice",
+    "intermediate torus cannot be made the source by affine stabilization",
+    "nonnormal prime-factor countercontrol whole equation",
+    "nonnormal factor is birational",
+    "nonnormal intermediate really has a node",
+    "nonnormal factor merges distinct source points",
+    "cubic sign frozen scalar1 shift0",
+    "cubic sign frozen scalar1 shift1",
+    "cubic sign frozen scalar1 shift2",
+    "cubic sign frozen scalar2 shift0",
+    "cubic sign frozen scalar2 shift1",
+    "cubic sign frozen scalar2 shift2",
+    "retained source pin jacobian/universal-keller-acyclic-boundary/PROOF.md",
+    "retained source pin jacobian/universal-keller-affine-lang/PROOF.md",
+    "retained source pin jacobian/universal-keller-fixed-fibres/sources/dubouloz-palka-pseudo-planes.html",
+    "primary source pin sources/greither-pareigis-1987.pdf",
+    "primary source pin sources/milne-algebraic-groups-2017.pdf",
+    "primary source pin sources/stacks-hilbert90.html"
+  ],
+  "complete_marked_fibre_controls": [
+    {
+      "rank": 3,
+      "characteristic": 0,
+      "whole_fibre_dimension": 3
+    },
+    {
+      "rank": 3,
+      "characteristic": 2,
+      "whole_fibre_dimension": 3
+    },
+    {
+      "rank": 3,
+      "characteristic": 5,
+      "whole_fibre_dimension": 3
+    },
+    {
+      "rank": 3,
+      "characteristic": 7,
+      "whole_fibre_dimension": 3
+    },
+    {
+      "rank": 3,
+      "characteristic": 11,
+      "whole_fibre_dimension": 3
+    },
+    {
+      "rank": 4,
+      "characteristic": 0,
+      "whole_fibre_dimension": 4
+    },
+    {
+      "rank": 4,
+      "characteristic": 3,
+      "whole_fibre_dimension": 4
+    },
+    {
+      "rank": 4,
+      "characteristic": 5,
+      "whole_fibre_dimension": 4
+    },
+    {
+      "rank": 4,
+      "characteristic": 7,
+      "whole_fibre_dimension": 4
+    }
+  ],
+  "permutation_kernel_lattice_controls": [
+    {
+      "abelian_factors": [
+        2
+      ],
+      "dimension": 1,
+      "kernel_order": 2,
+      "index": 2
+    },
+    {
+      "abelian_factors": [
+        3
+      ],
+      "dimension": 2,
+      "kernel_order": 3,
+      "index": 3
+    },
+    {
+      "abelian_factors": [
+        4
+      ],
+      "dimension": 3,
+      "kernel_order": 4,
+      "index": 4
+    },
+    {
+      "abelian_factors": [
+        2,
+        2
+      ],
+      "dimension": 3,
+      "kernel_order": 4,
+      "index": 4
+    },
+    {
+      "abelian_factors": [
+        2,
+        2,
+        2
+      ],
+      "dimension": 7,
+      "kernel_order": 8,
+      "index": 8
+    },
+    {
+      "abelian_factors": [
+        6
+      ],
+      "dimension": 5,
+      "kernel_order": 6,
+      "index": 6
+    }
+  ],
+  "symmetric_normal_closure_controls": [
+    {
+      "rank": 2,
+      "abelian_regular_orders": [
+        2
+      ]
+    },
+    {
+      "rank": 3,
+      "abelian_regular_orders": [
+        3
+      ]
+    },
+    {
+      "rank": 4,
+      "abelian_regular_orders": [
+        4
+      ]
+    },
+    {
+      "rank": 5,
+      "abelian_regular_orders": []
+    }
+  ],
+  "python": "3.12.3",
+  "sympy": "1.14.0",
+  "runtime_seconds": 0.071,
+  "sha256": {
+    "PROOF.md": "2f71f561ae8a687ab8a27a13027bb097c45dc14862ae315bb2a49efff72f29a3",
+    "LITERATURE_AND_GAPS.md": "4e0255d29b4e729b43b5f384b893861516d6fd82d7a70d2c576e768c22488a74",
+    "verify.py": "30a81da2436745c4947e9447f5f6637c33081fa5ed1e27862b66de6e252ce112",
+    "sources.json": "6609784bf5dd5f6454f5fdf4f5d7bd87b21f9342dcdd20d6b8349ad1d8981d8f"
+  },
+  "assurance": "Written all-degree finite factor closure, characteristic-zero torus-cylinder structure, all-characteristic tame torus normalizer classification and exact symmetric constructions. Exact controls check integer norm/cube identities, whole marked fibres and etaleness ideals, actual label actions, invariant kernel lattices and singular-intermediate boundaries. They do not formalize Galois descent, Hopf-Galois theory, all-rank torus duality, simple connectedness or fieldwise cohomology. Primary sources credited. No independent whole-proof replay, formal verification, external review or novelty certification."
+}

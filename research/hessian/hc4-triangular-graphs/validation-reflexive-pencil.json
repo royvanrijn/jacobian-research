@@ -1,0 +1,123 @@
+{
+  "scoped_validation": "PASS",
+  "checks": [
+    "HC4MYIN0 schema, dependencies, locks, checker hash and assurance",
+    "HC4MYIN1 schema, dependencies, locks, checker hash and assurance",
+    "rank-two descent and all exact-content moving suspensions have distinct explicit hypotheses and retained boundaries",
+    "parent remains open and its two new forbidden attack classes retire missing global frames only inside the proved scope",
+    "sixty method records have current fingerprints and explicitly replace the former global-frame requirement",
+    "WORK-HC4-SCHUR has current fingerprints and next work focused outside the exact-content family",
+    "WORK-HC4-RESIDUAL-AUDIT has current fingerprints and next work focused outside the exact-content family",
+    "98 exact controls include 42 algebraic and scope controls, retained evidence pins and two explicitly imported structural lemmas",
+    "current navigation leads with the frame-free theorem while retaining earlier proof and replay evidence"
+  ],
+  "new_claims": [
+    "HC4MYIN0",
+    "HC4MYIN1"
+  ],
+  "previous_goal_turn_classification": "progress: parameter stability, generic moving class vanishing, exact content fibres and adapted strict degree-gap frames registered",
+  "current_progress": "Rank-two reflexive pencil descent replaces the entire global free-basis requirement under faithful flatness and geometric height-one integrality. Every primitive disjoint moving multiplier and every exact closed-content suspension now forces the carried plane Keller inverse in all degrees and admitted stable dimensions.",
+  "exact_current_replay_checks": 98,
+  "algebraic_and_scope_controls": 42,
+  "retained_receipt_counts_not_newly_replayed": {
+    "receipt-parameter-stability.json": 169,
+    "receipt-multivariable-suspensions.json": 102
+  },
+  "generated_views_refreshed": [
+    "index/core.md",
+    "index/geometry.md",
+    "index/hessian.md",
+    "index/README.md",
+    "index/documents.tsv",
+    "knowledge/work/geometry.md",
+    "knowledge/work/hessian.md",
+    "STATUS.md"
+  ],
+  "newly_used_primary_inputs": [
+    {
+      "url": "https://stacks.math.columbia.edu/tag/0B3N",
+      "retained_file": "stacks-reflexive-surface-0B3N.html",
+      "sha256": "3bebe4c6882a06627316480b963ff9f47ac06ce387a7b85725c02cc2fcecd691",
+      "exact_import": "Stacks Lemma 31.13.15, tag 0B3N: on a regular scheme of dimension at most two a coherent module is reflexive if and only if it is finite locally free.",
+      "role": "Make the finite reflexive rank-two pencil lattice locally free on Spec C[T,V]. The nowhere-zero constant section then has invertible quotient.",
+      "portions_inspected": "Complete lemma statement and proof on the primary tag page; hypotheses checked in the canonical proof.",
+      "theorem_fully_reproved": false,
+      "new_source_bytes_downloaded": true
+    },
+    {
+      "url": "https://stacks.math.columbia.edu/tag/00R4",
+      "retained_file": "stacks-pencil-flatness-00R4.html",
+      "sha256": "cc7f1947308a6c8db0d6d0d406bfecc4ef2363d710f694b1cc5fe9bb0ba8219f",
+      "exact_import": "Stacks Lemma 10.128.1, tag 00R4: a local map of Noetherian local rings is flat when the source is regular, the target is Cohen-Macaulay and the target dimension is the source dimension plus the closed-fibre dimension.",
+      "role": "Prove flatness of the ambient suspension observable map at height-two target points from its regular sequence and expected dimension. Nonempty closed fibres give faithfulness separately.",
+      "portions_inspected": "Complete lemma statement and proof on the primary tag page; hypotheses checked in the canonical proof.",
+      "theorem_fully_reproved": false,
+      "new_source_bytes_downloaded": true
+    }
+  ],
+  "full_registry_validation_failure": "KDSQ6: missing document consumer artifacts/generated-results/README.md",
+  "full_navigation_validation_passed": false,
+  "missing_artifacts_reconstructed": false,
+  "closed_frontier": [
+    "common global free-filtration or monic-presentation requirement for faithfully flat plane-target principal component pencils with geometric integral height-one fibres",
+    "all primitive disjoint moving multiplier suspensions with arbitrary positive-joint-degree root polynomial",
+    "every disjoint moving suspension satisfying the exact nonconstant closed content-level criterion"
+  ],
+  "remaining_frontier": [
+    "nonconstant composite coefficient-content levels outside the geometric height-one integral-fibre proof",
+    "overlapping multiplier/root variables and other output geometries",
+    "compatible ambient observables for arbitrary HC4 graphs",
+    "actual unit-Hessian endpoint representatives, both plane endpoints and unrestricted HC4/JC2"
+  ],
+  "common_global_free_filtration_required": false,
+  "global_monic_presentation_required": false,
+  "faithful_flatness_required": true,
+  "geometric_height_one_integrality_required": true,
+  "generic_positive_filtration_required": true,
+  "reflexive_base_dimension_at_most_two_required": true,
+  "all_primitive_disjoint_moving_multipliers_covered": true,
+  "exact_closed_content_levels_covered": true,
+  "quillen_suslin_imported": false,
+  "parameter_cover_source_assumed_affine_plane": false,
+  "composite_content_levels_asserted_covered": false,
+  "overlapping_variables_asserted_covered": false,
+  "full_splitting_group_preservation_inferred": false,
+  "arbitrary_observable_existence_asserted": false,
+  "unit_ideal_endpoint_resolved": false,
+  "singleton_zero_endpoint_resolved": false,
+  "unrestricted_HC4_or_JC2_resolved": false,
+  "original_goal_complete": false,
+  "formal_verification": false,
+  "independent_replay": false,
+  "external_review": false,
+  "novelty_priority_asserted": false,
+  "required_repository_checks_all_passed": false,
+  "repository_checks": [
+    {
+      "name": "render_navigation",
+      "command": "make render-navigation",
+      "exit_code": 1,
+      "output": "make -C research PYTHON=\"/home/royvanrijn/src/jacobian-research/.venv/bin/python\" SYSTEM_PYTHON=\"python3\" \"render-navigation\"\nmake[1]: Entering directory '/home/royvanrijn/src/jacobian-research/research'\npython3 scripts/render_status.py\nTraceback (most recent call last):\n  File \"/home/royvanrijn/src/jacobian-research/research/scripts/render_status.py\", line 514, in <module>\n    main()\n  File \"/home/royvanrijn/src/jacobian-research/research/scripts/render_status.py\", line 503, in main\n    validate_index(index)\n  File \"/home/royvanrijn/src/jacobian-research/research/scripts/render_status.py\", line 360, in validate_index\n    assert consumer_path.is_file(), (\n           ^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: KDSQ6: missing document consumer artifacts/generated-results/README.md\nmake[1]: *** [Makefile:16: render-navigation] Error 1\nmake[1]: Leaving directory '/home/royvanrijn/src/jacobian-research/research'\nmake: *** [Makefile:17: render-navigation] Error 2\n"
+    },
+    {
+      "name": "check_navigation",
+      "command": "make check-navigation",
+      "exit_code": 1,
+      "output": "make -C research PYTHON=\"/home/royvanrijn/src/jacobian-research/.venv/bin/python\" SYSTEM_PYTHON=\"python3\" \"check-navigation\"\nmake[1]: Entering directory '/home/royvanrijn/src/jacobian-research/research'\npython3 scripts/audit_status.py\nTraceback (most recent call last):\n  File \"/home/royvanrijn/src/jacobian-research/research/scripts/audit_status.py\", line 8, in <module>\n    validate_index(index)\n  File \"/home/royvanrijn/src/jacobian-research/research/scripts/render_status.py\", line 360, in validate_index\n    assert consumer_path.is_file(), (\n           ^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: KDSQ6: missing document consumer artifacts/generated-results/README.md\nmake[1]: Leaving directory '/home/royvanrijn/src/jacobian-research/research'\nmake[1]: *** [Makefile:21: check-navigation] Error 1\nmake: *** [Makefile:17: check-navigation] Error 2\n"
+    },
+    {
+      "name": "partial_review",
+      "command": ".venv/bin/python research/scripts/research.py check --require-partial-review",
+      "exit_code": 1,
+      "output": "Traceback (most recent call last):\n  File \"/home/royvanrijn/src/jacobian-research/research/scripts/research.py\", line 563, in <module>\n    raise SystemExit(main())\n                     ^^^^^^\n  File \"/home/royvanrijn/src/jacobian-research/research/scripts/research.py\", line 440, in main\n    validate_lessons(items, entries, check_reviews=args.command == \"check\")\n  File \"/home/royvanrijn/src/jacobian-research/research/scripts/research.py\", line 130, in validate_lessons\n    assert (ROOT / p).is_file(), f\"{item['id']}: missing source {p}\"\n           ^^^^^^^^^^^^^^^^^^^^"
+    },
+    {
+      "name": "scoped_diff",
+      "command": "git diff --check -- research/MATH_STATUS.json research/knowledge/lessons.json research/knowledge/work_items.json research/hessian/hc4-triangular-graphs/README.md research/index research/knowledge/work research/knowledge/WORK_LEDGER.md research/STATUS.md",
+      "exit_code": 0,
+      "output": ""
+    }
+  ],
+  "scoped_diff_whitespace_check": "PASS",
+  "repository_failures_preexisting_unrelated": true
+}

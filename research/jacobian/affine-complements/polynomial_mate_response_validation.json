@@ -1,0 +1,132 @@
+{
+  "claim": "PF2RULED159",
+  "open_problem": "OP-HC4-COVERAGE",
+  "date": "2026-11-17",
+  "outcome": "PASS_TARGETED",
+  "exact_controls": 82,
+  "previous_goal_turn": "progress: PF158 full quadratic ruling-four exclusion; PASS98 source hashes revalidated",
+  "checked": [
+    "new theorem and affected coverage schemas, unique IDs, dependencies, locks, artifact hashes and assurance flags",
+    "new proof/checker/context hashes and nine retained predecessor pins",
+    "PF149/PF150/PF151/PF156/PF157/PF158 proof and checker hashes unchanged without checker replay",
+    "universal written polynomial-mate initial-response product identity and explicit rational-in-w countercontrol",
+    "written refined initial-root multiplicity bound and complete necessary quintic triple-escape coverage",
+    "entire M-root audit including a2=0 onM reciprocal-unit case, infinity and remaining finite generic-curve branches",
+    "legitimate companion reductions and canonical necessary bad orders15j/10j/5j with two exact leading identities",
+    "unbounded excluded cubic-response family with fifth-power leading, named whole-line degrees and differential tests",
+    "affine-response boundary has exactlythree double coframe poles, zero residues and allother ends holomorphic; global exactness unclaimed",
+    "original full normalization, codifferent and every ramified prime retained with identifiable plane hypotheses",
+    "affected work/lesson scope fingerprints, source existence and uniqueness",
+    "new-source whitespace/JSON/Python syntax and proof local links",
+    "scoped git diff --check",
+    "both inherited renderer failures confirmed and all12 generated navigation hashes unchanged"
+  ],
+  "reviewed_work_items": [
+    "WORK-HC4-RODRIGUES-TRANSFER",
+    "WORK-HC4-COVERAGE",
+    "WORK-HC4-SCHUR",
+    "WORK-HC4-D5",
+    "WORK-HC4-RESIDUAL-AUDIT",
+    "WORK-QUARTIC-RULED-COMPATIBILITY"
+  ],
+  "validated_lessons": [
+    "METHOD-HC4-ARTINIAN-TAIL-PROPAGATION",
+    "METHOD-COVERAGE-BEFORE-ARCHITECTURE",
+    "METHOD-ODD-RECIPROCAL-BOUNDARY-COFRAME",
+    "METHOD-MONIC-PARAMETER-POLE-BOUND",
+    "METHOD-CANONICAL-DECK-POLE-COVERAGE",
+    "METHOD-HALF-SPECIALIZATION-POLE-BOUND",
+    "METHOD-POLYNOMIAL-MATE-INITIAL-RESPONSE"
+  ],
+  "new_proof_local_links_checked": 1,
+  "retained_receipts": [
+    {
+      "claim": "PF2RULED149",
+      "controls": 83,
+      "proof_checker_hashes_unchanged": true,
+      "checker_replayed": false
+    },
+    {
+      "claim": "PF2RULED150",
+      "controls": 95,
+      "proof_checker_hashes_unchanged": true,
+      "checker_replayed": false
+    },
+    {
+      "claim": "PF2RULED151",
+      "controls": 68,
+      "proof_checker_hashes_unchanged": true,
+      "checker_replayed": false
+    },
+    {
+      "claim": "PF2RULED156",
+      "controls": 43,
+      "proof_checker_hashes_unchanged": true,
+      "checker_replayed": false
+    },
+    {
+      "claim": "PF2RULED157",
+      "controls": 118,
+      "proof_checker_hashes_unchanged": true,
+      "checker_replayed": false
+    },
+    {
+      "claim": "PF2RULED158",
+      "controls": 98,
+      "proof_checker_hashes_unchanged": true,
+      "checker_replayed": false
+    }
+  ],
+  "renderer_attempts": [
+    {
+      "command": "python3 research/scripts/render_status.py",
+      "exit_code": 1,
+      "last_line": "AssertionError: KDSQ6: missing document consumer artifacts/generated-results/README.md"
+    },
+    {
+      "command": "python3 research/scripts/research.py render",
+      "exit_code": 1,
+      "last_line": "Historical navigation output omitted during repository reorganization."
+    }
+  ],
+  "generated_navigation_sha256": {
+    "STATUS.md": "8d2a880546b91bc4379f10e5c48add354704bad4bedf7c55669d5786481d8b2a",
+    "index/README.md": "f2e77c4840932fb4f69f1931cec0e027067c2f324fb518521fe877c8c09ef737",
+    "index/core.md": "b9dc3eeaf1cbf64ff64b6545d077b6f3e3824a4a12bc7afc041d01e7f86bee1b",
+    "index/documents.tsv": "7f189d484990e74dcd5ce80b45120b5057c1c0da074927d9ece2f2d5e9c3e23b",
+    "index/formal.md": "98a1c07dcc0015819f9f46be556f4c3377dca880377667761225b39e95d08929",
+    "index/geometry.md": "5aea6a2705d8a6bc9a7d5dac49159e8bc0feeb2a0cceb52ba212fcc5c2a45c21",
+    "index/hessian.md": "9048a71d8380e98353a87b31f2f6e1f70c9fe988b727b0b30f225059d6fae005",
+    "index/papers.md": "4d7972cc9d53cef6b5c6f4200149901e8be868b19b73fe2d43f02ed9a4da2036",
+    "index/plane-jc.md": "5d671124aac8240bdbfbc0996ed7ddd5db314650d16d30b1417453a36c3f3425",
+    "index/resources.md": "11e67c2cb9b688d4f2ee341dd5a49880a1c10913b4ccae81e1feb815df81d068"
+  },
+  "completion_audit": {
+    "actual_polynomial_mate_response_constraint_written": true,
+    "arbitrary_rational_in_w_mates_claimed_excluded": false,
+    "complete_necessary_quadratic_ruling_five_escape_coverage": true,
+    "all_M0_infinite_and_finite_normalized_generic_curve_ends_retained": true,
+    "necessary_bad_canonical_orders": "(15*j,10*j,5*j),j>=1, offM; two coupled constants",
+    "unbounded_cubic_response_actual_target_family_excluded": true,
+    "all_ruling_five_targets_excluded": false,
+    "affine_boundary_double_poles_all_residues_zero": true,
+    "affine_boundary_global_exactness_proved": false,
+    "affine_boundary_actual_Keller_target_constructed": false,
+    "original_full_normalization_codifferent_and_all_ramified_primes_retained": true,
+    "generic_first_derivative_integrality_proved": false,
+    "full_marked_quadratic_regularity_proved": false,
+    "normal_tail_increasing_power_containment_proved": false,
+    "global_minimal_counterexample_coverage_complete": false,
+    "PF142_mixed_minimal_retirement_preserved": true,
+    "PF156_quintic_graph_branch_retirement_preserved": true,
+    "PF158_quadratic_ruling_four_retirement_preserved": true,
+    "full_HC4_JC2_proved": false,
+    "actual_counterexample_constructed": false
+  },
+  "goal_status": "active",
+  "new_external_paper_imports": [],
+  "registered_predecessor_checkers_replayed": [],
+  "independent_replay": false,
+  "formal_verification": false,
+  "external_review": false
+}

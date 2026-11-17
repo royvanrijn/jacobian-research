@@ -1,0 +1,86 @@
+{
+  "date": "2026-11-16",
+  "canonical_proof": "moments/vanishing/JOINT_QUADRATIC_COVERS_AND_SYMMETRIC_THREE_WEIGHT_SAFETY.md",
+  "proof_sha256": "35f089db752b59a962b6797bb777787e93d6880ece6dc8e569838b402da24a28",
+  "checker": "moments/vanishing/verify_haar_three_weight.py",
+  "checker_sha256": "33508e727eda23978a08762bb4e321cf0fbfd8c86fc2aa0e4d9206197801ecf4",
+  "receipt": "moments/vanishing/haar_three_weight_verification.json",
+  "receipt_sha256": "40eef02e0311a2959d43ea0994af4795d1f12c8cd9b158fe269431a16bb0068b",
+  "repository_sources": [
+    {
+      "source": "moments/vanishing/QUADRATIC_SUSPENSION_AND_ALL_LONG_RECOMPOSITIONS.md",
+      "sha256": "d331968bc9b37be3d78a966acee393e6ebb5ef2c1b64e8a6e0c6f7484f7074a3",
+      "use": "Section2 explicit finite conic and SNC-double-cover blowups preserving ORIGINAL volume;Section3 gives BOTH finite regularity and half-pole infinity bound for EVERY sphere height satisfying strict leading criterion,ALL valuations. New JOINT map permits independent p,q."
+    },
+    {
+      "source": "moments/vanishing/VALUATIVE_BOUNDARY_VOLUMES_AND_TORUS_INVARIANT_CLOSURE.md",
+      "sha256": "42bab0af00fe9821dba3121de2a559f88711a0b79eb3ab4d3aad00a8b184dc78",
+      "use": "Original sphere Haar representation, orbit6/12, valuations/finite volume, and Section5 Qbar finite-residue-field embedding/nilpotent coefficient method. Not merely zero-neutral-radical inference."
+    },
+    {
+      "source": "moments/vanishing/SEMISTABLE_LOG_PERIODS_AND_SINGLE_ISOTYPIC_SAFETY.md",
+      "sha256": "2d1c207085783207b425af26636fb05d0ebd07bdff3ac4ddd350c32056d52ae7",
+      "use": "Retained ANY-dimensional projective ORIGINAL-volume period theorem applied to NEW separate conic,not assumed for original full P."
+    },
+    {
+      "source": "moments/vanishing/NONCLOSED_ORBITS_AND_EXACT_WEIGHT_LIFTING.md",
+      "sha256": "74110ef8ef009a1b082efa48ae6391e066dde23e4a86a82c6cb361e517c80538",
+      "use": "Prior full mixed two-weight arbitrary-ring closure and elementary original weight bounds. Abstract dependent-three-weight countercontrol remains valid:zero neutral radical alone insufficient."
+    },
+    {
+      "source": "moments/vanishing/ACTUAL_TORUS_CORRECTIONS_AND_RAMIFIED_COMPONENT_VALUATIONS.md",
+      "sha256": "772248620bb00e6e8c294ac560f5204bc9e056dc53d5a7d3bbaec8734de9d09d",
+      "use": "Whole target still purity forces corrected actual local gluing orders0,or actual invariant pure failure. Symmetric sector closure NOT whole quotient."
+    },
+    {
+      "source": "moments/vanishing/INTRINSIC_REYNOLDS_AND_FINITE_QUOTIENT_DESCENT.md",
+      "sha256": "9bc929aaac70783649f09d6faa00e45c85ae25fd9f30e9a486ad3ab34be240a7",
+      "use": "Haar preservation under algebraic automorphisms transports field class and ring safety;not unchanged degree bound under nonlinear automorphism."
+    }
+  ],
+  "primary_sources": [
+    {
+      "author": "Mircea Mustata;notes by Tomasz Szemberg",
+      "title": "IMPANGA lecture notes on log canonical thresholds",
+      "url": "https://www.impan.pl/~pragacz/mustata1.pdf",
+      "version": "Public36-page PDF based on2010 IMPANGA lectures;served version pinned by hash",
+      "cached_file": "moments/vanishing/sources/mustata_impanga_lct_2011.pdf",
+      "sha256": "bfa87aeb09885a60cb4280de75405fc6ab085c93196cd2590ccb8795afb31707",
+      "selected_passages_read": "Retained PDF4-5 and10-11 discrepancy/multiplicity passages,previously fully read;not a fresh whole-paper audit.",
+      "exact_import": "Retained A>=h/m used through already proved all-valuation height estimates. New joint-map and nilpotence proofs written here;no new lct assertion imported."
+    },
+    {
+      "authors": "G.Kempf,F.Knudsen,D.Mumford,B.Saint-Donat",
+      "title": "Toroidal Embeddings I,ChapterII:Semi-stable reduction",
+      "url": "https://page-one.springer.com/pdf/preview/10.1007/BFb0070320",
+      "version": "LNM339(1973),publisher PUBLIC PREVIEW printed53-54,complete theorem statement only",
+      "cached_file": "moments/vanishing/sources/kkmsd_semistable_preview_pp53_54_1973.pdf",
+      "sha256": "c7dd8a8b45e01bc4c0adf059eb88bd9b68b09baa948a814310aa35b10fffd3e3",
+      "selected_passages_read": "Retained prior audit: Complete semistable reduction theorem on53-54 from web PDF extraction;53 rendered and visually checked.",
+      "exact_import": "Used through retained GPROJECTIVELOGPERIOD and its compact-chain proof: Over a smooth curve in characteristic0,finite base change and projective modification give smooth total space with reduced SNC special fibre,isomorphic off the special fibre. The full chapter proof is not claimed read from this two-page preview."
+    },
+    {
+      "author": "J.H.M.Steenbrink",
+      "title": "Mixed Hodge Structure on the Vanishing Cohomology",
+      "url": "https://webhomes.maths.ed.ac.uk/~v1ranick/papers/steenbrink2.pdf",
+      "version": "Oslo1976 proceedings,printed525-563,original scanned paper,pinned by hash",
+      "cached_file": "moments/vanishing/sources/steenbrink_vanishing_cohomology_1977.pdf",
+      "sha256": "7338acfe3265abea52b3d642091aa44e88771d961ed5dbd72c171886610c1e73",
+      "selected_passages_read": "Retained prior audit: Section2 setup on533,relative log forms2.5-2.6 andTheorem2.7 on535,and2.9-2.12 on536-537,visually read on original scan PDF5-7.",
+      "exact_import": "Used through retained GPROJECTIVELOGPERIOD and its compact-chain proof: For projective smooth generic families in arbitrary dimension after the reduced base change,relative log de Rham cohomology is locally free,with logarithmic Gauss-Manin connection of nilpotent residue. This Section2 scope is not limited to the later isolated-singularity application. Polynomial log growth of holomorphic sections is the elementary connection consequence written here."
+    }
+  ],
+  "standard_geometric_inputs": "Retained characteristic-zero projective graph resolution and finite normalization. Resolve JOINT map[1:p:d] and its infinity divisor;no new singularity classification. Finite conic/SNC-cover original-volume charts imported from retained proof,not an abstract dualizing-generator promotion.",
+  "new_written_arguments": [
+    "Universal symmetric-three-weight moment formula depends on joint neutral p,q without any relation. Compact conic loop a=z,b=q/z preserves EVERY unweighted polynomial moment.",
+    "Basepoint-free joint map[1:p:p2-4q] makes normalized quadratic-cover branch SNC at ALL finite S infinity points: Aunit => derivative-2A,elseBunit. Maximum active pole of either height yields actual volume prefactor bound.",
+    "All field recompositions classified;eventual pure P itself iff neutral part0 and charged product0. Uses full exceptional volume geometry,not zero-neutral-radical alone.",
+    "Every commutative C-algebra:residue finite Qbar coefficient field embedding makes p,q coefficients nilpotent;finite nilpotent coefficient ideals give p^nu,q^kappa0. Direct weight-count formula proves all-original-marker cutoff m>nu+2kappa-3+BQ/absn."
+  ],
+  "essential_boundaries": [
+    "BOTH FULL exceptional cases OPEN. Only support contained{-n,0,n};unequal opposite magnitudes/other three-weight/shifted progressions/larger supports not closed. No >=4weight conclusion.",
+    "Field all-H law is NOT copied to arbitrary coefficient rings;ring theorem concerns P and gives exact eventual criterion/safety. Nilpotence does not guarantee first pure moment.",
+    "No proper model for original full phase,weighted transfer,primitive-purity reflection,or neutral-radical-alone lifting. Distinct Hopf nonlinear composites and all mixed Bezout sections not excluded.",
+    "Internal universal arguments with retained inputs and small exact controls,not machine proof/independent replay/external review or new campaign."
+  ]
+}

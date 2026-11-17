@@ -1,0 +1,52 @@
+{
+  "status": "pass",
+  "claim": "KCUB34",
+  "checker_receipt_sha256": "ceb7ce5d37c60f0b7e16e54329f99dc145e8da27148053009e8539ee67552ec2",
+  "proof_sha256": "d6b852b2a62adf92352ebe9ee487d19c39f77cf88cdfd78d08148a915e6845b8",
+  "checker_sha256": "dc9c73705a44552a8e7d915791f0479ed290889e94180b405af4cee43097d261",
+  "source_atoms": 52,
+  "native_coefficient_generators": 72,
+  "finite_models": 4,
+  "univariate_coefficients": 3,
+  "graph_coefficients": 4,
+  "affine_eigenvalues": 28,
+  "constant_pivots": 3,
+  "univariate_unit_terms": 5,
+  "quadratic_tail_identities": 2,
+  "generic_inverse_charts": 8,
+  "affected_method_reviews": 17,
+  "ledger_fields_hashes_paths_reciprocity": true,
+  "work_fingerprints_sources_unique_current": true,
+  "local_links_compilation_and_whitespace": true,
+  "previous_goal_turn_classification": "progress: KCUB33 full primitive opposite-weight classification",
+  "this_goal_turn_progress": "KCUB34 full(1,-1,-r),r>=4 degree7 classification with exact two-shear normal forms",
+  "no_bound_or_full_profile_change": true,
+  "global_goal_complete": false,
+  "navigation_attempts": [
+    {
+      "command": [
+        "research/scripts/render_status.py"
+      ],
+      "exit_code": 1,
+      "output": "Traceback (most recent call last):\n  File \"/home/royvanrijn/src/jacobian-research/research/scripts/render_status.py\", line 514, in <module>\n    main()\n  File \"/home/royvanrijn/src/jacobian-research/research/scripts/render_status.py\", line 503, in main\n    validate_index(index)\n  File \"/home/royvanrijn/src/jacobian-research/research/scripts/render_status.py\", line 203, in validate_index\n    assert witness in item[\"dependencies\"], (\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: OP-GLDC: forbidden-attack witness KCUB15 must also be a dependency"
+    },
+    {
+      "command": [
+        "research/scripts/research.py",
+        "render"
+      ],
+      "exit_code": 1,
+      "output": "Traceback (most recent call last):\n  File \"/home/royvanrijn/src/jacobian-research/research/scripts/research.py\", line 563, in <module>\n    raise SystemExit(main())\n                     ^^^^^^\n  File \"/home/royvanrijn/src/jacobian-research/research/scripts/research.py\", line 440, in main\n    validate_lessons(items, entries, check_reviews=args.command == \"check\")\n  File \"/home/royvanrijn/src/jacobian-research/research/scripts/research.py\", line 130, in validate_lessons\n    assert (ROOT / p).is_file(), f\"{item['id']}: missing source {p}\"\n           ^^^^^^^^^^^^^^^^^^^^"
+    },
+    {
+      "command": [
+        "research/scripts/render_status.py"
+      ],
+      "exit_code": 1,
+      "output": "Traceback (most recent call last):\n  File \"/home/royvanrijn/src/jacobian-research/research/scripts/render_status.py\", line 514, in <module>\n    main()\n  File \"/home/royvanrijn/src/jacobian-research/research/scripts/render_status.py\", line 503, in main\n    validate_index(index)\n  File \"/home/royvanrijn/src/jacobian-research/research/scripts/render_status.py\", line 360, in validate_index\n    assert consumer_path.is_file(), (\n           ^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: KDSQ6: missing document consumer artifacts/generated-results/README.md",
+      "after_fix": "Added KCUB15 andKCUB18 dependency edges required by their new forbidden-attack witness references; no scope/fingerprint change."
+    }
+  ],
+  "navigation_failure_scope": "Historical navigation output omitted during repository reorganization.",
+  "new_forbidden_attack_witness_dependency_edges_checked": true
+}

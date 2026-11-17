@@ -1,0 +1,1736 @@
+{
+  "schema_version": 1,
+  "result": "pass",
+  "check_count": 111,
+  "checks": [
+    "S7 hook and independent branching dimensions agree",
+    "S7 complete low-degree induction base",
+    "S7 nonexceptional minimum exactly14",
+    "S8 hook and independent branching dimensions agree",
+    "S8 complete low-degree induction base",
+    "S8 nonexceptional minimum exactly14",
+    "S9 structural induction controls",
+    "S10 structural induction controls",
+    "S11 structural induction controls",
+    "S12 structural induction controls",
+    "S13 structural induction controls",
+    "S14 structural induction controls",
+    "S15 structural induction controls",
+    "S16 structural induction controls",
+    "S2 all character dimensions match hook formula",
+    "S2 entire exact character table row orthogonality",
+    "S2 fixed-space averages are integral",
+    "S2 complete faithful low-degree obstruction",
+    "S2 complete equality surface profiles",
+    "S3 all character dimensions match hook formula",
+    "S3 entire exact character table row orthogonality",
+    "S3 fixed-space averages are integral",
+    "S3 complete faithful low-degree obstruction",
+    "S3 complete equality surface profiles",
+    "S4 all character dimensions match hook formula",
+    "S4 entire exact character table row orthogonality",
+    "S4 fixed-space averages are integral",
+    "S4 complete faithful low-degree obstruction",
+    "S4 complete equality surface profiles",
+    "S5 all character dimensions match hook formula",
+    "S5 entire exact character table row orthogonality",
+    "S5 fixed-space averages are integral",
+    "S5 complete faithful low-degree obstruction",
+    "S5 complete equality surface profiles",
+    "S6 all character dimensions match hook formula",
+    "S6 entire exact character table row orthogonality",
+    "S6 fixed-space averages are integral",
+    "S6 complete faithful low-degree obstruction",
+    "S6 complete equality surface profiles",
+    "two blocks 3+3 even actual group",
+    "two blocks 3+3 exact two orbits without fixed labels",
+    "two blocks 3+3 standard fixed dimension exactly one",
+    "two blocks 3+9 even actual group",
+    "two blocks 3+9 exact two orbits without fixed labels",
+    "two blocks 3+9 standard fixed dimension exactly one",
+    "two blocks 2+4 even actual group",
+    "two blocks 2+4 exact two orbits without fixed labels",
+    "two blocks 2+4 standard fixed dimension exactly one",
+    "two blocks 4+8 even actual group",
+    "two blocks 4+8 exact two orbits without fixed labels",
+    "two blocks 4+8 standard fixed dimension exactly one",
+    "two blocks 7+7 even actual group",
+    "two blocks 7+7 exact two orbits without fixed labels",
+    "two blocks 7+7 standard fixed dimension exactly one",
+    "rank7 exhaustive prime-power orbit-pattern criterion",
+    "rank8 exhaustive prime-power orbit-pattern criterion",
+    "rank9 exhaustive prime-power orbit-pattern criterion",
+    "rank10 exhaustive prime-power orbit-pattern criterion",
+    "rank11 exhaustive prime-power orbit-pattern criterion",
+    "rank12 exhaustive prime-power orbit-pattern criterion",
+    "rank13 exhaustive prime-power orbit-pattern criterion",
+    "rank14 exhaustive prime-power orbit-pattern criterion",
+    "rank15 exhaustive prime-power orbit-pattern criterion",
+    "rank16 exhaustive prime-power orbit-pattern criterion",
+    "rank17 exhaustive prime-power orbit-pattern criterion",
+    "rank18 exhaustive prime-power orbit-pattern criterion",
+    "rank19 exhaustive prime-power orbit-pattern criterion",
+    "rank20 exhaustive prime-power orbit-pattern criterion",
+    "rank21 exhaustive prime-power orbit-pattern criterion",
+    "rank22 exhaustive prime-power orbit-pattern criterion",
+    "rank23 exhaustive prime-power orbit-pattern criterion",
+    "rank24 exhaustive prime-power orbit-pattern criterion",
+    "rank25 exhaustive prime-power orbit-pattern criterion",
+    "rank26 exhaustive prime-power orbit-pattern criterion",
+    "rank27 exhaustive prime-power orbit-pattern criterion",
+    "rank28 exhaustive prime-power orbit-pattern criterion",
+    "rank29 exhaustive prime-power orbit-pattern criterion",
+    "rank30 exhaustive prime-power orbit-pattern criterion",
+    "rank31 exhaustive prime-power orbit-pattern criterion",
+    "rank32 exhaustive prime-power orbit-pattern criterion",
+    "ranks15 and28 are exact representation-level limitations",
+    "nonlinear involution is order two",
+    "nonlinear involution fixed ideal is the parabola",
+    "nonlinear fixed-curve control is equivariant Keller",
+    "whole fixed-curve restriction is the surjective translation",
+    "char2 wild finite action has identity first jet",
+    "char2 wild action has exact order p",
+    "char2 fixed ideal retains its nonreduced thickening",
+    "char2 all translations are actual regular deck maps",
+    "char2 degree-p fixed-line exception is Keller",
+    "char3 wild finite action has identity first jet",
+    "char3 wild action has exact order p",
+    "char3 fixed ideal retains its nonreduced thickening",
+    "char3 all translations are actual regular deck maps",
+    "char3 degree-p fixed-line exception is Keller",
+    "char5 wild finite action has identity first jet",
+    "char5 wild action has exact order p",
+    "char5 fixed ideal retains its nonreduced thickening",
+    "char5 all translations are actual regular deck maps",
+    "char5 degree-p fixed-line exception is Keller",
+    "retained local pin jacobian/monodromy-theory/GENERAL_DECK_RIGIDITY.md",
+    "retained local pin jacobian/monodromy-theory/verify_regular_deck.py",
+    "retained local pin jacobian/universal-keller-symmetry/PROOF.md",
+    "retained local pin jacobian/universal-keller-costs/PROOF.md",
+    "retained local pin jacobian/universal-keller-quadrics/PROOF.md",
+    "retained local pin foundations/verified/UNIVERSAL_RELATIVE_KELLER_MAP.md",
+    "retained local pin jacobian/universal-keller-compression/PROOF.md",
+    "retained local pin jacobian/universal-keller-sextic/PROOF.md",
+    "retained local pin jacobian/universal-keller-trace/PROOF.md",
+    "retained primary pin sources/haution-fixed-points.html",
+    "retained primary pin sources/weighted-hook-formula.pdf"
+  ],
+  "induction_base_controls": [
+    {
+      "n": 7,
+      "all_partitions": [
+        {
+          "partition": [
+            7
+          ],
+          "hook_degree": 1,
+          "branch_degree": 1
+        },
+        {
+          "partition": [
+            6,
+            1
+          ],
+          "hook_degree": 6,
+          "branch_degree": 6
+        },
+        {
+          "partition": [
+            5,
+            2
+          ],
+          "hook_degree": 14,
+          "branch_degree": 14
+        },
+        {
+          "partition": [
+            5,
+            1,
+            1
+          ],
+          "hook_degree": 15,
+          "branch_degree": 15
+        },
+        {
+          "partition": [
+            4,
+            3
+          ],
+          "hook_degree": 14,
+          "branch_degree": 14
+        },
+        {
+          "partition": [
+            4,
+            2,
+            1
+          ],
+          "hook_degree": 35,
+          "branch_degree": 35
+        },
+        {
+          "partition": [
+            4,
+            1,
+            1,
+            1
+          ],
+          "hook_degree": 20,
+          "branch_degree": 20
+        },
+        {
+          "partition": [
+            3,
+            3,
+            1
+          ],
+          "hook_degree": 21,
+          "branch_degree": 21
+        },
+        {
+          "partition": [
+            3,
+            2,
+            2
+          ],
+          "hook_degree": 21,
+          "branch_degree": 21
+        },
+        {
+          "partition": [
+            3,
+            2,
+            1,
+            1
+          ],
+          "hook_degree": 35,
+          "branch_degree": 35
+        },
+        {
+          "partition": [
+            3,
+            1,
+            1,
+            1,
+            1
+          ],
+          "hook_degree": 15,
+          "branch_degree": 15
+        },
+        {
+          "partition": [
+            2,
+            2,
+            2,
+            1
+          ],
+          "hook_degree": 14,
+          "branch_degree": 14
+        },
+        {
+          "partition": [
+            2,
+            2,
+            1,
+            1,
+            1
+          ],
+          "hook_degree": 14,
+          "branch_degree": 14
+        },
+        {
+          "partition": [
+            2,
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          "hook_degree": 6,
+          "branch_degree": 6
+        },
+        {
+          "partition": [
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          "hook_degree": 1,
+          "branch_degree": 1
+        }
+      ]
+    },
+    {
+      "n": 8,
+      "all_partitions": [
+        {
+          "partition": [
+            8
+          ],
+          "hook_degree": 1,
+          "branch_degree": 1
+        },
+        {
+          "partition": [
+            7,
+            1
+          ],
+          "hook_degree": 7,
+          "branch_degree": 7
+        },
+        {
+          "partition": [
+            6,
+            2
+          ],
+          "hook_degree": 20,
+          "branch_degree": 20
+        },
+        {
+          "partition": [
+            6,
+            1,
+            1
+          ],
+          "hook_degree": 21,
+          "branch_degree": 21
+        },
+        {
+          "partition": [
+            5,
+            3
+          ],
+          "hook_degree": 28,
+          "branch_degree": 28
+        },
+        {
+          "partition": [
+            5,
+            2,
+            1
+          ],
+          "hook_degree": 64,
+          "branch_degree": 64
+        },
+        {
+          "partition": [
+            5,
+            1,
+            1,
+            1
+          ],
+          "hook_degree": 35,
+          "branch_degree": 35
+        },
+        {
+          "partition": [
+            4,
+            4
+          ],
+          "hook_degree": 14,
+          "branch_degree": 14
+        },
+        {
+          "partition": [
+            4,
+            3,
+            1
+          ],
+          "hook_degree": 70,
+          "branch_degree": 70
+        },
+        {
+          "partition": [
+            4,
+            2,
+            2
+          ],
+          "hook_degree": 56,
+          "branch_degree": 56
+        },
+        {
+          "partition": [
+            4,
+            2,
+            1,
+            1
+          ],
+          "hook_degree": 90,
+          "branch_degree": 90
+        },
+        {
+          "partition": [
+            4,
+            1,
+            1,
+            1,
+            1
+          ],
+          "hook_degree": 35,
+          "branch_degree": 35
+        },
+        {
+          "partition": [
+            3,
+            3,
+            2
+          ],
+          "hook_degree": 42,
+          "branch_degree": 42
+        },
+        {
+          "partition": [
+            3,
+            3,
+            1,
+            1
+          ],
+          "hook_degree": 56,
+          "branch_degree": 56
+        },
+        {
+          "partition": [
+            3,
+            2,
+            2,
+            1
+          ],
+          "hook_degree": 70,
+          "branch_degree": 70
+        },
+        {
+          "partition": [
+            3,
+            2,
+            1,
+            1,
+            1
+          ],
+          "hook_degree": 64,
+          "branch_degree": 64
+        },
+        {
+          "partition": [
+            3,
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          "hook_degree": 21,
+          "branch_degree": 21
+        },
+        {
+          "partition": [
+            2,
+            2,
+            2,
+            2
+          ],
+          "hook_degree": 14,
+          "branch_degree": 14
+        },
+        {
+          "partition": [
+            2,
+            2,
+            2,
+            1,
+            1
+          ],
+          "hook_degree": 28,
+          "branch_degree": 28
+        },
+        {
+          "partition": [
+            2,
+            2,
+            1,
+            1,
+            1,
+            1
+          ],
+          "hook_degree": 20,
+          "branch_degree": 20
+        },
+        {
+          "partition": [
+            2,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          "hook_degree": 7,
+          "branch_degree": 7
+        },
+        {
+          "partition": [
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          "hook_degree": 1,
+          "branch_degree": 1
+        }
+      ]
+    }
+  ],
+  "complete_small_character_controls": [
+    {
+      "n": 2,
+      "all_low_irreducibles": [
+        {
+          "partition": [
+            2
+          ],
+          "degree": 1,
+          "fixed_dimension": 1
+        },
+        {
+          "partition": [
+            1,
+            1
+          ],
+          "degree": 1,
+          "fixed_dimension": 0
+        }
+      ],
+      "faithful_representations_checked": 6,
+      "equality_profiles_passing_this_subgroup": [
+        {
+          "partitions": [
+            [
+              2
+            ],
+            [
+              2
+            ],
+            [
+              1,
+              1
+            ]
+          ],
+          "fixed_dimension": 2
+        }
+      ]
+    },
+    {
+      "n": 3,
+      "all_low_irreducibles": [
+        {
+          "partition": [
+            3
+          ],
+          "degree": 1,
+          "fixed_dimension": 1
+        },
+        {
+          "partition": [
+            2,
+            1
+          ],
+          "degree": 2,
+          "fixed_dimension": 0
+        },
+        {
+          "partition": [
+            1,
+            1,
+            1
+          ],
+          "degree": 1,
+          "fixed_dimension": 1
+        }
+      ],
+      "faithful_representations_checked": 7,
+      "equality_profiles_passing_this_subgroup": [
+        {
+          "partitions": [
+            [
+              3
+            ],
+            [
+              3
+            ],
+            [
+              2,
+              1
+            ]
+          ],
+          "fixed_dimension": 2
+        },
+        {
+          "partitions": [
+            [
+              3
+            ],
+            [
+              2,
+              1
+            ],
+            [
+              1,
+              1,
+              1
+            ]
+          ],
+          "fixed_dimension": 2
+        },
+        {
+          "partitions": [
+            [
+              2,
+              1
+            ],
+            [
+              1,
+              1,
+              1
+            ],
+            [
+              1,
+              1,
+              1
+            ]
+          ],
+          "fixed_dimension": 2
+        }
+      ]
+    },
+    {
+      "n": 4,
+      "all_low_irreducibles": [
+        {
+          "partition": [
+            4
+          ],
+          "degree": 1,
+          "fixed_dimension": 1
+        },
+        {
+          "partition": [
+            3,
+            1
+          ],
+          "degree": 3,
+          "fixed_dimension": 0
+        },
+        {
+          "partition": [
+            2,
+            2
+          ],
+          "degree": 2,
+          "fixed_dimension": 2
+        },
+        {
+          "partition": [
+            2,
+            1,
+            1
+          ],
+          "degree": 3,
+          "fixed_dimension": 0
+        },
+        {
+          "partition": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "degree": 1,
+          "fixed_dimension": 1
+        }
+      ],
+      "faithful_representations_checked": 14,
+      "equality_profiles_passing_this_subgroup": [
+        {
+          "partitions": [
+            [
+              4
+            ],
+            [
+              4
+            ],
+            [
+              3,
+              1
+            ]
+          ],
+          "fixed_dimension": 2
+        },
+        {
+          "partitions": [
+            [
+              4
+            ],
+            [
+              4
+            ],
+            [
+              2,
+              1,
+              1
+            ]
+          ],
+          "fixed_dimension": 2
+        },
+        {
+          "partitions": [
+            [
+              4
+            ],
+            [
+              3,
+              1
+            ],
+            [
+              1,
+              1,
+              1,
+              1
+            ]
+          ],
+          "fixed_dimension": 2
+        },
+        {
+          "partitions": [
+            [
+              4
+            ],
+            [
+              2,
+              1,
+              1
+            ],
+            [
+              1,
+              1,
+              1,
+              1
+            ]
+          ],
+          "fixed_dimension": 2
+        },
+        {
+          "partitions": [
+            [
+              3,
+              1
+            ],
+            [
+              2,
+              2
+            ]
+          ],
+          "fixed_dimension": 2
+        },
+        {
+          "partitions": [
+            [
+              3,
+              1
+            ],
+            [
+              1,
+              1,
+              1,
+              1
+            ],
+            [
+              1,
+              1,
+              1,
+              1
+            ]
+          ],
+          "fixed_dimension": 2
+        },
+        {
+          "partitions": [
+            [
+              2,
+              2
+            ],
+            [
+              2,
+              1,
+              1
+            ]
+          ],
+          "fixed_dimension": 2
+        },
+        {
+          "partitions": [
+            [
+              2,
+              1,
+              1
+            ],
+            [
+              1,
+              1,
+              1,
+              1
+            ],
+            [
+              1,
+              1,
+              1,
+              1
+            ]
+          ],
+          "fixed_dimension": 2
+        }
+      ]
+    },
+    {
+      "n": 5,
+      "all_low_irreducibles": [
+        {
+          "partition": [
+            5
+          ],
+          "degree": 1,
+          "fixed_dimension": 1
+        },
+        {
+          "partition": [
+            4,
+            1
+          ],
+          "degree": 4,
+          "fixed_dimension": 0
+        },
+        {
+          "partition": [
+            3,
+            2
+          ],
+          "degree": 5,
+          "fixed_dimension": 1
+        },
+        {
+          "partition": [
+            3,
+            1,
+            1
+          ],
+          "degree": 6,
+          "fixed_dimension": 2
+        },
+        {
+          "partition": [
+            2,
+            2,
+            1
+          ],
+          "degree": 5,
+          "fixed_dimension": 1
+        },
+        {
+          "partition": [
+            2,
+            1,
+            1,
+            1
+          ],
+          "degree": 4,
+          "fixed_dimension": 0
+        },
+        {
+          "partition": [
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          "degree": 1,
+          "fixed_dimension": 1
+        }
+      ],
+      "faithful_representations_checked": 19,
+      "equality_profiles_passing_this_subgroup": [
+        {
+          "partitions": [
+            [
+              5
+            ],
+            [
+              5
+            ],
+            [
+              4,
+              1
+            ]
+          ],
+          "fixed_dimension": 2
+        },
+        {
+          "partitions": [
+            [
+              5
+            ],
+            [
+              5
+            ],
+            [
+              2,
+              1,
+              1,
+              1
+            ]
+          ],
+          "fixed_dimension": 2
+        },
+        {
+          "partitions": [
+            [
+              5
+            ],
+            [
+              4,
+              1
+            ],
+            [
+              1,
+              1,
+              1,
+              1,
+              1
+            ]
+          ],
+          "fixed_dimension": 2
+        },
+        {
+          "partitions": [
+            [
+              5
+            ],
+            [
+              3,
+              2
+            ]
+          ],
+          "fixed_dimension": 2
+        },
+        {
+          "partitions": [
+            [
+              5
+            ],
+            [
+              2,
+              2,
+              1
+            ]
+          ],
+          "fixed_dimension": 2
+        },
+        {
+          "partitions": [
+            [
+              5
+            ],
+            [
+              2,
+              1,
+              1,
+              1
+            ],
+            [
+              1,
+              1,
+              1,
+              1,
+              1
+            ]
+          ],
+          "fixed_dimension": 2
+        },
+        {
+          "partitions": [
+            [
+              4,
+              1
+            ],
+            [
+              1,
+              1,
+              1,
+              1,
+              1
+            ],
+            [
+              1,
+              1,
+              1,
+              1,
+              1
+            ]
+          ],
+          "fixed_dimension": 2
+        },
+        {
+          "partitions": [
+            [
+              3,
+              2
+            ],
+            [
+              1,
+              1,
+              1,
+              1,
+              1
+            ]
+          ],
+          "fixed_dimension": 2
+        },
+        {
+          "partitions": [
+            [
+              3,
+              1,
+              1
+            ]
+          ],
+          "fixed_dimension": 2
+        },
+        {
+          "partitions": [
+            [
+              2,
+              2,
+              1
+            ],
+            [
+              1,
+              1,
+              1,
+              1,
+              1
+            ]
+          ],
+          "fixed_dimension": 2
+        },
+        {
+          "partitions": [
+            [
+              2,
+              1,
+              1,
+              1
+            ],
+            [
+              1,
+              1,
+              1,
+              1,
+              1
+            ],
+            [
+              1,
+              1,
+              1,
+              1,
+              1
+            ]
+          ],
+          "fixed_dimension": 2
+        }
+      ]
+    },
+    {
+      "n": 6,
+      "all_low_irreducibles": [
+        {
+          "partition": [
+            6
+          ],
+          "degree": 1,
+          "fixed_dimension": 1
+        },
+        {
+          "partition": [
+            5,
+            1
+          ],
+          "degree": 5,
+          "fixed_dimension": 1
+        },
+        {
+          "partition": [
+            3,
+            3
+          ],
+          "degree": 5,
+          "fixed_dimension": 1
+        },
+        {
+          "partition": [
+            2,
+            2,
+            2
+          ],
+          "degree": 5,
+          "fixed_dimension": 1
+        },
+        {
+          "partition": [
+            2,
+            1,
+            1,
+            1,
+            1
+          ],
+          "degree": 5,
+          "fixed_dimension": 1
+        },
+        {
+          "partition": [
+            1,
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          "degree": 1,
+          "fixed_dimension": 1
+        }
+      ],
+      "faithful_representations_checked": 24,
+      "equality_profiles_passing_this_subgroup": [
+        {
+          "partitions": [
+            [
+              6
+            ],
+            [
+              5,
+              1
+            ]
+          ],
+          "fixed_dimension": 2
+        },
+        {
+          "partitions": [
+            [
+              6
+            ],
+            [
+              3,
+              3
+            ]
+          ],
+          "fixed_dimension": 2
+        },
+        {
+          "partitions": [
+            [
+              6
+            ],
+            [
+              2,
+              2,
+              2
+            ]
+          ],
+          "fixed_dimension": 2
+        },
+        {
+          "partitions": [
+            [
+              6
+            ],
+            [
+              2,
+              1,
+              1,
+              1,
+              1
+            ]
+          ],
+          "fixed_dimension": 2
+        },
+        {
+          "partitions": [
+            [
+              5,
+              1
+            ],
+            [
+              1,
+              1,
+              1,
+              1,
+              1,
+              1
+            ]
+          ],
+          "fixed_dimension": 2
+        },
+        {
+          "partitions": [
+            [
+              3,
+              3
+            ],
+            [
+              1,
+              1,
+              1,
+              1,
+              1,
+              1
+            ]
+          ],
+          "fixed_dimension": 2
+        },
+        {
+          "partitions": [
+            [
+              2,
+              2,
+              2
+            ],
+            [
+              1,
+              1,
+              1,
+              1,
+              1,
+              1
+            ]
+          ],
+          "fixed_dimension": 2
+        },
+        {
+          "partitions": [
+            [
+              2,
+              1,
+              1,
+              1,
+              1
+            ],
+            [
+              1,
+              1,
+              1,
+              1,
+              1,
+              1
+            ]
+          ],
+          "fixed_dimension": 2
+        }
+      ]
+    }
+  ],
+  "two_orbit_groups": [
+    {
+      "p": 3,
+      "blocks": [
+        3,
+        3
+      ],
+      "order": 9,
+      "orbits": [
+        [
+          0,
+          1,
+          2
+        ],
+        [
+          3,
+          4,
+          5
+        ]
+      ],
+      "standard_fixed_dimension": 1
+    },
+    {
+      "p": 3,
+      "blocks": [
+        3,
+        9
+      ],
+      "order": 27,
+      "orbits": [
+        [
+          0,
+          1,
+          2
+        ],
+        [
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11
+        ]
+      ],
+      "standard_fixed_dimension": 1
+    },
+    {
+      "p": 2,
+      "blocks": [
+        2,
+        4
+      ],
+      "order": 4,
+      "orbits": [
+        [
+          0,
+          1
+        ],
+        [
+          2,
+          3,
+          4,
+          5
+        ]
+      ],
+      "standard_fixed_dimension": 1
+    },
+    {
+      "p": 2,
+      "blocks": [
+        4,
+        8
+      ],
+      "order": 16,
+      "orbits": [
+        [
+          0,
+          1,
+          2,
+          3
+        ],
+        [
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11
+        ]
+      ],
+      "standard_fixed_dimension": 1
+    },
+    {
+      "p": 7,
+      "blocks": [
+        7,
+        7
+      ],
+      "order": 49,
+      "orbits": [
+        [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        [
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13
+        ]
+      ],
+      "standard_fixed_dimension": 1
+    }
+  ],
+  "orbit_pattern_controls": [
+    {
+      "n": 7,
+      "class": "prime_power",
+      "obstructing_orbit_patterns": [
+        {
+          "p": 7,
+          "orbit_sizes": [
+            7
+          ]
+        }
+      ]
+    },
+    {
+      "n": 8,
+      "class": "prime_power",
+      "obstructing_orbit_patterns": [
+        {
+          "p": 2,
+          "orbit_sizes": [
+            4,
+            4
+          ]
+        },
+        {
+          "p": 2,
+          "orbit_sizes": [
+            8
+          ]
+        }
+      ]
+    },
+    {
+      "n": 9,
+      "class": "prime_power",
+      "obstructing_orbit_patterns": [
+        {
+          "p": 3,
+          "orbit_sizes": [
+            9
+          ]
+        }
+      ]
+    },
+    {
+      "n": 10,
+      "class": "two_positive_powers",
+      "obstructing_orbit_patterns": [
+        {
+          "p": 2,
+          "orbit_sizes": [
+            2,
+            8
+          ]
+        },
+        {
+          "p": 5,
+          "orbit_sizes": [
+            5,
+            5
+          ]
+        }
+      ]
+    },
+    {
+      "n": 11,
+      "class": "prime_power",
+      "obstructing_orbit_patterns": [
+        {
+          "p": 11,
+          "orbit_sizes": [
+            11
+          ]
+        }
+      ]
+    },
+    {
+      "n": 12,
+      "class": "two_positive_powers",
+      "obstructing_orbit_patterns": [
+        {
+          "p": 2,
+          "orbit_sizes": [
+            4,
+            8
+          ]
+        },
+        {
+          "p": 3,
+          "orbit_sizes": [
+            3,
+            9
+          ]
+        }
+      ]
+    },
+    {
+      "n": 13,
+      "class": "prime_power",
+      "obstructing_orbit_patterns": [
+        {
+          "p": 13,
+          "orbit_sizes": [
+            13
+          ]
+        }
+      ]
+    },
+    {
+      "n": 14,
+      "class": "two_positive_powers",
+      "obstructing_orbit_patterns": [
+        {
+          "p": 7,
+          "orbit_sizes": [
+            7,
+            7
+          ]
+        }
+      ]
+    },
+    {
+      "n": 15,
+      "class": "standard_admissible",
+      "obstructing_orbit_patterns": []
+    },
+    {
+      "n": 16,
+      "class": "prime_power",
+      "obstructing_orbit_patterns": [
+        {
+          "p": 2,
+          "orbit_sizes": [
+            8,
+            8
+          ]
+        },
+        {
+          "p": 2,
+          "orbit_sizes": [
+            16
+          ]
+        }
+      ]
+    },
+    {
+      "n": 17,
+      "class": "prime_power",
+      "obstructing_orbit_patterns": [
+        {
+          "p": 17,
+          "orbit_sizes": [
+            17
+          ]
+        }
+      ]
+    },
+    {
+      "n": 18,
+      "class": "two_positive_powers",
+      "obstructing_orbit_patterns": [
+        {
+          "p": 2,
+          "orbit_sizes": [
+            2,
+            16
+          ]
+        },
+        {
+          "p": 3,
+          "orbit_sizes": [
+            9,
+            9
+          ]
+        }
+      ]
+    },
+    {
+      "n": 19,
+      "class": "prime_power",
+      "obstructing_orbit_patterns": [
+        {
+          "p": 19,
+          "orbit_sizes": [
+            19
+          ]
+        }
+      ]
+    },
+    {
+      "n": 20,
+      "class": "two_positive_powers",
+      "obstructing_orbit_patterns": [
+        {
+          "p": 2,
+          "orbit_sizes": [
+            4,
+            16
+          ]
+        }
+      ]
+    },
+    {
+      "n": 21,
+      "class": "standard_admissible",
+      "obstructing_orbit_patterns": []
+    },
+    {
+      "n": 22,
+      "class": "two_positive_powers",
+      "obstructing_orbit_patterns": [
+        {
+          "p": 11,
+          "orbit_sizes": [
+            11,
+            11
+          ]
+        }
+      ]
+    },
+    {
+      "n": 23,
+      "class": "prime_power",
+      "obstructing_orbit_patterns": [
+        {
+          "p": 23,
+          "orbit_sizes": [
+            23
+          ]
+        }
+      ]
+    },
+    {
+      "n": 24,
+      "class": "two_positive_powers",
+      "obstructing_orbit_patterns": [
+        {
+          "p": 2,
+          "orbit_sizes": [
+            8,
+            16
+          ]
+        }
+      ]
+    },
+    {
+      "n": 25,
+      "class": "prime_power",
+      "obstructing_orbit_patterns": [
+        {
+          "p": 5,
+          "orbit_sizes": [
+            25
+          ]
+        }
+      ]
+    },
+    {
+      "n": 26,
+      "class": "two_positive_powers",
+      "obstructing_orbit_patterns": [
+        {
+          "p": 13,
+          "orbit_sizes": [
+            13,
+            13
+          ]
+        }
+      ]
+    },
+    {
+      "n": 27,
+      "class": "prime_power",
+      "obstructing_orbit_patterns": [
+        {
+          "p": 3,
+          "orbit_sizes": [
+            27
+          ]
+        }
+      ]
+    },
+    {
+      "n": 28,
+      "class": "standard_admissible",
+      "obstructing_orbit_patterns": []
+    },
+    {
+      "n": 29,
+      "class": "prime_power",
+      "obstructing_orbit_patterns": [
+        {
+          "p": 29,
+          "orbit_sizes": [
+            29
+          ]
+        }
+      ]
+    },
+    {
+      "n": 30,
+      "class": "two_positive_powers",
+      "obstructing_orbit_patterns": [
+        {
+          "p": 3,
+          "orbit_sizes": [
+            3,
+            27
+          ]
+        },
+        {
+          "p": 5,
+          "orbit_sizes": [
+            5,
+            25
+          ]
+        }
+      ]
+    },
+    {
+      "n": 31,
+      "class": "prime_power",
+      "obstructing_orbit_patterns": [
+        {
+          "p": 31,
+          "orbit_sizes": [
+            31
+          ]
+        }
+      ]
+    },
+    {
+      "n": 32,
+      "class": "prime_power",
+      "obstructing_orbit_patterns": [
+        {
+          "p": 2,
+          "orbit_sizes": [
+            16,
+            16
+          ]
+        },
+        {
+          "p": 2,
+          "orbit_sizes": [
+            32
+          ]
+        }
+      ]
+    }
+  ],
+  "python": "3.12.3",
+  "sympy": "1.14.0",
+  "runtime_seconds": 0.042,
+  "sha256": {
+    "PROOF.md": "406522b5e55cf92ae26326ff46a435856ea99d4b5fb4d7cc143d3f6de9ba3295",
+    "LITERATURE_AND_GAPS.md": "d0da3e4771165ac0e863c13fe05eadcd12ae919fa1dc98de5dd724c8cf102d88",
+    "verify.py": "95637b8e20dae10add00ba8c76b980679a96c977282abc3d9e74a3d3efdcc6b5",
+    "sources.json": "9317166143632d0eb25f50faf4ea4aedbd6e83fe9e4b62c22f0a369297fee58d"
+  },
+  "assurance": "Written all-rank arguments with exact induction bases, independent hook/branching controls, complete small character-table orthogonality and faithful low-degree representation enumeration, actual even two-orbit groups, nonlinear and wild controls, and primary source seals. These controls do not formalize Smith theory, etale geometry, all-rank branching induction or surface recognition. No independent whole-proof replay, formal verification, external review or priority certification. Admissible tangent profiles do not construct Keller maps."
+}

@@ -1,8 +1,0 @@
-{"pivot": 4, "component": 2, "status": "span-member", "rank": 120, "augmented_rank": 120, "functional_terms": 0}
-{"pivot": 4, "component": 3, "status": "span-member", "rank": 56, "augmented_rank": 56, "functional_terms": 0}
-{"pivot": 6, "component": 1, "status": "separated", "rank": 199, "augmented_rank": 200, "functional_terms": 1}
-{"pivot": 7, "component": 1, "status": "separated", "rank": 214, "augmented_rank": 215, "functional_terms": 5}
-{"pivot": 8, "component": 2, "status": "span-member", "rank": 120, "augmented_rank": 120, "functional_terms": 0}
-{"pivot": 10, "component": 2, "status": "span-member", "rank": 120, "augmented_rank": 120, "functional_terms": 0}
-{"pivot": 11, "component": 3, "status": "span-member", "rank": 56, "augmented_rank": 56, "functional_terms": 0}
-{"pivot": 12, "component": 2, "status": "span-member", "rank": 120, "augmented_rank": 120, "functional_terms": 0}

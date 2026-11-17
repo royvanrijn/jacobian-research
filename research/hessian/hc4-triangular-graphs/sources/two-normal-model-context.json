@@ -1,0 +1,95 @@
+{
+  "review_date": "2026-11-15",
+  "title": "Three resonant cubic families normalize globally to one fixed two-point model and one one-parameter hyperbolic suspension family",
+  "newly_cached_primary_context": [],
+  "newly_used_unproved_external_statements": [],
+  "rechecked_retained_primary_context": [
+    {
+      "url": "https://stacks.math.columbia.edu/tag/00T6",
+      "retained_file": "stacks-suspended-standard-smooth-00T6.html",
+      "role": "Retained Jacobian-rank context for relative critical schemes; no new smoothness theorem imported."
+    },
+    {
+      "url": "https://stacks.math.columbia.edu/tag/00T7",
+      "retained_file": "stacks-suspended-standard-smooth-00T7.html",
+      "role": "Retained standard smooth algebra criterion; every used scheme is explicitly solved."
+    },
+    {
+      "url": "https://arxiv.org/html/1203.6605v3",
+      "retained_file": "de-bondt-hc2-1203.6605v3.html",
+      "role": "Versioned primary low-dimensional source rechecked; only the already-retained HC2 input in HR0 is used, never an unrestricted HC4 conclusion."
+    }
+  ],
+  "retained_structural_inputs": [
+    {
+      "claim": "HC4MYJP2",
+      "statement": "Every affine outer degree reduces exactly to four retained tests and three resonant cubic Jordan families."
+    },
+    {
+      "claim": "HC4MYJM0",
+      "statement": "Actual global hyperbolic shear and its inverse."
+    },
+    {
+      "claim": "HC4MYHG0",
+      "statement": "Native critical scheme invariance and passing whole value profiles."
+    },
+    {
+      "claim": "HC4MYHC0",
+      "statement": "Explicit additive/product invariant and actual curve profile."
+    },
+    {
+      "claim": "HC4MYHR0",
+      "statement": "Three constant projection ranks, graph/envelope identities and global-section criterion."
+    },
+    {
+      "claim": "HC4MYJK1",
+      "statement": "Relative chain rule under arbitrary base-preserving polynomial automorphisms."
+    },
+    {
+      "claim": "HCTANG2",
+      "statement": "Retained constant jointly affine two-plane theorem for hypothetical nonautomorphy."
+    },
+    {
+      "claim": "HC4MYHP0",
+      "statement": "Literal scalar/constant quadratic-similitude transfers."
+    },
+    {
+      "claim": "HC4MYHM0",
+      "statement": "Literal original Meng-Yang ambient normalization."
+    }
+  ],
+  "retained_proof_and_source_sha256": {
+    "hessian/hc4-triangular-graphs/GLOBAL_VALUE_ORBITS.md": "1dba2b511024f9da2ebd787183de66aaf42e76bf823fee76b745ffedabef2d5c",
+    "hessian/hc4-triangular-graphs/HODGE_TRACE_CLOSURE.md": "b4958aa0e48775d39f790e8722314452b0d9852a1e98ebbfee2bd2afb2068171",
+    "hessian/hc4-triangular-graphs/ZERO_EIGENVECTOR_SHEARS_AND_RANK_ONE_PENCIL_CLASSIFICATION.md": "ad40b715614aa83d649d720c8d2e074577ccb35fb42bee5141aac0b3c3bf9804",
+    "hessian/hc4-triangular-graphs/SUSPENDED_MULTIPLIER_ORBITS_AND_BASE_PRESERVING_CLOSURE.md": "868748e503bcf87ce1f087c5cf9c612122ea6f3b051decd12b88fad940f5500c",
+    "hessian/hc4-triangular-graphs/RELATIVE_CRITICAL_GRAPH_CLASSIFICATION.md": "2f1fb67fcc8abff242c43f8a6a1a1ec79a3d40c384067eb9c561e164fd2bbe62",
+    "hessian/hc4-triangular-graphs/ALL_AFFINE_PENCILS_TO_THREE_RESONANT_CUBIC_FAMILIES.md": "d1bbfb4e0106f65c9d08835176fe6cc11dc36bcab6d221d23d56b406d6a3528f",
+    "hessian/hc4-triangular-graphs/verify_resonant_cubics.py": "5305407841eadb6249783b6cf5cc8761eaccbbc78e85d951ca78ceb06663a35a",
+    "hessian/hc4-triangular-graphs/receipt-resonant-cubics.json": "24f48b7ed32ec0bdfaadaf395b4d4d150ac5c59010972b96b7d5083ab2616fff",
+    "hessian/hc4-triangular-graphs/sources/resonant-cubic-context.json": "1358a5bd1157606b80fa9c3133cc44abbf93252667f14d30dc5da819998e01d7",
+    "hessian/hc4-triangular-graphs/ISOTROPIC_KERNELS_AND_SIMPLE_ZERO_QUARTIC_FRONTIER.md": "87ac98793381f12ad5aec469e718932efd5c78c1381dde9faf4a353f31181701",
+    "hessian/hc4-triangular-graphs/QUADRATIC_ISOMETRY_SATURATION.md": "7655380f3443c438f2d33b87b2ca9acf2c51a6db15e41b12a33a4bd0414723ad",
+    "hessian/hc4-triangular-graphs/AMBIENT_QUADRIC_GRAPHS.md": "435ead09b62a8ec765f626b66314db3a85033c2e75019f12b7b5a021408dcc1c",
+    "hessian/hc4-triangular-graphs/../tang-hc4-audit/STRUCTURAL_REVIEW.md": "26a6a76eb579de05b8e71245b8b804bdd5f036602f2e3e6ad5d036fd9f5cd572",
+    "hessian/hc4-triangular-graphs/sources/de-bondt-hc2-1203.6605v3.html": "3903a15a035ce58f5e3b0231df8af4ddda160cf0091ed138c7475c2b1f893e2b",
+    "hessian/hc4-triangular-graphs/sources/stacks-suspended-standard-smooth-00T6.html": "10851df7335a8c2311f33a5b714dc75fd5d01ef7945d9c8f06e7daf8cf5a3f63",
+    "hessian/hc4-triangular-graphs/sources/stacks-suspended-standard-smooth-00T7.html": "b4b70512dacc5c4ef405c0692d8d600d02502aae0a389ce755948cbd7a645aff"
+  },
+  "length_two_resonant_family_globally_equivalent_to_scalar_family": true,
+  "all_affine_universal_questions_reduced_to_four_old_tests_fixed_K2_and_K3_rho": true,
+  "coupled_cubic_globally_equivalent_to_explicit_hyperbolic_suspension": true,
+  "relative_rank_one_nonplane_alignment_without_closed_base_image_proved": true,
+  "every_natural_base_preserving_source_map_excluded_for_both_new_models": true,
+  "remaining_fixed_K2_full_source_orbit_resolved": false,
+  "remaining_K3_rho_full_source_family_resolved": false,
+  "fixed_K2_identified_with_h0_or_h1": false,
+  "rho_complete_source_orbit_invariant_proved": false,
+  "arbitrary_quadratic_suspension_inverse_closure_proved": false,
+  "quadratic_two_critical_full_source_orbits_resolved": false,
+  "universal_finite_point_keller_endpoint_equivalence_proved": false,
+  "unit_ideal_endpoint_resolved": false,
+  "singleton_zero_endpoint_resolved": false,
+  "unrestricted_HC4_or_JC2_resolved": false,
+  "original_goal_complete": false
+}

@@ -1,0 +1,13 @@
+{
+  "claim": "PF2RULED143",
+  "retained_sha256": {
+    "jacobian/affine-complements/GENERIC_SOURCE_VELOCITY_MULTIPLIER_IDEAL_AND_TRACE_POLE_CHARGES.md": "d46aad410f1dc66da6ecc2dc92a0749261db516e8164b19ad82d5bd6aa9e509d",
+    "jacobian/affine-complements/PARTIAL_KUMMER_PLANE_CHARTS_AND_CYCLIC_EQUIVARIANT_FACTORS.md": "166285dd01c6a3bd66947bc43b018b1a28937363fae4fea1c9276e3e4ed9c3dc",
+    "hessian/hc4-triangular-graphs/LOGARITHMIC_DESCENT_AND_CYCLIC_EXACT_SOURCE_IMAGES.md": "7ae5a64bbb585dc486238e9dcff447d8bcb2979196c469fffca70c3180a025bd",
+    "hessian/hc4-triangular-graphs/FIRST_SOURCE_DERIVATIVES_AND_FINITE_LATTICE_STABILITY.md": "d28cb576557607e8a4b65ce3f8bb087732df0733f507290df6e55249fd4c127b",
+    "hessian/hc4-triangular-graphs/FULL_NORMALIZATION_ADDITIVE_PENCIL_AND_TRACE_DUAL_STABILIZER.md": "ee6a6a5f59e2a49d1e8f94baed3850e7e42eca650afe65e79a4836ed477fc565",
+    "hessian/hc4-triangular-graphs/TRACE_LINKING_HALF_RAMIFICATION_AND_CUBIC_MULTIPLICATION.md": "2780fdec15aba73db8f0642f84124ec8fcd4208d72f96ec1c35e8b581998ab7e"
+  },
+  "new_external_theorem_imports": 0,
+  "registered_predecessor_checkers_replayed": []
+}

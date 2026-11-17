@@ -1,0 +1,76 @@
+{
+  "scoped_validation": "PASS",
+  "checks": [
+    "HC4MYGN0 schema, hash, evidence, dependencies, narrowing and assurance",
+    "HC4MYGN1 schema, hash, evidence, dependencies, narrowing and assurance",
+    "HC4MYGN2 schema, hash, evidence, dependencies, narrowing and assurance",
+    "HC4MYGN3 schema, hash, evidence, dependencies, narrowing and assurance",
+    "separated/Newton/finite gates do not import Tang; the original GT identifiers are preserved",
+    "reciprocal frontier edges retain later splitting, singular and escaping germs and both endpoints",
+    "fifteen new/updated method records have retained sources and current scope fingerprints",
+    "WORK-HC4-SCHUR retires degree ladders in the closed family and preserves the full frontier",
+    "WORK-HC4-RESIDUAL-AUDIT retires degree ladders in the closed family and preserves the full frontier",
+    "receipt-newton-critical.json current canonical proof/checker and retained dependency byte pins",
+    "receipt-opposite-affine.json current canonical proof/checker and retained dependency byte pins",
+    "receipt-critical-components.json current canonical proof/checker and retained dependency byte pins",
+    "receipt-relative-critical.json current canonical proof/checker and retained dependency byte pins",
+    "all-degree closure and generic gates do not claim to close all repeated faces or vertical germs",
+    "new canonical proof and maintained entry-point links resolve"
+  ],
+  "exact_replay_checks": {
+    "receipt-newton-critical.json": 34,
+    "receipt-opposite-affine.json": 44,
+    "receipt-critical-components.json": 58,
+    "receipt-relative-critical.json": 39
+  },
+  "previous_goal_turn": "Progress: the preceding all-degree opposite affine-p closure was revalidated by its44-check replay before deriving the new Newton and ramification gates.",
+  "new_claims": [
+    "HC4MYGN0",
+    "HC4MYGN1",
+    "HC4MYGN2",
+    "HC4MYGN3"
+  ],
+  "written_proof_coverage": [
+    "empty entire critical scheme plus generic Euler obstruction in both Tang projection ranks",
+    "coefficientwise formal implicit lifting at a simple initial Newton root",
+    "all rational Newton slopes and common critical-Hessian leading coefficient1690",
+    "squarefree squared-derivative polynomial lemma in arbitrary degree",
+    "every separated y=a(x)*P(p)+b(x), including the exact quadratic branch-difference exception",
+    "all smooth finite nonvertical ramification indices by a simple pole"
+  ],
+  "external_mathematical_inputs": [
+    "HCTANG2 only for the empty-critical-scheme theorem"
+  ],
+  "generated_views_refreshed": [
+    "index/documents.tsv"
+  ],
+  "full_registry_validation_failure": "KDSQ6: missing document consumer artifacts/generated-results/README.md",
+  "full_navigation_validation_passed": false,
+  "missing_artifacts_reconstructed": false,
+  "every_separated_nonconstant_p_graph_closed_in_all_degrees": true,
+  "every_monic_in_p_degree_at_least_two_graph_closed": true,
+  "repeated_initial_face_alone_closed": false,
+  "remaining_frontier": [
+    "later splitting of repeated initial roots with a whole p-dependent multiplicity-one factor",
+    "mixed simple/multiple faces satisfying the simple-root slope and common-limit conditions",
+    "constant-boundary squarefree quadratic face at slope one",
+    "singular finite branch points and finite-base escapes",
+    "q/r-dependent omitted bases, actual base/dual mixing and uncovered embeddings",
+    "unit-ideal plane surjectivity and the distinct singleton-zero properness endpoint"
+  ],
+  "unit_ideal_plane_Keller_endpoint_resolved": false,
+  "singleton_zero_properness_resolved": false,
+  "all_nonlinear_y_R_graphs_closed": false,
+  "unrestricted_HC4_or_JC2_resolved": false,
+  "original_goal_complete": false,
+  "final_checks": {
+    "python_compilation": "PASS",
+    "scoped_git_diff_whitespace": "PASS",
+    "new_proof_and_checker_whitespace": "PASS",
+    "render_navigation": "FAIL: KDSQ6: missing document consumer artifacts/generated-results/README.md",
+    "check_navigation": "FAIL: KDSQ6: missing document consumer artifacts/generated-results/README.md",
+    "research_check_require_partial_review": "Historical navigation output omitted during repository reorganization."
+  },
+  "all_degree_proof_not_inferred_from_bounded_degree_controls": true,
+  "new_external_classification_imported_for_separated_family": false
+}

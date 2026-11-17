@@ -1,0 +1,48 @@
+{
+  "schema_version": 1,
+  "date": "2026-11-14",
+  "local_inputs": [
+    "foundations/verified/UNIVERSAL_RELATIVE_KELLER_MAP.md",
+    "foundations/verified/PRIMITIVE_MONODROMY_ATOMICITY.md",
+    "foundations/verified/GENERIC_TSCHIRNHAUS_NON_DESCENT.md",
+    "foundations/verified/QUADRATIC_GAUGE_STABLE_MODULI.md"
+  ],
+  "sources": [
+    {
+      "title": "On the number of generators of a separable algebra over a finite field",
+      "authors": [
+        "Uriya First",
+        "Zinovy Reichstein",
+        "Santiago Salazar"
+      ],
+      "url": "https://arxiv.org/abs/1709.06982v1",
+      "use": "Classical finite-field monogenicity context and the failure of an unrestricted primitive-element assertion. The sufficient q>=N bound is proved directly in PROOF.md.",
+      "review": "Abstract and source provenance inspected; general classification theorem is not imported."
+    },
+    {
+      "title": "Classifying spaces for etale algebras with generators",
+      "url": "https://www.cambridge.org/core/journals/canadian-journal-of-mathematics/article/classifying-spaces-for-etale-algebras-with-generators/C65BFD4C7B056AE68A5A967658622E98",
+      "use": "Prior context for moduli with retained generators. No claim that representing generator choices is new.",
+      "review": "Publisher primary page inspected; theorem not imported."
+    },
+    {
+      "title": "The Scheme of Monogenic Generators II: Local Monogenicity and Twists",
+      "url": "https://arxiv.org/abs/2205.04620v2",
+      "use": "Prior context for local monogenicity and configuration-space descriptions. The family argument in PROOF.md is self-contained.",
+      "review": "Abstract inspected; no whole-proof audit.",
+      "authors": [
+        "Sarah Arpin",
+        "Sebastian Bozlee",
+        "Leo Herr",
+        "Hanson Smith"
+      ]
+    }
+  ],
+  "boundary": "No independent external review or literature-priority certification. Compression follows from the existing compiler and elementary weighted scaling; the quotient and inertia ingredients themselves are standard.",
+  "local_sha256": {
+    "foundations/verified/UNIVERSAL_RELATIVE_KELLER_MAP.md": "4cced623c100a90859996e5aea69219a241c56c20ca087f1a9d4caa50209c1c5",
+    "foundations/verified/PRIMITIVE_MONODROMY_ATOMICITY.md": "baac592016eef8ff4874081310826dd845f629c98bbd7dc0f3899e6ca697836f",
+    "foundations/verified/GENERIC_TSCHIRNHAUS_NON_DESCENT.md": "1bf2583fd0fabe10efbce37fbd3382478203b71c669e8376083bccfe4bdbba09",
+    "foundations/verified/QUADRATIC_GAUGE_STABLE_MODULI.md": "1041e21f40ab0fb3cefd9af5a0c5965e5888e118c8644e3efe3124c65b399cbc"
+  }
+}

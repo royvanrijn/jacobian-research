@@ -1,0 +1,28 @@
+{
+  "title": "Generalized Vanishing in Two Variables: Working Revision",
+  "author": {
+    "name": "Roy van Rijn",
+    "orcid": "0009-0000-2808-0645"
+  },
+  "summary": "Adds finite support certificates, a decision procedure for rational inputs and an optimal operator-independent cutoff to the deposited GVC paper.",
+  "published": false,
+  "status": "revision",
+  "source": "main.tex",
+  "pdf": "paper.pdf",
+  "build": "latexmk -pdf -interaction=nonstopmode -halt-on-error main.tex",
+  "verification": "The added results have written proofs and local exact checks. The full binary theorem remains only partly formalized in Lean.",
+  "next_steps": [
+    "Review the added support-certificate and cutoff section.",
+    "Deposit a new version before replacing the published edition."
+  ],
+  "catalogued_on": "2026-11-17",
+  "published_edition": "../../results/generalized-vanishing-two-variables/",
+  "abstract": "We determine the exact dimensional range of the Generalized Vanishing\nConjecture for constant-coefficient differential operators over a field of\ncharacteristic zero.  In two variables we prove that\n\\[\n \\Lambda^m(P^m)=0\\quad(m\\geq1)\n \\qquad\\Longrightarrow\\qquad\n \\Lambda^m(QP^m)=0\\quad(m\\gg0)\n\\]\nfor every fixed polynomial $Q$.  The proof follows two moving faces.  Hall's\nmarriage theorem puts the lowest operator face strictly to the right of the\nhighest polynomial face near ordinary degree.  A prime-dilation argument\nshows that, while the two faces have different weights, their horizontal\nNewton intervals cannot overlap.  Since the supports are finite, the two\npiecewise-linear weight envelopes must eventually meet.  Their first meeting\nis an unequal-weight common threshold, where a fixed multiplier cannot repair\nthe resulting linear derivative deficit.  The only deep external theorem is\nthe constant-term theorem of Duistermaat and van der Kallen.  We then give a\nhomogeneous\nthree-variable counterexample.  With\n$\\rho=t^2+xy$, $A=\\rho+x^2$,\n$C=y\\rho^2-2xt^2\\rho-x^3t^2$, and\n$\\Delta=4\\partial_x\\partial_y+\\partial_t^2$, the pair\n\\[\n \\Lambda=\\Delta^6,\\qquad P=AC^2\n\\]\nsatisfies $\\Lambda^m(P^m)=0$ while\n$\\Lambda^m(x^2P^m)\\ne0$ for every $m\\geq1$.  The construction is a\nhomogeneous endpoint-contact lift of Long's three-dimensional Gaussian\ncounterexample.  It is the smallest member of an explicit cusp-profile\nfamily with arbitrary winding, profile, and radial suspension; in\nparticular every $\\Delta^k$, $k\\geq6$, has such a failure.  Consequently\nunrestricted, and already homogeneous, GVC holds in dimension $n$ exactly\nwhen $n\\leq2$.",
+  "abstract_format": "latex",
+  "abstract_source": "main.tex",
+  "resource_type": {
+    "title": "Preprint",
+    "type": "publication",
+    "subtype": "preprint"
+  }
+}

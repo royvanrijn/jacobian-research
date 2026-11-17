@@ -1,0 +1,87 @@
+{
+  "METHOD-QUADRATIC-SUSPENSION-AND-ALL-LONG-RECOMPOSITIONS-20261116": {
+    "id": "METHOD-QUADRATIC-SUSPENSION-AND-ALL-LONG-RECOMPOSITIONS-20261116",
+    "area": "geometry",
+    "programme_status": "archived",
+    "title": "Use an exact unweighted quadratic suspension to close ALL nonlinear Long recompositions",
+    "when": "Opposite-weight Long architectures and the nonlinear-composite gap; a neutral sphere height has dispersed leading roots.",
+    "use": "ALL NONLINEAR LONG RECOMPOSITIONS NOW CLOSED IN EVERY DEGREE: on BOTH exceptional quotients, for opposite nonzero weights u,v and P=(1+u)(1+v+uv), H(P) EVENTUALLY PURE IFF H=0 OR (uv=0 AND H(1)=0). EVERY surviving degenerate phase is SAFE against ALL original markers. For nonzero u,v, ENTIRE C[P] eventual radical is0. A SEPARATE quadratic suspension ab=(tau2-1)/4 over the auxiliary neutral sphere height tau=1+2uv, with S=tau+a+b and ORIGINAL Theta=Omega wedge da/a, has EXACTLY ALL unweighted P moments by a compact sphere-times-circle cycle of mass1. Its normalized double cover y2=S2-2S tau+1 is projective after compactifying the height. Finite conic singularities resolve with no volume pole. At infinity, b=-ordtau,k=ordOmega, require k+ceil(b/2)>=0; the SNC double cover at S0 is resolved with the actual residue form retained. EVERY infinity valuation satisfies 2(k+1)+b=2A+(D-4)a-h>0 from strict D>2m, including simple roots. Polyhedral orbit6/12 makes this automatic for EVERY nonconstant neutral height. Projective ORIGINAL-volume period theorem therefore excludes EVERY nonzero H(P) DIRECTLY, not by primitive-purity reflection. EVERY equivariant Bezout b weight n+m has nonzero u=Y_b,v=F0, so EVERY nonzero H(g_b) is NOT EVEN EVENTUALLY PURE, arbitrary b and H degrees. Old nonlinear Long gate SUPERSEDED and CLOSED. Distinct Hopf phase nonlinear composites, other homogeneous b weights and mixed b NOT excluded. No proper model assumed for original full P, no weighted transfer or arbitrary-ring promotion. Both FULL MZ cases remain OPEN at ENTIRE exceptional pure-locus corrected gluing-order vanishing or actual invariant pure failure. External review is DEFERRED and NOT the next task.",
+    "avoid": "Reflecting composite purity to primitive; omitting tau infinity or its S0 corner; substituting a dualizing generator for original volume; confusing marker/Jacobian transfer with equality of every unweighted moment; extending this to the distinct Hopf cubic circuit.",
+    "boundary": "Both FULL exceptional cases OPEN. Entire equivariant Long polynomial recomposition architecture CLOSED, not whole pure locus. Other/mixed b and Hopf nonlinear composites remain. Original full phase need not have proper model; separate suspension does. Internal written proof with retained inputs, finite controls not machine proof; no arbitrary-ring promotion.",
+    "reopen_when": "Do NOT requeue scalar centres or nonlinear H(g_b) for equivariant b. Pursue ENTIRE unweighted pure-locus corrected actual local orders0 or actual invariant pure failure; remaining architectures require new arguments. External review DEFERRED,NOT next task.",
+    "claims": [
+      "GHAARSUSPENSION20261116",
+      "GEXCEPTIONALLONGALLH20261116"
+    ],
+    "sources": [
+      "moments/vanishing/QUADRATIC_SUSPENSION_AND_ALL_LONG_RECOMPOSITIONS.md",
+      "moments/vanishing/haar_suspension_source_audit.json"
+    ],
+    "implementation": [
+      "moments/vanishing/verify_haar_suspension.py"
+    ],
+    "keywords": [
+      "Mathieu",
+      "quadratic suspension",
+      "all recompositions",
+      "Long",
+      "original volume",
+      "infinity valuation",
+      "unweighted moments"
+    ],
+    "reviewed_claims": {
+      "GHAARSUSPENSION20261116": "7bfa1427b9b28ed2",
+      "GEXCEPTIONALLONGALLH20261116": "e98a2dd291421b83"
+    }
+  },
+  "METHOD-ORBIT-WEIGHT-LIFTING-20261116": {
+    "id": "METHOD-ORBIT-WEIGHT-LIFTING-20261116",
+    "area": "geometry",
+    "programme_status": "archived",
+    "title": "Use actual orbit closure and exact weight rays on full mixed phases;keep complete exceptional MZ as the finish line",
+    "when": "A full mixed exceptional pure phase has opposite lower weights,its orbit type is being used,or a torus-fixed result is being lifted to original marked periods.",
+    "use": "Curve selection plus2x2Smith and completeT-fixed closure prove that nonclosed eventual-pure FULL orbits are exactly the leftnullcone,with all-original-marker cutoff2m>degQ. Non-null pure orbits are closed finite-cyclic. Exact primitive relation rays lift MZ fromA0 for all affinely independent torus supports,in every rank and overQ-algebras. Hence ALL full two-weight sectors are closed overANYC-algebra,including arbitrary mixed components and nilpotents. Every remaining failure is automorphically closed finite-cyclic and has>=3weights for everylefttorus.",
+    "avoid": "Equating closed orbit or two-sided support with failure,identifying a moving Smith arc limit with the constant-factor cocharacter limit,discarding actual original markers,or importing the six-variable prime marker into the exceptional Haar algebra. Three-weight interval failure blocks a general A0-only lifting inference.",
+    "boundary": "Both COMPLETE exceptional MZ decisions remainOPEN on mixed image-interior phases with strict leading root and closed finite-cyclic orbits underEVERY algebraic automorphism. Multiple balanced monomials can cancel. A universal automorphism-to-nullcone theorem is sufficient but OPEN,not necessary for MZ. Existing safe Haar-shears already have closed original orbits. Universal proofs remain internal,with no assurance promotion. External review is DEFERRED until a complete big theorem;it is not the next research task. NEW GLOBAL SOURCE/EXTENSION THEOREM:fullHaar sourceH/tH=R givesuniqueformalstate andexactpolynomial-stateideal,normalized1required. ActualpureperiodfailureisindecomposableandNON SPLIT atparameter0,witht-bijective torsionfreequotient. UnlocalizedtopGauss-Maninsemisimplicity orgenericH2=0 sufficesforalloriginalmarkers;neitherhypothesisisprovedforallremainingphases. LocalizedsemisimplicityisNOTenough. FullfailuremusthavegenericH2nonzeroandnonsplitactualunitextension. BOTH completeMZcasesremainOPEN;closure-firstpriorityanddeferredexternalreviewretained.",
+    "reopen_when": "Close the COMPLETE all-phase/all-original-marker theorem by excludingorrealizingthe actualnonsplitunitextension for theremainingexceptionalgeometry. ProveglobalunlocalizedsemisimplicityoracyclicgenericH2onlyiftrueforALLphases;theyare sufficientroutes,notassumptionsoranequivalentnewgoal. Retainpreviousmixed,image-interior,automorphicclosed/finitecyclic,strictleadingand>=3weightgates. Externalreviewisdeferred;internalproofscrutinycontinues,no growingcampaign.",
+    "claims": [
+      "GNONCLOSEDPURESAFE20261116",
+      "GSIMPLEXWEIGHTLIFT20261116",
+      "GTWOWEIGHTFULLSAFE20261116",
+      "GHAARTOPSTATE20261116",
+      "GHAARUNITEXT20261116",
+      "GHAARSEMISIMPLE20261116",
+      "GHAARFIBREACYCLIC20261116"
+    ],
+    "sources": [
+      "moments/vanishing/NONCLOSED_ORBITS_AND_EXACT_WEIGHT_LIFTING.md",
+      "moments/vanishing/orbit_weight_lifting_source_audit.json",
+      "moments/vanishing/INTRINSIC_HAAR_STATES_AND_NONSPLIT_PERIOD_EXTENSIONS.md",
+      "moments/vanishing/haar_state_extension_source_audit.json"
+    ],
+    "implementation": [
+      "moments/vanishing/verify_orbit_weight_lifting.py"
+    ],
+    "keywords": [
+      "Mathieu",
+      "closure first",
+      "nonclosed orbit",
+      "Smith",
+      "mixed degrees",
+      "affinely independent weights",
+      "single balanced ray",
+      "all original markers",
+      "two weights",
+      "automorphic stability"
+    ],
+    "reviewed_claims": {
+      "GNONCLOSEDPURESAFE20261116": "4db6845a50355a60",
+      "GSIMPLEXWEIGHTLIFT20261116": "a304031fb010f06d",
+      "GTWOWEIGHTFULLSAFE20261116": "75604a2a00f818d4",
+      "GHAARTOPSTATE20261116": "d960ca7f33258bd7",
+      "GHAARUNITEXT20261116": "4f120ecdf2f4e538",
+      "GHAARSEMISIMPLE20261116": "6a00689ead5bd87f",
+      "GHAARFIBREACYCLIC20261116": "4564ca29bba2428e"
+    }
+  }
+}

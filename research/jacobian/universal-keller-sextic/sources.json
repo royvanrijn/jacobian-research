@@ -1,0 +1,34 @@
+{
+  "schema_version": 1,
+  "purpose": "Pins imported canonical proofs and the declared reused source-map routine. No novelty-priority or independent replay claim.",
+  "local_sources": [
+    {
+      "path": "jacobian/universal-keller-compression/PROOF.md",
+      "sha256": "cf7c048fc2c107d261d5fb74ee3ae36409d5f4a1b54da21284a6e3758ad998f3"
+    },
+    {
+      "path": "jacobian/universal-keller-compression/verify.py",
+      "sha256": "a8d9b280e09868e1b1abed24443541dc29daa94744e467517a5b3d6da85457a5"
+    },
+    {
+      "path": "jacobian/universal-keller-trace/PROOF.md",
+      "sha256": "aaebb6eb315c569068f3064fb19bc217da514c3b2ff725b13cd05b785c5ae2c2"
+    },
+    {
+      "path": "foundations/verified/QUADRATIC_WEIGHTED_STABLE_SEPARATION.md",
+      "sha256": "71bd3908ba8acec753c4df73fbeebe087f7ea3f9d34e7abe5d8486d7ff6764bc"
+    },
+    {
+      "path": "foundations/verified/QUADRATIC_GAUGE_STABLE_MODULI.md",
+      "sha256": "1041e21f40ab0fb3cefd9af5a0c5965e5888e118c8644e3efe3124c65b399cbc"
+    },
+    {
+      "path": "foundations/verified/STABLE_NORMALIZATION_FUNCTORIALITY.md",
+      "sha256": "f75d56652a0434d1813252ebb35f1291e808612464445effa7105b7a97abfd3d"
+    },
+    {
+      "path": "foundations/verified/ETALE_MONOID_ATOMIC_SPECTRUM.md",
+      "sha256": "c9bb39c95f865e7dd6f0cec8330c40f5ace933b2407200a8b19279852a78b3b5"
+    }
+  ]
+}

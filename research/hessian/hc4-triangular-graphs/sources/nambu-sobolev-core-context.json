@@ -1,0 +1,116 @@
+{
+  "review_date": "2026-11-16",
+  "retained_structural_inputs": [
+    {
+      "claim": "HC4MYLW0",
+      "canonical_source": "hessian/hc4-triangular-graphs/BERGMAN_TRACE_DUAL_AND_MULTIPLIER_DOMAIN_RIGIDITY.md"
+    },
+    {
+      "claim": "HC4MYLW1",
+      "canonical_source": "hessian/hc4-triangular-graphs/BERGMAN_TRACE_DUAL_AND_MULTIPLIER_DOMAIN_RIGIDITY.md"
+    },
+    {
+      "claim": "HC4MYKU0",
+      "canonical_source": "hessian/hc4-triangular-graphs/CANONICAL_TRACE_DUAL_ETALE_RECONSTRUCTION.md"
+    },
+    {
+      "claim": "HC4MYKU1",
+      "canonical_source": "hessian/hc4-triangular-graphs/CANONICAL_TRACE_DUAL_ETALE_RECONSTRUCTION.md"
+    },
+    {
+      "claim": "HC4MYHX0",
+      "canonical_source": "hessian/hc4-triangular-graphs/REGULAR_PARAMETER_MONODROMY.md"
+    },
+    {
+      "claim": "HC4MYKO0",
+      "canonical_source": "hessian/hc4-triangular-graphs/WHOLE_SOURCE_POWER_TRACES_AND_DIFFERENTIAL_SPLITTING.md"
+    },
+    {
+      "claim": "HC4MYKO1",
+      "canonical_source": "hessian/hc4-triangular-graphs/WHOLE_SOURCE_POWER_TRACES_AND_DIFFERENTIAL_SPLITTING.md"
+    },
+    {
+      "claim": "HC4MYJY0",
+      "canonical_source": "hessian/hc4-triangular-graphs/TORUS_CRITICAL_CURVES_AND_ALL_COORDINATE_VISIBILITY.md"
+    },
+    {
+      "claim": "HC4MYKX0",
+      "canonical_source": "hessian/hc4-triangular-graphs/ALGEBRAIC_FLOW_DESCENT_AND_INTEGRAL_COORDINATES.md"
+    },
+    {
+      "claim": "HC4MYKN0",
+      "canonical_source": "hessian/hc4-triangular-graphs/CANONICAL_BOUNDARY_AND_STABLE_COMPLETE_INTERSECTION_OBSTRUCTION.md"
+    },
+    {
+      "claim": "HCTANG2",
+      "canonical_source": "hessian/tang-hc4-audit/STRUCTURAL_REVIEW.md"
+    },
+    {
+      "claim": "HC4MYKR0",
+      "canonical_source": "hessian/hc4-triangular-graphs/QUADRATIC_SOURCE_RECONSTRUCTION_AND_QUARTIC_RETIREMENT.md"
+    }
+  ],
+  "retained_proof_and_source_sha256": {
+    "hessian/hc4-triangular-graphs/BERGMAN_TRACE_DUAL_AND_MULTIPLIER_DOMAIN_RIGIDITY.md": "87836ffc272fa0737ae594f59908f2fb3ef029870ca143408460cbc69c6ce11a",
+    "hessian/hc4-triangular-graphs/verify_bergman_trace_dual.py": "06206d63a5357b30ffd4ad182f1eda9e027fe579a4634935d914a5a0361bf35e",
+    "hessian/hc4-triangular-graphs/CANONICAL_TRACE_DUAL_ETALE_RECONSTRUCTION.md": "fef1bc4871537c9d073c424c9dbbd4f0296dd287728a0724c9101c5a7b5cf3c2",
+    "hessian/hc4-triangular-graphs/verify_canonical_etale_reconstruction.py": "ad7d5b53096780353298ee052c9ac4341d0eced2b7194c5c83c397c19af91b4f",
+    "hessian/hc4-triangular-graphs/REGULAR_PARAMETER_MONODROMY.md": "b010d2e4c62906a8a79da9dbc41ef7d0e3d5edefb4520cf487ba09ded5d86956",
+    "hessian/hc4-triangular-graphs/verify_regular_parameter.py": "640f2b1f303d9fc6232028ac6a744addd0de0380f5522ec7c11b52a30a6f175d",
+    "hessian/hc4-triangular-graphs/WHOLE_SOURCE_POWER_TRACES_AND_DIFFERENTIAL_SPLITTING.md": "ddd638989f0ed8807e4298e3e02fe0e72db4040dbefb22e5cb5ca8d11f9d38a9",
+    "hessian/hc4-triangular-graphs/verify_whole_source_traces.py": "aff5777ba2cd9ecaee1271884e73db74c185e1db04c36fef2a2c4a62d22f0a37",
+    "hessian/hc4-triangular-graphs/TORUS_CRITICAL_CURVES_AND_ALL_COORDINATE_VISIBILITY.md": "b55ed3ca20049478d887643611b1b7e4a188df54e7a5b549887678db6cd3f10a",
+    "hessian/hc4-triangular-graphs/verify_torus_coordinate_visibility.py": "4ada6e8229ede2a158de13037c02a17a9292f854a5d5d4a321d35f479f7d99cf",
+    "hessian/hc4-triangular-graphs/ALGEBRAIC_FLOW_DESCENT_AND_INTEGRAL_COORDINATES.md": "beaced18024b06fc918d9e665929ff2ef4820e3cffa5a18493c5f9ac2bcd53e9",
+    "hessian/hc4-triangular-graphs/verify_algebraic_flow_descent.py": "a2317510797200b71dad4d6dd7d730555f88e3abcc7e55f0d157954fb3613c2f",
+    "hessian/hc4-triangular-graphs/CANONICAL_BOUNDARY_AND_STABLE_COMPLETE_INTERSECTION_OBSTRUCTION.md": "679c5f12083b9cdc657650417315c3e881974aee62c6a372c725d6d8193b657c",
+    "hessian/hc4-triangular-graphs/verify_canonical_boundary.py": "94379f2cbb83cfd80ad374b13538391fbdc6b6c9fce997e6917f53e7f667f801",
+    "hessian/tang-hc4-audit/STRUCTURAL_REVIEW.md": "26a6a76eb579de05b8e71245b8b804bdd5f036602f2e3e6ad5d036fd9f5cd572",
+    "hessian/tang-hc4-audit/verify_structural.py": "23e87f797b4d086ede8195773092dcd42d705258ec57c05920731e87e0ce9b2d",
+    "hessian/hc4-triangular-graphs/QUADRATIC_SOURCE_RECONSTRUCTION_AND_QUARTIC_RETIREMENT.md": "c45fe8fb1c9f0eabfa8bfef32e30b96e71834ee68609e59069e8fb9039034eca",
+    "hessian/hc4-triangular-graphs/verify_quadratic_reconstruction.py": "0494f04ada75cf1cb7859bb1d86e63ea0259a6ce4e838ab4678276098d93c49f",
+    "hessian/hc4-triangular-graphs/sources/chau-nonproper-no-line-math0408048v1.html": "ebcf879e5b1d914a2c232141e401bc01846b2009bea5f2f3b345763ed477aad5",
+    "jacobian/affine-complements/sources/global-boundary-topology/chau-2003-two-remarks.pdf": "7889bd17c97509d7bd804e2eb2c7938c2083af1bcd4d006ed7433c01c360e36e"
+  },
+  "scope_flags": {
+    "full_goal_active": true,
+    "previous_goal_turn_progress": true,
+    "component_no_line_scope_separately_checked": true,
+    "first_additive_derivative_lattice_equals_full_normalization": true,
+    "finite_discriminant_quotient_equals_derivative_defect_globally": true,
+    "every_lifted_target_LND_has_nondense_domain_under_failure": true,
+    "every_finite_target_additive_stable_module_lies_in_base": true,
+    "all_derivative_polynomial_core_equals_base": true,
+    "arbitrary_finite_trace_zero_derivative_prefixes_proved": true,
+    "new_all_order_Laurent_tangent_transverse_controls": true,
+    "external_review_deferred": true,
+    "first_derivative_estimate_proved_automatic": false,
+    "actual_Nambu_operator_domain_proved_dense": false,
+    "formal_commutation_promoted_to_unitary_representation": false,
+    "finite_derivative_prefix_promoted_to_stable_module": false,
+    "polynomial_all_derivative_core_asserted_dense_under_failure": false,
+    "new_Laurent_control_is_whole_plane_Keller": false,
+    "higher_dimensional_core_theorem_asserted": false,
+    "Miyanishi_odd_plane_theorem_adopted": false,
+    "registered_mathematical_checker_replayed": false,
+    "unrestricted_HC4_or_JC2_resolved": false,
+    "independent_replay": false,
+    "formal_verification": false,
+    "external_review": false
+  },
+  "external_imports": [],
+  "new_primary_caches": [],
+  "primary_reinspection": {
+    "statement": "PREVIOUSLY ADOPTED JY0 Chau no-affine-line COMPONENT Remark after Theorem1,not Theorem2 whole-curve statement.",
+    "HTML": "Cached math/0408048v1 read through definitions,Lemma5 proof,Lemma6 proof,and Theorem1/Remark. Existing import retained,not independently reproduced.",
+    "PDF": "Existing published2003PDF pp39-40 read as text;pp42-43 read and rendered visually,including Lemma6 proof,Theorem1 continuation and Remark. Remaining unrelatedTheorem2 proof not fully reread. No PDF overwritten.",
+    "url": "https://www.impan.pl/shop/en/publication/transaction/download/product/84523"
+  },
+  "literature_context_only": [
+    {
+      "url": "https://www.numdam.org/item/AIHPA_1989__50_2_161_0/",
+      "inspection": "Search-returned primary introduction excerpt concerning Nelson commutation pathology only. No full proof read,operator theorem or analytic-vector result imported."
+    }
+  ],
+  "mathematical_boundary": "New universal finite-module proof uses retained HX0 constant-field regularity,Puiseux derivative bounds,and written RH infinity-only argument. First derivative exactness uses retained no-line component import and canonical module. No automatic domain density or trace pairing supplied. No registered replay."
+}

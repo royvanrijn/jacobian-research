@@ -1,0 +1,87 @@
+{
+  "review_date": "2026-11-16",
+  "retained_structural_inputs": [
+    {
+      "claim": "HC4MYHH0",
+      "canonical_source": "hessian/hc4-triangular-graphs/FINITE_FIBRE_NORMAL_FORM.md"
+    },
+    {
+      "claim": "HC4MYLI1",
+      "canonical_source": "hessian/hc4-triangular-graphs/COTANGENT_INCIDENCE_HODGE_OBSTRUCTION.md"
+    },
+    {
+      "claim": "HC4MYKO2",
+      "canonical_source": "hessian/hc4-triangular-graphs/WHOLE_SOURCE_POWER_TRACES_AND_DIFFERENTIAL_SPLITTING.md"
+    },
+    {
+      "claim": "HC4MYKW0",
+      "canonical_source": "hessian/hc4-triangular-graphs/SOURCE_LINE_CONDUCTOR_AND_PRIMITIVE_ORDER_COLLISIONS.md"
+    },
+    {
+      "claim": "HCTANG2",
+      "canonical_source": "hessian/tang-hc4-audit/STRUCTURAL_REVIEW.md"
+    },
+    {
+      "claim": "HC4MYKR0",
+      "canonical_source": "hessian/hc4-triangular-graphs/QUADRATIC_SOURCE_RECONSTRUCTION_AND_QUARTIC_RETIREMENT.md"
+    }
+  ],
+  "retained_proof_and_source_sha256": {
+    "hessian/hc4-triangular-graphs/FINITE_FIBRE_NORMAL_FORM.md": "415fc5c68a2becba4715f4044ddeade7ba6a38972d2fa1ae17846b4e55b15db6",
+    "hessian/hc4-triangular-graphs/verify_finite_fibre.py": "b7533f36726f81a7d28ec7ca261fe70b093fc9cf04625825641f1f5070ef52fe",
+    "hessian/hc4-triangular-graphs/COTANGENT_INCIDENCE_HODGE_OBSTRUCTION.md": "579e9219172049395ce883e14afe839eefb0a4bc80037a9c4b334beefb44eb52",
+    "hessian/hc4-triangular-graphs/verify_cotangent_incidence.py": "410cf980b8645c60ccac6a8adfc7ec931ed44ccd2ce7f888f5b6864ec9419ef4",
+    "hessian/hc4-triangular-graphs/WHOLE_SOURCE_POWER_TRACES_AND_DIFFERENTIAL_SPLITTING.md": "ddd638989f0ed8807e4298e3e02fe0e72db4040dbefb22e5cb5ca8d11f9d38a9",
+    "hessian/hc4-triangular-graphs/verify_whole_source_traces.py": "aff5777ba2cd9ecaee1271884e73db74c185e1db04c36fef2a2c4a62d22f0a37",
+    "hessian/hc4-triangular-graphs/SOURCE_LINE_CONDUCTOR_AND_PRIMITIVE_ORDER_COLLISIONS.md": "1c303ba4aeb13523d39c92169f081676ead1673a6a49dc961132e96927081909",
+    "hessian/hc4-triangular-graphs/verify_source_line_conductor.py": "2df718f5a99cbc19ec11f614a7cfdee85d8b23522f5f33b241623df56b7a31fe",
+    "hessian/tang-hc4-audit/STRUCTURAL_REVIEW.md": "26a6a76eb579de05b8e71245b8b804bdd5f036602f2e3e6ad5d036fd9f5cd572",
+    "hessian/tang-hc4-audit/verify_structural.py": "23e87f797b4d086ede8195773092dcd42d705258ec57c05920731e87e0ce9b2d",
+    "hessian/hc4-triangular-graphs/QUADRATIC_SOURCE_RECONSTRUCTION_AND_QUARTIC_RETIREMENT.md": "c45fe8fb1c9f0eabfa8bfef32e30b96e71834ee68609e59069e8fb9039034eca",
+    "hessian/hc4-triangular-graphs/verify_quadratic_reconstruction.py": "0494f04ada75cf1cb7859bb1d86e63ea0259a6ce4e838ab4678276098d93c49f",
+    "foundations/extended-geometry/NATURAL_TORUS_HAMILTONIAN_REDUCTION.md": "a1a5251ac531251f5173354cf5f30026326020616e1e57afbb0a5239028a1708",
+    "foundations/scripts/verify_natural_torus_reduction.py": "af66e2496be973bddfcd123746832f312697e4205a125252036233c9234ce186"
+  },
+  "new_primary_sha256": {},
+  "newly_imported_proved_external_statements": [],
+  "newly_used_unproved_external_statements": [],
+  "literature_exploration_not_used_as_proof_input": [
+    {
+      "url": "https://arxiv.org/html/math/0411245v2",
+      "read": "Introduction and full theorem/recharacterization passage;stability does not assert properness of the stable-image restriction."
+    },
+    {
+      "url": "https://arxiv.org/html/2609.05746v1",
+      "read": "Abstract,introduction and section overview inspected;no general theorem from the175page preprint imported."
+    }
+  ],
+  "full_theorem_target": "Full HC4/JC2 proof or actual counterexample.",
+  "last_unsolved_implication": "ACTUAL polynomial plane source ==> Tr(Lambda_L*Lambda_L) subset B,or full marked-energy integrality;OPEN.",
+  "previous_goal_turn_classification": "progress",
+  "mathematical_development_boundary": "No new checker run yet. No registered mathematical checker replay. General rank-one determinant correction credited to retainedHH0;new application closes gamma source positively without claiming Darboux coordinates.",
+  "all_degree_coordinate_ideal_helper_theorem_proved": true,
+  "primitive_gamma_moment_polynomial_is_ambient_coordinate_proved": true,
+  "every_gamma_level_has_explicit_polynomial_A4_coordinates": true,
+  "scheme_ideal_equality_and_polynomial_inverse_supplied": true,
+  "new_gamma_projection_has_degree_three_and_all_level_collision": true,
+  "new_source_reduced_form_is_exact_polynomial_symplectic": true,
+  "natural_source_y_z_pair_cannot_be_Darboux_positions": true,
+  "target_A_B_pair_cannot_be_global_Darboux_positions": true,
+  "LI_beta_all_level_stable_exclusion_preserved": true,
+  "external_review_deferred": true,
+  "gamma_standard_polynomial_Darboux_coordinates_constructed": false,
+  "all_mixed_Darboux_transformations_excluded": false,
+  "source_polynomial_chart_treated_as_symplectic_chart": false,
+  "noninjective_four_dimensional_Keller_map_treated_as_HC4_gradient": false,
+  "new_four_variable_Hessian_potential_constructed": false,
+  "iteration_image_stability_treated_as_properness": false,
+  "newly_imported_external_theorem_used": false,
+  "old_registered_mathematical_checkers_replayed": false,
+  "last_HC4_source_to_regular_inverse_Gram_implication_proved": false,
+  "independent_replay": false,
+  "formal_verification": false,
+  "external_review": false,
+  "external_review_requested": false,
+  "unrestricted_HC4_or_JC2_resolved": false,
+  "original_goal_complete": false
+}

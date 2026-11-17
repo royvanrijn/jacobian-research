@@ -1,0 +1,99 @@
+{
+  "scoped_validation": "PASS",
+  "claims": [
+    "HC4MYKT0",
+    "HC4MYKT1"
+  ],
+  "checks": [
+    "HC4MYKT0 proved scoped schema,source credit,dependencies,assurance and locks",
+    "HC4MYKT1 proved scoped schema,source credit,dependencies,assurance and locks",
+    "new and parent dependencies have no cycles",
+    "50 exact/provenance controls,15 retained byte pins and2 newly cached primaries bound without old checker replay",
+    "published Kulikov topology and standard MHS inputs are explicit;no invented original construction,independent topological proof or HC4 counterexample",
+    "countercontrol scope keeps actual-source hypotheses and separates the automatic Tate filter from a new plane obstruction",
+    "new method and two prior methods retain the actual plane-source requirement and do not reopen automatic Hodge budgets",
+    "both HC4 work actions preserve the full objective,quartic retirement and genuinely unresolved marked-source gates",
+    "written geometry includes the complete finite map,exact coframe,Picard computation,trace-zero assembly and distinct weight filtrations",
+    "generated navigation matches the current shared ledger and affected work/method fingerprints"
+  ],
+  "scoped_check_groups": 10,
+  "exact_current_checks": 50,
+  "algebraic_and_scope_controls": 30,
+  "retained_byte_pins": 15,
+  "new_primary_caches": 2,
+  "new_explicit_proved_imports": 2,
+  "construction_credited_to_Kulikov": true,
+  "explicit_countercontrol_has_exact_global_coordinate_coframe": true,
+  "explicit_countercontrol_has_UFD_and_scalar_units": true,
+  "explicit_countercontrol_has_simple_trace_zero_kernel": true,
+  "explicit_countercontrol_has_complete_quadratic_reconstruction": true,
+  "explicit_countercontrol_boundary_is_affine_line": false,
+  "explicit_countercontrol_contains_polynomial_plane_open": false,
+  "countercontrol_H2_pure_weight_four": true,
+  "actual_plane_completion_H2_pure_weight_two": true,
+  "Tate_filter_proved_to_exclude_actual_surviving_plane_packets": false,
+  "exact_coframe_and_factoriality_proved_sufficient_for_polynomial_source": false,
+  "published_simple_connectedness_independently_reproved": false,
+  "original_Kulikov_construction_claimed_new": false,
+  "nonplane_surface_reported_as_HC4_counterexample": false,
+  "old_registered_mathematical_checkers_replayed": false,
+  "unrestricted_HC4_or_JC2_resolved": false,
+  "original_goal_complete": false,
+  "repository_checks": {
+    "repository_checks": [
+      {
+        "name": "render-navigation",
+        "command": [
+          "make",
+          "render-navigation"
+        ],
+        "exit_code": 2,
+        "output": "make -C research PYTHON=\"/home/royvanrijn/src/jacobian-research/.venv/bin/python\" SYSTEM_PYTHON=\"python3\" \"render-navigation\"\nmake[1]: Entering directory '/home/royvanrijn/src/jacobian-research/research'\npython3 scripts/render_status.py\nTraceback (most recent call last):\n  File \"/home/royvanrijn/src/jacobian-research/research/scripts/render_status.py\", line 514, in <module>\n    main()\n  File \"/home/royvanrijn/src/jacobian-research/research/scripts/render_status.py\", line 503, in main\n    validate_index(index)\n  File \"/home/royvanrijn/src/jacobian-research/research/scripts/render_status.py\", line 360, in validate_index\n    assert consumer_path.is_file(), (\n           ^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: KDSQ6: missing document consumer artifacts/generated-results/README.md\nmake[1]: *** [Makefile:16: render-navigation] Error 1\nmake[1]: Leaving directory '/home/royvanrijn/src/jacobian-research/research'\nmake: *** [Makefile:17: render-navigation] Error 2\n"
+      },
+      {
+        "name": "check-navigation",
+        "command": [
+          "make",
+          "check-navigation"
+        ],
+        "exit_code": 2,
+        "output": "make -C research PYTHON=\"/home/royvanrijn/src/jacobian-research/.venv/bin/python\" SYSTEM_PYTHON=\"python3\" \"check-navigation\"\nmake[1]: Entering directory '/home/royvanrijn/src/jacobian-research/research'\npython3 scripts/audit_status.py\nTraceback (most recent call last):\n  File \"/home/royvanrijn/src/jacobian-research/research/scripts/audit_status.py\", line 8, in <module>\n    validate_index(index)\n  File \"/home/royvanrijn/src/jacobian-research/research/scripts/render_status.py\", line 360, in validate_index\n    assert consumer_path.is_file(), (\n           ^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: KDSQ6: missing document consumer artifacts/generated-results/README.md\nmake[1]: *** [Makefile:21: check-navigation] Error 1\nmake[1]: Leaving directory '/home/royvanrijn/src/jacobian-research/research'\nmake: *** [Makefile:17: check-navigation] Error 2\n"
+      },
+      {
+        "name": "partial-review",
+        "command": [
+          "/home/royvanrijn/src/jacobian-research/.venv/bin/python",
+          "research/scripts/research.py",
+          "check",
+          "--require-partial-review"
+        ],
+        "exit_code": 1,
+        "output": "Traceback (most recent call last):\n  File \"/home/royvanrijn/src/jacobian-research/research/scripts/research.py\", line 563, in <module>\n    raise SystemExit(main())\n                     ^^^^^^\n  File \"/home/royvanrijn/src/jacobian-research/research/scripts/research.py\", line 440, in main\n    validate_lessons(items, entries, check_reviews=args.command == \"check\")\n  File \"/home/royvanrijn/src/jacobian-research/research/scripts/research.py\", line 130, in validate_lessons\n    assert (ROOT / p).is_file(), f\"{item['id']}: missing source {p}\"\n           ^^^^^^^^^^^^^^^^^^^^"
+      },
+      {
+        "name": "required-whitespace",
+        "command": [
+          "git",
+          "diff",
+          "--check",
+          "--",
+          "research/MATH_STATUS.json",
+          "research/knowledge/lessons.json",
+          "research/knowledge/work_items.json",
+          "research/hessian/hc4-triangular-graphs/README.md",
+          "research/index",
+          "research/knowledge/work",
+          "research/knowledge/WORK_LEDGER.md",
+          "research/STATUS.md"
+        ],
+        "exit_code": 0,
+        "output": ""
+      }
+    ],
+    "own_HC4_whitespace_check": {
+      "exit_code": 0,
+      "output": ""
+    }
+  },
+  "repository_check_boundary": "Same pre-existing unrelated missing KDSQ6 consumer and elliptic method artifact;scoped generated views,source locks and metadata are consistent.No missing artifact reconstructed."
+}

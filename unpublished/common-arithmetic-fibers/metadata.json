@@ -1,0 +1,27 @@
+{
+  "title": "Over Characteristic Zero, Every Finite Etale Algebra of Rank at Least Three Is a Full Keller Fiber",
+  "author": {
+    "name": "Roy van Rijn",
+    "orcid": "0009-0000-2808-0645"
+  },
+  "summary": "Constructs explicit Jacobian-one maps of affine three-space with prescribed full finite etale fibres in characteristic zero.",
+  "published": false,
+  "status": "draft",
+  "source": "main.tex",
+  "pdf": "paper.pdf",
+  "build": "latexmk -pdf -interaction=nonstopmode -halt-on-error main.tex",
+  "verification": "The characteristic-zero polynomial-presentation theorem and abstract finite-etale corollary have a Lean development; broader supplied-presentation scope has a separate assurance boundary.",
+  "next_steps": [
+    "Review the manuscript against its formal theorem and external inputs.",
+    "Complete editorial and priority review before submission."
+  ],
+  "catalogued_on": "2026-11-17",
+  "abstract": "A Keller map can only have finite \\'etale fibers.  We ask the reverse\nquestion: given a finite \\'etale algebra, can it be made into the whole\nfiber of such a map?  Over a field \\(K\\) of characteristic zero, the answer\nis yes in every rank at least three.  More precisely, for every separable\npolynomial \\(P\\in K[T]\\) of degree \\(N\\geq3\\), we construct a polynomial map\n\\(F_P:\\A^3_K\\to\\A^3_K\\) with \\(\\det DF_P=1\\), geometric degree \\(N\\), and a\ndistinguished full fiber naturally isomorphic to \\(\\Spec K[T]/(P)\\).\n\nThe construction becomes simple when read backwards.  A one-variable\ninverse equation supplies a marked root; its derivative reconstructs the\nsource and, at the same time, is exactly the factor that cancels from the\nJacobian.  A translation inserts the prescribed polynomial into this\nequation.  The characteristic-zero theorem---including the automatic\ntranslation, function-field comparison, and abstract finite-\\'etale\ncorollary---is formalized in Lean.  Over a field of characteristic different\nfrom \\(2\\), the same formulas also give an explicit supplied-presentation\nresult whenever the first and third Hasse coefficients at the chosen\ntranslation are nonzero.  That broader result commutes with scalar extension\nbut is not yet formalized end to end.  Choices made from an abstract finite\n\\'etale algebra are noncanonical.",
+  "abstract_format": "latex",
+  "abstract_source": "sections/00-abstract.tex",
+  "resource_type": {
+    "title": "Preprint",
+    "type": "publication",
+    "subtype": "preprint"
+  }
+}

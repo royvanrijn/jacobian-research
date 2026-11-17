@@ -1,0 +1,25 @@
+{
+  "title": "Sparse Minimality of Gaussian-Moments Counterexamples in Dimension Three",
+  "publication_date": "2026-07-24",
+  "description": "<p class=\"isSelectedEnd\">This preprint studies minimal counterexamples to the Gaussian Moments Conjecture in three real variables, the first dimension in which the conjecture fails.</p>\n<p class=\"isSelectedEnd\">Christopher Long recently constructed a counterexample of total degree four with five monomials. We prove, by an exhaustive exact computer-assisted classification, that no counterexample exists with both total degree at most four and support size at most four in Gaussian Witt coordinates. Consequently, Long&rsquo;s five-term quartic is Pareto-minimal with respect to degree and support size.</p>\n<p class=\"isSelectedEnd\">The calculation enumerates all 59,535 relevant supports, constructs saturated moment ideals over (\\mathbb{Q}), and reduces the surviving cases to three explicit families. These families are then shown to satisfy the conjectural mixed-moment conclusion at all orders.</p>\n<p>The result does not exclude denser cubic counterexamples or four-term counterexamples of degree greater than four. Verification scripts are supplied for reproducibility.</p>",
+  "access_right": "open",
+  "creators": [
+    {
+      "name": "van Rijn, Roy",
+      "affiliation": null,
+      "orcid": "0009-0000-2808-0645"
+    }
+  ],
+  "keywords": [
+    "Gaussian Moments Conjecture",
+    "Mathieu subspaces",
+    "Gaussian integration",
+    "sparse polynomials",
+    "Gröbner bases",
+    "polynomial moments"
+  ],
+  "language": "eng",
+  "upload_type": "publication",
+  "publication_type": "preprint",
+  "license": "cc-by-4.0"
+}

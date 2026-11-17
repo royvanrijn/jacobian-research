@@ -1,0 +1,16 @@
+{
+  "record": "https://zenodo.org/records/21534917",
+  "retrieved": "2026-11-17",
+  "files": [
+    {
+      "file": "sparse-minimality-gaussian-moments-dimension-three.pdf",
+      "md5": "73a9a5b0dc56887b3c7a7f5fbf28d446",
+      "sha256": "85bff38704262ed82097aa5dc1dc3b77f0381e851b6b2b640cf21d89a5cab2b9"
+    },
+    {
+      "file": "source.zip",
+      "md5": "600adca4c5befa7e46de36eec86f7697",
+      "sha256": "e26d7ace5b8c4ad039cbd6f9c75efa82aed639105a983f7bd48a60ae5326b3a4"
+    }
+  ]
+}

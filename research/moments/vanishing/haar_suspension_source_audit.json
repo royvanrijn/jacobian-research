@@ -1,0 +1,91 @@
+{
+  "date": "2026-11-16",
+  "canonical_proof": "moments/vanishing/QUADRATIC_SUSPENSION_AND_ALL_LONG_RECOMPOSITIONS.md",
+  "proof_sha256": "d331968bc9b37be3d78a966acee393e6ebb5ef2c1b64e8a6e0c6f7484f7074a3",
+  "checker": "moments/vanishing/verify_haar_suspension.py",
+  "checker_sha256": "03fa0122599ff58d5252481d30b54bcb6a82ea52eabf3f7d93156a093cf277b3",
+  "receipt": "moments/vanishing/haar_suspension_verification.json",
+  "receipt_sha256": "2c26ffad13bcc2f9371afe0fea98b3a8563ba9422b04a784ced79fc492bba81a",
+  "repository_sources": [
+    {
+      "source": "moments/vanishing/VALUATIVE_BOUNDARY_VOLUMES_AND_TORUS_INVARIANT_CLOSURE.md",
+      "sha256": "42bab0af00fe9821dba3121de2a559f88711a0b79eb3ab4d3aad00a8b184dc78",
+      "use": "Original sphere volume order A-1-2a, local multiplicity threshold, all finite boundary volumes, exceptional orbit6/12 and neutral Haar representation. NEW infinity half-pole estimate proved independently here."
+    },
+    {
+      "source": "moments/vanishing/SEMISTABLE_LOG_PERIODS_AND_SINGLE_ISOTYPIC_SAFETY.md",
+      "sha256": "2d1c207085783207b425af26636fb05d0ebd07bdff3ac4ddd350c32056d52ae7",
+      "use": "Section1 GPROJECTIVELOGPERIOD: ANY smooth projective map to A1 carrying original holomorphic top form with nonzero compact mass excludes ALL nonconstant polynomial moment tails. Apply to NEW separate suspension, not infer original full P has a model."
+    },
+    {
+      "source": "moments/vanishing/LEGENDRE_POISSON_JETS_AND_ALL_SCALAR_LONG_CENTRES.md",
+      "sha256": "45841a21247a4618de38aaa672c0c53679380e6fb94ef9a9c07ad76405f15034",
+      "use": "Universal Legendre constant-term identity and original domain/constant-unit argument. Scalar-centre classification retained and now subsumed. Prior open nonlinear Long gate superseded."
+    },
+    {
+      "source": "moments/vanishing/REGULAR_BEZOUT_MAPS_AND_WEIGHTED_HAAR_TAILS.md",
+      "sha256": "e0cd185839bf0c16d94b2e8f77a2624f50376b822f484e965ffa5e3fff17cfc7",
+      "use": "Actual Bezout determinant/weights/nonzero Y_b and F0 for EVERY equivariant b, all degrees."
+    },
+    {
+      "source": "moments/vanishing/COHOMOLOGICAL_PULLBACK_AND_A_UNIFORM_ORIGINAL_MARKER.md",
+      "sha256": "d5e88b14fefd865b3b1b1b918efc2160209545d56c077c866e7666980f5562e6",
+      "use": "All-b actual components/uniform marker retained; no weighted-to-unweighted purity transfer. New theorem supplies direct all-H unweighted exclusion ONLY equivariant Long branch."
+    },
+    {
+      "source": "moments/vanishing/PROPER_VOLUME_UNIT_PERIODS_AND_COMPLEX_HOPF_CLOSURE.md",
+      "sha256": "8b8e48ca89949509c2e05d096fe25c613ba486e4adb920154aea0d5003903ec9",
+      "use": "Distinct Hopf architecture already closed at primitive/eventual level; its nonlinear composites NOT excluded here."
+    },
+    {
+      "source": "moments/vanishing/ACTUAL_TORUS_CORRECTIONS_AND_RAMIFIED_COMPONENT_VALUATIONS.md",
+      "sha256": "772248620bb00e6e8c294ac560f5204bc9e056dc53d5a7d3bbaec8734de9d09d",
+      "use": "Full remaining target stays actual unweighted exceptional purity=>all corrected local orders0, or actual invariant pure failure."
+    }
+  ],
+  "primary_sources": [
+    {
+      "author": "Mircea Mustata;notes by Tomasz Szemberg",
+      "title": "IMPANGA lecture notes on log canonical thresholds",
+      "url": "https://www.impan.pl/~pragacz/mustata1.pdf",
+      "version": "Public36-page PDF based on2010 IMPANGA lectures;served version pinned by hash",
+      "cached_file": "moments/vanishing/sources/mustata_impanga_lct_2011.pdf",
+      "sha256": "bfa87aeb09885a60cb4280de75405fc6ab085c93196cd2590ccb8795afb31707",
+      "selected_passages_read": "Retained PDF4-5 and10-11 full discrepancy/multiplicity passages from prior audit, not fresh whole-paper reading.",
+      "exact_import": "A(E)>=h/m when local numerator multiplicity<=m. NEW infinity estimate also uses elementary SNC A>=a and A>=a+h; no new inversion-of-adjunction import."
+    },
+    {
+      "authors": "G.Kempf,F.Knudsen,D.Mumford,B.Saint-Donat",
+      "title": "Toroidal Embeddings I,ChapterII:Semi-stable reduction",
+      "url": "https://page-one.springer.com/pdf/preview/10.1007/BFb0070320",
+      "version": "LNM339(1973),publisher PUBLIC PREVIEW printed53-54,complete theorem statement only",
+      "cached_file": "moments/vanishing/sources/kkmsd_semistable_preview_pp53_54_1973.pdf",
+      "sha256": "c7dd8a8b45e01bc4c0adf059eb88bd9b68b09baa948a814310aa35b10fffd3e3",
+      "selected_passages_read": "Retained prior primary audit: Complete semistable reduction theorem on53-54 from web PDF extraction;53 rendered and visually checked.",
+      "exact_import": "Used ONLY through retained GPROJECTIVELOGPERIOD and its internally written compact-chain moment proof: Over a smooth curve in characteristic0,finite base change and projective modification give smooth total space with reduced SNC special fibre,isomorphic off the special fibre. The full chapter proof is not claimed read from this two-page preview."
+    },
+    {
+      "author": "J.H.M.Steenbrink",
+      "title": "Mixed Hodge Structure on the Vanishing Cohomology",
+      "url": "https://webhomes.maths.ed.ac.uk/~v1ranick/papers/steenbrink2.pdf",
+      "version": "Oslo1976 proceedings,printed525-563,original scanned paper,pinned by hash",
+      "cached_file": "moments/vanishing/sources/steenbrink_vanishing_cohomology_1977.pdf",
+      "sha256": "7338acfe3265abea52b3d642091aa44e88771d961ed5dbd72c171886610c1e73",
+      "selected_passages_read": "Retained prior primary audit: Section2 setup on533,relative log forms2.5-2.6 andTheorem2.7 on535,and2.9-2.12 on536-537,visually read on original scan PDF5-7.",
+      "exact_import": "Used ONLY through retained GPROJECTIVELOGPERIOD and its internally written compact-chain moment proof: For projective smooth generic families in arbitrary dimension after the reduced base change,relative log de Rham cohomology is locally free,with logarithmic Gauss-Manin connection of nilpotent residue. This Section2 scope is not limited to the later isolated-singularity application. Polynomial log growth of holomorphic sections is the elementary connection consequence written here."
+    }
+  ],
+  "standard_geometric_inputs": "Characteristic-zero embedded resolution/projective resolution and finite normalization, as already used in the retained graph constructions. Explicit local conic and SNC-double-cover blowups compute the new volume extension; no canonical-threefold classification or unproved dualizing-generator promotion.",
+  "new_written_arguments": [
+    "Separate conic suspension preserves EVERY unweighted original Long moment by an actual compact mass1 cycle; not a Jacobian or marker transfer.",
+    "Projective normalized quadratic cover of compactified sphere times A1; ORIGINAL Theta extends at finite heights by explicit conic blowups and at infinity by square-part normalization/SNC branch blowups, including S=0 corner.",
+    "Every infinity valuation satisfies k+ceil(b/2)>=0 using strict D>2m, discrepancy bound max(a,h/m), and simple-root SNC estimate. Finite height uses retained strict lct proof.",
+    "Orbit6/12 makes both estimates automatic; projective-period theorem excludes ALL nonzero nonlinear H directly. Full recomposition pure locus exactly H0 or uv0,H1zero, all surviving phases safe."
+  ],
+  "boundaries": [
+    "Both FULL exceptional cases OPEN. Only equivariant opposite-weight Long recompositions closed; other/mixed b and distinct Hopf composites remain.",
+    "No purity reflection or model for original full mixed phase. Only the exact unweighted suspension period is transferred.",
+    "Noninvariant linear height has infinity order -1 and is NOT covered, retaining known Long failure.",
+    "Written universal proof and small exact controls, not arbitrary-ring theorem, machine proof, independent replay or external review."
+  ]
+}

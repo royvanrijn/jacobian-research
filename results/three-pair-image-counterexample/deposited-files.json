@@ -1,0 +1,26 @@
+{
+  "record": "https://zenodo.org/records/21634058",
+  "retrieved": "2026-11-17",
+  "files": [
+    {
+      "file": "three_pair_image_mathieu_counterexample.json",
+      "md5": "a3b61a8bfcc7771ff99f839ec673cf8b",
+      "sha256": "ef9b683cf89ea280ff579eba12821988a87af9432bd64a7c54a9b0a8c847319a"
+    },
+    {
+      "file": "three-pair-image-counterexample.pdf",
+      "md5": "e567137bed6004ab5133bcc78e5681e9",
+      "sha256": "8af71c9aee9115c9ad8160bae573a1a154489d8d5c66dd1d8f9c8b09bb884825"
+    },
+    {
+      "file": "verify_three_pair_image_mathieu_counterexample.py",
+      "md5": "88d6857ce96ce9b953ffaac19b65a025",
+      "sha256": "c181822f9d14e2feb8db6aa16c5d5ac1c1f73fe5520d95193e40a46676a57b6d"
+    },
+    {
+      "file": "main.tex",
+      "md5": "2581c6c0d31d6a2b196af8e05ca5d899",
+      "sha256": "2b204d994797e1f86cdefd22ce5a2d6140ee92b15d294ac22f364f9531a467be"
+    }
+  ]
+}

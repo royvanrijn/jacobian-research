@@ -1,0 +1,62 @@
+{
+  "date": "2026-11-15",
+  "repository_method_precedents": [
+    {
+      "source": "moments/vanishing/GAUSSIAN_SHEAR_NORMAL_FORM_AND_TRANSFERS.md",
+      "sha256": "20043bb3f092918fa8b1d6a55c8c5d03cc9fa9c403683cf1c66a7ab1e40388cb",
+      "use": "Sections1 and3 re-read: locally nilpotent functional-preserving shears and transport of all fixed mixed sequences. Haar preservation is re-proved here, not imported from a Gaussian contour argument."
+    },
+    {
+      "source": "foundations/extended-geometry/TWO_PAIR_SIC_BIDEGREE33_RODRIGUES_SURVIVOR.md",
+      "sha256": "9df2d848d41c7a87b8d3e1700c3467db85b65b37b084e9bdabeb69fd2028bac6",
+      "use": "Retained precedent separating pure-nullity, a nullcone obstruction and eventual mixed safety. No new SIC classification is claimed."
+    }
+  ],
+  "principal_source": {
+    "authors": "Henrik Seppanen and Valdemar V. Tsanov",
+    "title": "Geometric invariant theory for principal three-dimensional subgroups acting on flag varieties",
+    "url": "https://arxiv.org/abs/1503.07105v1",
+    "pdf_url": "https://arxiv.org/pdf/1503.07105v1",
+    "cached_file": "moments/vanishing/sources/seppanen_tsanov_1503_07105v1.pdf",
+    "sha256": "1c75ff31a15a7f262fafac5cc9142c87620da4579896eab111db1c59600bd046",
+    "selected_passages_read": "Section1.2, Proposition1.1, alpha(h0)=2 on simple roots, restriction formulas and Lemma1.3.",
+    "imported": "Classical principal triple existence and normalization. Strict extremal weights, the real Cartan component, replica preservation and separating invariant are proved in the new note.",
+    "not_imported": "Flag-variety GIT quotient, unstable-locus or codimension conclusions."
+  },
+  "finite_group_source": {
+    "url": "https://doi.org/10.1007/s00229-021-01274-x",
+    "cached_file": "moments/vanishing/sources/flicker_sl2_2022.pdf",
+    "sha256": "c59aec448453dcaec1f0bb072d66be95ab671338b9a83e68f011969732ec11f1",
+    "use": "Printed215 E7/E8 generators identify the canonical examples. Exact cyclotomic generation, group orders, compactness, projective orders, form invariance and invariant dimensions are independently computed by the checker.",
+    "boundary": "The general Haar-shear proof does not require finite-subgroup classification."
+  },
+  "general_classical_inputs": [
+    "Affineness for reductive stabilizers; compatible compact forms and dense compact stabilizer.",
+    "Complete reducibility, Cartan components, highest/lowest weights and Chevalley root relations.",
+    "Duistermaat--van der Kallen for the positive connected torus case.",
+    "Retained GVC2FTS finite-trace separation for the disconnected toral case."
+  ],
+  "new_general_construction": "A star-stable nontrivial real Cartan module supplies highest p and q=pstar. A normalized principal lowering F has F^n p/n!=q. Phi_t=exp(t qF) preserves Reynolds. The invariant I=h((pi_mu P)^(n+1) pi_(n+1)mu P) takes value t^n h(|p|^(2n+2))!=0 off t0.",
+  "explicit_cases": {
+    "2O": {
+      "form": "X8+14X4Y4+Y8",
+      "degree": 72,
+      "sharp_mixed_slope": "9/8"
+    },
+    "2I": {
+      "form": "XY(X10+11X5Y5-Y10)",
+      "degree": 156,
+      "sharp_mixed_slope": "13/12"
+    }
+  },
+  "concrete_controls": "Exact cyclotomic groups48/120; self-transvectants; independent Casimir/Omega projections; first resonant pure moments5/7 directly zero; positive Haar norm sums and sharp-marker endpoints; principal SL3 triple.",
+  "logical_boundary": "The constructed pure-null elements are eventually marked-null, so they settle nullcone detection, not Mathieu--Zhao failure. A nonzero fixed marked tail is still required for that problem.",
+  "proof_sha256": "c008f0a18de99def6211bfdcc0841dc81fd0c6c30dcf9c65ed13c6ea3cd11edc",
+  "checker_sha256": "e154855aa1e255c2910a0ea657323c6737ba5f1f7cadf2169ef3a8e19195d5d9",
+  "receipt_sha256": "bba0576c626ecdc2a9c34558164f20ac72b08e0893fa6f00c717a116f01049f4",
+  "independent_replay": false,
+  "formal_verification": false,
+  "external_review": false,
+  "all_group_proof_implemented_or_formally_verified": false,
+  "additional_controls": "Extremal lowering of degree-ns markers and direct Haar norms independently confirm the sharp endpoints. Replacing the invariant coefficient q by p makes pF fail Haar preservation,detected by h(pF((Fp)star))=-h(|Fp|^2)!=0."
+}

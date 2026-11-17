@@ -1,0 +1,228 @@
+{
+  "date": "2026-11-15",
+  "canonical_proof": "moments/vanishing/GAUSSIAN_PROJECTION_INFINITY_GLOBAL104.md",
+  "canonical_proof_sha256": "982d8b7475437bb9ae810b549804423859b301914c14df7e1900ccfed8444c2a",
+  "claims": [
+    "G3INFTYPROJ20261115",
+    "G3PURE104_20261115"
+  ],
+  "checker": "moments/vanishing/verify_gaussian_projection_at_infinity.py",
+  "checker_sha256": "9eb1281e91829fa3087896858bdb46aa53ce2643509c707dbd731723d3528e64",
+  "certificate_sha256": "51634b7b5ab93d84b7f1beb463c5c0bc300a8b2bdfcfe432b8dc98cddaf04ab9",
+  "accepted_receipt_sha256": "2cefd155906b69156317196f38c503d085fe9f24fd37427fd72a5fe8718414b0",
+  "prior_frontier": {
+    "path": "moments/vanishing/infinity104_preupdate_20261115.json",
+    "sha256": "daf60f5c1e98d38023e0d7f84eb429369a9ddb48425f7316c8c66614d9b5e605"
+  },
+  "retained_inputs": {
+    "verify_ordinary_rank_one_lattice.py": "572582bffcf5cc86f4ef92924064130c1a2f8c28b164c79f8773592ec9cf1a59",
+    "ordinary_rank_one_lattice_source_audit.json": "c34fc5e634ba3647954453168279f79aae49496c99bfd314b844da6c400b84aa",
+    "ordinary_rank_one_lattice_certificate.json": "2ca29283bff1b1daa439194d79b853c1eaa1d99b6a8b874da387bf6fc8d63607",
+    "ordinary_rank_one_lattice_verification.json": "5afbf8b57e9787a465456b7226f607df7de43bdd4893041d22de11c93eaf7e0e",
+    "verify_cusp_rank_one_lattice.py": "ab3b3d12d844f1de5777dec73834cbcede4786937fc0a137e120b20f471485a0",
+    "cusp_rank_one_lattice_source_audit.json": "5b44f760c29213f33f925be2ce0a9ae72b2e2be7b0ed62c3f513a9c93fbc8811",
+    "cusp_rank_one_lattice_certificate.json": "cdb2daf8b7df004d29564798d276085fb8bff19d7dd469fcf0dedb54803d0e7f",
+    "cusp_rank_one_lattice_verification.json": "1535c3368e765c7b88a6d7e5978aee5dd1ea7a1f2d34026689cac5e50196a786",
+    "verify_tangent_rank_one_lattice.py": "ca9544a20282ec2ebdc808ddb5166933b5062361581cdbea3fb10a4945aa1166",
+    "tangent_rank_one_lattice_source_audit.json": "8eff7dc278cea7268fd67a03b109309c6d6c83edfffd54b32b88a315750d7b47",
+    "tangent_rank_one_lattice_certificate.json": "76cc570f9c931dda7fea4c76cda4cac779d3a0f3040c1f6fc7b51e64cd710cd6",
+    "tangent_rank_one_lattice_verification.json": "86107564ae70694d086e48bccf283e264655ce1aea2aa1b0e5f4cb2eb5e48544",
+    "verify_triangular_divisor_factors.py": "37ddf15898dc825896a37701797a4dd6cfef8c62254e55015aa92a778cdab0c5",
+    "triangular_divisor_factors_source_audit.json": "c2518d693896368fd50364e8366f2defe3041294103500bdb3c33e79e2c885f6",
+    "triangular_divisor_factors_certificate.json": "de5edb1c5ce023b6c14595548116eae7a35a7abe9d2320ccd0e824d16af80b54",
+    "triangular_divisor_factors_verification.json": "4e47a14e5514602352c55cdbde16a40fcbfb095ba98114d0751ca08370abee78",
+    "even_time_odd_seeds_source_audit.json": "8c88da14f2d063c69eeeadb614de98f855e5a1fd0743da9d621743888f0d5800",
+    "conic_completed_row_factors_source_audit.json": "59f4d3cd0e2a344bda067ca699603bd9ba65db8ecec0ffd93ae53359375fd4c6",
+    "verify_gaussian_regular_projection.py": "718fe122604958fcf9191a5df91a54d1ae785caf9770b93392bd2625c6a87f62",
+    "gaussian_regular_projection_source_audit.json": "b3497b9b50d6e0070fb7237b621391e635166f1ee7e0dbc7a32203e1c3d0d6d4",
+    "gaussian_regular_projection_certificate.json": "47f7155c6513c308ec7fbbe45510ac2f67817221a24cb040d0f45822161874e6",
+    "gaussian_regular_projection_verification.json": "7b1f92fe13d548cd2c858dfbcd37b33a52c5984ed6dafdb8dd1126cbf0b3af88"
+  },
+  "historical_proof_immutability": {
+    "JOINT_DEGREE_GLOBAL_353.md": "5369191d5a67c2d05750033ef3d9d19c6ad61afcfb2d532a0a0c6f1016c451f9",
+    "EULER_REPRESENTATIVES_GLOBAL_297.md": "3a7591c55c7ae52b23f00a897c58ca42105de1b680521d46a596f2d7ef3fd631",
+    "SHARED_DIVISOR_GLOBAL_258.md": "5146f6676da462bfd741bde1ec9d8184eddc292389467005207e0e3d2df8aaf9",
+    "STRUCTURED_SEEDS_GLOBAL_239.md": "c5d09c4aadac8bc9911d9460034507a446d7c507e10950b324e594273d70d924",
+    "COMMON_TIME_FACTOR_GLOBAL_224.md": "4429c2c08cbabace6b1b23e2a6f501205068a43d04810a859d81d76133ca5208",
+    "POLE_FILTERED_GLOBAL_199.md": "ac04552d1dcfd4d8ea214aae3950976ec6b30442f097ef8129d5f2682454c41f",
+    "MULTIPLE_DIVISORS_GLOBAL_174.md": "2e4d1808e43ba5fcfce4a86a8bf15a0c20166e5994346a2db2c02cbc44787bba",
+    "NORMAL_MODULE_GLOBAL_146.md": "f58675c096e137292e813852894603153a41c70bd1bff681ee788908334baa6a",
+    "TWO_SIDED_CONIC_GLOBAL_140.md": "e862be29b4eafe29d5cbc0df6ca003294e0523409afb441669527fae2a47654f",
+    "RANK_FACTORS_AND_REDUCTION_GLOBAL_130.md": "d39725481b3e733c399e60a42663d4311f9fe76f5698fce2842a5782f86762dc",
+    "CONIC108_ODD126_GLOBAL130.md": "8caf3664ebb6149f3c48c49304447df9811c5b46421ece776bb2f77415c58697",
+    "PREFIX_PROOF_HISTORY.md": "3426a5a8e60d0d14f177e23e2c9e157778eae3644ec2caa564af9c17d4b8997c",
+    "WEIGHTED_ODD_PREFIX108.md": "c9238da9e5b7e2e7242cdf999bd7105a5d131b441b9a373fad420842fc79c878",
+    "CONIC_ROW_FACTORS_96_ODD104.md": "18a67c884339a850cb02093c49988d374e3e209dc2b6e2ca25b132dc96ba11b9",
+    "ODD_CONCURRENT36_PREFIX100.md": "14fa528c9939440372fd2c6dd24a3319a0a3009923867bf272edd0f06281c54c",
+    "EVEN_TIME_SEEDS_ODD98.md": "e45b83608783ed7bb08f40a660a384f750f8b9ca131a2af736f0f751b379a28c",
+    "CUSP_RANK_ONE_LATTICE_GLOBAL129.md": "f797b342cd5f4b210b5b13ce38a656671fbf0961407d1b4ce0b34f83cb5153e3",
+    "ORDINARY_RANK_ONE_GLOBAL125.md": "30c7c6e4fb21e3e15ae2d6e13817281c9c4dc04c4e115526f4251f5b287cfbad",
+    "TRIANGULAR_DIVISOR_FACTORS_GLOBAL120.md": "f226f9572aadae9dace2f1e098774132b6f0448ddd48465fab6fb29eedc2cf27",
+    "TANGENT_POLE_RESIDUE_GLOBAL115.md": "3a703e2b39fa0ab1dae3665e490cf99ef54b25cddb4dfd6e49440f11a7183033",
+    "FORMAL_GAUSSIAN_PROJECTION_GLOBAL109.md": "9e2dc4261e513fa31863d9ed8b129890e8af336def9b8608a8152139ebd7babc"
+  },
+  "previous_goal_turn_classification": "progress: full formal Gaussian projection and restored-direction comparison losses0/2/6 established linear-D87/97/98/77/66 and general109, with119 exact Gaussian coefficient checks,15 retained families/100 scalar-cofactor checks and completed scoped records.",
+  "formal_projection_at_infinity": {
+    "D_nonzero_constant_only": true,
+    "rescaling": [
+      "x=1/t",
+      "u=U/x",
+      "v=V/x"
+    ],
+    "full_phase": "Fhat^2/(2D*x^2)+Ghat/x",
+    "H": "D*Ghat",
+    "transverse_critical_equation": "phi+x*H_z(phi)=0",
+    "critical_point_order_at_least": 1,
+    "residual_phase": "Phi=H(phi)+phi^2/(2x)",
+    "centered_formal_Morse_before_heat_series": true,
+    "formal_Gaussian_variance": "-D*x^2",
+    "normalized_prefactor_x_order": 1,
+    "full_Jacobian_volume_determinant_derivatives_retained": true,
+    "physical_time_derivation": "-x^2 partial_x",
+    "residual_phase_time_derivative": "(Phi-x*Phi_x)/D",
+    "finite_quotient_ranks": {
+      "nodal": 6,
+      "transverse": 5,
+      "triangle": 4,
+      "cusp": 5,
+      "tangent": 4
+    },
+    "regular_physical_time_connection": true,
+    "actual_seed_identity": "pi(R_j)=h^j nabla_t^j pi(1)",
+    "h_t_degree": 3,
+    "projected_actual_numerator_pole_at_most": "3j",
+    "slow_seed_x_orders": {
+      "ordinary": "j",
+      "cusp": "3j-1",
+      "tangent": "5j"
+    },
+    "comparison_determinant_losses": {
+      "ordinary": 0,
+      "cusp": 2,
+      "tangent": 6
+    },
+    "comparison_determinants_leading": {
+      "cusp": "x^2/qhat0^2",
+      "tangent": "2D*x^6/qhat0^3"
+    },
+    "missing_direction_retained": true,
+    "complementary_minor_loss_once": true,
+    "full_rank_infinity_savings": {
+      "nodal": 21,
+      "transverse": 15,
+      "triangle": 10,
+      "cusp": 38,
+      "tangent": 44
+    },
+    "all_actual_ranks_row_sets": true,
+    "no_scalar_relation_factor_cancelled": true,
+    "higher_scalar_valuation_at_least": "3l",
+    "generic_proof_then_polynomial_degree_extension": true,
+    "zero_leading_q_r_axis_slopes_shared_roots_retained": true,
+    "constant_D_not_a_degree_saving": true,
+    "linear_D_and_identically_zero_D_frame_cases_retained": true
+  },
+  "constant_D_gates": {
+    "nodal": 80,
+    "transverse": 91,
+    "triangle": 93,
+    "cusp": 71,
+    "tangent": 61
+  },
+  "linear_D_gates_retained": {
+    "nodal": 87,
+    "transverse": 97,
+    "triangle": 98,
+    "cusp": 77,
+    "tangent": 66
+  },
+  "frame_gates": {
+    "nodal": 96,
+    "transverse": 96,
+    "triangle": 96,
+    "cusp": 95,
+    "tangent": 95
+  },
+  "global_cover": {
+    "quadratic": 7,
+    "smooth": 94,
+    "nodal": 96,
+    "cusp": 95,
+    "transverse": 97,
+    "tangent": 95,
+    "triangle": 98,
+    "concurrent": 104,
+    "repeated": 99
+  },
+  "odd_cover_unchanged": {
+    "quadratic": 7,
+    "smooth": 94,
+    "nodal": 98,
+    "cusp": 94,
+    "transverse": 98,
+    "tangent": 94,
+    "triangle": 96,
+    "concurrent": 36,
+    "repeated": 98
+  },
+  "global_sufficient_pure_prefix": 104,
+  "odd_sufficient_pure_prefix": 98,
+  "homogeneous_sufficient_pure_prefix": 96,
+  "conic_full_W_linear_gate_unchanged": 96,
+  "least_prefix_interval": [
+    20,
+    104
+  ],
+  "odd_least_prefix_interval": [
+    20,
+    98
+  ],
+  "homogeneous_least_prefix_interval": [
+    14,
+    96
+  ],
+  "smooth_leading_least_prefix_interval": [
+    20,
+    94
+  ],
+  "smooth_homogeneous_least_prefix_interval": [
+    14,
+    56
+  ],
+  "current_radical_target": "I104",
+  "binary_search_rounds_max": 7,
+  "frame_condition_required_for_global104": false,
+  "exact_auxiliary_evidence": {
+    "formal_critical_order": 5,
+    "formal_Morse_order": 4,
+    "comparison_determinants": 5,
+    "retained_constant_D_models": 8,
+    "full_scalar_cofactor_checks": 53
+  },
+  "selected_primary_record_refresh_retained": {
+    "path": "moments/vanishing/ordinary125_primary_record_refresh_20261115.json",
+    "sha256": "ba024b266a364c50d9dc636dbe9a0eb0aecf2a3508ebc12389f4f3d026373ad5"
+  },
+  "literature_boundary": "No fresh literature-coverage claim,external theorem or producer package; earlier selected primary-record/body audits remain retained.",
+  "analytic_boundary": "Universal coefficientwise formal transverse critical/Morse/Gaussian integration,regular physical-time connection,exact h_prime cancellation,restored-direction comparison/minor degree bound,polynomial extension and complete coefficient/frame and analytic exclusions remain independently unreviewed written inputs. Finite auxiliary identities do not certify this complete analytic theorem.",
+  "least_prefix_computed": false,
+  "full_coefficient_radical_search_executed": false,
+  "expanded_global_radical_cofactors_computed": false,
+  "universal_written_proof_certified_by_checker": false,
+  "independent_replay": false,
+  "external_review": false,
+  "formal_verification": false,
+  "new_external_theorems_imported": false,
+  "producer_package_executed": false,
+  "assurance": "Internal written constant-D formal Gaussian projection at t=infinity centers the transverse critical point before formal Morse integration. The physical-time connection is regular in x=1/t,with slow completed seed orders j/3j-1/5j and one restored direction with losses0/2/6. Infinity savings21/15/10/38/44 give constant-D80/91/93/71/61; retained linear-D/frame cases yield full96/97/98/95/95 and general104. Exact critical equation throughx5,Morse identity throughx4,five comparison determinants,eight retained Gaussian families with53 scalar-cofactor checks and all rank/row/valuation checks pass. All-order formal/connection/minor/polynomial-extension and analytic/frame arguments remain independently unreviewed written inputs; no independent,external or formal certification.",
+  "remaining": [
+    "Least global[20,104],odd[20,98],homogeneous[14,96]",
+    "Twenty/fourteen-moment sufficiency",
+    "Smaller general concurrent104/repeated99,odd node/transverse/repeated98 and homogeneous conic96 gates",
+    "Expanded I104 radical cofactors",
+    "Independent analytic/formal-connection review",
+    "Exceptional coefficient schemes",
+    "Global term-count minima",
+    "Lower-power GVC"
+  ]
+}

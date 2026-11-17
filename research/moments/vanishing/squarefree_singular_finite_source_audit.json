@@ -1,0 +1,133 @@
+{
+  "date": "2026-11-15",
+  "claims": [
+    "G3CONCURRENTFINITE20261115",
+    "G3CUSPFINITE20261115",
+    "G3TANGENTFINITE20261115"
+  ],
+  "canonical_source": "moments/vanishing/SQUAREFREE_SINGULAR_FINITE_PREFIXES.md",
+  "inputs": {
+    "qualitative_concurrent": "moments/vanishing/CONCURRENT_LINE_EXCLUSION.md",
+    "qualitative_cusp": "moments/vanishing/CUSPIDAL_AFFINE_EXCLUSION.md",
+    "qualitative_tangent": "moments/vanishing/LINE_CONIC_AFFINE_EXCLUSION.md",
+    "regular_sequence_method": "moments/vanishing/COERCIVE_GRADIENT_MOMENTS.md",
+    "seed_cofactor_method": "moments/vanishing/REPEATED_LINE_FINITE_PREFIX.md",
+    "frame_finite_gates": "moments/vanishing/RANK_ONE_WT2_CLASSIFICATION.md",
+    "fourteen_coefficient_faces": "moments/vanishing/MIXED_PERIOD_AT_INFINITY.md"
+  },
+  "retained_receipts": {
+    "concurrent_line_profiles_verification.json": "88c22ec592ecccecba2b32f62a8af436d83f26b0ede0a95d04f9e130c97ee6ff",
+    "cuspidal_affine_profiles_verification.json": "ab94ec462c11715b25e628b106c2e68b8d29bc8f8a4f281f9886216e9f481a5e",
+    "affine_line_conic_profiles_verification.json": "68c73bb4015c3f31ab483fafa138906c83d8b06b1074da615076ce7985a16882",
+    "rank_one_wt2_verification.json": "1590f52f27566b12ba115f73951c6aa563197106abe85ed3dcaed8a7d00f93a9",
+    "mixed_period_infinity_verification.json": "db97076f04605aa1c1bc4c8725116de6f7fda34f1a21db6f791af4f41545090f",
+    "repeated_line_finite_prefix_verification.json": "95c3d07ad210bcaf022ccc4c315c051ca2218636e3806bdb7fcae0db08165f4f"
+  },
+  "prior_numeric_frontier": {
+    "path": "moments/vanishing/squarefree_prefix_problem_preupdate_20261115.json",
+    "sha256": "95e85ef7903b4c4ab02a72fc411d35a5b783dca06dce891e66fa50428533fc4f"
+  },
+  "exact_evidence": {
+    "checker_sha256": "3d5fbdbd22fe7663a0d980d071b2fd6ff55cee4540b447a989577a6c53d92eb3",
+    "model_certificate_sha256": "e900d70a0ede12940e5de1da4281c533e65fd0fcc0b8515b8445f9a0661b0e61",
+    "model_certificate": "moments/vanishing/squarefree_singular_connection_models.json",
+    "rational_models": 6,
+    "certified_connection_columns": 30,
+    "universal_principal_divisions": 73
+  },
+  "common_completion": "Write P=alpha*T^2+T*(H2+ell)+G3+g2 and Q=m*T^2/2+T*J+q2, preserving full means/cross terms. D=m-2alpha*t is either nonzero, giving prefactor D^-1/2 and phase U/D with deg_t U<=2,deg_t D<=1, or identically zero, giving the isotropic zero-F2 frame branch. D(0)=0 uses the generic-t module and original formal Wick functional, not a conditional t-adic T average.",
+  "uniform_degrees": {
+    "concurrent": {
+      "weights": [
+        1,
+        1
+      ],
+      "top_weight": 3,
+      "lower_weight": 2,
+      "max_source": 5,
+      "minimum_reducible": 2,
+      "gap": 1,
+      "steps": 4,
+      "q": 2,
+      "B": 10,
+      "rank": 4,
+      "gate": 104
+    },
+    "cusp": {
+      "weights": [
+        3,
+        4
+      ],
+      "top_weight": 12,
+      "lower_weight": 10,
+      "max_source": 22,
+      "minimum_reducible": 8,
+      "gap": 2,
+      "steps": 8,
+      "q": 4,
+      "B": 34,
+      "rank": 6,
+      "gate": 720
+    },
+    "tangent": {
+      "weights": [
+        2,
+        3
+      ],
+      "top_weight": 8,
+      "lower_weight": 7,
+      "max_source": 14,
+      "minimum_reducible": 5,
+      "gap": 1,
+      "steps": 10,
+      "q": 6,
+      "B": 62,
+      "rank": 5,
+      "gate": 935
+    }
+  },
+  "analytic_boundary": "The regular weighted symbol sequences give full fixed quotient bases; exact principal divisions bound parameter degrees. The retained complete qualitative proofs supply no-constant-period exclusion on D!=0, which ensures a nonzero zeroth scalar coefficient. Neither numerical models nor a generic Hessian prove that analytic assertion.",
+  "frame_boundary": "On D=0, concurrent leading forms have affine-linear W coefficient and use the d=0 gate92. At a cusp or tangency, the projective tangent cone is rank-one: f!=0 rotates to the rank-one family with gate425, while f=0 implies e=0 and uses the fourteen-coefficient gate320. These are pure gates, not assertions that a frame alone is pure-null.",
+  "primary_sources": [
+    {
+      "cache": "sources/helmer_tellander_2505_12458v1.html",
+      "url": "https://arxiv.org/html/2505.12458v1",
+      "sha256": "2b44c1c4c9f365c87600a365a10da3ddee17eea5c2f58600b25109cb784460a6",
+      "bytes": 929744,
+      "coverage": "Read abstract, introduction, Sections3.2/3.4 and5.2, including Theorem3.5, Remark3.7 and Theorem5.3. Generic exponents and the regular holonomic proper-image setting prevent a direct Gaussian prefix import. No theorem imported.",
+      "version_boundary": "ArXiv lists only v1 submitted18 May2025; HTML prints24 August2026. The search identified a2026 journal page whose direct opening failed. Labels are retained, not reconciled into an invented revision."
+    },
+    {
+      "cache": "sources/aschenbrenner_leykin_0710_4945_abstract.html",
+      "url": "https://arxiv.org/abs/0710.4945",
+      "sha256": "b28957194517f428c20a7bd5ca0509d982f82c56aeab41034b61e79f8b5e64a4",
+      "bytes": 39444,
+      "coverage": "Read abstract and version history only; current arXiv version v5,19 November2008. Weyl-algebra Groebner bounds do not alone provide the required integration presentation or seed coefficient. No theorem imported."
+    }
+  ],
+  "literature_search": "Targeted15 November2026 searches for effective holonomic integration, exponential-integral degree bounds and Weyl Groebner bounds. The new bounds are internal filtered-reduction deductions from retained class proofs; no general global telescoper theorem or characteristic-cycle formula is substituted for them.",
+  "proof_boundary": "Universal symbolic quadratic completion, principal weighted divisions and lower-weight/parameter-degree bounds; six exact rational connection models with all column integration-by-parts certificates, including D(0)=0;104/720/935 arithmetic. Universal filtered-basis exactness, complete class/field/frame choices, seed bridge and nonzero zeroth coefficients remain written mathematics with retained analytic dependencies. No sharpness, high-order moment expansion, numeric global pure-only gate, independent review or formal verification.",
+  "remaining_unquantified_leading_types": [
+    "irreducible nodal",
+    "transverse line-smooth-conic",
+    "three independent lines"
+  ],
+  "remaining": "Numerical global least prefix and every explicit numerical arbitrary-cubic upper bound; ordinary-node class bounds; optimal class gates; independent analytic review; exceptional coefficient schemes, global term-count optimality and lower-power GVC.",
+  "independent_replay": false,
+  "external_review": false,
+  "formal_verification": false,
+  "ordinary_node_next_checkpoint": {
+    "script": "moments/vanishing/ordinary_node_phase_shift_checkpoint.py",
+    "script_sha256": "5b98a82ab0e16163e847e3a2a400d318f29ce05a0ca5fee3395c3b2f3c0643db",
+    "receipt": "moments/vanishing/ordinary_node_phase_shift_checkpoint.json",
+    "receipt_sha256": "ba163f9bcbc786a7decf6fe00ecd0750f3be184be39233d33b6f21fa15998903",
+    "bounds": {
+      "V": 4,
+      "delta": 3,
+      "connection_source_numerator": 6
+    },
+    "finite_prefix_proved": false,
+    "twisted_basis_constructed": false,
+    "scope": "Exploratory exact next-step normalization only; not a new class gate, full twisted basis or new GMC exclusion."
+  }
+}

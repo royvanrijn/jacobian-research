@@ -1,0 +1,385 @@
+{
+  "schema_version": 1,
+  "result": "pass",
+  "check_count": 178,
+  "checks": [
+    "reuse only retained pure seed function",
+    "actual cubic Jacobian one",
+    "cleared inverse polynomial identity",
+    "cleared inverse derivative unit identity",
+    "global t q comaximality identity",
+    "complete empty fibre unit ideal",
+    "complete singleton fibre maximal ideal",
+    "complete split triple exact triangular ideal",
+    "all three labelled points in whole seed fibre",
+    "label polynomial values zero one two",
+    "rank2 exact selector table",
+    "rank2 excluded selector label 00",
+    "rank2 excluded selector label 02",
+    "rank2 excluded selector label 11",
+    "rank2 excluded selector label 12",
+    "rank2 excluded selector label 20",
+    "rank2 excluded selector label 21",
+    "rank2 excluded selector label 22",
+    "rank2 complete filtered configurations",
+    "rank3 exact selector table",
+    "rank3 excluded selector label 000",
+    "rank3 excluded selector label 002",
+    "rank3 excluded selector label 011",
+    "rank3 excluded selector label 012",
+    "rank3 excluded selector label 020",
+    "rank3 excluded selector label 021",
+    "rank3 excluded selector label 022",
+    "rank3 excluded selector label 101",
+    "rank3 excluded selector label 102",
+    "rank3 excluded selector label 110",
+    "rank3 excluded selector label 111",
+    "rank3 excluded selector label 112",
+    "rank3 excluded selector label 120",
+    "rank3 excluded selector label 121",
+    "rank3 excluded selector label 122",
+    "rank3 excluded selector label 200",
+    "rank3 excluded selector label 201",
+    "rank3 excluded selector label 202",
+    "rank3 excluded selector label 210",
+    "rank3 excluded selector label 211",
+    "rank3 excluded selector label 212",
+    "rank3 excluded selector label 220",
+    "rank3 excluded selector label 221",
+    "rank3 excluded selector label 222",
+    "rank3 complete filtered configurations",
+    "rank4 exact selector table",
+    "rank4 excluded selector label 0000",
+    "rank4 excluded selector label 0002",
+    "rank4 excluded selector label 0011",
+    "rank4 excluded selector label 0012",
+    "rank4 excluded selector label 0020",
+    "rank4 excluded selector label 0021",
+    "rank4 excluded selector label 0022",
+    "rank4 excluded selector label 0101",
+    "rank4 excluded selector label 0102",
+    "rank4 excluded selector label 0110",
+    "rank4 excluded selector label 0111",
+    "rank4 excluded selector label 0112",
+    "rank4 excluded selector label 0120",
+    "rank4 excluded selector label 0121",
+    "rank4 excluded selector label 0122",
+    "rank4 excluded selector label 0200",
+    "rank4 excluded selector label 0201",
+    "rank4 excluded selector label 0202",
+    "rank4 excluded selector label 0210",
+    "rank4 excluded selector label 0211",
+    "rank4 excluded selector label 0212",
+    "rank4 excluded selector label 0220",
+    "rank4 excluded selector label 0221",
+    "rank4 excluded selector label 0222",
+    "rank4 excluded selector label 1001",
+    "rank4 excluded selector label 1002",
+    "rank4 excluded selector label 1010",
+    "rank4 excluded selector label 1011",
+    "rank4 excluded selector label 1012",
+    "rank4 excluded selector label 1020",
+    "rank4 excluded selector label 1021",
+    "rank4 excluded selector label 1022",
+    "rank4 excluded selector label 1100",
+    "rank4 excluded selector label 1101",
+    "rank4 excluded selector label 1102",
+    "rank4 excluded selector label 1110",
+    "rank4 excluded selector label 1111",
+    "rank4 excluded selector label 1112",
+    "rank4 excluded selector label 1120",
+    "rank4 excluded selector label 1121",
+    "rank4 excluded selector label 1122",
+    "rank4 excluded selector label 1200",
+    "rank4 excluded selector label 1201",
+    "rank4 excluded selector label 1202",
+    "rank4 excluded selector label 1210",
+    "rank4 excluded selector label 1211",
+    "rank4 excluded selector label 1212",
+    "rank4 excluded selector label 1220",
+    "rank4 excluded selector label 1221",
+    "rank4 excluded selector label 1222",
+    "rank4 excluded selector label 2000",
+    "rank4 excluded selector label 2001",
+    "rank4 excluded selector label 2002",
+    "rank4 excluded selector label 2010",
+    "rank4 excluded selector label 2011",
+    "rank4 excluded selector label 2012",
+    "rank4 excluded selector label 2020",
+    "rank4 excluded selector label 2021",
+    "rank4 excluded selector label 2022",
+    "rank4 excluded selector label 2100",
+    "rank4 excluded selector label 2101",
+    "rank4 excluded selector label 2102",
+    "rank4 excluded selector label 2110",
+    "rank4 excluded selector label 2111",
+    "rank4 excluded selector label 2112",
+    "rank4 excluded selector label 2120",
+    "rank4 excluded selector label 2121",
+    "rank4 excluded selector label 2122",
+    "rank4 excluded selector label 2200",
+    "rank4 excluded selector label 2201",
+    "rank4 excluded selector label 2202",
+    "rank4 excluded selector label 2210",
+    "rank4 excluded selector label 2211",
+    "rank4 excluded selector label 2212",
+    "rank4 excluded selector label 2220",
+    "rank4 excluded selector label 2221",
+    "rank4 excluded selector label 2222",
+    "rank4 complete filtered configurations",
+    "rank2 selector equals desired finite-algebra idempotent",
+    "rank2 selected finite-algebra element idempotent",
+    "rank2 full source upper-right derivative block zero",
+    "rank2 full source first derivative blocks exact",
+    "rank2 full source last derivative block exact",
+    "rank2 product of actual diagonal Jacobians one",
+    "rank2 actual adjacent-transposition covariance",
+    "rank2 literal coordinate degree bound exact",
+    "rank2 literal two-self-factor identity",
+    "rank3 selector equals desired finite-algebra idempotent",
+    "rank3 selected finite-algebra element idempotent",
+    "rank3 full source upper-right derivative block zero",
+    "rank3 full source first derivative blocks exact",
+    "rank3 full source last derivative block exact",
+    "rank3 product of actual diagonal Jacobians one",
+    "rank3 actual adjacent-transposition covariance",
+    "rank3 literal coordinate degree bound exact",
+    "rank3 literal two-self-factor identity",
+    "primitive idempotent quadratic scheme exact ideal",
+    "quadratic fibre generator gives input extension",
+    "universal separability idempotent squares to itself",
+    "intrinsic quadratic fibre point maps to actual seed target",
+    "intrinsic quadratic selector trace is one",
+    "S3 complete fixed marked fibre",
+    "S3 fixed-degree normalization budget",
+    "V4 complete fixed marked fibre",
+    "V4 fixed-degree normalization budget",
+    "C3 fixing one complete fixed marked fibre",
+    "C3 fixing one fixed-degree normalization budget",
+    "S3 fixing two complete fixed marked fibre",
+    "S3 fixing two fixed-degree normalization budget",
+    "two C3 orbits complete fixed marked fibre",
+    "two C3 orbits fixed-degree normalization budget",
+    "good p5 rank2 selector complete table",
+    "good p5 actual empty seed fibre",
+    "good p7 rank3 selector complete table",
+    "good p7 actual empty seed fibre",
+    "good p11 rank4 selector complete table",
+    "good p11 actual empty seed fibre",
+    "rank2 canonical determinant-dual line cancels sign",
+    "rank3 canonical determinant-dual line cancels sign",
+    "rank4 canonical determinant-dual line cancels sign",
+    "local pin foundations/verified/FOUNDATIONAL_GEOMETRY.md",
+    "local pin foundations/verified/IMAGE_AND_NONPROPERNESS.md",
+    "local pin foundations/verified/UNIVERSAL_RELATIVE_KELLER_MAP.md",
+    "local pin jacobian/universal-keller-compression/verify.py",
+    "local pin jacobian/universal-keller-receiver/PROOF.md",
+    "local pin jacobian/universal-keller-fixed-fibres/PROOF.md",
+    "local pin jacobian/universal-keller-torus-quotient-selfmaps/PROOF.md",
+    "local pin jacobian/universal-keller-atomic-cylinder/PROOF.md",
+    "local pin jacobian/universal-keller-versal-isogenies/PROOF.md",
+    "primary pin sources/stacks-05Y8.html",
+    "primary pin sources/shaska-2607.20210v2.html",
+    "primary pin sources/afp-jacobian-counterexample.html"
+  ],
+  "seed_fibre_groebner_bases": {
+    "empty": [
+      "1"
+    ],
+    "singleton": [
+      "z",
+      "y",
+      "x"
+    ],
+    "triple": [
+      "-27*x**2/4 + z + 1/4",
+      "3*x/2 + y",
+      "x**3 - x"
+    ]
+  },
+  "selector_controls": [
+    {
+      "rank": 2,
+      "selected_configurations": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          0
+        ]
+      ],
+      "complete_marked_rank": 2,
+      "dimension": 9,
+      "volume_dimension": 10,
+      "generic_degree": 27,
+      "coordinate_degree": 8
+    },
+    {
+      "rank": 3,
+      "selected_configurations": [
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          1,
+          0,
+          0
+        ]
+      ],
+      "complete_marked_rank": 3,
+      "dimension": 12,
+      "volume_dimension": 13,
+      "generic_degree": 81,
+      "coordinate_degree": 12
+    },
+    {
+      "rank": 4,
+      "selected_configurations": [
+        [
+          0,
+          0,
+          0,
+          1
+        ],
+        [
+          0,
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          1,
+          0,
+          0
+        ],
+        [
+          1,
+          0,
+          0,
+          0
+        ]
+      ],
+      "complete_marked_rank": 4,
+      "dimension": 15,
+      "volume_dimension": 16,
+      "generic_degree": 243,
+      "coordinate_degree": 16
+    }
+  ],
+  "literal_map_controls": [
+    {
+      "rank": 2,
+      "actual_source_dimension": 9,
+      "coordinate_degree": 8,
+      "diagonal_jacobian_product": 1,
+      "two_factor_geometric_degrees": [
+        3,
+        9
+      ]
+    },
+    {
+      "rank": 3,
+      "actual_source_dimension": 12,
+      "coordinate_degree": 12,
+      "diagonal_jacobian_product": 1,
+      "two_factor_geometric_degrees": [
+        3,
+        27
+      ]
+    }
+  ],
+  "nonsplit_quadratic_control": "Primitive rank-one idempotents have A=1/2,B^2=1/(4D); U=2DB gives U^2=D. The universal separability idempotent maps to the exact seed fibre.",
+  "whole_fixed_controls": [
+    {
+      "group": "S3",
+      "rank": 3,
+      "orbit_sizes": [
+        3
+      ],
+      "fixed_dimension": 6,
+      "generic_fixed_degree": 9,
+      "complete_fixed_marked_rank": 0
+    },
+    {
+      "group": "V4",
+      "rank": 4,
+      "orbit_sizes": [
+        4
+      ],
+      "fixed_dimension": 6,
+      "generic_fixed_degree": 9,
+      "complete_fixed_marked_rank": 0
+    },
+    {
+      "group": "C3 fixing one",
+      "rank": 4,
+      "orbit_sizes": [
+        1,
+        3
+      ],
+      "fixed_dimension": 9,
+      "generic_fixed_degree": 27,
+      "complete_fixed_marked_rank": 1
+    },
+    {
+      "group": "S3 fixing two",
+      "rank": 5,
+      "orbit_sizes": [
+        1,
+        1,
+        3
+      ],
+      "fixed_dimension": 12,
+      "generic_fixed_degree": 81,
+      "complete_fixed_marked_rank": 2
+    },
+    {
+      "group": "two C3 orbits",
+      "rank": 6,
+      "orbit_sizes": [
+        3,
+        3
+      ],
+      "fixed_dimension": 9,
+      "generic_fixed_degree": 27,
+      "complete_fixed_marked_rank": 0
+    }
+  ],
+  "good_characteristic_controls": [
+    {
+      "rank": 2,
+      "characteristic": 5,
+      "selector_and_empty_fibre": "pass"
+    },
+    {
+      "rank": 3,
+      "characteristic": 7,
+      "selector_and_empty_fibre": "pass"
+    },
+    {
+      "rank": 4,
+      "characteristic": 11,
+      "selector_and_empty_fibre": "pass"
+    }
+  ],
+  "python": "3.12.3",
+  "sympy": "1.14.0",
+  "runtime_seconds": 1.012,
+  "sha256": {
+    "PROOF.md": "5f2177076da7c8ae318258bdbfc39b445e393dbcb4a4dab397c82aeea9ad0da1",
+    "LITERATURE_AND_GAPS.md": "6b2cff2b01fd27895159cad43d957e00a9149e523d4de941a6048b3a810a78e8",
+    "verify.py": "1fd2924a653119f6badf9a89d7dd9f937ac192e2e7740637e9b7bd9819a7bb76",
+    "sources.json": "307de968bc844997205862fc5e63d0e0d475691aa71bc449b75e5e3b56000960"
+  },
+  "assurance": "Exact whole seed fibre ideals, symbolic inverse/unit identities, finite-algebra selectors, literal whole-source Jacobian blocks/covariance/factorization, universal nonsplit quadratic fibre, subgroup orbit controls, and good-characteristic controls. No formalization or independent whole-proof replay of arbitrary-base descent, all-rank receiver, volume functor or atomic-length arguments. The constructed map is explicitly non-atomic. No publication-priority certificate."
+}

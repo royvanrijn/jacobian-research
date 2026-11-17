@@ -1,0 +1,75 @@
+{
+  "scoped_validation": "PASS",
+  "checks": [
+    "HC4MYGL0 schema, source hash, retained evidence, dependencies and assurance",
+    "HC4MYGL1 schema, source hash, retained evidence, dependencies and assurance",
+    "HC4MYGL2 schema, source hash, retained evidence, dependencies and assurance",
+    "broader objective remains open; full q closure has reciprocal scope and dependency references",
+    "eight new and updated method lessons have valid evidence and current reviewed scopes",
+    "WORK-HC4-SCHUR retires full q/r reparameterizations and retains actual remaining gates",
+    "WORK-HC4-RESIDUAL-AUDIT retires full q/r reparameterizations and retains actual remaining gates",
+    "receipt-critical-jet.json current source and dependency pins",
+    "receipt-square-axis.json current source and dependency pins",
+    "receipt-curve-trace.json current source and dependency pins",
+    "receipt-automorphic-trace.json current source and dependency pins",
+    "receipt-first-slice.json current source and dependency pins",
+    "exact primary line theorem, v1 location and byte pin retained separately from application checks",
+    "new proof and maintained entry-point local links"
+  ],
+  "exact_replay_checks": {
+    "receipt-critical-jet.json": 52,
+    "receipt-square-axis.json": 50,
+    "receipt-curve-trace.json": 59,
+    "receipt-automorphic-trace.json": 73,
+    "receipt-first-slice.json": 52
+  },
+  "previous_goal_turn": "Progress: the prior square-axis/fixed-graph proof was revalidated with 50 exact checks before extending the q obstruction.",
+  "new_claims": [
+    "HC4MYGL0",
+    "HC4MYGL1",
+    "HC4MYGL2"
+  ],
+  "written_proof_coverage": [
+    "all three base-projection ranks",
+    "rank-one zero-line injectivity",
+    "rank-two critical coordinate fibre and plane-only source normalization",
+    "preservation of the first-jet class under constant base-linear dual translations",
+    "full origin chain rule and all q/r base and retained-dual automorphisms",
+    "weaker single-specialization hypothesis and characteristic-zero descent"
+  ],
+  "external_mathematical_inputs": [
+    "HC4MYGL0 primary Gwozdziewicz Theorem 1.1 and Lemma 2.3",
+    "HCTANG2 reproduced Tang alternative"
+  ],
+  "generated_views_refreshed": [
+    "index/core.md",
+    "index/hessian.md",
+    "index/README.md",
+    "index/documents.tsv",
+    "knowledge/work/core.md",
+    "knowledge/work/hessian.md",
+    "knowledge/work/plane-jc.md",
+    "STATUS.md"
+  ],
+  "full_registry_validation_failure": "KDSQ6: missing document consumer artifacts/generated-results/README.md",
+  "full_navigation_validation_passed": false,
+  "missing_artifacts_reconstructed": false,
+  "all_q_and_r_base_and_relative_dual_automorphisms_closed": true,
+  "single_specialized_retained_coordinate_pair_sufficient": true,
+  "merely_Keller_specialized_pair_covered": false,
+  "native_p_q_r_graph_charts_closed": true,
+  "nonlinear_p_endpoint_remains_exactly_singleton_zero_problem": true,
+  "singleton_zero_properness_resolved": false,
+  "base_eliminated_charts_closed": false,
+  "arbitrary_nonlinear_base_dual_mixing_closed": false,
+  "general_HC4_or_JC2_resolved": false,
+  "original_goal_complete": false,
+  "final_checks": {
+    "python_compilation": "PASS",
+    "scoped_git_diff_whitespace": "PASS",
+    "new_proof_checker_and_import_whitespace": "PASS",
+    "render_navigation": "FAIL: KDSQ6: missing document consumer artifacts/generated-results/README.md",
+    "check_navigation": "FAIL: KDSQ6: missing document consumer artifacts/generated-results/README.md",
+    "research_check_require_partial_review": "Historical navigation output omitted during repository reorganization."
+  }
+}

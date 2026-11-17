@@ -1,5 +1,0 @@
-__pycache__/
-tmp/
-output/pdf/*.aux
-output/pdf/*.log
-output/pdf/*.out

@@ -1,0 +1,83 @@
+\section{An explicit arithmetic fiber}\label{sec:example}
+
+\input{data/explicit-quintic.tex}
+
+It is useful to watch the general mechanism act on one familiar piece of
+arithmetic.  The example below is not needed for the theorem, but it makes
+the promise of ``preserving the algebra itself'' visible: an everywhere
+locally soluble algebra with no rational point enters the construction and
+emerges as the complete fiber of an explicit Keller map.
+
+Consider the squarefree quintic
+\[
+ P_5(T)=\CAFExplicitPolynomialFactorized
+ =\CAFExplicitPolynomialExpanded.
+\]
+Berend and Bilu introduced this polynomial in their study of polynomials
+having a root modulo every integer \cite{BerendBilu}.
+It has no rational root: the rational-root theorem excludes a root of
+\(T^3-19\), while \(T^2+T+1\) has discriminant \(-3\).  On the other hand,
+\(\Spec\Q[T]/(P_5)\) has a point over every completion of \(\Q\).  The cubic
+factor has a real root.  For a prime
+\(p\notin\{2,3,19\}\), if \(p\equiv2\pmod3\), cubing is an automorphism of
+\(\mathbb F_p^\times\), so \(T^3-19\) has a simple root modulo \(p\); if
+\(p\equiv1\pmod3\), then \(\mathbb F_p^\times\) contains a nontrivial cube
+root of unity, giving a simple root of \(T^2+T+1\).  At the exceptional
+primes, Hensel witnesses are
+\[
+\begin{array}{c|c|c}
+p&\text{factor and approximate root}&\text{check}\\ \hline
+2&T^3-19,\ T=1&-18\equiv0\pmod2,\quad 3\in\mathbb Z_2^*\\
+3&T^3-19,\ T=-2&v_3(-27)=3>2v_3(12)=2\\
+19&T^2+T+1,\ T=7&57\equiv0\pmod{19},\quad15\in\mathbb Z_{19}^*.
+\end{array}
+\]
+
+We now feed this algebra into the formulas above.  No search is needed: the
+translation \(a=0\) is admissible, and
+\[
+ G(S)=P_5(S)-P_5(0)
+ =\CAFExplicitSeed.
+\]
+Thus \((g_1,g_2,g_3,g_4,g_5)=(-19,-19,1,1,1)\).  Put
+\[
+ t=\CAFExplicitT,\qquad q=\CAFExplicitQ,
+\]
+and define \(F=(F_1,F_2,F_3)\) by
+\begin{align}
+ F_1={}&\CAFExplicitFOne,\notag\\
+ F_2={}&\CAFExplicitFTwo,\notag\\
+ F_3={}&\CAFExplicitFThree.
+ \label{eq:explicit-quintic-map}
+\end{align}
+This is the output rescaling
+\(\operatorname{diag}\CAFExplicitIntegralScaling\) of the quadratic-gauge
+map, so
+\[
+ \det DF=\CAFExplicitIntegralJacobian,\qquad
+ \gdeg(F)=\CAFExplicitDegree.
+\]
+At the target \(y=\CAFExplicitIntegralTarget\), whose normalized predecessor
+is \(\CAFExplicitNormalizedTarget\), the inverse equation is
+\[
+ \CAFExplicitInverseIdentity.
+\]
+The squarefree fiber theorem therefore gives
+\[
+ \boxed{F^{-1}(1,0,-38)
+ \simeq\Spec\Q[T]/\bigl((T^3-19)(T^2+T+1)\bigr).}
+\]
+This full Keller fiber has points over \(\mathbb R\) and every
+\(\mathbb Q_p\), but no rational point.  The displayed map, literal fiber,
+rank, finite \'etaleness, and these local and global point statements are
+also included in the Lean development.  Composing \(F\) with the diagonal
+target scaling
+\(\operatorname{diag}\CAFExplicitIntegralToJacobianOneScaling\) gives
+determinant \(\CAFExplicitJacobianOneJacobian\) and sends the target to
+\(\CAFExplicitJacobianOneTarget\).
+The displayed coefficients, inverse identity, scalings, and targets in this
+section are generated from one JSON specification.  The Lean correspondence
+theorems compare the generated definitions with the formal map and inverse
+definitions literally, rather than checking only the resulting Jacobian and
+fiber claims.  Thus the example is both a piece of the story and an exact
+regression of the general construction.

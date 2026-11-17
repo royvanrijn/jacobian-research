@@ -1,0 +1,106 @@
+{
+  "review_date": "2026-11-16",
+  "retained_structural_inputs": [
+    {
+      "claim": "HC4MYKU0",
+      "canonical_source": "hessian/hc4-triangular-graphs/CANONICAL_TRACE_DUAL_ETALE_RECONSTRUCTION.md"
+    },
+    {
+      "claim": "HC4MYKU1",
+      "canonical_source": "hessian/hc4-triangular-graphs/CANONICAL_TRACE_DUAL_ETALE_RECONSTRUCTION.md"
+    },
+    {
+      "claim": "HC4MYKN0",
+      "canonical_source": "hessian/hc4-triangular-graphs/CANONICAL_BOUNDARY_AND_STABLE_COMPLETE_INTERSECTION_OBSTRUCTION.md"
+    },
+    {
+      "claim": "HC4MYKN1",
+      "canonical_source": "hessian/hc4-triangular-graphs/CANONICAL_BOUNDARY_AND_STABLE_COMPLETE_INTERSECTION_OBSTRUCTION.md"
+    },
+    {
+      "claim": "HC4MYKO0",
+      "canonical_source": "hessian/hc4-triangular-graphs/WHOLE_SOURCE_POWER_TRACES_AND_DIFFERENTIAL_SPLITTING.md"
+    },
+    {
+      "claim": "HC4MYLX0",
+      "canonical_source": "hessian/hc4-triangular-graphs/NAMBU_SOBOLEV_LATTICE_AND_FINITE_DERIVATIVE_CORE.md"
+    },
+    {
+      "claim": "HC4MYLX1",
+      "canonical_source": "hessian/hc4-triangular-graphs/NAMBU_SOBOLEV_LATTICE_AND_FINITE_DERIVATIVE_CORE.md"
+    },
+    {
+      "claim": "HC4MYLW1",
+      "canonical_source": "hessian/hc4-triangular-graphs/BERGMAN_TRACE_DUAL_AND_MULTIPLIER_DOMAIN_RIGIDITY.md"
+    },
+    {
+      "claim": "HC4MYKR2",
+      "canonical_source": "hessian/hc4-triangular-graphs/QUADRATIC_SOURCE_RECONSTRUCTION_AND_QUARTIC_RETIREMENT.md"
+    },
+    {
+      "claim": "HC4MYKR0",
+      "canonical_source": "hessian/hc4-triangular-graphs/QUADRATIC_SOURCE_RECONSTRUCTION_AND_QUARTIC_RETIREMENT.md"
+    },
+    {
+      "claim": "HCTANG2",
+      "canonical_source": "hessian/tang-hc4-audit/STRUCTURAL_REVIEW.md"
+    }
+  ],
+  "retained_proof_and_source_sha256": {
+    "hessian/hc4-triangular-graphs/CANONICAL_TRACE_DUAL_ETALE_RECONSTRUCTION.md": "fef1bc4871537c9d073c424c9dbbd4f0296dd287728a0724c9101c5a7b5cf3c2",
+    "hessian/hc4-triangular-graphs/verify_canonical_etale_reconstruction.py": "ad7d5b53096780353298ee052c9ac4341d0eced2b7194c5c83c397c19af91b4f",
+    "hessian/hc4-triangular-graphs/CANONICAL_BOUNDARY_AND_STABLE_COMPLETE_INTERSECTION_OBSTRUCTION.md": "679c5f12083b9cdc657650417315c3e881974aee62c6a372c725d6d8193b657c",
+    "hessian/hc4-triangular-graphs/verify_canonical_boundary.py": "94379f2cbb83cfd80ad374b13538391fbdc6b6c9fce997e6917f53e7f667f801",
+    "hessian/hc4-triangular-graphs/WHOLE_SOURCE_POWER_TRACES_AND_DIFFERENTIAL_SPLITTING.md": "ddd638989f0ed8807e4298e3e02fe0e72db4040dbefb22e5cb5ca8d11f9d38a9",
+    "hessian/hc4-triangular-graphs/verify_whole_source_traces.py": "aff5777ba2cd9ecaee1271884e73db74c185e1db04c36fef2a2c4a62d22f0a37",
+    "hessian/hc4-triangular-graphs/NAMBU_SOBOLEV_LATTICE_AND_FINITE_DERIVATIVE_CORE.md": "f710c95fd5d7d4a8e6aa0dd49f5db53988b9672869beb488103b0347d5191dd1",
+    "hessian/hc4-triangular-graphs/verify_nambu_sobolev_core.py": "81a02f0c127942a240dede4337f991bcbb616730dc8261ef47a57fe9f99f7270",
+    "hessian/hc4-triangular-graphs/BERGMAN_TRACE_DUAL_AND_MULTIPLIER_DOMAIN_RIGIDITY.md": "87836ffc272fa0737ae594f59908f2fb3ef029870ca143408460cbc69c6ce11a",
+    "hessian/hc4-triangular-graphs/verify_bergman_trace_dual.py": "06206d63a5357b30ffd4ad182f1eda9e027fe579a4634935d914a5a0361bf35e",
+    "hessian/hc4-triangular-graphs/QUADRATIC_SOURCE_RECONSTRUCTION_AND_QUARTIC_RETIREMENT.md": "c45fe8fb1c9f0eabfa8bfef32e30b96e71834ee68609e59069e8fb9039034eca",
+    "hessian/hc4-triangular-graphs/verify_quadratic_reconstruction.py": "0494f04ada75cf1cb7859bb1d86e63ea0259a6ce4e838ab4678276098d93c49f",
+    "hessian/tang-hc4-audit/STRUCTURAL_REVIEW.md": "26a6a76eb579de05b8e71245b8b804bdd5f036602f2e3e6ad5d036fd9f5cd572",
+    "hessian/tang-hc4-audit/verify_structural.py": "23e87f797b4d086ede8195773092dcd42d705258ec57c05920731e87e0ce9b2d"
+  },
+  "scope_flags": {
+    "full_goal_active": true,
+    "previous_goal_turn_progress": true,
+    "global_perfect_trace_linking_proved": true,
+    "half_ramification_reflexive_lattices_base_projective_proved": true,
+    "canonical_residual_linking_supported_only_at_even_indices": true,
+    "odd_S_stable_selfdual_lattice_uniqueness_proved": true,
+    "nonzero_odd_metabolic_linking_controls_supplied": true,
+    "cubic_trace_multiplication_criterion_proved": true,
+    "conditional_actual_odd_three_moment_witness_proved": true,
+    "constant_Gram_Laurent_half_lattice_controls_supplied": true,
+    "external_review_deferred": true,
+    "Witt_class_zero_identified_with_zero_discriminant_module": false,
+    "arbitrary_non_S_stable_selfdual_B_lattices_classified": false,
+    "B_trace_selfduality_identified_with_S_canonical_torsion": false,
+    "actual_all_odd_Keller_failure_constructed": false,
+    "actual_cubic_trace_regularity_proved_automatic": false,
+    "full_finite_codifferent_pairing_proved_regular": false,
+    "even_or_mixed_branch_indices_excluded": false,
+    "new_Laurent_control_is_whole_plane_Keller": false,
+    "new_external_theorem_imported": false,
+    "Miyanishi_odd_plane_theorem_adopted": false,
+    "registered_mathematical_checker_replayed": false,
+    "unrestricted_HC4_or_JC2_resolved": false,
+    "independent_replay": false,
+    "formal_verification": false,
+    "external_review": false
+  },
+  "external_imports": [],
+  "new_primary_caches": [],
+  "literature_context_only": [
+    {
+      "url": "https://www.numdam.org/item/JTNB_2000__12_2_597_0/",
+      "inspection": "Primary metadata and abstract read. Classical square-root codifferent trace form and odd tame covers credited. Cohomological formulas/SNC/Galois/invertibility claims NOT imported;full64page paper not read."
+    },
+    {
+      "url": "https://arxiv.org/abs/1803.09392v6",
+      "inspection": "Primary metadata and abstract read,including revised arithmetic conjecture boundary. No normal-basis/Galois-module/class formula imported or full-paper inspection claimed."
+    }
+  ],
+  "proof_boundary": "Global projective-lifting linking proof and reflexive surface half-lattice construction written directly with retained KU/KN duality/depth inputs. Natural S-stable selfdual class distinguished from arbitrary B-lattice mixing. Cubic criterion uses actual field multiplication. No Witt class or halfcanonical torsion shortcut adopted. New finite controls do not certify universal proofs or replay retained checkers."
+}

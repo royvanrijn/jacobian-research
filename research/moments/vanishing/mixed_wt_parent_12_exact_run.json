@@ -1,0 +1,12 @@
+{
+  "input": "/home/royvanrijn/src/jacobian-research/research/moments/vanishing/mixed_wt_parent_12.sing",
+  "field": "Q(a)",
+  "timeout_seconds": 60,
+  "address_space_limit_MiB": 768,
+  "process_state": "terminal_timeout",
+  "exit_code": null,
+  "elapsed_seconds": 60.02492285199696,
+  "input_sha256": "cca0002c66f701b3cdbe4bbcaba7e831897e4d36505961657c00a4e05d2f54f5",
+  "log_sha256": "4ed92815b843e3ab94ce399f79b6e3a70c80e4cf046db04c1b931f5ba5027432",
+  "mathematical_status": "UNKNOWN unless the retained log contains a completed exact unit and all input substitutions are verified."
+}

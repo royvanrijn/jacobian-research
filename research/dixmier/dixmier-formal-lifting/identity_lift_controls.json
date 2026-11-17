@@ -1,0 +1,37 @@
+{
+  "claim": "QNI1",
+  "status": "PASS",
+  "normalized_tangent_identity_and_jacobian": true,
+  "inverse_Jacobian_column_degrees": [
+    11,
+    9,
+    8
+  ],
+  "full_relations_as_polynomial_t_identities": 15,
+  "forward_generator_spatial_degrees": [
+    4,
+    6,
+    7,
+    12,
+    10,
+    9
+  ],
+  "uniform_forward_bound": 12,
+  "scaled_rational_collision_points": 3,
+  "first_Hamiltonian": "3*p2*x*z + 4*p3*y**2",
+  "parameter_scope": "Relations hold for independent t and Weyl h. Specializing t=h^N gives the family for every N>=1; N>=2 also ensures h-adic unit innerness.",
+  "coverage_boundary": "Exact polynomial-family identities and the retained collision are checked. Generic nonsurjectivity, all-degree inverse nontermination, formal graph equivalence, failure of universal bounded comparison and DC_n=>P_n=>JC_n use written proofs. The extension is not independently replayed or formally verified; no rank-two counterexample is produced.",
+  "independent_replay": false,
+  "formal_verification": false,
+  "external_review": false,
+  "hashes": {
+    "IDENTITY_LIFTS_AND_UNBOUNDED_INVERSES.md": "d6438f6730204ef55411826b9583b0194829534f4e8db25b68101a3014476bb4",
+    "check_identity_lifts.py": "50f6d8689ddce6abf1058983d6690692990c517c6ef1de2fd4b4a28f7638d67e"
+  },
+  "retained_input": {
+    "claim": "F1",
+    "path": "foundations/scripts/verify_counterexample_independent.py",
+    "sha256": "7ee27ca8dea223b2db1927e3bcc928a22410fa3d92a279fe9f51bcb755ac6c11",
+    "scope": "Imports the retained exact map and rational collision; importing replays its small sparse determinant control. This extension does not inherit F1's formal-verification status."
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "record": "https://zenodo.org/records/21534699",
+  "retrieved": "2026-11-17",
+  "files": [
+    {
+      "file": "gaussian-moments-two-variables.pdf",
+      "md5": "7dd85cb38462419419dd750644f3f9d1",
+      "sha256": "ff0ea8fc1bb50381b4a69414beb2e1e1f696fa8ba50072709ff974e892373c72"
+    },
+    {
+      "file": "arxiv-upload.zip",
+      "md5": "a84ceff67a69a92b44152f906273a668",
+      "sha256": "b839433d967025d03f0c08d77b920eee53c5421cbf6aa0bb736827b3c80398e2"
+    },
+    {
+      "file": "GMC2-lean.zip",
+      "md5": "2089b028e6bdb0d26ef2c9ee139e01a8",
+      "sha256": "7ca84b9690791cf2ee18fe4fbf3dfc5505d0d1c7950c53a0a47cbe1485e8d3e1"
+    }
+  ]
+}

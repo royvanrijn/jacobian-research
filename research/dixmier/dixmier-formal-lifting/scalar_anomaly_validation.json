@@ -1,0 +1,23 @@
+{
+  "claim": "QCL1",
+  "status": "SCOPED_PASS",
+  "claim_schema_sources_hashes_and_consumers": "PASS",
+  "new_method_and_scope_reviews": "PASS",
+  "work_destination_and_scope_reviews": "PASS",
+  "exact_Moyal_and_matrix_control_receipt": "PASS",
+  "python_compile": "PASS",
+  "changed_tracked_files_diff_check": "PASS",
+  "local_markdown_links_checked": 122,
+  "status_renderer": {
+    "exit_code": 1,
+    "result": "AssertionError: KDSQ6: missing document consumer artifacts/generated-results/README.md"
+  },
+  "navigation_renderer": {
+    "exit_code": 1,
+    "result": "Historical navigation output omitted during repository reorganization."
+  },
+  "proof_sha256": "f5393170157dd74f26fd489b97ed35d3da718cbd881af630fcc5487cdef3c14e",
+  "boundary": "Universal all-rank scalar-anomaly and cubic bounded lifting, all-degree homogeneous symplectic inversion, and cotangent degree growth are written proofs with exact controls. No noninvertible cubic symplectic map, scalar-anomaly representative of Long, common bound for Long, independent theorem replay, external review, formal verification or DC2 solution.",
+  "previous_goal_turn": "progress: QHI1 established an all-rank right-symbol criterion and an all-degree idealizer exclusion with unbounded partner degree",
+  "goal_status": "active"
+}

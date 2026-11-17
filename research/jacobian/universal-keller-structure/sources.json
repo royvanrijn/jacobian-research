@@ -1,0 +1,34 @@
+{
+  "schema_version": 1,
+  "purpose": "Pins canonical imported compiler and atomicity proofs; scopes the classical monodromy result and its correction. No novelty-priority or independent-replay claim.",
+  "local_sources": [
+    {
+      "path": "jacobian/universal-keller-receiver/PROOF.md",
+      "sha256": "8790916cd2c5e3f0458674dc50a37af18f1c1322eb2720c2071a819283cf639f"
+    },
+    {
+      "path": "jacobian/universal-keller-trace/PROOF.md",
+      "sha256": "aaebb6eb315c569068f3064fb19bc217da514c3b2ff725b13cd05b785c5ae2c2"
+    },
+    {
+      "path": "foundations/verified/UNIVERSAL_RELATIVE_KELLER_MAP.md",
+      "sha256": "4cced623c100a90859996e5aea69219a241c56c20ca087f1a9d4caa50209c1c5"
+    },
+    {
+      "path": "foundations/verified/PRIMITIVE_MONODROMY_ATOMICITY.md",
+      "sha256": "baac592016eef8ff4874081310826dd845f629c98bbd7dc0f3899e6ca697836f"
+    }
+  ],
+  "external_sources": [
+    {
+      "title": "S. D. Cohen, The Galois group of a polynomial with two indeterminate coefficients (1980)",
+      "url": "https://msp.org/pjm/1980/90-1/pjm-v90-n1-p07-s.pdf",
+      "scope": "Theorem1 and Lemma4: quadratic-tilt S_N specialization. Residue-one linear coefficient ensures independence from 1 and S^2 over K(S^p) for every odd p."
+    },
+    {
+      "title": "Cohen, Corrections to The Galois group of a polynomial with two indeterminate coefficients (1981)",
+      "url": "https://msp.org/pjm/1981/97-2/pjm-v97-n2-p22-s.pdf",
+      "scope": "Page483 explicitly retains Theorem1; other original assertions required wild-ramification corrections. We use only a tame double-root inertia."
+    }
+  ]
+}

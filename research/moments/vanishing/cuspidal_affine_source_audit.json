@@ -1,0 +1,116 @@
+{
+  "date": "2026-11-14",
+  "claim": "G3CUSPALL20261114",
+  "canonical_source": "moments/vanishing/CUSPIDAL_AFFINE_EXCLUSION.md",
+  "inputs": {
+    "cuspidal_linear_normal_form": "moments/vanishing/CUSPIDAL_CUBIC_SHARP_THRESHOLD.md",
+    "W_linear_frame_and_GMC": "moments/vanishing/RANK_ONE_WT2_CLASSIFICATION.md",
+    "coercive_Gaussian_exclusion": "moments/vanishing/COERCIVE_GRADIENT_MOMENTS.md",
+    "rational_seed_quotient_and_formal_power_characters": "moments/vanishing/NODAL_FORMAL_FRAME.md"
+  },
+  "retained_receipts": {
+    "cuspidal_cubic_threshold_verification.json": "807595bb8f0bd3a9160b46d4451e9b4fecac4d1f211c124cea35e062ba876611",
+    "rank_one_wt2_verification.json": "1590f52f27566b12ba115f73951c6aa563197106abe85ed3dcaed8a7d00f93a9",
+    "nodal_formal_frame_verification.json": "95f95d166d1a31a83226ad51e0c66bd495e1f3e70251d325bdf363a6727d0de5"
+  },
+  "new_method": "A full formal frame gives a semisimple module after ramification. A trivial quotient on the seed submodule extends to the full formal module. Nonzero exponential factors have no horizontal map to the base trivial module; if every zero-exponential scalar seed value has positive local-parameter valuation, no extension can take the seed to1. This handles integer exponents as well as noninteger ones. Fixed polynomial phase blocks are lifted by the coefficientwise conjugacy ell(exp(F_r-F0)*a), yielding formally trivial blocks and an invertible leading matrix without assuming Morse critical points.",
+  "new_geometry": "Cuspidal affine normal form T*(u^2+gamma*v+h)+v^3+buv+eu+fv+k retains full Q. The nonisotropic Gaussian phase has length2 at projective infinity and affine/twisted rank6. Seven parameter profiles, including fixed quartic/cubic blocks and multiscale Morse groups, exhaust rank6. Every zero-exponential seed prefactor is t^-1, t^-5/6 or a positive finite A_mu character. No arbitrary fixed phase or infinity contribution is omitted.",
+  "exact_evidence": {
+    "checker_sha256": "5bf0729729291edab9d547205422de16eb78148a2b4a47d481a0d52485ecd734",
+    "profiles": [
+      {
+        "chart": "gamma!=0",
+        "finite_rank": 5,
+        "escape_rank": 1,
+        "zero_exponential_seed_powers": "1+j/(mu+1)>0;1<=mu<=5",
+        "escape_action": "gamma^6/(54*m^3)*t^4",
+        "escape_prefactor": "t^-5/2"
+      },
+      {
+        "chart": "gamma=0,h!=0",
+        "finite_rank": 4,
+        "escape_rank": 2,
+        "zero_exponential_seed_powers": "1+j/(mu+1)>0;mu<=2",
+        "escape_action": "h^2/(2*m)*t^2",
+        "escape_prefactor": "t^(-1-j/d),d=2 or3"
+      },
+      {
+        "chart": "gamma=h=0,f!=0",
+        "groups": [
+          3,
+          3
+        ],
+        "zero_exponential_seed_powers": "t^-1 for each L(v_i)=b*v_i+e=0 center group",
+        "escape_action": "alpha_i*t+3*L(v_i)*U_i/4*t^(2/3) when L(v_i)!=0",
+        "escape_prefactor": "t^-7/6"
+      },
+      {
+        "chart": "gamma=h=f=0,e*b!=0",
+        "finite_rank": 0,
+        "escape_rank": 6,
+        "zero_exponential_seed_powers": null,
+        "escape_action": "3*e*U_i/4*t^(2/3), followed by a V_i^3*t^(1/2) term",
+        "escape_prefactor": "t^-13/12"
+      },
+      {
+        "chart": "gamma=h=f=b=0,e!=0",
+        "groups": [
+          2,
+          2,
+          2
+        ],
+        "zero_exponential_seed_powers": null,
+        "escape_action": "3*e*U_i/4*t^(2/3)",
+        "escape_prefactor": "t^-1"
+      },
+      {
+        "chart": "gamma=h=f=e=0,b!=0",
+        "center_rank": 1,
+        "escape_rank": 5,
+        "zero_exponential_seed_powers": "t^-1 for the origin group",
+        "escape_action": "-5*V_i^3/4*t^(2/5)",
+        "escape_prefactor": "t^-1"
+      },
+      {
+        "chart": "gamma=h=f=e=b=0",
+        "center_rank": 6,
+        "escape_rank": 0,
+        "zero_exponential_seed_powers": "t^-5/6",
+        "fixed_phase_rank": 6
+      }
+    ],
+    "positive_seed_powers": [
+      "1",
+      "5/6",
+      "3/2",
+      "4/3",
+      "5/3",
+      "5/4",
+      "3/2",
+      "7/4",
+      "6/5",
+      "7/5",
+      "8/5",
+      "9/5",
+      "7/6",
+      "4/3",
+      "3/2",
+      "5/3",
+      "11/6"
+    ]
+  },
+  "literature_check": {
+    "queries": [
+      "cuspidal Gaussian moments cubic",
+      "exponential Gauss-Manin cusp polynomial"
+    ],
+    "scope": "Targeted nonexhaustive search on14 November2026 returned similarly named automorphic Gaussian-moment questions and unrelated cusp material; no external affine cuspidal GMC theorem was imported. The prior primary latest-version audit remains in nodal_formal_frame_source_audit.json.",
+    "external_formal_import": "None for the new formal seed-valuation or perturbation lemmas. The product-rule conjugacy, leading-degree fixed quotient calculation, formal implicit Gaussian construction and frame valuations are proved in the canonical note."
+  },
+  "assurance_boundary": "Exact critical-profile, rescaling, action/Hessian and fixed-phase completion identities, rank arithmetic and positivity. Full formal frames, seed quotient extension, formal perturbation and the all-parameter coverage are written mathematics, not machine verified.",
+  "pure_vs_GMC_boundary": "Nonisotropic cusp or F2(cusp)!=0: pure-nonvanishing proved. Isotropic cusp with F2(cusp)=0: retained W-linear GMC safety, not a separately asserted full pure-null exclusion in this note.",
+  "remaining": "General nonhomogeneous reducible-leading cubic GMC, including repeated lines; uniform numerical pure gates; coefficient schemes and lower-power GVC; independent review/formalization.",
+  "independent_replay": false,
+  "external_review": false,
+  "formal_verification": false
+}

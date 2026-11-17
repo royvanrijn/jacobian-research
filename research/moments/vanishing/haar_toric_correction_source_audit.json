@@ -1,0 +1,64 @@
+{
+  "date": "2026-11-16",
+  "canonical_proof": "moments/vanishing/ACTUAL_TORUS_CORRECTIONS_AND_RAMIFIED_COMPONENT_VALUATIONS.md",
+  "proof_sha256": "772248620bb00e6e8c294ac560f5204bc9e056dc53d5a7d3bbaec8734de9d09d",
+  "checker": "moments/vanishing/verify_haar_toric_correction.py",
+  "checker_sha256": "50f82b0141b1412d9b2a14e99703d8d337e13a4670fb5811a827ab8ef939a61a",
+  "receipt": "moments/vanishing/haar_toric_correction_verification.json",
+  "receipt_sha256": "f8f6af5ee6dead67952c1a8c8d461ae71d1b256c8a9863420939644b17e325ea",
+  "repository_sources": [
+    {
+      "source": "moments/vanishing/LOCAL_TATE_NORMAL_FORM_AND_NERON_COMPONENTS.md",
+      "sha256": "3302c75eaed598be93d584a842cdddd9ebbaa87381871cf2d1cf6b1574dcd192",
+      "use": "Full reducedxi/componenttorsion criterion,rationalfinitecoverreflection andrankexcess. CorrectedHN propositions now realizecomponentinACTUALgeneric torus,notarbitrarysplitcoordinates."
+    },
+    {
+      "source": "moments/vanishing/FULL_INTRINSIC_LOCAL_TATE_CRITERION.md",
+      "sha256": "a5d4f1b2640023a4db6af70bc88a597f6352b17a6d794f50e1f8c8b37aa65922",
+      "use": "Fullsafetyunderpurity iffONEreducedlocalxi0;allgenuinegenus/actualkernelbranchesclosed."
+    },
+    {
+      "source": "moments/vanishing/ALGEBRAIC_BOUNDARY_ONE_MOTIVE_AND_CONSTANT_SECTION.md",
+      "sha256": "cf4fcb2518648d65967b380ed1a7c608218c9614e34e0321a96811278659bdcb",
+      "use": "ACTUALgeometric[Z->G],sigma,entiresemiabelianextension;everyH Weilrestriction/DIAGONALlattice/allbranches. No relativeequivalenceassumed."
+    },
+    {
+      "source": "moments/vanishing/UNIPOTENT_HAAR_EXTENSIONS_AND_GENERAL_RECOMPOSITION.md",
+      "sha256": "beac9f1af54c16ad746b2dd527ca9bc2526a742459bab75871d721682a077c4d",
+      "use": "IntrinsiccoinvariantallHfactor1. Newnormalizedsplitcocharv/e_a repeats e_a times;cycleSUMrecoversfactor1,notconflictingfactorformula."
+    },
+    {
+      "source": "moments/vanishing/COHOMOLOGICAL_PULLBACK_AND_A_UNIFORM_ORIGINAL_MARKER.md",
+      "sha256": "d5e88b14fefd865b3b1b1b918efc2160209545d56c077c866e7666980f5562e6",
+      "use": "Actualinvariantallb controlsnonzeroat0,-1,purityessential;ONEuniformmarkerallH remains. No pureproducer orfamilyreplacement."
+    }
+  ],
+  "primary_sources": [
+    {
+      "author": "Lars Halvard Halle and Johannes Nicaise",
+      "title": "Neron models and base change,arXiv1209.5556v1,2012 preprint numbering",
+      "url": "https://arxiv.org/pdf/1209.5556v1",
+      "cached_file": "moments/vanishing/sources/halle_nicaise_12095556v1_2012.pdf",
+      "sha256": "5a7041bac77306c46b8c8f4f9f08170b23636ff82184653c49590abe494144b2",
+      "read": "Fresh PDF45-46 completeChapter4Prop1.1.3 statement/proof anderratumdiscussion;PDF56-57 completeProp3.3.1 statement/proof. PDF46,56,57 rendered/visuallychecked. PDF18-19 splitrankLemma2.2.3,PDF20-23 Neronexistence/components/torus3.4.3-5/basechange read. Not entire119-page monograph or allBLR/Chaiinputs independently reproved.",
+      "exact_import": "CORRECTED identityR-pointsurjectivity andexactPhiT->PhiG->PhiA->0 withTORSIONkernel. ForactualsplitT,freePhiT givesinjectionfinitecokernel. SplitPhiT=cocharsviacharacterorders;torusbasechangeordscalesramification. Ch2.3.1.5 maximalquasicompactmodeltorsioncomponents. Ch4.1.1 explicitlyREPLACES flawedBX96Lemma4.2;weimportcorrectedpropositions,notoldlemma. NO goodabelianreduction,splitG,orstrict1motivehypothesis."
+    }
+  ],
+  "background_lead": {
+    "source": "jacobian/cross-programme-connections/EXCEPTIONAL_COMPONENT_GAP_RESOURCES_2026_11_16.tex",
+    "sha256": "06307876afeeaef41b64adfda976f6e0e2d9173c4fffedc87a3e5a7ab1fb0ed5",
+    "use": "Crossprogrammehandoff identifiedcorrectedHN propositions andbasicidentity-lift correction;not anindependentreview/proofdependency. Primarypropositionsfreshlychecked;normalization/inertia/allHdeductionswrittenhere."
+  },
+  "new_written_arguments": [
+    "ActualsplitT:injectivePhiT->PhiGfinitecokernelPhiA. Choose n killingabeliancomponent,lift[n]pi(sigma) to b inG0R byCORRECTEDsurjectivity. t=[n]sigma-b inACTUALT,vectorval(t)/n. DifferenceofliftsliesT intersectG0R,whosevaluation0byinjection;commonmultiplesgiveindependencen/additivity. Vectorzero iffcomponenttorsion iffcorrectedcharactersALLunits,notsectiontorsion/identitywithoutmultiple.",
+    "FornonsplitT splitoverz=u^e,useval_u(t)/(e*n). Furtherbasechange scalesrawordersandremainsidentitylift,so normalizedvectorindependent. Galoisb andb liftSAMEabelianpoint,differencehaszeroTvaluation;vectorI-invariant. RetainedfinitecoverreflectiongivesinjectivityonPhiGQ;invariantcocharslambda descendandlambda(z)realizesthem,soPhiGQ canonicallyI-invariantcocharspace. GenericT notspecialfibretorusfromabeliandegeneration.",
+    "Under eventualpurity FULL allsafetyiff ALL correctedcharacterorders0at0,forEVERYphase,arbitrarydegeneratinggenus/nonsplitG. Thisconcretizeswholeexceptionaltargetwithoutprovingpurityforcesorders0. Maxquasicompactmodelboundednessretainsfinitecomponenttorsion.",
+    "EveryH,rootmultiplicitye_a,commonsplittingcoverr=u^E hasord_u(s-a)=E/e_a. ActualWeilrestrictiontoruscorrectionscanuseallprimitiveidentitylifts,so normalizedsplitcocharvector has e_a copiesv_a/e_a. Within-cycleSUMrecoversv_a andtheexistingintrinsicfactor1. Differentroots/directionsremainseparate,no scalarNorm. AllpureHcriterionretained,noprimitivepurityproducer."
+  ],
+  "essential_boundaries": [
+    "Both COMPLETE exceptional MZcasesOPEN. No actualpurity=>correctedorders0 implication proved,no newpureproducer.",
+    "UseACTUALtorussubgroupafterabelianidentitycorrection;charactersneednotextendG;notfictitioussplitGorNeronspecialtorus.",
+    "HNcorrectedpropositionsimported;noflawedBXlemma,strictmotivepotentialgoodhyp,rididuniformizingcoveralgebraicityinference.",
+    "No generalNeron/Picardidentityliftproducer,arbitraryringpromotion,newdegreecampaign,universal machineproof/reviewgate. ALLHnormalized1/e andintrinsiccycle1distinct."
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "claim": "QEI1",
+  "status": "SCOPED_PASS",
+  "claim_schema_sources_hashes_and_consumers": "PASS",
+  "new_and_changed_methods_and_scope_reviews": "PASS",
+  "work_destination_and_scope_reviews": "PASS",
+  "retained_Long_QPA1_QHR1_receipt_chain": "PASS",
+  "isogeny_quantum_normalizer_and_oscillator_controls": "PASS",
+  "python_compile": "PASS",
+  "changed_files_diff_check": "PASS",
+  "local_markdown_links_checked": 165,
+  "unique_equation_labels": 14,
+  "proof_sha256": "e1a4004e24f868f89a1598c2e05c5a31d73345597e9d8fe431b7ef7cab45f577",
+  "checker_sha256": "9714becf04d58984f2004bc738f867d701201e9fe16982fa179cbd4d6fc43c95",
+  "proof_boundary": "Finite exact identities only. The isogeny interpretation, polynomial centralizer and commutator quotient, full source normalizer, all-degree finite bounds, stabilizer rigidity, forced Long energy-order jump and formal unboundedness use written proofs. No bounded full quantum lift or all-order nonlifting theorem is certified.",
+  "independent_replay": false,
+  "formal_verification": false,
+  "external_review": false,
+  "previous_goal_turn": "progress: QHR1 established elliptic Hamiltonian rigidity and the stable obstruction to every polynomial canonical cotangent normal form",
+  "goal_status": "active",
+  "status_renderer": {
+    "exit_code": 1,
+    "result": "AssertionError: KDSQ6: missing document consumer artifacts/generated-results/README.md"
+  },
+  "navigation_renderer": {
+    "exit_code": 1,
+    "result": "Historical navigation output omitted during repository reorganization."
+  }
+}

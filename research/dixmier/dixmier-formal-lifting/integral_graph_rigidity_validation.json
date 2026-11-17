@@ -1,0 +1,50 @@
+{
+  "claim": "QIR1",
+  "scoped_status": "PASS",
+  "scope_fingerprint": "e2dd37445b47ac77",
+  "schema_dependencies_hashes_consumers": "PASS",
+  "seven_affected_methods_and_existing_work_reviews": "PASS",
+  "local_links_checked": 289,
+  "unique_equation_tags": 14,
+  "py_compile": "PASS",
+  "changed_tracked_diff_check": "PASS",
+  "exact_controls_receipt_sha256": "4437c1cd2dd04594f4ea197d2c67218ce7c728e127c76caa3c8454b2aba8abaa",
+  "unchanged_upstream_control_hashes_checked": {
+    "matrix_carrier_controls.json": 6,
+    "projective_frame_controls.json": 2,
+    "ramified_closure_carrier_controls.json": 11
+  },
+  "global_checks": [
+    {
+      "command": ".venv/bin/python research/scripts/render_status.py --check",
+      "exit_code": 1,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/home/royvanrijn/src/jacobian-research/research/scripts/render_status.py\", line 514, in <module>\n    main()\n  File \"/home/royvanrijn/src/jacobian-research/research/scripts/render_status.py\", line 503, in main\n    validate_index(index)\n  File \"/home/royvanrijn/src/jacobian-research/research/scripts/render_status.py\", line 360, in validate_index\n    assert consumer_path.is_file(), (\n           ^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: KDSQ6: missing document consumer artifacts/generated-results/README.md\n"
+    },
+    {
+      "command": ".venv/bin/python research/scripts/research.py render",
+      "exit_code": 1,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/home/royvanrijn/src/jacobian-research/research/scripts/research.py\", line 563, in <module>\n    raise SystemExit(main())\n                     ^^^^^^\n  File \"/home/royvanrijn/src/jacobian-research/research/scripts/research.py\", line 440, in main\n    validate_lessons(items, entries, check_reviews=args.command == \"check\")\n  File \"/home/royvanrijn/src/jacobian-research/research/scripts/research.py\", line 130, in validate_lessons\n    assert (ROOT / p).is_file(), f\"{item['id']}: missing source {p}\"\n           ^^^^^^^^^^^^^^^^^^^^"
+    }
+  ],
+  "research_context": [
+    {
+      "source": "https://arxiv.org/html/2610.33919v1",
+      "used": "Lemma3.1 generic finite-left Weyl bimodule projectivity. No arithmetic-support nonlifting hypothesis is imported."
+    },
+    {
+      "source": "https://arxiv.org/abs/math/0104248",
+      "used": "Rank-one ideal geometry motivates distinguishing a fixed rational action from formal lattice data; no A1 classification is transferred to higher rank."
+    }
+  ],
+  "previous_goal_turn": {
+    "classification": "no progress",
+    "evidence": "The preceding user-requested orientation reviewed current sources and explained goals and gaps; it did not change authoritative mathematical state or establish a new theorem.",
+    "next_action_taken": "Revalidated the current QPF1/QHI1/QMC1/QGC1 boundaries and the primary generic-projectivity lemma. Derived integral projectivity, a normalized finite-corner equivalence, uniqueness of full generic lattices, automatic rank-one scalar graph correction at every ramification order, and central homothety of integral graph lattices for a fixed rational action."
+  },
+  "proof_boundary": "Generic projectivity is the stated external finite-left Weyl bimodule theorem. Central-fiber gluing, elementary stabilization, torsion-quotient rigidity, scalar sub-quantum correction and logarithmic Hamiltonian divisibility are written universal proofs. The controls verify polynomial matrix inverses and all six corner relations for independent h,t, ramified positive examples and a partial-action boundary. No generic scalar free frame follows from projectivity. Lattice uniqueness fixes the rational full action and does not compare arbitrary formal gauges or establish finite-carrier existence. Scalar correction uses a free rank-one special graph and does not apply automatically to special torsion or higher-rank closure models. No Long carrier, bounded scalar lift, all-representative nonlifting or DC2/JC2 solution is asserted.",
+  "independent_replay": false,
+  "formal_verification": false,
+  "external_review": false
+}

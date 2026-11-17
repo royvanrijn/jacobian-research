@@ -1,0 +1,120 @@
+{
+  "review_date": "2026-11-16",
+  "retained_structural_inputs": [
+    {
+      "claim": "HC4MYKY0",
+      "canonical_source": "hessian/hc4-triangular-graphs/TARGET_BOUNDARY_SYMMETRY_AND_FINITE_STABILIZER.md"
+    },
+    {
+      "claim": "HC4MYKY1",
+      "canonical_source": "hessian/hc4-triangular-graphs/TARGET_BOUNDARY_SYMMETRY_AND_FINITE_STABILIZER.md"
+    },
+    {
+      "claim": "HC4MYKX0",
+      "canonical_source": "hessian/hc4-triangular-graphs/ALGEBRAIC_FLOW_DESCENT_AND_INTEGRAL_COORDINATES.md"
+    },
+    {
+      "claim": "PF2RULED52",
+      "canonical_source": "jacobian/affine-complements/SOURCE_SYMMETRY_DESCENT_AND_TRACE_GATE.md"
+    },
+    {
+      "claim": "HC4MYHW0",
+      "canonical_source": "hessian/hc4-triangular-graphs/ABELIAN_CLASSGROUP_OUTPUT_OBSTRUCTION.md"
+    },
+    {
+      "claim": "PF2OMIT3",
+      "canonical_source": "jacobian/jc2-omitted-divisors/ADMISSIBLE_INVERSE.md"
+    },
+    {
+      "claim": "HC4MYIY1",
+      "canonical_source": "hessian/hc4-triangular-graphs/CONTRACTIBLE_RADICAL_CURVES_AND_PENCIL_DEFECT.md"
+    },
+    {
+      "claim": "HC4MYIY2",
+      "canonical_source": "hessian/hc4-triangular-graphs/CONTRACTIBLE_RADICAL_CURVES_AND_PENCIL_DEFECT.md"
+    },
+    {
+      "claim": "HC4MYKW1",
+      "canonical_source": "hessian/hc4-triangular-graphs/SOURCE_LINE_CONDUCTOR_AND_PRIMITIVE_ORDER_COLLISIONS.md"
+    },
+    {
+      "claim": "HCTANG2",
+      "canonical_source": "hessian/tang-hc4-audit/STRUCTURAL_REVIEW.md"
+    }
+  ],
+  "retained_proof_and_source_sha256": {
+    "hessian/hc4-triangular-graphs/TARGET_BOUNDARY_SYMMETRY_AND_FINITE_STABILIZER.md": "63e990c696349c5fcbd1daa35f63a57ef06e6aad29d08fcab2f7f96368b7ce8c",
+    "hessian/hc4-triangular-graphs/verify_target_boundary_symmetry.py": "80e5cedcc4b7fa5e8618d88afdcc908e81144e091a9612f89433bc52b8e9ba85",
+    "hessian/hc4-triangular-graphs/ALGEBRAIC_FLOW_DESCENT_AND_INTEGRAL_COORDINATES.md": "beaced18024b06fc918d9e665929ff2ef4820e3cffa5a18493c5f9ac2bcd53e9",
+    "hessian/hc4-triangular-graphs/verify_algebraic_flow_descent.py": "a2317510797200b71dad4d6dd7d730555f88e3abcc7e55f0d157954fb3613c2f",
+    "jacobian/affine-complements/SOURCE_SYMMETRY_DESCENT_AND_TRACE_GATE.md": "553f95d8c66f8354d1c475bc2eb916f0b63c356d86466bd8603f8ef62452ceeb",
+    "jacobian/affine-complements/verify_source_symmetry_gate.py": "7c5d82a522f2631d50e15e5f8838f80b426cf22e47285442d3cb6c14fc2e6660",
+    "hessian/hc4-triangular-graphs/ABELIAN_CLASSGROUP_OUTPUT_OBSTRUCTION.md": "3a10bcc44350ae155d73f1786dbd1dc081c86b20d469e7efd0edfa408981462f",
+    "hessian/hc4-triangular-graphs/verify_abelian_classgroup.py": "8adc1cd766d154f1a44b02c103ec7d30e323e3f07debf85206ff0f4c4ae044ad",
+    "jacobian/jc2-omitted-divisors/ADMISSIBLE_INVERSE.md": "ec45660c3815ecd5e41e6e08490f74277ef93c4c6105fe73499e295012c9d616",
+    "jacobian/jc2-omitted-divisors/verify_inverse.py": "9426f15acd24e755349e91658b5f540fd6d26a0ccf927da8c762f08a4df06066",
+    "hessian/hc4-triangular-graphs/CONTRACTIBLE_RADICAL_CURVES_AND_PENCIL_DEFECT.md": "c04f018658b746c338bc9571be437b74014c8d8ae836cc55e6c100e387ba3022",
+    "hessian/hc4-triangular-graphs/verify_contractible_pencil.py": "edb709b133d5492629ee17414bae97aafdd06504e78c3dd22fa614eefe972580",
+    "hessian/hc4-triangular-graphs/SOURCE_LINE_CONDUCTOR_AND_PRIMITIVE_ORDER_COLLISIONS.md": "1c303ba4aeb13523d39c92169f081676ead1673a6a49dc961132e96927081909",
+    "hessian/hc4-triangular-graphs/verify_source_line_conductor.py": "2df718f5a99cbc19ec11f614a7cfdee85d8b23522f5f33b241623df56b7a31fe",
+    "hessian/tang-hc4-audit/STRUCTURAL_REVIEW.md": "26a6a76eb579de05b8e71245b8b804bdd5f036602f2e3e6ad5d036fd9f5cd572",
+    "hessian/tang-hc4-audit/verify_structural.py": "23e87f797b4d086ede8195773092dcd42d705258ec57c05920731e87e0ce9b2d",
+    "hessian/hc4-triangular-graphs/sources/palka-lin-zaidenberg-1405.5391v2.html": "6884f0db34bd41fe04b64304b85310fabf85aeea2881721590b9400e8552bbee",
+    "hessian/hc4-triangular-graphs/sources/chau-nonproper-no-line-math0408048v1.html": "ebcf879e5b1d914a2c232141e401bc01846b2009bea5f2f3b345763ed477aad5",
+    "jacobian/jc2-omitted-divisors/sources/jelonek-2011.03472-version-audit.html": "2f4847f7c2fd691a92e2710b52752aa741cb519adce30afbb3a0247e1d0f8460"
+  },
+  "new_primary_sha256": {
+    "sources/bustinduy-complete-0902.4726v2.pdf": "74ac45c6ae8fa4e3482a7e675b2072d0390b1304c0cc4e9455401fa79347f2c4"
+  },
+  "inspected_primary_context": [
+    {
+      "title": "Bustinduy,Complete holomorphic vector fields on C2 whose underlying foliation is polynomial",
+      "url": "https://arxiv.org/pdf/0902.4726v2",
+      "retained_file": "sources/bustinduy-complete-0902.4726v2.pdf",
+      "pages_read": "Printed/PDFpp1-3;Section1.2 lists Brunella I/II/III and p2 defines Suzuki4/5,including all positive/coprime and polynomiality conditions.",
+      "role": "Primary research extending the classification;explicit reproduction of the imported Brunella polynomial classification,not an independent proof of that classification."
+    },
+    {
+      "title": "Brunella,Complete polynomial vector fields on the complex plane",
+      "url": "https://doi.org/10.1016/S0040-9383(03)00050-8",
+      "pages_read": "Original publisher bibliographic page and abstract only;full PDF403.Not cached or claimed read.",
+      "role": "Original classification attribution;exact adopted forms audited in primary Bustinduy instead."
+    }
+  ],
+  "newly_imported_proved_external_statements": [
+    {
+      "theorem": "Brunella2004 complete polynomial plane vector field classification,as explicitly reproduced in Bustinduy0902.4726v2 Section1.2",
+      "use": "Exhaustive polynomial normal forms I,II,III;the remaining normalization/degree arguments are written directly."
+    }
+  ],
+  "newly_used_unproved_external_statements": [],
+  "prior_credit": "KY1 supplies no locally finite logarithmic field for the WHOLE nonproperness curve;PF52 supplies F intersect R=B;HW0 supplies nonconstant square-free target prime pullbacks and codimension2 image complement;PF2OMIT3/IY2 supply A1 component normalizations.KX0 is the earlier locally finite source criterion.IY1 already imports Lin-Zaidenberg;retained Chau Cor3 and Jelonek withdrawal audit prevent duplicate or withdrawn imports.",
+  "full_theorem_target": "Full HC4/JC2 proof or actual counterexample.",
+  "last_unsolved_implication": "ACTUAL polynomial plane source ==> Tr(Lambda_L*Lambda_L) subset B,or full marked canonical-energy integrality;OPEN.",
+  "complete_polynomial_field_curve_symmetry_proved": true,
+  "all_complete_polynomial_logarithmic_target_fields_excluded_under_plane_failure": true,
+  "complete_source_field_descent_proved_using_joint_Hartogs": true,
+  "all_complete_polynomial_source_fields_preserving_target_field_excluded_under_plane_failure": true,
+  "non_LF_complete_fields_covered": true,
+  "zero_restrictions_on_curve_components_covered": true,
+  "normalization_A1_for_every_component_required": true,
+  "classification_independently_reproved": false,
+  "original_Brunella_full_text_read": false,
+  "classification_normal_forms_read_in_primary_Bustinduy": true,
+  "holomorphic_time_maps_assumed_polynomial": false,
+  "birational_chart_assumed_polynomial_automorphism": false,
+  "rationality_substituted_for_A1_normalization": false,
+  "complete_field_proved_to_exist_automatically": false,
+  "individual_component_symmetry_used_as_whole_curve_symmetry": false,
+  "withdrawn_Jelonek_statement_imported": false,
+  "Lin_Zaidenberg_exclusion_claimed_new": false,
+  "whole_surviving_higher_degree_packet_excluded": false,
+  "last_HC4_source_to_regular_inverse_Gram_implication_proved": false,
+  "plane_inversion_consequence_transferred_to_higher_dimension": false,
+  "external_review_deferred": true,
+  "external_review_requested": false,
+  "old_registered_mathematical_checkers_replayed": false,
+  "unrestricted_HC4_or_JC2_resolved": false,
+  "original_goal_complete": false,
+  "joint_extension_foundation": "The exact joint extension across finitely many missing plane points is proved directly by one-variable Cauchy integration on a circle in the first spatial coordinate,including the time parameter.No general Hartogs theorem imported."
+}

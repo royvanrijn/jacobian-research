@@ -1,0 +1,59 @@
+{
+  "date": "2026-11-16",
+  "new_claim": "GVCFORMALCERTSELECT20261116",
+  "new_lesson": "METHOD-GVC-EFFECTIVE-BERNSTEIN-SLOPE-SELECTION-20261116",
+  "new_work_item": "WORK-GAUSSIAN-FORMAL-GENERAL",
+  "canonical_proof": "moments/vanishing/EFFECTIVE_BERNSTEIN_SLOPE_SELECTION_AND_CUTOFFS.md",
+  "canonical_proof_sha256": "c77f107ebe3f1518d93d4dae121bda1afc7143988a94774d9aa477697cc138da",
+  "producer": "moments/vanishing/bernstein_slope_producer.py",
+  "producer_sha256": "022f1b834ffc7772227912d96d65f4c163560d9588638b4b1e8cfa503bcb7ad8",
+  "checker": "moments/vanishing/verify_bernstein_slope_producer.py",
+  "checker_sha256": "f13dc27fc592d401459b16acd8d1c83b34094866757687bb5c4392b04616bbcb",
+  "receipt": "moments/vanishing/bernstein_slope_producer_verification.json",
+  "receipt_sha256": "784820d2a636e583781db3d34fd98c6ff383be7d5043da8429288aa0956560a7",
+  "example": "moments/vanishing/bernstein_slope_producer_example.json",
+  "example_sha256": "9b07284bbcc96d992363fede1d9f45c642a43ee21ae80a204edaf67fe745a915",
+  "ownership_runbook": "moments/vanishing/GENERAL_GAUSSIAN_FORMAL_RESEARCH_OWNERSHIP.md",
+  "ownership_runbook_sha256": "8c64d7d731f8983c6dfb6ea206679128c847c9d2dca80884efb98d41ccfd20f5",
+  "user_ownership_amendment": "Keep original broad active goal;own GENERAL GAUSSIAN/FORMAL CONSTANT-COEFFICIENT programme,including actual-module descent,uniform specialization,finite certificate slope/cutoff extraction,and broader general classifications/bridges. Separate Mathieu thread owns direct exceptionalMZ work. No outreach/review/broad compute requested.",
+  "retained_dependency_sha256": {
+    "moments/vanishing/GENERIC_BERNSTEIN_EQUATIONS_AND_FORMAL_GAP_CLOSURE.md": "9f3f8f003dae69abe255bcddf03606c00bcc5a4245028163a8c1750adfca4e2f",
+    "moments/vanishing/FORMAL_SAFETY_OVER_ALL_COEFFICIENT_RINGS.md": "3b8cd0768af6fedf4e312cca06ccf1cb919ae2ba1c7acca7358215e3142b738e",
+    "moments/vanishing/BOUNDED_BERNSTEIN_STEPS_AND_RATIONAL_SURVIVAL_SLOPES.md": "4a7d6bd50a5f789c27e75a9e54fd408ec83134eecb4545785328a58de0e45289",
+    "moments/vanishing/FORMAL_SHIFTED_POWERS_AND_APOLAR_NILPOTENCE_GAPS.md": "b57ed27e9ae046d57ad584f88d6673619c866324389e8e3dfa015dec2d866e5c"
+  },
+  "new_classical_imports": [],
+  "proof_audit": {
+    "certificate_contract": "All late finite orders satisfy rationalp. Ordinary relation must also propagate NONVANISHING and bound steps,after all scalar roots/torsion thresholds. Numeric metadata is conditional on that actual proof;not accepted as an all-index verification.",
+    "root_barrier": "For each rational affine-line slopea/b,leadingX coefficientf(Z) has explicit Cauchy boundR. B>R gives absf>=absleadingf oncollars. LowerX terms are bounded byE/X forabsZ<=A. K>E/absleadingf certifies rootfree collarsuniformly.",
+    "backward_argument": "Actual recurrent offsets are roots ofleadingf and eventuallyinsideB. Normalized steps boundedbyL cannotcross the widerthanL collars in EITHER direction. Thus stripholds startingatthe computedindex,not just an unknown eventualthreshold.",
+    "single_query": "Separate all slope strips and chooseK beyond leadingY coefficientroots. ALL nonnegative integerroots ofp(K,Y) are tested by ORIGINAL T^KP^j. No success implies tauK infinity by the validpolynomialconstraint;successplusnondeathgivesallfinite,and the unique stripselectsrho.",
+    "cutoffs": "Nil givesh_m<=K-1. Rho>1 givesglobal h_m<=m/rho+H,H=max(K-1,ceilB/a). IntegersC,Eceilings make m>CdegQ+E sufficient by actualcommutator;allpositivepureallowsC+Elinear. No least cutoff.",
+    "oracle_boundary": "Run any alleged finite coefficientquery selector oninactivezeta,P=x. Addxi^M at an unqueriedM>=2;adaptive transcriptidentical butnilversusfiniteactualrhoM differs. BothinputspureSAFE;no safety-undecidabilityclaim.",
+    "implementation": "Exact Q factorization,Cauchy/norm stripbounds,integerroots,plan recomputation,sparse ORIGINAL polynomial powers and literal repeated differentiation. Effective-field postprocessor theorem is more general than the included rational evaluator.",
+    "no_circular_verification": "The deliberately FALSEp=Y-X-1 forP=x,T=Dx^2 passes the sole finitequery but giveswrongconditionalrho1. Source certificate generation/truth remainsmandatory and unimplemented."
+  },
+  "exact_controls": {
+    "actual_inputs": 8,
+    "cutoff_transcriptions": 15,
+    "rejections": 5,
+    "CLI_operations": 3,
+    "false_contract_countercontrols": 1,
+    "finite_oracle_transcripts": 1
+  },
+  "not_claimed": [
+    "general actual Bernstein certificate generation",
+    "verification of certificate truth by finite queries",
+    "selected recurrent bad marker rather than finite candidate family",
+    "least cutoff",
+    "all-ring rational slope selection",
+    "safety undecidability from coefficient access",
+    "either exceptional MZ theorem",
+    "universal machine/independent/external proof assurance"
+  ],
+  "next_full_obligation": "Construct effective actual Bernstein identities,finite torsion witnesses and uniform specialization starts for general effectively presented symbol/phase inputs,then continue full Gaussian/formal structural and classification closure. Bigger known holonomic presentations may provide valid image identities without an actual-kernel computation.",
+  "broad_goal_remains_active": true,
+  "independent_replay": false,
+  "formal_verification": false,
+  "external_review": false
+}

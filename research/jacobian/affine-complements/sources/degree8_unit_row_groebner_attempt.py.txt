@@ -1,0 +1,16 @@
+from sage.all import *
+from sage.interfaces.singular import singular
+from pathlib import Path
+import gzip,json,time
+start=time.monotonic();H=Path('/home/royvanrijn/src/jacobian-research/research/jacobian/affine-complements');data=json.loads(gzip.decompress((H/'degree8_affine_reduction_certificates.json.gz').read_bytes()))
+for sec in data['sectors']:
+ k=sec['multiplicities'][0];Y=PolynomialRing(QQ,'y');K=NumberField(Y(sec['P8']),'y');A=PolynomialRing(K,names=['q4','q5','q6','q7'],order='degrevlex');V=PolynomialRing(A,'v');D=V(sec['linear_constant_D']);gens=list(D);I=A.ideal(gens)
+ SI=singular(I);print('k',k,'start liftstd on',len(gens),'gens','time',time.monotonic()-start,flush=True)
+ singular.eval('matrix unitT; ideal unitG=liftstd('+SI.name()+',unitT);')
+ print('k',k,'basis size',singular('size(unitG)'),'unit',str(singular('unitG[1]'))=='1','time',time.monotonic()-start,flush=True)
+ if str(singular('unitG[1]'))=='1':
+  coeff=[A(str(singular('unitT['+str(j+1)+',1]'))) for j in range(len(gens))]
+  assert sum(c*g for c,g in zip(coeff,gens))==1
+  print('k',k,'EXACT UNIT',[(j,c.total_degree(),len(c.monomials())) for j,c in enumerate(coeff) if c],'time',time.monotonic()-start,flush=True)
+  out=dict(P8=sec['P8'],variables=list(A.variable_names()),generators=list(map(str,gens)),coefficients=list(map(str,coeff)),elapsed_seconds=time.monotonic()-start)
+  Path('/research/.scratch/degree8_Dzero_liftstd_'+str(k)+'.json.gz').write_bytes(gzip.compress((json.dumps(out,indent=2)+'\n').encode(),mtime=0))

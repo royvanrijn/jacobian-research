@@ -1,0 +1,61 @@
+{
+  "date": "2026-11-16",
+  "kind": "unregistered direct whole-MZ construction attempt and exact all-parameter countercontrol",
+  "new_claims": [],
+  "new_lessons": [],
+  "mathematical_ledger_changed_by_this_turn": false,
+  "evidence_root": "repository root",
+  "evidence_sha256": {
+    "tmp/haar_jacobian_alignment_attempt_20261116.tex": "37c396663fb1f43513ee425155508abb76f11ad685bfe8b8f172f64606f5109c",
+    "tmp/check_haar_jacobian_alignment_20261116.py": "677e89a9788369a3d7452ed557b9c82377157afbe17ff9233ee9fbcfe7b988a6",
+    "tmp/haar_jacobian_alignment_controls_20261116.json": "5a279fcb0b5a67dc3f8f09e13afc7c1604ae330a0773cc0877058d9e12083f97"
+  },
+  "retained_canonical_reads": {
+    "moments/vanishing/REGULAR_BEZOUT_MAPS_AND_WEIGHTED_HAAR_TAILS.md": "e0cd185839bf0c16d94b2e8f77a2624f50376b822f484e965ffa5e3fff17cfc7",
+    "moments/vanishing/COHOMOLOGICAL_PULLBACK_AND_A_UNIFORM_ORIGINAL_MARKER.md": "d5e88b14fefd865b3b1b1b918efc2160209545d56c077c866e7666980f5562e6",
+    "moments/vanishing/PROPER_VOLUME_UNIT_PERIODS_AND_COMPLEX_HOPF_CLOSURE.md": "8b8e48ca89949509c2e05d096fe25c613ba486e4adb920154aea0d5003903ec9",
+    "moments/vanishing/SEMISTABLE_LOG_PERIODS_AND_SINGLE_ISOTYPIC_SAFETY.md": "2d1c207085783207b425af26636fb05d0ebd07bdff3ac4ddd350c32056d52ae7"
+  },
+  "retained_claims_read": [
+    "GHAARCOMPTRANSFER20261116",
+    "GHAARUNIFORMMARKER20261116",
+    "GHAARPROPERUNIT20261116",
+    "GHOPFEVENTDENSITY20261116",
+    "GCOMPLEXHEIGHTCLOSED20261116"
+  ],
+  "protected_whole_records": 136,
+  "previous_formal_theorems_and_proofs_unchanged": true,
+  "actual_fibre_inputs": {
+    "base_field": "K=Frac(C[z,w]^Gamma)",
+    "generic_fibre": "K[t],Dt=1,from the actual bottom-row Ga torsor",
+    "retained_sharp_depth": "q=deg_tY_b>=19 on2O,>=31 on2I for EVERY globally regular b;determinant identity equates top-coordinate degrees",
+    "formulas": "W_b=(C/G)Y_bprime;g_b=F Y_b^2+(1+2F)Y_b+(1+F);nu_b=(C/G)Y_b-t+beta,beta inK",
+    "exact_degrees": "deg_t W_b=q-1;deg_tg_b=2q;deg_t(nu_b Dg_b)=3q-1",
+    "scope": "All original regular Bezout parameters,not an arbitrary generic b with poles;all polynomial composites included"
+  },
+  "direct_counterexample_attempt": {
+    "sufficient_condition": "If the ACTUAL normalized weight W=A(g)/B(g),A,B nonzero complex polynomials,then f=g A(g) has ALL positive pure moments zero directly: f^m=W*g^m A(g)^(m-1)B(g),whose bracket has value0 at0. The existing same interval marker makes f nonsafe.",
+    "exact_failure": "Every rational function in g_b has infinity order divisible by2q over the actual generic base;the nonzero pole orderq-1 ofW_b is not. Thus W_b NOTinK(g_b),even allowing rational bottom-row coefficients,and NOTinK(H(g_b)) for EVERY nonconstantH.",
+    "first_integration_by_parts_failure": "h(R(g_b))=R(0)+h(nu_bDg_b Rprime(g_b)),but correction degree3q-1 is not divisible by2q. For composite degreee,its correction degree(2e+1)q-1 is not divisible by2eq. No one-variable rational closure of this first explicit correction.",
+    "decision": "DISCARD tuning b for rational Jacobian/phase alignment or this first explicit integration-by-parts closure. A different genuine unweighted moment/gluing relation or different map/phase construction is needed."
+  },
+  "exact_controls": {
+    "actual_frozen_maps": 6,
+    "parameters": "b=0,V,V^2 in both actual frozen regular map families",
+    "leading_coefficients": "exact chart x=t,y=w*t-1,z=1;V leading G*kappa*C/N;nu degreeN+1 cancellation and degreeN coefficientkappa*C^2/N",
+    "rational_weight_power_identities": 12,
+    "universal_fibre_depth_and_all_b_valuation_proof_machine_verified": false
+  },
+  "latest_Hopf_scope": "GCOMPLEXHEIGHTCLOSED20261116 closes the entire complex torus-equivariant Hopf primitive/eventual branch. It is a DIFFERENT phase from the primitive Long g_b,and does not exclude arbitrary polynomial composites or the whole exceptional locus.",
+  "exclusions_not_claimed": [
+    "all scalar period equations",
+    "all unweighted relations",
+    "all other regular maps",
+    "all eventually pure composites of g_b",
+    "either complete exceptional MZ case"
+  ],
+  "next_full_target": "Use exceptional invariance AND actual unweighted purity to force ALL corrected actual torus gluing orders zero for EVERY phase,or construct an actual invariant pure failure. Do not replace this by family exclusions or another equivalent criterion.",
+  "independent_replay": false,
+  "formal_verification": false,
+  "external_review": false
+}

@@ -1,0 +1,80 @@
+{
+  "as_of": "2026-11-14",
+  "outcome": "PASS scoped uniform cusp identities, complete oriented rows, metadata and renderer readback",
+  "claim": "PF2OMIT13",
+  "check_count": 58,
+  "previous_goal_turn": "Progress: exact no-quartic-divisor certificate closes the Laurent four-branch gate",
+  "current_goal_turn": "Progress: exact cusp coordinates and scheme-length correction extend first-prime accounting to all coefficient points; new oriented nonimmersed row fixes every local ambient length and its unique possible singleton value",
+  "status_validation": "Copied schema, dependencies and new hash pass. Historical unrelated consumers, narrowing reciprocity and hash freshness omitted without editing authority.",
+  "unrelated_checker_hash_drift_observed": [],
+  "other_review_staleness_observed": {},
+  "affected_lessons": [
+    "METHOD-R7-IMAGE-NORM-MATCHING"
+  ],
+  "affected_work": [
+    "WORK-PLANE-R7-20261113"
+  ],
+  "local_links_checked": 58,
+  "python_AST": "PASS",
+  "source_whitespace": "PASS",
+  "scoped_git_diff": "PASS",
+  "generated_views": 26,
+  "generated_readback": "PASS standard renderer functions",
+  "proof_boundary": "Uniform exact cusp values, derivative/fibre quotient resultant units and all oriented budgets checked. Global extra ramification, boundary regularity, flat lengths and transposition topology remain written/imported arguments. No second image or source map is constructed.",
+  "requirements_audit": {
+    "ramifies": "Four oriented rows under the named degree6/index2/gap21 assumptions now include nonimmersed first images; generic indices remain separate from cusp/radial lengths",
+    "omitted": "Every R,S omitted; optional unramified D retained only in A, absent in new N row",
+    "target_images_and_residue_degrees": "All f1; first-image matrix/cusp formulas explicit on full coefficient charts; B,H and original target transformation still unknown",
+    "exceptional_fibre_lengths": "First R loss2*corank-epsilon; new N cusp has retained3 if B absent or1 if B present; all other retained lengths even"
+  },
+  "full_navigation_check": {
+    "outcome": "FAIL repository-wide checks; scoped result validation passes",
+    "command_results": [
+      {
+        "command": [
+          "make",
+          "check-navigation"
+        ],
+        "exit_code": 2,
+        "output": "make -C research PYTHON=\"/home/royvanrijn/src/jacobian-research/.venv/bin/python\" SYSTEM_PYTHON=\"python3\" \"check-navigation\"\nmake[1]: Entering directory '/home/royvanrijn/src/jacobian-research/research'\npython3 scripts/audit_status.py\nmake[1]: Leaving directory '/home/royvanrijn/src/jacobian-research/research'\nTraceback (most recent call last):\n  File \"/home/royvanrijn/src/jacobian-research/research/scripts/audit_status.py\", line 8, in <module>\n    validate_index(index)\n  File \"/home/royvanrijn/src/jacobian-research/research/scripts/render_status.py\", line 360, in validate_index\n    assert consumer_path.is_file(), (\n           ^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: KDSQ6: missing document consumer artifacts/generated-results/README.md\nmake[1]: *** [Makefile:21: check-navigation] Error 1\nmake: *** [Makefile:17: check-navigation] Error 2\n"
+      },
+      {
+        "command": [
+          "python3",
+          "research/scripts/research.py",
+          "check"
+        ],
+        "exit_code": 1,
+        "output": "Traceback (most recent call last):\n  File \"/home/royvanrijn/src/jacobian-research/research/scripts/research.py\", line 561, in <module>\n    raise SystemExit(main())\n                     ^^^^^^\n  File \"/home/royvanrijn/src/jacobian-research/research/scripts/research.py\", line 438, in main\n    validate_lessons(items, entries, check_reviews=args.command == \"check\")\n  File \"/home/royvanrijn/src/jacobian-research/research/scripts/research.py\", line 128, in validate_lessons\n    assert (ROOT / p).is_file(), f\"{item['id']}: missing source {p}\"\n           ^^^^^^^^^^^^^^^^^^^^"
+      }
+    ],
+    "historical_artifacts_reconstructed": false,
+    "unrelated_authoritative_checker_hashes_refreshed": false
+  },
+  "formal_verification": false,
+  "external_review": false,
+  "unrestricted_singleton_zero_properness_proved": false,
+  "full_goal_complete": false,
+  "current_artifact_sha256": {
+    "NONIMMERSED_LEDGER.md": "9aed1c74a8b2a52ed22ad23a1e999414c50e446115d48ab7d13cdebbf2311091",
+    "verify_nonimmersed_ledger.py": "ebf6b5ceb742dea6826034c46e9c49bd40c0a5827cc7752f3b484d5697d837a9",
+    "nonimmersed_ledger.json": "0d47036d5f0f3fd5d262eddaf4669bafb93e290eae4911a7e0d498631d783d12",
+    "nonimmersed_receipt.json": "affb14efaab68ab790152799aaf828c3e87ef1a09f7eebfe8c36dc44389fe01e",
+    "README.md": "c6a31dd5dc01086f222bbb7e0d0d5c81958ebfb4a0bd49de1efbf1a24ab3ef29",
+    "INPUT_GATE.md": "8e097d83c2f2c0e8b75bbd09f2c6c168d57cfcca2716115a41729142a7eebe7d"
+  },
+  "supersedes_navigation_validation_of": [
+    "validation.json",
+    "global_validation.json",
+    "inverse_validation.json",
+    "discriminant_validation.json",
+    "infinity_validation.json",
+    "residue_validation.json",
+    "simple_radial_validation.json",
+    "global_monodromy_validation.json",
+    "wright_image_validation.json",
+    "singleton_valuation_validation.json",
+    "image_norm_validation.json",
+    "four_branch_validation.json"
+  ]
+}

@@ -1,0 +1,58 @@
+{
+  "schema_version": 1,
+  "retrieved_utc": "2026-11-15T05:48:14.069224+00:00",
+  "purpose": "Entire-source compiler formulas and related primary self-invariance/PDE literature. General proof is self-contained; no novelty certificate.",
+  "local_sources": [
+    {
+      "path": "jacobian/universal-keller-root-feedback/PROOF.md",
+      "locator": "UAROOTDAG1 birational source chart and source-channel boundary.",
+      "sha256": "2014b89aa2af9f844a48715360824eeb5ce1616cc175845659a836e267f3a581"
+    },
+    {
+      "path": "jacobian/universal-keller-receiver/PROOF.md",
+      "locator": "UAPROFILE1 frozen profile determinant and polynomial landing scope.",
+      "sha256": "8790916cd2c5e3f0458674dc50a37af18f1c1322eb2720c2071a819283cf639f"
+    },
+    {
+      "path": "jacobian/universal-keller-structure/PROOF.md",
+      "locator": "UAALLATOM1 retained-profile monodromy and stable self-atomicity.",
+      "sha256": "a3dee93b955b9e449bae2fff3d2964262289572f22f0820309e6c56d8bb5cbd5"
+    },
+    {
+      "path": "jacobian/universal-keller-higher-return/PROOF.md",
+      "locator": "UAMARKEDDEF1 full divisor restrictions and UARETURNESC1 source geometry.",
+      "sha256": "9d8ee01e5b83532f86409f5b402b6c92752491049c193821b51824e81fec3c4b"
+    },
+    {
+      "path": "jacobian/universal-keller-canonical-filter/PROOF.md",
+      "locator": "UACANFIB1 complete trace-filter fibre and its actual factors.",
+      "sha256": "5f2177076da7c8ae318258bdbfc39b445e393dbcb4a4dab397c82aeea9ad0da1"
+    },
+    {
+      "path": "jacobian/universal-keller-compression/verify.py",
+      "locator": "Pure source_map constructor.",
+      "sha256": "a8d9b280e09868e1b1abed24443541dc29daa94744e467517a5b3d6da85457a5"
+    },
+    {
+      "path": "foundations/verified/UNIVERSAL_RELATIVE_KELLER_MAP.md",
+      "locator": "UAM1 inverse polynomial and source reconstruction.",
+      "sha256": "4cced623c100a90859996e5aea69219a241c56c20ca087f1a9d4caa50209c1c5"
+    }
+  ],
+  "external_sources": [
+    {
+      "path": "sources/de-bondt-2015.html",
+      "url": "https://arxiv.org/html/1501.05168v1",
+      "locator": "Proposition1.3 quasi-translation self-invariance; comparison only, not a Keller-base theorem.",
+      "bytes": 664078,
+      "sha256": "98bbbe39dd7fd89bf412d061df758a51908a41c6c077e7c86355c187116c3be2"
+    },
+    {
+      "path": "sources/lu-burgers-2020-page.html",
+      "url": "https://www.numdam.org/articles/10.5802/crmath.136/",
+      "locator": "Primary article abstract/page only: analytic entire/meromorphic PDE scope; full proof not imported.",
+      "bytes": 50822,
+      "sha256": "b03073043c59e043c3dafde985b261c03352c909f3ca35aacc459fb38b54bd8c"
+    }
+  ]
+}

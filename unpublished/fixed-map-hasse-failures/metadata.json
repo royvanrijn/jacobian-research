@@ -1,0 +1,27 @@
+{
+  "title": "Quantitative Hasse-Principle Failures in the Fibers of a Fixed Keller Map",
+  "author": {
+    "name": "Roy van Rijn",
+    "orcid": "0009-0000-2808-0645"
+  },
+  "summary": "Fixes one degree-five Jacobian-one map and constructs and counts everywhere locally soluble fibres without rational points.",
+  "published": false,
+  "status": "draft",
+  "source": "main.tex",
+  "pdf": "paper.pdf",
+  "build": "latexmk -pdf -interaction=nonstopmode -halt-on-error main.tex",
+  "verification": "Written proof, exact supporting checks and a claim-by-claim verification matrix; external arithmetic and analytic inputs require their stated hypotheses.",
+  "next_steps": [
+    "Complete the priority and source review recorded in LITERATURE_AUDIT.md.",
+    "Review the counting argument and prepare a frozen submission bundle."
+  ],
+  "catalogued_on": "2026-11-17",
+  "abstract": "The classical polynomial\n\\((X^3-19)(X^2+X+1)\\) has a root over every completion of \\(\\Q\\), but no\nrational root, and at first looks like an isolated arithmetic curiosity.\nStarting from this Hasse failure, we ask whether\nthe map, rather than only the fiber, can be kept fixed.  The decisive\nobservation is that after centering the quadratic factor, the whole family\n\\((X^3-a)(X^2+X+1)\\) moves in exactly the two coefficients controlled by\none quadratic-gauge target line.\n\nThis produces one explicit polynomial map\n\\(\\Phi:\\A^3_{\\Q}\\to\\A^3_{\\Q}\\) with Jacobian determinant one and geometric\ndegree five.  For every noncube integer \\(a>1\\) such that\n\\[\n a\\equiv1\\pmod 9,\n \\qquad p\\mid a\\Longrightarrow p\\equiv1\\pmod3,\n\\]\nthe map has a full fiber\n\\[\n \\Spec\\Q[X]/\\bigl((X^3-a)(X^2+X+1)\\bigr).\n\\]\nEvery such fiber is reduced, has points over \\(\\R\\) and every \\(\\Q_p\\), and\nhas no \\(\\Q\\)-point.  The targets lie on a fixed rational line and have\nheight \\(32a\\).  The local argument does not require \\(a\\) to be prime:\nits congruence-and-support core is multiplicatively closed, after which\nthe perfect cubes are removed.  A character-twisted\nSelberg--Delange argument then shows that the number of constructed targets\nof height at most \\(B\\) is asymptotic to\n\\[\n \\frac{G_3(1)}{96\\sqrt{\\pi}}\\,\n \\frac{B}{\\sqrt{\\log B}},\n\\]\nwhere \\(G_3(1)>0\\) is an explicit Euler product.  Finally, the classical\ndegree bound for intersective polynomials shows that geometric degree five\nis best possible.  Thus one exceptional quintic becomes a quantitatively\nlarge family of failures on a single map of the smallest possible geometric\ndegree.",
+  "abstract_format": "latex",
+  "abstract_source": "sections/00-abstract.tex",
+  "resource_type": {
+    "title": "Preprint",
+    "type": "publication",
+    "subtype": "preprint"
+  }
+}

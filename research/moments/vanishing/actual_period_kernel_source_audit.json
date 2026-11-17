@@ -1,0 +1,446 @@
+{
+  "date": "2026-11-15",
+  "canonical_proof": "moments/vanishing/ACTUAL_PERIOD_KERNEL_AND_ALGEBRAIC_IMAGES.md",
+  "canonical_proof_sha256": "7beec8e370120738aa558b6dd4422ff38f2ae4670f75df5fb008e5ce6576eeb8",
+  "claims": [
+    "MVFIELDMIN20261115",
+    "MVACTUALKERNEL20261115",
+    "MVALGIMAGE20261115"
+  ],
+  "checker": "moments/vanishing/verify_actual_period_kernel.py",
+  "checker_sha256": "d327a457fc9549a70ebee267ee969ac16cbb0c17a28281b04fc487106162bc06",
+  "receipt": "moments/vanishing/actual_period_kernel_verification.json",
+  "receipt_sha256": "d2f141e3da485faa7cf077ec2f1cb31fbd32f1889563ff14d953befab6c6aeb5",
+  "prior_frontier": "moments/vanishing/actual_period_kernel_preupdate_20261115.json",
+  "retained_proof_hashes": {
+    "RANK_ONE_IMAGES_AND_NILPOTENT_CUTOFFS.md": "aba165edb640a2b74e448db688520d4f8a7f31477c75ac950cc6571806a29e27",
+    "rank_one_image_source_audit.json": "e2cb6a2665b0287cf5e6ea53873d4df08fece3bdc693804318c33ad21ab9014c",
+    "HOLONOMIC_SOURCES_AND_CUTOFF_LOCI.md": "667d72556c1501ae445742be48463472a687cb24acec54653d34275f5c00c9d0",
+    "holonomic_source_cutoff_source_audit.json": "7e77ba8f6dd2823a6f90053a0faf8326259f4e54f68c8f29655dadb6dc66fee3",
+    "ALGEBRAIC_SPECIALIZATION_AND_FINITE_FAMILY_DECISION.md": "b4975f1c9dd56dd66577af640d6a75044fcbb2e7f1a20e0b9fe0fc73b3c3ef87",
+    "CONSTANT_COEFFICIENT_OPERATOR_DECISION.md": "46e5f727ff999bb243adab5584697db112ac63b6503c0b896d05ae405a8613db",
+    "FINITE_MULTIPLIER_MIXED_DECISION.md": "4dc09aede00f0493238f528bf2b6a7320b3480fb45dd77c1b9ccedf22a27a56e",
+    "LINEAR_MIXED_CUTOFF_FROM_B_FUNCTION.md": "9c5842fe7f67dadc417b6c259f981caed14fc3d44f47401f572d49bcfc433ad1",
+    "CUBIC_AFFINE_W_CLASSIFICATION.md": "86e82cb0acbb0ff8cbb87c448f36e742317765eaf841903d3b5393160a920218",
+    "ACTUAL_DIRECTION_RANK_ONE_RIGIDITY.md": "525a5a306c59f2d24a9f7eb5e9a715d56f57b3acdbccbfeec7c8e082c7d0c90b",
+    "PRIMARY_THICKENING_MOMENT_IDEAL_ALGORITHM.md": "184f834e9955a536a18637f1cbb85066857a4e6df971fb95974ebd8e3e2360d9",
+    "RANK_ONE_TWO_BRANCH_GLOBAL94.md": "170efb4905b486a695e4924e4c4dbdeb67df8dd48c7f1e4f519dd5259743f989"
+  },
+  "retained_frontier_hashes": {
+    "foundations/extended-geometry/DVORSKY_GVC5_COUNTEREXAMPLE.md": "1fa06c3d478fe9c04e3b22c3aaa62ad6fc43c01a83e27a62f34b2fb979d3497b",
+    "foundations/extended-geometry/DVORSKY_ONE_PAIR_SCHUR_OBSTRUCTION.md": "6a9f9186d130dcdf5653a105aea1e2119110aebd80cf887243baf10bbf803994",
+    "foundations/extended-geometry/GVC3_POWER_TAIL_AND_MINIMUM_FRONTIER.md": "5fff1bb5aae08c4bb968d7b4945086944d698a54fcc7bd08c8f9fdcd014b474f",
+    "foundations/extended-geometry/TWO_PAIR_IMAGE_MATHIEU_COUNTEREXAMPLE.md": "7f7c78a729910136bf5ca28eceda86778e73309bde4e9752f1cd8da4354a00aa",
+    "foundations/extended-geometry/TWO_PAIR_SIC_BIDEGREE33_FRONTIER.md": "346d8e9da14d7b64f2fa01eef95cd65dc4d9870135d8e330823d4485d22135fa"
+  },
+  "primary_scope_audit": [
+    {
+      "paper": "Bostan--Rivoal--Salvy,Explicit degree bounds for right factors of linear differential operators",
+      "url": "https://rivoal.perso.math.cnrs.fr/articles/factorization.pdf",
+      "version": "Retained author preprint dated12June2019;later BLMS53(1)(2021),53--62,DOI10.1112/blms.12396",
+      "read": "Introduction and theorem1;section2.1 Fuchsian proof and section2.2 generalized-exponent/Newton-polygon argument;Kummer example",
+      "use": "Exact retained theorem1 bound overC;rational right-factor degrees can exceed input polynomial degree",
+      "boundary": "No later refined formula silently substituted;general effective-field embedding and exponent computation are our constructive extension,not an executed author package",
+      "retained_file": "moments/vanishing/sources/brs_factor_degree_author_2019.pdf",
+      "sha256": "0fd5525cee52292163270f5a5fd960d8a960e2cf94bf3f3993f6d7125fd9ea8e"
+    },
+    {
+      "paper": "Bostan--Rivoal--Salvy,Minimization of differential equations and algebraic values ofE-functions",
+      "url": "https://mathexp.eu/bostan/publications/BoRiSa24.pdf",
+      "version": "MathComp93,no347,May2024,1427--1472;electronic23October2023;arxiv2209.01827v3,18July2023",
+      "read": "Introduction field scope;section2.1 singular initial conditions;algorithm1/theorem2.2 and proof;selected degree-bound discussion;section3.4 number-field extension statement",
+      "use": "Finite-bound minimization with certified initial data;selected solution matters even when the input operator factors",
+      "boundary": "E-function special-value theorems not imported;author implementation not asserted to handle arbitrary function fields",
+      "retained_file": "moments/vanishing/sources/brs_minimization_mathcomp_2024.pdf",
+      "sha256": "2bece72fbaeea1d9309c44e1a535a09e20102acd93bf03c778702ad1cdf2aa96"
+    },
+    {
+      "paper": "Bostan--Salvy--Singer,On deciding transcendence of power series",
+      "url": "https://arxiv.org/html/2504.16697v2",
+      "version": "v2,17September2026,latest listed;v1,23April2025;to appear L Enseignement Mathematique",
+      "read": "Section1 scope;section2.1 proposition3 proof and corollary4;algorithm1/theorem7 proof;algorithm2/theorem8 proof and completeness boundary",
+      "use": "Complete algebraicity decision from minimization plus Singer full-algebraic-basis algorithm",
+      "boundary": "Algorithm2 FAIL is inconclusive;no Christol/Andre conjecture assumed;no Singer/Maple producer executed;extension stated only for number-field scalar coefficients and bounded polynomial outputs",
+      "retained_file": "moments/vanishing/sources/bostan_salvy_singer_2504_16697v2.html",
+      "sha256": "4eb969b72c51f40933ea9db9c9ef731b604101726118c12b42f4a5495d823723"
+    },
+    {
+      "paper": "Oaku,Localization,local cohomology,and the b-function of aD-module with respect to a polynomial",
+      "url": "https://arxiv.org/html/1609.04676v1",
+      "version": "Retained2016v1,already audited in operator decision dependency",
+      "read": "Previously retained localization framework;finite holonomic localization and Weyl-module algorithms only",
+      "use": "Present the ambient meromorphic companion connection and compute the map kernel",
+      "boundary": "Clearing denominators alone is not localization;ambient connection is not the actual image;no general localization/syzygy producer run",
+      "retained_file": "moments/vanishing/sources/oaku_localization_1609_04676v1.html",
+      "sha256": "5e9a8dd88c7e7e6fa6aec5e5194cde496dcc48737b4d580ce588d4dec00e1b65"
+    }
+  ],
+  "new_external_theorem_imported": true,
+  "fresh_exhaustive_literature_coverage": false,
+  "scalar_minimization": {
+    "field": "Any exactly presented effective finitely generated characteristic-zero fieldK",
+    "bridge": "Construct faithful computable complex embedding by nested rational boxes avoiding enumerated nonzero polynomials,and certified primitive-element root",
+    "degree_bound": "Retained2019 theorem1 overC,with finite formal local exponents and computable strict upper modulus bound;N<=m+q",
+    "search": "Clear denominator degree safely;finite linear relation space for each order",
+    "termination": "Certify every basis operator by zero oracle;do not stop at two equal jet nullspaces",
+    "output": "Monic least annihilator and exact right-divisibility certificate",
+    "general_field_bridge_executed": false
+  },
+  "actual_kernel": {
+    "input": "Finite holonomic polynomial-time Weyl moduleH with computable formal period map",
+    "cyclic_vector": "Ordinary-point triangular jet recursion,determinant1",
+    "generic_image": "K(t)<D>/K(t)<D>L_min;exact rankord(L_min)",
+    "generic_kernel": "R L_min/R L",
+    "contraction": "Map original H generators to localized companion connection via right remainders;finite Weyl-module kernel equals full period kernel by faithful derivative basis",
+    "actual_image": "H/ker(psi),not ambient meromorphic connection",
+    "point_supported_source_torsion": "Included in the full kernel",
+    "polynomial_lattice_and_pole_quotients": "Retained in actual image",
+    "canonical_obstruction": "When1inM,C=M/K[t];C0iffall-multiplier eventuality;rankC=rankM-1",
+    "parameter_boundary": "Pointwise;recompute exceptional periods;no family kernel constructibility proved"
+  },
+  "algebraicity": {
+    "scalar_scope": "Number-field coefficients;reduce to rational basis component series using conjugate common left multiple",
+    "complete_algorithm": "Bostan--Salvy--Singerv2 algorithm1/theorem7,using Singer after minimizing",
+    "whole_image": "Finite full generator tests;algebraic functions closed under derivatives and finite sums",
+    "geometry": "All-algebraic image embeds after localization into a finite algebraic-cover connection;regular singular and finite geometric monodromy",
+    "polynomial_output_extension": "Known finite x-degree for each generator;fresh scalar periods at tensor Vandermonde grid,then exact coefficient reconstruction",
+    "balanced_SIC": "Each phase monomial has equal xi/U total degrees;fixed output charge bounds every full amplitude",
+    "bounded_GVC": "degP<=minimum differential orderr0;Laurentatom degree<=|b|-|a|+ell*r0",
+    "all_transcendental_coefficient_fields_covered": false,
+    "dense_SIC33_answer_computed": false,
+    "finite_grid_is_heuristic_sampling": false
+  },
+  "small_replay": {
+    "completed": true,
+    "checker_sha256": "d327a457fc9549a70ebee267ee969ac16cbb0c17a28281b04fc487106162bc06",
+    "python_version": "3.12.3",
+    "sympy_version": "1.14.0",
+    "cyclic_vector_controls": [
+      {
+        "name": "two_trivial",
+        "rank": 2,
+        "vector": [
+          "1",
+          "t"
+        ],
+        "ordinary_point": 0,
+        "iterate_determinant_at_point": 1,
+        "cyclic_operator": [
+          "0",
+          "0",
+          "1"
+        ]
+      },
+      {
+        "name": "trivial_plus_exponential",
+        "rank": 2,
+        "vector": [
+          "1",
+          "t"
+        ],
+        "ordinary_point": 0,
+        "iterate_determinant_at_point": 1,
+        "cyclic_operator": [
+          "0",
+          "-(t + 2)/(t + 1)",
+          "1"
+        ]
+      },
+      {
+        "name": "trivial_plus_square_root",
+        "rank": 2,
+        "vector": [
+          "1",
+          "t"
+        ],
+        "ordinary_point": 0,
+        "iterate_determinant_at_point": 1,
+        "cyclic_operator": [
+          "0",
+          "-(2*t - 2)*(-2*t/(2 - 2*t)**2 - (-t/(2 - 2*t) + 1)/(2 - 2*t) - 1/(2 - 2*t))/(3*t - 2)",
+          "1"
+        ]
+      },
+      {
+        "name": "rank_three",
+        "rank": 3,
+        "vector": [
+          "1",
+          "-t**2/2 + t",
+          "-t"
+        ],
+        "ordinary_point": 0,
+        "iterate_determinant_at_point": 1,
+        "cyclic_operator": [
+          "-(-t**2/2 + t*(-t**2/2 + t) - 3*t)*(-2*t**6 + 8*t**5 - 16*t**4 - 8*t**3 + 16*t**2)/(t**8 - 6*t**7 + 16*t**6 + 4*t**5 - 4*t**4 - 32*t**3 + 44*t**2 - 16*t + 8) - (-14*t**4 - 12*t**3 + 44*t**2 - 24*t)*(-t**2 + 2*t*(1 - t) - t*(-t**2/2 + t) + t*(-t**2/2 - t + 1) + 3*t - 2)/(t**8 - 6*t**7 + 16*t**6 + 4*t**5 - 4*t**4 - 32*t**3 + 44*t**2 - 16*t + 8) - (-t**2/2 + t*(-t - 1) + t*(-t**2/2 - t) - 4*t + 3)*(2*t**5 - 4*t**3 + 20*t**2 - 16*t + 8)/(t**8 - 6*t**7 + 16*t**6 + 4*t**5 - 4*t**4 - 32*t**3 + 44*t**2 - 16*t + 8)",
+          "-(-t**2/2 + t*(-t**2/2 + t) - 3*t)*(-4*t**4 - 24*t**3 + 32*t**2 - 8*t + 8)/(t**8 - 6*t**7 + 16*t**6 + 4*t**5 - 4*t**4 - 32*t**3 + 44*t**2 - 16*t + 8) - (-t**2/2 + t*(-t - 1) + t*(-t**2/2 - t) - 4*t + 3)*(-2*t**5 + 8*t**4 - 8*t**3 + 20*t**2 - 8*t)/(t**8 - 6*t**7 + 16*t**6 + 4*t**5 - 4*t**4 - 32*t**3 + 44*t**2 - 16*t + 8) - (2*t**5 + 6*t**4 - 32*t**3 + 28*t**2 + 8*t)*(-t**2 + 2*t*(1 - t) - t*(-t**2/2 + t) + t*(-t**2/2 - t + 1) + 3*t - 2)/(t**8 - 6*t**7 + 16*t**6 + 4*t**5 - 4*t**4 - 32*t**3 + 44*t**2 - 16*t + 8)",
+          "-(-8*t**3 + 8*t)*(-t**2/2 + t*(-t - 1) + t*(-t**2/2 - t) - 4*t + 3)/(t**8 - 6*t**7 + 16*t**6 + 4*t**5 - 4*t**4 - 32*t**3 + 44*t**2 - 16*t + 8) - (-t**2/2 + t*(-t**2/2 + t) - 3*t)*(4*t**4 - 8*t**3 - 8*t)/(t**8 - 6*t**7 + 16*t**6 + 4*t**5 - 4*t**4 - 32*t**3 + 44*t**2 - 16*t + 8) - (-t**2 + 2*t*(1 - t) - t*(-t**2/2 + t) + t*(-t**2/2 - t + 1) + 3*t - 2)*(-2*t**5 + 8*t**4 - 8*t**3 - 4*t**2 - 8*t + 8)/(t**8 - 6*t**7 + 16*t**6 + 4*t**5 - 4*t**4 - 32*t**3 + 44*t**2 - 16*t + 8)",
+          "1"
+        ]
+      }
+    ],
+    "bounded_scalar_minimization_controls": [
+      {
+        "name": "constant",
+        "input_order": 2,
+        "supplied_polynomial_degree_bound": 4,
+        "least_order_in_certified_finite_search": 1,
+        "monic_operator": [
+          "0",
+          "1"
+        ],
+        "all_relation_basis_vectors_exactly_certified": true,
+        "jet_rounds": [
+          {
+            "jet_length": 14,
+            "nullity": 5
+          }
+        ],
+        "right_division_remainder_zero": true
+      },
+      {
+        "name": "exponential",
+        "input_order": 2,
+        "supplied_polynomial_degree_bound": 4,
+        "least_order_in_certified_finite_search": 1,
+        "monic_operator": [
+          "-1",
+          "1"
+        ],
+        "all_relation_basis_vectors_exactly_certified": true,
+        "jet_rounds": [
+          {
+            "jet_length": 14,
+            "nullity": 5
+          }
+        ],
+        "right_division_remainder_zero": true
+      },
+      {
+        "name": "constant_plus_exponential",
+        "input_order": 2,
+        "supplied_polynomial_degree_bound": 4,
+        "least_order_in_certified_finite_search": 2,
+        "monic_operator": [
+          "0.0",
+          "-1.00000000000000",
+          "1.00000000000000"
+        ],
+        "all_relation_basis_vectors_exactly_certified": true,
+        "jet_rounds": [
+          {
+            "jet_length": 14,
+            "nullity": 0
+          }
+        ],
+        "right_division_remainder_zero": true
+      },
+      {
+        "name": "linear_polynomial",
+        "input_order": 2,
+        "supplied_polynomial_degree_bound": 4,
+        "least_order_in_certified_finite_search": 1,
+        "monic_operator": [
+          "-1/(t + 1)",
+          "1"
+        ],
+        "all_relation_basis_vectors_exactly_certified": true,
+        "jet_rounds": [
+          {
+            "jet_length": 14,
+            "nullity": 4
+          }
+        ],
+        "right_division_remainder_zero": true
+      },
+      {
+        "name": "Kummer_degree_five",
+        "input_order": 2,
+        "supplied_polynomial_degree_bound": 26,
+        "least_order_in_certified_finite_search": 1,
+        "monic_operator": [
+          "(-5*t**4 + 120*t**3 - 900*t**2 + 2400*t - 1800)/(t**5 - 30*t**4 + 300*t**3 - 1200*t**2 + 1800*t - 720)",
+          "1"
+        ],
+        "all_relation_basis_vectors_exactly_certified": true,
+        "jet_rounds": [
+          {
+            "jet_length": 58,
+            "nullity": 22
+          }
+        ],
+        "right_division_remainder_zero": true
+      },
+      {
+        "name": "algebraic_nonrational",
+        "input_order": 2,
+        "supplied_polynomial_degree_bound": 10,
+        "least_order_in_certified_finite_search": 2,
+        "monic_operator": [
+          "0",
+          "1/(2*t - 2)",
+          "1"
+        ],
+        "all_relation_basis_vectors_exactly_certified": true,
+        "jet_rounds": [
+          {
+            "jet_length": 26,
+            "nullity": 0
+          }
+        ],
+        "right_division_remainder_zero": true
+      },
+      {
+        "name": "logarithm",
+        "input_order": 2,
+        "supplied_polynomial_degree_bound": 10,
+        "least_order_in_certified_finite_search": 2,
+        "monic_operator": [
+          "0",
+          "1/(t - 1)",
+          "1"
+        ],
+        "all_relation_basis_vectors_exactly_certified": true,
+        "jet_rounds": [
+          {
+            "jet_length": 26,
+            "nullity": 0
+          }
+        ],
+        "right_division_remainder_zero": true
+      },
+      {
+        "name": "generic_parameter",
+        "input_order": 2,
+        "supplied_polynomial_degree_bound": 4,
+        "least_order_in_certified_finite_search": 2,
+        "monic_operator": [
+          "0.0",
+          "-1.00000000000000",
+          "1.00000000000000"
+        ],
+        "all_relation_basis_vectors_exactly_certified": true,
+        "jet_rounds": [
+          {
+            "jet_length": 14,
+            "nullity": 0
+          }
+        ],
+        "right_division_remainder_zero": true
+      },
+      {
+        "name": "exceptional_parameter_zero",
+        "input_order": 2,
+        "supplied_polynomial_degree_bound": 4,
+        "least_order_in_certified_finite_search": 1,
+        "monic_operator": [
+          "0",
+          "1"
+        ],
+        "all_relation_basis_vectors_exactly_certified": true,
+        "jet_rounds": [
+          {
+            "jet_length": 14,
+            "nullity": 5
+          }
+        ],
+        "right_division_remainder_zero": true
+      },
+      {
+        "name": "nonminimal_log_equation_constant",
+        "input_order": 2,
+        "supplied_polynomial_degree_bound": 10,
+        "least_order_in_certified_finite_search": 1,
+        "monic_operator": [
+          "0",
+          "1"
+        ],
+        "all_relation_basis_vectors_exactly_certified": true,
+        "jet_rounds": [
+          {
+            "jet_length": 26,
+            "nullity": 11
+          }
+        ],
+        "right_division_remainder_zero": true
+      }
+    ],
+    "polynomial_lattice_control": {
+      "safe_source_periods": [
+        "1",
+        "1"
+      ],
+      "cyclic_period": "1+t",
+      "generic_kernel_vector": [
+        "-1/(t + 1)",
+        "1/(t + 1)"
+      ],
+      "contracted_kernel_generator": [
+        "-1",
+        "1"
+      ],
+      "ambient_false_pole_at_minus_one_excluded": true,
+      "same_generic_rank_does_not_remove_actual_pole_quotient": true
+    },
+    "point_module_checks": 5,
+    "algebraic_cover_control": {
+      "period": "1+sqrt(1-t)",
+      "relation": "(y-1)^2-(1-t)",
+      "minimal_order_in_control": 2,
+      "finite_cover": "z^2=1-t",
+      "constant_selected_from_equation_with_log_solutions_handled": true,
+      "complete_Singer_solver_called": false
+    },
+    "Vandermonde_degree_bound": 2,
+    "operator_bounded_output_checks": 20,
+    "SIC_bounded_output_checks": 64,
+    "mutation_controls": {
+      "coincident_initial_constants_do_not_identify_solutions": true,
+      "two_equal_jet_spaces_not_used_as_stopping_certificate": true,
+      "input_degree_not_used_as_right_factor_degree_bound": true,
+      "nonminimal_operator_not_used_for_transcendence_decision": true,
+      "generic_connection_not_used_as_actual_polynomial_image": true,
+      "killed_point_module_not_discarded_from_full_kernel": true,
+      "grid_interpolation_uses_known_bound_and_fresh_scalar_periods": true
+    },
+    "general_minimization_field_embedding_executed": false,
+    "general_factor_degree_bound_producer_executed": false,
+    "general_actual_kernel_solver_implemented": false,
+    "general_actual_kernel_solver_executed": false,
+    "general_Weyl_syzygy_contraction_executed": false,
+    "complete_Singer_algebraicity_solver_executed": false,
+    "universal_proofs_certified_by_checker": false,
+    "global_complex_safe_locus_uniformity_proved": false,
+    "higher_actual_rank_classified": false,
+    "new_SIC33_answer_computed": false,
+    "new_Delta_minimum_computed": false,
+    "numeric_cubic_frontier_changed": false,
+    "operator_order_reduced": false,
+    "independent_replay": false,
+    "external_review": false,
+    "formal_verification": false
+  },
+  "general_minimization_field_embedding_executed": false,
+  "general_factor_degree_bound_producer_executed": false,
+  "general_actual_kernel_solver_implemented": false,
+  "general_actual_kernel_solver_executed": false,
+  "general_Weyl_syzygy_contraction_executed": false,
+  "complete_Singer_algebraicity_solver_executed": false,
+  "universal_proofs_certified_by_checker": false,
+  "global_complex_safe_locus_uniformity_proved": false,
+  "higher_actual_rank_classified": false,
+  "new_SIC33_answer_computed": false,
+  "new_Delta_minimum_computed": false,
+  "numeric_cubic_frontier_changed": false,
+  "operator_order_reduced": false,
+  "independent_replay": false,
+  "external_review": false,
+  "formal_verification": false,
+  "remaining": [
+    "Independent review of faithful computable embedding,finite factor bound,cyclic lift and contraction,number-field algebraicity descent and bounded-output argument",
+    "General effective-field minimizer,Weyl-kernel/localization solver and complete Singer package remain unimplemented/unexecuted here",
+    "Actual nonrational higher-rank Gaussian image geometry and normalized constant-b higher seed-rank trivial quotients remain unclassified",
+    "Exceptional coefficient kernels and global complex safe-locus stabilization/uniformity remain open",
+    "Higher radial degrees,mixed angular signs,valid operator compression,dense SIC33,leastDelta endpoint,cubic optimum and older analytic review remain open"
+  ]
+}

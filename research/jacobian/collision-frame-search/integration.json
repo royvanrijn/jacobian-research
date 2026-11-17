@@ -1,0 +1,35 @@
+{
+  "arity": 3,
+  "claim": "KFRAME2",
+  "degree_bound": 7,
+  "dependency_graph_acyclic": true,
+  "endpoint_invariant_replay": true,
+  "endpoint_obstruction_claim": "KFRAME3",
+  "endpoint_validation_sha256": "6961566117d1c4801fc6a8c81e1386d9a81697441326f0bd6eeed5e9d44f1f4e",
+  "exact_specializations": 1293,
+  "field_regression_sha256": "c8e01dd5f8d2859061803de25fb5bf645f543c17c03da49cbe8060a92f9a89be",
+  "independent_rational_polynomial_inputs_and_witness": true,
+  "independent_singular_projection_and_fields": true,
+  "invalid_v1_retained_and_rejected": true,
+  "navigation_errors": [
+    "render_status.py: KDSQ6 missing consumer artifacts/generated-results/README.md",
+    "Historical navigation output omitted during repository reorganization."
+  ],
+  "navigation_regeneration": "Blocked by pre-existing missing artifacts; not bypassed.",
+  "nonlinear_counts": [
+    6,
+    19,
+    23
+  ],
+  "normalized_support_interval": [
+    10,
+    48
+  ],
+  "reviewed_fingerprints": true,
+  "scoped_links": true,
+  "scoped_schema": true,
+  "sharp_classes": 2,
+  "status": "pass",
+  "umbrella_status": "open",
+  "validation_sha256": "2392a7732fa26b0bd26e797a2866f4d9547914e7f271a7db0a7b6a0f7862c850"
+}

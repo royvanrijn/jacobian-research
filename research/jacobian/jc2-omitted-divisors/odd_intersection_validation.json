@@ -1,0 +1,82 @@
+{
+  "as_of": "2026-11-14",
+  "outcome": "PASS scoped odd-k intersection controls, singleton packets, metadata and renderer readback",
+  "claim": "PF2OMIT15",
+  "check_count": 367,
+  "previous_goal_turn": "Progress: pole-weighted inverse degree budget, target-line/radial genus and completed first-image catalogue",
+  "current_goal_turn": "Progress: universal odd-k affine intersection lower bound makes singleton values mandatory in three residual groupings; reduced norms specify the finite exceptional matching interface",
+  "status_validation": "Copied schema, dependencies and new hash pass. Historical unrelated consumers, narrowing reciprocity and hash freshness omitted without editing authority.",
+  "unrelated_checker_hash_drift_observed": [],
+  "other_review_staleness_observed": {},
+  "affected_lessons": [
+    "METHOD-R7-IMAGE-NORM-MATCHING"
+  ],
+  "affected_work": [
+    "WORK-PLANE-R7-20261113"
+  ],
+  "local_links_checked": 70,
+  "python_AST": "PASS",
+  "source_whitespace": "PASS",
+  "scoped_git_diff": "PASS",
+  "generated_views": 26,
+  "generated_readback": "PASS standard renderer functions",
+  "proof_boundary": "Universal odd-k formal inverse/norm/intersection argument is written. Exact resultants, quotient-algebra degree12 control, odd capped degree labels and singleton length completions are checked. Controls are target curves, not global covers. No sharpness or even-k bound.",
+  "requirements_audit": {
+    "ramifies": "Shared A retains two distinct fold primes; C retains fold and cyclic3, without identifying intersection multiplicity with ramification",
+    "omitted": "Shared A has the additional omitted unramified point even over an existing support",
+    "target_images_and_residue_degrees": "Odd-degree B/H must meet C; f1 and common target-coordinate hypotheses kept separate; equations and values remain unknown",
+    "exceptional_fibre_lengths": "Every C/B intersection in shared A or C is singleton with omitted packets2+2+1 or2+3. Odd k guarantees these loci are nonempty; tangency weights do not count distinct values"
+  },
+  "full_navigation_check": {
+    "outcome": "FAIL repository-wide checks; scoped result validation passes",
+    "command_results": [
+      {
+        "command": [
+          "make",
+          "check-navigation"
+        ],
+        "exit_code": 2,
+        "output": "make -C research PYTHON=\"/home/royvanrijn/src/jacobian-research/.venv/bin/python\" SYSTEM_PYTHON=\"python3\" \"check-navigation\"\nmake[1]: Entering directory '/home/royvanrijn/src/jacobian-research/research'\npython3 scripts/audit_status.py\nmake[1]: Leaving directory '/home/royvanrijn/src/jacobian-research/research'\nTraceback (most recent call last):\n  File \"/home/royvanrijn/src/jacobian-research/research/scripts/audit_status.py\", line 8, in <module>\n    validate_index(index)\n  File \"/home/royvanrijn/src/jacobian-research/research/scripts/render_status.py\", line 360, in validate_index\n    assert consumer_path.is_file(), (\n           ^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: KDSQ6: missing document consumer artifacts/generated-results/README.md\nmake[1]: *** [Makefile:21: check-navigation] Error 1\nmake: *** [Makefile:17: check-navigation] Error 2\n"
+      },
+      {
+        "command": [
+          "python3",
+          "research/scripts/research.py",
+          "check"
+        ],
+        "exit_code": 1,
+        "output": "Traceback (most recent call last):\n  File \"/home/royvanrijn/src/jacobian-research/research/scripts/research.py\", line 561, in <module>\n    raise SystemExit(main())\n                     ^^^^^^\n  File \"/home/royvanrijn/src/jacobian-research/research/scripts/research.py\", line 438, in main\n    validate_lessons(items, entries, check_reviews=args.command == \"check\")\n  File \"/home/royvanrijn/src/jacobian-research/research/scripts/research.py\", line 128, in validate_lessons\n    assert (ROOT / p).is_file(), f\"{item['id']}: missing source {p}\"\n           ^^^^^^^^^^^^^^^^^^^^"
+      }
+    ],
+    "historical_artifacts_reconstructed": false,
+    "unrelated_authoritative_checker_hashes_refreshed": false
+  },
+  "formal_verification": false,
+  "external_review": false,
+  "unrestricted_singleton_zero_properness_proved": false,
+  "full_goal_complete": false,
+  "current_artifact_sha256": {
+    "ODD_IMAGE_INTERSECTIONS.md": "69ccdaca0efd8958e4024570fd7cbd3bf896e788bfbb64d32af70fd3b040dd32",
+    "verify_odd_intersections.py": "be323ff00c11573a7e95aee4f1b993779abbe36e6f4f03caeac1a7e1f520592a",
+    "odd_intersection_ledger.json": "f5b5c284965af13cb3b3438a8edf8565b179c8d988f90a7b7f429cdc25edf3aa",
+    "odd_intersection_receipt.json": "695edb927110989be8ba21f7f89a4674132e31fd94a01827e79a524995cdd55e",
+    "README.md": "bbbcad27a3811f136181545e34d0676487ccf308918c47ef2f659377ca6dc1a2",
+    "INPUT_GATE.md": "7debd49dcff0c34cc79c750ea3383739b7dde29f2a700fc916e368537ff2a9cc"
+  },
+  "supersedes_navigation_validation_of": [
+    "validation.json",
+    "global_validation.json",
+    "inverse_validation.json",
+    "discriminant_validation.json",
+    "infinity_validation.json",
+    "residue_validation.json",
+    "simple_radial_validation.json",
+    "global_monodromy_validation.json",
+    "wright_image_validation.json",
+    "singleton_valuation_validation.json",
+    "image_norm_validation.json",
+    "four_branch_validation.json",
+    "nonimmersed_validation.json",
+    "generic_line_validation.json"
+  ]
+}

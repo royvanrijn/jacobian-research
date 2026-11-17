@@ -1,0 +1,23 @@
+{
+  "claim": "QCR1",
+  "status": "SCOPED_PASS",
+  "claim_schema_sources_hashes_and_consumers": "PASS",
+  "new_method_and_scope_reviews": "PASS",
+  "work_destination_and_scope_reviews": "PASS",
+  "retained_input_hash_and_exact_control_receipt": "PASS",
+  "python_compile": "PASS",
+  "changed_tracked_files_diff_check": "PASS",
+  "local_markdown_links_checked": 132,
+  "status_renderer": {
+    "exit_code": 1,
+    "result": "AssertionError: KDSQ6: missing document consumer artifacts/generated-results/README.md"
+  },
+  "navigation_renderer": {
+    "exit_code": 1,
+    "result": "Historical navigation output omitted during repository reorganization."
+  },
+  "proof_sha256": "3c5180bee0a250a16a3e93d8a08d8eec42874b3cde5a7f64c06051ad079ddbd0",
+  "boundary": "The all-rank centralizer theorem imports published polynomial-dependence theory. Formal centralizer exhaustion, R-fixing, all-degree conjugate ambiguity and the fixed-triple boundedness equivalence are written proofs. No bound for Long, admission of arbitrary quantum triples or unrestricted bounded gauge normalization is established. No independent theorem replay, external review or formal verification.",
+  "previous_goal_turn": "progress: QCC1 established stable component noncompletion, polynomial shear classification and a finite-eigenspace centralizer-capacity criterion",
+  "goal_status": "active"
+}

@@ -1,0 +1,48 @@
+{
+  "as_of": "2026-11-13",
+  "sources": [
+    {
+      "file": "chau-pencil-2011.pdf",
+      "url": "https://www.impan.pl/shop/en/publication/transaction/download/product/85398",
+      "sha256": "7b9c383c280dd8fd8c7262d0c1d57aaac2ba40a450ed283f5e93443a51300c29",
+      "bytes": 175530,
+      "use": "Published main Theorem1 and rational-pencil lemma; full hypotheses retained"
+    },
+    {
+      "file": "stacks-blowup-0805.html",
+      "url": "https://stacks.math.columbia.edu/tag/0805",
+      "sha256": "68335ca2ba9f7be67d21f84a1d5dfaf4a54c5b8fa32fe9bd4d6deae526b717fa",
+      "bytes": 15195,
+      "use": "Flat base change for blowups"
+    },
+    {
+      "file": "stacks-dvr-0EXQ.html",
+      "url": "https://stacks.math.columbia.edu/tag/0EXQ",
+      "sha256": "aa48a4b8ccf03b73abcc98740824ce5fbe64dd0fc968de4dda89596e8426f3d1",
+      "bytes": 24479,
+      "use": "Remark15.113.6 sum of ramification index times residue degree"
+    },
+    {
+      "file": "de-bondt-2610.24889-abs.html",
+      "url": "https://arxiv.org/abs/2610.24889",
+      "sha256": "2d9cfd2abaace262c291f10920e0001b2792a57fb254973e24776e808597548c",
+      "bytes": 42442,
+      "use": "Current primary listing rechecked: v1,17 October2026"
+    },
+    {
+      "file": "gao-2608.00222-abs.html",
+      "url": "https://arxiv.org/abs/2608.00222",
+      "sha256": "57887acf6bcd447d36c6388d4f3e9947caea6cdcd844a40af6006e6dbb381ece",
+      "bytes": 41601,
+      "use": "Current primary listing rechecked: v2,4 November2026; full F4-F7 fibres still open"
+    },
+    {
+      "file": "jelonek-1993-publisher.html",
+      "url": "https://www.impan.pl/en/publishing-house/journals-and-series/annales-polonici-mathematici/all/58/3/107876/the-set-of-points-at-which-a-polynomial-map-is-not-proper",
+      "sha256": "987cd6334fc2fd82befa8d5c1e999d7f03bf2bfe86bb7230cfdef26ae42917e0",
+      "bytes": 41160,
+      "use": "Publisher theorem abstract: nonproperness/local-covering locus is empty or a hypersurface; not a new proof audit"
+    }
+  ],
+  "prior_geometric_imports_research_relative": "hessian/hc4-relative-row-orbit/sources/manifest.json"
+}

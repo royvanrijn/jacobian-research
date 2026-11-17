@@ -1,0 +1,26 @@
+{
+  "record": "https://zenodo.org/records/21803325",
+  "retrieved": "2026-11-17",
+  "files": [
+    {
+      "file": "lean_proof.zip",
+      "md5": "4b04312aa251e4207dbaa2f1ef7a6564",
+      "sha256": "746af982e0f8180e1f00b3d58ed23444a531985bc509aa9d909c4a3da47c9ac6"
+    },
+    {
+      "file": "references.bib",
+      "md5": "80f9008f75ea7a61056d93a23be9e688",
+      "sha256": "6450e9b4bf4053cd3fe8b2572f9abd7e38b80ebe00d4e0dfddac24b72179becc"
+    },
+    {
+      "file": "generalized-vanishing-two-variables.pdf",
+      "md5": "5bdc456562220929376fa01bf4066878",
+      "sha256": "9e99eefc18ab8f2d38f651df893fec105b269ac67da1b96cbe398fdfde016b0e"
+    },
+    {
+      "file": "main.tex",
+      "md5": "dba9c116f8725f3d8d77a7e8f6ab6509",
+      "sha256": "05336178811da3d626c2bcccb8199da52775537f2aeb6c4ccae909578120ff78"
+    }
+  ]
+}

@@ -1,0 +1,80 @@
+{
+  "date": "2026-11-16",
+  "new_claim": "GVCFORMALRATIONALSLOPE20261116",
+  "new_lesson": "METHOD-GVC-RATIONAL-ACTUAL-SURVIVAL-20261116",
+  "canonical_proof": "moments/vanishing/BOUNDED_BERNSTEIN_STEPS_AND_RATIONAL_SURVIVAL_SLOPES.md",
+  "canonical_proof_sha256": "4a7d6bd50a5f789c27e75a9e54fd408ec83134eecb4545785328a58de0e45289",
+  "checker": "moments/vanishing/verify_rational_survival_slopes.py",
+  "checker_sha256": "6ea95179cf29263ebd986ef97be6a70cff2e7dddd24323a497bfa6ee06409ff2",
+  "receipt": "moments/vanishing/rational_survival_slopes_verification.json",
+  "receipt_sha256": "34c533d1114889035bbdee9b86ce7dc495223d016271821916bd886f575beae5",
+  "candidate_provenance": {
+    "draft": "jacobian/cross-programme-connections/BOUNDED_BERNSTEIN_STEPS_AND_RATIONAL_APOLAR_SLOPES_2026_11_16.tex",
+    "draft_sha256": "0fef83bcd740b6e5e19119e4e34a2e0bf70c5e2ba883b4f3d45a58494654b238",
+    "audit": "jacobian/cross-programme-connections/bounded-bernstein-rational-slopes-audit-2026-11-16.json",
+    "audit_sha256": "01e54fee0718c3fe1525cf5be538bf3233c261683048af7b8babf7307fdb5db5",
+    "attribution": "Candidate supplied by the user’s separate research thread;bounded-step and lattice arguments adopted after internal audit. Original draft/audit preserved unchanged. Finite exact parallel-line support and the general non-pure affine-safety alternative written in the new canonical proof."
+  },
+  "primary_sources": [
+    {
+      "authors": "Z.Mebkhout,L.Narvaez-Macarro",
+      "title": "La theorie du polynome de Bernstein-Sato pour les algebres de Tate et de Dwork-Monsky-Washnitzer",
+      "url": "https://www.numdam.org/item/ASENS_1991_4_24_2_227_0/",
+      "doi": "10.24033/asens.1627",
+      "retained_file": "moments/vanishing/sources/mebkhout_narvaez_1991_generic_twist_20261116.pdf",
+      "read": "Theorem3.1.1 and proof,physical11-12/printed236-237;formal Section4.2,physical16/printed241;text and complete rendered pages checked this turn. Broader hypotheses read in retained audit.",
+      "exact_import": "For an element of an actual minimal-dimensional differential module over the stated formal coefficient ring and ANY coefficient functionlambda,one finite ordinary equation B(s)u*lambda^s=Q(s)lambda*u*lambda^s exists;initial specialization is localized,so the written finite-torsion descent is necessary.",
+      "sha256": "fdaeadfc6b9466f10d07f347681989b323cb3f0a6f6e96d0d19cc1a74a9f31e2",
+      "bytes": 3435904
+    },
+    {
+      "authors": "Vojtech Jarnik",
+      "title": "Uber die Gitterpunkte auf konvexen Kurven",
+      "url": "https://www.dml.cz/handle/10338.dmlcz/500690",
+      "retained_file": "moments/vanishing/sources/jarnik_1926_convex_lattice_20261116.pdf",
+      "read": "Complete physical2-4/printed500-502,text and rendered pages;Theorem1 arc setup versus Theorem2 closed-curve setup and initial distinct-chord proof checked.",
+      "exact_import": "Classical provenance ONLY for the weak O(length^(2/3)) strictly convex graph lattice bound. The canonical proof gives the complete elementary distinct-integer-vector argument;no sharp constants,closed-curve hypothesis,curvature-radius estimate or later unread proof imported.",
+      "sha256": "997d039b0aeea13271007126a261eb249605c98fed9f0a97522091f66882ac97",
+      "bytes": 4557234
+    }
+  ],
+  "retained_dependency_proofs": {
+    "moments/vanishing/GENERIC_BERNSTEIN_EQUATIONS_AND_FORMAL_GAP_CLOSURE.md": "9f3f8f003dae69abe255bcddf03606c00bcc5a4245028163a8c1750adfca4e2f",
+    "moments/vanishing/FORMAL_SHIFTED_POWERS_AND_APOLAR_NILPOTENCE_GAPS.md": "b57ed27e9ae046d57ad584f88d6673619c866324389e8e3dfa015dec2d866e5c",
+    "moments/vanishing/FORMAL_SAFETY_OVER_ALL_COEFFICIENT_RINGS.md": "3b8cd0768af6fedf4e312cca06ccf1cb919ae2ba1c7acca7358215e3142b738e"
+  },
+  "proof_audit": {
+    "actual_module": "SAME holonomic cyclic imageM inE;no completed-multiplier eventuality. The ordinarylambda Bernstein equation needs no further generic-parameter descent.",
+    "actual_specialization": "Finite PBW difference lambda^(s-A0)u(s),uniform finite lambda torsionA1;actual k>=A0+A1 kills it with existing power. No indexshift and no discarded nilpotent torsion.",
+    "order_bound": "Left PBW coefficients preserveeta-order,partial_xi=-x preserves it,partial_eta lowers byatmost1. ScalarB(k) is nonzero off finitelymanyroots,so tau_(k+1)-tau_k<=J.",
+    "lattice": "Rational component polynomial;finite real Puiseux branches at infinity. Bounded steps prevent late cluster changes. Each nonlinear bounded-derivative branch is eventually strictly convex/concave and hasO(N^(2/3)) integer points by distinct chord vectors;one rational affine line is forced.",
+    "exact_offsets": "Bounded rational-slope error gives finitelymany integer offsets;restriction of the polynomial to each line has finitelymany roots unlessidenticallyzero. All late selected offsets are exact linefactors.",
+    "height": "Only the RUNNING maximum is inverse to tau. Passive spectator realizesit exactly. Originalh_m has only reciprocal rational limsup;no missing powers silently filled.",
+    "safety": "General eventual safety implies eventualQ1purity,which kills ALL lowerphasepowers for largeoperatorindex. Together with finitelymanynonnegative shifts this forces tau_k-k->infinity;rho>1 is necessary. Converselypositivegap gives affine cutoff;fullpurity plus retainedfieldtheorem giveslinear. Rho1 has a repeated positive offset and literal badmarkerP^d.",
+    "result": "Internal argument accepted after these scope/index checks. No mathematical assurance flag is promoted by this audit or the classical imports."
+  },
+  "exact_controls": {
+    "two_variable_controls": 6,
+    "unary_unit_controls": 16,
+    "retained_unsafe_pure_seed_controls": 3,
+    "running_height_inverse_controls": 3,
+    "abstract_boundary_controls": 2
+  },
+  "not_claimed": [
+    "all original heights have bounded error",
+    "eventually periodic offsets",
+    "all-ring rational slope",
+    "pure-to-safe GVC",
+    "either full exceptional MZ case",
+    "universal numeric slope/cutoff/denominator",
+    "general implemented Bernstein producer"
+  ],
+  "retained_recent_claims_read": [
+    "GHAARSUSPENSION20261116",
+    "GEXCEPTIONALLONGALLH20261116"
+  ],
+  "next_full_obligation": "Complete exceptional actual-purity-to-global-unit-splitting/corrected-torus-order theorem or actual invariant failure. Field/all-ring formal implications stay closed;explicit producers and least coefficients remain separate.",
+  "independent_replay": false,
+  "formal_verification": false,
+  "external_review": false
+}

@@ -1,0 +1,27 @@
+{
+  "title": "The Exact Nonproperness Locus of the Quadratic-Gauge Keller Maps",
+  "author": {
+    "name": "Roy van Rijn",
+    "orcid": "0009-0000-2808-0645"
+  },
+  "summary": "Computes the exact reduced nonproperness locus, boundary fibre table and discriminant order for the quadratic-gauge maps.",
+  "published": false,
+  "status": "draft",
+  "source": "main.tex",
+  "pdf": "paper.pdf",
+  "build": "latexmk -pdf -interaction=nonstopmode -halt-on-error main.tex",
+  "verification": "Written geometric arguments with an exact symbolic audit; these results are not part of the Lean formalization.",
+  "next_steps": [
+    "Review the geometric proof and exact symbolic audit.",
+    "Decide whether to develop this companion into a submission."
+  ],
+  "catalogued_on": "2026-11-17",
+  "abstract": "For the all-degree quadratic-gauge Keller maps, we identify the reduced\nnonproperness locus with the discriminant of the scalar inverse equation.\nWe compute the complete fiber table on the degenerate slice \\(\\Pi=0\\) and\nthe exact global \\(\\Pi\\)-adic order of the discriminant.  These geometric\nresults are independent of the prescribed finite-\\'etale-fiber theorem.",
+  "abstract_format": "latex",
+  "abstract_source": "main.tex",
+  "resource_type": {
+    "title": "Preprint",
+    "type": "publication",
+    "subtype": "preprint"
+  }
+}

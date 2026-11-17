@@ -1,0 +1,65 @@
+{
+  "scope": "Gao metadata and the sharp maximum-five exclusion only",
+  "status": "PASS",
+  "registered_Gao_claims": 14,
+  "Gao_methods": 8,
+  "work_claims": 14,
+  "new_theorem_registered": "GAOF7MULT1",
+  "certificate_replay": "PASS",
+  "replay_checks": 2426,
+  "replay_seconds": 28.93515584501438,
+  "exact_resultant_evaluation_points": 1157,
+  "resultant_degree_bounds": [
+    364,
+    405,
+    385
+  ],
+  "coprimality_sylvester_shape": [
+    623,
+    623
+  ],
+  "coprimality_det_mod": 919631120,
+  "exceptional_multiplier_terms": [
+    34,
+    355
+  ],
+  "sharpness": "Exact known rational Y0 factorization; no Hensel inference needed.",
+  "checker_certificate_and_input_hashes_match": true,
+  "byte_identical_input_regeneration": "PASS",
+  "syntax_checks": "PASS",
+  "local_markdown_links_checked": 135,
+  "generated_views": 26,
+  "scoped_git_diff_check": "PASS",
+  "full_checks": [
+    {
+      "status": "FAIL_EXISTING_MISSING_ARTIFACT",
+      "reason": "KDSQ6: artifacts/generated-results/README.md missing"
+    },
+    {
+      "status": "FAIL_EXISTING_MISSING_ARTIFACT",
+      "reason": "Historical navigation output omitted during repository reorganization."
+    }
+  ],
+  "remaining_three_point_types": [
+    [
+      5,
+      4
+    ],
+    [
+      5,
+      2,
+      2
+    ],
+    [
+      4,
+      3,
+      2
+    ],
+    [
+      3,
+      2,
+      2,
+      2
+    ]
+  ]
+}

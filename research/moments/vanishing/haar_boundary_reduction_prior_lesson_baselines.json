@@ -1,0 +1,132 @@
+{
+  "METHOD-HAAR-GLOBAL-ORBIT-SPLITTING-AND-BOUNDARY-RADICAL-20261116": {
+    "id": "METHOD-HAAR-GLOBAL-ORBIT-SPLITTING-AND-BOUNDARY-RADICAL-20261116",
+    "area": "geometry",
+    "programme_status": "archived",
+    "title": "Use GLOBAL splitting INSIDE the physical Haar orbit and isolate the boundary-lowering radical",
+    "when": "Seeking a full all-degree exceptional theorem after local xi/beta and Jordan bounds,without discarding nonsemisimple or high-rank compact-middle cases.",
+    "use": "Actual Cauchy FUNCTIONS before polynomial quotient form a finite quotient of full complement connection,dual to the entire Haar orbit W. A GLOBAL invariant ambient lift INSIDE W gives a rational retraction;PP0 and actual indecomposability make eventual-pure safety equivalent to its existence and to dimW1. Global full-complement semisimplicity suffices and reflects EVERY polynomial H before purity. Pure geometric weight grades are globally semisimple,so the monodromy algebra radical J strictly lowers weights4/5/6 and J3=0. Failure is exactly actual rational unit u in JM. Generic fibre H2 PURE weight2,of any rank,closes ALL eventual-pure composites and all original markers.",
+    "avoid": "Confusing global semisimplicity with each local matrix;using a full-extension fixed lift outside W or separate local lifts;quotienting Cauchy functions by polynomials before preserving the rational unit;using ordinary generic GM/exponential localization;equating global radical with local N or coefficient-state ideal;inferring failure from large boundary ranks or universal safety from compact-middle size3 alone.",
+    "boundary": "Both COMPLETE exceptional MZ cases remain OPEN. Global actual unit splitting and generic H2 purity are not universal. A failure needs higher fibre weights3/4 AND nonsplit mixed-weight GLOBAL monodromy putting u in JM. Actual pure safe phases have unbounded such boundary spaces. Full source semisimplicity sufficient not necessary;actual quotient need not inherit a Hodge structure. Deep Deligne semisimplicity is imported,not independently reproved. No all-ring topological promotion,general monodromy/orbit producer or universal machine proof; review deferred.",
+    "reopen_when": "Prove every actual exceptional eventually pure phase has u outside JM,equivalently a GLOBAL invariant lift INSIDE its physical orbit,or realize an admissible failure. Retain all branches and H degrees;global complement semisimplicity now reflects H,and pure-middle arbitrary-rank systems are closed. Remaining geometry is actual mixed-weight boundary coupling,not arbitrary compact-middle monodromy.",
+    "claims": [
+      "GHAARGLOBALSPLIT20261116",
+      "GHAARGLOBRECOMP20261116",
+      "GHAARBOUNDARYRAD20261116"
+    ],
+    "sources": [
+      "moments/vanishing/GLOBAL_HAAR_ORBIT_SPLITTING_AND_BOUNDARY_RADICAL.md",
+      "moments/vanishing/haar_global_radical_source_audit.json"
+    ],
+    "implementation": [
+      "moments/vanishing/verify_haar_global_radical.py"
+    ],
+    "keywords": [
+      "Mathieu",
+      "global monodromy",
+      "Haar orbit",
+      "rational unit splitting",
+      "Jacobson radical",
+      "pure middle cohomology",
+      "polynomial recomposition",
+      "closure first"
+    ],
+    "reviewed_claims": {
+      "GHAARGLOBALSPLIT20261116": "e09d8f73543f3de1",
+      "GHAARGLOBRECOMP20261116": "b97deb153eb5fcf3",
+      "GHAARBOUNDARYRAD20261116": "17d9b9a5bac2f582"
+    }
+  },
+  "METHOD-HAAR-CUBIC-NILPOTENCE-AND-QUADRATIC-LOGS-20261116": {
+    "id": "METHOD-HAAR-CUBIC-NILPOTENCE-AND-QUADRATIC-LOGS-20261116",
+    "area": "geometry",
+    "programme_status": "archived",
+    "title": "Bound every complement Jordan block by three and test actual logarithms on a finite ORIGINAL basis",
+    "when": "Handling ANY actual phase,including the nonsemisimple residual Haar motion on both full exceptional quotients,at any degree or puncture.",
+    "use": "The full complement limit Hodge strip1..3 gives N3=0 at every P1 puncture and all original eigenvalues. Every size-three block comes from the compact-middle IMAGE W2 H2(F); imageN2=M2 B and is disjoint from the ambient line. Original periods have at most quadratic logs. Extract rho=1+b2(F) fixed original simple-pole markers as a generic de Rham basis. Their meromorphic first/quadratic log coefficients detect all actual projected motion; under eventual purity absence gives full all-marker safety.",
+    "avoid": "Using nearby Griffiths transversality alone instead of the limit MHS type of N;assuming M=W;applying(T-I)^3=0 off eigenvalue1;making N2 injective on the entire top limit grade;replacing the compact-middle image by full compactification cohomology;calling general meromorphic coefficients algebraic;using only quadratic logs or the unit marker;replacing a meromorphic identity by a bounded jet.",
+    "boundary": "Both COMPLETE exceptional MZ cases remain OPEN. The universal Jordan/log bounds do not force actual logarithms zero under purity. A split intrinsic extension can retain a physical lift with N_h2 nonzero. The finite original basis depends on f,rank/degree are not universally bounded,and no general basis/canonical-frame producer is implemented. No all-ring topological promotion or universal machine verification; review deferred. The GLOBAL actual-Cauchy criterion now closes residual beta whenever a GLOBAL invariant ambient lift lies INSIDE the full physical Haar orbit W;under eventual purity this is equivalent to dimW1. Global complement semisimplicity reflects EVERY H before purity. The global monodromy radical J lowers weights4/5/6,J3=0,and failure is exactly actual rational unit u in JM. Generic fibre H2 PURE weight2,of ANY rank,closes ALL eventual-pure composites;remaining failures need higher boundary weights AND nonsplit global unit coupling.",
+    "reopen_when": "Prove all first/quadratic logarithms vanish for EVERY actual exceptional eventually pure phase,or realize an admissible failure. Use the hard size-three bound and compact-middle source instead of assuming arbitrary Jordan complexity;retain intrinsic xi and residual beta and every primitive branch/composite. Target u outside JM for EVERY exceptional eventual-pure phase,retaining all branches/composites. Do not confuse global representation semisimplicity with local matrices or allow fixed lifts outside the physical orbit.",
+    "claims": [
+      "GHAARCUBEMON20261116",
+      "GHAARQUADLOG20261116",
+      "GHAARGLOBALSPLIT20261116",
+      "GHAARGLOBRECOMP20261116",
+      "GHAARBOUNDARYRAD20261116"
+    ],
+    "sources": [
+      "moments/vanishing/CUBIC_NILPOTENCE_AND_QUADRATIC_HAAR_LOGARITHMS.md",
+      "moments/vanishing/haar_quadratic_logs_source_audit.json",
+      "moments/vanishing/GLOBAL_HAAR_ORBIT_SPLITTING_AND_BOUNDARY_RADICAL.md",
+      "moments/vanishing/haar_global_radical_source_audit.json"
+    ],
+    "implementation": [
+      "moments/vanishing/verify_haar_quadratic_logs.py"
+    ],
+    "keywords": [
+      "Mathieu",
+      "Hodge strip",
+      "cubic nilpotence",
+      "quadratic logarithms",
+      "compact middle image",
+      "original marker basis",
+      "closure first"
+    ],
+    "reviewed_claims": {
+      "GHAARCUBEMON20261116": "3bf7453a345e2768",
+      "GHAARQUADLOG20261116": "6fb7a3aa8b259ee2",
+      "GHAARGLOBALSPLIT20261116": "e09d8f73543f3de1",
+      "GHAARGLOBRECOMP20261116": "b97deb153eb5fcf3",
+      "GHAARBOUNDARYRAD20261116": "17d9b9a5bac2f582"
+    }
+  },
+  "METHOD-HAAR-UNIPOTENT-TATE-AND-COINVARIANTS-20261116": {
+    "id": "METHOD-HAAR-UNIPOTENT-TATE-AND-COINVARIANTS-20261116",
+    "area": "geometry",
+    "programme_status": "archived",
+    "title": "Separate the intrinsic Tate coinvariant obstruction from residual actual Haar motion in every unipotent case",
+    "when": "Handling the full exceptional monodromy obstruction without assuming fibre1 semisimple,including every primitive branch and recomposition degree.",
+    "use": "Intrinsic xi=[d] in F/(A-I)F is always lift independent. Exact geometric limit MHS and the kernel weight bound force its connecting delta to factor through J, the image of local invariants in the top Tate weight. Nonzero delta certifies eventual-pure failure. If xi0, retain the ACTUAL beta in F1/ker(A-I); its zero is exactly all-marker safety under eventual purity. Cyclic branch SUM sends composite xi to the full tuple of primitive classes for every H, without semisimplicity.",
+    "avoid": "Treating arbitrary relative filtrations as exact limits; confusing original W with relative M; replacing J by the entire top Tate space; identifying every actual nonsemisimple motion with Tate homology; confusing coinvariants with quotient by fixed cycles; using the old1/e fixed-vector factor on the new quotient-level sum; inferring safety or pure-composite existence from an empty or nonempty intrinsic set alone.",
+    "boundary": "Both COMPLETE exceptional MZ cases remain OPEN. The two obstruction gates are exact but not universally zero. A rational fixed lift is not actual Haar invariance or an integral fixed lift. The general Tate statement concerns intrinsic xi, while nonsemisimple residual beta remains. Quotient transfer has factor1 and the old semisimple vector1/e rule remains valid. No general MHS/lattice/cycle producer, all-ring promotion or universal machine verification; review deferred. Every full complement Jordan block is now bounded by size3 at ALL P1 punctures,without semisimplicity or purity. All size-three blocks come from the compact-middle IMAGE W2 H2(F),not boundary/ambient extensions. Original logs have degree<=2 with general MEROMORPHIC coefficients. A finite original simple-pole basis detects all motion,but purity does not yet force its logs zero. The GLOBAL actual-Cauchy criterion now closes residual beta whenever a GLOBAL invariant ambient lift lies INSIDE the full physical Haar orbit W;under eventual purity this is equivalent to dimW1. Global complement semisimplicity reflects EVERY H before purity. The global monodromy radical J lowers weights4/5/6,J3=0,and failure is exactly actual rational unit u in JM. Generic fibre H2 PURE weight2,of ANY rank,closes ALL eventual-pure composites;remaining failures need higher boundary weights AND nonsplit global unit coupling.",
+    "reopen_when": "Prove intrinsic delta_J zero for EVERY actual exceptional eventually pure phase, then actual beta0 whenever xi0, or realize a genuine failure. The intrinsic transfer now covers ALL fibre1 Jordan cases and every polynomial H; do not leave an artificial semisimplicity restriction on it. Keep all original markers, full bifurcations and physical continuation for residual motion. Retain the cubic-nilpotence/quadratic-log bound and the finite ORIGINAL-basis identity test;do not introduce higher Jordan-size or finite-jet campaigns. Target u outside JM for EVERY exceptional eventual-pure phase,retaining all branches/composites. Do not confuse global representation semisimplicity with local matrices or allow fixed lifts outside the physical orbit.",
+    "claims": [
+      "GHAARUNIPTATE20261116",
+      "GHAARCOINRECOMP20261116",
+      "GHAARCUBEMON20261116",
+      "GHAARQUADLOG20261116",
+      "GHAARGLOBALSPLIT20261116",
+      "GHAARGLOBRECOMP20261116",
+      "GHAARBOUNDARYRAD20261116"
+    ],
+    "sources": [
+      "moments/vanishing/UNIPOTENT_HAAR_EXTENSIONS_AND_GENERAL_RECOMPOSITION.md",
+      "moments/vanishing/haar_unipotent_tate_source_audit.json",
+      "moments/vanishing/CUBIC_NILPOTENCE_AND_QUADRATIC_HAAR_LOGARITHMS.md",
+      "moments/vanishing/haar_quadratic_logs_source_audit.json",
+      "moments/vanishing/GLOBAL_HAAR_ORBIT_SPLITTING_AND_BOUNDARY_RADICAL.md",
+      "moments/vanishing/haar_global_radical_source_audit.json"
+    ],
+    "implementation": [
+      "moments/vanishing/verify_haar_unipotent_tate.py"
+    ],
+    "keywords": [
+      "Mathieu",
+      "unipotent extension",
+      "Tate invariants",
+      "coinvariants",
+      "residual Haar motion",
+      "polynomial recomposition",
+      "closure first"
+    ],
+    "reviewed_claims": {
+      "GHAARUNIPTATE20261116": "cf1e470fffbb3735",
+      "GHAARCOINRECOMP20261116": "29e2ca93100a1729",
+      "GHAARCUBEMON20261116": "3bf7453a345e2768",
+      "GHAARQUADLOG20261116": "6fb7a3aa8b259ee2",
+      "GHAARGLOBALSPLIT20261116": "e09d8f73543f3de1",
+      "GHAARGLOBRECOMP20261116": "b97deb153eb5fcf3",
+      "GHAARBOUNDARYRAD20261116": "17d9b9a5bac2f582"
+    }
+  }
+}

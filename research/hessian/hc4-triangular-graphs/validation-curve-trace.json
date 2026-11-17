@@ -1,0 +1,63 @@
+{
+  "scoped_validation": "PASS",
+  "python_compilation": "PASS",
+  "affected_tracked_diff_whitespace": "PASS",
+  "new_proof_and_checker_whitespace": "PASS",
+  "repository_navigation_failures_rechecked_after_final_edits": true,
+  "checks": [
+    "HC4MYGC1 schema, source hash, retained evidence, dependencies and assurance",
+    "HC4MYGC2 schema, source hash, retained evidence, dependencies and assurance",
+    "HC4MYGC3 schema, source hash, retained evidence, dependencies and assurance",
+    "broader objective remains open and both scoped closures have reciprocal dependency edges",
+    "new and affected method records have valid sources and current scope reviews",
+    "WORK-HC4-SCHUR retires closed families and preserves the actual remaining scope",
+    "WORK-HC4-RESIDUAL-AUDIT retires closed families and preserves the actual remaining scope",
+    "receipt-curve-trace.json matches the current canonical proof and checker",
+    "receipt-automorphic-trace.json matches the current canonical proof and checker",
+    "receipt-first-slice.json matches the current canonical proof and checker",
+    "maintained proof and entry-point local links"
+  ],
+  "exact_replay_checks": {
+    "receipt-curve-trace.json": 59,
+    "receipt-automorphic-trace.json": 73,
+    "receipt-first-slice.json": 52
+  },
+  "previous_goal_turn": "progress: automorphic-trace proof and 73-check replay revalidated from the current tree",
+  "new_claims": [
+    "HC4MYGC1",
+    "HC4MYGC2",
+    "HC4MYGC3"
+  ],
+  "written_proof_coverage": [
+    "all three base-projection ranks",
+    "rational pole specialization at arbitrary nilpotence orders",
+    "the flat rank-one curve case",
+    "nonlinear base automorphisms without suppressing Hessian correction",
+    "hyperbola affine span after every base automorphism",
+    "characteristic-zero descent"
+  ],
+  "external_mathematical_inputs": [
+    "HCTANG2",
+    "classical Rentschler endpoint in HC4MYGV0"
+  ],
+  "generated_views_refreshed": [
+    "index/core.md",
+    "index/geometry.md",
+    "index/hessian.md",
+    "index/README.md",
+    "index/documents.tsv",
+    "STATUS.md"
+  ],
+  "rendering": "Existing renderer APIs; full repository validation has a separately recorded failure",
+  "full_registry_validation_failure": "KDSQ6: missing document consumer artifacts/generated-results/README.md",
+  "known_research_navigation_failure": "Historical navigation output omitted during repository reorganization.",
+  "missing_artifacts_reconstructed": false,
+  "standard_r_base_and_dual_automorphisms_closed": true,
+  "standard_p_graphs_and_affine_dual_changes_closed": true,
+  "p_chart_nonlinear_dual_affine_endpoint_closed": false,
+  "q_chart_closed": false,
+  "base_eliminated_charts_closed": false,
+  "arbitrary_nonlinear_base_dual_mixing_closed": false,
+  "general_HC4_or_JC2_resolved": false,
+  "original_goal_complete": false
+}

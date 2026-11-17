@@ -1,0 +1,111 @@
+{
+  "scoped_validation": "PASS",
+  "claims": [
+    "HC4MYKI0",
+    "HC4MYKI1",
+    "HC4MYKI2"
+  ],
+  "checks": [
+    "HC4MYKI0 schema,dependencies,immutable input presence and assurance",
+    "HC4MYKI1 schema,dependencies,immutable input presence and assurance",
+    "HC4MYKI2 schema,dependencies,immutable input presence and assurance",
+    "critical Gorenstein/source recovery,type-jump restrictions and the first-orbit-module generator test retain exact isolation and actual-fibre hypotheses",
+    "prior descent,one-value,weighted-residue and source-normal-form records retain old evidence and point to the stronger critical-type gate",
+    "106 sourced methods and affected fingerprints close critical CI cases and target the genuine non-Gorenstein/at-least-four-generator remainder",
+    "both work actions preserve the broader full HC4/JC2 goal and unrestricted cotangent counterexample route alongside the conditional native critical-type gate",
+    "74 exact controls bind arbitrary-power genuine A4 actions,h-dependent source/critical equations,mixed Hessians,type jumps and the standard three-generator module",
+    "the primary torsor-local Rees conclusion is not globalized at the Morse point;no automatic type-one or global module bound is imported",
+    "proof/navigation expose the local h-dependent CI closure,genuine nonisolated control,total-length gap and exact rank-two-but-three-generator standard model",
+    "generated navigation matches the latest authoritative ledger,methods and work data",
+    "full HC4/JC2 and the remaining native non-CI,source-alignment,Keller-fibre and endpoint gates remain unresolved with prior inputs retained"
+  ],
+  "scoped_check_groups": 12,
+  "exact_current_replay_checks": 74,
+  "algebraic_and_scope_controls": 43,
+  "new_proved_imports": 0,
+  "new_unproved_external_statements": 0,
+  "critical_actual_Gorenstein_fibre_forces_length_one_under_isolation": true,
+  "h_dependent_local_CI_plinth_source_presentation_proved": true,
+  "native_alignment_recognized_by_critical_type_one_fibres": true,
+  "native_thick_components_require_special_nonGorenstein_type_jump": true,
+  "native_total_plinth_length_has_gap_N_or_at_least_N_plus_two": true,
+  "first_orbit_module_generators_equal_two_plus_actual_critical_socle_type": true,
+  "genuine_A4_h_dependent_Gorenstein_fat_control_has_nonisolated_critical_line": true,
+  "standard_first_orbit_module_is_not_locally_free_at_Morse_quotient_point": true,
+  "critical_Gorenstein_property_proved_automatic_for_all_native_actions": false,
+  "native_first_orbit_module_three_generator_bound_proved_automatic": false,
+  "normalized_residue_cokernel_value_torsion_ruled_out_for_all_native_actions": false,
+  "generic_Gorenstein_property_can_replace_actual_critical_Gorenstein_test": false,
+  "specialized_class_annihilator_can_replace_actual_ideal_fibre": false,
+  "first_orbit_module_rank_two_implies_local_freeness_at_critical_point": false,
+  "Rees_finite_generation_or_global_symmetric_algebra_proved_for_native_action": false,
+  "all_h_preserving_actions_classified": false,
+  "an_individual_native_action_with_required_kernel_and_plinth_constructed": false,
+  "S_rho_normal_form_source_alignment_constructed": false,
+  "two_point_Keller_fibre_constructed_or_excluded": false,
+  "three_point_Keller_fibre_constructed_or_excluded": false,
+  "unit_ideal_endpoint_resolved": false,
+  "singleton_zero_endpoint_resolved": false,
+  "unrestricted_HC4_or_JC2_resolved": false,
+  "original_goal_complete": false,
+  "repository_checks": [
+    {
+      "name": "render-navigation",
+      "command": [
+        "make",
+        "render-navigation"
+      ],
+      "exit_code": 2,
+      "output": "make -C research PYTHON=\"/home/royvanrijn/src/jacobian-research/.venv/bin/python\" SYSTEM_PYTHON=\"python3\" \"render-navigation\"\nmake[1]: Entering directory '/home/royvanrijn/src/jacobian-research/research'\npython3 scripts/render_status.py\nTraceback (most recent call last):\n  File \"/home/royvanrijn/src/jacobian-research/research/scripts/render_status.py\", line 514, in <module>\n    main()\n  File \"/home/royvanrijn/src/jacobian-research/research/scripts/render_status.py\", line 503, in main\n    validate_index(index)\n  File \"/home/royvanrijn/src/jacobian-research/research/scripts/render_status.py\", line 360, in validate_index\n    assert consumer_path.is_file(), (\n           ^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: KDSQ6: missing document consumer artifacts/generated-results/README.md\nmake[1]: *** [Makefile:16: render-navigation] Error 1\nmake[1]: Leaving directory '/home/royvanrijn/src/jacobian-research/research'\nmake: *** [Makefile:17: render-navigation] Error 2\n"
+    },
+    {
+      "name": "check-navigation",
+      "command": [
+        "make",
+        "check-navigation"
+      ],
+      "exit_code": 2,
+      "output": "make -C research PYTHON=\"/home/royvanrijn/src/jacobian-research/.venv/bin/python\" SYSTEM_PYTHON=\"python3\" \"check-navigation\"\nmake[1]: Entering directory '/home/royvanrijn/src/jacobian-research/research'\npython3 scripts/audit_status.py\nTraceback (most recent call last):\n  File \"/home/royvanrijn/src/jacobian-research/research/scripts/audit_status.py\", line 8, in <module>\n    validate_index(index)\n  File \"/home/royvanrijn/src/jacobian-research/research/scripts/render_status.py\", line 360, in validate_index\n    assert consumer_path.is_file(), (\n           ^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: KDSQ6: missing document consumer artifacts/generated-results/README.md\nmake[1]: *** [Makefile:21: check-navigation] Error 1\nmake[1]: Leaving directory '/home/royvanrijn/src/jacobian-research/research'\nmake: *** [Makefile:17: check-navigation] Error 2\n"
+    },
+    {
+      "name": "partial-review",
+      "command": [
+        "/home/royvanrijn/src/jacobian-research/.venv/bin/python",
+        "research/scripts/research.py",
+        "check",
+        "--require-partial-review"
+      ],
+      "exit_code": 1,
+      "output": "Traceback (most recent call last):\n  File \"/home/royvanrijn/src/jacobian-research/research/scripts/research.py\", line 563, in <module>\n    raise SystemExit(main())\n                     ^^^^^^\n  File \"/home/royvanrijn/src/jacobian-research/research/scripts/research.py\", line 440, in main\n    validate_lessons(items, entries, check_reviews=args.command == \"check\")\n  File \"/home/royvanrijn/src/jacobian-research/research/scripts/research.py\", line 130, in validate_lessons\n    assert (ROOT / p).is_file(), f\"{item['id']}: missing source {p}\"\n           ^^^^^^^^^^^^^^^^^^^^"
+    },
+    {
+      "name": "required-whitespace",
+      "command": [
+        "git",
+        "diff",
+        "--check",
+        "--",
+        "research/MATH_STATUS.json",
+        "research/knowledge/lessons.json",
+        "research/knowledge/work_items.json",
+        "research/hessian/hc4-triangular-graphs/README.md",
+        "research/index",
+        "research/knowledge/work",
+        "research/knowledge/WORK_LEDGER.md",
+        "research/STATUS.md"
+      ],
+      "exit_code": 0,
+      "output": ""
+    }
+  ],
+  "required_repository_checks_all_passed": false,
+  "required_diff_whitespace_check": "PASS",
+  "own_HC4_diff_whitespace_check": "PASS",
+  "new_authored_file_whitespace_check": "PASS",
+  "own_HC4_diff_whitespace_evidence": {
+    "exit_code": 0,
+    "output": ""
+  },
+  "repository_failures_unrelated_to_HC4": true,
+  "unrelated_missing_artifacts_reconstructed": false
+}

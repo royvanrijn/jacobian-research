@@ -1,0 +1,44 @@
+{
+  "claim": "QAD1",
+  "scoped_status": "PASS",
+  "scope_fingerprint": "5c2994ec93c6f8fc",
+  "schema_dependencies_hashes_consumers": "PASS",
+  "eight_affected_methods_and_existing_work_reviews": "PASS",
+  "local_links_checked": 222,
+  "unique_equation_tags": 24,
+  "py_compile": "PASS",
+  "changed_tracked_diff_check": "PASS",
+  "exact_controls_receipt_sha256": "2cdf33c11aaf404bbf626923ba989425f8f550a9898ab6ed6037e758c9633336",
+  "global_checks": [
+    {
+      "command": ".venv/bin/python research/scripts/render_status.py --check",
+      "exit_code": 1,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/home/royvanrijn/src/jacobian-research/research/scripts/render_status.py\", line 514, in <module>\n    main()\n  File \"/home/royvanrijn/src/jacobian-research/research/scripts/render_status.py\", line 503, in main\n    validate_index(index)\n  File \"/home/royvanrijn/src/jacobian-research/research/scripts/render_status.py\", line 283, in validate_index\n    assert not hash_mismatches, \"\\n\" + \"\\n\".join(hash_mismatches)\n           ^^^^^^^^^^^^^^^^^^^\nAssertionError: \nHC4MYID0: stale checker-source hash for hessian/hc4-triangular-graphs/verify_critical_support.py; recorded sha256:2d5a276ed178a257089d5b68d8930f4c9b42de5dab44375a19ec24f8bf92dc5f, actual sha256:8a4ebb4bc4214b49738d2554d5c4e8735dbed9c43dbbd2a4a1e6107c6cfe2832\nHC4MYID1: stale checker-source hash for hessian/hc4-triangular-graphs/verify_critical_support.py; recorded sha256:2d5a276ed178a257089d5b68d8930f4c9b42de5dab44375a19ec24f8bf92dc5f, actual sha256:8a4ebb4bc4214b49738d2554d5c4e8735dbed9c43dbbd2a4a1e6107c6cfe2832\nHC4MYID2: stale checker-source hash for hessian/hc4-triangular-graphs/verify_critical_support.py; recorded sha256:2d5a276ed178a257089d5b68d8930f4c9b42de5dab44375a19ec24f8bf92dc5f, actual sha256:8a4ebb4bc4214b49738d2554d5c4e8735dbed9c43dbbd2a4a1e6107c6cfe2832\n"
+    },
+    {
+      "command": ".venv/bin/python research/scripts/research.py render",
+      "exit_code": 1,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/home/royvanrijn/src/jacobian-research/research/scripts/research.py\", line 563, in <module>\n    raise SystemExit(main())\n                     ^^^^^^\n  File \"/home/royvanrijn/src/jacobian-research/research/scripts/research.py\", line 440, in main\n    validate_lessons(items, entries, check_reviews=args.command == \"check\")\n  File \"/home/royvanrijn/src/jacobian-research/research/scripts/research.py\", line 130, in validate_lessons\n    assert (ROOT / p).is_file(), f\"{item['id']}: missing source {p}\"\n           ^^^^^^^^^^^^^^^^^^^^"
+    }
+  ],
+  "research_context": [
+    {
+      "source": "https://arxiv.org/html/2405.05421",
+      "used": "Established almost-commuting basis theorem3.5; the direct proof and finite-mate span criterion are written in the note."
+    },
+    {
+      "source": "https://eprints.whiterose.ac.uk/178183/7/rnab288.pdf",
+      "used": "Lemma1.1 Adler commutator trace; the monomial primitive is proved and checked directly."
+    }
+  ],
+  "previous_goal_turn": {
+    "classification": "progress",
+    "evidence": "QPC1 acbe91abd3b018f3 completed a universal p-power coefficient proof, full separable classification, exact controls, authoritative registration and scoped validation. This turn sought a general mixed-coefficient admission criterion and a characteristic-zero residue interpretation."
+  },
+  "proof_boundary": "Leading-divisor finite power reduction annihilates the full base low-order commutator image when its gcd with operator order is one. The rational leading-primitive equation and squarefree pole/divisibility/degree criteria use written proofs. Adler commutator exactness, scalar trace necessity, PDO dressing sufficiency and established almost-commuting basis/constant-linear finite admission use written proofs. Universal two-potential selection and the second-variation coefficient identify the characteristic-zero residue behind QPC1. Declared root, trace, cover, mixed basis, positive pair and harmonic dressing controls are finite evidence. Harmonic all-period vanishing uses the polynomial root recursion; finite nonexistence uses QSO2 and the written first-order contradiction. Vanishing periods do not supply a finite mate, h-pole dressing is not a regular bounded h-adic gauge, and a finite defect prefix does not settle the all-order constant-linear span. No arbitrary Fourier completion comparison, QRF2 identification, nonscalar matrix criterion, actual finite Long carrier, bounded full lift or DC2 resolution is asserted.",
+  "independent_replay": false,
+  "formal_verification": false,
+  "external_review": false
+}

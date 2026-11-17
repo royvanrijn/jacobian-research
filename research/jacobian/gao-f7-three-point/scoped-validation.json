@@ -1,0 +1,37 @@
+{
+  "date": "2026-11-14",
+  "scope": "Gao follow-up only; local validation receipt, not mathematical-status authority",
+  "status": "PASS",
+  "registered_claims": 11,
+  "methods": 5,
+  "work_claims": 11,
+  "exact_checker_checks": 78,
+  "identity_replays": [
+    "FLINT",
+    "retained Fraction sparse_macaulay"
+  ],
+  "checks": [
+    "Gao-only validate_index with core/open coverage disabled temporarily in memory; live ledger unchanged",
+    "five Gao lessons and current reviewed scope fingerprints",
+    "eleven Gao work claim fingerprints and all source paths",
+    "checker/certificate/model SHA256 matches receipt",
+    "Python compile",
+    "38 local Markdown links",
+    "scoped git diff --check"
+  ],
+  "generated_views": 26,
+  "full_repository_checks": [
+    {
+      "command": "make -C research check-navigation",
+      "status": "FAIL_EXISTING_MISSING_ARTIFACT",
+      "reason": "KDSQ6: missing document consumer artifacts/generated-results/README.md"
+    },
+    {
+      "command": ".venv/bin/python research/scripts/research.py check --require-partial-review",
+      "status": "FAIL_EXISTING_MISSING_ARTIFACT",
+      "reason": "Historical navigation output omitted during repository reorganization."
+    }
+  ],
+  "three_point_fibre": "OPEN",
+  "independent_end_to_end_review": false
+}

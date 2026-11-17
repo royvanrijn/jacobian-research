@@ -1,0 +1,124 @@
+{
+  "review_date": "2026-11-16",
+  "title": "All locally finite plane source fields fail target descent under noninvertibility,and exact normalization translation multipliers",
+  "retained_structural_inputs": [
+    {
+      "claim": "PF2RULED52",
+      "canonical_source": "jacobian/affine-complements/SOURCE_SYMMETRY_DESCENT_AND_TRACE_GATE.md"
+    },
+    {
+      "claim": "PF2RULED99",
+      "canonical_source": "jacobian/affine-complements/MONIC_KEY_JACOBIAN_OBSTRUCTION_AND_WHOLE_CHART_NECESSITY.md"
+    },
+    {
+      "claim": "PF2RULED40",
+      "canonical_source": "jacobian/affine-complements/HIGHER_REGULAR_COORDINATE_CYCLIC_FORM.md"
+    },
+    {
+      "claim": "PF2GRADE1",
+      "canonical_source": "jacobian/affine-complements/WRIGHT_GRADING_OBSTRUCTION.md"
+    },
+    {
+      "claim": "HC4MYGV0",
+      "canonical_source": "hessian/hc4-triangular-graphs/AUTOMORPHIC_TRACE.md"
+    },
+    {
+      "claim": "HC4MYIT0",
+      "canonical_source": "hessian/hc4-triangular-graphs/INTRINSIC_NAMBU_DIRECTION_RIGIDITY.md"
+    },
+    {
+      "claim": "HC4MYIT1",
+      "canonical_source": "hessian/hc4-triangular-graphs/INTRINSIC_NAMBU_DIRECTION_RIGIDITY.md"
+    },
+    {
+      "claim": "HC4MYKN0",
+      "canonical_source": "hessian/hc4-triangular-graphs/CANONICAL_BOUNDARY_AND_STABLE_COMPLETE_INTERSECTION_OBSTRUCTION.md"
+    },
+    {
+      "claim": "HC4MYKU1",
+      "canonical_source": "hessian/hc4-triangular-graphs/CANONICAL_TRACE_DUAL_ETALE_RECONSTRUCTION.md"
+    },
+    {
+      "claim": "HC4MYKW1",
+      "canonical_source": "hessian/hc4-triangular-graphs/SOURCE_LINE_CONDUCTOR_AND_PRIMITIVE_ORDER_COLLISIONS.md"
+    },
+    {
+      "claim": "HCTANG2",
+      "canonical_source": "hessian/tang-hc4-audit/STRUCTURAL_REVIEW.md"
+    }
+  ],
+  "retained_proof_and_source_sha256": {
+    "jacobian/affine-complements/SOURCE_SYMMETRY_DESCENT_AND_TRACE_GATE.md": "553f95d8c66f8354d1c475bc2eb916f0b63c356d86466bd8603f8ef62452ceeb",
+    "jacobian/affine-complements/verify_source_symmetry_gate.py": "7c5d82a522f2631d50e15e5f8838f80b426cf22e47285442d3cb6c14fc2e6660",
+    "jacobian/affine-complements/MONIC_KEY_JACOBIAN_OBSTRUCTION_AND_WHOLE_CHART_NECESSITY.md": "5e9adad0c6d2290d2b15f9a0fcf7442c121eb9aeea087ba222948120bb294eb5",
+    "jacobian/affine-complements/verify_monic_key_chart_audit.py": "2ff693b4cca7d0cd70a54177c0487d718f936f4d5e1491bf929c06f4703b7795",
+    "jacobian/affine-complements/HIGHER_REGULAR_COORDINATE_CYCLIC_FORM.md": "3aea9ced325e187bc684d8e3ad06e13509815df60223593711f1f7f4dafc5360",
+    "jacobian/affine-complements/verify_higher_regular_coordinate.py": "79a377fb2a83e8bee31ef0f93cdc06f223b2f1766d51df31b49bb2244f0e3200",
+    "jacobian/affine-complements/WRIGHT_GRADING_OBSTRUCTION.md": "febc07fd124ad073b12df82d608a0895fa005f89c818ed4366951a99f5e21d9a",
+    "jacobian/affine-complements/verify_wright_grading.py": "a5657b99b0f1b724aea697b0a04bc10d1e9eabaa59989af085ce755b57cc706f",
+    "hessian/hc4-triangular-graphs/AUTOMORPHIC_TRACE.md": "3c83ecf3b9355a716641fc4c016ad189205a7ac00868694719873cf1a6a4ac91",
+    "hessian/hc4-triangular-graphs/verify_automorphic_trace.py": "8965d1f53862ec58a0f0c3951338020255027102c6fb7898edb1eec1c112bbe5",
+    "hessian/hc4-triangular-graphs/INTRINSIC_NAMBU_DIRECTION_RIGIDITY.md": "d28e32833d3c704e051ccba973d7bbcc0abd4ea19eb1e906869901f8f9f891a3",
+    "hessian/hc4-triangular-graphs/verify_intrinsic_nambu.py": "5cdb072273f9f93c94f9a0a62b52c6d0c10fe358d0058495772f4e25586e0c8e",
+    "hessian/hc4-triangular-graphs/CANONICAL_BOUNDARY_AND_STABLE_COMPLETE_INTERSECTION_OBSTRUCTION.md": "679c5f12083b9cdc657650417315c3e881974aee62c6a372c725d6d8193b657c",
+    "hessian/hc4-triangular-graphs/verify_canonical_boundary.py": "94379f2cbb83cfd80ad374b13538391fbdc6b6c9fce997e6917f53e7f667f801",
+    "hessian/hc4-triangular-graphs/CANONICAL_TRACE_DUAL_ETALE_RECONSTRUCTION.md": "fef1bc4871537c9d073c424c9dbbd4f0296dd287728a0724c9101c5a7b5cf3c2",
+    "hessian/hc4-triangular-graphs/verify_canonical_etale_reconstruction.py": "ad7d5b53096780353298ee052c9ac4341d0eced2b7194c5c83c397c19af91b4f",
+    "hessian/hc4-triangular-graphs/SOURCE_LINE_CONDUCTOR_AND_PRIMITIVE_ORDER_COLLISIONS.md": "1c303ba4aeb13523d39c92169f081676ead1673a6a49dc961132e96927081909",
+    "hessian/hc4-triangular-graphs/verify_source_line_conductor.py": "2df718f5a99cbc19ec11f614a7cfdee85d8b23522f5f33b241623df56b7a31fe",
+    "hessian/tang-hc4-audit/STRUCTURAL_REVIEW.md": "26a6a76eb579de05b8e71245b8b804bdd5f036602f2e3e6ad5d036fd9f5cd572",
+    "hessian/tang-hc4-audit/verify_structural.py": "23e87f797b4d086ede8195773092dcd42d705258ec57c05920731e87e0ce9b2d",
+    "hessian/hc4-triangular-graphs/sources/furter-fixed-multidegree.pdf": "e31927d9a413ac87119523154c0c5e2739674683b7534e588854569d3db7185a",
+    "jacobian/affine-complements/sources/math-0406239v2.html": "9b3cb412f7ab3182592e663441e0f102eb34ec7b498eba67d4f5d14dc42a3584",
+    "jacobian/affine-complements/sources/coordinate-pole-sector/gwozdziewicz-9305008v1.pdf": "4cce6a7334640ea47036b1fb8c676e28da7946dbd15d0a48868b30d94c68585a"
+  },
+  "new_primary_sha256": {},
+  "inspected_primary_context": [
+    {
+      "title": "Furter,Plane Polynomial Automorphisms of Fixed Multidegree,Lemma4.2",
+      "retained_file": "hessian/hc4-triangular-graphs/sources/furter-fixed-multidegree.pdf",
+      "url": "https://www.math.u-bordeaux.fr/~jpfurter/planePolynomialAutomorphismsOfFixedMultidegree.pdf",
+      "inspected": "Actual retainedPDFp10 Lemma4.2 and its Rentschler attribution re-read;the general LND Hamiltonian statement is explicit.",
+      "role": "EXISTING GV0 import:locally nilpotent Hamiltonians are polynomials in coordinates.No new Rentschler proof or nilpotence-bound import."
+    },
+    {
+      "title": "Flenner-Zaidenberg,math/0406239v2,Lemma2.2 and Corollary4.6",
+      "retained_file": "jacobian/affine-complements/sources/math-0406239v2.html",
+      "url": "https://arxiv.org/html/math/0406239v2",
+      "inspected": "Actual primary Lemma2.2 generalized-eigenspace product proof and Corollary4.6 Gutwirth linearization statement read.",
+      "role": "Gutwirth is the EXISTING PF2GRADE1 import.Jordan derivation steps are proved directly in the new note,not a hidden additional assumption."
+    },
+    {
+      "title": "Gwozdziewicz,Injectivity on one line,Theorem1.1",
+      "retained_file": "jacobian/affine-complements/sources/coordinate-pole-sector/gwozdziewicz-9305008v1.pdf",
+      "url": "https://arxiv.org/abs/alg-geom/9305008",
+      "role": "EXISTING PF2RULED52 import;entire source-line injectivity follows from the equivariant Ga orbit argument,not target-action linearization."
+    }
+  ],
+  "newly_imported_proved_external_statements": [],
+  "newly_used_unproved_external_statements": [],
+  "prior_credit": "PF2RULED52 already excludes bare translations and integer Euler fields;GV0 already imports Rentschler;PF2GRADE1 already imports Gutwirth;PF2RULED99/40 already supplies the local r(a+1)>=e extension threshold.KW1/KO2 already credits the genuine3D Keller countercontrol.No prior source-action or canonical construction is claimed new.",
+  "full_theorem_target": "Full HC4/JC2 proof or ACTUAL counterexample.",
+  "last_unsolved_implication": "ACTUAL polynomial plane source ==> Tr(Lambda_L*Lambda_L) subset B,or full marked canonical-energy integrality;OPEN.",
+  "every_nonzero_locally_finite_plane_source_field_descent_forces_inverse": true,
+  "every_polynomial_translation_replica_excluded_under_noninvertibility": true,
+  "connected_linear_algebraic_source_actions_preserving_target_field_excluded": true,
+  "integral_coordinate_normalization_multiplier_ideal_exact_globally": true,
+  "arbitrary_boundary_indices_orders_and_values_retained": true,
+  "genuine_3D_equivariant_Keller_countercontrol_verified": true,
+  "multiplier_assumed_to_lie_in_target_field": false,
+  "field_preservation_divided_by_non_target_multiplier": false,
+  "target_Ga_action_linearization_imported": false,
+  "Rentschler_or_Gutwirth_independently_reproved": false,
+  "integral_source_coordinate_proved_to_exist_automatically": false,
+  "one_integral_source_coordinate_proved_sufficient_for_inverse": false,
+  "normalization_action_inferred_to_descend_to_target": false,
+  "full_fixed_point_scheme_inferred_from_divisorial_zero_orders": false,
+  "plane_no_flow_theorem_applied_directly_to_HC4_gradient": false,
+  "last_HC4_source_to_regular_inverse_Gram_implication_proved": false,
+  "external_review_deferred": true,
+  "external_review_requested": false,
+  "old_registered_mathematical_checkers_replayed": false,
+  "unrestricted_HC4_or_JC2_resolved": false,
+  "original_goal_complete": false
+}

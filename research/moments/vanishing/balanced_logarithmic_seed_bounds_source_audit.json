@@ -1,0 +1,139 @@
+{
+  "date": "2026-11-15",
+  "canonical_proof": "moments/vanishing/BALANCED_LOGARITHMIC_GLOBAL_590.md",
+  "claims": [
+    "G3CONIC336_20261115",
+    "G3HOM336_20261115",
+    "G3PURE590_20261115"
+  ],
+  "checker": "moments/vanishing/verify_balanced_logarithmic_seed_bounds.py",
+  "checker_sha256": "8e7ba8dba5894e958a77f9820fce53c1285b62930d5d2e9a787ba3f429b374a1",
+  "certificate_sha256": "74d869cf36b9758960d65c3a105cc0ff8cfee8e185a57c414b82013b9084e390",
+  "accepted_receipt_sha256": "1b96fbf717ae4abc85d89a8c23533f4344223aaf9ff236065d9ff4a7ed2892b3",
+  "prior_frontier": {
+    "path": "moments/vanishing/balanced_logarithmic590_preupdate_20261115.json",
+    "sha256": "e57ad5e6c72ebf6c37fd866b3442fc23361f8e645c433b0f64bcb7e1818f897b"
+  },
+  "retained_inputs": {
+    "verify_quadratic_w_log_periods.py": "1f2dd77354897ba84c2f8c6aabe8b6497ea93281932c6321f07291653502999f",
+    "quadratic_w_log_verification.json": "dfd83d95864b5d93edd19ba8c260ea68b8885bc6ca41e765cba99480dbe86f8e",
+    "rank_one_wt2_verification.json": "1590f52f27566b12ba115f73951c6aa563197106abe85ed3dcaed8a7d00f93a9",
+    "mixed_period_infinity_verification.json": "db97076f04605aa1c1bc4c8725116de6f7fda34f1a21db6f791af4f41545090f",
+    "rescaled_singular_prefixes_certificate.json": "7a82d23c120cd830f8e12e093dfa0f6ce0b55c7e940031874270a6e92f97c67d",
+    "rescaled_singular_prefixes_verification.json": "2d8a4864c2d42d09491bc713e736d601ce749e074d63833f1c089ba7faf428c5",
+    "rescaled_singular_prefixes_source_audit.json": "45e2805ec3528870d52337dee2a3a608767719c615737d1ef5b31c95dc1b0274",
+    "smooth_cubic_seed_bounds_verification.json": "9586e00d5d1ce00a322bbea130fd562f104be4af95f8b460cb319cbb354c1497",
+    "reducible_cubic_moments_verification.json": "3f046506f8ab1513c951b71beae954e15c6f6ea2a7de58e5e4dcd0bddfdb0586",
+    "cuspidal_cubic_threshold_verification.json": "807595bb8f0bd3a9160b46d4451e9b4fecac4d1f211c124cea35e062ba876611",
+    "balanced_logarithmic_initial_input.py": "a720976e7bd6b09afcb41a126432db5711b35474267078c93a73e9945769149d",
+    "balanced_logarithmic_initial_failure.json": "91afbe49d02d2457c7b857eeb9c4d8298de87f16067ea10a0de5fb5f3a0a2720",
+    "balanced_logarithmic_pre_homogeneous_input.py": "47ab9aa64b58871fb20f2580c03faa97c2c530484ad693ace8183d82eb26167d",
+    "balanced_logarithmic_pre_homogeneous_verification.json": "94a5ec90e25b6f8c4da9b494f56b495777a82e7ae9c29d84ec0282936fcb91a0",
+    "balanced_logarithmic_pre_homogeneous_certificate.json": "66cb09825bb522730a53110d5c3fb039a470e97f4ab76354a9bbb986fef40ce0",
+    "balanced_logarithmic_seed_bounds_certificate.json": "74d869cf36b9758960d65c3a105cc0ff8cfee8e185a57c414b82013b9084e390",
+    "balanced_logarithmic_seed_bounds_verification.json": "1b96fbf717ae4abc85d89a8c23533f4344223aaf9ff236065d9ff4a7ed2892b3"
+  },
+  "previous_goal_turn_classification": "progress: global pure888, ordinary complements353/334/304 and cusp/tangent558/590; full W-linear888 remained the largest ordinary-node frame branch.",
+  "normalization": {
+    "coordinate": "y=t*x",
+    "logarithmic_form": "dx/x=dy/y",
+    "prefactor": "t^(-1)",
+    "source": "Psi_t-1/t=(t*W_t-2W-t^2)/t^3",
+    "coefficient_degree": "deg_t A_k<=3-k",
+    "boundary": "No extra volume -1/t. Keep the trapped g=0 component and both regular-end bases."
+  },
+  "seed_method": {
+    "recurrence": "R_(j+1)=t^3*R_j_prime-3j*t^2*R_j+S*R_j",
+    "separate_denominator": "t^(3j)*A_p^(p(j-1)+1)*A_-q^(q(j-1)) for p,q>0",
+    "higher_scalar_valuation": "at least3j",
+    "endpoint_cases": 16,
+    "homogeneous_nodal_source_degree": 5,
+    "homogeneous_nodal_constant_divisor_degree": 0
+  },
+  "class_bounds": {
+    "general_conic_cubic_exclusion_gate": 336,
+    "WZT_conic_cubic_exclusion_gate": 336,
+    "full_f0_cubic_gate": 336,
+    "full_W_linear_cubic_gate": 425,
+    "homogeneous_nodal_complement_gate": 129,
+    "homogeneous_nodal_full_gate": 336
+  },
+  "global_cover": {
+    "quadratic": 7,
+    "smooth": 94,
+    "nodal": 353,
+    "cusp": 558,
+    "transverse": 336,
+    "tangent": 590,
+    "triangle": 336,
+    "concurrent": 104,
+    "repeated": 99
+  },
+  "global_sufficient_pure_prefix": 590,
+  "least_prefix_interval": [
+    20,
+    590
+  ],
+  "odd_least_prefix_interval": [
+    20,
+    590
+  ],
+  "all_homogeneous_sufficient_pure_prefix": 336,
+  "all_homogeneous_least_prefix_interval": [
+    14,
+    336
+  ],
+  "smooth_leading_least_prefix_interval": [
+    20,
+    94
+  ],
+  "smooth_homogeneous_least_prefix_interval": [
+    14,
+    56
+  ],
+  "frame_condition_required_for_global590": false,
+  "binary_search_rounds_max": 10,
+  "exact_auxiliary_evidence": {
+    "coordinate_charts_checked": 3,
+    "Laurent_order_cases_checked": 16,
+    "models": 9,
+    "connection_columns": 37,
+    "direct_seed_columns": 27,
+    "homogeneous_nodal_reduction_checks": 45,
+    "homogeneous_nodal_normalization_checks": 3
+  },
+  "primary_source_version_checks": [
+    {
+      "url": "https://arxiv.org/abs/0704.1739",
+      "title": "Integral representations for solutions of exponential Gauss-Manin systems",
+      "authors": [
+        "Marco Hien",
+        "Celine Roucairol"
+      ],
+      "current_version": "v1",
+      "submitted": "2007-04-13",
+      "read_now": "Abstract/version metadata only. Selected-body assumptions remain those retained in QUADRATIC_W_LOG_PERIODS.md; no fresh full-body review."
+    }
+  ],
+  "new_external_theorems_imported": false,
+  "producer_package_executed": false,
+  "analytic_boundary": "Retained logarithmic growth, Hien-Roucairol period comparison, full quotient bases, extension of minimal seed relation, and analytic nonzero zeroth coefficient; numerical checks do not establish these inputs.",
+  "least_prefix_computed": false,
+  "full_coefficient_radical_search_executed": false,
+  "expanded_global_radical_cofactors_computed": false,
+  "universal_written_proof_certified_by_checker": false,
+  "independent_replay": false,
+  "external_review": false,
+  "formal_verification": false,
+  "assurance": "Internal all-coefficient written balanced Laurent and homogeneous-nodal degree/cofactor proofs with retained analytic exclusions. Exact auxiliary coordinate, reduction and model seed certificates; no independent replay, external review or formal verification.",
+  "remaining": [
+    "Least global K in[20,590] and homogeneous K in[14,336]",
+    "Twenty/fourteen-moment sufficiency",
+    "Smaller complete tangent590/cusp558 gates",
+    "Expanded global I590 radical cofactors",
+    "Independent review",
+    "Exceptional coefficient schemes",
+    "Global term-count minima",
+    "Lower-power GVC"
+  ]
+}

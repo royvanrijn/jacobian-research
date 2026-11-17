@@ -1,0 +1,38 @@
+{
+  "as_of": "2026-11-13",
+  "outcome": "PASS for scoped validation",
+  "previous_goal_turn": "progress: triangular and base-independent dual-substitution classes excluded",
+  "new_claims": [
+    "HC4MYOR1",
+    "HC4MYOR2"
+  ],
+  "progress": "Complete relative-row orbit/stabilizer; strict normalized-degree region extension; singleton-zero properness and missing-length gate",
+  "normalizer_attribution": "Retained HC5T1, not a new discovery",
+  "source_and_evidence_sha256": {
+    "hessian/hc4-relative-row-orbit/README.md": "6fc69d8c6a1f20e1b2ab4377fe143e278d35e943bbdce701bbf71e2245546946",
+    "hessian/hc4-relative-row-orbit/PROOF.md": "d3f528180c732f2a9c65af0cba4a405a37e34437d48e350e78748eaff61ecb36",
+    "hessian/hc4-relative-row-orbit/verify.py": "e2ee6d4a04ca70459550eedac8aac7c4690dd4057eab980f026a88b49d581541",
+    "hessian/hc4-relative-row-orbit/receipt.json": "b52f56da216415933205748b40714569a9172ae8b372a782e119303446b140b9",
+    "hessian/hc4-relative-row-orbit/sources/manifest.json": "623a3a3d8074d04a73413deecf3b44728ea94070502752f76a618a57cc6ea989",
+    "hessian/hc4-relative-row-orbit/sources/stacks-zmt-02LR.html": "73850793a7dbfa1df75a5cf36900854e2e8e1fa4f90e0aa62026d3626e93d33d",
+    "hessian/hc4-relative-row-orbit/sources/stacks-flatness-00R3.html": "3de8143bbcaa7eae82eba1cb1d65e58170fa90057341a98555b3cdcfc289f91c",
+    "hessian/hc4-relative-row-orbit/sources/moh-degree100.html": "29591bbc082ec140b2dd85b9a34c891af021f336a9ac4cb7d84fc81690c01ed3"
+  },
+  "exact_check_count": 47,
+  "checker_exit_code": 0,
+  "checker_cap_seconds": 60,
+  "source_control": "Known F1 marked-root model replayed for singleton/properness distinction; no plane counterexample",
+  "scope": "Full orbit classification; unrestricted singleton-zero plane Keller gate remains OPEN",
+  "global_geometry": "Written Zariski Main Theorem and normal-surface flatness imports, not finite-checker outputs",
+  "status_schema_dependencies_update_edges_backbone_and_hashes": "PASS with consumer checks omitted in scoped validator",
+  "four_method_scope_fingerprints": "PASS",
+  "three_work_scope_fingerprints": "PASS",
+  "local_links_and_compilation": "PASS",
+  "full_navigation": "pre-existing KDSQ6 missing artifacts/generated-results/README.md",
+  "full_research_check": "Historical navigation output omitted during repository reorganization.",
+  "new_plane_degree_frontier": false,
+  "formal_verification": false,
+  "external_review": false,
+  "JC2_or_unrestricted_HC4_resolved": false,
+  "goal_complete": false
+}

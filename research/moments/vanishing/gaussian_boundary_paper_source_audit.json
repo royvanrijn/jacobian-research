@@ -1,0 +1,70 @@
+{
+  "date": "2026-11-17",
+  "new_claims": [
+    "GMCDIMDEGREE20261117"
+  ],
+  "new_lesson": "METHOD-GAUSSIAN-BOUNDARY-PAPER-QUALITATIVE-PROOF-20261117",
+  "retained_lessons_updated": [],
+  "owned_work": "WORK-GAUSSIAN-FORMAL-GENERAL",
+  "paper_work": "WORK-GAUSSIAN-DIMENSION-DEGREE-PAPER",
+  "proof_mode": "Written boundary deduction from credited inputs;paper authoring and PDF QA;no research calculation or sealed checker replay.",
+  "canonical_proofs_sha256": {
+    "moments/vanishing/DIMENSION_DEGREE_BOUNDARY_COROLLARY.tex": "8e891174401e277e2697f98bc2c65c1eb11508f633fd35278628b6fd2ba9fd7b"
+  },
+  "frontier": "moments/vanishing/DIMENSION_DEGREE_BOUNDARY_COROLLARY.tex",
+  "frontier_sha256": "8e891174401e277e2697f98bc2c65c1eb11508f633fd35278628b6fd2ba9fd7b",
+  "retained_import_files_sha256": {
+    "moments/vanishing/TERNARY_CUBIC_GMC_CLOSURE.md": "0701fc552d1c30266281162fbc1bd62a7c9135c72e7c013a70d7241bb21224ca",
+    "moments/vanishing/RANK_ONE_WT2_CLASSIFICATION.md": "91bf42b4a6fc269ba929b51acfca4527aa03adb017192096c943bf43b2d15c30",
+    "moments/vanishing/QUADRATIC_GAUSSIAN.md": "a2c943843ea4b1c06d33796b038c22f5f351c688dbb2d2c4ecd064b98cace958",
+    "moments/vanishing/CUBIC_AFFINE_W_CLASSIFICATION.md": "86e82cb0acbb0ff8cbb87c448f36e742317765eaf841903d3b5393160a920218",
+    "moments/vanishing/LINE_CONIC_AFFINE_EXCLUSION.md": "b88ee273d9342c815142a05b38d096d4c4690d4f1c7f105b69445480f2e5a246",
+    "../unpublished/gaussian-boundary/sources/wilson_2607_23887v1.html": "a3c7ae4f8b1a54487377b5528854d25e0b73a6ffb6432d56e1ddec3eb6bea2eb",
+    "../unpublished/gaussian-boundary/sources/long_2607_18186v1.html": "bbf8705e4e982764882a71ab7255cc8287b11eb71f922234b5e0d2c193b185ad",
+    "../unpublished/gaussian-boundary/sources/liu_21688251_record.html": "46abac71c81ea85ac79bc819fc0f161dd87ee7a7b2915d053d7aaa0c2bf7c323",
+    "../unpublished/gaussian-boundary/sources/dvez_1506_05192_record.html": "aa949823ac36a22514aff9a64adc04acb86211fd6c6eaed6bc26b5ef207fec03"
+  },
+  "draft_snapshot_sha256": {
+    "../unpublished/gaussian-boundary/manuscript.tex": "db57ea58820b234d76b167e11c636ed3323881763765a81a158edb9af1fe3c3d",
+    "../unpublished/gaussian-boundary/manuscript.pdf": "56117e53f825e6c2acf4f275f754b9fafac7c6e370fdfea1e1258d3007b35355",
+    "../unpublished/gaussian-boundary/proof_audit.json": "b8a4a4c3a70ea36fce765bd5afc7990a54d3831fc97f56d4d80a0c7bd8aa7215",
+    "../unpublished/gaussian-boundary/paper_goal.json": "95644e4e5c30ec283c092971e47755afa9d9fc32c6cc348f085c1fd5875ef6cc",
+    "../unpublished/gaussian-boundary/pdf_quality_check.json": "38c8d15b3c8921a18baee4237d6a29e9eaeb17e4baacd34adba8d15120990279"
+  },
+  "mutable_paper_files": [
+    "../unpublished/gaussian-boundary/manuscript.tex",
+    "../unpublished/gaussian-boundary/manuscript.pdf",
+    "../unpublished/gaussian-boundary/proof_audit.json",
+    "../unpublished/gaussian-boundary/paper_goal.json",
+    "../unpublished/gaussian-boundary/pdf_quality_check.json"
+  ],
+  "mutable_file_policy": "Working manuscript,proof audit,goal and PDF may be revised to complete the USER long-term paper goal. Snapshot hashes record this first draft,not an immutable theorem assurance or a prohibition on future authorized edits.",
+  "user_goal_tool_result": "create_goal rejected a second unfinished goal. Existing broad goal was NOT marked complete,paused or blocked. New paper objective persisted as active paper_goal.json and WORK-GAUSSIAN-DIMENSION-DEGREE-PAPER.",
+  "source_manifest": "../unpublished/gaussian-boundary/source_manifest.json",
+  "concurrent_protected_baseline_refresh": {
+    "records": {},
+    "files": {}
+  },
+  "protected_whole_records": 209,
+  "prior_example_files": 211,
+  "retained_real_region_example_files": 11,
+  "retained_primary_backend_example_files": 37,
+  "checker": null,
+  "artifact_hash": null,
+  "manuscript_pages": 9,
+  "standalone_cubic_proof_complete": false,
+  "submission_ready": false,
+  "long_term_paper_goal_status": "active",
+  "actual_image_kernel_computed": false,
+  "new_research_calculation_run": false,
+  "old_terminal_UNKNOWN_jobs_restarted": false,
+  "field_safety_implies_purity_resolved": false,
+  "primitive_vacuum_rigidity_resolved": false,
+  "nonpure_safe_Gaussian_field_counterexample_claimed": false,
+  "rank_at_least_two_realization_resolved": false,
+  "independent_replay": false,
+  "formal_verification": false,
+  "external_review": false,
+  "novelty_claimed": false,
+  "next_full_obligation": "USER PRIORITY:LONG-TERM HUMAN-READABLE DIMENSION-DEGREE PAPER17November2026. GENERAL DIMENSION-DEGREE/PAPER GOAL17November2026: GMCDIMDEGREE20261117 records the USER deduction G(n,d) iff n<=2 or d<=2 or (n,d)=(3,3),from credited Wilson binary,Liu quadratic,internal ternary-cubic and Long minimal failures. The ternary bound m>3degQ is sharp. This settles UNIVERSAL dimension-degree ranges at the retained proof scopes,not individual safe-phase classification. USER explicitly requested a long-term standalone HUMAN-READABLE PAPER and simplification of every necessary proof. That objective is ACTIVE in WORK-GAUSSIAN-DIMENSION-DEGREE-PAPER and paper_goal.json;the existing broader goal remains active because the goal tool rejects a second unfinished goal. Nine-page first draft,source/PDF audits and complete elementary/algebraic subcase proofs exist. General cubic frame extraction and the remaining W-linear qualitative cases still require complete standalone consolidation and mathematical review. No finite-prefix optimization,Oaku or general safe-phase classification is required for this paper. No manuscript completion/submission-readiness or assurance promotion claimed. The separate broad Gaussian open problems remain open. NEXT GENERAL OBLIGATION:complete and simplify the standalone cubic proofs PAPER-A(frame extraction) and PAPER-B(full W-linear classification),then revise the manuscript for human readers with exact credit and proof boundaries. Keep the paper focused on universal ranges and sharp m>3degQ;do not start a deeper finite-prefix campaign. The broader rank1 primitive-vacuum and regular transcendental realization questions remain OPEN. General finite-primary backend gate is CLOSED. Preserve all sealed packets,terminal UNKNOWN jobs and separately owned Mathieu/SIC work."
+}

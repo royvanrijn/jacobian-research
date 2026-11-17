@@ -1,0 +1,40 @@
+{
+  "result": "PASS",
+  "scope": "Exact integer identity N(s)=Res_a(G,R_final), by complete determinant interpolation modulo345 distinct trial-proved primes and M>2*coefficient_bound. No source/discriminant or chart-exclusion claim by this component alone.",
+  "degree_bound": 11669,
+  "actual_degree": 11167,
+  "row_l1_coefficient_bound_bits": 10308,
+  "crt_modulus_bits": 10315,
+  "primes": 345,
+  "points_per_prime": 11670,
+  "determinant_comparisons": 8052300,
+  "determinant_engines": [
+    "FLINT3.3.1 nmod_mat_det",
+    "separate elementary C Gaussian elimination"
+  ],
+  "multi_evaluation_engine": "FLINT3.3.1 univariate product-tree evaluation",
+  "checker_sha256": "7ce1b7790a8203df9220e6d8a0091a500604a7b6ddc5cb62aab309950a6f8930",
+  "c_checker_sha256": "43d96e313a857e9186dd05a19f02801044093920eb8e7f1be656440a78d0cc21",
+  "input_text_sha256": "45d42d41e622167a6de40c878cd47c7a099e4673844ff63849ab272492f69426",
+  "curve_input_sha256": "c75ac26c420716d89968c721c5241ce73b0846082a34d02c5bf8090c724b3a74",
+  "remainder_sha256": "0830dbf0daa7fb0a6a2ac95220f513a2ece608fddc707f18cab33ad4494f4971",
+  "norm_sha256": "fed93da89e51e369e2d3b950eb91a0e8aad0a075c7a9db44e9c4f8412f6d0786",
+  "compiler_command": [
+    "cc",
+    "-O3",
+    "-Wall",
+    "-Wextra",
+    "-I/home/royvanrijn/.julia/artifacts/953e853635c2e3ec3a7208ba2931717022f0051c/include",
+    "/home/royvanrijn/src/jacobian-research/research/jacobian/gao-f7-quadruple/verify_norm_modular.c",
+    "-L/home/royvanrijn/.julia/artifacts/953e853635c2e3ec3a7208ba2931717022f0051c/lib",
+    "-Wl,-rpath,/home/royvanrijn/.julia/artifacts/953e853635c2e3ec3a7208ba2931717022f0051c/lib",
+    "-Wl,-rpath-link,/home/royvanrijn/.julia/artifacts/296d14cc59b11df01fd4134f4c368d9b47fb8f42/lib",
+    "-lflint",
+    "-o",
+    "/home/royvanrijn/src/jacobian-research/research/jacobian/gao-f7-quadruple/verify_norm_modular"
+  ],
+  "flint_root": "/home/royvanrijn/.julia/artifacts/953e853635c2e3ec3a7208ba2931717022f0051c",
+  "blas_lib": "/home/royvanrijn/.julia/artifacts/296d14cc59b11df01fd4134f4c368d9b47fb8f42/lib",
+  "python": "3.12.3",
+  "seconds": 52.261763488990255
+}

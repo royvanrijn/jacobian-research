@@ -1,0 +1,105 @@
+{
+  "scoped_validation": "PASS",
+  "checks": [
+    "HC4MYIB0 schema, source, dependencies, checker hash, locks and assurance",
+    "HC4MYIB1 schema, source, dependencies, checker hash, locks and assurance",
+    "HC4MYIB2 schema, source, dependencies, checker hash, locks and assurance",
+    "Galois normality, exact global boundary basis, subnormal class stabilizers and non-realized module example have explicit scopes",
+    "open parent adds Galois and factorial-normalization exclusions without closing the remaining S3 branch",
+    "forty-eight method records have current fingerprints and preserve global/local and Galois/nonnormal distinctions",
+    "WORK-HC4-SCHUR records current evidence, global normalization constraints and the remaining nonnormal branch",
+    "WORK-HC4-RESIDUAL-AUDIT records current evidence, global normalization constraints and the remaining nonnormal branch",
+    "current and three retained receipts match all mathematical, source and replay-helper byte pins",
+    "forty-five controls accompany written unrestricted proofs; DVR import, retained purity and contextual Hurwitz source are distinguished",
+    "proof, replay, primary input/context and local navigation links and whitespace are valid"
+  ],
+  "new_claims": [
+    "HC4MYIB0",
+    "HC4MYIB1",
+    "HC4MYIB2"
+  ],
+  "previous_goal_turn_classification": "progress: full nilpotent group preservation, finite nilpotent class-action gate and arbitrary common-prime radical-depth output closure",
+  "current_progress": "No finite Galois intermediate field for any group in any dimension; the finite plane normalization class group is exactly free on its missing divisors, so torsion or factorial normalization closes; subnormal class stabilizers suffice beyond nilpotence, with an explicit nonnilpotent module certificate but no claimed ambient realization.",
+  "exact_current_replay_checks": 45,
+  "retained_receipt_counts_not_newly_replayed": {
+    "receipt-nilpotent-covers.json": 46,
+    "receipt-leading-fibre.json": 43,
+    "receipt-monic-covers.json": 48
+  },
+  "generated_views_refreshed": [
+    "index/core.md",
+    "index/geometry.md",
+    "index/hessian.md",
+    "index/README.md",
+    "index/documents.tsv",
+    "knowledge/work/core.md",
+    "knowledge/work/geometry.md",
+    "knowledge/work/hessian.md",
+    "knowledge/WORK_LEDGER.md",
+    "STATUS.md"
+  ],
+  "new_primary_theorem_imports": [
+    "Stacks 0EXQ DVR ramification-index multiplicativity and the characteristic-zero finite-etale criterion"
+  ],
+  "primary_context": "Voight Quaternion Algebras Chapter 11 Hurwitz units; lattice stabilizers proved directly",
+  "full_registry_validation_failure": "KDSQ6: missing document consumer artifacts/generated-results/README.md",
+  "full_navigation_validation_passed": false,
+  "missing_artifacts_reconstructed": false,
+  "remaining_frontier": [
+    "nonmonic xy-P(T,z) with BOTH positive localized-unit defect at a leading zero AND nonnilpotent generic root monodromy not meeting another retained gate",
+    "nonsubnormal class stabilizers, including the S3 root-lattice order-two stabilizer",
+    "finite plane normalizations with nonzero free global class group and actual missing divisors",
+    "other output geometries or torsion class groups missing the filtered criteria",
+    "actual unit-Hessian parameterizations in singleton and coordinate source orbits",
+    "both plane endpoints and unrestricted HC4/JC2"
+  ],
+  "source_stabilizers_asserted_normal_without_hypothesis": false,
+  "full_group_preservation_for_arbitrary_Galois_covers_asserted": false,
+  "hypothetical_Keller_normalization_asserted_smooth": false,
+  "global_factoriality_inferred_from_local_factoriality": false,
+  "ambient_output_class_group_identified_with_normalization_boundary": false,
+  "quaternionic_class_module_asserted_realized_by_an_explicit_output": false,
+  "nonmonic_S3_root_family_asserted_closed": false,
+  "purity_or_finite_cover_comparison_theorems_fully_reproved": false,
+  "nonlinear_source_Hessian_invariance_used": false,
+  "unit_ideal_endpoint_resolved": false,
+  "singleton_zero_endpoint_resolved": false,
+  "unrestricted_HC4_or_JC2_resolved": false,
+  "original_goal_complete": false,
+  "repository_checks": [
+    {
+      "command": "make render-navigation",
+      "chunk_id": "3bb291",
+      "wall_time_seconds": 0.3419017,
+      "exit_code": 1,
+      "original_token_count": 242,
+      "output": "make -C research PYTHON=\"/home/royvanrijn/src/jacobian-research/.venv/bin/python\" SYSTEM_PYTHON=\"python3\" \"render-navigation\"\nmake[1]: Entering directory '/home/royvanrijn/src/jacobian-research/research'\npython3 scripts/render_status.py\nTraceback (most recent call last):\n  File \"/home/royvanrijn/src/jacobian-research/research/scripts/render_status.py\", line 514, in <module>\n    main()\n  File \"/home/royvanrijn/src/jacobian-research/research/scripts/render_status.py\", line 503, in main\n    validate_index(index)\n  File \"/home/royvanrijn/src/jacobian-research/research/scripts/render_status.py\", line 360, in validate_index\n    assert consumer_path.is_file(), (\n           ^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: KDSQ6: missing document consumer artifacts/generated-results/README.md\nmake[1]: Leaving directory '/home/royvanrijn/src/jacobian-research/research'\nmake[1]: *** [Makefile:16: render-navigation] Error 1\nmake: *** [Makefile:17: render-navigation] Error 2\n"
+    },
+    {
+      "command": "make check-navigation",
+      "chunk_id": "840a09",
+      "wall_time_seconds": 0.3213799,
+      "exit_code": 1,
+      "original_token_count": 213,
+      "output": "make -C research PYTHON=\"/home/royvanrijn/src/jacobian-research/.venv/bin/python\" SYSTEM_PYTHON=\"python3\" \"check-navigation\"\nmake[1]: Entering directory '/home/royvanrijn/src/jacobian-research/research'\npython3 scripts/audit_status.py\nTraceback (most recent call last):\n  File \"/home/royvanrijn/src/jacobian-research/research/scripts/audit_status.py\", line 8, in <module>\n    validate_index(index)\n  File \"/home/royvanrijn/src/jacobian-research/research/scripts/render_status.py\", line 360, in validate_index\n    assert consumer_path.is_file(), (\n           ^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: KDSQ6: missing document consumer artifacts/generated-results/README.md\nmake[1]: *** [Makefile:21: check-navigation] Error 1\nmake[1]: Leaving directory '/home/royvanrijn/src/jacobian-research/research'\nmake: *** [Makefile:17: check-navigation] Error 2\n"
+    },
+    {
+      "command": ".venv/bin/python research/scripts/research.py check --require-partial-review",
+      "chunk_id": "24cae4",
+      "wall_time_seconds": 0.1144723,
+      "exit_code": 1,
+      "original_token_count": 180,
+      "output": "Traceback (most recent call last):\n  File \"/home/royvanrijn/src/jacobian-research/research/scripts/research.py\", line 563, in <module>\n    raise SystemExit(main())\n                     ^^^^^^\n  File \"/home/royvanrijn/src/jacobian-research/research/scripts/research.py\", line 440, in main\n    validate_lessons(items, entries, check_reviews=args.command == \"check\")\n  File \"/home/royvanrijn/src/jacobian-research/research/scripts/research.py\", line 130, in validate_lessons\n    assert (ROOT / p).is_file(), f\"{item['id']}: missing source {p}\"\n           ^^^^^^^^^^^^^^^^^^^^"
+    },
+    {
+      "command": "git diff --check -- research/MATH_STATUS.json research/knowledge/lessons.json research/knowledge/work_items.json research/hessian/hc4-triangular-graphs/README.md research/index research/knowledge/work research/knowledge/WORK_LEDGER.md research/STATUS.md",
+      "chunk_id": "c73dbb",
+      "wall_time_seconds": 0.1616102,
+      "exit_code": 0,
+      "original_token_count": 0,
+      "output": ""
+    }
+  ],
+  "required_repository_checks_all_passed": false,
+  "scoped_diff_whitespace_check": "PASS"
+}

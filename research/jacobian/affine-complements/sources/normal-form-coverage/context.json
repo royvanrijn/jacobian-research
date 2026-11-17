@@ -1,0 +1,36 @@
+{
+  "claim": "PF2RULED151",
+  "retained_sha256": {
+    "jacobian/affine-complements/MONIC_PARAMETER_POLE_BOUNDS_AND_EVEN_LEADING_CYCLIC_TARGETS.md": "5f241a7515ab6af0db7ff2aebf544de6bc17995cf10c6695af80eb8c108f1d6f",
+    "jacobian/affine-complements/ODD_LEADING_CYCLIC_COORDINATES_AND_RECIPROCAL_BOUNDARY_COFORMS.md": "3c36eee743bcd3d360d94af5841a434f59cc995af93a294c5497573e04f428dd",
+    "jacobian/affine-complements/PARTIAL_KUMMER_PLANE_CHARTS_AND_CYCLIC_EQUIVARIANT_FACTORS.md": "166285dd01c6a3bd66947bc43b018b1a28937363fae4fea1c9276e3e4ed9c3dc",
+    "jacobian/affine-complements/SOURCE_SYMMETRY_DESCENT_AND_TRACE_GATE.md": "553f95d8c66f8354d1c475bc2eb916f0b63c356d86466bd8603f8ef62452ceeb",
+    "hessian/hc4-triangular-graphs/LOGARITHMIC_DESCENT_AND_CYCLIC_EXACT_SOURCE_IMAGES.md": "7ae5a64bbb585dc486238e9dcff447d8bcb2979196c469fffca70c3180a025bd",
+    "hessian/hc4-triangular-graphs/WHOLE_SOURCE_POWER_TRACES_AND_DIFFERENTIAL_SPLITTING.md": "ddd638989f0ed8807e4298e3e02fe0e72db4040dbefb22e5cb5ca8d11f9d38a9",
+    "hessian/hc4-triangular-graphs/SOURCE_LINE_CONDUCTOR_AND_PRIMITIVE_ORDER_COLLISIONS.md": "1c303ba4aeb13523d39c92169f081676ead1673a6a49dc961132e96927081909",
+    "hessian/hc4-degree-five-audit/README.md": "7f7c4c1e5cc3a645bfc8a1a167b6afb207e2d1a06fa1a66befed6e44d36ca86d",
+    "hessian/hc4-degree-five-audit/NORMALIZATION_REVIEW.md": "2716a3c5a35e380d8e5e12c33a2995dd94f1e0f27d097e6e73f5b4c15a346762",
+    "foundations/HC4_MENG_YANG_QUINTIC_SCHUR_FRONTIER.md": "5b3b1be3ab9d8408714603e5e193a73d28248fac92a1041e1ea3aef12e03938d",
+    "hessian/hc4-polynomial-graphs/PROOF.md": "9b3430522bbca89739eab733a30233529d6c6693a051ffa310b5fc7d232d9f51",
+    "jacobian/affine-complements/MARKED_QUADRATIC_VELOCITIES_AND_CYCLIC_TRACE_POLES.md": "49cec4654a1cda24f2176a7808b1899db5f587293714bcce2c77c2c4e2d532cf"
+  },
+  "previous_goal_turn": "progress: current PF150 proof and PASS95 revalidated",
+  "priority": "global normal-form coverage before another coordinate architecture expansion",
+  "global_coverage_proved": false,
+  "quadratic_model_coverage_assumed_not_proved": true,
+  "original_full_normalization_and_all_ramified_primes_retained": true,
+  "PF142_mixed_minimal_retirement_preserved": true,
+  "newly_imported_external_theorems": [],
+  "registered_predecessor_mathematical_checkers_replayed": [],
+  "retained_external_reproduction_integrity_checker_executed": "hc4-degree-five-audit/verify_evidence.py default; retained276PASS, no fresh CAS",
+  "live_preprint_v1_pdf_sha256": "ffcb9cb5d78c4b94743cb480971eac5ac53ae863f29477997cd3d74d022e9639",
+  "live_preprint_v1_zip_sha256": "861e0d438089333be22fee29969e49d6a589f4041de333f1e1923f60a6cb224d",
+  "live_remote_bytes_match_retained": true,
+  "pdf_visual_pages": [
+    1,
+    6
+  ],
+  "external_preprint_unrefereed": true,
+  "full_marked_quadratic_integrality_supplied": false,
+  "full_goal_complete": false
+}

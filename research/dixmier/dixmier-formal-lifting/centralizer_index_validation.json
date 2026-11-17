@@ -1,0 +1,42 @@
+{
+  "claim": "QCI1",
+  "scoped_status": "PASS",
+  "scope_fingerprint": "1cbfe6651e07f920",
+  "schema_dependencies_hashes_consumers": "PASS",
+  "eight_affected_methods_and_existing_work_reviews": "PASS",
+  "local_links_checked": 264,
+  "unique_equation_tags": 20,
+  "py_compile": "PASS",
+  "changed_tracked_diff_check": "PASS",
+  "exact_controls_receipt_sha256": "92a8eefb268d6fa4d92fcbfc4f1f3b460fcb6a523f38e48b038b0710fe087a2f",
+  "global_checks": [
+    {
+      "command": ".venv/bin/python research/scripts/render_status.py --check",
+      "exit_code": 1,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/home/royvanrijn/src/jacobian-research/research/scripts/render_status.py\", line 514, in <module>\n    main()\n  File \"/home/royvanrijn/src/jacobian-research/research/scripts/render_status.py\", line 503, in main\n    validate_index(index)\n  File \"/home/royvanrijn/src/jacobian-research/research/scripts/render_status.py\", line 360, in validate_index\n    assert consumer_path.is_file(), (\n           ^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: KDSQ6: missing document consumer artifacts/generated-results/README.md\n"
+    },
+    {
+      "command": ".venv/bin/python research/scripts/research.py render",
+      "exit_code": 1,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/home/royvanrijn/src/jacobian-research/research/scripts/research.py\", line 563, in <module>\n    raise SystemExit(main())\n                     ^^^^^^\n  File \"/home/royvanrijn/src/jacobian-research/research/scripts/research.py\", line 440, in main\n    validate_lessons(items, entries, check_reviews=args.command == \"check\")\n  File \"/home/royvanrijn/src/jacobian-research/research/scripts/research.py\", line 130, in validate_lessons\n    assert (ROOT / p).is_file(), f\"{item['id']}: missing source {p}\"\n           ^^^^^^^^^^^^^^^^^^^^"
+    }
+  ],
+  "research_context": [
+    {
+      "source": "https://arxiv.org/html/math/0401263",
+      "used": "Corollary3.10 provides coordinate-field maximality context. Lemma3.7, also retained in QPD1, clears curve rational commutants for the rational residual family; its finite operator centralizer is proved directly by differential order."
+    }
+  ],
+  "previous_goal_turn": {
+    "classification": "no progress",
+    "evidence": "The preceding goal turn answered a strategy question and verified current receipts but introduced no mathematical state change. The proposed genus obstruction was already incorporated in QIM1; inspecting its canonical proof confirmed that it was not a new next gate.",
+    "revalidation": "Inspected current QIM1/QEM1, QCI1, QHI1, the full exact QCI1 controls and the work completion criterion; checked primary Bavula Lemma3.7 and the arithmetic boundary-lattice context. No live process was assumed or restarted.",
+    "next_action_taken": "Proved an arbitrary-finite-rank bounded-powers/finite-lattice algebraicity criterion and its Weyl-mate exclusion. Constructed actual rational residual extensions of every degree, including3, and proved that their diagonal actions admit no finite Weyl carrier in any rational matrix frame, with identity padding and actual polynomial Weyl source/target transport. Preserved the nilpotent matrix exception and the open Long finite-carrier objective."
+  },
+  "proof_boundary": "The retained finite centralizer-field degree, differential PBW faithfulness, left/right tower factorization, completion containment, Long residual bounds and fixed-position rational polarization use written proofs and the retained QDI1/QMC1/QPD1 inputs. The new arbitrary-finite-rank lattice equivalence uses Ore denominator clearing, finite-dimensional Bernstein pieces and scalar polynomial annihilators; matrix frame covariance and Weyl-mate exclusion are written proofs. The rational all-m Weyl family has generic/completed index m by the differential-field and residue-basis arguments, with source role reversal (d,M)=(1,m) versus (m,1). Its diagonal finite-lattice exclusion holds in every positive rank, all rational matrix frames and identity padding, and under actual polynomial source/target Weyl automorphisms. Exact Ore controls sample m=2,3,5 and powers1..6; they do not prove universal rank, order or degree exhaustion. A negative-degree nilpotent with a finite free lattice and a positive polynomial pair preserve both boundaries. The rational family is not Long or QIM1. No general exclusion of higher-rank matrix actions, arbitrary rational target transport, mixed source Long polarizations, all-representative nonlifting, scalar/matrix counterexample or DC2/JC2 resolution is asserted.",
+  "independent_replay": false,
+  "formal_verification": false,
+  "external_review": false
+}

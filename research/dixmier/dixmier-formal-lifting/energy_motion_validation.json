@@ -1,0 +1,35 @@
+{
+  "claim": "QEM1",
+  "scoped_status": "PASS",
+  "scope_fingerprint": "ed8866fd242b84ff",
+  "schema_dependencies_hashes_consumers": "PASS",
+  "new_lesson_and_existing_work_reviews": "PASS",
+  "local_links_checked": 173,
+  "unique_equation_tags": 15,
+  "py_compile": "PASS",
+  "changed_tracked_diff_check": "PASS",
+  "exact_controls_receipt_sha256": "4a4f22fcd06b5b0baca0b728c6813576e5510e5df787b1b29bddbba295d6b7e6",
+  "global_checks": [
+    {
+      "command": ".venv/bin/python research/scripts/render_status.py --check",
+      "exit_code": 1,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/home/royvanrijn/src/jacobian-research/research/scripts/render_status.py\", line 514, in <module>\n    main()\n  File \"/home/royvanrijn/src/jacobian-research/research/scripts/render_status.py\", line 503, in main\n    validate_index(index)\n  File \"/home/royvanrijn/src/jacobian-research/research/scripts/render_status.py\", line 360, in validate_index\n    assert consumer_path.is_file(), (\n           ^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: KDSQ6: missing document consumer artifacts/generated-results/README.md\n"
+    },
+    {
+      "command": ".venv/bin/python research/scripts/research.py render",
+      "exit_code": 1,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/home/royvanrijn/src/jacobian-research/research/scripts/research.py\", line 563, in <module>\n    raise SystemExit(main())\n                     ^^^^^^\n  File \"/home/royvanrijn/src/jacobian-research/research/scripts/research.py\", line 440, in main\n    validate_lessons(items, entries, check_reviews=args.command == \"check\")\n  File \"/home/royvanrijn/src/jacobian-research/research/scripts/research.py\", line 130, in validate_lessons\n    assert (ROOT / p).is_file(), f\"{item['id']}: missing source {p}\"\n           ^^^^^^^^^^^^^^^^^^^^"
+    }
+  ],
+  "research_context": {
+    "cohomological_framework": [
+      "https://arxiv.org/html/0802.1647",
+      "https://arxiv.org/html/1210.2840"
+    ],
+    "Ore_framework": "https://arxiv.org/html/1212.4063",
+    "use": "Related frameworks only; the specific obstruction, rational normalization and flat Ore construction have local written proofs."
+  },
+  "proof_boundary": "Universal arguments are written proofs. Exact controls are finite identities, not independent theorem replay or formal verification. The fixed-energy and commuting-energy exclusions do not exclude arbitrary transverse energy motion. The flat algebra family does not deform the module map. No bounded full Long lift or all-representative nonlifting is proved."
+}

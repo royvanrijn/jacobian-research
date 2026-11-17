@@ -1,0 +1,18 @@
+{
+  "title": "A Sharp Coefficient-Ring Obstruction for Gaussian Marker Generation",
+  "author": {
+    "name": "Roy van Rijn",
+    "orcid": "0009-0000-2808-0645"
+  },
+  "summary": "Examines the coefficient-ring obstruction in marker-generation arguments for Gaussian moments.",
+  "published": false,
+  "status": "partial-draft",
+  "source": "main.tex",
+  "pdf": "gaussian_marker_generation_ring_defect.pdf",
+  "build": "latexmk -pdf -interaction=nonstopmode -halt-on-error main.tex",
+  "verification": "A focused obstruction note with a local exact verification record; it is not a general moment theorem.",
+  "next_steps": [
+    "Review the obstruction and its implications for the wider moment programme."
+  ],
+  "catalogued_on": "2026-11-17"
+}

@@ -1,0 +1,39 @@
+{
+  "title": "Sparse Minimality of Gaussian-Moments Counterexamples in Dimension Three",
+  "author": {
+    "name": "Roy van Rijn",
+    "orcid": "0009-0000-2808-0645"
+  },
+  "summary": "An exact classification excludes counterexamples with both degree at most four and at most four monomials in a Gaussian Witt frame.",
+  "status": "published-preprint",
+  "publication_date": "2026-07-24",
+  "doi": "10.5281/zenodo.21534917",
+  "zenodo": "https://zenodo.org/records/21534917",
+  "license": "CC-BY-4.0",
+  "pdf": "sparse-minimality-gaussian-moments-dimension-three.pdf",
+  "source": "main.tex",
+  "verification": {
+    "scope": "Exhaustive exact computation of 59,535 supports, followed by all-order arguments for the surviving families.",
+    "limits": "Only degree at most four AND at most four monomials in a Gaussian Witt frame are excluded. This does not rule out denser cubics or higher-degree four-term examples.",
+    "evidence": [
+      "../../research/foundations/scripts/verify_three_real_gmc_sparse_pareto.py",
+      "../../research/foundations/extended-geometry/THREE_REAL_GMC_MINIMAL_FAILURES.md"
+    ]
+  },
+  "publication_record_checked": "2026-11-17",
+  "abstract": "This preprint studies minimal counterexamples to the Gaussian Moments Conjecture in three real variables, the first dimension in which the conjecture fails.\nChristopher Long recently constructed a counterexample of total degree four with five monomials. We prove, by an exhaustive exact computer-assisted classification, that no counterexample exists with both total degree at most four and support size at most four in Gaussian Witt coordinates. Consequently, Long’s five-term quartic is Pareto-minimal with respect to degree and support size.\nThe calculation enumerates all 59,535 relevant supports, constructs saturated moment ideals over (\\mathbb{Q}), and reduces the surviving cases to three explicit families. These families are then shown to satisfy the conjectural mixed-moment conclusion at all orders.\nThe result does not exclude denser cubic counterexamples or four-term counterexamples of degree greater than four. Verification scripts are supplied for reproducibility.",
+  "abstract_format": "text",
+  "keywords": [
+    "Gaussian Moments Conjecture",
+    "Mathieu subspaces",
+    "Gaussian integration",
+    "sparse polynomials",
+    "Gröbner bases",
+    "polynomial moments"
+  ],
+  "resource_type": {
+    "title": "Preprint",
+    "type": "publication",
+    "subtype": "preprint"
+  }
+}

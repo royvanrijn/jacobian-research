@@ -1,0 +1,50 @@
+{
+  "schema_version": 1,
+  "retrieved_utc": "2026-11-15T02:56:36.405064+00:00",
+  "purpose": "Pin retained full formulas and primary classical geometric/differential context. New deductions are explicit written proofs; no novelty or whole-proof verification certificate.",
+  "local_sources": [
+    {
+      "path": "jacobian/universal-keller-feedback-rigidity/PROOF.md",
+      "locator": "UAPARALLEL1 and UACUBICKER1; previous one-scalar response argument, now generalized to arbitrary coefficient directions.",
+      "sha256": "132ad2cc9384e5ba1e3a9bce4afceebe86d904478c6cc01dcf676fe85ab9919f"
+    },
+    {
+      "path": "jacobian/universal-keller-canonical-filter/PROOF.md",
+      "locator": "UACANFIB1 exact complete canonical fibre and rank-one trace-filter architecture.",
+      "sha256": "5f2177076da7c8ae318258bdbfc39b445e393dbcb4a4dab397c82aeea9ad0da1"
+    },
+    {
+      "path": "jacobian/universal-keller-compression/verify.py",
+      "locator": "Pure source_map constructor and normalized inverse equation.",
+      "sha256": "a8d9b280e09868e1b1abed24443541dc29daa94744e467517a5b3d6da85457a5"
+    },
+    {
+      "path": "foundations/verified/UNIVERSAL_RELATIVE_KELLER_MAP.md",
+      "locator": "UAM1 root reconstruction x=S/Eprime and y=(1-Eprime)/S.",
+      "sha256": "4cced623c100a90859996e5aea69219a241c56c20ca087f1a9d4caa50209c1c5"
+    }
+  ],
+  "external_sources": [
+    {
+      "path": "sources/stacks-0G33.html",
+      "url": "https://stacks.math.columbia.edu/tag/0G33",
+      "locator": "Lemma10.47.12: geometric irreducibility of a function field and relative algebraic closedness.",
+      "bytes": 15112,
+      "sha256": "9ebeb36750c13fdf0e1ec683dccad3184fa71858980dc08b893335e189ca7390"
+    },
+    {
+      "path": "sources/stacks-01V4.html",
+      "url": "https://stacks.math.columbia.edu/tag/01V4",
+      "locator": "Smooth composition, flatness, openness and relative dimension; regular descent from the target quotient.",
+      "bytes": 41298,
+      "sha256": "4327b0dc32a5b7a4fc554e6587f0d622d978e306bba4d2783a8aade3704aa3da"
+    },
+    {
+      "path": "sources/jedrzejewicz-zielinski-2016.html",
+      "url": "https://arxiv.org/html/1601.01508v1",
+      "locator": "Section1 generalized JC(m,n,k), rings of constants and the proved one-generator case. Context only: no general algebraic-closedness conjecture assumed as a theorem.",
+      "bytes": 234715,
+      "sha256": "98753d5a41d79dba5f980398bca2736240ded0bf45c05171dc4d53ba2dea3451"
+    }
+  ]
+}

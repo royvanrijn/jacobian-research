@@ -1,0 +1,41 @@
+{
+  "as_of": "2026-11-13",
+  "outcome": "PASS for scoped checks",
+  "new_claims": [
+    "HCTANG2",
+    "HCTANG3"
+  ],
+  "previous_goal_turn": "progress: OP-HC4-D5 closed by reproduction",
+  "current_progress": "Complete written Tang structural reproduction; HC4 potential degree101 and degree102 proper-power top; marked-collision graph degree48; degree7 polynomial pullback with collision jet match; constant-covector emptiness certificate",
+  "checker_exit_code": 0,
+  "checker_cap_seconds": 60,
+  "symbolic_checks": 33,
+  "independent_literal_jet": "PASS",
+  "source_proof_and_replay_sha256": {
+    "hessian/tang-hc4-audit/source-v1.pdf": "bfcd8d2db0df78760c33b9c0b9e9a07c7d0d497a457b2547efeda13c917c29c2",
+    "hessian/tang-hc4-audit/source-receipt.json": "73b250fb937ca59cf8f4419bbbfc3cac989a350ed4b8313b67d25dc7f2c32046",
+    "hessian/tang-hc4-audit/STRUCTURAL_REVIEW.md": "26a6a76eb579de05b8e71245b8b804bdd5f036602f2e3e6ad5d036fd9f5cd572",
+    "hessian/tang-hc4-audit/APPLICATIONS.md": "f9002d5e0bfb9ba896ad0ff6988d31e8436bfdcd2176e48069d1ec3e7108d648",
+    "hessian/tang-hc4-audit/verify_structural.py": "23e87f797b4d086ede8195773092dcd42d705258ec57c05920731e87e0ce9b2d",
+    "hessian/tang-hc4-audit/structural-receipt.json": "f68d23f42ef21ef1992bbb48304b15117b29dc6a71542a3b64a2b0566f9e6749",
+    "hessian/tang-hc4-audit/structural-jet.log": "ac6222ff6405a03fd9195cc8f45d371727e0d079e2f7c5bfc1ff4972a1a2458e",
+    "hessian/tang-hc4-audit/jet-certificate.json": "7eb6f0728a81d08b4c7a491f1619385bbd966428390ada6a7c02f430182959c7",
+    "hessian/tang-hc4-audit/check_jet.py": "0c995d7bfcc536e73d70b889ef27dc1077102d32fb169b0f79775f14300f6002",
+    "hessian/tang-hc4-audit/verify.py": "9876b15e5f003f60486e350fb59cb1de2ab8c6e4cc8ea11c839b9051e8c95a3d",
+    "hessian/tang-hc4-audit/receipt.json": "88fab7723e9e3e82928e933dbfadc760c48ccda6ed7e0e1be686f7f4933bf54e",
+    "hessian/tang-hc4-audit/structural-sources/sources.json": "1ee176ff0c1f1adfc31ba16c2abc63d24d6e3338ef6bb93177e6ec42b86dc0c3",
+    "hessian/tang-hc4-audit/structural-sources/de-poi-0407339v1.pdf": "6b29c14c4d6ec3f4aab25e1fb091d0db231639ca382c068b6a15211d1389b94d",
+    "hessian/tang-hc4-audit/structural-sources/de-bondt-1609.03904v2.html": "4ea252d18fc9b4bccf640f4bf963c09661de8dc8c2c8b637d27b4026d9ba45bf",
+    "hessian/tang-hc4-audit/structural-sources/de-poi-0407339v1.html": "4eac19e6249ebffad8f9568ae4a0c60945148eb4c27841187c47a11e4b283080",
+    "hessian/tang-hc4-audit/structural-sources/moh-degree100.html": "29591bbc082ec140b2dd85b9a34c891af021f336a9ac4cb7d84fc81690c01ed3"
+  },
+  "status_schema_dependencies_update_edges_backbone_hashes": "PASS; consumer checks omitted in scoped validator",
+  "new_method_and_three_work_scope_fingerprints": "PASS",
+  "links_and_compilation": "PASS",
+  "full_navigation": "pre-existing failure: KDSQ6 missing artifacts/generated-results/README.md",
+  "full_research_check": "Historical navigation output omitted during repository reorganization.",
+  "geometric_exhaustion": "written proof audit, not certified by finite checker",
+  "formal_verification": false,
+  "external_review": false,
+  "goal_complete": false
+}

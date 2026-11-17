@@ -1,0 +1,15 @@
+{
+  "status": "pass",
+  "claims": [
+    "KCUB27",
+    "KCUB28"
+  ],
+  "registry_schema_paths_hashes_edges": true,
+  "independent_receipts_current": true,
+  "affected_method_reviews": 13,
+  "work_item": "WORK-GLDC",
+  "canonical_local_links": true,
+  "headline_bounds_unchanged": true,
+  "goal_complete": false,
+  "global_navigation": "Historical navigation output omitted during repository reorganization."
+}

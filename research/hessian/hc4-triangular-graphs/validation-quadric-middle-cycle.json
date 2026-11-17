@@ -1,0 +1,174 @@
+{
+  "scoped_validation": "PASS",
+  "checks": [
+    "HC4MYIW0 schema, dependencies, locks, checker hash and assurance",
+    "HC4MYIW1 schema, dependencies, locks, checker hash and assurance",
+    "HC4MYIW2 schema, dependencies, locks, checker hash and assurance",
+    "all-degree integral-class and constant-trace scopes close the historical noncritical chart while the parent remains open",
+    "sixty-nine method records preserve historical evidence and have reviewed new scopes and residual gates",
+    "both work proposals now target nonconstant trace, projection existence or actual endpoint data",
+    "106 exact controls include 44 algebra/scope controls, all retained byte pins and two explicit external foundational inputs",
+    "proof links, primary source bytes and latest navigation identify the completed constant-trace family",
+    "navigation regenerated through repository APIs; unrelated absent artifacts were not reconstructed"
+  ],
+  "new_claims": [
+    "HC4MYIW0",
+    "HC4MYIW1",
+    "HC4MYIW2"
+  ],
+  "exact_current_replay_checks": 106,
+  "algebraic_and_scope_controls": 44,
+  "current_progress": "The entire noncritical rank-one closed-embedding chart and every constant-trace retained intrinsic free projection close in all helper degrees. Actual principal-divisor cycles give d alpha=alpha, with alpha infinite order by a compact S4 pairing and proper section/rotation homotopies.",
+  "generated_views_refreshed": [
+    "index/core.md",
+    "index/hessian.md",
+    "index/README.md",
+    "index/documents.tsv",
+    "knowledge/work/core.md",
+    "knowledge/work/hessian.md",
+    "STATUS.md"
+  ],
+  "newly_cached_primary_context": [
+    {
+      "url": "https://www.ias.edu/sites/default/files/pcmi1.pdf",
+      "retained_file": "totaro-pcmi-chow-2024-notes1.pdf",
+      "title": "PCMI notes 1: Chow groups",
+      "author": "Burt Totaro",
+      "portions_inspected": "Section 6, printed pages 9-10: integral Borel-Moore cycle map, Poincare duality and proper pushforward",
+      "role": "Standard integral cycle-map and topological intersection foundations; these are explicit external inputs, not symbolic-checker conclusions.",
+      "sha256": "94838b782158baba60c9ec51649804cc490461007fb606245e696006dad875ff"
+    },
+    {
+      "url": "https://stacks.math.columbia.edu/tag/02RV",
+      "retained_file": "stacks-middle-cycle-02RV.html",
+      "title": "Rational equivalence, Stacks 02RV",
+      "portions_inspected": "Definition of rational equivalence as images of principal divisors on integral closed subvarieties",
+      "role": "Definition used for the two principal-divisor relations.",
+      "sha256": "c8eb77b6b0f9eadae3f149acf6d03c617ff3fdceedc241eeaa88d67bba7e7fa6"
+    }
+  ],
+  "newly_used_unproved_external_statements": [
+    {
+      "statement": "Algebraic cycle classes factor through rational equivalence into integral Borel-Moore homology for complex varieties.",
+      "source": "https://www.ias.edu/sites/default/files/pcmi1.pdf",
+      "location": "Section 6, printed page 10"
+    },
+    {
+      "statement": "Poincare duality for an oriented noncompact manifold identifies Borel-Moore classes with ordinary cohomology; pairing against a transverse compact complementary cycle is the signed integral intersection number.",
+      "source": "https://www.ias.edu/sites/default/files/pcmi1.pdf",
+      "location": "Section 6, printed page 9; standard intersection interpretation"
+    }
+  ],
+  "retained_receipt_counts_not_newly_replayed": {
+    "receipt-free-projection-trace.json": 91,
+    "receipt-primitive-helpers.json": 109,
+    "receipt-abelian-classgroup.json": 58
+  },
+  "full_registry_validation_failure": "KDSQ6: missing document consumer artifacts/generated-results/README.md",
+  "full_navigation_validation_passed": false,
+  "missing_artifacts_reconstructed": false,
+  "closed_frontier": [
+    "full noncritical rank-one closed embedding with arbitrary polynomial compensation",
+    "every constant trace under retained intrinsic free projections",
+    "constant affine frames and polynomial offsets with constant transformed trace"
+  ],
+  "remaining_frontier": [
+    "nonconstant traces",
+    "existence or failure of aligned intrinsic ambient free projections",
+    "actual endpoint representatives, both plane endpoints and unrestricted HC4/JC2"
+  ],
+  "full_noncritical_rank_one_closed_embedding_chart_resolved": true,
+  "all_constant_trace_intrinsic_free_projections_resolved": true,
+  "arbitrary_helper_degrees_allowed": true,
+  "actual_closed_embedding_required": true,
+  "integral_middle_class_infinite_order_proved": true,
+  "section_homotopies_proper_proved": true,
+  "two_principal_divisor_multiplicities_proved": true,
+  "constant_frame_affine_offsets_covered": true,
+  "newly_used_unproved_external_foundations_explicit": true,
+  "arbitrary_immersions_asserted_to_close": false,
+  "source_field_lift_substituted_for_polynomial_lift": false,
+  "mod_two_intersection_substituted": false,
+  "noncritical_quadric_argument_used_on_singular_cone": false,
+  "all_embeddings_assumed_to_retain_intrinsic_free_projections": false,
+  "all_zero_section_traces_assumed_constant": false,
+  "nonlinear_source_hessian_invariance_assumed": false,
+  "new_quadric_Chow_group_computation_imported": false,
+  "normality_transfer_assumed": false,
+  "unit_ideal_endpoint_resolved": false,
+  "singleton_zero_endpoint_resolved": false,
+  "unrestricted_HC4_or_JC2_resolved": false,
+  "original_goal_complete": false,
+  "formal_verification": false,
+  "independent_replay": false,
+  "external_review": false,
+  "novelty_priority_asserted": false,
+  "required_repository_checks_all_passed": false,
+  "repository_checks": [
+    {
+      "name": "render-navigation",
+      "command": [
+        "make",
+        "render-navigation"
+      ],
+      "exit_code": 2,
+      "output": "make -C research PYTHON=\"/home/royvanrijn/src/jacobian-research/.venv/bin/python\" SYSTEM_PYTHON=\"python3\" \"render-navigation\"\nmake[1]: Entering directory '/home/royvanrijn/src/jacobian-research/research'\npython3 scripts/render_status.py\nTraceback (most recent call last):\n  File \"/home/royvanrijn/src/jacobian-research/research/scripts/render_status.py\", line 514, in <module>\n    main()\n  File \"/home/royvanrijn/src/jacobian-research/research/scripts/render_status.py\", line 503, in main\n    validate_index(index)\n  File \"/home/royvanrijn/src/jacobian-research/research/scripts/render_status.py\", line 360, in validate_index\n    assert consumer_path.is_file(), (\n           ^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: KDSQ6: missing document consumer artifacts/generated-results/README.md\nmake[1]: *** [Makefile:16: render-navigation] Error 1\nmake[1]: Leaving directory '/home/royvanrijn/src/jacobian-research/research'\nmake: *** [Makefile:17: render-navigation] Error 2\n"
+    },
+    {
+      "name": "check-navigation",
+      "command": [
+        "make",
+        "check-navigation"
+      ],
+      "exit_code": 2,
+      "output": "make -C research PYTHON=\"/home/royvanrijn/src/jacobian-research/.venv/bin/python\" SYSTEM_PYTHON=\"python3\" \"check-navigation\"\nmake[1]: Entering directory '/home/royvanrijn/src/jacobian-research/research'\npython3 scripts/audit_status.py\nTraceback (most recent call last):\n  File \"/home/royvanrijn/src/jacobian-research/research/scripts/audit_status.py\", line 8, in <module>\n    validate_index(index)\n  File \"/home/royvanrijn/src/jacobian-research/research/scripts/render_status.py\", line 360, in validate_index\n    assert consumer_path.is_file(), (\n           ^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: KDSQ6: missing document consumer artifacts/generated-results/README.md\nmake[1]: *** [Makefile:21: check-navigation] Error 1\nmake[1]: Leaving directory '/home/royvanrijn/src/jacobian-research/research'\nmake: *** [Makefile:17: check-navigation] Error 2\n"
+    },
+    {
+      "name": "partial-review",
+      "command": [
+        "/home/royvanrijn/src/jacobian-research/.venv/bin/python",
+        "research/scripts/research.py",
+        "check",
+        "--require-partial-review"
+      ],
+      "exit_code": 1,
+      "output": "Traceback (most recent call last):\n  File \"/home/royvanrijn/src/jacobian-research/research/scripts/research.py\", line 563, in <module>\n    raise SystemExit(main())\n                     ^^^^^^\n  File \"/home/royvanrijn/src/jacobian-research/research/scripts/research.py\", line 440, in main\n    validate_lessons(items, entries, check_reviews=args.command == \"check\")\n  File \"/home/royvanrijn/src/jacobian-research/research/scripts/research.py\", line 130, in validate_lessons\n    assert (ROOT / p).is_file(), f\"{item['id']}: missing source {p}\"\n           ^^^^^^^^^^^^^^^^^^^^"
+    },
+    {
+      "name": "required-whitespace",
+      "command": [
+        "git",
+        "diff",
+        "--check",
+        "--",
+        "research/MATH_STATUS.json",
+        "research/knowledge/lessons.json",
+        "research/knowledge/work_items.json",
+        "research/hessian/hc4-triangular-graphs/README.md",
+        "research/index",
+        "research/knowledge/work",
+        "research/knowledge/WORK_LEDGER.md",
+        "research/STATUS.md"
+      ],
+      "exit_code": 0,
+      "output": ""
+    }
+  ],
+  "own_HC4_diff_whitespace_check": "PASS",
+  "required_diff_whitespace_check": "PASS",
+  "own_HC4_diff_whitespace_evidence": {
+    "exit_code": 0,
+    "output": ""
+  },
+  "repository_failures_unrelated_to_HC4": true,
+  "unrelated_missing_artifacts_reconstructed": false,
+  "primary_PDF_read_only_review": {
+    "source": "sources/totaro-pcmi-chow-2024-notes1.pdf",
+    "pages": [
+      9,
+      10
+    ],
+    "text_extraction": "pypdfium2",
+    "visual_review": "Both complete pages rendered with pypdfium2 and inspected; system Poppler unavailable. No source PDF authored or edited."
+  }
+}

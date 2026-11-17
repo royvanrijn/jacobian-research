@@ -1,0 +1,44 @@
+{
+  "as_of": "2026-11-14",
+  "claim_id": "GAOF7SURJ1",
+  "mathematical_checker": {
+    "result": "PASS",
+    "checks": 477,
+    "replays": {
+      "quartic": {
+        "multipliers": 7,
+        "multiplier_terms": 291,
+        "target": "1",
+        "identity": "PASS"
+      },
+      "centered": {
+        "multipliers": 5,
+        "multiplier_terms": 130,
+        "target": "d",
+        "identity": "PASS"
+      }
+    }
+  },
+  "prior_f7_checker": "PASS:87 checks; zero exclusion explicitly imported from this separate theorem",
+  "scope_index_validation": "PASS: isolated nine-entry Gao index, with empty core/open-queue expectations used only for that subset and restored afterward; other shared-ledger work excluded, not altered",
+  "method_reviews": "PASS:4 Gao methods",
+  "work_fingerprints_sources": "PASS:9 claims",
+  "checker_hashes_and_software_locks": "PASS",
+  "local_links_new_whitespace_and_python_compile": "PASS",
+  "navigation": "26 views refreshed from the current shared-ledger snapshot",
+  "assurance": "Independent FLINT arithmetic identities and rederived necessary equations; no independent end-to-end review, formal verification, external review or novelty priority",
+  "remaining": "Three-point F7 fibres, full strata, F5, JC2 and unrestricted HC4 remain unresolved",
+  "full_repository_checks": [
+    {
+      "command": "make -C research check-navigation",
+      "result": "FAIL: existing missing artifact",
+      "error": "KDSQ6: missing document consumer artifacts/generated-results/README.md"
+    },
+    {
+      "command": ".venv/bin/python research/scripts/research.py check --require-partial-review",
+      "result": "FAIL: existing missing artifact",
+      "error": "Historical navigation output omitted during repository reorganization."
+    }
+  ],
+  "git_diff_whitespace": "PASS for changed metadata, follow-ups and generated views; new untracked files checked directly"
+}

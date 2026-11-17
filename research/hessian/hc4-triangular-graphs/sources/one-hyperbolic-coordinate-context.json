@@ -1,0 +1,97 @@
+{
+  "review_date": "2026-11-15",
+  "title": "Intrinsic cylinder-plane recovery gives a one-coordinate and all-higher-normal-jets orientation obstruction",
+  "newly_used_unproved_external_statements": [],
+  "newly_cached_primary_context": [
+    {
+      "url": "https://arxiv.org/abs/1707.08768v1",
+      "retained_file": "dubouloz-heden-kishimoto-torsors-1707.08768v1.html",
+      "sha256": "b6a7e50234f3cd4e9830f7149c82f23f58943b966621c8ce3f4aa24b0c66e311",
+      "role": "Versioned primary abstract inspected for additive actions and punctured-surface torsors. Context only: no torsor classification, properness or quotient theorem is imported."
+    }
+  ],
+  "rechecked_retained_primary_context": [
+    {
+      "url": "https://arxiv.org/html/2011.03472v3#S2.Thmdefi4",
+      "retained_file_from_research_root": "jacobian/jc2-omitted-divisors/sources/jelonek-2011.03472v3.html",
+      "role": "Retained closed affine-line rectification statement rechecked; the exact used theorem remains the already-proved GR0 affine-line-component input."
+    }
+  ],
+  "retained_structural_inputs": [
+    {
+      "claim": "HCTANG2",
+      "statement": "Constant jointly affine two-plane theorem in actual unit-Hessian source coordinates."
+    },
+    {
+      "claim": "HC4MYHG0",
+      "statement": "Critical schemes and their critical chain rule are actual source invariants."
+    },
+    {
+      "claim": "HC4MYGR0",
+      "statement": "A plane Keller fibre with an actual closed A1 component forces inverse."
+    },
+    {
+      "claim": "HC4MYGR1",
+      "statement": "Retained one-coordinate Tang projection ranks and whole relative-curve graph argument."
+    },
+    {
+      "claim": "HC4MYJK0",
+      "statement": "Suspended multiplier critical points and exact old fixed functions."
+    },
+    {
+      "claim": "HC4MYJK1",
+      "statement": "Previous two-variable-base orientation obstruction and complete relative chain rule."
+    },
+    {
+      "claim": "HC4MYJQ0",
+      "statement": "Exact normalized models, global hyperbolic suspension and all generic/special plane fibres."
+    },
+    {
+      "claim": "HC4MYJQ1",
+      "statement": "Natural-base exclusions and the actual-constant-plane boundary."
+    },
+    {
+      "claim": "HC4MYHP0",
+      "statement": "Literal scalar/constant quadratic-similitude transfer."
+    },
+    {
+      "claim": "HC4MYHM0",
+      "statement": "Literal original Meng-Yang ambient normalization."
+    }
+  ],
+  "retained_proof_and_source_sha256": {
+    "hessian/hc4-triangular-graphs/GLOBAL_VALUE_ORBITS.md": "1dba2b511024f9da2ebd787183de66aaf42e76bf823fee76b745ffedabef2d5c",
+    "hessian/hc4-triangular-graphs/HODGE_TRACE_CLOSURE.md": "b4958aa0e48775d39f790e8722314452b0d9852a1e98ebbfee2bd2afb2068171",
+    "hessian/hc4-triangular-graphs/SUSPENDED_MULTIPLIER_ORBITS_AND_BASE_PRESERVING_CLOSURE.md": "868748e503bcf87ce1f087c5cf9c612122ea6f3b051decd12b88fad940f5500c",
+    "hessian/hc4-triangular-graphs/CRITICAL_COMPONENTS.md": "76fc84214d34b62c804d72988c5a442403b1a3bd70e45c1d3cf6f89d480bd8af",
+    "hessian/hc4-triangular-graphs/CRITICAL_COORDINATE_JET.md": "035d476100acc2c5250efbfb9c4d2294587a3b46aa1ce5ab500b8fc22bb550cd",
+    "hessian/hc4-triangular-graphs/RELATIVE_CRITICAL_GRAPH_CLASSIFICATION.md": "2f1fb67fcc8abff242c43f8a6a1a1ec79a3d40c384067eb9c561e164fd2bbe62",
+    "hessian/hc4-triangular-graphs/TWO_NORMAL_MODELS_AND_RELATIVE_RANK_ONE_ALIGNMENT.md": "db3a76291e820edda4dc5ed28455b54247587c40feaca55bc4a7477bf8bbebe8",
+    "hessian/hc4-triangular-graphs/verify_two_normal_models.py": "4ba21ae068f31508eefe90209e6fc9f8434306944cd1fffed15996e490944593",
+    "hessian/hc4-triangular-graphs/receipt-two-normal-models.json": "88795224e906ac36cabc2c40cc34da0ffd3dd19168e5827abbe57d7b1149909f",
+    "hessian/hc4-triangular-graphs/sources/two-normal-model-context.json": "4b06e5bac73e45636c54bf1497669bb4cac7f45391dfc71634f2620b9d1c33bc",
+    "hessian/hc4-triangular-graphs/../tang-hc4-audit/STRUCTURAL_REVIEW.md": "26a6a76eb579de05b8e71245b8b804bdd5f036602f2e3e6ad5d036fd9f5cd572",
+    "hessian/hc4-triangular-graphs/sources/critical-components-import.json": "90ac13d7a4c9ce570229aa520be8c9fbf45a2c2ccbe921e6f985756816d6e98c",
+    "hessian/hc4-triangular-graphs/sources/critical-jet-import.json": "ee08df853a8f8546504c7386a175cfccec2243ec2f15bacf48d4e7c88721a18d",
+    "hessian/hc4-triangular-graphs/../jc2-omitted-divisors/sources/jelonek-2011.03472v3.html": "976068fa81837498fcb77bb91e6c4d28b4a6bc74ed940340d9771e807a5be249",
+    "hessian/hc4-triangular-graphs/sources/stacks-suspended-standard-smooth-00T6.html": "10851df7335a8c2311f33a5b714dc75fd5d01ef7945d9c8f06e7daf8cf5a3f63",
+    "hessian/hc4-triangular-graphs/sources/stacks-suspended-standard-smooth-00T7.html": "b4b70512dacc5c4ef405c0692d8d600d02502aae0a389ce755948cbd7a645aff"
+  },
+  "intrinsic_plane_algebra_of_rational_punctured_generic_cylinder_recovered": true,
+  "single_global_free_coordinate_scale_proved": true,
+  "constant_normal_slope_obstruction_independent_of_all_higher_normal_jets": true,
+  "all_h0_h1_source_maps_retaining_one_hyperbolic_coordinate_excluded": true,
+  "all_K3_suspension_source_maps_retaining_one_hyperbolic_coordinate_excluded": true,
+  "K2_h1_equivalence_retaining_x_or_y_excluded": true,
+  "fixed_K2_full_source_orbit_resolved": false,
+  "K3_rho_full_source_family_resolved": false,
+  "full_source_h0_h1_orbits_resolved": false,
+  "K2_one_coordinate_unit_hessian_route_excluded": false,
+  "fixed_K2_identified_with_h1": false,
+  "nonlinear_pulledback_coordinate_algebras_treated_as_actual_affine_coordinates": false,
+  "arbitrary_quadratic_suspension_inverse_closure_proved": false,
+  "unit_ideal_endpoint_resolved": false,
+  "singleton_zero_endpoint_resolved": false,
+  "unrestricted_HC4_or_JC2_resolved": false,
+  "original_goal_complete": false
+}

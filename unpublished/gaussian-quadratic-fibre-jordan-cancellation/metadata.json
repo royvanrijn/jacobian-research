@@ -1,0 +1,19 @@
+{
+  "title": "All-Degree Gaussian Quadratic Fibres: Jordan Cancellation and Unit Rigidity",
+  "author": {
+    "name": "Roy van Rijn",
+    "orcid": "0009-0000-2808-0645"
+  },
+  "summary": "Studies cancellation in Gaussian phases that are quadratic in a fibre variable.",
+  "published": false,
+  "status": "partial-draft",
+  "source": "main.tex",
+  "pdf": "gaussian_quadratic_fibre_jordan_cancellation.pdf",
+  "build": "latexmk -pdf -interaction=nonstopmode -halt-on-error main.tex",
+  "verification": "A focused partial result retained with its source bundle and audit receipts.",
+  "next_steps": [
+    "Review the proof and attribution and decide how to integrate the partial result."
+  ],
+  "catalogued_on": "2026-11-17",
+  "source_bundle": "gaussian_quadratic_fibre_jordan_source.zip"
+}

@@ -1,0 +1,369 @@
+{
+  "claim": "PF2RULED157",
+  "outcome": "PASS",
+  "check_count": 118,
+  "checks": [
+    "retained source pin hessian/hc4-triangular-graphs/COMMON_UNRAMIFIED_PENCIL_AND_AUTOMATIC_ADDITIVE_COMPLETION.md",
+    "retained source pin hessian/hc4-triangular-graphs/CYCLIC_DECK_SOURCE_IMAGE_AND_THE_UNIQUE_MULTIPLE_FIBRE.md",
+    "retained source pin hessian/hc4-triangular-graphs/REPLICA_DEGREE_AND_SOURCE_DERIVATIVE_FIELD_RECONSTRUCTION.md",
+    "retained source pin hessian/hc4-triangular-graphs/TRACE_FREE_RATIONAL_SLICES_AND_MIXED_SOURCE_IMAGE_GRAPH_MODELS.md",
+    "retained source pin jacobian/affine-complements/TRANSLATION_ATLAS_EXACTNESS_AND_UNBOUNDED_MOVING_LABEL_FIBRES.md",
+    "retained source pin jacobian/affine-complements/PARTIAL_KUMMER_PLANE_CHARTS_AND_CYCLIC_EQUIVARIANT_FACTORS.md",
+    "retained source pin jacobian/affine-complements/MARKED_QUADRATIC_VELOCITIES_AND_CYCLIC_TRACE_POLES.md",
+    "retained source pin jacobian/affine-complements/NORMAL_FORM_COVERAGE_AND_COMMON_LEADING_DIVISORS.md",
+    "retained source pin jacobian/affine-complements/SOURCE_SYMMETRY_DESCENT_AND_TRACE_GATE.md",
+    "retained source pin jacobian/affine-complements/FULL_COMPLEX_QUINTIC_GRAPH_EXCLUSION_AND_CUBIC_NILPOTENCE.md",
+    "retained source pin jacobian/affine-complements/complex_quintic_graph_closure_receipt.json",
+    "retained source pin jacobian/affine-complements/MONIC_PARAMETER_POLE_BOUNDS_AND_EVEN_LEADING_CYCLIC_TARGETS.md",
+    "retained source pin hessian/hc4-triangular-graphs/LOGARITHMIC_DESCENT_AND_CYCLIC_EXACT_SOURCE_IMAGES.md",
+    "monomial commuting subgroup matches gcd controls",
+    "general-replica character subgroup matches support gcd controls",
+    "canonical replica selects full deck group",
+    "invariant slice action g2",
+    "invariant slice action g3",
+    "invariant slice action g6",
+    "actual two-dimensional volume multiplier",
+    "actual cyclic field multiplication g2 case0",
+    "trace-free primitive case0",
+    "weighted second derivative trace cancellation case0",
+    "actual linear quadratic-trace coefficient case0",
+    "actual quadratic lambda coefficient case0",
+    "actual cyclic field multiplication g3 case1",
+    "trace-free primitive case1",
+    "weighted second derivative trace cancellation case1",
+    "actual linear quadratic-trace coefficient case1",
+    "actual quadratic lambda coefficient case1",
+    "actual cyclic field multiplication g5 case2",
+    "trace-free primitive case2",
+    "weighted second derivative trace cancellation case2",
+    "actual linear quadratic-trace coefficient case2",
+    "actual quadratic lambda coefficient case2",
+    "actual cyclic field multiplication g6 case3",
+    "trace-free primitive case3",
+    "weighted second derivative trace cancellation case3",
+    "actual linear quadratic-trace coefficient case3",
+    "actual quadratic lambda coefficient case3",
+    "actual cyclic field multiplication g6 case4",
+    "trace-free primitive case4",
+    "weighted second derivative trace cancellation case4",
+    "actual linear quadratic-trace coefficient case4",
+    "actual quadratic lambda coefficient case4",
+    "order-two subgroup primitive projection",
+    "order-three subgroup primitive projection",
+    "subgroup trace-free remainders",
+    "mixed central characters have primitive gcd",
+    "mixed central transition pole profile",
+    "central source-coordinate pole profile",
+    "full marked-charge central packet lower bound",
+    "inadmissible central stabilizer control",
+    "nonzero cluster primitive trace normalized",
+    "actual nonzero principal-part values",
+    "intermediate fibre sheet clusters retained",
+    "polynomial invariant control g2",
+    "source polynomial primitive representative g2",
+    "retained one-root source relation g2",
+    "degree comparison sharp controls g2",
+    "exact polar linear moment control g2",
+    "polynomial invariant control g3",
+    "source polynomial primitive representative g3",
+    "retained one-root source relation g3",
+    "degree comparison sharp controls g3",
+    "exact polar linear moment control g3",
+    "polynomial invariant control g4",
+    "source polynomial primitive representative g4",
+    "retained one-root source relation g4",
+    "degree comparison sharp controls g4",
+    "exact polar linear moment control g4",
+    "polynomial invariant control g5",
+    "source polynomial primitive representative g5",
+    "retained one-root source relation g5",
+    "degree comparison sharp controls g5",
+    "exact polar linear moment control g5",
+    "polynomial invariant control g6",
+    "source polynomial primitive representative g6",
+    "retained one-root source relation g6",
+    "degree comparison sharp controls g6",
+    "exact polar linear moment control g6",
+    "quadratic reduced denominator and numerator case0",
+    "quadratic central pole and infinity normalization case0",
+    "quadratic rational primitive denominator covers R0 case0",
+    "quadratic polynomial primitive Bezout case0",
+    "quadratic whole-source relation case0",
+    "quadratic source deck invariance case0",
+    "quadratic actual unit volume pullback case0",
+    "quadratic global polynomial representative case0",
+    "quadratic central whole-line chart case0",
+    "quadratic even-leading criterion infinity bound case0",
+    "quadratic reduced denominator and numerator case1",
+    "quadratic central pole and infinity normalization case1",
+    "quadratic rational primitive denominator covers R0 case1",
+    "quadratic polynomial primitive Bezout case1",
+    "quadratic whole-source relation case1",
+    "quadratic source deck invariance case1",
+    "quadratic actual unit volume pullback case1",
+    "quadratic global polynomial representative case1",
+    "quadratic central whole-line chart case1",
+    "quadratic even-leading criterion infinity bound case1",
+    "quadratic reduced denominator and numerator case2",
+    "quadratic central pole and infinity normalization case2",
+    "quadratic rational primitive denominator covers R0 case2",
+    "quadratic polynomial primitive Bezout case2",
+    "quadratic whole-source relation case2",
+    "quadratic source deck invariance case2",
+    "quadratic actual unit volume pullback case2",
+    "quadratic global polynomial representative case2",
+    "quadratic central whole-line chart case2",
+    "quadratic even-leading criterion infinity bound case2",
+    "quadratic model includes central order beyond MX0",
+    "lowest ruling-degree parity obstruction universal",
+    "linear coefficient Gram determinant exact",
+    "retained 3D constant Jacobian control",
+    "retained 3D regular target arc",
+    "retained 3D first-velocity pole",
+    "scope does not assert automatic integrality or arbitrary model realization"
+  ],
+  "elapsed_seconds": 0.7036119370022789,
+  "environment": {
+    "python": "3.12.3",
+    "sympy": "1.14.0"
+  },
+  "proof_sha256": "3b8b5d54fb2800f44b6bfe5f6925d3b788752a9eab9e6b89ec6d2b04ef924dcf",
+  "checker_sha256": "76034f1417e57acc62adfe8065708c4b174451c552c8bf8b0c8c6d857eee75cb",
+  "context_sha256": "a035ebe4b4687b31ed7e18a2085e73336f416c76b42be02a4be58afb5b267913",
+  "exact_monomial_replica_index_formula": "gcd(|D|,k+1)",
+  "general_replica_formula_requires_minimality": true,
+  "no_proper_equivariant_factor_iff_trivial_deck_at_minimal_degree": true,
+  "actual_pole_atlas_coverage_supplied": true,
+  "arbitrary_pole_data_model_realization_proved": false,
+  "target_ruling_degree_lower_bound": "2*|D|",
+  "universal_linear_quadratic_trace_determinant": "-|D|^2",
+  "full_Gram_determinant_claimed_constant": false,
+  "full_marked_quadratic_regularity_proved": false,
+  "monomial_controls": [
+    {
+      "g": 2,
+      "k": 0,
+      "h": 1
+    },
+    {
+      "g": 2,
+      "k": 1,
+      "h": 2
+    },
+    {
+      "g": 3,
+      "k": 2,
+      "h": 3
+    },
+    {
+      "g": 4,
+      "k": 1,
+      "h": 2
+    },
+    {
+      "g": 6,
+      "k": 0,
+      "h": 1
+    },
+    {
+      "g": 6,
+      "k": 1,
+      "h": 2
+    },
+    {
+      "g": 6,
+      "k": 2,
+      "h": 3
+    },
+    {
+      "g": 6,
+      "k": 5,
+      "h": 6
+    },
+    {
+      "g": 6,
+      "k": 11,
+      "h": 6
+    },
+    {
+      "g": 8,
+      "k": 3,
+      "h": 4
+    },
+    {
+      "g": 12,
+      "k": 7,
+      "h": 4
+    },
+    {
+      "g": 15,
+      "k": 9,
+      "h": 5
+    }
+  ],
+  "general_replica_controls": [
+    {
+      "g": 6,
+      "support": [
+        5
+      ],
+      "h": 6
+    },
+    {
+      "g": 6,
+      "support": [
+        1,
+        5
+      ],
+      "h": 2
+    },
+    {
+      "g": 6,
+      "support": [
+        2,
+        5
+      ],
+      "h": 3
+    },
+    {
+      "g": 6,
+      "support": [
+        0,
+        5
+      ],
+      "h": 1
+    },
+    {
+      "g": 6,
+      "support": [
+        5,
+        11
+      ],
+      "h": 6
+    },
+    {
+      "g": 12,
+      "support": [
+        3,
+        7,
+        11
+      ],
+      "h": 4
+    },
+    {
+      "g": 10,
+      "support": [
+        1,
+        3,
+        9
+      ],
+      "h": 2
+    }
+  ],
+  "field_trace_controls": [
+    {
+      "g": 2,
+      "G": "1/t"
+    },
+    {
+      "g": 3,
+      "G": "t**(-2)"
+    },
+    {
+      "g": 5,
+      "G": "1/(t*(t**5 + 1))"
+    },
+    {
+      "g": 6,
+      "G": "t**(-2) + t**(-3)"
+    },
+    {
+      "g": 6,
+      "G": "-1/(t**6 - 1) + 1/(t**2 - 1) + 1/t"
+    }
+  ],
+  "degree_and_pole_controls": [
+    {
+      "g": 2,
+      "r": 2,
+      "central_degree": 1,
+      "linear_moment_pole_order": 3
+    },
+    {
+      "g": 3,
+      "r": 3,
+      "central_degree": 1,
+      "linear_moment_pole_order": 4
+    },
+    {
+      "g": 4,
+      "r": 4,
+      "central_degree": 1,
+      "linear_moment_pole_order": 5
+    },
+    {
+      "g": 5,
+      "r": 5,
+      "central_degree": 1,
+      "linear_moment_pole_order": 6
+    },
+    {
+      "g": 6,
+      "r": 6,
+      "central_degree": 1,
+      "linear_moment_pole_order": 7
+    }
+  ],
+  "quadratic_image_controls": [
+    {
+      "R0": "1/u",
+      "A": "u",
+      "Sigma": "-1",
+      "C0": "1",
+      "D0": "0",
+      "central_R0_pole_order": 1,
+      "central_M_order": 2,
+      "full_marked_quadratic_charge_lower_bound": 6
+    },
+    {
+      "R0": "1/(u*(u + 1)**2)",
+      "A": "u**4 + 3*u**3 + 3*u**2 + u",
+      "Sigma": "-5*u - 1",
+      "C0": "25*u**3/16 + 35*u**2/8 + 61*u/16 + 1",
+      "D0": "-125/16",
+      "central_R0_pole_order": 1,
+      "central_M_order": 2,
+      "full_marked_quadratic_charge_lower_bound": 6
+    },
+    {
+      "R0": "2/(u + 2)**2 + 1/(u - 1) + u**(-2)",
+      "A": "u**7 + 4*u**6 + u**5 - 10*u**4 - 4*u**3 + 8*u**2",
+      "Sigma": "-u**6 - 16*u**5 - 14*u**4 - 37*u**3 + 26*u**2 + 12*u - 24",
+      "C0": "223*u**6/6912 + 691*u**5/3456 + 737*u**4/2304 - 349*u**3/1728 - 1181*u**2/1728 + 1/3",
+      "D0": "-223*u**5/6912 - 2029*u**4/3456 - 5495*u**3/3456 - 15791*u**2/6912 - 1379*u/576 + 797/576",
+      "central_R0_pole_order": 2,
+      "central_M_order": 3,
+      "full_marked_quadratic_charge_lower_bound": 10
+    }
+  ],
+  "complete_quadratic_image_presentation_verified": true,
+  "mixed_central_nu_profile": [
+    3,
+    2,
+    3,
+    2,
+    3
+  ],
+  "nonzero_pole_cluster_sizes": [
+    2,
+    4
+  ],
+  "original_full_normalization_and_all_ramified_primes_retained": true,
+  "global_coverage_complete": false,
+  "new_external_theorem_imports": [],
+  "registered_predecessor_checkers_replayed": [],
+  "full_goal_complete": false,
+  "independent_replay": false,
+  "formal_verification": false,
+  "external_review": false
+}

@@ -1,0 +1,141 @@
+{
+  "claim": "PF2RULED160",
+  "open_problem": "OP-HC4-COVERAGE",
+  "date": "2026-11-17",
+  "outcome": "PASS_TARGETED",
+  "exact_controls": 70,
+  "previous_goal_turn": "progress: PF159 ruling-five escape coverage and affine-response boundary; PASS82 source hashes revalidated",
+  "checked": [
+    "new theorem and affected coverage schemas, unique IDs, dependencies, locks, artifact hashes and assurance flags",
+    "new proof/checker/context/recipe/certificate receipt hashes and nine retained plus three new source pins",
+    "PF149/PF150/PF156/PF157/PF158/PF159 proof/checker hashes unchanged without predecessor checker replay",
+    "written complete pole budget, zero-trace prime-degree birational pencil and arithmetic genus proof",
+    "actual degree-five field multiplication and parameter-velocity tracezero, distinguished from originalS",
+    "geometric generic integrality from coprime five/two component counts",
+    "whole tau-family exact3-double-pole zero-residue coframe audit and all other generic-curve ends retained",
+    "universal integer discriminant division/degree/boundary-value proof by all-root Puiseux products",
+    "exact modular discriminant rederivation, full reduced coefficient vector, polynomial Bezout identity and B1=12mod101",
+    "explicit nonexpanded exceptional resultant definition and degree<=3432; no universal coefficient expansion claimed",
+    "215 simple generic branch points imply genus>=104 versus rational primitive genus<=8",
+    "rational-mate exclusion descends from every finite characteristic-zero extension by normalized field trace only",
+    "original full normalization, codifferent and every ramified prime retained; generic derivative integrality unproved",
+    "affected work/lesson source existence and reviewed scope fingerprints",
+    "new source whitespace/JSON/Python syntax, proof local links and scoped git diff --check",
+    "both inherited renderer failures confirmed and all12 generated navigation hashes unchanged"
+  ],
+  "supporting_check_correction": "Initial source-line test expected derivative1; exact computation is -2. Corrected checker expectation; the written proof only required nonzero and was unchanged in that assertion.",
+  "reviewed_work_items": [
+    "WORK-HC4-RODRIGUES-TRANSFER",
+    "WORK-HC4-COVERAGE",
+    "WORK-HC4-SCHUR",
+    "WORK-HC4-D5",
+    "WORK-HC4-RESIDUAL-AUDIT",
+    "WORK-QUARTIC-RULED-COMPATIBILITY"
+  ],
+  "validated_lessons": [
+    "METHOD-HC4-ARTINIAN-TAIL-PROPAGATION",
+    "METHOD-COVERAGE-BEFORE-ARCHITECTURE",
+    "METHOD-ODD-RECIPROCAL-BOUNDARY-COFRAME",
+    "METHOD-MONIC-PARAMETER-POLE-BOUND",
+    "METHOD-CANONICAL-DECK-POLE-COVERAGE",
+    "METHOD-HALF-SPECIALIZATION-POLE-BOUND",
+    "METHOD-POLYNOMIAL-MATE-INITIAL-RESPONSE",
+    "METHOD-PRIME-RULING-POLE-GENUS"
+  ],
+  "new_proof_local_links_checked": 1,
+  "retained_receipts": [
+    {
+      "claim": "PF2RULED149",
+      "controls": 83,
+      "proof_checker_hashes_unchanged": true,
+      "checker_replayed": false
+    },
+    {
+      "claim": "PF2RULED150",
+      "controls": 95,
+      "proof_checker_hashes_unchanged": true,
+      "checker_replayed": false
+    },
+    {
+      "claim": "PF2RULED156",
+      "controls": 43,
+      "proof_checker_hashes_unchanged": true,
+      "checker_replayed": false
+    },
+    {
+      "claim": "PF2RULED157",
+      "controls": 118,
+      "proof_checker_hashes_unchanged": true,
+      "checker_replayed": false
+    },
+    {
+      "claim": "PF2RULED158",
+      "controls": 98,
+      "proof_checker_hashes_unchanged": true,
+      "checker_replayed": false
+    },
+    {
+      "claim": "PF2RULED159",
+      "controls": 82,
+      "proof_checker_hashes_unchanged": true,
+      "checker_replayed": false
+    }
+  ],
+  "renderer_attempts": [
+    {
+      "command": "python3 research/scripts/render_status.py",
+      "exit_code": 1,
+      "last_line": "AssertionError: KDSQ6: missing document consumer artifacts/generated-results/README.md"
+    },
+    {
+      "command": "python3 research/scripts/research.py render",
+      "exit_code": 1,
+      "last_line": "Historical navigation output omitted during repository reorganization."
+    }
+  ],
+  "generated_navigation_sha256": {
+    "STATUS.md": "1ee1eb922cf7113ad622222089ad26d78e515747cb3b69e3cc2907a154ce09a4",
+    "index/README.md": "e214bc143116498bda82ddde63a6a800133ec1a487b5453ca00b4c4f3cd7c477",
+    "index/core.md": "729569f9fc29ba2fa99c99ab90d0f7d7b29ed4a8f4ad4bc4ecde4ec3dddeb64a",
+    "index/documents.tsv": "8281cc55a6cba0d694e0c9842d2c9052066608d80fbb1d0b3b85718cc3d32dd7",
+    "index/formal.md": "98a1c07dcc0015819f9f46be556f4c3377dca880377667761225b39e95d08929",
+    "index/geometry.md": "1bce866a8f27f568e5f294ec2373c93e6261ac09b83f27977ef5c64328955705",
+    "index/hessian.md": "9048a71d8380e98353a87b31f2f6e1f70c9fe988b727b0b30f225059d6fae005",
+    "index/papers.md": "4d7972cc9d53cef6b5c6f4200149901e8be868b19b73fe2d43f02ed9a4da2036",
+    "index/plane-jc.md": "5d671124aac8240bdbfbc0996ed7ddd5db314650d16d30b1417453a36c3f3425",
+    "index/resources.md": "11e67c2cb9b688d4f2ee341dd5a49880a1c10913b4ccae81e1feb815df81d068"
+  },
+  "completion_audit": {
+    "uniform_prime_ruling_zero_trace_pole_degree_genus_criterion_proved": true,
+    "complete_geometric_curve_pole_divisor_and_all_branch_points_retained": true,
+    "curve_field_multiplication_not_identified_with_original_S": true,
+    "PF159_specific_residue_free_affine_control_tau1_excluded": true,
+    "explicit_tau_nonzero_B_nonzero_family_excluded": true,
+    "rational_mates_in_all_finite_characteristic_zero_extensions_excluded_on_stated_class": true,
+    "simple_generic_branch_points_at_least": 215,
+    "geometric_generic_genus_at_least": 104,
+    "primitive_degree_if_exact": 3,
+    "primitive_genus_at_most": 8,
+    "exception_polynomial_nonzero_certified": true,
+    "exception_polynomial_degree_at_most": 3432,
+    "universal_R_and_B_coefficient_expansions_computed": false,
+    "finite_exceptional_B_root_family_closed": false,
+    "all_ruling_five_targets_excluded": false,
+    "original_full_normalization_codifferent_and_all_ramified_primes_retained": true,
+    "generic_first_derivative_integrality_proved": false,
+    "full_marked_quadratic_regularity_proved": false,
+    "normal_tail_increasing_power_containment_proved": false,
+    "global_minimal_counterexample_coverage_complete": false,
+    "PF142_mixed_minimal_retirement_preserved": true,
+    "PF156_quintic_graph_branch_retirement_preserved": true,
+    "PF158_quadratic_ruling_four_retirement_preserved": true,
+    "full_HC4_JC2_proved": false,
+    "actual_counterexample_constructed": false
+  },
+  "goal_status": "active",
+  "new_external_paper_imports": [],
+  "registered_predecessor_checkers_replayed": [],
+  "independent_replay": false,
+  "formal_verification": false,
+  "external_review": false
+}

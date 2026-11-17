@@ -1,0 +1,80 @@
+{
+  "schema_version": 1,
+  "purpose": "Pins imported local canonical proofs and declares scoped primary literature. Source-map/fibre routines are declared code reuse, not independent replay.",
+  "local_sources": [
+    {
+      "path": "jacobian/universal-keller-compression/PROOF.md",
+      "sha256": "cf7c048fc2c107d261d5fb74ee3ae36409d5f4a1b54da21284a6e3758ad998f3"
+    },
+    {
+      "path": "jacobian/universal-keller-compression/verify.py",
+      "sha256": "a8d9b280e09868e1b1abed24443541dc29daa94744e467517a5b3d6da85457a5"
+    },
+    {
+      "path": "jacobian/universal-keller-trace/PROOF.md",
+      "sha256": "aaebb6eb315c569068f3064fb19bc217da514c3b2ff725b13cd05b785c5ae2c2"
+    },
+    {
+      "path": "jacobian/universal-keller-sextic/PROOF.md",
+      "sha256": "c45c7d6b32bb4bff768d5a60bfc50cf8e472e6fe4f4a50e0812ab7d8dfe41d3f"
+    },
+    {
+      "path": "jacobian/universal-keller-quadrics/PROOF.md",
+      "sha256": "fde6467d51215e780a321862264e9f4ee969c9b276a78a848ec0bb465a4e8d21"
+    },
+    {
+      "path": "foundations/verified/UNIVERSAL_RELATIVE_KELLER_MAP.md",
+      "sha256": "4cced623c100a90859996e5aea69219a241c56c20ca087f1a9d4caa50209c1c5"
+    },
+    {
+      "path": "foundations/verified/QUADRATIC_GAUGE_DECORATED_RECEIVER.md",
+      "sha256": "e208aaeb6e01050f1bc08e1e588a6f11bb10cb49580e9854ff5703504428f7d7"
+    },
+    {
+      "path": "foundations/verified/UNIVERSAL_POWER_SHIFTED_GAUGE_MULTIPLICITY.md",
+      "sha256": "9e61137e03712c3832f004f5f77061e0f066b287fb975969473a3774d87e538a"
+    }
+  ],
+  "external_sources": [
+    {
+      "title": "Arpin--Bozlee--Herr--Smith, Scheme of Monogenic Generators II",
+      "url": "https://arxiv.org/html/2205.04620v2",
+      "scope": "Sections3--4: configuration spaces, twists and scalar generator quotients; representability is established literature."
+    },
+    {
+      "title": "Stacks Project, quotient stacks",
+      "url": "https://stacks.math.columbia.edu/tag/04UI",
+      "scope": "Quotient objects and commuting torsor quotients."
+    },
+    {
+      "title": "Stacks Project, inertia and quotient stacks",
+      "url": "https://stacks.math.columbia.edu/tag/06PA",
+      "scope": "Automorphism groups of quotient objects and induced maps on inertia."
+    },
+    {
+      "title": "Stacks Project, etale morphisms of stacks",
+      "url": "https://stacks.math.columbia.edu/tag/0CIK",
+      "scope": "Presentation-local verification of the representable quotient morphism."
+    },
+    {
+      "title": "Alper, Good moduli spaces for Artin stacks",
+      "url": "https://arxiv.org/abs/0804.2242",
+      "scope": "Affine invariant-theoretic quotients and distinction from geometric orbit quotients."
+    },
+    {
+      "title": "Alper, On the local quotient structure of Artin stacks",
+      "url": "https://sites.math.washington.edu/~jarod/papers/quotient-structure.pdf",
+      "scope": "Section6: additional hypotheses needed for etale descent to good moduli spaces; not used as a substitute for the explicit contraction proof."
+    },
+    {
+      "title": "Brassil--Reichstein, The Hermite-Joubert problem over p-fields",
+      "url": "https://www.math.uni-bielefeld.de/LAG/man/560.pdf",
+      "scope": "Corollary8.1: the characteristic-zero double-trace rank-six receiver retains its negative binary arithmetic criterion."
+    },
+    {
+      "title": "Stacks Project, Riemann--Hurwitz",
+      "url": "https://stacks.math.columbia.edu/tag/0C1B",
+      "scope": "Characteristic-zero exclusion of covers of P1 branched only at infinity, in the profile monodromy proof."
+    }
+  ]
+}

@@ -1,0 +1,116 @@
+{
+  "schema_version": 1,
+  "result": "pass",
+  "check_count": 49,
+  "checks": [
+    "reuse pure compiler only",
+    "auxiliary cubic actual Jacobian one",
+    "lifted translation vector polynomial",
+    "lifted translation has actual target direction",
+    "first exact polynomial integral",
+    "second exact polynomial integral",
+    "nonzero source-coordinate response at origin",
+    "rational kernel parametrization exact cleared identity",
+    "profile response determinant {4: a}",
+    "profile exact all-degree response formula {4: a}",
+    "profile nonzero loop response {4: a}",
+    "profile response determinant {5: a}",
+    "profile exact all-degree response formula {5: a}",
+    "profile nonzero loop response {5: a}",
+    "profile response determinant {4: a**2 + a, 5: a**2}",
+    "profile exact all-degree response formula {4: a**2 + a, 5: a**2}",
+    "profile nonzero loop response {4: a**2 + a, 5: a**2}",
+    "profile response determinant {4: a**2*pi**2 + a*pi, 5: a**2*pi + a}",
+    "profile exact all-degree response formula {4: a**2*pi**2 + a*pi, 5: a**2*pi + a}",
+    "profile nonzero loop response {4: a**2*pi**2 + a*pi, 5: a**2*pi + a}",
+    "coupled blocks first processing order exact",
+    "coupled blocks reverse processing order exact",
+    "coupled profiles have genuine cycle",
+    "actual nine-variable naive feedback Jacobian exactly43over18",
+    "actual Schur product explains Jacobian defect",
+    "nonlinear recovered control exact reverse-factor identity",
+    "nonlinear recovered control annihilated by delta",
+    "rank2 geometric product group exact order",
+    "rank2 geometric product imprimitive",
+    "rank2 arithmetic product-action group exact order",
+    "rank2 transitive constant action makes arithmetic group primitive",
+    "all geometric intermediate blocks exact Boolean diamond",
+    "all arithmetic intermediate blocks primitive interval",
+    "rank3 geometric product group exact order",
+    "rank3 geometric product imprimitive",
+    "rank3 arithmetic product-action group exact order",
+    "rank3 transitive constant action makes arithmetic group primitive",
+    "quadratic Weil map actual plus split conjugacy",
+    "quadratic Weil map actual minus split conjugacy",
+    "quadratic Weil map has six polynomial coordinates",
+    "local pin jacobian/universal-keller-canonical-filter/PROOF.md",
+    "local pin jacobian/universal-keller-structure/PROOF.md",
+    "local pin jacobian/universal-keller-receiver/PROOF.md",
+    "local pin foundations/verified/KELLER_RITT_PRODUCT_THEOREM.md",
+    "local pin foundations/verified/UNIVERSAL_RELATIVE_KELLER_MAP.md",
+    "local pin jacobian/universal-keller-compression/verify.py",
+    "local pin jacobian/universal-keller-atomic-cylinder/PROOF.md",
+    "primary pin sources/stacks-01V4.html",
+    "primary pin sources/barbieri-potocnik-2024.html"
+  ],
+  "profile_response_controls": [
+    {
+      "profiles": {
+        "4": "a"
+      },
+      "slice_response_nonzero": true
+    },
+    {
+      "profiles": {
+        "5": "a"
+      },
+      "slice_response_nonzero": true
+    },
+    {
+      "profiles": {
+        "4": "a**2 + a",
+        "5": "a**2"
+      },
+      "slice_response_nonzero": true
+    },
+    {
+      "profiles": {
+        "4": "a**2*pi**2 + a*pi",
+        "5": "a**2*pi + a"
+      },
+      "slice_response_nonzero": true
+    }
+  ],
+  "actual_bad_scalar_feedback_jacobian": "43/18",
+  "product_action_controls": [
+    {
+      "rank": 2,
+      "degree": 9,
+      "geometric_order": 36,
+      "arithmetic_order": 72,
+      "geometric_primitive": false,
+      "arithmetic_primitive": true,
+      "top_group": "cyclic transitive order2"
+    },
+    {
+      "rank": 3,
+      "degree": 27,
+      "geometric_order": 216,
+      "arithmetic_order": 648,
+      "geometric_primitive": false,
+      "arithmetic_primitive": true,
+      "top_group": "cyclic transitive order3"
+    }
+  ],
+  "quadratic_Weil_control": "Six polynomial coordinates; exact conjugacy to two cubic maps over theta^2=D. Generic arithmetic group theorem is the written Galois argument, not inferred from the permutation sample.",
+  "python": "3.12.3",
+  "sympy": "1.14.0",
+  "runtime_seconds": 1.115,
+  "sha256": {
+    "PROOF.md": "132ad2cc9384e5ba1e3a9bce4afceebe86d904478c6cc01dcf676fe85ab9919f",
+    "LITERATURE_AND_GAPS.md": "8f05cb7dbcd963b261facd5422448b018fadd7d0cf96af1bb3092c72f556c7b3",
+    "verify.py": "f75c274cfc3d8c76de2eda59d06ef7b4dcf8231bd5584ff5c8dd97cb450d78ec",
+    "sources.json": "3d46132ae0dad13bc525bee04c7f85a07cae00a9c9d46b087ea9e6f39124dcb7"
+  },
+  "assurance": "Exact cubic translation/inverse identities, unbounded-theorem response controls, literal coupled partial factors, an actual failed nine-variable scalar feedback, nonlinear output-control recovery, finite geometric/arithmetic product actions and actual quadratic restriction of scalars. No formalization of all-profile Jacobians, independent splitting-field regularity, arithmetic constant fields, Boolean reconstruction rigidity, polynomial-kernel descent or the complete feedback classification. No independent whole-proof replay, external review or priority certificate."
+}

@@ -1,0 +1,179 @@
+{
+  "date": "2026-11-15",
+  "canonical_proof": "moments/vanishing/CONIC_ROW_FACTORS_96_ODD104.md",
+  "canonical_proof_sha256": "18a67c884339a850cb02093c49988d374e3e209dc2b6e2ca25b132dc96ba11b9",
+  "claims": [
+    "G3CONIC9620261115",
+    "G3ODD104HOM9620261115"
+  ],
+  "checker": "moments/vanishing/verify_conic_completed_row_factors.py",
+  "checker_sha256": "3b6171b46ce9536b156e080b573dbf5bbd8f7c4804460438f6a4cb3eed180bd6",
+  "certificate_sha256": "6e508a3a71f26b34bcf1abc19116a55009ce2fd90e3173bfe106e6acd6294407",
+  "accepted_receipt_sha256": "7e69100b97521ea80fc0597a9e4fc9ab58b20adab58512ce3c7250757bdb742d",
+  "prior_frontier": {
+    "path": "moments/vanishing/conic96_odd104_preupdate_20261115.json",
+    "sha256": "e428a966f4b7d8e531931f04eb1ce7b25b10c48251ff67644a18fff9231919e8"
+  },
+  "retained_inputs": {
+    "verify_balanced_logarithmic_seed_bounds.py": "8e7ba8dba5894e958a77f9820fce53c1285b62930d5d2e9a787ba3f429b374a1",
+    "verify_structured_seed_modules.py": "9be9d024e36b9dcd229bc799f5eb6a2d1e4ca75a9622bbc72bee6fae1323b5ba",
+    "verify_two_sided_conic_seed_bounds.py": "60491c28ddbd1335807c4568047ced3298486ee1ff5e93fbcefad632431bc72c",
+    "verify_endpoint_degrees_and_odd_prefixes.py": "613fc297565874a2cd1c8f1032339fb77f9dfdd6df75973c4478f9baf593d62d",
+    "structured_seed_modules_certificate.json": "62453d5b55b8f759d15ba10876216d1736f8e0783c24ddc4748efac4937b953f",
+    "two_sided_conic_seed_bounds_certificate.json": "b80ece02e4437c45b1a8d2eb616b321114731d1ef3bd92aca5bfa7f59375c585",
+    "endpoint_degrees_and_odd_prefixes_certificate.json": "b8e7f7313159c9ac1552c87fd9f5ddc95a9c82cd8842738a1a3b6ae196a18d4f",
+    "euler_seed_bounds_certificate.json": "cdf275466b7e8fe4005de74c8a74d2a217bd9bef257725aa2ae0db575bfe9b75",
+    "structured_seed_modules_source_audit.json": "86c2cb3369bc827a8752d4f09d90dd352bc90eb29b91ecc44f93a65a8f00997f",
+    "two_sided_conic_seed_bounds_source_audit.json": "9f0698017a582ef912f57ff54a45f77f2654389423e276c0556b66eefc8fdfce",
+    "endpoint_degrees_and_odd_prefixes_source_audit.json": "af6829f39024001dc1dff27dd8962274e941fc2beacda063984c7d083e0f3e7d",
+    "weighted_odd_prefix108_source_audit.json": "38b557c407f93545a026cb2df5f702bbd347f9d1e1f26977a3c52381112a20f0",
+    "weighted_odd_prefix108_verification.json": "0d08c6f8dd76e2252d08435aba84f99e81b884355706034b19305d2764085fc9",
+    "rank_factors_and_reduction_budgets_source_audit.json": "7660868c53d6c390732bc452a9c2a5ce48338b408357aab9cc9c72c7c12e5fa8",
+    "ordinary_normal_seed_module_source_audit.json": "0528d59f58c09748117afaecb6af65f964749681c29f38216cec338d9b047b31"
+  },
+  "current_history_index": "moments/vanishing/PREFIX_PROOF_HISTORY_CURRENT.md",
+  "previous_goal_turn_classification": "progress: adapted centered odd source/reduction weights and complete frame cover established odd108, with global130 and homogeneous108 unchanged; records and scoped checks were completed.",
+  "completed_row_method": {
+    "full_negative_coefficient_module_required": true,
+    "endpoint_only_module_condition_sufficient": false,
+    "row_factors": "K^max(-k,0)",
+    "row_degree_saving": "degree(K)*max(-k,0)",
+    "division_after_actual_seed_computation": true,
+    "connection_matrix_transformed": false,
+    "unit_row_unchanged": true,
+    "scalar_denominators_unchanged": true,
+    "scalar_valuation_at_least": "3j",
+    "formal_endpoint_inversion_before_specialization": true,
+    "shared_endpoint_K_t_roots_allowed": true,
+    "K_identically_zero_assigned_lower_actual_order": true,
+    "p2q2_endpoint_powers": [
+      "2j-1",
+      "2j-2"
+    ],
+    "p2q2_gates_by_K_degree": [
+      86,
+      93,
+      74
+    ]
+  },
+  "class_bounds": {
+    "p3q3_by_K_degree": [
+      72,
+      84,
+      96
+    ],
+    "p2q3": 94,
+    "p1q3": 84,
+    "p0q3_retained": 69,
+    "p3q2": 93,
+    "p2q2": 93,
+    "other_endpoints_retained": 63,
+    "conic": 96,
+    "full_W_linear": 96,
+    "homogeneous": 96,
+    "odd": 104,
+    "parent_retained": 92,
+    "rank_one_retained": 95
+  },
+  "odd_cover": {
+    "quadratic": 7,
+    "smooth": 94,
+    "nodal": 100,
+    "cusp": 94,
+    "transverse": 98,
+    "tangent": 94,
+    "triangle": 96,
+    "concurrent": 104,
+    "repeated": 98
+  },
+  "global_cover_unchanged": {
+    "quadratic": 7,
+    "smooth": 94,
+    "nodal": 129,
+    "cusp": 130,
+    "transverse": 127,
+    "tangent": 120,
+    "triangle": 118,
+    "concurrent": 104,
+    "repeated": 99
+  },
+  "global_sufficient_pure_prefix": 130,
+  "odd_sufficient_pure_prefix": 104,
+  "homogeneous_sufficient_pure_prefix": 96,
+  "least_prefix_interval": [
+    20,
+    130
+  ],
+  "odd_least_prefix_interval": [
+    20,
+    104
+  ],
+  "homogeneous_least_prefix_interval": [
+    14,
+    96
+  ],
+  "smooth_leading_least_prefix_interval": [
+    20,
+    94
+  ],
+  "smooth_homogeneous_least_prefix_interval": [
+    14,
+    56
+  ],
+  "frame_condition_required_for_global130": false,
+  "binary_search_rounds_max": 7,
+  "exact_auxiliary_evidence": {
+    "p2q2_source_strata": 3,
+    "logarithmic_gauge_identities": 27,
+    "retained_models": 54,
+    "retained_seed_row_identities": 162,
+    "p2q2_models": 15,
+    "structured_p2q3_models": 4,
+    "new_direct_seed_identities": 57
+  },
+  "historical_proof_immutability": {
+    "JOINT_DEGREE_GLOBAL_353.md": "5369191d5a67c2d05750033ef3d9d19c6ad61afcfb2d532a0a0c6f1016c451f9",
+    "EULER_REPRESENTATIVES_GLOBAL_297.md": "3a7591c55c7ae52b23f00a897c58ca42105de1b680521d46a596f2d7ef3fd631",
+    "SHARED_DIVISOR_GLOBAL_258.md": "5146f6676da462bfd741bde1ec9d8184eddc292389467005207e0e3d2df8aaf9",
+    "STRUCTURED_SEEDS_GLOBAL_239.md": "c5d09c4aadac8bc9911d9460034507a446d7c507e10950b324e594273d70d924",
+    "COMMON_TIME_FACTOR_GLOBAL_224.md": "4429c2c08cbabace6b1b23e2a6f501205068a43d04810a859d81d76133ca5208",
+    "POLE_FILTERED_GLOBAL_199.md": "ac04552d1dcfd4d8ea214aae3950976ec6b30442f097ef8129d5f2682454c41f",
+    "MULTIPLE_DIVISORS_GLOBAL_174.md": "2e4d1808e43ba5fcfce4a86a8bf15a0c20166e5994346a2db2c02cbc44787bba",
+    "NORMAL_MODULE_GLOBAL_146.md": "f58675c096e137292e813852894603153a41c70bd1bff681ee788908334baa6a",
+    "TWO_SIDED_CONIC_GLOBAL_140.md": "e862be29b4eafe29d5cbc0df6ca003294e0523409afb441669527fae2a47654f",
+    "RANK_FACTORS_AND_REDUCTION_GLOBAL_130.md": "d39725481b3e733c399e60a42663d4311f9fe76f5698fce2842a5782f86762dc",
+    "CONIC108_ODD126_GLOBAL130.md": "8caf3664ebb6149f3c48c49304447df9811c5b46421ece776bb2f77415c58697",
+    "PREFIX_PROOF_HISTORY.md": "3426a5a8e60d0d14f177e23e2c9e157778eae3644ec2caa564af9c17d4b8997c",
+    "WEIGHTED_ODD_PREFIX108.md": "c9238da9e5b7e2e7242cdf999bd7105a5d131b441b9a373fad420842fc79c878"
+  },
+  "failed_probes": {
+    "conic_completed_row_factors_initial_input.py": "7ee6274e6c3648f0fe3fba71f7fa60d0c407f2b997a82931daf2f45bb280dcbc",
+    "conic_completed_row_factors_initial_failure.json": "c5b1e7d50b71d1ed8076f27ff69961db2d1c632d9c7c4a148d4a2c4ae269135c",
+    "conic_completed_row_factors_module_probe_input.py": "8c9db4840b35a36f7ab686c543ac3238e51eddf4cec471289feae4d0c64d8007",
+    "conic_completed_row_factors_module_probe_failure.json": "0b6c6072c96d50c63d402b408dba1dc2cd9c1be5335516beb470239868c45a1f",
+    "conic_completed_row_factors_module_probe_failure.log": "2ceb05b2ebe967d4934ee11dda7b724b7f35b9948b6dd9f882fbe6fb6057718a"
+  },
+  "failure_boundary": "First arithmetic expectation95 corrected to94 on p2q3 linear-K constant endpoint. Second input tried the full negative module on an older enlarged synthetic euler p2q3 phase whose y^-1/y^-2 coefficients t^4+1,t^5+1 lack K/K^2; this weaker endpoint-only premise is rejected, its earlier coarser certificate retained. Four new fully structured p2q3 models check the actual premise.",
+  "analytic_boundary": "Same rational quotient, complete bases and Wick seed. Completed-row division scales all selected-row cofactors equally, unit row stays1; actual seeds are formed first, so no changed connection or omitted basis derivative. H_j and valuation>=3j stay unchanged. Universal module/path and all-degree induction, analytic nonzero zeroth coefficients and complete coefficient/frame cover remain written inputs.",
+  "literature_boundary": "No fresh literature-coverage claim, new external theorem or producer package; selected primary-source refresh remains retained.",
+  "least_prefix_computed": false,
+  "full_coefficient_radical_search_executed": false,
+  "expanded_global_radical_cofactors_computed": false,
+  "universal_written_proof_certified_by_checker": false,
+  "independent_replay": false,
+  "external_review": false,
+  "formal_verification": false,
+  "new_external_theorems_imported": false,
+  "producer_package_executed": false,
+  "assurance": "Internal full structured conic module/completed-row/cofactor proof and retained analytic exclusions, with new p2q2 degree/path cases. Exact evidence:27 generic logarithmic gauge identities,162 completed-row identities on54 retained models,57 new direct seed identities on19 structured models, all-rank/row arithmetic. Universal all-degree/module/cover and analytic arguments remain written, independently unreviewed inputs. No external or formal certification.",
+  "remaining": [
+    "Least global[20,130], odd[20,104], homogeneous[14,96]",
+    "Twenty/fourteen-moment sufficiency",
+    "Smaller global cusp130/node129, odd concurrent104, homogeneous conic96 bounds",
+    "Expanded I130 radical cofactors",
+    "Independent analytic review",
+    "Exceptional coefficient schemes",
+    "Global term-count minima",
+    "Lower-power GVC"
+  ]
+}

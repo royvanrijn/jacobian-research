@@ -1,0 +1,27 @@
+{
+  "claims": [
+    "QSO1",
+    "QGM1"
+  ],
+  "status": "SCOPED_PASS",
+  "new_claim_schema_sources_hashes_and_consumers": "PASS",
+  "preserved_prior_claim_consumer_markers": "PASS",
+  "new_lessons_and_scope_reviews": "PASS",
+  "changed_work_destination_and_scope_reviews": "PASS",
+  "exact_symbolic_control_receipt_and_hashes": "PASS",
+  "local_markdown_links_checked": 103,
+  "status_renderer": {
+    "exit_code": 1,
+    "failure": "AssertionError: KDSQ6: missing document consumer artifacts/generated-results/README.md"
+  },
+  "navigation_renderer": {
+    "exit_code": 1,
+    "failure": "Historical navigation output omitted during repository reorganization."
+  },
+  "proof_hashes": {
+    "ALGEBRAIC_CURVE_STRING_OBSTRUCTION.md": "6a618dca62544527538e0cb8d11d688b703d82547672407bdc3cf87d41160fb4",
+    "FORMAL_GRAPH_BOUNDARY_MODEL.md": "724d077bd7e504db48a5b2d57ff1833145ab64cb7859df44bfb560f094c58acd"
+  },
+  "boundary": "Universal written proofs with exact symbolic controls, not formal verification or external review. QSO1 requires scalar finite-order operators over an algebraic curve and nonzero differential-constant commutator. QGM1 refutes finiteness for the chosen algebraization, with a better formal-gauge model explicitly available. General bounded representatives remain unknown.",
+  "goal_status": "active"
+}

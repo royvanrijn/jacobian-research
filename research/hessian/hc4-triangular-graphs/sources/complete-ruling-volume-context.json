@@ -1,0 +1,80 @@
+{
+  "review_date": "2026-11-16",
+  "retained_structural_inputs": [
+    {
+      "claim": "HC4MYKU0",
+      "canonical_source": "hessian/hc4-triangular-graphs/CANONICAL_TRACE_DUAL_ETALE_RECONSTRUCTION.md"
+    },
+    {
+      "claim": "HC4MYLA0",
+      "canonical_source": "hessian/hc4-triangular-graphs/GENERIC_DECK_GROUP_AND_UNRAMIFIED_BOUNDARY_COST.md"
+    },
+    {
+      "claim": "HC4MYLM0",
+      "canonical_source": "hessian/hc4-triangular-graphs/ADDITIVE_ACTIONS_ON_THE_CANONICAL_ETALE_COMPLETION.md"
+    },
+    {
+      "claim": "UADANVOL1",
+      "canonical_source": "jacobian/universal-keller-log-picard/PROOF.md"
+    }
+  ],
+  "retained_proof_and_source_sha256": {
+    "hessian/hc4-triangular-graphs/CANONICAL_TRACE_DUAL_ETALE_RECONSTRUCTION.md": "fef1bc4871537c9d073c424c9dbbd4f0296dd287728a0724c9101c5a7b5cf3c2",
+    "hessian/hc4-triangular-graphs/verify_canonical_etale_reconstruction.py": "ad7d5b53096780353298ee052c9ac4341d0eced2b7194c5c83c397c19af91b4f",
+    "hessian/hc4-triangular-graphs/GENERIC_DECK_GROUP_AND_UNRAMIFIED_BOUNDARY_COST.md": "921f0fbf21920c73c536e22241a89e5ddf4f2c35ac01efe5dd745e963224f37d",
+    "hessian/hc4-triangular-graphs/verify_deck_boundary_cost.py": "678b8bc23c529a8626a9a53be6d46d7cbb5664231d3f0dcf7794a27fc80a810e",
+    "hessian/hc4-triangular-graphs/ADDITIVE_ACTIONS_ON_THE_CANONICAL_ETALE_COMPLETION.md": "ca50d325834f4ca0fa71868cc4281a69ca771204d5c9b0435d08b3a381fe6134",
+    "hessian/hc4-triangular-graphs/verify_completion_additive.py": "5e9e83f39ad2ed6b6102eb05053c58d704cd5346d2d9836b6bb2e9d8e79712da",
+    "jacobian/universal-keller-log-picard/PROOF.md": "ed4302aacae26a7a7b97259555d80859fa704b2055d5a94009a6887b91a539a6",
+    "jacobian/universal-keller-log-picard/verify.py": "138a9b63971c18638ac3c54e9fc0407042e8c7b0de2463fd370d732c08ebe6b0",
+    "hessian/hc4-triangular-graphs/sources/complete-ruling-volume/dubouloz-2002.12838v1.pdf": "5632176c48a5302cd96ea5bd3534d02a0803b340ad5348154ef0f8510f2187d3"
+  },
+  "scope_flags": {
+    "full_goal_active": true,
+    "previous_goal_turn_progress": true,
+    "all_generic_sheet_degrees": true,
+    "exact_volume_not_just_canonical_triviality": true,
+    "entire_canonical_etale_completion": true,
+    "all_complete_type_rulings": true,
+    "one_bad_fibre_has_no_multiplicity_one_component": true,
+    "two_chart_torsor_proof_written": true,
+    "all_Laurent_exponents_written": true,
+    "affineness_of_selected_subfibration_checked": true,
+    "standard_local_structure_explicitly_adopted": true,
+    "external_review_deferred": true,
+    "additive_action_proved_automatic": false,
+    "all_complete_rulings_excluded": false,
+    "bad_fibre_gcd_asserted_gt_one": false,
+    "full_trace_pairing_proved_automatic": false,
+    "unrestricted_HC4_or_JC2_resolved": false,
+    "registered_mathematical_checker_replayed": false,
+    "independent_replay": false,
+    "formal_verification": false,
+    "external_review": false
+  },
+  "external_imports": [
+    {
+      "package": "Standard local structure of affine A1-fibrations on smooth complex surfaces",
+      "source": "https://arxiv.org/html/2002.12838v1",
+      "statements": "Proposition3: irreducible reduced fibres give Zariski A1-bundle; paragraph afterDefinition4: fibre reductions are disjoint unions of A1s,creditedMiyanishiLemma1.4.2.",
+      "inspection": "Definitions1/4,Examples2/5,Prop3 complete statements; entireTheorem9 proofSKETCH andSection1.3torsorpassage read. Source warns some full detailed proofs appear elsewhere.",
+      "not_independently_reproduced": "Cited local-structure foundations,not inferred from finite controls; not general cancellation,negative-log classification or automatic LND existence.",
+      "cache": "hessian/hc4-triangular-graphs/sources/complete-ruling-volume/dubouloz-2002.12838v1.pdf",
+      "sha256": "5632176c48a5302cd96ea5bd3534d02a0803b340ad5348154ef0f8510f2187d3"
+    }
+  ],
+  "new_primary_caches": [
+    "hessian/hc4-triangular-graphs/sources/complete-ruling-volume/dubouloz-2002.12838v1.pdf"
+  ],
+  "literature_context_only": [
+    {
+      "url": "https://www.researchgate.net/publication/254209262_Flat_families_of_affine_lines_are_affine-line_bundles",
+      "inspection": "Author-uploaded KW1985 opening theorem and nonaffine-total-space boundary screened; officialPDFblocked. NOT adopted as a second input; selectedsubfibrationisaffine soDuboulozProp3suffices."
+    },
+    {
+      "url": "https://ems.press/content/serial-article-files/37019?nt=1",
+      "inspection": "Survey discussion of complete-base A1rulings withoutGa,PDF39 andreference91 read; no theorem imported."
+    }
+  ],
+  "proof_boundary": "Direct elementary no-open-A1bundleoverP1 theorem for ANYsmoothAFFINEexactsymplecticsurface. Standard fibre geometry and affine-selected-subbundle theorem adopted to inferEVERYcomplete ruling has SOMEfibreALLcomponentmultiplicities>=2. AppliesactualcanonicalcompletionALLdegrees; noGaexistence/gcdmultiple/fullHC4closure."
+}

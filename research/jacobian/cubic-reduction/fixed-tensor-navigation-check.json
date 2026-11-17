@@ -1,0 +1,24 @@
+{
+  "status": "unrelated-global-errors",
+  "checks": [
+    {
+      "command": [
+        ".venv/bin/python",
+        "research/scripts/render_status.py"
+      ],
+      "exit_code": 1,
+      "last_message": "AssertionError: KDSQ6: missing document consumer artifacts/generated-results/README.md"
+    },
+    {
+      "command": [
+        ".venv/bin/python",
+        "research/scripts/research.py",
+        "render"
+      ],
+      "exit_code": 1,
+      "last_message": "Historical navigation output omitted during repository reorganization."
+    }
+  ],
+  "math_status_sha256": "8ba903f8d10da4210909cda1860c31903a5d8f4f5c596ec19701c7cef783f173",
+  "scope": "Global navigation only; do not reconstruct unrelated missing artifacts."
+}

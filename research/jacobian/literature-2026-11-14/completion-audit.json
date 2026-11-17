@@ -1,0 +1,56 @@
+{
+  "as_of": "2026-11-14",
+  "previous_goal_turn_classification": "progress",
+  "original_objective_preserved": true,
+  "completion_requirements": [
+    {
+      "requirement": "Examine the old planar, Keller and HC4 programmes",
+      "evidence": [
+        "research/index/plane-jc.md",
+        "research/index/core.md",
+        "research/index/hessian.md",
+        "research/MATH_STATUS.json"
+      ],
+      "result": "Catalogue screening plus live scopes and canonical sources for the selected largest gaps; coverage counts in validation.json."
+    },
+    {
+      "requirement": "Identify substantial open problems where progress has not reached closure",
+      "evidence": [
+        "research/jacobian/OPEN_PROBLEMS_AND_LITERATURE_2026-11-14.md"
+      ],
+      "result": "Eight problem sections distinguish progress, missing theorem and exact scope; selected claims verified against the live ledger."
+    },
+    {
+      "requirement": "Search the literature including AI-assisted mathematical developments",
+      "evidence": [
+        "research/jacobian/literature-2026-11-13/catalog.json",
+        "research/jacobian/literature-2026-11-14/catalog.json"
+      ],
+      "result": "Historical48-record baseline retained;20-record targeted supplement,10 absent from that baseline, with versions, primary links and explicit review depth."
+    },
+    {
+      "requirement": "Assess whether new breakthroughs or approaches could advance the research",
+      "evidence": [
+        "research/jacobian/OPEN_PROBLEMS_AND_LITERATURE_2026-11-14.md",
+        "research/jacobian/literature-2026-11-14/application-gates.json"
+      ],
+      "result": "Ranked proposals, already-incorporated results and unresolved applicability hypotheses distinguished; conditional16-profile census improvement and exact Wright/F10 ring dictionary checked."
+    },
+    {
+      "requirement": "Record superseded results and update stale summaries",
+      "evidence": [
+        "research/jacobian/RECENT_DEVELOPMENTS_2026-11-13.md",
+        "research/jacobian/README.md",
+        "research/foundations/plane-jc/README.md",
+        "research/foundations/verified/README.md"
+      ],
+      "result": "Current review linked directly, F7 closure reconciled, archived authority links repaired and latest reduced quartic gate documented."
+    }
+  ],
+  "all_requirements_satisfied": true,
+  "independent_proof_verification_claimed": false,
+  "required_research_campaign_remaining": false,
+  "repository_navigation_limit": "Existing missing generated inputs still block full navigation rendering; direct links and scoped checks pass. This review neither reconstructs missing evidence nor claims a global repository check pass.",
+  "verification_receipt_sha256": "68374651438168bfd1deb73b975ef6cede4f6541d06268c88a39bb4372461b74",
+  "review_sha256": "069e431a394cef7899db53dfe5ba72b326d21ab79b8afbe80ef526690ecfc91d"
+}

@@ -1,0 +1,86 @@
+{
+  "scoped_validation": "PASS",
+  "checks": [
+    "HC4MYHF0 schema, source, checker hash, locks, dependencies and assurance",
+    "HC4MYHF1 schema, source, checker hash, locks, dependencies and assurance",
+    "HC4MYHF2 schema, source, checker hash, locks, dependencies and assurance",
+    "elementary uniqueness, Tang-dependent recognition and the exact two-direction JC2 boundary are separate",
+    "parent retires exactly the new geometric obstruction classes while preserving the full open goal",
+    "twenty-six affected method records and every parent-scope review have current fingerprints",
+    "WORK-HC4-SCHUR now uses the intrinsic plane gate and retains the exact unresolved endpoint",
+    "WORK-HC4-RESIDUAL-AUDIT now uses the intrinsic plane gate and retains the exact unresolved endpoint",
+    "receipt-intrinsic-plane.json proof/checker and retained mathematical-input bytes unchanged",
+    "receipt-two-trace.json proof/checker and retained mathematical-input bytes unchanged",
+    "receipt-hodge-trace.json proof/checker and retained mathematical-input bytes unchanged",
+    "receipt-critical-components.json proof/checker and retained mathematical-input bytes unchanged",
+    "receipt-relative-coordinate.json proof/checker and retained mathematical-input bytes unchanged",
+    "receipt-square-axis.json proof/checker and retained mathematical-input bytes unchanged",
+    "receipt distinguishes elementary uniqueness, external existence, written all-degree arguments and finite controls",
+    "canonical proof and navigation expose the general geometric result and its precise limits"
+  ],
+  "new_claims": [
+    "HC4MYHF0",
+    "HC4MYHF1",
+    "HC4MYHF2"
+  ],
+  "previous_goal_turn": "Progress: the preceding turn registered the all-degree two-trace closure and singular unibranch boundary theorem. The present turn gives an intrinsic orientation-independent plane criterion rather than another boundary-degree classification.",
+  "exact_current_replay_checks": 44,
+  "retained_receipt_counts_not_newly_replayed": {
+    "receipt-intrinsic-plane.json": 44,
+    "receipt-two-trace.json": 47,
+    "receipt-hodge-trace.json": 46,
+    "receipt-critical-components.json": 58,
+    "receipt-relative-coordinate.json": 51,
+    "receipt-square-axis.json": 50
+  },
+  "generated_views_refreshed": [
+    "index/core.md",
+    "index/hessian.md",
+    "index/README.md",
+    "index/documents.tsv",
+    "knowledge/work/geometry.md",
+    "knowledge/work/hessian.md",
+    "STATUS.md"
+  ],
+  "written_proof_coverage": [
+    "elementary two-plane uniqueness in both relative positions",
+    "pure-direction space equals the unique-plane annihilator under nonautomorphy",
+    "three linearly independent pure directions force gradient invertibility",
+    "two directions determine the only possible plane and its three polynomial identities",
+    "two-direction-only universal closure is equivalent to JC2",
+    "all complete parallel profiles count the reduced residual plane fibre",
+    "n plus one quotient profiles recover a reduced n-point set",
+    "affine-linear additions preserve pure directions under nonautomorphy"
+  ],
+  "new_external_classification_imported": false,
+  "full_registry_validation_failure": "KDSQ6: missing document consumer artifacts/generated-results/README.md",
+  "full_navigation_validation_passed": false,
+  "missing_artifacts_reconstructed": false,
+  "remaining_frontier": [
+    "mixed graph/pullback candidates lacking three independent pure directions",
+    "the exact cotangent plane Keller endpoint when both forced-plane identities and two directions pass",
+    "unit-ideal plane surjectivity and distinct singleton-zero properness"
+  ],
+  "unit_ideal_plane_Keller_endpoint_resolved": false,
+  "singleton_zero_properness_resolved": false,
+  "unrestricted_HC4_or_JC2_resolved": false,
+  "original_goal_complete": false,
+  "required_repository_checks_all_passed": false,
+  "repository_checks": [
+    {
+      "command": "make render-navigation",
+      "exit_code": 1,
+      "output": "make -C research PYTHON=\"/home/royvanrijn/src/jacobian-research/.venv/bin/python\" SYSTEM_PYTHON=\"python3\" \"render-navigation\"\nmake[1]: Entering directory '/home/royvanrijn/src/jacobian-research/research'\npython3 scripts/render_status.py\nTraceback (most recent call last):\n  File \"/home/royvanrijn/src/jacobian-research/research/scripts/render_status.py\", line 514, in <module>\n    main()\n  File \"/home/royvanrijn/src/jacobian-research/research/scripts/render_status.py\", line 503, in main\n    validate_index(index)\n  File \"/home/royvanrijn/src/jacobian-research/research/scripts/render_status.py\", line 360, in validate_index\n    assert consumer_path.is_file(), (\n           ^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: KDSQ6: missing document consumer artifacts/generated-results/README.md\nmake[1]: *** [Makefile:16: render-navigation] Error 1\nmake[1]: Leaving directory '/home/royvanrijn/src/jacobian-research/research'\nmake: *** [Makefile:17: render-navigation] Error 2\n"
+    },
+    {
+      "command": "make check-navigation",
+      "exit_code": 1,
+      "output": "make -C research PYTHON=\"/home/royvanrijn/src/jacobian-research/.venv/bin/python\" SYSTEM_PYTHON=\"python3\" \"check-navigation\"\nmake[1]: Entering directory '/home/royvanrijn/src/jacobian-research/research'\npython3 scripts/audit_status.py\nTraceback (most recent call last):\n  File \"/home/royvanrijn/src/jacobian-research/research/scripts/audit_status.py\", line 8, in <module>\n    validate_index(index)\n  File \"/home/royvanrijn/src/jacobian-research/research/scripts/render_status.py\", line 360, in validate_index\n    assert consumer_path.is_file(), (\n           ^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: KDSQ6: missing document consumer artifacts/generated-results/README.md\nmake[1]: Leaving directory '/home/royvanrijn/src/jacobian-research/research'\nmake[1]: *** [Makefile:21: check-navigation] Error 1\nmake: *** [Makefile:17: check-navigation] Error 2\n"
+    },
+    {
+      "command": ".venv/bin/python research/scripts/research.py check --require-partial-review",
+      "exit_code": 1,
+      "output": "Traceback (most recent call last):\n  File \"/home/royvanrijn/src/jacobian-research/research/scripts/research.py\", line 563, in <module>\n    raise SystemExit(main())\n                     ^^^^^^\n  File \"/home/royvanrijn/src/jacobian-research/research/scripts/research.py\", line 440, in main\n    validate_lessons(items, entries, check_reviews=args.command == \"check\")\n  File \"/home/royvanrijn/src/jacobian-research/research/scripts/research.py\", line 130, in validate_lessons\n    assert (ROOT / p).is_file(), f\"{item['id']}: missing source {p}\"\n           ^^^^^^^^^^^^^^^^^^^^"
+    }
+  ]
+}

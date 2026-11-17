@@ -1,0 +1,64 @@
+{
+  "claim": "HC4MYMO0",
+  "retained_structural_inputs": [
+    {
+      "claim": "PF2RULED130",
+      "canonical_source": "jacobian/affine-complements/RELATIVE_EULER_DEFECT_AND_RULED_CHART_COMPRESSION.md"
+    },
+    {
+      "claim": "PF2RULED132",
+      "canonical_source": "jacobian/affine-complements/LOW_EULER_CYCLICITY_AND_DECORATED_RADICAL_TOWER_EXCLUSION.md"
+    },
+    {
+      "claim": "HC4MYML0",
+      "canonical_source": "hessian/hc4-triangular-graphs/EXACT_VOLUME_AND_COMPLETE_RULING_COMPONENTS.md"
+    },
+    {
+      "claim": "HC4MYLA0",
+      "canonical_source": "hessian/hc4-triangular-graphs/GENERIC_DECK_GROUP_AND_UNRAMIFIED_BOUNDARY_COST.md"
+    }
+  ],
+  "retained_proof_and_source_sha256": {
+    "jacobian/affine-complements/RELATIVE_EULER_DEFECT_AND_RULED_CHART_COMPRESSION.md": "76daee69adff1d99747feceab13c72f28ca194b3957dfd2b16bd04d68eec93e7",
+    "jacobian/affine-complements/verify_ruled_chart_compression.py": "6a64d8957c0d94a6f87ebd6499df00cd7840ca595f84836f469db94d25c93e36",
+    "jacobian/affine-complements/LOW_EULER_CYCLICITY_AND_DECORATED_RADICAL_TOWER_EXCLUSION.md": "242866422a398e0311249b2ebb236c62763c322dc17a217ab6e5b4042e6755e5",
+    "jacobian/affine-complements/verify_radical_tower_exclusion.py": "43f234127ca25b22bcba3883ff32e0086503f2e722903e2e6c5d5d9251601746",
+    "hessian/hc4-triangular-graphs/EXACT_VOLUME_AND_COMPLETE_RULING_COMPONENTS.md": "70dab2944314ad0c6bcf4cce20feb17119eed87ba8ec5c790bf835ee3eeb7322",
+    "hessian/hc4-triangular-graphs/verify_complete_ruling_volume.py": "39682da1aca6bbd69b629e5f29d5b64ca43340ac869df303f7952ae680d2ba6a",
+    "hessian/hc4-triangular-graphs/GENERIC_DECK_GROUP_AND_UNRAMIFIED_BOUNDARY_COST.md": "921f0fbf21920c73c536e22241a89e5ddf4f2c35ac01efe5dd745e963224f37d",
+    "hessian/hc4-triangular-graphs/verify_deck_boundary_cost.py": "678b8bc23c529a8626a9a53be6d46d7cbb5664231d3f0dcf7794a27fc80a810e",
+    "hessian/hc4-triangular-graphs/sources/miyanishi-pseudocover-report-2005.pdf": "1e991cb0af2ff013c1ced61fb5c3ea849d6305f100aa486dcc3d955c3e948ef0"
+  },
+  "retained_prior_proof_checker_pins": 8,
+  "retained_primary_context_pins": 1,
+  "scope_flags": {
+    "full_goal_active": true,
+    "actual_complex_polynomial_plane_source": true,
+    "entire_intermediate_etale_locus": true,
+    "all_generic_degrees": true,
+    "complete_one_bad_fibre_chart": true,
+    "chi_two_comparable_pair_criterion": true,
+    "minimality_required_for_relative_compression": true,
+    "full_deck_cyclic_through_euler_five": true,
+    "automatic_comparability": false,
+    "incomparable_pair_proves_no_plane_chart": false,
+    "chart_almost_surjective_required": false,
+    "automatic_additive_action": false,
+    "full_deck_always_equals_relative_deck": false,
+    "unrestricted_HC4_or_JC2_resolved": false
+  },
+  "new_external_theorem_imports": 0,
+  "new_primary_caches": 0,
+  "new_primary_downloads": 0,
+  "source_audit": {
+    "report_url": "https://ems.press/content/serial-article-files/45993",
+    "report_reading": "Full PDF38-41/printed1110-1113 read; PDF39 and40 visually inspected. Prior Lemma2.3/2.4 orbifold inputs retained. Lemma2.6/2.7 pseudo-cover statements NOT newly adopted; no proofs supplied there. A plane chart can miss a whole fibre, so need not be almost surjective.",
+    "other_primary_screen": "Cambridge DOI10.4153/CJM-2008-005-8 primary abstract only, not full paper/adoption; ML0 hypotheses do not settle rigid/ML1 branch. Retained Q-factorial/equivariant papers screened only.",
+    "concurrent_shared": "PF133/PF134 canonical proofs read in full. General deck/group/noncyclic-ruling deductions credited separately; no registered proof/checker changed/replayed.",
+    "foundations": "Reuse PF130/PF132/ML0/LA0 with their adopted local structure, MiSu ruling, good/bad orbifold, purity and finite-etale comparison boundaries. No independent classification reproof or new theorem import."
+  },
+  "registered_mathematical_checkers_replayed": [],
+  "independent_replay": false,
+  "formal_verification": false,
+  "external_review": false
+}

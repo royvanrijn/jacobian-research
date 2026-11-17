@@ -1,0 +1,416 @@
+{
+  "METHOD-DEG12-NORMALIZER-MOMENT-IDEAL-20261115": {
+    "id": "METHOD-DEG12-NORMALIZER-MOMENT-IDEAL-20261115",
+    "area": "geometry",
+    "title": "Use a graded torus/Weyl normal form for four weights and keep full-module quartic deficits separate",
+    "when": "A moment family has weights3r,r,-r,-3r,or one tries to copy a moment-generated invariant-ring proof toV12.",
+    "use": "Prove the elementary torus semigroup u=ad,v=bc,s=ac^3,t=b^3d,st=uv^3,and Weyl-fixed ring C[u,v,z],z=s+t. Compute H2,H4,H6 exactly;nonzero normal remainders give(v-kappa*u,z-lambda*u^2,u^3) and control all higher moments by grading. For a full type,count invariant dimensions first and apply Reynolds to ideal coefficients to expose a missing quartic at every moment order.",
+    "avoid": "Calling the four-weight sector the full V12 space,inferring radical inequality from a quartic ordinary-ideal deficit,or using six/eleven-moment controls as all-order null functions. A complete invariant-ring generator argument cannot work onV12 because the invariant quartic dimension is3 but the moment-ideal quartic dimension is at most2.",
+    "boundary": "The two four-weight sectors retain their exact ordinary ideals,sharp sector prefix6 and coefficient1/4. ALL fullV12 field/reduced-ring pure loci and marked safety are now closed by GALLISOTYPICSAFE20261116:the moment RADICAL is the SL2 nullcone ideal. The ordinary missing quartic remains a valid deficit,and the inherited sufficient-prefix lower bound>=11 remains;no numeric sufficient prefix is computed. Mixed C+W8+W12 on2O and C+W12+W20 on2I remainOPEN. Do not replace ordinary ideals by radicals or infer nilpotent-family behavior from field closure.",
+    "reopen_when": "For FULL MIXED-ISOTYPIC phases meeting the common-half-fibre,finite-stabilizer and automorphicT-fixed exclusions,a new actual period or marked certificate is supplied. Single-component field/reduced-ring purity is CLOSED in all weights/degrees;preserve ordinary-ideal distinctions and separate height scope. Do not turn an unknown sharp numeric prefix into a new purity search.",
+    "claims": [
+      "GDEG12FOURWEIGHT20261115",
+      "GDEG12QUARTICDEFECT20261115",
+      "GDEG12PREFIXLOWER20261115",
+      "GPROJECTIVELOGPERIOD20261116",
+      "GADJUNCTIONBOUNDARY20261116",
+      "GEXCEPTIONALHALFFIBRE20261116",
+      "GALLISOTYPICSAFE20261116",
+      "GREALISOTYPICSEED20261116"
+    ],
+    "sources": [
+      "moments/vanishing/DEGREE12_FOUR_WEIGHT_IDEALS_AND_QUARTIC_BARRIER.md",
+      "moments/vanishing/degree12_four_weight_source_audit.json",
+      "moments/vanishing/SEMISTABLE_LOG_PERIODS_AND_SINGLE_ISOTYPIC_SAFETY.md",
+      "moments/vanishing/semistable_isotypic_source_audit.json"
+    ],
+    "implementation": [
+      "moments/vanishing/verify_degree12_four_weights.py",
+      "moments/vanishing/degree12_four_weight_relations.json"
+    ],
+    "keywords": [
+      "Haar",
+      "Mathieu",
+      "V12",
+      "quartic deficit",
+      "four weights",
+      "normalizer",
+      "ordinary ideal",
+      "prefix lower bound"
+    ],
+    "reviewed_claims": {
+      "GDEG12FOURWEIGHT20261115": "07f337ee50375fe9",
+      "GDEG12QUARTICDEFECT20261115": "464758f7937a433a",
+      "GDEG12PREFIXLOWER20261115": "13e4fc095b93998e",
+      "GPROJECTIVELOGPERIOD20261116": "0330dfbded623920",
+      "GADJUNCTIONBOUNDARY20261116": "4e3f1eed045c064b",
+      "GEXCEPTIONALHALFFIBRE20261116": "614ba04507adb2ca",
+      "GALLISOTYPICSAFE20261116": "d7b0290c901e254f",
+      "GREALISOTYPICSEED20261116": "d6b1a975308fe1cd"
+    },
+    "programme_status": "archived"
+  },
+  "METHOD-DEG12-SPARSE-UNIT-IDEALS-20261115": {
+    "id": "METHOD-DEG12-SPARSE-UNIT-IDEALS-20261115",
+    "area": "geometry",
+    "title": "Exclude whole exceptional sparse strata with normalized moment unit identities",
+    "when": "A fixed left-weight support has opposite endpoint weights and at most four active coefficients in an actual exceptional V12.",
+    "use": "Normalize endpoint coefficients to1 using scalar and torus actions,then invert nonzero interior variables. Compute exact balanced moment polynomials and retain explicit identities sum A_m G_m+B*(z product t-1)=1. Replay identities by direct coefficient multiplication independently of the Buchberger constructor. Use Weyl reflection with exact support-set coverage. All<=4 supports on both models are closed;strict sign gives all-order pure nullity and all-marker cutoff2m>degQ.",
+    "avoid": "Testing sampled coefficients,inferring an infinite tail from a zero prefix,or treating a gcd/Groebner plateau as ideal stabilization. Do not count p_j as individual left/right matrix elements when importing old small-term results. Do not extend a set-prefix statement to ordinary generation or all V12.",
+    "boundary": "The924 sparse unit identities and sharp sparse prefix11 remain evidence. The ENTIRE V12 and every later single isotypic component now have pure locus exactly the SL2 nullcone and uniform field/reduced-ring cutoff2m>degQ. No five-or-more-weight field existence question remains within one component. Ordinary quartic deficit survives even though radical equality is now proved;numeric full prefix and ordinary nonreduced thickness remain distinct. Both FULL MZ cases remainOPEN on mixed components.",
+    "reopen_when": "For FULL MIXED-ISOTYPIC phases meeting the common-half-fibre,finite-stabilizer and automorphicT-fixed exclusions,a new actual period or marked certificate is supplied. Single-component field/reduced-ring purity is CLOSED in all weights/degrees;preserve ordinary-ideal distinctions and separate height scope. Do not turn an unknown sharp numeric prefix into a new purity search.",
+    "claims": [
+      "GDEG12SPARSE20261115",
+      "GDEG12SPARSESHARP20261115",
+      "GDEG12SUPPORTFIVE20261115",
+      "GPROJECTIVELOGPERIOD20261116",
+      "GADJUNCTIONBOUNDARY20261116",
+      "GEXCEPTIONALHALFFIBRE20261116",
+      "GALLISOTYPICSAFE20261116",
+      "GREALISOTYPICSEED20261116"
+    ],
+    "sources": [
+      "moments/vanishing/DEGREE12_SPARSE_SUPPORT_CLASSIFICATION.md",
+      "moments/vanishing/degree12_sparse_source_audit.json",
+      "moments/vanishing/SEMISTABLE_LOG_PERIODS_AND_SINGLE_ISOTYPIC_SAFETY.md",
+      "moments/vanishing/semistable_isotypic_source_audit.json"
+    ],
+    "implementation": [
+      "moments/vanishing/verify_degree12_sparse_supports.py",
+      "moments/vanishing/degree12_sparse_certificates.json"
+    ],
+    "keywords": [
+      "Haar",
+      "Mathieu",
+      "sparse supports",
+      "binary polyhedral",
+      "unit ideal",
+      "degree12",
+      "sharp prefix"
+    ],
+    "reviewed_claims": {
+      "GDEG12SPARSE20261115": "5769c3e71836b3dc",
+      "GDEG12SPARSESHARP20261115": "fa73a731131491a5",
+      "GDEG12SUPPORTFIVE20261115": "b0a284b1b3657ea1",
+      "GPROJECTIVELOGPERIOD20261116": "0330dfbded623920",
+      "GADJUNCTIONBOUNDARY20261116": "4e3f1eed045c064b",
+      "GEXCEPTIONALHALFFIBRE20261116": "614ba04507adb2ca",
+      "GALLISOTYPICSAFE20261116": "d7b0290c901e254f",
+      "GREALISOTYPICSEED20261116": "d6b1a975308fe1cd"
+    },
+    "programme_status": "archived"
+  },
+  "METHOD-GRAPH-HULL-BALAYAGE-20261115": {
+    "id": "METHOD-GRAPH-HULL-BALAYAGE-20261115",
+    "area": "geometry",
+    "programme_status": "archived",
+    "title": "Reduce pure graph laws to one filled outer domain and retain interior harmonic sweeping",
+    "when": "A pure thin phase has a non-Jordan polynomial image,or a positivity-only argument attempts to remove its interior branches.",
+    "use": "Exclude exterior hairs,then fill bounded faces. Finite plane cycle blocks and positive-real Mergelyan lobe tests force one outer Jordan domain containing0. Purity is exactly boundary mass plus swept interior mass equals harmonic measure at0. Use the explicit disk cap bound to control parameters mapped to regular outer arcs.",
+    "avoid": "Identifying the entire law with boundary harmonic measure in the presence of interior mass,or leaving separate exterior lobes open. The irreducible quartic inward-branch polynomial has an exact abstract positive pure interval law;positivity and normalization alone cannot exclude all interior branches.",
+    "boundary": "Single-domain topology and exact sweeping remain proved constraints on FULL non-T-invariant thin phases. EVERY originalT-invariant pure phase is now excluded in ALL degrees by GTORUSPURECLOSED20261115,including all internal-graph laws. The SPECIFIC quartic densityg=1-|psi(p(t))| is impossible for anyC1 connected positive source in ANY dimension. Its polynomial graph and other laws remain OPEN only in the FULL non-T architecture. Every actual interior seed interval has a positive Lebesgue lower bound. Regular outer arcs,singular vertices and the separate symmetrized height law retain their distinct scopes. Restricted coefficient-ring eventual radicals are nilpotents;the FULL MZ cases remainOPEN and internal proof review is pending.",
+    "reopen_when": "For FULL non-T-invariant phases outside all automorphic torus-fixed subalgebras,retain the prior proof constraints: An actual exceptional real seed satisfies or contradicts the full sweeping equation,or an obstruction handles all one-domain internal graphs. Retain full rank2 phases and the separate height law. Do not reopen originalT-invariant purity;any full failure must have finite stabilizer under every conjugated left action.",
+    "claims": [
+      "GGRAPHONEHULL20261115",
+      "GGRAPHBALAYAGE20261115",
+      "GINWARDPOLYMODEL20261115",
+      "GSEEDINTERIORMASS20261115",
+      "GQUARTICLAWNOHAAR20261115",
+      "GSEEDPOLARCLASS20261115",
+      "GSURFACENONISOPERIOD20261115",
+      "GTORUSPURECLOSED20261115",
+      "GTORUSNILPOTENTBASE20261115",
+      "GFAILFINITELEFTSTAB20261115"
+    ],
+    "sources": [
+      "moments/vanishing/POSITIVE_GRAPH_HULLS_AND_INTERIOR_BALAYAGE.md",
+      "moments/vanishing/FILTERED_MATRIX_DEGREES_AND_CUBIC_THIN_PHASES.md",
+      "moments/vanishing/graph_hull_degree_source_audit.json",
+      "moments/vanishing/REAL_SEED_DENSITY_BOUNDS_AND_PERIOD_TRACE.md",
+      "moments/vanishing/seed_density_trace_source_audit.json",
+      "moments/vanishing/VALUATIVE_BOUNDARY_VOLUMES_AND_TORUS_INVARIANT_CLOSURE.md",
+      "moments/vanishing/torus_volume_source_audit.json"
+    ],
+    "implementation": [
+      "moments/vanishing/verify_graph_hulls_and_matrix_degrees.py"
+    ],
+    "keywords": [
+      "Mathieu",
+      "Haar",
+      "all degree",
+      "thin phase",
+      "polynomial graph",
+      "original matrix degree"
+    ],
+    "reviewed_claims": {
+      "GGRAPHONEHULL20261115": "04e1bbad7384061f",
+      "GGRAPHBALAYAGE20261115": "4afa713c665faeeb",
+      "GINWARDPOLYMODEL20261115": "e0efc2f3bbad0dcb",
+      "GSEEDINTERIORMASS20261115": "4e1e67248cbd7dcc",
+      "GQUARTICLAWNOHAAR20261115": "584e985ce0534265",
+      "GSEEDPOLARCLASS20261115": "3211581ae3941fdc",
+      "GSURFACENONISOPERIOD20261115": "26e21f2ab3771d84",
+      "GTORUSPURECLOSED20261115": "113bcea3090fb070",
+      "GTORUSNILPOTENTBASE20261115": "c07ab30bbdfcc28d",
+      "GFAILFINITELEFTSTAB20261115": "3e357ff9711d0287"
+    }
+  },
+  "METHOD-THIN-MATRIX-MARKERS-20261115": {
+    "id": "METHOD-THIN-MATRIX-MARKERS-20261115",
+    "area": "geometry",
+    "programme_status": "archived",
+    "title": "Convert normalized seed markers to original matrix degrees through the associated-graded domain",
+    "when": "A thin pure phase has a finite real-seed bad-marker list but only normalized-curve degree bounds,or a cubic path is proposed on an exceptional quotient.",
+    "use": "Use the minimum matrix filtration. Its associated-graded invariant cone is a domain,so deg p(h)=deg p*deg h and every nonzero thin pure phase has a bad original marker of degree<=D-8/12,among any basis of that filtered space. Nonseparating paths force normalized degree>=3;all cubic tails are exterior,so the sphere Jordan exclusion raises the original T-invariant threshold to4.",
+    "avoid": "Keeping the obsolete normalized-degree-only caveat,substituting raw representative or generator degree,conflating full24/36 gates with restricted32/48 gates,or treating real-affine cubic coordinate changes as preserving moments or angles.",
+    "boundary": "The original graded-domain marker conversion remains valid. Real single-isotypic seed exclusion now forces normalized thin seeds to have matrixdegree>=12 on2O or>=20 on2I. Hence FULL thin phase degrees are>=36/60,and some marker inANY basis throughD-12/D-20 has an infinite nonzero tail conditionally on purity. Earlier24/36 andD-8/12 are weaker historical gates;originalT-invariant existence is closed altogether. These are necessary gates without endpoint examples,selected markers or numeric moment cutoff. Full mixed non-T thin/image-interior MZ remainsOPEN.",
+    "reopen_when": "For FULL MIXED-ISOTYPIC phases meeting the common-half-fibre,finite-stabilizer and automorphicT-fixed exclusions,a new actual period or marked certificate is supplied. Single-component field/reduced-ring purity is CLOSED in all weights/degrees;preserve ordinary-ideal distinctions and separate height scope. For thin phases use36/60 andD-12/20.",
+    "claims": [
+      "GTHINMATRIXMARKER20261115",
+      "GTHINCUBICGATE20261115",
+      "GPROJECTIVELOGPERIOD20261116",
+      "GADJUNCTIONBOUNDARY20261116",
+      "GEXCEPTIONALHALFFIBRE20261116",
+      "GALLISOTYPICSAFE20261116",
+      "GREALISOTYPICSEED20261116"
+    ],
+    "sources": [
+      "moments/vanishing/POSITIVE_GRAPH_HULLS_AND_INTERIOR_BALAYAGE.md",
+      "moments/vanishing/FILTERED_MATRIX_DEGREES_AND_CUBIC_THIN_PHASES.md",
+      "moments/vanishing/graph_hull_degree_source_audit.json",
+      "moments/vanishing/SEMISTABLE_LOG_PERIODS_AND_SINGLE_ISOTYPIC_SAFETY.md",
+      "moments/vanishing/semistable_isotypic_source_audit.json"
+    ],
+    "implementation": [
+      "moments/vanishing/verify_graph_hulls_and_matrix_degrees.py"
+    ],
+    "keywords": [
+      "Mathieu",
+      "Haar",
+      "all degree",
+      "thin phase",
+      "polynomial graph",
+      "original matrix degree"
+    ],
+    "reviewed_claims": {
+      "GTHINMATRIXMARKER20261115": "b5147fb0b72847f0",
+      "GTHINCUBICGATE20261115": "f9d44a1527e66b1e",
+      "GPROJECTIVELOGPERIOD20261116": "0330dfbded623920",
+      "GADJUNCTIONBOUNDARY20261116": "4e3f1eed045c064b",
+      "GEXCEPTIONALHALFFIBRE20261116": "614ba04507adb2ca",
+      "GALLISOTYPICSAFE20261116": "d7b0290c901e254f",
+      "GREALISOTYPICSEED20261116": "d6b1a975308fe1cd"
+    }
+  },
+  "METHOD-REAL-SEED-LAW-AND-TRACE-20261115": {
+    "id": "METHOD-REAL-SEED-LAW-AND-TRACE-20261115",
+    "area": "geometry",
+    "programme_status": "archived",
+    "title": "Retain actual interior seed mass and differential poles when transporting a positive interval model",
+    "when": "A pure phase is modeled as p(h_real),an abstract positive graph law is proposed as Haar,or a fixed algebraic-density representation is used to exclude purity.",
+    "use": "A compact source tube proves that every interior seed interval has a positive Lebesgue lower bound,even at critical values;reject one-sided vanishing densities. Compute the full finite Stieltjes root trace and its divided-difference inverse for the complete seed-power basis. If a fixed compact-curve law with differential poles only over seed infinity is actually established,the pole criterion excludes ALL polynomial phases at once.",
+    "avoid": "Leaving the particular quartic g=1-|psi(p(t))| law open as a Haar candidate,excluding every different law on its graph,assuming arbitrary Haar periods have an algebraic fixed-curve representation,or replacing the actual differential pole condition by mere real positivity/algebraicity. Published compact-genus scope is closed-chain;finite endpoints are treated explicitly here.",
+    "boundary": "The chosen quartic law is impossible for everyC1 connected positive source in any dimension. Subsequent surface-volume geometry excludes ALL originalT-invariant pure phases on both models,in every degree and for every law on that graph;other full non-T distributions remainOPEN. Finite trace/inverse identities retain every seed-basis marked germ without a computed numerical prefix. The fixed-curve polynomial/hyperelliptic/Gegenbauer classes still require an actual representation for remaining full seeds. Restricted radicals over arbitraryC-algebras are nilpotents,not only0;ordinary ideals are retained. Both FULL MZ decisions and the independent symmetrized height condition remainOPEN;proof review is pending.",
+    "reopen_when": "For FULL non-T-invariant phases outside all automorphic torus-fixed subalgebras,retain the prior proof constraints: An actual exceptional seed distribution satisfies the exact trace/pure identity and interior lower bound,or has a valid pole-compatible model or a broader varying-period obstruction. Retain the original matrix degree marker bounds,all graph constraints,the full rank2/non-T-invariant scope and the separate even-height law. Do not reopen originalT-invariant purity;any full failure must have finite stabilizer under every conjugated left action.",
+    "claims": [
+      "GSEEDINTERIORMASS20261115",
+      "GQUARTICLAWNOHAAR20261115",
+      "GSEEDRESOLVENTTRACE20261115",
+      "GSEEDPOLARCLASS20261115",
+      "GSURFACENONISOPERIOD20261115",
+      "GTORUSPURECLOSED20261115",
+      "GTORUSNILPOTENTBASE20261115",
+      "GFAILFINITELEFTSTAB20261115"
+    ],
+    "sources": [
+      "moments/vanishing/REAL_SEED_DENSITY_BOUNDS_AND_PERIOD_TRACE.md",
+      "moments/vanishing/seed_density_trace_source_audit.json",
+      "moments/vanishing/VALUATIVE_BOUNDARY_VOLUMES_AND_TORUS_INVARIANT_CLOSURE.md",
+      "moments/vanishing/torus_volume_source_audit.json"
+    ],
+    "implementation": [
+      "moments/vanishing/verify_seed_density_and_trace.py"
+    ],
+    "keywords": [
+      "Mathieu",
+      "Haar",
+      "all degree",
+      "real seed",
+      "interior density",
+      "Stieltjes trace",
+      "differential poles",
+      "fixed curve"
+    ],
+    "reviewed_claims": {
+      "GSEEDINTERIORMASS20261115": "4e1e67248cbd7dcc",
+      "GQUARTICLAWNOHAAR20261115": "584e985ce0534265",
+      "GSEEDRESOLVENTTRACE20261115": "afe628760eb3a075",
+      "GSEEDPOLARCLASS20261115": "3211581ae3941fdc",
+      "GSURFACENONISOPERIOD20261115": "26e21f2ab3771d84",
+      "GTORUSPURECLOSED20261115": "113bcea3090fb070",
+      "GTORUSNILPOTENTBASE20261115": "c07ab30bbdfcc28d",
+      "GFAILFINITELEFTSTAB20261115": "3e357ff9711d0287"
+    }
+  },
+  "METHOD-PROPER-QUADRIC-LEADING-GATE-20261115": {
+    "id": "METHOD-PROPER-QUADRIC-LEADING-GATE-20261115",
+    "area": "geometry",
+    "programme_status": "archived",
+    "title": "Build the proper graph and retain its volume divisor before refining exceptional phases",
+    "when": "A Haar phase or seed is a polynomial on the sphere or determinant quadric;seek an all-degree obstruction without calculating each density.",
+    "use": "For minimaldegreeD onQ_N,check whether the leading zero divisor on the projective boundary is smooth. IfD>=N,the closed graphH=t*u^D is smooth/proper with holomorphic residue volumeu^(D-N);its finite critical locus and local Gelfand-Leray bounds exclude every polynomial in the seed. Thus every full exceptional pure phase has singular leading divisor. Nonempty smooth invariant strata exist in degrees24k/60k;both minimal real sphere seeds are closed in all polynomial degrees.",
+    "avoid": "Assuming affine maps are proper,discarding boundary volume poles,applying the criterion whenD<N or a leading divisor is repeated,assumingp(F) remains smooth-leading,or treating leading singularity as purity/failure. Do not conflate the minimal-real-T-invariant seed class with every full phase of matrixdegree8/12.",
+    "boundary": "Smooth leading divisors are an older sufficient gate. Projective semistable log periods now allow nonisolated fibres in all dimensions;adjunction improves the normalized leading threshold to(N-1)/D. For fullSL2 quotients the exact critical klt test forces a common LEFT rootmultiplicity>=D/2 in every pure leading class. This is necessary only;lower mixed weights can defeat a full cocharacter limit. All single isotypic components are field/reduced-ring safe,all originalT-invariant phases are excluded,and real one-component seed classes are closed. Full mixed-degree MZ/height questions remainOPEN;independent review pending.",
+    "reopen_when": "For FULL MIXED-ISOTYPIC phases meeting the common-half-fibre,finite-stabilizer and automorphicT-fixed exclusions,a new actual period or marked certificate is supplied. Single-component field/reduced-ring purity is CLOSED in all weights/degrees;preserve ordinary-ideal distinctions and separate height scope. Do not turn an unknown sharp numeric prefix into a new purity search.",
+    "claims": [
+      "GPROPERHOLPERIOD20261115",
+      "GQUADRICTOPGATE20261115",
+      "GEXCEPTIONALLEADING20261115",
+      "GMINIMALSPHERESEEDS20261115",
+      "GSURFACENONISOPERIOD20261115",
+      "GTORUSPURECLOSED20261115",
+      "GTORUSNILPOTENTBASE20261115",
+      "GFAILFINITELEFTSTAB20261115",
+      "GPROJECTIVELOGPERIOD20261116",
+      "GADJUNCTIONBOUNDARY20261116",
+      "GEXCEPTIONALHALFFIBRE20261116",
+      "GALLISOTYPICSAFE20261116",
+      "GREALISOTYPICSEED20261116"
+    ],
+    "sources": [
+      "moments/vanishing/PROPER_QUADRIC_MODELS_AND_LEADING_DISCRIMINANTS.md",
+      "moments/vanishing/proper_quadric_source_audit.json",
+      "moments/vanishing/VALUATIVE_BOUNDARY_VOLUMES_AND_TORUS_INVARIANT_CLOSURE.md",
+      "moments/vanishing/torus_volume_source_audit.json",
+      "moments/vanishing/SEMISTABLE_LOG_PERIODS_AND_SINGLE_ISOTYPIC_SAFETY.md",
+      "moments/vanishing/semistable_isotypic_source_audit.json"
+    ],
+    "implementation": [
+      "moments/vanishing/verify_proper_quadric_gate.py"
+    ],
+    "keywords": [
+      "Mathieu",
+      "Haar",
+      "all degree",
+      "proper graph",
+      "quadric",
+      "volume divisor",
+      "leading discriminant",
+      "Milnor periods",
+      "minimal sphere seed"
+    ],
+    "reviewed_claims": {
+      "GPROPERHOLPERIOD20261115": "12ecbe536c4d4d18",
+      "GQUADRICTOPGATE20261115": "96effe53cfecac87",
+      "GEXCEPTIONALLEADING20261115": "e02c6d2add389fc9",
+      "GMINIMALSPHERESEEDS20261115": "5e39aaac343203fc",
+      "GSURFACENONISOPERIOD20261115": "26e21f2ab3771d84",
+      "GTORUSPURECLOSED20261115": "113bcea3090fb070",
+      "GTORUSNILPOTENTBASE20261115": "c07ab30bbdfcc28d",
+      "GFAILFINITELEFTSTAB20261115": "3e357ff9711d0287",
+      "GPROJECTIVELOGPERIOD20261116": "0330dfbded623920",
+      "GADJUNCTIONBOUNDARY20261116": "4e3f1eed045c064b",
+      "GEXCEPTIONALHALFFIBRE20261116": "614ba04507adb2ca",
+      "GALLISOTYPICSAFE20261116": "d7b0290c901e254f",
+      "GREALISOTYPICSEED20261116": "d6b1a975308fe1cd"
+    }
+  },
+  "METHOD-TORUS-VOLUME-CLOSURE-20261115": {
+    "id": "METHOD-TORUS-VOLUME-CLOSURE-20261115",
+    "area": "geometry",
+    "programme_status": "archived",
+    "title": "Use finite-boundary volume valuations and polyhedral orbit size to close every original torus-invariant phase",
+    "when": "An exceptional Haar phase or construction lies in an original torus-fixed algebra,an automorphic image of one,or has positive-dimensional left stabilizer.",
+    "use": "The ENTIRE originalA_(2O)^T andA_(2I)^T eventual pure radicals are0 in ALL degrees. A leading root multiplicitym on the infinity conic obeysD>=3m/6m;log discrepancies make every finite boundary volume holomorphic,and semistable surface periods exclude eventual purity even with nonisolated fibres. Across all complex coefficient rings the eventual radical is exactly nilpotents,with fixed-degree uniform ordinary-ideal nilpotence certificates. A positive-dimensional-stabilizer pure full phase is unipotent-safe;every possible failure has finite stabilizer under every automorphism-conjugated left action.",
+    "avoid": "Leaving originalT-invariant cubic/Jordan/internal-graph existence questions active,assuming a full phase reduces toT invariants,assuming finite stabilizer implies failure,using surface semistability as an unproved higher-dimensional period theorem,or copying only0pure across nonreduced rings. Retain ordinary pure ideals and their nilpotent structure.",
+    "boundary": "Complete originalT-invariant closure and its all-C-algebra nilpotent radical remain proved. The newer projective semistable/log-cohomology theorem removes isolation in ALL dimensions on actual projective holomorphic-volume models. Every single Peter-Weyl component on both quotients is now field/reduced-ring nullcone-safe in all degrees;real single-component seeds exclude every polynomial phase. Full failures mix degrees,have a common leading half-degree left fibre and finite stabilizer outside automorphicT-fixed algebras. Both FULL MZ and separate symmetrized height problems remainOPEN;internal proofs await review.",
+    "reopen_when": "For FULL MIXED-ISOTYPIC phases meeting the common-half-fibre,finite-stabilizer and automorphicT-fixed exclusions,a new actual period or marked certificate is supplied. Single-component field/reduced-ring purity is CLOSED in all weights/degrees;preserve ordinary-ideal distinctions and separate height scope. Do not turn an unknown sharp numeric prefix into a new purity search.",
+    "claims": [
+      "GSURFACENONISOPERIOD20261115",
+      "GVALUATIVEVOLUMECERT20261115",
+      "GTORUSPURECLOSED20261115",
+      "GTORUSNILPOTENTBASE20261115",
+      "GFAILFINITELEFTSTAB20261115",
+      "GPROJECTIVELOGPERIOD20261116",
+      "GADJUNCTIONBOUNDARY20261116",
+      "GEXCEPTIONALHALFFIBRE20261116",
+      "GALLISOTYPICSAFE20261116",
+      "GREALISOTYPICSEED20261116"
+    ],
+    "sources": [
+      "moments/vanishing/VALUATIVE_BOUNDARY_VOLUMES_AND_TORUS_INVARIANT_CLOSURE.md",
+      "moments/vanishing/torus_volume_source_audit.json",
+      "moments/vanishing/SEMISTABLE_LOG_PERIODS_AND_SINGLE_ISOTYPIC_SAFETY.md",
+      "moments/vanishing/semistable_isotypic_source_audit.json"
+    ],
+    "implementation": [
+      "moments/vanishing/verify_torus_volume_closure.py"
+    ],
+    "keywords": [
+      "Mathieu",
+      "Haar",
+      "all degree",
+      "torus invariant closure",
+      "boundary volume",
+      "log discrepancy",
+      "semistable surface",
+      "nilpotent coefficient rings",
+      "finite stabilizer"
+    ],
+    "reviewed_claims": {
+      "GSURFACENONISOPERIOD20261115": "26e21f2ab3771d84",
+      "GVALUATIVEVOLUMECERT20261115": "babe9a2d7cae11de",
+      "GTORUSPURECLOSED20261115": "113bcea3090fb070",
+      "GTORUSNILPOTENTBASE20261115": "c07ab30bbdfcc28d",
+      "GFAILFINITELEFTSTAB20261115": "3e357ff9711d0287",
+      "GPROJECTIVELOGPERIOD20261116": "0330dfbded623920",
+      "GADJUNCTIONBOUNDARY20261116": "4e3f1eed045c064b",
+      "GEXCEPTIONALHALFFIBRE20261116": "614ba04507adb2ca",
+      "GALLISOTYPICSAFE20261116": "d7b0290c901e254f",
+      "GREALISOTYPICSEED20261116": "d6b1a975308fe1cd"
+    }
+  },
+  "METHOD-SEMISTABLE-ISOTYPIC-SAFETY-20261116": {
+    "id": "METHOD-SEMISTABLE-ISOTYPIC-SAFETY-20261116",
+    "area": "geometry",
+    "programme_status": "archived",
+    "title": "Use projective log periods and the common half-fibre gate before refining any single isotypic module",
+    "when": "An exceptional phase lies in a single Peter-Weyl degree,has a real seed in one such degree,or its invariant leading biform is being used to constrain a full mixed phase.",
+    "use": "Projective semistable/log-cohomology comparison removes critical-point isolation in all dimensions. Boundary klt at(N-1)/D makes the original volume holomorphic;forSL2 polyhedral right orbits turn klt at2/D into an exact common-left-factor test. Pure full leading classes have a rootmultiplicity>=D/2. On ONE isotypic component equality degenerates to a forbiddenT-fixed pure phase,so pure iffunstable,ALL degrees/right multiplicities,with uniform2m>degQ marked safety overC/reducedC-algebras. Real one-component seeds exclude ALL polynomial phases;thin gates become36/60 and bad-marker boundsD-12/20.",
+    "avoid": "Continuing five-or-more-weight V12 pure-locus searches,assuming matrix homogenization removes lower isotypic terms,lifting a leading contraction to a full mixed phase,identifying ordinary ideals from radical equality,or silently reducing nilpotent coefficient families. No numeric sufficient V12 prefix is claimed.",
+    "boundary": "Both FULL MZ cases remainOPEN on mixed nonconstant Peter-Weyl degrees;first full2I failure degree is>=20. Restricted torus-fixed closure/all-ring nilpotence and finite-stabilizer necessity remain. All single-isotypic field/reduced-ring pure loci and marked safety are closed,but ordinary V12 quartic deficit is retained. Nonreduced ordinary coefficient questions need their actual ideal/thickness audit. Projective maps with holomorphic original volume are required;semistable/log/adjunction inputs are precise classical imports,global gluing and MZ deductions internally written pending specialist review.",
+    "reopen_when": "A full candidate mixes isotypic degrees,has a common leading left root of multiplicity>=D/2,and meets the prior finite-stabilizer/aut-torus exclusions. Audit actual mixed lower weights and finite boundary volume. For thin phases require a mixed real seed and degrees>=36/60. Treat sharp numeric prefixes as secondary;do not reopen closed single-component field purity.",
+    "claims": [
+      "GPROJECTIVELOGPERIOD20261116",
+      "GADJUNCTIONBOUNDARY20261116",
+      "GEXCEPTIONALHALFFIBRE20261116",
+      "GALLISOTYPICSAFE20261116",
+      "GREALISOTYPICSEED20261116"
+    ],
+    "sources": [
+      "moments/vanishing/SEMISTABLE_LOG_PERIODS_AND_SINGLE_ISOTYPIC_SAFETY.md",
+      "moments/vanishing/semistable_isotypic_source_audit.json"
+    ],
+    "implementation": [
+      "moments/vanishing/verify_semistable_isotypic_safety.py"
+    ],
+    "keywords": [
+      "Mathieu",
+      "all degree",
+      "Peter-Weyl",
+      "isotypic safety",
+      "half fibre",
+      "adjunction",
+      "semistable log periods",
+      "real seed",
+      "mixed degrees"
+    ],
+    "reviewed_claims": {
+      "GPROJECTIVELOGPERIOD20261116": "0330dfbded623920",
+      "GADJUNCTIONBOUNDARY20261116": "4e3f1eed045c064b",
+      "GEXCEPTIONALHALFFIBRE20261116": "614ba04507adb2ca",
+      "GALLISOTYPICSAFE20261116": "d7b0290c901e254f",
+      "GREALISOTYPICSEED20261116": "d6b1a975308fe1cd"
+    }
+  }
+}

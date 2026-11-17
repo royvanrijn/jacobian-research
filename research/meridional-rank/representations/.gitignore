@@ -1,0 +1,5 @@
+__pycache__/
+research/.scratch/
+output/pdf/*.aux
+output/pdf/*.log
+output/pdf/*.out

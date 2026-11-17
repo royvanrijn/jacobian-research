@@ -1,5 +1,0 @@
-REDUCED quadraticgraph 8 9 D 1
-{"status": "primary-full-ring-basis", "source_sha256": "e6091a2fe15049aba4288be7c8588123cadafb4849a97082d555f7e758f8a102", "input_sha256": "85d59db426e0722e77584a72d6926343a9b4b3d3b37e2142712273e2254ef100", "mode": "quadraticgraph", "seconds": 0.018}
-DIM:-1
-1
-

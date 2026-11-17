@@ -1,0 +1,115 @@
+{
+  "METHOD-HAAR-SEPARATED-CORE-20261116": {
+    "id": "METHOD-HAAR-SEPARATED-CORE-20261116",
+    "area": "geometry",
+    "programme_status": "archived",
+    "title": "Use the intrinsic separated Haar core; local monodromy cannot exclude global unit extensions",
+    "when": "Attempting the complete exceptional all-phase/all-original-marker implication through period kernels, finite quotient characters or local monodromy.",
+    "use": "The Haar source has kernel K=intersection t^m H, and H2=0 makes t injective. Exact quotient descent puts nontrivial finite-group isotypes in K. For pure P, all-marker safety is H=R[t]Omega+K, with state ideal Ann_R of the obstruction. Prove this generation from P Omega in K for every phase, or realize an actual failure.",
+    "avoid": "Claiming novelty for the prior Gaussian completion mechanism; applying finite-module Krull intersection to H; discarding original markers or nilpotents; excluding a global extension solely by local monodromy without eigenvalue 1.",
+    "boundary": "BOTH complete exceptional MZ cases remain OPEN. The rank-one Kummer Ext group is zero at c=0 and one-dimensional at c!=0 despite fixed nontrivial finite-order local monodromy; the nonzero extension has an entire compact beta-integral state. This model is not an exceptional phase. Core description is not a new effective algorithm. Universal proofs are internal; assurance flags remain false and review deferred. The tame original-period theorem now excludes every nonconstant normalized eventually pure phase from cohomological/M-tameness in the stated senses. Its original unit must have a nonzero origin V defect. Tame sources may still have polynomial submodules through t-dependent amplitudes, as the explicit quadric shows.",
+    "reopen_when": "Establish the full actual-source unit-generation implication on a whole exceptional quotient, or supply an actual exceptional phase and original marker with nonzero tail. Global extension data at infinity and the original Haar volume must be controlled; a local monodromy criterion must include hypotheses that exclude the explicit Kummer model. Work on the compulsory non-tame original-unit defect; tameness cannot supply a hypothesis for the remaining pure phases.",
+    "claims": [
+      "GHAARSEPARATEDCORE20261116",
+      "GKUMMERUNITEXT20261116",
+      "GTAMEORIGINALRIGID20261116"
+    ],
+    "sources": [
+      "moments/vanishing/SEPARATED_HAAR_CORES_AND_GLOBAL_KUMMER_EXTENSIONS.md",
+      "moments/vanishing/haar_separated_core_source_audit.json",
+      "moments/vanishing/TAME_ORIGINAL_PERIOD_RIGIDITY_AND_PURE_BOUNDARY_DEFECTS.md",
+      "moments/vanishing/tame_original_period_source_audit.json"
+    ],
+    "implementation": [
+      "moments/vanishing/verify_haar_separated_core.py"
+    ],
+    "keywords": [
+      "Mathieu",
+      "separated core",
+      "finite quotient descent",
+      "Kummer",
+      "global Ext",
+      "all original markers",
+      "closure first"
+    ],
+    "reviewed_claims": {
+      "GHAARSEPARATEDCORE20261116": "c8cd6d3cababc51b",
+      "GKUMMERUNITEXT20261116": "d7a1d821712bce56",
+      "GTAMEORIGINALRIGID20261116": "7b7fef48e9cbb7a4"
+    }
+  },
+  "METHOD-TAME-ORIGINAL-PERIOD-20261116": {
+    "id": "METHOD-TAME-ORIGINAL-PERIOD-20261116",
+    "area": "geometry",
+    "programme_status": "archived",
+    "title": "Every eventually pure original volume phase is non-tame; retain its origin V defect and original-form lattice",
+    "when": "Seeking a complete exceptional MZ theorem through tame Gauss-Manin systems, localized semisimplicity, original periods or the parameter-zero unit extension.",
+    "use": "Tame original forms lie in V_c^>-1. Strictness and CRT projectors show that every nonzero original marked period has a NONRATIONAL ordinary resolvent. Every nonconstant normalized eventually pure phase is therefore non-tame. Its original unit lies outside V_0^>-1, or V_0^>-N-1 for a degree-N polynomial period. Continue the actual all-phase/all-marker unit-generation implication on this compulsory non-tame locus.",
+    "avoid": "Trying to prove tameness for a nonconstant pure phase as a route to MZ; confusing original forms with t-dependent amplitudes; concluding that a tame source has no polynomial-period submodule. The genuine tame quadric height example has such a nonsplit submodule, while its ORIGINAL volume is not pure.",
+    "boundary": "BOTH full exceptional MZ cases remain OPEN. Non-tameness and an origin V defect are necessary for eventual purity, NOT sufficient for purity, safety or failure. No general local boundary-cycle identification or weak-tameness extension is imported. Universal proofs are internal and use the precise original-form lattice theorem; numerical controls do not prove it. External review remains deferred.",
+    "reopen_when": "Control the compulsory original-unit defect in the actual wild exceptional geometry sufficiently to prove H=C[t]Omega+K from P Omega in K for every phase, or realize a genuine exceptional failure. Retain all original multipliers, coefficient nilpotents and the unlocalized source; do not substitute a tame sector or review gate for the full finish line.",
+    "claims": [
+      "GTAMEORIGINALRIGID20261116"
+    ],
+    "sources": [
+      "moments/vanishing/TAME_ORIGINAL_PERIOD_RIGIDITY_AND_PURE_BOUNDARY_DEFECTS.md",
+      "moments/vanishing/tame_original_period_source_audit.json"
+    ],
+    "implementation": [
+      "moments/vanishing/verify_tame_original_period.py"
+    ],
+    "keywords": [
+      "Mathieu",
+      "original form",
+      "tameness",
+      "V filtration",
+      "origin defect",
+      "nonrational moments",
+      "all degree",
+      "closure first"
+    ],
+    "reviewed_claims": {
+      "GTAMEORIGINALRIGID20261116": "7b7fef48e9cbb7a4"
+    }
+  },
+  "METHOD-MV-ALGEBRAIC-TRACE-AND-ZERO-VALUE-LOGARITHMS-20261116": {
+    "id": "METHOD-MV-ALGEBRAIC-TRACE-AND-ZERO-VALUE-LOGARITHMS-20261116",
+    "area": "geometry",
+    "title": "Split algebraic ordinary resolvents by normalized trace and test zero-value logs in the actual complement system",
+    "when": "A pure Gaussian/Haar phase is proposed to have only finite algebraic ordinary marked branches,or generic-fibre semisimplicity is offered as a full MZ proof.",
+    "use": "For EVERY pure Gaussian phase in EVERY dimension/degree over characteristic-zero fields,and every pure intrinsic Haar phase including BOTH exceptional quotients,all-original-marker safety is EQUIVALENT to algebraicity of ALL ORDINARY marked resolventsC_Q(s)=sum h(QP^n)s^(-n-1). Exact coefficient Borel conversion identifiesformalEGFs withK((s^-1))/K[s],witht=-partial_s andpartial_t=s. On the algebraic-function subfield,normalized finite field trace is compatible across finite extensions,fixes rational functions and commutes withpartial_s. Taking its finite principal part at0 is Weyl-linear modulo polynomials and retracts onto the point moduleD_0. Purity putsD_0 in the ACTUAL image;the exact time-zero rankone source makes that image indecomposable,so the retraction forcesit toD_0,proving all-marker safety. For a supplied finite exact Weyl generating set,only its finite original marker resolvents need be algebraic. Such sets exist by retained holonomicity,but no producer or general algebraicity solver is implemented. Eventual purity has the same conclusion. Purity and ORDINARY normalization are essential:nonpureG_m phasez+z^-1 has algebraic marked resolvents and infinite moments,and factorial failures may have rational EXPONENTIAL marked periods. For EVERY pure compact intrinsic Haar phase,including either full exceptional quotient,all-original-marker safety is EQUIVALENT to absence of logarithmic terms in the INTEGER exponent class of ALL original marked Cauchy periods continued compatibly from infinity to a sector at PHASE VALUE0. Retained compact resolvent regularity supplies finite power/log expansions. Discard noninteger exponent classes and take finite principal part of the log-free integer class;this commutes withs andpartial_s modulo polynomials and retracts the point module,so exact time-zero indecomposability forces safety. Absence along one compatible continuation suffices;every pure failure has an actual integer-class logarithm for each continuation choice. A SUFFICIENT geometric condition is semisimplicity at eigenvalue1 of monodromy at0 of the COMPLEMENT/Cauchy Gauss-Manin connection forU_s=X minus{P=s},withQOmega/(s-P). A full exceptional failure therefore needs a nontrivial unipotent eigenvalue1 block in THIS source and an actual marked logarithm. Generic-fibre cohomology,ordinary top direct-image generic connection,and localized exponential source are DIFFERENT and cannot replace it. The entire nonsplit(exp(t)-1)/t countercontrol has trivial generic ordinary connection but Cauchylog(s/(s-1)) and(1-s)C_prime=1/s,retaining the missing point extension. No universal complement-monodromy condition or full MZ decision is proved.",
+    "avoid": "Confusing ordinary and exponential normalization,omitting purity,or using an arbitrary larger scalar solution presentation. Do not identify generic fibre cohomology or generic ordinary top direct image with the complement/Cauchy connection;the point extension is lost. Do not infer algebraicity from finite jets without a relation-degree bound. The theorem gives existence of some transcendental marker,not transcendence of every bad one.",
+    "boundary": "EVERY pure or eventuallypure unsafe Gaussian/intrinsic Haar phase has one fixed original markerQ whose ORDINARY marked resolvent is TRANSCENDENTAL,not merely nonrational. For ANY nonconstant degree-d polynomialH,the sameQ supplies a finite blockQ,QP,...,QP^(d-1) with at least one transcendental ordinary marked resolvent forH(P),by exact divided-difference reconstruction and closure of algebraicity under sums/polynomial substitution. Degree<=degQ+(d-1)degP. Algebraicity of a formal K-series descends under every coefficient field extension:bounded-bidegree algebraic relations form an infinite homogeneous linear system with finitely many columns,so a finite row basis gives a K-solution. No same-single-marker or every-index nonvanishing claim;no relation degree bound or finite-prefix algebraicity test is inferred. Internal global algebraic and local regular-singular proofs. Independent replay,external review,formal verification and novelty allfalse;external review/outreach remains deferred under closure-first priority. No new external theorem import. Both full exceptional MZ cases remainOPEN;the actual zero-value eigenvalue1 logarithm is a necessary obstruction,not a construction or an automatic exclusion. All previous scalar/ring/ordinary-cutoff claims,complete cotangent classification,factorial fixed-marker asymptotics,homogeneous Borel trichotomy,protected endpoints and actual radial bridge preserved.",
+    "reopen_when": "Closure-first:exclude or realize the actual zero-value integer-log extension for ALL remaining pure phases on one complete exceptional quotient. Use the full complement system or actual marked ordinary algebraicity. External review/outreach stays deferred;all assurance flags stay truthful.",
+    "claims": [
+      "MVALGORDSAFE20261116",
+      "MVTRANSCENDBLOCK20261116",
+      "GHAARZEROLOG20261116",
+      "OP-MV-ALL-DEGREE"
+    ],
+    "sources": [
+      "moments/vanishing/ALGEBRAIC_RESOLVENT_SPLITTING_AND_ZERO_VALUE_LOGARITHMS.md",
+      "moments/vanishing/algebraic_resolvent_splitting_source_audit.json"
+    ],
+    "implementation": [
+      "moments/vanishing/verify_algebraic_resolvent_splitting.py",
+      "moments/vanishing/algebraic_resolvent_splitting_verification.json"
+    ],
+    "keywords": [
+      "ordinary algebraic resolvent",
+      "normalized field trace",
+      "principal-part retraction",
+      "transcendental marked witness",
+      "zero-value logarithm",
+      "eigenvalue1 monodromy",
+      "complement versus generic fibre"
+    ],
+    "programme_status": "archived",
+    "reviewed_claims": {
+      "MVALGORDSAFE20261116": "cb743f6298d478b7",
+      "MVTRANSCENDBLOCK20261116": "020b95ed6f89e963",
+      "GHAARZEROLOG20261116": "fb896c1e421b4c38",
+      "OP-MV-ALL-DEGREE": "908c5a387e3f0f49"
+    }
+  }
+}

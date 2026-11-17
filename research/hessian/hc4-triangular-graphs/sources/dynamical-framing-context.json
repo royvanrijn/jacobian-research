@@ -1,0 +1,95 @@
+{
+  "review_date": "2026-11-16",
+  "retained_structural_inputs": [
+    {
+      "claim": "HCTANG2",
+      "canonical_source": "hessian/tang-hc4-audit/STRUCTURAL_REVIEW.md"
+    },
+    {
+      "claim": "KMFI1",
+      "canonical_source": "jacobian/monodromy-theory/THEORY.md"
+    },
+    {
+      "claim": "HC4MYKN0",
+      "canonical_source": "hessian/hc4-triangular-graphs/CANONICAL_BOUNDARY_AND_STABLE_COMPLETE_INTERSECTION_OBSTRUCTION.md"
+    },
+    {
+      "claim": "HC4MYKU1",
+      "canonical_source": "hessian/hc4-triangular-graphs/CANONICAL_TRACE_DUAL_ETALE_RECONSTRUCTION.md"
+    },
+    {
+      "claim": "HC4MYKQ0",
+      "canonical_source": "hessian/hc4-triangular-graphs/SOURCE_MODULE_LAYERS_AND_TRACE_ZERO_KERNEL.md"
+    },
+    {
+      "claim": "HC4MYME0",
+      "canonical_source": "hessian/hc4-triangular-graphs/TARGET_RADIAL_FINITE_LATTICES_AND_EIGENPOLYNOMIALS.md"
+    }
+  ],
+  "retained_proof_and_source_sha256": {
+    "hessian/tang-hc4-audit/STRUCTURAL_REVIEW.md": "26a6a76eb579de05b8e71245b8b804bdd5f036602f2e3e6ad5d036fd9f5cd572",
+    "hessian/tang-hc4-audit/verify_structural.py": "23e87f797b4d086ede8195773092dcd42d705258ec57c05920731e87e0ce9b2d",
+    "jacobian/monodromy-theory/THEORY.md": "71de191500c3ac73298540d8ce8b5496243b2b1a34b20313e3ab42d332532cdc",
+    "jacobian/monodromy-theory/verify.py": "f6538a84c4cb04c532be93647e808e978a165bc6dd90efef0024586ebbc80c47",
+    "hessian/hc4-triangular-graphs/CANONICAL_BOUNDARY_AND_STABLE_COMPLETE_INTERSECTION_OBSTRUCTION.md": "679c5f12083b9cdc657650417315c3e881974aee62c6a372c725d6d8193b657c",
+    "hessian/hc4-triangular-graphs/verify_canonical_boundary.py": "94379f2cbb83cfd80ad374b13538391fbdc6b6c9fce997e6917f53e7f667f801",
+    "hessian/hc4-triangular-graphs/CANONICAL_TRACE_DUAL_ETALE_RECONSTRUCTION.md": "fef1bc4871537c9d073c424c9dbbd4f0296dd287728a0724c9101c5a7b5cf3c2",
+    "hessian/hc4-triangular-graphs/verify_canonical_etale_reconstruction.py": "ad7d5b53096780353298ee052c9ac4341d0eced2b7194c5c83c397c19af91b4f",
+    "hessian/hc4-triangular-graphs/SOURCE_MODULE_LAYERS_AND_TRACE_ZERO_KERNEL.md": "10912b7d1074390c2a24ee9b2de6f498a8e6bbaf65d7304415a2cdc11d5f1174",
+    "hessian/hc4-triangular-graphs/verify_source_module_layers.py": "ec38b2034a93ead3dcccccd74c3e9dfa3a5512d33d434f46719f7161fe40ca43",
+    "hessian/hc4-triangular-graphs/TARGET_RADIAL_FINITE_LATTICES_AND_EIGENPOLYNOMIALS.md": "82357c1973776ae365eb8a13d20cc55856e687afa0cac9105ab05c684629d0b2",
+    "hessian/hc4-triangular-graphs/verify_target_radial_lattices.py": "e28430fca043f65eb93bc9c87939e29f4f9547978dbf8e5e9131d1fc7db75ea4"
+  },
+  "scope_flags": {
+    "full_goal_active": true,
+    "previous_goal_turn_progress": true,
+    "integer_dynamical_degree_all_plane_Keller": true,
+    "strict_topological_square_gap_if_lambda_gt_one": true,
+    "zero_thinness_of_eigenvaluation": true,
+    "all_M_target_framing_with_exact_ring_preservation": true,
+    "unbounded_dynamical_degree_same_finite_normalization": true,
+    "all_omitted_primes_have_positive_thinness": true,
+    "unramified_omitted_primes_retained": true,
+    "published_source_explicitly_credited": true,
+    "written_all_degree_proof": true,
+    "external_review_deferred": true,
+    "dynamical_degree_invariant_under_target_postcomposition": false,
+    "tight_tree_contains_omitted_finite_normalization_primes": false,
+    "infinitely_singular_eigenvaluation_asserted_force_inverse": false,
+    "everywhere_holomorphic_compactification_asserted_in_strict_regime": false,
+    "lambda_equal_one_proved_automatic": false,
+    "finite_trace_pairing_proved_automatic": false,
+    "full_marked_energy_proved_automatic": false,
+    "actual_counterexample_constructed": false,
+    "new_geometric_theorem_certified_by_finite_controls": false,
+    "registered_mathematical_checker_replayed": false,
+    "published_quartic_plane_queue_reopened": false,
+    "Miyanishi_odd_plane_theorem_adopted": false,
+    "unrestricted_HC4_or_JC2_resolved": false,
+    "independent_replay": false,
+    "formal_verification": false,
+    "external_review": false
+  },
+  "primary_source": {
+    "url": "https://annals.math.princeton.edu/wp-content/uploads/annals-v173-n1-p06-p.pdf",
+    "doi": "10.4007/annals.2011.173.1.6",
+    "title": "Favre-Jonsson,Dynamical compactifications of C2,Annals173(2011)211-249",
+    "local_path": "hessian/hc4-triangular-graphs/sources/dynamical-framing/favre-jonsson-2011.pdf",
+    "sha256": "e85b214ae52e6d04a42807f5e4234d945b17bcdd12e2939efbb7fa7c41ae2381",
+    "inspection": "Pertinent definitions/propositions/proofs printedpp216-221,224-235 read;renderedprintedpp220-222 visuallyinspected. Complete2007Eigenvaluationsmachineryandall2011geometryNOTindependentlyreproduced."
+  },
+  "external_imports": [
+    {
+      "name": "Favre-Jonsson2011 eigenvaluation/degree-growth package",
+      "status": "published proved",
+      "source": "https://annals.math.princeton.edu/wp-content/uploads/annals-v173-n1-p06-p.pdf",
+      "statements": "lambda2<=lambda1\u00b2;Prop2.3;Prop2.5/2.6;thinness andirrationalitySection1.3;Jacobianformula5.2;maximumdegreePropositions5.1-5.3",
+      "verification": "published theorem import;not certified by this checker",
+      "limits": "Pertinent definitions/propositions/proofs printedpp216-221,224-235 read;renderedprintedpp220-222 visuallyinspected. Complete2007Eigenvaluationsmachineryandall2011geometryNOTindependentlyreproduced."
+    }
+  ],
+  "new_primary_caches": [
+    "hessian/hc4-triangular-graphs/sources/dynamical-framing/favre-jonsson-2011.pdf"
+  ],
+  "proof_boundary": "Published eigenvaluation andmaximum-degree classification pluswritten Keller deductions;all-parameter targetautomorphism andleadingterm induction preserve B,K,S,Lambda literally whilegrowtharbitrarilylarge. Everyactualomittedprimehasthinness e/b>0,sooutsideV1;notimplicitproperness. No fullHC4closure."
+}

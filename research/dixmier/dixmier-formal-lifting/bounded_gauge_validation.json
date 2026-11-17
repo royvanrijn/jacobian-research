@@ -1,0 +1,25 @@
+{
+  "claim": "QGR1",
+  "status": "SCOPED_PASS",
+  "claim_schema_sources_hashes_and_consumers": "PASS",
+  "changed_methods_and_scope_reviews": "PASS",
+  "work_destination_and_scope_reviews": "PASS",
+  "retained_input_and_exact_control_receipt": "PASS",
+  "python_compile": "PASS",
+  "changed_files_diff_check": "PASS",
+  "local_markdown_links_checked": 142,
+  "unique_equation_labels": 12,
+  "status_renderer": {
+    "exit_code": 1,
+    "result": "AssertionError: KDSQ6: missing document consumer artifacts/generated-results/README.md"
+  },
+  "navigation_renderer": {
+    "exit_code": 1,
+    "result": "Historical navigation output omitted during repository reorganization."
+  },
+  "proof_sha256": "fdf976aef35bf69338c0e85e5e9177d5439032b0a37631a725850781d6c1a756",
+  "checker_sha256": "ab9e09f87452e3bf210f87b8a91732729f79a72549de10caa871607b183860ca",
+  "proof_boundary": "Finite symbolic controls only. Universal factorization and endomorphism exhaustion, sharp primitive bounds and constructive division, full fixed-R stabilizer and admission equivalence use written proofs. The imported QRP1 normal form is not an independent replay. The scalar-shift example excludes target normalization, while a source translation removes that shift. No bounded reachability between arbitrary lifts, general two-sided first-image normalization or bounded Long lift is proved. No external review or formal verification.",
+  "previous_goal_turn": "progress: QRP1 established the global Broughton cohomology and admission obstruction for h-small fiber translations",
+  "goal_status": "active"
+}

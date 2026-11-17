@@ -1,0 +1,64 @@
+{
+  "schema_version": 1,
+  "reviewed_utc": "2026-11-15T09:05:47.843152+00:00",
+  "local_sources": [
+    {
+      "path": "jacobian/universal-keller-unit-rigidity/PROOF.md",
+      "sha256": "418ee93b4fe2401e097046f5a0043aa1c280ac9fa113df5278072fe7eb3eff4a"
+    },
+    {
+      "path": "jacobian/universal-keller-intermediate-surfaces/PROOF.md",
+      "sha256": "4b0bccee73b5af3e6fbe9b89cd76b61c40c5058e166226a023fa2cdc0c4cc47a"
+    },
+    {
+      "path": "jacobian/universal-keller-plane-completion/PROOF.md",
+      "sha256": "d1882a55aa0f5182dc97533d7100ee6add71f20b9a6216423b73579bd5ff9fb8"
+    },
+    {
+      "path": "jacobian/universal-keller-structure/PROOF.md",
+      "sha256": "a3dee93b955b9e449bae2fff3d2964262289572f22f0820309e6c56d8bb5cbd5"
+    },
+    {
+      "path": "jacobian/universal-keller-receiver/PROOF.md",
+      "sha256": "8790916cd2c5e3f0458674dc50a37af18f1c1322eb2720c2071a819283cf639f"
+    },
+    {
+      "path": "jacobian/universal-keller-compression/verify.py",
+      "sha256": "a8d9b280e09868e1b1abed24443541dc29daa94744e467517a5b3d6da85457a5"
+    }
+  ],
+  "external_sources": [
+    {
+      "title": "freudenburg-kojima-nagamine-v1.html",
+      "url": "https://arxiv.org/html/1910.03494v1",
+      "path": "sources/freudenburg-kojima-nagamine-v1.html",
+      "sha256": "5cee105cdc0ebc8078745f5f7b3e4d3603409e939d381a2f5e6af8cda316fc76",
+      "bytes": 328432,
+      "reviewed_scope": "Introduction: negative-log-dimension plane criterion and correction of the obsolete two-surface log-zero list."
+    },
+    {
+      "title": "pelka-razny-v2.html",
+      "url": "https://arxiv.org/html/2002.10995v2",
+      "path": "sources/pelka-razny-v2.html",
+      "sha256": "71d1e140a7dd5f2720162a9558d205cf34c43a0aab3cd998cb952b56629427a2",
+      "bytes": 1047445,
+      "reviewed_scope": "Introduction recalls Miyanishi III.2.2.1; Theorem1.1 corrected log-zero classification as context; divisor localization in Lemma2.1."
+    },
+    {
+      "title": "hajra-torus-domination-v1.html",
+      "url": "https://arxiv.org/html/2608.04214v1",
+      "path": "sources/hajra-torus-domination-v1.html",
+      "sha256": "9c9e133088cf65fb7f9189560291c7a5c8f41cfde6d5c22238d24d7db9491886",
+      "bytes": 559686,
+      "reviewed_scope": "Abstract and TheoremA: finite surjective torus domination only; context, not an imported classification of our nonfinite maps."
+    },
+    {
+      "title": "stacks-fpqc-descent-023R.html",
+      "url": "https://stacks.math.columbia.edu/tag/023R",
+      "path": "sources/stacks-fpqc-descent-023R.html",
+      "sha256": "645d2f5f153f236ce0f99b3eaa7b671331c3270087f148cf0eed45b1411cf97d",
+      "bytes": 22710,
+      "reviewed_scope": "Effective fpqc descent of quasi-coherent sheaves, applied to invertible sheaves with the explicit normalized cocycle."
+    }
+  ]
+}

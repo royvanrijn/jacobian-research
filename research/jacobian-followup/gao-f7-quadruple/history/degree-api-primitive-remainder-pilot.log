@@ -1,8 +1,0 @@
-Traceback (most recent call last):
-  File "/home/royvanrijn/src/jacobian-research/research/jacobian-followup/gao-f7-quadruple/primitive_remainder_pilot.py", line 44, in <module>
-    if '--worker' in sys.argv:worker()
-                              ^^^^^^^^
-  File "/home/royvanrijn/src/jacobian-research/research/jacobian-followup/gao-f7-quadruple/primitive_remainder_pilot.py", line 18, in worker
-    assert G.degree('a')==8
-           ^^^^^^^^
-AttributeError: 'flint.types.fmpz_mpoly.fmpz_mpoly' object has no attribute 'degree'. Did you mean: 'degrees'?

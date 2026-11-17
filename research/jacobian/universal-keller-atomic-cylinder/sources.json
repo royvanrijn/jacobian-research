@@ -1,0 +1,69 @@
+{
+  "schema_version": 1,
+  "retrieved_utc": "2026-11-15T01:23:23.580780+00:00",
+  "purpose": "Classical Ax/Zariski Main inputs and retained atomicity/projection statements. No priority certificate.",
+  "local_sources": [
+    {
+      "path": "jacobian/universal-keller-rigid-base-reduction/PROOF.md",
+      "locator": "UA1RIGIDCYL1 projection and finite cylinders; UATORUSDOM1 base finiteness; UAVERTRED1 earlier metabelian reduction; UASYLOWDEF1 budgets.",
+      "sha256": "b940a9485119963c06220145fb0085fc076844b54c9fead56be99f87cc7263c8"
+    },
+    {
+      "path": "jacobian/universal-keller-torus-receivers/PROOF.md",
+      "locator": "UAFINATOM1 primitive finite covers and normal affine intermediates.",
+      "sha256": "2f71f561ae8a687ab8a27a13027bb097c45dc14862ae315bb2a49efff72f29a3"
+    },
+    {
+      "path": "jacobian/universal-keller-torus-quotient-selfmaps/PROOF.md",
+      "locator": "UAINFRASELF1 torus-quotient monodromy and finite canonical ceiling.",
+      "sha256": "6190aee79c88adef5e807074c385e795f1882bcddf6478a47af292bbc5f4ee46"
+    },
+    {
+      "path": "jacobian/universal-keller-semilinear-spectrum/PROOF.md",
+      "locator": "UAPPDEGREE1 exact strong prime-power finite degree spectrum.",
+      "sha256": "6258e1c0dafe9fbb518e0151e4e47c166618e3a7cc9fe701aeb862501f8f3cd6"
+    },
+    {
+      "path": "jacobian/universal-keller-acyclic-boundary/PROOF.md",
+      "locator": "UAACYCLICATOM1 retained pluricanonical argument; this follow-up removes its acyclicity hypothesis for self-map factors.",
+      "sha256": "45c9d1b54746c56bdc54663370420e6c6e0cce5883c5a947cc2290fa7ad1f3ea"
+    },
+    {
+      "path": "foundations/verified/UNIVERSAL_RELATIVE_KELLER_MAP.md",
+      "locator": "UAM1 cubic generic degree and primitive monodromy; retained fixed seed.",
+      "sha256": "4cced623c100a90859996e5aea69219a241c56c20ca087f1a9d4caa50209c1c5"
+    },
+    {
+      "path": "jacobian/universal-keller-compression/verify.py",
+      "locator": "Reuse only the pure source_map function by AST extraction for an exact normalized cubic control.",
+      "sha256": "a8d9b280e09868e1b1abed24443541dc29daa94744e467517a5b3d6da85457a5"
+    },
+    {
+      "path": "jacobian/universal-keller-structure/PROOF.md",
+      "locator": "UAALLATOM1 and UAQTILT1: constant-profile three-variable primitive seeds in every degree N>=3.",
+      "sha256": "a3dee93b955b9e449bae2fff3d2964262289572f22f0820309e6c56d8bb5cbd5"
+    }
+  ],
+  "external_sources": [
+    {
+      "path": "sources/ax-1969.pdf",
+      "url": "https://msp.org/pjm/1969/31-1/pjm-v31-n1-p01-p.pdf",
+      "locator": "Printed page1, PDF page2: theorem and Corollary1; injective finite-type endomorphisms are surjective.",
+      "bytes": 975342,
+      "sha256": "2b6be817459aa97f05f48ab385033d007b248a84e265a057636c4e8a7a222d1d",
+      "visual_review": {
+        "page_zero_based": 1,
+        "renderer": "pypdfium2 5.15.2 with Pillow13.0.0",
+        "scale": 1.8,
+        "reviewed": true
+      }
+    },
+    {
+      "path": "sources/stacks-02LQ.html",
+      "url": "https://stacks.math.columbia.edu/tag/02LQ",
+      "locator": "Lemmas37.43.2-3: relative normalization open immersion and finite completion.",
+      "bytes": 26829,
+      "sha256": "f636b68736059c77ef77b9571279de4900473449d5cb2aeec8d7902daf46f356"
+    }
+  ]
+}

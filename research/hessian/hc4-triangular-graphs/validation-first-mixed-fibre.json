@@ -1,0 +1,57 @@
+{
+  "outcome": "PASS",
+  "claim": "HC4MYMU0",
+  "metadata_groups": [
+    "MU0 registered with frozen proof/checker/context/receipt:85 controls57 algebraic",
+    "five retained claims,ten proof-checker pins;zero new imports/caches/downloads",
+    "actual source-image fibres,rational slice,finite order versus normalization,quadratic pole and original-target integral marker explicit",
+    "one first new preregistration PASS,no predecessor mathematical replay or assurance upgrade",
+    "full parent open,three direct MU0 witnesses,prior plane/Mathieu results and quartic plane retirement preserved",
+    "new first-mixed-fibre method,five affected methods and all changed-parent lesson fingerprints refreshed",
+    "both root and both related work items plus README retain full trace-energy target and prior history",
+    "navigation matches repository renderer output;no manual generated edits",
+    "known unrelated missing-artifact baseline [2,2,1,0];affected whitespace clean"
+  ],
+  "repository_checks": [
+    {
+      "name": "render-navigation",
+      "exit_code": 2,
+      "output": "make -C research PYTHON=\"/home/royvanrijn/src/jacobian-research/.venv/bin/python\" SYSTEM_PYTHON=\"python3\" \"render-navigation\"\nmake[1]: Entering directory '/home/royvanrijn/src/jacobian-research/research'\npython3 scripts/render_status.py\nTraceback (most recent call last):\n  File \"/home/royvanrijn/src/jacobian-research/research/scripts/render_status.py\", line 515, in <module>\n    main()\n  File \"/home/royvanrijn/src/jacobian-research/research/scripts/render_status.py\", line 504, in main\n    validate_index(index)\n  File \"/home/royvanrijn/src/jacobian-research/research/scripts/render_status.py\", line 361, in validate_index\n    assert consumer_path.is_file(), (\n           ^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: KDSQ6: missing document consumer artifacts/generated-results/README.md\nmake[1]: *** [Makefile:16: render-navigation] Error 1\nmake[1]: Leaving directory '/home/royvanrijn/src/jacobian-research/research'\nmake: *** [Makefile:17: render-navigation] Error 2\n"
+    },
+    {
+      "name": "check-navigation",
+      "exit_code": 2,
+      "output": "make -C research PYTHON=\"/home/royvanrijn/src/jacobian-research/.venv/bin/python\" SYSTEM_PYTHON=\"python3\" \"check-navigation\"\nmake[1]: Entering directory '/home/royvanrijn/src/jacobian-research/research'\npython3 scripts/audit_status.py\nTraceback (most recent call last):\n  File \"/home/royvanrijn/src/jacobian-research/research/scripts/audit_status.py\", line 8, in <module>\n    validate_index(index)\n  File \"/home/royvanrijn/src/jacobian-research/research/scripts/render_status.py\", line 361, in validate_index\n    assert consumer_path.is_file(), (\n           ^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: KDSQ6: missing document consumer artifacts/generated-results/README.md\nmake[1]: *** [Makefile:21: check-navigation] Error 1\nmake[1]: Leaving directory '/home/royvanrijn/src/jacobian-research/research'\nmake: *** [Makefile:17: check-navigation] Error 2\n"
+    },
+    {
+      "name": "partial-review",
+      "exit_code": 1,
+      "output": "Traceback (most recent call last):\n  File \"/home/royvanrijn/src/jacobian-research/research/scripts/research.py\", line 563, in <module>\n    raise SystemExit(main())\n                     ^^^^^^\n  File \"/home/royvanrijn/src/jacobian-research/research/scripts/research.py\", line 440, in main\n    validate_lessons(items, entries, check_reviews=args.command == \"check\")\n  File \"/home/royvanrijn/src/jacobian-research/research/scripts/research.py\", line 130, in validate_lessons\n    assert (ROOT / p).is_file(), f\"{item['id']}: missing source {p}\"\n           ^^^^^^^^^^^^^^^^^^^^"
+    },
+    {
+      "name": "whitespace",
+      "exit_code": 0,
+      "output": ""
+    }
+  ],
+  "check_count": 85,
+  "algebraic_controls": 57,
+  "retained_claims": 5,
+  "retained_pins": 10,
+  "new_external_theorem_imports": 0,
+  "new_primary_caches": 0,
+  "new_primary_downloads": 0,
+  "preregistration_mathematical_checker_invocations": 1,
+  "registered_mathematical_checkers_executed": [],
+  "frozen_files_sha256": {
+    "research/hessian/hc4-triangular-graphs/FIRST_MIXED_FIBRE_SOURCE_IMAGE_AND_QUADRATIC_TRACE_POLE.md": "36d6b558c44ccd514e3024e3c1515d112c9eb03c946089544b8a99a3d392c059",
+    "research/hessian/hc4-triangular-graphs/verify_first_mixed_fibre.py": "29615ea4574dcee36acdfe475559680f837d14a23634bf1a70a264e2e1ee8f12",
+    "research/hessian/hc4-triangular-graphs/sources/first-mixed-fibre-context.json": "4129c4ac4e8297c22f8f147db3e05d24b77a7905dc5dc22c6e93c1a2d50598a8",
+    "research/hessian/hc4-triangular-graphs/receipt-first-mixed-fibre.json": "7629202f9e03aa0e9a586dd1ec23d2c9fa328a6b6c632b622168df16f7dc46a2",
+    "tmp/first-mixed-fibre-preregistration.json": "b81e9a1e37c745b979fba7c273e521abbade9793d6fed2def1d936829bae6300"
+  },
+  "independent_replay": false,
+  "formal_verification": false,
+  "external_review": false,
+  "original_goal_complete": false
+}

@@ -1,0 +1,591 @@
+{
+  "authority": "Historical scope-review snapshot only; current mathematical status is research/MATH_STATUS.json.",
+  "date_utc": "2026-11-15T02:04:54.443976+00:00",
+  "claim_before": {
+    "id": "OP-KDESC",
+    "kind": "open_problem",
+    "state": "open",
+    "title": "Presentation-free stable Keller descent",
+    "scope": "Construct or obstruct a presentation-free lift from rank-N finite-etale moduli to a precisely defined stable Keller-incidence receiver. GTND1 proves that the existing quadratic-gauge map atlas does not descend through the full primitive-presentation groupoid for N>=5 because its intrinsic Fitting boundary varies generically. QGDR1 supplies the clean marked receiver span, but not a section from BS_N or a global moduli object. RQG5 closes the hidden-stabilizer loophole uniformly: for every N>=5 the universal exposed intruder P^2*B^N*C and Kuroda's stable-invariant theorem force every stable self-equivalence of a fixed clean compiler map to preserve the physical target, and the coordinate-polynomial theorem makes that restriction the identity. Thus neither arbitrary degree nor arbitrary identity stabilization can repair the generic Tschirnhaus boundary mismatch. R5TTL1 and R5UI1 are the explicit rank-five transition and fixed-map specializations; R5STS1 retains finer vertical/full-group calculations. R5K55H1 excludes the first cancellable target-degree-55 rank-five Koszul wall in the normalized two-generator family, while leaving the third P-zero Koszul coefficient, other wall types, and the singular-support quotient open. What remains is a genuinely different Tschirnhaus-invariant compiler, or a correspondence or torsor-valued replacement for a section. The rank-three target-local projective transport, the rank-four degree-at-least-nineteen endpoint problem, and an all-rank lift on the projective determinantal locus remain separate polynomial-extension gates. UASPARSE1 now closes the stable-orbit gap at arbitrary intermediate coefficient zeros in characteristic zero. UATRACEMOD1 proves that the explicit trace-normalized compiler still has an N-5-dimensional stable-class defect for every N>=6, with each fixed algebra occurring densely in its parameter family. The canonical rational generator-line correspondence remains available, including the rank-six weights-five-and-seven section UASEXT1; effective gluing into a different presentation-free receiver remains open. UADOUBLEMOD1 further proves an N-6-dimensional stable-class defect after both trace constraints for N>=7, even where rank seven attains the global target-dimension minimum. The corresponding lift spaces are projective quadrics; their arithmetic solvability and etale-local choices do not select a presentation-free stable class. UARECV1 now constructs the full good-generator-line receiver in every rank N>=3 and proves effective polynomial gluing on its rank-three vector bundles, including coefficient-zero strata and low-rank constrained receivers. UAINERT1 computes its inertia as trivial or mu2 and excludes every section, or enhancement admitting a morphism to it over BS_N, that retains the good line. A different receiver must forget that line rather than merely add kernel automorphisms. UAEQUIV1 independently tests natural marked linear bundle lifts by all subgroup-fixed Keller restrictions: the permutation bundle alone is impossible, and one extra trivial line would imply a plane Keller counterexample. A presentation-free receiver discarding the line and effective landing on fixed affine spaces remain open. UANORMAL1 adds a global first-normal-jet normalization and excludes every marked linear-representation architecture whose moving component is affine linear, even with arbitrarily many trivial directions and nonlinear invariant outputs. A viable candidate must therefore contain nonlinear moving terms after this normalization, while still passing all subgroup-fixed restrictions. UAFIXALL1 removes the characteristic assumption from subgroup-fixed restrictions and excludes an empty fixed fibre in fixed dimension zero or one, including wild linear actions. UAFROB1 constructs a different canonical marked object over B_AGL1(F_q), and over BS3 in characteristic three: its source is an affine-plane bundle with no equivariant origin, whose absence persists under vector-bundle stabilization. It forgets the generator line and glues polynomially, but chooses no fieldwise affine trivializations. The characteristic-zero and general S_N cases remain open; finite affine-linear actions in characteristic zero have fixed points by averaging. UACANCOST1 gives the compiler-independent marked linear ambient bound N+1 in every characteristic, conditionally N+2 from JC(2) in characteristic zero; UATORUSCOST1 proves N+2 there unconditionally with a retained nontrivial commuting linear torus. UAFIXGEOM1 extends the fixed-fibre gate to nonlinear actions whose whole fixed schemes are affine spaces and transfers these bounds through polynomial linearization, including stable linearization. It excludes all characteristic-zero canonical marked plane constructions, all tame symmetric three-space constructions for N>=3, and the published nonlinearizable S3 action on A4 whose actual fixed scheme is a line. Other nonlinearizable actions with suitable fixed geometry remain open. These are marked architecture restrictions, not unmarked ktdim lower bounds. UAFROBCOST1 simplifies modular descent to x-x^q on affine line bundles. UA1CANCLASS1 now classifies the entire one-variable canonical category: precisely translation groups with cyclic scalar complement in their natural prime-power action; the symmetric exceptions are exactly S2 in characteristic two and S3 in characteristic three. Canonical dimension is one, with dimension two required for absolute stable atomicity in composite degree. The fixed universal-map requirement remains separate, and the characteristic-zero general receiver is not constructed. UAFINCOUNT1 further determines the base-sensitive canonical translation dimension: ceil(e/f) for (C_p)^e over F_(p^f), and one over every infinite characteristic-p base. Geometric line classification does not alone select constants available over a finite base. UAAFFCAN1 now controls affine source bundles at every rank N>=5: dimension at least N in rank-dividing characteristic and N+1 otherwise, so an absent origin saves at most one coordinate at high rank. UACANATOM1 proves that a natural full-degree canonical symmetric fibre automatically gives normal monodromy and absolute stable atomicity outside the rank-four characteristic-two V4 exception; marked lower-rank boundary fibres remain separate. UALANG1 supplies a basis-free Frobenius-periodic affine receiver for all affine finite-field spaces, with explicit matrix Keller lifts. UA4CHAR2 settles canonical quartic affine-bundle dimension two in characteristic two, but every such plane lift decomposes; canonical absolute-atomicity dimension lies between three and six. The characteristic-zero and general S_N construction remain open. UASUBDEFORM1 now upgrades every classified canonical line model to a fixed universal plane over its actual base, using composition-preserving deformation of its subspace polynomial; full F_q constants are unnecessary. UASCALARDIM1 determines scalar-affine canonical marked dimension ceil(e/f) over F_(p^f) containing the scalar roots, and one over every infinite such base. These constructive modular extensions do not supply a characteristic-zero receiver or select input-wise trivializations. UADECKWILD1 now confines target and first-jet symmetry kernels to the normal wild p-core; for natural S_N with N>=5 the target tangent action is faithful in every characteristic. UASMITHFIX1 makes the whole low-dimensional fixed-scheme obstruction automatic for tame prime subgroups, without assuming linearizability or higher fixed spaces affine. In characteristic zero UANONLINEARCOST1 gives arbitrary-action dimension at least N+1 in prime-power rank, N in two-positive-prime-power rank, and N-1 generally; all three-dimensional natural S_N routes for N>=3 are closed, even for nonlinearizable actions. Equality in the strengthened cases requires a missing-fibre etale map between actual mod-ell acyclic affine surfaces. Their geometry and effective higher-dimensional gluing remain open; passing the standard tangent test in other ranks does not construct a receiver. Combined with the existing explicit absolutely atomic universal maps, UANONLINEARCOST1 now gives a strict fixed-versus-canonical dimension gap in every characteristic-zero rank N>=3. A dimension-minimizing fixed map cannot be made a canonical marked symmetric lift in its original dimension merely by finding new nonlinear actions; the dimension bounds alone give no construction. UAACYCLICRIG1 makes birational etale maps of smooth acyclic varieties rigid in all characteristics. UAFIXDEFECT1 gives the stronger generic-degree budget: every characteristic-zero coherent canonical affine-space construction with a nontrivial transitive rank-N fibre needs generic degree M>=N+2, in every dimension and with arbitrary polynomial actions. Consequently the full-degree category, its one-degree-surplus extension, and every identity stabilization of a retained degree-N universal map are closed by obstruction. UACANATOM1 is vacuous in characteristic-zero full degree and cannot supply atomicity for the remaining higher-degree boundary candidates. UAFULLAFF1 classifies full-degree affine S_N constructions exactly as (N,char)=(2,2),(3,3),(4,2), and excludes an equivariant source origin in every full-degree transitive affine construction. Remaining modular full-degree p-power ranks N>=5 with nonlinear actions require a disconnected fixed scheme for an explicit tame composite-order cyclic subgroup on the target; the component through the mark receives no source fixed point. The undeformed pseudo-plane maps are surjective; UAACYCLICMISS1 computes the published shear deformations and obtains actual prescribed finite omission sets at fixed generic degree. Thus the abstract acyclic missing-fibre surface gate is attained, while simultaneous whole fixed-locus realization inside affine space remains open. The remaining characteristic-zero gate is a genuinely higher-degree boundary model M>=N+2 with effective gluing and proved whole affine source, or a different receiver category. Generic monodromy and atomicity must be established separately. No attainment of the degree bound or general receiver is claimed. UAACYCLICGAL1 forces Galois intermediate fields to come from actual etale target covers under constant-unit and torsion-Picard hypotheses, and excludes quadratic maps of characteristic-zero mod-2 acyclic affine varieties. UAPARITYDEF1 raises the necessary generic degree to N+3 for every even natural symmetric rank with arbitrary polynomial actions, and for every characteristic-zero transitive affine construction in any rank. Its affine symmetric surplus-three bound also holds in every characteristic other than two outside the rank-three characteristic-three exception. Odd-rank characteristic-zero equality M=N+2 requires nontrivial Pic[2] in every relevant fixed target. UAACYCLICATOM1 transfers primitive-geometric-monodromy stable atomicity in every generic degree to regular self-maps of the same acyclic affine variety; UAACYCLICMISS1 gives infinitely many such stably inequivalent examples, but their fundamental groups prohibit identifying their stabilized sources with affine space. Effective whole affine-space boundary gluing and ambient monodromy/atomicity remain open. UAACYCLICRECV1 now constructs a canonical cyclic marked receiver in characteristic zero on forms of the rationally acyclic surface S_k, with effective polynomial line-bundle gluing and the exact input torsor as complete marked fibre. It includes BS2 over every characteristic-zero field, and has exact dimension two in this enlarged receiver, including absolute stable atomicity for prime k. A fixed surface map is separately field-versal. Its fixed scheme A1 disjoint union Gm demonstrates why rational acyclicity does not replace mod-p Smith acyclicity; the ambient varieties remain outside affine space even after stabilization. The broader natural symmetric and whole affine-space gluing gates remain open. The explicit coarse A2 quotient of UAACYCLICRECV1 has a uniformly nonconstant Jacobian; discarding the cyclic cover is excluded as an affine-space Keller repair, even after identity stabilization. UATORUSCLASS1 now classifies the entire torus-torsor receiver by an abelian regular permutation group normalized by the label action, with degree prime to the characteristic. UATORUSSYM1 constructs actual natural S3 and S4 families in that enlarged category: exact torus dimensions are1,1,2 in symmetric ranks2,3,4, with characteristics excluding2,3,2 respectively. N>=5 is excluded in every torus dimension and after affine identity stabilization; finite torus maps have no smaller boundary fibre. UATORUSFIX1 separates these canonical families from one fixed universal torus cover: cubic discriminants and quartic cubic resolvents are frozen, and fixed symmetric universality exists only in rank2. UAFINATOM1 supplies finite-factor closure and strong atomicity through normal affine intermediates; nonnormal intermediates invalidate it. UATORUSSTABLE1 reduces stable factorization of finite etale torus endomorphisms in characteristic zero to integral Galois lattice endomorphisms, with an explicit composite degree-four stable atom that is not absolute. UAPSEUDOSYM1 closes the full symmetric extension on the same unstabilized S_k surface and every projection-preserving identity stabilization for N>=3. Cyclic generic degree N>=4 rules out all stabilized full natural S_N lifts even with mixing, leaving only the cubic projection-mixing case within that cyclic class. The original whole affine-space higher-degree boundary and general non-torus receiver gates remain open. For the explicit minimal quartic torus family, UATORUSFIX1 classifies characteristic-zero atomicity by the cubic resolvent: non-split resolvent exactly gives base-field stable self-map atomicity, connected resolvent exactly gives the stronger normal-affine atomicity, and none is absolutely atomic. Finite coefficient promotion on any characteristic-zero torus-affine cylinder remains outside fixed symmetric universality in rank N>=3 by UATORUSFIX1; escaping it needs nonfiniteness or different source geometry. UAUNIVMON1 now makes geometric S_N and absolute stable atomicity automatic from full-degree fixed symmetric universality, without a compiler-specific monodromy calculation; it does not apply to rank-N boundary fibres inside degree M>N. UAHOMOCOST1 extends the finite torus obstruction to every characteristic-zero homogeneous target with connected isotropy and gives factorial costs for disconnected isotropy. UAQUOTRECV1 closes the all-rank finite nonabelian receiver-pair existence gate: special-linear quotients give canonical marked, one-fixed-universal, strongly absolutely atomic pairs over every field. UAALTRECV1 supplies canonical A_N-monodromy pairs with full S_N symmetry, frozen sign and exact characteristic-zero isotropy minima: N!/2 in canonical high rank versus N! for fixed universality, and12 for a canonical atomic quartic. UAFINPI1RIG1 prevents identifying either quotient source with its target by affine identity stabilization; finite coefficient promotion on such cylinders cannot turn these pairs into self-covers. The original whole affine-space higher-degree boundary, source self-identification by a genuinely different nonfinite construction, and projection-mixing cubic pseudo-plane gate remain open. No new coordinate-dimension minimum is claimed. UAHOMOSELF1 now closes finite homogeneous SELF-MAP symmetric universality from rank3: its commutator argument forces abelian monodromy even with disconnected isotropy. UAINFRASELF1 extends the finite self-map limit to geometric torus quotients: monodromy has an abelian regular normal subgroup, primitive degree is a prime power with irreducible holonomy, and symmetric ranks N>=5 are excluded in every dimension and identity stabilization. UANORMSELF1 supplies a fixed universal finite volume cubic on one nonhomogeneous affine surface; UANORMCYL1 classifies all its dominant endomorphisms and characteristic-zero finite cylinders, with an exact stable fixed-versus-canonical cubic distinction. UAQUARTSELF1 closes a further non-affine self-map gate: a free S3 quotient of a four-dimensional torus has one fixed universally quartic, strongly absolutely atomic, volume-preserving finite self-map over every field outside characteristics2,3. Its unit z^2 excludes affine-space landing, and a canonical full S4 action remains separate. UAKANLIFT1 provides an all-degree all-characteristic canonical-line volume functor preserving monodromy and the complete marked fibre, but retaining the unit and fundamental-group barriers. Thus finite torus-quotient symmetric self-universality is exactly attainable in ranks2,3,4; higher-rank finite self-receivers must escape this geometry, and the original whole affine-space canonical boundary remains nonfinite, higher degree and open. UA1RIGIDCYL1 closes all finite coefficient coupling on characteristic-zero A1-rigid bases. UATORUSDOM1 makes every dominant regular base map between equal-dimensional torus quotients finite etale. UAQUARTAUT1 computes the metabelian automorphism group of the constructed universally quartic W and excludes canonical natural S4 or higher symmetric data on every finite coupled affine cylinder. This specific quartic canonical gate is closed negatively; different quotient geometries remain open. UASYLOWDEF1 removes CFSG from the general transitive surplus proof and gives M>=N+3 for every even-degree transitive polynomial label action. UAVERTRED1 reduces all remaining natural S_N, N>=4, attempts on rigid metabelian cylinders to actual canonical affine-fibre Keller data; W quartic attempts need r>=5 affine coordinates and degree at least7 times the base degree. No simultaneous landing, gluing or smaller-boundary-rank atomicity theorem is supplied. UABLOCKRED1 gives a general projection-block degree budget and primitive embedding-or-affine-fibre alternative on every A1-rigid cylinder. UAHOLCOMM1 supplies a metabelian outer-automorphism kernel whenever the rational holonomy commutant is commutative, turning it into a reusable symmetry test. UAS3END1 classifies all endomorphisms and absolute stable self-factor lengths on the enlarged free S3 norm quotients Z_m. It distinguishes prime determinant3 degree-nine self-atoms from strong atomicity: they factor through a different non-stably-isomorphic smooth quotient. UAS3VERS1 extends the quartic to volume-preserving degree-n-squared self-covers, torsor-versal for the specified affine S3 group exactly away from multiples of3 over the stated cyclotomic bases, with strong atomic prime-square maps for every prime other than3. This is not universality for all rank-n-squared algebras. UAS3CAN1 excludes finite canonical quartics on every Z_m and finite coupled cylinder, even when Z_m actually has faithful S4 automorphisms. Repeating standard holonomy modules does not repair the canonical action; other free translation geometry or the original higher-degree nonfinite affine boundary is still required. UAFREEBASE1 removes the special-free-base existence gate for every finite tame group by induced cyclic characters and quasi-trivial twist torsors. UAISOCRIT1 gives an exact all-fields twisted-H1 injectivity criterion for fixed isogeny self-covers, with coprime determinant/cohomology-annihilator sufficient conditions. UANORMGEN1 makes the norm power criterion gcd(n,r)=1 exact for every transitive group, and UAPRIMEPOWER1 supplies strong primitive fixed covers in every odd prime-power degree plus the binary even-exponent norm family. UACYCIDEAL1 relates stable self-atoms to irreducible cyclotomic integers, strong atoms to principal prime ideals, and stable source identification to ideal principality; it adds an explicit field-versal AGL1(F8) degree-eight strong atom. These remain specified-group covers on non-affine torus quotients. UAVERSLIMIT1 imports the published no-go for one quasi-compact scheme torsor receiver realizing all smooth affine bases in characteristic zero, with a quantitative frame-torsor bound, and proves invariance of realization images under pointed base changes. Field versatility, canonical point selection and stack-valued map descent remain different conditions. Scavia closes the general Sylow dense-open-versality converse; negative Sylow budgets remain valid. Different stack geometry with inertia, effective simultaneous landing/gluing and the original higher-degree nonfinite whole-affine problem remain open. UAISOTWIST1 allows holonomy automorphisms in the exact twisted-H1 isogeny criterion and constructs a compatible free base by cyclic shifts. UACYCSEMI1 replaces the fixed-lattice principal-prime requirement with [P]=(sigma-1)[I]; the prime-conductor ambiguous-class formula makes this solvable and supplies an explicit nonprincipal degree2048 control. UAPUNCTVOL1 keeps the canonical volume lift inside torus-quotient geometry after puncturing the covolume line, preserving field realization images but requiring a trivial tangent determinant character to retain a fixed nonzero marked covolume. UAPPDEGREE1 closes the finite torus-quotient strong-atomic degree-existence gap in all degrees: exactly every prime power occurs, with a volume field-versal specified-group version of dimension at most max(2,2N-3). Zsigmondy and two direct exceptional constructions fill all odd binary exponents; no class-number-one hypothesis is used. This sharp degree spectrum does not give arbitrary prescribed affine monodromy, full symmetric universality, whole-affine sources or canonical point choices. The original effective stack-valued landing/gluing and genuinely nonfinite affine canonical problem remain open. UANORMAFF1 identifies the exact category boundary: nonfinite maps of degree greater than one are never atomic through all normal affine intermediates. UASELFATOM1 removes acyclicity from the constant-unit torsion-canonical primitive self-map criterion using the classical Ax self-map lemma. UACYLDICH1 forces every nonfinite self-atomic torus-quotient-cylinder map to have base degree one. UACYLCAN1 consequently removes the earlier metabelian base restriction: every such marked canonical datum restricts to an actual affine-fibre Keller datum, with the affine coordinate count and degree budgets paid inside that fibre. Relative restriction glues only to a pair of affine-space forms; coordinates, source-target identification and special-fibre atomicity do not follow. UACYLDEF1 supplies infinitely many fixed-degree, volume-preserving, stably inequivalent nonconstant self-atomic dilation families on one fixed cylinder. Their units and absence of new marked actions leave canonical whole-affine landing and effective gluing open. In fact the UACYLDEF1 families occur in every generic degree N>=3 on the single fourfold Gm times A3; this is its exact nonfinite etale degree spectrum, with volume and self-atomic representatives. Its finite atomic degrees are exactly primes. These are existence and atomicity statements, not canonical symmetric universality.",
+    "canonical_source": "foundations/verified/GENERIC_TSCHIRNHAUS_NON_DESCENT.md",
+    "dependencies": [
+      "GTND1",
+      "QGDR1",
+      "R5TTL1",
+      "R5STS1",
+      "R5UI1",
+      "RQG5",
+      "R5K55H1",
+      "R3CD1",
+      "R4NP2",
+      "UATRACEMOD1",
+      "UADOUBLEMOD1",
+      "UARECV1",
+      "UAINERT1",
+      "UAEQUIV1",
+      "UANORMAL1",
+      "UAFROB1",
+      "UAFIXALL1",
+      "UACANCOST1",
+      "UATORUSCOST1",
+      "UAFROBCOST1",
+      "UA1CANCLASS1",
+      "UAFIXGEOM1",
+      "UAFINCOUNT1",
+      "UAAFFCAN1",
+      "UACANATOM1",
+      "UALANG1",
+      "UA4CHAR2",
+      "UASUBDEFORM1",
+      "UASCALARDIM1",
+      "UADECKWILD1",
+      "UASMITHFIX1",
+      "UANONLINEARCOST1",
+      "UAACYCLICRIG1",
+      "UAFIXDEFECT1",
+      "UAFULLAFF1",
+      "UAACYCLICGAL1",
+      "UAACYCLICATOM1",
+      "UAACYCLICMISS1",
+      "UAPARITYDEF1",
+      "UAACYCLICRECV1",
+      "UAFINATOM1",
+      "UATORUSSTABLE1",
+      "UATORUSCLASS1",
+      "UATORUSSYM1",
+      "UATORUSFIX1",
+      "UAPSEUDOSYM1",
+      "UAUNIVMON1",
+      "UAHOMOCOST1",
+      "UAFINPI1RIG1",
+      "UAQUOTRECV1",
+      "UAALTRECV1",
+      "UAHOMOSELF1",
+      "UAINFRASELF1",
+      "UANORMSELF1",
+      "UAKANLIFT1",
+      "UANORMCYL1",
+      "UAQUARTSELF1",
+      "UA1RIGIDCYL1",
+      "UATORUSDOM1",
+      "UAQUARTAUT1",
+      "UASYLOWDEF1",
+      "UAVERTRED1",
+      "UABLOCKRED1",
+      "UAHOLCOMM1",
+      "UAS3END1",
+      "UAS3VERS1",
+      "UAS3CAN1",
+      "UAFREEBASE1",
+      "UAISOCRIT1",
+      "UANORMGEN1",
+      "UAPRIMEPOWER1",
+      "UACYCIDEAL1",
+      "UAVERSLIMIT1",
+      "UAISOTWIST1",
+      "UACYCSEMI1",
+      "UAPUNCTVOL1",
+      "UAPPDEGREE1",
+      "UANORMAFF1",
+      "UASELFATOM1",
+      "UACYLDICH1",
+      "UACYLCAN1",
+      "UACYLDEF1"
+    ],
+    "checker": null,
+    "proof_type": "not-applicable",
+    "independent_replay": false,
+    "formal_verification": false,
+    "external_review": false,
+    "artifact_hash": null,
+    "software_lock": [],
+    "supersedes_notes": [],
+    "supersedes": [],
+    "closes_problems": [],
+    "narrows_problems": [],
+    "consumers": [],
+    "invalidates_assumptions": [],
+    "forbidden_attack_classes": [
+      {
+        "attack": "Seeking presentation-free descent by quotienting the existing quadratic-gauge compiler atlas",
+        "reason": "Generic primitive Tschirnhaus changes preserve the root algebra but change its intrinsic Fitting-boundary coordinates, so that atlas does not descend through the full presentation groupoid.",
+        "witnesses": [
+          "GTND1"
+        ]
+      },
+      {
+        "attack": "Trying to repair the quadratic-gauge boundary mismatch by arbitrary stable self-equivalence or identity stabilization",
+        "reason": "The all-rank exposed-intruder and coordinate-polynomial theorem force every stable marked self-equivalence to fix the physical target; vertical identity-factor gauge cannot move the offending boundary.",
+        "witnesses": [
+          "RQG5"
+        ]
+      },
+      {
+        "attack": "Promoting the clean marked receiver span to a section from unmarked finite-etale moduli",
+        "reason": "The receiver is represented, but no presentation-free section or global stable-moduli object is constructed.",
+        "witnesses": [
+          "QGDR1",
+          "GTND1"
+        ]
+      },
+      {
+        "attack": "Seeking presentation-free descent merely by trace-zero normalization of the existing quadratic-gauge compiler",
+        "reason": "After trace zero and root-free scaling, every fixed rank-N algebra still occurs densely among N-5 stable-class parameters for N>=6 in characteristic zero.",
+        "witnesses": [
+          "UATRACEMOD1"
+        ]
+      },
+      {
+        "attack": "Inferring canonical stable-map descent from achieving minimal universal target dimension by double trace normalization",
+        "reason": "Each realizable fixed algebra still occurs densely among N-6 stable-class parameters of the doubly normalized compiler for N>=7.",
+        "witnesses": [
+          "UADOUBLEMOD1"
+        ]
+      },
+      {
+        "attack": "Seeking a marked natural section by adding decorations or kernel gauge to a receiver which still retains a good primitive generator line",
+        "reason": "The full receiver has inertia image of order at most two on the algebra, while a section over BS_N must induce the full S_N. Composition excludes every enhancement admitting a map to that receiver.",
+        "witnesses": [
+          "UAINERT1"
+        ]
+      },
+      {
+        "attack": "Building a natural marked linear bundle lift on the permutation bundle alone",
+        "reason": "Its full-group fixed space is one-dimensional, whose characteristic-zero Keller restriction is an automorphism; the required natural N-point fibre has no full-group-fixed point.",
+        "witnesses": [
+          "UAEQUIV1"
+        ]
+      },
+      {
+        "attack": "Seeking a natural marked S_N realization in fewer than N+1 linear ambient coordinates, in any characteristic",
+        "reason": "The natural fibre orbit costs N-1 directions beyond the full-group fixed space, which itself needs dimension at least two for an empty fixed fibre.",
+        "witnesses": [
+          "UACANCOST1"
+        ]
+      },
+      {
+        "attack": "Seeking a dimension-N+1 marked linear symmetric realization in characteristic zero while retaining a nontrivial commuting linear torus",
+        "reason": "The torus either makes the fixed-plane restriction invertible or forces the moving component linear; both contradict the required natural fibre.",
+        "witnesses": [
+          "UATORUSCOST1"
+        ]
+      },
+      {
+        "attack": "Seeking absolute atomicity for a canonical marked affine-line realization over B_AGL1(F_q) in composite prime-power degree",
+        "reason": "Its split map is invariant under a regular elementary abelian translation group and factors through any proper order-p translation subgroup.",
+        "witnesses": [
+          "UAFROBCOST1"
+        ]
+      },
+      {
+        "attack": "Seeking a canonical marked affine-line realization outside the classified prime-power translation groups with cyclic scalar complement",
+        "reason": "The actual whole marked fibre is a single scalar orbit after translation quotient; constant derivative forces that orbit to have size one. The only natural symmetric cases are S2 in characteristic two and S3 in characteristic three.",
+        "witnesses": [
+          "UA1CANCLASS1"
+        ]
+      },
+      {
+        "attack": "Seeking a characteristic-zero canonical marked plane construction, or a natural S_N three-space construction for N>=3 with both finite actions tame",
+        "reason": "Published finite-action linearization transfers the fixed-space and marked ambient lower bounds; a nonlinear polynomial expression for an action does not avoid linearizability.",
+        "witnesses": [
+          "UAFIXGEOM1"
+        ]
+      },
+      {
+        "attack": "Using the published nonlinearizable S3 action on A4 to realize the natural cubic fibre on both sides, or against a linear action, without changing the fixed-line obstruction",
+        "reason": "Its entire fixed scheme is A1 and the equivariant Keller restriction is surjective. Adding moving representation directions, even ones that linearize the action, leaves that fixed scheme unchanged.",
+        "witnesses": [
+          "UAFIXGEOM1"
+        ]
+      },
+      {
+        "attack": "Seeking high-rank canonical affine S_N source bundles below dimension N by dropping the equivariant origin",
+        "reason": "For N>=5 a two-block stabilizer still needs at least two fixed directions, forcing dimension at least N, or N+1 when the rank is invertible.",
+        "witnesses": [
+          "UAAFFCAN1"
+        ]
+      },
+      {
+        "attack": "Claiming non-normal generic monodromy or failure of absolute stable atomicity for a full-degree natural marked S_N construction outside the rank-four characteristic-two exception",
+        "reason": "The marked target lies in an invariant finite chart, so full label symmetry normalizes monodromy; its normal-subgroup classification is primitive outside that exception.",
+        "witnesses": [
+          "UACANATOM1"
+        ]
+      },
+      {
+        "attack": "Seeking absolute atomicity for a canonical marked affine-plane quartic realization in characteristic two",
+        "reason": "The source translation kernel is V4, the target kills V4, and every equivariant polynomial map factors through the two quadratic translation quotients.",
+        "witnesses": [
+          "UA4CHAR2"
+        ]
+      },
+      {
+        "attack": "Seeking a characteristic-zero canonical natural S_N three-space construction for N>=3 by replacing tame actions with genuinely nonlinearizable actions",
+        "reason": "Faithful target tangent symmetry and tame Smith acyclic fixed curves exclude the whole dimension-three category. The proof does not require linearizability or equality of marked and generic degrees.",
+        "witnesses": [
+          "UANONLINEARCOST1"
+        ]
+      },
+      {
+        "attack": "Hiding a faithful finite symmetry group with trivial normal p-core in the target action or its first jet by using nonlinear polynomial actions",
+        "reason": "Etale deck freeness and tame Smith fixed points make the target kernel a p-group; formal first-jet rigidity confines the full tangent kernel to O_p(G). For high-rank symmetric groups it is trivial in every characteristic.",
+        "witnesses": [
+          "UADECKWILD1"
+        ]
+      },
+      {
+        "attack": "Turning a dimension-minimizing characteristic-zero fixed universal map into a canonical natural symmetric lift in the same dimension by choosing new nonlinear actions",
+        "reason": "For every N>=3 the retained fixed universal atomic upper bounds lie strictly below the arbitrary-action canonical lower bound c(N). The obstruction uses a fixed marked target and the complete natural N-point fibre; it does not forbid unrelated symmetry or noncanonical target choices.",
+        "witnesses": [
+          "UANONLINEARCOST1"
+        ]
+      },
+      {
+        "attack": "Making a characteristic-zero full-degree canonical transitive lift by new polynomial actions or arbitrary identity stabilization",
+        "reason": "Every such rank-N fibre requires generic degree at least N+2 in every dimension; identity stabilization and polynomial left-right equivalence preserve the degree-N obstruction.",
+        "witnesses": [
+          "UAFIXDEFECT1"
+        ]
+      },
+      {
+        "attack": "Repairing the canonical transitive obstruction with only one additional generic sheet",
+        "reason": "The derangement fixed restriction would be birational etale between acyclic varieties and hence an isomorphism, contradicting its empty marked fibre.",
+        "witnesses": [
+          "UAACYCLICRIG1",
+          "UAFIXDEFECT1"
+        ]
+      },
+      {
+        "attack": "Seeking full-degree affine natural symmetric models outside the three modular exceptions, or retaining a source origin",
+        "reason": "A tame cyclic derangement and the fixed-locus budget exclude all other affine symmetric cases. Any source full-group fixed point contradicts full-degree transitivity in every characteristic.",
+        "witnesses": [
+          "UAFULLAFF1"
+        ]
+      },
+      {
+        "attack": "Inferring an empty fibre from nonproperness alone, or using the undeformed pseudo-plane sample without checking its image",
+        "reason": "The undeformed sample is surjective. Published shears do supply actual missing fibres, but only the complete image calculation certifies them; they still do not construct whole affine-space canonical lifts.",
+        "witnesses": [
+          "UAACYCLICRIG1",
+          "UAACYCLICMISS1"
+        ]
+      },
+      {
+        "attack": "Seeking characteristic-zero generic degree N+2 with even-rank canonical symmetric actions, or with affine canonical transitive actions in any rank",
+        "reason": "The fixed restriction cannot have degree one or two: mod-2 acyclicity, or an affine target, excludes its quadratic finite etale normalization. The generic surplus is at least three.",
+        "witnesses": [
+          "UAACYCLICGAL1",
+          "UAPARITYDEF1"
+        ]
+      },
+      {
+        "attack": "Excluding all abstract acyclic missing-fibre surface maps by acyclicity or by the surjectivity of the undeformed example",
+        "reason": "Published pseudo-plane shears have explicitly classified nonempty finite omission sets, attaining the sharp quadratic or cubic acyclic thresholds.",
+        "witnesses": [
+          "UAACYCLICMISS1"
+        ]
+      },
+      {
+        "attack": "Promoting a pseudo-plane missing-fibre or atomic self-map to a whole affine-space canonical construction by identity stabilization",
+        "reason": "Its geometric fundamental group C_k persists under stabilization. Actual fixed-locus embedding, simultaneous subgroup compatibility and effective gluing are additional requirements.",
+        "witnesses": [
+          "UAACYCLICMISS1"
+        ]
+      },
+      {
+        "attack": "Applying prime-degree acyclic atomicity while permitting arbitrary different intermediate varieties",
+        "reason": "The theorem is for regular self-maps of the same stabilized acyclic variety. The examples already factor through another variety by a non-isomorphic open embedding followed by a finite cover.",
+        "witnesses": [
+          "UAACYCLICATOM1",
+          "UAACYCLICMISS1"
+        ]
+      },
+      {
+        "attack": "Applying the affine-space canonical no-go theorem to a merely rationally acyclic ambient variety, or claiming that no characteristic-zero cyclic receiver exists in any category",
+        "reason": "The explicit canonical cyclic receiver on surface forms has full marked degree and actual polynomial symmetries. Its torsion topology makes its fixed scheme disconnected, so it fails the precise Smith hypotheses used for whole affine spaces.",
+        "witnesses": [
+          "UAACYCLICRECV1",
+          "UAFIXDEFECT1"
+        ]
+      },
+      {
+        "attack": "Turning the canonical cyclic surface receiver into an affine-space Keller map merely by taking its coarse quotient or stabilizing that quotient",
+        "reason": "The exact quotient Jacobian k*(1-epsilon)*(z0+s*Q(s))^(k-1) is nonconstant for every shear Q. It remains nonconstant under identity stabilization and polynomial left-right equivalence.",
+        "witnesses": [
+          "UAACYCLICRECV1"
+        ]
+      },
+      {
+        "attack": "Seeking natural S_N for N>=5 in a torus receiver by adding torus coordinates or affine identity coordinates",
+        "reason": "All torus maps are finite isogenies with abelian regular geometric monodromy, which natural S_N cannot normalize at those ranks. Generic degree and monodromy persist under identity stabilization.",
+        "witnesses": [
+          "UATORUSCLASS1",
+          "UATORUSSYM1"
+        ]
+      },
+      {
+        "attack": "Promoting a canonical cubic or quartic torus family to one fixed universal torus map by choosing fieldwise source origins",
+        "reason": "The target torus varies with discriminant or cubic resolvent. Those invariants are frozen for any fixed torus cover; unit lattices prevent hiding the torus-form difference by affine stabilization.",
+        "witnesses": [
+          "UATORUSFIX1",
+          "UATORUSSTABLE1"
+        ]
+      },
+      {
+        "attack": "Requiring the normalized abelian regular group to lie inside the prescribed transitive label group",
+        "reason": "The correct condition is normalization in the full permutation group. Regular degree-six S3 normalizes C6 without containing it.",
+        "witnesses": [
+          "UATORUSCLASS1"
+        ]
+      },
+      {
+        "attack": "Using prime finite degree to claim atomicity through arbitrary nonnormal affine intermediates",
+        "reason": "The square map on Gm factors through an explicit nonnormal nodal curve by two non-isomorphisms. Normality is necessary for finite birational factors to be isomorphisms.",
+        "witnesses": [
+          "UAFINATOM1"
+        ]
+      },
+      {
+        "attack": "Extending the cyclic pseudo-plane receiver to natural S_N on the same surface or a projection-preserving stabilization",
+        "reason": "Its finite automorphism groups are cyclic, so the faithful natural symmetric label action cannot occur for N>=3. Cubic stabilization must mix the surface projection.",
+        "witnesses": [
+          "UAPSEUDOSYM1"
+        ]
+      },
+      {
+        "attack": "Seeking a full-degree natural symmetric lift of a stabilized cyclic-monodromy map in rank N>=4",
+        "reason": "Full fibre size supplies an invariant finite chart and forces the natural S_N label action to normalize cyclic regular C_N, which is impossible.",
+        "witnesses": [
+          "UAPSEUDOSYM1"
+        ]
+      },
+      {
+        "attack": "Applying the finite torus-cylinder structure theorem to nonfinite Keller maps or reading a composite base-field stable atom as absolutely atomic",
+        "reason": "The structural factor theorem uses global finiteness. The quadratic restriction-of-scalars example is stably atomic over its base but decomposes after extending constants.",
+        "witnesses": [
+          "UATORUSSTABLE1"
+        ]
+      },
+      {
+        "attack": "Using full-degree universal-monodromy automatic atomicity for smaller marked boundary fibres",
+        "reason": "UAUNIVMON1 requires marked rank equal to generic degree. A degree-M map realizing rank-N fibres with M>N needs a separate degree-M monodromy and atomicity proof.",
+        "witnesses": [
+          "UAUNIVMON1"
+        ]
+      },
+      {
+        "attack": "Seeking finite high-rank canonical homogeneous receivers with connected isotropy or too few components",
+        "reason": "Central fundamental-group monodromy forces N!/2 geometric components for canonical N>=5, N! for fixed universal N>=3 and12 for an atomic canonical quartic. These are component costs, not dimension costs.",
+        "witnesses": [
+          "UAHOMOCOST1",
+          "UAALTRECV1"
+        ]
+      },
+      {
+        "attack": "Making the all-rank special-linear quotient pair a self-map merely by coordinates or identity variables",
+        "reason": "Its source and target have different finite geometric fundamental-group orders. The distinction persists under affine identity stabilization in characteristic zero; each such cylinder has only degree-one finite etale endomorphisms.",
+        "witnesses": [
+          "UAFINPI1RIG1",
+          "UAQUOTRECV1"
+        ]
+      },
+      {
+        "attack": "Turning one alternating canonical receiver into a fixed symmetric-universal cover",
+        "reason": "Every fibre of a fixed member has its one constant quadratic sign-resolvent torsor. Full-degree symmetric universality would force geometric S_N, whereas this family has geometric A_N.",
+        "witnesses": [
+          "UAALTRECV1",
+          "UAUNIVMON1"
+        ]
+      },
+      {
+        "attack": "Applying a prime-to-p homogeneous covering theorem using only prime-to-p fibre degree",
+        "reason": "The published result requires prime-to-p Galois-cover group order. The original degree can be prime to p while the Galois closure order is divisible by p.",
+        "witnesses": [
+          "UAHOMOCOST1"
+        ]
+      },
+      {
+        "attack": "Seeking finite symmetric-universal self-maps of homogeneous geometry in rank at least three",
+        "reason": "The geometric commutator subgroup is finite by Schur, so self-covers have abelian regular monodromy; full-degree universality requires S_N. This does not apply to different source/target pairs or nonfinite maps.",
+        "witnesses": [
+          "UAHOMOSELF1"
+        ]
+      },
+      {
+        "attack": "Seeking finite high-rank symmetric self-receivers on geometric torus quotients or their identity cylinders",
+        "reason": "The intrinsic translation lattice gives an abelian regular normal monodromy subgroup. Natural S_N and canonical A_N/S_N monodromy are excluded for N>=5; the exact attainable symmetric ranks are2,3,4.",
+        "witnesses": [
+          "UAINFRASELF1",
+          "UAQUARTSELF1"
+        ]
+      },
+      {
+        "attack": "Treating volume preservation as the remaining obstruction after a smooth etale receiver is constructed",
+        "reason": "The canonical-line functor supplies a canonical volume-preserving lift in one line with unchanged degree and full marked fibre. It preserves the unit and pi1 barriers to whole affine geometry.",
+        "witnesses": [
+          "UAKANLIFT1"
+        ]
+      },
+      {
+        "attack": "Making the fixed universal norm-surface cubic canonical by affine identity stabilization or finite coefficient coupling",
+        "reason": "All characteristic-zero finite cylinder maps reduce to classified surface maps. Fixed cubic universality uses the fibre exponent m3, while canonical cubic symmetry needs base exponent d3 and mu3 in the base. These properties cannot belong to the same map.",
+        "witnesses": [
+          "UANORMCYL1"
+        ]
+      },
+      {
+        "attack": "Inferring a canonical S4 action or an affine-space Keller map from the fixed universally quartic quotient self-map",
+        "reason": "The fixed quartic W has metabelian geometric automorphism group and cannot contain faithful S4. Every finite coupled affine cylinder reduces to a base map and inherits that obstruction. Fieldwise torsor points prove universality without canonical labelled points.",
+        "witnesses": [
+          "UAQUARTSELF1",
+          "UAQUARTAUT1",
+          "UA1RIGIDCYL1"
+        ]
+      },
+      {
+        "attack": "Repairing the constructed quartic W canonical action by arbitrary finite affine coefficient coupling",
+        "reason": "A1 rigidity removes base mixing and finite vertical coupling is an automorphism; the metabelian base cannot act faithfully as S4.",
+        "witnesses": [
+          "UA1RIGIDCYL1",
+          "UAQUARTAUT1"
+        ]
+      },
+      {
+        "attack": "Treating a rigid metabelian torus-quotient base as a shortcut around the original affine canonical Keller problem",
+        "reason": "The transitive symmetric second commutator places the whole marked fibre in one invariant affine fibre, producing an actual canonical polynomial Keller datum there.",
+        "witnesses": [
+          "UAVERTRED1"
+        ]
+      },
+      {
+        "attack": "Requiring a cyclic prime-power derangement or CFSG to derive the arbitrary-transitive affine degree bound",
+        "reason": "A Sylow ell-subgroup for ell dividing the marked rank has no common fixed label, and whole-subgroup Smith theory is already available.",
+        "witnesses": [
+          "UASYLOWDEF1"
+        ]
+      },
+      {
+        "attack": "Inferring strong atomicity from prime determinant or same-variety stable self-atomicity in the S3 quotient family",
+        "reason": "The determinant-three degree-nine map is absolutely stably self-atomic but factors through a different smooth quotient by two degree-three maps.",
+        "witnesses": [
+          "UAS3END1"
+        ]
+      },
+      {
+        "attack": "Repairing the constructed quartic by repeating standard S3 torus modules until the source automorphism group contains S4",
+        "reason": "Z_3 contains faithful S4, but the unique sign direction with a free order-three translation still forces every target 3-cycle to fix its torus lift; the source fibre action then collapses. All m and finite coupled cylinders are excluded.",
+        "witnesses": [
+          "UAS3CAN1",
+          "UAHOLCOMM1"
+        ]
+      },
+      {
+        "attack": "Promoting the degree-n-squared norm cover to universality for arbitrary etale algebras of that rank, or ignoring the factor3 torsor obstruction",
+        "reason": "The precise positive statement concerns specified ((Z/n)^2 semidirect S3) torsors and their associated algebras, with mu_n for the constant-group formulation. A cubic nonnorm supplies an obstructed torsor whenever3 divides n.",
+        "witnesses": [
+          "UAS3VERS1"
+        ]
+      },
+      {
+        "attack": "Building another special free torus base for a finite tame group before applying the general induced-character construction",
+        "reason": "UAFREEBASE1 supplies a globally free field-versal torus base for every finite group in the stated characteristics, with explicit restriction-of-scalars dimensions. Smaller dimension remains a separate legitimate target.",
+        "witnesses": [
+          "UAFREEBASE1"
+        ]
+      },
+      {
+        "attack": "Promoting fieldwise fixed-cover universality to realization of every finite-etale algebra family over all smooth affine schemes by a fixed quasi-compact parameter scheme",
+        "reason": "The published unipotence criterion excludes every nontrivial finite group in characteristic zero. A fixed rank-N cover has an S_N frame torsor and a quantitative missed smooth affine base.",
+        "witnesses": [
+          "UAVERSLIMIT1"
+        ]
+      },
+      {
+        "attack": "Using identity stabilization or canonical covolume-line lifting to enlarge which scheme torsors a fixed cover realizes",
+        "reason": "Both are pullbacks along maps with sections, so the image in H1 for every test scheme is exactly unchanged.",
+        "witnesses": [
+          "UAVERSLIMIT1",
+          "UAKANLIFT1"
+        ]
+      },
+      {
+        "attack": "Inferring general dense-open versality from very versal restrictions to every Sylow subgroup",
+        "reason": "Scavia2026 gives a faithful degree-two Del Pezzo counterexample. This statement is about versality, without identifying it with weak field point-existence.",
+        "witnesses": [
+          "UAVERSLIMIT1"
+        ]
+      },
+      {
+        "attack": "Inferring a strong cyclotomic self-atom from an irreducible element or from a nonprincipal prime residue field alone",
+        "reason": "Strong atomicity requires a maximal principal ideal in the fixed cyclotomic lattice. Irreducibility alone controls same-variety self-factorization, and a nonprincipal prime yields a different non-stably-identifiable quotient geometry.",
+        "witnesses": [
+          "UACYCIDEAL1"
+        ]
+      },
+      {
+        "attack": "Treating a nonprincipal cyclotomic prime as an obstruction to every possible quotient self-cover of that degree",
+        "reason": "For a changed ideal lattice and holonomy automorphism the exact equation is [P]=(sigma-1)[I]. At prime conductor sigma-1 is bijective, so the fixed-O obstruction can be bypassed. The explicit degree2048 model uses a genuinely nonprincipal I.",
+        "witnesses": [
+          "UACYCSEMI1",
+          "UAISOTWIST1"
+        ]
+      },
+      {
+        "attack": "Reopening existence of a strong atomic torus-quotient self-cover solely because the degree is an odd binary prime power",
+        "reason": "The degree spectrum is now exact in characteristic zero: every prime power occurs, with volume and specified-group field versality. Prescribing a different monodromy or a dimension minimum remains a separate target.",
+        "witnesses": [
+          "UAPPDEGREE1"
+        ]
+      },
+      {
+        "attack": "Puncturing a canonical-line lift while assuming every canonically fixed marked target survives",
+        "reason": "The nonzero covolume is fixed under the canonical action exactly when the tangent determinant character is trivial; zero-section and punctured lifts have different marked boundaries. This does not exclude other actions on an enlarged receiver.",
+        "witnesses": [
+          "UAPUNCTVOL1"
+        ]
+      },
+      {
+        "attack": "Replacing the full cyclotomic free base by its smallest field or one split coordinate when a general holonomy automorphism is required",
+        "reason": "That smaller base need not carry the required automorphism. The full etale cyclotomic algebra or a cyclic product of relabelled free bases supplies it explicitly.",
+        "witnesses": [
+          "UAISOTWIST1"
+        ]
+      },
+      {
+        "attack": "Use a nonfinite normalization factor as evidence of normal-affine atomicity.",
+        "reason": "Zariski Main itself supplies a nontrivial normal affine intermediate for every nonfinite etale map of generic degree greater than one; self-map atomicity is the appropriate weaker category.",
+        "witnesses": [
+          "UANORMAFF1"
+        ]
+      },
+      {
+        "attack": "Move degree into both torus-quotient base and affine fibre while retaining self-atomicity.",
+        "reason": "The intrinsic base/vertical decomposition is already a factorization into nontrivial self-maps when both degrees exceed one.",
+        "witnesses": [
+          "UACYLDICH1"
+        ]
+      },
+      {
+        "attack": "Evade atomic canonical affine-fibre reduction merely by enlarging the automorphism group of the torus-quotient base.",
+        "reason": "Atomicity forces base degree one on every such nonfinite cylinder, independently of metabelianity; the complete marked datum restricts to a genuine affine fibre.",
+        "witnesses": [
+          "UACYLCAN1"
+        ]
+      },
+      {
+        "attack": "Infer canonical symmetric gluing or strong normal-affine atomicity from a dilation family.",
+        "reason": "The deformation supplies no missing marked action or trivialization of affine forms, and it remains nonfinite with a normal-affine factorization.",
+        "witnesses": [
+          "UACYLDEF1",
+          "UANORMAFF1"
+        ]
+      }
+    ],
+    "replaced_by": [],
+    "priority": "parked",
+    "programme_status": "archived"
+  },
+  "work_next_step_before": "The finite strong-atomic prime-power spectrum is closed. For nonfinite atomic attempts, name self-map atomicity explicitly: the larger normal-affine category forces finiteness. On any geometric torus-quotient cylinder UACYLDICH1 forces base degree one and UACYLCAN1 returns the complete canonical marked problem to an actual affine fibre, without metabelian assumptions. Relative restriction glues a pair of affine-space forms, so the next real gates are compatible marked actions, affine-form trivialization and source-target identification, whole-affine landing and effective simultaneous fixed-locus gluing, with separate generic monodromy/atomicity for a smaller marked boundary rank. Dilation families prove nonconstant atomic coefficient variation exists but supply no missing symmetry or affine-space identification. Different A1-rich geometry, the pseudo-plane mixing case and modular affine ranks remain open. Fixed-fourfold nonfinite self-atomic degree existence is also closed in every N>=3; retain canonical symmetry and whole-affine landing as the actual open gates.",
+  "work_done_when_before": "An exact descent theorem with effective gluing, or a new obstruction covering the proposed receiver.",
+  "reason": "The prior unqualified non-atomic polynomial-bundle existence gate is now constructed. Current open scope distinguishes it from atomic realization, fixed trivial-bundle demands and degree/dimension improvements."
+}

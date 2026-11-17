@@ -1,0 +1,97 @@
+{
+  "METHOD-JOINT-QUADRATIC-COVERS-AND-SYMMETRIC-THREE-WEIGHT-SAFETY-20261116": {
+    "id": "METHOD-JOINT-QUADRATIC-COVERS-AND-SYMMETRIC-THREE-WEIGHT-SAFETY-20261116",
+    "area": "geometry",
+    "programme_status": "archived",
+    "title": "Compactify the joint neutral pencil to close dependent symmetric three-weight phases,then lift actual nilpotence over all rings",
+    "when": "Full mixed exceptional phases with support contained{-n,0,n},arbitrary neutral term and opposite charged functions;all-H tests and coefficient-ring safety.",
+    "use": "ENTIRE SYMMETRIC THREE-WEIGHT SECTOR NOW CLOSED IN ALL DEGREES: on BOTH exceptional quotients,P=p+U+V with weights0,n,-n,n!=0,arbitrary neutral p and arbitrary mixed degrees/right multiplicities. Over C, P EVENTUALLY PURE IFF p=0 AND UV=0; every surviving phase one-weight or zero and SAFE. EVERY polynomial recomposition classified: H(P) EVENTUALLY PURE IFF H=0 OR [UV=0,p=c constant,H(c)=0],all safe. No special Long relation between p and UV is assumed. Separate conic ab=q=UV,S=p+a+b has ALL EXACT UNWEIGHTED moments. Resolve JOINT map[1:p:d],d=p2-4q toP2,locally[F:A:B] with NO COMMON ZERO. Double coverY2=F(B-2SA+S2F); atF0 Aunit gives partialSJ=-2Aunit,elseBunit. Thus infinity branchSNC forEVERY finite S,includingcorners. Volume prefactor k+ceil(ordF/2) nonnegative becauseordF isMAXpole(p,d) andEVERY nonconstant neutral height has BOTH finite volume regularity and all-valuation half-pole estimate. Projective original-volume period theorem excludes all nonzero recompositions DIRECTLY. Over EVERY commutative C-algebra R, P EVENTUALLY PURE IFF p AND UV NILPOTENT,viaQbarfinitefieldresidueembedding plus literalnilpotentcoefficientlifting. Ifp^nu=0,(UV)^kappa=0,ALL original markersQ vanish for m>nu+2kappa-3+B_Q/abs(n). No Noetherian/reducedness/domain hypothesis onR,no universal nilpotence exponent. This ACTUALLY closes an affinely DEPENDENT three-weight class using exceptional geometry,not merelyneutralradical0. UNEQUALLY SPACED three-weight supports and shifted progressions with nonzero middle weight NOT closed; do NOT infer every failure has>=4weights. Otherlargersupports/mixedb/distinctHopfcomposites remain. Both FULL MZ cases remain OPEN at ENTIRE unweighted pure-locus corrected local order vanishing or actual invariant pure failure. External review is DEFERRED and NOT the next task.",
+    "avoid": "Assuming zero-neutral-radical alone lifts affinely dependent supports;resolving one height while leaving the second numerator basepoint;discarding infinity corners;reflecting composite purity;asserting all three-weight supports closed or >=4weights for every failure;copying field pure-locus equalities to nonreduced rings.",
+    "boundary": "Both FULL exceptional cases OPEN. Symmetric support{-n,0,n} CLOSED,ALL degrees/rings;unequal/other/shifted three-weight supports and larger supports remain. Field ALL-H law separate from ring P nilpotence law. Direct geometry and weight count,not machine proof or universal numerical nilpotence exponent.",
+    "reopen_when": "Do NOT requeue symmetric three-weight/neutral-term/Long recomposition searches. Use this necessary exclusion in ENTIRE exceptional purity=>corrected actual local orders0 or actual invariant pure failure. Unequal supports and larger supports require new arguments;review DEFERRED,NOT next task.",
+    "claims": [
+      "GHAARJOINTQUADRATIC20261116",
+      "GTHREEWEIGHTCENTRED20261116",
+      "GTHREEWEIGHTRINGSAFE20261116"
+    ],
+    "sources": [
+      "moments/vanishing/JOINT_QUADRATIC_COVERS_AND_SYMMETRIC_THREE_WEIGHT_SAFETY.md",
+      "moments/vanishing/haar_three_weight_source_audit.json"
+    ],
+    "implementation": [
+      "moments/vanishing/verify_haar_three_weight.py"
+    ],
+    "keywords": [
+      "Mathieu",
+      "symmetric three weights",
+      "joint quadratic cover",
+      "dependent supports",
+      "nilpotence",
+      "all coefficient rings",
+      "full marker cutoff"
+    ],
+    "reviewed_claims": {
+      "GHAARJOINTQUADRATIC20261116": "7e6624ecd53135af",
+      "GTHREEWEIGHTCENTRED20261116": "c7b79d1111911093",
+      "GTHREEWEIGHTRINGSAFE20261116": "85122e4f6ef850a3"
+    }
+  },
+  "METHOD-ORBIT-WEIGHT-LIFTING-20261116": {
+    "id": "METHOD-ORBIT-WEIGHT-LIFTING-20261116",
+    "area": "geometry",
+    "programme_status": "archived",
+    "title": "Use actual orbit closure and exact weight rays on full mixed phases;keep complete exceptional MZ as the finish line",
+    "when": "A full mixed exceptional pure phase has opposite lower weights,its orbit type is being used,or a torus-fixed result is being lifted to original marked periods.",
+    "use": "Curve selection plus2x2Smith and completeT-fixed closure prove that nonclosed eventual-pure FULL orbits are exactly the leftnullcone,with all-original-marker cutoff2m>degQ. Non-null pure orbits are closed finite-cyclic. Exact primitive relation rays lift MZ fromA0 for all affinely independent torus supports,in every rank and overQ-algebras. Hence ALL full two-weight sectors are closed overANYC-algebra,including arbitrary mixed components and nilpotents. Every remaining failure is automorphically closed finite-cyclic and has>=3weights for everylefttorus.",
+    "avoid": "Equating closed orbit or two-sided support with failure,identifying a moving Smith arc limit with the constant-factor cocharacter limit,discarding actual original markers,or importing the six-variable prime marker into the exceptional Haar algebra. Three-weight interval failure blocks a general A0-only lifting inference.",
+    "boundary": "Both COMPLETE exceptional MZ decisions remainOPEN on mixed image-interior phases with strict leading root and closed finite-cyclic orbits underEVERY algebraic automorphism. Multiple balanced monomials can cancel. A universal automorphism-to-nullcone theorem is sufficient but OPEN,not necessary for MZ. Existing safe Haar-shears already have closed original orbits. Universal proofs remain internal,with no assurance promotion. External review is DEFERRED until a complete big theorem;it is not the next research task. NEW GLOBAL SOURCE/EXTENSION THEOREM:fullHaar sourceH/tH=R givesuniqueformalstate andexactpolynomial-stateideal,normalized1required. ActualpureperiodfailureisindecomposableandNON SPLIT atparameter0,witht-bijective torsionfreequotient. UnlocalizedtopGauss-Maninsemisimplicity orgenericH2=0 sufficesforalloriginalmarkers;neitherhypothesisisprovedforallremainingphases. LocalizedsemisimplicityisNOTenough. FullfailuremusthavegenericH2nonzeroandnonsplitactualunitextension. BOTH completeMZcasesremainOPEN;closure-firstpriorityanddeferredexternalreviewretained. SUBSEQUENT SYMMETRIC THREE-WEIGHT CLOSURE: ENTIRE SYMMETRIC THREE-WEIGHT SECTOR NOW CLOSED IN ALL DEGREES: on BOTH exceptional quotients,P=p+U+V with weights0,n,-n,n!=0,arbitrary neutral p and arbitrary mixed degrees/right multiplicities. Over C, P EVENTUALLY PURE IFF p=0 AND UV=0; every surviving phase one-weight or zero and SAFE. EVERY polynomial recomposition classified: H(P) EVENTUALLY PURE IFF H=0 OR [UV=0,p=c constant,H(c)=0],all safe. No special Long relation between p and UV is assumed. Separate conic ab=q=UV,S=p+a+b has ALL EXACT UNWEIGHTED moments. Resolve JOINT map[1:p:d],d=p2-4q toP2,locally[F:A:B] with NO COMMON ZERO. Double coverY2=F(B-2SA+S2F); atF0 Aunit gives partialSJ=-2Aunit,elseBunit. Thus infinity branchSNC forEVERY finite S,includingcorners. Volume prefactor k+ceil(ordF/2) nonnegative becauseordF isMAXpole(p,d) andEVERY nonconstant neutral height has BOTH finite volume regularity and all-valuation half-pole estimate. Projective original-volume period theorem excludes all nonzero recompositions DIRECTLY. Over EVERY commutative C-algebra R, P EVENTUALLY PURE IFF p AND UV NILPOTENT,viaQbarfinitefieldresidueembedding plus literalnilpotentcoefficientlifting. Ifp^nu=0,(UV)^kappa=0,ALL original markersQ vanish for m>nu+2kappa-3+B_Q/abs(n). No Noetherian/reducedness/domain hypothesis onR,no universal nilpotence exponent. This ACTUALLY closes an affinely DEPENDENT three-weight class using exceptional geometry,not merelyneutralradical0. UNEQUALLY SPACED three-weight supports and shifted progressions with nonzero middle weight NOT closed; do NOT infer every failure has>=4weights. Otherlargersupports/mixedb/distinctHopfcomposites remain. Both FULL MZ cases remain OPEN at ENTIRE unweighted pure-locus corrected local order vanishing or actual invariant pure failure. External review is DEFERRED and NOT the next task.",
+    "reopen_when": "Close the COMPLETE all-phase/all-original-marker theorem by excludingorrealizingthe actualnonsplitunitextension for theremainingexceptionalgeometry. ProveglobalunlocalizedsemisimplicityoracyclicgenericH2onlyiftrueforALLphases;theyare sufficientroutes,notassumptionsoranequivalentnewgoal. Retainpreviousmixed,image-interior,automorphicclosed/finitecyclic,strictleadingand>=3weightgates. Externalreviewisdeferred;internalproofscrutinycontinues,no growingcampaign. CURRENT:ENTIRE{-n,0,n} sector nowCLOSED overALL C-algebras and fieldALL-H. Zero-neutral-radical-alone abstract countercontrol retained. Unequal/other/shifted threeweights and larger supports remain;doNOT claim allfailures>=4weights.",
+    "claims": [
+      "GNONCLOSEDPURESAFE20261116",
+      "GSIMPLEXWEIGHTLIFT20261116",
+      "GTWOWEIGHTFULLSAFE20261116",
+      "GHAARTOPSTATE20261116",
+      "GHAARUNITEXT20261116",
+      "GHAARSEMISIMPLE20261116",
+      "GHAARFIBREACYCLIC20261116",
+      "GHAARJOINTQUADRATIC20261116",
+      "GTHREEWEIGHTCENTRED20261116",
+      "GTHREEWEIGHTRINGSAFE20261116"
+    ],
+    "sources": [
+      "moments/vanishing/NONCLOSED_ORBITS_AND_EXACT_WEIGHT_LIFTING.md",
+      "moments/vanishing/orbit_weight_lifting_source_audit.json",
+      "moments/vanishing/INTRINSIC_HAAR_STATES_AND_NONSPLIT_PERIOD_EXTENSIONS.md",
+      "moments/vanishing/haar_state_extension_source_audit.json",
+      "moments/vanishing/JOINT_QUADRATIC_COVERS_AND_SYMMETRIC_THREE_WEIGHT_SAFETY.md",
+      "moments/vanishing/haar_three_weight_source_audit.json"
+    ],
+    "implementation": [
+      "moments/vanishing/verify_orbit_weight_lifting.py"
+    ],
+    "keywords": [
+      "Mathieu",
+      "closure first",
+      "nonclosed orbit",
+      "Smith",
+      "mixed degrees",
+      "affinely independent weights",
+      "single balanced ray",
+      "all original markers",
+      "two weights",
+      "automorphic stability"
+    ],
+    "reviewed_claims": {
+      "GNONCLOSEDPURESAFE20261116": "4db6845a50355a60",
+      "GSIMPLEXWEIGHTLIFT20261116": "a304031fb010f06d",
+      "GTWOWEIGHTFULLSAFE20261116": "75604a2a00f818d4",
+      "GHAARTOPSTATE20261116": "d960ca7f33258bd7",
+      "GHAARUNITEXT20261116": "4f120ecdf2f4e538",
+      "GHAARSEMISIMPLE20261116": "6a00689ead5bd87f",
+      "GHAARFIBREACYCLIC20261116": "4564ca29bba2428e",
+      "GHAARJOINTQUADRATIC20261116": "7e6624ecd53135af",
+      "GTHREEWEIGHTCENTRED20261116": "c7b79d1111911093",
+      "GTHREEWEIGHTRINGSAFE20261116": "85122e4f6ef850a3"
+    }
+  }
+}

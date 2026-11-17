@@ -1,0 +1,93 @@
+{
+  "scoped_validation": "PASS",
+  "checks": [
+    "HC4MYHA0 schema, current hash, source locks, dependencies and assurance",
+    "HC4MYHA1 schema, current hash, source locks, dependencies and assurance",
+    "HC4MYHA2 schema, current hash, source locks, dependencies and assurance",
+    "HC4MYHA3 schema, current hash, source locks, dependencies and assurance",
+    "general cylindrical criterion and mixed-dual closure have explicit separate inputs and endpoint dependencies",
+    "parent retires all old-r-independent y graphs and keeps the precise outside classes and distinct endpoints",
+    "twenty-one new/updated method records have retained evidence and current claim-scope fingerprints",
+    "WORK-HC4-SCHUR retires the whole two-dual y chart and preserves the broad objective",
+    "WORK-HC4-RESIDUAL-AUDIT retires the whole two-dual y chart and preserves the broad objective",
+    "receipt-cylindrical-trace.json current proof/checker, retained primary and dependency byte pins",
+    "receipt-exceptional-fibre.json current proof/checker, retained primary and dependency byte pins",
+    "receipt-critical-components.json current proof/checker, retained primary and dependency byte pins",
+    "receipt-relative-critical.json current proof/checker, retained primary and dependency byte pins",
+    "receipt-relative-coordinate.json current proof/checker, retained primary and dependency byte pins",
+    "receipt-opposite-nonlinear.json current proof/checker, retained primary and dependency byte pins",
+    "exact degree import is additional Theorem6.9 from the already retained primary manuscript, not a new unpinned classification",
+    "current navigation exposes the two-dual y closure, precise frontier and retained intermediate proofs"
+  ],
+  "exact_replay_checks": {
+    "receipt-cylindrical-trace.json": 38,
+    "receipt-exceptional-fibre.json": 42,
+    "receipt-critical-components.json": 58,
+    "receipt-relative-critical.json": 39,
+    "receipt-relative-coordinate.json": 51,
+    "receipt-opposite-nonlinear.json": 43
+  },
+  "previous_goal_turn": "Progress: the exceptional-fibre theorem closed both positive-p base orientations. The current theorem extends the y orientation to every mixed p,q degree and removes critical-projection restrictions from the trace criterion.",
+  "new_claims": [
+    "HC4MYHA0",
+    "HC4MYHA1",
+    "HC4MYHA2",
+    "HC4MYHA3"
+  ],
+  "written_proof_coverage": [
+    "nonsingular plane polynomial normalization and generic irreducibility without rationality",
+    "general cylindrical exceptional trace including nonlinear trace equivalence and vertical critical components",
+    "whole Tang realization and exceptional coefficient differential",
+    "all degrees in P*(F^2-1)+Q*F and every actual A1 embedding alternative",
+    "two constant-a parallel values, zero-b vertical lines and every line/parabola intersection",
+    "entire fixed-base square suspension with explicit polynomial inverse",
+    "all mixed p,q dependence in y=R(x,p,q) and its exact base-only endpoint"
+  ],
+  "external_mathematical_inputs": [
+    "retained HCTANG2",
+    "retained HC4MYGR1 classical affine-component inputs",
+    "Abhyankar--Moh closed-line degree divisibility, retained Garcia Barroso--Ploski1208.0913v1 Theorem6.9"
+  ],
+  "new_primary_source_download_required": false,
+  "generic_rational_fibre_theorem_imported": false,
+  "generated_views_refreshed": [
+    "index/core.md",
+    "index/hessian.md",
+    "index/README.md",
+    "index/documents.tsv",
+    "knowledge/work/core.md",
+    "knowledge/work/geometry.md",
+    "knowledge/work/hessian.md",
+    "STATUS.md"
+  ],
+  "full_registry_validation_failure": "KDSQ6: missing document consumer artifacts/generated-results/README.md",
+  "full_navigation_validation_passed": false,
+  "missing_artifacts_reconstructed": false,
+  "all_y_graphs_independent_of_old_r_closed": true,
+  "all_opposite_p_only_graphs_remain_closed": true,
+  "all_positive_dual_degree_graphs_asserted_unit_Hessian_free": false,
+  "remaining_frontier": [
+    "y graphs with genuine old-r dependence",
+    "opposite x graphs with q/r dependence",
+    "actual free-base/dual mixing and uncovered embeddings",
+    "base-only unit-ideal plane surjectivity and distinct nonlinear-p singleton-zero properness"
+  ],
+  "unit_ideal_plane_Keller_endpoint_resolved": false,
+  "singleton_zero_properness_resolved": false,
+  "unrestricted_HC4_or_JC2_resolved": false,
+  "original_goal_complete": false,
+  "final_checks": {
+    "python_compilation": "PASS",
+    "scoped_git_diff_whitespace": "PASS",
+    "new_proof_checker_and_import_whitespace": "PASS",
+    "render_navigation": "FAIL: KDSQ6: missing document consumer artifacts/generated-results/README.md",
+    "check_navigation": "FAIL: KDSQ6: missing document consumer artifacts/generated-results/README.md",
+    "research_check_require_partial_review": "Historical navigation output omitted during repository reorganization."
+  },
+  "all_degree_mixed_dual_closure_is_written_proof_not_finite_degree_inference": true,
+  "actual_closed_A1_embeddings_required_in_degree_theorem": true,
+  "parallel_direction_allows_both_constant_a_values": true,
+  "zero_b_vertical_lines_retained": true,
+  "no_generic_irreducibility_assumed_in_plane_G_argument": true,
+  "global_research_goal_remains_active": true
+}

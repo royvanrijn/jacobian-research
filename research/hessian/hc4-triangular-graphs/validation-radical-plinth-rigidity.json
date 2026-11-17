@@ -1,0 +1,104 @@
+{
+  "scoped_validation": "PASS",
+  "claims": [
+    "HC4MYKD0",
+    "HC4MYKD1",
+    "HC4MYKD2"
+  ],
+  "checks": [
+    "HC4MYKD0 schema,dependencies,immutable input presence and assurance",
+    "HC4MYKD1 schema,dependencies,immutable input presence and assurance",
+    "HC4MYKD2 schema,dependencies,immutable input presence and assurance",
+    "factorial-source presentation,integral homology recognition and exact native action equivalence keep their distinct hypotheses and open existence boundaries",
+    "prior recovery,plinth,normal-form and collective-action scopes remove the now-redundant recovery premises while retaining old replay bytes",
+    "101 sourced methods and all affected fingerprints use exact kernel/plinth as the remaining input and retire separate image/codimension certificates",
+    "both work actions target the two exact algebraic action properties and preserve independent E_N,endpoint and original embedding gates",
+    "68 exact controls bind universal slice/presentation algebra,normal orientation,primitive integral boundary blocks and the balanced Euler negative example",
+    "one checked transverse-purity import supplies primitive normal naturality;current cylinder literature is context and does not supply exact kernel/plinth data",
+    "proof and leading navigation display factorial closure,the full integral boundary map,the exact action equivalence and remaining native existence questions",
+    "generated navigation matches the latest authoritative ledger,methods and work data",
+    "original inversion,source-alignment,Keller-fibre and embedding tasks remain open with prior proved inputs retained"
+  ],
+  "scoped_check_groups": 12,
+  "exact_current_replay_checks": 68,
+  "algebraic_and_scope_controls": 41,
+  "new_proved_imports": 1,
+  "new_unproved_external_statements": 0,
+  "source_codimension_condition_is_automatic_from_factorial_kernel_coprimality": true,
+  "integral_H3_H4_detect_empty_and_multiple_reached_plinth_values_separately": true,
+  "acyclic_source_forces_one_reached_value_per_radical_plinth_line": true,
+  "exact_embedded_kernel_and_radical_plinth_alone_recover_simple_cotangent_frame": true,
+  "HC4_source_alignment_gate_reduced_to_two_algebraic_action_properties": true,
+  "an_individual_native_action_with_required_kernel_and_plinth_constructed": false,
+  "radical_of_plinth_alone_suffices": false,
+  "all_LND_kernels_classified": false,
+  "arbitrary_acyclic_fourfolds_classified": false,
+  "K2_h1_source_equivalence_constructed": false,
+  "S_rho_normal_form_source_alignment_constructed": false,
+  "two_point_Keller_fibre_constructed_or_excluded": false,
+  "three_point_Keller_fibre_constructed_or_excluded": false,
+  "unit_ideal_endpoint_resolved": false,
+  "singleton_zero_endpoint_resolved": false,
+  "unrestricted_HC4_or_JC2_resolved": false,
+  "original_goal_complete": false,
+  "repository_checks": [
+    {
+      "name": "render-navigation",
+      "command": [
+        "make",
+        "render-navigation"
+      ],
+      "exit_code": 2,
+      "output": "make -C research PYTHON=\"/home/royvanrijn/src/jacobian-research/.venv/bin/python\" SYSTEM_PYTHON=\"python3\" \"render-navigation\"\nmake[1]: Entering directory '/home/royvanrijn/src/jacobian-research/research'\npython3 scripts/render_status.py\nTraceback (most recent call last):\n  File \"/home/royvanrijn/src/jacobian-research/research/scripts/render_status.py\", line 514, in <module>\n    main()\n  File \"/home/royvanrijn/src/jacobian-research/research/scripts/render_status.py\", line 503, in main\n    validate_index(index)\n  File \"/home/royvanrijn/src/jacobian-research/research/scripts/render_status.py\", line 360, in validate_index\n    assert consumer_path.is_file(), (\n           ^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: KDSQ6: missing document consumer artifacts/generated-results/README.md\nmake[1]: *** [Makefile:16: render-navigation] Error 1\nmake[1]: Leaving directory '/home/royvanrijn/src/jacobian-research/research'\nmake: *** [Makefile:17: render-navigation] Error 2\n"
+    },
+    {
+      "name": "check-navigation",
+      "command": [
+        "make",
+        "check-navigation"
+      ],
+      "exit_code": 2,
+      "output": "make -C research PYTHON=\"/home/royvanrijn/src/jacobian-research/.venv/bin/python\" SYSTEM_PYTHON=\"python3\" \"check-navigation\"\nmake[1]: Entering directory '/home/royvanrijn/src/jacobian-research/research'\npython3 scripts/audit_status.py\nTraceback (most recent call last):\n  File \"/home/royvanrijn/src/jacobian-research/research/scripts/audit_status.py\", line 8, in <module>\n    validate_index(index)\n  File \"/home/royvanrijn/src/jacobian-research/research/scripts/render_status.py\", line 360, in validate_index\n    assert consumer_path.is_file(), (\n           ^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: KDSQ6: missing document consumer artifacts/generated-results/README.md\nmake[1]: *** [Makefile:21: check-navigation] Error 1\nmake[1]: Leaving directory '/home/royvanrijn/src/jacobian-research/research'\nmake: *** [Makefile:17: check-navigation] Error 2\n"
+    },
+    {
+      "name": "partial-review",
+      "command": [
+        "/home/royvanrijn/src/jacobian-research/.venv/bin/python",
+        "research/scripts/research.py",
+        "check",
+        "--require-partial-review"
+      ],
+      "exit_code": 1,
+      "output": "Traceback (most recent call last):\n  File \"/home/royvanrijn/src/jacobian-research/research/scripts/research.py\", line 563, in <module>\n    raise SystemExit(main())\n                     ^^^^^^\n  File \"/home/royvanrijn/src/jacobian-research/research/scripts/research.py\", line 440, in main\n    validate_lessons(items, entries, check_reviews=args.command == \"check\")\n  File \"/home/royvanrijn/src/jacobian-research/research/scripts/research.py\", line 130, in validate_lessons\n    assert (ROOT / p).is_file(), f\"{item['id']}: missing source {p}\"\n           ^^^^^^^^^^^^^^^^^^^^"
+    },
+    {
+      "name": "required-whitespace",
+      "command": [
+        "git",
+        "diff",
+        "--check",
+        "--",
+        "research/MATH_STATUS.json",
+        "research/knowledge/lessons.json",
+        "research/knowledge/work_items.json",
+        "research/hessian/hc4-triangular-graphs/README.md",
+        "research/index",
+        "research/knowledge/work",
+        "research/knowledge/WORK_LEDGER.md",
+        "research/STATUS.md"
+      ],
+      "exit_code": 0,
+      "output": ""
+    }
+  ],
+  "required_repository_checks_all_passed": false,
+  "required_diff_whitespace_check": "PASS",
+  "own_HC4_diff_whitespace_check": "PASS",
+  "new_file_whitespace_check": "PASS",
+  "own_HC4_diff_whitespace_evidence": {
+    "exit_code": 0,
+    "output": ""
+  },
+  "repository_failures_unrelated_to_HC4": true,
+  "unrelated_missing_artifacts_reconstructed": false
+}

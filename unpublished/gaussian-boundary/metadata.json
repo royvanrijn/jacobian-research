@@ -1,0 +1,27 @@
+{
+  "title": "The Dimension-Degree Boundary for Gaussian Moment Vanishing",
+  "author": {
+    "name": "Roy van Rijn",
+    "orcid": "0009-0000-2808-0645"
+  },
+  "summary": "Determines the complex Gaussian dimension-degree boundary and proves the sharp ternary-cubic mixed-moment cutoff.",
+  "published": false,
+  "status": "ready-for-review",
+  "source": "manuscript.tex",
+  "pdf": "manuscript.pdf",
+  "build": "latexmk -pdf -interaction=nonstopmode -halt-on-error manuscript.tex",
+  "verification": "Internally audited standalone manuscript with recorded proof, source and layout checks; publication and independent external review are still pending.",
+  "next_steps": [
+    "Review the complete qualitative cubic proof and its cited analytic inputs.",
+    "Resolve review findings, freeze a submission bundle and deposit."
+  ],
+  "catalogued_on": "2026-11-17",
+  "abstract": "The Gaussian Moments Conjecture asks whether the vanishing of every\npositive moment of a complex polynomial persists after multiplication by\nan arbitrary fixed polynomial. The answer depends on both the number of\nvariables and the degree. Combining the ternary-cubic theorem with\nWilson's two-variable theorem and Long's counterexamples gives the exact\nboundary: the conjecture holds universally precisely when there are at\nmost two variables, the degree is at most two, or there are three variables\nand the degree is at most three. In the last case the explicit cutoff is\n$m>3\\deg Q$, and the coefficient three is optimal. We explain why these\nstatements fit together, give short proofs of the elementary parts, and\nisolate the cubic reductions that carry the new argument.",
+  "abstract_format": "latex",
+  "abstract_source": "manuscript.tex",
+  "resource_type": {
+    "title": "Preprint",
+    "type": "publication",
+    "subtype": "preprint"
+  }
+}
