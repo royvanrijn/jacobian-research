@@ -237,6 +237,79 @@ these three minors have no common nonzero root, by the existing
 \href{HIGHER_GAP_ADJOINT_RANK.tex}{adjoint rank criterion}.
 No such uniform transfer is proved here.
 
+\subsection*{Two uniform tail determinant identities}
+There is an additional consequence of the cyclic Pl\"ucker structure
+that holds without a positivity assumption. Write
+\[
+ F(t)=t^{2n}W(1/t)=\sum_{j=0}^{2n}w_jt^j,\qquad w_0=1,
+\]
+with $w_j=0$ outside $0\le j\le2n$. Define the special minors by
+\[
+ \Delta_p(W)=\det(w_{3j-i})_{{k\le i\le k+r-1}\atop{1\le j\le r}},
+ \quad r=\lceil p/2\rceil,\quad k=2r-p+1,
+ \qquad \Delta_0(W)=1.
+\]
+These are the same descending-coefficient generalized Hurwitz minors
+as in the uniform target.
+\begin{theorem}\label{thm:tail}
+For every pair of monic polynomials $B,C$ of consecutive degrees
+$n,n+1$, $n\ge1$, the divided difference of Theorem~\ref{thm:transfer}
+satisfies
+\[
+ \Delta_{2n-1}(W)=B(0)\Delta_{2n-2}(W),\qquad
+ \Delta_{2n}(W)=W(0)\Delta_{2n-2}(W).                       \tag{7}
+\]
+The identities remain valid when $B(0)$, $W(0)$ or
+$\Delta_{2n-2}(W)$ is zero.
+\end{theorem}
+\begin{proof}
+Put $D_{ij}=A_iC_j-A_jC_i$.
+The Pl\"ucker identity
+$A_0D_{12}-A_1D_{02}+A_2D_{01}=0$ shows that $B(-z)W(z)$
+has no powers congruent to two modulo three: its residue-two section
+is exactly that expression, evaluated at $-z^3$.
+Reverse this degree-$3n$ product and put
+\[
+ \widehat B(t)=(-1)^nt^nB(-1/t)
+       =\sum_{j=0}^n\widehat b_jt^j.
+\]
+Then $\widehat b_0=1$, $\widehat b_n=(-1)^nB(0)$, and
+$\widehat B(t)F(t)$ has no powers congruent to one modulo three.
+For $j=1,\ldots,n$, its coefficient at $t^{3j-2}$ is zero.
+If
+\[
+ K_i=(w_{3j-i})_{j=1}^n,\qquad 2\le i\le n+2,
+\]
+these identities give the exact row relation
+\[
+ K_2+\sum_{i=3}^{n+2}\widehat b_{i-2}K_i=0.
+\]
+Expand $\Delta_{2n-1}(W)=\det(K_2,K_3,\ldots,K_{n+1})$
+using this relation. All terms except the last have repeated rows,
+so
+\[
+ \Delta_{2n-1}(W)=(-1)^n\widehat b_n
+                   \det(K_3,\ldots,K_{n+2}).
+\]
+The last determinant has first column $(w_0,0,\ldots,0)^T$.
+Expanding along it and reindexing the remaining rows and columns
+gives $\Delta_{2n-2}(W)$. This proves the first identity.
+For $n=1$ the remaining determinant is empty and equals one,
+so the same proof includes that case.
+
+For the even minor, its last column has only the bottom nonzero
+entry $w_{2n}=W(0)$, by the degree bound on $F$.
+Expansion along that column proves the second identity.
+No step divides by a constant coefficient, determinant or rank
+assumption.
+\end{proof}
+
+In the physical family, $B(0)>0$ and $W(0)>0$.
+Consequently the last two special minors have the sign of
+$\Delta_{2n-2}(W)$. A proof using strict positivity of all special
+minors therefore has independent positivity obligations only through
+index $2n-2$. Their uniform positivity or nonvanishing remains open.
+
 \subsection*{Why the auxiliary-block property alone does not transfer}
 Take $C_0(z)=1$ and
 \[
@@ -274,7 +347,7 @@ actual parameter compatibility.
 For every integer $d\ge1$, at $b=1$, and every even integer $m\ge d$,
 \[
  \det R(1,d)[\{1,\ldots,m\},\{0,\ldots,m-1\}]
-                         =-\frac{m!}{d}<0.                 \tag{7}
+                         =-\frac{m!}{d}<0.                 \tag{8}
 \]
 Consequently the physical auxiliary coefficient array is not totally
 nonnegative at any gap $d\ge1$.
@@ -294,7 +367,7 @@ The cofactor formula for its inverse gives
  (R^{-1})_{m,0}=(-1)^m
        \det R[\{1,\ldots,m\},\{0,\ldots,m-1\}].
 \]
-For even $m$, this is (7). This is a uniform coefficient proof;
+For even $m$, this is (8). This is a uniform coefficient proof;
 bounded replay examples are not used to extrapolate the statement.
 \end{proof}
 
@@ -323,9 +396,9 @@ $\overline R_{n,k}=R_{n+1,k}$. Then
 and its exact entries are
 \[
  \Pi_{i,j}=\frac{i!}{j!}
- \left([u^{i-j}]Z_{b,d}(u)+j[u^{i-j+1}]A_d(u)\right).       \tag{8}
+ \left([u^{i-j}]Z_{b,d}(u)+j[u^{i-j+1}]A_d(u)\right).       \tag{9}
 \]
-Coefficients at negative powers are zero. To derive (8), differentiate
+Coefficients at negative powers are zero. To derive (9), differentiate
 the $j$th column generating function in (2), divide by $g$, and then
 substitute $t=P_d(u)$. Equivalently the bivariate production generating
 function is $e^{uv}(Z_{b,d}(u)+vA_d(u))$.
@@ -339,7 +412,7 @@ rows of $R$ displayed above, including $R_{0,0}=1$.
 Thus a proof that first establishes total nonnegativity of this
 standard Riordan production matrix cannot apply here.
 
-The failures in (7)--(8) concern $R$ and $\Pi$.
+The failures in (8)--(9) concern $R$ and $\Pi$.
 They do not refute total nonnegativity of the generalized Hurwitz matrix
 of the gap-three Wronskian, the selected staircase determinants of that
 Wronskian, or binomial Strong Factorial.
@@ -353,8 +426,10 @@ identities at stated finite gaps and orders, reconstructs the inverse
 and production matrices, and verifies exact negative controls.
 It also reconstructs the actual adjacent-row cyclic and sine-weight
 identities symbolically and rejects an incorrect adjacent row.
+Generic independent symbolic pairs and zero-constant or zero-minor
+controls check the division-free tail identities in Theorem~\ref{thm:tail}.
 Its receipt records those bounds and source hashes.
-The all-gap identities and infinite family (7) have the elementary
+The all-gap identities and infinite family (8) have the elementary
 proofs above. All computations are internal; independent replay,
 formal verification, external review and priority claims are not supplied.
 No all-index gap-three or unrestricted binomial Strong Factorial

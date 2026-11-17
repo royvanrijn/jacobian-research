@@ -11,9 +11,9 @@ Polynomial Keller maps, their fibres, monodromy and boundary geometry.
 | Generic monodromy and affine inertia | Internal result | open | [Source](monodromy-theory/THEORY.md) |
 | Canonical Keller receivers and descent boundaries | Internal result | proved | [Source](universal-keller-canonical-filter/PROOF.md) |
 | Explicit cubic Keller collisions | Internal result | proved | [Source](cubic-reduction/PROOF12.md) |
-| Quadratic ruling closure and the remaining degree-six boundary | Internal result | proved | [Source](affine-complements/POLYNOMIAL_RESIDUE_RAMIFIED_LINE_AND_QUADRATIC_RULING_FIVE_CLOSURE.md) |
+| Quadratic ruling closure and the remaining degree-six boundary | Internal result | open | [Source](affine-complements/POLYNOMIAL_RESIDUE_RAMIFIED_LINE_AND_QUADRATIC_RULING_FIVE_CLOSURE.md) |
 
-**Computed obligations:** 8 unresolved; 0 resolved within their exact scope.
+**Computed obligations:** 15 unresolved; 0 resolved within their exact scope.
 
 
 Scope limits:

@@ -2,7 +2,9 @@
   "kind": "internal bounded exact replay; universal proof is the TeX source",
   "claims": {
     "two_three_separation": "all integer d>=1 and real y>=x>0; elementary proof",
-    "lower_exponent_initial_block": "all a>=0,d>=1 integers and beta>0, terminal<=3",
+    "three_four_separation": "all integer d>=1 and real y>=x>0; monotone cumulant proof",
+    "full_ordinary_objective_equivalence": "consecutive gcd in finite rectangles for every N>=5; infinitely many N remain",
+    "lower_exponent_initial_block": "all a>=0,d>=1 integers and beta>0, terminal<=4",
     "parameter_polynomial_selection": "all N>=2,d>=1,z complex; elementary degree proof",
     "finite_support_reduction": "each terminal N>=2: a<A_N and 2<=d<D_N; ordinary factorials",
     "large_gap_pairwise_coprimality": "all a>=1, d>=D_N, orders 1..N",
@@ -16,7 +18,8 @@
     "symbolic_recurrence_cases": 20,
     "polynomial_kernel_rank_specializations_per_case": 4,
     "rational_inequality_cases": 200,
-    "exact_moment_gcd_cases": 144
+    "exact_moment_gcd_cases": 144,
+    "exact_three_four_moment_gcd_cases": 144
   },
   "support_bound_replay": {
     "large_gap_annulus_support_cases": 12,
@@ -177,6 +180,13 @@
     "generic_counterexample_consecutive_base_gcd_checks": 10,
     "generic_counterexample_diagonal_gcd_degree": 1
   },
+  "cumulant_separation_replay": {
+    "abstract_central_moment_identities": 2,
+    "gamma_power_nonnegative_coefficient_profiles": 12,
+    "abstract_cubic_factor_identity": 1,
+    "abstract_positive_imaginary_part_identities": 2,
+    "ordered_shape_three_four_gcd_cases": 150
+  },
   "representation_source": {
     "file": "sources/wolfs-2024-multiple-orthogonal-2401.08312v1.pdf",
     "sha256": "f067406cc088fbad56308b00d8add51117401379504a1109b30442b62cf82182",
@@ -187,8 +197,8 @@
   "python": "3.12.3",
   "sympy": "1.14.0",
   "source_sha256": {
-    "lower_exponent_initial_and_boundary.tex": "8d56b2d6b2fd287001690c1dd4f6c6e69996981da79937e67da09c9d66ce9782",
-    "lower_exponent_initial_and_boundary.py": "df86be130029a7c056a201dfebf05da6863614c071239eb51d56570d385979f4",
+    "lower_exponent_initial_and_boundary.tex": "f852dcb1229e89bbacbc6dede6f00f6a9fa201b4f01492bf5149e91b0a6aa7e9",
+    "lower_exponent_initial_and_boundary.py": "2ef0b6e07a585f5277e7e4ac403dffa817fa242dddf2e0f03694e89c41aa637b",
     "sources/wolfs-2024-multiple-orthogonal-2401.08312v1.pdf": "f067406cc088fbad56308b00d8add51117401379504a1109b30442b62cf82182"
   },
   "independent_replay": false,

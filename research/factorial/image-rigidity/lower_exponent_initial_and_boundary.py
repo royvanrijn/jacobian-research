@@ -224,6 +224,65 @@ def derivative_array_replay():
             "generic_counterexample_consecutive_base_gcd_checks":len(family)-1,
             "generic_counterexample_diagonal_gcd_degree":common.degree()}
 
+
+def cumulant_separation_replay():
+    r0,r1,r2 = sp.symbols("r0 r1 r2")
+    assert sp.expand(r0*r1-r0*r0-r0*(r1-r0)) == 0
+    third = r0*r1*r2-3*r0*r0*r1+2*r0**3
+    positive_form = r0*(2*(r1-r0)**2+r1*(r2-2*r1+r0))
+    assert sp.expand(third-positive_form) == 0
+
+    gamma = sp.symbols("gamma")
+    coefficient_profiles = 0
+    for d in range(1,13):
+        base = sp.Poly(sp.expand(rising(gamma,d)),gamma)
+        first = sp.expand(base.as_expr().subs(gamma,gamma+d)-base.as_expr())
+        second = sp.expand(first.subs(gamma,gamma+d)-first)
+        assert all(c>=0 for c in sp.Poly(first,gamma).all_coeffs())
+        assert all(c>=0 for c in sp.Poly(second,gamma).all_coeffs())
+        variance = sp.Poly(sp.expand(base.as_expr()*first),gamma)
+        kappa = sp.Poly(sp.expand(base.as_expr()
+                        *(2*first**2+(base.as_expr()+first)*second)),gamma)
+        for polynomial in [base,variance,kappa]:
+            assert polynomial.TC() == 0 and not polynomial.is_zero
+            assert all(c>=0 for c in polynomial.all_coeffs())
+            assert polynomial.diff().TC()>0
+        coefficient_profiles += 1
+
+    rho,v,h,V,K,w,eta,lam = sp.symbols("rho v h V K w eta lam",real=True)
+    kappa = rho**3+3*v*rho
+    assert sp.expand((w+rho)*(w*w-rho*w+rho*rho+3*v)
+                      -(w**3+3*v*w+kappa)) == 0
+    A = h+rho/2
+    quartic = (A+sp.I*eta)**4+6*(v+V)*(A+sp.I*eta)**2 \
+              +4*(kappa+K)*(A+sp.I*eta)+lam
+    imag = sp.expand(sp.im(sp.expand(quartic))/(4*eta)).subs(
+                          eta**2,3*v+3*rho**2/4)
+    certificate = K+3*v*rho+3*rho**3/4+h**3+3*rho*h*h/2 \
+                    +3*V*h+3*V*rho/2
+    assert sp.expand(imag-certificate) == 0
+    assert all(c>0 for c in sp.Poly(certificate,rho,v,h,V,K).coeffs())
+    assert sp.expand(certificate.subs({h:0,V:0,K:0})
+                      -(3*v*rho+3*rho**3/4)) == 0
+    cubic = (h+sp.I*eta)**3+3*(v+V)*(h+sp.I*eta)+(kappa+K)
+    imag = sp.expand(sp.im(sp.expand(cubic))/eta).subs(eta**2,v)
+    assert sp.expand(imag-(3*h*h+2*v+3*V)) == 0
+
+    ordered_gcds = 0
+    for d,x,increment in product(range(1,7),
+                                 [sp.Rational(1,7),sp.Rational(1,2),1,3,20],
+                                 [0,sp.Rational(1,3),1,4,17]):
+        y = x+increment
+        f = sum(comb(3,k)*rising(x,d*k)*t**k for k in range(4))
+        g = sum(comb(4,k)*rising(y,d*k)*t**k for k in range(5))
+        assert sp.Poly(sp.gcd(f,g),t).degree() == 0
+        ordered_gcds += 1
+    return {"abstract_central_moment_identities":2,
+            "gamma_power_nonnegative_coefficient_profiles":coefficient_profiles,
+            "abstract_cubic_factor_identity":1,
+            "abstract_positive_imaginary_part_identities":2,
+            "ordered_shape_three_four_gcd_cases":ordered_gcds}
+
 def replay():
     assert sha256((HERE/SOURCE).read_bytes()).hexdigest() == SOURCE_HASH
     cases = 0
@@ -257,6 +316,7 @@ def replay():
         inequality_cases += 1
 
     moment_cases = 0
+    quartic_moment_cases = 0
     for a, d, beta in product(range(0, 6), range(1, 7),
                               [sp.Rational(1, 3), sp.Rational(1, 2), 1, 3]):
         f2 = sum(comb(2, k)*rising(beta+2*a, d*k)*t**k for k in range(3))
@@ -269,6 +329,9 @@ def replay():
         mm = ll + a
         assert sp.expand(U(n,d,mm,z) - z*U(n-1,d,mm,z)
                          + rising(mm+1,d)*U(n-1,d,mm+d,z)) == 0
+        f4 = sum(comb(4,k)*rising(beta+4*a,d*k)*t**k for k in range(5))
+        assert sp.Poly(sp.gcd(f3,f4),t).degree() == 0
+        quartic_moment_cases += 1
         moment_cases += 1
 
     # Corrupt a selected polynomial without changing its leading coefficient.
@@ -276,11 +339,14 @@ def replay():
     assert equation(U(3, 3, s, z)+1, 4, 3, z) != 0
     support_counts = support_replay()
     derivative_counts = derivative_array_replay()
+    cumulant_counts = cumulant_separation_replay()
     report = {
         "kind": "internal bounded exact replay; universal proof is the TeX source",
         "claims": {
             "two_three_separation": "all integer d>=1 and real y>=x>0; elementary proof",
-            "lower_exponent_initial_block": "all a>=0,d>=1 integers and beta>0, terminal<=3",
+            "three_four_separation": "all integer d>=1 and real y>=x>0; monotone cumulant proof",
+            "full_ordinary_objective_equivalence": "consecutive gcd in finite rectangles for every N>=5; infinitely many N remain",
+            "lower_exponent_initial_block": "all a>=0,d>=1 integers and beta>0, terminal<=4",
             "parameter_polynomial_selection": "all N>=2,d>=1,z complex; elementary degree proof",
             "finite_support_reduction": "each terminal N>=2: a<A_N and 2<=d<D_N; ordinary factorials",
             "large_gap_pairwise_coprimality": "all a>=1, d>=D_N, orders 1..N",
@@ -295,9 +361,11 @@ def replay():
             "polynomial_kernel_rank_specializations_per_case": 4,
             "rational_inequality_cases": inequality_cases,
             "exact_moment_gcd_cases": moment_cases,
+            "exact_three_four_moment_gcd_cases": quartic_moment_cases,
         },
         "support_bound_replay": support_counts,
         "diagonal_derivative_replay": derivative_counts,
+        "cumulant_separation_replay": cumulant_counts,
         "representation_source": {"file": SOURCE, "sha256": SOURCE_HASH,
                                   "theorem": "Wolfs arXiv2401.08312v1 Theorem4.6 p=0,q=d",
                                   "scope": "representation attribution only; coefficient identity rederived; no zero theorem imported",

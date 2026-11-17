@@ -9,6 +9,9 @@
   "fixed_gamma_finite_positive_production_factorization_proved": true,
   "exact_cyclic_Plucker_Wronskian_transfer_proved": true,
   "exact_sine_weight_Wronskian_transfer_proved": true,
+  "uniform_odd_and_even_tail_special_minor_identities_proved": true,
+  "tail_scope": "every monic B,C of degrees n,n+1, n>=1: Delta_(2n-1)=B(0)Delta_(2n-2), Delta_(2n)=W(0)Delta_(2n-2)",
+  "tail_proof_uses_division_by_constant_or_minor": false,
   "fixed_gamma_array_TN_scope": "leading rows and columns0..N whenever gamma+d-1>=N",
   "TN_auxiliary_block_alone_transfers_to_Wronskian_H3_refuted": true,
   "off_family_Wronskian_negative_H3_minor": -60115263786123,
@@ -251,7 +254,7 @@
   "formal_verification": false,
   "external_review": false,
   "novelty_claim": false,
-  "total": 86,
+  "total": 103,
   "counts": {
     "symbolic_shape_Riordan_inverse_replayed": 5,
     "formal_reversion_input": 5,
@@ -267,6 +270,15 @@
     "wrong_adjacent_row_transfer_rejected": 1,
     "generic_divided_difference_cyclic_Plucker_identity": 1,
     "generic_divided_difference_sine_weight_identity": 1,
+    "generic_symbolic_tail_missing_residue": 3,
+    "generic_symbolic_tail_row_relation": 3,
+    "generic_symbolic_tail_odd_identity": 3,
+    "generic_symbolic_tail_even_identity": 3,
+    "degenerate_tail_identities_zero_B_constant": 1,
+    "zero_B_constant_is_retained": 1,
+    "degenerate_tail_identities_zero_previous_minor": 1,
+    "zero_previous_minor_is_retained": 1,
+    "degenerate_tail_identities_monomial_degeneracy": 1,
     "off_family_TN_bidiagonal_production": 1,
     "off_family_bidiagonal_generates_array": 1,
     "off_family_TN_auxiliary_does_not_transfer_to_W_H3": 1,
@@ -280,8 +292,8 @@
     "invalid_gap_rejected": 1
   },
   "files": {
-    "gap_three_hurwitz_structure.tex": "e5ec20197393aadfb65c369221dcb65234ce8b3dbb1482a53d3770f1b32ac365",
-    "gap_three_hurwitz_structure.py": "fbc0deb9c010333673c1889d0a18dc18f243a633ee4e6adfa1315c7dcab13618",
+    "gap_three_hurwitz_structure.tex": "f3ac24620daef0d7e2043646773e11580f3ae75b98df3b0f089c5e434627e0ec",
+    "gap_three_hurwitz_structure.py": "4bd55b08768ec50b108ea3c990b8a5e0401d71b34f906e2da3d53f23e2fb24a7",
     "higher_gap_adjoint_rank.py": "e4afd1bc97e6324cf77a84d470a60379d35dbb95c05e4f449dc1261198d2dbaf"
   }
 }

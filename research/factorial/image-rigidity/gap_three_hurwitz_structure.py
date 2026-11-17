@@ -92,6 +92,41 @@ def sine_weight_polynomial(B,C,z):
                               for j in range(N+1) for k in range(j+1,N+1))),z)
 
 
+def cyclic_hurwitz_minor(index,descending_coefficients):
+    if index==0:
+        return s.Integer(1)
+    if index<0:
+        raise ValueError('minor index must be nonnegative')
+    size=(index+1)//2
+    first_row=2 if index%2 else 1
+    at=lambda k:descending_coefficients[k] if 0<=k<len(descending_coefficients) else s.Integer(0)
+    return s.expand(s.Matrix(size,size,lambda i,j:at(3*(j+1)-(first_row+i))).det(method='domain-ge'))
+
+
+def cyclic_tail_certificate(B,C,z,t):
+    """Identity-only certificate; permits zero constants and zero determinants."""
+    B,C=s.Poly(B,z),s.Poly(C,z)
+    n=B.degree()
+    if n<1 or C.degree()!=n+1 or B.LC()!=1 or C.LC()!=1:
+        raise ValueError('expected monic consecutive degrees n,n+1 with n>=1')
+    W=sine_weight_polynomial(B.as_expr(),C.as_expr(),z)
+    w=W.all_coeffs()
+    reverse=s.Poly(sum(w[j]*t**j for j in range(2*n+1)),t)
+    reverseB=s.Poly(sum((-1)**(n+k)*B.nth(k)*t**(n-k) for k in range(n+1)),t)
+    product=reverse*reverseB
+    rows=[s.Matrix([[w[3*j-i] if 0<=3*j-i<len(w) else 0 for j in range(1,n+1)]])
+          for i in range(2,n+3)]
+    relation=rows[0]+sum((reverseB.nth(i-2)*rows[i-2] for i in range(3,n+3)),s.zeros(1,n))
+    previous=cyclic_hurwitz_minor(2*n-2,w)
+    odd=cyclic_hurwitz_minor(2*n-1,w)
+    even=cyclic_hurwitz_minor(2*n,w)
+    return {'missing_residue':all(s.expand(product.nth(3*j-2))==0 for j in range(1,n+1)),
+            'row_relation':all(s.expand(v)==0 for v in relation),
+            'odd_identity':s.expand(odd-B.nth(0)*previous)==0,
+            'even_identity':s.expand(even-W.nth(0)*previous)==0,
+            'previous':previous,'odd':odd,'even':even,'B_constant':B.nth(0),'W_constant':W.nth(0)}
+
+
 def main():
     HERE=Path(__file__).resolve().parent
     counts={}
@@ -149,6 +184,23 @@ def main():
           check_cyclic_plucker_identity(B,C,divided.as_expr(),z,u))
     check('generic_divided_difference_sine_weight_identity',
           s.expand(sine_weight_polynomial(B,C,z).as_expr()-divided.as_expr())==0)
+    # Independent symbolic pairs: these need not satisfy an auxiliary recurrence.
+    for n in [1,2,3]:
+        bb=s.symbols('bb0:'+str(n));cc=s.symbols('cc0:'+str(n+1))
+        B=z**n+sum(bb[k]*z**k for k in range(n))
+        C=z**(n+1)+sum(cc[k]*z**k for k in range(n+1))
+        cert=cyclic_tail_certificate(B,C,z,t)
+        for label in ['missing_residue','row_relation','odd_identity','even_identity']:
+            check('generic_symbolic_tail_'+label,cert[label])
+    for label,B,C in [
+          ('zero_B_constant',z+2*z**2+z**3,1+3*z+5*z**2+7*z**3+z**4),
+          ('zero_previous_minor',1+2*z+z**2,3+4*z+2*z**2+z**3),
+          ('monomial_degeneracy',z**2,z**3)]:
+        cert=cyclic_tail_certificate(B,C,z,t)
+        check('degenerate_tail_identities_'+label,all(cert[k] for k in
+              ['missing_residue','row_relation','odd_identity','even_identity']))
+        if label=='zero_B_constant':check('zero_B_constant_is_retained',cert['B_constant']==0)
+        if label=='zero_previous_minor':check('zero_previous_minor_is_retained',cert['previous']==0)
     # TN auxiliary blocks alone do not force TN of the cyclic Wronskian.
     polys=[s.Poly(1,z)]
     for j in range(9):
@@ -208,6 +260,9 @@ def main():
       'fixed_gamma_finite_positive_production_factorization_proved':True,
       'exact_cyclic_Plucker_Wronskian_transfer_proved':True,
       'exact_sine_weight_Wronskian_transfer_proved':True,
+      'uniform_odd_and_even_tail_special_minor_identities_proved':True,
+      'tail_scope':'every monic B,C of degrees n,n+1, n>=1: Delta_(2n-1)=B(0)Delta_(2n-2), Delta_(2n)=W(0)Delta_(2n-2)',
+      'tail_proof_uses_division_by_constant_or_minor':False,
       'fixed_gamma_array_TN_scope':'leading rows and columns0..N whenever gamma+d-1>=N',
       'TN_auxiliary_block_alone_transfers_to_Wronskian_H3_refuted':True,
       'off_family_Wronskian_negative_H3_minor':-60115263786123,

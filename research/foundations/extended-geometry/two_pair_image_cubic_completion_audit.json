@@ -4,7 +4,7 @@
   "conclusion": "The full cubic Image implication holds with sharp cutoff m>3 deg_z Q; the least failing bihomogeneous balanced degree is four.",
   "canonical_source": {
     "path": "foundations/extended-geometry/TWO_PAIR_IMAGE_CUBIC_STRATIFICATION.md",
-    "sha256": "69c5e874b25f60346eff6e5018b49d63dc811af226a651911156c891620deeff",
+    "sha256": "3e3afcf39fbbf3ec1641843cc81b550248d15db531020f4635a2ea0f5759e825",
     "locator": "Theorem (complete cubic stratum); proper volume lemma; constant-profile extraction; complete classification and Image conclusion"
   },
   "requirements": [
@@ -149,5 +149,12 @@
     "The degree-four minimum concerns fixed bihomogeneous balanced bidegrees, not arbitrary sums of several bidegrees.",
     "Optional fixed-frame repeated-profile certificates retain their own stated parameter loci; the full Image proof uses an alternative constant-profile frame."
   ],
-  "audited_utc": "2026-11-17T12:23:00.644478+00:00"
+  "audited_utc": "2026-11-17T12:33:02.269785+00:00",
+  "repository_workflow_checks": {
+    "make_render_navigation": "attempted; global command fails on unrelated changed checker BINOMIAL-INITIAL-BOUNDARY",
+    "make_check_navigation": "attempted; same unrelated checker-source mismatch",
+    "unit_tests": "99 tests executed; 6 failures in unrelated retained dependency catalogue checks (common-arithmetic proof closure and Tang/Hessian state controls)",
+    "owned_scope_check": "pass: cubic graph route, all owned current pins and source closure, local links, syntax, LF and whitespace",
+    "generated_views": "Moments topic and moments sections are refreshed from the validated owned records with the existing render helpers; unrelated sections are preserved. Global navigation validation is not reported as a pass."
+  }
 }

@@ -47,5 +47,18 @@
     "external_review": false,
     "formal_verification": false
   },
-  "scope_limit": "This source supplies the stated V-filtration facts. Boundary resolution, seed extension and the eleven-parameter polynomial certificate are proved separately in the canonical source."
+  "scope_limit": "This source supplies the stated V-filtration facts. Boundary resolution, seed extension and the eleven-parameter polynomial certificate are proved separately in the canonical source.",
+  "additional_sources": [
+    {
+      "file": "sources/kashiwara_b_functions_1976.pdf",
+      "url": "https://www.kurims.kyoto-u.ac.jp/~kenkyubu/kashiwara/Bfunct.pdf",
+      "title": "B-Functions and Holonomic Systems: Rationality of Roots of B-Functions",
+      "author": "Masaki Kashiwara",
+      "edition": "Inventiones Mathematicae 38 (1976), 33-53",
+      "sha256": "c3faf7cd0f863a26a30a4c4ef4b8e929c1fc4d32b8a7400520b34e63ffc61143",
+      "inspected_scope": "Corollary 5.2 and its resolution proof on printed page 48; supporting Theorem 5.1 proof on pages 49-51. Printed page 48 visually inspected.",
+      "used_for": "Strictly negative rational Bernstein-Sato roots, with no isolated-singularity hypothesis, supporting CDM Example 5.19."
+    }
+  ],
+  "source_scope_correction": "CDM Theorem 5.23 is stated without proof. No proof of that theorem is attributed to CDM. The original Kashiwara source supplies the root-negativity provenance; the full proper-push-forward proof was read in CDM Section 8."
 }

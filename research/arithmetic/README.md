@@ -10,11 +10,11 @@ Constructive finite etale fibres, arithmetic failures and discriminant geometry.
 |---|---|---|---|
 | Over Characteristic Zero, Every Finite Etale Algebra of Rank at Least Three Is a Full Keller Fiber | Unpublished; independent review pending | proved | [Source](../../unpublished/common-arithmetic-fibers/README.md) |
 | Quantitative Hasse-Principle Failures in the Fibers of a Fixed Keller Map | Unpublished; independent review pending | proved | [Source](../../unpublished/fixed-map-hasse-failures/README.md) |
-| The Exact Nonproperness Locus of the Quadratic-Gauge Keller Maps | Unpublished; independent review pending | proved | [Source](../../unpublished/quadratic-gauge-nonproperness/README.md) |
+| The Exact Nonproperness Locus of the Quadratic-Gauge Keller Maps | Unpublished; independent review pending | open | [Source](../../unpublished/quadratic-gauge-nonproperness/README.md) |
 | Generic Discriminants of Polynomial Tangent Pencils | Unpublished; independent review pending | proved | [Source](../../unpublished/discriminant-pencils/README.md) |
 | Exact Real Chamber Spectra of Explicit Keller Maps | Unpublished; independent review pending | proved | [Source](../../unpublished/exact-real-chamber-spectra/README.md) |
 
-**Computed obligations:** 10 unresolved; 1 resolved within their exact scope.
+**Computed obligations:** 11 unresolved; 1 resolved within their exact scope.
 
 
 Scope limits:

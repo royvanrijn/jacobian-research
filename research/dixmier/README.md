@@ -12,7 +12,7 @@ Formal Weyl-algebra lifts, finite scalar mates and centralizers.
 | Completed scalar finite-mate classification | Internal result | proved | [Source](dixmier-formal-lifting/ALGEBRAIC_INFINITY_LIMITS.md) |
 | Finite centralizers, Taylor rigidity and quantum completion | Internal result | open | [Source](dixmier-formal-lifting/FINITE_CENTRALIZERS_AND_COMPLETION.md) |
 
-**Computed obligations:** 7 unresolved; 0 resolved within their exact scope.
+**Computed obligations:** 13 unresolved; 0 resolved within their exact scope.
 
 
 Scope limits:

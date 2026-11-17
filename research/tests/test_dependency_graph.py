@@ -398,6 +398,59 @@ class DependencyGraphTests(unittest.TestCase):
             self.assertEqual(evaluated[member]["assumptions"], ["X"])
             graph.explain(member)
 
+    def test_equivalence_explanation_freezes_exact_conditional_premise_proofs(self):
+        self.node("SA", source="own", assumptions=["a"])
+        self.node("SZ", source="alternative", assumptions=["z"])
+        group = self.equivalence(("A", "B", "C"))
+        group["directions"] = [
+            {"id": "B-contextZ-to-A", "premises": ["B", "SZ"], "conclusion": "A",
+             "status": "proved", "proof": deepcopy(self.sources["reduction"])},
+            {"id": "C-to-B", "premises": ["C"], "conclusion": "B",
+             "status": "proved", "proof": deepcopy(self.sources["reduction"])},
+            {"id": "A-to-C", "premises": ["A"], "conclusion": "C",
+             "status": "proved", "proof": deepcopy(self.sources["reduction"])},
+        ]
+        self.rule("seed-B", ["SZ"], "B", source="alternative")
+        self.rule("seed-C", ["SA"], "C", source="own")
+        graph = self.graph()
+        evaluated = graph.evaluate()
+        self.assertEqual(evaluated["A"]["assumptions"], ["z"])
+        self.assertEqual(evaluated["B"]["assumptions"], ["a"])
+        explanation = graph.explain("A", evaluated)
+        frozen_b, frozen_sz = explanation["premise_provenance"]
+        self.assertEqual(frozen_b["assumptions"], ["z"])
+        self.assertEqual(frozen_b["support"][0]["id"], "seed-B")
+        self.assertEqual(frozen_b["preferred_assumptions"], ["a"])
+        self.assertEqual(frozen_sz["assumptions"], ["z"])
+        selected_route = next(route for route in evaluated["A"]["routes"] if route.get("selected"))
+        self.assertEqual(selected_route["assumptions"], ["z"])
+        self.assertEqual(selected_route["preferred_premise_assumptions"], ["a", "z"])
+
+        def verify_union(record, ancestors=frozenset()):
+            self.assertNotIn(record["id"], ancestors)
+            ancestors = ancestors | {record["id"]}
+            support = record["support"][0]
+            if support["type"] != "implication":
+                return
+            rule = graph.rules[support["id"]]
+            selected_route = next(route for route in record["routes"] if route.get("selected"))
+            self.assertEqual(selected_route["id"], support["id"])
+            self.assertEqual(selected_route["assumptions"], record["assumptions"])
+            required = set(graph.nodes[record["id"]].get("assumptions", []))
+            required.update(rule.get("assumptions", []))
+            self.assertEqual([p["id"] for p in record["premise_provenance"]], rule["premises"])
+            for premise in record["premise_provenance"]:
+                required.update(premise["assumptions"])
+                verify_union(premise, ancestors)
+            self.assertEqual(set(record["assumptions"]), required)
+        for member in ("A", "B", "C"):
+            verify_union(graph.explain(member, evaluated))
+        # The old z-based proof cannot survive fresh loss of its seed.
+        (self.root / "alternative.md").write_text("Changed z-based source.\n")
+        fresh = graph.evaluate()
+        self.assertEqual(fresh["A"]["state"], "stale")
+        self.assertIsNone(fresh["A"]["proof_certificate"])
+
     def test_undeclared_and_cross_component_cycles_still_fail_validation(self):
         self.equivalence()
         self.node("OUTSIDE", "open", None)

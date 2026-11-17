@@ -12,7 +12,7 @@ bidegree \((3,3)\),
  \mathcal E_2(QF^m)=0\quad(m>3\deg_z Q)
  \tag{1}
 \]
-for every polynomial multiplier \(Q\). The coefficient three is sharp.
+for every nonzero polynomial multiplier \(Q\); for \(Q=0\) the conclusion is immediate. The coefficient three is sharp.
 Together with the [quartic counterexample](TWO_PAIR_IMAGE_MATHIEU_COUNTEREXAMPLE.md),
 this proves that, among bihomogeneous balanced forms in two pairs, the exact
 least failing bidegree \((d,d)\) has \(d=4\).
@@ -304,6 +304,14 @@ Q. Chen, B. Dirks, and M. Mustaţă,
 
 The [retained primary version](sources/chen_dirks_mustata_V_filtrations_2402_07816v1.pdf) has
 SHA-256 c00c78a3106e9f2b4120e59207c917e961787385902820d1b5fdb4e0745b7fe3.
+
+The Bernstein-root negativity used in Example 5.19 is also verified in the
+original source: M. Kashiwara, *B-Functions and Holonomic Systems: Rationality
+of Roots of B-Functions*, Invent. Math. 38 (1976), 33–53,
+[Corollary 5.2 and its proof, printed page 48](https://www.kurims.kyoto-u.ac.jp/~kenkyubu/kashiwara/Bfunct.pdf).
+The [retained copy](sources/kashiwara_b_functions_1976.pdf) includes the
+resolution argument and the supporting Theorem 5.1 proof on pages 49–51.
+No isolated-singularity hypothesis is imposed.
 
 The proof uses the decreasing \(V^\alpha\) convention throughout.
 

@@ -288,7 +288,7 @@ class DependencyGraph:
                       "state": "open" if node["supplemental"] else "unmapped",
                       "assumptions": [], "support": [], "routes": [],
                       "stale_sources": stale_sources, "blockers": [], "hypothetical": False,
-                      "proof_depth": None}
+                      "proof_depth": None, "proof_certificate": None}
             if node["supplemental"]:
                 if stale_sources and node["status"] in {"proved", "falsified", "refuted"}:
                     record["state"] = "stale"
@@ -313,6 +313,13 @@ class DependencyGraph:
                 locked.add(node_id)
             if record["state"] in AVAILABLE:
                 proof_keys[node_id] = (len(record["assumptions"]), tuple(record["assumptions"]), 0, "")
+                record["proof_certificate"] = {
+                    "id": node_id, "state": record["state"],
+                    "assumptions": list(record["assumptions"]),
+                    "support": [{key: value for key, value in support.items() if key != "sources"}
+                                for support in record["support"]],
+                    "hypothetical": record["hypothetical"], "proof_depth": 0, "premises": [],
+                }
             evaluated[node_id] = record
         rule_stale = {rule_id: self._freshness([rule["proof"]], cache) if "proof" in rule else []
                       for rule_id, rule in self.rules.items()}
@@ -366,6 +373,17 @@ class DependencyGraph:
                         record.update(state=route["state"], assumptions=route["assumptions"],
                                       support=[{"type": "implication", "id": rule_id}],
                                       hypothetical=route["hypothetical"], proof_depth=depth)
+                        # Freeze the exact premise proofs used here. A premise
+                        # may later prefer a different conditional route; that
+                        # must not rewrite this already grounded certificate or
+                        # silently change its required assumption union.
+                        record["proof_certificate"] = {
+                            "id": node_id, "state": route["state"],
+                            "assumptions": list(route["assumptions"]),
+                            "support": [{"type": "implication", "id": rule_id}],
+                            "hypothetical": route["hypothetical"], "proof_depth": depth,
+                            "premises": [evaluated[p]["proof_certificate"] for p in route["premises"]],
+                        }
                         changed = True
             # Propagate loss of current evidence through ungrounded routes too.
             changed = True
@@ -384,7 +402,20 @@ class DependencyGraph:
                         record.update(state=state, hypothetical=hypothetical)
                         changed = True
         for node_id in self.order:
-            evaluated[node_id]["routes"] = [route_for(rule_id) for rule_id in self.incoming[node_id]]
+            record = evaluated[node_id]
+            record["routes"] = [route_for(rule_id) for rule_id in self.incoming[node_id]]
+            certificate = record["proof_certificate"]
+            if certificate and certificate["support"][0]["type"] == "implication":
+                selected_id = certificate["support"][0]["id"]
+                for route in record["routes"]:
+                    if route["id"] != selected_id:
+                        continue
+                    if route["assumptions"] != certificate["assumptions"]:
+                        route["preferred_premise_assumptions"] = list(route["assumptions"])
+                    route.update(state=certificate["state"],
+                                 assumptions=list(certificate["assumptions"]),
+                                 hypothetical=certificate["hypothetical"], selected=True,
+                                 selected_proof_depth=certificate["proof_depth"])
         for node_id in self.order:
             evaluated[node_id]["blockers"] = self.blockers(node_id, evaluated)
         return evaluated
@@ -460,17 +491,57 @@ class DependencyGraph:
         _require(node_id in self.nodes, f"unknown graph node: {node_id}")
         evaluated = evaluation if evaluation is not None else self.evaluate()
 
-        def provenance(current: str, ancestors: frozenset[str] = frozenset()) -> dict:
+        def provenance(current: str, certificate: dict | None = None,
+                       ancestors: frozenset[str] = frozenset()) -> dict:
             _require(current not in ancestors, f"circular selected proof provenance: {current}")
             ancestors = ancestors | {current}
-            record = deepcopy(evaluated[current])
+            preferred = evaluated[current]
+            # The expanded premise tree is itself the readable certificate; do
+            # not duplicate the nested compact certificate at every tree node.
+            record = deepcopy({key: value for key, value in preferred.items()
+                               if key != "proof_certificate"})
+            certificate = certificate or preferred.get("proof_certificate")
+            if certificate:
+                for key in ("state", "assumptions", "support", "hypothetical", "proof_depth"):
+                    record[key] = deepcopy(certificate[key])
+                record["provenance_basis"] = "selected grounded proof certificate"
+                preferred_support = [{key: value for key, value in support.items() if key != "sources"}
+                                     for support in preferred["support"]]
+                if record["assumptions"] != preferred["assumptions"] or record["support"] != preferred_support:
+                    record["preferred_assumptions"] = list(preferred["assumptions"])
+                    record["preferred_support"] = deepcopy(preferred["support"])
             record["sources"] = deepcopy(self.nodes[current].get("sources", []))
             record["premise_provenance"] = []
             for support in record["support"]:
-                if support["type"] == "implication":
+                if support["type"] == "leaf":
+                    support["sources"] = deepcopy(record["sources"])
+                elif support["type"] == "implication":
                     rule = self.rules[support["id"]]
                     record["proof"] = deepcopy(rule["proof"])
-                    record["premise_provenance"] = [provenance(premise, ancestors) for premise in rule["premises"]]
+                    _require(certificate is not None, f"missing selected proof certificate: {current}")
+                    premises = certificate["premises"]
+                    _require([premise["id"] for premise in premises] == rule["premises"],
+                             f"selected certificate premises differ from rule: {support['id']}")
+                    record["premise_provenance"] = [
+                        provenance(premise["id"], premise, ancestors) for premise in premises]
+                    required = set(self.nodes[current].get("assumptions", []))
+                    required.update(rule.get("assumptions", []))
+                    for premise in premises:
+                        required.update(premise["assumptions"])
+                    _require(set(record["assumptions"]) == required,
+                             f"selected proof certificate drops or adds assumptions: {current}")
+                    _require(record["proof_depth"] == 1 + max(
+                        premise["proof_depth"] for premise in premises),
+                        f"invalid selected proof certificate depth: {current}")
+                    for route in record["routes"]:
+                        route.pop("selected", None)
+                        if route["id"] == support["id"]:
+                            if route["assumptions"] != record["assumptions"]:
+                                route["preferred_premise_assumptions"] = list(route["assumptions"])
+                            route.update(state=record["state"],
+                                         assumptions=list(record["assumptions"]),
+                                         hypothetical=record["hypothetical"], selected=True,
+                                         selected_proof_depth=record["proof_depth"])
             return record
 
         return {**provenance(node_id), "impact": self.impact(node_id)}

@@ -12,7 +12,7 @@ Knot-group representations, branched-cover bounds and explicit sharp families.
 | Infinite periodic families and connected sums | Internal result | open | [Source](representations/PERIODIC_TWIST_FAMILIES.tex) |
 | Representation and branched-cover lower bounds | Internal result | proved | [Source](representations/PROOF.tex) |
 
-**Computed obligations:** 4 unresolved; 0 resolved within their exact scope.
+**Computed obligations:** 5 unresolved; 0 resolved within their exact scope.
 
 
 Scope limits:

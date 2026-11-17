@@ -23,64 +23,112 @@ problem or verify the remaining rectangle.
 
 The proofs retain the actual order-dependent Gamma shape. We also give
 a sharper coefficient criterion in a high-gap region, prove uniform
-two--three moment separation at every lower exponent and positive
+consecutive moment separation through terminal four at every lower exponent and positive
 Gamma shape, and identify the polynomial condition selecting the
 solution of the higher-gap parameter recurrence. General lower exponents
 also admit an exact diagonal derivative embedding in a fixed lower-one
 base sequence. An explicit generic counterexample identifies the extra
 compatibility required for transferring coprimality through that embedding.
 
-\section{A parameter-monotone initial separation}
-\begin{lemma}\label{lem:inequality}
-For every integer $d\ge1$ and real $y\ge x>0$,
+\section{Parameter-monotone separation through terminal order four}
+Let $Y_\gamma$ have unit-rate Gamma shape $\gamma>0$ and put
+$X_\gamma=Y_\gamma^d$. Denote its mean, variance and third central
+moment by $\mu_\gamma,v_\gamma,\kappa_\gamma$.
+
+\begin{lemma}\label{lem:cumulants}
+For every integer $d\ge1$, the functions
+$\mu_\gamma,v_\gamma,\kappa_\gamma$ are strictly positive and
+strictly increasing for $\gamma>0$.
+More explicitly, with $r_j=(\gamma+jd)_d$,
 \[
- \frac{(y)_{3d}}{(x)_{2d}}>3(y)_d-2(x)_d.                 \tag{1}\label{eq:shape-inequality}
+ \mu_\gamma=r_0,\qquad
+ v_\gamma=r_0(r_1-r_0),\qquad
+ \kappa_\gamma=
+ r_0\bigl[2(r_1-r_0)^2+r_1(r_2-2r_1+r_0)\bigr].          \tag{1}\label{eq:cumulants}
 \]
 \end{lemma}
 \begin{proof}
-Write $r(s)=(s)_d$. Its polynomial coefficients are nonnegative,
-$r'(s)>0$ and $r''(s)\ge0$ for $s>0$. In particular $r$ is strictly
-increasing and $r'$ is nondecreasing there. Put
+The first three raw moments are $r_0,r_0r_1,r_0r_1r_2$;
+expanding the central moments gives the displayed formulas.
+The polynomial $r_0=(\gamma)_d$ has nonnegative coefficients, zero
+constant coefficient, and is strictly increasing on the positive axis.
+For $h>0$, the forward difference $\Delta_h$ preserves coefficient
+nonnegativity, because
 \[
- H(y)=r(y)r(y+d)r(y+2d)
-       -3r(x)r(x+d)r(y)+2r(x)^2r(x+d).
+ \Delta_h\gamma^j=(\gamma+h)^j-\gamma^j
+   =\sum_{\ell=0}^{j-1}\binom j\ell h^{j-\ell}\gamma^\ell .
 \]
-At $y=x$,
-\[
- H(x)=r(x)r(x+d)\bigl(r(x+2d)-r(x)\bigr)>0.
-\]
-For $y\ge x$, the product rule and the monotonicity of $r'$ give
-\[
- \begin{split}
- \frac{d}{dy}\bigl(r(y)r(y+d)r(y+2d)\bigr)
- \ge r'(y)\bigl(&r(y+d)r(y+2d)+r(y)r(y+2d)\\
-               &+r(y)r(y+d)\bigr).
- \end{split}
-\]
-Each of the three products in parentheses is at least
-$r(x)r(x+d)$, and the first two are strictly greater.
-Thus $H'(y)>0$. Consequently $H(y)>0$, which is \eqref{eq:shape-inequality}.
+Thus $r_1-r_0=\Delta_dr_0$ and
+$r_2-2r_1+r_0=\Delta_d^2r_0$ have nonnegative coefficients.
+The first has a strictly positive constant coefficient.
+Consequently $v_\gamma$ and $\kappa_\gamma$ have nonnegative
+coefficients, positive nonconstant coefficients, and zero constant
+coefficient. They are strictly positive and strictly increasing on
+$\gamma>0$; the same holds for $\mu_\gamma$.
 \end{proof}
 
-\begin{theorem}\label{thm:two-three}
-For every integer $d\ge1$ and all real $y\ge x>0$, the polynomials
-$T_{2,x,d}$ and $T_{3,y,d}$ have no common complex zero.
+\begin{theorem}\label{thm:ordered-initial}
+For every integer $d\ge1$ and all real $y\ge x>0$,
+$T_{2,x,d}$ and $T_{3,y,d}$ are coprime.
+Likewise $T_{3,x,d}$ and $T_{4,y,d}$ are coprime.
 \end{theorem}
 \begin{proof}
-The quadratic
+It suffices to compare their monic reciprocal polynomials
 \[
- T_{2,x,d}=1+2(x)_d t+(x)_{2d}t^2
+ R_{j,\gamma}(z)=\mathbb E(z+X_\gamma)^j
+                =z^jT_{j,\gamma,d}(1/z).
 \]
-has negative discriminant, since
-$(x)_{2d}=(x)_d(x+d)_d>(x)_d^2$. A common zero therefore
-brings its distinct conjugate, and would imply
+All constant and leading coefficients are nonzero, so inversion
+preserves the common-zero question. Write
+$\mu=\mu_x$, $v=v_x$ and $\kappa=\kappa_x$.
+The two roots of $R_{2,x}$ are $z=-\mu\pm i\sqrt v$.
+At the upper root, putting $h=\mu_y-\mu\ge0$ gives
 \[
- T_{3,y,d}=(1+ct)T_{2,x,d}
+ \frac{\operatorname{Im}R_{3,y}(-\mu+i\sqrt v)}{\sqrt v}
+     =3h^2+3v_y-v\ge2v>0 .
 \]
-for a real $c$. Comparing the leading coefficient gives
-$c=(y)_{3d}/(x)_{2d}$, while comparing the linear coefficient gives
-$c=3(y)_d-2(x)_d$. Lemma~\ref{lem:inequality} contradicts these
-equalities.
+Conjugation handles the other root, proving the first assertion.
+
+For the second assertion, centered coordinates $w=z+\mu$ give
+\[
+ R_{3,x}(z)=w^3+3vw+\kappa
+          =(w+\rho)(w^2-\rho w+\rho^2+3v),
+\]
+where $\rho>0$ is the unique solution of
+$\rho^3+3v\rho=\kappa$.
+The nonreal roots have
+\[
+ w=\rho/2\pm i\eta,\qquad
+ \eta^2=3v+3\rho^2/4.
+\]
+The quartic $R_{4,y}$ is strictly positive at every real $z$,
+since $X_y$ is not a point mass. Thus only the nonreal roots of
+$R_{3,x}$ need consideration.
+
+Take $z_0=-\mu+\rho/2+i\eta$ and put
+\[
+ h=\mu_y-\mu\ge0,\qquad V=v_y-v\ge0,\qquad
+ K=\kappa_y-\kappa\ge0,\qquad A=h+\rho/2.
+\]
+In centered coordinates at shape $y$, the quartic is
+\[
+ R_{4,y}(z)=
+ (z+\mu_y)^4+6v_y(z+\mu_y)^2+
+ 4\kappa_y(z+\mu_y)+\lambda_y,
+\]
+where the fourth central moment $\lambda_y$ is real.
+Using $\kappa=\rho^3+3v\rho$, direct expansion yields
+\[
+ \begin{split}
+ \frac{\operatorname{Im}R_{4,y}(z_0)}{4\eta}
+ &=\kappa_y+A^3+3v_yA-\eta^2A\\
+ &=K+3v\rho+\frac34\rho^3+h^3+\frac32\rho h^2
+                       +3Vh+\frac32V\rho>0.
+ \end{split}
+\]
+The lower root is its conjugate. Neither can be a quartic root,
+which proves the second assertion. No fourth-moment monotonicity
+assumption is used.
 \end{proof}
 
 For the normalized positive Gamma functional
@@ -93,17 +141,18 @@ $f=X^a(A+BX^d)$ satisfy, when $A\ne0$,
 \begin{corollary}\label{cor:initial}
 Let $a\ge0$ and $d\ge1$ be integers, and let $\beta>0$.
 Every nonzero $X^a(A+BX^d)$ has no simultaneous zero Gamma moments
-at orders two and three. It also has no simultaneous zero Gamma moments
-at orders one and two. Thus every consecutive pair with terminal order
-at most three contains a nonzero moment, for all lower exponents and gaps.
+at any pair of consecutive positive orders with terminal order
+at most four.
 \end{corollary}
 \begin{proof}
-For orders two and three, apply Theorem~\ref{thm:two-three} with
-$x=\beta+2a$ and $y=\beta+3a$. For orders one and two, the sole
-root of $T_{1,\beta+a,d}$ is real, whereas
-$T_{2,\beta+2a,d}$ has no real root by the discriminant calculation above.
-The order-zero moment is one. If either $A$ or $B$ is zero, every
-moment is a nonzero monomial moment.
+For orders two and three, use Theorem~\ref{thm:ordered-initial}
+with $x=\beta+2a$ and $y=\beta+3a$.
+For orders three and four, use $x=\beta+3a$ and $y=\beta+4a$.
+For orders one and two the sole root of $T_{1,\beta+a,d}$ is real,
+whereas $T_{2,\beta+2a,d}$ has no real root, since its reciprocal
+is $(z+\mu)^2+v$ with $v>0$.
+If either $A$ or $B$ is zero, every positive moment is a nonzero
+monomial moment.
 \end{proof}
 For ordinary factorials set $\beta=1$. No restriction on the complex
 coefficients $A,B$ beyond nonzeroness of $f$ is imposed.
@@ -261,7 +310,7 @@ The following statements are equivalent:
 \item Every nonzero complex binomial $f(X)=X^a(A+BX^d)$,
 with integers $a\ge0,d\ge1$, has a nonzero ordinary factorial moment
 in every pair of consecutive positive orders.
-\item For every integer $N\ge4$ and every pair of integers
+\item For every integer $N\ge5$ and every pair of integers
 \[
  1\le a<A_N,\qquad 2\le d<D_N,
 \]
@@ -284,13 +333,13 @@ equivalent to a binomial with simultaneous zero moments, and to a
 nonconstant rational gcd. This proves that the first statement implies
 the second.
 
-Conversely, terminal orders two and three are covered by
+Conversely, terminal orders two, three and four are covered by
 Corollary~\ref{cor:initial} at $\beta=1$.
 The case $a=0$ at every terminal order is the
 \href{ALL_UNIVARIATE_TWO_TERM_SFC.tex}{constant-plus-power theorem},
 and $d=1$ at every lower exponent is the
 \href{UNIFORM_PADE_PARABOLA_SFC.tex}{adjacent-exponent theorem}.
-For $N\ge4,a\ge1,d\ge2$, the second statement covers the rectangle
+For $N\ge5,a\ge1,d\ge2$, the second statement covers the rectangle
 and Corollary~\ref{cor:rectangle} covers its complement.
 This proves the first statement.
 \end{proof}

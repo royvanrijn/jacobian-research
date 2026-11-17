@@ -12,11 +12,11 @@ The authored state describes the exact statement below. Graph status is computed
 
 Generalized vanishing, Gaussian moments and Image/Mathieu spaces.
 
-**Authored assessment:** Scoped GVC/GMC dimension results and the Gaussian dimension-degree boundary are established internally; safety-to-purity, two-base transfers and stated Image coverage questions remain open. Publication and review vary by manuscript.
+**Authored assessment:** Scoped GVC/GMC dimension results,the Gaussian dimension-degree boundary and complete bihomogeneous two-pair cubic Image coverage are established in retained internal written proofs. Safety-to-purity,two-base transfers and the stated remaining Gaussian structural problems remain open;publication and independent verification are separate. Two-pair cubic positivity and the sharp bihomogeneous balanced degree-four Image boundary are established internally.
 
 [Topic guide](moments/README.md)
 
-**Computed obligations:** 6 unresolved; 0 resolved within their exact scope.
+**Computed obligations:** 19 unresolved; 1 resolved within their exact scope.
 
 | Principal result | Authored state | Graph status | Scope |
 |---|---|---|---|
@@ -24,14 +24,14 @@ Generalized vanishing, Gaussian moments and Image/Mathieu spaces.
 | [Gaussian dimension-degree boundary](../unpublished/gaussian-boundary/manuscript.tex) | proved | proved | The complete Gaussian dimension-degree boundary and sharp ternary-cubic mixed-moment cutoff, as stated in the current integrated manuscript. |
 | [Complete reductive Mathieu classification](../unpublished/mathieu-reductive-homogeneous-spaces/main.tex) | proved | proved | The full reductive Mathieu classification, including disconnected groups and the stated fixed-marker counterexamples. |
 | [All-degree Gaussian structure and safety gap](moments/vanishing/GAUSSIAN_AMPLITUDE_IDEALS_AND_WEIGHT_INVARIANCE.md) | proved | proved | Nonzero polynomial weights preserve Gaussian safety and optimal affine slopes while positive tilts expose the remaining unweighted-vacuum purity gap; General field safety-to-purity is equivalent to primitive original vacua in actual rank-one Gaussian images finite over the polynomial time ring; Rational primitives and nontrivial embedded unipotent modules cannot occur in actual Gaussian generic images over any characteristic-zero field; Nonzero Gaussian critical action excludes every globally regular actual submodule in all ranks and every characteristic-zero field; All-degree constant quadratic Gaussian fibres:arbitrary Jordan cancellation and polynomial-unit rigidity; Constant-quadratic-fibre marker reduction over characteristic-zero fields, ambient coefficient-content torsion, actual generation for nilpotent source polynomials, and the exact scalar specialization defect; One-base constant-fibre purity/safety equivalence also holds for correlated real Gaussian laws with positive-definite covariance |
-| [Gaussian H(2,1): affine charts, radial phases and obstructions](moments/vanishing/GAUSSIAN_AFFINE_ISOTROPIC_CHART.md) | proved | proved | Complete all-degree purity classification for Wh(Z)+v(Z)Y^2+b(Z)Y+k(Z), with explicit safe marker cutoffs and no nonisotropic constant-fibre axis for its unsafe branch. For B=c(Z)W+u(Z), g=Wh(Z)+k(Z), all pure members are safe if deg c<=2, with unrestricted h,u,k. More generally, for nonconstant c whose root multiplicities are at most two, purity is equivalent to a=0, h,c divisible by Z^2, u,k divisible by Z. Thus nonconstant squarefree c of arbitrary degree has no pure members. For arbitrary multiplicities nonconstant c excludes purity when a!=0; unshared roots of c,h also have no multiplicity restriction. For a nonzero constant lambda, every pure phase lambda W^2+Wh(Z)+c(Z)WY+aY^2+u(Z)Y+k(Z) is quadratic; nonconstant c(Z) admits no pure member, by a connected double-cover period argument retaining positive-genus cycles. Every all-degree radial phase aY^2+B(ZW)Y+g(ZW) is pure only if it is zero, using a relative endpoint module of rank D and a complete endpoint period pairing. Consequently weakly one-sided angular support is safe in all degrees, with cutoff m>deg Q. A fixed-multipuncture logarithmic seed estimate and an ordinary-volume estimate at double roots supply these extensions, using the stated comparison dependencies. No polynomial automorphism preserving 2ZW+Y^2 sends Long's quartic into H(2,1). General H(2,1) remains open. |
-| [Bidegree-(4,4) two-pair Image/Mathieu counterexample](foundations/extended-geometry/TWO_PAIR_IMAGE_MATHIEU_COUNTEREXAMPLE.md) | proved | proved | A bidegree-(4,4) two-pair Image/Mathieu counterexample is established. Complete bidegree-(3,3) coverage remains open. |
+| [Gaussian H(2,1): affine charts, radial phases and obstructions](moments/vanishing/GAUSSIAN_AFFINE_ISOTROPIC_CHART.md) | proved | proved | The retained affine isotropic chart classifies all pure Wh+vY²+bY+k branches with exact safe cutoffs. Mixed cW sources include all simple/double roots and arbitrary-multiplicity obstructions for nonzero quadratic fibre or unshared roots. Constant quadraticW families,pure radial phases in all degrees,and weakly one-sided angular support are covered. Shared roots of multiplicity>=3 with zero quadratic fibre and spatially variable determinant cases remain open. |
+| [Bidegree-(4,4) two-pair Image/Mathieu counterexample](foundations/extended-geometry/TWO_PAIR_IMAGE_MATHIEU_COUNTEREXAMPLE.md) | proved | proved | A bidegree-(4,4) two-pair Image/Mathieu counterexample is established, with all-order pure and nonzero mixed contraction formulas. |
+| [Complete cubic two-pair Image positivity and sharp balanced degree four](foundations/extended-geometry/TWO_PAIR_IMAGE_CUBIC_STRATIFICATION.md) | proved | proved | For every characteristic-zero field and every bihomogeneous F of bidegree (3,3), vanishing E2(F^m) for all m>=1 implies E2(QF^m)=0 for every polynomial Q whenever m>3 deg_z Q. The coefficient three is sharp. Over C, every pure sphere cubic is orthogonally and scalar equivalent to a strictly one-sided phase or y+xt-x^3/2. Together with the quartic counterexample, the least failing bihomogeneous balanced degree is four. |
 
 Tracked obligations (computed states):
 
 - **mathematical / open:** [General safety-to-purity/original-vacuum primitivity.](moments/README.md) — MOMENTS-SAFETY-PURITY
 - **mathematical / open:** [Constant quadratic fibre over two ordinary bases.](moments/vanishing/GAUSSIAN_AFFINE_ISOTROPIC_CHART.md) — MOMENTS-TWO-BASE-SAFETY
-- **mathematical / open:** [Complete two-pair bidegree-(3,3).](foundations/extended-geometry/TWO_PAIR_IMAGE_CUBIC_STRATIFICATION.md) — GAP-TWO-PAIR-33
 - **mathematical / open:** [Determine the exact least pure-moment prefix for ternary cubics.](../unpublished/gaussian-boundary/manuscript.tex) — GAP-TERNARY-PURE-PREFIX
 
 ## Jacobian and Keller maps
@@ -42,14 +42,14 @@ Polynomial Keller maps, their fibres, monodromy and boundary geometry.
 
 [Topic guide](jacobian/README.md)
 
-**Computed obligations:** 8 unresolved; 0 resolved within their exact scope.
+**Computed obligations:** 15 unresolved; 0 resolved within their exact scope.
 
 | Principal result | Authored state | Graph status | Scope |
 |---|---|---|---|
 | [Generic monodromy and affine inertia](jacobian/monodromy-theory/THEORY.md) | proved | open | Whole-affine Keller self-map over alg.closed char0: affine-divisor inertia fixed sheet and normal generation; necessary regular/nilpotent/even-dihedral exclusions and genus-zero PSL2(11) passport sieve. |
 | [Canonical Keller receivers and descent boundaries](jacobian/universal-keller-canonical-filter/PROOF.md) | proved | proved | RankN>=2 finite etale algebra over Z[1/(2N)!]-scheme: canonical determinant-one map of V_A=A^3⊕O^3, dimension3N+3, full marked fibre SpecA, degree3^(N+1), non-atomic. Separate profile maps have symmetric monodromy and stable atomicity; affine-type ruling descent holds on proper-native intermediates. |
 | [Explicit cubic Keller collisions](jacobian/cubic-reduction/PROOF12.md) | proved | proved | 12-variable integral cubic collision with36 nonlinear occurrences;89-variable integer cubic-linear rational collision; upper bounds only. |
-| [Quadratic ruling closure and the remaining degree-six boundary](jacobian/affine-complements/POLYNOMIAL_RESIDUE_RAMIFIED_LINE_AND_QUADRATIC_RULING_FIVE_CLOSURE.md) | proved | proved | Actual complex whole-plane Keller targets in PF157 complete marked quadratic source-image class: ruling4/5 excluded; ruling6 has necessary finite-end/residue coverage and three surviving off-M weighted faces. Ruling degree differs from generic map degree. |
+| [Quadratic ruling closure and the remaining degree-six boundary](jacobian/affine-complements/POLYNOMIAL_RESIDUE_RAMIFIED_LINE_AND_QUADRATIC_RULING_FIVE_CLOSURE.md) | proved | open | Actual complex whole-plane Keller targets in PF157 complete marked quadratic source-image class: ruling4/5 excluded; ruling6 has necessary finite-end/residue coverage and three surviving off-M weighted faces. Ruling degree differs from generic map degree. |
 
 Tracked obligations (computed states):
 
@@ -67,13 +67,13 @@ Restricted Hessian classes, polynomial graphs and formal termination.
 
 [Topic guide](hessian/README.md)
 
-**Computed obligations:** 4 unresolved; 0 resolved within their exact scope.
+**Computed obligations:** 10 unresolved; 0 resolved within their exact scope.
 
 | Principal result | Authored state | Graph status | Scope |
 |---|---|---|---|
 | [Complete quintic graph exclusion with an explicit nilpotent algebra](jacobian/affine-complements/FULL_COMPLEX_QUINTIC_GRAPH_EXCLUSION_AND_CUBIC_NILPOTENCE.md) | proved | proved | Fixed v2 Meng-Yang parent only: no polynomial graph of graph total degree<=5 has nonzero constant pulled-back Hessian determinant over any char0 field. |
 | [Ricci-flat HC4 inversion and the plane shear lemma](hessian/hc4-triangular-graphs/RICCI_FLAT_HC4_AND_ONE_DIMENSIONAL_JACOBIAN_IMAGES.md) | proved | proved | Complex four-variable unit-Hessian potential plus zero Levi-Civita Ricci tensor => polynomial gradient inverse, using Tang. Independent plane lemma: Keller Jacobian-entry image differential rank<=1 => affine shear. |
-| [Even-moment lattices and the sixth-moment trace criterion](hessian/hc4-triangular-graphs/EVEN_MOMENT_LATTICES_AND_SIXTH_MOMENT_TRACE_TEST.md) | proved | proved | Actual complex plane Keller setting, all integer m>=1: T_m=O_Z(floor(Ram/m)) finite projective; trace defect lengths sum f_E(a_E-2floor(a_E/m)). For m>=3 perfection iff Ram=0, and via KN0 purity iff polynomial inverse. |
+| [Even-moment lattices and the sixth-moment trace criterion](hessian/hc4-triangular-graphs/EVEN_MOMENT_LATTICES_AND_SIXTH_MOMENT_TRACE_TEST.md) | proved | open | Actual complex plane Keller setting, all integer m>=1: T_m=O_Z(floor(Ram/m)) finite projective; trace defect lengths sum f_E(a_E-2floor(a_E/m)). For m>=3 perfection iff Ram=0, and via KN0 purity iff polynomial inverse. |
 
 Tracked obligations (computed states):
 
@@ -89,7 +89,7 @@ Factorial moment functionals, composition rigidity and Strong Factorial families
 
 [Topic guide](factorial/README.md)
 
-**Computed obligations:** 11 unresolved; 0 resolved within their exact scope.
+**Computed obligations:** 16 unresolved; 0 resolved within their exact scope.
 
 | Principal result | Authored state | Graph status | Scope |
 |---|---|---|---|
@@ -98,10 +98,10 @@ Factorial moment functionals, composition rigidity and Strong Factorial families
 | [All ordinary constant-plus-power SFC](factorial/image-rigidity/ALL_UNIVARIATE_TWO_TERM_SFC.tex) | proved | proved | Every A+B Y^m satisfies SFC at every start and every positive integer exponent in ordinary Gamma shape one; exact finite certificates are essential. |
 | [Other universal two-term SFC families](factorial/image-rigidity/UNIFORM_PADE_PARABOLA_SFC.tex) | proved | proved | Every adjacent-monomial X^a(A+B X) satisfies Strong Factorial at every index and every positive Gamma shape; Strong Factorial holds for every cubic pair X(A+B X^2) at every starting index and every positive Gamma shape; Strong Factorial holds at every index for X^(2^r)(A+B X^(2^r)) and integer Gamma shapes through twice the gap |
 | [Current general-gap algebraic criterion](factorial/image-rigidity/HIGHER_GAP_ADJOINT_RANK.tex) | partial | proved | Exact adjoint-rank/backward-pivot criteria; uniform nonzero pivots and arbitrary gaps remain open. |
-| [Effective binomial support bounds and the polynomial boundary](factorial/image-rigidity/lower_exponent_initial_and_boundary.tex) | proved | stale | For each ordinary terminal N>=2, explicit A_N,D_N confine possible positive-lower-exponent, gap>=2 consecutive obstructions to a<A_N,d<D_N; large gaps and large lower exponents separately give pairwise coprimality through N. The full ordinary binomial objective is equivalent to consecutive coprimality inside these finite rectangles for every N>=4, which remains unproved. Initial Gamma pairs through order three and the unique polynomial boundary solution remain proved. |
-| [Prime-power terminal families for nonconstant binomials](factorial/image-rigidity/ARITHMETIC_FRONTIER_TERMINAL_ORDERS.tex) | proved | stale | For d=p^s, lower-one ordinary consecutive pairs are separated at N=m*p^r and N=m*p^r-1, 1<=m<p, N>=2. The latter family has explicit squarefree Newton residuals at every r,s>=1. No-carry general offsets and arbitrary lower exponent a at N=p^r with digit_s(a)<=p-2 retain their earlier scopes. These unbounded terminal families do not give all-index binomial SFC. |
+| [Initial binomial pairs, support bounds and derivative embedding](factorial/image-rigidity/lower_exponent_initial_and_boundary.tex) | proved | proved | For all integers a>=0,d>=1 and every positive Gamma shape, consecutive moment pairs through terminal four are separated; more generally T_(3,x,d) and T_(4,y,d) are coprime for every y>=x>0. For each ordinary terminal N, explicit support bounds confine possible remaining obstructions to a finite rectangle. The full ordinary objective is equivalent to consecutive coprimality inside these rectangles for every N>=5, still unproved. An exact diagonal derivative embedding in one fixed lower-one sequence and an explicit generic preservation counterexample isolate the additional general-a obligation; the unique polynomial boundary solution remains proved. |
+| [Arithmetic terminal criteria for binomial moments](factorial/image-rigidity/ARITHMETIC_FRONTIER_TERMINAL_ORDERS.tex) | proved | proved | For d=p^s, lower-one ordinary pairs are separated at N=m*p^r and m*p^r-1, 1<=m<p,N>=2, with earlier no-carry/general-a prime-power criteria retained. Arbitrary a also has a common-quotient resultant criterion: floor(aN/d)=floor(a(N-1)/d)=q and q+N<p. For arbitrary gaps, a prime p>dN dividing some aN+j,1<=j<=d, exactly once gives irreducibility and the preceding pair. If a>=d,a>=2,N>=3 and aN+j itself is prime, both adjoining pairs are separated. These sufficient arithmetic criteria do not establish all-terminal binomial SFC. |
 | [Gap-three whole-matrix certificates and uniform initial minors](factorial/image-rigidity/gap_three_hurwitz.tex) | proved | proved | For 2<=n<=16 and every beta>=0 the entire infinite H3(W_(n,n+beta-1)) is totally nonnegative; direct Euclidean descent gives gap-three lower-one SFC through terminal order 16 for beta>0. The first nine Euclidean pivots are positive for every n>=4,beta>=0, and the first eight shifted special minors are coefficient-positive. All-index total nonnegativity remains open. |
-| [All-gap auxiliary factorizations and cyclic transfer](factorial/image-rigidity/gap_three_hurwitz_structure.tex) | proved | proved | For every integer d>=1 the physical auxiliary has an explicit formal inverse-polynomial Riordan representation. Fixed-gamma auxiliary production and coefficient blocks are TN whenever gamma+d-1>=block degree; at d=3 this includes both rows needed for the physical Wronskian. The three W sections equal explicit cyclic Plucker minors. Row-dependent physical auxiliary arrays have negative minors -m!/d at beta=1 for every even m>=d; generic auxiliary TN alone does not transfer to W-H3. No uniform W-H3 positivity is asserted. |
+| [All-gap auxiliary factorizations and cyclic transfer](factorial/image-rigidity/gap_three_hurwitz_structure.tex) | proved | proved | For every integer d>=1 the physical auxiliary has an explicit formal inverse-polynomial Riordan representation. Fixed-gamma production and coefficient blocks are TN when gamma+d-1>=block degree; at d=3 both Wronskian rows are included. Cyclic W sections are Plucker minors. For every monic pair B,C of degrees n,n+1, Delta_(2n-1)(W)=B(0)Delta_(2n-2)(W) and Delta_(2n)(W)=W(0)Delta_(2n-2)(W), including vanishing cases. These factors are positive in the physical family. Physical row-dependent arrays have negative minors; auxiliary TN alone does not transfer to W-H3. All-size intermediate-minor positivity remains open. |
 
 Tracked obligations (computed states):
 
@@ -109,7 +109,8 @@ Tracked obligations (computed states):
 - **mathematical / open:** [All lower-one higher-gap Gamma pairs at every terminal order; lower exponents greater than one require a separate argument.](factorial/README.md) — FACTORIAL-LOWER-ONE-HIGHER-GAP
 - **verification / open:** [Independent mathematical and priority review.](factorial/README.md) — GAP-FACTORIAL-3
 - **mathematical / open:** [Uniform total nonnegativity of the actual gap-three H3 family, for example via all-size staircase-minor positivity or a parameter-compatible positive factorization.](factorial/image-rigidity/gap_three_hurwitz.tex) — FACTORIAL-GAP3-HURWITZ-TN
-- **mathematical / stale:** [All ordinary univariate binomial SFC, equivalently uniform consecutive coprimality in the finite support rectangles for every terminal N>=4.](factorial/image-rigidity/lower_exponent_initial_and_boundary.tex) — FACTORIAL-ALL-UNIVARIATE-BINOMIAL-SFC
+- **mathematical / open:** [All ordinary univariate binomial SFC, equivalently uniform consecutive coprimality in the finite support rectangles for every terminal N>=5.](factorial/image-rigidity/lower_exponent_initial_and_boundary.tex) — FACTORIAL-ALL-UNIVARIATE-BINOMIAL-SFC
+- **mathematical / open:** [Prove consecutive coprimality of the actual diagonal derivatives in the fixed lower-one base sequence; generic seed simplicity and stability do not imply this.](factorial/image-rigidity/lower_exponent_initial_and_boundary.tex) — FACTORIAL-BINOMIAL-DIAGONAL-PAIRS
 
 ## Dixmier and Weyl algebras
 
@@ -119,7 +120,7 @@ Formal Weyl-algebra lifts, finite scalar mates and centralizers.
 
 [Topic guide](dixmier/README.md)
 
-**Computed obligations:** 7 unresolved; 0 resolved within their exact scope.
+**Computed obligations:** 13 unresolved; 0 resolved within their exact scope.
 
 | Principal result | Authored state | Graph status | Scope |
 |---|---|---|---|
@@ -141,7 +142,7 @@ Knot-group representations, branched-cover bounds and explicit sharp families.
 
 [Topic guide](meridional-rank/README.md)
 
-**Computed obligations:** 4 unresolved; 0 resolved within their exact scope.
+**Computed obligations:** 5 unresolved; 0 resolved within their exact scope.
 
 | Principal result | Authored state | Graph status | Scope |
 |---|---|---|---|
@@ -163,13 +164,13 @@ Constructive finite etale fibres, arithmetic failures and discriminant geometry.
 
 [Topic guide](arithmetic/README.md)
 
-**Computed obligations:** 10 unresolved; 1 resolved within their exact scope.
+**Computed obligations:** 11 unresolved; 1 resolved within their exact scope.
 
 | Principal result | Authored state | Graph status | Scope |
 |---|---|---|---|
 | [Over Characteristic Zero, Every Finite Etale Algebra of Rank at Least Three Is a Full Keller Fiber](../unpublished/common-arithmetic-fibers/main.tex) | proved | proved | For every characteristic-zero field K and separable P in K[T] of degree N>=3, an ordinary polynomial A3_K self-map has determinant one, geometric degree N, full fibre naturally represented by K[T]/P and coordinate-degree bound 6N+2; every finite etale algebra of rank>=3 follows by noncanonical monogenic presentation. The char!=2 supplied-presentation extension requires nonzero first and third Hasse coefficients and is not formalized end to end. |
 | [Quantitative Hasse-Principle Failures in the Fibers of a Fixed Keller Map](../unpublished/fixed-map-hasse-failures/main.tex) | proved | proved | Classifies every Hasse-failing rational parameter on one line of a fixed degree-five Jacobian-one map and proves N(B) ~ C B^2/log B in the exact target height. |
-| [The Exact Nonproperness Locus of the Quadratic-Gauge Keller Maps](../unpublished/quadratic-gauge-nonproperness/main.tex) | partial | proved | Computes the exact reduced nonproperness locus, boundary fibre table and discriminant order for the quadratic-gauge maps. |
+| [The Exact Nonproperness Locus of the Quadratic-Gauge Keller Maps](../unpublished/quadratic-gauge-nonproperness/main.tex) | partial | open | Computes the exact reduced nonproperness locus, boundary fibre table and discriminant order for the quadratic-gauge maps. |
 | [Generic Discriminants of Polynomial Tangent Pencils](../unpublished/discriminant-pencils/main.tex) | partial | proved | For each n>=3 the written manuscript claims a nonempty Zariski-open degree-n polynomial family whose reduced projective tangent-pencil discriminant has degree n, normalization P1, one smooth infinity point, n-2 ordinary cusps, (n-2)(n-3)/2 ordinary nodes and no other singularities. The manuscript is parked and the full geometric theorem is outside its partial formalization. |
 | [Exact Real Chamber Spectra of Explicit Keller Maps](../unpublished/exact-real-chamber-spectra/main.tex) | partial | proved | For the displayed Q-polynomial Keller maps FN of generic degree N>=3, the written manuscript claims exact regular real-fibre counts N,N-2,...,N mod 2 on nonempty chambers, a rational target in every chamber and the stated fold adjacency chain. This parked manuscript remains outside submission readiness. |
 
@@ -193,7 +194,7 @@ Precisely scoped Lean developments supporting published papers and current manus
 
 [Topic guide](foundations/README.md)
 
-**Computed obligations:** 6 unresolved; 0 resolved within their exact scope.
+**Computed obligations:** 8 unresolved; 0 resolved within their exact scope.
 
 | Principal result | Authored state | Graph status | Scope |
 |---|---|---|---|
