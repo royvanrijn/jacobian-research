@@ -3,6 +3,7 @@
 import hashlib
 from pathlib import Path
 import re
+from urllib.parse import urlsplit
 
 VERIFICATIONS = {"source_read", "citation_only", "application_pending"}
 USE_ROLES = {"context", "mathematical_input", "application_unverified"}
@@ -28,17 +29,20 @@ def bibliography_items(root, paths):
 
 def normalized_url(value):
     value = value.strip().rstrip(".,;:")
+    for escaped, literal in [(chr(92)+"_", "_"), (chr(92)+"&", "&"),
+                             (chr(92)+"%", "%"), (chr(92)+"#", "#")]:
+        value = value.replace(escaped, literal)
     while value.endswith(")") and value.count(")") > value.count("("):
         value = value[:-1]
     return value.rstrip("/").replace("http://", "https://", 1)
 
 
-def markdown_external_links(graph):
+def authored_external_links(graph):
     """Inspect current authored prose, preserving balanced DOI parentheses."""
     records = graph.data.get("graph", {}).get("coverage", {}).get("documents", [])
     found = set()
     for record in records:
-        if Path(record["path"]).suffix != ".md" or record["role"] in {"documentation", "imported-source", "reference"}:
+        if Path(record["path"]).suffix not in {".md", ".tex"} or record["role"] in {"documentation", "imported-source", "reference"}:
             continue
         path = graph._path(record["path"])
         if not path.is_file():
@@ -48,7 +52,9 @@ def markdown_external_links(graph):
         text = re.sub(r"(?ms)^\s*" + fence + r".*?^\s*" + fence + r"[^\n]*", "", text)
         for value in re.findall(r"https?://[^\s<>\[\]{}]+", text):
             url = normalized_url(value.strip(chr(96) + "*"))
-            if "github.com/royvanrijn/" in url or "orcid.org/" in url:
+            parsed = urlsplit(url)
+            own_repository = parsed.hostname in {"github.com", "raw.githubusercontent.com"} and parsed.path.startswith("/royvanrijn/jacobian-research")
+            if own_repository or parsed.hostname == "orcid.org":
                 continue
             found.add((record["path"], url))
     return found
@@ -100,7 +106,7 @@ def reference_state(data, graph, paths=None):
     for value, key in sorted(wanted - accounted):
         errors.append("unmapped bibliography item: " + value + " :: " + key)
     known_urls = {normalized_url(url) for paper in papers for url in paper.get("urls", [])}
-    for value, url in sorted(markdown_external_links(graph)):
+    for value, url in sorted(authored_external_links(graph)):
         if url not in known_urls:
             errors.append("unmapped external URL: " + value + " :: " + url)
     retained = {graph._path(source["path"]) for paper in papers
@@ -110,7 +116,7 @@ def reference_state(data, graph, paths=None):
             continue
         for source in node.get("sources", []):
             path = graph._path(source["path"])
-            if "/sources/" in source["path"] and path.suffix.lower() in {".pdf", ".tex", ".typ", ".html", ".txt"}:
+            if "sources" in Path(source["path"]).parts and path.suffix.lower() in {".pdf", ".tex", ".typ", ".html", ".txt"}:
                 if path not in retained:
                     errors.append("external theorem primary/source file lacks cited-resource mapping: "
                                   + node["id"] + " :: " + source["path"])

@@ -71,14 +71,17 @@ dependence of g on W; arbitrary B(Z,W),g(Z,W) remain outside its scope.
 
 The later sections prove further obstructions for the mixed family
 P=W(h(Z)+c(Z)Y)+aY^2+u(Z)Y+k(Z). Every pure member is safe when
-deg c<=2, with no degree bound on h,u,k. More generally, nonconstant c
+deg c<=8, with no degree bound on h,u,k. More generally, nonconstant c
 with no root of multiplicity greater than two is pure exactly in the
 positive-weight zero-root form (8). Nonconstant squarefree c of any
 degree therefore admits no pure members. Arbitrary root multiplicities
 are also excluded when a is nonzero or when c,h are coprime. A further
 all-degree classification allows arbitrary multiplicities whenever h
 vanishes at least as strongly as c at each common root. In particular
-it classifies c|h, including h=0. Adding a
+it classifies c|h, including h=0. The sharp four-level calculation
+extends the classification to all common-root orders outside
+ceil(2m/3)<=ord h<=m-3, where m=ord c. In particular every common
+root of multiplicity at most eight is covered. Adding a
 constant nonzero quadratic W term forces every pure member to be
 quadratic, even with an arbitrary polynomial WY coefficient. The
 nonconstant-coefficient exclusion uses a connected algebraic double
@@ -93,10 +96,14 @@ roots in gcd(ell,c^2), subject to the explicit clean-source conditions
 below. It includes gcd(ell,c)=1 without multiplicity restrictions and
 the c=0 simple/double-root case with ell(0)!=0 or h(0)!=0. Acyclicity
 on the localization divisor preserves the original seed.
+The exceptional residual family
+Z^(2nu+1)W^2+Z^nu WY-W/2+k(Z) has no pure member for any integer nu>=1
+or polynomial k, by an elementary all-order coefficient-growth argument.
 A six-parameter mixed quartic family is completely classified by an exact
-algebraic certificate followed by an all-order weight proof. An explicit
-high-common-root cubic chart shows why strict decay on every regular
-component cannot finish the remaining W-affine cases.
+algebraic certificate followed by an all-order weight proof. Polynomial
+cubic-phase examples realize nonpositive normalized-volume order for
+every integer pair in the remaining common-root strip. They show why
+strict decay cannot be deduced from the W-affine shape alone.
 
 ## Exact circular elimination
 
@@ -898,7 +905,7 @@ Let
 
     P=W(h(Z)+c(Z)Y)+aY^2+u(Z)Y+k(Z),
 
-where c is nonconstant and the coefficient functions are complex
+where a is constant, c is nonconstant, and h,c,u,k are complex
 polynomials. Suppose every common root alpha of c,h satisfies
 
     ord_alpha h >= ord_alpha c,                         (H5)
@@ -1108,6 +1115,135 @@ and formal exponential separation contradict the complete decay bound.
 This excludes purity outside the zero-root form (H6). Its converse and
 safety follow from strict positive angular support, as already proved
 for (8).
+
+## A sharp common-root range, including multiplicity eight
+
+The preceding common-root theorem can be extended using the relations
+between all four parameter levels. In the same mixed family with
+nonconstant c, suppose every nonzero common root alpha with
+
+    m=ord_alpha c,    1<=ell=ord_alpha h<m
+
+satisfies
+
+    m-ell<=2  OR  3ell<2m.                             (SR1)
+
+Then purity is equivalent to the positive-weight form (H6), and every
+pure member is safe. Unshared roots and roots with ord h>=ord c have
+no multiplicity restriction. In particular this proves the complete
+classification when every nonzero common root has multiplicity at most
+eight in c, without a bound on deg c,h,u,k.
+
+More precisely, (SR1) is the sharp range for uniform strict positivity
+of the normalized volume on all finite-phase components at a nonzero
+common root. Its complement is exactly
+
+    ceil(2m/3)<=ell<=m-3.                              (SR2)
+
+The general cubic barrier below constructs a nonpositive-order chart for every
+integer pair in (SR2). Those examples fail purity; this is a boundary of
+the volume method, not a classification of possible pure phases there.
+
+The nonzero-a exclusion, direct zero-root classification, actual source
+localization, and complete comparison inputs are exactly those in the
+preceding common-root theorem. It remains only to prove the new local
+positivity assertion for a=0 and 1<=ell<m. Put p=m-ell>0 and
+x=(z-alpha)^(-1). The phase has the four convergent Laurent groups
+
+    phi=r^2 F2+r F1+F0+r^(-1) Fm1,
+    F2=-z^2/(2c^2),      F1=zh/c^2,
+    F0=-h^2/(2c^2)+zu/c, Fm1=k-uh/c.
+
+Their actual highest x exponents, omitting a zero group, satisfy
+
+    j2=2m,   j1=m+p,   j0=A<=max(2p,m),   jm1=B<=p.
+
+The first two leading coefficients are nonzero, since alpha!=0. Also
+A<=2m-2. These bounds already allow all coefficient cancellations.
+
+Use the exact charts and normalized volume identity (H1): v(x)=-N<0,
+with extra relative scale epsilon>=0, and
+
+    v(eta)=1-(m-1)N+epsilon.
+
+Only N>=1/(m-1) needs treatment. The group weights are
+
+    L2=2-2mN,   L1=1-(m+p)N,   L0=-AN,   Lm1=-1-BN.
+
+Their minimum L is negative. With tau=r^N x, the leading phase is
+r^L f(tau), where f has at most four distinct monomials. The convergent
+negative Laurent tails add no leading monomials. Finite phase forces
+the generic tau residue to be a constant nonzero root of f, of
+multiplicity mu. The same Vandermonde argument gives mu<=3, with
+mu<=2 unless all four levels occur. The exact Taylor-coefficient
+argument (H3) remains valid with mu=3: the mu-th derivative at a unit
+tau centre is a unit, and all higher-weight Laurent terms stay higher
+under those derivatives. Thus
+
+    epsilon>=-L/mu,
+    v(eta)>=E=1-(m-1)N-L/mu.                           (SR3)
+
+First suppose mu<=2. Classify the face by its highest parameter level;
+these alternatives exhaust all faces and omitted-group cases.
+
+* Highest level 2: L=2-2mN. For mu=1,
+  E=-1+(m+1)N>=2/(m-1)>0. For mu=2, E=N>0.
+* Highest level 1: L=1-(m+p)N. Comparison with level two gives
+  N<=1/ell. For mu=1, E=(p+1)N>0. For mu=2,
+  E=1/2+(2-ell)N/2: this is at least 1/2 if ell<=2, and at least
+  1/ell if ell>2.
+* Highest level 0: only levels zero and minus one occur, so mu=1.
+  Here A>0, and comparison with level two gives N<=2/(2m-A).
+  Combining with N>=1/(m-1) forces A>=2. If A>=m-1 then
+  E=1+(A-m+1)N>=1. Otherwise
+  E>=(A+2)/(2m-A)>0. The denominator is positive because A<=2m-2.
+* Highest level -1: a single monomial has no nonzero root, so cannot
+  supply a finite-phase component with L<0.
+
+It remains to consider mu=3. All four levels must occur, forcing
+
+    N=1/ell,   A=2p,   B=2p-ell,   L=-2p/ell.          (SR4)
+
+If ell<2p, then B>0. Because k is regular, the leading pole of Fm1
+must come from -uh/c. Thus u is nonzero, and with q=ord_alpha u,
+
+    p-q=2p-ell,    q=ell-p>=0.
+
+If ell<p this is impossible. Otherwise let C,H,U be the nonzero
+leading coefficients of c,h,u in z-alpha. Write T=tau^ell. The
+four-level face factors exactly as
+
+    f(tau)=tau^(2p-ell)(alpha T-H)
+                 [-T(alpha T-H)/(2C^2)+U/C].           (SR5)
+
+Indeed the four coefficients are -alpha^2/(2C^2), alpha H/C^2,
+-H^2/(2C^2)+alpha U/C, and -UH/C. The bracket is quadratic and
+has value U/C!=0 at the root T=H/alpha of the linear factor.
+Since T=tau^ell is etale at every nonzero tau, no nonzero root
+can have multiplicity three. Hence mu=3 requires ell>=2p.
+
+In that remaining case, (SR3)--(SR4) give
+
+    E=(3-p)/(3ell).                                   (SR6)
+
+It is positive for p<=2. This proves (SR1), since ell<2p is equivalent
+to 3ell<2m. Nonpositive order can therefore occur only for p>=3 and
+ell>=2p, equivalently (SR2). In particular m=ell+p>=3p>=9 there;
+the first possible pair is (m,ell)=(9,6).
+
+This local calculation completes the global exclusion by the precise
+source and period argument already proved for (H5). Unshared roots,
+roots with ell>=m, ordinary centres and infinity retain their positive
+orders. Every higher-order horizontal volume pole is phase-irregular
+outside the directly handled zero-root case. At finite/finite nodes the
+two positive orders give a positive power times logarithmic neck length;
+at finite/pole nodes descending exponential integration absorbs every
+fixed extra pole order. Arbitrarily large but finite multiplicity causes
+no change in that integrability statement. The complete marked model,
+including transitions between faces, successive refined scales and all
+annulus gluing maps, is retained. Thus all zero-exponential seed periods
+decay, contradicting the transported original unit seed. The converse
+and safety are the already proved positive-weight implication in (H6).
 
 ## A constant quadratic W term
 
@@ -1657,6 +1793,155 @@ example is not claimed pure; it is excluded from the theorem. Likewise
 e constant with R=0 is realizable. Those exceptional branches require a
 separate actual-seed retention argument.
 
+## A uniform obstruction on the moving-null-source-zero locus
+
+For every integer nu>=1 and every polynomial k in C[Z], the phase
+
+    P_nu = Z^(2nu+1) W^2 + Z^nu W Y - W/2 + k(Z)
+
+fails Gaussian purity. Here E[Z^p W^q Y^r] is zero unless p=q and r
+is even, in which case it equals p! (r-1)!!. All coefficients of k may
+be arbitrary complex numbers; no degree bound is imposed.
+
+This concerns the actual Wick functional. No source-localization
+isomorphism, period-selection assertion, or finite-prefix sufficiency
+is used. The result includes nu=1, ell=Z^3,c=Z,h=-1/2,a=u=0.
+More generally ell=Z^(2nu+1),c=Z^nu have g=gcd(ell,c^2)=Z^(2nu),
+e=Z,C=c^2/g=1,J0=-2Z-t, and moving null source S=-Z-t/2=J0/2.
+Thus the residual moving source vanishes for every nu in the theorem.
+The fixed root is clean, since h(0)=-1/2 is nonzero.
+
+### Exact marked base periods
+
+Put P0_nu=Z^(2nu+1)W^2+Z^nu WY-W/2 and
+B_N^(nu)(t)=E[Z^N exp(tP0_nu)], N>=0. All series are formal.
+First integrate the ordinary Gaussian Y:
+
+    B_N^(nu)(t)=E_ZW[Z^N exp(t Z^(2nu+1)W^2
+                                  +t^2 Z^(2nu)W^2/2-tW/2)].
+
+Take i copies of the first quadratic-W term, j-i of the second,
+and b copies of the linear-W term, where j>=0 and 0<=i<=j.
+Angular balance forces
+
+    b=N+(2nu-1)i+2(nu-1)(j-i)
+     =N+2(nu-1)j+i.
+
+The contracted W degree is N+2nu*j+i. The total t degree is N+2nu*j.
+The sign from (-W/2)^b is (-1)^(N+i), and all powers of 2 in the
+coefficient multiply to 2^(N+(2nu-1)j). Consequently
+
+    B_N^(nu)(t)=(-t/2)^N sum_{j>=0} 2^(-(2nu-1)j)t^(2nu*j)
+        sum_{i=0}^j (-1)^i (N+2nu*j+i)!
+          / [i!(j-i)!(N+2(nu-1)j+i)!].
+
+The factorial quotient in the inner sum is
+(2j)! binom(N+2nu*j+i,2j). The finite-difference identity
+
+    sum_{i=0}^j (-1)^i binom(j,i) binom(N+2nu*j+i,2j)
+      =(-1)^j binom(N+2nu*j,j)                       (K1)
+
+follows by expressing the binomial coefficient as [x^(2j)] of
+(1+x)^(N+2nu*j+i). The sum becomes
+
+    [x^(2j)] (1+x)^(N+2nu*j) (1-(1+x))^j
+      =(-1)^j [x^j] (1+x)^(N+2nu*j).
+
+It follows exactly that
+
+    B_N^(nu)(t)=(-t/2)^N sum_{j>=0} (-1)^j (2j-1)!!
+          2^(-2(nu-1)j) binom(N+2nu*j,j)t^(2nu*j).    (K2)
+
+Use (-1)!!=1. This is a formal identity for every N,j and every
+integer nu>=1; it is not inferred from finitely many moment values.
+
+### Polynomial perturbations cannot cancel the leading factorial term
+
+Purity first forces k(0)=0 because E[P_nu]=k(0). Write
+
+    k(Z)=sum_(ell>=1) k_ell Z^ell,
+    A=sum_(ell>=1)|k_ell| < infinity,
+    k(Z)^m=sum_N a_(m,N) Z^N.
+
+Then a_(m,N)=0 for N<m, and sum_N |a_(m,N)|<=A^m.
+Define positive numbers
+
+    L_j^(nu)=(2j-1)!! 2^(-2(nu-1)j) binom(2nu*j,j),
+    L_0^(nu)=1.
+
+For all N,j>=0, the ratio of the absolute coefficient in (K2) to
+L_j^(nu) is
+
+    2^(-N) binom(N+2nu*j,j)/binom(2nu*j,j)
+      = product_(ell=1)^N (2nu*j+ell)/(2((2nu-1)j+ell)) <= 1.  (K3)
+
+Every factor is at most one, since nu>=1. For j>=1 the exact ratio is
+
+    L_j^(nu)/L_(j-1)^(nu)
+      =2^(-(2nu-1)) (2j)(2j-1)/j^2
+         * product_(s=0)^(2nu-1)(2nu*j-s)
+           / product_(s=0)^(2nu-2)((2nu-1)j-s).        (K4)
+
+Dividing this finite product by j and taking j to infinity gives
+
+    (L_j^(nu)/L_(j-1)^(nu))/j
+      -> c_nu=2^(3-2nu)(2nu)^(2nu)/(2nu-1)^(2nu-1)>0. (K5)
+
+Hence L_j^(nu) is eventually increasing and tends to infinity. It
+therefore eventually exceeds the finite set of earlier terms, so for
+all sufficiently large q,
+
+    max_(0<=j<q) L_j^(nu)=L_(q-1)^(nu).
+
+The full actual seed expands by (K2) as
+
+    Phi_(nu,k)=B_0^(nu)
+       +sum_(m>=1,N>=m) (a_(m,N)/m!)t^m B_N^(nu).
+
+At coefficient t^(2nu*q), a perturbation contributes only when
+m+N+2nu*j=2nu*q. Thus m+N is a positive multiple of 2nu and j<=q-1.
+All rearrangements are t-adically locally finite: m+N<=2nu*q, N>=m,
+and j>=0. The coefficient estimate (K3) and the l1 norm bound yield,
+for all sufficiently large q,
+
+    [t^(2nu*q)]Phi_(nu,k)=(-1)^q L_q^(nu)+E_q,
+    |E_q| <= (exp(A)-1)L_(q-1)^(nu).                 (K6)
+
+The actual sums for a fixed coefficient are finite; extending their
+nonnegative numerical bound to sum_(m>=1) A^m/m!=exp(A)-1 is harmless.
+By (K4)-(K5), L_(q-1)^(nu)/L_q^(nu)->0. Therefore
+
+    [t^(2nu*q)]Phi_(nu,k)/((-1)^q L_q^(nu)) -> 1.      (K7)
+
+In particular these coefficients are eventually nonzero. This proves
+that Phi_(nu,k) cannot be the unit series for any polynomial k. When
+A=0 the unperturbed term is already nonzero for every q>=1.
+
+No finite cutoff uniform in k or nu is claimed. The proof is an
+arbitrary-degree obstruction derived from the exact all-order kernel.
+
+### An explicit estimate when nu=1
+
+For nu=1, L_j=(2j-1)!!binom(2j,j) is increasing from j=0, since
+
+    L_j/L_(j-1)=2(2j-1)^2/j >= 2,   j>=1.
+
+Thus (K6) holds for every integer q>=1, with exact relative error
+
+    |[t^(2q)]Phi_(1,k)-(-1)^q L_q|/L_q
+      <=(exp(A)-1)q/[2(2q-1)^2]
+      <=(exp(A)-1)/(2q).                             (K8)
+
+Every integer q>=1 with 2q>exp(A)-1 therefore gives a nonzero even
+coefficient. This gives an explicit bound in the nu=1 case and covers
+arbitrary complex k.
+
+The exact checker supplies direct Wick controls for the marked formula,
+finite-difference and ratio identities. The coefficient extraction and
+uniform estimates above prove the assertion for every nu,N,j,q and
+every complex polynomial k; those quantifiers do not come from the
+finite controls. This theorem uses no analytic period comparison.
+
 ## All-degree radial obstruction and angular support
 
 For arbitrary polynomials B,g in C[R], with R=ZW, the phase
@@ -2008,127 +2293,151 @@ This exhausts all degree cases. Any additional linear complex
 orthogonal choice of ordinary fibre direction can be composed with T
 and still preserves Q, so the obstruction covers every such frame.
 
-## A zero-order cubic chart at a high common root
+## Sharp cubic barriers throughout the remaining common-root strip
 
-This is a limitation of the strict-positive-volume proof route. It is not an
-H(2,1) counterexample, and it does not assert a rational or constant unit period.
+This section proves sharpness of the uniform strict-positive-volume range.
+It gives no pure phase or H(2,1) counterexample, and it does not assert a
+rational or constant unit period.
 
-Let H be any nonzero complex constant, q(z)=(z-1)^3, and put
+Fix integers p>=3 and ell>=2p, put m=ell+p, and choose H!=0. Set
 
-    c=q^3=(z-1)^9,
-    h=H z^2 q^2,
-    u=-(H^2/6)z^3 q,
-    k=-(H^3/54)z^5,
+    c=(z-1)^m,
+    h=H z^2 (z-1)^ell,
+    u=-(H^2/6) z^3 (z-1)^(ell-p),
+    k=-(H^3/54) z^5 (z-1)^(ell-2p),
     P=W(h(Z)+c(Z)Y)+u(Z)Y+k(Z).
 
-The original fibre is still the ordinary Gaussian Y and a=0. All coefficients
-are polynomials. At z=1, c has multiplicity 9 and h has order 6.
+All coefficients are polynomials, and Y remains the original ordinary
+Gaussian. At alpha=1 they have ord c=m and ord h=ell. The integer
+conditions are exactly
 
-### The exact cube identity
+    ceil(2m/3)<=ell<=m-3.
 
-More generally, for arbitrary polynomial c,h such that the following expressions
-are polynomial, choose
+Thus the construction covers every pair in the remaining local strip.
 
-    u=-h^2/(6 z c),       k=-h^3/(54 z c^2).
+### The exact cube and zero-action critical branch
 
-With r=1/t, s=(rz-h)/c, the eliminated phase is
+More generally, whenever the following expressions are polynomial, put
 
-    phi=-s^2/2+(u s+k)/r
-       =-(rz-2h/3)^3/(2 r z c^2).                       (1)
+    u=-h^2/(6zc),    k=-h^3/(54zc^2).
 
-To verify, multiply -2 r c^2 phi out. The result is
+For r=1/t and s=(rz-h)/c, direct expansion gives
 
-    r(rz-h)^2-2u c(rz-h)-2k c^2
-      =r^3z^2-2r^2zh+(4/3)rh^2-(8/27)h^3/z
+    phi=-s^2/2+(us+k)/r
+       =-(rz-2h/3)^3/(2rz c^2).                        (CB1)
+
+Indeed, multiplying -2r c^2 phi out gives
+
+    r(rz-h)^2-2uc(rz-h)-2kc^2
+      =r^3 z^2-2r^2 zh+(4/3)rh^2-(8/27)h^3/z
       =(rz-2h/3)^3/z.
 
-For the displayed c,h, both u and k are exactly the polynomials stated above.
-There is no residual pole at z=0 in (1): its numerator contains z^3 and its
-denominator z, leaving z^2.
+The displayed polynomial family satisfies these identities exactly.
+The apparent pole at z=0 cancels because h contains a z^2 factor.
 
-### A cubic critical point with zero action
+Set L=2H/3. A critical branch zeta tending to one is determined by
 
-Set L=2H/3. A branch zeta(r) tending to 1 is determined by
+    r=L zeta(zeta-1)^ell.
 
-    r=L zeta(zeta-1)^6.                                (2)
+After r=R^(3ell), choose A^ell=1/L. Then
 
-After r=R^6, it has a convergent expansion
+    zeta=1+A R^3+O(R^6).
 
-    zeta=1+A R+O(R^2),       A^6=1/L=3/(2H).
+For F(r,z)=rz-(2/3)h(z), the centre value is exactly zero, and
 
-Each of the six choices of A is nonzero. Let F(r,z)=rz-(2/3)h(z).
-Equation (2) says F(r,zeta)=0 exactly, not just to leading order. By (1),
-phi(r,zeta)=0 and phi_z,phi_zz vanish there. The third derivative is nonzero,
-since
+    F_z(r,zeta)
+      =-L zeta(zeta-1)^(ell-1)[(ell+1)zeta-1]
+      =-ell A^(-1) R^(3ell-3)+higher order.
 
-    F_z(r,zeta)=-L zeta(zeta-1)^5(7zeta-1)
-               =-6 A^-1 R^5+O(R^6).
+Thus phi and its first two z derivatives vanish exactly at the centre,
+while the third derivative is nonzero for nonzero sufficiently small r.
+This is a cubic critical point of exact zero action, rather than a
+truncated cancellation of its critical value.
 
-The critical point is thus cubic of Milnor multiplicity two, with exact
-zero critical action for every nonzero sufficiently small r.
+### The exact stationary chart and normalized seed order
 
-### The stationary scale and normalized volume
+Use
 
-Use the exact chart
+    z=zeta+R^(2p+3)X.
 
-    z=zeta(r)+r^(1/2) X=zeta(R^6)+R^3 X.
+The displacement is smaller than zeta-1 by the positive factor R^(2p).
+Consequently the linear term of F has leading term
 
-Then F_z(r,zeta)r^(1/2)X has leading term -6 A^-1 R^8 X, whereas
-2 r z c^2 has leading term 2 A^18 R^24. It follows from (1) that
+    -ell A^(-1) R^(3ell+2p)X,
 
-    phi(r,zeta+r^(1/2)X)=108 A^-21 X^3+O(R),            (3)
+and all higher Taylor terms have larger order. The denominator in (CB1)
+has leading term 2 A^(2m) R^(9ell+6p). Hence
 
-where each coefficient of a fixed R order in the error is polynomial in X.
-The normalized spatial volume from circular elimination is
+    phi=ell^3/(2A^(2m+3)) X^3+O(R),
+    eta=r dz/c=R^(3-p)[A^(-m)+O(R)]dX.                 (CB2)
 
-    eta=r dz/c(z)
-       =[A^-9+O(R)]dX.                                (4)
+At each fixed R order the coefficients of the perturbations are
+polynomials in X. The chart defines a divisorial disc valuation, realized
+by smooth point blowups after the displayed finite ramification. Its
+nonconstant finite cubic phase is retained in the complete marked model.
+Since v(r)=1, the normalized volume has exact order
 
-Indeed c(zeta)=A^9 R^9+O(R^10), r=R^6 and dz=R^3 dX. The leading
-coefficient A^-9 is nonzero. Thus the finite-phase chart has normalized
-volume of order exactly zero, not positive order.
+    (3-p)/(3ell).
 
-This also gives a formal zero-exponential local functional with nonzero
-constant seed coefficient. For the fixed cubic C X^3, C=108 A^-21, choose
-the dual functional ell_0 on C[X]/(partial_X+3 C X^2)C[X] with
-ell_0(1)=1 and ell_0(X)=0. The positive-order perturbation in (3) and the
-volume unit in (4) produce the usual coefficientwise exponential functional.
-Its seed value is A^-9+O(R), with no negative-power exponential action,
-because the centre action is identically zero. Every coefficient uses
-finitely many polynomial terms. Spatial exactness and parameter horizontality
-follow from the same moving-coordinate product rule as in the formal
-stationary-ball construction. This does not say that this seed value is
-rational or identically constant.
+The order is zero for p=3 and negative for p>3, with nonzero leading
+coefficient A^(-m). Thus no uniform strictly-positive-volume statement
+can extend to any further integer pair in the local strip. The first
+zero-order pair is (m,ell)=(9,6); the first negative-order pair is
+(12,8), where the order is -1/24.
 
-Consequently a proposed extension that required strict positive normalized
-volume on every finite-phase component, or strict decay of every regular seed
-period, cannot hold for the full W-affine family. The special Gaussian-square
-structure does not remove this obstruction.
-This rules out deriving strict positivity from the W-affine shape alone.
-Additional consequences of purity could still exclude these charts, since
-the displayed phase is not pure.
+The nonzero local seed is also explicit. For the fixed cubic C X^3,
+C=ell^3/(2A^(2m+3)), choose the dual functional ell_0 with
+ell_0(1)=1 and ell_0(X)=0 on
+C[X]/(partial_X+3C X^2)C[X]. Applying it coefficientwise to the
+positive-order exponential perturbation and volume unit in (CB2)
+gives a zero-exponential local seed value
 
-### The original phase fails purity
+    R^(3-p)[A^(-m)+O(R)].
 
-Exact circular/ordinary Gaussian contraction gives
+Every coefficient uses finitely many polynomial terms. Spatial exactness
+and parameter horizontality follow from the same moving-coordinate
+product rule as in the retained formal stationary construction. A
+constant rescaling can normalize the leading coefficient to one. This
+does not make the resulting series rational or identically constant.
 
-    E[P]=0,       E[P^2]=306.
+For the original multiplicity-nine example, take ell=6,p=3,m=9 and
+q(z)=(z-1)^3. Then c=q^3, h=H z^2q^2,
+u=-(H^2/6)z^3q and k=-(H^3/54)z^5. In the smaller ramification
+r=T^6, zeta=1+A T+O(T^2), A^6=3/(2H), its chart is
 
-For the first identity, the only Y-even term with W is H W z^2 q^2,
-whose required z^1 coefficient vanishes. The k term is proportional to z^5.
-For the second, the only surviving term is (W q^3 Y)^2:
+    z=zeta+T^3 X=zeta+r^(1/2)X,
+    phi=108 A^(-21)X^3+O(T),
+    eta=[A^(-9)+O(T)]dX.
 
-    E[W^2 q(Z)^6 Y^2]
-       =2![z^2](z-1)^18=2 binom(18,2)=306.
+This recovers the exact order-zero barrier while placing it in the full
+sharp family.
 
-Every other square or cross term has odd Y degree, or too high a positive
-z-minus-W weight for a circular contraction. Thus this example cannot be
-reported as a pure phase or an H(2,1) counterexample. It is an exact obstruction
-to the stronger proof method, and a guide to the first zero-order local stratum.
+### Every displayed phase fails purity
+
+Exact circular and ordinary Gaussian contraction gives, for the entire
+family,
+
+    E[P]=0,    E[P^2]=2 binom(2m,2)!=0.
+
+The only surviving square term is (WcY)^2, whose expectation is
+
+    2! [z^2] (z-1)^(2m)=2 binom(2m,2).
+
+All other square and cross terms have odd Y degree or too much positive
+z-minus-W weight: h contains z^2, u contains z^3 and k contains z^5.
+The first moment vanishes for the same reason. At m=9 the second moment
+is 306, independently of H.
+
+These are exact obstructions to universal strict positivity, not pure
+phases. Additional consequences of purity or a way to select the actual
+Gaussian period could still exclude the local strip; the polynomial
+shape and the Gaussian-square coefficient relations alone cannot do so
+through a strict-positive-volume argument.
 
 ## Verification scope and remaining question
 
-The proof above is unrestricted in all polynomial degrees. It uses the
+The all-degree classifications have precisely the coefficient and root
+hypotheses stated in their sections. The affine-chart proof uses the
 formal residue calculation and rational identities already present in
 the boundary manuscript's cubic algebraic subcase; it adds the complete
 all-degree classification, marker bounds and the exclusion of every
@@ -2141,7 +2450,11 @@ the mixed-source bridges, the simple-puncture partial fractions,
 the reciprocal double-root phase and the polynomial-orbit coefficients,
 as well as finite Wick regression controls for the radial quartic formula.
 It also checks the variable-precision determinant and source identities,
-the zero-order common-root cubic chart and its nonzero second moment.
+the sharp four-level common-root factor and scale identities, and
+the representative cubic chart with its nonzero second moment,
+and the marked coefficient identities in the all-degree residual-source
+obstruction. The local common-root proof has symbolic controls for its
+phase groups and exact scale inequalities.
 For the six-parameter quartic family it verifies the exact finite
 completeness certificate, including the nonzero modular Sylvester
 determinant and the final cross-product equations. The proof explains
@@ -2160,22 +2473,26 @@ those checks do not certify the imported stationary-ball or marked-model
 arguments. The radial quartic and polynomial-orbit obstructions also
 have the elementary all-order proofs displayed above.
 
-General H(2,1) remains open. The next cases beyond this result include
-B=c(Z)W+u(Z) with a=0 and a common root of c,h having multiplicity
-at least three in c and strictly smaller positive h-order, outside the
-zero-root case. Common roots with ord h>=ord c are now classified.
-The explicit multiplicity-nine
-example above has a finite-phase cubic chart with volume order zero.
-Thus a universal strict-positive-volume bound, even retaining the Gaussian
-square, cannot close this family; the actual Gaussian period selection
-requires further control.
+General H(2,1) remains open. In the W-affine mixed family, the remaining
+common-root orders are precisely the strip
+
+    m=ord_alpha c>=9,    ceil(2m/3)<=ord_alpha h<=m-3,
+
+at a nonzero common root, with a=0 and outside the direct zero-root case.
+All other root-order pairs are classified without a degree bound.
+The strip is sharp for a uniform strictly-positive-volume proof: the
+polynomial cubic barriers realize order zero or negative order at every
+pair there, while failing purity. Additional consequences of purity or
+control of the actual Gaussian period are still needed in this strip.
 
 For polynomial ell(Z)W^2, the exclusion above leaves degree-one ell,
 roots of multiplicity at least three in gcd(ell,c^2), and the fixed or
 moving source exceptions. In the moving case the explicit failure
 condition is R=0 and requires ell/gcd(ell,c^2) to be constant or a
-scalar multiple of z. The remaining cases also include the unclean
-zero-root source. General W degree at least three in g, or
+scalar multiple of z. The monomial residual family in the uniform
+obstruction above is excluded independently, even for high multiplicity.
+The remaining cases also include the unclean zero-root source.
+General W degree at least three in g, or
 at least two in B, also remains open beyond the exact six-parameter
 quartic classification. All statements continue to require the ordinary
 nonisotropic Gaussian fibre Y. The scoped results and the method

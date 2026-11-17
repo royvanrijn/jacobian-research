@@ -25,7 +25,7 @@ python -m pip install -r requirements.txt
 python verify.py
 ```
 
-The verifier regenerates the moment polynomials, checks every displayed elimination, and verifies the small resultant obstruction modulo 19. It uses rational and finite-field arithmetic, with no external polynomial data. Optimized Python (`python -O`) is rejected so that assertions cannot be silently disabled.
+The verifier regenerates the moment polynomials, checks every displayed elimination, and verifies the three short Euclidean remainders modulo 19 (with an optional determinant cross-check). It also checks the local boundary and shear identities. It uses rational and finite-field arithmetic, with no external polynomial data. Optimized Python (`python -O`) is rejected so that assertions cannot be silently disabled.
 
 ## Review and scope
 

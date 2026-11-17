@@ -1,4 +1,4 @@
-"""Exact identity checks and bounded controls for the affine isotropic chart.
+"""Exact identities, a fixed-family certificate and bounded Wick controls.
 
 The written proof supplies completeness and unrestricted degree coverage.
 This checker supplies symbolic identity checks, explicitly bounded controls,
@@ -543,33 +543,35 @@ def shared_quadratic_source_controls():
 def moving_nullsource_zero_controls():
     """Actual-seed identities behind the written arbitrary-polynomial exclusion."""
     n = sp.symbols("n", integer=True, nonnegative=True)
+    family_n = sp.symbols("family_n", integer=True, positive=True)
     # The general-j proof is coefficient extraction from
-    # (1+x)^(n+2j) (1-(1+x))^j. Here n stays symbolic.
+    # (1+x)^(n+2*family_n*j) (1-(1+x))^j. Both parameters stay symbolic.
     for j in range(8):
         def choose_polynomial(top, bottom):
             return sp.prod(top-index for index in range(bottom))/sp.factorial(bottom)
         difference = sum(
-            (-1)**a*sp.binomial(j, a)*choose_polynomial(n+2*j+a, 2*j)
+            (-1)**a*sp.binomial(j, a)*choose_polynomial(n+2*family_n*j+a, 2*j)
             for a in range(j+1))
-        zero(difference-(-1)**j*choose_polynomial(n+2*j, j))
+        zero(difference-(-1)**j*choose_polynomial(n+2*family_n*j, j))
 
-    def base_coefficient(marker_degree, order):
-        if order < marker_degree or (order-marker_degree) % 2:
+    def base_coefficient(marker_degree, order, nu=1):
+        if order < marker_degree or (order-marker_degree) % (2*nu):
             return sp.Integer(0)
-        j = (order-marker_degree)//2
+        j = (order-marker_degree)//(2*nu)
         return ((-sp.Rational(1, 2))**marker_degree*(-1)**j
-                * sp.factorial2(2*j-1)*sp.binomial(marker_degree+2*j, j))
+                * sp.factorial2(2*j-1)*sp.Rational(1, 2)**(2*(nu-1)*j)
+                * sp.binomial(marker_degree+2*nu*j, j))
 
     # Independent direct Wick contractions of the original three-variable P0,
     # rather than contractions of its eliminated or localized source.
-    p0 = Z**3*W**2+Z*W*Y-W/2
-    base = sparse(p0)
-    power = {(0, 0, 0): Fraction(1)}
-    for order in range(11):
-        for marker_degree in range(5):
-            assert (wick(power, (marker_degree, 0, 0))/math.factorial(order)
-                    == base_coefficient(marker_degree, order))
-        power = multiply(power, base)
+    for nu in range(1, 5):
+        base = sparse(Z**(2*nu+1)*W**2+Z**nu*W*Y-W/2)
+        power = {(0, 0, 0): Fraction(1)}
+        for order in range(11):
+            for marker_degree in range(5):
+                assert (wick(power, (marker_degree, 0, 0))/math.factorial(order)
+                        == base_coefficient(marker_degree, order, nu))
+            power = multiply(power, base)
 
     # The algebraic Gaussian kernel reproduces every B_n by the written
     # binomial-series identity. These controls retain several nonzero markers.
@@ -599,31 +601,394 @@ def moving_nullsource_zero_controls():
     gaussian_s = cover_u/(t*(1-cover_u**2))
     cover_v = (1+cover_u**2)/(1-cover_u**2)
     zero(cover_v**2-1-4*t**2*gaussian_s**2)
-    zero(cover_z+t/(1+cover_v))
+    zero(sp.together(cover_z+t/(1+cover_v)))
     zero(effective.subs(z, cover_z)+gaussian_s**2/2)
     volume_ratio = (sp.diff(cover_z, cover_u)/(t*cover_z*cover_u)
                     / sp.diff(gaussian_s, cover_u))
     zero(volume_ratio+2/cover_v)
 
     k0, k1 = sp.symbols("k0 k1")
+    p0 = Z**3*W**2+Z*W*Y-W/2
     zero(expectation(p0+k0+k1*Z)-k0)
     zero(expectation((p0+k1*Z)**2)+4+k1)
     p = sp.symbols("p", integer=True, positive=True)
     leading = sp.factorial(2*p)**2/(2**p*sp.factorial(p)**3)
     previous = sp.factorial(2*p-2)**2/(2**(p-1)*sp.factorial(p-1)**3)
     zero(sp.combsimp(previous/leading)-p/(2*(2*p-1)**2))
+    for nu in range(1, 5):
+        exact_ratio = (sp.Rational(1, 2)**(2*nu-1)*(2*p)*(2*p-1)/p**2
+                       * sp.prod(2*nu*p-index for index in range(2*nu))
+                       / sp.prod((2*nu-1)*p-index for index in range(2*nu-1)))
+        leading_nu = (sp.factorial(2*p)*sp.factorial(2*nu*p)
+                      / (2**((2*nu-1)*p)*sp.factorial(p)**2
+                         * sp.factorial((2*nu-1)*p)))
+        zero(sp.combsimp(leading_nu/leading_nu.subs(p, p-1))-exact_ratio)
+        ratio_constant = (sp.Rational(2)**(3-2*nu)*(2*nu)**(2*nu)
+                          / sp.Integer(2*nu-1)**(2*nu-1))
+        zero(sp.limit(exact_ratio/p, p, sp.oo)-ratio_constant)
+        assert ratio_constant > 0
+        for marker_degree in range(5):
+            for j in range(6):
+                marker_ratio = (sp.Rational(1, 2)**marker_degree
+                                * sp.binomial(marker_degree+2*nu*j, j)
+                                / sp.binomial(2*nu*j, j))
+                product_ratio = sp.prod(
+                    sp.Rational(2*nu*j+index, 2*((2*nu-1)*j+index))
+                    for index in range(1, marker_degree+1))
+                assert marker_ratio == product_ratio and 0 < marker_ratio <= 1
     return {
         "kind": "actual-seed identities supporting a written all-order obstruction",
-        "phase": "Z^3 W^2+ZWY-W/2+k(Z), arbitrary k in C[Z]",
-        "conclusion": "no polynomial k makes the phase pure",
-        "marked_base_formula": "B_n=(-t/2)^n sum_j (-1)^j (2j-1)!! binom(n+2j,j)t^(2j)",
-        "direct_Wick_controls": {"marker_degrees": [0, 4], "moment_orders": [0, 10]},
-        "finite_difference_controls": {"n": "symbolic", "j": [0, 7]},
-        "Gaussian_kernel_controls": {"marker_degrees": [0, 4], "series_orders": [0, 7]},
+        "phase": "Z^(2nu+1) W^2+Z^nu WY-W/2+k(Z), integer nu>=1, arbitrary k in C[Z]",
+        "conclusion": "no member of this all-degree family is pure",
+        "marked_base_formula": "B_N=(-t/2)^N sum_j (-1)^j (2j-1)!! 2^(-2(nu-1)j) binom(N+2nu*j,j)t^(2nu*j)",
+        "direct_Wick_controls": {"nu": [1, 4], "marker_degrees": [0, 4], "moment_orders": [0, 10]},
+        "finite_difference_controls": {"N": "symbolic", "nu": "symbolic", "j": [0, 7]},
+        "Gaussian_kernel_controls": {"nu": 1, "marker_degrees": [0, 4], "series_orders": [0, 7]},
         "source_exception": {"ell": "Z^3", "c": "Z", "h": "-1/2",
                              "a": 0, "u": 0, "R": 0, "J0": "-2Z-t"},
         "relative_even_coefficient_bound": "(exp(A)-1)*p/[2(2p-1)^2], A=sum_l |k_l|, k0=0",
-        "scope": "The written finite-difference identity and uniform complex-coefficient estimate prove the arbitrary-degree exclusion. These computations check exact algebraic identities and finite Wick controls; no prefix sufficiency is used.",
+        "general_ratio_limit": "(L_j/L_(j-1))/j -> 2^(3-2nu)(2nu)^(2nu)/(2nu-1)^(2nu-1)>0",
+        "ratio_controls": {"nu": [1, 4], "j": "symbolic"},
+        "scope": "The written finite-difference identity and uniform complex-coefficient estimate prove the arbitrary-degree exclusion for every nu>=1. These computations check exact algebraic identities and finite Wick controls; no prefix sufficiency is used. The displayed explicit relative bound is for nu=1.",
+    }
+
+
+def divisible_mixed_source_controls():
+    """Phase-group and scale identities for regular h/c at common roots."""
+    z, r, c, v, u, k = sp.symbols("z r c v u k")
+    h = c*v
+    source = (r*z-h)/c
+    phase = -source**2/2+(u*source+k)/r
+    groups = (-r**2*z**2/(2*c**2)+r*z*v/c
+              -v**2/2+z*u/c+(k-u*v)/r)
+    zero(phase-groups)
+    for power, coefficient in {
+        2: -z**2/(2*c**2), 1: z*v/c,
+        0: -v**2/2+z*u/c, -1: k-u*v,
+    }.items():
+        zero(sp.expand(phase).coeff(r, power)-coefficient)
+
+    m, N, epsilon, L, mu, A, j1 = sp.symbols("m N epsilon L mu A j1")
+    # H1 and H3 combine without assumptions on the Puiseux-centre shifts.
+    volume_order = 1-(m-1)*N+epsilon
+    E = 1-(m-1)*N-L/mu
+    zero(volume_order.subs(epsilon, -L/mu)-E)
+    level_two = 2-2*m*N
+    zero(E.subs({L: level_two, mu: 1})-(-1+(m+1)*N))
+    zero(E.subs({L: level_two, mu: 2})-N)
+    zero((-1+(m+1)*N).subs(N, 1/(m-1))-2/(m-1))
+
+    level_zero_E = E.subs({L: -A*N, mu: 1})
+    zero(level_zero_E-(1+(A-m+1)*N))
+    zero(level_zero_E.subs(N, 2/(2*m-A))-(A+2)/(2*m-A))
+
+    # For j1<=m, this remainder is nonnegative; on H2 the lower bound
+    # m*N-1 is strictly positive, as its endpoint is 1/(m-1).
+    level_one = 1-j1*N
+    zero((level_one-level_two)-(m*N-1)-(m-j1)*N)
+    zero((m*N-1).subs(N, 1/(m-1))-1/(m-1))
+
+    # Ideal-membership form of the zero-root conditions for c|h:
+    # c=z^2*C implies h=z^2*C*V, while u=z*U and k=z*K.
+    # These are arbitrary functions, not selected polynomial examples.
+    Cfun, Vfun, Ufun, Kfun = (sp.Function(name)(z)
+                             for name in ("C", "V", "U", "K"))
+    c_zero = z**2*Cfun
+    h_zero = c_zero*Vfun
+    u_zero = z*Ufun
+    k_zero = z*Kfun
+    zero(h_zero/z**2-Cfun*Vfun)
+    zero(c_zero.subs(z, 0))
+    zero(sp.diff(c_zero, z).subs(z, 0))
+    zero(h_zero.subs(z, 0))
+    zero(sp.diff(h_zero, z).subs(z, 0))
+    zero(u_zero.subs(z, 0))
+    zero(k_zero.subs(z, 0))
+
+    return {
+        "status": "passed",
+        "symbolic": [
+            "h=c*v phase with r-levels 2,1,0,-1",
+            "H1/H3 volume lower bound",
+            "level-two simple and double-root bounds",
+            "level-zero endpoint (A+2)/(2m-A)",
+            "level-one weight separation and positive H2 endpoint",
+            "c in (z^2), h in (c) imply h in (z^2)",
+            "zero-root conditions u,k in (z)",
+        ],
+        "scope": "Exact identities and ideal conditions; no moment prefixes or sampled phases.",
+    }
+
+
+def common_root_sharp_range_controls():
+    """Exact identities behind the written all-multiplicity local range."""
+    z, r = sp.symbols("sharp_z sharp_r", nonzero=True)
+    c, h, u, k = sp.symbols("sharp_c sharp_h sharp_u sharp_k", nonzero=True)
+    source = (r*z-h)/c
+    phase = -source**2/2+(u*source+k)/r
+    groups = (-r**2*z**2/(2*c**2)+r*z*h/c**2
+              -h**2/(2*c**2)+z*u/c+(k-u*h/c)/r)
+    zero(phase-groups)
+
+    ell, p = sp.symbols("sharp_ell sharp_p", integer=True, positive=True)
+    m = ell+p
+    N = sp.symbols("sharp_N", positive=True)
+    A, B, L, mu = sp.symbols("sharp_A sharp_B sharp_L sharp_mu")
+    E = 1-(m-1)*N-L/mu
+    level_two = 2-2*m*N
+    level_one = 1-(m+p)*N
+    level_zero = -A*N
+    level_minus_one = -1-B*N
+
+    # Highest-level-one faces satisfy ell*N<=1 by comparison with level two.
+    # The displayed remainders prove the exact endpoint lower bounds used
+    # in the written case split (ell<=2 versus ell>2).
+    zero((level_one-level_two)-(ell*N-1))
+    one_simple = E.subs({L: level_one, mu: 1})
+    one_double = E.subs({L: level_one, mu: 2})
+    zero(one_simple-(p+1)*N)
+    zero(one_simple.subs(N, 1/(m-1))-(p+1)/(m-1))
+    zero(one_double-(sp.Rational(1, 2)+(2-ell)*N/2))
+    zero(one_double.subs(N, 1/ell)-1/ell)
+    zero(one_double-1/ell-(ell-2)*(1/ell-N)/2)
+
+    # A four-level face forces these weights exactly; no multiplicity
+    # samples or finite search over root orders is used.
+    forced = {N: 1/ell, A: 2*p, B: 2*p-ell}
+    common_weight = -2*p/ell
+    for weight in (level_two, level_one, level_zero, level_minus_one):
+        zero(weight.subs(forced)-common_weight)
+    zero((level_zero-level_two).subs(N, 1/ell)-(2*p-A)/ell)
+    zero((level_minus_one-level_two).subs(N, 1/ell)-(2*p-ell-B)/ell)
+    triple_volume = E.subs({N: 1/ell, L: common_weight, mu: 3})
+    zero(triple_volume-(3-p)/(3*ell))
+    zero((m-3*p)-(ell-2*p))
+    zero((3*ell-2*m)-(ell-2*p))
+
+    # When B=2p-ell>0, regularity of k forces ord(u)=ell-p.
+    # The correlated four coefficients then have this exact factorization.
+    alpha, lead_c, lead_h, lead_u = sp.symbols(
+        "sharp_alpha sharp_C sharp_H sharp_U", nonzero=True)
+    tau_power = sp.symbols("sharp_T")
+    face = (-alpha**2*tau_power**3/(2*lead_c**2)
+            +alpha*lead_h*tau_power**2/lead_c**2
+            +(-lead_h**2/(2*lead_c**2)+alpha*lead_u/lead_c)*tau_power
+            -lead_u*lead_h/lead_c)
+    bracket = -tau_power*(alpha*tau_power-lead_h)/(2*lead_c**2)+lead_u/lead_c
+    zero(face-(alpha*tau_power-lead_h)*bracket)
+    zero(bracket.subs(tau_power, lead_h/alpha)-lead_u/lead_c)
+    assert (lead_u/lead_c).is_zero is False
+
+    # The generic cube identity is already checked by common_root_cubic_barrier.
+    # For h=H*z^2*(z-1)^ell, retain ell symbolically and compute through the
+    # logarithmic derivative to avoid replacing an arbitrary order by samples.
+    parameter_h = sp.symbols("sharp_parameter_H", nonzero=True)
+    model_h = parameter_h*z**2*(z-1)**ell
+    log_derivative = sp.cancel(sp.diff(model_h, z)/model_h)
+    zero(log_derivative-2/z-ell/(z-1))
+    critical_r = sp.Rational(2, 3)*parameter_h*z*(z-1)**ell
+    critical_fz = critical_r-sp.Rational(2, 3)*model_h*log_derivative
+    zero(critical_fz/model_h
+         +sp.Rational(2, 3)*((ell+1)*z-1)/(z*(z-1)))
+    # This is -(2H/3) z (z-1)^(ell-1) ((ell+1)z-1),
+    # expressed with a common symbolic power for exact rational reduction.
+    expected_fz = (-sp.Rational(2, 3)*model_h
+                   *((ell+1)*z-1)/(z*(z-1)))
+    zero(critical_fz-expected_fz)
+
+    # With r=R^(3ell), zeta-1~A*R^3 and displacement R^(2p+3)X:
+    # numerator and denominator orders agree, while eta has order 3-p.
+    fz_order = 3*ell-3
+    displacement_order = 2*p+3
+    factor_order = fz_order+displacement_order
+    denominator_order = 3*ell+6*m
+    zero(factor_order-(3*ell+2*p))
+    zero(3*factor_order-(9*ell+6*p))
+    zero(denominator_order-(9*ell+6*p))
+    volume_R_order = 3*ell+displacement_order-3*m
+    zero(volume_R_order-(3-p))
+    zero(volume_R_order/(3*ell)-(3-p)/(3*ell))
+    chart_a = sp.symbols("sharp_chart_A", nonzero=True)
+    leading_cubic = -(-ell/chart_a)**3/(2*chart_a**(2*m))
+    zero(sp.powsimp(leading_cubic-ell**3/(2*chart_a**(2*m+3))))
+
+    return {
+        "status": "passed",
+        "symbolic": [
+            "generic four-level W-affine phase",
+            "highest-level-one simple/double-root volume and endpoint bounds",
+            "forced four-level weights N=1/ell,A=2p,B=2p-ell",
+            "triple-root volume (3-p)/(3ell)",
+            "four-level factorization and nonzero bracket at the linear root",
+            "symbolic-ell critical F_z identity through logarithmic derivative",
+            "cubic numerator/denominator order 9ell+6p and volume order 3-p",
+        ],
+        "written_local_range": {
+            "orders": "m=ord c, ell=ord h, p=m-ell>0 at a nonzero common root",
+            "uniform_positive_if": "p<=2 or ell<2p",
+            "sharp_exceptional_strip": "p>=3 and ell>=2p; equivalently ceil(2m/3)<=ell<=m-3",
+            "all_multiplicities": "The exhaustive face proof establishes this range for all integer orders; it is not finite test coverage.",
+            "multiplicity_eight": "m<=8 admits no exceptional pair because the strip requires m>=3p>=9",
+        },
+        "generic_critical_F_z": "-(2H/3) z (z-1)^(ell-1) ((ell+1)z-1)",
+        "generic_chart": {"r": "R^(3ell)", "zeta": "1+A R^3+O(R^6)",
+                          "displacement": "R^(2p+3) X",
+                          "phase_leading": "ell^3 X^3/(2 A^(2m+3))",
+                          "normalized_volume": "R^(3-p)(A^-m+O(R)) dX"},
+        "representative_actual_chart": "common_root_cubic_barrier checks m=9,ell=6,p=3 exactly, including M2=306",
+        "scope": "Exact symbolic identities only. The written proof supplies exhaustive faces, the all-order sharp range and complete period comparison. No finite root-order prefix is used or claimed.",
+    }
+
+
+
+
+def tilted_nullsource_zero_controls():
+    """Actual Wick controls for the written analytic-amplitude exclusion."""
+    z, w, y, t = Z, W, Y, T
+    a = sp.symbols("tilted_a")
+    d = 1-2*a*t
+
+    def tilted_coefficients(nu, marker_degree, order):
+        value = 0
+        for j in range(max(0, (order-marker_degree)//(2*nu)+1)):
+            coefficient = ((-sp.Rational(1, 2))**marker_degree*(-1)**j
+                           *sp.factorial2(2*j-1)*sp.Rational(1, 2)**(2*(nu-1)*j)
+                           *sp.binomial(marker_degree+2*nu*j, j))
+            value += (coefficient*t**(marker_degree+2*nu*j)
+                      *d**(-marker_degree-sp.Rational(3, 2)-(2*nu+1)*j))
+        return sp.series(value, t, 0, order+1).removeO().expand()
+
+    # The Gaussian tilt is a polynomial-marker identity. Its two factors
+    # are j!*d^(-j-1) and (2r-1)!!*d^(-r-1/2); this verifies their symbolic
+    # density and covariance exponents for arbitrary balanced monomials.
+    pair_order, gaussian_order = sp.symbols(
+        "tilted_pair_order tilted_gaussian_order", integer=True, nonnegative=True)
+    tilt_left = (sp.factorial(pair_order)*d**(-pair_order-1)
+                 *sp.factorial2(2*gaussian_order-1)
+                 *d**(-gaussian_order-sp.Rational(1, 2)))
+    tilt_right = (d**(-sp.Rational(3, 2))*sp.factorial(pair_order)
+                  *sp.factorial2(2*gaussian_order-1)*d**(-pair_order-gaussian_order))
+    assert sp.powsimp(tilt_left/tilt_right, force=True) == 1
+
+    # Independent original three-variable Wick contractions with symbolic a.
+    # These are bounded controls, separate from the unrestricted kernel proof.
+    for nu in range(1, 4):
+        p0 = z**(2*nu+1)*w**2+z**nu*w*y-w/2
+        base = p0+a*(2*z*w+y*y)
+        power = sp.Integer(1)
+        marked = [sp.Integer(0)]*4
+        for order in range(9):
+            if order:
+                power = sp.expand(power*base)
+            for marker_degree in range(4):
+                marked[marker_degree] += (expectation(z**marker_degree*power)
+                                          *t**order/math.factorial(order))
+        for marker_degree in range(4):
+            zero(marked[marker_degree]-tilted_coefficients(nu, marker_degree, 8))
+
+        lam = d**sp.Rational(1, 2*nu)
+        tau = t*d**(-sp.Rational(2*nu+1, 2*nu))
+        for marker_degree in range(4):
+            for j in range(4):
+                lhs = (d**(-marker_degree-sp.Rational(3, 2)-(2*nu+1)*j)
+                       *t**(marker_degree+2*nu*j))
+                rhs = d**(-sp.Rational(3, 2))*lam**marker_degree*tau**(marker_degree+2*nu*j)
+                # All powers are analytic germs of the same unit d, with
+                # constant coefficient one; their exponents therefore combine.
+                assert sp.powsimp(lhs/rhs, force=True) == 1
+
+    # The reparametrization exponent balance also remains symbolic in nu,N,j.
+    nu = sp.symbols("tilted_nu", integer=True, positive=True)
+    marker_degree, j = sp.symbols("tilted_N tilted_j", integer=True, nonnegative=True)
+    left_exponent = -marker_degree-sp.Rational(3, 2)-(2*nu+1)*j
+    right_exponent = (-sp.Rational(3, 2)+marker_degree/(2*nu)
+                      -(2*nu+1)*(marker_degree+2*nu*j)/(2*nu))
+    zero(left_exponent-right_exponent)
+    reparametrization = t*d**(-(2*nu+1)/(2*nu))
+    zero(reparametrization.subs(t, 0))
+    zero(sp.diff(reparametrization, t).subs(t, 0)-1)
+
+    # Exact algebraic phase identity for arbitrary polynomial v and c=z^nu.
+    # Treating c and v as symbols already verifies this identity without
+    # a degree bound; the polynomial Wick shift is checked separately below.
+    c_symbol, v_symbol, k_symbol = sp.symbols("tilted_c tilted_v tilted_k")
+    u_symbol = c_symbol*v_symbol
+    residual_k = k_symbol-z*u_symbol**2
+    generic_base = z*c_symbol**2*w**2+c_symbol*w*y-w/2+a*(2*z*w+y*y)
+    original = (a*(2*z*w+y*y)+z*(c_symbol*w+u_symbol)**2
+                +(c_symbol*w+u_symbol)*y-w/2+residual_k)
+    translated = generic_base+v_symbol/2+residual_k-2*a*z*v_symbol
+    zero(original-translated.subs(w, w+v_symbol))
+
+    v0, v1, k0, k1 = sp.symbols("tilted_v0 tilted_v1 tilted_k0 tilted_k1")
+    v = v0+v1*z
+    k = k0+k1*z
+    for nu_value in range(1, 3):
+        c = z**nu_value
+        u = c*v
+        residual_k = k-z*u*u
+        p0 = z**(2*nu_value+1)*w*w+z**nu_value*w*y-w/2
+        original = a*(2*z*w+y*y)+z*(c*w+u)**2+(c*w+u)*y-w/2+residual_k
+        translated = p0+a*(2*z*w+y*y)+v/2+residual_k-2*a*z*v
+        zero(original-translated.subs(w, w+v))
+        for marker in (sp.Integer(1), z, z*z, y*y, z*y*y):
+            for w_power in range(5):
+                left = expectation(marker*(w+v)**w_power)
+                # Only finitely many Z powers contract this fixed W degree.
+                # Thus the verifier uses polynomial markers exclusively.
+                truncation = sp.series(sp.exp(z*v), z, 0, w_power+1).removeO()
+                right = expectation(marker*w**w_power*truncation)
+                zero(left-right)
+        amplitude = sp.exp(d*z*v+t*(v/2+residual_k))
+        zero(amplitude.subs({t: 0, z: 0})-1)
+
+    # Full original residual-locus source, independently compared with its
+    # translated tilted kernel, for symbolic a,v0,k0,k1 through order four.
+    u = z*v0
+    residual_k = k0+k1*z-z*u*u
+    original = a*(2*z*w+y*y)+z*(z*w+u)**2+(z*w+u)*y-w/2+residual_k
+    direct = sp.Integer(0)
+    power = sp.Integer(1)
+    for order in range(5):
+        if order:
+            power = sp.expand(power*original)
+        direct += expectation(power)*t**order/math.factorial(order)
+    amplitude_time = -2*a*z*v0+v0/2+residual_k
+    amplitude = (sum((z*v0)**N/math.factorial(N) for N in range(5))
+                 *sum((t*amplitude_time)**m/math.factorial(m) for m in range(5)))
+    amplitude = sp.expand(amplitude)
+    expected = sum(amplitude.coeff(z, N)*tilted_coefficients(1, N, 4)
+                   for N in range(5))
+    expected = sp.series(expected, t, 0, 5).removeO().expand()
+    zero(direct-expected)
+
+    return {
+        "status": "passed",
+        "written_theorem": {
+            "integer_parameter": "every nu>=1",
+            "coefficients": "a in C arbitrary, k in C[Z] arbitrary, u in Z^nu C[Z]",
+            "phase": "a(2ZW+Y^2)+Z(Z^nu W+u)^2+(Z^nu W+u)Y-W/2+k-Zu^2",
+            "conclusion": "no pure member for the actual ordinary-Gaussian Wick functional",
+        },
+        "analytic_amplitude_lemma": "For every jointly analytic A(T,Z) with A(0,0)=1, the written proof gives [T^(2nu*q)] sum_N [Z^N]A B_N=(-1)^q L_q(1+O(1/q)); this is unrestricted proof scope, not bounded test coverage.",
+        "symbolic": [
+            "Gaussian tilt density and covariance exponents for arbitrary balanced monomials",
+            "analytic reparametrization exponent identity for symbolic nu,N,j and derivative one at zero",
+            "generic polynomial phase identity under W -> W+v(Z)",
+        ],
+        "bounded_controls": {
+            "tilted_kernel": {"nu": [1, 3], "Z_marker_degrees": [0, 3],
+                              "moment_orders": [0, 8], "a": "symbolic"},
+            "analytic_reparametrization_germs": {"nu": [1, 3], "N_and_j": [0, 3]},
+            "polynomial_translation": {"nu": [1, 2], "v": "v0+v1 Z", "W_powers": [0, 4],
+                                       "markers": ["1", "Z", "Z^2", "Y^2", "Z Y^2"]},
+            "full_original_source": {"nu": 1, "v": "v0", "k": "k0+k1 Z",
+                                     "a": "symbolic", "moment_orders": [0, 4]},
+        },
+        "actual_source_equivalence": "The polynomial Wick translation identities and the written locally finite B_N=O(T^N) pairing identify the translated actual source. No localization or evaluation of nonpolynomial markers is assumed.",
+        "scope": "Exact symbolic identities and explicitly bounded original-source Wick controls. The all-nu, all-a, arbitrary-polynomial-k and u-divisible-by-Z^nu exclusion follows from the written analytic-amplitude argument, not from finite prefixes.",
+        "external_review": False,
+        "formal_verification": False,
     }
 
 
@@ -793,7 +1158,10 @@ def checks():
     barrier_result = common_root_cubic_barrier()
     varying_result = varying_quadratic_controls()
     shared_result = shared_quadratic_source_controls()
+    divisible_result = divisible_mixed_source_controls()
+    sharp_range_result = common_root_sharp_range_controls()
     moving_nullsource_result = moving_nullsource_zero_controls()
+    tilted_nullsource_result = tilted_nullsource_zero_controls()
 
     # Generic elimination of W,Y, with constant W^2 coefficient nonzero.
     lam_quad = sp.symbols("lambda_quad", nonzero=True)
@@ -922,7 +1290,10 @@ def checks():
         "method_barriers": {"common_root_cubic_chart": barrier_result},
         "symbolic_identity_controls": {"varying_quadratic_source": varying_result,
                                        "shared_quadratic_source": shared_result,
-                                       "moving_nullsource_zero": moving_nullsource_result},
+                                       "regular_h_over_c": divisible_result,
+                                       "common_root_sharp_range": sharp_range_result,
+                                       "moving_nullsource_zero": moving_nullsource_result,
+                                       "tilted_nullsource_zero": tilted_nullsource_result},
     }
 
 
@@ -935,7 +1306,7 @@ def main():
     note = here.with_name("GAUSSIAN_AFFINE_ISOTROPIC_CHART.md")
     receipt = {
         "status": "passed",
-        "scope": "Exact symbolic identities, bounded Wick controls, the stated complete resonant-quartic coefficient certificate, and an exact nonpure local-method barrier. The certificate forces an all-order safe form in its fixed family; arbitrary-degree analytic classifications use the written proof rather than finite controls. The barrier is not a unit-period or H(2,1) counterexample.",
+        "scope": "Exact symbolic identities, bounded Wick controls, the stated complete resonant-quartic coefficient certificate, actual-seed controls for the written all-degree nullsource-zero exclusion, and an exact nonpure local-method barrier. The certificate forces an all-order safe form in its fixed family; arbitrary-degree exclusions and analytic classifications use the written proofs rather than finite controls. The barrier is not a unit-period or H(2,1) counterexample.",
         "checked_on": "2026-11-17",
         "command": ".venv/bin/python research/moments/vanishing/verify_gaussian_affine_isotropic_chart.py --output research/moments/vanishing/gaussian_affine_isotropic_chart_verification.json",
         "environment": {"python": platform.python_version(), "sympy": sp.__version__},

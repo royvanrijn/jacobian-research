@@ -1,12 +1,12 @@
 {
-  "status": "Internally reviewed manuscript; independent replay, external mathematical review and publication pending.",
+  "status": "Public Zenodo preprint; Hexagon pending. Internally reviewed manuscript; independent replay and external mathematical review pending.",
   "date": "2026-11-17",
   "source": "main.tex",
   "pdf": "paper.pdf",
   "source_sha256": "721194083ee204cc295b5bb81248f0888775948607a53f8c92fdfb6493d86ec4",
   "pdf_sha256": "f8e737eeea83bad95bb4c60c9d23adc74add740aaba411c6036df32bdcdce9f8",
   "checker": "verify.py",
-  "checker_sha256": "0461daf0cb0ab3ff158d8eb44c4427b23a201f2418c3274fddd3d76fede1c16e",
+  "checker_sha256": "2c74dd99cf393da771b074d093f03ea55be899e779f48a2d1b2fb7fea6b6b0b6",
   "source_audit": "source_audit.json",
   "source_audit_sha256": "92790b10cd7a6b182b3d8a0b5fdc477bc49a56e4533c12dd8e1bcc7ab11e2de8",
   "pages": 18,
@@ -24,7 +24,7 @@
     "executor": "Internal Codex/ChatGPT source audits and mathematical clarification checks; PDF-only reading is recorded separately. No external acceptance claimed."
   },
   "replay": {
-    "command_from_repository_root": ".venv/bin/python unpublished/mathieu-reductive-homogeneous-spaces/verify.py",
+    "command_from_repository_root": ".venv/bin/python results/mathieu-reductive-homogeneous-spaces/verify.py",
     "executor": "Internal Codex replay after the clarification edits; finite scope only.",
     "python": "3.12.3",
     "sympy": "1.14.0",
@@ -231,5 +231,18 @@
     "previous_source_sha256": "4ff953480e7899e0e77ec474b26ab92a778e3ffdc433c225f47abbca96ef25c0",
     "previous_pdf_sha256": "f53ccff97cbb597f5c546dad92115017c25485d1c61995dabe8ff37fbf36b3ba",
     "validation": "Declared LaTeX build passed with no warnings, unresolved references or box diagnostics; all pages rendered and visually inspected. Prior mathematical-review, blind-reader and finite-control records retain their recorded editions and scopes."
+  },
+  "relocation_replay": {
+    "date": "2026-11-17",
+    "scope": "The checker docstring and invocation path were updated for the released paper location. No mathematical code, manuscript source or PDF changed. The internal replay matches all previously recorded finite exact checks.",
+    "previous_checker_sha256": "0461daf0cb0ab3ff158d8eb44c4427b23a201f2418c3274fddd3d76fede1c16e",
+    "checker_sha256": "2c74dd99cf393da771b074d093f03ea55be899e779f48a2d1b2fb7fea6b6b0b6",
+    "command_from_repository_root": ".venv/bin/python results/mathieu-reductive-homogeneous-spaces/verify.py",
+    "python": "3.12.3",
+    "sympy": "1.14.0",
+    "result": "PASS",
+    "exact_checks_match_recorded_replay": true,
+    "source_audit_scope": "source_audit.json retains the exact earlier internal review snapshot; its source-list digests identify that historical edition. The top-level source and PDF digests in this verification record identify the final deposited manuscript.",
+    "independent_replay": false
   }
 }

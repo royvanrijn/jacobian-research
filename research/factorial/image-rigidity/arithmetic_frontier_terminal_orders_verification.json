@@ -19,6 +19,24 @@
   "literal_split_inseparable_residual_controls": 2,
   "global_precision_obstruction_cases": 6,
   "symbolic_gap_one_discriminant_cases": 6,
+  "unshifted_resultant_hurwitz_counterexample": {
+    "terminal_N": 8,
+    "gap": 5,
+    "resultant_degree": 280,
+    "coefficient_identity_nodes_checked": 281,
+    "literal_primitive_coefficients_all_positive": true,
+    "exact_integer_rouche_zero_count_in_disk": 1,
+    "rouche_zero_is_simple": true,
+    "disk_strictly_in_open_right_half_plane": true,
+    "rouche_linear_to_remainder_floor": "942568791855914955",
+    "required_Arb_or_Routh_dependency": false,
+    "corrupted_coefficient_and_wrong_disk_controls_rejected": true,
+    "unrestricted_unshifted_resultant_Hurwitz_stability": false,
+    "refutes_adjacent_gap_resultant_stability": false,
+    "refutes_coefficient_positivity": false,
+    "SFC_counterexample": false,
+    "certificate": "arithmetic_frontier_terminal_orders_resultant_hurwitz_counterexample.json"
+  },
   "unsupported_inputs_rejected": 36,
   "repeated_factor_countercontrol_detected": true,
   "carry_endpoint_countercontrol_detected": true,
@@ -40,10 +58,12 @@
   "formal_verification": false,
   "priority_claim": false,
   "input_sha256": {
-    "ARITHMETIC_FRONTIER_TERMINAL_ORDERS.tex": "41f4c0be10c8261248de529cef7c2880f85161aa2eb9dc80f09f86623a15c6cc",
-    "arithmetic_frontier_terminal_orders.py": "6f8e034252b91b158ee9040e1f658ba1984225e2348ceb168cec5264cdddeb97",
+    "ARITHMETIC_FRONTIER_TERMINAL_ORDERS.tex": "e78cff718e35a9aca484e10727ddf0199439251c1d2174521a759338133010c0",
+    "arithmetic_frontier_terminal_orders.py": "54f09b04f7a1e45da75ea5d14cfc8f6712af7daeda76919891cf1ed29b2d33c5",
     "prime_power_windows.py": "8f7ae47d1bf7d3d2c955c2d2868bfbf515b316f462a2a6ba7bef6b2faa24d752",
     "PRIME_POWER_TWO_TERM_SFC.tex": "0e94e91d7b60905e9ef4d1c42234b6ef5f5307cac7899d77b7c5ce6714243228",
-    "HIGHER_GAP_ADJOINT_RANK.tex": "ec19415938c9b0b92e7d365fb4a4c66b701fdf36d73883b68f7cfb2971d7ec28"
+    "HIGHER_GAP_ADJOINT_RANK.tex": "ec19415938c9b0b92e7d365fb4a4c66b701fdf36d73883b68f7cfb2971d7ec28",
+    "arithmetic_frontier_terminal_orders_resultant_hurwitz_counterexample.json": "763a80a06c2105f645aec98fcd47981b66ab642827c9e76c7f0a740ce664db85",
+    "sources/dlmf-1-10-rouche.html": "fc94fe84ef0de24326d225e9f8d7ed689d45b0674431c74d10d753dbc4f7dcb1"
   }
 }

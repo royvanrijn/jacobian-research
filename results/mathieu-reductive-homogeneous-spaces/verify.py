@@ -1,8 +1,8 @@
-"""Exact controls for the unpublished Mathieu manuscript (SymPy required).
+"""Exact controls for the Mathieu manuscript (SymPy required).
 
 Run from the repository root with::
 
-    .venv/bin/python unpublished/mathieu-reductive-homogeneous-spaces/verify.py
+    .venv/bin/python results/mathieu-reductive-homogeneous-spaces/verify.py
 
 Polynomial identities are checked exactly. Moment and congruence checks use
 only the finite orders listed in the output; they do not prove the all-order

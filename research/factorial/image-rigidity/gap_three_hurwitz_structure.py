@@ -6,9 +6,9 @@ are not used to extrapolate the uniform theorem.
 """
 from pathlib import Path
 from math import factorial
-import hashlib,json,platform
+import hashlib,json,platform,random
 import sympy as s
-from higher_gap_adjoint_rank import auxiliary, gap_three_W
+from higher_gap_adjoint_rank import auxiliary, gap_three_W, tilted, adjoint_matrix, reversed_tilted
 
 
 def inverse_polynomial(d,u):
@@ -127,6 +127,104 @@ def cyclic_tail_certificate(B,C,z,t):
             'previous':previous,'odd':odd,'even':even,'B_constant':B.nth(0),'W_constant':W.nth(0)}
 
 
+def cyclic_sylvester_data(B,C,z,u):
+    """Bounded presentation data, with monic normalized syzygy pivots."""
+    B,C=s.Poly(B,z),s.Poly(C,z)
+    n=B.degree()
+    if n<1 or C.degree()!=n+1 or B.LC()!=1 or C.LC()!=1:
+        raise ValueError('expected monic consecutive degrees n,n+1')
+    q,r=divmod(n,3);m=n-1
+    A=[p.as_expr() for p in cyclic_row(B.as_expr(),z,u)]
+    E=[p.as_expr() for p in cyclic_row(C.as_expr(),z,u)]
+    lam=s.Poly(E[r],u).nth(q)
+    E=[s.expand(E[i]-lam*A[i]) for i in range(3)]
+    minors=[s.expand(A[0]*E[1]-A[1]*E[0]),s.expand(A[0]*E[2]-A[2]*E[0]),
+            s.expand(A[1]*E[2]-A[2]*E[1])]
+    W=s.Poly(s.expand(sum(z**i*minors[i].subs(u,-z**3) for i in range(3))),z)
+    w=W.all_coeffs();at=lambda k:w[k] if 0<=k<len(w) else 0
+    H=s.Matrix(m,m,lambda i,j:at(3*(j+1)-(i+1)))
+    columns=[]
+    for i in range(1,m+1):
+        residue=(2*n+i)%3;ell=m-(2*n+i)//3
+        P=s.Poly(s.expand(u**ell*minors[residue].subs(u,-u)),u)
+        columns.append(s.Matrix([P.nth(m-j) for j in range(1,m+1)]))
+    matrix=s.Matrix.hstack(*columns) if columns else s.zeros(0)
+    bounds=[q-2,q-1,q-1] if r==0 else ([q-1]*3 if r==1 else [q-1,q-1,q])
+    return {'n':n,'q':q,'r':r,'A':A,'C':E,'minors':minors,'W':W,'H':H,'matrix':matrix,
+            'bounds':bounds,'syzygies':[[A[2],-A[1],A[0]],[E[2],-E[1],E[0]]]}
+
+
+def reduce_cyclic_multipliers(data,multipliers,u):
+    """Monic polynomial reduction used in the all-ring bounded-presentation proof."""
+    r=data['r'];bounds=data['bounds'];S1,S2=data['syzygies']
+    pivots={1:S2,2:S1} if r==0 else ({0:S2,1:S1} if r==1 else {0:S1,2:S2})
+    f=list(multipliers);steps=0
+    while True:
+        todo=[i for i in pivots if s.Poly(f[i],u).degree()>bounds[i]]
+        if not todo:
+            return [s.expand(v) for v in f]
+        i=max(todo,key=lambda j:s.Poly(f[j],u).degree()-bounds[j])
+        relation=pivots[i]
+        quotient,_=s.div(f[i],relation[i],u)
+        f=[s.expand(f[j]-quotient*relation[j]) for j in range(3)]
+        steps+=1
+        if steps>1000:
+            raise RuntimeError('bounded-reduction diagnostic did not terminate')
+
+
+def discriminant_factor(n,gamma,d=3):
+    N=n*(n-1)//2
+    return (-1)**N*d**N*s.prod(k**k for k in range(1,n+1))*s.prod(s.rf(gamma,d*k) for k in range(1,n))
+
+
+def general_cyclic_sylvester_data(d,n,rows,z,u):
+    """Case-free all-gap cofactor and bounded-presentation data."""
+    if d<1 or n<1 or len(rows)!=d-1:
+        raise ValueError('expected d>=1,n>=1,and d-1 consecutive monic rows')
+    polys=[s.Poly(p,z) for p in rows]
+    if any(p.degree()!=n+i or p.LC()!=1 for i,p in enumerate(polys)):
+        raise ValueError('rows must be monic of degrees n,...,n+d-2')
+    matrix=s.Matrix(d-1,d,lambda i,j:sum(polys[i].nth(j+d*k)*u**k
+                          for k in range((n+d-2)//d+1)))
+    minors=[s.expand(matrix[:,[k for k in range(d) if k!=j]].det(method='domain-ge')) for j in range(d)]
+    signed=[(-1)**j*minors[j] for j in range(d)]
+    W=s.Poly(s.expand(sum(z**(d-1-j)*minors[j].subs(u,(-1)**d*z**d) for j in range(d))),z)
+    L=(d-1)*n;m=n-1;w=W.all_coeffs();at=lambda k:w[k] if 0<=k<len(w) else 0
+    H=s.Matrix(m,m,lambda i,j:at(d*(j+1)-(i+1)))
+    sections=[s.Poly(sum(W.nth(k)*u**((k-r)//d) for k in range(r,L+1,d)),u) for r in range(d)]
+    columns=[]
+    for i in range(1,m+1):
+        residue=(L+i)%d;ell=m-(L+i)//d
+        P=s.Poly(s.expand(u**ell*sections[residue].as_expr()),u)
+        columns.append(s.Matrix([P.nth(m-j) for j in range(1,m+1)]))
+    bounded=s.Matrix.hstack(*columns) if columns else s.zeros(0)
+    return {'d':d,'n':n,'rows':matrix,'minors':minors,'signed_minors':signed,'W':W,'H':H,
+            'bounded_matrix':bounded,'bounds':[(n-2-j)//d for j in range(d)],
+            'missing_column':(n-1)%d,'pivots':{(n+i)%d:((n+i)//d,list(matrix[i,:])) for i in range(d-1)}}
+
+
+def general_auxiliary_W(n,gamma,d,z,u):
+    return general_cyclic_sylvester_data(d,n,[auxiliary(n+i,gamma,d,z).as_expr() for i in range(d-1)],z,u)['W']
+
+
+def reduce_general_cyclic_multipliers(data,multipliers,u,modulus=None):
+    """Weighted monomial reduction, valid without nonunit coefficient division."""
+    d=data['d'];pivots=data['pivots']
+    def reduce_poly(value):
+        P=s.Poly(s.expand(value),u)
+        return P.trunc(modulus) if modulus else P
+    f=[reduce_poly(v) for v in multipliers];steps=0
+    while True:
+        todo=[j for j,(q,row) in pivots.items() if f[j].degree()>=q]
+        if not todo:return [v.as_expr() for v in f]
+        j=max(todo,key=lambda k:d*f[k].degree()+k)
+        q,row=pivots[j];degree=int(f[j].degree());coefficient=f[j].LC()
+        multiplier=coefficient*u**(degree-q)
+        f=[reduce_poly(f[k].as_expr()-multiplier*row[k]) for k in range(d)]
+        steps+=1
+        if steps>10000:raise RuntimeError('general monic-reduction diagnostic did not terminate')
+
+
 def main():
     HERE=Path(__file__).resolve().parent
     counts={}
@@ -201,6 +299,142 @@ def main():
               ['missing_residue','row_relation','odd_identity','even_identity']))
         if label=='zero_B_constant':check('zero_B_constant_is_retained',cert['B_constant']==0)
         if label=='zero_previous_minor':check('zero_previous_minor_is_retained',cert['previous']==0)
+    # The square Sylvester presentation is checked independently of the proof's length argument.
+    rng=random.Random(149)
+    for n in range(1,7):
+        pairs=[(z**n+sum(rng.randrange(-5,6)*z**k for k in range(n)),
+                z**(n+1)+sum(rng.randrange(-5,6)*z**k for k in range(n+1))),
+               (z**n,z**(n+1))]
+        if n>=3:
+            k=n//3;common=(z**3-2)**k
+            pairs.append((s.expand(common*(z+1)**(n-3*k)),s.expand(common*(z+3)**(n+1-3*k))))
+        for B,C in pairs:
+            data=cyclic_sylvester_data(B,C,z,u);minors=data['minors'];bounds=data['bounds']
+            check('bounded_Sylvester_matrix_is_H_tail_transpose',data['matrix']==data['H'].T)
+            G=s.Poly(minors[0],u)
+            for f in minors[1:]:G=s.gcd(G,s.Poly(f,u))
+            check('bounded_Sylvester_cokernel_dimension',n-1-data['H'].rank()==G.degree())
+            S1,S2=data['syzygies']
+            check('bounded_Sylvester_syzygies',all(s.expand(sum(S[i]*minors[i] for i in range(3)))==0 for S in [S1,S2]))
+            bounded=[sum(rng.randrange(-3,4)*u**k for k in range(b+1)) if b>=0 else 0 for b in bounds]
+            multipliers=[s.expand(bounded[i]+(u**(n+2)+2*u+1)*S1[i]+(u**(n+1)-u+3)*S2[i]) for i in range(3)]
+            reduced=reduce_cyclic_multipliers(data,multipliers,u)
+            check('bounded_Sylvester_monic_reduction_identity',s.expand(sum((reduced[i]-bounded[i])*minors[i] for i in range(3)))==0)
+            check('bounded_Sylvester_monic_reduction_bounds',all(s.Poly(reduced[i],u).degree()<=bounds[i] for i in range(3)))
+    # Local ideal equality in both possible rank-one normal forms.
+    aa,bb,cc=s.symbols('aa bb cc')
+    e1=s.Matrix([1,0,0]);e2=s.Matrix([0,1,0]);e3=s.Matrix([0,0,1]);v=s.Matrix([aa,bb,cc])
+    for first,second,sign in [(e1,v,1),(v,e1,-1)]:
+        E=s.Matrix.hstack(first,second,e2).det();Ep=s.Matrix.hstack(first,second,e3).det()
+        check('critical_ideal_rank_one_normal_form',s.expand(E+sign*cc)==0 and s.expand(Ep-sign*bb)==0)
+    for n in range(1,6):
+        B=auxiliary(n,gamma,3,z);C=auxiliary(n+1,gamma,3,z);W=gap_three_W(B.as_expr(),z)
+        R=reversed_tilted(n,gamma,3,z)
+        if n<=4:
+            determinant=s.Poly(s.simplify(s.expand(adjoint_matrix(B.as_expr(),3,z,full=True).det())),z)
+            check('complex_shape_adjoint_determinant_identity',s.expand(determinant.monic().as_expr()-R.as_expr())==0)
+        b0,b1,b2=[B.nth(k) for k in range(3)]
+        P0=s.prod(gamma+3*j+2 for j in range(n));P1=s.prod(gamma+3*j+1 for j in range(n));P2=s.prod(gamma+3*j for j in range(n))
+        check('cyclic_origin_three_flag_values',s.expand(b0-P0)==0 and s.expand(b0-b1-P1)==0 and s.expand(b0-2*b1+2*b2-P2)==0)
+        parts=cyclic_plucker_sections(B.as_expr(),C.as_expr(),z,u)
+        check('cyclic_origin_first_minor',s.expand(parts[0].nth(0)-b0*P1)==0)
+        for m in range(3*n):
+            check('cyclic_origin_rank_never_drops',any(p.nth(0).subs(gamma,-m)!=0 for p in parts))
+            specialized=s.Poly(R.as_expr().subs(gamma,-m),z)
+            L=min(k[0] for k,_ in specialized.terms())
+            check('Eisenstein_zero_cluster_width',L==3*(n-m//3))
+            check('Eisenstein_zero_cluster_constant_simple',s.diff(R.nth(0),gamma).subs(gamma,-m)!=0)
+        T=tilted(n,gamma,3,t);Delta=cyclic_hurwitz_minor(2*n-2,W.all_coeffs())
+        disc=s.discriminant(T.as_expr(),t)
+        check('uniform_discriminant_identity_symbolic_controls',s.expand(disc-discriminant_factor(n,gamma)*Delta)==0)
+        N=n*(n-1)//2
+        DG=s.Poly(Delta,gamma);DD=s.Poly(disc,gamma)
+        check('tail_determinant_leading_constant',DG.degree()==2*N and DG.LC()==3**N)
+        check('Gaussian_Appell_discriminant_leading_constant',DD.degree()==5*N and DD.LC()==(-1)**N*3**(2*N)*s.prod(k**k for k in range(1,n+1)))
+        for value in [s.Rational(1,2),s.Integer(1),s.Integer(7)]:
+            check('positive_shape_top_minor_nonnegative_controls',Delta.subs(gamma,value)>=0)
+    # Composition formula, including a zero-constant specialization.
+    for n in range(1,4):
+        ss=s.symbols('ss0:'+str(n));S=u**n+sum(ss[j]*u**j for j in range(n))
+        check('cubic_discriminant_composition_identity',
+              s.expand(s.discriminant(S.subs(u,z**3),z)-(-27)**n*ss[0]**2*s.discriminant(S,u)**3)==0)
+    S=u**4+2*u**3+3*u**2+u
+    check('cubic_discriminant_composition_zero_constant',s.discriminant(S.subs(u,z**3),z)==0)
+    hermite=[s.Integer(1),x]
+    for n in range(2,8):hermite.append(s.expand(x*hermite[-1]+(n-1)*hermite[-2]))
+    for n in range(1,8):
+        N=n*(n-1)//2
+        check('Gaussian_Appell_exact_discriminant',s.discriminant(hermite[n],x)==(-1)**N*s.prod(k**k for k in range(1,n+1)))
+    for n in range(2,8):
+        limit=s.Poly((1+t+t*t)**n,t).all_coeffs()[::-1]
+        check('tail_limit_Vandermonde_constant',cyclic_hurwitz_minor(2*n-2,limit)==3**(n*(n-1)//2))
+    # General-d presentation: independent consecutive rows, including cyclic common factors.
+    for d in range(2,6):
+        for n in range(1,6):
+            row_profiles=[[z**(n+i)+sum(rng.randrange(-3,4)*z**k for k in range(n+i)) for i in range(d-1)],
+                      [z**(n+i) for i in range(d-1)]]
+            if n>=d:
+                common=z**d-2
+                row_profiles.append([s.expand(common*(z+i+1)**(n+i-d)) for i in range(d-1)])
+            for rows in row_profiles:
+                data=general_cyclic_sylvester_data(d,n,rows,z,u)
+                check('all_gap_W_exact_monic_normalization',data['W'].degree()==(d-1)*n and data['W'].LC()==1)
+                check('all_gap_bounded_matrix_is_H_transpose',data['bounded_matrix']==data['H'].T)
+                E=data['signed_minors'];G=s.Poly(E[0],u)
+                for f in E[1:]:G=s.gcd(G,s.Poly(f,u))
+                check('all_gap_field_cokernel_dimension',n-1-data['H'].rank()==G.degree())
+                check('all_gap_row_syzygies',all(s.expand(sum(data['rows'][i,j]*E[j] for j in range(d)))==0 for i in range(d-1)))
+                bounded=[sum(rng.randrange(-2,3)*u**k for k in range(b+1)) if b>=0 else 0 for b in data['bounds']]
+                f=bounded[:]
+                for i in range(d-1):
+                    multiplier=u**(n+2)+i*u+1
+                    f=[s.expand(f[j]+multiplier*data['rows'][i,j]) for j in range(d)]
+                reduced=reduce_general_cyclic_multipliers(data,f,u)
+                check('all_gap_weighted_monic_reduction_identity',s.expand(sum((reduced[j]-bounded[j])*E[j] for j in range(d)))==0)
+                check('all_gap_weighted_monic_reduction_bounds',all(s.Poly(reduced[j],u).degree()<=data['bounds'][j] for j in range(d)))
+    # Nonreduced base ring: monic reductions use no field division.
+    data=general_cyclic_sylvester_data(4,5,[z**5+2*z+1,z**6+3*z**2+2,z**7+z**3+3],z,u)
+    E=data['signed_minors'];bounded=[sum((j+k+1)*u**k for k in range(b+1)) if b>=0 else 0 for j,b in enumerate(data['bounds'])]
+    f=bounded[:]
+    for i in range(3):f=[s.expand(f[j]+(u**7+2*u+3)*data['rows'][i,j]) for j in range(4)]
+    reduced=reduce_general_cyclic_multipliers(data,f,u,4)
+    check('all_gap_nonreduced_ring_identity',s.Poly(s.expand(sum((reduced[j]-bounded[j])*E[j] for j in range(4))),u).trunc(4).is_zero)
+    check('all_gap_nonreduced_ring_bounds',all(s.Poly(reduced[j],u).degree()<=data['bounds'][j] for j in range(4)))
+    # Actual all-gap family, complex-shape algebra and the uniform identity.
+    for d in [1,2,3,4,5]:
+        for n in range(1,5):
+            W=general_auxiliary_W(n,gamma,d,z,u)
+            if d==3:
+                check('all_gap_W_agrees_with_original_gap_three',s.expand(W.as_expr()-gap_three_W(auxiliary(n,gamma,3,z).as_expr(),z).as_expr())==0)
+            if d==2:
+                check('all_gap_W_agrees_with_gap_two_auxiliary',s.expand(W.as_expr()-auxiliary(n,gamma,2,z).as_expr())==0)
+            w=W.all_coeffs();m=n-1;at=lambda k:w[k] if 0<=k<len(w) else 0
+            Delta=s.expand(s.Matrix(m,m,lambda i,j:at(d*(j+1)-(i+1))).det(method='domain-ge'))
+            T=tilted(n,gamma,d,t);disc=s.discriminant(T.as_expr(),t);N=n*(n-1)//2
+            check('all_gap_discriminant_identity_symbolic_controls',s.expand(disc-discriminant_factor(n,gamma,d)*Delta)==0)
+            check('all_gap_tail_leading_constant',s.Poly(Delta,gamma).degree()==(d-1)*N and s.Poly(Delta,gamma).LC()==d**N)
+            check('all_gap_Gaussian_discriminant_leading_constant',s.Poly(disc,gamma).degree()==(2*d-1)*N and s.Poly(disc,gamma).LC()==(-1)**N*d**(2*N)*s.prod(k**k for k in range(1,n+1)))
+            if d<=4 and n<=3:
+                B=auxiliary(n,gamma,d,z)
+                determinant=s.Poly(s.simplify(s.expand(adjoint_matrix(B.as_expr(),d,z,full=True).det())),z)
+                check('all_gap_complex_adjoint_determinant_identity',s.expand(determinant.monic().as_expr()-reversed_tilted(n,gamma,d,z).as_expr())==0)
+            for value in [s.Rational(1,2),s.Integer(1),s.Integer(7)]:
+                check('all_gap_positive_shape_terminal_minor_nonnegative_controls',Delta.subs(gamma,value)>=0)
+    # General origin flags and zero clusters, without assuming truncated simplicity.
+    for d in range(1,6):
+        for n in range(1,4):
+            B=auxiliary(n,gamma,d,z)
+            flags=[s.expand(sum((-1)**j*s.binomial(k,j)*s.factorial(j)*B.nth(j) for j in range(k+1))) for k in range(d)]
+            expected=[s.prod(gamma-k+d-1+d*j for j in range(n)) for k in range(d)]
+            check('all_gap_origin_flag_products',all(s.expand(a-b)==0 for a,b in zip(flags,expected)))
+            check('all_gap_origin_flag_zeros_disjoint',all(s.gcd(s.Poly(flags[i],gamma),s.Poly(flags[j],gamma)).degree()==0 for i in range(d) for j in range(i+1,d)))
+            W=general_auxiliary_W(n,gamma,d,z,u)
+            R=reversed_tilted(n,gamma,d,z)
+            for point in range(d*n):
+                check('all_gap_cyclic_origin_has_full_rank',any(W.nth(k).subs(gamma,-point)!=0 for k in range(d)))
+                specialized=s.Poly(R.as_expr().subs(gamma,-point),z)
+                check('all_gap_Eisenstein_cluster_width',min(k[0] for k,_ in specialized.terms())==d*(n-point//d))
+                check('all_gap_Eisenstein_constant_simple',s.diff(R.nth(0),gamma).subs(gamma,-point)!=0)
     # TN auxiliary blocks alone do not force TN of the cyclic Wronskian.
     polys=[s.Poly(1,z)]
     for j in range(9):
@@ -263,6 +497,15 @@ def main():
       'uniform_odd_and_even_tail_special_minor_identities_proved':True,
       'tail_scope':'every monic B,C of degrees n,n+1, n>=1: Delta_(2n-1)=B(0)Delta_(2n-2), Delta_(2n)=W(0)Delta_(2n-2)',
       'tail_proof_uses_division_by_constant_or_minor':False,
+      'uniform_cyclic_quotient_Fitting_presentation_proved':True,
+      'cyclic_quotient_Fitting_scope':'Every commutative coefficient ring, integers d,n>=1, monic consecutive-degree rows',
+      'uniform_discriminant_tail_identity_proved':True,
+      'uniform_all_gap_discriminant_tail_identity_proved':True,
+      'all_gap_discriminant_scope':'every integer d>=1,n>=1 as a polynomial identity in complex gamma',
+      'all_gap_terminal_Hurwitz_determinant_nonnegative_proved':True,
+      'all_index_top_three_H3_special_minors_nonnegative_proved':True,
+      'top_three_scope':'every integer n>=2 and every real gamma>0',
+      'uniform_strict_positivity_of_top_independent_minor_proved':False,
       'fixed_gamma_array_TN_scope':'leading rows and columns0..N whenever gamma+d-1>=N',
       'TN_auxiliary_block_alone_transfers_to_Wronskian_H3_refuted':True,
       'off_family_Wronskian_negative_H3_minor':-60115263786123,
@@ -276,7 +519,7 @@ def main():
       'finite_extrapolation':False,'independent_replay':False,'formal_verification':False,
       'external_review':False,'novelty_claim':False,'total':sum(counts.values()),'counts':counts,
       'files':{name:hashlib.sha256((HERE/name).read_bytes()).hexdigest() for name in
-        ['gap_three_hurwitz_structure.tex','gap_three_hurwitz_structure.py','higher_gap_adjoint_rank.py']}}
+        ['gap_three_hurwitz_structure.tex','gap_three_hurwitz_structure.py','higher_gap_adjoint_rank.py','HIGHER_GAP_ADJOINT_RANK.tex']}}
     (HERE/'gap_three_hurwitz_structure_verification.json').write_text(json.dumps(receipt,indent=2)+'\n')
     print(json.dumps(receipt,indent=2))
 

@@ -43,3 +43,9 @@ The [primary-source audit](foundations/extended-geometry/two_pair_image_cubic_pr
 and [completion audit](foundations/extended-geometry/two_pair_image_cubic_completion_audit.json)
 record dependencies, actual replays and the distinction between internal proof,
 external review and formal verification.
+
+The current graph also indexes source declarations, cited resources and exact-domain
+bounds. Use `python3 research/scripts/research.py coverage`, `references`,
+`bounds --opportunities` and `opportunities` to locate omissions and affected work.
+Equivalent statements retain separately proved directions in acyclic components;
+proofs never acquire assurance flags through propagation.

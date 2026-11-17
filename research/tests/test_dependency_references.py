@@ -66,6 +66,36 @@ class ReferenceTests(unittest.TestCase):
         state = reference_state(self.data, self.graph, ["proof.tex"])
         self.assertIn("changed external source: input.txt", state["errors"])
 
+    def test_new_markdown_url_requires_identity_and_preserves_doi_parentheses(self):
+        note = self.root / "note.md"
+        url = "https://doi.org/10.1016/S0019-3577(98)80020-7"
+        note.write_text("[Precise input](" + url + ").\n")
+        self.graph.data["graph"]["coverage"] = {"documents": [{"path": "note.md", "role": "proof"}]}
+        state = reference_state(self.data, self.graph, ["proof.tex", "note.md"])
+        self.assertIn("unmapped external URL: note.md :: " + url, state["errors"])
+        self.data["graph"]["external_references"]["papers"][0]["urls"] = [url]
+        check_references(self.data, self.graph, ["proof.tex", "note.md"])
+
+    def test_external_primary_input_needs_a_cited_resource_mapping(self):
+        primary = self.root / "sources/input.pdf"
+        primary.parent.mkdir()
+        primary.write_bytes(b"Retained primary input bytes")
+        self.graph.nodes["A"]["origin"] = "external"
+        self.graph.nodes["A"]["sources"] = [{
+            "path": "sources/input.pdf", "locator": "Theorem 1",
+            "sha256": hashlib.sha256(primary.read_bytes()).hexdigest()}]
+        state = reference_state(self.data, self.graph, ["proof.tex"])
+        self.assertTrue(any("lacks cited-resource mapping" in error for error in state["errors"]))
+        self.data["graph"]["external_references"]["papers"][0]["local_sources"] = self.graph.nodes["A"]["sources"]
+        check_references(self.data, self.graph, ["proof.tex"])
+
+    def test_inline_tex_reference_is_not_hidden_by_missing_bibitem(self):
+        url = "https://dlmf.nist.gov/1.10.iv"
+        self.source.write_text(self.source.read_text() + r"\href{" + url + "}{Rouche theorem}")
+        self.graph.data["graph"]["coverage"] = {"documents": [{"path": "proof.tex", "role": "proof"}]}
+        state = reference_state(self.data, self.graph, ["proof.tex"])
+        self.assertIn("unmapped external URL: proof.tex :: " + url, state["errors"])
+
 
 if __name__ == "__main__":
     unittest.main()

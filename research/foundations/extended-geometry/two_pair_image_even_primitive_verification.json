@@ -1,0 +1,205 @@
+{
+  "status": "passed",
+  "scope": "Internal bounded exact checks; the written all-order proof, external review and novelty are not certified by this computation.",
+  "family": "F_k=T^k(R+Z)^(k+1)(2WR^2-2RT^2-ZT^2), d=2k+4, k>=0",
+  "arithmetic": "Exact rational polynomial arithmetic",
+  "command": ".venv/bin/python research/foundations/scripts/verify_two_pair_image_even_primitive.py",
+  "working_directory": "repository root",
+  "environment": {
+    "python": "3.12.3",
+    "sympy": "1.14.0"
+  },
+  "checker": {
+    "path": "research/foundations/scripts/verify_two_pair_image_even_primitive.py",
+    "sha256": "5a9910cfa7b7ea418866e7018513dd573d5738eb2f29fb5ccfbc5c2e685646cd"
+  },
+  "assurance": {
+    "internal_replay": true,
+    "independent_replay": false,
+    "formal_verification": false,
+    "external_review": false
+  },
+  "coverage": {
+    "original_four_variable": "k=0,1,2,3; m=1,2,3",
+    "sphere_and_binomial_constant_term": "k=0,1,2,3; m=1,...,8",
+    "factor_multiplicities_and_R_zero_specialization": "k=0,1,2,3"
+  },
+  "original_four_variable_checks": [
+    {
+      "k": 0,
+      "m": 1,
+      "balanced_degree": 4,
+      "pure_contraction": "0",
+      "marked_contraction": "480",
+      "marked_angular_moment": "2/3"
+    },
+    {
+      "k": 0,
+      "m": 2,
+      "balanced_degree": 4,
+      "pure_contraction": "0",
+      "marked_contraction": "1935360",
+      "marked_angular_moment": "8/15"
+    },
+    {
+      "k": 0,
+      "m": 3,
+      "balanced_degree": 4,
+      "pure_contraction": "0",
+      "marked_contraction": "39852933120",
+      "marked_angular_moment": "16/35"
+    },
+    {
+      "k": 1,
+      "m": 1,
+      "balanced_degree": 6,
+      "pure_contraction": "0",
+      "marked_contraction": "0",
+      "marked_angular_moment": "0"
+    },
+    {
+      "k": 1,
+      "m": 2,
+      "balanced_degree": 6,
+      "pure_contraction": "0",
+      "marked_contraction": "6642155520",
+      "marked_angular_moment": "8/105"
+    },
+    {
+      "k": 1,
+      "m": 3,
+      "balanced_degree": 6,
+      "pure_contraction": "0",
+      "marked_contraction": "0",
+      "marked_angular_moment": "0"
+    },
+    {
+      "k": 2,
+      "m": 1,
+      "balanced_degree": 8,
+      "pure_contraction": "0",
+      "marked_contraction": "483840",
+      "marked_angular_moment": "2/15"
+    },
+    {
+      "k": 2,
+      "m": 2,
+      "balanced_degree": 8,
+      "pure_contraction": "0",
+      "marked_contraction": "162599967129600",
+      "marked_angular_moment": "8/315"
+    },
+    {
+      "k": 2,
+      "m": 3,
+      "balanced_degree": 8,
+      "pure_contraction": "0",
+      "marked_contraction": "2148739053621608448000000",
+      "marked_angular_moment": "16/3003"
+    },
+    {
+      "k": 3,
+      "m": 1,
+      "balanced_degree": 10,
+      "pure_contraction": "0",
+      "marked_contraction": "0",
+      "marked_angular_moment": "0"
+    },
+    {
+      "k": 3,
+      "m": 2,
+      "balanced_degree": 10,
+      "pure_contraction": "0",
+      "marked_contraction": "12975477376942080000",
+      "marked_angular_moment": "8/693"
+    },
+    {
+      "k": 3,
+      "m": 3,
+      "balanced_degree": 10,
+      "pure_contraction": "0",
+      "marked_contraction": "0",
+      "marked_angular_moment": "0"
+    }
+  ],
+  "degree_six_sphere_checks": [
+    {
+      "k": 1,
+      "m": 1,
+      "pure_angular_moment": "0",
+      "marked_angular_moment": "0"
+    },
+    {
+      "k": 1,
+      "m": 2,
+      "pure_angular_moment": "0",
+      "marked_angular_moment": "8/105"
+    },
+    {
+      "k": 1,
+      "m": 3,
+      "pure_angular_moment": "0",
+      "marked_angular_moment": "0"
+    },
+    {
+      "k": 1,
+      "m": 4,
+      "pure_angular_moment": "0",
+      "marked_angular_moment": "128/15015"
+    },
+    {
+      "k": 1,
+      "m": 5,
+      "pure_angular_moment": "0",
+      "marked_angular_moment": "0"
+    },
+    {
+      "k": 1,
+      "m": 6,
+      "pure_angular_moment": "0",
+      "marked_angular_moment": "1024/969969"
+    },
+    {
+      "k": 1,
+      "m": 7,
+      "pure_angular_moment": "0",
+      "marked_angular_moment": "0"
+    },
+    {
+      "k": 1,
+      "m": 8,
+      "pure_angular_moment": "0",
+      "marked_angular_moment": "32768/239028075"
+    }
+  ],
+  "factor_checks": [
+    {
+      "k": 0,
+      "R_zero_point_value": "-4",
+      "T_multiplicity": 0,
+      "R_plus_Z_multiplicity": 1
+    },
+    {
+      "k": 1,
+      "R_zero_point_value": "8",
+      "T_multiplicity": 1,
+      "R_plus_Z_multiplicity": 2
+    },
+    {
+      "k": 2,
+      "R_zero_point_value": "-16",
+      "T_multiplicity": 2,
+      "R_plus_Z_multiplicity": 3
+    },
+    {
+      "k": 3,
+      "R_zero_point_value": "32",
+      "T_multiplicity": 3,
+      "R_plus_Z_multiplicity": 4
+    }
+  ],
+  "negative_controls": {
+    "odd_height_integral_does_not_equal_marked_moment": true,
+    "omitting_one_radial_factorial_is_detected": true
+  }
+}

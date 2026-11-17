@@ -1,0 +1,16 @@
+{
+  "record": "https://zenodo.org/records/24310836",
+  "retrieved": "2026-11-17",
+  "files": [
+    {
+      "file": "paper.pdf",
+      "md5": "168883d14689956caf9a937b876a1292",
+      "sha256": "f8e737eeea83bad95bb4c60c9d23adc74add740aaba411c6036df32bdcdce9f8"
+    },
+    {
+      "file": "paper.tex",
+      "md5": "f023f916a3f4b69c354c00c040e1c0f7",
+      "sha256": "721194083ee204cc295b5bb81248f0888775948607a53f8c92fdfb6493d86ec4"
+    }
+  ]
+}

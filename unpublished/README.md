@@ -2,12 +2,11 @@
 
 Manuscripts and smaller standalone notes without a public deposit, awaiting further work or publication. Every paper directory has a PDF, source, metadata and a short statement of its result. The linked metadata records the next review tasks.
 
-The Gaussian boundary and reductive homogeneous-space Mathieu paper have standalone proofs and internal checks, but still need independent mathematical review before submission. Their presence here does not record a public deposit.
+The Gaussian boundary paper has a standalone proof and internal checks, but still needs independent mathematical review before submission. Its presence here does not record a public deposit. The released [Mathieu paper](../results/mathieu-reductive-homogeneous-spaces/) now lives in `results/`, with its exact Zenodo edition in `published/`; Hexagon is pending.
 
 | Paper | Status |
 |---|---|
 | [Cubic sphere moments and the two-pair Image problem](cubic-sphere-image/) | ready for review |
-| [Counterexamples to the Mathieu Property: From Explicit Quotient Constructions to a General Classification](mathieu-reductive-homogeneous-spaces/) | ready for review |
 | [The Dimension-Degree Boundary for Gaussian Moment Vanishing](gaussian-boundary/) | ready for review |
 | [Over Characteristic Zero, Every Finite Etale Algebra of Rank at Least Three Is a Full Keller Fiber](common-arithmetic-fibers/) | draft |
 | [Quantitative Hasse-Principle Failures in the Fibers of a Fixed Keller Map](fixed-map-hasse-failures/) | draft |

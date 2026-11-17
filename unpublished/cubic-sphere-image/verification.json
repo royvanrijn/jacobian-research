@@ -20,7 +20,7 @@
     {
       "claim": "Finite classification after geometric reduction",
       "source": "finite.tex",
-      "method": "Four interval moments, eight sphere moments, triangular r elimination, explicit 4x4 augmented matrix and two minors with Sylvester determinant 2 modulo19."
+      "method": "Four interval moments, eight sphere moments, triangular r elimination, explicit 4x4 augmented matrix and two minors; three displayed Euclidean remainders modulo19 prove coprimality. A determinant is an optional replay cross-check, not a proof dependency."
     },
     {
       "claim": "Normal forms, sharp cutoff and contraction transfer",
@@ -85,11 +85,13 @@
     "exact_arithmetic": {
       "passed": true,
       "command": "Python3.12 + SymPy1.14.0: python verify.py",
-      "scope": "Displayed finite identities, matrix, minors, determinant; later boundary checks recorded with final edition."
+      "scope": "Four interval moments, eight sphere moments, all triangular eliminations, residual matrix, minors, three Euclidean remainders modulo19, optional Sylvester determinant2, general boundary jets, node charts, A1 Hessian and ambient blowup Jacobians, cusp strict transform/volume, orthogonal shear and inverse."
     },
     "negative_controls": {
       "corrupted_sylvester_row": "Rejected: determinant becomes0 modulo19.",
-      "optimized_python": "Rejected with RuntimeError before assertions can be disabled."
+      "optimized_python": "Rejected with RuntimeError before assertions can be disabled.",
+      "wrong_boundary_correction": "Rejected: the wrong factor leaves a quadratic y term.",
+      "wrong_shear_coefficient": "Rejected: the wrong y coefficient fails preservation of q."
     },
     "layout": {
       "passed": true,
@@ -102,13 +104,44 @@
         "All cross-references and citations resolved",
         "Readable matrix and polynomial divisions",
         "No workflow labels in article title/body/metadata"
-      ]
+      ],
+      "pdf_sha256": "3fae1de158fba8a55c696a012be0281df00da7f774e8797af35add3f5a20c2d3",
+      "edition": "Final revised10-page PDF; all10 pages rendered and inspected after proof and margin changes."
     },
     "navigation": {
       "render_passed": false,
       "check_passed": false,
       "reason": "Both make render-navigation and make check-navigation stop on pre-existing unrelated changed checker source: BINOMIAL-INITIAL-BOUNDARY.",
       "scope": "No global registry or unrelated checker was changed for this paper."
+    },
+    "source_bundle": {
+      "passed": true,
+      "contents": [
+        "main.tex",
+        "geometry.tex",
+        "finite.tex",
+        "verify.py",
+        "requirements.txt",
+        "README.md"
+      ],
+      "isolated_build": true,
+      "isolated_replay": true,
+      "build_warnings": [],
+      "repository_dependencies": false
+    },
+    "primary_source_cache_hashes": {
+      "Kas76": true,
+      "CDM24": true
+    },
+    "final_consistency": {
+      "passed": true,
+      "artifact_hashes_match": true,
+      "declared_source_bundle_matches": true,
+      "metadata_abstract_matches": true,
+      "required_ai_paragraph_exact": true,
+      "local_readme_links_resolve": true,
+      "primary_source_cache_hashes_match": true,
+      "final_pdf_matches_followup_review": true
     }
   },
   "review": {
@@ -120,11 +153,65 @@
       "initial_pdf_sha256": "85c057597aec037a331101c2e4b9d445630d6510c5387ba9649ed385ad0c3d7b",
       "reviewer": "Fresh no-history internal AI agent /root/pdf_blind_reader",
       "supplied_context": "Only article.pdf copied to /tmp/cubic-sphere-blind-review; five standard reader questions; instruction forbidding repository, source, conversation, other agents and web access. Python interpreter location supplied solely as a library tool.",
-      "answers_pending": true
+      "initial_answers": {
+        "novelty": "Complete classification of pure A<=3; sharp3D mixed cutoff and balanced two-pair consequence. Quartic witness attributed to Long, degree4 exactness follows. Literature priority not independently certified by PDF-only review.",
+        "conceptual_reason": "Positive support reduces to weights; exceptional phase is a volume-preserving shear of y with degree3 inverse. Constant exponential period plus proper-volume obstruction forces boundary restriction ay+G with a[t^3]G=0; eight moments finish.",
+        "hardest_step": "Lemma3.1 pp3--4: seed positivity under proper derived direct image and constant-period Fourier cyclic quotient; Proposition4.1 pp4--6 supplies exhaustive boundary resolution.",
+        "limitations": "Degree<=3 on sphere; one fixed balanced bidegree in two pairs; no arbitrary bidegree mixtures, more pairs or positive characteristic. Eight-moment test only follows geometric reduction; positive family admits stronger m>D.",
+        "verification_obstacles": "Exact V-filtration structural theorems and indexing require external source inspection, unavailable under PDF-only conditions. No definite mathematical contradiction found. Reviewer checked selected triangular inputs, phase-balance formula, column relation, modular coprimality, sharpness and quartic coefficient argument."
+      },
+      "initial_concrete_points": [
+        {
+          "point": "Smooth compactification wording misleading for nonconstant map to A1.",
+          "response": "Changed to smooth partial compactification."
+        },
+        {
+          "point": "Identify filtered relative de Rham complex and theorem mapping seed into positive V.",
+          "response": "Added shifted relative complex, differential, filtered hypercohomology map, canonical-image assertion and actual top-degree seed."
+        },
+        {
+          "point": "Explicit Fourier twisted de Rham model and nonaffine integration pairing.",
+          "response": "Added twisted complex, Weyl action partial_tau-f, analytic de Rham hypercohomology pairing and Stokes identity."
+        },
+        {
+          "point": "S3 circular real-form normalization ambiguity.",
+          "response": "Added XY=(1-T^2)/2 explicitly."
+        },
+        {
+          "point": "Companion program lacks visible identifier.",
+          "response": "Named programS1 verify.py and specified source-bundle availability."
+        }
+      ],
+      "initial_assessment": "Coherent proof with internally consistent elementary checks, no definite error found, specialist verification concentrated in Lemma3.1. This is internal AI review only.",
+      "followup_pdf_sha256": "3fae1de158fba8a55c696a012be0281df00da7f774e8797af35add3f5a20c2d3",
+      "followup_supplied_context": "A revised PDF is available at /tmp/cubic-sphere-blind-review/article-v3.pdf (same UNC directory; SHA256 3fae1de158fba8a55c696a012be0281df00da7f774e8797af35add3f5a20c2d3). Please review this PDF only, keeping the same isolation restrictions. Reassess your five-question answers and whether your concrete obstacles are addressed; report any new ambiguity or definite error, including from revised proof passages. No source/repository/web access. This is a follow-up PDF-only review, not external mathematical review.",
+      "supplied_context_full_record": "Act as a mathematical blind reader. Your ONLY mathematical context must be this PDF: WSL Ubuntu-24.04 /tmp/cubic-sphere-blind-review/article.pdf (Windows UNC \\\\wsl.localhost\\Ubuntu-24.04\\tmp\\cubic-sphere-blind-review\\article.pdf). Do not access repository, sources, conversation, other agents, accompanying files, or web. Read the entire PDF and critically assess the proof and exposition. Answer: (1) What exactly is new? (2) Why is it true conceptually? (3) Which step is hardest, and where is it proved? (4) Main limitations? (5) What prevents verification? Identify concrete errors/gaps or confusing points with page/equation locators; do not assume validity. Can inspect PDF text and render PDF pages only. Environment cwd from platform may not exist: use exec_command workdir C:\\ and PowerShell, run WSL via wsl.exe --cd /tmp/cubic-sphere-blind-review --exec ... . Available Python interpreter /home/royvanrijn/src/jacobian-research/.venv/bin/python has pymupdf/fitz; you may execute it only as a library interpreter, do NOT read any files in its repo. No need edit any files except scratch PDF renders under /tmp/cubic-sphere-blind-review. Return actual review answers, reviewer scope and any obstacles. This is PDF-only isolated internal AI review, not external review.",
+      "followup_answers": {
+        "novelty": "Unchanged: complete A<=3 purity classification, sharp3D mixed cutoff, balanced two-pair consequence and exact first failing balanced degree4. Quartic attributed to Long; literature priority outside PDF-only review.",
+        "conceptual_reason": "Constant exponential period plus proper-volume obstruction and exhaustive boundary resolutions force constant profile. Eight moments give positive circular support or phi(y); circular weights and degree3 inverse prove the bound.",
+        "hardest_step": "Lemma3.1 pp3--4, then Proposition4.1 pp4--6. Revised filtered complex, precise direct-image image assertion, and Fourier twisted complex materially improve auditability. Signs agree with Fourier convention.",
+        "limitations": "Degree<=3, fixed balanced bidegrees, two pairs, characteristic0. Eight-moment criterion applies only after geometric reduction.",
+        "verification_obstacles": "Checking cited V-filtration theorems against exact conventions still requires the external sources, excluded by PDF-only review. The reviewer did not regenerate every residual moment or inspect S1. No new definite error or substantive ambiguity found; all earlier concrete presentation concerns addressed."
+      },
+      "followup_obstacle_responses": {
+        "specialist_structural_theorems": "Primary-source inspection recorded separately above, including full CDM Theorem8.1 proof and original Kashiwara Corollary5.2 proof route. External specialist review remains pending; the blind test is not represented as external theorem validation.",
+        "unreplayed_residual_moments": "Standalone verifier derives the moments and matrix exactly; root-agent replay and isolated source-bundle replay both passed. This is internal replay, not independent external verification."
+      },
+      "followup_outcome": "All10 pages reviewed; supplied PDF hash confirmed. No definite error or substantive ambiguity found. All earlier concrete presentation concerns addressed. Internal isolated AI review only."
     },
     "external_human_review": false,
     "independent_external_replay": false,
     "formal_verification": false
   },
-  "artifact_hashes": {}
+  "artifact_hashes": {
+    "main.tex": "2c4322039c3c6523c089c6dbec9b27a13c472acd289ead4da64482ac72012401",
+    "geometry.tex": "d15ffbace7ffc2d470dc2c755b34cf981ad56037f27b35b0f509eb45e95421f9",
+    "finite.tex": "6c035f1b95a07b3b59768b824b44eff7546df25f58ff5fb7fc035c31961b2aab",
+    "verify.py": "2d15d4ab89e02d9ff5dc2a5320e3666d776889568422486df0b4bb5c0d30f052",
+    "requirements.txt": "25f9f1fb1988b230147a1d3092d34e09c069eb7a6c6d6df46b3973b9f2d36efc",
+    "cubic-sphere-image.pdf": "3fae1de158fba8a55c696a012be0281df00da7f774e8797af35add3f5a20c2d3",
+    "source.zip": "8df5f876a6a7c4fdd0d8f7d6d54abafd7b79b7cbada381b12c61e3b69cab5233",
+    "README.md": "c9ffeb15e5fb05158c459e3d3f74a8f6f375a251a82481c88cf0cfad52c32e79",
+    "metadata.json": "7a8dc3716558855ee245551e5868c177cabc571af0a976a7450f5fb3ec831785"
+  }
 }

@@ -133,6 +133,13 @@ def constant_profile():
     g=10216206*bs**4+24356619*bs**3-25372278*bs**2-41158800*bs-11711872
     assert S.Poly(matrix[[0,1,2],[0,2,3]].det(),bs).primitive()[1].as_expr()==f
     assert S.Poly(matrix[[0,1,3],[0,2,3]].det(),bs).primitive()[1].as_expr()==-g
+    fp=S.Poly(f,bs,modulus=19);gp=S.Poly(g,bs,modulus=19)
+    assert fp.degree()==3 and gp.degree()==4
+    assert fp.as_expr()==-bs**3-6*bs**2-7*bs-7
+    assert gp.as_expr()==bs**4+6*bs**3-bs**2+7*bs-6
+    quadratic=gp.rem(fp);linear=fp.rem(quadratic);constant=quadratic.rem(linear)
+    assert quadratic.as_expr()==-8*bs**2-6
+    assert linear.as_expr()==8*bs+7 and constant.as_expr()==-5
     fc=list(map(int,S.Poly(f,bs).all_coeffs()));gc=list(map(int,S.Poly(g,bs).all_coeffs()))
     sylvester=[]
     for shift in range(4):sylvester.append([0]*shift+fc+[0]*(3-shift))
@@ -142,8 +149,199 @@ def constant_profile():
     assert det_mod(corrupted,19)==0
 
 
+def boundary_charts():
+    x, y, t, u, z, v, s = S.symbols("x y t u z v s")
+    q = 2*x*y+t*t
+    affine = {x:(z*z-u*u)/(2*z), y:1/z, t:u/z}
+    assert S.cancel(q.subs(affine, simultaneous=True)-1) == 0
+
+    # All twenty coefficients of an ordinary representative of degree <=3.
+    # The four redundant q-1 directions are retained, so this covers every
+    # sixteen-dimensional sphere class before taking the quotient.
+    indices = [(i,j,k) for i in range(4) for j in range(4-i)
+               for k in range(4-i-j)]
+    coeff = {alpha:S.Symbol("c%d%d%d" % alpha) for alpha in indices}
+    representative = sum(coeff[i,j,k]*x**i*y**j*t**k for i,j,k in indices)
+
+    def graph(poly, degree):
+        result = S.cancel(z**degree*poly.subs(affine, simultaneous=True)-s*z**degree)
+        S.Poly(result, u, z)
+        return S.expand(result)
+
+    cubic_graph = graph(representative, 3)
+    origin = {u:0, z:0}
+    assert cubic_graph.subs(origin) == coeff[0,3,0]
+    assert S.diff(cubic_graph,u).subs(origin) == coeff[0,2,1]
+    assert S.diff(cubic_graph,z).subs(origin) == coeff[0,2,0]
+    assert S.diff(cubic_graph,s) == -z**3
+
+    quadratic = sum(coeff[i,j,k]*x**i*y**j*t**k for i,j,k in indices if i+j+k<=2)
+    quadratic_graph = graph(quadratic, 2)
+    assert quadratic_graph.subs(origin) == coeff[0,2,0]
+    assert S.diff(quadratic_graph,u).subs(origin) == coeff[0,1,1]
+    assert S.diff(quadratic_graph,z).subs(origin) == coeff[0,1,0]
+    assert S.diff(quadratic_graph,s) == -z**2
+
+    def sphere_reduce(poly):
+        result = 0
+        for (i,j,k), c in S.Poly(S.expand(poly),x,y,t).terms():
+            m = min(i,j)
+            result += c*x**(i-m)*y**(j-m)*t**k*((1-t*t)/2)**m
+        return S.expand(result)
+
+    at_singular_boundary = representative.subs(
+        {coeff[0,3,0]:0, coeff[0,2,1]:0, coeff[0,2,0]:0})
+    correction = coeff[1,2,0]*y*(q-1)/2
+    corrected = S.expand(at_singular_boundary-correction)
+    assert S.diff(corrected,y,2) == 0
+    assert sphere_reduce(corrected-at_singular_boundary) == 0
+    normal = sphere_reduce(corrected)
+    profile = S.diff(normal,y)
+    assert S.diff(profile,x) == S.diff(profile,y) == 0
+    assert S.Poly(profile,t).degree() <= 2
+    assert S.diff(normal-y*profile,y) == 0
+    assert S.diff(at_singular_boundary-2*correction,y,2) != 0
+    quadratic_repeated = quadratic.subs({coeff[0,2,0]:0,coeff[0,1,1]:0})
+    assert S.diff(sphere_reduce(quadratic_repeated),y) == coeff[0,1,0]
+
+    # The complete affine-y family and every basis monomial of G(x,t).
+    a, b, c = S.symbols("profile_a profile_b profile_c")
+    gi = {(i,j):S.Symbol("g%d%d" % (i,j))
+          for i in range(4) for j in range(4-i)}
+    g = sum(gi[i,j]*x**i*t**j for i,j in gi)
+    phase = y*(a+b*t+c*t*t)+g
+    profile_graph = graph(phase,3)
+    for i,j in gi:
+        term = S.cancel(z**3*(x**i*t**j).subs(affine,simultaneous=True))
+        expected = S.Rational(1,2**i)*(z*z-u*u)**i*u**j*z**(3-i-j)
+        assert S.expand(term-expected) == 0
+        assert min(sum(alpha) for alpha,_ in S.Poly(term,u,z).terms()) == 3+i
+    jet2 = sum(value*u**i*z**j for (i,j),value
+               in S.Poly(profile_graph,u,z).terms() if i+j<=2)
+    assert S.expand(jet2-(c*u*u+b*u*z+a*z*z)) == 0
+
+    # Both charts of the boundary-section blow-up.
+    first = S.cancel(profile_graph.subs(u,z*v)/z**2)
+    second = S.cancel(profile_graph.subs(z,u*v)/u**2)
+    S.Poly(first,v,z)
+    S.Poly(second,u,v)
+    assert S.diff(first,s) == -z
+    assert S.diff(second,s) == -u*v**3
+    assert S.expand(first.subs(z,0)-(c*v*v+b*v+a)) == 0
+    assert S.expand(second.subs(u,0)-(c+b*v+a*v*v)) == 0
+    assert S.discriminant(c*v*v+b*v+a,v) == b*b-4*a*c
+    assert S.diff(second,v).subs({c:0,u:0,v:0}) == b
+
+    # Literal pullbacks of the residue volume, including the phase divisor.
+    first_jacobian = S.det(S.Matrix([[S.diff(z*v,v),S.diff(z*v,z)],[0,1]]))
+    second_jacobian = S.det(S.Matrix([[1,0],[S.diff(u*v,u),S.diff(u*v,v)]]))
+    first_volume = S.cancel(first_jacobian/(2*z*z))
+    second_volume = S.cancel(second_jacobian/(2*(u*v)**2))
+    assert first_volume == 1/(2*z)
+    assert second_volume == 1/(2*u*v*v)
+    assert S.cancel(first_volume*S.diff(first,s)+S.Rational(1,2)) == 0
+    assert S.cancel(second_volume*S.diff(second,s)+v/2) == 0
+    assert S.cancel(S.diff(cubic_graph,s)/(2*z*z)+z/2) == 0
+    assert S.cancel(S.diff(quadratic_graph,s)/(2*z*z)+S.Rational(1,2)) == 0
+
+    # Repeated nonconstant profiles: full generic G, not a truncated model.
+    r = S.symbols("profile_root")
+    repeated = S.cancel(profile_graph.subs({a:r*r,b:-2*r,c:1})
+                        .subs(u,z*(v+r))/z**2)
+    S.Poly(repeated,v,z)
+    assert S.diff(repeated,s) == -z
+    assert repeated.subs(z,0) == v*v
+    k = S.expand(S.diff(repeated,z).subs(z,0)+s)
+    assert S.diff(k,s) == 0
+    remainder = S.cancel((repeated-v*v-z*(k-s))/z**2)
+    S.Poly(remainder,v,z)
+    critical_value = k.subs(v,0)
+    singular_point = {v:0,z:0,s:critical_value}
+    assert all(S.diff(repeated,w).subs(singular_point)==0 for w in (v,z,s))
+    assert S.det(S.hessian(repeated,(v,z,s)).subs(singular_point)) == -2
+
+    # At the ordinary double point every ambient blow-up chart contributes
+    # an exceptional Jacobian of order two, cancelling multiplicity two.
+    sigma, exceptional, A, B = S.symbols("sigma exceptional A B")
+    shifted = S.expand(repeated.subs(s,critical_value+sigma))
+    point_variables = (v,z,sigma)
+    quadratic_part = sum(value*v**i*z**j*sigma**k
+                         for (i,j,k),value in S.Poly(shifted,*point_variables).terms()
+                         if i+j+k==2)
+    assert all(sum(alpha)>=2 for alpha,_ in S.Poly(shifted,*point_variables).terms())
+    for mapping in (
+        {v:exceptional,z:exceptional*A,sigma:exceptional*B},
+        {v:exceptional*A,z:exceptional,sigma:exceptional*B},
+        {v:exceptional*A,z:exceptional*B,sigma:exceptional},
+    ):
+        strict = S.cancel(shifted.subs(mapping,simultaneous=True)/exceptional**2)
+        S.Poly(strict,exceptional,A,B)
+        jacobian = S.det(S.Matrix([[S.diff(mapping[w],q)
+                                    for q in (exceptional,A,B)] for w in point_variables]))
+        assert S.cancel(jacobian/exceptional**2) in (1,-1)
+        exceptional_quadric = S.cancel(quadratic_part.subs(mapping,simultaneous=True)
+                                        /exceptional**2)
+        assert S.expand(strict.subs(exceptional,0)-exceptional_quadric) == 0
+
+    # New cusp case: constant nonzero profile and nonzero height cubic.
+    cusp = S.expand(second.subs({b:0,c:0}))
+    h = gi[0,3]
+    leading_cusp = (a*v*v+u*(h+gi[0,2]*v+gi[0,1]*v*v+(gi[0,0]-s)*v**3))
+    cusp_tail = S.cancel((cusp-leading_cusp)/u**2)
+    S.Poly(cusp_tail,u,v)
+    assert S.diff(cusp,s) == -u*v**3
+    assert S.diff(cusp,u).subs({u:0,v:0}) == h
+    assert cusp.subs(u,0) == a*v*v
+    assert first.subs({b:0,c:0,z:0}) == a
+    cusp_unit = S.cancel((cusp-a*v*v)/u)
+    assert cusp_unit.subs({u:0,v:0}) == h
+    implicit_ds = -S.diff(cusp,s)/S.diff(cusp,u)
+    assert S.cancel(implicit_ds/(2*u*v*v)-v/(2*S.diff(cusp,u))) == 0
+
+    # Orthogonal infinitesimal generator and its polynomial shear.
+    metric = S.Matrix([[0,1,0],[1,0,0],[0,0,1]])
+    delta_matrix = S.Matrix([[0,0,0],[0,0,-1],[1,0,0]])
+    assert delta_matrix.T*metric+metric*delta_matrix == S.zeros(3)
+    h0, h1 = S.symbols("shear_h0 shear_h1")
+    shear_h = h0+h1*x
+
+    def delta(poly):
+        return x*S.diff(poly,t)-t*S.diff(poly,y)
+
+    assert delta(q) == delta(x) == delta(shear_h) == 0
+
+    def derivation(poly):
+        return S.expand(-shear_h*delta(poly))
+
+    forward = {x:x,t:t-x*shear_h,y:y+shear_h*t-x*shear_h**2/2}
+    inverse = {x:x,t:t+x*shear_h,y:y-shear_h*t-x*shear_h**2/2}
+    for w in (x,y,t):
+        assert derivation(derivation(derivation(w))) == 0
+        assert S.expand(forward[w]-(w+derivation(w)+derivation(derivation(w))/2)) == 0
+        assert S.expand(forward[w].subs(inverse,simultaneous=True)-w) == 0
+    assert S.expand(q.subs(forward,simultaneous=True)-q) == 0
+    wrong = dict(forward)
+    wrong[y] = y+shear_h*t-x*shear_h**2
+    assert S.expand(q.subs(wrong,simultaneous=True)-q) != 0
+
+    return {
+        "outcome":"pass",
+        "scope":"Exact graph, blow-up, residue, Hessian, cusp, and orthogonal-shear polynomial identities.",
+        "coefficient_representative_dimension":len(indices),
+        "sphere_class_dimension":16,
+        "G_basis_monomials_checked":len(gi),
+        "ordinary_double_point_blowup_charts":3,
+        "cusp_hypotheses":"profile_a!=0 and g03!=0; checked local unit coefficient and complementary empty chart",
+        "sphere_invariance_argument":"delta is in so(q), delta(h)=0, and O(q)-invariance gives L(h*delta(f))=L(delta(h*f))=0 for every f.",
+        "limits":"Properness, resolution smoothness, and V-filtration theorems are proved or cited in the paper, not certified by these identities.",
+    }
+
+
+
 if __name__=='__main__':
-    interval_cubic();constant_profile()
+    interval_cubic();constant_profile();boundary_charts()
     print('PASS interval cubics: four moments force zero')
-    print('PASS constant-profile family with no t^3 term: all eight-moment elimination identities and the mod-19 Sylvester determinant')
+    print('PASS constant-profile family with no t^3 term: all eight-moment identities, the three mod-19 Euclidean remainders, and the optional Sylvester determinant audit')
     print('PASS corrupted determinant rejected; no external polynomial certificate is needed')
+
+    print('PASS exact boundary charts, cusp volume cancellation, ordinary-double-point Hessian, and sphere shear identities')

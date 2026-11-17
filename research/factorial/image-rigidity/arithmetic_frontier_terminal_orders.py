@@ -1,4 +1,4 @@
-"""Exact certificates for the no-carry, single-digit terminal-order theorem.
+"""Exact arithmetic criteria and method-boundary certificates for binomial moments.
 
 Written proof: ARITHMETIC_FRONTIER_TERMINAL_ORDERS.tex.
 A finite replay checks implementation, not the unbounded theorem.
@@ -472,6 +472,157 @@ def global_precision_obstruction_literal_certificate(h):
     return result
 
 
+
+def integer_bareiss_determinant(matrix):
+    """Fraction-free determinant with exact-division checks and row pivoting."""
+    entries = [list(row) for row in matrix]
+    size = len(entries)
+    previous, sign = 1, 1
+    for k in range(size - 1):
+        if entries[k][k] == 0:
+            pivot_row = next((j for j in range(k + 1, size) if entries[j][k]), None)
+            if pivot_row is None:
+                return 0
+            entries[k], entries[pivot_row] = entries[pivot_row], entries[k]
+            sign = -sign
+        pivot = entries[k][k]
+        for i in range(k + 1, size):
+            for j in range(k + 1, size):
+                numerator = entries[i][j] * pivot - entries[i][k] * entries[k][j]
+                quotient, remainder = divmod(numerator, previous)
+                assert remainder == 0
+                entries[i][j] = quotient
+            entries[i][k] = 0
+        previous = pivot
+    return sign * entries[-1][-1]
+
+
+def evaluated_moment_coefficients(terminal, gap, lower):
+    """Descending coefficients of sum binom(j,k)*(j*a+1)_(d*k)*t^k."""
+    running, ascending = 1, [1]
+    for index in range(1, gap * terminal + 1):
+        running *= terminal * lower + index
+        if index % gap == 0:
+            ascending.append(comb(terminal, index // gap) * running)
+    return list(reversed(ascending))
+
+
+def integer_sylvester_resultant(terminal, gap, lower):
+    high = evaluated_moment_coefficients(terminal, gap, lower)
+    low = evaluated_moment_coefficients(terminal - 1, gap, lower)
+    size = 2 * terminal - 1
+    rows = []
+    for shift in range(terminal - 1):
+        rows.append([0] * shift + high + [0] * (size - shift - len(high)))
+    for shift in range(terminal):
+        rows.append([0] * shift + low + [0] * (size - shift - len(low)))
+    return integer_bareiss_determinant(rows)
+
+
+def integer_horner(descending, value):
+    result = 0
+    for coefficient in descending:
+        result = result * value + coefficient
+    return result
+
+
+def scaled_gaussian_taylor(descending, real_numerator, imag_numerator, denominator):
+    """Return B_k=D^(degree-k)*[w^k]H((X+iY)/D+w), as Gaussian integers."""
+    result = [(descending[0], 0)]
+    power = 1
+    for coefficient in descending[1:]:
+        power *= denominator
+        updated = []
+        for k in range(len(result) + 1):
+            real, imag = result[k] if k < len(result) else (0, 0)
+            previous_real, previous_imag = result[k - 1] if k else (0, 0)
+            updated.append((
+                real_numerator * real - imag_numerator * imag + previous_real,
+                imag_numerator * real + real_numerator * imag + previous_imag))
+        updated[0] = (updated[0][0] + coefficient * power, updated[0][1])
+        result = updated
+    return result
+
+
+def integer_rouche_bounds(descending, real_numerator, imag_numerator,
+                          denominator, radius_denominator):
+    assert denominator > 0 and radius_denominator > 0
+    scale, remainder = divmod(denominator, radius_denominator)
+    assert remainder == 0 and scale > 0
+    taylor = scaled_gaussian_taylor(descending, real_numerator, imag_numerator,
+                                   denominator)
+    linear_lower = scale * max(abs(taylor[1][0]), abs(taylor[1][1]))
+    norms = [abs(real) + abs(imag) for real, imag in taylor]
+    tail = 0
+    for k in range(len(norms) - 1, 1, -1):
+        tail = tail * scale + norms[k]
+    remainder_upper = norms[0] + tail * scale * scale
+    return linear_lower, remainder_upper
+
+
+def resultant_hurwitz_counterexample_certificate():
+    """Verify the literal degree-280 resultant and one right-half-plane zero.
+
+    No floating point, Arb, Routh recursion, or symbolic resultant is used here.
+    Degree-bound interpolation connects 281 exact integer determinants to the
+    literal coefficient input. An integer Rouché inequality then certifies a
+    simple root in the displayed rational disk.
+    """
+    here = Path(__file__).resolve().parent
+    path = here / "arithmetic_frontier_terminal_orders_resultant_hurwitz_counterexample.json"
+    certificate = json.loads(path.read_text(encoding="utf-8"))
+    assert certificate["schema_version"] == 1
+    assert certificate["source_resultant"]["terminal_N"] == 8
+    assert certificate["source_resultant"]["gap"] == 5
+    assert certificate["coefficient_order"] == "descending"
+    assert certificate["degree_upper_bound"] == 280
+    assert certificate["identity_verification_nodes"] == {"first": 0, "last": 280}
+    descending = list(map(int, certificate["primitive_coefficients"]))
+    content = int(certificate["resultant_content"])
+    assert content > 0 and len(descending) == 281
+    assert all(coefficient > 0 for coefficient in descending)
+    assert gcd(*descending) == 1
+    for lower in range(281):
+        assert integer_sylvester_resultant(8, 5, lower) == (
+            content * integer_horner(descending, lower))
+    center = certificate["center"]
+    real_numerator = int(center["real_numerator"])
+    imag_numerator = int(center["imag_numerator"])
+    denominator = int(center["denominator"])
+    radius_denominator = int(certificate["radius_denominator"])
+    margin = int(certificate["rouche_strict_margin_multiplier"])
+    assert real_numerator * radius_denominator > denominator
+    assert imag_numerator * radius_denominator > denominator
+    lhs, rhs = integer_rouche_bounds(descending, real_numerator, imag_numerator,
+                                     denominator, radius_denominator)
+    assert rhs > 0 and margin >= 1 and lhs > margin * rhs
+    # Corrupt coefficients must fail the independent determinant input check.
+    corrupted = list(descending)
+    corrupted[-1] += 1
+    assert integer_sylvester_resultant(8, 5, 0) != content * integer_horner(corrupted, 0)
+    # A disk at the positive real point 1 is not certified as a root disk.
+    wrong_lhs, wrong_rhs = integer_rouche_bounds(descending, denominator, 0,
+                                                denominator, radius_denominator)
+    assert wrong_lhs <= wrong_rhs
+    # Independent small controls for the integer determinant and Taylor helpers.
+    assert integer_bareiss_determinant([[1, 2], [3, 4]]) == -2
+    assert integer_bareiss_determinant([[0, 1], [1, 0]]) == -1
+    assert scaled_gaussian_taylor([1, 0, 1], 1, 1, 1) == [(1, 2), (2, 2), (1, 0)]
+    return {
+        "terminal_N": 8, "gap": 5, "resultant_degree": 280,
+        "coefficient_identity_nodes_checked": 281,
+        "literal_primitive_coefficients_all_positive": True,
+        "exact_integer_rouche_zero_count_in_disk": 1,
+        "rouche_zero_is_simple": True, "disk_strictly_in_open_right_half_plane": True,
+        "rouche_linear_to_remainder_floor": str(lhs // rhs),
+        "required_Arb_or_Routh_dependency": False,
+        "corrupted_coefficient_and_wrong_disk_controls_rejected": True,
+        "unrestricted_unshifted_resultant_Hurwitz_stability": False,
+        "refutes_adjacent_gap_resultant_stability": False,
+        "refutes_coefficient_positivity": False, "SFC_counterexample": False,
+        "certificate": path.name}
+
+
 def replay():
     literal_count = bridge_count = pair_count = rejected_count = 0
     for p in (2, 3, 5, 7):
@@ -664,6 +815,7 @@ def replay():
     # A carry can change the endpoint; rejection is mathematically meaningful.
     carry_hull = newton_residuals(coefficients(3, 18, 3), 3)
     assert carry_hull[-1]["right"][1] != 4
+    hurwitz_counterexample = resultant_hurwitz_counterexample_certificate()
     return {
         "status": "pass", "arithmetic": "exact rational and finite-field",
         "literal_hull_residual_cases": literal_count,
@@ -680,6 +832,7 @@ def replay():
         "literal_split_inseparable_residual_controls": split_failures_detected,
         "global_precision_obstruction_cases": precision_count,
         "symbolic_gap_one_discriminant_cases": symbolic_disc_count,
+        "unshifted_resultant_hurwitz_counterexample": hurwitz_counterexample,
         "unsupported_inputs_rejected": rejected_count,
         "repeated_factor_countercontrol_detected": True,
         "carry_endpoint_countercontrol_detected": True,
@@ -710,7 +863,9 @@ if __name__ == "__main__":
         name: hashlib.sha256((here / name).read_bytes()).hexdigest()
         for name in ("ARITHMETIC_FRONTIER_TERMINAL_ORDERS.tex",
                      "arithmetic_frontier_terminal_orders.py", "prime_power_windows.py",
-                     "PRIME_POWER_TWO_TERM_SFC.tex", "HIGHER_GAP_ADJOINT_RANK.tex")}
+                     "PRIME_POWER_TWO_TERM_SFC.tex", "HIGHER_GAP_ADJOINT_RANK.tex",
+                     "arithmetic_frontier_terminal_orders_resultant_hurwitz_counterexample.json",
+                     "sources/dlmf-1-10-rouche.html")}
     destination = here / "arithmetic_frontier_terminal_orders_verification.json"
     destination.write_text(json.dumps(report, indent=2) + "\n", encoding="utf-8")
     print(json.dumps(report, indent=2))

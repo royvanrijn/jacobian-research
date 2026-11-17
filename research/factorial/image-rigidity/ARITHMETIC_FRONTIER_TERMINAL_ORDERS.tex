@@ -5,7 +5,7 @@
 \newtheorem{theorem}{Theorem}
 \newtheorem{lemma}[theorem]{Lemma}
 \newtheorem{corollary}[theorem]{Corollary}
-\title{Prime-power terminal orders for nonconstant binomial supports}
+\title{Arithmetic criteria for binomial factorial moments}
 \author{Internal arithmetic proof; no priority or external-review claim}
 \date{17 November 2026}
 \begin{document}
@@ -609,6 +609,114 @@ weighted perturbation or higher-residual argument.
 Theorem \ref{thm:precisionobstruction} rules out the uniform
 coefficientwise precision shortcut alone.
 
+\section{The lower-exponent resultant: positivity and a failed stability strengthening}
+For integers $N\ge2$, $d\ge1$ and indeterminate $a$, define
+\[
+ \mathcal F_{j,d}(a,t)=
+   \sum_{k=0}^j\binom jk(aj+1)_{dk}t^k,\qquad
+ \mathcal R_{N,d}(a)=
+   \operatorname{Res}_t(\mathcal F_{N,d},\mathcal F_{N-1,d}).
+\]
+For nonnegative integer $a$ the nonzero factorial normalization
+identifies this resultant with the desired consecutive-moment
+coprimality test. It is an integer polynomial in $a$, and
+\[
+ \deg_a\mathcal R_{N,d}=dN(N-1),\qquad
+ [a^{dN(N-1)}]\mathcal R_{N,d}
+   =\bigl(N^d-(N-1)^d\bigr)^{N(N-1)}>0.                    \tag{13}
+\]
+Indeed each coefficient of $t^k$ has $a$-degree at most $dk$.
+The resultant has weighted degree $N(N-1)$ when the coefficient
+of $t^k$ has weight $k$, by its variable-scaling identity.
+This gives the upper degree bound.
+After $t=z/a^d$ the two polynomials tend coefficientwise to
+$(1+N^dz)^N$ and $(1+(N-1)^dz)^{N-1}$ as $a\to+\infty$.
+Their resultant is the nonzero expression on the right of (13),
+which proves the exact degree and leading coefficient.
+
+Consequently, a proof of nonnegative $a$-coefficients for
+$\mathcal R_{N,d}$ for all $N,d$ would settle all positive
+integer lower exponents; the constant-plus-power case supplies
+$a=0$. This coefficient assertion remains unproved.
+A stronger unshifted Hurwitz-stability assertion is false.
+
+\begin{theorem}[Exact counterexample to the stronger stability assertion]
+\label{thm:resultant-hurwitz-counterexample}
+The degree-$280$ polynomial $\mathcal R_{8,5}(a)$ has strictly
+positive coefficients but has a simple zero in $\operatorname{Re}a>0$.
+In particular, it is not weakly Hurwitz stable.
+\end{theorem}
+\begin{proof}
+Write $\mathcal R_{8,5}=C H$ with positive integer content $C$
+and primitive $H\in\mathbb Z[a]$.
+The full coefficients of $H$, $C$, and the exact disk data below
+are retained in the
+\href{arithmetic_frontier_terminal_orders_resultant_hurwitz_counterexample.json}
+{literal coefficient certificate}.
+The verifier checks their identity with the displayed resultant
+at the $281$ distinct integer nodes $a=0,\ldots,280$.
+At each node it constructs the literal $15$ by $15$ Sylvester
+matrix and computes its determinant by integer fraction-free
+elimination, with every division checked for zero remainder.
+The degree bound $280$ from (13) makes these identities a complete
+verification of the coefficient input. Every listed coefficient
+of $H$ and the content $C$ is positive.
+
+Set $D=10^{44}$, $r=10^{-20}$ and $c=(X+iY)/D$, where
+\[
+ \begin{aligned}
+ X&=23945957553001005963473566467426320699546566,\\
+ Y&=246677554086535385227093164386364092752552421.
+ \end{aligned}
+\]
+The disk $|a-c|<r$ lies strictly in the open right half-plane
+and strictly above the real axis. Write
+\[
+ H(c+w)=\sum_{k=0}^{280}b_kw^k,\qquad
+ B_k=D^{280-k}b_k\in\mathbb Z[i],\qquad U=Dr=10^{24}.
+\]
+The verifier constructs the Gaussian integers $B_k$ by the
+integer-scaled Taylor recurrence, and checks
+\[
+ U\max(|\operatorname{Re}B_1|,|\operatorname{Im}B_1|)
+ >
+ |\operatorname{Re}B_0|+|\operatorname{Im}B_0|
+ +\sum_{k=2}^{280}
+     (|\operatorname{Re}B_k|+|\operatorname{Im}B_k|)U^k.       \tag{14}
+\]
+The left side is more than $10^{17}$ times the right side.
+These are integer comparisons, not floating-point residuals.
+
+After division by $D^{280}$, inequality (14) implies
+\[
+ r|b_1|>|b_0|+\sum_{k=2}^{280}|b_k|r^k.
+\]
+On the circle $|w|=r$, the polynomial $H(c+w)$ is therefore
+strictly closer to $b_1w$ than the modulus of $b_1w$.
+Rouch\'e's theorem, in
+\href{https://dlmf.nist.gov/1.10.iv}{NIST DLMF, Section 1.10(iv)}
+(\href{sources/dlmf-1-10-rouche.html}{retained primary statement}),
+gives exactly one zero counted with multiplicity in this disk.
+Both functions are polynomials and hence analytic on and inside
+the circle. The zero is simple and has positive real part.
+\end{proof}
+The
+\href{arithmetic_frontier_terminal_orders.py}{exact verifier}
+uses only integer arithmetic for this coefficient and disk
+certificate. It rejects a corrupted coefficient input and a
+root-disk proposal at the positive real point $1$.
+No Routh recursion or numerical root-isolation library is required
+for the retained proof.
+
+This counterexample concerns the proposed unrestricted-gap
+extension of unshifted resultant stability. It does not refute
+the adjacent-gap stability proposal in
+\href{sources/rocks-2015-author-preprint.pdf}
+{Rocks's 2015 author draft, Remark 3.18}, and it does not refute
+the weaker coefficient-positivity target.
+Its witness has a nonreal lower-exponent parameter; it is not a
+binomial Strong Factorial counterexample.
+
 \section{Overlap, exact replay and remaining obligation}
 The existing prime-power two-term theorem concerns fixed shapes
 $\gamma\le d$ for constant-plus-power phases at \emph{every} index.
@@ -623,8 +731,9 @@ families in their stated specializations. No novelty claim is made.
 The companion exact checker compares the actual coefficient Newton
 hull and literal normalized residual with (2), checks (5), tests
 the lower-one moment identities, and checks irreducibility-degree
-coprimality in bounded instances. Its finite run checks the
-implementation; all unbounded quantifiers use the proof above.
+coprimality in bounded instances. It also verifies the explicit
+resultant counterexample by degree-bound interpolation and an integer
+Rouch\'e certificate. Its finite family tests check the implementation; all unbounded quantifiers use the proof above.
 Carry inputs are rejected as unsupported rather than classified as
 counterexamples to Strong Factorial.
 The all-terminal-order gap-three theorem, the other gaps and

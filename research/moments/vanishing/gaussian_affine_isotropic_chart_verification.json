@@ -1,14 +1,14 @@
 {
   "status": "passed",
-  "scope": "Exact symbolic identities, bounded Wick controls, the stated complete resonant-quartic coefficient certificate, and an exact nonpure local-method barrier. The certificate forces an all-order safe form in its fixed family; arbitrary-degree analytic classifications use the written proof rather than finite controls. The barrier is not a unit-period or H(2,1) counterexample.",
+  "scope": "Exact symbolic identities, bounded Wick controls, the stated complete resonant-quartic coefficient certificate, actual-seed controls for the written all-degree nullsource-zero exclusion, and an exact nonpure local-method barrier. The certificate forces an all-order safe form in its fixed family; arbitrary-degree exclusions and analytic classifications use the written proofs rather than finite controls. The barrier is not a unit-period or H(2,1) counterexample.",
   "checked_on": "2026-11-17",
   "command": ".venv/bin/python research/moments/vanishing/verify_gaussian_affine_isotropic_chart.py --output research/moments/vanishing/gaussian_affine_isotropic_chart_verification.json",
   "environment": {
     "python": "3.12.3",
     "sympy": "1.14.0"
   },
-  "checker_sha256": "332074230b78d7291e4b9f2714d9e24c998e666c51e9a622c19fbd655936a26b",
-  "proof_sha256": "9306cc845d24aa7fa1d5d9aa2007d8aa3a097d017312e73a8d79b80abb065809",
+  "checker_sha256": "71646872dcb5b7f3003dec736d4db04c9d8475617e4f205cfb2889e7a7b5cd7c",
+  "proof_sha256": "70e0384853ebbb2f928e2125aa66ca17c035337c2006c09d05b4d0ba35e68648",
   "checks": {
     "symbolic": [
       "arbitrary-ell unsafe-branch rational identities",
@@ -322,49 +322,82 @@
           "R": 0
         },
         "scope": "Exact identities and source examples, with no moment prefixes."
+      },
+      "regular_h_over_c": {
+        "status": "passed",
+        "symbolic": [
+          "h=c*v phase with r-levels 2,1,0,-1",
+          "H1/H3 volume lower bound",
+          "level-two simple and double-root bounds",
+          "level-zero endpoint (A+2)/(2m-A)",
+          "level-one weight separation and positive H2 endpoint",
+          "c in (z^2), h in (c) imply h in (z^2)",
+          "zero-root conditions u,k in (z)"
+        ],
+        "scope": "Exact identities and ideal conditions; no moment prefixes or sampled phases."
+      },
+      "moving_nullsource_zero": {
+        "kind": "actual-seed identities supporting a written all-order obstruction",
+        "phase": "Z^(2nu+1) W^2+Z^nu WY-W/2+k(Z), integer nu>=1, arbitrary k in C[Z]",
+        "conclusion": "no member of this all-degree family is pure",
+        "marked_base_formula": "B_N=(-t/2)^N sum_j (-1)^j (2j-1)!! 2^(-2(nu-1)j) binom(N+2nu*j,j)t^(2nu*j)",
+        "direct_Wick_controls": {
+          "nu": [
+            1,
+            4
+          ],
+          "marker_degrees": [
+            0,
+            4
+          ],
+          "moment_orders": [
+            0,
+            10
+          ]
+        },
+        "finite_difference_controls": {
+          "N": "symbolic",
+          "nu": "symbolic",
+          "j": [
+            0,
+            7
+          ]
+        },
+        "Gaussian_kernel_controls": {
+          "nu": 1,
+          "marker_degrees": [
+            0,
+            4
+          ],
+          "series_orders": [
+            0,
+            7
+          ]
+        },
+        "source_exception": {
+          "ell": "Z^3",
+          "c": "Z",
+          "h": "-1/2",
+          "a": 0,
+          "u": 0,
+          "R": 0,
+          "J0": "-2Z-t"
+        },
+        "relative_even_coefficient_bound": "(exp(A)-1)*p/[2(2p-1)^2], A=sum_l |k_l|, k0=0",
+        "general_ratio_limit": "(L_j/L_(j-1))/j -> 2^(3-2nu)(2nu)^(2nu)/(2nu-1)^(2nu-1)>0",
+        "ratio_controls": {
+          "nu": [
+            1,
+            4
+          ],
+          "j": "symbolic"
+        },
+        "scope": "The written finite-difference identity and uniform complex-coefficient estimate prove the arbitrary-degree exclusion for every nu>=1. These computations check exact algebraic identities and finite Wick controls; no prefix sufficiency is used. The displayed explicit relative bound is for nu=1."
       }
     }
   },
   "independent_replay": false,
   "formal_verification": false,
   "external_review": false,
-  "internal_source_review": {
-    "reviewers": [
-      "multipuncture",
-      "multiple_poles",
-      "quartic_exact",
-      "audit_imports",
-      "higher_w",
-      "radial_endpoint",
-      "mixed_quartic",
-      "varying_w2",
-      "common_roots"
-    ],
-    "scope": "Fixed-puncture and multiple-root estimates; refreshed import audit; arbitrary-multiplicity nonzero-a and unshared-root proofs; relative rank-D endpoint pairing; spatial/parameter half-density and odd-sector bridge; complete positive-genus double-cover component estimates; clean localization of variable quadratic-W sources including the moving determinant divisor and actual phase pole; exact quartic certificate and zero-coefficient branches; high-common-root zero-order cubic chart; radial/angular and polynomial-orbit conclusions",
-    "outcome": "No mathematical gap identified in internal source audits. Independent and external review remain pending."
-  },
-  "additional_primary_sources_checked": [
-    {
-      "url": "https://stacks.math.columbia.edu/tag/0CDN",
-      "cache": "research/moments/vanishing/sources/stacks_0CDN_semistable_reduction.html",
-      "sha256": "04737b66853d56ea787cde4ca15964b1896707c3a2e72ceaa0d39c07c7573383",
-      "checked": "Theorem 55.18.1: smooth projective geometrically connected curve over a DVR fraction field acquires semistable reduction after a finite separable extension; all genera included."
-    },
-    {
-      "url": "https://stacks.math.columbia.edu/tag/0CDB",
-      "cache": "research/moments/vanishing/sources/stacks_0CDB_nodal_models.html",
-      "sha256": "57bff065760cfbf5eb1c640fdc9355a5cb032b98244ae5b6ee8daa1f924c5f9b",
-      "checked": "Section 55.14, Example 55.14.1 and Lemma 55.14.3: nodal surface equations uv=pi^n resolve by blowups retaining nodal/reduced fibres."
-    },
-    {
-      "url": "https://stacks.math.columbia.edu/tag/0FMU",
-      "cache": "research/moments/vanishing/sources/stacks_0FMU_logarithmic_residue.html",
-      "sha256": "f6d9530c983cb52b6bff6725be01c561e379d43b7bb163bc28b92f4bda31c7b1",
-      "checked": "Section 50.15, Lemmas 50.15.2 and 50.15.7: the logarithmic residue exact sequence for a smooth divisor, including its local proof; regular exponential twist and higher-pole contraction are proved separately in the H21 note."
-    }
-  ],
-  "dependency_refresh": {
-    "laurent_logarithmic_bound.tex": "Current change makes the full chain mapping cone and proper comparison explicit; hypotheses and used estimates unchanged after source audit.",
-    "one_base_main.tex": "Current edits clarify theorem references and companion provenance; used stationary-ball statements and proof unchanged mathematically."
-  }
+  "verification_boundary": "The retained bounded replay identifies an earlier checker/source snapshot. The current checker and enlarged universal proof are not certified by that earlier run; current support is held unverified and a matching replay is pending."
 }

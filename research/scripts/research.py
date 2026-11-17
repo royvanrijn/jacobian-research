@@ -170,7 +170,7 @@ def render(data: dict) -> str:
              "independent replay, formal verification and external review remain separate.", "",
              "[Published papers](../README.md) · [Unpublished manuscripts](../unpublished/README.md) · "
              "[Research topics](README.md) · [Scope and gaps](SCOPES.md) · "
-             "[Implications](DEPENDENCIES.md) · [Source coverage](COVERAGE.md) · [Bounds](BOUNDS.md)", "",
+             "[Implications](DEPENDENCIES.md) · [Source coverage](COVERAGE.md) · [Bounds](BOUNDS.md) · [Cited sources](REFERENCES.md)", "",
              "The authored state describes the exact statement below. Graph status is computed "
              "from declared proof routes and current source pins; it is an internal evidence "
              "classification, not an independent proof audit. A proved scoped result can coexist "
@@ -273,7 +273,7 @@ def render_research_index(data: dict) -> str:
               "[MATH_STATUS.json](MATH_STATUS.json). It records main statements, proof sources "
               "and verification limits. Internal proof status does not imply publication.",
               "", "[Scope and missing gaps](SCOPES.md) · [Dependency DAG](DEPENDENCIES.md) · "
-              "[How to maintain implications](DEPENDENCY_GUIDE.md) · [Source coverage](COVERAGE.md) · [Bounds](BOUNDS.md)",
+              "[How to maintain implications](DEPENDENCY_GUIDE.md) · [Source coverage](COVERAGE.md) · [Bounds](BOUNDS.md) · [Cited sources](REFERENCES.md)",
               "", "[Verification commands](REPRODUCE.md)", ""]
     return "\n".join(lines)
 

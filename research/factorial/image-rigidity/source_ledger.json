@@ -114,6 +114,12 @@
       "url": "https://arxiv.org/pdf/2401.08312v1",
       "sha256": "f067406cc088fbad56308b00d8add51117401379504a1109b30442b62cf82182",
       "review": "Theorem4.6 on p26 (PDF index25), p=0,q=d specialization inspected in the primary text; balanced step-line numerator multiset, reciprocal and scale rederived from coefficients. Section4.3 explicitly supplies no general zero theorem. Used for representation attribution only in lower_exponent_initial_and_boundary.tex; derivative identity and generic shortcut counterexample are proved independently. No imported all-index nonvanishing result, independent review or full-paper audit."
+    },
+    {
+      "file": "sources/dlmf-1-10-rouche.html",
+      "url": "https://dlmf.nist.gov/1.10",
+      "sha256": "fc94fe84ef0de24326d225e9f8d7ed689d45b0674431c74d10d753dbc4f7dcb1",
+      "review": "Section1.10(iv), Rouche paragraph after Eq1.10.10 inspected. Used only for the exact rational-disk N8,d5 a-resultant counterexample: the full polynomial and its nonzero linear Taylor comparator are entire, and a retained strict rational circle inequality proves one zero with multiplicity in a disk wholly in Re(a)>0. No general resultant stability or simplicity theorem is imported."
     }
   ],
   "additional_primary_references": [

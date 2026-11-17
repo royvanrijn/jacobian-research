@@ -4,7 +4,8 @@
 \usepackage[hidelinks]{hyperref}
 \newtheorem{theorem}{Theorem}
 \newtheorem{corollary}[theorem]{Corollary}
-\title{Auxiliary Riordan factorizations and the cyclic Wronskian transfer}
+\newtheorem{lemma}[theorem]{Lemma}
+\title{Cyclic Wronskians, factorial discriminants\\and positive auxiliary factorizations}
 \author{Internal proof and exact replay; no priority claim}
 \date{17 November 2026}
 \begin{document}
@@ -26,6 +27,12 @@ All generating identities below are formal power-series identities
 in characteristic zero and hold for every real $b$; positivity is not
 assumed in deriving them. The counterexamples use the physical
 ordinary-factorial shape $b=1$.
+
+Theorem~\ref{thm:discriminant} below identifies a generalized Hurwitz
+determinant with a normalized factorial-moment discriminant at every gap.
+It proves nonnegativity of that determinant for every positive Gamma shape,
+and of the last three special minors at gap three. Strict nonvanishing
+and total nonnegativity of all generalized Hurwitz minors remain open.
 
 \section{An exact all-gap Riordan representation}
 \begin{theorem}\label{thm:Riordan}
@@ -342,6 +349,442 @@ same first-order raising-operator form. A valid transfer must use
 the order-three Toeplitz factor in (4), or another part of the
 actual parameter compatibility.
 
+\section{A uniform discriminant identity at every gap}
+For integers $n,d\ge1$, put
+\[
+ T_{n,\gamma,d}(t)=\sum_{k=0}^n\binom nk(\gamma)_{dk}t^k,
+ \qquad (\gamma)_j=\prod_{r=0}^{j-1}(\gamma+r),\quad(\gamma)_0=1.
+\]
+Throughout this section, $\operatorname{Disc}_tT_{n,\gamma,d}$ means the
+\emph{fixed-degree-$n$ coefficient discriminant}: compute it with
+indeterminate $\gamma$ and then specialize that polynomial.
+At a negative integer the actual specialized degree of $T$ may drop;
+recomputing the discriminant at that smaller degree is a different
+operation. There is no ambiguity for $\gamma>0$.
+
+For $0\le s\le d-2$, let $P_s=B_{n+s,\gamma,d}$ and write
+\[
+ P_s(z)=\sum_{j=0}^{d-1}z^jM_{s,j}(z^d),\qquad
+ D_j(u)=\det M_{\widehat j}(u).
+\]
+Here $M_{\widehat j}$ deletes column $j$ from the $(d-1)$-by-$d$
+cyclic-section matrix. Define
+\[
+ W^{[d]}_{n,\gamma}(z)=
+    \sum_{j=0}^{d-1}z^{d-1-j}D_j((-1)^dz^d).
+\]
+At $d=1$ the row set is empty, its determinant is one, and $W^{[1]}=1$.
+The polynomial $W^{[d]}$ is monic of degree $(d-1)n$; this is proved
+below. Write its descending coefficients as
+\[
+ z^{(d-1)n}W^{[d]}_{n,\gamma}(1/z)=\sum_jw_jz^j,
+ \qquad
+ \mathcal D_{n,d}(\gamma)=\det(w_{dj-i})_{i,j=1}^{n-1},
+\]
+with $w_j=0$ outside the polynomial's range and
+$\mathcal D_{1,d}=1$.
+For $d=3$ this $W^{[3]}$ is exactly the earlier $W$, and
+$\mathcal D_{n,3}=\Delta_{2n-2}(W)$.
+
+\begin{theorem}\label{thm:discriminant}
+For every pair of integers $n,d\ge1$, the following is a polynomial
+identity in $\gamma\in\mathbb C$, with $N=\binom n2$:
+\[
+ \operatorname{Disc}_t T_{n,\gamma,d}
+ =(-1)^N d^N
+   \left(\prod_{k=1}^n k^k\right)
+   \left(\prod_{k=1}^{n-1}(\gamma)_{dk}\right)
+        \mathcal D_{n,d}(\gamma).                           \tag{D}
+\]
+In particular, for $\gamma>0$, $T_{n,\gamma,d}$ is squarefree if and
+only if $\mathcal D_{n,d}(\gamma)\ne0$.
+\end{theorem}
+The proof identifies the relevant schemes, including multiplicities.
+A comparison of zero sets alone would not establish this identity.
+
+\subsection*{The bounded cyclic presentation}
+\begin{lemma}\label{lem:general-fitting}
+Let $A$ be any commutative ring with identity and let
+$P_0,\ldots,P_{d-2}\in A[z]$ be monic of consecutive degrees
+$n,\ldots,n+d-2$. Form $M,D_j,W,w_j$ exactly as above, and put
+$E_j=(-1)^jD_j$.
+Then $W$ is monic of degree $(d-1)n$, and, up to signed changes
+of free bases, there is an exact sequence of $A$-modules
+\[
+ A^{n-1}\xrightarrow{H^T}A^{n-1}\longrightarrow
+ A[u]/(E_0,\ldots,E_{d-1})\longrightarrow0,
+ \qquad H=(w_{dj-i})_{i,j=1}^{n-1}.
+\]
+Consequently the quotient's zeroth Fitting ideal is $(\det H)$.
+Over a discrete valuation ring, if $\det H\ne0$, its length equals
+$v(\det H)$. No genericity or nonzero-constant assumption is required.
+\end{lemma}
+\begin{proof}
+For $d=1$ the quotient is zero and $H$ is an identity matrix, so the
+assertion is direct. Suppose $d\ge2$.
+Assign weight $de+j$ to $u^ee_j$ in a multiplier row.
+The cyclic row $M_s$ has unique greatest-weight monomial
+$u^{q_s}e_{r_s}$, with coefficient one, where
+\[
+ q_s=\lfloor(n+s)/d\rfloor,\qquad r_s=(n+s)\bmod d.
+\]
+The $d-1$ pivots are distinct. Write $n-1=da+l$, $0\le l<d$;
+the missing column is $l$, and $Q=\sum_sq_s=(d-1)a+l$.
+The missing cofactor $E_l$ has degree $Q$ and leading coefficient
+$1$ or $-1$: its unique maximum-weight determinant term is the
+product of the distinct row pivots. More generally,
+\[
+ \deg E_j\le\left\lfloor\frac{(d-1)(n-1)+j}{d}\right\rfloor
+ =\begin{cases}Q-1,&j<l,\\Q,&j\ge l.\end{cases}
+\]
+The unsigned minor omitting $l$ has leading pivot-permutation sign
+$(-1)^{l(d-1-l)}$. In $W$, after $u=(-1)^dz^d$, its leading sign
+is $(-1)^{dQ+l(d-1-l)}=1$; the exponent is congruent to $l(l+1)$
+modulo two. Every other summand has lower degree. Thus $W$ is monic
+of degree $(d-1)n$.
+
+Set $t=n-2$ and $V=A[u]_{\le t}$, interpreted as zero when $t=-1$.
+Allow multiplier bounds
+\[
+ b_j=\left\lfloor\frac{t-j}{d}\right\rfloor
+ =\begin{cases}a,&j<l,\\a-1,&j\ge l.\end{cases}
+\]
+Negative bounds mean zero modules. The bounded multiplication map
+\[
+ \Phi:\bigoplus_{j=0}^{d-1}A[u]_{\le b_j}\longrightarrow V,
+ \qquad(f_j)\longmapsto\sum_jf_jE_j
+\]
+has equal source and target ranks $n-1$.
+Since $E_l$ is monic up to sign of degree $Q\le n-1$, every quotient
+class has a representative in $V$. At $n=1$, $E_l$ is a unit and
+the quotient is zero directly.
+
+To prove exactness, let $P=\sum f_jE_j$ have degree at most $t$.
+The row syzygies are $\sum_jM_{s,j}E_j=0$.
+If a pivot component $f_{r_s}$ has a term $cu^e$ with $e\ge q_s$,
+subtract $cu^{e-q_s}M_s$ from the multiplier vector.
+This cancels the chosen term and introduces only monomials of
+strictly smaller weight. Always choose an eligible term of maximal
+weight. The process terminates, with
+$\deg f_{r_s}<q_s$, exactly the required bounds on all pivot columns.
+Their products with $E_j$ have degree at most $t$.
+Monicity of $E_l$ then forces
+$\deg f_l\le t-Q=a-1=b_l$ as well.
+All reductions use leading coefficients $1$ or $-1$; the argument
+also holds over rings with zero divisors.
+Thus $\ker(V\to A[u]/(E))=\operatorname{im}\Phi$.
+
+It remains to identify its matrix. Put $L=(d-1)n$, $m=n-1$ and
+write $W=\sum_{k=0}^{d-1}z^kW_k(z^d)$. The cofactor definition gives
+$W_k(v)=(-1)^{d-1-k}E_{d-1-k}((-1)^dv)$.
+Use descending coefficient order in the target $V$.
+For $1\le i\le m$, set
+\[
+ k_i=(L+i)\bmod d,\quad c_i=\lfloor(L+i)/d\rfloor,
+ \quad\ell_i=m-c_i,\quad j_i=d-1-k_i.
+\]
+Then
+\[
+ (H^T)_{ji}=w_{dj-i}
+ =[v^{m-j}]\,v^{\ell_i}W_{k_i}(v),\qquad
+ d\ell_i+j_i=n-i-1.
+\]
+These columns enumerate exactly the bounded multipliers, once each.
+The substitution $u=(-1)^dv$ and the displayed cofactor signs change
+only signs in the free bases. Hence the matrix is $H^T$ up to signed
+permutations. The Fitting assertion follows from this square
+presentation; over a discrete valuation ring, Smith normal form
+gives the stated length.
+\end{proof}
+
+\subsection*{The adjoint Wronskians and critical ideals}
+Let $Q=1-D_z$ and let $\omega_0,\ldots,\omega_{d-1}$ be the $d$th
+roots of unity. The polynomial just defined also has the expression
+\[
+ W^{[d]}_{n,\gamma}(z)=\frac1{\kappa_d}
+  \det\bigl[\omega_j^k(Q^kB_{n,\gamma,d})(-\omega_jz)\bigr]
+       _{1\le j\le d-1,\ 0\le k\le d-2},
+\]
+where $\omega_0=1$ and
+$\kappa_d=\prod_{1\le i<j\le d-1}(\omega_j-\omega_i)$;
+empty determinants and products at $d=1$ equal one.
+To check the normalization, put $X=zQ$ and $c=\gamma+d-1$.
+The recurrence gives
+$B_{n+s}=\prod_{r=0}^{s-1}(X+dn+c+dr)B_n$.
+Also $X^s=z^sQ^s$ plus a constant linear combination of
+$z^kQ^k$, $k<s$.
+Thus the adjacent-row evaluation determinant differs from the
+adjoint minor by the factor $(-z)^{(d-1)(d-2)/2}$.
+Expanding that evaluation determinant through the cyclic sections,
+the Fourier minor omitting column $j$ has ratio
+$e_{d-1-j}(\omega_1,\ldots,\omega_{d-1})=(-1)^{d-1-j}$ to
+$\kappa_d$, because the nontrivial roots have polynomial
+$1+x+\cdots+x^{d-1}$. These signs cancel the powers of $-z$,
+giving exactly the unsigned cofactor formula above, with no extra
+power of $z$ or $u$.
+
+Put
+\[
+ R(z,\gamma)=z^{dn}T_{n,\gamma,d}((-1)^{d+1}z^{-d}),\qquad
+ M=\gamma+dn.
+\]
+This is monic of degree $dn$ and has constant coefficient
+$(-1)^{n(d+1)}(\gamma)_{dn}$.
+The adjoint construction of the
+\href{HIGHER_GAP_ADJOINT_RANK.tex}{higher-gap note} gives $d$ solutions
+\[
+ f_\omega(z)=e^{-\omega z}z^{1-M}B_{n,\gamma,d}(\omega z)
+\]
+of an order-$d+1$ adjoint equation ordinary at every $z\ne0$.
+One may take the formal adjoint of
+\[
+ L=z^{-d-1}\left[\delta\prod_{\ell=0}^{d-1}(\delta-M-\ell)
+                    -z^d(\delta-dn)\right],\qquad\delta=zD_z;
+\]
+its leading coefficient is a nonzero constant and is normalized to one.
+The same construction gives
+\[
+ E=\det(f_\omega^{(k)})_{0\le k\le d-1}
+       =\text{a local unit}\cdot R.
+\]
+These algebraic identities hold for every complex $\gamma$.
+Indeed the gauge equation and the stripped determinant are polynomial
+identities in $\gamma$, so their positive-shape derivations extend
+coefficientwise to all complex values. The same formulas also hold
+at $d=1$ by the identical coefficient calculation.
+The solutions remain independent: after removal of the common power
+of $z$, they are exponential polynomials with distinct exponents and
+monic degree-$n$ polynomial factors.
+Consequently their $d$-by-$(d+1)$ jet matrix has rank $d$ at every
+nonzero point, by uniqueness of ordinary-point initial data.
+Local branches of $z^{1-M}$ only multiply rows and triangular jet
+gauges by units.
+
+\begin{lemma}\label{lem:critical-ideal}
+At every complex parameter and every $z\ne0$, the ideal generated
+by $R,R'$ equals, up to invertible changes of generators, the ideal
+of maximal minors of the first $d-1$ adjoint-jet columns.
+After removing gauges and applying the cyclic Fourier transform,
+this is the ideal $(D_0,\ldots,D_{d-1})$ at $u=z^d$.
+\end{lemma}
+\begin{proof}
+Write the full jet columns as $C_0,\ldots,C_d$.
+Wronskian differentiation gives
+$E'=\det(C_0,\ldots,C_{d-2},C_d)$.
+The ideals $(E,E')$ and $(R,R')$ agree because $E$ is a unit times $R$.
+At a common zero of $E,E'$, the first $d-1$ columns must have rank
+at most $d-2$; otherwise both final columns lie in their span and
+the full jet rank drops. The full rank also makes their rank at
+least $d-2$. Choose those independent $d-2$ columns together with
+$C_{d-1},C_d$ as a local basis. The remaining early column has two
+coordinates outside their early span. The two determinants $E,E'$
+are these two coordinates up to units, and the maximal early minors
+generate the same coordinate ideal. This proves equality of ideals,
+not merely equality of their zero sets. Outside their common zero
+set both local ideals are units. For $d=1$ both ideals are
+units, since a solution of an ordinary second-order equation cannot
+have both its value and derivative zero.
+
+Removing the gauges leaves columns
+$\omega^k(Q^kB)(\omega z)$, $0\le k\le d-2$.
+The polynomials $B_n,\ldots,B_{n+d-2}$ are unit triangular
+combinations of $(zQ)^kB_n$, and their column transformation has
+powers of $z$ on the diagonal, invertible when $z\ne0$.
+The discrete Fourier matrix, followed by removal of the factors
+$1,z,\ldots,z^{d-1}$, gives the cyclic rows $M$.
+Every operation is invertible locally, proving the last assertion.
+\end{proof}
+
+\begin{lemma}\label{lem:no-origin}
+For every complex $\gamma$, the cyclic matrix $M(0)$ has rank $d-1$.
+\end{lemma}
+\begin{proof}
+The case $d=1$ is the empty-minor convention.
+For $d\ge2$ put $g=e^{-z}B_{n,\gamma,d}(z)$.
+Its first $d$ Taylor derivatives are
+\[
+ g^{(k)}(0)=(-1)^k(Q^kB)(0)
+   =(-1)^k\prod_{j=0}^{n-1}(\gamma-k+d-1+dj),\quad0\le k<d.
+\]
+The product polynomials have pairwise disjoint root sets, so at most
+one of these derivatives is zero.
+For the $d-1$ functions $g(-\omega_jz)$ with nontrivial $\omega_j$,
+every Fourier minor using $d-1$ of the first $d$ Taylor indices is
+nonzero after omission of a possible zero index; the elementary
+symmetric factors of the nontrivial roots are all $1$ or $-1$.
+The first available $d-1$ Taylor indices give the unique lowest-order
+Wronskian term, whose coefficient is nonzero.
+Its order is the sum of those indices minus $(d-1)(d-2)/2$,
+hence is at most $d-1$.
+This Wronskian is a unit times $W^{[d]}$, by the root-of-unity formula.
+If all its $d$ cyclic-section constants vanished, its order would be
+at least $d$, a contradiction. Thus not all $D_j(0)$ vanish.
+\end{proof}
+
+\subsection*{The two leading coefficients}
+Write $D_{n,d}(\gamma)=\operatorname{Disc}_tT_{n,\gamma,d}$.
+For fixed $n,d$, with $N=\binom n2$, we claim
+\[
+ \mathcal D_{n,d}(\gamma)=d^N\gamma^{(d-1)N}
+            +\text{lower powers},
+\qquad
+ D_{n,d}(\gamma)=(-1)^Nd^{2N}
+       \left(\prod_{k=1}^n k^k\right)\gamma^{(2d-1)N}
+            +\text{lower powers}.                          \tag{L}
+\]
+In particular neither polynomial is identically zero.
+
+First, $\gamma^{-n}B_{n,\gamma,d}(\gamma z)\to(1+z)^n$
+coefficientwise. The adjoint-minor formula therefore gives
+\[
+ \gamma^{-(d-1)n}W^{[d]}_{n,\gamma}(\gamma z)
+       \longrightarrow(1+z+\cdots+z^{d-1})^n.
+\]
+The weighted degree of the determinant is $(d-1)N$.
+Its leading coefficient is the special determinant of this limit.
+Multiplying any coefficient series by a unit series in $t^d$ leaves
+that determinant unchanged, since it is a unit upper triangular
+column convolution. Thus replace
+\[
+ (1+t+\cdots+t^{d-1})^n=(1-t^d)^n(1-t)^{-n}
+ \quad\text{by}\quad(1-t)^{-n}.
+\]
+Its coefficients are $h_j=\binom{n+j-1}{n-1}$, zero for negative
+indices. Reverse and transpose the determinant and append the last
+unit row and column. The resulting $n$-square determinant is
+\[
+ \det\left[\binom{x_i+j-1}{n-1}\right]_{i,j=1}^n,
+ \qquad x_i=d(n-i).
+\]
+Successive column finite differences give polynomial degrees
+$n-1,n-2,\ldots,0$, so this is a constant times the Vandermonde
+in the $x_i$. At $x_i=n-i$ its value is one, by the corresponding
+triangular coefficient matrix. Scaling all $x_i$ by $d$ multiplies
+it by $d^N$. This proves the first formula in (L).
+
+For the second, let $Y_\gamma$ have unit-rate Gamma shape $\gamma$
+and put $X_\gamma=Y_\gamma^d$. The monic reversed moment polynomial
+is $P_n(x)=\mathbb E(x+X_\gamma)^n$; reversal preserves its
+discriminant, so $\operatorname{Disc}P_n=D_{n,d}$.
+Center by $\mathbb EX_\gamma$ and scale by
+$s_\gamma=d\gamma^{d-1/2}$.
+The Gamma cumulants
+$\kappa_r(Y_\gamma)=\gamma(r-1)!$ show that every fixed moment of
+$(Y_\gamma-\gamma)/\sqrt\gamma$ tends to its standard Gaussian
+moment. Expanding the integer power $Y_\gamma^d$ then gives the same
+moment convergence for
+$(X_\gamma-\mathbb EX_\gamma)/s_\gamma$.
+Consequently
+\[
+ s_\gamma^{-n}P_n(s_\gamma x-\mathbb EX_\gamma)
+ \longrightarrow H_n(x)=\mathbb E(x+G)^n,
+\]
+where $G$ is standard Gaussian.
+The recurrence $H_n=xH_{n-1}+(n-1)H_{n-2}$ and
+$H_n'=nH_{n-1}$ give an explicit resultant induction: if
+$J_n=\operatorname{Res}(H_n,H_{n-1})$, then
+$J_n=(n-1)^{n-1}J_{n-1}$ and $J_1=1$.
+Thus $\operatorname{Disc}H_n=(-1)^Nn^nJ_n
+=(-1)^N\prod_{k=1}^nk^k$.
+Scaling discriminants proves the second leading coefficient in (L).
+These are polynomial leading-term calculations; no assertion about
+zeros follows merely from a numerical normal approximation.
+
+\subsection*{Valuations, including every degree-drop parameter}
+Fix $\gamma_0\in\mathbb C$ and work over the complete discrete
+valuation ring $A=\mathbb C[[\gamma-\gamma_0]]$.
+Lemma~\ref{lem:general-fitting} identifies the length of the cyclic
+quotient with $v(\mathcal D_{n,d})$.
+By Lemma~\ref{lem:no-origin}, that quotient has no support at $u=0$.
+The cover $z^d=u$ is free of degree $d$ and is etale at nonzero $u$.
+Lemma~\ref{lem:critical-ideal} therefore makes the contribution from
+nonzero critical points of $R$ equal to
+$d\,v(\mathcal D_{n,d})$.
+Here the identifications are local; summing their finite lengths
+is enough. The discriminant of a monic polynomial is, up to sign,
+the determinant of multiplication by its derivative in the quotient
+algebra. Its valuation is the length of that critical quotient.
+The leading calculations above ensure the relevant modules are torsion.
+
+Put $a_n=(\gamma)_{dn}$.
+The root product formula for $R$ gives
+\[
+ \operatorname{Disc}_zR
+       =\eta_{n,d}\,a_n^{d-1}D_{n,d}^{\,d},\qquad
+           \eta_{n,d}\in\mathbb C^*,
+\]
+where the constant does not depend on $\gamma$.
+At a parameter outside $\{0,-1,\ldots,-(dn-1)\}$,
+$R(0)$ is a unit, so all critical support is nonzero and
+$v(D_{n,d})=v(\mathcal D_{n,d})$.
+
+At $\gamma_0=-m$, $0\le m<dn$, put $h=\lfloor m/d\rfloor$.
+The specialized $R$ has at zero exactly the multiplicity
+$L=d(n-h)$, since the last nonzero tilted coefficient is the one
+with index $h$. Its constant coefficient has a simple zero in
+$\gamma-\gamma_0$.
+Split off the monic local factor of degree $L$ at zero; its remaining
+factor is a unit there. Such a split follows by the coefficient
+recursion for coprime monic factors modulo the maximal ideal.
+All lower coefficients of the local factor are divisible by
+$\varepsilon=\gamma-\gamma_0$, and its constant coefficient is
+$\varepsilon$ times a unit.
+After $\varepsilon=s^L$ and $z=sy$, division by $s^L$ leaves at
+$s=0$ a polynomial $y^L+c$, $c\ne0$, with distinct roots.
+Formal root lifting therefore makes every root difference have
+$s$-valuation one. Its discriminant contribution has
+$\varepsilon$-valuation $L-1$.
+This counts the zero cluster without assuming that the nonzero
+specialized roots are simple.
+It follows that
+\[
+ (d-1)+d\,v(D_{n,d})=d\,v(\mathcal D_{n,d})+L-1,
+ \qquad
+ v(D_{n,d})-v(\mathcal D_{n,d})=n-1-\lfloor m/d\rfloor.
+\]
+Thus the rational function $D_{n,d}/\mathcal D_{n,d}$ has exactly
+the finite divisor of
+$\prod_{k=1}^{n-1}(\gamma)_{dk}$.
+Over $\mathbb C$ their ratio is a nonzero constant.
+The leading coefficients (L) make this constant
+$(-1)^Nd^N\prod_{k=1}^nk^k$, proving Theorem~\ref{thm:discriminant}.
+For $n=1$, both the fixed-degree discriminant and the empty
+Hurwitz determinant are one, also directly verifying the formula.
+
+\begin{corollary}\label{cor:top-nonnegative}
+For every $n,d\ge1$ and every real $\gamma>0$,
+$\mathcal D_{n,d}(\gamma)\ge0$, with strict inequality if and only
+if $T_{n,\gamma,d}$ is squarefree.
+At gap three and $n\ge2$ this gives, uniformly,
+\[
+ \Delta_{2n-2}(W)\ge0,\qquad
+ \Delta_{2n-1}(W)\ge0,\qquad \Delta_{2n}(W)\ge0.
+\]
+All three are strictly positive together exactly when $T_{n,\gamma,3}$
+is squarefree.
+\end{corollary}
+\begin{proof}
+For $P_n(x)=\mathbb E(x+Y_\gamma^d)^n$, an even $n$ gives
+$P_n(x)>0$ on the real axis. An odd $n$ gives
+$P_n'(x)=n\mathbb E(x+Y_\gamma^d)^{n-1}>0$, so it has exactly
+one real root and that root is simple.
+If $P_n$ is squarefree, its other roots occur in
+$\lfloor n/2\rfloor$ nonreal conjugate pairs, so the discriminant
+has sign $(-1)^{\lfloor n/2\rfloor}=(-1)^N$.
+If it has a repeated root, its discriminant is zero.
+Hence $(-1)^ND_{n,d}\ge0$ in all cases.
+Every other factor in (D) is positive, proving the first assertion.
+At $d=3$, $B(0)>0$ and $W(0)>0$, so the two tail identities
+in Theorem~\ref{thm:tail} give the remaining assertions.
+\end{proof}
+
+These are unbounded nonnegativity results, not a proof of strict
+nonvanishing or of total nonnegativity of the entire generalized
+Hurwitz matrix. At the physical shape $\gamma=n+\beta-1$,
+strict positivity of the indicated determinant would close the
+lower-one binomial family at that gap by the existing moment bridge.
+General lower exponents require their separate boundary conditions.
+
 \section{Negative minors at every gap}
 \begin{theorem}\label{thm:negative}
 For every integer $d\ge1$, at $b=1$, and every even integer $m\ge d$,
@@ -429,8 +872,12 @@ identities symbolically and rejects an incorrect adjacent row.
 Generic independent symbolic pairs and zero-constant or zero-minor
 controls check the division-free tail identities in Theorem~\ref{thm:tail}.
 Its receipt records those bounds and source hashes.
-The all-gap identities and infinite family (8) have the elementary
-proofs above. All computations are internal; independent replay,
+The all-gap identities, the cyclic Fitting presentation, the
+multiplicity-sensitive discriminant identity and the infinite family
+(8) have the proofs above. Additional controls check cyclic
+presentations and reductions over fields and a nonreduced ring,
+complex-shape adjoint identities, origin flags, zero-cluster widths,
+leading constants and exact discriminant formulas at fixed indices. All computations are internal; independent replay,
 formal verification, external review and priority claims are not supplied.
 No all-index gap-three or unrestricted binomial Strong Factorial
 closure is asserted.

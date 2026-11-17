@@ -666,8 +666,9 @@ Notice that \(\Phi_1=2F\).
 > explicit \(R\)-primitive, non-proper-power failure of
 > \(\mathrm{MN}_d\).
 
-The congruence restriction is intrinsic to the entire one-profile class,
-not just to (5.8).  If the profile polynomial has degree \(h\), its leading
+The congruence restriction is intrinsic to the specified one-profile class
+depending on height through \(t^2\), not just to (5.8).  If the profile
+polynomial has degree \(h\), its leading
 term in
 \[
  c\,x^{-r}(1+ax)^r\rho\!\left(t^2(1+ax)^2\right)
@@ -676,10 +677,147 @@ is a nonzero scalar multiple of \(x^{2h}t^{2h}\), of total angular degree
 \(4h\).  Endpoint contact makes the full Laurent expression polynomial and
 introduces no term of larger degree.  Hence its minimal balanced
 homogenization has degree \(4h\); placing it in any larger \(V_d\) adds
-the radial factor \(R^{d-4h}\).  Therefore no one-profile Hopf lift can
+the radial factor \(R^{d-4h}\).  Therefore no lift in this even-height class can
 produce an \(R\)-primitive witness in degrees \(1,2,\) or \(3\) modulo
-four.  Reaching those classes requires several phase profiles, odd height
-dependence, or a different cancellation mechanism.
+four.  Odd height dependence does reach the even class omitted by this
+restriction, as the following construction shows.
+
+### Odd height factors and all even primitive degrees
+
+**Status.** This extension is an internal deduction, checked by a focused
+AI proof audit and exact bounded computations. It has no independent
+mathematical review, formal verification or novelty claim. The all-order
+argument below supplies the deduction; finite checks do not prove it.
+
+For each integer \(k\geq0\), use \(D\) from (5.6) and put
+\[
+ \boxed{F_k=T^k(R+Z)^{k+1}D,\qquad d=2k+4.}
+ \tag{5.11}
+\]
+Here \(d\) is balanced degree: \(F_k\) has bidegree \((d,d)\) and
+ordinary total degree \(2d\). The notation \(F_k\) in this subsection
+denotes the height family (5.11), distinct from the radially padded
+\(F_d\) in (5.2). In particular \(F_0=2F\).
+
+> **Theorem 5.5 (internal deduction: all even primitive degrees).**
+> Over every characteristic-zero field, for all integers \(k\geq0\)
+> and \(m\geq1\),
+> \[
+>  \mathcal E_2(F_k^m)=0,
+>  \qquad
+>  \mathcal E_2(ZF_k^m)=
+>  \begin{cases}
+>   (dm+2)!\displaystyle\int_0^1w^{km}(1-w^2)^m\,dw,&km\text{ even},\\
+>   0,&km\text{ odd}.
+>  \end{cases}
+>  \tag{5.12}
+> \]
+> In the even case the displayed rational scalar is strictly positive
+> over \(\mathbb R\), hence nonzero in every characteristic-zero field.
+> Moreover \(R\nmid F_k\), and \(F_k\) is not a proper power, even up
+> to a nonzero scalar. Thus every even balanced degree \(d\geq4\)
+> admits an \(R\)-primitive, non-proper-power two-pair Image witness,
+> with the fixed marker \(Z\).
+
+**Proof of the moment identities.** On the Hopf sphere \(R=1\),
+\(Z=x\), \(W=y\), \(T=t\), and \(t^2+2xy=1\), so
+\[
+ D=2y-(2+x)t^2=x^{-1}\bigl(1-t^2(1+x)^2\bigr).
+\]
+Consequently the angular polynomial is
+\[
+ p_k=x^{-1}t^k(1+x)^{k+1}
+       \bigl(1-t^2(1+x)^2\bigr).
+ \tag{5.13}
+\]
+The Laurent expression represents a polynomial on the sphere because it
+was obtained from (5.11). Phase averaging takes its constant term in
+\(x\). If \(km\) is odd, both constant terms, for \(p_k^m\) and
+\(xp_k^m\), are odd polynomials in the uniform height \(t\); their
+averages vanish.
+
+Suppose \(km\) is even. Symmetry changes the height average on
+\([-1,1]\) into integration on \([0,1]\). Set
+\[
+\begin{aligned}
+ H_{k,m}(X)
+ &=X^{(k+1)m}\int_0^1t^{km}(1-t^2X^2)^m\,dt\\
+ &=X^{m-1}J_{k,m}(X),\qquad
+ J_{k,m}(X)=\int_0^Xw^{km}(1-w^2)^m\,dw.
+\end{aligned}
+ \tag{5.14}
+\]
+These are polynomial identities, including at \(X=0\). Constant-term
+extraction gives
+\[
+ \mathbb E_U(p_k^m)=[x^m]H_{k,m}(1+x),\qquad
+ \mathbb E_U(xp_k^m)=[x^{m-1}]H_{k,m}(1+x).
+ \tag{5.15}
+\]
+Now \(J_{k,m}'(X)=X^{km}(1-X^2)^m\) vanishes to order \(m\) at
+\(X=1\). Hence \(J_{k,m}(X)-J_{k,m}(1)\) is divisible by
+\((X-1)^{m+1}\), and
+\[
+ H_{k,m}(X)\equiv J_{k,m}(1)X^{m-1}
+                       \pmod{(X-1)^{m+1}}.
+ \tag{5.16}
+\]
+The coefficients in (5.15) are therefore \(0\) and \(J_{k,m}(1)\),
+respectively. The radial degrees are \(dm\) and \(dm+1\), so (2.5)
+supplies the factors \((dm+1)!\) and \((dm+2)!\). This proves (5.12).
+
+The integral is positive because its integrand is positive on \((0,1)\).
+It also has the exact rational forms
+\[
+ J_{k,m}(1)=\sum_{j=0}^m
+             \frac{(-1)^j\binom mj}{km+2j+1}
+          =\frac{2^m m!}{\prod_{j=0}^m(km+2j+1)}.
+ \tag{5.17}
+\]
+For the product formula, integration of the derivative of
+\(w^{a+1}(1-w^2)^m\), with \(a=km\), gives
+\((a+2m+1)I_{a,m}=2mI_{a,m-1}\) for
+\(I_{a,m}=\int_0^1w^a(1-w^2)^m\,dw\), starting from
+\(I_{a,0}=1/(a+1)\).
+
+There is no analytic assumption in the characteristic-zero extension:
+one may instead use the monomial coefficient formula (4.2) with
+\(R=1\), \(T=2t-1\), and \(x=(1-t)/u\). Its constant term is
+unchanged by this substitution over \(\mathbb Q(t)\). The resulting
+height average is exactly the one above, and polynomial integration is
+the rational functional used in Section 4. All identities therefore
+hold over \(\mathbb Q\) and extend to every characteristic-zero field.
+
+**Proof of primitivity and the power assertion.** At
+\((\xi_1,\xi_2,z_1,z_2)=(1,1,1,-1)\),
+\[
+ R=0,\quad T=2,\quad R+Z=-1,\quad D=4,\qquad
+ F_k=(-1)^{k+1}2^{k+2}\ne0.
+ \tag{5.18}
+\]
+Thus \(R\nmid F_k\). Put \(L=R+Z\). The bilinear forms \(T\)
+and \(L\) have coefficient matrices
+\[
+ \begin{pmatrix}1&0\\0&-1\end{pmatrix},\qquad
+ \begin{pmatrix}1&1\\0&1\end{pmatrix}.
+\]
+Both have rank two, so each is irreducible over every field extension:
+a nontrivial factorization of a form of bidegree \((1,1)\) would be a
+product of one linear form in \(\xi\) and one in \(z\), giving rank
+one. They are distinct irreducibles. At \((1,1,1,1)\) one has
+\(T=0,D=16\); at \((1,1,2,-1)\) one has \(L=0,D=-1\).
+Thus neither divides \(D\), and their exact multiplicities in \(F_k\)
+are \(k\) and \(k+1\). A proper-power exponent greater than one would
+divide both consecutive integers, which is impossible. For \(k=0\),
+the multiplicity one of \(L\) already suffices.
+
+For even \(k\), the marker in (5.12) survives at every \(m\geq1\).
+For odd \(k\), it survives exactly at even \(m\). Either case gives
+infinitely many nonzero marked contractions and therefore violates the
+eventual Image/Mathieu conclusion. The argument needs infinite survival;
+survival at every power is unnecessary.
+
+### Invariant padding and the remaining primitive frontier
 
 There is a sharp obstruction internal to the invariant-multiplier
 strategy.  The first fundamental theorem for one vector and one covector
@@ -702,10 +840,14 @@ invariant line spanned by \(R^k\) fills the other degrees.  General Cartan
 projections, plethysms other than ordinary powers, polarizations, block
 embeddings, and differential intertwiners have no automatic scalar
 radial-shift identity, so no moment-preservation claim is made for them.
-The existence of \(R\)-primitive failure witnesses in degrees \(d\geq5\)
-not divisible by four remains open.  A Cartan or trace-free projection would have to solve
-new moment identities rather than inherit them from the radial-shift
-lemma.
+Theorem 5.5 supplies primitive witnesses in every even degree \(d\geq4\).
+The remaining primitive degree frontier is odd \(d\geq5\), beginning
+with degree five. Require \(F\bmod R\ne0\) from the start when seeking
+such a witness. Mixed-height or multiple-profile constructions are
+possible research directions; no cancellation theorem for them is claimed.
+Invariant padding cannot solve this primitive question. A Cartan or
+trace-free projection would have to solve new moment identities rather
+than inherit them from the radial-shift lemma.
 
 ## 6. Frontier consequences
 
@@ -736,6 +878,7 @@ Run
 ```bash
 python3 research/foundations/scripts/verify_two_pair_image_mathieu_counterexample.py
 python3 research/foundations/scripts/audit_two_pair_image_mathieu_coefficient_extraction.py
+.venv/bin/python research/foundations/scripts/verify_two_pair_image_even_primitive.py
 cd formal/finite-etale-keller
 lake build FiniteEtaleKeller.SIC2C4FiniteSum
 ```
@@ -772,6 +915,16 @@ theorem with `MvPolynomial.coeff`; the algebraic proof itself is formalized
 on both sides of that representation boundary.
 
 No term-count minimality or literature-priority claim is made here.
+
+The [even primitive verifier](../scripts/verify_two_pair_image_even_primitive.py)
+and its [receipt](two_pair_image_even_primitive_verification.json) record
+the focused checks for Theorem 5.5. Original four-variable contractions are
+checked for \(k=0,1,2,3\), \(m=1,2,3\), and degree-six sphere
+calculations are checked through \(m=8\), including both parity cases.
+These are internal bounded checks with no independent-review or
+formalization claim. The separately reported checks in the supplied
+observation are not treated as an independently replayed bundle; the
+retained receipt identifies the actual local checker and run.
 
 ## Source for the Image framework
 

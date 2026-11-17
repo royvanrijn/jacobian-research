@@ -37,8 +37,17 @@ many local bounds in \eqref{eq:geo-star} give a common \(\alpha>0\) for
 \(\omega\otimes\delta(t-f)\). Properness allows the target neighborhood
 to be shrunk so that this finite cover suffices. The projection \(\pi\)
 is proper on \(\operatorname{Supp}\mathcal B_f\).
-Compatibility of \(V^\alpha\) with this derived direct image
-\cite[Theorem~8.1]{CDM24} therefore gives
+For clarity, \(\operatorname{DR}_{/\mathbb A^1}\) denotes the relative
+complex \(\Omega_Y^\bullet\otimes\mathcal B_f\), placed in degrees
+\(-\dim Y,\ldots,0\), with differential
+\(d_Y-df\wedge\partial_t\). The proper-on-support assertion of
+\cite[Theorem~8.1]{CDM24} says that the image of
+\[
+ \mathcal H^0R\pi_*\operatorname{DR}_{/\mathbb A^1}
+       (V^\alpha\mathcal B_f)\longrightarrow M
+\]
+is \(V^\alpha M\). The top-degree cocycle
+\(\omega\otimes\delta(t-f)\) lies in this filtered complex, so
 \begin{equation}\label{eq:geo-starstar}
 m\in V^\alpha M\quad\text{for some }\alpha>0.
 \end{equation}
@@ -47,10 +56,17 @@ of seed.
 
 Take global sections on the affine target and Fourier transform by
 \(t\mapsto-\partial_\tau\), \(\partial_t\mapsto\tau\).
-Compact-cycle integration is the de Rham period pairing: Stokes
-annihilates relative exact classes, and differentiation in \(\tau\)
-inserts \(-f\). Hence it respects every Weyl-algebra relation of the
-Fourier image \(\widehat m\).
+The transformed relative complex is the twisted de Rham complex
+\[
+ (\Omega_Y^\bullet[\tau],\ d_Y-\tau\,df\wedge)[\dim Y],
+ \qquad \partial_\tau\text{ acts as }\partial_\tau-f.
+\]
+Analytic de Rham integration pairs its hypercohomology with compact
+cycles, also for nonaffine \(Y\). Indeed,
+\(d(e^{-\tau f}\beta)=e^{-\tau f}(d\beta-\tau df\wedge\beta)\),
+so Stokes kills exact classes; differentiation respects the displayed
+\(\partial_\tau\)-action. The period pairing therefore respects every
+Weyl-algebra relation of the Fourier image \(\widehat m\).
 If its period were a nonzero constant, after scaling the pairing the
 cyclic submodule
 \[
@@ -187,7 +203,7 @@ Thus both charts are smooth along their full exceptional boundary
 and the volume is regular there.
 
 The remaining nonconstant profile has \(c\neq0\) and
-\(b^2-4ac=0\). Scale \(c=1\), write the profile as \((t-r)^2\),
+\(b^2-4ac=0\). Divide the local equation by \(c\) and rescale the phase coordinate, so that the profile is \((t-r)^2\),
 and put \(w=u-rz\). Blow up in the chart \(w=zv\), which contains
 the entire exceptional intersection. The strict equation is
 \begin{equation}\label{eq:geo-8}

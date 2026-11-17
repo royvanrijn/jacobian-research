@@ -10,7 +10,7 @@ Generalized vanishing, Gaussian moments and Image/Mathieu spaces.
 |---|---|---|---|
 | Published GVC, GMC and Image results | Published preprints | proved | [Source](../../results/README.md) |
 | Gaussian dimension-degree boundary | Unpublished; independent review pending | proved | [Source](../../unpublished/gaussian-boundary/README.md) |
-| Complete reductive Mathieu classification | Unpublished; independent review pending | proved | [Source](../../unpublished/mathieu-reductive-homogeneous-spaces/README.md) |
+| Complete reductive Mathieu classification | Unpublished; independent review pending | proved | [Source](../../results/mathieu-reductive-homogeneous-spaces/README.md) |
 | All-degree Gaussian structure and safety gap | Internal result | proved | [Source](vanishing/GAUSSIAN_AMPLITUDE_IDEALS_AND_WEIGHT_INVARIANCE.md) |
 | Gaussian H(2,1): affine charts, radial phases and obstructions | Internal result | proved | [Source](vanishing/GAUSSIAN_AFFINE_ISOTROPIC_CHART.md) |
 | Bidegree-(4,4) two-pair Image/Mathieu counterexample | Internal result | proved | [Source](../foundations/extended-geometry/TWO_PAIR_IMAGE_MATHIEU_COUNTEREXAMPLE.md) |

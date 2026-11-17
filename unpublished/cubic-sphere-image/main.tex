@@ -1,7 +1,7 @@
 \documentclass[11pt]{article}
 \usepackage[T1]{fontenc}
 \usepackage{microtype}
-\usepackage[a4paper,margin=29mm]{geometry}
+\usepackage[a4paper,margin=27mm]{geometry}
 \usepackage{amsmath,amssymb,amsthm,mathtools}
 \usepackage[colorlinks=true,linkcolor=blue,citecolor=blue,urlcolor=blue]{hyperref}
 \hypersetup{pdftitle={Cubic sphere moments and the two-pair Image problem},pdfauthor={Roy van Rijn}}
@@ -90,7 +90,7 @@ point is proving that these exhaust the cubics.
 
 Here is the reason for that exhaustion. Pure moments make the
 exponential period \(\int e^{-\tau p}\Omega\) identically one. If the
-sphere volume extends to a smooth compactification on which \(p\) is a
+sphere volume extends to a smooth partial compactification on which \(p\) is a
 proper map to the affine line, a positive \(V\)-filtration obstruction
 rules out that constant period. We resolve the graph at infinity and
 identify exactly the boundary configurations that prevent this
@@ -175,7 +175,7 @@ unit sphere in \(\C^2\). Its normalized integral sends
 \(\overline z^\alpha z^\beta\), with \(|\alpha|=|\beta|=n\), to
 \(\delta_{\alpha\beta}\alpha!/(n+1)!\). This follows by phase
 integration and \(\int_0^1s^{\alpha_1}(1-s)^{\alpha_2}\dd s
-=\alpha!/(n+1)!\). The resulting variables \((X,Y,T)\) have the
+=\alpha!/(n+1)!\). The resulting variables satisfy \(XY=(1-T^2)/2\) and have the
 normalized sphere moments \eqref{eq:moments}: their circular phase is
 uniform and \(T=2|z_1|^2-1\) is uniform on \([-1,1]\).
 
@@ -303,7 +303,7 @@ exactly the minimum-degree assertion in Theorem~\ref{thm:image}.
 
 \paragraph{Verification.}
 All finite eliminations used in the proof are displayed in the article.
-The accompanying short exact-arithmetic program regenerates the moment
+The accompanying exact-arithmetic program S1 (\texttt{verify.py}, supplied with the source bundle) regenerates the moment
 identities, checks the two small polynomial obstructions, and verifies
 the boundary-chart equations. It is a reproducibility aid; the geometric
 reduction and all-order arguments are given here.

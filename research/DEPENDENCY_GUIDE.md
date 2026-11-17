@@ -8,9 +8,10 @@ status record.
 Use this graph to trace the consequences of a new lemma, locate the unresolved
 premises of a proposed theorem, or find claims affected by a changed proof. The
 initial graph covers principal results and identified gaps across every topic.
-Most source proofs are bundled leaves with **partial dependency coverage**: their
-internal lemmas and imported theorems have not all been expanded into separate
-nodes. A green node means its declared route is supported by current, internally
+Named results, proof components, obstructions and open obligations are indexed
+throughout the retained sources. Mathematical dependency coverage remains explicit:
+imported theorem proofs and some supporting formal developments are retained as
+scoped inputs, with verification gaps where their application is unresolved. A green node means its declared route is supported by current, internally
 accepted evidence. It does not certify that the argument is correct or complete.
 
 ## Read the graph
@@ -30,8 +31,10 @@ C       --proof of the implication--> D
 All premises of one rule are required. Different incoming rules are alternative
 routes: any valid route can support the conclusion. An arrow must have its own
 proof; related subject matter or an attractive research plan does not establish
-an implication. Equivalent statements need one acyclic direction in this graph,
-with the equivalence documented in the source, rather than a dependency cycle.
+an implication. Documented equivalent statements belong to an equivalence component. Each
+direction has its own proof and any external context premises. The graph of
+components is acyclic. Inside a component, propagation starts from an independent
+proof or an explicit hypothetical assumption; an equivalence cannot prove itself.
 
 The engine distinguishes these effective states:
 
@@ -59,15 +62,53 @@ their existing records and scope. They never propagate along mathematical arrows
 In particular, an imported Lean axiom can leave the formal theorem conditional
 even when a separate written mathematical proof is available.
 
+## Coverage, cited research and bounds
+
+[Source coverage](COVERAGE.md) indexes current proof sources, exact named
+statements, formal modules, imported mirrors, computational inputs and current
+paper editions. Current mathematical sources are separated from generated
+navigation and immutable deposited editions. A new retained source, new named
+declaration, unregistered theorem reference in a TeX proof or new bibliography
+entry makes the checks fail until its mapping is reconciled.
+
+Coverage completeness means the retained material is represented. It does not
+mean all mathematical gaps are solved, every external proof has been expanded,
+or every possible logical consequence has been discovered. Known missing inputs
+and applications have their own scoped obligations; a citation supplies no proof.
+
+[Cited resources](REFERENCES.md) distinguish citation identity, a retained/read
+source, and review of a particular application. A mathematical input needs an
+exact theorem scope and locator in the graph in addition to its bibliographic
+entry. Context references never become theorem premises merely because they
+appear in a bibliography.
+
+[Bounds](BOUNDS.md) retain the quantity, exact domain, direction, parameter
+restrictions and units. Numeric comparisons require all these to agree, and
+different conditional assumptions are kept separate. Symbolic criteria and
+asymptotic comparisons require an explicit proved bridge; the tool does not
+guess their order.
+
+The phrase *complete scheme-theoretic fibre* denotes the entire fibre scheme.
+The common-arithmetic-fibres manuscript separately uses *full-degree finite-etale
+fibre* for rank equal to generic map degree. Its rank classification applies in
+that latter sense. Ruling degree, generic map degree, graph degree, coordinate
+degree, Weyl rank and sparse support count are separate quantities.
+
 ## Inspect consequences and gaps
 
 Run these commands from the repository root:
 
 ```sh
 python3 research/scripts/research.py gaps
+python3 research/scripts/research.py opportunities
+python3 research/scripts/research.py coverage
+python3 research/scripts/research.py references vanishing
+python3 research/scripts/research.py bounds --opportunities
 python3 research/scripts/research.py gaps --topic hessian --kind mathematical
 python3 research/scripts/research.py explain HESSIAN-MOMENT-TRACE
 python3 research/scripts/research.py impact HESSIAN-MOMENT-TRACE
+python3 research/scripts/research.py graph --focus GOAL-JC2 --depth 2 --format dot
+python3 research/scripts/research.py source hessian/tang-hc4-audit/STRUCTURAL_REVIEW.md
 python3 research/scripts/research.py graph --format dot > /tmp/research-dependencies.dot
 python3 research/scripts/research.py graph --format json > /tmp/research-dependencies.json
 ```
@@ -78,7 +119,9 @@ descendants, including currently blocked alternatives; it does not assert that
 every listed claim must lose its support. Use `impact --source PATH` with an
 evidence path relative to `research/` to trace a source change. The diagrams omit
 fresh unconditional proof-source leaves for readability and retain their count
-on each rule diamond. The JSON and DOT exports include the whole graph.
+on each rule diamond. Unfiltered JSON and DOT exports include the whole graph; focused exports
+explicitly mark required premises outside the view. Topic Mermaid overviews are
+bounded for readability. Use the structured export for all detailed entries.
 
 Gaps are classified as mathematical, formalization, verification or workflow.
 Review and publication tasks do not become mathematical assumptions. A full
@@ -118,11 +161,17 @@ assurance flag.
    files can be listed on a leaf. An implication whose proof imports additional
    prerequisites must model them as premises or explicitly record partial
    coverage and its remaining audit boundary.
-4. Represent dischargeable assumptions as premise nodes. Change an open leaf to
+4. Represent dischargeable assumptions as premise nodes. For a member of an
+   equivalence component, add an independent source leaf and a proof route to
+   ground it; setting the member's recorded status alone supplies no proof. Change an open leaf to
    `proved` only after the proof is checked, or add a proved route into that node.
    Add both premises and the proof of their implication. Do not change a broad
    conjecture merely because a restricted family is now proved.
 5. Update the topic's exact scope notes, gap mapping and classified open questions.
+   Reconcile the source/declaration coverage entry, external-resource uses,
+   quantitative bounds and the explicit cross-file proof references. Follow all
+   affected routes shown by `source` and `impact`; use `opportunities` to collect
+   unresolved links, changed evidence and comparable improvements.
    Reassess its authored state separately; the renderer never rewrites it.
 6. Run the relevant mathematical checks, then:
 

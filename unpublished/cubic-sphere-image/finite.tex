@@ -1,6 +1,8 @@
-\section{The finite moment calculation}\label{sec:finite}
+\section{Constant profiles}
+\label{sec:constant-profiles}
 
-Write \(J(f)=\frac12\int_{-1}^1 f(t)\,dt\).
+On \(\mathbb C[t]\), the sphere functional \(L\) is the interval average
+\(J(f)=\frac12\int_{-1}^1 f(t)\,dt\).
 
 \begin{lemma}[Interval cubics]
 \label{lem:interval-cubic}
@@ -49,30 +51,22 @@ if \(p\in\mathbb C[x,t]\), phase averaging leaves its coefficient of
 have strictly positive circular weight.
 
 \begin{proposition}[Constant-profile normal forms]
-\label{prop:finite}
-Let
+\label{prop:finite-constant-profile}
+Let \(a\ne0\) and
 \begin{equation}
  p=ay+(v_0+v_1x)t^2+(c+dx+ex^2)t+\sum_{j=0}^3r_jx^j.
  \label{eq:constant-profile-family}
 \end{equation}
-If \(L(p^m)=0\) for \(1\le m\le8\), then precisely one of the
-following cases holds:
-\begin{enumerate}
-\item \(a=0\) and \(v_0=c=r_0=0\);
-\item \(a\ne0\), \(v_0=v_1=e=0\), and
+If \(L(p^m)=0\) for \(1\le m\le8\), then \(v_0=v_1=e=0\) and
 \begin{equation}
  \sum_{j=0}^3r_jx^j=-\frac{x(c+dx)^2}{2a}.
  \label{eq:constant-profile-shear}
 \end{equation}
-\end{enumerate}
 \end{proposition}
 
 \begin{proof}
-If \(a=0\), phase averaging leaves \(v_0t^2+ct+r_0\), which vanishes
-by Lemma~\ref{lem:interval-cubic}. This is precisely the first case.
-
-If \(a\ne0\), divide by \(a\), rename coefficients, and assume
-\(a=1\). The orthogonal null rotation
+Divide by \(a\), rename coefficients, and assume \(a=1\).
+The orthogonal null rotation
 \begin{equation}
  x=x',\qquad t=t'+kx',\qquad y=y'-kt'-k^2x'/2
  \label{eq:constant-profile-null-rotation}
@@ -105,7 +99,7 @@ constants \(1,2/3,2/5,8/35\), and the solutions are
  r_0&=-v_0/3,&
  r_1&=-(2v_0^2+3v_1)/15,\notag\\
  r_2&=-4v_0(31v_0^2+54v_1)/945,\notag\\
- r_3&=-\frac{14175d^2+4624v_0^4+10152v_0^2v_1+3024v_1^2}{28350}.
+ r_3&=-d^2/2-2312v_0^4/14175-188v_0^2v_1/525-8v_1^2/75.
  \label{eq:constant-profile-triangular}
 \end{align}
 After substitution, if \(v_0=0\), the eighth equation is
@@ -135,7 +129,8 @@ where
  B_5&=35504+94992b+52704b^2,\\
  B_6&=30907712+63343584b+3500496b^2-12573792b^3,\\
  B_7&=53504+17328b-211968b^2-108864b^3,\\
- B_8&=7986496-27544704b-90351504b^2-16632864b^3+9144576b^4.
+ B_8&=7986496-27544704b-90351504b^2\\
+    &\qquad{}-16632864b^3+9144576b^4.
 \end{align*}
 Its coefficient columns satisfy \(C_D-C_E-2bC_F=0\). Consistency
 therefore forces every three-by-three augmented minor to vanish.
@@ -145,25 +140,24 @@ four, give, up to nonzero rational factors,
  f(b)&=2485161b^3+6647562b^2+4908168b+1097984,\\
  g(b)&=10216206b^4+24356619b^3-25372278b^2-41158800b-11711872.
 \end{align*}
-These polynomials are coprime over \(\mathbb Q\): their integer
-Sylvester determinant is congruent to \(2\) modulo \(19\). A nonzero
-integer determinant has nonzero image in \(\mathbb C\), so no common
-root exists. This excludes \(v_0\ne0\), without dividing by \(b\)
+In \(\mathbb F_{19}[b]\), the reductions are
+\[
+ \bar f=-b^3-6b^2-7b-7,\qquad
+ \bar g=b^4+6b^3-b^2+7b-6.
+\]
+Starting with \((\bar g,\bar f)\), the successive Euclidean remainders are
+\[
+ -8b^2-6,\qquad 8b+7,\qquad -5.
+\]
+Hence the reductions are coprime. Both leading coefficients remain
+nonzero modulo \(19\). By Gauss's lemma, a nonconstant common factor
+over \(\mathbb Q\) could be chosen primitive over \(\mathbb Z\); its
+leading coefficient would be a unit modulo \(19\), and its reduction
+would remain a nonconstant common factor. This is impossible.
+This excludes \(v_0\ne0\), without dividing by \(b\)
 or assuming any further coefficient is nonzero. Undoing
 \eqref{eq:constant-profile-null-rotation} and the scalar normalization
 gives \eqref{eq:constant-profile-shear}.
 
 \end{proof}
 
-\paragraph{Exact coefficient verification.}
-All finite inputs and identities used above are displayed in
-\eqref{eq:interval-cubic-remainders}--\eqref{eq:constant-profile-matrix}
-and the accompanying formulas. The verification program accompanying
-the article derives the eight moments from
-\eqref{eq:constant-profile-coefficients}, reproduces the triangular
-solutions and matrix, and evaluates the seven-by-seven Sylvester
-determinant over \(\mathbb F_{19}\). It uses exact arithmetic and
-requires no search over the coefficient family or external polynomial
-data. Zeroing a row of the determinant is rejected. The program is a
-replay of the displayed finite argument; the all-order conclusions
-follow from the resulting normal forms.

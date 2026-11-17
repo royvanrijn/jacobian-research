@@ -8,6 +8,7 @@ Start with the released papers below. Each paper directory opens with the best c
 
 | Paper | Main result | Read |
 |---|---|---|
+| **Counterexamples to the Mathieu Property: From Explicit Quotient Constructions to a General Classification** | Classifies the reductive homogeneous spaces with the Mathieu property and constructs fixed-multiplier counterexamples. | [Paper and verification](results/mathieu-reductive-homogeneous-spaces/) · [Zenodo](https://zenodo.org/records/24310836) · Hexagon pending |
 | **The Generalized Vanishing Conjecture: The Two-Variable Theorem and the First Failing Dimension** | Proves GVC in two variables and constructs a homogeneous failure in dimension three. | [Paper and verification](results/generalized-vanishing-two-variables/) · [Zenodo](https://zenodo.org/records/21803325) · [Hexagon](https://hexagonmath.org/2610.00580v2) |
 | **A Filtered Frobenius Proof of the Two-Variable Gaussian Moments Conjecture** | An alternative proof of the known binary classification and sharp cutoff; Lean coverage has two explicit mathematical inputs. | [Paper and verification](results/gaussian-moments-two-variables/) · [Zenodo](https://zenodo.org/records/21534699) |
 | **A Four-Term Counterexample to the Special Image Conjecture in Three Pairs** | An explicit four-term three-pair construction, with the later two-pair boundary proved in the current edition. | [Paper and verification](results/three-pair-image-counterexample/) · [Zenodo](https://zenodo.org/records/21634058) |
@@ -15,9 +16,9 @@ Start with the released papers below. Each paper directory opens with the best c
 
 ## In preparation
 
-[Unpublished papers](unpublished/) include the Gaussian dimension-degree boundary, **Counterexamples to the Mathieu Property** and smaller drafts. Revisions of released papers stay with their current editions in `results/`. Each directory records what it proves, its review status and the remaining work.
+[Unpublished papers](unpublished/) include the Gaussian dimension-degree boundary and smaller drafts. Revisions of released papers stay with their current editions in `results/`. Each directory records what it proves, its review status and the remaining work.
 
-[Research topics](research/) contain the current results, open questions, proofs, code and supporting evidence. The [scope audit](research/SCOPES.md) and [dependency graph](research/DEPENDENCIES.md) show exact claim limits, proof routes and unresolved obligations.
+[Research topics](research/) contain the current results, open questions, proofs, code and supporting evidence. The [scope audit](research/SCOPES.md) and [dependency graph](research/DEPENDENCIES.md) show exact claim limits, proof routes and unresolved obligations. [Source coverage](research/COVERAGE.md), [bounds](research/BOUNDS.md) and [cited resources](research/REFERENCES.md) make omissions and dependencies inspectable.
 
 ## Working on research and papers
 
