@@ -1,0 +1,244 @@
+\section{A proper volume obstruction}\label{sec:proper-volume}
+
+We use one consequence of the Kashiwara--Malgrange filtration. It applies
+to critical curves as well as isolated critical points.
+
+\begin{lemma}\label{lem:proper-volume}
+Let \(f:Y\to\mathbb A^1\) be a proper nonconstant morphism from a smooth
+irreducible complex algebraic variety, and let \(\omega\) be a global
+regular top form on \(Y\). If \(\gamma\) is a fixed compact cycle of real
+dimension \(\dim_{\mathbb C}Y\), then
+\[
+ \int_\gamma e^{-\tau f}\omega
+\]
+is not a nonzero constant.
+\end{lemma}
+
+\begin{proof}
+Write \(t\) for the coordinate on the target, factor \(f\) as its graph
+\(i:Y\hookrightarrow Y\times\mathbb A^1_t\) followed by the projection
+\(\pi\), and put \(\mathcal B_f=i_+\mathcal O_Y\).
+We use the decreasing filtration \(V^\alpha\), normalized by the
+nilpotence of \(\partial_t t-\alpha\) on \(\operatorname{gr}_V^\alpha\).
+Negativity of the local Bernstein--Sato roots
+\cite[Corollary~5.2]{Kas76} gives
+\begin{equation}\label{eq:geo-star}
+\delta(t-f)\in V^{>0}\mathcal B_f
+ \qquad\text{\cite[Corollary~5.15 and Example~5.19]{CDM24}}.
+\end{equation}
+Nonconstancy ensures that every local germ of \(f\) is nonzero; no
+isolated-critical-point hypothesis is used.
+
+Let \(M=\mathcal H^0f_+\mathcal O_Y\), and let \(m\) be the image of
+\(\omega\). This is a global top-form class in the relative de Rham
+\emph{hypercohomology} computing \(M\), not a quotient of global forms
+by global exact forms. Near the compact fiber \(f^{-1}(0)\), finitely
+many local bounds in \eqref{eq:geo-star} give a common \(\alpha>0\) for
+\(\omega\otimes\delta(t-f)\). Properness allows the target neighborhood
+to be shrunk so that this finite cover suffices. The projection \(\pi\)
+is proper on \(\operatorname{Supp}\mathcal B_f\).
+Compatibility of \(V^\alpha\) with this derived direct image
+\cite[Theorem~8.1]{CDM24} therefore gives
+\begin{equation}\label{eq:geo-starstar}
+m\in V^\alpha M\quad\text{for some }\alpha>0.
+\end{equation}
+This tracks the given form itself, with no parameter-dependent change
+of seed.
+
+Take global sections on the affine target and Fourier transform by
+\(t\mapsto-\partial_\tau\), \(\partial_t\mapsto\tau\).
+Compact-cycle integration is the de Rham period pairing: Stokes
+annihilates relative exact classes, and differentiation in \(\tau\)
+inserts \(-f\). Hence it respects every Weyl-algebra relation of the
+Fourier image \(\widehat m\).
+If its period were a nonzero constant, after scaling the pairing the
+cyclic submodule
+\[
+ \widehat N=\mathbb C[\tau]\langle\partial_\tau\rangle\widehat m
+ \subset\widehat M
+\]
+would have a quotient to \(\mathcal O_{\mathbb A^1_\tau}\) sending
+\(\widehat m\) to \(1\).
+Inverse Fourier transform gives a submodule \(N\subset M\) and a
+quotient \(N\to\delta_0=D_{\mathbb A^1_t}/D_{\mathbb A^1_t}t\)
+sending \(m\) to its nonzero generator.
+But submodules carry the induced \(V\)-filtration and morphisms
+preserve it, whereas \(V^\alpha\delta_0=0\) for \(\alpha>0\)
+\cite[Proposition~3.19(ii), Corollary~3.20, Example~3.18]{CDM24}.
+This contradicts \eqref{eq:geo-starstar}. The cyclic quotient was constructed before
+localization, so no assertion about a localized seed is needed.
+\end{proof}
+
+\section{Reduction to a constant profile}\label{sec:constant-profile}
+
+Put \(X=\{t^2+2xy=1\}\) and \(A=\mathbb C[x,y,t]/(t^2+2xy-1)\).
+The normalized residue volume \(\Omega\) on \(X\) has
+\(\int_\Sigma\Omega=1\) on the real unit sphere in Cartesian
+coordinates. Thus \(L(a)=\int_\Sigma a\Omega\).
+In a circular chart it is a nonzero constant multiple of
+\(dy\wedge dt/(2y)\). Constant factors will be suppressed in the
+local regularity calculations below.
+
+\begin{proposition}\label{prop:constant-profile}
+If \(p\in A_{\leq3}\) satisfies \(L(p^m)=0\) for every \(m\geq1\),
+then in some orthogonal coordinate frame
+\[
+ p=ay+G(x,t),\qquad \deg G\leq3,\qquad a\,[t^3]G=0.
+\]
+\end{proposition}
+
+\begin{proof}
+Choose a representative \(P=P_d+\cdots+P_0\) of minimal degree \(d\),
+with homogeneous pieces \(P_j\). The cases \(d\leq1\) already have
+the stated form. For \(d\geq2\), minimality implies
+\(P_d|_{\{q=0\}}\neq0\): otherwise \(P_d=qH\), and subtracting
+\((q-1)H\) lowers the degree.
+
+Compactify \(X\) by
+\[
+ \bar X=\{T^2+2XY=R^2\}\subset\mathbb P^3.
+\]
+The actual closure \(\Gamma_d\) of the graph of \(p\) is proper over
+the phase line and is given by
+\begin{equation}\label{eq:geo-1}
+\sum_{j=0}^d R^{d-j}P_j(X,Y,T)-sR^d=0.
+\end{equation}
+There is no component supported on \(R=0\), because the nonzero
+restriction of \(P_d\) has only finitely many zeros on the boundary
+conic. All modifications below are strict transforms of this
+closure, and are isomorphisms over \(X\).
+
+Move a boundary point to \([X:Y:T:R]=[0:1:0:0]\) by an orthogonal
+change of frame, and use coordinates
+\begin{equation}\label{eq:geo-2}
+(X,Y,T,R)=((z^2-u^2)/2,1,u,z).
+\end{equation}
+The original volume is, up to a nonzero constant,
+\begin{equation}\label{eq:geo-3}
+\Omega=\frac{du\wedge dz}{2z^2}.
+\end{equation}
+
+Suppose first that \(d=2\).
+At a boundary root, the coefficient of \(y^2\) in \(P_2\) is zero.
+If the root of \(P_2|_{\{q=0\}}\) is repeated, its derivative in
+\(u\) also vanishes, so the coefficient of \(yt\) is zero.
+Replacing \(xy\) by \((1-t^2)/2\) then gives
+\(p=ay+G(x,t)\), as required.
+If no such frame exists, all boundary roots are simple.
+The local equation \(F=0\) in \eqref{eq:geo-1} is then smooth at every boundary
+point, with \(F_s=-z^2\). Its regular dualizing residue \(\eta_F\)
+satisfies
+\[
+ \Omega=-\tfrac12\eta_F.
+\]
+Consequently \(\Omega\) extends to the whole smooth proper graph.
+Lemma~\ref{lem:proper-volume} contradicts
+\(\int_\Sigma e^{-\tau p}\Omega=1\).
+This settles \(d=2\), without a separate quadratic classification.
+
+Now let \(d=3\), and suppose that no frame satisfies the conclusion.
+At a boundary point in \eqref{eq:geo-2}, its equation has derivatives
+\[
+ F_u(0,0,s)=[y^2t]P_3,\qquad
+ F_z(0,0,s)=[y^2]P_2,
+\]
+while the root condition is \([y^3]P_3=0\).
+If either derivative is nonzero, the graph is smooth there.
+Since \(F_s=-z^3\), its dualizing residue satisfies
+\begin{equation}\label{eq:geo-4}
+\Omega=-\tfrac z2\,\eta_F,
+\end{equation}
+which extends regularly across that point.
+
+It remains to treat points where both derivatives vanish.
+If \(C=[xy^2]P_3\), replace \(P\) by
+\(P-\frac C2y(q-1)\). This removes \(xy^2\) and changes neither
+\(p\) nor the graph on \(\bar X\). The representative is now affine
+linear in \(y\). Eliminating its remaining \(xy\) factors gives
+\[
+ p=y(a+bt+ct^2)+G(x,t),\qquad \deg G\leq3.
+\]
+In \eqref{eq:geo-2} the graph equation is
+\begin{equation}\label{eq:geo-5}
+F=cu^2+buz+az^2+R_{\geq3}(u,z)-sz^3=0.
+\end{equation}
+Indeed \(x^it^j\) in \(G\) contributes
+\(2^{-i}(z^2-u^2)^iu^jz^{3-i-j}\), of total order at least \(3+i\).
+A constant profile with \(a[t^3]G=0\) would finish the proof. We resolve the other cases.
+
+If \(b^2-4ac\neq0\), blow up the boundary section.
+In the chart \(u=zv\), the strict transform is \(F=z^2F_1\), with
+\[
+ F_1=cv^2+bv+a+zK(v,z,s),\qquad (F_1)_s=-z.
+\]
+Its exceptional intersections are the simple roots of the profile,
+so it is smooth there, and
+\begin{equation}\label{eq:geo-6}
+\Omega=\frac{dv\wedge dz}{2z}=-\tfrac12\eta_{F_1}.
+\end{equation}
+If \(c=0,b\neq0\), the additional tangent direction is covered by
+\(z=uv\). Here \(F=u^2F_2\), and the exceptional point \(u=v=0\)
+has \((F_2)_v=b\neq0\). Moreover
+\begin{equation}\label{eq:geo-7}
+(F_2)_s=-uv^3,\qquad
+ \Omega=\frac{du\wedge dv}{2uv^2}=-\tfrac v2\,\eta_{F_2}.
+\end{equation}
+Thus both charts are smooth along their full exceptional boundary
+and the volume is regular there.
+
+The remaining nonconstant profile has \(c\neq0\) and
+\(b^2-4ac=0\). Scale \(c=1\), write the profile as \((t-r)^2\),
+and put \(w=u-rz\). Blow up in the chart \(w=zv\), which contains
+the entire exceptional intersection. The strict equation is
+\begin{equation}\label{eq:geo-8}
+F_1=v^2+z(k(v)-s)+z^2\rho(v,z)=0.
+\end{equation}
+It is smooth on the boundary except possibly at
+\((v,z,s)=(0,0,k(0))\).
+The Hessian determinant at that point is \(-2\), independently of
+\(k\) and \(\rho\); it is an ordinary \(A_1\) surface double point.
+By \eqref{eq:geo-6}, \(\Omega\) is a constant multiple of its dualizing generator.
+Blow up this point. The strict transform is smooth, with a smooth
+conic exceptional divisor, and the resolution is crepant:
+the ambient point blow-up adds twice the exceptional divisor to
+the canonical divisor, while the double-point hypersurface has
+multiplicity two. Adjunction cancels these contributions.
+The given volume therefore extends holomorphically over the
+resolution.
+
+
+For a constant profile, our contrary assumption says \(a\neq0\) and
+\(h=[t^3]G\neq0\). Write
+\(G(0,t)=ht^3+g_2t^2+g_1t+g_0\).
+Equation \eqref{eq:geo-5} is then
+\begin{equation}\label{eq:geo-9}
+F=az^2+hu^3+g_2u^2z+g_1uz^2+(g_0-s)z^3+R_{\geq4}(u,z).
+\end{equation}
+Blow up in the chart \(z=uv\). The strict transform is
+\begin{equation}\label{eq:geo-10}
+F_1=av^2+u\bigl(h+g_2v+g_1v^2+(g_0-s)v^3\bigr)
+          +u^2H(u,v)=0.
+\end{equation}
+The exceptional intersection is the single point \(u=v=0\), where
+\((F_1)_u=h\neq0\). Hence it is smooth for every finite \(s\).
+Furthermore \((F_1)_s=-uv^3\), and \eqref{eq:geo-7} again gives
+\(\Omega=-v\eta_{F_1}/2\), a regular form.
+Equivalently, solving \(u=u(v,s)\) gives
+\[
+ \Omega=\pm\frac{v}{2(F_1)_u}\,dv\wedge ds.
+\]
+The complementary chart \(u=zv\) has strict equation \(a+O(z)=0\)
+and therefore no exceptional intersection. These charts cover the
+complete exceptional divisor; no boundary-supported component
+has been retained.
+
+There are finitely many boundary points. The indicated blow-ups
+of boundary sections, followed by the finitely many ordinary
+double-point resolutions, give a smooth irreducible surface \(Y\)
+proper over \(\mathbb A^1_s\), containing \(X\), on which the original
+volume \(\Omega\) is regular. The phase is nonconstant and the
+original sphere remains a compact cycle of nonzero volume.
+Purity gives \(\int_\Sigma e^{-\tau p}\Omega=1\), contradicting
+Lemma~\ref{lem:proper-volume}.
+A frame with constant profile and \(a[t^3]G=0\) must therefore exist.
+\end{proof}

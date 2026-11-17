@@ -1,0 +1,27 @@
+{
+  "title": "Cubic sphere moments and the two-pair Image problem",
+  "author": {
+    "name": "Roy van Rijn",
+    "orcid": "0009-0000-2808-0645"
+  },
+  "summary": "Classifies pure cubic sphere phases and proves the sharp two-pair cubic Image cutoff and balanced degree-four failure boundary.",
+  "status": "ready-for-review",
+  "published": false,
+  "catalogued_on": "2026-11-17",
+  "source": "main.tex",
+  "pdf": "cubic-sphere-image.pdf",
+  "source_bundle": "source.zip",
+  "build": "latexmk -pdf -interaction=nonstopmode -halt-on-error -jobname=cubic-sphere-image main.tex",
+  "abstract": "We classify the polynomials of degree at most three on the complex affine\nunit sphere whose positive spherical moments all vanish. Up to an\northogonal change of coordinates and a nonzero scalar, they have strictly\none-sided circular support or equal \\(y+xt-x^3/2\\), where\n\\(t^2+2xy=1\\). Their mixed moments vanish for exponents greater than three\ntimes the degree of the multiplier, and this coefficient is optimal.\nThe proof combines a proper-map obstruction for exponential volume\nperiods, explicit resolutions at infinity, and a small exact moment\nelimination. It implies the corresponding sharp bound for every\nbihomogeneous polynomial of bidegree \\((3,3)\\) in two contraction pairs.\nAn explicit bidegree-\\((4,4)\\) counterexample shows that four is the\nminimum failing balanced bidegree.",
+  "abstract_format": "latex",
+  "abstract_source": "main.tex",
+  "verification_record": "verification.json",
+  "verification": {
+    "scope": "Written standalone all-order proof, exact finite-algebra replay, contextual mathematical audits, PDF layout inspection, and isolated PDF-only internal AI reader review recorded by edition.",
+    "limits": "No independent external replay, external human mathematical review, formal verification, submission, or public deposit is claimed."
+  },
+  "next_steps": [
+    "Specialist review of the proper direct-image/Fourier period argument and exhaustive boundary resolution.",
+    "Independent replay of the finite algebra and author review before submission."
+  ]
+}

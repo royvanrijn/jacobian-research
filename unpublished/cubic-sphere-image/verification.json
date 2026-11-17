@@ -1,0 +1,130 @@
+{
+  "schema_version": 1,
+  "date": "2026-11-17",
+  "scope": "Full filtered A<=3 sphere classification, m>3deg multiplier cutoff, fixed balanced bidegree <=3 in two contraction pairs, and minimum failing balanced bidegree four.",
+  "proof_dependencies": [
+    {
+      "claim": "Proper exponential-volume period obstruction",
+      "source": "geometry.tex, proper-volume lemma",
+      "imports": [
+        "Kashiwara 1976 Corollary 5.2",
+        "Chen--Dirks--Mustata 2402.07816v1 Corollary 5.15, Example 5.19, Theorem 8.1, Proposition 3.19(ii), Corollary 3.20, Example 3.18"
+      ],
+      "limits": "No isolated critical point assumption, no localized Fourier seed, no Gaussian cubic classification dependency."
+    },
+    {
+      "claim": "Geometric constant profile with a*[t^3]G=0",
+      "source": "geometry.tex",
+      "method": "Minimal-degree graph; regular boundary, ordinary node, repeated nonconstant profile A1, and constant-profile cusp charts. The a*h!=0 cusp resolution removes the eleven-parameter polynomial certificate dependency."
+    },
+    {
+      "claim": "Finite classification after geometric reduction",
+      "source": "finite.tex",
+      "method": "Four interval moments, eight sphere moments, triangular r elimination, explicit 4x4 augmented matrix and two minors with Sylvester determinant 2 modulo19."
+    },
+    {
+      "claim": "Normal forms, sharp cutoff and contraction transfer",
+      "source": "main.tex",
+      "method": "L-preserving locally nilpotent shear, circular weights, exact sharp coefficient, beta-contraction bridge, arbitrary multiplier balancing, and characteristic-zero descent."
+    },
+    {
+      "claim": "Quartic failure",
+      "source": "main.tex",
+      "method": "Long 2609.16178v1 Theorem3.1 under circular normalization and scalar; complete coefficient proof reproduced."
+    }
+  ],
+  "primary_sources": [
+    {
+      "citation": "EWZ11",
+      "url": "https://arxiv.org/html/1008.3962v2",
+      "inspected": "Section3, Conjecture3.1 and Theorem3.3",
+      "role": "Image framework and contraction kernel identity, also proved directly in article."
+    },
+    {
+      "citation": "Long26",
+      "url": "https://arxiv.org/html/2607.19012v1",
+      "inspected": "Theorem2.1 and its beta-binomial proof",
+      "role": "Prior mixed interval--torus and SU(2) counterexample context only."
+    },
+    {
+      "citation": "LongHopf26",
+      "url": "https://arxiv.org/html/2609.16178v1",
+      "inspected": "Section3, equations3.1--3.16 and full Theorem3.1 proof",
+      "role": "Prior phase-balanced Hopf quartic witness and exact coefficient proof."
+    },
+    {
+      "citation": "Kas76",
+      "url": "https://www.kurims.kyoto-u.ac.jp/~kenkyubu/kashiwara/Bfunct.pdf",
+      "cache": "../../research/foundations/extended-geometry/sources/kashiwara_b_functions_1976.pdf",
+      "sha256": "c3faf7cd0f863a26a30a4c4ef4b8e929c1fc4d32b8a7400520b34e63ffc61143",
+      "inspected": "Corollary5.2, printedp48; resolution argument and Theorem5.1 shifted divisibility proof, printedpp49--51",
+      "role": "Strict negativity of local Bernstein--Sato roots without isolated-singularity restriction."
+    },
+    {
+      "citation": "CDM24",
+      "url": "https://arxiv.org/abs/2402.07816v1",
+      "cache": "../../research/foundations/extended-geometry/sources/chen_dirks_mustata_V_filtrations_2402_07816v1.pdf",
+      "sha256": "c00c78a3106e9f2b4120e59207c917e961787385902820d1b5fdb4e0745b7fe3",
+      "inspected": "Theorem8.1 full four-step proof pp41--44; Corollary5.15 and Example5.19; Proposition3.19(ii), Corollary3.20 and Example3.18 pp14--15",
+      "role": "Positive graph seed; filtered relative de Rham hypercohomology for proper-on-support projection; induced and strict V filtration; positive V of delta0 is zero. Theorem5.23 alone is not used as an unproved substitute."
+    }
+  ],
+  "novelty_comparison": {
+    "previous": "The Special Image formulation is general. Long provides explicit quartic Hopf moment failure with a marked coefficient identity.",
+    "result": "Positive classification of the entire sixteen-dimensional filtered cubic sphere space; optimal factor3 mixed bound and exact first failing fixed balanced bidegree4 in two pairs.",
+    "not_an_immediate_corollary": "The cited negative examples do not classify cubics. The proper-map obstruction, exhaustive boundary resolution, and finite eight-moment necessity supply the positive classification.",
+    "new_essential_step": "Geometric extraction of a constant profile with a*[t^3]G=0, including the one-blow-up cusp calculation."
+  },
+  "checks": {
+    "latex": {
+      "passed": true,
+      "command": "latexmk -pdf -interaction=nonstopmode -halt-on-error -jobname=cubic-sphere-image main.tex",
+      "toolchain": "latexmk4.83; pdfTeX1.40.25; TeXLive2023/Debian",
+      "warnings": []
+    },
+    "exact_arithmetic": {
+      "passed": true,
+      "command": "Python3.12 + SymPy1.14.0: python verify.py",
+      "scope": "Displayed finite identities, matrix, minors, determinant; later boundary checks recorded with final edition."
+    },
+    "negative_controls": {
+      "corrupted_sylvester_row": "Rejected: determinant becomes0 modulo19.",
+      "optimized_python": "Rejected with RuntimeError before assertions can be disabled."
+    },
+    "layout": {
+      "passed": true,
+      "renderer": "PyMuPDF1.35 scale; every page inspected in three contact sheets",
+      "pages": 10,
+      "embedded_fonts": true,
+      "type3_fonts": false,
+      "checks": [
+        "No clipping or overlapping equations",
+        "All cross-references and citations resolved",
+        "Readable matrix and polynomial divisions",
+        "No workflow labels in article title/body/metadata"
+      ]
+    },
+    "navigation": {
+      "render_passed": false,
+      "check_passed": false,
+      "reason": "Both make render-navigation and make check-navigation stop on pre-existing unrelated changed checker source: BINOMIAL-INITIAL-BOUNDARY.",
+      "scope": "No global registry or unrelated checker was changed for this paper."
+    }
+  },
+  "review": {
+    "contextual_ai_mathematical_audits": [
+      "Independent agent audits of finite elimination and geometry, including cusp shortcut; these had research context and are not blind reader reviews."
+    ],
+    "blind_reader": {
+      "performed": true,
+      "initial_pdf_sha256": "85c057597aec037a331101c2e4b9d445630d6510c5387ba9649ed385ad0c3d7b",
+      "reviewer": "Fresh no-history internal AI agent /root/pdf_blind_reader",
+      "supplied_context": "Only article.pdf copied to /tmp/cubic-sphere-blind-review; five standard reader questions; instruction forbidding repository, source, conversation, other agents and web access. Python interpreter location supplied solely as a library tool.",
+      "answers_pending": true
+    },
+    "external_human_review": false,
+    "independent_external_replay": false,
+    "formal_verification": false
+  },
+  "artifact_hashes": {}
+}

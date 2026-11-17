@@ -1,0 +1,338 @@
+\documentclass[11pt]{article}
+\usepackage[T1]{fontenc}
+\usepackage{microtype}
+\usepackage[a4paper,margin=29mm]{geometry}
+\usepackage{amsmath,amssymb,amsthm,mathtools}
+\usepackage[colorlinks=true,linkcolor=blue,citecolor=blue,urlcolor=blue]{hyperref}
+\hypersetup{pdftitle={Cubic sphere moments and the two-pair Image problem},pdfauthor={Roy van Rijn}}
+\newcommand{\C}{\mathbb C}
+\newcommand{\A}{\mathbb A}
+\newcommand{\E}{\mathcal E_2}
+\newcommand{\CT}{\operatorname{CT}}
+\newcommand{\dd}{\,d}
+\DeclareMathOperator{\Res}{Res}
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{corollary}[theorem]{Corollary}
+\theoremstyle{remark}\newtheorem{remark}[theorem]{Remark}
+\title{Cubic sphere moments and the two-pair Image problem}
+\author{Roy van Rijn\\\small ORCID: \href{https://orcid.org/0009-0000-2808-0645}{0009-0000-2808-0645}}
+\date{}
+\begin{document}
+\maketitle
+\begin{abstract}
+We classify the polynomials of degree at most three on the complex affine
+unit sphere whose positive spherical moments all vanish. Up to an
+orthogonal change of coordinates and a nonzero scalar, they have strictly
+one-sided circular support or equal \(y+xt-x^3/2\), where
+\(t^2+2xy=1\). Their mixed moments vanish for exponents greater than three
+times the degree of the multiplier, and this coefficient is optimal.
+The proof combines a proper-map obstruction for exponential volume
+periods, explicit resolutions at infinity, and a small exact moment
+elimination. It implies the corresponding sharp bound for every
+bihomogeneous polynomial of bidegree \((3,3)\) in two contraction pairs.
+An explicit bidegree-\((4,4)\) counterexample shows that four is the
+minimum failing balanced bidegree.
+\end{abstract}
+
+\section{The result and its mechanism}
+
+Let \(A=\C[x,y,t]/(t^2+2xy-1)\), with the filtration \(A_{\leq d}\)
+induced by ordinary polynomial degree. Write \(q=t^2+2xy\).
+The normalized spherical integral is the linear functional \(L:A\to\C\)
+characterized by
+\begin{equation}\label{eq:moments}
+ L(x^a y^b t^c)=
+ \begin{cases}
+ \displaystyle\frac{a!(2k-1)!!}{(2a+2k+1)!!},&a=b,\ c=2k,\\[4pt]
+ 0,&\text{otherwise},
+ \end{cases}\qquad (-1)!!=1.
+\end{equation}
+Indeed, put \(x=(u_1+iu_2)/\sqrt2\),
+\(y=(u_1-iu_2)/\sqrt2\), and \(t=u_3\), and average over the real
+unit sphere in \(\mathbb R^3\). The functional is invariant under
+\(O(q,\C)\). We call \(p\) \emph{pure} if \(L(p^m)=0\) for every
+integer \(m\geq1\).
+Under the circular action
+\((x,y,t)\mapsto(\lambda x,\lambda^{-1}y,t)\), the weights of
+\(x,y,t\) are \(1,-1,0\). A polynomial has strictly positive support
+if every nonzero monomial in its normal form has positive weight;
+the zero polynomial is included.
+
+\begin{theorem}\label{thm:sphere}
+A polynomial \(p\in A_{\leq3}\) is pure if and only if, after an
+orthogonal change of coordinates, it has strictly positive support or is
+\[
+ \alpha\left(y+xt-\frac{x^3}{2}\right),\qquad \alpha\in\C^*.
+\]
+For every \(g\in A_{\leq D}\), purity implies
+\begin{equation}\label{eq:cutoff}
+ L(gp^m)=0\qquad(m>3D).
+\end{equation}
+The coefficient three is optimal: for every \(D\geq1\),
+\begin{equation}\label{eq:sharp}
+ L\left(y^D\left(y+xt-\frac{x^3}{2}\right)^{3D}\right)
+ =\frac{(-1)^D2^{2D}((3D)!)^2}{(6D+1)!}\ne0.
+\end{equation}
+\end{theorem}
+
+The one-sided case is immediate from circular weights. The second case
+is also geometric, but uses a nonlinear change of coordinates. The map
+\begin{equation}\label{eq:shear}
+ \phi(x)=x,\qquad \phi(t)=t-x^2,\qquad
+ \phi(y)=y+xt-\frac{x^3}{2}
+\end{equation}
+is an automorphism of the sphere and preserves \(L\).
+Thus all powers of \(\phi(y)\) integrate to zero. Its inverse has degree
+three, explaining the coefficient in \eqref{eq:cutoff}. The difficult
+point is proving that these exhaust the cubics.
+
+Here is the reason for that exhaustion. Pure moments make the
+exponential period \(\int e^{-\tau p}\Omega\) identically one. If the
+sphere volume extends to a smooth compactification on which \(p\) is a
+proper map to the affine line, a positive \(V\)-filtration obstruction
+rules out that constant period. We resolve the graph at infinity and
+identify exactly the boundary configurations that prevent this
+extension. They force a coordinate frame in which \(p=ay+G(x,t)\),
+and, when \(a\ne0\), the cubic term \(t^3\) can be excluded. Eight
+explicit moments then give the remaining normal form. The geometric
+step is essential: a finite moment calculation in one coordinate chart
+does not classify arbitrary cubics.
+
+For the Image problem, let \(k\) be a field of characteristic zero and
+set \(B=k[\xi_1,\xi_2,z_1,z_2]\). Define
+\[
+ \E(\xi^\alpha z^\beta)=\partial_z^\alpha z^\beta,
+ \qquad
+ \mathcal M_2=\sum_{j=1}^2(\partial_{z_j}-\xi_j)B.
+\]
+The identity \(\mathcal M_2=\ker\E\) is the standard contraction
+formulation of the Special Image problem
+\cite[Section~3]{EWZ11}; a direct proof is given below.
+A polynomial of bidegree \((d,d)\) is homogeneous of degree \(d\)
+separately in \(\xi\) and \(z\).
+
+\begin{theorem}\label{thm:image}
+Let \(F\in B\) have bidegree \((3,3)\), and suppose
+\(\E(F^m)=0\) for every \(m\geq1\). Then, for every nonzero \(Q\in B\),
+\[
+ \E(QF^m)=0\qquad(m>3\deg_z Q).
+\]
+The coefficient three is optimal. The minimum balanced bidegree
+\(d\) admitting a counterexample to eventual mixed-contraction
+vanishing is four.
+\end{theorem}
+
+The Image framework of van den Essen, Wright and Zhao
+\cite{EWZ11} concerns arbitrary polynomials and does not supply the
+cubic classification above. Long's counterexamples to the mixed
+interval--torus moment conjecture and the Mathieu conjecture for
+\(SU(2)\) \cite{Long26} establish failures outside restricted
+classes. Our positive result concerns the full filtered space
+\(A_{\leq3}\), or, equivalently, fixed balanced bidegree three in two
+pairs. Long's phase-balanced Hopf witness \cite[Theorem~3.1]{LongHopf26} gives the quartic upper boundary. We reproduce its coefficient proof in our normalization to make the degree
+boundary explicit. We make no assertion for arbitrary sums of different
+bidegrees or for more contraction pairs.
+
+\section{Spherical integration and contraction}\label{sec:bridge}
+
+On the circular chart \(y=(1-t^2)/(2x)\), spherical integration becomes
+\begin{equation}\label{eq:ct}
+ L(a)=\frac12\int_{-1}^1
+ \CT_x\,a\left(x,\frac{1-t^2}{2x},t\right)\dd t.
+\end{equation}
+The beta integral proves \eqref{eq:moments}. The relation \(q=1\)
+gives a unique normal form with no monomial divisible by \(xy\).
+Its monomials of degree at most \(d\) number \((d+1)^2\).
+Orthogonal invariance follows either from the Cartesian sphere
+moments or from their contraction formula: odd tensors vanish and
+even tensors are sums of pairings of \(q\).
+
+Introduce the bilinears
+\begin{equation}\label{eq:bilinears}
+ R=\xi_1z_1+\xi_2z_2,\quad X=\xi_1z_2,\quad
+ Y=2\xi_2z_1,\quad T=\xi_1z_1-\xi_2z_2.
+\end{equation}
+They satisfy \(T^2+2XY=R^2\). A balanced polynomial of bidegree
+\((n,n)\) is a homogeneous degree-\(n\) polynomial in these bilinears,
+modulo that relation. To see surjectivity, pair the \(n\) dual factors
+with the \(n\) coordinate factors in each monomial. Both spaces have
+dimension \((n+1)^2\), so restriction to \(R=1\) identifies this
+space with \(A_{\leq n}\).
+
+\begin{lemma}\label{lem:bridge}
+If \(H\) has bidegree \((n,n)\) and restricts to \(h\in A_{\leq n}\),
+then
+\begin{equation}\label{eq:bridge}
+ \E(H)=(n+1)!L(h).
+\end{equation}
+Moreover \(\mathcal M_2=\ker\E\).
+\end{lemma}
+\begin{proof}
+For the first identity, substitute \(\xi_j=\overline z_j\) on the
+unit sphere in \(\C^2\). Its normalized integral sends
+\(\overline z^\alpha z^\beta\), with \(|\alpha|=|\beta|=n\), to
+\(\delta_{\alpha\beta}\alpha!/(n+1)!\). This follows by phase
+integration and \(\int_0^1s^{\alpha_1}(1-s)^{\alpha_2}\dd s
+=\alpha!/(n+1)!\). The resulting variables \((X,Y,T)\) have the
+normalized sphere moments \eqref{eq:moments}: their circular phase is
+uniform and \(T=2|z_1|^2-1\) is uniform on \([-1,1]\).
+
+Contraction kills each \((\partial_{z_j}-\xi_j)H\), so
+\(\mathcal M_2\subset\ker\E\). Conversely the relation
+\(\xi_j H\equiv\partial_{z_j}H\pmod{\mathcal M_2}\), iterated
+on monomials, gives \(H\equiv\E(H)\pmod{\mathcal M_2}\).
+Thus \(\ker\E\subset\mathcal M_2\).
+\end{proof}
+
+In Cartesian coordinates the normalized algebraic volume is
+\[
+ \Omega=\frac1{2\pi}\Res_{q=1}
+ \frac{du_1\wedge du_2\wedge du_3}{q-1}.
+\]
+Its restriction to the oriented real sphere \(\Sigma\) is normalized
+area, and \(L(a)=\int_\Sigma a\Omega\). The entire function
+\(\int_\Sigma e^{-\tau p}\Omega\) is identically one precisely when
+\(p\) is pure.
+
+\input{geometry}
+\input{finite}
+
+\section{Normal forms and the sharp cutoff}\label{sec:normal-forms}
+
+The geometric reduction and the finite calculation show that a pure
+cubic has positive support or has the form
+\begin{equation}\label{eq:family}
+ p=ay+(c+dx)t-\frac{x(c+dx)^2}{2a},\qquad a\ne0.
+\end{equation}
+The orthogonal null rotation
+\[
+ x\mapsto x,\quad t\mapsto t+kx,\quad
+ y\mapsto y-kt-\frac{k^2x}{2},\qquad k=c/a,
+\]
+removes \(c\). If \(d=0\), the result is \(ay\), which becomes
+positive by interchanging \(x\) and \(y\). If \(d\ne0\), a nonzero
+scalar and the torus \((x,y)\mapsto(\lambda x,\lambda^{-1}y)\)
+normalize the coefficients of \(y\) and \(xt\) to one, giving the
+exceptional form in Theorem~\ref{thm:sphere}.
+
+For completeness, \eqref{eq:shear} preserves \(q\) and is
+\(\phi=\exp(-x\delta)\), where
+\(\delta=x\partial_t-t\partial_y\) is locally nilpotent.
+Orthogonal invariance gives \(L(\delta f)=0\). Since \(\delta x=0\),
+it also gives \(L(x\delta f)=0\), and the finite exponential series
+shows \(L(\phi f)=L(f)\). Thus the exceptional form is pure.
+If \(g\in A_{\leq D}\), then \(\phi^{-1}g\) has degree at most
+\(3D\). Circular weights give
+\[
+ L(g\phi(y)^m)=L((\phi^{-1}g)y^m)=0\qquad(m>3D).
+\]
+For positive support, the same weight argument already gives zero for
+\(m>D\). This proves the classification and \eqref{eq:cutoff}.
+
+To verify sharpness, apply \(\phi^{-1}\) to \(y^D\phi(y)^{3D}\).
+Now \(\phi^{-1}(y)=y-xt-x^3/2\). In
+\((y-xt-x^3/2)^D y^{3D}\), the only zero-weight term is
+\((-x^3/2)^D y^{3D}\). Formula \eqref{eq:moments} gives
+\eqref{eq:sharp}.
+
+\begin{proof}[Proof of Theorem~\ref{thm:image}]
+First work over \(\C\), and let \(p\in A_{\leq3}\) correspond to
+\(F\). Lemma~\ref{lem:bridge} shows that \(p\) is pure.
+If \(Q\) has bidegree \((b,b)\), its restriction has degree at most
+\(b\), so \eqref{eq:cutoff} and the same lemma prove the claim.
+
+For general bihomogeneous \(Q\) of bidegree \((a,b)\), the contraction
+is automatically zero when \(a>b\). If \(a\leq b\), put
+\(r=b-a\). The polynomial \(P_m=\E(QF^m)\) is homogeneous of
+\(z\)-degree \(r\). For every multi-index \(|\gamma|=r\),
+\[
+ \partial_z^\gamma P_m=\E(\xi^\gamma QF^m)=0\qquad(m>3b),
+\]
+because \(\xi^\gamma Q\) is balanced of bidegree \((b,b)\).
+All coefficients of \(P_m\) therefore vanish. Decomposing an arbitrary
+\(Q\) into its bidegrees proves the bound as stated.
+
+Every finite collection of characteristic-zero coefficients generates
+a field admitting an embedding into \(\C\). Applying the proved result
+there and using injectivity proves the assertion over \(k\).
+For sharpness use
+\[
+ F_*=R^2Y+RXT-X^3/2,\qquad Q=Y^D.
+\]
+The nonzero value at \(m=3D\) is \((10D+1)!\) times
+\eqref{eq:sharp}. The same argument for bidegrees \((d,d)\),
+\(d\leq3\), follows from \(A_{\leq d}\subset A_{\leq3}\).
+The quartic example below completes the degree boundary.
+\end{proof}
+
+\section{The quartic boundary}\label{sec:quartic}
+
+The following is Long's Hopf witness \cite[Theorem~3.1]{LongHopf26}, with a change of circular normalization and a scalar factor. Let the bilinears be as in \eqref{eq:bilinears}, and put
+\begin{equation}\label{eq:quartic}
+ F_4=(R+X)\left(R^2Y-\frac{(2R+X)T^2}{2}\right),\qquad Q=X.
+\end{equation}
+Then, for every \(m\geq1\),
+\begin{equation}\label{eq:quartic-identity}
+ \E(F_4^m)=0,\qquad
+ \E(QF_4^m)=\frac{(4m+2)!\,m!}{(2m+1)!!}\ne0.
+\end{equation}
+Here is a coefficient proof. On \(q=1\),
+\[
+ p_4=(1+x)\left(y-\frac{2+x}{2}t^2\right)
+     =\frac{1+x}{2x}\bigl(1-t^2(1+x)^2\bigr).
+\]
+Define
+\[
+ J_m(U)=\int_0^U(1-v^2)^m\dd v,\qquad
+ H_m(U)=U^m\int_0^1(1-s^2U^2)^m\dd s=U^{m-1}J_m(U).
+\]
+By \eqref{eq:ct},
+\[
+ L(p_4^m)=2^{-m}[u^m]H_m(1+u),\qquad
+ L(xp_4^m)=2^{-m}[u^{m-1}]H_m(1+u).
+\]
+Since \(J_m'(U)=(1-U^2)^m\),
+\(J_m(1+u)=J_m(1)+O(u^{m+1})\).
+The first displayed coefficient is zero; the second is
+\(2^{-m}J_m(1)=m!/(2m+1)!!\). Lemma~\ref{lem:bridge} proves
+\eqref{eq:quartic-identity}, over every characteristic-zero field.
+This example concerns a single fixed balanced bidegree four; it proves
+exactly the minimum-degree assertion in Theorem~\ref{thm:image}.
+
+\paragraph{Verification.}
+All finite eliminations used in the proof are displayed in the article.
+The accompanying short exact-arithmetic program regenerates the moment
+identities, checks the two small polynomial obstructions, and verifies
+the boundary-chart equations. It is a reproducibility aid; the geometric
+reduction and all-order arguments are given here.
+
+\paragraph{AI assistance and review.}
+ChatGPT (OpenAI) assisted with mathematical arguments, literature checks,
+exposition, proof review and verification code.
+
+\begin{thebibliography}{9}
+\bibitem{EWZ11}
+A.~van den Essen, D.~Wright and W.~Zhao,
+\emph{On the Image Conjecture}, J.~Algebra \textbf{340} (2011), 211--224.
+\href{https://doi.org/10.1016/j.jalgebra.2011.04.036}{doi:10.1016/j.jalgebra.2011.04.036}.
+\bibitem{Long26}
+C.~D.~Long,
+\emph{Counterexamples to the \(xz\)-Conjecture and the Mathieu Conjecture
+for \(SU(2)\)}, arXiv:2607.19012v1 (2026).
+\href{https://arxiv.org/abs/2607.19012v1}{arXiv:2607.19012v1}.
+\bibitem{LongHopf26}
+C.~D.~Long, \emph{The Mathieu Property for Compact Connected Lie Groups},
+arXiv:2609.16178v1 (2026).
+\href{https://arxiv.org/abs/2609.16178v1}{arXiv:2609.16178v1}.
+\bibitem{Kas76}
+M.~Kashiwara, \emph{B-functions and holonomic systems: rationality of
+roots of B-functions}, Invent.~Math. \textbf{38} (1976), 33--53.
+\href{https://www.kurims.kyoto-u.ac.jp/~kenkyubu/kashiwara/Bfunct.pdf}{Author's copy}.
+\bibitem{CDM24}
+Q.~Chen, B.~Dirks and M.~Musta\c t\u a,
+\emph{An introduction to \(V\)-filtrations}, arXiv:2402.07816v1 (2024).
+\href{https://arxiv.org/abs/2402.07816v1}{arXiv:2402.07816v1}.
+\end{thebibliography}
+\end{document}

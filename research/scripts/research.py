@@ -16,9 +16,10 @@ from zipfile import ZipFile
 
 from dependency_graph import DependencyGraph, GraphValidationError
 from dependency_sources import missing_source_closure
-from dependency_coverage import CoverageError, check_coverage, coverage_state, render_coverage
+from dependency_coverage import CoverageError, check_coverage, coverage_state, render_coverage, declarations
 from dependency_bounds import bounds_records, bound_comparisons
 from dependency_references import check_references, reference_state, render_references
+from dependency_tex_links import tex_proof_link_report
 
 ROOT = Path(__file__).resolve().parents[1]
 REPOSITORY = ROOT.parent
@@ -471,6 +472,23 @@ def check_links() -> tuple[int, int]:
     return checked, len(documents)
 
 
+def check_tex_proof_links(data: dict, graph: DependencyGraph) -> dict:
+    report = tex_proof_link_report(data, graph)
+    assert not report["issues"], "unresolved current TeX proof references: " + json.dumps(report["issues"][:20])
+    stored = data.get("graph", {}).get("proof_links", {}).get("links", [])
+    indexed = {(item["source_path"], item["locator"], item["conclusion"], item["dependency"]): item
+               for item in stored}
+    for link in report["links"]:
+        key = (link["source_path"], link["locator"], link["conclusion"], link["dependency"])
+        assert key in indexed, "unregistered TeX proof implication: " + json.dumps(link)
+        routes = indexed[key].get("routes", [])
+        assert routes, "TeX proof implication lacks an attached route: " + json.dumps(link)
+        for rule_id in routes:
+            assert rule_id in graph.rules and link["dependency"] in graph.rules[rule_id]["premises"], (
+                "TeX prerequisite bypassed: " + rule_id + " needs " + link["dependency"])
+    return report
+
+
 def render_bounds(data: dict, graph: DependencyGraph) -> str:
     rows = bounds_records(graph)
     lines = ["# Quantitative claims and bounds", "",
@@ -566,10 +584,12 @@ def print_explanation(record: dict) -> None:
     seen = set()
 
     def provenance(current: dict, indent: str = "") -> None:
-        if current["id"] in seen:
-            print(indent + current["id"] + " (provenance shown above)")
+        identity = (current["id"], tuple(current["assumptions"]),
+                    tuple((item["type"], item["id"]) for item in current["support"]))
+        if identity in seen:
+            print(indent + current["id"] + " (this proof and assumptions shown above)")
             return
-        seen.add(current["id"])
+        seen.add(identity)
         if indent:
             print(indent + current["id"] + ": " + current["state"])
         for source in current.get("sources", []):
@@ -626,6 +646,11 @@ def main() -> None:
     references = commands.add_parser("references", help="inspect cited papers and external input verification")
     references.add_argument("query", nargs="?")
     references.add_argument("--json", action="store_true")
+    source = commands.add_parser("source", help="inspect source declarations, mapping and downstream impact")
+    source.add_argument("path", help="research-relative path")
+    source.add_argument("--json", action="store_true")
+    opportunities = commands.add_parser("opportunities", help="collect changed inputs, missing links and comparable bounds")
+    opportunities.add_argument("--json", action="store_true")
     bounds = commands.add_parser("bounds", help="inspect scoped bounds and comparable improvements")
     bounds.add_argument("--opportunities", action="store_true")
     bounds.add_argument("--json", action="store_true")
@@ -649,6 +674,9 @@ def main() -> None:
                     covered = check_coverage(data, graph)
                 if data["schema_version"] >= 3 or data.get("graph", {}).get("external_references"):
                     references = check_references(data, graph)
+                linked = None
+                if data["schema_version"] >= 3:
+                    linked = check_tex_proof_links(data, graph)
                 conflicts = [row for row in bound_comparisons(graph) if row["conflict"] and row["state"] == "proved"]
                 assert not conflicts, "conflicting current bounds: " + json.dumps(conflicts)
                 missing = missing_source_closure(graph)
@@ -667,6 +695,8 @@ def main() -> None:
                 print(f"PASS dependency DAG: {len(graph.nodes)} nodes, {len(graph.rules)} implications; quotient acyclic, pinned and current")
                 if covered:
                     print(f"PASS research inventory: {len(covered['documents'])} sources, {covered['declarations']} indexed declarations; no omissions")
+                if linked:
+                    print(f"PASS explicit TeX proof links: {len(linked['links'])}; cross-input prerequisites attached")
                 if references:
                     print(f"PASS cited resources: {len(references['papers'])} entries; "
                           f"{references['bibliography_items']} bibliography items accounted for")
@@ -760,6 +790,49 @@ def main() -> None:
                       f"{state['declarations']} indexed declarations; {len(state['errors'])} issues")
                 for error in state["errors"]:
                     print(error)
+        elif args.command == "source":
+            assert graph is not None, "no dependency graph"
+            path = graph._path(args.path)
+            assert path.is_file(), "missing source: " + args.path
+            mapping = next((row for row in data.get("graph", {}).get("coverage", {}).get("documents", [])
+                            if graph._path(row["path"]) == path), None)
+            impact = graph.source_impact(args.path)
+            evaluation = graph.evaluate()
+            info = {"path": args.path, "current_sha256": hashlib.sha256(path.read_bytes()).hexdigest(),
+                    "mapping": mapping, "declarations": declarations(path),
+                    "affected": [evaluation[node_id] for node_id in impact]}
+            if args.json:
+                print(json.dumps(info, indent=2, ensure_ascii=False))
+            else:
+                print(args.path + ": " + ("mapped" if mapping else "UNMAPPED") + "; "
+                      + str(len(info["declarations"])) + " named declarations; "
+                      + str(len(impact)) + " directly supported claims/descendants")
+                for row in info["affected"]:
+                    print(row["id"] + ": " + row["state"])
+        elif args.command == "opportunities":
+            assert graph is not None, "no dependency graph"
+            evaluated = graph.evaluate()
+            covered = coverage_state(data, graph)
+            cited = reference_state(data, graph)
+            linked = tex_proof_link_report(data, graph)
+            comparisons = [row for row in bound_comparisons(graph, evaluated)
+                           if row["opportunities"] or row["conflict"]]
+            stale = graph.stale_evidence(evaluated)
+            report = {"changed_evidence": stale, "coverage_issues": covered["errors"],
+                      "reference_issues": cited["errors"], "proof_link_issues": linked["issues"],
+                      "bound_improvements_or_conflicts": comparisons,
+                      "pending_external_applications": [
+                          {"id": paper["id"], "title": paper["title"], "verification": paper["verification"]}
+                          for paper in cited["papers"] if any(use["role"] == "application_unverified"
+                                                             for use in paper.get("uses", []))]}
+            if args.json:
+                print(json.dumps(report, indent=2, ensure_ascii=False))
+            else:
+                for key, items in report.items():
+                    print(key.replace("_", " ") + ": " + str(len(items)))
+                for row in comparisons:
+                    print(json.dumps(row, ensure_ascii=False))
+                print("Pending citations need application review; they are not automatically mathematical blockers.")
         elif args.command == "references":
             assert graph is not None, "no dependency graph"
             state = reference_state(data, graph)

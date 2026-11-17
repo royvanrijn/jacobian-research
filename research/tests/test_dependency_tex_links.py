@@ -201,6 +201,18 @@ Use\ref{prop:local}.
                           for item in report["links"]},
                          {("MOM-GLOBAL", "MOM-LOCAL"), ("MOM-LOCAL", "MOM-CASE")})
 
+    def test_reference_command_does_not_override_actual_theorem_label_type(self):
+        self.write("main.tex", r"""\documentclass{article}
+\begin{lemma}\label{lem:input}Input.\end{lemma}
+\begin{theorem}\label{thm:main}Target.\end{theorem}
+\begin{proof}Use\eqref{lem:input}.\end{proof}
+""")
+        self.claim("MOM-MAIN", "main.tex", "thm:main")
+        self.claim("MOM-INPUT", "main.tex", "lem:input")
+        report = tex_proof_link_report(self.data, self.graph())
+        self.assertEqual(report["issues"], [])
+        self.assertEqual([item["dependency"] for item in report["links"]], ["MOM-INPUT"])
+
 
 if __name__ == "__main__":
     unittest.main()

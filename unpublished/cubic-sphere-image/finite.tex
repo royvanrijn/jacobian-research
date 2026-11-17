@@ -1,0 +1,169 @@
+\section{The finite moment calculation}\label{sec:finite}
+
+Write \(J(f)=\frac12\int_{-1}^1 f(t)\,dt\).
+
+\begin{lemma}[Interval cubics]
+\label{lem:interval-cubic}
+If \(u\in\mathbb C[t]\), \(\deg u\le3\), and
+\(J(u^m)=0\) for \(1\le m\le4\), then \(u=0\).
+\end{lemma}
+
+\begin{proof}
+The first equation puts
+\(u=h t^3+v(t^2-1/3)+ct\). Write \(M_j=J(u^j)\). Direct integration gives
+\begin{align}
+ M_2&=\frac{105c^2+126ch+45h^2+28v^2}{315},\notag\\
+ M_3\bmod M_2&=\frac{8v(56c^2+105ch+45h^2)}{2205},\notag\\
+ M_4\bmod M_2&=-\frac{16R(c,h)}{735735},
+ \label{eq:interval-cubic-remainders}
+\end{align}
+where remainders are taken as polynomials in \(v\), and
+\[
+ R(c,h)=28028c^4+84084c^3h+93275c^2h^2+46410ch^3+8955h^4.
+\]
+If \(h=0\), division of \(M_3\) by \(M_2\), now in the variable
+\(c\), has remainder \(-256v^3/4725\). Thus \(v=c=0\).
+
+Suppose \(h\ne0\). Scale \(h=1\), rename \(c=z\), and put
+\[
+ P=56z^2+105z+45,\qquad B=105z^2+126z+45,\qquad R=R(z,1).
+\]
+If \(v\ne0\), the equations force \(P=R=0\). But
+\[
+ R\bmod P=-\frac{315}{128}(299z+159),\qquad
+ P(-159/299)=\frac{446976}{89401}\ne0.
+\]
+If \(v=0\), they force \(B=R=0\), whereas
+\[
+ R\bmod B=-\frac{84}{125}(117z-110),\qquad
+ B(110/117)=\frac{1169375}{4563}\ne0.
+\]
+Both alternatives are impossible.
+\end{proof}
+
+The geometric reduction supplies either a phase independent of \(y\),
+or a constant profile in which the phase-zero term \(t^3\) is absent.
+The first case is already settled by Lemma~\ref{lem:interval-cubic}:
+if \(p\in\mathbb C[x,t]\), phase averaging leaves its coefficient of
+\(x^0\); purity makes that interval cubic zero. All remaining terms
+have strictly positive circular weight.
+
+\begin{proposition}[Constant-profile normal forms]
+\label{prop:finite}
+Let
+\begin{equation}
+ p=ay+(v_0+v_1x)t^2+(c+dx+ex^2)t+\sum_{j=0}^3r_jx^j.
+ \label{eq:constant-profile-family}
+\end{equation}
+If \(L(p^m)=0\) for \(1\le m\le8\), then precisely one of the
+following cases holds:
+\begin{enumerate}
+\item \(a=0\) and \(v_0=c=r_0=0\);
+\item \(a\ne0\), \(v_0=v_1=e=0\), and
+\begin{equation}
+ \sum_{j=0}^3r_jx^j=-\frac{x(c+dx)^2}{2a}.
+ \label{eq:constant-profile-shear}
+\end{equation}
+\end{enumerate}
+\end{proposition}
+
+\begin{proof}
+If \(a=0\), phase averaging leaves \(v_0t^2+ct+r_0\), which vanishes
+by Lemma~\ref{lem:interval-cubic}. This is precisely the first case.
+
+If \(a\ne0\), divide by \(a\), rename coefficients, and assume
+\(a=1\). The orthogonal null rotation
+\begin{equation}
+ x=x',\qquad t=t'+kx',\qquad y=y'-kt'-k^2x'/2
+ \label{eq:constant-profile-null-rotation}
+\end{equation}
+preserves \eqref{eq:constant-profile-family}, leaves \(v_0,v_1\)
+unchanged, and replaces \(c\) by \(c-k\). Take \(k=c\).
+
+Here is a closed formula for the finite coefficient calculation. For
+\[
+ p=y+\sum_{\nu=1}^N a_\nu x^{i_\nu}t^{j_\nu},\qquad i_\nu\ge0,
+\]
+let \(\alpha\in\mathbb N^N\),
+\(k=\sum i_\nu\alpha_\nu\), and \(j=\sum j_\nu\alpha_\nu\).
+Phase balance forces exactly \(k\) factors of \(y\), so
+\begin{equation}
+ L(p^m)=
+ \sum_{\substack{\sum(1+i_\nu)\alpha_\nu=m\\j\ \mathrm{even}}}
+ \frac{m!(j-1)!!}{(2k+j+1)!!\prod_\nu\alpha_\nu!}
+ \prod_\nu a_\nu^{\alpha_\nu}.
+ \label{eq:constant-profile-coefficients}
+\end{equation}
+The factorial for the \(y\)-factors cancels the \(k!\) in
+\eqref{eq:moments}. Thus this formula computes every
+coefficient over \(\mathbb Q\), for all parameter values at once.
+
+For \(a=1,c=0\), the first four equations solve successively for
+\(r_0,r_1,r_2,r_3\). Their respective coefficients are the nonzero
+constants \(1,2/3,2/5,8/35\), and the solutions are
+\begin{align}
+ r_0&=-v_0/3,&
+ r_1&=-(2v_0^2+3v_1)/15,\notag\\
+ r_2&=-4v_0(31v_0^2+54v_1)/945,\notag\\
+ r_3&=-\frac{14175d^2+4624v_0^4+10152v_0^2v_1+3024v_1^2}{28350}.
+ \label{eq:constant-profile-triangular}
+\end{align}
+After substitution, if \(v_0=0\), the eighth equation is
+\(-65536v_1^4/41023125=0\). Then the sixth equation becomes
+\(8e^2/231=0\). Hence \(v_1=e=0\), and
+\eqref{eq:constant-profile-triangular} leaves only \(r_3=-d^2/2\).
+
+Suppose \(v_0\ne0\), and set
+\[
+ b=v_1/v_0^2,\qquad D=d^2/v_0^4,\qquad E=de/v_0^5,\qquad F=e^2/v_0^6.
+\]
+Let \(N_i\), \(5\le i\le8\), be the primitive integer numerators of
+the four residual moments, with positive coefficient of \(v_0^i\).
+The equations \(N_i/v_0^i=0\) are linear in \(D,E,F\). Their augmented
+matrix, in the column order \(D,E,F,1\), is
+\begin{equation}
+ M(b)=\begin{pmatrix}
+ 155925&155925&0&B_5\\
+ 77395500-116093250b&77395500&-58046625&B_6\\
+ 226800-297675b&226800+127575b&-212625&B_7\\
+ 4819500-216877500b&4819500-65063250b&-75907125&B_8
+ \end{pmatrix},
+ \label{eq:constant-profile-matrix}
+\end{equation}
+where
+\begin{align*}
+ B_5&=35504+94992b+52704b^2,\\
+ B_6&=30907712+63343584b+3500496b^2-12573792b^3,\\
+ B_7&=53504+17328b-211968b^2-108864b^3,\\
+ B_8&=7986496-27544704b-90351504b^2-16632864b^3+9144576b^4.
+\end{align*}
+Its coefficient columns satisfy \(C_D-C_E-2bC_F=0\). Consistency
+therefore forces every three-by-three augmented minor to vanish.
+Columns \(D,F,1\), with the first three rows and with rows one, two,
+four, give, up to nonzero rational factors,
+\begin{align*}
+ f(b)&=2485161b^3+6647562b^2+4908168b+1097984,\\
+ g(b)&=10216206b^4+24356619b^3-25372278b^2-41158800b-11711872.
+\end{align*}
+These polynomials are coprime over \(\mathbb Q\): their integer
+Sylvester determinant is congruent to \(2\) modulo \(19\). A nonzero
+integer determinant has nonzero image in \(\mathbb C\), so no common
+root exists. This excludes \(v_0\ne0\), without dividing by \(b\)
+or assuming any further coefficient is nonzero. Undoing
+\eqref{eq:constant-profile-null-rotation} and the scalar normalization
+gives \eqref{eq:constant-profile-shear}.
+
+\end{proof}
+
+\paragraph{Exact coefficient verification.}
+All finite inputs and identities used above are displayed in
+\eqref{eq:interval-cubic-remainders}--\eqref{eq:constant-profile-matrix}
+and the accompanying formulas. The verification program accompanying
+the article derives the eight moments from
+\eqref{eq:constant-profile-coefficients}, reproduces the triangular
+solutions and matrix, and evaluates the seven-by-seven Sylvester
+determinant over \(\mathbb F_{19}\). It uses exact arithmetic and
+requires no search over the coefficient family or external polynomial
+data. Zeroing a row of the determinant is rejected. The program is a
+replay of the displayed finite argument; the all-order conclusions
+follow from the resulting normal forms.

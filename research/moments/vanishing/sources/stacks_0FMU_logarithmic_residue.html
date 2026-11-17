@@ -1,0 +1,664 @@
+<!doctype html>
+<html lang="en">
+<head>
+
+
+
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
+<meta name="theme-color" content="#d9d8d1">
+
+<title>Section 50.15 (0FMU): Log poles along a divisor&mdash;The Stacks project</title>
+
+<meta name="description" content="an open source textbook and reference work on algebraic geometry">
+
+<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+<link rel="stylesheet" type="text/css" href="/static/css/style.css">
+<link rel="stylesheet" type="text/css" href="/static/css/print.css">
+
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    extensions: ['tex2jax.js'],
+    jax: ['input/TeX','output/HTML-CSS'],
+    TeX: {
+      extensions: ['AMSmath.js', 'AMSsymbols.js', '/static/XyJax/extensions/TeX/xypic.js'],
+      Macros: {
+        linebreak: ["", 1, ""],
+        },
+      TagSide: 'left'
+    },
+    tex2jax: {
+      inlineMath: [['$','$']],
+      displayMath: [ ['$$','$$'], ["\\[","\\]"] ],
+    },
+    'HTML-CSS': {
+    	scale: 100,
+	availableFonts: [],
+    }
+  });
+</script>
+
+<script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js" integrity="sha384-crwIf/BuaWM9rM65iM+dWFldgQ1Un8jWZMuh3puxb8TOY9+linwLoI7ZHZT+aekW" crossorigin="anonymous"></script>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+<link rel="stylesheet" type="text/css" href="https://gitcdn.github.io/bootstrap-toggle/2.2.2/css/bootstrap-toggle.min.css" integrity="sha384-yBEPaZw444dClEfen526Q6x4nwuzGO6PreKpbRVSLFCci3oYGE5DnD1pNsubCxYW" crossorigin="anonymous">
+<script src="https://gitcdn.github.io/bootstrap-toggle/2.2.2/js/bootstrap-toggle.min.js" integrity="sha384-cd07Jx5KAMCf7qM+DveFKIzHXeCSYUrai+VWCPIXbYL7JraHMFL/IXaCKbLtsxyB" crossorigin="anonymous"></script>
+
+<link rel="icon" type="image/vnd.microsoft.icon" href="/static/stacks.ico">
+<link rel="shortcut icon" type="image/vnd.microsoft.icon" href="/static/stacks.ico">
+
+
+  <script type="text/javascript" src="/static/js/toggle.js"></script>
+  <script type="text/javascript" src="/static/js/comments.js"></script>
+
+  <link rel="stylesheet" type="text/css" href="https://unpkg.com/easymde@2.0.1/dist/easymde.min.css" integrity="sha384-IRbzB9px0sfIx90vkN+geaX3F4LVcg/M+k5vmVkfjs5TnRX3MIhGS8Ma06ALKVYp" crossorigin="anonymous">
+  <script src="https://unpkg.com/easymde@2.0.1/dist/easymde.min.js" integrity="sha384-v06sb0t0ToY1YRtVlfD/GCGpIZ/QHYyeH2Gzjvr0ZJI62/50DIzT8XRgQ6JvptVu" crossorigin="anonymous"></script>
+
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/jquery-bonsai@2.1.3/jquery.bonsai.css" integrity="sha384-8xTxM5sJRAUB0ckdBghB5am+aw+0kC5FfSUzMI+KI+UD8uBCNeSkdi8I1J4+Wjwu" crossorigin="anonymous">
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/jquery-bonsai@2.1.3/jquery.bonsai.js" integrity="sha384-gE5xOW4MVOjJL1A2SbxwvQw/qet6h8Vdv06j3JQGhBW4d1H5hXYB12WsrUBgU439" crossorigin="anonymous"></script>
+
+
+</head>
+
+<body>
+<div class="container-fluid bounded">
+  <div id="first-bar" class="row topbar inner-top top">
+    <header class="col">
+      <h1><a href="/">The Stacks project</a></h1>
+    </header>
+
+    <nav id="header">
+      <ul id="quicklinks">
+        <li><a href="/bibliography">bibliography</a>
+        <li><a href="https://www.math.columbia.edu/~dejong/wordpress/">blog</a>
+      </ul>
+
+      <form id="quicksearch" action="/search">
+        <span id="search-icon"><img src="/static/images/search.svg"></span>
+        <input type="search" name="query" size="16" placeholder="keywords or a tag" value="">
+      </form>
+    </nav>
+  </div>
+
+  <nav id="second-bar" class="row topbar sticky-top">
+    
+      <ul class="col-11 col-sm-11 col-md-11 col-lg-12 col-xl-12" id="crumbs">
+        <li><a href="/browse">Table of contents</a></li>
+        
+  
+  
+    <li>Part <a href="/tag/0ELV" data-tag="0ELV">3</a>: Topics in Scheme Theory
+    
+  
+    <li>Chapter <a href="/tag/0FK4" data-tag="0FK4">50</a>: de Rham Cohomology
+    
+  
+    <li class="active">Section <a href="/tag/0FMU" data-tag="0FMU">50.15</a>: Log poles along a divisor
+    <span id="citation">(<a href="/tag/0FMU/cite">cite</a>)</span>
+  
+
+
+      </ul>
+    
+
+    
+      <div class="col-1 col-sm-1 col-md-1" id="burger">
+        <input type="checkbox" id="burger-input"></input>
+
+        <label id="burger-icon" for="burger-input">
+          <span id="top-bun"></span>
+          <span id="meat"></span>
+          <span id="bottom-bun"></span>
+        </label>
+
+        <div id="burger-content">
+          
+  
+  <div class="interaction">
+    
+  
+
+  <ul class="neighbours">
+  
+    <li class="left"><a href="/tag/0FMS">previous section</a>
+  
+  
+    <li class="right"><a href="/tag/0FUB">next section</a>
+  
+  </ul>
+  <br style="clear:both">
+
+  </div>
+
+  
+
+
+        </div>
+      </div>
+    
+
+    
+  </nav>
+
+  <div class="row" id="content">
+    <section id="main" class="col-xs-12 col-sm-12 col-md-12 col-lg-8 col-xl-8">
+      
+<div class="html" id="tag">
+  
+
+  
+
+  
+
+  <h2 id="derham-section-divisor" class="tex-section"><span data-tag="0FMU">50.15</span> Log poles along a divisor</h2>
+
+<p>
+Let $X \to S$ be a morphism of schemes. Let $Y \subset X$ be an effective Cartier divisor. If $X$ étale locally along $Y$ looks like $Y \times \mathbf{A}^1$, then there is a canonical short exact sequence of complexes 
+</p>
+<div class="equation">
+  \[  0 \to \Omega ^\bullet _{X/S} \to \Omega ^\bullet _{X/S}(\log Y) \to \Omega ^\bullet _{Y/S}[-1] \to 0  \]
+</div>
+<p>
+ having many good properties we will discuss in this section. There is a variant of this construction where one starts with a normal crossings divisor (Étale Morphisms, Definition <a href="/tag/0BI9" data-tag="0BI9">41.21.1</a>) which we will discuss elsewhere (insert future reference here). 
+</p>
+<p>
+<article class="env-definition" id="0FMV">
+  <p><a class="environment-identifier" href="/tag/0FMV">Definition <span data-tag="0FMV">50.15.1</span>.</a> Let $X \to S$ be a morphism of schemes. Let $Y \subset X$ be an effective Cartier divisor. We say the <em>de Rham complex of log poles is defined for $Y \subset X$ over $S$</em> if for all $y \in Y$ and local equation $f \in \mathcal{O}_{X, y}$ of $Y$ we have </p>
+  <p><ol>
+  <li><p>
+$\mathcal{O}_{X, y} \to \Omega _{X/S, y}$, $g \mapsto g \text{d}f$ is a split injection, and 
+</p>
+</li><li><p>
+$\Omega ^ p_{X/S, y}$ is $f$-torsion free for all $p$. 
+</p>
+</li>
+</ol></p>
+</article> 
+</p>
+<p>
+An easy local calculation shows that it suffices for every $y \in Y$ to find one local equation $f$ for which conditions (1) and (2) hold. 
+</p>
+<p>
+<article class="env-lemma" id="0FMW">
+  <p><a class="environment-identifier" href="/tag/0FMW">Lemma <span data-tag="0FMW">50.15.2</span>.</a> Let $X \to S$ be a morphism of schemes. Let $Y \subset X$ be an effective Cartier divisor. Assume the de Rham complex of log poles is defined for $Y \subset X$ over $S$. There is a canonical short exact sequence of complexes </p>
+  <div class="equation">
+  \[  0 \to \Omega ^\bullet _{X/S} \to \Omega ^\bullet _{X/S}(\log Y) \to \Omega ^\bullet _{Y/S}[-1] \to 0  \]
+</div>
+</article> 
+</p>
+<article class="env-proof">
+    <p>
+      <strong>Proof.</strong>
+      Our assumption is that for every $y \in Y$ and local equation $f \in \mathcal{O}_{X, y}$ of $Y$ we have 
+    <p>
+      <div class="equation">
+  \[  \Omega _{X/S, y} = \mathcal{O}_{X, y}\text{d}f \oplus M \quad \text{and}\quad \Omega ^ p_{X/S, y} = \wedge ^{p - 1}(M)\text{d}f \oplus \wedge ^ p(M)  \]
+</div>
+    <p>
+       for some module $M$ with $f$-torsion free exterior powers $\wedge ^ p(M)$. It follows that 
+    <p>
+      <div class="equation">
+  \[  \Omega ^ p_{Y/S, y} = \wedge ^ p(M/fM) = \wedge ^ p(M)/f\wedge ^ p(M)  \]
+</div>
+    <p>
+       Below we will tacitly use these facts. In particular the sheaves $\Omega ^ p_{X/S}$ have no nonzero local sections supported on $Y$ and we have a canonical inclusion 
+    <p>
+      <div class="equation">
+  \[  \Omega ^ p_{X/S} \subset \Omega ^ p_{X/S}(Y)  \]
+</div>
+    <p>
+       see More on Flatness, Section <a href="/tag/0F8L" data-tag="0F8L">38.42</a>. Let $U = \mathop{\mathrm{Spec}}(A)$ be an affine open subscheme such that $Y \cap U = V(f)$ for some nonzerodivisor $f \in A$. Let us consider the $\mathcal{O}_ U$-submodule of $\Omega ^ p_{X/S}(Y)|_ U$ generated by $\Omega ^ p_{X/S}|_ U$ and $\text{d}\log (f) \wedge \Omega ^{p - 1}_{X/S}$ where $\text{d}\log (f) = f^{-1}\text{d}(f)$. This is independent of the choice of $f$ as another generator of the ideal of $Y$ on $U$ is equal to $uf$ for a unit $u \in A$ and we get 
+    <p>
+      <div class="equation">
+  \[  \text{d}\log (uf) - \text{d}\log (f) = \text{d}\log (u) = u^{-1}\text{d}u  \]
+</div>
+    <p>
+       which is a section of $\Omega _{X/S}$ over $U$. These local sheaves glue to give a quasi-coherent submodule 
+    <p>
+      <div class="equation">
+  \[  \Omega ^ p_{X/S} \subset \Omega ^ p_{X/S}(\log Y) \subset \Omega ^ p_{X/S}(Y)  \]
+</div>
+    <p>
+       Let us agree to think of $\Omega ^ p_{Y/S}$ as a quasi-coherent $\mathcal{O}_ X$-module. There is a unique surjective $\mathcal{O}_ X$-linear map 
+    <p>
+      <div class="equation">
+  \[  \text{Res} : \Omega ^ p_{X/S}(\log Y) \to \Omega ^{p - 1}_{Y/S}  \]
+</div>
+    <p>
+       defined by the rule 
+    <p>
+      <div class="equation">
+  \[  \text{Res}(\eta ' + \text{d}\log (f) \wedge \eta ) = \eta |_{Y \cap U}  \]
+</div>
+    <p>
+       for all opens $U$ as above and all $\eta ' \in \Omega ^ p_{X/S}(U)$ and $\eta \in \Omega ^{p - 1}_{X/S}(U)$. If a form $\eta $ over $U$ restricts to zero on $Y \cap U$, then $\eta = \text{d}f \wedge \eta ' + f\eta ''$ for some forms $\eta '$ and $\eta ''$ over $U$. We conclude that we have a short exact sequence 
+    <p>
+      <div class="equation">
+  \[  0 \to \Omega ^ p_{X/S} \to \Omega ^ p_{X/S}(\log Y) \to \Omega ^{p - 1}_{Y/S} \to 0  \]
+</div>
+    <p>
+       for all $p$. We still have to define the differentials $\Omega ^ p_{X/S}(\log Y) \to \Omega ^{p + 1}_{X/S}(\log Y)$. On the subsheaf $\Omega ^ p_{X/S}$ we use the differential of the de Rham complex of $X$ over $S$. Finally, we define $\text{d}(\text{d}\log (f) \wedge \eta ) = -\text{d}\log (f) \wedge \text{d}\eta $. The sign is forced on us by the Leibniz rule (on $\Omega ^\bullet _{X/S}$) and it is compatible with the differential on $\Omega ^\bullet _{Y/S}[-1]$ which is after all $-\text{d}_{Y/S}$ by our sign convention in Homology, Definition <a href="/tag/011G" data-tag="011G">12.14.7</a>. In this way we obtain a short exact sequence of complexes as stated in the lemma. 
+      <span class="qed">$\square$</span>
+    </p>
+</article>
+<p>
+<article class="env-definition" id="0FUA">
+  <p><a class="environment-identifier" href="/tag/0FUA">Definition <span data-tag="0FUA">50.15.3</span>.</a> Let $X \to S$ be a morphism of schemes. Let $Y \subset X$ be an effective Cartier divisor. Assume the de Rham complex of log poles is defined for $Y \subset X$ over $S$. Then the complex </p>
+  <div class="equation">
+  \[  \Omega ^\bullet _{X/S}(\log Y)  \]
+</div>
+  <p> constructed in Lemma <a href="/tag/0FMW" data-tag="0FMW">50.15.2</a> is the <em>de Rham complex of log poles for $Y \subset X$ over $S$</em>. </p>
+</article> 
+</p>
+<p>
+This complex has many good properties. 
+</p>
+<p>
+<article class="env-lemma" id="0FUP">
+  <p><a class="environment-identifier" href="/tag/0FUP">Lemma <span data-tag="0FUP">50.15.4</span>.</a> Let $p : X \to S$ be a morphism of schemes. Let $Y \subset X$ be an effective Cartier divisor. Assume the de Rham complex of log poles is defined for $Y \subset X$ over $S$. </p>
+  <p><ol>
+  <li><p>
+The maps $\wedge : \Omega ^ p_{X/S} \times \Omega ^ q_{X/S} \to \Omega ^{p + q}_{X/S}$ extend uniquely to $\mathcal{O}_ X$-bilinear maps 
+</p>
+<div class="equation">
+  \[  \wedge : \Omega ^ p_{X/S}(\log Y) \times \Omega ^ q_{X/S}(\log Y) \to \Omega ^{p + q}_{X/S}(\log Y)  \]
+</div>
+<p>
+ satisfying the Leibniz rule $ \text{d}(\omega \wedge \eta ) = \text{d}(\omega ) \wedge \eta + (-1)^{\deg (\omega )} \omega \wedge \text{d}(\eta )$, 
+</p>
+</li><li><p>
+with multiplication as in (1) the map $\Omega ^\bullet _{X/S} \to \Omega ^\bullet _{X/S}(\log (Y)$ is a homomorphism of differential graded $\mathcal{O}_ S$-algebras, 
+</p>
+</li><li><p>
+via the maps in (1) we have $\Omega ^ p_{X/S}(\log Y) = \wedge ^ p(\Omega ^1_{X/S}(\log Y))$, and 
+</p>
+</li><li><p>
+the map $\text{Res} : \Omega ^\bullet _{X/S}(\log Y) \to \Omega ^\bullet _{Y/S}[-1]$ satisfies 
+</p>
+<div class="equation">
+  \[  \text{Res}(\omega \wedge \eta ) = \text{Res}(\omega ) \wedge \eta |_ Y  \]
+</div>
+<p>
+ for $\omega $ a local section of $\Omega ^ p_{X/S}(\log Y)$ and $\eta $ a local section of $\Omega ^ q_{X/S}$. 
+</p>
+</li>
+</ol></p>
+</article> 
+</p>
+<article class="env-proof">
+    <p>
+      <strong>Proof.</strong>
+      This follows by direct calculation from the local construction of the complex in the proof of Lemma <a href="/tag/0FMW" data-tag="0FMW">50.15.2</a>. Details omitted. 
+      <span class="qed">$\square$</span>
+    </p>
+</article>
+<p>
+Consider a commutative diagram 
+</p>
+<div class="equation">
+  \[  \xymatrix{ X' \ar[r]_ f \ar[d] &  X \ar[d] \\  S' \ar[r] &  S }  \]
+</div>
+<p>
+ of schemes. Let $Y \subset X$ be an effective Cartier divisor whose pullback $Y' = f^*Y$ is defined (Divisors, Definition <a href="/tag/01WV" data-tag="01WV">31.14.12</a>). Assume the de Rham complex of log poles is defined for $Y \subset X$ over $S$ and the de Rham complex of log poles is defined for $Y' \subset X'$ over $S'$. In this case we obtain a map of short exact sequences of complexes 
+</p>
+<div class="equation">
+  \[  \xymatrix{ 0 \ar[r] &  f^{-1}\Omega ^\bullet _{X/S} \ar[r] \ar[d] &  f^{-1}\Omega ^\bullet _{X/S}(\log Y) \ar[r] \ar[d] &  f^{-1}\Omega ^\bullet _{Y/S}[-1] \ar[r] \ar[d] &  0 \\  0 \ar[r] &  \Omega ^\bullet _{X'/S'} \ar[r] &  \Omega ^\bullet _{X'/S'}(\log Y') \ar[r] &  \Omega ^\bullet _{Y'/S'}[-1] \ar[r] &  0 }  \]
+</div>
+<p>
+ Linearizing, for every $p$ we obtain a linear map $f^*\Omega ^ p_{X/S}(\log Y) \to \Omega ^ p_{X'/S'}(\log Y')$. 
+</p>
+<p>
+<article class="env-lemma" id="0FUQ">
+  <p><a class="environment-identifier" href="/tag/0FUQ">Lemma <span data-tag="0FUQ">50.15.5</span>.</a> Let $f : X \to S$ be a morphism of schemes. Let $Y \subset X$ be an effective Cartier divisor. Assume the de Rham complex of log poles is defined for $Y \subset X$ over $S$. Denote </p>
+  <div class="equation">
+  \[  \delta : \Omega ^\bullet _{Y/S} \to \Omega ^\bullet _{X/S}[2]  \]
+</div>
+  <p> in $D(X, f^{-1}\mathcal{O}_ S)$ the “boundary” map coming from the short exact sequence in Lemma <a href="/tag/0FMW" data-tag="0FMW">50.15.2</a>. Denote </p>
+  <div class="equation">
+  \[  \xi ' : \Omega ^\bullet _{X/S} \to \Omega ^\bullet _{X/S}[2]  \]
+</div>
+  <p> in $D(X, f^{-1}\mathcal{O}_ S)$ the map of Remark <a href="/tag/0FU7" data-tag="0FU7">50.4.3</a> corresponding to $\xi = c_1^{dR}(\mathcal{O}_ X(-Y))$. Denote </p>
+  <div class="equation">
+  \[  \zeta ' : \Omega ^\bullet _{Y/S} \to \Omega ^\bullet _{Y/S}[2]  \]
+</div>
+  <p> in $D(Y, f|_ Y^{-1}\mathcal{O}_ S)$ the map of Remark <a href="/tag/0FU7" data-tag="0FU7">50.4.3</a> corresponding to $\zeta = c_1^{dR}(\mathcal{O}_ X(-Y)|_ Y)$. Then the diagram </p>
+  <div class="equation">
+  \[  \xymatrix{ \Omega ^\bullet _{X/S} \ar[d]_{\xi '} \ar[r] &  \Omega ^\bullet _{Y/S} \ar[d]^{\zeta '} \ar[ld]_\delta \\  \Omega ^\bullet _{X/S}[2] \ar[r] &  \Omega ^\bullet _{Y/S}[2] }  \]
+</div>
+  <p> is commutative in $D(X, f^{-1}\mathcal{O}_ S)$. </p>
+</article> 
+</p>
+<article class="env-proof">
+    <p>
+      <strong>Proof.</strong>
+      More precisely, we define $\delta $ as the boundary map corresponding to the shifted short exact sequence 
+    <p>
+      <div class="equation">
+  \[  0 \to \Omega ^\bullet _{X/S}[1] \to \Omega ^\bullet _{X/S}(\log Y)[1] \to \Omega ^\bullet _{Y/S} \to 0  \]
+</div>
+    <p>
+       It suffices to prove each triangle commutes. Set $\mathcal{L} = \mathcal{O}_ X(-Y)$. Denote $\pi : L \to X$ the line bundle with $\pi _*\mathcal{O}_ L = \bigoplus _{n \geq 0} \mathcal{L}^{\otimes n}$. 
+    <p>
+      Commutativity of the upper left triangle. By Lemma <a href="/tag/0FUG" data-tag="0FUG">50.10.3</a> the map $\xi '$ is the boundary map of the triangle given in Lemma <a href="/tag/0FUF" data-tag="0FUF">50.10.2</a>. By functoriality it suffices to prove there exists a morphism of short exact sequences 
+    <p>
+      <div class="equation">
+  \[  \xymatrix{ 0 \ar[r] &  \Omega ^\bullet _{X/S}[1] \ar[r] \ar[d] &  \Omega ^\bullet _{L^\star /S, 0}[1] \ar[r] \ar[d] &  \Omega ^\bullet _{X/S} \ar[r] \ar[d] &  0 \\  0 \ar[r] &  \Omega ^\bullet _{X/S}[1] \ar[r] &  \Omega ^\bullet _{X/S}(\log Y)[1] \ar[r] &  \Omega ^\bullet _{Y/S} \ar[r] &  0 }  \]
+</div>
+    <p>
+       where the left and right vertical arrows are the obvious ones. We can define the middle vertical arrow by the rule 
+    <p>
+      <div class="equation">
+  \[  \omega ' + \text{d}\log (s) \wedge \omega \longmapsto \omega ' + \text{d}\log (f) \wedge \omega  \]
+</div>
+    <p>
+       where $\omega ', \omega $ are local sections of $\Omega ^\bullet _{X/S}$ and where $s$ is a local generator of $\mathcal{L}$ and $f \in \mathcal{O}_ X(-Y)$ is the corresponding section of the ideal sheaf of $Y$ in $X$. Since the constructions of the maps in Lemmas <a href="/tag/0FUF" data-tag="0FUF">50.10.2</a> and <a href="/tag/0FMW" data-tag="0FMW">50.15.2</a> match exactly, this works. 
+    <p>
+      Commutativity of the lower right triangle. Denote $\overline{L}$ the restriction of $L$ to $Y$. By Lemma <a href="/tag/0FUG" data-tag="0FUG">50.10.3</a> the map $\zeta '$ is the boundary map of the triangle given in Lemma <a href="/tag/0FUF" data-tag="0FUF">50.10.2</a> using the line bundle $\overline{L}$ on $Y$. By functoriality it suffices to prove there exists a morphism of short exact sequences 
+    <p>
+      <div class="equation">
+  \[  \xymatrix{ 0 \ar[r] &  \Omega ^\bullet _{X/S}[1] \ar[r] \ar[d] &  \Omega ^\bullet _{X/S}(\log Y)[1] \ar[r] \ar[d] &  \Omega ^\bullet _{Y/S} \ar[r] \ar[d] &  0 \\  0 \ar[r] &  \Omega ^\bullet _{Y/S}[1] \ar[r] &  \Omega ^\bullet _{\overline{L}^\star /S, 0}[1] \ar[r] &  \Omega ^\bullet _{Y/S} \ar[r] &  0 \\  }  \]
+</div>
+    <p>
+       where the left and right vertical arrows are the obvious ones. We can define the middle vertical arrow by the rule 
+    <p>
+      <div class="equation">
+  \[  \omega ' + \text{d}\log (f) \wedge \omega \longmapsto \omega '|_ Y + \text{d}\log (\overline{s}) \wedge \omega |_ Y  \]
+</div>
+    <p>
+       where $\omega ', \omega $ are local sections of $\Omega ^\bullet _{X/S}$ and where $f$ is a local generator of $\mathcal{O}_ X(-Y)$ viewed as a function on $X$ and where $\overline{s}$ is $f|_ Y$ viewed as a section of $\mathcal{L}|_ Y = \mathcal{O}_ X(-Y)|_ Y$. Since the constructions of the maps in Lemmas <a href="/tag/0FUF" data-tag="0FUF">50.10.2</a> and <a href="/tag/0FMW" data-tag="0FMW">50.15.2</a> match exactly, this works. 
+      <span class="qed">$\square$</span>
+    </p>
+</article>
+<p>
+<article class="env-lemma" id="0FMX">
+  <p><a class="environment-identifier" href="/tag/0FMX">Lemma <span data-tag="0FMX">50.15.6</span>.</a> Let $X \to S$ be a morphism of schemes. Let $Y \subset X$ be an effective Cartier divisor. Assume the de Rham complex of log poles is defined for $Y \subset X$ over $S$. Let $b \in H^ m_{dR}(X/S)$ be a de Rham cohomology class whose restriction to $Y$ is zero. Then $c_1^{dR}(\mathcal{O}_ X(Y)) \cup b = 0$ in $H^{m + 2}_{dR}(X/S)$. </p>
+</article> 
+</p>
+<article class="env-proof">
+    <p>
+      <strong>Proof.</strong>
+      This follows immediately from Lemma <a href="/tag/0FUQ" data-tag="0FUQ">50.15.5</a>. Namely, we have 
+    <p>
+      <div class="equation">
+  \[  c_1^{dR}(\mathcal{O}_ X(Y)) \cup b = -c_1^{dR}(\mathcal{O}_ X(-Y)) \cup b = -\xi '(b) = -\delta (b|_ Y) = 0  \]
+</div>
+    <p>
+       as desired. For the second equality, see Remark <a href="/tag/0FU7" data-tag="0FU7">50.4.3</a>. 
+      <span class="qed">$\square$</span>
+    </p>
+</article>
+<p>
+<article class="env-lemma" id="0FMY">
+  <p><a class="environment-identifier" href="/tag/0FMY">Lemma <span data-tag="0FMY">50.15.7</span>.</a> Let $X \to T \to S$ be morphisms of schemes. Let $Y \subset X$ be an effective Cartier divisor. If both $X \to T$ and $Y \to T$ are smooth, then the de Rham complex of log poles is defined for $Y \subset X$ over $S$. </p>
+</article> 
+</p>
+<article class="env-proof">
+    <p>
+      <strong>Proof.</strong>
+      Let $y \in Y$ be a point. By More on Morphisms, Lemma <a href="/tag/0FUE" data-tag="0FUE">37.17.1</a> there exists an integer $0 \geq m$ and a commutative diagram 
+    <p>
+      <div class="equation">
+  \[  \xymatrix{ Y \ar[d] &  V \ar[l] \ar[d] \ar[r] &  \mathbf{A}^ m_ T \ar[d]^{(a_1, \ldots , a_ m) \mapsto (a_1, \ldots , a_ m, 0)} \\  X &  U \ar[l] \ar[r]^-\pi &  \mathbf{A}^{m + 1}_ T }  \]
+</div>
+    <p>
+       where $U \subset X$ is open, $V = Y \cap U$, $\pi $ is étale, $V = \pi ^{-1}(\mathbf{A}^ m_ T)$, and $y \in V$. Denote $z \in \mathbf{A}^ m_ T$ the image of $y$. Then we have 
+    <p>
+      <div class="equation">
+  \[  \Omega ^ p_{X/S, y} = \Omega ^ p_{\mathbf{A}^{m + 1}_ T/S, z} \otimes _{\mathcal{O}_{\mathbf{A}^{m + 1}_ T, z}} \mathcal{O}_{X, x}  \]
+</div>
+    <p>
+       by Lemma <a href="/tag/0FLV" data-tag="0FLV">50.2.2</a>. Denote $x_1, \ldots , x_{m + 1}$ the coordinate functions on $\mathbf{A}^{m + 1}_ T$. Since the conditions (1) and (2) in Definition <a href="/tag/0FMV" data-tag="0FMV">50.15.1</a> do not depend on the choice of the local coordinate, it suffices to check the conditions (1) and (2) when $f$ is the image of $x_{m + 1}$ by the flat local ring homomorphism $\mathcal{O}_{\mathbf{A}^{m + 1}_ T, z} \to \mathcal{O}_{X, x}$. In this way we see that it suffices to check conditions (1) and (2) for $\mathbf{A}^ m_ T \subset \mathbf{A}^{m + 1}_ T$ and the point $z$. To prove this case we may assume $S = \mathop{\mathrm{Spec}}(A)$ and $T = \mathop{\mathrm{Spec}}(B)$ are affine. Let $A \to B$ be the ring map corresponding to the morphism $T \to S$ and set $P = B[x_1, \ldots , x_{m + 1}]$ so that $\mathbf{A}^{m + 1}_ T = \mathop{\mathrm{Spec}}(P)$. We have 
+    <p>
+      <div class="equation">
+  \[  \Omega _{P/A} = \Omega _{B/A} \otimes _ B P \oplus \bigoplus \nolimits _{j = 1, \ldots , m} P \text{d}x_ j \oplus P \text{d}x_{m + 1}  \]
+</div>
+    <p>
+       Hence the map $P \to \Omega _{P/A}$, $g \mapsto g \text{d}x_{m + 1}$ is a split injection and $x_{m + 1}$ is a nonzerodivisor on $\Omega ^ p_{P/A}$ for all $p \geq 0$. Localizing at the prime ideal corresponding to $z$ finishes the proof. 
+      <span class="qed">$\square$</span>
+    </p>
+</article>
+<p>
+<article class="env-remark" id="0FMZ">
+  <p><a class="environment-identifier" href="/tag/0FMZ">Remark <span data-tag="0FMZ">50.15.8</span>.</a> Let $S$ be a locally Noetherian scheme. Let $X$ be locally of finite type over $S$. Let $Y \subset X$ be an effective Cartier divisor. If the map </p>
+  <div class="equation">
+  \[  \mathcal{O}_{X, y}^\wedge \longrightarrow \mathcal{O}_{Y, y}^\wedge  \]
+</div>
+  <p> has a section for all $y \in Y$, then the de Rham complex of log poles is defined for $Y \subset X$ over $S$. If we ever need this result we will formulate a precise statement and add a proof here. </p>
+</article> 
+</p>
+<p>
+<article class="env-remark" id="0FN0">
+  <p><a class="environment-identifier" href="/tag/0FN0">Remark <span data-tag="0FN0">50.15.9</span>.</a> Let $S$ be a locally Noetherian scheme. Let $X$ be locally of finite type over $S$. Let $Y \subset X$ be an effective Cartier divisor. If for every $y \in Y$ we can find a diagram of schemes over $S$ </p>
+  <div class="equation">
+  \[  X \xleftarrow {\varphi } U \xrightarrow {\psi } V  \]
+</div>
+  <p> with $\varphi $ étale and $\psi |_{\varphi ^{-1}(Y)} : \varphi ^{-1}(Y) \to V$ étale, then the de Rham complex of log poles is defined for $Y \subset X$ over $S$. A special case is when the pair $(X, Y)$ étale locally looks like $(V \times \mathbf{A}^1, V \times \{ 0\} )$. If we ever need this result we will formulate a precise statement and add a proof here. </p>
+</article> 
+</p>
+
+
+  <script type="text/javascript">
+$(document).ready(function() {
+  // move extras from parent element to after environment name and number
+  $("article a[data-toggle]").each(function(index, element) {
+    $(element).insertAfter(($(element).parent().find("a.environment-identifier")));
+  });
+
+  $('article a[data-toggle="popover"]').popover()
+
+  // render mathematics in popovers
+  $("[data-toggle=popover]").on('shown.bs.popover', function () {
+    MathJax.Hub.Queue(["Typeset", MathJax.Hub, $("div.popover-body").html()]);
+  });
+});
+  </script>
+
+  
+
+  
+</div>
+
+
+<hr>
+
+<section id="comments">
+  <h2>Comments (2)</h2>
+
+  
+    <a id="comment-9868" class="header-offset"></a>
+    <article>
+      <header>
+        <p><a href="/tag/0FMU#comment-9868">Comment #9868</a>
+        by
+        <cite>Fiasco</cite>
+        on <time datetime="2024-11-20 06:46:53.674848">November 20, 2024 at 06:46 </time>
+      </header>
+
+      <blockquote><p>In Lemma 50.15.2, it maybe worth mentioning that there's another short exact sequence of complexes: 0 <script type="math/tex">\rightarrow</script>
+<script type="math/tex">\Omega_{Y/S}^{\bullet}</script>
+<script type="math/tex">\rightarrow</script>
+<script type="math/tex">i^{*}\Omega_{X/S}^{\bullet}(log\ Y)</script>
+<script type="math/tex">\xrightarrow{Res}</script>
+<script type="math/tex">\Omega_{Y/S}^{\bullet}[-1]</script>
+<script type="math/tex">\rightarrow</script> 0, where <script type="math/tex">i: Y\rightarrow X</script> is the closed immersion.
+Moreover, it's locally split (locally Res has a section <script type="math/tex">\omega\mapsto\omega dlogf</script>) which is dependent of choices of local equation <script type="math/tex">f</script> of <script type="math/tex">Y</script>.</p></blockquote>
+    </article>
+  
+    <a id="comment-10411" class="header-offset"></a>
+    <article>
+      <header>
+        <p><a href="/tag/0FMU#comment-10411">Comment #10411</a>
+        by
+        <cite><a href="https://stacks.math.columbia.edu/" rel="author">Stacks Project</a></cite>
+        
+        on <time datetime="2025-07-10 11:25:00.800230">July 10, 2025 at 11:25 </time>
+      </header>
+
+      <blockquote><p>Going to leave as is.</p></blockquote>
+    </article>
+  
+
+  
+</section>
+
+<hr>
+
+<section id="post-comment">
+  <h2>Post a comment</h2>
+  <p>Your email address will not be published. Required fields are marked.
+  <p>In your comment you can use <a href="/markdown">Markdown</a> and LaTeX style mathematics (enclose it like <code>$\pi$</code>). A preview option is available if you wish to see how it works out (just click on the eye in the toolbar).
+  <noscript><p>Unfortunately JavaScript is disabled in your browser, so the comment preview function will not work.</p></noscript>
+
+  <p>All contributions are licensed under the <a href="https://github.com/stacks/stacks-project/blob/master/COPYING">GNU Free Documentation License</a>.
+
+  <form name="comment" id="comment-form" action="/post-comment" method="post">
+    <label for="name">Name<sup>*</sup>:</label>
+    <input type="text" name="name" id="name" required><br>
+
+    <label for="mail">E-mail<sup>*</sup>:</label>
+    <input type="email" name="mail" id="mail" required><br>
+
+    <label for="site">Site:</label>
+    <input type="url" name="site" id="site"><br>
+
+    <label>Comment:</label>
+    <textarea name="comment" id="comment-textarea" cols="80" rows="10" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"></textarea>
+    <script type="text/javascript">
+var easymde = new EasyMDE({
+  autosave: {
+    enabled: true,
+    delay: 1000,
+    uniqueId: "comment-0FMU",
+  },
+  element: $("#comment")[0],
+  forceSync: true,
+  insertTexts: { link: ["\\ref{", "}"], table: ["$", "$"], image: ["\\begin{equation}\n", "\n\\end{equation}\n"] }, // we hack into these insertion methods, I couldn't figure out how to write your own...
+  placeholder: "You can type your comment here, use the preview option to see what it will look like. If your comment is on a lemma, please leave your comment on the page of the lemma. Same with remarks, propositions, theorems, etc.",
+  previewRender: function(plaintext, preview) {
+    // deal with references
+    plaintext = plaintext.replace(/\\ref\{([0-9A-Z]{4})\}/g, "<span class=\"tag\">[$1](/tag/$1)</span>");
+    // deal with \[\] getting replaced to []
+    plaintext = plaintext.replace(/\\\[/g, "\\begin{equation}");
+    plaintext = plaintext.replace(/\\\]/g, "\\end{equation}");
+
+    output = this.parent.markdown(plaintext);
+
+    setTimeout(function() {
+      preview.innerHTML = output;
+      MathJax.Hub.Queue(["Typeset", MathJax.Hub]);
+    }, 0);
+
+    return "";
+  },
+  spellChecker: false,
+  status: false,
+  toolbar: [
+    "link", {name: "inline", action: EasyMDE.drawTable, className: "fa fa-usd"}, {name: "block", action: EasyMDE.drawImage, className: "fa fa-square"}, "|",
+    "bold", "italic", "|",
+    "ordered-list", "unordered-list", "|",
+    "preview"
+  ],
+});
+
+// make sure to show tags, not numbers
+var tagToggleHappened = false; // only do this once to not annoy the user too much
+easymde.codemirror.on("change", function() {
+  // if data-tag elements do not have tag attribute we need to make tags visible
+  if (!$("*[data-tag]").hasClass("tag") && !tagToggleHappened)
+    $("section#meta input.toggle").bootstrapToggle("toggle");
+  tagToggleHappened = true;
+});
+
+// prevent form submit when the captcha isn't correct
+// it's a bit silly to use HTML5 validation for this, as bots can figure that out
+// also save the author information to localStorage
+easymde.element.form.addEventListener("submit", function(event) {
+  if ($("#check").val() != $("#hidden-tag").val()) {
+    // explain captcha
+    $("#captcha-message").toggle();
+
+    // stop submit
+    event.preventDefault();
+    return false;
+  }
+
+  // save author information
+  localStorage.setItem("name", $("input#name").val());
+  localStorage.setItem("mail", $("input#mail").val());
+  localStorage.setItem("site", $("input#site").val());
+});
+    </script>
+
+    <p>In order to prevent bots from posting comments, we would like you to prove that you are human. You can do this by <em>filling in the name of the current tag</em> in the following input field. As a reminder, this is tag <span class="tag">0FMU</span>. Beware of the difference between the letter&nbsp;'<span class="tag">O</span>' and the digit&nbsp;'<span class="tag">0</span>'.</p>
+    <!--<p>This <abbr title="Completely Automated Public Turing test to tell Computers and Humans Apart">captcha</abbr> seems more appropriate than the usual illegible gibberish, right?<br>-->
+    <label for="check">Tag:</label>
+    <input type="text" name="check" id="check" required autocomplete="off">
+    <button type="submit" class="btn btn-primary">Post comment</button>
+    <input type="hidden" name="tag" id="hidden-tag" value="0FMU"><br>
+
+    <p id="captcha-message" style="display: none" class="alert alert-warning" role="alert">The tag you filled in for the captcha is wrong. You need to write <span class="tag">0FMU</span>, in case you are confused.</p>
+
+    <script type="text/javascript">
+// enter in captcha fields causes \ref to appear (?!)
+$("input#check").on("keypress", function(e) {
+  if (e.which == 13) {
+    // always stop the event
+    e.preventDefault();
+
+    // perform clientside check as for actual submit
+    if ($("#check").val() != $("#hidden-tag").val()) {
+      // explain captcha
+      $("#captcha-message").toggle();
+    }
+    else {
+      $("form#comment-form").submit();
+    }
+  }
+});
+    </script>
+  </form>
+</section>
+
+
+
+
+    </section>
+	  <div class="col-lg-4 col-xl-4">
+	    <section id="meta" class="row topbar sticky-top">
+        
+  
+  <div class="interaction">
+    
+  
+
+  <ul class="neighbours">
+  
+    <li class="left"><a href="/tag/0FMS">previous section</a>
+  
+  
+    <li class="right"><a href="/tag/0FUB">next section</a>
+  
+  </ul>
+  <br style="clear:both">
+
+  </div>
+
+  <hr>
+  
+    <a href="https://stacks.math.columbia.edu/download/derham.pdf#nameddest=0FMU">View Section <span data-tag="0FMU">50.15</span> as pdf</a>
+  
+
+  
+
+
+      </section>
+    </div>
+  </div>
+  <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.bundle.min.js" integrity="sha384-3ziFidFTgxJXHMDttyPJKDuTlmxJlwbSkojudK/CkRqKDOmeSbN6KLrGdrBQnT2n" crossorigin="anonymous"></script>
+</div>
+</body>
+</html>

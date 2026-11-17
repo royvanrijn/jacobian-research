@@ -25,6 +25,35 @@ def bibliography_items(root, paths):
     return items
 
 
+
+def normalized_url(value):
+    value = value.strip().rstrip(".,;:")
+    while value.endswith(")") and value.count(")") > value.count("("):
+        value = value[:-1]
+    return value.rstrip("/").replace("http://", "https://", 1)
+
+
+def markdown_external_links(graph):
+    """Inspect current authored prose, preserving balanced DOI parentheses."""
+    records = graph.data.get("graph", {}).get("coverage", {}).get("documents", [])
+    found = set()
+    for record in records:
+        if Path(record["path"]).suffix != ".md" or record["role"] in {"documentation", "imported-source", "reference"}:
+            continue
+        path = graph._path(record["path"])
+        if not path.is_file():
+            continue
+        text = path.read_text()
+        fence = re.escape(chr(96) * 3)
+        text = re.sub(r"(?ms)^\s*" + fence + r".*?^\s*" + fence + r"[^\n]*", "", text)
+        for value in re.findall(r"https?://[^\s<>\[\]{}]+", text):
+            url = normalized_url(value.strip(chr(96) + "*"))
+            if "github.com/royvanrijn/" in url or "orcid.org/" in url:
+                continue
+            found.add((record["path"], url))
+    return found
+
+
 def reference_state(data, graph, paths=None):
     """Check identity, current retained pins and complete explicit bibitem coverage."""
     from dependency_coverage import inventory_paths
@@ -70,6 +99,21 @@ def reference_state(data, graph, paths=None):
     wanted = bibliography_items(graph.root, inventory_paths(graph.root, graph.repository) if paths is None else paths)
     for value, key in sorted(wanted - accounted):
         errors.append("unmapped bibliography item: " + value + " :: " + key)
+    known_urls = {normalized_url(url) for paper in papers for url in paper.get("urls", [])}
+    for value, url in sorted(markdown_external_links(graph)):
+        if url not in known_urls:
+            errors.append("unmapped external URL: " + value + " :: " + url)
+    retained = {graph._path(source["path"]) for paper in papers
+                for source in paper.get("local_sources", [])}
+    for node in graph.nodes.values():
+        if node.get("origin") != "external":
+            continue
+        for source in node.get("sources", []):
+            path = graph._path(source["path"])
+            if "/sources/" in source["path"] and path.suffix.lower() in {".pdf", ".tex", ".typ", ".html", ".txt"}:
+                if path not in retained:
+                    errors.append("external theorem primary/source file lacks cited-resource mapping: "
+                                  + node["id"] + " :: " + source["path"])
     return {"papers": papers, "errors": errors, "complete": not errors,
             "bibliography_items": len(wanted), "internal_citations": catalogue.get("internal_citations", [])}
 

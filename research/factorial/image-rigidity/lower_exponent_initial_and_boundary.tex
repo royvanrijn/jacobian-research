@@ -21,7 +21,7 @@ in the lower exponent, and large lower exponents are handled at every
 fixed gap. The bounds depend on $N$; they do not close the all-index
 problem or verify the remaining rectangle.
 
-The proofs retain the actual order-dependent Gamma shape. We also give
+The ordinary consecutive-moment assertion is proved through terminal five, uniformly in both exponents. The proofs retain the actual order-dependent Gamma shape. We also give
 a sharper coefficient criterion in a high-gap region, prove uniform
 consecutive moment separation through terminal four at every lower exponent and positive
 Gamma shape, and identify the polynomial condition selecting the
@@ -207,6 +207,73 @@ Apply the same argument to the reciprocal polynomial for the outer
 bound, giving \eqref{eq:universal-annuli}. The elementary estimate $e<4$ suffices here.
 \end{proof}
 
+\begin{lemma}\label{lem:monotone-centers}
+For every integer $j\ge2$, the ratio $G_j/G_{j-1}$ is strictly
+increasing in each of the positive real exponents $a,d$, when
+factorials are extended by $\Gamma$.
+\end{lemma}
+\begin{proof}
+Let $\psi$ be the logarithmic derivative of $\Gamma$ and set
+$h(u)=u\psi'(u+1)$.
+The series for $\psi'$ gives
+\[
+ h(u)=u\int_0^\infty e^{-ut}g(t)\,dt
+     =1-\int_0^\infty e^{-ut}[-g'(t)]\,dt,\qquad
+ g(t)=\frac{t}{e^t-1}.
+\]
+Here $g(0)=1$, $g'(t)<0$ for $t>0$, and the boundary terms
+in the integration by parts vanish. Indeed
+$g'(t)$ has the sign of $e^t(1-t)-1$, which decreases strictly
+from zero. Differentiating the convergent integral gives
+\[
+ h'(u)=\int_0^\infty t e^{-ut}[-g'(t)]\,dt>0.
+\]
+Now put
+\[
+ J_j(c)=\frac{\log\Gamma(jc+1)}j
+       -\frac{\log\Gamma((j-1)c+1)}{j-1}.
+\]
+Since $\psi'>0$ and $h$ is strictly increasing,
+\[
+ J_j'(c)=\psi(jc+1)-\psi((j-1)c+1)>0,\qquad
+ J_j''(c)=\frac{h(jc)-h((j-1)c)}c>0.
+\]
+Finally
+$\log(G_j/G_{j-1})=J_j(a+d)-J_j(a)$.
+Its derivative in $d$ is positive, and its derivative in $a$ is
+$J_j'(a+d)-J_j'(a)>0$, proving the assertion.
+\end{proof}
+
+\begin{theorem}\label{thm:rational-annulus-cutoff}
+Fix $j\ge2$ and positive rationals $C_{j-1},C_j$ satisfying
+\[
+ (1+1/C_\ell)^\ell<2\qquad(\ell=j-1,j).
+\]
+For an integer $d_0\ge1$, put
+$B_\ell=((d_0+1)\ell)!/\ell!$.
+If
+\[
+ B_j^{\,j-1}>
+ (C_{j-1}C_j)^{j(j-1)}B_{j-1}^{\,j},
+\]
+then $M_{j-1,a,d}$ and $M_{j,a,d}$ are coprime for every pair
+of integers $a\ge1,d\ge d_0$.
+\end{theorem}
+\begin{proof}
+In the endpoint normalization used in Lemma~\ref{lem:centers},
+the coefficient bound $b_{\ell,k}\le\binom\ell k$ excludes
+$|w|\le1/C_\ell$: the sum of nonconstant terms is less than one.
+The reciprocal argument excludes $|w|\ge C_\ell$.
+Thus all roots lie in
+\[
+ \frac1{C_\ell G_\ell}<|t|<\frac{C_\ell}{G_\ell}.
+\]
+The displayed factorial inequality is exactly
+$G_j/G_{j-1}>C_{j-1}C_j$ at $a=1,d=d_0$.
+Lemma~\ref{lem:monotone-centers} propagates it to every
+$a\ge1,d\ge d_0$. The two annuli are disjoint.
+\end{proof}
+
 \begin{theorem}\label{thm:gapbound}
 Fix $N\ge2$, let $e_N$ be the least integer with
 $2^{e_N}\ge4N(N-1)$, and put $D_N=2(N-1)e_N$.
@@ -303,6 +370,74 @@ The already established constant-plus-power and adjacent-exponent
 theorems concern the separate cases $a=0$ and $d=1$.
 No such theorem is needed for \eqref{eq:center-separation}--\eqref{eq:finite-rectangle}.
 
+\begin{theorem}\label{thm:ordinary-fifth}
+Every nonzero ordinary univariate binomial $X^a(A+BX^d)$,
+with integers $a\ge0,d\ge1$, has a nonzero factorial moment in the
+pair of orders four and five.
+Thus every consecutive pair of positive factorial moments with
+terminal order at most five contains a nonzero moment, for every
+ordinary univariate binomial.
+\end{theorem}
+\begin{proof}
+The cases $a=0$ and $d=1$ are the established
+\href{ALL_UNIVARIATE_TWO_TERM_SFC.tex}{constant-plus-power} and
+\href{UNIFORM_PADE_PARABOLA_SFC.tex}{adjacent-exponent} theorems.
+Assume $a\ge1,d\ge2$.
+
+For $d\ge17$ apply Theorem~\ref{thm:rational-annulus-cutoff}
+with $j=5$, $C_4=53/10$ and $C_5=27/4$.
+The exact inequalities required are
+\[
+ 63^4<2\cdot53^4,\qquad 31^5<2\cdot27^5,
+\]
+and
+\[
+ \left(\frac{90!}{5!}\right)^4 40^{20}>
+ 1431^{20}\left(\frac{72!}{4!}\right)^5 .
+\]
+They are direct integer comparisons, also checked in the replay.
+The monotonicity lemma supplies every $a\ge1$ and $d\ge17$.
+
+For each of the fifteen gaps $2\le d\le16$, define
+\[
+ F_{j,d}(a,t)=
+ \sum_{k=0}^j\binom jk(ja+1)_{dk}t^k,\qquad
+ R_d(a)=\operatorname{Res}_t(F_{4,d},F_{5,d}).
+\]
+These are the actual moments normalized by $(ja)!$.
+Every coefficient of $t^k$ has degree at most $dk$ in $a$.
+In every monomial in the $9$ by $9$ Sylvester determinant
+the sum of those coefficient indices is $4\cdot5=20$.
+Hence $\deg_aR_d\le20d$.
+
+The retained exact
+\href{lower_exponent_initial_and_boundary_terminal_five_certificates.json}{polynomial certificate}
+gives, for each $d=2,\ldots,16$, a positive integer $c_d$ and
+$20d+1$ positive integers $b_{d,k}$ such that
+\[
+ R_d(a)=c_d\sum_{k=0}^{20d}b_{d,k}a^k .
+\]
+The verifier establishes each entire polynomial identity independently
+of its symbolic resultant generator: at each integer
+$a=0,\ldots,20d$, it builds the literal integer Sylvester matrix
+and computes its determinant by fraction-free Bareiss elimination.
+Both sides have degree at most $20d$, so these $20d+1$ distinct
+evaluations prove equality in $\mathbb Q[a]$.
+There are exactly $2715$ determinant evaluations across all fifteen
+gaps. Positivity of every retained coefficient gives $R_d(a)>0$
+for all real $a\ge0$, hence in particular for every positive integer
+lower exponent. This proves consecutive coprimality at the remaining
+gaps. The zero-coefficient monomial cases are immediate.
+Corollary~\ref{cor:initial} supplies the lower terminal orders.
+\end{proof}
+
+This fifth-order theorem concerns ordinary factorials, $\beta=1$.
+The unrestricted positive-Gamma-shape conclusion in
+Corollary~\ref{cor:initial} remains through terminal four.
+The finite certificate covers all lower exponents at its fifteen
+fixed gaps; it is not a sample of lower exponents or an
+extrapolation to additional terminal orders.
+
 \begin{corollary}[Exact reformulation of the ordinary binomial objective]
 \label{cor:full-objective}
 The following statements are equivalent:
@@ -310,7 +445,7 @@ The following statements are equivalent:
 \item Every nonzero complex binomial $f(X)=X^a(A+BX^d)$,
 with integers $a\ge0,d\ge1$, has a nonzero ordinary factorial moment
 in every pair of consecutive positive orders.
-\item For every integer $N\ge5$ and every pair of integers
+\item For every integer $N\ge6$ and every pair of integers
 \[
  1\le a<A_N,\qquad 2\le d<D_N,
 \]
@@ -334,12 +469,12 @@ nonconstant rational gcd. This proves that the first statement implies
 the second.
 
 Conversely, terminal orders two, three and four are covered by
-Corollary~\ref{cor:initial} at $\beta=1$.
+Corollary~\ref{cor:initial} at $\beta=1$; terminal order five is covered by Theorem~\ref{thm:ordinary-fifth}.
 The case $a=0$ at every terminal order is the
 \href{ALL_UNIVARIATE_TWO_TERM_SFC.tex}{constant-plus-power theorem},
 and $d=1$ at every lower exponent is the
 \href{UNIFORM_PADE_PARABOLA_SFC.tex}{adjacent-exponent theorem}.
-For $N\ge5,a\ge1,d\ge2$, the second statement covers the rectangle
+For $N\ge6,a\ge1,d\ge2$, the second statement covers the rectangle
 and Corollary~\ref{cor:rectangle} covers its complement.
 This proves the first statement.
 \end{proof}
@@ -550,6 +685,76 @@ not a factorial or Gamma counterexample. It leaves open whether the
 particular coefficient identities and parameter coupling of
 $S_m^{(\beta,d)}$ force all the diagonal entries in
 Theorem~\ref{thm:diagonal-derivatives} to have consecutive coprimality.
+
+\section{A fifth-order obstruction for finite Gamma convolutions}
+Positive cumulants, including positive-measure representations of all
+normalized cumulants, do not by themselves extend the preceding
+fourth-order argument.
+\begin{theorem}\label{thm:gamma-convolution-obstruction}
+Let $U,V$ be independent Gamma variables in the shape--scale convention,
+with parameters
+\[
+ (\alpha_1,\theta_1)=(125/9,1/2),\qquad
+ (\alpha_2,\theta_2)=(1/3249,19/2),
+\]
+and set $X=U+V$ and $\Pi_n(z)=\mathbb E(z+X)^n$.
+Writing $w=z+132/19$, one has
+\[
+ \Pi_4(z)=(w^2-w+19)(w^2+w+3),\qquad
+ \Pi_5(z)=(w+2)(w^2-w+19)^2.
+\]
+Thus $\Pi_4,\Pi_5$ have the common nonreal quadratic factor
+$w^2-w+19$, and $\Pi_5$ is not squarefree.
+Nevertheless all cumulants of $X$ are positive, and
+$\kappa_j(X)/(j-1)!$ is the $j$th moment of a positive two-atom measure.
+\end{theorem}
+\begin{proof}
+The moment generating function near zero is
+\[
+ \mathbb E e^{tX}
+  =(1-\theta_1t)^{-\alpha_1}(1-\theta_2t)^{-\alpha_2}.
+\]
+Hence, for every $j\ge1$,
+\[
+ \frac{\kappa_j(X)}{(j-1)!}
+ =\frac{125}{9}\left(\frac12\right)^j
+  +\frac1{3249}\left(\frac{19}{2}\right)^j>0,
+\]
+the moments of
+$(125/9)\delta_{1/2}+(1/3249)\delta_{19/2}$.
+The first five cumulants are
+\[
+ \kappa_1=132/19,\quad \kappa_2=7/2,\quad
+ \kappa_3=4,\quad \kappa_4=81/4,\quad \kappa_5=582.
+\]
+The fourth and fifth central moments are therefore $57$ and $722$.
+It follows that
+\[
+ \begin{split}
+ \Pi_4(z)&=w^4+21w^2+16w+57,\\
+ \Pi_5(z)&=w^5+35w^3+40w^2+285w+722,
+ \end{split}
+\]
+which factor as stated. The common quadratic has discriminant $-75$.
+Independently, the raw moments follow directly from the convolution:
+\[
+ \mathbb E X^j=\sum_{\ell=0}^j\binom j\ell
+       (\alpha_1)_\ell\theta_1^\ell
+       (\alpha_2)_{j-\ell}\theta_2^{j-\ell}.
+\]
+Substitution for $j\le5$ verifies the same two factorizations without
+assigning cumulants as input.
+\end{proof}
+
+The variable $X$ is a finite sum of positive-scale Gamma variables,
+hence is already in the generating class of generalized Gamma
+convolutions. No closure theorem or density property is needed for
+this example. In particular no hyperbolically completely monotone
+density is asserted.
+This is an obstruction to a generic Gamma-convolution simplicity
+principle. It is not a counterexample for $X=Y_\gamma^d$, for the
+ordinary factorial functional, or for the binomial objective.
+Consecutive separation at terminal five for arbitrary positive Gamma shapes, lower exponents and gaps remains open. The ordinary case is proved in Theorem~\ref{thm:ordinary-fifth}.
 
 \section{The boundary condition at infinity for the parameter recurrence}
 For terminal order $N\ge2$ define

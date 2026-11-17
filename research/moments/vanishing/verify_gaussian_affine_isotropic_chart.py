@@ -1,7 +1,10 @@
 """Exact identity checks and bounded controls for the affine isotropic chart.
 
 The written proof supplies completeness and unrestricted degree coverage.
-This checker supplies symbolic identity checks and explicitly bounded controls.
+This checker supplies symbolic identity checks, explicitly bounded controls,
+and a complete coefficient-elimination certificate for the stated resonant
+six-parameter quartic family. That certificate is distinct from a vanishing
+moment prefix: it forces a form whose all-order safety is proved by weight.
 Run from the repository root with .venv/bin/python and --output PATH to retain
 a receipt. No receipt is written unless that option is supplied.
 """
@@ -123,6 +126,505 @@ def relative_endpoint_controls():
     return {"g": "R^3+2R", "B": "R^2+1", "a": 1,
             "parameter_orders": [0, order], "relative_relations": ["D(R)", "D(R^2)", "D(R^3)"],
             "endpoint_relation": "L(D(1))=-H exp(phi(0))"}
+
+
+def resonant_quartic_certificate():
+    """Verify complete elimination for a fixed mixed quartic coefficient family.
+
+    P = alpha*Z^3 + beta*W^3 + gamma*Z^2*W*Y + delta*Z*W^2*Y
+        + epsilon*((ZW)^2-2) + eta*(Y^2-1).
+
+    Universal Wick identities force epsilon=eta=0 and all four products
+    between (alpha,gamma) and (beta,delta) to vanish. Over C this is exactly
+    strict one-sided support. The written weight argument then gives all
+    marked-period cutoffs; no finite prefix is treated as sufficient alone.
+    """
+    alpha, beta, gamma, delta, eps, eta = sp.symbols(
+        "alpha beta gamma delta epsilon eta")
+    inv_a, inv_d = sp.symbols("A D")
+    phase = (alpha*Z**3 + beta*W**3 + gamma*Z**2*W*Y + delta*Z*W**2*Y
+             + eps*(Z**2*W**2-2) + eta*(Y**2-1))
+    moments = {n: expectation(phase**n) for n in (2, 3, 4, 5)}
+    zero(moments[2]-2*(6*alpha*beta+6*gamma*delta+10*eps**2+eta**2))
+    zero(moments[3]-8*(81*eps*(alpha*beta+gamma*delta)
+                       + 9*eta*gamma*delta+74*eps**3+eta**3))
+
+    # This establishes invariant dependence before using a convenient section.
+    # Consequently alpha=gamma=1 below loses no coefficient-zero faces.
+    for n, value in moments.items():
+        for powers, coefficient in sp.Poly(
+                value, alpha, beta, gamma, delta, eps, eta).terms():
+            i, j, k, ell, _, _ = powers
+            assert i == j and k == ell, (n, powers, coefficient)
+
+    invariant_moments = {
+        n: sp.expand(value.subs({alpha: 1, beta: inv_a, gamma: 1, delta: inv_d}))
+        for n, value in moments.items()
+    }
+    f_coefficients = [24400, 2364, 6864, -652, 468, -63]
+    g_coefficients = [4196800, 537276, 1192320, -13760, 63780, -1215, -722]
+    f = sp.Poly.from_list(f_coefficients, gens=eps)
+    g = sp.Poly.from_list(g_coefficients, gens=eps)
+
+    # If eta is nonzero, scale P by 1/eta. Moments two and three then give
+    # these substitutions, and moments four and five give coprime eliminants.
+    a_eta_one = -inv_d-sp.Rational(5, 3)*eps**2-sp.Rational(1, 6)
+    d_eta_one = (122*eps**3+27*eps-2)/18
+    zero(invariant_moments[2].subs({eta: 1, inv_a: a_eta_one}))
+    zero(invariant_moments[3].subs(eta, 1).subs(inv_a, a_eta_one)
+         .subs(inv_d, d_eta_one))
+    zero(invariant_moments[4].subs(eta, 1).subs(inv_a, a_eta_one)
+         .subs(inv_d, d_eta_one)+4*f.as_expr())
+    zero(invariant_moments[5].subs(eta, 1).subs(inv_a, a_eta_one)
+         .subs(inv_d, d_eta_one)+sp.Rational(16, 3)*g.as_expr())
+
+    # Construct the Sylvester matrix explicitly and evaluate its determinant
+    # over F_7 by independent modular row elimination. A nonzero reduction
+    # certifies a nonzero integer resultant, hence no common complex root.
+    prime = 7
+    assert sp.Poly(f.as_expr(), eps, modulus=prime).degree() == 5
+    assert sp.Poly(g.as_expr(), eps, modulus=prime).degree() == 6
+    sylvester = []
+    for shift in range(6):
+        sylvester.append([0]*shift+f_coefficients+[0]*(5-shift))
+    for shift in range(5):
+        sylvester.append([0]*shift+g_coefficients+[0]*(4-shift))
+    assert len(sylvester) == 11 and all(len(row) == 11 for row in sylvester)
+    matrix = [[coefficient % prime for coefficient in row] for row in sylvester]
+    determinant = 1
+    for column in range(11):
+        pivot = next((row for row in range(column, 11)
+                      if matrix[row][column] % prime), None)
+        assert pivot is not None, (column, matrix)
+        if pivot != column:
+            matrix[pivot], matrix[column] = matrix[column], matrix[pivot]
+            determinant = -determinant
+        pivot_value = matrix[column][column] % prime
+        determinant = determinant*pivot_value % prime
+        inverse = pow(pivot_value, -1, prime)
+        for row in range(column+1, 11):
+            factor = matrix[row][column]*inverse % prime
+            matrix[row] = [(left-factor*right) % prime
+                           for left, right in zip(matrix[row], matrix[column])]
+    assert determinant % prime == 5
+    assert int(sp.resultant(f.as_expr(), g.as_expr(), eps)) % prime == 5
+
+    # Eta=0: the first two remaining relations force epsilon=0.
+    a_eta_zero = -inv_d-sp.Rational(5, 3)*eps**2
+    zero(invariant_moments[2].subs(eta, 0).subs(inv_a, a_eta_zero))
+    zero(invariant_moments[3].subs(eta, 0).subs(inv_a, a_eta_zero)
+         + 488*eps**3)
+
+    core = phase.subs({eps: 0, eta: 0})
+    moment_six = expectation(core**6)
+    expected_six = math.factorial(9)*(
+        20*(alpha*beta)**3 + 180*(alpha*beta)**2*(gamma*delta)
+        + 540*(alpha*beta)*(gamma*delta)**2 + 300*(gamma*delta)**3)
+    zero(moment_six-expected_six)
+    zero(expected_six.subs({alpha: 1, beta: inv_a, gamma: 1, delta: inv_d})
+         .subs(inv_d, -inv_a)-80*math.factorial(9)*inv_a**3)
+
+    # Reduce the universal eighth moment modulo A=alpha*beta=D=gamma*delta=0.
+    reduced_eight = sp.Integer(0)
+    for powers, coefficient in sp.Poly(
+            expectation(core**8), alpha, beta, gamma, delta).terms():
+        i, j, k, ell = powers
+        if (i and j) or (k and ell):
+            continue
+        reduced_eight += coefficient*alpha**i*beta**j*gamma**k*delta**ell
+    left_cross, right_cross = alpha**2*delta**6, beta**2*gamma**6
+    zero(reduced_eight-420*math.factorial(12)*(left_cross+right_cross))
+    zero(left_cross*right_cross-(alpha*beta)**2*(gamma*delta)**6)
+
+    # All four cross products vanish exactly when one angular side is empty.
+    # The eight-moment identity gives both residual cross products zero over C:
+    # the two summands sum to zero and their product is already zero.
+    for mask in range(16):
+        ap, bp, gp, dp = (bool(mask & (1 << bit)) for bit in range(4))
+        cross_products_zero = not ((ap and bp) or (gp and dp)
+                                   or (ap and dp) or (bp and gp))
+        one_side_empty = (not ap and not gp) or (not bp and not dp)
+        assert cross_products_zero == one_side_empty
+
+    return {
+        "kind": "complete coefficient-elimination certificate for this fixed family",
+        "coefficient_domain": "C; universal polynomial computations over Q",
+        "phase": "alpha Z^3+beta W^3+gamma Z^2 W Y+delta Z W^2 Y+epsilon((ZW)^2-2)+eta(Y^2-1)",
+        "moment_orders_used": [2, 3, 4, 5, 6, 8],
+        "invariant_dependence_orders": [2, 3, 4, 5],
+        "invariants": {"A": "alpha beta", "D": "gamma delta"},
+        "eliminants": {"variable": "epsilon",
+                       "F_coefficients_descending": f_coefficients,
+                       "G_coefficients_descending": g_coefficients},
+        "modular_resultant": {"prime": prime, "degrees_preserved": [5, 6],
+                              "sylvester_dimension": 11, "determinant_mod_prime": 5,
+                              "independent_sympy_resultant_mod_prime": 5},
+        "necessity": [
+            "eta!=0: scale to eta=1; moments2,3 eliminate A,D; coprime F,G exclude this case",
+            "eta=0: moments2,3 give -488 epsilon^3=0, hence epsilon=0",
+            "moment6 with D=-A gives 80*9!*A^3=0, hence A=D=0",
+            "moment8 modulo A=D=0 gives 420*12!*(alpha^2 delta^6+beta^2 gamma^6)=0; summands have product0",
+            "all cross products between (alpha,gamma) and (beta,delta) vanish",
+        ],
+        "pure_iff": "epsilon=eta=0 and either alpha=gamma=0 or beta=delta=0",
+        "all_order_sufficiency": "strict one-sided angular support; written weight proof gives m>deg Q for every marker",
+        "finite_prefix_scope": "The verified finite equations force the explicit all-order safe form; no general finite-prefix sufficiency is asserted.",
+    }
+
+
+def common_root_cubic_barrier():
+    """Exact zero-order local chart; the original phase is explicitly nonpure."""
+    r = sp.symbols("barrier_r", nonzero=True)
+    generic_c, generic_h = sp.symbols("barrier_c barrier_h", nonzero=True)
+    generic_u = -generic_h**2/(6*Z*generic_c)
+    generic_k = -generic_h**3/(54*Z*generic_c**2)
+    source = (r*Z-generic_h)/generic_c
+    phase = -source**2/2+(generic_u*source+generic_k)/r
+    cube = -(r*Z-sp.Rational(2, 3)*generic_h)**3/(2*r*Z*generic_c**2)
+    zero(phase-cube)
+
+    parameter_h = sp.symbols("barrier_H", nonzero=True)
+    c = (Z-1)**9
+    h = parameter_h*Z**2*(Z-1)**6
+    u = -parameter_h**2*Z**3*(Z-1)**3/6
+    k = -parameter_h**3*Z**5/54
+    zero(u+ h**2/(6*Z*c))
+    zero(k+ h**3/(54*Z*c**2))
+    polynomial_phase = W*(h+c*Y)+u*Y+k
+    zero(expectation(polynomial_phase))
+    zero(expectation(polynomial_phase**2)-306)
+
+    # Critical curve and derivative are exact rational identities.
+    zeta = sp.symbols("zeta")
+    factor = r*Z-sp.Rational(2, 3)*h
+    critical_r = sp.Rational(2, 3)*parameter_h*zeta*(zeta-1)**6
+    zero(factor.subs({Z: zeta, r: critical_r}))
+    critical_fz = sp.diff(factor, Z).subs({Z: zeta, r: critical_r})
+    expected_fz = -sp.Rational(2, 3)*parameter_h*zeta*(zeta-1)**5*(7*zeta-1)
+    zero(critical_fz-expected_fz)
+
+    # A unit reparametrization avoids an approximate Puiseux centre:
+    # H=3/(2A^6), zeta=1+A R, and r=zeta R^6 satisfy the critical curve exactly.
+    chart_a = sp.symbols("barrier_A", nonzero=True)
+    chart_r, chart_x = sp.symbols("barrier_R barrier_X")
+    exact_h = sp.Rational(3, 2)/chart_a**6
+    exact_zeta = 1+chart_a*chart_r
+    exact_r = exact_zeta*chart_r**6
+    chart_z = exact_zeta+chart_r**3*chart_x
+    zero(exact_r-critical_r.subs({zeta: exact_zeta, parameter_h: exact_h}))
+    exact_critical_fz = critical_fz.subs({zeta: exact_zeta, parameter_h: exact_h})
+    zero(exact_critical_fz+exact_zeta*chart_r**5*(7*exact_zeta-1)/chart_a)
+    leading_fz = sp.cancel(exact_critical_fz/chart_r**5).subs(chart_r, 0)
+    zero(leading_fz+6/chart_a)
+
+    chart_c = c.subs(Z, chart_z)
+    zero(chart_c-chart_r**9*(chart_a+chart_r**2*chart_x)**9)
+    chart_factor = factor.subs({r: exact_r, parameter_h: exact_h, Z: chart_z})
+    scaled_factor = sp.cancel(chart_factor/chart_r**8)
+    assert sp.Poly(scaled_factor, chart_r, chart_x).degree(chart_r) >= 0
+    zero(scaled_factor.subs(chart_r, 0)+6*chart_x/chart_a)
+    # Cancel the exact R^24 factors before taking the leading phase.
+    chart_phase = -scaled_factor**3/(
+        2*exact_zeta*chart_z*(chart_a+chart_r**2*chart_x)**18)
+    leading_phase = sp.cancel(chart_phase.subs(chart_r, 0))
+    zero(leading_phase-108*chart_x**3/chart_a**21)
+    chart_volume = sp.cancel(exact_r*chart_r**3/chart_c)
+    leading_volume = sp.cancel(chart_volume.subs(chart_r, 0))
+    zero(leading_volume-chart_a**-9)
+
+    return {
+        "kind": "exact limitation of a structural strict-positive-volume proof",
+        "coefficient_domain": "C, H!=0",
+        "coefficients": {"c": "(Z-1)^9", "h": "H Z^2 (Z-1)^6",
+                         "u": "-H^2 Z^3 (Z-1)^3/6", "k": "-H^3 Z^5/54", "a": 0},
+        "cube_identity": "phi=-(r Z-2h/3)^3/(2 r Z c^2)",
+        "exact_chart": {"H": "3/(2 A^6)", "zeta": "1+A R",
+                        "r": "zeta R^6", "Z": "zeta+R^3 X",
+                        "parameter_note": "unit reparametrization of the sixth-root parameter; no approximate critical centre"},
+        "critical_F_z_leading": "-6 A^-1 R^5",
+        "phase_leading": "108 A^-21 X^3",
+        "normalized_volume_leading": "A^-9 dX",
+        "critical_action": "identically zero",
+        "normalized_volume_order": 0,
+        "original_moments": {"1": 0, "2": 306},
+        "pure": False,
+        "not_an_H21_counterexample": True,
+        "does_not_assert": ["unit period", "rational seed period", "a pure unsafe phase"],
+        "scope": "The W-affine shape alone does not force strict positive local volume. Extra consequences of purity may still exclude this chart.",
+    }
+
+
+def varying_quadratic_controls():
+    """Algebraic controls for clean localization and a varying W^2 coefficient."""
+    z, w, y, yp, t, r, a = sp.symbols("z w y yp t r a")
+    ell, c, h, u, k = (sp.Function(name)(z) for name in ("ell", "c", "h", "u", "k"))
+    d = 1-2*a*t
+    precision = sp.Matrix([[-2*t*ell, -t*c], [-t*c, d]])
+    determinant = -2*t*ell+(4*a*ell-c**2)*t**2
+    pencil = -2*ell+t*(4*a*ell-c**2)
+    zero(precision.det()-determinant)
+    zero(determinant-t*pencil)
+    source = sp.Matrix([t*h-z, t*u])
+    nullvector = sp.Matrix([d, t*c])
+    nullsource = d*(t*h-z)+t**2*c*u
+    for entry in precision*nullvector-sp.Matrix([determinant, 0]):
+        zero(entry)
+    zero((source.T*nullvector)[0]-nullsource)
+    adjugate_numerator = (source.T*precision.adjugate()*source)[0]
+    zero(d*adjugate_numerator-nullsource**2-determinant*(t*u)**2)
+
+    # Completing the nonnull square leaves the actual linear null source.
+    fibre = (-(sp.Matrix([w, y]).T*precision*sp.Matrix([w, y]))[0]/2
+             + (source.T*sp.Matrix([w, y]))[0]+t*k)
+    completed = fibre.subs(y, yp+t*c*w/d)
+    expected = -d*yp**2/2+t*u*yp+(nullsource/d)*w-determinant*w**2/(2*d)+t*k
+    zero(completed-expected)
+
+    # Primitive-pencil source obstruction, with no functional assumptions.
+    ell_value, c_value, h_value, u_value = sp.symbols("E C H U")
+    field_f = 4*a*ell_value-c_value**2
+    field_s = (1-2*a*t)*(t*h_value-z)+t**2*c_value*u_value
+    bracket = z*c_value*field_f-2*ell_value*c_value*h_value+4*ell_value**2*u_value
+    zero(field_f**2*field_s.subs(t, 2*ell_value/field_f)-c_value*bracket)
+    zero(bracket.subs(ell_value, 0)+z*c_value**3)
+
+    curve_q = c**2-4*a*ell+2*ell/t
+    zero(determinant+t**2*curve_q)
+    zero(-sp.trace(precision.inv()*sp.diff(precision, z))/2
+         + sp.diff(curve_q, z)/(2*curve_q))
+    zero(-sp.trace(precision.inv()*sp.diff(precision, t))/2
+         + 1/t+sp.diff(curve_q, t)/(2*curve_q))
+    effective = t*k+(source.T*precision.inv()*source)[0]/2
+    universal_numerator = (
+        z**2+t*(-2*z*h-2*a*z**2)
+        +t**2*(h**2+4*a*z*h-2*c*z*u-4*ell*k)
+        +t**3*(-2*a*h**2+2*c*h*u-2*ell*u**2+2*(4*a*ell-c**2)*k))
+    zero(2*determinant*effective-universal_numerator)
+
+    # This finite-degree symbolic control illustrates the general inverse formula.
+    b = sp.symbols("b", nonzero=True)
+    coefficients = sp.symbols("f0:7")
+    polynomial = sum(coefficient*w**power for power, coefficient in enumerate(coefficients))
+    inverse = sum((-1)**j*sp.diff(polynomial, w, j)/b**(j+1) for j in range(7))
+    zero(sp.diff(inverse, w)+b*inverse-polynomial)
+    m = sp.symbols("m", nonzero=True)
+    normal_d = sp.Matrix([[0, 0], [-m, 0]])
+    normal_h = sp.Matrix([[0, -1/m], [0, 0]])
+    assert normal_d*normal_h+normal_h*normal_d == sp.eye(2)
+
+    # Exact function-field examples, including repeated ell roots.
+    examples = []
+    for epoly, cpoly, aval, hpoly, upoly in [
+        (z**2, sp.Integer(1), 0, sp.Integer(0), sp.Integer(0)),
+        ((z-1)**5, z, 1, z**3+1, z**2),
+        (z**2+1, z+1, 0, z**2, z),
+    ]:
+        assert sp.gcd(epoly, cpoly) == 1
+        jpoly = -2*epoly+t*(4*aval*epoly-cpoly**2)
+        spoly = (1-2*aval*t)*(t*hpoly-z)+t**2*cpoly*upoly
+        field = sp.QQ.frac_field(t)
+        jpol = sp.Poly(jpoly, z, domain=field)
+        spol = sp.Poly(spoly, z, domain=field)
+        assert sp.gcd(jpol, spol).degree() == 0
+        assert sp.gcd(jpol, jpol.diff()).degree() == 0
+        examples.append({"ell": str(epoly), "c": str(cpoly), "a": aval})
+    exceptional_phase = effective.subs({ell: z**2, c: 1, h: 0, u: 0, k: 0, a: 0})
+    zero(sp.limit(t*exceptional_phase, t, 0)+sp.Rational(1, 4))
+    assert sp.cancel(sp.diff(exceptional_phase, z)) != 0
+
+    fixed_delta = determinant.subs(c, 0)
+    zero(fixed_delta+t**2*(2/t-4*a)*ell)
+    normalizer_square = r**2/(2*r-4*a)
+    zero((1/fixed_delta).subs(t, 1/r)+normalizer_square/ell)
+    fixed_phase = effective.subs(c, 0)
+    zero(fixed_phase-(t*k-(t*h-z)**2/(4*t*ell)+t**2*u**2/(2*d)))
+    fixed_edge = fixed_phase.subs({ell: z**2, h: 1, u: 0, k: 0, a: 0})
+    edge_constant = sp.limit(fixed_edge+1/(4*t), t, 0)
+    zero(edge_constant-1/(2*z))
+    assert sp.diff(edge_constant, z) != 0
+
+    return {
+        "kind": "algebraic identity controls, not a moment-prefix search",
+        "symbolic": [
+            "varying precision determinant and nullvector",
+            "Schur numerator d*N=S^2+det*(tu)^2",
+            "rank-one fibre square completion and actual linear null source",
+            "F^2 S substitution and modulo-ell obstruction",
+            "both spatial and parameter half-density connections",
+            "universal effective numerator",
+            "finite inverse of partial_w+b on a symbolic degree-six polynomial",
+            "higher-pole normal complex contraction",
+            "fixed-cover scalar normalizer and phase",
+        ],
+        "exact_function_field_examples": examples,
+        "edge_controls": ["ell=z^2,c=1: constant leading phase retains an actual spatial pole",
+                          "c=0,ell=z^2,h=1: next spatial pole retained"],
+        "scope": "The written clean-localization and curve-period arguments supply arbitrary-degree theorem coverage. These computations verify algebraic identities and the stated exact examples.",
+    }
+
+
+def shared_quadratic_source_controls():
+    """Exact shared-factor source criterion and its genuine exception."""
+    z, t, a, g, e, C, c, h, u = sp.symbols("z t a g e C c h u")
+    d = 1-2*a*t
+    f = 4*a*e-C
+    residual = -2*e+t*f
+    source = d*(t*h-z)+t**2*c*u
+    obstruction = C*(z*f-2*e*h)+4*e**2*c*u
+
+    # Relation g*C=c^2 is exactly the common-factor identity.
+    original_delta = -2*t*g*e+t**2*(4*a*g*e-c**2)
+    zero(original_delta-t*g*residual-t**2*(g*C-c**2))
+    zero(original_delta.subs(c**2, g*C)-t*g*residual)
+
+    # This gives an exact iff because the primitive pencil is irreducible.
+    zero(f**2*source.subs(t, 2*e/f)-obstruction)
+    zero(obstruction.subs(e, 0)+z*C**2)
+    fixed_source = source.subs({e: 0, c: 0})
+    zero(fixed_source-d*(t*h-z))
+
+    # Explicit shared-factor example outside the previous B/C statements:
+    # ell has a fourth-order root, while its gcd with c^2 has order two.
+    ell_poly = z*(z-1)**4
+    c_poly = z-1
+    g_poly = sp.gcd(ell_poly, c_poly**2)
+    e_poly = sp.cancel(ell_poly/g_poly)
+    C_poly = sp.cancel(c_poly**2/g_poly)
+    assert g_poly == (z-1)**2 or sp.expand(g_poly-(z-1)**2) == 0
+    assert sp.degree(e_poly, z) >= 2
+    j_poly = -2*e_poly-t*C_poly
+    s_poly = -z
+    r_poly = obstruction.subs({e: e_poly, C: C_poly, c: c_poly, a: 0, h: 0, u: 0})
+    zero(r_poly+z)
+    field = sp.QQ.frac_field(t)
+    j = sp.Poly(j_poly, z, domain=field)
+    s = sp.Poly(s_poly, z, domain=field)
+    assert sp.gcd(j, s).degree() == 0
+    assert sp.gcd(j, j.diff()).degree() == 0
+
+    # The exception is genuine despite clean fixed roots. At alpha=1,
+    # t*h(alpha)-alpha=-t/2-1 is nonzero, but the moving nullsource vanishes.
+    exceptional_ell = z*(z-1)**2
+    exceptional_c = z-1
+    exceptional_g = sp.gcd(exceptional_ell, exceptional_c**2)
+    exceptional_e = sp.cancel(exceptional_ell/exceptional_g)
+    exceptional_C = sp.cancel(exceptional_c**2/exceptional_g)
+    exceptional_subs = {e: exceptional_e, C: exceptional_C,
+                        c: exceptional_c, a: 0, h: -sp.Rational(1, 2), u: 0}
+    zero(obstruction.subs(exceptional_subs))
+    exceptional_j = residual.subs(exceptional_subs)
+    exceptional_s = source.subs(exceptional_subs)
+    zero(exceptional_j-2*exceptional_s)
+    assert (t*(-sp.Rational(1, 2))-z).subs(z, 1) != 0
+
+    # Endpoint simplification in the finite valuation argument, for l<=2:
+    # endpoint-1/2=(2-l)/(2(q-l)) is nonnegative whenever q>l.
+    q, l = sp.symbols("q l")
+    endpoint = (q/sp.Integer(2)+1-l)/(q-l)
+    zero(endpoint-sp.Rational(1, 2)-(2-l)/(2*(q-l)))
+
+    return {
+        "status": "passed",
+        "symbolic": ["determinant shared-factor identity under g*C=c^2",
+                     "exact moving nullsource obstruction R",
+                     "R modulo e forces e|z",
+                     "fixed-root source",
+                     "finite valuation endpoint bound"],
+        "new_clean_example": {"ell": str(ell_poly), "c": str(c_poly),
+                              "g": str(g_poly), "R": str(sp.cancel(r_poly))},
+        "excluded_source_kernel_example": {
+            "ell": str(exceptional_ell), "c": str(exceptional_c),
+            "h": "-1/2", "a": 0, "u": 0,
+            "J0": str(exceptional_j), "S": str(exceptional_s), "R": 0},
+        "scope": "Exact identities and source examples, with no moment prefixes.",
+    }
+
+
+def moving_nullsource_zero_controls():
+    """Actual-seed identities behind the written arbitrary-polynomial exclusion."""
+    n = sp.symbols("n", integer=True, nonnegative=True)
+    # The general-j proof is coefficient extraction from
+    # (1+x)^(n+2j) (1-(1+x))^j. Here n stays symbolic.
+    for j in range(8):
+        def choose_polynomial(top, bottom):
+            return sp.prod(top-index for index in range(bottom))/sp.factorial(bottom)
+        difference = sum(
+            (-1)**a*sp.binomial(j, a)*choose_polynomial(n+2*j+a, 2*j)
+            for a in range(j+1))
+        zero(difference-(-1)**j*choose_polynomial(n+2*j, j))
+
+    def base_coefficient(marker_degree, order):
+        if order < marker_degree or (order-marker_degree) % 2:
+            return sp.Integer(0)
+        j = (order-marker_degree)//2
+        return ((-sp.Rational(1, 2))**marker_degree*(-1)**j
+                * sp.factorial2(2*j-1)*sp.binomial(marker_degree+2*j, j))
+
+    # Independent direct Wick contractions of the original three-variable P0,
+    # rather than contractions of its eliminated or localized source.
+    p0 = Z**3*W**2+Z*W*Y-W/2
+    base = sparse(p0)
+    power = {(0, 0, 0): Fraction(1)}
+    for order in range(11):
+        for marker_degree in range(5):
+            assert (wick(power, (marker_degree, 0, 0))/math.factorial(order)
+                    == base_coefficient(marker_degree, order))
+        power = multiply(power, base)
+
+    # The algebraic Gaussian kernel reproduces every B_n by the written
+    # binomial-series identity. These controls retain several nonzero markers.
+    x = sp.symbols("x")
+    for marker_degree in range(5):
+        kernel = 2**marker_degree/(sp.sqrt(1+4*x)
+                 * (1+sp.sqrt(1+4*x))**marker_degree)
+        expansion = sp.series(kernel, x, 0, 8).removeO().expand()
+        for j in range(8):
+            assert expansion.coeff(x, j) == (-1)**j*sp.binomial(marker_degree+2*j, j)
+
+    # Explicit R=0 example, including the actual precision and residual source.
+    z, t, w, y = sp.symbols("z t w y")
+    precision = sp.Matrix([[-2*t*z**3, -t*z], [-t*z, 1]])
+    source = sp.Matrix([-z-t/2, 0])
+    residual = -2*z-t
+    zero(precision.det()-t*z**2*residual)
+    zero(source[0]-residual/2)
+    zero(source[0].subs(z, -t/2))
+    effective = (source.T*precision.inv()*source)[0]/2
+    zero(effective+1/(4*t*z)+1/(8*z**2))
+
+    # Rational parametrization checks the cover normal form and its density;
+    # the actual-seed identity itself was derived above by Wick contraction.
+    cover_u = sp.symbols("cover_u")
+    cover_z = t*(cover_u**2-1)/2
+    gaussian_s = cover_u/(t*(1-cover_u**2))
+    cover_v = (1+cover_u**2)/(1-cover_u**2)
+    zero(cover_v**2-1-4*t**2*gaussian_s**2)
+    zero(cover_z+t/(1+cover_v))
+    zero(effective.subs(z, cover_z)+gaussian_s**2/2)
+    volume_ratio = (sp.diff(cover_z, cover_u)/(t*cover_z*cover_u)
+                    / sp.diff(gaussian_s, cover_u))
+    zero(volume_ratio+2/cover_v)
+
+    k0, k1 = sp.symbols("k0 k1")
+    zero(expectation(p0+k0+k1*Z)-k0)
+    zero(expectation((p0+k1*Z)**2)+4+k1)
+    p = sp.symbols("p", integer=True, positive=True)
+    leading = sp.factorial(2*p)**2/(2**p*sp.factorial(p)**3)
+    previous = sp.factorial(2*p-2)**2/(2**(p-1)*sp.factorial(p-1)**3)
+    zero(sp.combsimp(previous/leading)-p/(2*(2*p-1)**2))
+    return {
+        "kind": "actual-seed identities supporting a written all-order obstruction",
+        "phase": "Z^3 W^2+ZWY-W/2+k(Z), arbitrary k in C[Z]",
+        "conclusion": "no polynomial k makes the phase pure",
+        "marked_base_formula": "B_n=(-t/2)^n sum_j (-1)^j (2j-1)!! binom(n+2j,j)t^(2j)",
+        "direct_Wick_controls": {"marker_degrees": [0, 4], "moment_orders": [0, 10]},
+        "finite_difference_controls": {"n": "symbolic", "j": [0, 7]},
+        "Gaussian_kernel_controls": {"marker_degrees": [0, 4], "series_orders": [0, 7]},
+        "source_exception": {"ell": "Z^3", "c": "Z", "h": "-1/2",
+                             "a": 0, "u": 0, "R": 0, "J0": "-2Z-t"},
+        "relative_even_coefficient_bound": "(exp(A)-1)*p/[2(2p-1)^2], A=sum_l |k_l|, k0=0",
+        "scope": "The written finite-difference identity and uniform complex-coefficient estimate prove the arbitrary-degree exclusion. These computations check exact algebraic identities and finite Wick controls; no prefix sufficiency is used.",
+    }
 
 
 def checks():
@@ -287,6 +789,11 @@ def checks():
     zero(a_numerator.subs(alpha, 0).coeff(T, 2) - beta**2/2)
     radial_result = radial_controls()
     endpoint_result = relative_endpoint_controls()
+    resonant_result = resonant_quartic_certificate()
+    barrier_result = common_root_cubic_barrier()
+    varying_result = varying_quadratic_controls()
+    shared_result = shared_quadratic_source_controls()
+    moving_nullsource_result = moving_nullsource_zero_controls()
 
     # Generic elimination of W,Y, with constant W^2 coefficient nonzero.
     lam_quad = sp.symbols("lambda_quad", nonzero=True)
@@ -411,6 +918,11 @@ def checks():
             "generic_hyperelliptic_smoothness_controls": {"c": ["Z", "Z^2", "Z^3+Z", "Z^4-Z"]},
         },
         "marker_periods_B_z_squared": {str(q): str(p) for q, p in marker_periods.items()},
+        "complete_certificates": {"resonant_quartic_family": resonant_result},
+        "method_barriers": {"common_root_cubic_chart": barrier_result},
+        "symbolic_identity_controls": {"varying_quadratic_source": varying_result,
+                                       "shared_quadratic_source": shared_result,
+                                       "moving_nullsource_zero": moving_nullsource_result},
     }
 
 
@@ -423,7 +935,7 @@ def main():
     note = here.with_name("GAUSSIAN_AFFINE_ISOTROPIC_CHART.md")
     receipt = {
         "status": "passed",
-        "scope": "Exact symbolic identities and bounded Wick controls; completeness and arbitrary-degree classification are proved in the written note, not by these controls.",
+        "scope": "Exact symbolic identities, bounded Wick controls, the stated complete resonant-quartic coefficient certificate, and an exact nonpure local-method barrier. The certificate forces an all-order safe form in its fixed family; arbitrary-degree analytic classifications use the written proof rather than finite controls. The barrier is not a unit-period or H(2,1) counterexample.",
         "checked_on": "2026-11-17",
         "command": ".venv/bin/python research/moments/vanishing/verify_gaussian_affine_isotropic_chart.py --output research/moments/vanishing/gaussian_affine_isotropic_chart_verification.json",
         "environment": {"python": platform.python_version(), "sympy": sp.__version__},

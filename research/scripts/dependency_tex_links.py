@@ -16,7 +16,7 @@ CLAIM_ENVS = {"theorem", "lemma", "proposition", "corollary", "claim", "assertio
 CLAIM_LABEL = re.compile(r"^(?:thm|lem|prop|cor|claim|assert)(?::|[-_.])", re.I)
 NONCLAIM_LABEL = re.compile(r"^(?:eq|sec|subsec|fig|tab|alg|app)(?::|[-_.])", re.I)
 INPUT = re.compile(r"(?<!\\)\\(?:input|include)\s*(?:\{([^{}]*)\}|([^\s{}%]+))")
-REF = re.compile(r"\\(?:ref|cref|Cref|autoref)\s*\{([^}]+)\}")
+REF = re.compile(r"\\(?:eqref|ref|cref|Cref|autoref)\s*\{([^}]+)\}")
 EVENT = re.compile(
     r"\\begin\{(?P<begin>[^{}]+)\}(?:\[(?P<title>[^\]]*)\])?"
     r"|\\end\{(?P<end>[^{}]+)\}"
@@ -308,8 +308,6 @@ def tex_proof_link_report(data: dict, graph) -> dict:
             proof_path, proof_line = document.location(proof["start"])
             conclusion_path, _ = document.location(declaration["start"])
             for label, position, command in proof["refs"]:
-                if command == "eqref":
-                    continue
                 resolved = resolve(label, position, "dependency")
                 if resolved is None:
                     continue

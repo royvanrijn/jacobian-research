@@ -3,7 +3,7 @@
   "claims": {
     "two_three_separation": "all integer d>=1 and real y>=x>0; elementary proof",
     "three_four_separation": "all integer d>=1 and real y>=x>0; monotone cumulant proof",
-    "full_ordinary_objective_equivalence": "consecutive gcd in finite rectangles for every N>=5; infinitely many N remain",
+    "full_ordinary_objective_equivalence": "consecutive gcd in finite rectangles for every N>=6; infinitely many N remain",
     "lower_exponent_initial_block": "all a>=0,d>=1 integers and beta>0, terminal<=4",
     "parameter_polynomial_selection": "all N>=2,d>=1,z complex; elementary degree proof",
     "finite_support_reduction": "each terminal N>=2: a<A_N and 2<=d<D_N; ordinary factorials",
@@ -12,6 +12,9 @@
     "sparse_endpoint_mass_criterion": "d^2>=4(a+d)log(8N): simplicity and pairwise coprimality through N",
     "diagonal_derivative_embedding": "all a,d,N>=1 integers and beta>0; fixed lower-one seed S_m",
     "generic_preservation_shortcut": "counterexample despite simplicity and Hurwitz stability of every derivative and consecutive base coprimality",
+    "generic_Gamma_convolution_simplicity": "explicit finite positive Gamma convolution counterexample at fifth order",
+    "ordinary_binomial_terminal_five": "all integer a>=0,d>=1; monotone center cutoff and exact polynomial certificates",
+    "all_positive_Gamma_shapes_terminal_five_closed": false,
     "all_index_binomial_sfc": false
   },
   "coverage": {
@@ -187,6 +190,76 @@
     "abstract_positive_imaginary_part_identities": 2,
     "ordered_shape_three_four_gcd_cases": 150
   },
+  "finite_Gamma_convolution_replay": {
+    "positive_shape_scale_parameters": [
+      [
+        "125/9",
+        "1/2"
+      ],
+      [
+        "1/3249",
+        "19/2"
+      ]
+    ],
+    "literal_independent_raw_moment_orders": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "moment_to_cumulant_inversion_orders": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "common_quadratic_centered": "w^2-w+19",
+    "common_quadratic_discriminant": -75,
+    "four_five_common_factor_degree": 2,
+    "fifth_moment_repeated_factor_degree": 2,
+    "single_equal_scale_Gamma_control_coprime": true,
+    "HCM_density_asserted": false,
+    "Gamma_power_or_factorial_counterexample": false
+  },
+  "ordinary_terminal_five_replay": {
+    "fixed_gaps": [
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16
+    ],
+    "whole_resultant_polynomial_degree_bound": "20*d",
+    "literal_integer_Bareiss_determinant_evaluations": 2715,
+    "positive_primitive_coefficients": 2715,
+    "all_lower_exponents_covered": "a>=0 real at fixed gaps2..16",
+    "large_gap_cutoff": {
+      "terminal": 5,
+      "gap_at_least": 17,
+      "lower_exponent_at_least": 1,
+      "rational_annuli": [
+        "53/10",
+        "27/4"
+      ],
+      "factorial_integer_comparison": "pass"
+    },
+    "corrupted_positive_polynomial_certificate_rejected": true,
+    "ordinary_binomial_terminal_five_proved": true,
+    "all_positive_Gamma_shapes_terminal_five_proved": false
+  },
   "representation_source": {
     "file": "sources/wolfs-2024-multiple-orthogonal-2401.08312v1.pdf",
     "sha256": "f067406cc088fbad56308b00d8add51117401379504a1109b30442b62cf82182",
@@ -197,12 +270,15 @@
   "python": "3.12.3",
   "sympy": "1.14.0",
   "source_sha256": {
-    "lower_exponent_initial_and_boundary.tex": "f852dcb1229e89bbacbc6dede6f00f6a9fa201b4f01492bf5149e91b0a6aa7e9",
-    "lower_exponent_initial_and_boundary.py": "2ef0b6e07a585f5277e7e4ac403dffa817fa242dddf2e0f03694e89c41aa637b",
-    "sources/wolfs-2024-multiple-orthogonal-2401.08312v1.pdf": "f067406cc088fbad56308b00d8add51117401379504a1109b30442b62cf82182"
+    "lower_exponent_initial_and_boundary.tex": "527159b49e9be2f9572548eab611dc18775ae3de79a4d9c2f0c322a57fbf23b7",
+    "lower_exponent_initial_and_boundary.py": "dd83e7b70ace3cbafe5487291037b3c137f3823746c54cee5eb8b2cc8ed4f462",
+    "sources/wolfs-2024-multiple-orthogonal-2401.08312v1.pdf": "f067406cc088fbad56308b00d8add51117401379504a1109b30442b62cf82182",
+    "lower_exponent_initial_and_boundary_terminal_five_certificates.json": "7c74ec9588ce6ae64ab04cab13848feec843f070368525997c40afa47c9cb784"
   },
   "independent_replay": false,
   "formal_verification": false,
   "external_review": false,
-  "passed": true
+  "passed": true,
+  "command": "python research/factorial/image-rigidity/lower_exponent_initial_and_boundary.py",
+  "certificate_regeneration_command": "python research/factorial/image-rigidity/lower_exponent_initial_and_boundary.py --generate-terminal-five"
 }

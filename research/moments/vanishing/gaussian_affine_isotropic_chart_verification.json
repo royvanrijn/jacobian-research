@@ -1,14 +1,14 @@
 {
   "status": "passed",
-  "scope": "Exact symbolic identities and bounded Wick controls; completeness and arbitrary-degree classification are proved in the written note, not by these controls.",
+  "scope": "Exact symbolic identities, bounded Wick controls, the stated complete resonant-quartic coefficient certificate, and an exact nonpure local-method barrier. The certificate forces an all-order safe form in its fixed family; arbitrary-degree analytic classifications use the written proof rather than finite controls. The barrier is not a unit-period or H(2,1) counterexample.",
   "checked_on": "2026-11-17",
   "command": ".venv/bin/python research/moments/vanishing/verify_gaussian_affine_isotropic_chart.py --output research/moments/vanishing/gaussian_affine_isotropic_chart_verification.json",
   "environment": {
     "python": "3.12.3",
     "sympy": "1.14.0"
   },
-  "checker_sha256": "fe9453b03dd0935a6ea828336aa277f202a3d7347b1e3037f73cbe1886d3e75a",
-  "proof_sha256": "37585670821d7af0102c1f554b17c84c17673c9e6f77b34380f385b2606399ca",
+  "checker_sha256": "332074230b78d7291e4b9f2714d9e24c998e666c51e9a622c19fbd655936a26b",
+  "proof_sha256": "9306cc845d24aa7fa1d5d9aa2007d8aa3a097d017312e73a8d79b80abb065809",
   "checks": {
     "symbolic": [
       "arbitrary-ell unsafe-branch rational identities",
@@ -155,6 +155,174 @@
       "2": "t**10/4 - 4*t**4",
       "3": "-t**15/8 + 6*t**9 - 18*t**3",
       "4": "t**20/16 - 6*t**14 + 84*t**8 - 48*t**2"
+    },
+    "complete_certificates": {
+      "resonant_quartic_family": {
+        "kind": "complete coefficient-elimination certificate for this fixed family",
+        "coefficient_domain": "C; universal polynomial computations over Q",
+        "phase": "alpha Z^3+beta W^3+gamma Z^2 W Y+delta Z W^2 Y+epsilon((ZW)^2-2)+eta(Y^2-1)",
+        "moment_orders_used": [
+          2,
+          3,
+          4,
+          5,
+          6,
+          8
+        ],
+        "invariant_dependence_orders": [
+          2,
+          3,
+          4,
+          5
+        ],
+        "invariants": {
+          "A": "alpha beta",
+          "D": "gamma delta"
+        },
+        "eliminants": {
+          "variable": "epsilon",
+          "F_coefficients_descending": [
+            24400,
+            2364,
+            6864,
+            -652,
+            468,
+            -63
+          ],
+          "G_coefficients_descending": [
+            4196800,
+            537276,
+            1192320,
+            -13760,
+            63780,
+            -1215,
+            -722
+          ]
+        },
+        "modular_resultant": {
+          "prime": 7,
+          "degrees_preserved": [
+            5,
+            6
+          ],
+          "sylvester_dimension": 11,
+          "determinant_mod_prime": 5,
+          "independent_sympy_resultant_mod_prime": 5
+        },
+        "necessity": [
+          "eta!=0: scale to eta=1; moments2,3 eliminate A,D; coprime F,G exclude this case",
+          "eta=0: moments2,3 give -488 epsilon^3=0, hence epsilon=0",
+          "moment6 with D=-A gives 80*9!*A^3=0, hence A=D=0",
+          "moment8 modulo A=D=0 gives 420*12!*(alpha^2 delta^6+beta^2 gamma^6)=0; summands have product0",
+          "all cross products between (alpha,gamma) and (beta,delta) vanish"
+        ],
+        "pure_iff": "epsilon=eta=0 and either alpha=gamma=0 or beta=delta=0",
+        "all_order_sufficiency": "strict one-sided angular support; written weight proof gives m>deg Q for every marker",
+        "finite_prefix_scope": "The verified finite equations force the explicit all-order safe form; no general finite-prefix sufficiency is asserted."
+      }
+    },
+    "method_barriers": {
+      "common_root_cubic_chart": {
+        "kind": "exact limitation of a structural strict-positive-volume proof",
+        "coefficient_domain": "C, H!=0",
+        "coefficients": {
+          "c": "(Z-1)^9",
+          "h": "H Z^2 (Z-1)^6",
+          "u": "-H^2 Z^3 (Z-1)^3/6",
+          "k": "-H^3 Z^5/54",
+          "a": 0
+        },
+        "cube_identity": "phi=-(r Z-2h/3)^3/(2 r Z c^2)",
+        "exact_chart": {
+          "H": "3/(2 A^6)",
+          "zeta": "1+A R",
+          "r": "zeta R^6",
+          "Z": "zeta+R^3 X",
+          "parameter_note": "unit reparametrization of the sixth-root parameter; no approximate critical centre"
+        },
+        "critical_F_z_leading": "-6 A^-1 R^5",
+        "phase_leading": "108 A^-21 X^3",
+        "normalized_volume_leading": "A^-9 dX",
+        "critical_action": "identically zero",
+        "normalized_volume_order": 0,
+        "original_moments": {
+          "1": 0,
+          "2": 306
+        },
+        "pure": false,
+        "not_an_H21_counterexample": true,
+        "does_not_assert": [
+          "unit period",
+          "rational seed period",
+          "a pure unsafe phase"
+        ],
+        "scope": "The W-affine shape alone does not force strict positive local volume. Extra consequences of purity may still exclude this chart."
+      }
+    },
+    "symbolic_identity_controls": {
+      "varying_quadratic_source": {
+        "kind": "algebraic identity controls, not a moment-prefix search",
+        "symbolic": [
+          "varying precision determinant and nullvector",
+          "Schur numerator d*N=S^2+det*(tu)^2",
+          "rank-one fibre square completion and actual linear null source",
+          "F^2 S substitution and modulo-ell obstruction",
+          "both spatial and parameter half-density connections",
+          "universal effective numerator",
+          "finite inverse of partial_w+b on a symbolic degree-six polynomial",
+          "higher-pole normal complex contraction",
+          "fixed-cover scalar normalizer and phase"
+        ],
+        "exact_function_field_examples": [
+          {
+            "ell": "z**2",
+            "c": "1",
+            "a": 0
+          },
+          {
+            "ell": "(z - 1)**5",
+            "c": "z",
+            "a": 1
+          },
+          {
+            "ell": "z**2 + 1",
+            "c": "z + 1",
+            "a": 0
+          }
+        ],
+        "edge_controls": [
+          "ell=z^2,c=1: constant leading phase retains an actual spatial pole",
+          "c=0,ell=z^2,h=1: next spatial pole retained"
+        ],
+        "scope": "The written clean-localization and curve-period arguments supply arbitrary-degree theorem coverage. These computations verify algebraic identities and the stated exact examples."
+      },
+      "shared_quadratic_source": {
+        "status": "passed",
+        "symbolic": [
+          "determinant shared-factor identity under g*C=c^2",
+          "exact moving nullsource obstruction R",
+          "R modulo e forces e|z",
+          "fixed-root source",
+          "finite valuation endpoint bound"
+        ],
+        "new_clean_example": {
+          "ell": "z*(z - 1)**4",
+          "c": "z - 1",
+          "g": "z**2 - 2*z + 1",
+          "R": "-z"
+        },
+        "excluded_source_kernel_example": {
+          "ell": "z*(z - 1)**2",
+          "c": "z - 1",
+          "h": "-1/2",
+          "a": 0,
+          "u": 0,
+          "J0": "-t - 2*z",
+          "S": "-t/2 - z",
+          "R": 0
+        },
+        "scope": "Exact identities and source examples, with no moment prefixes."
+      }
     }
   },
   "independent_replay": false,
@@ -167,9 +335,12 @@
       "quartic_exact",
       "audit_imports",
       "higher_w",
-      "radial_endpoint"
+      "radial_endpoint",
+      "mixed_quartic",
+      "varying_w2",
+      "common_roots"
     ],
-    "scope": "Fixed-puncture and multiple-root estimates; refreshed import audit; arbitrary-multiplicity nonzero-a and unshared-root proofs; relative rank-D endpoint pairing; spatial/parameter half-density and odd-sector bridge; complete positive-genus double-cover component estimates; radial/angular and polynomial-orbit conclusions",
+    "scope": "Fixed-puncture and multiple-root estimates; refreshed import audit; arbitrary-multiplicity nonzero-a and unshared-root proofs; relative rank-D endpoint pairing; spatial/parameter half-density and odd-sector bridge; complete positive-genus double-cover component estimates; clean localization of variable quadratic-W sources including the moving determinant divisor and actual phase pole; exact quartic certificate and zero-coefficient branches; high-common-root zero-order cubic chart; radial/angular and polynomial-orbit conclusions",
     "outcome": "No mathematical gap identified in internal source audits. Independent and external review remain pending."
   },
   "additional_primary_sources_checked": [
@@ -184,24 +355,16 @@
       "cache": "research/moments/vanishing/sources/stacks_0CDB_nodal_models.html",
       "sha256": "57bff065760cfbf5eb1c640fdc9355a5cb032b98244ae5b6ee8daa1f924c5f9b",
       "checked": "Section 55.14, Example 55.14.1 and Lemma 55.14.3: nodal surface equations uv=pi^n resolve by blowups retaining nodal/reduced fibres."
+    },
+    {
+      "url": "https://stacks.math.columbia.edu/tag/0FMU",
+      "cache": "research/moments/vanishing/sources/stacks_0FMU_logarithmic_residue.html",
+      "sha256": "f6d9530c983cb52b6bff6725be01c561e379d43b7bb163bc28b92f4bda31c7b1",
+      "checked": "Section 50.15, Lemmas 50.15.2 and 50.15.7: the logarithmic residue exact sequence for a smooth divisor, including its local proof; regular exponential twist and higher-pole contraction are proved separately in the H21 note."
     }
   ],
   "dependency_refresh": {
     "laurent_logarithmic_bound.tex": "Current change makes the full chain mapping cone and proper comparison explicit; hypotheses and used estimates unchanged after source audit.",
     "one_base_main.tex": "Current edits clarify theorem references and companion provenance; used stationary-ball statements and proof unchanged mathematically."
-  },
-  "repository_checks": {
-    "result_graph_and_source_pins": "passed for GAUSSIAN-H21-AFFINE-CHART",
-    "python_compile": "passed",
-    "focused_whitespace": "passed",
-    "proof_local_links": {
-      "status": "passed",
-      "references": 9
-    },
-    "repository_local_links": {
-      "status": "failed",
-      "reason": "missing Markdown references:\nresearch/README.md -> COVERAGE.md\nresearch/README.md -> BOUNDS.md\nresearch/STATUS.md -> COVERAGE.md\nresearch/STATUS.md -> BOUNDS.md\nresearch/foundations/extended-geometry/TWO_PAIR_IMAGE_CUBIC_STRATIFICATION.md -> two_pair_image_cubic_primary_sources.json\nresearch/foundations/extended-geometry/TWO_PAIR_IMAGE_CUBIC_STRATIFICATION.md -> two_pair_image_cubic_completion_audit.json"
-    },
-    "navigation": "Latest make render-navigation and make check-navigation stop at unrelated changed checker source BINOMIAL-INITIAL-BOUNDARY. No unrelated hashes were changed by this task."
   }
 }

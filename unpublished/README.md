@@ -6,6 +6,7 @@ The Gaussian boundary and reductive homogeneous-space Mathieu paper have standal
 
 | Paper | Status |
 |---|---|
+| [Cubic sphere moments and the two-pair Image problem](cubic-sphere-image/) | ready for review |
 | [Counterexamples to the Mathieu Property: From Explicit Quotient Constructions to a General Classification](mathieu-reductive-homogeneous-spaces/) | ready for review |
 | [The Dimension-Degree Boundary for Gaussian Moment Vanishing](gaussian-boundary/) | ready for review |
 | [Over Characteristic Zero, Every Finite Etale Algebra of Rank at Least Three Is a Full Keller Fiber](common-arithmetic-fibers/) | draft |

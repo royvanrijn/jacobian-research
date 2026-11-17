@@ -45,10 +45,10 @@ class RetainedDependencyTests(unittest.TestCase):
 
     def test_known_tang_and_trace_inputs_cannot_be_bypassed(self):
         cases = [
-            ("OWN-TANG-STRUCTURAL-AUDIT", "HESSIAN-RICCI-FLAT"),
-            ("INPUT-HESSIAN-LW0", "HESSIAN-MOMENT-TRACE"),
-            ("INPUT-HESSIAN-LY0", "HESSIAN-MOMENT-TRACE"),
-            ("INPUT-HESSIAN-KN0", "HESSIAN-MOMENT-TRACE"),
+            ("HESS-TANG", "HESSIAN-RICCI-FLAT"),
+            ("HESS-LW", "HESSIAN-MOMENT-TRACE"),
+            ("HESS-LY", "HESSIAN-MOMENT-TRACE"),
+            ("HESS-KN", "HESSIAN-MOMENT-TRACE"),
         ]
         for premise, conclusion in cases:
             with self.subTest(premise=premise):
@@ -57,13 +57,24 @@ class RetainedDependencyTests(unittest.TestCase):
 
     def test_real_multistep_progress_stays_hypothetical_and_preserves_assurance(self):
         before = deepcopy(self.data)
-        result = self.graph.simulate({"GAP-AUTOMATIC-T3-PERFECTION": "proved"})
+        # Fine decomposition exposes a retained-input verification gap. A
+        # hypothetical proof must carry that assumption too, rather than bypass it.
+        overrides = {"GAP-AUTOMATIC-T3-PERFECTION": "proved"}
+        for blocker in self.graph.blockers("HESS-LZ"):
+            if blocker["type"] == "node":
+                overrides[blocker["id"]] = "proved"
+        result = self.graph.simulate(overrides)
         for conclusion in ("GOAL-JC2", "GOAL-HC4"):
             self.assertEqual(result["nodes"][conclusion]["state"], "conditional")
             self.assertIn("GAP-AUTOMATIC-T3-PERFECTION",
                           result["nodes"][conclusion]["assumptions"])
         self.assertEqual(self.data, before)
         self.assertFalse(self.graph.evaluate()["GOAL-HC4"]["hypothetical"])
+
+    def test_reverse_hessian_equivalence_propagates_without_extra_tang_context(self):
+        result = self.graph.simulate({"GOAL-HC4": "proved"})
+        self.assertEqual(result["nodes"]["GOAL-JC2"]["state"], "conditional")
+        self.assertEqual(result["nodes"]["GOAL-JC2"]["assumptions"], ["GOAL-HC4"])
 
 
 if __name__ == "__main__":
