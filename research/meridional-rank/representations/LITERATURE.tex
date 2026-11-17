@@ -15,7 +15,7 @@ The classical meridional rank conjecture remains open. It asks whether
 $\mr(K)=b(K)$ for every knot $K\subset S^3$; the usual link formulation asks
 the same equality for links. The 2026 problem list retains it as Problem
 1.18 \cite{k3}. No general proof or classical counterexample was found in
-this search. The catalogue \texttt{sources.json} records 57 sources,
+this search. The catalogue \texttt{sources.json} records 64 sources,
 their precise claimed scope and audit depth. This is a broad map of the
 main results and recent developments, with outstanding source audits
 retained rather than an assertion of exhaustive bibliographic coverage.
@@ -44,6 +44,78 @@ summarized in this literature map are available only through Git history;
 those summaries do not provide a runnable replay of those older tests.
 
 \section{Current bounds and the known-family boundary}
+
+An explicitly defined seventeen-crossing knot now gives a further
+sharp-four certificate beyond those named thirteen-crossing collections.
+The proof in \path{NEW_SEVENTEEN_CROSSING_KNOT.tex} uses the closure of
+\[
+ \sigma_1\sigma_2\sigma_3^{-2}\sigma_2\sigma_3^{-2}
+ \sigma_2\sigma_1^2\sigma_2^3\sigma_3^{-1}\sigma_2^3\in B_4.
+\]
+Its full $A_8$ double-transposition quotient proves $\mr\ge4$.
+Its Alexander breadth is14, so genus is7; bridge and braid index are4.
+Yamada's minimum-Seifert-circle theorem \cite{yamada} then proves its
+crossing number is exactly17. Positive complete-cusped interval shapes
+certify its exterior hyperbolic. A separate nongeometric shape solution
+on the actual double-cover filling gives a closed
+$\mathrm{PSL}_2(\mathbb C)$ representation with signed volume in
+$(10.37,10.39)$. The gluing/filling volume identities \cite{franc}
+and graph-manifold vanishing \cite{lty} prove that double cover is
+not a graph manifold. This does not assert hyperbolicity of the closed cover.
+
+The companion \path{UNIVERSAL_17_REFLECTION_OBSTRUCTION.tex} excludes
+all sharp-four Coxeter reflection-class quotients, finite or infinite,
+by an exact rational polynomial certificate with no Gram determinant
+localization. The family comparison in
+\path{NEW_SEVENTEEN_FAMILY_COMPARISON.tex} separately derives
+nonalternation from the internal zero Alexander coefficients
+\cite{murasugi}, and $s=6$ from the homogeneous braid \cite{abe}.
+Since genus is7, neither chirality is positive or strongly quasipositive.
+Its scoped Coxeter, graph-double-cover and symmetric-maximal-augmentation
+comparisons exclude the corresponding audited construction theorems.
+An independent cable obstruction uses the satellite bridge inequality
+and the Alexander formula \cite{schultens,lm}.
+No unrestricted augmentation-rank value or worldwide priority theorem
+is inferred from this bounded comparison.
+The same eight-sheet action, extended abelianly across each trefoil,
+has branched-cover first Betti number $h_s=h_0+2s$ over $\mathbb F_3$.
+The general cover inequality therefore gives the additional sharp family
+$\mr(K_*\#^s3_1)=b(K_*\#^s3_1)=4+s$ without computing $h_0$.
+
+
+The companion \path{A8_SIMPLE_QUOTIENTS.tex} now gives a direct simple-group
+proof of the same twenty-four ternary-affine cases. The target $A_8$
+has order $20160$, ordinary rank two and double-transposition class
+rank four. A connected graph on eight points needs seven edges, while
+three such meridians supply at most six. Exact full-image permutation
+assignments and four-seed traces therefore prove the lower and upper
+bounds without importing the older affine certificates or cover homology.
+This alternative proof adds no named knot to the count.
+
+For arbitrary finite-dimensional rank-one-meridian representations on
+the sixteen alternating GL3/A6 knots, put $r=\dim\sum_g\operatorname{im}
+(\rho(g)-I)$ and $q=\operatorname{codim}V^G$.
+The strengthened \path{GENERIC_KCH_EXTENSIONS.tex} proves
+$r,q\le4$, $\min(r,q)\le3$ and $r+q\le7$ over every field, with no
+irreducibility or semisimplicity assumption. An invariant nondegenerate
+bilinear or involution-sesquilinear form identifies the two spans and
+gives $r=q\le3$, without semisimplicity. A degenerate ambient form is
+outside that corollary; a singular root--covector evaluation matrix
+is allowed throughout the paired-span argument.
+
+The candidate higher-rank complex-reflection route through $G_{31}$
+is now resolved negatively as a method comparison.
+\path{G31_COXETER_QUOTIENT.tex} uses the exact published model
+\cite[Section6.1, equation6.1]{km25} and constructs a genuine group
+quotient $G_{31}\twoheadrightarrow S_6$, with kernel64, taking its
+sixty reflections four to one onto the transpositions.
+Its reflection class needs five generators, but every full meridional
+quotient already supplies a rank-five Coxeter certificate and an
+irreducible five-dimensional complex KCH representation, hence
+augmentation rank at least five. It supplies no extra detection through
+this full class. Arbitrary subgroups and other higher-rank groups
+remain separate questions.
+
 
 The retained named certificate count is now $121=20+24+24+3+50$.
 The last fifty are not new MRC-family cases:
@@ -1973,6 +2045,35 @@ These are stronger group-bound consequences, with their global
 priority and remaining family comparisons explicit.
 
 \begin{thebibliography}{99}
+\bibitem{yamada} S. Yamada,
+The minimal number of Seifert circles equals the braid index of a link,
+Invent.Math.89(1987),347--356, Theorem3,p.347.
+\url{https://doi.org/10.1007/BF01389082}.
+\bibitem{franc} S. Francaviglia,
+Hyperbolic volume of representations of fundamental groups of cusped
+3-manifolds, IMRN2004(9),425--459. Published edition,
+Remark4.4,p.433; Corollary4.14,Remark4.15,Proposition4.17,p.437.
+\url{https://www.dm.unibo.it/~francavi/lavori/art_vs_IMRN.pdf}.
+\bibitem{lty} F. Luo, S. Tillmann and T. Yang,
+Thurston's spinning construction and solutions to the hyperbolic gluing
+equations for closed hyperbolic 3-manifolds, Proc.AMS141(2013),335--350.
+Retained preprint \url{https://arxiv.org/abs/1004.2992v1}, Lemma4.10,p.11.
+\bibitem{abe} T. Abe, The Rasmussen invariant of a homogeneous knot,
+Proc.AMS139(2011),2647--2656. Retained preprint
+\url{https://arxiv.org/abs/1003.5392v1}, Theorems1.2--1.3,p.2.
+\bibitem{murasugi} K. Murasugi,
+On the Alexander polynomial of the alternating knot,
+OsakaMath.J.10(1958),181--189, Theorem1.1,p.181.
+\url{https://ir.library.osaka-u.ac.jp/repo/ouka/all/3567/omj10_02_03.pdf}.
+\bibitem{lm} C. Livingston and P. Melvin,
+Abelian invariants of satellite knots, Geometry and Topology,
+LectureNotesMath.1167(1985),217--227, Theorem2/corollary,p.222.
+\url{https://pmelvin.blogs.brynmawr.edu/files/2021/09/1985LivingstonMelvin.pdf}.
+\bibitem{km25} Y. Konishi and S. Minabe,
+A reduction theorem for good basic invariants of finite complex reflection
+groups, Journal of Algebra677(2025),327--359. Accepted manuscript
+\url{https://arxiv.org/abs/2409.00380v2}, Section6.1,equation6.1,p.25.
+\url{https://doi.org/10.1016/j.jalgebra.2025.03.048}.
 \bibitem{st54} G. C. Shephard and J. A. Todd,
 Finite unitary reflection groups, Canadian Journal of Mathematics 6
 (1954), 274--304. Sections2--4 and TableVII, p.301.

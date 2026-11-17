@@ -1,0 +1,40 @@
+{
+  "schema": "simultaneous-norm-survival-checks/v1",
+  "status": "pass",
+  "scope": "Certified Euler-product constant only; no pointwise binary theorem.",
+  "arithmetic": "integers and Fraction; no floating-point arithmetic",
+  "python": "3.12.3",
+  "checker_sha256": "3c2a110ff37fd26ed8caeeb79636092a30f6c51e3ac1a7254cd64c63567e64e9",
+  "prime_cutoff": 1000000,
+  "scale": 1000000000000000000000000000000,
+  "prime_counts_modulo_12": {
+    "1": 19564,
+    "5": 19611,
+    "7": 19667,
+    "11": 19654
+  },
+  "forbidden_prime_factor_count": 58932,
+  "finite_product_lower_numerator": 633190849405267439172812929254,
+  "finite_product_upper_numerator": 633190849405267439172812988186,
+  "tail_factor_lower_bound": "999994999997/1000001000000",
+  "infinite_product_lower_bound": "316593841724560420143700631435917645606119/500000500000000000000000000000000000000000",
+  "infinite_product_upper_bound": "316595424702633719586406494093/500000000000000000000000000000",
+  "claimed_strict_lower_bound": "633187/1000000",
+  "claimed_strict_upper_bound": "633191/1000000",
+  "controls": {
+    "exact_small_product": "21037147526651294957879238811482254181107071148919381024964606993367040000/32778935336606868431852213698784202281344326602554129637161250791839167209",
+    "local_factor_primes": [
+      5,
+      7,
+      11,
+      13
+    ],
+    "small_prime_cutoff": 50,
+    "negative_controls_rejected": [
+      "missing_p5_denominator",
+      "unsquared_p11_factor",
+      "doubled_telescoping_tail",
+      "corrupt_directed_interval"
+    ]
+  }
+}

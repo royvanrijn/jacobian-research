@@ -1,0 +1,116 @@
+{
+  "status": "passed",
+  "checked_on": "2026-11-17",
+  "environment": {
+    "python": "3.12.3",
+    "sympy": "1.14.0"
+  },
+  "sha256": {
+    "verify_gaussian_affine_w_square_finite_images.py": "404ef0d588919d61bc4e5031a4e0266d1b3b66f9c3ff0281592d3ed61028ea7d",
+    "GAUSSIAN_AFFINE_W_SQUARE_FINITE_IMAGES.md": "7e6e32492dd8a9010fdcd5348878d999a542099213f268f7e8d2ae80fa9bce03",
+    "GAUSSIAN_AFFINE_ISOTROPIC_CHART.md": "7305f5915b0861a6f55a4c76c46ff1c5360d6b8f41ea9c0f301f81a8bf4d6900",
+    "GAUSSIAN_UNIT_ELL_FORMAL_SOURCE_FINITE_IMAGE_EXCLUSION.md": "f4a56b9d604ded4a56ba8c00d8bf0bcd590730fd55d9fe752e9ee19f6de2d3db",
+    "GAUSSIAN_MOVING_COMMON_ROOT_SCALAR_EXCLUSION.md": "a941f6ae33a378c6527ea091d2d79d1069e51a91bd5ade4383db1236f01da03e",
+    "GAUSSIAN_SIMPLE_ORIGIN_ALTERNATE_SCALAR_EXCLUSION.md": "78116adf45fcf424ffc10bf968cf7b0bfe1d2c73fa5ae714df47b1d6310c4e8d",
+    "GAUSSIAN_MULTIBASE_QUADRATIC_FIBRE_PRIMITIVITY.md": "1449db0b915fd8abe58c627441e399a57446a7f0d8c98e2b715b780c50ca4492",
+    "GAUSSIAN_AMPLITUDE_IDEALS_AND_WEIGHT_INVARIANCE.md": "650c2f422f8db94d963c00ac1ef30cc46a1efee4fb8fc9298bb10b21b5eb7cbd"
+  },
+  "checks": {
+    "status": "PASS",
+    "scope": "bounded algebraic controls only; unrestricted proof is written",
+    "generic_schur_identities": 2,
+    "a0_high_coefficient_controls": [
+      {
+        "c": 0,
+        "j": 2,
+        "time_degree": 4
+      },
+      {
+        "c": 0,
+        "j": 3,
+        "time_degree": 5
+      },
+      {
+        "c": 0,
+        "j": 4,
+        "time_degree": 6
+      },
+      {
+        "c": 0,
+        "j": 5,
+        "time_degree": 6
+      },
+      {
+        "c": 3,
+        "j": 2,
+        "time_degree": 6
+      },
+      {
+        "c": 3,
+        "j": 3,
+        "time_degree": 6
+      },
+      {
+        "c": 3,
+        "j": 4,
+        "time_degree": 6
+      },
+      {
+        "c": 3,
+        "j": 5,
+        "time_degree": 6
+      }
+    ],
+    "original_wick_vacuum_controls": [
+      {
+        "lambda": 1,
+        "mu": 2,
+        "c": 3,
+        "a": 9,
+        "h0": 4,
+        "h1": 5,
+        "u0": 6,
+        "k0": 7,
+        "k1": 8,
+        "actual_vacuum_jet": "246037*t**4/2 + 20468*t**3/3 + 380*t**2 + 21*t + 1"
+      },
+      {
+        "lambda": 1,
+        "mu": 2,
+        "c": 3,
+        "a": 0,
+        "h0": 4,
+        "h1": 0,
+        "u0": 5,
+        "k0": 6,
+        "k1": 0,
+        "actual_vacuum_jet": "2857*t**4/8 + 111*t**3 + 61*t**2/2 + 6*t + 1"
+      },
+      {
+        "lambda": 2,
+        "mu": 0,
+        "c": 0,
+        "a": 0,
+        "h0": 3,
+        "h1": 1,
+        "u0": 2,
+        "k0": 4,
+        "k1": 1,
+        "actual_vacuum_jet": "1703*t**4/6 + 239*t**3/3 + 22*t**2 + 5*t + 1"
+      }
+    ],
+    "moment_orders": [
+      0,
+      4
+    ],
+    "low_degree_discriminant_identity": true,
+    "formal_verification": false,
+    "independent_replay": false,
+    "external_review": false
+  },
+  "independent_replay": false,
+  "formal_verification": false,
+  "external_review": false,
+  "unrestricted_result_from_finite_prefix": false,
+  "scope": "Bounded exact algebraic and original Wick controls; the unrestricted theorem is the pinned written proof with retained comparison imports."
+}

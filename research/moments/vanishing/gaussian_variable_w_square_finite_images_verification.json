@@ -1,0 +1,133 @@
+{
+  "status": "passed",
+  "exact_face_and_tail_cases": [
+    {
+      "m": 3,
+      "sigma_power": 0,
+      "critical_displacement_bound": "1",
+      "worst_deep_tail_order": "1/3"
+    },
+    {
+      "m": 5,
+      "sigma_power": 1,
+      "critical_displacement_bound": "2",
+      "worst_deep_tail_order": "2/5"
+    },
+    {
+      "m": 7,
+      "sigma_power": 2,
+      "critical_displacement_bound": "3",
+      "worst_deep_tail_order": "3/7"
+    },
+    {
+      "m": 9,
+      "sigma_power": 3,
+      "critical_displacement_bound": "4",
+      "worst_deep_tail_order": "4/9"
+    }
+  ],
+  "critical_cubic_shift": "F+1/27=(tau^2-3)^2(4tau^2-3)/(108tau^6); multiplicity2",
+  "original_zero_mass_marker_controls": [
+    {
+      "m": 3,
+      "original_marker": "1",
+      "leading_coefficient": 1
+    },
+    {
+      "m": 5,
+      "original_marker": "z",
+      "leading_coefficient": 2
+    },
+    {
+      "m": 7,
+      "original_marker": "z**2",
+      "leading_coefficient": 4
+    },
+    {
+      "m": 9,
+      "original_marker": "z**3",
+      "leading_coefficient": 8
+    }
+  ],
+  "fixed_cover_reductions": [
+    {
+      "ell": "z**3",
+      "rho": "z",
+      "reduced_degree": 1,
+      "odd_single_exception": true
+    },
+    {
+      "ell": "(z - 1)**9",
+      "rho": "(z - 1)**4",
+      "reduced_degree": 1,
+      "odd_single_exception": true
+    },
+    {
+      "ell": "(z - 1)**8",
+      "rho": "(z - 1)**3",
+      "reduced_degree": 2,
+      "odd_single_exception": false
+    },
+    {
+      "ell": "z**3*(z - 1)**5",
+      "rho": "z*(z - 1)**2",
+      "reduced_degree": 2,
+      "odd_single_exception": false
+    },
+    {
+      "ell": "z**4*(z - 1)**3",
+      "rho": "z*(z - 1)",
+      "reduced_degree": 3,
+      "odd_single_exception": false
+    },
+    {
+      "ell": "z**2*(z - 1)**3*(z + 2)**5",
+      "rho": "(z - 1)*(z + 2)**2",
+      "reduced_degree": 4,
+      "odd_single_exception": false
+    }
+  ],
+  "finite_branch_original_markers": [
+    "1",
+    "z",
+    "w",
+    "y",
+    "w**2",
+    "w*z",
+    "w*y"
+  ],
+  "finite_branch_normalized_periods": [
+    "1",
+    "0",
+    "2*t**2 + 9*t",
+    "2*t",
+    "4*t**4 + 64*t**3 + 524*t**2",
+    "1",
+    "4*t**3 + 18*t**2 + t"
+  ],
+  "original_Wick_orders": [
+    0,
+    6
+  ],
+  "safe_marker_cutoff": "m>deg Q through moment6 for seven markers",
+  "scope_controls": [
+    "degree-one ell=z is pure/safe and outside degell>=2",
+    "common double origin has factorial original unit; do not transport it through a clean-source argument"
+  ],
+  "scope": "Finite exact controls only. All scalar shifts, all scales and full marked-curve gluing are proved in the written argument, including the permanently irregular double pole.",
+  "python": "3.12.3",
+  "sympy": "1.14.0",
+  "sha256": {
+    "GAUSSIAN_VARIABLE_W_SQUARE_FINITE_IMAGES.md": "a298713d612d53f2982fb0d59d2d308ba43f5347736a4771069925eb67801046",
+    "verify_gaussian_variable_w_square_finite_images.py": "86986e7e8be31af9060bb2abdb2396128538ebffeb6cce5092a0c586529289bc",
+    "GAUSSIAN_QUADRATIC_W_MIXED_FINITE_IMAGES.md": "4fc9729e3a6afbc096c9c3cb552247a8df66393879ee130c0d7bb19d5025b6f9",
+    "GAUSSIAN_AFFINE_ISOTROPIC_CHART.md": "7305f5915b0861a6f55a4c76c46ff1c5360d6b8f41ea9c0f301f81a8bf4d6900",
+    "GAUSSIAN_MULTIBASE_QUADRATIC_FIBRE_PRIMITIVITY.md": "1449db0b915fd8abe58c627441e399a57446a7f0d8c98e2b715b780c50ca4492",
+    "GAUSSIAN_AMPLITUDE_IDEALS_AND_WEIGHT_INVARIANCE.md": "650c2f422f8db94d963c00ac1ef30cc46a1efee4fb8fc9298bb10b21b5eb7cbd",
+    "../../../unpublished/gaussian-boundary/analytic_core.tex": "630aa431b35e930680437ef4d666f71129f25187120bfb67302925f6c882b53b",
+    "../../../unpublished/gaussian-boundary/seed_period_comparison.tex": "ded60022b51ecd34b1104e2c828947b8177e7e4a97f98c66324d3ca016e1450a"
+  },
+  "independent_replay": false,
+  "formal_verification": false,
+  "external_review": false
+}

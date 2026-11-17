@@ -1,0 +1,154 @@
+{
+  "status": "passed",
+  "reduced_cover_cases": [
+    {
+      "case": "high_odd_root_linear_reduced_ell",
+      "g_multiplicities": [
+        9
+      ],
+      "rho": "(z - 1)**4",
+      "reduced_ell_degree": "1",
+      "reduced_c_degree": 1,
+      "reduced_raw_degree": 2
+    },
+    {
+      "case": "high_even_root",
+      "g_multiplicities": [
+        8
+      ],
+      "rho": "(z - 1)**3",
+      "reduced_ell_degree": "2",
+      "reduced_c_degree": 2,
+      "reduced_raw_degree": 4
+    },
+    {
+      "case": "two_high_roots",
+      "g_multiplicities": [
+        5,
+        7
+      ],
+      "rho": "z**2*(z - 1)**3",
+      "reduced_ell_degree": "2",
+      "reduced_c_degree": 2,
+      "reduced_raw_degree": 4
+    },
+    {
+      "case": "finite_positive_origin",
+      "g_multiplicities": [
+        3,
+        6
+      ],
+      "rho": "z*(z - 1)**2",
+      "reduced_ell_degree": "3",
+      "reduced_c_degree": 3,
+      "reduced_raw_degree": 6
+    },
+    {
+      "case": "constant_nonzero_ell",
+      "g_multiplicities": [],
+      "rho": "1",
+      "reduced_ell_degree": "0",
+      "reduced_c_degree": 9,
+      "reduced_raw_degree": 18
+    },
+    {
+      "case": "linear_ell_nonconstant_c",
+      "g_multiplicities": [
+        1
+      ],
+      "rho": "1",
+      "reduced_ell_degree": "1",
+      "reduced_c_degree": 2,
+      "reduced_raw_degree": 4
+    },
+    {
+      "case": "constant_nonzero_c",
+      "g_multiplicities": [],
+      "rho": "1",
+      "reduced_ell_degree": "11",
+      "reduced_c_degree": 0,
+      "reduced_raw_degree": 11
+    },
+    {
+      "case": "W_affine_boundary",
+      "g_multiplicities": [
+        6,
+        10
+      ],
+      "rho": "z**2*(z - 1)**4",
+      "reduced_ell_degree": "-oo",
+      "reduced_c_degree": 2,
+      "reduced_raw_degree": 4
+    }
+  ],
+  "constant_e_inverse": "generic five-term t-geometric identity",
+  "original_escaping_kernel_coefficients_0_to_5": "all zero",
+  "high_multiplicity_nonzero_marker_coefficients": [
+    0,
+    0,
+    -4
+  ],
+  "weighted_moving_marker_coefficients": [
+    "0",
+    "-1/2",
+    "0",
+    "0",
+    "0",
+    "5/8"
+  ],
+  "weighted_moving_original_vs_selected_source": "exact through order5, including zero initial mass",
+  "finite_branch_original_markers": [
+    "1",
+    "w",
+    "y",
+    "w*z",
+    "w**2",
+    "w*y",
+    "z**3 - 2*z**2 + z"
+  ],
+  "finite_branch_normalized_periods": [
+    "1",
+    "6*t**2 + 4*t",
+    "2*t",
+    "1",
+    "76*t**4 + 228*t**3 + 223*t**2 - 124*t",
+    "12*t**3 + 8*t**2 + 3*t",
+    "0"
+  ],
+  "original_Wick_moment_orders": [
+    0,
+    6
+  ],
+  "safe_original_cutoff": "six markers vanish for m>deg Q through moment6",
+  "charge_one_benchmark_diagonal_periods": [
+    1,
+    9,
+    535,
+    89593,
+    29527341
+  ],
+  "charge_one_original_monomial_controls": 20,
+  "charge_one_kernel_control": "2W-9WY maps to0; W(2W-9WY) maps to -280t^2",
+  "scope_controls": [
+    "rho may vanish identically in the finite positive-angular branch",
+    "linear reduced ell occurs and retains effective cover degree2"
+  ],
+  "scope": "Bounded exact algebraic and original-Wick controls; universal classification uses the complete written source and period-comparison proof.",
+  "python": "3.12.3",
+  "sympy": "1.14.0",
+  "sha256": {
+    "GAUSSIAN_QUADRATIC_W_MIXED_FINITE_IMAGES.md": "4fc9729e3a6afbc096c9c3cb552247a8df66393879ee130c0d7bb19d5025b6f9",
+    "verify_gaussian_quadratic_w_mixed_finite_images.py": "b9cc68fdaf58cf93b35694cd1cf20e4f914efa2980adeed72ad3fc6e1520676a",
+    "GAUSSIAN_AFFINE_ISOTROPIC_CHART.md": "7305f5915b0861a6f55a4c76c46ff1c5360d6b8f41ea9c0f301f81a8bf4d6900",
+    "GAUSSIAN_W_AFFINE_FINITE_IMAGE_OBSTRUCTIONS.md": "9d317392fd92f0df994402ab4e150a13abb6d0019236e2fc462e198be0d486ab",
+    "GAUSSIAN_MULTIBASE_QUADRATIC_FIBRE_PRIMITIVITY.md": "1449db0b915fd8abe58c627441e399a57446a7f0d8c98e2b715b780c50ca4492",
+    "GAUSSIAN_AMPLITUDE_IDEALS_AND_WEIGHT_INVARIANCE.md": "650c2f422f8db94d963c00ac1ef30cc46a1efee4fb8fc9298bb10b21b5eb7cbd",
+    "GAUSSIAN_UNIT_ELL_FORMAL_SOURCE_FINITE_IMAGE_EXCLUSION.md": "f4a56b9d604ded4a56ba8c00d8bf0bcd590730fd55d9fe752e9ee19f6de2d3db",
+    "GAUSSIAN_SIMPLE_ORIGIN_ALTERNATE_SCALAR_EXCLUSION.md": "78116adf45fcf424ffc10bf968cf7b0bfe1d2c73fa5ae714df47b1d6310c4e8d",
+    "GAUSSIAN_MOVING_COMMON_ROOT_SCALAR_EXCLUSION.md": "a941f6ae33a378c6527ea091d2d79d1069e51a91bd5ade4383db1236f01da03e",
+    "MIXED_CUTOFF_JETS_AND_INFINITE_TAILS.md": "b29d91339b7799f95575a191d8bfc7294b23d84ba2ba74769620f69ac2df2afc"
+  },
+  "independent_replay": false,
+  "formal_verification": false,
+  "external_review": false
+}

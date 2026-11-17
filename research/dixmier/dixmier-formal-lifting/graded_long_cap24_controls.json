@@ -1,0 +1,96 @@
+{
+  "claim": "No even equivariant canonical Long Weyl jet of common degree24 through h5",
+  "status": "PASS",
+  "environment": {
+    "python": "3.12.3",
+    "arithmetic": "Exact Fraction polynomial identities, bare modular determinant, exact rational left functional"
+  },
+  "cap": 24,
+  "image_order": [
+    "R",
+    "T",
+    "D",
+    "S"
+  ],
+  "image_weights": [
+    -1,
+    2,
+    4,
+    1
+  ],
+  "source_weights": [
+    -1,
+    1,
+    4,
+    2
+  ],
+  "h_weight": 3,
+  "h3": {
+    "basis_counts": [
+      62,
+      91,
+      114,
+      80
+    ],
+    "unknowns": 347,
+    "rows": 2129,
+    "nonzeros": 52934,
+    "exact_particular_from_cap23": true,
+    "exact_independent_kernels": [
+      "G=R^3",
+      "G=R^4*S",
+      "G=X^3"
+    ],
+    "minor_size": 344,
+    "minor_det_modp": 381548,
+    "rank_Q": 344,
+    "first_family": "g0+alpha*K1+beta*K2+gamma*K3",
+    "all_first_R_corrections_zero": true
+  },
+  "target_gauge_h4_D_degrees": {
+    "constant": 16,
+    "gamma_coefficient": 21
+  },
+  "h5": {
+    "basis_counts": [
+      24,
+      40,
+      54,
+      34
+    ],
+    "unknowns": 152,
+    "rows": 1289,
+    "rhs_nonzeros": [
+      96,
+      189,
+      301
+    ],
+    "parameter": "gamma retained without source-gauge normalization",
+    "left_functional_support": 118,
+    "annihilates_every_A_column": true,
+    "evaluations_on_b0_b1_b2": [
+      "1",
+      "0",
+      "0"
+    ],
+    "universal_compatibility": "0=1 for every gamma"
+  },
+  "invalid_controls": {
+    "corrupted_particular_rejected": true,
+    "corrupted_functional_rejected": true
+  },
+  "prime": 1000003,
+  "hashes": {
+    "check_graded_long_cap24.py": "71eaf546c811d2ac297cf5a45864e4af1afaf16c8b1d8a0944c60b8619c246bc",
+    "GRADED_LONG_CAP24_JET_OBSTRUCTION.md": "c55514acbdac623b7991198ef3b00d38dce065b69eda04bbe73a853d04f5c62c",
+    "graded_long_cap24_witness.json": "22c6bf822a6ff218c82ab3534b25c646d644d998c75995dd6f0f23acfce7a66f",
+    "graded_long_cap23_witness.json": "9f4523d1b776289095f908b19f82ed6297fa243c672904831f072ad7e727be34",
+    "check_graded_long_cap23.py": "78bc02799a65b5587a6dad0672d72e74776f1a719430546f7e95dfe1ed8c3e62",
+    "check_long_graph_curvature.py": "3574e9a9fbfd9e19251709a6af9759909ed09a4f960a44df60e35a4480e04a0f",
+    "../dixmier-audit/verify_long_pbw.py": "0fd237f4954b4a45260b65ffef2e973e1f253e3b359e440da7d0cc6dbdd06eed"
+  },
+  "coverage_boundary": "Complete finite even equivariant cap24 first/second jet family; all first parameters classified, two target gauges removed cap-preservingly, extra source parameter retained and contradicted for every value by an exact rational functional. No nongraded or odd-jet exclusion, cap25 conclusion or bounded normalization/DC1/DC2 theorem is claimed.",
+  "independent_replay": false,
+  "formal_verification": false,
+  "external_review": false
+}

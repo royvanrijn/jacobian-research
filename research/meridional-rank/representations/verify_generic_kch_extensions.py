@@ -6,6 +6,10 @@ core contradiction. This checker verifies three additional cores, three raw
 local folds, both signed basis determinants and12 actual signed transfers.
 Optional --census re-reads the independent named census and actual signed
 Spherogram knot_group model on all16 literal diagrams. No parameter sampling.
+The formal coefficient families are independent roots and independent
+covectors; they need not be bases of the ambient space/dual. No inverse
+of their evaluation matrix occurs. The paired-span and nondegenerate-form
+consequences also use their separate written linear-algebra arguments.
 """
 import argparse
 from copy import deepcopy
@@ -298,9 +302,10 @@ def main():
       'signed_reduced_transfers':transfers,'corruptions_rejected':rejected,
       'optional_census_replay':census,
       'representation_scope':DATA['representation_scope'],'augmentation_scope':DATA['augmentation_scope'],
+      'paired_span_scope':DATA['paired_span_scope'],'form_preserving_scope':DATA['form_preserving_scope'],
       'separate_corollary_dependencies':DATA['separate_corollary_dependencies'],
       'input_sha256':{p.relative_to(HERE).as_posix():hashlib.sha256(p.read_bytes()).hexdigest() for p in files}|DATA['source_sha256'],
-      'assurance':'Exact internal integer/Laurent and literal oriented-PD controls, including both basis determinants. Written independence and nonzero-cancellation arguments remain essential. Positive attainment and meridional-rank statements are separate mathematical imports for their own corollaries; no formal verification, independent specialist review or worldwide-priority claim.'}
+      'assurance':'Exact internal integer/Laurent and literal oriented-PD controls, including both basis determinants for separately independent root and covector families and no inverse evaluation matrix. Written span, independence, nonzero-cancellation and nondegenerate-form adjoint arguments remain essential. Positive attainment and meridional-rank statements are separate mathematical imports for their own corollaries; no formal verification, independent specialist review or worldwide-priority claim.'}
  receipt_path=HERE/'generic_kch_extensions_verification.json'
  if receipt_path.is_file():
   previous=json.loads(receipt_path.read_text())
@@ -312,6 +317,7 @@ def main():
  print(json.dumps({'status':'PASS','names':16,'additional_generic_cores':3,'raw_local_fold_types':3,
                    'both_signed_basis_determinants':16,'signed_reduced_transfers':12,
                    'representation_fields':'all','meridian_determinant':'every nonzero scalar',
+                   'written_paired_span_consequence':'min(r,q)<=3 and r+q<=7',
                    'optional_census_replay':census},indent=2))
 
 if __name__=='__main__':main()

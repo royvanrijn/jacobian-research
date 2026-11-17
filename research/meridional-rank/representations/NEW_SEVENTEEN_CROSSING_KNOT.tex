@@ -1,0 +1,432 @@
+\documentclass[11pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb,amsthm,booktabs}
+\usepackage[hidelinks]{hyperref}
+\usepackage{xurl}
+\setlength{\emergencystretch}{2em}
+\newtheorem{theorem}{Theorem}
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{definition}[theorem]{Definition}
+\newcommand{\mr}{\operatorname{mr}}
+\title{A seventeen-crossing knot with a sharp simple-group bound}
+\author{Written proof, finite certificates and verified intervals}
+\date{17 November 2026}
+\begin{document}\maketitle
+
+An explicit closed four-braid has meridional rank and bridge number four.
+A double-transposition epimorphism onto $A_8$ supplies the lower bound.
+Its Alexander polynomial and Yamada's theorem show that its genus,
+braid index and crossing number are $7,4,17$, respectively. Verified
+intervals prove that its knot exterior is hyperbolic. A different
+interval certificate gives a nonzero-volume representation of the
+actual double branched cover, proving that this cover is not a graph
+manifold. The latter argument permits negative tetrahedron shapes
+and does not assert hyperbolicity of the closed cover.
+
+The proofs of these statements are separate. In particular, neither
+the geometric claims nor a comparison with other equality methods is
+a premise of the finite meridional bound. The knot is defined below
+by a literal braid and PD, rather than assigned a new census name.
+Worldwide priority and exclusion from every previously proved family
+are not asserted.
+
+\begin{definition}\label{def:knot}
+Let $K_*$ be the closure of the four-braid
+\[
+ \beta=\sigma_1\sigma_2\sigma_3^{-2}\sigma_2\sigma_3^{-2}
+        \sigma_2\sigma_1^2\sigma_2^3\sigma_3^{-1}\sigma_2^3.
+\]
+The generator convention is the Spherogram braid-closure convention,
+bound to the literal PD in Section~\ref{sec:literal}. Reversing all
+crossing conventions gives a mirror and preserves the conclusions.
+\end{definition}
+
+\section{The finite meridional certificate}
+
+Use $A_8$ on $\{0,\ldots,7\}$ and the quartet
+\[
+\begin{aligned}
+ x_0&=(0\,1)(2\,3),&x_1&=(1\,4)(2\,3),\\
+ x_2&=(0\,5)(1\,6),&x_3&=(1\,2)(6\,7).
+\end{aligned}
+\]
+All double transpositions belong to one $A_8$ conjugacy class, of size
+$\binom84\cdot3=210$. An odd $S_8$ conjugator can be made even by
+multiplying by one transposition factor centralizing its source.
+
+\begin{theorem}\label{thm:sharp}
+There is a meridian-class epimorphism
+$\pi_1(S^3\setminus K_*)\twoheadrightarrow A_8$ taking meridians to
+double transpositions. Moreover,
+\[
+                         \mr(K_*)=b(K_*)=4.
+\]
+\end{theorem}
+\begin{proof}
+The exact literal certificate in Section~\ref{sec:literal} has seventeen
+arc images, all double transpositions, and satisfies every relation
+$p_op_ap_o=p_b$ at an over/under crossing. The involutions make these
+relations independent of the signed Wirtinger convention. Its four
+seed images are $x_0,x_1,x_2,x_3$. Exact multiplication enumerates
+$20160$ elements in their generated subgroup. Since every image is
+even, the image is all of $A_8$.
+
+The lower bound needs only transitivity on the eight points.
+For any family of $r$ double transpositions, draw their two
+transposition edges per generator. The components of this graph are
+exactly the permutation orbits. A transitive family needs at least
+seven edges; hence $7\le2r$ and $r\ge4$. Every meridional generating
+family maps into the double-transposition class, since meridians are
+conjugate up to inversion and these images are involutions.
+Thus $\mr(K_*)\ge4$.
+
+The retained four-seed trace colors all seventeen arcs using only the
+published Wirtinger coloring move. The bridge--Wirtinger equality
+\cite[Definition~1.2 and Theorem~1.3]{bkvv} gives $b(K_*)\le4$.
+The elementary bridge presentation gives $\mr(K_*)\le b(K_*)$,
+proving equality. Meridional generation alone is not used to infer
+the bridge upper bound.
+\end{proof}
+
+The target is the ordinary-rank-two group $A_8$, whose specified
+meridian class has generating rank four. These are properties of the
+finite target, not assertions about ordinary generating rank of the
+knot group. They are proved separately in
+\path{A8_SIMPLE_QUOTIENTS.tex}, Theorem~\texttt{thm:group}; the
+transitivity proof above supplies the necessary lower bound directly.
+
+\section{Genus and minimal crossing number}
+
+\begin{theorem}\label{thm:crossing}
+Up to a Laurent unit, the Alexander polynomial of $K_*$ is
+\[
+\begin{aligned}
+\Delta(t)={}&t^{14}-4t^{13}+8t^{12}-8t^{11}+18t^9-38t^8+47t^7\\
+           &{}-38t^6+18t^5-8t^3+8t^2-4t+1.
+\end{aligned}
+\]
+In particular $|\Delta(-1)|=117$. The genus is seven, the braid
+index is four, and the crossing number is exactly seventeen.
+\end{theorem}
+\begin{proof}
+The checker reconstructs coherent orientations from the literal PD
+and forms its Alexander--Fox matrix. At a crossing
+$g_b=g_o g_a g_o^{-1}$ the row has coefficients $1-t,t,-1$ on
+$o,a,b$; for the reversed conjugation these become $1-t,-1,t$.
+A $16\times16$ cofactor presents the Alexander module, after removing
+the redundant Wirtinger relation and the constant direction in the
+abelianized boundary map. Its determinant is $\Delta$ up to a Laurent
+unit. This is also seen directly from the infinite-cyclic-cover chain
+complex: the kernel of the generator boundary map has basis
+$e_i-e_{17}$, and the cofactor is the relation matrix in that basis.
+
+The determinant has degree at most sixteen. The standard-library
+checker evaluates the integer determinant at $t=0,\ldots,16$ by
+fraction-free elimination and interpolates the polynomial exactly.
+Removing its Laurent unit gives the displayed polynomial. An
+independent Burau calculation is a supporting control, not needed by
+the canonical replay.
+
+For a genus-$g$ Seifert surface, cutting the infinite cyclic cover
+along its lifts gives the classical $2g\times2g$ Seifert-matrix
+presentation $tV-V^T$. Thus the Alexander breadth is at most $2g$,
+and breadth fourteen forces $g(K_*)\ge7$.
+The Seifert surface of this seventeen-crossing closed four-braid has
+four Seifert circles and genus $(17-4+1)/2=7$. Therefore $g(K_*)=7$.
+
+Theorem~\ref{thm:sharp} and the four-braid presentation imply that
+its braid index is four: bridge number never exceeds braid index.
+Yamada's theorem \cite[Theorem~3, printed p.~347]{yamada} states that
+the minimal number of Seifert circles equals braid index.
+Consequently every diagram $D$ of $K_*$ has $s(D)\ge4$.
+Its canonical Seifert genus $g_D$ is at least seven, so
+\[
+           c(D)=2g_D+s(D)-1\ge14+4-1=17.
+\]
+The displayed braid attains seventeen crossings.
+\end{proof}
+
+\section{The actual manifold certificates}
+
+\begin{theorem}\label{thm:hyperbolic}
+The exterior of $K_*$ admits a complete finite-volume hyperbolic
+metric. In particular, $K_*$ is a prime hyperbolic knot.
+\end{theorem}
+\begin{proof}
+The topology replay constructs the exterior directly from the literal
+PD and checks its saved triangulation including peripheral curves.
+The Sage replay certifies a solution in the retained boxes for its
+$26$ shapes. It checks that all imaginary parts are positive, that
+all edge logarithmic equations have the correct $2\pi i$ lift, and
+that both complete-cusp holonomies have lift zero. These are the
+usual sufficient gluing conditions for a complete hyperbolic metric.
+
+This step imports the pinned SnapPy~3.3.2/SageMath~10.9 verified
+interval algorithms. Shape-solution existence is established with
+complex Krawczyk intervals; the remaining inequalities use rigorous
+interval arithmetic. The actual replay, version information,
+source hashes and rational interval endpoints are retained. A default
+standard-library run alone does not perform these analytic checks.
+\end{proof}
+
+Let $E$ be that literal exterior, with its actual meridian $m$ and
+longitude $l$. Put $Y=\Sigma_2(K_*)$.
+The unique nontrivial meridional character sends $m$ to $1$ and $l$
+to $0$ in $\mathbb Z/2$. On the boundary its kernel is the lattice
+\[
+                         \langle 2m,l\rangle.
+\]
+The primitive lift of $m^2$ is therefore the slope to fill in the
+unbranched double cover. This identifies the resulting closed manifold
+with the double branched cover.
+
+The replay implements this construction by first declaring the base
+orbifold filling $(2,0)$ and then taking its unique cyclic two-sheet
+cover. It never guesses a filling on an arbitrary unfilled-cover basis.
+The simplified orbifold presentation has four generators $a,b,c,d$,
+meridian $d$, a relator $d^2$, and mod-two relator rank three.
+The exact character is $a,b,c,d\mapsto1$; the recorded longitude maps
+to zero. A second cover construction from this explicit permutation
+character gives exactly the same decorated triangulation signature
+as the enumerated cover.
+
+SnapPy's retained covering source explicitly lifts the base filling
+curve, divides by the primitive intersection-number gcd, adjusts the
+orbifold multiplicity, and installs this curve as the new meridian.
+The reported coefficient $(1,0)$ is this tracked primitive lift.
+In a boundary basis $\widetilde{m^2},\widetilde l$ the covering matrix
+is $\operatorname{diag}(2,1)$. A possible longitude shear does not
+change the filled slope. The saved filling produces a valid closed
+orientable $25$-tetrahedron triangulation with $H_1(Y)=\mathbb Z/117$;
+these are additional reconstruction controls.
+
+\begin{theorem}\label{thm:nongraph}
+The actual double branched cover $Y=\Sigma_2(K_*)$ is not a graph
+manifold.
+\end{theorem}
+\begin{proof}
+Let $M$ be the unfilled one-cusped triangulation underlying the
+tracked cover. Its ideal triangulation has $52$ shapes $z_j$, and
+write
+\[
+                    z'_j=(1-z_j)^{-1},\qquad z''_j=(z_j-1)/z_j.
+\]
+The retained $120$-bit Krawczyk certificate supplies a nondegenerate
+solution of the rectangular equations: all shape imaginary intervals
+exclude zero, hence $z_j\notin\{0,1\}$. Fourteen shapes have negative
+imaginary part. They are permitted in the argument below.
+
+There is an exact algebraic check of the \emph{full} equation system.
+A retained unimodular $52\times52$ integer transformation takes the
+$52$ edge equations, including their sign constants, to one identity
+and $51$ independent equations. Together with the filling equation,
+these are exactly the $52$ equations certified by the Krawczyk engine.
+The standard-library replay verifies the determinant $\pm1$, all
+transformed exponents and constants, and the discarded identity.
+Thus the selected certified root satisfies every rectangular equation;
+merely finding intervals close to zero would not suffice.
+
+The filling equation's rectangular sign requires care. In a row
+$(a_j,b_j,c_j)$ of logarithmic exponents,
+\[
+ \prod_j z_j^{a_j}(z'_j)^{b_j}(z''_j)^{c_j}
+   =(-1)^{\sum c_j}\prod_j z_j^{a_j-c_j}(1-z_j)^{c_j-b_j}.
+\]
+For the filled slope both the substitution sign and the raw rectangular
+right side are $-1$. Their product is $+1$: the actual peripheral
+multiplier is exactly one. Its logarithmic lift is $-4\pi i$.
+The commuting longitude has a certified logarithm with real part
+strictly between $17.47$ and $17.48$, so its multiplier has nonunit
+modulus. It is loxodromic and its centralizer is diagonal in the basis
+of its two fixed points. A commuting peripheral element of multiplier
+one is therefore the identity in $\mathrm{PSL}_2(\mathbb C)$.
+The holonomy representation kills the primitive filled slope and
+factors through $\pi_1(Y)$.
+
+To identify its volume, Francaviglia's straight pseudo-developing-map
+construction associates holonomy to a nondegenerate shape solution and
+identifies its volume with the signed tetrahedron sum
+\cite[Remark~4.4, p.~433]{francaviglia}. The construction includes
+nonparabolic peripheral images
+\cite[Corollary~4.14 and Remark~4.15, p.~437]{francaviglia}.
+His Dehn-filling compatibility result
+\cite[Proposition~4.17, p.~437]{francaviglia} says that the real
+representation volume is unchanged when the representation factors
+through a filling. Thus the resulting representation
+$\rho:\pi_1(Y)\to\mathrm{PSL}_2(\mathbb C)$ has
+\[
+       \operatorname{Vol}(\rho)=\sum_{j=1}^{52}D(z_j),
+\]
+where $D$ is the Bloch--Wigner dilogarithm. The Sage/Arb interval
+replay certifies
+\[
+                     10.37<\operatorname{Vol}(\rho)<10.39.
+\]
+Finally every $\mathrm{PSL}_2(\mathbb C)$ representation of a closed
+orientable graph manifold has volume zero
+\cite[Lemma~4.10, p.~11 of the retained version]{lty}.
+This contradicts the certified positive interval.
+No positive-shape triangulation or hyperbolic structure of $Y$ is used.
+\end{proof}
+
+\section{Connected sums and bounded comparisons}
+
+\begin{corollary}\label{cor:trefoils}
+For every integer $s\ge0$, put $K_s=K_*\#(\#^s3_1)$. Then
+\[
+                         \mr(K_s)=b(K_s)=4+s.
+\]
+\end{corollary}
+\begin{proof}
+Retain the transitive eight-sheet $A_8$ action of the seed. Its meridian
+has two moving pairs and four fixed points, so $n=8,c=6,\delta=2$.
+Let every meridian of each added trefoil act by the same involution.
+Its disconnected branched cover consists of two double covers and
+four single-sheet $S^3$ components. The trefoil orbifold presentation
+\[
+             \langle a,b\mid a^2=b^2=(ab)^3=1\rangle\cong S_3
+\]
+has even kernel $C_3$. Each double component therefore has
+$H_1(-;\mathbb F_3)$ of dimension one.
+
+The connected-sum sphere lifts to six spheres, one per meridian cycle.
+They join the existing connected cover to the six trefoil components
+in a star tree. Mayer--Vietoris adds two to first homology over
+$\mathbb F_3$, with no graph-cycle contribution. After $s$ additions,
+the connected cover has $h_s=h_0+2s$, where only $h_0\ge0$ is needed.
+The arbitrary-cycle cover inequality
+\path{GENERAL_BRANCHED_COVER_RANK_BOUNDS.tex},
+Theorem~\texttt{thm:general}, gives
+\[
+ \mr(K_s)\ge\left\lceil\frac{8-1+h_0+2s}{2}\right\rceil\ge4+s.
+\]
+Joining a four-bridge position of $K_*$ to $s$ two-bridge trefoil
+positions gives the upper bound $b(K_s)\le4+s$.
+No seed-cover homology calculation, exact normalized supremum or
+unrestricted meridional-rank additivity is assumed.
+\end{proof}
+
+\begin{corollary}\label{cor:comparison}
+The separate universal reflection obstruction excludes every
+rank-at-least-four Coxeter reflection-class quotient of $K_*$,
+including infinite targets and singular canonical forms. For every $s\ge0$,
+any such quotient of $K_s$ has meridian-class generating rank at most
+$3+s$, so a single Coxeter reflection-class quotient cannot supply
+the sharp $4+s$ lower bound by its class rank. Theorem~\ref{thm:nongraph}
+also excludes the graph-double-cover hypothesis of
+the corresponding known equality family.
+\end{corollary}
+\begin{proof}
+The Coxeter statement is the independent companion
+\path{UNIVERSAL_17_REFLECTION_OBSTRUCTION.tex},
+Corollaries~\texttt{cor:coxeter} and \texttt{cor:sums}. These are
+characteristic-zero statements.
+The second assertion is exactly the non-graph conclusion above;
+the bounded literature comparison is recorded in
+\path{NEW_SEVENTEEN_LITERATURE_AUDIT.json}.
+Neither comparison is a premise of Theorem~\ref{thm:sharp}.
+\end{proof}
+
+\section{Literal finite data}\label{sec:literal}
+
+The PD, in braid-crossing order, is
+\[
+\begin{gathered}
+(4,2,5,1),\ (5,17,6,16),\ (27,6,28,7)\\
+(7,28,8,29),\ (17,9,18,8),\ (29,18,30,19)\\
+(19,30,20,31),\ (9,21,10,20),\ (2,22,3,21)\\
+(22,4,23,3),\ (23,11,24,10),\ (11,25,12,24)\\
+(25,13,26,12),\ (31,26,32,27),\ (13,33,14,32)\\
+(33,15,0,14),\ (15,1,16,0)
+\end{gathered}
+\]
+Join zero-based PD slots $1$ and $3$ (the second and fourth entries)
+through each overpass and sort the
+connected edge-label components lexicographically to obtain arcs
+$0,\ldots,16$. Their images are
+\[
+\begin{array}{c|c@{\qquad}c|c}
+\text{arc}&\text{permutation}&\text{arc}&\text{permutation}\\\hline
+0 & (1\,4)(2\,3) & 9 & (0\,4)(2\,6)\\
+1 & (0\,1)(2\,3) & 10 & (0\,4)(6\,7)\\
+2 & (0\,4)(2\,3) & 11 & (1\,4)(6\,7)\\
+3 & (2\,3)(4\,5) & 12 & (2\,4)(6\,7)\\
+4 & (1\,2)(4\,5) & 13 & (1\,2)(6\,7)\\
+5 & (0\,5)(1\,2) & 14 & (1\,3)(6\,7)\\
+6 & (0\,5)(1\,4) & 15 & (1\,3)(2\,7)\\
+7 & (0\,5)(4\,6) & 16 & (1\,6)(2\,3)\\
+8 & (0\,5)(1\,6) & &\\
+\end{array}
+\]
+The ordered seed arcs are $(1,0,8,13)$, with images
+$(x_0,x_1,x_2,x_3)$. Each triple below means
+$(\text{known over},\text{known under},\text{new under})$:
+\[
+\begin{gathered}
+(0,1,2),\ (8,2,3),\ (3,13,14)\\
+(14,3,4),\ (4,8,9),\ (9,14,15)\\
+(15,9,10),\ (10,4,5),\ (1,10,11)\\
+(5,11,12),\ (12,5,6),\ (13,15,16)\\
+(16,6,7)
+\end{gathered}
+\]
+
+\section{Replay and trust boundaries}
+
+The four main files are the present source,
+\path{new_seventeen_crossing_knot_inputs.json},
+\path{verify_new_seventeen_crossing_knot.py} and
+\path{new_seventeen_crossing_knot_verification.json}.
+The default checker uses only Python's standard library. It verifies
+literal braid wiring, closure, all seventeen permutation relations,
+the full finite image, the four-seed trace, the Alexander cofactor,
+the mod-two covering character, exact unimodular equation reduction
+and the structure of all retained rational interval boxes.
+It does not independently establish an analytic root or evaluate
+transcendental interval functions.
+
+Run the same checker with \texttt{--topology} in the pinned
+SnapPy~3.3.2, Spherogram~2.4.1 and Regina~7.4 environment to rebuild the
+actual exterior, orbifold cover, primitive filling and closed
+triangulation. Run it separately with \texttt{--sage} in SageMath~10.9
+with SnapPy~3.3.2 to recertify the complete cusped structure, the
+closed-group shape solution, loxodromic peripheral multiplier and
+signed dilogarithm interval. These runs retain their own source hashes;
+a replay of an earlier edition is not assurance about a later one.
+
+The trusted imports are distinct: the PD/exterior construction,
+the topological covering and peripheral-lifting implementation,
+the interval Krawczyk solver, and the Sage/Arb dilogarithm implementation.
+Relevant SnapPy source snapshots and exact hashes are retained beside
+the primary papers. The cover source explicitly handles orbifold
+fillings; it is not covered merely by an unfilled-cell construction
+claim. The written reconstruction and volume arguments connect the
+software outputs to the stated manifolds.
+
+The certificates are internal exact and verified-interval computations,
+with explicit published theorem and software imports. Formal
+verification and external specialist review are not claimed.
+No closed-cover hyperbolicity, atoroidality, full JSJ decomposition,
+unrestricted augmentation-rank gap or global-priority conclusion is
+asserted.
+
+\begin{thebibliography}{9}\small
+\bibitem{bkvv} R. Blair, A. Kjuchukova, R. Velazquez and P. Villanueva,
+Wirtinger systems of generators of knot groups,
+Commun. Anal. Geom. 28 (2020), 243--262,
+Definition~1.2 and Theorem~1.3, p.~246.
+\bibitem{yamada} S. Yamada, The minimal number of Seifert circles equals
+the braid index of a link, Invent. Math. 89 (1987), 347--356,
+Theorem~3, p.~347. DOI:10.1007/BF01389082.
+\bibitem{francaviglia} S. Francaviglia, Hyperbolic volume of
+representations of fundamental groups of cusped 3-manifolds,
+Int. Math. Res. Not. 2004 (9), 425--459.
+DOI:10.1155/S1073792804131619.
+\bibitem{lty} F. Luo, S. Tillmann and T. Yang,
+Thurston's spinning construction and solutions to the hyperbolic
+gluing equations for closed hyperbolic 3-manifolds,
+arXiv:1004.2992v1 (2010), Lemma~4.10, p.~11 of the exact retained
+author version.
+\end{thebibliography}
+\end{document}

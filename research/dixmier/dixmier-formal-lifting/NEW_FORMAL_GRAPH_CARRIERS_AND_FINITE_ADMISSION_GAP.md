@@ -74,14 +74,22 @@ The ambient product quantization acts as a formal target-source
 bimodule. Modulo \(h\), a target function \(f\) acts on \(E\) by
 \(\phi^*f\) times the identity. Thus all rank-\(r\) sectors have the
 same classical graph symbols; fifth-root deck branches are not part of
-this construction. This statement does not trivialize the module as an
-actual finite free module over the uncompleted source Weyl algebra.
+this construction. For an actual graph with trivial classical bundle,
+affineness and h-flatness give a basis over the completed source Weyl
+algebra; [the source-freeness proof and finite-presentation criterion](FINITE_GRAPH_PRESENTATIONS_AND_POLAR_BRANCHES.md)
+spell out that argument. It still supplies no stable finite free lattice
+over the uncompleted source Weyl algebra.
 
 Rank-one formal graph existence is already explained in
 [QFL1's graph comparison](PROOF.md), using Baranovsky--Ginzburg--Kaledin--Pecharich,
 Theorem 1.1.4. The present application records higher-rank connection
 data and the missing finite step; it is not a new claim of formal
-existence for Long's scalar map.
+existence for Long's scalar map. The canonical full polynomial Long
+frame is an actual input, constructed by
+[long_images()](../dixmier-audit/verify_long_pbw.py) and independently
+checked by [the graph-curvature verifier](check_long_graph_curvature.py).
+The pair-only residue-transport inputs are different data and do not,
+by themselves, establish such a full frame.
 
 ## A rank-two connection with no invariant rational line
 

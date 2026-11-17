@@ -209,6 +209,16 @@ give neither independence of the local conditions nor an Euler
 product for the limiting Haar measure, and they do not prove
 Hasse infinitude on this slice.
 
+[EKX1--EKX2](ELLIPTIC_EXCEPTION_KUMMER_BRANCH_EXCLUSION.md) make
+this distinction concrete: a fixed positive-density Chebotarev set
+passes the numerator eligibility test in every class, but neither
+finite branch residue belongs to the rational reduction image.
+For every rational point, the reduced numerator `N` in (2.2) is
+prime to each prime in that set. These numerator tests can therefore
+be erased for the whole slice; the denominator condition remains.
+This uses the independent nonrational branch point and Kummer theory,
+in addition to the quadratic character restrictions above.
+
 Run from the repository root:
 
 ```sh

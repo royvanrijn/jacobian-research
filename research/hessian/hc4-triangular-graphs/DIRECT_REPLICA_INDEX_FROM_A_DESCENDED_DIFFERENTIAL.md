@@ -1,0 +1,257 @@
+# Direct replica index from a descended differential
+
+17 November 2026. Actual complex polynomial plane Keller maps, every
+polynomial source-coordinate frame and every explicitly given polynomial
+replica. This is a direct proof of the index bound previously obtained in
+[replica degree and source-derivative reconstruction](REPLICA_DEGREE_AND_SOURCE_DERIVATIVE_FIELD_RECONSTRUCTION.md),
+Sections 1--3.
+
+Let B=C[P,Q] subset R=C[x,y], F=C(P,Q), L=C(x,y), with
+Jac_(x,y)(P,Q)=1. Fix
+
+    delta=p(y)*partial_x, p in C[y] nonzero, k=deg p,
+
+and any embedded intermediate field
+
+    F subset E subset L, delta(E) subset E.
+
+Put m=[L:E]. Then there is an integer h>=2 such that
+
+    k+1=m*(h-1).                                           (1)
+
+In particular m divides k+1, m<=k+1, and a bare translation preserves
+no proper intermediate field containing F.
+
+The theorem assumes a GIVEN polynomial replica in GIVEN source
+coordinates. It neither classifies arbitrary locally nilpotent derivations
+nor invokes Rentschler's theorem. Its proof also avoids the identification
+of R intersect E with a smooth affine intermediate model, the kernel
+classification, and Luroth's theorem. Section2.1 proves the index identity
+purely algebraically; Section3 identifies h by a unique-pole refinement.
+No assertion that a source action preserves the target field is added.
+
+## 1. A slice and the actual integral functions recover the intermediate field
+
+Let S_E be the full normalization of B in E. It is finite over B, and
+
+    S_E subset R, Frac(S_E)=E.                              (2)
+
+Indeed integrality over B implies integrality over the normal ring R.
+The fraction-field equality follows by clearing the finitely many
+denominators in a monic algebraic equation over F: for any z in E, a
+nonzero b in B can be chosen so that bz is integral over B. Finiteness
+is the finite-normalization theorem for complex affine domains; only
+(2), rather than finiteness itself, is used below.
+
+The derivation delta is nonzero on at least one of P,Q. Otherwise the
+invertible source Jacobian would make delta zero. Choose f among them
+with delta(f)!=0, and let N>=1 be maximal with delta^N(f)!=0. It exists
+because delta=p(y)partial_x is locally nilpotent on R. Since E is
+delta-stable,
+
+    s=delta^(N-1)(f)/delta^N(f) belongs to E,
+    delta(s)=1.                                            (3)
+
+Write
+
+    K=ker(delta|E)=E intersect C(y).
+
+The equality uses ker(delta|L)=C(y). For every g in S_E, local
+nilpotence on R gives a finite highest delta degree n. Its top
+coefficient delta^n(g)/n! belongs to K, so
+
+    g-(delta^n(g)/n!)*s^n
+
+has strictly smaller delta degree. Successive subtraction therefore
+proves g in K[s]. Every intermediate expression remains in E and has
+finite delta degree; it need not be a source polynomial. Equation (2)
+now gives
+
+    E=K(s).                                                (4)
+
+In particular K has transcendence degree one.
+
+The equation delta(s)=1 inside C(x,y) gives
+
+    s=x/p(y)+beta(y), beta in C(y),
+    L=C(y,s).                                              (5)
+
+The variable s is transcendental over C(y). Adjoining such a variable
+does not change the degree of an algebraic field extension, so
+
+    m=[L:E]=[C(y):K].                                      (6)
+
+This extension is finite: choose any nonconstant t in K, and use the
+finite extension C(y)/C(t). No polynomial generator of K has been
+assumed or classified.
+
+## 2. The actual target volume descends to a differential on K
+
+Choose a nonconstant t in K. Characteristic zero makes dt nonzero,
+and ds,dt form an E-basis of Omega^1_(E/C), because K/C(t) is a finite
+separable extension. As P,Q belong to E, there is a nonzero c in E with
+
+    dP wedge dQ=c*ds wedge dt.
+
+On the other hand, (5) and the ACTUAL unit Jacobian give
+
+    dP wedge dQ=dx wedge dy
+       =p(y)*ds wedge dy
+       =(p(y)/t'(y))*ds wedge dt.
+
+Consequently c=p(y)/t'(y) belongs to E intersect C(y)=K. The rational
+differential
+
+    eta=c*dt in Omega^1_(K/C)                              (7)
+
+has pullback to C(y) exactly
+
+    eta pulled back = p(y)*dy.                            (8)
+
+Neither p nor y is asserted to lie in E. The coefficient c lies in K
+because of the volume identity, not because of a presumed descent of
+the source coordinates. Scaling a target generator handles any
+constant nonzero Jacobian in the same way.
+
+## 2.1. A purely algebraic proof of the index identity
+
+Choose a polynomial H in C[y] with H'=p; its degree is k+1.
+The two velocities a=delta(P), b=delta(Q) belong to E by field stability.
+The unit Jacobian gives the Hamiltonian identity
+
+    dH(y)=a*dQ-b*dP.                                       (9)
+
+For example the dx coefficient on the right is zero, and its dy
+coefficient is p*(P_x*Q_y-P_y*Q_x)=p. Thus dH(y) lies in the image
+of Omega^1_(E/C), whether or not H(y) is yet known to belong to E.
+
+Here is the required differential-trace argument. For the finite
+separable extension L/E, absolute differentials satisfy
+
+    Omega^1_(L/C)=L tensor_E Omega^1_(E/C).
+
+Tracing the coefficient in L defines a differential trace T, and
+T(omega)=m*omega for forms omega from E. It also satisfies
+
+    T(dz)=d(Tr_(L/E)(z)).                                 (10)
+
+To verify (10), extend a C-derivation of E to a finite normal closure.
+The extension is unique on every separable algebraic element, as
+differentiating its minimal polynomial determines its derivative.
+It therefore commutes with every E-embedding of L into that closure.
+Summing the embeddings proves that differentiation commutes with
+field trace. Since derivations associated to a transcendence basis
+of E separate its differentials, this proves (10).
+
+Apply (10) to H(y) and use (9). The result is
+
+    d(Tr_(L/E)(H(y)))=m*dH(y).
+
+Consequently H(y)-Tr(H(y))/m has zero differential in C(x,y).
+A rational function with both source partial derivatives zero is
+constant in characteristic zero. Hence
+
+    H(y) belongs to E intersect C(y)=K.                    (11)
+
+For a nonconstant polynomial of degree d, the extension
+C(y)/C(H(y)) has degree d: after normalizing H to be monic, polynomial
+division makes 1,y,...,y^(d-1) a basis of C[y] over C[H(y)].
+Independence follows because their leading degrees are distinct
+modulo d. Localization gives the claimed field degree. With d=k+1,
+(6), (11), and the field tower now give
+
+    k+1=[C(y):C(H(y))]
+       =[C(y):K]*[K:C(H(y))]
+       =m*[K:C(H(y))].                                   (12)
+
+This proves the theorem with h=1+[K:C(H(y))]>=2, without any
+complete-curve theorem. The trace step (9)--(11) itself only needs
+a,b in E; the stability hypothesis is used for the slice and (6).
+
+## 3. The unique pole forces total ramification and the index identity
+
+Let C_K be the smooth complete complex curve with function field K.
+The finite inclusion K subset C(y) defines a finite morphism
+
+    f:P1_y -> C_K, degree m.
+
+No rationality classification of C_K is needed. At a point z above q
+with ramification index e, the characteristic-zero local differential
+formula is
+
+    ord_z(f^*eta)=e*ord_q(eta)+(e-1).                       (13)
+
+For clarity, if u is a uniformizer at q and v one at z, then
+u=a*v^e with a a unit. The derivative du has exact order e-1.
+Writing eta=u^j*b*du with b a unit gives (13). The nonzero integer e
+is essential here; no positive-characteristic assertion is made.
+
+A pole of eta remains a pole at EVERY point over it: if
+ord_q(eta)=-h with h>=1, its pullback order is
+-e*(h-1)-1<0. Conversely the pullback of a differential regular at q
+is regular at every point above q.
+
+The polynomial differential p(y)dy has precisely ONE pole, at y=infinity,
+of order k+2. Thus eta has precisely one pole q_infinity, and
+
+    f^-1(q_infinity)={infinity}.
+
+The degree formula for the finite morphism, with all closed residue
+fields equal to C, gives e_infinity=m. Let h be the pole order of eta
+at q_infinity. Comparing (8) and (13) at infinity yields
+
+    -(k+2)=-m*(h-1)-1,
+    k+1=m*(h-1).
+
+Since k>=0, necessarily h>=2. This proves (1), including the cases
+of constant p and E=L. No ramified or finite point was omitted.
+
+## 4. Dependency scope and the remaining first-velocity landing problem
+
+The algebraic index proof requires normality of the actual polynomial
+source, finite separable field extensions, elementary derivation and
+differential-trace identities, and polynomial division. The unique-pole
+refinement in Section3 additionally uses the local order/degree formulas
+for finite maps of smooth complete curves. Neither proof requires a
+common-pencil or boundary-chart theorem, a smoothness assertion for
+Spec(R intersect E), an LND classification, or a differential source-layer
+theorem.
+
+The first-column field reconstruction, integral recovery of the
+transverse coordinate, and
+
+    R=S[partial_v P,partial_v Q]
+
+in every generic source direction are separately proved directly in
+Sections 6--6.2 of the linked source. Those statements also use explicit
+source coordinates and do not need Rentschler's theorem. The broader
+assertion that EVERY source LND can be expressed as p(y)partial_x still
+has its separate classical classification input; it is not proved here.
+
+Equation (1) alone does not place a source velocity in the full finite
+normalization S of B in L. In particular a field generated by first
+velocities need not be stable under delta, and no such stability is
+assumed in the independent first-column reconstruction theorem.
+Automatic first-velocity integrality, trace perfection and JC2 remain
+open. A noninvertible Keller example is not constructed.
+
+## 5. Exact checks and replay
+
+The checker verifies the finite slice/Taylor subtraction identity,
+the slice and volume formulas, the general Hamiltonian identity,
+differential-trace commutation and tower degrees, the local differential
+order formula including ramified poles, and unbounded symbolic families of rational
+field/volume controls that realize the factor m*(h-1). The controls
+with m>1 use rational target coordinates; they are explicitly outside
+the whole-plane polynomial Keller hypotheses. A nonstable quadratic
+subfield guards the necessity of delta(E) subset E.
+
+The complete field and curve arguments above prove the unrestricted
+theorem. The finite checks support those arguments and do not certify
+a classification, integrality, external review or formal verification.
+
+Replay:
+
+    .venv/bin/python research/hessian/hc4-triangular-graphs/verify_direct_replica_index.py
+
+Output is written only when --write-receipt PATH is supplied.

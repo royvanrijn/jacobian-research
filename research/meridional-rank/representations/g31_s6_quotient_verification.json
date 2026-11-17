@@ -1,0 +1,96 @@
+{
+  "status": "PASS exact G31 matrix-group quotient onto S6",
+  "scope": "Genuine group homomorphism from a verified exact matrix action on60 root lines and15 invariant blocks; no knot count or diagram identification asserted.",
+  "matrix_group_order": 46080,
+  "root_line_action_order": 11520,
+  "scalar_kernel_order": 4,
+  "all_group_reflections": 60,
+  "G424_vector_orbit_size": 128,
+  "G424_projective_orbit_size": 32,
+  "single_reflection_conjugacy_class": 60,
+  "target_order": 720,
+  "target_pair_action_kernel_order": 1,
+  "full_quotient_kernel_order": 64,
+  "reflection_preimages_per_transposition": 4,
+  "all_reflection_block_action_checks": 900,
+  "all_quandle_map_checks": 3600,
+  "generator_images_as_transpositions": [
+    [
+      1,
+      2
+    ],
+    [
+      3,
+      4
+    ],
+    [
+      4,
+      5
+    ],
+    [
+      1,
+      4
+    ],
+    [
+      1,
+      6
+    ]
+  ],
+  "minimum_reflection_class_generating_number": 5,
+  "matrix_BFS_level_counts": [
+    1,
+    5,
+    18,
+    58,
+    167,
+    462,
+    1170,
+    2515,
+    4591,
+    7055,
+    8810,
+    8691,
+    6731,
+    3894,
+    1511,
+    357,
+    41,
+    3
+  ],
+  "elapsed_seconds": 1.145,
+  "python_version": "3.12.3",
+  "primary_source_sha256": {
+    "sources/konishi-minabe-reduction-2409.00380v2.pdf": "372ca4fec036e1ca5b493980be2b60b24d14c71fa587a4fa0870dd914e5510db",
+    "sources/cornwell-kch-1310.7526v3.pdf": "991940273daed005b8af270233cceaa58c11d69168efb7006f3bfa9bd598bcbd"
+  },
+  "input_sha256": "2d39892360f6744f6c5539ff2049773966646f8b7361645d504a2ee50757d0c8",
+  "checker_sha256": "35ef8af50444bc6b42b3a8ea418bc4a154ea3fd777f8eb2bb2a9d3e352c1a30a",
+  "proof_source_sha256": "74dc6e69379753d37cc1186442acca9890183d757e8c79217dff55cc8aadfabf",
+  "assurance": "Exact internal standard-library replay; written homomorphism, class-rank and KCH consequences in the note; not formal verification or external review.",
+  "internal_pdf_reviews": [
+    {
+      "reviewer": "isolated internal agent /root/g31_pdf_review",
+      "reviewed_note_sha256": "5448b0a8893810d14deafe1c4d5d6f6fa603e1f91559f78ffb4dbddbf109c6f2",
+      "reviewed_pdf_sha256": "4874c7231742507172b4c4091bf16513b4c77408bad264e44f8a4c79625a1ea4",
+      "result": "Independently reconstructed46080matrices,60reflections,3600conjugations,900block actions,orders11520/720,kernel64,classrank5 and5DKCHlogic from the3pagePDF. Found an unqualified128vector orbit sentence; the main finite quotient/class argument passed.",
+      "remaining_dependencies": [
+        "Published model identification and original COR17 correspondence",
+        "Retained input/checker not inspected in that isolated review"
+      ],
+      "external_review": false,
+      "formal_verification": false
+    },
+    {
+      "reviewer": "nonisolated internal agent /root/new_equality and root replay",
+      "reviewed_note_sha256": "74dc6e69379753d37cc1186442acca9890183d757e8c79217dff55cc8aadfabf",
+      "reviewed_pdf_sha256": "9c7e6069d30471f1ff196cda2a30369162e0aed265ae2806bea3942fa6791e21",
+      "result": "Corrected128vector assertion to the explicit monomial G(4,2,4) orbit and32projective lines; default exact checker now verifies this precise orbit. Current3pagePDF clean on internal visual inspection; root independently reran default finite matrix/group/block/reflection checker PASS.",
+      "remaining_dependencies": [
+        "Primary model identification and augmentation correspondence remain imported",
+        "No independent whole-proof or external specialist review"
+      ],
+      "external_review": false,
+      "formal_verification": false
+    }
+  ]
+}

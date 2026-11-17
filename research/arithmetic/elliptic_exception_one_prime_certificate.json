@@ -1,0 +1,30 @@
+{
+  "curve": {"a2": -10656, "a4": 27091730, "a6": 0},
+  "q0": 2709173,
+  "points": {
+    "P": ["373248/49", "59459616/343"],
+    "Q": ["3442688/529", "304670016/12167"],
+    "S": ["92179201/6400", "553221611649/512000"],
+    "T": ["0", "0"]
+  },
+  "derived_points": {"R": "P+T", "R_minus_S": "P+T-S"},
+  "classes": {"P": 2, "Q": 2, "S": 1, "T": 27091730,
+              "R": 13545865, "R_minus_S": 13545865},
+  "four_P_x_denominator_factors": [
+    [2, 12], [3, 6], [5, 2], [7, 2], [139, 2], [163, 2],
+    [122011, 2], [68819, 2], [11069, 2], [437900039, 2], [227812349, 2]
+  ],
+  "inert_good_exceptions": [11069, 68819, 227812349, 437900039],
+  "additional_inert_bad_primes": [1889, 2709173],
+  "exceptional_witness_unit": {"points": ["P", "R"],
+                              "function": "128*x-25865", "valuation": 0},
+  "small_prime_claims": [
+    {"prime": 2, "class": 2, "point": "P", "translated_depth": 4},
+    {"prime": 3, "class": 2, "point": "Q", "X_mod_3": 2, "y_valuation": 2},
+    {"prime": 5, "class": 2, "point": "P", "x_integral": true},
+    {"prime": 2, "class": 13545865, "point": "R_minus_S", "x_valuation": -12},
+    {"prime": 3, "class": 13545865, "point": "R", "formal_depth": 3, "normalized_t_mod_9": 8},
+    {"prime": 5, "class": 13545865, "point": "R", "x_integral": true}
+  ],
+  "assurance": "Exact finite certificate; unrestricted quantifiers are supplied by EOP1-EOP2."
+}

@@ -1,0 +1,28 @@
+{
+  "status": "passed",
+  "scope": "bounded exact controls; all-degree algebraic proof is written separately",
+  "environment": {
+    "python": "3.12.3",
+    "sympy": "1.14.0"
+  },
+  "original_moment_order": [
+    0,
+    5
+  ],
+  "original_marker_count": 20,
+  "finite_transport_identities": 40,
+  "exact_amplitude_inverse_and_connection_cases": 3,
+  "strict_literal_image_example": true,
+  "positive_subspace_not_ideal": true,
+  "safe_minimum_weight": 2,
+  "safe_cutoff_marker_count": 20,
+  "sha256": {
+    "GAUSSIAN_ANGULAR_CORE_FULL_IMAGE_INVARIANCE.md": "816deaaa4d2fa056b06f38cf6d9a33caa0319acfc2c50c5a704e7c4c72c5d242",
+    "verify_gaussian_angular_core_full_image.py": "7f3a5160b5bf84a7cdf7c8dedc0f03d58e88eb064224107766830092ed68f722",
+    "GAUSSIAN_AMPLITUDE_IDEALS_AND_WEIGHT_INVARIANCE.md": "650c2f422f8db94d963c00ac1ef30cc46a1efee4fb8fc9298bb10b21b5eb7cbd",
+    "MIXED_CUTOFF_JETS_AND_INFINITE_TAILS.md": "b29d91339b7799f95575a191d8bfc7294b23d84ba2ba74769620f69ac2df2afc"
+  },
+  "formal_verification": false,
+  "independent_replay": false,
+  "external_review": false
+}

@@ -4,7 +4,7 @@
 
 Factorial moment functionals, composition rigidity and Strong Factorial families.
 
-**Authored assessment:** Every ordinary univariate binomial of degree at most five satisfies SFC at all consecutive positive pairs. Degree at most six reduces exactly to supports {2,6}, {3,6}, {4,6} at terminal N>=6; those unrestricted families remain open. All-index binomial SFC at positive transcendental Gamma shapes is proved, with separate proved algebraic-shape domains. Higher-degree ordinary binomials, shapes outside the retained domains, and unrestricted FC/SFC remain open.
+**Authored assessment:** Ordinary binomial SFC through degree six and supports {3,7},{4,7} are proved at every positive pair. The exact degree-seven residual tests, all with terminal N>=6, are support {1,7} only at N not of the form b*7^r (1<=b<=6,r>=0), with any common-root candidate satisfying v7(-1/t)=1; and support {5,7} only N12,14 mod16, where a nonconstant gcd must be the irreducible quadratic t^2-alpha*t+delta with rational alpha,delta>0 and alpha^2<4delta. Those two exclusions, degree-seven and all-degree binomial SFC, unrestricted FC/SFC, full H3 positivity and stronger optional method gaps remain open.
 
 | Current result | Evidence / publication | Graph status | Main source |
 |---|---|---|---|
@@ -30,17 +30,30 @@ Factorial moment functionals, composition rigidity and Strong Factorial families
 | Ordinary quintic SFC in26 of27 terminal residue classes | Internal result | proved | [Source](image-rigidity/QUINTIC_THREE_ADIC_PARITY_REDUCTION.tex) |
 | Strict Hankel positivity does not separate Appell moments | Internal result | proved | [Source](image-rigidity/GAMMA_CONVOLUTION_APPELL_OBSTRUCTION.tex) |
 | All ordinary quintic binomials by one affine scalar minor | Internal result | proved | [Source](image-rigidity/QUINTIC_SCALAR_MINOR_SFC.tex) |
+| Lower exponent two at prime gaps and algebraic integral shapes | Internal result | proved | [Source](image-rigidity/LOWER_TWO_PRIME_GAP_SFC.tex) |
+| Boundary Frobenius descent and ordinary support two/six | Internal result | proved | [Source](image-rigidity/LOWER_TWO_FOURTH_POWER_GAP_SFC.tex) |
+| Ordinary support four/six from an odd scalar adjoint | Internal result | proved | [Source](image-rigidity/LOWER_FOUR_QUADRATIC_GAP_SFC.tex) |
+| Equal prime lower exponent and gap at every ordinary order | Internal result | proved | [Source](image-rigidity/DIAGONAL_PRIME_GAP_SFC.tex) |
+| Ordinary binomial Strong Factorial through degree six | Internal result | proved | [Source](image-rigidity/ORDINARY_DEGREE_SIX_BINOMIAL_SFC.tex) |
+| Ordinary support three/seven in sixty-one of sixty-four terminal classes | Internal result | proved | [Source](image-rigidity/LOWER_THREE_FOURTH_POWER_RESIDUE_REDUCTION.tex) |
+| Ordinary support five/seven residues and a global quadratic gcd bound | Internal result | proved | [Source](image-rigidity/LOWER_FIVE_QUADRATIC_RESIDUE_REDUCTION.tex) |
+| Native-prime derivative kernels and prime-plus-one exponent families | Internal result | proved | [Source](image-rigidity/PRIME_PLUS_ONE_EXPONENT_GAP_SFC.tex) |
+| The exact ordinary degree-seven residue frontier | Internal result | proved | [Source](image-rigidity/ORDINARY_DEGREE_SEVEN_RESIDUE_FRONTIER.tex) |
+| Physical lower-one factorial moments at a prime total degree | Internal result | proved | [Source](image-rigidity/PHYSICAL_PRIME_TOTAL_DEGREE_REDUCTION.tex) |
+| Ordinary support three/seven at every terminal order | Internal result | proved | [Source](image-rigidity/LOWER_THREE_FOURTH_POWER_FROBENIUS_SFC.tex) |
+| Half-plane and factor-sign restrictions for ordinary support five/seven | Internal result | proved | [Source](image-rigidity/LOWER_FIVE_QUADRATIC_HALF_PLANE_REDUCTION.tex) |
+| The exact two-family ordinary degree-seven frontier | Internal result | proved | [Source](image-rigidity/ORDINARY_DEGREE_SEVEN_TWO_FAMILY_FRONTIER.tex) |
 
-**Computed obligations:** 42 unresolved; 4 resolved within their exact scope.
+**Computed obligations:** 44 unresolved; 4 resolved within their exact scope.
 
 
 Scope limits:
 
-- Research allocation: ordinary degree <=5 is complete by the scalar cyclic minor. The next exact degree-six frontier is supports {2,6}, {3,6}, {4,6} at terminal N>=6. Higher-degree ordinary binomials and positive shapes outside the proved domains remain open.
+- Ordinary binomial SFC through degree six and supports {3,7},{4,7} are proved at every positive pair. The exact degree-seven residual tests, all with terminal N>=6, are support {1,7} only at N not of the form b*7^r (1<=b<=6,r>=0), with any common-root candidate satisfying v7(-1/t)=1; and support {5,7} only N12,14 mod16, where a nonconstant gcd must be the irreducible quadratic t^2-alpha*t+delta with rational alpha,delta>0 and alpha^2<4delta. Those two exclusions, degree-seven and all-degree binomial SFC, unrestricted FC/SFC, full H3 positivity and stronger optional method gaps remain open.
 - Unrestricted FC and SFC remain open. Universal special-family theorems do not supply an arbitrary-support reduction.
 - Earlier 26/27, no-carry, adjacent-part, residual/parity and all-prime filters retain their proved scopes. They are unnecessary for ordinary degree-five completion; no-carry coverage failure and a surviving local degree are not SFC counterexamples.
 - Every prime-power lower-one family X(A+BX^(p^s)) satisfies ordinary SFC at every index, and gap-two lower exponents 2,3 are proved at every positive real shape. The scalar-minor theorem completes ordinary support {2,5}, hence every ordinary degree <=5 binomial. Full binomial SFC and all-real-shape H3 total nonnegativity remain open.
-- The gap-two families X^2(A+BX^2) and X^3(A+BX^2) satisfy SFC at every index and every positive real Gamma shape by an exact adjoint elimination and Hurwitz homotopy. Larger lower exponents at gap two remain open.
+- The gap-two families X^2(A+B X^2) and X^3(A+B X^2) satisfy SFC at every index and every positive real Gamma shape. The new ordinary X^4(A+B X^2) theorem closes support{4,6}; its all-positive-real-Gamma-shape extension and larger lower exponents at gap two remain open.
 - Ordinary support {2,5} is proved at every terminal order by projective three-adic balance, a fixed scalar minor with affine unit reduction, and real-field descent. The former N=11 mod27 ray is resolved; the earlier residue theorems remain valid.
 - The pencil and coupled-family descriptions retain the scale, Gamma-shape, block and ordinary coefficient-ring normalization restrictions stated in their proofs.
 - Higher-gap rank and backward-pivot results are proved criteria. Uniform actual-family rank/nonzero-pivot assertions remain open; finite controls do not discharge them. Priority and independent review are separate obligations.
@@ -58,7 +71,10 @@ Scope limits:
 - The separately indexed algebraic-Gamma domain theorem strengthens the fixed-monomial radial family from rational p-integral total shape to positive algebraic total shape with one embedding in O_Cp at prime gaps, or inZp+p^s O_Cp at proper prime-power gaps. Individual positive shapes need not be algebraic. It does not cover every positive algebraic shape or arbitrary integral proper-prime-power parameters.
 - Prime-gap SFC covers every positive algebraic shape integral at one place above the gap prime, hence every positive algebraic integer such as sqrt(2). Together with transcendental-shape coprimality, any possible positive prime-gap exception must be algebraic and have negative valuation at every place above that prime; its primitive minimal polynomial is constant and nonzero modulo p. These necessary conditions do not assert failure, and proper-prime-power domains remain restricted.
 - Current completion: the scalar-minor theorem proves ordinary support {2,5} at every positive consecutive pair and completes ordinary degree <=5, including the formerly remaining N>=11,N=11 mod27 ray. Earlier 8/9, 26/27, five-adic, residual and Newton theorems retain their exact original scopes. Their stronger joint-descent, analytic-index separation and uniform E(n)-emptiness questions remain optional open statements, unnecessary for ordinary quintic completion.
-- The degree-six frontier is an equivalence to three unrestricted families at terminal N>=6. Neither this reduction nor ordinary degree-five completion proves those families or the full all-binomial target.
+- The native-prime derivative/Hasse criterion proves X^(p+1)(A+B X^p) for positive real algebraic Gamma shapes integral at one p-place, and lower exponent four at odd prime gaps p!=11 on the same domain. Ordinary p2 is separately imported. This is not an every-positive-real-shape assertion.
+- The ordinary five/seven gcd is1 or t^2-alpha*t+delta with rational alpha,delta>0 and alpha^2<4delta at every lower index. Excluding that quadratic on terminal12/14mod16 remains open; these necessary constraints do not complete the family.
+- The physical prime-total-degree reduction fixes lower Gamma shape exactly at the terminal n. For gap p-1 it proves the Eisenstein index family n=b*p^r,1<=b<p, and confines hypothetical multiple roots to v_p(epsilon/t)=1. For gap6,p7 this is a genuine unbounded terminal family, not all-index closure or an arbitrary integral-Gamma theorem.
+- Ordinary support{3,7} is proved at every positive pair by the restricted Frobenius minor. The older61/64 residue proof and its receipts retain their original, partial scopes.
 
 Tracked obligations (computed states):
 
@@ -80,6 +96,6 @@ Tracked obligations (computed states):
 - **mathematical / open:** [For a specified numerical IV application, prove the required arithmetic lifting theorem at its chosen algebraic fiber.](image-rigidity/EIT_KONTSEVICH_ZAGIER_AUDIT.md) — GAP-EIT-IV-APPLICATION-NUMERICAL-SPECIALIZATION
 - **mathematical / open:** [Optional stronger arithmetic question: is E(n) empty for every n>=10,n=10 mod27 on the former quintic ray? Ordinary quintic SFC is proved; coprimality alone does not imply this local degree-set emptiness.](image-rigidity/BINOMIAL_RESIDUAL_LIFTING.tex) — GAP-QUINTIC-ALL-PRIME-DEGREE-EMPTINESS
 - **mathematical / open:** [Can the repeated part of the exact Gamma-shape cofactor be shown to have no positive real zero at every index?](image-rigidity/BINOMIAL_SHAPE_RESULTANT.tex) — GAP-BINOMIAL-SHAPE-REPEATED-PART-POSITIVE-ROOTS
-- **mathematical / open:** [Prove ordinary supports {2,6}, {3,6}, {4,6} at every terminal N>=6, equivalently complete ordinary binomial SFC through degree six.](image-rigidity/QUINTIC_SCALAR_MINOR_SFC.tex) — GAP-ORDINARY-DEGREE-SIX-THREE-SUPPORT-FAMILIES
+- **mathematical / open:** [Complete the exact two-family degree-seven residual tests: support{1,7} at terminal N>=6 outside N=b*7^r,1<=b<=6,r>=0 (any common root must have v7(-1/t)=1), and support{5,7} at terminal N12,14mod16, equivalently exclude t^2-alpha*t+delta with alpha,delta rational positive and alpha^2<4delta.](image-rigidity/ORDINARY_DEGREE_SEVEN_TWO_FAMILY_FRONTIER.tex) — GAP-ORDINARY-DEGREE-SEVEN-RESIDUAL-TESTS
 
 [Exact scopes and verification limits](../STATUS.md). Publication, formal verification and independent review are separate statuses. [Dependency routes](../DEPENDENCIES.md) and [scope audit](../SCOPES.md) expose remaining gaps.

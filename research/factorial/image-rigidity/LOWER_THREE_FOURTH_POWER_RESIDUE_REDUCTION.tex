@@ -1,0 +1,304 @@
+\documentclass[11pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage[hidelinks]{hyperref}
+\newtheorem{lemma}{Lemma}
+\newtheorem{theorem}{Theorem}
+\newtheorem{corollary}{Corollary}
+\begin{document}
+\setlength{\emergencystretch}{1em}
+\title{A residue reduction for ordinary support $\{3,7\}$}
+\author{}\date{}\maketitle
+For every integer $n\ge1$ put
+\[
+ P_n(t)=\sum_{k=0}^n\binom nk(3n+1)_{4k}t^k.
+\]
+We prove consecutive coprimality except possibly at
+$n\equiv13,45,54\pmod{64}$. Thus the remaining terminal classes
+for the ordinary phase $X^3(A+BX^4)$ are
+$N\equiv14,46,55\pmod{64}$.
+The argument uses an exact mixed-adjoint matrix, a controlled-radius
+Frobenius theorem, and a quantitative coefficient consequence of
+its nonresonant block. It does not prove noncollision on those
+three progressions or an unrestricted Gamma-shape theorem.
+
+All auxiliaries in a fixed pair keep the same parameter
+$\gamma=3n+1$:
+\[
+ B_0=1,\qquad B_{j+1}=(z+4j+\gamma+3)B_j-zB_j'.
+\]
+Set
+\[
+ M=7n+1,\qquad
+ \kappa=\frac{4(n+1)}{(M+4)(M+5)(M+6)}
+        =\frac4{7(7n+5)(7n+6)}.
+\]
+A cyclic column is the remainder coefficient column modulo
+$z^4-u$ in the basis $1,z,z^2,z^3$.
+We work over a complete algebraically closed extension $K$ of
+$\mathbb Q_2$, with $v(2)=1$, valuation ring $\mathcal O$,
+maximal ideal $\mathfrak m$, and residue field $k$.
+An overbar means reduction modulo $\mathfrak m$.
+In particular a positive valuation is not assumed to be at least one.
+
+\begin{lemma}[The exact actual mixed matrix]\label{lem:mixed-matrix}
+For $u\ne0$, the two equations
+$P_n(-1/u)=P_{n+1}(-1/u)=0$ are equivalent to rank less than three of
+\[
+ [B_{n+1},\ B_{n+2}-\kappa uB_n,\
+                   B_{n+3}-\kappa(M+11)uB_n](u).        \tag{1}
+\]
+\end{lemma}
+\begin{proof}
+Apply \href{DIAGONAL_PRIME_GAP_SFC.tex}{Theorem
+\texttt{thm:offset-rank} of the general-offset note}
+with $d=4,h=3,\epsilon=-1$.
+Its rising-basis polynomial is
+\[
+ V_3(E)=(E)_2+(M+6)E+(M+5)(M+6).
+\]
+Thus its three cyclic columns are
+$L_0,L_1+\kappa uB_n,L_2+\kappa(M+6)uB_n$.
+The exact constant triangularization is
+\[
+ L_0=B_{n+1},\qquad
+ L_1=(M+7)B_{n+1}-B_{n+2},
+\]
+\[
+ L_2=(M+7)(M+6)B_{n+1}-(2M+17)B_{n+2}+B_{n+3}.
+\]
+Subtract the first-column multiples, change the second column sign,
+and eliminate $B_{n+2}$ in the third.
+This gives (1) by invertible constant column operations.
+The imported equivalence is algebraic in characteristic zero
+and includes multiple lower roots; no simplicity assumption is used.
+\end{proof}
+
+For later use write
+\[
+ \mathsf A=3n+4-zD_z+z,\quad
+ \Pi_{n,4}(x)=\prod_{\ell=0}^{n-1}(x+4\ell),\quad
+ R_i(x)=\prod_{\ell=n}^{n+i-1}(x+4\ell).
+\]
+Then $B_{n+i}=\Pi_{n,4}(\mathsf A)R_i(\mathsf A)1$.
+A dependence in (1) can be normalized by an actual nonzero
+coefficient so that $a_1,a_2,a_3\in\mathcal O$ and at least one is a unit.
+It gives a zero cyclic column for $\Pi_{n,4}(\mathsf A)Q(\mathsf A)1$,
+where
+\[
+ Q(x)=\sum_{i=1}^3a_iR_i(x)-\kappa uS,\qquad
+ S=a_2+(M+11)a_3.                                    \tag{2}
+\]
+Here $u$ is an evaluated scalar, not a variable acted on by
+$\mathsf A$.
+
+\begin{theorem}[Fourteen classes out of sixteen]
+\label{thm:fourteen-sixteenths}
+If $n\not\equiv6,13\pmod{16}$, then $P_n,P_{n+1}$ are coprime
+over $\mathbb Q$ and over $\mathbb C$.
+\end{theorem}
+\begin{proof}
+Every interval of four consecutive positive integers has
+two-adic valuation at least three. Hence each coefficient of
+$P_n$ at index $k$ has valuation at least $3k$.
+The monic reciprocal in $u=-1/t$ implies $v(u)\ge3$
+at a root: below that bound the leading term would be uniquely least.
+
+Suppose a common root exists and use (2).
+If $v_2(\kappa)>-2$, then $v(\kappa u)>1$.
+Since $R_i\bmod\mathfrak m=x^i$,
+the polynomial $Q$ is integral and primitive with reduction degree
+at most three. Also
+\[
+ v(R_i(0))=v(4^i(n)_i)\ge2+v_2(n)>1,
+\]
+so $v(Q(0))>1$.
+The exact stage class is
+$\mathsf A=c-zD_z+z$, $c=3n+4\in\mathbb Z_2$, seed $1$.
+Thus \href{LOWER_TWO_FOURTH_POWER_GAP_SFC.tex}{Theorem
+\texttt{thm:boundary} of the fourth-power boundary note},
+with $p=2,s=2,q=4,b_s=3,B_s=1$, forbids the zero cyclic column.
+
+Finally
+$v_2(\kappa)=2-v_2((7n+5)(7n+6))$.
+The condition can fail only when one consecutive factor is
+divisible by sixteen, namely at $n\equiv13$ or $6\pmod{16}$.
+The polynomials are rational; absence of common roots over $K$
+gives a rational Bezout identity, which also holds over $\mathbb C$.
+\end{proof}
+
+\begin{corollary}[Fifteen classes out of sixteen]
+\label{cor:fifteen-sixteenths}
+If $n\not\equiv13,22\pmod{32}$, then $P_n,P_{n+1}$ are coprime.
+\end{corollary}
+\begin{proof}
+Only $n\equiv6,13\pmod{16}$ remain.
+For $k\ge2$, counting multiples of $2,4,8$ gives
+\[
+ v_2((3n+1)_{4k})\ge3k+\lfloor k/2\rfloor>3k.
+\]
+For $k=1$, an even $n$ contributes $v_2\binom n1\ge1$ in
+addition to the baseline three. If $n\equiv13\pmod{16}$,
+then $3n+1$ is divisible by eight and its first four-factor
+block already has valuation at least four.
+Thus every nonleading reciprocal coefficient has valuation
+strictly above its value on the line of slope three.
+The unique least-term argument excludes $v(u)=3$ as well:
+every root has $v(u)>3$ in these two classes.
+
+Put $E=v_2((7n+5)(7n+6))$.
+At $E=4$, $v(\kappa)=-2$, whence $v(\kappa u)>1$.
+The same boundary proof gives a contradiction.
+Only $E\ge5$ remains, equivalent to $n\equiv13,22\pmod{32}$.
+\end{proof}
+
+\begin{lemma}[Exact necessity at the second Frobenius stage]
+\label{lem:stage-two-necessity}
+Use the stage class of the fourth-power boundary theorem:
+\[
+ A=c-zD_z+F(z),\quad c\in\mathbb Z_2+4\mathcal O,\qquad
+ F(z)=z+\sum_{r\ge1}b_rz^{2^r},\quad b_r\in2\mathbb Z_2,
+\]
+with integral seed $h$ reducing to a constant unit.
+Let $n\ge1$, $u\ne0$, $v(u)\ge3$, and let
+$Q\in\mathcal O[x]$ be primitive with $\deg\bar Q\le3$.
+If the cyclic column of $\Pi_{n,4}(A)Q(A)h$ vanishes, then
+\[
+ v(Q(0))=1,\qquad \bar Q=a\,x(x-1)^2,\quad a\in k^\times. \tag{3}
+\]
+The same collision also gives
+\[
+ v(Q(1))\ge2,\qquad v(Q'(1))\ge1.                       \tag{4}
+\]
+The ordinary degree of $Q$ need not be bounded.
+\end{lemma}
+\begin{proof}
+Use \href{ARITHMETIC_FRONTIER_TERMINAL_ORDERS.tex}{Lemma
+\texttt{lem:artin-hasse-closure} of the arithmetic note}
+and the exact block interface in the proof of
+\href{LOWER_TWO_FOURTH_POWER_GAP_SFC.tex}{Theorem
+\texttt{thm:boundary}}.
+There is one nonresonant block $e=1$, of smaller degree two.
+After absorption of its unit rising-product factor into the seed,
+the first two cyclic vectors are an integral unit basis and all
+subsequent vectors are integral.
+In the finite divided-Taylor expansion
+$\sum_{r\ge0}2^rQ^{[r]}(1)v_r=0$, every term with $r\ge2$
+has valuation at least two.
+Inversion of that basis gives (4), and hence
+\[
+ \bar Q=(x-1)^2R,\qquad \deg R\le1.
+\]
+Its first unit coefficient therefore occurs at index at most one.
+
+Write $Q=\sum c_rx^r$ and choose an actual nonzero coefficient
+$\lambda=2^{r_*}c_{r_*}$ of least valuation
+\[
+ m=\min_r\{v(c_r)+r\}\le1.
+\]
+The minimum may be fractional. Dividing by this actual field
+element makes $Q_*(x)=Q(2x)/\lambda$ integral and primitive.
+For $r\ge2$, its coefficient has valuation at least $r-m\ge1$,
+so $\deg\bar Q_*\le1$.
+The resonant block is exactly a prime-stage collision with this
+polynomial, the descended seed, and $v(u_*)\ge1$.
+
+At that prime stage, reduction has $z^2=0$ and a cyclic operator
+with eigenvalues $0,1$; the seed has nonzero components in both.
+A collision forces $\bar Q_*(1)=0$.
+If $m<1$, all its nonconstant coefficients have positive valuation,
+so $\bar Q_*$ is a nonzero constant, impossible.
+Thus $m=1$, and $\bar Q_*=a(x-1)$.
+Its constant coefficient is a unit, giving $v(Q(0))=1$.
+Its linear coefficient is a unit as well, so $c_1$ is a unit.
+Together with $\bar Q(0)=0$ and the factorization above this gives
+$\bar Q=a\,x(x-1)^2$. All normalizations use actual field
+elements; no symbol $2^m$ with unspecified fractional exponent is used.
+\end{proof}
+
+\begin{lemma}[The actual coefficient constraint]
+\label{lem:quantitative-coefficients}
+For every common root and every primitive relation (2), the polynomial
+$Q$ is integral and
+\[
+ v(Q(0))=v(\kappa uS)=1,\qquad
+ a_1+a_3\in2\mathcal O,\quad a_2\in2\mathcal O.
+\]
+Consequently, writing $L=v(u)$ and
+$E=v_2((7n+5)(7n+6))$,
+\[
+ \begin{cases}
+ L=E-1,&n\text{ odd},\\
+ L\le E-2,&n\text{ even}.
+ \end{cases}                                             \tag{5}
+\]
+\end{lemma}
+\begin{proof}
+All nonconstant coefficients of $Q$ are integral, and some are
+units, because $\bar R_i=x^i$ and at least one $a_i$ is a unit.
+Only its constant coefficient could be nonintegral.
+If $v(Q(0))<0$, divide by the actual field element $Q(0)$.
+The resulting polynomial is integral and primitive with reduction
+the nonzero constant one. Its zero cyclic column contradicts
+\href{ARITHMETIC_FRONTIER_TERMINAL_ORDERS.tex}{Lemma
+\texttt{lem:frobenius-noncollision}}, since its reduction degree
+is zero, less than three.
+Thus $Q$ is integral and primitive, and
+Lemma~\ref{lem:stage-two-necessity} applies.
+
+The values $R_i(0)$ have valuation at least two.
+Equation (2) and $v(Q(0))=1$ therefore imply
+$v(\kappa uS)=1$.
+The integer polynomials also satisfy
+\[
+ R_i(1)\equiv1\pmod4,\quad R_1'(1)=1,\quad
+ R_2'(1)\equiv0\pmod2,\quad R_3'(1)\equiv1\pmod2.
+\]
+The derivative estimate (4) implies $a_1+a_3\in2\mathcal O$.
+The value estimate gives
+$a_1+a_2+a_3-\kappa uS\in4\mathcal O$.
+As $\kappa uS\in2\mathcal O$, it follows that $a_2\in2\mathcal O$.
+This conclusion uses quantitative estimates; reduction modulo
+$\mathfrak m$ alone would not imply divisibility by two.
+
+By (3), $a_3$ is a unit.
+If $n$ is odd, $M+11=7n+12$ is odd, so $S$ is a unit.
+If $n$ is even, $S\in2\mathcal O$, so $v(S)\ge1$.
+Since $1=v(\kappa uS)=2-E+L+v(S)$, both cases in (5) follow.
+\end{proof}
+
+\begin{corollary}[Sixty-one terminal classes out of sixty-four]
+\label{cor:sixty-one-sixty-four}
+For every $n\ge1$ with
+$n\not\equiv13,45,54\pmod{64}$, the polynomials
+$P_n,P_{n+1}$ are coprime over $\mathbb Q$ and over $\mathbb C$.
+Consequently every nonzero ordinary phase $X^3(A+BX^4)$ has
+a nonzero factorial moment in each consecutive positive pair
+with terminal $N\not\equiv14,46,55\pmod{64}$.
+\end{corollary}
+\begin{proof}
+By Corollary~\ref{cor:fifteen-sixteenths}, odd remaining indices
+satisfy $n\equiv13\pmod{32}$.
+For an even remaining index, $E\ge5$ and the strict-radius
+argument above gives $L>3$.
+If $E=5$, (5) gives $L\le3$, a contradiction.
+Hence an even remaining index must have $E\ge6$,
+which is exactly $n\equiv54\pmod{64}$.
+This proves the stated three-class residual set.
+
+For $AB\ne0$ the order-$j$ factorial moment is
+$A^j(3j)!P_j(B/A)$; put $N=n+1$.
+If one coefficient vanishes, the nonzero phase is a monomial
+and every positive factorial moment is nonzero.
+\end{proof}
+
+\paragraph{Evidence and limits.}
+The exact checker verifies complete generic column identities,
+the full periods16,32,64, generic value/derivative congruences,
+the valuation bounds and literal cyclic-column controls.
+The six written proofs supply the unbounded quantifiers.
+The three remaining progressions and unrestricted binomial SFC
+are open. Internal mathematical audit and replay do not constitute
+independent whole-proof replay, formal verification, external review
+or a priority claim.
+\end{document}

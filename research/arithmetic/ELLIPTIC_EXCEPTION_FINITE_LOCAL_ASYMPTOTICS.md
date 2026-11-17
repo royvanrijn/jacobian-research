@@ -152,7 +152,10 @@ For the certified class `a_0=10p_0`, corresponding to
  0<\mu_{S,a_0}\le\frac14                           \tag{3.3}
 \]
 
-for every fixed finite `S`. Other classes may have zero measure.
+for every fixed finite `S`. The separate
+[class-one theorem](ELLIPTIC_EXCEPTION_FINITE_LOCAL_CLASS_ONE.md)
+also proves positivity for `a=1`; positivity for all finite sets in
+the two remaining classes is unresolved.
 For `S_f` empty, every class has measure `1/4`. The total count over
 the four fields has leading coefficient
 
@@ -223,6 +226,23 @@ the finite-index cosets of ELS1 and its explicit even-multiplication
 corollary give a positive logarithmic subcount contained in this full
 finite-place set. Summing the disjoint class sets proves (3.4).
 \(\square\)
+
+[ESQ3](ELLIPTIC_EXCEPTION_SHARP_FINITE_LOCAL_ERROR.md) sharpens the
+error in (3.1) to `O_(E,S)(sqrt(log B))`, using a primary bound for
+two p-adic elliptic logarithms. The rational coefficient and
+finite-local dichotomy are proved in EQA2--EQA2a of
+[the quantitative note](ELLIPTIC_EXCEPTION_QUANTITATIVE_FINITE_LOCAL_ASYMPTOTICS.md).
+These stronger finite-place statements leave the all-primes limit
+and arithmetic tail in the following section separate.
+
+[EOP1--EOP3](ELLIPTIC_EXCEPTION_ONE_PRIME_POSITIVITY.md) establish
+positivity in all four classes at every individual place. They also
+give `0<=mu_(S,a)-mu_(S union {p},a)<=K_E/log p` uniformly in the
+finite prefix and class for large good `p`. Thus each fixed feasible
+prefix retains proportion tending to one at a new prime, while a
+growing prefix can have a shrinking denominator. This absolute
+coefficient bound does not settle the conditional loss series or
+the arithmetic tail below.
 
 ## 4. The all-primes limit and the exact tail condition
 
@@ -366,8 +386,9 @@ the four classes, replace \(A_{K_0}(B)\) by the total Hasse count
 \(A_E(B)\), and replace \(\mu_Y\) by
 \(\mu_Y^{\rm tot}=\sum_{a\in A}\mu_{S_Y,a}\).
 The same proof gives (4.3)--(4.6) with
-\(0\le\mu_\infty^{\rm tot}\le5321/23946\), using J2173 at the
-finite set `2,3,17`. This uses the total normalization
+\(0\le\mu_\infty^{\rm tot}\le2300089/10392564\), using
+[J235173](ELLIPTIC_EXCEPTION_JOINT_2_3_5_17_SIEVE.md) at the finite
+set `2,3,5,17`. This uses the total normalization
 throughout; it does not mix a fixed-class numerator with a
 total-class coefficient.
 
@@ -437,6 +458,26 @@ The [ambient Haar diagnostic](ELLIPTIC_EXCEPTION_AMBIENT_HAAR_DIAGNOSTIC.md)
 makes this distinction explicit. Summability of the actual losses
 would prove positive limiting measure; a positive Hasse asymptotic
 would still require EFA3's uniform arithmetic tail estimate.
+
+The [triangular sieve](ELLIPTIC_EXCEPTION_TRIANGULAR_PRIME_SIEVE.md)
+proves more than an ambient comparison: at sufficiently large primes
+the new formal component is independent of the entire past, while
+the finite reduction is measurable in lower-prime components.
+When `e_p=1`, the actual loss is
+`(1-1/(p^2+p+1))` times the conditional probability of reduction
+at the pole or a zero of `128x-25865`. Those return probabilities
+remain correlated and undetermined. Its predictable-return theorem
+gives a precise recurrence criterion for a zero limiting measure.
+
+ETP4--ETP5 remove the depth-one restriction: their exact hazard
+kernel retains both the rational formal depth and each branch offset.
+The intrinsic all-primes soluble set has finite accumulated hazard
+almost surely. At every fixed cutoff they also give a count bound
+from the finite low-hazard region, with an explicit exponentially
+small remainder in the hazard threshold. Almost-sure weighted
+divergence remains an unproved arithmetic input. The conditional
+Wieferich-equidistribution comparison ETP6 is context, not a premise
+of these unconditional hazard statements.
 
 ## 7. Proof support
 

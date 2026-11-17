@@ -1,0 +1,55 @@
+{
+  "review_date": "2026-11-17",
+  "claim_scope": "Actual canonical entire Keller etale completion: direct smooth affine/open-source, pure disjoint topological-A1 boundary, simple connectivity, Euler/Pic and free-deck consequences; algebraic boundary smoothness remains unproved.",
+  "primary_sources": [
+    {
+      "path": "sources/milnor-morse-theory-1969.pdf",
+      "url": "https://luis.impa.br/aulas/topdif/Milnor_MorseTheory.pdf",
+      "sha256": "d3f914f51e0626e56fda50e2a791abbf8e91b1a5487da123efea37265948578c",
+      "identity": "J. Milnor, Morse Theory, Annals of Mathematics Studies 51, Princeton University Press, 1963; corrected text/new preface1969; scanned fifth printing1973.",
+      "locator": "Section7, Theorem7.2 statement printed39 and proof printed39\u201341; PDF zero-based pages47\u201349. Scan bibliographic leaf PDF zero-based4.",
+      "inspection": "Statement and complete displayed proof read in extracted primary text. Parent additionally rendered/read all3pages. The proof uses generic squared-distance critical-point theory and earlier Morse foundations, including Lemma6.9 and handle attachments; these are adopted classical inputs, not independently reproved.",
+      "application": "Closed algebraic embedding of a smooth complex affine surface is a closed complex analytic manifold embedding; k=2 gives CW real dimension at most2 and ordinary H^j(U,Z)=0 for j>2."
+    },
+    {
+      "path": "sources/stacks-03GT-zariski-main.html",
+      "url": "https://stacks.math.columbia.edu/tag/03GT",
+      "identity": "Stacks Project, Theorem29.57.1, algebraic version of Zariski's Main Theorem, tag03GT.",
+      "locator": "Displayed theorem and proof.",
+      "inspection": "Primary statement and proof read. The source map is affine, finite type and everywhere quasi-finite. Normalization in R agrees with normalization in L because R is normal and every B-integral element in L is integral over R.",
+      "application": "The actual source X embeds as an open subset of its full normalization.",
+      "sha256": "59e3f20c8a4d291082a16d00d240a7cd6d6a97ff84d6d0c5a6075c35724f9de0"
+    },
+    {
+      "path": "sources/stacks-031T-normal-domain-intersection.html",
+      "url": "https://stacks.math.columbia.edu/tag/031T",
+      "identity": "Stacks Project, Lemma10.157.6(2), tag031T.",
+      "locator": "Normal Noetherian domain intersection of height-one localizations.",
+      "inspection": "Exact cached primary statement inspected; normal Hartogs across an isolated codimension-two boundary point is the application.",
+      "application": "The two affine rings O(W) and O(W minus {p}) agree; an affine open immersion with identical global rings is an isomorphism, ruling out p.",
+      "sha256": "60ca68ba7864eb7885f7d8525b4f2071ec88f04d8e2c2bcb310ab7c23c9f46dc"
+    }
+  ],
+  "retained_input": {
+    "path": "CANONICAL_TRACE_DUAL_ETALE_RECONSTRUCTION.md",
+    "locator": "KU0 full reconstruction in Section1 and KU1 actual full-field application in Section3 only.",
+    "excluded_dependency": "No KU2, KQ0, full LA0, common-pencil assertion or PF46/50 is used."
+  },
+  "topological_foundations": {
+    "adopted": [
+      "General position for loops against a finite smooth stratification of a complex algebraic curve.",
+      "Borel\u2013Moore closed/open exactness and proper pushforward on triangulable finite-type algebraic spaces.",
+      "Poincare duality H_i^BM(M,Z)=H^(dim_R M\u2212i)(M,Z) for oriented manifolds.",
+      "Finite-type curve normalization and genus/puncture topology.",
+      "Finite-cover Euler multiplicativity."
+    ],
+    "explicit_argument": "The finite-normalization branch-summation diagram and its exact kernel sequence are proved in Section4; this is not merely a citation to a surface classification theorem.",
+    "not_claimed": [
+      "No new independent proof of all foundational topology.",
+      "No original Borel\u2013Moore article inspection claimed.",
+      "No algebraic smoothness of boundary components.",
+      "No whole-component root charts or common source coordinate.",
+      "No HC4/JC2 resolution, formal verification or external review."
+    ]
+  }
+}

@@ -260,7 +260,7 @@
   ],
   "formal_verification": false,
   "proof_path": "ELLIPTIC_EXCEPTION_PRIME_ELIGIBILITY.md",
-  "proof_sha256": "f4a82dc6764adab8195282be44c8c31a3db81cf4321f99b8ef535d02b0e2881f",
+  "proof_sha256": "159a69324fc5ec5214dc75e61fa9a214a0283ac0ee8b8496887ae5d04251e937",
   "python_version": "3.12.3",
   "rational_subgroup_domain": {
     "additional_prime": 2709173,
@@ -287,8 +287,8 @@
   "source_hashes": {
     "ELLIPTIC_EXCEPTION_ARITHMETIC.md": "ecd474b0ad2d0ae7b4eed7904bfffc058b5c1cbab2371e4112db6e1a794d0602",
     "ELLIPTIC_EXCEPTION_EXPLICIT_LOCAL_CRITERION.md": "365561753071dfa0fc692c42ebc0d5c6ae88bf48038387de431527b1485faff5",
-    "ELLIPTIC_EXCEPTION_FINITE_LOCAL_ASYMPTOTICS.md": "cb309ee7f92fb3cb2de003ccedcf3fa461b54675bd6aac0ce91d39cfc6e809d7",
-    "ELLIPTIC_EXCEPTION_JOINT_2_3_17_SIEVE.md": "c1264686ba50b4237ddfe1bffd098fc78f5b8cf36bb46f39ceba3f8c47296601",
+    "ELLIPTIC_EXCEPTION_FINITE_LOCAL_ASYMPTOTICS.md": "c69f2dfb10f96cef5002044f954a2add423c8fd75f737746fe97962910c42b51",
+    "ELLIPTIC_EXCEPTION_JOINT_2_3_17_SIEVE.md": "7ee7d83f46de89349c9c7623bdb16e47cd3d3119b62adf512679b0bb3105ec56",
     "sources/milne-ant300.pdf": "bf9d308f7ec2cb8d1c3cf6f8ed68fa418aaaea036eb895991fedcdd6544d7819"
   },
   "status": "pass",

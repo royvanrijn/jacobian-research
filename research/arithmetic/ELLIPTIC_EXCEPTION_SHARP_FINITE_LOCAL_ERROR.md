@@ -108,6 +108,18 @@ used in EQA1 from Milne, Chapter II, Theorem 4.1 and Lemma 5.9.
 Taking valuations in (1.4), and enlarging a fixed constant for the
 one-coefficient cases, proves (1.3). \(\square\)
 
+In particular, write `X(P)=A(P)/C(P)^2` in reduced form with
+`C(P)>0`. For every fixed prime `p`, admissible points with actual
+target height at most `B` satisfy
+
+\[
+ v_p(C(P))\ll_{E,p}1+\log\log B\qquad(B\ge e^e).    \tag{1.5}
+\]
+
+Indeed a positive denominator valuation is exactly the formal depth,
+and the canonical-height comparison bounds the free coefficient norm
+by `O_E(sqrt(1+log B))`.
+
 ## 2. A lattice bound that improves with congruence depth
 
 Use the canonical norm `||v||_q=sqrt(q_x(v))` on the fixed free
@@ -271,7 +283,56 @@ and the global class are invariant under negation. Each target has
 exactly the two preimages `P,-P` away from finitely many exceptions,
 so division by two gives (3.1). \(\square\)
 
-## 4. Scope of the conclusion
+## 4. The explicit three-place constants with this error
+
+**Corollary ESQ4 (three-place counts and Hasse upper bounds).** Let
+`S={2,3,17}`. The coefficients calculated in
+[J2173--J2174](ELLIPTIC_EXCEPTION_JOINT_2_3_17_SIEVE.md) satisfy
+
+\[
+ N_{S,a}(B)=c_aC_E\log B+O_E(\sqrt{\log B}),
+\]
+
+with the following exact values, normalized on the whole joint group:
+
+| Class `a`, with `q_0=2709173` | Quadratic field | `c_a` |
+| --- | --- | --- |
+| `1` | `Q(sqrt(-3))` | `205/111748` |
+| `2` | `Q(sqrt(-6))` | `205/2456` |
+| `5q_0` | `Q(sqrt(-40637595))` | `1/84` |
+| `10q_0` | `K_0=Q(sqrt(-81275190))` | `1/8` |
+
+In particular the total full field-target count passing these three
+places is
+
+\[
+ M_{2,3,17}(B)=\frac{5321}{23946}C_E\log B
+                                      +O_E(\sqrt{\log B}).      \tag{4.1}
+\]
+
+The all-places Hasse-target counts therefore satisfy
+
+\[
+ \boxed{A_E(B)\le\frac{5321}{23946}C_E\log B
+                                     +O_E(\sqrt{\log B}),}
+                                                               \tag{4.2}
+\]
+\[
+ \boxed{A_{K_0}(B)\le\frac18 C_E\log B
+                                     +O_E(\sqrt{\log B}).}      \tag{4.3}
+\]
+
+**Proof.** Apply ESQ3 to the exact four coefficients of J2174 and
+sum them; their sum is the coefficient of J2173. Every all-places
+Hasse target passes these three places, giving (4.2)--(4.3).
+\(\square\)
+
+The same deduction gives the square-root logarithmic error for every
+previously computed fixed finite-place coefficient. Equations
+(4.2)--(4.3) are upper bounds for the all-places counts; the leading
+asymptotics here count only the specified finite local tests.
+
+## 5. Scope of the conclusion
 
 The primary logarithm bound, not a finite experiment, supplies the
 exponential estimate (2.1). The reduced-basis argument and weighted

@@ -1,0 +1,754 @@
+{
+  "claim": "Direct given-polynomial-replica index divisibility",
+  "outcome": "PASS",
+  "check_count": 185,
+  "python": "3.12.3",
+  "sympy": "1.14.0",
+  "source": "DIRECT_REPLICA_INDEX_FROM_A_DESCENDED_DIFFERENTIAL.md",
+  "source_sha256": "2952c484cec7f1c98e2d3994073b301a09f186502182564154008089a2cc3ea4",
+  "checker": "verify_direct_replica_index.py",
+  "checker_sha256": "4f483b990f419436d1a554eb8db178e04c82e207b96ffe8ba6a2a9fe490bcef2",
+  "scope": "Internal exact formula controls. The written proof gives the unrestricted theorem for a given delta=p(y)partial_x and a delta-stable intermediate field of an actual plane Keller map. Nontrivial rational field controls are outside the whole-plane polynomial target hypotheses. No LND classification, first-velocity integrality, external review or formal verification.",
+  "checks": [
+    {
+      "name": "given replica has a genuine rational slice",
+      "passed": true
+    },
+    {
+      "name": "slice recovers source x",
+      "passed": true
+    },
+    {
+      "name": "slice volume coefficient",
+      "passed": true
+    },
+    {
+      "name": "slice transverse wedge has coefficient p",
+      "passed": true
+    },
+    {
+      "name": "top derivative is invariant",
+      "passed": true
+    },
+    {
+      "name": "Taylor coefficient 4 is invariant",
+      "passed": true
+    },
+    {
+      "name": "Taylor subtraction lowers degree at 4",
+      "passed": true
+    },
+    {
+      "name": "Taylor coefficient 3 is invariant",
+      "passed": true
+    },
+    {
+      "name": "Taylor subtraction lowers degree at 3",
+      "passed": true
+    },
+    {
+      "name": "Taylor coefficient 2 is invariant",
+      "passed": true
+    },
+    {
+      "name": "Taylor subtraction lowers degree at 2",
+      "passed": true
+    },
+    {
+      "name": "Taylor coefficient 1 is invariant",
+      "passed": true
+    },
+    {
+      "name": "Taylor subtraction lowers degree at 1",
+      "passed": true
+    },
+    {
+      "name": "Taylor coefficient 0 is invariant",
+      "passed": true
+    },
+    {
+      "name": "Taylor subtraction lowers degree at 0",
+      "passed": true
+    },
+    {
+      "name": "finite Taylor reconstruction is exact",
+      "passed": true
+    },
+    {
+      "name": "last Taylor remainder vanishes",
+      "passed": true
+    },
+    {
+      "name": "unbounded monomial field/volume control has Jacobian one",
+      "passed": true
+    },
+    {
+      "name": "unbounded monomial replica fixes Q",
+      "passed": true
+    },
+    {
+      "name": "unbounded monomial replica translates P",
+      "passed": true
+    },
+    {
+      "name": "unbounded differential descent coefficient",
+      "passed": true
+    },
+    {
+      "name": "unbounded index and pole-order identity",
+      "passed": true
+    },
+    {
+      "name": "pullback order at the unique infinity",
+      "passed": true
+    },
+    {
+      "name": "nonmonomial rational volume 0",
+      "passed": true
+    },
+    {
+      "name": "nonmonomial descended differential 0",
+      "passed": true
+    },
+    {
+      "name": "nonmonomial index arithmetic 0",
+      "passed": true
+    },
+    {
+      "name": "nonmonomial rational target scope guard 0",
+      "passed": true
+    },
+    {
+      "name": "nonmonomial rational volume 1",
+      "passed": true
+    },
+    {
+      "name": "nonmonomial descended differential 1",
+      "passed": true
+    },
+    {
+      "name": "nonmonomial index arithmetic 1",
+      "passed": true
+    },
+    {
+      "name": "nonmonomial rational target scope guard 1",
+      "passed": true
+    },
+    {
+      "name": "nonmonomial rational volume 2",
+      "passed": true
+    },
+    {
+      "name": "nonmonomial descended differential 2",
+      "passed": true
+    },
+    {
+      "name": "nonmonomial index arithmetic 2",
+      "passed": true
+    },
+    {
+      "name": "nonmonomial rational target scope guard 2",
+      "passed": true
+    },
+    {
+      "name": "nonmonomial rational volume 3",
+      "passed": true
+    },
+    {
+      "name": "nonmonomial descended differential 3",
+      "passed": true
+    },
+    {
+      "name": "nonmonomial index arithmetic 3",
+      "passed": true
+    },
+    {
+      "name": "nonmonomial rational target scope guard 3",
+      "passed": true
+    },
+    {
+      "name": "nonmonomial rational volume 4",
+      "passed": true
+    },
+    {
+      "name": "nonmonomial descended differential 4",
+      "passed": true
+    },
+    {
+      "name": "nonmonomial index arithmetic 4",
+      "passed": true
+    },
+    {
+      "name": "nonmonomial rational target scope guard 4",
+      "passed": true
+    },
+    {
+      "name": "general Hamiltonian identity has zero dx coefficient",
+      "passed": true
+    },
+    {
+      "name": "general Hamiltonian dy coefficient is p times the Jacobian",
+      "passed": true
+    },
+    {
+      "name": "actual polynomial shear control Jacobian 0",
+      "passed": true
+    },
+    {
+      "name": "actual Hamiltonian dx coefficient 0",
+      "passed": true
+    },
+    {
+      "name": "actual Hamiltonian dy coefficient 0",
+      "passed": true
+    },
+    {
+      "name": "actual polynomial shear control Jacobian 1",
+      "passed": true
+    },
+    {
+      "name": "actual Hamiltonian dx coefficient 1",
+      "passed": true
+    },
+    {
+      "name": "actual Hamiltonian dy coefficient 1",
+      "passed": true
+    },
+    {
+      "name": "cyclic multiplication matrix relation degree2",
+      "passed": true
+    },
+    {
+      "name": "differential trace commutation degree2 power-3",
+      "passed": true
+    },
+    {
+      "name": "differential trace commutation degree2 power-2",
+      "passed": true
+    },
+    {
+      "name": "differential trace commutation degree2 power-1",
+      "passed": true
+    },
+    {
+      "name": "differential trace commutation degree2 power0",
+      "passed": true
+    },
+    {
+      "name": "differential trace commutation degree2 power1",
+      "passed": true
+    },
+    {
+      "name": "differential trace commutation degree2 power2",
+      "passed": true
+    },
+    {
+      "name": "differential trace commutation degree2 power3",
+      "passed": true
+    },
+    {
+      "name": "differential trace commutation degree2 power4",
+      "passed": true
+    },
+    {
+      "name": "differential trace commutation degree2 power5",
+      "passed": true
+    },
+    {
+      "name": "differential trace commutation degree2 power6",
+      "passed": true
+    },
+    {
+      "name": "differential trace commutation degree2 power7",
+      "passed": true
+    },
+    {
+      "name": "cyclic multiplication matrix relation degree3",
+      "passed": true
+    },
+    {
+      "name": "differential trace commutation degree3 power-3",
+      "passed": true
+    },
+    {
+      "name": "differential trace commutation degree3 power-2",
+      "passed": true
+    },
+    {
+      "name": "differential trace commutation degree3 power-1",
+      "passed": true
+    },
+    {
+      "name": "differential trace commutation degree3 power0",
+      "passed": true
+    },
+    {
+      "name": "differential trace commutation degree3 power1",
+      "passed": true
+    },
+    {
+      "name": "differential trace commutation degree3 power2",
+      "passed": true
+    },
+    {
+      "name": "differential trace commutation degree3 power3",
+      "passed": true
+    },
+    {
+      "name": "differential trace commutation degree3 power4",
+      "passed": true
+    },
+    {
+      "name": "differential trace commutation degree3 power5",
+      "passed": true
+    },
+    {
+      "name": "differential trace commutation degree3 power6",
+      "passed": true
+    },
+    {
+      "name": "differential trace commutation degree3 power7",
+      "passed": true
+    },
+    {
+      "name": "cyclic multiplication matrix relation degree4",
+      "passed": true
+    },
+    {
+      "name": "differential trace commutation degree4 power-3",
+      "passed": true
+    },
+    {
+      "name": "differential trace commutation degree4 power-2",
+      "passed": true
+    },
+    {
+      "name": "differential trace commutation degree4 power-1",
+      "passed": true
+    },
+    {
+      "name": "differential trace commutation degree4 power0",
+      "passed": true
+    },
+    {
+      "name": "differential trace commutation degree4 power1",
+      "passed": true
+    },
+    {
+      "name": "differential trace commutation degree4 power2",
+      "passed": true
+    },
+    {
+      "name": "differential trace commutation degree4 power3",
+      "passed": true
+    },
+    {
+      "name": "differential trace commutation degree4 power4",
+      "passed": true
+    },
+    {
+      "name": "differential trace commutation degree4 power5",
+      "passed": true
+    },
+    {
+      "name": "differential trace commutation degree4 power6",
+      "passed": true
+    },
+    {
+      "name": "differential trace commutation degree4 power7",
+      "passed": true
+    },
+    {
+      "name": "cyclic multiplication matrix relation degree5",
+      "passed": true
+    },
+    {
+      "name": "differential trace commutation degree5 power-3",
+      "passed": true
+    },
+    {
+      "name": "differential trace commutation degree5 power-2",
+      "passed": true
+    },
+    {
+      "name": "differential trace commutation degree5 power-1",
+      "passed": true
+    },
+    {
+      "name": "differential trace commutation degree5 power0",
+      "passed": true
+    },
+    {
+      "name": "differential trace commutation degree5 power1",
+      "passed": true
+    },
+    {
+      "name": "differential trace commutation degree5 power2",
+      "passed": true
+    },
+    {
+      "name": "differential trace commutation degree5 power3",
+      "passed": true
+    },
+    {
+      "name": "differential trace commutation degree5 power4",
+      "passed": true
+    },
+    {
+      "name": "differential trace commutation degree5 power5",
+      "passed": true
+    },
+    {
+      "name": "differential trace commutation degree5 power6",
+      "passed": true
+    },
+    {
+      "name": "differential trace commutation degree5 power7",
+      "passed": true
+    },
+    {
+      "name": "unbounded polynomial tower derivative identity",
+      "passed": true
+    },
+    {
+      "name": "tower through C(y^1) with relative degree1",
+      "passed": true
+    },
+    {
+      "name": "tower through C(y^2) with relative degree3",
+      "passed": true
+    },
+    {
+      "name": "tower through C(y^3) with relative degree2",
+      "passed": true
+    },
+    {
+      "name": "tower through C(y^4) with relative degree5",
+      "passed": true
+    },
+    {
+      "name": "tower through C(y^7) with relative degree3",
+      "passed": true
+    },
+    {
+      "name": "local differential e1 order-4",
+      "passed": true
+    },
+    {
+      "name": "local differential e1 order-3",
+      "passed": true
+    },
+    {
+      "name": "local differential e1 order-2",
+      "passed": true
+    },
+    {
+      "name": "local differential e1 order-1",
+      "passed": true
+    },
+    {
+      "name": "local differential e1 order0",
+      "passed": true
+    },
+    {
+      "name": "local differential e1 order1",
+      "passed": true
+    },
+    {
+      "name": "local differential e1 order2",
+      "passed": true
+    },
+    {
+      "name": "local differential e1 order3",
+      "passed": true
+    },
+    {
+      "name": "local differential e2 order-4",
+      "passed": true
+    },
+    {
+      "name": "local differential e2 order-3",
+      "passed": true
+    },
+    {
+      "name": "local differential e2 order-2",
+      "passed": true
+    },
+    {
+      "name": "local differential e2 order-1",
+      "passed": true
+    },
+    {
+      "name": "local differential e2 order0",
+      "passed": true
+    },
+    {
+      "name": "local differential e2 order1",
+      "passed": true
+    },
+    {
+      "name": "local differential e2 order2",
+      "passed": true
+    },
+    {
+      "name": "local differential e2 order3",
+      "passed": true
+    },
+    {
+      "name": "local differential e3 order-4",
+      "passed": true
+    },
+    {
+      "name": "local differential e3 order-3",
+      "passed": true
+    },
+    {
+      "name": "local differential e3 order-2",
+      "passed": true
+    },
+    {
+      "name": "local differential e3 order-1",
+      "passed": true
+    },
+    {
+      "name": "local differential e3 order0",
+      "passed": true
+    },
+    {
+      "name": "local differential e3 order1",
+      "passed": true
+    },
+    {
+      "name": "local differential e3 order2",
+      "passed": true
+    },
+    {
+      "name": "local differential e3 order3",
+      "passed": true
+    },
+    {
+      "name": "local differential e4 order-4",
+      "passed": true
+    },
+    {
+      "name": "local differential e4 order-3",
+      "passed": true
+    },
+    {
+      "name": "local differential e4 order-2",
+      "passed": true
+    },
+    {
+      "name": "local differential e4 order-1",
+      "passed": true
+    },
+    {
+      "name": "local differential e4 order0",
+      "passed": true
+    },
+    {
+      "name": "local differential e4 order1",
+      "passed": true
+    },
+    {
+      "name": "local differential e4 order2",
+      "passed": true
+    },
+    {
+      "name": "local differential e4 order3",
+      "passed": true
+    },
+    {
+      "name": "local differential e5 order-4",
+      "passed": true
+    },
+    {
+      "name": "local differential e5 order-3",
+      "passed": true
+    },
+    {
+      "name": "local differential e5 order-2",
+      "passed": true
+    },
+    {
+      "name": "local differential e5 order-1",
+      "passed": true
+    },
+    {
+      "name": "local differential e5 order0",
+      "passed": true
+    },
+    {
+      "name": "local differential e5 order1",
+      "passed": true
+    },
+    {
+      "name": "local differential e5 order2",
+      "passed": true
+    },
+    {
+      "name": "local differential e5 order3",
+      "passed": true
+    },
+    {
+      "name": "every branch over a pole remains polar e1 h1",
+      "passed": true
+    },
+    {
+      "name": "every branch over a pole remains polar e1 h2",
+      "passed": true
+    },
+    {
+      "name": "every branch over a pole remains polar e1 h3",
+      "passed": true
+    },
+    {
+      "name": "every branch over a pole remains polar e1 h4",
+      "passed": true
+    },
+    {
+      "name": "every branch over a pole remains polar e2 h1",
+      "passed": true
+    },
+    {
+      "name": "every branch over a pole remains polar e2 h2",
+      "passed": true
+    },
+    {
+      "name": "every branch over a pole remains polar e2 h3",
+      "passed": true
+    },
+    {
+      "name": "every branch over a pole remains polar e2 h4",
+      "passed": true
+    },
+    {
+      "name": "every branch over a pole remains polar e3 h1",
+      "passed": true
+    },
+    {
+      "name": "every branch over a pole remains polar e3 h2",
+      "passed": true
+    },
+    {
+      "name": "every branch over a pole remains polar e3 h3",
+      "passed": true
+    },
+    {
+      "name": "every branch over a pole remains polar e3 h4",
+      "passed": true
+    },
+    {
+      "name": "every branch over a pole remains polar e4 h1",
+      "passed": true
+    },
+    {
+      "name": "every branch over a pole remains polar e4 h2",
+      "passed": true
+    },
+    {
+      "name": "every branch over a pole remains polar e4 h3",
+      "passed": true
+    },
+    {
+      "name": "every branch over a pole remains polar e4 h4",
+      "passed": true
+    },
+    {
+      "name": "every branch over a pole remains polar e5 h1",
+      "passed": true
+    },
+    {
+      "name": "every branch over a pole remains polar e5 h2",
+      "passed": true
+    },
+    {
+      "name": "every branch over a pole remains polar e5 h3",
+      "passed": true
+    },
+    {
+      "name": "every branch over a pole remains polar e5 h4",
+      "passed": true
+    },
+    {
+      "name": "every branch over a pole remains polar e6 h1",
+      "passed": true
+    },
+    {
+      "name": "every branch over a pole remains polar e6 h2",
+      "passed": true
+    },
+    {
+      "name": "every branch over a pole remains polar e6 h3",
+      "passed": true
+    },
+    {
+      "name": "every branch over a pole remains polar e6 h4",
+      "passed": true
+    },
+    {
+      "name": "quadratic subfield generator is deck invariant",
+      "passed": true
+    },
+    {
+      "name": "quadratic subfield derivative leaves invariant field",
+      "passed": true
+    },
+    {
+      "name": "dropping stability would violate the bare-translation bound",
+      "passed": true
+    },
+    {
+      "name": "rational weight differential descends through y squared",
+      "passed": true
+    },
+    {
+      "name": "rational weight has a finite differential pole",
+      "passed": true
+    },
+    {
+      "name": "rational weight also has an infinity pole",
+      "passed": true
+    },
+    {
+      "name": "identity intermediate has exact pole order k0",
+      "passed": true
+    },
+    {
+      "name": "identity intermediate has exact pole order k1",
+      "passed": true
+    },
+    {
+      "name": "identity intermediate has exact pole order k2",
+      "passed": true
+    },
+    {
+      "name": "identity intermediate has exact pole order k3",
+      "passed": true
+    },
+    {
+      "name": "identity intermediate has exact pole order k4",
+      "passed": true
+    },
+    {
+      "name": "identity intermediate has exact pole order k5",
+      "passed": true
+    },
+    {
+      "name": "identity intermediate has exact pole order k6",
+      "passed": true
+    },
+    {
+      "name": "identity intermediate has exact pole order k7",
+      "passed": true
+    },
+    {
+      "name": "identity intermediate has exact pole order k8",
+      "passed": true
+    },
+    {
+      "name": "bare translation permits only index one",
+      "passed": true
+    }
+  ]
+}

@@ -1,0 +1,70 @@
+\documentclass[11pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage[hidelinks]{hyperref}
+\newtheorem{theorem}{Theorem}
+\begin{document}
+\title{Ordinary degree-seven binomial SFC reduces to gap six}
+\author{}\date{}\maketitle
+Let $\mathcal L(X^j)=j!$ and put
+\[
+ P_j(t)=\sum_{k=0}^j\binom jk(j+1)_{6k}t^k.
+\]
+Strong Factorial means that every consecutive pair of positive
+moments of a nonzero phase has a nonzero entry.
+
+\begin{theorem}[The exact remaining degree-seven family]
+\label{thm:gap-six-frontier}
+The following are equivalent:
+\begin{enumerate}
+\item Every ordinary complex univariate binomial of degree at most
+seven satisfies Strong Factorial.
+\item Every nonzero $X(A+BX^6)$, with arbitrary complex coefficients,
+satisfies Strong Factorial.
+\item For every terminal integer
+\[
+ N\ge6,\qquad N\notin\{b7^r:1\le b\le6,\ r\ge0\},
+\]
+one has $\gcd_{\mathbb Q[t]}(P_{N-1},P_N)=1$.
+\end{enumerate}
+Every hypothetical common root in the last assertion necessarily
+satisfies $v_7(-1/t)=1$ at every embedding into $\mathbb C_7$.
+Ordinary supports $\{3,7\},\{4,7\},\{5,7\}$ and every ordinary
+binomial of degree at most six are proved at every positive pair.
+The remaining gap-six assertion is open.
+\end{theorem}
+\begin{proof}
+Theorem \texttt{thm:two-family-frontier} of the
+\href{ORDINARY_DEGREE_SEVEN_TWO_FAMILY_FRONTIER.tex}{two-family classification}
+gives the exact residual rows $\{1,7\}$ and $\{5,7\}$.
+Corollary \texttt{cor:ordinary-sfc} of the
+\href{LOWER_FIVE_QUADRATIC_SECTOR_SFC.tex}{quadratic-sector proof}
+completes the second row. This proves the equivalence of the first
+and third assertions.
+
+The second assertion is a special case of the first.
+Conversely the second assertion supplies every test in the third,
+so all three are equivalent. The earlier classification already
+covers degree at most six, the other two degree-seven supports,
+and all supports through terminal five.
+It also covers the displayed omitted index family $N=b7^r$.
+The moment normalization is
+\[
+ \mathcal L((X(A+BX^6))^j)=A^j j!\,P_j(B/A)\qquad(AB\ne0).
+\]
+A common complex zero is equivalent to a nonconstant rational gcd,
+and nonzero monomials have no zero positive moment.
+
+The necessary valuation condition is already part of the two-family
+classification, by the
+\href{PHYSICAL_PRIME_TOTAL_DEGREE_REDUCTION.tex}{physical prime-total-degree reduction},
+\texttt{thm:radius} and the consecutive-moment bridge.
+The new sector proof supplies the stated all-index support $\{5,7\}$.
+\end{proof}
+
+This is a proved reduction to the remaining ordinary lower-one gap-six
+family. It does not prove that family, degree-seven SFC, all-degree
+binomial SFC, or unrestricted FC/SFC. The proofs and exact checks have
+been reviewed internally; no independent review, formal verification,
+priority or novelty claim is made.
+\end{document}

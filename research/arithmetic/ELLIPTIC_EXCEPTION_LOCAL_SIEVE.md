@@ -248,9 +248,16 @@ tends to infinity. The certified point (1.1), EEC1 and the joint local sieve giv
 \]
 
 The [joint local sieve](ELLIPTIC_EXCEPTION_JOINT_2_3_17_SIEVE.md)
-further gives `limsup A_E(B)/(C_E log B)<=5321/23946`, using the
-exact local-only asymptotic at `2,3,17`, with no square-root logarithmic
-error at that limiting coefficient. The [explicit local criterion](ELLIPTIC_EXCEPTION_EXPLICIT_LOCAL_CRITERION.md)
+gives the exact local-only coefficient `5321/23946` at `2,3,17`.
+The [sharp error theorem](ELLIPTIC_EXCEPTION_SHARP_FINITE_LOCAL_ERROR.md),
+ESQ3--ESQ4, upgrades this to the Hasse upper bound
+`A_E(B)<=(5321/23946) C_E log B+O_E(sqrt(log B))`.
+The [five-adic refinement](ELLIPTIC_EXCEPTION_JOINT_2_3_5_17_SIEVE.md)
+improves the coefficient to `2300089/10392564` at the same error
+order. It multiplies the class-one coefficient by `16/31` and
+leaves the other three coefficients unchanged.
+The certified quadratic field has upper coefficient `1/8` at the
+same error order. The [explicit local criterion](ELLIPTIC_EXCEPTION_EXPLICIT_LOCAL_CRITERION.md)
 replaces the varying tame tests by `v_p(128x-25865)=0 mod3` at every
 `p=2 mod3`, `p>=11`, together with the three local tests at `2,3,5`.
 Fixing a cubeclass of that rational function produces a genus-four
@@ -261,9 +268,10 @@ The tests at `2,3,5` are now completely explicit in the
 and the [two/five-adic classification](ELLIPTIC_EXCEPTION_TWO_FIVE_ADIC_CLASSIFICATION.md).
 
 [EQA2--EQA3](ELLIPTIC_EXCEPTION_QUANTITATIVE_FINITE_LOCAL_ASYMPTOTICS.md)
-further prove rationality of every finite-place coefficient and error
-`O_(E,S)(sqrt(log B) (1+log log B)^(r_a))`, where `r_a` counts only
-the nonautomatic primes for the fixed quadratic class. The
+prove rationality of every finite-place coefficient, with an elementary
+quantitative error involving the nonautomatic-prime count `r_a`.
+ESQ3 sharpens the error to `O_(E,S)(sqrt(log B))` using the
+Hirata-Kohno--Takada logarithm bound. The
 [eligibility sieve](ELLIPTIC_EXCEPTION_PRIME_ELIGIBILITY.md) requires
 the class `a` locally square for a denominator obstruction; a
 numerator obstruction additionally requires `51730` locally square.
@@ -289,6 +297,17 @@ conditional prime losses. The
 [ambient Haar theorem](ELLIPTIC_EXCEPTION_AMBIENT_HAAR_DIAGNOSTIC.md)
 shows why independent ambient local fractions cannot determine this
 intrinsic measure: the rational closure itself is ambient-null.
+
+The all-depth conditional kernel and weighted pathwise theorem in
+[ETP4--ETP5](ELLIPTIC_EXCEPTION_TRIANGULAR_PRIME_SIEVE.md) avoid a
+separate depth-one distribution hypothesis. An almost-sure divergent
+sum of their predictable hazards would give a zero limiting measure;
+this arithmetic divergence has not been established. The
+[one-prime positivity theorem](ELLIPTIC_EXCEPTION_ONE_PRIME_POSITIVITY.md)
+shows that every individual local test is feasible in every class.
+Its cofinite-extension result leaves possible simultaneous finite-set
+obstructions in the two remaining classes confined to an explicit
+finite exceptional set relative to any supplied feasible coset.
 
 All polynomial, field, rank and local-seed identities are already
 covered by the retained checkers linked above. The new finite-place

@@ -1,0 +1,371 @@
+\documentclass[11pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb,amsthm,booktabs,longtable}
+\usepackage[hidelinks]{hyperref}
+\usepackage{xurl}
+\setlength{\emergencystretch}{2em}
+\newtheorem{theorem}{Theorem}
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{corollary}[theorem]{Corollary}
+\newcommand{\mr}{\operatorname{mr}}
+\newcommand{\br}{\operatorname{b}}
+\newcommand{\bi}{\operatorname{i}}
+\title{A bounded family comparison for a seventeen-crossing knot}
+\author{Primary-source comparison and written deductions}
+\date{17 November 2026}
+\begin{document}
+\maketitle
+
+Let $K_*$ be the oriented closure of the four-braid
+\[
+ \beta=\sigma_1\sigma_2\sigma_3^{-2}\sigma_2
+ \sigma_3^{-2}\sigma_2\sigma_1^2\sigma_2^3
+ \sigma_3^{-1}\sigma_2^3 .
+\]
+We compare this explicitly defined knot with specific published
+meridional-rank equality criteria. The comparison separates the
+certificate for $K_*$ from the hypotheses of the older constructions.
+It is not an exhaustive priority claim. Write $\br$ for bridge number
+and $\bi$ for braid index.
+
+\section{Separate imported knot and reflection results}
+
+The following results are used as explicit premises.
+They are not inferred from a floating-point volume or from a census name.
+
+\begin{proposition}[Imported knot data]\label{prop:data}
+The exact diagram and quotient proof in \cite[Definition
+\texttt{def:knot}, Theorems \texttt{thm:sharp} and
+\texttt{thm:crossing}]{new17} gives
+\[
+ \mr(K_*)=\br(K_*)=4,\qquad
+ g(K_*)=7,\quad \bi(K_*)=4,\quad c(K_*)=17,
+\]
+and the normalized Alexander polynomial
+\[
+\begin{split}
+\Delta_{K_*}(t)={}&t^{14}-4t^{13}+8t^{12}-8t^{11}
+ +18t^9-38t^8+47t^7\\
+ &-38t^6+18t^5-8t^3+8t^2-4t+1 .
+\end{split}
+\]
+In particular its breadth is $14$ and its determinant is $117$.
+Theorem \texttt{thm:hyperbolic} of that companion proves that the
+actual knot exterior is hyperbolic. Its separate Theorem
+\texttt{thm:nongraph} proves that the actual double branched cover
+$\Sigma_2(K_*)$ is not a graph manifold.
+\end{proposition}
+
+\begin{proposition}[Imported reflection obstruction]\label{prop:reflection}
+Theorem \texttt{thm:reflection} and Corollary
+\texttt{cor:coxeter} of \cite{universal} exclude four independent
+meridian normal directions in a symmetric-form reflection
+representation over characteristic zero; singular symmetric forms
+are included. Consequently $K_*$ has no Coxeter reflection-class
+quotient of rank at least four, finite or infinite.
+\end{proposition}
+
+The crossing-number deduction in Proposition~\ref{prop:data}
+uses Yamada's theorem that the minimum Seifert-circle number of an
+oriented link equals its braid index \cite[Theorem~3, p.~347]{yamada}.
+Indeed, Alexander breadth gives $g\ge7$, and the displayed braid
+surface gives $g\le(17-4+1)/2=7$. Bridge number four and this
+four-braid give $\bi=4$. Every diagram $D$ therefore has at least
+four Seifert circles, so
+$c(D)=2g_D+s(D)-1\ge14+4-1=17$.
+Here $g_D$ is the genus of its canonical Seifert surface.
+Yamada's notation $b$ denotes braid index, rather than our $\br$.
+
+For clarity, the closed-cover conclusion has its own volume
+premises. Nondegenerate ideal shapes solving the multiplicative
+gluing equations give holonomy with representation volume equal
+to the signed tetrahedron sum \cite[Remark~4.4, p.~433;
+Corollary~4.14 and Remark~4.15, p.~437]{franc}.
+Positive tetrahedra and complete peripheral holonomy are not required.
+In the actual filling certificate, the filled-slope holonomy $A$
+commutes with a loxodromic peripheral holonomy $B$. The latter is
+certified by a logarithmic multiplier with nonzero real part.
+After conjugating $B(z)=\lambda z$, $|\lambda|\ne1$,
+commutativity forces $A$ to fix $0,\infty$ individually.
+The certified multiplier $1$ then gives $A=I$.
+Thus the representation factors through the closed filling.
+Its \emph{real} volume is unchanged by filling
+\cite[Proposition~4.17, p.~437]{franc}; there is no additional real
+core-length term. A certified nonzero volume contradicts
+\cite[Lemma~4.10, p.~11 of the retained preprint]{lty}, which
+states that every $\mathrm{PSL}_2(\mathbb C)$ representation of a
+closed orientable graph manifold has volume zero.
+This route uses neither the essential-edge hypothesis of that
+paper's different Lemma~4.6 nor closed hyperbolicity or faithfulness.
+
+\section{Nonalternation and positivity}
+
+\begin{proposition}\label{prop:nonalternating}
+The knot $K_*$ is nonalternating.
+\end{proposition}
+\begin{proof}
+The polynomial in Proposition~\ref{prop:data} has zero coefficients
+of $t^{10}$ and $t^4$ between nonzero extreme coefficients.
+An alternating knot has no such zero Alexander coefficient
+\cite[Theorem~1.1, p.~181]{murasugi}.
+\end{proof}
+
+\begin{proposition}\label{prop:rasmussen}
+The knot $K_*$ is homogeneous and has Rasmussen invariant $s(K_*)=6$.
+Neither it nor its mirror is positive or strongly quasipositive.
+In particular it has no positive or negative braid presentation.
+\end{proposition}
+\begin{proof}
+Each Artin generator in $\beta$ occurs with a single sign:
+$\sigma_1,\sigma_2$ positively and $\sigma_3$ negatively.
+The closure diagram is homogeneous
+\cite[Lemma~2.2, p.~5]{abe}. Its writhe is $12-5=7$ and its
+Seifert-circle number is $4$. The positive Seifert subgraph has
+components $\{1,2,3\}$ and $\{4\}$; the negative subgraph has
+components $\{1\},\{2\},\{3,4\}$.
+The number $O_+$ of components after smoothing all negative
+crossings is therefore $2$. Abe's formula
+\cite[Theorem~1.2, p.~2]{abe} gives
+\[
+ s(K_*)=w-O+2O_+-1=7-4+4-1=6 .
+\]
+For the mirror, $w=-7$ and $O_+=3$, giving $s=-6$.
+Both knots are homogeneous of genus seven.
+For a homogeneous positive or strongly quasipositive knot,
+Abe's Theorem~1.3 requires $s/2=g$; it fails for $K_*$ and its mirror.
+\end{proof}
+
+This proposition does not exclude arbitrary quasipositivity.
+Proposition~\ref{prop:nonalternating} also prevents using an
+alternating-diagram crosscap formula on the displayed knot.
+
+\section{Constructions detected by Coxeter quotients}
+
+\begin{proposition}\label{prop:coxeterfamilies}
+The knot $K_*$ is outside the following precise quotient-producing
+constructions:
+\begin{enumerate}
+\item the standard twisted-link and even-weight bipartite
+arborescent theorems of Baader--Blair--Kjuchukova;
+\item fishnets satisfying the nonunit even-column gcd criterion,
+and the further maximal-rank Coxeter constructions in the
+\emph{Other fishnets} section of Blair--Kjuchukova--Pfaff;
+\item the classical integer-box families $\mathcal K_{p,4}$
+of Joseph--Pongtanapaisan, including rational tangles assembled
+from the permitted boxes with the stated orientation rules.
+\end{enumerate}
+\end{proposition}
+\begin{proof}
+The first two assertions follow from the rank-four Coxeter quotient
+that the respective constructions supply at bridge number four:
+see \cite[Theorems~1--2 and Section~4]{bbk} and
+\cite[Proposition~1.4 and Sections~2.1--2.2]{fishnet}.
+This contradicts Proposition~\ref{prop:reflection}.
+
+For the third, we give the comparison rather than attributing a
+Coxeter theorem to the source. In
+\cite[Construction~3.5, Definition~3.6 and Corollary~3.12]{jp},
+put $d=2p-1$. Replace the four standard step-$p$ cycle labels by
+the standard generators of the rank-four Coxeter group with
+adjacent labels $d$ and all nonadjacent labels $2$.
+Equal and disjoint cycle labels become equal or commuting
+reflections. For adjacent reflections $a,b$, put $q=ab$.
+The two-strand involutory braid action satisfies
+\[
+ T(a,b)=(aba,a),\qquad
+ T^k(a,b)=(q^ka,q^{k-1}a),\qquad T^d(a,b)=(a,b).
+\]
+Thus the allowed multiples of $d$ on coherently oriented strands
+and even multiples of $d$ on oppositely oriented strands preserve the
+boundary labels in this Coxeter group as well.
+The four original standard labels still occur, so the labeling
+is onto the rank-four Coxeter group.
+The same boundary-label argument applies to the assembled
+rational tangles of \cite[Remark~3.11 and Figure~5]{jp}.
+Proposition~\ref{prop:reflection} again gives a contradiction.
+\end{proof}
+
+The proposition does not reject arbitrary rational replacements
+of twisted diagrams or arbitrary loose fishnet diagrams.
+The fishnet theorem that adds an unknot adds a link component;
+it does not prove equality for the original sublink.
+Also $\Omega(117)=3$, so a determinant obstruction requiring
+$\Omega\le2$ would not apply here.
+
+\section{The symmetric augmentation comparison}
+
+\begin{lemma}\label{lem:free}
+Suppose an $n$-braid $B$ representing $K_*$ has a map
+$\epsilon:\mathcal A_n^{\mathrm{ab}}\to\mathbb C$ with
+$\epsilon(\Phi_B^L)=\Delta(B)$ in Cornwell's conventions.
+Here $\mathcal A_n^{\mathrm{ab}}$ imposes both commutativity
+and $a_{ij}=a_{ji}$. Then such a map is impossible.
+\end{lemma}
+\begin{proof}
+We use the uniform transport in
+\cite[Lemma \texttt{lem:transport}]{symmetric}.
+On the \emph{free} space with basis $e_1,\ldots,e_n$, put
+$G(e_i,e_i)=2$ and $G(e_i,e_j)=\epsilon(a_{ij})$.
+The reflections
+$R_{e_i}(x)=x-G(e_i,x)e_i$ have independent displacement lines.
+At a positive crossing the roots transform by
+$(u,v)\mapsto(R_uv,u)$, with coefficient block
+$\left(\begin{smallmatrix}-G(u,v)&1\\1&0\end{smallmatrix}\right)$.
+These are the $\Phi^L$ blocks, and the Chain Rule gives final
+coefficient matrix $\epsilon(\Phi_B^L)=\Delta(B)$.
+Its diagonal signs close the reflections, producing a
+knot-group representation on this free space.
+No Gram determinant has been inverted.
+
+The group has four generating meridians.
+The span $W$ of their four displacement lines is invariant under
+those reflections, and hence contains every group displacement
+image. In particular it contains the $n$ independent initial
+strand lines, so $n\le4$. But $\bi(K_*)=4$ gives $n\ge4$.
+Thus $n=4$ and the four generating meridians also have independent
+normal directions, contrary to Proposition~\ref{prop:reflection}.
+\end{proof}
+
+\begin{corollary}\label{cor:symmetric}
+The knot $K_*$ has no symmetric maximal-rank augmentation of
+a braid presentation in the sense used by Cornwell's
+Theorem~5.4. In particular it is not an output of that
+rank-raising theorem.
+\end{corollary}
+\begin{proof}
+Cornwell's Theorem~1.10 and its proof give
+$\epsilon(\Phi_B^L)=\Delta(B)$ for a rank-$n$ augmentation
+of an $n$-braid. The symmetric hypothesis of
+\cite[Theorem~5.4, p.~20]{cornwell} is exactly descent to
+$\mathcal A_n^{\mathrm{ab}}$, so Lemma~\ref{lem:free} applies.
+Theorem~5.4 preserves this symmetry in its rank-raising output.
+\end{proof}
+
+This proof does not assert that a generic augmentation retains
+its rank at meridian parameter $-1$. The specialized Gram matrix
+can be singular; the root directions in the free realization
+are still independent. It gives no obstruction to
+\emph{nonsymmetric} augmentations and no unrestricted
+augmentation-rank value for $K_*$.
+
+\section{Other bounded exclusions and remaining scope}
+
+\begin{corollary}\label{cor:otherfamilies}
+Under the separate knot-data imports in Proposition~\ref{prop:data},
+$K_*$ is outside the bridge-at-most-three and torus-knot families,
+the graph-manifold-exterior and nontrivial satellite output classes,
+the Montesinos/arborescent graph-double-cover class, and the
+bridge-four graph-cover criterion of Boileau--Jang--Weidmann.
+It also fails the exact nonunit plat/matrix-gcd sharp-four
+criterion surveyed by Moriah. The satellite and graph-cover
+exclusions use the actual exterior and double cover, respectively;
+the cable and matrix-gcd failures also follow independently from
+the stated bridge and Alexander data.
+\end{corollary}
+\begin{proof}
+Proposition~\ref{prop:data} excludes bridge at most three,
+torus knots, graph-manifold exteriors and all nontrivial satellite
+outputs. Its separate nongraph-cover assertion excludes the
+Montesinos/arborescent graph-cover setting
+\cite[Introduction, pp.~vi--vii]{bs} and the bridge-four
+graph-double-cover theorem \cite[Corollary~1.3]{bjw}.
+These two uses of topology should not be conflated:
+a hyperbolic exterior by itself does not exclude a graph
+\emph{double cover}.
+
+There is also an independent cable check. For a genuine
+winding-$p$ cable, $p\ge2$, on a nontrivial companion $J$, the satellite
+bridge inequality gives
+$4=\br(K_*)\ge p\br(J)\ge2p$, so $p=2$
+\cite[Theorem~1, p.~4]{schultens}. The satellite Alexander formula
+\cite[Theorem~2 and its Seifert corollary, p.~222]{lm}
+then gives $|q|=\det(K_*)=117$ for its $(2,q)$ torus pattern.
+That factor alone has Alexander breadth $116$, exceeding $14$.
+An outer braid-pattern satellite must similarly have two strands,
+and a two-strand braid pattern is a cable.
+
+The exact nonunit plat/matrix-gcd criterion surveyed by Moriah
+\cite[Theorem~4.20]{moriah} also cannot give a sharp-four
+certificate here. Its mod-$p$ double-cover homology consequence
+requires $p^3\mid\det(K_*)$ for some prime $p$; the written
+deduction is \cite[Corollary \texttt{cor:plat}]{gcd}.
+But $117=3^2\cdot13$. This excludes that exact criterion,
+rather than every geometric generalized-Montesinos description.
+\end{proof}
+
+The broader graph-knot closure results with a meridionally
+tame base \cite[Theorem~1 and Corollary~1]{bdjw}
+do not automatically classify every possible hyperbolic base.
+Nor does exclusion of Coxeter witnesses
+exclude every representation or augmentation method.
+No direct named published equality certificate was identified
+in this bounded audit, but a negative search does not prove
+worldwide priority. A census name is not assigned without an
+exact identification. The retained source editions, pins,
+family scopes and explicit remaining limitations are recorded
+in \path{NEW_SEVENTEEN_LITERATURE_AUDIT.json}.
+
+\begin{thebibliography}{99}\small
+\bibitem{new17} \emph{An explicit seventeen-crossing four-bridge knot},
+companion \path{NEW_SEVENTEEN_CROSSING_KNOT.tex},
+Definition \texttt{def:knot}, Theorems
+\texttt{thm:sharp}, \texttt{thm:crossing},
+\texttt{thm:hyperbolic}, \texttt{thm:nongraph}.
+\bibitem{universal} \emph{Universal reflection obstruction},
+companion \path{UNIVERSAL_17_REFLECTION_OBSTRUCTION.tex},
+Theorem \texttt{thm:reflection}, Corollary \texttt{cor:coxeter}.
+\bibitem{yamada} S.~Yamada, \emph{The minimal number of Seifert
+circles equals the braid index of a link}, Invent.\ Math.\
+89 (1987), 347--356, doi:10.1007/BF01389082.
+\bibitem{franc} S.~Francaviglia, \emph{Hyperbolic volume of
+representations of fundamental groups of cusped 3-manifolds},
+IMRN 2004(9), 425--459, doi:10.1155/S1073792804131619.
+\bibitem{lty} F.~Luo, S.~Tillmann and T.~Yang,
+\emph{Thurston's spinning construction and solutions to the
+hyperbolic gluing equations for closed hyperbolic 3-manifolds},
+arXiv:1004.2992v1 (2010), Lemma~4.10.
+\bibitem{murasugi} K.~Murasugi, \emph{On the Alexander polynomial
+of the alternating knot}, Osaka Math.\ J.\ 10 (1958), 181--189.
+\bibitem{abe} T.~Abe, \emph{The Rasmussen invariant of a homogeneous
+knot}, Proc.\ AMS 139 (2011), 2647--2656; retained arXiv:1003.5392v1.
+\bibitem{bbk} S.~Baader, R.~Blair and A.~Kjuchukova,
+\emph{Coxeter groups and meridional rank of links},
+Math.\ Ann.\ 379 (2021), 1533--1551.
+\bibitem{fishnet} R.~Blair, A.~Kjuchukova and C.~Pfaff,
+\emph{Adding a suitable unknot to any link equates bridge number
+and meridional rank}, doi:10.1017/S030500412610214X (2026);
+retained arXiv:2411.10642 author version.
+\bibitem{jp} J.~Joseph and P.~Pongtanapaisan, \emph{Meridional
+rank and bridge number of knotted 2-spheres},
+Canad.\ J.\ Math.\ 77 (2025), 282--299; retained arXiv:2111.09233v2,
+under the title \emph{Bridge number and meridional rank of knotted
+surfaces}.
+\bibitem{cornwell} C.~R.~Cornwell, \emph{KCH representations,
+augmentations, and $A$-polynomials}, J.\ Symplectic Geom.\ 15 (2017),
+983--1017; retained arXiv:1310.7526v3.
+\bibitem{symmetric} \emph{Symmetric maximal-braid augmentations
+and free reflection directions}, companion
+\path{SYMMETRIC_AUGMENTATION_OBSTRUCTION.tex},
+Lemma \texttt{lem:transport}.
+\bibitem{bjw} M.~Boileau, Y.~Jang and R.~Weidmann,
+\emph{Meridional rank and bridge number for a class of links},
+Pacific J.\ Math.\ 292 (2018), 61--75.
+\bibitem{bs} F.~Bonahon and L.~C.~Siebenmann,
+\emph{New geometric splittings of classical knots and the
+classification and symmetries of arborescent knots},
+author monograph, version 26 January 2016.
+\bibitem{bdjw} M.~Boileau, E.~Dutra, Y.~Jang and R.~Weidmann,
+\emph{Meridional rank of knots whose exterior is a graph manifold},
+arXiv:1608.01570.
+\bibitem{schultens} J.~Schultens, \emph{Additivity of bridge numbers
+of knots}, Math.\ Proc.\ Camb.\ Phil.\ Soc.\ 135 (2003), 539--544.
+\bibitem{lm} C.~Livingston and P.~Melvin, \emph{Abelian invariants
+of satellite knots}, Geometry and Topology, LNM 1167 (1985), 217--227.
+\bibitem{moriah} Y.~Moriah, \emph{Heegaard splittings of knot
+exteriors}, Geom.\ Topol.\ Monogr.\ 12 (2007), 191--232,
+Theorem~4.20.
+\bibitem{gcd} \emph{Fishnet scope audit}, companion
+\path{FISHNET_SCOPE_AUDIT.tex}, Corollary \texttt{cor:plat}.
+\end{thebibliography}
+\end{document}

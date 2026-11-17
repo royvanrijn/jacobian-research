@@ -1,0 +1,231 @@
+\documentclass[11pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb,amsthm,booktabs}
+\usepackage[hidelinks]{hyperref}
+\usepackage{xurl}
+\setlength{\emergencystretch}{2em}
+\newtheorem{theorem}{Theorem}
+\newtheorem{lemma}[theorem]{Lemma}
+\newcommand{\mr}{\operatorname{mr}}
+\title{Twenty-four sharp bounds from simple $A_8$ quotients}
+\author{Written proof and exact finite certificates}
+\date{17 November 2026}
+\begin{document}\maketitle
+
+Twenty-four knot groups admit epimorphisms onto $A_8$ taking every
+meridian to a double transposition. This conjugacy class requires four
+generators although $A_8$ itself requires only two. The resulting
+meridional lower bound is elementary: three double transpositions
+cannot act transitively on eight points. Literal permutation assignments
+and four-seed Wirtinger traces give independent proofs that the knots
+have meridional rank and bridge number four.
+
+These are the same twenty-four named knots previously certified with
+ternary affine quotients. The present target has order $20160$, smaller
+than the order $122472$ of those targets. The present lower proofs use
+neither the older affine certificates nor any branched-cover homology.
+No additional named equality is claimed.
+
+\section{The finite group and its meridian class}
+
+Let $C$ be the double-transposition class in the natural alternating
+group $A_8$ on $\{0,\ldots,7\}$. The generating rank of $C$ is the
+least number of its members generating $A_8$.
+
+\begin{lemma}\label{lem:transitive}
+If $r$ double transpositions generate a transitive permutation group
+on eight points, then $r\ge4$.
+\end{lemma}
+\begin{proof}
+Make a graph on the eight points, putting in the two transposition
+edges from each generator. The connected components are exactly the
+generator orbits. Transitivity therefore requires a connected graph,
+which has at least seven distinct edges. There are at most $2r$
+edges, so $7\le2r$.
+\end{proof}
+
+\begin{theorem}\label{thm:group}
+The simple group $A_8$ has order $20160$ and ordinary generating
+rank two. Its class $C$ has $210$ elements and generating rank exactly
+four.
+\end{theorem}
+\begin{proof}
+The order is $8!/2=20160$. There are $\binom84\cdot3=210$ double
+transpositions. They form one $A_8$ class: they form one $S_8$ class,
+and an odd conjugator can be made even by multiplying by one of the
+two transposition factors centralizing the source element.
+
+For an attaining quartet use
+\[
+\begin{aligned}
+ x_0&=(0\,1)(2\,3),&x_1&=(1\,4)(2\,3),\\
+ x_2&=(0\,5)(1\,6),&x_3&=(1\,2)(6\,7).
+\end{aligned}
+\]
+The exact finite enumeration described below gives
+$|\langle x_0,x_1,x_2,x_3\rangle|=20160$. All four generators are even,
+so they generate $A_8$. Lemma~\ref{lem:transitive} excludes three
+$C$-generators and proves the class rank is four.
+
+The two even permutations
+\[
+             a=(0\,1\,2\,3\,4\,5\,6),\qquad b=(0\,1\,7)
+\]
+also generate a group of order $20160$, as verified by the same exact
+enumeration. Thus the ordinary rank is at most two; noncommutativity
+excludes rank one. For completeness, conjugating the full enumerated group by the
+ordinary pair and their inverses partitions it into classes of sizes
+\[
+1,105,112,210,1120,1260,1344,1344,1344,1680,2520,2880,2880,3360.
+\]
+An exact subset-sum check finds no union of classes containing the
+identity with order a proper nontrivial divisor of $20160$.
+Every normal subgroup is such a union and satisfies Lagrange's
+order condition, proving simplicity. Simplicity is not needed for
+the meridional lower bound.
+
+For clarity, each enumeration begins at the identity, repeatedly
+right-multiplies every newly found permutation by each generator and
+its inverse, and stops when no new permutation appears. The retained
+set is then precisely the generated subgroup. The permutations are
+literal eight-entry tuples, so all products, equality tests and the
+final count are exact. No group-recognition or classification software
+is used.
+\end{proof}
+
+\section{Twenty-four named epimorphisms}
+
+\begin{theorem}\label{thm:sharp}
+Every knot in
+\[
+\begin{aligned}
+\mathcal K=\{&13a_{373},13a_{375},13a_{391},13a_{392},\\
+&13a_{3264},13a_{3266},13a_{3275},13a_{3276},\\
+&13n_{1005},13n_{1006},13n_{1007},13n_{1011},13n_{1012},13n_{1013},\\
+&13n_{1043},13n_{1044},13n_{1045},13n_{1046},13n_{1047},13n_{1048},\\
+&13n_{3842},13n_{3844},13n_{3855},13n_{3856}\}
+\end{aligned}
+\]
+admits an epimorphism $\pi_1(S^3\setminus K)\twoheadrightarrow A_8$
+taking meridians into $C$. For every such knot,
+\[
+                         \mr(K)=b(K)=4.
+\]
+\end{theorem}
+\begin{proof}
+The retained input supplies a literal thirteen-crossing PD, thirteen
+permutations, four seed arcs and a complete nine-step coloring trace
+for each name. Number PD slots from zero. Join the edge labels in
+slots one and three through every overpass, sort the resulting
+connected components lexicographically, and number these Wirtinger
+arcs $0,\ldots,12$. A PD row $(a,b,c,d)$ has over-arc $[b]=[d]$
+and under-arcs $[a],[c]$.
+
+Every retained permutation $p_i$ is a double transposition.
+For every reconstructed crossing $(o,j,k)$ the checker verifies
+\[
+                          p_op_jp_o=p_k.
+\]
+Since $p_o=p_o^{-1}$, this satisfies either signed Wirtinger convention.
+The assignments therefore define knot-group homomorphisms taking all
+meridians into $C$. The four seed images generate a group of order
+$20160$ in every case, proving surjectivity onto $A_8$.
+For $13a_{373}$ the seed images are the displayed attaining quartet.
+
+Any meridional generating family maps to a $C$-generating family of
+$A_8$: meridians are conjugate up to inversion, and $C=C^{-1}$.
+Theorem~\ref{thm:group}, or the transitivity argument alone, gives
+$\mr(K)\ge4$.
+
+Each retained trace starts with four distinct seed arcs and reaches
+all thirteen arcs, at each step using a known over-arc and a known
+under-arc to color the other under-arc. Thus the diagram has Wirtinger
+number at most four. The published bridge--Wirtinger equality
+\cite[Definition~1.2 and Theorem~1.3]{bkvv} gives $b(K)\le4$.
+The elementary bridge presentation yields $\mr(K)\le b(K)$, proving
+both equalities. The bridge upper bound uses this exact coloring
+trace and the published theorem; meridional generation alone would
+not give it.
+
+The saved named-census PDs are tied to the literal diagrams by exact
+dart bijections preserving edge gluing, vertex rotation and over/under
+information, with a possible global mirror or orientation reversal.
+These operations preserve both ranks and the involutory meridian
+class. The independent census names remain an explicit trusted import;
+they are not inferred from the finite-group calculation.
+\end{proof}
+
+\section{Exact certificates and scope}
+
+The necessary input is \path{a8_simple_quotient_inputs.json}. Run
+\path{verify_a8_simple_quotients.py} with the standard Python library.
+It checks the sphere embeddings and one-component condition, all
+named dart maps, all $312$ literal crossing relations, all meridian
+classes, all four-seed traces, all image orders, the $210$-element
+conjugacy orbit, the ordinary generating pair and the attaining
+quartet. Corrupted permutations, traces, named maps, ordinary pairs
+and class quartets are rejected.
+
+The optional \texttt{--census} mode rereads all twenty-four named PDs
+and DT codes from the pinned \texttt{snappy\_15\_knots}~1.2.1 database
+using Spherogram~2.4.1, checking the exact database hash and size.
+The default replay checks the retained records and their exact map
+certificates. The published primary bridge--Wirtinger theorem is
+retained with a source hash and is imported rather than reproved.
+
+Only positive epimorphisms are asserted here. A complete negative
+classification on other knots is not part of this result. Ordinary
+rank two concerns the finite target $A_8$, with no corresponding
+ordinary-rank claim for the knot groups. The computation is an internal
+exact replay, not a formal verification or an external specialist
+review. No worldwide-priority claim is made.
+
+\section{A representative literal assignment}
+
+For $13a_{373}$ the four retained seed arcs are $0,1,5,10$. Their images
+are $x_0,x_1,x_2,x_3$ in that order. The entire arc assignment is
+\[
+\begin{array}{c|c@{\qquad}c|c}
+\text{arc}&\text{permutation}&\text{arc}&\text{permutation}\\\hline
+0 & $(0\,1)(2\,3)$ & 7 & $(2\,6)(3\,5)$\\
+1 & $(1\,4)(2\,3)$ & 8 & $(0\,6)(3\,7)$\\
+2 & $(0\,4)(2\,3)$ & 9 & $(1\,5)(3\,7)$\\
+3 & $(0\,4)(5\,6)$ & 10 & $(1\,2)(6\,7)$\\
+4 & $(0\,1)(5\,6)$ & 11 & $(0\,2)(5\,7)$\\
+5 & $(0\,5)(1\,6)$ & 12 & $(0\,2)(1\,3)$\\
+6 & $(2\,5)(3\,6)$ & &\\
+\end{array}
+\]
+The literal PD, with rows in crossing order, is
+\[
+\begin{gathered}
+(3,1,4,26),\ (1,7,2,6),\ (7,3,8,2),\\
+(13,4,14,5),\ (5,14,6,15),\ (21,9,22,8),\\
+(9,17,10,16),\ (17,11,18,10),\ (11,25,12,24),\\
+(19,12,20,13),\ (15,22,16,23),\\
+(23,18,24,19),\ (25,21,26,20).
+\end{gathered}
+\]
+Using the arc-numbering rule in the proof, the complete coloring trace
+is the following list of triples $(o,a,b)$: the known over-arc $o$ and
+known under-arc $a$ color the previously unknown under-arc $b$.
+\[
+\begin{gathered}
+(0,1,2),\ (10,0,12),\ (12,5,6),\\
+(6,10,9),\ (9,12,11),\ (2,6,7),\\
+(7,2,3),\ (5,9,8),\ (1,3,4).
+\end{gathered}
+\]
+These displayed data give one complete finite certificate without
+consulting the machine supplement. The other twenty-three cases are
+stored in the same literal format in the input.
+
+\begin{thebibliography}{9}
+\bibitem{bkvv}
+R. Blair, A. Kjuchukova, R. Velazquez and P. Villanueva,
+Wirtinger systems of generators of knot groups,
+Commun. Anal. Geom. 28 (2020), 243--262,
+Definition~1.2 and Theorem~1.3, printed p.~246.
+\url{https://archive.intlpress.com/site/pub/files/_fulltext/journals/cag/2020/0028/0002/CAG-2020-0028-0002-a002.pdf}.
+\end{thebibliography}
+\end{document}

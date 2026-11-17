@@ -452,9 +452,9 @@
       "doi": "10.1017/S0305004103006832",
       "url": "https://doi.org/10.1017/S0305004103006832",
       "snapshot": "sources/schultens-bridge-additivity.pdf",
-      "location": "Theorem1 and connected-sum argument, author manuscript printedpp4-5; published135(3),539-544",
-      "audit": "Primary author manuscript theorem and connected-sum argument read; Cambridge publication metadata checked. Credit to Schubert1954 retained. No independent certification of every geometric foliation lemma or the original1954 proof.",
-      "scope": "Bridge number has Schubert(-1)additivity for classical knots. This does not assert general meridional-rank additivity; used for additive nonnegative bridge-minus-cover-bound defects and known controls."
+      "location": "Theorem1 and connected-sum argument, author manuscript printedpp4-5; published135(3),539-544 Theorem1 printedp4 also gives satellite bridge number at least geometric index times companion bridge number.",
+      "audit": "Primary author manuscript theorem and connected-sum argument read; Cambridge publication metadata checked. Credit to Schubert1954 retained. No independent certification of every geometric foliation lemma or the original1954 proof. The retained author-manuscript satellite theorem and its argument have now also been read directly; the source's existing SHA256 is ea7b9acb96ddd962b4363ec51c95514aba5544eeded1d7fdf8d461f5f71d375b.",
+      "scope": "Bridge number has Schubert(-1)additivity for classical knots. This does not assert general meridional-rank additivity; used for additive nonnegative bridge-minus-cover-bound defects and known controls. For winding-p cables, geometric index is p; this supports the independent p=2 cable reduction in NEW_SEVENTEEN_LITERATURE_AUDIT.json, not a general meridional-rank satellite formula."
     },
     {
       "id": "ATLASA8",
@@ -608,7 +608,7 @@
       "url": "https://doi.org/10.1007/s00039-013-0247-2",
       "snapshot": "sources/kolpakov-martelli-one-cusp-1303.6122v7.pdf",
       "version_dates": "arXiv:1303.6122v7, 23 October 2013",
-      "location": "Figure 2 and Section 1.1, printed pages 5\u20136",
+      "location": "Figure 2 and Section 1.1, printed pages 5–6",
       "audit": "Exact quotient construction read and visually checked: minimally twisted six-chain exterior double-covers the punctured octahedral orbifold, all twelve edges have index two, and its six torus cusps correspond to six four-marked sphere ends. The full four-dimensional construction is not independently audited.",
       "scope": "Actual branched-cover model for arbitrary rational fillings of the punctured 6* medial core. Rational-tangle solid-torus filling and gluing identification are proved separately in the new topology note.",
       "sha256": "ca4c8aac66f01bfc56304e820a173bcb8bc933b32d0717839d4c8c132214ef12"
@@ -620,10 +620,10 @@
       "year": 2021,
       "url": "https://doi.org/10.4310/CAG.2021.v29.n7.a5",
       "snapshot": "sources/martelli-seven-chain-1808.08430v2.pdf",
-      "version_dates": "arXiv:1808.08430v2, 25 February 2019; CAG29 (2021),1597\u20131641",
-      "location": "Theorem 2.7 and its proof, preprint printed pages 15\u201316; following discussion of the two mixed pieces",
+      "version_dates": "arXiv:1808.08430v2, 25 February 2019; CAG29 (2021),1597–1641",
+      "location": "Theorem 2.7 and its proof, preprint printed pages 15–16; following discussion of the two mixed pieces",
       "audit": "The exact complete closed nonhyperbolic M6 filling statement, graph cases and two sporadic mixed cases were read and visually checked. The theorem's exhaustive classification and computational tables are imported; no independent enumeration replay is claimed.",
-      "scope": "Closed nonhyperbolic M6 fillings are graph cases or two mixed manifolds gluing the figure-eight exterior to the orientable Klein-bottle interval bundle. Both mixed cases are separately excluded as knot double covers by the written mod-two Mayer\u2013Vietoris argument. No full M7 classification is used.",
+      "scope": "Closed nonhyperbolic M6 fillings are graph cases or two mixed manifolds gluing the figure-eight exterior to the orientable Klein-bottle interval bundle. Both mixed cases are separately excluded as knot double covers by the written mod-two Mayer–Vietoris argument. No full M7 classification is used.",
       "sha256": "b2c8436322c80419d023d58eb8978ce7de10c9f9ad78a6c96e53b0b99685ed1f"
     },
     {
@@ -634,7 +634,7 @@
       "url": "https://dornsife.usc.edu/francis-bonahon/wp-content/uploads/sites/205/2023/06/BonSieb-compressed.pdf",
       "snapshot": "sources/bonahon-siebenmann-2016.pdf",
       "version_dates": "Author monograph, version 26 January 2016",
-      "location": "Introduction printed pages vi\u2013vii; algebraic/arborescent terminology and branched graph-manifold cover consequence; Part V supplies the general theory",
+      "location": "Introduction printed pages vi–vii; algebraic/arborescent terminology and branched graph-manifold cover consequence; Part V supplies the general theory",
       "audit": "The exact algebraic/arborescent correspondence and graph-manifold double-cover fact were read at their stated locations. Full proofs and the whole monograph are not independently audited. The new proper-four-vertex graph reduction is written separately and is not inferred from the canonical-projection uniqueness theorem.",
       "scope": "Classical arborescent-cover input for closures of algebraic tangles arising from explicit local graph reductions. Supplies no all-diagram preservation of a planar polyhedral core.",
       "sha256": "c887732f91421ce8bf424f32ab4c3b52b842a5c15f8bc95c62599b8d8baa88a6"
@@ -695,6 +695,98 @@
       "location": "Sections2-4 pp276-280; TableVII and reflection-generator exception footnote p301",
       "audit": "Original primary facsimile directly read and visually checked. Section4 states primitive rank-two groups need two or three reflections. TableVII gives primitive rank-three groups23-27, all three-reflection generated by its exception footnote. Mixed imprimitive rank-three groups needing four are explicitly excluded only after the separate one-hyperplane-orbit argument. Classification itself is imported, not replayed.",
       "scope": "Exact low-rank classification and reflection-generation bounds imported in FINITE_COMPLEX_REFLECTION_BOUNDARY. The orbit-character, full-order and power-replacement proofs are supplied separately there. For all sixteen listed knots, the generic semisimple dimension bound then excludes sharp-four finite complex reflection-class certificates in any ambient dimension. This excludes neither modular nor other finite-group conjugacy-class methods."
+    },
+    {
+      "id": "KM25",
+      "title": "A reduction theorem for good basic invariants of finite complex reflection groups",
+      "authors": "Yukiko Konishi and Satoshi Minabe",
+      "year": 2025,
+      "url": "https://doi.org/10.1016/j.jalgebra.2025.03.048",
+      "snapshot_url": "https://arxiv.org/pdf/2409.00380v2",
+      "snapshot": "sources/konishi-minabe-reduction-2409.00380v2.pdf",
+      "sha256": "372ca4fec036e1ca5b493980be2b60b24d14c71fa587a4fa0870dd914e5510db",
+      "publication": "Journal of Algebra677(2025),327-359",
+      "version_dates": "Accepted manuscript arXiv2409.00380v2,9April2025",
+      "location": "Section6.1,equation6.1,printedp25",
+      "audit": "Primary exact five Gaussian reflection generators and60root lines read and visually checked. The pair-index typo0<=alpha<beta<=4 is corrected to1<=alpha<beta<=4 in the announced basis. Thirty-two four-coordinate lines have128 Gaussian-unit representatives; no128element full G31orbit is asserted. Model identification is imported; exact matrix group, block action and quotient are independently replayed in the companion package.",
+      "scope": "G31_COXETER_QUOTIENT identifies the explicit group as G31. Its order46080 reflection class maps4to1 to S6transpositions with kernel64, so any full meridional reflection quotient already gives the same bound5 by Coxeter and KCH methods. No new named-knot equality or universal higher-rank exclusion."
+    },
+    {
+      "id": "YAM87",
+      "title": "The minimal number of Seifert circles equals the braid index of a link",
+      "authors": "Shuji Yamada",
+      "year": 1987,
+      "doi": "10.1007/BF01389082",
+      "url": "https://webhomes.maths.ed.ac.uk/~v1ranick/papers/yamada.pdf",
+      "snapshot": "sources/yamada-seifert-braid-1987.pdf",
+      "location": "Theorem3 printedp347; Theorem2/proof printedp355; Invent.Math.89(1987),347-356",
+      "audit": "Original journal facsimile retained and hashed; both statement and needed proof pages visually read; publisher metadata checked.",
+      "scope": "For every oriented link, braid index equals the minimum number of Seifert circles among all oriented diagrams. Combined with a genus bound and bridge4, this proves crossing17 for the explicitly defined new knot; Yamada b denotes braid index, not bridge number.",
+      "sha256": "2b1619367fa7ef93b316413d01c67f52c6c9f39095369809e3fa2383f54bbcc3"
+    },
+    {
+      "id": "FRAN04",
+      "title": "Hyperbolic volume of representations of fundamental groups of cusped 3-manifolds",
+      "authors": "Stefano Francaviglia",
+      "year": 2004,
+      "doi": "10.1155/S1073792804131619",
+      "url": "https://www.dm.unibo.it/~francavi/lavori/art_vs_IMRN.pdf",
+      "snapshot": "sources/francaviglia-volume-published-2004.pdf",
+      "location": "Published IMRN2004(9),425-459: Definition2.1 p427; Remark4.4 p433; Corollary4.14,Remark4.15,Proposition4.17 p437",
+      "audit": "Published journal edition from the author's page retained and hashed. Complete relevant pages visually read; publication identity checked on publisher page. Uses published numbering, not differently numbered original arXiv edition.",
+      "scope": "Nondegenerate ideal gluing solutions yield straight pseudo-developing holonomy maps and signed tetrahedron sums computing real representation volume; nonparabolic peripheral images are allowed. A representation factoring through a Dehn filling has unchanged real volume. Positivity, cusp completeness, hyperbolicity of the domain/filling and an extra real core term are not hypotheses of these imported statements. Closed factorization and actual cover/interval binding are separately proved locally. Theorem1.3 is not imported for the closed nongraph conclusion.",
+      "sha256": "d1be39750fb4f60fe13aeb65525d051f8a6b11a724c7342a3598d389c3fcefe6"
+    },
+    {
+      "id": "LTY13",
+      "title": "Thurston's spinning construction and solutions to the hyperbolic gluing equations for closed hyperbolic 3-manifolds",
+      "authors": "Feng Luo, Stephan Tillmann and Tian Yang",
+      "year": 2013,
+      "doi": "10.1090/S0002-9939-2012-11220-1",
+      "url": "https://arxiv.org/pdf/1004.2992v1",
+      "snapshot": "sources/luo-tillmann-yang-gluing-1004.2992v1.pdf",
+      "location": "Exact retained arXiv1004.2992v1(18Apr2010),Section4.6/Lemma4.10 printedp11. Journal metadata: Proc.AMS141(1)(2013),335-350; journal lemma/page numbering not checked.",
+      "audit": "Primary author preprint retained and hashed; entire representation-volume page visually read, separating Lemma4.10 from the essential-edge hypothesis in Lemma4.6. Publisher-deposited Crossref metadata confirms journal identity, title, authors and pages.",
+      "scope": "Every PSL2(C) representation of a closed orientable graph manifold has volume zero. No essential-edge, closed hyperbolicity or irreducibility assumption occurs in this lemma. Together with the separately proved filling-holonomy factorization and Francaviglia's volume identity, a nonzero certified real volume excludes the actual double cover from the graph-manifold class. It supplies no atoroidality or hyperbolicity conclusion for that cover.",
+      "sha256": "bc19e070ffc10d5d32ac33e6e0f631f5d9bf94fac03de0265939c5ee551a9800"
+    },
+    {
+      "id": "ABE11",
+      "title": "The Rasmussen invariant of a homogeneous knot",
+      "authors": "Tetsuya Abe",
+      "year": 2011,
+      "doi": "10.1090/S0002-9939-2010-10687-1",
+      "url": "https://arxiv.org/pdf/1003.5392v1",
+      "snapshot": "sources/abe-homogeneous-1003.5392v1.pdf",
+      "location": "Retained arXiv1003.5392v1: O_+ definition p1; Theorems1.2/1.3 p2; Lemma2.2 and Theorem2.3 p5; graph interpretation p8. Published Proc.AMS139(7)(2011),2647-2656.",
+      "audit": "Primary theorem/definition pages visually read; exact source retained and hashed. The new knot's homogeneous braid signs, writhe and signed Seifert components are separately calculated in NEW_SEVENTEEN_LITERATURE_AUDIT.json.",
+      "scope": "A homogeneous knot diagram has s=w-O+2O_+-1. The positive/strongly-quasipositive equivalence for a homogeneous knot makes s/2=g necessary for either property. The explicit new braid has s6 and genus7; the mirror formula gives s-6. Thus neither it nor its mirror is positive or strongly quasipositive, and neither has a positive braid presentation. This does not exclude arbitrary quasipositivity.",
+      "sha256": "4e050a66869555f91de8e6dbaa93c4c71d1cea93d346279b7b3f23fc0d934363"
+    },
+    {
+      "id": "MUR58",
+      "title": "On the Alexander polynomial of the alternating knot",
+      "authors": "Kunio Murasugi",
+      "year": 1958,
+      "doi": "10.18910/3567",
+      "url": "https://ir.library.osaka-u.ac.jp/repo/ouka/all/3567/omj10_02_03.pdf",
+      "snapshot": "sources/murasugi-alternating-alexander-1958.pdf",
+      "location": "Theorem1.1 printedp181 (PDFpage2 after repository cover); OsakaMath.J.10(2)(1958),181-189",
+      "audit": "Original journal version from Osaka repository retained and hashed; first theorem page visually read.",
+      "scope": "Every Alexander coefficient between the nonzero extremal coefficients of an alternating knot is nonzero. The new knot's internal zero coefficients therefore prove it nonalternating; alternating-diagram crosscap formulas cannot be applied.",
+      "sha256": "17f356e6a62103e2f4b25943d82758c393f0b12fe3cc67898bbc3e658916438d"
+    },
+    {
+      "id": "LMEL85",
+      "title": "Abelian invariants of satellite knots",
+      "authors": "Charles Livingston and Paul Melvin",
+      "year": 1985,
+      "url": "https://pmelvin.blogs.brynmawr.edu/files/2021/09/1985LivingstonMelvin.pdf",
+      "snapshot": "sources/livingston-melvin-satellites-1985.pdf",
+      "location": "Theorem2 and following Seifert corollary printedp222; Geometry and Topology,LNM1167,217-227",
+      "audit": "Author-hosted published paper retained and hashed; theorem/corollary page visually read. Original Seifert attribution preserved.",
+      "scope": "Satellite Alexander matrices and polynomials split as pattern factor times companion with t replaced by t^w. Combined with the satellite bridge inequality, determinant117 and breadth14 exclude genuine cables independently of the hyperbolic-exterior certificate.",
+      "sha256": "d045314f7c3af26696f382cfda15bda9dfdfa095ab9f5414c4ff05dbdbf6422d"
     }
   ],
   "unresolved_scope_extractions": [
@@ -705,7 +797,7 @@
     "A repair or alternate proof for Dutra2022's broader main theorem; its original Lemma3.1 gap and invocation in Lemma3.8(2) are now directly checked",
     "Full proof audits of November and October2026 releases; October243 algebra, named-diagram and archived KnotInfo checks completed",
     "Priority scope of fixed-fibre meridional bounds and general branched-cover rank inequalities; r2 core-group precedent identified and credited",
-    "Worldwide priority of the eight alternating sharp-four equalities: the author293-name open list and exact audited family exclusions are checked; a single targeted2024-2026 primary search found no additional direct four-bridge ordinary-rank/augmentation/non-Coxeter theorem or named certificate, but search non-hits prove no absence. Nonsymmetric rank-four augmentation existence and other independently verified non-Coxeter family membership remain unestablished."
+    "Worldwide priority of the explicit named sharp-four equalities. The pinned293-name open list and exact scoped family exclusions are checked; search non-hits prove no absence. All sixteen alternating GL3/A6 cases now have unrestricted complex augmentation rank exactly three, so their rank-four augmentation possibility is excluded. Other knot comparisons and independently established non-Coxeter family membership remain separate obligations."
   ],
   "not_exhaustive_claims": [
     "No all-knot proof",

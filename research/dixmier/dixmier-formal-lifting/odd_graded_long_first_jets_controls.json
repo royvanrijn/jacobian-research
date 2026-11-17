@@ -1,0 +1,211 @@
+{
+  "claim": "Complete cap23 odd first kernel and nonlinear h3 compatibility: H6 vanishes; three parameters survive",
+  "status": "PASS",
+  "environment": {
+    "python": "3.12.3",
+    "arithmetic": "Python integers and fractions.Fraction; no symbolic/nullspace library"
+  },
+  "commutator_coefficients": [
+    "h^2 homogeneous first kernel",
+    "h^3 coupled quadratic compatibility"
+  ],
+  "basis_counts": [
+    80,
+    114,
+    140,
+    102
+  ],
+  "unknowns": 436,
+  "rows": 2494,
+  "nonzeros": 68262,
+  "prime": 1000003,
+  "rank_minor_size": 430,
+  "rank_minor_det_modp": 288992,
+  "independent_kernel_minor_size": 6,
+  "independent_kernel_minor_det_Q": "-10240/9",
+  "rank_Q": 430,
+  "kernel_dimension_Q": 6,
+  "compact_hamiltonians": [
+    "XQ",
+    "Y=R*A0-3XQ",
+    "Y^2",
+    "R^2*T",
+    "Y^4+4tY^2-(16/3)tY+10t^2",
+    "R^4*D+(9Y^5+45tY^3+45t^2Y-60tY^2+110tY-720t^2)/25"
+  ],
+  "Hamiltonian_source_degrees": [
+    2,
+    7,
+    14,
+    21,
+    28,
+    35
+  ],
+  "jet_degrees_in_R_T_D_S_order": [
+    [
+      -1,
+      15,
+      23,
+      11
+    ],
+    [
+      -1,
+      8,
+      16,
+      4
+    ],
+    [
+      -1,
+      15,
+      23,
+      11
+    ],
+    [
+      -1,
+      -1,
+      18,
+      6
+    ],
+    [
+      -1,
+      17,
+      23,
+      13
+    ],
+    [
+      12,
+      17,
+      23,
+      20
+    ]
+  ],
+  "full_symplectic_jacobian_and_ordinary_Euler_reconstruction": true,
+  "cap_preserving_shears": [
+    "source XQ",
+    "target RS"
+  ],
+  "R2T_shear_H6_cross_RT_degree": 27,
+  "normalization_gap": "No subsequent cap-preserving elimination or evenization is proved",
+  "h3_compatibility": {
+    "normalized_parameters": [
+      "a*Y",
+      "b*R^2*T",
+      "c*H4",
+      "d*H6"
+    ],
+    "h2_unknowns": 307,
+    "rows": 2005,
+    "second_rank_Q": 305,
+    "second_rank_minor_det_modp": 199704,
+    "quadratic_pairs": [
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        1
+      ],
+      [
+        0,
+        2
+      ],
+      [
+        0,
+        3
+      ],
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        2
+      ],
+      [
+        1,
+        3
+      ],
+      [
+        2,
+        2
+      ],
+      [
+        2,
+        3
+      ],
+      [
+        3,
+        3
+      ]
+    ],
+    "rhs_nonzeros": [
+      336,
+      93,
+      106,
+      233,
+      333,
+      0,
+      215,
+      215,
+      427,
+      581,
+      588
+    ],
+    "functional_support": 288,
+    "all307columns_annihilated": true,
+    "exact_functional_values": [
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "1"
+    ],
+    "necessary_sufficient_over_fields": "d=0",
+    "surviving_parameters": [
+      "Y",
+      "R^2*T",
+      "H4"
+    ],
+    "exact_h2_particular_monomials": [
+      "1",
+      "a^2",
+      "a*b",
+      "a*c",
+      "b^2",
+      "b*c",
+      "c^2"
+    ],
+    "exact_particular_coefficients": 346,
+    "full_h2_family": "particular(a,b,c)+u*K_R3+v*K_R4S",
+    "first_R_and_second_R_forced_zero": true,
+    "normalized_h2_S_position_only": true,
+    "future_v_gauge_c2_D4_degree": 24,
+    "corrupted_particular_rejected": true,
+    "corrupted_functional_rejected": true
+  },
+  "natural_classical_flows": {
+    "Y": "X(tau)=X/(1+2tau*R*X^2)^(1/2), R fixed",
+    "H6": "R(tau)=R/(1-3tau*R^3)^(1/3)",
+    "scope": "Natural classical Hamiltonian exponentials only; no exclusion of alternative nonlinear gauges"
+  },
+  "hashes": {
+    "ODD_GRADED_LONG_FIRST_JETS_AND_NORMALIZATION_GAP.md": "8d26c986131dc82105427470ee702acc24064a871cf518d0cc9e51382b0885e4",
+    "check_odd_graded_long_first_jets.py": "db92161213f733b12cdb125bf1489f7bd9e03818baa926e780b6e310c486b418",
+    "odd_graded_long_first_jets_witness.json": "3da41bf880cb502214e61551ac0764cce3fe93d0da719db47402faa84de131bb",
+    "check_graded_long_cap23.py": "78bc02799a65b5587a6dad0672d72e74776f1a719430546f7e95dfe1ed8c3e62",
+    "graded_long_cap23_witness.json": "9f4523d1b776289095f908b19f82ed6297fa243c672904831f072ad7e727be34",
+    "check_long_graph_curvature.py": "3574e9a9fbfd9e19251709a6af9759909ed09a4f960a44df60e35a4480e04a0f",
+    "../dixmier-audit/verify_long_pbw.py": "0fd237f4954b4a45260b65ffef2e973e1f253e3b359e440da7d0cc6dbdd06eed"
+  },
+  "coverage_boundary": "Complete homogeneous cap23 first kernel and exact nonlinear h3 compatibility over characteristic-zero fields; H6 forced zero, all three remaining parameters have retained h2 points with two additional homogeneous freedoms. No h4/h5 compatibility, full corrected lift, evenization, nongraded exclusion or DC1/DC2 theorem.",
+  "independent_replay": false,
+  "formal_verification": false,
+  "external_review": false
+}

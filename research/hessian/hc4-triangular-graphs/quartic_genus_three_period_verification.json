@@ -63,11 +63,11 @@
     "neumann-rudolph-1988-unfoldings-corrigendum.pdf": "7836b6f99387ddc74e785466ffd6630bfdae79ba931c5e33d5d7d8b74964bac9"
   },
   "cable_action_proof_sha256": "9cadd3f5aed9c34845c0b143ebd74a50a8d99a658bdecf7e562b1f508eb96355",
-  "source_audit_sha256": "57345d9af9b46b3584cbe099adbc9c285e76c91a267ab5ad0100f8b7c86c2bcb",
+  "source_audit_sha256": "9bfeb4cc36d03c9fdd45e36e8c1802177857ccb050a3f339e6985b7a2805643b",
   "proof_sha256": "e6ea60d3a8869d6be9448aa2250e08bc2c30c5fcff507ae4f5617e80ad7805f0",
   "checker_sha256": "e7471d399d1137d7430e103b850290c3227a560cdac1ca1debdf07d0f5de52e8",
   "sympy_version": "1.14.0",
-  "elapsed_seconds": 0.295,
+  "elapsed_seconds": 0.296,
   "scope": {
     "quartic_chord_action_and_three_period_equations_checked": true,
     "canonical_coefficients_proved_rational_not_everywhere_regular": true,

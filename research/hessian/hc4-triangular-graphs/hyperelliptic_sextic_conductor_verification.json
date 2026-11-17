@@ -60,11 +60,11 @@
     "neumann-1989-plane-curves-links-infinity.pdf": "0c8a6c9090af7a24c4a030cc14285e2e6283a6db78c09ee5a9490d19fab68c66",
     "neumann-rudolph-1988-unfoldings-corrigendum.pdf": "7836b6f99387ddc74e785466ffd6630bfdae79ba931c5e33d5d7d8b74964bac9"
   },
-  "source_audit_sha256": "57345d9af9b46b3584cbe099adbc9c285e76c91a267ab5ad0100f8b7c86c2bcb",
-  "proof_sha256": "d514ade9aa97212a312818640a586e109dc6482c8dbdad64515e3cc92ec28b23",
+  "source_audit_sha256": "9bfeb4cc36d03c9fdd45e36e8c1802177857ccb050a3f339e6985b7a2805643b",
+  "proof_sha256": "b9a311ba9060dc1a684a97c91adce35e81079ee86bd3457558ca59734e611bca",
   "checker_sha256": "021da8bcfad9bbc6437af848fb23c2cdb2fd4392acc4cdd537d26ae3757f7513",
   "sympy_version": "1.14.0",
-  "elapsed_seconds": 0.255,
+  "elapsed_seconds": 0.261,
   "scope": {
     "generic_hyperelliptic_genus_three_ambient_branch_excluded_by_written_argument": true,
     "persistent_hyperelliptic_contacts_excluded": true,

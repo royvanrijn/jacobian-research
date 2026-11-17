@@ -1,0 +1,773 @@
+{
+  "claim": "Canonical full Long graph has nonzero cubic Weyl curvature",
+  "status": "PASS",
+  "environment": {
+    "python": "3.12.3",
+    "arithmetic": "fractions.Fraction; complete finite coefficient support"
+  },
+  "canonical_input": {
+    "path": "dixmier/dixmier-audit/verify_long_pbw.py",
+    "callable": "long_images",
+    "returned_order": [
+      "R",
+      "T",
+      "D",
+      "S"
+    ],
+    "source_order": [
+      "X",
+      "Q",
+      "P",
+      "Z"
+    ],
+    "sha256": "0fd237f4954b4a45260b65ffef2e973e1f253e3b359e440da7d0cc6dbdd06eed",
+    "use_boundary": "Input polynomial construction only; verifier algebra is independent"
+  },
+  "input_support": {
+    "R": {
+      "terms": 2,
+      "degree": 3,
+      "polynomial_sha256": "a10e1ca895fb4087b5734977ca42671831a0b28017ecf6fb51e917184f05c5ad"
+    },
+    "T": {
+      "terms": 47,
+      "degree": 15,
+      "polynomial_sha256": "78e289b70592d9527018130a7634323c28e5a27932c5f2cdb61fe7d356c392a2"
+    },
+    "D": {
+      "terms": 139,
+      "degree": 23,
+      "polynomial_sha256": "0593cdbe0cd32214de51ce505c678127434546926cb7c138c8355aad04731487"
+    },
+    "S": {
+      "terms": 22,
+      "degree": 11,
+      "polynomial_sha256": "365489fe6573fc628be845b5a32e506f3662efd33f24ef355ac17e246ba5c4cb"
+    }
+  },
+  "all_six_classical_full_frame_relations": [
+    {
+      "pair": [
+        "R",
+        "T"
+      ],
+      "Poisson": [],
+      "status": "PASS"
+    },
+    {
+      "pair": [
+        "R",
+        "D"
+      ],
+      "Poisson": [
+        [
+          [
+            0,
+            0,
+            0,
+            0
+          ],
+          "-1"
+        ]
+      ],
+      "status": "PASS"
+    },
+    {
+      "pair": [
+        "R",
+        "S"
+      ],
+      "Poisson": [],
+      "status": "PASS"
+    },
+    {
+      "pair": [
+        "T",
+        "D"
+      ],
+      "Poisson": [],
+      "status": "PASS"
+    },
+    {
+      "pair": [
+        "T",
+        "S"
+      ],
+      "Poisson": [
+        [
+          [
+            0,
+            0,
+            0,
+            0
+          ],
+          "-1"
+        ]
+      ],
+      "status": "PASS"
+    },
+    {
+      "pair": [
+        "D",
+        "S"
+      ],
+      "Poisson": [],
+      "status": "PASS"
+    }
+  ],
+  "identity_graph_positive_controls": [
+    {
+      "pair": [
+        "X",
+        "Q"
+      ],
+      "Poisson": [],
+      "Pi3_zero": true,
+      "all_higher_orders_zero_by_linear_degree": true
+    },
+    {
+      "pair": [
+        "X",
+        "P"
+      ],
+      "Poisson": [
+        [
+          [
+            0,
+            0,
+            0,
+            0
+          ],
+          "-1"
+        ]
+      ],
+      "Pi3_zero": true,
+      "all_higher_orders_zero_by_linear_degree": true
+    },
+    {
+      "pair": [
+        "X",
+        "Z"
+      ],
+      "Poisson": [],
+      "Pi3_zero": true,
+      "all_higher_orders_zero_by_linear_degree": true
+    },
+    {
+      "pair": [
+        "Q",
+        "P"
+      ],
+      "Poisson": [],
+      "Pi3_zero": true,
+      "all_higher_orders_zero_by_linear_degree": true
+    },
+    {
+      "pair": [
+        "Q",
+        "Z"
+      ],
+      "Poisson": [
+        [
+          [
+            0,
+            0,
+            0,
+            0
+          ],
+          "-1"
+        ]
+      ],
+      "Pi3_zero": true,
+      "all_higher_orders_zero_by_linear_degree": true
+    },
+    {
+      "pair": [
+        "P",
+        "Z"
+      ],
+      "Poisson": [],
+      "Pi3_zero": true,
+      "all_higher_orders_zero_by_linear_degree": true
+    }
+  ],
+  "weyl_curvature": {
+    "ST": {
+      "definition": "E3=Pi^3(f,g)/24 for [f,g]_Moyal-h*{f,g}",
+      "terms": 30,
+      "polynomial": [
+        [
+          [
+            6,
+            0,
+            0,
+            0
+          ],
+          "199/2"
+        ],
+        [
+          [
+            7,
+            1,
+            0,
+            0
+          ],
+          "-339/2"
+        ],
+        [
+          [
+            8,
+            0,
+            0,
+            1
+          ],
+          "-322"
+        ],
+        [
+          [
+            8,
+            2,
+            0,
+            0
+          ],
+          "918"
+        ],
+        [
+          [
+            9,
+            1,
+            0,
+            1
+          ],
+          "1764"
+        ],
+        [
+          [
+            9,
+            3,
+            0,
+            0
+          ],
+          "-2916"
+        ],
+        [
+          [
+            10,
+            0,
+            0,
+            2
+          ],
+          "240"
+        ],
+        [
+          [
+            10,
+            0,
+            1,
+            0
+          ],
+          "-423"
+        ],
+        [
+          [
+            10,
+            2,
+            0,
+            1
+          ],
+          "-4005"
+        ],
+        [
+          [
+            10,
+            4,
+            0,
+            0
+          ],
+          "6561/2"
+        ],
+        [
+          [
+            11,
+            1,
+            0,
+            2
+          ],
+          "-2220"
+        ],
+        [
+          [
+            11,
+            1,
+            1,
+            0
+          ],
+          "1026"
+        ],
+        [
+          [
+            11,
+            3,
+            0,
+            1
+          ],
+          "10179"
+        ],
+        [
+          [
+            11,
+            5,
+            0,
+            0
+          ],
+          "-16767/2"
+        ],
+        [
+          [
+            12,
+            0,
+            1,
+            1
+          ],
+          "660"
+        ],
+        [
+          [
+            12,
+            2,
+            0,
+            2
+          ],
+          "7434"
+        ],
+        [
+          [
+            12,
+            2,
+            1,
+            0
+          ],
+          "-2241"
+        ],
+        [
+          [
+            12,
+            4,
+            0,
+            1
+          ],
+          "-21060"
+        ],
+        [
+          [
+            12,
+            6,
+            0,
+            0
+          ],
+          "22599/2"
+        ],
+        [
+          [
+            13,
+            1,
+            1,
+            1
+          ],
+          "-4104"
+        ],
+        [
+          [
+            13,
+            3,
+            0,
+            2
+          ],
+          "-10638"
+        ],
+        [
+          [
+            13,
+            3,
+            1,
+            0
+          ],
+          "7209"
+        ],
+        [
+          [
+            13,
+            5,
+            0,
+            1
+          ],
+          "15795"
+        ],
+        [
+          [
+            14,
+            0,
+            2,
+            0
+          ],
+          "450"
+        ],
+        [
+          [
+            14,
+            2,
+            1,
+            1
+          ],
+          "8019"
+        ],
+        [
+          [
+            14,
+            4,
+            0,
+            2
+          ],
+          "5508"
+        ],
+        [
+          [
+            14,
+            4,
+            1,
+            0
+          ],
+          "-14337/2"
+        ],
+        [
+          [
+            15,
+            1,
+            2,
+            0
+          ],
+          "-1431"
+        ],
+        [
+          [
+            15,
+            3,
+            1,
+            1
+          ],
+          "-5022"
+        ],
+        [
+          [
+            16,
+            2,
+            2,
+            0
+          ],
+          "1134"
+        ]
+      ],
+      "polynomial_sha256": "c2bf078d399be45851b635c9f44af43f51ba045d9c7e7e5a19f7b82ee37b9141",
+      "point_source_order_X_Q_P_Z": [
+        1,
+        0,
+        0,
+        0
+      ],
+      "value": "199/2"
+    },
+    "DR": {
+      "definition": "E3=Pi^3(f,g)/24 for [f,g]_Moyal-h*{f,g}",
+      "terms": 30,
+      "polynomial": [
+        [
+          [
+            6,
+            0,
+            0,
+            0
+          ],
+          "-27/2"
+        ],
+        [
+          [
+            7,
+            1,
+            0,
+            0
+          ],
+          "69/2"
+        ],
+        [
+          [
+            8,
+            0,
+            0,
+            1
+          ],
+          "22"
+        ],
+        [
+          [
+            8,
+            2,
+            0,
+            0
+          ],
+          "-45"
+        ],
+        [
+          [
+            9,
+            1,
+            0,
+            1
+          ],
+          "-144"
+        ],
+        [
+          [
+            9,
+            3,
+            0,
+            0
+          ],
+          "270"
+        ],
+        [
+          [
+            10,
+            0,
+            0,
+            2
+          ],
+          "-8"
+        ],
+        [
+          [
+            10,
+            0,
+            1,
+            0
+          ],
+          "33"
+        ],
+        [
+          [
+            10,
+            2,
+            0,
+            1
+          ],
+          "306"
+        ],
+        [
+          [
+            10,
+            4,
+            0,
+            0
+          ],
+          "-243"
+        ],
+        [
+          [
+            11,
+            1,
+            0,
+            2
+          ],
+          "84"
+        ],
+        [
+          [
+            11,
+            1,
+            1,
+            0
+          ],
+          "-117"
+        ],
+        [
+          [
+            11,
+            3,
+            0,
+            1
+          ],
+          "-432"
+        ],
+        [
+          [
+            11,
+            5,
+            0,
+            0
+          ],
+          "243"
+        ],
+        [
+          [
+            12,
+            0,
+            1,
+            1
+          ],
+          "-24"
+        ],
+        [
+          [
+            12,
+            2,
+            0,
+            2
+          ],
+          "-324"
+        ],
+        [
+          [
+            12,
+            2,
+            1,
+            0
+          ],
+          "108"
+        ],
+        [
+          [
+            12,
+            4,
+            0,
+            1
+          ],
+          "972"
+        ],
+        [
+          [
+            12,
+            6,
+            0,
+            0
+          ],
+          "-729"
+        ],
+        [
+          [
+            13,
+            1,
+            1,
+            1
+          ],
+          "180"
+        ],
+        [
+          [
+            13,
+            3,
+            0,
+            2
+          ],
+          "540"
+        ],
+        [
+          [
+            13,
+            3,
+            1,
+            0
+          ],
+          "-324"
+        ],
+        [
+          [
+            13,
+            5,
+            0,
+            1
+          ],
+          "-972"
+        ],
+        [
+          [
+            14,
+            0,
+            2,
+            0
+          ],
+          "-18"
+        ],
+        [
+          [
+            14,
+            2,
+            1,
+            1
+          ],
+          "-432"
+        ],
+        [
+          [
+            14,
+            4,
+            0,
+            2
+          ],
+          "-324"
+        ],
+        [
+          [
+            14,
+            4,
+            1,
+            0
+          ],
+          "486"
+        ],
+        [
+          [
+            15,
+            1,
+            2,
+            0
+          ],
+          "81"
+        ],
+        [
+          [
+            15,
+            3,
+            1,
+            1
+          ],
+          "324"
+        ],
+        [
+          [
+            16,
+            2,
+            2,
+            0
+          ],
+          "-81"
+        ]
+      ],
+      "polynomial_sha256": "2e4d11d369afb47adccab5cb75c7123c336c5c2d2b4327a6d53a68e72c156197",
+      "point_source_order_X_Q_P_Z": [
+        1,
+        0,
+        0,
+        0
+      ],
+      "value": "-27/2"
+    }
+  },
+  "RS_Pi3_zero": true,
+  "hashes": {
+    "check_long_graph_curvature.py": "3574e9a9fbfd9e19251709a6af9759909ed09a4f960a44df60e35a4480e04a0f",
+    "../dixmier-audit/verify_long_pbw.py": "0fd237f4954b4a45260b65ffef2e973e1f253e3b359e440da7d0cc6dbdd06eed"
+  },
+  "coverage_boundary": "Exact canonical global polynomial inputs, six Poisson identities, positive identity-graph control and complete Pi^3/24 curvature coefficients for ST/DR. This does not verify higher corrected quantum jets, finite graph quantization, source projectivity, BRST truncation or nonexistence of corrected finite lifts. The unchanged-constraint h-flatness and triangular arguments are separate written implications.",
+  "independent_replay": false,
+  "formal_verification": false,
+  "external_review": false
+}

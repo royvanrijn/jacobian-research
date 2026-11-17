@@ -1,0 +1,49 @@
+{
+  "claim": "A polynomial f(r) has a global finite conjugate exactly when f is affine",
+  "status": "PASS",
+  "environment": {
+    "python": "3.12.3",
+    "sympy": "1.14.0"
+  },
+  "coefficient_scope": "Characteristic zero; L=K((h)); globally finite PBW source algebra; arbitrary finite partner order and scalar parameter poles.",
+  "D0_B_coefficient_determinant": "1",
+  "global_polynomial_inverse_frame": true,
+  "D0_r_and_B_r_commutators": true,
+  "D0_B_commutator": "(9/2)*h*Q*B",
+  "recursive_Ore_controls": "orders1..6 and polynomial degrees1..5; not an all-order finite test",
+  "composition_degree_controls": [
+    {
+      "degree": 1,
+      "composition_degree": 3
+    },
+    {
+      "degree": 2,
+      "composition_degree": 6
+    },
+    {
+      "degree": 3,
+      "composition_degree": 9
+    },
+    {
+      "degree": 4,
+      "composition_degree": 12
+    },
+    {
+      "degree": 5,
+      "composition_degree": 15
+    }
+  ],
+  "affine_positive_control": "D=alpha^-1*D0 for f=alpha*r+beta",
+  "nonlinear_rational_localized_positive_control": "D=(1+4*h*r^3)^-1*D0 for f=r+h*r^4",
+  "nonlinear_derivative_is_nonconstant_global_polynomial": true,
+  "finite_geometric_prefixes_reject_polynomial_inverse": true,
+  "hashes": {
+    "POLYNOMIAL_FIRST_IMAGE_REPARAMETRIZATION_OBSTRUCTION.md": "6b37be9fb183060a33eb6400bc1f87ada7a2f6fc45c1a92b71a644a55598b2f7",
+    "check_polynomial_first_image.py": "39283bbcb2b59696f751615417215b123b5779b318383a4996cc98f939b58dff",
+    "EXACT_POSITION_CENTRALIZER_AND_COMPLETION.md": "e1c0e0ec66951325c1abbef5ed9b467a1229f1c3e1b74e2aea9a1cb2b41f9f33"
+  },
+  "coverage_boundary": "Exact frame, vector-field and finite Ore identities only. Global PBW equivalence, centralizer, units and arbitrary-order conjugate classification are written proofs. Rational-position conjugates are allowed, not excluded; no general odd-jet or arbitrary first-image theorem.",
+  "independent_replay": false,
+  "formal_verification": false,
+  "external_review": false
+}

@@ -1,0 +1,253 @@
+\documentclass[11pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb,amsthm}
+\newtheorem{theorem}{Theorem}
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{proposition}[theorem]{Proposition}
+\title{Physical factorial moments at a prime total degree}
+\author{Internal proof; no priority or external-review claim}\date{17 November 2026}
+\begin{document}\maketitle
+Let $p$ be prime and let $n\ge1$. The integer $n$ denotes the
+terminal order, so the consecutive pair has orders $n-1,n$.
+Throughout this note the lower
+Gamma parameter is exactly the positive integer $n$. Put
+\[
+ T_n(t)=\sum_{k=0}^n c_{n,k}t^k,\qquad
+ c_{n,k}=\binom nk(n)_{(p-1)k}
+       =\frac{n\,[n+(p-1)k-1]!}{k!(n-k)!},
+ \qquad H_n(Y)=pT_n(Y/p).
+\]
+The second expression for $c_{n,k}$ includes $k=0$. Coefficients of
+$T_n$ and $H_n$ are distinct: write $h_{n,k}=p^{1-k}c_{n,k}$ for
+the latter. Normalize $v_p(p)=1$.
+
+\begin{lemma}[Exact integral coefficients]\label{lem:coefficients}
+For $k\ge1$ let
+\[
+ U_p(k)=\frac{(pk)!}{p^k k!}
+       =\prod_{\substack{1\le j\le pk\\p\nmid j}}j,\qquad
+ N=n+(p-1)k-1.
+\]
+Then $U_p(k)$ is a $p$-adic unit and
+\[
+ h_{n,k}=U_p(k)
+ \left[p\binom N{pk}+\binom N{pk-1}\right].                 \tag{1}
+\]
+Here $\binom ab=0$ for $b>a\ge0$. Thus $H_n\in\mathbb Z[Y]$,
+$h_{n,0}=p$, and $h_{n,n}=U_p(n)$ is a unit. In particular
+\[
+ v_p(c_{n,k})\ge k-1,\qquad v_p(c_{n,n})=n-1.              \tag{2}
+\]
+\end{lemma}
+\begin{proof}
+For $j=n-k>0$, the bracket in (1), after multiplication by
+$(pk)!/(p^kk!)$, equals
+\[
+ \frac{N!}{p^kk!j!}\,[pj+pk]
+ =\frac{pnN!}{p^kk!j!}=p^{1-k}c_{n,k}.
+\]
+For $j=0$ its first binomial is zero and its second binomial is
+one, giving the same identity. The product formula for $U_p(k)$
+proves all remaining assertions. No factorial valuation estimate
+or analytic moment-generating series is used.
+\end{proof}
+
+\begin{theorem}[An Eisenstein index family]\label{thm:index}
+If $n=bp^r$ with $r\ge0$ and $1\le b<p$, then $H_n$ is Eisenstein
+at $p$. Consequently $T_n$ is irreducible over $\mathbb Q_p$
+and over $\mathbb Q$.
+\end{theorem}
+\begin{proof}
+The constant coefficient has valuation one and the leading
+coefficient is a unit by Lemma~\ref{lem:coefficients}. For
+$0<k<n$ it remains to show
+\[
+ p\mid \binom{n+(p-1)k-1}{pk-1}.                          \tag{3}
+\]
+Recall the elementary no-carry form of Lucas' criterion:
+$\binom{a+b}{a}$ is a $p$-adic unit precisely when adding $a$
+and $b$ in base $p$ produces no carry. This follows by taking
+coefficients in
+$(1+X)^m=\prod_i(1+X^{p^i})^{m_i}$ modulo $p$.
+If (3) failed, adding $pk-1$ and $n-k$ would be carry-free.
+Put $s=v_p(k)$. The last $s+1$ digits of $pk-1$ are $p-1$,
+so $p^{s+1}\mid n-k$. Therefore $v_p(n)=s$, hence $s=r$.
+But then $k=ap^r$ with $1\le a<b<p$, and
+$n-k=(b-a)p^r$ is not divisible by $p^{r+1}$, a contradiction.
+Equation (1) now makes every interior coefficient $p$-divisible.
+The Eisenstein argument is over the DVR $\mathbb Z_p$ and
+allows a unit leading coefficient. The invertible variable change
+$t=Y/p$ preserves irreducibility over $\mathbb Q_p$.
+\end{proof}
+
+\begin{corollary}[Ordinary consecutive moments]\label{cor:pair}
+For every prime $p$ and every terminal index $n=bp^r\ge2$ with
+$1\le b<p$, the ordinary factorial moments of every nonzero phase
+\[
+ f(X)=X(A+BX^{p-1})
+\]
+at orders $n-1,n$ cannot both vanish. In particular this proves
+the gap-six assertion at all terminal $n=b7^r$,
+$1\le b\le6$, $n\ge2$.
+\end{corollary}
+\begin{proof}
+If $A B=0$ this is immediate for a monomial. Otherwise put
+$t=B/A$ and $\theta=tD_t$. The normalized upper and lower
+moments, respectively, are
+\[
+ T_n+\frac{p-1}{n}\theta T_n,\qquad
+ T_n-\frac1n\theta T_n.
+\]
+These identities follow coefficientwise from
+$(n+1)_m=(1+m/n)(n)_m$ and
+$\binom{n-1}{k}=(1-k/n)\binom nk$.
+The $2$ by $2$ coefficient determinant is $-p/n\ne0$.
+Since $T_n(0)=1$, a common zero would be a multiple root of
+$T_n$. Theorem~\ref{thm:index} excludes this in characteristic zero.
+\end{proof}
+
+\begin{theorem}[The exact possible critical radius]\label{thm:radius}
+For arbitrary $n\ge1$, every positive-valuation root of $H_n$
+is simple. More precisely, all positive-valuation roots form one
+irreducible Eisenstein factor over $\mathbb Q_p$.
+Thus every multiple root $t$ of $T_n$ would satisfy
+\[
+ v_p(pt)=0.
+\]
+Equivalently, for $\epsilon=(-1)^p$ and $u=\epsilon/t$,
+\[
+                         v_p(u)=1.                       \tag{4}
+\]
+This is necessary, not sufficient, for a multiple root.
+\end{theorem}
+\begin{proof}
+Divide $H_n$ by its unit leading coefficient. It is monic
+integral with constant valuation one, so all its roots are
+integral. Write
+$\overline H_n=Y^m G(Y)$, where $m\ge1$ and $G(0)\ne0$.
+The two coprime factors lift by Hensel's lemma to monic integral
+factors $H_+,H_0$, with $\overline H_+=Y^m$ and
+$\overline H_0=G$ (up to the harmless unit normalization).
+Every root of $H_+$ has positive valuation, every root of $H_0$
+has valuation zero, and $H_0(0)$ is a unit. Hence $H_+(0)$ has
+valuation one. Thus $H_+$ is Eisenstein and irreducible and,
+in characteristic zero, has only simple roots.
+A multiple root of $H_n$ must therefore have valuation zero.
+The change $Y=pt$ and then $u=\epsilon/t$ gives (4).
+Alternatively, a monic irreducible positive-valuation factor
+occurring twice would contribute at least two to the constant
+valuation, contradicting its value one.
+\end{proof}
+
+\begin{proposition}[A finite-field trace reduction]\label{prop:trace}
+Coefficientwise modulo $p$,
+\[
+ \overline H_n(Y)=\sum_{k=1}^n(-1)^k
+        \binom{n+(p-1)k-1}{pk-1}Y^k,\qquad
+ \sum_{n\ge1}\overline H_n(Y)z^n
+       =\frac{-Yz}{1+Yz-z^p}.                             \tag{5}
+\]
+In particular every nonzero exponent is congruent to $n$
+modulo $p$. For odd $p$, put $w=(p-1)!$ and define $K_n$ by
+\[
+ K_n(Y)=\sum_{k=0}^n a_{n,k}Y^k,\quad a_{n,0}=p,\quad
+ a_{n,k}=p\binom{n+(p-1)k-1}{pk}
+              +\binom{n+(p-1)k-1}{pk-1}\quad(k>0).
+\]
+Then
+\[
+ H_n(Y)\equiv K_n(wY)\pmod {p^2}.                         \tag{6}
+\]
+If $D(z)=(1-z)^p-Yz$, the exact generating function is
+\[
+ \sum_{n\ge0}K_n(Y)z^n=p-\frac{zD'(z)}{D(z)},\quad K_0=p. \tag{7}
+\]
+Thus $K_n(Y)$ is the sum of the $n$th powers of the $p$ roots,
+with multiplicity, of $(\lambda-1)^p-Y\lambda^{p-1}$.
+\end{proposition}
+\begin{proof}
+Wilson's congruence gives $U_p(k)\equiv(-1)^k\pmod p$.
+The unit test for the binomial in (5) forces $p\mid n-k$,
+since $pk-1$ ends in the digit $p-1$. For its generating function,
+write $n=k+j$ and use
+$\sum_{j\ge0}\binom{pk+j-1}{pk-1}z^j=(1-z)^{-pk}$,
+then sum the geometric series in $-Yz/(1-z)^p$.
+
+For odd $p$, each block of nonmultiples of $p$ satisfies
+\[
+ \prod_{i=1}^{p-1}(p\ell+i)
+ \equiv(p-1)!\left(1+p\ell\sum_{i=1}^{p-1}i^{-1}\right)
+ \equiv(p-1)!\pmod {p^2}.
+\]
+The inverse sum is zero modulo $p$. Therefore
+$U_p(k)\equiv w^k\pmod {p^2}$, proving (6).
+For (7), put $Q=Yz/(1-z)^p$. The two binomial
+sums and the constant coefficients give exactly
+\[
+ \sum_{n\ge0}K_n(Y)z^n
+   =\frac{p}{1-z}
+      +\left(\frac{pz}{1-z}+1\right)\frac{Q}{1-Q}.
+\]
+Simplifying yields
+\[
+ \frac{p(1-z)^{p-1}-(p-1)Yz}{(1-z)^p-Yz}
+       =p-\frac{zD'(z)}{D(z)}.
+\]
+The power-sum interpretation follows by factoring $D$ formally
+over an algebraic splitting field.
+\end{proof}
+
+\section*{Two precise limitations of the residue reduction}
+\begin{proposition}[Unit-residue obstructions]\label{prop:local-obstructions}
+Neither the unique positive-valuation factor nor its odd/even
+degree controls the unit factors in Theorem~\ref{thm:radius}.
+For example, at $p=7,n=15$,
+\[
+ \overline H_{15}=6Y(Y-3)^7(Y-5)^7.
+\]
+For the $Y=3+Z$ residue disk the coefficients through degree seven
+have residues modulo $7^3=343$
+\[
+ [49,210,182,14,70,280,273,153].
+\]
+Their valuations are $[2,1,1,1,1,1,1,0]$.
+The local degree-seven factor consequently has Newton edges
+$(0,2)$ to $(1,1)$ to $(7,0)$. Its local factors have degrees
+one and six, respectively; the latter is irreducible because
+its slope denominator is six. Thus a universal odd-degree local
+factor assertion is false, even on the physical integer family.
+This is not an SFC counterexample.
+
+Even first-order transversality after division by $p$ is not
+uniform. At $p=7,n=145$, the first two coefficients of
+$H_{145}(4+Z)$ modulo $7^4=2401$ are $1470,1176$.
+Both have valuation exactly two:
+\[
+ H_{145}(4)\equiv0,\qquad H_{145}'(4)\equiv0\pmod {49}.
+\]
+The coefficients of $Z^0,\ldots,Z^{14}$ in
+$\overline H_{145}(4+Z)$ are
+$[0,0,0,0,0,0,0,0,0,0,0,0,0,0,5]$,
+so the unit residue root at $4$ has multiplicity fourteen. Thus neither a uniform simple residue root
+nor the universal criterion
+$v_7(H_n(a))\ge2\Rightarrow v_7(H'_n(a))=1$
+can prove all indices. The actual polynomial still has no
+certified multiple root here; these are obstructions to shortcuts,
+not counterexamples to simplicity.
+
+\end{proposition}
+\begin{proof}
+The displayed coefficients follow from the exact integer identity (1),
+using the finite binomial expansion of $H_n(a+Z)$. Their
+valuations give the stated Newton edges; the slope denominator
+forces the degree-six factor to be irreducible. The last residue
+list proves multiplicity fourteen at $4$. These exact finite
+calculations are replayed by the accompanying checker.
+\end{proof}
+
+The ordinary gap-six all-index assertion remains open.
+The uniform reductions above retain the exact physical
+parameter, locate its remaining multiple-root problem at the
+single radius (4), and give an unbounded Eisenstein index family.
+\end{document}

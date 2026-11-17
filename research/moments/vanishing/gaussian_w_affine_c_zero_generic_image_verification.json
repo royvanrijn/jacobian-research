@@ -1,0 +1,190 @@
+{
+  "status": "passed",
+  "original_source_controls": [
+    {
+      "name": "zero-h",
+      "h": "0",
+      "a": "1/3",
+      "u": "z + 1",
+      "k": "z**2",
+      "selected_root_through_t4": "0",
+      "selected_generic_rank": 1,
+      "original_markers": [
+        "1",
+        "z",
+        "z**2",
+        "y",
+        "y**2",
+        "w",
+        "w*z",
+        "w*y",
+        "w**2"
+      ],
+      "Wick_orders": [
+        0,
+        4
+      ],
+      "exact_connection_identity": true
+    },
+    {
+      "name": "selected-zero-factor",
+      "h": "z**3 + z",
+      "a": "0",
+      "u": "z + 1",
+      "k": "z**2 + z",
+      "selected_root_through_t4": "0",
+      "selected_generic_rank": 1,
+      "original_markers": [
+        "1",
+        "z",
+        "z**2",
+        "y",
+        "y**2",
+        "w",
+        "w*z",
+        "w*y",
+        "w**2"
+      ],
+      "Wick_orders": [
+        0,
+        4
+      ],
+      "exact_connection_identity": true
+    },
+    {
+      "name": "nonzero-constant-h",
+      "h": "2",
+      "a": "0",
+      "u": "z + 1",
+      "k": "z**2 - z",
+      "selected_root_through_t4": "2*t",
+      "selected_generic_rank": 1,
+      "original_markers": [
+        "1",
+        "z",
+        "z**2",
+        "y",
+        "y**2",
+        "w",
+        "w*z",
+        "w*y",
+        "w**2"
+      ],
+      "Wick_orders": [
+        0,
+        4
+      ],
+      "exact_connection_identity": true
+    },
+    {
+      "name": "rational-degree-one",
+      "h": "3*z + 2",
+      "a": "1/4",
+      "u": "z + 1",
+      "k": "z**2 - z",
+      "selected_root_through_t4": "54*t**4 + 18*t**3 + 6*t**2 + 2*t",
+      "selected_generic_rank": 1,
+      "original_markers": [
+        "1",
+        "z",
+        "z**2",
+        "y",
+        "y**2",
+        "w",
+        "w*z",
+        "w*y",
+        "w**2"
+      ],
+      "Wick_orders": [
+        0,
+        4
+      ],
+      "exact_connection_identity": true
+    },
+    {
+      "name": "quadratic-field",
+      "h": "z**2 + 1",
+      "a": "1/3",
+      "u": "z + 1",
+      "k": "z",
+      "selected_root_through_t4": "t**3 + t",
+      "selected_generic_rank": 2,
+      "original_markers": [
+        "1",
+        "z",
+        "z**2",
+        "y",
+        "y**2",
+        "w",
+        "w*z",
+        "w*y",
+        "w**2"
+      ],
+      "Wick_orders": [
+        0,
+        4
+      ],
+      "exact_connection_identity": true
+    },
+    {
+      "name": "cubic-field",
+      "h": "z**3 + z + 1",
+      "a": "0",
+      "u": "z**2 + 1",
+      "k": "z**2",
+      "selected_root_through_t4": "2*t**4 + t**3 + t**2 + t",
+      "selected_generic_rank": 3,
+      "original_markers": [
+        "1",
+        "z",
+        "z**2",
+        "y",
+        "y**2",
+        "w",
+        "w*z",
+        "w*y",
+        "w**2"
+      ],
+      "Wick_orders": [
+        0,
+        4
+      ],
+      "exact_connection_identity": true
+    }
+  ],
+  "exact_selected_field_kernel_controls": {
+    "exact_kernel_marker": "w*(1 - z**2)",
+    "exact_kernel_reduction": "0",
+    "exact_nonzero_marker": "Z -> z in the quadratic selected field",
+    "selected_zero_negative_control": "whole degree-three quotient is not the selected rank-one field"
+  },
+  "unit_vs_full_rank_control": {
+    "phase": "w*(z**2 + 1)",
+    "original_Wick_orders": [
+      0,
+      8
+    ],
+    "unit_ODE": "(1-4t^2) f' - 4t f = 0",
+    "unit_cyclic_rank": 1,
+    "full_actual_generic_rank": 2,
+    "frame": [
+      "Phi[1]",
+      "Phi[Z]"
+    ],
+    "exact_time_amplitude": "Phi[1-2tZ]=1",
+    "kernel_marker": "Phi[W(1-Z^2)]=0",
+    "generic_not_global_scope_boundary": "P=Y^2 has rank one and unbounded normalized finite-pole orders"
+  },
+  "scope": "Bounded exact Wick, field, kernel and connection controls only. The companion proof establishes all h,u,k, all constant a, all characteristic-zero fields, and all original polynomial markers. No global K[t]-lattice or literal filtered-image classification is inferred.",
+  "python": "3.12.3",
+  "sympy": "1.14.0",
+  "sha256": {
+    "GAUSSIAN_W_AFFINE_C_ZERO_GENERIC_IMAGE.md": "5378c337c29c2e56e391b0ed33481bdaa8c0836a65ae4774972aa7f273902fa1",
+    "verify_gaussian_w_affine_c_zero_generic_image.py": "33983a83406d589606f30fef5cfe088298118c172270b046a788a72973288bbc",
+    "GAUSSIAN_MULTIBASE_QUADRATIC_FIBRE_PRIMITIVITY.md": "1449db0b915fd8abe58c627441e399a57446a7f0d8c98e2b715b780c50ca4492",
+    "GAUSSIAN_QUADRATIC_W_FINITE_IMAGE_CLASSIFICATION.md": "b39d0e600ea841f2ba2927cec756bdb91d890b3155c0271b3b25455ffc41a88d"
+  },
+  "independent_replay": false,
+  "formal_verification": false,
+  "external_review": false
+}

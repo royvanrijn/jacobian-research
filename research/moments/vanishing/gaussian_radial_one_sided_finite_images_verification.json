@@ -1,0 +1,155 @@
+{
+  "status": "passed",
+  "checked_on": "2026-11-17",
+  "environment": {
+    "python": "3.12.3",
+    "sympy": "1.14.0"
+  },
+  "sha256": {
+    "research/moments/vanishing/verify_gaussian_radial_one_sided_finite_images.py": "0e8871a5aaa217cfc1f3a82417e370fa3b4f45ba0f52dd7390503785ab54a273",
+    "research/moments/vanishing/GAUSSIAN_RADIAL_ONE_SIDED_FINITE_IMAGES.md": "67d70bbf6bb2230d172eb5340ea3ab783cb16ac00afa9d1cc7e9c842d12ac178",
+    "research/moments/vanishing/GAUSSIAN_ANGULAR_CORE_FULL_IMAGE_INVARIANCE.md": "816deaaa4d2fa056b06f38cf6d9a33caa0319acfc2c50c5a704e7c4c72c5d242",
+    "research/moments/vanishing/GAUSSIAN_AFFINE_ISOTROPIC_CHART.md": "7305f5915b0861a6f55a4c76c46ff1c5360d6b8f41ea9c0f301f81a8bf4d6900",
+    "research/moments/vanishing/GAUSSIAN_AMPLITUDE_IDEALS_AND_WEIGHT_INVARIANCE.md": "650c2f422f8db94d963c00ac1ef30cc46a1efee4fb8fc9298bb10b21b5eb7cbd",
+    "research/moments/vanishing/GAUSSIAN_SAFE_RECOMPOSITION_CLASSIFICATION.md": "079ee136e56674507a7d775815ba71dcd9ced518dc3fa61964e5f4a0d1748285",
+    "research/moments/vanishing/MIXED_CUTOFF_JETS_AND_INFINITE_TAILS.md": "b29d91339b7799f95575a191d8bfc7294b23d84ba2ba74769620f69ac2df2afc",
+    "unpublished/gaussian-boundary/polynomial_stationary_balls.tex": "75a0afece58c9f0f91be3b320a32916a79ee9f28d03d72430b3a6ca4f1dd307f",
+    "unpublished/gaussian-boundary/seed_period_comparison.tex": "ded60022b51ecd34b1104e2c828947b8177e7e4a97f98c66324d3ca016e1450a",
+    "unpublished/gaussian-boundary/analytic_core.tex": "630aa431b35e930680437ef4d666f71129f25187120bfb67302925f6c882b53b",
+    "unpublished/gaussian-boundary/sources/laurent_primary_manifest.json": "9be38b06bd8e04d9992cba36f65c4207627c8e5587a5c344afdb2003ddca301d"
+  },
+  "checks": {
+    "status": "PASS",
+    "scope": "Bounded exact controls only; endpoint comparison and all-degree rigidity are written proofs",
+    "radial_orders": [
+      0,
+      4
+    ],
+    "radial_cases": [
+      {
+        "g": "S**2",
+        "B": "2*S",
+        "a": 1,
+        "original_unit_jet": "22155*t**4/8 + 395*t**3/2 + 39*t**2/2 + 3*t + 1",
+        "relative_spatial_relations": 4,
+        "relative_parameter_relations": 4,
+        "nonzero_endpoint_jet": "-49*t**4/24 + 4*t**3/3 - 5*t**2/2 + 2*t - 1",
+        "absolute_endpoint_erasure_rejected": true
+      },
+      {
+        "g": "S**3 + S",
+        "B": "S**2 + 2",
+        "a": 0,
+        "original_unit_jet": "21549337*t**4 + 65907*t**3 + 403*t**2 + 7*t + 1",
+        "relative_spatial_relations": 4,
+        "relative_parameter_relations": 4,
+        "nonzero_endpoint_jet": "-25*t**4/2 + 28*t**3/3 - 6*t**2 + 3*t - 1",
+        "absolute_endpoint_erasure_rejected": true
+      },
+      {
+        "g": "2*S + 3",
+        "B": "4",
+        "a": 1,
+        "original_unit_jet": "941*t**4/2 + 122*t**3 + 29*t**2 + 6*t + 1",
+        "relative_spatial_relations": 4,
+        "relative_parameter_relations": 4,
+        "nonzero_endpoint_jet": "-275*t**4/3 - 77*t**3/3 - 9*t**2 - t - 1",
+        "absolute_endpoint_erasure_rejected": true
+      },
+      {
+        "g": "3",
+        "B": "4",
+        "a": 0,
+        "original_unit_jet": "571*t**4/8 + 57*t**3/2 + 25*t**2/2 + 3*t + 1",
+        "relative_spatial_relations": 4,
+        "relative_parameter_relations": 4,
+        "nonzero_endpoint_jet": "-227*t**4/8 + t**3/3 - 15*t**2/2 - 1",
+        "absolute_endpoint_erasure_rejected": true
+      }
+    ],
+    "relative_spatial_orders": [
+      0,
+      4
+    ],
+    "relative_parameter_orders": [
+      0,
+      3
+    ],
+    "generic_top_identity": true,
+    "cancelling_top_order": 0,
+    "one_sided_original_controls": [
+      {
+        "core_B": 0,
+        "core_g": 0,
+        "gamma": 2,
+        "degree_Y_R": 4,
+        "R": "Z^5 W^3 Y^4+Z^2",
+        "original_orders": [
+          0,
+          6
+        ],
+        "markers": [
+          {
+            "marker": "1",
+            "normalized_exact_period": "1",
+            "sufficient_degree_bound": 0
+          },
+          {
+            "marker": "W**2",
+            "normalized_exact_period": "362*t",
+            "sufficient_degree_bound": 1
+          },
+          {
+            "marker": "W**2*Y",
+            "normalized_exact_period": "0",
+            "sufficient_degree_bound": 1
+          },
+          {
+            "marker": "W**4",
+            "normalized_exact_period": "190527132*t**2",
+            "sufficient_degree_bound": 2
+          }
+        ]
+      },
+      {
+        "core_B": 2,
+        "core_g": 3,
+        "gamma": 2,
+        "degree_Y_R": 4,
+        "R": "Z^5 W^3 Y^4+Z^2",
+        "original_orders": [
+          0,
+          6
+        ],
+        "markers": [
+          {
+            "marker": "1",
+            "normalized_exact_period": "1",
+            "sufficient_degree_bound": 0
+          },
+          {
+            "marker": "W**2",
+            "normalized_exact_period": "1920*t**5 + 2880*t**3 + 362*t",
+            "sufficient_degree_bound": 7
+          },
+          {
+            "marker": "W**2*Y",
+            "normalized_exact_period": "3840*t**6 + 9600*t**4 + 3604*t**2",
+            "sufficient_degree_bound": 8
+          },
+          {
+            "marker": "W**4",
+            "normalized_exact_period": "464486400*t**10 + 3251404800*t**8 + 6096464640*t**6 + 3048312960*t**4 + 190527132*t**2",
+            "sufficient_degree_bound": 14
+          }
+        ]
+      }
+    ],
+    "relative_endpoint_retained": true
+  },
+  "independent_replay": false,
+  "formal_verification": false,
+  "external_review": false,
+  "unrestricted_result_from_finite_prefix": false,
+  "scope": "Bounded exact original Wick and relative-source controls; the all-degree theorem and relative endpoint frame are in the pinned written proof with retained comparison imports."
+}

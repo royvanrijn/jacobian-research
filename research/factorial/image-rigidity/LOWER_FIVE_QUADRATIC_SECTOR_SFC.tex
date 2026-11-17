@@ -1,0 +1,317 @@
+\documentclass[11pt]{article}
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage[margin=1in]{geometry}
+\usepackage[hidelinks]{hyperref}
+\newtheorem{lemma}{Lemma}
+\newtheorem{theorem}{Theorem}
+\newtheorem{corollary}{Corollary}
+\begin{document}
+\setlength{\emergencystretch}{1em}
+\title{Sector separation for the lower-five quadratic-gap family}
+\author{}\date{}\maketitle
+For $\beta>0$ let $\mathcal L_\beta(X^j)=(\beta)_j$.
+We prove Strong Factorial for every nonzero complex
+$X^5(A+BX^2)$ at every positive real Gamma shape $\beta$.
+A common root would lie in a sector narrower than a zero-free
+sector of the lower moment polynomial.
+No half-plane stability assertion for that polynomial is needed.
+
+Put
+\[
+ T_{n,\gamma}(t)=\sum_{k=0}^n\binom nk(\gamma)_{2k}t^k,\quad
+ B_{0,\gamma}=1,\quad
+ B_{j+1,\gamma}=(z+2j+\gamma+1)B_{j,\gamma}-zB_{j,\gamma}'.
+\]
+In a fixed pair let $M=\gamma+2n$, $s=2(n+1)$,
+$B=B_{n,\gamma}$, $C=B_{n+1,\gamma}$ and $u=z^2$.
+Write $B=B_0(u)+zB_1(u)$ and $C=C_0(u)+zC_1(u)$ for their
+cyclic components; the shape $\gamma$ stays fixed in both auxiliaries.
+Define
+\[
+ A_5=(M+2)_5,\quad b=3s(M+4)^2,\quad
+ k=(M+4)(M+5)(M+6),\quad c=M+2n+8,
+\]
+\[
+ U(u)=A_5+bu+su^2,\qquad W(u)=su(k+cu).
+\]
+
+\begin{lemma}[The general shift-five condition]\label{lem:shift-general}
+For $n\ge1$, $\gamma>0$, a common root $t$ of
+$T_{n,\gamma}$ and $T_{n+1,\gamma+5}$ gives $u=-1/t\ne0$ with
+\[
+ U(u)C_i(u)+W(u)B_i(u)=0,\qquad i=0,1.                 \tag{1}
+\]
+\end{lemma}
+\begin{proof}
+Set $R=z^{2n}T_{n,\gamma}(-z^{-2})$, $E=M-zD_z$ and
+$K_j=(E)_jR$.
+Pascal's identity and Gamma shifting give
+\[
+ (\gamma)_5z^{2(n+1)}T_{n+1,\gamma+5}(-z^{-2})
+                    =[u(E)_5-(E)_7]R.
+\]
+Here is an explicit reduction valid for indeterminate $M,n$,
+with $\gamma=M-2n$.
+On a vector $(r,e,k)$ in the basis $(R,K_1,K_2)$,
+application of $E$ is
+\[
+ (-2ur'-\gamma uk,\quad
+   r-e-2ue'+uk,\quad e+Mk-2uk'),                       \tag{2}
+\]
+where primes mean $d/du$.
+This follows from the lower Euler equation
+$EK_2=MK_2+uK_1-\gamma uR$ and $EK_1=K_2-K_1$.
+Starting at $(1,0,0)$ and applying $E+j$ successively,
+the last two coefficients of $u(E)_5-(E)_7$ are exactly
+$-W,-U$. Thus the upper zero at $R=0$ says
+$WK_1+UK_2=0$.
+
+The full rising-jet concomitant in the proof of
+\href{LOWER_TWO_PRIME_GAP_SFC.tex}{Theorem \texttt{thm:mixed}},
+equation(3) at $d=2$, is
+$B(\pm z)K_2-C(\pm z)K_1=0$ at $R=0$.
+The nonzero cubic solution jet cannot have $K_1=K_2=0$
+at an ordinary point $z\ne0$.
+Taking the two by two determinant with the upper relation gives
+$UC(\pm z)+WB(\pm z)=0$.
+Characteristic-zero even--odd inversion proves (1).
+This argument does not divide by $R'$, $B$ or $U$.
+\end{proof}
+
+\begin{lemma}[A general strict Pick quotient]\label{lem:pick-general}
+For $n\ge2$ and $\gamma>2n-2$, $B_1$ has only negative real
+simple zeros, and for every nonreal $u$,
+\[
+ \frac{\Im(C_1/B_1)(u)}{\Im u}>0.                      \tag{3}
+\]
+\end{lemma}
+\begin{proof}
+The Gamma-convolution and half-plane bound, equations(3)--(4) of the
+\href{CUBIC_ADJOINT_STABILITY_SFC.tex}{cubic adjoint note},
+give positive coefficients for $B$ and
+$\Re\zeta_j\le-\rho$, $\rho=\gamma-n+2>n$, for its roots.
+For real $y$,
+\[
+ 0<\phi'(y):=\Re\frac{B'(iy)}{B(iy)}
+   =\sum_j\frac{-\Re\zeta_j}
+      {(-\Re\zeta_j)^2+(y-\Im\zeta_j)^2}
+ \le n/\rho<1.
+\]
+The continuous argument $\phi(y)=\arg B(iy)$ for $y\ge0$
+starts at0 and tends to $n\pi/2$.
+Consequently the zeros of $yB_1(-y^2)=\Im B(iy)$ give exactly
+$\deg B_1$ positive $y$ values, all simple.
+They give all zeros $-a_j$ of $B_1$, with $a_j>0$;
+none is a zero of $B_0$.
+
+Partial fractions and the positive leading coefficients give
+\[
+ r(u)=B_0(u)/B_1(u)=d_1u+d_0-\sum_j\frac{r_j}{u+a_j},
+ \qquad d_1\ge0.
+\]
+At $y=\sqrt{a_j}$, differentiation gives
+$\phi'(y)=2a_j/r_j$, so $r_j>2a_j$.
+The raising recurrence gives
+$C_1=B_0+MB_1-2uB_1'$ and hence
+\[
+ \frac{C_1}{B_1}
+ =M+r(0)+d_1u+
+       \sum_j\frac{(r_j-2a_j)u}{a_j(u+a_j)}.
+\]
+Thus the quotient in (3) equals
+$d_1+\sum_j(r_j-2a_j)/|u+a_j|^2$.
+It is strictly positive: for even $n$, degree comparison gives
+$d_1>0$; for odd $n\ge3$, at least one pole occurs.
+\end{proof}
+
+\begin{lemma}[A Gamma-product zero-free sector]\label{lem:moment-sector}
+Let $n\ge2$, $\gamma>2n-2$, $a=\gamma/2$ and
+\[
+ R(a)=\frac{4(n-1)(a+1)}{(a-n+1)^2}.
+\]
+If $q>R(a)$, then $T_{n,\gamma}$ has no zero with
+\[
+ |\arg t|<\pi-2\arctan\sqrt q.                         \tag{4}
+\]
+For $\gamma\ge5n$, one may take $q=40/9$; for $\gamma\ge6n$,
+$q=3$; for $\gamma\ge12n$, $q=1$.
+\end{lemma}
+\begin{proof}
+Use the monic Gamma polynomial
+\[
+ G_{n,\alpha}(z)=\sum_{k=0}^n\binom nk(\alpha)_kz^{n-k}.
+\]
+Lemma \texttt{lem:gamma} of the
+\href{CUBIC_ADJOINT_STABILITY_SFC.tex}{cubic adjoint note}
+writes it as $\det(zI+J_\alpha)$, where $J=D+iK$ has diagonal
+$\alpha+n+1-2j$, $1\le j\le n$, and successive real symmetric
+off-diagonal entries of $K$ are $\sqrt{j(\alpha+n-j)}$.
+For an eigenvalue $\delta$,
+\[
+ \Re\delta\ge\alpha-n+1,\qquad
+ |\Im\delta|\le2\sqrt{(n-1)(\alpha+1)}.
+\]
+The second bound follows from the quadratic form of $K$ and the
+largest off-diagonal weight, which occurs at $j=n-1$ here.
+For $\alpha\ge a>n-1$ the squared ratio is at most $R(a)$:
+its derivative with respect to $\alpha$ is negative.
+Thus every negative of a root of $G_{n,a}$ or
+$G_{n,a+1/2}$ has argument of absolute value less than
+$\theta=\arctan\sqrt q$.
+
+Write $G_{n,a+1/2}(z)=\prod_j(z+\delta_j)$ and let $F_a$ be
+the symmetric multiaffine polarization of $G_{n,a}$.
+For
+$C_n(z)=\sum_k\binom nk(a)_k(a+1/2)_kz^{n-k}$,
+elementary symmetric coefficients give
+\[
+ C_n(z)=\left(\prod_j\delta_j\right)
+                      F_a(z/\delta_1,\ldots,z/\delta_n).
+\]
+If $|\arg z|<\pi-2\theta$, all arguments $z/\delta_j$ lie in the
+open half-plane centered at angle $\arg(z)/2$, while every root
+of $G_{n,a}$ lies outside it.
+The half-plane Grace--Walsh--Szego theorem makes $C_n(z)\ne0$.
+We use Wagner Theorem4.1, PDF page11, Section4, in the
+\href{sources/wagner-multivariate-stable-polynomials-2011.pdf}{cached proof source}.
+Its exact-degree and convex circular-domain hypotheses both hold.
+Pairing rising-factorial factors gives
+$T_{n,\gamma}(t)=(4t)^nC_n(1/(4t))$, proving (4).
+
+The final three choices follow by decreasing $R$ in its argument
+and clearing positive denominators in
+\[
+ \begin{split}
+ 40/9-R(5n/2)&=\frac{696n+304}{9(3n+2)^2}>0,\\
+ 3-R(3n)&=\frac{20n+7}{(2n+1)^2}>0,\\
+ 1-R(6n)&=\frac{n^2+30n+5}{(5n+1)^2}>0.
+ \end{split}
+\]
+The normalization uses roots of the monic Gamma polynomial,
+not of its reciprocal. Inversion preserves the angular sector.
+\end{proof}
+
+\begin{lemma}[The common-root angle ratio]\label{lem:angle-ratio}
+For $n\ge2$ and $\gamma>2n-2$, every nonreal common root of
+$T_{n,\gamma},T_{n+1,\gamma+5}$ has $\Re t>0$ and
+\[
+ \cos^2(\arg t)>Q_n(M):=
+ \frac{s(M+4)F(M)}{(M+2)(M+3)(M+2n+8)^2},\quad
+ F(M)=2M^2+(6n+25)M+24n+66.                           \tag{5}
+\]
+The positive function $Q_n(M)$ is strictly decreasing for $M>0$.
+Moreover $Q_n(8n)>3/7$ and $Q_n(14n)>1/4$.
+\end{lemma}
+\begin{proof}
+A nonreal common root gives $H_1=UC_1+WB_1=0$ by
+Lemma~\ref{lem:shift-general}.
+The factor $B_1$ is nonzero there.
+Also $U$ cannot vanish: otherwise $W=0$, whose only roots
+are the real points0 and $-k/c$.
+Thus $C_1/B_1+W/U=0$ is legitimate.
+For $u=x+iy$, exact expansion gives
+\[
+ \frac{\Im(W(u)\overline{U(u)})}{y}
+  =s\{kA_5+2cA_5x+(cb-sk)(x^2+y^2)\}.
+\]
+The strict Pick inequality in Lemma~\ref{lem:pick-general}
+forces the bracket to be negative.
+Here
+$D:=cb-sk=s(M+4)F(M)>0$.
+Substitute $u=-1/t$ and multiply by $|t|^2$:
+\[
+ kA_5|t|^2-2cA_5\Re t+D<0.
+\]
+It implies $\Re t>0$ and
+$\cos^2(\arg t)>kD/(c^2A_5)=Q_n(M)$.
+
+For monotonicity write $F(M)=2(M+a_0)(M+b_0)$.
+Its two constants are positive, and
+\[
+ F(-3)=6n+9>0,\qquad
+ F(-(2n+8))=-4n^2-10n-6<0
+\]
+give $3<a_0<2n+8<b_0$.
+The logarithmic derivative of $Q_n$ is
+\[
+ \frac1{M+4}+\frac1{M+a_0}+\frac1{M+b_0}
+ -\frac1{M+2}-\frac1{M+3}-\frac2{M+2n+8}<0,
+\]
+by pairing the three positive terms with the negative terms.
+
+Let $q_{\rm num}=s(M+4)F(M)$ and
+$q_{\rm den}=(M+2)(M+3)(M+2n+8)^2$.
+At $M=8n$,
+\[
+ 7q_{\rm num}-3q_{\rm den}
+ =8(64n^4+1492n^3+2699n^2+1634n+318)>0;
+\]
+at $M=14n$,
+\[
+ 4q_{\rm num}-q_{\rm den}
+ =32(98n^4+1323n^3+1390n^2+483n+54)>0.
+\]
+These prove the endpoint bounds.
+\end{proof}
+
+\begin{theorem}[All positive real Gamma shapes]\label{thm:gamma-sfc}
+For every $\beta>0$, every nonzero complex $X^5(A+BX^2)$
+has a nonzero Gamma-$\beta$ moment in every consecutive positive pair.
+Equivalently $T_{n,5n+\beta}$ and $T_{n+1,5(n+1)+\beta}$
+are coprime over $\mathbb C$ for every $n\ge1$.
+\end{theorem}
+\begin{proof}
+A real common root is impossible: for even $j$ and real $t$,
+\[
+ T_{j,5j+\beta}(t)=\frac1{\Gamma(5j+\beta)}
+ \int_0^\infty x^{5j+\beta-1}(1+tx^2)^j e^{-x}\,dx>0.
+\]
+The integrand is nonnegative and positive on an interval.
+For $n=1$, the lower polynomial is linear with a real root,
+so no common root exists.
+Let $n\ge2$, $\gamma=5n+\beta$ and $M=7n+\beta$.
+
+If $0<\beta\le n$, then $\gamma\ge5n$ and
+$Q_n(M)\ge Q_n(8n)>3/7$.
+In Lemma~\ref{lem:moment-sector}, take $q=40/9$ and
+$\varphi_0=\pi-2\arctan(\sqrt{40}/3)$.
+Here $\cos\varphi_0=31/49$, and
+$3/7-(31/49)^2=68/2401>0$.
+Lemma~\ref{lem:angle-ratio} would put a common root strictly inside
+this zero-free sector, a contradiction.
+
+If $n\le\beta\le7n$, then $\gamma\ge6n$,
+$Q_n(M)\ge Q_n(14n)>1/4$, and $q=3$ gives a zero-free sector
+$|\arg t|<\pi/3$. The angle ratio again puts a common root
+strictly inside that sector.
+If $\beta\ge7n$, then $\gamma\ge12n$ and $q=1$ excludes every
+root with $\Re t>0$, already forced by Lemma~\ref{lem:angle-ratio}.
+All positive $\beta$ are covered.
+
+For $AB\ne0$ the exact phase normalization is
+\[
+ \mathcal L_\beta((X^5(A+BX^2))^j)
+   =A^j(\beta)_{5j}T_{j,5j+\beta}(B/A).
+\]
+These factors are nonzero.
+If a coefficient vanishes, the phase is a nonzero monomial and
+all positive moments are nonzero.
+\end{proof}
+
+\begin{corollary}\label{cor:ordinary-sfc}
+Every nonzero ordinary complex $X^5(A+BX^2)$ satisfies Strong
+Factorial at every positive consecutive pair.
+In particular its consecutive normalized moment polynomials are
+coprime over $\mathbb Q$ and over $\mathbb C$ at every index.
+\end{corollary}
+\begin{proof}
+Take $\beta=1$ in Theorem~\ref{thm:gamma-sfc}.
+\end{proof}
+
+The written operator, spectral, polarization and Pick arguments
+supply the unbounded quantifiers. Exact controls verify formulas
+and normalizations; they do not promote an index prefix.
+Other supports and unrestricted FC/SFC remain separate.
+Internal audit and replay are distinct from independent whole-proof
+replay, formal verification, external review and priority.
+\end{document}

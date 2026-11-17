@@ -1,0 +1,122 @@
+{
+  "kind": "internal exact replay; unbounded scope follows from the written proof",
+  "passed": true,
+  "scope": {
+    "ordinary_support_three_seven": true,
+    "lower_indices": "n>=1",
+    "proved_terminal_classes": "N not14,46,55 mod64",
+    "remaining_lower_classes_mod64": [
+      13,
+      45,
+      54
+    ],
+    "remaining_terminal_classes_mod64": [
+      14,
+      46,
+      55
+    ],
+    "all_index_support_three_seven_closed": false,
+    "arbitrary_positive_Gamma_shape_extension": false,
+    "all_ordinary_univariate_binomials": false,
+    "unrestricted_FC_or_SFC": false
+  },
+  "controls": {
+    "generic_rising_quotient_identities": 1,
+    "generic_cyclic_column_coefficients": 12,
+    "corrupted_column_coefficient_rejections": 1,
+    "generic_ordinary_kappa_cancellations": 1,
+    "generic_reduced_monic_basis_identities": 3,
+    "generic_value_congruences_mod4": 3,
+    "generic_constant_factor_divisibilities": 3,
+    "generic_derivative_congruences_mod2": 3,
+    "corrupted_derivative_congruence_rejections": 1,
+    "literal_auxiliary_triangular_identities": 20,
+    "literal_full_cyclic_entries": 120,
+    "complete_prime_stage_idempotent_cases": 2,
+    "complete_prime_stage_constant_and_linear_cases": 4,
+    "complete_residue_states": 112,
+    "direct_integer_vs_Legendre_coefficient_valuations": 2080,
+    "literal_base_radius_coefficients": 2080,
+    "literal_interval_2_4_8_bounds": 2016,
+    "literal_strict_radius_coefficients": 1204,
+    "outside_strict_radius_hypothesis_controls": 1
+  },
+  "literal_cyclic_profiles": [
+    {
+      "n": 1,
+      "all_twelve_entries_checked": true
+    },
+    {
+      "n": 2,
+      "all_twelve_entries_checked": true
+    },
+    {
+      "n": 3,
+      "all_twelve_entries_checked": true
+    },
+    {
+      "n": 4,
+      "all_twelve_entries_checked": true
+    },
+    {
+      "n": 5,
+      "all_twelve_entries_checked": true
+    },
+    {
+      "n": 6,
+      "all_twelve_entries_checked": true
+    },
+    {
+      "n": 7,
+      "all_twelve_entries_checked": true
+    },
+    {
+      "n": 8,
+      "all_twelve_entries_checked": true
+    },
+    {
+      "n": 9,
+      "all_twelve_entries_checked": true
+    },
+    {
+      "n": 10,
+      "all_twelve_entries_checked": true
+    }
+  ],
+  "complete_residue_certificates": {
+    "mod16": [
+      6,
+      13
+    ],
+    "mod32": [
+      13,
+      22
+    ],
+    "mod64": [
+      13,
+      45,
+      54
+    ]
+  },
+  "exact_imports": {
+    "mixed_rank": "DIAGONAL_PRIME_GAP_SFC.tex thm:offset-rank",
+    "boundary": "LOWER_TWO_FOURTH_POWER_GAP_SFC.tex thm:boundary and nonresonant unit-basis proof",
+    "stage_change": "ARITHMETIC_FRONTIER_TERMINAL_ORDERS.tex lem:artin-hasse-closure",
+    "nonintegral_constant_normalization": "ARITHMETIC_FRONTIER_TERMINAL_ORDERS.tex lem:frobenius-noncollision"
+  },
+  "source_sha256": {
+    "LOWER_THREE_FOURTH_POWER_RESIDUE_REDUCTION.tex": "8d0806d61de2a8af064d1d499ed3dec6b3e3e95dbe8f4cd4a2796009911d6972",
+    "lower_three_fourth_power_residue_reduction.py": "882712fc3acb95f06938c1856743d0b80c25df12671f2392a68956445f357b62",
+    "DIAGONAL_PRIME_GAP_SFC.tex": "db034b5fb29ece9c3a0cb8cbce4c82f692b933e3679b27ee823db5ca5e7f98eb",
+    "LOWER_TWO_FOURTH_POWER_GAP_SFC.tex": "e238569c21a0ccc7fb507d910608a734461fefaab4d96d5df0124afe73407631",
+    "ARITHMETIC_FRONTIER_TERMINAL_ORDERS.tex": "9721978bcb795af9169c695c5fb8348974069c5148e5e0caa8bd3c4d65650e07"
+  },
+  "python": "3.12.3",
+  "sympy": "1.14.0",
+  "independent_replay": false,
+  "formal_verification": false,
+  "external_review": false,
+  "novelty_claim": false,
+  "priority_claim": false,
+  "command": ".venv/bin/python research/factorial/image-rigidity/lower_three_fourth_power_residue_reduction.py"
+}

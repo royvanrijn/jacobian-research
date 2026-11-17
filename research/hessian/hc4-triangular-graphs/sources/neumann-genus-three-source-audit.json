@@ -1,5 +1,5 @@
 {
-  "claim": "Neumann's genus-three table has three realizable polynomial ambient types, of intrinsic degrees four, six (cable), and seven (hyperelliptic); only the last is assumed in the scoped sextic-conductor theorem.",
+  "claim": "Neumann's genus-three table has exactly three realizable polynomial ambient types, intrinsic degrees four, six (cable), and seven (hyperelliptic). The H7 subtheorem uses only the last; the separate period gates and complete global-sextic argument use the full pointwise classification.",
   "inspected_date": "2026-11-17",
   "inspection": "Internal rendered-page inspection and algebraic source-form transcription.",
   "sources": [
@@ -71,7 +71,9 @@
     "Normalization is the affine line with one place at infinity; the actual Keller restriction is immersed.",
     "The generic ambient hyperelliptic degree-seven type is an explicit additional hypothesis, not a conclusion for all defect-three orders.",
     "Its affine-line normalization has canonical form X=u^2+gamma,Y=u*f(u^2),deg f=3,f(0)!=0.",
-    "Other genus-three ambient types are invoked only to prevent a special fixed central three-node order from switching to intrinsic degree below seven."
+    "Other genus-three ambient types are invoked only to prevent a special fixed central three-node order from switching to intrinsic degree below seven.",
+    "The quartic and physical cable action gates retain the exact other two primary forms without treating their intrinsic cubic/quartic order change as a target automorphism.",
+    "The global sextic proof obtains exhaustive generic period alternatives by finite filtered ranks and closed collinearity conditions; a generic family of ambient automorphisms is not imported from the primary table."
   ],
   "not_assumed": [
     "All genus-three or all three-nodal embeddings are not declared ambient equivalent.",

@@ -18,7 +18,9 @@
     "13a_3374",
     "13a_3375"
   ],
-  "representation_scope": "Over every field, every irreducible finite-dimensional representation with meridian displacement rank one has dimension at most three, for every nonzero meridian determinant mu, including mu=1. No preserved form is assumed. The separate complete-reducibility corollary bounds both fixed codimension and displacement span; arbitrary nonsemisimple representations are not covered.",
+  "representation_scope": "For every finite-dimensional representation over every field with meridian displacement rank one, the displacement/root-span dimension r and common-fixed-space codimension q satisfy r<=4, q<=4, min(r,q)<=3 and r+q<=7, for every nonzero meridian determinant mu including mu=1. The proof compares independent root and covector families separately, with no ambient-dimension4 or invertible-pairing-matrix assumption. In particular every irreducible such representation has dimension<=3. No preserved form is assumed for these conclusions.",
+  "paired_span_scope": "GENERIC_KCH_EXTENSIONS.tex thm:pairedspans: arbitrary finite ambient dimension, r<=4, q<=4, min(r,q)<=3 and r+q<=7; no irreducibility or complete reducibility required.",
+  "form_preserving_scope": "GENERIC_KCH_EXTENSIONS.tex cor:forms: if a nondegenerate bilinear or sesquilinear form over a field with involution is preserved, adjoint displacement identifies the root and covector lines and gives r=q<=3, even without complete reducibility. Includes symplectic and Hermitian forms; degenerate ambient forms are not covered. The separate complete-reducibility corollary also gives r,q<=3. No separate r<=3 or q<=3 bound is claimed for arbitrary nonsemisimple representations without additional structure.",
   "augmentation_scope": "Every field-valued U=1 cord augmentation with epsilon(mu)!=1 has rank at most three, for any nonzero longitude value. Additional exact gap and connected-sum corollaries import separate positive attainment, meridional-rank lower and published additivity certificates.",
   "cases": [
     {

@@ -242,6 +242,160 @@ class RetainedDependencyTests(unittest.TestCase):
                            "MRC-INVOLUTION-SUMS-SHARP-FAMILIES"):
             self.assertEqual(scenario["nodes"][conclusion]["state"], "proved")
 
+    def test_generic_sixteen_upper_is_independent_of_new_a6_attainment(self):
+        scenario = self.graph.simulate({"SRC-MRC-A6-RANK-THREE-CERTIFICATES": "stale"})
+        for conclusion in ("MRC-GENERIC-KCH-EXT-THM-ALL16", "MRC-GENERIC-KCH-EXT-COR-SEMISIMPLE",
+                           "MRC-FINITE-COMPLEX-COR-KNOTS", "MRC-GENERIC-KCH-EXT-COR-AUGMENTATION"):
+            self.assertEqual(scenario["nodes"][conclusion]["state"], "proved")
+        for conclusion in ("MRC-A6-RANK-THREE-THM-ATTAINMENT", "MRC-GENERIC-KCH-EXT-COR-GAP",
+                           "MRC-GENERIC-KCH-EXT-COR-SUMS"):
+            self.assertEqual(scenario["nodes"][conclusion]["state"], "stale")
+
+    def test_generic_sixteen_group_bounds_do_not_need_augmentation_correspondence(self):
+        scenario = self.graph.simulate({"EXT-CORNWELL-KCH-AUGMENTATION-CORRESPONDENCE": "stale"})
+        for conclusion in ("MRC-GENERIC-KCH-EXT-THM-ALL16", "MRC-GENERIC-KCH-EXT-COR-SEMISIMPLE",
+                           "MRC-FINITE-COMPLEX-COR-KNOTS", "MRC-A6-RANK-THREE-COR-REFLECTIVE"):
+            self.assertEqual(scenario["nodes"][conclusion]["state"], "proved")
+        for conclusion in ("MRC-GENERIC-KCH-EXT-COR-AUGMENTATION", "MRC-GENERIC-KCH-EXT-COR-GAP",
+                           "MRC-A6-RANK-THREE-COR-AUGMENTATION"):
+            self.assertEqual(scenario["nodes"][conclusion]["state"], "stale")
+
+    def test_finite_reflection_class_reduction_does_not_import_classification(self):
+        scenario = self.graph.simulate({"EXT-SHEPHARD-TODD-LOW-RANK-GENERATION": "stale"})
+        for conclusion in ("MRC-FINITE-COMPLEX-LEM-CLASS", "MRC-GENERIC-KCH-EXT-THM-ALL16",
+                           "MRC-GENERIC-KCH-EXT-COR-SEMISIMPLE"):
+            self.assertEqual(scenario["nodes"][conclusion]["state"], "proved")
+        for conclusion in ("MRC-FINITE-COMPLEX-THM-LOWRANK", "MRC-FINITE-COMPLEX-COR-KNOTS"):
+            self.assertEqual(scenario["nodes"][conclusion]["state"], "stale")
+
+    def test_reduced_core_is_a_separate_premise_of_both_generic_proofs(self):
+        scenario = self.graph.simulate({"MRC-GENERIC-KCH-CORE-373": "stale"})
+        for conclusion in ("MRC-GENERIC-KCH-THM-GENERIC", "MRC-GENERIC-KCH-EXT-LEM-CORES",
+                           "MRC-GENERIC-KCH-EXT-THM-ALL16"):
+            self.assertEqual(scenario["nodes"][conclusion]["state"], "stale")
+        for conclusion in ("MRC-A6-RANK-THREE-THM-ATTAINMENT", "MRC-FINITE-COMPLEX-THM-LOWRANK"):
+            self.assertEqual(scenario["nodes"][conclusion]["state"], "proved")
+
+    def test_same_parameter_trefoil_input_only_blocks_augmentation_sum_families(self):
+        scenario = self.graph.simulate({"MRC-TREFOIL-MINUS-ONE-AUGMENTATION": "stale"})
+        for conclusion in ("MRC-GENERIC-KCH-COR-SUMS", "MRC-GENERIC-KCH-EXT-COR-SUMS"):
+            self.assertEqual(scenario["nodes"][conclusion]["state"], "stale")
+        for conclusion in ("MRC-GENERIC-KCH-EXT-COR-GAP", "MRC-INVOLUTION-SUMS-SHARP-FAMILIES"):
+            self.assertEqual(scenario["nodes"][conclusion]["state"], "proved")
+
+    def test_finite_complex_knot_application_is_separate_from_class_theorem(self):
+        scenario = self.graph.simulate({"MRC-GENERIC-KCH-EXT-COR-SEMISIMPLE": "stale"})
+        self.assertEqual(scenario["nodes"]["MRC-FINITE-COMPLEX-COR-KNOTS"]["state"], "stale")
+        for conclusion in ("MRC-FINITE-COMPLEX-THM-LOWRANK", "MRC-GENERIC-KCH-EXT-THM-ALL16",
+                           "MRC-A6-RANK-THREE-COR-AUGMENTATION"):
+            self.assertEqual(scenario["nodes"][conclusion]["state"], "proved")
+
+    def test_paired_span_and_form_bounds_do_not_require_irreducibility_consequence(self):
+        scenario = self.graph.simulate({"MRC-GENERIC-KCH-EXT-THM-ALL16": "stale"})
+        for conclusion in ("MRC-GENERIC-KCH-EXT-THM-PAIREDSPANS", "MRC-GENERIC-KCH-EXT-COR-FORMS"):
+            self.assertEqual(scenario["nodes"][conclusion]["state"], "proved")
+        for conclusion in ("MRC-GENERIC-KCH-EXT-COR-SEMISIMPLE", "MRC-GENERIC-KCH-EXT-COR-AUGMENTATION"):
+            self.assertEqual(scenario["nodes"][conclusion]["state"], "stale")
+
+    def test_paired_span_revocation_does_not_revoke_positive_augmentation_witnesses(self):
+        scenario = self.graph.simulate({"MRC-GENERIC-KCH-EXT-THM-PAIREDSPANS": "stale"})
+        self.assertEqual(scenario["nodes"]["MRC-GENERIC-KCH-EXT-COR-FORMS"]["state"], "stale")
+        self.assertEqual(scenario["nodes"]["MRC-A6-RANK-THREE-THM-ATTAINMENT"]["state"], "proved")
+
+    def test_simple_a8_route_preserves_numeric_twentyfour_without_old_affine_or_cover_data(self):
+        scenario = self.graph.simulate({"SRC-MRC-TERNARY-AFFINE-CONTROLS": "stale",
+                                       "SRC-MRC-SEVEN-SHEET-CERTIFICATES": "stale"})
+        for conclusion in ("MRC-A8-THM-SHARP", "MRC-GENERAL-COVER-THM-TWENTYFOUR"):
+            self.assertEqual(scenario["nodes"][conclusion]["state"], "proved")
+        self.assertEqual(scenario["nodes"]["MRC-SEVEN-SHEET-EXAMPLES"]["state"], "stale")
+
+    def test_simple_a8_group_bound_is_separate_from_bridge_import(self):
+        scenario = self.graph.simulate({"EXT-WIRTINGER-BRIDGE": "stale"})
+        self.assertEqual(scenario["nodes"]["MRC-A8-THM-SHARP"]["state"], "stale")
+        self.assertEqual(scenario["nodes"]["MRC-A8-THM-GROUP"]["state"], "proved")
+        scenario = self.graph.simulate({"SRC-MRC-A8-CERTIFICATES": "stale"})
+        self.assertEqual(scenario["nodes"]["MRC-A8-LEM-TRANSITIVE"]["state"], "proved")
+        self.assertEqual(scenario["nodes"]["MRC-GENERAL-COVER-THM-TWENTYFOUR"]["state"], "proved")
+
+    def test_g31_explicit_group_proof_is_separate_from_its_published_name(self):
+        scenario = self.graph.simulate({"EXT-KONISHI-MINABE-G31-MODEL": "stale"})
+        for conclusion in ("MRC-G31-THM-QUOTIENT", "MRC-G31-COR-CLASSRANK", "MRC-G31-COR-DOMINANCE"):
+            self.assertEqual(scenario["nodes"][conclusion]["state"], "proved")
+        self.assertEqual(scenario["nodes"]["MRC-G31-ROUTE-DOMINATED"]["state"], "stale")
+
+    def test_g31_augmentation_import_is_separate_from_group_class_bound(self):
+        scenario = self.graph.simulate({"EXT-CORNWELL-KCH-AUGMENTATION-CORRESPONDENCE": "stale"})
+        for conclusion in ("MRC-G31-THM-QUOTIENT", "MRC-G31-COR-CLASSRANK", "MRC-A8-THM-GROUP"):
+            self.assertEqual(scenario["nodes"][conclusion]["state"], "proved")
+        self.assertEqual(scenario["nodes"]["MRC-G31-COR-DOMINANCE"]["state"], "stale")
+
+    def test_new17_analytic_import_is_not_a_finite_or_crossing_premise(self):
+        scenario = self.graph.simulate({"EXT-NEW17-KRAWCZYK-INTERVAL": "stale"})
+        for conclusion in ("MRC-NEW17-THM-HYPERBOLIC", "MRC-NEW17-CLOSED-REPRESENTATION-VOLUME",
+                           "MRC-NEW17-THM-NONGRAPH"):
+            self.assertEqual(scenario["nodes"][conclusion]["state"], "stale")
+        for conclusion in ("MRC-NEW17-THM-SHARP", "MRC-NEW17-ALEXANDER", "MRC-NEW17-THM-CROSSING",
+                           "MRC-NEW17-COR-TREFOILS", "MRC-NEW17-REFLECTION-COR-COXETER"):
+            self.assertEqual(scenario["nodes"][conclusion]["state"], "proved")
+
+    def test_new17_actual_cover_and_cusped_hyperbolicity_are_separate(self):
+        scenario = self.graph.simulate({"EXT-NEW17-COVER-PERIPHERAL": "stale"})
+        for conclusion in ("MRC-NEW17-ACTUAL-DOUBLE-COVER", "MRC-NEW17-THM-NONGRAPH"):
+            self.assertEqual(scenario["nodes"][conclusion]["state"], "stale")
+        for conclusion in ("MRC-NEW17-THM-HYPERBOLIC", "MRC-NEW17-THM-SHARP",
+                           "MRC-NEW17-COR-TREFOILS"):
+            self.assertEqual(scenario["nodes"][conclusion]["state"], "proved")
+
+    def test_new17_graph_volume_vanishing_is_only_a_classification_premise(self):
+        scenario = self.graph.simulate({"EXT-LTY-GRAPH-REPRESENTATION-VOLUME": "stale"})
+        self.assertEqual(scenario["nodes"]["MRC-NEW17-THM-NONGRAPH"]["state"], "stale")
+        for conclusion in ("MRC-NEW17-CLOSED-REPRESENTATION-VOLUME", "MRC-NEW17-THM-HYPERBOLIC",
+                           "MRC-NEW17-THM-SHARP", "MRC-NEW17-REFLECTION-COR-COXETER"):
+            self.assertEqual(scenario["nodes"][conclusion]["state"], "proved")
+
+    def test_new17_yamada_only_supplies_the_crossing_minimality_route(self):
+        scenario = self.graph.simulate({"EXT-YAMADA-SEIFERT-BRAID": "stale"})
+        self.assertEqual(scenario["nodes"]["MRC-NEW17-THM-CROSSING"]["state"], "stale")
+        for conclusion in ("MRC-NEW17-ALEXANDER", "MRC-NEW17-THM-SHARP", "MRC-NEW17-COR-TREFOILS",
+                           "MRC-NEW17-THM-NONGRAPH"):
+            self.assertEqual(scenario["nodes"][conclusion]["state"], "proved")
+
+    def test_new17_universal_certificate_does_not_underwrite_numeric_or_topology_proofs(self):
+        scenario = self.graph.simulate({"SRC-MRC-NEW17-REFLECTION-CERTIFICATES": "stale"})
+        for conclusion in ("MRC-NEW17-REFLECTION-COR-COXETER", "MRC-NEW17-REFLECTION-COR-SUMS"):
+            self.assertEqual(scenario["nodes"][conclusion]["state"], "stale")
+        for conclusion in ("MRC-NEW17-THM-SHARP", "MRC-NEW17-THM-CROSSING", "MRC-NEW17-THM-HYPERBOLIC",
+                           "MRC-NEW17-THM-NONGRAPH", "MRC-NEW17-COR-TREFOILS"):
+            self.assertEqual(scenario["nodes"][conclusion]["state"], "proved")
+
+    def test_new17_sum_cover_bound_is_separate_from_coxeter_sum_obstruction(self):
+        scenario = self.graph.simulate({"MRC-GENERAL-COVER-THM-GENERAL": "stale"})
+        self.assertEqual(scenario["nodes"]["MRC-NEW17-COR-TREFOILS"]["state"], "stale")
+        for conclusion in ("MRC-NEW17-REFLECTION-COR-SUMS", "MRC-NEW17-THM-SHARP",
+                           "MRC-NEW17-THM-NONGRAPH"):
+            self.assertEqual(scenario["nodes"][conclusion]["state"], "proved")
+
+    def test_new17_symmetric_augmentation_comparison_does_not_underwrite_coxeter_or_mr(self):
+        scenario = self.graph.simulate({"EXT-CORNWELL-MAXIMAL-BRAID": "stale"})
+        self.assertEqual(scenario["nodes"]["MRC-NEW17-FAMILY-COR-SYMMETRIC"]["state"], "stale")
+        for conclusion in ("MRC-NEW17-REFLECTION-COR-COXETER", "MRC-NEW17-THM-SHARP",
+                           "MRC-NEW17-FAMILY-PROP-RASMUSSEN"):
+            self.assertEqual(scenario["nodes"][conclusion]["state"], "proved")
+
+    def test_new17_abe_formula_is_separate_from_meridional_and_coxeter_bounds(self):
+        scenario = self.graph.simulate({"EXT-ABE-HOMOGENEOUS-RASMUSSEN": "stale"})
+        self.assertEqual(scenario["nodes"]["MRC-NEW17-FAMILY-PROP-RASMUSSEN"]["state"], "stale")
+        for conclusion in ("MRC-NEW17-THM-SHARP", "MRC-NEW17-REFLECTION-COR-COXETER",
+                           "MRC-NEW17-FAMILY-PROP-COXETERFAMILIES"):
+            self.assertEqual(scenario["nodes"][conclusion]["state"], "proved")
+
+    def test_new17_comparison_imports_both_seed_and_sum_coxeter_bounds(self):
+        scenario = self.graph.simulate({"MRC-NEW17-REFLECTION-COR-SUMS": "stale"})
+        self.assertEqual(scenario["nodes"]["MRC-NEW17-COR-COMPARISON"]["state"], "stale")
+        for conclusion in ("MRC-NEW17-REFLECTION-COR-COXETER", "MRC-NEW17-COR-TREFOILS",
+                           "MRC-NEW17-THM-SHARP"):
+            self.assertEqual(scenario["nodes"][conclusion]["state"], "proved")
+
     def test_rank_one_quotient_reduction_is_independent_of_the_finite_panel(self):
         scenario = self.graph.simulate({"SRC-MRC-RANKONE-BINARY-CERTIFICATES": "stale"})
         self.assertEqual(scenario["nodes"]["MRC-RANKONE-BINARY-LEM-REDUCTION"]["state"], "proved")

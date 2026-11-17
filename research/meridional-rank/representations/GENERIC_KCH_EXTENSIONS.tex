@@ -18,7 +18,9 @@ The generic rank-one obstruction for $13a_{373}$ extends to fifteen
 further alternating knots. The argument uses signed Wirtinger
 relations and independent root and covector families, without a
 preserved form. It works over every field and every nonzero meridian
-determinant, including unipotent meridians. Its augmentation consequence
+determinant, including unipotent meridians. In an arbitrary finite
+ambient dimension, it excludes simultaneous four-dimensional root
+and covector spans. Its augmentation consequence
 concerns all meridian parameters admitted by the augmentation--KCH
 correspondence, rather than only the involutory value $-1$.
 
@@ -36,6 +38,29 @@ case and supplies the arbitrary-pairing three-direction contradiction
 used below. Its exact integer Laurent controls are an explicit
 mathematical dependency. The present upper theorem is independent of
 any positive augmentation witness.
+
+For a representation $\rho:G_K\to GL(V)$, where
+$G_K=\pi_1(S^3\setminus K)$, put
+\[
+ S_\rho=\sum_{g\in G_K}\operatorname{im}(\rho(g)-I),\qquad
+ r=\dim S_\rho,\qquad q=\operatorname{codim}_V V^{G_K}.
+\]
+The sum is a vector span of displacement images, rather than a space
+of matrices; $V^{G_K}$ is the common fixed subspace.
+
+\begin{theorem}\label{thm:pairedspans}
+For every $K\in\mathcal K_{16}$ and every finite-dimensional
+representation of its knot group over any field with meridian
+displacement rank one,
+\[
+ r\le4,\qquad q\le4,\qquad \min(r,q)\le3,
+ \qquad r+q\le7.
+\]
+Thus four independent meridian root directions and four independent
+meridian covectors cannot occur simultaneously, in any finite ambient
+dimension. The representation need not be irreducible or completely
+reducible. No preserved form is assumed.
+\end{theorem}
 
 \begin{theorem}\label{thm:all16}
 For every $K\in\mathcal K_{16}$, every irreducible finite-dimensional
@@ -62,11 +87,19 @@ Equality of nonzero rank-one displacements changes a pair only by
 $(u,f)\mapsto(cu,c^{-1}f)$ for a nonzero scalar $c$.
 
 The four retained meridian seeds generate each knot group by a complete
-literal diagram trace. Their root span is nonzero and invariant, and
-their covectors' common kernel is fixed pointwise. Hence an irreducible
-representation has dimension at most four. In dimension four the four
-seed roots and the four seed covectors are both bases. We assume this
-case and derive a contradiction.
+literal diagram trace. Let $S$ be the span of their four roots and $T$
+the span of their four covectors. The formulas for $M_i^{\pm1}$ make
+$S$ invariant. The identity $AB-I=(A-I)B+(B-I)$ then shows that every
+displacement image lies in $S$; the reverse inclusion follows from the
+four seed displacements. Hence $S=S_\rho$ and $r=\dim S\le4$.
+Also $V^{G_K}=\bigcap_i\ker f_i$, so $q=\dim T\le4$.
+
+To prove Theorem~\ref{thm:pairedspans}, suppose $r=q=4$.
+The four seed roots are then a basis of $S$, and the four seed
+covectors are a basis of $T$. We compare coefficients in these two
+independent families separately. Neither $S=V$ nor $T=V^*$ is
+assumed. In particular, the matrix of evaluations $f_i(u_j)$ may be
+singular. The contradiction below uses no inverse of that matrix.
 
 All changes of seed systems used below are compositions of conjugating
 one seed pair by an element whose root and covector belong to the spans
@@ -318,18 +351,52 @@ as specified by their changed seed lists. Each is a subset of its
 changed basis. The local folds identify other meridian matrices and
 do not remove these independent triples.
 The local folds and signed transfers therefore contradict
-Lemma~\ref{lem:cores}. This proves Theorem~\ref{thm:all16}.
-The proof permits singular proper pairing submatrices, $\mu=1$ and
+Lemma~\ref{lem:cores}. This rules out $r=q=4$. Together with the
+four-seed bounds $r,q\le4$, it proves
+Theorem~\ref{thm:pairedspans}, including $r+q\le7$.
+The proof permits a singular full pairing matrix as well as singular
+proper pairing submatrices, $\mu=1$ and
 primitive sixth roots of unity. Only matrix invertibility and closing
 scalars already proved nonzero are used for cancellation.
 
-For a representation $\rho:G_K\to GL(V)$, where
-$G_K=\pi_1(S^3\setminus K)$, its displacement span means the vector
-subspace
+For an irreducible representation the nonzero invariant root span is
+all of $V$. Its common fixed subspace is zero, since a rank-one
+meridian displacement is nonzero. Thus $r=q=\dim V$, and
+Theorem~\ref{thm:pairedspans} gives $\dim V\le3$. This proves
+Theorem~\ref{thm:all16} as an irreducible consequence.
+
+\begin{corollary}\label{cor:forms}
+For every $K\in\mathcal K_{16}$, let a finite-dimensional
+representation over a field $k$ with involution $\sigma$ have meridian
+displacement rank one and preserve a nondegenerate bilinear or
+$\sigma$-sesquilinear form. Then $r=q\le3$, without complete
+reducibility. This includes representations
+preserving symplectic or Hermitian forms. A degenerate ambient form
+is not covered by this corollary.
+\end{corollary}
+\begin{proof}
+For the sesquilinear case take $B$ to be $\sigma$-linear in its first
+argument and linear in its second; the bilinear case has
+$\sigma=\mathrm{id}$. Nondegeneracy in finite dimension defines
+the adjoint by $B(Ax,y)=B(x,A^\dagger y)$. Preservation gives
+$M_i^\dagger=M_i^{-1}$. Set $N_i=M_i-I=-u_if_i$. Then
 \[
-              \sum_{g\in G_K}\operatorname{im}(\rho(g)-I)\subset V.
+ N_i^\dagger=M_i^{-1}-I=-\mu^{-1}N_i,
+ \qquad \operatorname{im}N_i^\dagger=ku_i.
 \]
-It is a span of displacement images, rather than a space of matrices.
+Consequently
+\[
+ \ker f_i=\ker N_i
+ =\{x:B(x,z)=0\text{ for every }z\in\operatorname{im}N_i^\dagger\}
+ =\{x:B(x,u_i)=0\}.
+\]
+Thus the nonzero linear covector $f_i$ is proportional to
+$x\mapsto\sigma(B(x,u_i))$. The map
+$u\mapsto[x\mapsto\sigma(B(x,u))]$ is a semilinear isomorphism
+from $V$ to $V^*$, so the root and covector spans of the four seeds
+have equal dimension: $r=q$. The paired-span theorem now gives
+$r=q\le3$. No decomposition into irreducible subspaces is used.
+\end{proof}
 
 \begin{corollary}\label{cor:semisimple}
 For every $K\in\mathcal K_{16}$, any finite-dimensional completely
@@ -434,15 +501,15 @@ The optional \texttt{--census} mode rereads every named PD and DT from
 the pinned independently packaged census. Corrupted signs and named
 maps are rejected. No finite parameter sampling is used.
 
-The upper theorem uses irreducibility, and Corollary~\ref{cor:semisimple}
-extends its codimension consequence to completely reducible representations.
-The two independent families remain essential to the main proof; no
-fixed-space codimension bound is asserted for arbitrary nonsemisimple
-rank-one representations over general fields.
-The augmentation statement uses the exact published correspondence and
-does not address augmentations at $\epsilon(\mu)=1$ outside its rank
-construction. All algebra and diagram checks are internal; formal
-verification and external specialist review are not claimed.
+The paired-span theorem applies to arbitrary finite-dimensional
+rank-one meridian representations, without an invertible evaluation
+matrix or ambient dimension of four. Its unrestricted conclusion is
+$\min(r,q)\le3$ and $r+q\le7$; separate bounds $r,q\le3$
+require an additional hypothesis as in
+Corollaries~\ref{cor:semisimple} and~\ref{cor:forms}.
+The augmentation correspondence excludes $\epsilon(\mu)=1$.
+All algebra and diagram checks are internal; formal verification and
+external specialist review are not claimed.
 
 \begin{thebibliography}{9}
 \bibitem{cor17} C. R. Cornwell, KCH representations, augmentations,

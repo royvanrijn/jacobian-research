@@ -58,7 +58,7 @@ def radical_marker(ell, c):
     multiplicities = []
     for factor, multiplicity in sp.sqf_list(g, z)[1]:
         rho *= factor**((multiplicity-1)//2)
-        multiplicities.append(multiplicity)
+        multiplicities.append(int(multiplicity))
     rho = sp.expand(rho)
     ell_bar = sp.cancel(ell/rho**2)
     c_bar = sp.cancel(c/rho)

@@ -1,0 +1,165 @@
+{
+  "passed": true,
+  "scope": "Exact internal operator/kernel/Hasse/minor controls; universal claims rely on written proofs",
+  "pointwise_domain": "primep,1<=h<=p+1,positive real algebraic gamma integral at one p-place; sigma_h nonzero or v(kappa_h)>=0",
+  "prime_plus_one_family": "allprimep, alln, beta positive real algebraic integral at one p-place",
+  "lower_four_prime_family": "oddprimep!=11 with the same algebraic integral-at-one-place Gamma domain; ordinaryp2 imported",
+  "ordinary_support_four_seven": true,
+  "all_positive_real_Gamma_shapes_claimed": false,
+  "unrestricted_binomial_SFC_claimed": false,
+  "controls": {
+    "symbolic_d3_h4_Ore_remainder_coefficients": 4,
+    "symbolic_fulljet_cubic_elimination_identity": 1,
+    "formal_gamma_kernel_polynomial_identities": 35,
+    "formal_gamma_odd_prime_plus_one_Hasse_identities": 5,
+    "binary_Hasse_not_ordinary_second_derivative_control": 1,
+    "complete_sample_prime_residue_positive_power_kernel_states": 70,
+    "augmented_affine_minor_coefficient_identities": 486,
+    "full_literal_augmented_minors": 6,
+    "corrupted_linear_coefficient_rejected": 1,
+    "actual_ramified_minor_controls": 3,
+    "exact_lower_four_Hasse_root_values": 4
+  },
+  "literal_augmented_minor_controls": [
+    {
+      "p": 3,
+      "n": 2,
+      "rows": [
+        1,
+        2
+      ],
+      "minor_degree": 2,
+      "full_coefficient_reduction": "c(1-X)"
+    },
+    {
+      "p": 3,
+      "n": 3,
+      "rows": [
+        1,
+        2
+      ],
+      "minor_degree": 3,
+      "full_coefficient_reduction": "c(1-X)"
+    },
+    {
+      "p": 3,
+      "n": 7,
+      "rows": [
+        1,
+        2
+      ],
+      "minor_degree": 5,
+      "full_coefficient_reduction": "c(1-X)"
+    },
+    {
+      "p": 3,
+      "n": 11,
+      "rows": [
+        1,
+        2
+      ],
+      "minor_degree": 8,
+      "full_coefficient_reduction": "c(1-X)"
+    },
+    {
+      "p": 5,
+      "n": 4,
+      "rows": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "minor_degree": 4,
+      "full_coefficient_reduction": "c(1-X)"
+    },
+    {
+      "p": 5,
+      "n": 6,
+      "rows": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "minor_degree": 5,
+      "full_coefficient_reduction": "c(1-X)"
+    }
+  ],
+  "ramified_controls": [
+    {
+      "beta": "10+3sqrt(3)",
+      "n": 2,
+      "rows": [
+        0,
+        1
+      ],
+      "q_valuation": "1/2",
+      "all_minor_coefficients_integral": true,
+      "minor_reduction": [
+        2,
+        1,
+        0,
+        0
+      ],
+      "higher_coefficient_valuations": [
+        "1",
+        "1"
+      ]
+    },
+    {
+      "beta": "1+3sqrt(3)",
+      "n": 3,
+      "rows": [
+        1,
+        2
+      ],
+      "q_valuation": "1/2",
+      "all_minor_coefficients_integral": true,
+      "minor_reduction": [
+        2,
+        1,
+        0,
+        0
+      ],
+      "higher_coefficient_valuations": [
+        "1/2",
+        "1"
+      ]
+    },
+    {
+      "beta": "1+9sqrt(3)",
+      "n": 3,
+      "rows": [
+        1,
+        2
+      ],
+      "q_valuation": "3/2",
+      "all_minor_coefficients_integral": true,
+      "minor_reduction": [
+        2,
+        1,
+        0,
+        0
+      ],
+      "higher_coefficient_valuations": [
+        "3/2",
+        "3"
+      ]
+    }
+  ],
+  "source_sha256": {
+    "PRIME_PLUS_ONE_EXPONENT_GAP_SFC.tex": "00b5561db7b6f42dcf0c67a3f848e1243ae2b70e8e2ba976a6c0eed4cdc0a169",
+    "prime_plus_one_exponent_gap_sfc.py": "6c657da6f2d93f833a8e66273133638ad13e94d38206c8989ad88d394b693c1f",
+    "LOWER_TWO_PRIME_GAP_SFC.tex": "8453b5b0ccd220573ef106fa26790e1f691885970b8c2116f036ed893ab2c200",
+    "DIAGONAL_PRIME_GAP_SFC.tex": "db034b5fb29ece9c3a0cb8cbce4c82f692b933e3679b27ee823db5ca5e7f98eb",
+    "LOWER_FOUR_QUADRATIC_GAP_SFC.tex": "ea2c5885f6f03a06ca2aa12840eddb191c128c20848ca8cf83d472268b89aca4",
+    "lower_exponent_initial_and_boundary.tex": "e66e02d0354de5cd92d33eef54efea15c387b9f6a0c1b62ed379295e13f07d45"
+  },
+  "python": "3.12.3",
+  "sympy": "1.14.0",
+  "command": "python research/factorial/image-rigidity/prime_plus_one_exponent_gap_sfc.py",
+  "independent_replay": false,
+  "formal_verification": false,
+  "external_review": false
+}

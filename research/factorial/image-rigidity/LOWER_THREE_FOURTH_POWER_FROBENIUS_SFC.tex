@@ -1,0 +1,321 @@
+\documentclass[11pt]{article}
+\usepackage{amsmath,amssymb,amsthm,hyperref}
+\usepackage[margin=1in]{geometry}
+\newtheorem{lemma}{Lemma}
+\newtheorem{theorem}{Theorem}
+\newtheorem{corollary}{Corollary}
+\begin{document}
+\title{Ordinary support $\{3,7\}$ by a Frobenius minor}
+\author{}\date{}\maketitle
+For each integer $n\ge1$, we prove consecutive coprimality for
+$P_n(t)=\sum_{k=0}^n\binom nk(3n+1)_{4k}t^k$.
+The earlier residue reduction leaves three progressions.
+A restricted power-series minor controls every common-root candidate
+on each remaining index. Rational conjugacy and even-moment
+positivity exclude the last possible root.
+
+The exact inputs are Lemma \texttt{lem:mixed-matrix},
+Corollary \texttt{cor:sixty-one-sixty-four}, and the strict-radius
+argument in the proof of Corollary \texttt{cor:fifteen-sixteenths}
+of the \href{LOWER_THREE_FOURTH_POWER_RESIDUE_REDUCTION.tex}{residue note};
+and Lemma \texttt{lem:artin-hasse-closure} of the
+\href{ARITHMETIC_FRONTIER_TERMINAL_ORDERS.tex}{arithmetic note}.
+These are applied only to the actual fixed-shape auxiliaries,
+at ordinary integer indices.
+
+Work in a complete algebraically closed extension of $\mathbb Q_2$,
+with $v=v_2$, $v(2)=1$, valuation ring $\mathcal O$, maximal ideal
+$\mathfrak m$ and residue field $k=\mathcal O/\mathfrak m$. Congruences of restricted series below are
+coefficientwise over $\mathbb Z_2$.
+For the minor construction fix $n\ge1$ in one of the three remaining classes.
+Write
+\[
+ \gamma=3n+1,\ c=3n+4,\ M=7n+1,\ m=M+11,\quad
+ K=7(7n+5)(7n+6),\quad E=v_2(K).
+\]
+Put $R_i(t)=\prod_{\ell=n}^{n+i-1}(t+4\ell)$ and
+$\Pi_{n,q}(t)=\prod_{j=0}^{n-1}(t+qj)$.
+All auxiliaries use the same $\gamma$, with raising operator
+$A=c-zD_z+z$ and $B_j=\Pi_{j,4}(A)1$.
+We abbreviate $B=B_n$, $C=B_{n+1}$ and $D=B_{n+2}$.
+The imported exact matrix gives
+\[
+ \operatorname{rank}[B_{n+1},B_{n+2}-4uB_n/K,
+              B_{n+3}-4muB_n/K](u)<3                 \tag{1}
+\]
+at a common root, where $u=-1/t$.
+On every remaining progression every common root has $v_2(u)>3$.
+For odd remaining $n$, $E\ge5$; for even remaining $n$,
+$n\equiv54\pmod{64}$ and $E\ge6$.
+
+\begin{lemma}[A Frobenius minor for every remaining index]
+\label{lem:frobenius-minor}
+Fix $n\equiv13,45,54\pmod{64}$.
+There is a restricted series $F_n\in\mathbb Z_2\langle w\rangle$
+such that every actual common root of $P_n,P_{n+1}$ gives
+$w=-1/(8t)$ in the maximal ideal and $F_n(w)=0$.
+For odd $n$, $\bar F_n=w$.
+For even $n$, $F_n$ has unit linear coefficient.
+\end{lemma}
+\begin{proof}
+\par\medskip\noindent\textit{A fixed polynomial column basis.}
+Let $w=u/8$ and $a=K/32$, so $a\in\mathbb Z_2$ and $v(w)>0$.
+Invertible scalar column operations reduce (1) to the cyclic
+columns of $\Pi_{n,4}(A)T_i(A)1$, where
+\[
+ T_1(t)=t+4n,\quad T_2(t)=aR_2(t)-w,\quad
+ T_3(t)=(t+4n)(t-1)(t+n+1).                         \tag{2}
+\]
+To check this, clear the second original column to $KD-4uB$.
+Replace the third by $B_{n+3}-mB_{n+2}$, whose polynomial is
+$R_2(t)(t-c)$, and divide the second by32.
+Finally subtract $\lambda T_1$ from the third, with
+$\lambda=(4n+5)(1-c)$.
+The factor identity is
+\[
+ R_2(t)(t-c)-\lambda(t+4n)
+             =(t+4n)(t-1)(t+n+1).
+\]
+The outer parameter $w$ is an evaluated scalar.
+All Euler operators act on the inner variable only.
+
+\par\medskip\noindent\textit{The exact two-block interface.}
+Apply the Artin--Hasse stage change at $p=2,q=4$, with original
+seed1 and no higher multiplication terms.
+Its inner variable is $x=-z^2/2$, so $x^2=u/4=2w$.
+The nonresonant block has operator $1+2L_N$; its integral seed,
+after absorption of $\Pi_{n,4}(1+2L_N)$, is denoted $h_N$.
+The resonant block has operator $2L_R$, and seed $h_R$:
+\[
+ L_j=c_j-xD_x+x-2x^2-8x^4-\cdots,\qquad c_j\in\mathbb Z_2.
+\]
+More explicitly, if $E_2(z)^{-1}=\sum e_jz^j$, put
+$H_j(x)=\sum_{\ell\ge0}e_{2\ell+j}(-2x)^\ell$.
+Choose $j_R\in\{0,1\}$ congruent to $c$ modulo2 and $j_N=1-j_R$.
+Then
+\[
+ c_R=(c-j_R)/2,\qquad c_N=(c-j_N-1)/2,\qquad
+ h_R=H_{j_R},\quad
+ h_N=\Pi_{n,4}(1+2L_N)H_{j_N}.
+\]
+Both constants are integers and both seeds belong to
+$\mathbb Z_2[[x]]$ with constant reduction1.
+For odd $n$, $c_R=c_N=(3n+3)/2$.
+For even $n$ in the remaining class,
+\[
+ c_R=c/2=(3n+4)/2\equiv3\pmod4,\qquad c_N=c_R-1\equiv2\pmod4.
+                                                               \tag{3}
+\]
+The exact block columns are
+\[
+ {\cal C}_2(T_i(1+2L_N)h_N;2w),\qquad
+ 2^n{\cal C}_2(\Pi_{n,2}(L_R)T_i(2L_R)h_R;2w).       \tag{4}
+\]
+A zero dependence of the original columns gives the same zero
+dependence in both blocks.
+
+Use the ring $\mathbb Z_2\langle w\rangle$ of restricted power
+series, whose coefficients are integral and tend to zero.
+For an integral inner series independent of the outer parameter,
+its cyclic coefficient at outer degree $\ell$ has a factor $2^\ell$
+from $x^2=2w$. Finite Euler operations and integral inner seeds
+preserve inner integrality, so these vectors belong to this ring.
+Multiplication by the integral outer polynomial coefficients of
+$T_i$ preserves restricted-series integrality and convergence. Thus no characteristic-zero Euler action on a
+fixed nonzero cyclic quotient is being assumed.
+
+In the nonresonant block set
+\[
+ v_0={\cal C}_2(h_N;2w),\qquad
+ v_1={\cal C}_2(L_Nh_N;2w).
+\]
+These form a unit basis over $\mathbb Z_2\langle w\rangle$.
+Indeed their reduction is the constant cyclic basis for
+$x-xD_x+\bar c_N$ on $k[x]/(x^2)$.
+The determinant has odd constant reduction and every other reduced
+coefficient zero. Its inverse is integral restricted, by the
+geometric series for a unit of the form $b+2H(w)$.
+Define coordinates
+\[
+ {\cal C}_2(L_N^2h_N;2w)=\alpha v_0+\beta v_1,\quad
+ {\cal C}_2(L_N^3h_N;2w)=\alpha_3v_0+\beta_3v_1.
+\]
+The idempotent reduced operator gives
+\[
+ \alpha,\alpha_3\in2\mathbb Z_2\langle w\rangle,\qquad
+ \bar\beta=\bar\beta_3=1.                              \tag{5}
+\]
+After conversion to this basis the second nonresonant coordinate
+row is divisible by2 for each column in (2), since
+$T(1+2L)$ has divided-Taylor coefficients $2^rT^{[r]}(1)$.
+Divide that row by2; call the resulting two rows $N_0,N_1$.
+With $r=4n+1$, their entries are exactly
+\[
+ \begin{array}{c|ccc}
+ &T_1&T_2&T_3\\ \hline
+ N_0&r&a r(r+4)-w+4a\alpha&
+             4(5n+3)\alpha+8\alpha_3\\
+ N_1&1&2a(r+2+\beta)&
+             r(n+2)+2(5n+3)\beta+4\beta_3 .
+ \end{array}                                           \tag{6}
+\]
+All these divisions are by integer powers of2 and all resulting
+entries are integral restricted series.
+
+\par\medskip\noindent\textit{Odd indices.}
+Suppose $n$ is odd. The reduction of (6) is
+\[
+ \begin{bmatrix}1&\bar a-w&0\\1&0&1\end{bmatrix}.
+\]
+Remove $2^n$ from the resonant rows.
+The first and third columns are even there, because
+\[
+ T_1(2L)=2(L+2n),\quad
+ T_3(2L)=2(L+2n)(2L-1)(2L+n+1),
+\]
+and $n+1$ is even.
+The second column reduces to $-w$ times
+$\Omega={\cal C}_2(\Pi_{n,2}(L_R)h_R;2w)$.
+The vector $\bar\Omega=\bar L_R^n1$ is nonzero,
+as $\bar L_R^2=\bar L_R$ and $\bar L_R1\ne0$.
+Choose a component with reduction1.
+The determinant $G(w)$ of these three rows is integral restricted,
+and
+\[
+ \bar G(w)=
+ \det\begin{bmatrix}1&\bar a-w&0\\1&0&1\\0&w&0\end{bmatrix}=w.
+                                                               \tag{7}
+\]
+Consequently $G$ is injective on the integral disk: its linear
+coefficient is a unit and all higher coefficients are even.
+
+\par\medskip\noindent\textit{The even remaining progression.}
+Now $n\equiv54\pmod{64}$.
+In particular $n\equiv6\pmod8$, $a$ is even,
+$r\equiv1\pmod4$, and $d=(n+2)/2\equiv0\pmod4$.
+The whole third column of the normalized four-row block matrix is
+even, so divide it by2. In the nonresonant block this follows also from
+\[
+ T_3(1+2L)=4L(L+d)(r+2L);
+\]
+in the resonant block it follows from the factor2 of $T_3(2L)$.
+
+After this column division, (5)--(6) give the first two rows modulo4:
+\[
+ [1,\ a-w,\ 0],\qquad [1,\ 0,\ \tau(w)],
+\]
+where
+\[
+ \tau=2\beta_3+(r+2d)\beta+rd,\qquad \bar\tau=1.       \tag{8}
+\]
+For example the new $N_0$ third entry is
+$2[2\alpha_3+(r+2d)\alpha]$, divisible by4.
+The $N_1$ second entry is zero modulo4 because $a$ is even.
+
+Take the constant-component row of the resonant block, after
+removal of $2^n$.
+Write
+\[
+ \omega(w)={\cal C}_2(\Pi_{n,2}(L_R)h_R;2w)_0,\quad
+ \nu(w)={\cal C}_2(\Pi_{n,2}(L_R)L_Rh_R;2w)_0.
+\]
+Both reduce to the constant1, by (3).
+The three entries of this row modulo4 are
+\[
+ [\,2\nu,\ -w\omega,\ \nu\,].                         \tag{9}
+\]
+For the last entry use $2n\equiv0\pmod4$, $n+1\equiv3\pmod4$:
+\[
+ (L+2n)(2L-1)(2L+n+1)\equiv L\pmod4.
+\]
+
+Let $G(w)$ be the determinant of these three normalized rows.
+Equations (8)--(9), as identities of restricted-series coefficients,
+give
+\[
+ G(w)\equiv a\nu(w)+w\bigl(\tau(w)\omega(w)-\nu(w)\bigr)\pmod4.
+                                                               \tag{10}
+\]
+Its reduction is zero, so $H=G/2$ is integral restricted.
+Also $\bar\nu=1$ and $\tau\omega-\nu\in2\mathbb Z_2\langle w\rangle$.
+
+We compute the linear coefficient of $H$ modulo2 at $w=0$.
+The coefficient of $w$ in $\nu(w)$ is even, since it arises from
+the substitution $x^2=2w$. At $w=0$, the first-two-coefficient
+operator for $L_N$ has diagonal $c_N,c_N-1$; it preserves
+the quotient by $x^2$. Cayley--Hamilton therefore gives
+\[
+ \beta(0)=2c_N-1,\qquad \beta_3(0)\equiv1\pmod2.
+\]
+Using (3) and (8), $\tau(0)\equiv1\pmod4$.
+The constant coefficient of $L_Rf$ is $c_R f(0)$, so
+\[
+ \nu(0)=c_R\omega(0),\qquad \omega(0)\in\mathbb Z_2^\times.
+\]
+Equation (10) now shows
+\[
+ [w]H\bmod2
+   =\frac{\tau(0)\omega(0)-\nu(0)}2\bmod2
+   =\frac{1-c_R}{2}\omega(0)\bmod2=1.                \tag{11}
+\]
+Thus $H$ has unit linear coefficient and integral higher coefficients.
+It is injective on the maximal ideal: at two distinct arguments there,
+every higher term in its divided difference has positive valuation.
+Convergence follows from the restricted-series condition.
+
+Take $F_n=G$ for odd $n$, and $F_n=G/2$ for even $n$.
+\end{proof}
+
+\begin{theorem}[Every ordinary consecutive pair]\label{thm:coprime}
+For every integer $n\ge1$, $\gcd(P_n,P_{n+1})=1$ over
+$\mathbb Q$ and over $\mathbb C$.
+\end{theorem}
+\begin{proof}
+The retained residue theorem covers all other indices.
+On each remaining progression use Lemma~\ref{lem:frobenius-minor}.
+For odd $n$, the series with reduction $w$ is injective on the
+integral disk: its divided difference has unit constant term and
+all other terms even.
+For even $n$, its linear coefficient is a unit and its higher
+coefficients are integral. At two distinct arguments in the
+maximal ideal every higher term in its divided difference has
+positive valuation. The series converges, so this difference
+quotient is again a unit.
+Thus there is at most one distinct common root over $\mathbb C_2$.
+
+All conjugates over $\mathbb Q$ of an actual rational common factor
+obey the same rank identities and disk bound. Characteristic-zero
+separability would force that factor to have degree one.
+Its root would be real. But for even $j$ and real $t$,
+\[
+ P_j(t)=\frac1{\Gamma(3j+1)}
+ \int_0^\infty x^{3j}(1+tx^4)^j e^{-x}\,dx>0.
+\]
+The integrand is nonnegative and positive on an interval.
+One of the two indices is even, a contradiction.
+A rational Bezout identity extends coprimality to $\mathbb C$.
+This uses conjugates of an actual common factor, not rationality
+of an arbitrary root of an auxiliary restricted series.
+\end{proof}
+
+\begin{corollary}\label{cor:sfc}
+Every nonzero complex phase $X^3(A+BX^4)$ satisfies ordinary
+Strong Factorial at every consecutive positive pair.
+\end{corollary}
+\begin{proof}
+For $AB\ne0$ its order-$j$ moment is $A^j(3j)!P_j(B/A)$,
+so the theorem applies. If a coefficient vanishes, the nonzero
+phase is a monomial and every positive factorial moment is nonzero.
+\end{proof}
+
+\paragraph{Evidence and scope.}
+This proves the entire ordinary support $\{3,7\}$.
+Arbitrary positive Gamma shapes, other degree-seven supports and
+unrestricted binomial or arbitrary-support SFC are separate claims.
+The checker reconstructs actual finite Artin--Hasse block jets,
+verifies symbolic column/Taylor identities and coefficientwise
+modulo-four calculations, and checks normalization integrality.
+The restricted-series proof supplies the unbounded quantifiers.
+Internal audit and replay are distinct from independent
+whole-proof replay, formal verification, external review and priority.
+\end{document}

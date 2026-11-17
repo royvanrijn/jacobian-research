@@ -323,12 +323,12 @@
     "L7 degree9 only two index/order options",
     "L7 degree9 minimum derivative trace threshold is ten"
   ],
-  "elapsed_seconds": 0.2937404889962636,
+  "elapsed_seconds": 0.2917774369707331,
   "environment": {
     "python": "3.12.3",
     "sympy": "1.14.0"
   },
-  "proof_sha256": "6db5cb77d9dbdf5986b49fab5770c456974cec4d56935f066cd86851369e78b7",
+  "proof_sha256": "0f01722259455ae5936b3eb0d282b23ab9fece8517f1c2cc1dee641c8d82409a",
   "checker_sha256": "261f36f98a0c59bb8bbd078e3bbbadf7d78428ee8412ee78d11867e1386122ef",
   "retained_proof_sources": {
     "POLYNOMIAL_MATE_RESPONSES_AND_QUADRATIC_RULING_FIVE_ESCAPE_COVERAGE.md": "b2c6a08cd0f144788cf841d0f399896c4894db0ee1f43515704011e2a9c5f7ee",

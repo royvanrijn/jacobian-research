@@ -1,0 +1,84 @@
+\documentclass[11pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage[hidelinks]{hyperref}
+\newtheorem{theorem}{Theorem}
+\begin{document}
+\setlength{\emergencystretch}{1em}
+\title{The ordinary degree-seven binomial residue frontier}
+\author{}\date{}\maketitle
+Let $\mathcal L(X^j)=j!$ and
+\[
+ P_j^{a,d}(t)=\sum_{k=0}^j\binom jk(aj+1)_{dk}t^k.
+\]
+Strong Factorial for a nonzero phase $f$ means that
+$\mathcal L(f^m),\mathcal L(f^{m+1})$ cannot both vanish for any
+positive integer $m$.
+
+\begin{theorem}[Exact remaining degree-seven tests]
+\label{thm:residue-frontier}
+Strong Factorial for every ordinary complex univariate binomial
+of degree at most seven is equivalent to
+\[
+ \gcd_{\mathbb Q[t]}(P_{N-1}^{a,d},P_N^{a,d})=1
+\]
+for every terminal integer $N\ge6$ in the following three rows:
+\[
+ \begin{array}{c|c|l}
+ (a,d)&\text{support}&\text{terminal restriction}\\ \hline
+ (1,6)&\{1,7\}&\text{all }N\ge6\\
+ (3,4)&\{3,7\}&N\equiv14,46,55\pmod{64}\\
+ (5,2)&\{5,7\}&N\equiv12,14\pmod{16}.
+ \end{array}
+\]
+For the last row, the gcd condition is equivalent to excluding an
+irreducible quadratic common factor.
+No assertion of coprimality on all these remaining tests is made.
+\end{theorem}
+\begin{proof}
+Corollary \texttt{cor:degree-seven-frontier} of the
+\href{ORDINARY_DEGREE_SIX_BINOMIAL_SFC.tex}{degree-six assembly}
+reduces the degree-seven assertion to the four supports
+$\{1,7\},\{3,7\},\{4,7\},\{5,7\}$ at every terminal $N\ge6$.
+
+Corollary \texttt{cor:four-seven} of the
+\href{PRIME_PLUS_ONE_EXPONENT_GAP_SFC.tex}{prime-plus-one exponent note}
+proves the support $\{4,7\}$ at every order.
+Corollary \texttt{cor:sixty-one-sixty-four} of the
+\href{LOWER_THREE_FOURTH_POWER_RESIDUE_REDUCTION.tex}{fourth-power residue note}
+proves support $\{3,7\}$ at every terminal outside its displayed
+three residue classes.
+Theorem \texttt{thm:residues} of the
+\href{LOWER_FIVE_QUADRATIC_RESIDUE_REDUCTION.tex}{quadratic residue note}
+proves support $\{5,7\}$ at every terminal outside its displayed
+two classes.
+Theorem \texttt{thm:global-quadratic-bound} of that same note
+proves that at every index its rational gcd is either constant or
+an irreducible quadratic of negative discriminant.
+This proves the additional equivalent criterion in the last row.
+Thus the three rows are sufficient to complete all four-support
+tests in the existing exact classification.
+Conversely every test in the rows belongs to the degree-seven
+assertion, so that assertion implies each row.
+
+The ordinary moment normalization is
+\[
+ \mathcal L((X^a(A+BX^d))^j)=A^j(aj)!P_j^{a,d}(B/A)
+ \qquad(AB\ne0).
+\]
+A common complex root of two rational polynomials is equivalent to
+a nonconstant rational gcd. Nonzero degenerate monomials have all
+positive factorial moments nonzero.
+The imported classification already includes all degrees at most six
+and all supports through terminal order five; no finite-prefix
+inference is used.
+\end{proof}
+
+This is a reduction of the remaining problem.
+For support $\{5,7\}$, every nonconstant rational common factor
+is now confined to an irreducible imaginary quadratic at every index.
+The remaining progressions, all-degree binomial SFC, and unrestricted
+FC/SFC remain open. The written reduction and its input proofs are
+internally checked; no independent review, formal verification or
+priority is asserted.
+\end{document}

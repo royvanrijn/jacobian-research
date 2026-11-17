@@ -391,6 +391,38 @@ This theorem supplies the complete characteristic-zero classification of possibl
 
 ## 7. Counting and assurance boundaries
 
+The elliptic sieve has an additional arithmetic support restriction.
+[Kummer branch exclusion](ELLIPTIC_EXCEPTION_KUMMER_BRANCH_EXCLUSION.md)
+gives a positive-density set of primes `p=2 mod3` which pass every
+quadratic eligibility test but never divide the reduced numerator
+of `128x-25865` at any rational elliptic point. Only the pole can
+contribute to the local hazard there. The proof uses the independent
+branch point over `Q(sqrt(51730))`, a full Kummer translation kernel,
+and rational-prime Chebotarev; it asserts no recurrence of pole
+returns or all-places count.
+
+[Finite obstruction certificates](ELLIPTIC_EXCEPTION_FINITE_OBSTRUCTION_CERTIFICATES.md)
+describe simultaneous infeasibility as a zero-weight cover of a
+certified finite rational congruence image. At a sufficiently large
+largest prime, every previously surviving reduction would have to
+lie in the two fatal finite zero branches, with a bad offset and
+formal image depth at least two. The Kummer primes cannot terminate
+such an obstruction. This isolates the remaining feasibility question
+for the two classes without an all-finite-place positivity theorem.
+[Exact common quotients and moments](ELLIPTIC_EXCEPTION_COMMON_QUOTIENT_MOMENTS.md)
+give the actual return-correlation formulas. Divergence of the
+conditional mean with variance negligible relative to its square
+would force divergent hazard and a sublogarithmic Hasse count;
+the required increasing-prime estimates remain open.
+
+The elementary [small-image height bound](ELLIPTIC_EXCEPTION_SMALL_REDUCTION_IMAGES.md)
+shows that only `O_E(z^2/log z)` good primes have rational reduction
+image smaller than `z`. For each fixed `A>0`, this gives absolute
+new-prime coefficient loss at most `3(log p)^A/sqrt(p)` on a set of
+prime density one, uniformly over all finite prefixes and classes.
+This improves the marginal estimate without providing the conditional
+correlation or all-primes tail control.
+
 The [rank-five discriminant classification](RANK_FIVE_DISCRIMINANT_CLASSIFICATION.md) replaces the finite local tests by a condition on the maximal-order cubic field discriminant. Write `Disc(L)=d_K f^2`, where `d_K` is the fundamental discriminant of the quadratic resolvent. A matching field product `K x L` is Hasse-failing exactly when every prime divisor of `f` other than three is `1 mod3`, and either `3` does not divide `f` or `d_K=1 mod3`. This applies to every fixed-map full `2+3` field fibre and, with FMA2, classifies all rank-five finite étale Hasse failures over `Q`. A generator polynomial discriminant cannot replace the field discriminant: even `T^3-19` introduces an extraneous factor at three. For integral fixed-map Hasse targets, the earlier ramification theorem forces the stronger condition `3` does not divide `f`.
 
 The [discriminant count](RANK_FIVE_DISCRIMINANT_COUNT.md) applies the acceptable-local-specification Davenport–Heilbronn theorem to these exact conditions. Rank-five Hasse-failing algebra classes, counted by the absolute discriminant of their cubic field factor, have an explicit positive-density leading asymptotic. Common Arithmetic Fibers realizes every such class as a full fibre of a degree-five map while allowing that map to vary. This discriminant count does not give an asymptotic for the rational targets of the one fixed map.
@@ -405,7 +437,11 @@ The [elliptic local sieve](ELLIPTIC_EXCEPTION_LOCAL_SIEVE.md) shows that any fix
 
 The [explicit elliptic criterion](ELLIPTIC_EXCEPTION_EXPLICIT_LOCAL_CRITERION.md) makes those varying tests concrete: outside `2,3,5`, they are exactly divisibility by three of `v_p(128x-25865)` for primes `p=2 mod3`, where `x=X+3552`. Any one cubeclass of this rational function gives a genus-four curve and only finitely many rational elliptic points. The [complete three-adic test](ELLIPTIC_EXCEPTION_COMPLETE_THREE_ADIC_CLASSIFICATION.md) and [two/five-adic test](ELLIPTIC_EXCEPTION_TWO_FIVE_ADIC_CLASSIFICATION.md) make the remaining small-prime conditions explicit and determine the rational local images. Exact finite-local logarithmic proportions are `55/156` at three, `4/7` at two, and `289/1092` jointly at two and three. The [joint sieve at two, three and seventeen](ELLIPTIC_EXCEPTION_JOINT_2_3_17_SIEVE.md) gives Hasse upper coefficient `1687/6936<1/4` with `O_E(sqrt(log B))` error, and exact local-only coefficient `5321/23946` with `o(log B)` error. J2174 separates this last coefficient among the four quadratic fields; the certified field has coefficient `1/8` relative to the whole-slice `C_E log B`. These finite-place counts give Hasse upper bounds; all-places infinitude remains open.
 
-The [quantitative finite-place theorem](ELLIPTIC_EXCEPTION_QUANTITATIVE_FINITE_LOCAL_ASYMPTOTICS.md) proves that every finite-place elliptic coefficient is rational, with error `O_(E,S)(sqrt(log B) (1+log log B)^(r_a))`. A nonempty finite-local field-target set has a positive rational coefficient. The [class-specific eligibility sieve](ELLIPTIC_EXCEPTION_PRIME_ELIGIBILITY.md) erases every inert-prime test where the global class `a` is not locally square; numerator obstructions also require `51730` locally square. For each nontrivial class these eligible prime sets have densities `1/4` and `1/8`. The [ambient Haar diagnostic](ELLIPTIC_EXCEPTION_AMBIENT_HAAR_DIAGNOSTIC.md) proves that both the full-product all-soluble set and the rational closure have ambient measure zero. Its finite-prime support index grows at least as `2^(s-1)` for `s` good odd primes. These facts prevent transferring an ambient Euler-product calculation to the intrinsic rational measure. EFA4 gives the exact criterion in terms of actual conditional losses; the all-primes infinitude problem remains open.
+The [quantitative finite-place theorem](ELLIPTIC_EXCEPTION_QUANTITATIVE_FINITE_LOCAL_ASYMPTOTICS.md) proves that every finite-place elliptic coefficient is rational. The [sharp error theorem](ELLIPTIC_EXCEPTION_SHARP_FINITE_LOCAL_ERROR.md) uses Hirata-Kohno--Takada's bound for two p-adic elliptic logarithms to give `O_(E,S)(sqrt(log B))` error for every fixed finite `S`. The [complete joint prefix at two, three, five and seventeen](ELLIPTIC_EXCEPTION_JOINT_2_3_5_17_SIEVE.md) gives the Hasse upper coefficient `2300089/10392564` with that error; the certified field retains coefficient `1/8`. Five changes only the class-one coefficient, multiplying it by `16/31`. The earlier coefficient `1687/6936` retains its direct finite-quotient proof. A nonempty finite-local field-target set has a positive rational coefficient. [Class-one positivity](ELLIPTIC_EXCEPTION_FINITE_LOCAL_CLASS_ONE.md) establishes this for every finite `S` in `Q(sqrt(-3))` without an all-places seed; two quadratic classes have that property. The [one-prime theorem](ELLIPTIC_EXCEPTION_ONE_PRIME_POSITIVITY.md) proves positivity at every individual place in all four classes, and cofinite one-prime extensions of any feasible finite set, without asserting simultaneous positivity for every finite set in the remaining classes. The [finite-quotient saturation theorem](ELLIPTIC_EXCEPTION_FINITE_QUOTIENT_SATURATION.md) computes the actual rational image and coefficients once a certified finite ambient quotient is supplied, without a full Mordell--Weil basis.
+
+The [class-specific eligibility sieve](ELLIPTIC_EXCEPTION_PRIME_ELIGIBILITY.md) erases every inert-prime test where the global class `a` is not locally square; numerator obstructions also require `51730` locally square. For each nontrivial class these eligible prime sets have densities `1/4` and `1/8`. The [ambient Haar diagnostic](ELLIPTIC_EXCEPTION_AMBIENT_HAAR_DIAGNOSTIC.md) proves that both the full-product all-soluble set and the rational closure have ambient measure zero. Its finite-prime support index grows at least as `2^(s-1)` for `s` good odd primes. The [triangular sieve](ELLIPTIC_EXCEPTION_TRIANGULAR_PRIME_SIEVE.md) proves independence of the fresh formal `p`-coordinate from all previous tests. Its all-depth conditional hazard kernel retains the correlated finite reduction and branch offset. The all-primes soluble set has finite accumulated predictable hazard almost surely, and a finite-cutoff hazard inequality gives explicit conditional count bounds. Proving weighted divergence for typical vectors remains open; no separate depth-one distribution assumption is required by that reduction. Katz's simultaneous elliptic Wieferich conjecture supplies context for a conditional depth-one-density statement, not an input to these unconditional results. The [branch-twist theorem](ELLIPTIC_EXCEPTION_BRANCH_TWIST.md) supplies a nontorsion branch point independent of the rational rank-two group over `Q(sqrt(51730))`, giving a rank-at-least-three input for future division-field work. The all-primes infinitude problem remains unresolved.
+
+The one-prime theorem also proves `|im(E(Q)->E(F_p))|>>_E log p` at large good primes. Consequently the absolute loss of a finite-local coefficient on adding `p` is `O_E(1/log p)`, uniformly over the existing finite conditions and class. A fixed positive prefix therefore has retention tending to one as the new prime grows. The estimate is nonsummable over primes and does not control the relative loss of a shrinking prefix or the growing-prime counting error.
 
 The [local-density note](FIXED_MAP_LOCAL_DENSITIES.md) classifies the original-line algebras and compares all, locally soluble, globally soluble, and Hasse-failing targets in the same height. The [integer-count note](FIXED_MAP_INTEGER_COUNT.md) counts every signed integer Hasse parameter, including a second asymptotic coefficient. These companion counts retain their explicit line and parameter domains.
 

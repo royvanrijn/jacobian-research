@@ -1,0 +1,210 @@
+{
+  "status": "PASS exact characteristic-zero symmetric-reflection obstruction for K_*",
+  "scope": "Characteristic-zero common-symmetric-form reflection obstruction for K_*. No Gram determinant localization and no unrestricted KCH/augmentation claim.",
+  "braid_binding": {
+    "literal_braid_to_PD_dart_gluings": 68,
+    "PD_sphere_faces": 19,
+    "one_component": true,
+    "top_meridian_arcs": [
+      1,
+      0,
+      8,
+      13
+    ],
+    "literal_involutory_relations": 17,
+    "nonconstant_colour_convention_control": true
+  },
+  "Hurwitz_word": [
+    -1,
+    -2,
+    3,
+    3,
+    -2,
+    3,
+    3,
+    -2,
+    -1,
+    -1,
+    -2,
+    -2,
+    -2,
+    3,
+    -2,
+    -2,
+    -2
+  ],
+  "midpoint_cut": 7,
+  "closing_sign_product": -1,
+  "strand_origins": [
+    1,
+    3,
+    0,
+    2
+  ],
+  "closing_sign_patterns_covered": 8,
+  "sign_transports": [
+    {
+      "closing_signs": [
+        1,
+        1,
+        1,
+        -1
+      ],
+      "initial_root_signs": [
+        1,
+        -1,
+        1,
+        -1
+      ]
+    },
+    {
+      "closing_signs": [
+        1,
+        1,
+        -1,
+        1
+      ],
+      "initial_root_signs": [
+        1,
+        -1,
+        -1,
+        -1
+      ]
+    },
+    {
+      "closing_signs": [
+        1,
+        -1,
+        1,
+        1
+      ],
+      "initial_root_signs": [
+        1,
+        -1,
+        1,
+        1
+      ]
+    },
+    {
+      "closing_signs": [
+        1,
+        -1,
+        -1,
+        -1
+      ],
+      "initial_root_signs": [
+        1,
+        -1,
+        -1,
+        1
+      ]
+    },
+    {
+      "closing_signs": [
+        -1,
+        1,
+        1,
+        1
+      ],
+      "initial_root_signs": [
+        1,
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "closing_signs": [
+        -1,
+        1,
+        -1,
+        -1
+      ],
+      "initial_root_signs": [
+        1,
+        1,
+        -1,
+        1
+      ]
+    },
+    {
+      "closing_signs": [
+        -1,
+        -1,
+        1,
+        -1
+      ],
+      "initial_root_signs": [
+        1,
+        1,
+        1,
+        -1
+      ]
+    },
+    {
+      "closing_signs": [
+        -1,
+        -1,
+        -1,
+        1
+      ],
+      "initial_root_signs": [
+        1,
+        1,
+        -1,
+        -1
+      ]
+    }
+  ],
+  "constraint_count": 16,
+  "constraint_terms": 17887,
+  "nonzero_multiplier_count": 12,
+  "integer_multiplier_terms": 75136,
+  "literal_polynomial_identity_constant": 16,
+  "rational_unit_identity_constant": 1,
+  "common_denominator": 16,
+  "Gram_determinant_localized": false,
+  "positive_controls": {
+    "actual_T45_star_frame": true,
+    "mirror_T45_chain_frame": true,
+    "inverse_root_moves": true,
+    "positive_gauge_specializations": 16
+  },
+  "numeric_polynomial_specialization": true,
+  "corruptions_rejected": [
+    "altered_multiplier_coefficient",
+    "braid_sign_mismatch",
+    "PD_edge_gluing_corruption",
+    "negative_exponent"
+  ],
+  "elapsed_seconds": 13.129,
+  "python_version": "3.12.3",
+  "input_sha256": {
+    "new17_reflection_inputs.json": "bd376e8f23a850eca4a1bd7a0842d8df8d226d4d7229c761aca0ff312e68cd9c",
+    "new17_reflection_unit_certificate.json": "4ec48c9ba5524c5d1729128adcaeaf2967ba981c3e4a518b340dcc03595517b1",
+    "verify_new17_reflection_obstruction.py": "83f1d3c6e37aca7b431299c2fbb4e0235426fd7dad2a3c0c084bb3c378be5777",
+    "UNIVERSAL_17_REFLECTION_OBSTRUCTION.tex": "94624270090539c8fdfd5dd06212c002232a3e03793660776ab6cff88676be6e"
+  },
+  "assurance": "Exact internal standard-library polynomial and literal-braid replay. The sign-gauge, reflection and Coxeter implications are written proofs; no all-characteristics scope, augmentation gap, formal verification or external review is asserted.",
+  "internal_pdf_reviews": [
+    {
+      "reviewer": "isolated internal agent /root/new17_universal_pdf_review",
+      "reviewed_note_sha256": "226033d681e689169213fb792cb16a2df5f2d6c49f38947ca86e785cc84a67fc",
+      "reviewed_pdf_sha256": "b0b642d3d9b47bd22e2f9db67270ebae66cce4b3f102c8fdd7fb7e5b1ef0fa34",
+      "result": "All5pages inspected. Independentlychecked literalport/Hurwitz sign convention,4cycleprovenance,all8sign-gaugepatterns,midpoint equivalence,singular-form arbitraryambient span bound,Coxeter presentation/oddgraph/classrank andtrefoil+1direction deductions. No substantive written gap conditionalonexplicitpolynomialidentity.",
+      "remaining_dependencies": [
+        "75136multipliercoefficients,exactinteger16identity,retainedPD/checker/packageassertions were outside PDF-only scope"
+      ],
+      "external_review": false,
+      "formal_verification": false
+    },
+    {
+      "reviewer": "root current-edition clarification and actual replay",
+      "reviewed_note_sha256": "94624270090539c8fdfd5dd06212c002232a3e03793660776ab6cff88676be6e",
+      "reviewed_pdf_sha256": "4ff25a3597b34c8015009f16aab72d98889a627446edd40b6bbf138671f04ca7",
+      "result": "Clarified positivecontrol (1,2,3)^5 is a Hurwitz word. Rootreran complete exactinteger16 identity,allliteral/sign/positive/corrupt controls PASS on finaledition.",
+      "external_review": false,
+      "formal_verification": false
+    }
+  ]
+}

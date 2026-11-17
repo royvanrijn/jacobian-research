@@ -1,0 +1,1034 @@
+{
+  "claim": "CANONICAL-ETALE-COMPLETION-TOPOLOGY",
+  "outcome": "PASS",
+  "check_count": 242,
+  "checks": [
+    {
+      "name": "BM(D)->BM(U) is isolated by zero source terms in degree1",
+      "passed": true
+    },
+    {
+      "name": "BM(D)->BM(U) is isolated by zero source terms in degree2",
+      "passed": true
+    },
+    {
+      "name": "BM degree1 corresponds to ordinary H3 on a four-manifold",
+      "passed": true
+    },
+    {
+      "name": "BM degree2 corresponds to ordinary H2 on a four-manifold",
+      "passed": true
+    },
+    {
+      "name": "affine complex surface CW dimension excludes ordinary H3",
+      "passed": true
+    },
+    {
+      "name": "loop general position misses real two-dimensional boundary",
+      "passed": true
+    },
+    {
+      "name": "isolated point has surface codimension two",
+      "passed": true
+    },
+    {
+      "name": "branch summation is surjective rank (1,)",
+      "passed": true
+    },
+    {
+      "name": "branch excess equals kernel rank (1,)",
+      "passed": true
+    },
+    {
+      "name": "all explicit branch differences are killed (1,)",
+      "passed": true
+    },
+    {
+      "name": "branch differences have full kernel rank (1,)",
+      "passed": true
+    },
+    {
+      "name": "branch summation has torsion-free cokernel (1,)",
+      "passed": true
+    },
+    {
+      "name": "zero branch excess means every fibre is single (1,)",
+      "passed": true
+    },
+    {
+      "name": "branch summation is surjective rank (2,)",
+      "passed": true
+    },
+    {
+      "name": "branch excess equals kernel rank (2,)",
+      "passed": true
+    },
+    {
+      "name": "all explicit branch differences are killed (2,)",
+      "passed": true
+    },
+    {
+      "name": "branch differences have full kernel rank (2,)",
+      "passed": true
+    },
+    {
+      "name": "branch summation has torsion-free cokernel (2,)",
+      "passed": true
+    },
+    {
+      "name": "zero branch excess means every fibre is single (2,)",
+      "passed": true
+    },
+    {
+      "name": "branch summation is surjective rank (3,)",
+      "passed": true
+    },
+    {
+      "name": "branch excess equals kernel rank (3,)",
+      "passed": true
+    },
+    {
+      "name": "all explicit branch differences are killed (3,)",
+      "passed": true
+    },
+    {
+      "name": "branch differences have full kernel rank (3,)",
+      "passed": true
+    },
+    {
+      "name": "branch summation has torsion-free cokernel (3,)",
+      "passed": true
+    },
+    {
+      "name": "zero branch excess means every fibre is single (3,)",
+      "passed": true
+    },
+    {
+      "name": "branch summation is surjective rank (1, 1)",
+      "passed": true
+    },
+    {
+      "name": "branch excess equals kernel rank (1, 1)",
+      "passed": true
+    },
+    {
+      "name": "all explicit branch differences are killed (1, 1)",
+      "passed": true
+    },
+    {
+      "name": "branch differences have full kernel rank (1, 1)",
+      "passed": true
+    },
+    {
+      "name": "branch summation has torsion-free cokernel (1, 1)",
+      "passed": true
+    },
+    {
+      "name": "zero branch excess means every fibre is single (1, 1)",
+      "passed": true
+    },
+    {
+      "name": "branch summation is surjective rank (2, 2)",
+      "passed": true
+    },
+    {
+      "name": "branch excess equals kernel rank (2, 2)",
+      "passed": true
+    },
+    {
+      "name": "all explicit branch differences are killed (2, 2)",
+      "passed": true
+    },
+    {
+      "name": "branch differences have full kernel rank (2, 2)",
+      "passed": true
+    },
+    {
+      "name": "branch summation has torsion-free cokernel (2, 2)",
+      "passed": true
+    },
+    {
+      "name": "zero branch excess means every fibre is single (2, 2)",
+      "passed": true
+    },
+    {
+      "name": "branch summation is surjective rank (1, 3, 2)",
+      "passed": true
+    },
+    {
+      "name": "branch excess equals kernel rank (1, 3, 2)",
+      "passed": true
+    },
+    {
+      "name": "all explicit branch differences are killed (1, 3, 2)",
+      "passed": true
+    },
+    {
+      "name": "branch differences have full kernel rank (1, 3, 2)",
+      "passed": true
+    },
+    {
+      "name": "branch summation has torsion-free cokernel (1, 3, 2)",
+      "passed": true
+    },
+    {
+      "name": "zero branch excess means every fibre is single (1, 3, 2)",
+      "passed": true
+    },
+    {
+      "name": "branch summation is surjective rank (4, 1, 2)",
+      "passed": true
+    },
+    {
+      "name": "branch excess equals kernel rank (4, 1, 2)",
+      "passed": true
+    },
+    {
+      "name": "all explicit branch differences are killed (4, 1, 2)",
+      "passed": true
+    },
+    {
+      "name": "branch differences have full kernel rank (4, 1, 2)",
+      "passed": true
+    },
+    {
+      "name": "branch summation has torsion-free cokernel (4, 1, 2)",
+      "passed": true
+    },
+    {
+      "name": "zero branch excess means every fibre is single (4, 1, 2)",
+      "passed": true
+    },
+    {
+      "name": "curve BM rank affine line",
+      "passed": true
+    },
+    {
+      "name": "curve compact-support Euler affine line",
+      "passed": true
+    },
+    {
+      "name": "curve BM Euler degree ledger affine line",
+      "passed": true
+    },
+    {
+      "name": "curve BM rank punctured affine line",
+      "passed": true
+    },
+    {
+      "name": "curve compact-support Euler punctured affine line",
+      "passed": true
+    },
+    {
+      "name": "curve BM Euler degree ledger punctured affine line",
+      "passed": true
+    },
+    {
+      "name": "curve BM rank once-punctured elliptic curve",
+      "passed": true
+    },
+    {
+      "name": "curve compact-support Euler once-punctured elliptic curve",
+      "passed": true
+    },
+    {
+      "name": "curve BM Euler degree ledger once-punctured elliptic curve",
+      "passed": true
+    },
+    {
+      "name": "curve BM rank affine nodal rational curve",
+      "passed": true
+    },
+    {
+      "name": "curve compact-support Euler affine nodal rational curve",
+      "passed": true
+    },
+    {
+      "name": "curve BM Euler degree ledger affine nodal rational curve",
+      "passed": true
+    },
+    {
+      "name": "curve BM rank two affine lines crossing once",
+      "passed": true
+    },
+    {
+      "name": "curve compact-support Euler two affine lines crossing once",
+      "passed": true
+    },
+    {
+      "name": "curve BM Euler degree ledger two affine lines crossing once",
+      "passed": true
+    },
+    {
+      "name": "curve BM rank three affine lines in a chain",
+      "passed": true
+    },
+    {
+      "name": "curve compact-support Euler three affine lines in a chain",
+      "passed": true
+    },
+    {
+      "name": "curve BM Euler degree ledger three affine lines in a chain",
+      "passed": true
+    },
+    {
+      "name": "curve BM rank cuspidal affine line topological control",
+      "passed": true
+    },
+    {
+      "name": "curve compact-support Euler cuspidal affine line topological control",
+      "passed": true
+    },
+    {
+      "name": "curve BM Euler degree ledger cuspidal affine line topological control",
+      "passed": true
+    },
+    {
+      "name": "curve BM rank two disjoint affine lines",
+      "passed": true
+    },
+    {
+      "name": "curve compact-support Euler two disjoint affine lines",
+      "passed": true
+    },
+    {
+      "name": "curve BM Euler degree ledger two disjoint affine lines",
+      "passed": true
+    },
+    {
+      "name": "nonnegative normalization terms g0s1e0",
+      "passed": true
+    },
+    {
+      "name": "nonnegative normalization terms g0s1e1",
+      "passed": true
+    },
+    {
+      "name": "nonnegative normalization terms g0s1e2",
+      "passed": true
+    },
+    {
+      "name": "nonnegative normalization terms g0s2e0",
+      "passed": true
+    },
+    {
+      "name": "nonnegative normalization terms g0s2e1",
+      "passed": true
+    },
+    {
+      "name": "nonnegative normalization terms g0s2e2",
+      "passed": true
+    },
+    {
+      "name": "nonnegative normalization terms g0s3e0",
+      "passed": true
+    },
+    {
+      "name": "nonnegative normalization terms g0s3e1",
+      "passed": true
+    },
+    {
+      "name": "nonnegative normalization terms g0s3e2",
+      "passed": true
+    },
+    {
+      "name": "nonnegative normalization terms g0s4e0",
+      "passed": true
+    },
+    {
+      "name": "nonnegative normalization terms g0s4e1",
+      "passed": true
+    },
+    {
+      "name": "nonnegative normalization terms g0s4e2",
+      "passed": true
+    },
+    {
+      "name": "nonnegative normalization terms g1s1e0",
+      "passed": true
+    },
+    {
+      "name": "nonnegative normalization terms g1s1e1",
+      "passed": true
+    },
+    {
+      "name": "nonnegative normalization terms g1s1e2",
+      "passed": true
+    },
+    {
+      "name": "nonnegative normalization terms g1s2e0",
+      "passed": true
+    },
+    {
+      "name": "nonnegative normalization terms g1s2e1",
+      "passed": true
+    },
+    {
+      "name": "nonnegative normalization terms g1s2e2",
+      "passed": true
+    },
+    {
+      "name": "nonnegative normalization terms g1s3e0",
+      "passed": true
+    },
+    {
+      "name": "nonnegative normalization terms g1s3e1",
+      "passed": true
+    },
+    {
+      "name": "nonnegative normalization terms g1s3e2",
+      "passed": true
+    },
+    {
+      "name": "nonnegative normalization terms g1s4e0",
+      "passed": true
+    },
+    {
+      "name": "nonnegative normalization terms g1s4e1",
+      "passed": true
+    },
+    {
+      "name": "nonnegative normalization terms g1s4e2",
+      "passed": true
+    },
+    {
+      "name": "nonnegative normalization terms g2s1e0",
+      "passed": true
+    },
+    {
+      "name": "nonnegative normalization terms g2s1e1",
+      "passed": true
+    },
+    {
+      "name": "nonnegative normalization terms g2s1e2",
+      "passed": true
+    },
+    {
+      "name": "nonnegative normalization terms g2s2e0",
+      "passed": true
+    },
+    {
+      "name": "nonnegative normalization terms g2s2e1",
+      "passed": true
+    },
+    {
+      "name": "nonnegative normalization terms g2s2e2",
+      "passed": true
+    },
+    {
+      "name": "nonnegative normalization terms g2s3e0",
+      "passed": true
+    },
+    {
+      "name": "nonnegative normalization terms g2s3e1",
+      "passed": true
+    },
+    {
+      "name": "nonnegative normalization terms g2s3e2",
+      "passed": true
+    },
+    {
+      "name": "nonnegative normalization terms g2s4e0",
+      "passed": true
+    },
+    {
+      "name": "nonnegative normalization terms g2s4e1",
+      "passed": true
+    },
+    {
+      "name": "nonnegative normalization terms g2s4e2",
+      "passed": true
+    },
+    {
+      "name": "cusp parametrization satisfies its equation",
+      "passed": true
+    },
+    {
+      "name": "cusp normalization parameter is rational",
+      "passed": true
+    },
+    {
+      "name": "cusp parameter is integral over its image",
+      "passed": true
+    },
+    {
+      "name": "cusp x derivative vanishes at singular point",
+      "passed": true
+    },
+    {
+      "name": "cusp y derivative vanishes at singular point",
+      "passed": true
+    },
+    {
+      "name": "cusp defining x-gradient vanishes",
+      "passed": true
+    },
+    {
+      "name": "cusp defining y-gradient vanishes",
+      "passed": true
+    },
+    {
+      "name": "normalization generically separates the parameter",
+      "passed": true
+    },
+    {
+      "name": "cusp ring omits the degree-one normalization parameter",
+      "passed": true
+    },
+    {
+      "name": "cusp ring contains every tested exponent at least conductor two",
+      "passed": true
+    },
+    {
+      "name": "cusp embedding dimension exceeds curve dimension",
+      "passed": true
+    },
+    {
+      "name": "monic parameter equation d2",
+      "passed": true
+    },
+    {
+      "name": "finite module remainder degree d2 power2",
+      "passed": true
+    },
+    {
+      "name": "finite module reduction exact d2 power2",
+      "passed": true
+    },
+    {
+      "name": "finite module remainder degree d2 power3",
+      "passed": true
+    },
+    {
+      "name": "finite module reduction exact d2 power3",
+      "passed": true
+    },
+    {
+      "name": "finite module remainder degree d2 power5",
+      "passed": true
+    },
+    {
+      "name": "finite module reduction exact d2 power5",
+      "passed": true
+    },
+    {
+      "name": "monic parameter equation d3",
+      "passed": true
+    },
+    {
+      "name": "finite module remainder degree d3 power3",
+      "passed": true
+    },
+    {
+      "name": "finite module reduction exact d3 power3",
+      "passed": true
+    },
+    {
+      "name": "finite module remainder degree d3 power4",
+      "passed": true
+    },
+    {
+      "name": "finite module reduction exact d3 power4",
+      "passed": true
+    },
+    {
+      "name": "finite module remainder degree d3 power7",
+      "passed": true
+    },
+    {
+      "name": "finite module reduction exact d3 power7",
+      "passed": true
+    },
+    {
+      "name": "monic parameter equation d4",
+      "passed": true
+    },
+    {
+      "name": "finite module remainder degree d4 power4",
+      "passed": true
+    },
+    {
+      "name": "finite module reduction exact d4 power4",
+      "passed": true
+    },
+    {
+      "name": "finite module remainder degree d4 power5",
+      "passed": true
+    },
+    {
+      "name": "finite module reduction exact d4 power5",
+      "passed": true
+    },
+    {
+      "name": "finite module remainder degree d4 power9",
+      "passed": true
+    },
+    {
+      "name": "finite module reduction exact d4 power9",
+      "passed": true
+    },
+    {
+      "name": "monic parameter equation d5",
+      "passed": true
+    },
+    {
+      "name": "finite module remainder degree d5 power5",
+      "passed": true
+    },
+    {
+      "name": "finite module reduction exact d5 power5",
+      "passed": true
+    },
+    {
+      "name": "finite module remainder degree d5 power6",
+      "passed": true
+    },
+    {
+      "name": "finite module reduction exact d5 power6",
+      "passed": true
+    },
+    {
+      "name": "finite module remainder degree d5 power11",
+      "passed": true
+    },
+    {
+      "name": "finite module reduction exact d5 power11",
+      "passed": true
+    },
+    {
+      "name": "monic parameter equation d6",
+      "passed": true
+    },
+    {
+      "name": "finite module remainder degree d6 power6",
+      "passed": true
+    },
+    {
+      "name": "finite module reduction exact d6 power6",
+      "passed": true
+    },
+    {
+      "name": "finite module remainder degree d6 power7",
+      "passed": true
+    },
+    {
+      "name": "finite module reduction exact d6 power7",
+      "passed": true
+    },
+    {
+      "name": "finite module remainder degree d6 power13",
+      "passed": true
+    },
+    {
+      "name": "finite module reduction exact d6 power13",
+      "passed": true
+    },
+    {
+      "name": "coordinate control has nonzero constant Jacobian 0",
+      "passed": true
+    },
+    {
+      "name": "pulled-back target derivation P(P) 0",
+      "passed": true
+    },
+    {
+      "name": "pulled-back target derivation P(Q) 0",
+      "passed": true
+    },
+    {
+      "name": "pulled-back target derivation Q(P) 0",
+      "passed": true
+    },
+    {
+      "name": "pulled-back target derivation Q(Q) 0",
+      "passed": true
+    },
+    {
+      "name": "target derivations commute on x model0",
+      "passed": true
+    },
+    {
+      "name": "target derivations commute on y model0",
+      "passed": true
+    },
+    {
+      "name": "canonical volume pulls back to source unit 0",
+      "passed": true
+    },
+    {
+      "name": "canonical source volume is exact model0",
+      "passed": true
+    },
+    {
+      "name": "coordinate control has nonzero constant Jacobian 1",
+      "passed": true
+    },
+    {
+      "name": "pulled-back target derivation P(P) 1",
+      "passed": true
+    },
+    {
+      "name": "pulled-back target derivation P(Q) 1",
+      "passed": true
+    },
+    {
+      "name": "pulled-back target derivation Q(P) 1",
+      "passed": true
+    },
+    {
+      "name": "pulled-back target derivation Q(Q) 1",
+      "passed": true
+    },
+    {
+      "name": "target derivations commute on x model1",
+      "passed": true
+    },
+    {
+      "name": "target derivations commute on y model1",
+      "passed": true
+    },
+    {
+      "name": "canonical volume pulls back to source unit 1",
+      "passed": true
+    },
+    {
+      "name": "canonical source volume is exact model1",
+      "passed": true
+    },
+    {
+      "name": "coordinate control has nonzero constant Jacobian 2",
+      "passed": true
+    },
+    {
+      "name": "pulled-back target derivation P(P) 2",
+      "passed": true
+    },
+    {
+      "name": "pulled-back target derivation P(Q) 2",
+      "passed": true
+    },
+    {
+      "name": "pulled-back target derivation Q(P) 2",
+      "passed": true
+    },
+    {
+      "name": "pulled-back target derivation Q(Q) 2",
+      "passed": true
+    },
+    {
+      "name": "target derivations commute on x model2",
+      "passed": true
+    },
+    {
+      "name": "target derivations commute on y model2",
+      "passed": true
+    },
+    {
+      "name": "canonical volume pulls back to source unit 2",
+      "passed": true
+    },
+    {
+      "name": "canonical source volume is exact model2",
+      "passed": true
+    },
+    {
+      "name": "generic unit-volume Hamiltonian contraction x coefficient",
+      "passed": true
+    },
+    {
+      "name": "generic unit-volume Hamiltonian contraction y coefficient",
+      "passed": true
+    },
+    {
+      "name": "regular Hamiltonian alone need not be LND n1",
+      "passed": true
+    },
+    {
+      "name": "regular Hamiltonian alone need not be LND n2",
+      "passed": true
+    },
+    {
+      "name": "regular Hamiltonian alone need not be LND n3",
+      "passed": true
+    },
+    {
+      "name": "regular Hamiltonian alone need not be LND n4",
+      "passed": true
+    },
+    {
+      "name": "regular Hamiltonian alone need not be LND n5",
+      "passed": true
+    },
+    {
+      "name": "free deck Euler divisibility g2",
+      "passed": true
+    },
+    {
+      "name": "generic fixed-field divisibility g2",
+      "passed": true
+    },
+    {
+      "name": "combined gcd divisibility g2",
+      "passed": true
+    },
+    {
+      "name": "nontrivial free deck requires positive boundary g2",
+      "passed": true
+    },
+    {
+      "name": "nonidentity regular fibre action has no fixed point g2r1",
+      "passed": true
+    },
+    {
+      "name": "nonidentity regular fibre action has no fixed point g2r1",
+      "passed": true
+    },
+    {
+      "name": "free deck Euler divisibility g3",
+      "passed": true
+    },
+    {
+      "name": "generic fixed-field divisibility g3",
+      "passed": true
+    },
+    {
+      "name": "combined gcd divisibility g3",
+      "passed": true
+    },
+    {
+      "name": "nontrivial free deck requires positive boundary g3",
+      "passed": true
+    },
+    {
+      "name": "nonidentity regular fibre action has no fixed point g3r1",
+      "passed": true
+    },
+    {
+      "name": "nonidentity regular fibre action has no fixed point g3r2",
+      "passed": true
+    },
+    {
+      "name": "free deck Euler divisibility g4",
+      "passed": true
+    },
+    {
+      "name": "generic fixed-field divisibility g4",
+      "passed": true
+    },
+    {
+      "name": "combined gcd divisibility g4",
+      "passed": true
+    },
+    {
+      "name": "nontrivial free deck requires positive boundary g4",
+      "passed": true
+    },
+    {
+      "name": "nonidentity regular fibre action has no fixed point g4r1",
+      "passed": true
+    },
+    {
+      "name": "nonidentity regular fibre action has no fixed point g4r3",
+      "passed": true
+    },
+    {
+      "name": "free deck Euler divisibility g5",
+      "passed": true
+    },
+    {
+      "name": "generic fixed-field divisibility g5",
+      "passed": true
+    },
+    {
+      "name": "combined gcd divisibility g5",
+      "passed": true
+    },
+    {
+      "name": "nontrivial free deck requires positive boundary g5",
+      "passed": true
+    },
+    {
+      "name": "nonidentity regular fibre action has no fixed point g5r1",
+      "passed": true
+    },
+    {
+      "name": "nonidentity regular fibre action has no fixed point g5r4",
+      "passed": true
+    },
+    {
+      "name": "free deck Euler divisibility g6",
+      "passed": true
+    },
+    {
+      "name": "generic fixed-field divisibility g6",
+      "passed": true
+    },
+    {
+      "name": "combined gcd divisibility g6",
+      "passed": true
+    },
+    {
+      "name": "nontrivial free deck requires positive boundary g6",
+      "passed": true
+    },
+    {
+      "name": "nonidentity regular fibre action has no fixed point g6r1",
+      "passed": true
+    },
+    {
+      "name": "nonidentity regular fibre action has no fixed point g6r5",
+      "passed": true
+    },
+    {
+      "name": "no-boundary Euler count is one",
+      "passed": true
+    },
+    {
+      "name": "positive divisor of no-boundary Euler must be one",
+      "passed": true
+    },
+    {
+      "name": "boundary divisor lattice has rank b0=0",
+      "passed": true
+    },
+    {
+      "name": "Euler/Picard rank ledger b0=0",
+      "passed": true
+    },
+    {
+      "name": "boundary divisor lattice has rank b0=1",
+      "passed": true
+    },
+    {
+      "name": "Euler/Picard rank ledger b0=1",
+      "passed": true
+    },
+    {
+      "name": "boundary divisor lattice has rank b0=2",
+      "passed": true
+    },
+    {
+      "name": "Euler/Picard rank ledger b0=2",
+      "passed": true
+    },
+    {
+      "name": "boundary divisor lattice has rank b0=5",
+      "passed": true
+    },
+    {
+      "name": "Euler/Picard rank ledger b0=5",
+      "passed": true
+    },
+    {
+      "name": "written proof retains scope: H_1^BM(D)=H^3(U)=0",
+      "passed": true
+    },
+    {
+      "name": "written proof retains scope: direct-sum_(p in T) Z^(r_p-1)",
+      "passed": true
+    },
+    {
+      "name": "written proof retains scope: normalization(D_i)=A1",
+      "passed": true
+    },
+    {
+      "name": "written proof retains scope: it is **not**",
+      "passed": true
+    },
+    {
+      "name": "written proof retains scope: smoothness of the reduced curves D_i",
+      "passed": true
+    },
+    {
+      "name": "written proof retains scope: No assertion that G preserves the original open X",
+      "passed": true
+    },
+    {
+      "name": "written proof retains scope: rather than KU2 or its",
+      "passed": true
+    },
+    {
+      "name": "primary source exact pin sources/milnor-morse-theory-1969.pdf",
+      "passed": true
+    },
+    {
+      "name": "primary source exact pin sources/stacks-03GT-zariski-main.html",
+      "passed": true
+    },
+    {
+      "name": "primary source exact pin sources/stacks-031T-normal-domain-intersection.html",
+      "passed": true
+    },
+    {
+      "name": "Morse audit records corrected1973printing",
+      "passed": true
+    },
+    {
+      "name": "Morse audit records foundational adoption",
+      "passed": true
+    },
+    {
+      "name": "no claim of original BM paper inspection",
+      "passed": true
+    }
+  ],
+  "elapsed_seconds": 0.0638103989767842,
+  "environment": {
+    "python": "3.12.3",
+    "sympy": "1.14.0"
+  },
+  "proof_sha256": "3d629a2719366658d0e274097dae65d06caaab583e9367c4e9ff8fcc790ef68a",
+  "checker_sha256": "ed9b703c584c94d8fd1cdcc01a1e2992e5946a82f3d18d87a65ee8a530868c37",
+  "retained_inputs": [
+    {
+      "path": "CANONICAL_TRACE_DUAL_ETALE_RECONSTRUCTION.md",
+      "sha256": "afd954e519a8d78b80ce20abc391a060f17609d5ded25e4c94871187ccc6d824",
+      "locator": "KU0 Section1 and KU1 Section3 only; KU2/KQ0 not used"
+    },
+    {
+      "path": "sources/canonical-etale-completion-topology-source-audit.json",
+      "sha256": "45087483662a33651d50e4e1b20efe478d782964e69fd038e4f7c72d9d9b1b71"
+    }
+  ],
+  "primary_inputs": [
+    {
+      "path": "sources/milnor-morse-theory-1969.pdf",
+      "sha256": "d3f914f51e0626e56fda50e2a791abbf8e91b1a5487da123efea37265948578c",
+      "url": "https://luis.impa.br/aulas/topdif/Milnor_MorseTheory.pdf",
+      "locator": "Section7, Theorem7.2 statement printed39 and proof printed39\u201341; PDF zero-based pages47\u201349. Scan bibliographic leaf PDF zero-based4."
+    },
+    {
+      "path": "sources/stacks-03GT-zariski-main.html",
+      "sha256": "59e3f20c8a4d291082a16d00d240a7cd6d6a97ff84d6d0c5a6075c35724f9de0",
+      "url": "https://stacks.math.columbia.edu/tag/03GT",
+      "locator": "Displayed theorem and proof."
+    },
+    {
+      "path": "sources/stacks-031T-normal-domain-intersection.html",
+      "sha256": "60ca68ba7864eb7885f7d8525b4f2071ec88f04d8e2c2bcb310ab7c23c9f46dc",
+      "url": "https://stacks.math.columbia.edu/tag/031T",
+      "locator": "Normal Noetherian domain intersection of height-one localizations."
+    }
+  ],
+  "proved_scope": {
+    "every_actual_complex_polynomial_plane_Keller_degree": true,
+    "entire_canonical_etale_completion_all_original_primes": true,
+    "KU0_KU1_construction_used": true,
+    "KQ0_or_full_LA0_or_PF46_PF50_required": false,
+    "smooth_affine_U_and_open_actual_source": true,
+    "boundary_pure_curve": true,
+    "boundary_distinct_components_disjoint": true,
+    "boundary_normalizations_A1": true,
+    "boundary_topologically_A1": true,
+    "boundary_smooth_or_algebraically_A1_proved": false,
+    "simply_connected_U": true,
+    "Euler_U": "1+b0",
+    "Pic_U": "free Z-module on actual b0 boundary divisors",
+    "unit_exact_canonical_volume": true,
+    "generic_deck_regular_and_free_everywhere": true,
+    "deck_order_divides": "gcd([L:F],1+b0)",
+    "common_source_coordinate_or_whole_boundary_charts_proved": false,
+    "Keller_inverse_or_HC4_JC2_proved": false
+  },
+  "assurance": "Internal written proof and exact finite controls; classical foundations adopted; no formal verification, external human review or independent replay asserted."
+}

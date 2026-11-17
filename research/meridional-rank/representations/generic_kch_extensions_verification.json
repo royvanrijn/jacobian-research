@@ -1448,8 +1448,10 @@
     "named_census_rereads": 16,
     "actual_signed_knot_group_models": 16
   },
-  "representation_scope": "Over every field, every irreducible finite-dimensional representation with meridian displacement rank one has dimension at most three, for every nonzero meridian determinant mu, including mu=1. No preserved form is assumed. The separate complete-reducibility corollary bounds both fixed codimension and displacement span; arbitrary nonsemisimple representations are not covered.",
+  "representation_scope": "For every finite-dimensional representation over every field with meridian displacement rank one, the displacement/root-span dimension r and common-fixed-space codimension q satisfy r<=4, q<=4, min(r,q)<=3 and r+q<=7, for every nonzero meridian determinant mu including mu=1. The proof compares independent root and covector families separately, with no ambient-dimension4 or invertible-pairing-matrix assumption. In particular every irreducible such representation has dimension<=3. No preserved form is assumed for these conclusions.",
   "augmentation_scope": "Every field-valued U=1 cord augmentation with epsilon(mu)!=1 has rank at most three, for any nonzero longitude value. Additional exact gap and connected-sum corollaries import separate positive attainment, meridional-rank lower and published additivity certificates.",
+  "paired_span_scope": "GENERIC_KCH_EXTENSIONS.tex thm:pairedspans: arbitrary finite ambient dimension, r<=4, q<=4, min(r,q)<=3 and r+q<=7; no irreducibility or complete reducibility required.",
+  "form_preserving_scope": "GENERIC_KCH_EXTENSIONS.tex cor:forms: if a nondegenerate bilinear or sesquilinear form over a field with involution is preserved, adjoint displacement identifies the root and covector lines and gives r=q<=3, even without complete reducibility. Includes symplectic and Hermitian forms; degenerate ambient forms are not covered. The separate complete-reducibility corollary also gives r,q<=3. No separate r<=3 or q<=3 bound is claimed for arbitrary nonsemisimple representations without additional structure.",
   "separate_corollary_dependencies": {
     "cor:gap": [
       "REFLECTIVE_AUGMENTATION_RANK_GAP.tex thm:positive",
@@ -1463,9 +1465,9 @@
     ]
   },
   "input_sha256": {
-    "verify_generic_kch_extensions.py": "87ddefb5af792120487bee9dbb41a251646b8aed19529810e029a10756a49a58",
-    "generic_kch_extensions_inputs.json": "2e9050a6a9aa2b2cd4d099dffc2491acf8fd1c9b2d4f52f6ddce1b9973415db8",
-    "GENERIC_KCH_EXTENSIONS.tex": "c3970c3a3b8ad83111154fef544510b8a8974d3f2ab0ec0d15025a509ab6c622",
+    "verify_generic_kch_extensions.py": "78c259724b428cc0c69446eacbc1c428867b9ef4570cea2eca726fa69ed2aae6",
+    "generic_kch_extensions_inputs.json": "b17c840534a1fcba4ed52d1b032fda942903f891c65fc7a070e3f29dcdcae0de",
+    "GENERIC_KCH_EXTENSIONS.tex": "978cb91afcff56b4b187d2332c2b268dd2dedec182dea6eea5fca7b5517d9e6b",
     "verify_generic_kch_obstruction.py": "65fd6b44173b1a2801f4d3703361bda87b624cdd20ad4c25c38bc0e8cb16e003",
     "generic_kch_obstruction_inputs.json": "69c3310c213f97150268966abe063c62bd8a218017a2161e284c5dfbbe262da3",
     "GENERIC_KCH_OBSTRUCTION.tex": "711c8cbe310a838b3e4936994b2fb79681d9765f8d25eef7c31c1bf41b472274",
@@ -1473,7 +1475,7 @@
     "a6_affine_inputs.json": "7933e9fabf45453faf4ce1bce623de00b69e6541b6e3e5fa94836d53be035226",
     "sources/cornwell-kch-1310.7526v3.pdf": "991940273daed005b8af270233cceaa58c11d69168efb7006f3bfa9bd598bcbd"
   },
-  "assurance": "Exact internal integer/Laurent and literal oriented-PD controls, including both basis determinants. Written independence and nonzero-cancellation arguments remain essential. Positive attainment and meridional-rank statements are separate mathematical imports for their own corollaries; no formal verification, independent specialist review or worldwide-priority claim.",
+  "assurance": "Exact internal integer/Laurent and literal oriented-PD controls, including both basis determinants for separately independent root and covector families and no inverse evaluation matrix. Written span, independence, nonzero-cancellation and nondegenerate-form adjoint arguments remain essential. Positive attainment and meridional-rank statements are separate mathematical imports for their own corollaries; no formal verification, independent specialist review or worldwide-priority claim.",
   "internal_pdf_reviews": [
     {
       "classification": "internal isolated AI PDF-only review",
@@ -1524,6 +1526,28 @@
         "Retained checker behavior and imported augmentation, positive lower, bridge and sum results."
       ],
       "scope_limit": "The isolated reviewer verified displayed local algebra, not independent named-knot/whole-proof replay. Unchanged algebra was not repeated during the final definition/layout follow-up. No formal verification or external human review."
+    },
+    {
+      "classification": "internal isolated AI PDF-only mathematical strengthening review",
+      "reviewer": "/root/extensions_pdf_review",
+      "date": "2026-11-17",
+      "supplied_context": "Only successive compiled PDF editions; no repository source, supplements, cited papers or retained checker. Unchanged symbolic replay was not repeated.",
+      "source_sha256": "978cb91afcff56b4b187d2332c2b268dd2dedec182dea6eea5fca7b5517d9e6b",
+      "pdf_sha256": "545d001879285819cf0e5371cea94bca41ee458edc8bd10b2b54516605c089bf",
+      "pages": 7,
+      "mathematical_checks": [
+        "The four-seed root span equals the full displacement-image span in every finite ambient dimension, and common-fixed codimension equals seed-covector-span dimension.",
+        "All displayed folds and core arguments compare separate independent families; no ambient-dimension-four or nonsingular full pairing assumption is used.",
+        "The exclusion r=q=4 therefore gives min(r,q)<=3 and r+q<=7 without irreducibility or semisimplicity.",
+        "For nondegenerate B(x,y)=sigma(x)^T H y, the adjoint kernel/image identity and semilinear isomorphism sigma(H)sigma(u) prove r=q<=3, including non-Hermitian forms; no double-adjoint identity is needed."
+      ],
+      "visual_checks": "All seven pages inspected; theorem and form-corollary page breaks remain legible, without clipping or overlap.",
+      "remaining_dependencies": [
+        "The companion373 reduced core, whose arbitrary-pairing proof was reviewed separately.",
+        "Complete literal diagram traces, seed-change words, signed relabelings and named-census bindings.",
+        "Imported augmentation, positive attainment and cover/sum theorems."
+      ],
+      "scope_limit": "Arbitrary representations have only the paired bounds; the separate individual upper bounds need a nondegenerate invariant form or complete reducibility. Degenerate ambient forms are excluded from the form corollary. Internal review does not establish external specialist review, formal verification or independent whole-proof replay."
     }
   ]
 }

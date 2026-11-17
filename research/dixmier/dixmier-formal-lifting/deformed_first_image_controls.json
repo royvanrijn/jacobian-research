@@ -1,0 +1,37 @@
+{
+  "claim": "Every nonzero scalar-series deformation R_epsilon=r+epsilon(h)*D0, epsilon in h*K[[h]], fails Long quadratic descent",
+  "status": "PASS",
+  "environment": {
+    "python": "3.12.3",
+    "sympy": "1.14.0"
+  },
+  "hypotheses": "Characteristic zero; arbitrary nonzero epsilon(h) in h*K[[h]], of any positive order; finite rational-position operators; h-regular prescribed canonical Long second residue.",
+  "rational_chart_and_quadratic_deck": true,
+  "commuting_derivations_and_inverse_momentum_frame": true,
+  "D0_r_bracket_and_formal_exponential_input": true,
+  "arbitrary_scalar_series_identities": {
+    "first_image": "R_epsilon=r+epsilon(h)*D0",
+    "epsilon_scope": "Every nonzero element of h*K[[h]]; positive order unbounded",
+    "formal_generator": "(epsilon/h)*D0^2/2",
+    "first_adjoint_r": "epsilon*D0",
+    "second_adjoint_r_zero": true,
+    "D0_fixed": true,
+    "convergence": "Written proof: adjoint raises h valuation by ord_h(epsilon)>=1",
+    "epsilon_zero_boundary": "Excluded hypothesis; the undeformed finite second image is a positive control"
+  },
+  "canonical_Long_input_and_compact_S_match": true,
+  "quadratic_Piu_coefficient": "-4*r*u*X^2/(3*Q^3)",
+  "deck_difference": "-16*r*u*w/(27*Q^5)",
+  "nonzero_deck_difference_and_wrong_sign_rejected": true,
+  "undeformed_finite_second_image_positive_control": true,
+  "hashes": {
+    "DEFORMED_FIRST_IMAGE_AND_QUADRATIC_DESCENT_OBSTRUCTION.md": "e59b390f8773d4af33f9b62272e8fdee67e18971570f253d49829b7161fd7886",
+    "check_deformed_first_image.py": "3709e16582f416e61aebc132d1e5b34ec3463fcae523fc9eafe87a4bcde70956",
+    "GLOBAL_ADMISSION_AND_QUARTIC_CRITICAL_FACE.md": "4bebb149d20a77c204cbfffddf1319f62a7f88bb309d06c0c57e30d67044716a",
+    "../dixmier-audit/verify_long_pbw.py": "0fd237f4954b4a45260b65ffef2e973e1f253e3b359e440da7d0cc6dbdd06eed"
+  },
+  "coverage_boundary": "Exact rational/vector-field/Long coefficient identities only. The all-order finite centralizer, constants, parameter-pole noncancellation, formal convergence and exclusion are written proofs. No arbitrary deformed-first-image, matrix, algebraic-cover or division-ring exclusion.",
+  "independent_replay": false,
+  "formal_verification": false,
+  "external_review": false
+}

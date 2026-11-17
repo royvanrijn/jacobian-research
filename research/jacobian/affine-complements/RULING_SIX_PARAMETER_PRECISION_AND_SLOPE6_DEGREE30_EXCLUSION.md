@@ -13,7 +13,10 @@ Thus any remaining D=30 survivor has exactly one support and
 All coefficient degrees and actual companion degrees remain unrestricted.
 The slope-seven critical class is not excluded by this proof.
 The subsequent [nonpole-packet theorem](RULING_SIX_NONPOLE_PACKETS_AND_SLOPE7_TOP_DEGREE_EXCLUSION.md)
-also excludes degree nine, leaving intermediate degrees six, seven and eight.
+also excludes degree nine. The subsequent
+[two-moment theorem](RULING_SIX_TWO_MOMENT_RESONANCE_AND_DEGREE30_CUBIC_REDUCTION.md)
+excludes six and seven, leaving degree eight; the companion-prefix
+refinement then forces reduced companion ruling degree twenty-seven.
 
 The argument also proves a uniform parameter-precision fact:
 in the separated depressed quartic, BOTH its constant coefficient

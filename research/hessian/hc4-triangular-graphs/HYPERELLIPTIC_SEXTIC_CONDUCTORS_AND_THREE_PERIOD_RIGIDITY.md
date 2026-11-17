@@ -11,8 +11,10 @@ Neumann's hyperelliptic genus-three ambient class.
 
 This excludes one of the THREE realizable genus-three classes in
 the primary low-genus table. The intrinsic-degree-four and
-intrinsic-degree-six cable classes remain open. No conclusion
-that all degree-six conductors are absent is asserted.
+intrinsic-degree-six cable classes are treated by the subsequent
+[global sextic theorem](GLOBAL_SEXTIC_CONDUCTOR_EXCLUSION_AND_PERIOD_POLE_REPAIR.md),
+which excludes degree six altogether. This proof establishes the
+hyperelliptic branch needed in that complete argument.
 
 The hypothesis concerns the actual plane embedding on a nonempty
 Zariski open set of source parameters, up to polynomial target

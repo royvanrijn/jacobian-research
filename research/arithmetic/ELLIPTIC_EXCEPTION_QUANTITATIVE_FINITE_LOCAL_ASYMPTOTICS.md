@@ -6,6 +6,11 @@ logarithmic error multiplied by a fixed power of the iterated logarithm.
 The proof uses the explicit local tests and a lattice bound uniform in
 the congruence index. It does not require a displayed Mordell--Weil basis.
 
+The separate [sharp error theorem](ELLIPTIC_EXCEPTION_SHARP_FINITE_LOCAL_ERROR.md)
+uses a primary bound for two p-adic elliptic logarithms to remove the
+iterated-logarithm factor, giving `O_(E,S)(sqrt(log B))`. The argument
+here retains its elementary proof and rational coefficient formula.
+
 ## 1. Scope and notation
 
 Use `E`, `Gamma=E(Q)`, the four-class squareclass map `alpha:Gamma->A`,
@@ -215,8 +220,11 @@ image lies in the open set `U_(S,a)` of EFA1. That set is therefore
 nonempty and has positive normalized Haar measure. Conversely a
 positive coefficient gives infinitely many full field targets by
 EFA2, or by EQA3 below. This proves both implications. Rationality
-is EQA2. This dichotomy does not decide which finite-place sets are
-feasible in the three classes without a certified all-places seed.
+is EQA2. The separate
+[class-one theorem](ELLIPTIC_EXCEPTION_FINITE_LOCAL_CLASS_ONE.md)
+proves feasibility for every finite set in `Q(sqrt(-3))` without an
+all-places seed. The corresponding assertion in the two remaining
+classes is unresolved.
 \(\square\)
 
 ## 4. A lattice estimate uniform in the congruence index

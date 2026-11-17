@@ -200,8 +200,11 @@ Finite cosets are equidistributed by the canonical-height lattice
 argument of [EEC1](ELLIPTIC_EXCEPTION_COUNT.md). Truncate the formal
 annuli at depth \(N\), use that finite quotient, and then let
 \(N\to\infty\); the tail has mass tending to zero. This proves (3.1).
-No error uniform in \(N\), or \(O(\sqrt{\log B})\) remainder with
-coefficient \(4/7\), is asserted. Negation preserves the conditions,
+No error uniform in \(N\) is asserted by this direct approximation.
+The separate logarithm argument of
+[ESQ3](ELLIPTIC_EXCEPTION_SHARP_FINITE_LOCAL_ERROR.md) gives an
+\(O_E(\sqrt{\log B})\) remainder with coefficient \(4/7\), and for
+the other fixed finite-place counts here. Negation preserves the conditions,
 so dividing points by the two generic preimages of a target
 preserves these proportions.
 

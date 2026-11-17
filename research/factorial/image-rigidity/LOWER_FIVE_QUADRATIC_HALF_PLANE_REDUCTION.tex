@@ -1,0 +1,151 @@
+\documentclass[11pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb,amsthm,hyperref}
+\newtheorem{lemma}{Lemma}
+\newtheorem{proposition}[lemma]{Proposition}
+\newtheorem{corollary}[lemma]{Corollary}
+\begin{document}
+\title{Half-plane separation for the ordinary support five/seven adjoint}
+\author{}\date{}\maketitle
+For an integer $n\ge1$ set $\gamma=5n+1$, $M=7n+1$ and
+$s=2(n+1)$. Let $B=B_{n,\gamma,2}$ and $C=B_{n+1,\gamma,2}$,
+with $\gamma$ fixed in both, and write
+\[
+ B(z)=B_0(u)+zB_1(u),\quad
+ C(z)=C_0(u)+zC_1(u),\qquad u=z^2.
+\]
+The shift-five reduction defines
+\[
+ A=(M+2)_5,\quad b=3s(M+4)^2,\quad
+ k=(M+4)(M+5)(M+6),\quad c=M+2n+8=9(n+1),
+\]
+\[
+ U(u)=A+bu+su^2,\quad W(u)=su(k+cu),\quad
+ H_1(u)=U(u)C_1(u)+W(u)B_1(u).
+\]
+The \href{LOWER_FIVE_QUADRATIC_RESIDUE_REDUCTION.tex}{exact shift-five reduction},
+\texttt{lem:shift}, shows that every common root $t$ of
+\[
+ P_n(t)=T_{n,5n+1,2}(t),\qquad
+ Q_n(t)=T_{n+1,5n+6,2}(t)
+\]
+supplies $u=-1/t$ satisfying $H_1(u)=0$.
+Here $T_{j,\eta,2}(t)=\sum_{k=0}^j\binom jk(\eta)_{2k}t^k$.
+These are precisely the normalized ordinary moments of
+$X^5(A+BX^2)$ at orders $n,n+1$.
+The following separation is uniform in $n$; it does not exclude
+the remaining common roots in the opposite half-plane.
+\begin{proposition}\label{prop:odd-adjoint}
+For every integer $n\ge1$, $H_1$ has no zero in $\Re u\ge0$.
+\end{proposition}
+\begin{proof}
+The \href{CUBIC_ADJOINT_STABILITY_SFC.tex}{Gamma-convolution representation and half-plane estimate}, equations(3)--(4),
+show that $B$ has real positive coefficients and every root
+$\zeta_j$ has $\Re\zeta_j\le-\rho$, with $\rho=4n+3>n$.
+For $n=1$, this follows directly from $B=z+\gamma+1$.
+
+Here is the needed even--odd rational-function fact, with its proof.
+For real $y$, $B(iy)\ne0$ and
+\[
+ 0<\phi'(y):=\Re\frac{B'(iy)}{B(iy)}
+   =\sum_{j=1}^n
+      \frac{-\Re\zeta_j}{(-\Re\zeta_j)^2+
+                     (y-\Im\zeta_j)^2}
+ \le n/\rho<1.
+\]
+Choose the continuous argument $\phi(y)=\arg B(iy)$ for $y\ge0$,
+with $\phi(0)=0$. Real conjugate root pairs give
+$\lim_{y\to\infty}\phi(y)=n\pi/2$.
+Thus $\Im B(iy)=yB_1(-y^2)$ has exactly
+$\lfloor(n-1)/2\rfloor=\deg B_1$ positive zeros,
+one for each integer multiple of $\pi$ strictly between $0$ and
+$n\pi/2$. Each zero is simple, since $\phi'(y)>0$.
+Consequently all zeros of $B_1$ are negative real and simple.
+None is a zero of $B_0$, because $B$ has no imaginary-axis zero.
+
+Write these zeros as $-a_j$ with $a_j>0$.
+Since $\deg B_0-\deg B_1$ is zero or one and their leading
+coefficients are positive, polynomial division and partial fractions give
+\[
+ r(u):=\frac{B_0(u)}{B_1(u)}
+       =d_1u+d_0-\sum_j\frac{r_j}{u+a_j},\qquad d_1\ge0.
+\]
+At $y=\sqrt{a_j}$ direct differentiation of the even--odd split gives
+\[
+ \phi'(y)=-2a_j\,\frac{B_1'(-a_j)}{B_0(-a_j)}
+             =\frac{2a_j}{r_j}.
+\]
+In particular $r_j>2a_j$.
+
+The raising recurrence $C=(z+M+1)B-zB'$ implies
+$C_1=B_0+MB_1-2uB_1'$. Hence
+\[
+ F_1(u):=\frac{C_1(u)}{B_1(u)}
+ =M+r(0)+d_1u+
+     \sum_j\frac{(r_j-2a_j)u}{a_j(u+a_j)} .
+\]
+For $\Re u\ge0$ each $u/(u+a_j)$ has nonnegative real part.
+Since $r(0)=B_0(0)/B_1(0)>0$, it follows that
+$\Re F_1(u)>M$ on this closed half-plane.
+
+The quadratic $U$ has both roots in $\Re u<0$, since all its
+three coefficients are positive. On the imaginary axis, putting
+$q=y^2\ge0$, exact expansion gives
+\[
+ M|U(iy)|^2+\Re\bigl(W(iy)\overline{U(iy)}\bigr)
+ =MA^2+\Lambda q+s^2(M+c)q^2,
+\]
+where
+\[
+ \Lambda=M(b^2-2As)-scA+skb
+ =2(n+1)^2(7n+3)(7n+5)
+       (343n^3+2303n^2+2926n+1002)>0.
+\]
+Therefore $\Re(M+W/U)>0$ on the imaginary axis.
+The rational function $M+W/U$ is analytic on the closed right
+half-plane and tends to the positive real number $M+c$ at infinity.
+Applying the harmonic minimum principle on sufficiently large right
+half-disks proves $\Re(W/U)>-M$ throughout $\Re u\ge0$.
+Finally
+\[
+ H_1=UB_1(F_1+W/U)
+\]
+has nonzero factors $U,B_1$ and a factor of positive real part there.
+\end{proof}
+
+
+\begin{corollary}[Signs of a possible common factor]\label{cor:factor-sign}
+For every $n\ge1$, every common root of $P_n,Q_n$ has
+$\Re t>0$. Their monic rational gcd is either $1$, or
+\[
+ t^2-\alpha t+\delta,\qquad
+ \alpha,\delta\in\mathbb Q_{>0},\quad \alpha^2<4\delta.
+\]
+\end{corollary}
+\begin{proof}
+Both polynomials have constant coefficient one, so $t\ne0$.
+The exact shift identity and Proposition~\ref{prop:odd-adjoint}
+give $\Re(-1/t)<0$, equivalently $\Re t>0$.
+The global gcd bound in the
+\href{LOWER_FIVE_QUADRATIC_RESIDUE_REDUCTION.tex}{shift-five reduction},
+\texttt{thm:global-quadratic-bound}, says that every nonconstant
+gcd is an irreducible quadratic of negative discriminant.
+Its roots are $t,\overline t$ with $\Re t>0$, giving
+$\alpha=2\Re t>0$ and $\delta=|t|^2>0$.
+\end{proof}
+The argument leaves the simultaneous lower moment equation
+$P_n(t)=0$ on the open right half-plane unresolved.
+It does not prove ordinary support $\{5,7\}$, degree seven,
+all-binomial SFC, or unrestricted FC/SFC.
+A Hurwitz statement for $P_n$ would suffice at an individual index,
+but no uniform stability assertion for that lower polynomial is
+a premise or conclusion here.
+
+The accompanying checker verifies the imaginary-axis identity and its
+positive factorization symbolically for arbitrary $n$, and replays the
+raising and shift formulas at bounded exact inputs. Its finite Routh
+controls are checks of the adjoint assertion, not the proof for all $n$.
+The written phase, partial-fraction and harmonic arguments supply
+the uniform half-plane exclusion. No independent replay, external review,
+formal verification, priority or novelty claim is made.
+\end{document}

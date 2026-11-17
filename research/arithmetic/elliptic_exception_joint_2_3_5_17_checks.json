@@ -1,0 +1,460 @@
+{
+  "checker_sha256": "53a611c15ab25f35a4123fe8094a8fdb194d679b1ebb8375eaca65140d3568ed",
+  "checks_passed": 25,
+  "command": ".venv/bin/python research/arithmetic/verify_elliptic_exception_joint_2_3_5_17.py --write-receipt",
+  "exact_controls": [
+    "exact_known_generators_on_curve",
+    "exact_R_on_curve",
+    "T_has_order_two",
+    "T_addition_reciprocal_x_for_P_and_S",
+    "five_adic_coefficient_valuations",
+    "complete_reduction_singular_point",
+    "complete_nonsingular_reduction_group",
+    "P_reduces_to_generator",
+    "complete_order_four_chain",
+    "nonsingular_group_closure",
+    "S_has_negative_x_valuation_minus_two",
+    "S_formal_five_depth_one",
+    "S_formal_five_normalized_unit_one",
+    "R_and_S_formal_two_depth_four",
+    "normalized_two_adic_coefficients_mod_four",
+    "thirty_two_joint_two_primary_classes",
+    "old_four_field_coefficients_recovered",
+    "only_class_one_has_formal_five_mass",
+    "formal_five_geometric_mass",
+    "class_one_retention_factor",
+    "new_exact_four_field_coefficients",
+    "new_exact_total",
+    "strict_improvement_over_three_prime_sieve",
+    "unit_coefficient_coordinate_change_full_finite_domain",
+    "retained_inputs_exist"
+  ],
+  "external_review": false,
+  "finite_joint_domain": {
+    "angular_unit_pairs": [
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        3
+      ],
+      [
+        3,
+        1
+      ],
+      [
+        3,
+        3
+      ]
+    ],
+    "c_modulus": 2,
+    "m_modulus": 4,
+    "n_modulus": 4,
+    "rows": [
+      {
+        "after_weight": "205/6928376",
+        "before_weight": "205/223496",
+        "c": 0,
+        "class": 1,
+        "formal_five": true,
+        "m_mod4": 0,
+        "n_mod4": 0,
+        "u_mod4": 0
+      },
+      {
+        "after_weight": "0",
+        "before_weight": "0",
+        "c": 1,
+        "class": 27091730,
+        "formal_five": false,
+        "m_mod4": 0,
+        "n_mod4": 0,
+        "u_mod4": 0
+      },
+      {
+        "after_weight": "0",
+        "before_weight": "0",
+        "c": 0,
+        "class": 1,
+        "formal_five": true,
+        "m_mod4": 0,
+        "n_mod4": 1,
+        "u_mod4": 3
+      },
+      {
+        "after_weight": "1/32",
+        "before_weight": "1/32",
+        "c": 1,
+        "class": 27091730,
+        "formal_five": false,
+        "m_mod4": 0,
+        "n_mod4": 1,
+        "u_mod4": 3
+      },
+      {
+        "after_weight": "0",
+        "before_weight": "0",
+        "c": 0,
+        "class": 1,
+        "formal_five": true,
+        "m_mod4": 0,
+        "n_mod4": 2,
+        "u_mod4": 2
+      },
+      {
+        "after_weight": "0",
+        "before_weight": "0",
+        "c": 1,
+        "class": 27091730,
+        "formal_five": false,
+        "m_mod4": 0,
+        "n_mod4": 2,
+        "u_mod4": 2
+      },
+      {
+        "after_weight": "0",
+        "before_weight": "0",
+        "c": 0,
+        "class": 1,
+        "formal_five": true,
+        "m_mod4": 0,
+        "n_mod4": 3,
+        "u_mod4": 1
+      },
+      {
+        "after_weight": "1/32",
+        "before_weight": "1/32",
+        "c": 1,
+        "class": 27091730,
+        "formal_five": false,
+        "m_mod4": 0,
+        "n_mod4": 3,
+        "u_mod4": 1
+      },
+      {
+        "after_weight": "0",
+        "before_weight": "0",
+        "c": 0,
+        "class": 13545865,
+        "formal_five": false,
+        "m_mod4": 1,
+        "n_mod4": 0,
+        "u_mod4": 3
+      },
+      {
+        "after_weight": "0",
+        "before_weight": "0",
+        "c": 1,
+        "class": 2,
+        "formal_five": false,
+        "m_mod4": 1,
+        "n_mod4": 0,
+        "u_mod4": 3
+      },
+      {
+        "after_weight": "0",
+        "before_weight": "0",
+        "c": 0,
+        "class": 13545865,
+        "formal_five": false,
+        "m_mod4": 1,
+        "n_mod4": 1,
+        "u_mod4": 2
+      },
+      {
+        "after_weight": "205/9824",
+        "before_weight": "205/9824",
+        "c": 1,
+        "class": 2,
+        "formal_five": false,
+        "m_mod4": 1,
+        "n_mod4": 1,
+        "u_mod4": 2
+      },
+      {
+        "after_weight": "0",
+        "before_weight": "0",
+        "c": 0,
+        "class": 13545865,
+        "formal_five": false,
+        "m_mod4": 1,
+        "n_mod4": 2,
+        "u_mod4": 1
+      },
+      {
+        "after_weight": "0",
+        "before_weight": "0",
+        "c": 1,
+        "class": 2,
+        "formal_five": false,
+        "m_mod4": 1,
+        "n_mod4": 2,
+        "u_mod4": 1
+      },
+      {
+        "after_weight": "1/168",
+        "before_weight": "1/168",
+        "c": 0,
+        "class": 13545865,
+        "formal_five": false,
+        "m_mod4": 1,
+        "n_mod4": 3,
+        "u_mod4": 0
+      },
+      {
+        "after_weight": "205/9824",
+        "before_weight": "205/9824",
+        "c": 1,
+        "class": 2,
+        "formal_five": false,
+        "m_mod4": 1,
+        "n_mod4": 3,
+        "u_mod4": 0
+      },
+      {
+        "after_weight": "0",
+        "before_weight": "0",
+        "c": 0,
+        "class": 1,
+        "formal_five": false,
+        "m_mod4": 2,
+        "n_mod4": 0,
+        "u_mod4": 2
+      },
+      {
+        "after_weight": "0",
+        "before_weight": "0",
+        "c": 1,
+        "class": 27091730,
+        "formal_five": false,
+        "m_mod4": 2,
+        "n_mod4": 0,
+        "u_mod4": 2
+      },
+      {
+        "after_weight": "0",
+        "before_weight": "0",
+        "c": 0,
+        "class": 1,
+        "formal_five": false,
+        "m_mod4": 2,
+        "n_mod4": 1,
+        "u_mod4": 1
+      },
+      {
+        "after_weight": "1/32",
+        "before_weight": "1/32",
+        "c": 1,
+        "class": 27091730,
+        "formal_five": false,
+        "m_mod4": 2,
+        "n_mod4": 1,
+        "u_mod4": 1
+      },
+      {
+        "after_weight": "205/223496",
+        "before_weight": "205/223496",
+        "c": 0,
+        "class": 1,
+        "formal_five": false,
+        "m_mod4": 2,
+        "n_mod4": 2,
+        "u_mod4": 0
+      },
+      {
+        "after_weight": "0",
+        "before_weight": "0",
+        "c": 1,
+        "class": 27091730,
+        "formal_five": false,
+        "m_mod4": 2,
+        "n_mod4": 2,
+        "u_mod4": 0
+      },
+      {
+        "after_weight": "0",
+        "before_weight": "0",
+        "c": 0,
+        "class": 1,
+        "formal_five": false,
+        "m_mod4": 2,
+        "n_mod4": 3,
+        "u_mod4": 3
+      },
+      {
+        "after_weight": "1/32",
+        "before_weight": "1/32",
+        "c": 1,
+        "class": 27091730,
+        "formal_five": false,
+        "m_mod4": 2,
+        "n_mod4": 3,
+        "u_mod4": 3
+      },
+      {
+        "after_weight": "0",
+        "before_weight": "0",
+        "c": 0,
+        "class": 13545865,
+        "formal_five": false,
+        "m_mod4": 3,
+        "n_mod4": 0,
+        "u_mod4": 1
+      },
+      {
+        "after_weight": "0",
+        "before_weight": "0",
+        "c": 1,
+        "class": 2,
+        "formal_five": false,
+        "m_mod4": 3,
+        "n_mod4": 0,
+        "u_mod4": 1
+      },
+      {
+        "after_weight": "1/168",
+        "before_weight": "1/168",
+        "c": 0,
+        "class": 13545865,
+        "formal_five": false,
+        "m_mod4": 3,
+        "n_mod4": 1,
+        "u_mod4": 0
+      },
+      {
+        "after_weight": "205/9824",
+        "before_weight": "205/9824",
+        "c": 1,
+        "class": 2,
+        "formal_five": false,
+        "m_mod4": 3,
+        "n_mod4": 1,
+        "u_mod4": 0
+      },
+      {
+        "after_weight": "0",
+        "before_weight": "0",
+        "c": 0,
+        "class": 13545865,
+        "formal_five": false,
+        "m_mod4": 3,
+        "n_mod4": 2,
+        "u_mod4": 3
+      },
+      {
+        "after_weight": "0",
+        "before_weight": "0",
+        "c": 1,
+        "class": 2,
+        "formal_five": false,
+        "m_mod4": 3,
+        "n_mod4": 2,
+        "u_mod4": 3
+      },
+      {
+        "after_weight": "0",
+        "before_weight": "0",
+        "c": 0,
+        "class": 13545865,
+        "formal_five": false,
+        "m_mod4": 3,
+        "n_mod4": 3,
+        "u_mod4": 2
+      },
+      {
+        "after_weight": "205/9824",
+        "before_weight": "205/9824",
+        "c": 1,
+        "class": 2,
+        "formal_five": false,
+        "m_mod4": 3,
+        "n_mod4": 3,
+        "u_mod4": 2
+      }
+    ]
+  },
+  "finite_reduction_five": {
+    "all_affine_points": [
+      [
+        0,
+        0
+      ],
+      [
+        1,
+        0
+      ],
+      [
+        2,
+        2
+      ],
+      [
+        2,
+        3
+      ]
+    ],
+    "generator_chain": [
+      null,
+      [
+        2,
+        2
+      ],
+      [
+        1,
+        0
+      ],
+      [
+        2,
+        3
+      ]
+    ],
+    "nonsingular_group": [
+      null,
+      [
+        1,
+        0
+      ],
+      [
+        2,
+        2
+      ],
+      [
+        2,
+        3
+      ]
+    ],
+    "singular_points": [
+      [
+        0,
+        0
+      ]
+    ]
+  },
+  "formal_verification": false,
+  "new_coefficients": {
+    "1": "820/866047",
+    "13545865": "1/84",
+    "2": "205/2456",
+    "27091730": "1/8"
+  },
+  "new_total": "2300089/10392564",
+  "old_coefficients": {
+    "1": "205/111748",
+    "13545865": "1/84",
+    "2": "205/2456",
+    "27091730": "1/8"
+  },
+  "proof_path": "ELLIPTIC_EXCEPTION_JOINT_2_3_5_17_SIEVE.md",
+  "proof_sha256": "6c58df79c977de80b8da5c338d3725684f2f443d5d58e92237a219aedf86d435",
+  "python_version": "3.12.3",
+  "source_hashes": {
+    "ELLIPTIC_EXCEPTION_COMPLETE_THREE_ADIC_CLASSIFICATION.md": "16d07f196cdaa02dc6ff64624d423ef521399ed75a26f8f7c8dbd283624990ff",
+    "ELLIPTIC_EXCEPTION_JOINT_2_3_17_SIEVE.md": "7ee7d83f46de89349c9c7623bdb16e47cd3d3119b62adf512679b0bb3105ec56",
+    "ELLIPTIC_EXCEPTION_SHARP_FINITE_LOCAL_ERROR.md": "4a104c26ac12be060a16f95b830c9a293e038fe18438568e205a4d436d3db90b",
+    "ELLIPTIC_EXCEPTION_TWO_FIVE_ADIC_CLASSIFICATION.md": "3e4c42c434119b380ebce53aa4ba58641e5d001b733608260c44c5323e885418",
+    "sources/milne-elliptic-curves-2006.pdf": "14a89055a0a7f52b08fad1d53786c9165caba8be837491024b9b210afa384486"
+  },
+  "status": "pass",
+  "unrestricted_local_and_joint_proofs_not_finite_controls": true
+}

@@ -17,8 +17,10 @@ The complete D=30 numerical ledger has only the three families below,
 and every survivor in them must have CRITICAL leading remainder
 A*gamma+B=0. The subsequent [parameter-precision theorem](RULING_SIX_PARAMETER_PRECISION_AND_SLOPE6_DEGREE30_EXCLUSION.md)
 excludes both slope-six families, and [the nonpole-packet theorem](RULING_SIX_NONPOLE_PACKETS_AND_SLOPE7_TOP_DEGREE_EXCLUSION.md)
-excludes intermediate degree nine. Current degree-30 survivors have
-slope seven and intermediate degree six, seven or eight. Full ruling-six,
+excludes intermediate degree nine. The subsequent [two-moment theorem](RULING_SIX_TWO_MOMENT_RESONANCE_AND_DEGREE30_CUBIC_REDUCTION.md)
+leaves only intermediate degree eight, and the
+[companion-prefix theorem](RULING_SIX_CUBIC_BALANCE_COMPANION_DEGREE_TWENTY_SEVEN.md)
+forces reduced companion ruling degree twenty-seven. Full ruling-six,
 trace integrality and HC4/JC2 remain open.
 
 ## 1. Actual source inputs and a complete noncritical quartic
@@ -312,7 +314,7 @@ Essential written inputs are
 [PF179](RULING_SIX_NONCRITICAL_QUARTIC_SPLITTING_AND_SMALL_SLOPE_EXCLUSION.md),
 and the original complete source model retained there.
 Finite controls do not replace those arbitrary-degree proofs.
-The remaining critical slope-seven D=30 degrees six through eight,
+The remaining degree-30 cubic-balance class described by PF184--185,
 larger-degree mixed/critical classes,
 target trace perfection and HC4/JC2 remain open. Independent
 whole-proof replay, formal verification and external human

@@ -1,0 +1,329 @@
+\documentclass[11pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb,amsthm,booktabs}
+\usepackage[hidelinks]{hyperref}
+\usepackage{xurl}
+\setlength{\emergencystretch}{3em}
+\newtheorem{theorem}{Theorem}
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{corollary}[theorem]{Corollary}
+\newcommand{\rank}{\operatorname{rank}}
+\title{A Coxeter reflection obstruction for the four-braid knot $K_*$}
+\author{Written proof and exact polynomial certificate}
+\date{17 November 2026}
+\begin{document}
+\maketitle
+
+The knot $K_*$ defined below has no meridional Coxeter reflection-class
+quotient whose class requires four generators. This includes finite
+and infinite Coxeter groups. The obstruction comes from a polynomial
+identity in a general symmetric Gram matrix with six free entries.
+The Gram matrix may be singular. The result concerns common symmetric
+forms in characteristic zero; it gives no augmentation-rank gap or
+upper bound for unrestricted KCH representations.
+
+\section{The knot and the reflection statement}
+Use the literal four-braid word
+\begin{equation}\label{eq:beta}
+ \beta=(1,2,-3,-3,2,-3,-3,2,1,1,2,2,2,-3,2,2,2).
+\end{equation}
+Here a letter $\pm i$ acts on positions $i-1,i$, numbered from zero.
+The local PD convention is fixed by the following port table:
+\[
+\begin{array}{c|cccc}
+ &0&1&2&3\\\hline
+ +i&\mathrm{in}_L&\mathrm{out}_L&\mathrm{out}_R&\mathrm{in}_R\\
+ -i&\mathrm{in}_R&\mathrm{in}_L&\mathrm{out}_L&\mathrm{out}_R .
+\end{array}
+\]
+Opposite ports are joined through a crossing; ports one and three
+form the overpass. Close the bottom endpoints to the top endpoints
+in their original positions. This is the Spherogram braid-closure
+convention. Let $K_*$ be this closure. The strand permutation is a
+four-cycle, so the closure is a knot. The retained seventeen-row PD
+is verified directly from the port table and endpoint gluings.
+No census name or numerical geometric identification is used.
+
+Let $k$ be a characteristic-zero field, $B$ a symmetric bilinear form
+on a $k$-vector space, and
+\[
+             R_u(x)=x-B(u,x)u,\qquad B(u,u)=2 .
+\]
+Then $R_u$ is an involution preserving $B$, and its displacement image
+is $ku$. The form on the ambient space, and on the span of the
+normal vectors, may be singular.
+
+\begin{theorem}\label{thm:reflection}
+In every representation of $\pi_1(S^3\setminus K_*)$ taking meridians
+to nonisotropic orthogonal reflections preserving one symmetric
+bilinear form over a characteristic-zero field, the span of all
+meridional normal directions has dimension at most three.
+The assertion also holds for the mirror of $K_*$.
+\end{theorem}
+
+Conjugacy of meridians permits the normal vectors to be chosen as
+images of one normal vector. Their common nonzero norm can be made
+two by rescaling $B$; this requires no square root in $k$.
+The proof will rule out independence of the four top-meridian normals.
+Their span is invariant under the four corresponding reflections,
+which generate the image of the knot group. All conjugate meridian
+normals then lie in that same span. This explains the global span
+statement once independence has been excluded.
+
+\section{Root propagation and closing signs}
+The positive Hurwitz move and its inverse are
+\begin{equation}\label{eq:moves}
+ H_i:(u,v)\longmapsto(R_u(v),u),\qquad
+ H_i^{-1}:(u,v)\longmapsto(v,R_v(u)).
+\end{equation}
+For an involutory meridian assignment with incoming values $a,b$,
+the positive literal crossing has PD values $(a,b,bab,b)$ and outgoing
+values $(b,bab)$. The negative literal crossing has PD values
+$(b,a,aba,a)$ and outgoing values $(aba,a)$.
+Thus the Hurwitz word for \eqref{eq:beta} is
+\begin{equation}\label{eq:w}
+ w=(-1,-2,3,3,-2,3,3,-2,-1,-1,-2,-2,-2,3,-2,-2,-2).
+\end{equation}
+This determines the sign convention by local crossing relations,
+rather than by a name for the braid.
+
+Assume the four top normals are independent and use them as a basis
+$e_0,e_1,e_2,e_3$ of their span. Their Gram matrix is
+\begin{equation}\label{eq:gram}
+ G=\begin{pmatrix}
+ 2&a&b&c\\a&2&d&e\\b&d&2&f\\c&e&f&2
+ \end{pmatrix}.
+\end{equation}
+All six entries $a,b,c,d,e,f$ are unrestricted. In particular no
+Gram determinant is assumed nonzero.
+
+For normalized vectors,
+\begin{equation}\label{eq:sign}
+                R_u=R_v\quad\Longleftrightarrow\quad v=\pm u .
+\end{equation}
+Equality first forces the nonzero displacement lines to coincide,
+and the equal norms then force the proportionality scalar to have
+square one. Each root move in \eqref{eq:moves} has determinant $-1$
+on the two moving root columns: it swaps them and adds a multiple of
+one column to the other. Consequently all intermediate root frames
+remain independent. A closing reflection tuple therefore has final
+roots $\varepsilon_i e_i$ with
+\begin{equation}\label{eq:product}
+                    \prod_{i=0}^3\varepsilon_i=-1.
+\end{equation}
+
+\begin{lemma}\label{lem:sign-gauge}
+For the word $w$, all eight sign patterns satisfying
+\eqref{eq:product} are equivalent under changes
+$e_i\mapsto\delta_i e_i$, where $\delta_i\in\{1,-1\}$.
+On Gram entries these are polynomial coordinate changes
+$G_{ij}\mapsto\delta_i\delta_jG_{ij}$.
+\end{lemma}
+\begin{proof}
+The initial strand ending in position $i$ is
+$p(i)$, where $(p(0),p(1),p(2),p(3))=(1,3,0,2)$.
+The identity
+$R_{\delta u}(\eta v)=\eta R_u(v)$
+shows that the final root in position $i$ acquires sign $\delta_{p(i)}$.
+Relative to the new initial frame, its closing sign is therefore
+\[
+                \varepsilon'_i
+                    =\delta_{p(i)}\delta_i\varepsilon_i .
+\]
+The permutation $p$ is a four-cycle. Prescribe $\delta$ at one position
+and solve these equations successively around the cycle. The final
+equation holds exactly when the two sign products agree. Both choices
+of the initial global sign work. This proves the claim using only
+sign changes; it introduces no denominator.
+\end{proof}
+
+\section{The exact polynomial contradiction}
+It is enough to take
+$\varepsilon=(-1,1,1,1)$.
+Write $F_v$ for propagation by the letters of a word $v$, in their
+listed order. Split $w$ after its seventh letter:
+\[
+ A=(-1,-2,3,3,-2,3,3),\qquad
+ C=(-2,-1,-1,-2,-2,-2,3,-2,-2,-2).
+\]
+Let $L=F_A(e_0,e_1,e_2,e_3)$ and
+$T=F_{C^{-1}}(-e_0,e_1,e_2,e_3)$, where $C^{-1}$ reverses the
+letter order and changes each sign. Because the root moves are
+invertible, the signed closure condition is exactly $L=T$.
+
+Compute these two tuples in
+$\mathbb Z[a,b,c,d,e,f]^4$ using \eqref{eq:gram}.
+List the sixteen coordinate differences of $L-T$ in position order,
+and within each vector in coordinate order. Divide each nonzero
+difference by its positive integer coefficient content.
+The resulting primitive polynomials $P_0,\ldots,P_{15}$ have degrees
+\[
+ (32,31,30,24,44,43,42,36,36,37,38,33,25,26,27,22).
+\]
+Only nonzero integer constants have been divided out; this is valid
+in every characteristic-zero field.
+
+\begin{lemma}\label{lem:identity}
+The retained integer polynomials $Q_0,\ldots,Q_{15}$ satisfy
+\begin{equation}\label{eq:identity}
+                   \sum_{j=0}^{15}Q_jP_j=16
+             \quad\hbox{in }\mathbb Z[a,b,c,d,e,f].
+\end{equation}
+They have a total of $75\,136$ nonzero monomials.
+\end{lemma}
+\begin{proof}
+The exact finite certificate stores rational multipliers $q_j$
+whose denominators divide $16$. Put $Q_j=16q_j$; these have integer
+coefficients. Every coefficient and exponent is retained.
+The standard-library checker reconstructs $L,T$ from the literal
+word, regenerates the primitive $P_j$, and compares all of their
+coefficients with the retained records. It then multiplies and sums
+the integer sparse polynomials and obtains the constant polynomial
+$16$. The monomial exponents are nonnegative and there are only the
+six variables in \eqref{eq:gram}. Thus this is a polynomial identity,
+with no determinant localization or saturation. The full coefficient
+replay is the finite computational part of the proof.
+\end{proof}
+
+Every signed closure in the chosen branch would make all $P_j$
+zero, contradicting \eqref{eq:identity}, since $16\ne0$ in characteristic
+zero. Lemma~\ref{lem:sign-gauge}
+covers the other seven branches. This excludes four independent
+top-meridian normals and proves the span conclusion of
+Theorem~\ref{thm:reflection}. A mirror homeomorphism induces an
+isomorphism of knot groups carrying meridians to meridians up to
+inversion. Inversion does not change reflection images. The span of
+all meridional normal directions is consequently unchanged, proving
+the mirror assertion as well.
+
+\section{The Coxeter consequence}
+Here a reflection in a Coxeter group means a conjugate of a simple
+generator. For a conjugacy class $\mathcal C$ generating a group,
+its class-generating rank is the minimum number of its members
+generating that group.
+
+\begin{corollary}\label{cor:coxeter}
+If a knot group of $K_*$, or of its mirror, surjects onto a Coxeter
+group and takes a meridian to a reflection, then the image meridian
+class has generating rank at most three. This applies to finite and
+infinite Coxeter groups. In particular such a quotient cannot supply
+a class-generating-rank lower bound four.
+\end{corollary}
+\begin{proof}
+For completeness the geometric representation needed here follows
+directly from the Coxeter presentation. Give the simple-root basis
+$\{\alpha_s\}$ the form
+\[
+ B(\alpha_s,\alpha_s)=2,\qquad
+ B(\alpha_s,\alpha_t)=
+ \begin{cases}
+ -2\cos(\pi/m_{st}),&m_{st}<\infty,\\
+ -2,&m_{st}=\infty.
+ \end{cases}
+\]
+Its normalized simple-root reflections square to the identity.
+For each finite $m_{st}$ the two-root plane is nondegenerate and
+has an orthogonal complement. The product on the plane has
+eigenvalues $\exp(\pm2\pi i/m_{st})$; for $m_{st}=2$ it is $-I$.
+It fixes the orthogonal complement. Thus all defining relations
+hold and give a representation, even if the full form is singular.
+There is no pair-product relation when $m_{st}=\infty$.
+Faithfulness is not needed below.
+
+Let $U$ be the span of the four top-meridian normal directions in
+this representation. Theorem~\ref{thm:reflection} gives $\dim U\le3$.
+Each of these four reflections acts trivially on the quotient by
+$U$, so every element of the surjective Coxeter image does.
+For a simple reflection $s$,
+$(R_{\alpha_s}-I)V=k\alpha_s$; hence every $\alpha_s$ lies in $U$.
+The simple-root basis therefore has at most three members.
+
+The abelianization of a Coxeter group is
+$(\mathbb Z/2)^{o}$, where $o$ is the number of components of the
+graph joining simple generators with odd finite Coxeter label.
+This follows immediately by abelianizing its presentation:
+an odd label equates two generators and an even label gives no
+additional relation. A group generated by one conjugacy class of
+involutions has cyclic abelianization, so $o=1$.
+Simple generators joined by an odd-labelled edge are conjugate.
+Consequently all simple generators lie in the image meridian class.
+They generate the group in at most three members of that class.
+\end{proof}
+
+\begin{corollary}\label{cor:sums}
+For every integer $s\ge0$, put $K_s=K_*\mathbin{\#}{}^s3_1$.
+In a characteristic-zero representation of its knot group by
+nonisotropic reflections preserving one symmetric bilinear form,
+the span of all meridional normal directions has dimension at most
+$3+s$. Every surjective Coxeter reflection-class quotient of this
+knot group has class-generating rank at most $3+s$.
+Thus it cannot supply a meridional lower bound $4+s$.
+\end{corollary}
+\begin{proof}
+Restrict the representation to the $K_*$ factor.
+Theorem~\ref{thm:reflection} applies in the same ambient space, so
+its meridional normal directions span at most three dimensions.
+The standard three-crossing trefoil diagram has the Wirtinger
+presentation
+\[
+                  \langle x,y\mid xyx=yxy\rangle ,
+\]
+with $x$ and $y$ both meridians. A connected-sum decomposing annulus
+identifies a meridian of each factor. Van Kampen's theorem therefore
+gives the knot group as a product amalgamated along that meridian.
+For each trefoil choose $x$ as the identified meridian; only the
+normal of $y$ can add a direction beyond those already present.
+The images are generated by the $K_*$ meridians and these $s$
+additional reflections. Their normal span is invariant under all
+of them, so it contains every conjugate meridional normal direction.
+This gives the bound $3+s$.
+
+For a full Coxeter quotient, apply its geometric representation.
+Every simple-root direction lies in this normal span by the
+displacement argument in Corollary~\ref{cor:coxeter}; the Coxeter
+rank is therefore at most $3+s$. Its odd-labelled graph is connected
+by the same cyclic-abelianization argument. Its simple generators
+belong to the image meridian class, proving the stated class bound.
+This proof uses no meridional-rank equality or cover calculation for
+the connected sums.
+\end{proof}
+
+\section{Replay, controls and scope}
+The package consists of the literal braid/PD input,
+the rational unit certificate, a standard-library checker and its
+receipt. The default replay checks the braid port construction
+against all $68$ retained PD darts, its sphere embedding and one
+component, the four actual top-meridian arcs, and a nonconstant
+involutory colouring of all seventeen crossings. It verifies all
+eight sign transports and the complete polynomial identity.
+
+A genuine positive control is supplied by $T(4,5)$.
+The four star roots $e_0-e_j$ in $\mathbb Q^5$ have Gram matrix with
+diagonal two and all offdiagonal entries one; their reflections
+are the four star transpositions of $S_5$.
+For the Hurwitz word $(1,2,3)^5$ they close with signs $(-1,-1,-1,1)$.
+The opposite word has a control using the four adjacent-difference
+roots, with Gram matrix of type $A_4$.
+Both controls have independent root frames. The checker verifies
+their root and permutation trajectories, inverse moves, and all
+eight sign-gauged Gram specializations for each control.
+An altered multiplier coefficient, a mismatched braid sign,
+a corrupted PD edge and a negative monomial exponent are rejected
+by default.
+
+Sage/Singular was used to discover and extract the identity;
+neither is required for its replay. The written sign-gauge,
+normal-direction and Coxeter arguments remain essential mathematical
+parts. The receipt pins this source, the input, certificate and
+checker. Dated internal PDF-review records are preserved under replay
+with their own source and PDF hashes; a replay does not transfer an
+old review to a new edition.
+
+This companion makes no census identification, crossing-minimality,
+geometric-family or worldwide-priority assertion. Those questions
+belong to the separate knot study. The common symmetric-form
+hypothesis is essential here: no absence of unrestricted KCH
+representations, augmentation-rank upper bound, or augmentation gap
+is claimed. The result is an exact internal computation with written
+proofs, not formal verification or external specialist review.
+\end{document}

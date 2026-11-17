@@ -44,14 +44,14 @@
     "pinned primary source neumann-rudolph-1988-unfoldings-corrigendum.pdf",
     "classification remains attributed written input"
   ],
-  "elapsed_seconds": 0.19139730400638655,
+  "elapsed_seconds": 0.18436464498518035,
   "environment": {
     "python": "3.12.3",
     "sympy": "1.14.0"
   },
   "proof_sha256": "9cadd3f5aed9c34845c0b143ebd74a50a8d99a658bdecf7e562b1f508eb96355",
   "checker_sha256": "c5b1b98d010038e4cad316efb6df2e9f008479fc9e5f5234ca040d26f83cc9b9",
-  "source_audit_sha256": "57345d9af9b46b3584cbe099adbc9c285e76c91a267ab5ad0100f8b7c86c2bcb",
+  "source_audit_sha256": "9bfeb4cc36d03c9fdd45e36e8c1802177857ccb050a3f339e6985b7a2805643b",
   "source_sha256": {
     "neumann-1989-plane-curves-links-infinity.pdf": "0c8a6c9090af7a24c4a030cc14285e2e6283a6db78c09ee5a9490d19fab68c66",
     "neumann-rudolph-1988-unfoldings-corrigendum.pdf": "7836b6f99387ddc74e785466ffd6630bfdae79ba931c5e33d5d7d8b74964bac9"

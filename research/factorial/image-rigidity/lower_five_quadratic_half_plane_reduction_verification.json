@@ -1,0 +1,72 @@
+{
+  "passed": true,
+  "uniform_H1_half_plane_exclusion_proved": true,
+  "all_index_support_five_seven_sfc": false,
+  "symbolic_imaginary_axis_identity": true,
+  "linear_factor": "2*(n + 1)**2*(7*n + 3)*(7*n + 5)*(343*n**3 + 2303*n**2 + 2926*n + 1002)",
+  "checks": 13,
+  "finite_H1_Routh_controls": [
+    {
+      "n": 1,
+      "H1_hurwitz": true,
+      "degree": 2
+    },
+    {
+      "n": 2,
+      "H1_hurwitz": true,
+      "degree": 3
+    },
+    {
+      "n": 3,
+      "H1_hurwitz": true,
+      "degree": 3
+    },
+    {
+      "n": 5,
+      "H1_hurwitz": true,
+      "degree": 4
+    },
+    {
+      "n": 7,
+      "H1_hurwitz": true,
+      "degree": 5
+    },
+    {
+      "n": 10,
+      "H1_hurwitz": true,
+      "degree": 7
+    },
+    {
+      "n": 11,
+      "H1_hurwitz": true,
+      "degree": 7
+    },
+    {
+      "n": 13,
+      "H1_hurwitz": true,
+      "degree": 8
+    },
+    {
+      "n": 20,
+      "H1_hurwitz": true,
+      "degree": 12
+    },
+    {
+      "n": 30,
+      "H1_hurwitz": true,
+      "degree": 17
+    }
+  ],
+  "source_sha256": {
+    "CUBIC_ADJOINT_STABILITY_SFC.tex": "ea2510e511545b9dd7a49a0796d75c45575687e60770c3359d38c5bc99cb4125",
+    "LOWER_FIVE_QUADRATIC_RESIDUE_REDUCTION.tex": "343cd52be51b99fe8a47d5ff2cf493abe1e5503e47da466cf44480808981e5aa",
+    "LOWER_FIVE_QUADRATIC_HALF_PLANE_REDUCTION.tex": "4d4f6cd8b1ecde78275be19cc1971f8be3ff3fe07b989a0b6a17391ee0caf357",
+    "lower_five_quadratic_half_plane_reduction.py": "10271e9c3d5a67ebb8844991df92789fcedfd951925a86a045af9e040310aa48"
+  },
+  "python": "3.12.3",
+  "sympy": "1.14.0",
+  "command": "python research/factorial/image-rigidity/lower_five_quadratic_half_plane_reduction.py",
+  "independent_replay": false,
+  "formal_verification": false,
+  "external_review": false
+}

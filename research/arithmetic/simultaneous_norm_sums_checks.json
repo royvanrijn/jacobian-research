@@ -1,0 +1,72 @@
+{
+  "scope": "finite computation only; no unrestricted binary theorem",
+  "limit_inclusive": 100000000,
+  "last_target": 99999998,
+  "target_count": 8333334,
+  "balanced_exceptions": [
+    14,
+    38,
+    50,
+    62,
+    86,
+    230,
+    242
+  ],
+  "unbalanced_exceptions": [],
+  "unbalanced_witnesses_for_balanced_exceptions": {
+    "14": [
+      1,
+      13
+    ],
+    "38": [
+      1,
+      37
+    ],
+    "50": [
+      13,
+      37
+    ],
+    "62": [
+      1,
+      61
+    ],
+    "86": [
+      13,
+      73
+    ],
+    "230": [
+      1,
+      229
+    ],
+    "242": [
+      1,
+      241
+    ]
+  },
+  "membership_count": 2097154,
+  "membership_sha256": "8c45714d15f60876aa66877a972d62b00cbb3ed0f826e73a538ce52662a4c504",
+  "witness_encoding": "little-endian int32 index i of a=12*i+1; -1 for balanced exceptions; nearest below half chosen",
+  "balanced_witness_sha256": "cbda0d7b52be007c010a61b3ca5761da1277d1d98434862920cb30c1ba7cc937",
+  "search_distances": 243,
+  "controls": {
+    "independent_factorizations": 8334,
+    "positive_controls": [
+      1,
+      13,
+      37,
+      169,
+      481
+    ],
+    "negative_controls": [
+      25,
+      49,
+      121,
+      145,
+      289
+    ]
+  },
+  "python": "3.12.3",
+  "numpy": "1.26.4",
+  "checker_sha256": "c337e60d0f2ad37604e43c1d03dcea8fa035e92414a7e8bc31eeff87ff5aa045",
+  "elapsed_seconds": 0.891
+}

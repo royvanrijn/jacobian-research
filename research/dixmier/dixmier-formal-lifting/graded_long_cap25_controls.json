@@ -1,0 +1,127 @@
+{
+  "claim": "No even equivariant canonical Long full Weyl jet of common degree25 through h5",
+  "status": "PASS",
+  "environment": {
+    "python": "3.12.3",
+    "arithmetic": "Exact Fraction polynomial identities, bare modular determinant and exact rational functional"
+  },
+  "cap": 25,
+  "image_order": [
+    "R",
+    "T",
+    "D",
+    "S"
+  ],
+  "image_weights": [
+    -1,
+    2,
+    4,
+    1
+  ],
+  "source_weights": [
+    -1,
+    1,
+    4,
+    2
+  ],
+  "h_weight": 3,
+  "h3": {
+    "counts": [
+      71,
+      102,
+      127,
+      91
+    ],
+    "unknowns": 391,
+    "rows": 2333,
+    "exact_particular_from_cap23": true,
+    "exact_independent_kernels": [
+      "R^3",
+      "R^4*S",
+      "X^3",
+      "R^4*a"
+    ],
+    "minor_size": 387,
+    "minor_det_modp": 911665,
+    "rank_Q": 387,
+    "all_first_R_corrections_zero": true
+  },
+  "new_polynomial_hamiltonian": {
+    "formula": "R^4*a=R^4*y+R^4/X",
+    "terms": 18,
+    "degree": 16,
+    "kernel_degrees": {
+      "R": null,
+      "T": 17,
+      "D": 25,
+      "S": 13
+    },
+    "second_S_variation_degree": 27,
+    "source_parameter_not_removed": true
+  },
+  "target_gauge_h4_D_degrees": [
+    16,
+    21,
+    22
+  ],
+  "h5": {
+    "counts": [
+      29,
+      47,
+      62,
+      40
+    ],
+    "unknowns": 178,
+    "rows": 1446,
+    "rhs_nonzeros": [
+      96,
+      189,
+      150,
+      301,
+      261,
+      195
+    ],
+    "parameters_retained": [
+      "gamma*{X^3,f}",
+      "delta*{R^4*a,f}"
+    ],
+    "functional_support": 140,
+    "all178columns_annihilated": true,
+    "rhs_order": [
+      "b0",
+      "bgamma",
+      "bdelta",
+      "bgamma2",
+      "bgamma_delta",
+      "bdelta2"
+    ],
+    "exact_evaluations": [
+      "1",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0"
+    ],
+    "compatibility": "0=1 for every gamma,delta"
+  },
+  "invalid_controls": {
+    "corrupted_particular_rejected": true,
+    "corrupted_functional_rejected": true
+  },
+  "prime": 1000003,
+  "hashes": {
+    "check_graded_long_cap25.py": "c00a826c85bfece7dcbb40e9b6b534713dc45b58a05a6a1eb2d5126e00a879ab",
+    "GRADED_LONG_CAP25_JET_OBSTRUCTION.md": "24d32815bc1d192b0509c249c6ecad6cf0e6ec94537257f9db8270858fc3b29d",
+    "graded_long_cap25_witness.json": "46f2235d1816ccc77ab8099d462e4114c80204d35388a3fde25fc56dcc5910c5",
+    "graded_long_cap23_witness.json": "9f4523d1b776289095f908b19f82ed6297fa243c672904831f072ad7e727be34",
+    "check_graded_long_cap23.py": "78bc02799a65b5587a6dad0672d72e74776f1a719430546f7e95dfe1ed8c3e62",
+    "check_graded_long_cap24.py": "71eaf546c811d2ac297cf5a45864e4af1afaf16c8b1d8a0944c60b8619c246bc",
+    "check_long_graph_curvature.py": "3574e9a9fbfd9e19251709a6af9759909ed09a4f960a44df60e35a4480e04a0f",
+    "../dixmier-audit/verify_long_pbw.py": "0fd237f4954b4a45260b65ffef2e973e1f253e3b359e440da7d0cc6dbdd06eed"
+  },
+  "coverage_boundary": "Complete finite even equivariant cap25 two-jet family, four first-kernel directions exhausted, target gauges removed with verified two-jet cap control, both source parameters retained and contradicted by a single exact rational functional. No nongraded/odd-jet theorem, cap26 search, all-gauge no-go or DC1/DC2 conclusion.",
+  "independent_replay": false,
+  "formal_verification": false,
+  "external_review": false
+}

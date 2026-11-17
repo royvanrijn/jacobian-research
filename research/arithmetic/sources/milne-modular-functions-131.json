@@ -1,0 +1,30 @@
+{
+  "title": "Modular Functions and Modular Forms",
+  "authors": "J. S. Milne",
+  "version": "Version 1.31, March 22, 2017",
+  "primary_url": "https://www.jmilne.org/math/CourseNotes/MF.pdf",
+  "retained_pdf": "milne-modular-functions-131.pdf",
+  "sha256": "977f06a4e838c43c77a7c9398c090789e60d67f64e013e1dcd9bcce0e0c27b8d",
+  "bytes": 1010364,
+  "pdf_pages": 134,
+  "accessed_utc_date": "2026-11-17",
+  "direct_read": true,
+  "used_locators": [
+    {
+      "locator": "Section 12, Elliptic curves over C",
+      "printed_pages": "123",
+      "pdf_pages": "123",
+      "scope": "An elliptic curve over C has endomorphism ring Z or an imaginary-quadratic order."
+    },
+    {
+      "locator": "Corollary 12.15",
+      "printed_pages": "125",
+      "pdf_pages": "125",
+      "scope": "A complex-multiplication elliptic curve has integral j-invariant."
+    }
+  ],
+  "role": "External theorem interface; not claimed to be reproved by finite checks.",
+  "rendered_pages_visually_inspected": [
+    125
+  ]
+}

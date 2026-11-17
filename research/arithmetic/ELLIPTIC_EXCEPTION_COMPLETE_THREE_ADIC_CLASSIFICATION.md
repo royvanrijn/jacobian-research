@@ -459,7 +459,10 @@ therefore squeeze the normalized count to `55/156`, the local measure
 in the proven rational closure.
 Negation preserves the soluble set, so the generic division by two
 for target images preserves these proportions. This argument supplies
-`o(log B)`, with no quantitative convergence rate asserted.
+`o(log B)` directly. The square-root error theorem
+[ESQ3](ELLIPTIC_EXCEPTION_SHARP_FINITE_LOCAL_ERROR.md), using an
+additional primary bound for two p-adic elliptic logarithms, sharpens
+this to `O_E(sqrt(log B))` with the same coefficient.
 \(\square\)
 
 ## 6. Evidence and remaining scope

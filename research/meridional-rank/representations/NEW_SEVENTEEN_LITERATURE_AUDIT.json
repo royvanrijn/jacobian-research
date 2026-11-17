@@ -1,0 +1,327 @@
+{
+  "title": "Bounded primary-source comparison for the seventeen-crossing four-bridge knot K_*",
+  "as_of": "2026-11-17",
+  "assurance": "Primary theorem scopes read; elementary invariant deductions checked. Imported knot, interval-topology and universal-reflection certificates remain distinct premises. This is neither an exhaustive literature search nor a worldwide priority certificate.",
+  "knot": {
+    "definition_source": "NEW_SEVENTEEN_CROSSING_KNOT.tex#def:knot",
+    "literal_four_braid": [
+      1,
+      2,
+      -3,
+      -3,
+      2,
+      -3,
+      -3,
+      2,
+      1,
+      1,
+      2,
+      2,
+      2,
+      -3,
+      2,
+      2,
+      2
+    ],
+    "imported_claims": [
+      {
+        "source": "NEW_SEVENTEEN_CROSSING_KNOT.tex#thm:sharp",
+        "claim": "mr(K_*)=b(K_*)=4, from the exact A8 quotient and four-meridian upper certificate."
+      },
+      {
+        "source": "NEW_SEVENTEEN_CROSSING_KNOT.tex#thm:crossing",
+        "claim": "The displayed Alexander polynomial has breadth14, determinant117, genus7, braid index4 and crossing number17."
+      },
+      {
+        "source": "NEW_SEVENTEEN_CROSSING_KNOT.tex#thm:hyperbolic",
+        "claim": "The actual knot exterior is hyperbolic, from the positive cusped interval certificate."
+      },
+      {
+        "source": "NEW_SEVENTEEN_CROSSING_KNOT.tex#thm:nongraph",
+        "claim": "The actual double branched cover is not a graph manifold, from a nonzero closed representation volume."
+      },
+      {
+        "source": "UNIVERSAL_17_REFLECTION_OBSTRUCTION.tex#thm:reflection",
+        "claim": "No symmetric-form rank-one-reflection representation has four independent meridian displacement directions in characteristic zero; singular ambient symmetric forms are allowed."
+      },
+      {
+        "source": "UNIVERSAL_17_REFLECTION_OBSTRUCTION.tex#cor:coxeter",
+        "claim": "No finite or infinite Coxeter reflection-class quotient supplies a rank-four meridional lower bound."
+      }
+    ],
+    "Alexander_coefficients_descending": [
+      1,
+      -4,
+      8,
+      -8,
+      0,
+      18,
+      -38,
+      47,
+      -38,
+      18,
+      0,
+      -8,
+      8,
+      -4,
+      1
+    ]
+  },
+  "source_pins": [
+    {
+      "id": "YAM87",
+      "snapshot": "sources/yamada-seifert-braid-1987.pdf",
+      "sha256": "2b1619367fa7ef93b316413d01c67f52c6c9f39095369809e3fa2383f54bbcc3",
+      "url": "https://webhomes.maths.ed.ac.uk/~v1ranick/papers/yamada.pdf",
+      "locator": "Theorem3, printed p.347; Theorem2/proof, printed p.355"
+    },
+    {
+      "id": "FRAN04",
+      "snapshot": "sources/francaviglia-volume-published-2004.pdf",
+      "sha256": "d1be39750fb4f60fe13aeb65525d051f8a6b11a724c7342a3598d389c3fcefe6",
+      "url": "https://www.dm.unibo.it/~francavi/lavori/art_vs_IMRN.pdf",
+      "locator": "Definition2.1 p.427; Remark4.4 p.433; Corollary4.14, Remark4.15 and Proposition4.17 p.437, published journal edition"
+    },
+    {
+      "id": "LTY13",
+      "snapshot": "sources/luo-tillmann-yang-gluing-1004.2992v1.pdf",
+      "sha256": "bc19e070ffc10d5d32ac33e6e0f631f5d9bf94fac03de0265939c5ee551a9800",
+      "url": "https://arxiv.org/pdf/1004.2992v1",
+      "locator": "Section4.6 and Lemma4.10, arXiv v1 printed p.11; journal lemma/page numbering not imported"
+    },
+    {
+      "id": "ABE11",
+      "snapshot": "sources/abe-homogeneous-1003.5392v1.pdf",
+      "sha256": "4e050a66869555f91de8e6dbaa93c4c71d1cea93d346279b7b3f23fc0d934363",
+      "url": "https://arxiv.org/pdf/1003.5392v1",
+      "locator": "O_+ definition p.1; Theorems1.2/1.3 p.2; Lemma2.2 and Theorem2.3 p.5; Seifert-subgraph interpretation p.8"
+    },
+    {
+      "id": "MUR58",
+      "snapshot": "sources/murasugi-alternating-alexander-1958.pdf",
+      "sha256": "17f356e6a62103e2f4b25943d82758c393f0b12fe3cc67898bbc3e658916438d",
+      "url": "https://ir.library.osaka-u.ac.jp/repo/ouka/all/3567/omj10_02_03.pdf",
+      "locator": "Theorem1.1, printed p.181"
+    },
+    {
+      "id": "LMEL85",
+      "snapshot": "sources/livingston-melvin-satellites-1985.pdf",
+      "sha256": "d045314f7c3af26696f382cfda15bda9dfdfa095ab9f5414c4ff05dbdbf6422d",
+      "url": "https://pmelvin.blogs.brynmawr.edu/files/2021/09/1985LivingstonMelvin.pdf",
+      "locator": "Theorem2 and Seifert polynomial corollary, printed p.222"
+    },
+    {
+      "id": "SCHULT03",
+      "snapshot": "sources/schultens-bridge-additivity.pdf",
+      "sha256": "ea7b9acb96ddd962b4363ec51c95514aba5544eeded1d7fdf8d461f5f71d375b",
+      "locator": "Theorem1, retained author manuscript printed p.4; existing source record also covers connected-sum additivity"
+    }
+  ],
+  "primary_scope_deductions": [
+    {
+      "id": "crossing17",
+      "sources": [
+        "YAM87"
+      ],
+      "proof": "Alexander breadth14 gives g>=7. Seifert's algorithm on the17-crossing4-braid gives g<=7. The imported bridge4 theorem and bridge<=braid index give braid index4. Yamada equates this to the minimum number of Seifert circles in any oriented diagram, so every diagram D has s(D)>=4. Its canonical Seifert surface has genus g_D>=7, hence c(D)=2g_D+s(D)-1>=17. The literal17-crossing diagram attains this. Yamada's b denotes braid index, whereas project b denotes bridge number."
+    },
+    {
+      "id": "nonalternating",
+      "sources": [
+        "MUR58"
+      ],
+      "proof": "The Alexander coefficient sequence has internal zeros at indices4 and10 between nonzero extremal coefficients. Murasugi's Theorem1.1 excludes this for an alternating knot. Consequently the alternating-diagram crosscap formula cannot be applied to this knot."
+    },
+    {
+      "id": "homogeneous_and_not_positive",
+      "sources": [
+        "ABE11"
+      ],
+      "data": {
+        "homogeneous_generator_signs": {
+          "1": 1,
+          "2": 1,
+          "3": -1
+        },
+        "positive_crossings": 12,
+        "negative_crossings": 5,
+        "writhe": 7,
+        "Seifert_circles": 4,
+        "positive_Seifert_subgraph_components": [
+          [
+            1,
+            2,
+            3
+          ],
+          [
+            4
+          ]
+        ],
+        "negative_Seifert_subgraph_components": [
+          [
+            1
+          ],
+          [
+            2
+          ],
+          [
+            3,
+            4
+          ]
+        ],
+        "O_plus": 2,
+        "O_minus": 3,
+        "Rasmussen_s": 6,
+        "mirror_Rasmussen_s": -6
+      },
+      "proof": "Each Artin generator occurs with only one sign, so the braid and its closure diagram are homogeneous by Abe Lemma2.2. Oriented smoothing gives four strand circles. Keeping positive Seifert edges connects1,2,3 and leaves4 isolated, so O_+=2. Theorem1.2 gives s=7-4+2*2-1=6. On the mirror O_+=3 and w=-7, giving s=-6. Since g=7, neither knot nor mirror can be positive or strongly quasipositive, by Theorem1.3. In particular K_* has no positive or negative diagram and no positive or negative braid presentation.",
+      "not_claimed": "Quasipositivity without the additional genus condition, or a generic augmentation-rank bound."
+    },
+    {
+      "id": "independent_cable_obstruction",
+      "sources": [
+        "SCHULT03",
+        "LMEL85"
+      ],
+      "proof": "For a genuine winding-p cable of a nontrivial companion J, Schultens Theorem1 gives4=b(K)>=p b(J)>=2p; hence p=2. The satellite Alexander formula is Delta_K(t)=Delta_T(2,q)(t) Delta_J(t^2), up to a unit. Since Delta_J(1)=+-1, evaluation at-1 gives |q|=det(K)=117. The torus factor alone then has breadth116, contrary to total breadth14. The same bridge argument reduces any genuine outer braid-pattern satellite to a two-strand braid pattern, hence to this cable case. This is an independent invariant obstruction; the imported hyperbolic-exterior theorem also excludes all nontrivial satellite constructions."
+    },
+    {
+      "id": "closed_volume_bridge",
+      "sources": [
+        "FRAN04",
+        "LTY13"
+      ],
+      "proof": [
+        "A nondegenerate solution of the multiplicative gluing equations on the actual cusped triangulation produces a PSL2(C) holonomy representation and a straight pseudo-developing map, by Francaviglia Remark4.4. Its volume equals the signed Bloch-Wigner tetrahedron sum, by Corollary4.14. Negative tetrahedra, incomplete cusps and loxodromic peripheral images are permitted (Remark4.15).",
+        "Let A be holonomy of the filled primitive slope and B a commuting peripheral holonomy with certified logarithmic multiplier of nonzero real part. Then B is loxodromic. In coordinates B(z)=lambda z, |lambda|!=1, commutativity forces A to fix0 and infinity individually: interchanging them would invert B. Thus A(z)=a z. The certified filled-slope multiplier a=1 forces A=I, rather than merely a nontrivial parabolic with eigenvalue1.",
+        "The representation therefore factors through the closed Dehn filling. Francaviglia Proposition4.17 identifies its closed real volume with the same signed tetrahedron sum, without an additional real core-length term and without assuming the filling hyperbolic. A certified interval excluding zero contradicts Luo-Tillmann-Yang Lemma4.10 for a closed orientable graph manifold."
+      ],
+      "scope_caution": "This proves nongraph only. It does not prove closed hyperbolicity, atoroidality, irreducibility or faithfulness. No use is made of the essential-edge hypothesis in LTY Lemma4.6, nor of Francaviglia Theorem1.3's standing cusped-domain hypotheses. The source import and the actual cover/peripheral/interval computations are separate premises."
+    }
+  ],
+  "known_family_comparisons": [
+    {
+      "family": "Bridge at most3",
+      "status": "excluded",
+      "reason": "Imported bridge4 theorem."
+    },
+    {
+      "family": "Torus knots",
+      "status": "excluded",
+      "reason": "Imported hyperbolic exterior; independently, bridge4 torus knots have genus3(q-1)/2, incompatible with genus7.",
+      "sources": [
+        "RZ87"
+      ]
+    },
+    {
+      "family": "Montesinos, arborescent and the BJW graph-double-cover class",
+      "status": "excluded under the stated actual-cover import",
+      "reason": "Montesinos/arborescent double covers are graph manifolds, whereas the actual double cover is nongraph. BJW18 Corollary1.3 requires graph double cover at bridge4.",
+      "sources": [
+        "BZ85",
+        "BS16",
+        "BJW18"
+      ]
+    },
+    {
+      "family": "Graph-manifold knot exteriors, nontrivial cables and nontrivial satellites",
+      "status": "excluded",
+      "reason": "Imported hyperbolic exterior excludes these geometric output classes. The broader BDJW conditional closure theorem does not automatically classify every possible meridionally tame base.",
+      "sources": [
+        "BDJW17",
+        "SCHULT03",
+        "LMEL85"
+      ]
+    },
+    {
+      "family": "Lustig-Moriah nonunit plat/matrix-gcd criterion at sharp rank4",
+      "status": "excluded for this exact criterion",
+      "reason": "The criterion entails a prime p with dim H1(Sigma2;F_p)>=3 and hence p^3 dividing determinant. But117=3^2*13. This does not exclude every geometric generalized-Montesinos label.",
+      "sources": [
+        "LM93",
+        "MORIAH07"
+      ],
+      "written_local_import": "FISHNET_SCOPE_AUDIT.tex#cor:plat"
+    },
+    {
+      "family": "Arbitrary finite or infinite sharp rank-four Coxeter reflection quotients",
+      "status": "excluded",
+      "reason": "UNIVERSAL_17_REFLECTION_OBSTRUCTION.tex#cor:coxeter; no Gram determinant is inverted."
+    },
+    {
+      "family": "BBK standard twisted links and even-weight bipartite arborescent construction",
+      "status": "excluded for the quotient-producing theorem scopes",
+      "reason": "BBK21 Theorem1 and its Section4 Coxeter labeling supply a rank equal to the bridge number; a bridge4 instance would have the excluded rank4 Coxeter quotient. Theorem2's even nonzero weighted bipartite arborescent construction has the same quotient consequence.",
+      "sources": [
+        "BBK21"
+      ],
+      "not_claimed": "All arbitrary rational replacements of BBK diagrams or a universal geometric-origin exclusion."
+    },
+    {
+      "family": "Fishnets satisfying the proved gcd condition and the quotient-producing other-fishnet constructions",
+      "status": "excluded for these exact theorem scopes",
+      "reason": "BKP26A Proposition1.4 and Sections2.1-2.2 produce a maximal-rank Coxeter quotient; at bridge4 its rank is4. Theorem1.1 augments a link by an additional unknot and does not prove equality for the original knot.",
+      "sources": [
+        "BKP26A"
+      ],
+      "not_claimed": "Exclusion from all loose fishnet diagrams. The determinant Omega<=2 tree obstruction does not apply: Omega(117)=3."
+    },
+    {
+      "family": "Joseph-Pongtanapaisan classical integer p-cycle boxes K_(p,4)",
+      "status": "excluded by an explicitly written Coxeter transport",
+      "reason": "Construction3.5, Definition3.6 and Corollary3.12 use step-p cycles and twist periods d=2p-1. Replace seed cycles by standard Coxeter generators s_i with adjacent order d and all other pairs commuting. For T(a,b)=(aba,a), q=ab gives T^k(a,b)=(q^k a,q^(k-1)a), so T^d fixes the labels. Both allowed orientation rules preserve the boundary labels; every seed remains present, giving an onto rank4 Coxeter quotient. The same argument covers rational tangles assembled from those permitted boxes as in Remark3.11/Figure5.",
+      "sources": [
+        "JP25"
+      ],
+      "attribution": "The Coxeter transport is the present written comparison of their construction, not a theorem claimed to be stated in their paper.",
+      "not_claimed": "An assertion about arbitrary rational tangles."
+    },
+    {
+      "family": "Cornwell symmetric maximal-braid augmentation and Theorem5.4 rank-raising construction",
+      "status": "excluded when the source's symmetric maximal-rank hypothesis holds",
+      "reason": "COR17 Theorem5.4, printed p.20, starts with a rank-n augmentation of an n-braid descending to the symmetric quotient A_n^ab and produces one of rank n+1 with the same property. SYMMETRIC_AUGMENTATION_OBSTRUCTION.tex#lem:transport realizes such data on a FREE n-dimensional space with a possibly singular symmetric Gram form. Thus the independent normal directions do not disappear when the scalar augmentation matrix specializes or drops rank. Since the knot group is generated by four meridians, n<=4; braid index4 forces n>=4, giving the excluded four independent roots.",
+      "sources": [
+        "COR17"
+      ],
+      "not_claimed": "An obstruction to nonsymmetric augmentations, or a generic-rank specialization argument."
+    },
+    {
+      "family": "Positive or negative braid/diagram MRC families",
+      "status": "excluded as geometric presentation classes",
+      "reason": "The homogeneous Rasmussen calculation gives |s|=6<2g=14, so no positive or negative diagram exists.",
+      "sources": [
+        "ABE11"
+      ]
+    }
+  ],
+  "remaining_scope": [
+    "No unrestricted augmentation-rank value or nonsymmetric augmentation obstruction for K_* is asserted here.",
+    "No statement says that every non-Coxeter lower-bound method, conditional meridional-tameness theorem or rational-replacement origin is absent.",
+    "No knot-specific published equality certificate has been identified by this bounded audit, but failure to find one is not a global priority proof.",
+    "The knot is specified by the literal braid, not assigned an unverified named census identity. Its crossing17 proof is independent of a census name.",
+    "Generic augmentation, AJ/representation and ordinary-group-rank approaches require their own actual hypotheses or certificates. The all-Coxeter exclusion cannot be substituted for those checks."
+  ],
+  "internal_pdf_reviews": [
+    {
+      "reviewer": "isolated internal agent /root/new17_family_pdf_review",
+      "reviewed_note_sha256": "7e45979bb567360d4af412c8678a3a5c2b1f58cdc9dea3c1d8e8b7cd1334fe51",
+      "reviewed_pdf_sha256": "93aa0a45e40d6d58f5b6990e692fec6a16dc0ae9224cba164b3fe7fdcebbf97b",
+      "result": "All5renderedpages inspected; independently recomputed Burau Alexander polynomial,17crossings,writhe7,4cycle closure,det117. Genus/crossing deduction,Abe arithmetic,T^k formula,free-space span including singular forms,andcable contradiction internally consistent conditionalonimports. Clarified that opposite-orientation even multiples must be multiples ofd.",
+      "remaining_dependencies": [
+        "Imported knot/reflection/transport proofs and actual filled-cover certificate",
+        "Exact original theorem/family scopes",
+        "Literature completeness or worldwide priority"
+      ],
+      "external_review": false,
+      "formal_verification": false
+    },
+    {
+      "reviewer": "root current-edition correction",
+      "reviewed_note_sha256": "81b5332887252bfbcd29c4e9174bd772007e8d86686a714ead95c69459adf5b2",
+      "reviewed_pdf_sha256": "505ae2508a86033f0038c78ef32bddad50ccdb4f9b6383cdac473b7a5f8092dd",
+      "result": "Wrote even multiples OF d explicitly; corrected COR17 bibliography to KCH representations,augmentations,andA-polynomials,J.SymplecticGeom15(2017),983-1017, matching retained1310.7526v3. No mathematical deduction changed.",
+      "external_review": false,
+      "formal_verification": false
+    }
+  ]
+}

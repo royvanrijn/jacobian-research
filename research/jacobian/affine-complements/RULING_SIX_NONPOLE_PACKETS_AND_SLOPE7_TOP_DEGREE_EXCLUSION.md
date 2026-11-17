@@ -18,8 +18,10 @@ Together with PF182, every remaining D=30 survivor must satisfy
 
 These are necessary constraints. Explicit formal quartics for ALL THREE
 remaining degrees pass the valuation and affine-response tests used here;
-none is asserted to have an actual Keller mate. The remaining critical
-class, HC4 and JC2 stay open.
+none is asserted to have an actual Keller mate. The subsequent [two-moment theorem](RULING_SIX_TWO_MOMENT_RESONANCE_AND_DEGREE30_CUBIC_REDUCTION.md)
+excludes degrees six and seven. Its remaining degree-eight class has
+companion ruling degree twenty-seven by the further prefix theorem;
+that class, HC4 and JC2 stay open.
 
 ## 1. A nonpole packet contains at least two geometric sheets
 
@@ -275,7 +277,10 @@ a full-companion resonance solution, an exact rational primitive
 for the entire coframe, or a constructed Keller map. They show that
 all THREE remaining degrees require additional global or coefficient
 constraints, rather than a continuation of just the tests used here.
-The degree-six, seven and eight critical cases remain open.
+The additional full-resonance theorem PF184 excludes degrees six and
+seven. Degree eight remains open, with companion ruling degree
+twenty-seven forced by PF185. These controls remain guards for the
+strictly weaker local tests verified here.
 
 ## 6. Exact controls and proof boundary
 

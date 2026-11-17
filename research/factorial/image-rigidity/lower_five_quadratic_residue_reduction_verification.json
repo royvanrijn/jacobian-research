@@ -1,0 +1,30 @@
+{
+  "passed": true,
+  "checks": 652,
+  "scope": "Written14/16 residue theorem, uniform11mod32 obstruction and global all-index gcd degree0or2; finite exact controls support written proofs",
+  "remaining_lower_index_classes": "n11,13mod16",
+  "remaining_terminal_classes": "N12,14mod16",
+  "all_index_support_five_seven_sfc": false,
+  "n11mod32_gcd_degree_zero_or_two": true,
+  "global_all_index_gcd_degree_zero_or_two": true,
+  "global_nonconstant_gcd": "irreducible quadratic of negative discriminant",
+  "global_odd_component_residual_order": 2,
+  "global_root_count_proof": "written synthetic division preserving integrality; no Gauss theorem import",
+  "control_sections": {
+    "prior": 580,
+    "global": 72
+  },
+  "quadratic_bound_uses_written_squarefreeness_input": true,
+  "command": "python research/factorial/image-rigidity/lower_five_quadratic_residue_reduction.py",
+  "sympy_version": "1.14.0",
+  "no_moment_gcd_prefix_extrapolation": true,
+  "source_sha256": {
+    "LOWER_FIVE_QUADRATIC_RESIDUE_REDUCTION.tex": "343cd52be51b99fe8a47d5ff2cf493abe1e5503e47da466cf44480808981e5aa",
+    "lower_five_quadratic_residue_reduction.py": "92c4b62896a075b8b98bb62d6383d8dc5755e4d8cfab1d7f70f6c01f495fdd4d",
+    "LOWER_TWO_PRIME_GAP_SFC.tex": "8453b5b0ccd220573ef106fa26790e1f691885970b8c2116f036ed893ab2c200",
+    "CUBIC_ADJOINT_STABILITY_SFC.tex": "ea2510e511545b9dd7a49a0796d75c45575687e60770c3359d38c5bc99cb4125"
+  },
+  "independent_replay": false,
+  "formal_verification": false,
+  "external_review": false
+}

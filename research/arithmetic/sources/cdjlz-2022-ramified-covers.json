@@ -1,0 +1,30 @@
+{
+  "title": "On the distribution of rational points on ramified covers of abelian varieties",
+  "authors": "Pietro Corvaja, Julian Lawrence Demeio, Ariyan Javanpeykar, Davide Lombardo, Umberto Zannier",
+  "version": "Published version, Compositio Mathematica 158 (2022), 2109–2155; DOI 10.1112/S0010437X22007746",
+  "primary_url": "https://www.cambridge.org/core/services/aop-cambridge-core/content/view/775198D2DDCD37DC7E16DF3406EA70CB/S0010437X22007746a.pdf/on_the_distribution_of_rational_points_on_ramified_covers_of_abelian_varieties.pdf",
+  "retained_pdf": "cdjlz-2022-ramified-covers.pdf",
+  "sha256": "4d75d0254114d64bfce3806c4b5616a698d130da431f506b582691a808838f7b",
+  "bytes": 913863,
+  "pdf_pages": 48,
+  "accessed_utc_date": "2026-11-17",
+  "direct_read": true,
+  "used_locators": [
+    {
+      "locator": "Section 6.2, equation (13)",
+      "printed_pages": "2142–2143",
+      "pdf_pages": "35–36",
+      "scope": "Definition of the division and torsion fields and the Kummer kernel N_m."
+    },
+    {
+      "locator": "Theorem 6.9 and Remark 6.10",
+      "printed_pages": "2144–2145",
+      "pdf_pages": "37–38",
+      "scope": "Uniform bound on [A[m]:N_m] for an arbitrary nondegenerate point on an abelian variety over a number field; no indivisibility assumption is required."
+    }
+  ],
+  "role": "External theorem interface; not claimed to be reproved by finite checks.",
+  "rendered_pages_visually_inspected": [
+    37
+  ]
+}

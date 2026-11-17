@@ -167,7 +167,7 @@
   "python": "3.12.3",
   "arithmetic": "standard-library exact integers and fractions",
   "input_sha256": {
-    "ELLIPTIC_EXCEPTION_COMPLETE_THREE_ADIC_CLASSIFICATION.md": "7c9a1dd210a7b6a1f94986c62a819809bdce8c465a86b55d5364d32be386bddf",
+    "ELLIPTIC_EXCEPTION_COMPLETE_THREE_ADIC_CLASSIFICATION.md": "16d07f196cdaa02dc6ff64624d423ef521399ed75a26f8f7c8dbd283624990ff",
     "verify_elliptic_exception_complete_three_adic_classification.py": "91b0d93912f9d866a3ae3a88cc8744ccb0bbb6246b45946760d649a173217498"
   }
 }

@@ -12,8 +12,12 @@ and its compulsory critical quartic has
     ord_v q=10, ord_v J>=7, ord_v Delta=14.              (1)
 
 The original generic map degree in this conditional D=30 class is
-sixteen. This does NOT exclude that remaining cubic-balance class,
-all of D=30, or full ruling six.
+sixteen. This two-moment theorem alone leaves the cubic-balance class.
+The subsequent
+[companion-prefix theorem](RULING_SIX_CUBIC_BALANCE_COMPANION_DEGREE_TWENTY_SEVEN.md)
+forces its reduced actual companion to have ruling degree twenty-seven;
+the [adapted cubic moment theorem](RULING_SIX_ADAPTED_CUBIC_MOMENT_AND_DEGREE30_EXCLUSION.md)
+then excludes the entire D=30 class. Full ruling six remains open.
 
 The new ingredient is the FULL constant companion resonance in two
 coefficient residues. Triple/simple, two-double, and even-quartic

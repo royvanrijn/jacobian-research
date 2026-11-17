@@ -972,6 +972,692 @@
       "external_review": false,
       "novelty_claim": false,
       "priority_claim": false
+    },
+    "ordinary_degree_six_family_completion": {
+      "scope": "Current completion: all-order supports{2,6},{3,6},{4,6} and the exact prior classification prove ordinary univariate binomial SFC through degree six. Earlier degree-five and degree-six-frontier sources, checker flags and proof scopes remain unchanged. The next exact frontier is supports{1,7},{3,7},{4,7},{5,7} at every terminalN>=6; those four unrestricted families remain open. All-degree binomial SFC, general FC/SFC, H3 positivity and stronger optional method statements remain open.",
+      "packages": {
+        "LOWER_TWO_PRIME_GAP_SFC": {
+          "canonical_source": "factorial/image-rigidity/LOWER_TWO_PRIME_GAP_SFC.tex",
+          "checker": "factorial/image-rigidity/lower_two_prime_gap_sfc.py",
+          "receipt": "factorial/image-rigidity/lower_two_prime_gap_sfc_verification.json",
+          "scope": "Exact offset-two mixed-rank equivalence at every d>=2,n>=1,gamma>0. Every prime-gap X^2(A+B X^p) satisfies SFC at positive real algebraic Gamma shapes admitting a p-adic integral embedding, including ordinary shape1. No every-real-shape or every-gap closure.",
+          "declarations": {
+            "thm:mixed": "FACT-LOWER-TWO-PRIME-GAP-SFC-THM-MIXED",
+            "lem:univalent": "FACT-LOWER-TWO-PRIME-GAP-SFC-LEM-UNIVALENT",
+            "thm:prime": "FACT-LOWER-TWO-PRIME-GAP-SFC-THM-PRIME"
+          },
+          "mathematical_dependencies": {
+            "thm:mixed": [
+              "FACT-HIGHER-GAP-ADJOINT-RANK-THM-AUX",
+              "FACT-HIGHER-GAP-ADJOINT-RANK-THM-RANK",
+              "FACT-HIGHER-GAP-ADJOINT-ZERO-CONCOMITANT-RANK"
+            ],
+            "lem:univalent": [],
+            "thm:prime": [
+              "FACT-LOWER-TWO-PRIME-GAP-SFC-THM-MIXED",
+              "FACT-LOWER-TWO-PRIME-GAP-SFC-LEM-UNIVALENT"
+            ]
+          },
+          "replay_controls": 1173
+        },
+        "LOWER_TWO_FOURTH_POWER_GAP_SFC": {
+          "canonical_source": "factorial/image-rigidity/LOWER_TWO_FOURTH_POWER_GAP_SFC.tex",
+          "checker": "factorial/image-rigidity/lower_two_fourth_power_gap_sfc.py",
+          "receipt": "factorial/image-rigidity/lower_two_fourth_power_gap_sfc_verification.json",
+          "scope": "In the exact closed AR stage class, primitive degbarP<=p^s-1 and v(P0)>b_s-s imply noncollision on v(u)>=b_s; the strict bound is sharp. Ordinary lower-two prime-power pairs are coprime under v_p(n)>b_s-2s,v_p(kappa)>-s. Every ordinary support{2,6} pair is separated. Other prime-power all-index closure is not asserted.",
+          "declarations": {
+            "thm:boundary": "FACT-LOWER-TWO-FOURTH-POWER-GAP-SFC-THM-BOUNDARY",
+            "prop:sharpness": "FACT-LOWER-TWO-FOURTH-POWER-GAP-SFC-PROP-SHARPNESS",
+            "cor:prime-power-index": "FACT-LOWER-TWO-FOURTH-POWER-GAP-SFC-COR-PRIME-POWER-INDEX",
+            "thm:fourth-gap": "FACT-LOWER-TWO-FOURTH-POWER-GAP-SFC-THM-FOURTH-GAP"
+          },
+          "mathematical_dependencies": {
+            "thm:boundary": [
+              "FACT-ARITHMETIC-FRONTIER-TERMINAL-ORDERS-LEM-ARTIN-HASSE-CLOSURE"
+            ],
+            "prop:sharpness": [
+              "FACT-LOWER-TWO-FOURTH-POWER-GAP-SFC-THM-BOUNDARY"
+            ],
+            "cor:prime-power-index": [
+              "FACT-LOWER-TWO-FOURTH-POWER-GAP-SFC-THM-BOUNDARY",
+              "FACT-LOWER-TWO-PRIME-GAP-SFC-THM-MIXED"
+            ],
+            "thm:fourth-gap": [
+              "FACT-LOWER-TWO-FOURTH-POWER-GAP-SFC-COR-PRIME-POWER-INDEX"
+            ]
+          },
+          "replay_controls": {
+            "boundary_saturated_Hasse_derivatives": 32,
+            "complete_small_scalar_unit_basis_cases": 12,
+            "exact_stage_constant_transfer_controls": 4,
+            "actual_fractional_coefficient_normalizations": 4,
+            "over_normalization_rejected": 4,
+            "whole_operator_sharpness_controls": 7,
+            "corrupted_sharpness_control_rejected": 1,
+            "literal_relation_polynomials_and_cyclic_transfer_controls": 5,
+            "literal_Gamma_root_bound_coefficients": 20,
+            "outside_prime_power_index_condition_control": 1
+          }
+        },
+        "LOWER_FOUR_QUADRATIC_GAP_SFC": {
+          "canonical_source": "factorial/image-rigidity/LOWER_FOUR_QUADRATIC_GAP_SFC.tex",
+          "checker": "factorial/image-rigidity/lower_four_quadratic_gap_sfc.py",
+          "receipt": "factorial/image-rigidity/lower_four_quadratic_gap_sfc_verification.json",
+          "scope": "Exact shift-four transformed adjoint under its stated positive-Gamma and gamma>=n-2 assumptions. At the actual ordinary gamma4n+1, dyadic balance and an odd scalar component exclude a common rational factor. Every ordinary X^4(A+B X^2) satisfies SFC at all positive pairs. No unrestricted real-shape extension.",
+          "declarations": {
+            "lem:offset-four-transform": "FACT-LOWER-FOUR-QUADRATIC-GAP-SFC-LEM-OFFSET-FOUR-TRANSFORM",
+            "lem:dyadic-balance": "FACT-LOWER-FOUR-QUADRATIC-GAP-SFC-LEM-DYADIC-BALANCE",
+            "lem:odd-scalar-minor": "FACT-LOWER-FOUR-QUADRATIC-GAP-SFC-LEM-ODD-SCALAR-MINOR",
+            "thm:ordinary-lower-four-gap-two": "FACT-LOWER-FOUR-QUADRATIC-GAP-SFC-THM-ORDINARY-LOWER-FOUR-GAP-TWO",
+            "cor:ordinary-support-four-six": "FACT-LOWER-FOUR-QUADRATIC-GAP-SFC-COR-ORDINARY-SUPPORT-FOUR-SIX"
+          },
+          "mathematical_dependencies": {
+            "lem:offset-four-transform": [
+              "FACT-CUBIC-ADJOINT-STABILITY-SFC-THM-SIMPLE",
+              "FACT-CUBIC-ADJOINT-ZERO-CONCOMITANTS"
+            ],
+            "lem:dyadic-balance": [
+              "FACT-LOWER-FOUR-QUADRATIC-GAP-SFC-LEM-OFFSET-FOUR-TRANSFORM"
+            ],
+            "lem:odd-scalar-minor": [
+              "FACT-LOWER-FOUR-QUADRATIC-GAP-SFC-LEM-OFFSET-FOUR-TRANSFORM",
+              "FACT-LOWER-FOUR-QUADRATIC-GAP-SFC-LEM-DYADIC-BALANCE"
+            ],
+            "thm:ordinary-lower-four-gap-two": [
+              "FACT-LOWER-FOUR-QUADRATIC-GAP-SFC-LEM-DYADIC-BALANCE",
+              "FACT-LOWER-FOUR-QUADRATIC-GAP-SFC-LEM-ODD-SCALAR-MINOR"
+            ],
+            "cor:ordinary-support-four-six": [
+              "FACT-LOWER-FOUR-QUADRATIC-GAP-SFC-THM-ORDINARY-LOWER-FOUR-GAP-TWO"
+            ]
+          },
+          "replay_controls": {
+            "generic_full_Ore_remainder_coefficients": 3,
+            "generic_stripped_gauge_coefficients": 4,
+            "corrupted_generic_coefficient_rejections": 1,
+            "literal_shape_shift_coefficients": 60,
+            "literal_shape_shift_identities": 6,
+            "literal_cubic_ODE_identities": 6,
+            "complete_reduced_idempotent_entries": 4,
+            "complete_cyclic_basis_determinants": 1,
+            "complete_positive_power_seed_vectors": 2,
+            "symbolic_valuation_difference_identities": 6,
+            "literal_parameter_valuation_identities": 50,
+            "full_literal_odd_scalar_polynomials": 10,
+            "literal_scalar_coefficients_checked": 171,
+            "corrupted_scalar_coefficient_rejections": 2
+          }
+        },
+        "DIAGONAL_PRIME_GAP_SFC": {
+          "canonical_source": "factorial/image-rigidity/DIAGONAL_PRIME_GAP_SFC.tex",
+          "checker": "factorial/image-rigidity/diagonal_prime_gap_sfc.py",
+          "receipt": "factorial/image-rigidity/diagonal_prime_gap_sfc_verification.json",
+          "scope": "Exact mixed-rank criterion for all d>=2,n>=1,gamma>0,1<=h<=d. Every ordinary X^p(A+B X^p),p prime, satisfies SFC at every positive pair. Ordinary support{3,6} follows; its all-positive-gamma offset-three matrix criterion is explicit. No all-real-Gamma diagonal SFC claim.",
+          "declarations": {
+            "thm:offset-rank": "FACT-DIAGONAL-PRIME-GAP-SFC-THM-OFFSET-RANK",
+            "thm:diagonal-prime": "FACT-DIAGONAL-PRIME-GAP-SFC-THM-DIAGONAL-PRIME",
+            "cor:cubic-support": "FACT-DIAGONAL-PRIME-GAP-SFC-COR-CUBIC-SUPPORT"
+          },
+          "mathematical_dependencies": {
+            "thm:offset-rank": [
+              "FACT-LOWER-TWO-PRIME-GAP-SFC-THM-MIXED"
+            ],
+            "thm:diagonal-prime": [
+              "FACT-DIAGONAL-PRIME-GAP-SFC-THM-OFFSET-RANK",
+              "FACT-LOWER-TWO-PRIME-GAP-SFC-THM-PRIME"
+            ],
+            "cor:cubic-support": [
+              "FACT-DIAGONAL-PRIME-GAP-SFC-THM-OFFSET-RANK",
+              "FACT-DIAGONAL-PRIME-GAP-SFC-THM-DIAGONAL-PRIME"
+            ]
+          },
+          "replay_controls": 225
+        },
+        "ORDINARY_DEGREE_SIX_BINOMIAL_SFC": {
+          "canonical_source": "factorial/image-rigidity/ORDINARY_DEGREE_SIX_BINOMIAL_SFC.tex",
+          "checker": null,
+          "receipt": null,
+          "scope": "Every ordinary complex univariate binomial of degree<=6 satisfies SFC at every positive pair. Degree<=7 is equivalent to supports{1,7},{3,7},{4,7},{5,7}, or(a,d)=(1,6),(3,4),(4,3),(5,2), at every terminalN>=6. Those four unrestricted families remain open. No all-degree binomial or general FC/SFC closure.",
+          "declarations": {
+            "thm:degree-six": "FACT-ORDINARY-DEGREE-SIX-BINOMIAL-SFC-THM-DEGREE-SIX",
+            "cor:degree-seven-frontier": "FACT-ORDINARY-DEGREE-SIX-BINOMIAL-SFC-COR-DEGREE-SEVEN-FRONTIER"
+          },
+          "mathematical_dependencies": {
+            "thm:degree-six": [
+              "FACT-QUINTIC-SCALAR-MINOR-SFC-COR-DEGREE-SIX-FRONTIER",
+              "FACT-LOWER-TWO-FOURTH-POWER-GAP-SFC-THM-FOURTH-GAP",
+              "FACT-DIAGONAL-PRIME-GAP-SFC-THM-DIAGONAL-PRIME",
+              "FACT-LOWER-FOUR-QUADRATIC-GAP-SFC-COR-ORDINARY-SUPPORT-FOUR-SIX"
+            ],
+            "cor:degree-seven-frontier": [
+              "FACT-ORDINARY-DEGREE-SIX-BINOMIAL-SFC-THM-DEGREE-SIX",
+              "FACT-ALL-UNIVARIATE-TWO-TERM-SFC-THM-ALL",
+              "FACT-LOWER-TWO-PRIME-GAP-SFC-THM-PRIME",
+              "FACT-UNIFORM-PADE-PARABOLA-SFC-THM-MAIN",
+              "FACT-LOWER-EXPONENT-INITIAL-AND-BOUNDARY-THM-ORDINARY-FIFTH"
+            ]
+          },
+          "replay_controls": null
+        }
+      },
+      "owned_source_sha256": {
+        "factorial/image-rigidity/LOWER_TWO_PRIME_GAP_SFC.tex": "8453b5b0ccd220573ef106fa26790e1f691885970b8c2116f036ed893ab2c200",
+        "factorial/image-rigidity/lower_two_prime_gap_sfc.py": "25f6a2d6257b8d6dfa7a4cdddc06b1144cfc3a656ad5f5d86ce3e23fb19c3ba2",
+        "factorial/image-rigidity/lower_two_prime_gap_sfc_verification.json": "eea9a5b07f23df7fb99f2e49b9b75ddc7a0aefe03dbacbbb981fa65475598ed8",
+        "factorial/image-rigidity/LOWER_TWO_FOURTH_POWER_GAP_SFC.tex": "e238569c21a0ccc7fb507d910608a734461fefaab4d96d5df0124afe73407631",
+        "factorial/image-rigidity/lower_two_fourth_power_gap_sfc.py": "46e0c91d92ccc172505f8e835a62f29f5f21a8c672c8bdbb2cc915b6341cd15a",
+        "factorial/image-rigidity/lower_two_fourth_power_gap_sfc_verification.json": "5836d91655f6f0bab779a98a05d8ce4a0269406b5734f48164f141db4e5c71cf",
+        "factorial/image-rigidity/LOWER_FOUR_QUADRATIC_GAP_SFC.tex": "ea2c5885f6f03a06ca2aa12840eddb191c128c20848ca8cf83d472268b89aca4",
+        "factorial/image-rigidity/lower_four_quadratic_gap_sfc.py": "93ef37f9964497f87ef46e842977a735837a4e57c9b3886d646741f098177b8d",
+        "factorial/image-rigidity/lower_four_quadratic_gap_sfc_verification.json": "6eefcb1ef1dfdb418f0a6717bd9c5f689bf393ff3fa1d12ec1bbec2e2e5601b3",
+        "factorial/image-rigidity/DIAGONAL_PRIME_GAP_SFC.tex": "db034b5fb29ece9c3a0cb8cbce4c82f692b933e3679b27ee823db5ca5e7f98eb",
+        "factorial/image-rigidity/diagonal_prime_gap_sfc.py": "ca51c81cfb99e4e45ba3b9ed16785c8936e015f5f50da01cc8120686a7135294",
+        "factorial/image-rigidity/diagonal_prime_gap_sfc_verification.json": "00b944c0a9e3165d5d0b70cd1467ba913215a6bbf4f19939956aae16e44a2954",
+        "factorial/image-rigidity/ORDINARY_DEGREE_SIX_BINOMIAL_SFC.tex": "8a1a5286aa261683add53a0c29780476654de16f1eafd84096b6eb702348447a"
+      },
+      "indispensable_input_sha256": {
+        "factorial/image-rigidity/HIGHER_GAP_ADJOINT_RANK.tex": "ec19415938c9b0b92e7d365fb4a4c66b701fdf36d73883b68f7cfb2971d7ec28",
+        "factorial/image-rigidity/CUBIC_ADJOINT_STABILITY_SFC.tex": "ea2510e511545b9dd7a49a0796d75c45575687e60770c3359d38c5bc99cb4125",
+        "factorial/image-rigidity/ARITHMETIC_FRONTIER_TERMINAL_ORDERS.tex": "9721978bcb795af9169c695c5fb8348974069c5148e5e0caa8bd3c4d65650e07",
+        "factorial/image-rigidity/QUINTIC_SCALAR_MINOR_SFC.tex": "206853fd9aa54f4cfc04ef959135e879e40e914394f88d48e3e4af127b2d4150",
+        "factorial/image-rigidity/lower_exponent_initial_and_boundary.tex": "e66e02d0354de5cd92d33eef54efea15c387b9f6a0c1b62ed379295e13f07d45",
+        "factorial/image-rigidity/ALL_UNIVARIATE_TWO_TERM_SFC.tex": "112d995972906353784af4f9ceb2b03eb7e71ce3e7bd52adc5a44c6869aeadc0",
+        "factorial/image-rigidity/UNIFORM_PADE_PARABOLA_SFC.tex": "ddb8155dcce6308db9d7fdcbc971898b9725e9ac23c83362d6c45a63f4177cc5"
+      },
+      "completed_objectives": [
+        "FACTORIAL-ORDINARY-DEGREE-SIX-SFC",
+        "GAP-ORDINARY-DEGREE-SIX-THREE-SUPPORT-FAMILIES"
+      ],
+      "open_next_goal": "FACTORIAL-ORDINARY-DEGREE-SEVEN-SFC",
+      "open_next_collective_gap": "GAP-ORDINARY-DEGREE-SEVEN-FOUR-SUPPORT-FAMILIES",
+      "degree_seven_pairs": [
+        [
+          1,
+          6
+        ],
+        [
+          3,
+          4
+        ],
+        [
+          4,
+          3
+        ],
+        [
+          5,
+          2
+        ]
+      ],
+      "terminal_cutoff": 6,
+      "ordinary_binomial_degree_at_most_six_SFC": true,
+      "degree_seven_equivalence_only": true,
+      "degree_seven_four_families_proved": false,
+      "all_ordinary_binomial_SFC": false,
+      "general_FC_or_SFC": false,
+      "uniform_H3_TN": false,
+      "uniform_E_n_emptiness": false,
+      "independent_replay": false,
+      "formal_verification": false,
+      "external_review": false,
+      "novelty_claim": false,
+      "priority_claim": false,
+      "assessment": "Written proofs and exact applications were audited internally within their stated domains. Current internal receipts and clean two-pass builds were inspected. Universal claims rely on written algebraic, valuation and descent proofs, not finite controls. No independent whole-proof replay, formal verification, external review, priority or novelty claim. Dependency coverage remains partial."
+    },
+    "ordinary_degree_seven_residue_frontier": {
+      "scope": "Ordinary binomial SFC through degree six is complete. Support {4,7} is proved at every positive pair. The exact degree-seven residual tests, all with terminal N>=6, are support {1,7} at all N; support {3,7} only N14,46,55 mod64; support {5,7} only N12,14 mod16. For {5,7}, every nonconstant rational gcd is an irreducible quadratic of negative discriminant. These residual tests, all-degree binomial SFC, unrestricted FC/SFC, full H3 positivity and stronger optional method gaps remain open.",
+      "packages": {
+        "LOWER_THREE_FOURTH_POWER_RESIDUE_REDUCTION": {
+          "canonical_source": "factorial/image-rigidity/LOWER_THREE_FOURTH_POWER_RESIDUE_REDUCTION.tex",
+          "checker": "factorial/image-rigidity/lower_three_fourth_power_residue_reduction.py",
+          "receipt": "factorial/image-rigidity/lower_three_fourth_power_residue_reduction_verification.json",
+          "scope": "Exact actual offset-three, gap-four mixed matrix. In the stated second-stage class, a boundary-degree collision requires v(Q0)=1 and rigid reduction; quantitative unit-basis estimates force the actual relation coefficient a2 into2O. Ordinary support {3,7} is coprime at every terminal outside N14,46,55 mod64. All three residual progressions and arbitrary positive Gamma shapes are not closed.",
+          "declarations": {
+            "lem:mixed-matrix": "FACT-LOWER-THREE-FOURTH-POWER-RESIDUE-REDUCTION-LEM-MIXED-MATRIX",
+            "thm:fourteen-sixteenths": "FACT-LOWER-THREE-FOURTH-POWER-RESIDUE-REDUCTION-THM-FOURTEEN-SIXTEENTHS",
+            "cor:fifteen-sixteenths": "FACT-LOWER-THREE-FOURTH-POWER-RESIDUE-REDUCTION-COR-FIFTEEN-SIXTEENTHS",
+            "lem:stage-two-necessity": "FACT-LOWER-THREE-FOURTH-POWER-RESIDUE-REDUCTION-LEM-STAGE-TWO-NECESSITY",
+            "lem:quantitative-coefficients": "FACT-LOWER-THREE-FOURTH-POWER-RESIDUE-REDUCTION-LEM-QUANTITATIVE-COEFFICIENTS",
+            "cor:sixty-one-sixty-four": "FACT-LOWER-THREE-FOURTH-POWER-RESIDUE-REDUCTION-COR-SIXTY-ONE-SIXTY-FOUR"
+          },
+          "mathematical_dependencies": {
+            "lem:mixed-matrix": [
+              "FACT-DIAGONAL-PRIME-GAP-SFC-THM-OFFSET-RANK"
+            ],
+            "thm:fourteen-sixteenths": [
+              "FACT-LOWER-THREE-FOURTH-POWER-RESIDUE-REDUCTION-LEM-MIXED-MATRIX",
+              "FACT-LOWER-TWO-FOURTH-POWER-GAP-SFC-THM-BOUNDARY"
+            ],
+            "cor:fifteen-sixteenths": [
+              "FACT-LOWER-THREE-FOURTH-POWER-RESIDUE-REDUCTION-THM-FOURTEEN-SIXTEENTHS"
+            ],
+            "lem:stage-two-necessity": [
+              "FACT-ARITHMETIC-FRONTIER-TERMINAL-ORDERS-LEM-ARTIN-HASSE-CLOSURE",
+              "FACT-LOWER-TWO-FOURTH-POWER-GAP-SFC-THM-BOUNDARY"
+            ],
+            "lem:quantitative-coefficients": [
+              "FACT-LOWER-THREE-FOURTH-POWER-RESIDUE-REDUCTION-LEM-MIXED-MATRIX",
+              "FACT-LOWER-THREE-FOURTH-POWER-RESIDUE-REDUCTION-LEM-STAGE-TWO-NECESSITY",
+              "FACT-ARITHMETIC-FRONTIER-TERMINAL-ORDERS-LEM-FROBENIUS-NONCOLLISION"
+            ],
+            "cor:sixty-one-sixty-four": [
+              "FACT-LOWER-THREE-FOURTH-POWER-RESIDUE-REDUCTION-COR-FIFTEEN-SIXTEENTHS",
+              "FACT-LOWER-THREE-FOURTH-POWER-RESIDUE-REDUCTION-LEM-QUANTITATIVE-COEFFICIENTS"
+            ]
+          },
+          "replay_controls": {
+            "generic_rising_quotient_identities": 1,
+            "generic_cyclic_column_coefficients": 12,
+            "corrupted_column_coefficient_rejections": 1,
+            "generic_ordinary_kappa_cancellations": 1,
+            "generic_reduced_monic_basis_identities": 3,
+            "generic_value_congruences_mod4": 3,
+            "generic_constant_factor_divisibilities": 3,
+            "generic_derivative_congruences_mod2": 3,
+            "corrupted_derivative_congruence_rejections": 1,
+            "literal_auxiliary_triangular_identities": 20,
+            "literal_full_cyclic_entries": 120,
+            "complete_prime_stage_idempotent_cases": 2,
+            "complete_prime_stage_constant_and_linear_cases": 4,
+            "complete_residue_states": 112,
+            "direct_integer_vs_Legendre_coefficient_valuations": 2080,
+            "literal_base_radius_coefficients": 2080,
+            "literal_interval_2_4_8_bounds": 2016,
+            "literal_strict_radius_coefficients": 1204,
+            "outside_strict_radius_hypothesis_controls": 1
+          }
+        },
+        "LOWER_FIVE_QUADRATIC_RESIDUE_REDUCTION": {
+          "canonical_source": "factorial/image-rigidity/LOWER_FIVE_QUADRATIC_RESIDUE_REDUCTION.tex",
+          "checker": "factorial/image-rigidity/lower_five_quadratic_residue_reduction.py",
+          "receipt": "factorial/image-rigidity/lower_five_quadratic_residue_reduction_verification.json",
+          "scope": "Exact shift-five adjoint. Ordinary support {5,7} is coprime outside terminal N12,14 mod16. On lower n11 mod32, a normalized two-row residual is the irreducible quadratic1+X+X². At EVERY lower n>=1 the rational gcd is constant or an irreducible quadratic of negative discriminant; the global odd-index disk count uses synthetic division and the written squarefreeness theorem. Excluding those possible quadratic factors remains open; no all-index {5,7} SFC is asserted.",
+          "declarations": {
+            "lem:shift": "FACT-LOWER-FIVE-QUADRATIC-RESIDUE-REDUCTION-LEM-SHIFT",
+            "thm:residues": "FACT-LOWER-FIVE-QUADRATIC-RESIDUE-REDUCTION-THM-RESIDUES",
+            "prop:quadratic-obstruction": "FACT-LOWER-FIVE-QUADRATIC-RESIDUE-REDUCTION-PROP-QUADRATIC-OBSTRUCTION",
+            "thm:global-quadratic-bound": "FACT-LOWER-FIVE-QUADRATIC-RESIDUE-REDUCTION-THM-GLOBAL-QUADRATIC-BOUND"
+          },
+          "mathematical_dependencies": {
+            "lem:shift": [
+              "FACT-LOWER-TWO-PRIME-GAP-SFC-THM-MIXED"
+            ],
+            "thm:residues": [
+              "FACT-LOWER-FIVE-QUADRATIC-RESIDUE-REDUCTION-LEM-SHIFT"
+            ],
+            "prop:quadratic-obstruction": [
+              "FACT-LOWER-FIVE-QUADRATIC-RESIDUE-REDUCTION-LEM-SHIFT",
+              "FACT-LOWER-FIVE-QUADRATIC-RESIDUE-REDUCTION-THM-RESIDUES",
+              "FACT-CUBIC-ADJOINT-STABILITY-SFC-THM-SIMPLE"
+            ],
+            "thm:global-quadratic-bound": [
+              "FACT-LOWER-FIVE-QUADRATIC-RESIDUE-REDUCTION-LEM-SHIFT",
+              "FACT-LOWER-FIVE-QUADRATIC-RESIDUE-REDUCTION-THM-RESIDUES",
+              "FACT-CUBIC-ADJOINT-STABILITY-SFC-THM-SIMPLE"
+            ]
+          },
+          "replay_controls": 652
+        },
+        "PRIME_PLUS_ONE_EXPONENT_GAP_SFC": {
+          "canonical_source": "factorial/image-rigidity/PRIME_PLUS_ONE_EXPONENT_GAP_SFC.tex",
+          "checker": "factorial/image-rigidity/prime_plus_one_exponent_gap_sfc.py",
+          "receipt": "factorial/image-rigidity/prime_plus_one_exponent_gap_sfc_verification.json",
+          "scope": "Exact all-offset upper identity and native-prime rising-jet derivative kernel. The pointwise criterion covers1<=h<=p+1 under its Hasse-derivative/unit condition. Every X^(p+1)(A+B X^p), p prime, has SFC at positive real algebraic Gamma shapes integral at one p-place. Lower exponent four is also covered at odd prime gaps p!=11 on that domain, and at ordinary p2 by the earlier theorem. In particular ordinary support {4,7} is complete. No all-real-shape or arbitrary-support assertion.",
+          "declarations": {
+            "lem:upper": "FACT-PRIME-PLUS-ONE-EXPONENT-GAP-SFC-LEM-UPPER",
+            "lem:kernel": "FACT-PRIME-PLUS-ONE-EXPONENT-GAP-SFC-LEM-KERNEL",
+            "thm:criterion": "FACT-PRIME-PLUS-ONE-EXPONENT-GAP-SFC-THM-CRITERION",
+            "thm:family": "FACT-PRIME-PLUS-ONE-EXPONENT-GAP-SFC-THM-FAMILY",
+            "cor:lower-four-prime": "FACT-PRIME-PLUS-ONE-EXPONENT-GAP-SFC-COR-LOWER-FOUR-PRIME",
+            "cor:four-seven": "FACT-PRIME-PLUS-ONE-EXPONENT-GAP-SFC-COR-FOUR-SEVEN",
+            "lem:cubic-offset-four": "FACT-PRIME-PLUS-ONE-EXPONENT-GAP-SFC-LEM-CUBIC-OFFSET-FOUR"
+          },
+          "mathematical_dependencies": {
+            "lem:upper": [
+              "FACT-DIAGONAL-PRIME-GAP-SFC-THM-OFFSET-RANK"
+            ],
+            "lem:kernel": [
+              "FACT-LOWER-TWO-PRIME-GAP-SFC-THM-MIXED"
+            ],
+            "thm:criterion": [
+              "FACT-PRIME-PLUS-ONE-EXPONENT-GAP-SFC-LEM-UPPER",
+              "FACT-PRIME-PLUS-ONE-EXPONENT-GAP-SFC-LEM-KERNEL",
+              "FACT-LOWER-TWO-PRIME-GAP-SFC-THM-MIXED"
+            ],
+            "thm:family": [
+              "FACT-PRIME-PLUS-ONE-EXPONENT-GAP-SFC-THM-CRITERION",
+              "FACT-LOWER-EXPONENT-INITIAL-AND-BOUNDARY-COR-GAP-TWO-LOWER-TWO-THREE"
+            ],
+            "cor:lower-four-prime": [
+              "FACT-PRIME-PLUS-ONE-EXPONENT-GAP-SFC-THM-CRITERION",
+              "FACT-LOWER-FOUR-QUADRATIC-GAP-SFC-COR-ORDINARY-SUPPORT-FOUR-SIX"
+            ],
+            "cor:four-seven": [
+              "FACT-PRIME-PLUS-ONE-EXPONENT-GAP-SFC-THM-FAMILY"
+            ],
+            "lem:cubic-offset-four": [
+              "FACT-PRIME-PLUS-ONE-EXPONENT-GAP-SFC-LEM-UPPER",
+              "FACT-LOWER-TWO-PRIME-GAP-SFC-THM-MIXED"
+            ]
+          },
+          "replay_controls": {
+            "symbolic_d3_h4_Ore_remainder_coefficients": 4,
+            "symbolic_fulljet_cubic_elimination_identity": 1,
+            "formal_gamma_kernel_polynomial_identities": 35,
+            "formal_gamma_odd_prime_plus_one_Hasse_identities": 5,
+            "binary_Hasse_not_ordinary_second_derivative_control": 1,
+            "complete_sample_prime_residue_positive_power_kernel_states": 70,
+            "augmented_affine_minor_coefficient_identities": 486,
+            "full_literal_augmented_minors": 6,
+            "corrupted_linear_coefficient_rejected": 1,
+            "actual_ramified_minor_controls": 3,
+            "exact_lower_four_Hasse_root_values": 4
+          }
+        },
+        "ORDINARY_DEGREE_SEVEN_RESIDUE_FRONTIER": {
+          "canonical_source": "factorial/image-rigidity/ORDINARY_DEGREE_SEVEN_RESIDUE_FRONTIER.tex",
+          "checker": null,
+          "receipt": null,
+          "scope": "Ordinary binomial SFC through degree seven is equivalent to exactly three residual test rows, all withN>=6: support {1,7} allN; support {3,7} N14,46,55mod64; support {5,7} N12,14mod16. This is a proved equivalence, not coprimality on the remaining rows. Support {4,7} and every ordinary degree<=6 binomial are proved.",
+          "declarations": {
+            "thm:residue-frontier": "FACT-ORDINARY-DEGREE-SEVEN-RESIDUE-FRONTIER-THM-RESIDUE-FRONTIER"
+          },
+          "mathematical_dependencies": {
+            "thm:residue-frontier": [
+              "FACT-ORDINARY-DEGREE-SIX-BINOMIAL-SFC-COR-DEGREE-SEVEN-FRONTIER",
+              "FACT-PRIME-PLUS-ONE-EXPONENT-GAP-SFC-COR-FOUR-SEVEN",
+              "FACT-LOWER-THREE-FOURTH-POWER-RESIDUE-REDUCTION-COR-SIXTY-ONE-SIXTY-FOUR",
+              "FACT-LOWER-FIVE-QUADRATIC-RESIDUE-REDUCTION-THM-RESIDUES",
+              "FACT-LOWER-FIVE-QUADRATIC-RESIDUE-REDUCTION-THM-GLOBAL-QUADRATIC-BOUND"
+            ]
+          },
+          "replay_controls": null
+        }
+      },
+      "owned_source_sha256": {
+        "factorial/image-rigidity/LOWER_THREE_FOURTH_POWER_RESIDUE_REDUCTION.tex": "8d0806d61de2a8af064d1d499ed3dec6b3e3e95dbe8f4cd4a2796009911d6972",
+        "factorial/image-rigidity/lower_three_fourth_power_residue_reduction.py": "882712fc3acb95f06938c1856743d0b80c25df12671f2392a68956445f357b62",
+        "factorial/image-rigidity/lower_three_fourth_power_residue_reduction_verification.json": "447a8eb36739b4e84101d7a1ccb19e9863f942a595a13f607268c974ce3c3ca8",
+        "factorial/image-rigidity/LOWER_FIVE_QUADRATIC_RESIDUE_REDUCTION.tex": "343cd52be51b99fe8a47d5ff2cf493abe1e5503e47da466cf44480808981e5aa",
+        "factorial/image-rigidity/lower_five_quadratic_residue_reduction.py": "92c4b62896a075b8b98bb62d6383d8dc5755e4d8cfab1d7f70f6c01f495fdd4d",
+        "factorial/image-rigidity/lower_five_quadratic_residue_reduction_verification.json": "ad47535a6e929d351c966628e29183598bc222216ea5a24e0c2975cdf9453662",
+        "factorial/image-rigidity/PRIME_PLUS_ONE_EXPONENT_GAP_SFC.tex": "00b5561db7b6f42dcf0c67a3f848e1243ae2b70e8e2ba976a6c0eed4cdc0a169",
+        "factorial/image-rigidity/prime_plus_one_exponent_gap_sfc.py": "6c657da6f2d93f833a8e66273133638ad13e94d38206c8989ad88d394b693c1f",
+        "factorial/image-rigidity/prime_plus_one_exponent_gap_sfc_verification.json": "5e58e8114c3df3b7968428bfcb185bce6c2f1bdb9b71b405e4de8c6d2fa55010",
+        "factorial/image-rigidity/ORDINARY_DEGREE_SEVEN_RESIDUE_FRONTIER.tex": "7c2bf35ea7a7099d89965ed6ca0cc0614fb26a343a5a8ce475fab7fbf492b8dd"
+      },
+      "indispensable_input_sha256": {
+        "factorial/image-rigidity/DIAGONAL_PRIME_GAP_SFC.tex": "db034b5fb29ece9c3a0cb8cbce4c82f692b933e3679b27ee823db5ca5e7f98eb",
+        "factorial/image-rigidity/LOWER_TWO_FOURTH_POWER_GAP_SFC.tex": "e238569c21a0ccc7fb507d910608a734461fefaab4d96d5df0124afe73407631",
+        "factorial/image-rigidity/ARITHMETIC_FRONTIER_TERMINAL_ORDERS.tex": "9721978bcb795af9169c695c5fb8348974069c5148e5e0caa8bd3c4d65650e07",
+        "factorial/image-rigidity/LOWER_TWO_PRIME_GAP_SFC.tex": "8453b5b0ccd220573ef106fa26790e1f691885970b8c2116f036ed893ab2c200",
+        "factorial/image-rigidity/CUBIC_ADJOINT_STABILITY_SFC.tex": "ea2510e511545b9dd7a49a0796d75c45575687e60770c3359d38c5bc99cb4125",
+        "factorial/image-rigidity/lower_exponent_initial_and_boundary.tex": "e66e02d0354de5cd92d33eef54efea15c387b9f6a0c1b62ed379295e13f07d45",
+        "factorial/image-rigidity/LOWER_FOUR_QUADRATIC_GAP_SFC.tex": "ea2c5885f6f03a06ca2aa12840eddb191c128c20848ca8cf83d472268b89aca4",
+        "factorial/image-rigidity/ORDINARY_DEGREE_SIX_BINOMIAL_SFC.tex": "8a1a5286aa261683add53a0c29780476654de16f1eafd84096b6eb702348447a"
+      },
+      "proved_support_four_seven": "FACTORIAL-ORDINARY-SUPPORT-FOUR-SEVEN-SFC",
+      "exact_residual_test_rows": [
+        {
+          "a": 1,
+          "d": 6,
+          "support": [
+            1,
+            7
+          ],
+          "terminal_min": 6,
+          "terminal_restriction": "all N>=6"
+        },
+        {
+          "a": 3,
+          "d": 4,
+          "support": [
+            3,
+            7
+          ],
+          "terminal_min": 6,
+          "modulus": 64,
+          "terminal_residues": [
+            14,
+            46,
+            55
+          ]
+        },
+        {
+          "a": 5,
+          "d": 2,
+          "support": [
+            5,
+            7
+          ],
+          "terminal_min": 6,
+          "modulus": 16,
+          "terminal_residues": [
+            12,
+            14
+          ]
+        }
+      ],
+      "open_residual_test_gap": "GAP-ORDINARY-DEGREE-SEVEN-RESIDUAL-TESTS",
+      "open_degree_seven_goal": "FACTORIAL-ORDINARY-DEGREE-SEVEN-SFC",
+      "open_four_support_collective": "GAP-ORDINARY-DEGREE-SEVEN-FOUR-SUPPORT-FAMILIES",
+      "open_five_seven_quadratic_factor_exclusion": "GAP-ORDINARY-SUPPORT-FIVE-SEVEN-QUADRATIC-FACTOR",
+      "proved_global_five_seven_gcd_bound": "FACT-LOWER-FIVE-QUADRATIC-RESIDUE-REDUCTION-THM-GLOBAL-QUADRATIC-BOUND",
+      "ordinary_degree_at_most_six_already_complete": true,
+      "degree_seven_residual_equivalence_only": true,
+      "all_degree_seven_SFC": false,
+      "all_ordinary_binomial_SFC": false,
+      "general_FC_or_SFC": false,
+      "uniform_H3_TN": false,
+      "uniform_E_n_emptiness": false,
+      "independent_replay": false,
+      "formal_verification": false,
+      "external_review": false,
+      "novelty_claim": false,
+      "priority_claim": false,
+      "assessment": "Exact written proofs and primary internal imports were audited internally. Matching internal receipts and clean two-pass builds were checked. Universal claims come from written algebraic, valuation and conjugacy arguments, not finite profiles. No independent whole-proof replay, formal verification, external review, priority or novelty claim; dependency coverage remains partial."
+    },
+    "ordinary_degree_seven_two_family_frontier": {
+      "scope": "Ordinary binomial SFC through degree six and supports {3,7},{4,7} are proved at every positive pair. The exact degree-seven residual tests, all with terminal N>=6, are support {1,7} only at N not of the form b*7^r (1<=b<=6,r>=0), with any common-root candidate satisfying v7(-1/t)=1; and support {5,7} only N12,14 mod16, where a nonconstant gcd must be the irreducible quadratic t^2-alpha*t+delta with rational alpha,delta>0 and alpha^2<4delta. Those two exclusions, degree-seven and all-degree binomial SFC, unrestricted FC/SFC, full H3 positivity and stronger optional method gaps remain open.",
+      "packages": {
+        "PHYSICAL_PRIME_TOTAL_DEGREE_REDUCTION": {
+          "canonical_source": "factorial/image-rigidity/PHYSICAL_PRIME_TOTAL_DEGREE_REDUCTION.tex",
+          "checker": "factorial/image-rigidity/physical_prime_total_degree_reduction.py",
+          "receipt": "factorial/image-rigidity/physical_prime_total_degree_reduction_verification.json",
+          "scope": "For every prime p, physical T_n=sum binom(n,k)(n)_((p-1)k)t^k has p*T_n(Y/p) integral with constantp and unit leading coefficient. It is Eisenstein for terminal n=b*p^r,1<=b<p, proving ordinary lower-one gap(p-1) SFC at those terminals. At every other terminal any hypothetical multiple root has exactly v_p(epsilon/t)=1. Exact modp and odd-p modp^2 trace reductions and two finite unit-residue shortcut obstructions are proved. First non-prime-power gap application is6 at totalprime7; no all-index gap6 closure or all-integral-shape theorem.",
+          "declarations": {
+            "lem:coefficients": "FACT-PHYSICAL-PRIME-TOTAL-DEGREE-REDUCTION-LEM-COEFFICIENTS",
+            "thm:index": "FACT-PHYSICAL-PRIME-TOTAL-DEGREE-REDUCTION-THM-INDEX",
+            "cor:pair": "FACT-PHYSICAL-PRIME-TOTAL-DEGREE-REDUCTION-COR-PAIR",
+            "thm:radius": "FACT-PHYSICAL-PRIME-TOTAL-DEGREE-REDUCTION-THM-RADIUS",
+            "prop:trace": "FACT-PHYSICAL-PRIME-TOTAL-DEGREE-REDUCTION-PROP-TRACE",
+            "prop:local-obstructions": "FACT-PHYSICAL-PRIME-TOTAL-DEGREE-REDUCTION-PROP-LOCAL-OBSTRUCTIONS"
+          },
+          "mathematical_dependencies": {
+            "lem:coefficients": [],
+            "thm:index": [
+              "FACT-PHYSICAL-PRIME-TOTAL-DEGREE-REDUCTION-LEM-COEFFICIENTS"
+            ],
+            "cor:pair": [
+              "FACT-PHYSICAL-PRIME-TOTAL-DEGREE-REDUCTION-THM-INDEX"
+            ],
+            "thm:radius": [
+              "FACT-PHYSICAL-PRIME-TOTAL-DEGREE-REDUCTION-LEM-COEFFICIENTS"
+            ],
+            "prop:trace": [
+              "FACT-PHYSICAL-PRIME-TOTAL-DEGREE-REDUCTION-LEM-COEFFICIENTS"
+            ],
+            "prop:local-obstructions": [
+              "FACT-PHYSICAL-PRIME-TOTAL-DEGREE-REDUCTION-LEM-COEFFICIENTS",
+              "FACT-PHYSICAL-PRIME-TOTAL-DEGREE-REDUCTION-PROP-TRACE"
+            ]
+          },
+          "replay_controls": {
+            "integral_constant_and_leading_controls": 70,
+            "literal_original_scaled_coefficient_identities": 595,
+            "finite_field_generating_function_coefficient_controls": 125,
+            "Eisenstein_interior_valuation_controls": 2597,
+            "Eisenstein_index_instances": 59,
+            "exact_power_sum_rational_generating_function_coefficients": 52,
+            "mod_prime_squared_trace_unit_controls": 200,
+            "exact_n15_unit_cluster_controls": 3,
+            "corrupted_display_rejected": 1,
+            "exact_n145_transversality_obstruction_controls": 2
+          }
+        },
+        "LOWER_THREE_FOURTH_POWER_FROBENIUS_SFC": {
+          "canonical_source": "factorial/image-rigidity/LOWER_THREE_FOURTH_POWER_FROBENIUS_SFC.tex",
+          "checker": "factorial/image-rigidity/lower_three_fourth_power_frobenius_sfc.py",
+          "receipt": "factorial/image-rigidity/lower_three_fourth_power_frobenius_sfc_verification.json",
+          "scope": "The actual restricted Frobenius minor controls all three former remaining progressions for ordinary support{3,7}; rational conjugacy and even-moment positivity prove consecutive coprimality at every positive pair. Arbitrary positive Gamma shapes, other supports, degree-seven and all-binomial SFC are not claimed.",
+          "declarations": {
+            "lem:frobenius-minor": "FACT-LOWER-THREE-FOURTH-POWER-FROBENIUS-SFC-LEM-FROBENIUS-MINOR",
+            "thm:coprime": "FACT-LOWER-THREE-FOURTH-POWER-FROBENIUS-SFC-THM-COPRIME",
+            "cor:sfc": "FACT-LOWER-THREE-FOURTH-POWER-FROBENIUS-SFC-COR-SFC"
+          },
+          "mathematical_dependencies": {
+            "lem:frobenius-minor": [
+              "FACT-LOWER-THREE-FOURTH-POWER-RESIDUE-REDUCTION-LEM-MIXED-MATRIX",
+              "FACT-LOWER-THREE-FOURTH-POWER-RESIDUE-REDUCTION-COR-SIXTY-ONE-SIXTY-FOUR",
+              "FACT-LOWER-THREE-FOURTH-POWER-RESIDUE-REDUCTION-COR-FIFTEEN-SIXTEENTHS",
+              "FACT-ARITHMETIC-FRONTIER-TERMINAL-ORDERS-LEM-ARTIN-HASSE-CLOSURE"
+            ],
+            "thm:coprime": [
+              "FACT-LOWER-THREE-FOURTH-POWER-FROBENIUS-SFC-LEM-FROBENIUS-MINOR",
+              "FACT-LOWER-THREE-FOURTH-POWER-RESIDUE-REDUCTION-COR-SIXTY-ONE-SIXTY-FOUR"
+            ],
+            "cor:sfc": [
+              "FACT-LOWER-THREE-FOURTH-POWER-FROBENIUS-SFC-THM-COPRIME"
+            ]
+          },
+          "replay_controls": {
+            "generic_fixed_column_basis_identities": 1,
+            "corrupted_column_basis_rejections": 1,
+            "generic_normalized_Taylor_coordinates": 6,
+            "generic_even_determinant_mod4_coefficients": 4,
+            "generic_odd_minor_reduction": 1,
+            "generic_even_column_divisibility_identity": 1,
+            "generic_even_class_congruences": 5,
+            "actual_normalized_block_coefficient_integrality": 216,
+            "actual_odd_block_low_coefficient_reductions": 144,
+            "actual_normalized_minor_linear_coefficient_cases": 12,
+            "actual_even_block_low_coefficients_mod4": 72,
+            "actual_even_constant_and_derivative_identities": 20,
+            "actual_AH_inverse_coefficient_integrality": 8,
+            "actual_AH_inverse_Euler_recurrence": 7
+          }
+        },
+        "LOWER_FIVE_QUADRATIC_HALF_PLANE_REDUCTION": {
+          "canonical_source": "factorial/image-rigidity/LOWER_FIVE_QUADRATIC_HALF_PLANE_REDUCTION.tex",
+          "checker": "factorial/image-rigidity/lower_five_quadratic_half_plane_reduction.py",
+          "receipt": "factorial/image-rigidity/lower_five_quadratic_half_plane_reduction_verification.json",
+          "scope": "For every lower integer n>=1 the odd adjoint H1 for ordinary support{5,7} has no zero in Re(u)>=0. Every common moment root therefore has Re(t)>0, and a nonconstant rational gcd is the irreducible quadratic t^2-alpha*t+delta with alpha,delta rational positive and alpha^2<4delta. The remaining quadratic-factor exclusion stays open. No uniform stability of the lower moment polynomial or all-index five/seven SFC is asserted.",
+          "declarations": {
+            "prop:odd-adjoint": "FACT-LOWER-FIVE-QUADRATIC-HALF-PLANE-REDUCTION-PROP-ODD-ADJOINT",
+            "cor:factor-sign": "FACT-LOWER-FIVE-QUADRATIC-HALF-PLANE-REDUCTION-COR-FACTOR-SIGN"
+          },
+          "mathematical_dependencies": {
+            "prop:odd-adjoint": [
+              "FACT-LOWER-FIVE-QUADRATIC-RESIDUE-REDUCTION-LEM-SHIFT",
+              "FACT-CUBIC-ADJOINT-AUXILIARY-HALFPLANE"
+            ],
+            "cor:factor-sign": [
+              "FACT-LOWER-FIVE-QUADRATIC-HALF-PLANE-REDUCTION-PROP-ODD-ADJOINT",
+              "FACT-LOWER-FIVE-QUADRATIC-RESIDUE-REDUCTION-LEM-SHIFT",
+              "FACT-LOWER-FIVE-QUADRATIC-RESIDUE-REDUCTION-THM-GLOBAL-QUADRATIC-BOUND"
+            ]
+          },
+          "replay_controls": 13
+        },
+        "ORDINARY_DEGREE_SEVEN_TWO_FAMILY_FRONTIER": {
+          "canonical_source": "factorial/image-rigidity/ORDINARY_DEGREE_SEVEN_TWO_FAMILY_FRONTIER.tex",
+          "checker": null,
+          "receipt": null,
+          "scope": "Ordinary binomial SFC through degree seven is equivalent to exactly two remaining terminal-N>=6 rows: support{1,7} only N not=b*7^r,1<=b<=6, with any common-root candidate v7(-1/t)=1; and support{5,7} N12,14mod16, whose nonconstant gcd has monic form t^2-alpha*t+delta with alpha,delta>0,alpha^2<4delta. Support{3,7},support{4,7},degree<=6 and the omitted native7 terminal family are proved. The two residual rows and degree7 remain open.",
+          "declarations": {
+            "thm:two-family-frontier": "FACT-ORDINARY-DEGREE-SEVEN-TWO-FAMILY-FRONTIER-THM-TWO-FAMILY-FRONTIER"
+          },
+          "mathematical_dependencies": {
+            "thm:two-family-frontier": [
+              "FACT-ORDINARY-DEGREE-SEVEN-RESIDUE-FRONTIER-THM-RESIDUE-FRONTIER",
+              "FACT-LOWER-THREE-FOURTH-POWER-FROBENIUS-SFC-THM-COPRIME",
+              "FACT-PHYSICAL-PRIME-TOTAL-DEGREE-REDUCTION-COR-PAIR",
+              "FACT-PHYSICAL-PRIME-TOTAL-DEGREE-REDUCTION-THM-RADIUS",
+              "FACT-LOWER-FIVE-QUADRATIC-HALF-PLANE-REDUCTION-COR-FACTOR-SIGN"
+            ]
+          },
+          "replay_controls": null
+        }
+      },
+      "owned_source_sha256": {
+        "factorial/image-rigidity/PHYSICAL_PRIME_TOTAL_DEGREE_REDUCTION.tex": "42c5fc615400a49dd3ae4f19a9a832381607e69ce4f6ff6d255b57ca4cfd156f",
+        "factorial/image-rigidity/physical_prime_total_degree_reduction.py": "52dd8deb223050079bb6c361b2935cff879601026ab4ef71b77680ae87a182bb",
+        "factorial/image-rigidity/physical_prime_total_degree_reduction_verification.json": "06e0307026e78d73233b962a1fad9f12fa51f1eea51b14a179198024974b9791",
+        "factorial/image-rigidity/LOWER_THREE_FOURTH_POWER_FROBENIUS_SFC.tex": "8558c6a5280bbba24c1c2d189fe277d8a95b89f1a11c42d6e16bfb93b491a245",
+        "factorial/image-rigidity/lower_three_fourth_power_frobenius_sfc.py": "8574047e3ae4b82fdc0630f6e45578ec2a4fa7de06dd597f375cea9b75ea8a80",
+        "factorial/image-rigidity/lower_three_fourth_power_frobenius_sfc_verification.json": "dabdd5d39d210721148de336b4c00f9ad1dd95ed95e02db46b17f48f78a2a01d",
+        "factorial/image-rigidity/LOWER_FIVE_QUADRATIC_HALF_PLANE_REDUCTION.tex": "4d4f6cd8b1ecde78275be19cc1971f8be3ff3fe07b989a0b6a17391ee0caf357",
+        "factorial/image-rigidity/lower_five_quadratic_half_plane_reduction.py": "10271e9c3d5a67ebb8844991df92789fcedfd951925a86a045af9e040310aa48",
+        "factorial/image-rigidity/lower_five_quadratic_half_plane_reduction_verification.json": "94d171667871f00ac3a8a287060efd9938fc34052faa92297b29723fd248efdf",
+        "factorial/image-rigidity/ORDINARY_DEGREE_SEVEN_TWO_FAMILY_FRONTIER.tex": "e01ee3fb65a9a9ea50daead75115a531223841a667192bece6c739b4777a2af5"
+      },
+      "indispensable_input_sha256": {
+        "factorial/image-rigidity/ORDINARY_DEGREE_SEVEN_RESIDUE_FRONTIER.tex": "7c2bf35ea7a7099d89965ed6ca0cc0614fb26a343a5a8ce475fab7fbf492b8dd",
+        "factorial/image-rigidity/LOWER_THREE_FOURTH_POWER_RESIDUE_REDUCTION.tex": "8d0806d61de2a8af064d1d499ed3dec6b3e3e95dbe8f4cd4a2796009911d6972",
+        "factorial/image-rigidity/ARITHMETIC_FRONTIER_TERMINAL_ORDERS.tex": "9721978bcb795af9169c695c5fb8348974069c5148e5e0caa8bd3c4d65650e07",
+        "factorial/image-rigidity/LOWER_FIVE_QUADRATIC_RESIDUE_REDUCTION.tex": "343cd52be51b99fe8a47d5ff2cf493abe1e5503e47da466cf44480808981e5aa",
+        "factorial/image-rigidity/CUBIC_ADJOINT_STABILITY_SFC.tex": "ea2510e511545b9dd7a49a0796d75c45575687e60770c3359d38c5bc99cb4125"
+      },
+      "proved_support_three_seven": "FACTORIAL-ORDINARY-SUPPORT-THREE-SEVEN-SFC",
+      "exact_residual_test_rows": [
+        {
+          "a": 1,
+          "d": 6,
+          "support": [
+            1,
+            7
+          ],
+          "terminal_min": 6,
+          "terminal_restriction": "N not equal to b*7^r for any integers1<=b<=6,r>=0",
+          "necessary_common_root_radius": {
+            "prime": 7,
+            "u": "-1/t",
+            "valuation": 1
+          }
+        },
+        {
+          "a": 5,
+          "d": 2,
+          "support": [
+            5,
+            7
+          ],
+          "terminal_min": 6,
+          "modulus": 16,
+          "terminal_residues": [
+            12,
+            14
+          ],
+          "necessary_monic_gcd": "t^2-alpha*t+delta; alpha,delta rational positive; alpha^2<4delta"
+        }
+      ],
+      "open_residual_test_gap": "GAP-ORDINARY-DEGREE-SEVEN-RESIDUAL-TESTS",
+      "open_degree_seven_goal": "FACTORIAL-ORDINARY-DEGREE-SEVEN-SFC",
+      "open_four_support_collective": "GAP-ORDINARY-DEGREE-SEVEN-FOUR-SUPPORT-FAMILIES",
+      "open_five_seven_quadratic_factor_exclusion": "GAP-ORDINARY-SUPPORT-FIVE-SEVEN-QUADRATIC-FACTOR",
+      "proved_global_five_seven_factor_sign": "FACT-LOWER-FIVE-QUADRATIC-HALF-PLANE-REDUCTION-COR-FACTOR-SIGN",
+      "ordinary_degree_at_most_six_already_complete": true,
+      "degree_seven_two_family_equivalence_only": true,
+      "all_degree_seven_SFC": false,
+      "all_ordinary_binomial_SFC": false,
+      "general_FC_or_SFC": false,
+      "uniform_H3_TN": false,
+      "uniform_E_n_emptiness": false,
+      "independent_replay": false,
+      "formal_verification": false,
+      "external_review": false,
+      "novelty_claim": false,
+      "priority_claim": false,
+      "assessment": "Exact written proofs and primary internal imports were audited internally. Matching internal receipts and clean two-pass builds were checked. Universal claims come from written algebraic, valuation and conjugacy arguments, not finite profiles. No independent whole-proof replay, formal verification, external review, priority or novelty claim; dependency coverage remains partial."
     }
   },
   "open_bridge_assessments": {

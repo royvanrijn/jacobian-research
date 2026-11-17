@@ -1,0 +1,228 @@
+{
+  "claim": "Complete graded Long cap23 tail: one F3 kernel, injective F4..F9, no coefficients beyond F9",
+  "status": "PASS",
+  "environment": {
+    "python": "3.12.3",
+    "arithmetic": "Python integers/Fraction; no symbolic or nullspace library"
+  },
+  "source_order": [
+    "X",
+    "Q",
+    "P",
+    "Z"
+  ],
+  "source_weights": [
+    -1,
+    1,
+    4,
+    2
+  ],
+  "image_order": [
+    "R",
+    "T",
+    "D",
+    "S"
+  ],
+  "image_weights": [
+    -1,
+    2,
+    4,
+    1
+  ],
+  "h_weight": 3,
+  "cap": 23,
+  "prime": 1000003,
+  "homogeneous_ranks": [
+    {
+      "m": 3,
+      "basis_counts": [
+        34,
+        54,
+        71,
+        47
+      ],
+      "unknowns": 206,
+      "rows": 1563,
+      "rank_Q": 205,
+      "kernel_dimension": 1,
+      "minor_det_modp": 351788
+    },
+    {
+      "m": 4,
+      "basis_counts": [
+        20,
+        34,
+        47,
+        29
+      ],
+      "unknowns": 130,
+      "rows": 1207,
+      "rank_Q": 130,
+      "kernel_dimension": 0,
+      "minor_det_modp": 406976
+    },
+    {
+      "m": 5,
+      "basis_counts": [
+        10,
+        20,
+        29,
+        16
+      ],
+      "unknowns": 75,
+      "rows": 888,
+      "rank_Q": 75,
+      "kernel_dimension": 0,
+      "minor_det_modp": 854936
+    },
+    {
+      "m": 6,
+      "basis_counts": [
+        4,
+        10,
+        16,
+        8
+      ],
+      "unknowns": 38,
+      "rows": 646,
+      "rank_Q": 38,
+      "kernel_dimension": 0,
+      "minor_det_modp": 720220
+    },
+    {
+      "m": 7,
+      "basis_counts": [
+        1,
+        4,
+        8,
+        3
+      ],
+      "unknowns": 16,
+      "rows": 427,
+      "rank_Q": 16,
+      "kernel_dimension": 0,
+      "minor_det_modp": 137481
+    },
+    {
+      "m": 8,
+      "basis_counts": [
+        0,
+        1,
+        3,
+        1
+      ],
+      "unknowns": 5,
+      "rows": 200,
+      "rank_Q": 5,
+      "kernel_dimension": 0,
+      "minor_det_modp": 375828
+    },
+    {
+      "m": 9,
+      "basis_counts": [
+        0,
+        0,
+        1,
+        0
+      ],
+      "unknowns": 1,
+      "rows": 32,
+      "rank_Q": 1,
+      "kernel_dimension": 0,
+      "minor_det_modp": 499967
+    }
+  ],
+  "F3_kernel": "G=R^6; variation=(0,0,-6R^5,0)",
+  "all_m_ge10_empty": true,
+  "u_target_normalization": {
+    "formula": "D -> D-3u h^2 R^2; R,T,S fixed",
+    "hypotheses": "R1=R2=0, R0 positional",
+    "conclusion": "Only F2D changes through F4; degree6",
+    "boundary": "No all-orders cap-preservation or R3=0 assertion"
+  },
+  "order_bookkeeping": {
+    "h4_rhs": [
+      [
+        1,
+        2,
+        1,
+        "1"
+      ],
+      [
+        2,
+        1,
+        1,
+        "1"
+      ],
+      [
+        0,
+        1,
+        3,
+        "1/24"
+      ],
+      [
+        1,
+        0,
+        3,
+        "1/24"
+      ]
+    ],
+    "h5_rhs": [
+      [
+        1,
+        3,
+        1,
+        "1"
+      ],
+      [
+        2,
+        2,
+        1,
+        "1"
+      ],
+      [
+        3,
+        1,
+        1,
+        "1"
+      ],
+      [
+        0,
+        2,
+        3,
+        "1/24"
+      ],
+      [
+        1,
+        1,
+        3,
+        "1/24"
+      ],
+      [
+        2,
+        0,
+        3,
+        "1/24"
+      ],
+      [
+        0,
+        0,
+        5,
+        "1/1920"
+      ]
+    ]
+  },
+  "parameter_consequence": "Every compatible normalized full tuple is determined by (a,b,c,u,v,w); if the separate h4 family imposes a=544c/27, by (b,c,u,v,w). No existence or higher compatibility is inferred.",
+  "hashes": {
+    "GRADED_LONG_TAIL_RIGIDITY.md": "6d18ac748134b38fbdfe532e9cb95cbfb972c517c9b756bb49376253558a829a",
+    "check_graded_long_tail_rigidity.py": "1ec72653644e73ee43b6642de5f3a7bac34092992885ab58fd279a1d94fa20e6",
+    "graded_long_tail_rigidity_witness.json": "2bbc52f91d81823b5878f3cedd5f7b8671e890d0f730d024e001e33e4903f488",
+    "check_graded_long_cap23.py": "78bc02799a65b5587a6dad0672d72e74776f1a719430546f7e95dfe1ed8c3e62",
+    "check_long_graph_curvature.py": "3574e9a9fbfd9e19251709a6af9759909ed09a4f960a44df60e35a4480e04a0f",
+    "../dixmier-audit/verify_long_pbw.py": "0fd237f4954b4a45260b65ffef2e973e1f253e3b359e440da7d0cc6dbdd06eed"
+  },
+  "coverage_boundary": "Complete homogeneous coefficient maps F3..F9 and finite termination. No inhomogeneous h4/h5 solution, compatibility sufficiency, bounded normalization, full lift or DC1/DC2 claim.",
+  "independent_replay": false,
+  "formal_verification": false,
+  "external_review": false
+}

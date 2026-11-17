@@ -269,8 +269,10 @@ The omitted Haar masses tend to zero. At each fixed truncation use
 the proved finite joint image and the lattice count, first letting
 `B` tend to infinity and then the truncation depth tend to infinity.
 This proves (4.1). It does not give an error uniform in the truncation
-depth, and no `O_E(sqrt(log B))` error with the coefficient in (4.1)
-is asserted. \(\square\)
+depth. The separate logarithm bound in
+[ESQ3--ESQ4](ELLIPTIC_EXCEPTION_SHARP_FINITE_LOCAL_ERROR.md) gives
+`O_E(sqrt(log B))` error with the coefficient in (4.1); its proof
+uses the additional Hirata-Kohno--Takada input. \(\square\)
 
 **Corollary J2174 (four exact fixed-field coefficients).** In the
 count of Theorem J2173, the four quadratic fields have the following
@@ -330,12 +332,19 @@ Multiplying the four masses gives the displayed table. The same
 finite-quotient approximation used in Theorem J2173 proves (4.4)
 in each clopen squareclass. \(\square\)
 
+ESQ3 also sharpens (4.4) to `O_E(sqrt(log B))` error in each field.
 Consequently the Hasse count with each fixed quadratic field satisfies
 `limsup A_{E,K}(B)/(C_E log B)<=mu_K`. Since that field has matching
 coefficient `C_E/4`, the corresponding limiting upper proportions
 within its matching targets are, in the table order,
 `205/27937, 1/21, 205/614, 1/2`. These are upper bounds, not Hasse
 asymptotics or an assertion of Hasse infinitude in every class.
+
+Combining these exact coefficients with ESQ3 gives the sharper bound
+`A_E(B)<=(5321/23946) C_E log B+O_E(sqrt(log B))`; in the certified
+field the coefficient is `1/8` at the same error order. The original
+finite-quotient coefficient `1687/6936` retains its direct finite
+certificate independently of the logarithm input.
 
 The certified Hasse point supplies `A_E(B)>=1` for sufficiently large
 `B`. Neither upper bound proves Hasse infinitude or solubility at all

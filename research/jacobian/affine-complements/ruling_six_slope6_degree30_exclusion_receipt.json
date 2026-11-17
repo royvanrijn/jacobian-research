@@ -162,19 +162,19 @@
     "remaining M degree central root only",
     "remaining leading data have positive primitive ODE control"
   ],
-  "elapsed_seconds": 0.6197337610065006,
+  "elapsed_seconds": 0.6275697899982333,
   "environment": {
     "python": "3.12.3",
     "sympy": "1.14.0"
   },
-  "proof_sha256": "c219833c083b9f63cfd72753001af768b2dd40d6ebc3025fea1a823677a2b444",
+  "proof_sha256": "418d2ce932dbab319a1f3d380f95c435a57f93f5661a6b11d9181137edbad8ea",
   "checker_sha256": "9187b8a3b053e5c5af8606ee2898ac4dd12b8d677873a34656ceb9bd445c6942",
   "retained_proof_sources": {
     "POLYNOMIAL_MATE_RESPONSES_AND_QUADRATIC_RULING_FIVE_ESCAPE_COVERAGE.md": "b2c6a08cd0f144788cf841d0f399896c4894db0ee1f43515704011e2a9c5f7ee",
     "RULING_SIX_AFFINE_POLE_BUDGET_AND_SOURCE_INFINITY.md": "b26c9004eaa6eeb6bc59db3a6b8b45318f598a31d89fd4f0a0068d423dcb6771",
     "RULING_SIX_NONCRITICAL_QUARTIC_SPLITTING_AND_SMALL_SLOPE_EXCLUSION.md": "34a8339e3668229ea1dc2ab02875d70a0614b169e001c61757d7b85544205000",
     "RULING_SIX_DEGREE24_CRITICAL_QUARTIC_POLE_BUDGET_EXCLUSION.md": "c5838bfd604288d5ffe25a9ba9a843a3eaa14ed60528b7fb16384f7d01782402",
-    "RULING_SIX_NONCRITICAL_POLE_BUDGET_AND_DEGREE30_LEDGER.md": "6db5cb77d9dbdf5986b49fab5770c456974cec4d56935f066cd86851369e78b7"
+    "RULING_SIX_NONCRITICAL_POLE_BUDGET_AND_DEGREE30_LEDGER.md": "0f01722259455ae5936b3eb0d282b23ab9fece8517f1c2cc1dee641c8d82409a"
   },
   "uniform_proved_scope": {
     "coefficient_and_companion_degrees": "unrestricted",

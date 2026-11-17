@@ -1,0 +1,31 @@
+{
+  "title": "Abelian Varieties",
+  "authors": "J. S. Milne",
+  "version": "January 2, 2022 corrected reprint of Arithmetic Geometry (1986), Chapter V",
+  "primary_url": "https://www.jmilne.org/math/xnotes/AVs.pdf",
+  "retained_pdf": "milne-abelian-varieties-2022.pdf",
+  "sha256": "bffdf81c57c77420b5454b31270007989d12f332abea62424be15c424079fc7c",
+  "bytes": 575091,
+  "pdf_pages": 49,
+  "accessed_utc_date": "2026-11-17",
+  "direct_read": true,
+  "used_locators": [
+    {
+      "locator": "Proposition 12.1",
+      "printed_pages": "19",
+      "pdf_pages": "19",
+      "scope": "Poincare complete reducibility, used to turn a proper connected subgroup of E^3 into a nonzero endomorphism relation."
+    },
+    {
+      "locator": "Proposition 20.7 and Corollary 20.8",
+      "printed_pages": "44",
+      "pdf_pages": "44",
+      "scope": "Multiplication by n is finite etale on an abelian scheme when n is invertible; division-point extensions are unramified at such good primes."
+    }
+  ],
+  "role": "External theorem interface; not claimed to be reproved by finite checks.",
+  "rendered_pages_visually_inspected": [
+    19,
+    44
+  ]
+}

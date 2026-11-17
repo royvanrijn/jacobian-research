@@ -1,0 +1,19 @@
+{
+  "title": "Wieferich Past and Future",
+  "author": "Nicholas M. Katz",
+  "primary_url": "https://web.math.princeton.edu/~nmk/wieferich38.pdf",
+  "retained_file": "katz-wieferich-past-and-future-author.pdf",
+  "sha256": "67f750ec0b189440deb584db8fd704ae7aab6ad40fef1ab2e6e1f787bed85221",
+  "bytes": 343115,
+  "locators": {
+    "fractions": "Section4,printed pp3-4",
+    "rank_at_least_two_equ_distribution": "Conjecture7.4,printed p8"
+  },
+  "scope": "Conjectural context only. Proposition ETP6 explicitly assumes simultaneous equidistribution and derives density-one formal depth one. No conjecture is imported as a premise of ETP1-ETP5, and no finiteness, summable-exception or branch-return recurrence conclusion is claimed.",
+  "inspected_printed_pages": [
+    3,
+    4,
+    8
+  ],
+  "retrieved_on": "2026-11-17"
+}

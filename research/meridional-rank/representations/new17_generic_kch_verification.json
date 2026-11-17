@@ -1,0 +1,91 @@
+{
+  "status": "PASS exact signed folds,392-only core transfer and ordinary3D KCH witness",
+  "case_binding": {
+    "actual_signed_PD_rows": 17,
+    "consistent_segment_arc_labels": 34,
+    "literal_braid_dart_gluings": 68,
+    "four_meridian_generating_trace_steps": 13,
+    "three_seed_span_trace_steps": 8,
+    "signed_native_rows_independent_dart_walk": true
+  },
+  "fold_algebra": {
+    "first_fold_normalized_pair_coefficients": true,
+    "first_fold_rankone_identity_X_equals_A": true,
+    "arc11_group_braid_consequence": true,
+    "negative_Hurwitz_three_raw_pair_formulas": true,
+    "second_fold_outer_products_mod_xy_plus_mu": true,
+    "third_fold_group_product_identities": 3,
+    "allowed_formal_units": [
+      "mu",
+      "lambda",
+      "k"
+    ],
+    "inverse_one_minus_mu": false,
+    "evaluation_matrix_inverted": false,
+    "nonzero_and_independence_deductions": "Written lem:folds; not inferred from finite sampling."
+  },
+  "core_transfer": {
+    "fold_sources_bound_to_actual_signed_crossings": 9,
+    "necessary_new_core_rows": 8,
+    "old392_signed_core_bijection": true,
+    "global_sign": 1,
+    "old_standard_seed_arcs": [
+      0,
+      6,
+      12
+    ],
+    "old_seed_generation_steps": 5,
+    "root_and_covector_basis_transfer": "Both three-seed systems generate all8 pairs; separate span-dimension argument in lem:coretransfer.",
+    "imported_written_premise": {
+      "file": "GENERIC_KCH_EXTENSIONS.tex",
+      "label": "lem:cores",
+      "subcase": "392"
+    }
+  },
+  "positive_3D_witness": {
+    "literal_signed_relations": 17,
+    "root_norm": 4,
+    "seed_root_minor": "-4",
+    "connected_nonorthogonality_graph": true,
+    "complex_irreducible_dimension": 3,
+    "meridian_parameter": -1,
+    "explicit_signed_root_system_size": 30,
+    "faithful_signed_root_action": true,
+    "finite_image_order": 120,
+    "meridian_reflection_class_size": 15,
+    "attaining_class_generators": 3,
+    "class_pairs_checked": 105,
+    "largest_two_reflection_subgroup": 10,
+    "class_generating_rank": 3,
+    "ordinary_KCH_witness_only": true
+  },
+  "positive_trefoil": {
+    "meridian_parameter": -1,
+    "dimension": 2,
+    "braid_relation": true,
+    "generated_matrix_algebra_rank": 4
+  },
+  "corruptions_rejected": [
+    "actual_crossing_sign",
+    "392_core_map",
+    "local_fold_sign",
+    "positive_witness_root"
+  ],
+  "optional_topology": {
+    "fresh_literal_four_braid_PD_DT": true,
+    "actual_pieces_signed_rows": 17,
+    "spherogram_version": "2.4.1"
+  },
+  "representation_scope": "Every field and every nonzero meridian determinant mu, includingmu=1. Finite ambient dimension, meridian displacementrank1: r<=4,q<=4,min(r,q)<=3,r+q<=7. No common form, irreducibility or semisimplicity assumption for the paired-span theorem.",
+  "input_sha256": {
+    "new17_generic_kch_inputs.json": "fc2e28c362974e6b2729272e44d3e36b9e8bef795a3956bf1d1e88249c7799a2",
+    "verify_new17_generic_kch.py": "75eeaf06e21543fde985173f152027cd0df2cf8f2c4197f85eb44cf29f142170",
+    "NEW_SEVENTEEN_GENERIC_KCH.tex": "ea2bb03438844ff8bcba129a616e1bd4bc8b7f258e2e60f65295b64093ca1e45",
+    "GENERIC_KCH_EXTENSIONS.tex": "978cb91afcff56b4b187d2332c2b268dd2dedec182dea6eea5fca7b5517d9e6b",
+    "generic_kch_extensions_inputs.json": "b17c840534a1fcba4ed52d1b032fda942903f891c65fc7a070e3f29dcdcae0de",
+    "sources/cornwell-kch-1310.7526v3.pdf": "991940273daed005b8af270233cceaa58c11d69168efb7006f3bfa9bd598bcbd"
+  },
+  "elapsed_seconds": 0.146,
+  "python_version": "3.12.3",
+  "assurance": "Exact internal stdlib local Laurent/group identities, actual signed PD and core/basis transfer, and Q(phi) positive matrices. Nonzero cancellations, arbitrary-ambient span reasoning, old392 contradiction, irreducibility and published augmentation/sum correspondences remain written premises. No reflective-cord assertion, formal verification, external specialist review or worldwide priority claim."
+}

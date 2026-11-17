@@ -1,0 +1,133 @@
+{
+  "status": "passed",
+  "coefficient_field": "QQ",
+  "original_lift_markers": 10,
+  "lift_moment_orders": [
+    0,
+    6
+  ],
+  "independent_expanded_Wick_orders": [
+    0,
+    4
+  ],
+  "radial_recurrence_indices": [
+    0,
+    10
+  ],
+  "series_order": 10,
+  "angular_formula_exponents_each": [
+    0,
+    4
+  ],
+  "angular_formula_moments": [
+    0,
+    6
+  ],
+  "Laurent_regularization_indices": [
+    0,
+    8
+  ],
+  "polynomial_lifts": [
+    {
+      "target_degree": 0,
+      "least_marker_degree": 1,
+      "marker": "1 - 2*W"
+    },
+    {
+      "target_degree": 1,
+      "least_marker_degree": 3,
+      "marker": "12*W**3 - 6*W**2 + W"
+    },
+    {
+      "target_degree": 2,
+      "least_marker_degree": 5,
+      "marker": "-120*W**5 + 60*W**4 - 12*W**3 + W**2"
+    },
+    {
+      "target_degree": 3,
+      "least_marker_degree": 7,
+      "marker": "1680*W**7 - 840*W**6 + 180*W**5 - 20*W**4 + W**3"
+    },
+    {
+      "target_degree": 4,
+      "least_marker_degree": 9,
+      "marker": "-30240*W**9 + 15120*W**8 - 3360*W**7 + 420*W**6 - 30*W**5 + W**4"
+    },
+    {
+      "target_degree": 5,
+      "least_marker_degree": 11,
+      "marker": "665280*W**11 - 332640*W**10 + 75600*W**9 - 10080*W**8 + 840*W**7 - 42*W**6 + W**5"
+    },
+    {
+      "target_degree": 6,
+      "least_marker_degree": 13,
+      "marker": "-17297280*W**13 + 8648640*W**12 - 1995840*W**11 + 277200*W**10 - 25200*W**9 + 1512*W**8 - 56*W**7 + W**6"
+    }
+  ],
+  "filtered_intersections": [
+    {
+      "marker_degree": 0,
+      "polynomial_sector_dimension": 0,
+      "maximum_polynomial_degree": -1
+    },
+    {
+      "marker_degree": 1,
+      "polynomial_sector_dimension": 1,
+      "maximum_polynomial_degree": 0
+    },
+    {
+      "marker_degree": 2,
+      "polynomial_sector_dimension": 1,
+      "maximum_polynomial_degree": 0
+    },
+    {
+      "marker_degree": 3,
+      "polynomial_sector_dimension": 2,
+      "maximum_polynomial_degree": 1
+    },
+    {
+      "marker_degree": 4,
+      "polynomial_sector_dimension": 2,
+      "maximum_polynomial_degree": 1
+    },
+    {
+      "marker_degree": 5,
+      "polynomial_sector_dimension": 3,
+      "maximum_polynomial_degree": 2
+    },
+    {
+      "marker_degree": 6,
+      "polynomial_sector_dimension": 3,
+      "maximum_polynomial_degree": 2
+    },
+    {
+      "marker_degree": 7,
+      "polynomial_sector_dimension": 4,
+      "maximum_polynomial_degree": 3
+    },
+    {
+      "marker_degree": 8,
+      "polynomial_sector_dimension": 4,
+      "maximum_polynomial_degree": 3
+    },
+    {
+      "marker_degree": 9,
+      "polynomial_sector_dimension": 5,
+      "maximum_polynomial_degree": 4
+    },
+    {
+      "marker_degree": 10,
+      "polynomial_sector_dimension": 5,
+      "maximum_polynomial_degree": 4
+    }
+  ],
+  "scope": "Finite exact controls. Written proofs establish the unrestricted global module and all-degree literal filtration.",
+  "independent_replay": false,
+  "formal_verification": false,
+  "external_review": false,
+  "python": "3.12.3",
+  "sympy": "1.14.0",
+  "proof_sha256": "43da9e7762391bc08ef10e2b11de45cc75395dd951a730f3aeda0c0248aa54e7",
+  "checker_sha256": "29aa3eb5ed0524482c0843e0ac481bb2c80ceec767f14405ac640fef76c9c9f0",
+  "angular_core_import_sha256": "816deaaa4d2fa056b06f38cf6d9a33caa0319acfc2c50c5a704e7c4c72c5d242"
+}

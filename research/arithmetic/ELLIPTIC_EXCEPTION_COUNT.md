@@ -172,7 +172,7 @@ On the matching-resolvent slice, globally soluble targets form a finite
 set. Its Hasse-target count `A_E(B)` satisfies, for all sufficiently large `B`,
 
 \[
- 1\le A_E(B)\le \frac{1687}{6936}C_E\log B
+ 1\le A_E(B)\le \frac{2300089}{10392564}C_E\log B
                          +O_E(\sqrt{\log B}).       \tag{9}
 \]
 
@@ -180,27 +180,27 @@ More precisely the everywhere locally soluble count on this restricted
 family is `A_E(B)+O_E(1)`. No leading asymptotic or infinitude of
 `A_E(B)` follows from the matching-target asymptotic.
 
-The [joint local sieve](ELLIPTIC_EXCEPTION_JOINT_2_3_17_SIEVE.md), J2172--J2173,
-also gives
+For the certified quadratic field `K0=Q(sqrt(-81275190))`, one also has
 
 \[
- \limsup_{B\to\infty}\frac{A_E(B)}{C_E\log B}
-                         \le\frac{5321}{23946}.      \tag{10}
+ A_{K_0}(B)\le\frac18 C_E\log B
+                         +O_E(\sqrt{\log B}).       \tag{10}
 \]
 
-The coefficient in (9) is strictly below one quarter and comes from
-one fixed joint quotient at `2,3,17`. Equation (10) uses the exact
-local-only asymptotic at those primes, followed by a tail limit.
-It is a limsup bound, rather than a square-root logarithmic remainder
-estimate with coefficient `5321/23946`.
+The [complete joint prefix at two, three, five and seventeen](ELLIPTIC_EXCEPTION_JOINT_2_3_5_17_SIEVE.md),
+J235173, gives (9)--(10), using the square-root error theorem ESQ3.
+Adding five multiplies only the class-one coefficient by `16/31`,
+giving `820/866047`; the other three coefficients of J2174 are
+unchanged. The direct finite-quotient certificate J2172 still gives
+the valid, weaker coefficient `1687/6936` without the logarithm input.
 
 For comparison, the [complete three-adic classification](ELLIPTIC_EXCEPTION_COMPLETE_THREE_ADIC_CLASSIFICATION.md)
 gives coefficient `55/156` for solubility at three alone. The
 [two-adic and joint classification](ELLIPTIC_EXCEPTION_TWO_FIVE_ADIC_CLASSIFICATION.md)
 gives `4/7` at two alone and `289/1092` at two and three together.
 The joint `2,3,17` coefficient is `5321/23946`. Each of these is an
-exact leading coefficient relative to `C_E log B`, with `o(log B)`
-error, for its specified finite local set. These proportions cannot
+exact leading coefficient relative to `C_E log B`, now with
+`O_E(sqrt(log B))` error by ESQ3, for its specified finite local set. These proportions cannot
 be multiplied as independent events and do not count all-places
 Hasse failures.
 
@@ -214,14 +214,61 @@ open. The total-class version has the same distinction. Thus the full
 finite-`S` asymptotics do not establish Hasse infinitude or an all-places
 leading asymptotic.
 
-[EQA2--EQA3](ELLIPTIC_EXCEPTION_QUANTITATIVE_FINITE_LOCAL_ASYMPTOTICS.md)
-sharpen every fixed finite-place asymptotic above: its coefficient is
-rational, and the error is
-`O_(E,S)(sqrt(log B) (1+log log B)^(r_a))`. Here `r_a` counts only
-the primes in `S` not erased by the class-specific criterion of
-[EPE2](ELLIPTIC_EXCEPTION_PRIME_ELIGIBILITY.md). A finite-local field
+[EQA2](ELLIPTIC_EXCEPTION_QUANTITATIVE_FINITE_LOCAL_ASYMPTOTICS.md)
+proves that every fixed finite-place coefficient is rational.
+ESQ3 gives error `O_(E,S)(sqrt(log B))` for each such count, while
+[EPE2](ELLIPTIC_EXCEPTION_PRIME_ELIGIBILITY.md) erases automatic
+prime tests exactly. The elementary EQA3 bound retains its separate
+proof without the logarithm input. A finite-local field
 target set is either empty or has a positive rational coefficient,
 by EQA2a. These statements retain their fixed finite-prime scope.
+
+These counts use the actual joint rational closure throughout.
+
+[ECO1](ELLIPTIC_EXCEPTION_FINITE_LOCAL_CLASS_ONE.md) proves that the
+class `Q(sqrt(-3))` has a positive coefficient for every finite `S`,
+using formal neighbourhoods rather than an all-places seed. Together
+with the certified class, two of the four quadratic fields therefore
+have this finite-place positivity property. The
+[triangular prime sieve](ELLIPTIC_EXCEPTION_TRIANGULAR_PRIME_SIEVE.md)
+now supplies an exact conditional hazard at every formal depth and
+a weighted pathwise bound. The arithmetic weighted-return divergence
+and all-primes tail remain unresolved. Separately,
+[EOP1--EOP3](ELLIPTIC_EXCEPTION_ONE_PRIME_POSITIVITY.md) prove that all
+four classes pass every individual prime, and that every feasible
+finite set admits all but finitely many one-prime extensions. These
+facts do not settle simultaneous positivity for all finite sets in
+the other two classes. The same result proves a uniform absolute
+coefficient loss `O_E(1/log p)` when a large new good prime is added,
+and `mu_({p},a)=1/4+O_E(1/log p)`. It does not give a uniform
+target-counting error or a summable all-primes tail.
+
+[The Kummer branch-exclusion theorem](ELLIPTIC_EXCEPTION_KUMMER_BRANCH_EXCLUSION.md)
+identifies a positive-density set of eligible primes where the
+numerator is prime to that prime for every rational point on the
+slice. Only pole returns contribute to the local hazard there.
+This restricts the actual prime support without changing the
+finite-prefix upper coefficient in (9) or deciding the all-primes
+measure.
+
+[EFO2--EFO3](ELLIPTIC_EXCEPTION_FINITE_OBSTRUCTION_CERTIFICATES.md)
+give exact finite congruence-cover and fatal-branch criteria for
+simultaneous infeasibility, under the certified-quotient input
+hypotheses. They do not exhibit an obstruction in the two unresolved
+classes. [ECM1--ECM3](ELLIPTIC_EXCEPTION_COMMON_QUOTIENT_MOMENTS.md)
+compute the relevant finite correlations and give a sufficient
+conditional mean-variance criterion for zero all-primes measure.
+Its asymptotic moment hypotheses remain unproved; the upper bounds
+(9)--(10) therefore retain their present scope.
+
+[ESR1--ESR2](ELLIPTIC_EXCEPTION_SMALL_REDUCTION_IMAGES.md) strengthen
+the marginal loss estimate: for every fixed `A>0`, outside a set of
+`O_(E,A)(X/(log X)^(2A+1))` primes up to `X`, the absolute coefficient
+loss on adding `p` is at most `3(log p)^A/sqrt(p)`, uniformly over
+the finite prefix and quadratic class. A product of denominators of
+height-bounded difference points proves the exceptional-prime bound.
+This does not bound relative losses for shrinking prefixes or the
+conditional covariances in ECM3.
 
 The [ambient Haar calculation](ELLIPTIC_EXCEPTION_AMBIENT_HAAR_DIAGNOSTIC.md)
 gives measure zero both to the all-soluble set and to the rational
@@ -236,7 +283,8 @@ targets. Partition the locally soluble targets into the globally soluble
 ones and the Hasse failures. The
 [explicit certified Hasse target](ELLIPTIC_EXCEPTION_HASSE_EXAMPLE.md)
 gives the lower bound once `B` exceeds its height. The upper bounds are
-J2172 and J2173. The rational local images are proved from two-descent,
+J235173, using J2173--J2174, the exact five-adic refinement and ESQ3.
+The rational local images are proved from two-descent,
 finite reductions at `41,53`, and formal-depth witnesses. Their
 correlations are retained; no full Mordell--Weil basis is assumed.
 \(\square\)

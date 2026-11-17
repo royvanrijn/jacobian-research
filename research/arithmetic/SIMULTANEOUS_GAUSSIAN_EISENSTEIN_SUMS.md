@@ -1,0 +1,673 @@
+# Two summands with both prime restrictions
+
+The every-target assertion S12 is **open in this work**. Unconditional results
+include positive-proportion balanced coverage, a uniform local sieve margin,
+a large-prime tail bound, averaged coordinate counts before and after the full
+sieve, and an exact finite search. The positive-proportion statement is a
+corollary of Loughran--Matthiesen's correlation theorem; the averaged statements
+are consequences of established ideal-counting estimates.
+The local calculation includes singular lifts and primes dividing the target.
+None of these statements supplies the missing pointwise global input for S12.
+
+## The target
+
+Put
+
+\[
+C=C_{12}=\{c\geq1:p\mid c\Longrightarrow p\equiv1\pmod {12}\},\qquad 1\in C.
+\]
+
+**Target S12.** For every sufficiently large integer \(N\equiv2\pmod {12}\),
+there are \(a,b\in C\) with
+
+\[
+N=a+b,\qquad N/3\leq a,b\leq2N/3.
+\]
+
+The conjectured unbalanced version for every positive admissible target agrees
+with the finite search below. An effective eventual theorem would need a cutoff
+overlapping the verified range, or the intervening range would also have to be
+checked. The checked range alone supplies no eventual cutoff.
+
+The [Eisenstein manuscript](../../unpublished/eisenstein-restricted-prime-sums/README.md)
+proves binary coverage with only the restriction \(p\equiv1\pmod3\).
+Requiring both quadratic splitting conditions selects the single class
+\(1\pmod {12}\). The target is not a consequence of that manuscript.
+
+## Unconditional coverage for a positive proportion of targets
+
+For a fixed symmetric window \(J=[\lambda,1-\lambda]\),
+\(0<\lambda<1/2\), put
+\[
+r_J(N)=\#\{(a,b)\in C^2:a+b=N,\ a/N\in J\}.
+\]
+Symmetry of \(J\) means both summands satisfy the same balance condition.
+These are ordered pairs of integer values, without coordinate multiplicities.
+
+**Positive-proportion corollary P12.** There are constants \(c_1,c_2>0\),
+depending on the fixed window, such that for all sufficiently large real \(X\),
+\[
+\#\left\{X<N\leq2X:\ N\equiv2\pmod {12},\quad
+r_J(N)\geq c_1\frac{N}{(\log N)^{3/2}}\right\}\geq c_2X. \tag{11}
+\]
+This includes \(J=[1/3,2/3]\) and the narrower fixed window
+\(J=[49/100,51/100]\).
+
+The input is [Loughran--Matthiesen, *Frobenian multiplicative functions and
+rational points in fibrations*, arXiv:1904.12845v2, Theorem 1.9](https://arxiv.org/html/1904.12845v2#S1.SS4)
+(published in *JEMS* 26 (2024), 4779--4830, Theorem 1.9 on p. 4783).
+Here is the complete application. Let \(\xi(n)=\mathbf1_C(n)\), extended by
+zero to nonpositive integers. On positive integers it is completely
+multiplicative and bounded by one. Outside the exceptional primes 2 and 3,
+its prime values detect the
+identity Frobenius class in
+\(\operatorname{Gal}(\mathbb Q(\zeta_{12})/\mathbb Q)\), a group of order four.
+Thus it is Frobenian of prime mean \(m(\xi)=1/4\). The growth and prime-power
+bounds in Definitions 2.6--2.7 hold with \(H=1\).
+
+Write
+\[
+M_1(X)=\sum_{X<N\leq2X}r_J(N),\qquad
+M_2(X)=\sum_{X<N\leq2X}r_J(N)^2.
+\]
+For the first moment apply Theorem 1.9 to the forms \(a,b\) in two variables.
+For the second moment, expanding \(a+b=c+d\) and eliminating \(d\) gives the
+four forms
+\[
+a,\quad b,\quad c,\quad a+b-c. \tag{12}
+\]
+Their nonconstant parts are pairwise linearly independent. To check the domains,
+use dilation parameter \(B=2X\). The first-moment convex region in
+\([0,1]^2\) is
+\[
+\tfrac12<u+v\leq1,\qquad
+\lambda(u+v)\leq u\leq(1-\lambda)(u+v).
+\]
+The second-moment region in \([0,1]^3\) adds
+\(\lambda(u+v)\leq w\leq(1-\lambda)(u+v)\). The complementary value
+\(u+v-w\) then satisfies the same bounds. Both regions have positive volume;
+\((3/8,3/8)\) and \((3/8,3/8,3/8)\) are interior points where every form
+is positive. The theorem's separate arithmetic positivity condition is also
+satisfied: the integer witnesses \((1,1)\) and \((1,1,1)\) make every form
+equal to 1. Thus positivity is checked globally, not inferred from local factors.
+
+Theorem 1.9 gives positive constants in the two asymptotics, and in particular
+constants \(A,B_0>0\) such that, for all sufficiently large \(X\),
+\[
+M_1(X)\geq A\frac{X^2}{(\log X)^{3/2}},\qquad
+M_2(X)\leq B_0\frac{X^3}{(\log X)^3}. \tag{13}
+\]
+The logarithmic exponents are respectively
+\(2(1/4-1)=-3/2\) and \(4(1/4-1)=-3\).
+
+For the threshold argument put
+\(T=(A/4)X/(\log X)^{3/2}\), and let
+\(E=\{N:X<N\leq2X,\ r_J(N)\geq T\}\).
+There are at most \(2X\) integer targets in this interval once \(X\geq1\).
+Consequently the targets outside \(E\) contribute at most half the lower
+bound for \(M_1\). Cauchy--Schwarz gives
+\[
+\#E\geq\frac{\bigl(\sum_{N\in E}r_J(N)\bigr)^2}{M_2(X)}
+\geq\frac{A^2}{4B_0}X.
+\]
+Also \(N/(\log N)^{3/2}\leq2X/(\log X)^{3/2}\) on the interval for large
+\(X\). Taking \(c_1=A/8\), \(c_2=A^2/(4B_0)\) proves (11).
+Every contributing target is automatically \(2\pmod {12}\).
+
+This corollary proves successful balanced decompositions for a positive
+proportion, with many pairs on those targets. It does not establish density
+one, every-target coverage, or a practical effective cutoff. Averaging the
+target is what makes the forms in (12) independent; fixing \(N\) does not give
+the same theorem. More generally, a window should have an overlap of positive
+width with its reflection if both summands must lie in it; arbitrary narrower
+subintervals can make the balance condition empty.
+
+## Encoding both conditions first
+
+Write \(G(x,y)=x^2+y^2\) and \(E(u,v)=u^2-uv+v^2\).
+An integer belongs to \(C\) exactly when it is a positive primitive norm value
+in both rings. Indeed a Gaussian primitive norm can contain no prime
+\(3\pmod4\), and can contain 2 at most once. An Eisenstein primitive norm is
+odd, contains no prime \(2\pmod3\), and contains 3 at most once. Intersecting
+the two classifications excludes 2 and 3 and leaves precisely the split primes
+\(1\pmod {12}\). Conversely, in each unique factorization ring choose only one
+prime from each conjugate pair; the resulting coordinates are coprime.
+
+Use four binary coordinate blocks \(X,U,Z,V\), and count solutions to
+
+\[
+G(X)=E(U)=a,\quad G(Z)=E(V)=b,\quad a+b=N. \tag{1}
+\]
+
+This is three quadratic equations in eight integer coordinates. Put
+\(I=[1/3,2/3]\), and let \(R_I(N)\) be the number of all such ordered coordinate
+tuples with \(a/N\in I\), equivalently \(N/3\leq a,b\leq2N/3\). At this stage
+the coordinates need not be primitive. Write \(R_{\mathrm{tot}}(N)\) for the
+unrestricted count with only \(a,b>0\).
+
+For admissible \(N\), every solution automatically has \((ab,6)=1\).
+The common values of \(G\) and \(E\) modulo 4 are 0 and 1; their sum is 2,
+so both are 1. The Eisenstein norm has values 0 and 1 modulo 3; again both
+summands must be 1. Thus the prime obstructions start at 5.
+
+Let \(\mathcal B=\{p\geq5:p\text{ prime},\ p\not\equiv1\pmod {12}\}\).
+For \(p\in\mathcal B\), let \(B_{p,I}(N)\) count the tuples in \(R_I(N)\) with
+\(p\mid ab\). A tuple surviving every such obstruction has values in \(C\).
+Those values have primitive representations in both rings, even if the surviving
+tuple's own coordinates have common split-prime factors.
+
+## The local calculation really is summable
+
+For fixed \(p\geq5\) and nonzero \(N\), define \(\beta_p(N)\) as the limiting
+proportion of solutions of (1) modulo \(p^k\) with \(p\mid ab\).
+Both numerator and denominator use all residue solutions, including singular
+ones. The [local proof](SIMULTANEOUS_NORM_LOCAL_DENSITIES.md) establishes the
+existence of the normalized limits and the following bounds.
+
+**Local theorem L12.** For every \(p\in\mathcal B\) and positive integer \(N\),
+
+\[
+0\leq \beta_p(N)\leq\frac9{p^2}.
+\tag{2}
+\]
+
+If \(p\nmid N\), the exact formulas are
+
+\[
+\beta_p(N)=
+\begin{cases}
+\displaystyle\frac{2(3p^2-1)}{p(p^3-p^2+3p+1)},&p\equiv5,7\pmod {12},\\[6pt]
+\displaystyle\frac2{p(p-1)},&p\equiv11\pmod {12}.
+\end{cases} \tag{3}
+\]
+
+These are **not** the raw finite-field fractions. In particular the finite-field
+loss is of order \(p^{-3}\) at primes \(11\pmod {12}\), while the lifted loss
+is of order \(p^{-2}\). Singular lifts matter but do not destroy summability.
+The proof of (2) at primes dividing \(N\) uses Cauchy--Schwarz for the local
+norm densities and is uniform in \(v_p(N)\).
+
+Even the coarse bound (2) gives a strict margin, uniformly in the target:
+
+\[
+\sum_{p\in\mathcal B}\beta_p(N)
+\leq9\sum_{\substack{n\geq5\\(n,6)=1}}\frac1{n^2}
+=\pi^2-9<1. \tag{4}
+\]
+
+Thus this route has no local mass deficit. Turning these local proportions into
+proportions among the integer tuples counted by \(R_I(N)\) remains a global task.
+
+## The large-prime tail can already be controlled
+
+**Tail lemma T12.** For every \(\varepsilon>0\), uniformly in \(N\) and
+\(P\geq2\),
+
+\[
+\sum_{\substack{p\in\mathcal B\\p>P}}B_{p,I}(N)
+\ll_\varepsilon\frac{N^{1+\varepsilon}}P. \tag{5}
+\]
+
+To prove this, let \(r_G(n),r_E(n)\) count all ordered integer representations
+by the two norms. Their divisor formulas give
+\(r_G(n)\leq4\tau(n)\), \(r_E(n)\leq6\tau(n)\). Therefore any fixed pair of
+values \(a,b\) contributes at most
+\(576\tau(a)^2\tau(b)^2\ll_\varepsilon N^\varepsilon\) eight-tuples.
+For each forbidden prime at least one norm is anisotropic modulo \(p\);
+\(p\mid a\) forces both coordinates in that norm to be divisible by \(p\),
+and hence \(p^2\mid a\). The same holds for \(b\). Counting in the full
+positive interval \(1\leq a\leq N-1\) gives at most
+\(2\lfloor(N-1)/p^2\rfloor\leq2N/p^2\) relevant pairs, and restricting to
+\(I\) cannot increase this count. Summing over integers instead of primes and
+using \(\sum_{n>P}n^{-2}\leq1/(P-1)\leq2/P\) proves (5). The floor bound
+avoids an unnecessary endpoint error for each prime. It includes singular
+tuples and primes dividing \(N\).
+
+This is an unconditional integer-counting bound. To make it negligible relative
+to \(R_I(N)\), a sufficiently strong lower bound for \(R_I(N)\) is still needed.
+
+## A sufficient counting theorem, with its exact hypotheses
+
+**Conditional reduction C12.** Suppose there are constants \(c>0\) and
+\(\theta>0\), such that for all sufficiently large admissible \(N\),
+
+\[
+R_I(N)\geq cN, \tag{H1}
+\]
+
+and the summed bad-count estimate holds **inside the same balanced interval**:
+
+\[
+\sum_{\substack{p\in\mathcal B\\p\leq N^\theta}}B_{p,I}(N)
+\leq R_I(N)\sum_{\substack{p\in\mathcal B\\p\leq N^\theta}}\beta_p(N)
++o(N). \tag{H2}
+\]
+
+Then Target S12 holds. Hypotheses (H1) and (H2) are not proved here.
+
+Indeed put \(P=N^\theta\). By (4), dividing (H2) by (H1) gives
+
+\[
+\frac1{R_I(N)}\sum_{\substack{p\in\mathcal B\\p\leq P}}B_{p,I}(N)
+\leq\pi^2-9+o(1).
+\]
+
+By (5) and (H1), the remaining fraction is
+\(O_\varepsilon(N^{\varepsilon-\theta})\).
+Choose \(0<\varepsilon<\theta\). Both errors tend to zero, so the union of
+all bad events occupies at most \(\pi^2-9+o(1)<1\) of the tuples. At least
+\((10-\pi^2-o(1))R_I(N)\) tuples survive the union bound. The limiting margin
+is approximately 13.04 percent of the balanced candidate count. Their values lie in
+\(C\), and balance was built into \(R_I(N)\). This proves the implication.
+
+No estimates for intersections of several bad-prime events are required. One
+stronger sufficient version of (H2) is the individual estimate
+\[
+B_{p,I}(N)\leq\beta_p(N)R_I(N)+Kp^A N^{1-\eta}
+\quad(p\leq N^\theta),\qquad \eta>\theta(A+1),
+\]
+with fixed \(A\geq0\), \(K>0\). Summing its errors gives
+\(O(N^{1-\eta+\theta(A+1)})=o(N)\). Every fixed \(\theta>0\) is allowed.
+Even the weaker bound \(N^\varepsilon(N/P+\sqrt N)\) would allow this by
+choosing \(\varepsilon<\min(\theta,1/2)\); the sharper tail improves the
+estimate without enlarging that exponent scope. Moreover, a forbidden prime
+larger than \(\sqrt N\) cannot divide either positive summand.
+Effective constants, effective validity thresholds, and an
+effective error bound replacing the little-oh term would yield an effective
+cutoff; the local margin alone does not.
+
+A lower bound for \(R_{\mathrm{tot}}(N)\) does not establish (H1). Even knowing
+\(R_I(N)\sim R_{\mathrm{tot}}(N)/3\) would not suffice alongside only a global
+bad-count bound \((\pi^2-9+o(1))R_{\mathrm{tot}}(N)\): that bound can exceed
+the entire balanced count. Both inputs of C12 concern \(R_I\) and \(B_{p,I}\).
+
+## What the global correlation actually is
+
+The divisor formulas also identify the arithmetic weight explicitly. Set
+
+\[
+h(n)=r_G(n)r_E(n)/24.
+\]
+
+Let \(K=\mathbb Q(\zeta_{12})\). Its four Dirichlet characters are
+\(1,\chi_{-4},\chi_{-3},\chi_{12}\). For \(\Re s>1\), direct Euler-factor
+comparison gives
+
+\[
+\sum_{n\geq1}\frac{h(n)}{n^s}
+=\frac{\zeta(s)L(s,\chi_{-4})L(s,\chi_{-3})L(s,\chi_{12})}
+ {L(2s,\chi_{12})},\qquad\chi_{12}=\chi_{-4}\chi_{-3}. \tag{6}
+\]
+
+Equivalently, this is exactly \(\zeta_K(s)/L(2s,\chi_{12})\).
+
+With \(t=p^{-s}\), the local factors are
+
+| Prime | Euler factor for \(h\) |
+|---|---|
+| \(p\equiv1\pmod {12}\) | \((1+t)/(1-t)^3=\sum_{e\geq0}(e+1)^2t^e\) |
+| \(p\equiv5,7\pmod {12}\) | \((1+t^2)/(1-t^2)^2=\sum_{j\geq0}(2j+1)t^{2j}\) |
+| \(p\equiv11\pmod {12}\), or \(p=2,3\) | \(1/(1-t^2)\) |
+
+There are no omitted ramified-prime corrections. At \(p=2\), the local factor
+of \(\zeta_K\) is \((1-t)^{-1}(1+t)^{-1}=(1-t^2)^{-1}\), using
+\(\chi_{-3}(2)=-1\); at \(p=3\), the same follows from
+\(\chi_{-4}(3)=-1\). In both cases \(\chi_{12}(p)=0\).
+
+Let \(a_K(n)\) count the nonzero integral ideals of \(K\) of norm \(n\).
+Multiplying the absolutely convergent series in (6) gives the exact identities
+
+\[
+h(n)=\sum_{d^2\mid n}\mu(d)\chi_{12}(d)a_K(n/d^2),\qquad
+a_K(n)=\sum_{d^2\mid n}\chi_{12}(d)h(n/d^2). \tag{9}
+\]
+
+Their supports coincide: every prime outside \(1\pmod {12}\), including 2
+and 3, must occur to an even exponent. Their weights differ, for example
+\(h(25)=3\), \(a_K(25)=2\), whereas \(h(121)=1\), \(a_K(121)=2\).
+Consequently a correlation theorem for ideal coefficients must be transferred
+through (9), including its congruences and square-divisor weights.
+
+In particular,
+\[
+R_I(N)=576\sum_{\substack{a+b=N\\a/N\in I}}h(a)h(b),\qquad
+R_{\mathrm{tot}}(N)=576\sum_{\substack{a+b=N\\a,b>0}}h(a)h(b).
+\]
+For primitive representations in both rings the normalized weight is instead
+\(f(n)=4^{\omega(n)}1_C(n)\), where \(\omega(1)=0\). Each split prime has two
+primitive choices in each ring and the units contribute 24. The exact balanced
+primitive tuple count is consequently
+
+\[
+576\sum_{N/3\leq a\leq2N/3}f(a)f(N-a). \tag{7}
+\]
+
+The real density is also explicit: the two binary norm level densities are
+\(\pi\) and \(2\pi/\sqrt3\). Integrating their product for the two summands
+over \(a\in[N/3,2N/3]\) gives the balanced singular integral
+\(4\pi^4N/9>0\). This supplies the archimedean factor, not an integer count.
+
+These identities describe a concrete binary shifted correlation. A one-variable
+Dirichlet series does not prove the positivity of its individual additive
+coefficients. In particular (6) cannot be substituted for (H1) or (H2).
+
+Nor is the system a generic nonsingular intersection of three quadrics. For
+\(Q_1=G(X)-E(U)\), \(Q_2=G(Z)-E(V)\), \(Q_3=G(X)+G(Z)\), its pencil has
+
+\[
+\det(\lambda Q_1+\mu Q_2+\nu Q_3)
+=\frac9{16}\{\lambda\mu(\lambda+\nu)(\mu+\nu)\}^2. \tag{8}
+\]
+
+The determinant discriminant vanishes, and the pencil has minimum rank four.
+The affine fibre also has singular boundary surfaces at \(a=0\) or \(b=0\).
+Our real balanced region avoids those surfaces but does not repair the failed
+hypotheses of a generic circle-method theorem. Rational parametrization gives
+denominators; clearing them replaces \(N\) by \(d^2N\), so it does not solve
+the integral fixed-target problem.
+
+## An unconditional global count averaged over targets
+
+The quartic connection does give a balanced count after averaging the target.
+The following is a standard consequence of one-variable ideal counting, not a
+pointwise substitute for either (H1) or (H2).
+
+**Averaged theorem A12.** Put
+\[
+\kappa_K=\operatorname*{Res}_{s=1}\zeta_K(s),\qquad
+\rho=\frac{\kappa_K}{L(2,\chi_{12})}>0.
+\]
+As \(X\to\infty\) through positive real values,
+\[
+\sum_{\substack{X<N\leq2X\\N\equiv2\ (12)}}R_I(N)
+=128\rho^2X^2+O(X^{7/4}). \tag{10}
+\]
+The field is fixed, and the implied constant may depend on it.
+
+The precise imported estimate is [Debaene, arXiv:1611.10103v2,
+Corollary 2](https://arxiv.org/html/1611.10103v2): for a fixed degree-four
+number field and every \(x\geq1\),
+\[
+A_K(x):=\sum_{n\leq x}a_K(n)=\kappa_Kx+O_K(x^{3/4}).
+\]
+It applies to all integral ideals, not only principal ideals. Apply (9) and sum:
+\[
+\begin{split}
+H(x):=\sum_{n\leq x}h(n)
+&=\sum_{d\leq\sqrt x}\mu(d)\chi_{12}(d)A_K(x/d^2)\\
+&=\rho x+O\left(x^{3/4}\sum_{d\geq1}d^{-3/2}+\sqrt x\right)
+=\rho x+O(x^{3/4}).
+\end{split}
+\]
+The \(O(\sqrt x)\) term extends the main coefficient sum to infinity.
+
+Set \(h_6(n)=h(n)\mathbf1_{(n,6)=1}\), and \(H_6(x)=\sum_{n\leq x}h_6(n)\).
+Removing the two Euler factors \((1-p^{-2s})^{-1}\) gives exactly
+\[
+H_6(x)=H(x)-H(x/4)-H(x/9)+H(x/36)
+=\rho_6x+O(x^{3/4}),\qquad \rho_6=\tfrac23\rho.
+\]
+Here \(H(y)=0\) for \(0\leq y<1\); the same estimates can be used on this
+bounded range after enlarging their constants. A supported value of \(h_6\)
+is automatically \(1\pmod {12}\).
+
+Summing over \(N\) now removes the fixed additive constraint. For a given \(a\),
+the allowed \(b\) lie between
+\[
+L(a)=\max(a/2,X-a),\qquad U(a)=\min(2a,2X-a).
+\]
+Thus the left side of (10), divided by 576, is exactly
+\[
+\sum_{X/3\leq a\leq4X/3}h_6(a)
+\bigl(H_6(U(a))-H_6(L(a))\bigr).
+\]
+The strict lower target bound is \(b>X-a\). The other lower bound is
+\(b\geq a/2\); it causes no missing endpoint because a supported \(a\) is
+odd, so \(a/2\) is not an integer. No extra congruence restriction is needed:
+two supported values already sum to \(2\pmod {12}\).
+
+The inner errors contribute \(O(X^{3/4}H_6(4X/3))=O(X^{7/4})\).
+Writing \(g=U-L\), its two pieces are
+\[
+g(a)=\begin{cases}
+3a-X,&X/3\leq a\leq2X/3,\\
+2X-\tfrac32a,&2X/3\leq a\leq4X/3.
+\end{cases}
+\]
+It vanishes at both endpoints, has total variation \(2X\), and integral
+\(X^2/2\). Abel summation using the estimate for \(H_6\) therefore gives
+\[
+\sum_a h_6(a)g(a)=\rho_6X^2/2+O(X^{7/4}).
+\]
+Multiplication by \(576\rho_6\) proves (10), since
+\(288\rho_6^2=128\rho^2\).
+
+The constant can also be evaluated:
+\[
+\rho=\frac{\log(2+\sqrt3)}{2\sqrt3},\qquad
+128\rho^2=\frac{32}{3}\log^2(2+\sqrt3).
+\]
+Indeed \(L(1,\chi_{-4})=\pi/4\), \(L(1,\chi_{-3})=\pi/(3\sqrt3)\), and
+\[
+L(1,\chi_{12})=\int_0^1\frac{1-x^4}{1+x^6}\,dx
+=\frac{\log(2+\sqrt3)}{\sqrt3}.
+\]
+For the last integral, differentiate the logarithm of
+\((x^2+\sqrt3x+1)/(x^2-\sqrt3x+1)\). The classical partial-fraction expansion
+of \(\pi^2\csc^2(\pi z)\), grouping the four nonzero residue classes modulo
+12, gives
+\[
+L(2,\chi_{12})=\frac{\pi^2}{144}
+\left(\csc^2\frac\pi{12}-\csc^2\frac{5\pi}{12}\right)
+=\frac{\pi^2}{6\sqrt3}.
+\]
+These values give \(\kappa_K=\pi^2\log(2+\sqrt3)/36\) and the stated \(\rho\).
+
+The averaged main term is positive. It establishes neither the pointwise lower
+bound (H1) nor the bad-prime estimate (H2). In particular, the binary coverage
+target remains open here.
+
+## The averaged coordinate count after the full sieve
+
+Set \(g(n)=h(n)\mathbf1_C(n)\). Thus
+\[
+R_I^{\mathrm{good}}(N)=576\sum_{\substack{a+b=N\\a/N\in I}}g(a)g(b)
+\]
+counts coordinate tuples whose two values lie in \(C\). Their own coordinates
+need not be primitive at allowed split primes. Define
+\[
+D(s)=
+\prod_{p\equiv5,7\ (12)}\frac{(1-p^{-2s})^2}{1+p^{-2s}}
+\prod_{p\equiv11\ (12)}(1-p^{-2s}),\qquad D=D(1).
+\]
+
+**Sieved averaged theorem A12G.** With the same fixed field and interval as A12,
+\[
+\sum_{\substack{X<N\leq2X\\N\equiv2\ (12)}}R_I^{\mathrm{good}}(N)
+=128\rho^2D^2X^2+O(X^{7/4})
+=\frac{32}{3}\log^2(2+\sqrt3)D^2X^2+O(X^{7/4}). \tag{14}
+\]
+This is another consequence of the same ideal-counting input used in A12.
+
+To prove it, first remove 2 and 3 as in \(h_6\), then remove every remaining
+forbidden Euler factor. The table following (6) gives
+\[
+\sum_{n\geq1}\frac{g(n)}{n^s}
+=D(s)\sum_{n\geq1}\frac{h_6(n)}{n^s}\qquad(\Re s>1).
+\]
+There are no further factors at 2 and 3. Writing
+\(D(s)=\sum_{d\geq1}\delta_D(d)d^{-2s}\), the local expansions are
+\[
+\frac{(1-q)^2}{1+q}=1-3q+4q^2-4q^3+\cdots,
+\qquad 1-q,
+\]
+where \(q=p^{-2s}\), for the two respective prime types. At \(\Re s=3/4\)
+their absolute coefficient sums are
+\(1+3p^{-3/2}+4p^{-3}/(1-p^{-3/2})\) and \(1+p^{-3/2}\).
+Their product converges, so
+\[
+\sum_{d\geq1}\frac{|\delta_D(d)|}{d^{3/2}}<\infty.
+\]
+In fact \(D(s)\) is absolutely convergent throughout \(\Re s>1/2\), and
+\(D>0\).
+
+The exact square-divisor convolution is
+\[
+g(n)=\sum_{d^2\mid n}\delta_D(d)h_6(n/d^2).
+\]
+Using the summatory estimate for \(H_6\) from A12 gives
+\[
+\begin{split}
+S_g(x):=\sum_{n\leq x}g(n)
+&=\sum_{d\leq\sqrt x}\delta_D(d)H_6(x/d^2)\\
+&=\rho_6Dx+O(x^{3/4}).
+\end{split}
+\]
+The error sum is bounded by \(O(x^{3/4}\sum_d|\delta_D(d)|d^{-3/2})\).
+Extending the main coefficient sum to infinity costs at most a constant times
+\[
+x\sum_{d>\sqrt x}\frac{|\delta_D(d)|}{d^2}
+\leq x^{3/4}\sum_{d>\sqrt x}\frac{|\delta_D(d)|}{d^{3/2}}.
+\]
+The balanced-region proof of A12 now applies with \(g\) in place of \(h_6\).
+Its support is still odd and \(1\pmod {12}\), so the same endpoint argument
+applies. The leading constant is multiplied by \(D^2\), and the error remains
+\(O(X^{7/4})\), proving (14).
+
+The [exact interval checker](verify_simultaneous_norm_survival.py) and its
+[receipt](simultaneous_norm_survival_checks.json) certify
+\[
+0.633187<D^2<0.633191.
+\]
+For reproducibility, it multiplies the squared factors through primes \(10^6\)
+with directed integer rounding at scale \(10^{30}\). For each omitted prime
+the negative logarithm of its factor is at most \(6/(p^2-1)\). Summing over
+all omitted integers yields a tail product at least
+\(1-3(10^{-6}+(10^6+1)^{-1})\). Thus the displayed interval is rigorous,
+and \(D^2\) rounds to 0.63319 at five decimal places.
+
+Consequently
+\[
+\frac{\sum_{X<N\leq2X,\ N\equiv2\ (12)}R_I^{\mathrm{good}}(N)}
+ {\sum_{X<N\leq2X,\ N\equiv2\ (12)}R_I(N)}
+=D^2+O(X^{-1/4}).
+\]
+Approximately 63.3 percent of the weighted coordinate count survives on this
+dyadic average. This is not a fraction of targets, a per-target survival
+fraction, or a count restricted to primitive coordinates. The unweighted
+successful-pair conclusion is the separate corollary P12.
+
+## Exact finite check
+
+The [checker](verify_simultaneous_norm_sums.py) and its
+[receipt](simultaneous_norm_sums_checks.json) cover every target
+\(N\equiv2\pmod {12}\), \(2\leq N\leq10^8\): 8,333,334 targets, with last
+target 99,999,998. There are no unbalanced exceptions. The balanced exceptions
+are exactly
+
+\[
+14,\ 38,\ 50,\ 62,\ 86,\ 230,\ 242.
+\]
+
+For example \(230=1+229\) and \(242=1+241\) satisfy the unbalanced statement.
+All seven unbalanced witnesses are retained in the receipt.
+
+Membership is exact without sieving to \(10^8\): an integer
+\(n\equiv1\pmod {12}\) belongs to \(C\) iff it has no forbidden prime factor
+\(p\leq\sqrt n\). If all smaller factors are allowed, there can be at most one
+remaining forbidden factor, of exponent one. Its residue must then be 1 because
+\(n\) and the other factors are 1; this is a contradiction. Thus sieving the
+compressed values \(12i+1\) by forbidden primes up to the square root suffices.
+
+Writing \(N=12j+2\), test \(a=12i+1\), \(b=12(j-i)+1\). Up to swapping,
+balance is exactly \(\lceil j/3\rceil\leq i\leq\lfloor j/2\rfloor\).
+The checker exhausts these indices until it finds a witness; only for a balanced
+failure does it search the full interval \(0\leq i\leq\lfloor j/2\rfloor\).
+It validates every found balanced witness, independently factors all 8,334
+represented integers up to 100,000, rejects known nonmembers, and compares the
+vector search with direct scalar enumeration through 5,000.
+
+Replay from the repository root with Python 3.12.3 and NumPy 1.26.4:
+
+```sh
+python3 research/arithmetic/verify_simultaneous_norm_sums.py --limit 100000000
+python3 research/arithmetic/verify_simultaneous_norm_local.py
+python3 research/arithmetic/verify_simultaneous_norm_survival.py
+```
+
+The receipt pins checker bytes and deterministic membership/witness hashes. This
+is internal computational evidence; no external review or formal proof is claimed.
+
+## The longer-term fixed-modulus question
+
+For a fixed \(m\geq3\), put
+\(A_m=\{a\geq1:p\mid a\Rightarrow p\equiv1\pmod m\}\).
+The proposed broader conjecture is
+
+\[
+N\equiv2\pmod {\operatorname{lcm}(2,m)}
+\quad\Longrightarrow\quad N\in A_m+A_m
+\qquad\text{for all sufficiently large }N.
+\]
+
+The threshold may depend on \(m\); no uniformity as \(m\) grows is asserted.
+The congruence is necessary because every member of \(A_m\) is odd and
+\(1\pmod m\). The two quadratic characters give a specific model for
+\(m=12\); the local proof and conditional reduction here do not supply the
+corresponding inputs for arbitrary moduli.
+
+## Literature and the remaining obligation
+
+- Ramaré--Viswanadham, [arXiv:2509.23260v1](https://arxiv.org/html/2509.23260v1),
+  Introduction and Theorem 1.6: explicitly includes the simultaneous sequence in
+  its sieve framework; its stated additive theorem is ternary Gaussian. The
+  positive-relative-density subset theorem cannot simply take \(C\), whose
+  relative density in the Gaussian sequence tends to zero.
+- Malavika--Ramaré, [arXiv:2604.09448v1](https://arxiv.org/html/2604.09448v1),
+  Theorems 1.1--1.2 and the introduction's Loeschian discussion: estimates
+  quadratic-phase exponential sums and mentions simultaneous norms of sieve
+  dimension \(3/4\). This is not the fixed-target binary counting input above.
+- Iwaniec--Pomykała, [*Sums and differences of quartic norms* (1993)](https://www.cambridge.org/core/journals/mathematika/article/abs/sums-and-differences-of-quartic-norms/352BA2199EC45E35B20AD4B33EAEC4D3):
+  the publisher extract already discusses binary sums of integers composed of
+  primes splitting completely in an abelian field. The field
+  \(\mathbb Q(\zeta_{12})\) gives our restriction. The full paper was not
+  retrieved, so its precise theorem remains unaudited. **Novelty is unresolved.**
+  A specific analytic input is reproduced in [Runbo Li,
+  arXiv:2602.20917v6](https://arxiv.org/html/2602.20917v6), Section 4.1.1,
+  Lemma 4.3: the 1993 Proposition supplies a Type-II bilinear distribution
+  estimate with explicit range and weight hypotheses. This is not a reproduced
+  binary coverage theorem. Direct substitution of \(\mathbf1_C\) fails its
+  Siegel--Walfisz Condition A: on any dyadic interval, its entire mass \(T\)
+  lies in residue 1 modulo 12, so the discrepancy from the proposed average
+  \(T/\varphi(12)\) is \(3T/4\). The one-variable estimate in
+  Loughran--Matthiesen's Lemma 2.8 gives
+  \(T\asymp L/(\log L)^{3/4}\). The discrepancy therefore violates the
+  condition already when its demanded logarithmic power is 1. The indicator also allows fixed small
+  factors such as 13, violating the roughness support required by Condition B.
+  Li fixes the nonzero residue \(a\) in the introduction and principal
+  statements; substituting \(a=N\) requires additional growing-target
+  uniformity. A decomposition or modified formulation would have to address
+  all three obligations. No impossibility of such a modification is asserted,
+  and none of this audits the original main theorem.
+- Matthiesen, [*Linear correlations amongst numbers represented by positive
+  definite binary quadratic forms*](https://arxiv.org/html/1106.4690v3),
+  Theorem 1.1: requires pairwise
+  affine-independent forms. Repeated arguments \((a,a,N-a,N-a)\) fail this
+  hypothesis; it does not establish the needed binary correlation.
+- Pierce--Schindler--Wood, [arXiv:1509.04757v2](https://arxiv.org/pdf/1509.04757v2),
+  Theorem 1.1: requires at least ten variables and a nonvanishing determinant
+  discriminant, and concerns almost all target triples. Neither the hypotheses
+  nor that conclusion give the present eight-variable fixed line of targets.
+- Dietmann--Elsholtz, [*Sums of two numbers having only prime factors congruent
+  to one modulo four*](https://www.math.tugraz.at/~elsholtz/WWW/papers/greaves20.pdf),
+  already proves sufficiently-large Gaussian binary coverage using Greaves.
+  The new Gaussian paper's explicit all-positive result should be distinguished
+  from this earlier asymptotic theorem.
+
+The next mathematical task is to prove the pointwise balanced lower bound (H1)
+and the summed bad-prime estimate (H2), or find another argument for the
+positivity of (7). The local margin, sharper large-prime tail, and averaged
+counts before and after the full sieve have complete arguments with the stated
+ideal-counting input. Positive-proportion unweighted coverage follows from the
+stated Frobenian correlation theorem. The required every-target estimates, an
+effective cutoff, and the general fixed-modulus conjecture remain open here.

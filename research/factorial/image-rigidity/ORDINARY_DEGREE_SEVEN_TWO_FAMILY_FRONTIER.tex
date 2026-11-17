@@ -1,0 +1,90 @@
+\documentclass[11pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage[hidelinks]{hyperref}
+\newtheorem{theorem}{Theorem}
+\begin{document}
+\setlength{\emergencystretch}{1em}
+\title{Two remaining families for ordinary degree-seven binomial SFC}
+\author{}\date{}\maketitle
+Let $\mathcal L(X^j)=j!$ and put
+\[
+ P_j^{a,d}(t)=\sum_{k=0}^j\binom jk(aj+1)_{dk}t^k.
+\]
+For a nonzero phase $f$, Strong Factorial means that
+$\mathcal L(f^m)$ and $\mathcal L(f^{m+1})$ cannot both vanish
+at any positive integer $m$.
+
+\begin{theorem}[Exact two-family frontier]\label{thm:two-family-frontier}
+Strong Factorial for every ordinary complex univariate binomial
+of degree at most seven is equivalent to
+\[
+ \gcd_{\mathbb Q[t]}(P_{N-1}^{a,d},P_N^{a,d})=1
+\]
+at every terminal integer $N\ge6$ in exactly the following two rows:
+\[
+ \begin{array}{c|c|l}
+ (a,d)&\text{support}&\text{terminal restriction}\\ \hline
+ (1,6)&\{1,7\}&N\notin\{b7^r:1\le b\le6,\ r\ge0\}\\
+ (5,2)&\{5,7\}&N\equiv12,14\pmod{16}.
+ \end{array}
+\]
+Support $\{3,7\}$ is proved at every positive pair.
+For the first row, every hypothetical common root $t$ necessarily
+satisfies $v_7(-1/t)=1$ at every embedding into $\mathbb C_7$.
+For the second row, its gcd is either $1$ or a monic quadratic
+\[
+ t^2-\alpha t+\delta,\qquad
+ \alpha,\delta\in\mathbb Q_{>0},\quad \alpha^2<4\delta.
+\]
+Thus excluding these quadratic factors is equivalent to completing
+the second row. Coprimality on the two remaining rows is not asserted.
+\end{theorem}
+\begin{proof}
+Theorem \texttt{thm:residue-frontier} of the
+\href{ORDINARY_DEGREE_SEVEN_RESIDUE_FRONTIER.tex}{three-row residue classification}
+reduces degree seven to support $\{1,7\}$ at every $N\ge6$,
+support $\{3,7\}$ on three terminal progressions, and support
+$\{5,7\}$ on $N\equiv12,14\pmod{16}$.
+Theorem \texttt{thm:coprime} of the
+\href{LOWER_THREE_FOURTH_POWER_FROBENIUS_SFC.tex}{fourth-power Frobenius-minor proof}
+completes the entire middle support, including its three former
+progressions.
+
+Corollary \texttt{cor:pair} of the
+\href{PHYSICAL_PRIME_TOTAL_DEGREE_REDUCTION.tex}{physical prime-total-degree reduction},
+with $p=7$, proves the first support at each displayed excluded index
+$N=b7^r$. Its Theorem \texttt{thm:radius} confines any multiple
+root of $T_{N,N,6}$ to $v_7(-1/t)=1$.
+The same physical reduction's coefficientwise consecutive-moment
+identities show that a common zero of $P_{N-1}^{1,6},P_N^{1,6}$
+would be a multiple root of $T_{N,N,6}$.
+These statements hold over every algebraic embedding, since all the
+polynomials have rational coefficients.
+
+For the last row, Corollary \texttt{cor:factor-sign} of the
+\href{LOWER_FIVE_QUADRATIC_HALF_PLANE_REDUCTION.tex}{quadratic half-plane reduction}
+gives exactly the stated alternatives for the gcd at lower index
+$n=N-1$. Its conclusion includes the all-index degree bound of the
+earlier residue note.
+
+The two remaining rows are therefore sufficient for the earlier
+three-row criterion. Conversely they are subsets of the degree-seven
+assertion, so they are necessary. This is an exact equivalence
+without any finite cutoff or assertion about untested residues.
+As in the earlier classification,
+\[
+ \mathcal L((X^a(A+BX^d))^j)=A^j(aj)!P_j^{a,d}(B/A)
+ \qquad(AB\ne0).
+\]
+A common complex zero is equivalent to a nonconstant rational gcd;
+nonzero degenerate monomials have all positive moments nonzero.
+The earlier classification already supplies degree at most six and
+all supports through terminal order five.
+\end{proof}
+The written Frobenius-minor argument closes support $\{3,7\}$.
+The remaining lower-one gap-six and quadratic-factor exclusions,
+degree-seven binomial SFC, all-degree binomial SFC, and unrestricted
+FC/SFC remain open. All review and replay here are internal;
+no independent review, formal verification or priority is asserted.
+\end{document}

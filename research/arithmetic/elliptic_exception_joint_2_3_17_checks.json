@@ -121,7 +121,7 @@
   "formal_verification": false,
   "independent_whole_proof_replay": false,
   "local_only_ratio": "5321/23946",
-  "proof_sha256": "50aee618ee23d87440d61f409c7700360dee16c6e7feaafc170a689db8009a7f",
+  "proof_sha256": "7ee7d83f46de89349c9c7623bdb16e47cd3d3119b62adf512679b0bb3105ec56",
   "python": "3.12.3",
   "scope": "Exact finite-field enumeration, rational elliptic arithmetic, formal-depth witnesses and an exhaustive finite parity/weight count. Global saturation, the 2/3 local classifications, ELV1, formal groups and the height lattice remain separate written/imported premises. No complete Mordell--Weil basis, uniform annulus error or all-primes Hasse density is asserted.",
   "status": "pass"

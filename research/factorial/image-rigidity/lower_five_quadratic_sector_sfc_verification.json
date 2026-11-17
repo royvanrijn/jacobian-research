@@ -1,0 +1,103 @@
+{
+  "passed": true,
+  "total_checks": 163,
+  "controls": {
+    "generic_shift_five_rising_remainder_coefficients": 2,
+    "corrupted_shift_coefficient_rejections": 1,
+    "generic_fulljet_elimination_identities": 1,
+    "generic_rising_factorial_pairing_step": 1,
+    "literal_complete_polarization_composition_identities": 5,
+    "literal_polarization_diagonal_coefficients": 20,
+    "literal_moment_reversal_identities": 5,
+    "wrong_Gamma_orientation_rejections": 1,
+    "literal_Gamma_matrix_characteristic_coefficients": 27,
+    "generic_largest_offdiagonal_weight_identity": 1,
+    "generic_spectral_ratio_derivative": 1,
+    "generic_three_region_spectral_margins": 3,
+    "positive_spectral_margin_coefficients": 7,
+    "generic_Pick_partial_fraction_identity": 1,
+    "generic_imaginary_numerator_identity": 1,
+    "generic_negative_reciprocal_disk_identity": 1,
+    "generic_positive_delta_factorization": 1,
+    "generic_angle_ratio_cancellation": 1,
+    "generic_factor_root_order_controls": 3,
+    "generic_angle_endpoint_identities": 2,
+    "positive_angle_endpoint_coefficients": 10,
+    "exact_low_region_angular_comparisons": 2,
+    "literal_Gamma_phase_normalization_coefficients": 60,
+    "literal_positive_rational_Gamma_pair_gcd_controls": 6
+  },
+  "scope": {
+    "all_positive_real_Gamma_beta": true,
+    "lower_five_quadratic_gap_all_indices": true,
+    "ordinary_support_five_seven_all_indices": true,
+    "lower_moment_uniform_Hurwitz_assumption": false,
+    "algebraic_or_p_integral_shape_restriction": false,
+    "all_degree_seven_binomial_SFC": false,
+    "unrestricted_FC_or_SFC": false
+  },
+  "literal_Gamma_profiles": [
+    {
+      "n": 1,
+      "beta": "1/2",
+      "exact_phase_coefficients": true,
+      "exact_pair_coprime": true,
+      "angle_ratio": "21344/32585"
+    },
+    {
+      "n": 2,
+      "beta": "1/7",
+      "exact_phase_coefficients": true,
+      "exact_pair_coprime": true,
+      "angle_ratio": "15062327/25228380"
+    },
+    {
+      "n": 3,
+      "beta": "3",
+      "exact_phase_coefficients": true,
+      "exact_pair_coprime": true,
+      "angle_ratio": "2408/4693"
+    },
+    {
+      "n": 4,
+      "beta": "28",
+      "exact_phase_coefficients": true,
+      "exact_pair_coprime": true,
+      "angle_ratio": "114725/369576"
+    },
+    {
+      "n": 5,
+      "beta": "100",
+      "exact_phase_coefficients": true,
+      "exact_pair_coprime": true,
+      "angle_ratio": "4082986/24587253"
+    },
+    {
+      "n": 6,
+      "beta": "5/2",
+      "exact_phase_coefficients": true,
+      "exact_pair_coprime": true,
+      "angle_ratio": "554064/1089061"
+    }
+  ],
+  "source_sha256": {
+    "LOWER_FIVE_QUADRATIC_SECTOR_SFC.tex": "150d433c66c8bd1ac0c82bbe0fff6a53ad701c2aede630e961c783f27c8facce",
+    "lower_five_quadratic_sector_sfc.py": "3e5e3662c6a827f361041c2b4b7761248bb4fb5bc84f6463b9d6b72815cacf69",
+    "LOWER_TWO_PRIME_GAP_SFC.tex": "8453b5b0ccd220573ef106fa26790e1f691885970b8c2116f036ed893ab2c200",
+    "CUBIC_ADJOINT_STABILITY_SFC.tex": "ea2510e511545b9dd7a49a0796d75c45575687e60770c3359d38c5bc99cb4125",
+    "sources/wagner-multivariate-stable-polynomials-2011.pdf": "ab72551b3407480e08185ce2b0a9527c8cea385b95ef93dcf904ec90a46170c1"
+  },
+  "exact_imports": {
+    "general_fulljet_concomitant": "LOWER_TWO_PRIME_GAP_SFC.tex thm:mixed proof Eq3 atd2",
+    "Gamma_matrix_and_auxiliary_bound": "CUBIC_ADJOINT_STABILITY_SFC.tex lem:gamma; Eqs3-4",
+    "GWS": "Wagner Theorem4.1, PDFp11 Section4; symmetric multiaffine polarization on an open convex half-plane"
+  },
+  "python": "3.12.3",
+  "sympy": "1.14.0",
+  "independent_replay": false,
+  "formal_verification": false,
+  "external_review": false,
+  "novelty_claim": false,
+  "priority_claim": false,
+  "command": ".venv/bin/python research/factorial/image-rigidity/lower_five_quadratic_sector_sfc.py"
+}

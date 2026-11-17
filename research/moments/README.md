@@ -12,6 +12,7 @@ Generalized vanishing, Gaussian moments and Image/Mathieu spaces.
 | Gaussian dimension-degree boundary | Unpublished; independent review pending | open | [Source](../../unpublished/gaussian-boundary/README.md) |
 | Complete reductive Mathieu classification | Published preprints | proved | [Source](../../results/README.md) |
 | All-degree Gaussian structure and safety gap | Internal result | open | [Source](vanishing/GAUSSIAN_AMPLITUDE_IDEALS_AND_WEIGHT_INVARIANCE.md) |
+| Complete quadratic-W Gaussian finite-image classification | Internal result | proved | [Source](vanishing/GAUSSIAN_QUADRATIC_W_FINITE_IMAGE_CLASSIFICATION.md) |
 | Gaussian H(2,1): affine charts, radial phases and obstructions | Internal result | proved | [Source](vanishing/GAUSSIAN_AFFINE_ISOTROPIC_CHART.md) |
 | Bidegree-(4,4) two-pair Image/Mathieu counterexample | Internal result | proved | [Source](../foundations/extended-geometry/TWO_PAIR_IMAGE_MATHIEU_COUNTEREXAMPLE.md) |
 | All even primitive two-pair Image degrees | Internal result | proved | [Source](../foundations/extended-geometry/TWO_PAIR_IMAGE_MATHIEU_COUNTEREXAMPLE.md) |

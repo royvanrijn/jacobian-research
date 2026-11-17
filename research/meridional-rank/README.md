@@ -4,7 +4,7 @@
 
 Knot-group representations, branched-cover bounds and explicit sharp families.
 
-**Authored assessment:** There are 121 retained named mr=b=4 certificates: 66 known BJW graph-cover cases, 52 mixed non-graph covers and three binary cases with unresolved family comparison. All sixteen alternating GL3/A6 knots have unrestricted complex augmentation rank exactly three and sharp trefoil-sum gaps ar=s+3<mr=b=s+4. Their completely reducible rank-one fixed-space bounds and all finite complex reflection-class bounds stop at three. Worldwide priority and nonsemisimple or other finite-target routes remain open.
+**Authored assessment:** Alongside 121 named thirteen-crossing certificates with mr=b=4, an explicit prime hyperbolic knot has crossing number 17, genus seven and mr=b=4. Its actual double cover is not a graph manifold. Its trefoil sums have mr=b=4+s, while every Coxeter reflection-class bound is at most 3+s. All sixteen alternating GL3/A6 examples have complex augmentation rank three and stronger paired-span and invariant-form bounds. Worldwide priority and full MRC remain open.
 
 | Current result | Evidence / publication | Graph status | Main source |
 |---|---|---|---|
@@ -36,26 +36,36 @@ Knot-group representations, branched-cover bounds and explicit sharp families.
 | All-dimension binary rank-one method boundary on 293 knots | Internal result | proved | [Source](representations/RANK_ONE_BINARY_BOUNDARY.tex) |
 | All-parameter augmentation rank three and sharp trefoil-sum gaps | Internal result | proved | [Source](representations/GENERIC_KCH_OBSTRUCTION.tex) |
 | Eight further exact rank-three reflective and ordinary augmentations | Internal result | proved | [Source](representations/A6_RANK_THREE_AUGMENTATIONS.tex) |
-| Sixteen unrestricted augmentation gaps and semisimple method bounds | Internal result | proved | [Source](representations/GENERIC_KCH_EXTENSIONS.tex) |
+| Sixteen augmentation gaps and bounds for rank-one representations | Internal result | proved | [Source](representations/GENERIC_KCH_EXTENSIONS.tex) |
 | All finite complex reflection-class bounds stop at three on sixteen knots | Internal result | proved | [Source](representations/FINITE_COMPLEX_REFLECTION_BOUNDARY.tex) |
+| Twenty-four sharp proofs from simple A8 quotients | Internal result | proved | [Source](representations/A8_SIMPLE_QUOTIENTS.tex) |
+| An explicit prime hyperbolic 17-crossing knot and sharp trefoil-sum family | Internal result | proved | [Source](representations/NEW_SEVENTEEN_CROSSING_KNOT.tex) |
+| Coxeter bounds fall short on the 17-crossing knot and its trefoil sums | Internal result | proved | [Source](representations/UNIVERSAL_17_REFLECTION_OBSTRUCTION.tex) |
+| Audited family exclusions and Rasmussen invariant six | Internal result | proved | [Source](representations/NEW_SEVENTEEN_FAMILY_COMPARISON.tex) |
 
 **Computed obligations:** 4 unresolved; 1 resolved within their exact scope.
 
 
 Scope limits:
 
-- The disjoint collections of 20, 24, 24, 3 and 50 knots give 121 retained named sharp-four values. The fifty new projective cases all lie in the existing BJW graph-cover family; they are not new-family MRC cases.
-- The new binary A7 target has order 161280, ordinary rank two and meridian-class rank four. Its three named positives have no claimed double-cover family exclusion or exact ordinary knot-group rank.
-- All sixteen alternating GL3/A6 knots have irreducible rank-one-meridian dimension at most three over every field and every nonzero meridian determinant, including unipotent meridians. Every U=1 augmentation with mu!=1 has rank at most three; explicit positive witnesses make complex augmentation rank exactly three, strictly below mr=b=4.
-- Every completely reducible rank-one-meridian representation on those sixteen knots has common-fixed codimension and displacement-image span at most three. Every finite complex reflection image needs at most three members of the meridian class, in any ambient dimension. Neither statement excludes arbitrary nonsemisimple representations or other finite-group class bounds.
-- For every one of the sixteen seeds K and every s>=0, ar_C(K#^s trefoil)=s+3<mr(K#^s trefoil)=b(K#^s trefoil)=s+4. The same-parameter augmentation construction uses mu=-1; independent cover sums prove the meridional equality.
-- For all 293 retained panel knots, rank-one F2 fixed-space codimension and displacement span are at most three in every finite ambient dimension. Irreducible binary rank-one representations have dimension at most three. This does not exclude rank-two displacements, other fields or other finite-group class bounds.
-- The 32 previously certified ordinary knot groups remain bounded above by three. All sixteen alternating GL3/A6 knots exclude sharp Coxeter reflection quotients, finite or infinite. The old eight reflective ranks are exactly three over C; the new A6 eight also have reflective rank exactly three.
+- The disjoint named collections of 20, 24, 24, 3 and 50 knots give 121 retained sharp-four values. Of these, 66 belong to the known BJW graph-cover family, 52 have mixed non-graph double covers, and three binary cases have unresolved family comparisons.
+- The binary A7 target has order 161280, ordinary rank two and meridian-class rank four. Its three named positives have no claimed double-cover family exclusion or exact ordinary knot-group rank.
+- All sixteen alternating GL3/A6 knots have irreducible rank-one-meridian dimension at most three over every field and every nonzero meridian determinant, including unipotent meridians. Their complex U=1 augmentation rank is exactly three, with the COR17 convention mu!=1, strictly below mr=b=4.
+- For arbitrary finite-dimensional rank-one-meridian representations of those sixteen knots, displacement-span dimension r and common-fixed codimension q satisfy r,q<=4, min(r,q)<=3 and r+q<=7. An invariant nondegenerate bilinear or involution-sesquilinear form gives r=q<=3 without semisimplicity.
+- For each of the sixteen seeds K and every s>=0, ar_C(K#^s trefoil)=s+3<mr(K#^s trefoil)=b(K#^s trefoil)=s+4. The augmentation construction uses the common parameter mu=-1; independent cover sums prove the meridional equality.
+- Completely reducible rank-one-meridian representations of those sixteen knots have fixed codimension and displacement span at most three. Every finite complex reflection image needs at most three members of the meridian class. Other finite targets and nonsplit representations remain separate questions.
+- For all 293 retained panel knots, rank-one F2 fixed-space codimension and displacement span are at most three in every finite ambient dimension. This does not exclude larger displacement rank, other fields or other finite-group class bounds.
+- The 32 certified ordinary knot groups have generating rank at most three; exact rank is not asserted. All sixteen alternating GL3/A6 knots have reflective augmentation rank exactly three and no sharp Coxeter reflection quotient, finite or infinite.
 - The 52 mixed-cover examples remain outside BJW and all four-face BBK rational origins. Higher-face arbitrary rational origins are universal and are not an exclusion obligation.
-- Normalized involutory-cover invariants are additive minus one. All 101 fractional-score seeds give sharp families K#^s trefoil with mr=b=4+s. Retained scores are lower bounds, not exact invariant suprema. Binary seeds use a field-independent three-sheet trefoil cover.
-- Worldwide priority, general-parameter comparisons on other retained knots, nonsemisimple rank-one methods, unrestricted meridional-rank additivity, universal finite-target detection and full MRC remain open.
+- The 101 earlier fractional-score seeds give sharp trefoil-sum families with mr=b=4+s. Their retained normalized-cover scores are lower bounds, rather than exact invariant suprema; unrestricted meridional-rank additivity remains open.
+- The same 24 ternary-affine/seven-sheet knots have independent full A8 double-transposition quotients. The target has order 20160, ordinary rank two and meridian-class rank four. These lower proofs use no older affine certificate or cover homology and add no named value.
+- The full G31 reflection class maps to the transposition class of S6. Every full meridional G31 reflection quotient already gives the same bound five by Coxeter and KCH methods, so it adds no detection through that class.
+- The additional knot K_* is the literal four-braid in NEW_SEVENTEEN_CROSSING_KNOT.tex. Its exact crossing number 17 distinguishes it from all 121 named cases. Its exterior is interval-certified hyperbolic, and its actual double branched cover is non-graph by nonzero closed representation volume. Closed-cover hyperbolicity is not asserted.
+- For every s>=0, K_*#^s trefoil has mr=b=4+s. Its eight-sheet action gives h_F3=h0+2s and a normalized score at least 7/2+s without computing h0. Independently, all Coxeter reflection-class bounds are at most 3+s.
+- The bounded primary-source audit proves K_* nonalternating with Rasmussen invariant six. It excludes positive and negative presentations, both strongly quasipositive chiralities, and the audited graph-cover, Coxeter-producing and symmetric-maximal-braid construction theorems.
+- Worldwide priority, unrestricted augmentation rank for K_*, remaining binary family comparisons, arbitrary nonsplit rank-one methods, universal finite-target detection and full MRC remain open.
 
-**Verification:** Current exact replays include all sixteen generic signed cores/folds/basis changes and fresh census bindings; eight new cyclotomic positives with 104 matrix crossings and 1352 cord equations; the retained373 unit identity and positive controls; and the earlier A7, projective50, binary293 and101 cover-sum packages. Isolated internal PDF algebra reviews and the original low-rank classification application are separately recorded. No formal verification or external human review is inferred. [Replay record](representations/generic_kch_extensions_verification.json).
+**Verification:** Current-edition replays pass for the new knot finite/Fox/mod-two/HNF certificates, actual topology and Sage interval modes. The independent reflection identity clears to the integer constant 16. Isolated internal PDF mathematical reviews retain their own edition hashes. Earlier named certificates, all sixteen generic augmentation gaps, and paired-span/form bounds remain retained. Original theorem and software imports, formal verification and external specialist review are separate. [Replay record](representations/new_seventeen_crossing_knot_verification.json).
 
 Tracked obligations (computed states):
 

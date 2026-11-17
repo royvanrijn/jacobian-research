@@ -1,0 +1,80 @@
+{
+  "claim": "No even equivariant full Long Weyl jet of common spatial degree23 through h5",
+  "status": "PASS",
+  "environment": {
+    "python": "3.12.3",
+    "arithmetic": "Fraction exact polynomial identities and bare integer modular determinants"
+  },
+  "cap": 23,
+  "source_weights": [
+    -1,
+    1,
+    4,
+    2
+  ],
+  "h_weight": 3,
+  "image_order": [
+    "R",
+    "T",
+    "D",
+    "S"
+  ],
+  "image_weights": [
+    -1,
+    2,
+    4,
+    1
+  ],
+  "h3": {
+    "basis_counts": [
+      54,
+      80,
+      102,
+      71
+    ],
+    "unknowns": 307,
+    "rows": 2005,
+    "nonzeros": 46159,
+    "rhs_nonzeros": 336,
+    "particular_terms": 59,
+    "exact_substitution": true,
+    "exact_independent_kernels": [
+      "G=R^3",
+      "G=R^4*S"
+    ],
+    "minor_size": 305,
+    "minor_det_modp": 199704,
+    "rank_Q": 305,
+    "all_solutions_first_R_correction_zero": true,
+    "forced_S2": "49/2*X^5-165/4*X^6*Q"
+  },
+  "target_gauge_h4_D_term": "R^3*S2+Pi^2(R^3,S)/8",
+  "target_gauge_h4_D_term_degree": 16,
+  "h5": {
+    "basis_counts": [
+      20,
+      34,
+      47,
+      29
+    ],
+    "unknowns": 130,
+    "rows": 1207,
+    "rhs_nonzeros": 96,
+    "augmented_minor_size": 131,
+    "augmented_minor_det_modp": 331880,
+    "rational_inconsistency": "augmented rank>=131 while coefficient rank<=130",
+    "h2_truncation_ST_defect": "-49/4*X^10*R^2"
+  },
+  "prime": 1000003,
+  "hashes": {
+    "check_graded_long_cap23.py": "78bc02799a65b5587a6dad0672d72e74776f1a719430546f7e95dfe1ed8c3e62",
+    "graded_long_cap23_witness.json": "9f4523d1b776289095f908b19f82ed6297fa243c672904831f072ad7e727be34",
+    "GRADED_LONG_CAP23_JET_OBSTRUCTION.md": "f2fe84667dfb00e180b8dc0abdb9b1f275b4fc8713e256ed1411b4d6bf244b67",
+    "check_long_graph_curvature.py": "3574e9a9fbfd9e19251709a6af9759909ed09a4f960a44df60e35a4480e04a0f",
+    "../dixmier-audit/verify_long_pbw.py": "0fd237f4954b4a45260b65ffef2e973e1f253e3b359e440da7d0cc6dbdd06eed"
+  },
+  "coverage_boundary": "Complete finite EVEN EQUIVARIANT degreecap23 first/second jet family, exact first-jet kernel classification, and nonzero augmented minor. No nongraded or odd-jet obstruction, cap24 exclusion, bounded normalization or DC1/DC2 theorem is claimed.",
+  "independent_replay": false,
+  "formal_verification": false,
+  "external_review": false
+}

@@ -1,0 +1,534 @@
+\documentclass[11pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb,amsthm,booktabs}
+\usepackage[hidelinks]{hyperref}
+\usepackage{xurl}
+\setlength{\emergencystretch}{2em}
+\newtheorem{theorem}{Theorem}
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{corollary}[theorem]{Corollary}
+\newcommand{\rk}{\operatorname{rank}}
+\newcommand{\mr}{\operatorname{mr}}
+\newcommand{\ar}{\operatorname{ar}}
+\newcommand{\C}{\mathbb C}
+\title{A generic rank-one obstruction for a seventeen-crossing knot}
+\author{Written paired-span proof and exact signed controls}
+\date{17 November 2026}
+\begin{document}
+\maketitle
+
+Let $K_*$ be the closure of the four-braid
+\[
+ \beta=\sigma_1\sigma_2\sigma_3^{-2}\sigma_2
+ \sigma_3^{-2}\sigma_2\sigma_1^2\sigma_2^3
+ \sigma_3^{-1}\sigma_2^3 .
+\]
+Three local folds reduce its signed Wirtinger system to a previously
+proved three-direction contradiction. The proof works over every
+field and every nonzero meridian determinant, including unipotent
+meridians. It uses roots and covectors separately and requires no
+preserved form or invertible pairing matrix.
+An explicit three-dimensional complex representation attains
+augmentation rank three. With the independent meridional-rank
+certificate this gives $\ar(K_*,\C)=3<4=\mr(K_*)=b(K_*)$.
+
+For a finite-dimensional representation $\rho:G_{K_*}\to GL(V)$,
+where $G_{K_*}=\pi_1(S^3\setminus K_*)$, define
+\[
+ S_\rho=\sum_{g\in G_{K_*}}\operatorname{im}(\rho(g)-I),\qquad
+ r=\dim S_\rho,\qquad q=\operatorname{codim}_V V^{G_{K_*}}.
+\]
+The first sum is a span of vector displacement images.
+
+\begin{theorem}\label{thm:pairedspans}
+Over every field, every finite-dimensional representation of
+$G_{K_*}$ with meridian displacement rank one satisfies
+\[
+ r\le4,\qquad q\le4,\qquad \min(r,q)\le3,\qquad r+q\le7.
+\]
+The representation need not be irreducible or completely reducible.
+\end{theorem}
+
+\section{The literal signed diagram}
+
+Number PD ports cyclically $0,1,2,3$, with the understrand in
+ports $0,2$. The following table gives the literal PD and its
+signed Wirtinger rows. A row $(o,a,b,\varepsilon)$ means
+\[
+ M_b=M_o^\varepsilon M_aM_o^{-\varepsilon}.
+\]
+The understrand enters port $0$. The overstrand enters port $1$
+when $\varepsilon=+$ and port $3$ when $\varepsilon=-$.
+The segment labels at ports $0,2$ belong to arcs $a,b$, respectively;
+both overports belong to arc $o$. Thus repeated PD segment labels
+check the arc assignment directly.
+\[
+\begin{array}{c|rrrr|rrrr}
+j&\multicolumn{4}{c|}{\mathrm{PD}_j}
+ &\multicolumn{4}{c}{(o,a,b,\varepsilon)}\\\hline
+0&4&2&5&1&0&1&2&-\\
+1&5&17&6&16&8&2&3&-\\
+2&27&6&28&7&3&13&14&+\\
+3&7&28&8&29&14&3&4&+\\
+4&17&9&18&8&4&8&9&-\\
+5&29&18&30&19&9&14&15&+\\
+6&19&30&20&31&15&9&10&+\\
+7&9&21&10&20&10&4&5&-\\
+8&2&22&3&21&10&0&1&-\\
+9&22&4&23&3&1&10&11&-\\
+10&23&11&24&10&5&11&12&-\\
+11&11&25&12&24&12&5&6&-\\
+12&25&13&26&12&6&12&13&-\\
+13&31&26&32&27&13&15&16&+\\
+14&13&33&14&32&16&6&7&-\\
+15&33&15&0&14&7&16&0&-\\
+16&15&1&16&0&0&7&8&-
+\end{array}
+\]
+The exact signed binding to the closure of $\beta$ is retained in
+\path{new17_generic_kch_inputs.json}; the optional topology replay
+reconstructs this explicit braid, rather than consulting a knot name.
+
+The seed arcs are $2,8,13,0$. Rows $1,\ldots,7,13$ give the new
+arcs $3,14,4,9,15,10,5,16$ in that order. Reverse row $0$ to obtain
+arc $1$, then rows $9,10,11,14$ give $11,12,6,7$.
+These thirteen steps produce all seventeen meridians, proving that
+the four seeds generate the knot group.
+
+\section{Independent root and covector families}
+
+Write a meridian image as
+\[
+ M_i=I-u_if_i,\qquad f_i(u_i)=d=1-\mu,\qquad
+ M_i^{-1}=I+\mu^{-1}u_if_i.
+\]
+The roots $u_i$ and linear covectors $f_i$ are nonzero, and
+$\mu=\det M_i\ne0$ is common to the conjugate meridians.
+At a signed crossing propagate the pair by
+\[
+ (u_b,f_b)=(M_o^\varepsilon u_a,f_aM_o^{-\varepsilon}).
+\]
+Two pairs give the same nonzero rank-one displacement exactly when
+they differ by $(u,f)\mapsto(cu,c^{-1}f)$, $c\ne0$.
+
+Let $S,T$ be the spans of the four seed roots and covectors.
+The seed matrices and their inverses preserve $S$.
+Using $AB-I=(A-I)B+(B-I)$ shows $S=S_\rho$; also
+$V^{G_{K_*}}=\bigcap_{\rm seeds}\ker f_i$.
+Thus $r=\dim S\le4$ and $q=\dim T\le4$.
+For a contradiction suppose $r=q=4$. Both seed families are
+independent in their own spaces. We do not assume $S=V$, $T=V^*$
+or a nonsingular evaluation matrix.
+
+Put
+\[
+ A=M_2,\quad B=M_8,\quad C=M_{13},\quad D=M_0,
+\]
+and let $H$ be the span of the first three roots and $F$ the span
+of their covectors. Write the pair of $D$ as $(v,\delta)$.
+Then $v\notin H$ and $\delta\notin F$.
+The eight early steps just listed use only $A,B,C$.
+Consequently their pairs lie in $H,F$; in particular this holds for
+\[
+ X=M_{10},\qquad P=M_5,\qquad Y=M_{16}.
+\]
+
+\begin{lemma}[Three local folds]\label{lem:folds}
+Under the simultaneous independence assumption $r=q=4$, the
+literal relations force
+\[
+ X=A,\qquad M_{11}=D,\qquad P=C,\qquad M_6=D,\qquad Y=B.
+\]
+These deductions hold over every field and every $\mu\ne0$.
+\end{lemma}
+\begin{proof}
+\emph{First fold.}
+Rows $0,8$ give $DAD^{-1}=X^{-1}DX$.
+Write the pairs of $A,X$ as $(a,f),(x,\xi)$ in $H,F$.
+For some $\lambda\ne0$ equality of the rank-one pairs says
+\[
+\begin{split}
+a-\delta(a)v&=\lambda\bigl(v+\mu^{-1}\xi(v)x\bigr),\\
+f+\mu^{-1}f(v)\delta
+ &=\lambda^{-1}\bigl(\delta-\delta(x)\xi\bigr).
+\end{split}
+\]
+Comparing the fourth root and fourth covector components gives
+$\lambda=-\delta(a)$ and $f(v)=\mu\lambda^{-1}$.
+The remaining components are
+\[
+ a=\lambda\mu^{-1}\xi(v)x,\qquad
+ f=-\lambda^{-1}\delta(x)\xi.
+\]
+Evaluation of the latter at $v$ gives $\delta(x)\xi(v)=-\mu$.
+Multiplication of the two displayed identities therefore yields
+$af=x\xi$, so $X=A$.
+In particular $\delta(a)f(v)=-\mu$; no division by $d$ was used.
+The group relation becomes $DAD=ADA$.
+For $O=M_1=DAD^{-1}$ this gives $AO=OD$, so row $9$ gives
+$M_{11}=O^{-1}AO=D$.
+
+\emph{Second fold.}
+Rows $10,11,12$ are the three inverse Hurwitz moves
+\[
+ (D,P)\longmapsto(P,N)\longmapsto(N,Q)\longmapsto(Q,C),
+ \qquad N=M_{12},\quad Q=M_6.
+\]
+Choose $P=(p,\pi)$ in $H,F$ and set
+$x=\pi(v)$, $y=\delta(p)$, $h=1+xy/\mu$.
+Direct pair propagation gives
+\[
+\begin{array}{c|c|c}
+ &\text{root}&\text{covector}\\\hline
+N&v+(x/\mu)p&\delta-y\pi\\
+Q&yv+hp&-(x/\mu)\delta+h\pi\\
+C&hv+(x/\mu)(1+h)p&h\delta-y(1+h)\pi .
+\end{array}
+\]
+The propagated pair on $C$ may differ from its seed pair by a
+reciprocal nonzero rescaling, but its root still lies in $H$
+and its covector in $F$. Either fourth component forces $h=0$.
+Hence $xy=-\mu$, so $x,y$ are nonzero.
+The last two pairs then have reciprocal scalar factors relative
+to the pairs of $D,P$. Therefore $Q=D$ and $C=P$ as full matrices.
+
+\emph{Third fold.}
+Rows $14,15,16$ now give
+\[
+ (D,Y)\longmapsto(Y,M_7)\longmapsto(M_7,D)\longmapsto(D,B).
+\]
+Each inverse Hurwitz move preserves the ordered product.
+Explicitly $DY=YM_7=M_7D=DB$, so $Y=B$.
+Only powers of $\mu$ and scalars already proved nonzero have been
+cancelled in these three folds.
+\end{proof}
+
+\section{The exact signed core}
+
+\begin{lemma}\label{lem:coretransfer}
+After the folds, the eight remaining signed relations are
+equivalent to the $13a_{392}$ reduced system in
+\cite[Lemma \texttt{lem:cores}]{extensions}. Their full root and
+covector spans would both have dimension three.
+\end{lemma}
+\begin{proof}
+The surviving relations are
+\[
+\begin{array}{rrrr}
+(8,2,3,-),&(3,13,14,+),&(14,3,4,+),&(4,8,9,-),\\
+(9,14,15,+),&(15,9,2,+),&(2,4,13,-),&(13,15,8,+).
+\end{array}
+\]
+The bijection to the target arc labels, with $0=4$ and $6=7$
+in that reduced system, is
+\[
+\begin{array}{c|rrrrrrrr}
+\text{new}&2&3&4&8&9&13&14&15\\\hline
+\text{target}&11&10&9&0&12&8&6&5 .
+\end{array}
+\]
+The rows agree after solving some target rows for the other
+under-arc, exchanging the two under-arcs and reversing the exponent
+when needed. This is the same relation
+$M_b=M_o^\varepsilon M_aM_o^{-\varepsilon}$ solved for $M_a$.
+There is no parameter inversion.
+
+Every new core pair lies in $H,F$, and the core contains the
+independent original triples on arcs $2,8,13$.
+Its full root and covector spans therefore both have dimension
+three. The target's standard triple on arcs $0,6,12$ propagates
+all eight core pairs. Its two spans must consequently also have
+dimension three, making its roots and covectors independent
+separately. This argument does not assume a nonsingular Gram
+matrix or a nonzero minor of their evaluations.
+\end{proof}
+
+The precise imported conclusion of
+\cite[Lemma \texttt{lem:cores}, $392$ case]{extensions} is:
+for every field and every $\mu\ne0$, the full root and full
+covector spans of this signed reduced eight-crossing system
+cannot both have dimension three. Its proof uses the six
+unrestricted directed pairings, with no old-clasp relation.
+Lemma~\ref{lem:coretransfer} contradicts that conclusion.
+Thus $r=q=4$ is impossible, proving
+Theorem~\ref{thm:pairedspans}. In particular $r+q\le7$.
+This proof also permits $\mu=1$, characteristic two and
+primitive sixth-root parameters.
+
+\section{Representation consequences}
+
+\begin{corollary}\label{cor:irreducible}
+Every irreducible finite-dimensional representation of $G_{K_*}$
+over any field with meridian displacement rank one has dimension
+at most three.
+\end{corollary}
+\begin{proof}
+The nonzero invariant displacement span is all of $V$.
+The common fixed subspace is zero: otherwise irreducibility
+would make the representation trivial, contrary to the
+nonzero meridian displacement. Hence $r=q=\dim V$ and
+Theorem~\ref{thm:pairedspans} applies.
+\end{proof}
+
+\begin{corollary}\label{cor:forms}
+If such a representation preserves a nondegenerate bilinear or
+sesquilinear form over a field with involution, then $r=q\le3$,
+even without complete reducibility. This includes symplectic
+and Hermitian forms. A degenerate ambient form is not covered.
+\end{corollary}
+\begin{proof}
+Take the form $B$ to be conjugate linear in its first argument
+and linear in its second, with field involution $\sigma$;
+the bilinear case has $\sigma=\mathrm{id}$.
+Nondegeneracy defines adjoints by $B(Lx,y)=B(x,L^\dagger y)$.
+Preservation gives $M_i^\dagger=M_i^{-1}$. For
+$N_i=M_i-I=-u_if_i$,
+\[
+ N_i^\dagger=M_i^{-1}-I=-\mu^{-1}N_i,\qquad
+ \operatorname{im}N_i^\dagger=ku_i .
+\]
+It follows that
+$\ker f_i=\{x:B(x,u_i)=0\}$.
+Thus $f_i$ is proportional to the linear covector
+$x\mapsto\sigma(B(x,u_i))$.
+The map $u\mapsto[x\mapsto\sigma(B(x,u))]$ is a semilinear
+isomorphism, so the seed root and covector spans have equal
+dimension. Apply Theorem~\ref{thm:pairedspans}.
+\end{proof}
+
+\begin{corollary}\label{cor:semisimple}
+Every completely reducible finite-dimensional rank-one-meridian
+representation has $r=q\le3$. In particular this holds for
+finite-image representations when the image order is invertible
+in the field, including every finite-image complex representation.
+\end{corollary}
+\begin{proof}
+The ranks of the meridian displacements on irreducible summands
+add to one. Exactly one summand is active. On each remaining
+summand a meridian acts trivially, so normal generation makes
+the entire knot group trivial there.
+The active summand has dimension at most three by
+Corollary~\ref{cor:irreducible}, giving $r=q\le3$.
+If the finite image order is invertible, averaging a projection
+onto any invariant subspace supplies an invariant complement;
+induction gives complete reducibility.
+\end{proof}
+
+\begin{corollary}\label{cor:finiteclass}
+For every finite complex image of $G_{K_*}$ with meridian
+displacement rank one, its meridian conjugacy class generates
+the image with at most three members.
+\end{corollary}
+\begin{proof}
+The active summand in Corollary~\ref{cor:semisimple} is faithful
+on the image and has dimension at most three.
+The image on it is an irreducible finite complex reflection
+group generated by the meridian class, by normal generation.
+The imported Theorem \texttt{thm:lowrank} of \cite{finite}
+states that any generating reflection class in an irreducible
+finite complex reflection group of rank at most three generates
+that group with at most three members.
+\end{proof}
+
+\section{Augmentation upper bound and explicit attainment}
+
+We use Cornwell's augmentation rank $\ar(K,k)$ for field-valued
+$U=1$ cord augmentations with $\epsilon(\mu)\ne1$,
+with rank as in \cite[Definition~1.8]{cornwell}.
+
+\begin{corollary}\label{cor:augmentation}
+Over every field, each $U=1$ cord augmentation of $K_*$
+with $\epsilon(\mu)\ne1$ has rank at most three.
+The nonzero longitude value is unrestricted.
+\end{corollary}
+\begin{proof}
+Cornwell's arbitrary-field augmentation-to-irreducible-KCH
+correspondence and rank convention
+\cite[Theorem~1.2 and Definition~1.8]{cornwell}
+turn such an augmentation into an irreducible representation
+whose dimension equals its rank.
+Apply Corollary~\ref{cor:irreducible}.
+This is a uniform argument over the admitted parameter values,
+rather than a specialization from $\mu=-1$.
+\end{proof}
+
+\begin{theorem}\label{thm:attainment}
+There is an irreducible three-dimensional complex KCH
+representation of $G_{K_*}$ with meridian parameter $-1$.
+\end{theorem}
+\begin{proof}
+Let $\phi=(1+\sqrt5)/2$, so $\phi^2=\phi+1$.
+The following table specifies every arc root $u_i\in\mathbb Q(\phi)^3$.
+Repeated arc indices use exactly the same vector.
+\[
+\begin{array}{c|rrr}
+\text{arcs }i&\multicolumn{3}{c}{u_i}\\\hline
+0,6,11&-1&\phi-1&-\phi\\
+1&-2&0&0\\
+2,10&-1&1-\phi&\phi\\
+3,9&0&-2&0\\
+4&-1&\phi-1&\phi\\
+5,8,13,15,16&\phi-1&\phi&-1\\
+7,12&-\phi&-1&1-\phi\\
+14&\phi-1&-\phi&-1
+\end{array}
+\]
+Every vector has squared norm four. Set
+\[
+ R_i=I-\tfrac12u_i u_i^T .
+\]
+Then $R_i^2=I$ and its eigenvalues are $-1,1,1$.
+Substitution in the seventeen displayed signed rows gives
+$R_b=R_o^\varepsilon R_aR_o^{-\varepsilon}$ in every case;
+these are exact equalities in $\mathbb Q[\phi]/(\phi^2-\phi-1)$.
+Equivalently $R_ou_a$ is $u_b$ up to sign.
+The retained checker verifies all seventeen equations directly,
+not just a reflection-class search.
+
+The three roots on arcs $1,0,8$ have determinant $-4$.
+Their pairings in that order are $2,2,2-2\phi$, all nonzero.
+They form a basis with connected nonorthogonality graph.
+For any nonzero invariant subspace, some one of these three
+covectors is nonzero on it, since their common kernel is zero.
+A displacement then puts its root into that subspace.
+Conjugating by the other reflections propagates along the
+nonorthogonality graph, so the subspace contains the full basis.
+The representation is therefore irreducible.
+No augmentation correspondence or classification of the finite
+reflection image is needed for this representation assertion.
+\end{proof}
+
+\begin{corollary}\label{cor:finiteattainment}
+The finite complex reflection-class lower bounds for $K_*$
+have maximum exactly three. In particular the representation
+of Theorem~\ref{thm:attainment} has finite image whose meridian
+class requires exactly three generators.
+\end{corollary}
+\begin{proof}
+The upper bound is Corollary~\ref{cor:finiteclass}.
+For finiteness of the positive image, consider the thirty vectors
+\[
+ \mathcal R=\{\pm2e_i:1\le i\le3\}
+ \ \cup\
+ \{\text{cyclic permutations of }
+     (\varepsilon_1,\varepsilon_2(\phi-1),\varepsilon_3\phi):
+       \varepsilon_i=\pm1\}.
+\]
+The seed reflections permute this set, as verified exactly
+using $\phi^2=\phi+1$. It spans $\C^3$, so the resulting
+permutation action is faithful and the image is finite.
+The four generating seed arcs $2,8,13,0$ give only three
+distinct reflections because $u_8=u_{13}$.
+
+Two members of the meridian class cannot generate this image.
+Indeed, for two involutions $R,S$ in dimension three, choose an
+eigenvector $w$ of $T=RS$ over $\C$.
+Since $TR=RT^{-1}$, the nonzero space
+$\langle w,Rw\rangle$ is invariant under $T,R$, and hence under
+$S$, with dimension at most two. This contradicts the
+irreducibility proved above. Thus the class rank of this finite
+image is exactly three.
+\end{proof}
+
+\begin{corollary}\label{cor:gap}
+\[
+ \ar(K_*,\C)=3<4=\mr(K_*)=b(K_*).
+\]
+\end{corollary}
+\begin{proof}
+Cornwell's representation-to-augmentation construction
+\cite[Proposition~2.12 and Definition~1.8]{cornwell}
+applied to Theorem~\ref{thm:attainment} gives a rank-three
+$U=1$ cord augmentation at $\mu=-1$.
+Combine this with Corollary~\ref{cor:augmentation}.
+The meridional-rank and bridge equalities are the separate
+Theorem \texttt{thm:sharp} of \cite{new17};
+they are not premises of the augmentation upper bound.
+\end{proof}
+
+\begin{corollary}\label{cor:sums}
+For every integer $s\ge0$, put
+$K_s=K_*\mathbin{\#}(\mathbin{\#}^{s}3_1)$. Then
+\[
+ \ar(K_s,\C)=s+3<s+4=\mr(K_s)=b(K_s).
+\]
+\end{corollary}
+\begin{proof}
+The representation in Theorem~\ref{thm:attainment} gives a seed
+augmentation at $\mu=-1$ by the same source construction.
+The trefoil has a rank-two augmentation at that same
+parameter: the explicit irreducible two-dimensional matrices
+$\left(\begin{smallmatrix}-1&1\\0&1\end{smallmatrix}\right)$ and
+$\left(\begin{smallmatrix}1&0\\1&-1\end{smallmatrix}\right)$
+satisfy the trefoil relation and are retained in
+\cite[the connected-sum corollary and its control]{generic373}.
+Denote these two matrices by $A,B$. The matrices $I,A,B,AB$
+form a basis of $M_2(\C)$, giving irreducibility directly.
+The two meridians generate the trefoil group, so the same
+seed-span argument bounds every irreducible KCH dimension
+there by two. Its augmentation rank is therefore exactly two.
+Cornwell's Theorem~1.9 gives a common-parameter augmentation of
+rank $d_1+d_2-1$ on a connected sum.
+The upper part of that theorem starts with an arbitrary
+sum augmentation and bounds its rank by
+$\ar(K_1,\C)+\ar(K_2,\C)-1$, without fixing its parameter.
+Iterating both parts yields $\ar(K_s,\C)=s+3$.
+The independent meridional and bridge formula is
+\cite[Corollary \texttt{cor:trefoils}]{new17}.
+No general meridional-rank additivity is assumed.
+\end{proof}
+
+Strict augmentation-rank gaps were already known: Cornwell's
+Corollary~1.12 gives $2=\ar(K,\C)<\mr(K)=3$ for
+$8_{16},8_{17},10_{91},10_{94}$.
+No first-counterexample or worldwide-priority assertion is made.
+
+\section{Exact controls and scope}
+
+The default \path{verify_new17_generic_kch.py} replay uses exact
+arithmetic. It binds the literal PD, signed rows and four-seed trace,
+checks the folds and signed core bijection, and verifies the
+three-dimensional positive representation and its faithful
+action on the thirty-vector set.
+Its input is \path{new17_generic_kch_inputs.json}; the output
+receipt is \path{new17_generic_kch_verification.json}.
+The optional \texttt{--topology} mode reconstructs the explicit
+four-braid with the pinned topology software.
+The retained positive and corrupted controls test actual diagram
+equations rather than only a formal matrix quartet.
+
+The reduced $392$ contradiction is an explicit written and exact
+algebra dependency, separate from the new diagram binding.
+The representation theorem permits arbitrary finite ambient
+dimension, singular evaluation matrices, every field and every
+$\mu\ne0$. Its unrestricted conclusion is
+$\min(r,q)\le3$ and $r+q\le7$.
+Separate bounds $r,q\le3$ use the hypotheses of the form,
+irreducibility or complete-reducibility corollaries.
+The augmentation correspondence excludes $\epsilon(\mu)=1$.
+These are internal written proofs and exact replays, not a
+claim of formal verification or external specialist review.
+
+\begin{thebibliography}{9}\small
+\bibitem{extensions} \emph{Signed generic rank-one obstructions for
+sixteen knots}, companion \path{GENERIC_KCH_EXTENSIONS.tex},
+Lemma \texttt{lem:cores}, $392$ case.
+\bibitem{cornwell} C.~R.~Cornwell,
+\emph{KCH representations, augmentations, and $A$-polynomials},
+J.\ Symplectic Geom.\ 15 (2017), 983--1017.
+Retained arXiv:1310.7526v3, Theorem~1.2, Definition~1.8,
+Proposition~2.12, Theorem~1.9 and Corollary~1.12.
+\bibitem{new17} \emph{An explicit seventeen-crossing four-bridge knot},
+companion \path{NEW_SEVENTEEN_CROSSING_KNOT.tex},
+Definition \texttt{def:knot}, Theorem \texttt{thm:sharp},
+Corollary \texttt{cor:trefoils}.
+\bibitem{finite} \emph{A finite complex reflection boundary for
+sixteen knots}, companion
+\path{FINITE_COMPLEX_REFLECTION_BOUNDARY.tex},
+Theorem \texttt{thm:lowrank}. Its classification premise is the
+retained primary Shephard--Todd theorem.
+\bibitem{generic373} \emph{A generic rank-one obstruction for
+$13a_{373}$}, companion \path{GENERIC_KCH_OBSTRUCTION.tex},
+Corollary \texttt{cor:sums} and the exact trefoil control.
+\end{thebibliography}
+\end{document}

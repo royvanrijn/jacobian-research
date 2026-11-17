@@ -1,0 +1,367 @@
+{
+  "status": "PASS",
+  "group": {
+    "target_order": 20160,
+    "class_size": 210,
+    "single_A8_conjugacy_orbit_checked": 210,
+    "ordinary_pair_group_order": 20160,
+    "attaining_class_quartet_order": 20160,
+    "simplicity": {
+      "conjugacy_class_sizes": [
+        1,
+        105,
+        112,
+        210,
+        1120,
+        1260,
+        1344,
+        1344,
+        1344,
+        1680,
+        2520,
+        2880,
+        2880,
+        3360
+      ],
+      "proper_nontrivial_normal_union_divisors": [],
+      "argument": "A normal subgroup is a union of conjugacy classes containing identity, and its order divides20160."
+    },
+    "class_rank_lower": "Any3 double transpositions supply at most6 edges; a connected graph on8 vertices needs at least7."
+  },
+  "named_cases": [
+    {
+      "name": "13a_373",
+      "literal_crossings_verified": 13,
+      "class_meridians_verified": 13,
+      "four_seed_coloring_steps": 9,
+      "sphere_embedding_and_one_component": true,
+      "named_census_dart_map": true,
+      "image_order": 20160,
+      "transitive_degree": 8,
+      "lower_bound": 4,
+      "bridge_upper_via_BKVV": 4
+    },
+    {
+      "name": "13a_375",
+      "literal_crossings_verified": 13,
+      "class_meridians_verified": 13,
+      "four_seed_coloring_steps": 9,
+      "sphere_embedding_and_one_component": true,
+      "named_census_dart_map": true,
+      "image_order": 20160,
+      "transitive_degree": 8,
+      "lower_bound": 4,
+      "bridge_upper_via_BKVV": 4
+    },
+    {
+      "name": "13a_391",
+      "literal_crossings_verified": 13,
+      "class_meridians_verified": 13,
+      "four_seed_coloring_steps": 9,
+      "sphere_embedding_and_one_component": true,
+      "named_census_dart_map": true,
+      "image_order": 20160,
+      "transitive_degree": 8,
+      "lower_bound": 4,
+      "bridge_upper_via_BKVV": 4
+    },
+    {
+      "name": "13a_392",
+      "literal_crossings_verified": 13,
+      "class_meridians_verified": 13,
+      "four_seed_coloring_steps": 9,
+      "sphere_embedding_and_one_component": true,
+      "named_census_dart_map": true,
+      "image_order": 20160,
+      "transitive_degree": 8,
+      "lower_bound": 4,
+      "bridge_upper_via_BKVV": 4
+    },
+    {
+      "name": "13a_3264",
+      "literal_crossings_verified": 13,
+      "class_meridians_verified": 13,
+      "four_seed_coloring_steps": 9,
+      "sphere_embedding_and_one_component": true,
+      "named_census_dart_map": true,
+      "image_order": 20160,
+      "transitive_degree": 8,
+      "lower_bound": 4,
+      "bridge_upper_via_BKVV": 4
+    },
+    {
+      "name": "13a_3266",
+      "literal_crossings_verified": 13,
+      "class_meridians_verified": 13,
+      "four_seed_coloring_steps": 9,
+      "sphere_embedding_and_one_component": true,
+      "named_census_dart_map": true,
+      "image_order": 20160,
+      "transitive_degree": 8,
+      "lower_bound": 4,
+      "bridge_upper_via_BKVV": 4
+    },
+    {
+      "name": "13a_3275",
+      "literal_crossings_verified": 13,
+      "class_meridians_verified": 13,
+      "four_seed_coloring_steps": 9,
+      "sphere_embedding_and_one_component": true,
+      "named_census_dart_map": true,
+      "image_order": 20160,
+      "transitive_degree": 8,
+      "lower_bound": 4,
+      "bridge_upper_via_BKVV": 4
+    },
+    {
+      "name": "13a_3276",
+      "literal_crossings_verified": 13,
+      "class_meridians_verified": 13,
+      "four_seed_coloring_steps": 9,
+      "sphere_embedding_and_one_component": true,
+      "named_census_dart_map": true,
+      "image_order": 20160,
+      "transitive_degree": 8,
+      "lower_bound": 4,
+      "bridge_upper_via_BKVV": 4
+    },
+    {
+      "name": "13n_1005",
+      "literal_crossings_verified": 13,
+      "class_meridians_verified": 13,
+      "four_seed_coloring_steps": 9,
+      "sphere_embedding_and_one_component": true,
+      "named_census_dart_map": true,
+      "image_order": 20160,
+      "transitive_degree": 8,
+      "lower_bound": 4,
+      "bridge_upper_via_BKVV": 4
+    },
+    {
+      "name": "13n_1006",
+      "literal_crossings_verified": 13,
+      "class_meridians_verified": 13,
+      "four_seed_coloring_steps": 9,
+      "sphere_embedding_and_one_component": true,
+      "named_census_dart_map": true,
+      "image_order": 20160,
+      "transitive_degree": 8,
+      "lower_bound": 4,
+      "bridge_upper_via_BKVV": 4
+    },
+    {
+      "name": "13n_1007",
+      "literal_crossings_verified": 13,
+      "class_meridians_verified": 13,
+      "four_seed_coloring_steps": 9,
+      "sphere_embedding_and_one_component": true,
+      "named_census_dart_map": true,
+      "image_order": 20160,
+      "transitive_degree": 8,
+      "lower_bound": 4,
+      "bridge_upper_via_BKVV": 4
+    },
+    {
+      "name": "13n_1011",
+      "literal_crossings_verified": 13,
+      "class_meridians_verified": 13,
+      "four_seed_coloring_steps": 9,
+      "sphere_embedding_and_one_component": true,
+      "named_census_dart_map": true,
+      "image_order": 20160,
+      "transitive_degree": 8,
+      "lower_bound": 4,
+      "bridge_upper_via_BKVV": 4
+    },
+    {
+      "name": "13n_1012",
+      "literal_crossings_verified": 13,
+      "class_meridians_verified": 13,
+      "four_seed_coloring_steps": 9,
+      "sphere_embedding_and_one_component": true,
+      "named_census_dart_map": true,
+      "image_order": 20160,
+      "transitive_degree": 8,
+      "lower_bound": 4,
+      "bridge_upper_via_BKVV": 4
+    },
+    {
+      "name": "13n_1013",
+      "literal_crossings_verified": 13,
+      "class_meridians_verified": 13,
+      "four_seed_coloring_steps": 9,
+      "sphere_embedding_and_one_component": true,
+      "named_census_dart_map": true,
+      "image_order": 20160,
+      "transitive_degree": 8,
+      "lower_bound": 4,
+      "bridge_upper_via_BKVV": 4
+    },
+    {
+      "name": "13n_1043",
+      "literal_crossings_verified": 13,
+      "class_meridians_verified": 13,
+      "four_seed_coloring_steps": 9,
+      "sphere_embedding_and_one_component": true,
+      "named_census_dart_map": true,
+      "image_order": 20160,
+      "transitive_degree": 8,
+      "lower_bound": 4,
+      "bridge_upper_via_BKVV": 4
+    },
+    {
+      "name": "13n_1044",
+      "literal_crossings_verified": 13,
+      "class_meridians_verified": 13,
+      "four_seed_coloring_steps": 9,
+      "sphere_embedding_and_one_component": true,
+      "named_census_dart_map": true,
+      "image_order": 20160,
+      "transitive_degree": 8,
+      "lower_bound": 4,
+      "bridge_upper_via_BKVV": 4
+    },
+    {
+      "name": "13n_1045",
+      "literal_crossings_verified": 13,
+      "class_meridians_verified": 13,
+      "four_seed_coloring_steps": 9,
+      "sphere_embedding_and_one_component": true,
+      "named_census_dart_map": true,
+      "image_order": 20160,
+      "transitive_degree": 8,
+      "lower_bound": 4,
+      "bridge_upper_via_BKVV": 4
+    },
+    {
+      "name": "13n_1046",
+      "literal_crossings_verified": 13,
+      "class_meridians_verified": 13,
+      "four_seed_coloring_steps": 9,
+      "sphere_embedding_and_one_component": true,
+      "named_census_dart_map": true,
+      "image_order": 20160,
+      "transitive_degree": 8,
+      "lower_bound": 4,
+      "bridge_upper_via_BKVV": 4
+    },
+    {
+      "name": "13n_1047",
+      "literal_crossings_verified": 13,
+      "class_meridians_verified": 13,
+      "four_seed_coloring_steps": 9,
+      "sphere_embedding_and_one_component": true,
+      "named_census_dart_map": true,
+      "image_order": 20160,
+      "transitive_degree": 8,
+      "lower_bound": 4,
+      "bridge_upper_via_BKVV": 4
+    },
+    {
+      "name": "13n_1048",
+      "literal_crossings_verified": 13,
+      "class_meridians_verified": 13,
+      "four_seed_coloring_steps": 9,
+      "sphere_embedding_and_one_component": true,
+      "named_census_dart_map": true,
+      "image_order": 20160,
+      "transitive_degree": 8,
+      "lower_bound": 4,
+      "bridge_upper_via_BKVV": 4
+    },
+    {
+      "name": "13n_3842",
+      "literal_crossings_verified": 13,
+      "class_meridians_verified": 13,
+      "four_seed_coloring_steps": 9,
+      "sphere_embedding_and_one_component": true,
+      "named_census_dart_map": true,
+      "image_order": 20160,
+      "transitive_degree": 8,
+      "lower_bound": 4,
+      "bridge_upper_via_BKVV": 4
+    },
+    {
+      "name": "13n_3844",
+      "literal_crossings_verified": 13,
+      "class_meridians_verified": 13,
+      "four_seed_coloring_steps": 9,
+      "sphere_embedding_and_one_component": true,
+      "named_census_dart_map": true,
+      "image_order": 20160,
+      "transitive_degree": 8,
+      "lower_bound": 4,
+      "bridge_upper_via_BKVV": 4
+    },
+    {
+      "name": "13n_3855",
+      "literal_crossings_verified": 13,
+      "class_meridians_verified": 13,
+      "four_seed_coloring_steps": 9,
+      "sphere_embedding_and_one_component": true,
+      "named_census_dart_map": true,
+      "image_order": 20160,
+      "transitive_degree": 8,
+      "lower_bound": 4,
+      "bridge_upper_via_BKVV": 4
+    },
+    {
+      "name": "13n_3856",
+      "literal_crossings_verified": 13,
+      "class_meridians_verified": 13,
+      "four_seed_coloring_steps": 9,
+      "sphere_embedding_and_one_component": true,
+      "named_census_dart_map": true,
+      "image_order": 20160,
+      "transitive_degree": 8,
+      "lower_bound": 4,
+      "bridge_upper_via_BKVV": 4
+    }
+  ],
+  "corruptions_rejected": [
+    "arc_permutation",
+    "seed_trace",
+    "named_dart_map",
+    "ordinary_pair",
+    "class_quartet"
+  ],
+  "optional_census": {
+    "fresh_named_PD_DT_rereads": 24,
+    "package": "snappy_15_knots",
+    "version": "1.2.1"
+  },
+  "scope": "Twenty-four positive named epimorphisms. Their direct A8 lower bounds are independent of branched-cover homology and older affine lower proofs. The names are the same24 previously certified with ternary affine targets; no additional named equality is claimed. Ordinary rank2 concerns A8, not the knot groups.",
+  "input_sha256": {
+    "verify_a8_simple_quotients.py": "878348931fd9fd2b7e960db9bdfba509a83cbf19b36eae9cd6a2c80a5d51259b",
+    "a8_simple_quotient_inputs.json": "7cdc089710ed26ee674d0dedc66399ec277e1bfc3efda0b5a6f2bf046f6d1bc8",
+    "A8_SIMPLE_QUOTIENTS.tex": "30090d84382dbd3a688c4b1e498adf924096a722f198f8104c9f948d36087e4b",
+    "sources/wirtinger-systems-published-2020.pdf": "884b32bd4c6f9a8fe250e6b2d6342cbf0dadcb3d8e3a416c76cb7efe7e5e40b0"
+  },
+  "assurance": "Exact internal positive finite-permutation and literal-PD replay. The named census and published BKVV bridge-Wirtinger theorem remain external imports. No older affine lower bound or cover calculation is a premise. No formal verification, external specialist review, new named count or worldwide-priority claim.",
+  "internal_pdf_reviews": [
+    {
+      "reviewer": "isolated internal agent /root/a8_pdf_review",
+      "reviewed_note_sha256": "a28703cc083a96ec9ce844b56d65ecf2e8adfa3c23f483c8e7efd7330b2ad290",
+      "reviewed_pdf_sha256": "33a20f26703e1d1d541d3f5d0f2b0330aee8ac67d1e79f6ea4078a45e77b8942",
+      "result": "No mathematical error in the printed group/class/rank and bridge arguments. Independently enumerated quartet/pair group order20160, class210, centralizer96, all14conjugacyclasses and normal-union divisor obstruction. The initial PDF omitted literalPD and trace; these are now printed in the revised edition.",
+      "not_reviewed": [
+        "Other23literalassignments and named-census bindings",
+        "Retained checker contents or original BKVV theorem proof"
+      ],
+      "external_review": false,
+      "formal_verification": false
+    },
+    {
+      "reviewer": "root internal current-edition mathematical and visual check",
+      "reviewed_note_sha256": "30090d84382dbd3a688c4b1e498adf924096a722f198f8104c9f948d36087e4b",
+      "reviewed_pdf_sha256": "05f7d84aab6f5383d9662d16a58e90b6a4fad2b93d4549f0c6f0d59dc18254ea",
+      "result": "All4renderedpages inspected; printed373PD,13permutations and9trace triples matched retained literal input. Actual census replay passed24namedcases/312crossings, group/class/simplicity tests and five corruptions.",
+      "not_reviewed": [
+        "Independent fresh whole-proof or external specialist review",
+        "Original BKVV proof and census authoritativeness"
+      ],
+      "external_review": false,
+      "formal_verification": false
+    }
+  ]
+}
