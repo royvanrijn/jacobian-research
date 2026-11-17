@@ -135,14 +135,79 @@ finite etale everywhere. Affine space over an algebraically closed
 characteristic-zero field has no nontrivial connected finite etale cover.
 Thus M^N=K and N=G. Since every I_D lies in a conjugate of H, (4.1) follows.
 
+### Exact purity and affine-cover applications
+
 The purity input is [Stacks, Lemma 58.21.4](https://stacks.math.columbia.edu/tag/0BMB).
-For simple connectedness, descend the finite etale cover to a finitely
-generated characteristic-zero field, embed it in C and use comparison
-with the contractible analytic space C^m. Equivalence between algebraic
-finite etale covers and finite analytic covers is the Riemann-existence
-comparison of SGA 1, Expose XII, Theorem 5.1 and Corollary 5.2.
-Isomorphism and geometric connectedness descend/extend with algebraically
-closed constants. These are the only global inputs in this proof.
+For the finite normalization above, its local source ring is normal,
+its target ring is regular, and the morphism is quasi-finite. Local
+dimensions agree: finite dominant integral extensions of the regular
+normal target have going-down and the same local dimensions. The
+height-one specializations are unramified because the corresponding
+inertia was killed. Thus all five hypotheses of that lemma hold at
+every positive-dimensional local ring; the generic points are already
+separable in characteristic zero. It follows that the ENTIRE finite
+normalization, including possible codimension-two singular points, is
+etale. Smoothness of the normalization was not assumed before purity.
+
+For the covering input, the inspected primary source is
+[SGA 1, math/0206203v2, Expose XII, Theorem 5.1 and Corollary 5.2](https://arxiv.org/pdf/math/0206203v2),
+printed pp251--254 (PDF pp267--270; original marginal pp333--337).
+The exact local-to-global comparison theorem concerns complex schemes
+locally of finite type and FINITE etale coverings. It applies to A^m_C;
+its analytic space C^m is contractible, so every connected finite etale
+cover has degree one. Full faithfulness converts a trivial analytic
+cover back into an algebraic isomorphism. No nonproper infinite analytic
+cover or simply connectedness assertion about an omitted-divisor open
+is used. The proof and corollary at that locator were read; the full
+underlying comparison theorem is adopted, not independently reproved.
+
+Here are details extending the complex statement to any algebraically
+closed characteristic-zero k. A given finite etale cover and its finite
+presentation, finiteness and etaleness certificates descend to a field
+k0 finitely generated over Q. Let k1 be the algebraic closure of k0
+inside k, and base-change the descended cover to k1. This cover is
+connected, because its further base change is the original connected
+cover and a nonempty disconnection persists under a field extension.
+The field k1 is countable and embeds into C. By
+[Stacks, Lemma 33.7.6](https://stacks.math.columbia.edu/tag/0363),
+connectedness over the algebraically closed k1 remains connectedness
+after that embedding and extension. The resulting finite etale cover
+of A^m_C has degree one by comparison. Finite locally free rank is
+preserved by field extension, so the original cover also has rank one.
+A unital finite etale algebra of rank one is its base algebra. This
+argument does not require k itself to embed into C, and uses no
+unproved invariance assertion for nonproper varieties.
+
+Over an arbitrary characteristic-zero field k, finite etale covers of
+A^m_k are CONSTANT covers. Indeed the geometric cover is a disjoint
+union of d copies by the algebraically closed result. Its trivialization
+is defined over a finite Galois extension k2/k, because only finitely
+many coefficients in the algebraic closure occur. The descent cocycle
+permutes the d components: the only automorphism of any one copy over
+A^m_(k2) is the identity. Thus it is the same cocycle as for a finite
+etale k-algebra C, and descent gives C tensor_k k[T1,...,Tm]. Connectedness
+makes C a field. This is a description of finite covers, not a claim
+that arbitrary infinite etale covers are constant.
+
+For the embedded arithmetic application, one can avoid even that
+classification. If a connected finite etale normalization has function
+field E contained in k(x1,...,xm), then k is algebraically closed in E.
+To check this last statement directly, any rational function algebraic
+over the infinite field k can be specialized at a k-point away from its
+denominator; its irreducible minimal polynomial then has a root in k
+and consequently degree one. By
+[Stacks, Lemma 33.7.14](https://stacks.math.columbia.edu/tag/04KV),
+the generic point with this residue field makes the normalization
+geometrically connected. Its base change to an algebraic closure is a
+connected finite etale affine-space cover and hence has degree one.
+The original cover has degree one too. In particular no nontrivial
+constant-field extension can hide inside the rational source field.
+
+The exact primary files and read/application limits are retained in
+[sources/affine-cover-context.json](sources/affine-cover-context.json).
+This discharges the covering and purity application in KMFI1 and the
+same finite-normalization argument used by the canonical/trace criteria;
+it does not establish automatic trace integrality or resolve JC2.
 
 An equivalent formulation of (4.1) is that there is **no nontrivial
 intermediate Galois field** K < E <= L with E/K Galois. Such a field

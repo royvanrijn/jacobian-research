@@ -1,0 +1,30 @@
+{
+  "review_date": "2026-11-17",
+  "primary_source": {
+    "path": "sources/flenner-zaidenberg-math-0109221v1.pdf",
+    "url": "https://arxiv.org/pdf/math/0109221v1",
+    "sha256": "afd41d7c985af4a3897c84598a5c35b1ffabd27344507fa8464f02911c9a0fe9",
+    "identity": "Hubert Flenner and Mikhail Zaidenberg, Rational curves and rational singularities, math/0109221v1; published Math. Z. 244 (2003), 549-575, DOI 10.1007/s00209-003-0497-z",
+    "locator": "Section2.1, Theorem2.1 and its proof, PDF pp13-14; Lemma2.2, Proposition2.3 and the attributed Miyanishi Theorem2.4 on p13",
+    "inspection": "Exact statement, complete displayed proof of Theorem2.1 and dependency/affineness discussion read. This is adoption of the published authors theorem, not an independent reproof of every classical input."
+  },
+  "application": {
+    "scope": "Every singularity of the full finite normalization Z of an actual complex polynomial plane Keller source is a finite quotient singularity; this suffices for the canonical L2 extension in LW0 and even-moment powers.",
+    "checked_hypotheses": [
+      "Z is a normal affine algebraic surface, finite over the target plane",
+      "the canonical source lift j:A2->Z is an open immersion with dense image",
+      "for every boundary singular point p, every general source point lies on a polynomial source line whose image is closed in affine Z and avoids p"
+    ],
+    "not_claimed": [
+      "No cyclicity upgrade is needed or proved from FZ Theorem2.1",
+      "No independent reproduction of Miyanishi original paper",
+      "No differential IC socle or semisimple source-layer theorem",
+      "No automatic L4 integrability or trace perfection",
+      "No HC4 or JC2 resolution"
+    ]
+  },
+  "underlying_classical_input": {
+    "identity": "Masayoshi Miyanishi, Singularities of normal affine surfaces containing cylinderlike open sets, J. Algebra 68 (1981), 268-275, DOI 10.1016/0021-8693(81)90264-7",
+    "inspection": "FZ Theorem2.4 exact restatement read. Original publisher full PDF unavailable (403; FULL API authentication required); metadata only accessible. Cyclic quotient conclusion of that restatement is not used as a separately independently audited result here."
+  }
+}

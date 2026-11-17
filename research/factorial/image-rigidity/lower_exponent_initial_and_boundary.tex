@@ -5,7 +5,7 @@
 \newtheorem{theorem}{Theorem}
 \newtheorem{lemma}[theorem]{Lemma}
 \newtheorem{corollary}[theorem]{Corollary}
-\title{Uniform support bounds for binomial moments and the polynomial boundary condition}
+\title{Uniform gap-two binomial families, support bounds\\and the polynomial boundary condition}
 \author{Internal elementary proof and exact replay; no priority claim}
 \date{17 November 2026}
 \begin{document}
@@ -14,9 +14,12 @@ For $d\ge1$ an integer and $\gamma>0$, put
 \[
  T_{n,\gamma,d}(t)=\sum_{k=0}^n\binom nk(\gamma)_{dk}t^k.
 \]
-For each specified terminal order $N$, we give explicit bounds confining
-possible ordinary binomial Strong Factorial obstructions to a finite
-rectangle of lower exponents and gaps. Large gaps are handled uniformly
+At gap two, we prove the consecutive Gamma-moment assertion at every
+terminal order for $X^2(A+BX^2)$ and $X^3(A+BX^2)$, for every positive
+Gamma shape. The second family includes the degree-five support
+$\{3,5\}$. For each specified terminal order $N$, we also give explicit
+bounds confining possible ordinary binomial Strong Factorial
+obstructions to a finite rectangle of lower exponents and gaps. Large gaps are handled uniformly
 in the lower exponent, and large lower exponents are handled at every
 fixed gap. The bounds depend on $N$; they do not close the all-index
 problem or verify the remaining rectangle.
@@ -27,7 +30,10 @@ consecutive moment separation through terminal four at every lower exponent and 
 Gamma shape, and identify the polynomial condition selecting the
 solution of the higher-gap parameter recurrence. General lower exponents
 also admit an exact diagonal derivative embedding in a fixed lower-one
-base sequence. An explicit generic counterexample identifies the extra
+base sequence. An all-order formal branched fraction gives a positive tree
+formula and coefficientwise Hankel nonnegativity for normalized
+Gamma-power cumulants; its transfer to the two-shape resultant remains open.
+An explicit generic counterexample identifies the extra
 compatibility required for transferring coprimality through that embedding.
 
 \section{Parameter-monotone separation through terminal order four}
@@ -542,6 +548,308 @@ Here the strong discrete convexity estimate \eqref{eq:sparse-coefficients}, the 
 normalization, and the separation of different orders are essential.
 The saddle-contour estimates for exponent six and ordinary
 constant-plus-power families are not used.
+
+
+
+\section{All orders at gap two and lower exponents two and three}
+Write
+\[
+ \mathcal R_{r,\eta}(z)=z^{2r}T_{r,\eta,2}(-z^{-2}),\qquad
+ B_{0,\eta}=1,\qquad
+ B_{r+1,\eta}=(z+2r+\eta+1)B_{r,\eta}-zB_{r,\eta}'.
+\]
+These are the quadratic transform and monic auxiliary of the
+\href{CUBIC_ADJOINT_STABILITY_SFC.tex}{cubic adjoint note}.
+We use its Theorem 1 (simplicity for $\eta\ge r-2$, $\eta>0$),
+its half-plane bound (4), and its zero-concomitant identity (10).
+For $r\ge2$ that bound is
+$\Re\zeta<r-\eta-2$ at every zero of $B_{r,\eta}$;
+$B_{1,\eta}=z+\eta+1$ directly.
+
+\begin{theorem}\label{thm:gap-two-shape-offset}
+Let $m\ge1$ be an integer, $\gamma>2m-2$ real, and $h\in\{2,3\}$.
+Then $T_{m,\gamma,2}$ and $T_{m+1,\gamma+h,2}$ are coprime.
+\end{theorem}
+\begin{proof}
+Put $M=\gamma+2m$, $R=\mathcal R_{m,\gamma}$ and
+$\delta=zD_z$, $E=M-\delta$.
+Coefficient comparison gives the exact operator identity
+\[
+ (\gamma)_h\mathcal R_{m+1,\gamma+h}
+       =\bigl[z^2(E)_h-(E)_{h+2}\bigr]R.                  \tag{G1}\label{eq:gap-two-operator}
+\]
+Indeed $(E)_h$ acts on the term with index $k$ by
+$(\gamma+2k)_h$, and
+$\mathcal R_{m+1,\eta}=z^2\mathcal R_{m,\eta}
+                         -(\eta)_2\mathcal R_{m,\eta+2}$.
+The cubic equation for $R$ is
+\[
+ R'''+\frac{2-2M}{z}R''
+       +\left(\frac{M(M-1)}{z^2}-1\right)R'
+       +\frac{2m}{z}R=0.                                 \tag{G2}\label{eq:gap-two-cubic}
+\]
+Set
+\[
+ A_2=(M+2)(M+3),\quad A_3=(M+2)(M+3)(M+4),\quad s=2(m+1).
+\]
+Reducing \eqref{eq:gap-two-operator} with \eqref{eq:gap-two-cubic}
+gives $(\gamma)_h\mathcal R_{m+1,\gamma+h}=q_hR+b_hR'+c_hR''$,
+where
+\[
+\begin{aligned}
+ q_2&=-M(M+1)A_2+[M(M+1)-2m(2M+3)]z^2,\\
+ b_2&=2z[MA_2+(m+1)z^2],\qquad c_2=-z^2A_2,\\
+ q_3&=-M(M+1)A_3+(M+2)[M(M+1)-6m(M+2)]z^2,\\
+ b_3&=2z[MA_3+(m+1)(3M+4)z^2],\qquad
+ c_3=-z^2(A_3+sz^2).
+\end{aligned}                                               \tag{G3}\label{eq:gap-two-reduction}
+\]
+These are polynomial identities. They can be checked by applying
+$E+j=M+j-zD_z$ successively and replacing $R'''$ by (G2).
+
+Suppose a common root exists. Both $T$ have constant term one and
+positive nonzero top coefficients. A choice of $z_0\ne0$ with
+$t_0=-z_0^{-2}$ therefore gives $R(z_0)=0$ and
+$\mathcal R_{m+1,\gamma+h}(z_0)=0$.
+The cited simplicity theorem applies since $\gamma>2m-2\ge m-2$;
+the quadratic change is unramified at $z_0$, so $R'(z_0)\ne0$.
+
+Put $B=B_{m,\gamma}$ and $B^+=B_{m+1,\gamma}$. The two adjoint
+solutions from the cubic note are
+\[
+ f_\pm(z)=e^{\mp z}z^{1-M}B(\pm z).
+\]
+Only local branches at $z_0\ne0$ are needed. Their zero concomitants,
+evaluated at $R(z_0)=0$, give
+\[
+ f_\pm R''+
+ \left(\frac{2-2M}{z}f_\pm-f_\pm'\right)R'=0
+ \quad\hbox{at }z_0.
+\]
+Combining this with (G3), and using $R'(z_0)\ne0$, yields
+\[
+ c_h f_\pm'+
+       \left(b_h-\frac{2-2M}{z}c_h\right)f_\pm=0.
+\]
+After removal of the nonzero gauge and the factor $z_0$, these
+are $H_h(z_0)=H_h(-z_0)=0$, where
+\[
+ \begin{split}
+ H_2(z)&=A_2B^+(z)+sz^2B(z),\\
+ H_3(z)&=(A_3+sz^2)B^+(z)+s(M+4)z^2B(z).
+ \end{split}                                             \tag{G4}\label{eq:gap-two-transformed-adjoint}
+\]
+For example the stripped plus expression is
+$c_hB'+[b_h-c_h+(M-1)c_h/z]B=zH_h(z)$;
+the minus expression gives $zH_h(-z)$.
+This derivation does not divide by $B(z_0)$ or by $c_h(z_0)$.
+
+We prove both $H_h$ strictly Hurwitz. The cited half-plane bounds
+show that $B$ and $B^+$ are strictly Hurwitz. Every root
+$-r_j+iv_j$ of $B$ satisfies
+\[
+ r_j\ge\rho:=\gamma-m+2>m,
+\]
+with equality allowed for $m=1$. Thus, on the imaginary axis,
+\[
+ \Re\frac{B'(iy)}{B(iy)}
+   =\sum_{j=1}^m\frac{r_j}{r_j^2+(y-v_j)^2}
+   \le\frac m\rho<1.
+\]
+Consequently, for
+\[
+ F(z)=\frac{B^+(z)}{B(z)}
+     =z+M+1-z\frac{B'(z)}{B(z)},
+\]
+one has $\Im F(iy)=y[1-\Re(B'/B)(iy)]$, with the sign of $y$.
+
+For $H_2$, consider $A_2B^++\tau z^2B$, $\tau>0$.
+Its quotient by $B$ has nonzero imaginary part at $iy$ when $y\ne0$,
+and its value at zero is nonzero. For small $\tau>0$, $m+1$ roots
+are near the Hurwitz roots of $B^+$ and the one extra root is
+$-A_2/\tau+O(1)$, hence also in the left half-plane.
+There is no imaginary-axis crossing as $\tau$ increases; roots
+remain finite on each compact positive $\tau$-interval because
+the leading coefficient is $\tau\ne0$. Thus it is strictly Hurwitz
+at $\tau=s$.
+
+For $H_3$, consider
+\[
+ H_{3,\tau}=(A_3+\tau z^2)B^++\tau(M+4)z^2B,\qquad\tau>0.
+\]
+At $z=iy\ne0$, vanishing of its quotient's imaginary part forces
+$y^2=A_3/\tau$. At that value the quotient itself is the nonzero
+real number $-A_3(M+4)$. At zero it is again nonzero.
+For small $\tau>0$, $m+1$ roots remain near those of $B^+$.
+The two extra roots satisfy
+\[
+ z=\pm i\sqrt{A_3/\tau}-(M+4)/2+O(\sqrt\tau),
+\]
+and hence lie in the left half-plane.
+For completeness, set $\epsilon=\sqrt{\tau/A_3}$, $w=\epsilon z$.
+The scaled polynomial tends to $w^{m+1}(1+w^2)$.
+Its two simple roots $w=\pm i$ have first derivatives
+$-(M+4)/2$ in $\epsilon$: the first-order contribution from $B^+$
+vanishes at $1+w^2=0$, and the remaining term is
+$\epsilon(M+4)w^{m+2}$. The implicit-function theorem gives exactly
+the displayed expansion. No imaginary-axis zero or finite positive
+parameter degree drop is possible, so $H_{3,\tau}$ is strictly
+Hurwitz for every $\tau>0$.
+
+A Hurwitz polynomial and its reflection have disjoint zero sets.
+This contradicts (G4) at $z_0$ and proves the theorem.
+\end{proof}
+
+\begin{corollary}\label{cor:gap-two-lower-two-three}
+For every positive Gamma shape $\beta$, every nonzero binomial
+$X^2(A+BX^2)$ or $X^3(A+BX^2)$ has no simultaneous zero moments
+at any pair of consecutive nonnegative orders.
+\end{corollary}
+\begin{proof}
+For $h\in\{2,3\}$ and terminal $N=m+1\ge2$, the normalized
+moments are $T_{m,\beta+hm,2}$ and
+$T_{m+1,\beta+h(m+1),2}$.
+Take $\gamma=\beta+hm>2m-2$ in the theorem.
+Orders zero and one cannot both vanish because the zeroth moment
+is one. If either coefficient is zero, the phase is a nonzero
+monomial and all its positive moments are nonzero.
+\end{proof}
+The ordinary lower-exponent-two case was already covered by the
+dyadic theorem. The corollary extends it to every positive real
+Gamma shape and proves the lower-exponent-three, gap-two family
+at every order. The argument makes no assertion for all lower
+exponents at gap two: the analogous transformed adjoints for
+larger offsets need not be Hurwitz.
+
+\section{A formal branched fraction for all Gamma-power cumulants}
+The Gamma-power family has an all-order structure stronger than separate
+positivity checks on its first cumulants. All series in this section are
+formal series over $\mathbb Q[\gamma]$; no positive convergence radius is
+assumed. Define
+\[
+ \Phi_\gamma(x)=\sum_{n\ge0}\frac{(\gamma)_{dn}}{n!}x^n,\qquad
+ \log\Phi_\gamma(x)=\sum_{r\ge1}\frac{\kappa_r(\gamma)}{r!}x^r,
+ \qquad U_\gamma(x)=\frac{\Phi_{\gamma+d}(x)}{\Phi_\gamma(x)}.
+\]
+For real $\gamma>0$, $\kappa_r(\gamma)$ are precisely the cumulants
+defined algebraically from the moments of $Y_\gamma^d$. Formal
+logarithms are legitimate because $\Phi_\gamma(0)=1$, including when
+$d>1$ and the moment series has zero analytic radius.
+
+\begin{theorem}\label{thm:formal-cumulant-fraction}
+Fix an integer $d\ge1$ and put $m=d-1$. With
+\[
+ F_\gamma=\frac{\Phi_{\gamma+1}}{\Phi_\gamma},
+ \qquad b_j(\gamma)=d(\gamma+j+1)_m,
+\]
+the family $(F_{\gamma+j})_{j\ge0}$ is the unique formal family with
+constant terms one satisfying
+\[
+ F_{\gamma+j}
+ =1+b_jx\prod_{i=0}^{m}F_{\gamma+j+i}
+ =\frac{1}{1-b_jx\prod_{i=1}^{m}F_{\gamma+j+i}}.          \tag{CF}\label{eq:branched-fraction}
+\]
+Moreover,
+\[
+ U_\gamma=\prod_{i=0}^{m}F_{\gamma+i}
+ =\sum_{n\ge0}u_n(\gamma)x^n,\qquad
+ \kappa_{n+1}(\gamma)=n!(\gamma)_d u_n(\gamma).           \tag{CU}\label{eq:cumulant-forest}
+\]
+Every $u_n$ belongs to $\mathbb Z_{\ge0}[\gamma]$, has positive
+constant coefficient, and has exact degree $mn$. Its leading
+coefficient is
+\[
+ [\gamma^{mn}]u_n(\gamma)
+ =\frac{d^n}{n+1}\binom{d(n+1)}n.                       \tag{LC}\label{eq:forest-leading}
+\]
+In particular every $\kappa_r(\gamma)$ has nonnegative coefficients
+and exact degree $(d-1)r+1$.
+\end{theorem}
+\begin{proof}
+Coefficientwise rising-factorial identities give
+\[
+ \Phi_\gamma'=(\gamma)_d\Phi_{\gamma+d},\qquad
+ \gamma\Phi_{\gamma+1}
+       =\gamma\Phi_\gamma+dx\Phi_\gamma'.
+\]
+The second identity follows in degree $n$ from
+$\gamma(\gamma+1)_{dn}=(\gamma+dn)(\gamma)_{dn}$.
+After division by the unit $\Phi_\gamma$ and cancellation of the
+polynomial factor $\gamma$, these identities give
+$F_\gamma=1+d(\gamma+1)_m xU_\gamma$.
+The ratio defining $U_\gamma$ telescopes into the displayed product,
+proving the recurrence. Moving its factor $F_{\gamma+j}$ to the
+left proves the reciprocal form. The coefficient of degree $n>0$
+on the right depends only on coefficients of smaller $x$-degree,
+so the family is unique by induction. Logarithmic differentiation
+of $\Phi_\gamma$ proves \eqref{eq:cumulant-forest}.
+
+For a direct positive interpretation, use full ordered $d$-ary trees:
+each internal vertex of type $j$ has weight $b_jx$, and its child in
+slot $i$, $0\le i<d$, has type $j+i$. A leaf has weight one.
+The tree recurrence is exactly \eqref{eq:branched-fraction}.
+The series $U_\gamma$ counts ordered forests of $d$ such trees with
+root types $0,\ldots,d-1$. At each fixed number $n$ of internal
+vertices there are finitely many forests, and each has a product
+of $n$ polynomials $b_j$, of degree $m$, positive leading coefficient
+$d$, and positive constant coefficient. This proves coefficient
+nonnegativity, positive constant coefficient, and exact degree $mn$.
+For the leading coefficient all types have the same weight $d$.
+If $L=1+dxL^d$, the required leading-coefficient series is $L^d$.
+For $n\ge1$, formal Lagrange inversion with $W=L-1$ gives
+\[
+ [x^n]L^d
+ =\frac{d^{n+1}}n\binom{dn+d-1}{n-1}
+ =\frac{d^n}{n+1}\binom{d(n+1)}n.
+\]
+The formula also holds at $n=0$. Finally $(\gamma)_d$ is monic
+of degree $d$ with nonnegative coefficients, proving the cumulant
+degree assertion.
+\end{proof}
+
+\begin{corollary}\label{cor:cumulant-hankel}
+For every integer $d\ge1$, all finite minors of the infinite Hankel
+matrix $(u_{i+j}(\gamma))_{i,j\ge0}$ have nonnegative coefficients in
+$\gamma$. The same assertion holds for the normalized cumulant
+matrix $(\kappa_{i+j+1}(\gamma)/(i+j)!)_{i,j\ge0}$.
+Here every entry of either matrix has the same shape parameter
+$\gamma$.
+\end{corollary}
+\begin{proof}
+For $d=1$, the recurrence gives $F_\gamma=U_\gamma=(1-x)^{-1}$,
+so the first matrix has every entry one and rank one.
+For $d\ge2$, set $m=d-1$ and, in the notation of
+P\'etr\'eolle--Sokal--Zhu,
+\[
+ \alpha_h=d(\gamma+h-m+1)_m\qquad(h\ge m).
+\]
+Their equations (2.26)--(2.27) identify
+$f_j=F_{\gamma+j}$ as the $m$-branched Stieltjes fraction with
+weights $\alpha_{j+m}=b_j$. Their partial-path convention in
+Section 2.3 gives
+\[
+ u_n(\gamma)=S^{(m)}_{n\mid m}(\boldsymbol\alpha).
+\]
+Theorem 9.12 of
+\href{https://arxiv.org/pdf/1807.03271v2}{arXiv:1807.03271v2}
+states that all Hankel minors of this partial sequence, for
+$0\le\ell\le m$, are polynomials with nonnegative integer
+coefficients in the independent weights $\alpha_h$.
+The exact \href{sources/petreolle-sokal-zhu-1807.03271v2.pdf}{cached primary source}
+contains the theorem on page 44 and its nonintersecting-path proof
+in Section 9.4, pages 48--49. Specializing each $\alpha_h$ to its
+nonnegative-coefficient polynomial in $\gamma$ preserves this
+conclusion. Finally, \eqref{eq:cumulant-forest} multiplies a minor
+of size $q$ by $(\gamma)_d^q$, which proves the second assertion.
+\end{proof}
+
+The theorem supplies a positive tree formula at every order with
+the actual Gamma-power parameter coupling. It does not yet give
+coefficientwise positivity of the binomial resultants or their
+Newton differences. In particular, the Hankel assertion above keeps
+$\gamma$ fixed; consecutive binomial moments instead use shapes
+$\beta+a(N-1)$ and $\beta+aN$. Transferring the fraction structure
+to that two-shape consecutive resultant remains an open obligation.
 
 \section{A fixed lower-one sequence and its diagonal derivatives}
 For $n\ge0$, $\gamma>0$ and an integer $d\ge1$, define the

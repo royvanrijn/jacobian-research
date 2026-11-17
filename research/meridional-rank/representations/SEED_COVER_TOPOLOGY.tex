@@ -1,0 +1,182 @@
+\documentclass[11pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amsthm,booktabs}
+\usepackage[hidelinks]{hyperref}
+\usepackage{xurl}
+\setlength{\emergencystretch}{3em}
+\newtheorem{theorem}{Theorem}
+\title{Twenty-eight sharp-four examples outside the graph-cover family}
+\author{Exact finite topology and source-scope audit}
+\date{17 November 2026}
+\begin{document}
+\maketitle
+
+The four retained simple-three-cover seeds have double branched covers
+with a hyperbolic piece. They therefore lie outside the graph-manifold
+double-cover hypothesis of Boileau--Jang--Weidmann (2018).
+The same conclusion holds for all twenty-four targets of the new seven-sheeted cover certificates.
+This excludes one precise existing family. Global novelty, exclusion
+of every Coxeter or fishnet family, and the topology of all members
+of the periodic twist families remain open.
+
+\begin{theorem}\label{thm:outside}
+For every knot in the following table, the double branched cover
+$\Sigma_2(K)$ is a closed orientable irreducible manifold containing an
+incompressible separating torus. One component obtained by cutting
+along that torus has interior homeomorphic to the listed finite-volume
+cusped hyperbolic manifold:
+\begin{center}\small
+\begin{tabular}{lp{11.4cm}}
+\toprule
+component & knots\\
+\midrule
+m036 & $13a_j$ for $j=3145,3147,3148,3149$\\[2pt]
+m121 & $13a_j$ for $j=373,392,3264,3276$;\newline
+$13n_j$ for $j=1005,1006,1007,1046,1047,1048,3842,3856$\\[2pt]
+m189 & $13a_j$ for $j=375,391,3266,3275$;\newline
+$13n_j$ for $j=1011,1012,1013,1043,1044,1045,3844,3855$\\
+\bottomrule
+\end{tabular}
+\end{center}
+In particular none of these twenty-eight actual covers is a graph manifold.
+\end{theorem}
+
+\section{Exact diagram and cover construction}
+
+The input consists of the twenty-eight literal thirteen-crossing PDs in
+\path{seed_cover_topology_inputs.json}. They agree literally with the
+corresponding retained panel entries. A separate comparison binds them
+to the independently packaged Hoste--Thistlethwaite census:
+the full signed Gauss walk agrees up to cyclic shift, reversal,
+and global spatial reflections. These ambiguities only reverse
+orientation or mirror the knot, and do not change the assertion.
+
+For each literal diagram, Spherogram constructs its exterior with the
+diagram meridian peripheral basis. Fill the meridian with coefficient
+two, and take the unique cyclic cover of degree two of this orbifold
+filling. The meridian has nontrivial image in $C_2$, so its square lifts
+primitively. Filling the lifted cusp produces the ordinary
+double cover branched over the diagram knot. SnapPy's resulting
+triangulation is converted to a closed Regina triangulation.
+
+Every transformation here is combinatorial: exterior construction,
+cyclic cover, meridian filling, and bistellar simplification.
+The replay fixes the random seed and records both the exterior
+isomorphism signature with peripheral data and the resulting closed
+signature. Random choices affect the triangulation, not the underlying
+manifold. The actual replay must reconstruct the pinned signatures;
+a changed signature fails rather than silently substituting a
+different triangulation. No floating-point volume, group presentation
+similarity, homology coincidence, or numerical isometry test is
+an acceptance condition.
+
+Regina certifies that the resulting closed triangulation is valid,
+connected, orientable and irreducible. It then enumerates vertex normal
+surfaces in quadrilateral coordinates. The input supplies a surface index and its full quadrilateral vector. The indicated entry must agree
+with the full pinned quadrilateral vector, be connected, orientable and
+two-sided, and have Euler characteristic zero. Thus it is an embedded
+torus. Regina's incompressibility algorithm returns true.
+Its precondition of closed irreducibility has already been checked.
+
+Cutting along that torus produces two components, each with one torus
+boundary. The algorithm simplifies both components, idealizes their
+boundaries, and simplifies again. For the selected component the result
+is an exact triangulation from the certified hyperbolic census.
+
+\section{The hyperbolicity import}
+
+Hyperbolicity is imported from a rigorously certified census.
+Burton's author preprint \cite[Corollary 1.2, printed p.~2]{burton}
+states that the Callahan--Hildebrand--Thistlethwaite--Weeks census
+contains neither non-hyperbolic entries nor omissions through eight
+tetrahedra. Its preceding discussion credits Moser and
+Hoffman--Ichihara--Kashiwagi--Masai--Oishi--Takayasu for the
+absence of false positives. The present proof uses that imported
+certificate at its stated scope; it does not rerun the census-wide
+interval computations.
+
+The author's supporting archive contains exact isomorphism signatures
+of all minimal triangulations. The exact extracted
+\path{4-or.dat} and \path{5-or.dat} files are retained as
+\path{sources/burton-hypcensus-4-or.dat} and
+\path{sources/burton-hypcensus-5-or.dat}, with hashes and archive URL.
+The m036 row lists exactly these four signatures:
+\begin{center}\small
+\begin{tabular}{ll}
+\texttt{eLPkaccddjbkan}& \texttt{eLPkaccddjnkaj}\\
+\texttt{eLPkbcddddjwnw}& \texttt{eLPkbcddddkokg}
+\end{tabular}
+\end{center}
+Each of the selected four seed components matches one of these.
+The twenty-four further components match the m121 or m189 rows in
+the five-tetrahedron file. For example the selected $13a_{373}$ component
+has signature \texttt{fLLQccecddephrwwn}, in the m121 row.
+The chosen closed triangulations have between sixteen and twenty tetrahedra.
+Isomorphism signatures encode the exact face pairings, so their equality
+is a combinatorial identification.
+
+A closed irreducible graph manifold remains a graph manifold after
+cutting along incompressible tori. Equivalently, a hyperbolic component
+separated by an incompressible torus persists when one refines to the JSJ
+decomposition; redundant Seifert tori cannot absorb a hyperbolic component.
+This standard JSJ consequence follows from the gluing criterion
+and geometrization decomposition in
+\cite[Proposition 1.6.2 and Theorem 1.7.6]{afw}.
+Our hyperbolic component therefore excludes graph-manifold membership.
+The published BJW18 theorem explicitly assumes a
+graph-manifold double branched cover \cite[Theorem 1.2]{bjw}.
+
+\section{Reproducibility and limits}
+
+The replay is \path{verify_seed_cover_topology.py}, using
+SnapPy 3.3.2, Spherogram 2.4.1,
+\texttt{snappy\_15\_knots} 1.2.1,
+\texttt{snappy\_manifolds} 1.4, and Regina 7.4.
+It records all twenty-eight successful cases and rejects deliberately changed
+knot names and hyperbolic census names.
+The input pins the full quadrilateral coordinates and intermediate
+triangulations. \path{seed_cover_topology_verification.json} records the
+actual internal replay and source digests.
+
+The exact topological predicates are Regina's \texttt{isIrreducible()}
+and \path{NormalSurface.isIncompressible()}. Its API states the latter's
+preconditions explicitly: a connected compact embedded normal surface
+inside a valid, closed, irreducible triangulation.
+All are checked before invocation. The surface is taken from the vertex
+normal-surface enumeration, rather than constructed from an unchecked
+coordinate vector. \texttt{cutAlong()} performs actual cutting without
+crushing; \texttt{finiteToIdeal()} collapses the torus boundaries.
+These library algorithms and the geometric meaning of the branched
+cover construction remain trusted computational imports.
+The API descriptions were checked against installed Regina 7.4.
+
+The computations rely on the implementations of these algorithms, the
+named census, and Burton's imported certified census theorem.
+They are not formal verification or independent human specialist review.
+The four existing sharp-four equalities remain those of the retained
+simple-three-cover certificates. The twenty-four additional meridional
+lower certificates are separate seven-sheeted group computations;
+Theorem~\ref{thm:outside} concerns only actual-cover topology.
+No conclusion about all $N>0$ members of the periodic twist families
+follows from these twenty-eight finite cases.
+
+\begin{thebibliography}{9}
+\bibitem{burton}
+B. A. Burton, The cusped hyperbolic census is complete,
+author preprint arXiv:1405.2695v1, 12 May 2014, Corollary 1.2.
+\url{https://arxiv.org/abs/1405.2695v1}.
+Author data archive and exact signature format:
+\url{https://people.smp.uq.edu.au/BenjaminBurton/code/},
+\url{https://people.smp.uq.edu.au/BenjaminBurton/code/hypcensus.zip}.
+\bibitem{afw}
+M. Aschenbrenner, S. Friedl and H. Wilton,
+3-Manifold Groups, EMS (2015), final author manuscript,
+Proposition 1.6.2 and Theorem 1.7.6, printed pp.~15--19.
+\url{https://doi.org/10.4171/154}.
+\bibitem{bjw}
+M. Boileau, Y. Jang and R. Weidmann,
+Meridional rank and bridge number for a class of links,
+Pacific J. Math. 292 (2018), 61--84, Theorem 1.2.
+\url{https://doi.org/10.2140/pjm.2018.292.61}.
+\end{thebibliography}
+\end{document}

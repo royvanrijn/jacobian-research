@@ -19,6 +19,42 @@
   "literal_split_inseparable_residual_controls": 2,
   "global_precision_obstruction_cases": 6,
   "symbolic_gap_one_discriminant_cases": 6,
+  "cubic_factorial_unit_operator": {
+    "scope": "all q,k>=0,c=0,1,2,N>=1 by the written operator proof",
+    "mod81_literal_unit_cases": 13050,
+    "tested_precision_exponents": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9
+    ],
+    "logarithm_truncation_cases": 1323,
+    "exponential_truncation_cases": 1323,
+    "literal_factorial_operator_polynomial_cases": 240,
+    "offset_isometry_cases": 420,
+    "frozen_offset_countercontrol_rejected": true,
+    "corrupted_cubic_countercontrol_rejected": true,
+    "squarefreeness_preservation_claimed": false,
+    "finite_tests_prove_unbounded_scope": false
+  },
+  "prime_gap_unit_determinant": {
+    "scope": "all prime gaps p, all n>=1, rational p-integral positive gamma by written proof",
+    "characteristic_polynomial_and_unimodular_basis_cases": 4,
+    "positive_power_periodicity_column_cases": 78,
+    "symbolic_cyclic_determinant_congruence_cases": 21,
+    "constant_normalization_and_unit_telescope_cases": 60,
+    "literal_ordinary_lower_one_pair_cases": 32,
+    "wrong_characteristic_polynomial_rejected": true,
+    "composite_gap_extension_rejected": true,
+    "all_terminal_prime_gap_lower_one": true,
+    "all_positive_real_Gamma_shapes_claimed": false,
+    "finite_tests_prove_unbounded_scope": false
+  },
   "unshifted_resultant_hurwitz_counterexample": {
     "terminal_N": 8,
     "gap": 5,
@@ -40,7 +76,10 @@
   "unsupported_inputs_rejected": 36,
   "repeated_factor_countercontrol_detected": true,
   "carry_endpoint_countercontrol_detected": true,
-  "lower_one_gap_three_terminal_family": "N=m*3^r or m*3^r-1, m=1,2, N>=2",
+  "lower_one_gap_three_terminal_family": "all N>=2 for ordinary factorials",
+  "prime_gap_lower_one_all_terminal_orders": true,
+  "ordinary_binomial_degree_at_most_four": true,
+  "all_positive_real_Gamma_shapes_at_higher_prime_gaps": false,
   "lower_one_prime_power_gap_extra_family": "gap=p^s, terminal N=m*p^r-1>=2, 1<=m<p",
   "ordinary_arbitrary_lower_family": "gap=p^s, terminal N=p^r>=2, digit_s(a)<=p-2",
   "ordinary_arbitrary_lower_extra_family": "gap=p^s, q=floor(aN/gap)=floor(a(N-1)/gap), q+N<p",
@@ -58,12 +97,17 @@
   "formal_verification": false,
   "priority_claim": false,
   "input_sha256": {
-    "ARITHMETIC_FRONTIER_TERMINAL_ORDERS.tex": "e78cff718e35a9aca484e10727ddf0199439251c1d2174521a759338133010c0",
-    "arithmetic_frontier_terminal_orders.py": "54f09b04f7a1e45da75ea5d14cfc8f6712af7daeda76919891cf1ed29b2d33c5",
+    "ARITHMETIC_FRONTIER_TERMINAL_ORDERS.tex": "69194ae2006e06c8d2f2fa97c09a99e8bdaf40eff8ad7cbdac14dac1a9252356",
+    "arithmetic_frontier_terminal_orders.py": "184117f93ab3db716b4cde79ff34e440e66a76e1367dbd2849e7b12dcde9ee58",
     "prime_power_windows.py": "8f7ae47d1bf7d3d2c955c2d2868bfbf515b316f462a2a6ba7bef6b2faa24d752",
     "PRIME_POWER_TWO_TERM_SFC.tex": "0e94e91d7b60905e9ef4d1c42234b6ef5f5307cac7899d77b7c5ce6714243228",
     "HIGHER_GAP_ADJOINT_RANK.tex": "ec19415938c9b0b92e7d365fb4a4c66b701fdf36d73883b68f7cfb2971d7ec28",
     "arithmetic_frontier_terminal_orders_resultant_hurwitz_counterexample.json": "763a80a06c2105f645aec98fcd47981b66ab642827c9e76c7f0a740ce664db85",
-    "sources/dlmf-1-10-rouche.html": "fc94fe84ef0de24326d225e9f8d7ed689d45b0674431c74d10d753dbc4f7dcb1"
+    "sources/dlmf-1-10-rouche.html": "fc94fe84ef0de24326d225e9f8d7ed689d45b0674431c74d10d753dbc4f7dcb1",
+    "gap_three_hurwitz_structure.tex": "22c690a45976c9b72b210ff76bbcd3a7084ddba0aae4af0c7f40ce2b109f705c",
+    "ALL_UNIVARIATE_TWO_TERM_SFC.tex": "112d995972906353784af4f9ceb2b03eb7e71ce3e7bd52adc5a44c6869aeadc0",
+    "UNIFORM_PADE_PARABOLA_SFC.tex": "ddb8155dcce6308db9d7fdcbc971898b9725e9ac23c83362d6c45a63f4177cc5",
+    "CUBIC_ADJOINT_STABILITY_SFC.tex": "ea2510e511545b9dd7a49a0796d75c45575687e60770c3359d38c5bc99cb4125",
+    "DYADIC_BINOMIAL_SFC.tex": "9d4a5a3084c3a2d9956c83c444e216f528efa523d21006e20a0da00bf4011f61"
   }
 }

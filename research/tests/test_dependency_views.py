@@ -9,7 +9,7 @@ import unittest
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "scripts"))
 from dependency_graph import DependencyGraph
-from dependency_views import render_dependency_report, render_scope_report, _overview, OVERVIEW_NODE_LIMIT, OVERVIEW_RULE_LIMIT
+from dependency_views import render_dependency_report, render_scope_report, _overview, _scope_text, OVERVIEW_NODE_LIMIT, OVERVIEW_RULE_LIMIT
 
 
 class DependencyViewsTests(unittest.TestCase):
@@ -120,6 +120,27 @@ class DependencyViewsTests(unittest.TestCase):
         self.assertIn("**Authored scope assessment:** The all-degree implication remains unverified.", scopes)
         self.assertIn("| GAP | mathematical | proved / discharged |", dependencies)
 
+
+    def test_quoted_scope_links_rebase_to_source_directory_and_preserve_literal_math(self):
+        notes = self.root / "notes"
+        notes.mkdir()
+        (notes / "source.md").write_text("Canonical statement.\n")
+        (notes / "support.md").write_text("Supporting lemma.\n")
+        (self.root / "shared.md").write_text("Shared result.\n")
+        scope = (r"[Local](support.md#lemma) [Parent](../shared.md) [Anchor](#statement) "
+                 r"[Web](https://example.test/paper) "
+                 r"`[Literal](missing.md)` "
+                 r"\([u](formal)\) $[v](formal)$ [Old](missing.md)")
+        text = _scope_text({"scope": scope},
+                           {"sources": [{"path": "notes/source.md"}]}, self.graph())
+        self.assertIn("[Local](notes/support.md#lemma)", text)
+        self.assertIn("[Parent](shared.md)", text)
+        self.assertIn("[Anchor](notes/source.md#statement)", text)
+        self.assertIn("[Web](https://example.test/paper)", text)
+        self.assertIn("`[Literal](missing.md)`", text)
+        self.assertIn(r"\([u](formal)\) $[v](formal)$", text)
+        self.assertIn("Old (source reference: `missing.md`)", text)
+        self.assertNotIn("[Old](", text)
 
     def test_equivalence_components_show_both_directions_and_context(self):
         self.data["graph"]["equivalences"] = [{

@@ -595,7 +595,15 @@ which has bidegree \((4m+1,4m+1)\).  Theorem 1.1 gives
 \tag{5.3}
 \]
 
-> **Theorem 5.2.** The moment--nullcone assertion
+**Geometric verification boundary.** The nullcone and semistability
+interpretation in the next statement and Section 6 still requires a
+specified group action and an audited implication from its nullcone to
+eventual fixed-marker vanishing. This is recorded as a verification
+obligation in the dependency graph. That geometric interpretation is
+conditional on this input; the contraction identities and Image failures
+proved here do not depend on it.
+
+> **Theorem 5.2 (geometric input pending verification).** The moment--nullcone assertion
 > \(\mathrm{MN}_d\) fails for every \(d\geq4\).
 
 The fixed multiplier \(Q\) is independent of \(d\), and every mixed moment

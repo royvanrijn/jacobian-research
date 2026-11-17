@@ -120,6 +120,12 @@
       "url": "https://dlmf.nist.gov/1.10",
       "sha256": "fc94fe84ef0de24326d225e9f8d7ed689d45b0674431c74d10d753dbc4f7dcb1",
       "review": "Section1.10(iv), Rouche paragraph after Eq1.10.10 inspected. Used only for the exact rational-disk N8,d5 a-resultant counterexample: the full polynomial and its nonzero linear Taylor comparator are entire, and a retained strict rational circle inequality proves one zero with multiplicity in a disk wholly in Re(a)>0. No general resultant stability or simplicity theorem is imported."
+    },
+    {
+      "file": "sources/petreolle-sokal-zhu-1807.03271v2.pdf",
+      "url": "https://arxiv.org/pdf/1807.03271v2",
+      "sha256": "37b51eb4c7b47951460c0287e88b295be366acf76db55b1bd594dc8120554c1c",
+      "review": "Version2, May17,2020: Section2.3 definitions and Eqs2.26-2.27; Theorems9.8 and9.12 (ell=m) and following shifted-moment identity; Section9.4 LGV proof with the fully nonpermutable boundary sources/sinks; Section7.1/Proposition7.2 contraction product inspected. Applied only to Gamma-power formal contiguous ratios and the normalized cumulant Hankel matrix through the explicit m=d-1 weight substitution. No Wronskian-Hurwitz transfer, strict terminal-determinant positivity, binomial SFC, full-paper audit or external/independent review is imported."
     }
   ],
   "additional_primary_references": [

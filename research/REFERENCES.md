@@ -4,9 +4,26 @@
 
 Citation identity, reading a source, verifying a particular application, and proving a dependent theorem are separate. Context citations supply no mathematical premise. A source_read entry retains the stated ledger scope; it does not certify every use.
 
-**Catalogue:** 224 cited resources; 199 current TeX bibliography entries accounted for, including own-paper citations tracked separately.
+**Catalogue:** 227 cited resources; 206 current TeX bibliography entries accounted for, including own-paper citations tracked separately.
 
 [Graph](DEPENDENCIES.md) · [Source coverage](COVERAGE.md) · [Scope](SCOPES.md)
+
+## Reference issues
+
+- unmapped bibliography item: meridional-rank/representations/CONJUGACY_RESTRICTED_QUOTIENT_CAPACITY.tex :: bc
+- unmapped bibliography item: meridional-rank/representations/GENERAL_BRANCHED_COVER_RANK_BOUNDS.tex :: bhattacharjee
+- unmapped bibliography item: meridional-rank/representations/GENERAL_BRANCHED_COVER_RANK_BOUNDS.tex :: hempel
+- unmapped bibliography item: meridional-rank/representations/GENERAL_BRANCHED_COVER_RANK_BOUNDS.tex :: wirt
+- unmapped bibliography item: meridional-rank/representations/SEED_COVER_TOPOLOGY.tex :: afw
+- unmapped bibliography item: meridional-rank/representations/SEED_COVER_TOPOLOGY.tex :: bjw
+- unmapped bibliography item: meridional-rank/representations/SEED_COVER_TOPOLOGY.tex :: burton
+- unmapped external URL: meridional-rank/representations/GENERAL_BRANCHED_COVER_RANK_BOUNDS.tex :: https://doi.org/10.4153/CJM-1992-007-4
+- unmapped external URL: meridional-rank/representations/GENERAL_BRANCHED_COVER_RANK_BOUNDS.tex :: https://doi.org/10.4310/CAG.2020.v28.n2.a2
+- unmapped external URL: meridional-rank/representations/SEED_COVER_TOPOLOGY.tex :: https://arxiv.org/abs/1405.2695v1
+- unmapped external URL: meridional-rank/representations/SEED_COVER_TOPOLOGY.tex :: https://people.smp.uq.edu.au/BenjaminBurton/code
+- unmapped external URL: meridional-rank/representations/SEED_COVER_TOPOLOGY.tex :: https://people.smp.uq.edu.au/BenjaminBurton/code/hypcensus.zip
+- external theorem primary/source file lacks cited-resource mapping: EXT-WIRTINGER-BRIDGE :: meridional-rank/representations/sources/wirtinger-systems-published-2020.pdf
+- external theorem primary/source file lacks cited-resource mapping: EXT-BURTON-CERTIFIED-CUSPED-CENSUS :: meridional-rank/representations/sources/burton-cusped-census-1405.2695v1.pdf
 
 | Cited resource | Kind | Evidence status | Retained primary source | Uses / mapped inputs |
 |---|---|---|---|---|
@@ -84,7 +101,6 @@ Citation identity, reading a source, verifying a particular application, and pro
 | [Exponential motives](http://javier.fresan.perso.math.cnrs.fr/expmot.pdf) | book | citation_only | not retained; citation/application boundary recorded | 3 uses;  |
 | [Exponential Periods and Factorial Moments](https://raw.githubusercontent.com/long-mathematics/exponential-integral-theorem/92db79eedeb064694ff20e9201d73fc2bc0857f4/papers/06-exponential-factorial-moments/exponential-factorial-moments.tex) | paper | source_read | [factorial/image-rigidity/sources/long-eit-vi-current.tex](factorial/image-rigidity/sources/long-eit-vi-current.tex) :: Retained primary source; exact use and review scope in source_ledger.json | 1 uses;  |
 | Exponential periods and o-minimality | paper | citation_only | not retained; citation/application boundary recorded | 2 uses;  |
-| [Expose XII, Theorem 5.1 and Corollary 5.2](https://firmaprim.github.io/sga/sga-1/) | paper | citation_only | not retained; citation/application boundary recorded | 2 uses;  |
 | [External reference: https://annals.math.princeton.edu/2016/183-3/p06](https://annals.math.princeton.edu/2016/183-3/p06) | paper | citation_only | not retained; citation/application boundary recorded | 1 uses;  |
 | [External reference: https://arminstraub.com/downloads/pub/polydegree-conjecture.pdf](https://arminstraub.com/downloads/pub/polydegree-conjecture.pdf) | paper | citation_only | not retained; citation/application boundary recorded | 1 uses;  |
 | [External reference: https://arxiv.org/abs/0712.0349](https://arxiv.org/abs/0712.0349) | paper | citation_only | not retained; citation/application boundary recorded | 2 uses;  |
@@ -143,6 +159,7 @@ Citation identity, reading a source, verifying a particular application, and pro
 | [KCH representations, augmentations, and A-polynomials](https://arxiv.org/abs/1310.7526v3) | paper | application_pending | not retained; citation/application boundary recorded | 3 uses;  |
 | [Knot contact homology and representations of knot groups](https://arxiv.org/abs/1303.4943) | paper | application_pending | not retained; citation/application boundary recorded | 7 uses;  |
 | [La descente des cols par les onglets de Lefschetz, avec vues sur Gauss--Manin](https://numdam.org/item/AST_1985__130__11_0/) | paper | citation_only | not retained; citation/application boundary recorded | 6 uses;  |
+| [Lattice paths and branched continued fractions: An infinite sequence of generalizations of the Stieltjes–Rogers and Thron–Rogers polynomials, with coefficientwise Hankel-total positivity](https://arxiv.org/pdf/1807.03271v2) | paper | source_read | [factorial/image-rigidity/sources/petreolle-sokal-zhu-1807.03271v2.pdf](factorial/image-rigidity/sources/petreolle-sokal-zhu-1807.03271v2.pdf) :: Section2.3 printedpp17-18; Theorem9.12 printedp44; Section9.4 LGV proof printedpp48-49; version2 exact retained bytes | 2 uses; EXT-PSZ-PARTIAL-STIELTJES-HANKEL, FACT-LOWER-EXPONENT-INITIAL-AND-BOUNDARY-COR-CUMULANT-HANKEL |
 | [Lattices, graphs, and Conway mutation](https://doi.org/10.1007/s00222-012-0421-4) | paper | application_pending | not retained; citation/application boundary recorded | 3 uses;  |
 | [Lauritzen--Thomsen, 2026](https://arxiv.org/html/2604.16636) | paper | citation_only | not retained; citation/application boundary recorded | 1 uses;  |
 | [Lauritzen--Thomsen, Corollary 8.11](https://arxiv.org/html/2610.15469v2#S8.SS7) | paper | citation_only | not retained; citation/application boundary recorded | 1 uses;  |
@@ -191,15 +208,18 @@ Citation identity, reading a source, verifying a particular application, and pro
 | [Polynomials with roots modulo every integer](https://doi.org/10.1090/S0002-9939-96-03210-8) | paper | citation_only | not retained; citation/application boundary recorded | 8 uses; EXT-LOW-DEGREE-INTERSECTIVE |
 | [Public announcement of a counterexample to the Jacobian conjecture](https://x.com/__alpoge__/status/2079028340955197566) | announcement | citation_only | not retained; citation/application boundary recorded | 3 uses;  |
 | [Quandle Colorings of Knots and Applications](https://arxiv.org/abs/1312.3307) | paper | application_pending | not retained; citation/application boundary recorded | 5 uses;  |
+| [Quantum integrable systems and differential Galois theory](https://arxiv.org/pdf/alg-geom/9607012v4) | paper | source_read | [dixmier/dixmier-formal-lifting/sources/braverman-etingof-gaitsgory-alg-geom-9607012v4.pdf](dixmier/dixmier-formal-lifting/sources/braverman-etingof-gaitsgory-alg-geom-9607012v4.pdf) :: Exact cached version inspected for the scoped theorem application | 1 uses; DIX-QSF1-FIELD, DIX-QSF1-RANK-DIVISIBILITY, EXT-BEG-SCALAR-CENTRALIZER-FIELD |
 | [Real homotopy theory of semi-algebraic sets](https://arxiv.org/abs/0806.0476v3) | paper | citation_only | not retained; citation/application boundary recorded | 2 uses;  |
 | [Relative Exponential Periods on Polynomial Chains: Algebraic Independence over Fixed Boundary Fields](https://github.com/long-mathematics/exponential-integral-theorem/blob/main/papers/05-polynomial-flags/polynomial-flag-exponential-periods.tex) | paper | citation_only | not retained; citation/application boundary recorded | 2 uses;  |
 | [Remarks on the Selberg--Delange method](https://arxiv.org/abs/2010.12929) | paper | citation_only | not retained; citation/application boundary recorded | 7 uses; EXT-SELBERG-DELANGE |
 | [Retained source: iskander-jain-2020-delta-laguerre-polya](https://arxiv.org/abs/2002.09906) | paper | source_read | [factorial/image-rigidity/sources/iskander-jain-2020-delta-laguerre-polya.pdf](factorial/image-rigidity/sources/iskander-jain-2020-delta-laguerre-polya.pdf) :: Retained primary source; exact use and review scope in source_ledger.json | 3 uses;  |
 | [Retained source: saff-varga-1976-sharpness](https://www.math.kent.edu/~varga/pub/paper_98.pdf) | paper | source_read | [factorial/image-rigidity/sources/saff-varga-1976-sharpness.pdf](factorial/image-rigidity/sources/saff-varga-1976-sharpness.pdf) :: Retained primary source; exact use and review scope in source_ledger.json | 1 uses;  |
+| [Riemann-Hurwitz](https://stacks.math.columbia.edu/tag/0C1B) | web | source_read | [dixmier/dixmier-formal-lifting/sources/stacks-0C1B.html](dixmier/dixmier-formal-lifting/sources/stacks-0C1B.html) :: Exact cached version inspected for the scoped theorem application | 1 uses; DIX-QEP1, EXT-RIEMANN-HURWITZ-CHAR0-CURVES |
 | [Rigidity of Smooth Billiards with a Continuous Caustic Collar](https://github.com/openai/math/blob/adc7f1241b42e322a6451854ab7e4b4c146bf78a/preprints/Rigidity-of-Smooth-Billiards-with-a-Continuous-Caustic-Collar-September-24-2026/build/sections/04-continuation.tex) | paper | citation_only | not retained; citation/application boundary recorded | 2 uses;  |
 | [Sabbah, Proximite evanescente II](https://www.numdam.org/item/CM_1987__64_2_213_0/) | paper | citation_only | not retained; citation/application boundary recorded | 1 uses;  |
 | [Sabbah--Yu, Hodge properties of Airy moments, Section6.a, Lemma6.2 and the following paragraphs](https://arxiv.org/html/2112.13405v2#S6.SS1) | paper | citation_only | not retained; citation/application boundary recorded | 1 uses;  |
 | [Semi-algebraic functions have small subdifferentials](https://doi.org/10.1007/s10107-012-0624-x) | paper | citation_only | not retained; citation/application boundary recorded | 3 uses;  |
+| [SGA1, Revetements etales et groupe fondamental, Expose XII](https://firmaprim.github.io/sga/sga-1/) | paper | source_read | [jacobian/monodromy-theory/sources/sga1-math-0206203v2.pdf](jacobian/monodromy-theory/sources/sga1-math-0206203v2.pdf) :: SGA 1, revised edition math/0206203v2; Expose XII Theorem 5.1 and Corollary 5.2, printed pp251-254, PDF pp267-270; original marginal pp333-337 | 3 uses; EXT-AFFINE-COVERS-CHAR0 |
 | [Sharp finite Gaussian moments for quadratic polynomials](https://doi.org/10.5281/zenodo.21688251) | paper | citation_only | not retained; citation/application boundary recorded | 5 uses;  |
 | Simplex Exponential Periods: Reductions and Open Comparison Problems | paper | citation_only | not retained; citation/application boundary recorded | 2 uses;  |
 | [Singer, Sections3 and6](https://arxiv.org/html/0712.4124) | paper | citation_only | not retained; citation/application boundary recorded | 2 uses;  |
@@ -222,7 +242,7 @@ Citation identity, reading a source, verifying a particular application, and pro
 | [The pi-orbifold group of a link](https://doi.org/10.1007/BF01230281) | paper | application_pending | not retained; citation/application boundary recorded | 1 uses;  |
 | [The plain sphere number of a link](https://msp.org/pjm/2026/342-2/pjm-v342-n2-p.pdf) | paper | application_pending | not retained; citation/application boundary recorded | 1 uses;  |
 | [The set of points at which a polynomial map is not proper](https://doi.org/10.4064/ap-58-3-259-266) | paper | citation_only | not retained; citation/application boundary recorded | 3 uses;  |
-| [The Stacks Project](https://stacks.math.columbia.edu) | paper | citation_only | not retained; citation/application boundary recorded | 34 uses;  |
+| [The Stacks Project](https://stacks.math.columbia.edu) | paper | citation_only | [jacobian/monodromy-theory/sources/stacks-0BMB.html](jacobian/monodromy-theory/sources/stacks-0BMB.html) :: Lemma 58.21.4 (purity of branch locus); [jacobian/monodromy-theory/sources/stacks-0363.html](jacobian/monodromy-theory/sources/stacks-0363.html) :: Lemma 33.7.6 (connected components over separably algebraically closed constants); [jacobian/monodromy-theory/sources/stacks-04KV.html](jacobian/monodromy-theory/sources/stacks-04KV.html) :: Lemma 33.7.14 (relative algebraic closure implies geometric connectedness) | 37 uses; EXT-AFFINE-COVERS-CHAR0, EXT-PURITY |
 | [The structure of 3-manifolds with two-generated fundamental group](https://doi.org/10.1016/j.top.2004.10.008) | paper | source_read | [meridional-rank/representations/sources/boileau-weidmann-structure-author.pdf](meridional-rank/representations/sources/boileau-weidmann-structure-author.pdf) :: Author manuscript42pp, Theorem2 printedp3 and all10necessary cases; Lemma2 printedp5; Section3.1 separating-torus argument printedpp16-20. Published Topology44(2)(2005),283-320; Crossref DOI metadata read. | 5 uses;  |
 | Transcendental Number Theory | book | citation_only | not retained; citation/application boundary recorded | 5 uses;  |
 | [Trees](https://doi.org/10.1007/978-3-642-61856-7) | book | application_pending | not retained; citation/application boundary recorded | 6 uses;  |

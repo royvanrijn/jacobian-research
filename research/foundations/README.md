@@ -21,7 +21,7 @@ Scope limits:
 - Formal verification is scoped by exact declarations, transitive assumptions and the paper bridge. A paper theorem does not imply that its full formalization is complete.
 - GMC2 retains two explicit mathematical axiom interfaces, shown as open formalization obligations. Its propagated formal claim remains conditional until discharged; its written mathematical theorem has separate proof support.
 - Binary GVC and generic tangent-pencil geometry are partial formalizations. The focused finite-etale certificate excludes the broader supplied-presentation and analytic counting scopes. No Lean build was rerun for this registry migration.
-- The latest two-pair Image cubic note now supplies an internal full(3,3) proof and sharp minimum balanced degree4. Its prior F1-versus-closing-gap inconsistency is obsolete; external review/formal coverage remain separate.
+- The retained two-pair Image cubic proof covers exact bihomogeneous bidegree (3,3), with sharp mixed cutoff and minimum failing balanced degree four. Independent review and formal coverage are separate obligations.
 
 Tracked obligations (computed states):
 

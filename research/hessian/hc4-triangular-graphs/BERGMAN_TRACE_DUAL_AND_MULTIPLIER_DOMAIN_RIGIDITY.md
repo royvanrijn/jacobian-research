@@ -20,10 +20,13 @@ finite local freeness and
 
     omega_Z=Lambda*Omega, Omega=dP wedge dQ=J dx wedge dy.
 
-Retained KQ0/PF2BATT1 gives the WHOLE-plane open X in Z and only CYCLIC
-QUOTIENT singularities, on its omitted divisors E_i. This particular
-singularity input is essential to the global square-integrability proof
-below; no higher-dimensional version is inferred. KN0 gives
+KN0 gives the WHOLE-plane open X in Z. The
+[quotient-point application of Flenner--Zaidenberg Theorem 2.1](FULL_NORMALIZATION_QUOTIENT_POINTS_AND_CANONICAL_L2_EXTENSION.md)
+gives FINITE QUOTIENT singularities at every omitted singular point.
+That point theorem is sufficient for the global square-integrability
+proof below; cyclicity and the separate unverified KQ0 differential
+source-layer theorem are not needed here. No higher-dimensional version
+is inferred. KN0 gives
 
     div_Z(Omega)=sum (e_i-1)E_i.
 
@@ -69,7 +72,7 @@ The ball sees every omitted prime; source divisors cause no polynomial pole.
 
 For the converse Lambda*Omega is a regular reflexive canonical form on Z.
 At smooth points its coefficient is holomorphic and its canonical L2 density
-is locally integrable. At a cyclic quotient point take a finite small
+is locally integrable. At a finite quotient point take a finite small
 quotient chart C2/G->Z. Away from the origin the chart is etale, so the
 pullback is a holomorphic top form there. Hartogs extends its coefficient
 over the origin. Its canonical L2 integral is finite on a smaller cover
@@ -261,10 +264,11 @@ missing actual Keller density assertion is made.
 
 ## 8. Evidence and the remaining actual-source problem
 
-The L2 theorem uses the already retained cyclic quotient and canonical
-module inputs. Change of variables, Laurent removability, Hartogs, finite
+The L2 theorem uses the audited finite-quotient point theorem and the
+retained canonical-module input. Change of variables, Laurent removability, Hartogs, finite
 matrix/module arguments and Hilbert mean value estimates are written out;
-no external theorem is newly adopted and no primary PDF newly cached.
+the point theorem is attributed in its linked application note, which
+retains the exact primary PDF and scope of that import.
 Bell-type trace identities and Bergman operator issues were checked against
 primary literature for context, not imported as properness or density
 theorems for this setting. No historical-priority claim is made.

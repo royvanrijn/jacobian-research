@@ -15,7 +15,7 @@ The classical meridional rank conjecture remains open. It asks whether
 $\mr(K)=b(K)$ for every knot $K\subset S^3$; the usual link formulation asks
 the same equality for links. The 2026 problem list retains it as Problem
 1.18 \cite{k3}. No general proof or classical counterexample was found in
-this search. The catalogue \texttt{sources.json} records 46 sources,
+this search. The catalogue \texttt{sources.json} records 48 sources,
 their precise claimed scope and audit depth. This is a broad map of the
 main results and recent developments, with outstanding source audits
 retained rather than an assertion of exhaustive bibliographic coverage.
@@ -23,8 +23,9 @@ retained rather than an assertion of exhaustive bibliographic coverage.
 The graph manifold models now certify $\mr=b=4$ for all sixteen original
 targets, whose complete list is in the final-five proof.
 Together with the four earlier
-seed cases, twenty of the retained293 names have equalities proved in
-this programme. All sixteen original targets now have established
+seed cases, twenty of the retained293 names had equalities proved by
+those methods. The arbitrary-cycle cover calculation below proves
+another twenty-four, for forty-four retained named equalities. All sixteen original targets now have established
 membership in the existing Boileau--Jang--Weidmann graph-cover MRC family,
 using closed-manifold rigidity to identify their actual covers.
 They are not cases outside known MRC families. Priority of the explicit
@@ -1305,6 +1306,68 @@ or non-arborescence alone does not suffice. Full MRC, exhaustive literature,
 formal and external specialist review remain open.
 
 {\small
+
+\section{Arbitrary-cycle covers: twenty-four further sharp equalities}
+
+The current proof \path{GENERAL_BRANCHED_COVER_RANK_BOUNDS.tex} retains
+the fundamental group of a branched cover with arbitrary meridian
+cycle type. For a transitive degree-$n$ permutation representation,
+let $c$ be the number of cycles of a meridian, including fixed points,
+and let $Y$ be the branched completion. Eliminating one lifted edge
+per filled meridian cycle gives
+\[
+ \mr(K)\ge
+ \left\lceil\frac{n-1+\operatorname{rank}\pi_1(Y)}{n-c}\right\rceil.
+\]
+Its homology version is valid over every field.
+The inequality strictly improves the maximal simple-cover rank
+invariant on the known family $T(4,420j+7)$: $C=3<D=4$ for all $j\ge0$.
+This is a comparison of methods on known torus knots, without a
+priority claim for the general bound.
+
+The retained twenty-nine binary $GL_3$ witnesses now have a different
+use from their deficient rank-one coefficient tests. Their natural
+and dual seven-point actions have meridian index two. Exact group
+presentations of all fifty-eight branched covers reduce by explicit
+one-occurrence Tietze eliminations: forty-eight are $C_3$, and ten
+are trivial. The former give $\mr=b=4$ on the twenty-four names in
+the general-cover theorem, with separate four-seed bridge upper
+certificates. A full directed-edge computation independently gives
+$b_1(Y;\mathbb F_3)=1$ there. The five negative names have trivial
+cover groups for these fixed actions, so nonlinear quotients of these
+particular covers cannot improve their bound.
+
+Every literal PD has a current exact crossing-preserving map to the
+independently packaged named Hoste--Thistlethwaite census. All
+twenty-four positive names remain in Bhattacharjee's current
+293-name open list, and exact read-only row extraction from the
+pinned BKM workbook finds no recorded maximal finite $S,D,H$
+Coxeter hit. These comparisons exclude those recorded certificates,
+not every existing geometric or infinite Coxeter family.
+The small current input and standard-library checkers are retained;
+no broad historical quotient search is needed to replay these proofs.
+
+The separate \path{SEED_COVER_TOPOLOGY.tex} establishes that all
+twenty-four new examples and the four earlier simple-three-cover
+seeds lie outside BJW18's graph-manifold double-cover hypothesis.
+Each actual double cover is irreducible and has an incompressible
+torus cutting off a certified cusped hyperbolic census manifold.
+The acceptance uses exact triangulation signatures and trusted
+normal-surface algorithms, with an explicit imported certified-census
+theorem. Numerical volume is not used. This settles the precise
+BJW18 comparison on these finite seeds; global priority, fishnet and
+other-family comparisons, and every positive periodic parameter
+remain separate obligations.
+
+Finally, \path{CONJUGACY_RESTRICTED_QUOTIENT_CAPACITY.tex} gives a
+meridian-sensitive finite quotient gate: eight distinct
+$GL_3(\mathbb F_2)$ knot-group quotient kernels with involutory
+meridians force meridional rank at least four. Exact enumeration gives
+only seven generating-involution-triple automorphism orbits, versus
+57 unrestricted generating-pair orbits. The corresponding
+double-cover statement requires an invariant kernel and inner deck
+action. It supplies no additional named equality by itself.
+
 \begin{thebibliography}{99}
 \setlength{\itemsep}{2pt}
 \small

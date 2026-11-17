@@ -473,6 +473,379 @@ def global_precision_obstruction_literal_certificate(h):
 
 
 
+
+def cubic_factorial_unit_mod(quotient, tail, index, modulus):
+    """Literal nonmultiples of three in the factorial interval."""
+    start = 3 * quotient + tail
+    value = 1
+    for number in range(start + 1, start + 3 * index + 1):
+        if number % 3:
+            value = value * number % modulus
+    return value
+
+
+def cubic_unit_mod81_formula(quotient, tail, index):
+    alpha, beta = ((quotient + 1, 1), (7 * quotient + 6, 7),
+                   (quotient - 7, 1))[tail]
+    return (1 + 9 * (alpha * comb(index, 2) + beta * comb(index, 3))) % 81
+
+
+def fraction_mod_unit(value, modulus):
+    value = Fraction(value)
+    assert value.denominator % 3
+    return value.numerator * pow(value.denominator, -1, modulus) % modulus
+
+
+def cubic_unit_log_truncation(quotient, tail, index, precision):
+    """Exact rational representative of the retained diagonal eigenvalue."""
+    answer = Fraction(0)
+    base = comb(quotient + 1, 2)
+    # Beyond these finite ranges the proved valuation bounds are >= precision.
+    for order in range(1, precision):
+        if 2 * order - valuation(order, 3) < precision:
+            summed = sum(comb(quotient + j, 2) ** order
+                         for j in range(1, index + 1))
+            answer += Fraction((-1) ** (order + 1) * 9 ** order
+                               * (summed - index * base ** order), order)
+    for order in range(2, 2 * precision):
+        if order - valuation(order, 3) < precision:
+            endpoint = sum((Fraction(1, (3 * quotient + a) ** order)
+                            for a in range(1, tail + 1)), Fraction(0))
+            answer += (Fraction((-1) ** (order + 1) * 3 ** order
+                                * (index ** order - index), order) * endpoint)
+    return answer
+
+
+def cubic_unit_exp_truncation(logarithm, precision):
+    return sum((logarithm ** order / factorial(order)
+                for order in range(precision)
+                if 2 * order - factorial_valuation(order, 3) < precision),
+               Fraction(0))
+
+
+def cubic_unit_operator_replay():
+    mod81_count = 0
+    for quotient in list(range(41)) + [80, 81, 82, 242, 243, 244, 728, 729, 730]:
+        for tail in range(3):
+            first = cubic_factorial_unit_mod(quotient, tail, 1, 81)
+            for index in list(range(81)) + [242, 243, 244, 728, 729, 730]:
+                actual = (cubic_factorial_unit_mod(quotient, tail, index, 81)
+                          * pow(first, -index, 81)) % 81
+                assert actual == cubic_unit_mod81_formula(quotient, tail, index)
+                mod81_count += 1
+    logarithm_count = 0
+    exponential_count = 0
+    for precision in range(1, 10):
+        modulus = 3 ** precision
+        for quotient in [0, 1, 2, 7, 22, 42, 67]:
+            for tail in range(3):
+                for index in [0, 1, 2, 3, 5, 9, 17]:
+                    first = cubic_factorial_unit_mod(quotient, tail, 1, modulus)
+                    actual = (cubic_factorial_unit_mod(quotient, tail, index, modulus)
+                              * pow(first, -index, modulus)) % modulus
+                    direct_log = sum(
+                        (Fraction((-1) ** (order + 1) * (actual - 1) ** order, order)
+                         for order in range(1, precision)
+                         if 2 * order - valuation(order, 3) < precision), Fraction(0))
+                    formula_log = cubic_unit_log_truncation(
+                        quotient, tail, index, precision)
+                    assert fraction_mod_unit(direct_log - formula_log, modulus) == 0
+                    logarithm_count += 1
+                    reconstructed = cubic_unit_exp_truncation(formula_log, precision)
+                    assert fraction_mod_unit(reconstructed, modulus) == actual
+                    exponential_count += 1
+    polynomial_count = 0
+    for quotient in [0, 1, 7, 22]:
+        for tail in range(3):
+            for terminal in [1, 2, 5, 9]:
+                literal = coefficients(terminal, 3 * quotient + tail, 3)
+                for precision in [1, 2, 3, 5, 8]:
+                    modulus = 3 ** precision
+                    first = cubic_factorial_unit_mod(quotient, tail, 1, modulus)
+                    for index, coefficient in enumerate(literal):
+                        divided, remainder = divmod(coefficient, 3 ** index)
+                        assert remainder == 0
+                        actual = divided * pow(first, -index, modulus) % modulus
+                        log_value = cubic_unit_log_truncation(
+                            quotient, tail, index, precision)
+                        unit = cubic_unit_exp_truncation(log_value, precision)
+                        base = comb(terminal, index) * prod(
+                            range(quotient + 1, quotient + index + 1))
+                        assert fraction_mod_unit(base * unit, modulus) == actual
+                    polynomial_count += 1
+    isometry_count = 0
+    block = lambda j: 2 + 9 * j * (j - 1)
+    for quotient in range(20):
+        for depth in range(21):
+            other = quotient + 3 ** depth
+            difference = (Fraction(block(other + 2), block(other + 1))
+                          - Fraction(block(quotient + 2), block(quotient + 1)))
+            assert valuation(difference, 3) == depth + 2
+            isometry_count += 1
+    # Countercontrols reject a frozen offset and a corrupted cubic correction.
+    first = cubic_factorial_unit_mod(42, 0, 1, 81)
+    actual = cubic_factorial_unit_mod(42, 0, 2, 81) * pow(first, -2, 81) % 81
+    assert actual != cubic_unit_mod81_formula(22, 0, 2)
+    first = cubic_factorial_unit_mod(0, 1, 1, 81)
+    actual = cubic_factorial_unit_mod(0, 1, 3, 81) * pow(first, -3, 81) % 81
+    corrupted = (1 + 9 * (6 * comb(3, 2) + comb(3, 3))) % 81
+    assert actual != corrupted
+    return {
+        "scope": "all q,k>=0,c=0,1,2,N>=1 by the written operator proof",
+        "mod81_literal_unit_cases": mod81_count,
+        "tested_precision_exponents": list(range(1, 10)),
+        "logarithm_truncation_cases": logarithm_count,
+        "exponential_truncation_cases": exponential_count,
+        "literal_factorial_operator_polynomial_cases": polynomial_count,
+        "offset_isometry_cases": isometry_count,
+        "frozen_offset_countercontrol_rejected": True,
+        "corrupted_cubic_countercontrol_rejected": True,
+        "squarefreeness_preservation_claimed": False,
+        "finite_tests_prove_unbounded_scope": False,
+    }
+
+
+
+def prime_gap_cyclic_determinant(terminal, prime, gamma, z, u):
+    """Literal integral recurrence, unsigned cofactors, and descending minor."""
+    rows = []
+    auxiliary = s.Poly(1, z)
+    for degree in range(terminal + prime - 2):
+        auxiliary = s.Poly(s.expand(
+            (z + prime * degree + gamma + prime - 1) * auxiliary.as_expr()
+            - z * auxiliary.diff().as_expr()), z)
+        if degree + 1 >= terminal:
+            rows.append(auxiliary)
+    cyclic = s.Matrix(prime - 1, prime, lambda i, j: sum(
+        rows[i].nth(j + prime * k) * u ** k
+        for k in range((terminal + prime - 2) // prime + 1)))
+    minors = [cyclic[:, [k for k in range(prime) if k != j]].det(method="domain-ge")
+              for j in range(prime)]
+    W = s.Poly(s.expand(sum(z ** (prime - 1 - j)
+        * minors[j].subs(u, (-1) ** prime * z ** prime)
+        for j in range(prime))), z)
+    assert W.degree() == (prime - 1) * terminal and W.LC() == 1
+    descending = W.all_coeffs()
+    at = lambda j: descending[j] if 0 <= j < len(descending) else s.Integer(0)
+    H = s.Matrix(terminal - 1, terminal - 1,
+                 lambda i, j: at(prime * (j + 1) - (i + 1)))
+    return s.Poly(H.det(method="domain-ge"), gamma)
+
+
+def prime_gap_unit_replay():
+    gamma, u, lam, z = s.symbols("gamma u lambda z")
+    matrix_count = 0
+    periodicity_count = 0
+    determinant_count = 0
+    constant_count = 0
+    ordinary_pair_count = 0
+    def reduce_prime(expr, prime, *variables):
+        return s.Poly(s.expand(expr), *variables, modulus=prime).as_expr()
+    for prime in [2, 3, 5, 7]:
+        operator = s.diag(*(gamma - 1 - j for j in range(prime)))
+        for j in range(prime - 1):
+            operator[j + 1, j] = 1
+        operator[0, prime - 1] = u
+        Q = u + gamma ** prime - gamma
+        target = lam ** prime - lam - Q
+        assert reduce_prime(operator.charpoly(lam).as_expr() - target,
+                            prime, lam, gamma, u) == 0
+        e0 = s.eye(prime)[:, 0]
+        columns = [e0]
+        for j in range(1, prime):
+            columns.append(operator * columns[-1])
+        basis = s.Matrix.hstack(*columns)
+        assert s.expand(basis.det()) == 1
+        matrix_count += 1
+        inverse = basis.inv()
+        reduced = operator.subs(u, -gamma ** prime + gamma).applyfunc(
+            lambda value: reduce_prime(value, prime, gamma))
+        powers = [e0]
+        for j in range(3 * prime + 2):
+            powers.append((reduced * powers[-1]).applyfunc(
+                lambda value: reduce_prime(value, prime, gamma)))
+        for terminal in [1, 2, prime - 1, prime, prime + 1, 2 * prime + 3]:
+            for j in range(prime - 1):
+                coordinate = (inverse * powers[terminal + j]).applyfunc(
+                    lambda value: reduce_prime(value, prime, gamma))
+                expected = 1 + ((terminal + j - 1) % (prime - 1))
+                assert coordinate == s.eye(prime)[:, expected]
+                periodicity_count += 1
+    for prime, bound in [(2, 7), (3, 7), (5, 4), (7, 3)]:
+        for terminal in range(1, bound + 1):
+            determinant = prime_gap_cyclic_determinant(
+                terminal, prime, gamma, z, u)
+            sign = (-1) ** (terminal * (terminal - 1) // 2)
+            assert (determinant - s.Poly(sign, gamma)).trunc(prime).is_zero
+            determinant_count += 1
+    for prime in [2, 3, 5, 7, 11]:
+        for terminal in range(1, 13):
+            N = terminal * (terminal - 1) // 2
+            constant = Fraction(factorial(prime * terminal - 1) ** (terminal - 1),
+                prime ** N * prod(k ** k * factorial(prime * k - 1)
+                                  for k in range(1, terminal)))
+            units = [prod(number for number in range(1, prime * k)
+                          if number % prime) for k in range(1, terminal + 1)]
+            telescoped = Fraction(units[-1] ** (terminal - 1), prod(units[:-1]))
+            assert constant == telescoped
+            assert valuation(constant, prime) == 0
+            assert residue(constant, prime) == (-1) ** N % prime
+            constant_count += 1
+    for prime in [2, 3, 5, 7]:
+        for terminal in range(2, 10):
+            upper = polynomial(terminal, terminal, prime)
+            lower = polynomial(terminal - 1, terminal - 1, prime)
+            assert s.gcd(upper, lower).degree() == 0
+            ordinary_pair_count += 1
+    # Wrong characteristic constant and composite-gap generalization must fail.
+    prime = 3
+    operator = s.diag(*(gamma - 1 - j for j in range(prime)))
+    for j in range(prime - 1):
+        operator[j + 1, j] = 1
+    operator[0, prime - 1] = u
+    wrong = lam ** prime - lam - u - gamma ** prime
+    assert reduce_prime(operator.charpoly(lam).as_expr() - wrong,
+                        prime, lam, gamma, u) != 0
+    composite = prime_gap_cyclic_determinant(2, 4, gamma, z, u).trunc(2)
+    assert composite.is_zero or composite.degree() > 0
+    return {
+        "scope": "all prime gaps p, all n>=1, rational p-integral positive gamma by written proof",
+        "characteristic_polynomial_and_unimodular_basis_cases": matrix_count,
+        "positive_power_periodicity_column_cases": periodicity_count,
+        "symbolic_cyclic_determinant_congruence_cases": determinant_count,
+        "constant_normalization_and_unit_telescope_cases": constant_count,
+        "literal_ordinary_lower_one_pair_cases": ordinary_pair_count,
+        "wrong_characteristic_polynomial_rejected": True,
+        "prime_unit_congruence_composite_extension_rejected": True,
+        "all_terminal_prime_gap_lower_one": True,
+        "all_positive_real_Gamma_shapes_claimed": False,
+        "finite_tests_prove_unbounded_scope": False,
+    }
+
+
+def prime_power_frobenius_replay():
+    x,X,g=s.symbols('x X g')
+    checks=0;profiles=[]
+
+    def vp(v,p):
+     v=Fraction(v);n=v.numerator;d=v.denominator
+     if not n:return 10**9
+     z=0
+     while n%p==0:n//=p;z+=1
+     while d%p==0:d//=p;z-=1
+     return z
+
+    def rank_mod(rows,p):
+     if not rows:return 0
+     A=[[int(a)%p for a in row] for row in rows];r=0
+     for col in range(len(A[0])):
+      pivot=next((k for k in range(r,len(A)) if A[k][col]),None)
+      if pivot is None:continue
+      A[r],A[pivot]=A[pivot],A[r]
+      inv=pow(A[r][col],-1,p);A[r]=[(a*inv)%p for a in A[r]]
+      for k in range(len(A)):
+       if k!=r and A[k][col]:
+        fac=A[k][col];A[k]=[(a-fac*b)%p for a,b in zip(A[k],A[r])]
+      r+=1
+      if r==len(A):break
+     return r
+
+    def rowmul(row,A,p):
+     return [sum(row[k]*A[k][j] for k in range(len(row)))%p for j in range(len(row))]
+
+    def krylov(p,c,t,N,kappa=1):
+     A=[[0]*p for _ in range(p)]
+     for i in range(p):
+      A[i][i]=(c-i)%p
+      if i<p-1:A[i][i+1]=1
+      else:A[i][0]=t%p
+     out=[];row=[kappa%p]+[0]*(p-1)
+     for _ in range(N+1):out.append(row);row=rowmul(row,A,p)
+     return out
+
+    for p in [2,3,5]:
+     start=checks;q=p*p
+     # AH coefficients via zH'=-sum(z^(p^r))H; no floating arithmetic.
+     N=2*p*p+2;hh=[Fraction(1)]
+     powers=[];k=1
+     while k<=N:powers.append(k);k*=p
+     for n in range(1,N+1):hh.append(-sum(hh[n-k] for k in powers if k<=n)/n)
+     for a in hh:assert vp(a,p)>=0;checks+=1
+     for j in range(p):
+      assert hh[j]==Fraction((-1)**j,factorial(j));checks+=1
+      for k in range(1,(N-j)//p+1):
+       assert vp(hh[p*k+j]*p**k,p)>=k;checks+=1
+     # Closed p-typical potential class; p2 included.
+     coeff=[p*(k+2) for k in range(5)];b=coeff[0]-1
+     assert b%p;checks+=1
+     for r in range(1,4):
+      a=Fraction((coeff[r]-1)*p**(p**r-1),b**(p**r))
+      assert vp(a,p)>=p**r-1>=1;checks+=1
+     # Explicit local Hermite polynomials and q-1 degree-restricted basis.
+     H={(j,r):s.Poly((x-j)**r*(1-(x-j)**(p-1))**p,x) for j in range(p) for r in range(p)}
+     for (j,r),poly in H.items():
+      for a in range(p):
+       value=s.Poly(poly.as_expr().subs(x,a+p*X).expand(),X)
+       if a==j:
+        scaled=s.Poly(value.as_expr()/p**r-X**r,X)
+        assert all(vp(c,p)>=1 for c in scaled.all_coeffs());checks+=1
+       else:
+        assert all(vp(c,p)>=p for c in value.all_coeffs());checks+=1
+     rows=[H[j,r] for j in range(p) for r in range(p-1)]
+     rows += [s.Poly(H[j,p-1].as_expr()-H[0,p-1].as_expr(),x) for j in range(1,p)]
+     assert len(rows)==q-1 and all(h.degree()<=q-2 for h in rows);checks+=1
+     assert rank_mod([[h.nth(k) for k in range(q-1)] for h in rows],p)==q-1;checks+=1
+     # Normalized one-step block matrix: all p residue values for c_j,t;
+     # large n>=p included to reject any accidental n<p argument.
+     ns=sorted(set([1,2,p,p+1,2*p+3]))
+     for n in ns:
+      for c in range(p):
+       for t in range(p):
+        ks=[krylov(p,(c+j)%p,t,n+p,((-1)**j*pow(factorial(j),-1,p))%p) for j in range(p)]
+        mat=[]
+        for j in range(p):
+         for r in range(p-1):
+          row=[0]*q
+          vec=ks[j][n+r] if j==0 else [(pow(j,n,p)*a)%p for a in ks[j][r]]
+          row[j*p:(j+1)*p]=vec;mat.append(row)
+        for j in range(1,p):
+         row=[0]*q
+         row[j*p:(j+1)*p]=[(pow(j,n,p)*a)%p for a in ks[j][p-1]]
+         row[0:p]=[(-a)%p for a in ks[0][n+p-1]]
+         mat.append(row)
+        assert rank_mod(mat,p)==q-1;checks+=1
+        assert rank_mod(ks[0][n:n+p-1],p)==p-1;checks+=1
+     # Primitive polynomial reduction-degree contraction controls.
+     for height in [p,p*p]:
+      P=s.Poly((x**(p-1)-1)**height*x**(height-2)+p*(1+x**(p*height+2)),x)
+      unit_indices=[k for k in range(P.degree()+1) if vp(P.nth(k),p)==0]
+      r0=min(unit_indices);assert r0<=height-2;checks+=1
+      M=min(vp(P.nth(k),p)+k for k in range(P.degree()+1))
+      Q=s.Poly(P.as_expr().subs(x,p*x)/p**M,x)
+      assert min(vp(c,p) for c in Q.all_coeffs())==0;checks+=1
+      reduced_degree=max(k for k in range(Q.degree()+1) if vp(Q.nth(k),p)==0)
+      assert reduced_degree<=height-2;checks+=1
+     profiles.append({'p':p,'prime_square_normalized_rows':q-1,'n_values':ns,'checks':checks-start})
+
+    # Exact diagnostic of the sharper valuation conjecture.
+    valuation_cases=0
+    for p,ss in [(2,2),(2,3),(3,2)]:
+     q=p**ss;e=(q-1)//(p-1)-ss
+     for n in range(2,8):
+      N=n*(n-1)//2
+      for gamma in range(1,10):
+       T=sum(comb(n,k)*s.rf(gamma,q*k)*x**k for k in range(n+1))
+       disc=s.discriminant(T,x)
+       fac=q**N*s.prod(k**k for k in range(1,n+1))*s.prod(s.rf(gamma,q*k) for k in range(1,n))
+       assert vp(disc,p)-vp(fac,p)==e*N;checks+=1;valuation_cases+=1
+    return {"all_recorded_checks":checks,"profiles":profiles,
+        "sharper_valuation_diagnostic_cases":valuation_cases,
+        "sharper_valuation_status":"diagnostic conjecture; not used in noncollision proof",
+        "proof_scope":"all s>=1 via Artin-Hasse closure and strengthened Gauss-degree induction",
+        "finite_tests_prove_unbounded_scope":False,
+        "all_real_positive_Gamma_shapes_claimed":False}
+
+
 def integer_bareiss_determinant(matrix):
     """Fraction-free determinant with exact-division checks and row pivoting."""
     entries = [list(row) for row in matrix]
@@ -815,6 +1188,9 @@ def replay():
     # A carry can change the endpoint; rejection is mathematically meaningful.
     carry_hull = newton_residuals(coefficients(3, 18, 3), 3)
     assert carry_hull[-1]["right"][1] != 4
+    cubic_unit_operator = cubic_unit_operator_replay()
+    prime_gap_units = prime_gap_unit_replay()
+    prime_power_frobenius = prime_power_frobenius_replay()
     hurwitz_counterexample = resultant_hurwitz_counterexample_certificate()
     return {
         "status": "pass", "arithmetic": "exact rational and finite-field",
@@ -832,11 +1208,18 @@ def replay():
         "literal_split_inseparable_residual_controls": split_failures_detected,
         "global_precision_obstruction_cases": precision_count,
         "symbolic_gap_one_discriminant_cases": symbolic_disc_count,
+        "cubic_factorial_unit_operator": cubic_unit_operator,
+        "prime_gap_unit_determinant": prime_gap_units,
+        "prime_power_frobenius_noncollision": prime_power_frobenius,
         "unshifted_resultant_hurwitz_counterexample": hurwitz_counterexample,
         "unsupported_inputs_rejected": rejected_count,
         "repeated_factor_countercontrol_detected": True,
         "carry_endpoint_countercontrol_detected": True,
-        "lower_one_gap_three_terminal_family": "N=m*3^r or m*3^r-1, m=1,2, N>=2",
+        "lower_one_gap_three_terminal_family": "all N>=2 for ordinary factorials",
+        "prime_gap_lower_one_all_terminal_orders": True,
+        "prime_power_lower_one_all_terminal_orders": True,
+        "ordinary_binomial_degree_at_most_four": True,
+        "all_positive_real_Gamma_shapes_at_higher_prime_gaps": False,
         "lower_one_prime_power_gap_extra_family": "gap=p^s, terminal N=m*p^r-1>=2, 1<=m<p",
         "ordinary_arbitrary_lower_family":
             "gap=p^s, terminal N=p^r>=2, digit_s(a)<=p-2",
@@ -865,7 +1248,10 @@ if __name__ == "__main__":
                      "arithmetic_frontier_terminal_orders.py", "prime_power_windows.py",
                      "PRIME_POWER_TWO_TERM_SFC.tex", "HIGHER_GAP_ADJOINT_RANK.tex",
                      "arithmetic_frontier_terminal_orders_resultant_hurwitz_counterexample.json",
-                     "sources/dlmf-1-10-rouche.html")}
+                     "sources/dlmf-1-10-rouche.html",
+                     "gap_three_hurwitz_structure.tex", "ALL_UNIVARIATE_TWO_TERM_SFC.tex",
+                     "UNIFORM_PADE_PARABOLA_SFC.tex", "CUBIC_ADJOINT_STABILITY_SFC.tex",
+                     "DYADIC_BINOMIAL_SFC.tex")}
     destination = here / "arithmetic_frontier_terminal_orders_verification.json"
     destination.write_text(json.dumps(report, indent=2) + "\n", encoding="utf-8")
     print(json.dumps(report, indent=2))

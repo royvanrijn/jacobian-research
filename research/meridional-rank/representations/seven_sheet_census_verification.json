@@ -1,0 +1,369 @@
+{
+  "status": "PASS",
+  "scope": "Twenty-nine retained inner-deck GL3 witnesses, with natural and dual seven-sheet actions;24 certify mr=b=4, five have zero mod3 cover homology. A finite witness test, not a replay of quotient enumeration or a global priority proof.",
+  "checks": "Full directed edge-cover matrices over F3, every lifted crossing and all fixed/moved meridian-cycle fillings; reverse tree, independent from folded Smith discovery. Exact retained named-census map bijections and four-seed traces.",
+  "input_sha256": {
+    "seven_sheet_cover_inputs.json": "0cdaed4926bdf03eb399d572da98bf59b7bbbe0ea13ab66106ddc34724a85ef6",
+    "verify_seven_sheet_covers.py": "84cff234e0ad9d2cc4f2c59150f69dd015645efa2a2d1d2e5804bbc729998e5c",
+    "bhattacharjee-still-open.json": "3fae47725d8808d58a6b1a24e36ade4e19121092c92714020ae0e1d0070b1edc"
+  },
+  "results": [
+    {
+      "name": "13a_373",
+      "cover_degree": 7,
+      "meridian_index": 2,
+      "H1_F3_dimensions": [
+        1,
+        1
+      ],
+      "bridge_upper": 4,
+      "meridional_lower": 4,
+      "sharp_four": true
+    },
+    {
+      "name": "13a_375",
+      "cover_degree": 7,
+      "meridian_index": 2,
+      "H1_F3_dimensions": [
+        1,
+        1
+      ],
+      "bridge_upper": 4,
+      "meridional_lower": 4,
+      "sharp_four": true
+    },
+    {
+      "name": "13a_391",
+      "cover_degree": 7,
+      "meridian_index": 2,
+      "H1_F3_dimensions": [
+        1,
+        1
+      ],
+      "bridge_upper": 4,
+      "meridional_lower": 4,
+      "sharp_four": true
+    },
+    {
+      "name": "13a_392",
+      "cover_degree": 7,
+      "meridian_index": 2,
+      "H1_F3_dimensions": [
+        1,
+        1
+      ],
+      "bridge_upper": 4,
+      "meridional_lower": 4,
+      "sharp_four": true
+    },
+    {
+      "name": "13a_3264",
+      "cover_degree": 7,
+      "meridian_index": 2,
+      "H1_F3_dimensions": [
+        1,
+        1
+      ],
+      "bridge_upper": 4,
+      "meridional_lower": 4,
+      "sharp_four": true
+    },
+    {
+      "name": "13a_3266",
+      "cover_degree": 7,
+      "meridian_index": 2,
+      "H1_F3_dimensions": [
+        1,
+        1
+      ],
+      "bridge_upper": 4,
+      "meridional_lower": 4,
+      "sharp_four": true
+    },
+    {
+      "name": "13a_3275",
+      "cover_degree": 7,
+      "meridian_index": 2,
+      "H1_F3_dimensions": [
+        1,
+        1
+      ],
+      "bridge_upper": 4,
+      "meridional_lower": 4,
+      "sharp_four": true
+    },
+    {
+      "name": "13a_3276",
+      "cover_degree": 7,
+      "meridian_index": 2,
+      "H1_F3_dimensions": [
+        1,
+        1
+      ],
+      "bridge_upper": 4,
+      "meridional_lower": 4,
+      "sharp_four": true
+    },
+    {
+      "name": "13n_1005",
+      "cover_degree": 7,
+      "meridian_index": 2,
+      "H1_F3_dimensions": [
+        1,
+        1
+      ],
+      "bridge_upper": 4,
+      "meridional_lower": 4,
+      "sharp_four": true
+    },
+    {
+      "name": "13n_1006",
+      "cover_degree": 7,
+      "meridian_index": 2,
+      "H1_F3_dimensions": [
+        1,
+        1
+      ],
+      "bridge_upper": 4,
+      "meridional_lower": 4,
+      "sharp_four": true
+    },
+    {
+      "name": "13n_1007",
+      "cover_degree": 7,
+      "meridian_index": 2,
+      "H1_F3_dimensions": [
+        1,
+        1
+      ],
+      "bridge_upper": 4,
+      "meridional_lower": 4,
+      "sharp_four": true
+    },
+    {
+      "name": "13n_1011",
+      "cover_degree": 7,
+      "meridian_index": 2,
+      "H1_F3_dimensions": [
+        1,
+        1
+      ],
+      "bridge_upper": 4,
+      "meridional_lower": 4,
+      "sharp_four": true
+    },
+    {
+      "name": "13n_1012",
+      "cover_degree": 7,
+      "meridian_index": 2,
+      "H1_F3_dimensions": [
+        1,
+        1
+      ],
+      "bridge_upper": 4,
+      "meridional_lower": 4,
+      "sharp_four": true
+    },
+    {
+      "name": "13n_1013",
+      "cover_degree": 7,
+      "meridian_index": 2,
+      "H1_F3_dimensions": [
+        1,
+        1
+      ],
+      "bridge_upper": 4,
+      "meridional_lower": 4,
+      "sharp_four": true
+    },
+    {
+      "name": "13n_1043",
+      "cover_degree": 7,
+      "meridian_index": 2,
+      "H1_F3_dimensions": [
+        1,
+        1
+      ],
+      "bridge_upper": 4,
+      "meridional_lower": 4,
+      "sharp_four": true
+    },
+    {
+      "name": "13n_1044",
+      "cover_degree": 7,
+      "meridian_index": 2,
+      "H1_F3_dimensions": [
+        1,
+        1
+      ],
+      "bridge_upper": 4,
+      "meridional_lower": 4,
+      "sharp_four": true
+    },
+    {
+      "name": "13n_1045",
+      "cover_degree": 7,
+      "meridian_index": 2,
+      "H1_F3_dimensions": [
+        1,
+        1
+      ],
+      "bridge_upper": 4,
+      "meridional_lower": 4,
+      "sharp_four": true
+    },
+    {
+      "name": "13n_1046",
+      "cover_degree": 7,
+      "meridian_index": 2,
+      "H1_F3_dimensions": [
+        1,
+        1
+      ],
+      "bridge_upper": 4,
+      "meridional_lower": 4,
+      "sharp_four": true
+    },
+    {
+      "name": "13n_1047",
+      "cover_degree": 7,
+      "meridian_index": 2,
+      "H1_F3_dimensions": [
+        1,
+        1
+      ],
+      "bridge_upper": 4,
+      "meridional_lower": 4,
+      "sharp_four": true
+    },
+    {
+      "name": "13n_1048",
+      "cover_degree": 7,
+      "meridian_index": 2,
+      "H1_F3_dimensions": [
+        1,
+        1
+      ],
+      "bridge_upper": 4,
+      "meridional_lower": 4,
+      "sharp_four": true
+    },
+    {
+      "name": "13n_3842",
+      "cover_degree": 7,
+      "meridian_index": 2,
+      "H1_F3_dimensions": [
+        1,
+        1
+      ],
+      "bridge_upper": 4,
+      "meridional_lower": 4,
+      "sharp_four": true
+    },
+    {
+      "name": "13n_3844",
+      "cover_degree": 7,
+      "meridian_index": 2,
+      "H1_F3_dimensions": [
+        1,
+        1
+      ],
+      "bridge_upper": 4,
+      "meridional_lower": 4,
+      "sharp_four": true
+    },
+    {
+      "name": "13n_3855",
+      "cover_degree": 7,
+      "meridian_index": 2,
+      "H1_F3_dimensions": [
+        1,
+        1
+      ],
+      "bridge_upper": 4,
+      "meridional_lower": 4,
+      "sharp_four": true
+    },
+    {
+      "name": "13n_3856",
+      "cover_degree": 7,
+      "meridian_index": 2,
+      "H1_F3_dimensions": [
+        1,
+        1
+      ],
+      "bridge_upper": 4,
+      "meridional_lower": 4,
+      "sharp_four": true
+    },
+    {
+      "name": "13n_4633",
+      "cover_degree": 7,
+      "meridian_index": 2,
+      "H1_F3_dimensions": [
+        0,
+        0
+      ],
+      "bridge_upper": 4,
+      "meridional_lower": 3,
+      "sharp_four": false
+    },
+    {
+      "name": "13n_4634",
+      "cover_degree": 7,
+      "meridian_index": 2,
+      "H1_F3_dimensions": [
+        0,
+        0
+      ],
+      "bridge_upper": 4,
+      "meridional_lower": 3,
+      "sharp_four": false
+    },
+    {
+      "name": "13n_4637",
+      "cover_degree": 7,
+      "meridian_index": 2,
+      "H1_F3_dimensions": [
+        0,
+        0
+      ],
+      "bridge_upper": 4,
+      "meridional_lower": 3,
+      "sharp_four": false
+    },
+    {
+      "name": "13n_4638",
+      "cover_degree": 7,
+      "meridian_index": 2,
+      "H1_F3_dimensions": [
+        0,
+        0
+      ],
+      "bridge_upper": 4,
+      "meridional_lower": 3,
+      "sharp_four": false
+    },
+    {
+      "name": "13n_4643",
+      "cover_degree": 7,
+      "meridian_index": 2,
+      "H1_F3_dimensions": [
+        0,
+        0
+      ],
+      "bridge_upper": 4,
+      "meridional_lower": 3,
+      "sharp_four": false
+    }
+  ],
+  "sharp_four_count": 24,
+  "corruptions_rejected": [
+    "identity",
+    "matrix_entry",
+    "seed_trace",
+    "census_map"
+  ],
+  "external_census_reread_count": 29,
+  "assurance": "Internal exact computation. No formal verification, external review, exhaustive priority or other-family exclusion is inferred."
+}

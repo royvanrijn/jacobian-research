@@ -1,0 +1,34 @@
+{
+  "review_date": "2026-11-17",
+  "scope": "Exact finite affine-cover and purity applications in THEORY.md Section4; no claim of independent reproof, formal verification, novelty, or JC2/HC4 closure.",
+  "resources": [
+    {
+      "path": "sources/sga1-math-0206203v2.pdf",
+      "url": "https://arxiv.org/pdf/math/0206203v2",
+      "sha256": "8e64218d356456c534eebf996940f0f957e43b54f1a080241debe12cbaf60d3c",
+      "locator": "SGA 1, revised edition math/0206203v2; Expose XII Theorem 5.1 and Corollary 5.2, printed pp251-254, PDF pp267-270; original marginal pp333-337",
+      "review": "Read the exact comparison statement, its full-faithfulness argument, reduction/algebraization proof and fundamental-group corollary. Adopted external theorem, not independently reproduced in full."
+    },
+    {
+      "path": "sources/stacks-0BMB.html",
+      "url": "https://stacks.math.columbia.edu/tag/0BMB",
+      "sha256": "37a491b9ddf1fed9ccbc333dfd635731e6394e64c0d1d5a27a323a63b65e8585",
+      "locator": "Lemma 58.21.4 (purity of branch locus)",
+      "review": "Read statement and proof; checked all five local hypotheses for the finite dominant normal normalization over regular affine space."
+    },
+    {
+      "path": "sources/stacks-0363.html",
+      "url": "https://stacks.math.columbia.edu/tag/0363",
+      "sha256": "d7dea86bda2390eb66c8e31fb1c13cab2c0876191d4a02c209012194ed048b13",
+      "locator": "Lemma 33.7.6 (connected components over separably algebraically closed constants)",
+      "review": "Read statement and proof; applied to the algebraic closure of a finitely generated characteristic-zero coefficient field and its embedding into C."
+    },
+    {
+      "path": "sources/stacks-04KV.html",
+      "url": "https://stacks.math.columbia.edu/tag/04KV",
+      "sha256": "407d50022760926d59934f50f9a3a0876f4b90486b1a27a461661c48865f642c",
+      "locator": "Lemma 33.7.14 (relative algebraic closure implies geometric connectedness)",
+      "review": "Read statement and proof; applied at the generic point of the connected finite normalization whose field embeds in the rational source field."
+    }
+  ]
+}

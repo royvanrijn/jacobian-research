@@ -55,6 +55,31 @@ class RetainedDependencyTests(unittest.TestCase):
                 scenario = self.graph.simulate({premise: "stale"})
                 self.assertEqual(scenario["nodes"][conclusion]["state"], "stale")
 
+    def test_wirtinger_verification_reaches_named_equalities_without_blocking_lift_bounds(self):
+        equality_claims = (
+            "MRC-ALL-CHARACTERISTIC-LIFTS-THM-PANEL",
+            "MRC-FINAL-FIVE-DOUBLE-COVERS-SHARP-FOUR-THM-FIVE",
+            "MRC-FINAL-FIVE-DOUBLE-COVERS-SHARP-FOUR-COROLLARY-2",
+            "MRC-FOUR-PIECE-DOUBLE-COVERS-SHARP-FOUR-THM-KNOTS",
+            "MRC-THREE-PIECE-DOUBLE-COVERS-SHARP-FOUR-THEOREM-1",
+            "MRC-MUTATION-COMMON-DOUBLE-COVERS-THM-BLOCKS",
+            "MRC-ORIGINAL-SIXTEEN-KNOWN-GRAPH-COVER-FAMILY-THM-FAMILY",
+        )
+        # These conclusions include bridge upper bounds obtained from seed
+        # propagation; algebraic lift lower bounds do not use that conversion.
+        for conclusion in equality_claims:
+            with self.subTest(conclusion=conclusion):
+                blockers = {blocker.get("id")
+                            for blocker in self.graph.blockers(conclusion)}
+                self.assertIn("EXT-WIRTINGER-BRIDGE", blockers)
+        lift_bound = "MRC-ALL-CHARACTERISTIC-LIFTS-THM-FIELD"
+        self.assertEqual(self.graph.evaluate()[lift_bound]["state"], "proved")
+        scenario = self.graph.simulate({"EXT-WIRTINGER-BRIDGE": "proved"})
+        panel = scenario["nodes"][equality_claims[0]]
+        self.assertEqual(panel["state"], "conditional")
+        self.assertEqual(panel["assumptions"], ["EXT-WIRTINGER-BRIDGE"])
+        self.assertEqual(scenario["nodes"][lift_bound]["state"], "proved")
+
     def test_real_multistep_progress_stays_hypothetical_and_preserves_assurance(self):
         before = deepcopy(self.data)
         # Fine decomposition exposes a retained-input verification gap. A

@@ -14,6 +14,12 @@
     "generic_preservation_shortcut": "counterexample despite simplicity and Hurwitz stability of every derivative and consecutive base coprimality",
     "generic_Gamma_convolution_simplicity": "explicit finite positive Gamma convolution counterexample at fifth order",
     "ordinary_binomial_terminal_five": "all integer a>=0,d>=1; monotone center cutoff and exact polynomial certificates",
+    "gap_two_shape_offsets": "all m>=1,h2,3,gamma>2m-2; transformed adjoint Hurwitz proof",
+    "gap_two_lower_exponents_two_three": "all consecutive orders and all positive Gamma shapes",
+    "all_gap_two_lower_exponents_closed": false,
+    "formal_cumulant_branched_fraction": "all integer d>=1 and all orders; typed-tree formula over Q[gamma][[x]]",
+    "normalized_cumulant_Hankel_nonnegativity": "all finite minors coefficientwise nonnegative in gamma; PSZ Theorem9.12 at ell=m=d-1",
+    "branched_fraction_two_shape_resultant_transfer": false,
     "all_positive_Gamma_shapes_terminal_five_closed": false,
     "all_index_binomial_sfc": false
   },
@@ -260,6 +266,55 @@
     "ordinary_binomial_terminal_five_proved": true,
     "all_positive_Gamma_shapes_terminal_five_proved": false
   },
+  "formal_cumulant_fraction_replay": {
+    "symbolic_cumulant_forest_coefficients": 42,
+    "formal_ratio_coefficients": 84,
+    "independent_partial_Dyck_path_coefficients": 20,
+    "sampled_coefficientwise_nonnegative_Hankel_minors": 36,
+    "gaps": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+    ],
+    "maximum_forest_order": 6,
+    "corrupted_series_and_shifted_weight_controls_rejected": true,
+    "universal_Hankel_scope": "imported PSZ Theorem9.12, ell=m=d-1; fixed gamma",
+    "two_shape_consecutive_resultant_transfer_proved": false
+  },
+  "gap_two_shape_offset_replay": {
+    "all_order_theorem": "T_(m,gamma,2) andT_(m+1,gamma+h,2) coprime for h2,3 andgamma>2m-2",
+    "all_positive_Gamma_families": [
+      "X^2(A+B X^2)",
+      "X^3(A+B X^2)"
+    ],
+    "symbolic_Ore_reduction_component_identities": 6,
+    "symbolic_transformed_adjoint_identities": 4,
+    "literal_symbolic_shape_operator_identities": 12,
+    "literal_symbolic_shape_cubic_ODE_identities": 6,
+    "literal_symbolic_shape_zero_concomitants": 8,
+    "bounded_Hurwitz_profiles": 36,
+    "positive_exact_Hurwitz_minors": 216,
+    "direct_transformed_moment_gcd_controls": 36,
+    "corrupted_derivative_coefficient_rejected": true,
+    "all_gap_two_lower_exponents_proved": false
+  },
+  "gap_two_adjoint_source": {
+    "file": "CUBIC_ADJOINT_STABILITY_SFC.tex",
+    "sha256": "ea2510e511545b9dd7a49a0796d75c45575687e60770c3359d38c5bc99cb4125",
+    "scope": "Theorem1 simplicity, half-plane bound4 and zero-concomitant identity10; internal elementary derivations",
+    "cached_source_hash_checked": true
+  },
+  "Hankel_positivity_source": {
+    "file": "sources/petreolle-sokal-zhu-1807.03271v2.pdf",
+    "sha256": "37b51eb4c7b47951460c0287e88b295be366acf76db55b1bd594dc8120554c1c",
+    "version": "arXiv1807.03271v2, May17 2020",
+    "theorem": "Theorem9.12, m=d-1, ell=m; Eqs2.26/2.27 and Section2.3 product convention",
+    "scope": "normalized Gamma-power cumulants at fixed shape; no resultant positivity or coprimality imported",
+    "cached_primary_source_hash_checked": true
+  },
   "representation_source": {
     "file": "sources/wolfs-2024-multiple-orthogonal-2401.08312v1.pdf",
     "sha256": "f067406cc088fbad56308b00d8add51117401379504a1109b30442b62cf82182",
@@ -270,10 +325,12 @@
   "python": "3.12.3",
   "sympy": "1.14.0",
   "source_sha256": {
-    "lower_exponent_initial_and_boundary.tex": "527159b49e9be2f9572548eab611dc18775ae3de79a4d9c2f0c322a57fbf23b7",
-    "lower_exponent_initial_and_boundary.py": "dd83e7b70ace3cbafe5487291037b3c137f3823746c54cee5eb8b2cc8ed4f462",
+    "lower_exponent_initial_and_boundary.tex": "41283fbe5b6ea86d0b9e487d035965b7482547a501eae43488961487866b822d",
+    "lower_exponent_initial_and_boundary.py": "3c8a86a4548692c6a4711bb25d54a1c8baed8cb6f5fddb690b31b183711aa58a",
     "sources/wolfs-2024-multiple-orthogonal-2401.08312v1.pdf": "f067406cc088fbad56308b00d8add51117401379504a1109b30442b62cf82182",
-    "lower_exponent_initial_and_boundary_terminal_five_certificates.json": "7c74ec9588ce6ae64ab04cab13848feec843f070368525997c40afa47c9cb784"
+    "lower_exponent_initial_and_boundary_terminal_five_certificates.json": "7c74ec9588ce6ae64ab04cab13848feec843f070368525997c40afa47c9cb784",
+    "sources/petreolle-sokal-zhu-1807.03271v2.pdf": "37b51eb4c7b47951460c0287e88b295be366acf76db55b1bd594dc8120554c1c",
+    "CUBIC_ADJOINT_STABILITY_SFC.tex": "ea2510e511545b9dd7a49a0796d75c45575687e60770c3359d38c5bc99cb4125"
   },
   "independent_replay": false,
   "formal_verification": false,

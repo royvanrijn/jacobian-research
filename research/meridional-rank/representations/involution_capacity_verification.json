@@ -1,0 +1,23 @@
+{
+  "status": "PASS",
+  "group_order": 168,
+  "nonidentity_involutions": 21,
+  "explicit_distinct_automorphisms": 336,
+  "normalized_triple_generated_order_histogram": {
+    "2": 1,
+    "4": 16,
+    "6": 32,
+    "8": 72,
+    "24": 208,
+    "168": 112
+  },
+  "generating_involution_triples": 2352,
+  "generating_involution_triple_orbits_under_explicit_automorphisms": 7,
+  "at_most_three_meridians_kernel_capacity_upper_bound": 7,
+  "sharp_four_sufficient_distinct_kernel_count": 8,
+  "arbitrary_generating_pairs": 19152,
+  "arbitrary_two_generator_kernel_capacity_upper_bound": 57,
+  "claim_boundary": "Exact finite group enumeration and elementary capacity gate; no knot panel tested, no novelty, formal verification or external review claimed.",
+  "checker_sha256": "fde7922f43083f09c0d13465e6392d8a1c46ad9c0290706b8ae4d70d7ca3c63c",
+  "python_version": "3.12.3"
+}

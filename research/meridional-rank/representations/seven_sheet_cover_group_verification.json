@@ -1,0 +1,425 @@
+{
+  "status": "PASS",
+  "actions": 58,
+  "cyclic_order3_cover_groups": 48,
+  "trivial_cover_groups": 10,
+  "results": [
+    {
+      "name": "13a_373",
+      "module": "natural",
+      "cover_group": "C3",
+      "group_rank": 1,
+      "eliminations": 19
+    },
+    {
+      "name": "13a_373",
+      "module": "dual",
+      "cover_group": "C3",
+      "group_rank": 1,
+      "eliminations": 19
+    },
+    {
+      "name": "13a_375",
+      "module": "natural",
+      "cover_group": "C3",
+      "group_rank": 1,
+      "eliminations": 19
+    },
+    {
+      "name": "13a_375",
+      "module": "dual",
+      "cover_group": "C3",
+      "group_rank": 1,
+      "eliminations": 19
+    },
+    {
+      "name": "13a_391",
+      "module": "natural",
+      "cover_group": "C3",
+      "group_rank": 1,
+      "eliminations": 19
+    },
+    {
+      "name": "13a_391",
+      "module": "dual",
+      "cover_group": "C3",
+      "group_rank": 1,
+      "eliminations": 19
+    },
+    {
+      "name": "13a_392",
+      "module": "natural",
+      "cover_group": "C3",
+      "group_rank": 1,
+      "eliminations": 19
+    },
+    {
+      "name": "13a_392",
+      "module": "dual",
+      "cover_group": "C3",
+      "group_rank": 1,
+      "eliminations": 19
+    },
+    {
+      "name": "13a_3264",
+      "module": "natural",
+      "cover_group": "C3",
+      "group_rank": 1,
+      "eliminations": 19
+    },
+    {
+      "name": "13a_3264",
+      "module": "dual",
+      "cover_group": "C3",
+      "group_rank": 1,
+      "eliminations": 19
+    },
+    {
+      "name": "13a_3266",
+      "module": "natural",
+      "cover_group": "C3",
+      "group_rank": 1,
+      "eliminations": 19
+    },
+    {
+      "name": "13a_3266",
+      "module": "dual",
+      "cover_group": "C3",
+      "group_rank": 1,
+      "eliminations": 19
+    },
+    {
+      "name": "13a_3275",
+      "module": "natural",
+      "cover_group": "C3",
+      "group_rank": 1,
+      "eliminations": 19
+    },
+    {
+      "name": "13a_3275",
+      "module": "dual",
+      "cover_group": "C3",
+      "group_rank": 1,
+      "eliminations": 19
+    },
+    {
+      "name": "13a_3276",
+      "module": "natural",
+      "cover_group": "C3",
+      "group_rank": 1,
+      "eliminations": 19
+    },
+    {
+      "name": "13a_3276",
+      "module": "dual",
+      "cover_group": "C3",
+      "group_rank": 1,
+      "eliminations": 19
+    },
+    {
+      "name": "13n_1005",
+      "module": "natural",
+      "cover_group": "C3",
+      "group_rank": 1,
+      "eliminations": 19
+    },
+    {
+      "name": "13n_1005",
+      "module": "dual",
+      "cover_group": "C3",
+      "group_rank": 1,
+      "eliminations": 19
+    },
+    {
+      "name": "13n_1006",
+      "module": "natural",
+      "cover_group": "C3",
+      "group_rank": 1,
+      "eliminations": 19
+    },
+    {
+      "name": "13n_1006",
+      "module": "dual",
+      "cover_group": "C3",
+      "group_rank": 1,
+      "eliminations": 19
+    },
+    {
+      "name": "13n_1007",
+      "module": "natural",
+      "cover_group": "C3",
+      "group_rank": 1,
+      "eliminations": 19
+    },
+    {
+      "name": "13n_1007",
+      "module": "dual",
+      "cover_group": "C3",
+      "group_rank": 1,
+      "eliminations": 19
+    },
+    {
+      "name": "13n_1011",
+      "module": "natural",
+      "cover_group": "C3",
+      "group_rank": 1,
+      "eliminations": 19
+    },
+    {
+      "name": "13n_1011",
+      "module": "dual",
+      "cover_group": "C3",
+      "group_rank": 1,
+      "eliminations": 19
+    },
+    {
+      "name": "13n_1012",
+      "module": "natural",
+      "cover_group": "C3",
+      "group_rank": 1,
+      "eliminations": 19
+    },
+    {
+      "name": "13n_1012",
+      "module": "dual",
+      "cover_group": "C3",
+      "group_rank": 1,
+      "eliminations": 19
+    },
+    {
+      "name": "13n_1013",
+      "module": "natural",
+      "cover_group": "C3",
+      "group_rank": 1,
+      "eliminations": 19
+    },
+    {
+      "name": "13n_1013",
+      "module": "dual",
+      "cover_group": "C3",
+      "group_rank": 1,
+      "eliminations": 19
+    },
+    {
+      "name": "13n_1043",
+      "module": "natural",
+      "cover_group": "C3",
+      "group_rank": 1,
+      "eliminations": 19
+    },
+    {
+      "name": "13n_1043",
+      "module": "dual",
+      "cover_group": "C3",
+      "group_rank": 1,
+      "eliminations": 19
+    },
+    {
+      "name": "13n_1044",
+      "module": "natural",
+      "cover_group": "C3",
+      "group_rank": 1,
+      "eliminations": 19
+    },
+    {
+      "name": "13n_1044",
+      "module": "dual",
+      "cover_group": "C3",
+      "group_rank": 1,
+      "eliminations": 19
+    },
+    {
+      "name": "13n_1045",
+      "module": "natural",
+      "cover_group": "C3",
+      "group_rank": 1,
+      "eliminations": 19
+    },
+    {
+      "name": "13n_1045",
+      "module": "dual",
+      "cover_group": "C3",
+      "group_rank": 1,
+      "eliminations": 19
+    },
+    {
+      "name": "13n_1046",
+      "module": "natural",
+      "cover_group": "C3",
+      "group_rank": 1,
+      "eliminations": 19
+    },
+    {
+      "name": "13n_1046",
+      "module": "dual",
+      "cover_group": "C3",
+      "group_rank": 1,
+      "eliminations": 19
+    },
+    {
+      "name": "13n_1047",
+      "module": "natural",
+      "cover_group": "C3",
+      "group_rank": 1,
+      "eliminations": 19
+    },
+    {
+      "name": "13n_1047",
+      "module": "dual",
+      "cover_group": "C3",
+      "group_rank": 1,
+      "eliminations": 19
+    },
+    {
+      "name": "13n_1048",
+      "module": "natural",
+      "cover_group": "C3",
+      "group_rank": 1,
+      "eliminations": 19
+    },
+    {
+      "name": "13n_1048",
+      "module": "dual",
+      "cover_group": "C3",
+      "group_rank": 1,
+      "eliminations": 19
+    },
+    {
+      "name": "13n_3842",
+      "module": "natural",
+      "cover_group": "C3",
+      "group_rank": 1,
+      "eliminations": 19
+    },
+    {
+      "name": "13n_3842",
+      "module": "dual",
+      "cover_group": "C3",
+      "group_rank": 1,
+      "eliminations": 19
+    },
+    {
+      "name": "13n_3844",
+      "module": "natural",
+      "cover_group": "C3",
+      "group_rank": 1,
+      "eliminations": 19
+    },
+    {
+      "name": "13n_3844",
+      "module": "dual",
+      "cover_group": "C3",
+      "group_rank": 1,
+      "eliminations": 19
+    },
+    {
+      "name": "13n_3855",
+      "module": "natural",
+      "cover_group": "C3",
+      "group_rank": 1,
+      "eliminations": 19
+    },
+    {
+      "name": "13n_3855",
+      "module": "dual",
+      "cover_group": "C3",
+      "group_rank": 1,
+      "eliminations": 19
+    },
+    {
+      "name": "13n_3856",
+      "module": "natural",
+      "cover_group": "C3",
+      "group_rank": 1,
+      "eliminations": 19
+    },
+    {
+      "name": "13n_3856",
+      "module": "dual",
+      "cover_group": "C3",
+      "group_rank": 1,
+      "eliminations": 19
+    },
+    {
+      "name": "13n_4633",
+      "module": "natural",
+      "cover_group": "trivial",
+      "group_rank": 0,
+      "eliminations": 20
+    },
+    {
+      "name": "13n_4633",
+      "module": "dual",
+      "cover_group": "trivial",
+      "group_rank": 0,
+      "eliminations": 20
+    },
+    {
+      "name": "13n_4634",
+      "module": "natural",
+      "cover_group": "trivial",
+      "group_rank": 0,
+      "eliminations": 20
+    },
+    {
+      "name": "13n_4634",
+      "module": "dual",
+      "cover_group": "trivial",
+      "group_rank": 0,
+      "eliminations": 20
+    },
+    {
+      "name": "13n_4637",
+      "module": "natural",
+      "cover_group": "trivial",
+      "group_rank": 0,
+      "eliminations": 20
+    },
+    {
+      "name": "13n_4637",
+      "module": "dual",
+      "cover_group": "trivial",
+      "group_rank": 0,
+      "eliminations": 20
+    },
+    {
+      "name": "13n_4638",
+      "module": "natural",
+      "cover_group": "trivial",
+      "group_rank": 0,
+      "eliminations": 20
+    },
+    {
+      "name": "13n_4638",
+      "module": "dual",
+      "cover_group": "trivial",
+      "group_rank": 0,
+      "eliminations": 20
+    },
+    {
+      "name": "13n_4643",
+      "module": "natural",
+      "cover_group": "trivial",
+      "group_rank": 0,
+      "eliminations": 20
+    },
+    {
+      "name": "13n_4643",
+      "module": "dual",
+      "cover_group": "trivial",
+      "group_rank": 0,
+      "eliminations": 20
+    }
+  ],
+  "negative_controls": [
+    "corrupt defining word rejected",
+    "corrupt final relation rejected"
+  ],
+  "scope": "Exact folded branched-cover presentations and one-occurrence Tietze certificate replay on58 fixed witnesses. Planarity/source identity and four-seed bridge upper bounds belong to the separate diagram/homology checker. No exhaustive quotient search or novelty claim.",
+  "input_sha256": {
+    "verify_seven_sheet_cover_groups.py": "8953f677a95fc68ac08078377ac00c2c95ddccc1f0df894ea95e3f8ab49a9096",
+    "seven_sheet_cover_inputs.json": "0cdaed4926bdf03eb399d572da98bf59b7bbbe0ea13ab66106ddc34724a85ef6",
+    "seven_sheet_cover_group_certificates.json": "20b3dc7b8efcaf8085fc2915d0302d7933401b7094ad2825d3843d9b73445010",
+    "GENERAL_BRANCHED_COVER_RANK_BOUNDS.tex": "0851dc9453ea24991718fe57b76c9b36f3279945b23b577cb95041c556ee35e1"
+  }
+}

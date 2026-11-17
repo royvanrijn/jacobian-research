@@ -1,0 +1,48 @@
+{
+  "status": "PASS",
+  "mode": "pinned workbook re-extraction and retained snapshot checks",
+  "workbook_reextracted": true,
+  "positive_names_checked": [
+    "13a_373",
+    "13a_375",
+    "13a_391",
+    "13a_392",
+    "13a_3264",
+    "13a_3266",
+    "13a_3275",
+    "13a_3276",
+    "13n_1005",
+    "13n_1006",
+    "13n_1007",
+    "13n_1011",
+    "13n_1012",
+    "13n_1013",
+    "13n_1043",
+    "13n_1044",
+    "13n_1045",
+    "13n_1046",
+    "13n_1047",
+    "13n_1048",
+    "13n_3842",
+    "13n_3844",
+    "13n_3855",
+    "13n_3856"
+  ],
+  "positive_count": 24,
+  "still_open_source_count": 293,
+  "zero_recorded_maximal_coxeter_hits": 24,
+  "negative_controls": [
+    "changed Coxeter hit rejected",
+    "changed comparison name rejected"
+  ],
+  "python_version": "3.12.3",
+  "scope": "All 24 positive seven-sheet cover names appear in the retained Bhattacharjee list of 293 names still open in that source. The pinned BKM workbook records Wirtinger number four and zero maximal-rank finite Coxeter hits in its S, D and H columns for every one of the 24 names. These two source comparisons do not establish global novelty, exclude every Coxeter quotient, or exclude every previously resolved geometric family.",
+  "input_sha256": {
+    "verify_seven_sheet_priority.py": "8857beff6b3921274836145f60551bd8f5007fb821b28cb3f2890cd2701e3711",
+    "seven_sheet_priority_audit.json": "feb08c434861150c62869d643d2d576225c91356caa38cd47275837008e74b59",
+    "seven_sheet_cover_inputs.json": "0cdaed4926bdf03eb399d572da98bf59b7bbbe0ea13ab66106ddc34724a85ef6",
+    "sources/bhattacharjee-still-open.json": "3fae47725d8808d58a6b1a24e36ade4e19121092c92714020ae0e1d0070b1edc"
+  },
+  "workbook_sha256": "514b12e118fa681520da5702a5ed4307ce7cf93b6b9f7b5e53f265ca7b01647b",
+  "workbook_git_blob": "3882c6da34c9057f8f13da31afb9d8973b7158cb"
+}

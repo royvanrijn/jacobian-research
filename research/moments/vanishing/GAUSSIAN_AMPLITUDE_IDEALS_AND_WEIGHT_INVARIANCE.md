@@ -1,4 +1,4 @@
-# Gaussian amplitude ideals, polynomial weights and the remaining vacuum gap
+# Gaussian amplitude ideals, original marked images and the vacuum gap
 
 17 November2026. Internal all-degree proofs with finite exact witnesses.
 Independent replay,formal verification and external review remain false;
@@ -10,6 +10,14 @@ times the whole source. The same equality descends to the FULL actual
 image. Over a field,EVERY nonzero polynomial amplitude weight therefore
 preserves the complete source,image,safety and asymptotic cutoff slope.
 Explicit finite recovery identities retain original marker-degree costs.
+
+Over a characteristic-zero field, a nonzero safe phase has literal original
+marker image K[t], even with markers restricted to any nonzero spatial ideal.
+More generally, every actual image finite over K[t] automatically has rank one;
+for a nonconstant phase its original marker image is the whole exponential
+lattice exp(psi)K[t]. These statements concern fixed spatial markers, not only
+their K[t]-span. They do not identify the distinguished unit with the lattice
+generator.
 
 This does not prove unweighted field safety=>purity. A positive polynomial
 tilt already gives a safe nonpure model with a finite nonzero chosen-seed
@@ -223,7 +231,242 @@ has a different implication,purity=>eventual mixed vanishing. It does not
 prove the reverse direction considered here. Its conjectural generality
 is not adopted as established knowledge.
 
-## 6. Credit, verification and the remaining vacuum gap
+## 6. The literal original image of every nonzero safe phase
+
+Work over a characteristic-zero field K. For a spatial ideal J in K[X], set
+
+    V_J=Phi[J], V=Phi[K[X]], M=K[t]V.
+
+The definition of V_J permits only ORIGINAL time-independent polynomial
+markers and K-linear combinations. In general V is smaller than M: for
+P=X^2/2, V is spanned by (1-t)^(-j-1/2), j>=0, and t*Phi[1] is not in V.
+
+First the Gaussian bilinear pairing is nondegenerate, with a degree bound.
+Define Hermite markers by
+
+    exp(v^T C^-1 X-v^T C^-1 v/2)
+       =sum_alpha H_alpha(X) v^alpha/alpha!.
+
+Gaussian translation, or direct Wick contraction, gives
+
+    E_C[H_alpha R]=E_C[partial_X^alpha R].             (15)
+
+For nonzero R of degree D, choose |alpha|=D with nonzero coefficient.
+The right side is the nonzero constant alpha![X^alpha]R. Thus a marker
+Q of degree at most D separates R. More precisely, with
+
+    nu_C(R)=ord_(X=0)(exp(Delta_C/2)R),
+
+the least separating marker degree is exactly nu_C(R). Indeed (15)
+identifies its values with the Taylor coefficients of exp(Delta_C/2)R,
+and the H_alpha are a basis preserving the degree filtration. The heat
+operator is a finite polynomial automorphism, so nu_C(R)<=deg R.
+
+**Safe original-image theorem.** If P!=0 is safe and J!=0, then
+
+    V_J=K[t].                                        (16)
+
+Choose 0!=rho in J. For every N>=0, rho P^N is nonzero. By (15) some Q
+has E_C[Q rho P^N]!=0. The polynomial p=Phi[Q rho] therefore has degree
+at least N. Also V_J is differentiation-stable, since
+partial_t Phi[A]=Phi[PA] and PJ is contained in J. For a polynomial of
+degree m, its successive derivatives have all degrees m,m-1,...,0 and
+form a triangular basis of K[t]_(degree<=m). Unbounded degrees prove (16).
+Every derivative is the period of the fixed marker P^j Q rho; no time
+coefficients have been introduced. Equivalently, for the original marker
+kernel K0=ker(Phi:K[X]->K[[t]]),
+
+    K[X]=J+K0 as K-linear spaces, for every J!=0.     (17)
+
+This is not an assertion that K0 is an ideal. Conversely, polynomiality
+of V_J for one nonzero J implies safety by Section 2. Thus, for P!=0,
+safety is equivalent to V_J=K[t] for any prescribed nonzero J.
+
+There is a constructive filtered version. Let D=deg P>=1, delta=deg rho,
+and choose a minimal Hermite separator Q for rho P^N. Write
+
+    d0=delta+nu_C(rho P^N)<=2delta+ND,
+    p=Phi[Q rho], m=deg p>=N, c_m=[t^m]p!=0.
+
+The marker (k!/(c_m m!))P^(m-k)Q rho has period t^k plus lower terms.
+For k=0,...,N, subtract the previously constructed lower-degree lifts.
+This produces fixed markers A_k in J with
+
+    Phi[A_k]=t^k, deg A_k<=d0+mD.                    (18)
+
+If a certified all-marker cutoff is deg_t Phi[A]<=C0 deg_X A+E0 with
+C0,E0>=0, then
+
+    K[t]_(degree<=N) subset
+      Phi[J intersect K[X]_(degree<=L_N)],
+    L_N=ceil((1+C0 D)d0+D E0)
+        <=ceil((1+C0 D)(2delta+ND)+D E0).             (19)
+
+The construction becomes effective using this certified bound to compute
+p and then perform triangular elimination. A finite moment prefix alone
+supplies no such certificate. Equation (19) proves linear cofinality of
+the original spatial degree and time polynomial degree filtrations whenever
+an affine cutoff has been established; its constants need not be sharp.
+
+The same proof works for any nonzero polynomial weight rho whose complete
+weighted marker family is safe, whether or not E_C[rho] is nonzero. It
+does not require normalized weighted expectation. For P=0, every nonzero
+J has image K. For a nonzero constant P=lambda, its image is K exp(lambda t),
+and it is unsafe. The zero ideal has image zero. Nilpotent phases over
+rings can have bounded image degree, so no all-ring version of (16) is claimed.
+
+In this notation, with nu_C(0)=infinity, the original open assertion can
+also be written
+
+    safety iff nu_C(P^m) tends to infinity,
+    purity iff nu_C(P^m)>=1 for every m>=1.           (20)
+
+The first equivalence tests the finite Hermite marker spaces using (15).
+The second tests the constant heat coefficient. Heat inversion is not
+continuous for the spatial-adic topology; (20) does not turn eventual
+escape into all-positive vanishing.
+
+## 7. Every finite actual image and its original fixed-marker image
+
+Let O=K[t]. Suppose the FULL actual image M is finite as an O-module.
+No generic-rank hypothesis is necessary. The exact Gaussian source H has
+H/tH=K by the [completion theorem](GAUSSIAN_FORMAL_COMPLETION_AND_POLYNOMIAL_HOM.md),
+Section 1. The period surjection H->M gives a surjection K->M/tM.
+Since M is a nonzero torsion-free finite O-module, it is free over the PID O;
+its rank is dim_K(M/tM), hence is one. For general covariance the same
+completion proof uses the unperturbed operators partial_i-(C^-1 X)_i.
+
+Choose its generator g normalized by g(0)=1. This is possible because
+M contains f=Phi[1], with f(0)=1. Differentiation-stability gives g'=a(t)g
+with a in O. Therefore, uniquely,
+
+    M=exp(psi)O, f=p exp(psi),
+    psi in tK[t], p in K[t], p(0)=1.                (21)
+
+If P is nonconstant, then in fact
+
+    V=M=exp(psi)K[t]                                (22)
+
+as literal K-linear images of fixed original markers. Here is the extra
+argument needed beyond the O-module classification.
+
+Set W=exp(-psi)V, a K-linear subspace of O containing p. The original
+[Stein identity](STEIN_ACTION_AND_RANK_ONE_LATTICES.md), Section 1, and
+phase multiplication show that W is stable under both
+
+    T(q)=q'+psi' q, B_p(q)=(q-q(0)p)/t.              (23)
+
+The space V is infinite-dimensional. Otherwise its differentiation action
+would have a nonzero annihilating polynomial R. For EVERY original A,
+evaluation of R(partial_t)Phi[A]=0 at zero would give E_C[A R(P)]=0.
+Gaussian nondegeneracy would force R(P)=0, impossible for a nonconstant
+polynomial P. Thus W has unbounded polynomial degrees.
+
+Put m=deg p. For every q with deg q>m, B_p lowers its degree exactly by
+one. Unboundedness therefore gives an element of W of every degree at
+least m, so O/W is finite-dimensional. The operator B_p is surjective
+on O, since B_p(tq)=q. Its induced operator on O/W is consequently
+surjective and hence invertible. But B_p is locally nilpotent on pO:
+
+    B_p(pq)=p*(q-q(0))/t.
+
+Every element of pO has zero image in the finite quotient, so pO is
+contained in W. Now T-stability yields p'O contained in W because
+T(pq)-p(q'+psi'q)=p'q. Repeating gives p^(j)O contained in W for every
+j. The highest nonzero derivative of p is a nonzero constant; hence
+W=O, proving (22), including m=0.
+
+The constant-phase exception is exact: for P=lambda, V=K exp(lambda t)
+while M=exp(lambda t)O. Thus nonconstancy is essential in (22).
+
+Every polynomial exponent in (21) occurs. In an independent Witt pair
+take P=W+psi(Z)/Z, a nonconstant polynomial even when psi=0. Direct
+Gaussian contraction gives Phi[Z^n]=t^n exp(psi(t)) for every n>=0.
+Differentiating an auxiliary W source shows all other original monomial
+periods are exp(psi) times polynomials. Hence V=M=exp(psi)O and p=1.
+This is the sign-reversed auxiliary cancellation construction already
+proved in the [safe-seed note](SAFE_SEED_DIVISIBILITY_AND_PHASE_MARKER_FILTRATION.md),
+Section 4. Thus (21) classifies all possible finite actual image spaces;
+the realization of a nonprimitive unit p!=1 remains a separate question.
+
+The ideal conclusion of Section 6 is special to safety. For standard
+one-variable Gaussian P=X, write H_n(t)=exp(-t^2/2) partial_t^n exp(t^2/2).
+The H_n are monic of degree n and
+
+    Phi[X^n]=exp(t^2/2)H_n(t).
+
+The full fixed-marker image is exp(t^2/2)O, but the ideal (X) has image
+exp(t^2/2)span_K{H_n:n>=1}, of codimension one. Its O-span is still M
+because H_1=t and H_2=t^2+1 generate the unit ideal. Thus (22) cannot
+be strengthened to every spatial ideal outside the safe case.
+
+Equations (21)-(22) classify all images finite over O without classifying
+their phases or their exact original marker kernels. They still allow
+a polynomial p!=1 for the distinguished vacuum. Excluding that possibility
+for unweighted Gaussians is precisely the remaining safety-to-purity problem
+under the retained auxiliary exponential-cancellation equivalence.
+
+## 8. Exact original kernels for Gaussian automorphism orbits
+
+There is an explicit marked-map classification on every Gaussian-preserving
+polynomial-automorphism orbit of a nonzero linear phase. Let phi
+be a polynomial algebra automorphism with E_C[phi(A)]=E_C[A] for all A.
+Let ell=l^T X with l!=0, put v=Cl, and take P=b+phi(ell) for b in K.
+Write T=exp(Delta_C/2) and psi=bt+(l^T C l)t^2/2. The exact original
+period map is
+
+    Phi_P[A](t)=exp(psi(t))(T phi^-1(A))(t v).       (24)
+
+Indeed invariance removes phi from every coefficient of A exp(tP).
+Gaussian translation gives
+E_C[B exp(t ell)]=exp(t^2 l^T C l/2)(TB)(tCl), which proves (24).
+If I(Kv) is the polynomial ideal of the line Kv, then
+
+    ker(Phi_P)=phi T^-1 I(Kv), V=exp(psi)K[t].      (25)
+
+For a linear form L with L(v)=1, the fixed marker phi T^-1(L^m) has
+period t^m exp(psi). This gives the full original kernel and explicit lifts, not
+only a scalar period or an image after localization. The kernel in (25)
+is a vector subspace and need not be an ideal. If q=deg phi^-1, then
+deg_t(exp(-psi)Phi_P[A])<=q deg_X A; the displayed lifts have degree at most
+(deg phi)m. Both estimates retain the original marker degree.
+Safety here is equivalent to b=0 and l^T C l=0, and then the phase is pure.
+
+For a concrete family use a Witt pair Z,W and an independent Y with
+E[ZW]=E[Y^2]=1. For any f(Z) in K[Z], define
+
+    phi(Z)=Z, phi(Y)=Y-Zf(Z),
+    phi(W)=W+f(Z)Y-Z f(Z)^2/2.                     (26)
+
+This is exp(delta), where delta=f(Z)(-Z partial_Y+Y partial_W) is
+locally nilpotent. Its vector field has zero ordinary divergence and
+kills the Gaussian quadratic form 2ZW+Y^2. Gaussian integration by
+parts therefore gives E[delta A]=0. The finite exponential shows
+E[phi(A)]=E[A]. Thus (24)-(25) apply to P=phi(W), with v the Z direction.
+In particular
+
+    Phi_P[Z]=t, Phi_P[Y]=t f(t),
+    Phi_P[W]=-t f(t)^2/2.                          (27)
+
+These are original marked values. No replacement of the Gaussian vacuum
+or of the formal-at-zero source is involved.
+
+When f(Z)=aZ+b with a!=0, (24) determines the EXACT original vector-space
+filtration:
+
+    Phi_P[K[Z,W,Y]_(degree<=d)]=K[t]_(degree<=3d).  (28)
+
+The upper bound follows from deg phi^-1=3. For the reverse, the marker
+Z^i Y^j W^k has period degree exactly i+2j+3k, with nonzero leading
+coefficient a^j(-a^2/2)^k: the unique top-degree term of its inverse
+transform is this multiple of Z^(i+2j+3k), and the heat operator lowers
+degree. Every integer from 0 to 3d is i+2j+3k with i+j+k<=d. One
+marker of each such degree gives a triangular basis, proving (28).
+The choice a=1,b=0 gives the safe cubic P=W+ZY-Z^3/2 and its complete
+original marked kernel through (25), together with its sharp cutoff
+degree 3d. No exhaustive orbit classification of all safe phases follows.
+
+## 9. Credit, verification and the remaining vacuum gap
 
 The finite Taylor projection and polynomial Weyl-module mechanism are
 classical algebra. Gaussian integration by parts is the usual Stein/divergence
@@ -236,6 +479,20 @@ The [constructor](gaussian_amplitude_content.py),
 [receipt](gaussian_amplitude_content_verification.json) retain finite identities,
 coefficient-content and ring controls, cutoff costs and the positive tilt.
 The universal assertions use the written algebra.
+The sealed finite receipt retains its original Sections 1-5 scope; it is
+not a computational proof or a new replay of the original-image statements
+in Sections 6-8, whose proofs are given above.
+The additional [original-marker checker](verify_gaussian_original_marker_images.py)
+and [receipt](gaussian_original_marker_images_verification.json) compare the
+cubic heat/kernel formulas with direct multinomial Wick contractions:
+35 original monomials through marker degree 4 and moment order 13,
+20 transformed Hermite markers through original degree 9 and moment
+order 28, and image dimensions 3d+1 for d=0,...,4. They also test the
+heat inverse through degree 5 and the symbolic affine-shear inverse.
+These are finite internal controls of Section 8, not proofs of unrestricted
+safety, surjectivity or the finite-image theorem. Replay with
+`python verify_gaussian_original_marker_images.py --output gaussian_original_marker_images_verification.json`
+from this directory in the recorded SymPy environment.
 
 Field safety-to-purity remains open: exclude a nonconstant polynomial unit
 period for an original unweighted safe phase, or construct one while controlling

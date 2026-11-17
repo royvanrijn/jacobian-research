@@ -1,0 +1,320 @@
+\documentclass[11pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage[hidelinks]{hyperref}
+\newtheorem{theorem}{Theorem}
+\newtheorem{corollary}[theorem]{Corollary}
+\newcommand{\mr}{\operatorname{mr}}
+\newcommand{\rank}{\operatorname{rank}}
+\newcommand{\F}{\mathbb F}
+\title{Meridional rank from arbitrary permutation branched covers}
+\author{Internal research working proof}
+\date{17 November 2026}
+\begin{document}
+\maketitle
+
+A permutation quotient contains information beyond the number of sheets
+its meridians move. Keeping the fundamental group of its branched cover
+strengthens both the permutation-index bound and the retained restriction
+to simple covers. The seven-sheeted cover of the already settled knot
+$T(4,7)$ below gives bound four, whereas its permutation index alone and
+every simple-cover rank certificate give at most three.
+The argument extends to every meridian cycle type. These are written
+working proofs and exact internal computations, without a global novelty
+claim, formal verification, or external mathematical review. The twenty-four finite equality certificates below require a separate
+priority audit before claiming previously unsettled knots. No
+counterexample to the Meridional Rank Conjecture is asserted.
+
+\section{The bound for any meridian permutation}
+
+Let $K$ be a classical knot and let
+$\rho:\pi_1(S^3\setminus K)\to S_n$, $n\ge2$, have transitive image.
+Its connected branched completion is denoted $Y_\rho$.
+Suppose a meridian has $c$ cycles on the sheets, including fixed points,
+and write $\delta=n-c$. A meridian normally generates the knot group,
+so $\delta>0$. Inverting a meridian does not change $c$.
+
+\begin{theorem}\label{thm:general}
+For any such representation and any field $k$,
+\[
+ \mr(K)\ \ge\
+ \left\lceil\frac{n-1+\rank\pi_1(Y_\rho)}{\delta}\right\rceil
+ \ \ge\
+ \left\lceil\frac{n-1+b_1(Y_\rho;k)}{\delta}\right\rceil.
+\]
+The cover need not be regular, simple, or have involutory meridians.
+\end{theorem}
+\begin{proof}
+Choose any generating family of $d$ meridians and a presentation of the
+knot group on these generators. Its one-vertex presentation graph lifts
+to a connected graph with $n$ vertices and $dn$ directed edges.
+For the $i$th generator, the edges labelled by it are precisely the
+$c$ disjoint cycles of its permutation. A cycle of length $a$ represents
+the lift of the $a$th power of that generator based at a sheet in the
+cycle. This is a meridian of the corresponding lifted boundary torus
+which is killed by branched filling. This description remains valid for
+any conjugate or inverse of the peripheral meridian.
+
+Add these filling relations for all generators. They are valid in the
+branched-cover group; repetitions among them do no harm. Each filling
+relation uses only the edges of its one generator cycle. Eliminate one
+edge from each cycle using its filling relation. The eliminated edges
+are all distinct. Removing an edge of a cycle preserves connectivity,
+and no other cycle loses an edge, because these cycles partition the
+labelled edges. The graph left after all $dc$ eliminations is therefore
+connected with $n$ vertices and $d(n-c)$ edges.
+
+Killing a spanning tree gives $d\delta-n+1$ generators. Lifted knot
+relators and any remaining filling relations can only reduce the rank.
+Thus $\rank\pi_1(Y_\rho)\le d\delta-n+1$. Minimize over meridional
+generating families and use $b_1(Y_\rho;k)\le\rank\pi_1(Y_\rho)$.
+\end{proof}
+
+Taking the cover rank to be at least zero recovers the elementary
+permutation-index bound $\mr\ge\lceil(n-1)/\delta\rceil$.
+When $\delta=1$, the meridian is a single transposition and the theorem
+is exactly the retained simple-cover bound.
+When $\delta>1$, a small positive cover rank can change the rounded
+integer bound even when no simple-cover test detects the knot sharply.
+For example, a seven-sheeted representation with double-transposition
+meridians gives $\mr\ge4$ as soon as its branched-cover group is
+nontrivial. Its permutation-index bound alone is only three.
+
+Define the maximum of the first bound over all finite transitive
+permutation representations to be $D(K)$. The maximum exists: its
+values are positive integers bounded by $\mr(K)$, and double covers
+supply a nonempty set. Then the retained simple-cover invariant obeys
+\[
+                         C(K)\le D(K)\le\mr(K).
+\]
+This definition does not give an effective finite bound on the degrees
+needed to compute $D(K)$, nor assert equality with $\mr$.
+
+\section{An exact strict comparison on T(4,7)}
+
+Use the torus presentation and meridian convention
+\[
+ \Gamma=\langle x,y\mid x^4=y^7\rangle,\qquad m=x^{-1}y^2,
+\]
+already sourced to Cornwell, Section 5.1, in the retained simple-cover
+note. On the seven nonzero vectors of $\F_2^3$ take the matrices
+\[
+ X=\begin{pmatrix}1&0&0\\1&1&0\\0&1&1\end{pmatrix},\qquad
+ Y=\begin{pmatrix}0&1&0\\0&0&1\\1&1&0\end{pmatrix}.
+\]
+They satisfy $X^4=Y^7=(X^{-1}Y^2)^2=I$. Their inverse actions give
+right permutation actions, with sheets numbered by the nonzero binary
+vectors in increasing binary integer order:
+\[
+ x=(0\ 6\ 4\ 2)(1\ 5),\qquad
+ y=(0\ 2\ 6\ 5\ 4\ 1\ 3),\qquad
+ m=(0\ 5)(2\ 3).
+\]
+The $y$-cycle alone proves transitivity. The meridian has $c=5$ cycles,
+so $n=7$ and $\delta=2$.
+
+The lifted graph has fourteen edges. Delete tree edges
+$0,1,2,4,8,10$, where edge $7g+v$ starts at sheet $v$ for generator
+$g=0,1$. The seven lifts of $x^4y^{-7}$ and one filling word for each
+of the five cycles of $m$ give a $12$ by $8$ abelian presentation.
+Its Smith factors are
+\[
+                              1,1,1,1,1,1,1,2.
+\]
+For a compact independent check, the submatrix in rows
+$0,1,3,7,8,9,10,11$ has determinant two, and the binary nullspace of
+the full matrix consists of zero and
+\[
+                             (1,1,0,1,1,0,1,1).
+\]
+The determinant shows that the presented abelian group is a quotient
+of $\mathbb Z/2$; the nonzero binary character proves that quotient
+is nontrivial. Thus $H_1(Y_\rho;\mathbb Z)=\mathbb Z/2$.
+Theorem~\ref{thm:general} gives
+\[
+ \mr(T(4,7))\ge\left\lceil\frac{6+1}{2}\right\rceil=4.
+\]
+The four-strand torus diagram gives the matching bridge upper bound.
+This recovers a known torus-knot equality with a stronger cover method.
+
+The retained simple-cover proof establishes $C(T(4,7))=3$: simple
+cover degrees are at most five, no onto transposition quotient exists
+in degrees three through five, and the double-cover group has rank
+two. Consequently
+\[
+                    C(T(4,7))=3<4=D(T(4,7))=\mr(T(4,7)).
+\]
+This is a strict comparison of certificate methods, rather than a new
+MRC case.
+
+\section{A uniform family with the same strict comparison}
+
+The same strict gap holds for
+\[
+                             K_j=T(4,420j+7),\qquad j\ge0.
+\]
+Put $q=420j+7$ and $a=(q+1)/4=105j+2$.
+The torus meridian $m=x^{-1}y^a$ has the same seven-sheet permutation,
+since $q\equiv0$ and $a\equiv2\pmod7$.
+More generally set $q=28t+7$, $a=7t+2$. In the lifted chain matrix
+over $\F_2$, replacing $t$ by $t+2$ adds eight complete $y$-cycles to
+the torus relation and two complete $y$-cycles to the meridian word.
+Each edge then occurs an even additional number of times, with the
+same intermediate endpoint. The filling words also have the same
+binary edge sums. Hence the matrix is periodic in $t$ modulo two.
+The two exact controls $t=0,1$ both have binary nullity one, proving
+$b_1(Y_\rho;\F_2)=1$ for every $t\ge0$ and thus $D(K_j)=4$.
+
+For completeness, $C(K_j)=3$ follows without any simple-cover search.
+A simple cover has degree at most five, by the four-meridian upper
+bound. For $3\le r\le5$, an onto $S_r$ image kills the central element
+$x^4=y^q$. Since $\gcd(q,60)=1$, the equation $y^q=1$ in $S_r$
+forces $y=1$, so the image is cyclic, a contradiction.
+Only the double cover remains. After imposing $m^2=1$, write
+$x=y^a m$ and $z=mym$. Its index-two kernel has the presentation
+\[
+ \langle y,z\mid y^az^ay^az^a=y^q,\quad
+                   z^ay^az^ay^a=z^q\rangle.
+\]
+It has rank at most two. The matrices $Y$ and
+$Z=(X^{-1}Y^2)Y(X^{-1}Y^2)$ satisfy these two relators and do not
+commute, so its rank is exactly two. Therefore
+\[
+                       C(K_j)=3<4=D(K_j)=\mr(K_j)=b(K_j).
+\]
+All these torus-knot equalities are already known. This family proves
+that admitting more general meridian cycle types removes a uniform
+limitation of the simple-cover invariant.
+
+\section{Twenty-four sharp four-meridian certificates}
+
+The retained finite witness input contains twenty-nine thirteen-crossing
+knot diagrams with natural and dual seven-sheeted $GL_3(\F_2)$ actions.
+For the following twenty-four names, the corresponding branched-cover
+groups are cyclic of order three for both actions:
+\[
+\begin{array}{rrrr}
+13a_{373}&13a_{375}&13a_{391}&13a_{392}\\
+13a_{3264}&13a_{3266}&13a_{3275}&13a_{3276}\\
+13n_{1005}&13n_{1006}&13n_{1007}&13n_{1011}\\
+13n_{1012}&13n_{1013}&13n_{1043}&13n_{1044}\\
+13n_{1045}&13n_{1046}&13n_{1047}&13n_{1048}\\
+13n_{3842}&13n_{3844}&13n_{3855}&13n_{3856}.
+\end{array}
+\]
+
+\begin{theorem}\label{thm:twentyfour}
+For every one of these twenty-four knots, $\mr(K)=b(K)=4$.
+\end{theorem}
+\begin{proof}
+The explicit matrices and literal planar diagrams give transitive
+seven-sheeted actions, each meridian a product of two disjoint
+transpositions. Thus $n=7$ and $\delta=2$.
+The exact cover presentations described below establish
+$\rank\pi_1(Y_\rho)=1$. Theorem~\ref{thm:general} gives
+$\mr(K)\ge\lceil(6+1)/2\rceil=4$.
+The four-seed propagation certificates on the same literal diagrams
+provide the matching bridge upper bounds: the Wirtinger number is at
+most four, and it equals bridge number by Blair--Kjuchukova--Velazquez--
+Villanueva \cite[Theorem 1.3]{wirt}. The separate diagram
+checker verifies their full propagation and planarity; it does not
+assume bridge number four from an open-list interval.
+\end{proof}
+
+Here is the group-presentation certificate. For each action, every
+fixed-sheet lifted meridian edge dies under filling, and the two edges
+of each moved pair become inverses. There are twenty-six undirected
+edges on seven vertices. Delete a spanning tree of six edges, leaving
+twenty generators. Lift every diagram crossing relation from all seven
+sheets. Since all filled meridian paths are involutory, a crossing
+relation becomes the appropriate four-step path $o\,a\,o\,b$,
+independently of its crossing sign. These are exact presentations of
+the branched-cover groups, rather than presentations of chosen finite
+quotients of those groups.
+
+For each of the forty-eight positive actions, nineteen explicit
+one-occurrence Tietze eliminations leave the presentation
+$\langle g\mid g^3\rangle$. At every step, the defining relation
+contains the eliminated generator exactly once, so solving for it
+and substituting everywhere preserves the group. A small verifier
+reconstructs the folded presentation and replays every substitution.
+The separate full-directed-edge homology checker gives
+$H_1(Y_\rho;\mathbb Z)=\mathbb Z/3$ independently of these group
+simplifications. Neither calculation assumes that cyclic homology
+implies a cyclic group.
+
+For each natural and dual action on the five other retained knots,
+\[
+             13n_{4633},\quad13n_{4634},\quad13n_{4637},\quad
+             13n_{4638},\quad13n_{4643},
+\]
+twenty one-occurrence Tietze eliminations remove all generators and
+relations. Their ten cover groups are therefore trivial. The best
+bound from each of these fixed actions is three, even when full cover
+group rank replaces first homology. This excludes a nonlinear
+finite-quotient improvement for these particular covers; it does not
+exclude other permutation actions or establish any knot's meridional
+rank to be three.
+
+The literal diagrams, meridian matrices and seed traces suffice to
+replay these certificates. Their Hoste--Thistlethwaite identities are
+checked by transfer to the independently retained named census data;
+a diagram label in a search result is not taken as identity evidence.
+All twenty-nine names occur in the author repository still-open list
+\cite{bhattacharjee}, checked on 17 November 2026 at Git blob
+\texttt{01c7c332a0bf1565d7558aec4c769ff36cbd31a9}. This is evidence
+that the names were listed there, not an assertion that no earlier
+theorem covers them. No completeness of the retired broad
+$GL_3$ search is needed for the twenty-four positive statements.
+The assertion is a finite equality theorem with exact current
+certificates. Its relationship to previously established knot families
+and worldwide priority requires a separate source audit; the count of
+names alone does not establish twenty-four new MRC cases.
+
+\section{Verification scope and next use}
+
+The compact checker reconstructs the right actions directly from the
+binary matrices, verifies transitivity and every torus/peripheral word,
+constructs the full lifted edge matrix, and proves the displayed integral
+homology by an exact determinant and exhaustive binary character check.
+The initial Smith calculation is not needed as a trusted checker input.
+The second parity control and the two-generator double-cover matrix
+relations are checked separately. Deliberate corruptions of a relation and a sheet permutation, and a
+nontransitive action, are rejected. Omitting fixed-sheet fillings changes
+the checked homology, detecting that essential boundary error.
+These finite controls support the stated examples; the uniform theorem
+and parity argument are written proofs.
+
+The retained $GL_3(\F_2)$ knot quotients whose
+meridians are transvections supply the preceding finite application. Their natural seven-point actions have
+$\delta=2$. Any nontrivial branched-cover group gives a sharp lower
+bound four when a four-meridian upper certificate is available.
+Failure of the earlier rank-one cocycle test on the three-dimensional
+module does not exclude this different permutation-module or nonlinear
+cover-group test. Conversely, trivial first homology does not prove
+that a cover group is trivial.
+\section{Classical context}
+
+Homology calculations for arbitrary finite branched covers have a
+classical Fox-calculus framework. Hempel \cite[Section 3, Theorems
+3.1--3.2]{hempel} computes first homology using relative Fox matrices,
+and describes the meridian-cycle filling data on printed page 121.
+The lifted-edge matrices here implement that classical construction.
+The exact meridional-generator inequality and strict comparison above
+are proved directly, without attributing an unlocated stronger
+statement to that source. Their worldwide priority remains unclaimed.
+
+\begin{thebibliography}{9}
+\bibitem{wirt} R. Blair, A. Kjuchukova, R. Velazquez and P. Villanueva,
+Wirtinger systems of generators of knot groups,
+Communications in Analysis and Geometry 28(2) (2020), 243--262.
+\url{https://doi.org/10.4310/CAG.2020.v28.n2.a2}.
+\bibitem{bhattacharjee} D. Bhattacharjee, author repository
+\emph{conjecture-to-choose}, \texttt{data/still\_open.json}, checked
+17 November 2026, exact Git blob given in the text.
+\url{https://github.com/anaxia-research/conjecture-to-choose/blob/main/data/still_open.json}.
+\bibitem{hempel} J. Hempel, Homology of branched coverings of
+3-manifolds, Canadian Journal of Mathematics 44(1) (1992), 119--134.
+\url{https://doi.org/10.4153/CJM-1992-007-4}.
+\end{thebibliography}
+\end{document}

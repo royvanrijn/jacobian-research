@@ -8,12 +8,13 @@ Polynomial Keller maps, their fibres, monodromy and boundary geometry.
 
 | Current result | Evidence / publication | Graph status | Main source |
 |---|---|---|---|
-| Generic monodromy and affine inertia | Internal result | open | [Source](monodromy-theory/THEORY.md) |
+| Generic monodromy and affine inertia | Internal result | proved | [Source](monodromy-theory/THEORY.md) |
 | Canonical Keller receivers and descent boundaries | Internal result | proved | [Source](universal-keller-canonical-filter/PROOF.md) |
 | Explicit cubic Keller collisions | Internal result | proved | [Source](cubic-reduction/PROOF12.md) |
 | Quadratic ruling closure and the remaining degree-six boundary | Internal result | open | [Source](affine-complements/POLYNOMIAL_RESIDUE_RAMIFIED_LINE_AND_QUADRATIC_RULING_FIVE_CLOSURE.md) |
+| A polar zero excludes a uniform ruling-six family | Internal result | proved | [Source](affine-complements/RULING_SIX_POLAR_ZERO_AND_AFFINE_RESPONSE_FAMILY.md) |
 
-**Computed obligations:** 15 unresolved; 0 resolved within their exact scope.
+**Computed obligations:** 13 unresolved; 2 resolved within their exact scope.
 
 
 Scope limits:
@@ -21,6 +22,7 @@ Scope limits:
 - Retained ordinary characteristic-zero polynomial Keller constructions have determinant one and explicit collisions; their internal consequence is failure of the unrestricted Jacobian conjecture. The earlier full-JC-open summary was inconsistent with these source claims. This is internal assurance, not external acceptance.
 - JC2 remains a separate unresolved target. Ruling degree, generic map degree, graph degree and sparse support minima are distinct quantities.
 - A canonical non-atomic vector-bundle receiver already exists. Canonical atomic coupling remains open; an automorphism-invariant natural fixed frame is obstructed, not an unqualified existence gap.
+- The uniform PF163 family in ruling-six weighted-face classB is excluded for every K>=62 and nonzero complex parameter by a complete pole/zero budget, despite affine first responses and zero residues. The entire three-face ruling-six classification remains open.
 
 Tracked obligations (computed states):
 

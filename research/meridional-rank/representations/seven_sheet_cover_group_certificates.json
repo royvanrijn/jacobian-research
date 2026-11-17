@@ -1,0 +1,8388 @@
+{
+  "schema_version": 1,
+  "scope": "Exact folded seven-sheet branched-cover group presentations for the58 retained natural/dual actions. Each step removes a generator occurring once in one defining relator. No quotient search completeness or knot novelty claim.",
+  "cases": [
+    {
+      "name": "13a_373",
+      "module": "natural",
+      "tree_edges": [
+        1,
+        2,
+        8,
+        11,
+        13,
+        18
+      ],
+      "eliminations": [
+        {
+          "generator": 25,
+          "defining_relator": [
+            -25
+          ]
+        },
+        {
+          "generator": 23,
+          "defining_relator": [
+            -23
+          ]
+        },
+        {
+          "generator": 21,
+          "defining_relator": [
+            -21
+          ]
+        },
+        {
+          "generator": 26,
+          "defining_relator": [
+            -26
+          ]
+        },
+        {
+          "generator": 20,
+          "defining_relator": [
+            -20
+          ]
+        },
+        {
+          "generator": 19,
+          "defining_relator": [
+            -19
+          ]
+        },
+        {
+          "generator": 24,
+          "defining_relator": [
+            -24
+          ]
+        },
+        {
+          "generator": 16,
+          "defining_relator": [
+            -16
+          ]
+        },
+        {
+          "generator": 10,
+          "defining_relator": [
+            -10
+          ]
+        },
+        {
+          "generator": 22,
+          "defining_relator": [
+            -22
+          ]
+        },
+        {
+          "generator": 17,
+          "defining_relator": [
+            -17
+          ]
+        },
+        {
+          "generator": 15,
+          "defining_relator": [
+            -15
+          ]
+        },
+        {
+          "generator": 14,
+          "defining_relator": [
+            -14
+          ]
+        },
+        {
+          "generator": 12,
+          "defining_relator": [
+            -12
+          ]
+        },
+        {
+          "generator": 9,
+          "defining_relator": [
+            -9
+          ]
+        },
+        {
+          "generator": 5,
+          "defining_relator": [
+            -5
+          ]
+        },
+        {
+          "generator": 3,
+          "defining_relator": [
+            -3
+          ]
+        },
+        {
+          "generator": 6,
+          "defining_relator": [
+            -7,
+            6
+          ]
+        },
+        {
+          "generator": 4,
+          "defining_relator": [
+            -7,
+            -4
+          ]
+        }
+      ],
+      "final_generators": [
+        7
+      ],
+      "final_relators": [
+        [
+          -7,
+          -7,
+          -7
+        ]
+      ]
+    },
+    {
+      "name": "13a_373",
+      "module": "dual",
+      "tree_edges": [
+        1,
+        2,
+        7,
+        11,
+        13,
+        17
+      ],
+      "eliminations": [
+        {
+          "generator": 26,
+          "defining_relator": [
+            -26
+          ]
+        },
+        {
+          "generator": 25,
+          "defining_relator": [
+            -25
+          ]
+        },
+        {
+          "generator": 20,
+          "defining_relator": [
+            -20
+          ]
+        },
+        {
+          "generator": 22,
+          "defining_relator": [
+            -22
+          ]
+        },
+        {
+          "generator": 21,
+          "defining_relator": [
+            -21
+          ]
+        },
+        {
+          "generator": 15,
+          "defining_relator": [
+            -15
+          ]
+        },
+        {
+          "generator": 10,
+          "defining_relator": [
+            -24,
+            -10
+          ]
+        },
+        {
+          "generator": 18,
+          "defining_relator": [
+            -24,
+            18
+          ]
+        },
+        {
+          "generator": 19,
+          "defining_relator": [
+            -24,
+            19
+          ]
+        },
+        {
+          "generator": 14,
+          "defining_relator": [
+            -24,
+            14
+          ]
+        },
+        {
+          "generator": 12,
+          "defining_relator": [
+            -24,
+            12
+          ]
+        },
+        {
+          "generator": 9,
+          "defining_relator": [
+            -24,
+            9
+          ]
+        },
+        {
+          "generator": 23,
+          "defining_relator": [
+            -24,
+            23
+          ]
+        },
+        {
+          "generator": 16,
+          "defining_relator": [
+            -24,
+            -16
+          ]
+        },
+        {
+          "generator": 5,
+          "defining_relator": [
+            -24,
+            -5
+          ]
+        },
+        {
+          "generator": 6,
+          "defining_relator": [
+            -24,
+            -6
+          ]
+        },
+        {
+          "generator": 3,
+          "defining_relator": [
+            -24,
+            3
+          ]
+        },
+        {
+          "generator": 4,
+          "defining_relator": [
+            -24,
+            4
+          ]
+        },
+        {
+          "generator": 8,
+          "defining_relator": [
+            -24,
+            8
+          ]
+        }
+      ],
+      "final_generators": [
+        24
+      ],
+      "final_relators": [
+        [
+          -24,
+          -24,
+          -24
+        ]
+      ]
+    },
+    {
+      "name": "13a_375",
+      "module": "natural",
+      "tree_edges": [
+        1,
+        2,
+        7,
+        11,
+        13,
+        18
+      ],
+      "eliminations": [
+        {
+          "generator": 25,
+          "defining_relator": [
+            -25
+          ]
+        },
+        {
+          "generator": 24,
+          "defining_relator": [
+            -24
+          ]
+        },
+        {
+          "generator": 22,
+          "defining_relator": [
+            -22
+          ]
+        },
+        {
+          "generator": 20,
+          "defining_relator": [
+            -20
+          ]
+        },
+        {
+          "generator": 26,
+          "defining_relator": [
+            -26
+          ]
+        },
+        {
+          "generator": 19,
+          "defining_relator": [
+            -19
+          ]
+        },
+        {
+          "generator": 17,
+          "defining_relator": [
+            -17
+          ]
+        },
+        {
+          "generator": 23,
+          "defining_relator": [
+            -23
+          ]
+        },
+        {
+          "generator": 15,
+          "defining_relator": [
+            -15
+          ]
+        },
+        {
+          "generator": 10,
+          "defining_relator": [
+            -10
+          ]
+        },
+        {
+          "generator": 9,
+          "defining_relator": [
+            -9
+          ]
+        },
+        {
+          "generator": 21,
+          "defining_relator": [
+            -21
+          ]
+        },
+        {
+          "generator": 16,
+          "defining_relator": [
+            -16
+          ]
+        },
+        {
+          "generator": 14,
+          "defining_relator": [
+            -14
+          ]
+        },
+        {
+          "generator": 12,
+          "defining_relator": [
+            -12
+          ]
+        },
+        {
+          "generator": 6,
+          "defining_relator": [
+            -6
+          ]
+        },
+        {
+          "generator": 4,
+          "defining_relator": [
+            -4
+          ]
+        },
+        {
+          "generator": 5,
+          "defining_relator": [
+            -8,
+            5
+          ]
+        },
+        {
+          "generator": 3,
+          "defining_relator": [
+            -8,
+            -3
+          ]
+        }
+      ],
+      "final_generators": [
+        8
+      ],
+      "final_relators": [
+        [
+          -8,
+          -8,
+          -8
+        ]
+      ]
+    },
+    {
+      "name": "13a_375",
+      "module": "dual",
+      "tree_edges": [
+        1,
+        2,
+        7,
+        11,
+        13,
+        17
+      ],
+      "eliminations": [
+        {
+          "generator": 26,
+          "defining_relator": [
+            -26
+          ]
+        },
+        {
+          "generator": 25,
+          "defining_relator": [
+            -25
+          ]
+        },
+        {
+          "generator": 24,
+          "defining_relator": [
+            -24
+          ]
+        },
+        {
+          "generator": 15,
+          "defining_relator": [
+            -15
+          ]
+        },
+        {
+          "generator": 9,
+          "defining_relator": [
+            -23,
+            -9
+          ]
+        },
+        {
+          "generator": 21,
+          "defining_relator": [
+            -21
+          ]
+        },
+        {
+          "generator": 18,
+          "defining_relator": [
+            -23,
+            18
+          ]
+        },
+        {
+          "generator": 20,
+          "defining_relator": [
+            -23,
+            20
+          ]
+        },
+        {
+          "generator": 19,
+          "defining_relator": [
+            -23,
+            19
+          ]
+        },
+        {
+          "generator": 14,
+          "defining_relator": [
+            -23,
+            -14
+          ]
+        },
+        {
+          "generator": 12,
+          "defining_relator": [
+            -23,
+            12
+          ]
+        },
+        {
+          "generator": 10,
+          "defining_relator": [
+            -23,
+            10
+          ]
+        },
+        {
+          "generator": 22,
+          "defining_relator": [
+            -23,
+            22
+          ]
+        },
+        {
+          "generator": 16,
+          "defining_relator": [
+            -23,
+            -16
+          ]
+        },
+        {
+          "generator": 6,
+          "defining_relator": [
+            -23,
+            6
+          ]
+        },
+        {
+          "generator": 4,
+          "defining_relator": [
+            -23,
+            -4
+          ]
+        },
+        {
+          "generator": 8,
+          "defining_relator": [
+            -23,
+            -8
+          ]
+        },
+        {
+          "generator": 3,
+          "defining_relator": [
+            -23,
+            -3
+          ]
+        },
+        {
+          "generator": 5,
+          "defining_relator": [
+            -23,
+            5
+          ]
+        }
+      ],
+      "final_generators": [
+        23
+      ],
+      "final_relators": [
+        [
+          -23,
+          -23,
+          -23
+        ]
+      ]
+    },
+    {
+      "name": "13a_391",
+      "module": "natural",
+      "tree_edges": [
+        1,
+        2,
+        7,
+        11,
+        12,
+        19
+      ],
+      "eliminations": [
+        {
+          "generator": 26,
+          "defining_relator": [
+            -26
+          ]
+        },
+        {
+          "generator": 24,
+          "defining_relator": [
+            -24
+          ]
+        },
+        {
+          "generator": 21,
+          "defining_relator": [
+            -21
+          ]
+        },
+        {
+          "generator": 17,
+          "defining_relator": [
+            -25,
+            17
+          ]
+        },
+        {
+          "generator": 10,
+          "defining_relator": [
+            -25,
+            -10
+          ]
+        },
+        {
+          "generator": 15,
+          "defining_relator": [
+            -25,
+            15
+          ]
+        },
+        {
+          "generator": 5,
+          "defining_relator": [
+            -25,
+            -5
+          ]
+        },
+        {
+          "generator": 3,
+          "defining_relator": [
+            -25,
+            3
+          ]
+        },
+        {
+          "generator": 8,
+          "defining_relator": [
+            -25,
+            8
+          ]
+        },
+        {
+          "generator": 4,
+          "defining_relator": [
+            -25,
+            4
+          ]
+        },
+        {
+          "generator": 6,
+          "defining_relator": [
+            -25,
+            -6
+          ]
+        },
+        {
+          "generator": 9,
+          "defining_relator": [
+            -25,
+            9
+          ]
+        },
+        {
+          "generator": 18,
+          "defining_relator": [
+            -25,
+            -18
+          ]
+        },
+        {
+          "generator": 20,
+          "defining_relator": [
+            -25,
+            -20
+          ]
+        },
+        {
+          "generator": 13,
+          "defining_relator": [
+            -25,
+            13
+          ]
+        },
+        {
+          "generator": 14,
+          "defining_relator": [
+            -25,
+            14
+          ]
+        },
+        {
+          "generator": 16,
+          "defining_relator": [
+            -25,
+            16
+          ]
+        },
+        {
+          "generator": 22,
+          "defining_relator": [
+            -25,
+            22
+          ]
+        },
+        {
+          "generator": 23,
+          "defining_relator": [
+            -25,
+            23
+          ]
+        }
+      ],
+      "final_generators": [
+        25
+      ],
+      "final_relators": [
+        [
+          -25,
+          -25,
+          -25
+        ]
+      ]
+    },
+    {
+      "name": "13a_391",
+      "module": "dual",
+      "tree_edges": [
+        1,
+        2,
+        7,
+        11,
+        12,
+        19
+      ],
+      "eliminations": [
+        {
+          "generator": 14,
+          "defining_relator": [
+            -14
+          ]
+        },
+        {
+          "generator": 9,
+          "defining_relator": [
+            -9
+          ]
+        },
+        {
+          "generator": 17,
+          "defining_relator": [
+            -17
+          ]
+        },
+        {
+          "generator": 26,
+          "defining_relator": [
+            -26
+          ]
+        },
+        {
+          "generator": 24,
+          "defining_relator": [
+            -24
+          ]
+        },
+        {
+          "generator": 22,
+          "defining_relator": [
+            -22
+          ]
+        },
+        {
+          "generator": 25,
+          "defining_relator": [
+            -25
+          ]
+        },
+        {
+          "generator": 23,
+          "defining_relator": [
+            -23
+          ]
+        },
+        {
+          "generator": 21,
+          "defining_relator": [
+            -21
+          ]
+        },
+        {
+          "generator": 15,
+          "defining_relator": [
+            -15
+          ]
+        },
+        {
+          "generator": 13,
+          "defining_relator": [
+            -13
+          ]
+        },
+        {
+          "generator": 20,
+          "defining_relator": [
+            -20
+          ]
+        },
+        {
+          "generator": 18,
+          "defining_relator": [
+            -18
+          ]
+        },
+        {
+          "generator": 16,
+          "defining_relator": [
+            -16
+          ]
+        },
+        {
+          "generator": 10,
+          "defining_relator": [
+            -10
+          ]
+        },
+        {
+          "generator": 6,
+          "defining_relator": [
+            -6
+          ]
+        },
+        {
+          "generator": 4,
+          "defining_relator": [
+            -4
+          ]
+        },
+        {
+          "generator": 5,
+          "defining_relator": [
+            -8,
+            5
+          ]
+        },
+        {
+          "generator": 3,
+          "defining_relator": [
+            -8,
+            -3
+          ]
+        }
+      ],
+      "final_generators": [
+        8
+      ],
+      "final_relators": [
+        [
+          -8,
+          -8,
+          -8
+        ]
+      ]
+    },
+    {
+      "name": "13a_392",
+      "module": "natural",
+      "tree_edges": [
+        1,
+        2,
+        7,
+        11,
+        12,
+        19
+      ],
+      "eliminations": [
+        {
+          "generator": 25,
+          "defining_relator": [
+            -25
+          ]
+        },
+        {
+          "generator": 23,
+          "defining_relator": [
+            -23
+          ]
+        },
+        {
+          "generator": 24,
+          "defining_relator": [
+            -26,
+            -24
+          ]
+        },
+        {
+          "generator": 20,
+          "defining_relator": [
+            -26,
+            -20
+          ]
+        },
+        {
+          "generator": 18,
+          "defining_relator": [
+            -26,
+            -18
+          ]
+        },
+        {
+          "generator": 10,
+          "defining_relator": [
+            -26,
+            -10
+          ]
+        },
+        {
+          "generator": 22,
+          "defining_relator": [
+            -22
+          ]
+        },
+        {
+          "generator": 13,
+          "defining_relator": [
+            -26,
+            13
+          ]
+        },
+        {
+          "generator": 14,
+          "defining_relator": [
+            -26,
+            14
+          ]
+        },
+        {
+          "generator": 16,
+          "defining_relator": [
+            -26,
+            16
+          ]
+        },
+        {
+          "generator": 17,
+          "defining_relator": [
+            -26,
+            17
+          ]
+        },
+        {
+          "generator": 9,
+          "defining_relator": [
+            -26,
+            9
+          ]
+        },
+        {
+          "generator": 15,
+          "defining_relator": [
+            -26,
+            15
+          ]
+        },
+        {
+          "generator": 6,
+          "defining_relator": [
+            -26,
+            -6
+          ]
+        },
+        {
+          "generator": 5,
+          "defining_relator": [
+            -26,
+            -5
+          ]
+        },
+        {
+          "generator": 3,
+          "defining_relator": [
+            -26,
+            3
+          ]
+        },
+        {
+          "generator": 4,
+          "defining_relator": [
+            -26,
+            4
+          ]
+        },
+        {
+          "generator": 8,
+          "defining_relator": [
+            -26,
+            8
+          ]
+        },
+        {
+          "generator": 21,
+          "defining_relator": [
+            -26,
+            21
+          ]
+        }
+      ],
+      "final_generators": [
+        26
+      ],
+      "final_relators": [
+        [
+          -26,
+          -26,
+          -26
+        ]
+      ]
+    },
+    {
+      "name": "13a_392",
+      "module": "dual",
+      "tree_edges": [
+        1,
+        2,
+        7,
+        11,
+        12,
+        19
+      ],
+      "eliminations": [
+        {
+          "generator": 25,
+          "defining_relator": [
+            -25
+          ]
+        },
+        {
+          "generator": 23,
+          "defining_relator": [
+            -23
+          ]
+        },
+        {
+          "generator": 18,
+          "defining_relator": [
+            -18
+          ]
+        },
+        {
+          "generator": 14,
+          "defining_relator": [
+            -14
+          ]
+        },
+        {
+          "generator": 10,
+          "defining_relator": [
+            -10
+          ]
+        },
+        {
+          "generator": 9,
+          "defining_relator": [
+            -9
+          ]
+        },
+        {
+          "generator": 21,
+          "defining_relator": [
+            -21
+          ]
+        },
+        {
+          "generator": 20,
+          "defining_relator": [
+            -20
+          ]
+        },
+        {
+          "generator": 26,
+          "defining_relator": [
+            -26
+          ]
+        },
+        {
+          "generator": 24,
+          "defining_relator": [
+            -24
+          ]
+        },
+        {
+          "generator": 22,
+          "defining_relator": [
+            -22
+          ]
+        },
+        {
+          "generator": 17,
+          "defining_relator": [
+            -17
+          ]
+        },
+        {
+          "generator": 16,
+          "defining_relator": [
+            -16
+          ]
+        },
+        {
+          "generator": 15,
+          "defining_relator": [
+            -15
+          ]
+        },
+        {
+          "generator": 13,
+          "defining_relator": [
+            -13
+          ]
+        },
+        {
+          "generator": 6,
+          "defining_relator": [
+            -6
+          ]
+        },
+        {
+          "generator": 4,
+          "defining_relator": [
+            -4
+          ]
+        },
+        {
+          "generator": 5,
+          "defining_relator": [
+            -8,
+            5
+          ]
+        },
+        {
+          "generator": 3,
+          "defining_relator": [
+            -8,
+            -3
+          ]
+        }
+      ],
+      "final_generators": [
+        8
+      ],
+      "final_relators": [
+        [
+          -8,
+          -8,
+          -8
+        ]
+      ]
+    },
+    {
+      "name": "13a_3264",
+      "module": "natural",
+      "tree_edges": [
+        1,
+        2,
+        5,
+        11,
+        13,
+        17
+      ],
+      "eliminations": [
+        {
+          "generator": 26,
+          "defining_relator": [
+            -26
+          ]
+        },
+        {
+          "generator": 25,
+          "defining_relator": [
+            -25
+          ]
+        },
+        {
+          "generator": 19,
+          "defining_relator": [
+            -19
+          ]
+        },
+        {
+          "generator": 21,
+          "defining_relator": [
+            -21
+          ]
+        },
+        {
+          "generator": 22,
+          "defining_relator": [
+            -22
+          ]
+        },
+        {
+          "generator": 16,
+          "defining_relator": [
+            -16
+          ]
+        },
+        {
+          "generator": 8,
+          "defining_relator": [
+            -8
+          ]
+        },
+        {
+          "generator": 9,
+          "defining_relator": [
+            -24,
+            9
+          ]
+        },
+        {
+          "generator": 18,
+          "defining_relator": [
+            -24,
+            18
+          ]
+        },
+        {
+          "generator": 20,
+          "defining_relator": [
+            -24,
+            20
+          ]
+        },
+        {
+          "generator": 14,
+          "defining_relator": [
+            -24,
+            14
+          ]
+        },
+        {
+          "generator": 12,
+          "defining_relator": [
+            -24,
+            12
+          ]
+        },
+        {
+          "generator": 10,
+          "defining_relator": [
+            -24,
+            10
+          ]
+        },
+        {
+          "generator": 23,
+          "defining_relator": [
+            -24,
+            23
+          ]
+        },
+        {
+          "generator": 15,
+          "defining_relator": [
+            -24,
+            15
+          ]
+        },
+        {
+          "generator": 4,
+          "defining_relator": [
+            -24,
+            -4
+          ]
+        },
+        {
+          "generator": 7,
+          "defining_relator": [
+            -24,
+            -7
+          ]
+        },
+        {
+          "generator": 6,
+          "defining_relator": [
+            -24,
+            -6
+          ]
+        },
+        {
+          "generator": 3,
+          "defining_relator": [
+            -24,
+            -3
+          ]
+        }
+      ],
+      "final_generators": [
+        24
+      ],
+      "final_relators": [
+        [
+          -24,
+          -24,
+          -24
+        ]
+      ]
+    },
+    {
+      "name": "13a_3264",
+      "module": "dual",
+      "tree_edges": [
+        1,
+        2,
+        6,
+        11,
+        13,
+        17
+      ],
+      "eliminations": [
+        {
+          "generator": 25,
+          "defining_relator": [
+            -25
+          ]
+        },
+        {
+          "generator": 22,
+          "defining_relator": [
+            -22
+          ]
+        },
+        {
+          "generator": 26,
+          "defining_relator": [
+            -26
+          ]
+        },
+        {
+          "generator": 24,
+          "defining_relator": [
+            -24
+          ]
+        },
+        {
+          "generator": 19,
+          "defining_relator": [
+            -19
+          ]
+        },
+        {
+          "generator": 21,
+          "defining_relator": [
+            -21
+          ]
+        },
+        {
+          "generator": 16,
+          "defining_relator": [
+            -16
+          ]
+        },
+        {
+          "generator": 23,
+          "defining_relator": [
+            -23
+          ]
+        },
+        {
+          "generator": 20,
+          "defining_relator": [
+            -20
+          ]
+        },
+        {
+          "generator": 14,
+          "defining_relator": [
+            -14
+          ]
+        },
+        {
+          "generator": 15,
+          "defining_relator": [
+            -15
+          ]
+        },
+        {
+          "generator": 18,
+          "defining_relator": [
+            -18
+          ]
+        },
+        {
+          "generator": 12,
+          "defining_relator": [
+            -12
+          ]
+        },
+        {
+          "generator": 10,
+          "defining_relator": [
+            -10
+          ]
+        },
+        {
+          "generator": 9,
+          "defining_relator": [
+            -9
+          ]
+        },
+        {
+          "generator": 8,
+          "defining_relator": [
+            -8
+          ]
+        },
+        {
+          "generator": 4,
+          "defining_relator": [
+            -4
+          ]
+        },
+        {
+          "generator": 5,
+          "defining_relator": [
+            -7,
+            -5
+          ]
+        },
+        {
+          "generator": 3,
+          "defining_relator": [
+            -7,
+            -3
+          ]
+        }
+      ],
+      "final_generators": [
+        7
+      ],
+      "final_relators": [
+        [
+          -7,
+          -7,
+          -7
+        ]
+      ]
+    },
+    {
+      "name": "13a_3266",
+      "module": "natural",
+      "tree_edges": [
+        1,
+        2,
+        5,
+        11,
+        14,
+        17
+      ],
+      "eliminations": [
+        {
+          "generator": 26,
+          "defining_relator": [
+            -26
+          ]
+        },
+        {
+          "generator": 25,
+          "defining_relator": [
+            -25
+          ]
+        },
+        {
+          "generator": 23,
+          "defining_relator": [
+            -23
+          ]
+        },
+        {
+          "generator": 15,
+          "defining_relator": [
+            -15
+          ]
+        },
+        {
+          "generator": 8,
+          "defining_relator": [
+            -8
+          ]
+        },
+        {
+          "generator": 9,
+          "defining_relator": [
+            -24,
+            9
+          ]
+        },
+        {
+          "generator": 21,
+          "defining_relator": [
+            -21
+          ]
+        },
+        {
+          "generator": 18,
+          "defining_relator": [
+            -24,
+            18
+          ]
+        },
+        {
+          "generator": 20,
+          "defining_relator": [
+            -24,
+            20
+          ]
+        },
+        {
+          "generator": 19,
+          "defining_relator": [
+            -24,
+            19
+          ]
+        },
+        {
+          "generator": 12,
+          "defining_relator": [
+            -24,
+            12
+          ]
+        },
+        {
+          "generator": 10,
+          "defining_relator": [
+            -24,
+            10
+          ]
+        },
+        {
+          "generator": 13,
+          "defining_relator": [
+            -24,
+            13
+          ]
+        },
+        {
+          "generator": 22,
+          "defining_relator": [
+            -24,
+            22
+          ]
+        },
+        {
+          "generator": 16,
+          "defining_relator": [
+            -24,
+            16
+          ]
+        },
+        {
+          "generator": 3,
+          "defining_relator": [
+            -24,
+            -3
+          ]
+        },
+        {
+          "generator": 7,
+          "defining_relator": [
+            -24,
+            -7
+          ]
+        },
+        {
+          "generator": 6,
+          "defining_relator": [
+            -24,
+            -6
+          ]
+        },
+        {
+          "generator": 4,
+          "defining_relator": [
+            -24,
+            -4
+          ]
+        }
+      ],
+      "final_generators": [
+        24
+      ],
+      "final_relators": [
+        [
+          -24,
+          -24,
+          -24
+        ]
+      ]
+    },
+    {
+      "name": "13a_3266",
+      "module": "dual",
+      "tree_edges": [
+        1,
+        2,
+        6,
+        11,
+        13,
+        17
+      ],
+      "eliminations": [
+        {
+          "generator": 25,
+          "defining_relator": [
+            -25
+          ]
+        },
+        {
+          "generator": 20,
+          "defining_relator": [
+            -20
+          ]
+        },
+        {
+          "generator": 26,
+          "defining_relator": [
+            -26
+          ]
+        },
+        {
+          "generator": 23,
+          "defining_relator": [
+            -23
+          ]
+        },
+        {
+          "generator": 22,
+          "defining_relator": [
+            -22
+          ]
+        },
+        {
+          "generator": 21,
+          "defining_relator": [
+            -21
+          ]
+        },
+        {
+          "generator": 16,
+          "defining_relator": [
+            -16
+          ]
+        },
+        {
+          "generator": 18,
+          "defining_relator": [
+            -18
+          ]
+        },
+        {
+          "generator": 24,
+          "defining_relator": [
+            -24
+          ]
+        },
+        {
+          "generator": 15,
+          "defining_relator": [
+            -15
+          ]
+        },
+        {
+          "generator": 14,
+          "defining_relator": [
+            -14
+          ]
+        },
+        {
+          "generator": 19,
+          "defining_relator": [
+            -19
+          ]
+        },
+        {
+          "generator": 12,
+          "defining_relator": [
+            -12
+          ]
+        },
+        {
+          "generator": 10,
+          "defining_relator": [
+            -10
+          ]
+        },
+        {
+          "generator": 9,
+          "defining_relator": [
+            -9
+          ]
+        },
+        {
+          "generator": 8,
+          "defining_relator": [
+            -8
+          ]
+        },
+        {
+          "generator": 4,
+          "defining_relator": [
+            -4
+          ]
+        },
+        {
+          "generator": 5,
+          "defining_relator": [
+            -7,
+            -5
+          ]
+        },
+        {
+          "generator": 3,
+          "defining_relator": [
+            -7,
+            -3
+          ]
+        }
+      ],
+      "final_generators": [
+        7
+      ],
+      "final_relators": [
+        [
+          -7,
+          -7,
+          -7
+        ]
+      ]
+    },
+    {
+      "name": "13a_3275",
+      "module": "natural",
+      "tree_edges": [
+        1,
+        2,
+        5,
+        11,
+        12,
+        19
+      ],
+      "eliminations": [
+        {
+          "generator": 14,
+          "defining_relator": [
+            -14
+          ]
+        },
+        {
+          "generator": 15,
+          "defining_relator": [
+            -15
+          ]
+        },
+        {
+          "generator": 17,
+          "defining_relator": [
+            -17
+          ]
+        },
+        {
+          "generator": 26,
+          "defining_relator": [
+            -26
+          ]
+        },
+        {
+          "generator": 24,
+          "defining_relator": [
+            -24
+          ]
+        },
+        {
+          "generator": 22,
+          "defining_relator": [
+            -22
+          ]
+        },
+        {
+          "generator": 25,
+          "defining_relator": [
+            -25
+          ]
+        },
+        {
+          "generator": 23,
+          "defining_relator": [
+            -23
+          ]
+        },
+        {
+          "generator": 13,
+          "defining_relator": [
+            -13
+          ]
+        },
+        {
+          "generator": 20,
+          "defining_relator": [
+            -20
+          ]
+        },
+        {
+          "generator": 21,
+          "defining_relator": [
+            -21
+          ]
+        },
+        {
+          "generator": 18,
+          "defining_relator": [
+            -18
+          ]
+        },
+        {
+          "generator": 16,
+          "defining_relator": [
+            -16
+          ]
+        },
+        {
+          "generator": 10,
+          "defining_relator": [
+            -10
+          ]
+        },
+        {
+          "generator": 9,
+          "defining_relator": [
+            -9
+          ]
+        },
+        {
+          "generator": 7,
+          "defining_relator": [
+            -7
+          ]
+        },
+        {
+          "generator": 4,
+          "defining_relator": [
+            -4
+          ]
+        },
+        {
+          "generator": 6,
+          "defining_relator": [
+            -8,
+            -6
+          ]
+        },
+        {
+          "generator": 3,
+          "defining_relator": [
+            -8,
+            -3
+          ]
+        }
+      ],
+      "final_generators": [
+        8
+      ],
+      "final_relators": [
+        [
+          -8,
+          -8,
+          -8
+        ]
+      ]
+    },
+    {
+      "name": "13a_3275",
+      "module": "dual",
+      "tree_edges": [
+        1,
+        2,
+        5,
+        11,
+        12,
+        19
+      ],
+      "eliminations": [
+        {
+          "generator": 26,
+          "defining_relator": [
+            -26
+          ]
+        },
+        {
+          "generator": 24,
+          "defining_relator": [
+            -24
+          ]
+        },
+        {
+          "generator": 21,
+          "defining_relator": [
+            -21
+          ]
+        },
+        {
+          "generator": 8,
+          "defining_relator": [
+            -8
+          ]
+        },
+        {
+          "generator": 22,
+          "defining_relator": [
+            -25,
+            -22
+          ]
+        },
+        {
+          "generator": 18,
+          "defining_relator": [
+            -25,
+            -18
+          ]
+        },
+        {
+          "generator": 10,
+          "defining_relator": [
+            -25,
+            -10
+          ]
+        },
+        {
+          "generator": 9,
+          "defining_relator": [
+            -25,
+            9
+          ]
+        },
+        {
+          "generator": 16,
+          "defining_relator": [
+            -25,
+            16
+          ]
+        },
+        {
+          "generator": 4,
+          "defining_relator": [
+            -25,
+            -4
+          ]
+        },
+        {
+          "generator": 7,
+          "defining_relator": [
+            -25,
+            -7
+          ]
+        },
+        {
+          "generator": 3,
+          "defining_relator": [
+            -25,
+            -3
+          ]
+        },
+        {
+          "generator": 6,
+          "defining_relator": [
+            -25,
+            6
+          ]
+        },
+        {
+          "generator": 17,
+          "defining_relator": [
+            -25,
+            17
+          ]
+        },
+        {
+          "generator": 15,
+          "defining_relator": [
+            -25,
+            15
+          ]
+        },
+        {
+          "generator": 13,
+          "defining_relator": [
+            -25,
+            13
+          ]
+        },
+        {
+          "generator": 20,
+          "defining_relator": [
+            -25,
+            20
+          ]
+        },
+        {
+          "generator": 14,
+          "defining_relator": [
+            -25,
+            14
+          ]
+        },
+        {
+          "generator": 23,
+          "defining_relator": [
+            -25,
+            23
+          ]
+        }
+      ],
+      "final_generators": [
+        25
+      ],
+      "final_relators": [
+        [
+          -25,
+          -25,
+          -25
+        ]
+      ]
+    },
+    {
+      "name": "13a_3276",
+      "module": "natural",
+      "tree_edges": [
+        1,
+        2,
+        5,
+        11,
+        12,
+        19
+      ],
+      "eliminations": [
+        {
+          "generator": 25,
+          "defining_relator": [
+            -25
+          ]
+        },
+        {
+          "generator": 23,
+          "defining_relator": [
+            -23
+          ]
+        },
+        {
+          "generator": 18,
+          "defining_relator": [
+            -18
+          ]
+        },
+        {
+          "generator": 14,
+          "defining_relator": [
+            -14
+          ]
+        },
+        {
+          "generator": 15,
+          "defining_relator": [
+            -15
+          ]
+        },
+        {
+          "generator": 17,
+          "defining_relator": [
+            -17
+          ]
+        },
+        {
+          "generator": 20,
+          "defining_relator": [
+            -20
+          ]
+        },
+        {
+          "generator": 26,
+          "defining_relator": [
+            -26
+          ]
+        },
+        {
+          "generator": 24,
+          "defining_relator": [
+            -24
+          ]
+        },
+        {
+          "generator": 22,
+          "defining_relator": [
+            -22
+          ]
+        },
+        {
+          "generator": 13,
+          "defining_relator": [
+            -13
+          ]
+        },
+        {
+          "generator": 21,
+          "defining_relator": [
+            -21
+          ]
+        },
+        {
+          "generator": 16,
+          "defining_relator": [
+            -16
+          ]
+        },
+        {
+          "generator": 10,
+          "defining_relator": [
+            -10
+          ]
+        },
+        {
+          "generator": 9,
+          "defining_relator": [
+            -9
+          ]
+        },
+        {
+          "generator": 7,
+          "defining_relator": [
+            -7
+          ]
+        },
+        {
+          "generator": 4,
+          "defining_relator": [
+            -4
+          ]
+        },
+        {
+          "generator": 6,
+          "defining_relator": [
+            -8,
+            -6
+          ]
+        },
+        {
+          "generator": 3,
+          "defining_relator": [
+            -8,
+            -3
+          ]
+        }
+      ],
+      "final_generators": [
+        8
+      ],
+      "final_relators": [
+        [
+          -8,
+          -8,
+          -8
+        ]
+      ]
+    },
+    {
+      "name": "13a_3276",
+      "module": "dual",
+      "tree_edges": [
+        1,
+        2,
+        5,
+        11,
+        12,
+        19
+      ],
+      "eliminations": [
+        {
+          "generator": 25,
+          "defining_relator": [
+            -25
+          ]
+        },
+        {
+          "generator": 23,
+          "defining_relator": [
+            -23
+          ]
+        },
+        {
+          "generator": 8,
+          "defining_relator": [
+            -8
+          ]
+        },
+        {
+          "generator": 24,
+          "defining_relator": [
+            -26,
+            -24
+          ]
+        },
+        {
+          "generator": 18,
+          "defining_relator": [
+            -26,
+            -18
+          ]
+        },
+        {
+          "generator": 9,
+          "defining_relator": [
+            -26,
+            9
+          ]
+        },
+        {
+          "generator": 13,
+          "defining_relator": [
+            -26,
+            13
+          ]
+        },
+        {
+          "generator": 14,
+          "defining_relator": [
+            -26,
+            14
+          ]
+        },
+        {
+          "generator": 15,
+          "defining_relator": [
+            -26,
+            15
+          ]
+        },
+        {
+          "generator": 20,
+          "defining_relator": [
+            -26,
+            20
+          ]
+        },
+        {
+          "generator": 22,
+          "defining_relator": [
+            -22
+          ]
+        },
+        {
+          "generator": 10,
+          "defining_relator": [
+            -26,
+            -10
+          ]
+        },
+        {
+          "generator": 16,
+          "defining_relator": [
+            -26,
+            16
+          ]
+        },
+        {
+          "generator": 4,
+          "defining_relator": [
+            -26,
+            -4
+          ]
+        },
+        {
+          "generator": 7,
+          "defining_relator": [
+            -26,
+            -7
+          ]
+        },
+        {
+          "generator": 3,
+          "defining_relator": [
+            -26,
+            -3
+          ]
+        },
+        {
+          "generator": 6,
+          "defining_relator": [
+            -26,
+            6
+          ]
+        },
+        {
+          "generator": 17,
+          "defining_relator": [
+            -26,
+            17
+          ]
+        },
+        {
+          "generator": 21,
+          "defining_relator": [
+            -26,
+            21
+          ]
+        }
+      ],
+      "final_generators": [
+        26
+      ],
+      "final_relators": [
+        [
+          -26,
+          -26,
+          -26
+        ]
+      ]
+    },
+    {
+      "name": "13n_1005",
+      "module": "natural",
+      "tree_edges": [
+        1,
+        2,
+        7,
+        11,
+        12,
+        13
+      ],
+      "eliminations": [
+        {
+          "generator": 25,
+          "defining_relator": [
+            -25
+          ]
+        },
+        {
+          "generator": 14,
+          "defining_relator": [
+            -14
+          ]
+        },
+        {
+          "generator": 26,
+          "defining_relator": [
+            -26
+          ]
+        },
+        {
+          "generator": 22,
+          "defining_relator": [
+            -24,
+            -22
+          ]
+        },
+        {
+          "generator": 16,
+          "defining_relator": [
+            -24,
+            -16
+          ]
+        },
+        {
+          "generator": 10,
+          "defining_relator": [
+            -24,
+            -10
+          ]
+        },
+        {
+          "generator": 6,
+          "defining_relator": [
+            -24,
+            -6
+          ]
+        },
+        {
+          "generator": 4,
+          "defining_relator": [
+            -24,
+            4
+          ]
+        },
+        {
+          "generator": 8,
+          "defining_relator": [
+            -24,
+            8
+          ]
+        },
+        {
+          "generator": 3,
+          "defining_relator": [
+            -24,
+            -3
+          ]
+        },
+        {
+          "generator": 9,
+          "defining_relator": [
+            -24,
+            -9
+          ]
+        },
+        {
+          "generator": 5,
+          "defining_relator": [
+            -24,
+            5
+          ]
+        },
+        {
+          "generator": 18,
+          "defining_relator": [
+            -24,
+            18
+          ]
+        },
+        {
+          "generator": 19,
+          "defining_relator": [
+            -24,
+            19
+          ]
+        },
+        {
+          "generator": 20,
+          "defining_relator": [
+            -24,
+            20
+          ]
+        },
+        {
+          "generator": 17,
+          "defining_relator": [
+            -24,
+            17
+          ]
+        },
+        {
+          "generator": 15,
+          "defining_relator": [
+            -24,
+            15
+          ]
+        },
+        {
+          "generator": 21,
+          "defining_relator": [
+            -24,
+            21
+          ]
+        },
+        {
+          "generator": 23,
+          "defining_relator": [
+            -24,
+            23
+          ]
+        }
+      ],
+      "final_generators": [
+        24
+      ],
+      "final_relators": [
+        [
+          -24,
+          -24,
+          -24
+        ]
+      ]
+    },
+    {
+      "name": "13n_1005",
+      "module": "dual",
+      "tree_edges": [
+        1,
+        2,
+        7,
+        11,
+        12,
+        13
+      ],
+      "eliminations": [
+        {
+          "generator": 25,
+          "defining_relator": [
+            -25
+          ]
+        },
+        {
+          "generator": 20,
+          "defining_relator": [
+            -20
+          ]
+        },
+        {
+          "generator": 22,
+          "defining_relator": [
+            -22
+          ]
+        },
+        {
+          "generator": 24,
+          "defining_relator": [
+            -24
+          ]
+        },
+        {
+          "generator": 18,
+          "defining_relator": [
+            -18
+          ]
+        },
+        {
+          "generator": 26,
+          "defining_relator": [
+            -26
+          ]
+        },
+        {
+          "generator": 15,
+          "defining_relator": [
+            -15
+          ]
+        },
+        {
+          "generator": 21,
+          "defining_relator": [
+            -21
+          ]
+        },
+        {
+          "generator": 23,
+          "defining_relator": [
+            -23
+          ]
+        },
+        {
+          "generator": 19,
+          "defining_relator": [
+            -19
+          ]
+        },
+        {
+          "generator": 17,
+          "defining_relator": [
+            -17
+          ]
+        },
+        {
+          "generator": 16,
+          "defining_relator": [
+            -16
+          ]
+        },
+        {
+          "generator": 14,
+          "defining_relator": [
+            -14
+          ]
+        },
+        {
+          "generator": 10,
+          "defining_relator": [
+            -10
+          ]
+        },
+        {
+          "generator": 9,
+          "defining_relator": [
+            -9
+          ]
+        },
+        {
+          "generator": 5,
+          "defining_relator": [
+            -5
+          ]
+        },
+        {
+          "generator": 3,
+          "defining_relator": [
+            -3
+          ]
+        },
+        {
+          "generator": 6,
+          "defining_relator": [
+            -8,
+            6
+          ]
+        },
+        {
+          "generator": 4,
+          "defining_relator": [
+            -8,
+            -4
+          ]
+        }
+      ],
+      "final_generators": [
+        8
+      ],
+      "final_relators": [
+        [
+          -8,
+          -8,
+          -8
+        ]
+      ]
+    },
+    {
+      "name": "13n_1006",
+      "module": "natural",
+      "tree_edges": [
+        1,
+        2,
+        8,
+        11,
+        13,
+        18
+      ],
+      "eliminations": [
+        {
+          "generator": 25,
+          "defining_relator": [
+            -25
+          ]
+        },
+        {
+          "generator": 23,
+          "defining_relator": [
+            -23
+          ]
+        },
+        {
+          "generator": 21,
+          "defining_relator": [
+            -21
+          ]
+        },
+        {
+          "generator": 26,
+          "defining_relator": [
+            -26
+          ]
+        },
+        {
+          "generator": 20,
+          "defining_relator": [
+            -20
+          ]
+        },
+        {
+          "generator": 19,
+          "defining_relator": [
+            -19
+          ]
+        },
+        {
+          "generator": 24,
+          "defining_relator": [
+            -24
+          ]
+        },
+        {
+          "generator": 16,
+          "defining_relator": [
+            -16
+          ]
+        },
+        {
+          "generator": 15,
+          "defining_relator": [
+            -15
+          ]
+        },
+        {
+          "generator": 17,
+          "defining_relator": [
+            -17
+          ]
+        },
+        {
+          "generator": 14,
+          "defining_relator": [
+            -14
+          ]
+        },
+        {
+          "generator": 22,
+          "defining_relator": [
+            -22
+          ]
+        },
+        {
+          "generator": 12,
+          "defining_relator": [
+            -12
+          ]
+        },
+        {
+          "generator": 10,
+          "defining_relator": [
+            -10
+          ]
+        },
+        {
+          "generator": 9,
+          "defining_relator": [
+            -9
+          ]
+        },
+        {
+          "generator": 5,
+          "defining_relator": [
+            -5
+          ]
+        },
+        {
+          "generator": 3,
+          "defining_relator": [
+            -3
+          ]
+        },
+        {
+          "generator": 6,
+          "defining_relator": [
+            -7,
+            6
+          ]
+        },
+        {
+          "generator": 4,
+          "defining_relator": [
+            -7,
+            -4
+          ]
+        }
+      ],
+      "final_generators": [
+        7
+      ],
+      "final_relators": [
+        [
+          -7,
+          -7,
+          -7
+        ]
+      ]
+    },
+    {
+      "name": "13n_1006",
+      "module": "dual",
+      "tree_edges": [
+        1,
+        2,
+        7,
+        11,
+        13,
+        17
+      ],
+      "eliminations": [
+        {
+          "generator": 26,
+          "defining_relator": [
+            -26
+          ]
+        },
+        {
+          "generator": 25,
+          "defining_relator": [
+            -25
+          ]
+        },
+        {
+          "generator": 20,
+          "defining_relator": [
+            -20
+          ]
+        },
+        {
+          "generator": 22,
+          "defining_relator": [
+            -22
+          ]
+        },
+        {
+          "generator": 21,
+          "defining_relator": [
+            -21
+          ]
+        },
+        {
+          "generator": 15,
+          "defining_relator": [
+            -15
+          ]
+        },
+        {
+          "generator": 10,
+          "defining_relator": [
+            -24,
+            -10
+          ]
+        },
+        {
+          "generator": 18,
+          "defining_relator": [
+            -24,
+            18
+          ]
+        },
+        {
+          "generator": 19,
+          "defining_relator": [
+            -24,
+            19
+          ]
+        },
+        {
+          "generator": 14,
+          "defining_relator": [
+            -24,
+            14
+          ]
+        },
+        {
+          "generator": 6,
+          "defining_relator": [
+            -24,
+            -6
+          ]
+        },
+        {
+          "generator": 4,
+          "defining_relator": [
+            -24,
+            4
+          ]
+        },
+        {
+          "generator": 8,
+          "defining_relator": [
+            -24,
+            8
+          ]
+        },
+        {
+          "generator": 3,
+          "defining_relator": [
+            -24,
+            3
+          ]
+        },
+        {
+          "generator": 5,
+          "defining_relator": [
+            -24,
+            -5
+          ]
+        },
+        {
+          "generator": 9,
+          "defining_relator": [
+            -24,
+            9
+          ]
+        },
+        {
+          "generator": 12,
+          "defining_relator": [
+            -24,
+            12
+          ]
+        },
+        {
+          "generator": 23,
+          "defining_relator": [
+            -24,
+            23
+          ]
+        },
+        {
+          "generator": 16,
+          "defining_relator": [
+            -24,
+            -16
+          ]
+        }
+      ],
+      "final_generators": [
+        24
+      ],
+      "final_relators": [
+        [
+          -24,
+          -24,
+          -24
+        ]
+      ]
+    },
+    {
+      "name": "13n_1007",
+      "module": "natural",
+      "tree_edges": [
+        1,
+        2,
+        7,
+        11,
+        12,
+        13
+      ],
+      "eliminations": [
+        {
+          "generator": 25,
+          "defining_relator": [
+            -25
+          ]
+        },
+        {
+          "generator": 14,
+          "defining_relator": [
+            -14
+          ]
+        },
+        {
+          "generator": 26,
+          "defining_relator": [
+            -26
+          ]
+        },
+        {
+          "generator": 22,
+          "defining_relator": [
+            -24,
+            -22
+          ]
+        },
+        {
+          "generator": 16,
+          "defining_relator": [
+            -24,
+            -16
+          ]
+        },
+        {
+          "generator": 10,
+          "defining_relator": [
+            -24,
+            -10
+          ]
+        },
+        {
+          "generator": 18,
+          "defining_relator": [
+            -24,
+            18
+          ]
+        },
+        {
+          "generator": 5,
+          "defining_relator": [
+            -24,
+            5
+          ]
+        },
+        {
+          "generator": 6,
+          "defining_relator": [
+            -24,
+            -6
+          ]
+        },
+        {
+          "generator": 3,
+          "defining_relator": [
+            -24,
+            -3
+          ]
+        },
+        {
+          "generator": 4,
+          "defining_relator": [
+            -24,
+            4
+          ]
+        },
+        {
+          "generator": 8,
+          "defining_relator": [
+            -24,
+            8
+          ]
+        },
+        {
+          "generator": 9,
+          "defining_relator": [
+            -24,
+            -9
+          ]
+        },
+        {
+          "generator": 19,
+          "defining_relator": [
+            -24,
+            19
+          ]
+        },
+        {
+          "generator": 20,
+          "defining_relator": [
+            -24,
+            20
+          ]
+        },
+        {
+          "generator": 17,
+          "defining_relator": [
+            -24,
+            17
+          ]
+        },
+        {
+          "generator": 15,
+          "defining_relator": [
+            -24,
+            15
+          ]
+        },
+        {
+          "generator": 21,
+          "defining_relator": [
+            -24,
+            21
+          ]
+        },
+        {
+          "generator": 23,
+          "defining_relator": [
+            -24,
+            23
+          ]
+        }
+      ],
+      "final_generators": [
+        24
+      ],
+      "final_relators": [
+        [
+          -24,
+          -24,
+          -24
+        ]
+      ]
+    },
+    {
+      "name": "13n_1007",
+      "module": "dual",
+      "tree_edges": [
+        1,
+        2,
+        7,
+        11,
+        12,
+        13
+      ],
+      "eliminations": [
+        {
+          "generator": 25,
+          "defining_relator": [
+            -25
+          ]
+        },
+        {
+          "generator": 20,
+          "defining_relator": [
+            -20
+          ]
+        },
+        {
+          "generator": 22,
+          "defining_relator": [
+            -22
+          ]
+        },
+        {
+          "generator": 24,
+          "defining_relator": [
+            -24
+          ]
+        },
+        {
+          "generator": 18,
+          "defining_relator": [
+            -18
+          ]
+        },
+        {
+          "generator": 26,
+          "defining_relator": [
+            -26
+          ]
+        },
+        {
+          "generator": 14,
+          "defining_relator": [
+            -14
+          ]
+        },
+        {
+          "generator": 16,
+          "defining_relator": [
+            -16
+          ]
+        },
+        {
+          "generator": 10,
+          "defining_relator": [
+            -10
+          ]
+        },
+        {
+          "generator": 9,
+          "defining_relator": [
+            -9
+          ]
+        },
+        {
+          "generator": 23,
+          "defining_relator": [
+            -23
+          ]
+        },
+        {
+          "generator": 21,
+          "defining_relator": [
+            -21
+          ]
+        },
+        {
+          "generator": 19,
+          "defining_relator": [
+            -19
+          ]
+        },
+        {
+          "generator": 17,
+          "defining_relator": [
+            -17
+          ]
+        },
+        {
+          "generator": 15,
+          "defining_relator": [
+            -15
+          ]
+        },
+        {
+          "generator": 5,
+          "defining_relator": [
+            -5
+          ]
+        },
+        {
+          "generator": 3,
+          "defining_relator": [
+            -3
+          ]
+        },
+        {
+          "generator": 6,
+          "defining_relator": [
+            -8,
+            6
+          ]
+        },
+        {
+          "generator": 4,
+          "defining_relator": [
+            -8,
+            -4
+          ]
+        }
+      ],
+      "final_generators": [
+        8
+      ],
+      "final_relators": [
+        [
+          -8,
+          -8,
+          -8
+        ]
+      ]
+    },
+    {
+      "name": "13n_1011",
+      "module": "natural",
+      "tree_edges": [
+        1,
+        2,
+        7,
+        11,
+        13,
+        15
+      ],
+      "eliminations": [
+        {
+          "generator": 25,
+          "defining_relator": [
+            -25
+          ]
+        },
+        {
+          "generator": 24,
+          "defining_relator": [
+            -24
+          ]
+        },
+        {
+          "generator": 21,
+          "defining_relator": [
+            -21
+          ]
+        },
+        {
+          "generator": 19,
+          "defining_relator": [
+            -19
+          ]
+        },
+        {
+          "generator": 20,
+          "defining_relator": [
+            -20
+          ]
+        },
+        {
+          "generator": 22,
+          "defining_relator": [
+            -22
+          ]
+        },
+        {
+          "generator": 18,
+          "defining_relator": [
+            -18
+          ]
+        },
+        {
+          "generator": 26,
+          "defining_relator": [
+            -26
+          ]
+        },
+        {
+          "generator": 17,
+          "defining_relator": [
+            -17
+          ]
+        },
+        {
+          "generator": 23,
+          "defining_relator": [
+            -23
+          ]
+        },
+        {
+          "generator": 16,
+          "defining_relator": [
+            -16
+          ]
+        },
+        {
+          "generator": 14,
+          "defining_relator": [
+            -14
+          ]
+        },
+        {
+          "generator": 12,
+          "defining_relator": [
+            -12
+          ]
+        },
+        {
+          "generator": 10,
+          "defining_relator": [
+            -10
+          ]
+        },
+        {
+          "generator": 9,
+          "defining_relator": [
+            -9
+          ]
+        },
+        {
+          "generator": 5,
+          "defining_relator": [
+            -5
+          ]
+        },
+        {
+          "generator": 3,
+          "defining_relator": [
+            -3
+          ]
+        },
+        {
+          "generator": 6,
+          "defining_relator": [
+            -8,
+            6
+          ]
+        },
+        {
+          "generator": 4,
+          "defining_relator": [
+            -8,
+            -4
+          ]
+        }
+      ],
+      "final_generators": [
+        8
+      ],
+      "final_relators": [
+        [
+          -8,
+          -8,
+          -8
+        ]
+      ]
+    },
+    {
+      "name": "13n_1011",
+      "module": "dual",
+      "tree_edges": [
+        1,
+        2,
+        7,
+        11,
+        13,
+        15
+      ],
+      "eliminations": [
+        {
+          "generator": 25,
+          "defining_relator": [
+            -25
+          ]
+        },
+        {
+          "generator": 24,
+          "defining_relator": [
+            -24
+          ]
+        },
+        {
+          "generator": 22,
+          "defining_relator": [
+            -22
+          ]
+        },
+        {
+          "generator": 21,
+          "defining_relator": [
+            -21
+          ]
+        },
+        {
+          "generator": 20,
+          "defining_relator": [
+            -20
+          ]
+        },
+        {
+          "generator": 19,
+          "defining_relator": [
+            -19
+          ]
+        },
+        {
+          "generator": 17,
+          "defining_relator": [
+            -17
+          ]
+        },
+        {
+          "generator": 18,
+          "defining_relator": [
+            -26,
+            -18
+          ]
+        },
+        {
+          "generator": 14,
+          "defining_relator": [
+            -26,
+            14
+          ]
+        },
+        {
+          "generator": 12,
+          "defining_relator": [
+            -26,
+            12
+          ]
+        },
+        {
+          "generator": 10,
+          "defining_relator": [
+            -26,
+            10
+          ]
+        },
+        {
+          "generator": 16,
+          "defining_relator": [
+            -26,
+            16
+          ]
+        },
+        {
+          "generator": 6,
+          "defining_relator": [
+            -26,
+            6
+          ]
+        },
+        {
+          "generator": 4,
+          "defining_relator": [
+            -26,
+            -4
+          ]
+        },
+        {
+          "generator": 8,
+          "defining_relator": [
+            -26,
+            -8
+          ]
+        },
+        {
+          "generator": 3,
+          "defining_relator": [
+            -26,
+            3
+          ]
+        },
+        {
+          "generator": 5,
+          "defining_relator": [
+            -26,
+            -5
+          ]
+        },
+        {
+          "generator": 9,
+          "defining_relator": [
+            -26,
+            9
+          ]
+        },
+        {
+          "generator": 23,
+          "defining_relator": [
+            -26,
+            23
+          ]
+        }
+      ],
+      "final_generators": [
+        26
+      ],
+      "final_relators": [
+        [
+          -26,
+          -26,
+          -26
+        ]
+      ]
+    },
+    {
+      "name": "13n_1012",
+      "module": "natural",
+      "tree_edges": [
+        1,
+        2,
+        7,
+        11,
+        13,
+        18
+      ],
+      "eliminations": [
+        {
+          "generator": 25,
+          "defining_relator": [
+            -25
+          ]
+        },
+        {
+          "generator": 24,
+          "defining_relator": [
+            -24
+          ]
+        },
+        {
+          "generator": 22,
+          "defining_relator": [
+            -22
+          ]
+        },
+        {
+          "generator": 20,
+          "defining_relator": [
+            -20
+          ]
+        },
+        {
+          "generator": 26,
+          "defining_relator": [
+            -26
+          ]
+        },
+        {
+          "generator": 19,
+          "defining_relator": [
+            -19
+          ]
+        },
+        {
+          "generator": 17,
+          "defining_relator": [
+            -17
+          ]
+        },
+        {
+          "generator": 23,
+          "defining_relator": [
+            -23
+          ]
+        },
+        {
+          "generator": 16,
+          "defining_relator": [
+            -16
+          ]
+        },
+        {
+          "generator": 21,
+          "defining_relator": [
+            -21
+          ]
+        },
+        {
+          "generator": 15,
+          "defining_relator": [
+            -15
+          ]
+        },
+        {
+          "generator": 14,
+          "defining_relator": [
+            -14
+          ]
+        },
+        {
+          "generator": 12,
+          "defining_relator": [
+            -12
+          ]
+        },
+        {
+          "generator": 10,
+          "defining_relator": [
+            -10
+          ]
+        },
+        {
+          "generator": 9,
+          "defining_relator": [
+            -9
+          ]
+        },
+        {
+          "generator": 6,
+          "defining_relator": [
+            -6
+          ]
+        },
+        {
+          "generator": 4,
+          "defining_relator": [
+            -4
+          ]
+        },
+        {
+          "generator": 5,
+          "defining_relator": [
+            -8,
+            5
+          ]
+        },
+        {
+          "generator": 3,
+          "defining_relator": [
+            -8,
+            -3
+          ]
+        }
+      ],
+      "final_generators": [
+        8
+      ],
+      "final_relators": [
+        [
+          -8,
+          -8,
+          -8
+        ]
+      ]
+    },
+    {
+      "name": "13n_1012",
+      "module": "dual",
+      "tree_edges": [
+        1,
+        2,
+        7,
+        11,
+        13,
+        17
+      ],
+      "eliminations": [
+        {
+          "generator": 26,
+          "defining_relator": [
+            -26
+          ]
+        },
+        {
+          "generator": 25,
+          "defining_relator": [
+            -25
+          ]
+        },
+        {
+          "generator": 24,
+          "defining_relator": [
+            -24
+          ]
+        },
+        {
+          "generator": 15,
+          "defining_relator": [
+            -15
+          ]
+        },
+        {
+          "generator": 9,
+          "defining_relator": [
+            -23,
+            -9
+          ]
+        },
+        {
+          "generator": 21,
+          "defining_relator": [
+            -21
+          ]
+        },
+        {
+          "generator": 18,
+          "defining_relator": [
+            -23,
+            18
+          ]
+        },
+        {
+          "generator": 20,
+          "defining_relator": [
+            -23,
+            20
+          ]
+        },
+        {
+          "generator": 19,
+          "defining_relator": [
+            -23,
+            19
+          ]
+        },
+        {
+          "generator": 14,
+          "defining_relator": [
+            -23,
+            -14
+          ]
+        },
+        {
+          "generator": 5,
+          "defining_relator": [
+            -23,
+            5
+          ]
+        },
+        {
+          "generator": 3,
+          "defining_relator": [
+            -23,
+            -3
+          ]
+        },
+        {
+          "generator": 8,
+          "defining_relator": [
+            -23,
+            -8
+          ]
+        },
+        {
+          "generator": 4,
+          "defining_relator": [
+            -23,
+            -4
+          ]
+        },
+        {
+          "generator": 6,
+          "defining_relator": [
+            -23,
+            6
+          ]
+        },
+        {
+          "generator": 12,
+          "defining_relator": [
+            -23,
+            12
+          ]
+        },
+        {
+          "generator": 10,
+          "defining_relator": [
+            -23,
+            10
+          ]
+        },
+        {
+          "generator": 22,
+          "defining_relator": [
+            -23,
+            22
+          ]
+        },
+        {
+          "generator": 16,
+          "defining_relator": [
+            -23,
+            -16
+          ]
+        }
+      ],
+      "final_generators": [
+        23
+      ],
+      "final_relators": [
+        [
+          -23,
+          -23,
+          -23
+        ]
+      ]
+    },
+    {
+      "name": "13n_1013",
+      "module": "natural",
+      "tree_edges": [
+        1,
+        2,
+        7,
+        11,
+        13,
+        15
+      ],
+      "eliminations": [
+        {
+          "generator": 25,
+          "defining_relator": [
+            -25
+          ]
+        },
+        {
+          "generator": 24,
+          "defining_relator": [
+            -24
+          ]
+        },
+        {
+          "generator": 21,
+          "defining_relator": [
+            -21
+          ]
+        },
+        {
+          "generator": 19,
+          "defining_relator": [
+            -19
+          ]
+        },
+        {
+          "generator": 20,
+          "defining_relator": [
+            -20
+          ]
+        },
+        {
+          "generator": 22,
+          "defining_relator": [
+            -22
+          ]
+        },
+        {
+          "generator": 17,
+          "defining_relator": [
+            -17
+          ]
+        },
+        {
+          "generator": 23,
+          "defining_relator": [
+            -23
+          ]
+        },
+        {
+          "generator": 10,
+          "defining_relator": [
+            -10
+          ]
+        },
+        {
+          "generator": 9,
+          "defining_relator": [
+            -9
+          ]
+        },
+        {
+          "generator": 12,
+          "defining_relator": [
+            -12
+          ]
+        },
+        {
+          "generator": 26,
+          "defining_relator": [
+            -26
+          ]
+        },
+        {
+          "generator": 18,
+          "defining_relator": [
+            -18
+          ]
+        },
+        {
+          "generator": 14,
+          "defining_relator": [
+            -14
+          ]
+        },
+        {
+          "generator": 16,
+          "defining_relator": [
+            -16
+          ]
+        },
+        {
+          "generator": 5,
+          "defining_relator": [
+            -5
+          ]
+        },
+        {
+          "generator": 3,
+          "defining_relator": [
+            -3
+          ]
+        },
+        {
+          "generator": 6,
+          "defining_relator": [
+            -8,
+            6
+          ]
+        },
+        {
+          "generator": 4,
+          "defining_relator": [
+            -8,
+            -4
+          ]
+        }
+      ],
+      "final_generators": [
+        8
+      ],
+      "final_relators": [
+        [
+          -8,
+          -8,
+          -8
+        ]
+      ]
+    },
+    {
+      "name": "13n_1013",
+      "module": "dual",
+      "tree_edges": [
+        1,
+        2,
+        7,
+        11,
+        13,
+        15
+      ],
+      "eliminations": [
+        {
+          "generator": 25,
+          "defining_relator": [
+            -25
+          ]
+        },
+        {
+          "generator": 24,
+          "defining_relator": [
+            -24
+          ]
+        },
+        {
+          "generator": 22,
+          "defining_relator": [
+            -22
+          ]
+        },
+        {
+          "generator": 21,
+          "defining_relator": [
+            -21
+          ]
+        },
+        {
+          "generator": 20,
+          "defining_relator": [
+            -20
+          ]
+        },
+        {
+          "generator": 19,
+          "defining_relator": [
+            -19
+          ]
+        },
+        {
+          "generator": 17,
+          "defining_relator": [
+            -17
+          ]
+        },
+        {
+          "generator": 18,
+          "defining_relator": [
+            -26,
+            -18
+          ]
+        },
+        {
+          "generator": 5,
+          "defining_relator": [
+            -26,
+            -5
+          ]
+        },
+        {
+          "generator": 3,
+          "defining_relator": [
+            -26,
+            3
+          ]
+        },
+        {
+          "generator": 8,
+          "defining_relator": [
+            -26,
+            -8
+          ]
+        },
+        {
+          "generator": 4,
+          "defining_relator": [
+            -26,
+            -4
+          ]
+        },
+        {
+          "generator": 6,
+          "defining_relator": [
+            -26,
+            6
+          ]
+        },
+        {
+          "generator": 9,
+          "defining_relator": [
+            -26,
+            9
+          ]
+        },
+        {
+          "generator": 14,
+          "defining_relator": [
+            -26,
+            14
+          ]
+        },
+        {
+          "generator": 12,
+          "defining_relator": [
+            -26,
+            12
+          ]
+        },
+        {
+          "generator": 10,
+          "defining_relator": [
+            -26,
+            10
+          ]
+        },
+        {
+          "generator": 16,
+          "defining_relator": [
+            -26,
+            16
+          ]
+        },
+        {
+          "generator": 23,
+          "defining_relator": [
+            -26,
+            23
+          ]
+        }
+      ],
+      "final_generators": [
+        26
+      ],
+      "final_relators": [
+        [
+          -26,
+          -26,
+          -26
+        ]
+      ]
+    },
+    {
+      "name": "13n_1043",
+      "module": "natural",
+      "tree_edges": [
+        1,
+        2,
+        7,
+        11,
+        12,
+        13
+      ],
+      "eliminations": [
+        {
+          "generator": 25,
+          "defining_relator": [
+            -25
+          ]
+        },
+        {
+          "generator": 19,
+          "defining_relator": [
+            -19
+          ]
+        },
+        {
+          "generator": 18,
+          "defining_relator": [
+            -18
+          ]
+        },
+        {
+          "generator": 16,
+          "defining_relator": [
+            -16
+          ]
+        },
+        {
+          "generator": 15,
+          "defining_relator": [
+            -15
+          ]
+        },
+        {
+          "generator": 17,
+          "defining_relator": [
+            -17
+          ]
+        },
+        {
+          "generator": 24,
+          "defining_relator": [
+            -24
+          ]
+        },
+        {
+          "generator": 21,
+          "defining_relator": [
+            -21
+          ]
+        },
+        {
+          "generator": 20,
+          "defining_relator": [
+            -20
+          ]
+        },
+        {
+          "generator": 26,
+          "defining_relator": [
+            -26
+          ]
+        },
+        {
+          "generator": 23,
+          "defining_relator": [
+            -23
+          ]
+        },
+        {
+          "generator": 22,
+          "defining_relator": [
+            -22
+          ]
+        },
+        {
+          "generator": 14,
+          "defining_relator": [
+            -14
+          ]
+        },
+        {
+          "generator": 10,
+          "defining_relator": [
+            -10
+          ]
+        },
+        {
+          "generator": 9,
+          "defining_relator": [
+            -9
+          ]
+        },
+        {
+          "generator": 5,
+          "defining_relator": [
+            -5
+          ]
+        },
+        {
+          "generator": 3,
+          "defining_relator": [
+            -3
+          ]
+        },
+        {
+          "generator": 6,
+          "defining_relator": [
+            -8,
+            6
+          ]
+        },
+        {
+          "generator": 4,
+          "defining_relator": [
+            -8,
+            -4
+          ]
+        }
+      ],
+      "final_generators": [
+        8
+      ],
+      "final_relators": [
+        [
+          -8,
+          -8,
+          -8
+        ]
+      ]
+    },
+    {
+      "name": "13n_1043",
+      "module": "dual",
+      "tree_edges": [
+        1,
+        2,
+        7,
+        11,
+        12,
+        13
+      ],
+      "eliminations": [
+        {
+          "generator": 14,
+          "defining_relator": [
+            -14
+          ]
+        },
+        {
+          "generator": 20,
+          "defining_relator": [
+            -26,
+            20
+          ]
+        },
+        {
+          "generator": 18,
+          "defining_relator": [
+            -26,
+            18
+          ]
+        },
+        {
+          "generator": 22,
+          "defining_relator": [
+            -26,
+            22
+          ]
+        },
+        {
+          "generator": 23,
+          "defining_relator": [
+            -26,
+            23
+          ]
+        },
+        {
+          "generator": 9,
+          "defining_relator": [
+            -26,
+            9
+          ]
+        },
+        {
+          "generator": 25,
+          "defining_relator": [
+            -26,
+            25
+          ]
+        },
+        {
+          "generator": 19,
+          "defining_relator": [
+            -26,
+            19
+          ]
+        },
+        {
+          "generator": 17,
+          "defining_relator": [
+            -26,
+            17
+          ]
+        },
+        {
+          "generator": 15,
+          "defining_relator": [
+            -26,
+            15
+          ]
+        },
+        {
+          "generator": 21,
+          "defining_relator": [
+            -26,
+            21
+          ]
+        },
+        {
+          "generator": 16,
+          "defining_relator": [
+            -26,
+            16
+          ]
+        },
+        {
+          "generator": 6,
+          "defining_relator": [
+            -26,
+            6
+          ]
+        },
+        {
+          "generator": 4,
+          "defining_relator": [
+            -26,
+            -4
+          ]
+        },
+        {
+          "generator": 8,
+          "defining_relator": [
+            -26,
+            -8
+          ]
+        },
+        {
+          "generator": 3,
+          "defining_relator": [
+            -26,
+            3
+          ]
+        },
+        {
+          "generator": 5,
+          "defining_relator": [
+            -26,
+            -5
+          ]
+        },
+        {
+          "generator": 24,
+          "defining_relator": [
+            -26,
+            24
+          ]
+        },
+        {
+          "generator": 10,
+          "defining_relator": [
+            -26,
+            10
+          ]
+        }
+      ],
+      "final_generators": [
+        26
+      ],
+      "final_relators": [
+        [
+          -26,
+          -26,
+          -26
+        ]
+      ]
+    },
+    {
+      "name": "13n_1044",
+      "module": "natural",
+      "tree_edges": [
+        1,
+        2,
+        7,
+        11,
+        12,
+        19
+      ],
+      "eliminations": [
+        {
+          "generator": 26,
+          "defining_relator": [
+            -26
+          ]
+        },
+        {
+          "generator": 24,
+          "defining_relator": [
+            -24
+          ]
+        },
+        {
+          "generator": 21,
+          "defining_relator": [
+            -21
+          ]
+        },
+        {
+          "generator": 17,
+          "defining_relator": [
+            -25,
+            17
+          ]
+        },
+        {
+          "generator": 10,
+          "defining_relator": [
+            -25,
+            -10
+          ]
+        },
+        {
+          "generator": 15,
+          "defining_relator": [
+            -25,
+            15
+          ]
+        },
+        {
+          "generator": 22,
+          "defining_relator": [
+            -25,
+            22
+          ]
+        },
+        {
+          "generator": 9,
+          "defining_relator": [
+            -25,
+            9
+          ]
+        },
+        {
+          "generator": 18,
+          "defining_relator": [
+            -25,
+            -18
+          ]
+        },
+        {
+          "generator": 20,
+          "defining_relator": [
+            -25,
+            -20
+          ]
+        },
+        {
+          "generator": 13,
+          "defining_relator": [
+            -25,
+            13
+          ]
+        },
+        {
+          "generator": 6,
+          "defining_relator": [
+            -25,
+            -6
+          ]
+        },
+        {
+          "generator": 4,
+          "defining_relator": [
+            -25,
+            4
+          ]
+        },
+        {
+          "generator": 8,
+          "defining_relator": [
+            -25,
+            8
+          ]
+        },
+        {
+          "generator": 3,
+          "defining_relator": [
+            -25,
+            3
+          ]
+        },
+        {
+          "generator": 5,
+          "defining_relator": [
+            -25,
+            -5
+          ]
+        },
+        {
+          "generator": 14,
+          "defining_relator": [
+            -25,
+            14
+          ]
+        },
+        {
+          "generator": 16,
+          "defining_relator": [
+            -25,
+            16
+          ]
+        },
+        {
+          "generator": 23,
+          "defining_relator": [
+            -25,
+            23
+          ]
+        }
+      ],
+      "final_generators": [
+        25
+      ],
+      "final_relators": [
+        [
+          -25,
+          -25,
+          -25
+        ]
+      ]
+    },
+    {
+      "name": "13n_1044",
+      "module": "dual",
+      "tree_edges": [
+        1,
+        2,
+        7,
+        11,
+        12,
+        19
+      ],
+      "eliminations": [
+        {
+          "generator": 14,
+          "defining_relator": [
+            -14
+          ]
+        },
+        {
+          "generator": 15,
+          "defining_relator": [
+            -15
+          ]
+        },
+        {
+          "generator": 17,
+          "defining_relator": [
+            -17
+          ]
+        },
+        {
+          "generator": 26,
+          "defining_relator": [
+            -26
+          ]
+        },
+        {
+          "generator": 24,
+          "defining_relator": [
+            -24
+          ]
+        },
+        {
+          "generator": 22,
+          "defining_relator": [
+            -22
+          ]
+        },
+        {
+          "generator": 25,
+          "defining_relator": [
+            -25
+          ]
+        },
+        {
+          "generator": 23,
+          "defining_relator": [
+            -23
+          ]
+        },
+        {
+          "generator": 13,
+          "defining_relator": [
+            -13
+          ]
+        },
+        {
+          "generator": 20,
+          "defining_relator": [
+            -20
+          ]
+        },
+        {
+          "generator": 21,
+          "defining_relator": [
+            -21
+          ]
+        },
+        {
+          "generator": 18,
+          "defining_relator": [
+            -18
+          ]
+        },
+        {
+          "generator": 16,
+          "defining_relator": [
+            -16
+          ]
+        },
+        {
+          "generator": 10,
+          "defining_relator": [
+            -10
+          ]
+        },
+        {
+          "generator": 9,
+          "defining_relator": [
+            -9
+          ]
+        },
+        {
+          "generator": 6,
+          "defining_relator": [
+            -6
+          ]
+        },
+        {
+          "generator": 4,
+          "defining_relator": [
+            -4
+          ]
+        },
+        {
+          "generator": 5,
+          "defining_relator": [
+            -8,
+            5
+          ]
+        },
+        {
+          "generator": 3,
+          "defining_relator": [
+            -8,
+            -3
+          ]
+        }
+      ],
+      "final_generators": [
+        8
+      ],
+      "final_relators": [
+        [
+          -8,
+          -8,
+          -8
+        ]
+      ]
+    },
+    {
+      "name": "13n_1045",
+      "module": "natural",
+      "tree_edges": [
+        1,
+        2,
+        7,
+        11,
+        12,
+        13
+      ],
+      "eliminations": [
+        {
+          "generator": 25,
+          "defining_relator": [
+            -25
+          ]
+        },
+        {
+          "generator": 19,
+          "defining_relator": [
+            -19
+          ]
+        },
+        {
+          "generator": 18,
+          "defining_relator": [
+            -18
+          ]
+        },
+        {
+          "generator": 15,
+          "defining_relator": [
+            -15
+          ]
+        },
+        {
+          "generator": 14,
+          "defining_relator": [
+            -14
+          ]
+        },
+        {
+          "generator": 22,
+          "defining_relator": [
+            -22
+          ]
+        },
+        {
+          "generator": 23,
+          "defining_relator": [
+            -23
+          ]
+        },
+        {
+          "generator": 10,
+          "defining_relator": [
+            -10
+          ]
+        },
+        {
+          "generator": 9,
+          "defining_relator": [
+            -9
+          ]
+        },
+        {
+          "generator": 24,
+          "defining_relator": [
+            -24
+          ]
+        },
+        {
+          "generator": 21,
+          "defining_relator": [
+            -21
+          ]
+        },
+        {
+          "generator": 20,
+          "defining_relator": [
+            -20
+          ]
+        },
+        {
+          "generator": 26,
+          "defining_relator": [
+            -26
+          ]
+        },
+        {
+          "generator": 17,
+          "defining_relator": [
+            -17
+          ]
+        },
+        {
+          "generator": 16,
+          "defining_relator": [
+            -16
+          ]
+        },
+        {
+          "generator": 5,
+          "defining_relator": [
+            -5
+          ]
+        },
+        {
+          "generator": 3,
+          "defining_relator": [
+            -3
+          ]
+        },
+        {
+          "generator": 6,
+          "defining_relator": [
+            -8,
+            6
+          ]
+        },
+        {
+          "generator": 4,
+          "defining_relator": [
+            -8,
+            -4
+          ]
+        }
+      ],
+      "final_generators": [
+        8
+      ],
+      "final_relators": [
+        [
+          -8,
+          -8,
+          -8
+        ]
+      ]
+    },
+    {
+      "name": "13n_1045",
+      "module": "dual",
+      "tree_edges": [
+        1,
+        2,
+        7,
+        11,
+        12,
+        13
+      ],
+      "eliminations": [
+        {
+          "generator": 14,
+          "defining_relator": [
+            -14
+          ]
+        },
+        {
+          "generator": 20,
+          "defining_relator": [
+            -26,
+            20
+          ]
+        },
+        {
+          "generator": 18,
+          "defining_relator": [
+            -26,
+            18
+          ]
+        },
+        {
+          "generator": 5,
+          "defining_relator": [
+            -26,
+            -5
+          ]
+        },
+        {
+          "generator": 3,
+          "defining_relator": [
+            -26,
+            3
+          ]
+        },
+        {
+          "generator": 8,
+          "defining_relator": [
+            -26,
+            -8
+          ]
+        },
+        {
+          "generator": 4,
+          "defining_relator": [
+            -26,
+            -4
+          ]
+        },
+        {
+          "generator": 6,
+          "defining_relator": [
+            -26,
+            6
+          ]
+        },
+        {
+          "generator": 9,
+          "defining_relator": [
+            -26,
+            9
+          ]
+        },
+        {
+          "generator": 16,
+          "defining_relator": [
+            -26,
+            16
+          ]
+        },
+        {
+          "generator": 21,
+          "defining_relator": [
+            -26,
+            21
+          ]
+        },
+        {
+          "generator": 15,
+          "defining_relator": [
+            -26,
+            15
+          ]
+        },
+        {
+          "generator": 17,
+          "defining_relator": [
+            -26,
+            17
+          ]
+        },
+        {
+          "generator": 19,
+          "defining_relator": [
+            -26,
+            19
+          ]
+        },
+        {
+          "generator": 22,
+          "defining_relator": [
+            -26,
+            22
+          ]
+        },
+        {
+          "generator": 23,
+          "defining_relator": [
+            -26,
+            23
+          ]
+        },
+        {
+          "generator": 24,
+          "defining_relator": [
+            -26,
+            24
+          ]
+        },
+        {
+          "generator": 10,
+          "defining_relator": [
+            -26,
+            10
+          ]
+        },
+        {
+          "generator": 25,
+          "defining_relator": [
+            -26,
+            25
+          ]
+        }
+      ],
+      "final_generators": [
+        26
+      ],
+      "final_relators": [
+        [
+          -26,
+          -26,
+          -26
+        ]
+      ]
+    },
+    {
+      "name": "13n_1046",
+      "module": "natural",
+      "tree_edges": [
+        1,
+        2,
+        7,
+        11,
+        12,
+        15
+      ],
+      "eliminations": [
+        {
+          "generator": 17,
+          "defining_relator": [
+            -17
+          ]
+        },
+        {
+          "generator": 20,
+          "defining_relator": [
+            -20
+          ]
+        },
+        {
+          "generator": 22,
+          "defining_relator": [
+            -22
+          ]
+        },
+        {
+          "generator": 23,
+          "defining_relator": [
+            -23
+          ]
+        },
+        {
+          "generator": 25,
+          "defining_relator": [
+            -25
+          ]
+        },
+        {
+          "generator": 14,
+          "defining_relator": [
+            -14
+          ]
+        },
+        {
+          "generator": 26,
+          "defining_relator": [
+            -26
+          ]
+        },
+        {
+          "generator": 16,
+          "defining_relator": [
+            -16
+          ]
+        },
+        {
+          "generator": 18,
+          "defining_relator": [
+            -18
+          ]
+        },
+        {
+          "generator": 19,
+          "defining_relator": [
+            -19
+          ]
+        },
+        {
+          "generator": 24,
+          "defining_relator": [
+            -24
+          ]
+        },
+        {
+          "generator": 21,
+          "defining_relator": [
+            -21
+          ]
+        },
+        {
+          "generator": 13,
+          "defining_relator": [
+            -13
+          ]
+        },
+        {
+          "generator": 10,
+          "defining_relator": [
+            -10
+          ]
+        },
+        {
+          "generator": 9,
+          "defining_relator": [
+            -9
+          ]
+        },
+        {
+          "generator": 5,
+          "defining_relator": [
+            -5
+          ]
+        },
+        {
+          "generator": 3,
+          "defining_relator": [
+            -3
+          ]
+        },
+        {
+          "generator": 6,
+          "defining_relator": [
+            -8,
+            6
+          ]
+        },
+        {
+          "generator": 4,
+          "defining_relator": [
+            -8,
+            -4
+          ]
+        }
+      ],
+      "final_generators": [
+        8
+      ],
+      "final_relators": [
+        [
+          -8,
+          -8,
+          -8
+        ]
+      ]
+    },
+    {
+      "name": "13n_1046",
+      "module": "dual",
+      "tree_edges": [
+        1,
+        2,
+        7,
+        11,
+        12,
+        15
+      ],
+      "eliminations": [
+        {
+          "generator": 25,
+          "defining_relator": [
+            -25
+          ]
+        },
+        {
+          "generator": 17,
+          "defining_relator": [
+            -17
+          ]
+        },
+        {
+          "generator": 19,
+          "defining_relator": [
+            -19
+          ]
+        },
+        {
+          "generator": 21,
+          "defining_relator": [
+            -21
+          ]
+        },
+        {
+          "generator": 13,
+          "defining_relator": [
+            -13
+          ]
+        },
+        {
+          "generator": 26,
+          "defining_relator": [
+            -26
+          ]
+        },
+        {
+          "generator": 14,
+          "defining_relator": [
+            -14
+          ]
+        },
+        {
+          "generator": 10,
+          "defining_relator": [
+            -24,
+            10
+          ]
+        },
+        {
+          "generator": 18,
+          "defining_relator": [
+            -24,
+            18
+          ]
+        },
+        {
+          "generator": 20,
+          "defining_relator": [
+            -24,
+            20
+          ]
+        },
+        {
+          "generator": 22,
+          "defining_relator": [
+            -24,
+            22
+          ]
+        },
+        {
+          "generator": 16,
+          "defining_relator": [
+            -24,
+            16
+          ]
+        },
+        {
+          "generator": 6,
+          "defining_relator": [
+            -24,
+            6
+          ]
+        },
+        {
+          "generator": 4,
+          "defining_relator": [
+            -24,
+            -4
+          ]
+        },
+        {
+          "generator": 8,
+          "defining_relator": [
+            -24,
+            -8
+          ]
+        },
+        {
+          "generator": 3,
+          "defining_relator": [
+            -24,
+            3
+          ]
+        },
+        {
+          "generator": 5,
+          "defining_relator": [
+            -24,
+            -5
+          ]
+        },
+        {
+          "generator": 9,
+          "defining_relator": [
+            -24,
+            9
+          ]
+        },
+        {
+          "generator": 23,
+          "defining_relator": [
+            -24,
+            23
+          ]
+        }
+      ],
+      "final_generators": [
+        24
+      ],
+      "final_relators": [
+        [
+          -24,
+          -24,
+          -24
+        ]
+      ]
+    },
+    {
+      "name": "13n_1047",
+      "module": "natural",
+      "tree_edges": [
+        1,
+        2,
+        7,
+        11,
+        12,
+        19
+      ],
+      "eliminations": [
+        {
+          "generator": 25,
+          "defining_relator": [
+            -25
+          ]
+        },
+        {
+          "generator": 23,
+          "defining_relator": [
+            -23
+          ]
+        },
+        {
+          "generator": 24,
+          "defining_relator": [
+            -26,
+            -24
+          ]
+        },
+        {
+          "generator": 20,
+          "defining_relator": [
+            -26,
+            -20
+          ]
+        },
+        {
+          "generator": 18,
+          "defining_relator": [
+            -26,
+            -18
+          ]
+        },
+        {
+          "generator": 10,
+          "defining_relator": [
+            -26,
+            -10
+          ]
+        },
+        {
+          "generator": 22,
+          "defining_relator": [
+            -22
+          ]
+        },
+        {
+          "generator": 13,
+          "defining_relator": [
+            -26,
+            13
+          ]
+        },
+        {
+          "generator": 14,
+          "defining_relator": [
+            -26,
+            14
+          ]
+        },
+        {
+          "generator": 5,
+          "defining_relator": [
+            -26,
+            -5
+          ]
+        },
+        {
+          "generator": 3,
+          "defining_relator": [
+            -26,
+            3
+          ]
+        },
+        {
+          "generator": 8,
+          "defining_relator": [
+            -26,
+            8
+          ]
+        },
+        {
+          "generator": 4,
+          "defining_relator": [
+            -26,
+            4
+          ]
+        },
+        {
+          "generator": 6,
+          "defining_relator": [
+            -26,
+            -6
+          ]
+        },
+        {
+          "generator": 9,
+          "defining_relator": [
+            -26,
+            9
+          ]
+        },
+        {
+          "generator": 16,
+          "defining_relator": [
+            -26,
+            16
+          ]
+        },
+        {
+          "generator": 17,
+          "defining_relator": [
+            -26,
+            17
+          ]
+        },
+        {
+          "generator": 15,
+          "defining_relator": [
+            -26,
+            15
+          ]
+        },
+        {
+          "generator": 21,
+          "defining_relator": [
+            -26,
+            21
+          ]
+        }
+      ],
+      "final_generators": [
+        26
+      ],
+      "final_relators": [
+        [
+          -26,
+          -26,
+          -26
+        ]
+      ]
+    },
+    {
+      "name": "13n_1047",
+      "module": "dual",
+      "tree_edges": [
+        1,
+        2,
+        7,
+        11,
+        12,
+        19
+      ],
+      "eliminations": [
+        {
+          "generator": 25,
+          "defining_relator": [
+            -25
+          ]
+        },
+        {
+          "generator": 23,
+          "defining_relator": [
+            -23
+          ]
+        },
+        {
+          "generator": 18,
+          "defining_relator": [
+            -18
+          ]
+        },
+        {
+          "generator": 14,
+          "defining_relator": [
+            -14
+          ]
+        },
+        {
+          "generator": 15,
+          "defining_relator": [
+            -15
+          ]
+        },
+        {
+          "generator": 17,
+          "defining_relator": [
+            -17
+          ]
+        },
+        {
+          "generator": 20,
+          "defining_relator": [
+            -20
+          ]
+        },
+        {
+          "generator": 26,
+          "defining_relator": [
+            -26
+          ]
+        },
+        {
+          "generator": 24,
+          "defining_relator": [
+            -24
+          ]
+        },
+        {
+          "generator": 21,
+          "defining_relator": [
+            -21
+          ]
+        },
+        {
+          "generator": 13,
+          "defining_relator": [
+            -13
+          ]
+        },
+        {
+          "generator": 22,
+          "defining_relator": [
+            -22
+          ]
+        },
+        {
+          "generator": 16,
+          "defining_relator": [
+            -16
+          ]
+        },
+        {
+          "generator": 10,
+          "defining_relator": [
+            -10
+          ]
+        },
+        {
+          "generator": 9,
+          "defining_relator": [
+            -9
+          ]
+        },
+        {
+          "generator": 6,
+          "defining_relator": [
+            -6
+          ]
+        },
+        {
+          "generator": 4,
+          "defining_relator": [
+            -4
+          ]
+        },
+        {
+          "generator": 5,
+          "defining_relator": [
+            -8,
+            5
+          ]
+        },
+        {
+          "generator": 3,
+          "defining_relator": [
+            -8,
+            -3
+          ]
+        }
+      ],
+      "final_generators": [
+        8
+      ],
+      "final_relators": [
+        [
+          -8,
+          -8,
+          -8
+        ]
+      ]
+    },
+    {
+      "name": "13n_1048",
+      "module": "natural",
+      "tree_edges": [
+        1,
+        2,
+        7,
+        11,
+        12,
+        15
+      ],
+      "eliminations": [
+        {
+          "generator": 13,
+          "defining_relator": [
+            -13
+          ]
+        },
+        {
+          "generator": 21,
+          "defining_relator": [
+            -21
+          ]
+        },
+        {
+          "generator": 19,
+          "defining_relator": [
+            -19
+          ]
+        },
+        {
+          "generator": 18,
+          "defining_relator": [
+            -18
+          ]
+        },
+        {
+          "generator": 9,
+          "defining_relator": [
+            -9
+          ]
+        },
+        {
+          "generator": 24,
+          "defining_relator": [
+            -24
+          ]
+        },
+        {
+          "generator": 17,
+          "defining_relator": [
+            -17
+          ]
+        },
+        {
+          "generator": 20,
+          "defining_relator": [
+            -20
+          ]
+        },
+        {
+          "generator": 26,
+          "defining_relator": [
+            -26
+          ]
+        },
+        {
+          "generator": 22,
+          "defining_relator": [
+            -22
+          ]
+        },
+        {
+          "generator": 23,
+          "defining_relator": [
+            -23
+          ]
+        },
+        {
+          "generator": 25,
+          "defining_relator": [
+            -25
+          ]
+        },
+        {
+          "generator": 14,
+          "defining_relator": [
+            -14
+          ]
+        },
+        {
+          "generator": 16,
+          "defining_relator": [
+            -16
+          ]
+        },
+        {
+          "generator": 10,
+          "defining_relator": [
+            -10
+          ]
+        },
+        {
+          "generator": 5,
+          "defining_relator": [
+            -5
+          ]
+        },
+        {
+          "generator": 3,
+          "defining_relator": [
+            -3
+          ]
+        },
+        {
+          "generator": 6,
+          "defining_relator": [
+            -8,
+            6
+          ]
+        },
+        {
+          "generator": 4,
+          "defining_relator": [
+            -8,
+            -4
+          ]
+        }
+      ],
+      "final_generators": [
+        8
+      ],
+      "final_relators": [
+        [
+          -8,
+          -8,
+          -8
+        ]
+      ]
+    },
+    {
+      "name": "13n_1048",
+      "module": "dual",
+      "tree_edges": [
+        1,
+        2,
+        7,
+        11,
+        12,
+        15
+      ],
+      "eliminations": [
+        {
+          "generator": 25,
+          "defining_relator": [
+            -25
+          ]
+        },
+        {
+          "generator": 17,
+          "defining_relator": [
+            -17
+          ]
+        },
+        {
+          "generator": 19,
+          "defining_relator": [
+            -19
+          ]
+        },
+        {
+          "generator": 21,
+          "defining_relator": [
+            -21
+          ]
+        },
+        {
+          "generator": 13,
+          "defining_relator": [
+            -13
+          ]
+        },
+        {
+          "generator": 26,
+          "defining_relator": [
+            -26
+          ]
+        },
+        {
+          "generator": 14,
+          "defining_relator": [
+            -14
+          ]
+        },
+        {
+          "generator": 10,
+          "defining_relator": [
+            -24,
+            10
+          ]
+        },
+        {
+          "generator": 18,
+          "defining_relator": [
+            -24,
+            18
+          ]
+        },
+        {
+          "generator": 5,
+          "defining_relator": [
+            -24,
+            -5
+          ]
+        },
+        {
+          "generator": 3,
+          "defining_relator": [
+            -24,
+            3
+          ]
+        },
+        {
+          "generator": 8,
+          "defining_relator": [
+            -24,
+            -8
+          ]
+        },
+        {
+          "generator": 4,
+          "defining_relator": [
+            -24,
+            -4
+          ]
+        },
+        {
+          "generator": 6,
+          "defining_relator": [
+            -24,
+            6
+          ]
+        },
+        {
+          "generator": 9,
+          "defining_relator": [
+            -24,
+            9
+          ]
+        },
+        {
+          "generator": 16,
+          "defining_relator": [
+            -24,
+            16
+          ]
+        },
+        {
+          "generator": 20,
+          "defining_relator": [
+            -24,
+            20
+          ]
+        },
+        {
+          "generator": 22,
+          "defining_relator": [
+            -24,
+            22
+          ]
+        },
+        {
+          "generator": 23,
+          "defining_relator": [
+            -24,
+            23
+          ]
+        }
+      ],
+      "final_generators": [
+        24
+      ],
+      "final_relators": [
+        [
+          -24,
+          -24,
+          -24
+        ]
+      ]
+    },
+    {
+      "name": "13n_3842",
+      "module": "natural",
+      "tree_edges": [
+        1,
+        2,
+        5,
+        11,
+        12,
+        13
+      ],
+      "eliminations": [
+        {
+          "generator": 25,
+          "defining_relator": [
+            -25
+          ]
+        },
+        {
+          "generator": 19,
+          "defining_relator": [
+            -19
+          ]
+        },
+        {
+          "generator": 17,
+          "defining_relator": [
+            -17
+          ]
+        },
+        {
+          "generator": 24,
+          "defining_relator": [
+            -24
+          ]
+        },
+        {
+          "generator": 21,
+          "defining_relator": [
+            -21
+          ]
+        },
+        {
+          "generator": 26,
+          "defining_relator": [
+            -26
+          ]
+        },
+        {
+          "generator": 16,
+          "defining_relator": [
+            -16
+          ]
+        },
+        {
+          "generator": 15,
+          "defining_relator": [
+            -15
+          ]
+        },
+        {
+          "generator": 18,
+          "defining_relator": [
+            -18
+          ]
+        },
+        {
+          "generator": 23,
+          "defining_relator": [
+            -23
+          ]
+        },
+        {
+          "generator": 22,
+          "defining_relator": [
+            -22
+          ]
+        },
+        {
+          "generator": 20,
+          "defining_relator": [
+            -20
+          ]
+        },
+        {
+          "generator": 14,
+          "defining_relator": [
+            -14
+          ]
+        },
+        {
+          "generator": 10,
+          "defining_relator": [
+            -10
+          ]
+        },
+        {
+          "generator": 9,
+          "defining_relator": [
+            -9
+          ]
+        },
+        {
+          "generator": 7,
+          "defining_relator": [
+            -7
+          ]
+        },
+        {
+          "generator": 4,
+          "defining_relator": [
+            -4
+          ]
+        },
+        {
+          "generator": 6,
+          "defining_relator": [
+            -8,
+            -6
+          ]
+        },
+        {
+          "generator": 3,
+          "defining_relator": [
+            -8,
+            -3
+          ]
+        }
+      ],
+      "final_generators": [
+        8
+      ],
+      "final_relators": [
+        [
+          -8,
+          -8,
+          -8
+        ]
+      ]
+    },
+    {
+      "name": "13n_3842",
+      "module": "dual",
+      "tree_edges": [
+        1,
+        2,
+        5,
+        11,
+        12,
+        14
+      ],
+      "eliminations": [
+        {
+          "generator": 26,
+          "defining_relator": [
+            -26
+          ]
+        },
+        {
+          "generator": 13,
+          "defining_relator": [
+            -13
+          ]
+        },
+        {
+          "generator": 25,
+          "defining_relator": [
+            -25
+          ]
+        },
+        {
+          "generator": 8,
+          "defining_relator": [
+            -8
+          ]
+        },
+        {
+          "generator": 17,
+          "defining_relator": [
+            -24,
+            -17
+          ]
+        },
+        {
+          "generator": 19,
+          "defining_relator": [
+            -24,
+            -19
+          ]
+        },
+        {
+          "generator": 15,
+          "defining_relator": [
+            -24,
+            -15
+          ]
+        },
+        {
+          "generator": 9,
+          "defining_relator": [
+            -24,
+            9
+          ]
+        },
+        {
+          "generator": 20,
+          "defining_relator": [
+            -24,
+            20
+          ]
+        },
+        {
+          "generator": 18,
+          "defining_relator": [
+            -24,
+            18
+          ]
+        },
+        {
+          "generator": 4,
+          "defining_relator": [
+            -24,
+            -4
+          ]
+        },
+        {
+          "generator": 7,
+          "defining_relator": [
+            -24,
+            -7
+          ]
+        },
+        {
+          "generator": 3,
+          "defining_relator": [
+            -24,
+            -3
+          ]
+        },
+        {
+          "generator": 10,
+          "defining_relator": [
+            -24,
+            -10
+          ]
+        },
+        {
+          "generator": 6,
+          "defining_relator": [
+            -24,
+            6
+          ]
+        },
+        {
+          "generator": 21,
+          "defining_relator": [
+            -24,
+            21
+          ]
+        },
+        {
+          "generator": 16,
+          "defining_relator": [
+            -24,
+            16
+          ]
+        },
+        {
+          "generator": 22,
+          "defining_relator": [
+            -24,
+            22
+          ]
+        },
+        {
+          "generator": 23,
+          "defining_relator": [
+            -24,
+            23
+          ]
+        }
+      ],
+      "final_generators": [
+        24
+      ],
+      "final_relators": [
+        [
+          -24,
+          -24,
+          -24
+        ]
+      ]
+    },
+    {
+      "name": "13n_3844",
+      "module": "natural",
+      "tree_edges": [
+        1,
+        2,
+        5,
+        11,
+        13,
+        16
+      ],
+      "eliminations": [
+        {
+          "generator": 25,
+          "defining_relator": [
+            -25
+          ]
+        },
+        {
+          "generator": 23,
+          "defining_relator": [
+            -23
+          ]
+        },
+        {
+          "generator": 22,
+          "defining_relator": [
+            -22
+          ]
+        },
+        {
+          "generator": 21,
+          "defining_relator": [
+            -21
+          ]
+        },
+        {
+          "generator": 20,
+          "defining_relator": [
+            -20
+          ]
+        },
+        {
+          "generator": 19,
+          "defining_relator": [
+            -19
+          ]
+        },
+        {
+          "generator": 17,
+          "defining_relator": [
+            -17
+          ]
+        },
+        {
+          "generator": 8,
+          "defining_relator": [
+            -8
+          ]
+        },
+        {
+          "generator": 14,
+          "defining_relator": [
+            -26,
+            14
+          ]
+        },
+        {
+          "generator": 12,
+          "defining_relator": [
+            -26,
+            12
+          ]
+        },
+        {
+          "generator": 10,
+          "defining_relator": [
+            -26,
+            10
+          ]
+        },
+        {
+          "generator": 15,
+          "defining_relator": [
+            -26,
+            15
+          ]
+        },
+        {
+          "generator": 18,
+          "defining_relator": [
+            -26,
+            18
+          ]
+        },
+        {
+          "generator": 3,
+          "defining_relator": [
+            -26,
+            -3
+          ]
+        },
+        {
+          "generator": 7,
+          "defining_relator": [
+            -26,
+            -7
+          ]
+        },
+        {
+          "generator": 6,
+          "defining_relator": [
+            -26,
+            -6
+          ]
+        },
+        {
+          "generator": 4,
+          "defining_relator": [
+            -26,
+            -4
+          ]
+        },
+        {
+          "generator": 24,
+          "defining_relator": [
+            -26,
+            24
+          ]
+        },
+        {
+          "generator": 9,
+          "defining_relator": [
+            -26,
+            9
+          ]
+        }
+      ],
+      "final_generators": [
+        26
+      ],
+      "final_relators": [
+        [
+          -26,
+          -26,
+          -26
+        ]
+      ]
+    },
+    {
+      "name": "13n_3844",
+      "module": "dual",
+      "tree_edges": [
+        1,
+        2,
+        6,
+        11,
+        13,
+        15
+      ],
+      "eliminations": [
+        {
+          "generator": 25,
+          "defining_relator": [
+            -25
+          ]
+        },
+        {
+          "generator": 23,
+          "defining_relator": [
+            -23
+          ]
+        },
+        {
+          "generator": 21,
+          "defining_relator": [
+            -21
+          ]
+        },
+        {
+          "generator": 19,
+          "defining_relator": [
+            -19
+          ]
+        },
+        {
+          "generator": 20,
+          "defining_relator": [
+            -20
+          ]
+        },
+        {
+          "generator": 22,
+          "defining_relator": [
+            -22
+          ]
+        },
+        {
+          "generator": 18,
+          "defining_relator": [
+            -18
+          ]
+        },
+        {
+          "generator": 26,
+          "defining_relator": [
+            -26
+          ]
+        },
+        {
+          "generator": 17,
+          "defining_relator": [
+            -17
+          ]
+        },
+        {
+          "generator": 24,
+          "defining_relator": [
+            -24
+          ]
+        },
+        {
+          "generator": 16,
+          "defining_relator": [
+            -16
+          ]
+        },
+        {
+          "generator": 14,
+          "defining_relator": [
+            -14
+          ]
+        },
+        {
+          "generator": 12,
+          "defining_relator": [
+            -12
+          ]
+        },
+        {
+          "generator": 10,
+          "defining_relator": [
+            -10
+          ]
+        },
+        {
+          "generator": 9,
+          "defining_relator": [
+            -9
+          ]
+        },
+        {
+          "generator": 8,
+          "defining_relator": [
+            -8
+          ]
+        },
+        {
+          "generator": 4,
+          "defining_relator": [
+            -4
+          ]
+        },
+        {
+          "generator": 5,
+          "defining_relator": [
+            -7,
+            -5
+          ]
+        },
+        {
+          "generator": 3,
+          "defining_relator": [
+            -7,
+            -3
+          ]
+        }
+      ],
+      "final_generators": [
+        7
+      ],
+      "final_relators": [
+        [
+          -7,
+          -7,
+          -7
+        ]
+      ]
+    },
+    {
+      "name": "13n_3855",
+      "module": "natural",
+      "tree_edges": [
+        1,
+        2,
+        5,
+        11,
+        12,
+        13
+      ],
+      "eliminations": [
+        {
+          "generator": 25,
+          "defining_relator": [
+            -25
+          ]
+        },
+        {
+          "generator": 20,
+          "defining_relator": [
+            -20
+          ]
+        },
+        {
+          "generator": 17,
+          "defining_relator": [
+            -17
+          ]
+        },
+        {
+          "generator": 16,
+          "defining_relator": [
+            -16
+          ]
+        },
+        {
+          "generator": 15,
+          "defining_relator": [
+            -15
+          ]
+        },
+        {
+          "generator": 18,
+          "defining_relator": [
+            -18
+          ]
+        },
+        {
+          "generator": 23,
+          "defining_relator": [
+            -23
+          ]
+        },
+        {
+          "generator": 22,
+          "defining_relator": [
+            -22
+          ]
+        },
+        {
+          "generator": 19,
+          "defining_relator": [
+            -19
+          ]
+        },
+        {
+          "generator": 26,
+          "defining_relator": [
+            -26
+          ]
+        },
+        {
+          "generator": 24,
+          "defining_relator": [
+            -24
+          ]
+        },
+        {
+          "generator": 21,
+          "defining_relator": [
+            -21
+          ]
+        },
+        {
+          "generator": 14,
+          "defining_relator": [
+            -14
+          ]
+        },
+        {
+          "generator": 10,
+          "defining_relator": [
+            -10
+          ]
+        },
+        {
+          "generator": 9,
+          "defining_relator": [
+            -9
+          ]
+        },
+        {
+          "generator": 7,
+          "defining_relator": [
+            -7
+          ]
+        },
+        {
+          "generator": 4,
+          "defining_relator": [
+            -4
+          ]
+        },
+        {
+          "generator": 6,
+          "defining_relator": [
+            -8,
+            -6
+          ]
+        },
+        {
+          "generator": 3,
+          "defining_relator": [
+            -8,
+            -3
+          ]
+        }
+      ],
+      "final_generators": [
+        8
+      ],
+      "final_relators": [
+        [
+          -8,
+          -8,
+          -8
+        ]
+      ]
+    },
+    {
+      "name": "13n_3855",
+      "module": "dual",
+      "tree_edges": [
+        1,
+        2,
+        5,
+        11,
+        12,
+        13
+      ],
+      "eliminations": [
+        {
+          "generator": 14,
+          "defining_relator": [
+            -14
+          ]
+        },
+        {
+          "generator": 8,
+          "defining_relator": [
+            -8
+          ]
+        },
+        {
+          "generator": 25,
+          "defining_relator": [
+            -26,
+            -25
+          ]
+        },
+        {
+          "generator": 23,
+          "defining_relator": [
+            -26,
+            -23
+          ]
+        },
+        {
+          "generator": 21,
+          "defining_relator": [
+            -26,
+            -21
+          ]
+        },
+        {
+          "generator": 19,
+          "defining_relator": [
+            -26,
+            -19
+          ]
+        },
+        {
+          "generator": 18,
+          "defining_relator": [
+            -26,
+            -18
+          ]
+        },
+        {
+          "generator": 3,
+          "defining_relator": [
+            -26,
+            3
+          ]
+        },
+        {
+          "generator": 7,
+          "defining_relator": [
+            -26,
+            7
+          ]
+        },
+        {
+          "generator": 6,
+          "defining_relator": [
+            -26,
+            -6
+          ]
+        },
+        {
+          "generator": 4,
+          "defining_relator": [
+            -26,
+            4
+          ]
+        },
+        {
+          "generator": 10,
+          "defining_relator": [
+            -26,
+            10
+          ]
+        },
+        {
+          "generator": 20,
+          "defining_relator": [
+            -26,
+            20
+          ]
+        },
+        {
+          "generator": 22,
+          "defining_relator": [
+            -26,
+            -22
+          ]
+        },
+        {
+          "generator": 24,
+          "defining_relator": [
+            -26,
+            -24
+          ]
+        },
+        {
+          "generator": 16,
+          "defining_relator": [
+            -26,
+            -16
+          ]
+        },
+        {
+          "generator": 9,
+          "defining_relator": [
+            -26,
+            -9
+          ]
+        },
+        {
+          "generator": 15,
+          "defining_relator": [
+            -26,
+            15
+          ]
+        },
+        {
+          "generator": 17,
+          "defining_relator": [
+            -26,
+            17
+          ]
+        }
+      ],
+      "final_generators": [
+        26
+      ],
+      "final_relators": [
+        [
+          -26,
+          -26,
+          -26
+        ]
+      ]
+    },
+    {
+      "name": "13n_3856",
+      "module": "natural",
+      "tree_edges": [
+        1,
+        2,
+        5,
+        11,
+        12,
+        15
+      ],
+      "eliminations": [
+        {
+          "generator": 18,
+          "defining_relator": [
+            -18
+          ]
+        },
+        {
+          "generator": 19,
+          "defining_relator": [
+            -19
+          ]
+        },
+        {
+          "generator": 22,
+          "defining_relator": [
+            -22
+          ]
+        },
+        {
+          "generator": 24,
+          "defining_relator": [
+            -24
+          ]
+        },
+        {
+          "generator": 26,
+          "defining_relator": [
+            -26
+          ]
+        },
+        {
+          "generator": 14,
+          "defining_relator": [
+            -14
+          ]
+        },
+        {
+          "generator": 25,
+          "defining_relator": [
+            -25
+          ]
+        },
+        {
+          "generator": 16,
+          "defining_relator": [
+            -16
+          ]
+        },
+        {
+          "generator": 17,
+          "defining_relator": [
+            -17
+          ]
+        },
+        {
+          "generator": 20,
+          "defining_relator": [
+            -20
+          ]
+        },
+        {
+          "generator": 23,
+          "defining_relator": [
+            -23
+          ]
+        },
+        {
+          "generator": 21,
+          "defining_relator": [
+            -21
+          ]
+        },
+        {
+          "generator": 13,
+          "defining_relator": [
+            -13
+          ]
+        },
+        {
+          "generator": 10,
+          "defining_relator": [
+            -10
+          ]
+        },
+        {
+          "generator": 9,
+          "defining_relator": [
+            -9
+          ]
+        },
+        {
+          "generator": 7,
+          "defining_relator": [
+            -7
+          ]
+        },
+        {
+          "generator": 4,
+          "defining_relator": [
+            -4
+          ]
+        },
+        {
+          "generator": 6,
+          "defining_relator": [
+            -8,
+            -6
+          ]
+        },
+        {
+          "generator": 3,
+          "defining_relator": [
+            -8,
+            -3
+          ]
+        }
+      ],
+      "final_generators": [
+        8
+      ],
+      "final_relators": [
+        [
+          -8,
+          -8,
+          -8
+        ]
+      ]
+    },
+    {
+      "name": "13n_3856",
+      "module": "dual",
+      "tree_edges": [
+        1,
+        2,
+        5,
+        11,
+        12,
+        15
+      ],
+      "eliminations": [
+        {
+          "generator": 26,
+          "defining_relator": [
+            -26
+          ]
+        },
+        {
+          "generator": 17,
+          "defining_relator": [
+            -17
+          ]
+        },
+        {
+          "generator": 20,
+          "defining_relator": [
+            -20
+          ]
+        },
+        {
+          "generator": 22,
+          "defining_relator": [
+            -22
+          ]
+        },
+        {
+          "generator": 14,
+          "defining_relator": [
+            -14
+          ]
+        },
+        {
+          "generator": 25,
+          "defining_relator": [
+            -25
+          ]
+        },
+        {
+          "generator": 13,
+          "defining_relator": [
+            -13
+          ]
+        },
+        {
+          "generator": 8,
+          "defining_relator": [
+            -8
+          ]
+        },
+        {
+          "generator": 9,
+          "defining_relator": [
+            -24,
+            9
+          ]
+        },
+        {
+          "generator": 18,
+          "defining_relator": [
+            -24,
+            18
+          ]
+        },
+        {
+          "generator": 3,
+          "defining_relator": [
+            -24,
+            -3
+          ]
+        },
+        {
+          "generator": 7,
+          "defining_relator": [
+            -24,
+            -7
+          ]
+        },
+        {
+          "generator": 4,
+          "defining_relator": [
+            -24,
+            -4
+          ]
+        },
+        {
+          "generator": 10,
+          "defining_relator": [
+            -24,
+            -10
+          ]
+        },
+        {
+          "generator": 6,
+          "defining_relator": [
+            -24,
+            6
+          ]
+        },
+        {
+          "generator": 19,
+          "defining_relator": [
+            -24,
+            19
+          ]
+        },
+        {
+          "generator": 21,
+          "defining_relator": [
+            -24,
+            21
+          ]
+        },
+        {
+          "generator": 16,
+          "defining_relator": [
+            -24,
+            16
+          ]
+        },
+        {
+          "generator": 23,
+          "defining_relator": [
+            -24,
+            23
+          ]
+        }
+      ],
+      "final_generators": [
+        24
+      ],
+      "final_relators": [
+        [
+          -24,
+          -24,
+          -24
+        ]
+      ]
+    },
+    {
+      "name": "13n_4633",
+      "module": "natural",
+      "tree_edges": [
+        1,
+        2,
+        3,
+        9,
+        14,
+        15
+      ],
+      "eliminations": [
+        {
+          "generator": 25,
+          "defining_relator": [
+            -25
+          ]
+        },
+        {
+          "generator": 17,
+          "defining_relator": [
+            -17
+          ]
+        },
+        {
+          "generator": 12,
+          "defining_relator": [
+            -12
+          ]
+        },
+        {
+          "generator": 23,
+          "defining_relator": [
+            -23
+          ]
+        },
+        {
+          "generator": 26,
+          "defining_relator": [
+            -26
+          ]
+        },
+        {
+          "generator": 10,
+          "defining_relator": [
+            -10
+          ]
+        },
+        {
+          "generator": 8,
+          "defining_relator": [
+            -8
+          ]
+        },
+        {
+          "generator": 5,
+          "defining_relator": [
+            -5
+          ]
+        },
+        {
+          "generator": 24,
+          "defining_relator": [
+            -24
+          ]
+        },
+        {
+          "generator": 6,
+          "defining_relator": [
+            -6
+          ]
+        },
+        {
+          "generator": 7,
+          "defining_relator": [
+            -7
+          ]
+        },
+        {
+          "generator": 16,
+          "defining_relator": [
+            -16
+          ]
+        },
+        {
+          "generator": 22,
+          "defining_relator": [
+            -22
+          ]
+        },
+        {
+          "generator": 20,
+          "defining_relator": [
+            -20
+          ]
+        },
+        {
+          "generator": 19,
+          "defining_relator": [
+            -19
+          ]
+        },
+        {
+          "generator": 21,
+          "defining_relator": [
+            -21
+          ]
+        },
+        {
+          "generator": 18,
+          "defining_relator": [
+            -18
+          ]
+        },
+        {
+          "generator": 13,
+          "defining_relator": [
+            -13
+          ]
+        },
+        {
+          "generator": 11,
+          "defining_relator": [
+            -11
+          ]
+        },
+        {
+          "generator": 4,
+          "defining_relator": [
+            -4
+          ]
+        }
+      ],
+      "final_generators": [],
+      "final_relators": []
+    },
+    {
+      "name": "13n_4633",
+      "module": "dual",
+      "tree_edges": [
+        1,
+        2,
+        3,
+        9,
+        13,
+        15
+      ],
+      "eliminations": [
+        {
+          "generator": 17,
+          "defining_relator": [
+            -17
+          ]
+        },
+        {
+          "generator": 12,
+          "defining_relator": [
+            -12
+          ]
+        },
+        {
+          "generator": 10,
+          "defining_relator": [
+            -10
+          ]
+        },
+        {
+          "generator": 11,
+          "defining_relator": [
+            -11
+          ]
+        },
+        {
+          "generator": 24,
+          "defining_relator": [
+            -24
+          ]
+        },
+        {
+          "generator": 22,
+          "defining_relator": [
+            -22
+          ]
+        },
+        {
+          "generator": 20,
+          "defining_relator": [
+            -20
+          ]
+        },
+        {
+          "generator": 26,
+          "defining_relator": [
+            -26
+          ]
+        },
+        {
+          "generator": 25,
+          "defining_relator": [
+            -25
+          ]
+        },
+        {
+          "generator": 16,
+          "defining_relator": [
+            -16
+          ]
+        },
+        {
+          "generator": 18,
+          "defining_relator": [
+            -18
+          ]
+        },
+        {
+          "generator": 14,
+          "defining_relator": [
+            -14
+          ]
+        },
+        {
+          "generator": 23,
+          "defining_relator": [
+            -23
+          ]
+        },
+        {
+          "generator": 21,
+          "defining_relator": [
+            -21
+          ]
+        },
+        {
+          "generator": 19,
+          "defining_relator": [
+            -19
+          ]
+        },
+        {
+          "generator": 8,
+          "defining_relator": [
+            -8
+          ]
+        },
+        {
+          "generator": 7,
+          "defining_relator": [
+            -7
+          ]
+        },
+        {
+          "generator": 6,
+          "defining_relator": [
+            -6
+          ]
+        },
+        {
+          "generator": 5,
+          "defining_relator": [
+            -5
+          ]
+        },
+        {
+          "generator": 4,
+          "defining_relator": [
+            -4
+          ]
+        }
+      ],
+      "final_generators": [],
+      "final_relators": []
+    },
+    {
+      "name": "13n_4634",
+      "module": "natural",
+      "tree_edges": [
+        1,
+        2,
+        3,
+        9,
+        14,
+        15
+      ],
+      "eliminations": [
+        {
+          "generator": 25,
+          "defining_relator": [
+            -25
+          ]
+        },
+        {
+          "generator": 17,
+          "defining_relator": [
+            -17
+          ]
+        },
+        {
+          "generator": 12,
+          "defining_relator": [
+            -12
+          ]
+        },
+        {
+          "generator": 23,
+          "defining_relator": [
+            -23
+          ]
+        },
+        {
+          "generator": 26,
+          "defining_relator": [
+            -26
+          ]
+        },
+        {
+          "generator": 10,
+          "defining_relator": [
+            -10
+          ]
+        },
+        {
+          "generator": 8,
+          "defining_relator": [
+            -8
+          ]
+        },
+        {
+          "generator": 5,
+          "defining_relator": [
+            -5
+          ]
+        },
+        {
+          "generator": 24,
+          "defining_relator": [
+            -24
+          ]
+        },
+        {
+          "generator": 6,
+          "defining_relator": [
+            -6
+          ]
+        },
+        {
+          "generator": 7,
+          "defining_relator": [
+            -7
+          ]
+        },
+        {
+          "generator": 16,
+          "defining_relator": [
+            -16
+          ]
+        },
+        {
+          "generator": 22,
+          "defining_relator": [
+            -22
+          ]
+        },
+        {
+          "generator": 21,
+          "defining_relator": [
+            -21
+          ]
+        },
+        {
+          "generator": 20,
+          "defining_relator": [
+            -20
+          ]
+        },
+        {
+          "generator": 19,
+          "defining_relator": [
+            -19
+          ]
+        },
+        {
+          "generator": 18,
+          "defining_relator": [
+            -18
+          ]
+        },
+        {
+          "generator": 13,
+          "defining_relator": [
+            -13
+          ]
+        },
+        {
+          "generator": 11,
+          "defining_relator": [
+            -11
+          ]
+        },
+        {
+          "generator": 4,
+          "defining_relator": [
+            -4
+          ]
+        }
+      ],
+      "final_generators": [],
+      "final_relators": []
+    },
+    {
+      "name": "13n_4634",
+      "module": "dual",
+      "tree_edges": [
+        1,
+        2,
+        3,
+        9,
+        13,
+        15
+      ],
+      "eliminations": [
+        {
+          "generator": 17,
+          "defining_relator": [
+            -17
+          ]
+        },
+        {
+          "generator": 12,
+          "defining_relator": [
+            -12
+          ]
+        },
+        {
+          "generator": 10,
+          "defining_relator": [
+            -10
+          ]
+        },
+        {
+          "generator": 11,
+          "defining_relator": [
+            -11
+          ]
+        },
+        {
+          "generator": 24,
+          "defining_relator": [
+            -24
+          ]
+        },
+        {
+          "generator": 22,
+          "defining_relator": [
+            -22
+          ]
+        },
+        {
+          "generator": 26,
+          "defining_relator": [
+            -26
+          ]
+        },
+        {
+          "generator": 25,
+          "defining_relator": [
+            -25
+          ]
+        },
+        {
+          "generator": 20,
+          "defining_relator": [
+            -20
+          ]
+        },
+        {
+          "generator": 16,
+          "defining_relator": [
+            -16
+          ]
+        },
+        {
+          "generator": 18,
+          "defining_relator": [
+            -18
+          ]
+        },
+        {
+          "generator": 14,
+          "defining_relator": [
+            -14
+          ]
+        },
+        {
+          "generator": 23,
+          "defining_relator": [
+            -23
+          ]
+        },
+        {
+          "generator": 21,
+          "defining_relator": [
+            -21
+          ]
+        },
+        {
+          "generator": 19,
+          "defining_relator": [
+            -19
+          ]
+        },
+        {
+          "generator": 8,
+          "defining_relator": [
+            -8
+          ]
+        },
+        {
+          "generator": 7,
+          "defining_relator": [
+            -7
+          ]
+        },
+        {
+          "generator": 6,
+          "defining_relator": [
+            -6
+          ]
+        },
+        {
+          "generator": 5,
+          "defining_relator": [
+            -5
+          ]
+        },
+        {
+          "generator": 4,
+          "defining_relator": [
+            -4
+          ]
+        }
+      ],
+      "final_generators": [],
+      "final_relators": []
+    },
+    {
+      "name": "13n_4637",
+      "module": "natural",
+      "tree_edges": [
+        1,
+        2,
+        5,
+        9,
+        10,
+        17
+      ],
+      "eliminations": [
+        {
+          "generator": 11,
+          "defining_relator": [
+            -11
+          ]
+        },
+        {
+          "generator": 14,
+          "defining_relator": [
+            -14
+          ]
+        },
+        {
+          "generator": 20,
+          "defining_relator": [
+            -20
+          ]
+        },
+        {
+          "generator": 26,
+          "defining_relator": [
+            -26
+          ]
+        },
+        {
+          "generator": 25,
+          "defining_relator": [
+            -25
+          ]
+        },
+        {
+          "generator": 22,
+          "defining_relator": [
+            -22
+          ]
+        },
+        {
+          "generator": 24,
+          "defining_relator": [
+            -24
+          ]
+        },
+        {
+          "generator": 16,
+          "defining_relator": [
+            -16
+          ]
+        },
+        {
+          "generator": 23,
+          "defining_relator": [
+            -23
+          ]
+        },
+        {
+          "generator": 21,
+          "defining_relator": [
+            -21
+          ]
+        },
+        {
+          "generator": 19,
+          "defining_relator": [
+            -19
+          ]
+        },
+        {
+          "generator": 7,
+          "defining_relator": [
+            -7
+          ]
+        },
+        {
+          "generator": 6,
+          "defining_relator": [
+            -6
+          ]
+        },
+        {
+          "generator": 8,
+          "defining_relator": [
+            -8
+          ]
+        },
+        {
+          "generator": 15,
+          "defining_relator": [
+            -15
+          ]
+        },
+        {
+          "generator": 18,
+          "defining_relator": [
+            -18
+          ]
+        },
+        {
+          "generator": 13,
+          "defining_relator": [
+            -13
+          ]
+        },
+        {
+          "generator": 12,
+          "defining_relator": [
+            -12
+          ]
+        },
+        {
+          "generator": 4,
+          "defining_relator": [
+            -4
+          ]
+        },
+        {
+          "generator": 3,
+          "defining_relator": [
+            -3
+          ]
+        }
+      ],
+      "final_generators": [],
+      "final_relators": []
+    },
+    {
+      "name": "13n_4637",
+      "module": "dual",
+      "tree_edges": [
+        1,
+        2,
+        5,
+        9,
+        10,
+        17
+      ],
+      "eliminations": [
+        {
+          "generator": 26,
+          "defining_relator": [
+            -26
+          ]
+        },
+        {
+          "generator": 8,
+          "defining_relator": [
+            -8
+          ]
+        },
+        {
+          "generator": 15,
+          "defining_relator": [
+            -15
+          ]
+        },
+        {
+          "generator": 4,
+          "defining_relator": [
+            -4
+          ]
+        },
+        {
+          "generator": 12,
+          "defining_relator": [
+            -12
+          ]
+        },
+        {
+          "generator": 18,
+          "defining_relator": [
+            -18
+          ]
+        },
+        {
+          "generator": 24,
+          "defining_relator": [
+            -24
+          ]
+        },
+        {
+          "generator": 22,
+          "defining_relator": [
+            -22
+          ]
+        },
+        {
+          "generator": 20,
+          "defining_relator": [
+            -20
+          ]
+        },
+        {
+          "generator": 13,
+          "defining_relator": [
+            -13
+          ]
+        },
+        {
+          "generator": 11,
+          "defining_relator": [
+            -11
+          ]
+        },
+        {
+          "generator": 6,
+          "defining_relator": [
+            -6
+          ]
+        },
+        {
+          "generator": 14,
+          "defining_relator": [
+            -14
+          ]
+        },
+        {
+          "generator": 19,
+          "defining_relator": [
+            -19
+          ]
+        },
+        {
+          "generator": 25,
+          "defining_relator": [
+            -25
+          ]
+        },
+        {
+          "generator": 23,
+          "defining_relator": [
+            -23
+          ]
+        },
+        {
+          "generator": 21,
+          "defining_relator": [
+            -21
+          ]
+        },
+        {
+          "generator": 16,
+          "defining_relator": [
+            -16
+          ]
+        },
+        {
+          "generator": 7,
+          "defining_relator": [
+            -7
+          ]
+        },
+        {
+          "generator": 3,
+          "defining_relator": [
+            -3
+          ]
+        }
+      ],
+      "final_generators": [],
+      "final_relators": []
+    },
+    {
+      "name": "13n_4638",
+      "module": "natural",
+      "tree_edges": [
+        1,
+        2,
+        5,
+        9,
+        10,
+        17
+      ],
+      "eliminations": [
+        {
+          "generator": 11,
+          "defining_relator": [
+            -11
+          ]
+        },
+        {
+          "generator": 14,
+          "defining_relator": [
+            -14
+          ]
+        },
+        {
+          "generator": 20,
+          "defining_relator": [
+            -20
+          ]
+        },
+        {
+          "generator": 16,
+          "defining_relator": [
+            -16
+          ]
+        },
+        {
+          "generator": 23,
+          "defining_relator": [
+            -23
+          ]
+        },
+        {
+          "generator": 21,
+          "defining_relator": [
+            -21
+          ]
+        },
+        {
+          "generator": 19,
+          "defining_relator": [
+            -19
+          ]
+        },
+        {
+          "generator": 7,
+          "defining_relator": [
+            -7
+          ]
+        },
+        {
+          "generator": 22,
+          "defining_relator": [
+            -26,
+            -22
+          ]
+        },
+        {
+          "generator": 25,
+          "defining_relator": [
+            -25
+          ]
+        },
+        {
+          "generator": 26,
+          "defining_relator": [
+            -26
+          ]
+        },
+        {
+          "generator": 24,
+          "defining_relator": [
+            -24
+          ]
+        },
+        {
+          "generator": 6,
+          "defining_relator": [
+            -6
+          ]
+        },
+        {
+          "generator": 8,
+          "defining_relator": [
+            -8
+          ]
+        },
+        {
+          "generator": 15,
+          "defining_relator": [
+            -15
+          ]
+        },
+        {
+          "generator": 18,
+          "defining_relator": [
+            -18
+          ]
+        },
+        {
+          "generator": 13,
+          "defining_relator": [
+            -13
+          ]
+        },
+        {
+          "generator": 12,
+          "defining_relator": [
+            -12
+          ]
+        },
+        {
+          "generator": 4,
+          "defining_relator": [
+            -4
+          ]
+        },
+        {
+          "generator": 3,
+          "defining_relator": [
+            -3
+          ]
+        }
+      ],
+      "final_generators": [],
+      "final_relators": []
+    },
+    {
+      "name": "13n_4638",
+      "module": "dual",
+      "tree_edges": [
+        1,
+        2,
+        5,
+        9,
+        10,
+        17
+      ],
+      "eliminations": [
+        {
+          "generator": 26,
+          "defining_relator": [
+            -26
+          ]
+        },
+        {
+          "generator": 8,
+          "defining_relator": [
+            -8
+          ]
+        },
+        {
+          "generator": 15,
+          "defining_relator": [
+            -15
+          ]
+        },
+        {
+          "generator": 4,
+          "defining_relator": [
+            -4
+          ]
+        },
+        {
+          "generator": 12,
+          "defining_relator": [
+            -12
+          ]
+        },
+        {
+          "generator": 18,
+          "defining_relator": [
+            -18
+          ]
+        },
+        {
+          "generator": 24,
+          "defining_relator": [
+            -24
+          ]
+        },
+        {
+          "generator": 22,
+          "defining_relator": [
+            -22
+          ]
+        },
+        {
+          "generator": 13,
+          "defining_relator": [
+            -13
+          ]
+        },
+        {
+          "generator": 20,
+          "defining_relator": [
+            -20
+          ]
+        },
+        {
+          "generator": 11,
+          "defining_relator": [
+            -11
+          ]
+        },
+        {
+          "generator": 6,
+          "defining_relator": [
+            -6
+          ]
+        },
+        {
+          "generator": 14,
+          "defining_relator": [
+            -14
+          ]
+        },
+        {
+          "generator": 19,
+          "defining_relator": [
+            -19
+          ]
+        },
+        {
+          "generator": 25,
+          "defining_relator": [
+            -25
+          ]
+        },
+        {
+          "generator": 23,
+          "defining_relator": [
+            -23
+          ]
+        },
+        {
+          "generator": 21,
+          "defining_relator": [
+            -21
+          ]
+        },
+        {
+          "generator": 16,
+          "defining_relator": [
+            -16
+          ]
+        },
+        {
+          "generator": 7,
+          "defining_relator": [
+            -7
+          ]
+        },
+        {
+          "generator": 3,
+          "defining_relator": [
+            -3
+          ]
+        }
+      ],
+      "final_generators": [],
+      "final_relators": []
+    },
+    {
+      "name": "13n_4643",
+      "module": "natural",
+      "tree_edges": [
+        1,
+        2,
+        5,
+        9,
+        10,
+        17
+      ],
+      "eliminations": [
+        {
+          "generator": 11,
+          "defining_relator": [
+            -11
+          ]
+        },
+        {
+          "generator": 7,
+          "defining_relator": [
+            -7
+          ]
+        },
+        {
+          "generator": 16,
+          "defining_relator": [
+            -16
+          ]
+        },
+        {
+          "generator": 23,
+          "defining_relator": [
+            -23
+          ]
+        },
+        {
+          "generator": 21,
+          "defining_relator": [
+            -21
+          ]
+        },
+        {
+          "generator": 19,
+          "defining_relator": [
+            -19
+          ]
+        },
+        {
+          "generator": 14,
+          "defining_relator": [
+            -14
+          ]
+        },
+        {
+          "generator": 20,
+          "defining_relator": [
+            -20
+          ]
+        },
+        {
+          "generator": 22,
+          "defining_relator": [
+            -26,
+            -22
+          ]
+        },
+        {
+          "generator": 25,
+          "defining_relator": [
+            -25
+          ]
+        },
+        {
+          "generator": 26,
+          "defining_relator": [
+            -26
+          ]
+        },
+        {
+          "generator": 24,
+          "defining_relator": [
+            -24
+          ]
+        },
+        {
+          "generator": 6,
+          "defining_relator": [
+            -6
+          ]
+        },
+        {
+          "generator": 8,
+          "defining_relator": [
+            -8
+          ]
+        },
+        {
+          "generator": 15,
+          "defining_relator": [
+            -15
+          ]
+        },
+        {
+          "generator": 18,
+          "defining_relator": [
+            -18
+          ]
+        },
+        {
+          "generator": 13,
+          "defining_relator": [
+            -13
+          ]
+        },
+        {
+          "generator": 12,
+          "defining_relator": [
+            -12
+          ]
+        },
+        {
+          "generator": 4,
+          "defining_relator": [
+            -4
+          ]
+        },
+        {
+          "generator": 3,
+          "defining_relator": [
+            -3
+          ]
+        }
+      ],
+      "final_generators": [],
+      "final_relators": []
+    },
+    {
+      "name": "13n_4643",
+      "module": "dual",
+      "tree_edges": [
+        1,
+        2,
+        5,
+        9,
+        10,
+        17
+      ],
+      "eliminations": [
+        {
+          "generator": 26,
+          "defining_relator": [
+            -26
+          ]
+        },
+        {
+          "generator": 8,
+          "defining_relator": [
+            -8
+          ]
+        },
+        {
+          "generator": 15,
+          "defining_relator": [
+            -15
+          ]
+        },
+        {
+          "generator": 4,
+          "defining_relator": [
+            -4
+          ]
+        },
+        {
+          "generator": 23,
+          "defining_relator": [
+            -25,
+            23
+          ]
+        },
+        {
+          "generator": 16,
+          "defining_relator": [
+            -25,
+            -16
+          ]
+        },
+        {
+          "generator": 7,
+          "defining_relator": [
+            -25,
+            -7
+          ]
+        },
+        {
+          "generator": 6,
+          "defining_relator": [
+            -25,
+            6
+          ]
+        },
+        {
+          "generator": 14,
+          "defining_relator": [
+            -25,
+            -14
+          ]
+        },
+        {
+          "generator": 22,
+          "defining_relator": [
+            -22
+          ]
+        },
+        {
+          "generator": 24,
+          "defining_relator": [
+            -24
+          ]
+        },
+        {
+          "generator": 25,
+          "defining_relator": [
+            -25
+          ]
+        },
+        {
+          "generator": 21,
+          "defining_relator": [
+            -21
+          ]
+        },
+        {
+          "generator": 20,
+          "defining_relator": [
+            -20
+          ]
+        },
+        {
+          "generator": 19,
+          "defining_relator": [
+            -19
+          ]
+        },
+        {
+          "generator": 18,
+          "defining_relator": [
+            -18
+          ]
+        },
+        {
+          "generator": 13,
+          "defining_relator": [
+            -13
+          ]
+        },
+        {
+          "generator": 12,
+          "defining_relator": [
+            -12
+          ]
+        },
+        {
+          "generator": 11,
+          "defining_relator": [
+            -11
+          ]
+        },
+        {
+          "generator": 3,
+          "defining_relator": [
+            -3
+          ]
+        }
+      ],
+      "final_generators": [],
+      "final_relators": []
+    }
+  ]
+}

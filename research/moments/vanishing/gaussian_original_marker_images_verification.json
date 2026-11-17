@@ -1,0 +1,63 @@
+{
+  "status": "passed",
+  "original_monomial_markers": 35,
+  "marker_degrees_tested": [
+    0,
+    4
+  ],
+  "direct_wick_orders_tested": [
+    0,
+    13
+  ],
+  "exact_filtration_ranks": [
+    {
+      "marker_degree": 0,
+      "image_dimension": 1,
+      "max_time_degree": 0
+    },
+    {
+      "marker_degree": 1,
+      "image_dimension": 4,
+      "max_time_degree": 3
+    },
+    {
+      "marker_degree": 2,
+      "image_dimension": 7,
+      "max_time_degree": 6
+    },
+    {
+      "marker_degree": 3,
+      "image_dimension": 10,
+      "max_time_degree": 9
+    },
+    {
+      "marker_degree": 4,
+      "image_dimension": 13,
+      "max_time_degree": 12
+    }
+  ],
+  "transformed_hermite_markers": 20,
+  "hermite_input_degree": [
+    0,
+    3
+  ],
+  "max_transformed_marker_degree": 9,
+  "transformed_hermite_wick_orders": [
+    0,
+    28
+  ],
+  "heat_inverse_monomials": 56,
+  "heat_inverse_degree": [
+    0,
+    5
+  ],
+  "generic_affine_shear": "quadratic preservation and inverse checked symbolically",
+  "scope": "Finite exact replay; universal theorem follows from the written identities.",
+  "python": "3.12.3",
+  "sympy": "1.14.0",
+  "proof_sha256": "11640b56bbe9e0431518b20c6cecd36290982afd2215e4e8fe295b28564c6808",
+  "checker_sha256": "9ce0f01789f160accc13490d26491895c5eb5dca21ddf71d8d58b2bfa2b94867",
+  "independent_replay": false,
+  "formal_verification": false,
+  "external_review": false
+}

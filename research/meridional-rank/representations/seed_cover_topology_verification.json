@@ -1,0 +1,307 @@
+{
+  "status": "PASS",
+  "versions": {
+    "snappy": "3.3.2",
+    "spherogram": "2.4.1",
+    "snappy_15_knots": "1.2.1",
+    "snappy_manifolds": "1.4",
+    "regina": "7.4"
+  },
+  "command": "python verify_seed_cover_topology.py",
+  "scope": "Twenty-eight exact diagrams; cover irreducibility and an incompressible torus cutting off a certified-census hyperbolic piece. No global novelty or full census replay.",
+  "input_sha256": {
+    "seed_cover_topology_inputs.json": "44ed55f6107ee8fb8cd5ffa6558e0e6124339b21d8abb3a60b5c519c70886259",
+    "verify_seed_cover_topology.py": "0e7853b659bdcf5b7877dedc8d19e93dc46cf561fb1684e06e47e1cda1a502ea",
+    "audit_diagram_identity.py": "e8a68414019bd570312b03eb45fc8dac9ea667aa315c93f1393a0b9835cfd5f2",
+    "joint_a5_panel.json": "2a0ea8edf355067f05d1de90103edfcb7bf0508612031009e0b3eebdac87c906",
+    "sources/burton-cusped-census-1405.2695v1.pdf": "2692a3fa0624f58c6685dae748107fcea0aa207e72813911e931147a5f57fabf",
+    "sources/burton-hypcensus-4-or.dat": "ac146140b715adf34f60f6a9d6ae733a3c62aadbbdfc53a0bd069e8277bf7f32",
+    "sources/burton-hypcensus-5-or.dat": "6b4f75a8b794dfe687cf831db134554389fe5ac256d23c5f7483a50a06e8d370"
+  },
+  "cases": [
+    {
+      "name": "13a_3145",
+      "independent_census_lookup": "K13a3145",
+      "closed_cover_isosig": "tLLALQvzzMPPMkaceeggghjnooopqrqrssjkuxakwnnrtlhaepbwak",
+      "irreducible": true,
+      "incompressible_normal_torus": true,
+      "hyperbolic_piece_census_name": "m036",
+      "hyperbolic_piece_isosig": "eLPkaccddjbkan",
+      "outside_BJW18_graph_cover_class": true
+    },
+    {
+      "name": "13a_3147",
+      "independent_census_lookup": "K13a3147",
+      "closed_cover_isosig": "tLvLLwQQAvLMQkcfgikjhjiklkqorrsqrsllxkugngkixdhxfohsfr",
+      "irreducible": true,
+      "incompressible_normal_torus": true,
+      "hyperbolic_piece_census_name": "m036",
+      "hyperbolic_piece_isosig": "eLPkaccddjnkaj",
+      "outside_BJW18_graph_cover_class": true
+    },
+    {
+      "name": "13a_3148",
+      "independent_census_lookup": "K13a3148",
+      "closed_cover_isosig": "tLvLwMMQAvLMQkcfegkihjiklkqorrsqrsllxcagcnkuxmhxfohsfk",
+      "irreducible": true,
+      "incompressible_normal_torus": true,
+      "hyperbolic_piece_census_name": "m036",
+      "hyperbolic_piece_isosig": "eLPkaccddjnkaj",
+      "outside_BJW18_graph_cover_class": true
+    },
+    {
+      "name": "13a_3149",
+      "independent_census_lookup": "K13a3149",
+      "closed_cover_isosig": "tLvALPQLMvLQPkbeffhjiijlllporqqrsstalxsirfqprshqvknvxw",
+      "irreducible": true,
+      "incompressible_normal_torus": true,
+      "hyperbolic_piece_census_name": "m036",
+      "hyperbolic_piece_isosig": "eLPkaccddjnkaj",
+      "outside_BJW18_graph_cover_class": true
+    },
+    {
+      "name": "13a_373",
+      "independent_census_lookup": "K13a373",
+      "closed_cover_isosig": "rLLLLALQAvAQcaceghhijlkklnpopqqnkvjalmfjfvkvhrncj",
+      "irreducible": true,
+      "incompressible_normal_torus": true,
+      "hyperbolic_piece_census_name": "m121",
+      "hyperbolic_piece_isosig": "fLLQccecddephrwwn",
+      "outside_BJW18_graph_cover_class": true
+    },
+    {
+      "name": "13a_375",
+      "independent_census_lookup": "K13a375",
+      "closed_cover_isosig": "rLLMPvLAwMPQccdedegijklomppoqqqpkxrnnovotqgmxodar",
+      "irreducible": true,
+      "incompressible_normal_torus": true,
+      "hyperbolic_piece_census_name": "m189",
+      "hyperbolic_piece_isosig": "fLLQcacdeeenkdisr",
+      "outside_BJW18_graph_cover_class": true
+    },
+    {
+      "name": "13a_391",
+      "independent_census_lookup": "K13a391",
+      "closed_cover_isosig": "rLLAPvvPMMPQcaceeegkmnlnoqqoqppjkuxnrnqaateiajmrk",
+      "irreducible": true,
+      "incompressible_normal_torus": true,
+      "hyperbolic_piece_census_name": "m189",
+      "hyperbolic_piece_isosig": "fLLQcaddeeejpupxr",
+      "outside_BJW18_graph_cover_class": true
+    },
+    {
+      "name": "13a_392",
+      "independent_census_lookup": "K13a392",
+      "closed_cover_isosig": "rLLMzvAvLQQQcacdeejiqqonmlnoppqjkakrknpjvvknknogr",
+      "irreducible": true,
+      "incompressible_normal_torus": true,
+      "hyperbolic_piece_census_name": "m121",
+      "hyperbolic_piece_isosig": "fLLQccecddephrwwn",
+      "outside_BJW18_graph_cover_class": true
+    },
+    {
+      "name": "13a_3264",
+      "independent_census_lookup": "K13a3264",
+      "closed_cover_isosig": "rLLAPLzvPwQQcbcedegijnmopmnpqpqtsqjswhbqgcaggmmlr",
+      "irreducible": true,
+      "incompressible_normal_torus": true,
+      "hyperbolic_piece_census_name": "m121",
+      "hyperbolic_piece_isosig": "fLLQccecddehhrwjn",
+      "outside_BJW18_graph_cover_class": true
+    },
+    {
+      "name": "13a_3266",
+      "independent_census_lookup": "K13a3266",
+      "closed_cover_isosig": "rLLLLLLvQQMQcacfgjlmmkkplmqoppqnkgjdxrokotcvhrwnn",
+      "irreducible": true,
+      "incompressible_normal_torus": true,
+      "hyperbolic_piece_census_name": "m189",
+      "hyperbolic_piece_isosig": "fLLQcaddeeejpupxr",
+      "outside_BJW18_graph_cover_class": true
+    },
+    {
+      "name": "13a_3275",
+      "independent_census_lookup": "K13a3275",
+      "closed_cover_isosig": "rLLAzLzzzPQQcbcedejhmonqmonqqpptsqjshqqlaifgrcnrs",
+      "irreducible": true,
+      "incompressible_normal_torus": true,
+      "hyperbolic_piece_census_name": "m189",
+      "hyperbolic_piece_isosig": "fLLQcacdeeenkdisr",
+      "outside_BJW18_graph_cover_class": true
+    },
+    {
+      "name": "13a_3276",
+      "independent_census_lookup": "K13a3276",
+      "closed_cover_isosig": "rLLMzvQzzQzQcacdeehijkmlonoppqqjkakkbnjhavujlpsrn",
+      "irreducible": true,
+      "incompressible_normal_torus": true,
+      "hyperbolic_piece_census_name": "m121",
+      "hyperbolic_piece_isosig": "fLLQcacdeeenkdxbn",
+      "outside_BJW18_graph_cover_class": true
+    },
+    {
+      "name": "13n_1005",
+      "independent_census_lookup": "K13n1005",
+      "closed_cover_isosig": "qLLALwvPPQPkaceefhlkknmnmooppnkuxprrwsrwgwxxwr",
+      "irreducible": true,
+      "incompressible_normal_torus": true,
+      "hyperbolic_piece_census_name": "m121",
+      "hyperbolic_piece_isosig": "fLLQccecddephrwwn",
+      "outside_BJW18_graph_cover_class": true
+    },
+    {
+      "name": "13n_1006",
+      "independent_census_lookup": "K13n1006",
+      "closed_cover_isosig": "qLLALvPwAQAkaceefhlinlnomnoppjkuxpkxulwddddwhw",
+      "irreducible": true,
+      "incompressible_normal_torus": true,
+      "hyperbolic_piece_census_name": "m121",
+      "hyperbolic_piece_isosig": "fLLQccecddephrwwn",
+      "outside_BJW18_graph_cover_class": true
+    },
+    {
+      "name": "13n_1007",
+      "independent_census_lookup": "K13n1007",
+      "closed_cover_isosig": "qLLAvAvAwQQkbddchgmkmnlomnoppdwjnluixmdcccwnrr",
+      "irreducible": true,
+      "incompressible_normal_torus": true,
+      "hyperbolic_piece_census_name": "m121",
+      "hyperbolic_piece_isosig": "fLLQccecddephrwwn",
+      "outside_BJW18_graph_cover_class": true
+    },
+    {
+      "name": "13n_1011",
+      "independent_census_lookup": "K13n1011",
+      "closed_cover_isosig": "qLLALvMwwQQkaceefjlikpnnmooopnkuxpphuctaxbilwk",
+      "irreducible": true,
+      "incompressible_normal_torus": true,
+      "hyperbolic_piece_census_name": "m189",
+      "hyperbolic_piece_isosig": "fLLQcaddeeejpupxr",
+      "outside_BJW18_graph_cover_class": true
+    },
+    {
+      "name": "13n_1012",
+      "independent_census_lookup": "K13n1012",
+      "closed_cover_isosig": "qLLALLvQPzQkaceefjimjknompoppjkuxpquhfwqegdosf",
+      "irreducible": true,
+      "incompressible_normal_torus": true,
+      "hyperbolic_piece_census_name": "m189",
+      "hyperbolic_piece_isosig": "fLLQcacdeeenkdisr",
+      "outside_BJW18_graph_cover_class": true
+    },
+    {
+      "name": "13n_1013",
+      "independent_census_lookup": "K13n1013",
+      "closed_cover_isosig": "qLLALLwPLPQkaceefhjmlonmpppoojkuxpfpfrhtbtlabg",
+      "irreducible": true,
+      "incompressible_normal_torus": true,
+      "hyperbolic_piece_census_name": "m189",
+      "hyperbolic_piece_isosig": "fLLQccecddelqccjn",
+      "outside_BJW18_graph_cover_class": true
+    },
+    {
+      "name": "13n_1043",
+      "independent_census_lookup": "K13n1043",
+      "closed_cover_isosig": "qLLALvMwwQQkaceefjlikpoommoppnkuxpplufdttrswwn",
+      "irreducible": true,
+      "incompressible_normal_torus": true,
+      "hyperbolic_piece_census_name": "m189",
+      "hyperbolic_piece_isosig": "fLLQcacdeeenkdisr",
+      "outside_BJW18_graph_cover_class": true
+    },
+    {
+      "name": "13n_1044",
+      "independent_census_lookup": "K13n1044",
+      "closed_cover_isosig": "qLLAvPLLMMQkbddcgiknmmkoonpopdwjnudahhlmsnwqfw",
+      "irreducible": true,
+      "incompressible_normal_torus": true,
+      "hyperbolic_piece_census_name": "m189",
+      "hyperbolic_piece_isosig": "fLLQccecddelqccjn",
+      "outside_BJW18_graph_cover_class": true
+    },
+    {
+      "name": "13n_1045",
+      "independent_census_lookup": "K13n1045",
+      "closed_cover_isosig": "qLLALvwAMQPkaceefjklkonnlopppjkuxppqxbhmaniurj",
+      "irreducible": true,
+      "incompressible_normal_torus": true,
+      "hyperbolic_piece_census_name": "m189",
+      "hyperbolic_piece_isosig": "fLLQcacdeeenkdisr",
+      "outside_BJW18_graph_cover_class": true
+    },
+    {
+      "name": "13n_1046",
+      "independent_census_lookup": "K13n1046",
+      "closed_cover_isosig": "qLLAwLwLQLQkbedeejhmjklnoopophhntexhuvvujogawj",
+      "irreducible": true,
+      "incompressible_normal_torus": true,
+      "hyperbolic_piece_census_name": "m121",
+      "hyperbolic_piece_isosig": "fLLQcadedeejmllxw",
+      "outside_BJW18_graph_cover_class": true
+    },
+    {
+      "name": "13n_1047",
+      "independent_census_lookup": "K13n1047",
+      "closed_cover_isosig": "qLLALwvAMAQkaceefhjmjmnnomoppjkuxprtvrgpxdgrnr",
+      "irreducible": true,
+      "incompressible_normal_torus": true,
+      "hyperbolic_piece_census_name": "m121",
+      "hyperbolic_piece_isosig": "fLLQcacdeeenkexjn",
+      "outside_BJW18_graph_cover_class": true
+    },
+    {
+      "name": "13n_1048",
+      "independent_census_lookup": "K13n1048",
+      "closed_cover_isosig": "qLLALLAzMLQkaceefhjilknponnppjkuxpgpqwvpqgnbof",
+      "irreducible": true,
+      "incompressible_normal_torus": true,
+      "hyperbolic_piece_census_name": "m121",
+      "hyperbolic_piece_isosig": "fLLQccecddehhrwjn",
+      "outside_BJW18_graph_cover_class": true
+    },
+    {
+      "name": "13n_3842",
+      "independent_census_lookup": "K13n3842",
+      "closed_cover_isosig": "uLLPvvPwwQMQLQccdcflhjkonmmpqrprstttqsnalqrstmgouvbjweqvc",
+      "irreducible": true,
+      "incompressible_normal_torus": true,
+      "hyperbolic_piece_census_name": "m121",
+      "hyperbolic_piece_isosig": "fLLQcacdeeenkexjn",
+      "outside_BJW18_graph_cover_class": true
+    },
+    {
+      "name": "13n_3844",
+      "independent_census_lookup": "K13n3844",
+      "closed_cover_isosig": "qLLALvALAQPkaceefjkjmlnnoppopnkuxpphcrcbgetxic",
+      "irreducible": true,
+      "incompressible_normal_torus": true,
+      "hyperbolic_piece_census_name": "m189",
+      "hyperbolic_piece_isosig": "fLLQccecddelqccjn",
+      "outside_BJW18_graph_cover_class": true
+    },
+    {
+      "name": "13n_3855",
+      "independent_census_lookup": "K13n3855",
+      "closed_cover_isosig": "qLLALvMPMzQkaceefjkllmnnpppoonkuxppqafrlmuqirs",
+      "irreducible": true,
+      "incompressible_normal_torus": true,
+      "hyperbolic_piece_census_name": "m189",
+      "hyperbolic_piece_isosig": "fLLQcacdeeenkdisr",
+      "outside_BJW18_graph_cover_class": true
+    },
+    {
+      "name": "13n_3856",
+      "independent_census_lookup": "K13n3856",
+      "closed_cover_isosig": "qLLAvwLMQPMkaceeilklnmlkmooppnkuxkimmuaojkdtnj",
+      "irreducible": true,
+      "incompressible_normal_torus": true,
+      "hyperbolic_piece_census_name": "m121",
+      "hyperbolic_piece_isosig": "fLLQcacdeeenkdxbn",
+      "outside_BJW18_graph_cover_class": true
+    }
+  ],
+  "negative_controls": {
+    "wrong_named_diagram": true,
+    "wrong_hyperbolic_census_name": true
+  }
+}

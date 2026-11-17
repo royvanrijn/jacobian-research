@@ -7,7 +7,7 @@ status record.
 
 Use this graph to trace the consequences of a new lemma, locate the unresolved
 premises of a proposed theorem, or find claims affected by a changed proof. The
-initial graph covers principal results and identified gaps across every topic.
+current graph covers principal results and identified gaps across every topic.
 Named results, proof components, obstructions and open obligations are indexed
 throughout the retained sources. Mathematical dependency coverage remains explicit:
 imported theorem proofs and some supporting formal developments are retained as

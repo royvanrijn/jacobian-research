@@ -6,9 +6,10 @@ and moment gcds. It does not verify the entire finite support rectangle or
 extrapolate the selected inputs.
 """
 from fractions import Fraction
+from functools import lru_cache
 from hashlib import sha256
 from itertools import product
-from math import comb
+from math import comb, factorial
 from pathlib import Path
 import argparse
 import json
@@ -18,6 +19,10 @@ import sympy as sp
 HERE = Path(__file__).resolve().parent
 SOURCE = "sources/wolfs-2024-multiple-orthogonal-2401.08312v1.pdf"
 SOURCE_HASH = "f067406cc088fbad56308b00d8add51117401379504a1109b30442b62cf82182"
+CUBIC_SOURCE = "CUBIC_ADJOINT_STABILITY_SFC.tex"
+CUBIC_SOURCE_HASH = "ea2510e511545b9dd7a49a0796d75c45575687e60770c3359d38c5bc99cb4125"
+FRACTION_SOURCE = "sources/petreolle-sokal-zhu-1807.03271v2.pdf"
+FRACTION_SOURCE_HASH = "37b51eb4c7b47951460c0287e88b295be366acf76db55b1bd594dc8120554c1c"
 TERMINAL_FIVE_CERTIFICATE = "lower_exponent_initial_and_boundary_terminal_five_certificates.json"
 s, z, t = sp.symbols("s z t")
 
@@ -450,8 +455,250 @@ def terminal_five_replay():
             "ordinary_binomial_terminal_five_proved":True,
             "all_positive_Gamma_shapes_terminal_five_proved":False}
 
+
+
+def gap_two_shape_offset_replay():
+    """Exact symbolic controls for the all-order offsets2,3 proof.
+
+    Universal root separation is the analytic argument in the TeX source;
+    the finite Routh checks below are controls, not its justification.
+    """
+    m,MM,gamma = sp.symbols("m M gamma")
+    aode = (2-2*MM)/z
+    bode = MM*(MM-1)/z**2-1
+    code = 2*m/z
+    def derivative_vector(v):
+        r,r1,r2 = v
+        return [sp.diff(r,z)-code*r2,
+                r+sp.diff(r1,z)-bode*r2,
+                r1+sp.diff(r2,z)-aode*r2]
+    sequence = [[sp.Integer(1),sp.Integer(0),sp.Integer(0)]]
+    for j in range(5):
+        v = sequence[-1]
+        dv = derivative_vector(v)
+        sequence.append([sp.cancel((MM+j)*v[i]-z*dv[i]) for i in range(3)])
+    AA = {2:(MM+2)*(MM+3),3:(MM+2)*(MM+3)*(MM+4)}
+    qq = {
+        2:-MM*(MM+1)*AA[2]+(MM*(MM+1)-2*m*(2*MM+3))*z**2,
+        3:-MM*(MM+1)*AA[3]+(MM+2)*(MM*(MM+1)-6*m*(MM+2))*z**2}
+    bb = {2:2*z*(MM*AA[2]+(m+1)*z**2),
+          3:2*z*(MM*AA[3]+(m+1)*(3*MM+4)*z**2)}
+    cc = {2:-z**2*AA[2],3:-z**2*(AA[3]+2*(m+1)*z**2)}
+    for h in [2,3]:
+        reduced = [sp.cancel(z**2*sequence[h][i]-sequence[h+2][i])
+                   for i in range(3)]
+        assert all(sp.cancel(x-y)==0 for x,y in zip(reduced,[qq[h],bb[h],cc[h]]))
+
+    b0,b1 = sp.symbols("B Bprime")
+    for h in [2,3]:
+        bp = (z+MM+1)*b0-z*b1
+        bm = (-z+MM+1)*b0+z*b1
+        if h==2:
+            hp = AA[h]*bp+2*(m+1)*z**2*b0
+            hm = AA[h]*bm+2*(m+1)*z**2*b0
+        else:
+            hp = (AA[h]+2*(m+1)*z**2)*bp+2*(m+1)*(MM+4)*z**2*b0
+            hm = (AA[h]+2*(m+1)*z**2)*bm+2*(m+1)*(MM+4)*z**2*b0
+        plus = cc[h]*(b1+(-1+(1-MM)/z)*b0)+(bb[h]-cc[h]*aode)*b0
+        minus = cc[h]*(-b1+(1+(1-MM)/z)*b0)+(bb[h]-cc[h]*aode)*b0
+        assert sp.cancel(plus-z*hp)==0
+        assert sp.cancel(minus-z*hm)==0
+
+    def transformed_moment(order,shape):
+        return sp.expand(sum((-1)**k*comb(order,k)*rising(shape,2*k)
+                             *z**(2*(order-k)) for k in range(order+1)))
+    def auxiliaries(order,shape):
+        values = [sp.Integer(1)]
+        for j in range(order):
+            values.append(sp.expand((z+2*j+shape+1)*values[-1]
+                                     -z*sp.diff(values[-1],z)))
+        return values
+
+    literal_operators = literal_odes = literal_concomitants = 0
+    for order in range(1,7):
+        r = transformed_moment(order,gamma)
+        parameter = gamma+2*order
+        aa,bbb,ccc = aode.subs(MM,parameter),bode.subs(MM,parameter),code.subs(m,order)
+        assert sp.cancel(sp.diff(r,z,3)+aa*sp.diff(r,z,2)
+                         +bbb*sp.diff(r,z)+ccc*r)==0
+        literal_odes += 1
+        for h in [2,3]:
+            substitutions = {m:order,MM:parameter}
+            expected = rising(gamma,h)*transformed_moment(order+1,gamma+h)
+            actual = (qq[h].subs(substitutions)*r
+                      +bb[h].subs(substitutions)*sp.diff(r,z)
+                      +cc[h].subs(substitutions)*sp.diff(r,z,2))
+            assert sp.expand(expected-actual)==0
+            literal_operators += 1
+        if order<=4:
+            base = auxiliaries(order,gamma)[-1]
+            for sign in [1,-1]:
+                b = base.subs(z,sign*z)
+                ell = -sign+(1-parameter)/z
+                f1 = sp.diff(b,z)+ell*b
+                f2 = sp.diff(b,z,2)+2*ell*sp.diff(b,z)+(sp.diff(ell,z)+ell**2)*b
+                concomitant = (b*sp.diff(r,z,2)+(aa*b-f1)*sp.diff(r,z)
+                               +(f2-sp.diff(aa,z)*b-aa*f1+bbb*b)*r)
+                assert sp.cancel(concomitant)==0
+                literal_concomitants += 1
+    # A changed derivative coefficient must fail the literal operator identity.
+    r = transformed_moment(2,gamma)
+    parameter = gamma+4
+    substitutions = {m:2,MM:parameter}
+    expected = rising(gamma,3)*transformed_moment(3,gamma+3)
+    actual = (qq[3].subs(substitutions)*r
+              +(bb[3].subs(substitutions)+z)*sp.diff(r,z)
+              +cc[3].subs(substitutions)*sp.diff(r,z,2))
+    assert sp.expand(expected-actual)!=0
+
+    hurwitz_profiles = hurwitz_minors = moment_gcds = 0
+    for h,order in product([2,3],range(1,7)):
+        for shape in [2*order-2+sp.Rational(1,7),h*order+1,h*order+5]:
+            parameter = shape+2*order
+            values = auxiliaries(order+1,shape)
+            base,next_base = values[-2:]
+            if h==2:
+                hh = ((parameter+2)*(parameter+3)*next_base
+                      +2*(order+1)*z**2*base)
+            else:
+                aa = (parameter+2)*(parameter+3)*(parameter+4)
+                hh = ((aa+2*(order+1)*z**2)*next_base
+                      +2*(order+1)*(parameter+4)*z**2*base)
+            poly = sp.Poly(hh,z)
+            coefficients = poly.all_coeffs()
+            assert all(c>0 for c in coefficients)
+            at = lambda k:coefficients[k] if 0<=k<=poly.degree() else 0
+            matrix = sp.Matrix([[at(2*(j+1)-(i+1)) for j in range(poly.degree())]
+                                for i in range(poly.degree())])
+            for size in range(1,poly.degree()+1):
+                assert matrix[:size,:size].det(method="domain-ge")>0
+                hurwitz_minors += 1
+            hurwitz_profiles += 1
+            lower = sp.Poly(transformed_moment(order,shape),z)
+            upper = sp.Poly(transformed_moment(order+1,shape+h),z)
+            assert sp.gcd(lower,upper).degree()==0
+            moment_gcds += 1
+    return {"all_order_theorem":"T_(m,gamma,2) andT_(m+1,gamma+h,2) coprime for h2,3 andgamma>2m-2",
+            "all_positive_Gamma_families":["X^2(A+B X^2)","X^3(A+B X^2)"],
+            "symbolic_Ore_reduction_component_identities":6,
+            "symbolic_transformed_adjoint_identities":4,
+            "literal_symbolic_shape_operator_identities":literal_operators,
+            "literal_symbolic_shape_cubic_ODE_identities":literal_odes,
+            "literal_symbolic_shape_zero_concomitants":literal_concomitants,
+            "bounded_Hurwitz_profiles":hurwitz_profiles,
+            "positive_exact_Hurwitz_minors":hurwitz_minors,
+            "direct_transformed_moment_gcd_controls":moment_gcds,
+            "corrupted_derivative_coefficient_rejected":True,
+            "all_gap_two_lower_exponents_proved":False}
+
+def formal_cumulant_fraction_replay():
+    """Compare raw-moment cumulants, typed trees, formal ratios and Dyck paths.
+
+    These are bounded exact symbolic controls of the universal formal proof;
+    sampled minors do not establish the imported all-minors theorem.
+    """
+    gamma = sp.Symbol("gamma")
+    zero,one = sp.Poly(0,gamma,domain=sp.ZZ),sp.Poly(1,gamma,domain=sp.ZZ)
+    max_n = 6
+    counts = {"symbolic_cumulant_forest_coefficients":0,
+              "formal_ratio_coefficients":0,
+              "independent_partial_Dyck_path_coefficients":0,
+              "sampled_coefficientwise_nonnegative_Hankel_minors":0}
+    def gamma_rising(shift,length):
+        value = one
+        for j in range(length):
+            value *= sp.Poly(gamma+shift+j,gamma,domain=sp.ZZ)
+        return value
+    def convolution(left,right,degree):
+        out = [zero]*(degree+1)
+        for i in range(min(len(left),degree+1)):
+            for j in range(min(len(right),degree+1-i)):
+                out[i+j] += left[i]*right[j]
+        return out
+    for d in range(1,7):
+        m = d-1
+        @lru_cache(None)
+        def weight(j):
+            return d*gamma_rising(j+1,m)
+        @lru_cache(None)
+        def tree(j,n):
+            if n==0:
+                return one
+            forest = [one]+[zero]*(n-1)
+            for i in range(d):
+                forest = convolution(forest,[tree(j+i,k) for k in range(n)],n-1)
+            return weight(j)*forest[n-1]
+        forest = [one]+[zero]*max_n
+        for i in range(d):
+            forest = convolution(forest,[tree(i,k) for k in range(max_n+1)],max_n)
+        # Independently invert the exponential moment-cumulant relation.
+        moment = [gamma_rising(0,d*n) for n in range(max_n+2)]
+        cumulant = [zero]
+        for r in range(1,max_n+2):
+            cumulant.append(moment[r]-sum(
+                (comb(r-1,k-1)*cumulant[k]*moment[r-k] for k in range(1,r)),zero))
+        for n,u in enumerate(forest):
+            quotient,remainder = sp.div(cumulant[n+1],factorial(n)*moment[1])
+            assert remainder.is_zero and quotient==u
+            assert u.degree()==m*n and all(c>=0 for c in u.all_coeffs())
+            assert u.nth(0)>0
+            leading = Fraction(d**n*comb(d*(n+1),n),n+1)
+            assert leading.denominator==1 and u.LC()==leading.numerator
+            assert cumulant[n+1].degree()==d*(n+1)-n
+            counts["symbolic_cumulant_forest_coefficients"] += 1
+
+        # Literal formal cross-products avoid using analytic moment functions.
+        # Multiplication by n! leaves integer polynomial identities.
+        for n in range(max_n+1):
+            shifted_by_one = gamma_rising(1,d*n)
+            shifted_by_d = gamma_rising(d,d*n)
+            rhs_f = sum((factorial(n)//factorial(k)*moment[k]*tree(0,n-k)
+                         for k in range(n+1)),zero)
+            rhs_u = sum((factorial(n)//factorial(k)*moment[k]*forest[n-k]
+                         for k in range(n+1)),zero)
+            assert shifted_by_one==rhs_f and shifted_by_d==rhs_u
+            counts["formal_ratio_coefficients"] += 2
+        # Partial m-Dyck paths: rises +1, falls -m from height h have
+        # weight d*(gamma+h-m+1)_m. They end at height m after d*n+m steps.
+        if d>=2 and d<=5:
+            for n in range(5):
+                states = {0:one}
+                for step in range(d*n+m):
+                    following = {}
+                    for height,value in states.items():
+                        following[height+1] = following.get(height+1,zero)+value
+                        if height>=m:
+                            down = height-m
+                            following[down] = (following.get(down,zero)
+                                               +value*weight(height-m))
+                    states = following
+                assert states.get(m,zero)==forest[n]
+                counts["independent_partial_Dyck_path_coefficients"] += 1
+
+        for rows,cols in [([0],[1]),([0,1],[0,1]),([0,1],[1,2]),
+                          ([0,2],[0,2]),([0,1,2],[0,1,2]),
+                          ([0,1,2],[1,2,3])]:
+            matrix = sp.Matrix([[forest[i+j].as_expr() for j in cols] for i in rows])
+            minor = sp.Poly(matrix.det(method="domain-ge"),gamma)
+            assert minor.is_zero or all(c>=0 for c in minor.all_coeffs())
+            counts["sampled_coefficientwise_nonnegative_Hankel_minors"] += 1
+        if d==3:
+            bad = list(forest)
+            bad[2] += one
+            assert factorial(2)*moment[1]*bad[2] != cumulant[3]
+            # A shifted fall weight must not pass the literal one-fall control.
+            assert weight(1)+weight(2)+weight(3) != forest[1]
+
+    counts.update({"gaps":list(range(1,7)),"maximum_forest_order":max_n,
+                   "corrupted_series_and_shifted_weight_controls_rejected":True,
+                   "universal_Hankel_scope":"imported PSZ Theorem9.12, ell=m=d-1; fixed gamma",
+                   "two_shape_consecutive_resultant_transfer_proved":False})
+    return counts
+
 def replay():
     assert sha256((HERE/SOURCE).read_bytes()).hexdigest() == SOURCE_HASH
+    assert sha256((HERE/FRACTION_SOURCE).read_bytes()).hexdigest() == FRACTION_SOURCE_HASH
+    assert sha256((HERE/CUBIC_SOURCE).read_bytes()).hexdigest() == CUBIC_SOURCE_HASH
     cases = 0
     for n, d in product(range(2, 7), range(1, 5)):
         v = U(n-1, d, s, z)
@@ -509,6 +756,8 @@ def replay():
     cumulant_counts = cumulant_separation_replay()
     convolution_counts = finite_gamma_convolution_replay()
     fifth_counts = terminal_five_replay()
+    fraction_counts = formal_cumulant_fraction_replay()
+    gap_two_counts = gap_two_shape_offset_replay()
     report = {
         "kind": "internal bounded exact replay; universal proof is the TeX source",
         "claims": {
@@ -525,6 +774,12 @@ def replay():
             "generic_preservation_shortcut": "counterexample despite simplicity and Hurwitz stability of every derivative and consecutive base coprimality",
             "generic_Gamma_convolution_simplicity": "explicit finite positive Gamma convolution counterexample at fifth order",
             "ordinary_binomial_terminal_five": "all integer a>=0,d>=1; monotone center cutoff and exact polynomial certificates",
+            "gap_two_shape_offsets": "all m>=1,h2,3,gamma>2m-2; transformed adjoint Hurwitz proof",
+            "gap_two_lower_exponents_two_three": "all consecutive orders and all positive Gamma shapes",
+            "all_gap_two_lower_exponents_closed": False,
+            "formal_cumulant_branched_fraction": "all integer d>=1 and all orders; typed-tree formula over Q[gamma][[x]]",
+            "normalized_cumulant_Hankel_nonnegativity": "all finite minors coefficientwise nonnegative in gamma; PSZ Theorem9.12 at ell=m=d-1",
+            "branched_fraction_two_shape_resultant_transfer": False,
             "all_positive_Gamma_shapes_terminal_five_closed": False,
             "all_index_binomial_sfc": False,
         },
@@ -540,6 +795,16 @@ def replay():
         "cumulant_separation_replay": cumulant_counts,
         "finite_Gamma_convolution_replay": convolution_counts,
         "ordinary_terminal_five_replay": fifth_counts,
+        "formal_cumulant_fraction_replay": fraction_counts,
+        "gap_two_shape_offset_replay":gap_two_counts,
+        "gap_two_adjoint_source":{"file":CUBIC_SOURCE,"sha256":CUBIC_SOURCE_HASH,
+            "scope":"Theorem1 simplicity, half-plane bound4 and zero-concomitant identity10; internal elementary derivations",
+            "cached_source_hash_checked":True},
+        "Hankel_positivity_source": {"file":FRACTION_SOURCE,"sha256":FRACTION_SOURCE_HASH,
+            "version":"arXiv1807.03271v2, May17 2020",
+            "theorem":"Theorem9.12, m=d-1, ell=m; Eqs2.26/2.27 and Section2.3 product convention",
+            "scope":"normalized Gamma-power cumulants at fixed shape; no resultant positivity or coprimality imported",
+            "cached_primary_source_hash_checked":True},
         "representation_source": {"file": SOURCE, "sha256": SOURCE_HASH,
                                   "theorem": "Wolfs arXiv2401.08312v1 Theorem4.6 p=0,q=d",
                                   "scope": "representation attribution only; coefficient identity rederived; no zero theorem imported",
@@ -549,7 +814,7 @@ def replay():
         "source_sha256": {
             name: sha256((HERE/name).read_bytes()).hexdigest()
             for name in ["lower_exponent_initial_and_boundary.tex",
-                         "lower_exponent_initial_and_boundary.py", SOURCE, TERMINAL_FIVE_CERTIFICATE]
+                         "lower_exponent_initial_and_boundary.py", SOURCE, TERMINAL_FIVE_CERTIFICATE, FRACTION_SOURCE, CUBIC_SOURCE]
         },
         "independent_replay": False,
         "formal_verification": False,

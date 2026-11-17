@@ -1,0 +1,56 @@
+{
+  "claim": "QEP1",
+  "record_type": "primary-source inspection and written-proof scope",
+  "proof": {
+    "file": "EXACT_POSITION_CENTRALIZER_AND_COMPLETION.md",
+    "sha256": "131537d7e47b4fd57ebbbab6e3516de2b7062a6651dadc5c3eaaa207222e5afc"
+  },
+  "primary_source": {
+    "title": "The Stacks Project, Section 53.12: Riemann-Hurwitz",
+    "url": "https://stacks.math.columbia.edu/tag/0C1B",
+    "tag": "0C1B",
+    "cached_file": "sources/stacks-0C1B.html",
+    "sha256": "616e526d775d71ae3dd706bccfdc38115a846c7eafac1e7080d53691bc2249a3",
+    "retrieved_utc": "2026-11-17T14:49:57.124618+00:00",
+    "exact_location": "Section 53.12, characteristic-zero ramification formula preceding Lemma 53.12.1, and Lemmas 53.12.2 and 53.12.4",
+    "inspected_by": "Internal AI-assisted primary-source inspection using web extraction by the bounded-geometry subagent",
+    "used": "For a finite connected etale degree-e cover of A1 over algebraically closed characteristic-zero constants, projective completion and ramification only over infinity give 2g-2=-e-b, hence e=b=1.",
+    "scope_boundary": "Only the displayed characteristic-zero curve formula and its finite-cover consequence are used here. QFC1 retains the general affine-space covering source and Fitting/differentials proof dependencies."
+  },
+  "written_arguments": [
+    "Exact positional R centralizer embeds in a Laurent scalar one-variable Ore algebra by the finite quantum chart and explicit inverse.",
+    "Order-semigroup subtraction gives centralizer module finiteness over C[S] for every positive-order S, without an order cutoff or leading-coefficient unit assumption.",
+    "The localized classical centralizer K(r)[s], h-Gauss ring and QFC1 give local polynomiality without importing Schur commutativity.",
+    "Highest-order coefficient comparison descends K(r)((h))[S] to K((h))(r)[S].",
+    "Actual S-mates specialize at every irreducible r-divisor and force transcendence even at operator-order drops; denominator saturation gives global K((h))[R,S].",
+    "Actual generic mates of both positions can be made integral and matched to the prescribed classical tuple, after which finite polynomial curvature integration supplies a full bounded lift."
+  ],
+  "internal_exact_controls": {
+    "execution": "Direct ephemeral SymPy script via repository .venv/bin/python, not a retained mathematical checker",
+    "arithmetic": "Exact rational symbolic coefficient arithmetic in r,v,h; finite Ore multiplication with derivations v^-1*d/dv and d/dr",
+    "environment": {
+      "python": "3.12.3",
+      "sympy": "1.14.0"
+    },
+    "replays": [
+      {
+        "input": "Equation (4) explicit inverse chart operators X,Q,P,Z",
+        "result": "Six canonical commutators checked exactly: [P,X]=[Z,Q]=h and [P,Z]=[P,Q]=[Z,X]=[X,Q]=0"
+      },
+      {
+        "input": "S*=v+r*a, T*=-r*a^2/2-v*a-h/(2*v)",
+        "result": "[S*,T*]=h checked exactly"
+      },
+      {
+        "input": "Order-drop specialization r=0 of S*,T*",
+        "result": "[v,-v*a-h/(2*v)]=h checked exactly"
+      }
+    ],
+    "boundary": "Finite identity controls do not prove order-semigroup exhaustion, centralizer descent, denominator saturation or existence of Long mates. No independently retained replay executable or whole-proof computational verification is claimed."
+  },
+  "mathematical_checker": null,
+  "independent_replay": false,
+  "formal_verification": false,
+  "external_review": false,
+  "remaining_obligation": "Construct actual generic finite individual conjugates for the exact positional Long pair, or prove their impossibility. No bounded normalization of arbitrary deformed first images is established."
+}

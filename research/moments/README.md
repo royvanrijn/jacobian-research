@@ -8,8 +8,8 @@ Generalized vanishing, Gaussian moments and Image/Mathieu spaces.
 
 | Current result | Evidence / publication | Graph status | Main source |
 |---|---|---|---|
-| Published GVC, GMC and Image results | Published preprints | proved | [Source](../../results/README.md) |
-| Gaussian dimension-degree boundary | Unpublished; independent review pending | proved | [Source](../../unpublished/gaussian-boundary/README.md) |
+| Published GVC, GMC and Image results | Published preprints | open | [Source](../../results/README.md) |
+| Gaussian dimension-degree boundary | Unpublished; independent review pending | open | [Source](../../unpublished/gaussian-boundary/README.md) |
 | Complete reductive Mathieu classification | Published preprints | proved | [Source](../../results/README.md) |
 | All-degree Gaussian structure and safety gap | Internal result | open | [Source](vanishing/GAUSSIAN_AMPLITUDE_IDEALS_AND_WEIGHT_INVARIANCE.md) |
 | Gaussian H(2,1): affine charts, radial phases and obstructions | Internal result | proved | [Source](vanishing/GAUSSIAN_AFFINE_ISOTROPIC_CHART.md) |
@@ -25,10 +25,10 @@ Generalized vanishing, Gaussian moments and Image/Mathieu spaces.
 Scope limits:
 
 - The universal GVC/GMC dimension classifications and Gaussian dimension-degree boundary are claimed closed in their exact domains. Higher-dimensional GMC is refuted by witnesses; general Gaussian extensions is not an unrestricted open GMC claim.
-- Safety-to-purity is the converse implication to GMC. Its primitive-vacuum equivalence is represented in one direction with equivalence metadata to preserve acyclicity.
+- Safety-to-purity is the converse implication to GMC. Its equivalence with original-vacuum primitivity has both directional proofs in a declared equivalence component; a proof seed or explicit hypothetical premise is required.
 - Two-base marker generation supplies a proved reduction, while purity-to-base-marker polynomiality remains a mathematical gap.
 - The full sixteen-parameter two-pair cubic Image stratum is positive with sharp mixed cutoff m>3 deg_z Q. Constant-profile extraction uses a proper holomorphic-volume V-filtration argument and explicit boundary resolutions; the exact eleven-parameter certificate finishes all exceptional cases. The least failing bihomogeneous balanced degree is four. Independent review remains pending.
-- The latest two-pair Image cubic note now supplies an internal full(3,3) proof and sharp minimum balanced degree4. Its prior F1-versus-closing-gap inconsistency is obsolete; external review/formal coverage remain separate.
+- The retained two-pair Image cubic proof covers exact bihomogeneous bidegree (3,3), with sharp mixed cutoff and minimum failing balanced degree four. Independent review and formal coverage are separate obligations.
 - Theorem 5.5 extends the retained primitive Image family to every even balanced degree d>=4. Odd height powers are allowed: for odd k the fixed marker survives at every even m, which already violates eventual mixed vanishing. The next primitive frontier is odd degree five, with F mod R nonzero required from the start; invariant padding cannot settle it. This internal deduction has no independent review, formal verification or novelty claim; unrestricted Image failure was already known in the retained results.
 - The real signed-height one-affine-profile class is classified: q=r gives primitive failures only in even minimal degree, while q<r is safe for all original multipliers. A separate four-moment certificate excludes every bilinear multiple of the retained quartic from primitive degree five. Neither restriction decides arbitrary primitive odd degree five. The DAG separates angular identities, the contraction bridge, primitivity, Image membership, quartic specialization and padding. The full geometric nullcone interpretation retains a definition/application audit obligation.
 

@@ -1,0 +1,208 @@
+{
+  "claim": "QPN1",
+  "status": "PASS",
+  "full_sparse_Ore_power_controls": [
+    {
+      "case": "n2_even_mixed",
+      "n": 2,
+      "p": 7,
+      "h": 1,
+      "S_terms": [
+        [
+          0,
+          1,
+          1
+        ],
+        [
+          2,
+          0,
+          1
+        ],
+        [
+          2,
+          2,
+          2
+        ]
+      ],
+      "generic_a_order": 2,
+      "target_a_order": 2,
+      "target_v_exponent": -14,
+      "actual_coefficient": 4,
+      "predicted_coefficient": 4,
+      "normal_order_terms": 44,
+      "commutator_with_v_nonzero": true
+    },
+    {
+      "case": "n2_odd_mixed_and_even",
+      "n": 2,
+      "p": 7,
+      "h": 1,
+      "S_terms": [
+        [
+          0,
+          1,
+          1
+        ],
+        [
+          0,
+          3,
+          2
+        ],
+        [
+          1,
+          2,
+          4
+        ],
+        [
+          1,
+          5,
+          3
+        ],
+        [
+          2,
+          0,
+          1
+        ]
+      ],
+      "generic_a_order": 2,
+      "target_a_order": 2,
+      "target_v_exponent": -14,
+      "actual_coefficient": 4,
+      "predicted_coefficient": 4,
+      "normal_order_terms": 39,
+      "commutator_with_v_nonzero": true
+    },
+    {
+      "case": "n2_generic_order_above_anchor",
+      "n": 2,
+      "p": 7,
+      "h": 1,
+      "S_terms": [
+        [
+          0,
+          1,
+          1
+        ],
+        [
+          2,
+          0,
+          1
+        ],
+        [
+          4,
+          6,
+          2
+        ]
+      ],
+      "generic_a_order": 4,
+      "target_a_order": 2,
+      "target_v_exponent": -14,
+      "actual_coefficient": 4,
+      "predicted_coefficient": 4,
+      "normal_order_terms": 60,
+      "commutator_with_v_nonzero": true
+    },
+    {
+      "case": "n2_nonmonic_h_and_lower_terms",
+      "n": 2,
+      "p": 11,
+      "h": 3,
+      "S_terms": [
+        [
+          0,
+          0,
+          5
+        ],
+        [
+          0,
+          1,
+          4
+        ],
+        [
+          1,
+          0,
+          6
+        ],
+        [
+          2,
+          0,
+          2
+        ],
+        [
+          2,
+          2,
+          3
+        ]
+      ],
+      "generic_a_order": 2,
+      "target_a_order": 6,
+      "target_v_exponent": -22,
+      "actual_coefficient": 10,
+      "predicted_coefficient": 10,
+      "normal_order_terms": 148,
+      "commutator_with_v_nonzero": true
+    },
+    {
+      "case": "n3_mixed_even_and_odd",
+      "n": 3,
+      "p": 11,
+      "h": 2,
+      "S_terms": [
+        [
+          0,
+          1,
+          3
+        ],
+        [
+          1,
+          5,
+          4
+        ],
+        [
+          3,
+          0,
+          2
+        ],
+        [
+          3,
+          2,
+          2
+        ]
+      ],
+      "generic_a_order": 3,
+      "target_a_order": 15,
+      "target_v_exponent": -22,
+      "actual_coefficient": 2,
+      "predicted_coefficient": 2,
+      "normal_order_terms": 703,
+      "commutator_with_v_nonzero": true
+    }
+  ],
+  "equal_deficit_boundary": {
+    "p": 7,
+    "n": 2,
+    "added_term": "3*v^3*a",
+    "support_gate_accepts": false,
+    "base_target_coefficient": 4,
+    "boundary_target_coefficient": 0,
+    "conclusion": "Witness preservation fails; no mate is claimed."
+  },
+  "positive_pair": {
+    "P": "a^2+v^2/2",
+    "Q": "-a",
+    "p": 11,
+    "commutator": "1",
+    "support_gate_accepts": false,
+    "p_power_central": true
+  },
+  "hashes": {
+    "MIXED_NEWTON_P_POWER_OBSTRUCTION.md": "76ffbf6f45939765990388d8f59fe45aab7db3abdf72105708778cc8bdd89319",
+    "check_mixed_p_power_obstruction.py": "029b048af614c690908263b913cfbf4664368ccb09bf9713a688d793f447659e",
+    "UNIVERSAL_P_POWER_OBSTRUCTION.md": "0ea9470f94a859ca038deec9d226ace821b2a48cf4648a242d182bab917f513c",
+    "p_power_controls.json": "70c0fc8172a8c9cb31879733bf843b82da184642f2e9e83deed20084a975d57f"
+  },
+  "coverage_boundary": "Full finite sparse powers for declared mixed inputs; exact support gate, target coefficient and noncentrality; an equality-deficit cancellation and a positive canonical pair. Universal support selection, all finite orders, good reduction and arbitrary coefficient-cover descent use QPN1 and QPC1 written proofs. No universal Long normalization or scalarization is established.",
+  "independent_replay": false,
+  "formal_verification": false,
+  "external_review": false
+}

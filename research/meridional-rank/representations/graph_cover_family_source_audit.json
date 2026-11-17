@@ -45,9 +45,13 @@
   "unproved_by_sources_alone": "Actual named source-to-model group identities and individual upper/lower4 require the retained certificate proofs. Named global computational priority, all other known-family memberships and fullMRC are not settled by these source reads.",
   "input_sha256": {
     "graph_cover_family_scope_inputs.json": "105e0232f68e85b5a868f60914dbf45625a01d2f3e8f0ce33d5c983d7cef16a0",
-    "sources.json": "315cda0ef9a35830017da858e3a5f0ed7c0775aaec6e1a1ec3f04a17cab89f99",
     "sources/afw-3manifold-groups-final-author-2015.pdf": "31551e1a7cb6ce01026ba33e56806bfecf2c3e4d3afbec4dbf6c6bf0b7ef28ae",
     "sources/afw-3manifold-groups-author-v3.pdf": "c3c897d787bb9c07681439c862dd736da7711ea4cfe539b2b014fcae17be5feb",
     "sources/bjw-graph-cover-published-2018.pdf": "7db561c9b53a64beb222884719d8f2fab6280a8337879bd5c9fb848930868dc6"
+  },
+  "historical_catalogue_snapshot": {
+    "sha256": "315cda0ef9a35830017da858e3a5f0ed7c0775aaec6e1a1ec3f04a17cab89f99",
+    "distinct_source_ids": 46,
+    "scope": "Original46-source catalogue provenance only. Subsequent unrelated primary-source additions are not mathematical inputs to this graph-cover comparison; exact imported PDF snapshots remain pinned in input_sha256."
   }
 }

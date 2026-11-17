@@ -10,10 +10,12 @@
 \date{17 November 2026}
 \begin{document}
 \maketitle
-We give an arithmetic mechanism for infinitely many terminal orders in
-the ordinary nonconstant binomial problem, including $X(A+BX^3)$.
-It proves neither the all-terminal-order assertion for that support nor
-Strong Factorial for every univariate binomial.
+We prove the consecutive ordinary factorial-moment assertion at every
+terminal order for $X(A+BX^{p^s})$ at every prime-power gap $p^s$. Together with
+completed families, this covers every ordinary univariate binomial of
+degree at most four. Further arithmetic criteria cover infinite
+families at prime-power gaps and other lower exponents. Arbitrary gaps,
+general lower exponents and unrestricted Strong Factorial remain open.
 
 For integers $N\ge1$, $C\ge0$ and $d\ge1$, put
 \[
@@ -161,9 +163,399 @@ If $A$ or $B$ vanishes the phase is a nonzero monomial, whose
 positive Gamma moments are all nonzero.
 \end{proof}
 For gap three this includes every terminal order $N=3^r$ or $2\cdot3^r$
-with $N\ge2$. The ordinary assertion is an infinite family of
-starting indices, not an all-starting-index theorem for
-$X(A+BX^3)$.
+with $N\ge2$. This single-digit criterion gives a sparse family of starting
+indices; the next theorem covers every terminal index at prime gaps.
+
+\section{A unit determinant at every prime gap}
+For a prime $p$, define the monic auxiliaries by
+\[
+ B_{0,\gamma,p}=1,\qquad
+ B_{k+1,\gamma,p}=(z+pk+\gamma+p-1)B_{k,\gamma,p}
+                                  -zB_{k,\gamma,p}'.
+\]
+For $0\le s\le p-2$, write
+\[
+ B_{n+s,\gamma,p}(z)=\sum_{j=0}^{p-1}z^jM_{s,j}(z^p),\qquad
+ W(z)=\sum_{j=0}^{p-1}z^{p-1-j}
+             \det M_{\widehat j}((-1)^pz^p).
+\]
+Here $M_{\widehat j}$ deletes column $j$. The polynomial $W$ is
+monic of degree $(p-1)n$. Set
+\[
+ w_j=[z^{(p-1)n-j}]W,\qquad
+ \mathcal D_{n,p}(\gamma)=\det(w_{pj-i})_{i,j=1}^{n-1},
+ \qquad \mathcal D_{1,p}=1.
+\]
+We use two division-free algebraic results from the
+\href{gap_three_hurwitz_structure.tex}{cyclic presentation and all-gap
+discriminant identity}. Over every commutative coefficient ring, the
+quotient by the maximal minors of $M$ has a square presentation with
+determinant $\mathcal D_{n,p}$. Over $\mathbb Z[\gamma]$, with
+$N=\binom n2$, the fixed-degree discriminant is
+\[
+ \operatorname{Disc}_t T_{n,\gamma,p}
+ =(-1)^Np^N\left(\prod_{k=1}^n k^k\right)
+       \left(\prod_{k=1}^{n-1}(\gamma)_{pk}\right)
+          \mathcal D_{n,p}(\gamma).                       \tag{P1}
+\]
+
+\begin{theorem}\label{thm:prime-gap-unit-terminal}
+For every prime $p$ and every integer $n\ge1$,
+\[
+ \mathcal D_{n,p}(\gamma)\equiv(-1)^{\binom n2}
+               \pmod p\quad\hbox{in }\mathbb F_p[\gamma]. \tag{P2}
+\]
+In particular $\mathcal D_{n,p}$ is a unit at every
+$\gamma\in\mathbb Z_p$. For every positive rational $\gamma$ with
+$v_p(\gamma)\ge0$, $T_{n,\gamma,p}$ is squarefree over
+$\mathbb Q_p$ and over $\mathbb C$, and
+$\mathcal D_{n,p}(\gamma)>0$.
+\end{theorem}
+\begin{proof}
+Work first in $R=\mathbb F_p[\gamma,u]$ and in the free rank-$p$
+module $R[z]/(z^p-u)$, with basis $e_j=z^j$, $0\le j<p$.
+The operator
+\[
+ \mathsf A=z-zD_z+\gamma-1
+\]
+is well defined on this quotient because $zD_z(z^p-u)=0$.
+Its matrix has diagonal $\gamma-1-j$, subdiagonal one, and
+top-right entry $u$. Put $Q=u+\gamma^p-\gamma$.
+Its characteristic polynomial is
+\[
+ \det(\lambda I-\mathsf A)
+ =\prod_{j=0}^{p-1}(\lambda-\gamma+1+j)-u
+ =\lambda^p-\lambda-Q.
+\]
+Thus $\mathsf A^p=\mathsf A+QI$.
+The vectors $e_0,\mathsf Ae_0,\ldots,\mathsf A^{p-1}e_0$
+form a unimodular basis: the $j$th polynomial is monic of degree
+$j$ before any reduction by $z^p-u$.
+
+The reduced auxiliary recurrence gives $B_k=\mathsf A^ke_0$.
+Consequently the transpose of the cyclic matrix $M$ is
+\[
+ J=(\mathsf A^ne_0,\ldots,\mathsf A^{n+p-2}e_0).
+\]
+Let $I$ be its maximal-minor ideal in $R$. Put
+\[
+ J_0=(e_0,\mathsf Ae_0,\ldots,\mathsf A^{p-2}e_0),\qquad
+ \operatorname{adj}(\mathsf A)^nJ=(\det\mathsf A)^nJ_0.
+\]
+The matrix $J_0$ has a unit maximal minor, and
+$\det\mathsf A$ is $Q$ up to a unit. Cauchy--Binet therefore gives
+$Q^{n(p-1)}\in I$.
+On the other hand, modulo $Q$ the identity $\mathsf A^p=\mathsf A$
+reduces the positive exponents $n,\ldots,n+p-2$ to a permutation of
+$1,\ldots,p-1$. In the preceding unimodular basis, $J$ therefore has
+a unit maximal minor modulo $Q$. Hence $I+(Q)=R$.
+Together these two assertions imply $I=R$: if $1=a+Qb$, $a\in I$,
+raising to the power $n(p-1)$ gives $1\in I$.
+The arbitrary-ring presentation now makes
+$\overline{\mathcal D}_{n,p}$ a unit in $\mathbb F_p[\gamma]$,
+hence a nonzero constant.
+
+We determine that constant without a determinant sign convention.
+The coefficient of $\gamma^{n-1}$ in the discriminant on the left
+of (P1) is
+$(-1)^N n^n((pn-1)!)^{n-1}$.
+Indeed, substitute $\gamma=\varepsilon^n$ and
+$t=\varepsilon^{-1}y$; the limiting polynomial is
+$1+(pn-1)!y^n$, whose discriminant gives exactly that coefficient.
+Comparing the lowest powers of $\gamma$ in (P1) yields
+\[
+ \mathcal D_{n,p}(0)=
+ \frac{((pn-1)!)^{n-1}}
+ {p^N\prod_{k=1}^{n-1} k^k(pk-1)!}.
+\]
+Put $V_p(k)=\prod_{1\le r<pk,\ p\nmid r}r$. The exact identity
+$(pk-1)!=p^{k-1}(k-1)!V_p(k)$ and the telescoping product
+\[
+ ((n-1)!)^{n-1}=\prod_{k=1}^{n-1}k^k(k-1)!
+\]
+cancel every power of $p$ and every remaining factorial. Thus
+\[
+ \mathcal D_{n,p}(0)=
+ \frac{V_p(n)^{n-1}}{\prod_{k=1}^{n-1}V_p(k)}
+ \equiv(-1)^N\pmod p.
+\]
+Here $V_p(k)\equiv(-1)^k$ by pairing inverse nonzero residues in
+each block of length $p$. The empty products also cover $n=1$.
+
+For positive rational $p$-integral $\gamma$, (P2) makes the
+determinant nonzero. Every other factor in (P1) is nonzero, so
+the rational discriminant is nonzero over both fields.
+The nonnegativity corollary of the all-gap identity makes this
+determinant strictly positive for positive real $\gamma$ in the
+stated rational range.
+\end{proof}
+The argument uses the prime gap itself. For $d=p^s$ with $s>1$,
+the corresponding characteristic polynomial has inseparable
+powers; the reduction of positive exponents above does not apply.
+
+\section{Frobenius descent at prime-power gaps}
+The prime unit congruence has a different extension at prime powers.
+The following argument proves nonvanishing without asserting an exact
+valuation for the determinant.
+
+Fix a prime $p$ and normalize $v(p)=1$. Work in a complete
+algebraically closed extension $K$ of $\mathbb Q_p$, with valuation
+ring $\mathcal O$, maximal ideal $\mathfrak m$, and residue field $k$.
+Put
+\[
+ q_s=p^s,\qquad b_s=\frac{p^s-1}{p-1},\qquad
+ \Pi_{n,q}(t)=\prod_{\ell=0}^{n-1}(t+q\ell).
+\]
+Consider an operator and a seed of the form
+\[
+ A=c-\theta+F(z),\quad \theta=zD_z,\quad c\in\mathbb Z_p,\qquad
+ F(z)=z+\sum_{r\ge1}a_rz^{p^r},\quad a_r\in p\mathbb Z_p,
+\]
+\[
+ h\in\mathcal O[[z]],\qquad
+ \overline h=\overline{h(0)}\in k^\times .
+\]
+All these series and their finitely many Euler derivatives converge
+at $v(z)>0$. For $f(z)=\sum f_jz^j$ define its cyclic vector by
+\[
+ \mathcal C_q(f;u)_j=\sum_{\ell\ge0}f_{q\ell+j}u^\ell,
+       \qquad 0\le j<q.
+\]
+For nonzero $u$ of positive valuation, vanishing of this vector is
+equivalent to vanishing of $f$ at all $q$ roots of $z^q=u$.
+Consequently multiplication by a convergent unit series preserves
+its vanishing. Operators below are applied to whole series before
+evaluation; no action on a fixed characteristic-zero quotient by
+$z^q-u$ is assumed.
+
+\begin{lemma}\label{lem:artin-hasse-closure}
+The Artin--Hasse series
+\[
+ E(z)=\exp\left(\sum_{r\ge0}\frac{z^{p^r}}{p^r}\right)
+\]
+and its inverse belong to $\mathbb Z_p[[z]]$, and are units at
+$v(z)>0$. Conjugation gives
+\[
+ E^{-1}AE=c-\theta+\sum_{r\ge1}(a_r-1)z^{p^r}.
+\]
+For $s\ge2$, extract residue $j$ modulo $p$, put $y=z^p$, and
+choose $e_j\in\{0,\ldots,p-1\}$ congruent to $c-j$ modulo $p$.
+With
+\[
+ c_j=(c-j-e_j)/p,\quad b=a_1-1\in\mathbb Z_p^\times,
+ \quad w=by/p,\quad u_*=(b/p)^{q_{s-1}}u,
+\]
+the block operator is $e_j+pL_j$, where
+\[
+ L_j=c_j-\theta_w+F_*(w),\qquad
+ F_*(w)=w+\sum_{r\ge1}
+       \frac{(a_{r+1}-1)p^{p^r-1}}{b^{p^r}}w^{p^r}.
+\]
+It is again of the stated form. If
+$E^{-1}h=\sum_{j=0}^{p-1}z^j\widetilde h_j(y)$, its new seed is
+$h_j^*(w)=\widetilde h_j(pw/b)$ and satisfies
+\[
+ \overline{h_j^*}=\overline{h(0)}\,\frac{(-1)^j}{j!}\in k^\times.
+\]
+Moreover, $v(u)\ge b_s$ implies
+$v(u_*)\ge b_s-q_{s-1}=b_{s-1}>0$.
+\end{lemma}
+\begin{proof}
+The Euler product
+\[
+ E(z)=\prod_{\substack{m\ge1\\p\nmid m}}
+                   (1-z^m)^{-\mu(m)/m}
+\]
+follows by taking logarithms: the coefficient of $z^n$ is
+$n^{-1}\sum_{m\mid n,\ p\nmid m}\mu(m)$, which is $1/p^r$ when
+$n=p^r$ and zero otherwise. Here $\mu$ is the M\"obius function.
+Every exponent is in $\mathbb Z_p$, and binomial coefficients of
+$p$-adic integral arguments are integral by continuity from
+nonnegative integers. The product and its inverse are therefore
+integral coefficientwise. The gauge identity follows from
+$\theta\log E=\sum_{r\ge0}z^{p^r}$.
+
+On residue $j$, the conjugated operator is
+$c-j-p\theta_y+\sum_{r\ge1}(a_r-1)y^{p^{r-1}}$.
+Substitution $y=pw/b$ gives the displayed $L_j$.
+Its higher coefficients are $p$-divisible, also for $p=2$.
+Through degree $p-1$, $E^{-1}$ agrees with $e^{-z}$.
+Thus the first $p$ coefficients of $E^{-1}h$ have the stated
+nonzero residues. Every higher coefficient of an extracted seed
+becomes $p$-divisible after substituting $y=pw/b$.
+The last assertion uses $b_s=q_{s-1}+b_{s-1}$.
+\end{proof}
+
+\begin{lemma}[The strengthened noncollision invariant]
+\label{lem:frobenius-noncollision}
+Let $s,n\ge1$, $u\ne0$, and $v(u)\ge b_s$.
+If $P\in\mathcal O[t]$ is primitive and
+$\deg\overline P<q_s-1$, then
+\[
+ \mathcal C_{q_s}\bigl(\Pi_{n,q_s}(A)P(A)h;u\bigr)\ne0.
+                                                               \tag{F1}
+\]
+The ordinary degree of $P$ is unrestricted.
+\end{lemma}
+\begin{proof}
+We induct on $s$. For $s=1$, reduce before any rescaling.
+Since $v(u)\ge1$, the reduction has $z^p=0$.
+The operator is $\overline A=z-\theta+\overline c$, the seed is
+a constant unit, and $\Pi_{n,p}(\overline A)=\overline A^n$.
+The vector $1$ is cyclic for $\overline A$ and
+$\overline A^p-\overline A=0$, as in the prime-gap argument.
+Its $p-1$ nonzero eigenvalues are all of $\mathbb F_p^\times$.
+The cyclic vector has a nonzero component in each eigenspace,
+so a vanishing $\overline A^n\overline P(\overline A)1$ would
+force $\overline P$ to vanish at all these $p-1$ points.
+This contradicts its degree. This base case avoids evaluating a
+rescaled infinite series at a point of valuation zero.
+
+Now let $s\ge2$ and write $q=pq'$, $q'=q_{s-1}$.
+Suppose the vector in (F1) vanishes.
+Apply the unit gauge, residue extraction and rescaling of
+Lemma~\ref{lem:artin-hasse-closure}. Each block satisfies
+\[
+ \mathcal C_{q'}\bigl(
+ \Pi_{n,q}(e_j+pL_j)P(e_j+pL_j)h_j^*;u_*\bigr)=0.       \tag{F2}
+\]
+For a nonresonant block $e_j\ne0$, absorb
+$\Pi_{n,q}(e_j+pL_j)$ into its seed $\widehat h_j$.
+The resulting seed is integral and reduces to the constant unit
+$e_j^n\overline{h_j^*}$.
+The $q'$ vectors
+\[
+ v_r=\mathcal C_{q'}(L_j^r\widehat h_j;u_*),
+                    \qquad 0\le r<q',
+\]
+form an integral unit basis. Indeed reduction sets $u_*=0$ and
+the seed to a constant, while
+$(w-\theta+\overline{c_j})^r1$ is monic of degree $r<q'$.
+Every further vector $v_r$ is integral as well.
+
+Write $P^{[r]}$ for the divided Taylor coefficient.
+Expansion of (F2) gives
+$\sum_{r\ge0}p^rP^{[r]}(e_j)v_r=0$.
+All terms with $r\ge q'$ have valuation at least $q'$.
+Inverting the unit basis gives
+\[
+ v\bigl(P^{[r]}(e_j)\bigr)\ge q'-r>0,\qquad 0\le r<q'.
+\]
+Thus $\overline P$ has multiplicity at least $q'$ at every
+nonzero element of $\mathbb F_p$, and
+\[
+ \overline P(t)=(t^{p-1}-1)^{q'}R(t),\qquad
+                 \deg R\le q'-2.
+\]
+Since the prefactor has nonzero constant coefficient, the index
+$r_0$ of the first unit coefficient of $P$ satisfies $r_0\le q'-2$.
+Write $P(t)=\sum c_rt^r$ and choose a nonzero coefficient
+$\kappa=p^{r_*}c_{r_*}$ minimizing
+\[
+ M=v(\kappa)=\min_r\bigl(v(c_r)+r\bigr)\le r_0 .
+\]
+Then $Q(t)=P(pt)/\kappa$ is integral and primitive.
+For $r\ge q'-1$ its coefficient has strictly positive valuation,
+so $\deg\overline Q\le\lfloor M\rfloor\le q'-2$.
+
+There is exactly one resonant block $e_j=0$. In this block,
+$\Pi_{n,q}(pL_j)=p^n\Pi_{n,q'}(L_j)$.
+After division by $p^n\kappa$, (F2) becomes
+\[
+ \mathcal C_{q'}\bigl(
+       \Pi_{n,q'}(L_j)Q(L_j)h_j^*;u_*\bigr)=0.
+\]
+The operator and seed remain in the closed class and
+$v(u_*)\ge b_{s-1}$. This contradicts the induction hypothesis.
+\end{proof}
+
+\begin{theorem}\label{thm:prime-power-lower-one}
+Let $q=p^s$, where $p$ is prime and $s\ge1$.
+For every $n\ge1$ and every positive rational
+$\gamma$ with $v_p(\gamma)\ge0$, $T_{n,\gamma,q}$ is squarefree
+over $\mathbb Q_p$ and over $\mathbb C$.
+The cyclic determinant defined above with $p$ replaced by $q$
+satisfies $\mathcal D_{n,q}(\gamma)>0$.
+\end{theorem}
+\begin{proof}
+The case $n=1$ is immediate.
+Here the actual auxiliary operator is
+$A=z-zD_z+\gamma+q-1$, with seed $h=1$, and
+$B_{n,\gamma,q}=\Pi_{n,q}(A)1$.
+If $\mathcal D_{n,q}(\gamma)=0$, the square cyclic presentation
+has nonzero cokernel. Its finite quotient algebra therefore has
+a common root $u$ of the maximal minors.
+The all-gap no-origin lemma gives $u\ne0$.
+The critical-ideal identity then makes a $q$th root $z$ of $u$
+a critical root of
+\[
+ R(z)=z^{qn}T_{n,\gamma,q}((-1)^{q+1}z^{-q}).
+\]
+
+For $\gamma\in\mathbb Z_p$, the integer-valued binomial identity
+\[
+ (\gamma)_{qk}=(qk)!\binom{\gamma+qk-1}{qk}
+\]
+gives $v((\gamma)_{qk})\ge b_sk$:
+the binomial polynomial is integral by continuity, and the first
+$s$ terms of the factorial valuation sum to $b_sk$.
+The monic polynomial $R$ consequently has every root in
+$v(z)\ge b_s/q$; otherwise its leading term would be uniquely
+of least valuation. Thus $v(u)\ge b_s$.
+
+A dependence of the $q-1$ cyclic rows
+$B_n,\ldots,B_{n+q-2}$ gives a nonzero coefficient polynomial $P$
+of degree at most $q-2$. Indeed each row is
+$\Pi_{n,q}(A)$ times a monic polynomial in $A$ of the indicated
+degree. Scale $P$ to make it primitive.
+The dependence contradicts Lemma~\ref{lem:frobenius-noncollision}
+at this $u$. Hence the determinant is nonzero.
+The all-gap discriminant identity and its nonnegativity corollary
+prove squarefreeness over both fields and strict positivity.
+\end{proof}
+
+\begin{corollary}\label{cor:prime-gap-lower-one}\label{cor:prime-power-lower-one}
+Let $q=p^s$, with $p$ prime and $s\ge1$, and let $\beta>0$
+be rational with $v_p(\beta)\ge0$. Every nonzero $X(A+BX^q)$ has no simultaneous zero
+Gamma moments at any consecutive pair of positive orders.
+In particular this holds for ordinary factorials at every prime-power gap
+and every terminal order. Every ordinary univariate binomial of
+degree at most four satisfies Strong Factorial.
+\end{corollary}
+\begin{proof}
+At terminal order $n\ge2$, put $\gamma=n+\beta-1>0$ and
+$T=T_{n,\gamma,q}$, $\theta=tD_t$. Coefficient comparison gives
+\[
+ T_{n,\gamma+1,q}=T+(q/\gamma)\theta T,\qquad
+ T_{n-1,\gamma,q}=T-(1/n)\theta T.
+\]
+These are the two normalized moments. The determinant of their
+coefficients in $(T,\theta T)$ is
+$-(\gamma+qn)/(\gamma n)\ne0$, so a common root would be a
+multiple root of $T$; zero is excluded by $T(0)=1$.
+Since $\gamma$ is $p$-integral, Theorem~\ref{thm:prime-power-lower-one}
+excludes this at every $n$.
+Orders zero and one cannot both vanish because the zeroth moment
+is one. A phase with $A=0$ or $B=0$ is a nonzero monomial, so all
+its positive moments are nonzero.
+
+For the degree-four assertion, write a nonmonomial binomial as
+$X^a(A+BX^d)$, with $a+d\le4$.
+The case $a=0$ is the completed
+\href{ALL_UNIVARIATE_TWO_TERM_SFC.tex}{constant-plus-power theorem},
+and $d=1$ is the completed
+\href{UNIFORM_PADE_PARABOLA_SFC.tex}{adjacent-exponent theorem}.
+Among the remaining cases, $(a,d)=(1,2)$ is the
+\href{CUBIC_ADJOINT_STABILITY_SFC.tex}{cubic theorem};
+$(a,d)=(2,2)$ is the $q=2,\beta=1$ case of the
+\href{DYADIC_BINOMIAL_SFC.tex}{dyadic equal-support theorem};
+and $(a,d)=(1,3)$ is the new prime-gap assertion.
+These exhaust the possibilities.
+\end{proof}
+This proves the ordinary lower-one assertion at every prime-power gap,
+including the quartic binomial $X(A+BX^3)$.
+It does not prove all positive real Gamma shapes, arbitrary gaps,
+or general lower exponents.
 
 \section{Terminal orders one below a single-digit index}
 The single-digit restriction on $N$ can also be removed on the
@@ -317,7 +709,8 @@ The lower-one bridge then gives the moment assertion.
 
 In particular, at gap three these theorems cover
 $N=m3^r$ and $m3^r-1$ for $m=1,2$, whenever $N\ge2$.
-This is not every terminal index.
+These Newton criteria give additional explicit residual information;
+the prime-power lower-one case is covered at every index above.
 
 \section{A separate consequence for arbitrary lower exponent}
 \begin{corollary}\label{cor:generala}
@@ -609,6 +1002,132 @@ weighted perturbation or higher-residual argument.
 Theorem \ref{thm:precisionobstruction} rules out the uniform
 coefficientwise precision shortcut alone.
 
+\section{The exact cubic unit operator at every precision}
+The factorial splitting admits an exact diagonal-operator expansion.
+This supplies the deformation itself at arbitrary precision; it does
+not assert preservation of squarefreeness.
+
+\begin{lemma}\label{lem:cubic-unit-operator}
+Let $q,k$ be nonnegative integers, $c\in\{0,1,2\}$, $C=3q+c$, and put
+\[
+ A(j)=2+9j(j-1),\qquad
+ u_k=\prod_{j=1}^k A(q+j)
+       \prod_{a=1}^c\frac{3(q+k)+a}{3q+a},\qquad
+ g=u_1,\quad v_k=u_k/g^k .
+\]
+These are the units in Lemma~\ref{lem:split} at $d=p=3$.
+Write
+\[
+ b_q=\binom{q+1}{2},\quad
+ S_r(q,k)=\sum_{j=1}^k\binom{q+j}{2}^r,\quad
+ E_\ell(q,c)=\sum_{a=1}^c(3q+a)^{-\ell}.
+\]
+Then $v_k\in1+9\mathbb Z_3$, and the following series converges in
+$\mathbb Z_3$:
+\[
+\begin{split}
+ \Lambda_{q,c}(k)=\log v_k={}&
+ \sum_{r\ge1}\frac{(-1)^{r+1}9^r}{r}
+           \bigl(S_r(q,k)-kb_q^r\bigr)\\
+ &+\sum_{\ell\ge2}\frac{(-1)^{\ell+1}3^\ell}{\ell}
+           (k^\ell-k)E_\ell(q,c).
+\end{split}                                                   \tag{U1}
+\]
+For $\theta=xD_x$ and every integer $N\ge1$, this gives the coefficientwise
+identity in $\mathbb Q_3[x]$
+\[
+ P_{N,C,3}\!\left(\frac{x}{3g}\right)
+       =\exp\!\bigl(\Lambda_{q,c}(\theta)\bigr)F_{N,q+1}(x).
+                                                               \tag{U2}
+\]
+For fixed integer $q$, $S_r(q,k)$ is an integer-valued polynomial
+in $k$ of degree at most $2r+1$. The corresponding operator
+polynomials have degrees at most $2r+1$ and $\ell$. The $r$th and $\ell$th summands of
+(U1), as diagonal operators on $x^k$, have eigenvalue valuations
+at least $2r-v_3(r)$ and $\ell-v_3(\ell)$, respectively.
+Thus for every integer $K\ge1$, modulo $3^K$ it suffices to
+retain the terms with these bounds
+strictly less than $K$. In the exponential it suffices to retain
+powers $j$ with $2j-v_3(j!)<K$, including $j=0$.
+All three retained sets are finite.
+
+More explicitly, modulo $81$,
+\[
+ v_k\equiv1+9\left(a_c(q)\binom k2+b_c\binom k3\right),
+ \quad
+ (a_c,b_c)=
+ \begin{cases}
+ (q+1,1),&c=0,\\
+ (7q+6,7),&c=1,\\
+ (q-7,1),&c=2,
+ \end{cases}                                                \tag{U3}
+\]
+where the displayed coefficients can be read modulo nine.
+\end{lemma}
+\begin{proof}
+The product for $u_k$ follows by separating multiples of three in
+$(3(q+k)+c)!/(3q+c)!$. Since
+$A(j)=2(1+9\binom j2)$, expanding the logarithms in
+$u_k/g^k$ gives the first sum in (U1). The endpoint factors give
+the second sum; their linear term cancels because $k-k=0$.
+
+For fixed $q$, the polynomial $\binom{q+j}{2}^r$ has an integral
+binomial-basis expansion in $j$. Discrete summation proves the
+claimed degree and integer values of $S_r$.
+The summand valuation bounds now follow termwise.
+In particular every summand has valuation at least two.
+They tend uniformly to infinity for integer $k\ge0$, proving
+convergence and $v_k=\exp\Lambda_{q,c}(k)\in1+9\mathbb Z_3$.
+An operator in (U1) is defined by $\theta x^k=kx^k$.
+The integer values of the polynomial factors give these bounds;
+no integrality of its ordinary monomial coefficients is assumed.
+Applying the scalar identity to each coefficient in the factorial
+splitting proves (U2).
+The $j$th exponential term has eigenvalue valuation at least
+$2j-v_3(j!)$, which tends to infinity.
+Replacing $\Lambda$ by its truncation modulo $3^K$ preserves its
+exponential modulo $3^K$, since $\Lambda\in9\mathbb Z_3$ on each
+monomial. This proves the all-precision assertion.
+
+For (U3), the first sum modulo $81$ is
+$9((q+1)\binom k2+\binom k3)$.
+Only $\ell=2,3$ remain in the endpoint sum, contributing
+\[
+ -9E_2\binom k2+
+       54E_3\left(\binom k2+\binom k3\right).
+\]
+For $c=1$, $E_2\equiv1-6q\pmod9$ and $E_3\equiv1\pmod3$;
+for $c=2$, $E_2\equiv8\pmod9$ and $E_3\equiv0\pmod3$.
+These give the stated coefficients. Finally
+$\exp\Lambda\equiv1+\Lambda\pmod{81}$.
+\end{proof}
+
+\begin{lemma}\label{lem:unit-offset-isometry}
+At $c=0$, the normalized second unit $v_2(q)$ satisfies, for
+distinct nonnegative integers $q,q'$,
+\[
+ v_3\bigl(v_2(q')-v_2(q)\bigr)=2+v_3(q'-q).                 \tag{U4}
+\]
+Thus determining it modulo $3^K$ for arbitrary $q$ requires the
+offset $q$ modulo $3^{K-2}$ when $K\ge3$.
+\end{lemma}
+\begin{proof}
+One has $v_2(q)=A(q+2)/A(q+1)$, and subtraction gives
+\[
+ v_2(q')-v_2(q)=
+ \frac{18(q'-q)\bigl(2-9(q+1)(q'+1)\bigr)}
+      {A(q+1)A(q'+1)}.
+\]
+The factor in parentheses and both denominators are three-adic
+units. Taking $q'=q+3^L$ also proves the precision necessity.
+\end{proof}
+A fixed finite lookup of offset residues therefore cannot recover
+these corrections at arbitrary precision. The exact operator can
+instead carry the offset or read further digits as needed.
+A squarefreeness argument still needs control in the successive
+local weighted coordinates; neither (U2) nor the unit congruences
+supply that implication.
+
 \section{The lower-exponent resultant: positivity and a failed stability strengthening}
 For integers $N\ge2$, $d\ge1$ and indeterminate $a$, define
 \[
@@ -721,23 +1240,35 @@ binomial Strong Factorial counterexample.
 The existing prime-power two-term theorem concerns fixed shapes
 $\gamma\le d$ for constant-plus-power phases at \emph{every} index.
 It does not cover the growing shape $\gamma=N$ here once $N>d$.
-The present proof uses the same factorial-unit and Newton-residual
-method, applied to terminal indices with a single nonzero
-base-$p$ digit and to the additional preceding orders; it does not improve the existing completed
-constant-plus-power conclusion. It also overlaps the completed
+The prime-gap unit theorem uses a cyclic characteristic-$p$ operator.
+The all-prime-power extension uses the integral Artin--Hasse gauge
+and a Frobenius descent of primitive coefficient polynomials. Both
+use the exact all-gap Fitting, critical-ideal and discriminant identities. The other
+terminal-order criteria use factorial units and Newton residuals at
+single-digit indices and their preceding orders; they do not improve
+the existing completed constant-plus-power conclusion. It also overlaps the completed
 gap-one, lower-one gap-two, and specified dyadic equal-support
 families in their stated specializations. No novelty claim is made.
 
 The companion exact checker compares the actual coefficient Newton
 hull and literal normalized residual with (2), checks (5), tests
 the lower-one moment identities, and checks irreducibility-degree
-coprimality in bounded instances. It also verifies the explicit
+coprimality in bounded instances. It also checks the exact cubic unit
+operator at bounded precisions, its modulo-$81$ coefficients, the
+offset isometry and deliberate corrupted-correction controls. It also verifies the explicit
 resultant counterexample by degree-bound interpolation and an integer
 Rouch\'e certificate. Its finite family tests check the implementation; all unbounded quantifiers use the proof above.
+It also checks the prime-gap characteristic matrix and its cyclic
+basis, the symbolic determinant congruence and its constant normalization,
+and literal lower-one pairs in finite ranges. These controls test the
+implementation; the unit-ideal proof supplies the unbounded theorem.
 Carry inputs are rejected as unsupported rather than classified as
 counterexamples to Strong Factorial.
-The all-terminal-order gap-three theorem, the other gaps and
-unrestricted lower exponents remain open.
+The ordinary lower-one theorem is proved at every prime-power gap,
+including gap three, and all ordinary binomials of degree at most four
+are covered. General lower exponents, non-prime-power lower-one cases
+not already in completed families, and all positive real Gamma shapes
+at higher gaps remain open.
 Independent replay, formal verification, external review and
 priority claims remain false.
 \end{document}
