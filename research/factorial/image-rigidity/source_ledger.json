@@ -108,6 +108,12 @@
       "url": "https://arxiv.org/pdf/1506.07379v1",
       "sha256": "05aaeaeddc525d095461d161bab6417415c36e22537f9322e5760a69c7289db5",
       "review": "arXiv v1 (24 June 2015), generalized Euclidean algorithm pp.2-5, Theorems15-16 and Lemma18 p.8, and Theorems4 and31 inspected directly. Descending coefficients and positive integer row/column convention matched. Positive generalized Euclidean leading coefficients imply total nonnegativity of the infinite H3, hence exclusion of the OPEN sector |arg z|<pi/3. Factorization proof and special-minor link inspected; other paper results and novelty not audited. This imported theorem does not prove pivot positivity for the factorial Wronskian family."
+    },
+    {
+      "file": "sources/wolfs-2024-multiple-orthogonal-2401.08312v1.pdf",
+      "url": "https://arxiv.org/pdf/2401.08312v1",
+      "sha256": "f067406cc088fbad56308b00d8add51117401379504a1109b30442b62cf82182",
+      "review": "Theorem4.6 on p26 (PDF index25), p=0,q=d specialization inspected in the primary text; balanced step-line numerator multiset, reciprocal and scale rederived from coefficients. Section4.3 explicitly supplies no general zero theorem. Used for representation attribution only in lower_exponent_initial_and_boundary.tex; derivative identity and generic shortcut counterexample are proved independently. No imported all-index nonvanishing result, independent review or full-paper audit."
     }
   ],
   "additional_primary_references": [

@@ -1,0 +1,74 @@
+{
+  "edition_date": "2026-11-17",
+  "review_basis": "Attached critical release review of 17 November 2026, pages 9-11; source-aware internal revision, not external review.",
+  "source_files": {
+    "README.md": "8017c4da163abee53573611971172ad01d81ec53d6432a2f4747e8a67e861b42",
+    "main.tex": "49030991e389cd6e988a795235ee488bcda019f3a67e737ff16874ad6cd7b8f9",
+    "metadata.json": "2d8673bec97b9edf8972eaf5ab12528930d26a94997553cb49620b2282c25270",
+    "symbolic_checks.json": "085d18de9fbf2bd3aa98eefa226e9988b52c2e678f6255a167e0aeca419e2ee1",
+    "verify.py": "aa363e96b9e97af05391e05b0f3137ffdcf4b8c5c75f77d4cca8d946cfd5b86c"
+  },
+  "pdf": {
+    "path": "paper.pdf",
+    "sha256": "7c7cee82fe8932403c86a79797c605a95e76a00e388e6d679634cc91b27f052a",
+    "pages": 6
+  },
+  "build": {
+    "command": "latexmk -pdf -jobname=paper -interaction=nonstopmode -halt-on-error main.tex",
+    "result": "passed",
+    "unresolved_references": false,
+    "overfull_boxes": false
+  },
+  "build_environment": {
+    "python": "3.12.3",
+    "sympy": "1.14.0",
+    "latexmk": "Latexmk, John Collins, 31 Jan. 2024. Version 4.83"
+  },
+  "visual_review": {
+    "performed": true,
+    "reviewer": "OpenAI Codex source-aware internal reviewer",
+    "scope": "All rendered pages inspected as contact sheets; page layout, equations and theorem continuity checked.",
+    "result": "No clipping, overlapping text or unresolved references observed."
+  },
+  "isolated_pdf_only_reading": {
+    "performed": true,
+    "date": "2026-11-17",
+    "reviewer": "OpenAI Codex agent blind_geometry_fibres",
+    "type": "isolated internal AI PDF-only reading",
+    "supplied_context": "Only the assigned PDFs and five reader questions; no repository sources, earlier review, literature or supplements. Multiple assigned PDFs were read separately by this reviewer.",
+    "pdf_sha256": "c0199c893b30735332e8b08ad7f5921a47aea3c023c1e76dea4be1abb41321f7",
+    "pages": 6,
+    "answers": {
+      "contribution": "All parity-permitted real fibre counts and a selected fold-adjacency chain for one explicit map in every degree, on the stated open locus.",
+      "mechanism": "Polynomial divisibility and chain determinants give a Keller map; scalar simple-root reconstruction transfers real pencil root counts to source fibres.",
+      "hardest_step": "Proposition2.1 p3: polynomiality, determinant chain and reconstruction; Proposition3.1 p4: finite-exception slope choice.",
+      "limitations": "Only C nonzero and nonzero discriminant; not all fibres or the whole adjacency graph; rational witness selection need not have closed formulas.",
+      "obstacles": "Initial PDF omitted a short justification that the tangent parametrization is finite and birational; supplied in the follow-up. No demonstrated theorem failure."
+    },
+    "finding": "No demonstrated fatal mathematical error. Unperformed specialist checks and formal replay remain separate obligations.",
+    "external_review": false,
+    "targeted_pdf_only_followup": {
+      "pdf_sha256": "7c7cee82fe8932403c86a79797c605a95e76a00e388e6d679634cc91b27f052a",
+      "pages": 6,
+      "finding": "Added finite/birational tangent normalization and finite exceptional slopes proof; targeted PDF-only follow-up found the issue resolved and p4 readable.",
+      "scope": "Re-read revised passages and inspect rendering; not a new full blind reading."
+    }
+  },
+  "external_human_review": {
+    "performed": false
+  },
+  "fresh_lean_replay": false,
+  "remaining_obligations": [
+    "Decide whether to release this as a standalone companion note."
+  ],
+  "exact_symbolic_controls": {
+    "command": ".venv/bin/python unpublished/exact-real-chamber-spectra/verify.py",
+    "result": "passed",
+    "scope": "Selected exact seed, reconstruction, divisibility and chamber controls; not the all-degree theorem or a novelty audit."
+  },
+  "source_archive_reproduction": {
+    "archive": "source.zip",
+    "result": "passed",
+    "scope": "Clean LaTeX build from the isolated current source archive, with exact page text and rendered-pixel comparison to the designated PDF. Artifact reproduction only, not independent mathematical review."
+  }
+}

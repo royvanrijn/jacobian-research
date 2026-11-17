@@ -1,0 +1,46 @@
+{
+  "title": "The Gaussian Moments Conjecture in Two Variables",
+  "author": {
+    "name": "Roy van Rijn",
+    "orcid": "0009-0000-2808-0645"
+  },
+  "summary": "Proves the Gaussian Moments Conjecture for two real variables by constant-term extraction and prime isolation.",
+  "status": "published-preprint",
+  "publication_date": "2026-07-23",
+  "doi": "10.5281/zenodo.21534699",
+  "zenodo": "https://zenodo.org/records/21534699",
+  "license": "CC-BY-4.0",
+  "pdf": "gaussian-moments-two-variables.pdf",
+  "source": "main.tex",
+  "verification": {
+    "scope": "Complete bivariate Lean development without sorry, conditional on two named mathematical inputs: Duistermaat-van der Kallen and finite-type specialization.",
+    "limits": "These two inputs remain explicit axioms; independent external review is not claimed.",
+    "evidence": [
+      "../../../research/foundations/formal/gmc2/README.md"
+    ]
+  },
+  "publication_record_checked": "2026-11-17",
+  "unpublished_revision": "../",
+  "abstract": "This preprint proves the Gaussian Moments Conjecture for two real Gaussian variables.\nUsing circular coordinates, Gaussian integration is decomposed into constant-term extraction in an angular variable followed by the factorial functional (U^j \\mapsto j!) in a radial variable. If a polynomial with vanishing positive moments contains both positive and negative rotational weights, an exposed lower face of its Newton diagram yields a nonzero lowest radial term. The Duistermaat–van der Kallen constant-term theorem and a reduction-modulo-(p) argument then show that this term cannot cancel after applying the factorial functional.\nIt follows that every polynomial with all positive Gaussian moments equal to zero has rotational weights of one strict sign. The mixed-moment conclusion is then immediate, proving the conjecture in dimension two.\nTogether with Christopher Long’s recent counterexamples in every dimension at least three, this determines the exact dimensional range in which the Gaussian Moments Conjecture holds. The main proof has also been formalized in Lean.",
+  "abstract_format": "text",
+  "keywords": [
+    "Gaussian Moments Conjecture",
+    "Gaussian integration",
+    "constant terms",
+    "Laurent polynomials",
+    "Duistermaat–van der Kallen theorem",
+    "Newton polytope",
+    "reduction modulo p",
+    "Lean formalization"
+  ],
+  "resource_type": {
+    "title": "Preprint",
+    "type": "publication",
+    "subtype": "preprint"
+  },
+  "source_bundle": "arxiv-upload.zip",
+  "source_bundle_members": {
+    "main.tex": "arxiv-upload/main.tex",
+    "main.bbl": "arxiv-upload/main.bbl"
+  }
+}

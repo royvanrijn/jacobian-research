@@ -1,13 +1,13 @@
 {
-  "status": "unpublished; restructured written proof with internal mathematical review; independent review pending",
+  "status": "unpublished; complete scoped written proof with internal source and artifact checks; independent review pending",
   "checked_on": "2026-11-17",
   "source": "main.tex",
   "pdf": "gaussian_moments_one_base_constant_quadratic_fibres.pdf",
-  "pages": 11,
+  "pages": 12,
   "source_hashes": {
-    "main.tex": "9f931c3d2dce2a063b90b951775786785662ad02d0ba214295d042718c094185"
+    "main.tex": "a587577b0797c22d434096524682b3c09ccd4d9232543e7dcb9c65011f36a706"
   },
-  "pdf_sha256": "ce6577fecd535202baf0b3c2a3c16375b4adc90631cabe315fb0665c98dff350",
+  "pdf_sha256": "309f23d9398191e9be4f0f1e90f2432d10917134d4de750ac12b2447cf827318",
   "build": "latexmk -pdf -jobname=gaussian_moments_one_base_constant_quadratic_fibres -interaction=nonstopmode -halt-on-error main.tex",
   "checks": {
     "latexmk_cross_references_stable": true,
@@ -15,10 +15,10 @@
     "overfull_boxes": 0,
     "underfull_boxes": 0,
     "all_pages_rendered": true,
-    "visual_review": "All 11 pages rendered and compared with the preceding reviewed PDF. Only page 11 changed; it was visually inspected after standardizing the AI attribution, with no clipping, overlap or unresolved references.",
+    "visual_review": "All 12 pages rendered and visually inspected at contact-sheet level after the review corrections; no clipping, overlap or broken references found.",
     "standalone_source_bundle_build": true,
     "rebuilt_pdf_text_and_pixels_match": true,
-    "rebuild_scope": "Internal clean build from the isolated source archive; all pages match retained PDF text and rendering. This is artifact reproduction, not independent mathematical review."
+    "rebuild_scope": "Clean build from the current isolated source archive; every page text and rendered pixel compared. Artifact reproduction only, not independent mathematical review."
   },
   "review_scope": "Complete internal source review of the restructured written proof, its exceptional coefficient or covariance cases, and the new corollaries. Builds and bounded controls are recorded separately and do not certify the universal theorems.",
   "remaining_review": [
@@ -78,5 +78,41 @@
     ],
     "latex_issues": [],
     "canonical_paragraph_occurrences": 1
+  },
+  "release_review_corrections": {
+    "review_date": "2026-11-17",
+    "scope": "Source-aware internal correction of the attached critical release review; not external review or a fresh formal proof replay.",
+    "changes": [
+      "Explicit cross-references from polynomial-unit reduction to the full stationary-frame theorem and its seed-exclusion consequence; credited shared boundary construction; pinned marker and boundary companions."
+    ],
+    "checks": [
+      "Clean LaTeX build with no warnings or unresolved references",
+      "All pages rendered and visually inspected",
+      "Standalone source archive build and complete text/pixel comparison"
+    ],
+    "blind_reader": "Completed on corrected PDF; see isolated_pdf_only_reading."
+  },
+  "isolated_pdf_only_reading": {
+    "performed": true,
+    "date": "2026-11-17",
+    "reviewer": "OpenAI Codex agent blind_geometry_fibres",
+    "type": "isolated internal AI PDF-only reading",
+    "supplied_context": "Only the assigned PDFs and five reader questions; no repository sources, earlier review, literature or supplements. Multiple assigned PDFs were read separately by this reviewer.",
+    "pdf_sha256": "309f23d9398191e9be4f0f1e90f2432d10917134d4de750ac12b2447cf827318",
+    "pages": 12,
+    "answers": {
+      "contribution": "One-base equivalence of purity, safety, polynomial unit and finite identities for arbitrary constant quadratic fibres and Jordan blocks; sufficient degree bound and affine Gaussian extension.",
+      "mechanism": "Formal leading-coefficient exclusion forces an effective quadratic; Jordan pole rigidity makes nonzero sources affine; determinant-one precision cancels every marker pole.",
+      "hardest_step": "Theorem7.2/Corollary7.3, pp9-11: complete stationary frame and seed-quotient extension; Jordan rigidity p4.",
+      "limitations": "One ordinary nonisotropic base, constant fibre matrix, nonoptimal bound; the two-base one-fibre case remains unresolved here.",
+      "obstacles": "Specialist checking of separation, completeness and differential complements remains necessary; no concrete contradiction. Reference continuation on p12 is only a layout-efficiency observation."
+    },
+    "finding": "No demonstrated fatal mathematical error. Unperformed specialist checks and formal replay remain separate obligations.",
+    "external_review": false
+  },
+  "source_archive_reproduction": {
+    "archive": "gaussian_moments_one_base_source.zip",
+    "result": "passed",
+    "scope": "Clean LaTeX build from the isolated current source archive, with exact page text and rendered-pixel comparison to the designated PDF. Artifact reproduction only, not independent mathematical review."
   }
 }

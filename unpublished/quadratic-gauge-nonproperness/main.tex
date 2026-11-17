@@ -16,7 +16,7 @@
 
 \title{The Exact Nonproperness Locus of the Quadratic-Gauge Keller Maps}
 \author{Roy van Rijn\\{\small Independent researcher}}
-\date{27 July 2026}
+\date{17 November 2026}
 \hypersetup{
   pdftitle={The Exact Nonproperness Locus of the Quadratic-Gauge Keller Maps},
   pdfauthor={Roy van Rijn},
@@ -43,9 +43,23 @@ Let \(K\) be a characteristic-zero field and
  G(S)=g_1S+g_2S^2+\cdots+g_NS^N,\qquad g_1g_3g_N\neq0.
  \label{eq:seed}
 \end{equation}
-The quadratic-gauge map \(F_G=(\Pi,B,C):\A^3_K\to\A^3_K\) is the map
-constructed in the companion prescribed-fiber paper.  Its scalar inverse
-equation is
+We use the quadratic gauge from the prescribed-fiber construction
+\cite{Companion}, giving its formulas and reconstruction here.
+In source coordinates put
+\begin{equation}
+ t=1+xy,\qquad q=t^2z+\frac{g_1}{g_3}y^2(1+3t).
+ \label{eq:source-tq}
+\end{equation}
+Define the polynomial map \(F_G=(\Pi,B,C):\A^3_K\to\A^3_K\) by
+\begin{align}
+ \Pi={}&tq,\notag\\
+ B={}&y+3\frac{g_3}{g_1}xq+2\frac{g_2}{g_1}tq
+       +\sum_{k=4}^N k\frac{g_k}{g_1}t^2x^{k-2}q^k,\notag\\
+ C={}&x(5-3t)-\frac{g_3}{g_1}x^3z
+       -\sum_{k=4}^N(k-2)\frac{g_k}{g_1}(xq)^k.
+ \label{eq:source-map}
+\end{align}
+Its scalar inverse equation is
 \[
  E_{\Pi,B,C}(S)=G_\Pi(S)-\frac{g_1}{2}(BS^2+C),
 \]
@@ -64,21 +78,71 @@ For \(\pi\neq0\), its literal fiber is
  \Spec\left((K[S]/(E_{\pi,b,c}))[1/\overline{E_{\pi,b,c}'}]\right).
  \label{eq:localized-input}
 \end{equation}
-These identities follow from the compact inverse design and
-root-to-source reconstruction in the prescribed-fiber paper; the present
-note begins with them and studies the boundary.
+For clarity, the compact calculation verifying these assertions is as
+follows.  On \(t\neq0\), set
+\[
+ S=x/t,\quad Q=y+xq,\quad D=1-SQ+\Pi S^2=t^{-1},\quad
+ \beta(\Pi,S)=\frac{G_\Pi'(S)/g_1-1-\Pi S^2}{S}.
+\]
+The last quotient is a polynomial.  Substituting \eqref{eq:source-tq} into
+\eqref{eq:source-map}, coefficient by coefficient, gives
+\[
+ B=Q+\beta(\Pi,S),\qquad C=2G_\Pi(S)/g_1-BS^2,\qquad
+ D=E'_{\Pi,B,C}(S)/g_1.
+\]
+Direct differentiation gives
+\[
+ \det\frac{\partial(\Pi,S,Q)}{\partial(x,y,z)}=t=D^{-1},\qquad
+ \det\frac{\partial(\Pi,B,C)}{\partial(\Pi,S,Q)}=-2D.
+\]
+Consequently the polynomial Jacobian determinant is \(-2\).
+For \(\pi\neq0\), every fiber point has \(t,q\) invertible because
+\(tq=\pi\).  Conversely, a root \(s\) with derivative unit reconstructs by
+\[
+ \begin{gathered}
+ d=E'_{\pi,b,c}(s)/g_1,\quad Q=b-\beta(\pi,s),\quad
+ t=d^{-1},\quad x=s/d,\quad y=Q-\pi s,\quad q=\pi d,\\
+ z=d^2\left(q-\frac{g_1}{g_3}y^2(1+3/d)\right).
+ \end{gathered}
+\]
+The identity \(d=1-sQ+\pi s^2\) verifies \(1+xy=t\); the other identities
+then verify \(F_G(x,y,z)=(\pi,b,c)\).  These operations are inverse over
+any commutative test algebra, proving \eqref{eq:localized-input}.
+They also give the rational function-field equality
+\(K(x,y,z)=K(\Pi,B,S)\), with \(\Pi,B,S\) algebraically independent and
+\(C=2G_\Pi(S)/g_1-BS^2\) of degree \(N\) in \(S\).  This polynomial
+has degree \(N\) over \(K(\Pi,B)\), so the induced extension
+\(K(\Pi,B,S)/K(\Pi,B,C)\) has degree \(N\), proving the generic degree.
+
+The boundary formulas used below follow from the same polynomial map.
+On \(q=0\), one has \(\Pi=0\) and \(B=y\).  This divisor has
+\(t\neq0\), since at \(t=0\) the equation for \(q\) is
+\(q=(g_1/g_3)y^2\neq0\).  Thus \(S=x/t\) is defined there, and the compact
+identities give
+\[
+ C=2S-BS^2,\qquad 1-BS=t^{-1}.
+\]
+On \(t=0\), one has \(xy=-1\),
+\(q=(g_1/g_3)y^2\), and \(B=-2y=2/x\).  In the expression for \(C\),
+the coefficient of \(z\) is \(-(g_3/g_1)x^3\neq0\).  These identities
+suffice to check the complete boundary table without the companion paper.
 
 For a squarefree \(P\in K[T]\) of degree \(N\geq3\) and
 \(a\in K\) with \(P'(a)P'''(a)\neq0\), the prescribed-fiber seed is
 \[
  G(S)=P(a+S)-P(a).
 \]
-After the determinant-one output normalization, the distinguished target is
+For the displayed map \(F_G\), the distinguished target is
 \begin{equation}
  y_{P,a}=\left(1,0,-\frac{2P(a)}{P'(a)}\right),
  \label{eq:prescribed-target}
 \end{equation}
-and its inverse equation is \(P(a+S)\).
+and its inverse equation is \(P(a+S)\).  If determinant one is required,
+choose the output automorphism \(L(\Pi,B,C)=(\Pi,-B/2,C)\),
+so that \(\det D(L\circ F_G)=1\).  Since the target has \(B=0\),
+its coordinates are unchanged by \(L\).  The discriminant and boundary
+formulas below use the displayed, unnormalized coordinates of \(F_G\);
+the corresponding loci for \(L\circ F_G\) are their images under \(L\).
 
 \input{sections/nonproperness}
 
@@ -87,10 +151,11 @@ and its inverse equation is \(P(a+S)\).
 The graph-boundary base-change argument, Jelonek descent, complete
 \(\Pi=0\) fiber table, and Newton-polygon discriminant calculation are
 ordinary mathematical proofs and are not part of the Lean formalization of
-the prescribed-fiber theorem.  The exact symbolic audit is
-\[
- \texttt{scripts/verify\_quadratic\_gauge\_nonproperness.py}.
-\]
+the prescribed-fiber theorem.  The accompanying source bundle includes a symbolic checker for selected
+seeds, boundary identities and discriminant orders.  Its README states the
+command and finite input range.  These checks supplement the all-degree
+proof and do not verify it formally.  The versioned companion source
+\cite{Companion} provides the broader prescribed-fiber context.
 
 \paragraph{AI assistance and review.}
 ChatGPT (OpenAI) assisted with mathematical arguments, literature checks,
@@ -98,6 +163,12 @@ exposition, proof review and verification code.
 
 \begin{thebibliography}{9}
 \footnotesize
+
+\bibitem{Companion}
+R.~van Rijn, \emph{Over Characteristic Zero, Every Finite \'Etale Algebra
+of Rank at Least Three Is a Full Keller Fiber},
+repository edition \texttt{c32b9b4}, 17 November 2026,
+\href{https://github.com/royvanrijn/jacobian-research/tree/c32b9b4d273cf7988e85184a0d5eae9c488727fd/unpublished/common-arithmetic-fibers}{versioned manuscript and source}.
 
 \bibitem{Jelonek1993}
 Z.~Jelonek,

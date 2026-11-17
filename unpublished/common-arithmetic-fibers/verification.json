@@ -1,0 +1,63 @@
+{
+  "edition_date": "2026-11-17",
+  "source": "main.tex",
+  "pdf": "paper.pdf",
+  "pdf_sha256": "ffcbd367d2cdb64c5f2dd1eeac65e9fb4f5243baf6886539921bbc91bb42b0cf",
+  "source_sha256": {
+    "data/explicit-quintic.tex": "789557a0df4c9ac8cce873424abc024bdf002efff12618d14209fe9fa19a52cb",
+    "main.tex": "e7885ba758b6ba518fb46b89036dbc89442f871cc2819e3ce726f473964289c2",
+    "metadata.json": "0cbb257af0f354dc7193c282b679a4a47ccbe4b8d1f9a652d9cc48f2696d10ae",
+    "sections/00-abstract.tex": "f285df423bbccad162f734b605cb34abdeb48e052e692b14e18e87ba2a27defd",
+    "sections/00-introduction.tex": "028386d5fe6db7096086bfd84a3948cae2d2058ee45e759c6b493961d27722cf",
+    "sections/01-keller-fibers.tex": "2ee4ef6da0ed0c502e9cb89ae6aa6f5bccfea6de3a95b73d9ae69b00722733b5",
+    "sections/02-quadratic-gauge.tex": "d638447b90f4647fa6969600b90f771ce14594a3ba8ae09c1f9a8d2a367c9ad4",
+    "sections/02a-gauge-identities.tex": "b9f6e1eca0b45df06b28ce220a3414ea22d4295253f04eaac3bc4a354ca1bc0d",
+    "sections/03-realization.tex": "33e6e57f4f1184fb3d678717cac6d9b043d3a5d520245ddb0d40830138fdb110",
+    "sections/04-explicit-example.tex": "67b57120ad101803944dce405ce6f48122291d76ef01e1963360346c8c70560b",
+    "sections/06-conclusion.tex": "80ead642fb977236032a1fdc920976e10978a47dfb3f6eece851e578796ada4b",
+    "sections/07-references.tex": "f7a6508d05bb07858a04bd33a95fb43d458cf3a1dd314c6d6d360a8efaa92f7b",
+    "sections/appendix-lean.tex": "e50d520973c7d7b770937c0248d170b8dcccf4ea7c8801b3a619685de5f8f428",
+    "verify_comparison.py": "283e035952d0baba0631b80a9708a40e14f30d7ce97044362769a38e188a11af"
+  },
+  "build_command": "latexmk -pdf -jobname=paper -interaction=nonstopmode -halt-on-error main.tex",
+  "build_result": "pass",
+  "pages": 19,
+  "latex_warnings": [],
+  "render_review": {
+    "all_pages": "contact sheet inspected",
+    "changed_passages": "reading-resolution inspection"
+  },
+  "formal_supplement_commit": "c32b9b4d273cf7988e85184a0d5eae9c488727fd",
+  "fresh_lean_build": false,
+  "fresh_transitive_axiom_audit": false,
+  "current_edition_isolated_reader_test": "Performed isolated internal PDF-only reading; see isolated_pdf_only_reading. Not external review.",
+  "external_human_review": "not performed",
+  "checks": [
+    "exact Ulam coefficient controls: 45 pass"
+  ],
+  "scope": "Internal source, artifact and bounded algebra/arithmetic checks; not certification of the complete mathematical proofs.",
+  "source_archive_build": "pass: extracted source.zip compiles without undeclared workspace files",
+  "isolated_pdf_only_reading": {
+    "performed": true,
+    "date": "2026-11-17",
+    "reviewer": "OpenAI Codex agent blind_binary_arithmetic",
+    "type": "isolated internal AI PDF-only reading",
+    "supplied_context": "Only the assigned PDFs and five reader questions; no repository sources, earlier review, literature or supplements. Multiple assigned PDFs were read separately by this reviewer.",
+    "pdf_sha256": "ffcbd367d2cdb64c5f2dd1eeac65e9fb4f5243baf6886539921bbc91bb42b0cf",
+    "pages": 19,
+    "answers": {
+      "contribution": "Quadratic-gauge full-fibre construction and formal certificate, expressly crediting prior characteristic-zero existence; separate supplied-presentation characteristic scope.",
+      "mechanism": "Design inverse equation and derivative reconstruction unit, clear source denominators, prove functorial whole-fibre and actual function-field degree, then translate supplied polynomial.",
+      "hardest_step": "Theorem3.2 pp7-9 and AppendixA pp16-17: whole-fibre reconstruction and actual source/target function-field comparison.",
+      "limitations": "Noncanonical abstract choices; supplied-data scalar extension; characteristic-not-two version requires Hasse-coefficient hypotheses and is outside end-to-end formalization.",
+      "obstacles": "Authenticate prior-work specialization and formal correspondence in supplements; no missing chart or actual-map mismatch found in PDF."
+    },
+    "finding": "No demonstrated fatal mathematical error. Unperformed specialist checks and formal replay remain separate obligations.",
+    "external_review": false
+  },
+  "source_archive_reproduction": {
+    "archive": "source.zip",
+    "result": "passed",
+    "scope": "Clean LaTeX build from the isolated current source archive, with exact page text and rendered-pixel comparison to the designated PDF. Artifact reproduction only, not independent mathematical review."
+  }
+}

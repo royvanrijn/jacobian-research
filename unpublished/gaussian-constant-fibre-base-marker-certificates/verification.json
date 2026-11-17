@@ -1,13 +1,13 @@
 {
-  "status": "unpublished; restructured written proof with internal mathematical review; independent review pending",
+  "status": "unpublished; complete scoped written proof with internal source and artifact checks; independent review pending",
   "checked_on": "2026-11-17",
   "source": "main.tex",
   "pdf": "gaussian_marker_reduction_constant_quadratic_fibre.pdf",
   "pages": 10,
   "source_hashes": {
-    "main.tex": "1ed5c3e9b1502e10df4920e166019c5d67e86688c71ffe09edeeac67b6af2af3"
+    "main.tex": "536deb3536500c7913b91c8d0ad9a83dfd5a8b9309ae0bcc52f5c8d0f498fdce"
   },
-  "pdf_sha256": "7b9df27eae004cd121fb47c844d6d713b2a7ccf90223af0d46c8c9f68f1044b2",
+  "pdf_sha256": "b1a487cfcc2bb4431b2f818876205547ea52276b23719e9d1fe575dd31794a13",
   "build": "latexmk -pdf -jobname=gaussian_marker_reduction_constant_quadratic_fibre -interaction=nonstopmode -halt-on-error main.tex",
   "checks": {
     "latexmk_cross_references_stable": true,
@@ -15,10 +15,10 @@
     "overfull_boxes": 0,
     "underfull_boxes": 0,
     "all_pages_rendered": true,
-    "visual_review": "All 10 pages rendered and compared with the preceding reviewed PDF. Only page 10 changed; it was visually inspected after standardizing the AI attribution, with no clipping, overlap or unresolved references.",
+    "visual_review": "All 10 pages rendered and visually inspected at contact-sheet level after the review corrections; no clipping, overlap or broken references found.",
     "standalone_source_bundle_build": true,
     "rebuilt_pdf_text_and_pixels_match": true,
-    "rebuild_scope": "Internal clean build from the isolated source archive; all pages match retained PDF text and rendering. This is artifact reproduction, not independent mathematical review."
+    "rebuild_scope": "Clean build from the current isolated source archive; every page text and rendered pixel compared. Artifact reproduction only, not independent mathematical review."
   },
   "review_scope": "Complete internal source review of the restructured written proof, its exceptional coefficient or covariance cases, and the new corollaries. Builds and bounded controls are recorded separately and do not certify the universal theorems.",
   "remaining_review": [
@@ -90,5 +90,41 @@
     ],
     "latex_issues": [],
     "canonical_paragraph_occurrences": 1
+  },
+  "release_review_corrections": {
+    "review_date": "2026-11-17",
+    "scope": "Source-aware internal correction of the attached critical release review; not external review or a fresh formal proof replay.",
+    "changes": [
+      "Sufficient unit-content wording; numbered degree-transfer proposition retaining field/unit-content hypotheses; exact scalar theorem kept separate; actual-image proof route explained; pinned Jordan companion."
+    ],
+    "checks": [
+      "Clean LaTeX build with no warnings or unresolved references",
+      "All pages rendered and visually inspected",
+      "Standalone source archive build and complete text/pixel comparison"
+    ],
+    "blind_reader": "Completed on corrected PDF; see isolated_pdf_only_reading."
+  },
+  "isolated_pdf_only_reading": {
+    "performed": true,
+    "date": "2026-11-17",
+    "reviewer": "OpenAI Codex agent blind_geometry_fibres",
+    "type": "isolated internal AI PDF-only reading",
+    "supplied_context": "Only the assigned PDFs and five reader questions; no repository sources, earlier review, literature or supplements. Multiple assigned PDFs were read separately by this reviewer.",
+    "pdf_sha256": "b1a487cfcc2bb4431b2f818876205547ea52276b23719e9d1fe575dd31794a13",
+    "pages": 10,
+    "answers": {
+      "contribution": "Base-marker generation for one constant quadratic fibre, general-ring coefficient-content and nilpotent extensions, and exact scalar actual-image defect.",
+      "mechanism": "Universal even recurrences, Bezout, differentiated odd certificates, Taylor coefficient extraction and Weyl commutator; remove the full Gaussian kernel for the scalar defect.",
+      "hardest_step": "Section6.2, p8: complete Gaussian kernel and point-module decomposition over arbitrary coefficient rings.",
+      "limitations": "General-ring conditions for arbitrary B are sufficient only; exact criterion is scalar; numerical transfer retains field/unit-content hypotheses; two-base purity-to-safety remains open.",
+      "obstacles": "Verify spatial witnesses together with the parameter connection and full point-torsion calculation; no concrete defect found."
+    },
+    "finding": "No demonstrated fatal mathematical error. Unperformed specialist checks and formal replay remain separate obligations.",
+    "external_review": false
+  },
+  "source_archive_reproduction": {
+    "archive": "gaussian_marker_reduction_source.zip",
+    "result": "passed",
+    "scope": "Clean LaTeX build from the isolated current source archive, with exact page text and rendered-pixel comparison to the designated PDF. Artifact reproduction only, not independent mathematical review."
   }
 }

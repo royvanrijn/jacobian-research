@@ -16,6 +16,9 @@ from zipfile import ZipFile
 
 from dependency_graph import DependencyGraph, GraphValidationError
 from dependency_sources import missing_source_closure
+from dependency_coverage import CoverageError, check_coverage, coverage_state, render_coverage
+from dependency_bounds import bounds_records, bound_comparisons
+from dependency_references import check_references, reference_state, render_references
 
 ROOT = Path(__file__).resolve().parents[1]
 REPOSITORY = ROOT.parent
@@ -39,7 +42,7 @@ def reference(value: str, base: Path | None = None, *, directory: bool = False) 
 
 
 def validate(data: dict) -> tuple[int, int]:
-    assert data["schema_version"] == 2
+    assert data["schema_version"] in {2, 3}
     assert data["authority"] == "MATH_STATUS.json"
     topics = data["topics"]
     assert isinstance(topics, list) and topics, "no current research topics"
@@ -87,9 +90,12 @@ def validate(data: dict) -> tuple[int, int]:
             assert isinstance(question["question"], str) and question["question"].strip()
             reference(question["source"])
     graph = dependency_graph(data)
-    assert graph is not None, "schema 2 requires an explicit dependency graph"
+    assert graph is not None, "schema 2+ requires an explicit dependency graph"
+    if data["schema_version"] >= 3:
+        assert data.get("graph", {}).get("coverage", {}).get("schema_version") == 1, (
+            "schema 3 requires the current research source inventory")
     generated = {(ROOT / name).resolve() for name in
-                 ["STATUS.md", "SCOPES.md", "DEPENDENCIES.md", "README.md",
+                 ["STATUS.md", "SCOPES.md", "DEPENDENCIES.md", "COVERAGE.md", "REFERENCES.md", "BOUNDS.md", "README.md",
                   *(topic["readme"] for topic in topics)]}
     for node in graph.nodes.values():
         if node["supplemental"]:
@@ -116,6 +122,7 @@ def validate(data: dict) -> tuple[int, int]:
             assert result["id"] in graph.incoming, f"unmapped principal result: {result['id']}"
             assert result.get("dependency_coverage") in {"complete", "partial"}, (
                 f"unspecified dependency coverage: {result['id']}")
+    bounds_records(graph)
     return len(topics), len(result_ids)
 
 
@@ -162,7 +169,7 @@ def render(data: dict) -> str:
              "independent replay, formal verification and external review remain separate.", "",
              "[Published papers](../README.md) · [Unpublished manuscripts](../unpublished/README.md) · "
              "[Research topics](README.md) · [Scope and gaps](SCOPES.md) · "
-             "[Implications](DEPENDENCIES.md)", "",
+             "[Implications](DEPENDENCIES.md) · [Source coverage](COVERAGE.md) · [Bounds](BOUNDS.md)", "",
              "The authored state describes the exact statement below. Graph status is computed "
              "from declared proof routes and current source pins; it is an internal evidence "
              "classification, not an independent proof audit. A proved scoped result can coexist "
@@ -265,7 +272,7 @@ def render_research_index(data: dict) -> str:
               "[MATH_STATUS.json](MATH_STATUS.json). It records main statements, proof sources "
               "and verification limits. Internal proof status does not imply publication.",
               "", "[Scope and missing gaps](SCOPES.md) · [Dependency DAG](DEPENDENCIES.md) · "
-              "[How to maintain implications](DEPENDENCY_GUIDE.md)",
+              "[How to maintain implications](DEPENDENCY_GUIDE.md) · [Source coverage](COVERAGE.md) · [Bounds](BOUNDS.md)",
               "", "[Verification commands](REPRODUCE.md)", ""]
     return "\n".join(lines)
 
@@ -282,6 +289,11 @@ def navigation_outputs(data: dict) -> dict[Path, str]:
         from dependency_views import render_dependency_report, render_scope_report
         outputs[ROOT / "DEPENDENCIES.md"] = render_dependency_report(data, graph)
         outputs[ROOT / "SCOPES.md"] = render_scope_report(data, graph)
+        if data.get("graph", {}).get("coverage"):
+            outputs[ROOT / "COVERAGE.md"] = render_coverage(data, graph)
+        outputs[ROOT / "BOUNDS.md"] = render_bounds(data, graph)
+        if data.get("graph", {}).get("external_references"):
+            outputs[ROOT / "REFERENCES.md"] = render_references(data, graph)
     return outputs
 
 
@@ -307,6 +319,37 @@ def check_extracted_sources(meta: dict, directory: Path, sealed_names: set[str])
                 f"extracted publication source changed: {directory.name}/{local}")
 
 
+def check_deposited_edition(path: Path) -> None:
+    """Validate the immutable public edition separately from a local revision."""
+    meta = json.loads(path.read_text())
+    assert all(isinstance(meta[key], str) and meta[key].strip()
+               for key in ("title", "summary", "status", "source", "pdf")), str(path)
+    assert meta["author"]["name"]
+    assert re.fullmatch(r"\d{4}-\d{4}-\d{4}-[\dX]{4}", meta["author"]["orcid"])
+    assert meta["status"] == "published-preprint", f"archive is not a deposited edition: {path}"
+    assert re.fullmatch(r"10\.5281/zenodo\.\d+", meta["doi"])
+    assert meta["zenodo"].startswith("https://zenodo.org/records/")
+    assert re.fullmatch(r"\d{4}-\d{2}-\d{2}", meta["publication_date"])
+    reference("README.md", path.parent)
+    reference(meta["source"], path.parent)
+    assert meta["verification"]["scope"] and meta["verification"]["limits"]
+    for evidence in meta["verification"]["evidence"]:
+        reference(evidence, path.parent)
+    for field in ("unpublished_revision", "current_edition"):
+        if meta.get(field):
+            reference(meta[field], path.parent, directory=True)
+    seal = json.loads(reference("deposited-files.json", path.parent).read_text())
+    assert seal["record"] == meta["zenodo"], f"deposit record mismatch: {path.parent}"
+    sealed_names = set()
+    for item in seal["files"]:
+        contents = reference(item["file"], path.parent).read_bytes()
+        assert hashlib.sha256(contents).hexdigest() == item["sha256"], f"deposit SHA mismatch: {item['file']}"
+        assert hashlib.md5(contents).hexdigest() == item["md5"], f"deposit MD5 mismatch: {item['file']}"
+        sealed_names.add(item["file"])
+    assert meta["pdf"] in sealed_names, f"published PDF is not the sealed deposited file: {path.parent}"
+    check_extracted_sources(meta, path.parent, sealed_names)
+
+
 def check_portfolio() -> tuple[int, int]:
     counts = []
     for collection in ("results", "unpublished"):
@@ -328,33 +371,16 @@ def check_portfolio() -> tuple[int, int]:
             for field in ("source_bundle", "abstract_source"):
                 if meta.get(field):
                     reference(meta[field], path.parent)
-            if meta.get("published_edition") and "://" not in meta["published_edition"]:
-                reference(meta["published_edition"], path.parent, directory=meta["published_edition"].endswith("/"))
+            assert meta["published"] is False, f"current revision mislabeled as deposited: {path}"
+            assert meta["status"] in {"draft", "revision", "ready-for-review", "parked", "partial-draft"}
+            assert meta["next_steps"] and all(isinstance(step, str) and step.strip() for step in meta["next_steps"])
+            assert meta["verification"] and meta["build"]
             if collection == "results":
-                assert meta["status"] == "published-preprint", f"unpublished work in results: {path.parent.name}"
-                assert re.fullmatch(r"10\.5281/zenodo\.\d+", meta["doi"])
-                assert meta["zenodo"].startswith("https://zenodo.org/records/")
-                assert re.fullmatch(r"\d{4}-\d{2}-\d{2}", meta["publication_date"])
-                assert meta["verification"]["scope"] and meta["verification"]["limits"]
-                for evidence in meta["verification"]["evidence"]:
-                    reference(evidence, path.parent)
-                seal = json.loads(reference("deposited-files.json", path.parent).read_text())
-                assert seal["record"] == meta["zenodo"], f"deposit record mismatch: {path.parent.name}"
-                sealed_names = set()
-                for item in seal["files"]:
-                    contents = reference(item["file"], path.parent).read_bytes()
-                    assert hashlib.sha256(contents).hexdigest() == item["sha256"], f"deposit SHA mismatch: {item['file']}"
-                    assert hashlib.md5(contents).hexdigest() == item["md5"], f"deposit MD5 mismatch: {item['file']}"
-                    sealed_names.add(item["file"])
-                assert meta["pdf"] in sealed_names, f"published PDF is not the sealed deposited file: {path.parent.name}"
-                check_extracted_sources(meta, path.parent, sealed_names)
-                if "unpublished_revision" in meta:
-                    reference(meta["unpublished_revision"], path.parent, directory=True)
-            else:
-                assert meta["published"] is False
-                assert meta["status"] in {"draft", "revision", "ready-for-review", "parked", "partial-draft"}
-                assert meta["next_steps"] and all(isinstance(step, str) and step.strip() for step in meta["next_steps"])
-                assert meta["verification"] and meta["build"]
+                assert meta.get("published_edition") == "published/", f"missing published archive: {path.parent}"
+                archive = reference("published/", path.parent, directory=True)
+                check_deposited_edition(reference("metadata.json", archive))
+            elif meta.get("published_edition") and "://" not in meta["published_edition"]:
+                reference(meta["published_edition"], path.parent, directory=meta["published_edition"].endswith("/"))
     return tuple(counts)
 
 
@@ -445,6 +471,91 @@ def check_links() -> tuple[int, int]:
     return checked, len(documents)
 
 
+def render_bounds(data: dict, graph: DependencyGraph) -> str:
+    rows = bounds_records(graph)
+    lines = ["# Quantitative claims and bounds", "",
+             "<!-- Generated from MATH_STATUS.json; run make render-navigation. -->", "",
+             "Bounds retain their exact domains and assumptions. Numeric comparisons use identical "
+             "quantities, domains and parameter restrictions; conditional bounds stay separate. "
+             "Symbolic criteria are displayed without guessing implication or asymptotic order.", "",
+             "[Dependency graph](DEPENDENCIES.md) · [Source coverage](COVERAGE.md) · [Exact scopes](SCOPES.md)", "",
+             "| Claim | State | Quantity | Domain | Bound | Assumptions |", "|---|---|---|---|---|---|"]
+    for row in rows:
+        value = str(row["value"]) if "value" in row else row["expression"]
+        domain = row["domain"]
+        if row.get("parameters"):
+            domain += "; " + json.dumps(row["parameters"], ensure_ascii=False, sort_keys=True)
+        lines.append("| " + markdown_cell(row["id"]) + " | " + row["state"] + " | "
+                     + markdown_cell(row["quantity"]) + " | " + markdown_cell(domain) + " | "
+                     + row["sense"] + ": " + markdown_cell(value) + " | "
+                     + markdown_cell(", ".join(row["assumptions"])) + " |")
+    comparisons = bound_comparisons(graph)
+    opportunities = [item for row in comparisons for item in row["opportunities"]]
+    lines += ["", "## Comparable improvements", ""]
+    if opportunities:
+        for item in opportunities:
+            lines.append("- " + item["weaker_claim"] + ": " + str(item["old_value"]) + " -> "
+                         + str(item["stronger_value"]) + " via " + ", ".join(item["stronger_claims"])
+                         + "; structural consumers: " + (", ".join(item["affected"]) or "none") + ".")
+    else:
+        lines.append("No weaker registered numeric bound has an available stronger bound in an identical domain.")
+    for row in comparisons:
+        if row["conflict"]:
+            lines += ["", "**Conflicting available bounds:** " + row["quantity"] + " in " + row["domain"] + "."]
+    return "\n".join(lines) + "\n"
+
+
+def graph_selection(graph: DependencyGraph, *, focus: str | None = None,
+                    topic: str | None = None, depth: int | None = None,
+                    direction: str = "both") -> set[str]:
+    selected = set(graph.nodes)
+    if topic:
+        selected = {node_id for node_id, node in graph.nodes.items()
+                    if node.get("topic") == topic or topic in node.get("topics", [])}
+    if focus:
+        if focus not in graph.nodes:
+            raise GraphValidationError("unknown focus node: " + focus)
+        seen, pending = {focus}, [(focus, 0)]
+        while pending:
+            node_id, distance = pending.pop(0)
+            if depth is not None and distance >= depth:
+                continue
+            neighbors = set()
+            if direction in {"both", "ancestors"}:
+                for rule_id in graph.incoming[node_id]:
+                    neighbors.update(graph.rules[rule_id]["premises"])
+            if direction in {"both", "descendants"}:
+                neighbors.update(graph.outgoing[node_id])
+            for neighbor in sorted(neighbors - seen):
+                seen.add(neighbor)
+                pending.append((neighbor, distance + 1))
+        selected &= seen
+    return selected
+
+
+def export_selected_dot(graph: DependencyGraph, selected: set[str]) -> str:
+    if selected == set(graph.nodes):
+        return graph.to_dot()
+    quote = json.dumps
+    evaluated = graph.evaluate()
+    lines = ["digraph research {", "  rankdir=LR;"]
+    for node_id in graph.order:
+        if node_id in selected:
+            lines.append("  " + quote(node_id) + " [shape=box,label="
+                         + quote(node_id + "\n" + evaluated[node_id]["state"]) + "];")
+    for rule_id, rule in graph.rules.items():
+        visible = [premise for premise in rule["premises"] if premise in selected]
+        if rule["conclusion"] not in selected or not visible:
+            continue
+        missing = len(rule["premises"]) - len(visible)
+        label = rule_id + " (AND)" + (f" +{missing} omitted required premises" if missing else "")
+        lines.append("  " + quote(rule_id) + " [shape=diamond,label=" + quote(label) + "];")
+        lines += ["  " + quote(premise) + " -> " + quote(rule_id) + ";" for premise in visible]
+        lines.append("  " + quote(rule_id) + " -> " + quote(rule["conclusion"]) + ";")
+    lines.append("}")
+    return "\n".join(lines) + "\n"
+
+
 def print_explanation(record: dict) -> None:
     print(f"{record['id']}: {record['state']} — {record['title']}")
     print(record["scope"])
@@ -506,6 +617,18 @@ def main() -> None:
     simulate.add_argument("--json", action="store_true")
     graph_command = commands.add_parser("graph", help="export the complete implication DAG")
     graph_command.add_argument("--format", choices=("dot", "json"), default="dot")
+    graph_command.add_argument("--focus", help="show a claim and its neighborhood")
+    graph_command.add_argument("--topic")
+    graph_command.add_argument("--depth", type=int, help="maximum edge distance from --focus")
+    graph_command.add_argument("--direction", choices=("both", "ancestors", "descendants"), default="both")
+    coverage = commands.add_parser("coverage", help="inspect source and declaration mapping completeness")
+    coverage.add_argument("--json", action="store_true")
+    references = commands.add_parser("references", help="inspect cited papers and external input verification")
+    references.add_argument("query", nargs="?")
+    references.add_argument("--json", action="store_true")
+    bounds = commands.add_parser("bounds", help="inspect scoped bounds and comparable improvements")
+    bounds.add_argument("--opportunities", action="store_true")
+    bounds.add_argument("--json", action="store_true")
     gaps = commands.add_parser("gaps", help="list scoped mathematical, formal and workflow gaps")
     gaps.add_argument("--topic")
     gaps.add_argument("--kind", choices=("mathematical", "formalization", "verification", "workflow"))
@@ -521,6 +644,13 @@ def main() -> None:
                     path.write_text(content)
                 print(f"Rendered status, scope audit, DAG and {topics} topic guides ({results} results)")
             else:
+                covered = references = None
+                if data["schema_version"] >= 3 or data.get("graph", {}).get("coverage"):
+                    covered = check_coverage(data, graph)
+                if data["schema_version"] >= 3 or data.get("graph", {}).get("external_references"):
+                    references = check_references(data, graph)
+                conflicts = [row for row in bound_comparisons(graph) if row["conflict"] and row["state"] == "proved"]
+                assert not conflicts, "conflicting current bounds: " + json.dumps(conflicts)
                 missing = missing_source_closure(graph)
                 assert not missing, "unpinned local proof includes/imports: " + json.dumps(missing)
                 stale = graph.stale_evidence()
@@ -534,8 +664,13 @@ def main() -> None:
                 published, drafts = check_portfolio()
                 links, documents = check_links()
                 print(f"PASS current research: {topics} topics, {results} principal results; sources, evidence and checker hashes")
-                print(f"PASS dependency DAG: {len(graph.nodes)} nodes, {len(graph.rules)} implications; acyclic, pinned and current")
-                print(f"PASS portfolio: {published} sealed published papers, {drafts} unpublished manuscripts")
+                print(f"PASS dependency DAG: {len(graph.nodes)} nodes, {len(graph.rules)} implications; quotient acyclic, pinned and current")
+                if covered:
+                    print(f"PASS research inventory: {len(covered['documents'])} sources, {covered['declarations']} indexed declarations; no omissions")
+                if references:
+                    print(f"PASS cited resources: {len(references['papers'])} entries; "
+                          f"{references['bibliography_items']} bibliography items accounted for")
+                print(f"PASS portfolio: {published} released papers with sealed published archives, {drafts} unpublished manuscripts")
                 print(f"PASS current input manifests: {pinned_inputs} pinned references; cached primary sources checked")
                 print(f"PASS local links: {links} references in {documents} maintained Markdown files; no proof replay")
         elif args.command == "list":
@@ -555,10 +690,25 @@ def main() -> None:
                     print(record["id"] + ": " + record.get("title", record.get("label", "")))
         elif args.command == "graph":
             assert graph is not None, "no dependency graph"
+            if args.depth is not None and (args.depth < 0 or not args.focus):
+                parser.error("--depth requires --focus and a nonnegative value")
+            if args.topic and args.topic not in {topic["id"] for topic in data["topics"]}:
+                parser.error("unknown topic: " + args.topic)
+            selected = graph_selection(graph, focus=args.focus, topic=args.topic, depth=args.depth,
+                                       direction=args.direction)
             if args.format == "dot":
-                print(graph.to_dot(), end="")
+                print(export_selected_dot(graph, selected), end="")
             else:
-                print(json.dumps({"nodes": graph.evaluate(), "implications": list(graph.rules.values())},
+                evaluated = graph.evaluate()
+                rules = [rule for rule in graph.rules.values() if rule["conclusion"] in selected
+                         and any(premise in selected for premise in rule["premises"])]
+                print(json.dumps({"nodes": {node_id: evaluated[node_id] for node_id in graph.order if node_id in selected},
+                                  "definitions": {node_id: graph.nodes[node_id] for node_id in selected},
+                                  "implications": rules,
+                                  "quotient": graph.quotient() if hasattr(graph, "quotient") else None,
+                                  "selection_is_complete": selected == set(graph.nodes),
+                                  "omitted_premises": sorted({premise for rule in rules for premise in rule["premises"]
+                                                             if premise not in selected})},
                                  indent=2, ensure_ascii=False))
         elif args.command == "explain":
             assert graph is not None, "no dependency graph"
@@ -600,6 +750,43 @@ def main() -> None:
                     print(json.dumps(change, ensure_ascii=False))
                 if not result["changes"]:
                     print("No effective state changes.")
+        elif args.command == "coverage":
+            assert graph is not None, "no dependency graph"
+            state = coverage_state(data, graph)
+            if args.json:
+                print(json.dumps(state, indent=2, ensure_ascii=False))
+            else:
+                print(f"{len(state['documents'])}/{state['expected_documents']} source mappings; "
+                      f"{state['declarations']} indexed declarations; {len(state['errors'])} issues")
+                for error in state["errors"]:
+                    print(error)
+        elif args.command == "references":
+            assert graph is not None, "no dependency graph"
+            state = reference_state(data, graph)
+            papers = state["papers"]
+            if args.query:
+                words = args.query.casefold().split()
+                papers = [paper for paper in papers
+                          if all(word in json.dumps(paper, ensure_ascii=False).casefold() for word in words)]
+            if args.json:
+                print(json.dumps({"papers": papers, "issues": state["errors"]}, indent=2, ensure_ascii=False))
+            else:
+                for paper in papers:
+                    print(paper["id"] + " [" + paper["verification"] + "]: " + paper["citation"])
+                for error in state["errors"]:
+                    print("ISSUE: " + error)
+        elif args.command == "bounds":
+            assert graph is not None, "no dependency graph"
+            records = bound_comparisons(graph) if args.opportunities else bounds_records(graph)
+            if args.opportunities:
+                records = [row for row in records if row["opportunities"] or row["conflict"]]
+            if args.json:
+                print(json.dumps(records, indent=2, ensure_ascii=False))
+            else:
+                for record in records:
+                    print(json.dumps(record, ensure_ascii=False))
+                if not records:
+                    print("No matching bound records or comparable improvement opportunities.")
         elif args.command == "gaps":
             assert graph is not None, "no dependency graph"
             if args.topic and args.topic not in {topic["id"] for topic in data["topics"]}:
@@ -620,7 +807,7 @@ def main() -> None:
             else:
                 for row in rows:
                     print(f"{row['topic']}/{row['id']} [{row['kind']}, {row['state']}]: {row['scope']}")
-    except (GraphValidationError, AssertionError) as error:
+    except (GraphValidationError, CoverageError, AssertionError) as error:
         parser.error(str(error))
 
 

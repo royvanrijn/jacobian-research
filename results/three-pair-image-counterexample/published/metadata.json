@@ -1,0 +1,42 @@
+{
+  "title": "A Four-Term Counterexample to the Special Image Conjecture in Three Pairs",
+  "author": {
+    "name": "Roy van Rijn",
+    "orcid": "0009-0000-2808-0645"
+  },
+  "summary": "An explicit four-term polynomial disproves the Special Image Conjecture in three contraction pairs.",
+  "status": "published-preprint",
+  "publication_date": "2026-07-28",
+  "doi": "10.5281/zenodo.21634058",
+  "zenodo": "https://zenodo.org/records/21634058",
+  "license": "CC-BY-4.0",
+  "pdf": "three-pair-image-counterexample.pdf",
+  "source": "main.tex",
+  "verification": {
+    "scope": "Written all-power identities and an accompanying finite exact regression checker.",
+    "limits": "The deposited frontier 2 <= r_SIC <= 3 is historical; later local work establishes failure with two pairs. The finite checker alone is not an all-order theorem proof.",
+    "evidence": [
+      "verify_three_pair_image_mathieu_counterexample.py",
+      "../../../research/foundations/extended-geometry/TWO_PAIR_IMAGE_MATHIEU_COUNTEREXAMPLE.md"
+    ]
+  },
+  "publication_record_checked": "2026-11-17",
+  "deposited_title": "An Four-Term Counterexample to the Special Image Conjecture in Three Pairs",
+  "abstract": "An explicit four-term counterexample to the Special Image Conjecture in three contraction pairs, obtained by a one-pair bihomogeneous lift of Christopher D. Long's SU(2) Mathieu counterexample. For f=tau(t-y)(wz+vt) and g=y, the paper proves E(f^m)=0 and [t]E(g f^m)=(-1)^(m-1)(m+1)!m! for every m>=1. Thus the minimum possible failure dimension is two or three.",
+  "abstract_format": "text",
+  "keywords": [
+    "special image conjecture",
+    "image conjecture",
+    "Mathieu subspace",
+    "Gaussian moments",
+    "polynomial contraction",
+    "SU(2)",
+    "xz-Conjecture"
+  ],
+  "resource_type": {
+    "title": "Preprint",
+    "type": "publication",
+    "subtype": "preprint"
+  },
+  "current_edition": "../"
+}

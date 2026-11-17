@@ -1,0 +1,63 @@
+{
+  "edition_date": "2026-11-17",
+  "source": "main.tex",
+  "pdf": "paper.pdf",
+  "pdf_sha256": "ab282050d0d04fdea594dafa4dce3f92dc16bcbb609adf6a6f281dbbf6f6e329",
+  "source_sha256": {
+    "main.tex": "6546c5c3789097d0c42c8f80f525941b4530fe02ed646cc636ba12859c2074a9",
+    "metadata.json": "18508f4bde4fea8f3933dee1fe985cee7a4ef5434b6f9de8db564afa5559a3d1",
+    "rational_line_verification.json": "9700875cc68c06da2569c8b82d5b9d8db012356c780322557c62564c43fbef8c",
+    "sections/00-abstract.tex": "f880019e5258f75728bb826322ecdd9a727827e873235108269921f0893528e0",
+    "sections/01-introduction.tex": "b43ce5f0d42179c5333ec477cddf9cce3ece82a8dcb08c4ae9394601a8dfbac8",
+    "sections/02-fixed-map.tex": "30bbf982bdef3fcdf609c230327a16968efd320cbf87d54309cc1e7f7206bfc1",
+    "sections/03-local-global.tex": "dddc7539c9daafc7a81370d6c037a15a083d8abf851c81b460601add0cecde6d",
+    "sections/04-counting.tex": "d3bbea7ec57c169d4928d7fa30b1d3b99ea3c04c414d2265c91a826607c09faa",
+    "sections/04-rational-counting.tex": "033b6ea59155d3f524a3e030f3e3f42000076dc86afbff2aa2413317b2ccee90",
+    "sections/05-minimality.tex": "046fab6c96032da2e792a6a111d1eaa1653835d705c7e6f2d719c2bbc23d5b4c",
+    "sections/06-verification.tex": "3b9a24fc35e6a80437c3b8a957dfad209c10353190535d4626d05bc6f0541f77",
+    "sections/07-discussion.tex": "862b28ee1b712df8776d3f73ef4cfc547376c14290b03c4e8890ca0e8b6a66b3",
+    "sections/08-references.tex": "07984efbfcd9c4ac257b936271127c8146da91931abab26c657e8c12b8603fff",
+    "verify_rational_line.py": "88a1a5122b9ceff5c320c55c277e9c9aabdf8df21b483ee5dd8a398cdda264c8"
+  },
+  "build_command": "latexmk -pdf -jobname=paper -interaction=nonstopmode -halt-on-error main.tex",
+  "build_result": "pass",
+  "pages": 16,
+  "latex_warnings": [],
+  "render_review": {
+    "all_pages": "contact sheet inspected",
+    "changed_passages": "reading-resolution inspection"
+  },
+  "formal_supplement_commit": "c32b9b4d273cf7988e85184a0d5eae9c488727fd",
+  "fresh_lean_build": false,
+  "fresh_transitive_axiom_audit": false,
+  "current_edition_isolated_reader_test": "Performed isolated internal PDF-only reading; see isolated_pdf_only_reading. Not external review.",
+  "external_human_review": "not performed",
+  "checks": [
+    "rational finite audit through height 10000: pass"
+  ],
+  "scope": "Internal source, artifact and bounded algebra/arithmetic checks; not certification of the complete mathematical proofs.",
+  "source_archive_build": "pass: extracted source.zip compiles without undeclared workspace files",
+  "isolated_pdf_only_reading": {
+    "performed": true,
+    "date": "2026-11-17",
+    "reviewer": "OpenAI Codex agent blind_binary_arithmetic",
+    "type": "isolated internal AI PDF-only reading",
+    "supplied_context": "Only the assigned PDFs and five reader questions; no repository sources, earlier review, literature or supplements. Multiple assigned PDFs were read separately by this reviewer.",
+    "pdf_sha256": "ab282050d0d04fdea594dafa4dce3f92dc16bcbb609adf6a6f281dbbf6f6e329",
+    "pages": 16,
+    "answers": {
+      "contribution": "One fixed degree-five Jacobian-one map with complete rational Hasse-failing classification and target-height asymptotic on one rational line; sufficient integer subfamily and minimal-degree result.",
+      "mechanism": "Centered fixed inverse pencil; local cube criteria; character and coprimality convolution, target-height polygon and valuation/content strata.",
+      "hardest_step": "Sections5.2-5.4 pp11-13 analytic counting; Section3 pp6-7 local converse and exceptional fibres.",
+      "limitations": "One target line, counts targets rather than algebra isomorphism classes; no integral-source assertion; formalized arithmetic only sufficient integer family.",
+      "obstacles": "Specialist verification of Selberg-Delange hypotheses and minimal-degree sources plus formal artifact authentication remains; written conjugations, polygon and constants internally coherent."
+    },
+    "finding": "No demonstrated fatal mathematical error. Unperformed specialist checks and formal replay remain separate obligations.",
+    "external_review": false
+  },
+  "source_archive_reproduction": {
+    "archive": "source.zip",
+    "result": "passed",
+    "scope": "Clean LaTeX build from the isolated current source archive, with exact page text and rendered-pixel comparison to the designated PDF. Artifact reproduction only, not independent mathematical review."
+  }
+}

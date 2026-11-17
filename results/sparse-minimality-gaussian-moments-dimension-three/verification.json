@@ -1,0 +1,163 @@
+{
+  "edition": "2026-11-17 repository revision",
+  "reviewer": "Codex source-aware agent",
+  "supplied_context": [
+    "Deposited source and metadata",
+    "Repository writing/mathematics/checklist guides",
+    "Current canonical sparse Gaussian research note",
+    "Retained exact checker and sparse_supports.py",
+    "Primary articles listed under citations"
+  ],
+  "independence": "Internal source-aware review; shared checker, not a separate implementation or blind reader.",
+  "claim_scope": "No Gaussian-moment counterexample has both total degree at most four and at most four nonzero monomials in a fixed Gaussian Witt frame; the three surviving coefficient families satisfy the all-order mixed conclusion.",
+  "findings_and_resolution": [
+    "Removed product-order/Pareto minimality inference: the excluded rectangle does not exclude a five-term cubic.",
+    "Explained coefficient-torus support coverage and why finite equations only supply necessary conditions.",
+    "Added self-contained one-row charge bound, parity generation, bounded-weight deduction, and detailed Gaussian shear invariance.",
+    "Kept deposited PDF/source/checker archive bytes intact and moved them to published/.",
+    "PDF-reader feedback: identified the supplied source.zip, named the exact supplement/checker/helper with SHA256 digests in Section 5, and specified that the unique-contraction filter runs through order twenty as a sufficient rejection filter."
+  ],
+  "checks": {
+    "exact_replay": {
+      "command": ".venv/bin/python research/foundations/scripts/verify_three_real_gmc_sparse_pareto.py",
+      "working_directory": "repository root",
+      "exit_code": 0,
+      "observed": [
+        "1092 termwise-null orbit supports are one-sided",
+        "all 59535 raw supports in degree<=4 and terms<=4 covered by exact rational pass",
+        "moments<=24 leave exactly three genuine coefficient families",
+        "displayed coefficient equations and product factorization checked"
+      ],
+      "limits": "Legacy output uses Pareto terminology; only the bounded rectangle and displayed algebra are certified. The analytic/algebraic all-order arguments require reading the article."
+    },
+    "build": {
+      "command": "latexmk -pdf -interaction=nonstopmode -halt-on-error -jobname=sparse-minimality-gaussian-moments-dimension-three main.tex",
+      "environment": "pdfTeX 1.40.25, TeX Live 2023/Debian; latexmk 4.83",
+      "exit_code": 0,
+      "pages": 6,
+      "final_log_warnings": []
+    },
+    "pdf_visual_review": {
+      "performed": true,
+      "method": "Rendered all six pages with PyMuPDF and inspected the complete contact sheet plus full-size charge-bound, saturation and all-order calculation pages.",
+      "findings": "No clipped text, overlaps, unreadable formulas or unresolved references. Main theorem kept together on page 2.",
+      "reader_followup": "Rebuilt after supplement identification and filter-cutoff clarification; affected pages 4 and 6 inspected at full size, including artifact filenames/digests and bibliography. No clipping or layout defects; six-page length retained."
+    },
+    "isolated_pdf_only_review": {
+      "performed": true,
+      "date": "2026-11-17",
+      "reviewer": "/root/single_pdf_sparse",
+      "type": "isolated internal AI single-PDF reading",
+      "supplied_context": "Only this manuscript PDF and the five reader questions. No conversation, repository content, other papers, external literature, source or supplement.",
+      "initial_pdf_sha256": "8c6225d3efa9786f77dc216b0a18ea7a6202a54806fe47641dd52c9bc9868f42",
+      "pdf_sha256": "69f7ce569db42a455257e970dba8f6fb213936ea95a1d7a2a1bcec78cb0dfad4",
+      "full_initial_pdf_read": true,
+      "final_affected_pages_rechecked": [
+        4,
+        6
+      ],
+      "answers": {
+        "contribution": "Exclusion of GMC failure with both degree<=4 and at most four monomials in a fixed Witt frame; Long shows the five-term bound is sharp in degree<=4.",
+        "mechanism": "Exact support enumeration and saturated coefficient ideals leave three families, each reduced to one-sided isotropic weight by Gaussian-preserving transformations.",
+        "hardest_step": "Exhaustive elimination in Section3 pp.4-5; all-order bridge in Section4 pp.5-6.",
+        "limitations": "Simultaneous bounds and chosen coordinates are essential. The result does not exclude denser cubics or higher-degree four-term failures or establish global Pareto minimality.",
+        "verification_obstacles": "The essential exhaustive exclusions require the computational supplement. Final pp.4,6 specify the filter cutoff and precisely identify source.zip, both checker files and their hashes; no new issue found. Reviewer did not inspect/replay supplement."
+      },
+      "external_review": false,
+      "mathematical_certification": false,
+      "supplement_replayed_by_reader": false
+    },
+    "external_human_review": {
+      "performed": false
+    },
+    "formal_verification": {
+      "performed": false,
+      "scope": "No Lean claim is made for this computer-assisted theorem."
+    },
+    "citations": [
+      {
+        "source": "Derksen, van den Essen and Zhao, Israel J. Math. 219 (2017), 917-928, DOI 10.1007/s11856-017-1502-2",
+        "inspected": "https://arxiv.org/html/1506.05192v1",
+        "location": "Conjecture 1.1",
+        "supports": "Definition of the Gaussian Moments Conjecture."
+      },
+      {
+        "source": "Christopher D. Long, Small Counterexamples to the Gaussian Moments Conjecture, arXiv:2607.18186v1",
+        "inspected": "https://arxiv.org/html/2607.18186v1",
+        "location": "Section 5, Theorem 5.1 and Corollary 5.2",
+        "supports": "The displayed five-term degree-four witness, its all-power mixed identity, and failure in dimension at least three."
+      }
+    ],
+    "standalone_source_bundle": {
+      "performed": true,
+      "command": "latexmk -pdf -interaction=nonstopmode -halt-on-error -jobname=sparse-minimality-gaussian-moments-dimension-three main.tex",
+      "working_directory": "Fresh extraction of source.zip under ignored scratch storage",
+      "exit_code": 0,
+      "limits": "A clean source build was checked; byte identity of PDFs across builds is not claimed because TeX embeds build metadata.",
+      "source_bundle": "source.zip",
+      "followup": "Final archive includes the exact current README and all final source/checker files. Fresh extraction rebuilt successfully after reader-feedback changes."
+    },
+    "deposited_file_integrity": {
+      "performed": true,
+      "result": "Both deposited manifest file hashes match the preserved source.zip and published PDF."
+    }
+  },
+  "environment": {
+    "Python": "3.12.3",
+    "SymPy": "1.14.0",
+    "Singular": "4.3.2"
+  },
+  "remaining_obligations": [
+    "External mathematical review and separate-implementation replay."
+  ],
+  "outcome": "Repository revision prepared for mathematical review; no new public deposit.",
+  "sha256": {
+    "main.tex": "701e1a7928af9d0fd0978e165a1ba236473398cb9b9ff022409336c8930f1ba1",
+    "main.bbl": "6dd0d94feded658c9fc7c154e6273380fbab9017fd9339010b3cb9e872294e0f",
+    "references.bib": "5c00a0cab058c20ea90623cd1df4da1d7cebbc57f8e185060d3bedcf1900762c",
+    "sparse-minimality-gaussian-moments-dimension-three.pdf": "69f7ce569db42a455257e970dba8f6fb213936ea95a1d7a2a1bcec78cb0dfad4",
+    "supplement/verify_three_real_gmc_sparse_pareto.py": "5733030a5bee28d0a56d248468f9fbcebe5f76f8844cf0ba2adfc2895097aa9f",
+    "supplement/sparse_supports.py": "d573772c0d771a7ffab701a73fa1b0c0c118a36c1b86d2a6e880dc0db114d224",
+    "source.zip": "11c02a8354c5390f63d8ced90689b2fdd7331e8a65c17186d9c8afb97832a617"
+  },
+  "blind_reader_test": {
+    "performed": true,
+    "date": "2026-11-17",
+    "reviewer": "/root/single_pdf_sparse",
+    "type": "isolated internal AI single-PDF reading",
+    "supplied_context": "Only this manuscript PDF and the five reader questions. No conversation, repository content, other papers, external literature, source or supplement.",
+    "initial_pdf_sha256": "8c6225d3efa9786f77dc216b0a18ea7a6202a54806fe47641dd52c9bc9868f42",
+    "pdf_sha256": "69f7ce569db42a455257e970dba8f6fb213936ea95a1d7a2a1bcec78cb0dfad4",
+    "full_initial_pdf_read": true,
+    "final_affected_pages_rechecked": [
+      4,
+      6
+    ],
+    "answers": {
+      "contribution": "Exclusion of GMC failure with both degree<=4 and at most four monomials in a fixed Witt frame; Long shows the five-term bound is sharp in degree<=4.",
+      "mechanism": "Exact support enumeration and saturated coefficient ideals leave three families, each reduced to one-sided isotropic weight by Gaussian-preserving transformations.",
+      "hardest_step": "Exhaustive elimination in Section3 pp.4-5; all-order bridge in Section4 pp.5-6.",
+      "limitations": "Simultaneous bounds and chosen coordinates are essential. The result does not exclude denser cubics or higher-degree four-term failures or establish global Pareto minimality.",
+      "verification_obstacles": "The essential exhaustive exclusions require the computational supplement. Final pp.4,6 specify the filter cutoff and precisely identify source.zip, both checker files and their hashes; no new issue found. Reviewer did not inspect/replay supplement."
+    },
+    "external_review": false,
+    "mathematical_certification": false,
+    "supplement_replayed_by_reader": false
+  },
+  "source_hashes": {
+    "main.tex": "701e1a7928af9d0fd0978e165a1ba236473398cb9b9ff022409336c8930f1ba1",
+    "references.bib": "5c00a0cab058c20ea90623cd1df4da1d7cebbc57f8e185060d3bedcf1900762c"
+  },
+  "pdf_sha256": "69f7ce569db42a455257e970dba8f6fb213936ea95a1d7a2a1bcec78cb0dfad4",
+  "pages": 6,
+  "source_bundle": {
+    "file": "source.zip",
+    "sha256": "11c02a8354c5390f63d8ced90689b2fdd7331e8a65c17186d9c8afb97832a617",
+    "standalone_build_succeeded": true,
+    "contents": "Current compile inputs and durable supplement/build instructions; mutable review metadata excluded.",
+    "command": "latexmk -pdf -interaction=nonstopmode -halt-on-error -jobname=sparse-minimality-gaussian-moments-dimension-three main.tex",
+    "pages": 6,
+    "page_text_matches_current_pdf": true,
+    "scope": "Final source.zip extracted into a fresh isolated scratch directory and built using only its included sources; byte-identical PDF metadata is not required."
+  }
+}

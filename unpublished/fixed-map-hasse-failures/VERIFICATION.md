@@ -45,10 +45,10 @@ converse, general rational height or rational asymptotic.
 | Coprime-pair density and coupled cubic-character condition | `eq:rational-sd` through `eq:rational-polygon-count` | Inspected de la Bretèche–Tenenbaum Theorem 1.2; convolution, uniform tail bound and polygon approximation supplied in the paper |
 | Full rational count `C B²/log B`, with `C=11/(288√3 π²) ∏(1+p⁻³)/(1−p⁻³)` over inert primes | `thm:rational-count`; valuation summation, content weights and global-cube removal | Written analytic proof; finite factor algebra and enumeration are separate audits |
 
-Run the standard-library checker from the repository root:
+Run the standard-library checker from this directory:
 
 ```sh
-python3 unpublished/fixed-map-hasse-failures/verify_rational_line.py --maximum-height 10000 --output unpublished/fixed-map-hasse-failures/rational_line_verification.json
+python3 verify_rational_line.py --maximum-height 10000 --output rational_line_verification.json
 ```
 
 The retained JSON identifies the actual checker bytes and Python version.
@@ -146,3 +146,38 @@ current replay instructions. The current rational audit and manuscript
 build are recorded above; no fresh replay of the historical symbolic
 checkers or Lean build is claimed. The finite count is not used as proof
 of the asymptotic.
+
+## Response to the 17 November release review
+
+The current checkout already contained a later rational classification,
+exact-height asymptotic and current finite checker, superseding the
+reviewed sufficient-family-only edition. Those results and their formal
+boundaries were preserved. The correct complex inverse-function argument
+for rank at most generic degree was retained; no Zariski splitting is used.
+The remaining integer-family passage now identifies de la Bretèche–Tenenbaum
+Theorem 1.2 and explicitly checks the bounded prime-power values,
+prime-sum hypotheses, zero twist means and vanishing main coefficients.
+The article credits Ulam Theorem 5.2, gives actual versioned companion and
+formal-source links, and removes the remaining discovery chronology.
+
+The current standard-library rational audit was rerun through height
+10000 and passed, reproducing 617, 4377 and 41415 at heights 1000,
+3000 and 10000. The retained JSON and checker bytes agree. A fresh
+`latexmk` build produced 16 pages, without unresolved citations or
+references, overfull boxes or other LaTeX warnings. All 16 pages were
+rendered and inspected as a contact sheet; changed analytic and availability
+passages were also inspected at reading resolution. Focused `git diff --check`
+passed. Current artifact identities are in `verification.json`.
+
+Existing isolated reader records above belong to the explicitly hashed
+older editions; they are not relabelled as reviews of this new PDF.
+The current 16-page PDF has now received a separate isolated internal AI
+reading; its exact hash and five reader answers are in `verification.json`.
+External human review and a fresh Lean build or transitive axiom report remain
+unperformed. The formal source is pinned
+to repository commit `c32b9b4d273cf7988e85184a0d5eae9c488727fd` and retains its exact
+normalized-degree transport qualification in the matrix above.
+
+The delivered `source.zip` was extracted into a temporary directory and its
+article compiled successfully there, without undeclared workspace files.
+The PDF and every recorded source identity match `verification.json`.

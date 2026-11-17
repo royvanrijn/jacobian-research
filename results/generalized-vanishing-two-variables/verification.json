@@ -1,0 +1,191 @@
+{
+  "reviewed_on": "2026-11-17",
+  "status": "written proof reviewed internally; independent mathematical review pending",
+  "source": "main.tex",
+  "pdf": "generalized-vanishing-two-variables.pdf",
+  "pages": 18,
+  "source_hashes": {
+    "main.tex": "dda0f298fb2847158dc5b7755f1dcb46b1fd98fc65e6bbc3ca56042b0351caba",
+    "references.bib": "53070dcb1c4730811eed2a79eeaea8a5918443f022d982a436b7d09215b705ff"
+  },
+  "pdf_sha256": "3a680bd5ae5aeb884c20a554e7d374cd42bf701a021070cbffea33fd894d902a",
+  "build_command": "latexmk -pdf -interaction=nonstopmode -halt-on-error -jobname=generalized-vanishing-two-variables main.tex",
+  "build_succeeded": true,
+  "latex_log_issues": [],
+  "independent_replay": false,
+  "external_review": false,
+  "lean_build_replayed": false,
+  "verification_scope": "Current repository edition assembled from the prior revision, followed by source-aware exposition review, primary-reference identity and statement checks, a fresh LaTeX build, text checks and visual inspection of all 18 pages. No independent mathematical certification, new Lean replay or external review is claimed.",
+  "review_changes": [
+    "Filled the empty-equality-face case of the common-threshold argument.",
+    "Reviewed the support certificate and sharp uniform-cutoff argument.",
+    "Replaced obsolete build/replay paths with current source and Lean project locations.",
+    "Handled zero inputs explicitly in the threshold and optimal-cutoff arguments.",
+    "Replaced temporary formalization-status wording with timeless scope descriptions and prevented a one-word line at the page 17/18 boundary.",
+    "Restricted the Ferrers consequence to unequal-weight walls with W_A < W_B and retained initial endpoints; included the X^2 + Y^4, P=x scope counterexample.",
+    "Used containment of specialized Newton sets with protected endpoint coefficients in shifted-ray separation.",
+    "Justified rationality of the horizontal-separation shift for nontrivial segments and singleton supports.",
+    "Identified the one-dimensional orthogonal-invariant homogeneous dual space before the Reynolds proportionality argument.",
+    "Qualified arbitrary profiles as admissible, refreshed the revision date and cited the inspected Feng--Sun published record.",
+    "Added a publicly accessible pinned formal-source citation; condensed its summary without upgrading the partial binary formalization."
+  ],
+  "layout_review": "All 18 pages rendered to two contact sheets with PyMuPDF and visually inspected. Enlarged pages 1, 2, 8, 12 and 18 inspected for title, exposition, displayed mathematics and bibliography. No clipping, overlap, unresolved references, overfull or underfull boxes observed.",
+  "ai_attribution_update": {
+    "scope": "Editorial standardization of the AI attribution to the PAPERS.md wording; mathematical statements, arguments and assurance flags unchanged. Earlier mathematical-review records retain their recorded scope; no new mathematical or Lean verification is claimed.",
+    "previous_source_hashes": {
+      "main.tex": "4e0346e9fa5a0cf2af0b338a6540aaa3c05d9845959856ac5e817508a0ce11e7",
+      "references.bib": "6450e9b4bf4053cd3fe8b2572f9abd7e38b80ebe00d4e0dfddac24b72179becc"
+    },
+    "previous_pdf_sha256": "f06429cf33e5ab8584df2c4e3e422ad62efa043c82da9003063c114a92ca7598",
+    "changed_pages": [
+      18
+    ],
+    "latex_issues": [],
+    "canonical_paragraph_occurrences": 1
+  },
+  "release_review_revision": {
+    "date": "2026-11-17",
+    "changes": [
+      "Restricted the Ferrers consequence to unequal-weight walls with W_A < W_B and retained initial endpoints; included the X^2 + Y^4, P=x scope counterexample.",
+      "Used containment of specialized Newton sets with protected endpoint coefficients in shifted-ray separation.",
+      "Justified rationality of the horizontal-separation shift for nontrivial segments and singleton supports.",
+      "Identified the one-dimensional orthogonal-invariant homogeneous dual space before the Reynolds proportionality argument.",
+      "Qualified arbitrary profiles as admissible, refreshed the revision date and cited the inspected Feng--Sun published record.",
+      "Added a publicly accessible pinned formal-source citation; condensed its summary without upgrading the partial binary formalization."
+    ],
+    "reviewer_context": "Source-aware internal revision using the attached review and manuscript sources; this is not a fresh isolated PDF-only reading.",
+    "fresh_blind_reader_test_performed": false,
+    "remaining_obligations": [
+      "Fresh isolated reading of the revised PDF.",
+      "Independent mathematical review.",
+      "Fresh Lean replay and transitive axiom audit before claiming a newly replayed formal artifact."
+    ],
+    "exact_scope_check": "SymPy exact contractions of (d_x^2+d_y^4)^m x^m vanish for m=1,...,6. The written all-order justification is that every summand either differentiates in y or has x derivative order 2m>m; finite checks are not the proof."
+  },
+  "formal_supplement": {
+    "repository_commit": "c32b9b4d273cf7988e85184a0d5eae9c488727fd",
+    "url": "https://github.com/royvanrijn/jacobian-research/tree/c32b9b4d273cf7988e85184a0d5eae9c488727fd/research/foundations/formal/gvc",
+    "access_checked": true,
+    "lean_build_replayed": false
+  },
+  "blind_reader_test": {
+    "performed": true,
+    "date": "2026-11-17",
+    "reviewer": "/root/single_pdf_gvc",
+    "type": "isolated internal AI single-PDF reading",
+    "supplied_context": "Only this manuscript PDF and the five reader questions. No conversation, repository content, other papers, external literature, source or supplement.",
+    "initial_pdf_sha256": "5944bbbdb4906d294cdd982d9e3213364c090cf0861d031c205d6c5164336597",
+    "pdf_sha256": "3a680bd5ae5aeb884c20a554e7d374cd42bf701a021070cbffea33fd894d902a",
+    "full_initial_pdf_read": true,
+    "final_affected_pages_rechecked": [
+      3,
+      4,
+      5,
+      11,
+      12,
+      13,
+      15,
+      18
+    ],
+    "answers": {
+      "contribution": "Unrestricted binary GVC, finite support certificate and sharp operator-independent cutoff; homogeneous ternary counterexample and admissible profile family give the dimension boundary.",
+      "mechanism": "Hall deficiency gives an initial derivative gap; prime-isolated endpoints prevent face reversal and yield a strict support separator. Ternary endpoint contact kills the pure coefficient and retains its mixed neighbor.",
+      "hardest_step": "Proposition 4.1, pp.5-7, and the no-reversal envelopes, pp.9-10.",
+      "limitations": "Characteristic zero, constant-coefficient operators; positive theorem binary; negative example uses Delta^6, not the ordinary-Laplacian conjecture; full binary formalization is not claimed.",
+      "verification_obstacles": "The constant-term theorem is an imported mathematical input and formal claims require the identified supplement. No serious internal omission found. Final recheck resolves symbol/operator definitions, primitive normalization, radial cancellation and supplement retrieval."
+    },
+    "external_review": false,
+    "mathematical_certification": false,
+    "supplement_replayed_by_reader": false
+  },
+  "current_repository_edition": {
+    "date": "2026-11-17",
+    "prior_revision_identity": {
+      "source_hashes": {
+        "main.tex": "916cd51129cb833b5cf2967c16c5ac34a78bd573977539459d58d8fc5e763cc3",
+        "references.bib": "526d386c0149cafb31ab824ea50352f7b3a32bcd75af3e5d9647a8cdf5a21c8c"
+      },
+      "pdf_sha256": "84372b5db7da64c21933c13c1ae6567ee9e39a50fe136f85e4e55cfcb242bc0f",
+      "pages": 18,
+      "build_command": "latexmk -pdf -interaction=nonstopmode -halt-on-error -jobname=paper main.tex"
+    },
+    "changes": [
+      "Preserved exact deposited edition under published/ and merged the prior unpublished revision into the current paper directory.",
+      "Shortened the abstract while retaining the binary theorem, sharp cutoff and homogeneous failure scope.",
+      "Placed the principal theorem before technical context and added the elementary derivative-deficit example.",
+      "Replaced the dependency flowchart with a connected explanation of Hall localization, the hard prime-isolation step and the envelope argument.",
+      "Added the coefficient-field embedding argument for the characteristic-zero form of the imported constant-term theorem.",
+      "Kept the standard AI-assistance paragraph and exact formalization limitations."
+    ],
+    "deposited_files_verified": 4,
+    "deposited_hashes_unchanged": true,
+    "mathematical_calculations_replayed": false,
+    "remaining_obligations": [
+      "Independent mathematical review, including the binary support-certificate and optimal-cutoff arguments.",
+      "Fresh Lean replay and transitive axiom audit before asserting newly replayed formal verification."
+    ],
+    "fresh_blind_reader_test_performed": true,
+    "isolated_reading_record": "See isolated_pdf_only_reading for exact edition, supplied context, answers and targeted follow-up."
+  },
+  "primary_references_checked": [
+    {
+      "key": "DK",
+      "url": "https://webspace.science.uu.nl/~kalle101/powers.pdf",
+      "support": "Section 3 and Theorems 4-5; complex Laurent-polynomial Newton exclusion and its argument. The paper supplies the coefficient-field embedding extension to characteristic zero."
+    },
+    {
+      "key": "deBondt",
+      "url": "https://arxiv.org/pdf/1206.2836",
+      "support": "Theorem 4 and Corollary 5; products of linear forms and homogeneous binary operators, with proof on pages 6-7."
+    },
+    {
+      "key": "LongGMC",
+      "url": "https://arxiv.org/html/2607.18186v1",
+      "support": "Theorem 5.1 and its coefficient-extraction proof; adjacent-coefficient formula for the five-term ternary quartic."
+    },
+    {
+      "key": "WilsonGMC",
+      "url": "https://arxiv.org/html/2607.23887v1",
+      "support": "Theorem 1 and Lemma 7 proof; one-sided support, sharp Gaussian cutoff, number-field prime-isolation mechanism."
+    },
+    {
+      "key": "FengSun",
+      "url": "https://articles.math.cas.cz/10.21136/CMJ.2019.0049-18",
+      "support": "Publisher bibliographic identity and abstract operator statement; full PDF not retrieved during this pass. This is contextual prior work, not a proof dependency."
+    }
+  ],
+  "source_bundle": {
+    "file": "source.zip",
+    "sha256": "23ea7c00e2bc25a1413087b5e7a7b74a0f7ae44c06db860828a01abcdd9e557a",
+    "standalone_build_succeeded": true,
+    "contents": "Current compile inputs and durable supplement/build instructions; mutable review metadata excluded.",
+    "command": "latexmk -pdf -interaction=nonstopmode -halt-on-error -jobname=generalized-vanishing-two-variables main.tex",
+    "pages": 18,
+    "page_text_matches_current_pdf": true,
+    "scope": "Final source.zip extracted into a fresh isolated scratch directory and built using only its included sources; byte-identical PDF metadata is not required."
+  },
+  "isolated_pdf_only_reading": {
+    "performed": true,
+    "date": "2026-11-17",
+    "reviewer": "OpenAI Codex agent blind_relocated_binary",
+    "type": "isolated internal AI PDF-only reading",
+    "supplied_context": "Only the two current binary PDFs and five reader questions; no sources, earlier review, repository content, literature or supplements.",
+    "pdf_sha256": "5944bbbdb4906d294cdd982d9e3213364c090cf0861d031c205d6c5164336597",
+    "pages": 18,
+    "answers": {
+      "contribution": "Binary GVC, equivalent strict support certificate and optimal operator-independent cutoff; homogeneous ternary Delta^6 failure and admissible family.",
+      "mechanism": "Hall deficiency creates an initial support gap, prime isolation forbids unequal-weight overlap, moving complete faces give a strict separator; endpoint extraction proves failures.",
+      "hardest_step": "Proposition4.1 pp5-7 valuation isolation and pp9-10 complete-face/no-reversal/strict-separator passage.",
+      "limitations": "Characteristic zero and binary positive theorem; Delta^6 failure is distinct from ordinary Laplacian conjecture; family minimality only; complete binary formalization not claimed.",
+      "obstacles": "Polarization bookkeeping and global envelope geometry remain specialist checking targets; no demonstrated error. Actual pinned formal link verified in PDF annotations."
+    },
+    "finding": "No demonstrated mathematical error; specialist inputs and formal endpoints were not verified. Rendered arithmetic and geometric passages readable.",
+    "electronic_supplement_link": "Exact pinned GitHub destinations verified from PDF annotations without following links.",
+    "external_review": false
+  },
+  "source_archive_reproduction": {
+    "archive": "source.zip",
+    "result": "passed",
+    "scope": "Clean isolated current-source-archive build and all-page text/pixel comparison; artifact reproduction only, not independent mathematical or Lean verification."
+  }
+}

@@ -4,40 +4,32 @@
     "name": "Roy van Rijn",
     "orcid": "0009-0000-2808-0645"
   },
-  "summary": "Proves GVC in two variables and gives a homogeneous counterexample in dimension three, determining the exact dimensional boundary.",
-  "status": "published-preprint",
-  "publication_date": "2026-08-05",
-  "doi": "10.5281/zenodo.21803325",
-  "zenodo": "https://zenodo.org/records/21803325",
-  "license": "CC-BY-4.0",
-  "pdf": "generalized-vanishing-two-variables.pdf",
+  "summary": "Proves binary GVC with finite support certificates and a sharp operator-independent mixed cutoff, and constructs homogeneous failures in every dimension at least three.",
+  "published": false,
+  "status": "revision",
   "source": "main.tex",
-  "verification": {
-    "scope": "Written proof with a claim-by-claim audit. The ternary counterexample and full profile family have Lean proofs. Binary GVC is only partly formalized.",
-    "limits": "The complete binary theorem is not fully Lean-verified; independent external review is not claimed.",
-    "evidence": [
-      "../../unpublished/generalized-vanishing-two-variables-revision/VERIFICATION.md",
-      "../../research/foundations/formal/gvc/README.md"
-    ]
-  },
-  "publication_record_checked": "2026-11-17",
-  "hexagon": "https://hexagonmath.org/2610.00580v2",
-  "unpublished_revision": "../../unpublished/generalized-vanishing-two-variables-revision/",
-  "abstract": "We determine the exact dimensional range of the Generalized Vanishing Conjecture for constant-coefficient differential operators over fields of characteristic zero. We prove the conjecture in two variables for arbitrary, possibly nonhomogeneous, operators. The proof combines Hall's marriage theorem, Newton-face separation, and a prime-dilation argument; apart from the constant-term theorem of Duistermaat and van der Kallen, it is elementary and uses neither degree bounds nor computer algebra. We then construct a homogeneous counterexample in three variables. With rho=t^2+xy, A=rho+x^2, C=y rho^2-2x t^2 rho-x^3 t^2, Delta=4 partial_x partial_y+partial_t^2, Lambda=Delta^6, and P=AC^2, the paper proves that Lambda^m(P^m)=0 while Lambda^m(x^2 P^m) is nonzero for every m>=1. The construction extends to an explicit cusp-profile family and gives counterexamples for every Delta^k with k>=6. Consequently, the unrestricted Generalized Vanishing Conjecture, and already its homogeneous form, holds in dimension n exactly when n<=2.",
-  "abstract_format": "text",
-  "keywords": [
-    "Generalized Vanishing Conjecture",
-    "constant-coefficient differential operators",
-    "Newton polygons",
-    "Hall's marriage theorem",
-    "Gaussian moments",
-    "counterexample",
-    "Jacobian Conjecture",
-    "Duistermaat-van der Kallen theorem"
+  "pdf": "generalized-vanishing-two-variables.pdf",
+  "build": "latexmk -pdf -interaction=nonstopmode -halt-on-error -jobname=generalized-vanishing-two-variables main.tex",
+  "verification": "The added results have written proofs and local exact checks. The full binary theorem remains only partly formalized in Lean.",
+  "next_steps": [
+    "Independent mathematical review of the binary proof and the support-certificate and cutoff results.",
+    "Fresh Lean replay and transitive axiom audit before claiming a newly replayed formal artifact."
   ],
+  "catalogued_on": "2026-11-17",
+  "published_edition": "published/",
+  "abstract": "We determine the dimensions in which the Generalized Vanishing Conjecture\nholds for constant-coefficient differential operators over a field of\ncharacteristic zero.  In two variables, if\n$\\Lambda^m(P^m)=0$ for every positive integer $m$, then\n$\\Lambda^m(QP^m)=0$ for every fixed polynomial $Q$ and all sufficiently\nlarge $m$, with no homogeneity assumption on $\\Lambda$ or $P$.\nThe proof combines Hall's marriage theorem, Newton-face separation and\nprime-adic isolation of a single endpoint contribution, using the\nconstant-term theorem of Duistermaat and van der Kallen.\nIt also gives a finite support certificate for the premise and the sharp\noperator-independent cutoff\n$m>(1+\\lfloor(\\deg P+1)^2/4\\rfloor)\\deg Q$.\nIn three variables we construct a homogeneous polynomial of degree twelve\nfor which all pure contractions under\n$(4\\partial_x\\partial_y+\\partial_t^2)^{6m}$ vanish, while multiplication\nby $x^2$ gives a nonzero contraction at every positive power.\nThe construction extends Long's adjacent-coefficient mechanism to an\nexplicit homogeneous family.  Thus the unrestricted conjecture, and\nalready its homogeneous form, holds in dimension $n$ exactly when $n\\leq2$.",
+  "abstract_format": "latex",
+  "abstract_source": "main.tex",
   "resource_type": {
     "title": "Preprint",
     "type": "publication",
     "subtype": "preprint"
-  }
+  },
+  "formal_supplement": "https://github.com/royvanrijn/jacobian-research/tree/c32b9b4d273cf7988e85184a0d5eae9c488727fd/research/foundations/formal/gvc",
+  "source_bundle": "source.zip",
+  "source_bundle_members": {
+    "main.tex": "main.tex",
+    "references.bib": "references.bib"
+  },
+  "verification_record": "verification.json"
 }

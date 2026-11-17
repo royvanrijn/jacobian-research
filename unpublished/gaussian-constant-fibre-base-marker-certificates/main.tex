@@ -271,8 +271,10 @@ class modulo $N$; the even classes already belong to $N$.
 This proves $I_B(M/N)=0$. If
 $\sum_\alpha c_\alpha b_\alpha=1$ in $R$, summing
 \eqref{eq:oddpacket} with coefficients $c_\alpha$ proves $M=N$.
-This is a global coefficient-ring statement under precisely the
+This is a global coefficient-ring statement under the sufficient
 unimodular content hypothesis, with nilpotents and zero divisors retained.
+The scalar criterion in Theorem~\ref{thm:allrings} is a separate
+necessary and sufficient statement for that family.
 \par\end{samepage}
 
 The Gaussian integration-by-parts map to $R[[t]]$ is horizontal
@@ -337,7 +339,10 @@ ideal is nonzero and nonunit. No inverse of $a$ is required.
 \section{A sufficient mixed-moment bound}
 
 The finite expressions also give a bound on the degrees of the marked
-periods.
+periods. The coefficient hypothesis belongs to this numerical statement;
+the nilpotent-content corollary alone does not supply the same bound.
+
+\begin{proposition}[Degree transfer]\label{prop:degreetransfer}
 Suppose $I_B=R$, or work over a field, and suppose the base periods
 have a common bound
 \[
@@ -349,8 +354,10 @@ $\delta=\max(1,\deg g,2b)$. Then every original marker obeys
  \deg_t\Phi_Q\le(C\delta+2)\deg Q
                     +E+C\delta(2b+3)+b+5.
 \end{equation}
-This bound is deliberately sufficient. It does not identify a least slope.
-
+If $B=0$, use $b=0$ and $\delta=\max(1,\deg g)$ in the same bound.
+This bound is sufficient; it does not identify a least slope.
+\end{proposition}
+\begin{proof}
 Here are the degree counts. For a time-independent base amplitude
 of degree $q$, the even expression $E_j$ uses base amplitudes of degree
 at most $q+j\delta$, parameter-derivative order at most $j$, and
@@ -379,6 +386,7 @@ When $a=0$, conditional integration gives the sharper direct bound
 If $B=0$, all odd periods vanish and the even construction gives
 a sufficient bound with $\delta=\max(1,\deg g)$; the looser
 formula \eqref{eq:cutoff} may be used with $b=0$.
+\end{proof}
 
 Each finite expression retains its base amplitudes, time operators,
 spatial witnesses, and coefficient conditions. If a marker has a
@@ -416,6 +424,10 @@ $R$ on $e_j=\partial_t^j e$, $j\ge0$, with
  (1-2t)e_0=0,\qquad
  (1-2t)e_j=2j e_{j-1},\qquad\partial_t e_j=e_{j+1}.
 \]
+
+The proof proceeds through the ambient differential quotient, its complete
+Gaussian kernel, and then the actual-image defect; the kernel calculation
+is essential because the ambient odd class can have zero Gaussian image.
 
 \begin{theorem}\label{thm:allrings}
 For every such $R,b$, the exact actual-image defect is
@@ -685,6 +697,8 @@ every base period
 to be polynomial? Wilson's theorem~\cite{Wilson} concerns powers of a single fixed
 binary polynomial. The displayed parameter-dependent phase does
 not satisfy that hypothesis merely because its unit series is one.
+The complementary one-base result, allowing any number of quadratic
+fibre variables and arbitrary Jordan blocks, is proved in~\cite{Jordan}.
 The specialization defect in Theorem~\ref{thm:allrings} concerns
 marker generation for a nonpure family, so it does not decide this
 remaining Gaussian moment problem.
@@ -698,6 +712,11 @@ exposition, proof review and verification code.
 M.~Wilson, \emph{A face-isolation proof of the two-variable Gaussian
 Moments Conjecture}, public preprint (2026), Theorem~1,
 \href{https://arxiv.org/abs/2607.23887v1}{arXiv:2607.23887v1}.
+
+\bibitem{Jordan}
+R.~van Rijn, \emph{Gaussian Moment Vanishing with One Base Variable and
+Constant Quadratic Fibres}, 17 November 2026, source and PDF edition
+\href{https://github.com/royvanrijn/jacobian-research/tree/c32b9b4d273cf7988e85184a0d5eae9c488727fd/unpublished/gaussian-quadratic-fibre-jordan-cancellation}{c32b9b4d273c}.
 
 \bibitem{Stacks}
 The Stacks Project Authors, \emph{The Stacks Project},

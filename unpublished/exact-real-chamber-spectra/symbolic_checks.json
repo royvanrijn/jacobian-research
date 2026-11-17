@@ -1,0 +1,51 @@
+{
+  "scope": "Selected exact seed, reconstruction, divisibility and chamber controls; not the all-degree theorem or a novelty audit.",
+  "checks": [
+    {
+      "degree": 3,
+      "rational_all_real_roots": 3,
+      "exact_chamber_counts": [
+        1,
+        3
+      ]
+    },
+    {
+      "degree": 4,
+      "rational_all_real_roots": 4,
+      "exact_chamber_counts": [
+        0,
+        2,
+        4
+      ]
+    },
+    {
+      "degree": 5,
+      "rational_all_real_roots": 5,
+      "exact_chamber_counts": [
+        1,
+        3,
+        5
+      ]
+    },
+    {
+      "degree": 6,
+      "rational_all_real_roots": 6,
+      "exact_chamber_counts": [
+        0,
+        2,
+        4,
+        6
+      ]
+    },
+    {
+      "degree": 7,
+      "rational_all_real_roots": 7,
+      "exact_chamber_counts": null
+    },
+    {
+      "degree": 8,
+      "rational_all_real_roots": 8,
+      "exact_chamber_counts": null
+    }
+  ]
+}

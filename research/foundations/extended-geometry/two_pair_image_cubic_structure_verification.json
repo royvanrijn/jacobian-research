@@ -4,7 +4,7 @@
   "coefficient_domain": "Q, symbolic extension by I and sqrt(2) for Cartesian conversion",
   "python": "3.x",
   "sympy": "1.14.0",
-  "checker_sha256": "43c2649b780250a6ef34143a2e15512870fcefa25c5cd4a2abb0c12e29e9a98f",
+  "checker_sha256": "7d6272e047f6fdb1fcb9a3b49cb50cb5af76f7535fee8197284087762eaf4d53",
   "full_family": {
     "dimension": 16,
     "basis": [
@@ -36,7 +36,11 @@
     "invertible 16-dimensional coordinate maps",
     "three complete quadratic trace identities",
     "polynomial sphere shear and inverse",
-    "null-conic frame incidence and affine representative identities"
+    "null-conic frame incidence and affine representative identities",
+    "boundary graph Laurent expansion, local jets, and residue form",
+    "full nine-parameter quadratic invariant moments through six",
+    "both boundary blow-up charts and residue multipliers",
+    "universal A1 Hessian determinant -2 and all three crepant point-blow-up charts"
   ],
   "frame_controls": {
     "repeated_sextic_root_with_quartic_root": true,
@@ -44,6 +48,22 @@
     "projective_endpoint_at_infinity": true,
     "squarefree_sextic_rejects_every_frame": false,
     "identically_zero_sextic_and_quartic": true
+  },
+  "quadratic_sphere_family": {
+    "dimension": 9,
+    "exact_pure_prefix": 6,
+    "M5_after_M1_to_M4": "-2048*T2*T3/24255",
+    "M6_after_M1_to_M4": "-8192*T2**3/1126125 - 32768*T3**2/1324323",
+    "sharp_phase_cartesian": "u**2 - v**2 + 2*I*(sqrt(33)*w + sqrt(6)*(u + v))/15",
+    "sharp_moments_1_through_6": [
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "-65536/1126125"
+    ],
+    "independent_controls": "Cartesian symbolic M1..M3, three exact controls through M6, and altered B2 rejection"
   },
   "bounded_regressions": {
     "monomial_exponent_ranges": [
@@ -70,6 +90,6 @@
       "4": "64/16900975"
     }
   },
-  "scope": "Coordinate model for all 16 parameters; exact even-parity classification and shear identities as explained in proof. No full mixed-parity classification or universal finite moment cutoff is certified.",
+  "scope": "Coordinate model for all 16 parameters; exact nine-parameter quadratic invariant moments, even-parity trace, frame-incidence, boundary graph, and shear identities as explained in proof. The cited V-filtration theorems and the geometric full-family argument are written proofs, not computer-certified. No universal finite pure-moment cutoff is certified by this script.",
   "outcome": "pass"
 }

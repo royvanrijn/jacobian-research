@@ -1,0 +1,94 @@
+{
+  "scope": "Generic cubic boundary identities and selected degree-three-through-seven discriminant controls; not the all-degree Newton proof, Jelonek criterion, or Lean verification.",
+  "checks": [
+    {
+      "degree": 3,
+      "exact_global_order": 0,
+      "symbolic_boundary_coefficient": true
+    },
+    {
+      "degree": 4,
+      "targets": [
+        {
+          "B": 2,
+          "C": 3,
+          "order": 2
+        },
+        {
+          "B": 3,
+          "C": 2,
+          "order": 2
+        },
+        {
+          "B": 1,
+          "C": -1,
+          "order": 2
+        }
+      ],
+      "symbolic_boundary_coefficient": true
+    },
+    {
+      "degree": 5,
+      "targets": [
+        {
+          "B": 2,
+          "C": 3,
+          "order": 8
+        },
+        {
+          "B": 3,
+          "C": 2,
+          "order": 8
+        },
+        {
+          "B": 1,
+          "C": -1,
+          "order": 8
+        }
+      ],
+      "symbolic_boundary_coefficient": false
+    },
+    {
+      "degree": 6,
+      "targets": [
+        {
+          "B": 2,
+          "C": 3,
+          "order": 16
+        },
+        {
+          "B": 3,
+          "C": 2,
+          "order": 16
+        },
+        {
+          "B": 1,
+          "C": -1,
+          "order": 16
+        }
+      ],
+      "symbolic_boundary_coefficient": false
+    },
+    {
+      "degree": 7,
+      "targets": [
+        {
+          "B": 2,
+          "C": 3,
+          "order": 26
+        },
+        {
+          "B": 3,
+          "C": 2,
+          "order": 26
+        },
+        {
+          "B": 1,
+          "C": -1,
+          "order": 26
+        }
+      ],
+      "symbolic_boundary_coefficient": false
+    }
+  ]
+}

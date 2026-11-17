@@ -282,5 +282,150 @@ class DependencyGraphTests(unittest.TestCase):
             graph.simulate({"CLAIM": "published"})
 
 
+    def equivalence(self, members=("A", "B"), contexts=None):
+        for member in members:
+            if not any(node["id"] == member for node in self.data["graph"]["nodes"]):
+                self.node(member, "open", None, kind="goal")
+        directions = []
+        contexts = contexts or {}
+        for index, premise in enumerate(members):
+            conclusion = members[(index + 1) % len(members)]
+            directions.append({
+                "id": premise + "-TO-" + conclusion,
+                "premises": [premise, *contexts.get(premise, [])],
+                "conclusion": conclusion, "status": "proved",
+                "proof": deepcopy(self.sources["reduction"]),
+            })
+        group = {"id": "EQUIVALENT-GOALS", "title": "Exact directional equivalence",
+                 "members": list(members), "directions": directions}
+        self.data["graph"]["equivalences"] = [group]
+        return group
+
+    def test_equivalent_open_goals_cannot_prove_each_other(self):
+        self.equivalence()
+        graph = self.graph()
+        evaluation = graph.evaluate()
+        self.assertEqual([evaluation[key]["state"] for key in ("A", "B")], ["open", "open"])
+        self.assertIn("EQUIVALENT-GOALS", {blocker["id"] for blocker in graph.blockers("A")})
+        self.assertEqual(graph.component_of["A"], graph.component_of["B"])
+        self.assertEqual(graph.impact("A"), ["B"])
+        quotient = graph.quotient()
+        self.assertIn({"id": "EQUIVALENT-GOALS", "members": ["A", "B"], "equivalence": True},
+                      quotient["components"])
+        self.assertIn("independent grounding required", graph.to_dot())
+
+    def test_proving_either_equivalent_member_propagates_without_circular_provenance(self):
+        for ground in ("A", "B"):
+            with self.subTest(ground=ground):
+                self.data["graph"]["nodes"] = []
+                self.data["graph"]["implications"] = []
+                self.equivalence()
+                self.node("SOURCE", source="own")
+                self.rule("ZZ-GROUND", ["SOURCE"], ground, source="own")
+                graph = self.graph()
+                evaluated = graph.evaluate()
+                for member in ("A", "B"):
+                    self.assertEqual(evaluated[member]["state"], "proved")
+                    explanation = graph.explain(member)
+                    self.assertTrue(explanation["premise_provenance"])
+                    selected = graph.rules[evaluated[member]["support"][0]["id"]]
+                    self.assertTrue(all(evaluated[p]["proof_depth"] < evaluated[member]["proof_depth"]
+                                        for p in selected["premises"]))
+
+    def test_each_equivalence_direction_retains_its_own_context_premises(self):
+        self.node("TANG", "open", None)
+        self.equivalence(contexts={"A": ["TANG"]})
+        self.node("SOURCE", source="own")
+        self.rule("GROUND-A", ["SOURCE"], "A", source="own")
+        graph = self.graph()
+        self.assertEqual(graph.evaluate()["A"]["state"], "proved")
+        self.assertEqual(graph.evaluate()["B"]["state"], "open")
+        self.assertIn("TANG", {blocker["id"] for blocker in graph.blockers("B")})
+        # The reverse direction needs no Tang input.
+        self.data["graph"]["implications"][0]["conclusion"] = "B"
+        graph = self.graph()
+        self.assertEqual(graph.evaluate()["A"]["state"], "proved")
+        self.assertEqual(graph.simulate({"TANG": "falsified"})["nodes"]["A"]["state"], "proved")
+
+    def test_changed_equivalence_seed_cannot_survive_by_circulating(self):
+        self.equivalence()
+        self.node("SOURCE", source="own")
+        self.rule("GROUND", ["SOURCE"], "A", source="own")
+        graph = self.graph()
+        self.assertEqual(graph.evaluate()["B"]["state"], "proved")
+        (self.root / "own.md").write_text("Withdrawn source evidence.\n")
+        evaluated = graph.evaluate()
+        self.assertEqual([evaluated[key]["state"] for key in ("A", "B")], ["stale", "stale"])
+        self.assertIn("B", graph.source_impact("own.md"))
+
+    def test_changed_direction_does_not_invalidate_independently_grounded_member(self):
+        group = self.equivalence()
+        group["directions"][0]["proof"] = deepcopy(self.sources["alternative"])
+        self.node("SOURCE", source="own")
+        self.rule("GROUND", ["SOURCE"], "A", source="own")
+        graph = self.graph()
+        (self.root / "alternative.md").write_text("Changed forward equivalence proof.\n")
+        evaluated = graph.evaluate()
+        self.assertEqual(evaluated["A"]["state"], "proved")
+        self.assertEqual(evaluated["B"]["state"], "stale")
+        self.assertIn("A-TO-B", {source["owner"] for source in graph.stale_evidence()})
+
+    def test_hypothetical_equivalence_proof_never_erases_its_assumption(self):
+        self.equivalence()
+        self.node("GOAL", "open", None)
+        self.rule("DOWNSTREAM", ["B"], "GOAL")
+        original = deepcopy(self.data)
+        graph = self.graph()
+        for seed in ("A", "B"):
+            simulated = graph.simulate({seed: "proved"})
+            for node_id in ("A", "B", "GOAL"):
+                record = simulated["nodes"][node_id]
+                self.assertEqual(record["state"], "conditional")
+                self.assertEqual(record["assumptions"], [seed])
+                self.assertTrue(record["hypothetical"])
+            graph.explain("GOAL", simulated["nodes"])
+        self.assertEqual(self.data, original)
+
+    def test_conditional_equivalence_support_improvements_remain_acyclic(self):
+        self.equivalence(("A", "B", "C"))
+        self.node("SOURCE-A", source="own", assumptions=["X", "Y"])
+        self.node("SOURCE-C", source="alternative", assumptions=["X"])
+        self.rule("GROUND-A", ["SOURCE-A"], "A", source="own")
+        self.rule("GROUND-C", ["SOURCE-C"], "C", source="alternative")
+        graph = self.graph()
+        evaluated = graph.evaluate()
+        for member in ("A", "B", "C"):
+            self.assertEqual(evaluated[member]["assumptions"], ["X"])
+            graph.explain(member)
+
+    def test_undeclared_and_cross_component_cycles_still_fail_validation(self):
+        self.equivalence()
+        self.node("OUTSIDE", "open", None)
+        self.rule("OUT", ["A"], "OUTSIDE")
+        self.rule("BACK", ["OUTSIDE"], "B")
+        with self.assertRaisesRegex(GraphValidationError, "cycle outside equivalence"):
+            self.graph()
+        self.data["graph"]["implications"] = []
+        self.rule("UNDOCUMENTED", ["A"], "B")
+        with self.assertRaisesRegex(GraphValidationError, "must be an equivalence direction"):
+            self.graph()
+
+    def test_invalid_equivalence_groups_are_rejected(self):
+        for failure in ("one-way", "overlap", "multiple-members", "dangling"):
+            with self.subTest(failure=failure):
+                self.data["graph"]["nodes"] = []
+                group = self.equivalence()
+                if failure == "one-way":
+                    group["directions"].pop()
+                elif failure == "overlap":
+                    self.data["graph"]["equivalences"].append({**deepcopy(group), "id": "SECOND"})
+                elif failure == "multiple-members":
+                    group["directions"][0]["premises"] = ["A", "B"]
+                else:
+                    group["members"][0] = "MISSING"
+                with self.assertRaises(GraphValidationError):
+                    self.graph()
+
+
 if __name__ == "__main__":
     unittest.main()

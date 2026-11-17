@@ -1,10 +1,7 @@
 \section{Discussion}
 
-The reverse problem began with a tension.  Keller maps seem rigid, while
-finite \'etale algebras carry essentially arbitrary arithmetic.  The
-construction shows that these two facts are compatible: the map can be
-rigid in its Jacobian and still be flexible enough to contain a prescribed
-finite \'etale algebra as one complete fiber.
+The construction realizes a prescribed finite \'etale algebra as a
+complete fiber while keeping the Jacobian constant.
 
 The point is that the construction preserves the algebra itself, not merely
 its rank or its geometric points after base change.  Three identities carry
@@ -41,24 +38,17 @@ is deliberately separate: it uses the
 classical Campbell--Razar--Wright Galois case rather than the formalized
 construction.
 
-What I find most satisfying is that the final theorem is larger than the
-formula that led to it.  The starting point was one cubic inverse pattern.
-Once the derivative was recognized as both reconstruction unit and
-Jacobian factor, the degree ceased to matter.  A single marked root could
-carry any separable polynomial, and monogenicity then turned that polynomial
-statement into a theorem about every finite \'etale algebra of rank at least
-three.
-
 \paragraph{Relation to earlier work.}
-To my knowledge, no earlier source states that every finite \'etale
-\(K\)-algebra of rank at least three occurs as a full Keller fiber in
-\(\A^3_K\).  This priority statement is necessarily qualified: searches can
-miss unpublished work or a theorem stated in different language.  Gallagher
-gives explicit all-degree Keller families with split rational fibers
-\cite{Gallagher}; Migus uses available all-degree constructions in the real
-non-dense-image problem \cite{Migus}; and Shaska studies the grading and
-quotient geometry of the cubic seed \cite{Shaska}.  These results have a
-different quantifier order from the prescribed-algebra theorem here.
+The characteristic-zero prescribed-algebra existence theorem is a
+consequence of Ulam's earlier coefficient family, by the explicit
+specialization in Section~\ref{sec:ulam-comparison}. This paper supplies a
+different gauge, an explicit scheme-theoretic proof and a Lean certificate;
+the characteristic-\(\ne2\) supplied-presentation statement is kept separate.
+Gallagher's general weighted-lift construction and exact atlas already give
+all generic degrees \cite{GallagherConstruction,Gallagher}, and Migus
+uses the earlier all-degree constructions in the real non-dense-image
+problem \cite{Migus}. The present argument does not establish historical
+priority for any of these existence statements.
 
 \paragraph{Provenance.}
 The cubic seed was announced by Alp\"oge, who credited Akhil Mathew for

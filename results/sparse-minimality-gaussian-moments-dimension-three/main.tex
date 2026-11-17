@@ -16,7 +16,7 @@
 \title{Sparse Minimality of Gaussian-Moments Counterexamples\\
 in Dimension Three}
 \author{Roy van Rijn\\{\small Independent researcher}}
-\date{24 July 2026}
+\date{17 November 2026}
 \hypersetup{
   pdftitle={Sparse Minimality of Gaussian-Moments Counterexamples in Dimension Three},
   pdfauthor={Roy van Rijn},
@@ -29,16 +29,18 @@ in Dimension Three}
 \maketitle
 
 \begin{abstract}
-The Gaussian Moments Conjecture fails in every dimension at least three.
-We study minimal failure in the first failing dimension.  An exhaustive
-exact search over all \(59{,}535\) supports having degree at most four and
-at most four monomials shows that every pure-moment-null polynomial in this
-range still satisfies the conjectural mixed-moment conclusion.  Thus
-Long's five-term quartic is Pareto-minimal with respect to degree and
-circular-coordinate support size.  The theorem is computer-assisted:
-moment ideals through order twenty-four are computed directly in Laurent
-coordinate rings over \(\mathbb Q\), and the three genuine surviving
-families are proved harmless at all orders.
+We prove that a polynomial in three real Gaussian variables with total
+degree at most four and at most four nonzero monomials in a fixed Gaussian
+Witt frame satisfies the mixed-moment conclusion whenever all its positive
+pure moments vanish.  The proof combines an exhaustive exact calculation
+over \(59{,}535\) supports with all-order arguments for three surviving
+coefficient families: isotropic linear forms, polynomial Gaussian shears,
+and orthogonal products with an isotropic factor.  Moment ideals through
+order twenty-four exclude every other active support.  Together with
+Long's five-term quartic counterexample, the result shows that five
+Witt-coordinate monomials are necessary and sufficient for a failure of
+degree at most four.  The degree bound and the chosen notion of support
+are essential restrictions of the result.
 \end{abstract}
 
 \section{Introduction}
@@ -55,25 +57,32 @@ then, for every \(Q\in\C[X_1,\ldots,X_d]\),
   \E(QP^m)=0
   \qquad\text{for all sufficiently large }m.
 \]
-Long recently found explicit counterexamples in every dimension
-\(d\geq3\)~\cite{Long}.  His three-variable witness, in circular
+Long constructed explicit counterexamples in every dimension
+\(d\geq3\)~\cite[Theorem~5.1 and Corollary~5.2]{Long}.  His three-variable witness, in circular
 coordinates \(W,Z\) and an independent real Gaussian \(T\), is
 \begin{equation}\label{eq:long}
  P_{\mathrm L}
  =W+WZ-T^2-\frac32ZT^2-\frac12Z^2T^2.
 \end{equation}
 It has degree four and five monomials, all its pure moments vanish, and
-\(\E(ZP_{\mathrm L}^m)=m!\) for every \(m\geq1\).  We place this witness at
-the first corner of the sparse degree--support plane.
+\(\E(ZP_{\mathrm L}^m)=m!\) for every \(m\geq1\).  We ask whether a failure of degree at most four can use fewer monomials.
+Support size throughout refers to a fixed Gaussian Witt frame; it is not
+an invariant of arbitrary polynomial coordinate changes.
 
-\begin{theorem}[Sparse Pareto minimality]\label{thm:sparse}
-Let \(W,Z,T\) be Gaussian Witt coordinates, so that
+\begin{samepage}
+\begin{theorem}[Bounded sparse exclusion]\label{thm:sparse}
+Let \(X,Y,T\) be independent standard real Gaussians and set
+\[
+ Z=(X+iY)/\sqrt2,\qquad W=(X-iY)/\sqrt2.
+\]
+These Gaussian Witt coordinates satisfy
 \[
  \E(W^iZ^jT^k)=
  \begin{cases}
    i!(k-1)!!,&i=j\text{ and }k\text{ is even},\\
-   0,&\text{otherwise}.
+   0,&\text{otherwise},
  \end{cases}
+\qquad (-1)!!=1.
 \]
 Suppose that \(P\in\C[W,Z,T]\) has total degree at most four and at most four
 nonzero monomials.  If \(\E(P^m)=0\) for every \(m\geq1\), then, for every
@@ -85,11 +94,33 @@ nonzero monomials.  If \(\E(P^m)=0\) for every \(m\geq1\), then, for every
 Consequently no GMC counterexample has both degree at most four and support
 size at most four in a Gaussian Witt frame.
 \end{theorem}
+\end{samepage}
 
-In particular, \eqref{eq:long} is minimal for the product partial order on
-\((\deg P,\#\Supp(P))\).  The theorem does not separately prove that degree
-four is globally minimal: a denser cubic is not excluded.  Nor does it
-exclude a four-term counterexample of degree greater than four.
+Thus five terms are necessary for a counterexample of degree at most
+four, and \eqref{eq:long} attains this term bound.  This statement does not
+prove global degree minimality or Pareto minimality of the pair \((4,5)\):
+a five-term cubic would lie outside the excluded rectangle.  A four-term
+counterexample of degree greater than four is also outside the theorem.
+
+\paragraph{Why finite equations can settle this bounded problem.}
+Gaussian expectation can only see products whose \(W\)- and \(Z\)-degrees
+balance and whose \(T\)-degree is even.  For example, if
+\(P=aW+bZ\), then \(\E(P^2)=2ab\); when both coefficients are nonzero,
+vanishing already fails at the second moment.  More complicated supports
+can have several balanced products at the same order, allowing their
+coefficient contributions to cancel.  The finite calculation must
+therefore solve coefficient equations, not merely look for balanced
+products.
+
+There are only \(35\) monomials of degree at most four.  For each small
+support, exact elimination either rules out such cancellation or produces
+one of three explicit families.  The difficult logical transition is from
+these finite equations to all sufficiently large mixed moments.  It is
+made separately: each surviving family is carried to a polynomial with
+one-sided isotropic weight by a Gaussian-preserving change of variables.
+A fixed multiplier has bounded weight and cannot balance arbitrarily
+large powers.  No assertion that twenty-four moments determine all
+moments is needed.
 
 \section{Moment ideals}
 
@@ -123,15 +154,30 @@ semigroup
  \right\}.
 \]
 Its Hilbert basis \(H_S\) consists of the primitive contractions.  This
-basis is computed exactly in two stages.  First ignore parity.  Pottier's
-bound~\cite{Pottier} shows that every Hilbert-basis vector for the one-row
-charge equation has
-\[
-  |\nu|\leq1+\sum_{s\in S}|i_s-j_s|.
-\]
-The even-parity subsemigroup is then generated by the even charge atoms and
-the pairwise sums, with repetition, of odd charge atoms; removing
-decomposable candidates gives \(H_S\).
+basis is computed exactly in two stages.  First ignore parity and
+enumerate the indecomposable nonnegative solutions of
+\(\sum_s q_s\nu_s=0\), where \(q_s=i_s-j_s\).  The following elementary
+one-row bound makes this enumeration finite:
+\begin{equation}\label{eq:charge-bound}
+ |\nu|\leq 1+\sum_{s\in S}|q_s|.
+\end{equation}
+Indeed, a zero-charge monomial contributes only its unit vector as an
+indecomposable solution.  Otherwise an indecomposable solution uses
+positive and negative charges.  Let \(A\) and \(B\) be the largest positive
+charge and the largest absolute negative charge used in the relation.
+Order its multiset of charges by choosing a negative charge when the
+current partial sum is positive, and a positive charge otherwise.  Such a
+choice is always available until the sum reaches zero.  Every partial sum
+lies in the integer interval \([1-B,A]\).  The partial sums before the
+terminal zero are distinct: a repetition would give a proper nonempty
+zero-sum subrelation.  There are \(A+B\) integers in that interval, so the
+length is at most \(A+B\), which implies \eqref{eq:charge-bound}.
+
+For parity, split every charge atom into its even or odd total \(T\)-degree
+class.  Any even-parity sum of charge atoms is a sum of even atoms and
+pairs, with repetition, of odd atoms.  These elements generate the
+contraction semigroup.  Removing decomposable candidates therefore gives
+its full Hilbert basis \(H_S\).
 
 Wick contraction gives the exact moment polynomial
 \begin{equation}\label{eq:sparse-moment}
@@ -170,14 +216,15 @@ one solves
   t^{q_b-q_a}=c_a/c_b,\qquad
   \lambda=(t^{q_a}c_a)^{-1}.
 \]
-Equivalently, with \(d=q_b-q_a\), quotient coordinates are the invariant
-Laurent ratios
+For \(d=q_b-q_a\), useful invariant Laurent ratios are
 \[
   y_s=c_s^d c_a^{q_s-q_b}c_b^{q_a-q_s}
   \qquad(s\neq a,b).
 \]
-On the slice they become \(y_s=c_s^d\), so the slice is a finite cover of
-the invariant-ratio quotient.  Consequently the four-term elimination has
+On the slice they become \(y_s=c_s^d\), so these ratios define a finite
+map from the slice torus.  The elimination itself uses the free slice
+coordinates \(c_s\), rather than assuming that the displayed ratios
+generate the full invariant ring.  Consequently the four-term elimination has
 only two active coefficient variables whenever two charges occur.  If all
 charges agree, the torus acts through overall scaling; such an active
 non-one-sided support necessarily has charge zero, and the calculation
@@ -192,11 +239,12 @@ raw supports.  We identify a support with its reflection under
 calculation.  If \(H_S\) has one element, then \(\Gamma_S\) has rank one
 and the moment at the degree of its generator consists of a single
 nonzero coefficient monomial; the coefficient torus contains no solution.
-More generally, the contraction vectors are enumerated by total degree
-from \(H_S\), and a degree containing exactly one vector gives the same
-rejection before any factorial Wick weights are expanded.  Supports with
+More generally, contraction vectors are enumerated from \(H_S\) through
+order twenty; any degree containing exactly one vector gives the same
+rejection before factorial Wick weights are expanded.  This cutoff limits
+only a sufficient rejection filter.  Supports with
 the same ordered charge/parity signature share this enumeration.  Only
-the remaining supports are expanded using \eqref{eq:sparse-moment}.  If no
+the remaining supports are expanded using \eqref{eq:sparse-moment}.  If no nonzero
 contraction occurs, all charges \(i_s-j_s\) have one strict sign and the
 mixed-moment conclusion follows by bounded weight.  Possible additional
 factorizations among disjoint primitive contractions are not used in the
@@ -217,10 +265,11 @@ strictly one-sided has a contraction by order sixteen.
 After the preceding filters, the four-term stratum contains \(5{,}718\)
 coefficient-torus ideals requiring elimination.  Each is computed in the
 Laurent ring of the two-normalization slice when its charge data have rank
-two, with the one-normalization fallback just described.  No inverse or
-Rabinowitsch variable is adjoined: extension to the Laurent ring and
-contraction are performed by ideal quotients in the genuine quotient
-coordinates.
+two, with the one-normalization fallback just described.  The implementation works in the polynomial ring of the free slice
+coordinates and saturates by their product.  This computes the contraction
+of the Laurent ideal, so its unit-ideal test is exactly emptiness on the
+coefficient torus.  Saturation uses ideal quotients rather than an
+auxiliary inverse variable.
 \begin{samepage}
 Exact Groebner bases over \(\mathbb Q\) for \(J_{S,20}\) leave precisely
 the supports
@@ -251,33 +300,66 @@ their nontrivial equations are respectively
  2c_2+c_1^2,\qquad
  2c_1^2c_2-1,\quad c_3+c_1c_2^2.
 \]
-These formulas both classify the coefficient schemes and make the
-survivors easy to interpret.
+The finite equations supply necessary coefficient conditions for any
+polynomial whose moments vanish at every order.  Conversely, the next
+section proves that every member of these three families has the required
+all-order behavior.  Reflections \(W\leftrightarrow Z\), nonzero overall
+scalings and the coefficient-torus normalizations preserve both pure
+vanishing and the mixed-moment conclusion, so no coefficient or support
+orbit is lost.  The zero polynomial satisfies the conclusion directly.
 
 \section{All-order interpretation of the survivors}
 
-The family \eqref{eq:null-linear} is an isotropic linear form.  A complex
-orthogonal change takes it to a scalar multiple of \(Z\).  A fixed
-polynomial \(Q\) has bounded \(W\)-degree, so
-\(\E(QZ^m)=0\) for all sufficiently large \(m\).
+We first isolate the bounded-weight argument used in all cases.
+If every monomial of \(R\) has strictly positive charge \(i-j\), then
+every monomial of \(R^m\) has charge at least \(m\).  For a fixed polynomial
+\(Q\), let \(B\) be the maximum absolute charge of its monomials, taking
+\(B=0\) if \(Q=0\).  For \(m>B\), no monomial of \(QR^m\) has charge zero,
+and hence \(\E(QR^m)=0\).  The same proof applies to strictly negative
+charges.  In particular it applies to \(R=Z\) and \(R=TZ\).
+
+The Gaussian functional is invariant under complex orthogonal linear
+substitutions: the Wick formula expresses every polynomial moment as a
+sum of products of the covariance pairing.  This algebraic invariance
+does not require the substitution to preserve the real integration
+contour.  It allows the following changes of Witt frame.
+
+The family \eqref{eq:null-linear} is a nonzero isotropic linear form.
+A complex orthogonal change takes it to a scalar multiple of \(Z\), and
+the bounded-weight argument applies.
 
 For \eqref{eq:null-shear}, define
 \[
- D=W\partial_T-T\partial_Z.
+ D=W\partial_T-T\partial_Z,\qquad N=WD.
 \]
-Then \(D(2WZ+T^2)=0\), \(D(W)=0\), and
+Then \(D(W)=0\), \(D(T)=W\), and \(D(Z)=-T\).  Thus
 \[
- P_{\rm sh}=\exp(-aWD)(Z).
+ \exp(-aN)(Z)=Z+aWT-\frac12a^2W^3=P_{\rm sh}.
 \]
-Gaussian integration by parts gives \(\E(DF)=0\) for every polynomial
-\(F\), and therefore also \(\E(WDF)=0\).  Since \(WD\) is locally nilpotent,
-\(\phi=\exp(-aWD)\) is a polynomial automorphism preserving the Gaussian
-functional.  For fixed \(Q\),
+The derivation \(N\) is locally nilpotent: assigning weights \(0,1,2\) to
+\(W,T,Z\), respectively, shows that it strictly lowers this nonnegative
+weight.  Its exponential \(\phi=\exp(-aN)\) is therefore a polynomial
+automorphism.
+
+Gaussian integration by parts in these coordinates gives
+\[
+ \E(WF)=\E(\partial_ZF),\qquad
+ \E(TF)=\E(\partial_TF).
+\]
+Consequently
+\[
+ \E(NF)
+ =\E(W^2\partial_TF)-\E(WT\partial_ZF)
+ =\E(\partial_Z^2\partial_TF)-\E(\partial_T\partial_Z^2F)=0.
+\]
+Applying this to \(N^{r-1}F\) for \(r\geq1\), and using the finite
+exponential expansion on any polynomial, proves
+\(\E(\phi(F))=\E(F)\).  For fixed \(Q\),
 \[
  \E(QP_{\rm sh}^m)
- =\E\bigl(\phi^{-1}(Q)Z^m\bigr),
+ =\E\bigl(\phi^{-1}(Q)Z^m\bigr).
 \]
-which vanishes eventually by the same bounded-weight argument.
+The right side vanishes eventually by bounded weight.
 
 Finally,
 \begin{equation}\label{eq:product-factorization}
@@ -286,44 +368,52 @@ Finally,
  \left(Z+\frac1{2a^2}W\right)
  \left(T+aZ-\frac1{2a}W\right).
 \end{equation}
-The second factor is isotropic and orthogonal to the first.  After an
-orthogonal Witt change, \eqref{eq:product-factorization} is a scalar
-multiple of \(TZ\).  Every \(P_{\rm pr}^m\) then has isotropic weight \(m\),
-which a fixed \(Q\) can balance only finitely often.  All three families
-satisfy GMC.  Together with the strictly one-sided supports, this proves
+For the covariance pairing \(\langle W,Z\rangle=1\),
+\(\langle T,T\rangle=1\), the second factor has self-pairing
+\(1+2a(-1/(2a))=0\).  The two factors are orthogonal because
+\(-1/(2a)+a/(2a^2)=0\).  The first has nonzero self-pairing \(1/a^2\).
+Normalize it to a unit vector; its orthogonal complement is a
+nondegenerate two-dimensional space containing the second, isotropic
+factor.  Completing a Witt basis in that complement takes the first
+factor to \(T\) and the second to a nonzero scalar multiple of \(Z\).
+Thus \(P_{\rm pr}\) becomes a scalar multiple of \(TZ\), to which bounded
+weight applies.
+
+These arguments also prove the vanishing of every positive pure moment
+of the three families, by taking \(Q=1\).  Combined with the exhaustive
+finite exclusions and the one-sided supports, they prove
 Theorem~\ref{thm:sparse}.
 
-\section{Reproducibility and scope}
+\section{Computation and scope}
 
-The enumeration is implemented with exact integer Wick coefficients and
-Singular's rational Groebner bases.  It computes each contraction Hilbert
-basis before moment expansion, caches contraction vectors by charge/parity
-signature, and enumerates supports rather than reading a stored survivor
-list.  It performs every emptiness test over \(\mathbb Q\) in the Laurent
-ring of the coefficient-symmetry quotient, without auxiliary saturation
-variables.  Polynomial denominators are cleared only to export the three
-displayed triangular certificates.  The replay also verifies the
-invariant-ratio exponents and checks \eqref{eq:product-factorization}.  It
-is run from the repository root by
-\begin{verbatim}
-.venv/bin/python scripts/verify_three_real_gmc_sparse_pareto.py
-\end{verbatim}
-The complete replay takes under a minute on a laptop.  Modular runs are
-used only as optional discovery filters and are not part of the exact
-certificate.
+The supplied source archive \texttt{source.zip} includes the supplement
+\emph{Exact Bounded Sparse Exclusion}, with primary checker
+\texttt{verify\_three\_real\_gmc\_sparse\_pareto.py} and helper
+\texttt{sparse\_supports.py}.  Their respective SHA256 digests are
+\begin{quote}
+\footnotesize\ttfamily
+5733030a5bee28d0a56d248468f9fbcebe5f76f8844cf0ba2adfc2895097aa9f\\
+d573772c0d771a7ffab701a73fa1b0c0c118a36c1b86d2a6e880dc0db114d224
+\end{quote}
+The checker enumerates supports, applies the charge/parity filters, and
+saturates exact rational moment ideals on coefficient slices.  It exports
+the three coefficient conditions and verifies
+\eqref{eq:product-factorization}; software requirements and replay
+instructions accompany the code.  No finite-field output is used to
+certify the characteristic-zero result.
 
-\section*{Acknowledgments and declaration of generative AI use}
+The finite exclusions supply necessary conditions for pure vanishing;
+Section~4 proves the all-order mixed conclusion.  A replay verifies this
+implementation, while the coverage and invariance arguments remain part
+of the mathematical proof.  Both bounds---degree at most four and at most
+four Witt monomials---apply simultaneously.  Denser cubics and higher-degree
+four-term polynomials lie outside the theorem.
 
-The author used OpenAI's ChatGPT and Codex extensively during the research
-process, including for conjecture formation, symbolic experimentation,
-proof exploration, consistency checks, and preparation of this manuscript.
-The author reviewed the mathematical claims and assumes full responsibility
-for the contents.  The theorem uses the exhaustive exact coefficient-scheme
-calculation stated in the text and supplied with the paper.
+\paragraph{AI assistance and review.}
+ChatGPT (OpenAI) assisted with mathematical arguments, literature checks,
+exposition, proof review and verification code.
 
 \bibliographystyle{plain}
 \bibliography{references}
 
 \end{document}
-
-\typeout{get arXiv to do 4 passes: Label(s) may have changed. Rerun}

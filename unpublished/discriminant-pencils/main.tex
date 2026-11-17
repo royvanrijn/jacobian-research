@@ -1,7 +1,7 @@
 \documentclass[11pt]{article}
 
 \usepackage[margin=1in]{geometry}
-\usepackage{amsmath,amssymb,amsthm,microtype}
+\usepackage{amsmath,amssymb,amsthm,microtype,needspace}
 \usepackage[T1]{fontenc}
 \usepackage[hidelinks]{hyperref}
 
@@ -16,7 +16,7 @@
 
 \title{Generic Discriminants of Polynomial Tangent Pencils}
 \author{Roy van Rijn\\{\small Independent researcher}}
-\date{24 July 2026}
+\date{17 November 2026}
 \hypersetup{
   pdftitle={Generic Discriminants of Polynomial Tangent Pencils},
   pdfauthor={Roy van Rijn},
@@ -38,7 +38,8 @@ is parameterized by
 \[
   r\longmapsto\bigl(H'(r),rH'(r)-H(r)\bigr).
 \]
-We prove that, for \(H\) in a nonempty Zariski-open set, its projective
+We give a self-contained contact-stratum proof of this classical dual-curve
+specialization: for \(H\) in a nonempty Zariski-open set, its projective
 closure is a rational plane curve of degree \(n\), smooth at its unique
 point at infinity, with exactly \(n-2\) ordinary cusps and
 \(\frac12(n-2)(n-3)\) ordinary nodes, and no other singularities.
@@ -70,8 +71,22 @@ Geometrically, \((s,-t)\) records the affine line of slope \(s\) tangent to
 the graph \(Y=H(W)\) at \(r\).  Cusps arise from flexes of the graph and
 nodes from lines tangent at two distinct points.  This is a special
 one-parameter instance of the classical geometry of dual plane
-curves; see, for example,~\cite{Yuran}.
+curves.  The contribution of this note is an elementary verification of
+genericity and the behavior at infinity in the thin family of polynomial
+graphs, followed by the usual genus count.  No new general Pl\"ucker formula
+or priority for the numerical counts is claimed.
 
+For comparison, Yuran's Newton-polygon theorem gives only ordinary contacts
+under the sufficient hypothesis that the polygon contains \(5\Delta\)
+\cite[Theorems~1.3 and~1.16]{Yuran}.  The graph \(Y-H(W)=0\) has Newton
+polygon contained in \(0\leq\deg_Y\leq1\), so that hypothesis does not
+apply to this family.  Yuran's conditional counting theorems assume the
+corresponding contact exclusions; we verify the needed exclusions directly
+by the three factorization strata below.  This comparison identifies the
+proof task here without asserting that these particular counts were
+previously unknown.
+
+\Needspace{16\baselineskip}
 \begin{theorem}\label{thm:main}
 For every \(n\geq3\), there is a nonempty Zariski-open subset of the
 degree-\(n\) polynomials such that the projective discriminant curve of
@@ -87,6 +102,13 @@ degree-\(n\) polynomials such that the projective discriminant curve of
 
 The result concerns the reduced discriminant.  No assertion is made here
 about the multiplicity with which a resultant defines it.
+
+For the cubic \(H(W)=W^3\), the parametrization is
+\(\nu_H(r)=(3r^2,2r^3)\).  Its affine equation is
+\(27t^2=4s^3\), so the origin is its unique ordinary cusp and there are no
+nodes.  Homogenizing gives \(27T^2Z=4S^3\), whose sole point at infinity
+\([0:1:0]\) is smooth since the derivative with respect to \(Z\) is nonzero.
+This is the \(n=3\) case of all five conclusions.
 
 \section{Normalization and infinity}
 
@@ -244,13 +266,21 @@ cusp and numerical counts.
 The global dimension-of-image argument, the normalization and degree
 theorem for the parametrized image, the scheme-theoretic cusp and node
 criteria, and the genus--delta formula are supplied by the written proof
-and lie outside this partial formalization.
+and lie outside this partial formalization.  A versioned source snapshot
+with its pinned toolchain is available as~\cite{FormalSources}; build and
+scope instructions accompany the manuscript supplement.  This availability
+statement does not report a new Lean replay.
 
 \paragraph{AI assistance and review.}
 ChatGPT (OpenAI) assisted with mathematical arguments, literature checks,
 exposition, proof review and verification code.
 
 \begin{thebibliography}{9}
+
+\bibitem{FormalSources}
+R.~van Rijn, \emph{Polynomial tangent pencils in Lean},
+repository edition \texttt{c32b9b4}, 17 November 2026,
+\href{https://github.com/royvanrijn/jacobian-research/tree/c32b9b4d273cf7988e85184a0d5eae9c488727fd/research/foundations/formal/discriminant-pencils}{versioned partial formalization}.
 
 \bibitem{Yuran}
 A.~Yuran,

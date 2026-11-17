@@ -1,189 +1,79 @@
-# Literature audit: finite étale Keller fibers
+# Literature comparison: finite etale Keller fibers
 
-**Search date:** 27 July 2026
+## Current contribution and the closest theorem
 
-## Claim audited
+The characteristic-zero existence statement is a consequence of the earlier
+coefficient family in the unbylined Ulam technical note, *A counterexample to
+the Jacobian conjecture*, Theorem 5.2, pp. 6–7. The primary PDF at
+[Ulam](https://www.ulam.ai/research/jacobian.pdf) was inspected on
+17 November 2026. Its printed date is 20 July 2026; an archived July copy
+of the exact current formulas has not been inspected. This is a comparison
+of mathematical statements, not a certification of exact version priority.
 
-The manuscript proves that every finite étale algebra over a
-characteristic-zero field, except one of rank two, occurs as a full fiber of a
-polynomial Keller map. In rank at least three the realization is explicit in
-`A^3` and has determinant `1` after a fixed target-preserving linear output
-normalization.
+For `P(a+s)=sum c_k s^k`, choose `c_1 != 0` and the constant parameters
+`eta_1=3(c_3/c_1-1)`, `eta_(k-2)=k c_k/c_1` for `4<=k<=n`, with target
+`(p,q,r)=(1,-2c_2/c_1,-2c_0/c_1)`. Equation (10) in that theorem then
+becomes `Omega=(2/c_1) P(a+s)`. Separability makes its derivative a unit
+in the quotient; `p=1` forces all source points into the reconstruction
+chart. The reconstruction identities work over commutative test algebras,
+so they identify the whole fiber scheme, rather than just its complex
+points. The theorem's degree calculation and monogenicity give the
+characteristic-zero full finite-etale realization conclusion. The formulas
+are algebraic over the characteristic-zero coefficient field even though
+the source states its theorem over the complex numbers.
 
-The priority language in the manuscript is deliberately qualified:
+The revised paper therefore presents a quadratic-gauge proof and Lean
+formalization of this consequence, and a separate supplied-presentation
+statement in characteristic different from two. No novelty or priority
+claim for these refinements is inferred from the comparison. A new order
+of quantifiers does not establish a new existence theorem.
 
-> To our knowledge, no earlier source states this finite-étale realization
-> theorem or the resulting rank classification.
+The specialization is checked coefficientwise by `verify_comparison.py`.
+That exact algebra check supports the comparison; it does not verify either
+paper's full reconstruction or function-field proof.
 
-This file records the search supporting that sentence. It is not a substitute
-for MathSciNet/zbMATH review or direct expert consultation.
+## All-degree constructions
 
-## Queries
+[Alexis Gallagher, *The Jacobian counterexample, explained*, Section 7](https://jacobianfun.org/jacobian-explained)
+was inspected on 17 November 2026. The general weighted-lift recipe, rather
+than only the finite atlas, gives every generic degree at least three.
+The [atlas](https://jacobianfun.org/counterexamples) provides exact split
+fibers in degrees 3 through 100. The general construction must be credited
+separately from those finite certificates.
 
-The following exact and near-exact queries were run against general web,
-arXiv, MathOverflow, and bibliographic search results, with spelling variants:
+[Piotr Migus, arXiv:2607.21572v3](https://arxiv.org/html/2607.21572v3),
+Introduction and Proposition 2, expressly use the preceding Ulam and
+Gallagher constructions. Version 3 (27 August 2026) identifies the Ulam
+note by URL and cites Theorem 5.2 and Corollary 5.3. This supports the
+current construction comparison; exact July version priority remains
+qualified as above.
 
-```text
-"finite étale algebra" "Keller map"
-"finite etale algebra" "Keller map"
-"Keller fiber" polynomial map Jacobian
-"full fiber" "Keller map" finite etale
-"every finite étale" Keller
-"prescribed finite étale" polynomial map fiber constant Jacobian
-finite étale scheme complete fiber polynomial étale endomorphism affine space
-arbitrary number field fiber Keller map
-```
+## Classical rank-two exclusion
 
-Repository and coefficient-string searches were also used for the phrases
-`finite étale Keller fiber`, `prescribed fiber`, and `full fiber`.
+L. A. Campbell, *A condition for a polynomial map to be invertible*,
+Math. Ann. 205 (1973), 243–248,
+[DOI](https://doi.org/10.1007/BF01349234), unnumbered theorem on p. 244,
+is the existing primary interface for the Galois case over the complex
+numbers. Razar (1979) and Wright (1981) are later algebraic treatments.
+The manuscript descends to a finitely generated characteristic-zero field,
+uses finite locally free rank to preserve geometric degree under extension
+to the complex numbers, applies the normal quadratic case, and descends
+invertibility by faithful flatness. This is a written external interface;
+it is not included in the focused formal certificate.
 
-## Degree-two source audit
+## Other attribution and scope
 
-The audit corrected one initially over-specific citation. Chapter I,
-Theorem 2.1 of Bass--Connell--Wright concerns the implication from bijectivity
-to a polynomial inverse; it is not the primary source for the Galois case used
-here.
+The cubic seed announced by Alpöge and its Isabelle/HOL certificate are
+credited where used. Shaska's grading and quotient geometry explain the
+cubic construction but are not substituted for the explicit reconstruction.
+Miranda–Neto's ideal-theoretic study of existing Keller fibers and
+Lipton–Markakis's Hilbert-irreducibility perspective are adjacent topics;
+neither is used to claim an advance based on quantifier order.
 
-The relevant historical sources are:
+Generic monodromy, Hilbertian specialization, exact nonproperness and stable
+atomicity are not results of this focused paper. Older audit descriptions
+of a generic-monodromy theorem in this manuscript have been removed.
 
-- L. A. Campbell,
-  *A condition for a polynomial map to be invertible*, Math. Ann. 205
-  (1973), 243--248,
-  [DOI](https://doi.org/10.1007/BF01349234), specifically the unnumbered
-  theorem on p. 244: a polynomial map of complex affine space has a
-  polynomial inverse when its Jacobian determinant never vanishes and its
-  induced function-field extension is normal;
-- M. Razar,
-  *Polynomial maps with constant Jacobian*, Israel J. Math. 32 (1979),
-  97--106,
-  [DOI](https://doi.org/10.1007/BF02764906);
-- D. Wright,
-  *On the Jacobian conjecture*, Illinois J. Math. 25 (1981), 423--440,
-  [DOI](https://doi.org/10.1215/ijm/1256047158).
-
-The manuscript does not rely on an unverified field-general formulation of
-one of these sources. Instead it derives the arbitrary characteristic-zero
-field statement from Campbell's exact complex theorem. It first descends the
-coefficients to a finitely generated subfield and proves stability of generic
-degree by restricting the map to a nonempty target open on which it is finite
-locally free. Base change preserves the rank of that finite locally free map.
-After embedding the coefficient field into `C`, geometric degree two
-therefore remains degree two; in characteristic zero the resulting quadratic
-extension is separable and normal, so Campbell applies. Finally the
-coordinate-ring map, now an isomorphism after tensoring with `C`, was already
-an isomorphism by faithful flatness. An automorphism has function-field degree
-one, giving the required contradiction.
-
-This exclusion is generic and precedes any choice of a special fiber. Empty
-fibers are not nonzero finite étale objects, and shorter fibers of maps of
-some other geometric degree are not full. Neither kind of fiber contributes
-to the full-fiber rank classification.
-
-## Closest located sources to the prescribed-algebra realization theorem
-
-### Migus: all-degree constructions as input
-
-P. Migus,
-[Generic degrees of real polynomial Keller maps with non-dense
-image](https://arxiv.org/abs/2607.21572),
-2026.
-
-Migus classifies the generic degrees of real Keller maps with non-dense
-image. His introduction explicitly treats the available all-degree families
-of Gallagher and of the base manuscript as preceding inputs. This confirms
-that existence in every generic degree is shared terrain; the prescribed
-complete-fiber theorem has a different quantifier order and is not stated
-there.
-
-### Gallagher: split complete fibers
-
-A. Gallagher,
-[Counterexample atlas: generic fiber degrees 3 through 100](https://jacobianfun.org/counterexamples),
-2026.
-
-The atlas gives explicit Keller maps in every generic degree and complete
-split rational fibers. It realizes the split algebra `K^N`, not arbitrary
-finite étale `K`-algebras, and does not state the rank classification.
-
-### Miranda--Neto: ideals of existing fibers
-
-C. B. Miranda--Neto,
-*An ideal-theoretic approach to Keller maps*, Proc. Edinburgh Math. Soc. 62
-(2019), 1033--1044,
-[DOI](https://doi.org/10.1017/S0013091519000099).
-
-This work studies radicality and maximal-ideal decomposition for fibers of a
-Keller map already given. It does not construct a Keller map from a prescribed
-finite étale algebra.
-
-### Lipton--Markakis: rational images and Hilbert irreducibility
-
-R. J. Lipton and E. Markakis,
-[Some remarks on the Jacobian conjecture and connections with Hilbert's
-irreducibility theorem](https://arxiv.org/abs/math/0507525), 2005.
-
-This studies rational images and Hilbert subsets under Keller maps. Its
-quantifier order starts with a map and studies its values; the realization
-theorem starts with a finite étale algebra and constructs the map.
-
-### Shaska: graded arithmetic structure
-
-T. Shaska,
-[Graded Keller maps and the Jacobian conjecture](https://arxiv.org/abs/2607.20210),
-2026.
-
-This studies graded Keller maps, quotient geometry, and arithmetic thinness.
-In particular, it descends the Keller condition to the mixed-sign quotient
-and identifies the order-two vanishing of the quotient Jacobian along the
-contracted locus. This gives a useful structural explanation of the cubic
-seed, but it does not provide the derivative-unit reconstruction or a
-prescribed finite-étale algebra realization theorem.
-
-### Independent Isabelle verification of the cubic seed
-
-A. Freitas Ramos, D. Barros Hulak, and R. J. Guerra Barretto de Queiroz,
-[Formal Verification of an Explicit Counterexample to the Jacobian
-Conjecture](https://isa-afp.org/entries/Jacobian_Counterexample.html),
-Archive of Formal Proofs, 2026.
-
-This Isabelle/HOL development independently verifies the announced cubic
-map's determinant and collision. The active manuscript therefore uses that
-map only to identify the cubic seed of the general construction; its
-distinctive formal certificate is the arbitrary prescribed-fiber theorem.
-
-### General specialization literature
-
-General work on specialization of finite covers, Hilbert irreducibility, and
-prescribed local behavior can realize finite étale algebras inside suitable
-covers. Those results do not impose that the cover is a polynomial
-constant-Jacobian self-map of affine space. They are therefore adjacent
-arithmetic inputs, not prior versions of the prescribed-algebra realization
-theorem.
-
-### Classical monodromy input
-
-The generic-monodromy theorem added to the paper uses Jean-Pierre Serre,
-*Topics in Galois Theory*, Section 4.4, especially Theorem 4.4.5: a Morse
-polynomial of degree `N` in characteristic zero has Galois group `S_N` over
-the value-function field. The paper's new work is the birational
-parametrization of the quadratic-gauge discriminant and the deduction that
-every admissible seed has a Morse vertical slice. Hilbertian specialization
-then uses the standard Hilbert irreducibility theorem from Chapter 3 of the
-same reference.
-
-## Negative-search conclusion
-
-No located source states any of the following:
-
-1. every squarefree polynomial of degree at least three is the exact full
-   inverse polynomial of an explicit Keller fiber after translation;
-2. every finite étale algebra of rank at least three occurs as a full fiber of
-   a polynomial Keller map of `A^3`;
-3. the possible ranks of nonzero full Keller fibers are exactly
-   `1,3,4,5,...`.
-
-The manuscript should retain the phrase **“to our knowledge”** and should not
-claim that the search proves absolute priority. Before journal submission,
-the statement should also be sent to specialists in Keller maps and finite
-cover arithmetic, and checked in MathSciNet and zbMATH by a reader with full
-access.
+An exhaustive MathSciNet/zbMATH search and external specialist priority
+review remain unperformed. The manuscript's contribution is deliberately
+stated without a claim of first realization.

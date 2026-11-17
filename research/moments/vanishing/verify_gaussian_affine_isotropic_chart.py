@@ -94,6 +94,37 @@ def radial_controls():
     return {"parameter_cases": cases, "moment_orders": [0, order]}
 
 
+def relative_endpoint_controls():
+    """Bounded checks of the exact relative relations, including the endpoint."""
+    radial, t = sp.symbols("R t")
+    d = 1-2*t
+    hnorm = 1/sp.sqrt(d)
+    potential = t*(radial**3+2*radial) + t**2*(radial**2+1)**2/(2*d)
+    phi = -radial+potential
+    order = 4
+    exponential = sp.series(sp.exp(potential), t, 0, order+1).removeO()
+    normalization = sp.series(hnorm, t, 0, order+1).removeO()
+    def functional(q):
+        expr = sp.series(q*exponential, t, 0, order+1).removeO().expand()
+        contracted = sum(coefficient*math.factorial(power[0])
+                         for power, coefficient in sp.Poly(expr, radial).terms())
+        return sp.series(normalization*contracted, t, 0, order+1).removeO().expand()
+    for j in range(1, 4):
+        f = radial**j
+        zero(functional(sp.diff(f, radial)+sp.diff(phi, radial)*f))
+    endpoint_period = -sp.series(hnorm*sp.exp(potential.subs(radial, 0)), t, 0, order+1).removeO()
+    zero(functional(sp.diff(phi, radial))-endpoint_period)
+    # Universal boundary-class connection, not just the selected test phase.
+    abstract_phi = sp.Function("phi")(t, radial)
+    px, pt = sp.diff(abstract_phi, radial), sp.diff(abstract_phi, t)
+    endpoint_pt = pt.subs(radial, 0)
+    boundary_action = sp.diff(px, t)+(pt-endpoint_pt)*px
+    zero(boundary_action-(sp.diff(pt-endpoint_pt, radial)+px*(pt-endpoint_pt)))
+    return {"g": "R^3+2R", "B": "R^2+1", "a": 1,
+            "parameter_orders": [0, order], "relative_relations": ["D(R)", "D(R^2)", "D(R^3)"],
+            "endpoint_relation": "L(D(1))=-H exp(phi(0))"}
+
+
 def checks():
     c, d = sp.symbols("c d", nonzero=True)
     ell = sp.Function("ell")(Z)
@@ -225,6 +256,15 @@ def checks():
     zero(reciprocal_phi.coeff(xr, 4) - top_reciprocal)
     # Multiplication by r clears every parameter pole, irrespective of x powers.
     sp.Poly(sp.expand(reciprocal_r*xr**4*reciprocal_phi), reciprocal_r, xr)
+    # An additional polynomial factor is a unit at this selected double root.
+    q0 = sp.symbols("q0", nonzero=True)
+    q1, q2 = sp.symbols("q1 q2")
+    extra_factor = q0 + q1/xr + q2/xr**2
+    general_double_s = reciprocal_s / extra_factor
+    general_double_phi = -general_double_s**2/2 + (
+        a*general_double_s**2 + (u0x+u1x/xr+u2x/xr**2)*general_double_s + k0x+k1x/xr
+    )/reciprocal_r
+    zero(sp.limit(general_double_phi/xr**4, xr, sp.oo) - top_reciprocal/q0**2)
     nu, vv = sp.symbols("u v", nonzero=True)
     moving_centre = sp.Function("xi")(nu*vv)
     zero(nu*sp.diff(moving_centre, nu) - vv*sp.diff(moving_centre, vv))
@@ -246,6 +286,40 @@ def checks():
     zero(a_numerator.coeff(T, 1) - alpha)
     zero(a_numerator.subs(alpha, 0).coeff(T, 2) - beta**2/2)
     radial_result = radial_controls()
+    endpoint_result = relative_endpoint_controls()
+
+    # Generic elimination of W,Y, with constant W^2 coefficient nonzero.
+    lam_quad = sp.symbols("lambda_quad", nonzero=True)
+    c_quad, a_quad = sp.symbols("c_quad a_quad")
+    precision_wy = sp.Matrix([[-2*lam_quad*T, -c_quad*T], [-c_quad*T, 1-2*a_quad*T]])
+    delta_wy = -2*lam_quad*T+(4*lam_quad*a_quad-c_quad**2)*T**2
+    zero(precision_wy.det()-delta_wy)
+    wy_source = sp.Matrix([T*abstract_h-Z, T*abstract_u])
+    effective = T*abstract_k+(wy_source.T*precision_wy.inv()*wy_source)[0]/2
+    numerator_wy = (
+        Z**2+T*(-2*Z*abstract_h-2*a_quad*Z**2)
+        + T**2*(abstract_h**2+4*a_quad*Z*abstract_h-2*c_quad*Z*abstract_u-4*lam_quad*abstract_k)
+        + T**3*(-2*a_quad*abstract_h**2+2*c_quad*abstract_h*abstract_u
+                -2*lam_quad*abstract_u**2+2*(4*lam_quad*a_quad-c_quad**2)*abstract_k)
+    )
+    zero(2*delta_wy*effective-numerator_wy)
+    # Spatially varying WY coefficient: half-density connection on the double cover.
+    variable_precision = precision_wy.subs(c_quad, abstract_c)
+    variable_delta = delta_wy.subs(c_quad, abstract_c)
+    curve_q = abstract_c**2-4*lam_quad*a_quad+2*lam_quad/T
+    zero(variable_delta+T**2*curve_q)
+    zero(-sp.trace(variable_precision.inv()*sp.diff(variable_precision, Z))/2
+         + sp.diff(curve_q, Z)/(2*curve_q))
+    zero(-sp.trace(variable_precision.inv()*sp.diff(variable_precision, T))/2
+         + 1/T + sp.diff(curve_q, T)/(2*curve_q))
+    variable_effective = effective.subs(c_quad, abstract_c)
+    zero(sp.limit(T*variable_effective, T, 0)+Z**2/(4*lam_quad))
+    curve_r = sp.symbols("curve_r")
+    for cpoly in (Z, Z**2, Z**3+Z, Z**4-Z):
+        assert sp.discriminant(cpoly**2+2*curve_r, Z) != 0
+    # Pure W^2 is the threshold-equality control for the generic elimination.
+    zero(numerator_wy.subs({abstract_h: 0, abstract_u: 0, abstract_k: 0,
+                           a_quad: 0, c_quad: 0})-Z**2)
 
     # Exact all-order polynomials from the shear; direct Wick controls are bounded.
     shear_phase = W + Z**2 * Y - Z**5 / 2
@@ -293,6 +367,15 @@ def checks():
             assert wick(power, (0, 2, 0)) == 0
         power = multiply(power, base)
 
+    # Multiple double roots are allowed by the zero-root positive-weight branch.
+    mixed_positive = sparse(W*(Z**2 + Z**2*(Z-1)**2*Y) + Z*Y + Z)
+    mixed_power = {(0, 0, 0): Fraction(1)}
+    for m in range(1, 9):
+        mixed_power = multiply(mixed_power, mixed_positive)
+        assert wick(mixed_power) == 0
+        if m > 2:
+            assert wick(mixed_power, (0, 2, 0)) == 0
+
     # Rejection controls: changing the shear correction or adding constant Y².
     assert expectation((W + Z**2 * Y - Z**5 / 3)**6) != 0
     assert expectation(Y**2 + Z * W) != 0
@@ -307,8 +390,12 @@ def checks():
             "root-zero Gaussian tilt denominator identity",
             "multipuncture squarefree partial-fraction identities",
             "repeated-square reciprocal quartic and moving-centre derivative identities",
+            "selected double-root leading coefficient with additional root factors",
             "Long polynomial-orbit coefficient identities",
             "radial quartic quadratic-coefficient numerator",
+            "relative endpoint boundary-class parameter action",
+            "constant W^2 generic precision, determinant and universal phase numerator",
+            "hyperelliptic spatial and parameter half-density connections and nonconstant phase",
             "four exact all-order marker polynomials from the shear",
         ],
         "bounded_controls": {
@@ -318,7 +405,10 @@ def checks():
             "rejection_controls": 2,
             "squarefree_partial_fractions": {"degrees": [2, 3, 4, 5]},
             "repeated_root_pure_rejection_control": {"phase": "Z^2 W Y", "moment_orders": [1, 8]},
+            "multiple_double_root_positive_control": {"c": "Z^2 (Z-1)^2", "moment_orders": [1, 8], "markers": ["1", "W^2"]},
             "radial_quartic_formula": radial_result,
+            "all_degree_radial_relative_bridge": endpoint_result,
+            "generic_hyperelliptic_smoothness_controls": {"c": ["Z", "Z^2", "Z^3+Z", "Z^4-Z"]},
         },
         "marker_periods_B_z_squared": {str(q): str(p) for q, p in marker_periods.items()},
     }

@@ -5,7 +5,7 @@
 \newtheorem{theorem}{Theorem}
 \newtheorem{lemma}[theorem]{Lemma}
 \newtheorem{corollary}[theorem]{Corollary}
-\title{Two initial moments at arbitrary lower exponent and the polynomial boundary condition}
+\title{Uniform support bounds for binomial moments and the polynomial boundary condition}
 \author{Internal elementary proof and exact replay; no priority claim}
 \date{17 November 2026}
 \begin{document}
@@ -14,17 +14,27 @@ For $d\ge1$ an integer and $\gamma>0$, put
 \[
  T_{n,\gamma,d}(t)=\sum_{k=0}^n\binom nk(\gamma)_{dk}t^k.
 \]
-The shape varies with the moment order when both exponents are nonzero.
-This note proves a uniform two--three moment separation at every lower
-exponent, and identifies the polynomial condition selecting the solution
-of the higher-gap parameter recurrence. It does not prove all-index
-binomial Strong Factorial.
+For each specified terminal order $N$, we give explicit bounds confining
+possible ordinary binomial Strong Factorial obstructions to a finite
+rectangle of lower exponents and gaps. Large gaps are handled uniformly
+in the lower exponent, and large lower exponents are handled at every
+fixed gap. The bounds depend on $N$; they do not close the all-index
+problem or verify the remaining rectangle.
+
+The proofs retain the actual order-dependent Gamma shape. We also give
+a sharper coefficient criterion in a high-gap region, prove uniform
+two--three moment separation at every lower exponent and positive
+Gamma shape, and identify the polynomial condition selecting the
+solution of the higher-gap parameter recurrence. General lower exponents
+also admit an exact diagonal derivative embedding in a fixed lower-one
+base sequence. An explicit generic counterexample identifies the extra
+compatibility required for transferring coprimality through that embedding.
 
 \section{A parameter-monotone initial separation}
 \begin{lemma}\label{lem:inequality}
 For every integer $d\ge1$ and real $y\ge x>0$,
 \[
- \frac{(y)_{3d}}{(x)_{2d}}>3(y)_d-2(x)_d.                 \tag{1}
+ \frac{(y)_{3d}}{(x)_{2d}}>3(y)_d-2(x)_d.                 \tag{1}\label{eq:shape-inequality}
 \]
 \end{lemma}
 \begin{proof}
@@ -49,7 +59,7 @@ For $y\ge x$, the product rule and the monotonicity of $r'$ give
 \]
 Each of the three products in parentheses is at least
 $r(x)r(x+d)$, and the first two are strictly greater.
-Thus $H'(y)>0$. Consequently $H(y)>0$, which is (1).
+Thus $H'(y)>0$. Consequently $H(y)>0$, which is \eqref{eq:shape-inequality}.
 \end{proof}
 
 \begin{theorem}\label{thm:two-three}
@@ -78,7 +88,7 @@ $\mathcal L_\beta(X^j)=(\beta)_j$, $\beta>0$, the moments of
 $f=X^a(A+BX^d)$ satisfy, when $A\ne0$,
 \[
  \mathcal L_\beta(f^n)
-   =A^n(\beta)_{an}T_{n,\beta+an,d}(B/A).                   \tag{2}
+   =A^n(\beta)_{an}T_{n,\beta+an,d}(B/A).                   \tag{2}\label{eq:moment-normalization}
 \]
 \begin{corollary}\label{cor:initial}
 Let $a\ge0$ and $d\ge1$ be integers, and let $\beta>0$.
@@ -98,6 +108,400 @@ moment is a nonzero monomial moment.
 For ordinary factorials set $\beta=1$. No restriction on the complex
 coefficients $A,B$ beyond nonzeroness of $f$ is imposed.
 
+\section{Uniform support bounds at every terminal order}
+For ordinary factorials define
+\[
+ M_{j,a,d}(t)=\sum_{k=0}^j\binom jk(aj+dk)!\,t^k,\qquad
+ G_j=\left(\frac{((a+d)j)!}{(aj)!}\right)^{1/j}.
+\]
+The following arguments use the actual order-dependent factor $(aj)!$;
+they are not a fixed-Gamma-shape substitution.
+
+\begin{lemma}\label{lem:centers}
+For integers $a,d\ge1$ and $j\ge2$,
+\[
+ \frac{G_j}{G_{j-1}}>
+ \left(\frac{j}{j-1}\right)^{d/2}.                         \tag{3}\label{eq:center-separation}
+\]
+For $a\ge1$, every root of $M_{j,a,d}$ lies in
+\[
+ \frac1{2jG_j}<|t|<\frac{2j}{G_j}.                         \tag{4}\label{eq:universal-annuli}
+\]
+\end{lemma}
+\begin{proof}
+Put $f(u)=\log\Gamma(u+1)$, $b=a+d$, and
+$H(x)=(f(bx)-f(ax))/x$. Twice differentiating Euler's product gives
+\[
+ f''(u)=\sum_{\ell=1}^{\infty}\frac1{(u+\ell)^2}>
+ \int_1^\infty\frac{dv}{(u+v)^2}=\frac1{u+1}\quad(u>0).
+\]
+One can obtain the series directly from
+$\Gamma(u+1)=\lim_{m\to\infty}m^u\prod_{\ell=1}^m
+(1+u/\ell)^{-1}$; its second-derivative series converges locally
+uniformly on the positive axis.
+Consequently, for $x\ge1$,
+\[
+ H'(x)=\frac1{x^2}\int_{ax}^{bx}u f''(u)\,du
+       >\frac{d}{2x},
+\]
+since $u\ge ax\ge1$. Integrating from $j-1$ to $j$ proves \eqref{eq:center-separation}.
+
+Let $r_j=G_j^{-1}$ and normalize
+\[
+ \frac{M_{j,a,d}(r_jw)}{(aj)!}
+ =1+w^j+\sum_{k=1}^{j-1}b_{j,k}w^k.
+\]
+Log convexity of factorials gives $0<b_{j,k}\le\binom jk$.
+For $|w|\le1/(2j)$ the nonconstant terms have total modulus at most
+$(1+1/(2j))^j-1<e^{1/2}-1<1$, so no zero occurs.
+Apply the same argument to the reciprocal polynomial for the outer
+bound, giving \eqref{eq:universal-annuli}. The elementary estimate $e<4$ suffices here.
+\end{proof}
+
+\begin{theorem}\label{thm:gapbound}
+Fix $N\ge2$, let $e_N$ be the least integer with
+$2^{e_N}\ge4N(N-1)$, and put $D_N=2(N-1)e_N$.
+For every $a\ge1$ and $d\ge D_N$, the polynomials
+$M_{1,a,d},\ldots,M_{N,a,d}$ are pairwise coprime.
+\end{theorem}
+\begin{proof}
+For $2\le j\le N$, \eqref{eq:center-separation} and
+$(1+1/(N-1))^{N-1}\ge2$ give
+\[
+ \frac{G_j}{G_{j-1}}>
+ \left(\frac{j}{j-1}\right)^{d/2}
+ \ge 2^{e_N}\ge4N(N-1)\ge4j(j-1).
+\]
+Thus the upper radius $2j/G_j$ in \eqref{eq:universal-annuli} is strictly smaller than the
+lower radius $1/(2(j-1)G_{j-1})$ at order $j-1$.
+All these annuli are disjoint, proving the assertion.
+\end{proof}
+
+A complementary estimate treats every sufficiently large lower
+exponent at an arbitrary fixed gap.
+\begin{theorem}\label{thm:lowerbound}
+Let $N\ge2$, $d\ge1$, put
+\[
+ \delta=\min\left(\frac14,\frac{d}{4N}\right),\qquad
+ A(N,d)=(Nd^2+d)\left(\frac{2+\delta}{\delta}\right)^N.
+\]
+For every integer $a\ge A(N,d)$, the polynomials
+$M_{1,a,d},\ldots,M_{N,a,d}$ are pairwise coprime.
+\end{theorem}
+\begin{proof}
+For $1\le j\le N$ normalize instead by the scale $(aj)^{-d}$:
+\[
+ P_j(w)=\frac{M_{j,a,d}((aj)^{-d}w)}{(aj)!}
+       =(1+w)^j+E_j(w).
+\]
+The coefficient of $w^k$ divided by $\binom jk$ is
+\[
+ \prod_{\ell=1}^{dk}\left(1+\frac{\ell}{aj}\right),
+\]
+which belongs to $[1,e^\eta]$, where
+$\eta=(Nd^2+d)/(2a)$, by $\log(1+v)\le v$.
+Set $\rho=\delta/(2+\delta)$ and $\sigma=\rho^N$.
+The bound on $a$ gives $\eta\le\sigma/2$, hence
+\[
+ e^\eta-1\le\frac{\eta}{1-\eta}
+ \le\frac{\sigma}{2-\sigma}<\sigma,
+\]
+using the exponential series and $0<\sigma<1$.
+On $|w+1|=\delta$, therefore,
+\[
+ |E_j(w)|\le(e^\eta-1)(2+\delta)^j
+ <\rho^N(2+\delta)^j\le\delta^j.
+\]
+Rouch\'e's theorem puts all $j$ roots in $|w+1|<\delta$.
+In the $t$ plane they lie in the disk with center $-(aj)^{-d}$
+and radius $\delta(aj)^{-d}$.
+
+For two adjacent centers the ratio of their positive moduli is
+$R=(j/(j-1))^d\ge1+d/(j-1)$.
+Meanwhile
+\[
+ \frac{1+\delta}{1-\delta}
+ =1+\frac{2\delta}{1-\delta}
+ \le1+\frac{2d}{3N}<1+\frac d{j-1}\le R.
+\]
+Thus the disks, and hence all their nonadjacent counterparts, are
+disjoint. No assertion that roots within each disk are simple is
+needed or made.
+\end{proof}
+
+\begin{corollary}\label{cor:rectangle}
+For each terminal $N\ge2$, put
+\[
+ A_N=(ND_N^2+D_N)(4N+1)^N.
+\]
+Among positive integer lower exponents $a$ and gaps $d\ge2$,
+possible failure of pairwise coprimality through order $N$ is confined
+to the finite rectangle
+\[
+ 1\le a<A_N,\qquad 2\le d<D_N.                             \tag{5}\label{eq:finite-rectangle}
+\]
+\end{corollary}
+\begin{proof}
+Theorem~\ref{thm:gapbound} handles $d\ge D_N$.
+For $2\le d<D_N$ the ratio $(2+\delta)/\delta$ in
+Theorem~\ref{thm:lowerbound} is at most $4N+1$:
+it is $8N/d+1$ when $d\le N$, and it is $9$ otherwise.
+Thus $A(N,d)\le A_N$ and that theorem handles $a\ge A_N$.
+\end{proof}
+This is a finite support reduction at each specified terminal order,
+not a finite reduction uniform in $N$. It does not verify the rectangle.
+The already established constant-plus-power and adjacent-exponent
+theorems concern the separate cases $a=0$ and $d=1$.
+No such theorem is needed for \eqref{eq:center-separation}--\eqref{eq:finite-rectangle}.
+
+\begin{corollary}[Exact reformulation of the ordinary binomial objective]
+\label{cor:full-objective}
+The following statements are equivalent:
+\begin{enumerate}
+\item Every nonzero complex binomial $f(X)=X^a(A+BX^d)$,
+with integers $a\ge0,d\ge1$, has a nonzero ordinary factorial moment
+in every pair of consecutive positive orders.
+\item For every integer $N\ge4$ and every pair of integers
+\[
+ 1\le a<A_N,\qquad 2\le d<D_N,
+\]
+one has
+\[
+ \gcd_{\mathbb Q[t]}(M_{N-1,a,d},M_{N,a,d})=1.
+\]
+\end{enumerate}
+The second condition requires only consecutive coprimality inside each
+rectangle. It does not require pairwise coprimality across all lower
+orders.
+\end{corollary}
+\begin{proof}
+When $AB\ne0$, the ordinary factorial moments are
+$A^j M_{j,a,d}(B/A)$. If either coefficient vanishes, all positive
+moments are nonzero monomial moments. Also
+$M_{j,a,d}(0)=(aj)!\ne0$.
+A common complex zero of the two rational polynomials is therefore
+equivalent to a binomial with simultaneous zero moments, and to a
+nonconstant rational gcd. This proves that the first statement implies
+the second.
+
+Conversely, terminal orders two and three are covered by
+Corollary~\ref{cor:initial} at $\beta=1$.
+The case $a=0$ at every terminal order is the
+\href{ALL_UNIVARIATE_TWO_TERM_SFC.tex}{constant-plus-power theorem},
+and $d=1$ at every lower exponent is the
+\href{UNIFORM_PADE_PARABOLA_SFC.tex}{adjacent-exponent theorem}.
+For $N\ge4,a\ge1,d\ge2$, the second statement covers the rectangle
+and Corollary~\ref{cor:rectangle} covers its complement.
+This proves the first statement.
+\end{proof}
+There are still infinitely many terminal orders $N$ in this equivalent
+condition. No all-$N$ verification, finite reduction uniform in $N$, or
+proof of the full ordinary binomial assertion is claimed.
+
+\section{A sharper high-gap coefficient criterion}
+\begin{theorem}\label{thm:sparse}
+For integers $a\ge1,d\ge2,N\ge2$, suppose
+\[
+ d^2\ge4(a+d)\log(8N).                                    \tag{6}\label{eq:sparse-condition}
+\]
+Then $M_{1,a,d},\ldots,M_{N,a,d}$ are individually squarefree
+and pairwise coprime.
+\end{theorem}
+\begin{proof}
+Put $b=a+d$ and use the endpoint normalization in
+Lemma~\ref{lem:centers}. On the integer interval $[aj,bj]$ the
+sequence
+\[
+ s\longmapsto \log(s!)-\frac{s^2}{2bj}
+\]
+is convex: its second difference at an internal integer $s$ is
+$\log((s+1)/s)-1/(bj)>0$, since $s+1\le bj$.
+The secant inequality at $s=aj+dk$ consequently gives
+\[
+ 0<b_{j,k}\le\binom jk
+  \exp\left(-\frac{d^2k(j-k)}{2bj}\right)
+ \le\binom jk q^{\min(k,j-k)},\qquad
+ q=e^{-d^2/(4b)}.                                         \tag{7}\label{eq:sparse-coefficients}
+\]
+Condition \eqref{eq:sparse-condition} gives $q\le1/(8N)$.
+For $1\le j\le N$, summing the symmetric majorant and then bounding
+the binomial series by a geometric series gives
+\[
+ S_j:=\sum_{k=1}^{j-1}b_{j,k}
+ \le2\bigl((1+q)^j-1\bigr)
+ <\frac{2jq}{1-jq}\le\frac27.
+\]
+At $j=1$ the sum is empty. Thus all normalized roots lie in
+\[
+ (5/7)^{1/j}<|w|<(7/5)^{1/j},                              \tag{8}\label{eq:sparse-annuli}
+\]
+by dominance of the constant or top term.
+These annuli are disjoint after scaling by $r_j=G_j^{-1}$:
+by \eqref{eq:center-separation}, $G_j/G_{j-1}>j/(j-1)$, while
+\[
+ \left(\frac j{j-1}\right)^{j-1}\ge2>
+ (7/5)^2>(7/5)^{1+(j-1)/j}.
+\]
+
+For completeness, if $1+w^j+\sum b_kw^k$ had a repeated root
+$\alpha$ with $|\alpha|\le1$, subtracting $(\alpha/j)P'(\alpha)$
+from $P(\alpha)$ would give
+$1\le\sum(1-k/j)b_k\le S_j<1$.
+If $|\alpha|\ge1$, dividing $(\alpha/j)P'(\alpha)=0$ by
+$\alpha^j$ would give $1\le\sum(k/j)b_k\le S_j<1$.
+This also proves individual squarefreeness.
+\end{proof}
+The weighted-coefficient argument is the same elementary mechanism
+used in the
+\href{ALL_EXPONENTS_AND_LARGE_EXPONENT_CUTOFF.tex}{constant-plus-power coefficient criterion}.
+Here the strong discrete convexity estimate \eqref{eq:sparse-coefficients}, the order-dependent
+normalization, and the separation of different orders are essential.
+The saddle-contour estimates for exponent six and ordinary
+constant-plus-power families are not used.
+
+\section{A fixed lower-one sequence and its diagonal derivatives}
+For $n\ge0$, $\gamma>0$ and an integer $d\ge1$, define the
+reciprocal polynomial
+\[
+ \mathcal P_{n,\gamma,d}(z)=
+ \sum_{k=0}^n\binom nk(\gamma)_{dk}z^{n-k}
+ =z^nT_{n,\gamma,d}(1/z).
+\]
+For each $\beta>0$ keep the lower-one base sequence
+\[
+ S_m^{(\beta,d)}(z)=\mathcal P_{m,\beta+m,d}(z)
+\]
+fixed as $m$ varies.
+\begin{theorem}\label{thm:diagonal-derivatives}
+For all integers $a,d,N\ge1$ and every real $\beta>0$,
+\[
+ \mathcal P_{N,\beta+aN,d}(z)=
+ \frac{N!}{(aN)!}\,
+ D_z^{(a-1)N}S_{aN}^{(\beta,d)}(z).                         \tag{9}\label{eq:diagonal-derivative}
+\]
+Consequently, for a fixed lower exponent $a\ge1$, the consecutive
+Gamma-moment assertion at every terminal $N\ge2$ is equivalent to
+coprimality of the two diagonal derivative entries
+\[
+ D_z^{(a-1)N}S_{aN}^{(\beta,d)},\qquad
+ D_z^{(a-1)(N-1)}S_{a(N-1)}^{(\beta,d)}
+\]
+at every such $N$.
+\end{theorem}
+\begin{proof}
+Put $m=aN$. Differentiating $z^{m-k}$ exactly $m-N$ times
+kills terms with $k>N$, and for $k\le N$ gives
+\[
+ \binom mk\frac{(m-k)!}{(N-k)!}
+ =\frac{m!}{N!}\binom Nk .
+\]
+The rising-factorial factor keeps its shape $\beta+m=\beta+aN$.
+This proves \eqref{eq:diagonal-derivative}. Both reciprocal polynomials have nonzero constant
+and leading coefficients. Thus inversion $t=1/z$ preserves their
+common nonzero zeros, and \eqref{eq:moment-normalization} identifies precisely the two Gamma
+moments. Nonzero scalar normalizations and the monomial cases do
+not affect the equivalence.
+\end{proof}
+
+The fixed-base organization can also be read off hypergeometrically.
+Write $m=dq+r$, $0\le r<d$, and, for $0\le j<d$, put
+\[
+ \eta_j=\frac{\beta+j}{d}-1>-1,\qquad
+ \nu_j=q+\mathbf1_{\{j<r\}} .
+\]
+The parameters $\eta_j+\nu_j+1$ are a permutation of
+$(m+\beta+j)/d$, $0\le j<d$, by the cyclic relabeling
+$j\mapsto j-r\pmod d$.
+The multiplication formula for rising factorials therefore gives
+the terminating identity
+\[
+ S_m^{(\beta,d)}(z)=z^m\,
+ {}_{d+1}F_0\left(
+ \begin{matrix}-m,\eta_0+\nu_0+1,\ldots,\eta_{d-1}+\nu_{d-1}+1\\-
+ \end{matrix};-\frac{d^d}{z}\right).
+\]
+It is the reciprocal of the fixed-base multiple-Bessel
+hypergeometric form; compare Wolfs,
+\emph{Applications of multiple orthogonal polynomials with hypergeometric
+moment generating functions},
+\href{https://arxiv.org/pdf/2401.08312v1}{arXiv:2401.08312v1},
+Theorem 4.6 with no denominator parameters; the
+\href{sources/wolfs-2024-multiple-orthogonal-2401.08312v1.pdf}{cached primary source}
+retains the exact cited version.
+The coefficient identity above is self-contained, and no zero or
+nonvanishing theorem is imported from that representation.
+
+Thus general lower exponent is a diagonal derivative problem for a
+fixed lower-one base sequence. A result about successive base members
+needs additional derivative compatibility to imply the desired
+assertion. Even simplicity and stability of all their derivatives
+do not suffice in a general polynomial sequence.
+
+\begin{theorem}\label{thm:diagonal-obstruction}
+There is an infinite sequence of monic real polynomials $H_m$, of
+degree $m$, such that every nonconstant derivative, including order zero,
+is squarefree and has all zeros in the open left half-plane,
+each $H_m$ has strictly positive coefficients, and consecutive base
+members are coprime, but the $a=2$ diagonal derivative sequence has
+consecutive members with a common zero.
+\end{theorem}
+\begin{proof}
+Set $u=z+1$ and take
+\[
+ \begin{split}
+ H_0&=1,\qquad H_1=z+3,\qquad H_2=u^2+1,\\
+ H_3&=u^3+u/10+2,\qquad H_4=(u+1/10)(u^3+1),\\
+ H_m&=\prod_{\ell=1}^m(z+10m^2+\ell)\qquad(m\ge5).
+ \end{split}
+\]
+All coefficients are strictly positive. For $H_3$, a root of its derivative is purely imaginary in the $u$
+coordinate, and the real part of $H_3$ there is $2$; thus $H_3$ is
+squarefree. The factors of $H_4$ have distinct roots. The other
+small-degree simplicity assertions are immediate. The real root of $H_3$ has $u=-v$ with $1<v<2$,
+because $v^3+v/10=2$. The other two roots have real part $v/2<1$
+in the $u$ plane, so all three roots lie in the left half-plane
+in the $z$ plane. For $H_4$ the roots have $u=-1/10$ or $u^3=-1$;
+their real parts in the $z$ plane are at most $-1/2$.
+The other members' stability is immediate from their roots.
+
+Every derivative of a strictly left-half-plane polynomial remains
+strictly left-half-plane: on $\operatorname{Re}z\ge0$ its logarithmic
+derivative is a sum of reciprocals of $z-\rho$, each with positive
+real part. Apply this repeatedly.
+For simplicity of the derivatives, the only nontrivial small checks
+are $H_3'$ and $H_4'$.
+Here $H_3'=3u^2+1/10$ is squarefree.
+Also $H_4''=(3/5)u(20u+1)$ has distinct roots, while
+$H_4'|_{u=0}=1$ and $H_4'|_{u=-1/20}=4001/4000$.
+Thus $H_4'$ has no common root with $H_4''$ and is squarefree.
+Higher derivatives are linear or constant.
+For $m\ge5$, strict Rolle interlacing proves simplicity of every
+nonconstant derivative.
+
+For consecutive base coprimality, $H_2(-3)=5$.
+At a root $u=\pm i$ of $H_2$ one has
+$H_3=2-9u/10\ne0$.
+At a root $u=-1/10$ of $H_4$ one has $H_3=1989/1000$;
+at its other roots one has $u^3=-1$ and $H_3=1+u/10\ne0$.
+The real parts of the roots of $H_4$ are at least $-2$, while the
+roots of $H_5$ are at most $-251$.
+For $m\ge6$ the real root intervals of $H_{m-1}$ and $H_m$
+are disjoint by their displayed formulas.
+
+Nevertheless the first two positive entries of the $a=2$ diagonal
+derivative transform are
+\[
+ \frac{1!}{2!}H_2'(z)=u,\qquad
+ \frac{2!}{4!}H_4''(z)=u^2+\frac{u}{20}.
+\]
+Both are squarefree and share $u=0$, or $z=-1$.
+\end{proof}
+This is a counterexample to a proposed generic preservation principle,
+not a factorial or Gamma counterexample. It leaves open whether the
+particular coefficient identities and parameter coupling of
+$S_m^{(\beta,d)}$ force all the diagonal entries in
+Theorem~\ref{thm:diagonal-derivatives} to have consecutive coprimality.
+
 \section{The boundary condition at infinity for the parameter recurrence}
 For terminal order $N\ge2$ define
 \[
@@ -110,34 +514,34 @@ give
 \[
  z\bigl(V(s)-V(s+1)\bigr)
  =(s+2)_{d-1}\bigl((s+dN+1)V(s+d)
-                    -(s+d+1)V(s+d+1)\bigr).              \tag{3}
+                    -(s+d+1)V(s+d+1)\bigr).              \tag{10}\label{eq:parameter-recurrence}
 \]
 At a hypothetical common moment zero, setting
 $l=\beta+a(N-1)-1$, $M=l+a$ gives the two finite conditions
 \[
- V(l)=0,\qquad zV(M)=(M+1)_dV(M+d).                        \tag{4}
+ V(l)=0,\qquad zV(M)=(M+1)_dV(M+d).                        \tag{11}\label{eq:finite-boundaries}
 \]
 These two conditions alone do not determine the order-$d+1$ difference
 solution when $d\ge2$.
 
 \begin{theorem}\label{thm:polynomial}
 Fix $N\ge2$, $d\ge1$ and any complex $z$. The space of polynomial
-solutions $V\in\mathbb C[s]$ of (3) is one-dimensional, spanned by
+solutions $V\in\mathbb C[s]$ of \eqref{eq:parameter-recurrence} is one-dimensional, spanned by
 $U_{N-1}^{(d)}(s,z)$. Every nonzero such solution has degree
 $m=d(N-1)$. The normalization
 \[
- [s^m]V=(-1)^{N-1}                                       \tag{5}
+ [s^m]V=(-1)^{N-1}                                       \tag{12}\label{eq:polynomial-normalization}
 \]
 therefore selects $U_{N-1}^{(d)}$ uniquely.
 Moreover this selected solution has the exact degree-gap condition
 \[
  V(s)=(-1)^{N-1}(s+1)_m+Q(s),
- \qquad \deg Q\le m-d.                                   \tag{6}
+ \qquad \deg Q\le m-d.                                   \tag{13}\label{eq:polynomial-degree-gap}
 \]
 \end{theorem}
 \begin{proof}
 Let $V$ be nonzero of degree $j$ with leading coefficient $c$.
-In the expression in parentheses on the right of (3), the coefficient
+In the expression in parentheses on the right of \eqref{eq:parameter-recurrence}, the coefficient
 of $s^j$ is
 \[
  c\bigl(d(N-1)-j\bigr).
@@ -150,27 +554,31 @@ This is impossible. Hence every nonzero polynomial solution has
 degree $m=d(N-1)$.
 
 The displayed coefficient formula for $U_{N-1}^{(d)}$ verifies that
-it solves (3) and has degree $m$ and leading coefficient
+it solves \eqref{eq:parameter-recurrence} and has degree $m$ and leading coefficient
 $(-1)^{N-1}$. If two polynomial solutions were independent,
 a linear combination would cancel their degree-$m$ terms and give
 a nonzero polynomial solution of smaller degree, a contradiction.
-This proves uniqueness and (5). Finally, the top summand $k=N-1$
+This proves uniqueness and \eqref{eq:polynomial-normalization}. Finally, the top summand $k=N-1$
 in that coefficient formula is $(-1)^{N-1}(s+1)_m$, while all other
-summands have degree at most $d(N-2)=m-d$, proving (6).
+summands have degree at most $d(N-2)=m-d$, proving \eqref{eq:polynomial-degree-gap}.
 \end{proof}
 
 Polynomiality supplies the missing selection condition for this
-particular recurrence solution. It does not prove that (4) is
+particular recurrence solution. It does not prove that \eqref{eq:finite-boundaries} is
 incompatible with it, and does not supply a positive finite-matrix or
 zero-free-region argument. The all-index lower-exponent problem
 remains open. The distinction is essential: recurrence order alone
 does not license arbitrary initial data, while a uniquely selected
 polynomial solution may still satisfy two specified finite conditions.
 
-The accompanying exact replay checks the coefficient identities and
-the polynomial-space rank at bounded indices, plus the strict
-inequality at rational parameters. The universal evidence is the
-elementary proof above; the bounded replay does not establish the
-quantifiers. Independent mathematical review, independent replay,
-formal verification and external review are not claimed.
+The accompanying exact replay checks the original coefficient identities,
+polynomial-space ranks and rational inequalities, and verifies the new
+annulus separation, rational Rouch\'e error and endpoint-mass inequalities
+on bounded exact inputs. It checks the diagonal derivative and fixed-base
+parameter identities, verifies the generic preservation counterexample,
+and directly checks selected moment gcds, rejecting corrupted recurrence
+and unsupported small-parameter controls.
+The universal evidence is the proof above; the bounded replay does not
+establish its quantifiers. Independent mathematical review, independent
+replay, formal verification and external review are not claimed.
 \end{document}

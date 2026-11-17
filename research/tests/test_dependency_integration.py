@@ -137,6 +137,15 @@ class DependencyIntegrationTests(unittest.TestCase):
         self.assertEqual(actual["state"], "open")
         self.assertIn("B", [blocker["id"] for blocker in actual["blockers"]])
 
+    def test_focused_export_marks_required_premises_outside_the_view(self):
+        exported = json.loads(self.cli("graph", "--format", "json", "--focus", "B",
+                                       "--depth", "1", "--direction", "descendants"))
+        self.assertEqual(set(exported["nodes"]), {"B", "C"})
+        self.assertEqual(exported["omitted_premises"], ["A"])
+        self.assertFalse(exported["selection_is_complete"])
+        text = self.cli("graph", "--focus", "B", "--depth", "1", "--direction", "descendants")
+        self.assertIn("omitted required premises", text)
+
     def test_cli_exports_full_dag_and_reports_structural_impact(self):
         exported = json.loads(self.cli("graph", "--format", "json"))
         self.assertEqual(set(exported["nodes"]), {"A", "B", "C", "D"})

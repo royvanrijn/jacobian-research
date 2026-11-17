@@ -1,0 +1,153 @@
+{
+  "format": "two-pair-image-cubic-completion-audit-v1",
+  "objective": "Complete the full sixteen-parameter two-pair Image bidegree-(3,3) family with a justified stratification and exact exceptional certificates, and determine whether the least failing bihomogeneous balanced degree is three or four.",
+  "conclusion": "The full cubic Image implication holds with sharp cutoff m>3 deg_z Q; the least failing bihomogeneous balanced degree is four.",
+  "canonical_source": {
+    "path": "foundations/extended-geometry/TWO_PAIR_IMAGE_CUBIC_STRATIFICATION.md",
+    "sha256": "69c5e874b25f60346eff6e5018b49d63dc811af226a651911156c891620deeff",
+    "locator": "Theorem (complete cubic stratum); proper volume lemma; constant-profile extraction; complete classification and Image conclusion"
+  },
+  "requirements": [
+    {
+      "requirement": "No coefficient stratum omitted",
+      "evidence": "The invertible full sixteen-dimensional maps identify V3 with A_{<=3}. Each phase is split by whether H restricted to the null conic is zero; actual degree<=2 is treated by the complete nine-parameter theorem.",
+      "state": "proved"
+    },
+    {
+      "requirement": "Justified full geometric stratification",
+      "evidence": "Every boundary root is regular, an ordinary profile node, a repeated nonconstant profile yielding one A1 double point, or a constant-profile frame. All boundary and exceptional charts are included.",
+      "state": "proved"
+    },
+    {
+      "requirement": "Proper volume-seed implication with verified imports",
+      "evidence": "The original normalized residue form extends on the constructed smooth proper model unless a constant-profile frame exists. The cited CDM positive V-level, proper direct image and strict subquotient statements exclude a constant period. The unlocalized Fourier cyclic quotient and actual top-form class are tracked.",
+      "state": "proved"
+    },
+    {
+      "requirement": "Every constant-profile exceptional coefficient branch",
+      "evidence": "Eleven-parameter first-ten-moment classification; a=0 via a four-moment univariate cubic proof; h=0 via the ten-parameter theorem; a!=0,h!=0 via an exact six-product nonzero integer Bezout certificate.",
+      "state": "proved"
+    },
+    {
+      "requirement": "Actual spherical degree weights",
+      "evidence": "The sphere functional is integrated over the fixed compact quadric cycle. The global proof does not import Gaussian ternary-cubic classification. The quadratic invariant calculation applies separate homogeneous sphere factors explicitly.",
+      "state": "proved"
+    },
+    {
+      "requirement": "Original arbitrary unbalanced Image multipliers",
+      "evidence": "Balanced scalar contractions identify with sphere moments; xi^gamma coefficient tests recover every unbalanced output polynomial. The shear increases degree by at most three.",
+      "state": "proved"
+    },
+    {
+      "requirement": "Exact least failing balanced degree",
+      "evidence": "The complete positivity proof covers each fixed bihomogeneous balanced degree d<=3. The retained rational degree-four counterexample has all pure contractions zero and a fixed multiplier with every mixed contraction nonzero, by its written all-order proof.",
+      "state": "proved"
+    },
+    {
+      "requirement": "Sharp quantitative cubic mixed bound",
+      "evidence": "For F*=R^2Y+RXT-X^3/2, Q=Y^D and m=3D, the all-order mixed value is (10D+1)!*(-1)^D*2^(2D)*((3D)!)^2/(6D+1)! !=0.",
+      "state": "proved"
+    }
+  ],
+  "exact_replays": [
+    {
+      "command": ".venv/bin/python research/foundations/scripts/verify_two_pair_image_cubic_structure.py",
+      "checker": {
+        "path": "foundations/scripts/verify_two_pair_image_cubic_structure.py",
+        "sha256": "7d6272e047f6fdb1fcb9a3b49cb50cb5af76f7535fee8197284087762eaf4d53",
+        "locator": "Exact full coefficient maps, mixed quadratic criterion, graph and blow-up identities, A1 Hessian and residue cancellation, shear controls."
+      },
+      "outcome": "pass",
+      "scope": "Exact full coefficient maps, mixed quadratic criterion, graph and blow-up identities, A1 Hessian and residue cancellation, shear controls."
+    },
+    {
+      "command": ".venv/bin/python research/foundations/scripts/verify_two_pair_image_cubic_affine_slice.py",
+      "checker": {
+        "path": "foundations/scripts/verify_two_pair_image_cubic_affine_slice.py",
+        "sha256": "23a85e7a2573eaf609a75c1384ab2d71a59d421c73281555cb2c75995524869e",
+        "locator": "Complete eleven-parameter slice, every zero branch, independent first four moments, six exact integer polynomial products and corrupted-certificate rejection."
+      },
+      "outcome": "pass",
+      "scope": "Complete eleven-parameter slice, every zero branch, independent first four moments, six exact integer polynomial products and corrupted-certificate rejection."
+    },
+    {
+      "command": ".venv/bin/python research/foundations/scripts/verify_two_pair_image_cubic_phase_slice.py",
+      "checker": {
+        "path": "foundations/scripts/verify_two_pair_image_cubic_phase_slice.py",
+        "sha256": "ff7249d03122dbae9f2ef95ddb8d853d6d3b93cec3ef58768ed49d91f178cac2",
+        "locator": "Sharp seven-parameter cutoff and opposite quadratic profiles; optional independent checks."
+      },
+      "outcome": "pass",
+      "scope": "Sharp seven-parameter cutoff and opposite quadratic profiles; optional independent checks."
+    },
+    {
+      "command": ".venv/bin/python research/foundations/scripts/verify_two_pair_image_cubic_repeated_exceptions.py",
+      "checker": {
+        "path": "foundations/scripts/verify_two_pair_image_cubic_repeated_exceptions.py",
+        "sha256": "99c947b5ee3c7c22965b476be03c825cdfbcf8b63d0cb618801e197574612f61",
+        "locator": "Optional fixed-frame number-field checks: r=0,P2,P3,P4 with positive weighted specialization."
+      },
+      "outcome": "pass",
+      "scope": "Optional fixed-frame number-field checks: r=0,P2,P3,P4 with positive weighted specialization."
+    },
+    {
+      "command": ".venv/bin/python research/foundations/scripts/verify_two_pair_image_cubic_repeated_generic.py",
+      "checker": {
+        "path": "foundations/scripts/verify_two_pair_image_cubic_repeated_generic.py",
+        "sha256": "ef915f5a5a1dd74f229a5190edcb44356b916f0131b1dc61cf7fc15f4284d416",
+        "locator": "Optional generic fixed-frame determinant and its exact nonvanishing witness; no claim about roots of that determinant."
+      },
+      "outcome": "pass",
+      "scope": "Optional generic fixed-frame determinant and its exact nonvanishing witness; no claim about roots of that determinant."
+    },
+    {
+      "command": ".venv/bin/python research/foundations/scripts/verify_two_pair_image_mathieu_counterexample.py",
+      "checker": {
+        "path": "foundations/scripts/verify_two_pair_image_mathieu_counterexample.py",
+        "sha256": "d98472df08215f66cb06deaaaf15b2bb6dec87585250a47fe831e5e489c36fec",
+        "locator": "Quartic sparse contractions and finite-sum regressions of its written all-order proof; receipt output directory creation repaired before successful replay."
+      },
+      "outcome": "pass",
+      "scope": "Quartic sparse contractions and finite-sum regressions of its written all-order proof; receipt output directory creation repaired before successful replay."
+    },
+    {
+      "command": ".venv/bin/python research/foundations/scripts/audit_two_pair_image_mathieu_coefficient_extraction.py",
+      "checker": {
+        "path": "foundations/scripts/audit_two_pair_image_mathieu_coefficient_extraction.py",
+        "sha256": "6a0e5578bbaa8eca8ff519793da20c8eb598a3fdc2663e7be6c4a8752b5a1ae5",
+        "locator": "Independent algebraic coefficient and finite-difference audit of the quartic all-order proof."
+      },
+      "outcome": "pass",
+      "scope": "Independent algebraic coefficient and finite-difference audit of the quartic all-order proof."
+    }
+  ],
+  "internal_review": {
+    "reviewers": [
+      "root",
+      "sphere_odd_cubic",
+      "cubic_search",
+      "full_cubic_reduction"
+    ],
+    "supplied_context": "Current proof sources, exact checkers, the inspected primary V-filtration text, and the explicit local graph charts; internal collaborative review with workspace context.",
+    "findings_resolved": [
+      "Explicit compact-period normalization and both graph expansions restored after assembly audit.",
+      "Mixed linear/quadratic degree<=2 branch covered by all nine coefficients.",
+      "All exceptional divisor charts included; ordinary double-point blow-up cancels both volume and equation factors.",
+      "Cyclic Fourier quotient formed before localization; V-index conventions checked.",
+      "Bihomogeneous scope and Image/nullcone distinction made explicit."
+    ]
+  },
+  "assurance": {
+    "complete_internal_written_proof": true,
+    "internal_exact_replay": true,
+    "external_review": false,
+    "formal_verification": false,
+    "publication": false
+  },
+  "limits": [
+    "No universal finite pure-moment prefix is asserted for all sixteen parameters.",
+    "The degree-four minimum concerns fixed bihomogeneous balanced bidegrees, not arbitrary sums of several bidegrees.",
+    "Optional fixed-frame repeated-profile certificates retain their own stated parameter loci; the full Image proof uses an alternative constant-profile frame."
+  ],
+  "audited_utc": "2026-11-17T12:23:00.644478+00:00"
+}

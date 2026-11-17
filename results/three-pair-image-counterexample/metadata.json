@@ -4,38 +4,29 @@
     "name": "Roy van Rijn",
     "orcid": "0009-0000-2808-0645"
   },
-  "summary": "An explicit four-term polynomial disproves the Special Image Conjecture in three contraction pairs.",
-  "status": "published-preprint",
-  "publication_date": "2026-07-28",
-  "doi": "10.5281/zenodo.21634058",
-  "zenodo": "https://zenodo.org/records/21634058",
   "license": "CC-BY-4.0",
-  "pdf": "three-pair-image-counterexample.pdf",
+  "summary": "A four-term three-pair contraction counterexample, together with an explicit two-pair identity establishing the minimum failing pair dimension.",
+  "status": "revision",
+  "published": false,
   "source": "main.tex",
+  "pdf": "three-pair-image-counterexample.pdf",
+  "published_edition": "published/",
+  "build": "latexmk -pdf -interaction=nonstopmode -halt-on-error -jobname=three-pair-image-counterexample main.tex",
+  "source_bundle": "source.zip",
+  "abstract": "We give an explicit counterexample to the Special Image Conjecture in\nthree contraction pairs.  In\n\\(\\C[\\tau,w,v,t,z,y]\\), let\n\\[\n f=\\tau(t-y)(wz+vt),\\qquad g=y.\n\\]\nFor the standard contraction map \\(\\Eop\\), we prove for every \\(m\\geq1\\)\nthat\n\\[\n \\Eop(f^m)=0,\\qquad\n [t]\\Eop(gf^m)=(-1)^{m-1}(m+1)!\\,m!.\n\\]\nThus every positive power of \\(f\\) lies in the image of the operators\n\\(\\partial_t-\\tau,\\partial_z-w,\\partial_y-v\\), whereas\n\\(gf^m\\notin\\M_3\\) for every \\(m\\geq1\\).  The polynomial \\(f\\) has\nfour terms and the multiplier is linear.  Its two-pair dehomogenization is\nexactly Christopher D. Long's counterexample to the Mathieu conjecture for\n\\(SU(2)\\); the present construction is its one-pair bihomogeneous lift.\nWe also prove an explicit two-pair identity of bidegree \\((4,4)\\).\nTogether with the known one-pair theorem, it shows that the minimum\nfailing number of contraction pairs is exactly two.",
+  "abstract_format": "latex",
+  "abstract_source": "main.tex",
   "verification": {
-    "scope": "Written all-power identities and an accompanying finite exact regression checker.",
-    "limits": "The deposited frontier 2 <= r_SIC <= 3 is historical; later local work establishes failure with two pairs. The finite checker alone is not an all-order theorem proof.",
+    "scope": "Written all-order proofs for the three-pair and two-pair identities, with exact finite contraction regression checks.",
+    "limits": "Finite replay does not prove all orders. No new Lean formalization, independent replay, external mathematical review or public deposit is claimed.",
     "evidence": [
-      "verify_three_pair_image_mathieu_counterexample.py",
+      "verification.json",
       "../../research/foundations/extended-geometry/TWO_PAIR_IMAGE_MATHIEU_COUNTEREXAMPLE.md"
     ]
   },
-  "publication_record_checked": "2026-11-17",
-  "deposited_title": "An Four-Term Counterexample to the Special Image Conjecture in Three Pairs",
-  "abstract": "An explicit four-term counterexample to the Special Image Conjecture in three contraction pairs, obtained by a one-pair bihomogeneous lift of Christopher D. Long's SU(2) Mathieu counterexample. For f=tau(t-y)(wz+vt) and g=y, the paper proves E(f^m)=0 and [t]E(g f^m)=(-1)^(m-1)(m+1)!m! for every m>=1. Thus the minimum possible failure dimension is two or three.",
-  "abstract_format": "text",
-  "keywords": [
-    "special image conjecture",
-    "image conjecture",
-    "Mathieu subspace",
-    "Gaussian moments",
-    "polynomial contraction",
-    "SU(2)",
-    "xz-Conjecture"
+  "next_steps": [
+    "Independent mathematical review of the revised exposition and both all-order arguments.",
+    "Publish a new version only after author authorization."
   ],
-  "resource_type": {
-    "title": "Preprint",
-    "type": "publication",
-    "subtype": "preprint"
-  }
+  "verification_record": "verification.json"
 }

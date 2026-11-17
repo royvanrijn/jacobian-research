@@ -1,12 +1,14 @@
-# Published papers
+# Released papers
 
-These four preprints have verified public deposits. Each directory contains the deposited PDF and source, publication and submission metadata, checksum provenance, and the scope of its mathematical checks.
+Each of these four papers has a verified public deposit. The paper directory contains its best current repository edition and verification record. Its deeper `published/` directory preserves the exact deposited PDF, source, submission metadata and checksum manifest. A local revision can differ from Zenodo or Hexagon; the deposited version remains identifiable and unchanged.
 
-| Paper | Deposited | Result |
+| Current paper | Result | Published edition |
 |---|---|---|
-| [Generalized Vanishing Conjecture](generalized-vanishing-two-variables/) | 5 August 2026; also Hexagon | GVC holds exactly through dimension two. |
-| [Four-term Special Image counterexample](three-pair-image-counterexample/) | 28 July 2026 | Failure in three contraction pairs. |
-| [Sparse minimality in dimension three](sparse-minimality-gaussian-moments-dimension-three/) | 24 July 2026 | No failure with both degree at most four and at most four Witt monomials. |
-| [Gaussian Moments Conjecture in two variables](gaussian-moments-two-variables/) | 23 July 2026 | The bivariate Gaussian-moment theorem. |
+| [Generalized Vanishing Conjecture](generalized-vanishing-two-variables/) | Binary theorem, support certificates and sharp cutoff; homogeneous failure in dimension three. | [5 August 2026; also Hexagon](generalized-vanishing-two-variables/published/) |
+| [Four-term Special Image counterexample](three-pair-image-counterexample/) | Four-term three-pair construction, plus the two-pair dimension boundary. | [28 July 2026](three-pair-image-counterexample/published/) |
+| [Sparse minimality in dimension three](sparse-minimality-gaussian-moments-dimension-three/) | No failure with both degree at most four and at most four Witt monomials. | [24 July 2026](sparse-minimality-gaussian-moments-dimension-three/published/) |
+| [Filtered Frobenius proof of the two-variable Gaussian Moments Conjecture](gaussian-moments-two-variables/) | Alternative proof of the known bivariate support classification and sharp cutoff. | [23 July 2026](gaussian-moments-two-variables/published/) |
 
-Deposited preprints are distinguished from independent peer review. See each paper's README and metadata for formalization limits. Working revisions and papers awaiting publication live in [unpublished](../unpublished/); the supporting programme is in [research](../research/).
+The two former bivariate revision bundles in `unpublished/` are merged into these current homes. Papers without a public deposit remain in [unpublished](../unpublished/). Current proofs and open questions are organized in [research](../research/).
+
+Public deposit, mathematical review, exact computation and formalization have separate scopes. Each paper's metadata distinguishes the current local revision from its archived public edition.

@@ -1,4 +1,4 @@
-# All-degree Gaussian classifications in affine isotropic charts
+# Gaussian H(2,1): affine charts, radial phases and obstructions
 
 Internal written proof, 17 November 2026. This extends the algebraic cubic
 subcase in [the boundary manuscript](../../../unpublished/gaussian-boundary/manuscript.tex),
@@ -68,6 +68,23 @@ In particular, in the constant-fibre slice
 purity forces a=0 and one of the first two forms. This proves H(2,1)
 for this all-degree subfamily. It imposes both B=b(Z) and an affine
 dependence of g on W; arbitrary B(Z,W),g(Z,W) remain outside its scope.
+
+The later sections prove further obstructions for the mixed family
+P=W(h(Z)+c(Z)Y)+aY^2+u(Z)Y+k(Z). Every pure member is safe when
+deg c<=2, with no degree bound on h,u,k. More generally, nonconstant c
+with no root of multiplicity greater than two is pure exactly in the
+positive-weight zero-root form (8). Nonconstant squarefree c of any
+degree therefore admits no pure members. Arbitrary root multiplicities
+are also excluded when a is nonzero or when c,h are coprime. Adding a
+constant nonzero quadratic W term forces every pure member to be
+quadratic, even with an arbitrary polynomial WY coefficient. The
+nonconstant-coefficient exclusion uses a connected algebraic double
+cover and positive differential order, retaining its positive-genus
+component cycles. A relative endpoint argument proves
+that every radial pure phase is zero in all degrees, and consequently
+settles weakly one-sided angular support in all degrees. The polynomial
+quadratic-form automorphism orbit of Long's quartic is excluded as a
+source of H(2,1) counterexamples.
 
 ## Exact circular elimination
 
@@ -737,7 +754,498 @@ coefficient is independent of Y in both cases. Those are exactly the
 cases used in this proof. The remaining nonlocalizable branch was
 handled without localization by (8).
 
-## A radial quartic obstruction and weakly one-sided support
+### Several simple or double roots
+
+The same local argument gives an all-degree classification without a
+bound on deg c. Suppose c is nonconstant and every root has multiplicity
+at most two. Then the mixed phase is pure if and only if
+
+\[
+ a=0,\qquad h,c\in z^2\mathbb C[z],\qquad
+ u,k\in z\mathbb C[z].                              \tag{13}
+\]
+
+These are precisely the safe positive-weight phases already handled by
+(8). In particular every pure nonconstant c in this range has a double
+root at zero. Nonzero constant c is not included in this assertion.
+
+It remains to exclude purity outside the zero-root case h(0)=c(0)=0.
+At a double root alpha, write c=(z-alpha)^2 q(z), q(alpha) nonzero,
+and use x=1/(z-alpha). The normalized volume is
+
+\[
+ -r\,\frac{dx}{q(\alpha+1/x)}.
+\]
+
+Its extra factor is a generic unit on every component reducing to
+alpha. The phase now has a convergent Laurent expansion at x=infinity;
+its positive part is quartic with leading coefficient (12), replacing
+kappa^2 by q(alpha)^2. Outside alpha=h(alpha)=0 it is nonzero of
+valuation at most two. Every coefficient of the negative Laurent
+tail still has valuation at least minus one, since all spatial
+denominators are independent of r and the parameter powers remain
+r^{-1},1,r,r^2. When v(x)<0 this infinite tail converges in the
+parameter valuation. For a component scale rho<=-1 its qth negative
+term has valuation at least q-1, tending to infinity. It is therefore
+integral and cannot cancel the nonintegral positive quartic top
+coefficient in the exact chart. Thus rho>-1, and the normalized volume
+has strictly positive order 1+rho, exactly as above.
+
+Every other type of component also has positive normalized volume
+order. At a simple root dz/c is a holomorphic unit times a logarithmic
+differential, whose generic pullback order is nonnegative. At infinity
+dz/c is logarithmic or regular because deg c>=1. Away from these
+punctures it is regular; a component with nonconstant original-coordinate
+residue has normalized order one. These cases exhaust the generic
+centres of the marked P1 model. The only higher-order horizontal
+amplitude poles are the double roots; each is a phase-irregular
+puncture by its nonzero quartic coefficient. The positive-order
+finite/finite and finite/pole neck estimates therefore apply to the
+full normalized differential r dz/c, without a hidden higher-order
+regular-puncture pole. Complete regular-part comparison and the
+unit-seed argument exclude purity.
+
+Localization is valid in every excluded case. If c(0) is nonzero it
+is an ordinary t-adic unit; otherwise h(0) is nonzero and, for a root
+of multiplicity m=1 or 2 at zero, c(r) has a nonzero leading term
+proportional to h(0)^m t^m, independent of Y. The one excluded local
+exception alpha=h(alpha)=0 is exactly the zero-root case already
+classified by (8). This proves (13).
+
+## Arbitrary multiplicities: nonzero quadratic fibre and unshared roots
+
+Two further obstructions use the Gaussian-square structure of the phase
+rather than a multiplicity bound. In the mixed family with nonconstant c:
+
+1. If a is nonzero, there are no pure phases, for any root multiplicities
+   of c and any h,u,k.
+2. If every common root of c and h has multiplicity at most two in c,
+   purity is equivalent to (8). In particular gcd(c,h)=1 excludes purity
+   for every nonconstant c, without a degree or multiplicity bound.
+
+Here h=0 has every root of c as a common root; this convention prevents
+the second assertion from imposing an unintended coprimality condition.
+The positive-weight zero-root form in (8) remains sufficient for arbitrary c.
+
+Write r=1/t and s=(rz-h)/c. The transformed phase is
+
+\[
+ \varphi=\frac{as^2+us+k}{r}-\frac{s^2}{2}.
+\]
+
+Work on a finite-phase component whose generic centre reduces to a root
+alpha of c, of multiplicity m. Let N=v(z-alpha)>0 and let rho be the
+relative scale in an exact z chart, so rho>=N. All of u,k are regular
+at alpha. If a is nonzero and v(s)<0, the term as^2/r has strictly
+smaller valuation than every other term. Finite phase therefore forces
+s integral. If h(alpha) is nonzero this is impossible, since
+v(s)=-mN. At alpha=0 outside the zero-root case, h(0) is nonzero,
+so no finite-phase component lies there either.
+
+For alpha nonzero with h(alpha)=0, put ell=ord_alpha h, allowing
+ell=infinity when h=0. If ell>=m then h/c is regular. Integrality of
+s=rz/c-h/c gives mN<=1, and hence
+
+\[
+ v\!\left(r\frac{dz}{c}\right)
+ =1+\rho-mN\ge1-(m-1)N\ge\frac1m>0.
+\]
+
+If 1<=ell<m, the identity h+cs=rz forces ell N=1: h has strictly
+smaller valuation than cs, whereas rz has valuation one. In
+D=r-h'-c's, the term -h' is then the unique smallest term, with
+valuation (ell-1)N=1-N. The exact relative identity ds=(D/c)dz gives
+
+\[
+ v\!\left(r\frac{dz}{c}\right)
+ =1+v(ds)-v(D)\ge N>0.
+\]
+
+Here an integral rational function s has relative differential of
+nonnegative generic valuation in the exact component coordinate;
+a constant leading residue only increases that valuation. These cases
+cover every root for a nonzero a. Away from the roots and at infinity
+the normalized volume has positive order as already proved. Every
+horizontal volume pole is phase-irregular: its leading coefficient is
+proportional to (a/r-1/2)(r alpha-h(alpha))^2, which is nonzero outside
+alpha=h(alpha)=0. The complete positive-order neck and tail argument
+therefore excludes a unit seed. The exceptional zero-root case itself
+forces a=0 by (8), completing assertion 1.
+
+For assertion 2 only unshared roots of higher multiplicity remain.
+For a=0, finite phase forces v(s)>=-1: below -1 the term -s^2/2
+uniquely dominates us/r and k/r. At an unshared root h(alpha) is
+nonzero, so v(s)=-mN and again N<=1/m. The same volume inequality
+gives a positive order at that root. Shared roots of multiplicity one
+or two have already been treated. Complete comparison excludes purity
+outside the zero-root case, and (8) supplies its exact classification.
+
+## A constant quadratic W term
+
+The following all-degree family has genuine higher W degree:
+
+\[
+ P=\lambda W^2+Wh(Z)+cWY+aY^2+u(Z)Y+k(Z),\qquad
+ \lambda\ne0,
+\]
+
+where lambda,c,a are constants and h,u,k are arbitrary polynomials.
+Every pure member is quadratic, and therefore safe.
+
+In the full phase -ZW-Y^2/2+tP, eliminate W,Y over C(t). Their
+quadratic precision and determinant are
+
+\[
+ M=\begin{pmatrix}-2\lambda t&-ct\\-ct&1-2at\end{pmatrix},\quad
+ \Delta=-2\lambda t+(4\lambda a-c^2)t^2.
+\]
+
+The remaining phase is phi=N/(2Delta), with normalization
+H=Delta^{-1/2}, where
+
+\[
+ \begin{aligned}
+ N={}&z^2+t(-2zh-2az^2)\\
+ &+t^2(h^2+4azh-2czu-4\lambda k)\\
+ &+t^3(-2ah^2+2chu-2\lambda u^2+2(4\lambda a-c^2)k).
+ \end{aligned}                                             \tag{14}
+\]
+
+This is a generic quadratic elimination of the spatial twisted module
+and its constant volume seed, using
+[the determinant-factor lemma](../../../unpublished/gaussian-boundary/repeated_line_exclusion.tex),
+label lem:quadraticelimination. Its matrix is invertible over C(t).
+Its singularity at t=0 does not justify a conditional Wick integral;
+the original unit functional first supplies its rational seed quotient,
+which is transported through the generic module identification. The
+normalization is algebraic, so the full stationary-ball theorem is
+used after finite ramification. The rational-normalization corollary
+alone would not justify this application.
+
+If the actual z degree D is at least three, its nonzero leading
+numerator N_D(t) is divisible by t. For d=deg Delta in {1,2},
+
+\[
+ Dv_\infty(H)-v_\infty([z^D]\varphi)
+ =(D/2-1)d+\deg N_D>0.
+\]
+
+The full leading-coefficient obstruction excludes purity. Thus phi
+has degree at most two. In (14), the coefficient of t forces h affine.
+The coefficient of t^2 then gives deg k<=max(2,deg u+1). If deg u=n>=2,
+the term -2lambda u^2 in the coefficient of t^3 has degree 2n; every
+other term there has degree at most n+1. This is impossible. Hence u
+is affine and k quadratic, proving the claim by quadratic safety.
+Allowing c or lambda to depend on z makes the determinant spatially
+variable and is outside this elimination argument.
+
+### An arbitrary WY coefficient with constant nonzero W^2 coefficient
+
+For the same family with lambda nonzero constant, now allow c=c(Z)
+to be an arbitrary nonconstant polynomial. There are no pure members,
+with no degree bound on c,h,u,k. Together with the constant-c result,
+every pure member of
+
+\[
+ \lambda W^2+Wh(Z)+c(Z)WY+aY^2+u(Z)Y+k(Z),\qquad\lambda\ne0,
+\]
+
+is quadratic. This conclusion uses a curve period argument; the preceding
+polynomial leading-coefficient calculation alone does not prove it.
+
+Let r=1/t, F(z)=c(z)^2-4lambda a, and let C_r be the smooth projective
+completion of
+
+\[
+ V^2=q_r(z)=F(z)+2\lambda r.
+\]
+
+If n=deg c>=1, q_r has degree 2n and is squarefree over C(r): its
+derivative is the fixed polynomial F', and its value at a root of F'
+cannot vanish identically in r. Thus the curve is geometrically connected
+and has genus n-1. Put Delta=-t^2 q_r. The effective phase is N/(2Delta),
+where (14) remains the exact algebraic numerator with c=c(z).
+The normalized spatial differential is a fixed nonzero constant times
+
+\[
+ \eta=r\,\frac{dz}{V}.                                  \tag{17}
+\]
+
+**The algebraic source bridge.** Here the fibre matrix depends on z,
+so the constant-matrix elimination lemma requires an extension. Work over
+A=C(t)[z,q_r^{-1}], and complete the square in W,Y. Polynomial fibre
+contractions reduce the top spatial module to its constant fibre class.
+Differentiation in either z or t produces the effective phase derivative
+and the half-trace correction
+
+\[
+ -\tfrac12\operatorname{tr}(M^{-1}M_z)
+ =-\tfrac12\partial_z\log\Delta,\qquad
+ -\tfrac12\operatorname{tr}(M^{-1}M_t)
+ =-\tfrac12\partial_t\log\Delta.
+\]
+
+Terms from the moving centre are spatial exact terms. This proves the
+connection and seed identification, rather than merely the stationary
+equations. The scalar-volume connection is exactly that of (17):
+d log(r/V)=-d log t-(1/2)d log q_r. The original Wick functional
+extends to the required localization, since
+
+\[
+ q_r^{-1}=\frac{t}{2\lambda}
+ \sum_{j\ge0}\left(-\frac{tF(z)}{2\lambda}\right)^j
+\]
+
+has polynomial z coefficients at every t order. Fibre contractions and
+generic reduction therefore do not discard the original unit seed.
+There is no conditional integral in an isotropic W direction at t=0.
+
+On the curve with V inverted, the exponential de Rham system splits
+under V mapped to -V. Its odd forms are A dz/V, and its odd primitives
+are A/V. Their twisted derivative is the half-density relation
+partial_z+phi_z-q_r'/ (2q_r), exactly the Gaussian reduction. The time
+lift commutes with this involution. A unit horizontal functional on the
+odd system extends by zero on the even system to a unit functional on
+the full curve system. This is the full system used for period comparison.
+
+The affine total space is smooth: its equation solves
+r=(V^2-F(z))/(2lambda), so it is an open part of the affine (z,V)
+plane after the indicated parameter and spatial poles are removed.
+The phase is necessarily nonconstant in z, since at t=0 it has
+Laurent leading term -z^2/(4lambda t)+O(1). Thus the base projection
+and phase are algebraically independent, as required by the exponential
+period comparison. Additional branch punctures from the localization
+may be regular for the phase; dz/V is holomorphic there, so they cause
+no extra seed growth.
+
+**A proper marked curve model.** Semistable reduction for smooth projective
+curves gives a model after a finite parameter cover; the hypotheses just
+checked include geometric connectedness and constant field C(r). The
+precise imported theorem is
+[The Stacks Project, Theorem 55.18.1, Tag 0CDN](https://stacks.math.columbia.edu/tag/0CDN).
+[Section 55.14](https://stacks.math.columbia.edu/tag/0CDB), especially
+Example 55.14.1 and Lemma 55.14.3, resolves its nodal surface singularities
+while retaining a reduced nodal fibre. These are additional existence
+inputs, not period-growth estimates.
+
+Split all marked branches (the punctures and fibres phi=0,1,infinity)
+after a further finite cover, and resolve any newly introduced equations
+uv=R^m as in that section. The marked sections then miss the nodes;
+separating their smooth-point collisions preserves reduced normal crossings.
+The value-one marking removes the remaining phase indeterminacies by
+the same zero/pole-crossing argument given above. The result is a proper
+regular curve model with reduced nodal central fibre, a morphism phi
+to P1, and separated horizontal sections. Its finite components may
+have positive genus. Proper nearby-cycle comparison and the full gluing
+complex retain their entire cohomology; they must not be replaced by a
+count of critical points or by a genus-zero computation.
+
+**Positive order on every component.** Normalize v(r)=1 and use the
+relative differential at fixed parameter on a generic central component.
+For any meromorphic function f, v(df)>=v(f): differentiating its leading
+residue cannot lower the parameter valuation. If z has nonconstant
+finite residue, or reduces to a finite alpha with F(alpha) nonzero,
+then v(V)=0 and (17) has order at least one.
+
+Suppose z reduces to a root alpha of F of multiplicity m, and put
+N0=v(z-alpha)>0 and rho_z=v(dz)>=N0. If mN0<1, the F term dominates
+and v(V)=mN0/2; hence
+
+\[
+ v(\eta)\ge1+N_0-mN_0/2>0.
+\]
+
+The strict inequality follows from mN0<1 (and is immediate for m=1).
+If mN0>1, v(V)=1/2, and v(eta)>=1/2+N0>0. When mN0=1 and there
+is no additional cancellation the same estimate applies. If cancellation
+raises v(V) above 1/2, differentiate the curve relation at fixed r:
+
+\[
+ 2V\,dV=F'(z)\,dz,\qquad v(F')=(m-1)N_0=1-N_0.
+\]
+
+It follows that v(eta)=1+v(dV)-v(F')>=v(V)+N0>0. This treats even
+the components requiring a refined scale at a multiple branch collision.
+At spatial infinity, put v(z)=-N0<0. Since deg c=n>=1,
+v(V)=-nN0 and v(dz)>=-N0, giving
+
+\[
+ v(\eta)\ge1+(n-1)N_0>0.
+\]
+
+All generic centres have been covered. This order calculation holds
+on every central component, independently of whether its phase is finite.
+It uses the curve relation, not affine-disc coordinates on a rational curve.
+
+The only horizontal poles of eta are at infinity. In x=1/z its local
+form is a unit times r x^{n-2}dx: it is logarithmic for n=1 and
+holomorphic for n>=2. It is holomorphic at every finite branch point,
+as dz/V=2dV/F'(z) at a generic parameter. Thus the complete finite-piece,
+finite/finite neck, and finite/pole tail estimates apply. Positive generic
+orders on both sides give a positive factor times logarithmic neck length;
+descending exponential tails integrate every fixed pole order. Beyond a
+node chart the algebraic cover, differential and inverse-phase branches
+have only algebraic parameter growth. One can use z away from branch
+discs and V within them; the finitely many algebraic transition scales
+and bounded-degree projected phase curves give that bound. The exponential
+truncation dominates it. Regular puncture circles have at most logarithmic
+amplitude, so the positive component order persists.
+
+Proper comparison with these complete glued complexes therefore makes
+every zero-exponential seed period tend to zero. Extending a hypothetical
+unit seed quotient to an actual curve period would make that seed value
+one, a contradiction. This proves the nonconstant-c exclusion.
+
+## All-degree radial obstruction and angular support
+
+For arbitrary polynomials B,g in C[R], with R=ZW, the phase
+
+\[
+ P=aY^2+B(R)Y+g(R)
+\]
+
+is pure only when P=0. The endpoint of the factorial functional
+E[R^n]=n! must be retained in proving this statement.
+
+### A relative leading-coefficient bound
+
+Let K=C(t), let phi in K[x] have degree D>=1 and leading coefficient
+a_D, and let H be a nonzero algebraic scalar with H'/H in K. If
+
+\[
+ Dv_\infty(H)>v_\infty(a_D),                             \tag{15}
+\]
+
+the exponential de Rham system of the pair (A1,{0}), with normalized
+volume H dx, has no rational horizontal quotient of its differential
+seed submodule taking [1] to one. Algebraic normalization is handled
+on a finite cover. This is a relative assertion, proved below; it is
+not an application of the ordinary rank-(D-1) criterion.
+
+Put A=K[x] and D_x=partial_x+phi_x. The relative complex has degree-zero
+term xA and degree-one term A dx, so its quotient and connection are
+
+\[
+ M_{\rm rel}=A/D_x(xA),\qquad
+ \nabla[q]=[q_t+(\varphi_t+H'/H)q].
+\]
+
+The two twisted derivatives commute and preserve the endpoint condition.
+The leading degree of D_x(xq), for deg q=m, is m+D. Thus the classes
+1,x,...,x^{D-1} are a basis and the rank is D. If N_abs=A/D_x A,
+the exact sequence is
+
+\[
+ 0\longrightarrow Kb\longrightarrow M_{\rm rel}
+ \longrightarrow N_{\rm abs}\longrightarrow0,\qquad
+ b=[\varphi_x].
+\]
+
+Indeed D_x is injective on polynomials when phi is nonconstant, so
+D_x A/D_x(xA) has dimension one. The extra boundary class satisfies
+
+\[
+ \nabla b=(\varphi_t(t,0)+H'/H)b,                       \tag{16}
+\]
+
+because D_x(phi_t-phi_t(t,0)) is a relative relation. The boundary
+summand is therefore retained with its actual parameter action.
+
+At an ordinary parameter the closed rapid-decay cycles give the perfect
+pairing for N_abs. Add one path from x=0 to a decay sector at infinity.
+Its value on b is -H exp(phi(t,0)), by the fundamental theorem of
+calculus, and is nonzero. The closed-cycle pairing, plus this path,
+is consequently a perfect relative pairing of rank D. Equivalently,
+the relative de Rham complex is the cone of the absolute complex to
+point restriction, shifted by minus one; the corresponding chain
+cone allows a boundary at 0. The ordinary perfect pairing and elementary
+point evaluation identify the two exact sequences. Flat transport
+makes the pairing horizontal. Every analytic horizontal functional on
+M_rel is thus a relative rapid-decay period. The ordinary pairing used
+here is the Hien--Roucairol comparison already specified above; the
+relative extension follows from this explicit extra path and cone.
+
+For the full regular part at infinity, use the same proper marked P1
+model, now marking the endpoint 0, the puncture infinity and the
+fibres phi=0,1,infinity. Only infinity is removed; 0 is an allowed
+boundary vertex, not another puncture. The comparison of nearby cycles
+commutes with the cone defining the relative complex and with proper
+direct image. Thus the complete regular-part calculation retains
+finite-phase component chains and annulus gluing, now relative to the
+endpoint section wherever its phase is finite. If phi(t,0) has a
+nonzero polar action, the point term has no zero-exponential part.
+Otherwise the endpoint is a separated smooth boundary vertex of a
+finite piece. This explicitly accounts for the extra rank-one term.
+
+On an exact component chart x=xi+r^rho X, r=1/t, finite phase forces
+the top coefficient a_D r^{D rho} to have nonnegative valuation.
+Therefore rho>=-v(a_D)/D. The generic order of H dx on every finite
+component is at least v(H)-v(a_D)/D, strictly positive by (15).
+The only horizontal pole of dx is infinity, always phase-irregular.
+In particular the volume is regular at the allowed endpoint 0.
+The positive generic factor consequently extends uniformly to paths
+ending at that endpoint. At finite/finite nodes the coefficient of
+du/u has positive order on both adjacent components; its integral
+is O(r^epsilon log r). At finite/pole nodes the positive order of
+the finite component remains after descending exponential integration.
+The uniform tail continuation has only algebraic volume growth and is
+dominated by the same exponential cutoff proved above. After finite
+ramification these are exactly the positive-order node calculations
+already displayed, with H dx in place of r dx.
+
+Every zero-exponential relative seed period therefore tends to zero.
+A unit formal seed functional restricts to a rational quotient on its
+differential seed span, extends analytically to the full module at an
+ordinary point, and is represented by a flat relative cycle by the
+complete relative pairing. Its zero-exponential seed value would be
+one, contradicting this decay. This proves (15). The endpoint class
+b can itself have a constant period; this does not give a unit period
+on [1]. For example phi=t x^2 has a constant endpoint period on 2tx
+while its seed periods scale as t^{-1/2}.
+
+### Application to radial phases
+
+Put d=1-2at and H=d^{-1/2}. Eliminating Y gives
+
+\[
+ \varphi=-R+tg(R)+\frac{t^2B(R)^2}{2d},\qquad
+ L(q)=H E_R[q\exp(\varphi+R)].
+\]
+
+The factorial integration-by-parts identity is
+E_R[f'-f]=-f(0). Coefficientwise it implies L(D_R f)=0 whenever
+f belongs to R K[R]. The endpoint term is zero for these relations,
+and time differentiation gives precisely the relative connection.
+Thus the actual moment functional descends to M_rel with seed Phi_1.
+No convergence of the original exponential integral is assumed.
+
+If D=max(deg g,2deg B)>=2, it is the actual degree of phi. Its top
+coefficient, with g_D and c_D from g and B^2 not both zero, is
+
+\[
+ a_D=tg_D+\frac{t^2c_D}{2d}.
+\]
+
+For a=0 its infinity valuation is -1 or -2, whereas v(H)=0.
+For a nonzero,
+
+\[
+ a_D=\frac{g_D(r-2a)+c_D/2}{r(r-2a)},\qquad r=1/t.
+\]
+
+Its valuation is -1, or zero when the constant numerator cancels;
+it cannot vanish identically. Since v(H)=1/2, (15) is strict in
+every case. Purity is excluded. The remaining case has B=b constant
+and g=g0+g1 R. Its exact period is
+
+\[
+ \Phi_1=\frac{\exp(tg_0+t^2b^2/(2d))}{\sqrt d(1-g_1t)}.
+\]
+
+Rational-exponential separation forces d(1-g1t)^2=1 and its exponent
+zero. Hence a=g1=b=g0=0. This proves the all-degree radial assertion.
+
+### An elementary quartic proof
 
 Let R=ZW, so E[R^n]=n!. Consider the full radial H(2,1) family of
 total degree at most four:
@@ -783,22 +1291,27 @@ The rational-exponential argument forces
 (1-gamma t)^2(1-2at)=1 and its exponent zero. Thus gamma=a=b=k=0,
 proving the claim without any finite-moment inference.
 
-This implies a broader support obstruction. Suppose all monomials of
-an H(2,1) phase have nonnegative Z-minus-W weight, and its weight-zero
-part has total degree at most four. Positive-weight terms may have
-arbitrary degree. Write P=P0+Pplus by angular weight. In a pure moment,
+### Weakly one-sided angular support in every degree
+
+The all-degree radial theorem gives a uniform support obstruction.
+Suppose all monomials of an H(2,1) phase have nonnegative Z-minus-W
+weight, with no degree restriction. Write P=P0+Pplus by angular weight.
+In a pure moment,
 any factor from Pplus leaves strictly positive weight and cannot
 contract. Therefore Phi_1(P)=Phi_1(P0). The weight-zero part has exactly
-the radial form above: the constant fibre coefficient forbids RY^2.
-Purity forces P0=0. Conversely this condition gives strictly positive
+the all-degree radial form aY^2+B0(R)Y+g0(R): the constant fibre
+coefficient forbids a nonconstant coefficient of Y^2. Purity forces
+P0=0. Conversely this condition gives strictly positive
 weight, so P is pure and safe with cutoff m>deg Q. The same conclusion
 holds with all weights nonpositive, after exchanging Z and W.
 
-In particular every total-degree-at-most-four H(2,1) phase with weakly
-one-sided angular support is pure exactly when its weight-zero part
-vanishes. A quartic counterexample must have monomials of both angular
-signs in every allowable circular base frame. This does not classify
-the remaining mixed-sign quartics.
+Thus every H(2,1) phase with weakly one-sided angular support is pure
+exactly when its weight-zero part vanishes. A counterexample in any
+degree must have monomials of both angular signs in every allowable
+centred Gaussian frame retaining an ordinary fibre direction. In
+degree at most four the same conclusion also follows from the elementary
+quartic proof, independently of the relative leading-coefficient lemma.
+The remaining mixed-sign phases are not classified here.
 
 ## Long's quartic under polynomial quadratic-form automorphisms
 
@@ -860,8 +1373,10 @@ unsafe member from every nonisotropic constant-fibre frame. No novelty
 claim against the external literature is made.
 
 The companion [exact checker](verify_gaussian_affine_isotropic_chart.py)
-checks symbolic identities for the arbitrary-ell branch and for the shear,
-the directional-derivative obstruction, and finite Wick regression controls.
+checks symbolic identities for the arbitrary-ell branch, the shear,
+the mixed-source bridges, the simple-puncture partial fractions,
+the reciprocal double-root phase and the polynomial-orbit coefficients,
+as well as finite Wick regression controls for the radial quartic formula.
 Those finite controls do not prove completeness or the all-degree theorem;
 the preceding argument supplies that proof. A run is recorded in
 [the verification receipt](gaussian_affine_isotropic_chart_verification.json).
@@ -869,17 +1384,22 @@ the preceding argument supplies that proof. A run is recorded in
 The additional mixed-source theorems use the explicitly identified
 one-base leading-coefficient obstruction or the proved fixed-puncture
 extension of the logarithmic seed bound, with the displayed spatial
-and time bridges. Their normalization and phase identities are checked
-symbolically; those checks do not certify the imported stationary-ball
-or marked-model arguments. The radial quartic and polynomial-orbit
-obstructions have the elementary all-order proofs displayed above.
+and time bridges. The all-degree radial proof uses the explicitly
+constructed relative endpoint module and its complete relative period
+pairing. Normalization, boundary and phase identities have exact controls;
+those checks do not certify the imported stationary-ball or marked-model
+arguments. The radial quartic and polynomial-orbit obstructions also
+have the elementary all-order proofs displayed above.
 
 General H(2,1) remains open. The next cases beyond this result include
-B=c(Z)W+u(Z) where deg c>=3 and c has repeated roots outside the zero-root case,
-and higher W degree in B or g. A repeated root gives a higher-order
-pole in dz/c; the fixed logarithmic bound no longer applies. Its
-extension requires a bound retaining the special Gaussian-square
-structure of the rational phase, or another argument. Arbitrary radial
-B(R),g(R) beyond quartic degree also remain outside the radial proof:
-the factorial functional has an endpoint, so the ordinary Gaussian
-leading-coefficient obstruction cannot simply be substituted for it.
+B=c(Z)W+u(Z) with a=0 and a common root of c,h having multiplicity
+at least three in c, outside the zero-root case. For a root of
+multiplicity m>=3, the reciprocal-coordinate volume has an additional
+factor x^{m-2}. The double-root bound 1+rho>0 does not control that
+factor. An extension requires a stronger bound retaining the special
+Gaussian-square structure of the phase, or another argument. Higher W
+degree in B or g also remains open beyond the stated constant-quadratic
+W family. A spatially varying W^2 coefficient changes the double-cover
+pencil used in (17); its component-order bounds have not been established
+here. Terms of W degree at least three in g, or at least two in B,
+remain outside that quadratic elimination.

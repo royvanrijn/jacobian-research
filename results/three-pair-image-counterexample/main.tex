@@ -16,7 +16,7 @@
 \title{A Four-Term Counterexample to the Special Image Conjecture
   in Three Pairs}
 \author{Roy van Rijn\\{\small Independent researcher}}
-\date{28 July 2026}
+\date{17 November 2026}
 \hypersetup{
   pdftitle={A Four-Term Counterexample to the Special Image Conjecture in Three Pairs},
   pdfauthor={Roy van Rijn},
@@ -47,11 +47,12 @@ Thus every positive power of \(f\) lies in the image of the operators
 four terms and the multiplier is linear.  Its two-pair dehomogenization is
 exactly Christopher D. Long's counterexample to the Mathieu conjecture for
 \(SU(2)\); the present construction is its one-pair bihomogeneous lift.
-Consequently the minimum number of pairs in which the Special Image
-Conjecture can fail is either two or three.
+We also prove an explicit two-pair identity of bidegree \((4,4)\).
+Together with the known one-pair theorem, it shows that the minimum
+failing number of contraction pairs is exactly two.
 \end{abstract}
 
-\section{The counterexample}
+\section{The problem and the construction}
 
 For \(r\geq1\), write
 \[
@@ -72,6 +73,22 @@ Define the polynomial-valued contraction map
  \Eop_r(\zeta^\alpha z^\beta)=\partial_z^\alpha z^\beta.
 \]
 
+The difficulty is cancellation at every power: testing a long finite list
+of contractions cannot establish the Mathieu hypothesis. Our construction
+starts from Long's two-pair factorial-moment cancellation and adds a
+homogenizing contraction pair. The new factorial factor is common to all
+surviving terms, so the cancellation persists. A fixed multiplier shifts
+one exponent and leaves a nonzero boundary term. This explains why a
+four-term polynomial can work at every order.
+
+At the first order the mechanism is already visible:
+\[
+ \Eop_3(f)=0,\qquad \Eop_3(yf)=2t-y.
+\]
+The proof below replaces this example by two binomial identities valid
+for every positive exponent. Section~\ref{sec:two-pair} then gives a
+separate two-pair construction, using a higher-degree polynomial.
+
 \begin{lemma}\label{lem:kernel}
 For every \(r\geq1\), one has \(\M_r=\ker\Eop_r\).
 \end{lemma}
@@ -86,9 +103,12 @@ For \(h\in R_r\),
 Thus \(\Eop_r((\partial_{z_i}-\zeta_i)h)=0\), so
 \(\M_r\subseteq\ker\Eop_r\).  Conversely,
 \[
- \zeta_i h\equiv\partial_{z_i}h\pmod{\M_r}.
+ \zeta^\alpha z^\beta
+ -\zeta^{\alpha-e_i}\partial_{z_i}z^\beta
+ =-(\partial_{z_i}-\zeta_i)(\zeta^{\alpha-e_i}z^\beta)
+ \in\M_r\qquad(\alpha_i>0).
 \]
-Repeatedly applying this congruence gives, for every monomial,
+Induction on the total dual degree therefore gives, for every monomial,
 \[
  \zeta^\alpha z^\beta
  \equiv\partial_z^\alpha z^\beta
@@ -177,7 +197,9 @@ coefficient, or dual, variables:
  =t^2P\left(w,\frac zt,v,\frac yt\right)
  =(t-y)(wz+vt).
 \]
-Each factor of \(P\) has total \(W,V\)-degree one.  Every monomial of
+The polynomial \(f^m\) has equal total dual and coordinate degrees,
+so its contraction is a scalar: survival requires equality of each pair
+of exponents. Each factor of \(P\) has total \(W,V\)-degree one.  Every monomial of
 \(P^m\) that survives \(\mathcal F\) therefore has total
 \((Z,Y)\)-degree \(m\), matching its total \(W,V\)-degree.  Its
 coordinate homogenization contains
@@ -188,7 +210,7 @@ The new contraction contributes \(m!\), and
  \Eop_3(f^m)=m!\mathcal F(P^m)=0.
 \]
 
-For \(YP^m\), a surviving term of \(P^m\) has total
+Multiplication by \(Y\) selects terms of \(P^m\) with total
 \((Z,Y)\)-degree \(m-1\).  Its homogenization contains
 \(t^{2m-(m-1)}=t^{m+1}\).  Contracting against \(\tau^m\)
 leaves one power of \(t\) and contributes \((m+1)!\).  By
@@ -217,7 +239,7 @@ the two-pair seed and multiplier become
  P=(1-Y)(WZ+V)\longmapsto(1+c)(ad+b),\qquad
  Q=Y\longmapsto-c.
 \]
-This is precisely Long's \(SU(2)\) counterexample~\cite{Long2026}.
+This is precisely Long's \(SU(2)\) counterexample~\cite[Theorem 4.2]{Long2026}.
 Indeed normalized Haar integration satisfies
 \[
  \int_{SU(2)}a^r b^s c^t d^u\,dg
@@ -252,20 +274,96 @@ due to Long.  The contribution here is the degree-two one-pair
 bihomogenization that produces the four-term counterexample to the Special
 Image Conjecture in three pairs.
 
-\begin{corollary}
-If \(r_{\mathrm{SIC}}\) denotes the minimum number of contraction pairs
-in which the Special Image Conjecture fails, then
+\section{The two-pair boundary}\label{sec:two-pair}
+
+The four-term construction gives failure with three pairs. The number of
+pairs can be reduced at the cost of a larger polynomial. We include the
+argument so that the dimension bound does not depend on an unavailable
+extension of the three-pair proof.
+
+In \(R_2\), put
 \[
- 2\leq r_{\mathrm{SIC}}\leq3.
+ R=\zeta_1z_1+\zeta_2z_2,\quad Z=\zeta_1z_2,\quad
+ W=2\zeta_2z_1,\quad T=\zeta_1z_1-\zeta_2z_2.
 \]
-\end{corollary}
+Thus \(T^2=R^2-2ZW\). Define
+\[
+ F=(R+Z)\left(R^2W-\tfrac12(2R+Z)T^2\right),
+ \qquad Q=Z.
+\]
+The two bidegrees are \((4,4)\) and \((1,1)\), respectively.
+
+\begin{theorem}\label{thm:two-pair}
+For every integer \(m\geq1\),
+\[
+ \Eop_2(F^m)=0,\qquad
+ \Eop_2(QF^m)=\frac{(4m+2)!\,m!}{(2m+1)!!}\ne0.
+\]
+Consequently the minimum failing number of contraction pairs is two.
+\end{theorem}
 
 \begin{proof}
-The upper bound is Theorem~\ref{thm:main}.  The one-pair case follows
-from~\cite[Theorem 2.8]{EWZ2011}: take the \(\mathbb Q\)-algebra
-\(A=\C[\tau]\) and \(a=\tau\).  Then \(a\) is a non-zero-divisor and
-the principal ideal \(Aa=(\tau)\) is radical, precisely the hypotheses
-of that theorem.
+We calculate contraction by a beta integral. For every polynomial \(H\)
+bihomogeneous of bidegree \((n,n)\), direct monomial evaluation gives
+\begin{equation}\label{eq:beta-contraction}
+ \Eop_2(H)=(n+1)!\operatorname{CT}_u
+  \int_0^1H\left(1,u,s,\frac{1-s}{u}\right)\,ds.
+\end{equation}
+Indeed, the constant term of
+\(\zeta_1^a\zeta_2^{n-a}z_1^bz_2^{n-b}\) vanishes unless \(a=b\).
+In that case the beta integral is
+\(a!(n-a)!/(n+1)!\), giving exactly the contraction.
+Integration here is a rational polynomial functional, so the formula
+also holds as a formal coefficient identity.
+
+Under this substitution, write \(v=2s-1\) and
+\(x=(1-v)/(2u)\). Then
+\[
+ R=1,\quad T=v,\quad Z=x,\quad ZW=(1-v^2)/2,
+\]
+and the polynomial \(F\) becomes
+\[
+ p(x,v)=\frac{1+x}{2x}\left(1-v^2(1+x)^2\right).
+\]
+The change \(x=(1-v)/(2u)\), made first over \(\mathbb Q(v)\),
+preserves constant terms: it reverses each exponent and multiplies its
+coefficient by a nonzero scalar, so exponent zero is unchanged. After
+simplification, \(p\) is Laurent in \(x\) and polynomial in \(v\).
+It is even in \(v\); hence integration over \(-1\leq v\leq1\), with
+measure \(dv/2\), equals integration over \(0\leq v\leq1\).
+
+For \(m\geq1\), define the polynomial
+\[
+ J_m(X)=\int_0^X(1-v^2)^m\,dv,\qquad
+ H_m(X)=X^{m-1}J_m(X).
+\]
+Substitution \(v=sX\) also gives
+\(H_m(X)=X^m\int_0^1(1-s^2X^2)^m\,ds\).
+The normalized pure and mixed contractions in
+\eqref{eq:beta-contraction} are therefore
+\begin{equation}\label{eq:two-coefficients}
+ 2^{-m}[x^m]H_m(1+x),\qquad
+ 2^{-m}[x^{m-1}]H_m(1+x),
+\end{equation}
+respectively.
+
+The central observation is that \(J'_m(X)=(1-X^2)^m\) has a zero
+of order \(m\) at \(X=1\). Thus
+\(J_m(1+x)=J_m(1)+x^{m+1}B(x)\) for some polynomial \(B\).
+Through degree \(m\), the polynomial \(H_m(1+x)\) consequently
+agrees with \(J_m(1)(1+x)^{m-1}\). The first coefficient in
+\eqref{eq:two-coefficients} is zero, and the second is
+\(2^{-m}J_m(1)\). Finally,
+\[
+ J_m(1)=\int_0^1(1-v^2)^m\,dv
+       =\frac{2^m m!}{(2m+1)!!}.
+\]
+Applying \eqref{eq:beta-contraction} with \(n=4m\) and \(n=4m+1\)
+proves both identities. Lemma~\ref{lem:kernel} proves failure for two
+pairs. For one pair, apply~\cite[Theorem 2.8]{EWZ2011} with the
+\(\mathbb Q\)-algebra \(A=\mathbb C[\zeta_1]\) and
+\(a=\zeta_1\). The element \(a\) is a non-zero-divisor and
+\((a)\) is radical, as required.
 \end{proof}
 
 \section{Size, scope, and verification}
@@ -273,34 +371,25 @@ of that theorem.
 The coefficients of \(f\) lie in \(\{1,-1\}\).  With respect to
 \((\tau,w,v)\)-degree and \((t,z,y)\)-degree, \(f\) has bidegree
 \((2,2)\) and ordinary degree four; \(g=y\) has bidegree \((0,1)\).
-The polynomial \(f\) is not of the separated form
-\(\lambda(\zeta)P(z)\); consequently the example does not give a
-three-variable Generalized Vanishing Conjecture counterexample.
 
-Thus the known one-pair result and Theorem~\ref{thm:main} give
-\[
- 2\leq r_{\mathrm{SIC}}\leq3.
-\]
-We make no claim here concerning the two-pair case or absolute
-literature priority.
+The two-pair polynomial has sixteen expanded terms and total degree
+eight. These constructions exhibit a trade-off between the number of
+pairs and the size of a witness. They do not establish minimum support
+size or degree among all counterexamples in either dimension. Neither
+polynomial is a separated product of a dual polynomial and a coordinate
+polynomial, so the constructions do not by themselves give a
+constant-coefficient Generalized Vanishing Conjecture counterexample.
 
-The all-order proof above is independent of computation.  An exact
-sparse-arithmetic checker expands \(f\), verifies the contractions
-through \(m=10\), and checks the two binomial identities through
-\(m=99\).  The checker is included in the accompanying Zenodo record
-and in the
-\href{https://github.com/royvanrijn/jacobian-research}
-{companion repository}.\footnote{Repository path:
-\path{scripts/verify_three_pair_image_mathieu_counterexample.py}.}
-As a low-order checksum,
-\[
- \Eop_3(f)=0,\qquad \Eop_3(yf)=2t-y.
-\]
+Both proofs establish identities for every positive exponent without
+relying on a finite search. The accompanying exact sparse-arithmetic
+checks provide regression tests: the three-pair contraction identities
+are checked through \(m=10\), and the two binomial sums through
+\(m=99\). These finite checks supplement the proofs; they cannot replace
+the all-order cancellation arguments.
 
-\paragraph{Acknowledgment.}
-Computational and editorial assistance from OpenAI Codex was used in
-searching for, checking, and presenting the example.  The author takes
-responsibility for the mathematical statements and proof.
+\paragraph{AI assistance and review.}
+ChatGPT (OpenAI) assisted with mathematical arguments, literature checks,
+exposition, proof review and verification code.
 
 \begin{thebibliography}{9}
 \small

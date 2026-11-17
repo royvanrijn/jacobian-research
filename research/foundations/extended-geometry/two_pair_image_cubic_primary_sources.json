@@ -1,0 +1,51 @@
+{
+  "format": "two-pair-image-cubic-primary-sources-v1",
+  "claim": "Proper nonconstant smooth algebraic varieties with a regular top-form seed have no nonzero constant compact exponential period.",
+  "source": {
+    "file": "sources/chen_dirks_mustata_V_filtrations_2402_07816v1.pdf",
+    "url": "https://arxiv.org/pdf/2402.07816v1",
+    "title": "An introduction to V-filtrations",
+    "authors": [
+      "Qianyu Chen",
+      "Bradley Dirks",
+      "Mircea Mustata"
+    ],
+    "version": "arXiv:2402.07816v1, 12 February 2024",
+    "sha256": "c00c78a3106e9f2b4120e59207c917e961787385902820d1b5fdb4e0745b7fe3"
+  },
+  "inspected_statements": [
+    {
+      "locator": "Example 5.19, printed page 27",
+      "content": "The graph seed delta(t-f) belongs to V^{>0}, from negativity of Bernstein-Sato roots. Nonconstant f on the irreducible source excludes the identically zero germ."
+    },
+    {
+      "locator": "Theorem 8.1, printed pages 41-44; complete four-step proof inspected",
+      "content": "For a smooth projection proper on the module support, filtered relative de Rham direct image injects into ordinary direct image and gives its canonical V-filtration."
+    },
+    {
+      "locator": "Proposition 3.19(ii), printed page 14; Corollary 3.20, page 15",
+      "content": "Submodules and quotients have induced V-filtrations; D-module morphisms are filtered and strict."
+    },
+    {
+      "locator": "Example 3.18, printed page 14",
+      "content": "A module supported on t=0 has V^alpha=0 for alpha>0."
+    }
+  ],
+  "application_hypotheses": {
+    "source": "Smooth irreducible algebraic surface after proper graph modifications.",
+    "map": "Proper and nonconstant to the affine phase line; proper on graph-module support.",
+    "seed": "Original normalized algebraic residue two-form, proved regular on the resolved model.",
+    "period": "The original compact real sphere, retained unchanged by the boundary modifications.",
+    "module": "H^0 f_+ O_Y with the actual top-degree relative de Rham seed; no parameter-dependent gauge.",
+    "convention": "Decreasing V^alpha; the positive level contains the seed and vanishes on the point quotient.",
+    "critical_loci": "No isolated-critical-point or semisimplicity hypothesis is used."
+  },
+  "derived_argument": "The proper filtered direct image places the volume seed at a positive V-level. A nonzero constant period gives an unlocalized cyclic Fourier quotient to O_tau, hence an inverse-Fourier quotient to delta_0 carrying the seed to its generator. Strict V-filtrations force this image to vanish, a contradiction.",
+  "assurance": {
+    "primary_statement_and_proof_internal_read": true,
+    "internal_adversarial_review": true,
+    "external_review": false,
+    "formal_verification": false
+  },
+  "scope_limit": "This source supplies the stated V-filtration facts. Boundary resolution, seed extension and the eleven-parameter polynomial certificate are proved separately in the canonical source."
+}

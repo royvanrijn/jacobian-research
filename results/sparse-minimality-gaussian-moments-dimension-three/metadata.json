@@ -4,31 +4,37 @@
     "name": "Roy van Rijn",
     "orcid": "0009-0000-2808-0645"
   },
-  "summary": "An exact classification excludes counterexamples with both degree at most four and at most four monomials in a Gaussian Witt frame.",
-  "status": "published-preprint",
-  "publication_date": "2026-07-24",
-  "doi": "10.5281/zenodo.21534917",
-  "zenodo": "https://zenodo.org/records/21534917",
-  "license": "CC-BY-4.0",
-  "pdf": "sparse-minimality-gaussian-moments-dimension-three.pdf",
+  "summary": "No Gaussian-moment counterexample has both total degree at most four and at most four nonzero monomials in a fixed Gaussian Witt frame; the three surviving coefficient families satisfy the all-order mixed conclusion.",
+  "published": false,
+  "status": "revision",
+  "revised_on": "2026-11-17",
   "source": "main.tex",
+  "pdf": "sparse-minimality-gaussian-moments-dimension-three.pdf",
+  "build": "latexmk -pdf -interaction=nonstopmode -halt-on-error -jobname=sparse-minimality-gaussian-moments-dimension-three main.tex",
+  "published_edition": "published/",
+  "license": "CC-BY-4.0",
   "verification": {
-    "scope": "Exhaustive exact computation of 59,535 supports, followed by all-order arguments for the surviving families.",
-    "limits": "Only degree at most four AND at most four monomials in a Gaussian Witt frame are excluded. This does not rule out denser cubics or higher-degree four-term examples.",
+    "scope": "Fresh exact rational replay of 59,535 supports, source-aware review of coverage and the three all-order families, fresh standalone source build and visual PDF inspection.",
+    "limits": "Degree <=4 and support <=4 are simultaneous bounds in Gaussian Witt coordinates. Does not establish global degree/Pareto minimality. Independent mathematical review and separate-implementation replay have not occurred. Isolated internal AI PDF reading is recorded separately.",
     "evidence": [
-      "../../research/foundations/scripts/verify_three_real_gmc_sparse_pareto.py",
+      "verification.json",
+      "supplement/verify_three_real_gmc_sparse_pareto.py",
+      "supplement/sparse_supports.py",
       "../../research/foundations/extended-geometry/THREE_REAL_GMC_MINIMAL_FAILURES.md"
     ]
   },
-  "publication_record_checked": "2026-11-17",
-  "abstract": "This preprint studies minimal counterexamples to the Gaussian Moments Conjecture in three real variables, the first dimension in which the conjecture fails.\nChristopher Long recently constructed a counterexample of total degree four with five monomials. We prove, by an exhaustive exact computer-assisted classification, that no counterexample exists with both total degree at most four and support size at most four in Gaussian Witt coordinates. Consequently, Long’s five-term quartic is Pareto-minimal with respect to degree and support size.\nThe calculation enumerates all 59,535 relevant supports, constructs saturated moment ideals over (\\mathbb{Q}), and reduces the surviving cases to three explicit families. These families are then shown to satisfy the conjectural mixed-moment conclusion at all orders.\nThe result does not exclude denser cubic counterexamples or four-term counterexamples of degree greater than four. Verification scripts are supplied for reproducibility.",
+  "verification_record": "verification.json",
+  "next_steps": [
+    "Obtain external review of the finite coefficient-torus coverage and all-order family arguments."
+  ],
+  "abstract": "We prove that a polynomial in three real Gaussian variables with total degree at most four and at most four nonzero monomials in a fixed Gaussian Witt frame satisfies the mixed-moment conclusion whenever all its positive pure moments vanish. The proof combines an exhaustive exact calculation over 59,535 supports with all-order arguments for three surviving coefficient families: isotropic linear forms, polynomial Gaussian shears, and orthogonal products with an isotropic factor. Moment ideals through order twenty-four exclude every other active support. Together with Long\u2019s five-term quartic counterexample, the result shows that five Witt-coordinate monomials are necessary and sufficient for a failure of degree at most four. The degree bound and the chosen notion of support are essential restrictions of the result.",
   "abstract_format": "text",
+  "abstract_source": "main.tex",
   "keywords": [
     "Gaussian Moments Conjecture",
-    "Mathieu subspaces",
     "Gaussian integration",
     "sparse polynomials",
-    "Gröbner bases",
+    "Groebner bases",
     "polynomial moments"
   ],
   "resource_type": {
@@ -37,8 +43,13 @@
     "subtype": "preprint"
   },
   "source_bundle": "source.zip",
-  "source_bundle_members": {
-    "main.tex": "arxiv-upload/main.tex",
-    "main.bbl": "arxiv-upload/main.bbl"
+  "sha256": {
+    "main.tex": "701e1a7928af9d0fd0978e165a1ba236473398cb9b9ff022409336c8930f1ba1",
+    "main.bbl": "6dd0d94feded658c9fc7c154e6273380fbab9017fd9339010b3cb9e872294e0f",
+    "references.bib": "5c00a0cab058c20ea90623cd1df4da1d7cebbc57f8e185060d3bedcf1900762c",
+    "sparse-minimality-gaussian-moments-dimension-three.pdf": "69f7ce569db42a455257e970dba8f6fb213936ea95a1d7a2a1bcec78cb0dfad4",
+    "supplement/verify_three_real_gmc_sparse_pareto.py": "5733030a5bee28d0a56d248468f9fbcebe5f76f8844cf0ba2adfc2895097aa9f",
+    "supplement/sparse_supports.py": "d573772c0d771a7ffab701a73fa1b0c0c118a36c1b86d2a6e880dc0db114d224",
+    "source.zip": "11c02a8354c5390f63d8ced90689b2fdd7331e8a65c17186d9c8afb97832a617"
   }
 }

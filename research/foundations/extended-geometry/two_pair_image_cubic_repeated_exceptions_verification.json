@@ -1,0 +1,321 @@
+{
+  "format": "two-pair-image-cubic-repeated-exceptions-v1",
+  "family": "p=y*(t-r)^2+G(x,t), deg G<=3; normalized t^3 coefficient in G is zero",
+  "normalization": "Orthogonal null rotation kills the t^3 coefficient; it changes by -2*k and preserves the repeated profile.",
+  "scope": "Only r=0 and roots of P2*P3*P4; does not establish the generic-r branch or the full sixteen-parameter theorem.",
+  "claim": "Spherical moments 1..12 vanish iff normalized G=0 for r=0 and every root of the three pivot polynomials.",
+  "pivot_coefficients": [
+    "2*P2/15",
+    "2*P3/105",
+    "8*P4/15015"
+  ],
+  "all_pivot_exception_polynomials_pairwise_coprime": true,
+  "branches": [
+    {
+      "pivot_branch": "r=0",
+      "minimal_polynomial": "r",
+      "number_field_degree": 1,
+      "prime": 1000003,
+      "minimal_polynomial_irreducible_over_QQ_and_mod_prime": true,
+      "coefficient_denominator_units_verified": 342,
+      "eliminations": [
+        {
+          "moment": 1,
+          "variable": "B0",
+          "pivot": "((1))",
+          "solution": "((-1/3))*B2"
+        },
+        {
+          "moment": 2,
+          "variable": "A0",
+          "pivot": "((2/15))",
+          "solution": "((-5/2))*B1^2+((-2/3))*B2^2+((-3/7))*A2"
+        },
+        {
+          "moment": 3,
+          "variable": "D0",
+          "pivot": "((2/105))",
+          "solution": "((-9))*B1^2*B2+((-9))*B1*A1+((4/9))*B2^3+((-8/7))*B2*A2"
+        },
+        {
+          "moment": 4,
+          "variable": "E",
+          "pivot": "((8/3003))",
+          "solution": "((1573/10))*B1^4+((182/15))*B1^2*B2^2+((-507/35))*B1^2*A2+((-26))*B1*B2*A1+((-13))*B1*D1+((-208/135))*B2^4+((52/105))*B2^2*A2+((-13/2))*A1^2+((-136/245))*A2^2"
+        }
+      ],
+      "active_variables": [
+        "B1",
+        "B2",
+        "A1",
+        "A2",
+        "D1"
+      ],
+      "positive_weights": [
+        1,
+        1,
+        2,
+        2,
+        3
+      ],
+      "moment_orders": [
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12
+      ],
+      "finite_field_moment_input_sha256": "701f793c4a93a08c9e2a7e3b1a2cdf21a79a697cba5a785174e3733b602efd14",
+      "singular_input_sha256": "96e76122e2c8c9fb90d6bb7d4acdcd806be46674628ec1aa8600a89c52b3c42f",
+      "finite_field_certificate": {
+        "basis_size": 219,
+        "quotient_dimension": 797,
+        "maximum_standard_weight": 16
+      },
+      "pure_powers_with_verified_zero_normal_form": {
+        "B1": 17,
+        "B2": 17,
+        "A1": 9,
+        "A2": 9,
+        "D1": 6
+      },
+      "conclusion": "All active parameters vanish in characteristic zero by weighted projective specialization; all eliminated coefficients then vanish."
+    },
+    {
+      "pivot_branch": "P2=0",
+      "minimal_polynomial": "5*r**2 + 1",
+      "number_field_degree": 2,
+      "prime": 1013,
+      "minimal_polynomial_irreducible_over_QQ_and_mod_prime": true,
+      "coefficient_denominator_units_verified": 794,
+      "eliminations": [
+        {
+          "moment": 1,
+          "variable": "B0",
+          "pivot": "((1))",
+          "solution": "((-1/3))*B2"
+        },
+        {
+          "moment": 2,
+          "variable": "A1",
+          "pivot": "((-4/15)*r)",
+          "solution": "((-25/4)*r)*B1^2+((-5/3)*r)*B2^2+((-4/7)*r)*A2"
+        },
+        {
+          "moment": 3,
+          "variable": "D0",
+          "pivot": "((-88/2625))",
+          "solution": "((-375/22)*r)*B1^3+((225/44))*B1^2*B2+((-50/11)*r)*B1*B2^2+((-525/22)*r)*B1*A0+((-165/14)*r)*B1*A2+((-25/99))*B2^3+((30/11))*B2*A0+((50/77))*B2*A2+((-10/11)*r)*D1"
+        },
+        {
+          "moment": 4,
+          "variable": "E",
+          "pivot": "((-2944/625625))",
+          "solution": "((-13000/69))*B1^4+((-430625/1518)*r)*B1^3*B2+((-398125/18216))*B1^2*B2^2+((-64675/552))*B1^2*A0+((-251875/3864))*B1^2*A2+((-230750/6831)*r)*B1*B2^3+((-121875/1012)*r)*B1*B2*A0+((-7475/84)*r)*B1*B2*A2+((-1365/92))*B1*D1+((-25675/40986))*B2^4+((-47125/4554))*B2^2*A0+((-18395/10626))*B2^2*A2+((-5525/759)*r)*B2*D1+((-7865/552))*A0^2+((-25285/1932))*A0*A2+((-99101/27048))*A2^2"
+        }
+      ],
+      "active_variables": [
+        "B1",
+        "B2",
+        "A0",
+        "A2",
+        "D1"
+      ],
+      "positive_weights": [
+        1,
+        1,
+        2,
+        2,
+        3
+      ],
+      "moment_orders": [
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12
+      ],
+      "finite_field_moment_input_sha256": "2073b9d94ca2c0c7ef367b17497294d58940203f7f312710cdc6a167117d911e",
+      "singular_input_sha256": "44f988e3f0baf10c37f35dc445e3cf17662cee5b2c4dc6ab23a603138722a18a",
+      "finite_field_certificate": {
+        "basis_size": 244,
+        "quotient_dimension": 797,
+        "maximum_standard_weight": 16
+      },
+      "pure_powers_with_verified_zero_normal_form": {
+        "B1": 17,
+        "B2": 17,
+        "A0": 9,
+        "A2": 9,
+        "D1": 6
+      },
+      "conclusion": "All active parameters vanish in characteristic zero by weighted projective specialization; all eliminated coefficients then vanish."
+    },
+    {
+      "pivot_branch": "P3=0",
+      "minimal_polynomial": "21*r**4 + 18*r**2 + 1",
+      "number_field_degree": 4,
+      "prime": 10007,
+      "minimal_polynomial_irreducible_over_QQ_and_mod_prime": true,
+      "coefficient_denominator_units_verified": 1111,
+      "eliminations": [
+        {
+          "moment": 1,
+          "variable": "B0",
+          "pivot": "((1))",
+          "solution": "((-1/3))*B2"
+        },
+        {
+          "moment": 2,
+          "variable": "A0",
+          "pivot": "((2/3)*r^2+(2/15))",
+          "solution": "((-525/88)*r^2+(-345/88))*B1^2+((-35/22)*r^2+(-23/22))*B2^2+((105/22)*r^3+(69/22)*r)*A1+((-6/11)*r^2+(-43/77))*A2"
+        },
+        {
+          "moment": 3,
+          "variable": "D1",
+          "pivot": "((-8/35)*r^3+(-8/105)*r)",
+          "solution": "((37485/704)*r^2+(34335/704))*B1^3+((-12159/352)*r^3+(-7713/352)*r)*B1^2*B2+((2499/176)*r^2+(2289/176))*B1*B2^2+((-8253/88)*r^3+(-7179/88)*r)*B1*A1+((-63/44)*r^2+(51/44))*B1*A2+((2989/264)*r^3+(2611/264)*r)*B2^3+((-63/44)*r^2+(51/44))*B2*A1+((-51/22)*r^3+(-327/154)*r)*B2*A2"
+        },
+        {
+          "moment": 4,
+          "variable": "E",
+          "pivot": "((-3712/56595)*r^2+(-13568/2207205))",
+          "solution": "((-2016192087/6157184)*r^2+(-361525671/1539296))*B1^4+((-1559553723/3078592)*r^3+(-1141717941/3078592)*r)*B1^3*B2+((-70736211/1539296)*r^2+(-54466971/1539296))*B1^2*B2^2+((225625491/769648)*r^3+(161230329/769648)*r)*B1^2*A1+((-8023509/384824)*r^2+(-8275137/2693768))*B1^2*A2+((-46005141/769648)*r^3+(-31862779/769648)*r)*B1*B2^3+((267813/384824)*r^2+(6521931/384824))*B1*B2*A1+((-25868115/192412)*r^3+(-19371417/192412)*r)*B1*B2*A2+((-2441439/17492)*r^3+(-2107677/17492)*r)*B1*D0+((444717/192412)*r^2+(5749055/3463416))*B2^4+((11241321/96206)*r^3+(8943909/96206)*r)*B2^2*A1+((-100581/48103)*r^2+(-278889/336721))*B2^2*A2+((-4095/8746)*r^2+(31707/8746))*B2*D0+((282555/8746)*r^2+(199875/8746))*A1^2+((1255566/48103)*r^3+(5726955/336721)*r)*A1*A2+((-67548/48103)*r^2+(-183640/336721))*A2^2"
+        }
+      ],
+      "active_variables": [
+        "B1",
+        "B2",
+        "A1",
+        "A2",
+        "D0"
+      ],
+      "positive_weights": [
+        1,
+        1,
+        2,
+        2,
+        3
+      ],
+      "moment_orders": [
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12
+      ],
+      "finite_field_moment_input_sha256": "2155f65284ef20fc04d5d8a363c1a6b44b6f5431c949958634a992998100ed54",
+      "singular_input_sha256": "426f2cbc7e9d11f2f73902da47d7028b76b481c7a1e5841023bb57c388c07658",
+      "finite_field_certificate": {
+        "basis_size": 244,
+        "quotient_dimension": 797,
+        "maximum_standard_weight": 16
+      },
+      "pure_powers_with_verified_zero_normal_form": {
+        "B1": 17,
+        "B2": 17,
+        "A1": 9,
+        "A2": 9,
+        "D0": 6
+      },
+      "conclusion": "All active parameters vanish in characteristic zero by weighted projective specialization; all eliminated coefficients then vanish."
+    },
+    {
+      "pivot_branch": "P4=0",
+      "minimal_polynomial": "429*r**6 + 715*r**4 + 195*r**2 + 5",
+      "number_field_degree": 6,
+      "prime": 1031,
+      "minimal_polynomial_irreducible_over_QQ_and_mod_prime": true,
+      "coefficient_denominator_units_verified": 2556,
+      "eliminations": [
+        {
+          "moment": 1,
+          "variable": "B0",
+          "pivot": "((1))",
+          "solution": "((-1/3))*B2"
+        },
+        {
+          "moment": 2,
+          "variable": "A0",
+          "pivot": "((2/3)*r^2+(2/15))",
+          "solution": "((-17875/736)*r^4+(-39325/1104)*r^2+(-8645/2208))*B1^2+((-3575/552)*r^4+(-7865/828)*r^2+(-1729/1656))*B2^2+((3575/184)*r^5+(7865/276)*r^3+(1729/552)*r)*A1+((-715/322)*r^4+(-1573/483)*r^2+(-77/138))*A2"
+        },
+        {
+          "moment": 3,
+          "variable": "D0",
+          "pivot": "((2/5)*r^4+(12/35)*r^2+(2/105))",
+          "solution": "((-642777135/1609264)*r^5+(-1177090915/1609264)*r^3+(-425374495/1609264)*r)*B1^3+((-160890873/1609264)*r^4+(-234096577/1609264)*r^2+(-3621137/201158))*B1^2*B2+((-42851809/402316)*r^5+(-235418183/1206948)*r^3+(-85074899/1206948)*r)*B1*B2^2+((6164301/1609264)*r^4+(-11239085/804632)*r^2+(-36511891/1609264))*B1*A1+((3022734/100579)*r^5+(3805802/100579)*r^3+(-214045/100579)*r)*B1*A2+((-2790359/402316)*r^4+(-9372077/1206948)*r^2+(1565746/905211))*B2^3+((3022734/100579)*r^5+(3805802/100579)*r^3+(-214045/100579)*r)*B2*A1+((-11603163/1408106)*r^4+(-8927347/704053)*r^2+(-2805699/1408106))*B2*A2+((348777/17492)*r^5+(145860/4373)*r^3+(143663/17492)*r)*D1"
+        }
+      ],
+      "active_variables": [
+        "B1",
+        "B2",
+        "A1",
+        "A2",
+        "D1",
+        "E"
+      ],
+      "positive_weights": [
+        1,
+        1,
+        2,
+        2,
+        3,
+        4
+      ],
+      "moment_orders": [
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12
+      ],
+      "finite_field_moment_input_sha256": "82bc1efdcc308cc16a2ed99bafbcb2b2efa9cbdf1eefc2ad935ac3fa66b2d468",
+      "singular_input_sha256": "0a06a3be989c38dbae6ee6466bb841e775be9e3e1a35753452a107595739a324",
+      "finite_field_certificate": {
+        "basis_size": 294,
+        "quotient_dimension": 797,
+        "maximum_standard_weight": 16
+      },
+      "pure_powers_with_verified_zero_normal_form": {
+        "B1": 17,
+        "B2": 17,
+        "A1": 9,
+        "A2": 9,
+        "D1": 6,
+        "E": 5
+      },
+      "conclusion": "All active parameters vanish in characteristic zero by weighted projective specialization; all eliminated coefficients then vanish."
+    }
+  ],
+  "proof_source": "foundations/extended-geometry/TWO_PAIR_IMAGE_CUBIC_STRATIFICATION.md",
+  "specialization_argument": "Positive weighted homogeneous nonzero algebraic solutions specialize to nonzero residue-field solutions after valuation normalization; the verified finite-dimensional graded residue quotient forbids such points.",
+  "properness_reference": "https://stacks.math.columbia.edu/tag/01WC",
+  "software": {
+    "python": "3.12.3",
+    "sympy": "1.14.0",
+    "Singular": "Singular for x86_64-Linux version 4.3.2 (4330, 64 bit) Apr  1 2024 04:44:00"
+  },
+  "checker_sha256": "99c947b5ee3c7c22965b476be03c825cdfbcf8b63d0cb618801e197574612f61",
+  "assurance": {
+    "internal_exact_replay": true,
+    "independent_replay": false,
+    "formal_verification": false,
+    "external_review": false
+  },
+  "negative_control": "For nonzero r, p=y*(t-r)^2+x*t has moment2=-4*r/15 !=0; at r=0, p=y*t^2+x has moment2=2/15 !=0."
+}

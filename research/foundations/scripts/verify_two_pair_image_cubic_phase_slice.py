@@ -6,7 +6,9 @@ in C[x,y,t]/(t**2+2*x*y-1). This is seven dimensional, not all V_3.
 Moment monomials satisfy L(x**i*y**j)=delta(i,j)*i!/(2*i+1)!!.
 The symbolic equations, together with the stated branch split, prove that
 moments 1..6 vanish iff the displayed p has strictly one-sided phase support.
-No finite sampling or numerical arithmetic is used. Requires sympy==1.14.0.
+No finite sampling or numerical arithmetic is used. Also verifies the six-parameter profile family y*C(t)+x*A(t),
+deg C,A<=2, by a complete degree stratification of five exact univariate
+moment equations. Requires sympy==1.14.0.
 """
 from __future__ import annotations
 
@@ -20,6 +22,82 @@ import sympy as s
 
 ROOT = Path(__file__).resolve().parents[3]
 OUTPUT = ROOT / "research/foundations/extended-geometry/two_pair_image_cubic_phase_slice_verification.json"
+
+
+def verify_opposite_profiles() -> dict:
+    """Classify y*C(t)+x*A(t), deg C,A<=2, by exact QQ ideals.
+
+    Put h=(1-t**2)*C(t)*A(t). Then L(p**(2r)) is the nonzero
+    factor binomial(2r,r)/2**r times the uniform moment I(h**r).
+    A degree-four polynomial is the most general product C*A over C.
+    The following five equations have only the zero coefficient solution.
+    """
+    kk = s.symbols("k0:5")
+    moments = []
+    for order in range(1, 6):
+        terms = []
+        # Enumerate all monomials in K(t)**order exactly once.
+        for n0 in range(order+1):
+            for n1 in range(order-n0+1):
+                for n2 in range(order-n0-n1+1):
+                    for n3 in range(order-n0-n1-n2+1):
+                        ns = (n0,n1,n2,n3,order-n0-n1-n2-n3)
+                        degree = sum(j*ns[j] for j in range(5))
+                        if degree % 2:
+                            continue
+                        # I(t**degree*(1-t**2)**order), times multinomial.
+                        coefficient = s.Rational(
+                            2**order*factorial(order)**2*s.factorial2(degree-1),
+                            s.factorial2(2*order+degree+1)
+                        )
+                        for count in ns:
+                            coefficient /= factorial(count)
+                        terms.append(coefficient*s.prod(kk[j]**ns[j] for j in range(5)))
+        moments.append(s.Add(*terms))
+    assert s.expand(moments[0]-(2*kk[0]/3+2*kk[2]/15+2*kk[4]/35)) == 0
+    eliminate_k0 = -kk[2]/5-3*kk[4]/35
+    branches = []
+    for leading in range(4,0,-1):
+        # Nonzero K may be scaled so its highest nonzero coefficient is one.
+        normalization = {kk[j]:(1 if j==leading else 0) for j in range(leading,5)}
+        variables = kk[1:leading]
+        equations = []
+        for moment in moments[1:leading+1]:
+            equation = s.factor(moment.subs(kk[0],eliminate_k0).subs(normalization))
+            equations.append(s.fraction(equation)[0])
+        if variables:
+            basis = s.groebner(equations,*variables,domain=s.QQ,order="grevlex")
+            assert [poly.as_expr() for poly in basis.polys] == [1]
+        else:
+            assert equations[0] != 0 and equations[0].is_Rational
+        branches.append({
+            "highest_nonzero_coefficient":leading,
+            "normalization":f"k{leading}=1; all higher coefficients zero",
+            "equations_after_M1":[str(value) for value in equations],
+            "groebner_order":"grevlex over QQ",
+            "reduced_groebner_basis":["1"],
+        })
+    # Highest degree zero: M1=2*k0/3 already forces k0=0.
+    assert moments[0].subs({kk[j]:0 for j in range(1,5)}) == 2*kk[0]/3
+    # Relevant negative control: omitting the fifth equation leaves a proper
+    # ideal in the k4=1 chart, so four univariate moments do not suffice.
+    top = {kk[4]:1}
+    prefix = [s.fraction(s.factor(value.subs(kk[0],eliminate_k0).subs(top)))[0]
+              for value in moments[1:4]]
+    prefix_basis = s.groebner(prefix,*kk[1:4],domain=s.QQ,order="grevlex")
+    assert [poly.as_expr() for poly in prefix_basis.polys] != [1]
+    return {
+        "family":"p=y*C(t)+x*A(t), deg C,deg A<=2",
+        "parameter_dimension":6,
+        "conclusion":"Sphere moments 1..10 vanish iff C*A=0, hence p has one-sided phase support (including zero)",
+        "univariate_reduction":"h=(1-t^2)*K(t), K=C*A of degree at most4; L(p^(2r))=binomial(2r,r)*I(h^r)/2^r; odd moments vanish",
+        "uniform_moments":[str(value) for value in moments],
+        "M1_elimination":"k0=-k2/5-3*k4/35",
+        "highest_coefficient_branches":branches,
+        "degree_zero_branch":"M1=2*k0/3 forces k0=0",
+        "negative_control":"First four uniform moment equations generate a proper ideal in the k4=1 chart; fifth equation is needed",
+        "scope":"Six-parameter opposite-profile slice only; does not cover all13 affine sphere parameters or all16 cubic parameters",
+    }
 
 
 def main() -> None:
@@ -96,7 +174,7 @@ def main() -> None:
     assert sharp_moments == [0,0,0,0,0,-s.Rational(32,34125)]
 
     receipt = {
-        "format":"two-pair-image-cubic-phase-slice-v1",
+        "format":"two-pair-image-cubic-phase-slice-v2",
         "arithmetic":"exact symbolic rational polynomial identities",
         "software":{"python":platform.python_version(),"sympy":s.__version__},
         "proof_source":"foundations/extended-geometry/TWO_PAIR_IMAGE_CUBIC_STRATIFICATION.md",
@@ -132,12 +210,14 @@ def main() -> None:
             "moments_1_through_6":[str(value) for value in sharp_moments],
         },
         "negative_control":"perturbing Bezout_A by +1 does not satisfy the recorded identity",
+        "opposite_profiles":verify_opposite_profiles(),
         "assurance":{"internal_exact_replay":True,"independent_replay":False,"formal_verification":False,"external_review":False},
         "limits":"Does not cover the full 16-parameter cubic family or certify a general degree-three classification.",
     }
     OUTPUT.write_text(json.dumps(receipt,indent=2)+"\n")
     print("PASS: seven-parameter phase slice, exact six-moment identities, both branches and Bezout certificate")
     print("PASS: five-moment sharpness control; altered Bezout certificate rejected")
+    print("PASS: six-parameter opposite profiles, complete highest-coefficient stratification of five QQ moment ideals")
     print(f"Wrote {OUTPUT.relative_to(ROOT)}")
 
 

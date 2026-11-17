@@ -12,6 +12,8 @@ For a first reading, follow Sections 1–7 and 12. Sections 8–11 contain the f
 
 From this directory, run `../../.venv/bin/python verify.py --build` to replay the selected exact algebra, compile every local TeX input, and compare every rendered PDF page. See [BUILD.txt](BUILD.txt) for dependencies and the explicit refresh command after source edits. These checks do not certify the general analytic proof. Independent mathematical review and publication remain pending.
 
-The [two-variable revision](../gaussian-moments-two-variables-revision/) supplies a separate elementary proof with a sharp binary cutoff. The [marker-reduction paper](../gaussian-constant-fibre-base-marker-certificates/) combines finite base-marker reduction with its exact specialization obstruction. The [one-base constant-fibre paper](../gaussian-quadratic-fibre-jordan-cancellation/) treats arbitrary Jordan blocks. These all-degree extensions are separate from the dimension-degree proof.
+The [two-variable revision](../../results/gaussian-moments-two-variables/) supplies a separate elementary proof with a sharp binary cutoff. The [marker-reduction paper](../gaussian-constant-fibre-base-marker-certificates/) combines finite base-marker reduction with its exact specialization obstruction. The [one-base constant-fibre paper](../gaussian-quadratic-fibre-jordan-cancellation/) treats arbitrary Jordan blocks. These all-degree extensions are separate from the dimension-degree proof.
 
-Next: Review the complete qualitative cubic proof and its cited analytic inputs. Resolve review findings, freeze a submission bundle and deposit.
+The 17 November review corrections make the glued chain complex and degree-one comparison explicit, isolate the exclusion of finite-target contributions from spatial infinity, display the total/irregular/regular rank ledger, and specify the relative pairs used for the flat cut basis. The cubic table refers to nine geometric types.
+
+Next: Specialist review of these comparisons and the complete qualitative cubic classification. These exposition repairs and the finite algebra checks do not independently certify the global analytic proof.

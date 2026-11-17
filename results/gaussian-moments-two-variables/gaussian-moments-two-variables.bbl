@@ -1,0 +1,54 @@
+\begin{thebibliography}{1}
+
+\bibitem{DVZ}
+Harm Derksen, Arno van~den Essen, and Wenhua Zhao.
+\newblock The {Gaussian Moments Conjecture} and the {Jacobian Conjecture}.
+\newblock {\em Israel Journal of Mathematics}, 219(2):917--928, 2017.
+\newblock \href{https://doi.org/10.1007/s11856-017-1502-2}{DOI}.
+
+\bibitem{DK}
+J.~J. Duistermaat and W.~van~der Kallen.
+\newblock Constant terms in powers of a laurent polynomial.
+\newblock {\em Indagationes Mathematicae}, 9(2):221--231, 1998.
+\newblock \href{https://doi.org/10.1016/S0019-3577(98)80020-7}{DOI}.
+
+\bibitem{LongTorus}
+Christopher~D. Long.
+\newblock A factorially weighted constant-term theorem on algebraic tori and
+  the gaussian moments conjecture in dimension two.
+\newblock
+  \href{https://github.com/octonion/mathematics/blob/2f1ba8ae5d3d282141aca2285326a2d31ce20cd2/gmc/gmc2_stronger_arbitrary_torus.tex}{GitHub
+  manuscript}, 2026.
+\newblock Dated 22 July 2026; public repository announcement
+  \href{https://github.com/octonion/mathematics/commit/2f1ba8ae5d3d282141aca2285326a2d31ce20cd2}{23
+  July 2026}.
+
+\bibitem{Long}
+Christopher~D. Long.
+\newblock Small counterexamples to the {Gaussian Moments Conjecture}, 2026.
+\newblock \href{https://arxiv.org/abs/2607.18186}{arXiv:2607.18186}.
+
+\bibitem{StacksProject}
+{The Stacks Project Authors}.
+\newblock The {Stacks} project.
+\newblock \url{https://stacks.math.columbia.edu}, 2026.
+\newblock Proposition 10.35.19, Tag
+  \href{https://stacks.math.columbia.edu/tag/00GB}{00GB}; Lemma 10.35.20, Tag
+  \href{https://stacks.math.columbia.edu/tag/00GC}{00GC}.
+
+\bibitem{FormalGMC2}
+Roy van Rijn.
+\newblock Formal supplement: Two-variable gaussian moments.
+\newblock
+  \href{https://github.com/royvanrijn/jacobian-research/tree/c32b9b4d273cf7988e85184a0d5eae9c488727fd/research/foundations/formal/gmc2}{Versioned
+  source and build guide}, 2026.
+\newblock Repository revision \texttt{c32b9b4d273c}; Lean and Mathlib versions
+  pinned in the supplement.
+
+\bibitem{Wilson}
+Michael Wilson.
+\newblock A face-isolation proof of the two-variable gaussian moments
+  conjecture, 2026.
+\newblock \href{https://arxiv.org/abs/2607.23887v1}{arXiv:2607.23887v1}.
+
+\end{thebibliography}

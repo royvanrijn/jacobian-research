@@ -1,0 +1,287 @@
+{
+  "status": "pass",
+  "canonical_proof": "gap_three_hurwitz_structure.tex",
+  "command": "python research/factorial/image-rigidity/gap_three_hurwitz_structure.py",
+  "python": "3.12.3",
+  "sympy": "1.14.0",
+  "uniform_physical_auxiliary_Riordan_EGF_proved": true,
+  "uniform_Riordan_inverse_proved": true,
+  "fixed_gamma_finite_positive_production_factorization_proved": true,
+  "exact_cyclic_Plucker_Wronskian_transfer_proved": true,
+  "exact_sine_weight_Wronskian_transfer_proved": true,
+  "fixed_gamma_array_TN_scope": "leading rows and columns0..N whenever gamma+d-1>=N",
+  "TN_auxiliary_block_alone_transfers_to_Wronskian_H3_refuted": true,
+  "off_family_Wronskian_negative_H3_minor": -60115263786123,
+  "uniform_negative_auxiliary_array_minors_proved": true,
+  "negative_minor_scope": "every integer d>=1, beta=1, every even m>=d: det R[1..m,0..m-1]=-m!/d",
+  "actual_gap_three_production_TN_refuted": true,
+  "H3_Wronskian_TN_refuted": false,
+  "all_index_gap_three_SFC_closed": false,
+  "unrestricted_binomial_SFC_closed": false,
+  "bounded_replay_profiles": [
+    {
+      "d": 1,
+      "beta": 1,
+      "rows": [
+        1,
+        2
+      ],
+      "columns": [
+        0,
+        1
+      ],
+      "minor": "-2",
+      "uniform_formula": "-m!/d for every even m>=d"
+    },
+    {
+      "d": 1,
+      "beta": 1,
+      "rows": [
+        1,
+        4
+      ],
+      "columns": [
+        0,
+        3
+      ],
+      "minor": "-24",
+      "uniform_formula": "-m!/d for every even m>=d"
+    },
+    {
+      "d": 2,
+      "beta": 1,
+      "rows": [
+        1,
+        2
+      ],
+      "columns": [
+        0,
+        1
+      ],
+      "minor": "-1",
+      "uniform_formula": "-m!/d for every even m>=d"
+    },
+    {
+      "d": 2,
+      "beta": 1,
+      "rows": [
+        1,
+        4
+      ],
+      "columns": [
+        0,
+        3
+      ],
+      "minor": "-12",
+      "uniform_formula": "-m!/d for every even m>=d"
+    },
+    {
+      "d": 3,
+      "beta": 1,
+      "rows": [
+        1,
+        4
+      ],
+      "columns": [
+        0,
+        3
+      ],
+      "minor": "-8",
+      "uniform_formula": "-m!/d for every even m>=d"
+    },
+    {
+      "d": 3,
+      "beta": 1,
+      "rows": [
+        1,
+        6
+      ],
+      "columns": [
+        0,
+        5
+      ],
+      "minor": "-240",
+      "uniform_formula": "-m!/d for every even m>=d"
+    },
+    {
+      "d": 4,
+      "beta": 1,
+      "rows": [
+        1,
+        4
+      ],
+      "columns": [
+        0,
+        3
+      ],
+      "minor": "-6",
+      "uniform_formula": "-m!/d for every even m>=d"
+    },
+    {
+      "d": 4,
+      "beta": 1,
+      "rows": [
+        1,
+        6
+      ],
+      "columns": [
+        0,
+        5
+      ],
+      "minor": "-180",
+      "uniform_formula": "-m!/d for every even m>=d"
+    },
+    {
+      "d": 5,
+      "beta": 1,
+      "rows": [
+        1,
+        6
+      ],
+      "columns": [
+        0,
+        5
+      ],
+      "minor": "-144",
+      "uniform_formula": "-m!/d for every even m>=d"
+    },
+    {
+      "d": 5,
+      "beta": 1,
+      "rows": [
+        1,
+        8
+      ],
+      "columns": [
+        0,
+        7
+      ],
+      "minor": "-8064",
+      "uniform_formula": "-m!/d for every even m>=d"
+    },
+    {
+      "d": 6,
+      "beta": 1,
+      "rows": [
+        1,
+        6
+      ],
+      "columns": [
+        0,
+        5
+      ],
+      "minor": "-120",
+      "uniform_formula": "-m!/d for every even m>=d"
+    },
+    {
+      "d": 6,
+      "beta": 1,
+      "rows": [
+        1,
+        8
+      ],
+      "columns": [
+        0,
+        7
+      ],
+      "minor": "-6720",
+      "uniform_formula": "-m!/d for every even m>=d"
+    },
+    {
+      "d": 7,
+      "beta": 1,
+      "rows": [
+        1,
+        8
+      ],
+      "columns": [
+        0,
+        7
+      ],
+      "minor": "-5760",
+      "uniform_formula": "-m!/d for every even m>=d"
+    },
+    {
+      "d": 7,
+      "beta": 1,
+      "rows": [
+        1,
+        10
+      ],
+      "columns": [
+        0,
+        9
+      ],
+      "minor": "-518400",
+      "uniform_formula": "-m!/d for every even m>=d"
+    },
+    {
+      "d": 8,
+      "beta": 1,
+      "rows": [
+        1,
+        8
+      ],
+      "columns": [
+        0,
+        7
+      ],
+      "minor": "-5040",
+      "uniform_formula": "-m!/d for every even m>=d"
+    },
+    {
+      "d": 8,
+      "beta": 1,
+      "rows": [
+        1,
+        10
+      ],
+      "columns": [
+        0,
+        9
+      ],
+      "minor": "-453600",
+      "uniform_formula": "-m!/d for every even m>=d"
+    }
+  ],
+  "negative_gap_three_array_minor": -8,
+  "negative_gap_three_production_minor": -320,
+  "finite_extrapolation": false,
+  "independent_replay": false,
+  "formal_verification": false,
+  "external_review": false,
+  "novelty_claim": false,
+  "total": 86,
+  "counts": {
+    "symbolic_shape_Riordan_inverse_replayed": 5,
+    "formal_reversion_input": 5,
+    "production_A_identity": 5,
+    "inverse_prefactor_elementary_identity": 5,
+    "fixed_gamma_production_factorization_identity": 5,
+    "fixed_gamma_Toeplitz_factor_is_geometric_power": 5,
+    "fixed_gamma_bidiagonal_nonnegative_on_required_range": 5,
+    "fixed_gamma_recursive_TN_factorization_identity": 1,
+    "actual_adjacent_auxiliary_raising_identity": 5,
+    "uniform_shape_cyclic_Plucker_transfer_identity": 5,
+    "uniform_shape_sine_weight_transfer_identity": 5,
+    "wrong_adjacent_row_transfer_rejected": 1,
+    "generic_divided_difference_cyclic_Plucker_identity": 1,
+    "generic_divided_difference_sine_weight_identity": 1,
+    "off_family_TN_bidiagonal_production": 1,
+    "off_family_bidiagonal_generates_array": 1,
+    "off_family_TN_auxiliary_does_not_transfer_to_W_H3": 1,
+    "symbolic_shape_production_formula_replayed": 4,
+    "physical_EGF_direct_reconstruction": 4,
+    "uniform_negative_minor_bounded_controls": 16,
+    "symbolic_shape_first_gap_three_negative_minor": 1,
+    "actual_gap_three_negative_array_minor": 1,
+    "actual_gap_three_negative_production_minor": 1,
+    "corrupted_negative_minor_control_rejected": 1,
+    "invalid_gap_rejected": 1
+  },
+  "files": {
+    "gap_three_hurwitz_structure.tex": "e5ec20197393aadfb65c369221dcb65234ce8b3dbb1482a53d3770f1b32ac365",
+    "gap_three_hurwitz_structure.py": "fbc0deb9c010333673c1889d0a18dc18f243a633ee4e6adfa1315c7dcab13618",
+    "higher_gap_adjoint_rank.py": "e4afd1bc97e6324cf77a84d470a60379d35dbb95c05e4f449dc1261198d2dbaf"
+  }
+}

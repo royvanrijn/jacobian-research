@@ -110,18 +110,45 @@ chain-current boundary rule are as in
 Hardt--Lambrechts--Turchin--Voli\'c~\cite[Sections~2.1 and~3,
 especially Theorem~3.5]{HLTV}.
 
+For precision, the pairs in this application are as follows. In the
+compactified $(x,s)$ space write $\overline K_i(R)$ for the closure of
+the constrained cut carrier, $G_i(R)=\overline K_i(R)\cap\{s=\infty\}$,
+and write $\overline K_i^{\rm full}(R)$ for the unconstrained closure.
+Let $E_i(R)$ be its spatial boundary at finite $s$, and put
+$G_i^{\rm full}=\overline K_i^{\rm full}\cap\{s=\infty\}$. The
+relative pairs and their inclusion are
+\[
+ (\overline K_i,G_i)\longrightarrow
+ (\overline K_i^{\rm full}\setminus E_i,
+       G_i^{\rm full}\setminus E_i).
+\]
+The constrained pair has no $E_i$, by \eqref{eq:uniformcarrier}.
+At $s=0$ a local vanishing cycle closes by its collapsing thimble;
+that endpoint is included in $K_i$, rather than declared a rapid
+boundary. In degree $n$, projection to $x$ takes these relative
+classes to the rapid-decay homology of $e^{S_t}$. The tame cut
+comparison above says that the images, summed over the cuts, contain
+the entire vanishing-homology decomposition. We use this image;
+we need not identify every relative group of an individual carrier
+with the full rapid-decay group.
+
+The compatible Hardt trivialization preserves both pairs, their
+inclusion, and hence the induced maps on their relative homology.
 Gradient transport already showed that the constrained inclusion
 contains every local vanishing generator. At one parameter choose
 finitely many integral relative chains whose images are a basis
 over $\C$ of the full rapid-decay space. A nonprimitive integral
-image causes no problem over $\C$. Transport these chains by
+image causes no problem over $\C$. Their number is the total tame Milnor rank, and their images are
+independent at this parameter by construction. Transport these chains by
 the compatible trivialization. They form a jointly semialgebraic
 family with fixed integer multiplicities and supports satisfying
 \eqref{eq:uniformcarrier}. Their images are a flat basis of the
 actual homology local system: on each compact parameter interval
 the transport preserves the relative pairs and is proper on
-every finite phase band. Thus this is a completeness statement
-for actual cycles, not an identification of presumed formal blocks.
+every finite phase band. The induced comparison maps commute with this transport, so the image
+basis remains independent and spanning. This establishes flatness and
+completeness before any mass estimate is made; a uniform bound for
+arbitrary representatives would not establish either property.
 
 Here is the needed uniform mass bound. In a fixed semialgebraic
 family of $d$-chains with bounded multiplicities, the mass inside

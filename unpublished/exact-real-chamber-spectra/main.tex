@@ -19,7 +19,7 @@
 
 \title{Exact Real Chamber Spectra of Explicit Keller Maps}
 \author{Roy van Rijn\\{\small Independent researcher}}
-\date{24 July 2026}
+\date{17 November 2026}
 \hypersetup{
   pdftitle={Exact Real Chamber Spectra of Explicit Keller Maps},
   pdfauthor={Roy van Rijn},
@@ -36,8 +36,9 @@ Migus classified the generic degrees of real polynomial Keller maps with
 non-dense Euclidean image: in every dimension at least three they are exactly
 the even integers at least four.  We refine the realization side inside one
 explicit weighted family.  For every \(N\geq3\) we give a rational Keller map
-\(F_N:\A^3\to\A^3\) of generic degree \(N\) whose complete regular real
-fibers have exactly
+\(F_N:\A^3\to\A^3\) of generic degree \(N\).  On the open target locus
+where the last coordinate is nonzero and the scalar inverse polynomial is
+squarefree, its real fibers have exactly
 \[
   N,N-2,N-4,\ldots,N\bmod 2
 \]
@@ -59,12 +60,12 @@ combines conjugation parity with Campbell's exclusion of generic degree two;
 his construction proves that every permitted degree occurs.
 
 The examples used here belong to the weighted-lift construction developed by
-Gallagher, who also gave the first explicit quartic member with an empty real
+Gallagher, who also gave an explicit quartic member with an empty real
 fiber chamber and a member of every generic degree \(N\geq3\)
 ~\cite{Gallagher}.  All-degree families also occur in the earlier base
 manuscript~\cite{Base}.  The point of this note is different: for one
 explicit rational member in every degree, we determine all real sheet
-numbers on the natural complete regular locus, give rational witnesses, and
+numbers on the open locus defined below, give rational witnesses, and
 exhibit the full parity chain by adjacent fold crossings.
 
 We first define the maps.  For \(N=2k+1\) and \(N=2k\), respectively, put
@@ -110,7 +111,7 @@ For a target \((A,B,C)\), put
 \begin{equation}
  E_{A,B,C}(W)=H_N(W)-BCW+AC^2. \label{eq:pencil}
 \end{equation}
-and define the complete regular locus
+and define the open locus of complete squarefree inverse fibers
 \begin{equation}
  \Omega_N=\{(A,B,C)\in\R^3:
  C\neq0,\ \Disc_W(E_{A,B,C})\neq0\}. \label{eq:omega}
@@ -181,9 +182,41 @@ then
 because \(5/12<D\leq2/3\) and
 \(Q\geq29/18>1+(7/12)^2\geq1+(1-D)^2\).
 
-The divisibilities forced by the endpoint identities cancel the displayed
-denominators in \eqref{eq:map}.  The standard weighted Jacobian calculation gives
-\(\det DF_N=1\).  For completeness, its essential identities are
+Here are the polynomial-divisibility and determinant calculations.
+Since \(p(0)=0\) and \(q(W)=Wp(W)-H_N(W)\) is divisible by \(W^2\),
+write \(p(W)=W\widetilde p(W)\) and
+\(q(W)=W^2\widetilde q(W)\).  The numerators defining \(B\) and \(A\)
+then become the polynomials
+\[
+ 1+u\widetilde p(W),\qquad u+u^2\widetilde q(W).
+\]
+At \(x=0\), one has \(u=W=1\),
+\(\widetilde p(1)=\widetilde q(1)=-1\); hence both vanish.
+Moreover \(\widetilde q'(1)=\kappa+2\), and the coefficient of \(x\)
+in the second numerator is
+\[
+ y\{-1+(1+a_0)(\kappa+2)\}=0.
+\]
+Thus the first numerator is divisible by \(x\) and the second by \(x^2\),
+which proves polynomiality over \(\Q\).
+
+On the dense open set \(x\gamma\neq0\), use the coordinate sequence
+\[
+ (x,y,z)\longmapsto(x,u,\gamma)\longmapsto(W,\gamma,C)
+ \longmapsto(t,s,C),
+ \qquad s=H_N'(W)+\gamma,\quad t=Ws-H_N(W).
+\]
+The three Jacobian determinants, in these orders, are
+\(x^3\), \(\gamma^2\), and \(\gamma\): the last follows from
+\[
+ \det\begin{pmatrix}WH_N''(W)+\gamma&W\\H_N''(W)&1\end{pmatrix}
+ =\gamma.
+\]
+On the target, \((A,B,C)\mapsto(AC^2,BC,C)=(t,s,C)\)
+has determinant \(C^3=x^3\gamma^3\).  The chain rule therefore gives
+\(C^3\det DF_N=x^3\gamma^3=C^3\) on that dense open set.
+Since \(F_N\) is polynomial, \(\det DF_N=1\) everywhere.
+The identities used here are
 \[
  BC=H_N'(W)+\gamma,\qquad
  AC^2=W\bigl(H_N'(W)+\gamma\bigr)-H_N(W).
@@ -237,8 +270,15 @@ value.  Finiteness follows from the normalization of the discriminant,
 \[
  r\longmapsto\bigl(H'(r),rH'(r)-H(r)\bigr):
 \]
-cusps and multiple normalization fibers occur over only finitely many
-points.  Thus a suitable \(s_1\) exists, and it may be taken rational when
+this map is finite because \(H'(r)\) is a nonconstant polynomial,
+so \(r\) is integral over its image coordinate ring.  On the generic
+smooth locus its tangent slope recovers the parameter:
+\(dt/ds=r\), since \(ds/dr=H''(r)\) and \(dt/dr=rH''(r)\).
+Thus it is birational, and the normal affine line is the normalization
+of the reduced image curve.  That curve has finitely many singular
+points; a finite normalization is an isomorphism over the smooth locus.
+Multiple fibers therefore occur over only finitely many points, as do
+the ramification points given by \(H''(r)=0\).  Thus a suitable \(s_1\) exists, and it may be taken rational when
 the data are rational.
 
 Rolle's theorem gives \(N-1\) real critical points of \(P_{s_1}\); all are
@@ -257,7 +297,8 @@ At a crossed wall the polynomial has one double root \(r\), with
 incidence is
 \[
  \alpha+\beta(W-r)^2+\text{higher terms},\qquad
- \alpha\beta\neq0,
+ \alpha=0\text{ on the wall},\quad d\alpha\neq0\text{ transversely},
+ \quad\beta\neq0,
 \]
 which is a smooth fold of the pencil projection.
 \end{proof}
@@ -306,27 +347,32 @@ no critical points.  At a wall, the two colliding polynomial roots satisfy
 \section*{Credit and provenance}
 
 The division of contributions used in this note is as follows.  Gallagher
-developed the all-degree weighted family and exhibited the first quartic
+developed the all-degree weighted family and exhibited a quartic
 empty-real-fiber example~\cite{Gallagher}; all-degree families also appear in
 the earlier base manuscript~\cite{Base}.  Migus classified the possible
 generic degrees of real Keller maps with non-dense Euclidean image
-~\cite{Migus}.  The new result here is the complete parity chamber spectrum,
+~\cite{Migus}.  The contribution here is the complete parity chamber spectrum,
 rational target witnesses, and a fold-adjacency chain for one explicit
 rational map in every degree.
 
 \section*{Verification}
 
-The exact arithmetic construction and audited sample witnesses can be
-checked with
-\begin{verbatim}
-.venv/bin/python scripts/verify_real_fiber_spectrum.py --show-witnesses
-\end{verbatim}
+The accompanying source bundle contains a rational-arithmetic checker for
+selected seeds, polynomial divisibility and chamber witnesses.  Its README
+specifies the input degrees, command and limits.  The all-degree assertions
+are proved above; the finite checks are supplementary.  The versioned
+construction sources are available in the repository~\cite{Sources}.
 
 \paragraph{AI assistance and review.}
 ChatGPT (OpenAI) assisted with mathematical arguments, literature checks,
 exposition, proof review and verification code.
 
 \begin{thebibliography}{9}
+
+\bibitem{Sources}
+R.~van Rijn, \emph{Jacobian research: real chamber construction sources},
+repository edition \texttt{c32b9b4}, 17 November 2026,
+\href{https://github.com/royvanrijn/jacobian-research/tree/c32b9b4d273cf7988e85184a0d5eae9c488727fd/unpublished/exact-real-chamber-spectra}{versioned manuscript source}.
 
 \bibitem{Base}
 \emph{A counterexample to the Jacobian Conjecture},

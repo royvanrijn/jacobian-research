@@ -6,11 +6,11 @@
   },
   "summary": "Classifies Gaussian moment vanishing with one ordinary base variable and constant quadratic fibres, including arbitrary Jordan blocks and nondegenerate correlated real Gaussian laws.",
   "published": false,
-  "status": "partial-draft",
+  "status": "ready-for-review",
   "source": "main.tex",
   "pdf": "gaussian_moments_one_base_constant_quadratic_fibres.pdf",
   "build": "latexmk -pdf -jobname=gaussian_moments_one_base_constant_quadratic_fibres -interaction=nonstopmode -halt-on-error main.tex",
-  "verification": "Written all-Jordan proof with internal review of the scalar pole certificates and correlated-Gaussian normalization. Current source/PDF identities and build checks are recorded in verification.json; independent mathematical review remains pending.",
+  "verification": "Complete scoped written proof with internal source review; the 17 November review corrections clarify hypotheses, proof dependencies and versioned companion sources. Current build and artifact checks are recorded in verification.json. Independent mathematical review remains pending.",
   "next_steps": [
     "Independent review of the formal stationary theorem, Jordan-block rigidity and determinant-one cancellation.",
     "Review the affine Gaussian extension and sufficient mixed-moment cutoffs."

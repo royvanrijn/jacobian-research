@@ -27,8 +27,12 @@ is needed once the two ranks have been identified.  Fullness is what turns a
 special fiber from a partial coincidence into a faithful realization of the
 generic covering degree.
 
-Our main theorem is the characteristic-zero statement proved end to end in
-Lean.
+The characteristic-zero realization statement follows also from the coefficient
+family of Ulam \cite[Theorem~5.2]{Ulam}; the specialization is displayed in
+Section~\ref{sec:ulam-comparison}. Here we supply a quadratic-gauge proof,
+a natural fiber identification over arbitrary test algebras, and an
+end-to-end Lean formalization. We do not claim priority for the
+characteristic-zero existence statement.
 
 \begin{theorem}[Characteristic-zero polynomial-presentation theorem]
 \label{thm:main-intro}
@@ -57,10 +61,8 @@ Theorem~\ref{thm:polynomial-realization} gives the proof.  Its exact
 paper-facing Lean declaration is
 \texttt{paperPolynomialPresentation\_pageOne}.
 
-The construction appeared only after reversing the usual direction of
-thought.  Instead of guessing three source coordinates and then trying to
-understand their fibers, we begin with the one-variable equation we want to
-solve in the inverse direction.  Its derivative will do two jobs: it is the
+The construction starts with the one-variable equation to be solved in the
+inverse direction.  Its derivative will do two jobs: it is the
 unit that reconstructs a source point from a root, and it is the factor that
 disappears from the Jacobian.  To insert \(P\), we translate it and use
 \[
@@ -100,7 +102,7 @@ proof, while Proposition~\ref{prop:base-change} gives scalar-extension
 compatibility.  This characteristic-\(\ne2\) proposition lies outside the
 end-to-end Lean formalization.
 
-The pleasing feature is that the entire three-variable map is governed by
+The entire three-variable map is governed by
 the compact scalar inverse equation
 \[
  E_{\Pi,B,C}(S)=0
@@ -146,7 +148,7 @@ excludes degree two.  Thus the possible nonzero ranks are
 This classification is a corollary with an external input, not part of the
 formalized construction.
 
-The paper follows the route by which the construction becomes visible.
+The proof follows the inverse equation and its reconstruction.
 Section~\ref{sec:gauge} begins with the inverse equation and pulls it back to
 a polynomial map.  Section~\ref{sec:reconstruction} shows that a marked root
 and a source point are the same data, then identifies the actual

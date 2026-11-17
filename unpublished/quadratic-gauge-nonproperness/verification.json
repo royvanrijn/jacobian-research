@@ -1,0 +1,79 @@
+{
+  "edition_date": "2026-11-17",
+  "review_basis": "Attached critical release review of 17 November 2026, pages 9-11; source-aware internal revision, not external review.",
+  "source_files": {
+    "README.md": "f30b119d58ae2e8156119b4703efa6c3d4f9879179cf2ade0dc994a88fad99e2",
+    "main.tex": "ca73f2580b44e04de3868bd43e0d98471c541883eb6f791388efb098bdcf02ba",
+    "metadata.json": "06b1d8c66a994f6bd6d3f2c2f51c5f74a6fde7363518d21d3aa0388caf0f1d4b",
+    "sections/nonproperness.tex": "3bffd2250ee4add862c0fe9e738586e9f717bd64e1a5428aaefd2b154ebbe3f4",
+    "symbolic_checks.json": "8427b3b388c2d130c4149c50db4c991d830c69a29fced8bfeb9a96147eb18e98",
+    "verify.py": "48fa588c457c7d574a2232793f9db49523c5c71db99dacc19c0587da058c3ea8"
+  },
+  "pdf": {
+    "path": "paper.pdf",
+    "sha256": "e54d953e2cab66f04027de592787d9e27088cfe778b700786399bb4d89fb82c5",
+    "pages": 7
+  },
+  "build": {
+    "command": "latexmk -pdf -jobname=paper -interaction=nonstopmode -halt-on-error main.tex",
+    "result": "passed",
+    "unresolved_references": false,
+    "overfull_boxes": false
+  },
+  "build_environment": {
+    "python": "3.12.3",
+    "sympy": "1.14.0",
+    "latexmk": "Latexmk, John Collins, 31 Jan. 2024. Version 4.83"
+  },
+  "visual_review": {
+    "performed": true,
+    "reviewer": "OpenAI Codex source-aware internal reviewer",
+    "scope": "All rendered pages inspected as contact sheets; page layout, equations and theorem continuity checked.",
+    "result": "No clipping, overlapping text or unresolved references observed."
+  },
+  "isolated_pdf_only_reading": {
+    "performed": true,
+    "date": "2026-11-17",
+    "reviewer": "OpenAI Codex agent blind_geometry_fibres",
+    "type": "isolated internal AI PDF-only reading",
+    "supplied_context": "Only the assigned PDFs and five reader questions; no repository sources, earlier review, literature or supplements. Multiple assigned PDFs were read separately by this reviewer.",
+    "pdf_sha256": "d164affad9eaffb8b35bec2dde5c7eb7c79eb4c62e85306f7fee6d5aff3f945a",
+    "pages": 7,
+    "answers": {
+      "contribution": "Reduced exact nonproperness locus, complete Pi=0 fibre table and universal discriminant order for the displayed quadratic-gauge family.",
+      "mechanism": "Localized inverse roots plus etale fibre-cardinality criterion; direct boundary divisors; Newton root blocks and exact difference valuations.",
+      "hardest_step": "Lemma2.3 pp4-5: Newton-block discriminant ledger; Lemma2.2 pp3-4: fibre/nonproperness criterion and descent.",
+      "limitations": "Reduced locus only; g1*g3*gN nonzero; specialized orders may jump; geometric proof outside companion formalization.",
+      "obstacles": "Initial PDF did not specify which determinant-one output map was used; target B=0 makes the natural B scaling consistent. Explicit normalization supplied in the follow-up. Jelonek remains a cited specialist input."
+    },
+    "finding": "No demonstrated fatal mathematical error. Unperformed specialist checks and formal replay remain separate obligations.",
+    "external_review": false,
+    "targeted_pdf_only_followup": {
+      "pdf_sha256": "e54d953e2cab66f04027de592787d9e27088cfe778b700786399bb4d89fb82c5",
+      "pages": 7,
+      "finding": "Explicit L(Pi,B,C)=(Pi,-B/2,C), unchanged B=0 target and raw-coordinate conventions; targeted PDF-only follow-up found the issue resolved and p2 readable.",
+      "scope": "Re-read revised passages and inspect rendering; not a new full blind reading."
+    }
+  },
+  "external_human_review": {
+    "performed": false
+  },
+  "fresh_lean_replay": false,
+  "remaining_obligations": [
+    "Obtain specialist review of graph-boundary descent, the fiber criterion and the all-degree Newton-block discriminant calculation.",
+    "Decide whether to release this companion note separately."
+  ],
+  "exact_symbolic_controls": {
+    "command": ".venv/bin/python unpublished/quadratic-gauge-nonproperness/verify.py",
+    "result": "passed",
+    "scope": "Generic cubic boundary identities and selected degree-three-through-seven discriminant controls; not the all-degree Newton proof, Jelonek criterion, or Lean verification."
+  },
+  "primary_source_check": {
+    "Jelonek1993": "Proposition 6, p.261, full primary PDF inspected from https://matwbn.icm.edu.pl/ksiazki/apm/apm58/apm5834.pdf; finite-fiber multiplicity criterion matches the use after etale multiplicities are one."
+  },
+  "source_archive_reproduction": {
+    "archive": "source.zip",
+    "result": "passed",
+    "scope": "Clean LaTeX build from the isolated current source archive, with exact page text and rendered-pixel comparison to the designated PDF. Artifact reproduction only, not independent mathematical review."
+  }
+}

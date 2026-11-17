@@ -12,8 +12,8 @@
   "build": "../../.venv/bin/python verify.py --build --refresh",
   "verification": "Internally audited standalone manuscript with recorded proof, source and layout checks; publication and independent external review are still pending.",
   "next_steps": [
-    "Review the complete qualitative cubic proof and its cited analytic inputs.",
-    "Resolve review findings, freeze a submission bundle and deposit."
+    "Specialist review of the explicit degree-one nearby-cycle/chain comparison, finite-target infinity exclusion and regular-rank ledger, and relative-pair identification in the uniform-cut argument.",
+    "Independent review of the complete qualitative cubic classification and its cited analytic inputs before submission."
   ],
   "catalogued_on": "2026-11-17",
   "abstract": "We classify complex polynomials of degree at most three in three\nindependent standard real Gaussian variables whose positive moments all\nvanish. Up to a complex orthogonal linear change of coordinates and a\nnonzero scalar, every such polynomial has one-sided circular support or\nbelongs to a single exceptional orbit. For every fixed polynomial $Q$,\nits mixed moments $\\E[QP^m]$ vanish whenever $m>3\\deg Q$, and the\ncoefficient three is optimal. The proof extracts a Gaussian coordinate\nin which the polynomial is affine linear, then classifies that family\nusing formal stationary frames and analytic period estimates.\n\nCombining this ternary-cubic result with Wilson's two-variable theorem,\nLiu's quadratic theorem and Long's counterexamples gives the exact\ndimension--degree boundary for the Gaussian Moments Conjecture: the\nimplication from pure-moment vanishing to eventual mixed-moment\nvanishing holds universally precisely when there are at most two\nvariables, the degree is at most two, or there are three variables and\nthe degree is at most three. We reproduce the all-order moment\nidentities for the two minimal failures.",
@@ -23,5 +23,6 @@
     "title": "Preprint",
     "type": "publication",
     "subtype": "preprint"
-  }
+  },
+  "source_bundle": "source.zip"
 }

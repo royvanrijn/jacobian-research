@@ -54,6 +54,18 @@ The prescribed-fiber mechanism is taken from the companion manuscript
 [Common Arithmetic Fibers](../common-arithmetic-fibers/); the present paper
 rederives the specialized inverse calculation needed for its fixed map.
 
+### Earlier coefficient family
+
+The primary [Ulam technical note](https://www.ulam.ai/research/jacobian.pdf),
+Theorem 5.2, pp. 6–7, was inspected on 17 November 2026. The coefficient
+specialization in the [companion comparison](../common-arithmetic-fibers/LITERATURE_AUDIT.md)
+already yields the characteristic-zero prescribed-algebra existence
+statement. The companion supplies a quadratic-gauge proof and formal
+certificate of that consequence; its existence theorem is not used here
+as a priority claim. Ulam's family does not by this comparison alone supply
+the fixed-map rational classification or exact-height count. The printed
+July date does not certify the exact historical version of the formulas.
+
 ## Priority boundary
 
 The checked sources support the intersective-polynomial and analytic inputs.

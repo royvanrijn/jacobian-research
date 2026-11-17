@@ -1,67 +1,24 @@
-# Adversarial proof audit for the generic discriminant theorem
+# Proof audit for the polynomial tangent-pencil note
 
-## Verdict
+Edition: revised source and PDF dated 17 November 2026. This record describes the present standalone note; it does not claim that material removed from earlier versions remains in the paper.
 
-The generic discriminant result survives as a standalone theorem over an algebraically closed field of
-characteristic zero, provided “discriminant curve” means the reduced
-projective closure of the repeated-root locus. The proof does not need the
-later weighted-image through finite-field results
-or any assertion about the image or boundary of the motivating Jacobian map.
+## Current proof and contribution
 
-The audit led to two proof-hardening changes in the standalone paper:
+The note gives a self-contained contact-stratum proof of a classical dual-curve specialization, with explicit thin-family genericity and an infinity calculation. Priority for the cusp and node counts is not established. Yuran, arXiv:2204.04626v1, Theorems 1.3 and 1.16, assumes a Newton polygon containing 5 times the standard triangle. The graph Y-H(W) has vertical width one, so that sufficient hypothesis does not cover this family. Yuran's conditional counts assume contact exclusions; the note proves those exclusions directly. This primary text was inspected during revision.
 
-1. The codimension argument now uses the dimension of the closure of a
-   finite-type image directly. It does not depend on the more elaborate
-   homogeneous graph presentation in the research note.
-2. The infinity argument now proves a relative formal-inverse lemma. This
-   supplies the missing justification for the claim that an off-diagonal
-   equal-image pair cannot escape to infinity in an exact-degree family.
-
-## Audit matrix
-
-| Risk | Test | Result |
+| Risk | Argument in the current paper | Scope |
 |---|---|---|
-| Singularities at infinity | Homogenize the normalization; inspect its sole point over `Z=0`; complete the relative map there; inspect the relative equal-image fiber product. | Pass. In the `T=1` chart, `S/T=(n/(n-1))q+O(q^2)` has a formal inverse. The image is smooth, has one branch, and the off-diagonal equal-image locus has closure disjoint from the infinity section on `h_n != 0`. |
-| Tacnodes and higher contacts | Classify one-branch contacts by the order of `H-ell_r`; compare tangent directions at two normalization points. | Pass. Contact 3 is an ordinary cusp; contact at least 4 lies in `(4)`. Two unramified branches at `r != u` have directions `(1,r)` and `(1,u)` with determinant `u-r`, so a tacnode is impossible. |
-| Transversality of tangent–chord coincidences | Differentiate the equal-image equations in the two normalization parameters. | Pass. The Jacobian columns are the two branch tangents, so its determinant is a nonzero scalar times `u-r`. Every retained bitangent solution is transverse; nontransverse endpoints are exactly cusp/diagonal bad strata. |
-| Codimension of bad strata | Factor `H-ell=M_mu Q` for `(4)`, `(3,2)`, and `(2,2,2)` and count the marked-root and residual coefficients before taking the coefficient-space closure. | Pass. Each possible source has dimension `n-2` in the `(n-1)`-dimensional space `B_n`. Closure cannot increase image dimension. Root collisions and residual collisions stay in the same closure. |
-| Admissible slice meets the generic open | Use the divided tangent–chord incidence and normalize the two contact points to `0,1`. | Pass. The incidence is irreducible because its equation solves uniquely for the quadratic coefficient, and it surjects onto the exact-degree coefficient space. The good inverse image and the endpoint-admissible locus are nonempty opens, hence intersect. |
-| Genus used to exclude singularities | Inspect the logical order of the proof. | Pass after reorganization. The three contact strata and the infinity lemma first exclude every non-nodal/non-cuspidal singularity. Squarefreeness then gives exactly `n-2` cusps. The genus formula is invoked only to count the remaining ordinary nodes. |
+| Infinity | Basepoint-free homogenization has one preimage over Z=0; S/T has nonzero linear term there. | Proves smoothness at the sole point at infinity for each exact-degree H. No relative no-escape theorem is asserted. |
+| Higher one-branch singularity | The derivative is H second derivative times (1,r); contact three gives nonzero jet determinant. | Contact at least four lies in the forbidden (4) stratum. |
+| Several branches | Distinct unramified parameters r,u have tangent determinant u-r. | Ramified-plus-other and triple fibers lie in (3,2) and (2,2,2). |
+| Genericity | Factor H-ell=M_mu Q and take the closure of its image in coefficient space. | Each bad-image closure has dimension at most n-2, strictly below n-1. |
+| Counting | Exclude all other singularities first; use squarefree H second derivative for n-2 cusps, then genus-delta. | Genus counts nodes; it does not exclude additional singularities. |
+| Small example | H=W^3 gives (s,t)=(3r^2,2r^3), 27t^2=4s^3 and a smooth point at infinity. | An exact illustration of n=3, not proof for arbitrary n. |
 
-## Exhaustiveness check
+The current paper contains no Jacobian-map motivation, admissible endpoint-slice argument, or relative equal-image escape argument. Earlier receipts describing those are superseded for this edition.
 
-For a finite normalization parameter, every singular branch is controlled by
-the contact order of its tangent line:
+## Partial formalization and review limits
 
-- order `2`: a smooth immersed branch;
-- order `3`: an ordinary cusp when `H''' != 0`;
-- order at least `4`: the bad pattern `(4)`.
+The pinned project and build command are linked in README.md. The written dimension-of-image argument, complete normalization/degree theorem, scheme-theoretic cusp/node criteria, and genus step remain outside the partial Lean development. No fresh Lean build or axiom audit was performed during this revision. A prior statement that the project uses no additional mathematical axioms is not a new transitive axiom check.
 
-For a singular image with several normalization preimages:
-
-- a ramified branch plus another branch dominates `(3,2)`;
-- three or more preimages dominate `(2,2,2)`;
-- exactly two unramified preimages give an ordinary transverse node.
-
-These alternatives also cover cusp–cusp collisions, tritangents, higher
-contacts, fourfold fibers, and two node pairs sharing an image. The relative
-infinity lemma closes the only projective escape route.
-
-## Scope and residual caveats
-
-- The statement is geometric: the base field is algebraically closed and has
-  characteristic zero. No positive-characteristic version is claimed.
-- The theorem concerns the reduced discriminant curve. If the resultant is
-  retained with scheme multiplicity, that scheme-theoretic formulation needs
-  a separate sentence identifying its generic multiplicity; it is irrelevant
-  to the singularities of the reduced curve.
-- The symbolic checks through degree ten remain regression evidence only. The
-  all-degree proof rests on the contact classification and dimension argument,
-  not on those computations.
-- This is an internal adversarial audit, not independent external peer review.
-
-## Standalone output
-
-The paper is [main.tex](main.tex). Its introduction contains the only
-Jacobian-map motivation; all subsequent statements and proofs concern the
-pencils `H(W)-sW+t` alone.
+The revised PDF was compiled and visually inspected; details and source/PDF hashes are in verification.json. A PDF-only isolated internal AI reading of this revised edition is recorded with its exact hash and five reader answers in verification.json. The source-aware AI revision is internal work and is not external peer review. Novelty comparison beyond the explicitly inspected Yuran statements remains open, so this note stays parked as a possible companion or appendix.

@@ -6,11 +6,11 @@
   },
   "summary": "Reduces marked Gaussian moment series to base markers for a constant quadratic fibre, extends actual generation to nilpotent coefficient content, and computes the exact scalar specialization defect.",
   "published": false,
-  "status": "partial-draft",
+  "status": "ready-for-review",
   "source": "main.tex",
   "pdf": "gaussian_marker_reduction_constant_quadratic_fibre.pdf",
   "build": "latexmk -pdf -jobname=gaussian_marker_reduction_constant_quadratic_fibre -interaction=nonstopmode -halt-on-error main.tex",
-  "verification": "Combined written algebraic proof with internal review of the nilpotent-content extension and exact specialization obstruction. Current source/PDF identities and build checks are recorded in verification.json; independent mathematical review remains pending.",
+  "verification": "Complete scoped written proof with internal source review; the 17 November review corrections clarify hypotheses, proof dependencies and versioned companion sources. Current build and artifact checks are recorded in verification.json. Independent mathematical review remains pending.",
   "next_steps": [
     "Independent review of the universal even/odd certificates, nilpotent-content corollary and exact coefficient-ring defect.",
     "Investigate purity-to-safety for one constant quadratic fibre over two ordinary base variables; the marker reduction alone does not settle it."

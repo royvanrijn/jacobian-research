@@ -10,10 +10,10 @@
   "source": "main.tex",
   "pdf": "paper.pdf",
   "build": "latexmk -pdf -jobname=paper -interaction=nonstopmode -halt-on-error main.tex",
-  "verification": "Written geometric arguments with an exact symbolic audit; these results are not part of the Lean formalization.",
+  "verification": "Self-contained map, reconstruction and boundary identities; fresh LaTeX build, visual PDF inspection and selected exact symbolic checks. The all-degree geometric proof is written, not Lean formalized.",
   "next_steps": [
-    "Review the geometric proof and exact symbolic audit.",
-    "Decide whether to develop this companion into a submission."
+    "Obtain specialist review of graph-boundary descent, the fiber criterion and the all-degree Newton-block discriminant calculation.",
+    "Decide whether to release this companion note separately."
   ],
   "catalogued_on": "2026-11-17",
   "abstract": "For the all-degree quadratic-gauge Keller maps, we identify the reduced\nnonproperness locus with the discriminant of the scalar inverse equation.\nWe compute the complete fiber table on the degenerate slice \\(\\Pi=0\\) and\nthe exact global \\(\\Pi\\)-adic order of the discriminant.  These geometric\nresults are independent of the prescribed finite-\\'etale-fiber theorem.",
@@ -23,5 +23,9 @@
     "title": "Preprint",
     "type": "publication",
     "subtype": "preprint"
-  }
+  },
+  "revised_on": "2026-11-17",
+  "verification_record": "verification.json",
+  "source_archive": "source.zip",
+  "source_bundle": "source.zip"
 }

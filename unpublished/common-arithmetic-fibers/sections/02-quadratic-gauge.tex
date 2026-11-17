@@ -162,6 +162,52 @@ equation \(E_{\Pi,B,C}(S)=0\), with the same derivative controlling
 reconstruction and disappearing from the Jacobian.  Once phrased this way,
 there is no reason for the inverse polynomial to remain cubic.
 
+\subsection{Comparison with the earlier coefficient family}\label{sec:ulam-comparison}
+
+Ulam's coefficient family already permits prescribed separable inverse
+polynomials in characteristic zero \cite[Theorem~5.2]{Ulam}. To check this
+directly, write
+\[
+ P(a+s)=\sum_{k=0}^n c_ks^k,\qquad c_1\ne0.
+\]
+In the notation of that theorem its inverse equation is
+\[
+ \Omega_{p,q,r}(s)=2ps^3-qs^2+2s-r+
+ \sum_{j=1}^{n-2}\frac{2}{j+2}p^{j+2}\eta_j(p)s^{j+2}.
+\]
+Choose constant parameters
+\[
+ \eta_1=3(c_3/c_1-1),\qquad
+ \eta_{k-2}=k c_k/c_1\quad(4\le k\le n)
+\]
+and the target
+\[
+ (p,q,r)=(1,-2c_2/c_1,-2c_0/c_1).
+\]
+Coefficient comparison gives the exact identity
+\[
+ \Omega_{1,q,r}(s)=\frac{2}{c_1}P(a+s).
+\]
+Every root is simple. Since $p=1$, every preimage lies in the source chart
+used there, and its reconstruction formulas are rational expressions whose
+only root-dependent denominator is a nonzero scalar multiple of
+$\Omega'(s)$. B\'ezout makes that denominator a unit at a root over every
+commutative test algebra. Thus the same formulas identify the whole fiber
+scheme with $\operatorname{Spec}K[T]/(P)$, and the stated generic degree is
+$n$. The proof of that theorem is an algebraic identity over the
+characteristic-zero coefficient field, so this deduction works over any
+characteristic-zero field, although its statement is written over $\mathbb C$.
+Monogenicity then gives the abstract finite-\'etale conclusion as well.
+
+Accordingly a different quantifier order does not establish novelty for
+our existence theorem. The contribution presented here is its
+quadratic-gauge proof and formal certificate, together with the separately
+stated supplied-presentation result in characteristic different from two.
+No priority claim is made for these refinements. Gallagher's weighted-lift
+construction also realizes every generic degree at least three
+\cite[Section~7]{GallagherConstruction}; the atlas \cite{Gallagher}
+provides exact split-fiber examples.
+
 \section{Localized fiber reconstruction and geometric degree}
 \label{sec:reconstruction}
 

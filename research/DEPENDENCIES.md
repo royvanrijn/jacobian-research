@@ -4,11 +4,13 @@
 
 This is a generated view of the [current catalogue](MATH_STATUS.json). An AND diamond requires every premise; alternative incoming diamonds are OR routes. A checked route becomes available only when its premises and pinned proof sources are current. A falsified premise blocks its route; it does not falsify the conclusion.
 
+Documented equivalence components retain separately proved directions and their context premises. Each component requires an independent proof seed; equivalent open goals cannot prove one another. Collapsing those components gives an acyclic quotient graph. The diagrams show the directional routes inside each component.
+
 Graph state follows the declared dependencies. Dependency coverage separately records whether that model is complete, partial or unmapped. A source hash detects changed bytes; it does not check a mathematical argument. Authored state, formal verification, replay, external review and publication remain separate.
 
 [Exact scopes and recorded assurances](SCOPES.md) · [Result catalogue](STATUS.md) · [Research topics](README.md)
 
-The graph contains 165 claim/source nodes and 56 implication rules. conditional: 1; open: 59; proved: 103; stale: 2.
+The graph contains 169 claim/source nodes, 58 implication rules and 0 documented equivalence components. conditional: 1; open: 60; proved: 103; stale: 5.
 
 Inspect the current graph from the repository root:
 
@@ -42,7 +44,7 @@ Two-pair bidegree-(3,3) now has an exact sixteen-parameter sphere model, complet
 | [GAUSSIAN-DIMENSION-DEGREE](../unpublished/gaussian-boundary/manuscript.tex) | proved | partial | none in declared routes |
 | [MATHIEU-REDUCTIVE](../unpublished/mathieu-reductive-homogeneous-spaces/main.tex) | proved | partial | none in declared routes |
 | [GAUSSIAN-STRUCTURE](moments/vanishing/GAUSSIAN_AMPLITUDE_IDEALS_AND_WEIGHT_INVARIANCE.md) | proved | partial | none in declared routes |
-| [GAUSSIAN-H21-AFFINE-CHART](moments/vanishing/GAUSSIAN_AFFINE_ISOTROPIC_CHART.md) | stale | partial | SOURCE-ROUTE-GAUSSIAN-H21-AFFINE-CHART (stale); SOURCE-GAUSSIAN-H21-AFFINE-CHART (stale) |
+| [GAUSSIAN-H21-AFFINE-CHART](moments/vanishing/GAUSSIAN_AFFINE_ISOTROPIC_CHART.md) | proved | partial | none in declared routes |
 | [TWO-PAIR-IMAGE](foundations/extended-geometry/TWO_PAIR_IMAGE_MATHIEU_COUNTEREXAMPLE.md) | proved | partial | none in declared routes |
 
 | Goal or obligation | Kind | Graph state | Coverage | Exact scope | Current blockers |
@@ -84,72 +86,69 @@ flowchart LR
   class n12 open
   n13["MOMENTS-VACUUM-PRIMITIVITY<br/>open"]
   class n13 open
-  n14["SOURCE-GAUSSIAN-H21-AFFINE-<br/>CHART<br/>stale"]
-  class n14 stale
-  n15["MOMENTS-GVC-CLASSIFICATION<br/>proved"]
-  class n15 proved
-  n16(["MOMENTS-TWO-BASE-SAFETY<br/>open"])
+  n14["MOMENTS-GVC-CLASSIFICATION<br/>proved"]
+  class n14 proved
+  n15(["MOMENTS-TWO-BASE-SAFETY<br/>open"])
+  class n15 open
+  n16(["MOMENTS-SAFETY-PURITY<br/>open"])
   class n16 open
-  n17(["MOMENTS-SAFETY-PURITY<br/>open"])
-  class n17 open
-  n18["GAUSSIAN-DIMENSION-DEGREE<br/>proved<br/>OR routes"]
+  n17["GAUSSIAN-DIMENSION-DEGREE<br/>proved<br/>OR routes"]
+  class n17 proved
+  n18["GAUSSIAN-H21-AFFINE-CHART<br/>proved"]
   class n18 proved
-  n19["GAUSSIAN-H21-AFFINE-CHART<br/>stale"]
-  class n19 stale
-  n20["GAUSSIAN-STRUCTURE<br/>proved"]
+  n19["GAUSSIAN-STRUCTURE<br/>proved"]
+  class n19 proved
+  n20["GVC-GMC-IMAGE<br/>proved"]
   class n20 proved
-  n21["GVC-GMC-IMAGE<br/>proved"]
+  n21["MATHIEU-REDUCTIVE<br/>proved"]
   class n21 proved
-  n22["MATHIEU-REDUCTIVE<br/>proved"]
+  n22["TWO-PAIR-IMAGE<br/>proved"]
   class n22 proved
-  n23["TWO-PAIR-IMAGE<br/>proved"]
-  class n23 proved
-  r0{"AND<br/>SOURCE-ROUTE-GVC-GMC-IMAGE<br/>+1 pinned source<br/>proved"}
-  class r0 proved
-  r0 --> n21
-  r1{"AND<br/>SOURCE-ROUTE-GAUSSIAN-<br/>DIMENSION-DEGREE<br/>+1 pinned source<br/>proved"}
+  r0{"AND<br/>AUDIT-A-boundary-from-cases<br/>blocked"}
+  class r0 open
+  n1 --> r0
+  n7 --> r0
+  n10 --> r0
+  n6 --> r0
+  r0 --> n17
+  r1{"AND<br/>AUDIT-A-boundary-from-owned-<br/>binary-alternative<br/>proved"}
   class r1 proved
-  r1 --> n18
-  r2{"AND<br/>SOURCE-ROUTE-MATHIEU-REDUCTIVE<br/>+1 pinned source<br/>proved"}
+  n4 --> r1
+  n7 --> r1
+  n10 --> r1
+  n6 --> r1
+  r1 --> n17
+  r2{"AND<br/>SOURCE-ROUTE-GAUSSIAN-<br/>DIMENSION-DEGREE<br/>+1 pinned source<br/>proved"}
   class r2 proved
-  r2 --> n22
-  r3{"AND<br/>SOURCE-ROUTE-GAUSSIAN-<br/>STRUCTURE<br/>+1 pinned source<br/>proved"}
+  r2 --> n17
+  r3{"AND<br/>SOURCE-ROUTE-<br/>GAUSSIAN-H21-AFFINE-CHART<br/>+1 pinned source<br/>proved"}
   class r3 proved
-  r3 --> n20
-  r4{"AND<br/>SOURCE-ROUTE-TWO-PAIR-IMAGE<br/>+1 pinned source<br/>proved"}
+  r3 --> n18
+  r4{"AND<br/>SOURCE-ROUTE-GAUSSIAN-<br/>STRUCTURE<br/>+1 pinned source<br/>proved"}
   class r4 proved
-  r4 --> n23
-  r5{"AND<br/>AUDIT-A-gvc-classification<br/>proved"}
+  r4 --> n19
+  r5{"AND<br/>SOURCE-ROUTE-GVC-GMC-IMAGE<br/>+1 pinned source<br/>proved"}
   class r5 proved
-  n5 --> r5
-  n8 --> r5
-  r5 --> n15
-  r6{"AND<br/>AUDIT-A-vacuum-primitivity-to-<br/>purity<br/>blocked"}
-  class r6 open
-  n13 --> r6
-  r6 --> n17
-  r7{"AND<br/>AUDIT-A-two-base-marker-<br/>transfer<br/>blocked"}
-  class r7 open
-  n12 --> r7
-  r7 --> n16
-  r8{"AND<br/>AUDIT-A-boundary-from-cases<br/>blocked"}
+  r5 --> n20
+  r6{"AND<br/>SOURCE-ROUTE-MATHIEU-REDUCTIVE<br/>+1 pinned source<br/>proved"}
+  class r6 proved
+  r6 --> n21
+  r7{"AND<br/>SOURCE-ROUTE-TWO-PAIR-IMAGE<br/>+1 pinned source<br/>proved"}
+  class r7 proved
+  r7 --> n22
+  r8{"AND<br/>AUDIT-A-vacuum-primitivity-to-<br/>purity<br/>blocked"}
   class r8 open
-  n1 --> r8
-  n7 --> r8
-  n10 --> r8
-  n6 --> r8
-  r8 --> n18
-  r9{"AND<br/>AUDIT-A-boundary-from-owned-<br/>binary-alternative<br/>proved"}
-  class r9 proved
-  n4 --> r9
-  n7 --> r9
-  n10 --> r9
-  n6 --> r9
-  r9 --> n18
-  r10{"AND<br/>SOURCE-ROUTE-<br/>GAUSSIAN-H21-AFFINE-CHART<br/>stale"}
-  class r10 stale
-  n14 --> r10
-  r10 --> n19
+  n13 --> r8
+  r8 --> n16
+  r9{"AND<br/>AUDIT-A-two-base-marker-<br/>transfer<br/>blocked"}
+  class r9 open
+  n12 --> r9
+  r9 --> n15
+  r10{"AND<br/>AUDIT-A-gvc-classification<br/>proved"}
+  class r10 proved
+  n5 --> r10
+  n8 --> r10
+  r10 --> n14
   classDef proved fill:#e6f4ea,stroke:#2e7d32
   classDef conditional fill:#fff8e1,stroke:#a66b00
   classDef open fill:#fff4e5,stroke:#bf6a00
@@ -158,7 +157,9 @@ flowchart LR
   classDef unmapped fill:#f1f3f4,stroke:#607d8b
 ```
 
-Current unconditional proof-source leaves are omitted from this diagram; each diamond states how many source premises are hidden. All premises, including hidden sources, are required. Use `explain` for their pins and locators.
+Overview: 23 statements and 11 routes (29 statements mapped to this topic). Detailed lemma trees and some routes may be omitted; the full graph and focused exports retain them. All premises, including hidden sources and omitted proof premises, are required. Use `explain` for their complete source pins, locators and blockers.
+
+Current unconditional proof-source leaves are omitted from this diagram; each diamond states how many source premises are hidden.
 
 ## Jacobian and Keller maps
 
@@ -210,56 +211,71 @@ flowchart LR
   class n7 open
   n8["GAP-RULING-SIX<br/>open"]
   class n8 open
-  n9["ARITHMETIC-COMMON-ARITHMETIC-<br/>FIBERS<br/>proved"]
+  n9["OWN-TANG-STRUCTURAL-AUDIT<br/>proved"]
   class n9 proved
-  n10["HESSIAN-MOMENT-TRACE<br/>proved"]
+  n10["ARITHMETIC-COMMON-ARITHMETIC-<br/>FIBERS<br/>proved"]
   class n10 proved
-  n11["JACOBIAN-CANONICAL-RECEIVERS<br/>proved"]
-  class n11 proved
-  n12["JACOBIAN-CUBIC-CONSTRUCTIONS<br/>proved"]
+  n11["DIXMIER-CENTRALIZER-COMPLETION<br/>open"]
+  class n11 open
+  n12["HESSIAN-MOMENT-TRACE<br/>proved"]
   class n12 proved
-  n13["JACOBIAN-MONODROMY<br/>open"]
-  class n13 open
-  n14["JACOBIAN-QUADRATIC-BOUNDARY<br/>proved"]
+  n13["JACOBIAN-CANONICAL-RECEIVERS<br/>proved"]
+  class n13 proved
+  n14["JACOBIAN-CUBIC-CONSTRUCTIONS<br/>proved"]
   class n14 proved
-  n15(["GOAL-JC2<br/>open"])
+  n15["JACOBIAN-MONODROMY<br/>open"]
   class n15 open
-  n16["ARITHMETIC-JC-NEGATION<br/>proved<br/>OR routes"]
+  n16["JACOBIAN-QUADRATIC-BOUNDARY<br/>proved"]
   class n16 proved
-  r0{"AND<br/>SOURCE-ROUTE-JACOBIAN-<br/>MONODROMY<br/>+1 pinned source<br/>blocked"}
-  class r0 open
-  n2 --> r0
-  n0 --> r0
+  n17(["GOAL-JC2<br/>open"])
+  class n17 open
+  n18["ARITHMETIC-JC-NEGATION<br/>proved<br/>OR routes"]
+  class n18 proved
+  n19(["GOAL-HC4<br/>open"])
+  class n19 open
+  r0{"AND<br/>SOURCE-ROUTE-JACOBIAN-<br/>CANONICAL-RECEIVERS<br/>+1 pinned source<br/>proved"}
+  class r0 proved
   r0 --> n13
-  r1{"AND<br/>SOURCE-ROUTE-JACOBIAN-<br/>CANONICAL-RECEIVERS<br/>+1 pinned source<br/>proved"}
+  r1{"AND<br/>SOURCE-ROUTE-JACOBIAN-CUBIC-<br/>CONSTRUCTIONS<br/>+1 pinned source<br/>proved"}
   class r1 proved
-  r1 --> n11
-  r2{"AND<br/>SOURCE-ROUTE-JACOBIAN-CUBIC-<br/>CONSTRUCTIONS<br/>+1 pinned source<br/>proved"}
-  class r2 proved
-  r2 --> n12
+  r1 --> n14
+  r2{"AND<br/>SOURCE-ROUTE-JACOBIAN-<br/>MONODROMY<br/>+1 pinned source<br/>blocked"}
+  class r2 open
+  n2 --> r2
+  n0 --> r2
+  r2 --> n15
   r3{"AND<br/>SOURCE-ROUTE-JACOBIAN-<br/>QUADRATIC-BOUNDARY<br/>+1 pinned source<br/>proved"}
   class r3 proved
   n1 --> r3
-  r3 --> n14
-  r4{"AND<br/>SOURCE-ROUTE-HESSIAN-MOMENT-<br/>TRACE<br/>+4 pinned sources<br/>proved"}
-  class r4 proved
-  r4 --> n10
+  r3 --> n16
+  r4{"AND<br/>SIXTH-TRACE-PERFECTION-TO-JC2<br/>blocked"}
+  class r4 open
+  n12 --> r4
+  n3 --> r4
+  r4 --> n17
   r5{"AND<br/>SOURCE-ROUTE-ARITHMETIC-<br/>COMMON-ARITHMETIC-FIBERS<br/>+1 pinned source<br/>proved"}
   class r5 proved
-  r5 --> n9
+  r5 --> n10
   r6{"AND<br/>AUDIT-A-realization-to-jc-<br/>negation<br/>proved"}
   class r6 proved
-  n9 --> r6
-  r6 --> n16
-  r7{"AND<br/>SIXTH-TRACE-PERFECTION-TO-JC2<br/>blocked"}
-  class r7 open
-  n10 --> r7
-  n3 --> r7
-  r7 --> n15
-  r8{"AND<br/>INTERNAL-CUBIC-COLLISION-TO-<br/>JC-FAILURE<br/>proved"}
-  class r8 proved
-  n12 --> r8
-  r8 --> n16
+  n10 --> r6
+  r6 --> n18
+  r7{"AND<br/>INTERNAL-CUBIC-COLLISION-TO-<br/>JC-FAILURE<br/>proved"}
+  class r7 proved
+  n14 --> r7
+  r7 --> n18
+  r8{"AND<br/>SOURCE-ROUTE-DIXMIER-<br/>CENTRALIZER-COMPLETION<br/>+1 pinned source<br/>blocked"}
+  class r8 open
+  n0 --> r8
+  r8 --> n11
+  r9{"AND<br/>JC2-AND-TANG-TO-HC4<br/>blocked"}
+  class r9 open
+  n17 --> r9
+  n9 --> r9
+  r9 --> n19
+  r10{"AND<br/>SOURCE-ROUTE-HESSIAN-MOMENT-<br/>TRACE<br/>+4 pinned sources<br/>proved"}
+  class r10 proved
+  r10 --> n12
   classDef proved fill:#e6f4ea,stroke:#2e7d32
   classDef conditional fill:#fff8e1,stroke:#a66b00
   classDef open fill:#fff4e5,stroke:#bf6a00
@@ -268,7 +284,9 @@ flowchart LR
   classDef unmapped fill:#f1f3f4,stroke:#607d8b
 ```
 
-Current unconditional proof-source leaves are omitted from this diagram; each diamond states how many source premises are hidden. All premises, including hidden sources, are required. Use `explain` for their pins and locators.
+Overview: 20 statements and 11 routes (18 statements mapped to this topic). Detailed lemma trees and some routes may be omitted; the full graph and focused exports retain them. All premises, including hidden sources and omitted proof premises, are required. Use `explain` for their complete source pins, locators and blockers.
+
+Current unconditional proof-source leaves are omitted from this diagram; each diamond states how many source premises are hidden.
 
 ## Hessian and Schur reductions
 
@@ -315,16 +333,16 @@ flowchart LR
   class n7 open
   n8(["GOAL-HC4<br/>open"])
   class n8 open
-  r0{"AND<br/>SOURCE-ROUTE-HESSIAN-QUINTIC-<br/>GRAPH<br/>+1 pinned source<br/>proved"}
+  r0{"AND<br/>SOURCE-ROUTE-HESSIAN-MOMENT-<br/>TRACE<br/>+4 pinned sources<br/>proved"}
   class r0 proved
-  r0 --> n5
-  r1{"AND<br/>SOURCE-ROUTE-HESSIAN-RICCI-<br/>FLAT<br/>+1 pinned source<br/>proved"}
+  r0 --> n4
+  r1{"AND<br/>SOURCE-ROUTE-HESSIAN-QUINTIC-<br/>GRAPH<br/>+1 pinned source<br/>proved"}
   class r1 proved
-  n3 --> r1
-  r1 --> n6
-  r2{"AND<br/>SOURCE-ROUTE-HESSIAN-MOMENT-<br/>TRACE<br/>+4 pinned sources<br/>proved"}
+  r1 --> n5
+  r2{"AND<br/>SOURCE-ROUTE-HESSIAN-RICCI-<br/>FLAT<br/>+1 pinned source<br/>proved"}
   class r2 proved
-  r2 --> n4
+  n3 --> r2
+  r2 --> n6
   r3{"AND<br/>JC2-AND-TANG-TO-HC4<br/>blocked"}
   class r3 open
   n7 --> r3
@@ -343,13 +361,15 @@ flowchart LR
   classDef unmapped fill:#f1f3f4,stroke:#607d8b
 ```
 
-Current unconditional proof-source leaves are omitted from this diagram; each diamond states how many source premises are hidden. All premises, including hidden sources, are required. Use `explain` for their pins and locators.
+Overview: 9 statements and 5 routes (15 statements mapped to this topic). Detailed lemma trees and some routes may be omitted; the full graph and focused exports retain them. All premises, including hidden sources and omitted proof premises, are required. Use `explain` for their complete source pins, locators and blockers.
+
+Current unconditional proof-source leaves are omitted from this diagram; each diamond states how many source premises are hidden.
 
 ## Factorial moments and rigidity
 
 Factorial moment functionals, composition rigidity and Strong Factorial families.
 
-**Computed obligation progress:** 9 open.
+**Computed obligation progress:** 10 open; 1 stale.
 
 Unrestricted FC and SFC remain open. Universal special-family theorems do not supply an arbitrary-support reduction.
 
@@ -359,6 +379,8 @@ Higher-gap rank and backward-pivot results are proved criteria. Uniform actual-f
 
 New gap-three certificates cover entire infinite matrices for n=2..16 and all beta>=0; initial minors and pivots have separate unbounded-index scopes. Prime-power terminal families and arbitrary-support initial pairs do not close all univariate binomial SFC.
 
+Effective large-gap and large-lower-exponent bounds reduce each fixed ordinary terminal order to an explicit finite support rectangle; all rectangles as N varies are still unchecked. Fixed-shape auxiliary positive networks do not yet transfer through the signed cyclic Wronskian map.
+
 | Principal claim | Graph state | Dependency coverage | Current blockers |
 |---|---|---|---|
 | [BINARY-FACTORIAL-RIGIDITY](factorial/image-rigidity/LONG_EIT_AND_FC2_AUDIT.tex) | proved | partial | none in declared routes |
@@ -366,12 +388,14 @@ New gap-three certificates cover entire infinite matrices for n=2..16 and all be
 | [UNIVARIATE-TWO-TERM-SFC](factorial/image-rigidity/ALL_UNIVARIATE_TWO_TERM_SFC.tex) | proved | partial | none in declared routes |
 | [OTHER-TWO-TERM-SFC](factorial/image-rigidity/UNIFORM_PADE_PARABOLA_SFC.tex) | proved | partial | none in declared routes |
 | [GENERAL-GAP-CRITERIA](factorial/image-rigidity/HIGHER_GAP_ADJOINT_RANK.tex) | proved | partial | none in declared routes |
-| [BINOMIAL-INITIAL-BOUNDARY](factorial/image-rigidity/lower_exponent_initial_and_boundary.tex) | proved | partial | none in declared routes |
-| [BINOMIAL-ARITHMETIC-STARTS](factorial/image-rigidity/ARITHMETIC_FRONTIER_TERMINAL_ORDERS.tex) | proved | partial | none in declared routes |
+| [BINOMIAL-INITIAL-BOUNDARY](factorial/image-rigidity/lower_exponent_initial_and_boundary.tex) | stale | partial | SOURCE-ROUTE-BINOMIAL-INITIAL-BOUNDARY (stale); SOURCE-BINOMIAL-INITIAL-BOUNDARY (stale) |
+| [BINOMIAL-ARITHMETIC-STARTS](factorial/image-rigidity/ARITHMETIC_FRONTIER_TERMINAL_ORDERS.tex) | stale | partial | SOURCE-ROUTE-BINOMIAL-ARITHMETIC-STARTS (stale); SOURCE-BINOMIAL-ARITHMETIC-STARTS (stale) |
 | [GAP-THREE-HURWITZ-CERTIFICATES](factorial/image-rigidity/gap_three_hurwitz.tex) | proved | partial | none in declared routes |
+| [AUXILIARY-RIORDAN-TRANSFER](factorial/image-rigidity/gap_three_hurwitz_structure.tex) | proved | partial | none in declared routes |
 
 | Goal or obligation | Kind | Graph state | Coverage | Exact scope | Current blockers |
 |---|---|---|---|---|---|
+| FACTORIAL-BINOMIAL-RECTANGLE-PAIRS | mathematical | open | partial | For every integer N>=4 and every integer 1<=a<A_N,2<=d<D_N, prove gcd_Q[t](M_(N-1,a,d),M_(N,a,d))=1, with D_N=2(N-1)*min{e:2^e>=4N(N-1)} and A_N=(N*D_N^2+D_N)(4N+1)^N. Each rectangle is finite, but all N are unbounded and unverified. | FACTORIAL-BINOMIAL-RECTANGLE-PAIRS (open) |
 | FACTORIAL-GAP-FULL-RANK | mathematical | open | partial | For the actual positive Gamma moment family at higher gaps, prove all (d-1)-minors have no common nonzero root uniformly in the stated index/shape range. | FACTORIAL-GAP-FULL-RANK (open) |
 | FACTORIAL-GAP3-PIVOTS | mathematical | open | partial | Every pivot in the backward certificate for actual W_r/W_r(0) in physical gamma=n+beta-1,beta>0 is nonzero. | FACTORIAL-GAP3-PIVOTS (open) |
 | FACTORIAL-GAP3-STAIRCASE-POSITIVITY | mathematical | open | partial | For every p>=1, r=ceil(p/2), prove the special minor Delta_p(x+r,beta) has nonnegative rational coefficients and a positive constant. Delta_p=det(C_(3j-i)), rows i=k..k+r-1, columns j=1..r, k=2r-p+1. Retained certificates prove p<=8 only. | FACTORIAL-GAP3-STAIRCASE-POSITIVITY (open) |
@@ -381,6 +405,7 @@ New gap-three certificates cover entire infinite matrices for n=2..16 and all be
 | FACTORIAL-LOWER-ONE-HIGHER-GAP | goal | open | partial | Close the specified X(A+B X^d) families for all indices and positive Gamma shapes at d>=3. | FACTORIAL-GAP-FULL-RANK (open) |
 | FACTORIAL-GAP3-HURWITZ-TN | mathematical | open | partial | Prove that the whole infinite H3(W_(n,n+beta-1)) is totally nonnegative for every integer n>=2 and every beta>0; the n<=16 theorem and first nine pivots do not prove this. | FACTORIAL-GAP3-STAIRCASE-POSITIVITY (open) |
 | FACTORIAL-GAP3-ALL-PAIRS | goal | open | partial | For every beta>0, nonzero X(A+B X^3), and terminal N>=2, the Gamma moments at N-1 and N cannot both vanish. The ordinary quartic-binomial case is beta=1. | FACTORIAL-GAP3-STAIRCASE-POSITIVITY (open) |
+| FACTORIAL-ALL-UNIVARIATE-BINOMIAL-SFC | goal | stale | partial | For every integers a>=0,d>=1,N>=2, the ordinary factorial moment polynomials M_(N-1,a,d) and M_(N,a,d) are coprime, equivalently every nonzero complex X^a(A+B X^d) has a nonzero moment in every consecutive positive pair. Neither all-index lower-one gap-three nor unrestricted lower exponents are presumed solved. | FACTORIAL-SUPPORT-RECTANGLES-TO-ALL-BINOMIALS (stale); SOURCE-ROUTE-BINOMIAL-INITIAL-BOUNDARY (stale); SOURCE-BINOMIAL-INITIAL-BOUNDARY (stale); FACTORIAL-BINOMIAL-RECTANGLE-PAIRS (open) |
 
 ```mermaid
 flowchart LR
@@ -388,103 +413,107 @@ flowchart LR
   class n0 proved
   n1["EXT-LONG-EIT-I<br/>proved"]
   class n1 proved
-  n2["FACTORIAL-ADJACENT-SFC<br/>proved"]
-  class n2 proved
-  n3["FACTORIAL-DYADIC-SFC<br/>proved"]
-  class n3 proved
-  n4["FACTORIAL-GAP-FULL-RANK<br/>open"]
-  class n4 open
-  n5["FACTORIAL-GAP-RANK-CRITERION<br/>proved"]
-  class n5 proved
-  n6["FACTORIAL-GAP3-PIVOTS<br/>open"]
-  class n6 open
-  n7["FACTORIAL-GAP3-REAL-SECTIONS<br/>proved"]
-  class n7 proved
-  n8["FACTORIAL-GAP3-STAIRCASE-<br/>POSITIVITY<br/>open"]
+  n2["FACTORIAL-BINOMIAL-RECTANGLE-<br/>PAIRS<br/>open"]
+  class n2 open
+  n3["FACTORIAL-GAP-FULL-RANK<br/>open"]
+  class n3 open
+  n4["FACTORIAL-GAP-RANK-CRITERION<br/>proved"]
+  class n4 proved
+  n5["FACTORIAL-GAP3-PIVOTS<br/>open"]
+  class n5 open
+  n6["FACTORIAL-GAP3-REAL-SECTIONS<br/>proved"]
+  class n6 proved
+  n7["FACTORIAL-GAP3-STAIRCASE-<br/>POSITIVITY<br/>open"]
+  class n7 open
+  n8(["FACTORIAL-GENERAL-FC<br/>open"])
   class n8 open
-  n9(["FACTORIAL-GENERAL-FC<br/>open"])
+  n9(["FACTORIAL-GENERAL-SFC<br/>open"])
   class n9 open
-  n10(["FACTORIAL-GENERAL-SFC<br/>open"])
+  n10["GAP-FACTORIAL-3<br/>open"]
   class n10 open
-  n11["FACTORIAL-SIMPLEX-PENCIL<br/>proved"]
-  class n11 proved
-  n12["GAP-FACTORIAL-3<br/>open"]
-  class n12 open
-  n13["FACTORIAL-CUBIC-SFC<br/>proved"]
-  class n13 proved
-  n14["FACTORIAL-FC2<br/>proved"]
-  class n14 proved
-  n15(["FACTORIAL-LOWER-ONE-HIGHER-GAP<br/>open"])
-  class n15 open
-  n16["FACTORIAL-GAP3-HURWITZ-TN<br/>open"]
-  class n16 open
-  n17["BINARY-FACTORIAL-RIGIDITY<br/>proved"]
-  class n17 proved
-  n18["BINOMIAL-ARITHMETIC-STARTS<br/>proved"]
-  class n18 proved
-  n19["BINOMIAL-INITIAL-BOUNDARY<br/>proved"]
+  n11["SOURCE-BINOMIAL-ARITHMETIC-<br/>STARTS<br/>stale"]
+  class n11 stale
+  n12["SOURCE-BINOMIAL-INITIAL-<br/>BOUNDARY<br/>stale"]
+  class n12 stale
+  n13(["FACTORIAL-LOWER-ONE-HIGHER-GAP<br/>open"])
+  class n13 open
+  n14["FACTORIAL-GAP3-HURWITZ-TN<br/>open"]
+  class n14 open
+  n15["AUXILIARY-RIORDAN-TRANSFER<br/>proved"]
+  class n15 proved
+  n16["BINARY-FACTORIAL-RIGIDITY<br/>proved"]
+  class n16 proved
+  n17["BINOMIAL-ARITHMETIC-STARTS<br/>stale"]
+  class n17 stale
+  n18["BINOMIAL-INITIAL-BOUNDARY<br/>stale"]
+  class n18 stale
+  n19["FACTORIAL-PENCIL-FAMILIES<br/>proved"]
   class n19 proved
-  n20["FACTORIAL-PENCIL-FAMILIES<br/>proved"]
+  n20["GAP-THREE-HURWITZ-CERTIFICATES<br/>proved"]
   class n20 proved
-  n21["GAP-THREE-HURWITZ-CERTIFICATES<br/>proved"]
+  n21["GENERAL-GAP-CRITERIA<br/>proved"]
   class n21 proved
-  n22["GENERAL-GAP-CRITERIA<br/>proved"]
+  n22["OTHER-TWO-TERM-SFC<br/>proved"]
   class n22 proved
-  n23["OTHER-TWO-TERM-SFC<br/>proved"]
+  n23["UNIVARIATE-TWO-TERM-SFC<br/>proved"]
   class n23 proved
-  n24["UNIVARIATE-TWO-TERM-SFC<br/>proved"]
-  class n24 proved
-  n25(["FACTORIAL-GAP3-ALL-PAIRS<br/>open"])
-  class n25 open
-  r0{"AND<br/>SOURCE-ROUTE-BINARY-FACTORIAL-<br/>RIGIDITY<br/>+1 pinned source<br/>proved"}
+  n24(["FACTORIAL-GAP3-ALL-PAIRS<br/>open"])
+  class n24 open
+  n25(["FACTORIAL-ALL-UNIVARIATE-<br/>BINOMIAL-SFC<br/>stale"])
+  class n25 stale
+  r0{"AND<br/>SOURCE-ROUTE-AUXILIARY-<br/>RIORDAN-TRANSFER<br/>+1 pinned source<br/>proved"}
   class r0 proved
-  n1 --> r0
-  r0 --> n17
-  r1{"AND<br/>SOURCE-ROUTE-FACTORIAL-PENCIL-<br/>FAMILIES<br/>+1 pinned source<br/>proved"}
+  r0 --> n15
+  r1{"AND<br/>SOURCE-ROUTE-BINARY-FACTORIAL-<br/>RIGIDITY<br/>+1 pinned source<br/>proved"}
   class r1 proved
-  r1 --> n20
-  r2{"AND<br/>SOURCE-ROUTE-UNIVARIATE-TWO-<br/>TERM-SFC<br/>+1 pinned source<br/>proved"}
-  class r2 proved
-  r2 --> n24
-  r3{"AND<br/>SOURCE-ROUTE-OTHER-TWO-TERM-<br/>SFC<br/>+1 pinned source<br/>proved"}
-  class r3 proved
-  n0 --> r3
-  r3 --> n23
-  r4{"AND<br/>SOURCE-ROUTE-GENERAL-GAP-<br/>CRITERIA<br/>+1 pinned source<br/>proved"}
+  n1 --> r1
+  r1 --> n16
+  r2{"AND<br/>SOURCE-ROUTE-BINOMIAL-<br/>ARITHMETIC-STARTS<br/>stale"}
+  class r2 stale
+  n11 --> r2
+  r2 --> n17
+  r3{"AND<br/>SOURCE-ROUTE-BINOMIAL-INITIAL-<br/>BOUNDARY<br/>stale"}
+  class r3 stale
+  n12 --> r3
+  r3 --> n18
+  r4{"AND<br/>SOURCE-ROUTE-FACTORIAL-PENCIL-<br/>FAMILIES<br/>+1 pinned source<br/>proved"}
   class r4 proved
-  r4 --> n22
-  r5{"AND<br/>AUDIT-A-eit-to-fc2<br/>proved"}
+  r4 --> n19
+  r5{"AND<br/>SOURCE-ROUTE-GAP-THREE-<br/>HURWITZ-CERTIFICATES<br/>+1 pinned source<br/>proved"}
   class r5 proved
-  n1 --> r5
-  r5 --> n14
-  r6{"AND<br/>AUDIT-A-rank-to-lower-one<br/>blocked"}
-  class r6 open
-  n5 --> r6
-  n4 --> r6
-  r6 --> n15
-  r7{"AND<br/>AUDIT-A-cubic-stability-sfc<br/>proved"}
+  r5 --> n20
+  r6{"AND<br/>SOURCE-ROUTE-GENERAL-GAP-<br/>CRITERIA<br/>+1 pinned source<br/>proved"}
+  class r6 proved
+  r6 --> n21
+  r7{"AND<br/>SOURCE-ROUTE-OTHER-TWO-TERM-<br/>SFC<br/>+1 pinned source<br/>proved"}
   class r7 proved
   n0 --> r7
-  r7 --> n13
-  r8{"AND<br/>SOURCE-ROUTE-BINOMIAL-INITIAL-<br/>BOUNDARY<br/>+1 pinned source<br/>proved"}
+  r7 --> n22
+  r8{"AND<br/>SOURCE-ROUTE-UNIVARIATE-TWO-<br/>TERM-SFC<br/>+1 pinned source<br/>proved"}
   class r8 proved
-  r8 --> n19
-  r9{"AND<br/>SOURCE-ROUTE-BINOMIAL-<br/>ARITHMETIC-STARTS<br/>+1 pinned source<br/>proved"}
-  class r9 proved
-  r9 --> n18
-  r10{"AND<br/>SOURCE-ROUTE-GAP-THREE-<br/>HURWITZ-CERTIFICATES<br/>+1 pinned source<br/>proved"}
-  class r10 proved
-  r10 --> n21
+  r8 --> n23
+  r9{"AND<br/>FACTORIAL-SUPPORT-RECTANGLES-<br/>TO-ALL-BINOMIALS<br/>stale"}
+  class r9 stale
+  n18 --> r9
+  n2 --> r9
+  n23 --> r9
+  n22 --> r9
+  r9 --> n25
+  r10{"AND<br/>FACTORIAL-GAP3-OPEN-SECTOR-TO-<br/>SFC<br/>+1 pinned source<br/>blocked"}
+  class r10 open
+  n14 --> r10
+  n6 --> r10
+  n4 --> r10
+  r10 --> n24
   r11{"AND<br/>FACTORIAL-GAP3-STAIRCASE-TO-TN<br/>+1 pinned source<br/>blocked"}
   class r11 open
-  n8 --> r11
-  r11 --> n16
-  r12{"AND<br/>FACTORIAL-GAP3-OPEN-SECTOR-TO-<br/>SFC<br/>+1 pinned source<br/>blocked"}
+  n7 --> r11
+  r11 --> n14
+  r12{"AND<br/>AUDIT-A-rank-to-lower-one<br/>blocked"}
   class r12 open
-  n16 --> r12
-  n7 --> r12
-  n5 --> r12
-  r12 --> n25
+  n4 --> r12
+  n3 --> r12
+  r12 --> n13
   classDef proved fill:#e6f4ea,stroke:#2e7d32
   classDef conditional fill:#fff8e1,stroke:#a66b00
   classDef open fill:#fff4e5,stroke:#bf6a00
@@ -493,7 +522,9 @@ flowchart LR
   classDef unmapped fill:#f1f3f4,stroke:#607d8b
 ```
 
-Current unconditional proof-source leaves are omitted from this diagram; each diamond states how many source premises are hidden. All premises, including hidden sources, are required. Use `explain` for their pins and locators.
+Overview: 26 statements and 13 routes (39 statements mapped to this topic). Detailed lemma trees and some routes may be omitted; the full graph and focused exports retain them. All premises, including hidden sources and omitted proof premises, are required. Use `explain` for their complete source pins, locators and blockers.
+
+Current unconditional proof-source leaves are omitted from this diagram; each diamond states how many source premises are hidden.
 
 ## Dixmier and Weyl algebras
 
@@ -545,16 +576,16 @@ flowchart LR
   class n8 proved
   n9(["GOAL-DC2-FAILURE<br/>open"])
   class n9 open
-  r0{"AND<br/>SOURCE-ROUTE-DIXMIER-FORMAL-<br/>LIFTING<br/>+1 pinned source<br/>proved"}
-  class r0 proved
-  r0 --> n7
-  r1{"AND<br/>SOURCE-ROUTE-DIXMIER-SCALAR-<br/>MATES<br/>+1 pinned source<br/>proved"}
+  r0{"AND<br/>SOURCE-ROUTE-DIXMIER-<br/>CENTRALIZER-COMPLETION<br/>+1 pinned source<br/>blocked"}
+  class r0 open
+  n0 --> r0
+  r0 --> n6
+  r1{"AND<br/>SOURCE-ROUTE-DIXMIER-FORMAL-<br/>LIFTING<br/>+1 pinned source<br/>proved"}
   class r1 proved
-  r1 --> n8
-  r2{"AND<br/>SOURCE-ROUTE-DIXMIER-<br/>CENTRALIZER-COMPLETION<br/>+1 pinned source<br/>blocked"}
-  class r2 open
-  n0 --> r2
-  r2 --> n6
+  r1 --> n7
+  r2{"AND<br/>SOURCE-ROUTE-DIXMIER-SCALAR-<br/>MATES<br/>+1 pinned source<br/>proved"}
+  class r2 proved
+  r2 --> n8
   r3{"AND<br/>BOUNDED-LIFT-TO-DC2-FAILURE<br/>blocked"}
   class r3 open
   n7 --> r3
@@ -568,7 +599,9 @@ flowchart LR
   classDef unmapped fill:#f1f3f4,stroke:#607d8b
 ```
 
-Current unconditional proof-source leaves are omitted from this diagram; each diamond states how many source premises are hidden. All premises, including hidden sources, are required. Use `explain` for their pins and locators.
+Overview: 10 statements and 4 routes (13 statements mapped to this topic). Detailed lemma trees and some routes may be omitted; the full graph and focused exports retain them. All premises, including hidden sources and omitted proof premises, are required. Use `explain` for their complete source pins, locators and blockers.
+
+Current unconditional proof-source leaves are omitted from this diagram; each diamond states how many source premises are hidden.
 
 ## Meridional rank
 
@@ -617,19 +650,19 @@ flowchart LR
   class n8 proved
   n9["MRC-PERIODIC-FAMILIES<br/>open"]
   class n9 open
-  r0{"AND<br/>SOURCE-ROUTE-MRC-NAMED-<br/>EXAMPLES<br/>+1 pinned source<br/>proved"}
+  r0{"AND<br/>SOURCE-ROUTE-MRC-COVER-BOUNDS<br/>+1 pinned source<br/>proved"}
   class r0 proved
-  n0 --> r0
-  n1 --> r0
-  r0 --> n8
-  r1{"AND<br/>SOURCE-ROUTE-MRC-PERIODIC-<br/>FAMILIES<br/>+1 pinned source<br/>blocked"}
-  class r1 open
-  n3 --> r1
-  n2 --> r1
-  r1 --> n9
-  r2{"AND<br/>SOURCE-ROUTE-MRC-COVER-BOUNDS<br/>+1 pinned source<br/>proved"}
-  class r2 proved
-  r2 --> n7
+  r0 --> n7
+  r1{"AND<br/>SOURCE-ROUTE-MRC-NAMED-<br/>EXAMPLES<br/>+1 pinned source<br/>proved"}
+  class r1 proved
+  n0 --> r1
+  n1 --> r1
+  r1 --> n8
+  r2{"AND<br/>SOURCE-ROUTE-MRC-PERIODIC-<br/>FAMILIES<br/>+1 pinned source<br/>blocked"}
+  class r2 open
+  n3 --> r2
+  n2 --> r2
+  r2 --> n9
   classDef proved fill:#e6f4ea,stroke:#2e7d32
   classDef conditional fill:#fff8e1,stroke:#a66b00
   classDef open fill:#fff4e5,stroke:#bf6a00
@@ -638,7 +671,9 @@ flowchart LR
   classDef unmapped fill:#f1f3f4,stroke:#607d8b
 ```
 
-Current unconditional proof-source leaves are omitted from this diagram; each diamond states how many source premises are hidden. All premises, including hidden sources, are required. Use `explain` for their pins and locators.
+Overview: 10 statements and 3 routes (13 statements mapped to this topic). Detailed lemma trees and some routes may be omitted; the full graph and focused exports retain them. All premises, including hidden sources and omitted proof premises, are required. Use `explain` for their complete source pins, locators and blockers.
+
+Current unconditional proof-source leaves are omitted from this diagram; each diamond states how many source premises are hidden.
 
 ## Arithmetic fibres and discriminant geometry
 
@@ -676,104 +711,82 @@ Constructive finite etale fibres, arithmetic failures and discriminant geometry.
 
 ```mermaid
 flowchart LR
-  n0["ARITHMETIC-FIXED-FIBRE-<br/>GEOMETRY<br/>proved"]
+  n0["EXT-SELBERG-DELANGE<br/>proved"]
   class n0 proved
-  n1["ARITHMETIC-SUPPLIED-<br/>REALIZATION<br/>proved"]
-  class n1 proved
-  n2["EXT-LOW-DEGREE-INTERSECTIVE<br/>open"]
+  n1["FORMAL-SUPPLIED-CHAR-NE2<br/>open"]
+  class n1 open
+  n2["GAP-ARITHMETIC-1<br/>open"]
   class n2 open
-  n3["EXT-SELBERG-DELANGE<br/>proved"]
-  class n3 proved
-  n4["FORMAL-SUPPLIED-CHAR-NE2<br/>open"]
+  n3["GAP-ARITHMETIC-2<br/>open"]
+  class n3 open
+  n4["GAP-ARITHMETIC-3<br/>open"]
   class n4 open
-  n5["GAP-ARITHMETIC-1<br/>open"]
+  n5["GAP-ARITHMETIC-4<br/>open"]
   class n5 open
-  n6["GAP-ARITHMETIC-2<br/>open"]
+  n6["GAP-ARITHMETIC-5<br/>open"]
   class n6 open
-  n7["GAP-ARITHMETIC-3<br/>open"]
+  n7["GAP-ARITHMETIC-6<br/>open"]
   class n7 open
-  n8["GAP-ARITHMETIC-4<br/>open"]
+  n8["GAP-ARITHMETIC-7<br/>open"]
   class n8 open
-  n9["GAP-ARITHMETIC-5<br/>open"]
+  n9["GAP-ARITHMETIC-8<br/>open"]
   class n9 open
-  n10["GAP-ARITHMETIC-6<br/>open"]
+  n10["VERIFY-RATIONAL-LINE-COUNT<br/>open"]
   class n10 open
-  n11["GAP-ARITHMETIC-7<br/>open"]
-  class n11 open
-  n12["GAP-ARITHMETIC-8<br/>open"]
-  class n12 open
-  n13["VERIFY-RATIONAL-LINE-COUNT<br/>open"]
-  class n13 open
-  n14["ARITHMETIC-COMMON-ARITHMETIC-<br/>FIBERS<br/>proved"]
+  n11["ARITHMETIC-COMMON-ARITHMETIC-<br/>FIBERS<br/>proved"]
+  class n11 proved
+  n12["ARITHMETIC-DISCRIMINANT-<br/>PENCILS<br/>proved"]
+  class n12 proved
+  n13["ARITHMETIC-EXACT-REAL-CHAMBER-<br/>SPECTRA<br/>proved"]
+  class n13 proved
+  n14["ARITHMETIC-QUADRATIC-GAUGE-<br/>NONPROPERNESS<br/>proved"]
   class n14 proved
-  n15["ARITHMETIC-DISCRIMINANT-<br/>PENCILS<br/>proved"]
+  n15["JACOBIAN-CUBIC-CONSTRUCTIONS<br/>proved"]
   class n15 proved
-  n16["ARITHMETIC-EXACT-REAL-CHAMBER-<br/>SPECTRA<br/>proved"]
+  n16["ARITHMETIC-RATIONAL-LINE-<br/>CLASSIFICATION<br/>proved"]
   class n16 proved
-  n17["ARITHMETIC-QUADRATIC-GAUGE-<br/>NONPROPERNESS<br/>proved"]
+  n17["ARITHMETIC-JC-NEGATION<br/>proved<br/>OR routes"]
   class n17 proved
-  n18["JACOBIAN-CUBIC-CONSTRUCTIONS<br/>proved"]
+  n18["ARITHMETIC-RATIONAL-LINE-COUNT<br/>proved"]
   class n18 proved
-  n19["ARITHMETIC-RATIONAL-LINE-<br/>CLASSIFICATION<br/>proved"]
+  n19["ARITHMETIC-FIXED-MAP-HASSE-<br/>FAILURES<br/>proved"]
   class n19 proved
-  n20["ARITHMETIC-JC-NEGATION<br/>proved<br/>OR routes"]
-  class n20 proved
-  n21["ARITHMETIC-HASSE-COUNT<br/>proved"]
-  class n21 proved
-  n22["ARITHMETIC-HASSE-DEGREE-<br/>MINIMUM<br/>open"]
-  class n22 open
-  n23["ARITHMETIC-RATIONAL-LINE-COUNT<br/>proved"]
-  class n23 proved
-  n24["ARITHMETIC-FIXED-MAP-HASSE-<br/>FAILURES<br/>proved"]
-  class n24 proved
-  r0{"AND<br/>SOURCE-ROUTE-JACOBIAN-CUBIC-<br/>CONSTRUCTIONS<br/>+1 pinned source<br/>proved"}
+  r0{"AND<br/>SOURCE-ROUTE-ARITHMETIC-<br/>COMMON-ARITHMETIC-FIBERS<br/>+1 pinned source<br/>proved"}
   class r0 proved
-  r0 --> n18
-  r1{"AND<br/>SOURCE-ROUTE-ARITHMETIC-<br/>COMMON-ARITHMETIC-FIBERS<br/>+1 pinned source<br/>proved"}
+  r0 --> n11
+  r1{"AND<br/>SOURCE-ROUTE-ARITHMETIC-<br/>DISCRIMINANT-PENCILS<br/>+1 pinned source<br/>proved"}
   class r1 proved
-  r1 --> n14
-  r2{"AND<br/>SOURCE-ROUTE-ARITHMETIC-FIXED-<br/>MAP-HASSE-FAILURES<br/>+1 pinned source<br/>proved"}
+  r1 --> n12
+  r2{"AND<br/>SOURCE-ROUTE-ARITHMETIC-EXACT-<br/>REAL-CHAMBER-SPECTRA<br/>+1 pinned source<br/>proved"}
   class r2 proved
-  n19 --> r2
-  n23 --> r2
-  r2 --> n24
-  r3{"AND<br/>SOURCE-ROUTE-ARITHMETIC-<br/>QUADRATIC-GAUGE-NONPROPERNESS<br/>+1 pinned source<br/>proved"}
+  r2 --> n13
+  r3{"AND<br/>SOURCE-ROUTE-ARITHMETIC-FIXED-<br/>MAP-HASSE-FAILURES<br/>+1 pinned source<br/>proved"}
   class r3 proved
-  r3 --> n17
-  r4{"AND<br/>SOURCE-ROUTE-ARITHMETIC-<br/>DISCRIMINANT-PENCILS<br/>+1 pinned source<br/>proved"}
+  n16 --> r3
+  n18 --> r3
+  r3 --> n19
+  r4{"AND<br/>SOURCE-ROUTE-ARITHMETIC-<br/>QUADRATIC-GAUGE-NONPROPERNESS<br/>+1 pinned source<br/>proved"}
   class r4 proved
-  r4 --> n15
-  r5{"AND<br/>SOURCE-ROUTE-ARITHMETIC-EXACT-<br/>REAL-CHAMBER-SPECTRA<br/>+1 pinned source<br/>proved"}
+  r4 --> n14
+  r5{"AND<br/>AUDIT-A-realization-to-jc-<br/>negation<br/>proved"}
   class r5 proved
-  r5 --> n16
-  r6{"AND<br/>AUDIT-A-realization-to-jc-<br/>negation<br/>proved"}
+  n11 --> r5
+  r5 --> n17
+  r6{"AND<br/>INTERNAL-CUBIC-COLLISION-TO-<br/>JC-FAILURE<br/>proved"}
   class r6 proved
-  n14 --> r6
-  r6 --> n20
-  r7{"AND<br/>AUDIT-A-count-family<br/>proved"}
+  n15 --> r6
+  r6 --> n17
+  r7{"AND<br/>SOURCE-ROUTE-JACOBIAN-CUBIC-<br/>CONSTRUCTIONS<br/>+1 pinned source<br/>proved"}
   class r7 proved
-  n19 --> r7
-  n3 --> r7
-  r7 --> n21
-  r8{"AND<br/>AUDIT-A-minimal-hasse-degree<br/>blocked"}
-  class r8 open
-  n0 --> r8
-  n19 --> r8
-  n2 --> r8
-  r8 --> n22
-  r9{"AND<br/>INTERNAL-CUBIC-COLLISION-TO-<br/>JC-FAILURE<br/>proved"}
+  r7 --> n15
+  r8{"AND<br/>FIXED-GEOMETRY-TO-RATIONAL-<br/>LINE-CLASSIFICATION<br/>+2 omitted proof premises<br/>proved"}
+  class r8 proved
+  r8 --> n16
+  r9{"AND<br/>RATIONAL-CLASSIFICATION-AND-<br/>SD-TO-LINE-COUNT<br/>+1 omitted proof premise<br/>proved"}
   class r9 proved
-  n18 --> r9
-  r9 --> n20
-  r10{"AND<br/>FIXED-GEOMETRY-TO-RATIONAL-<br/>LINE-CLASSIFICATION<br/>+1 pinned source<br/>proved"}
-  class r10 proved
-  n0 --> r10
-  r10 --> n19
-  r11{"AND<br/>RATIONAL-CLASSIFICATION-AND-<br/>SD-TO-LINE-COUNT<br/>+1 pinned source<br/>proved"}
-  class r11 proved
-  n19 --> r11
-  n3 --> r11
-  r11 --> n23
+  n16 --> r9
+  n0 --> r9
+  r9 --> n18
   classDef proved fill:#e6f4ea,stroke:#2e7d32
   classDef conditional fill:#fff8e1,stroke:#a66b00
   classDef open fill:#fff4e5,stroke:#bf6a00
@@ -782,7 +795,9 @@ flowchart LR
   classDef unmapped fill:#f1f3f4,stroke:#607d8b
 ```
 
-Current unconditional proof-source leaves are omitted from this diagram; each diamond states how many source premises are hidden. All premises, including hidden sources, are required. Use `explain` for their pins and locators.
+Overview: 20 statements and 10 routes (31 statements mapped to this topic). Detailed lemma trees and some routes may be omitted; the full graph and focused exports retain them. All premises, including hidden sources and omitted proof premises, are required. Use `explain` for their complete source pins, locators and blockers.
+
+Current unconditional proof-source leaves are omitted from this diagram; each diamond states how many source premises are hidden.
 
 ## Formal verification
 
@@ -837,23 +852,23 @@ flowchart LR
   class n9 conditional
   n10["FORMAL-GVC<br/>proved"]
   class n10 proved
-  r0{"AND<br/>SOURCE-ROUTE-FORMAL-GVC<br/>+1 pinned source<br/>proved"}
+  r0{"AND<br/>SOURCE-ROUTE-FORMAL-<br/>DISCRIMINANT<br/>+1 pinned source<br/>proved"}
   class r0 proved
-  r0 --> n10
-  r1{"AND<br/>SOURCE-ROUTE-FORMAL-GMC2<br/>+1 pinned source<br/>conditional"}
-  class r1 conditional
-  r1 --> n9
-  r2{"AND<br/>SOURCE-ROUTE-FORMAL-FINITE-<br/>ETALE<br/>+1 pinned source<br/>proved"}
-  class r2 proved
-  r2 --> n8
-  r3{"AND<br/>SOURCE-ROUTE-FORMAL-<br/>DISCRIMINANT<br/>+1 pinned source<br/>proved"}
-  class r3 proved
-  r3 --> n7
-  r4{"AND<br/>FORMAL-GMC2-DISCHARGED-IMPORTS<br/>+1 pinned source<br/>blocked"}
-  class r4 open
-  n0 --> r4
-  n1 --> r4
-  r4 --> n9
+  r0 --> n7
+  r1{"AND<br/>SOURCE-ROUTE-FORMAL-FINITE-<br/>ETALE<br/>+1 pinned source<br/>proved"}
+  class r1 proved
+  r1 --> n8
+  r2{"AND<br/>FORMAL-GMC2-DISCHARGED-IMPORTS<br/>+1 pinned source<br/>blocked"}
+  class r2 open
+  n0 --> r2
+  n1 --> r2
+  r2 --> n9
+  r3{"AND<br/>SOURCE-ROUTE-FORMAL-GMC2<br/>+1 pinned source<br/>conditional"}
+  class r3 conditional
+  r3 --> n9
+  r4{"AND<br/>SOURCE-ROUTE-FORMAL-GVC<br/>+1 pinned source<br/>proved"}
+  class r4 proved
+  r4 --> n10
   classDef proved fill:#e6f4ea,stroke:#2e7d32
   classDef conditional fill:#fff8e1,stroke:#a66b00
   classDef open fill:#fff4e5,stroke:#bf6a00
@@ -862,7 +877,9 @@ flowchart LR
   classDef unmapped fill:#f1f3f4,stroke:#607d8b
 ```
 
-Current unconditional proof-source leaves are omitted from this diagram; each diamond states how many source premises are hidden. All premises, including hidden sources, are required. Use `explain` for their pins and locators.
+Overview: 11 statements and 5 routes (15 statements mapped to this topic). Detailed lemma trees and some routes may be omitted; the full graph and focused exports retain them. All premises, including hidden sources and omitted proof premises, are required. Use `explain` for their complete source pins, locators and blockers.
+
+Current unconditional proof-source leaves are omitted from this diagram; each diamond states how many source premises are hidden.
 
 ## Changed or missing evidence
 
@@ -870,5 +887,17 @@ These declarations require inspection and revalidation. Updating a digest alone 
 
 | Owner | Source | Freshness |
 |---|---|---|
-| SOURCE-GAUSSIAN-H21-AFFINE-CHART | [moments/vanishing/GAUSSIAN_AFFINE_ISOTROPIC_CHART.md](moments/vanishing/GAUSSIAN_AFFINE_ISOTROPIC_CHART.md) | changed |
-| SOURCE-ROUTE-GAUSSIAN-H21-AFFINE-CHART | [moments/vanishing/GAUSSIAN_AFFINE_ISOTROPIC_CHART.md](moments/vanishing/GAUSSIAN_AFFINE_ISOTROPIC_CHART.md) | changed |
+| FACTORIAL-BINOMIAL-RECTANGLE-PAIRS | [factorial/image-rigidity/lower_exponent_initial_and_boundary.tex](factorial/image-rigidity/lower_exponent_initial_and_boundary.tex) | changed |
+| GAP-TWO-PAIR-33 | [foundations/extended-geometry/TWO_PAIR_IMAGE_CUBIC_STRATIFICATION.md](foundations/extended-geometry/TWO_PAIR_IMAGE_CUBIC_STRATIFICATION.md) | changed |
+| GAP-TWO-PAIR-33 | [foundations/scripts/verify_two_pair_image_cubic_structure.py](foundations/scripts/verify_two_pair_image_cubic_structure.py) | changed |
+| GAP-TWO-PAIR-33 | [foundations/scripts/verify_two_pair_image_cubic_phase_slice.py](foundations/scripts/verify_two_pair_image_cubic_phase_slice.py) | changed |
+| GAP-TWO-PAIR-33 | [foundations/scripts/verify_two_pair_image_cubic_affine_slice.py](foundations/scripts/verify_two_pair_image_cubic_affine_slice.py) | changed |
+| GAP-TWO-PAIR-33 | [foundations/extended-geometry/two_pair_image_cubic_structure_verification.json](foundations/extended-geometry/two_pair_image_cubic_structure_verification.json) | changed |
+| GAP-TWO-PAIR-33 | [foundations/extended-geometry/two_pair_image_cubic_phase_slice_verification.json](foundations/extended-geometry/two_pair_image_cubic_phase_slice_verification.json) | changed |
+| GAP-TWO-PAIR-33 | [foundations/extended-geometry/two_pair_image_cubic_affine_slice_verification.json](foundations/extended-geometry/two_pair_image_cubic_affine_slice_verification.json) | changed |
+| SOURCE-BINOMIAL-ARITHMETIC-STARTS | [factorial/image-rigidity/ARITHMETIC_FRONTIER_TERMINAL_ORDERS.tex](factorial/image-rigidity/ARITHMETIC_FRONTIER_TERMINAL_ORDERS.tex) | changed |
+| SOURCE-BINOMIAL-INITIAL-BOUNDARY | [factorial/image-rigidity/lower_exponent_initial_and_boundary.tex](factorial/image-rigidity/lower_exponent_initial_and_boundary.tex) | changed |
+| SOURCE-ROUTE-BINOMIAL-ARITHMETIC-STARTS | [factorial/image-rigidity/ARITHMETIC_FRONTIER_TERMINAL_ORDERS.tex](factorial/image-rigidity/ARITHMETIC_FRONTIER_TERMINAL_ORDERS.tex) | changed |
+| SOURCE-ROUTE-BINOMIAL-INITIAL-BOUNDARY | [factorial/image-rigidity/lower_exponent_initial_and_boundary.tex](factorial/image-rigidity/lower_exponent_initial_and_boundary.tex) | changed |
+| FACTORIAL-ALL-UNIVARIATE-BINOMIAL-SFC | [factorial/image-rigidity/lower_exponent_initial_and_boundary.tex](factorial/image-rigidity/lower_exponent_initial_and_boundary.tex) | changed |
+| FACTORIAL-SUPPORT-RECTANGLES-TO-ALL-BINOMIALS | [factorial/image-rigidity/lower_exponent_initial_and_boundary.tex](factorial/image-rigidity/lower_exponent_initial_and_boundary.tex) | changed |

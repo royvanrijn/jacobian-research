@@ -1,0 +1,362 @@
+\documentclass[11pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb,amsthm,mathtools}
+\usepackage[hidelinks]{hyperref}
+\newtheorem{theorem}{Theorem}
+\newtheorem{corollary}[theorem]{Corollary}
+\title{Auxiliary Riordan factorizations and the cyclic Wronskian transfer}
+\author{Internal proof and exact replay; no priority claim}
+\date{17 November 2026}
+\begin{document}
+\maketitle
+For every integer gap $d\ge1$, define the monic auxiliary by
+\[
+ B_{0,\gamma,d}=1,\qquad
+ B_{n+1,\gamma,d}=(z+dn+\gamma+d-1)B_{n,\gamma,d}
+                                      -z\partial_zB_{n,\gamma,d}.
+                                                               \tag{1}
+\]
+At the physical parameter $\gamma=n+b-1$ put
+$\mathcal B_n(z;b,d)=B_{n,n+b-1,d}(z)$ and let
+\[
+ R_{n,k}(b,d)=[z^k]\mathcal B_n(z;b,d),\qquad n,k\ge0.
+\]
+Thus $R$ is lower triangular with diagonal entries one.
+All generating identities below are formal power-series identities
+in characteristic zero and hold for every real $b$; positivity is not
+assumed in deriving them. The counterexamples use the physical
+ordinary-factorial shape $b=1$.
+
+\section{An exact all-gap Riordan representation}
+\begin{theorem}\label{thm:Riordan}
+Set
+\[
+ P_d(u)=\frac{(1-u)-(1-u)^{d+1}}d,\qquad P_d(0)=0,
+ \quad P_d'(0)=1,
+\]
+and let $f_d(t)$ be its formal compositional inverse with $f_d(0)=0$.
+Then
+\[
+ \sum_{n\ge0}\mathcal B_n(z;b,d)\frac{t^n}{n!}
+ =g_{b,d}(t)e^{zf_d(t)},\qquad
+ g_{b,d}(t)=f_d'(t)(1-f_d(t))^{2-b}.                         \tag{2}
+\]
+Equivalently, $w=1-f_d(t)$ satisfies
+$t=(w-w^{d+1})/d$ and
+\[
+ g_{b,d}(t)=\frac{d\,w^{2-b}}{(d+1)w^d-1}.
+\]
+The inverse matrix has the explicit coefficient formula
+\[
+ (R^{-1})_{n,k}=\frac{n!}{k!}[u^n]
+          P_d'(u)(1-u)^{b-2}P_d(u)^k.                      \tag{3}
+\]
+\end{theorem}
+\begin{proof}
+The fixed-$\gamma$ generating function obtained directly from (1) is
+\[
+ \sum_{n\ge0}B_{n,\gamma,d}(z)\frac{s^n}{n!}
+ =(1-ds)^{-(\gamma+d-1)/d}
+            e^{z(1-(1-ds)^{1/d})}.
+\]
+Indeed its derivative satisfies
+$(1-ds)F_s=(z+\gamma+d-1)F-zF_z$, and its constant term is one.
+Coefficient extraction at $\gamma=n+b-1$ gives
+\[
+ \frac{\mathcal B_n}{n!}
+ =d^n\operatorname{res}_{v=0}
+  (1-v)^{-(n+b+d-2)/d}
+  e^{z(1-(1-v)^{1/d})}\frac{dv}{v^{n+1}}.
+\]
+Make the formal invertible substitution $u=1-(1-v)^{1/d}$.
+Since $dv=d(1-u)^{d-1}du$ and
+$v(1-u)=dP_d(u)$, the last expression becomes
+\[
+ \operatorname{res}_{u=0}
+       \frac{(1-u)^{2-b}e^{zu}}{P_d(u)^{n+1}}\,du.
+\]
+Substituting $t=P_d(u)$ proves (2) by the formal change-of-variable
+formula for residues. No analytic contour or convergence assertion
+is used.
+
+For completeness the elementary multiplication law for coefficient
+arrays with column generating functions $g(t)f(t)^k/k!$ is
+\[
+ (g,f)(h,q)=(g(t)h(f(t)),q(f(t))).
+\]
+It follows by substituting the column generating functions and
+comparing coefficients. Taking $q=P_d$ and
+$h(u)=1/g(P_d(u))=P_d'(u)(1-u)^{b-2}$ gives the identity matrix,
+proving (3).
+\end{proof}
+
+The identity is compatible with the auxiliary construction in the
+\href{HIGHER_GAP_ADJOINT_RANK.tex}{higher-gap adjoint note};
+its proof here uses only (1).
+For gap three,
+$P_3(u)=u-2u^2+\tfrac43u^3-\tfrac13u^4$.
+This inverse-polynomial structure gives a possible entry point for
+factorizations, but the entire auxiliary array is not totally
+nonnegative.
+
+\section{A positive factorization with the shape held fixed}
+The row-dependent shape in $R$ is essential. With $\gamma$ held fixed,
+write $\mathcal R_{m,k}(\gamma,d)=[z^k]B_{m,\gamma,d}(z)$.
+For zero-based indices $0\le i,j\le N$, define
+\[
+ D_N=\operatorname{diag}(0!,1!,\ldots,N!),\quad
+ (T_{d,N})_{i,j}=\begin{cases}\binom{i-j+d-1}{d-1},&i\ge j,\\0,&i<j,
+ \end{cases}
+\]
+and the upper bidiagonal matrix
+\[
+ (U_{\gamma,d,N})_{j,j}=\gamma+d-1-j,\qquad
+ (U_{\gamma,d,N})_{j-1,j}=j.
+\]
+\begin{theorem}\label{thm:fixed}
+The leading production block of the fixed-shape array factors exactly as
+\[
+ \Pi^{(\gamma,d)}_N=D_N T_{d,N}U_{\gamma,d,N}D_N^{-1}.          \tag{4}
+\]
+If $\gamma+d-1\ge N$, then both this production block and the
+leading block $\mathcal R[0..N,0..N]$ are totally nonnegative.
+In particular, at gap three with $\gamma=n+b-1$ and $b\ge0$,
+the fixed-shape auxiliary array through row and column $n+1$ is
+entirely totally nonnegative. More generally, for $d\ge2$ the block
+through $n+d-2$ has this property throughout the physical range.
+\end{theorem}
+\begin{proof}
+The fixed-shape generating function in the proof of
+Theorem~\ref{thm:Riordan} gives production data
+\[
+ A(u)=(1-u)^{1-d},\qquad Z(u)=(\gamma+d-1)(1-u)^{-d}.
+\]
+If $h_j=[u^j](1-u)^{-d}$ and $c=\gamma+d-1$, the factorial-scaled
+production entry is
+\[
+ c h_{i-j}+j(h_{i-j+1}-h_{i-j})
+      =(c-j)h_{i-j}+j h_{i-j+1}.
+\]
+This is exactly the $(i,j)$ entry of $T_{d,N}U_{\gamma,d,N}$,
+proving (4), including its superdiagonal boundary entries.
+
+Let $G_N$ be the lower triangular matrix of ones. Then
+$T_{d,N}=G_N^d$, by the coefficient identity for $(1-u)^{-d}$.
+Also
+\[
+ G_N=(I+E_{N,N-1})\cdots(I+E_{1,0}).
+\]
+Every factor is totally nonnegative. If $c\ge N$, the matrix $U$
+is a nonnegative upper bidiagonal matrix, hence is totally
+nonnegative as well. Positive diagonal scaling and the finite
+Cauchy--Binet identity establish the assertion about $\Pi_N$.
+
+For the coefficient array use induction on $N$.
+Let $Q_N$ have first row $(1,0,\ldots,0)$ and remaining rows
+$\Pi^{(\gamma,d)}[0..N-1,0..N]$. Every minor of $Q_N$ either
+is a production minor, is zero, or expands along its first row
+to a production minor with positive sign. Thus $Q_N$ is totally
+nonnegative. The production identity gives
+\[
+ \mathcal R_N=\operatorname{diag}(1,\mathcal R_{N-1})Q_N.
+\]
+Induction and Cauchy--Binet prove total nonnegativity of
+$\mathcal R_N$. For the stated physical block
+$N=n+d-2$, its parameter satisfies $c=N+b\ge N$.
+\end{proof}
+
+This is a finite positive factorization at an unbounded set of
+indices and parameters, rather than evidence from selected minors.
+It supplies an actual planar-network construction for the fixed-shape
+auxiliary blocks. It does not yet supply a network for the cyclic
+Wronskian determinants.
+
+\section{The exact cyclic Wronskian transfer}
+Now fix $d=3$, $B=B_{n,\gamma,3}$ and $C=B_{n+1,\gamma,3}$.
+Write their cyclic sections as
+\[
+ B(z)=A_0(z^3)+zA_1(z^3)+z^2A_2(z^3),\qquad
+ C(z)=C_0(z^3)+zC_1(z^3)+z^2C_2(z^3).
+\]
+The adjacent-row recurrence (1) gives the actual Wronskian of the
+\href{gap_three_hurwitz.tex}{generalized Hurwitz target} as
+\[
+ W(z)=\frac{C(\alpha z)B(\bar\alpha z)-B(\alpha z)C(\bar\alpha z)}
+              {(\alpha-\bar\alpha)z},\qquad \alpha=e^{i\pi/3}.
+\]
+The quotient is polynomial at zero.
+\begin{theorem}\label{thm:transfer}
+If $W(z)=W_0(z^3)+zW_1(z^3)+z^2W_2(z^3)$, then
+\begin{align*}
+ W_0(v)&=(A_0C_1-A_1C_0)(-v),\\
+ W_1(v)&=(A_0C_2-A_2C_0)(-v),\\
+ W_2(v)&=(A_1C_2-A_2C_1)(-v).                              \tag{5}
+\end{align*}
+Consequently the common-section-root obstruction is precisely a
+rank drop of the two cyclic-section rows
+\[
+ \begin{pmatrix}A_0(u)&A_1(u)&A_2(u)\\C_0(u)&C_1(u)&C_2(u)\end{pmatrix}.
+\]
+If $B=\sum_j b_jz^j$ and $C=\sum_j c_jz^j$, the same transfer is
+\[
+ W(z)=\sum_{j<k}\chi_{k-j}(b_jc_k-b_kc_j)z^{j+k-1},\qquad
+ \chi_\ell=\frac{\sin(\ell\pi/3)}{\sin(\pi/3)}.              \tag{6}
+\]
+The weights $\chi_1,\chi_2,\ldots$ are periodic:
+$1,1,0,-1,-1,0,\ldots$.
+\end{theorem}
+\begin{proof}
+The raising identity is $C=(z+3n+\gamma+2)B-zB'$.
+Substituting it into the divided difference gives exactly the defining
+rotated Wronskian, since $\alpha-\bar\alpha=i\sqrt3$.
+Next use $\alpha^3=\bar\alpha^3=-1$ and
+$\alpha\bar\alpha=\alpha+\bar\alpha=1$.
+Insert the three cyclic sections of $B,C$ into the numerator and
+combine its three pairs of distinct residue classes.
+The pairs $(0,1),(0,2),(1,2)$ contribute respectively the three
+minors in (5), multiplied by $1,z,z^2$ and evaluated at $u=-z^3$.
+This proves (5); their simultaneous vanishing is exactly rank at
+most one of the displayed two-row matrix.
+Alternatively, collect coefficient pairs $j<k$ directly in the
+rotated numerator. Their multiplier is
+\[
+ \frac{\alpha^k\bar\alpha^j-\alpha^j\bar\alpha^k}{\alpha-\bar\alpha}
+       =\frac{\sin((k-j)\pi/3)}{\sin(\pi/3)},
+\]
+proving (6).
+\end{proof}
+
+At the physical parameter, Theorem~\ref{thm:fixed} makes the
+adjacent auxiliary coefficient minors $b_jc_k-b_kc_j$ nonnegative.
+Formula (6) shows explicitly why that does not make the transferred
+Wronskian minors positive term by term: the cyclic weights have both
+signs. The uniform $H_3(W)$ task therefore asks for control of the
+three specific Pl\"ucker minors in (5), using the order-three
+Toeplitz factor of (4). The weaker simplicity route needs only that
+these three minors have no common nonzero root, by the existing
+\href{HIGHER_GAP_ADJOINT_RANK.tex}{adjoint rank criterion}.
+No such uniform transfer is proved here.
+
+\subsection*{Why the auxiliary-block property alone does not transfer}
+Take $C_0(z)=1$ and
+\[
+ C_{m+1}(z)=(z+9)C_m(z)-zC_m'(z),\qquad 0\le m<9.
+\]
+The coefficient array through degree nine has upper bidiagonal
+production matrix with diagonal entries $9-j$ and superdiagonal
+entries one. Its coefficients therefore form a totally nonnegative
+block by the same induction. Form the gap-three Wronskian from $C_8$:
+\[
+ V(z)=C_8(\alpha z)C_8(\bar\alpha z)
+ -\frac{\alpha C_8'(\alpha z)C_8(\bar\alpha z)
+        -\bar\alpha C_8'(\bar\alpha z)C_8(\alpha z)}{i\sqrt3},
+ \qquad \alpha=e^{i\pi/3}.
+\]
+Writing $V=\sum_{j=0}^{16}v_jz^{16-j}$, its generalized Hurwitz
+minor in rows $1,2,3$ and columns $1,2,3$ is
+\[
+ \det\begin{pmatrix}
+ 870&1481382&1821867821\\
+ 44&127869&181136695\\
+ 1&11256&16846286
+ \end{pmatrix}=-60115263786123<0.
+\]
+This auxiliary is outside the required arithmetic progression:
+the raising constants are all nine, instead of increasing by three.
+The example excludes a transfer theorem based only on total
+nonnegativity of the auxiliary coefficient block, even with the
+same first-order raising-operator form. A valid transfer must use
+the order-three Toeplitz factor in (4), or another part of the
+actual parameter compatibility.
+
+\section{Negative minors at every gap}
+\begin{theorem}\label{thm:negative}
+For every integer $d\ge1$, at $b=1$, and every even integer $m\ge d$,
+\[
+ \det R(1,d)[\{1,\ldots,m\},\{0,\ldots,m-1\}]
+                         =-\frac{m!}{d}<0.                 \tag{7}
+\]
+Consequently the physical auxiliary coefficient array is not totally
+nonnegative at any gap $d\ge1$.
+\end{theorem}
+\begin{proof}
+At $b=1$, (3) with $k=0$ has generating function
+\[
+ \sum_{n\ge0}(R^{-1})_{n,0}\frac{u^n}{n!}
+ =\frac{P_d'(u)}{1-u}
+ =\frac{(d+1)(1-u)^{d-1}-(1-u)^{-1}}d.
+\]
+The first term on the right is a polynomial of degree $d-1$.
+Thus $(R^{-1})_{m,0}=-m!/d$ for every $m\ge d$.
+The leading $(m+1)$-square block of $R$ is unit lower triangular.
+The cofactor formula for its inverse gives
+\[
+ (R^{-1})_{m,0}=(-1)^m
+       \det R[\{1,\ldots,m\},\{0,\ldots,m-1\}].
+\]
+For even $m$, this is (7). This is a uniform coefficient proof;
+bounded replay examples are not used to extrapolate the statement.
+\end{proof}
+
+At $d=3,b=1,m=4$, the explicit minor is
+\[
+ \det\begin{pmatrix}
+ 3&1&0&0\\28&10&1&0\\440&160&21&1\\9720&3560&520&36
+ \end{pmatrix}=-8.
+\]
+At arbitrary $b$, the same minor equals
+\[
+ (b-2)(b^3+4b^2-17b+20).
+\]
+The counterexample therefore occurs in the actual physical
+arithmetic-progression family, not only in a generic inverse
+polar-companion construction.
+
+\section{The standard production matrix also fails}
+Let $\Pi=R^{-1}\overline R$, where
+$\overline R_{n,k}=R_{n+1,k}$. Then
+\[
+ A_d(u)=\frac1{P_d'(u)}=
+       \frac d{(d+1)(1-u)^d-1},\qquad
+ Z_{b,d}(u)=A_d'(u)+(b-2)\frac{A_d(u)}{1-u},
+\]
+and its exact entries are
+\[
+ \Pi_{i,j}=\frac{i!}{j!}
+ \left([u^{i-j}]Z_{b,d}(u)+j[u^{i-j+1}]A_d(u)\right).       \tag{8}
+\]
+Coefficients at negative powers are zero. To derive (8), differentiate
+the $j$th column generating function in (2), divide by $g$, and then
+substitute $t=P_d(u)$. Equivalently the bivariate production generating
+function is $e^{uv}(Z_{b,d}(u)+vA_d(u))$.
+
+At the physical point $d=3,b=1$, its rows $2,3$ and columns $0,1$ give
+\[
+ \det\begin{pmatrix}166&62\\1874&698\end{pmatrix}=-320.
+\]
+These entries can also be reconstructed directly from the first five
+rows of $R$ displayed above, including $R_{0,0}=1$.
+Thus a proof that first establishes total nonnegativity of this
+standard Riordan production matrix cannot apply here.
+
+The failures in (7)--(8) concern $R$ and $\Pi$.
+They do not refute total nonnegativity of the generalized Hurwitz matrix
+of the gap-three Wronskian, the selected staircase determinants of that
+Wronskian, or binomial Strong Factorial.
+A valid positive-network proof for those objects must retain their
+specific two-row Wronskian and cyclic-section structure instead of
+assuming total nonnegativity of the whole auxiliary coefficient array.
+
+The separate exact replay
+\texttt{gap\_three\_hurwitz\_structure.py} checks symbolic shape
+identities at stated finite gaps and orders, reconstructs the inverse
+and production matrices, and verifies exact negative controls.
+It also reconstructs the actual adjacent-row cyclic and sine-weight
+identities symbolically and rejects an incorrect adjacent row.
+Its receipt records those bounds and source hashes.
+The all-gap identities and infinite family (7) have the elementary
+proofs above. All computations are internal; independent replay,
+formal verification, external review and priority claims are not supplied.
+No all-index gap-three or unrestricted binomial Strong Factorial
+closure is asserted.
+\end{document}

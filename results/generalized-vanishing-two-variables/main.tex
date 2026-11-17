@@ -22,7 +22,7 @@
 \title{The Generalized Vanishing Conjecture:\\
 The Two-Variable Theorem and the First Failing Dimension}
 \author{Roy van Rijn\\{\small Independent researcher}}
-\date{4 August 2026}
+\date{4 August 2026\\Revised 17 November 2026}
 \hypersetup{
   pdftitle={The Generalized Vanishing Conjecture: The Two-Variable Theorem and the First Failing Dimension},
   pdfauthor={Roy van Rijn},
@@ -35,47 +35,31 @@ The Two-Variable Theorem and the First Failing Dimension}
 \maketitle
 
 \begin{abstract}
-We determine the exact dimensional range of the Generalized Vanishing
-Conjecture for constant-coefficient differential operators over a field of
-characteristic zero.  In two variables we prove that
-\[
- \Lambda^m(P^m)=0\quad(m\geq1)
- \qquad\Longrightarrow\qquad
- \Lambda^m(QP^m)=0\quad(m\gg0)
-\]
-for every fixed polynomial $Q$.  The proof follows two moving faces.  Hall's
-marriage theorem puts the lowest operator face strictly to the right of the
-highest polynomial face near ordinary degree.  A prime-dilation argument
-shows that, while the two faces have different weights, their horizontal
-Newton intervals cannot overlap.  Since the supports are finite, the two
-piecewise-linear weight envelopes must eventually meet.  Their first meeting
-is an unequal-weight common threshold, where a fixed multiplier cannot repair
-the resulting linear derivative deficit.  The only deep external theorem is
-the constant-term theorem of Duistermaat and van der Kallen.  We then give a
-homogeneous
-three-variable counterexample.  With
-$\rho=t^2+xy$, $A=\rho+x^2$,
-$C=y\rho^2-2xt^2\rho-x^3t^2$, and
-$\Delta=4\partial_x\partial_y+\partial_t^2$, the pair
-\[
- \Lambda=\Delta^6,\qquad P=AC^2
-\]
-satisfies $\Lambda^m(P^m)=0$ while
-$\Lambda^m(x^2P^m)\ne0$ for every $m\geq1$.  The construction is a
-homogeneous endpoint-contact lift of Long's three-dimensional Gaussian
-counterexample.  It is the smallest member of an explicit cusp-profile
-family with arbitrary winding, profile, and radial suspension; in
-particular every $\Delta^k$, $k\geq6$, has such a failure.  Consequently
-unrestricted, and already homogeneous, GVC holds in dimension $n$ exactly
-when $n\leq2$.
+We determine the dimensions in which the Generalized Vanishing Conjecture
+holds for constant-coefficient differential operators over a field of
+characteristic zero.  In two variables, if
+$\Lambda^m(P^m)=0$ for every positive integer $m$, then
+$\Lambda^m(QP^m)=0$ for every fixed polynomial $Q$ and all sufficiently
+large $m$, with no homogeneity assumption on $\Lambda$ or $P$.
+The proof combines Hall's marriage theorem, Newton-face separation and
+prime-adic isolation of a single endpoint contribution, using the
+constant-term theorem of Duistermaat and van der Kallen.
+It also gives a finite support certificate for the premise and the sharp
+operator-independent cutoff
+$m>(1+\lfloor(\deg P+1)^2/4\rfloor)\deg Q$.
+In three variables we construct a homogeneous polynomial of degree twelve
+for which all pure contractions under
+$(4\partial_x\partial_y+\partial_t^2)^{6m}$ vanish, while multiplication
+by $x^2$ gives a nonzero contraction at every positive power.
+The construction extends Long's adjacent-coefficient mechanism to an
+explicit homogeneous family.  Thus the unrestricted conjecture, and
+already its homogeneous form, holds in dimension $n$ exactly when $n\leq2$.
 \end{abstract}
 
 \section{Introduction}
 
 For a polynomial $\lambda(X,Y)$, write
-\[
- \Lambda=\lambda(\partial_x,\partial_y).
-\]
+$\Lambda=\lambda(\partial_x,\partial_y)$.
 The Generalized Vanishing Conjecture asks whether, for all polynomials
 $P,Q$ over a characteristic-zero field,
 \begin{equation}\label{eq:gvc}
@@ -83,36 +67,11 @@ $P,Q$ over a characteristic-zero field,
  \quad\Longrightarrow\quad
  \Lambda^m(QP^m)=0\quad\text{for all sufficiently large }m.
 \end{equation}
-It grew out of the Vanishing Conjecture and its relation to the Jacobian
-Conjecture; see Zhao~\cite{Zhao} and van den Essen, Willems, and
-Zhao~\cite{EWZ}.
-
-There were several particularly important precursors.  De Bondt proved GVC
-for every product of linear differential forms, and therefore for every
-homogeneous operator in two variables~\cite{deBondt}.  Feng and Sun proved
-the nonhomogeneous binary case
-\[
- \Lambda=(\partial_x-\Phi(\partial_y))\partial_y
-\]
-for an arbitrary one-variable polynomial $\Phi$~\cite{FengSun}.  Wilson's
-independent July 2026 preprint proves the two-variable Gaussian Moments
-Conjecture by a related Newton-face and prime-isolation method
-~\cite{WilsonGMC}.  Wilson treats the Gaussian functional rather than an
-arbitrary constant-coefficient operator.  In the present argument, Hall
-localization and separation on shifted output rays are the additional steps
-that pass from that philosophy to unrestricted binary GVC.
-
-Also in 2026, Long found a five-term quartic in three real Gaussian variables for which
-all pure Gaussian moments vanish while one fixed mixed moment equals $m!$
-at every power~\cite{LongGMC}.  Long's example disproves the Gaussian
-Moments Conjecture in every dimension at least three, but it is not itself a
-constant-coefficient GVC counterexample.
-
-This paper closes the gap on both sides.  First we prove \eqref{eq:gvc} for
-arbitrary, possibly nonhomogeneous, operators in two variables.  We then
-lift the endpoint-coefficient mechanism behind Long's example to a
-homogeneous polynomial and a homogeneous differential operator in three
-variables.  The two results meet at the exact boundary.
+The cutoff may depend on $Q$: the question is whether one fixed
+multiplier can sustain nonzero contractions at arbitrarily large powers.
+The conjecture grew out of the Vanishing Conjecture and its relation to
+the Jacobian Conjecture; see Zhao~\cite{Zhao} and van den Essen, Willems,
+and Zhao~\cite{EWZ}.
 
 \begin{theorem}[Binary Generalized Vanishing Conjecture]\label{thm:main}
 Let $k$ be a field of characteristic zero.  Every constant-coefficient
@@ -120,34 +79,84 @@ differential operator $\Lambda$ on $k[x,y]$ satisfies
 \eqref{eq:gvc}.
 \end{theorem}
 
-The global proof is organized as follows.  Give both
-the operator variables and the polynomial variables weight $(s,1)$.  Let
-$L(s)$ be the least operator weight and $U(s)$ the greatest polynomial
-weight.  Hall's theorem orders the corresponding faces just to the right of
-$s=1$.  Prime-dilated endpoint separation prevents the faces from passing
-one another while $U(s)-L(s)>0$.  Finite support then forces this difference
-to reach zero.  At the first zero all operator terms lie above one threshold
-and all polynomial terms lie below it, which gives eventual mixed
-vanishing.
-
-For orientation, the load-bearing dependencies in the binary argument are
+For nonzero $\lambda$ and $P$, the premise has a stronger geometric
+consequence: after a linear change
+over $k$, one positive weight assigns every operator monomial greater
+weight than every monomial of $P$.
+Section~6.1 proves this finite support certificate and gives a decision
+procedure for rational inputs.  If $d=\deg P$, it also gives the sharp
+operator-independent cutoff
 \[
-\begin{array}{c}
- \text{Duistermaat--van der Kallen}+\text{split-symbol polarization}
-   \longrightarrow \text{Proposition~\ref{prop:cutoff}},\\[2pt]
- \text{Duistermaat--van der Kallen}+\text{Hall localization}
-   \longrightarrow \text{Lemma~\ref{lem:hall}},\\[2pt]
- \text{rational-point exposure}+\text{prime isolation}
-   \longrightarrow \boxed{\text{Proposition~\ref{prop:shifted}}}
-   \longrightarrow \text{Corollary~\ref{cor:horizontal}},\\[2pt]
- \text{Lemma~\ref{lem:hall}}+\text{Corollary~\ref{cor:horizontal}}
-   \longrightarrow \text{first common threshold}
-   \longrightarrow \text{Proposition~\ref{prop:threshold}}
-   \longrightarrow \text{Theorem~\ref{thm:main}}.
-\end{array}
+ m>\left(1+\left\lfloor\frac{(d+1)^2}{4}\right\rfloor\right)\deg Q.
 \]
-Thus Proposition~\ref{prop:shifted} is the single arithmetic bridge from
-the local Hall gap to the global envelope argument.
+Sharpness means that the coefficient cannot be decreased uniformly over
+all operators and degree-$d$ polynomials.
+
+The simplest example explains why support separation settles the mixed
+conclusion.  Take $\Lambda=\partial_x^2$ and $P=x$.
+Every pure contraction is zero because $2m>m$.  For $Q=x^q$ with
+$q\geq0$,
+the mixed contraction is nonzero precisely when $m\leq q$: the
+multiplier supplies only $q$ additional powers of $x$, whereas the
+derivative excess grows with $m$.
+The general argument finds an analogous growing excess in a suitable
+positive weight, even when neither ordinary degree nor one coordinate
+alone separates the original supports.
+
+To find this weight, give both the operator and polynomial variables
+weight $(s,1)$, and compare the least operator weight $L(s)$ with the
+greatest polynomial weight $U(s)$.  Hall's marriage theorem first places
+the lowest operator face strictly to the right of the highest polynomial
+face near ordinary degree.  The main obstruction is cancellation:
+overlapping faces might still have zero contractions.  The arithmetic
+step, Proposition~\ref{prop:shifted}, rules this out by exposing an
+endpoint and passing to a large prime-dilated power.  Frobenius and
+factorial valuations make its contribution the unique term of least
+prime-adic valuation, so it cannot cancel.
+
+Consequently the two face intervals cannot pass one another while their
+weights differ.  Their finite, piecewise-linear weight envelopes must
+reach a common threshold.  At that threshold a coordinate gap persists
+between the equality faces; bounded excursions off those faces cannot
+compensate for the linearly growing derivative excess.
+Proposition~\ref{prop:threshold} then gives eventual mixed vanishing.
+The proof of Proposition~\ref{prop:shifted} is the arithmetic step on
+which this passage from the local Hall gap to the global weight
+separator depends.
+
+The closest earlier results impose restrictions on the operator.
+De Bondt proved GVC for every product of linear differential forms,
+and hence for every homogeneous binary operator
+\cite[Theorem~4 and Corollary~5]{deBondt}.
+Feng and Sun proved the nonhomogeneous binary case
+$\Lambda=(\partial_x-\Phi(\partial_y))\partial_y$
+for any one-variable polynomial $\Phi$~\cite{FengSun}.
+Here the binary operator is arbitrary.
+Wilson's face-isolation proof of the two-variable Gaussian Moments
+Conjecture uses a related Newton-face and prime-isolation method
+\cite[Theorem~1 and Lemma~7]{WilsonGMC}.
+That result concerns the Gaussian functional.  The additional ingredients
+for arbitrary binary differential operators here are Hall localization,
+separation on shifted output rays and the moving-envelope argument.
+
+The second part gives the obstruction in dimension three.
+Long constructed a five-term quartic in three Gaussian variables with
+all pure moments zero and one fixed mixed moment equal to $m!$
+\cite[Theorem~5.1]{LongGMC}.
+His adjacent-coefficient identity is the starting point for our
+homogeneous lift.  With
+$\Delta=4\partial_x\partial_y+\partial_t^2$, Theorem~\ref{thm:gvc3}
+gives an explicit homogeneous degree-twelve polynomial $P$ satisfying
+\[
+ (\Delta^6)^m(P^m)=0,
+ \qquad
+ (\Delta^6)^m(x^2P^m)\ne0
+ \qquad(m\geq1).
+\]
+Section~9 extends this construction to an admissible profile family.
+Unused-variable padding then gives failure in every dimension at least
+three.  Together with Theorem~\ref{thm:main}, this determines the exact
+dimensional boundary.
 
 \section{Two standard reductions}
 
@@ -162,6 +171,13 @@ Let $F$ be a Laurent polynomial over a characteristic-zero field.  If
 $\CT(F^m)=0$ for every $m\geq1$, then
 $0\notin\Newt(F)$.
 \end{theorem}
+
+The complex statement follows from Section~3 and Theorems~4--5 of
+\cite{DK}.  The same conclusion holds over any characteristic-zero
+field: the finitely generated field over $\Q$ containing the coefficients
+of $F$ embeds into $\mathbb C$.  Such an embedding preserves every
+nonzero coefficient, the Newton polytope and all the constant-term
+identities.
 
 We will also use the following immediate consequence.
 
@@ -187,6 +203,9 @@ We next dispose of the range in which the degree of $P$ is no larger than
 the first positive order of $\Lambda$.  This familiar split-symbol argument
 is included so that the main theorem has no hidden degree case.
 
+For $v=(v_1,v_2)$, write $D_v=v_1\partial_x+v_2\partial_y$ and
+$\ell_v(X,Y)=v_1X+v_2Y$, so $D_v=\ell_v(\partial_x,\partial_y)$.
+
 \begin{proposition}[Binary degree cutoff]\label{prop:cutoff}
 In two variables, suppose that $\Lambda$ has no constant term, and let $r$
 be the least
@@ -204,7 +223,8 @@ for all large $m$.
 Assume $d=r$.  Let $\lambda_r$ and $P_r$ be the lowest symbol and the top
 homogeneous part of $P$.  Over an algebraic closure,
 \[
- \lambda_r=\prod_{i=1}^r D_{v_i}.
+ \lambda_r=\prod_{i=1}^r \ell_{v_i},
+ \qquad \lambda_r(\partial)=\prod_{i=1}^r D_{v_i}.
 \]
 With $Vt=\sum_i t_iv_i$, complete polarization gives
 \[
@@ -290,7 +310,7 @@ greatest $x$-exponent of $P_d$ is at most $e-1$.
 \begin{proof}
 Factor
 \[
- \lambda_r=\prod_{i=1}^r D_{v_i},
+ \lambda_r=\prod_{i=1}^r \ell_{v_i},
  \qquad P_d=\prod_{j=1}^d L_j
 \]
 over an algebraic closure.  Introduce $t_1,\ldots,t_r$ and a generic
@@ -431,7 +451,12 @@ integer-coefficient polynomial in the finitely many coefficients of $A$
 and $B$, and a zero element of $R$ remains zero after specialization.
 We may consequently replace the coefficient field by a number field $K$
 without losing either the vanishing identities or the two exposed endpoint
-coefficients.
+coefficients.  Specialization may remove other coefficients.  We retain
+$I$ for the original intersection: the specialized Newton sets are contained
+in the original ones, and the preserved coefficients keep $\alpha$ and
+$\alpha+\eta$ in the respective Newton sets of $A_0$ and $B_0$.
+Thus $\alpha$ is still the unique point of least ordinary degree in
+their shifted intersection; equality of the full supports is unnecessary.
 
 \emph{Choice of the prime.}
 Let
@@ -480,7 +505,7 @@ $A_0(\partial)^p(B_0^p)$ is
 Every contributing $\gamma$ satisfies
 \[
  \frac{\gamma}{p}\in
- \Newt(A_0)\cap\bigl(\Newt(B_0)-\eta\bigr)=kI.
+ \Newt(A_0)\cap\bigl(\Newt(B_0)-\eta\bigr)\subseteq kI.
 \]
 Let $s=\alpha_x+\alpha_y$, the least ordinary degree on $kI$.
 
@@ -564,8 +589,15 @@ disjoint.
 \end{corollary}
 
 \begin{proof}
-If the projected intervals overlap, choose a rational number $c$ in their
-intersection.  There are unique points
+Suppose the projected intervals overlap.  If either Newton segment is
+nontrivial, its lattice endpoints satisfy
+$u(a_1-a_2)+v(b_1-b_2)=0$ with $a_1\ne a_2$, so $u/v$ is rational.
+The weights $W_A/v$ and $W_B/v$ are then rational as well.
+If both segments are points, they are lattice points; overlapping
+projections force equal first coordinates, and $(W_B-W_A)/v$ is their
+integral vertical difference.  In either case the shift used below is
+rational.  The projected intervals have integral endpoints, so choose a
+rational number $c$ in their intersection.  There are unique points
 \[
  \alpha=\left(c,\frac{W_A-uc}{v}\right)\in\Newt(A),
  \qquad
@@ -602,8 +634,15 @@ $\Lambda^m(QP^m)=0$ for every fixed $Q$ and all large $m$.
 \end{proposition}
 
 \begin{proof}
+If $Q=0$, $P=0$, or $\Lambda=0$, the conclusion is immediate.  Assume
+all three are nonzero.
 Let $A$ be the weight-$W$ face of $\lambda$ and $B$ the weight-$W$ face
-of $P$.  The part of greatest possible output weight in the pure identity
+of $P$.  If either face is empty, integrality of the weights gives
+$\min w(\Supp\lambda)-\max w(\Supp P)\geq1$.  A fixed multiplier
+supplies bounded weight, so every mixed selection vanishes once
+$m>\max_{q\in\Supp Q}w(q)$.
+We may therefore assume both faces are nonzero.  The part of greatest
+possible output weight in the pure identity
 is
 \[
  A(\partial)^m(B^m)=0.
@@ -719,6 +758,175 @@ Proposition~\ref{prop:threshold} proves eventual mixed vanishing.  Together
 with Proposition~\ref{prop:cutoff} and the trivial constant-term cases,
 this completes the proof of Theorem~\ref{thm:main}.  \qed
 
+\subsection{Finite support certificates and optimal uniform cutoffs}
+
+The same argument characterizes the pure-vanishing premise and makes the
+mixed cutoff effective.  In the following statement the coordinate change
+acts contragrediently on the differential symbol.
+
+\begin{theorem}[Binary support certificate]\label{thm:support-certificate}
+Let $0\ne\lambda\in k[X,Y]$ have zero constant term, let $0\ne P\in k[x,y]$,
+and put $R=\deg\lambda$ and $d=\deg P$.  Then
+$\Lambda^m(P^m)=0$ for every $m\geq1$ if and only if there are a linear
+coordinate change over $k$ and positive integers $u,v\leq d+R$ such that
+\begin{equation}\label{eq:strict-certificate}
+ g:=\min_{\alpha\in\Supp\lambda}(u\alpha_x+v\alpha_y)
+       -\max_{\beta\in\Supp P}(u\beta_x+v\beta_y)>0.
+\end{equation}
+If $d\geq r$, the Hall direction is unique and defined over $k$; any
+coordinate frame over $k$ whose first vector has that direction admits
+such a certificate with $u>v$.
+\end{theorem}
+
+\begin{proof}
+If $d<r$, use the ordinary weight $(1,1)$.  Suppose $d\geq r$.
+Lemma~\ref{lem:hall} also applies when $d=r$: a deficient subset with two
+nonparallel directions would see all $d\geq r\geq |I|$ polynomial factors,
+which is still impossible.
+
+There cannot be two Hall directions.  If their full multiplicities in
+$\lambda_r$ are $e_1,e_2$, the distinct annihilating factors in $P_d$
+would have multiplicities $h_i\geq d-e_i+1$.  But
+\[
+ e_1+e_2\leq r,\qquad h_1+h_2\leq d,\qquad
+ h_1+h_2\geq2d-r+2\geq d+2,
+\]
+a contradiction.  The unique direction is invariant under all
+automorphisms of $\overline k/k$.  Its projective coordinate is algebraic
+and separable over $k$, so it belongs to $k$.  Choose it as the first
+coordinate direction, with any complement over $k$.  The initial Hall
+gap $e>t$ holds in this frame.
+
+For $d=r$, $\Delta(1)=0$ and its right derivative is $t-e<0$, so
+$\Delta(s)<0$ for some rational $s>1$.  For $d>r$, the envelope argument
+above gives a first rational $s_*>1$ with $\Delta(s_*)=0$.
+The zero-output case of Proposition~\ref{prop:shifted} separates the
+complete equality faces at $s_*$.  They contain the limiting active
+exponents from the left, where the operator lies to the right of the
+polynomial.  Hence the complete equality faces have that same order.
+The right derivative of $\Delta$ at $s_*$ is therefore negative, and
+again $\Delta(s)<0$ for some rational $s>1$.
+
+We bound an integral weight directly from the support inequalities.
+Every pair $\alpha\in\Supp\lambda$, $\beta\in\Supp P$ imposes
+\[
+ (\alpha_x-\beta_x)s+(\alpha_y-\beta_y)>0.
+\]
+Together with $s>1$ these define a nonempty open interval $(\ell,h)$.
+Write $\ell=p/q$ in lowest terms.  Either $\ell=1$, or it is a lower
+endpoint $(\beta_y-\alpha_y)/(\alpha_x-\beta_x)$ with positive denominator.
+In both cases $1\leq p\leq d$ and $1\leq q\leq R$.
+If $h$ is finite, write $h=p'/q'$ in lowest terms.  It comes from an
+upper endpoint $(\alpha_y-\beta_y)/(\beta_x-\alpha_x)$, so
+$1\leq p'\leq R$ and $1\leq q'\leq d$.
+The mediant weight $(u,v)=(p+p',q+q')$ lies strictly inside the interval
+and has both entries at most $d+R$.  If $h=+\infty$, use
+$(u,v)=(p+q,q)$ instead.  In either case $u>v>0$ and the integral gap
+in \eqref{eq:strict-certificate} is at least one.
+
+Conversely, a strict support gap makes the differential weight in every
+monomial selection of $\Lambda^m(P^m)$ exceed the input weight by at
+least $mg>0$.  Each selection therefore vanishes.
+\end{proof}
+
+\begin{corollary}[Effective mixed cutoff]\label{cor:effective-cutoff}
+Under the pure-vanishing premise, every nonzero $Q\in k[x,y]$ satisfies
+\[
+ \Lambda^m(QP^m)=0\qquad\bigl(m>(d+R)\deg Q\bigr).
+\]
+More precisely, a certificate \eqref{eq:strict-certificate} gives vanishing
+for $m\geq\lfloor K_Q/g\rfloor+1$, where
+$K_Q=\max_{\gamma\in\Supp Q}(u\gamma_x+v\gamma_y)$ in the chosen frame.
+\end{corollary}
+
+\begin{proof}
+A mixed monomial selection vanishes once $mg>K_Q$.
+Linear changes preserve total degree, and
+$K_Q\leq\max(u,v)\deg Q\leq(d+R)\deg Q$, while $g\geq1$.
+\end{proof}
+
+For rational inputs, Theorem~\ref{thm:support-certificate} gives a finite
+decision procedure for the pure premise: factor $\lambda_r(T,1)$ over
+$\Q$, include the possible direction at infinity, test the rational
+linear factors for the Hall multiplicity condition, and solve the support
+inequalities in the unique surviving frame.  A nonrational Hall direction
+would have two distinct conjugates and is ruled out by uniqueness.
+An empty feasible interval means the pure premise fails.  The procedure
+uses no finite prefix of moments to infer all-power vanishing.
+
+\begin{theorem}[Optimal operator-independent cutoff]\label{thm:optimal-cutoff}
+Let $0\ne P$, $d=\deg P$, and put
+\[
+ C_d=1+\left\lfloor\frac{(d+1)^2}{4}\right\rfloor.
+\]
+Under the binary pure-vanishing premise, every nonzero $Q$ satisfies
+\[
+ \Lambda^m(QP^m)=0\qquad(m>C_d\deg Q).
+\]
+For every $d\ge0$, no smaller coefficient works uniformly over all
+operators and degree-$d$ polynomials.
+\end{theorem}
+
+\begin{proof}
+The zero operator is immediate.  For a nonzero operator the pure premise
+and $P\ne0$ exclude a nonzero constant term, so
+Theorem~\ref{thm:support-certificate} supplies a strict support separator.
+We first improve its normalized margin.
+Swap axes if necessary and write its weight as $(1,z)$, $0<z\le1$.
+The concave piecewise-linear function
+\[
+ h(z)=\min_{(a,b)\in\Supp\lambda}(a+bz)
+       -\max_{(i,j)\in\Supp P}(i+jz)
+\]
+is positive somewhere. We claim that some rational $z\in(0,1]$ gives
+$h(z)\ge1/C_d$. If $d=0$, use $z=1$. For $d\ge1$, the endpoint values
+are integers. A positive $h(1)$ suffices; if $h(0)>0$, then
+$h(1/(d+1))\ge1-d/(d+1)\ge1/C_d$, since operator slopes are nonnegative
+and polynomial slopes are at most $d$.
+
+Otherwise a positive maximum occurs at an interior breakpoint. At a
+polynomial-envelope breakpoint the reduced denominator is at most $d$,
+so the positive gap is at least $1/d$. This covers simultaneous
+breakpoints as well. At any remaining maximum one polynomial monomial
+$(i,j)$ is active. Write $(c,e)$ and $(a,b)$ for the operator monomials
+active on the left and right. Then $a>c$, $e>b$, and
+\[
+ z_0=\frac{a-c}{e-b},\qquad e\ge j\ge b.
+\]
+If $c>i$, the gap is at least one. Otherwise set
+$A=a-i>0$, $B=j-b\ge0$, $C=i-c\ge0$, and $E=e-j\ge0$.
+The integer $N=AE-BC$ is positive and $B+C\le d$, whence
+\[
+ \frac1{h(z_0)}=\frac{B+E}{N}
+ =\frac1A+\frac B N+\frac{BC}{AN}
+ \le1+B(C+1)\le1+\left\lfloor\frac{(d+1)^2}{4}\right\rfloor.
+\]
+This proves the claimed margin. Every multiplier of degree $q$ has weight
+at most $q$, so $m>C_dq$ kills every mixed monomial selection.
+
+For sharpness choose $e=\lceil(d+1)/2\rceil$, $j=\lfloor(d+1)/2\rfloor$,
+and $R=ej+1=C_d$. Put
+\[
+ \Lambda=\partial_x^e+\partial_y^R,\qquad P=x^{e-1}y^j,
+ \qquad Q=x^q\quad(q\ge1).
+\]
+The weight $(R,e)$ has gap one, so all pure contractions vanish.
+A mixed term with $k$ copies of $\partial_x^e$ requires
+$ek\le(e-1)m+q$ and $R(m-k)\le jm$. Together these give $m\le Rq$.
+At $m_0=Rq$ exactly $k=(R-j)q$ survives, with nonzero value
+\[
+ \Lambda^{m_0}(QP^{m_0})
+ =\binom{m_0}{jq}\bigl((e-1)m_0+q\bigr)!\,(jm_0)!.
+\]
+Thus $C_d$ is optimal, including $d=0$.
+\end{proof}
+
+Both degree bounds remain available: one may use
+$m>\min(d+R,C_d)\deg Q$, or the particular support-certificate cutoff.
+For $d=3$, the pair $\Lambda=\partial_x^2+\partial_y^5$, $P=xy^2$
+with $Q=x$ has last nonzero mixed power five; a proposed general
+coefficient $d+1$ would already fail here.
+
 \section{From Long's Gaussian example to GVC}
 
 Long's three-variable Gaussian counterexample is most transparent in
@@ -821,8 +1029,9 @@ On the unit sphere, parameterize
  \qquad y=\sqrt{1-t^2}\,e^{-i\theta},
 \]
 with normalized measure $(dt/2)(d\theta/2\pi)$.  Phase integration in
-\eqref{eq:quadric-laurent} is constant-term extraction.  Setting $u=x^2$
-gives
+\eqref{eq:quadric-laurent} is constant-term extraction.
+Since $u=x^2=(1-t^2)e^{2i\theta}$, a surviving term has total
+$u$-exponent zero and radial factor $(1-t^2)^0=1$.  Thus
 \begin{equation}\label{eq:sphere-coefficients}
  \int_{S^2}P^m\,d\sigma=[u^m]K_m(u),
  \qquad
@@ -866,9 +1075,13 @@ orthogonal invariance gives the apolar Reynolds identity
  \Delta^kF
  =2^kk!(2k+1)!!\int_{S^2}F\,d\sigma.
 \end{equation}
-Both sides are invariant linear functionals on homogeneous degree-$2k$
-polynomials; evaluation on $\rho^k$ fixes the displayed constant, so
-\eqref{eq:reynolds} is algebraic despite the convenient spherical notation.
+The invariant dual space of homogeneous degree-$2k$ polynomials is
+one-dimensional.  Indeed, the orthogonal-invariant polynomials in three
+variables are generated by $\rho$, and the nondegenerate apolar pairing
+identifies each homogeneous representation with its dual.  Both sides of
+\eqref{eq:reynolds} belong to this invariant line.  Evaluation on $\rho^k$
+fixes the displayed constant, so the identity is algebraic despite the
+convenient spherical notation.
 
 Since $P^m$ has degree $12m$, equations
 \eqref{eq:sphere-coefficients}, \eqref{eq:cm}, and
@@ -974,9 +1187,10 @@ $u^{rm}$ and $u^{rm-\ell}$ of
 \[
  H_m(B)=B^{rm-1}J_m(B),
  \qquad
- J_m'(B)=\left((1-B^2)^{2r}S(B^2)\right)^m.
+ J_m(B)=\int_0^B\left((1-w^2)^{2r}S(w^2)\right)^m\,dw.
 \]
-The derivative has a zero of order at least $2rm$ at $B=1$, so
+In particular $J_m(0)=0$, and its derivative has a zero of order at
+least $2rm$ at $B=1$, so
 \[
  J_m(1+u)=c_m(S)+O(u^{2rm+1}).
 \]
@@ -1100,22 +1314,29 @@ mechanism of failure, rather than merely a dimension count.
 
 \section{A Ferrers support consequence}
 
-Suppose a wall begins with a horizontal gap $g>0$.
-Index tied operator corrections by their leftward moves $i$ and polynomial
+Consider a positive unequal-weight wall with $W_A<W_B$, where the
+pure-zero extremal faces satisfy Corollary~\ref{cor:horizontal}.
+Suppose its initial operator and polynomial endpoint terms remain present
+and have a horizontal gap $g>0$.  Index tied operator corrections by their leftward moves $i$ and polynomial
 corrections by their rightward moves $j$.  The two face intervals overlap
 exactly when
 \[
  i+j\geq g.
 \]
-Horizontal separation forbids every such pair.  Set-theoretically, the
+Under these weight and endpoint hypotheses, horizontal separation forbids
+every such pair.  Set-theoretically, the
 allowed supports are therefore the independent sets of the Ferrers graph
 with edges $i+j\geq g$.  The corresponding squarefree ideal is
 \[
  (a_i:i\geq g)+(b_j:j\geq g)
  +(a_i b_j:i,j<g,\ i+j\geq g).
 \]
-Thus the squarefree support obstruction has coordinate components and
-staircase products as a direct consequence of horizontal separation.
+Thus, on this locus, the squarefree support obstruction has coordinate
+components and staircase products.  The weight hypothesis is essential:
+for $\lambda=X^2+Y^4$ and $P=x$, every pure contraction vanishes,
+but at weight $(2,1)$ the operator face projects to $[0,2]$ and the
+polynomial face to $[1,1]$.  Here $W_A=4>2=W_B$, so horizontal
+separation does not apply.
 
 The proof is specifically two-dimensional.  Hall deficiency localizes at
 one repeated binary direction, and an unequal-weight face is a segment
@@ -1127,49 +1348,33 @@ not extend formally to the rank-three symbol in
 Theorem~\ref{thm:gvc3}.
 
 \paragraph{Machine-checked audit.}
-The accompanying Lean development in \texttt{formal/gvc} verifies the
-coefficientwise differential semantics; the literal degree-twelve ternary
-data and cusp identity; the algebraic beta evaluation and complete
-cusp-profile binomial ladder; the literal winding--profile--radial family,
-its degree formula, and its minimal and radial specializations;
-equal-degree coefficientwise apolar
-contraction and composition of differential symbols; the full concrete
-Reynolds/Laurent phase extraction, algebraic height change of variables, and
-endpoint-kernel identification.  It also proves the arbitrary-profile
-quadric restriction under the displayed degree bound on $S$, arbitrary
-even-phase coefficient extraction, the full height substitution and
-endpoint factorization, and the shifted primitive identity.  These results
-construct both phase bridges in Lean and prove
-Theorems~\ref{thm:gvc3} and \ref{thm:family}, including their exact mixed
-scalars and coefficient base change to every characteristic-zero field.
-Unused-variable padding verifies the negative dimension-$n\ge3$ half of
-Theorem~\ref{thm:classification}.  The development also checks the rational
-$p$-adic factorial bounds in
-Lemma~\ref{lem:factorial-valuations} and the negative-final-slope plus
-intermediate-value step for the moving envelopes.  For
-Lemma~\ref{lem:hall}, it proves the finite Hall-deficiency core: Mathlib's
-Hall theorem produces a deficient set, binary linear algebra puts that set
-in one direction class, and exact counting gives at least $d-e+1$
-annihilated polynomial factors.  The split-factor interface records the
-literal symbol and polynomial products, and Lean proves the coordinate-free
-normal forms: the full direction power divides the symbol and the matching
-perpendicular power divides the polynomial.  The translated
-Duistermaat--van der Kallen/polarization argument that rules out a matching
-is not yet formalized.  It further proves the
-complete finite-support deduction in Proposition~\ref{prop:threshold}:
-finite maximization turns an ordering of the equal faces into an integral
-coordinate cut, which refines the common threshold to a strict positive
-weight; the growing power gap then dominates every fixed multiplier.  Empty
-equality faces are handled separately.
-The present audit does not yet formalize construction of the split-factor
-system after field extension or the literal coordinate-change/exact-quotient
-packaging of Lemma~\ref{lem:hall}, the number-field
-good-prime transfer and shifted-ray theorem, including its equal-face
-ordering, or the binary no-reversal/global-envelope bridge.  The spherical realization of the
-Reynolds functional is likewise not checked, but Lean proves the algebraic
-coefficientwise contraction and Laurent realization used in its place.
-Thus Theorem~\ref{thm:main} and the complete biconditional in
-Theorem~\ref{thm:classification} are not yet fully formally verified.
+The versioned Lean supplement~\cite{FormalGVC} supplies the coefficientwise
+differential semantics and a full algebraic proof of the ternary
+counterexample and the admissible cusp-profile family.  It checks the
+literal polynomials, their homogeneity, the cusp identity, phase and height
+extraction, endpoint factorization and exact mixed scalars.  Coefficient
+base change and unused-variable padding give the negative
+$n\geq3$ half of Theorem~\ref{thm:classification} over every
+characteristic-zero field.  The spherical-integral realization is outside
+the formalization; the formal proof uses the algebraic Reynolds and
+Laurent coefficient identities directly.
+
+For the binary argument, Lean checks the rational factorial-valuation
+bounds, the finite Hall-deficiency core and the corresponding divisibility
+normal forms.  It also checks the finite-support deduction of the
+common-threshold cutoff, including empty equality faces, and the
+negative-final-slope and intermediate-value envelope step.  The
+translated polarization/Duistermaat--van der Kallen argument, field and
+coordinate-change packaging, number-field good-prime transfer,
+shifted-ray separation and the full no-reversal/global-envelope bridge
+remain in the written proof.  Consequently Theorem~\ref{thm:main} and
+the complete biconditional in Theorem~\ref{thm:classification} are not
+fully formalized.  The supplement identifies the toolchain, exact source
+version, build instructions and exported statements.
+
+\paragraph{AI assistance and review.}
+ChatGPT (OpenAI) assisted with mathematical arguments, literature checks,
+exposition, proof review and verification code.
 
 \bibliographystyle{plain}
 \bibliography{references}

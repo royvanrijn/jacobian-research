@@ -22,21 +22,24 @@ consequences propagate. Use `explain ID` for blockers and proof provenance,
 `impact ID` for descendants and `simulate --prove ID` for a read-only hypothetical
 improvement. Graph checks do not upgrade formal, replay, review or publication flags.
 
-## Two-pair cubic Image strata
+## Complete two-pair cubic Image theorem
 
-The [current cubic note](foundations/extended-geometry/TWO_PAIR_IMAGE_CUBIC_STRATIFICATION.md)
-records the full sixteen-parameter coordinate model, parity coverage, exact mixed
-slices, and the two missing full-family implications. With the pinned environment:
+The [canonical proof](foundations/extended-geometry/TWO_PAIR_IMAGE_CUBIC_STRATIFICATION.md)
+proves the full sixteen-parameter cubic stratum, the sharp mixed bound
+`m > 3 deg_z Q`, and the least failing bihomogeneous balanced degree four.
+It combines explicit boundary volume extension, a sourced proper V-filtration
+lemma, and the exact eleven-parameter polynomial certificate.
 
 ```sh
 .venv/bin/python research/foundations/scripts/verify_two_pair_image_cubic_structure.py
-.venv/bin/python research/foundations/scripts/verify_two_pair_image_cubic_phase_slice.py
 .venv/bin/python research/foundations/scripts/verify_two_pair_image_cubic_affine_slice.py
+.venv/bin/python research/foundations/scripts/verify_two_pair_image_cubic_phase_slice.py
 ```
 
-These are exact internal replays of structural identities and the complete seven-
-and ten-parameter slice certificates. The odd-parity proof imports the existing
-internal Gaussian classification; the checkers do not prove that theorem or cover
-the entire mixed cubic family. The sphere-shear argument supplies all-order mixed
-vanishing for its classified cases; finite power regressions have only their
-recorded bounds.
+The first two replays support the complete written argument; they do not
+computer-verify its imported V-filtration theorems. The phase-slice check and the
+optional repeated-profile checkers have their stated smaller arithmetic scopes.
+The [primary-source audit](foundations/extended-geometry/two_pair_image_cubic_primary_sources.json)
+and [completion audit](foundations/extended-geometry/two_pair_image_cubic_completion_audit.json)
+record dependencies, actual replays and the distinction between internal proof,
+external review and formal verification.

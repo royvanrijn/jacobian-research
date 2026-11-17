@@ -21,7 +21,7 @@ Long's witness is
  P=W+WZ-T^2-\frac32ZT^2-\frac12Z^2T^2.
 \]
 
-This note proves a rank-one classification and sparse Pareto minimality in
+This note proves a rank-one classification and a bounded sparse exclusion in
 circular Gaussian coordinates. The current
 [dimension-degree manuscript](../../../unpublished/gaussian-boundary/manuscript.tex)
 separately proves that every pure ternary cubic is safe, giving global
@@ -62,12 +62,12 @@ interact.
 The exact checker is
 [`verify_three_real_gmc_rank_one_classification.py`](../scripts/verify_three_real_gmc_rank_one_classification.py).
 
-## 2. Sparse Pareto minimality
+## 2. Bounded sparse exclusion
 
 The rank-one result extends to every small support in a Gaussian circular
 frame.
 
-> **Theorem 2 (sparse Pareto theorem).**  Let
+> **Theorem 2 (bounded sparse exclusion).**  Let
 > \[
 > P=\sum_{s\in S}c_sW^{i_s}Z^{j_s}T^{k_s},
 > \qquad i_s+j_s+k_s\le4,\qquad |S|\le4.            \tag{4}
@@ -75,12 +75,11 @@ frame.
 > If \(\mathbb E(P^m)=0\) for every \(m\ge1\), then \(P\) satisfies GMC:
 > for every polynomial \(Q\),
 > \(\mathbb E(QP^m)=0\) for all sufficiently large \(m\).
-> Consequently Long's five-term quartic is minimal for the product partial
-> order
-> \[
-> (\deg P,\#\operatorname{supp}P)\le(4,4)           \tag{5}
-> \]
-> in circular Gaussian coordinates.
+> Consequently a failure of degree at most four requires at least five
+> monomials in this circular Gaussian frame; Long's five-term quartic
+> attains this support bound. This simultaneous bounded exclusion alone
+> does not establish product-order Pareto minimality, because a denser
+> cubic lies outside its support bound.
 
 The exhaustive exact checker is
 [`verify_three_real_gmc_sparse_pareto.py`](../scripts/verify_three_real_gmc_sparse_pareto.py).
@@ -141,8 +140,9 @@ finite Gröbner cutoff alone would not.
 The scope of Theorem 2 is exact but bounded. It does not itself treat a
 dense cubic or exclude a four-term failure of degree greater than four.
 The separate dimension-degree manuscript treats all ternary cubics.
-Theorem 2 proves that no polynomial can improve on Long simultaneously in
-both displayed complexity coordinates.
+Theorem 2 proves the necessity of five terms among failures of degree at
+most four. Any unrestricted degree-minimality conclusion uses the separate
+all-cubic theorem, not this sparse exclusion alone.
 
 ## 3. Finite coefficient certificate
 

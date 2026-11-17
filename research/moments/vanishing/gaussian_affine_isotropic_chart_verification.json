@@ -7,8 +7,8 @@
     "python": "3.12.3",
     "sympy": "1.14.0"
   },
-  "checker_sha256": "a797d1888e5ae3f93c1adaf87d9cdfd307d60c06aeaba3fb37e51e96548f7f69",
-  "proof_sha256": "50bf4987b9cdd152b349593bd53909a2e8b30808933c380d4a619d380df6f4cf",
+  "checker_sha256": "fe9453b03dd0935a6ea828336aa277f202a3d7347b1e3037f73cbe1886d3e75a",
+  "proof_sha256": "37585670821d7af0102c1f554b17c84c17673c9e6f77b34380f385b2606399ca",
   "checks": {
     "symbolic": [
       "arbitrary-ell unsafe-branch rational identities",
@@ -18,6 +18,14 @@
       "mixed constant-source phase expansion and moving-coordinate identities",
       "general mixed-source spatial and time-volume identities",
       "root-zero Gaussian tilt denominator identity",
+      "multipuncture squarefree partial-fraction identities",
+      "repeated-square reciprocal quartic and moving-centre derivative identities",
+      "selected double-root leading coefficient with additional root factors",
+      "Long polynomial-orbit coefficient identities",
+      "radial quartic quadratic-coefficient numerator",
+      "relative endpoint boundary-class parameter action",
+      "constant W^2 generic precision, determinant and universal phase numerator",
+      "hyperelliptic spatial and parameter half-density connections and nonconstant phase",
       "four exact all-order marker polynomials from the shear"
     ],
     "bounded_controls": {
@@ -51,7 +59,96 @@
           "W^2"
         ]
       },
-      "rejection_controls": 2
+      "rejection_controls": 2,
+      "squarefree_partial_fractions": {
+        "degrees": [
+          2,
+          3,
+          4,
+          5
+        ]
+      },
+      "repeated_root_pure_rejection_control": {
+        "phase": "Z^2 W Y",
+        "moment_orders": [
+          1,
+          8
+        ]
+      },
+      "multiple_double_root_positive_control": {
+        "c": "Z^2 (Z-1)^2",
+        "moment_orders": [
+          1,
+          8
+        ],
+        "markers": [
+          "1",
+          "W^2"
+        ]
+      },
+      "radial_quartic_formula": {
+        "parameter_cases": [
+          [
+            1,
+            2,
+            3,
+            -1,
+            2,
+            -4
+          ],
+          [
+            0,
+            1,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            1,
+            0,
+            0,
+            0,
+            0,
+            -2
+          ],
+          [
+            0,
+            0,
+            2,
+            -2,
+            1,
+            0
+          ]
+        ],
+        "moment_orders": [
+          0,
+          8
+        ]
+      },
+      "all_degree_radial_relative_bridge": {
+        "g": "R^3+2R",
+        "B": "R^2+1",
+        "a": 1,
+        "parameter_orders": [
+          0,
+          4
+        ],
+        "relative_relations": [
+          "D(R)",
+          "D(R^2)",
+          "D(R^3)"
+        ],
+        "endpoint_relation": "L(D(1))=-H exp(phi(0))"
+      },
+      "generic_hyperelliptic_smoothness_controls": {
+        "c": [
+          "Z",
+          "Z^2",
+          "Z^3+Z",
+          "Z^4-Z"
+        ]
+      }
     },
     "marker_periods_B_z_squared": {
       "1": "-t**5/2",
@@ -64,16 +161,47 @@
   "formal_verification": false,
   "external_review": false,
   "internal_source_review": {
-    "reviewer": "quartic_scope internal research agent",
-    "scope": "All four chart extensions, root-zero divergence argument, Laurent localization cases, marker cutoffs, and spatial/time bridges",
-    "outcome": "No mathematical gap identified; independent and external review remain pending."
+    "reviewers": [
+      "multipuncture",
+      "multiple_poles",
+      "quartic_exact",
+      "audit_imports",
+      "higher_w",
+      "radial_endpoint"
+    ],
+    "scope": "Fixed-puncture and multiple-root estimates; refreshed import audit; arbitrary-multiplicity nonzero-a and unshared-root proofs; relative rank-D endpoint pairing; spatial/parameter half-density and odd-sector bridge; complete positive-genus double-cover component estimates; radial/angular and polynomial-orbit conclusions",
+    "outcome": "No mathematical gap identified in internal source audits. Independent and external review remain pending."
+  },
+  "additional_primary_sources_checked": [
+    {
+      "url": "https://stacks.math.columbia.edu/tag/0CDN",
+      "cache": "research/moments/vanishing/sources/stacks_0CDN_semistable_reduction.html",
+      "sha256": "04737b66853d56ea787cde4ca15964b1896707c3a2e72ceaa0d39c07c7573383",
+      "checked": "Theorem 55.18.1: smooth projective geometrically connected curve over a DVR fraction field acquires semistable reduction after a finite separable extension; all genera included."
+    },
+    {
+      "url": "https://stacks.math.columbia.edu/tag/0CDB",
+      "cache": "research/moments/vanishing/sources/stacks_0CDB_nodal_models.html",
+      "sha256": "57bff065760cfbf5eb1c640fdc9355a5cb032b98244ae5b6ee8daa1f924c5f9b",
+      "checked": "Section 55.14, Example 55.14.1 and Lemma 55.14.3: nodal surface equations uv=pi^n resolve by blowups retaining nodal/reduced fibres."
+    }
+  ],
+  "dependency_refresh": {
+    "laurent_logarithmic_bound.tex": "Current change makes the full chain mapping cone and proper comparison explicit; hypotheses and used estimates unchanged after source audit.",
+    "one_base_main.tex": "Current edits clarify theorem references and companion provenance; used stationary-ball statements and proof unchanged mathematically."
   },
   "repository_checks": {
-    "new_result_graph_explanation": "Current source pins; no stale source in GAUSSIAN-H21-AFFINE-CHART route.",
+    "result_graph_and_source_pins": "passed for GAUSSIAN-H21-AFFINE-CHART",
     "python_compile": "passed",
-    "focused_diff_whitespace": "passed",
-    "new_proof_local_links": "passed",
-    "make_render_navigation": "failed: unrelated changed checker source ARITHMETIC-FIXED-MAP-HASSE-FAILURES; generated navigation not refreshed by this task",
-    "make_check_navigation": "failed at the same unrelated checker-hash gate"
+    "focused_whitespace": "passed",
+    "proof_local_links": {
+      "status": "passed",
+      "references": 9
+    },
+    "repository_local_links": {
+      "status": "failed",
+      "reason": "missing Markdown references:\nresearch/README.md -> COVERAGE.md\nresearch/README.md -> BOUNDS.md\nresearch/STATUS.md -> COVERAGE.md\nresearch/STATUS.md -> BOUNDS.md\nresearch/foundations/extended-geometry/TWO_PAIR_IMAGE_CUBIC_STRATIFICATION.md -> two_pair_image_cubic_primary_sources.json\nresearch/foundations/extended-geometry/TWO_PAIR_IMAGE_CUBIC_STRATIFICATION.md -> two_pair_image_cubic_completion_audit.json"
+    },
+    "navigation": "Latest make render-navigation and make check-navigation stop at unrelated changed checker source BINOMIAL-INITIAL-BOUNDARY. No unrelated hashes were changed by this task."
   }
 }

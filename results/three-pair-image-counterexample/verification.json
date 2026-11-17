@@ -1,0 +1,90 @@
+{
+  "reviewed_on": "2026-11-17",
+  "source": "main.tex",
+  "pdf": "three-pair-image-counterexample.pdf",
+  "source_hashes": {
+    "main.tex": "0c49d6bb76957f2bc8a2159fbd70e191b526b4552945cfcb9dab163a88a18dcb"
+  },
+  "pdf_sha256": "2387be951ebb26bd8b4ce471af57fe7c1d73cfc682c0406a16459735fbca5efd",
+  "pages": 5,
+  "build_command": "latexmk -pdf -interaction=nonstopmode -halt-on-error -jobname=three-pair-image-counterexample main.tex",
+  "build_succeeded": true,
+  "reviewer_context": "Source-aware revision based on the deposited proof and canonical two-pair proof. PDF-only review recorded separately when completed.",
+  "changes": [
+    "Explained the all-order factorial lift before the technical proof and used the first-order contraction as an example.",
+    "Made the image-kernel reduction an explicit induction rather than suggesting that the image subspace is an ideal.",
+    "Included the existing complete two-pair beta-contraction and endpoint-zero argument, replacing the obsolete 2-to-3 dimension interval with the exact boundary.",
+    "Removed workspace paths and used the repository standard AI-assistance paragraph.",
+    "Clarified that the mixed contraction selects a term only after multiplication by Y, addressing the PDF reader's ambiguity."
+  ],
+  "mathematical_checks": [
+    {
+      "command": "python3 verify_three_pair_image_mathieu_counterexample.py",
+      "outcome": "pass",
+      "scope": "Exact three-pair sparse contractions m=1,...,10 and binomial sums m=1,...,99; finite regression only."
+    },
+    {
+      "checker": "research/foundations/scripts/verify_two_pair_image_mathieu_counterexample.py",
+      "sha256": "d0322b641713ec2ef500b732899006dcccf6a1a423da8274f06e0ab12f29be8f",
+      "cutoff": 4,
+      "outcome": "pass",
+      "method": "runpy import without main; exact sparse contractions of canonical witness; no receipt mutation"
+    }
+  ],
+  "primary_references_checked": [
+    {
+      "url": "https://arxiv.org/html/1008.3962v2",
+      "support": "Theorem 2.8 and its proof; with A=C[zeta], a=zeta, non-zero-divisor and radical ideal hypotheses hold."
+    },
+    {
+      "url": "https://arxiv.org/html/2607.19012v1",
+      "support": "Section 4, Lemma 4.1 and Theorem 4.2; exact seed, multiplier, Haar formula and moment identities."
+    }
+  ],
+  "deposited_files_verified": 4,
+  "deposited_hashes_unchanged": true,
+  "independent_replay": false,
+  "external_review": false,
+  "formal_verification_replayed": false,
+  "blind_reader_test": {
+    "performed": true,
+    "date": "2026-11-17",
+    "reviewer": "/root/single_pdf_sic",
+    "type": "isolated internal AI single-PDF reading",
+    "supplied_context": "Only this manuscript PDF and the five reader questions. No conversation, repository content, other papers, external literature, source or supplement.",
+    "initial_pdf_sha256": "41de1f8fb44195e9db3a5454f6f96d495fcf0cdb0a38fe71806191de03da0b44",
+    "pdf_sha256": "2387be951ebb26bd8b4ce471af57fe7c1d73cfc682c0406a16459735fbca5efd",
+    "full_initial_pdf_read": true,
+    "final_affected_pages_rechecked": [
+      3,
+      5
+    ],
+    "answers": {
+      "contribution": "Four-term bidegree-(2,2) three-pair lift of Long's seed, plus explicit bidegree-(4,4) two-pair failure and the minimum failing pair dimension.",
+      "mechanism": "Homogenization adds a common factorial and preserves binomial cancellation; a multiplier leaves a boundary term. Two-pair contraction reduces by beta integration to neighboring coefficients controlled by endpoint contact.",
+      "hardest_step": "Beta contraction formula (3) to coefficients (4), pp.4-5; the displayed formulas allow reconstruction.",
+      "limitations": "No support/degree minimum; the nonseparated witnesses do not themselves yield a constant-coefficient GVC counterexample. Finite checks supplement the all-order proof.",
+      "verification_obstacles": "The explicit proofs are self-contained apart from the cited one-pair theorem establishing minimality. Long attribution needs the reference. Final reread resolves the post-multiplier selection ambiguity and confirms complete five-page pagination."
+    },
+    "external_review": false,
+    "mathematical_certification": false,
+    "supplement_replayed_by_reader": false
+  },
+  "source_bundle": {
+    "file": "source.zip",
+    "sha256": "14380d98d1766097a9feb567080368985c1a585375109c14213da46d4ead835e",
+    "standalone_build_succeeded": true,
+    "contents": "Current compile inputs and durable supplement/build instructions; mutable review metadata excluded.",
+    "command": "latexmk -pdf -interaction=nonstopmode -halt-on-error -jobname=three-pair-image-counterexample main.tex",
+    "pages": 5,
+    "page_text_matches_current_pdf": true,
+    "scope": "Final source.zip extracted into a fresh isolated scratch directory and built using only its included sources; byte-identical PDF metadata is not required."
+  },
+  "remaining_obligations": [
+    "Independent mathematical review of both all-order arguments."
+  ],
+  "latex_log_issues": [
+    "Underfull \\hbox (badness 1817) in paragraph at lines 413--419"
+  ],
+  "layout_review": "All final five pages rendered and visually inspected; final changed pages3 and5 enlarged. References remain together; no clipping, overlap or missing content. Bibliography has one harmless underfull-box warning."
+}

@@ -702,19 +702,25 @@ invariant line spanned by \(R^k\) fills the other degrees.  General Cartan
 projections, plethysms other than ordinary powers, polarizations, block
 embeddings, and differential intertwiners have no automatic scalar
 radial-shift identity, so no moment-preservation claim is made for them.
-The existence of \(R\)-primitive witnesses in degrees not divisible by
-four remains open.  A Cartan or trace-free projection would have to solve
+The existence of \(R\)-primitive failure witnesses in degrees \(d\geq5\)
+not divisible by four remains open.  A Cartan or trace-free projection would have to solve
 new moment identities rather than inherit them from the radial-shift
 lemma.
 
 ## 6. Frontier consequences
 
-The family begins in balanced bidegree \((4,4)\).  It is therefore
-compatible with the complete positive theorem in bidegree \((2,2)\) and
-does not decide the still-open full bidegree-\((3,3)\) stratum.  It
-falsifies the proposed two-pair moment--nullcone equality in every degree
-\(d\geq4\): the pure moments of \(F_d\) all vanish, while the fixed
-multiplier \(Q\) proves that \(F_d\) cannot be one-sided.
+The family begins in balanced bidegree \((4,4)\). The complete
+[cubic positivity theorem](TWO_PAIR_IMAGE_CUBIC_STRATIFICATION.md) proves
+the Image implication for the full bidegree-\((3,3)\) stratum, and for
+each lower balanced bidegree. Thus four is the exact least failing
+balanced degree among bihomogeneous forms in two pairs.
+
+The family also falsifies the proposed two-pair moment--nullcone equality
+in every degree \(d\geq4\): the pure moments of \(F_d\) all vanish, while
+the fixed multiplier \(Q\) proves that \(F_d\) cannot be one-sided.
+The cubic source separately gives a safe, moment-zero cubic outside the
+orthogonal nullcone. Consequently moment--nullcone failure in degree
+three does not contradict the cubic Image theorem.
 
 Because the coefficient matrix has full rank, the witness does not
 contradict the split-symbol GVC theorem.  That theorem concerns rank-one

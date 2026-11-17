@@ -141,10 +141,47 @@ exponential period comparison identifies the resulting relative
 chain complexes with the component de Rham complexes; for a constant
 phase this is ordinary homology. At each finite--finite node glue by
 the actual annulus chain complex, with both its degree-zero and
-degree-one terms. Taking the total complex is Mayer--Vietoris for
-the full nearby-cycle complex above. It computes its maps and
-monodromy, not merely its Euler characteristic. In particular its
-classes exhaust the formal regular summand by proper comparison.
+degree-one terms. Here is the total complex and the degree in which it is used. Let
+$U$ be the disjoint union of these component pieces with their descending
+ends, $V$ the disjoint union of the finite--finite necks, and $W$ their
+boundary-collar overlaps. Write $C_\bullet$ for chains with the stated
+rapid boundary condition at the ends, and with the exponential local
+coefficients. Set
+\[
+ C^{\mathrm{gl}}_\bullet=
+ \operatorname{Cone}\!\left(
+ C_\bullet(W)\xrightarrow{(i_*,-j_*)}
+ C_\bullet(U)\oplus C_\bullet(V)\right).
+\]
+Thus a class includes its matching boundary chains; taking the separate
+component homology groups would lose these data. The neck complex
+retains both $C_0$ and $C_1$. Let $\mathcal K_\psi$ denote the moderate
+nearby-cycle de Rham complex on the central curve of the marked model,
+before proper pushforward. We use the unshifted curve de Rham
+normalization (functions in degree zero, one-forms in degree one),
+and take its hypercohomology over that central curve. The integration
+comparison and proper specialization give
+\[
+ H_1(C^{\mathrm{gl}}_\bullet)
+ \xrightarrow[\text{integration}]{\ \simeq\ }
+ \mathbb H^1(\mathcal K_\psi)^\vee
+ \xrightarrow[\text{proper comparison}]{\ \simeq\ }
+ \operatorname{Sol}(M_0).
+\]
+Here $M_0$ is the formal zero-exponential summand, and
+$\operatorname{Sol}$ denotes its horizontal dual on the chosen
+parameter sector, with nearby-cycle monodromy retained. The first arrow
+is obtained on $U,V,W$ from the curve period pairing and then on their
+mapping cones. The second is the moderate-nearby-cycle/proper-image
+comparison just cited, in fibre cohomological degree one. This also
+specifies the specialization map used here: lift the glued chains,
+integrate, and take their zero-exponential asymptotic classes. On a
+non-Stokes sector the latter forgets possible exponentially decaying
+terms in a lift. Naturality of integration under the two collar
+inclusions makes these maps agree. In particular this comparison is of
+complexes with their gluing maps and monodromy; equality of Euler
+characteristics or a count of local saddles is not being used to infer
+surjectivity.
 
 Choose a finite basis of this finite-dimensional homology. Smooth
 pieces and their boundary points lift by the implicit function

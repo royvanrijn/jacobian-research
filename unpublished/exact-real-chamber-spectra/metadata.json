@@ -4,23 +4,28 @@
     "name": "Roy van Rijn",
     "orcid": "0009-0000-2808-0645"
   },
-  "summary": "Studies real fibre counts and chamber spectra of explicit Keller maps.",
+  "summary": "Realizes every parity-compatible fiber count on the open locus C != 0 with squarefree inverse polynomial, using one explicit rational Keller map in each degree.",
   "published": false,
   "status": "parked",
   "source": "main.tex",
   "pdf": "paper.pdf",
   "build": "latexmk -pdf -jobname=paper -interaction=nonstopmode -halt-on-error main.tex",
-  "verification": "Retained manuscript; excluded from the previous publication pipeline and not currently submission-ready.",
+  "verification": "Revised fold statement, explicit polynomial divisibility and chain-rule Jacobian proof; fresh LaTeX build and visual PDF inspection; selected exact seed and chamber controls, not an all-degree computational proof.",
   "next_steps": [
-    "Reassess the manuscript against the canonical fibre-spectrum proof and current literature."
+    "Obtain an external novelty comparison for the chamber spectrum and adjacency statement.",
+    "Decide whether to release this as a standalone companion note."
   ],
   "catalogued_on": "2026-11-17",
-  "abstract": "Migus classified the generic degrees of real polynomial Keller maps with\nnon-dense Euclidean image: in every dimension at least three they are exactly\nthe even integers at least four.  We refine the realization side inside one\nexplicit weighted family.  For every \\(N\\geq3\\) we give a rational Keller map\n\\(F_N:\\A^3\\to\\A^3\\) of generic degree \\(N\\) whose complete regular real\nfibers have exactly\n\\[\n  N,N-2,N-4,\\ldots,N\\bmod 2\n\\]\npoints, and no other cardinalities.  Every value occurs on a nonempty open\ntarget chamber, every chamber contains a rational target, and selected\nchambers with the displayed cardinalities form a chain whose successive\nwalls are smooth folds of the inverse polynomial pencil.  In even degree the\nlast chamber is disjoint from the image, recovering the non-dense examples\nin Migus's classification with their full real sheet spectrum.",
+  "abstract": "Migus classified the generic degrees of real polynomial Keller maps with\nnon-dense Euclidean image: in every dimension at least three they are exactly\nthe even integers at least four.  We refine the realization side inside one\nexplicit weighted family.  For every \\(N\\geq3\\) we give a rational Keller map\n\\(F_N:\\A^3\\to\\A^3\\) of generic degree \\(N\\).  On the open target locus\nwhere the last coordinate is nonzero and the scalar inverse polynomial is\nsquarefree, its real fibers have exactly\n\\[\n  N,N-2,N-4,\\ldots,N\\bmod 2\n\\]\npoints, and no other cardinalities.  Every value occurs on a nonempty open\ntarget chamber, every chamber contains a rational target, and selected\nchambers with the displayed cardinalities form a chain whose successive\nwalls are smooth folds of the inverse polynomial pencil.  In even degree the\nlast chamber is disjoint from the image, recovering the non-dense examples\nin Migus's classification with their full real sheet spectrum.",
   "abstract_format": "latex",
   "abstract_source": "main.tex",
   "resource_type": {
     "title": "Preprint",
     "type": "publication",
     "subtype": "preprint"
-  }
+  },
+  "revised_on": "2026-11-17",
+  "verification_record": "verification.json",
+  "source_archive": "source.zip",
+  "source_bundle": "source.zip"
 }

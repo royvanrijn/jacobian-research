@@ -2,21 +2,21 @@
   "status": "internally complete; independent mathematical review and publication pending",
   "source": "manuscript.tex",
   "pdf": "manuscript.pdf",
-  "pages": 56,
+  "pages": 57,
   "source_hashes": {
     "affine_classification_proof.tex": "9e5c41ad1239bdfa488969c9b861f3af866ad39c9ee051532690d2f4a842132b",
     "affine_coordinate_split.tex": "7cd07d2007478d52cde2655e83628f7afb527ed905ae06168840a3fc0400fd25",
     "affine_height_cases.tex": "d4b02f0060e78f66ad94237f718bb947358270adda241908c8a9b74c5c7db78f",
     "analytic_core.tex": "630aa431b35e930680437ef4d666f71129f25187120bfb67302925f6c882b53b",
-    "bounded_regular_reduction.tex": "c32a5f93ce171b012efad070443f56698c6e3ae522de475fe567d3c8ef9747d2",
+    "bounded_regular_reduction.tex": "b1615d6f7e148bbd59a600edfe29d0a641083d8fa453744425471bc700234799",
     "concurrent_regular_exclusion.tex": "ae0579bbe1252d072e9a21c3e9e5ff0dce7b4e144938f11ceacb9bd39f48f866",
     "cusp_tangent_exclusion.tex": "3c009a2b6ee209fae6e7b93a4e48d81d20d00ca8f84226c5f12d959f2e951bb2",
     "formal_lemmas.tex": "756b6f2d0d7d3ec6661cc77af72836f79b2441d90194332ce0d089b3cd597e7d",
     "frame_extraction_cases.tex": "45b1e73111ee6c7f1c1aedd5de0958600f4cadef89a2dd06d7746a3a8f4427a4",
     "gradient_exclusion.tex": "476109105e47841add12c6b9157853566bfe4801a4e7cb0d6b5a394365aff4ca",
     "hyperbolic_suspension.tex": "12a67fd35be011ea1b515993ce1c91638dfc9be90cefc3fb5c98d17192b500dc",
-    "laurent_logarithmic_bound.tex": "fdedd048f21c947935f40785fbbc24536173e39309b820f968deb35ecba5e6a6",
-    "manuscript.tex": "aeec48704dfd58e51e3640d0e4da5aeeeca83087fa4440f18356a717940876e4",
+    "laurent_logarithmic_bound.tex": "7615dec83c386cb532b461918685cbf533df9aa474199fb00c2fcb473f4b6c52",
+    "manuscript.tex": "b636da0ced90547dc9b1c0dd5040413191c8c7522de22e3fd84aaae386ea5d25",
     "mixed_formal_exclusion.tex": "db2690329669c03a8ac3549da70ba4d4766db96ae7bffc618cf6d9ca00e99d13",
     "ordinary_axis_exclusion.tex": "1a6386300ace0a134963fab8a0b138068849b6d3fd4bd2d35619330d4a0f86c3",
     "ordinary_finite_exclusion.tex": "9da1cd85ef769a7218e728b8a01907f1b8eea60c7487ed716d02f8bd40c6077d",
@@ -25,11 +25,16 @@
     "rank_one_affine_case.tex": "6c20bf9cdb5e39b379d262627df9bbd0988eb147506bff518c8de159827400e0",
     "repeated_line_exclusion.tex": "933184e1a5b438699d3c1ffa13d871257200184fd0c0dc7b6f5c0f9baa8d0ff7",
     "seed_period_comparison.tex": "ded60022b51ecd34b1104e2c828947b8177e7e4a97f98c66324d3ca016e1450a",
-    "uniform_cut_decay.tex": "dcd7c6d70c35feafb5ab1e4e8977f1b1b2fce78c5142d16ed7b00872fbbf0088"
+    "uniform_cut_decay.tex": "4f130fe77ccea8e9353c1110dee1c7cfcbdd211caac9a8c6e755992c6aafc9a7"
   },
-  "pdf_sha256": "9c9527e1b2af8b35beadd81c64e15cd040952b539a9955484a53e93615ecf7ac",
+  "pdf_sha256": "d90885ac552df7626cc1ed7396cd4b6be8f8e45d15e8b0266e72a8d9a0cd1385",
   "mathematical_review": "Internal written-proof walkthrough of the affine case split, stationary frames, all nine leading-cubic types and their critical-set subcases, and the global gradient/logarithmic/cut estimates. Clarified scaled-root multiplicities and the relative-homology/rapid-decay step. Selected exact algebra replayed by verify.py; no exhaustive or formal proof verification claimed.",
-  "remaining_review": "Independent specialist review of the full formal and analytic proof and its external inputs before submission; no known omitted coefficient case was identified in this internal review.",
+  "remaining_review": [
+    "Specialist verification of the degree-one nearby-cycle/gluing comparison in Lemma 10.7 and Theorem 10.9.",
+    "Specialist verification of the no-spatial-infinity and full regular-rank identifications used in Lemma 11.7 and Proposition 11.19.",
+    "Specialist verification that the relative cut pairs in Theorem 11.11 give the entire flat rapid-decay basis and the required uniform boundary-mass bounds.",
+    "Independent review of the full ternary-cubic classification and adopted analytic inputs before submission."
+  ],
   "external_inputs": [
     {
       "author": "Wilson",
@@ -94,11 +99,10 @@
     }
   ],
   "layout_checks": {
-    "pages_rendered_and_inspected": 56,
-    "unresolved_references": false,
-    "overfull_boxes": false,
-    "clean_rebuild_rendering_matches_retained_pdf": true,
-    "notes": "All 56 pages rendered and compared with the preceding reviewed PDF. Only page 56 changed; it was visually inspected after standardizing the AI attribution, with no clipping, overlap or unresolved references."
+    "all_pages_rendered": true,
+    "pages": 57,
+    "inspection": "Every page inspected at contact-sheet level; expanded comparisons and the degree-transfer passages inspected at reading resolution. Clean build contains no unresolved references, multiply defined labels or overfull boxes.",
+    "clean_rebuild_text_and_pixels_match": true
   },
   "independent_replay": false,
   "formal_verification": false,
@@ -179,5 +183,44 @@
     ],
     "latex_issues": [],
     "canonical_paragraph_occurrences": 1
+  },
+  "release_review_corrections": {
+    "date": "2026-11-17",
+    "basis": "Critical release review, page 8; source-aware revisions to the identified analytic interfaces.",
+    "changes": [
+      "Specified the glued rapid-decay chain mapping cone, its degree-one integration comparison and the location of the nearby-cycle complex before proper pushforward.",
+      "Isolated fixed-nonzero-parameter spatial-infinity exclusion and displayed tame total rank, critical-graph conormal multiplicities and irregular/regular rank subtraction.",
+      "Specified constrained and full relative cut pairs, removed finite-phase spatial boundary, and explained full-basis image and flat transport before mass estimates.",
+      "Replaced nine projective types by nine geometric types."
+    ],
+    "source_aware_internal_review": {
+      "reviewer": "OpenAI Codex agent binary_revisions",
+      "context": "New source diffs and existing manuscript sources; not an isolated reader.",
+      "finding": "No demonstrated blocker in the new cone degree, fixed-parameter lifting estimates or graph-rank ledger. Ambiguity in the location of K_psi was corrected to the central curve before proper pushforward.",
+      "limitation": "Does not independently certify the full global analytic proof or external source hypotheses."
+    }
+  },
+  "isolated_pdf_only_reading": {
+    "performed": true,
+    "date": "2026-11-17",
+    "reviewer": "OpenAI Codex agent blind_boundary",
+    "type": "isolated internal AI review",
+    "supplied_context": "Only the 57-page PDF and the five reader questions; no repository sources, previous review, companions or literature browsing.",
+    "pdf_sha256": "d90885ac552df7626cc1ed7396cd4b6be8f8e45d15e8b0266e72a8d9a0cd1385",
+    "pages": 57,
+    "answers": {
+      "contribution": "Classification of pure complex ternary cubics as one-sided support or the exceptional orbit, with sharp cutoff m>3 deg Q; the assembled dimension-degree boundary credits adopted binary, quadratic and counterexample results.",
+      "mechanism": "Extract a null affine Gaussian direction; classify the resulting affine family using exact contraction and complete formal/analytic period exclusions with positive seed order.",
+      "hardest_step": "Full regular-part comparison in Lemma10.7/Theorem10.9 and full cut-basis/current decay in Theorem11.11; full-rank comparisons in Lemma11.7 and Proposition11.19.",
+      "limitations": "Universal dimension-degree implication only; general safety-to-purity remains open; convergent rational Laurent arguments are separated from formal nonconvergent polynomial arguments.",
+      "obstacles": "Specialist checking of nearby-cycle objects and gluing, middle direct-image and spatial-infinity identifications, and flat-basis/boundary-mass hypotheses remains necessary."
+    },
+    "finding": "No decisive counterexample or plainly false mathematical statement found. Parameter and normalization symbols have many local meanings and increase checking effort.",
+    "external_review": false
+  },
+  "source_archive_reproduction": {
+    "archive": "source.zip",
+    "result": "passed",
+    "scope": "Clean LaTeX build from the isolated current source archive, with exact page text and rendered-pixel comparison to the designated PDF. Artifact reproduction only, not independent mathematical review."
   }
 }

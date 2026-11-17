@@ -4,6 +4,12 @@
     "two_three_separation": "all integer d>=1 and real y>=x>0; elementary proof",
     "lower_exponent_initial_block": "all a>=0,d>=1 integers and beta>0, terminal<=3",
     "parameter_polynomial_selection": "all N>=2,d>=1,z complex; elementary degree proof",
+    "finite_support_reduction": "each terminal N>=2: a<A_N and 2<=d<D_N; ordinary factorials",
+    "large_gap_pairwise_coprimality": "all a>=1, d>=D_N, orders 1..N",
+    "large_lower_exponent_pairwise_coprimality": "all d>=1, a>=A(N,d), orders 1..N",
+    "sparse_endpoint_mass_criterion": "d^2>=4(a+d)log(8N): simplicity and pairwise coprimality through N",
+    "diagonal_derivative_embedding": "all a,d,N>=1 integers and beta>0; fixed lower-one seed S_m",
+    "generic_preservation_shortcut": "counterexample despite simplicity and Hurwitz stability of every derivative and consecutive base coprimality",
     "all_index_binomial_sfc": false
   },
   "coverage": {
@@ -12,11 +18,178 @@
     "rational_inequality_cases": 200,
     "exact_moment_gcd_cases": 144
   },
+  "support_bound_replay": {
+    "large_gap_annulus_support_cases": 12,
+    "large_lower_exponent_Rouche_support_cases": 20,
+    "sparse_endpoint_mass_support_cases": 4,
+    "direct_pairwise_moment_gcd_checks": 256,
+    "direct_individual_squarefreeness_gcd_checks": 23,
+    "large_lower_exponent_exact_inputs": [
+      {
+        "terminal": 2,
+        "gap": 1,
+        "delta": "1/8",
+        "lower_exponent_cutoff": "867",
+        "tested_lower_exponent": 867
+      },
+      {
+        "terminal": 2,
+        "gap": 2,
+        "delta": "1/4",
+        "lower_exponent_cutoff": "810",
+        "tested_lower_exponent": 810
+      },
+      {
+        "terminal": 2,
+        "gap": 3,
+        "delta": "1/4",
+        "lower_exponent_cutoff": "1701",
+        "tested_lower_exponent": 1701
+      },
+      {
+        "terminal": 2,
+        "gap": 5,
+        "delta": "1/4",
+        "lower_exponent_cutoff": "4455",
+        "tested_lower_exponent": 4455
+      },
+      {
+        "terminal": 3,
+        "gap": 1,
+        "delta": "1/12",
+        "lower_exponent_cutoff": "62500",
+        "tested_lower_exponent": 62500
+      },
+      {
+        "terminal": 3,
+        "gap": 2,
+        "delta": "1/6",
+        "lower_exponent_cutoff": "30758",
+        "tested_lower_exponent": 30758
+      },
+      {
+        "terminal": 3,
+        "gap": 3,
+        "delta": "1/4",
+        "lower_exponent_cutoff": "21870",
+        "tested_lower_exponent": 21870
+      },
+      {
+        "terminal": 3,
+        "gap": 5,
+        "delta": "1/4",
+        "lower_exponent_cutoff": "58320",
+        "tested_lower_exponent": 58320
+      },
+      {
+        "terminal": 4,
+        "gap": 1,
+        "delta": "1/16",
+        "lower_exponent_cutoff": "5929605",
+        "tested_lower_exponent": 5929605
+      },
+      {
+        "terminal": 4,
+        "gap": 2,
+        "delta": "1/8",
+        "lower_exponent_cutoff": "1503378",
+        "tested_lower_exponent": 1503378
+      },
+      {
+        "terminal": 4,
+        "gap": 3,
+        "delta": "3/16",
+        "lower_exponent_cutoff": "19508125/27",
+        "tested_lower_exponent": 722524
+      },
+      {
+        "terminal": 4,
+        "gap": 5,
+        "delta": "1/4",
+        "lower_exponent_cutoff": "688905",
+        "tested_lower_exponent": 688905
+      },
+      {
+        "terminal": 5,
+        "gap": 1,
+        "delta": "1/20",
+        "lower_exponent_cutoff": "695137206",
+        "tested_lower_exponent": 695137206
+      },
+      {
+        "terminal": 5,
+        "gap": 2,
+        "delta": "1/10",
+        "lower_exponent_cutoff": "89850222",
+        "tested_lower_exponent": 89850222
+      },
+      {
+        "terminal": 5,
+        "gap": 3,
+        "delta": "3/20",
+        "lower_exponent_cutoff": "2352135088/81",
+        "tested_lower_exponent": 29038705
+      },
+      {
+        "terminal": 5,
+        "gap": 5,
+        "delta": "1/4",
+        "lower_exponent_cutoff": "7676370",
+        "tested_lower_exponent": 7676370
+      },
+      {
+        "terminal": 6,
+        "gap": 1,
+        "delta": "1/24",
+        "lower_exponent_cutoff": "96889010407",
+        "tested_lower_exponent": 96889010407
+      },
+      {
+        "terminal": 6,
+        "gap": 2,
+        "delta": "1/12",
+        "lower_exponent_cutoff": "6347656250",
+        "tested_lower_exponent": 6347656250
+      },
+      {
+        "terminal": 6,
+        "gap": 3,
+        "delta": "1/8",
+        "lower_exponent_cutoff": "1375841433",
+        "tested_lower_exponent": 1375841433
+      },
+      {
+        "terminal": 6,
+        "gap": 5,
+        "delta": "5/24",
+        "lower_exponent_cutoff": "687095194999/3125",
+        "tested_lower_exponent": 219870463
+      }
+    ]
+  },
+  "diagonal_derivative_replay": {
+    "literal_derivative_embedding_cases": 72,
+    "symbolic_shape_derivative_embedding_cases": 1,
+    "fixed_base_parameter_permutations": 96,
+    "generic_counterexample_max_base_index": 10,
+    "generic_counterexample_derivative_simplicity_checks": 55,
+    "generic_counterexample_positive_Hurwitz_minor_checks": 220,
+    "generic_counterexample_consecutive_base_gcd_checks": 10,
+    "generic_counterexample_diagonal_gcd_degree": 1
+  },
+  "representation_source": {
+    "file": "sources/wolfs-2024-multiple-orthogonal-2401.08312v1.pdf",
+    "sha256": "f067406cc088fbad56308b00d8add51117401379504a1109b30442b62cf82182",
+    "theorem": "Wolfs arXiv2401.08312v1 Theorem4.6 p=0,q=d",
+    "scope": "representation attribution only; coefficient identity rederived; no zero theorem imported",
+    "cached_primary_source_hash_checked": true
+  },
   "python": "3.12.3",
   "sympy": "1.14.0",
   "source_sha256": {
-    "lower_exponent_initial_and_boundary.tex": "86a1f888ad99e76ae486e97ebe7c5bd576dec42c95f10bb2944abcf542bf0c53",
-    "lower_exponent_initial_and_boundary.py": "a603898e24b0a34cc898b6147d3dd283b77ac2bcc395f0bcc86427c49a645025"
+    "lower_exponent_initial_and_boundary.tex": "8d56b2d6b2fd287001690c1dd4f6c6e69996981da79937e67da09c9d66ce9782",
+    "lower_exponent_initial_and_boundary.py": "df86be130029a7c056a201dfebf05da6863614c071239eb51d56570d385979f4",
+    "sources/wolfs-2024-multiple-orthogonal-2401.08312v1.pdf": "f067406cc088fbad56308b00d8add51117401379504a1109b30442b62cf82182"
   },
   "independent_replay": false,
   "formal_verification": false,

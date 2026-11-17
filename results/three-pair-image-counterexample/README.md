@@ -1,20 +1,15 @@
 # A Four-Term Counterexample to the Special Image Conjecture in Three Pairs
 
-An explicit four-term polynomial disproves the Special Image Conjecture in three contraction pairs.
+[Current PDF](three-pair-image-counterexample.pdf) · [LaTeX](main.tex) · [Source bundle](source.zip) · [Verification](verification.json) · [Metadata](metadata.json)
 
-**Published preprint · 2026-07-28 · [10.5281/zenodo.21634058](https://doi.org/10.5281/zenodo.21634058)**
+The current repository edition gives the four-term three-pair construction and includes a complete proof of the later bidegree-(4,4) two-pair example. The one-pair theorem then identifies two as the minimum failing pair dimension. The proof explains the factorial lift and the endpoint-zero cancellation before drawing the dimension conclusion.
 
-[PDF](three-pair-image-counterexample.pdf) · [LaTeX](main.tex) · [Zenodo](https://zenodo.org/records/21634058) · [Submission metadata](zenodo-metadata.json) · [Publication metadata](metadata.json)
+This is a local revision. The exact [published edition](published/) retains the deposited PDF, source, checker, submission metadata and [checksums](published/deposited-files.json) for [Zenodo 21634058](https://zenodo.org/records/21634058). Its statement that the failing dimension is two or three is historical.
 
-The PDF and deposited bundle files are the exact Zenodo edition. [Checksums](deposited-files.json) record their provenance.
+Build from this directory with `latexmk -pdf -interaction=nonstopmode -halt-on-error -jobname=three-pair-image-counterexample main.tex`.
 
-## Verification
+Run the dependency-free three-pair regression with `python3 verify_three_pair_image_mathieu_counterexample.py`. It writes the current local receipt and never touches the archived deposit. The two-pair checker and canonical proof remain in [research](../../research/foundations/extended-geometry/TWO_PAIR_IMAGE_MATHIEU_COUNTEREXAMPLE.md).
 
-Written all-power identities and an accompanying finite exact regression checker. The deposited frontier 2 <= r_SIC <= 3 is historical; later local work establishes failure with two pairs. The finite checker alone is not an all-order theorem proof.
+The manuscript proves both identities for every positive exponent. The finite checks only test recorded ranges. No new formalization or independent external review is claimed. Independent mathematical review of the revised article remains a next step.
 
-- [Evidence 1](verify_three_pair_image_mathieu_counterexample.py)
-- [Evidence 2](../../research/foundations/extended-geometry/TWO_PAIR_IMAGE_MATHIEU_COUNTEREXAMPLE.md)
-
-The catalogue corrects the record title's grammatical typo; the downloaded files retain their original bytes.
-
-Build the deposited source from this directory with `latexmk -pdf main.tex`. Formal packages and broader research notes remain under `research/`.
+An isolated internal AI reader read the PDF and rechecked the clarified mixed-selection argument and final pagination. Its answers and limits are recorded in the verification record.

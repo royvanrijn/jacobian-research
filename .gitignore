@@ -48,3 +48,7 @@ tmp/
 
 # Local rollback snapshots used by active manuscript reviews.
 /unpublished/**/versions/
+
+# Current released-paper bibliographies regenerated from the retained .bib source.
+/results/generalized-vanishing-two-variables/main.bbl
+/results/generalized-vanishing-two-variables/generalized-vanishing-two-variables.bbl

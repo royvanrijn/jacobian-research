@@ -1,6 +1,6 @@
 # Generalized Vanishing in Lean
 
-This project supplies formal proofs for the [GVC paper](../../../../results/generalized-vanishing-two-variables/README.md) and its [working revision](../../../../unpublished/generalized-vanishing-two-variables-revision/README.md). Lean and Mathlib versions are pinned locally.
+This project supplies formal proofs for the [current GVC paper](../../../../results/generalized-vanishing-two-variables/README.md); the [deposited edition](../../../../results/generalized-vanishing-two-variables/published/README.md) is preserved separately. Lean and Mathlib versions are pinned locally.
 
 ```sh
 lake build

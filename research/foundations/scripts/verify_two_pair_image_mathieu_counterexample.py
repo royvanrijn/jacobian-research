@@ -428,6 +428,7 @@ def main() -> None:
             "TWO_PAIR_IMAGE_MATHIEU_COUNTEREXAMPLE.md"
         ),
     }
+    OUTPUT.parent.mkdir(parents=True, exist_ok=True)
     OUTPUT.write_text(json.dumps(artifact, indent=2) + "\n")
 
     print(

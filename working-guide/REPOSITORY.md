@@ -12,15 +12,19 @@ Read [the root instructions](../AGENTS.md) before starting; use
 | `research/` | Current mathematics by topic | Canonical statements and proofs, open obligations, necessary checkers and exact inputs |
 | `research/MATH_STATUS.json` | Structured current mathematical status | Stated scope, proof dependencies, source pins, open gaps and separate assurance flags |
 | `research/STATUS.md`, `research/SCOPES.md`, `research/DEPENDENCIES.md` | Generated navigation | Status, scope audit and implication diagrams from `make render-navigation`; edit the structured source |
-| `unpublished/` | Manuscript bundles awaiting revision, review or deposit | Paper source, current PDF, build instructions, metadata, verification scope and next review tasks |
-| `results/` | Deposited editions | Exact deposited files, checksums, identifiers, submission metadata and verification scope |
+| `unpublished/` | Papers without a public deposit | Paper source, current PDF, build instructions, metadata, verification scope and next review tasks |
+| `results/<paper>/` | Current edition of a released paper | Best current source and PDF, build instructions, local revision status, verification scope and review tasks |
+| `results/<paper>/published/` | Immutable deposited edition | Exact deposited files, checksums, identifiers and submission metadata |
 | `working-guide/` | Reusable working standards | Policies and reusable procedures, without per-result progress records |
 
 A research note can contain incomplete arguments and failed approaches when they are
 needed to explain an open obligation. Mark their status where they occur. A paper
 presents a coherent mathematical contribution that can be read without the worktree.
-A deposited edition is immutable: prepare corrections or later editions under
-`unpublished/`, retaining the original deposit and its provenance.
+A deposited edition is immutable: retain its exact files and provenance under
+`results/<paper>/published/`, and prepare later editions at the paper directory's
+top level. Merge any existing `unpublished/` revision into that current home,
+preserving its work and updating consumers. A current local revision does not
+inherit the archived edition's DOI, public-deposit status or review assurances.
 
 Use the topic catalogue to find existing work before adding a new directory or proof.
 Do not create competing descriptions named `final`, `final-v2`, `latest` or dated
@@ -164,8 +168,11 @@ they must not be hidden as internal housekeeping.
 A submission bundle must reproduce the reviewed PDF from its included sources,
 bibliography and figures. Freeze the reviewed bytes and record the edition before
 submission. A directory name or passing checker does not mean the paper has been
-reviewed, accepted or deposited. Create a `results/` edition only after an actual
-public deposit is verified, preserving its exact files and checksums. Submit or
+reviewed, accepted or deposited. Create a new `results/` paper directory only after an actual public deposit is
+verified. Keep its best current edition at top level and the exact deposited
+files, metadata and checksums in `published/`. Revisions of a released paper
+stay in that existing result directory; they need no new deposit merely to
+become its current repository edition. Submit or
 publish only when the user has authorized that action.
 
 ## Finish with an evidence based handoff

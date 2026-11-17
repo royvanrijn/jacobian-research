@@ -157,3 +157,59 @@ lake build FiniteEtaleKeller.PaperCertificate
 
 These commands identify the current source locations; no fresh manuscript or
 Lean build is claimed by this path correction.
+
+## Response to the 17 November release review
+
+The current edition explicitly derives the characteristic-zero existence
+statement from Ulam Theorem 5.2, with all parameter choices displayed in
+Section 2.3. The paper is positioned as a quadratic-gauge proof and formal
+certificate of that consequence. Corollary 4.10 now localizes integral
+models at the additional primes required by the algebra isomorphism.
+Appendix B includes `CollisionFiber` among the five direct certificate
+imports and provides the actual pinned formal-source citation.
+
+The exact coefficient comparison `python3 verify_comparison.py` passed
+45 rational controls through degree 24, including a zero cubic coefficient,
+and rejected altered coefficients. This checks the displayed specialization;
+the coefficientwise argument in the article proves its general form.
+A fresh `latexmk` build produced 19 pages, without unresolved citations,
+references, overfull boxes or other LaTeX warnings. All 19 pages were
+rendered and inspected as a contact sheet; the new comparison was also
+inspected at reading resolution. `git diff --check` passed for this bundle.
+
+The attached release review's isolated reader record applies to the previous
+18-page PDF with SHA-256
+`ac674badcd7c12d89dd960c786ca8d621d972485ea51eb2d80032667d7c93d28`.
+It is historical internal AI review. The current 19-page PDF has now received a
+separate isolated internal AI reading, recorded with its exact hash and five
+reader answers in `verification.json`. External human review and a fresh Lean
+build/axiom audit remain unperformed.
+
+### Reproducing the formal boundary
+
+The source pin for the formal supplement is `c32b9b4d273cf7988e85184a0d5eae9c488727fd`,
+with Lean 4.32.1 and mathlib v4.32.1 (see its manifest for the exact mathlib
+commit). From the repository root, enter the formal project and run:
+
+```sh
+cd research/foundations/formal/finite-etale-keller
+lake build FiniteEtaleKeller.PaperCertificate
+```
+
+For a new transitive axiom report, save the following as `AxiomAudit.lean`
+in that project and run `lake env lean AxiomAudit.lean`:
+
+```lean
+import FiniteEtaleKeller.PaperCertificate
+#print axioms FiniteEtaleKeller.paperPolynomialPresentation_pageOne
+#print axioms FiniteEtaleKeller.paperAbstractFiniteEtale_pageOne
+```
+
+These are reproduction instructions, not a claim that this revision ran
+the Lean toolchain or obtained a new axiom report. The current source archive
+contains the article and its finite coefficient checker; the formal project
+is obtained from the separately cited versioned supplement.
+
+The delivered `source.zip` was extracted into a temporary directory and its
+article compiled successfully there, without undeclared workspace files.
+The PDF and every recorded source identity match `verification.json`.

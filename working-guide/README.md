@@ -12,7 +12,7 @@ Start with the repository [agent instructions](../AGENTS.md). This guide supplie
 4. Write around the contribution and argument. Keep research updates, discovery chronology, repository paths, task names, and agent instructions out of manuscript prose. Explain failed natural approaches when they clarify an obstruction; state mathematical limitations directly.
 5. Explain the central idea before technical machinery and give enough detail to check the hard step. Every definition, lemma, and example must earn its place; remove repetition and routine detail that conceal the argument.
 6. Maintain one current account of a result and its evidence. Preserve necessary proof sources and exact replay inputs; use Git for superseded development history.
-7. Preserve deposited bytes and checksums. Keep revisions separate, and describe publication, mathematical review, computation, and formalization with their actual scopes.
+7. Preserve deposited bytes and checksums in each released paper's `published/` archive. Keep its current revision at the paper directory's top level, and describe publication, mathematical review, computation, and formalization with their actual scopes.
 8. End with evidence: what changed, which checks ran, their outcomes, and any remaining obligations. Never claim a check, independent review, or publication that did not happen.
 
 ## Find the relevant instructions

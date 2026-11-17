@@ -9,7 +9,7 @@ import unittest
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "scripts"))
 from dependency_graph import DependencyGraph
-from dependency_views import render_dependency_report, render_scope_report
+from dependency_views import render_dependency_report, render_scope_report, _overview, OVERVIEW_NODE_LIMIT, OVERVIEW_RULE_LIMIT
 
 
 class DependencyViewsTests(unittest.TestCase):
@@ -80,7 +80,7 @@ class DependencyViewsTests(unittest.TestCase):
         self.assertIn('GAP<br/>open', text)
         self.assertIn('GOAL<br/>open', text)
         self.assertIn('AND<br/>EXTEND', text)
-        self.assertIn("including hidden sources, are required", text)
+        self.assertIn("including hidden sources and omitted proof premises, are required", text)
         self.assertIn("simulate --prove ID", text)
 
     def test_changed_source_reappears_and_reports_downgrade_without_assurance_upgrade(self):
@@ -119,6 +119,51 @@ class DependencyViewsTests(unittest.TestCase):
         self.assertIn("**Computed obligation progress:** 1 proved / discharged.", scopes)
         self.assertIn("**Authored scope assessment:** The all-degree implication remains unverified.", scopes)
         self.assertIn("| GAP | mathematical | proved / discharged |", dependencies)
+
+
+    def test_equivalence_components_show_both_directions_and_context(self):
+        self.data["graph"]["equivalences"] = [{
+            "id": "EQUIVALENT-TARGETS", "title": "Equivalent exact targets",
+            "members": ["GAP", "GOAL"], "directions": [
+                {"id": "FORWARD", "premises": ["GAP", "CLAIM"], "conclusion": "GOAL",
+                 "status": "proved", "proof": deepcopy(self.source)},
+                {"id": "REVERSE", "premises": ["GOAL"], "conclusion": "GAP",
+                 "status": "proved", "proof": deepcopy(self.source)},
+            ],
+        }]
+        self.data["graph"]["implications"] = self.data["graph"]["implications"][:1]
+        text = render_dependency_report(self.data, self.graph())
+        self.assertIn("## Equivalence components", text)
+        self.assertIn("FORWARD: CLAIM; REVERSE: none", text)
+        self.assertIn('subgraph e0["EQUIVALENT-TARGETS<br/>independent grounding required"]', text)
+        self.assertIn("AND<br/>FORWARD", text)
+        self.assertIn("AND<br/>REVERSE", text)
+        self.assertIn("equivalent open goals cannot prove one another", text)
+
+    def test_large_topic_overview_is_bounded_while_full_graph_retains_lemmas(self):
+        for index in range(180):
+            node_id = "LEMMA-" + str(index)
+            self.data["graph"]["nodes"].append({
+                "id": node_id, "title": node_id, "kind": "claim", "status": "open",
+                "scope": "An exact supporting lemma.", "topics": ["topic"],
+            })
+            self.data["graph"]["implications"].append({
+                "id": "LEMMA-ROUTE-" + str(index), "premises": ["SOURCE"], "conclusion": node_id,
+                "status": "proved", "proof": deepcopy(self.source),
+            })
+        self.data["graph"]["implications"][0]["premises"].extend(
+            "LEMMA-" + str(index) for index in range(180))
+        graph = self.graph()
+        selected, rules, hidden = _overview(self.data["topics"][0], graph, graph.evaluate())
+        self.assertLessEqual(len(selected), OVERVIEW_NODE_LIMIT)
+        self.assertLessEqual(len(rules), OVERVIEW_RULE_LIMIT)
+        self.assertIn("CLAIM", selected)
+        self.assertIn("GAP", selected)
+        self.assertEqual(len(graph.nodes), 184)
+        self.assertIn("LEMMA-179", graph.to_dot())
+        text = render_dependency_report(self.data, graph)
+        self.assertIn("omitted proof premise", text)
+        self.assertIn("the full graph and focused exports retain them", text)
 
 
 if __name__ == "__main__":

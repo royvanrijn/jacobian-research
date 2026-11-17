@@ -19,11 +19,11 @@
 \newcommand{\conv}{\operatorname{conv}}
 \newcommand{\Supp}{\operatorname{Supp}}
 
-\title{The Gaussian Moments Conjecture in Two Variables}
+\title{A Filtered Frobenius Proof of the\\Two-Variable Gaussian Moments Conjecture}
 \author{Roy van Rijn\\{\small Independent researcher}}
-\date{23 July 2026}
+\date{23 July 2026\\Revised 17 November 2026}
 \hypersetup{
-  pdftitle={The Gaussian Moments Conjecture in Two Variables},
+  pdftitle={A Filtered Frobenius Proof of the Two-Variable Gaussian Moments Conjecture},
   pdfauthor={Roy van Rijn},
   pdfsubject={The Gaussian Moments Conjecture in two real variables},
   pdfkeywords={Gaussian Moments Conjecture, Gaussian moments, constant terms,
@@ -36,15 +36,17 @@
 \begin{abstract}
 The Gaussian Moments Conjecture asks whether a polynomial whose positive
 powers all have Gaussian integral zero must eventually remain zero after
-multiplication by any fixed polynomial.  We prove the conjecture for two
-real Gaussian variables.  The proof uses circular coordinates to separate
+multiplication by any fixed polynomial.  We give an alternative proof in
+two real Gaussian variables of the support classification and sharp
+cutoff also obtained by Wilson.  The proof uses circular coordinates to separate
 rotation from radius.  The angular part becomes a constant-term problem,
 while the radial part becomes the simple functional \(U^j\mapsto j!\).
 An exposed lower face of the resulting Newton diagram, the constant-term
 theorem of Duistermaat and van der Kallen, and reduction modulo a prime then
 isolate a nonzero lowest term.  This forces every polynomial with vanishing
 pure moments to have rotational weights of one strict sign, from which the
-mixed-moment conclusion is immediate.  Together with the recent
+mixed-moment conclusion follows with the sharp cutoff \(m>\deg Q\).
+Together with the
 counterexamples of Long in every dimension at least three, this determines
 the exact dimensional range of the conjecture.
 \end{abstract}
@@ -69,15 +71,26 @@ then, for every \(Q\in\C[X_1,\ldots,X_d]\),
 
 \medskip
 The conjecture was motivated in part by its connection with the Jacobian
-Conjecture~\cite{DVZ}.  Long recently found explicit counterexamples to
+Conjecture~\cite{DVZ}.  Long constructed explicit counterexamples to
 \(\operatorname{GMC}(d)\) for every \(d\geq3\)~\cite{Long}.  The
-two-variable case was therefore the last undecided dimension.
+two-variable conclusion is also contained in the contemporaneous results
+of Wilson~\cite{Wilson} and Long~\cite{LongTorus}.
 
 \begin{theorem}\label{thm:main}
-The Gaussian Moments Conjecture holds in two real variables.
+The Gaussian Moments Conjecture holds in two real variables.  More
+precisely, its premise implies
+\[
+  \E(QP^m)=0\qquad(m>\deg Q)
+\]
+for every nonzero polynomial \(Q\).  This uniform cutoff is optimal.
 \end{theorem}
 
-The proof is short once the right coordinates are chosen.  In two
+Wilson proves the same one-sided support classification and
+the cutoff \(m>\deg Q\)~\cite[Theorem~1]{Wilson}; his proof also uses Newton faces
+and prime isolation.  The argument below packages the arithmetic step as
+a filtered Frobenius lemma.
+
+In two
 dimensions, rotation has a single integer weight and there is a single
 radial variable.  Thus every polynomial can be displayed schematically as
 \[
@@ -93,9 +106,18 @@ that power to a suitable prime and reducing modulo the prime makes the
 lowest term impossible to cancel after the factorial substitution.  This
 contradicts the assumed moment vanishing.
 
-The argument is conceptual rather than computational.  In particular, it
-contains the previously studied three-level and star-shaped supports
-without needing separate case analyses.
+Long's contemporaneous manuscript~\cite[Theorems~1.1--1.2]{LongTorus}
+proves a stronger factorially weighted constant-term theorem with one radial
+variable and an arbitrary-rank torus.  Its rank-one specialization gives
+the same Gaussian classification, including the orthogonal-nullcone
+description.  It also characterizes eventual pure vanishing and detects
+nonvanishing at every sufficiently large prime dilation of one fixed power.
+
+The contribution here is an alternative filtered Frobenius argument and
+its formal interfaces; the classification and cutoff are known conclusions.
+The bivariate Lean supplement starts from an ordinary polynomial in \(X,Y\)
+and verifies the passage through circular coordinates to mixed moments,
+subject to the two mathematical inputs described in Section~7.
 
 \section{Circular coordinates}
 
@@ -137,6 +159,15 @@ Equation~\eqref{eq:wick} is exactly the identity
 \end{equation}
 This is the feature special to two variables: there is one angular
 constant-term operation and one radial factorial.
+
+For example, \(P=Z+W\) becomes \(T+UT^{-1}\).  Its first angular
+constant term is zero, but
+\[
+  \CT_T(P^2)=2U,\qquad \E(P^2)=2.
+\]
+The two opposite weights balance at the lowest radial degree.  For a
+general polynomial, cancellations can hide this balance in low powers;
+the next two sections explain why they cannot hide it in every power.
 
 \section{The exposed lower face}
 
@@ -204,7 +235,7 @@ Taking first coordinates in such a convex combination for \((0,\rho)\)
 gives \(0\in\conv(S_0)\).
 
 We use the constant-term theorem of Duistermaat and van der
-Kallen~\cite{DK}: if every positive power of a complex Laurent polynomial
+Kallen~\cite[Theorem~2 and Remark~3]{DK}: if every positive power of a complex Laurent polynomial
 has zero constant term, then zero does not lie in the convex hull of its
 support.  Applied contrapositively to \(P_0\), it gives an \(r\geq1\) for
 which
@@ -235,6 +266,11 @@ For any characteristic-zero ring \(R\), write
   \mathcal L_R(U^j)=j!.
 \]
 The arithmetic heart of the proof is independent of circular coordinates.
+
+The normalization must take place before reduction: dividing by a
+factorial in characteristic \(p\) would usually be meaningless.  Instead,
+the radial order bound makes every factorial quotient an integer, and
+these integer weights can then be reduced.
 
 \begin{lemma}[Filtered Frobenius isolation]
 \label{lem:filtered-frobenius}
@@ -293,13 +329,14 @@ Write \(P\) as in~\eqref{eq:weight-decomposition} and suppose that
 \[
   \mathcal L(F_m)=0\qquad(m\geq1).
 \]
-If \(P=0\), the conclusion is immediate, so assume \(P\neq0\).
+If \(P=0\), every positive mixed power vanishes, so assume \(P\neq0\).
 If \(0\in\conv(S)\), Lemma~\ref{lem:face} produces a nonzero lowest
 coefficient \(c\).  Let \(R\subset\C\) be the \(\Z\)-algebra generated by
 the coefficients of \(P\) and by \(c^{-1}\).  Choose a maximal ideal
-\(\mathfrak m\subset R\).  Its residue field \(\kappa\) is finite by the
-weak Nullstellensatz for finite-type \(\Z\)-algebras; write
-\(p=\operatorname{char}\kappa\).  The image of \(c\) is nonzero because
+\(\mathfrak m\subset R\).  Since \(\Z\) is Jacobson and \(R\) is of finite type over \(\Z\),
+\(\mathfrak m\cap\Z=(p)\) for a prime \(p\), and
+\(\kappa=R/\mathfrak m\) is a finite extension of \(\mathbb F_p\)
+\cite[Tags 00GB and 00GC]{StacksProject}.  The image of \(c\) is nonzero because
 \(c\) is a unit in \(R\).  Moreover, in characteristic \(p\),
 \[
   \overline{F_{rp}}
@@ -333,7 +370,13 @@ If instead all weights of \(P\) are negative, put
 Then every weight of \(QP^m\) is at most \(b-ma<0\) for \(m\geq N\).
 Thus in either case \(\CT_T(QP^m)=0\) for every \(m\geq N\).
 Equation~\eqref{eq:expectation-factorization} then gives
-\(\E(QP^m)=0\), as required.
+\(\E(QP^m)=0\).  To obtain the stated uniform bound, observe that every
+weight of a degree-\(q\) polynomial lies in \([-q,q]\), while \(a\geq1\).
+Thus \(m>q=\deg Q\) suffices for either sign.
+
+For sharpness, take \(P=Z\) and \(Q=W^q\), where \(q\geq1\).  Then
+\(\E(P^m)=0\) for every \(m\geq1\), but
+\(\E(QP^q)=\E(Z^qW^q)=q!\ne0\).
 \end{proof}
 
 \begin{corollary}\label{cor:classification}
@@ -347,71 +390,50 @@ Theorem~\ref{thm:main} proves the case \(d=2\).
 Long's examples disprove the conjecture for every \(d\geq3\)~\cite{Long}.
 \end{proof}
 
-\section{What the argument says}
+\section{Why one radial variable matters}
 
-The proof gives a stronger structural statement than the mixed-moment
-conclusion alone:
-\[
-  \E(P^m)=0\ \text{for all }m\geq1
-  \quad\Longrightarrow\quad
-  \text{all rotational weights of \(P\) have one strict sign.}
-\]
-Thus vanishing in two variables is not caused by a complicated balance
-among positive, zero, and negative angular modes.  Such a balance always
-has a lowest radial face, and a prime moment detects it.
-
-This also explains why support-by-support calculations quickly appeared to
-show rigidity.  A three-level support, a star support, or a tree of
-primitive weight relations is only a finite presentation of the same lower
-face.  Leaf removal is unnecessary: the supporting line exposes all
-relevant leaves at once.
-
-The proof is genuinely two-dimensional.  With one circular pair there is
-one weight coordinate and one radial order, and the latter is measured by
-the single factorial \(j!\).  In higher dimension there are several radial
-directions, so the one-dimensional isolation step no longer applies.
+Long's multitorus theorem~\cite{LongTorus} shows that the angular weight
+lattice may have arbitrary rank while the same isolation works.  The
+essential restriction is the single radial order and its factorial \(j!\).
+In ordinary higher-dimensional Gaussian space there are several
+independent radial directions with product-factorial weights, so the
+one-dimensional isolation step no longer applies.
 Corollary~\ref{cor:classification} shows that this is not merely a
 technical gap: counterexamples already occur in dimension three.
 
 \section{Formal verification}
 
-A companion Lean~4 development has been prepared as supplementary material
-for the two-variable theorem.  Its exported bivariate statement starts
-with an ordinary polynomial in two variables, verifies the circular
-substitution and Wick monomial formula, and proves the full mixed-moment
-conclusion from vanishing of all positive pure moments.  Internally, it
-checks rational supporting-face extraction, the weighted
-associated-graded identification of the lowest radial coefficient, descent
-to the finite coefficient \(\Z\)-algebra, normalized factorial
-cancellation, Frobenius and constant-term commutation, prime-dilated
-factorial isolation, and the eventual vanishing argument for both signs of
-the rotational support.  The development contains no \texttt{sorry}
-declarations.
+The versioned companion Lean~4 supplement~\cite{FormalGMC2} starts
+with an ordinary bivariate polynomial and the circular Wick expectation.
+Its exported theorem asserts eventual mixed vanishing from vanishing of
+all positive pure moments.  The checked interfaces include the circular
+substitution, Wick formula, rational supporting face, lowest radial
+coefficient, specialization to a finite residue field, normalized factorial
+cancellation, Frobenius commutation and prime isolation.  The package
+contains no \texttt{sorry} declarations.
 
-The formalization exposes two external inputs as named axioms: the
-Duistermaat--van der Kallen constant-term theorem and the existence of good
-finite-characteristic specializations of finite-type \(\Z\)-domains.  The
-rational supporting face is proved directly from the finite
-two-dimensional polygon.  An axiom audit of the exported theorem therefore
-lists precisely these two mathematical inputs (besides Lean's standard
-logical quotient and choice principles).  Thus the artifact gives a
-machine-checked verification of the complete proof of
-Theorem~\ref{thm:main}, with its remaining trust boundary stated
-explicitly.
+Two mathematical inputs remain named axioms: the Duistermaat--van der
+Kallen constant-term theorem and good finite-characteristic specialization
+of finite-type $\mathbb Z$-domains.  The recorded endpoint audit lists
+these two inputs besides Lean's foundational choice, quotient and
+propositional-extensionality axioms.  Thus the formal theorem is conditional
+on those interfaces.  The explicit cutoff and optimality are proved in
+the proof of Theorem~\ref{thm:main} and are not separately exported.  The supplement supplies the
+pinned toolchain and dependencies, build target, exact endpoint and
+instructions for reproducing its axiom report.
 
-\section*{Acknowledgments and declaration of generative AI use}
+\paragraph{Acknowledgment.}
+The author thanks Christopher D. Long for making his more general
+factorially weighted torus theorem publicly available~\cite{LongTorus}.
 
-The author used OpenAI's ChatGPT and Codex extensively during the research
-process, including for conjecture formation, symbolic experimentation,
-proof exploration, consistency checks, and preparation of this manuscript.
-The lower-face and prime-isolation argument emerged from that collaborative
-process.  The author reviewed the mathematical claims and assumes full
-responsibility for the contents.  The proof of Theorem~\ref{thm:main} is
-noncomputational.
+\paragraph{AI assistance and review.}
+ChatGPT (OpenAI) assisted with mathematical arguments, literature checks,
+exposition, proof review and verification code.
 
+\begingroup
+\small
 \bibliographystyle{plain}
 \bibliography{references}
+\endgroup
 
 \end{document}
-
-\typeout{get arXiv to do 4 passes: Label(s) may have changed. Rerun}

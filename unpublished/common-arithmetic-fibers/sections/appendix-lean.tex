@@ -98,10 +98,11 @@ output scalings with the formal definitions;
 the distinguished target built into the literal fiber structure.
 
 The paper-facing declarations are defined in
-\nolinkurl{PaperCertificate.lean}.  This module directly imports only the
-general gauge construction, its function-field comparison, the page-one
-theorem, and the abstract finite-\'etale realization.  It does not import the
-arithmetic examples or companion developments.  The exact headline interface is
+\nolinkurl{PaperCertificate.lean}.  This module directly imports the general gauge construction, its
+function-field comparison, the page-one theorem, the abstract finite-\'etale
+realization, and the presentation-independent collision interface
+\nolinkurl{CollisionFiber}. Arithmetic examples are not direct imports of
+this certificate.  The exact headline interface is
 \[
  \text{\nolinkurl{paperPolynomialPresentation_pageOne}}.
 \]
@@ -133,3 +134,10 @@ zero.  Removing the blanket \texttt{CharZero} assumptions from the general
 gauge, reconstruction, function-field, and supplied-base-change files would
 formalize the separate characteristic-\(\ne2\) proposition; that remains
 future work.
+
+\paragraph{Formal source availability.}
+The formal source and pinned toolchain are available in the versioned
+repository supplement \cite{FormalSupplement}. Its README gives the focused
+build target; the accompanying verification record explains how to inspect
+the exported declarations' transitive axioms. The correspondence above
+describes the existing development; it does not report a new toolchain replay.

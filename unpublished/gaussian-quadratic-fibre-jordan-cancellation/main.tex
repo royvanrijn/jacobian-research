@@ -94,7 +94,8 @@ The coefficient is not asserted optimal.
 
 The proof has two obstacles. First, quadratic elimination leaves an
 arbitrary-degree phase in $u$. The formal leading-coefficient obstruction,
-proved in the final section, forces that effective phase to be quadratic.
+proved in Theorem~\ref{thm:stationaryballs} and
+Corollary~\ref{cor:leadingobstruction}, forces that effective phase to be quadratic.
 This gives the rational identities above. Second, rational marked periods
 may still have poles. Their cancellation follows from affine-source
 rigidity on the nonzero primary spaces and a joint Gaussian precision
@@ -106,7 +107,10 @@ The algebraic reduction and cancellation occupy the next three sections.
 A scalar version of the cancellation identities makes the mechanism
 explicit, and a nonlinear example shows how a nilpotent zero fibre can
 coexist with a defective nonzero block. The final section supplies the
-formal stationary argument used in the first reduction.
+formal stationary argument used in the first reduction. This is the same
+stationary-balls construction used in the dimension--degree
+paper~\cite{Boundary}; its full proof is reproduced here so that the
+present equivalence does not depend on that companion.
 
 \section{A polynomial unit forces the finite purity identities}
 
@@ -122,13 +126,16 @@ the spatial and parameter twisted derivatives commute. The class $[1]$
 is called the \emph{seed}; a functional $J$ is \emph{horizontal} when
 $J(\nabla[q])=\partial_tJ([q])$. A rational horizontal quotient takes
 values in $\C(t)$ with its ordinary derivative.
-The full leading-coefficient theorem proved in the last section says:
+The precise input from Theorem~\ref{thm:stationaryballs} and
+Corollary~\ref{cor:leadingobstruction} is the following seed exclusion:
 if the actual degree is $r\ge2$ and
 $r v_\infty(h)>v_\infty([x^r]\varphi)$, its differential seed
 submodule has no rational horizontal quotient taking $[1]$ to one.
 Algebraic $h$ is allowed after a finite cover. The proof retains
 all critical multiplicities, collisions and escaping roots, over the
-formal Laurent field. Convergence is unnecessary.
+formal Laurent field. Its full-frame construction is needed to exclude
+a quotient of the entire seed submodule; a stationary expansion at a
+single critical point would not suffice. Convergence is unnecessary.
 
 \begin{lemma}[Rational seed restriction]\label{lem:seedfunctional}
 A horizontal formal functional taking a seed to one restricts on
@@ -566,7 +573,7 @@ extends both failures to all indicated cells.
 The unresolved cell is $(r,s)=(2,1)$: does a single constant quadratic
 fibre over two ordinary Gaussian base variables preserve safety of pure
 phases? The companion paper \emph{Gaussian Marker Reduction with a Constant
-Quadratic Fibre} reduces this question to markers in the two base
+Quadratic Fibre}~\cite{Marker} reduces this question to markers in the two base
 variables. Those periods have a parameter-dependent binary phase, to
 which Wilson's fixed-phase theorem does not directly apply. The table
 records the deductions above and makes no claim of exhaustive literature
@@ -827,6 +834,17 @@ formal Fourier--Laplace transform}, in \emph{Singularities I},
 Contemporary Mathematics \textbf{474}, American Mathematical Society,
 2008, 309--330;
 \href{https://arxiv.org/abs/0706.3570v2}{arXiv:0706.3570v2}.
+
+\bibitem{Marker}
+R.~van Rijn, \emph{Gaussian Marker Reduction with a Constant Quadratic
+Fibre}, 17 November 2026, source and PDF edition
+\href{https://github.com/royvanrijn/jacobian-research/tree/c32b9b4d273cf7988e85184a0d5eae9c488727fd/unpublished/gaussian-constant-fibre-base-marker-certificates}{c32b9b4d273c}.
+
+\bibitem{Boundary}
+R.~van Rijn, \emph{The Dimension-Degree Boundary for Gaussian Moment
+Vanishing}, formal stationary-balls theorem, 17 November 2026,
+source and PDF edition
+\href{https://github.com/royvanrijn/jacobian-research/tree/c32b9b4d273cf7988e85184a0d5eae9c488727fd/unpublished/gaussian-boundary}{c32b9b4d273c}.
 
 \bibitem{MannaaCoquand}
 B.~Mannaa and T.~Coquand, \emph{Dynamic Newton--Puiseux Theorem},

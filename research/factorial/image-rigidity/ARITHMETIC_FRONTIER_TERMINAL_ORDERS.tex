@@ -165,6 +165,160 @@ with $N\ge2$. The ordinary assertion is an infinite family of
 starting indices, not an all-starting-index theorem for
 $X(A+BX^3)$.
 
+\section{Terminal orders one below a single-digit index}
+The single-digit restriction on $N$ can also be removed on the
+unbounded family immediately preceding those indices.
+
+\begin{theorem}\label{thm:minusone}
+For every prime $p$, every $r,s\ge1$, every $1\le m<p$, and
+$N=mp^r-1$, the polynomial $T_{N,N,p^s}$ is squarefree.
+Consequently, when $N\ge2$, the ordinary factorial moments of every
+nonzero $X(A+BX^{p^s})$ at orders $N-1,N$ cannot both vanish.
+\end{theorem}
+\begin{proof}
+If $r<s$, the Gamma shape $N$ is less than $p^s$.
+Squarefreeness follows from the
+\href{PRIME_POWER_TWO_TERM_SFC.tex}{fixed-shape prime-power theorem},
+applied at degree $N$ and shape $N$. Assume henceforth $r\ge s$,
+and put $d=p^s$, $Q=p^{r-s}$, $N=dmQ-1$.
+Every $\binom Nk$ is a $p$-adic unit: the base-$p$ digits of $N$
+are $m-1$ followed by $r$ digits $p-1$, and no $k\le N$
+exceeds any of those digits.
+For the coefficient $c_k$ of $T_{N,N,d}$, factorial splitting into
+blocks of length $p^s$ gives
+\[
+ V(k):=v_p(c_k)
+ =\frac{(d-1)k}{p-1}+v_p((mQ)_k)
+ =\frac{dk+s_p(mQ-1)-s_p(mQ+k-1)}{p-1}.                     \tag{6}
+\]
+Here $s_p(mQ-1)=m-1+(p-1)\log_p Q$.
+
+We first describe all lower edges. Put
+\[
+ k_i=(p^i-m)Q,\qquad
+ V_i=\frac{d k_i+m-1}{p-1}-i\qquad(1\le i\le s),
+\]
+and
+\[
+ k_*=m(d-1)Q,\qquad V_*=\frac{d k_*}{p-1}-s.
+\]
+The vertices are $(0,0)$, then $(k_i,V_i)$ for $1\le i\le s$,
+then $(k_*,V_*)$ when $m>1$, then the terminal point
+\[
+ \left(N,\frac{dN-(m-1)}{p-1}\right)
+\]
+when $mQ>1$. When $m=1$, $k_*=k_s$ and the extra edge is absent;
+when $m=Q=1$, $k_*=N$ and the final edge is absent.
+
+For the first edge, write $k=jQ+\ell$ with
+$0\le j<p-m$ and $0\le\ell<Q$, also allowing
+$j=p-m,\ell=0$ at its right endpoint.
+At $\ell=0$ one has
+$s_p(mQ+k-1)-s_p(mQ-1)=j$.
+At $\ell>0$ this same difference is at most $j$, since
+\[
+ mQ+k-1=(m+j)Q+\ell-1,\qquad
+ s_p(\ell-1)\le(p-1)\log_p Q-1.
+\]
+Consequently $V(k)\ge(dk-j)/(p-1)$.
+For $\ell>0$ this is strictly greater than the edge ordinate
+$dk/(p-1)-k/(Q(p-1))$, because $j<k/Q$;
+at $\ell=0$ equality holds. Thus equality with the edge occurs
+precisely at $k=jQ$.
+The reduced lattice step is $Q$, the height step is
+$H_1=(dQ-1)/(p-1)$, and its residual degree is $p-m$.
+
+For an intermediate edge from $k_{i-1}$ to $k_i$, $2\le i\le s$,
+set $R=p^{i-1}Q$ and write
+$k=k_{i-1}+jR+\ell$, $0\le j<p-1$, $0\le\ell<R$,
+also allowing $j=p-1,\ell=0$ at the right endpoint.
+Then
+\[
+ mQ+k-1=(j+1)R+\ell-1.
+\]
+At $\ell=0$ its digit sum is $j+(p-1)\log_p R$;
+at $\ell>0$ it is at most that value.
+Hence the only coefficient points on this edge are
+$k=k_{i-1}+jR$, $0\le j\le p-1$.
+Its reduced step and height are $R$ and $(dR-1)/(p-1)$,
+and its residual degree is $p-1$.
+
+For the extra edge, when $m>1$, the same calculation applies with
+$R=dQ$, $k=k_s+jR+\ell$ with $0\le j<m-1$, $0\le\ell<R$,
+also allowing $j=m-1,\ell=0$ at the right endpoint.
+Its residual degree is $m-1$ and its reduced step and height are
+$dQ$ and $(d^2Q-1)/(p-1)$.
+Every one of these slopes is
+$d/(p-1)-1/((p-1)R)$ for its indicated power $R$ of $p$;
+they increase strictly. The stated steps are reduced because
+$(dR-1)/(p-1)\equiv1\pmod p$.
+
+The factorial-unit formula (4) computes all residuals explicitly.
+Let $\epsilon=(-1)^{(dR-1)/(p-1)}$ for the edge with step $R$.
+On the first edge the factorial arguments are
+$(m+j)dQ-2$, and the binomial residues are $(-1)^j$.
+Its normalized coefficient is
+$(-1)^j(m)_j\epsilon^j=(p-m)^{\underline j}\epsilon^j$
+in $\mathbb F_p$.
+On an intermediate edge the factorial arguments are
+$dR(j+1)-2$; their unit ratios are $j!\epsilon^j$,
+and the binomial residue ratios are $(-1)^j$.
+Its normalized coefficient is therefore
+$(p-1)^{\underline j}\epsilon^j$.
+Finally, on the extra edge the factorial arguments are again
+$dR(j+1)-2$, whereas the binomial residue ratios are
+$\binom{m-1}j$: their upper base-$p$ digit changes from zero to
+$j$, and their lower digits stay fixed.
+The normalized coefficients are $(m-1)^{\underline j}\epsilon^j$.
+Thus every one of these residuals has the form
+\[
+ {\cal R}_a(Y)=\sum_{j=0}^{a}a^{\underline j}(\epsilon Y)^j,
+ \qquad a\in\{p-m,p-1,m-1\},\quad 0<a<p.                    \tag{7}
+\]
+It is a reversal and nonzero scaling of
+$\sum_{j=0}^a Z^j/j!$, hence squarefree: its derivative is
+the preceding truncation and their difference is the top monomial.
+
+It remains to check the final edge. Its width and height are
+\[
+ w=mQ-1,\qquad
+ H=\frac{dw-(m-1)}{p-1}+s.
+\]
+For $k=k_*+j$, $1\le j\le w$, one has
+$mQ+k-1=mdQ+j-1$ and
+\[
+ s_p(mdQ+j-1)=m+s_p(j-1)
+ \le m+s_p(mQ-1)-1.
+\]
+To justify the inequality for every interior index, write
+$j-1=aQ+b$, $0\le b<Q$. If $Q>1$ and $a\le m-2$,
+then $s_p(j-1)\le m-2+(p-1)\log_p Q$.
+If $a=m-1$, then $b\le Q-2$, so
+$s_p(b)\le(p-1)\log_p Q-1$, giving the same bound.
+For $Q=1$ the assertion is simply $j-1\le m-2$.
+Since $s_p(mQ-1)=m-1+(p-1)\log_p Q$, the stated bound follows.
+At the endpoint it is sharp:
+$s_p(mQ-2)=s_p(mQ-1)-1$.
+Consequently
+\[
+ V(k)\ge\frac{dk-(m-1)}{p-1},
+\]
+with equality at $k=N$. Since $s>(m-1)/(p-1)$, the line from
+$(k_*,V_*)$ to the terminal point lies strictly below this lower
+bound at every interior index. It has only its endpoint coefficients
+on it, and its slope exceeds $d/(p-1)$.
+Its residual is therefore a binomial of degree $g=\gcd(w,H)$.
+If $Q>1$ then $w\equiv-1\pmod p$; if $Q=1$ and $w>0$ then
+$1\le w=m-1<p$. In either case $p\nmid g$, so the residual
+binomial is squarefree. All edge residuals are squarefree,
+which proves the theorem by the residual-product lemma.
+The lower-one bridge then gives the moment assertion.
+\end{proof}
+
+In particular, at gap three these theorems cover
+$N=m3^r$ and $m3^r-1$ for $m=1,2$, whenever $N\ge2$.
+This is not every terminal index.
+
 \section{A separate consequence for arbitrary lower exponent}
 \begin{corollary}\label{cor:generala}
 Let $a\ge0$, $d=p^s$ with $s\ge1$, and $N=p^r\ge2$.
@@ -192,13 +346,276 @@ give this arbitrary-lower-exponent consecutive assertion: the factorial
 offset changes with the moment order. The degree argument above uses
 irreducibility at $m=1$.
 
+\section{A native-prime criterion at arbitrary gaps}
+A different prime choice gives a direct irreducibility criterion
+without restricting the gap to a prime power.
+
+\begin{theorem}\label{thm:nativeprime}
+Let $a\ge0$, $d\ge1$, and $N\ge2$ be integers.
+Suppose there is a prime $p>dN$ and an index $1\le j\le d$ such
+that $v_p(aN+j)=1$.
+Then $M_{N,a,d}$ is irreducible over $\mathbb Q_p$ and over
+$\mathbb Q$. Consequently $M_{N-1,a,d}$ and $M_{N,a,d}$
+are coprime, and the ordinary factorial moments of every nonzero
+$X^a(A+BX^d)$ at orders $N-1,N$ cannot both vanish.
+In particular, $a\ge d$ and primality of $aN+1$ are sufficient.
+\end{theorem}
+\begin{proof}
+Normalize $M_{N,a,d}$ by its nonzero constant $(aN)!$, obtaining
+$P_{N,aN,d}$ from (1), whose constant coefficient is one.
+For every $1\le k\le N$, its factorial ratio is the product of
+$aN+1,\ldots,aN+dk$. This interval contains $aN+j$, and the full
+interval of length $dN<p$ contains no other multiple of $p$.
+Moreover $\binom Nk$ is a $p$-adic unit because $p>N$.
+Thus every nonconstant coefficient of $P_{N,aN,d}$ has valuation
+exactly one. Its reciprocal is monic, all its nonleading
+coefficients are divisible by $p$, and its constant coefficient
+is divisible by $p$ but not by $p^2$.
+Eisenstein's criterion proves irreducibility over $\mathbb Q_p$.
+The scalar normalization does not change irreducibility over that
+field. The degree-$N-1$ preceding moment polynomial cannot share
+a root with this irreducible degree-$N$ polynomial.
+For $AB\ne0$ the moments are $A^kM_{k,a,d}(B/A)$; the degenerate
+cases are nonzero monomials.
+Finally, if $a\ge d$ and $p=aN+1$ is prime, then
+$p>dN$ and $j=1$ satisfies the hypotheses.
+\end{proof}
+\begin{theorem}\label{thm:forwardnative}
+Let $a\ge d\ge1$, $a\ge2$, $N\ge3$, and suppose
+$p=aN+j$ is prime for some $1\le j\le d$.
+Then $M_{N,a,d}$ and $M_{N+1,a,d}$ are also coprime.
+Thus both pairs of ordinary factorial moments at orders
+$N-1,N$ and $N,N+1$ cannot vanish simultaneously.
+\end{theorem}
+\begin{proof}
+The preceding theorem applies to $M_{N,a,d}$.
+All roots of its normalized polynomial $P_{N,aN,d}$ have
+valuation $-1/N$: its Newton polygon is the single edge
+$(0,0)\longrightarrow(N,1)$.
+
+Put $C'=a(N+1)$ for the following moment polynomial.
+Since $a\ge j$ one has $C'\ge p$, and
+\[
+ (a+d)(N+1)\le2a(N+1)<3(aN+j)=3p.
+\]
+The strict inequality follows from $N\ge3$.
+The factorial interval
+$C'+1,\ldots,(a+d)(N+1)$ therefore contains no multiple
+of $p$ except possibly $2p$.
+Moreover $p>N+1$ and $p>3$, so all binomial coefficients
+$\binom{N+1}k$ are $p$-adic units and $v_p(2p)=1$.
+
+If $2p$ is absent, all coefficients of $P_{N+1,C',d}$
+are units and all its roots have valuation zero.
+If $2p$ occurs, let
+\[
+ k_0=\left\lceil\frac{2p-C'}d\right\rceil
+     =\left\lceil\frac{a(N-1)+2j}{d}\right\rceil.
+\]
+Then $N\le k_0\le N+1$.
+The coefficient valuations are zero for $k<k_0$ and one for
+$k\ge k_0$. Its Newton polygon has a horizontal edge of width
+$k_0-1$ and an edge of height one and width
+$N+2-k_0\in\{1,2\}$.
+Its root valuations are therefore zero and either $-1$ or $-1/2$.
+None equals $-1/N$ when $N\ge3$.
+The two polynomials are coprime over $\mathbb Q_p$ and hence
+over $\mathbb Q$ and $\mathbb C$.
+\end{proof}
+For example, with $a=d\ge2$, every prime $p$ with
+$N=\lfloor p/d\rfloor\ge3$ supplies a permissible remainder
+$1\le j<d$, and the two pairs adjoining this $N$ are certified.
+These are exact sufficient prime conditions for arbitrary gaps.
+No assertion of a suitable prime at every index, or of a
+prime-distribution theorem, is used.
+
+\section{Factorial splitting and the limit of a global precision transfer}
+The following exact reduction applies without a digit restriction on
+the terminal index. Its first residual congruence alone does not prove
+squarefreeness.
+
+\begin{lemma}\label{lem:split}
+Let $d=p^s$, $b=(d-1)/(p-1)$, $C=dq+c$ with $0\le c<d$,
+and $N\ge1$. Then
+\[
+ P_{N,C,d}(x/p^b)=\sum_{k=0}^N\binom Nk(q+1)_k u_k x^k,
+ \qquad u_k\in\mathbb Z_p^\times,\quad
+ u_k\equiv(-1)^{bk}\pmod p.                                 \tag{8}
+\]
+In particular its coefficient valuations and first Newton residuals
+are those of a geometric-unit deformation of the gap-one polynomial.
+\end{lemma}
+\begin{proof}
+Define
+\[
+ U(L,c)=\frac{(dL+c)!}{p^{bL}L!\,c!}.
+\]
+The factorial splitting in the
+\href{PRIME_POWER_TWO_TERM_SFC.tex}{prime-power note} gives
+$U(L,0)\in\mathbb Z_p^\times$ and
+$U(L,0)\equiv(-1)^{bL}\pmod p$.
+Moreover $U(L,c)/U(L,0)=\binom{dL+c}{c}\equiv1\pmod p$,
+by the digit coefficient identity, since $c<d$.
+Set $u_k=U(q+k,c)/U(q,c)$.
+The factorial ratio in (1) is exactly
+$p^{bk}(q+1)_k u_k$, proving (8).
+\end{proof}
+
+For comparison the undeformed gap-one discriminant is explicit.
+For an indeterminate $\gamma$, put
+\[
+ F_{N,\gamma}(x)=\sum_{k=0}^N\binom Nk(\gamma)_k x^k,\qquad
+ R_{N,\gamma}(z)=z^N F_{N,\gamma}(z^{-1}).
+\]
+Coefficient comparison gives
+\[
+ R_{N,\gamma}'=N R_{N-1,\gamma},\qquad
+ R_{N,\gamma}=(z+\gamma+N-1)R_{N-1,\gamma}
+                    -(N-1)zR_{N-2,\gamma}.
+\]
+For $J_N=\operatorname{Res}(R_{N,\gamma},R_{N-1,\gamma})$,
+evaluation at the roots of $R_{N-1,\gamma}$ gives
+\[
+ J_1=1,\qquad
+ J_N=(N-1)^{N-1}(\gamma)_{N-1}J_{N-1}.
+\]
+The product of those roots is
+$(-1)^{N-1}(\gamma)_{N-1}$; the two signs cancel.
+Consequently
+\[
+ \operatorname{disc}R_{N,\gamma}
+ =(-1)^{N(N-1)/2}
+    \left(\prod_{j=1}^N j^j\right)
+    \left(\prod_{i=1}^{N-1}(\gamma)_i\right).                 \tag{9}
+\]
+This derives the formula without importing a discriminant identity.
+
+\begin{theorem}\label{thm:commonquotient}
+Let $p$ be prime, $s\ge1$, $d=p^s$, $a\ge0$, and $N\ge2$
+be integers. Suppose
+\[
+ q=\left\lfloor\frac{aN}{d}\right\rfloor
+  =\left\lfloor\frac{a(N-1)}d\right\rfloor,\qquad q+N<p.       \tag{10}
+\]
+Then $M_{N,a,d}$ and $M_{N-1,a,d}$ are coprime.
+For $b=(d-1)/(p-1)$ their ordinary rational resultant satisfies
+\[
+ v_p\operatorname{Res}(M_{N,a,d},M_{N-1,a,d})
+ =(N-1)v_p((aN)!)+Nv_p((a(N-1))!)+bN(N-1).                 \tag{11}
+\]
+In particular the ordinary factorial moments of every nonzero
+$X^a(A+BX^d)$ at orders $N-1,N$ cannot both vanish.
+\end{theorem}
+\begin{proof}
+Put $\epsilon=(-1)^b$ and, for $j=N-1,N$, define
+\[
+ G_j(x)=\frac{1}{(aj)!}M_{j,a,d}(\epsilon x/p^b).
+\]
+Both factorial offsets $aj$ have the same quotient $q$ on division
+by $d$. Lemma \ref{lem:split} therefore shows that both $G_j$
+have coefficients in $\mathbb Z_p$ and reduce modulo $p$ to
+$F_{j,q+1}$.
+Their degrees are preserved because
+$(q+1)_j$ is a $p$-adic unit under (10).
+Reversal of both polynomials preserves their resultant up to
+$(-1)^{N(N-1)}=1$.
+The formula for $J_N$ above shows that their reduced resultant is
+nonzero: every integer $i\le N-1$ and every factor of
+$(q+1)_i$ is positive and less than $p$.
+Thus $\operatorname{Res}(G_N,G_{N-1})$ is a $p$-adic unit.
+The resultant scaling law gives (11); it also proves coprimality.
+For $AB\ne0$ the moments are
+$A^jM_{j,a,d}(B/A)$. The degenerate coefficient cases are nonzero
+monomials.
+\end{proof}
+This common-quotient condition is sufficient and is not asserted
+outside (10). It applies to arbitrary lower exponents in its
+explicit range; it is distinct from the irreducibility argument
+at terminal powers in Corollary \ref{cor:generala}.
+
+For monic polynomials over $\mathbb Z_p$, coefficientwise congruence
+modulo $p^K$ implies the same congruence of discriminants, since the
+discriminant is an integer polynomial in the coefficients.
+Thus an approximation to a base polynomial with nonzero discriminant
+of valuation $\delta$ proves squarefreeness when $K>\delta$.
+The next proposition shows a uniform obstruction to using just this
+global precision criterion for the actual factorial deformation.
+
+\begin{theorem}\label{thm:precisionobstruction}
+Let $h\ge0$, $3\nmid h+1$, $N=9h+4$, and $\gamma=3h+2$.
+For a $3$-adic unit $v$ define the monic polynomial
+\[
+ \widehat R_{N,v}(z)=z^N T_{N,N,3}(1/(3vz)).
+\]
+Let $K(v)$ be the minimum $3$-adic valuation of the coefficient
+differences between $\widehat R_{N,v}$ and $R_{N,\gamma}$,
+with zero differences assigned valuation $+\infty$.
+Then
+\[
+ \max_{v\in\mathbb Z_3^\times}K(v)=3,\qquad
+ v_3(\operatorname{disc}R_{N,\gamma})\ge N+1>3.               \tag{12}
+\]
+Hence no unit variable scaling meets the sufficient inequality
+$K(v)>v_3(\operatorname{disc}R_{N,\gamma})$ on this infinite
+family $N\equiv4,13\pmod{27}$.
+This is an obstruction to that sufficient precision test,
+not a repeated-root example.
+\end{theorem}
+\begin{proof}
+Write $q=3h+1$, so $N-1=3q$ and $\gamma=q+1$.
+For $A(j)=(3j-2)(3j-1)=2+9j(j-1)$, literal factorial splitting gives
+\[
+ T_{N,N,3}(x/3)=
+   \sum_{k=0}^N b_k u_k x^k,\qquad
+ b_k=\binom Nk(\gamma)_k,\qquad
+ u_k=\prod_{j=1}^k A(q+j).
+\]
+Take $g=u_1=A(q+1)$.
+Every $u_k/g^k$ is congruent to one modulo $9$.
+The coefficient $b_1=N\gamma$ is a $3$-adic unit.
+Every $b_k$ with $k\ge2$ is divisible by $3$, since
+$(\gamma)_k$ contains $\gamma+1=3(h+1)$.
+Thus $K(g)\ge3$.
+
+The exact differences
+$A(q+2)-g=9(2q+2)$ and $A(q+3)-g=9(4q+6)$ give
+\[
+ \frac{u_3}{g^3}-1
+ =\frac{9\bigl((6q+8)g+9(2q+2)(4q+6)\bigr)}{g^2}.
+\]
+Its numerator in parentheses is congruent to one modulo $3$,
+so this difference has valuation exactly two.
+Also
+\[
+ v_3\binom N3=0,\qquad v_3((\gamma)_3)=1,
+\]
+using $N=9h+4$ and $3\nmid h+1$.
+The coefficient with index three therefore differs with valuation
+exactly three, proving $K(g)=3$.
+
+If some unit $v$ had $K(v)>3$, the coefficient with index one
+would force $g/v\equiv1\pmod{81}$.
+Then replacing $g$ by $v$ cannot change the valuation two of
+$u_3/g^3-1$, so the index-three difference still has valuation
+three, a contradiction.
+Finally (9) contains the factor $3^3$, and its rising-factorial
+product contains $\gamma+1$ at least $N-2$ times.
+Since $v_3(\gamma+1)=1$, its discriminant valuation is at least
+$3+N-2=N+1$.
+\end{proof}
+
+Lemma \ref{lem:split} remains a possible starting point for a local,
+weighted perturbation or higher-residual argument.
+Theorem \ref{thm:precisionobstruction} rules out the uniform
+coefficientwise precision shortcut alone.
+
 \section{Overlap, exact replay and remaining obligation}
 The existing prime-power two-term theorem concerns fixed shapes
 $\gamma\le d$ for constant-plus-power phases at \emph{every} index.
 It does not cover the growing shape $\gamma=N$ here once $N>d$.
 The present proof uses the same factorial-unit and Newton-residual
-method, specialized to terminal indices with a single nonzero
-base-$p$ digit; it does not improve the existing completed
+method, applied to terminal indices with a single nonzero
+base-$p$ digit and to the additional preceding orders; it does not improve the existing completed
 constant-plus-power conclusion. It also overlaps the completed
 gap-one, lower-one gap-two, and specified dyadic equal-support
 families in their stated specializations. No novelty claim is made.

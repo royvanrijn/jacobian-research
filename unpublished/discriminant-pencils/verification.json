@@ -1,0 +1,67 @@
+{
+  "edition_date": "2026-11-17",
+  "review_basis": "Attached critical release review of 17 November 2026, pages 9-11; source-aware internal revision, not external review.",
+  "source_files": {
+    "AUDIT.md": "2ebe91e7f5652d15f1934bb3a744bfb127731035f3b6c76bc8d3d8e1a8b5793f",
+    "README.md": "1b6833a6b5ecbdefa414eedca18df78a519d3193f2b9a3d241422c3130c34883",
+    "main.tex": "2683c144e6997d0715f45a35bf27de096fd2a4acfef8ef8b9b450edf5b9d99f2",
+    "metadata.json": "d89d2182aa20d214fa4c3b81a22ea4c6f556d0c0e5f0d4eb7623e887bbfcd12d"
+  },
+  "pdf": {
+    "path": "paper.pdf",
+    "sha256": "ff53be2b21d6c1c25697225a2fca18fed78e1cbeb84518256254b6ca3f2bceda",
+    "pages": 5
+  },
+  "build": {
+    "command": "latexmk -pdf -jobname=paper -interaction=nonstopmode -halt-on-error main.tex",
+    "result": "passed",
+    "unresolved_references": false,
+    "overfull_boxes": false
+  },
+  "build_environment": {
+    "python": "3.12.3",
+    "sympy": "1.14.0",
+    "latexmk": "Latexmk, John Collins, 31 Jan. 2024. Version 4.83"
+  },
+  "visual_review": {
+    "performed": true,
+    "reviewer": "OpenAI Codex source-aware internal reviewer",
+    "scope": "All rendered pages inspected as contact sheets; page layout, equations and theorem continuity checked.",
+    "result": "No clipping, overlapping text or unresolved references observed."
+  },
+  "isolated_pdf_only_reading": {
+    "performed": true,
+    "date": "2026-11-17",
+    "reviewer": "OpenAI Codex agent blind_geometry_fibres",
+    "type": "isolated internal AI PDF-only reading",
+    "supplied_context": "Only the assigned PDFs and five reader questions; no repository sources, earlier review, literature or supplements. Multiple assigned PDFs were read separately by this reviewer.",
+    "pdf_sha256": "ff53be2b21d6c1c25697225a2fca18fed78e1cbeb84518256254b6ca3f2bceda",
+    "pages": 5,
+    "answers": {
+      "contribution": "Elementary thin-family genericity proof of a classical dual-curve specialization with its degree, cusp and node counts; no priority for numerical counts claimed.",
+      "mechanism": "Tangent normalization and infinity control; exclude contact strata (4), (3,2), (2,2,2); count cusps and apply genus-delta.",
+      "hardest_step": "Lemmas3.1-3.2 pp3-4: proper contact strata and exhaustive singularity exclusions; Proposition2.1: global normalization.",
+      "limitations": "Generic reduced discriminant in algebraically closed characteristic zero, not special members or resultant multiplicities; partial formalization excludes global geometric steps.",
+      "obstacles": "Standard geometric dimension, singularity and genus inputs still need specialist verification; no demonstrated mathematical or notation defect."
+    },
+    "finding": "No demonstrated fatal mathematical error. Unperformed specialist checks and formal replay remain separate obligations.",
+    "external_review": false
+  },
+  "external_human_review": {
+    "performed": false
+  },
+  "fresh_lean_replay": false,
+  "remaining_obligations": [
+    "Resolve the exact contribution relative to classical dual-curve specializations before considering standalone publication.",
+    "Specialist review of the unformalized dimension, normalization, singularity and genus steps; isolated internal PDF-only reading is recorded.",
+    "Consider using the note as a companion or appendix."
+  ],
+  "primary_source_check": {
+    "Yuran2022": "arXiv:2204.04626v1, Theorems 1.3, 1.14-1.16 inspected; sufficient polygon hypothesis and conditional contact-exclusion comparison recorded in AUDIT.md."
+  },
+  "source_archive_reproduction": {
+    "archive": "source.zip",
+    "result": "passed",
+    "scope": "Clean LaTeX build from the isolated current source archive, with exact page text and rendered-pixel comparison to the designated PDF. Artifact reproduction only, not independent mathematical review."
+  }
+}
