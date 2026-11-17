@@ -1,0 +1,43 @@
+\subsection{An exhaustive split of the affine-linear coordinate}\label{sec:wsplit}
+
+Write $h=a+bZ+cT+dZ^2+eZT+fT^2$ and
+$\Delta=e^2-4df$. The following split is exhaustive and its branches
+are disjoint. The last column gives the proposition proving each branch.
+
+\begin{center}\small
+\begin{tabular}{@{}p{0.27\textwidth}p{0.38\textwidth}p{0.25\textwidth}@{}}
+\toprule
+Coefficient condition & Reduction & Proof\\
+\midrule
+$\Delta\ne0$ & Laurent phase on $\C^*$ with logarithmic volume &
+Proposition~\ref{prop:nondeglog}\\[3pt]
+$\Delta=0$, $f\ne0$ & $h=a+bZ+cT+fT^2$ after a null rotation &
+Proposition~\ref{prop:rankoneformal}\\[3pt]
+$f=e=0$, $d\ne0$, $c\ne0$ &
+$W(a+T+Z^2)+G$ after normalization &
+Proposition~\ref{prop:mixedformal}\\[3pt]
+$f=e=0$, $d\ne0$, $c=0$ & $Wh(Z)+G$ &
+Proposition~\ref{prop:height}\\[3pt]
+$d=e=f=0$, $c\ne0$ & $W(a+bZ+cT)+G$ &
+Corollary~\ref{cor:linearwt}\\[3pt]
+$d=e=f=c=0$ & $Wh(Z)+G$ &
+Proposition~\ref{prop:height}\\
+\bottomrule
+\end{tabular}
+\end{center}
+
+Here is the algebra behind the reductions. The null rotation
+\[
+ Z=Z',\quad T=T'+\lambda Z',\quad
+ W=W'-\lambda T'-\lambda^2Z'/2
+\]
+preserves $2ZW+T^2$. If $f\ne0$, choose $\lambda=-e/(2f)$.
+When $\Delta=0$ the quadratic part of $h$ becomes just $fT'^2$.
+If $f=e=0$ and $c\ne0$, choose $\lambda=-b/c$ to remove the
+linear $Z$ term without changing $dZ^2$. If also $d\ne0$, the
+Gaussian scaling $Z=\kappa Z'$, $W=W'/\kappa$, followed by a
+nonzero scaling of $P$, makes the $T$ and $Z^2$ coefficients both
+one; take $\kappa^2=c/d$. All additional terms enter a polynomial
+$G$ of degree at most three. If $\Delta=0$ and $f=0$, then $e=0$,
+which proves that the table omits no case.
+

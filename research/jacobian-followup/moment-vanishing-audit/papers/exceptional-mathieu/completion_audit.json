@@ -1,0 +1,58 @@
+{
+  "date": "2026-11-17",
+  "objective": "Simplify the proof and write a self-contained standalone paper, with complete clear human-followable steps; eliminate unnecessary steps.",
+  "requirements": [
+    {
+      "requirement": "Simplify the proof",
+      "evidence": "Sections2-5 use one binary-form construction f4/f8/f12; Taylor coefficients replace rational Ga transport; f4 supplies a positive radial identity, eliminating the special external radial theorem and normalizer circuit; boundary machinery is unnecessary.",
+      "result": "SATISFIED"
+    },
+    {
+      "requirement": "Standalone paper about the full result",
+      "evidence": "16page single-file LaTeX/PDF: definitions and main claims in Section1, exceptional counterexamples in Sections2-4, radial identity in Section5, full connected/disconnected classification and separate nullcone criterion in Sections6-7, recompositions/ordinary resolvents/coefficient algebras in Section8.",
+      "result": "SATISFIED"
+    },
+    {
+      "requirement": "Every new step complete and followable",
+      "evidence": "New purity, original fixed-marker tail, characteristic-p transfer, radial positivity, group reduction, finite-trace separation, arbitrary complex coefficients, ordinary transcendence and nilpotent coefficient-algebra implications have written proofs. Appendices prove form invariance, coordinate independence of the extraction rule and polynomial identities. Classical inputs are explicitly stated/cited.",
+      "result": "SATISFIED"
+    },
+    {
+      "requirement": "Human-readable claims and exposition",
+      "evidence": "Motivation, definitions, exact theorem statements, a proof roadmap, consistent notation and ordinary theorem-proof prose; no research-ledger identifiers or unstated repository-only proof dependencies in the paper. Standard classical results are inputs, not claimed re-proved.",
+      "result": "SATISFIED"
+    },
+    {
+      "requirement": "Readable final artifact",
+      "evidence": "All16 pages rendered and visually inspected; main theorem/construction/radial proof and appendix layouts checked. Zero compiler warnings, unresolved references/citations, missing glyph reports or text outside page bounds. Source/PDF bytes pinned.",
+      "result": "SATISFIED"
+    },
+    {
+      "requirement": "Editable and reproducible deliverable",
+      "evidence": "PDF and matching editable LaTeX export in output/pdf, canonical main.tex and build command in paper README. Optional SymPy verifier checks printed identities and two normalizations; its finite scope is explicit.",
+      "result": "SATISFIED"
+    },
+    {
+      "requirement": "Preserve results, other goals and review deferral",
+      "evidence": "Prior claims and unrelated work preserved at integration. New radial simplification recorded as GHAARUNIFIEDRADIAL20261117, with lesson/work/navigation. External review, formal verification and independent replay remain false; nothing published or sent for review.",
+      "result": "SATISFIED"
+    }
+  ],
+  "paper_source_sha256": "e1e045b4127e1b22b01bdc8755ca6a27637f2e8674fc22906d28545972704ddb",
+  "PDF_sha256": "0db3e0826260ad1d9643d0cc6a6a2d92009812a3d61fdcd9865fb349f5751dc9",
+  "pages": 16,
+  "new_radial_claim_fingerprint": "13e6f969083c5b5c",
+  "overall": "READY; requirements inspected against current source and PDF",
+  "limits": [
+    "Research draft; no independent external review or formal verification.",
+    "Classical structure, branching, torus and prime-progression theorems are declared and cited.",
+    "Whole-repository git diff --check currently reports unrelated concurrent gaussian-boundary whitespace edits; no such issues in this paper."
+  ],
+  "external_review": "DEFERRED",
+  "goal_tool_status": "complete",
+  "tracked_usage": {
+    "tokens_used": 445763,
+    "time_used_seconds": 4049,
+    "token_budget": null
+  }
+}

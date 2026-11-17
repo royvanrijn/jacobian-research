@@ -2,6 +2,20 @@
 
 ## 1. Status
 
+17 November2026: the [top-two-boundary-jet theorem](../../../jacobian-followup/moment-vanishing-audit/CUBIC_TOP_TWO_JET_GATE_AND_FULL_AXIAL_CONTRACTION.md)
+forces every pure cubic phase to have a multiple H3 zero on the boundary
+conic where H2 also vanishes. The smooth proper-graph/holomorphic-volume
+argument imports the retained internal written period theorem. For axial
+C0 it leaves two pole patterns; directly multiplied rational unit rows
+with term counts(2,2,1) exclude both. Thus the ENTIRE semisimple axial
+contraction-zero pure stratum is excluded with arbitrary H1, including
+mixed linear eigenspaces. Its closed harmonic-square C0 container is
+pure-safe with sharp cutoff one, without an eigenvector restriction.
+No unconditional full-axial consecutive-prefix bound is asserted;
+the large first-eight ordinary unit remains uncomputed. The three
+unrestricted global radical memberships and full Image stay OPEN;
+the overarching goal is ACTIVE.
+
 17 November2026: the [nilpotent contraction-zero classification and three global targets](../../../jacobian-followup/moment-vanishing-audit/NILPOTENT_CONTRACTION_ZERO_AND_THREE_GLOBAL_TARGETS.md)
 now close the pure points of the full closed container p=r=0,
 Delta^2(H2*H3)=0, with every H1 coefficient retained: all are one-sided

@@ -78,7 +78,7 @@
       "when": "Planning the next HC4/JC2 step after PF149/PF150, or proposing generic derivative integrality from constant Jacobian and generation.",
       "use": "Prioritize the explicit G1-G3 coverage obligations. Within a marked quadratic model, use the ACTUAL 2x2 Jacobian highest Wronskian and only legitimate elementary target automorphisms. Keep the common rational leading powers; the all-even residual has a common bad G and the odd residual has common u². Retain the central Bezout coframe without mistaking it for global inverse completeness. Test any integrality claim against the known 3D map and its generic first-velocity pole.",
       "avoid": "Assuming a proper equivariant factor exists; treating MX0 controls as a classification; dividing target functions by a leading G; treating Q^r0-lambdaP^s0 as a target coordinate; normalizing leading coefficients to units without proof; inferring full finite normalization from jet generation or a central unimodular row; or confusing generic ruling degree, graph degree and total potential degree.",
-      "boundary": "PF161 CURRENT: all actual quadratic ruling-five targets are CLOSED by a full original ramified prime with polynomial graph residue and the retained Chau component Remark. Remaining quadratic coordinates have ruling>=6; odd starts7 with b_n(0)=0. Higher/trivial-deck, full marked integrality and general tail-power gaps remain. Earlier boundaries below are historical where they leave r5 actual targets open; no arbitrary-rational-mate scope is silently enlarged. PF151 is conditional quadratic-model coverage, not the global theorem. In every reduced odd frame its leading coefficients already fail coprimality to M, so another admissible-leading expansion does not cover that residual. Known3Dcontrol has constantJac, genericfinite, full mixed-jet generation and nonintegral generic firstvelocities. This guard does not claim generation by one fixed-direction jet algebra; such a hypothesis needs its own exact control. NiedbalaGiraudin degree<=5 potential theorem is already reproduced/unrefereed; graphdegree5 producesdegree16 and is outside that bound. The user next requested a Rodrigues nilpotence transfer as a genuinely different proof mechanism. PF152 tests it against actual local multiplication and exposes unit linear propagation. This does not reopen the marked graph route or solve G1-G3; a positive HC4 quotient certificate remains open. PF157 now makes G1 exactly trivial deck atminimaldegree and gives complete quadratic actual image presentations V_R0 plus one-way allorder rational pole-atlas coverage. Unknown quadratic geometry outside that presentation is no longer a residual. Target realization/fullmarkedregularity and the bad common divisor remain open; central Morder can exceedtwo. PF158 subsequently closes the ENTIRE quadratic ruling-four target family, including arbitrary bad common leading multiplicities, using specialization degree and the source leading coefficient. Remaining quadratic targets have r>=5 (both-even r>=6); the sharp quintic control prevents an automatic extension. No fullS integrality or general tail-power certificate follows. PF159 now covers every actual r5 polar escape: some bad point offM has canonical orders(15j,10j,5j),j>=1, two coupled identities, and every actual pole has affine first parameter response. Nonlinear response excludes polynomial mates of all degrees, not arbitrary rational mates. A three-double-pole affine control has zero residues and preserves the unresolved global compatibility gap; r5 is not closed. PF160 now excludes the particular residue-free affine control and tau!=0,B(tau)!=0 parameter family by global genus, with rational mates in every finite extension excluded. Prime-ruling tracezero gives genus<=4(b-1) for the COMPLETE primitive pole budget; the control has b3 but genus>=104. Nonzero B-roots and the wider r5 affine class remain open. Curve-field multiplication is not fullS integrality.",
+      "boundary": "PF161 CURRENT: all actual quadratic ruling-five targets are CLOSED by a full original ramified prime with polynomial graph residue and the retained Chau component Remark. Remaining quadratic coordinates have ruling>=6; odd starts7 with b_n(0)=0. Higher/trivial-deck, full marked integrality and general tail-power gaps remain. Earlier boundaries below are historical where they leave r5 actual targets open; no arbitrary-rational-mate scope is silently enlarged. PF151 is conditional quadratic-model coverage, not the global theorem. In every reduced odd frame its leading coefficients already fail coprimality to M, so another admissible-leading expansion does not cover that residual. Known3Dcontrol has constantJac, genericfinite, full mixed-jet generation and nonintegral generic firstvelocities. This guard does not claim generation by one fixed-direction jet algebra; such a hypothesis needs its own exact control. NiedbalaGiraudin degree<=5 potential theorem is already reproduced/unrefereed; graphdegree5 producesdegree16 and is outside that bound. The user next requested a Rodrigues nilpotence transfer as a genuinely different proof mechanism. PF152 tests it against actual local multiplication and exposes unit linear propagation. This does not reopen the marked graph route or solve G1-G3; a positive HC4 quotient certificate remains open. PF157 now makes G1 exactly trivial deck atminimaldegree and gives complete quadratic actual image presentations V_R0 plus one-way allorder rational pole-atlas coverage. Unknown quadratic geometry outside that presentation is no longer a residual. Target realization/fullmarkedregularity and the bad common divisor remain open; central Morder can exceedtwo. PF158 subsequently closes the ENTIRE quadratic ruling-four target family, including arbitrary bad common leading multiplicities, using specialization degree and the source leading coefficient. Remaining quadratic targets have r>=5 (both-even r>=6); the sharp quintic control prevents an automatic extension. No fullS integrality or general tail-power certificate follows. PF159 now covers every actual r5 polar escape: some bad point offM has canonical orders(15j,10j,5j),j>=1, two coupled identities, and every actual pole has affine first parameter response. Nonlinear response excludes polynomial mates of all degrees, not arbitrary rational mates. A three-double-pole affine control has zero residues and preserves the unresolved global compatibility gap; r5 is not closed. PF160 now excludes the particular residue-free affine control and tau!=0,B(tau)!=0 parameter family by global genus, with rational mates in every finite extension excluded. Prime-ruling tracezero gives genus<=4(b-1) for the COMPLETE primitive pole budget; the control has b3 but genus>=104. Nonzero B-roots and the wider r5 affine class remain open. Curve-field multiplication is not fullS integrality. PF162 now covers ruling6 finite ends completely: Mroot/infinity ends holomorphic,3 offM weighted pole-face types, and an exact central residual quadratic if the source restriction has degree2. The forced original ramified prime has quadratic residue and image T2=P H2,H nonconstant. Image conductor and originalS/codifferent remain distinct; all P-vertical primes remain. Ruling6 is still open.",
       "reopen_when": "A proof closes G1, G2 or G3; an architecture exclusion directly removes a specified residual class; or a plane-specific integrality mechanism passes the 3D guard with its dimensional hypothesis identified.",
       "claims": [
         "PF2RULED151",
@@ -98,7 +98,8 @@
         "PF2RULED158",
         "PF2RULED159",
         "PF2RULED160",
-        "PF2RULED161"
+        "PF2RULED161",
+        "PF2RULED162"
       ],
       "sources": [
         "jacobian-followup/affine-complements/NORMAL_FORM_COVERAGE_AND_COMMON_LEADING_DIVISORS.md",
@@ -109,7 +110,8 @@
         "jacobian-followup/affine-complements/HALF_SPECIALIZATION_POLE_BOUND_AND_QUADRATIC_RULING_FOUR_EXCLUSION.md",
         "jacobian-followup/affine-complements/POLYNOMIAL_MATE_RESPONSES_AND_QUADRATIC_RULING_FIVE_ESCAPE_COVERAGE.md",
         "jacobian-followup/affine-complements/GLOBAL_POLE_DEGREE_GENUS_AND_RESIDUE_FREE_AFFINE_EXCLUSION.md",
-        "jacobian-followup/affine-complements/POLYNOMIAL_RESIDUE_RAMIFIED_LINE_AND_QUADRATIC_RULING_FIVE_CLOSURE.md"
+        "jacobian-followup/affine-complements/POLYNOMIAL_RESIDUE_RAMIFIED_LINE_AND_QUADRATIC_RULING_FIVE_CLOSURE.md",
+        "jacobian-followup/affine-complements/RULING_SIX_FINITE_END_COVERAGE_AND_QUADRATIC_BOUNDARY_ALGEBRA.md"
       ],
       "implementation": [
         "jacobian-followup/affine-complements/verify_normal_form_coverage.py"
@@ -126,7 +128,7 @@
       "programme_status": "archived",
       "reviewed_claims": {
         "PF2RULED151": "b2d6ed5a5f1a633f",
-        "OP-HC4-COVERAGE": "1369db04c2693b32",
+        "OP-HC4-COVERAGE": "d58d9dd8a421ac3e",
         "PF2RULED149": "aed7de80229f49b5",
         "PF2RULED150": "32aa23c90dc17604",
         "PF2RULED142": "f69860c37f5e690e",
@@ -142,7 +144,8 @@
         "PF2RULED158": "f3fd4ee31335f9db",
         "PF2RULED159": "733b6bf0501f8c55",
         "PF2RULED160": "8c0d4e25c1456309",
-        "PF2RULED161": "82905426fffb7fa2"
+        "PF2RULED161": "82905426fffb7fa2",
+        "PF2RULED162": "23bc0d162e967935"
       }
     },
     {
@@ -201,7 +204,7 @@
         "HC4MYMX0": "959d4dc48bd28cd4",
         "PF2RULED146": "a8c3c9cf35673dfa",
         "PF2RULED151": "b2d6ed5a5f1a633f",
-        "OP-HC4-COVERAGE": "1369db04c2693b32",
+        "OP-HC4-COVERAGE": "d58d9dd8a421ac3e",
         "PF2RULED158": "f3fd4ee31335f9db",
         "PF2RULED159": "733b6bf0501f8c55",
         "PF2RULED160": "8c0d4e25c1456309",
@@ -264,7 +267,7 @@
         "HC4MYMX0": "959d4dc48bd28cd4",
         "PF2RULED150": "32aa23c90dc17604",
         "PF2RULED151": "b2d6ed5a5f1a633f",
-        "OP-HC4-COVERAGE": "1369db04c2693b32",
+        "OP-HC4-COVERAGE": "d58d9dd8a421ac3e",
         "PF2RULED158": "f3fd4ee31335f9db",
         "PF2RULED159": "733b6bf0501f8c55",
         "PF2RULED160": "8c0d4e25c1456309",
@@ -1101,7 +1104,7 @@
       ],
       "reviewed_claims": {
         "OP-SIC2-MN": "947ee5fe48719a12",
-        "OP-SIC2-B33": "7e4add76a626e959",
+        "OP-SIC2-B33": "0024ea4a9c12fdd3",
         "SIC2B33ODD20261116": "7ed40902a1c0159d",
         "SIC2B33EULER20261116": "4fd05fb9fe3248dd",
         "SIC2B33LOCAL20261116": "a44f9494fb981771",
@@ -89899,7 +89902,7 @@
       ],
       "reviewed_claims": {
         "SIC2B33LOCALTHICK20261117": "815f90b6209791dc",
-        "OP-SIC2-B33": "7e4add76a626e959",
+        "OP-SIC2-B33": "0024ea4a9c12fdd3",
         "SIC2B33SEVENGATE20261117": "e2fc523386bc521e"
       },
       "programme_status": "archived"
@@ -90176,7 +90179,7 @@
         "seven targets"
       ],
       "reviewed_claims": {
-        "OP-SIC2-B33": "7e4add76a626e959",
+        "OP-SIC2-B33": "0024ea4a9c12fdd3",
         "SIC2B33SEVENGATE20261117": "e2fc523386bc521e",
         "MVFAMILYDECIDE20261115": "7d5bdf6ccdd241c5"
       },
@@ -90224,7 +90227,7 @@
         "nilpotents"
       ],
       "reviewed_claims": {
-        "OP-SIC2-B33": "7e4add76a626e959",
+        "OP-SIC2-B33": "0024ea4a9c12fdd3",
         "SIC2B33SEVENGATE20261117": "e2fc523386bc521e",
         "MVFAMILYDECIDE20261115": "7d5bdf6ccdd241c5",
         "SIC2B33LOCALTHICK20261117": "815f90b6209791dc",
@@ -90701,7 +90704,7 @@
       ],
       "reviewed_claims": {
         "SIC2B33RANK1QUAD20261117": "21b004e5b58d0f8e",
-        "OP-SIC2-B33": "7e4add76a626e959",
+        "OP-SIC2-B33": "0024ea4a9c12fdd3",
         "SIC2B33ODD20261116": "7ed40902a1c0159d",
         "SIC2B33NILPQUAD20261117": "aab927fd76d34977",
         "SIC2B33AXIALQUAD20261117": "9af75857a838881e",
@@ -90927,7 +90930,7 @@
       "reviewed_claims": {
         "SIC2B33QUADFORMS20261117": "867da6214d7f540f",
         "SIC2B33AXIALQUAD20261117": "9af75857a838881e",
-        "OP-SIC2-B33": "7e4add76a626e959"
+        "OP-SIC2-B33": "0024ea4a9c12fdd3"
       },
       "programme_status": "archived"
     },
@@ -91241,7 +91244,7 @@
       "when": "The exceptional fixed-marker counterexamples are available and one needs the universal reductive consequence, actual ordinary-resolvent obstruction, or coefficient-ring unary families.",
       "use": "Zero-extend a connected non-toral counterexample to one open-and-closed component; average1/r preserves the fixed infinite bad tail. Toral components are safe by retained finite-trace separation and DvK, proving MZ iff [G0,G0] subset H for all groups with reductive identity. For exceptional P and ANY H of degree d, choose e<d with gcd(cd,ce-a)=1 and use QP^e. At p=c(dm+e)-a, its highest moment alone has denominator divisible by p; lower ones are integral. Gauss valuations extend the argument to arbitrary complex coefficients; finite-type Eisenstein proves actual ordinary marked transcendence. Over any coefficient algebra, R[P] is safe exactly at nilpotent elements; purity is controlled only by H0.",
       "avoid": "Inferring transcendence from an infinite tail alone; assuming arbitrary complex coefficients admit a fixed number-field specialization preserving all moment identities; forgetting component averaging or replacing its character condition for nullcones by an MZ condition; choosing a marker depending on moment order.",
-      "boundary": "Complete reductive MZ classification, with all disconnected groups and stabilizers. Complete unary exceptional R[P] purity/safety in every degree and coefficient algebra; not a classification of the entire marked-safe locus in C[X]. No every-order exceptional nonzero tail, minimal degree, actual fibre graph coordinates, external review or formal verification claimed. Other Gaussian/Image programmes retain their own goals.",
+      "boundary": "Complete reductive MZ classification, with all disconnected groups and stabilizers. Complete unary exceptional R[P] purity/safety in every degree and coefficient algebra; not a classification of the entire marked-safe locus in C[X]. No every-order exceptional nonzero tail, minimal degree, actual fibre graph coordinates, external review or formal verification claimed. Other Gaussian/Image programmes retain their own goals. STANDALONE PAPER17November2026: GHAARUNIFIEDRADIAL20261117 supplies a single binary-form construction f4/f8/f12; explicit beta_m>0 radial identity removes the special external radial theorem and old normalizer circuit. Complete16page paper proves all new steps and the full group reduction, with stated classical inputs, editable LaTeX, PDF and bounded algebra/layout checks. Earlier results and other goals retained; external review DEFERRED.",
       "reopen_when": "A concrete error in the fixed-marker construction, retained reduction/finite-trace theorem, or written deductions would reopen the corresponding claim. Stronger every-order witnesses and minimal degree are separate follow-ups, not prerequisites for the resolved classification. External review remains deferred.",
       "claims": [
         "GEXCEPTIONALFULLCOUNTER20261117",
@@ -91251,11 +91254,13 @@
         "GSPHERICALCOMP20261115",
         "GVC2FTS",
         "GMZALLREDUCTIVE20261117",
-        "GHAARRECOMPARITH20261117"
+        "GHAARRECOMPARITH20261117",
+        "GHAARUNIFIEDRADIAL20261117"
       ],
       "sources": [
         "jacobian-followup/moment-vanishing-audit/FULL_REDUCTIVE_MATHIEU_CLASSIFICATION_AND_RECOMPOSITION_FAILURES.md",
-        "jacobian-followup/moment-vanishing-audit/haar_full_classification_source_audit.json"
+        "jacobian-followup/moment-vanishing-audit/haar_full_classification_source_audit.json",
+        "jacobian-followup/moment-vanishing-audit/papers/exceptional-mathieu/README.md"
       ],
       "implementation": [],
       "keywords": [
@@ -91276,7 +91281,8 @@
         "GSPHERICALCOMP20261115": "91720616fc2db8c0",
         "GVC2FTS": "f7c2d7fa1ffc03f8",
         "GMZALLREDUCTIVE20261117": "18bb85a851911ea7",
-        "GHAARRECOMPARITH20261117": "51eef0fc2545b2e6"
+        "GHAARRECOMPARITH20261117": "51eef0fc2545b2e6",
+        "GHAARUNIFIEDRADIAL20261117": "13e6f969083c5b5c"
       }
     },
     {
@@ -91286,7 +91292,7 @@
       "when": "A hypothetical plane Keller map has a nontrivial generic deck group, or minimal-degree coverage has an unspecified equivariant-factor/image branch.",
       "use": "Combine the actual common source pencil with replica-index divisibility to get exact monomial jet indexgcd(g,k+1); usePF142 and unique derivation extension for general polynomial replicas atminimaldegree. Normalize the cyclic slice by field trace, retain a proper tracefree rationalG and polynomialsource representativeF0-GinE, then use actual translatedchart intersections to compute the image algebra and principal-part fibre partitions. For quadratic images writeG=tR0(t2),A denominatorofR0+2uR0prime,Sigma=A(...); the two whole charts prove completeV_R0 coverage and a direct Euclid identity supplies the global primitive. Apply existing coordinate exclusions only after this coverage step. Count all central places in the full comparison normalization for r>=2g.",
       "avoid": "Confusing generic decks with monodromy; claiming generalp replica formula without minimality; replacing rawjetfield equality by normal/finitetarget algebra equality; dropping the polynomial representative condition for arbitraryG; assuming arbitrary higherorder pole data produces an affine sourceimage or a plane target; taking the determinant of the linear moment coefficient as the full Gram determinant; applying the old centralordM2 odd-parity rule to all quadratic images; or dropping original ramified primes after working on W/V.",
-      "boundary": "PF161 CURRENT: all actual quadratic ruling-five targets are CLOSED by a full original ramified prime with polynomial graph residue and the retained Chau component Remark. Remaining quadratic coordinates have ruling>=6; odd starts7 with b_n(0)=0. Higher/trivial-deck, full marked integrality and general tail-power gaps remain. Earlier boundaries below are historical where they leave r5 actual targets open; no arbitrary-rational-mate scope is silently enlarged. PF157 gives G1trivialdeck equivalence atminimaldegree, exact allmonomial jetfields, actual nontrivdeck pole-atlas coverage and COMPLETE quadratic-image normal forms. Quadratic converse realizes exact surface sourcegeometry, not a Keller target. Highercyclic admissibility/targetrealization, trivialdeck inversion and badcommonleadingdivisors remainopen. Fieldtrace matrices/comparisonnormalizations are not originalS/Lambda. Fullmarked quadraticREGULARITY is unsupplied despite a universal polar relative moment and charge lower bounds. PF142mixedcase andPF156quinticgraphs stayclosed; HC4JC2 open. PF158 subsequently closes the ENTIRE quadratic ruling-four target family, including arbitrary bad common leading multiplicities, using specialization degree and the source leading coefficient. Remaining quadratic targets have r>=5 (both-even r>=6); the sharp quintic control prevents an automatic extension. No fullS integrality or general tail-power certificate follows. PF159 now covers every actual r5 polar escape: some bad point offM has canonical orders(15j,10j,5j),j>=1, two coupled identities, and every actual pole has affine first parameter response. Nonlinear response excludes polynomial mates of all degrees, not arbitrary rational mates. A three-double-pole affine control has zero residues and preserves the unresolved global compatibility gap; r5 is not closed. PF160 now excludes the particular residue-free affine control and tau!=0,B(tau)!=0 parameter family by global genus, with rational mates in every finite extension excluded. Prime-ruling tracezero gives genus<=4(b-1) for the COMPLETE primitive pole budget; the control has b3 but genus>=104. Nonzero B-roots and the wider r5 affine class remain open. Curve-field multiplication is not fullS integrality.",
+      "boundary": "PF161 CURRENT: all actual quadratic ruling-five targets are CLOSED by a full original ramified prime with polynomial graph residue and the retained Chau component Remark. Remaining quadratic coordinates have ruling>=6; odd starts7 with b_n(0)=0. Higher/trivial-deck, full marked integrality and general tail-power gaps remain. Earlier boundaries below are historical where they leave r5 actual targets open; no arbitrary-rational-mate scope is silently enlarged. PF157 gives G1trivialdeck equivalence atminimaldegree, exact allmonomial jetfields, actual nontrivdeck pole-atlas coverage and COMPLETE quadratic-image normal forms. Quadratic converse realizes exact surface sourcegeometry, not a Keller target. Highercyclic admissibility/targetrealization, trivialdeck inversion and badcommonleadingdivisors remainopen. Fieldtrace matrices/comparisonnormalizations are not originalS/Lambda. Fullmarked quadraticREGULARITY is unsupplied despite a universal polar relative moment and charge lower bounds. PF142mixedcase andPF156quinticgraphs stayclosed; HC4JC2 open. PF158 subsequently closes the ENTIRE quadratic ruling-four target family, including arbitrary bad common leading multiplicities, using specialization degree and the source leading coefficient. Remaining quadratic targets have r>=5 (both-even r>=6); the sharp quintic control prevents an automatic extension. No fullS integrality or general tail-power certificate follows. PF159 now covers every actual r5 polar escape: some bad point offM has canonical orders(15j,10j,5j),j>=1, two coupled identities, and every actual pole has affine first parameter response. Nonlinear response excludes polynomial mates of all degrees, not arbitrary rational mates. A three-double-pole affine control has zero residues and preserves the unresolved global compatibility gap; r5 is not closed. PF160 now excludes the particular residue-free affine control and tau!=0,B(tau)!=0 parameter family by global genus, with rational mates in every finite extension excluded. Prime-ruling tracezero gives genus<=4(b-1) for the COMPLETE primitive pole budget; the control has b3 but genus>=104. Nonzero B-roots and the wider r5 affine class remain open. Curve-field multiplication is not fullS integrality. PF162 now covers ruling6 finite ends completely: Mroot/infinity ends holomorphic,3 offM weighted pole-face types, and an exact central residual quadratic if the source restriction has degree2. The forced original ramified prime has quadratic residue and image T2=P H2,H nonconstant. Image conductor and originalS/codifferent remain distinct; all P-vertical primes remain. Ruling6 is still open.",
       "reopen_when": "An actual target-compatibility argument excludes the explicit R0/G residual, moves its bad leading divisor by a justified coordinate change, proves full originalS-marked quadratic regularity, or supplies a new necessary normal form for the trivial-deck case.",
       "claims": [
         "PF2RULED157",
@@ -91303,7 +91309,8 @@
         "PF2RULED158",
         "PF2RULED159",
         "PF2RULED160",
-        "PF2RULED161"
+        "PF2RULED161",
+        "PF2RULED162"
       ],
       "sources": [
         "jacobian-followup/affine-complements/CANONICAL_DECK_JET_FIELDS_AND_RATIONAL_POLE_ATLAS_COVERAGE.md",
@@ -91311,7 +91318,8 @@
         "jacobian-followup/affine-complements/HALF_SPECIALIZATION_POLE_BOUND_AND_QUADRATIC_RULING_FOUR_EXCLUSION.md",
         "jacobian-followup/affine-complements/POLYNOMIAL_MATE_RESPONSES_AND_QUADRATIC_RULING_FIVE_ESCAPE_COVERAGE.md",
         "jacobian-followup/affine-complements/GLOBAL_POLE_DEGREE_GENUS_AND_RESIDUE_FREE_AFFINE_EXCLUSION.md",
-        "jacobian-followup/affine-complements/POLYNOMIAL_RESIDUE_RAMIFIED_LINE_AND_QUADRATIC_RULING_FIVE_CLOSURE.md"
+        "jacobian-followup/affine-complements/POLYNOMIAL_RESIDUE_RAMIFIED_LINE_AND_QUADRATIC_RULING_FIVE_CLOSURE.md",
+        "jacobian-followup/affine-complements/RULING_SIX_FINITE_END_COVERAGE_AND_QUADRATIC_BOUNDARY_ALGEBRA.md"
       ],
       "implementation": [
         "jacobian-followup/affine-complements/verify_canonical_deck_pole_coverage.py"
@@ -91329,7 +91337,7 @@
       "programme_status": "archived",
       "reviewed_claims": {
         "PF2RULED157": "57995519d036ff89",
-        "OP-HC4-COVERAGE": "1369db04c2693b32",
+        "OP-HC4-COVERAGE": "d58d9dd8a421ac3e",
         "PF2RULED151": "b2d6ed5a5f1a633f",
         "PF2RULED142": "f69860c37f5e690e",
         "PF2RULED143": "01c86c711c799900",
@@ -91342,7 +91350,8 @@
         "PF2RULED158": "f3fd4ee31335f9db",
         "PF2RULED159": "733b6bf0501f8c55",
         "PF2RULED160": "8c0d4e25c1456309",
-        "PF2RULED161": "82905426fffb7fa2"
+        "PF2RULED161": "82905426fffb7fa2",
+        "PF2RULED162": "23bc0d162e967935"
       }
     },
     {
@@ -91391,7 +91400,7 @@
         "PF2RULED149": "aed7de80229f49b5",
         "PF2RULED52": "40b44f5595df34e6",
         "PF2RULED151": "b2d6ed5a5f1a633f",
-        "OP-HC4-COVERAGE": "1369db04c2693b32",
+        "OP-HC4-COVERAGE": "d58d9dd8a421ac3e",
         "PF2RULED159": "733b6bf0501f8c55",
         "PF2RULED160": "8c0d4e25c1456309",
         "PF2RULED161": "82905426fffb7fa2"
@@ -91433,7 +91442,7 @@
       ],
       "reviewed_claims": {
         "SIC2B33THREEGATE20261117": "d3dd6548c0fa846d",
-        "OP-SIC2-B33": "7e4add76a626e959",
+        "OP-SIC2-B33": "0024ea4a9c12fdd3",
         "SIC2B33GLOBALGRADED20261117": "2e5006a366a1adc3",
         "SIC2B33NILPCYCLIC20261117": "14a75a3f65822df6"
       },
@@ -91446,7 +91455,7 @@
       "when": "A complete generic-curve pole bound fails at a multiple escaping root; use the general actual-mate response constraint on remaining degrees, with PF159 ruling-five applications retained as closed controls after PF161.",
       "use": "Take the first p-dependent coefficient lambda of the normal variable, with earlier coefficients in C. The leading coefficient of EVERY polynomial mate is polynomial in lambda, even in unbounded degree. Since H(lambda)=p, a pole forces q*G*Hprime=constant, so H is affine and G constant. Combine this actual-mate constraint with the refined initial-root multiplicity bound and the complete M0/infinity audit. Coupled leading powers give the necessary r5 bad orders(15j,10j,5j) and two linked coefficients.",
       "avoid": "Allowing a rational-in-normal-variable mate to masquerade as polynomial; omitting the a2=0 ON M ends; mistaking the triple initial face for the later first parameter response; declaring a pole sufficient to exclude a mate; or treating zero residues, generic-curve field multiplication or first-response linearity as global exactness or originalS integrality.",
-      "boundary": "PF161 CURRENT: all actual quadratic ruling-five targets are CLOSED by a full original ramified prime with polynomial graph residue and the retained Chau component Remark. Remaining quadratic coordinates have ruling>=6; odd starts7 with b_n(0)=0. Higher/trivial-deck, full marked integrality and general tail-power gaps remain. Earlier boundaries below are historical where they leave r5 actual targets open; no arbitrary-rational-mate scope is silently enlarged. PF159 excludes unbounded cubic-response actual-target families with fifth-power leading and all named line/differential tests passed, and supplies complete necessary ruling-five escape coverage. It does NOT close every r5 target. An explicit affine-response regular control has exactly3 double poles with zero residues and all other ends holomorphic; global periods/polynomial-mate compatibility remain open. Higher-degree/trivial-deck and fullS marked integrality/tail-power gaps remain; every original ramified prime is retained. PF160 now excludes the particular residue-free affine control and tau!=0,B(tau)!=0 parameter family by global genus, with rational mates in every finite extension excluded. Prime-ruling tracezero gives genus<=4(b-1) for the COMPLETE primitive pole budget; the control has b3 but genus>=104. Nonzero B-roots and the wider r5 affine class remain open. Curve-field multiplication is not fullS integrality.",
+      "boundary": "PF161 CURRENT: all actual quadratic ruling-five targets are CLOSED by a full original ramified prime with polynomial graph residue and the retained Chau component Remark. Remaining quadratic coordinates have ruling>=6; odd starts7 with b_n(0)=0. Higher/trivial-deck, full marked integrality and general tail-power gaps remain. Earlier boundaries below are historical where they leave r5 actual targets open; no arbitrary-rational-mate scope is silently enlarged. PF159 excludes unbounded cubic-response actual-target families with fifth-power leading and all named line/differential tests passed, and supplies complete necessary ruling-five escape coverage. It does NOT close every r5 target. An explicit affine-response regular control has exactly3 double poles with zero residues and all other ends holomorphic; global periods/polynomial-mate compatibility remain open. Higher-degree/trivial-deck and fullS marked integrality/tail-power gaps remain; every original ramified prime is retained. PF160 now excludes the particular residue-free affine control and tau!=0,B(tau)!=0 parameter family by global genus, with rational mates in every finite extension excluded. Prime-ruling tracezero gives genus<=4(b-1) for the COMPLETE primitive pole budget; the control has b3 but genus>=104. Nonzero B-roots and the wider r5 affine class remain open. Curve-field multiplication is not fullS integrality. PF162 now covers ruling6 finite ends completely: Mroot/infinity ends holomorphic,3 offM weighted pole-face types, and an exact central residual quadratic if the source restriction has degree2. The forced original ramified prime has quadratic residue and image T2=P H2,H nonconstant. Image conductor and originalS/codifferent remain distinct; all P-vertical primes remain. Ruling6 is still open.",
       "reopen_when": "A uniform global exactness/polynomial-mate obstruction or actual finite-lattice mechanism resolves the affine-response class, or a justified higher-degree normal form yields a new complete-end bound.",
       "claims": [
         "PF2RULED159",
@@ -91458,13 +91467,15 @@
         "PF2RULED52",
         "OP-HC4-COVERAGE",
         "PF2RULED160",
-        "PF2RULED161"
+        "PF2RULED161",
+        "PF2RULED162"
       ],
       "sources": [
         "jacobian-followup/affine-complements/POLYNOMIAL_MATE_RESPONSES_AND_QUADRATIC_RULING_FIVE_ESCAPE_COVERAGE.md",
         "jacobian-followup/affine-complements/sources/polynomial-mate-response/context.json",
         "jacobian-followup/affine-complements/GLOBAL_POLE_DEGREE_GENUS_AND_RESIDUE_FREE_AFFINE_EXCLUSION.md",
-        "jacobian-followup/affine-complements/POLYNOMIAL_RESIDUE_RAMIFIED_LINE_AND_QUADRATIC_RULING_FIVE_CLOSURE.md"
+        "jacobian-followup/affine-complements/POLYNOMIAL_RESIDUE_RAMIFIED_LINE_AND_QUADRATIC_RULING_FIVE_CLOSURE.md",
+        "jacobian-followup/affine-complements/RULING_SIX_FINITE_END_COVERAGE_AND_QUADRATIC_BOUNDARY_ALGEBRA.md"
       ],
       "implementation": [
         "jacobian-followup/affine-complements/verify_polynomial_mate_response.py"
@@ -91487,9 +91498,10 @@
         "PF2RULED150": "32aa23c90dc17604",
         "PF2RULED151": "b2d6ed5a5f1a633f",
         "PF2RULED52": "40b44f5595df34e6",
-        "OP-HC4-COVERAGE": "1369db04c2693b32",
+        "OP-HC4-COVERAGE": "d58d9dd8a421ac3e",
         "PF2RULED160": "8c0d4e25c1456309",
-        "PF2RULED161": "82905426fffb7fa2"
+        "PF2RULED161": "82905426fffb7fa2",
+        "PF2RULED162": "23bc0d162e967935"
       }
     },
     {
@@ -91542,7 +91554,7 @@
         "PF2RULED150": "32aa23c90dc17604",
         "PF2RULED149": "aed7de80229f49b5",
         "PF2RULED52": "40b44f5595df34e6",
-        "OP-HC4-COVERAGE": "1369db04c2693b32",
+        "OP-HC4-COVERAGE": "d58d9dd8a421ac3e",
         "PF2RULED161": "82905426fffb7fa2"
       }
     },
@@ -91599,7 +91611,7 @@
       "when": "An actual quadratic Keller source image has a simple extra central branch, particularly an odd ruling2n+1 with b_n(0) unit.",
       "use": "Lift over C[p], not just its fraction field: the simple derivative is a nonzero constant, so all Hensel coefficients stay polynomial in p. Evaluate the actual arbitrary-degree polynomial-in-w companion; the scalar Jacobian makes its Laurent derivative holomorphic, removing all negative terms and giving polynomial residueq0(p). Use the genuine target shear Q-q0(P), then integrality in the FULL finite normalization to prove residue ring exactlyC[P], no missing finite values. Quadratic t2u gives the original ramified prime and its exact e/q data; the retained Chau COMPONENT Remark excludes its closed graph image.",
       "avoid": "Replacing C[p] by C(p) and losing finite-point holes; declaring a rational residue graph a closedA1; replacing the component Remark by a whole-exceptional-set statement; deleting other original ramified primes or taking one prime as a full trace maximum; applying the simple-root argument when b_n(0)=0; or reading formal local primitives as global polynomial mates/HC4 tail termination.",
-      "boundary": "PF161 closes EVERY actual quadratic ruling-five target with arbitrary lower coefficients, bad divisors and companion degree. Higher odd b_n(0)=0 and even ruling>=6 remain open, as do higher cyclic/trivial-deck cases and fullS integrality/tail powers. PF160 rational-mate certificates retain their own scope; PF161 does not rule out arbitrary rational companions at all exceptional parameters. Chau is a retained imported published input, not independently reproved.",
+      "boundary": "PF161 closes EVERY actual quadratic ruling-five target with arbitrary lower coefficients, bad divisors and companion degree. Higher odd b_n(0)=0 and even ruling>=6 remain open, as do higher cyclic/trivial-deck cases and fullS integrality/tail powers. PF160 rational-mate certificates retain their own scope; PF161 does not rule out arbitrary rational companions at all exceptional parameters. Chau is a retained imported published input, not independently reproved. PF162 now covers ruling6 finite ends completely: Mroot/infinity ends holomorphic,3 offM weighted pole-face types, and an exact central residual quadratic if the source restriction has degree2. The forced original ramified prime has quadratic residue and image T2=P H2,H nonconstant. Image conductor and originalS/codifferent remain distinct; all P-vertical primes remain. Ruling6 is still open.",
       "reopen_when": "A controlled multiple residual algebra replaces the simple branch and retains all residue extensions/ramification, another coordinate reduction closes a surviving ruling>=6 family, or a full originalS marked-regularity argument proves derivative integrality.",
       "claims": [
         "PF2RULED161",
@@ -91611,12 +91623,14 @@
         "PF2RULED52",
         "PF2RULED141",
         "PF2RULED143",
-        "OP-HC4-COVERAGE"
+        "OP-HC4-COVERAGE",
+        "PF2RULED162"
       ],
       "sources": [
         "jacobian-followup/affine-complements/POLYNOMIAL_RESIDUE_RAMIFIED_LINE_AND_QUADRATIC_RULING_FIVE_CLOSURE.md",
         "jacobian-followup/affine-complements/sources/polynomial-residue-ramified-line/context.json",
-        "jacobian-followup/affine-complements/sources/polynomial-residue-ramified-line/chau_component_import_audit.json"
+        "jacobian-followup/affine-complements/sources/polynomial-residue-ramified-line/chau_component_import_audit.json",
+        "jacobian-followup/affine-complements/RULING_SIX_FINITE_END_COVERAGE_AND_QUADRATIC_BOUNDARY_ALGEBRA.md"
       ],
       "implementation": [
         "jacobian-followup/affine-complements/verify_polynomial_residue_ramified_line.py"
@@ -91641,7 +91655,8 @@
         "PF2RULED52": "40b44f5595df34e6",
         "PF2RULED141": "542bdb12e213719d",
         "PF2RULED143": "01c86c711c799900",
-        "OP-HC4-COVERAGE": "1369db04c2693b32"
+        "OP-HC4-COVERAGE": "d58d9dd8a421ac3e",
+        "PF2RULED162": "23bc0d162e967935"
       }
     },
     {
@@ -91651,17 +91666,19 @@
       "when": "A complete orthogonal orbit chart has a stabilizing torus, and several nonzero linear coefficients make a fixed-quadratic normalization computationally expensive.",
       "use": "Use the phase amplitude and the actual stabilizing torus to fix the declared nonzero linear coefficients, then retain the quadratic amplitude lambda as a variable. If all remaining nonquadratic terms are odd under the antipodal involution, mu_n is divisible by lambda for odd n and depends on lambda^2 after that declared unit is removed. Solve the first two product equations exactly, and keep all cubic coefficients and all zero cases not explicitly excluded. Separate the linear eigenvector strata from mixed eigenspaces before using field normalizations.",
       "avoid": "Fixing the quadratic amplitude and two independent linear coefficients with only amplitude plus one torus; treating a coefficient product equation as permission to invert either factor when that product might vanish; dividing odd moments by a linear coefficient; calling a finite-field unit or a truncated rational basis a characteristic-zero unit; relying on an experimental engine that reports internal errors.",
-      "boundary": "For semisimple axial B under C=Delta^2(H2*H3)=0, the eigenvector condition v wedge Bv=0 is exactly b0 OR(a=c0). Central, transverse isotropic and transverse nonisotropic cases are all excluded by first8 moments, using directly multiplied rational identities. Nonisotropic a=c1 leaves lambda nonzero, u=lambda^2, a four-cubic chart and an exact six-row unit with term counts(138,51,51,29,29,3). This closes a conditional safe harmonic-square cone with nonzero H1 allowed. The b=c1 mixed-eigenspace chart also has a complete four-cubic input but its rational exclusion is OPEN. A190-polynomial degree17 QQ checkpoint is partial only; the degree18 resume timed out at600s. Experimental Macaulay2 LinearAlgebra fails on these QQ affine/homogeneous inputs and supplies no evidence. All3 global radical memberships and full Image remain open.",
-      "reopen_when": "A complete rational mixed-chart unit or another exact structural argument closes cyclic rank2; a different normalization genuinely reduces an unresolved complete chart while retaining all amplitude and denominator boundaries.",
+      "boundary": "For semisimple axial B under C=Delta^2(H2*H3)=0, the eigenvector condition v wedge Bv=0 is exactly b0 OR(a=c0). Central, transverse isotropic and transverse nonisotropic cases are all excluded by first8 moments, using directly multiplied rational identities. Nonisotropic a=c1 leaves lambda nonzero, u=lambda^2, a four-cubic chart and an exact six-row unit with term counts(138,51,51,29,29,3). This closes a conditional safe harmonic-square cone with nonzero H1 allowed. The b=c1 mixed-eigenspace chart has a complete four-cubic input whose unconditional first8 ordinary unit remains uncomputed. Its all-order pure points are now excluded by the top-two-boundary-jet geometric/analytic theorem and two tiny directly multiplied rational units. A190-polynomial degree17 QQ checkpoint is partial only; the degree18 resume timed out at600s. Experimental Macaulay2 LinearAlgebra fails on these QQ affine/homogeneous inputs and supplies no evidence. All3 global radical memberships and full Image remain open.",
+      "reopen_when": "A genuinely useful ordinary finite-prefix certificate is needed beyond the now-completed all-order axial C0 pure classification, or a different normalization reduces another unresolved complete chart while retaining all amplitude and denominator boundaries.",
       "claims": [
         "SIC2B33AXIALCOVEIG20261117",
         "OP-SIC2-B33",
         "SIC2B33QUADFORMS20261117",
-        "SIC2B33THREEGATE20261117"
+        "SIC2B33THREEGATE20261117",
+        "SIC2B33TOPTWOGATE20261117"
       ],
       "sources": [
         "jacobian-followup/moment-vanishing-audit/AXIAL_CONTRACTION_ZERO_EIGENVECTOR_STRATUM.md",
-        "jacobian-followup/moment-vanishing-audit/QUADRATIC_ORBIT_NORMAL_FORMS.md"
+        "jacobian-followup/moment-vanishing-audit/QUADRATIC_ORBIT_NORMAL_FORMS.md",
+        "jacobian-followup/moment-vanishing-audit/CUBIC_TOP_TWO_JET_GATE_AND_FULL_AXIAL_CONTRACTION.md"
       ],
       "implementation": [
         "jacobian-followup/moment-vanishing-audit/axial_contraction_zero.py",
@@ -91681,10 +91698,11 @@
         "partial rational basis"
       ],
       "reviewed_claims": {
-        "SIC2B33AXIALCOVEIG20261117": "ae922e4705c30c01",
-        "OP-SIC2-B33": "7e4add76a626e959",
+        "SIC2B33AXIALCOVEIG20261117": "e35967429d937eeb",
+        "OP-SIC2-B33": "0024ea4a9c12fdd3",
         "SIC2B33QUADFORMS20261117": "867da6214d7f540f",
-        "SIC2B33THREEGATE20261117": "d3dd6548c0fa846d"
+        "SIC2B33THREEGATE20261117": "d3dd6548c0fa846d",
+        "SIC2B33TOPTWOGATE20261117": "ccb6394a54b79fff"
       },
       "programme_status": "archived"
     },
@@ -91734,6 +91752,143 @@
         "OP-GAUSS-2BASE-1FIBRE": "f7a3c074b70c942e",
         "GQUADFIBREALL20261117": "698e7f6dca1cca13",
         "GMCSTEINRANK20261116": "32274043129bac56"
+      }
+    },
+    {
+      "id": "METHOD-PROPER-GRAPH-TOP-TWO-JETS",
+      "area": "geometry",
+      "title": "Use both leading boundary jets to resolve a proper graph before computing a full affine unit",
+      "when": "Moment purity is controlled by a holomorphic-period theorem, but the leading divisor has multiple zeros and a large coefficient-chart unit calculation is difficult.",
+      "use": "Inspect the actual homogenized graph at infinity. A repeated leading zero can still give a smooth boundary graph if the next homogeneous term is nonzero there. Check both implicit-coordinate volume formulas, boundary submersivity, properness, isolated critical points and the nonzero compact volume period. Derive the necessary incidence of a repeated leading root and a zero of the next term; then seek small exact units only on that complete necessary locus.",
+      "avoid": "Treating a repeated leading root alone as a purity mechanism, forgetting the next boundary jet, omitting infinity in the projective root test, assuming a local Jacobian checker certifies global topology/analysis, promoting conditional pole-pattern units to an unconditional finite moment prefix, or continuing a large standard-basis calculation after a different proof closes the all-order field question.",
+      "boundary": "For sphere degree3, the graph K=H3+uH2+u^2H1-tau*u^3 has residue volume du wedge ds/(2u^2). A unit K_s or K_u extends it as u/(2K_s) du wedge d tau or u/(2K_u) d tau wedge ds. Every pure phase with H3 nonzero therefore has a multiple H3 boundary zero where H2 vanishes. Under axial C0, this is exactly d=e0 OR f=g0. First3 force ac=-16/105,b^2=-31/105; two three-entry rational units with term counts(2,2,1) exclude both patterns. The ENTIRE all-order axial C0 stratum is closed, including the formerly unresolved mixed eigenspaces. Its first8 ordinary unit remains uncomputed, as do all3 global radical memberships. The global proper-graph and period proof remains INTERNAL WRITTEN with analytic assurance, not machine/external/formal certification. No nilpotent coefficient-ring consequence is asserted.",
+      "reopen_when": "Use the complete necessary flag to treat other quadratic C0 types, prove another exact field-safe stratum, or independently review the retained geometric/analytic period input. Revisit large affine units only for a separate ordinary-prefix obligation.",
+      "claims": [
+        "SIC2B33TOPTWOGATE20261117",
+        "GPROPERHOLPERIOD20261115",
+        "GQUADRICTOPGATE20261115",
+        "OP-SIC2-B33"
+      ],
+      "sources": [
+        "jacobian-followup/moment-vanishing-audit/CUBIC_TOP_TWO_JET_GATE_AND_FULL_AXIAL_CONTRACTION.md",
+        "jacobian-followup/moment-vanishing-audit/PROPER_QUADRIC_MODELS_AND_LEADING_DISCRIMINANTS.md"
+      ],
+      "implementation": [
+        "jacobian-followup/moment-vanishing-audit/verify_cubic_top_two_jet_gate.py",
+        "jacobian-followup/moment-vanishing-audit/axial_contraction_zero_boundary_pole_units.json",
+        "jacobian-followup/moment-vanishing-audit/axial_contraction_zero_full_safe_container.json",
+        "jacobian-followup/moment-vanishing-audit/cubic_top_two_jet_verification.json"
+      ],
+      "keywords": [
+        "proper graph",
+        "top two jets",
+        "boundary flag",
+        "holomorphic period",
+        "axial contraction",
+        "small unit certificate"
+      ],
+      "reviewed_claims": {
+        "SIC2B33TOPTWOGATE20261117": "ccb6394a54b79fff",
+        "GPROPERHOLPERIOD20261115": "12ecbe536c4d4d18",
+        "GQUADRICTOPGATE20261115": "96effe53cfecac87",
+        "OP-SIC2-B33": "0024ea4a9c12fdd3"
+      },
+      "programme_status": "archived"
+    },
+    {
+      "id": "METHOD-RULING-SIX-RESIDUE-COVERAGE",
+      "area": "plane-jc",
+      "title": "Keep the exact quadratic residual factor and image conductor while covering every finite end",
+      "when": "An actual quadratic ruling-six coordinate remains after PF161, and central multiple branches or offM bad divisors are still unspecified.",
+      "use": "Audit every Mroot with the full divided/reciprocal equation and polar-z unit elimination. Split the two WHOLE source charts by monic Hensel over C[p]; their resultant is a leading unit in actual rank2 multiplication. The residual quadratic retains both sheets. Holomorphic actual companions and the polynomial-residue graph obstruction force a quadratic residue extension; keep its original ramified e/q data and nonproper image T2=P H2 with its conductor. Outside M use the complete weighted multiplicity classification into3 offM pole faces, not only generic simple roots.",
+      "avoid": "Treating central degree3 as if an extra quadratic branch existed; deleting P-vertical or other ramified primes absent from a generic fibre; identifying S/R with its normalization; replacing full codifferent by an image conductor; assuming all-order containment from a finite nilpotent conductor quotient; or combining the optional image target shear with a reduced companion degree frame without checking it.",
+      "boundary": "PF162 supplies complete necessary ruling6 end coverage, exact quadratic residual multiplication and forced original ramified data in the central degree2 case. It does NOT exclude all ruling6 coordinates. Image-normalization lambda2P is finite over a free parameter and globally nonnilpotent; dual-number critical fibres and sharp finite conductor nilpotence do not give an HC4 tail ideal. Central degree3, the singular image class,3 offM faces and higher/trivial-deck cases remain open; original fullS marked integrality is unsupplied.",
+      "reopen_when": "An actual full trace/codifferent or global genus argument excludes one of these complete residual classes, or a specified finite compatibility quotient proves uniform nilpotence AND increasing normal-index powers.",
+      "claims": [
+        "PF2RULED162",
+        "PF2RULED161",
+        "PF2RULED157",
+        "PF2RULED158",
+        "PF2RULED159",
+        "PF2RULED160",
+        "PF2RULED149",
+        "PF2RULED52",
+        "PF2RULED141",
+        "PF2RULED143",
+        "OP-HC4-COVERAGE"
+      ],
+      "sources": [
+        "jacobian-followup/affine-complements/RULING_SIX_FINITE_END_COVERAGE_AND_QUADRATIC_BOUNDARY_ALGEBRA.md",
+        "jacobian-followup/affine-complements/sources/ruling-six-boundary/context.json"
+      ],
+      "implementation": [
+        "jacobian-followup/affine-complements/verify_ruling_six_boundary.py"
+      ],
+      "keywords": [
+        "ruling six coverage",
+        "quadratic residual factor",
+        "actual multiplication",
+        "image conductor",
+        "ramified residue extension",
+        "offM weighted faces",
+        "P-vertical primes",
+        "full normalization"
+      ],
+      "programme_status": "archived",
+      "reviewed_claims": {
+        "PF2RULED162": "23bc0d162e967935",
+        "PF2RULED161": "82905426fffb7fa2",
+        "PF2RULED157": "57995519d036ff89",
+        "PF2RULED158": "f3fd4ee31335f9db",
+        "PF2RULED159": "733b6bf0501f8c55",
+        "PF2RULED160": "8c0d4e25c1456309",
+        "PF2RULED149": "aed7de80229f49b5",
+        "PF2RULED52": "40b44f5595df34e6",
+        "PF2RULED141": "542bdb12e213719d",
+        "PF2RULED143": "01c86c711c799900",
+        "OP-HC4-COVERAGE": "d58d9dd8a421ac3e"
+      }
+    },
+    {
+      "id": "METHOD-UNIFIED-BINARY-FORM-RADIAL-IDENTITY-AND-STANDALONE-PAPER-20261117",
+      "area": "geometry",
+      "programme_status": "archived",
+      "title": "Use the f4 radial identity to make the Mathieu classification a single standalone proof",
+      "when": "Writing the complete Mathieu result for a reader without the research ledger, or removing the earlier special radial and normalizer dependencies.",
+      "use": "The common even-binary-form construction with f4=(XY)^2 has explicit N(T)-invariant P4,Q4 and positive beta_m=(2m/(3m+1))(2m)!(4m)!/(6m)! for EVERY m. Its only marked weight component has degree12m-4, so averaging any compact positive SU2-invariant measure gives beta_m times its positive radial moment. This proves the line-doublet witness internally, alongside the same f8/f12 exceptional construction. Rewrite purity with Taylor coefficients so all summands are visibly polynomial. Prove the Cartier extraction rule and invariant-form identities locally; use Schur to explain infinitude of completely split primes in the component proof. All results fit in one16page paper with declared classical inputs.",
+      "avoid": "Leaving a special radial theorem or a repository-only reduction as an unstated proof dependency; presenting finite normalization checks as the all-order proof; hiding standard inputs; retaining discovery machinery in the main exposition.",
+      "boundary": "Self-contained in its new arguments, with classical Dirichlet/DvK, reductive structure, finite subgroup classification and stated branching rules cited. No optimal-degree claim. The new radial pair has matrix degree36 and is used for proof simplicity. External review/formal verification/independent replay remain false.",
+      "reopen_when": "A concrete mathematical or expository gap is found in the paper, or the user requests further revision; do not reopen completed classification cases or unrelated programmes solely to polish the paper. External review remains deferred.",
+      "claims": [
+        "GHAARUNIFIEDRADIAL20261117",
+        "GMZALLREDUCTIVE20261117",
+        "GHAARRECOMPARITH20261117",
+        "GEXCEPTIONALFULLCOUNTER20261117"
+      ],
+      "sources": [
+        "jacobian-followup/moment-vanishing-audit/papers/exceptional-mathieu/README.md",
+        "jacobian-followup/moment-vanishing-audit/papers/exceptional-mathieu/main.tex",
+        "jacobian-followup/moment-vanishing-audit/papers/exceptional-mathieu/source_audit.json",
+        "jacobian-followup/moment-vanishing-audit/papers/exceptional-mathieu/qa.json"
+      ],
+      "implementation": [
+        "jacobian-followup/moment-vanishing-audit/papers/exceptional-mathieu/verify.py"
+      ],
+      "keywords": [
+        "standalone paper",
+        "Mathieu classification",
+        "radial identity",
+        "fixed original multiplier",
+        "beta integral",
+        "proof simplification",
+        "binary forms",
+        "ordinary resolvent"
+      ],
+      "reviewed_claims": {
+        "GMZALLREDUCTIVE20261117": "18bb85a851911ea7",
+        "GHAARRECOMPARITH20261117": "51eef0fc2545b2e6",
+        "GEXCEPTIONALFULLCOUNTER20261117": "c81c721fd539e80b",
+        "GHAARUNIFIEDRADIAL20261117": "13e6f969083c5b5c"
       }
     }
   ]

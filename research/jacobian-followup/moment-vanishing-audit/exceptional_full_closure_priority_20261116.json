@@ -36,7 +36,8 @@
     "Allaffine/nonhomogeneousell-divisormultiplicities<=degreeell/s0;N<s0ceil(d/2)globalizes;ENTIREpositiveconeN<=2d-2qualifiesALLdegrees/PWmixtures,notnegativemultiweight (GHAARPOSITIVEGAGLOBAL20261117)",
     "ALLpurephases:allbutONEGa directionglobalizeregularconstant-volumecomparison,bystrictleadingroot+nonhomogeneousdivisorbound;onlyD(L)=0mayremainnonglobal,NOTNeronsupportclaim (GHAARPOSITIVEGAGLOBAL20261117)",
     "Actual exceptional pure fixed-marker counterexamples and full connected reductive MZ classification (GEXCEPTIONALFULLCOUNTER20261117, GMZCONNECTEDFULL20261117); all earlier inputs retained.",
-    "Full disconnected reductive classification and explicit all-complex/all-ring recomposition consequences (GMZALLREDUCTIVE20261117, GHAARRECOMPARITH20261117)."
+    "Full disconnected reductive classification and explicit all-complex/all-ring recomposition consequences (GMZALLREDUCTIVE20261117, GHAARRECOMPARITH20261117).",
+    "Standalone16page paper and unified f4 radial identity (GHAARUNIFIEDRADIAL20261117), full classical inputs explicit; all prior claims/goals retained."
   ],
   "not_completion": [
     "finite collections of degrees",
@@ -331,6 +332,15 @@
     "coefficient_algebras": "Over every R, safe elements of R[P] exactly nilpotent, eventual pure iff H0 nilpotent",
     "earlier_open_gates": "historical or disproved, not remaining requirements for the Mathieu classification",
     "other_programmes_and_goals": "PRESERVED",
+    "external_review": "DEFERRED"
+  },
+  "standalone_paper": {
+    "source": "papers/exceptional-mathieu/README.md",
+    "claim": "GHAARUNIFIEDRADIAL20261117",
+    "pages": 16,
+    "new_simplification": "f4 radial beta identity joins f8/f12 in one construction; no old special radial/normalizer inputs",
+    "PDF": "output/pdf/mathieu-reductive-homogeneous-spaces.pdf",
+    "editable_source": "output/pdf/mathieu-reductive-homogeneous-spaces.tex",
     "external_review": "DEFERRED"
   }
 }

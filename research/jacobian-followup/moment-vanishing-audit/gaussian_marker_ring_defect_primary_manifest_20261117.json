@@ -1,0 +1,20 @@
+{
+  "date": "2026-11-17",
+  "primary_source": {
+    "url": "https://stacks.math.columbia.edu/tag/0549",
+    "locator": "Section15.22,Lemma15.22.11(1)",
+    "checked": "Classical torsion-free iff flat over a PID/Dedekind domain. Used only to explain flatness of the universal module;the kernel/cokernel theorem has a separate elementary polynomial proof.",
+    "cache": "sources/gaussian-marker-ring-defect/stacks_0549.html",
+    "sha256": "bf94195db984adf64397f8e56c5b56cd6c3fb6118f412caa6856d976619ee8a2"
+  },
+  "searches": [
+    "torsion free module PID flat Tor localization kernel",
+    "Gaussian exponential Gauss Manin specialization parameter quadratic bY Y2 relative base change torsion",
+    "Tor localization torsion module M f infinity"
+  ],
+  "proof_inputs": "Elementary Gaussian completing-square,Weyl point-module normal form,finite exponential and Euler projectors. No analytic rational-slope or arbitrary nonconvergent formal theorem imported.",
+  "novelty_assessed": false,
+  "exhaustive_literature_coverage": false,
+  "first_proof_claim": false,
+  "old_primary_sources_unchanged": true
+}

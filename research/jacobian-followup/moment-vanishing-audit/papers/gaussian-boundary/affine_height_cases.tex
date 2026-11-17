@@ -1,0 +1,44 @@
+\subsection{A coefficient independent of the Gaussian height}\label{sec:heightcases}
+
+\begin{proposition}[The thirteen-coefficient case]\label{prop:height}
+Suppose a cubic has the form
+\[
+ P=Wh(Z)+sT^3+v(Z)T^2+u(Z)T+r(Z),
+\]
+where $s$ is constant. If it is pure, then $s=0$; it is one of the
+pure cases described in Section~\ref{sec:algebraic}, and obeys
+$m>3\deg Q$.
+\end{proposition}
+\begin{proof}
+If $h(0)\ne0$, use $z=g$, $t=z/h(z)$ in the formal Lagrange
+identity. The remaining cubic Gaussian series has
+\[
+ A=\frac{zs}{h},\quad B=-\frac12+\frac{zv}{h},\quad C=\frac{zu}{h}.
+\]
+Purity would give $I=H e^{-R}$, where
+$H=(h-zh')/h$ and $R=zr/h$. If $s\ne0$, this has rational
+logarithmic derivative, contradicting Lemma~\ref{lem:cubicgaussian}.
+If $h(0)=0$, the fixed point is zero. Use instead
+$A=ts$, $B=-1/2+tv(0)$, $C=tu(0)$, $H=1-th'(0)$ and $R=tr(0)$.
+The same contradiction applies. Thus $s=0$ in both cases, and the
+already proved algebraic subcase finishes the argument.
+\end{proof}
+
+\begin{corollary}[The affine coefficient of $W$]\label{cor:linearwt}
+If $P=W(a+bZ+cT)+G(Z,T)$ is a pure cubic, it satisfies
+$m>3\deg Q$. If $c\ne0$, it is in fact quadratic.
+\end{corollary}
+\begin{proof}
+Put $q=1-bt$ and $g=at/q+(ct/q)T$. Circular contraction gives
+\[
+ \Phi_1=q^{-1}\E_T[e^{tG(g,T)}].
+\]
+The coefficient of $T^3$ in the exponent is
+$A(t)=tG_3(ct/q,1)$. If it is nonzero, the cubic Gaussian
+obstruction applies, whereas purity makes the remaining Gaussian
+series equal to $q$, after removing a rational scalar exponential.
+For $c\ne0$, the rational function $ct/q$ is nonconstant, so
+$A=0$ forces $G_3=0$. Proposition~\ref{prop:quadratic} applies.
+If $c=0$, use Proposition~\ref{prop:height}.
+\end{proof}
+

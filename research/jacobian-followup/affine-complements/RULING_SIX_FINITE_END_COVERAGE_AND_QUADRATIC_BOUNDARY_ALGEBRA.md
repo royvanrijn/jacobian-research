@@ -2,7 +2,7 @@
 
 PF2RULED162. 17 November 2026. Actual complex polynomial PLANE Keller maps.
 
-The previous goal turn made progress: PF161 closed ALL actual quadratic
+The previous goal turn made progress: [PF161](POLYNOMIAL_RESIDUE_RAMIFIED_LINE_AND_QUADRATIC_RULING_FIVE_CLOSURE.md) closed ALL actual quadratic
 ruling-five coordinates. This note supplies COMPLETE necessary finite-end
 coverage at the next degree, SIX. Every M=0 end is holomorphic. A central
 restriction of degree two leaves an exact rank-two residual algebra and
@@ -238,7 +238,9 @@ Put m=m0. The ACTUAL original prime in (14) has
 Indeed (16) gives the intermediate coframe order a and normal index a+1;
 t^2=u doubles it. The source formula in (1) gives q. Every other original
 prime, all singular finite points and all P-vertical primes remain retained.
-There is no assumption that this is the only ramified prime of S.
+There is no assumption that this is the only ramified prime of S. The
+normal index e_R is NOT the finite fibre length at a cusp or node; no
+equality at singular finite images is asserted.
 
 The two visible central source/chart primes are unramified and each has
 P-degree2. R0 has P-degree2 as well. These account for all six sheets
@@ -340,7 +342,9 @@ This companion-degree frame is separate from the optional image shear(18).
 
 For d=3, the two central whole charts exhaust all P-horizontal sheets;
 its central omitted image has normalization A1 with P-degree3, not a
-forced graph. For d=2, (14)--(20) are the complete necessary quadratic
+forced graph. Indeed the field index of C(P(0,x),Q(0,x)) in C(x) divides
+THREE; index3 would put Q(0,x) polynomially in P(0,x) and give a forbidden
+graph. Thus the index is1 and its finite normalization is C[x]. For d=2, (14)--(20) are the complete necessary quadratic
 residue alternative. Neither alternative is declared realizable or excluded.
 Together with (21),(22), they supply coverage before another coordinate
 architecture expansion.
@@ -359,6 +363,7 @@ faces(22), their finite residue image class(18), higher cyclic images,
 trivial deck, full marked first-derivative regularity and normal-tail power
 growth remain OPEN. HC4/JC2 is not proved and no counterexample is constructed.
 The uniform arguments, not finite coefficient prefixes, justify the scopes.
-No new external classification or predecessor checker replay is used.
+The checker passes 88 exact arithmetic and symbolic controls. No new
+external classification or predecessor checker replay is used.
 Independent whole-proof replay, formal verification and external review
 remain unclaimed.

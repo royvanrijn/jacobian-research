@@ -169,6 +169,12 @@ orbits and all two-weight sectors are also closed; retain the
 [source reconciliation](strict_thin_source_reconciliation_20261116_source_audit.json)
 before proposing another thin-seed calculation.
 
+The [standalone Mathieu paper](papers/exceptional-mathieu/README.md)
+presents the complete argument in16 pages, with downloadable PDF and
+editable LaTeX. A new explicit positive radial identity lets one binary-form
+construction handle the normalizer and both exceptional groups; the special
+radial theorem and old normalizer circuit are no longer needed.
+
 The [complete reductive Mathieu classification](FULL_REDUCTIVE_MATHIEU_CLASSIFICATION_AND_RECOMPOSITION_FAILURES.md)
 covers disconnected acting groups as well: Mathieu--Zhao holds exactly
 when [G0,G0] lies in H. The [fixed original exceptional counterexamples](EXPLICIT_EXCEPTIONAL_PURE_PHASES_WITH_FIXED_BAD_MARKERS.md)

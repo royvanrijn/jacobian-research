@@ -1,47 +1,3 @@
-\subsection{An exhaustive split of the affine-linear coordinate}\label{sec:wsplit}
-
-Write $h=a+bZ+cT+dZ^2+eZT+fT^2$ and
-$\Delta=e^2-4df$. The following split is exhaustive and its branches
-are disjoint. The last column distinguishes a proof given here from
-the proposition proving that branch. Every row is now proved here.
-
-\begin{center}\small
-\begin{tabular}{@{}p{0.27\textwidth}p{0.38\textwidth}p{0.25\textwidth}@{}}
-\toprule
-Coefficient condition & Reduction & Status in this draft\\
-\midrule
-$\Delta\ne0$ & Laurent phase on $\C^*$ with logarithmic volume &
-Proposition~\ref{prop:nondeglog}\\[3pt]
-$\Delta=0$, $f\ne0$ & $h=a+bZ+cT+fT^2$ after a null rotation &
-Proposition~\ref{prop:rankoneformal}\\[3pt]
-$f=e=0$, $d\ne0$, $c\ne0$ &
-$W(a+T+Z^2)+G$ after normalization &
-Proposition~\ref{prop:mixedformal}\\[3pt]
-$f=e=0$, $d\ne0$, $c=0$ & $Wh(Z)+G$ &
-Proposition~\ref{prop:height}\\[3pt]
-$d=e=f=0$, $c\ne0$ & $W(a+bZ+cT)+G$ &
-Corollary~\ref{cor:linearwt}\\[3pt]
-$d=e=f=c=0$ & $Wh(Z)+G$ &
-Proposition~\ref{prop:height}\\
-\bottomrule
-\end{tabular}
-\end{center}
-
-Here is the algebra behind the reductions. The null rotation
-\[
- Z=Z',\quad T=T'+\lambda Z',\quad
- W=W'-\lambda T'-\lambda^2Z'/2
-\]
-preserves $2ZW+T^2$. If $f\ne0$, choose $\lambda=-e/(2f)$.
-When $\Delta=0$ the quadratic part of $h$ becomes just $fT'^2$.
-If $f=e=0$ and $c\ne0$, choose $\lambda=-b/c$ to remove the
-linear $Z$ term without changing $dZ^2$. If also $d\ne0$, the
-Gaussian scaling $Z=\kappa Z'$, $W=W'/\kappa$, followed by a
-nonzero scaling of $P$, makes the $T$ and $Z^2$ coefficients both
-one; take $\kappa^2=c/d$. All additional terms enter a polynomial
-$G$ of degree at most three. If $\Delta=0$ and $f=0$, then $e=0$,
-which proves that the table omits no case.
-
 \subsection{A curve-length estimate}
 
 \begin{lemma}\label{lem:curvelength}
@@ -162,25 +118,7 @@ Theorem~\ref{thm:laurentlog} excludes $\Phi_1=1$ in every chart,
 using its actual Laurent orders. No image-kernel calculation is used.
 \end{proof}
 
-\begin{proof}[Proof of Proposition~\ref{prop:wlinear}]
-Use the disjoint case table in Section~\ref{sec:wsplit}.
-Proposition~\ref{prop:nondeglog} excludes its first row.
-Proposition~\ref{prop:rankoneformal} treats the second and leaves
-only a one-sign product. Proposition~\ref{prop:mixedformal} excludes
-the third. Proposition~\ref{prop:height} proves the fourth and sixth;
-its pure cases are one-sign phases or the shear family.
-Corollary~\ref{cor:linearwt} treats the fifth and leaves a quadratic.
-These rows exhaust all coefficients, including their zero faces.
-
-The one-sign and ternary quadratic cases have cutoff $m>\deg Q$,
-and the shear has cutoff $m>3\deg Q$. The null rotations,
-Gaussian coordinate scalings and nonzero scalar multiples of $P$
-used in the reductions preserve the threshold and multiplier degree.
-Thus every pure member of the full affine-linear family satisfies
-$m>3\deg Q$.
-\end{proof}
-
-\subsection{Adversarial tests for the analytic argument}
+\subsection{Why normalization and full rank matter}
 
 The following exact examples prevent several tempting shortcuts.
 For positive real $t$,
@@ -206,50 +144,3 @@ noninteger exponent before ramification must not be reused after
 ramification. Lemma~\ref{lem:positiveformal} uses positive seed order
 and an actual full frame instead.
 
-\input{gradient_exclusion.tex}
-\input{ordinary_finite_exclusion.tex}
-\input{hyperbolic_suspension.tex}
-\input{uniform_cut_decay.tex}
-\input{ordinary_axis_exclusion.tex}
-\input{bounded_regular_reduction.tex}
-\input{cusp_tangent_exclusion.tex}
-\input{concurrent_regular_exclusion.tex}
-\input{repeated_line_exclusion.tex}
-
-\subsection{The geometric case split for frame extraction}
-
-For a cubic of degree exactly three, either the frame test
-\eqref{eq:frame} succeeds, or it does not. In the latter case,
-the projective curve $F_3=0$ belongs to exactly one of these types:
-\begin{center}\small
-\begin{tabular}{@{}p{0.33\textwidth}p{0.56\textwidth}@{}}
-\toprule
-Leading curve & No-frame exclusion\\
-\midrule
-Smooth cubic & Proved by Corollary~\ref{cor:smoothleading}; no pure phase\\
-Irreducible nodal cubic & Completely excluded by Corollary~\ref{cor:ordinarycomplete}\\
-Irreducible cuspidal cubic & Proved by Proposition~\ref{prop:cusptangentcomplete}\\
-Line and smooth conic, transverse & Completely excluded by the same corollary\\
-Line and smooth conic, tangent & Proved by the same proposition\\
-Three nonconcurrent lines & Completely excluded by the same corollary\\
-Three concurrent distinct lines & Proved by Proposition~\ref{prop:concurrentcomplete}\\
-Double line and a distinct line & Proved by Proposition~\ref{prop:repeatedcomplete}\\
-Triple line & Proved by Proposition~\ref{prop:repeatedcomplete}\\
-\bottomrule
-\end{tabular}
-\end{center}
-The list is exhaustive by factorization of a plane cubic over $\C$.
-Every row has now been proved, including its lower terms and all
-critical degeneracies. In the repeated-line rows the singular set
-is a whole projective line; the proof checks its isotropic directions
-rather than choosing an arbitrary point on it.
-
-\begin{proof}[Proof of Proposition~\ref{prop:frameextract}]
-Suppose the frame test fails for a pure polynomial of degree three.
-Its leading curve is one of the nine types in the table. The smooth
-case is excluded by the gradient criterion, and the ordinary-node
-cases by Corollary~\ref{cor:ordinarycomplete}. Propositions
-\ref{prop:cusptangentcomplete}, \ref{prop:concurrentcomplete} and
-\ref{prop:repeatedcomplete} force a frame in every other case.
-All possibilities give a contradiction. This proves frame extraction.
-\end{proof}

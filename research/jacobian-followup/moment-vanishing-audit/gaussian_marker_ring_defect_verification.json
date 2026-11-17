@@ -1,0 +1,67 @@
+{
+  "date": "2026-11-17",
+  "status": "pass",
+  "scope": "Bounded exact symbolic transcriptions,not independent verification of universal all-ring defect/nonmembership proof.",
+  "checks": [
+    "torsion-remainder-L1",
+    "nilpotent-Gaussian-gauge-L1",
+    "Euler-projector-L1",
+    "idempotent-witness-L1",
+    "torsion-remainder-L2",
+    "nilpotent-Gaussian-gauge-L2",
+    "Euler-projector-L2",
+    "idempotent-witness-L2",
+    "torsion-remainder-L5",
+    "nilpotent-Gaussian-gauge-L5",
+    "Euler-projector-L5",
+    "idempotent-witness-L5",
+    "point-module-projection",
+    "point-module-reconstruction"
+  ],
+  "rejected_mutations": [
+    "Removed tb from source derivative",
+    "Removed half-residue correction from Euler projector"
+  ],
+  "packets": [
+    {
+      "nilpotence_threshold": 1,
+      "nu": 1,
+      "operator_order_bound": 0,
+      "torsion_amplitude": "1",
+      "torsion_remainder": "b*t",
+      "Gaussian_gauge": "1",
+      "Euler_projector": "product_(j=1,...,0) (E+j+1/2)/j",
+      "idempotent": "b*r",
+      "stabilization_guard": "b*(-b*r + 1)=0"
+    },
+    {
+      "nilpotence_threshold": 2,
+      "nu": 1,
+      "operator_order_bound": 0,
+      "torsion_amplitude": "-b*t*y + 1",
+      "torsion_remainder": "-b**2*t**2*y",
+      "Gaussian_gauge": "1",
+      "Euler_projector": "product_(j=1,...,0) (E+j+1/2)/j",
+      "idempotent": "b**2*r**2",
+      "stabilization_guard": "b**2*(-b*r + 1)=0"
+    },
+    {
+      "nilpotence_threshold": 5,
+      "nu": 3,
+      "operator_order_bound": 2,
+      "torsion_amplitude": "b**4*t**4*y**4/24 - b**3*t**3*y**3/6 + b**2*t**2*y**2/2 - b*t*y + 1",
+      "torsion_remainder": "b**5*t**5*y**4/24",
+      "Gaussian_gauge": "b**4*(2 - s)**2/128 + b**2*(2 - s)/8 + 1",
+      "Euler_projector": "product_(j=1,...,2) (E+j+1/2)/j",
+      "idempotent": "b**5*r**5",
+      "stabilization_guard": "b**5*(-b*r + 1)=0"
+    }
+  ],
+  "point_model": "D=z,s=-d/dz;finite polynomial vectors only,no false truncated Weyl representation.",
+  "script_sha256": "9603275721c0d780f7190c4c25f933260f3017ba7c29d2882be4d59f28ef6d6b",
+  "elapsed_seconds": 0.11004175100242719,
+  "independent_replay": false,
+  "formal_verification": false,
+  "external_review": false,
+  "rerun": "Successful checker sealed;never rerun."
+}

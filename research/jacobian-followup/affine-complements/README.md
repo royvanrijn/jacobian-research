@@ -1,5 +1,13 @@
 # Affine complement recognition for the quartic boundary programme
 
+[PF2RULED162](RULING_SIX_FINITE_END_COVERAGE_AND_QUADRATIC_BOUNDARY_ALGEBRA.md)
+covers the next degree: every Mroot/infinity end is holomorphic, leaving
+three explicit offM pole-face types. Central degree2 has an exact rank2
+residual factor and one original ramified prime with quadratic residue
+lambda2=P and image T2=P H(P)2,H nonconstant. Its conductor multiplication
+retains split/nilpotent fibres; it is not originalS or a tail certificate.
+88 exact controls pass. Ruling6, full marked integrality and HC4/JC2 remain open.
+
 [PF2RULED161](POLYNOMIAL_RESIDUE_RAMIFIED_LINE_AND_QUADRATIC_RULING_FIVE_CLOSURE.md)
 closes the ENTIRE actual quadratic ruling-five target class. An all-order
 C[p] lift and the actual Jacobian force an original ramified boundary prime

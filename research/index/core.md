@@ -556,6 +556,7 @@ python3 research/scripts/research.py show ID
 | `OP-MRC` | open | [Prove or disprove the Meridional Rank Conjecture](../jacobian-followup/meridional-rank/LITERATURE.tex) |
 | `MRC-MERIDIAN-DEFORMATIONS-STABILIZATION-20261116` | proved | [Meridian-varying tangent spaces and formal splitting of stabilized icosahedral bases](../jacobian-followup/meridional-rank/MERIDIAN_DEFORMATIONS_AND_STABILIZATION.tex) |
 | `MRC-MUTATION-COMMON-DOUBLE-COVERS-20261117` | proved | [Certified mutation reduces eight retained double-cover rank questions to two](../jacobian-followup/meridional-rank/MUTATION_COMMON_DOUBLE_COVERS.tex) |
+| `MRC-ORIGINAL-SIXTEEN-KNOWN-GRAPH-COVER-FAMILY-20261117` | proved | [Closed rigidity puts all sixteen original cases in the existing BJW18 graph-cover MRC family](../jacobian-followup/meridional-rank/ORIGINAL_SIXTEEN_KNOWN_GRAPH_COVER_FAMILY.tex) |
 | `MRC-PERIODIC-TWIST-FAMILIES-20261117` | proved | [Four explicit infinite periodic-twist families with meridional rank and bridge number four](../jacobian-followup/meridional-rank/PERIODIC_TWIST_FAMILIES.tex) |
 | `MRC-DOUBLE-TRANSPOSITION-INDEX-GATE-20261117` | proved | [Permutation-index bound, full A8 torus controls, and exact degree8/9 double-transposition exclusion on the original sixteen targets](../jacobian-followup/meridional-rank/PERMUTATION_INDEX_GATE.tex) |
 | `MRC-SL3-PROJECTIVE13-HOMOLOGY-20261117` | proved | [All-characteristic Betti-gain rank bound and exact projective13 subgroup homology through the retained SL3(F3) maps](../jacobian-followup/meridional-rank/PROJECTIVE_THIRTEEN_COVER_HOMOLOGY.tex) |
@@ -924,6 +925,7 @@ These documents are not canonical sources of a registered claim. They include wo
 - [Next complete theorem: the actual normalization cannot support an all-Laurent boundary](../jacobian-followup/affine-complements/LAURENT_FINITE_ALGEBRA_FINISH_LINE.md)
 - [Affine complement recognition for the quartic boundary programme](../jacobian-followup/affine-complements/README.md)
 - [The quartic ruled completion research goal](../jacobian-followup/affine-complements/RESEARCH_GOAL.md)
+- [Complete ruling-six finite-end coverage and the quadratic boundary residue algebra](../jacobian-followup/affine-complements/RULING_SIX_FINITE_END_COVERAGE_AND_QUADRATIC_BOUNDARY_ALGEBRA.md)
 - [The Wright connection and the multiple fibre gate](../jacobian-followup/affine-complements/WRIGHT_CONNECTION.md)
 - [Rejected formal root reuse in the exploratory specialization code](../jacobian-followup/collision-frame-search/INVALIDATED_SPECIALIZATION.md)
 - [Remaining constructive directions](../jacobian-followup/collision-frame-search/NEXT_FAMILY.md)

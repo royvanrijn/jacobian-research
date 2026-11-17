@@ -8,7 +8,7 @@
 
 [Complete catalogue](index/README.md) · [Algorithmic lessons](knowledge/ALGORITHMS.md) · [Scoped failed routes](knowledge/FAILED_ROUTES.md) · [Replay guide](REPRODUCE.md)
 
-The active programme is elliptic curves and supporting K3 constructions. [Other programmes](archive/non-elliptic/README.md) retain 2731 claims in the same authority with `programme_status: archived`; their mathematical states are unchanged.
+The active programme is elliptic curves and supporting K3 constructions. [Other programmes](archive/non-elliptic/README.md) retain 2734 claims in the same authority with `programme_status: archived`; their mathematical states are unchanged.
 
 From the repository root, read full scope, proof type, assurance, checkers, software locks, dependencies and replacements without executing anything:
 

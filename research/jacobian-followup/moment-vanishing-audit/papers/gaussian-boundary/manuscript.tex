@@ -3,7 +3,7 @@
 \usepackage[margin=1.05in]{geometry}
 \usepackage[colorlinks=true,linkcolor=blue!45!black,citecolor=blue!45!black,urlcolor=blue!45!black]{hyperref}
 \usepackage{xcolor}
-\hypersetup{pdftitle={The dimension-degree boundary for Gaussian moment vanishing},pdfsubject={Working mathematical manuscript}}
+\hypersetup{pdftitle={The dimension-degree boundary for Gaussian moment vanishing},pdfsubject={Working mathematical manuscript},bookmarksdepth=2}
 \newtheorem{theorem}{Theorem}[section]
 \newtheorem{proposition}[theorem]{Proposition}
 \newtheorem{lemma}[theorem]{Lemma}
@@ -16,18 +16,12 @@
 \newcommand{\wt}{\operatorname{wt}}
 \newcommand{\G}{\mathsf G}
 \DeclareMathOperator{\Span}{span}
+\setcounter{tocdepth}{1}
 \title{The dimension--degree boundary\\for Gaussian moment vanishing}
 \author{}
 \date{Working draft, 17 November 2026}
 \begin{document}
 \maketitle
-\begin{center}\begin{minipage}{0.91\textwidth}\small
-\textbf{Internal proof draft.} Every case in the ternary-cubic proof
-is written out, including the analytic completeness and decay arguments.
-Classical inputs are stated and credited. The manuscript has not had
-independent specialist review; no priority or submission-readiness claim
-is made.
-\end{minipage}\end{center}
 
 \begin{abstract}
 The Gaussian Moments Conjecture asks whether the vanishing of every
@@ -43,7 +37,11 @@ statements fit together, give short proofs of the elementary parts, and
 isolate the cubic reductions that carry the new argument.
 \end{abstract}
 
-\section{What vanishing moments tell us}
+\clearpage
+\tableofcontents
+\clearpage
+
+\section{What vanishing moments tell us}\label{sec:introduction}
 
 Let $X_1,\ldots,X_n$ be independent standard real Gaussian random
 variables. We allow a polynomial $P(X)$ to have complex coefficients.
@@ -93,9 +91,9 @@ that all four-variable polynomials behave badly.
 \toprule
  & $d\leq2$ & $d=3$ & $d\geq4$\\
 \midrule
-$n=1,2$ & always safe & always safe & always safe\\
-$n=3$ & always safe & always safe & failures exist\\
-$n\geq4$ & always safe & failures exist & failures exist\\
+$n=1,2$ & purity implies safety & purity implies safety & purity implies safety\\
+$n=3$ & purity implies safety & purity implies safety & failures exist\\
+$n\geq4$ & purity implies safety & failures exist & failures exist\\
 \bottomrule
 \end{tabular}
 \end{center}
@@ -112,31 +110,88 @@ Let $P\in\C[X_1,X_2,X_3]$ have total degree at most three and satisfy
 No smaller constant can replace three uniformly over this class.
 \end{theorem}
 
+The proof gives a classification as well as a vanishing bound. In
+circular Gaussian coordinates $(Z,W,T)$, call a phase \emph{one-sided}
+if all its monomials have circular weight $\deg_Z-\deg_W$ of one
+strict sign; $T$ has weight zero.
+
+\begin{theorem}[Normal forms for pure ternary cubics]
+\label{thm:normalforms}
+A complex polynomial of degree at most three in three Gaussian
+variables is pure if and only if, after a complex orthogonal linear
+change of coordinates and multiplication by a nonzero scalar, it is
+one-sided or is the exceptional phase
+\[
+ P_*=W+ZT-\frac12 Z^3.
+\]
+\end{theorem}
+
+Thus the destination of the proof is one-sided support plus one
+exceptional orbit. One-sided phases have cutoff $m>\deg Q$; the
+exceptional orbit accounts for the sharp coefficient three.
+
+\subsection*{Proof map}
+Write $P=F_3+F_2+F_1+F_0$ in homogeneous pieces. The logical route is:
+\begin{center}\small
+\begin{tabular}{@{}p{0.28\textwidth}p{0.43\textwidth}p{0.21\textwidth}@{}}
+\toprule
+Step & Statement used & Proof location\\
+\midrule
+Find a Gaussian direction & Purity gives a nonzero $v$ with
+$v^Tv=0$, $\nabla F_3(v)=0$, $F_2(v)=0$ &
+Section~\ref{sec:frameextraction}\\[4pt]
+Make one coordinate affine linear & The frame test gives $P=Wh(Z,T)+G(Z,T)$ &
+Lemma~\ref{lem:frame}\\[4pt]
+Classify the affine family & One-sided support or the exceptional orbit &
+Section~\ref{sec:affineclassification}\\[4pt]
+Transfer the mixed bound & Weight cancellation or the exact shear source identity &
+Section~\ref{sec:shear}\\
+\bottomrule
+\end{tabular}
+\end{center}
+Formal tools in Section~\ref{sec:formaltools} and analytic comparison
+in Section~\ref{sec:analyticcomparison} support the two classification
+steps. Section~\ref{sec:completion} assembles the conclusions.
+
+The leading cubic has nine projective types. The abbreviated table
+below groups types with the same exclusion argument; the full table
+appears in Section~\ref{sec:frameextraction}. In every singular row,
+the task is to prove that purity supplies a direction passing the
+frame test.
+\begin{center}\small
+\begin{tabular}{@{}p{0.49\textwidth}p{0.43\textwidth}@{}}
+\toprule
+Leading cubic & Argument when the frame test fails\\
+\midrule
+Smooth & Gradient criterion, Corollary~\ref{cor:smoothleading}\\[3pt]
+Nodal; transverse line--conic; nonconcurrent lines &
+Ordinary-node analysis, Corollary~\ref{cor:ordinarycomplete}\\[3pt]
+Cuspidal; tangent line--conic &
+Proposition~\ref{prop:cusptangentcomplete}\\[3pt]
+Three concurrent distinct lines &
+Proposition~\ref{prop:concurrentcomplete}\\[3pt]
+Double line plus a line; triple line &
+Quadratic elimination, Proposition~\ref{prop:repeatedcomplete}\\
+\bottomrule
+\end{tabular}
+\end{center}
+
 The sharpness is visible in a three-term example, not in a large
 calculation. We prove it in Section~\ref{sec:shear}. The difficult part
 is showing that an arbitrary pure ternary cubic can be reduced to the
 families where a direct argument works. Section~\ref{sec:cubic} separates
 that problem from the boundary deduction.
 
-\subsection*{Attribution and the scope of the paper}
-Wilson's Theorem~1 supplies the unrestricted two-variable
-result~\cite{Wilson}. Liu's Theorems~2.1 and~2.2 give the quadratic classification and optimal
-mixed cutoff~\cite{Liu}.
-Long's Proposition~4.1 and Theorem~5.1 supply the cubic four-variable
-and quartic three-variable counterexamples, respectively~\cite{Long}. These are
-credited inputs, not new examples or new binary and quadratic theorems.
-The contribution developed here is a proof of the ternary-cubic theorem,
-its sharp marked cutoff, and the resulting dimension--degree deduction.
-Wilson's and Long's cited works are public preprints; this draft does
-not describe them as peer-reviewed journal articles.
-
-Wilson already obtains the classification by dimension without a degree
-restriction. The finer dimension--degree statement here uses the ternary-cubic
-result. We credit the dimension-only classification to Wilson. A search of the selected primary records
-located the credited binary, quadratic and counterexample results but
-did not establish priority for the assembled boundary. No first-proof
-or exhaustive novelty claim is made in this draft.
-
+\subsection*{Attribution and scope}
+We prove the ternary-cubic normal-form classification and its sharp
+mixed cutoff, and deduce the dimension--degree boundary. Wilson's
+Theorem~1 supplies the unrestricted two-variable result and the
+classification by dimension alone~\cite{Wilson}. The quadratic theorem
+is due to Liu~\cite[Theorems~2.1 and~2.2]{Liu}; we include a short proof
+of the form used here. Long's cubic four-variable and quartic
+three-variable counterexamples are adopted from
+\cite[Proposition~4.1 and Theorem~5.1]{Long}, with their all-order moment
+identities reproduced below.
 
 The analytic Bernstein-ideal and rational-direction mechanisms are
 classical work of Sabbah and Maisonobe; see
@@ -268,6 +323,30 @@ factors. Its $t$-degree is at most
 $2hp+h(q-2p)=hq$. Source differentiation and linearity prove the result.
 \end{proof}
 
+\begin{corollary}[Ternary quadratic normal form]
+\label{cor:quadraticnormal}
+Every pure quadratic in three variables has, in Gaussian coordinates,
+the form
+\[
+ P=Z(\alpha Z+\beta T+\gamma).
+\]
+In particular it is one-sided.
+\end{corollary}
+\begin{proof}
+The preceding proof gives $c=0$, nilpotent symmetric $A$, and
+$\ell^TA^j\ell=0$ for every $j\ge0$. If $A\ne0$, let $k$ be largest
+with $A^k\ne0$. In dimension three this last power has rank one,
+so $A^k=\lambda vv^T$ for a nonzero null vector $v$, and $Av=0$.
+The identity $\ell^TA^k\ell=0$ gives $v^T\ell=0$. Since $\ell$ is
+also null, the one-dimensional nondegenerate quotient
+$v^\perp/\C v$ forces $\ell\in\C v$.
+Choose $Z=v^TX$ and a circular partner $W$. The equation $Av=0$
+makes $P$ independent of $W$, and $\tr A=0$ removes its $T^2$
+coefficient. This is the displayed form. If $A=0$, the null linear
+form $\ell^TX$ can itself be chosen as a multiple of $Z$; the zero
+polynomial is immediate.
+\end{proof}
+
 \section{Two variables, with no degree restriction}
 
 The needed input is Wilson's support theorem~\cite[Theorem~1]{Wilson}:
@@ -375,7 +454,26 @@ Since $\deg W^D=D$, any proposed uniform coefficient smaller than
 three would already fail on this family. This establishes the sharpness
 part of Theorem~\ref{thm:cubic} independently of the general reduction.
 
-\section{Reducing an arbitrary ternary cubic}\label{sec:cubic}
+\begin{lemma}[The exceptional orbit]\label{lem:exceptionalorbit}
+If $d\ne0$, every phase in \eqref{eq:shearfamily} is equivalent to
+$P_*$ under a complex orthogonal linear change and nonzero scalar
+multiplication. If $d=0$, it is one-sided in suitable Gaussian coordinates.
+\end{lemma}
+\begin{proof}
+Apply the null rotation
+\[
+ Z=Z',\qquad T=T'+\lambda Z',\qquad
+ W=W'-\lambda T'-\lambda^2Z'/2,\qquad \lambda=c/a.
+\]
+It preserves $2ZW+T^2$ and changes the phase to
+$aW'+dZ'T'-d^2Z'^3/(2a)$. For $d\ne0$, choose
+$\kappa^2=a/d$, set $Z'=\kappa Z''$, $W'=W''/\kappa$, and
+multiply by $\kappa/a$. The result is $P_*$. When $d=0$, the
+original phase is a pure linear form, so
+Corollary~\ref{cor:quadraticnormal} applies.
+\end{proof}
+
+\section{The two reductions for a ternary cubic}\label{sec:cubic}
 
 The preceding sections prove the easy parts of the boundary and explain
 the sharp constant. The remaining issue is a cubic with no preferred
@@ -423,8 +521,8 @@ is null and whether $F_2$ vanishes there. Cases failing this test are
 excluded by their period behavior. Once a direction passes the test,
 Lemma~\ref{lem:frame} supplies the desired coordinates.
 
-The proof is given after the case lemmas below. Its table covers all
-nine leading types. Full formal frames, regular-rank accounting and
+Section~\ref{sec:frameextraction} proves this statement. Its final table
+covers all nine leading types. Full formal frames, regular-rank accounting and
 uniform actual-cut estimates retain the critical degeneracies and
 contributions at infinity. A finite moment sample is not used to
 infer frame extraction.
@@ -434,7 +532,9 @@ Let
 \[
  P=W(a+bZ+cT+dZ^2+eZT+fT^2)+G(Z,T),\qquad\deg G\leq3.
 \]
-If $P$ is pure, it is safe and satisfies $m>3\deg Q$.
+If $P$ is pure, then, up to a complex orthogonal linear change of
+coordinates and a nonzero scalar multiple, it is one-sided or equal to
+$P_*=W+ZT-Z^3/2$. In particular it is safe and satisfies $m>3\deg Q$.
 \end{proposition}
 
 The proof below reduces the pure cases to the one-sign argument,
@@ -446,10 +546,31 @@ it can turn a decaying period into an apparent constant. It must also
 use the actual period selected by the Gaussian moment functional,
 rather than every solution of an enlarged differential equation.
 
-One substantial part of this classification has a short algebraic proof.
-It is useful both as a proof simplification and as a check on what the
-remaining period analysis must establish.
+The next four sections separate the tools from the two reductions:
+formal arguments in Section~\ref{sec:formaltools}, the affine-coordinate
+classification in Section~\ref{sec:affineclassification}, analytic
+comparison in Section~\ref{sec:analyticcomparison}, and geometric frame
+extraction in Section~\ref{sec:frameextraction}.
 
+\section{Formal tools}\label{sec:formaltools}
+The first tools are algebraic: an obstruction for a cubic Gaussian
+series, a stationary-ball criterion over a valued field, and the
+corresponding criterion with logarithmic volume. They are used in both
+reductions. The analytic interpretation of a seed is developed separately
+in Section~\ref{sec:analyticcomparison}.
+
+\input{formal_lemmas.tex}
+\input{polynomial_stationary_balls.tex}
+\input{punctured_polynomial_frames.tex}
+
+\section{Classification with an affine-linear coordinate}
+\label{sec:affineclassification}
+We now prove Proposition~\ref{prop:wlinear}. The coefficient of $W$
+determines a disjoint set of cases. Most are settled formally; the
+logarithmic case uses the comparison and decay argument of
+Section~\ref{sec:analyticcomparison}.
+
+\input{affine_coordinate_split.tex}
 \subsection{A complete algebraic subcase}\label{sec:algebraic}
 Suppose
 \[
@@ -514,21 +635,39 @@ $b=h'(0)$, $v_0=v(0)$, $u_0=u(0)$ and $r_0=r(0)$, purity in
 Hence $b=v_0=u_0=r_0=0$. Every surviving monomial has strictly positive
 $Z$-minus-$W$ weight, so Lemma~\ref{lem:weight} applies.
 
-This proves Proposition~\ref{prop:wlinear} on the displayed subcase
-without a case table, an analytic limit, or a finite-moment bound.
-The next subsection removes $T^3$ algebraically and also treats the
-linear $T$ coefficient of $W$. A general formal valuation argument then
-closes both the mixed $WT/WZ^2$ chart and the rank-one $WT^2$ family. The subsequent case table is exhaustive. The logarithmic estimate
-is proved on a resolved curve, retaining both its comparison theorem
-and its quantitative contour bounds.
+This proves the classification on the displayed subcase. The following
+arguments remove $T^3$, handle a linear $T$ coefficient of $W$, and
+settle the rank-one and mixed quadratic coefficients. The nondegenerate
+logarithmic branch is excluded in Section~\ref{sec:analyticcomparison}.
 
-\input{formal_lemmas.tex}
-\input{polynomial_stationary_balls.tex}
-\input{punctured_polynomial_frames.tex}
+
+\input{affine_height_cases.tex}
+\input{rank_one_affine_case.tex}
 \input{mixed_formal_exclusion.tex}
+\input{affine_classification_proof.tex}
+
+\section{Analytic comparison and logarithmic exclusion}
+\label{sec:analyticcomparison}
+This section supplies the period interpretation and the nondegenerate
+logarithmic exclusion used above. Comparison identifies the actual
+period; the estimates retain its normalization, full rank and behavior
+at every end.
+
+\input{seed_period_comparison.tex}
 \input{analytic_core.tex}
 
-\subsection{How the two reductions finish the theorem}
+\section{Extracting a Gaussian affine-linear frame}
+\label{sec:frameextraction}
+We prove Proposition~\ref{prop:frameextract} by considering the leading
+projective cubic. Each case either provides the Gaussian direction in
+\eqref{eq:frame} or excludes purity. The final table records the entire
+case split, including lower-degree terms and singular critical sets.
+
+\input{frame_extraction_cases.tex}
+
+\section{The ternary-cubic theorem and the boundary}\label{sec:completion}
+
+\subsection{The sharp mixed cutoff}
 Both Proposition~\ref{prop:wlinear} and the frame-extraction statement,
 Proposition~\ref{prop:frameextract}, are now proved.
 For $\deg P\leq2$, Proposition~\ref{prop:quadratic} gives the result.
@@ -540,7 +679,19 @@ Equation~\eqref{eq:sharp} proves optimality. This is the entire logical
 route from the two reductions to Theorem~\ref{thm:cubic}; a finite
 pure-moment prefix is not needed.
 
-\section{Completing the boundary deduction}
+\subsection{The normal-form conclusion}
+\begin{proof}[Proof of Theorem~\ref{thm:normalforms}]
+For degree at most two, Corollary~\ref{cor:quadraticnormal} gives
+one-sided support. For degree three, Proposition~\ref{prop:frameextract}
+and Lemma~\ref{lem:frame} provide an affine-linear Gaussian coordinate.
+Proposition~\ref{prop:wlinear} then gives one-sided support or the
+exceptional orbit represented by $P_*$. Conversely, one-sided phases
+are pure by Lemma~\ref{lem:weight}, and $P_*$ is pure by
+\eqref{eq:shearsource}. Gaussian linear changes and nonzero scalar
+multiples preserve purity.
+\end{proof}
+
+\subsection{The dimension--degree deduction}
 \begin{proof}[Proof of Theorem~\ref{thm:boundary}]
 Wilson proves the assertion for $n\leq2$ in every degree.
 Proposition~\ref{prop:quadratic} proves it for $d\leq2$ in every
@@ -562,25 +713,27 @@ vanishing: a multiplier of degree $q$ can never expose a nonzero
 moment beyond power $3q$, and the shear shows that power $3q$ itself
 can still occur.
 
-\input{constant_quadratic_fibres.tex}
-
 \section*{Scope and further questions}
+\phantomsection\addcontentsline{toc}{section}{Scope and further questions}
 The dimension--degree theorem classifies where purity always implies
 safety. It does not classify every individual safe phase outside that
 region. The full Gaussian safety-implies-purity question and realization
 of regular transcendental or wild marked systems remain separate.
-The last section identifies another concrete frontier: finite-pole
-cancellation in constant quadratic fibres with defective nonzero
-Jordan blocks.
+Appendix~\ref{sec:constantfibres} records an all-degree consequence of
+quadratic elimination. It is not needed for the boundary deduction.
 
 The proof uses the stated classical comparison and decomposition
 results. They supply representations and full ranks; the quantitative
 bounds are proved separately on compact pieces, necks and tails.
-Symbolic checks do not establish those analytic arguments. This is an
-internally complete proof draft, without independent specialist review,
-formal verification or a claim of priority for the assembled boundary.
+Symbolic checks do not establish those analytic arguments. 
 
+\clearpage
+\appendix
+\input{constant_quadratic_fibres.tex}
+
+\clearpage
 \begingroup\small
+\phantomsection\addcontentsline{toc}{section}{References}
 \begin{thebibliography}{99}
 \bibitem{DVEZ}
 H.~Derksen, A.~van den Essen and W.~Zhao,

@@ -1,0 +1,33 @@
+{
+  "pages": 16,
+  "compiler": "latexmk/pdfLaTeX, TeX Live2023",
+  "compiler_diagnostics": [],
+  "renderer": "MuPDF",
+  "all_pages_rendered": true,
+  "text_issues": [],
+  "visual_review": "PASS: all16 pages inspected through final contact sheets; main title, radial proof and appendix/reference layouts checked; full page7 inspected at readable resolution",
+  "compiler_warnings_and_overfull_boxes": [],
+  "source_sha256": "e1e045b4127e1b22b01bdc8755ca6a27637f2e8674fc22906d28545972704ddb",
+  "pdf_sha256": "0db3e0826260ad1d9643d0cc6a6a2d92009812a3d61fdcd9865fb349f5751dc9",
+  "editable_export_sha256": "e1e045b4127e1b22b01bdc8755ca6a27637f2e8674fc22906d28545972704ddb",
+  "exact_algebra_checks": {
+    "exact_checks": {
+      "degree_8_Jacobian_and_Klein_identity": "PASS",
+      "degree_12_Jacobian_and_Klein_identity": "PASS",
+      "normalizer_polynomial_factorization": "PASS",
+      "symbolic_partial_fraction_identity": "PASS",
+      "radial_normalizations": {
+        "1": "1/30",
+        "2": "4/3465"
+      }
+    },
+    "scope": "Polynomial identities and two normalizations only; main.tex contains the all-order proofs.",
+    "formal_verification": false,
+    "external_review": false
+  },
+  "independent_replay": false,
+  "formal_verification": false,
+  "external_review": false,
+  "external_review_deferred": true,
+  "checks_scope": "Layout, references and exact polynomial identities/normalizations. All-order proofs are written in the paper, not certified by finite tests."
+}

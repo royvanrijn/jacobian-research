@@ -35,7 +35,7 @@
     "proof_simplification_complete": true,
     "source_audit_started": true,
     "final_pdf_ready_for_submission": false,
-    "current_draft_pages": 53,
+    "current_draft_pages": 57,
     "Airy_cubic_height_proof_written": true,
     "linear_WT_case_proof_written": true,
     "mixed_chart_full_formal_proof_written": true,
@@ -72,5 +72,6 @@
   "external_review": false,
   "version": "v011",
   "pages": 53,
-  "completion_scope": "Internal writing and proof-consolidation objective achieved. All explicit paper acceptance criteria checked;no independent/external/formal mathematical verification or submission-readiness claim. Broad general-Gaussian goal remains ACTIVE."
+  "completion_scope": "Internal writing and proof-consolidation objective achieved. All explicit paper acceptance criteria checked;no independent/external/formal mathematical verification or submission-readiness claim. Broad general-Gaussian goal remains ACTIVE.",
+  "editorial_revision": "v012: corrected published Hien-Roucairol theorem numbers, contents/proof map/early classification, separate proof sections and Appendix A."
 }

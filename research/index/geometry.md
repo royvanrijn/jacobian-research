@@ -630,6 +630,7 @@ python3 research/scripts/research.py show ID
 | `G3LINEARWT20261114` | archived programme; proved | [Complete affine-linear W-coefficient cubic face and the mixed WT/WZ2 gate](../jacobian-followup/moment-vanishing-audit/CUBIC_HEIGHT_AIRY_OBSTRUCTION.md) |
 | `GHAARCUBEMON20261116` | archived programme; proved | [Every full Haar complement monodromy block has size at most three,and every size-three block comes from the compact-middle fibre image](../jacobian-followup/moment-vanishing-audit/CUBIC_NILPOTENCE_AND_QUADRATIC_HAAR_LOGARITHMS.md) |
 | `GHAARQUADLOG20261116` | archived programme; proved | [Every original Haar Cauchy period has at most quadratic logarithms,and one finite original marker basis detects all actual motion](../jacobian-followup/moment-vanishing-audit/CUBIC_NILPOTENCE_AND_QUADRATIC_HAAR_LOGARITHMS.md) |
+| `SIC2B33TOPTWOGATE20261117` | archived programme; proved | [Two-pair SIC (3,3): top-two-boundary-jet necessary flag and full axial contraction-zero exclusion](../jacobian-followup/moment-vanishing-audit/CUBIC_TOP_TWO_JET_GATE_AND_FULL_AXIAL_CONTRACTION.md) |
 | `G3CUSPALL20261114` | archived programme; proved | [Complete cuspidal-leading ternary cubic GMC safety and nonisotropic affine pure exclusion](../jacobian-followup/moment-vanishing-audit/CUSPIDAL_AFFINE_EXCLUSION.md) |
 | `G3CUSP10_20261114` | archived programme; proved | [Sharp ten-moment exclusion for homogeneous cuspidal ternary cubics and global prefix lower bound10](../jacobian-followup/moment-vanishing-audit/CUSPIDAL_CUBIC_SHARP_THRESHOLD.md) |
 | `G3CUSPLATTICE20261115` | archived programme; proved | [Structured cusp rank-one residue gives cusp125, including constant-D109](../jacobian-followup/moment-vanishing-audit/CUSP_RANK_ONE_LATTICE_GLOBAL129.md) |
@@ -1132,6 +1133,7 @@ python3 research/scripts/research.py show ID
 | `GZEROWEIGHTRINGSAFE20261116` | archived programme; proved | [All zero-containing triples satisfy MZ over EVERY commutative C-algebra,with exact balanced-product nilpotence and marker bounds](../jacobian-followup/moment-vanishing-audit/WEIGHTED_TORUS_COVERS_AND_ALL_ZERO_WEIGHT_TRIPLES.md) |
 | `GZEROWEIGHTTRIPLES20261116` | archived programme; proved | [ALL three-weight sectors containing zero and all FIELD recompositions are safe on BOTH exceptional quotients in every degree](../jacobian-followup/moment-vanishing-audit/WEIGHTED_TORUS_COVERS_AND_ALL_ZERO_WEIGHT_TRIPLES.md) |
 | `GMCSOURCEHOMGEN20261116` | archived programme; proved | [Whole Gaussian source and actual-jet certificates give general pointwise decisions and numerical all-marker cutoffs](../jacobian-followup/moment-vanishing-audit/WHOLE_GAUSSIAN_SOURCE_HOM_AND_EFFECTIVE_CUTOFFS.md) |
+| `GHAARUNIFIEDRADIAL20261117` | archived programme; proved | [One binary-form construction supplies an explicit positive radial identity and a standalone proof of the full Mathieu classification](../jacobian-followup/moment-vanishing-audit/papers/exceptional-mathieu/README.md) |
 
 ## Other source notes and navigation
 
@@ -1139,7 +1141,6 @@ These documents are not canonical sources of a registered claim. They include wo
 
 - [Rank labels require a minimal branch polynomial](../jacobian-followup/moment-vanishing-audit/ALGEBRAIC_GAUSSIAN_ENCODING_INPUT_BOUNDARY.md)
 - [Bernstein credit, formal extensions and novelty boundaries](../jacobian-followup/moment-vanishing-audit/BERNSTEIN_CLASSICAL_CREDIT_AND_FORMAL_EXTENSIONS.md)
-- [The top two boundary jets and the full axial contraction-zero stratum](../jacobian-followup/moment-vanishing-audit/CUBIC_TOP_TWO_JET_GATE_AND_FULL_AXIAL_CONTRACTION.md)
 - [Field-valued safety: radical covers and generic component certificates](../jacobian-followup/moment-vanishing-audit/FIELD_COVER_AND_GENERIC_COMPONENT_STRATEGY.md)
 - [General Gaussian and formal constant-coefficient research ownership](../jacobian-followup/moment-vanishing-audit/GENERAL_GAUSSIAN_FORMAL_RESEARCH_OWNERSHIP.md)
 - [Current general Gaussian research frontier](../jacobian-followup/moment-vanishing-audit/GENERAL_GAUSSIAN_RESEARCH_FRONTIER.md)

@@ -1,0 +1,73 @@
+\subsection{Closing the full rank-one $WT^2$ family}\label{sec:rankoneformal}
+
+\begin{proposition}\label{prop:rankoneformal}
+For $f\ne0$ and $\deg G\leq3$, the polynomial
+\[
+ P=W(a+bZ+cT+fT^2)+G(Z,T)
+\]
+is pure if and only if $b=0$ and $G=0$. Its pure members obey
+$m>\deg Q$.
+\end{proposition}
+\begin{proof}
+Put $q=1-bt$ and $A(T)=a+cT+fT^2$. Exact circular contraction
+gives
+\[
+ J(p)=\frac1q\E_T\!\left[p(T)
+             \exp\{tG(tA/q,T)\}\right],\qquad J(1)=\Phi_1.
+\]
+Gaussian integration by parts says that $J$ annihilates
+$\partial_T+\varphi_T$; direct parameter differentiation makes it
+horizontal for the polynomial phase and normalization
+\[
+ \varphi=tG(tA/q,T)-T^2/2,\qquad h=1/q.
+\]
+The phase has degree at least two, since it equals $-T^2/2$ at $t=0$.
+
+Suppose first $b=0$ and write $G=\sum_{j\geq0}Z^jG_j(T)$.
+If a term $A^jG_j$ attains the actual degree $D\geq2$ of the phase,
+the leading coefficient is a polynomial in $t$ containing a
+nonzero positive power. Distinct $j$ give distinct powers $t^{j+1}$,
+so they cannot cancel identically. Its order at infinity is negative,
+whereas $v_\infty(h)=0$. Criterion~\eqref{eq:leadingcriterion}
+excludes purity. Because $\deg A=2$, every nonzero $G_j$ with
+$j\geq1$ attains some degree at least two. The only remaining
+possibility is $G=\alpha T+\beta$. Its exact unit series is
+$\exp(\beta t+\alpha^2t^2/2)$, which is one only if $G=0$.
+
+Suppose now $b\ne0$. Divide $G$ by $S=bZ+A(T)$ as a polynomial
+in $T$:
+\[
+ G=R_0(Z)+TR_1(Z)+S(\alpha Z+\beta T+\gamma).
+\]
+The remainder has basis $1,T,Z,ZT,Z^2,Z^2T,Z^3$. At $Z=-A/b$
+these monomials have distinct leading degrees $0,1,2,3,4,5,6$.
+Thus if $V(T)=R(-A/b,T)$ has degree $n$, then
+$\deg R(sA,T)\leq n$ for every scalar $s$; a constant $V$
+forces $R$ to be that same constant. Write $g=tA/q$. The phase is
+exactly
+\[
+ tR(g,T)+\alpha g^2+\beta gT+\gamma g-T^2/2.
+\]
+Since $g=-A/b+O(t^{-1})$, its first term is $tV+O(1)$, with
+all these remainders of degree at most $n$.
+
+If $\alpha\ne0$, the limiting remaining phase has degree four
+with leading coefficient $\alpha f^2/b^2$. If $\alpha=0$,
+$\beta\ne0$, it has degree three with leading coefficient
+$-\beta f/b$. Otherwise its quadratic coefficient tends to
+$-\gamma f/b-1/2$. A leading term from $tV$ has valuation $-1$;
+a higher-degree nonzero limiting term has valuation zero.
+The only flattened case has
+$\alpha=\beta=0$, $\gamma=-b/(2f)$. Its exact quadratic
+coefficient outside $tR$ is $-1/(2q)$, of valuation one.
+Thus in every case the actual leading coefficient $a_D$ has
+$v_\infty(a_D)\leq1$. This also covers $V$ constant or linear.
+But $v_\infty(h)=1$ and $D\geq2$, so
+$Dv_\infty(h)-v_\infty(a_D)\geq D-1>0$.
+Purity is impossible by the same criterion.
+
+Conversely $W A(T)$ has strictly negative circular weight.
+For a monomial $Z^iW^jT^k$, a mixed moment can be nonzero only
+when the number of $W$ factors balances the number of $Z$ factors;
+in particular it vanishes for $m>\deg Q$.
+\end{proof}

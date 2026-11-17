@@ -1,5 +1,14 @@
 # Research memory
 
+The [ruling-six residual coverage](jacobian-followup/affine-complements/RULING_SIX_FINITE_END_COVERAGE_AND_QUADRATIC_BOUNDARY_ALGEBRA.md)
+audits every finite Mroot/infinity end and leaves3 offM pole-face types.
+A central degree2 restriction has an exact quadratic factor after the2+2
+whole charts, with actual multiplication and a forced original ramified
+prime. Its normalized residue lambda2=P and conductor H(P)C[lambda]
+retain all finite fibres. Global nonnilpotence and finite conductor
+nilpotence are kept distinct from HC4 tail powers. 88 exact controls pass;
+ruling6/higher/trivial-deck and fullS marked integrality remain open.
+
 The [polynomial-residue ramified-line theorem](jacobian-followup/affine-complements/POLYNOMIAL_RESIDUE_RAMIFIED_LINE_AND_QUADRATIC_RULING_FIVE_CLOSURE.md)
 closes every actual quadratic ruling-five target, including all bad-divisor
 and affine-response alternatives. A simple lift over C[p] keeps the boundary
@@ -894,6 +903,13 @@ lift must be retained, and finite-group characters cannot kill its
 already invariant obstruction. Both full exceptional MZ cases remain
 OPEN; the whole-quotient target is actual cycle vanishing using the
 right-invariant regular algebra. Review remains deferred.
+
+The [standalone Mathieu paper](jacobian-followup/moment-vanishing-audit/papers/exceptional-mathieu/README.md)
+gives a16page proof independent of the research notes. Its new f4=(XY)^2
+radial identity has beta_m=(2m/(3m+1))(2m)!(4m)!/(6m)!>0 and replaces
+the separate radial theorem and normalizer circuit. The same construction
+handles f8/f12, with all new steps and the full group reduction included.
+PDF/LaTeX and exact algebra/layout checks are linked; external review remains deferred.
 
 The [full reductive Mathieu classification](jacobian-followup/moment-vanishing-audit/FULL_REDUCTIVE_MATHIEU_CLASSIFICATION_AND_RECOMPOSITION_FAILURES.md)
 now includes DISCONNECTED G: ker Reynolds is Mathieu--Zhao iff

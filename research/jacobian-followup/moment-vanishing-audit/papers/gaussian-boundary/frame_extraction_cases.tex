@@ -1,0 +1,47 @@
+\input{gradient_exclusion.tex}
+\input{ordinary_finite_exclusion.tex}
+\input{hyperbolic_suspension.tex}
+\input{uniform_cut_decay.tex}
+\input{ordinary_axis_exclusion.tex}
+\input{bounded_regular_reduction.tex}
+\input{cusp_tangent_exclusion.tex}
+\input{concurrent_regular_exclusion.tex}
+\input{repeated_line_exclusion.tex}
+
+\subsection{The geometric case split for frame extraction}
+
+For a cubic of degree exactly three, either the frame test
+\eqref{eq:frame} succeeds, or it does not. In the latter case,
+the projective curve $F_3=0$ belongs to exactly one of these types:
+\begin{center}\small
+\begin{tabular}{@{}p{0.33\textwidth}p{0.56\textwidth}@{}}
+\toprule
+Leading curve & No-frame exclusion\\
+\midrule
+Smooth cubic & Proved by Corollary~\ref{cor:smoothleading}; no pure phase\\
+Irreducible nodal cubic & Completely excluded by Corollary~\ref{cor:ordinarycomplete}\\
+Irreducible cuspidal cubic & Proved by Proposition~\ref{prop:cusptangentcomplete}\\
+Line and smooth conic, transverse & Completely excluded by the same corollary\\
+Line and smooth conic, tangent & Proved by the same proposition\\
+Three nonconcurrent lines & Completely excluded by the same corollary\\
+Three concurrent distinct lines & Proved by Proposition~\ref{prop:concurrentcomplete}\\
+Double line and a distinct line & Proved by Proposition~\ref{prop:repeatedcomplete}\\
+Triple line & Proved by Proposition~\ref{prop:repeatedcomplete}\\
+\bottomrule
+\end{tabular}
+\end{center}
+The list is exhaustive by factorization of a plane cubic over $\C$.
+Every row has now been proved, including its lower terms and all
+critical degeneracies. In the repeated-line rows the singular set
+is a whole projective line; the proof checks its isotropic directions
+rather than choosing an arbitrary point on it.
+
+\begin{proof}[Proof of Proposition~\ref{prop:frameextract}]
+Suppose the frame test fails for a pure polynomial of degree three.
+Its leading curve is one of the nine types in the table. The smooth
+case is excluded by the gradient criterion, and the ordinary-node
+cases by Corollary~\ref{cor:ordinarycomplete}. Propositions
+\ref{prop:cusptangentcomplete}, \ref{prop:concurrentcomplete} and
+\ref{prop:repeatedcomplete} force a frame in every other case.
+All possibilities give a contradiction. This proves frame extraction.
+\end{proof}

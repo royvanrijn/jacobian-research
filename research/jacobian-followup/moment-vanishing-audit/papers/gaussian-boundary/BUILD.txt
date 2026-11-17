@@ -1,9 +1,7 @@
-Final internal proof draft v011,17 November2026.
-53 pages. Compile manuscript.tex with pdflatex twice or until references stabilize.
-All17 input .tex files required;no external research-note input.
-No overfull boxes or undefined references. Harmless math-bookmark warnings only.
-Full PDF rendered and visually inspected;see pdf_quality_check.json.
-Written proof audit:completion_audit_v011.json. No new mathematical checker run.
-Independent replay,formal verification,external review and submission readiness all false.
-No priority claim;broader general-Gaussian goal remains active.
-All prior versions/checkers/certificates retained;never rerun successful sealed checkers.
+Editorial revision v012, 17 November 2026.
+57 pages. Compile manuscript.tex with pdflatex until cross-references stabilize (three passes from a clean directory).
+All 23 TeX files listed by editorial_audit_v012.json are required; no external research-note inputs.
+One contents page and 46 PDF bookmarks. No overfull boxes or undefined references.
+All pages rendered; changed pages inspected. See pdf_quality_check.json and editorial_audit_v012.json.
+The v011 mathematical proof audits are retained unchanged; this editorial revision does not change their assurance status.
+All prior versions, checkers and certificates are retained.
