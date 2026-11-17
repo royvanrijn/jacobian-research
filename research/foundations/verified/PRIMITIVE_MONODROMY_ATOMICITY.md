@@ -226,73 +226,10 @@ therefore makes `G` or `H` an automorphism.  Atomicity is consequently
 preserved by polynomial left--right equivalence and by stable polynomial
 left--right equivalence.
 
-## 6. Universal weighted consequence
+## Current applications
 
-Let `H(W)` be any admissible weighted seed of degree `N\ge3`.  The
-[weighted-seed theorem](WEIGHTED_SEED_THEOREM.md) makes its associated map
-`F_H:\mathbb A^3\to\mathbb A^3` Keller of geometric degree `N`, with generic
-inverse equation
-
-\[
- H(W)-sW+t=0.
-\]
-
-The [universal symmetric-monodromy theorem](UNIVERSAL_SYMMETRIC_MONODROMY.md)
-gives geometric monodromy `S_N` for every such `H`, without a genericity
-hypothesis.  The theorem above therefore yields
-
-\[
-\boxed{\text{Every admissible weighted Keller map of degree }N\ge3
-\text{ is absolutely and stably atomic.}}               \tag{9}
-\]
-
-There is a particularly sparse explicit seed in every degree:
-
-\[
- H_N(W)=\frac{W^2-W^N}{N-2}.                            \tag{10}
-\]
-
-Indeed,
-
-\[
- H_N(0)=H_N'(0)=H_N(1)=0,\qquad H_N'(1)=-1,
-\]
-
-\[
- H_N''(1)=-(N+1),\qquad
- a_0=-\frac{N}{N-1}.
-\]
-
-Thus (10) is admissible for every `N\ge3`.  Put
-
-\[
- u=1+xy,\qquad
- \gamma=1-\frac{N}{N-1}xy+x^2z.
-\]
-
-The associated determinant-one map is
-
-\[
-\boxed{
- F_N=
- \left(
- \frac{(N-2)u+u^2-(N-1)u^N\gamma^{N-2}}{(N-2)x^2},
- \frac{(N-2)+2u-Nu^{N-1}\gamma^{N-2}}{(N-2)x},
- x\gamma
- \right).
-}                                                       \tag{11}
-\]
-
-Weighted polynomiality says that the first two displayed numerators are
-divisible by `x^2` and `x`, respectively.  Hence (11) is a polynomial map.
-For every `N\ge3`,
-
-\[
- \det DF_N=1,\qquad
- \deg_{\mathrm{geom}}F_N=N,\qquad
- \operatorname{Mon}_{\mathrm{geom}}(F_N)=S_N,
-\]
-
-and `F_N` and every stabilization of it are atomic.  Taking `N=12` recovers
-the explicit composite-degree map in
-[the degree-twelve certificate](INDECOMPOSABLE_COMPOSITE_DEGREE.md).
+The [current polynomial-profile theorem](../../jacobian/universal-keller-structure/PROOF.md)
+applies this criterion to the retained universal Keller construction.
+Primitive geometric monodromy controls polynomial factorization after the
+stabilizations and constant extensions proved above; it does not classify
+all maps with the same degree.

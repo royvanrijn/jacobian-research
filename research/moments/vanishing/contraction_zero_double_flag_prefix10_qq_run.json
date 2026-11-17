@@ -1,7 +1,0 @@
-{
-  "exit_code": 0,
-  "elapsed_seconds": 0.005821694969199598,
-  "source_sha256": "b37cfc066d08f61fb9a986d940e3ab85667d185989c33ff89808929f244fa523",
-  "output_sha256": "ef3c8a1651a841e8ae70f6260b28c44e8a3fa2dd43db50c1f8c56f670642a786",
-  "status": "inspect output; input only until proof and exact checks"
-}

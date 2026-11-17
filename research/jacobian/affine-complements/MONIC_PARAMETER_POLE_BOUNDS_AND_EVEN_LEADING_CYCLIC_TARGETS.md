@@ -2,9 +2,7 @@
 
 PF2RULED149. 17 November 2026. ALL degrees over C.
 
-The Newton support restriction of
-[PF148](CLOSED_NEWTON_FACES_AND_GENERIC_PARAMETER_DERIVATIVE.md) can be
-removed for a much larger class. On EVERY quadratic MX0 model and S2,
+On every quadratic source-image model in the stated class and on S2,
 consider
 
     P=B(u,z)+w*A(u,z),
@@ -233,10 +231,10 @@ of one branch are not counted as three unramified points.
 
 Every quadratic MX0 model and S2 has the complete smooth affine
 source image and whole-plane cover retained in
-[MX0](../../hessian/hc4-triangular-graphs/LOGARITHMIC_DESCENT_AND_CYCLIC_EXACT_SOURCE_IMAGES.md).
+the [complete quadratic source-image presentation](CANONICAL_DECK_JET_FIELDS_AND_RATIONAL_POLE_ATLAS_COVERAGE.md#7-complete-quadratic-image-presentation-beyond-mx0).
 The pulled-back volume is a nonzero constant multiple of the source
 plane volume, as retained in
-[PF146](HOLOMORPHIC_GENERIC_FIBRES_AND_NONLINEAR_CYCLIC_TARGET_EXCLUSION.md).
+the explicit source pullback in that presentation.
 Consequently (1)--(3) exclude ACTUAL target coordinates, even
 when their hypothetical companion does not descend from the
 whole plane source field to the source-image field.

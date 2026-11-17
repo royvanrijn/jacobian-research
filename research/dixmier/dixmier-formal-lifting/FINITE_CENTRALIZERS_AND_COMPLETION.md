@@ -198,9 +198,8 @@ No h-pole correction or new spatial completion is needed.
 For E the actual scalar finite-PBW algebra, this is a full bounded
 quantum lift, so [QFL2](BOUNDED_REALIZATION.md) applies to a noninvertible
 classical map. For a finite projective corner it supplies a full corner
-action; the separate hypotheses of
-[QMC1](FINITE_GRAPH_CARRIERS_AND_MATRIX_REALIZATION.md) then give its
-matrix conclusion. Neither case constructs the required Long input.
+action. This does not construct the required Long input or supply a
+scalar free frame for an arbitrary projective carrier.
 
 ## A certificate from leading Poisson geometry
 
@@ -323,7 +322,7 @@ arguments, the full leading-symbol certificate and the Keller
 boundary are written proofs. No independent theorem replay, formal
 verification, external review or novelty priority is asserted.
 
-The next actual input must consist of a finite commuting Long pair,
+The missing construction consists of a finite commuting Long pair,
 h-regular individual conjugates preserving the prescribed classical
 tuple, and either centralizer module finiteness or a complete
 leading-symbol certificate. QST1 already excludes the retained

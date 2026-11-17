@@ -1,6 +1,5 @@
 {
   "claim": "PF2RULED156",
-  "previous_goal_turn": "progress: PF155 complete v2 quintic graph coverage and two conjugate residual classes; PASS61/source hashes revalidated",
   "retained_sha256": {
     "jacobian/affine-complements/QUINTIC_GRAPH_COVERAGE_AND_TWO_CONJUGATE_TRACE_CLASSES.md": "48bc761e25d9ccf81a8ce8b66695fa842e7bdee249e7eec211e18cfda5b0a085",
     "jacobian/affine-complements/quintic_trace_coverage_receipt.json": "2e8f30c7cc36c7f466b0853f0cbbeeff41cd31bd8918249c3497f7af99b10978",

@@ -1,9 +1,0 @@
-{
-  "status": "completed",
-  "characteristic": 65521,
-  "time_limit_seconds": 35,
-  "elapsed_seconds": 0.852,
-  "input_sha256": "94f7818747c4cbf8c52efca7a048ac188aa0d654af91f78a3f259a573fef0ed6",
-  "output_sha256": "188a15316aff429b9ac437b2df46fb069c0896c304ac4644148b95e30dd59b14",
-  "conclusion": "NO EXCLUSION CLAIM unless exact characteristic-zero output succeeds and full normalization is checked."
-}

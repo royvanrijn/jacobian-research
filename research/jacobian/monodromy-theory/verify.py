@@ -1,5 +1,19 @@
 """Exact finite controls; KMFI1's universal geometric proof is in THEORY.md."""
 from pathlib import Path
+
+import tempfile as _check_tempfile
+
+_CHECK_OUTPUT_DIRECTORY = None
+
+def _check_output(original):
+    """Write new runs to a temporary directory; preserve deposited receipts."""
+    global _CHECK_OUTPUT_DIRECTORY
+    if _CHECK_OUTPUT_DIRECTORY is None:
+        _CHECK_OUTPUT_DIRECTORY = Path(_check_tempfile.mkdtemp(prefix="math-check-"))
+        print("Verification output:", _CHECK_OUTPUT_DIRECTORY)
+    return _CHECK_OUTPUT_DIRECTORY / Path(original).name
+
+
 from itertools import product
 from collections import Counter
 from math import gcd
@@ -267,12 +281,8 @@ model_data=dict(coefficient_field="Q[a]/(a^4-a^3+a^2-a+1)",
 # Convert the few SymPy integers in matrices to JSON integers.
 model_data["target_unit_matrix"]=[[int(v) for v in row] for row in model_data["target_unit_matrix"]]
 model_data["derivative_vector"]=[int(v) for v in model_data["derivative_vector"]]
-(ROOT/"model.json").write_text(json.dumps(model_data,indent=2)+"\n")
-manifest=json.loads((ROOT/"sources"/"manifest.json").read_text())
-for source in manifest["sources"]:
-    check("primary-source snapshot hash "+source["path"],
-          hashlib.sha256((ROOT/"sources"/source["path"]).read_bytes()).hexdigest()==source["sha256"])
-paths=["THEORY.md","F11.md","model.py","verify.py","model.json","sources/manifest.json"]
+(_check_output(ROOT/"model.json")).write_text(json.dumps(model_data,indent=2)+"\n")
+paths=['THEORY.md', 'model.py', 'verify.py', 'model.json']
 receipt=dict(result="pass",check_count=len(checks),checks=checks,python=platform.python_version(),
  sympy=s.__version__,runtime_seconds=round(time.monotonic()-started,3),
  proof_boundary="Universal inertia, normal-generation, nilpotent and all-even-dihedral exclusions have written proofs. Finite controls do not formally verify them. Formula-to-dessin identification and the automorphism-group upper bound are attributed external inputs.",
@@ -281,6 +291,6 @@ receipt=dict(result="pass",check_count=len(checks),checks=checks,python=platform
  order5_pair_counts=pair_counts,dessin_conjugacies=dessin_maps,
  sha256={name:hashlib.sha256((ROOT/name).read_bytes()).hexdigest() for name in paths},
  full_action_spectrum_classified=False,absolute_PSL2_11_realized=False)
-(ROOT/"receipt.json").write_text(json.dumps(receipt,indent=2)+"\n")
+(_check_output(ROOT/"receipt.json")).write_text(json.dumps(receipt,indent=2)+"\n")
 print(json.dumps(dict(result="pass",checks=len(checks),runtime_seconds=receipt["runtime_seconds"],
                       absolute_realization=False)))

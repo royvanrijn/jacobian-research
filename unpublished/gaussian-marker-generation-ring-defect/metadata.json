@@ -4,15 +4,16 @@
     "name": "Roy van Rijn",
     "orcid": "0009-0000-2808-0645"
   },
-  "summary": "Examines the coefficient-ring obstruction in marker-generation arguments for Gaussian moments.",
+  "summary": "Computes the exact coefficient-ring defect for marker generation in the Gaussian family Y^2+bY, including nilpotent and field specializations.",
   "published": false,
   "status": "partial-draft",
   "source": "main.tex",
   "pdf": "gaussian_marker_generation_ring_defect.pdf",
-  "build": "latexmk -pdf -interaction=nonstopmode -halt-on-error main.tex",
-  "verification": "A focused obstruction note with a local exact verification record; it is not a general moment theorem.",
+  "build": "latexmk -pdf -jobname=gaussian_marker_generation_ring_defect -interaction=nonstopmode -halt-on-error main.tex",
+  "verification": "Written universal quotient calculation; current source/PDF identities and build review are recorded in verification.json. Independent mathematical review is pending.",
   "next_steps": [
-    "Review the obstruction and its implications for the wider moment programme."
+    "Review the source-kernel calculation over arbitrary Q-algebras and the idempotent criterion.",
+    "Compare the specialization defect with the coefficient conditions in base-marker generation."
   ],
   "catalogued_on": "2026-11-17"
 }

@@ -45,3 +45,6 @@ tmp/
 **/gao-f7-three-point-certificate/local-proof-journal-*.jsonl
 **/gao-f7-three-point-certificate/cubic-six-rank-dag.json.gz
 **/gao-f7-three-point-certificate/reconstruction-state.pkl
+
+# Local rollback snapshots used by active manuscript reviews.
+/unpublished/**/versions/

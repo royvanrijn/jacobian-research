@@ -1,9 +1,0 @@
-{
-  "boundary_equations": 5,
-  "case": "mu-zero",
-  "input_sha256": "bbd89c72e963d22817eaaec08ffccf465187fdaf4463e18ed214dd5b5f9bc410",
-  "mode": "linear",
-  "seconds": 0.105,
-  "source_sha256": "10a4584fac65b3668ebc70e5b73db60a0caf796de1f9bb9f0517a172dbabe5c3",
-  "status": "primary-boundary-basis"
-}

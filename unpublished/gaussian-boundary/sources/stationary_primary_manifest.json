@@ -10,8 +10,14 @@
     {
       "file": "sources/wall_puiseux_chapter_record.html",
       "url": "https://www.cambridge.org/core/books/abs/singular-points-of-plane-curves/puiseux-theorem/430DD12CCBE2AE3C9729C7783E3BDDC3",
-      "scope": "Publisher chapter record and preview explicitly distinguish formal Newton-Puiseux from convergence. Book2004 Chapter2 pp15-38,DOI10.1017/CBO9780511617560.003. Full paywalled chapter not claimed inspected.",
+      "scope": "Historical background preview only; the active formal Puiseux input is now sourced to the inspected Mannaa-Coquand Corollary 1.10. No claim to have read the paywalled full chapter.",
       "sha256": "8cc8d18f547cd5d7d2c34574506885b2ce5dffdb8dbd6269ad9686c8277806f8"
+    },
+    {
+      "file": "sources/mannaa_coquand_1304_6770v2.pdf",
+      "url": "https://arxiv.org/pdf/1304.6770v2",
+      "sha256": "cde1f3a24e0a1c7838b41dad5d9c9cedb6cda6e64e00d06afd23279641a3ad8c",
+      "scope": "Section 1, Theorem 1.9 and Corollary 1.10 (printed pp. 6-7), including the Laurent-denominator reduction and proof. Applied to separable minimal polynomials over C((r)); characteristic zero supplies separability, and a common multiple of the finitely many root denominators gives one cover. No convergence assumption or arbitrary-ring conclusion."
     }
   ],
   "novelty_assessed": false,

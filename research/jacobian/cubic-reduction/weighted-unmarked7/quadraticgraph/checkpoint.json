@@ -1,8 +1,0 @@
-{
-  "boundary_equations": 8,
-  "input_sha256": "db7d3c24173b1a6316081da8b60b5700cb63a81eae3c118467e434f9e4dfc6b7",
-  "mode": "quadraticgraph",
-  "seconds": 0.826,
-  "source_sha256": "f06044f880c7eed5c502156e95c8f65723c72e2e649d32e15e09bad4e035a12d",
-  "status": "primary-boundary-basis"
-}

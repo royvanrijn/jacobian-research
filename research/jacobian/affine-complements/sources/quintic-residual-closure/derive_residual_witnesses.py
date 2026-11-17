@@ -2,6 +2,20 @@
 The two conjugates are treated together modulo Q(rho), not sampled.
 """
 from pathlib import Path
+
+import tempfile as _check_tempfile
+
+_CHECK_OUTPUT_DIRECTORY = None
+
+def _check_output(original):
+    """Write new runs to a temporary directory; preserve deposited receipts."""
+    global _CHECK_OUTPUT_DIRECTORY
+    if _CHECK_OUTPUT_DIRECTORY is None:
+        _CHECK_OUTPUT_DIRECTORY = Path(_check_tempfile.mkdtemp(prefix="math-check-"))
+        print("Verification output:", _CHECK_OUTPUT_DIRECTORY)
+    return _CHECK_OUTPUT_DIRECTORY / Path(original).name
+
+
 from itertools import permutations
 import json,time
 import sympy as S
@@ -65,5 +79,5 @@ if __name__=='__main__':
     assert S.expand(wp-U-c*co_c-f*co_f-Q*co_Q)==0
     out=dict(parameters=[str(v) for v in z['params']],wc=str(z['wc']),wp=str(wp),unit_residue=str(U),
              coefficient_c=str(co_c),coefficient_f=str(co_f),coefficient_Q=str(co_Q),elapsed_seconds=z['elapsed_seconds'])
-    Path(__file__).with_name('residual_witness_certificate.json').write_text(json.dumps(out,indent=2)+'\n')
+    _check_output(Path(__file__).with_name('residual_witness_certificate.json')).write_text(json.dumps(out,indent=2)+'\n')
     print(json.dumps(dict(wc=str(z['wc']),wp_terms=len(S.Poly(wp,*z['params']).terms()),elapsed_seconds=z['elapsed_seconds'],decomposition_exact=True)))

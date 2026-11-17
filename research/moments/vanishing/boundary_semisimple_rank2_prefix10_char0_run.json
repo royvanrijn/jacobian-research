@@ -1,9 +1,0 @@
-{
-  "status": "TIMEOUT",
-  "characteristic": 0,
-  "time_limit_seconds": 35,
-  "elapsed_seconds": 35.042,
-  "input_sha256": "be3579bf0dc65f2cd5f42863256ca717f170d7e67e75653dd150fa7b0a288fd7",
-  "output_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
-  "conclusion": "NO EXCLUSION CLAIM unless exact characteristic-zero output succeeds and full normalization is checked."
-}

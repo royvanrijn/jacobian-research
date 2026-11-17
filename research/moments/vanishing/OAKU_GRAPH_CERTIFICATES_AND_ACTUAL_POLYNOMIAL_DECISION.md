@@ -9,9 +9,9 @@ or for the generalized Bernstein algorithms. See the
 
 For EVERY rational polynomial phase of positive degree and EVERY nonzero
 zero-constant polynomial symbol, in ANY number of variables, the
-[generator](algebraic_bernstein_generator.py) constructs the two valid
-Bernstein certificates required by the
-[finite slope selector](EFFECTIVE_BERNSTEIN_SLOPE_SELECTION_AND_CUTOFFS.md).
+[generator](algebraic_bernstein_generator.py) constructs two valid Bernstein certificates.
+The [whole-source cutoff proof](WHOLE_GAUSSIAN_SOURCE_HOM_AND_EFFECTIVE_CUTOFFS.md)
+explains how a checked recurrence yields numerical bounds for original markers.
 It retains the operators, scalar torsion factor, explicit graph generators,
 left-ideal membership witnesses and uniform specialization indices. A
 separate sparse Weyl calculation checks the identities against the ORIGINAL
@@ -26,8 +26,7 @@ generator for arbitrary nonconvergent formal coefficient oracles.
 
 See the [checker](verify_algebraic_bernstein_generator.py),
 [receipt](algebraic_bernstein_generator_verification.json),
-[example](algebraic_bernstein_examples/unary_homogeneous/certificate.json),
-and [source audit](algebraic_bernstein_generator_source_audit.json).
+[example](algebraic_bernstein_examples/unary_homogeneous/certificate.json)..
 
 ## 1. The explicit Fourier exponential module maps to the actual image
 
@@ -284,30 +283,16 @@ exercises the pipeline and CLI. The backend itself does not assume or
 decide all-positive purity; --pure supplies that premise when a linear
 cutoff is requested. A time limit of0 disables the computational cap.
 
-## 8. Attribution, scope and remaining Gaussian work
+## 8. Attribution and scope
 
 Sabbah and Maisonobe receive credit for the classical analytic/convergent
-Bernstein rational-slope mechanism; Oaku for the generalized algorithms.
-Our polynomial implementation is an application and retained certificate
-construction, not a new priority claim. The separately scoped arbitrary
-NONCONVERGENT formal-symbol extension uses MN1991's formal setting and
-actual-module descent; the all-Q-algebra result uses constructible and
-nilpotent descent. Those scopes are isolated in the credit note and
-remain internal proofs, not established novelty claims.
+Bernstein rational-slope mechanism, and Oaku for the generalized algorithms.
+This polynomial implementation applies those inputs; it does not establish
+novelty or independent verification.
 
-The mathematical construction extends over effectively presented
-finitely generated characteristic-zero coefficient fields with the
-required exact field and Q-linear-relation operations. The executable
-backend here is over Q. Formal-unit invariance can transport zero
-predicates from a supplied polynomial representative; no algorithm
-recognizing such a representative for arbitrary formal input is supplied.
-All-ring rational-slope generation is not asserted.
-
-This closes finite rational polynomial certificate generation and its
-uniform-specialization input to the selector. Remaining general Gaussian
-work includes the actual bridges and surviving classifications at their
-full scope, coefficient-family/ordinary-ideal algorithms and least-cutoff
-questions, and effective algebraic/formal presentations beyond finite
-polynomial symbols. The coefficient-oracle impossibility remains valid.
-The user's active goal is general Gaussian closure; this milestone does
-not complete it or settle the separately owned exceptional MZ cases.
+The construction extends mathematically over effectively presented finitely
+generated characteristic-zero fields with the required exact operations.
+The executable backend here is over Q. No algorithm recognizing polynomial
+representatives for arbitrary formal input, all-ring rational-slope
+generation, least cutoff or complete Gaussian normal-form classification
+is asserted.

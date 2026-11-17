@@ -28,7 +28,7 @@ from itertools import combinations
 
 import sympy as sp
 
-from explore_three_real_gmc_sparse_supports import (
+from sparse_supports import (
     Candidate,
     canonical_support,
     coefficient_charge,

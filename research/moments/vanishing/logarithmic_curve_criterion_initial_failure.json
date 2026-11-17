@@ -1,8 +1,0 @@
-{
-  "terminal": true,
-  "completed": false,
-  "exit_code": 1,
-  "input_sha256": "18c70f8df7cbb7a46c0903db830b6670fe78197743116d4faa065d828f2c5806",
-  "stdout": "",
-  "stderr": "Traceback (most recent call last):\n  File \"/home/royvanrijn/src/jacobian-research/research/moments/vanishing/logarithmic_curve_criterion_initial_input.py\", line 54, in <module>\n    result = run()\n             ^^^^^\n  File \"/home/royvanrijn/src/jacobian-research/research/moments/vanishing/logarithmic_curve_criterion_initial_input.py\", line 26, in run\n    assert S.cancel(full - actual) == 0\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError\n"
-}

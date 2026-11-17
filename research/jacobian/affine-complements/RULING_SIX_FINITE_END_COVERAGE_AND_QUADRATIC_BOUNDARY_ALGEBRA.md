@@ -2,20 +2,19 @@
 
 PF2RULED162. 17 November 2026. Actual complex polynomial PLANE Keller maps.
 
-The previous goal turn made progress: [PF161](POLYNOMIAL_RESIDUE_RAMIFIED_LINE_AND_QUADRATIC_RULING_FIVE_CLOSURE.md) closed ALL actual quadratic
-ruling-five coordinates. This note supplies COMPLETE necessary finite-end
-coverage at the next degree, SIX. Every M=0 end is holomorphic. A central
-restriction of degree two leaves an exact rank-two residual algebra and
-forces one additional original RAMIFIED prime with a quadratic residue
-extension. Its nonproper image has an explicit conductor normal form.
-A central restriction of degree three has no extra horizontal central prime.
+The [ruling-five theorem](POLYNOMIAL_RESIDUE_RAMIFIED_LINE_AND_QUADRATIC_RULING_FIVE_CLOSURE.md)
+excludes actual quadratic ruling-five coordinates. At ruling degree six,
+every M=0 end is holomorphic. A central restriction of degree two leaves an
+exact rank-two residual algebra and forces an original ramified prime with
+a quadratic residue extension and explicit conductor. A central restriction
+of degree three has no extra horizontal central prime.
 
-The complete-curve pole audit then confines every ruling-six survivor to
-three explicit off-M weighted-face classes, with the later affine-response
-condition from PF159. This does NOT close the whole ruling-six class.
-All original full-normalization primes, including P-vertical primes invisible
-to the generic P fibre, remain retained. No generic integrality or normal-
-tail termination is claimed.
+The complete-curve argument confines every survivor to three off-M
+weighted-face classes, with the necessary affine-response condition.
+The ruling-six class remains open. All primes of the original full
+normalization, including P-vertical primes invisible to the generic
+P fibre, remain in scope. Neither generic derivative integrality nor
+normal-tail termination is proved.
 
 ## 1. Actual image and notation
 

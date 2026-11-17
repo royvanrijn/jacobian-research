@@ -1,1 +1,0 @@
-The first primary Singular transport put rational divisions after monomials, which Singular parsed as noninteger powers. These syntax failures are inconclusive, not proper ideals. The corrected renderer puts every rational coefficient in parentheses before the monomial, and the cases were rerun.

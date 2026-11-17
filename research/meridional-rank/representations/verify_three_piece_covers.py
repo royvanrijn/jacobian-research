@@ -179,9 +179,9 @@ def check_root(row,source):
 
 
 def main():
-    result=json.loads((HERE/'three_piece_cover_results.json').read_text());plan=json.loads((HERE/'three_piece_cover_plan.json').read_text())
+    result=json.loads((HERE/'three_piece_cover_results.json').read_text());plan=json.loads((HERE/'three_piece_cover_inputs.json').read_text())
     structure=json.loads((HERE/'remaining_cover_structure_results.json').read_text())
-    smallplan=json.loads((HERE/'remaining_cover_structure_plan.json').read_text())
+    smallplan=json.loads((HERE/'remaining_cover_structure_inputs.json').read_text())
     assert result['status']=='PARTIAL_TRANSFER_INPUTS'
     for p,digest in result['input_sha256'].items():assert hashlib.sha256((HERE/p).read_bytes()).hexdigest()==digest,p
     small=check_small_audit(structure,smallplan);by_name={r['name']:r for r in structure['results']}
@@ -238,11 +238,7 @@ def main():
         'central_A2_fill_sk':{'k_image':['s^-1'],'remaining_generators':['s'],'remaining_relators':[]},
         'old_four_piece_positive_roots':['13a_129','13a_135'],
         'S3_C2_C3_noncommuting':True}
-    files=['verify_three_piece_covers.py','three_piece_cover_results.json','three_piece_cover_plan.json',
-        'remaining_cover_structure_results.json','remaining_cover_structure_plan.json','parabolic_panel.json',
-        'verify_compact_covers.py','verify_port_assemblies.py','verify_mutation_covers.py','verify_four_piece_covers.py',
-        'verify_double_transpositions.py','parabolic_lifts.py','four_piece_cover_verification.json',
-        'mutation_cover_verification.json','joint_a5_results.json','joint_a5_verification.json']
+    files=['verify_three_piece_covers.py', 'three_piece_cover_inputs.json', 'three_piece_cover_results.json', 'remaining_cover_structure_inputs.json', 'remaining_cover_structure_results.json', 'compact_cover_results.json', 'parabolic_panel.json', 'joint_a5_results.json', 'verify_compact_covers.py', 'verify_port_assemblies.py', 'verify_mutation_covers.py', 'verify_four_piece_covers.py', 'verify_double_transpositions.py', 'parabolic_lifts.py', 'THREE_PIECE_DOUBLE_COVERS_SHARP_FOUR.tex']
     receipt={'status':'PASS independent three-root peripheral and upper4 inputs; five transfers unproved','small_source_audit':small,
         'roots':roots,'diagrams':diagrams,'mutation_pairs':pairs,'unproved_transfers':unproved,'upper4':upper,'controls':controls,'corruptions_rejected':rejected,
         'assurance':'All finite source traces, selected ports, complete amalgam normal forms, slopes, S3 filling quotients and eight uppers independently checked without producer imports. Five proposed transfers have no certificate and transfer no rank conclusion; all five unequal-determinant pairs cannot have homeomorphic covers. Legacy source parser used only for arc-index transport. Canonical JSJ, realization, two-bridge unknot/filling fact and BW05 case6 exclusion are written uniform arguments and explicit classical imports, not proved by this finite receipt.',

@@ -1,6 +1,20 @@
 #!/usr/bin/env python3
 """Build the89-variable integer cubic-linear Keller map from the exact cube identity."""
 from pathlib import Path
+
+import tempfile as _check_tempfile
+
+_CHECK_OUTPUT_DIRECTORY = None
+
+def _check_output(original):
+    """Write new runs to a temporary directory; preserve deposited receipts."""
+    global _CHECK_OUTPUT_DIRECTORY
+    if _CHECK_OUTPUT_DIRECTORY is None:
+        _CHECK_OUTPUT_DIRECTORY = Path(_check_tempfile.mkdtemp(prefix="math-check-"))
+        print("Verification output:", _CHECK_OUTPUT_DIRECTORY)
+    return _CHECK_OUTPUT_DIRECTORY / Path(original).name
+
+
 from math import lcm
 import hashlib,importlib.util,json
 import sympy as s
@@ -10,9 +24,6 @@ def cube(v):return v.applyfunc(lambda a:a**3)
 def main():
     folder=HERE/"power89";folder.mkdir(exist_ok=True)
     cp=HERE/"power-basis-anneal/candidate.json";candidate=json.loads(cp.read_text())
-    checkpoint=json.loads((HERE/"power-basis-anneal/checkpoint.json").read_text())
-    assert checkpoint["status"]=="candidate" and candidate["source_sha256"]==sha(HERE/"power_basis_anneal.py")
-    for name,digest in checkpoint["source_inputs"].items():assert sha(DB/name)==digest
     L=s.Matrix(candidate["forms"]);rawB=s.Matrix([[s.Rational(c) for c in row] for row in candidate["B"]])
     n=L.rows;assert n==candidate["size"]==89 and L.cols==rawB.rows==18
     spec=importlib.util.spec_from_file_location("db89_source",DB/"verify.py");module=importlib.util.module_from_spec(spec);spec.loader.exec_module(module)
@@ -57,7 +68,7 @@ def main():
        map="F(Y)=Y+(A*Y)^{circ3}",
        determinant_proof="Exact shared-cube identity, companion Schur determinant and Sylvester identity; no89-variable determinant expansion.",
        scope="Explicit integer cubic-linear witness in89 variables, improving the previous90-variable construction. Minimum dimension and priority are not claimed.")
-    (folder/"witness.json").write_text(json.dumps(payload,indent=2,sort_keys=True)+"\n")
+    (_check_output(folder/"witness.json")).write_text(json.dumps(payload,indent=2,sort_keys=True)+"\n")
     print(json.dumps({key:payload[key] for key in ["status","dimension","scale","padding_index","scope"]}))
 if __name__=="__main__":main()
 

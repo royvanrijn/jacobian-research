@@ -1,11 +1,15 @@
 # Factorial moments and rigidity
 
-We connect factorial moment functionals, Image spaces and rigidity of polynomial maps.
+Factorial moment functionals, composition rigidity and Strong Factorial families.
 
-**Completed internally:** audits of the credited binary factorial/EIT proof chains; restricted all-dimensional simplex-pencil and angular results.
+**Status:** Credited binary audits and the stated universal families are complete internally; unrestricted Factorial and Strong Factorial remain open.
 
-**Open:** unrestricted Factorial and Strong Factorial conjectures and the remaining all-degree extensions. Internal proof checking is recorded separately from external review.
+| Current result | Status | Main proof |
+|---|---|---|
+| Binary Factorial and composition rigidity reproductions | Internal result | [Proof](image-rigidity/LONG_EIT_AND_FC2_AUDIT.tex) |
+| Restricted all-dimensional families | Internal result | [Proof](image-rigidity/SIMPLEX_PENCILS_AND_AFFINE_LIMITS.tex) |
+| All ordinary constant-plus-power SFC | Internal result | [Proof](image-rigidity/ALL_UNIVARIATE_TWO_TERM_SFC.tex) |
+| Other universal two-term SFC families | Internal result | [Proof](image-rigidity/UNIFORM_PADE_PARABOLA_SFC.tex) |
+| Current general-gap algebraic criterion | Partial result | [Proof](image-rigidity/HIGHER_GAP_ADJOINT_RANK.tex) |
 
-The [Image/rigidity directory](image-rigidity/) contains proof notes, primary sources and exact controls. Its [detailed research record](image-rigidity/RESEARCH_LOG.md) describes the scope and remaining work. Start with [the Long proof audit](image-rigidity/LONG_EIT_AND_FC2_AUDIT.tex) or [the status and literature note](image-rigidity/STATUS_AND_LITERATURE.tex).
-
-[Claims](../MATH_STATUS.json) · [Open work](../knowledge/WORK_LEDGER.md)
+The [current result catalogue](../STATUS.md) records exact scopes, open questions and verification limits. Publication, formal verification and independent review are separate statuses.

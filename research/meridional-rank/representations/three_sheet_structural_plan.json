@@ -1,9 +1,0 @@
-{
-  "date":"2026-11-17","frozen_before_execution":true,
-  "selection":"Exactly seven retained two-generator simple-three-cover presentations, unchanged:13a_3145,13a_3147,13a_3148,13a_3149,13a_3291,13a_3346,13n_4637",
-  "motivation":"Four Todd-Coxeter runs reached the5000-coset cap and three returned cyclic images without proving source cyclicity. Seek exact structural normal forms, not larger blind enumeration. A nonabelian quotient of a cover group would force knot meridional rank4; a certified cyclic presentation closes only this cover-rank route.",
-  "operations":["Free/cyclic relator reduction, conjugacy/inversion canonicalization and duplicate removal","Replace a cyclic subword longer than half of another retained relator by its inverse complementary subword, strictly reducing total relator length; retain the relation used","Eliminate a generator occurring exactly once in a retained relator","Apply invertible Nielsen substitutions x->y^a*x or x*y^a, and the corresponding substitutions for y, for a=+-1,+-2,+-3, only when total cyclic length decreases; retain inverse maps"],
-  "limits":{"cases":7,"seconds_total":60,"steps_per_case":200,"maximum_intermediate_word_length":1000,"nielsen_exponents":[-3,-2,-1,1,2,3]},
-  "acceptance":"Replay every relator replacement and free-group automorphism inverse before using the normal form. One-generator conclusions give exact cyclic order from gcd. Remaining presentations are unresolved unless a separate certified noncommuting quotient or proof establishes rank. No inference of a knot3bridge presentation or new equality from cyclicity.",
-  "scope":"A finite deterministic exact-rewrite proposal, not a universal word problem algorithm or a full MRC proof."
-}

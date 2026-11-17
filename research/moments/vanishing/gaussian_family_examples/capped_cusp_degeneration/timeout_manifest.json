@@ -1,7 +1,0 @@
-{
-  "timeout_seconds": 30,
-  "outcome": "UNKNOWN",
-  "process_terminal": true,
-  "core_snapshot_sha256": "4beb66772c0c20dd0ce6473ba1a9c9c5762e87d8d1bdea86a57aef1d59c5bff7",
-  "boundary": "Historical capped run before later finite normalization-certificate additions; not retried or represented as a classified family."
-}

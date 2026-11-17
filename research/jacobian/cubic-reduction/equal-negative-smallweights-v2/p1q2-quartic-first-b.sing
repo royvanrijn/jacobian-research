@@ -1,9 +1,0 @@
-ring rr=0,(q,s,t,r,rho),dp;
-short=0;
-ideal I=(-2/1)*q*r,(-4/1)*s*r,(-6/1)*q^2+(3/1)*t,(-8/1)*q*s*r,(5/1)*q*t,(1/1)*q*s*t*rho+(-1/1);
-matrix M=lift(I,ideal(1));
-matrix CC=matrix(I)*M;
-if(CC[1,1]!=1){print("ERROR");quit;}
-int i;poly pp;
-for(i=1;i<=nrows(M);i++){print("GEN:"+string(i));pp=M[i,1];while(pp!=0){print("COEF:"+string(leadcoef(pp)));print("EXP:"+string(leadexp(pp)));pp=pp-lead(pp);}print("END");}
-quit;

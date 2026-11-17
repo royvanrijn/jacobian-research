@@ -1,0 +1,165 @@
+{
+  "status": "Internally reviewed manuscript; independent replay, external mathematical review and publication pending.",
+  "date": "2026-11-17",
+  "source": "main.tex",
+  "pdf": "paper.pdf",
+  "source_sha256": "024b0dfab1b599a2be1bd405612f8d0ef82f8069c99f7ab87037adbf5278fb99",
+  "pdf_sha256": "affde9436f671936bcafef332915c5e2fe741a93a40eebb2cfec25fa2e754271",
+  "checker": "verify.py",
+  "checker_sha256": "0461daf0cb0ab3ff158d8eb44c4427b23a201f2418c3274fddd3d76fede1c16e",
+  "source_audit": "source_audit.json",
+  "source_audit_sha256": "29f186dee0cd75976930bd5b6960c5e76febd4a2349c13d5891582387e99a390",
+  "pages": 17,
+  "internal_proof_review": {
+    "result": "No unresolved proof gap identified; this is internal AI-assisted review.",
+    "scope": {
+      "exceptional_witnesses": "Sections 2-4 and Appendices A-C: polynomial regularity, subgroup invariance, purity, row degrees, factorial denominators, Wilson congruence, Klein identities, Cartier pullback and nonzero binary coefficients.",
+      "radial_witness": "Section 5: independently derived all-order binomial cancellation of pure moments, positive double-integral formula and triangle evaluation for marked moments, normalizer invariance and explicit radius scaling. The new printed formulas were reread against that derivation.",
+      "connected_classification": "Section 6: compact forms including disconnected stabilizers, line/doublet construction, regular dual matrix coefficients, branching rules, proper SL2 stabilizer images and subdirect products.",
+      "disconnected_classification_and_nullcone": "Section 7: number-field specialization, completely splitting primes, exponent separation, Newton identities, component averaging and the character-lattice criterion. Finite spaces, inversion and factor-permutation examples were also checked.",
+      "recompositions": "Section 8: CRT choice of a fixed marker, valuation extension with unit coefficients, unique negative valuation, descent of algebraicity, finite-generation Eisenstein argument and prime-quotient reduction for coefficient algebras.",
+      "primary_source_dependencies": "All 13 current bibliography entries checked against original passages; locators and applicability are recorded below."
+    },
+    "executor": "Internal Codex/ChatGPT proof and source audits, including a fresh-reader reconstruction; no human or external review claimed."
+  },
+  "replay": {
+    "command_from_repository_root": ".venv/bin/python unpublished/mathieu-reductive-homogeneous-spaces/verify.py",
+    "executor": "Internal replay by Codex; row and phase methods are separately implemented but share the environment and beta integral.",
+    "python": "3.12.3",
+    "sympy": "1.14.0",
+    "dependency_pin": "../../research/requirements.txt",
+    "result": "PASS",
+    "exact_checks": {
+      "Jacobian_and_Klein_identities": {
+        "8": "PASS",
+        "12": "PASS"
+      },
+      "generator_invariance": "PASS: diagonal and non-diagonal generators for each exceptional form; normalizer Weyl element",
+      "exceptional_direct_haar_moments": {
+        "8": {
+          "1": {
+            "pure": "0",
+            "marked": "6628352/26558675"
+          },
+          "2": {
+            "pure": "0",
+            "marked": "-865594153113747456/298435517190385025",
+            "prime": 53,
+            "valuation": -1,
+            "scaled_moment_mod_prime": 5
+          }
+        },
+        "12": {
+          "1": {
+            "pure": "0",
+            "marked": "774322255859375/51180384593195769156336",
+            "prime": 61,
+            "valuation": -1,
+            "scaled_moment_mod_prime": 14
+          },
+          "2": {
+            "pure": "0",
+            "marked": "41958690403313837610721588134765625/1532800285927159272199695730537217233992065276406",
+            "prime": 127,
+            "valuation": -1,
+            "scaled_moment_mod_prime": 3
+          }
+        }
+      },
+      "binary_coefficient_prime_checks": {
+        "8": [
+          13,
+          17,
+          29,
+          37,
+          41,
+          53,
+          61,
+          73,
+          89,
+          97,
+          109,
+          137,
+          193
+        ],
+        "12": [
+          7,
+          13,
+          19,
+          31,
+          37,
+          43,
+          61,
+          67,
+          73,
+          79,
+          97,
+          127,
+          193,
+          457,
+          523
+        ]
+      },
+      "radial_checks": {
+        "polynomial_and_rational_identities": "PASS",
+        "symbolic_factorial_simplification": "PASS",
+        "independent_phase_beta_moments": "PASS: pure and marked, m=1,...,8",
+        "beta_double_integral_evaluation": "PASS: m=1,...,8",
+        "direct_moments": {
+          "1": "1/30",
+          "2": "4/3465",
+          "3": "1/30940",
+          "4": "8/9561123",
+          "5": "1/48072024",
+          "6": "1/1981823025",
+          "7": "7/581462519880",
+          "8": "16/56371222841175"
+        }
+      },
+      "negative_controls": {
+        "octahedral_middle_coefficient_14_to_13": "REJECTED",
+        "radial_marked_m1_claim_1_over_31": "REJECTED"
+      }
+    },
+    "scope": "Exact polynomial and rational identities; direct exceptional Haar moments at m=1,2; binary coefficient checks at the listed primes; radial row/phase moments and beta/double-integral evaluations at m=1,...,8; rejection of the two listed corrupted inputs. The all-order proofs and reductive classification are in main.tex and are not certified by these finite controls.",
+    "formal_verification": false,
+    "external_review": false,
+    "reuse_basis": "Checker bytes and mathematical text unchanged by this title-only edit; previously recorded exact results retained."
+  },
+  "pdf_review": {
+    "build": "latexmk -pdf -jobname=paper -interaction=nonstopmode -halt-on-error main.tex",
+    "standalone_build": "PASS: main.tex alone was copied into an ignored staging directory and built with the declared command; its bytes match the retained source.",
+    "result": "PASS",
+    "latex_warnings_or_box_diagnostics": [],
+    "rendering": "All 17 pages rendered with Poppler pdftoppm at 75 dpi and visually inspected; title page additionally inspected at 110 dpi.",
+    "out_of_page_text_blocks": [],
+    "unresolved_reference_markers": false,
+    "pdf_links_checked": 111,
+    "invalid_internal_links": 0,
+    "pdf_title_matches_metadata": true
+  },
+  "independent_replay": false,
+  "formal_verification": false,
+  "external_review": false,
+  "remaining_review": "Obtain external mathematical review and an independent replay before submission; finite controls are not all-order theorem certificates.",
+  "repository_checks": {
+    "render_navigation": "PASS: 8 topics, 32 principal results",
+    "check_navigation": "PASS: source references, checker hashes, portfolio and local links",
+    "portfolio": "PASS: 4 sealed published papers and 12 unpublished manuscripts",
+    "local_links": "PASS: 484 links in 126 maintained Markdown files",
+    "navigation_unit_tests": "PASS: 14 tests",
+    "bundle_identities": "PASS: all source/PDF/checker/audit hashes; metadata abstract matches manuscript",
+    "local_readme_links": "PASS: all 7 targets exist"
+  },
+  "review_checklist": {
+    "mathematics": "Internal dependency review and fresh reconstruction complete; theorem scope unchanged; no unresolved proof gap identified.",
+    "references": "All 13 cited primary passages and versions checked; every bibliography entry is cited.",
+    "readability": "Definitions, two introductory examples, contribution comparison and complete strategy supplied; 17 rendered pages inspected.",
+    "computation": "Exact finite coverage and two rejection controls recorded; no unrestricted certification claimed.",
+    "bundle": "Standalone source build, PDF inspection, matching abstract and byte identities checked.",
+    "external_review": "Not performed; remains required before submission.",
+    "submission": "Not requested; no deposit or published-edition change."
+  },
+  "title": "Counterexamples to the Mathieu Property: From Explicit Quotient Constructions to a General Classification",
+  "editorial_scope": "Title, subtitle, PDF metadata and navigation labels updated. The manuscript body and abstract are byte-identical to the previous reviewed edition."
+}

@@ -239,8 +239,7 @@ def main():
         try:check_family(r,panel[r['name']])
         except AssertionError:pass
         else:raise AssertionError('corrupted family certificate accepted')
-    paths=['periodic_twist_family_plan.json','audit_periodic_twist_families.py','periodic_twist_family_results.json',
-           'verify_periodic_twist_families.py','PERIODIC_TWIST_FAMILIES.tex','joint_a5_panel.json','finite_cover_quotient_verification.json','parabolic_lifts.py']
+    paths=['verify_periodic_twist_families.py', 'periodic_twist_family_results.json', 'joint_a5_panel.json', 'parabolic_lifts.py', 'PERIODIC_TWIST_FAMILIES.tex']
     report={'status':'PASS independent periodic twist family inputs','families':results,'family_count':4,
             'explicit_expanded_diagrams':12,'knot_action_degree':75,'blocks':3,'block_size':25,'rejected_corruptions':len(bad),
             'uniform_proof_boundary':'Finite checks certify specific input permutations, diagrams, uniform outside traces and determinant coefficients. All-N conclusions require the written spanning-tree gauge, Hurwitz-period and integer-tangle induction proofs, not interpolation from the12 samples. Named seed provenance retained; family mutual disjointness and worldwide novelty unclaimed. Unformalized and externally unreviewed.',

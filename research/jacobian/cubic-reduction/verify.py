@@ -116,45 +116,6 @@ def midpoint_identity():
             mul(scale(add(a0,b0),Q(1,2)),add(a1,b1,Q(-1))))
     assert lhs==rhs
 def main():
-    data=HERE/"cubic17-witness.json";d=json.loads(data.read_text())
-    assert d["source_sha256"]==sha(HERE/"construct17.py")
-    source=HERE/"sources/degree3-map-external.json"
-    provenance=json.loads((HERE/"sources/provenance.json").read_text())
-    assert d["external_data_sha256"]==sha(source)==provenance["sha256"]
-    n=d["dimension"];assert n==17
-    F=[decode(row,n) for row in d["coefficients"]]
-    assert len(F)==n and max(sum(e) for p in F for e in p)==3
-    counts=[sum(sum(e)>=2 for e in p) for p in F];assert counts==d["nonlinear_counts"] and sum(counts)==58
-    verify_construction(F,external_rows(json.loads(source.read_text())))
-    J=[[derivative(p,j) for j in range(n)] for p in F]
-    origin=(0,)*n;assert all(not p.get(origin,0) for p in F)
-    assert [[p.get(origin,Q(0)) for p in row] for row in J]==[[Q(i==j) for j in range(n)] for i in range(n)]
-    A=[r[:3] for r in J[:3]];B=[r[3:] for r in J[:3]]
-    C=[r[:3] for r in J[3:]];D=[r[3:] for r in J[3:]]
-    I=identity(n-3,n);L=madd(D,I,Q(-1));power=I;inv=I;nilpotence=None
-    for exponent in range(1,n-2):
-        power=mmul(power,L)
-        if mzero(power):nilpotence=exponent;break
-        inv=madd(inv,power,Q((-1)**exponent))
-    assert nilpotence==d["carrier_nilpotence_exponent"]==3
-    assert mmul(inv,D)==I and mmul(D,inv)==I
-    S=madd(A,mmul(B,mmul(inv,C)),Q(-1))
-    det=determinant3(S,n);assert det=={origin:Q(1)}
-    points=[[Q(q) for q in p] for p in d["points"]]
-    assert len({tuple(p) for p in points})==3
-    images=[[evaluate(f,p) for f in F] for p in points]
-    assert images[0]==images[1]==images[2]==[Q(q) for q in d["common_image"]]
-    midpoint_identity()
-    receipt=dict(status="pass",source_sha256=sha(Path(__file__)),witness_sha256=sha(data),
-       primary_source_sha256=sha(HERE/"construct17.py"),external_data_sha256=sha(source),
-       dimension=n,degree=3,nonlinear_counts=counts,nonlinear_total=58,
-       determinant_one=True,identity_derivative=True,collision_points=3,
-       retained_rows_independent_of_removed_directions=True,
-       removed_rows_are_identity_plus_retained_polynomials=True,
-       full_polynomial_schur_determinant=True,carrier_nilpotence_exponent=3,
-       quadratic_midpoint_identity=True,
-       scope="Minimum ordinary degree for characteristic-zero Keller collisions is3 across all finite dimensions. Dimension17 is an upper bound for cubic witnesses; no minimum dimension or term count is proved.")
-    (HERE/"validation.json").write_text(json.dumps(receipt,indent=2,sort_keys=True)+"\n")
-    print(json.dumps(receipt))
+    raise SystemExit("Arithmetic helper only; run verify_integer12.py or verify_power89.py for the retained results.")
 if __name__=="__main__":main()
 

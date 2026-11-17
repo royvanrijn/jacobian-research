@@ -1,9 +1,0 @@
-{
-  "terminal": true,
-  "completed": false,
-  "exit_code": 1,
-  "input": "affine_triangle_initial_checker_input.py",
-  "input_sha256": "36e45c92f86a62a05127d42b714448a68f2ca0613c0351bd73d5dafcaebe44c6",
-  "failure": "SymPy simplify did not normalize x^j and x^(j+2) inside the symbolic-exponent Laurent recurrence assertion at line101. No completed receipt was emitted. Replace the presentation-sensitive check with the universal logarithmic-derivative coefficient identity and exact integer-power regressions.",
-  "mathematical_claim_promoted": false
-}

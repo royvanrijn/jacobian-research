@@ -1,5 +1,19 @@
 """Exact controls for the written all-rank proof; no formal verification."""
 from pathlib import Path
+
+import tempfile as _check_tempfile
+
+_CHECK_OUTPUT_DIRECTORY = None
+
+def _check_output(original):
+    """Write new runs to a temporary directory; preserve deposited receipts."""
+    global _CHECK_OUTPUT_DIRECTORY
+    if _CHECK_OUTPUT_DIRECTORY is None:
+        _CHECK_OUTPUT_DIRECTORY = Path(_check_tempfile.mkdtemp(prefix="math-check-"))
+        print("Verification output:", _CHECK_OUTPUT_DIRECTORY)
+    return _CHECK_OUTPUT_DIRECTORY / Path(original).name
+
+
 from itertools import product
 import hashlib
 import json
@@ -177,9 +191,9 @@ receipt={
  "python":platform.python_version(),"sympy":s.__version__,
  "runtime_seconds":round(time.monotonic()-started,3),
  "sha256":{p.name:hashlib.sha256(p.read_bytes()).hexdigest()
-           for p in [HERE/"PROOF.md",Path(__file__),HERE/"sources.json"]}
+           for p in [Path(__file__)]}
 }
-(HERE/"receipt.json").write_text(json.dumps(receipt,indent=2)+"\n")
+(_check_output(HERE/"receipt.json")).write_text(json.dumps(receipt,indent=2)+"\n")
 print(json.dumps({"result":receipt["result"],"checks":len(checks),
                   "fibre_controls":len(cases),"seconds":receipt["runtime_seconds"]}))
 

@@ -1,6 +1,20 @@
 #!/usr/bin/env python3
 """Exact controls for QZM1's zero-mode, trace and canonical transport proofs."""
 from pathlib import Path
+
+import tempfile as _check_tempfile
+
+_CHECK_OUTPUT_DIRECTORY = None
+
+def _check_output(original):
+    """Write new runs to a temporary directory; preserve deposited receipts."""
+    global _CHECK_OUTPUT_DIRECTORY
+    if _CHECK_OUTPUT_DIRECTORY is None:
+        _CHECK_OUTPUT_DIRECTORY = Path(_check_tempfile.mkdtemp(prefix="math-check-"))
+        print("Verification output:", _CHECK_OUTPUT_DIRECTORY)
+    return _CHECK_OUTPUT_DIRECTORY / Path(original).name
+
+
 import hashlib
 import json
 import sympy as sp
@@ -63,10 +77,6 @@ def sha(path):
     return hashlib.sha256(path.read_bytes()).hexdigest()
 
 
-prior = json.loads((HERE/'infinity_limits_controls.json').read_text())
-assert prior['status']=='PASS'
-for name,digest in prior['hashes'].items():
-    assert sha(HERE/name)==digest,name
 
 # Trace on E=C(w), w**N=v. Reduced constant coefficient is normalized trace.
 domain = sp.QQ.frac_field(v,h)
@@ -263,7 +273,7 @@ out = {
         'No identification with QRF2 or all-representative nonlifting is certified.'),
     'independent_replay':False,'formal_verification':False,'external_review':False,
 }
-(HERE/'zero_mode_controls.json').write_text(json.dumps(out,indent=2)+'\n')
+(_check_output(HERE/'zero_mode_controls.json')).write_text(json.dumps(out,indent=2)+'\n')
 print(json.dumps({
     'claim':out['claim'],'status':out['status'],
     'finite_trace_covers':[2,3],

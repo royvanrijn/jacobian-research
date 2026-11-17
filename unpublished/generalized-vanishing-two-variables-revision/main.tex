@@ -608,8 +608,15 @@ $\Lambda^m(QP^m)=0$ for every fixed $Q$ and all large $m$.
 \end{proposition}
 
 \begin{proof}
+If $Q=0$, $P=0$, or $\Lambda=0$, the conclusion is immediate.  Assume
+all three are nonzero.
 Let $A$ be the weight-$W$ face of $\lambda$ and $B$ the weight-$W$ face
-of $P$.  The part of greatest possible output weight in the pure identity
+of $P$.  If either face is empty, integrality of the weights gives
+$\min w(\Supp\lambda)-\max w(\Supp P)\geq1$.  A fixed multiplier
+supplies bounded weight, so every mixed selection vanishes once
+$m>\max_{q\in\Supp Q}w(q)$.
+We may therefore assume both faces are nonzero.  The part of greatest
+possible output weight in the pure identity
 is
 \[
  A(\partial)^m(B^m)=0.
@@ -832,7 +839,10 @@ operators and degree-$d$ polynomials.
 \end{theorem}
 
 \begin{proof}
-We first improve the normalized margin of a strict support separator.
+The zero operator is immediate.  For a nonzero operator the pure premise
+and $P\ne0$ exclude a nonzero constant term, so
+Theorem~\ref{thm:support-certificate} supplies a strict support separator.
+We first improve its normalized margin.
 Swap axes if necessary and write its weight as $(1,z)$, $0<z\le1$.
 The concave piecewise-linear function
 \[

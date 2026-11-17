@@ -1,6 +1,0 @@
-Revision v006,17November2026.
-Compile manuscript.tex twice with pdflatex and all eight TeX inputs in the same directory. No external images or bibliography processor required.
-31pages;final build has no overfull boxes or undefined references. One overfull line in the first build was corrected;three benign hyperref metadata warnings remain.
-All31pages rendered and visually reviewed. Layout QA does not establish mathematical completeness.
-New gradient/tail,deformation,local-degenerate asymptotic and node-normal-form arguments are WRITTEN;no new mathematical checker was run. Pham primary PDF footnote verified at printed26/PDF17,correcting an older sealed locator.
-Full affine-W proof remains written;PAPER-A smooth row is now complete. Ordinary-node gate and shared residual normal form are written,but the residual and five other geometric families remain. Goal ACTIVE;not submission-ready.

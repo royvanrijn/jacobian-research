@@ -1,0 +1,41 @@
+{
+  "status": "unpublished; written proof with internal review; independent mathematical review pending",
+  "checked_on": "2026-11-17",
+  "source": "main.tex",
+  "pdf": "gaussian_constant_fibre_base_marker_certificates.pdf",
+  "pages": 5,
+  "source_hashes": {
+    "main.tex": "e00e2cc225a97ed9bb1e6edd90e306f7af93d1ad7448bf27209aad63037b0b70"
+  },
+  "pdf_sha256": "63a6b45576351b74df01d5e5a1ed5950ad7674efb691a14dd94ac0cabf67187c",
+  "build": "latexmk -pdf -jobname=gaussian_constant_fibre_base_marker_certificates -interaction=nonstopmode -halt-on-error main.tex",
+  "checks": {
+    "latexmk_cross_references_stable": true,
+    "undefined_references": 0,
+    "overfull_boxes": 0,
+    "underfull_boxes": 0,
+    "all_pages_rendered": true,
+    "visual_review": "Every page of the current edition rendered and inspected; the revised examples, stationary gauge and final references fit without clipping or nearly empty extra pages."
+  },
+  "review_scope": "Editorial and internal mathematical review of the displayed arguments. No universal theorem is inferred from a finite experiment.",
+  "remaining_review": [
+    "Review the universal operator identities and sufficient degree bound.",
+    "Determine whether the two-base purity-to-safety question can be settled; base-marker generation alone does not settle it."
+  ],
+  "independent_replay": false,
+  "formal_verification": false,
+  "external_review": false,
+  "retained_audits": "Earlier audit/checker receipts in the source archive, where present, describe their recorded editions. Current file identities are the hashes above; those archived computations were not replayed.",
+  "build_environment": {
+    "python": "3.12.3",
+    "sympy": "1.14.0",
+    "pymupdf": "2.1",
+    "latexmk": "Latexmk, John Collins, 31 Jan. 2024. Version 4.83",
+    "pdflatex": "pdfTeX 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian)"
+  },
+  "review_findings": [
+    "Added a universal first-even-marker identity with an explicit integration-by-parts witness.",
+    "Reconstructed the even/odd recurrences, coefficient-content proof and sufficient degree estimate, including zero coefficient faces.",
+    "Replaced undefined process terminology by finite expressions and stated the two-base question directly."
+  ]
+}

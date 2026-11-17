@@ -1,9 +1,0 @@
-{
-  "status": "PASS",
-  "independent_reader": "openpyxl read_only=True; extraction producer uses standard-library ZIP/XML",
-  "cases": 16,
-  "source_sha256": "514b12e118fa681520da5702a5ed4307ce7cf93b6b9f7b5e53f265ca7b01647b",
-  "workbook_unchanged": true,
-  "panel_sha256": "a93142dbeb58695e40e85e2b7d299fc19343e446007e352dda68ad827fdb535f",
-  "reader_sha256": "2c626e34296fa02a4e3b48fcc0c39383c9af99afb63b105dfb3aa530f04fdf3c"
-}

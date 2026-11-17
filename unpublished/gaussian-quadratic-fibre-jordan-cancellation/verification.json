@@ -1,0 +1,48 @@
+{
+  "status": "unpublished; written proof with internal review; independent mathematical review pending",
+  "checked_on": "2026-11-17",
+  "source": "main.tex",
+  "pdf": "gaussian_quadratic_fibre_jordan_cancellation.pdf",
+  "pages": 10,
+  "source_hashes": {
+    "main.tex": "1a7064e5c9e676e9419d19e8122654ccba928f4cb8c3c914261be47eb605fba0"
+  },
+  "pdf_sha256": "d4021c68ae03377acf360a65fcec5583c679c287febf6a9d76095d0763404e28",
+  "build": "latexmk -pdf -jobname=gaussian_quadratic_fibre_jordan_cancellation -interaction=nonstopmode -halt-on-error main.tex",
+  "checks": {
+    "latexmk_cross_references_stable": true,
+    "undefined_references": 0,
+    "overfull_boxes": 0,
+    "underfull_boxes": 0,
+    "all_pages_rendered": true,
+    "visual_review": "Every page of the current edition rendered and inspected; the revised examples, stationary gauge and final references fit without clipping or nearly empty extra pages."
+  },
+  "review_scope": "Editorial and internal mathematical review of the displayed arguments. No universal theorem is inferred from a finite experiment.",
+  "remaining_review": [
+    "Review the full formal stationary theorem and its application to a polynomial unit period.",
+    "Review the Jordan-block rigidity, polynomial precision matrix, and sufficient mixed-moment bound."
+  ],
+  "independent_replay": false,
+  "formal_verification": false,
+  "external_review": false,
+  "retained_audits": "Earlier audit/checker receipts in the source archive, where present, describe their recorded editions. Current file identities are the hashes above; those archived computations were not replayed.",
+  "build_environment": {
+    "python": "3.12.3",
+    "sympy": "1.14.0",
+    "pymupdf": "2.1",
+    "latexmk": "Latexmk, John Collins, 31 Jan. 2024. Version 4.83",
+    "pdflatex": "pdfTeX 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian)"
+  },
+  "review_findings": [
+    "Reconstructed polynomial-unit reduction, Jordan affine-source induction, determinant-one cancellation and sufficient degree bounds.",
+    "Expanded the stationary theorem into an explicit row-normalized evaluation matrix and invertible diagonal gauge; the quotient-extension step uses this constructed semisimplicity.",
+    "The duplicated stationary proof matches the boundary manuscript text; no general Turrittin-Levelt semisimplicity assertion is used."
+  ],
+  "primary_sources_checked": [
+    {
+      "url": "https://arxiv.org/pdf/1304.6770v2",
+      "location": "Section 1, Theorem 1.9 and Corollary 1.10, printed pp. 6-7",
+      "used_for": "Formal Puiseux splitting after finite ramification; characteristic zero ensures separability of the minimal polynomials. The full published-book chapter previously cited was not claimed inspected."
+    }
+  ]
+}

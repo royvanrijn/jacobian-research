@@ -409,10 +409,18 @@ The construction and the obstructions now organize the programme into independen
 
 These no-go statements do not replace the separate field-versality criterion UABINARY1 or stable-class defects UATRACEMOD1 and UADOUBLEMOD1. A canonical correspondence, a field-versal parameter space, an affine polynomial self-map and a functorial section are different achievements.
 
-The next useful work is to characterize a receiver that forgets the generator line but still supports polynomial incidence, and to find an affine source mechanism for a genuinely different normalization. Repeated calculations of the existing coefficient-torus stabilizer or the contracted coarse map will not close either gate.
+The unresolved problem is to characterize a receiver that forgets the generator line but still supports polynomial incidence, and to find an affine source mechanism for a genuinely different normalization. Repeated calculations of the existing coefficient-torus stabilizer or the contracted coarse map will not close either gate.
 
 ## 9. Sources and assurance
 
-The proof imports the retained full-fibre compiler and its covariance. Quotient-stack descent, twisting and the interpretation of inertia are standard; the [literature map](LITERATURE_AND_GAPS.md) identifies the primary sources. The new assertions are the explicit full-receiver identification, exact small-inertia application, universal coarse contraction and affine source-level obstructions in this Keller setting. No literature-priority claim is made.
+The proof uses the
+[relative full-fibre compiler](../../foundations/verified/UNIVERSAL_RELATIVE_KELLER_MAP.md)
+and its displayed covariance. Quotient-stack descent, twisting and the
+interpretation of inertia are standard inputs. The explicit receiver,
+small-inertia, coarse-contraction and affine-source conclusions are proved
+above. The current
+[canonical trace-filter construction](../universal-keller-canonical-filter/PROOF.md)
+is a separate whole-bundle result.
 
-The [checker](verify.py) gives bounded exact controls of atlas round trips, homothety weights, representative projective stabilizers, the coarse-curve identity, invariant monomial indecomposability, the C=1 unit certificate, coefficient-profile boundary residues and low-rank finite fibres. Fixed-space restrictions and polynomial bundle descent are written arguments. These do not constitute formal verification or independent whole-proof replay. The universal stack and all-degree claims rest on the written proofs.
+The universal stack and all-degree statements are written arguments.
+No formal verification or independent external review is claimed.

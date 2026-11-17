@@ -1,12 +1,8 @@
 {
   "status": "COMPLETE_PERIPHERAL_MODEL_INPUTS",
   "input_sha256": {
-    "four_piece_cover_plan.json": "48940e388419323f6437a0c19760dd130895ecbc57fa05164a22c7c7a61fbffa",
-    "audit_four_piece_covers.py": "c9160544a9d7ef51b5f48a67ba558d0ea400c15a402d1d2595a5fc6e8b63a37b",
-    "port_assembly_results.json": "7ba49e1af708bdaf299e67faaff92a907c71396c4be773a45a1457dc8dd93eb9",
-    "port_assembly_verification.json": "5c955675b1689e45f3cd075022c3b17027abdd4736a8c1fc78010b20f6941e44",
-    "compact_cover_verification.json": "4001bed48608d37ea613dc5a538c1581035c780a94b278b24f2abea807490be6",
-    "mutation_cover_verification.json": "5a925d1c5b9c008156becfe3aae921ceb87699f1ed0355cee06c055c8b7c3ec1"
+    "four_piece_cover_inputs.json": "48940e388419323f6437a0c19760dd130895ecbc57fa05164a22c7c7a61fbffa",
+    "port_assembly_results.json": "cd5146f6906161012fee4b5249ce8165e19d4d21dc83ccd78f92e5cd93c331b6"
   },
   "models": [
     {

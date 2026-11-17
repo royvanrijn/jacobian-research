@@ -1,8 +1,0 @@
-{
-  "date":"2026-11-17","frozen_before_execution":true,
-  "targets":["13a_129","13a_135"],
-  "motivation":"Both outer6crossing formal normalized core groups have2generator1relator presentations, but propagation into the closed group stalls on the five inner-only arcs0..4. Compute the complementary7crossing formal groups and boundary arc labels to specify the remaining gluing problem. No rank3 conclusion is inferred from the stall.",
-  "method":"Cut exactly crossings0..6 from each literal pinned PD; require4boundary edge labels, construct overpass semiarc classes and normalized core relations, then apply the existing exact bounded simplifier. Retain every operation and compare with the complete source. This is formal tangle-presentation input, not yet a topological graph-of-groups or JSJ theorem.",
-  "limits":{"targets":2,"seconds_per_group":25,"seconds_total":55},
-  "acceptance":"Independent replay before registering any exact presentation identity. Establish disk separation, boundary peripheral words and injectivity/topological provenance before invoking rank results for a manifold amalgam. No2generator closed upper follows from2generated pieces alone."
-}

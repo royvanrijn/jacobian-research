@@ -1,8 +1,0 @@
-{
-  "status": "UNKNOWN",
-  "timeout_seconds": 20,
-  "terminal": true,
-  "restarted": false,
-  "historical_source_snapshot_available": false,
-  "assurance": "Cap is retained as performance boundary, not as a successful computation; no historical full source hash was captured."
-}

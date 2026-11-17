@@ -1,8 +1,0 @@
-{
-  "case": "nu-zero",
-  "input_sha256": "c15cfe050a0c65b9d21c10920437bfe1a560a0a177dfa00eadd03305da4888cb",
-  "mode": "field",
-  "seconds": 0.027,
-  "source_sha256": "1122095cdf38fdc79cf4b2d2ccc7756d82d6710e3d2f899b7866ca90048fb1ed",
-  "status": "primary-slice-basis"
-}

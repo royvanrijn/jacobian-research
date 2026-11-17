@@ -1,8 +1,0 @@
-{
-  "terminal": true,
-  "completed": false,
-  "exit_code": 1,
-  "input": "nodal_center_line_initial_checker_input.py",
-  "input_sha256": "f85cb879f9e51e4034879dc861e01d91a80c3808ceeb0999d16c14080d1e1daf",
-  "failure": "Expanded and factored versions of the same scaled-gradient polynomial were compared structurally in SymPy. Corrected to test the expanded difference for zero before registering a result."
-}

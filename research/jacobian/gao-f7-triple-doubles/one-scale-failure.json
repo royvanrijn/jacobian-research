@@ -1,5 +1,0 @@
-{
-  "outcome": "rejected_by_exact_weight_check",
-  "script": "derive_scale_delta_zero.py",
-  "reason": "The tb(t) terms introduce a weight loss7, so r^-3 alone does not parametrize the normalized equations. No one-scale input was written. The corrected model retains x=r^-3,y=r^-7 and y^3=x^7."
-}

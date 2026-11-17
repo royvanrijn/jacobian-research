@@ -1,13 +1,10 @@
-# Full structural proof review of Tang v1
+# Tang's HC4 structural theorem: retained proof
 
-Reviewed 13 November 2026. This note completes the written audit left open by
-[HCTANG1](README.md). It reproduces Qiyue Tang's external theorem, not a new
-attribution of that theorem. The source is the byte-pinned
-[31-page manuscript](source-v1.pdf), Hexagon 2611.00156v1. The independent
-local calculations in HCTANG1 remain part of the evidence. The review below
-is a mathematical proof audit; no finite checker certifies its geometric
-classification or all its arguments. No formalization or external review
-is claimed.
+The external input is Qiyue Tang's
+[manuscript2611.00156v1](https://hexagonmath.org/2611.00156v1).
+The argument below records the structural theorem used by the Ricci-flat
+subclass result. It attributes the theorem to Tang; no formal verification
+or independent external review is claimed.
 
 **Conclusion (HCTANG2).** For a complex polynomial f in four variables
 with nonzero constant Hessian determinant, either its gradient is an
@@ -18,8 +15,6 @@ automorphism, or after an invertible constant linear source change
 \]
 
 Consequently HC4 and JC2 are equivalent. Neither conjecture is resolved.
-The quantitative and repository-specific consequences are proved separately
-in [APPLICATIONS.md](APPLICATIONS.md).
 
 ## 1. Geometry behind the singular-Hessian theorem
 

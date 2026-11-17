@@ -9,14 +9,14 @@
   "status": "ready-for-review",
   "source": "manuscript.tex",
   "pdf": "manuscript.pdf",
-  "build": "latexmk -pdf -interaction=nonstopmode -halt-on-error manuscript.tex",
+  "build": "../../.venv/bin/python verify.py --build --refresh",
   "verification": "Internally audited standalone manuscript with recorded proof, source and layout checks; publication and independent external review are still pending.",
   "next_steps": [
     "Review the complete qualitative cubic proof and its cited analytic inputs.",
     "Resolve review findings, freeze a submission bundle and deposit."
   ],
   "catalogued_on": "2026-11-17",
-  "abstract": "The Gaussian Moments Conjecture asks whether the vanishing of every\npositive moment of a complex polynomial persists after multiplication by\nan arbitrary fixed polynomial. The answer depends on both the number of\nvariables and the degree. Combining the ternary-cubic theorem with\nWilson's two-variable theorem and Long's counterexamples gives the exact\nboundary: the conjecture holds universally precisely when there are at\nmost two variables, the degree is at most two, or there are three variables\nand the degree is at most three. In the last case the explicit cutoff is\n$m>3\\deg Q$, and the coefficient three is optimal. We explain why these\nstatements fit together, give short proofs of the elementary parts, and\nisolate the cubic reductions that carry the new argument.",
+  "abstract": "We classify complex polynomials of degree at most three in three\nindependent standard real Gaussian variables whose positive moments all\nvanish. Up to a complex orthogonal linear change of coordinates and a\nnonzero scalar, every such polynomial has one-sided circular support or\nbelongs to a single exceptional orbit. For every fixed polynomial $Q$,\nits mixed moments $\\E[QP^m]$ vanish whenever $m>3\\deg Q$, and the\ncoefficient three is optimal. The proof extracts a Gaussian coordinate\nin which the polynomial is affine linear, then classifies that family\nusing formal stationary frames and analytic period estimates.\n\nCombining this ternary-cubic result with Wilson's two-variable theorem,\nLiu's quadratic theorem and Long's counterexamples gives the exact\ndimension--degree boundary for the Gaussian Moments Conjecture: the\nimplication from pure-moment vanishing to eventual mixed-moment\nvanishing holds universally precisely when there are at most two\nvariables, the degree is at most two, or there are three variables and\nthe degree is at most three. We reproduce the all-order moment\nidentities for the two minimal failures.",
   "abstract_format": "latex",
   "abstract_source": "manuscript.tex",
   "resource_type": {

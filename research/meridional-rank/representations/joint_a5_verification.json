@@ -2582,22 +2582,8 @@
   },
   "scope": "Independent PSL2/PGL2(F5) tuple-orbit catalogue and crossing-closure enumeration reproduce every per-knot count. Permutation relators, onto images, Aut inequivalence and four-seed traces checked directly. PD parser shared. No maps pooled across knots; no new sharp target case.",
   "input_sha256": {
-    "verify_joint_a5.py": "49345472c71d5d4d938fdd255a26b386166a8b81cf180830d4a9bbf3af1e1874",
-    "joint_a5.py": "2a3b8c615697430687d7136e8bc37a93898b472df47cf4e5d851448a44c26237",
-    "build_joint_a5_catalogue.py": "3461fba7db05489752426cb3ca2a1e60873f69b692e4b49191ee73024a13af1a",
-    "joint_a5_catalogue.json": "3e0e2aff354d05c5916a675668d5f6072d562bb77b91810f45b789d0f9e0a6ee",
-    "freeze_joint_a5_panel.py": "8956600fc00aa89df6c2654870552d8a5ea8cebb0d649093853e2df2ccbf72be",
-    "joint_a5_panel.json": "4ee51adf7e0908cbc9cb2516137cd5e62d38abb245f1b26e19caf2d44eca87cd",
-    "search_joint_a5_kernels.py": "a26d1a26ef94a29aa9ed3df2721ea51742e48060632d19b6bc0870baba194daf",
-    "joint_a5_results.json": "6f2be622f64e34ba47127f5126f56bcc0f72cc98d4c29bb6d69e8a28ef623a9f",
-    "parabolic_lifts.py": "18abf5886002d54f17b5ee8593f31fb1b339f66a36605b7ccec7863ff4648a27",
-    "audit_joint_a5_orbifolds.py": "213859b9d9dc44b71423b93ee857989cce3ca9d4d12f56ba62ea8595ab60883f",
-    "joint_a5_orbifold_plan.json": "f63bfe9206af738a5b9a2ea297eb3da7bca41e85c0e6e6ff1a4a7bf8a48281d0",
-    "joint_a5_orbifold_results.json": "01505f4db4ac09cf7951873b2a30ae990efeca73a44a368abf64c9a80021c12e",
-    "build_joint_a5_pretzel_control.py": "3ea412490df645da9be43147960304c9aeff4b28630346e3d985d2938367a563",
-    "joint_a5_pretzel_control.json": "4e284b88ec6c6022a65dd82e783e3ba0ce15dc5c545059e2d75e7bcee171ea12",
-    "build_joint_a5_geometry_control.py": "a2f028e735d8e3ed81a58ae4cc06f63fec546b4df94b46b895db79083b01b5b6",
-    "joint_a5_geometry_control.json": "87a6a0042d235d79952c3984ce6c7866b5096add2a40d1d63d7b6cb90d37a165",
-    "verify_diagram_audit.py": "41f7bb9e96b6863e845feaac2870fc7a734946715c82cda33055e7e7a276aec3"
+    "joint_a5_panel.json": "2a0ea8edf355067f05d1de90103edfcb7bf0508612031009e0b3eebdac87c906",
+    "joint_a5_results.json": "3952119118bcd127a0f6b786645b35ed79322972096715830c9ca6ba09349fcc",
+    "parabolic_lifts.py": "18abf5886002d54f17b5ee8593f31fb1b339f66a36605b7ccec7863ff4648a27"
   }
 }

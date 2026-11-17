@@ -1,13 +1,8 @@
 {
   "status": "COMPLETE",
   "input_sha256": {
-    "compact_cover_plan.json": "d8ed708f21b5d4d2bbf13a66ac518790b120589f1627ca825108d3e365d377c2",
-    "compact_cover_groups.py": "88c975a276373a242f18d1ab3cce300cc1ca8755a5ad4ae0aea58069b7f4da77",
-    "audit_compact_covers.py": "a6d05c4454af463f3953077e4515b27f25084e9983702fc3aa876e4471a980c0",
     "parabolic_lifts.py": "18abf5886002d54f17b5ee8593f31fb1b339f66a36605b7ccec7863ff4648a27",
-    "mutation_cover_results.json": "d12938a44ce9589300356ac83333734514f5b896c1166d98f3db43423a0b1c18",
-    "mutation_cover_verification.json": "5a925d1c5b9c008156becfe3aae921ceb87699f1ed0355cee06c055c8b7c3ec1",
-    "core_generator_results.json": "3534b0663f15dc647ca1235c265db33217b6cc568a45bb8f972cb26e16d64437"
+    "mutation_cover_results.json": "aaa7282c5b0de8478b03fb0d3e3913749b4f95398a4542d197f7d54456b11e8a"
   },
   "controls": [
     {

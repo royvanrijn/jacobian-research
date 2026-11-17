@@ -1,8 +1,0 @@
-{
-  "input_sha256": "7b71baca9b25ec09313f344ef0f5bbe7b90f5d7facfff3f6e3be302f48e0e2bb",
-  "linear_solver_sha256": "df6ce35ab35fb5ddf16e08acc8d57f8e3cbd9a0b0e902f9ecf2ba1d96806c6c5",
-  "pivot": 9,
-  "source_sha256": "de9ae94f3a5e638d6e7fa509c1362b6c1e31c779e7ff0f0c1a3754619aac5fc0",
-  "status": "jet4-inconclusive",
-  "tests": []
-}

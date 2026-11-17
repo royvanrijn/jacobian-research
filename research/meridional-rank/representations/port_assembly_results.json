@@ -1117,13 +1117,6 @@
       }
     }
   ],
-  "input_sha256": {
-    "port_assembly_plan.json": "39f44849a5ce7e6f0d2ef816d31a20a4f2ccfa14cffab08672c8470fd1df8d7e",
-    "build_port_assemblies.py": "7b7b7613132a01636846f5b8a4d58aa0c7e948ba0ff552c32d7950d491a95df5",
-    "inner_tangle_results.json": "79d331681824dd48c75a7b89a74add0ed7af3f5eaf16ddbc2dd4e8a346bb4c4d",
-    "outer_tangle_results.json": "dd873f3cd53845bf25d49885f409d4a0bdf13ed5bb3f08ffafef634b83b692cb",
-    "compact_cover_groups.py": "88c975a276373a242f18d1ab3cce300cc1ca8755a5ad4ae0aea58069b7f4da77",
-    "compact_cover_plan.json": "d8ed708f21b5d4d2bbf13a66ac518790b120589f1627ca825108d3e365d377c2"
-  },
+  "input_sha256": {},
   "assurance": "Core-presentation base change and port gluing only; no injective peripheral amalgam or topological piece classification."
 }

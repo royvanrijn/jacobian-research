@@ -1,7 +1,0 @@
-{
-  "status": "PASS",
-  "shear": "X -> X-p_x^2; p_x fixed; Q,p_q fixed",
-  "commutator": "[X-p_x^2,R]=-4*h*p_x+12*h*X*Q*p_x+6*h^2*Q",
-  "conclusion": "The image position does not belong to the old R-centralizer fiber algebra; a native comparison must include the transverse momentum.",
-  "scope": "Exact chart-closure failure, not failure of the Weyl automorphism or quantization."
-}

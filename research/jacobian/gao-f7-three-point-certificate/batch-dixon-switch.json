@@ -1,9 +1,0 @@
-{
-  "reason": "The shared51-RHS solve remained unfinished with the default algorithm. The installed python-flint primary API documentation identifies algorithm=dixon as faster for large matrices; use it explicitly while retaining all exact polynomial checks.",
-  "terminated_owned_pids": [
-    2579160
-  ],
-  "previous_script": "solve_local_batched.py",
-  "new_script": "solve_local_batched_dixon.py",
-  "proved_nodes_before_switch": 482
-}

@@ -1,4 +1,0 @@
-ring R=0,(d,e),dp;
-option(redSB);short=0;
-ideal I=3159*d^2+198*d*e^2+286*e^2,-729*d^2+27*d*e^2-143*e^2,-166212*d^3+22464*d^2*e^2+1020357*d^2-12920*d*e^2+5168*e^4;
-ideal J=e^2,d^2;matrix T=lift(I,J);int i,j;print("WITNESS_BEGIN");for(i=1;i<=nrows(T);i++){for(j=1;j<=ncols(T);j++){if(T[i,j]!=0){print(string(i)+"|"+string(j)+"|"+string(T[i,j]));}}}print("WITNESS_END");quit;

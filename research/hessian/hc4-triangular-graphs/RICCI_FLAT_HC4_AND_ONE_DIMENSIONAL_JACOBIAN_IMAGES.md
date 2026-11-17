@@ -225,7 +225,7 @@ nonautomorphic Tang cotangent potential would be scalar-flat with a
 nonzero base Ricci block and a genuinely two-dimensional Jacobian-matrix
 image. No such polynomial Keller source is constructed here.
 
-FULL THEOREM TARGET: prove or break full HC4/JC2.
+HC4 and the plane Jacobian conjecture remain open.
 CURRENT LAST UNSOLVED IMPLICATION remains
 
     ACTUAL polynomial plane source

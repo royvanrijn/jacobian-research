@@ -1,7 +1,0 @@
-Revision v004,17November2026.
-Compile manuscript.tex twice with pdflatex;all six TeX inputs must be in the same directory. No images or bibliography processor required.
-24pages;no overfull boxes or undefined references. Math subsection headings retain benign hyperref metadata warnings.
-All24pages rendered and visually checked. Layout review is not mathematical assurance.
-New check_punctured_controls.py ran once successfully;receipt punctured_controls.json supports universal algebra identities only. It does not prove full-frame completeness or logarithmic estimates.
-Old successful checkers and registration scripts were not replayed.
-PAPER-B-R closed;PAPER-B-L narrowed to TWO ACTUAL irregular ends. PAPER-A still open. Goal ACTIVE;not submission-ready.

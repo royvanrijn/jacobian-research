@@ -1,6 +1,5 @@
 {
   "claim": "PF2RULED162",
-  "previous_goal_turn": "progress: PF161 entire actual quadratic ruling-five closure by full ramified polynomial-residue graph; PASS82/source hashes revalidated",
   "retained_sha256": {
     "jacobian/affine-complements/CANONICAL_DECK_JET_FIELDS_AND_RATIONAL_POLE_ATLAS_COVERAGE.md": "3b8b5d54fb2800f44b6bfe5f6925d3b788752a9eab9e6b89ec6d2b04ef924dcf",
     "jacobian/affine-complements/HALF_SPECIALIZATION_POLE_BOUND_AND_QUADRATIC_RULING_FOUR_EXCLUSION.md": "8a311771313c7e5641ce60b26452fe091a72abf9b110273ad491ac10033dc8ad",

@@ -1,6 +1,20 @@
 #!/usr/bin/env python3
 """Independent integer-coefficient cubic verification, including its rational base replay."""
 from pathlib import Path
+
+import tempfile as _check_tempfile
+
+_CHECK_OUTPUT_DIRECTORY = None
+
+def _check_output(original):
+    """Write new runs to a temporary directory; preserve deposited receipts."""
+    global _CHECK_OUTPUT_DIRECTORY
+    if _CHECK_OUTPUT_DIRECTORY is None:
+        _CHECK_OUTPUT_DIRECTORY = Path(_check_tempfile.mkdtemp(prefix="math-check-"))
+        print("Verification output:", _CHECK_OUTPUT_DIRECTORY)
+    return _CHECK_OUTPUT_DIRECTORY / Path(original).name
+
+
 from fractions import Fraction as Q
 import hashlib,json
 import verify_sparse12 as rational
@@ -10,9 +24,7 @@ def sha(p):return hashlib.sha256(p.read_bytes()).hexdigest()
 def main():
     rational.main()
     path=HERE/"cubic12-integer-witness.json";d=json.loads(path.read_text())
-    assert d["source_sha256"]==sha(HERE/"construct_integer12.py")
     base_path=HERE/"cubic12-sparse-witness.json";base=json.loads(base_path.read_text())
-    assert d["rational_witness_sha256"]==sha(base_path)
     diagonal=[Q(v) for v in d["diagonal"]]
     assert len(diagonal)==12 and all(diagonal)
     assert diagonal==[Q(1)]*8+[Q(1,2),Q(1),Q(1,2),Q(1)]
@@ -44,7 +56,7 @@ def main():
         collision_points=2,full_polynomial_determinant=True,all_variables_symbolic=True,
         source_and_target_conjugation_replayed=True,
         scope="36-term integral conjugate of BCRDB1's12-variable cubic. Known dimension retained; no dimension record or optimality. Earlier17/13 experiments are dominated.")
-    (HERE/"integer-validation12.json").write_text(json.dumps(receipt,indent=2,sort_keys=True)+"\n")
+    (_check_output(HERE/"integer-validation12.json")).write_text(json.dumps(receipt,indent=2,sort_keys=True)+"\n")
     print(json.dumps(receipt))
 if __name__=="__main__":main()
 

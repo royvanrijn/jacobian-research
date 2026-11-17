@@ -305,20 +305,13 @@ satisfy [S,T]=h exactly. This control and the QFT1 rank-one/rank-two
 split keep the numerical inequality separate from the additional
 Long mate obstruction.
 
-The next useful carrier construction must satisfy the rank budget,
+An actual finite carrier must satisfy the rank budget,
 the full right Weyl action, global admission and a finite-left lattice
 together. Branch splitting alone is now explicitly achievable and
 explicitly insufficient. The finite-left Long carrier in
-[QMC1](FINITE_GRAPH_CARRIERS_AND_MATRIX_REALIZATION.md) and the bounded
+the full compatible left/right module conditions and the bounded
 scalar target remain open.
 
-[Exact controls](check_fourier_rank_budget.py) verify the projector
-and its branch frames, polynomial Fourier elimination in declared
-degrees, the quadratic indicial roots, the classical boundary factor,
-the naive mate defect and the linear exact pair. The universal rank
-inequality, cyclic descent, all-degree slope and rank calculations
-use the written proofs and the cited standard Fourier-rank and
-formal-connection theorems. No independent theorem replay, formal
-verification, external review, novelty priority, actual finite-left
-Long carrier, bounded Long lift, scalar or matrix counterexample,
-all-representative nonlifting or DC2 solution is claimed.
+The rank inequalities and all-degree splitting construction are written
+arguments above. The scalar classification's finite controls are retained
+separately; no formal verification or independent external review is claimed.

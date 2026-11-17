@@ -1,9 +1,0 @@
-{
-  "date":"2026-11-17","frozen_before_execution":true,
-  "selection":"Every21 onto S4 transposition colouring in small_symmetric_full_panel_results.json, without replacement",
-  "motivation":"For a simple4-branched cover, mr>=3+rank(pi1 Y4), so any nontrivial cover group gives sharp4. The completed integer scalar matrices show H1(Y4;Z)=0 on all21, so every group is perfect and solvable quotient searches are pointless. Build exact group presentations; prove triviality by replayable eliminations where possible, otherwise seek a nontrivial A5 image (the smallest nonsolvable target).",
-  "operations":"Fold the branched graph after fixed-sheet loops and meridian-square cycles, gauge a3-edge spanning tree, lift every knot relator from all4 sheets, and retain exact one-occurrence Tietze eliminations. Only if needed exhaust A5 assignments on at most3 remaining generators; accept a nontrivial original-generator witness after independent word replay.",
-  "limits":{"covers":21,"seconds_total":90,"seconds_per_cover":8,"A5_max_generators":3,"checkpoint_each_cover":true},
-  "acceptance":"A triviality statement requires exact elimination replay. A nontriviality statement requires an explicit quotient or uniform group proof; H1=0 or a capped search gives no triviality conclusion. Named PD/source and four-seed upper provenance are required before additional sharp named equalities.",
-  "scope":"Complete fixed21 simple-four-sheet cover group gate, not all cover monodromy or full MRC. Earlier scalar-negative records remain retained."
-}

@@ -3,12 +3,9 @@
 2026-11-16. HC4MYLZ0/1. ACTUAL complex polynomial PLANE Keller maps,
 ALL DEGREES and ALL positive integer moment orders.
 
-FULL THEOREM TARGET: prove HC4/JC2 or construct an actual counterexample.
-CURRENT LAST UNSOLVED IMPLICATION: ACTUAL polynomial plane source forces
+HC4 and the plane Jacobian conjecture remain open.
+The remaining unproved implication is: ACTUAL polynomial plane source forces
 Tr(Lambda_L*Lambda_L) subset B, or full marked-energy integrality; OPEN.
-The previous goal turn made PROGRESS with LY0/1. External review/outreach
-is DEFERRED; the parity source theorem remains unadopted.
-
 The higher-even-moment spaces are finite projective lattices, not unknown
 analytic completions. Their exact divisors separate integrability from
 multiplication closure and trace perfection. The sixth-moment lattice has

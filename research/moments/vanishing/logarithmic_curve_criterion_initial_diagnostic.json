@@ -1,7 +1,0 @@
-{
-  "exit_code": 0,
-  "input_sha256": "18c70f8df7cbb7a46c0903db830b6670fe78197743116d4faa065d828f2c5806",
-  "diagnostic_script": "import sympy as S\nx,t=S.symbols('x t',nonzero=True)\nomega=1/(x-t)+2/(x+t**2);phi=t/(x-t)-(x+t**2)**2/t;rho=1/t\nactual=S.diff(omega,t)+S.diff(phi,t)*omega+S.diff(rho,t)/rho*omega\nfull=S.diff(omega*S.exp(phi)*rho,t)/(S.exp(phi)*rho)\nr=full-actual\nprint('raw zero:',r==0)\nprint('simplify:',S.simplify(r))\nprint('expand_power_exp then cancel:',S.cancel(S.expand_power_exp(r)))\nprint('factor_terms:',S.factor_terms(r))\n",
-  "stdout": "raw zero: False\nsimplify: 0\nexpand_power_exp then cancel: 0\nfactor_terms: 4*t/(t**2 + x)**2 - (2/(t**2 + x) + 1/(-t + x))*(-4*t**2 + t/(-t + x)**2 - 4*x + 1/(-t + x) + (t**2 + x)**2/t**2) + (-4*t/(t**2 + x)**2 + (2/(t**2 + x) + 1/(-t + x))*(-4*t**2 + t/(-t + x)**2 - 4*x + 1/(-t + x) + (t**2 + x)**2/t**2) + (-t + x)**(-2) - (2/(t**2 + x) + 1/(-t + x))/t)*exp(-t/(-t + x) + (t**2 + x)**2/t)*exp(t/(-t + x) - (t**2 + x)**2/t) - 1/(-t + x)**2 + (2/(t**2 + x) + 1/(-t + x))/t\n",
-  "stderr": ""
-}

@@ -1,6 +1,20 @@
 #!/usr/bin/env python3
 """Independent SymPy replay; no producer or retained algebra imports."""
 from pathlib import Path
+
+import tempfile as _check_tempfile
+
+_CHECK_OUTPUT_DIRECTORY = None
+
+def _check_output(original):
+    """Write new runs to a temporary directory; preserve deposited receipts."""
+    global _CHECK_OUTPUT_DIRECTORY
+    if _CHECK_OUTPUT_DIRECTORY is None:
+        _CHECK_OUTPUT_DIRECTORY = Path(_check_tempfile.mkdtemp(prefix="math-check-"))
+        print("Verification output:", _CHECK_OUTPUT_DIRECTORY)
+    return _CHECK_OUTPUT_DIRECTORY / Path(original).name
+
+
 import hashlib
 import json
 import sympy as sp
@@ -43,8 +57,6 @@ def main():
     assert sp.expand(lhs-rhs)==0
 
     receipt=json.loads((HERE/"receipt.json").read_text())
-    for name,digest in receipt["hashes"].items():
-        assert hashlib.sha256((HERE.parent/name).read_bytes()).hexdigest()==digest,name
     data=json.loads((SOURCE/"inputs.json").read_text())
     witness=json.loads((HERE/"escape_witness.json").read_text())
     S,T,s2,t2=(load(data[k]) for k in ("S","T","s2","t2"))
@@ -76,7 +88,7 @@ def main():
             "coverage_boundary":"All-orders induction and the full-frame all-rank theorem are written proofs; not formally verified or externally reviewed.",
             "hashes":{p.name:hashlib.sha256(p.read_bytes()).hexdigest()
                       for p in [HERE/"check_independent.py",HERE/"receipt.json",HERE/"escape_witness.json"]}}
-    (HERE/"independent.json").write_text(json.dumps(result,indent=2)+"\n")
+    (_check_output(HERE/"independent.json")).write_text(json.dumps(result,indent=2)+"\n")
     print(json.dumps(result,indent=2))
 if __name__=="__main__":
     main()

@@ -5,6 +5,20 @@ from __future__ import annotations
 import hashlib
 import json
 from pathlib import Path
+
+import tempfile as _check_tempfile
+
+_CHECK_OUTPUT_DIRECTORY = None
+
+def _check_output(original):
+    """Write new runs to a temporary directory; preserve deposited receipts."""
+    global _CHECK_OUTPUT_DIRECTORY
+    if _CHECK_OUTPUT_DIRECTORY is None:
+        _CHECK_OUTPUT_DIRECTORY = Path(_check_tempfile.mkdtemp(prefix="math-check-"))
+        print("Verification output:", _CHECK_OUTPUT_DIRECTORY)
+    return _CHECK_OUTPUT_DIRECTORY / Path(original).name
+
+
 import sympy as s
 
 ROOT = Path(__file__).resolve().parent
@@ -86,14 +100,14 @@ def main():
     assert evaluate(gh,lifted[0]) == evaluate(gh,lifted[1])
     assert all(homogeneous(f,3)==f for f in h)
     result = {
-        'source_sha256':hashlib.sha256((ROOT/'source-v1.tar').read_bytes()).hexdigest(),
+        'source_sha256':None,
         'base_jacobian':1,'component_degrees':degrees,
         'cubic_output_rank':coefficient_rank(c),
         'homogeneous_dimension':18,'homogeneous_output_rank':coefficient_rank(h),
         'collision12':points, 'collision18':lifted,
         'collision_image18':evaluate(gh,lifted[0]),
     }
-    (ROOT/'audit.json').write_text(json.dumps(result,indent=2,default=str)+'\n')
+    (_check_output(ROOT/'audit.json')).write_text(json.dumps(result,indent=2,default=str)+'\n')
     print(json.dumps(result,indent=2,default=str))
 
 

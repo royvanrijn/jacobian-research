@@ -267,9 +267,9 @@
   "actual_rank3_proved": false,
   "assurance": "Independent corner unions, tree enumeration and all8192 edge-subsets per13-edge graph. No producer graph/search imports. Actual mutation/common-cover theorem additionally uses read Greene Cor4.5 and Morton Thm3, explicitly imported in the written proof; no bridge or meridional-rank mutation invariance assumed.",
   "input_sha256": {
-    "verify_mutation_covers.py": "92020c13f5e7b533fbe5df0e2071959c6032f2e6b70e58fb8e2f0e1eab676871",
-    "mutation_cover_results.json": "d12938a44ce9589300356ac83333734514f5b896c1166d98f3db43423a0b1c18",
-    "mutation_cover_plan.json": "53997bb367890006c42c6aee10e570ce69e4f1fa933af3823f05899daf692220",
+    "verify_mutation_covers.py": "cbc25df27feb84f2c1ee9ce8b94e0bfb316c31202fd9e7bbd99708a80733f4ac",
+    "mutation_cover_results.json": "aaa7282c5b0de8478b03fb0d3e3913749b4f95398a4542d197f7d54456b11e8a",
+    "mutation_cover_inputs.json": "53997bb367890006c42c6aee10e570ce69e4f1fa933af3823f05899daf692220",
     "parabolic_panel.json": "fd300c9d04076c3eea911a104a810743f4d300ec60478c42f7ea97c115298286"
   }
 }

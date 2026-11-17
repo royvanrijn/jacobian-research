@@ -7,9 +7,8 @@ every global complete-intersection presentation,with arbitrarily many
 helpers and polynomial or Laurent stabilizations. The criterion does NOT
 prove such a presentation always exists. Full HC4/JC2 remains open.
 
-The full-normalization class-group calculation is already retained in
-[KRP1,Section5](../../foundations/verified/KELLER_RITT_PRODUCT_THEOREM.md).
-The new use here is its canonical ramification class and an argument
+The full-normalization class-group calculation is proved in Section1 below.
+It is used here for the canonical ramification class and an argument
 for EVERY embedded intermediate field,where no intermediate affine-space
 model is assumed. The degree-six smooth-cover discussion of
 [finite-flat trace lattices,Section6](https://github.com/alok/jacobian-two/blob/main/docs/finite-flat-trace-lattices.md)
@@ -279,7 +278,7 @@ canonical/different class and are not excluded by merely restating it.
 What is now excluded is an entire all-degree construction architecture:
 normal embedded finite covers with torsion canonical class,including
 global complete intersections and their trivial stabilizations. A useful
-next result must either prove the full normalization has such a property
+the missing result must either prove the full normalization has such a property
 from additional actual global Keller data,or control the remaining
 nontorsion canonical module and multiplication algebra. No such automatic
 trivialization is supplied. A proper intermediate field with nontorsion
@@ -288,12 +287,7 @@ Full HC4/JC2,the non-CI plane normalization case,JA/JB global rational
 recovery,native critical non-CI recognition and the endpoint inversions
 remain open.
 
-The [checker](verify_canonical_boundary.py),
-[receipt](receipt-canonical-boundary.json) and
-[context](sources/canonical-boundary-context.json) bind valuation,
-canonical-class,regular-sequence and chart controls with unchanged
-retained evidence. The arbitrary-field-extension argument and divisor
-proofs are written mathematics;finite checks do not certify purity or
-the geometric classification. No old registered mathematical checker
-was replayed. Independent replay,formal verification and external review
-are not claimed.
+These are written normalization, valuation and class-group arguments.
+They do not prove that every intermediate has the excluded presentation,
+and they do not resolve HC4 or the plane Jacobian conjecture.
+No formal verification or independent external review is claimed.

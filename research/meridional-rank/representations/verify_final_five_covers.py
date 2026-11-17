@@ -145,9 +145,9 @@ def check_model(row,source):
 
 
 def main():
-    started=time.monotonic();plan=json.loads((HERE/'final_five_peripheral_plan.json').read_text())
+    started=time.monotonic();plan=json.loads((HERE/'final_five_peripheral_inputs.json').read_text())
     structural=json.loads((HERE/'final_five_structure_results.json').read_text())
-    splan=json.loads((HERE/'final_five_structure_plan.json').read_text())
+    splan=json.loads((HERE/'final_five_structure_inputs.json').read_text())
     result=json.loads((HERE/'final_five_peripheral_results.json').read_text())
     assert result['status']=='COMPLETE_FROZEN_PERIPHERAL_INPUTS' and plan['targets']==NAMES
     for record in (structural,result):
@@ -181,12 +181,7 @@ def main():
     reject('genuine meridian slope r1 has no claimed nonabelian filling obstruction',lambda:filling_certificate(2,1,0,'sk'))
     relation=commutator([1],[2,2]);assert not subst(relation,{1:[],2:[2]}) and not subst(relation,{1:[-2],2:[2]})
     assert time.monotonic()-started<plan['limits']['maximum_seconds']
-    files=['verify_final_five_covers.py','final_five_structure_plan.json','final_five_structure_results.json',
-        'final_five_peripheral_plan.json','final_five_peripheral_results.json','parabolic_panel.json',
-        'verify_compact_covers.py','verify_port_assemblies.py','verify_mutation_covers.py','verify_three_piece_covers.py',
-        'verify_four_piece_covers.py','verify_double_transpositions.py','parabolic_lifts.py',
-        'three_piece_cover_results.json','three_piece_cover_verification.json','three_piece_source_audit.json',
-        'joint_a5_results.json','joint_a5_verification.json']
+    files=['verify_final_five_covers.py', 'final_five_structure_inputs.json', 'final_five_structure_results.json', 'final_five_peripheral_inputs.json', 'final_five_peripheral_results.json', 'three_piece_cover_results.json', 'three_piece_cover_verification.json', 'remaining_cover_structure_results.json', 'parabolic_panel.json', 'joint_a5_results.json', 'verify_compact_covers.py', 'verify_port_assemblies.py', 'verify_mutation_covers.py', 'verify_three_piece_covers.py', 'verify_four_piece_covers.py', 'verify_double_transpositions.py', 'parabolic_lifts.py', 'FINAL_FIVE_DOUBLE_COVERS_SHARP_FOUR.tex']
     receipt={'status':'PASS independent final-five source, peripheral, filling and upper4 inputs',
         'source_audit':checked,'positive_controls':controls,'targets':models,'upper4':upper,'corruptions_rejected':rejected,
         'cyclic_meridian_filling_control':'k=1 or sk=1 leaves <s> with no relation',

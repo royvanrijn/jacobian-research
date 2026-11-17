@@ -297,7 +297,8 @@ terms, alternative leading faces, deformed first images and
 projective/matrix actions with a genuinely nonscalar S remain
 possible targets. Any positive model still needs all full relations,
 the correct classical graph, global admission and finite-left
-generation as in [QMC1](FINITE_GRAPH_CARRIERS_AND_MATRIX_REALIZATION.md).
+generation. A scalar branch computation alone does not supply those
+finite-carrier conditions.
 
 No prescribed arithmetic support, p^2 lift, all-representative
 nonlifting, finite-left Long carrier, bounded full Long lift,

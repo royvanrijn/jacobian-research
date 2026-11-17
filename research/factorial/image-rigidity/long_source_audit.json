@@ -1,8 +1,5 @@
 {
   "date": "2026-11-16",
-  "previous_goal_turn": "progress",
-  "previous_turn_evidence": "Revalidated existing rigidity proof, adapters, registered entries and 152-control receipt against current files before continuing.",
-  "current_turn": "progress",
   "canonical_proof": "factorial/image-rigidity/LONG_EIT_AND_FC2_AUDIT.tex",
   "source_sha256": {
     "sources/long-fc2.tex": "e0341bf6319ec2b6c369ff6b491976462b56c2de0b5414e8cc303f080523bad8",

@@ -1,3 +1,0 @@
-SOURCE_PRESENTATION|matrix {{t*dt-c0*dc0, t*c0^2-dt, t^2*c0-dc0}}
-RESULT_JSON|{"nodes": [], "status": "DECIDED", "normalization_torsion_exponent": 1, "coefficient_ring_phase_safe": true, "safe_closed_components": [], "polynomial_Hom_normalization_ideal_lift": [[[[0], "1"]]], "normalization_colon_stable": true, "safe_radical_ideal": [[[[0], "1"]]], "parameter_ideal": [[[[0], "1"]]]}
-GAUSSIAN_FAMILY_COMPLETE

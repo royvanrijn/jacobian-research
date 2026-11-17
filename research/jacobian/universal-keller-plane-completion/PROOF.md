@@ -1,6 +1,6 @@
 # Profile-factor rigidity and the canonical plane completion
 
-15 November 2026. Three written general claims and selected exact controls. No independent whole-proof replay, formal verification, external review or novelty certificate. OP-KDESC remains open. This extends [native profile orbits](../universal-keller-native-orbits/PROOF.md) using a classical plane line-injectivity theorem, rather than a further coefficient search.
+15 November 2026. Three written general claims and selected exact controls. No independent whole-proof replay, formal verification, external review or novelty certificate. OP-KDESC remains open. The profile-factor and plane-completion statements below are the retained results.
 
 Work over a characteristic-zero field k, with retained identity parameters u. All assertions about a relative block fix u. Put
 

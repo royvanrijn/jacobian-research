@@ -9,16 +9,12 @@
 \newcommand{\C}{\mathbb C}
 \newcommand{\F}{\mathbb F}
 \newcommand{\Z}{\mathbb Z}
-\title{All factorial exponents from an elementary large-exponent cutoff}
+\title{A uniform large-exponent coefficient criterion}
 \author{User-supplied coefficient argument checked and integrated; retained prime-power proof credited}
 \date{17 November 2026}
 \begin{document}
 \maketitle
-Put $F_{n,m}(T)=\sum_{j=0}^n\binom nj(mj)!T^j$, with positive integer
-$n,m$ and ordinary Gamma shape one. This note proves an explicit
-large-exponent criterion and transfers the registered simultaneous bounds
-to \emph{all} positive exponents. The existing all-index prime-power proof
-is retained, with $m=1$ made explicit; it is not claimed as a new contribution.
+This note supplies the elementary large-exponent criterion and prime-power input used by the completed \href{ALL_UNIVARIATE_TWO_TERM_SFC.tex}{all-index theorem}. It makes no separate exceptional-set claim.
 
 \section{A coefficient estimate excluding every repeated root}
 \begin{lemma}\label{lem:factorial}
@@ -156,77 +152,5 @@ distinct prime divisors.
 This leaves the original exponent six in the possible range for $n>4$,
 so the all-index Strong Factorial problem is not closed.
 
-\section{One exceptional set for every positive exponent}
-Let $D(X)$ be the registered count of indices admitting a nonsquarefree
-$F_{n,m}$ for some $1\le m\le n^{1/16}$, and define
-\[
- D_{\rm all}(X)=\#\{1\le n\le X:\exists m\ge1,\ F_{n,m}\text{ not squarefree}\}.
-\]
-\begin{lemma}\label{lem:overlap}
-For all real $n\ge2^{144}$,
-\[
- 2\log_2(2n)\le n^{1/16}.
-\]
-\end{lemma}
-\begin{proof}
-Write $u=n^{1/16}\ge512$. The difference is
-$g(u)=u-32\log_2u-2$, with $g(512)=222>0$.
-Using $\log2>1/2$ gives
-$g'(u)=1-32/(u\log2)>1-64/u\ge7/8>0$.
-This is an exact endpoint and derivative certificate, not a rounded
-logarithm computation.
-\end{proof}
 
-\begin{theorem}\label{thm:all}
-The unrestricted and capped exceptional sets agree at every integer
-$n\ge2^{144}$; in particular
-\[
- D(X)\le D_{\rm all}(X)\le D(X)+2^{144}. \tag{4}
-\]
-Consequently, with absolute implied constants,
-\[
- D_{\rm all}(X)\ll\frac{X}{(\log X)^{1/50}}
-\]
-using the registered published-2016 route, and
-\[
- D_{\rm all}(X)\ll X^{1-10^{-18}}
-\]
-using additionally the registered source-qualified dense MR II route.
-For the latter route,
-\[
- \sum_{\substack{n\ge1\\\exists m\ge1:\ F_{n,m}\text{ not squarefree}}}\frac1n<\infty.
-\]
-\end{theorem}
-\begin{proof}
-The capped bad set is always contained in the unrestricted one.
-At $n\ge2^{144}$, Corollary~\ref{cor:candidates} and Lemma~\ref{lem:overlap}
-place \emph{every} possible bad exponent below $n^{1/16}$.
-Thus the sets agree there; their finite initial difference proves (4).
-Transfer both estimates from
-\href{SIMULTANEOUS_EXPONENTS_AND_POWER_SAVING.tex}{the simultaneous theorem}.
-The fixed additive constant is absorbed asymptotically, and its finite
-initial reciprocal contribution does not affect convergence; partial
-summation of the power bound supplies the tail.
-\end{proof}
-The number $2^{144}$ is only an explicit overlap threshold. It is not an
-extracted analytic starting threshold, a numerical implied constant, or
-a pointwise verification of every smaller index.
-The published logarithmic route remains independent of MR II; it alone
-does not supply harmonic convergence. The power and harmonic conclusions
-retain the dense MR II preprint Theorem~9.2(ii) input, its published
-sparse-sieve warning, exclusion of Section~10/Lemma~10.3, and the scoped
-application/dependency audit rather than full-preprint validation.
-No all-index SFC, finiteness of the exceptional set, other Gamma-shape
-extension, novelty, independent replay, formal verification or external
-review is claimed.
-
-\section{Exact executable boundary}
-\href{all_exponent_squarefree.py}{Certificates} test $2^m\ge4n^2$ using
-integer bit lengths, so enormous input $m$ does not require constructing
-$2^m$. Candidate exponents are filtered only below this logarithmic cutoff.
-The prime-power wrapper reuses the retained digit residual theorem and
-admits $m=1$ via $r=0$. Its explicit polynomial replay is a separate finite
-operation. \href{verify_all_exponent_squarefree.py}{Controls} use exact
-integer powers and rational bounds, not numerical approximation of the
-normalized algebraic coefficients or a density extrapolation.
 \end{document}

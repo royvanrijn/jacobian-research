@@ -90,11 +90,11 @@ If two right images reduce to R,S, their finite joint centralizer
 is therefore commutative by (4). No finite conjugating frame is
 being inferred.
 
-The same conclusion holds for the generic endomorphism algebra
-of a finite-left full graph carrier from
-[QMC1](FINITE_GRAPH_CARRIERS_AND_MATRIX_REALIZATION.md).
-Here is the faithfulness point. QMC1 gives a rank-one torsion-free
-generic left module P over the Weyl algebra A=A_R tensor K((h)).
+More generally, consider a rank-one torsion-free generic left module P
+over the Weyl algebra A=A_R tensor K((h)), with a finite h-lattice M whose
+completion is free of rank one. The same conclusion holds for its generic
+endomorphism algebra under these explicit hypotheses. Here is the
+faithfulness argument.
 An embedding P into A is obtained by a fractional-ideal realization.
 After clearing h poles on finitely many generators of its lattice M,
 there is an injection M into A_R. Thus M is h-separated.
@@ -337,30 +337,11 @@ These are a full flat pair, but their outer normalized traces
 have curvature [A,B]/4, nonzero. Thus the centralizer
 commutativity hypothesis in (12) is essential.
 
-## Controls and next obligation
+## Verification and current boundary
 
-[Exact controls](check_spectral_curvature.py) verify the retained
-Long chart and Hamiltonian kernels, its inverse localized ring
-formulas, a globally finite nonpositional identity deformation,
-the two Koszul maps and right evaluation,
-the spectral-torsion identity, curvature change and finite polynomial
-flattening, nontrivial scalar-position matrix completions and their
-trace, the noncommutative-centralizer boundary, the PBW derivation
-compatibility and escaping-boundary residue/formal primitive.
-Universal centralizer exhaustion, all-deformation induction, faithful
-carrier transport, exact spectral/curvature criteria, all matrix sizes
-and identity stabilization use the written proofs.
-
-The next actual carrier test is now precise: fix a finite algebra or
-projective lattice and a commuting Long pair, compute the two spectral
-translation classes there, then compute (10) if they vanish.
-Proving a class nonzero excludes every conjugate choice in that
-actual algebra. Proving it zero must exhibit finite representatives;
-a completed primitive is insufficient.
-
-No nonzero universal class has been computed for every Long
-deformation, and no finite Long carrier is constructed here.
-No bounded full lift, all-representative nonlifting, scalar or
-matrix counterexample, independent theorem replay, formal
-verification, external review, novelty priority or DC2 solution
-is claimed.
+The centralizer, spectral and curvature statements above are written
+proofs under the displayed algebra and module hypotheses.
+[Finite centralizer controls](check_finite_centralizer_completion.py)
+retain complementary exact examples; they do not establish the universal
+proof by sampling. A bounded full Long carrier remains unconstructed.
+No formal verification or independent external review is claimed.

@@ -1,5 +1,5 @@
 {
-  "title": "Haar Moments and the Mathieu Property of Reductive Homogeneous Spaces",
+  "title": "Counterexamples to the Mathieu Property: From Explicit Quotient Constructions to a General Classification",
   "author": {
     "name": "Roy van Rijn",
     "orcid": "0009-0000-2808-0645"
@@ -9,10 +9,10 @@
   "status": "ready-for-review",
   "source": "main.tex",
   "pdf": "paper.pdf",
-  "build": "latexmk -pdf -interaction=nonstopmode -halt-on-error main.tex",
-  "verification": "Written all-order proofs; limited exact polynomial and radial checks. Independent replay, formal verification and external review are not yet claimed.",
+  "build": "latexmk -pdf -jobname=paper -interaction=nonstopmode -halt-on-error main.tex",
+  "verification": "Written all-order proofs with internal mathematical, primary-source citation and PDF review. Replayed exact identities, invariant substitutions, direct exceptional moments at orders 1 and 2, binary coefficients at 28 primes, radial row/phase moments and double-integral evaluations through order 8, and two rejection controls. These finite controls do not certify the unrestricted theorems. Independent replay, formal verification and external review are not claimed.",
   "next_steps": [
-    "Obtain an independent mathematical review and replay the stated exact checks.",
+    "Obtain an external mathematical review and an independent replay of the stated exact checks.",
     "Resolve review findings and finalize submission metadata before depositing."
   ],
   "catalogued_on": "2026-11-17",

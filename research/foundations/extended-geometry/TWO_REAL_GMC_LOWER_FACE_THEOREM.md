@@ -22,26 +22,7 @@ where \(S\subset\mathbb Z\) is finite and
 > **Corollary.** The Gaussian Moments Conjecture holds in two real
 > variables.
 
-Christopher D. Long's contemporaneous
-[factorially weighted multitorus theorem](FACTORIALLY_WEIGHTED_MULTITORUS_THEOREM.md)
-contains this result as its rank-one Gaussian specialization and proves the
-stronger statements
-
-\[
- \mathbb E(P^m)=0\ (m\gg0)
- \Longleftrightarrow
- \mathbb E(P^m)=0\ (m\geq1)
- \Longleftrightarrow
- 0\notin\operatorname{conv}(S),
-\]
-
-together with nonvanishing at \(rp\) for every sufficiently large prime
-\(p\) when \(0\in\operatorname{conv}(S)\).  The checked-in Lean theorem
-formalizes the all-positive-power implication used for GMC(2), not these
-stronger quantifiers or arbitrary torus rank.
-
-This contains the three-level, unit-star, arbitrary-star, and circuit
-results without a graph hypothesis.
+See the [published paper](../../../results/gaussian-moments-two-variables/main.tex) for the literature, attribution and precise theorem statement.
 
 ## 2. The exposed lower face
 
@@ -171,18 +152,6 @@ classification.  In circular coordinates the one-parameter subgroup
 \((Z,W)\mapsto(tZ,t^{-1}W)\), or its inverse, drives \(P\) to zero and lies
 in \(\operatorname{SO}_2(\mathbb C)\).
 
-The same proof applies to a broad class of weighted constant-term
-functionals once factorial divisibility is replaced by normalized prime
-separation.  The abstract theorem, Gamma and factorial-ratio families,
-\(q\)-factorial extension, and limits of the method are recorded in
-[the companion weighted-functional note](PRIME_SEPARATING_RADIAL_MOMENTS.md).
-
 ## 6. Lean formalization
 
-A modular Lean 4 development is available in
-[`formal/gmc2`](../formal/gmc2/README.md).  It mechanically
-checks the factorial-quotient divisibility, prime-dilated isolation,
-Frobenius/constant-term commutation, the final contradiction, and the
-eventual one-sided-weight argument.  DvdK, finite-type good reduction, and
-rational supporting-face extraction are exposed as named imported
-interfaces; they are not hidden behind `sorry`.
+The [GMC(2) project](../formal/gmc2/README.md) proves the bivariate theorem with two explicit imported mathematical inputs: the Duistermaat--van der Kallen theorem and finite-type specialization. Rational supporting-face extraction is proved in the project. The formal scope and exported theorem are stated in that project's README.

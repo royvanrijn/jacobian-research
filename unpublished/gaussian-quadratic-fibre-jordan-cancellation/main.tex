@@ -1,9 +1,9 @@
 \documentclass[11pt]{article}
 \usepackage{microtype,amsmath,amssymb,amsthm,mathtools,booktabs,array}
-\usepackage[margin=1.05in]{geometry}
+\usepackage[margin=1in]{geometry}
 \usepackage[colorlinks=true,linkcolor=blue!45!black,citecolor=blue!45!black,urlcolor=blue!45!black]{hyperref}
 \usepackage{xcolor}
-\hypersetup{pdftitle={All-degree Gaussian quadratic fibres: Jordan cancellation and unit rigidity},pdfsubject={Working mathematical manuscript}}
+\hypersetup{pdftitle={Gaussian Moment Vanishing with One Base Variable and Constant Quadratic Fibres},pdfsubject={Working mathematical manuscript}}
 \newtheorem{theorem}{Theorem}[section]
 \newtheorem{proposition}[theorem]{Proposition}
 \newtheorem{lemma}[theorem]{Lemma}
@@ -16,9 +16,24 @@
 \newcommand{\wt}{\operatorname{wt}}
 \newcommand{\G}{\mathsf G}
 \DeclareMathOperator{\Span}{span}
-\title{All-degree Gaussian quadratic fibres:\\Jordan cancellation and unit rigidity}
-\author{}\date{17 November 2026: internal proof note}
+\title{Gaussian Moment Vanishing with One Base Variable\\and Constant Quadratic Fibres}
+\author{Roy van Rijn}\date{17 November 2026: unpublished manuscript}
 \begin{document}\maketitle
+
+\begin{abstract}
+We study complex Gaussian phases with one unrestricted base variable and
+any number of quadratic fibre variables, whose quadratic matrix is
+constant. Vanishing of every positive pure moment is equivalent to
+polynomiality of every marked moment series and to explicit finite
+rational identities. The proof allows arbitrary Jordan blocks: purity
+forces each nonzero primary block to be cyclic with an affine source,
+and a polynomial precision matrix of determinant one cancels every
+marked-period pole. We give a sufficient degree bound and a formal
+stationary-phase proof of the leading-coefficient obstruction used in
+the reduction. Affine normalization also covers correlated real Gaussian
+laws with positive-definite covariance. A counterexample with two base
+variables explains why the one-base hypothesis matters.
+\end{abstract}
 
 \section{The result and its meaning}
 
@@ -30,15 +45,19 @@ Expectation is extended complex-linearly to polynomials. We study
 where $B$ and $g$ have arbitrary polynomial degrees. Thus the fibre
 variables $Y$ occur quadratically with constant quadratic part,
 while the dependence on the single ordinary Gaussian base $u$ is
-unrestricted. The ordinary, nonisotropic base is essential.
+unrestricted. The one-dimensional, nonisotropic base is essential. We use standard
+normalization here; Corollary~\ref{cor:affinegaussian} treats other
+nondegenerate real Gaussian laws.
 
-For an original polynomial marker $Q(u,Y)$ put
+For a polynomial marker $Q(u,Y)$, independent of $t$, put
 \[
  \Phi_Q(t)=\sum_{m\ge0}\E[QP^m]\frac{t^m}{m!}.
 \]
 These are formal series: convergence of $e^{tP}$ on the original
-real integration space is never assumed. Call $P$ pure if $\Phi_1=1$
-and safe if every $\Phi_Q$ is polynomial.
+real integration space is never assumed. Call $P$ \emph{pure} if
+$\Phi_1=1$, equivalently $\E[P^m]=0$ for every $m\ge1$. Call it
+\emph{safe} if every $\Phi_Q$ is polynomial, equivalently
+$\E[QP^m]=0$ for all sufficiently large $m$, for each fixed $Q$.
 
 \begin{theorem}\label{thm:fullfibre}
 For the phases above the following conditions are equivalent:
@@ -73,15 +92,21 @@ $B=0$. Then every original marker obeys the sufficient bound
 The coefficient is not asserted optimal.
 \end{theorem}
 
-The issue is cancellation of poles of rational marked periods.
-Rank one over $\C(t)$ does not imply safety. The proof below
-instead shows that a remaining Gaussian precision matrix is
-polynomial and has determinant one. Its inverse, and hence
-every Gaussian contraction of an original marker, is polynomial.
-This resolves defective blocks of every size by the same argument.
-It also shows why a polynomial distinguished unit cannot be
-nonconstant in this class. No conclusion about arbitrary phases
-in several nonlinear base variables is inferred.
+The proof has two obstacles. First, quadratic elimination leaves an
+arbitrary-degree phase in $u$. The formal leading-coefficient obstruction,
+proved in the final section, forces that effective phase to be quadratic.
+This gives the rational identities above. Second, rational marked periods
+may still have poles. Their cancellation follows from affine-source
+rigidity on the nonzero primary spaces and a joint Gaussian precision
+matrix of determinant one. Its inverse is polynomial, so every Wick
+contraction is polynomial as well. This argument treats defective blocks
+of every size.
+
+The algebraic reduction and cancellation occupy the next three sections.
+A scalar version of the cancellation identities makes the mechanism
+explicit, and a nonlinear example shows how a nilpotent zero fibre can
+coexist with a defective nonzero block. The final section supplies the
+formal stationary argument used in the first reduction.
 
 \section{A polynomial unit forces the finite purity identities}
 
@@ -91,14 +116,19 @@ and scalar normalization $h$, the spatial quotient is
  M=\C(t)[x]/(\partial_x+\varphi_x)\C(t)[x],\qquad
  \nabla[q]=[q_t+(\varphi_t+h'/h)q].
 \]
+The quotient is by the image of the displayed differential operator,
+not by an ordinary ideal. The parameter connection is well defined because
+the spatial and parameter twisted derivatives commute. The class $[1]$
+is called the \emph{seed}; a functional $J$ is \emph{horizontal} when
+$J(\nabla[q])=\partial_tJ([q])$. A rational horizontal quotient takes
+values in $\C(t)$ with its ordinary derivative.
 The full leading-coefficient theorem proved in the last section says:
 if the actual degree is $r\ge2$ and
 $r v_\infty(h)>v_\infty([x^r]\varphi)$, its differential seed
 submodule has no rational horizontal quotient taking $[1]$ to one.
 Algebraic $h$ is allowed after a finite cover. The proof retains
-all critical multiplicities, collisions and escaping roots, and
-allows nonconvergent formal Laurent coefficients over a valued
-field. It makes no arbitrary-ring assertion.
+all critical multiplicities, collisions and escaping roots, over the
+formal Laurent field. Convergence is unnecessary.
 
 \begin{lemma}[Rational seed restriction]\label{lem:seedfunctional}
 A horizontal formal functional taking a seed to one restricts on
@@ -168,10 +198,8 @@ forces $f=1$, since $f(0)=1$. This gives \eqref{eq:purity}.
 Conversely those identities give the unit series one directly.
 \end{proof}
 
-This argument proves more than safety implies purity in the
-specified family: the unit period being polynomial already
-forces it to be constant. No assertion about the span of other
-markers is used in this direction.
+In particular, a polynomial unit period in this family is always one.
+This implication uses only the seed, independently of the other markers.
 
 \section{Purity forces affine sources on every nonzero block}
 
@@ -249,7 +277,8 @@ a proof of an invariant affine-source statement, not an
 unjustified reset of Gaussian covariances. In these coordinates
 $A_0$ is nilpotent, $A_*$ is symmetric and invertible, and
 \[
- B_*(u)=b_*u+c_*,\qquad C_0=(I-2tA_0)^{-1}\in\C[t].
+ B_*(u)=b_*u+c_*,\qquad
+ C_0=(I-2tA_0)^{-1}\in\C[t],\qquad C_*=(I-2tA_*)^{-1}.
 \]
 Because $B_*^TC_*B_*$ is quadratic in $u$,
 \eqref{eq:degrees} makes $B_0^TC_0B_0$ quadratic as well.
@@ -265,14 +294,13 @@ $X=(u,Y_*)$, with precision matrix and linear source
  \end{pmatrix},\qquad
  L(t)=\binom{d(t)}{t c_*}.
 \end{equation}
-These are polynomial. The Schur determinant identity and
+Both $M$ and $L$ are polynomial. The Schur determinant identity and
 \eqref{eq:purity} give the central cancellation certificate
 \begin{equation}\label{eq:unimodular}
  \det M=D\bigl(1-2a-t^2b_*^TC_*b_*\bigr)=DK=1,
  \qquad M^{-1}=\operatorname{adj}M\in\operatorname{Mat}_{k+1}(\C[t]).
 \end{equation}
-The equalities include $k=0$ using the empty determinant one.
-No denominator cancellation is presumed from the rational rank.
+The equalities include $k=0$, with the empty determinant equal to one.
 
 The normalized tilted $X$ functional therefore has polynomial
 mean $M^{-1}L$ and polynomial covariance $M^{-1}$. Its scalar
@@ -286,7 +314,7 @@ This proves purity implies safety for every matrix $A$.
 The other implications and the finite classification follow
 from Lemma~\ref{lem:polynomialunit} and the definition of safety.
 
-We retain an explicit coefficient bound. If the zero block is
+For the degree bound, if the zero block is
 present, $\deg C_0\le r_0-1$ and $k+r_0\le s$; when it is
 absent take $r_0=0$. All coefficients of $a,d,e$ have degree
 at most $r_0+1$. In each cofactor of $M$ the high-degree base
@@ -305,8 +333,94 @@ remaining variable degree at most $bq$. A joint Gaussian
 monomial of degree $j$ then has expectation degree at most
 $(s+1)j$, since its mean degrees are at most $s+1$ and its
 covariance degrees at most $s$. This proves
-\eqref{eq:cutoff}. Every calculation used the original marker,
-not a time-dependent rational substitute for it.
+\eqref{eq:cutoff} for every fixed polynomial marker.
+
+\subsection{Scalar pole-cancellation certificates}
+
+For simple eigenvalues the matrix identity \eqref{eq:unimodular} has a
+useful scalar form. It shows directly which numerators cancel the
+apparent poles left by conditional Gaussian integration.
+
+\begin{corollary}\label{cor:simplecertificates}
+Suppose every nonzero eigenvalue of $A$ is semisimple and $P$ is pure.
+Each such eigenvalue is then simple. Write
+\[
+ B_\lambda(u)=b_\lambda u+c_\lambda,\qquad
+ l_\lambda=1-2\lambda t,\quad
+ t_\lambda=(2\lambda)^{-1},\quad D_\lambda=D/l_\lambda,
+ \qquad \mu=D\beta.
+\]
+Then $\mu$ is polynomial, $b_\lambda\ne0$, and
+\begin{equation}\label{eq:scalarcertificate}
+ t_\lambda^2b_\lambda^2D_\lambda(t_\lambda)=-1,
+ \qquad \mu(t_\lambda)=-c_\lambda/b_\lambda.
+\end{equation}
+In particular the tilted mean and variance
+\begin{equation}\label{eq:scalarcancellation}
+ \E_tY_\lambda=
+    \frac{t(b_\lambda\mu+c_\lambda)}{l_\lambda},
+ \qquad
+ \operatorname{Var}_t(Y_\lambda)=
+    \frac{1+t^2b_\lambda^2D_\lambda}{l_\lambda}
+\end{equation}
+are polynomials. Here $\E_t$ denotes the formal functional
+$\E_tQ=\Phi_Q$, normalized by $\Phi_1=1$.
+\end{corollary}
+\begin{proof}
+A semisimple cyclic primary space has dimension one. The only pole
+of its resolvent is $1/l_\lambda$, so evaluating $DK=1$ at
+$t_\lambda$ gives the first identity in \eqref{eq:scalarcertificate}.
+Likewise the polar contribution to $\beta$ there is
+$t^2b_\lambda c_\lambda/l_\lambda$. Since every denominator
+in $\beta$ divides $D$, the function $\mu=D\beta$ is polynomial,
+and evaluation gives its stated value.
+
+After eliminating all fibres, $u$ has tilted mean $\mu$ and variance
+$D$. Conditional on $u$, the $\lambda$ coordinate has mean
+$t(b_\lambda u+c_\lambda)/l_\lambda$ and variance $1/l_\lambda$.
+These give \eqref{eq:scalarcancellation}; both numerators vanish at
+$t_\lambda$ by \eqref{eq:scalarcertificate}. The other joint
+covariances are polynomial directly, since
+\[
+ \operatorname{Cov}_t(u,Y_\lambda)=\frac{tDb_\lambda}{l_\lambda},
+ \qquad
+ \operatorname{Cov}_t(Y_\lambda,Y_\nu)=
+ \frac{t^2b_\lambda b_\nu D}{l_\lambda l_\nu}\quad(\lambda\ne\nu).
+\]
+Thus the same cancellation can be checked coordinate by coordinate.
+\end{proof}
+
+\subsection{Correlated Gaussian laws}
+
+\begin{corollary}\label{cor:affinegaussian}
+Let $(u,Y)$ have a real Gaussian law with positive-definite joint
+covariance, allowing arbitrary means and correlations. For
+$P=Y^TAY+B(u)^TY+g(u)$ with constant symmetric $A$, purity, safety
+and polynomiality of $\Phi_1$ are equivalent. The finite identities
+\eqref{eq:degrees}--\eqref{eq:purity} apply after affine normalization.
+With $b=\max(1,\deg B)$, taking $b=1$ if $B=0$, every pure member satisfies
+\[
+ \deg_t\Phi_Q\le\bigl(s+(s+1)b\bigr)\deg Q.
+\]
+\end{corollary}
+\begin{proof}
+Write $\bar u=\E[u]$ and $\nu=\E[Y]$. A block lower-triangular
+Cholesky factor of the covariance gives
+\[
+ u=\bar u+\sigma U,\qquad Y=\nu+vU+LZ,
+\]
+where $U,Z_1,\ldots,Z_s$ are independent standard Gaussians,
+$\sigma>0$, and $L$ is invertible. Substitution preserves the fibre family:
+\[
+ A'=L^TAL,\qquad
+ B'(U)=L^T\bigl(B(\bar u+\sigma U)+2A(\nu+vU)\bigr),
+\]
+with a polynomial residual $g'(U)$. Thus $b'=\max(1,\deg B')\le b$,
+with the same convention if $B'=0$. This invertible affine substitution
+preserves total marker degrees and every moment identity. Apply
+Theorem~\ref{thm:fullfibre} to the normalized coefficients; its zero-block
+index $r'_0$ satisfies $r'_0\le s$, giving the stated bound.
+\end{proof}
 
 \section{Which fibre matrices occur?}
 
@@ -347,8 +461,8 @@ The polynomial
 \]
 has $B^TCB=u^2H(t)$ and
 $D(1-2at-t^2H)=1$. Its remaining scalar identities are
-$\beta=\gamma=0$, so it is pure. This supplies defective
-examples of every allowed size without a bounded search.
+$\beta=\gamma=0$, so it is pure, including for defective blocks
+of every allowed size.
 \end{proof}
 
 If the zero primary space is absent, every pure member is
@@ -359,8 +473,7 @@ The all-degree extension concerns unrestricted nonlinear sources
 in the nilpotent zero fibre and the uniform pole-cancellation
 argument for the remaining blocks.
 
-There are genuinely nonlinear examples with defective nonzero
-blocks. Let $u$ be ordinary Gaussian and let $(Z,W)$ and
+Nonlinear sources can coexist with defective nonzero blocks. Let $u$ be ordinary Gaussian and let $(Z,W)$ and
 $(Z_0,W_0)$ be independent circular Gaussian pairs, with
 $\E[ZW]=\E[Z_0W_0]=1$. For every $d\ge2$ set
 \[
@@ -380,8 +493,6 @@ The zero fibre contributes $W_0u^d$ and has zero source norm.
 The remaining scalar exponent is zero. Thus every $P_d$ is
 pure and safe, has degree $d+1$, and combines an unrestricted
 nonlinear source with a nonzero Jordan block of size two.
-This exact all-order identity is a control on the argument,
-not evidence inferred from a finite moment sample.
 
 \section{Why one base variable matters}
 
@@ -428,17 +539,18 @@ implies safety for
 in independent standard Gaussian coordinates, with $A$ constant
 and all polynomial degrees unrestricted. Combining the preceding
 theorem with the credited binary, quadratic and counterexample
-results leaves exactly one cell for further investigation:
+results gives the following ranges:
 \begin{center}
 \begin{tabular}{@{}lccc@{}}
 \toprule
 Base variables & $s=0$ & $s=1$ & $s\ge2$\\\midrule
-$r=0,1$ & always safe & always safe & always safe\\
-$r=2$ & always safe & not resolved here & failures exist\\
+$r=0,1$ & holds & holds & holds\\
+$r=2$ & holds & not resolved here & failures exist\\
 $r\ge3$ & failures exist & failures exist & failures exist\\
 \bottomrule
 \end{tabular}
 \end{center}
+Here ``holds'' means that every pure phase in the indicated family is safe.
 For $r=0$ the phase is quadratic, covered by Liu (or a constant
 if $s=0$). For $r=1$ use Theorem~\ref{thm:fullfibre}, adding
 an unused fibre variable when $s=0$. For $(r,s)=(2,0)$ use Wilson's
@@ -451,36 +563,17 @@ which has unit period one and marked period $t/(1-t)$
 \cite[Theorem~5.1]{Long}. Ignoring added independent coordinates
 extends both failures to all indicated cells.
 
-Thus the next structural question is specific and all-degree:
-does a single constant quadratic fibre over two ordinary Gaussian
-base variables always preserve safety of pure phases? It is not
-settled by the one-base stationary argument, Wilson's theorem,
-or the counterexample with two fibre variables. This table
-records the scope of the present deductions, not an exhaustive
-literature priority claim or a solution of that remaining cell.
+The unresolved cell is $(r,s)=(2,1)$: does a single constant quadratic
+fibre over two ordinary Gaussian base variables preserve safety of pure
+phases? The companion paper \emph{Gaussian Marker Reduction with a Constant
+Quadratic Fibre} reduces this question to markers in the two base
+variables. Those periods have a parameter-dependent binary phase, to
+which Wilson's fixed-phase theorem does not directly apply. The table
+records the deductions above and makes no claim of exhaustive literature
+coverage. Safety implying purity for arbitrary Gaussian phases also
+remains outside the present theorem.
 
-\section{Scope and assurance}
-
-The defective-block gap of the previous fibre theorem is closed
-by \eqref{eq:triangular} and \eqref{eq:unimodular}. Its earlier
-semisimple theorem remains valid. This does not solve the
-unrestricted Gaussian problem, safety implies purity for arbitrary
-phases, or realization of logarithmic and wild marked systems.
-The completed dimension--degree manuscript is retained unchanged.
-
-The new cancellation and converse arguments are written proofs,
-not conclusions from finite computational checks. Classical
-formal stationary theory is credited below to Sabbah; analytic
-Bernstein and rational-direction background retains the credit
-to Sabbah and Maisonobe~\cite[Introduction]{Maisonobe}.
-Only the valued-field stationary theorem below permits arbitrary
-nonconvergent Laurent coefficients. The Gaussian family and
-Jordan argument here are over $\C$; no arbitrary-ring descent,
-priority, independent replay, formal verification or external
-review is claimed. Existing operator identities, torsion witnesses
-and specialization thresholds are unaffected.
-
-\section{Full formal stationary proof}
+\section{Formal stationary phase}
 \subsection{A formal leading-coefficient criterion}\label{sec:stationaryballs}
 
 For a polynomial phase, the remaining shrinking argument can be
@@ -492,7 +585,9 @@ Write $v$ for the valuation of a formal parameter $r$, normalized by
 $v(r)=1$. The valuation of a polynomial is the least valuation of its
 coefficients. We use the formal Newton--Puiseux theorem: finitely many
 algebraic elements over $\C((r))$ belong to one field
-$\C((r^{1/N}))$. Convergence is not required~\cite[Chapter~2]{Wall}.
+$\C((r^{1/N}))$~\cite[Corollary~1.10]{MannaaCoquand}.
+Characteristic zero makes each minimal polynomial separable;
+no convergence hypothesis is needed.
 
 \begin{lemma}[Polynomial separation of formal balls]\label{lem:ballseparation}
 Let finitely many disjoint balls have centers $c_B$ in a Puiseux field
@@ -631,42 +726,56 @@ $q_r+(\varphi_r+h'/h)q$, leaves, inside the fixed functional,
 It is zero. Thus the functionals are horizontal, including the
 Jacobian $\delta_B$ and normalization $h$.
 
-\emph{Completeness, not just a rank count.}
+\emph{Completeness and the diagonal connection.}
 Choose the polynomials $q_{B,j}$ of
 Lemma~\ref{lem:ballseparation}, for $0\leq j<d_B-1$.
-Divide each evaluation column by its scalar $h\delta_Be^{c_B}$.
-The resulting matrix reduces to the identity: $E_B$ has positive
-order and the reductions of the amplitudes are the chosen monomials
-on one ball and zero elsewhere. The matrix is therefore invertible.
-Leading-degree reduction gives $\dim M=D-1$, so
-\eqref{eq:ballrankcount} accounts for the entire module.
+Index rows by functionals $(B,j)$ and columns by amplitudes $(C,k)$,
+and form the normalized evaluation matrix
+\[
+ A_{(B,j),(C,k)}=
+   \frac{\ell_{B,j}(q_{C,k})}{h\delta_Be^{c_B}}.
+\]
+Its entries are integral, and its reduction is the identity:
+$E_B$ has positive order and the amplitudes reduce to the chosen
+monomials on their own ball and zero on every other ball. Thus $A$
+is invertible over the ramified Laurent field. There are $D-1$ rows
+by \eqref{eq:ballrankcount}, equal to $\dim M$, so the amplitude
+classes are a basis and these functionals account for the entire module.
 
 Remove from $c_B$ its finite negative-power part $q_B(r)$.
-The remaining exponential is an invertible formal power series,
-up to a nonzero constant. Formula~\eqref{eq:ballfunctional} and the
-invertible matrix give the asserted direct sum of rank-one factors
-$e^{q_B}$ times powers of $r$. If $q_B=0$, its value on the seed
-has valuation at least $v(h)+\rho_B$, proving
+The scalar
+\[
+ g_B=h\delta_B\exp(c_B-q_B)
+\]
+is an invertible Laurent series: $\exp(c_B-q_B)$ is a formal
+power-series unit, with a nonzero constant term. Consequently the
+matrix of the functionals $e^{-q_B}\ell_{B,j}$ in the amplitude
+basis is $\operatorname{diag}(g_B)A$, with $g_B$ repeated for every
+row on ball $B$. It is invertible over the same Laurent field.
+The horizontality already proved says precisely that these rows
+give an isomorphism to the direct sum of rank-one connections
+$\partial_r+q_B'$, one for each pair $(B,j)$. This supplies the diagonal
+gauge explicitly; it does not infer semisimplicity from a rank count.
+If $q_B=0$, formula~\eqref{eq:ballfunctional} takes the seed to a
+series of valuation at least $v(h)+\rho_B$, proving
 \eqref{eq:valuationbound}.
 
-Finally, after ramification this is a semisimple differential module.
-A quotient on the submodule generated by the seed extends to the
-whole module. Nonzero exponential factors have no horizontal map
-to the Laurent field, because the logarithmic derivative of a
-Laurent series cannot be the derivative of a nonzero negative-power
-exponent. On the zero part, every horizontal functional is a
-constant combination of those in the full frame. If the bound is
-strictly positive, their seed values cannot sum to one.
+Every rank-one differential module is simple, so this constructed
+direct sum is semisimple. A quotient on the submodule generated by
+the seed therefore extends to the whole module by choosing a
+differential complement. A nonzero exponential factor has no
+horizontal map to the Laurent field: the logarithmic derivative of
+a nonzero Laurent series has at most a simple pole, whereas $q_B'$
+has a pole of order at least two when $q_B\ne0$. On the zero part,
+every horizontal functional is a constant combination of those in
+the full frame. If the seed bound is strictly positive, their values
+cannot sum to one.
 \end{proof}
 
-The construction is a formal stationary-phase argument. Its classical
-background includes Newton--Puiseux and the formal stationary-phase
-theory of exponential connections; Sabbah's local Fourier--Laplace
-formula is a primary reference for the latter~\cite{SabbahStationary}.
-We do not identify that formula's scope with the particular proof
-above or claim priority for this formulation. The proof here also
-allows nonconvergent formal Laurent coefficients. It uses a valued
-field, not an arbitrary coefficient ring.
+The argument is a formal stationary-phase construction for polynomial
+phases over a Laurent field, including nonconvergent coefficients.
+For the classical local Fourier--Laplace theory of exponential
+connections, see Sabbah~\cite{SabbahStationary}.
 
 \begin{corollary}[Leading-coefficient obstruction]\label{cor:leadingobstruction}
 For a rational polynomial phase $\varphi(t,x)$ of degree $D\geq2$
@@ -689,8 +798,8 @@ its values on successive seed derivatives are $1,0,0,\ldots$.
 The inequality must be strict. For example
 $\varphi=-x^2/(2t^2)$ and $h=1/t$ have
 $v_\infty(h^2/a_2)=0$, and their normalized Gaussian period is a
-nonzero constant. Thus the earlier adverse scaling example is also
-an exact boundary test of the criterion.
+nonzero constant. Rescaling that functional gives seed value one,
+so the conclusion would fail if equality were allowed.
 
 
 \begin{thebibliography}{99}
@@ -707,13 +816,6 @@ Z.~Liu, \emph{Sharp finite Gaussian moments for quadratic polynomials},
 version~3, public preprint (2026),
 \href{https://doi.org/10.5281/zenodo.21688251}{doi:10.5281/zenodo.21688251}.
 
-\bibitem{Maisonobe}
-P.~Maisonobe, \emph{Filtration relative, l'id\'eal de Bernstein et ses
-pentes}, \emph{Rendiconti del Seminario Matematico della Universit\`a
-di Padova} \textbf{150} (2023), 81--125;
-\href{https://doi.org/10.4171/RSMUP/101}{doi:10.4171/RSMUP/101};
-\href{https://arxiv.org/abs/1610.03354v1}{arXiv:1610.03354v1}.
-
 \bibitem{SabbahStationary}
 C.~Sabbah, \emph{An explicit stationary phase formula for the local
 formal Fourier--Laplace transform}, in \emph{Singularities I},
@@ -721,10 +823,10 @@ Contemporary Mathematics \textbf{474}, American Mathematical Society,
 2008, 309--330;
 \href{https://arxiv.org/abs/0706.3570v2}{arXiv:0706.3570v2}.
 
-\bibitem{Wall}
-C.~T.~C.~Wall, \emph{Singular Points of Plane Curves}, Cambridge
-University Press, 2004, Chapter~2, 15--38,
-\href{https://doi.org/10.1017/CBO9780511617560.003}{doi:10.1017/CBO9780511617560.003}.
+\bibitem{MannaaCoquand}
+B.~Mannaa and T.~Coquand, \emph{Dynamic Newton--Puiseux Theorem},
+public preprint (2013), Corollary~1.10,
+\href{https://arxiv.org/abs/1304.6770v2}{arXiv:1304.6770v2}.
 
 \end{thebibliography}
 \end{document}

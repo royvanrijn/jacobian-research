@@ -7,29 +7,19 @@
 \newtheorem{corollary}[theorem]{Corollary}
 \newcommand{\Q}{\mathbb Q}
 \newcommand{\F}{\mathbb F}
-\title{Quantitative squarefreeness for every fixed positive factorial exponent}
+\title{Uniform local Newton lemmas for factorial moment polynomials}
 \author{User-supplied quantitative argument checked and integrated; no priority claim}
 \date{16 November 2026}
+
 \begin{document}
 \maketitle
-For integers $m\ge1$, put
-$F_{n,m}(T)=\sum_{j=0}^n\binom nj(mj)!T^j$ and
-$E_m(X)=\#\{1\le n\le X:F_{n,m}\text{ is not squarefree over }\Q\}$.
-All Gamma shapes are one. The exponent $m$ is fixed throughout each
-asymptotic; there is no uniform-in-$m$ assertion.
-
-\begin{theorem}\label{thm:quantitative}
-For every fixed positive integer $m$, unconditionally,
+For positive integers $n,m$, write
 \[
- \boxed{E_m(X)\ll_m\frac{X}{(\log X)^{1/50}}.}
+ F_{n,m}(t)=\sum_{k=0}^n\binom nk(mk)!t^k.
 \]
-The exponent $1/50$ is explicit. A numerical implied constant and starting
-threshold have not been extracted. An infinite exceptional set remains
-possible; full all-index SFC is not proved.
-\end{theorem}
-The proof below uses the original published irreducible-offset density.
-It does not bootstrap or depend on the previously registered exponent-six
-\href{DENSITY_ONE_SQUAREFREENESS.tex}{qualitative density-one theorem}.
+The following local statements are the inputs used by the
+\href{ALL_UNIVARIATE_TWO_TERM_SFC.tex}{all-index constant-plus-power theorem}.
+They do not leave an exceptional set in that completed ordinary family.
 
 \section{Exact local statements for every exponent}
 \begin{lemma}\label{lem:shift}
@@ -91,158 +81,5 @@ Then $2v\le1$ forces $v=0$. For the final sufficient condition,
 $q_n=n-d>n-\sqrt n>m\sqrt n\ge m\max(1,d)$.
 \end{proof}
 
-\section{Bad reductions can be counted with growing offsets}
-Set $H=\lfloor X^{1/8}\rfloor$ and $Y=\sqrt{2mX}$.
-For fixed $m$ and sufficiently large $X$, the credited
-\href{sources/filaseta-rocks-2016-published.pdf}{Filaseta--Rocks Theorem 1.1}
-gives more than $2H/3$ irreducible offsets
-\[
- I_H=\{1\le i\le H:F_{i,m}\text{ is irreducible over }\Q\}.
-\]
-This uses their exact polynomial normalization and lower density
-$\log2>2/3$, for every fixed positive integer $m$.
-Every such polynomial is squarefree, so
-$R_i=\operatorname{Res}(F_{i,m},F'_{i,m})\ne0$.
-There is no assumption that all offsets are squarefree.
 
-Put $A_i=2^i(mi)!$. Nonnegative coefficients give
-$\|F_{i,m}\|_2\le\|F_{i,m}\|_1\le A_i$, and
-$\|F'_{i,m}\|_2\le iA_i$.
-The Sylvester matrix has $i-1$ coefficient rows of $F$ and $i$ of $F'$.
-Hadamard therefore gives the exact bound
-\[
- |R_i|\le A_i^{i-1}(iA_i)^i
- =i^i[2^i(mi)!]^{2i-1},
- \qquad\log|R_i|=O_m(i^2\log(i+1)). \tag{4}
-\]
-Let $\mathcal B_X$ be the union of indices $X\le n\le2X$ for which
-some $i\in I_H$ and prime $p>Y$ satisfy $p\mid R_i$ and $n\equiv i\pmod p$.
-Each nonzero $R_i$ has at most $\log|R_i|/\log Y$ distinct prime divisors
-above $Y$. A pair $(i,p)$ contributes at most $X/p+1$ indices. Hence
-\[
- \begin{aligned}
- |\mathcal B_X|
- &\le\frac{X/Y+1}{\log Y}\sum_{i\in I_H}\log|R_i|\\
- &\ll_m X^{1/2}H^3\frac{\log(H+1)}{\log X}
- \ll_m X^{7/8}.
- \end{aligned}\tag{5}
-\]
-Unit resultants contribute zero. Primes above $2X$ affect no actual index,
-but including their harmless $+1$ upper bounds preserves (5).
-Outside this union, every prime above $Y$ dividing a selected shift has
-nonzero modular resultant. Eventually $p>Y>mH$, so degrees of the kernel
-and its derivative are preserved as well. Its reduction is squarefree.
-This counting step replaces a uniform all-offset good-reduction threshold;
-it does not require smoothness of any unbounded family of $C_i$.
-
-\section{The quantitative short-interval input}
-For $f_X(u)=\mathbf1_{\{P^+(u)\le Y\}}$ with $f_X(1)=1$,
-$Y^2=2mX\ge2X$ ensures each integer $u\le2X$ has at most one prime
-factor above $Y$. Counting disjoint prime multiples and partial summation
-from the classical prime number theorem give
-\[
- \frac1X\sum_{X\le u\le2X}f_X(u)
- =1-\sum_{Y<p\le2X}\frac1p+o(1)
- \longrightarrow1-\log2\quad(m\text{ fixed}). \tag{6}
-\]
-Indeed $\log(2X)/\log Y\to2$. The same argument works for $m=1$,
-when $Y^2=2X$, since the selected primes are strictly above $Y$.
-Only an eventual strict mean bound is needed, so no quantitative PNT
-remainder or irreducible-density convergence rate is assumed.
-
-Use the published
-\href{sources/matomaki-radziwill-2016-annals.pdf}{Matom\"aki--Radziwi\l\l Theorem 1},
-pp.~1015--1016, with $h=H$ and $\delta=1/4$.
-Its uniformity in $h,\delta,f$ explicitly covers both growing $H$ and
-varying $f_X$. Its error is
-$\delta+C'\log\log H/\log H$, with exceptional count at most
-\[
- CX\left(\frac{(\log H)^{1/3}}{\delta^2H^{\delta/25}}
-        +\frac1{\delta^2(\log X)^{1/50}}\right).
-\]
-Since $H\asymp X^{1/8}$ and $\delta/25=1/100$, this is
-\[
- O\left(X^{799/800}(\log X)^{1/3}
-              +\frac{X}{(\log X)^{1/50}}\right). \tag{7}
-\]
-The long mean is eventually below $1/3$ because $\log2>2/3$.
-Also $C'\log\log H/\log H<1/24$ eventually. Thus the short mean is
-below $1/3+1/4+1/24=5/8<2/3$ outside (7).
-Apply the theorem at $x=n-H$. Drop the last term of its inclusive block
-using nonnegativity, and discard only $O(H)$ bottom boundary indices.
-Therefore fewer than $2H/3$ shifts $n-i$, $1\le i\le H$, are smooth.
-Pigeonhole against $|I_H|>2H/3$ supplies $i\in I_H$ with
-\[
- p=P^+(n-i)>Y.
-\]
-No independence between individual offsets or between good-reduction and
-smoothness events is assumed; a union bound will discard $\mathcal B_X$.
-
-\section{The quantitative prime-gap input and the transfer}
-The same pinned Filaseta--Rocks source records in equation~(3.1), page~6,
-the unconditional consequence of K.~Matom\"aki's prime-gap work
-\[
- \sum_{\substack{p_j\le Z\\p_{j+1}-p_j>\sqrt{p_j}}}
-       (p_{j+1}-p_j)\ll Z^{2/3}. \tag{8}
-\]
-For each $n\in[X,2X]$ with $n-q_n\ge\sqrt n$, its containing consecutive
-prime interval has left endpoint $q_n\le2X$ and length
-$p_{j+1}-p_j>\sqrt n\ge\sqrt{q_n}$.
-Thus (8), including a possible prime interval crossing the upper boundary,
-bounds all such bad indices by $O(X^{2/3})$.
-We import (8) as explicitly stated in the published source; the deeper
-prime-gap proof and the MR theorem are not independently reconstructed.
-
-At a remaining index, outside $\mathcal B_X$, choose the shift and $p$
-above. Eventually $p>Y>mH$ and
-$p^2>Y^2=2mX\ge mn$. Writing $n=ap+i$ gives
-$p>m\max(a,i)$. Corollary~\ref{cor:preceding} bounds a rational square
-divisor by $k<\sqrt n/2<p$.
-Lemma~\ref{lem:shift} then gives degree-preserving horizontal reduction
-$\bar g^2\mid\overline{F_{i,m}}$.
-The selected prime does not divide $R_i$, so this kernel is squarefree.
-Consequently $k=0$ and $F_{n,m}$ is squarefree.
-
-\section{Error collection and dyadic summation}
-All sufficiently large dyadic blocks satisfy
-\[
- \begin{aligned}
- E_m(2X)-E_m(X)\ll_m{}&
- \frac{X}{(\log X)^{1/50}}
- +X^{799/800}(\log X)^{1/3}\\
- &+X^{7/8}+X^{2/3}+X^{1/8}.
- \end{aligned}
-\]
-Endpoint conventions change at most a constant.
-Every power-saving term is eventually dominated by the first term.
-To sum the resulting logarithmic bound up to $X$, split dyadic blocks
-at $\sqrt X$. On the larger blocks $\log t\ge\tfrac12\log X$, so
-geometric summation gives $O_m(X/(\log X)^{1/50})$.
-The entire lower part has at most $\sqrt X$ indices and is absorbed.
-This proves Theorem~\ref{thm:quantitative}.
-Unlike the earlier fixed-$H$ argument, this proof controls the bad-prime
-union and therefore legitimately takes $H=\lfloor X^{1/8}\rfloor$.
-
-\begin{corollary}
-For every fixed $m$, all but $O_m(X/(\log X)^{1/50})$ terminal indices
-$n\le X$ simultaneously certify at least one nonzero moment in the pair
-$n-1,n$ for every nonzero complex phase $A+BY^m$ in ordinary shape one.
-\end{corollary}
-\begin{proof}
-For every $m$, $F_{n-1,m}=F_{n,m}-(T/n)F'_{n,m}$ and $F_{n,m}(0)=1$.
-Squarefreeness excludes common roots; handle $A=0$ or $B=0$ directly.
-\end{proof}
-
-\section{Evidence boundary}
-\href{quantitative_squarefree.py}{Exact finite certificates} and
-\href{verify_quantitative_squarefree.py}{controls} check general-$m$
-valuation formulas against literal coefficients, local hulls and modular
-Bezout identities, Sylvester determinants and Hadamard bounds, and finite
-bad-prime progression counts. They do not infer a density rate from
-numerical squarefreeness samples. The written proof and the explicitly
-credited primary analytic results are the universal evidence.
-No all-index SFC, irreducibility-density-one, variable-$m$ asymptotic,
-general Gamma-shape, numerical implied-constant or formal/external assurance
-claim is made. The earlier fixed-$H$ proof remains a valid independent
-qualitative route for exponent six.
 \end{document}

@@ -1,15 +1,12 @@
 # Polynomial unit periods, exact marker filtrations and pure Airy delays
 
-16 November 2026. Internal all-degree proofs with finite exact controls.
-Independent replay, formal verification and external review remain false;
-priority is unassessed. This extends the sealed
-[algebraic compensator](ALGEBRAIC_FIXED_POINT_LIFTS_AND_UNIVERSAL_GAUSSIAN_IMAGES.md)
-by varying its determinant exponent. No earlier proof packet is modified.
-The [constructor](gaussian_seed_filtration.py),
+These are internal all-degree proofs with finite exact controls.
+Independent replay, formal verification, external review and priority are
+not claimed. The [constructor](gaussian_seed_filtration.py),
 [checker](verify_gaussian_seed_filtration.py),
 [certificate](gaussian_seed_filtration_certificate.json) and
-[receipt](gaussian_seed_filtration_verification.json) retain the finite
-transcriptions. Universal assertions use the proofs below.
+[receipt](gaussian_seed_filtration_verification.json) transcribe the formulas;
+the universal assertions use the proofs below.
 
 ## 1. Arbitrary polynomial unit periods in seven variables
 
@@ -276,12 +273,4 @@ monomials in seven variables,three pure power cases,three coefficient
 transfers/recurrences/Airy gauges,one nilpotent and one arbitrary seed
 control,and six rejection cases. These finite calculations transcribe
 the proofs; they do not prove their universal quantifiers or compute
-Galois groups. A pre-registration fixture initially used Y^2 instead
-of the required(1+Y)^2 for the nilpotent inverse and was corrected;
-the all-marker proof and independent Wick controls were unaffected.
-
-Sabbah/Maisonobe retain convergent rational-slope credit; the arbitrary
-nonconvergent formal extension and all-ring safety descent remain separate
-scopes with unassessed priority. Oaku operators,torsion witnesses,
-specialization thresholds,terminal UNKNOWN runs and separately owned
-Mathieu/SIC work remain sealed. The broad goal remains active.
+Galois groups.

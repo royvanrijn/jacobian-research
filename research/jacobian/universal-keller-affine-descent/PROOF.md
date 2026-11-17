@@ -148,4 +148,4 @@ For a complete-type ruling V_geometric->P1 there is not even a global affine coo
 
 Published rigid smooth affine cubic surfaces with complete-type rulings (Dubouloz2013 and2015) also prevent replacing “two AFFINE-type rulings” by “two arbitrary rulings” in Section2. These published surfaces are not asserted to satisfy our whole-factor hypotheses or to be surviving intermediates.
 
-The next descent work must identify conjugate COMPLETE-type fibrations, or exclude their actual whole realization using a new argument. Adding further necessary conditions or assuming that a trace retains A1 fibres does not do that.
+The unresolved descent problem is to identify conjugate COMPLETE-type fibrations, or exclude their actual whole realization using a new argument. Adding further necessary conditions or assuming that a trace retains A1 fibres does not do that.

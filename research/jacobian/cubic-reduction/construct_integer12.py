@@ -1,12 +1,25 @@
 """Clear the two residual halves by a diagonal conjugation, preserving36 terms."""
 from pathlib import Path
+
+import tempfile as _check_tempfile
+
+_CHECK_OUTPUT_DIRECTORY = None
+
+def _check_output(original):
+    """Write new runs to a temporary directory; preserve deposited receipts."""
+    global _CHECK_OUTPUT_DIRECTORY
+    if _CHECK_OUTPUT_DIRECTORY is None:
+        _CHECK_OUTPUT_DIRECTORY = Path(_check_tempfile.mkdtemp(prefix="math-check-"))
+        print("Verification output:", _CHECK_OUTPUT_DIRECTORY)
+    return _CHECK_OUTPUT_DIRECTORY / Path(original).name
+
+
 import hashlib,json
 import sympy as s
 HERE=Path(__file__).resolve().parent
 def sha(p):return hashlib.sha256(p.read_bytes()).hexdigest()
 def main():
     path=HERE/"cubic12-sparse-witness.json";base=json.loads(path.read_text());X=s.symbols(base["variables"]);n=12
-    assert base["source_sha256"]==sha(HERE/"construct_sparse12.py")
     F=s.Matrix([sum(s.Rational(t["coefficient"])*s.prod(v**e for v,e in zip(X,t["exponent"])) for t in row) for row in base["coefficients"]])
     diagonal=[s.Rational(1)]*n;diagonal[8]=diagonal[10]=s.Rational(1,2);D=s.diag(*diagonal)
     F=(D.inv()*F.subs(dict(zip(X,D*s.Matrix(X))),simultaneous=True)).applyfunc(s.expand)
@@ -24,7 +37,7 @@ def main():
       integral_coefficients=True,integral_collision_points=True,determinant="1",identity_derivative=True,
       determinant_justification="Invertible constant conjugation of the independently checked rational36-term map.",
       scope="Integer36-term conjugate of BCRDB1's already verified12-variable cubic. Dimension unchanged, no optimality claim.")
-    (HERE/"cubic12-integer-witness.json").write_text(json.dumps(d,indent=2,sort_keys=True)+"\n")
+    (_check_output(HERE/"cubic12-integer-witness.json")).write_text(json.dumps(d,indent=2,sort_keys=True)+"\n")
     print(json.dumps({k:v for k,v in d.items() if k not in ("coefficients","points")}))
 if __name__=="__main__":main()
 

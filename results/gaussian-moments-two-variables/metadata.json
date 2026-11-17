@@ -37,5 +37,10 @@
     "title": "Preprint",
     "type": "publication",
     "subtype": "preprint"
+  },
+  "source_bundle": "arxiv-upload.zip",
+  "source_bundle_members": {
+    "main.tex": "arxiv-upload/main.tex",
+    "main.bbl": "arxiv-upload/main.bbl"
   }
 }

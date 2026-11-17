@@ -1,8 +1,0 @@
-{
-  "status": "NO_CERTIFICATE",
-  "returncode": 124,
-  "elapsed_seconds": 35.00852800701978,
-  "input_sha256": "216667a2110b6ee6098d2fd3ab7379c5176a87952e2f8f4170abe81360769f4c",
-  "output_sha256": "13e3271c6c2c9a751f30a3a380b1c70b0fcb0b97dddd093e0e41452dfe2edeed",
-  "purpose": "Block order isolates the two cubic channel coefficients whose product is monic over the three-parameter base"
-}

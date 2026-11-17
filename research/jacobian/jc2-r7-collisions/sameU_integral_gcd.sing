@@ -1,4 +1,0 @@
-ring R=(0,d),(u),dp; minpoly=2187*d^9 + 3402*d^6 + 1512*d^3 + 196;
-poly f=7*d^4 - 135*d*u^2 - 162*d*u - 42*d;
-poly g=-57*d^3*u - 32*d^3 + 162*u^3 + 270*u^2 + 126*u + 14;
-ideal I=f,g; ideal G=std(I); matrix M=lift(I,G); short=0; print("GCD "+string(G[1])); print("LIFT0 "+string(M[1,1])); print("LIFT1 "+string(M[2,1])); quit;

@@ -12,8 +12,10 @@ The matrix records where each load-bearing step is proved and what it uses.
 | Unequal-weight pure-zero faces are horizontally disjoint | Corollary 4.3 | Proposition 4.1 |
 | A common unequal threshold is terminal for every fixed multiplier | Proposition 5.1 | Equal-face coordinate gap and bounded weight defect |
 | The global envelopes reach a common threshold | Section 6 | Finite piecewise-linear envelopes and the initial Hall gap |
+| Finite support certificate over the original field | Section 6.1, Binary support certificate | Unique Hall direction, strict refinement at the threshold, and the mediant weight |
+| Sharp operator-independent cutoff | Section 6.1, Optimal operator-independent cutoff | Positive separator margin and the explicit monomial sharpness family |
 | Unrestricted GVC in two variables | Theorem 1.1 | The preceding rows |
-| Long's adjacent-coefficient mechanism | Section 7 | Long's published Gaussian moment identity |
+| Long's adjacent-coefficient mechanism | Section 7 | Long's Gaussian moment identity in the cited public preprint |
 | Homogeneous GVC(3) counterexample | Theorem 8.1 | Quadric identity, exact spherical coefficients, and the Reynolds--apolar identity |
 | Full winding--profile--radial failure family | Theorem 9.1 | The same phase extraction with arbitrary endpoint contact and profile |
 | `GVC(n)` and homogeneous `GVC(n)` hold exactly for `n <= 2` | Theorem 10.2 | Theorems 1.1 and 8.1, de Bondt's split-symbol theorem, and Lemma 10.1 |
@@ -23,7 +25,7 @@ the proof.  The Ferrers support statement in Section 12 is a consequence of
 horizontal separation.  The dependency-free GVC(3) checker is an independent
 bounded replay, not the all-order proof.
 
-The Lean audit in [`../../formal/gvc`](../../research/foundations/formal/gvc) checks the
+The Lean audit in [`research/foundations/formal/gvc`](../../research/foundations/formal/gvc) checks the
 literal ternary polynomials and their degree-twelve homogeneity, the cusp
 identity, the algebraic beta evaluation of the endpoint moment, the complete
 binomial coefficient ladder for an arbitrary rational endpoint profile, the
@@ -78,14 +80,18 @@ and does not require that realization.
 Therefore Theorem 1.1 and the complete biconditional in Theorem 10.2 should
 not yet be described as fully Lean-verified.
 
-Build and inspect the manuscript with:
+Build the current manuscript from the repository root with:
 
 ```bash
 latexmk -cd -pdf -interaction=nonstopmode -halt-on-error \
-  papers/generalized-vanishing-two-variables/main.tex
-python3 scripts/check_latex_log.py \
-  papers/generalized-vanishing-two-variables/main.log
-python3 scripts/verify_gvc3_homogeneous_counterexample.py
-.venv/bin/python scripts/verify_gvc3_cusp_profile_suspension.py
-make verify-gvc-lean
+  -jobname=paper unpublished/generalized-vanishing-two-variables-revision/main.tex
+cd research/foundations/formal/gvc
+lake build
 ```
+
+The Lean command requires the project's pinned toolchain and dependencies.
+It was not replayed during the 17 November 2026 editorial review. The older
+standalone Python checker commands are not present in the current checkout;
+the all-order written argument and retained Lean sources are the proof
+support. The current [verification record](verification.json) records source
+and PDF identities and the limited scope of this review.

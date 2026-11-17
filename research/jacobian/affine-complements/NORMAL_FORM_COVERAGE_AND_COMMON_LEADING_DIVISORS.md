@@ -320,17 +320,9 @@ degree at most five and explicitly states it is
 unrefereed. Five ancillary programs report 247 checks;
 the separate ternary-top dependency contributes 29.
 
-This repository already adopted the reproduced result
-as HC4D5EXT1. The existing
-[degree-five audit](../../hessian/hc4-degree-five-audit/README.md)
-and normalization review remain the evidence, with
-formal verification and external review false.
-This turn revalidated all 276 retained source/log
-checks, the extra retained block certificate, and
-byte identity of the current remote PDF/source ZIP
-with the stored v1 files. No fresh CAS replay is
-claimed. The theorem statement and certificate
-table were visually checked on PDF pages 1 and 6.
+The preprint's total-potential-degree hypothesis must be distinguished
+from the graph-degree convention used here. No formal verification or
+external review of that imported statement is asserted.
 
 The local graph degree is DIFFERENT. In the retained
 Meng--Yang family, U=1+x*y and
@@ -369,7 +361,7 @@ The distinctions are:
 | r,s in (6) | degrees in w over C(u), not total degrees |
 | Minimality in PF142 | generic field degree [L:F] |
 
-## 9. Coverage status and next proof gate
+## 9. Current coverage boundary
 
 The written conditional normal form (3)--(12) is
 proved inside the specified marked quadratic models.

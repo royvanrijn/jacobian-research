@@ -36,9 +36,9 @@
     },
     {
       "author": "Hien-Roucairol",
-      "url": "https://doi.org/10.24033/bsmf.2564",
+      "url": "https://www.numdam.org/item/10.24033/bsmf.2564.pdf",
       "file": "sources/hien_roucairol_2008_published.pdf",
-      "imported": "Published BSMF136(2008),505-532;Theorems2.4,3.7 give perfect pairing and solution representation. Not a source for shrinking or uniform cut estimates."
+      "imported": "Published BSMF 136 (2008), 505-532; Theorem 2.7 (printed p. 514) gives the perfect pairing and Theorem 3.5 (printed p. 527) gives the solution representation. The numbering was checked against the published Numdam PDF. These results give representations, not shrinking or uniform cut estimates."
     },
     {
       "author": "Derksen-van den Essen-Zhao",
@@ -55,7 +55,8 @@
       "author": "Wall",
       "url": "https://www.cambridge.org/core/books/abs/singular-points-of-plane-curves/puiseux-theorem/430DD12CCBE2AE3C9729C7783E3BDDC3",
       "file": "sources/wall_puiseux_chapter_record.html",
-      "imported": "Publisher chapter record and preview explicitly distinguish formal Newton-Puiseux from convergence. Book2004 Chapter2 pp15-38,DOI10.1017/CBO9780511617560.003. Full paywalled chapter not claimed inspected."
+      "imported": "Publisher chapter record and preview explicitly distinguish formal Newton-Puiseux from convergence. Book2004 Chapter2 pp15-38,DOI10.1017/CBO9780511617560.003. Full paywalled chapter not claimed inspected.",
+      "role": "Historical background preview; active formal Puiseux citation replaced by Mannaa-Coquand Corollary 1.10."
     },
     {
       "author": "NIST DLMF",
@@ -77,7 +78,14 @@
     {
       "author": "Maisonobe",
       "url": "https://arxiv.org/html/1610.03354v1",
-      "scope": "Introduction;publication identity verified at https://ems.press/journals/rsmup/articles/10116774"
+      "scope": "Introduction;publication identity verified at https://ems.press/journals/rsmup/articles/10116774",
+      "role": "Background inspected previously; the Bernstein-ideal paragraph and citation were removed because no active manuscript argument uses them."
+    },
+    {
+      "author": "Mannaa-Coquand",
+      "url": "https://arxiv.org/abs/1304.6770v2",
+      "file": "sources/mannaa_coquand_1304_6770v2.pdf",
+      "imported": "Section 1, Theorem 1.9 and Corollary 1.10 (printed pp. 6-7), including the Laurent-denominator reduction and proof. Applied to separable minimal polynomials over C((r)); characteristic zero supplies separability, and a common multiple of the finitely many root denominators gives one cover. No convergence assumption or arbitrary-ring conclusion."
     }
   ],
   "search_conclusion": "Selected primary searches did not establish priority for the ternary cubic theorem or assembled dimension-degree boundary. Absence of a matching search result is not proof of novelty.",
@@ -106,13 +114,13 @@
   "ordinary_node_rank_scope": "Classical convergent/algebraic Roucairol Theorems0.1(2),0.3 and NONRAMIFIED Section1.2 after base change;rank formula does not require Theorem0.2 separation hypothesis. Local monodromy is constructed explicitly. No new priority or all-ring/nonconvergent global theorem.",
   "hyperbolic_suspension_credit": "Classical Gaussian and power-phase formal recurrences,tame Milnor decomposition credited to Pham. All-degree family theorem and full interpolation/rank proof written here;no exhaustive literature or novelty claim. Search results are discovery only;no secondary-source claim imported.",
   "uniform_cut_classical_credit": "Pham:complete tame cut homology. Hardt:compatible finite-family triviality,precisely stated in Drusvyatskiy-Lewis Theorem2.25;their Theorem2.32 gives uniform finiteness. HLTV:semialgebraic triangulations and chain-current boundary rule. Federer-Fleming compactness via Simon Chapter6 Section3 Theorem3.15,printed175. Hien-Roucairol:actual period representation with explicit hypotheses. New application written internally,no novelty claim.",
-  "bounded_regular_credit": "Formal exponential-type exactness and absence of cross-type morphisms:classical Turrittin-Levelt,precisely Sabbah Section3 Corollary3.3/proof. Full nonzero ranks:classical Roucairol Theorems0.1(2),0.3 NONRAMIFIED Section1.2 after all value curves become graphs. Tame full rank:Pham. New application supplies explicit bounded models and original-marker orders. No novelty or all-ring claim;Sabbah/Maisonobe convergent rational-slope credit unchanged.",
+  "bounded_regular_credit": "Formal exponential-type exactness and absence of cross-type morphisms:classical Turrittin-Levelt,precisely Sabbah Section3 Corollary3.3/proof. Full nonzero ranks:classical Roucairol Theorems0.1(2),0.3 NONRAMIFIED Section1.2 after all value curves become graphs. Tame full rank:Pham. New application supplies explicit bounded models and original-marker orders. No novelty or all-ring claim.",
   "completion_recheck": {
     "date": "2026-11-17",
     "Wilson": "Primary v1 Theorem1:strict-sign support and m>degQ;already dimension-only classification. No appropriation.",
     "Long": "Primary v1 Proposition4.1 and Theorem5.1 exact displayed witnesses and all-order m! identities.",
     "Liu": "Current publicv3 record rechecked;retained primary PDF pages2-3 read for Theorems2.1 and2.2. PDF fetch through web failed;cached primary PDF used,not a secondary summary.",
-    "Maisonobe": "EMS publication record and primary arXiv Introduction read:analytic Bernstein ideals and integer-normal rational directions attributed to Sabbah;Maisonobe minimal-direction/geometric refinement. Credit only,no substitute proof imported.",
+    "Maisonobe": "Previously inspected as background. The active manuscript does not use a Bernstein-ideal argument, so its unrelated attribution and bibliography item were removed. The independent Pham/Maisonobe-Rombaldi credit remains at the actual local asymptotic input.",
     "search_limit": "Targeted primary-record checks and searches do not establish exhaustive novelty. No first-proof or priority claim."
   }
 }

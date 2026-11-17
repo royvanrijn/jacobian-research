@@ -1,8 +1,0 @@
-{
-  "reason": "Exact local solves completed in fractions of a second while rewriting the growing gzip checkpoint dominated each step. The owned run was deliberately stopped after atomic checkpoints; future steps append individual proved identities.",
-  "terminated_owned_pids": [
-    2570974
-  ],
-  "old_script": "solve_local.py",
-  "new_script": "solve_local_fast.py"
-}

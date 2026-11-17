@@ -4,11 +4,13 @@
 from __future__ import annotations
 
 import argparse
+import ast
 import hashlib
 import json
 from pathlib import Path
 import re
 import subprocess
+from zipfile import ZipFile
 
 ROOT = Path(__file__).resolve().parents[1]
 REPOSITORY = ROOT.parent
@@ -59,8 +61,17 @@ def validate(data: dict) -> tuple[int, int]:
             if checker is None:
                 assert result["artifact_hash"] is None, f"hash without checker: {result['id']}"
             else:
-                expected = "sha256:" + hashlib.sha256(reference(checker).read_bytes()).hexdigest()
+                checker_path = reference(checker)
+                expected = "sha256:" + hashlib.sha256(checker_path.read_bytes()).hexdigest()
                 assert result["artifact_hash"] == expected, f"changed checker source: {result['id']}"
+                if checker_path.suffix == ".py":
+                    ast.parse(checker_path.read_text(), filename=str(checker_path))
+            for support in result.get("additional_checkers", []):
+                support_path = reference(support["path"])
+                actual = hashlib.sha256(support_path.read_bytes()).hexdigest()
+                assert actual == support["sha256"], f"changed supporting checker: {result['id']}"
+                if support_path.suffix == ".py":
+                    ast.parse(support_path.read_text(), filename=str(support_path))
         for question in topic["open_questions"]:
             assert isinstance(question["question"], str) and question["question"].strip()
             reference(question["source"])
@@ -96,10 +107,29 @@ def render(data: dict) -> str:
     return "\n".join(lines)
 
 
+def check_extracted_sources(meta: dict, directory: Path, sealed_names: set[str]) -> None:
+    """Bind extracted publication sources to the exact deposited archive."""
+    if meta["source"] in sealed_names:
+        return
+    archive_name = meta.get("source_bundle")
+    assert archive_name in sealed_names, f"published source lacks a sealed archive: {directory.name}"
+    members = meta.get("source_bundle_members")
+    assert isinstance(members, dict) and meta["source"] in members, (
+        f"published source is not bound to an archive member: {directory.name}")
+    with ZipFile(reference(archive_name, directory)) as archive:
+        for local, member in members.items():
+            assert member in archive.namelist(), f"missing deposited source member: {member}"
+            assert reference(local, directory).read_bytes() == archive.read(member), (
+                f"extracted publication source changed: {directory.name}/{local}")
+
+
 def check_portfolio() -> tuple[int, int]:
     counts = []
     for collection in ("results", "unpublished"):
-        folders = sorted((REPOSITORY / collection).glob("*/metadata.json"))
+        directory = REPOSITORY / collection
+        assert all((folder / "metadata.json").is_file() for folder in directory.iterdir() if folder.is_dir()), (
+            f"uncatalogued paper directory in {collection}")
+        folders = sorted(directory.glob("*/metadata.json"))
         assert folders, f"no {collection} metadata"
         counts.append(len(folders))
         for path in folders:
@@ -111,6 +141,11 @@ def check_portfolio() -> tuple[int, int]:
             reference("README.md", path.parent)
             reference(meta["source"], path.parent)
             reference(meta["pdf"], path.parent)
+            for field in ("source_bundle", "abstract_source"):
+                if meta.get(field):
+                    reference(meta[field], path.parent)
+            if meta.get("published_edition") and "://" not in meta["published_edition"]:
+                reference(meta["published_edition"], path.parent, directory=meta["published_edition"].endswith("/"))
             if collection == "results":
                 assert meta["status"] == "published-preprint", f"unpublished work in results: {path.parent.name}"
                 assert re.fullmatch(r"10\.5281/zenodo\.\d+", meta["doi"])
@@ -128,6 +163,7 @@ def check_portfolio() -> tuple[int, int]:
                     assert hashlib.md5(contents).hexdigest() == item["md5"], f"deposit MD5 mismatch: {item['file']}"
                     sealed_names.add(item["file"])
                 assert meta["pdf"] in sealed_names, f"published PDF is not the sealed deposited file: {path.parent.name}"
+                check_extracted_sources(meta, path.parent, sealed_names)
                 if "unpublished_revision" in meta:
                     reference(meta["unpublished_revision"], path.parent, directory=True)
             else:
@@ -145,12 +181,36 @@ def markdown_documents() -> list[Path]:
     return sorted({REPOSITORY / name for name in names if name and (REPOSITORY / name).is_file()})
 
 
+def source_markdown_mirrors() -> set[Path]:
+    """Pinned upstream documents retain upstream-relative links and exact bytes."""
+    mirrors = set()
+    for ledger in ROOT.rglob("source_ledger.json"):
+        data = json.loads(ledger.read_text())
+        for item in data.get("cached_primary_sources", []):
+            path = (ledger.parent / item["file"]).resolve()
+            if path.suffix != ".md" or not path.is_file():
+                continue
+            assert path.is_relative_to(REPOSITORY.resolve()), f"external source cache path: {path}"
+            assert item["url"].startswith("https://"), f"source mirror lacks upstream URL: {path}"
+            actual = hashlib.sha256(path.read_bytes()).hexdigest()
+            assert actual == item["sha256"], f"changed pinned upstream Markdown source: {path}"
+            mirrors.add(path)
+    return mirrors
+
+
 def check_links() -> tuple[int, int]:
     missing, checked = [], 0
-    documents = markdown_documents()
+    mirrors = source_markdown_mirrors()
+    documents = [path for path in markdown_documents() if path.resolve() not in mirrors]
     fence = re.escape(chr(96) * 3)
     for path in documents:
         text = re.sub(r"(?ms)^ *" + fence + r".*?^ *" + fence + r"[^\n]*", "", path.read_text())
+        text = re.sub(r"(?ms)^ *~~~.*?^ *~~~[^\n]*", "", text)
+        text = re.sub(r"(?m)^(?: {4}|\t).*", "", text)
+        tick = re.escape(chr(96))
+        text = re.sub(r"(?s)(" + tick + r"+).*?\1", "", text)
+        text = re.sub(r"(?s)\\\(.*?\\\)|\\\[.*?\\\]", "", text)
+        text = re.sub(r"(?s)(?<!\\)" + re.escape(chr(36)) + r"{1,2}.*?(?<!\\)" + re.escape(chr(36)) + r"{1,2}", "", text)
         for target in re.findall(r"\[[^\]]*\]\(([^)]+)\)", text):
             target = target.strip()
             if target.startswith(("#", "mailto:", "data:")) or "://" in target:

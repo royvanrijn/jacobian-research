@@ -5,6 +5,20 @@ from fractions import Fraction
 from functools import reduce
 from math import gcd
 from pathlib import Path
+
+import tempfile as _check_tempfile
+
+_CHECK_OUTPUT_DIRECTORY = None
+
+def _check_output(original):
+    """Write new runs to a temporary directory; preserve deposited receipts."""
+    global _CHECK_OUTPUT_DIRECTORY
+    if _CHECK_OUTPUT_DIRECTORY is None:
+        _CHECK_OUTPUT_DIRECTORY = Path(_check_tempfile.mkdtemp(prefix="math-check-"))
+        print("Verification output:", _CHECK_OUTPUT_DIRECTORY)
+    return _CHECK_OUTPUT_DIRECTORY / Path(original).name
+
+
 from itertools import product
 import json
 import random
@@ -148,7 +162,7 @@ def main():
     payload={'baseline':baseline,'grouped_baseline':grouped_baseline,'size':n,
              'forms':forms,'B':[[str(v) for v in row] for row in B],
              'choices':choices,'seed':261024889,'restarts':30}
-    (ROOT/'polarization.json').write_text(json.dumps(payload,indent=2)+'\n')
+    (_check_output(ROOT/'polarization.json')).write_text(json.dumps(payload,indent=2)+'\n')
     print('EXACT IDENTITY VERIFIED',n,flush=True)
 
 

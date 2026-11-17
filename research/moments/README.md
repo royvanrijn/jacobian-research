@@ -1,13 +1,15 @@
 # Moments and vanishing
 
-We study generalized vanishing, Gaussian moments, and Image/Mathieu spaces.
+Generalized vanishing, Gaussian moments and Image/Mathieu spaces.
 
-**Published:** [GVC(2)](../../results/generalized-vanishing-two-variables/README.md), [GMC(2)](../../results/gaussian-moments-two-variables/README.md), [sparse minimality](../../results/sparse-minimality-gaussian-moments-dimension-three/README.md), and [the Image counterexample](../../results/three-pair-image-counterexample/README.md).
+**Status:** Four published preprints; complete Gaussian-boundary and reductive-Mathieu manuscripts await review. General Gaussian and Image extensions remain open.
 
-**Open:** full two-pair bidegree (3,3) Image coverage; all-degree Gaussian transfer and quadratic-fibre safety; the ternary cubic prefix problem. Restricted purity and marked-safety results have explicit scope in the ledger.
+| Current result | Status | Main proof |
+|---|---|---|
+| Published GVC, GMC and Image results | Published preprints | [Published papers](../../results/README.md) |
+| Gaussian dimension-degree boundary | Unpublished; review pending | [Proof](../../unpublished/gaussian-boundary/manuscript.tex) |
+| Complete reductive Mathieu classification | Unpublished; review pending | [Proof](../../unpublished/mathieu-reductive-homogeneous-spaces/main.tex) |
+| All-degree Gaussian structure and safety gap | Internal result | [Proof](vanishing/GAUSSIAN_AMPLITUDE_IDEALS_AND_WEIGHT_INVARIANCE.md) |
+| Two-pair Image boundary and current (3,3) gate | Partial result | [Proof](../foundations/extended-geometry/TWO_PAIR_IMAGE_MATHIEU_COUNTEREXAMPLE.md) |
 
-**Unpublished:** the [Gaussian-boundary paper](../../unpublished/gaussian-boundary/README.md), [reductive-Mathieu paper](../../unpublished/mathieu-reductive-homogeneous-spaces/README.md), and [other moment manuscripts](../../unpublished/README.md) still need the reviews listed in their metadata.
-
-The [vanishing directory](vanishing/) contains current notes, exact checkers, sources and retained outputs. Its [detailed research record](vanishing/RESEARCH_LOG.md) preserves the current frontier and earlier steps. Earlier proofs and Lean projects live in the [foundational library](../foundations/README.md).
-
-[Current claims](../index/geometry.md) · [Open work](../knowledge/WORK_LEDGER.md)
+The [current result catalogue](../STATUS.md) records exact scopes, open questions and verification limits. Publication, formal verification and independent review are separate statuses.

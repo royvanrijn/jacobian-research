@@ -23,7 +23,7 @@ symmetric covariance. Use the selected branch
     psi=tP(g)-g^T C^-1 g/2,
     H_Q=exp(-psi) Phi_Q.                              (1)
 
-The sealed theorem gives algebraic psi and, after a finite constant
+The critical-normalization theorem gives algebraic psi and, after a finite constant
 extension and ONE phase scale, exponentially bounded common denominators
 for EVERY original polynomial amplitude Q. For standard covariance and
 integral data the precise bound is H_Q(4t) integral. A rational time
@@ -124,8 +124,7 @@ maps survive (3)-(4). No full image-kernel computation is needed.
 Equation(4) is a general structural constraint on the CONVERGENT class.
 It does not say that N is algebraic, Liouvillian or geometrically realized.
 Nor is it an algorithm recognizing all-marker convergence from a finite
-moment prefix. The previously sealed divergent Kloosterman/Airy constructions
-remain counterexamples to unrestricted finite algebraic-exponential induction.
+moment prefix. Regularity and actual Gaussian realization are additional hypotheses; no unrestricted finite algebraic-exponential induction theorem is asserted.
 
 ## 4. Every nonzero globally regular actual period forces psi=0
 
@@ -227,33 +226,22 @@ Rational core and regular core are different notions. No transcendental
 regular Gaussian realization is inferred from the existence of abstract
 G-functions such as an elliptic hypergeometric period.
 
-## 6. Controls, source boundaries and remaining work
+## 6. Verification and remaining questions
 
 The [checker](verify_gaussian_gfunction_regular_core.py),
 [certificate](gaussian_gfunction_regular_core_certificate.json) and
 [receipt](gaussian_gfunction_regular_core_verification.json) retain exact
-Fuchsian divisibility, infinity bounds, parameter specialization guards,
-indicial controls, original Gaussian controls and rejects. They do not prove
-the classical ACK theorem, decide convergence from jets, compute an actual
-image kernel, or identify an abstract elliptic G-function as Gaussian.
+Fuchsian divisibility, infinity bounds, specialization guards and indicial
+controls. They do not prove the classical ACK theorem, decide convergence
+from finite jets or compute an actual-image kernel.
 
-The quadratic/linear controls retain the entire exponent at infinity:
-exp(t^2/2) is convergent at zero and has normalized G-part1, but is globally
-irregular. A Witt polynomial W(1+Z^2) has psi=0 and algebraic marked periods.
-The pure Kloosterman phase has unit1 and divergent original markers, so unit
-convergence alone cannot imply full regularity. A quartic has psi=0 and
-integral scaled coefficients but diverges, so zero action/integrality alone
-does not imply regularity. The abstract elliptic 2F1(1/2,1/2;1;t) is Fuchsian
-and globally bounded; its ORIGINAL Gaussian realization remains unproved.
+Convergence at zero is insufficient for global regularity: exp(t^2/2) is
+convergent there but globally irregular. Zero critical action and arithmetic
+integrality alone are insufficient as well. The theorem requires every
+original marked period and its stated arithmetic hypotheses.
 
-The next higher-rank realization gate is now precise: construct a genuinely
-transcendental convergent marked G-part at psi=0 with every original marker
-controlled, or prove a Gaussian obstruction beyond G-function theory.
-Separately exclude or realize the finite nonzero Stein summand of an ORIGINAL
-nonpure safe Gaussian, and determine exhaustive safe phase structure WITH
-the original source marker filtration. Broad goal ACTIVE.
-
-Sabbah/Maisonobe retain convergent rational-slope credit; arbitrary
-nonconvergent formal and all-ring descent remain separately scoped, with
-priority unassessed. No outreach, delegation, terminal UNKNOWN restart,
-deepening finite campaign, cofinite-prime promotion or assurance promotion.
+The higher-rank question is to construct a genuinely transcendental convergent
+marked G-part at zero critical action with every original marker controlled,
+or prove an additional Gaussian obstruction. The rank-one original-vacuum
+problem remains separate. Independent mathematical review and formal
+verification are outstanding.

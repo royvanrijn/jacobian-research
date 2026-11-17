@@ -6,7 +6,7 @@ The Gaussian boundary and reductive homogeneous-space Mathieu paper have standal
 
 | Paper | Status |
 |---|---|
-| [Haar Moments and the Mathieu Property of Reductive Homogeneous Spaces](mathieu-reductive-homogeneous-spaces/) | ready for review |
+| [Counterexamples to the Mathieu Property: From Explicit Quotient Constructions to a General Classification](mathieu-reductive-homogeneous-spaces/) | ready for review |
 | [The Dimension-Degree Boundary for Gaussian Moment Vanishing](gaussian-boundary/) | ready for review |
 | [Generalized Vanishing in Two Variables: Working Revision](generalized-vanishing-two-variables-revision/) | revision |
 | [Gaussian Moments in Two Variables: Working Revision](gaussian-moments-two-variables-revision/) | revision |
@@ -21,4 +21,4 @@ The Gaussian boundary and reductive homogeneous-space Mathieu paper have standal
 
 To promote a paper, finish the stated review tasks, freeze and check its PDF/source bundle, deposit it, then move the published edition into [results](../results/) with its DOI or repository record and verification scope. Keep any later unpublished revision here.
 
-Prospectuses and topic notes without a finished manuscript remain under [research](../research/).
+Current supporting proofs and open questions live under [research](../research/).

@@ -6,7 +6,6 @@ priority unassessed. The [constructor](gaussian_stein_rank_one.py),
 [checker](verify_gaussian_stein_rank_one.py),
 [certificate](gaussian_stein_rank_one_certificate.json) and
 [receipt](gaussian_stein_rank_one_verification.json) retain finite controls.
-Older filtered,marker-filtration,Oaku and actual-image packets stay sealed.
 
 ## 1. A full ORIGINAL-marker identity over every Q-algebra
 
@@ -240,6 +239,4 @@ and all-ring extension priority remain separately unassessed.
 The focused controls include15original Stein images,75original IBP moment
 identities,an ordinary nilpotent control,nine faithful rank-one models,
 three finite companion matrices,three Jordan ladders,three corrected
-source identities and five rejects. Universal statements use the written
-arguments. Broad goal ACTIVE;no deeper finite campaign,delegation,outreach,
-terminal UNKNOWN restart or assurance promotion.
+source identities and five rejects. Universal statements use the written arguments; the finite controls do not replace independent review.

@@ -1,9 +1,0 @@
-{
-  "date":"2026-11-17","frozen_before_execution":true,
-  "selection":"Exactly the seven unresolved two-generator cover presentations in three_sheet_nonabelian_results.json, not new knots or covers",
-  "motivation":"For a simple3-branched cover, a nonabelian permutation image proves rank>=2 and therefore mr>=4. Rather than enlarge a finite-field sweep, apply bounded exact Todd-Coxeter enumeration to the actual retained presentation. Any returned action is only accepted after direct original-word evaluation and noncommutation, independently of the enumeration algorithm.",
-  "implementation":"Pinned local Sympy1.14.0 HLT enumeration of the trivial subgroup; compress and standardize the table, export inverse generator permutations to convert the right coset action to a left representation",
-  "limits":{"cases":7,"seconds_per_case":8,"maximum_cosets":5000,"checkpoint_each_case":true},
-  "acceptance":"Only independently replayed noncommuting generator permutations with all original branched-cover relators satisfied establish a sharp case. Cyclic returned images do not certify that the source group is cyclic; cap/time failure gives no rank conclusion. Named-knot/source and upper-bound reviews remain required for a new closure claim.",
-  "scope":"A bounded exact certificate proposal, not a complete finite-quotient/nonabelianity decision or a full MRC proof."
-}

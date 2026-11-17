@@ -7,8 +7,7 @@ from having an etale plane TARGET. It does not exclude every rational
 slice for the 2+3 model. Full Wright/HC4/JC2 remains OPEN.
 No novelty, independent replay, formal verification or review is asserted.
 
-The previous goal turn made PROGRESS with MU0's exact first mixed-fibre
-order and marked quadratic trace pole. The present argument uses a regular
+The present argument uses a regular
 primitive, rather than more moments or a monodromy-only obstruction.
 
 ## 1. A global criterion that retains the rational slice
@@ -240,7 +239,7 @@ the GLOBAL regular primitive required by a target coframe. This excludes
 an explicit all-degree realization architecture. It also shows why the
 source-image cover alone cannot supply exactness or a Keller target.
 
-For an arbitrary permitted beta, the correct next constraint is the full
+For an arbitrary permitted beta, the necessary remaining constraint is the full
 trace-free criterion (1): a rational primitive G and a polynomial source
 representative modulo E. The first is now a precise residue obstruction;
 the second is a GLOBAL algebra condition. Even passing both supplies
@@ -262,4 +261,4 @@ No new external theorem, primary cache/download or registered mathematical
 checker replay is used. New controls verify transcriptions, not independent
 whole-proof review. Full HC4/JC2 and its original full trace/marked-energy
 implication remain OPEN; published quartic PLANE exclusion and deferred
-external review/outreach remain intact.
+independent external review remain unclaimed.

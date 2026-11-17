@@ -1,8 +1,0 @@
-{
-  "status": "NO_GENERIC_CERTIFICATE",
-  "returncode": 124,
-  "elapsed_seconds": 40.0104287500144,
-  "input_sha256": "b4fbf781677bb8be7315e08205b65c3240e52ec8f2b07f0a8ce89b75ffbf0337",
-  "output_sha256": "13e3271c6c2c9a751f30a3a380b1c70b0fcb0b97dddd093e0e41452dfe2edeed",
-  "boundary": "A generic unit does not exclude exceptional parameter values"
-}

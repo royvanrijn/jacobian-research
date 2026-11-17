@@ -1,89 +1,153 @@
 {
+  "schema_version": 2,
   "date": "2026-11-17",
-  "canonical_note": "../unpublished/mathieu-reductive-homogeneous-spaces/README.md",
-  "paper_source": "../unpublished/mathieu-reductive-homogeneous-spaces/main.tex",
-  "paper_source_sha256": "e1e045b4127e1b22b01bdc8755ca6a27637f2e8674fc22906d28545972704ddb",
-  "pdf_export": "unpublished/mathieu-reductive-homogeneous-spaces/exports/mathieu-reductive-homogeneous-spaces.pdf",
-  "pdf_sha256": "0db3e0826260ad1d9643d0cc6a6a2d92009812a3d61fdcd9865fb349f5751dc9",
+  "path_base": "This manuscript directory",
+  "paper_source": "main.tex",
+  "pdf": "paper.pdf",
   "sources": [
     {
-      "source": "../unpublished/mathieu-reductive-homogeneous-spaces/README.md",
-      "sha256": "dc6cc29acddae4480e280c15da77dceb595e0410eb7a5ee0a178437259bc994d"
+      "source": "main.tex",
+      "sha256": "024b0dfab1b599a2be1bd405612f8d0ef82f8069c99f7ab87037adbf5278fb99"
     },
     {
-      "source": "../unpublished/mathieu-reductive-homogeneous-spaces/main.tex",
-      "sha256": "e1e045b4127e1b22b01bdc8755ca6a27637f2e8674fc22906d28545972704ddb"
+      "source": "paper.pdf",
+      "sha256": "affde9436f671936bcafef332915c5e2fe741a93a40eebb2cfec25fa2e754271"
     },
     {
-      "source": "../unpublished/mathieu-reductive-homogeneous-spaces/verify.py",
-      "sha256": "f0614b45d0551ec211b86429ac66123244280d981b7bba65b9ea65b654df141f"
+      "source": "verify.py",
+      "sha256": "0461daf0cb0ab3ff158d8eb44c4427b23a201f2418c3274fddd3d76fede1c16e"
     },
     {
-      "source": "../unpublished/mathieu-reductive-homogeneous-spaces/qa.json",
-      "sha256": "fa338a43b341b3f80d7f344320c24f178a3557b9ce103785e349ccdc9fbbc77e"
+      "source": "README.md",
+      "sha256": "19fa81239f0201c64ada45967e7ef01edc7bbfeb41579b2592841649a93ba608"
+    },
+    {
+      "source": "metadata.json",
+      "sha256": "6975a4fd710bf87c74f34d80f5947b066ca0a07119e8b54d1e3fa73f8579d2a3"
     }
   ],
-  "primary_sources": [
-    {
-      "source": "sources/duistermaat_vanderkallen_1998_20261117.pdf",
-      "sha256": "bb002d12b539a1ff3fdd099f343d3accd921ccf60f8a149f29b07cd0f7e87e1b",
-      "read_scope": "Printedpp221-222, general convex-hull statement explicitly read; classical torus theorem is stated as an input, not re-proved."
+  "internal_review": {
+    "result": "No unresolved proof gap identified; this is internal AI-assisted review.",
+    "scope": {
+      "exceptional_witnesses": "Sections 2-4 and Appendices A-C: polynomial regularity, subgroup invariance, purity, row degrees, factorial denominators, Wilson congruence, Klein identities, Cartier pullback and nonzero binary coefficients.",
+      "radial_witness": "Section 5: independently derived all-order binomial cancellation of pure moments, positive double-integral formula and triangle evaluation for marked moments, normalizer invariance and explicit radius scaling. The new printed formulas were reread against that derivation.",
+      "connected_classification": "Section 6: compact forms including disconnected stabilizers, line/doublet construction, regular dual matrix coefficients, branching rules, proper SL2 stabilizer images and subdirect products.",
+      "disconnected_classification_and_nullcone": "Section 7: number-field specialization, completely splitting primes, exponent separation, Newton identities, component averaging and the character-lattice criterion. Finite spaces, inversion and factor-permutation examples were also checked.",
+      "recompositions": "Section 8: CRT choice of a fixed marker, valuation extension with unit coefficients, unique negative valuation, descent of algebraicity, finite-generation Eisenstein argument and prime-quotient reduction for coefficient algebras.",
+      "primary_source_dependencies": "All 13 current bibliography entries checked against original passages; locators and applicability are recorded below."
     },
-    {
-      "source": "sources/long_spherical_pairs_e9edac2.tex",
-      "sha256": "934ad65de5ed4358fb33b29af15728ae86a1f7c5836e72050b00fc948c78df64",
-      "read_scope": "Structural line-doublet/root/subdirect arguments fully read and re-proved; special radial moment theorem is NOT assumed."
-    },
-    {
-      "source": "sources/molev_gelfand_tsetlin_2002v2_20261117.pdf",
-      "sha256": "0bc32869eef4d31c4700ed80b0feda574a737dee014ca5b59b68080c041391b8",
-      "read_scope": "PDF p10 Theorem2.1 and pp50-51 equation4.4/its parity convention read; two branching rules stated explicitly."
-    },
-    {
-      "source": "sources/flicker_sl2_2022.pdf",
-      "sha256": "c59aec448453dcaec1f0bb072d66be95ab671338b9a83e68f011969732ec11f1",
-      "read_scope": "Classical finite-subgroup classification, printedp215, retained primary source."
-    },
-    {
-      "source": "sources/achter_howe_cartier_2017_20261117.pdf",
-      "sha256": "3d6a312a6c30ef8aadd55acafe42e64a2b9f0c53bcda1c42aad8b7cc3f27576e",
-      "read_scope": "Cartier terminology/reference; coordinate independence and pullback rule proved directly in paper."
-    },
-    {
-      "source": "sources/sutherland_dirichlet_2021_20261117.pdf",
-      "sha256": "143fa624cb1dd51dc4852a831be24ee66c0670d405b7848191b12686ea2ae33b",
-      "read_scope": "Theorem18.1 for coprime prime progressions."
-    },
-    {
-      "source": "sources/rond_eisenstein_2024v2_20261117.pdf",
-      "sha256": "86850bfe38fc044fa56987e18162a94f20326e69f976b077598983d143f5fe7c",
-      "read_scope": "Eisenstein theorem context; finite-generation argument is proved in paper."
-    }
-  ],
-  "context_claims": {
-    "GMZALLREDUCTIVE20261117": "18bb85a851911ea7",
-    "GHAARRECOMPARITH20261117": "51eef0fc2545b2e6",
-    "GEXCEPTIONALFULLCOUNTER20261117": "c81c721fd539e80b"
+    "executor": "Internal Codex/ChatGPT proof and source audits, including a fresh-reader reconstruction; no human or external review claimed."
   },
-  "new_written_result": "Explicit all-order positive f4 radial identity and unified standalone construction",
-  "standard_inputs_declared": [
-    "Dirichlet prime progression theorem",
-    "Duistermaat--van der Kallen torus theorem",
-    "Matsushima affineness and basic reductive group structure",
-    "finite subgroups of SL2",
-    "two stated classical branching rules",
-    "valuation extension"
+  "resolved_exposition_findings": [
+    "Give the full classification strategy, a Laurent-monomial example and a worked first radial moment.",
+    "Distinguish the extension beyond Long's spherical theorem and define K-finiteness and defining doublets.",
+    "Replace the radial partial-fraction calculation with a positive double integral, and prove radial purity independently by phase cancellation.",
+    "Use explicit unit-radius coordinates in the scaling argument; identify the doublet by a unitary equivariant isomorphism.",
+    "Supply algebraic affineness and connected Hilbert-Mumford references with precise scope; pin the corrected Cartier reference.",
+    "Define Gamma, the rational denominator, the extended functional h_R and eventual purity before use.",
+    "Retain the explicit closed-subgroup hypothesis, half-integral branching boundary checks, compact-form citation and coefficient-field reduction.",
+    "Describe the actual AI assistance and internal review scope; keep operational instructions outside the article."
   ],
-  "not_assumed": [
-    "special external radial moment identity",
-    "old Weyl-even normalizer circuit",
-    "boundary extension machinery",
-    "Gaussian exponential-to-ordinary transfer",
-    "earlier repository proof notes"
+  "primary_references_checked": [
+    {
+      "bibliography_key": "AchterHowe",
+      "identity": "Achter and Howe, corrected arXiv:1710.10726v5 (2020)",
+      "url": "https://arxiv.org/pdf/1710.10726v5",
+      "inspected_location": "Section 2.2, p.5",
+      "support_and_applicability": "Cartier terminology and the differential extraction description; the manuscript proves its own coordinate-independence and pullback rule."
+    },
+    {
+      "bibliography_key": "AdamsTaibi",
+      "identity": "Adams and Taibi, author's manuscript dated 12 January 2018",
+      "url": "https://otaibi.perso.math.cnrs.fr/galois.pdf",
+      "inspected_location": "Section 3, Definition 3.3, Lemma 3.4 and Theorems 3.7-3.8, pp.7-8",
+      "support_and_applicability": "Compact forms meeting every component, Lie algebra complexification and containment of compact subgroups. Applies to disconnected H."
+    },
+    {
+      "bibliography_key": "Arzhantsev",
+      "identity": "Arzhantsev, arXiv:math/0506430v1 (2005)",
+      "url": "https://arxiv.org/pdf/math/0506430v1",
+      "inspected_location": "Proposition 2.2, p.2",
+      "support_and_applicability": "An affine group modulo reductive closed isotropy is affine. Applied to G^0/H^0; finite component quotients preserve affineness."
+    },
+    {
+      "bibliography_key": "Borel",
+      "identity": "Borel, Linear Algebraic Groups, second edition (1991)",
+      "url": "https://www.math.utah.edu/~ptrapa/math-library/borel/%20Borel-Linear-Algebraic-Groups-1991.pdf",
+      "inspected_location": "Proposition 14.2, pp.181-182; Proposition 14.10, pp.191-192; Sections 24.1 and 24.4, pp.269 and 273",
+      "support_and_applicability": "Central torus and derived-group structure, simple-factor isogeny and simply connected coverings. Semisimple complete reducibility extends by torus weights."
+    },
+    {
+      "bibliography_key": "DvK",
+      "identity": "Duistermaat and van der Kallen, Indag. Math. (N.S.) 9(2) (1998), 221-231",
+      "url": "https://webspace.science.uu.nl/~kalle101/powers.pdf",
+      "inspected_location": "p.222 and Section 3, pp.223-224",
+      "support_and_applicability": "The constant-term/Newton-polytope implication used for nonzero complex Laurent polynomials. The criterion is not numbered Theorem 1."
+    },
+    {
+      "bibliography_key": "Flicker",
+      "identity": "Flicker, Manuscripta Math. 167 (2022), 213-243",
+      "url": "https://www.ariel.ac.il/wp/yuval-flicker/wp-content/uploads/sites/316/2023/06/94.FiniteSubgpsSL2Manusc.pdf",
+      "inspected_location": "p.215, finite-subgroup classification and listed generators",
+      "support_and_applicability": "Over algebraically closed characteristic zero, finite SL2 images lie up to conjugacy in N(T), 2O or 2I; the listed generators also show 2T is contained in 2O."
+    },
+    {
+      "bibliography_key": "Kempf",
+      "identity": "Kempf, original preprint transcribed by Morrison, arXiv:1807.02890v1 (2018)",
+      "url": "https://arxiv.org/pdf/1807.02890v1",
+      "inspected_location": "Introduction, p.1, and Section 2",
+      "support_and_applicability": "Hilbert-Mumford contraction and positive active weights. Applied only to connected G^0 after proving equality of the two nullcones."
+    },
+    {
+      "bibliography_key": "LongSpherical",
+      "identity": "Long, manuscript dated 22 September 2026, revision e9edac262b4b64eb68feb0e6e80496cefe4a1dee",
+      "url": "https://github.com/long-mathematics/mathieu-second-conjecture-spherical-pairs/blob/e9edac262b4b64eb68feb0e6e80496cefe4a1dee/mathieu_second_conjecture_spherical_pairs.tex",
+      "inspected_location": "Main theorem; line/doublet, root-doublet, active-factor and subdirect-product arguments",
+      "support_and_applicability": "Connected spherical classification allowing disconnected H, and the attributed structural reductions. This paper derives its own radial moments and adds nonspherical exceptional quotients."
+    },
+    {
+      "bibliography_key": "Mathieu",
+      "identity": "Mathieu, Seminaires et Congres 2 (1997), 263-279",
+      "url": "https://smf.emath.fr/sites/default/files/2026-04/smf_sem-cong_2_263-279__sample.pdf",
+      "inspected_location": "Publisher's original excerpt, pp.264-265: Main Conjecture 1.1 and Lemma 1.2",
+      "support_and_applicability": "The original pure-to-safe assertion for K-finite functions and its invariant-projection interpretation. Only the directly accessible excerpt is needed here."
+    },
+    {
+      "bibliography_key": "Molev",
+      "identity": "Molev, Handbook of Algebra 4 (2006), 109-170; arXiv:math/0211289v2",
+      "url": "https://arxiv.org/pdf/math/0211289v2",
+      "inspected_location": "Theorem 2.1 and equation (4.4), PDF pp.10 and 50-51",
+      "support_and_applicability": "The GL3/GL2 and Spin5/Spin4 interlacing rules, including half-integral parity. The chosen weights satisfy their boundary inequalities."
+    },
+    {
+      "bibliography_key": "Rond",
+      "identity": "Rond, arXiv:2412.11738v2, dated 24 December 2024",
+      "url": "https://arxiv.org/pdf/2412.11738v2",
+      "inspected_location": "Theorems 1.1 and 2.2, pp.1-3",
+      "support_and_applicability": "Classical and generalized Eisenstein denominator bounds as context; the finite-generation lemma used here is proved in the manuscript."
+    },
+    {
+      "bibliography_key": "Stacks",
+      "identity": "The Stacks Project, Tag 00I8",
+      "url": "https://stacks.math.columbia.edu/tag/00I8",
+      "inspected_location": "Lemma 10.50.2",
+      "support_and_applicability": "A valuation ring dominating a local subring provides the extension of the Gauss valuation."
+    },
+    {
+      "bibliography_key": "Sutherland",
+      "identity": "Sutherland, MIT 18.785 Lecture 18, dated 10 November 2021",
+      "url": "https://ocw.mit.edu/courses/18-785-number-theory-i-fall-2021/mit18_785f21_lec18.pdf",
+      "inspected_location": "Theorem 18.1, p.1",
+      "support_and_applicability": "Infinitely many primes in a coprime progression. The two exceptional progressions and the CRT-selected recomposition progression satisfy coprimality."
+    }
   ],
-  "finite_checks_scope": "Printed polynomial identities and two beta normalizations only; not an all-degree theorem certificate.",
+  "other_standard_inputs": [
+    "Elementary beta integrals, binomial theorem, Wilson's theorem, Chinese remainder theorem and Newton identities.",
+    "Standard characteristic-zero algebraic-group and function-field facts at the explicitly cited or proved locations."
+  ],
+  "verification_limits": "Exact polynomial and rational identities; direct exceptional Haar moments at m=1,2; binary coefficient checks at the listed primes; radial row/phase moments and beta/double-integral evaluations at m=1,...,8; rejection of the two listed corrupted inputs. The all-order proofs and reductive classification are in main.tex and are not certified by these finite controls.",
   "independent_replay": false,
   "formal_verification": false,
   "external_review": false,
-  "external_review_deferred": true
+  "title": "Counterexamples to the Mathieu Property: From Explicit Quotient Constructions to a General Classification"
 }

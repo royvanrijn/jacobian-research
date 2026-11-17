@@ -1,9 +1,0 @@
-{
-  "status": "TIMEOUT",
-  "algorithm": "Exact QQ slimgb, replacing timed-out std",
-  "time_limit_seconds": 35,
-  "elapsed_seconds": 35.063,
-  "input_sha256": "1b52824066310650c23a0f827b2dff2aec1f9c1e00e2a38a1c21bcac199c8809",
-  "output_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
-  "conclusion": "NO EXCLUSION unless exact characteristic-zero output succeeds and complete normalization is checked."
-}

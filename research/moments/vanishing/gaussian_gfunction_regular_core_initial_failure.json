@@ -1,7 +1,0 @@
-{
-  "completed": false,
-  "stage": "new unregistered finite guard control",
-  "checker_sha256": "5bba07a159becd68fdce699e9de05d19afa3b04e705923eb6b730fdb79de1b75",
-  "reason": "A single moving apparent pole has no collision at e=0 and correctly needs guard1. The test incorrectly demanded a nontrivial guard.",
-  "fix": "Replace by a genuine collision of t and t-e with operator t(t-e)D+1. Generic fibers are Fuchsian;e0 is irregular,so a nontrivial guard is necessary."
-}

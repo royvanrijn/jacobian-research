@@ -2,7 +2,7 @@
 
 Christopher D. Long
 
-[Paper PDF](factorial_conjecture_two_variables.pdf) · [LaTeX source](paper/factorial_conjecture_two_variables.tex) · [Verification scripts](scripts) · [Revision record](audits/2026-10-07-exposition.md)
+[Paper PDF](factorial_conjecture_two_variables.pdf) · [LaTeX source](paper/factorial_conjecture_two_variables.tex) · [Verification scripts](scripts/) · [Revision record](audits/2026-10-07-exposition.md)
 
 This repository contains an unpublished research manuscript on the factorial functional
 

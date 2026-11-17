@@ -1,9 +1,0 @@
-{
-  "terminal": true,
-  "completed": false,
-  "exit_code": 1,
-  "input": "concurrent_line_initial_checker_input.py",
-  "input_sha256": "f9a7f91b7e906c7bb35dd6cbf8f50a5c837de63052b81cc87d2217a6aba446c0",
-  "failure": "The exact resultant includes a factor d^2, not d. Its nonzero locus for d!=0 is unchanged. Original rejected input preserved; no completed certificate emitted.",
-  "mathematical_claim_promoted": false
-}

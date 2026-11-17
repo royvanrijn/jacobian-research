@@ -1,13 +1,8 @@
 {
   "status": "COMPLETE",
   "input_sha256": {
-    "search_joint_a5_kernels.py": "a26d1a26ef94a29aa9ed3df2721ea51742e48060632d19b6bc0870baba194daf",
-    "joint_a5.py": "2a3b8c615697430687d7136e8bc37a93898b472df47cf4e5d851448a44c26237",
-    "joint_a5_panel.json": "4ee51adf7e0908cbc9cb2516137cd5e62d38abb245f1b26e19caf2d44eca87cd",
-    "joint_a5_catalogue.json": "3e0e2aff354d05c5916a675668d5f6072d562bb77b91810f45b789d0f9e0a6ee",
-    "parabolic_lifts.py": "18abf5886002d54f17b5ee8593f31fb1b339f66a36605b7ccec7863ff4648a27",
-    "search_lift_panel.py": "52e08aa7e034e1cf66e25892ec8fcc3844a0b166b44dff48e6b8a5e4c8799b8e",
-    "nonabelian_core_results.json": "2b34c2ae9ab42cade51f993512ff2c7dc6e519f8b327d226b18b655ee72033dc"
+    "joint_a5_panel.json": "2a0ea8edf355067f05d1de90103edfcb7bf0508612031009e0b3eebdac87c906",
+    "parabolic_lifts.py": "18abf5886002d54f17b5ee8593f31fb1b339f66a36605b7ccec7863ff4648a27"
   },
   "results": [
     {

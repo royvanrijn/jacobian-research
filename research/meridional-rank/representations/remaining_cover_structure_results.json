@@ -1,15 +1,9 @@
 {
   "status": "COMPLETE_FROZEN_SELECTION",
   "input_sha256": {
-    "remaining_cover_structure_plan.json": "fc3d0ed698f83cf1fbe6e7820da6e28e034cd89dbd95ced945fcf3caf0497715",
-    "audit_remaining_cover_structure.py": "885015493f826a726389b22d2db8cb0f9f92a0f59668c8ff7682b871d74af6f9",
+    "remaining_cover_structure_inputs.json": "fc3d0ed698f83cf1fbe6e7820da6e28e034cd89dbd95ced945fcf3caf0497715",
     "parabolic_panel.json": "fd300c9d04076c3eea911a104a810743f4d300ec60478c42f7ea97c115298286",
-    "compact_cover_groups.py": "88c975a276373a242f18d1ab3cce300cc1ca8755a5ad4ae0aea58069b7f4da77",
-    "mutation_graphs.py": "fa13588c69b13b385b28e2ecd20ff36813d73be1f7bdc4958dad745fb17be504",
-    "parabolic_lifts.py": "18abf5886002d54f17b5ee8593f31fb1b339f66a36605b7ccec7863ff4648a27",
-    "probe_outer_tangles.py": "e26bfb3ea2a5e9f4e5dcbabc61eb073f2190e2eaed942630edbc835b4b8717cf",
-    "four_piece_cover_verification.json": "dddc607adcc99ff2f70af609b1b01a4d5cf5884bb489496eff84cccc203ed56a",
-    "four_piece_source_audit.json": "b009240f8f5f7321c794d921c038657613840a680596d7f1bd4504bf1316d39b"
+    "parabolic_lifts.py": "18abf5886002d54f17b5ee8593f31fb1b339f66a36605b7ccec7863ff4648a27"
   },
   "results": [
     {

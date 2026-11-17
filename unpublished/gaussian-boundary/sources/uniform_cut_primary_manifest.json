@@ -47,9 +47,10 @@
       "author": "Hien-Roucairol",
       "url": "https://doi.org/10.24033/bsmf.2564",
       "locations": [
-        "Theorems2.4 and3.7"
+        "Theorem 2.7, printed p. 514; Theorem 3.5, printed p. 527"
       ],
-      "use": "Retained actual-period comparison;new proof explicitly checks regular O input,smooth affine space,algebraic independence f=t,g=tP-q,and finite exceptional parameter removal."
+      "use": "Retained actual-period comparison;new proof explicitly checks regular O input,smooth affine space,algebraic independence f=t,g=tP-q,and finite exceptional parameter removal.",
+      "numbering_rechecked": "Published Numdam PDF, https://www.numdam.org/item/10.24033/bsmf.2564.pdf"
     }
   ],
   "precision_improvement": "The prior Basu Theorem1.1 locator states base triviality;new DL Theorem2.25 explicitly states compatibility with EVERY prescribed finite family. Old sealed source records are retained unchanged.",

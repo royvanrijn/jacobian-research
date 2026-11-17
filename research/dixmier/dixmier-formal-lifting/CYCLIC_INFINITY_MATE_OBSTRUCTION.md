@@ -139,10 +139,8 @@ For the classical leading-bracket and proportional-power framework, see
 Those polynomial and fractional-Weyl results are context; the proof above
 establishes the stated whole-curve, arbitrary-Puiseux-cover version directly.
 
-The underlying mechanism is also related to the leading-symbol and
-degree-reduction methods in
-[QHI1](HAMILTONIAN_IDEALIZER_CRITERION.md) and
-[QSO2](QUADRATIC_OPERATOR_MATE_CLASSIFICATION.md).
+The [quadratic finite-mate theorem](QUADRATIC_OPERATOR_MATE_CLASSIFICATION.md)
+gives the complementary low-order input.
 This proof uses only the finite Ore calculus, polynomial roots and
 characteristic-zero Puiseux expansions. No novelty priority or
 independent theorem review is asserted.
@@ -211,31 +209,12 @@ This is an exact failed candidate and an all-degree failed family.
 It is not a full finite-left Long graph carrier. No fourth-image
 action or global finite-left lattice is inferred from (8)--(9).
 
-## What a surviving construction must change
+## Current scope
 
-Within the bounded exact-R scalar chart, a finite full Long lift
-must raise S above order two by QSO2. QKR1 then forces at least
-rank three in its inverse-Fourier spectral model. QVM1 adds an
-independent requirement: if S has v degree one, its top momentum
-polynomial cannot have degree at least two with root-multiplicity
-gcd one.
-
-A constructive replacement must therefore change that infinity
-face or exploit the proper-power boundary with an actual full
-Weyl action. This is a necessary condition, not a claim that either
-alternative succeeds. Arbitrary deformed first images and other
-polarizations remain outside the exact-R reduction.
-
-[Exact controls](check_infinity_mate.py) check the universal leading
-Ore coefficient identity, exact low-degree extraction of that
-coefficient, elimination of sample powers of S, the polynomial
-Wronskian calculation, positive degree-one pairs, the fractional
-proper-power boundary, the candidate's classical reduction, its
-polynomial connection and its horizontal projectors. The universal
-no-mate theorem uses the written valuation proof. The rank-three
-candidate's rank calculation uses QKR1 and the cited standard
-Fourier-rank and slope theory. No independent theorem replay,
-formal verification, external review, bounded Long lift, actual
-finite-left Long carrier, all-representative nonlifting, scalar or
-matrix endomorphism counterexample, novelty priority or DC2
-solution is claimed.
+The leading-face obstruction above is independent of the inverse-Fourier
+rank calculation in the explicit control. The
+[proper-power infinity limits](ALGEBRAIC_INFINITY_LIMITS.md) and
+[zero-mode transport](QUANTUM_ZERO_MODE_TRANSPORT.md) supply the remaining
+cases used in the completed scalar classification. Other coefficient faces,
+deformed first images and nonscalar carriers remain outside this theorem.
+No formal verification or independent external review is claimed.

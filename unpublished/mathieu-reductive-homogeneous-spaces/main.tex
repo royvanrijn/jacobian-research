@@ -34,11 +34,13 @@
 \DeclareMathOperator{\Cart}{\mathcal C}
 \setlength{\emergencystretch}{2em}
 \raggedbottom
-\title{Haar moments and the Mathieu property\\
-of reductive homogeneous spaces}
-\author{}
+\title{Counterexamples to the Mathieu Property\\[6pt]
+{\large From Explicit Quotient Constructions\\
+to a General Classification}}
+\author{Roy van Rijn}
 \date{17 November 2026\\[3pt]\small Research draft}
-\hypersetup{pdftitle={Haar moments and the Mathieu property of reductive homogeneous spaces}}
+\hypersetup{pdftitle={Counterexamples to the Mathieu Property: From Explicit Quotient Constructions to a General Classification},
+            pdfauthor={Roy van Rijn}}
 \begin{document}
 \maketitle
 
@@ -76,10 +78,25 @@ to the version using eventual vanishing of the pure moments: take a
 sufficiently large power of $P$ and then treat the finitely many residue
 classes of exponents separately.
 
-These moment conditions arise in Mathieu's invariant-theoretic conjectures
-\cite{Mathieu}. We are interested in $A=\C[G/H]$, where $G$ is a complex linear algebraic
-group and both $G^0$ and $H^0$ are reductive. The space $G/H$ is affine by
-Matsushima's criterion and finite quotients \cite{Matsushima}.
+For example, let $A=\C[t,t^{-1}]$ and let $\h=\CT$ extract the
+constant term. The function $P=t$ is pure and safe: for
+$Q=\sum_jq_jt^j$, one has $\CT(Qt^m)=q_{-m}$, which is zero once
+$m$ exceeds the finite range of negative exponents of $Q$. The question
+is whether this eventual vanishing persists beyond tori.
+
+Mathieu's Main Conjecture asks whether every pure $K$-finite function
+on a compact connected Lie group $K$ is safe
+\cite[pp.~264--265]{Mathieu}. Here $K$-finite means that the translates
+span a finite-dimensional vector space. Regular functions on a complex
+reductive group restrict to such functions on a compact form, so the
+case $H=\{1\}$ below concerns this original implication.
+
+We are interested in $A=\C[G/H]$, where $G$ is a complex linear algebraic
+group, $H\subseteq G$ is a closed algebraic subgroup, and both identity
+components $G^0$ and $H^0$ are reductive. The algebraic Matsushima
+criterion gives affineness of $G^0/H^0$
+\cite[Proposition~2.2]{Arzhantsev}. Each component of $G/H$ is a finite
+quotient of a conjugate of this affine variety, so $G/H$ is affine too.
 Its normalized Reynolds functional is the unique $G$-invariant functional
 with value one on the constant function one. When $G$ is connected, it
 is integration over a compact form, with total mass one.
@@ -97,6 +114,16 @@ $G/H$ such that $P$ is pure and $\h(QP^m)\ne0$ for infinitely many $m$.
 The important word in the second assertion is \emph{fixed}. A different
 multiplier at each order would not disprove the Mathieu property. Our
 examples use one polynomial $Q$, independent of $m$.
+
+For connected $G$, the space $G/H$ is \emph{spherical} if a Borel
+subgroup has an open orbit. For reductive $H$ in this setting, Long
+proves that the Mathieu property and equality of the pure set
+with the nullcone are both equivalent to $[G,G]\subseteq H$
+\cite{LongSpherical}. Theorem~\ref{thm:classification} removes the
+sphericity hypothesis and allows disconnected acting groups. The
+exceptional quotients below have dimension three, while a Borel subgroup
+of $\SL_2$ has dimension two; they supply the nonspherical cases needed
+in the rank-one reduction.
 
 Here are the two exceptional examples explicitly. Write
 \[
@@ -123,6 +150,22 @@ For $n=8$ or $12$, put
 \end{equation}
 Although $R$ is written as a quotient, it is a polynomial with integer
 coefficients. We will prove this before using it.
+
+The parameters used throughout the construction are collected below.
+The first row also gives the radial example in Section~\ref{sec:radial}.
+Here $c=b(n-1)$ and $p=cm-a$ is the prime index for the exceptional
+examples; $N(T)$ denotes the normalizer of the diagonal torus.
+\begin{center}
+\begin{tabular}{@{}lrrrrl@{}}
+\toprule
+Binary form & $n$ & $a$ & $b$ & $c$ & Quotient \\
+\midrule
+$X^2Y^2$ & 4 & 1 & 2 & 6 & $\SL_2/N(T)$ \\
+$f_8$ & 8 & 3 & 4 & 28 & $\SL_2/2O$ \\
+$f_{12}$ & 12 & 5 & 6 & 66 & $\SL_2/2I$ \\
+\bottomrule
+\end{tabular}
+\end{center}
 
 \begin{theorem}\label{thm:exceptional}
 The functions in \eqref{eq:construction} are regular invariants on
@@ -151,14 +194,27 @@ arbitrarily large orders.
 The proof has two independent parts. Torus weights and integration by
 parts give purity. For the marked moments, a congruence reduces Haar
 integration to one coefficient of a binary form modulo $p$. Two explicit
-polynomial identities show that coefficient is nonzero. No compactification
-or boundary calculation is needed.
+polynomial identities show that coefficient is nonzero.
+
+For the classification, equivariant pullback carries a bad pair to
+any homogeneous space mapping onto one of these examples. A simple
+factor of rank at least two instead produces a two-dimensional
+$\SL_2$-summand in a representation, to which the radial example applies.
+In the remaining case, inactive higher-rank factors can be removed,
+leaving only rank-one factors. A proper stabilizer projection gives a
+map onto one of the three quotients in the table; otherwise a diagonal
+coupling again produces such a summand. If $[G,G]\subseteq H$ for
+connected $G$, the quotient is a torus. For disconnected
+$G$, a finite-trace argument separates the moment conditions on its
+torus components.
 
 Sections~\ref{sec:haar}--\ref{sec:klein} prove
 Theorem~\ref{thm:exceptional}. Section~\ref{sec:radial} gives the radial
 example, and Sections~\ref{sec:connected}--\ref{sec:components} prove
-Theorem~\ref{thm:classification}. The final section treats polynomial
-recompositions and ordinary Cauchy transforms. We use standard structural
+Theorem~\ref{thm:classification}. Section~\ref{sec:components} also
+distinguishes purity from the invariant-theoretic nullcone. The final
+section treats polynomial recompositions, ordinary Cauchy transforms
+and coefficient algebras with nilpotents. We use standard structural
 facts about reductive groups, the classical finite subgroups of $\SL_2$,
 the two branching rules stated in Lemma~\ref{lem:doublet}, and the
 Duistermaat--van der Kallen theorem in its explicit form
@@ -397,8 +453,9 @@ differentiation gives the exact identity
 Indeed, Euler's homogeneous formula yields
 $J=f'G/n-fG'/v$ on the chart with second coordinate one, while
 $Y'/Y=f'/(bf)$. Substituting these into the derivative of $g$ proves
-\eqref{eq:differentialidentity}. Its right side is nonzero. Thus $g$
-is separating as well, and the cubic function field in
+\eqref{eq:differentialidentity}. Its right side is nonzero, so
+$\dd g\ne0$. Over the perfect field $\Fp$, this means that $g$ is
+separating: $L/\Fp(g)$ is separable. Hence the cubic function field in
 \eqref{eq:elliptic} embeds separably in $L$.
 
 Since $Y^{p-1}=f(t,1)^{(p-1)/b}$, the extraction rule gives
@@ -451,6 +508,19 @@ The latter transformation interchanges the two parenthesized factors.
 Thus they descend to $\SL_2/N(T)$, where $N(T)$ is the normalizer of
 the diagonal torus.
 
+The first moment illustrates the cancellation. On $\SU(2)$, put
+$t=|x|^2$ and $u=\overline{xy}$. Then
+\[
+ P_4=(xy)^2(1-tu)^4(1+(1-t)u)^4,\qquad Q_4=u^2.
+\]
+Phase integration keeps the coefficient of $u^2$ for $P_4$ and the
+constant coefficient for $Q_4P_4$. Consequently,
+\[
+ \h(P_4)=\int_0^1t^2(1-t)^2(6-28t+28t^2)\dd t=0,
+ \qquad \h(Q_4P_4)=\int_0^1t^2(1-t)^2\dd t=\frac1{30}.
+\]
+The following calculation extends this distinction to every order.
+
 \begin{lemma}\label{lem:normalizerpositive}
 For every $m\geq1$,
 \begin{equation}\label{eq:normalizermoments}
@@ -460,8 +530,18 @@ For every $m\geq1$,
 \end{equation}
 \end{lemma}
 \begin{proof}
-Purity is Proposition~\ref{prop:pure}. We compute the marked moment to
-make its sign transparent. Proposition~\ref{prop:markedcomponent} gives
+The phase calculation above also proves purity at every order, directly
+from the binomial theorem:
+\[
+ \begin{aligned}
+ \h(P_4^m)
+ &=\frac1{(6m+1)!}\sum_{r=0}^{2m}(-1)^r
+   \binom{4m}{r}\binom{4m}{2m-r}(2m+r)!(4m-r)!\\
+ &=\frac{((4m)!)^2}{(6m+1)!(2m)!}
+       \sum_{r=0}^{2m}(-1)^r\binom{2m}{r}=0.
+ \end{aligned}
+\]
+For the marked moment, Proposition~\ref{prop:markedcomponent} gives
 \[
  T_m=(xy)^{2m}(zw)^{-2}
        [t^{2m-2}](z+tx)^{4m}(w+ty)^{4m}.
@@ -476,28 +556,26 @@ Set $L=2m-2$. Expanding this coefficient and using
 There is no division by $zw$ in the polynomial $T_m$; its displayed
 coefficient is divisible by $(zw)^4$.
 
-Here is a short evaluation of the finite sum. For a positive integer $u$,
-\begin{equation}\label{eq:finitedifference}
- \sum_{r=0}^L\frac{(-1)^r\binom Lr}{u+r}
- =\int_0^1t^{u-1}(1-t)^L\dd t
- =\frac{L!(u-1)!}{(u+L)!}.
-\end{equation}
-Put $u=2m+1$, $v=4m-1=u+L$ and $W=6m=u+v$.
-The partial-fraction identity
+Let $S_m$ denote the sum in \eqref{eq:radialsum}. Use
+$1/(k(k+1))=\int_0^1u^{k-1}(1-u)\dd u$ for each pair of consecutive
+denominator factors and sum the binomial expansion. This gives
 \[
- \frac1{x(x+1)(W-x)(W+1-x)}
- =\frac{1/x+1/(W-x)}{W(W+1)}
-  -\frac{1/(x+1)+1/(W+1-x)}{(W+1)(W+2)}
+ S_m=\int_0^1\!\int_0^1
+     s^{2m}t^{2m}(1-s)(1-t)(t-s)^L\dd s\dd t>0.
 \]
-applies with $x=u+r$. Since $L$ is even, replacing $r$ by $L-r$
-shows that the terms with denominators $u+r$ and $v-r$ have equal
-totals. The same is true of $u+1+r$ and $v+1-r$. The second beta sum
-is $u/(v+1)$ times the first. Using \eqref{eq:finitedifference}, the sum in
-\eqref{eq:radialsum} is
+The positivity is immediate because $L=2m-2$ is even. For its value,
+use symmetry to integrate over $0<s<t<1$ and put $s=rt$. With
 \[
- \frac1{6m(6m+2)}\frac{L!(2m)!}{(4m-1)!}.
+ I_m=\int_0^1r^{2m}(1-r)^L\dd r
+     =\frac{(2m)!L!}{(4m-1)!},
 \]
-Substitution into \eqref{eq:radialsum} simplifies to
+the $t$-integral and then the two $r$-integrals give
+\[
+ S_m=2I_m\left(\frac1{6m(6m+1)}
+       -\frac{2m+1}{4m(6m+1)(6m+2)}\right)
+     =\frac{I_m}{6m(6m+2)}.
+\]
+Substitution into \eqref{eq:radialsum} gives
 \eqref{eq:normalizermoments}.
 \end{proof}
 
@@ -524,27 +602,29 @@ The second integral is positive if $\mu$ is not concentrated at zero.
 \end{proposition}
 \begin{proof}
 The matrix identity $M(kv)=kM(v)$ holds for $k\in\SU(2)$.
-For $v\ne0$, write $M(v)=\|v\|g$ with $g\in\SU(2)$.
-Average the integrands first over $k$. The purity proof in
-Section~\ref{sec:haar} works at every fixed radius: left weights still
-kill the same terms, and integration by parts still kills the remaining
-term. For the marked average, the only surviving term is the polynomial
-$T_m$ from Proposition~\ref{prop:markedcomponent}. It is homogeneous of
-total degree $12m-4$. Its average at radius $\|v\|$ is therefore
-$\beta_m\|v\|^{12m-4}$. The formulas hold at $v=0$ as well.
+For $v\ne0$, put $\rho=\|v\|$ and write $M(v)=\rho g$ with $g\in\SU(2)$.
+Using $t=|x|^2$ and $u=\overline{xy}$ for the unit-radius coordinates
+of $g$, we have
+\[
+ P_4(\rho g)=\rho^4(xy)^2(1-\rho^4tu)^4(1+\rho^4(1-t)u)^4,
+ \qquad Q_4(\rho g)=\rho^4u^2.
+\]
+Average the integrands first over $k$.
+Phase integration selects order $2m$ for the pure moment and $2m-2$
+for the marked moment. The averages are therefore $\rho^{12m}\h(P_4^m)=0$
+and $\rho^{12m-4}\beta_m$, respectively. The formulas hold at $v=0$ as well.
 Integrating these averaged identities against $\mu$ proves the result.
 \end{proof}
 
 \section{Connected reductive groups}\label{sec:connected}
 
 We now prove Theorem~\ref{thm:classification} for connected $G$.
-We use the standard compact-form, central-isogeny and complete-reducibility
-facts for reductive groups \cite{Borel}. The representation-theoretic
-organization follows the root-doublet and
-subdirect-product arguments in Long's spherical-pair draft
-\cite{LongSpherical}. We include those arguments to show exactly why no
-sphericity hypothesis is needed. Proposition~\ref{prop:radial} supplies
-the moment input directly.
+We use compact forms as in \cite[Section~3]{AdamsTaibi} and the
+central-isogeny and complete-reducibility facts for reductive groups
+\cite[Propositions~14.2 and~14.10, Sections~24.1 and~24.4]{Borel}.
+The root-doublet and subdirect-product arguments follow Long
+\cite{LongSpherical}. We give the reductions here and use
+Proposition~\ref{prop:radial} for the moment input.
 
 We use two elementary facts about normalized Reynolds functionals.
 If $q:X\to Y$ is a surjective equivariant morphism of homogeneous spaces,
@@ -560,6 +640,9 @@ $\widetilde G/\pi^{-1}H$ with $G/H$ and preserves normalized integration.
 Thus all witnesses constructed after this change are functions on the
 original homogeneous space.
 
+We call a submodule a \emph{defining doublet} if it is isomorphic to the
+standard two-dimensional $\SL_2$-module.
+
 \begin{proposition}[A line and a doublet]\label{prop:linedoublet}
 Suppose an irreducible $G$-module $V$ has a nonzero $H$-stable line
 $\C\xi$, and some homomorphism $\SL_2\to G$ has a defining
@@ -570,10 +653,13 @@ fixed functions $P,Q$ with
 \]
 \end{proposition}
 \begin{proof}
-Choose compact forms $L\subseteq K$ of $H\subseteq G$ and, by conjugating
-the root subgroup and $W$ together, arrange that $\SU(2)$ maps into $K$.
-Give $V$ a $K$-invariant Hermitian form and let $\Pi_W$ be orthogonal
-projection. The map
+Choose a compact form $L$ of $H$ and a compact form $K$ of $G$ containing
+$L$. This is possible also for disconnected $H$; see
+\cite[Theorems~3.7--3.8]{AdamsTaibi}. By conjugating the $\SL_2$
+homomorphism and $W$ together, arrange that $\SU(2)$ maps into $K$.
+Give $V$ a $K$-invariant Hermitian form. Orthogonal projection $\Pi_W$
+commutes with $\SU(2)$, since both $W$ and $W^\perp$ are stable.
+The map
 \[
  \Phi:K\to W,\qquad \Phi(k)=\Pi_W(k\xi)
 \]
@@ -583,10 +669,12 @@ It is not concentrated at zero: continuity and full support of Haar
 measure would otherwise give $K\xi\subseteq W^\perp$,
 whereas the span of $K\xi$ is all of the irreducible module $V$.
 
-Apply Proposition~\ref{prop:radial} to this measure. The polynomials
+Identify $W$ with $\C^2$ by an $\SU(2)$-equivariant unitary isomorphism
+and apply Proposition~\ref{prop:radial} to this measure. The polynomials
 $P=\mathcal P\circ\Phi$ and $Q=\mathcal Q\circ\Phi$ are regular on $G$:
-their holomorphic factors are matrix coefficients, and complex conjugates
-of matrix coefficients on $K$ are matrix coefficients of the dual
+their holomorphic factors are matrix coefficients. In an orthonormal
+basis, $\overline{\rho(k)}=(\rho(k)^{-1})^{\mathsf T}$ for $k\in K$,
+so the conjugate factors extend as matrix coefficients of the dual
 representation. Moreover $\Phi(kl)=\chi(l)\Phi(k)$ for the character
 $\chi$ of the $H$-stable line. On $L$ that character is unitary.
 The phase invariance of $\mathcal P,\mathcal Q$ therefore makes $P,Q$
@@ -596,8 +684,9 @@ extensions right $H$-invariant. Thus they belong to $\C[G/H]$ and
 \end{proof}
 
 \begin{lemma}\label{lem:doublet}
-Every nontrivial representation of a connected simple complex group of
-rank at least two contains a defining doublet for some root $\SL_2$.
+Every nontrivial finite-dimensional rational representation of a connected
+simple complex group of rank at least two contains a defining doublet
+for some root $\SL_2$.
 \end{lemma}
 \begin{proof}
 For type $A_2$, an irreducible module has highest weight $(a,b)$,
@@ -607,7 +696,8 @@ the polynomial highest weight $(a+b,b,0)$ contains every pair satisfying
  a+b\geq\mu_1\geq b\geq\mu_2\geq0.
 \]
 If $b>0$, use $(\mu_1,\mu_2)=(b,b-1)$; otherwise use $(1,0)$.
-The difference is one, so the root $\SL_2$ has a defining summand.
+In the latter case nontriviality gives $a\geq1$. The difference is one,
+so the root $\SL_2$ has a defining summand.
 
 For $B_2$, write a highest weight as $(a,b)$ with $a\geq b\geq0$,
 both integral or both half-integral. The
@@ -618,6 +708,8 @@ all $(c,d)$ of the same parity with
 \]
 The two $\SL_2$ highest weights are $c-d,c+d$.
 Use $(c,d)=(b,b-1)$ when $b>0$, and $(1,0)$ otherwise.
+The first choice is valid even when $b=\tfrac12$, since
+$|b-1|\leq b$; the second uses $a\geq1$.
 These are the classical branching rules; see
 \cite[Theorem~2.1 and equation~(4.4)]{Molev}.
 
@@ -630,8 +722,9 @@ branching arguments give the doublet. Root homomorphisms integrate it
 to the group, also after composing a simply connected cover.
 \end{proof}
 
-If a normal simple factor $S$ acts nontrivially on the affine space
-$G/H$, it acts nontrivially on some irreducible submodule
+Call a normal simple factor \emph{active} if it acts nontrivially on
+$G/H$. Since $G/H$ is affine, an active factor acts nontrivially on some
+irreducible submodule
 $U\subseteq\C[G/H]$. Evaluation at $eH$ is a nonzero $H$-fixed vector
 of $U^*$. It is nonzero because a $G$-stable space of functions vanishing
 at $eH$ would vanish at every point. Thus Lemma~\ref{lem:doublet} and
@@ -674,7 +767,7 @@ If $[G,G]\subseteq H$, then $G/H$ is a torus and its normalized
 functional is constant term: $H$ is the inverse image of a closed
 subgroup of the torus $G/[G,G]$, hence is normal with torus quotient.
 We use the Duistermaat--van der Kallen
-theorem \cite{DvK} in the following form:
+theorem \cite[pp.~222--224]{DvK} in the following form:
 \begin{equation}\label{eq:dvk}
  \CT(f^m)=0\ (m\geq1),\ f\ne0
  \quad\Longrightarrow\quad0\notin\conv(\Supp f).
@@ -801,11 +894,13 @@ is injective. The lattices in \eqref{eq:theta} are defined after imposing
 $D\subseteq H$.
 \end{corollary}
 \begin{proof}
-Unstable functions are safe: Hilbert--Mumford gives a one-parameter
-subgroup with strictly positive weights on the function, and these
-eventually dominate any fixed multiplier. For disconnected $G$ the
-nullcone equals the $K$-nullcone, since a $G$-orbit closure is a finite
-union of translates of the $K$-orbit closure. The non-toral fixed bad
+The $G$-nullcone equals the $K$-nullcone, since a $G$-orbit closure is
+a finite union of translates of the $K$-orbit closure, where $K=G^0$.
+For this connected group, the Hilbert--Mumford criterion gives a
+one-parameter subgroup with strictly positive weights on any unstable
+function \cite[Introduction and Section~2]{Kempf}. These weights
+eventually dominate those of any fixed multiplier, so unstable
+functions are safe. The non-toral fixed bad
 pairs therefore lie outside the nullcone.
 
 In the toral case, finite-trace separation and \eqref{eq:dvk} give a
@@ -827,7 +922,8 @@ homogeneous polynomials vanishing at zero.
 \section{Recompositions and ordinary Cauchy transforms}\label{sec:recompositions}
 
 Return to either exceptional pair $P,Q$ in
-Theorem~\ref{thm:exceptional}, and write
+Theorem~\ref{thm:exceptional}, with $\Gamma=2O$ or $2I$, respectively.
+Write
 \[
  (c,a)=(28,3)\text{ or }(66,5),\qquad b_j=\h(QP^j).
 \]
@@ -839,10 +935,12 @@ The facts needed in this section are
 \end{equation}
 The first is a weight calculation, the second is
 Proposition~\ref{prop:markedcomponent}, and the third is
-Theorem~\ref{thm:exceptional}.
+Theorem~\ref{thm:exceptional}. Here $\operatorname{den}(b_j)$ is the
+positive denominator of the reduced rational number $b_j$.
 
-For regular $S,V$ on a compact Haar cycle, the ordinary marked Cauchy
-transform is the convergent germ
+For regular $S,V$ on $\SL_2/\Gamma$, evaluate the Haar integral on the
+compact quotient $\SU(2)/\Gamma$. The ordinary marked Cauchy transform
+is the convergent germ
 \[
  C_V^S(z)=\h\left(\frac{V}{z-S}\right)
  =\sum_{m\geq0}\frac{\h(VS^m)}{z^{m+1}}
@@ -975,17 +1073,17 @@ $H(P)^m$ leaves only $H(0)^m$. Summing its geometric series proves
 \eqref{eq:unitcomposed}.
 \end{proof}
 
-Thus a rational unit Cauchy transform can coexist with a transcendental
-marked transform, for a specified fixed polynomial multiplier. The
-distinction comes from the actual ordinary moments, not a change of
-generating-function convention.
+Thus the unit Cauchy transform is rational while the marked transform
+is transcendental for the specified fixed polynomial multiplier.
 
 \subsection*{Coefficient algebras}
 
 There is also an exact statement with nilpotents retained. Let $R$ be
 any commutative unital $\C$-algebra, and extend $\h$ $R$-linearly to
-$R\otimes_{\C}\C[\SL_2/\Gamma]$. Safety in the following statement is
-against every multiplier in this entire algebra.
+$\h_R:R\otimes_{\C}\C[\SL_2/\Gamma]\to R$. An element is
+\emph{eventually pure} if its positive moments vanish for all sufficiently
+large orders. Safety in the following statement is against every
+multiplier in this entire algebra.
 
 \begin{corollary}\label{cor:coefficientrings}
 For $H(T)=\sum_{j=0}^d c_jT^j\in R[T]$,
@@ -1009,8 +1107,9 @@ $1+\sum_j(r_j-1)$ power zero. Thus $H(P)$ is nilpotent and safe.
 Conversely, a nonnilpotent coefficient survives in a prime quotient
 of $R$. Pass to the fraction field of that quotient. If the image of
 $H$ has positive degree, the valuation argument in
-Theorem~\ref{thm:recompositions} works over this characteristic-zero
-field and gives a fixed multiplier $QP^e$ with infinitely many nonzero
+Theorem~\ref{thm:recompositions} applies to the finitely generated
+subfield over $\Q$ generated by its coefficients. It gives a fixed
+multiplier $QP^e$ with infinitely many nonzero
 moments. Those moments were therefore nonzero in $R$. If the image of
 $H$ is a nonzero constant, the multiplier one already detects failure.
 Hence safety forces every coefficient to be nilpotent. Since any
@@ -1096,7 +1195,7 @@ This proves that the rule defining $\Cart$ is well defined.
 For a separable extension of function fields, the same $t$ is separating
 in both and the same expansion works in both, proving compatibility
 with pullback. Formula~\eqref{eq:cartierrule} follows by grouping powers
-whose exponents are congruent to $p-1$. See also \cite{AchterHowe} for
+whose exponents are congruent to $p-1$. See also \cite[Section~2.2]{AchterHowe} for
 the usual Cartier--Manin terminology.
 
 \section{Checking the polynomial identities}\label{app:identities}
@@ -1129,16 +1228,28 @@ Multiplying the displayed polynomials verifies it. Homogenization then
 gives $T^2=G^3+1728f_{12}^5$, hence
 $J^2=G^3/144+12f_{12}^5$ as asserted.
 
-\paragraph{Draft status.}
-This paper was prepared with assistance from ChatGPT (OpenAI).
-It has not been independently peer reviewed or formally verified.
+\paragraph{AI assistance and review.}
+ChatGPT (OpenAI) assisted with mathematical arguments, literature checks,
+exposition and verification code. The proof review and exact calculations
+reported with this draft are internal; it has not been independently
+peer reviewed or formally verified.
 
 \begin{thebibliography}{10}
 
 \bibitem{AchterHowe}
 J.~D.~Achter and E.~W.~Howe,
 \emph{Hasse--Witt and Cartier--Manin matrices: a warning and a request},
-\href{https://arxiv.org/abs/1710.10726}{arXiv:1710.10726}, 2017.
+\href{https://arxiv.org/abs/1710.10726v5}{arXiv:1710.10726v5},
+corrected preprint, 2020.
+
+\bibitem{AdamsTaibi}
+J.~Adams and O.~Ta\"ibi, \emph{Galois and Cartan cohomology of real groups},
+preprint, 2018, Section~3.
+\href{https://otaibi.perso.math.cnrs.fr/galois.pdf}{Author's manuscript}.
+
+\bibitem{Arzhantsev}
+I.~V.~Arzhantsev, \emph{Invariant ideals and Matsushima's criterion},
+\href{https://arxiv.org/abs/math/0506430v1}{arXiv:math/0506430v1}, 2005.
 
 \bibitem{Borel}
 A.~Borel, \emph{Linear Algebraic Groups}, second edition,
@@ -1155,6 +1266,11 @@ Y.~Z.~Flicker, \emph{Finite subgroups of SL(2,F) and automorphy},
 Manuscripta Math. \textbf{167} (2022), 213--243.
 \href{https://doi.org/10.1007/s00229-021-01274-x}{doi:10.1007/s00229-021-01274-x}.
 
+\bibitem{Kempf}
+G.~Kempf, \emph{Instability in invariant theory}, original preprint,
+transcription by I.~Morrison,
+\href{https://arxiv.org/abs/1807.02890v1}{arXiv:1807.02890v1}, 2018.
+
 \bibitem{LongSpherical}
 C.~D.~Long, \emph{A Classification of Mathieu's Second Conjecture for
 Reductive Spherical Pairs}, research draft, September 2026.
@@ -1163,11 +1279,7 @@ Reductive Spherical Pairs}, research draft, September 2026.
 \bibitem{Mathieu}
 O.~Mathieu, \emph{Some conjectures about invariant theory and their
 applications}, S\'eminaires et Congr\`es \textbf{2} (1997), 263--279.
-
-\bibitem{Matsushima}
-Y.~Matsushima, \emph{Espaces homog\`enes de Stein des groupes de Lie
-complexes}, Nagoya Math. J. \textbf{16} (1960), 205--218.
-\href{https://doi.org/10.1017/S0027763000007662}{doi:10.1017/S0027763000007662}.
+\href{https://smf.emath.fr/sites/default/files/2026-04/smf_sem-cong_2_263-279__sample.pdf}{Publisher's excerpt, pp.~263--267}.
 
 \bibitem{Molev}
 A.~I.~Molev, \emph{Gelfand--Tsetlin bases for classical Lie algebras},

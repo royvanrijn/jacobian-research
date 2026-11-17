@@ -1,4 +1,0 @@
-snappy==3.3.2
-spherogram==2.4.1
-snappy_15_knots==1.2.1
-snappy_manifolds==1.4

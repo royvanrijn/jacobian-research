@@ -1,9 +1,0 @@
-{
-  "scope": "Root multiplicity at least6 in the F7 eliminant, with Y substituted from the critical sweep image",
-  "command": "timeout 30s Singular -q sixfold-input.sing",
-  "observation": "The bounded process finished; its only retained output is halt 1. No completed basis, unit certificate or exclusion was obtained. The shell did not preserve an inner exit code.",
-  "input": "sixfold-input.sing",
-  "log": "sixfold-groebner.log",
-  "conclusion": "UNKNOWN",
-  "restart_policy": "Preserve this attempt; change the mathematical representation or supply a different certificate before further compute."
-}

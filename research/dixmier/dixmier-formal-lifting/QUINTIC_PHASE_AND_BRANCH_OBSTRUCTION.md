@@ -167,7 +167,7 @@ The invertible matrices (8) prevent the leading row symbol from
 being killed, so these orders are exactly two and three.
 
 The full right relation gives [P,Q]=h. This contradicts
-[QSO1](ALGEBRAIC_CURVE_STRING_OBSTRUCTION.md), which excludes such
+the [quadratic finite-mate theorem](QUADRATIC_OPERATOR_MATE_CLASSIFICATION.md), which excludes such
 scalar operators over every algebraic coefficient curve and cover.
 Therefore no such N exists. A rank-one quotient would have a
 rank-one kernel and is equally excluded.
@@ -423,16 +423,8 @@ nonconstant polynomial connection has an all-degree obstruction
 independent of the special order-two/order-three classification. It does not exclude another algebraic model of the same
 formal Long branch, just as QGM1 distinguishes a bad model from
 intrinsic nonalgebraizability. The scalar and matrix targets in
-[QMC1](FINITE_GRAPH_CARRIERS_AND_MATRIX_REALIZATION.md) remain open.
+the full finite-carrier conditions remain open.
 
-[Exact controls](check_phase_carrier.py) verify the phase derivatives,
-all six matrix relations, the exact rational canonical chart,
-the actual classical fourth image, the finite admission seed,
-selected Riccati identities and leading growth coefficients, and
-the split constant-g control, a higher-order phase deformation, and
-a finite scalar alternative for the linear-g branch. Universal freeness,
-absolute irreducibility of the nonsingular polynomial connection, formal splitting,
-nonsplitting, global admission and growth use written proofs.
-There is no independent theorem replay, formal verification,
-external review, novelty priority, finite rank-one Long carrier,
-bounded Long lift, matrix endomorphism counterexample or DC2 solution.
+The matrices, irreducibility and branch arguments above are the retained
+written proof. The scalar-mate package retains complementary finite controls.
+No new bounded Long lift, formal verification or external review is claimed.

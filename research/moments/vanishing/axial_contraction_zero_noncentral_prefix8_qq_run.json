@@ -1,8 +1,0 @@
-{
-  "status": "NO_CERTIFICATE",
-  "returncode": 124,
-  "elapsed_seconds": 45.009583956038114,
-  "input_sha256": "044e0915430e6f99fa43d687a435535bba24efff60d40da92a1fc03b9627a1b2",
-  "output_sha256": "13e3271c6c2c9a751f30a3a380b1c70b0fcb0b97dddd093e0e41452dfe2edeed",
-  "reason": "The first8 modular gate already returns1; use its smaller exact input to avoid redundant high-degree equations"
-}

@@ -1,9 +1,0 @@
-{
-  "status": "TIMEOUT",
-  "algorithm": "Exact QQ std with integer strategy, prefix12",
-  "time_limit_seconds": 120,
-  "elapsed_seconds": 120.013,
-  "input_sha256": "b549990919d52a50e17b8eb54597752dcc6221d090560a9adb987829e5e17f3b",
-  "output_sha256": "59dcf71a1a55f97e07a06b57c62731324a3132fab0b69a563ac266ef1b0a5f17",
-  "conclusion": "No rational exclusion until exact unit output and full input/normalization verification."
-}

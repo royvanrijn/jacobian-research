@@ -34,7 +34,7 @@ increase or prove a bounded normalization fixing R.
 The proof covers the whole first Painleve hierarchy with arbitrary
 constant lower times. It uses formal differential algebra and Puiseux
 series, not an extrapolation from computations in several orders.
-[QSO1](ALGEBRAIC_CURVE_STRING_OBSTRUCTION.md) is the order-three case.
+The order-three case is included in this theorem.
 
 ## Normalization and the universal differential polynomials
 
@@ -311,118 +311,11 @@ No estimate for ord(Q) is used. No square root of a unit in O is
 needed: the normalization cover belongs only to the characteristic-zero
 theorem; the regular even-power subtraction occurs in the original O.
 
-## What this forces for the actual Long map
+## Scope and verification
 
-Use the retained source polynomials from
-[the exact Long audit](../dixmier-audit/verify_long_pbw.py), in source
-image order [R,T,D,S]. Here put r=R, rather than the convention
-r=R/2 used in QGR1 and QRP1. Set
-\[
- \begin{split}
- a_0&=1-3xq,& B&=3x^2p+2a_0z,& v&=x^{-1},\\
- q&=(2v-rv^2)/3,& \partial_v&=-B/3,& \eta&=v^{-1}\partial_v .
- \end{split}
-\]
-Classically these are cotangent symbols; quantum mechanically the
-displayed differential generator satisfies
-\[
-             [\eta,f(r,v)]=\hbar v^{-1}\partial_v f(r,v).        \tag{16}
-\]
-Write
-\[
-       c(r,v)=3v-\frac53rv^2+\frac13r^2v^3,\qquad a=\eta+c(r,v).
-\]
-The classical fiber symbols of Long's retained S and T are exactly
-\[
-             S=2v+4a-3ra^2,\qquad
-             T=(ra^3-a^2-va)/2.                               \tag{17}
-\]
-In particular their scalar orders are two and three, with leading
-coefficients -3r and r/2. These are not the different retained
-degree-five fiber seed of the QRT transport calculation.
-
-For reproducibility, express the retained polynomials first in B and
-d_0=D0=(1+3xq)p/2-3q^2z, using the exact inverse linear formulas
-\[
-       p=2a_0d_0+3q^2B,\qquad
-       z=-3x^2d_0+(1+3xq)B/2.                                 \tag{18}
-\]
-Their d_0 coefficients cancel. Substitution of v,r,eta then gives
-(17). The checker matches the full retained polynomials, not just
-their leading terms.
-
-Now suppose a full formal Long lift has one common spatial degree
-bound and keeps its first image equal to the undeformed R.
-Since S_h and T_h commute with R, the exact Ore-centralizer theorem
-[QGR1](BOUNDED_GAUGE_RIGIDITY.md) puts both in the finite scalar
-differential-operator algebra after the localization above.
-Its coefficient field is
-F=K((h))(r,v), with derivation delta=h*v^{-1}d/dv and differential
-constants K((h))(r). F is a one-variable rational function field
-over those constants.
-
-Use the h-adic Gauss valuation and its valuation ring O. Bounded
-spatial support makes the coefficients finite Laurent-polynomial
-expressions in v,r with scalar series in K[[h]], hence elements of O,
-and delta preserves O. Reduction gives (17). If S_h has generic
-momentum order two, its scalar order is two and its leading
-coefficient is a unit, reducing to -3r. The relation
-[S_h,T_h]=h contradicts (15), because the reduction of T_h has
-odd scalar order three. The generic order of T_h is unrestricted.
-
-Therefore:
-\[
- \boxed{\text{Every spatially bounded full Long lift with exact R
-                   must raise the momentum order of S to at least three.}}
-                                                                    \tag{19}
-\]
-Here momentum order means combined degree in the original momenta p,z.
-In the centralizer it is exactly B order, hence eta order after
-localization: the top symbol of a nonzero coefficient times B^j
-cannot vanish. Thus the conclusion has a precise meaning before
-scalar localization.
-
-This eliminates the entire possibility of repairing the bounded lift
-by increasing only T's order while S stays quadratic. It does not
-assume a prescribed arithmetic center map. It is compatible with
-the conditional arithmetic exclusion in
-[QFL3](ARITHMETIC_COTANGENT_EXCLUSION.md), whose hypotheses are stronger
-in a different direction.
-
-The remaining escape is substantive: S_h can have h-small higher
-momentum terms, or a bounded lift may deform R. Formal normalization
-can fix R, but its spatial degree need not be bounded. QGR1 and
-[QNI1](IDENTITY_LIFTS_AND_UNBOUNDED_INVERSES.md) explain why bounded
-normalization cannot be assumed. This note proves neither a bounded
-R-fixing normalization nor an order constraint forbidding S's increase.
-
-Finally, an arbitrary coefficientwise polynomial formal lift need
-not have coefficients algebraic over the generic function field.
-Even at fixed differential order, a series with unbounded v-degree
-can lie in K(v)[[h]] without lying in any algebraic extension of
-K((h))(v). The common spatial bound is what supplies the generic
-algebraic coefficient field here. Thus (19) does not contradict
-unrestricted formal existence in [QFL1](PROOF.md).
-
-## Verification and remaining work
-
-[The exact checker](check_quadratic_mates.py) constructs R_0 through R_5
-from the quadratic resolvent identity, checks Lenard and universal
-Frechet adjoint identities in those orders, verifies the indicial
-recurrence against the differential polynomials, and checks all pole
-branches through g=5. It separately multiplies B_1,B_3,B_5 in an Ore
-algebra, checks allowed even Airy mates, and recovers (17) from the
-retained full Long images. The
-[receipt](quadratic_mate_controls.json) binds the proof, checker and inputs.
-
-The universal content is the written hierarchy, stationary-flow,
-adjoint, Puiseux, Riemann--Hurwitz and valuation proof. Finite controls
-are not an all-order proof, and their two implementations are not an
-independent theorem replay. No formal verification, external review,
-novelty priority, bounded full lift, all-representative Long nonlifting
-theorem or DC2 solution is claimed.
-
-The next scalar gate is the higher momentum order of S, together with
-possible deformation of R. A structural constraint from the full
-relations or a new bounded full construction is needed; increasing
-only the other operator's order has now been excluded in every degree.
+This is the algebraic-curve finite-mate theorem used by the
+[all-degree scalar classification](UNIVERSAL_P_POWER_OBSTRUCTION.md).
+The hierarchy, adjoint, Puiseux and valuation arguments above supply the
+universal proof. Complementary finite Ore controls are retained with that
+classification; no finite prefix substitutes for the all-order argument.
+No formal verification, independent whole-proof replay or external review is claimed.

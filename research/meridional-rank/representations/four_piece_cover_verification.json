@@ -201,16 +201,12 @@
   ],
   "assurance": "Exact free-basis/cyclic relator identities, complete cyclic-amalgam identity reductions, port/commutation checks and unimodular nonparallel slopes. Existing geometric arc parser used only for legacy labels and upper4 replay, disclosed. Four canonical JSJ pieces, rank>=3 via classical Boileau-Weidmann, and knot equalities require the written manifold realization/JSJ/classification proof; finite checks alone do not establish these uniform imports.",
   "input_sha256": {
-    "verify_four_piece_covers.py": "87b9307ec2ecffcc37e84ea2110a61cbc1f7a5ecf73fff768a73c0159c151b5f",
-    "four_piece_cover_plan.json": "48940e388419323f6437a0c19760dd130895ecbc57fa05164a22c7c7a61fbffa",
-    "four_piece_cover_results.json": "4b7d110b06ae51a07daf1ec861f9e91c6f2adce84286404aaed60a93d5549394",
-    "port_assembly_results.json": "7ba49e1af708bdaf299e67faaff92a907c71396c4be773a45a1457dc8dd93eb9",
-    "port_assembly_verification.json": "5c955675b1689e45f3cd075022c3b17027abdd4736a8c1fc78010b20f6941e44",
-    "compact_cover_verification.json": "4001bed48608d37ea613dc5a538c1581035c780a94b278b24f2abea807490be6",
-    "mutation_cover_results.json": "d12938a44ce9589300356ac83333734514f5b896c1166d98f3db43423a0b1c18",
-    "mutation_cover_verification.json": "5a925d1c5b9c008156becfe3aae921ceb87699f1ed0355cee06c055c8b7c3ec1",
-    "joint_a5_results.json": "6f2be622f64e34ba47127f5126f56bcc0f72cc98d4c29bb6d69e8a28ef623a9f",
-    "joint_a5_verification.json": "0e5f6d5cbb5e7d5974557e64a1c952b513c17cb80108cf7883c42dcca982bb99",
+    "verify_four_piece_covers.py": "e650a08836a6684eb40c71c2346c7347c95b65533824dc36d5ff6d651f47b75e",
+    "four_piece_cover_inputs.json": "48940e388419323f6437a0c19760dd130895ecbc57fa05164a22c7c7a61fbffa",
+    "four_piece_cover_results.json": "d9a85e4907ce7be91db9d50a9ff8b50a5aed867964d0c5f221ec9b1b8160c4ce",
+    "port_assembly_results.json": "cd5146f6906161012fee4b5249ce8165e19d4d21dc83ccd78f92e5cd93c331b6",
+    "mutation_cover_results.json": "aaa7282c5b0de8478b03fb0d3e3913749b4f95398a4542d197f7d54456b11e8a",
+    "joint_a5_results.json": "3952119118bcd127a0f6b786645b35ed79322972096715830c9ca6ba09349fcc",
     "verify_double_transpositions.py": "43eaa8c10f8cb8e96d63f8ab01028aee853d592809c7e8eaa92f3ad283545702",
     "parabolic_lifts.py": "18abf5886002d54f17b5ee8593f31fb1b339f66a36605b7ccec7863ff4648a27"
   }

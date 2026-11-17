@@ -18,23 +18,30 @@
 \DeclareMathOperator{\Span}{span}
 \setcounter{tocdepth}{1}
 \title{The dimension--degree boundary\\for Gaussian moment vanishing}
-\author{}
+\author{Roy van Rijn\\{\small Independent researcher}}
 \date{Working draft, 17 November 2026}
 \begin{document}
 \maketitle
 
 \begin{abstract}
-The Gaussian Moments Conjecture asks whether the vanishing of every
-positive moment of a complex polynomial persists after multiplication by
-an arbitrary fixed polynomial. The answer depends on both the number of
-variables and the degree. Combining the ternary-cubic theorem with
-Wilson's two-variable theorem and Long's counterexamples gives the exact
-boundary: the conjecture holds universally precisely when there are at
-most two variables, the degree is at most two, or there are three variables
-and the degree is at most three. In the last case the explicit cutoff is
-$m>3\deg Q$, and the coefficient three is optimal. We explain why these
-statements fit together, give short proofs of the elementary parts, and
-isolate the cubic reductions that carry the new argument.
+We classify complex polynomials of degree at most three in three
+independent standard real Gaussian variables whose positive moments all
+vanish. Up to a complex orthogonal linear change of coordinates and a
+nonzero scalar, every such polynomial has one-sided circular support or
+belongs to a single exceptional orbit. For every fixed polynomial $Q$,
+its mixed moments $\E[QP^m]$ vanish whenever $m>3\deg Q$, and the
+coefficient three is optimal. The proof extracts a Gaussian coordinate
+in which the polynomial is affine linear, then classifies that family
+using formal stationary frames and analytic period estimates.
+
+Combining this ternary-cubic result with Wilson's two-variable theorem,
+Liu's quadratic theorem and Long's counterexamples gives the exact
+dimension--degree boundary for the Gaussian Moments Conjecture: the
+implication from pure-moment vanishing to eventual mixed-moment
+vanishing holds universally precisely when there are at most two
+variables, the degree is at most two, or there are three variables and
+the degree is at most three. We reproduce the all-order moment
+identities for the two minimal failures.
 \end{abstract}
 
 \clearpage
@@ -81,10 +88,9 @@ most $d$ in $n$ standard Gaussian variables is safe.
 \]
 \end{theorem}
 
-This statement classifies the ranges in which purity \emph{always}
-implies safety. It does not classify the individual safe polynomials
-outside those ranges. A counterexample in four variables does not say
-that all four-variable polynomials behave badly.
+The entries below describe a universal implication for all polynomials
+in each dimension--degree range. Individual safe polynomials also exist
+outside those ranges.
 
 \begin{center}
 \begin{tabular}{@{}lccc@{}}
@@ -103,17 +109,21 @@ theorems is a cubic in three variables. Its quantitative form is useful:
 
 \begin{theorem}[Ternary cubics]\label{thm:cubic}
 Let $P\in\C[X_1,X_2,X_3]$ have total degree at most three and satisfy
-\eqref{eq:pure}. Then, for every polynomial $Q$,
+\eqref{eq:pure}. Then, for every nonzero polynomial $Q$,
 \begin{equation}\label{eq:cutoff}
  \E[QP^m]=0\qquad\text{whenever }m>3\deg Q.
 \end{equation}
-No smaller constant can replace three uniformly over this class.
+For $Q=0$ the conclusion is immediate. No smaller constant can replace
+three uniformly over this class.
 \end{theorem}
 
-The proof gives a classification as well as a vanishing bound. In
-circular Gaussian coordinates $(Z,W,T)$, call a phase \emph{one-sided}
-if all its monomials have circular weight $\deg_Z-\deg_W$ of one
-strict sign; $T$ has weight zero.
+The proof gives a classification as well as a vanishing bound. Put
+\begin{equation}\label{eq:circularcoords}
+ Z=\frac{X_1+iX_2}{\sqrt2},\qquad
+ W=\frac{X_1-iX_2}{\sqrt2},\qquad T=X_3.
+\end{equation}
+Call a phase \emph{one-sided} if all its monomials have circular
+weight $\deg_Z-\deg_W$ of one strict sign; $T$ has weight zero.
 
 \begin{theorem}[Normal forms for pure ternary cubics]
 \label{thm:normalforms}
@@ -126,9 +136,37 @@ one-sided or is the exceptional phase
 \]
 \end{theorem}
 
-Thus the destination of the proof is one-sided support plus one
-exceptional orbit. One-sided phases have cutoff $m>\deg Q$; the
+The zero polynomial is included in the one-sided case: its empty support
+satisfies either strict-sign condition. Thus the classification consists
+of one-sided support and one exceptional orbit. One-sided phases have cutoff $m>\deg Q$; the
 exceptional orbit accounts for the sharp coefficient three.
+
+\subsection*{Notation and reading guide}
+The coordinate and parameter conventions used throughout are:
+\begin{center}\small
+\begin{tabular}{@{}p{0.22\textwidth}p{0.68\textwidth}@{}}
+\toprule
+Symbol & Meaning\\
+\midrule
+$n,d$ & Number of real Gaussian variables and upper bound on $\deg P$\\[3pt]
+$Z,W,T$ & Circular pair with $\E[Z^aW^b]=\delta_{ab}a!$, and an independent standard Gaussian\\[3pt]
+$t$, $r$ & Formal moment parameter; $r=1/t$ near infinity, with a finite root cover when stated\\[3pt]
+$\Phi_Q$ & Marked series $\sum_{m\ge0}\E[QP^m]t^m/m!$\\[3pt]
+$q(x)$ & Gaussian exponent after a coordinate change, including its linear and constant terms\\
+\bottomrule
+\end{tabular}
+\end{center}
+All polynomial degrees are total degrees. An expectation is the algebraic
+Gaussian moment functional, extended to formal series coefficient by
+coefficient. Complex coordinate changes preserve this functional when
+they preserve its bilinear covariance form. Analytic periods enter only
+after the comparison hypotheses are checked.
+
+For the boundary statement and its examples, read
+Sections~\ref{sec:introduction}--\ref{sec:cubic} and
+Section~\ref{sec:completion}. The full ternary-cubic proof occupies
+Sections~\ref{sec:formaltools}--\ref{sec:frameextraction}; the proof map
+below locates its two main reductions.
 
 \subsection*{Proof map}
 Write $P=F_3+F_2+F_1+F_0$ in homogeneous pieces. The logical route is:
@@ -176,11 +214,10 @@ Quadratic elimination, Proposition~\ref{prop:repeatedcomplete}\\
 \end{tabular}
 \end{center}
 
-The sharpness is visible in a three-term example, not in a large
-calculation. We prove it in Section~\ref{sec:shear}. The difficult part
-is showing that an arbitrary pure ternary cubic can be reduced to the
-families where a direct argument works. Section~\ref{sec:cubic} separates
-that problem from the boundary deduction.
+Section~\ref{sec:shear} proves sharpness with a three-term example.
+The difficult step is reducing an arbitrary pure ternary cubic to a
+family with a direct moment calculation; Section~\ref{sec:cubic}
+states the two reductions.
 
 \subsection*{Attribution and scope}
 We prove the ternary-cubic normal-form classification and its sharp
@@ -193,15 +230,11 @@ three-variable counterexamples are adopted from
 \cite[Proposition~4.1 and Theorem~5.1]{Long}, with their all-order moment
 identities reproduced below.
 
-The analytic Bernstein-ideal and rational-direction mechanisms are
-classical work of Sabbah and Maisonobe; see
-Maisonobe~\cite[Introduction]{Maisonobe} for the precise analytic
-setting and attribution. The formal exponential decomposition and
-local Fourier--Laplace background are credited separately to
-Sabbah~\cite{SabbahStationary}. The polynomial stationary-frame
-proof below also allows arbitrary nonconvergent Laurent coefficients.
-It is a statement over valued fields; no arbitrary-ring descent is
-used in this paper.
+For formal exponential decomposition and local Fourier--Laplace
+background, see Sabbah~\cite{SabbahStationary}. The polynomial
+stationary-frame argument below allows nonconvergent Laurent coefficients
+over a valued field. The analytic period comparisons are applied to
+rational parameter families, whose local Puiseux expansions converge.
 
 \section{A few Gaussian identities}
 
@@ -214,12 +247,8 @@ Then $P$ is pure exactly when $\Phi_1=1$, and is safe exactly when
 every $\Phi_Q$ is a polynomial. Thus a degree bound on $\Phi_Q$ gives
 an explicit vanishing threshold.
 
-For two independent real Gaussian variables, put
-\[
- Z=\frac{X_1+iX_2}{\sqrt2},\qquad
- W=\frac{X_1-iX_2}{\sqrt2}.
-\]
-Although $Z,W$ are convenient polynomial coordinates, they are not
+In the circular coordinates of \eqref{eq:circularcoords}, $Z,W$ are
+polynomials in the independent real Gaussians $X_1,X_2$, but are not
 independent random variables: $W=\overline Z$. Their moments are
 \begin{equation}\label{eq:wick}
  \E[Z^aW^b]=\delta_{ab}a!.
@@ -475,9 +504,8 @@ Corollary~\ref{cor:quadraticnormal} applies.
 
 \section{The two reductions for a ternary cubic}\label{sec:cubic}
 
-The preceding sections prove the easy parts of the boundary and explain
-the sharp constant. The remaining issue is a cubic with no preferred
-coordinate. Write it in homogeneous pieces as
+To prove the ternary-cubic theorem, we must handle a polynomial with no
+preferred coordinate. Write it in homogeneous pieces as
 \[
  P=F_3+F_2+F_1+F_0.
 \]
@@ -521,11 +549,9 @@ is null and whether $F_2$ vanishes there. Cases failing this test are
 excluded by their period behavior. Once a direction passes the test,
 Lemma~\ref{lem:frame} supplies the desired coordinates.
 
-Section~\ref{sec:frameextraction} proves this statement. Its final table
-covers all nine leading types. Full formal frames, regular-rank accounting and
-uniform actual-cut estimates retain the critical degeneracies and
-contributions at infinity. A finite moment sample is not used to
-infer frame extraction.
+Section~\ref{sec:frameextraction} proves this statement for all nine
+leading types. Its formal frames, regular-rank accounting and uniform
+cut estimates include critical degeneracies and contributions at infinity.
 
 \begin{proposition}[Classification with an affine-linear coordinate]\label{prop:wlinear}
 Let
@@ -534,7 +560,8 @@ Let
 \]
 If $P$ is pure, then, up to a complex orthogonal linear change of
 coordinates and a nonzero scalar multiple, it is one-sided or equal to
-$P_*=W+ZT-Z^3/2$. In particular it is safe and satisfies $m>3\deg Q$.
+$P_*=W+ZT-Z^3/2$. In particular it is safe, with
+$\E[QP^m]=0$ whenever $m>3\deg Q$.
 \end{proposition}
 
 The proof below reduces the pure cases to the one-sign argument,
@@ -556,8 +583,22 @@ extraction in Section~\ref{sec:frameextraction}.
 The first tools are algebraic: an obstruction for a cubic Gaussian
 series, a stationary-ball criterion over a valued field, and the
 corresponding criterion with logarithmic volume. They are used in both
-reductions. The analytic interpretation of a seed is developed separately
-in Section~\ref{sec:analyticcomparison}.
+reductions. The analytic interpretation is developed separately in
+Section~\ref{sec:analyticcomparison}.
+
+Here a \emph{differential module} over a parameter field $K$, such as
+$\C(t)$ or $\C((r))$, is a finite-dimensional $K$-vector space $M$
+with a connection $\nabla$ satisfying
+$\nabla(am)=a'm+a\nabla m$. A $K$-linear functional $J:M\to L$
+into a differential extension field is \emph{horizontal} if
+$J(\nabla m)=(J(m))'$. The distinguished amplitude class $[1]$ is
+called the \emph{seed}. In a Gaussian application
+$J([Q])=\Phi_Q$, so purity means $J([1])=1$.
+The obstructions below exclude a horizontal quotient from the
+submodule generated by this seed to the scalar module $K$, with
+connection given by ordinary differentiation, taking $[1]$ to one.
+Lemma~\ref{lem:seedfunctional} explains why purity would supply such
+a quotient.
 
 \input{formal_lemmas.tex}
 \input{polynomial_stationary_balls.tex}
@@ -675,9 +716,8 @@ For degree three, frame extraction and Lemma~\ref{lem:frame} put $P$
 in the family of Proposition~\ref{prop:wlinear}. A complex orthogonal
 linear substitution preserves both total degree and Gaussian moments.
 The bound therefore transfers back to every original multiplier $Q$.
-Equation~\eqref{eq:sharp} proves optimality. This is the entire logical
-route from the two reductions to Theorem~\ref{thm:cubic}; a finite
-pure-moment prefix is not needed.
+Equation~\eqref{eq:sharp} proves optimality, completing the proof of
+Theorem~\ref{thm:cubic}.
 
 \subsection{The normal-form conclusion}
 \begin{proof}[Proof of Theorem~\ref{thm:normalforms}]
@@ -705,31 +745,17 @@ be ignored, and increasing the allowed degree does not remove an
 existing example. These possibilities exhaust the complement.
 \end{proof}
 
-The classification therefore has two minimal failures: degree four
-in three variables, and degree three in four variables. The ternary
-cubic theorem identifies the last positive corner between them.
-The explicit threshold in that corner tells us more than eventual
-vanishing: a multiplier of degree $q$ can never expose a nonzero
-moment beyond power $3q$, and the shear shows that power $3q$ itself
-can still occur.
+The two minimal failures occur at degree four in three variables and
+degree three in four variables. Between them, the ternary-cubic bound
+is exact: a multiplier of degree $q$ can expose a nonzero moment at
+power $3q$, but never beyond it.
 
 \section*{Scope and further questions}
 \phantomsection\addcontentsline{toc}{section}{Scope and further questions}
-The dimension--degree theorem classifies where purity always implies
-safety. It does not classify every individual safe phase outside that
-region. The full Gaussian safety-implies-purity question and realization
-of regular transcendental or wild marked systems remain separate.
-Appendix~\ref{sec:constantfibres} records an all-degree consequence of
-quadratic elimination. It is not needed for the boundary deduction.
-
-The proof uses the stated classical comparison and decomposition
-results. They supply representations and full ranks; the quantitative
-bounds are proved separately on compact pieces, necks and tails.
-Symbolic checks do not establish those analytic arguments. 
-
-\clearpage
-\appendix
-\input{constant_quadratic_fibres.tex}
+The boundary theorem leaves open the classification of individual safe
+phases outside its universal range, and the general converse from safety
+to purity. Its proof combines classical comparison and decomposition
+results with the explicit compact-piece, neck and tail estimates above.
 
 \clearpage
 \begingroup\small
@@ -782,13 +808,6 @@ C.~D.~Long, \emph{Small Counterexamples to the Gaussian Moments Conjecture},
 public preprint (2026),
 \href{https://arxiv.org/abs/2607.18186v1}{arXiv:2607.18186v1}.
 
-\bibitem{Maisonobe}
-P.~Maisonobe, \emph{Filtration relative, l'id\'eal de Bernstein et ses
-pentes}, \emph{Rendiconti del Seminario Matematico della Universit\`a
-di Padova} \textbf{150} (2023), 81--125;
-\href{https://doi.org/10.4171/RSMUP/101}{doi:10.4171/RSMUP/101};
-\href{https://arxiv.org/abs/1610.03354v1}{arXiv:1610.03354v1}.
-
 \bibitem{Pham}
 F.~Pham, \emph{La descente des cols par les onglets de Lefschetz,
 avec vues sur Gauss--Manin}, \emph{Ast\'erisque} \textbf{130}
@@ -808,10 +827,10 @@ Contemporary Mathematics \textbf{474}, American Mathematical Society,
 2008, 309--330;
 \href{https://arxiv.org/abs/0706.3570v2}{arXiv:0706.3570v2}.
 
-\bibitem{Wall}
-C.~T.~C.~Wall, \emph{Singular Points of Plane Curves}, Cambridge
-University Press, 2004, Chapter~2, 15--38,
-\href{https://doi.org/10.1017/CBO9780511617560.003}{doi:10.1017/CBO9780511617560.003}.
+\bibitem{MannaaCoquand}
+B.~Mannaa and T.~Coquand, \emph{Dynamic Newton--Puiseux Theorem},
+public preprint (2013), Corollary~1.10,
+\href{https://arxiv.org/abs/1304.6770v2}{arXiv:1304.6770v2}.
 
 \bibitem{Wilson}
 M.~Wilson, \emph{A face-isolation proof of the two-variable Gaussian

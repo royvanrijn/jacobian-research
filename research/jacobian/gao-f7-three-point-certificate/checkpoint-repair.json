@@ -1,7 +1,0 @@
-{
-  "failure": "FLINT exponent objects were not JSON serializable; the old non-atomic checkpoint was truncated during a write.",
-  "preserved_failed_file": "partial-rational-dag-serialization-failure.json.gz",
-  "preserved_sha256": "c36749ed2eaf46faaf707129fb7b93e9defa6c05116ccf89b3526716e229062c",
-  "recovered_complete_nodes": 237,
-  "correction": "Convert exponents to Python ints and write a temporary gzip file before atomic replacement. Modular source and CRT state were unaffected."
-}

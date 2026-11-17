@@ -229,8 +229,8 @@ Ga action. No second independent LND, target-coordinate ruling,
 full trace-dual multiplication, marked-energy integrality or automatic
 solvable-monodromy inversion follows.
 
-The next useful global input must address those actual target/finite
+The remaining global condition concerns those actual target/finite
 normalization conditions. Reopening noncyclic deck families or a rigid
 canonical completion would repeat a now-closed branch. The published
 quartic PLANE exclusion is retained; no quartic intermediate is assumed
-plane. Full HC4/JC2 remains OPEN; review/outreach is DEFERRED.
+plane. Full HC4/JC2 remains OPEN; independent external review is unclaimed.

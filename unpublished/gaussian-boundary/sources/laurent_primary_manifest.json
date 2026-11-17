@@ -17,7 +17,8 @@
       "file": "sources/hien_roucairol_2008_published.pdf",
       "sha256": "00ec2354d24c759ec25a0bdca45a6d1d07f5966f01136d6c75049727152eb8d1",
       "url": "https://doi.org/10.24033/bsmf.2564",
-      "checked": "Theorems2.4,3.7 supply actual period representation/perfect pairing,not log growth."
+      "checked": "Theorems 2.7, 3.5 supply actual period representation/perfect pairing,not log growth.",
+      "numbering_rechecked": "Published Numdam PDF, https://www.numdam.org/item/10.24033/bsmf.2564.pdf"
     }
   ],
   "scope": "Convergent rational-parameter Laurent phases only;no new nonconvergent/all-ring Laurent descent.",

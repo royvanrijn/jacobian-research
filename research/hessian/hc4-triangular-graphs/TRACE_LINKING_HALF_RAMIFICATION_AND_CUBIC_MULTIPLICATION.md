@@ -2,12 +2,9 @@
 
 2026-11-16. HC4MYLY0/1. ALL DEGREES. Full HC4/JC2 remains OPEN.
 
-FULL THEOREM TARGET: prove HC4/JC2 or construct an actual counterexample.
-CURRENT LAST UNSOLVED IMPLICATION: ACTUAL polynomial plane source forces
+HC4 and the plane Jacobian conjecture remain open.
+The remaining unproved implication is: ACTUAL polynomial plane source forces
 Tr(Lambda_L*Lambda_L) subset B, or full marked-energy integrality; OPEN.
-The previous goal turn made PROGRESS with LX0/1. External review/outreach
-is DEFERRED, and the parity source theorem is unadopted.
-
 We examine the finite discriminant module itself. Its trace linking form
 is perfect globally, but a canonical half-ramification lattice makes the
 odd-index part metabolic. A perfect trace form on a smaller finite lattice

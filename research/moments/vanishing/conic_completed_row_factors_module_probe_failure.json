@@ -1,7 +1,0 @@
-{
-  "completed": false,
-  "returncode": 1,
-  "input_sha256": "8c9db4840b35a36f7ab686c543ac3238e51eddf4cec471289feae4d0c64d8007",
-  "terminal_log": "conic_completed_row_factors_module_probe_failure.log",
-  "stage": "retained euler p2q3 audit; inspect input module assumption"
-}

@@ -1,8 +1,0 @@
-{
-  "terminal": true,
-  "completed": false,
-  "exit_code": 1,
-  "input": "nodal_gaussian_critical_initial_checker_input.py",
-  "input_sha256": "da123385594ce3fdef0da66705d934a7a0d83238190810ce5dab2f619fd7d54a",
-  "failure": "The expected sign of the 3x3 projective Jacobian determinant was reversed. Exact determinant is +m*t^2; nonvanishing conclusion unaffected. Corrected before registering any theorem."
-}

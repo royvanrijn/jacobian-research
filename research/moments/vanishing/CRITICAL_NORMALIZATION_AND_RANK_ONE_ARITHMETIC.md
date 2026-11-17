@@ -251,7 +251,7 @@ normalized identity a^N=q descend, or take a finite norm/multiple N.
 
 In particular (9) holds for EVERY actual rank-one Gaussian image:
 D-stability implies f'/f rational, and every original marked period is
-a rational multiple of f. Combining with the sealed
+a rational multiple of f. Combining with the
 [rank-one global lattice theorem](STEIN_ACTION_AND_RANK_ONE_LATTICES.md),
 
     M=(exp(R) a/p) K[t,d^-1].                         (10)
@@ -288,29 +288,18 @@ inference. P=X^2/2 instead has g=psi=0 and algebraic seed (1-t)^(-1/2).
 For a nonzero linear phase psi=t^2 P_1^2/2 removes the exponential;
 without this normalization the common arithmetic model would fail.
 
-## 6. What remains open and what is retained
+## 6. Verification and remaining questions
 
-This closes the rank-one regular-transcendental Gaussian realization
-question by exclusion, without a weight-frame premise. It does NOT
-prove field safety=>purity: a nonconstant polynomial unit period is
-compatible with (9) with R=0. The remaining obstruction is still the
-finite nonzero Stein summand of an ORIGINAL nonpure safe Gaussian,
-outside the closed filtered class. Exhaustive safe PHASE structure with
-original marker filtration and higher-rank regular transcendental
-realization/obstruction remain open.
+Rank-one regular-transcendental realization is excluded at the stated scope.
+Field safety-to-purity remains open: a nonconstant polynomial unit period
+is compatible with (9) with R=0. Exhaustive safe-phase structure with its
+original marker filtration and higher-rank regular transcendental realization
+or obstruction remain open.
 
 The [constructor](gaussian_saddle_arithmetic.py),
 [checker](verify_gaussian_saddle_arithmetic.py),
-[certificate](gaussian_saddle_arithmetic_certificate.json),
-[receipt](gaussian_saddle_arithmetic_verification.json) and
-[source audit](gaussian_saddle_arithmetic_source_audit.json) retain focused
-exact identities, denominator controls, matrix root/translation controls,
-the critical conjugate obstruction, Kummer residue certificates and
-p-curvature controls. They test finite algebra; the universal arithmetic
-spreading arguments are written mathematics, not machine formalization.
-
-All Oaku operators, torsion witnesses and specialization thresholds remain
-sealed. Sabbah/Maisonobe retain convergent rational-slope credit; arbitrary
-nonconvergent formal and all-ring extensions stay separately scoped with
-priority unassessed. No terminal UNKNOWN job, broad search campaign,
-delegation, outreach or assurance promotion is involved. Broad goal ACTIVE.
+[certificate](gaussian_saddle_arithmetic_certificate.json) and
+[receipt](gaussian_saddle_arithmetic_verification.json) retain exact identities,
+denominator controls, critical-conjugate obstructions and Kummer residue
+controls. Finite algebra does not certify the universal arithmetic spreading
+arguments or replace independent mathematical review.

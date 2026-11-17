@@ -223,38 +223,22 @@ has a different implication,purity=>eventual mixed vanishing. It does not
 prove the reverse direction considered here. Its conjectural generality
 is not adopted as established knowledge.
 
-## 6. Provenance and the next general obligation
+## 6. Credit, verification and the remaining vacuum gap
 
-The finite Taylor projection and the polynomial Weyl-module mechanism are
-classical algebra. Gaussian IBP is credited to the usual Stein/divergence
-identity,for example
-[Azmoodeh--Gasbarra--Gaunt1912.04605v4,Lemma2.1](https://arxiv.org/html/1912.04605v4).
-The selected HTML proof display contains a factor(m-1) where direct
-differentiation of X^m requires m;at n=0,m=1 the latter is1. We use
-the correct lemma statement and an independent Wick proof of(2),not that
-display. The PDF/journal version of this particular display was not newly
-checked,and no claim about its typography there is made. Earlier packets
-and their separate source-index boundaries remain sealed.
+The finite Taylor projection and polynomial Weyl-module mechanism are
+classical algebra. Gaussian integration by parts is the usual Stein/divergence
+identity; see [Azmoodeh--Gasbarra--Gaunt, Lemma 2.1](https://arxiv.org/html/1912.04605v4).
+The proof above derives the required identity directly by Wick contraction.
 
 The [constructor](gaussian_amplitude_content.py),
 [checker](verify_gaussian_amplitude_content.py),
-[certificate](gaussian_amplitude_content_certificate.json),
-[receipt](gaussian_amplitude_content_verification.json) and
-[source audit](gaussian_amplitude_content_source_audit.json) retain the
-finite identities,original Wick controls,primitive nonunit-content case,
-ring mask,cutoff costs and the positive tilt. Universal statements use
-the written algebra,not a bounded moment campaign or kernel computation.
+[certificate](gaussian_amplitude_content_certificate.json) and
+[receipt](gaussian_amplitude_content_verification.json) retain finite identities,
+coefficient-content and ring controls, cutoff costs and the positive tilt.
+The universal assertions use the written algebra.
 
-The main field safety=>purity gate remains OPEN:exclude a nonconstant
-polynomial unit period for an ORIGINAL UNWEIGHTED safe phase,or realize
-one with all original markers controlled. Every nonconstant polynomial
-unit period has a finite zero over the algebraic closure,so this is also
-a zero-free-vacuum problem. Weighted positivity or ideal saturation alone
-cannot settle it. The higher-rank zero-action convergent-transcendental
-Gaussian transfer and exhaustive safe PHASE structure with source marker
-filtration remain open. Broad goal ACTIVE.
-
-All Oaku operators,torsion witnesses,specialization thresholds,formal and
-all-ring packets remain sealed. Sabbah/Maisonobe retain convergent
-rational-slope credit. No delegation,outreach,terminal UNKNOWN restart,
-deeper prefix campaign,novelty claim or assurance promotion.
+Field safety-to-purity remains open: exclude a nonconstant polynomial unit
+period for an original unweighted safe phase, or construct one while controlling
+every original marker. Weighted positivity and ideal saturation alone do not
+settle it. Higher-rank regular transcendental realization and an exhaustive
+safe-phase classification with the original marker filtration are also open.

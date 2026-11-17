@@ -1,12 +1,8 @@
 {
   "status": "COMPLETE_FROZEN_PERIPHERAL_INPUTS",
   "input_sha256": {
-    "final_five_peripheral_plan.json": "2b3401e23303a9e838fdca5ae83289adc4552ba1c22810bf76b7ca649f11a21c",
-    "audit_final_five_peripherals.py": "4e9c2c4eb6485d949875777818c37ac1e21a74e04a9d9e543b437d0c29048751",
-    "final_five_structure_results.json": "2082c86b695df0b0ef291d3c783b91418e125ec41d0db072697c0297b9b61a5d",
-    "compact_cover_groups.py": "88c975a276373a242f18d1ab3cce300cc1ca8755a5ad4ae0aea58069b7f4da77",
-    "three_piece_cover_verification.json": "27158329f35b1a03302a1fa5af431cc3d6888386e2ba9a055ef5965cc73bb91b",
-    "three_piece_source_audit.json": "dce7410ebebefcc8303d39118064cbcc117af50108e042a0dd47e47c44335dd5"
+    "final_five_peripheral_inputs.json": "2b3401e23303a9e838fdca5ae83289adc4552ba1c22810bf76b7ca649f11a21c",
+    "final_five_structure_results.json": "c0f6126b5fa8b11796139e339a4408628078e0c1f0333709619cb1053b72565a"
   },
   "targets": [
     {

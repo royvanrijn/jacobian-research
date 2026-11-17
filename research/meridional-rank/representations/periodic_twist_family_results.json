@@ -6786,12 +6786,7 @@
   ],
   "scope": "Finite input construction; uniform proofs and independent replay required before a theorem claim. Distinctness uses the determinant, not approximate recognition. No worldwide novelty or family exclusion inferred.",
   "input_sha256": {
-    "periodic_twist_family_plan.json": "9b0fe7e409d2c56cd5f388e62d235b0afc506c915f01e0247ae8384dccc68a69",
-    "audit_periodic_twist_families.py": "5fb58740ddec3c73f40fd65bf865eb6da54c8c4d66f06957189e221b288dfbc1",
-    "joint_a5_panel.json": "4ee51adf7e0908cbc9cb2516137cd5e62d38abb245f1b26e19caf2d44eca87cd",
-    "three_sheet_nonabelian_results.json": "a542b07fec8d73b6d2be21251fb977a3d41e175fff0c4601a5f3eee8d917c040",
-    "finite_cover_full_results.json": "61bf5630294e2d8c80044f79797bff122cb4f1b38afabb03303c4d90f7a152bb",
-    "finite_cover_quotient_verification.json": "d63fe0242cf61aaaad82f873307b57d5d0c50cfe80789e193e0b9e7865c0f8da",
+    "joint_a5_panel.json": "2a0ea8edf355067f05d1de90103edfcb7bf0508612031009e0b3eebdac87c906",
     "parabolic_lifts.py": "18abf5886002d54f17b5ee8593f31fb1b339f66a36605b7ccec7863ff4648a27"
   }
 }

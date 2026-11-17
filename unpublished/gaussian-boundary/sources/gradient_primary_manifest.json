@@ -14,7 +14,8 @@
       "file": "sources/hien_roucairol_2008_published.pdf",
       "url": "https://doi.org/10.24033/bsmf.2564",
       "sha256": "00ec2354d24c759ec25a0bdca45a6d1d07f5966f01136d6c75049727152eb8d1",
-      "used_for": "Theorems2.4/3.7:formal rational seed extension is an actual period under explicit smooth-affine/algebraic-independence hypotheses. Not a tail estimate."
+      "used_for": "Theorems 2.7/3.5:formal rational seed extension is an actual period under explicit smooth-affine/algebraic-independence hypotheses. Not a tail estimate.",
+      "numbering_rechecked": "Published Numdam PDF, https://www.numdam.org/item/10.24033/bsmf.2564.pdf"
     }
   ],
   "citation_correction": {

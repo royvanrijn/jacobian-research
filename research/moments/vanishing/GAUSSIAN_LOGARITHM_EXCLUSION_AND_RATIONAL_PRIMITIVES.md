@@ -199,7 +199,7 @@ h' in K(t)1. Equation (7) makes h rational, contradicting independence
 of 1 and h over K(t). The same argument applies to the first two steps
 of any longer unipotent flag.
 
-Consequently the user's nonsplit rank-two system cannot occur even as
+Consequently a nonsplit rank-two system with trivial successive quotients cannot occur even as
 an embedded actual Gaussian submodule, let alone as the WHOLE image.
 More generally, the nonrational part of any finite iterated-integral
 system with trivial successive quotients cannot be embedded this way.
@@ -226,53 +226,9 @@ this trivial-successive-quotient argument. Algebraic covers and nontrivial
 algebraic composition factors require additional arguments; none are
 silently trivialized by a tensor product that may lose actual rank.
 
-## 6. Where the old nonsplit extensions keep their irregular term
+## 6. Remaining questions
 
-The retained [Euler-unit classification](GLOBAL_EULER_AND_GAUSSIAN_PULLBACK_LATTICES.md)
-has
-
-    A_b=1-t b(theta), theta=tD,
-    A_b h_b=1, h_b(0)=1,
-    a_(m+1)=b(m)a_m for h_b=sum_m a_m t^m.
-
-If deg b=r>=1 and b has no nonnegative integer root, the quotient has
-positive slope 1/r at zero, and h_b has exact Gevrey order r. For
-b(z)=a z+c with a!=0, the homogeneous solution is explicitly
-
-    y=t^(-c/a) exp(-1/(a t)).                          (11)
-
-The exponential factor is the irregular term. It cannot be removed
-by a rational gauge while a!=0. More generally, finite coefficient
-specialization that lowers deg b leaves a positive slope while the
-degree is positive. If b acquires a nonnegative integer root, the
-selected h_b terminates and its actual cyclic image collapses to K[t], although
-an ambient differential source may retain an irregular kernel.
-
-At deg b=0, say b=c, the relation is only multiplication:
-
-    (1-ct)h_b=1, h_b=(1-ct)^-1.                       (12)
-
-The extra GENERIC differential rank disappears; no logarithmic extension
-survives. At c=0 the result is h_b=1. In the Kloosterman/squared-spectator
-constructions these are the same Euler mechanisms after their retained
-transfers. Their [full all-marker proofs](GAUSSIAN_KLOOSTERMAN_QUOTIENTS_AND_FAITHFUL_SYMMETRIC_IMAGES.md)
-remain sealed. No new limit of their actual image is inferred from a
-nonminimal specialized source operator. Singular rescaling outside this
-normalized family would require a new formal period and marker analysis;
-the universal logarithm exclusion still applies to any valid Gaussian
-specialization.
-
-Thus the requested cancellation does not leave the logarithmic residue
-in these constructions. This is an actual-image statement, not a claim
-that every nonsplit differential extension is irregular in general.
-The abstract logarithmic system is a perfectly valid regular nonsplit
-extension; it fails the Gaussian arithmetic constraint.
-
-## 7. Remaining frontier and retained evidence
-
-The user's minimal candidate and the wider original rational-primitive/
-unipotent-submodule route are now excluded within the written theorem
-scopes above. A regular transcendental ORIGINAL Gaussian image remains
+The rational-primitive and embedded-unipotent cases are excluded within the written theorem scopes above. A regular transcendental ORIGINAL Gaussian image remains
 OPEN in other module types. At psi=0, number-field candidates must have
 all original markers conjugate-convergent and the stronger finite-prime
 arithmetic coefficient property, not merely the general G-function
@@ -281,9 +237,3 @@ markers would not close that full-image gap.
 
 The separate rank-one safety=>purity/primitive-vacuum question remains
 OPEN; see its [current reduction](SAFE_SEED_DIVISIBILITY_AND_PHASE_MARKER_FILTRATION.md).
-All Oaku operator identities, torsion witnesses, denominators and
-specialization thresholds remain unchanged. Sabbah/Maisonobe retain
-convergent rational-slope credit; arbitrary nonconvergent formal and
-all-ring extensions remain separately scoped, priority unassessed.
-No terminal UNKNOWN restart, deep finite campaign, delegation, outreach,
-general image-kernel computation or assurance promotion was used.

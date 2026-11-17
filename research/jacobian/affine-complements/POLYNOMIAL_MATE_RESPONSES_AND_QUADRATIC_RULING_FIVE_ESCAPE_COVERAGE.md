@@ -2,17 +2,13 @@
 
 PF2RULED159. 17 November 2026. Actual complex polynomial PLANE Keller maps.
 
-The previous goal turn made progress: PF158 excluded the entire quadratic
-ruling-four family. This note attacks the next degree using the ACTUAL
-polynomial Jacobian mate. It gives an unbounded local obstruction absent
-from a one-coordinate pole bound, complete necessary escape coverage for
-ruling degree FIVE across PF157's whole quadratic image class, and an
-explicit excluded family with fifth-power leading coefficient.
-
-The surviving degree-five case is NOT closed. In particular, an affine
-first parameter response with zero local residues remains outside this
-mechanism. Full finite normalization and every original ramified prime
-remain retained. No derivative integrality or HC4/JC2 conclusion is claimed.
+This note proves the polynomial-mate response lemma and necessary
+local escape conditions for the complete quadratic ruling-five source-image
+class. The lemma is an input to the
+[full ruling-five closure](POLYNOMIAL_RESIDUE_RAMIFIED_LINE_AND_QUADRATIC_RULING_FIVE_CLOSURE.md).
+The local test alone does not exclude every rational mate; its affine-response
+boundary is retained in the proof. All original ramified primes and the
+full finite normalization remain in scope.
 
 ## 1. A polynomial mate forces an affine first parameter response at a pole
 

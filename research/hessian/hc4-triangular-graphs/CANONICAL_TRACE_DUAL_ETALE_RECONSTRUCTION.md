@@ -296,7 +296,7 @@ simple connectedness and does not extend to this example.
 The user target remains a proof or counterexample for FULL HC4, equivalently
 JC2 through the retained Tang reproduction. Sections1--4 complete a
 global construction theorem, not that target. No external-review request
-or outreach is a next gate; current assurance flags remain unchanged.
+or external review is claimed.
 
 For the actual full finite normalization the precise missing implication
 can now be stated using a FINITE canonical lattice:

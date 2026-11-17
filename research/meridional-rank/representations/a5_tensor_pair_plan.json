@@ -1,9 +1,0 @@
-{
-  "date":"2026-11-16","frozen_before_execution":true,
-  "selection":"Exactly the four first16 targets with two retained A5 quotient kernels. On each, use both maps jointly; four Frobenius choices for the two natural2-dimensional characteristic2 modules, no replacements.",
-  "motivation":"The per-A5 composition-series barrier does not cover irreducible modules for the joint product A5xA5. Tensoring the two natural modules gives a genuinely different4-dimensional action through the joint quotient, potentially making two small quotients useful even below the20-kernel threshold.",
-  "rank_gate":"Z1 dimension greater than8 would force ordinary cover rank3 and the retained sharp-four conclusion",
-  "limits":{"knots":4,"modules_per_knot":4,"prime":2,"field_degree":2,"module_dimension":4,"seconds_total":30},
-  "controls":"Verify joint A5xA5 image order3600 using the retained permutation maps, and full16-dimensional matrix-algebra spans of the tensor actions",
-  "scope":"Only these natural tensor modules in characteristic2, not all product-quotient modules or fields. No novelty/full MRC claim."
-}

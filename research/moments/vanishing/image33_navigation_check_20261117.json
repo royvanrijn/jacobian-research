@@ -1,6 +1,0 @@
-{
-  "command": "make check-navigation",
-  "exit_code": 2,
-  "result": "PREEXISTING_UNRELATED_BLOCKER",
-  "log": "image33_navigation_check_20261117.log"
-}

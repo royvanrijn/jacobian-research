@@ -16,7 +16,7 @@ The [complete witness](power89/witness.json) contains all7921 integer
 entries of \(A\), both89-coordinate points and their common image.
 JSON padding and pivot indices are zero-based.
 This improves the audited
-[90-variable construction](../de-bondt-2610.24889/README.md) associated with
+[90-variable construction](https://arxiv.org/abs/2610.24889) associated with
 [de Bondt's preprint](https://arxiv.org/abs/2610.24889) to89 variables.
 It is an upper bound, not a minimum dimension or priority claim.
 The original counterexample and the economical12/18-variable base maps
@@ -142,7 +142,6 @@ arithmetic and retained in the full witness.
 - [Primary constructor](build_power89.py)
 - [Independent checker](verify_power89.py)
 - [Independent receipt](power89/validation.json)
-- [Scoped integration receipt](power89/integration.json)
 
 The primary constructor uses SymPy. The independent checker uses only
 standard-library Fractions and sparse polynomial arithmetic. It
@@ -168,27 +167,10 @@ From the repository root:
 These commands replay the saved exact identity; discovery need not be
 rerun.
 
-## Discovery scope and limits
+## Scope and verification
 
-The finite candidate space contains178 forms obtained from all five
-polarization identities on the existing grouped eighteen-variable tensor.
-Its cube span has rank121. The original90 forms are retained among them.
-
-A60-second exact linear-arithmetic support search for89 forms timed out
-with UNKNOWN; this is not an exclusion. A bounded plateau basis search
-stayed at90. The successful
-[basis-exchange search](power_basis_anneal.py) allowed temporary support
-growth through94 forms before finding89, with seed261115. The
-[checkpoint](power-basis-anneal/checkpoint.json) records the run and pins
-the source inputs.
-
-The earlier90-form independence result remains valid: the89-form identity
-uses a different set and a different coefficient representation. It is
-not deletion from that fixed independent list. The search does not prove
-optimality even in the finite178-form space, much less over all linear
-forms or all Keller maps.
-
-The ordinary cubic12-variable,36-term example remains a separate
-construction. Cubic-linear dimension minimization, other special-form
-minima and the normalized three-variable support problem remain open.
-
+The89-dimensional construction is an explicit upper bound. Minimum dimension,
+novelty priority and external review remain unclaimed. The retained cube
+decomposition is a final certificate input; no search campaign is needed
+to verify the determinant and collision. Packaged checkers write new outputs
+to an OS temporary directory and preserve the original receipts.

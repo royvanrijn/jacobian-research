@@ -1,9 +1,0 @@
-{
-  "status": "NO_COMPLETE_CERTIFICATE",
-  "returncode": 124,
-  "elapsed_seconds": 150.00644077803008,
-  "input_sha256": "7d50030d1285aa98191751f0d308e25d02629f3959f54aadd792a2c98567b84b",
-  "output_sha256": "08278c95d1f1be0ea995ec435b9ff13926c47b50c43ee27968f575f462ed5f36",
-  "output_bytes": 1596,
-  "method": "Hilbert-guided QQ homogeneous std; require exact GB, exact input containment, and matching modular leading ideals to certify equality via homogeneous matrix rank"
-}

@@ -165,7 +165,7 @@ def check_root(row,assembly,P,Q):
 
 def main():
     result=json.loads((HERE/'four_piece_cover_results.json').read_text())
-    plan=json.loads((HERE/'four_piece_cover_plan.json').read_text())
+    plan=json.loads((HERE/'four_piece_cover_inputs.json').read_text())
     assembly=json.loads((HERE/'port_assembly_results.json').read_text())['targets']
     assert result['status']=='COMPLETE_PERIPHERAL_MODEL_INPUTS'
     for path,digest in result['input_sha256'].items():assert hashlib.sha256((HERE/path).read_bytes()).hexdigest()==digest,path
@@ -203,10 +203,7 @@ def main():
         'root_relation_P_positive':root_identity([3,3]+inverse(P['root_word_d']),P['root_word_d']),
         'root_relation_Q_positive':root_identity([3,3]+inverse(Q['root_word_d']),Q['root_word_d'])}
     assert all(v for k,v in controls.items() if k!='two_piece_P_Q_presentations_generators')
-    files=['verify_four_piece_covers.py','four_piece_cover_plan.json','four_piece_cover_results.json',
-        'port_assembly_results.json','port_assembly_verification.json','compact_cover_verification.json',
-        'mutation_cover_results.json','mutation_cover_verification.json','joint_a5_results.json','joint_a5_verification.json',
-        'verify_double_transpositions.py','parabolic_lifts.py']
+    files=['verify_four_piece_covers.py', 'four_piece_cover_inputs.json', 'four_piece_cover_results.json', 'port_assembly_results.json', 'mutation_cover_results.json', 'joint_a5_results.json', 'verify_double_transpositions.py', 'parabolic_lifts.py', 'FOUR_PIECE_DOUBLE_COVERS_SHARP_FOUR.tex']
     receipt={'status':'PASS independent four-piece peripheral and upper4 inputs','roots':roots,'upper4':upper,
         'controls':controls,'corruptions_rejected':rejected,
         'assurance':'Exact free-basis/cyclic relator identities, complete cyclic-amalgam identity reductions, port/commutation checks and unimodular nonparallel slopes. Existing geometric arc parser used only for legacy labels and upper4 replay, disclosed. Four canonical JSJ pieces, rank>=3 via classical Boileau-Weidmann, and knot equalities require the written manifold realization/JSJ/classification proof; finite checks alone do not establish these uniform imports.',

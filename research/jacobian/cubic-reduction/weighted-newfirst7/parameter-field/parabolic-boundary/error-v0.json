@@ -1,5 +1,0 @@
-{
-  "status": "renderer-error",
-  "source_sha256": "0c83c3d2ef57875d60d0866eeb364302e42eac200266ec0dbecc4a09e6e8bc6c",
-  "reason": "Linear substitution introduces 1/f4; polynomial renderer requires cleared numerators. No mathematical solver conclusion."
-}

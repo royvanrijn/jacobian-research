@@ -1,9 +1,0 @@
-{
-  "status": "EXACT_QQ_CAS_OUTPUT",
-  "returncode": 0,
-  "elapsed_seconds": 14.834079723979812,
-  "input_sha256": "0b266901a8da634502f0045bdaad0b19c3c2ff8dc7c0f02c027c1881e0738a87",
-  "output_sha256": "173b9e25ac55bbe90673c98227d6fe048efc3bd84f180e3df325de821c76a247",
-  "time_limit_seconds": 45,
-  "memory_limit_bytes": 2147483648
-}

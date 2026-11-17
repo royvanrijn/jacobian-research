@@ -1,9 +1,0 @@
-{
-  "boundary_equations": 2,
-  "case": "nu-zero",
-  "input_sha256": "1903eac3cacb6d98291d40eb77c4494c0be6c82d98876cac610783c697142dcb",
-  "mode": "linear",
-  "seconds": 20.01,
-  "source_sha256": "10a4584fac65b3668ebc70e5b73db60a0caf796de1f9bb9f0517a172dbabe5c3",
-  "status": "timeout"
-}

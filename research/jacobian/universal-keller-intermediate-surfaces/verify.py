@@ -1,6 +1,20 @@
 #!/usr/bin/env python3
 """Selected exact embedded-curve and arbitrary-intermediate surface controls."""
 from pathlib import Path
+
+import tempfile as _check_tempfile
+
+_CHECK_OUTPUT_DIRECTORY = None
+
+def _check_output(original):
+    """Write new runs to a temporary directory; preserve deposited receipts."""
+    global _CHECK_OUTPUT_DIRECTORY
+    if _CHECK_OUTPUT_DIRECTORY is None:
+        _CHECK_OUTPUT_DIRECTORY = Path(_check_tempfile.mkdtemp(prefix="math-check-"))
+        print("Verification output:", _CHECK_OUTPUT_DIRECTORY)
+    return _CHECK_OUTPUT_DIRECTORY / Path(original).name
+
+
 import ast,hashlib,json,platform,time
 import sympy as s
 HERE=Path(__file__).resolve().parent;ROOT=HERE.parents[1];checks=[]
@@ -80,6 +94,6 @@ def main():
         blob=(HERE/src['path']).read_bytes();ck('primary HTML pin '+src['path'],len(blob)==src['bytes'] and hashlib.sha256(blob).hexdigest()==src['sha256'])
     receipt={'schema_version':1,'result':'pass','check_count':len(checks),'checks':checks,'python':platform.python_version(),'sympy':s.__version__,'runtime_seconds':round(time.monotonic()-begun,3),
     'assurance':'Selected exact witness, nonlinear curve, arbitrary intermediate coordinate mixing, open-surface pole and all-degree self-map identities accompany written general proofs. Published plane line injectivity, embedded-line rectification and etale base-change/section facts are imports. Not independent whole-proof replay, formal verification, external review or publication-priority evidence. No canonical atomic receiver or finite polynomial scalar-tangent integration is constructed.',
-    'sha256':{f:hashlib.sha256((HERE/f).read_bytes()).hexdigest() for f in ['PROOF.md','LITERATURE_AND_GAPS.md','verify.py','sources.json']}}
-    (HERE/'receipt.json').write_text(json.dumps(receipt,indent=2,ensure_ascii=False)+'\n');print(json.dumps({'result':'pass','checks':len(checks),'seconds':receipt['runtime_seconds']}))
+    'sha256':{f:hashlib.sha256((HERE/f).read_bytes()).hexdigest() for f in ['PROOF.md', 'verify.py', 'sources.json']}}
+    (_check_output(HERE/'receipt.json')).write_text(json.dumps(receipt,indent=2,ensure_ascii=False)+'\n');print(json.dumps({'result':'pass','checks':len(checks),'seconds':receipt['runtime_seconds']}))
 if __name__=='__main__':main()

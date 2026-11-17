@@ -1,9 +1,0 @@
-{
-  "equations": 12,
-  "input_sha256": "ddd4f6996a5c7a629f3329c365d4a1322e0da9f97a64ce05a438e889d166075d",
-  "scope": "Proper ideals require actual point extraction and exact full-map replay. No new12-term map claimed from primary basis status alone.",
-  "seconds": 0.005,
-  "source_sha256": "e9b8c17cd76107f6005cb1bdb40e422f71c0ce564cd474080e6f02c6000dee97",
-  "status": "primary-basis",
-  "variables": 9
-}

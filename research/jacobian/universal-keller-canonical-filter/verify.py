@@ -1,6 +1,20 @@
 #!/usr/bin/env python3
 """Exact seed fibres, trace selectors, actual covariance/Jacobians and a nonsplit fibre; no full descent formalization."""
 from pathlib import Path
+
+import tempfile as _check_tempfile
+
+_CHECK_OUTPUT_DIRECTORY = None
+
+def _check_output(original):
+    """Write new runs to a temporary directory; preserve deposited receipts."""
+    global _CHECK_OUTPUT_DIRECTORY
+    if _CHECK_OUTPUT_DIRECTORY is None:
+        _CHECK_OUTPUT_DIRECTORY = Path(_check_tempfile.mkdtemp(prefix="math-check-"))
+        print("Verification output:", _CHECK_OUTPUT_DIRECTORY)
+    return _CHECK_OUTPUT_DIRECTORY / Path(original).name
+
+
 from itertools import product
 import ast,hashlib,json,platform,time
 import sympy as s
@@ -111,6 +125,6 @@ def main():
     for src in manifest['local_sources']:ck('local pin '+src['path'],hashlib.sha256((ROOT/src['path']).read_bytes()).hexdigest()==src['sha256'])
     for src in manifest['external_sources']:
         data=(HERE/src['path']).read_bytes();ck('primary pin '+src['path'],len(data)==src['bytes'] and hashlib.sha256(data).hexdigest()==src['sha256'])
-    receipt={'schema_version':1,'result':'pass','check_count':len(checks),'checks':checks,'seed_fibre_groebner_bases':{'empty':[str(v.as_expr()) for v in Gempty.polys],'singleton':[str(v.as_expr()) for v in Gzero.polys],'triple':[str(v.as_expr()) for v in Gtriple.polys]},'selector_controls':selector_controls,'literal_map_controls':whole_controls,'nonsplit_quadratic_control':'Primitive rank-one idempotents have A=1/2,B^2=1/(4D); U=2DB gives U^2=D. The universal separability idempotent maps to the exact seed fibre.','whole_fixed_controls':subgroup_controls,'good_characteristic_controls':good_controls,'python':platform.python_version(),'sympy':s.__version__,'runtime_seconds':round(time.monotonic()-started,3),'sha256':{f:hashlib.sha256((HERE/f).read_bytes()).hexdigest() for f in ['PROOF.md','LITERATURE_AND_GAPS.md','verify.py','sources.json']},'assurance':'Exact whole seed fibre ideals, symbolic inverse/unit identities, finite-algebra selectors, literal whole-source Jacobian blocks/covariance/factorization, universal nonsplit quadratic fibre, subgroup orbit controls, and good-characteristic controls. No formalization or independent whole-proof replay of arbitrary-base descent, all-rank receiver, volume functor or atomic-length arguments. The constructed map is explicitly non-atomic. No publication-priority certificate.'}
-    (HERE/'receipt.json').write_text(json.dumps(receipt,indent=2,ensure_ascii=False)+'\n');print(json.dumps({'result':'pass','checks':len(checks),'seconds':receipt['runtime_seconds']}))
+    receipt={'schema_version':1,'result':'pass','check_count':len(checks),'checks':checks,'seed_fibre_groebner_bases':{'empty':[str(v.as_expr()) for v in Gempty.polys],'singleton':[str(v.as_expr()) for v in Gzero.polys],'triple':[str(v.as_expr()) for v in Gtriple.polys]},'selector_controls':selector_controls,'literal_map_controls':whole_controls,'nonsplit_quadratic_control':'Primitive rank-one idempotents have A=1/2,B^2=1/(4D); U=2DB gives U^2=D. The universal separability idempotent maps to the exact seed fibre.','whole_fixed_controls':subgroup_controls,'good_characteristic_controls':good_controls,'python':platform.python_version(),'sympy':s.__version__,'runtime_seconds':round(time.monotonic()-started,3),'sha256':{f:hashlib.sha256((HERE/f).read_bytes()).hexdigest() for f in ['PROOF.md', 'verify.py', 'sources.json']},'assurance':'Exact whole seed fibre ideals, symbolic inverse/unit identities, finite-algebra selectors, literal whole-source Jacobian blocks/covariance/factorization, universal nonsplit quadratic fibre, subgroup orbit controls, and good-characteristic controls. No formalization or independent whole-proof replay of arbitrary-base descent, all-rank receiver, volume functor or atomic-length arguments. The constructed map is explicitly non-atomic. No publication-priority certificate.'}
+    (_check_output(HERE/'receipt.json')).write_text(json.dumps(receipt,indent=2,ensure_ascii=False)+'\n');print(json.dumps({'result':'pass','checks':len(checks),'seconds':receipt['runtime_seconds']}))
 if __name__=='__main__':main()

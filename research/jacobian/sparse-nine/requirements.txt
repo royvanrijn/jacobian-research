@@ -1,4 +1,0 @@
-sympy==1.14.0
-z3-solver==4.15.3.0
-# verify.py's default independent rational checks use the Python standard library.
-# Symbolic controls and predecessor compilation use the packages above.

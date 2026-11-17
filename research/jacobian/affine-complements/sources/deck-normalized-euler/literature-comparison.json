@@ -1,9 +1,0 @@
-{
-  "as_of": "2026-11-16",
-  "url": "https://algebra.dmi.unibas.ch/blanc/articles/symplectic.pdf",
-  "primary": "Jeremy Blanc, Symplectic birational transformations of the plane, Osaka J.Math50(2013)573-590",
-  "scope_read": "Primary web text Section1.1 definition, introduction and Theorems1/2; PDF not freshly rendered.",
-  "comparison": "Its preserved form is dx wedge dy/(xy), while actual rational Keller decks preserve the exact polynomial volume. No linearization or finite-group classification for our form is supplied or imported.",
-  "new_theorem_import": false,
-  "independent_review": false
-}

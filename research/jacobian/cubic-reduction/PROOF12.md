@@ -1,6 +1,6 @@
 # A 36-term integral cubic Keller map in twelve variables
 
-The already verified [de Bondt twelve-variable cubic](../de-bondt-2610.24889/README.md),
+The already verified [de Bondt twelve-variable cubic](https://arxiv.org/abs/2610.24889),
 claim BCRDB1, has **40 nonlinear monomial occurrences** in its displayed
 coordinates. Two rational elementary conjugations reduce that count to
 **36**. A diagonal conjugation clears the remaining halves without
@@ -8,9 +8,7 @@ changing support. The final map and both colliding points are integral.
 
 This is a sparsity improvement at the already known dimension twelve.
 No new dimension record, minimum dimension, support optimum or priority
-is claimed. [The baseline correction](BASELINE_CORRECTION.md) explains why
-the retained 17- and 13-variable experiments are dominated and must not be
-reported as current dimension improvements.
+is claimed.
 
 The input construction is from
 [de Bondt, arXiv:2610.24889v1, section 4.6](https://arxiv.org/html/2610.24889v1),
@@ -118,8 +116,7 @@ from the source paper.
   every conjugation coefficient, and the collision. It then verifies
   the complete integral witness and recomputes its determinant.
 - [Final receipt](integer-validation12.json) pins the sources and
-  intermediate receipt. [Scoped integration](integration12.json) checks
-  metadata, hashes, links and corrected optimization status.
+  intermediate receipt.
 
 For each full determinant, the checker differentiates every output in
 all twelve variables and forms the block decomposition
@@ -138,30 +135,11 @@ From the repository root:
 .venv/bin/python research/jacobian/cubic-reduction/construct_sparse12.py
 .venv/bin/python research/jacobian/cubic-reduction/construct_integer12.py
 .venv/bin/python research/jacobian/cubic-reduction/verify_integer12.py
-.venv/bin/python research/jacobian/cubic-reduction/check_integration12.py
 ~~~
 
 The independent checker needs no SymPy. The primary construction uses the
 pinned SymPy 1.14.0 environment and the existing BCRDB1 source.
 
-## Remaining optimization
-
-The [elementary-line descent](linear-descent12.json) tests all rational
-coefficient-cancellation values on 132 elementary conjugation lines in
-each of three iterations. No further single rational shear lowers 36.
-This is not an affine-orbit optimum. The later
-[KCUB19 carrier-realization theorem](CARRIER_REALIZATION_LIMIT.md) proves36
-sharp only in its specified47-coefficient carrier class and excludes every
-one-axis nonlinear source shear with same-axis target correction. Joint
-frames, other carrier supports/orders and coordinated nonlinear stages remain open.
-The later [KCUB20 theorem](FULL_CUBIC_CARRIER_CLASSIFICATION.md) closes all135
-weighted quadratic/cubic carrier atoms in the original order, with minimum36,
-full nonlinear-output rank12 and minimum cubic-output rank5. Its standard
-minimum-dimensional companion locus is linearly equivalent to the old tensor.
-
-The existing [nine literal graph-deletion obstructions](../de-bondt-2610.24889/README.md)
-remain relevant. A dimension improvement needs a nonliteral coordinate,
-a source change, sequential nonlinear stages, or another construction.
-The full goal remains open: neither minimum cubic dimension nor minimum
-term count is proved.
-
+New checker output is written to an OS temporary directory. The retained
+receipts describe the original exact verification and are not regenerated
+by repository curation. Formal verification and external review are not claimed.

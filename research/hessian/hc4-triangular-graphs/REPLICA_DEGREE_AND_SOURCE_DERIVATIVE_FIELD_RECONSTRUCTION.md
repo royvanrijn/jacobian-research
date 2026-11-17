@@ -256,4 +256,4 @@ MP0's common source translation, J_delta lies inside A=B[Lambda];
 full fraction field therefore does not make A finite over B or equal R.
 Ramified omitted primes and marked-energy poles remain unresolved.
 Full HC4/JC2 stays OPEN; the published quartic PLANE exclusion and
-deferred external review/outreach remain unchanged.
+independent external review remain unclaimed.

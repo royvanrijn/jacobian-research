@@ -211,8 +211,8 @@ and the rational-coefficient degree-five exclusion.
 The zero-kappa case need not have its top kernel in (p,q): its y-component
 may be nonzero. Nothing above applies that dual-kernel restriction there.
 Both conjugate residual classes are retained, including arbitrary f and
-all degree-at-most-two coefficients. Their second-jet and later equations
-still require analysis.
+all degree-at-most-two coefficients. The [full residual algebra proof](FULL_COMPLEX_QUINTIC_GRAPH_EXCLUSION_AND_CUBIC_NILPOTENCE.md)
+excludes both classes, including their necessary second-jet equations.
 
 This result constrains FIELD-VALUED candidate graphs. PF153's uniform
 cone-deviation J^4096 remains valid on actual trace quotients, but the
@@ -223,12 +223,10 @@ No polynomial reduced body, increasing tail-power bound or termination
 certificate on the remaining scheme is supplied. Preserve nilpotent
 thickenings until an actual ideal-power certificate removes them.
 
-The next concrete graph gate is the two zero-quintic-trace classes (1),
-with their full normal-kernel constraints and actual multiplication.
-Global [PF151 coverage](NORMAL_FORM_COVERAGE_AND_COMMON_LEADING_DIVISORS.md)
-by graph/cyclic models and generic first-derivative integrality remain
-open. Full finite normalization, codifferent and every ramified boundary
-prime are retained, as are the 3D integrality controls and PF142's mixed
-minimal retirement. No HC4/JC2 proof or actual counterexample is claimed.
-The exact checker passes 61 controls. Independent whole-proof replay,
-formal verification and external review remain unclaimed.
+The two residual classes are excluded by the
+[complete quintic graph theorem](FULL_COMPLEX_QUINTIC_GRAPH_EXCLUSION_AND_CUBIC_NILPOTENCE.md).
+Global [normal-form coverage](NORMAL_FORM_COVERAGE_AND_COMMON_LEADING_DIVISORS.md)
+and generic first-derivative integrality remain open. The field
+classification proved here does not itself imply nilpotence on larger
+partial-jet algebras. No full HC4/JC2 proof, formal verification or
+independent external review is claimed.

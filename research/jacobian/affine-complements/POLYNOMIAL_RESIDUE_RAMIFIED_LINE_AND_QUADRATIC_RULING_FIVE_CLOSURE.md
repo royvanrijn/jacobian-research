@@ -2,8 +2,7 @@
 
 PF2RULED161. 17 November 2026. Actual complex polynomial PLANE Keller maps.
 
-The previous goal turn made progress: PF160 supplied a global prime-ruling
-genus obstruction and excluded the residue-free affine control. This note
+This note
 now closes the ENTIRE quadratic ruling-five ACTUAL TARGET class, including
 its arbitrary bad divisors and PF160's previously exceptional parameters.
 The mechanism uses the ACTUAL Jacobian mate and the FULL finite normalization:

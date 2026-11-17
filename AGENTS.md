@@ -3,6 +3,10 @@
 This is AI-assisted mathematical research. The front page is a portfolio of
 published results. Keep the current mathematical picture clear for human readers.
 
+Read [the research and paper working guide](working-guide/README.md) before
+developing results, changing their evidence, or preparing manuscripts. It covers
+repository hygiene, mathematical validity, paper writing and review requirements.
+
 - results/: deposited papers, exact published files and submission metadata.
 - unpublished/: complete manuscript bundles still needing revision, review or publication.
 - research/: current principal results, exact proof support and open questions by topic.

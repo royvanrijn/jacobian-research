@@ -40126,14 +40126,9 @@
   },
   "scope": "Finite input controls for a separate uniform all-colorings additivity proof; no full MRC or general meridional-additivity conclusion.",
   "input_sha256": {
-    "cover_sum_plan.json": "3c3482e3f101061d3aefadb0310073f51432a1ec4a7826aa6732529f6e7ca194",
-    "audit_cover_sums.py": "b3bc8f873ef51e3c2b33106703d96058c8877d379dd0b7c5ba1e1968b7ed50c4",
+    "cover_sum_inputs.json": "3c3482e3f101061d3aefadb0310073f51432a1ec4a7826aa6732529f6e7ca194",
     "integer_lifts.py": "8f6d8280001a9d76897b2db69c12244b964fdc58abfccd41b415b5ac90d02c31",
     "parabolic_lifts.py": "18abf5886002d54f17b5ee8593f31fb1b339f66a36605b7ccec7863ff4648a27",
-    "joint_a5_panel.json": "4ee51adf7e0908cbc9cb2516137cd5e62d38abb245f1b26e19caf2d44eca87cd",
-    "three_sheet_nonabelian_results.json": "a542b07fec8d73b6d2be21251fb977a3d41e175fff0c4601a5f3eee8d917c040",
-    "three_sheet_splice_verification.json": "cdf76193af77a03c594f85a68b3feef1246a9f309c0fc04bd433529f9e9b923f",
-    "periodic_twist_family_verification.json": "a16f81ffc762e90272ad77828aacd6646d4cd1012bbf23050e6ba5c5ad8fb3ad",
-    "gl3f2_verification.json": "49ccff422b7ccd771bd4019a8170b6b85d83cd449667599f7d95df628239703f"
+    "joint_a5_panel.json": "2a0ea8edf355067f05d1de90103edfcb7bf0508612031009e0b3eebdac87c906"
   }
 }

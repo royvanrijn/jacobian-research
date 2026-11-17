@@ -1,18 +1,16 @@
-# Verification and replay
+# Verification
 
-Run maintenance from the repository root:
+From the repository root:
 
 ```sh
-make check-navigation
 make check
+make render-navigation
 ```
 
-These check the ledger, source references, navigation and small tooling controls. They do not prove every statement or repeat the research calculations.
+`make check` validates current result sources, checker hashes, deposited-file checksums, paper metadata, local Markdown links and the small tooling controls. It does not repeat the mathematical research calculations.
 
-Each [published paper](../results/README.md) includes its deposited PDF, source and metadata. Its README states the result and verification evidence. [Unpublished manuscripts](../unpublished/README.md) state their remaining obligations.
+Use `python3 research/scripts/research.py list`, `show RESULT-ID` or `search QUERY` to inspect the compact current catalogue. Topic pages link the main proofs and retained verification inputs.
 
-Research Python dependencies are pinned in [requirements.txt](requirements.txt). A standard Python 3 installation is sufficient for navigation. Particular proof checks may require SymPy, Sage, Singular, Lean or Julia; read their prerequisites first.
+The [published bundles](../results/README.md) retain the exact deposited PDF/source bytes. [Draft metadata](../unpublished/README.md) records the build command and remaining review work. Formal projects have their own pinned toolchains and scope pages. Python proof-checker dependencies are in [requirements.txt](requirements.txt).
 
-The [foundational library](foundations/README.md) retains explicit proof targets in its Makefile. Use `make -C research/foundations TARGET` for a deliberately selected target. The long [replay catalogue](replay/CATALOGUE.md) records historical commands; inspect current paths, inputs and claim scopes first.
-
-Do not rerun successful sealed checkers, large searches or absent local caches merely to refresh navigation. [Source-review coverage](knowledge/PARTIAL_REVIEW.md) exposes missing and stale reviews.
+Read a checker and its requirements before selecting a mathematical replay. Retained receipts of internal checks are separate from independent replay and external review.

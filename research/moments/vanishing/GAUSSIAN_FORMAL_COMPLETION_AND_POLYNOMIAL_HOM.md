@@ -1,9 +1,6 @@
-# Gaussian formal completion and the polynomial Hom criterion
+# Exact Gaussian completion and polynomial Hom
 
-15 November 2026. Internal all-degree deductions; independent review remains
-outstanding. The [registry](../../MATH_STATUS.json) is authoritative. These
-results simplify pointwise safety and identify two invalid global shortcuts.
-They do **not** prove general Gaussian coefficient-field uniformity.
+This algebraic proof works over the stated coefficient rings. It is an internal written argument; independent review and formal verification remain outstanding.
 
 ## 1. The exact source has a rank-one formal completion
 
@@ -87,17 +84,13 @@ on K_P; punctual modules at the origin must not be discarded.
 
 The actual image is H_P/K_P and is t-adically separated. This is a structural
 description, not an implemented algorithm for the infinite intersection.
-The retained [actual-kernel algorithm](ACTUAL_PERIOD_KERNEL_AND_ALGEBRAIC_IMAGES.md)
-remains a separate theoretical construction.
+Computing this infinite intersection is a separate algorithmic problem.
 
 Rank one in (4) does **not** mean that H_P or its actual generic connection
 has rank one. The source is finite over D_t over a field, not necessarily
 finite over A[t], so a Krull-intersection argument cannot force (6) to vanish.
 For an abstract control, O_t direct_sum K[t,t^-1] has completion O_t^,
-while its second summand is nonzero and t-invertible. In the genuine retained
-[Gaussian pullback tower](RATIONAL_GAUSSIAN_PULLBACKS_AND_IRREGULAR_RANK.md),
-actual generic ranks2nu coexist with the universal formal completion (4).
-No new rank calculation or all-order tower proof is claimed here.
+while its second summand is nonzero and t-invertible. The completion statement alone places no bound on actual generic rank.
 
 ## 3. Safety is existence of an abstract polynomial quotient
 
@@ -126,17 +119,15 @@ Compute an exact finite presentation of H_P, then polynomial Hom. Over an
 exactly presented effective field this is a terminating theoretical method.
 [Tsai--Walther,math/0007139v1](https://arxiv.org/html/math/0007139v1),
 Sections1--3, especially Algorithm3.3, supplies explicit polynomial Hom bases
-for finitely presented holonomic modules. The general integration/Hom
-producer is **not implemented or executed here**.
+for finitely presented holonomic modules. The [whole-source construction](WHOLE_GAUSSIAN_SOURCE_HOM_AND_EFFECTIVE_CUTOFFS.md)
+records the current finite-input implementation and its limits.
 
 Exactness of the integration presentation is essential in (7)--(8). For
 the Gaussian constant phase P=1, the true source is D_t/D_t(partial_t-1),
 and the period exp(t) is not polynomial. The larger scalar presentation
 D_t/D_t[partial_t(partial_t-1)] also annihilates exp(t) but admits the
 polynomial solution1. Its extra polynomial quotient does not certify safety.
-The earlier [ambient-image criterion](AMBIENT_COEFFICIENT_JETS_AND_INFINITY_RESTRICTION.md)
-allowed an annihilating presentation because it retained the actual map;
-(8) discards that map only after using the exact integration source and (5).
+Criterion (8) requires the exact integration source and uniqueness statement (5).
 
 ## 4. Coefficient rings retain a normalization ideal
 
@@ -165,82 +156,3 @@ marked moments polynomial, since every mixed m-th moment has the factor a^m.
 For A=Q[a,b]/(ab), the ideal in (11) is (b), which is nonzero while the
 normalized period is unsafe. This is an exact coefficient-ring control,
 not a counterexample over a field.
-
-## 5. Two global quotient shortcuts fail
-
-First, even the centered family (10) has
-
-    Hom_(Q[a][t]<partial_t>)(H_(aX),Q[a,t])=0,
-
-because a polynomial f satisfying f'=a^2*t*f over the domain Q[a] must be
-zero by its highest time degree. After a=0, the polynomial Hom space is K.
-Thus relative polynomial Hom does not automatically commute with coefficient
-specialization, even for a genuine Gaussian phase of degree1. For a!=0 the
-fiber Hom is zero, while the zero phase is safe. This does not obstruct an
-explicit stratification {a=0},{a!=0}; it obstructs assuming base change.
-
-Second, retain a free constant phase coefficient c_0 in a universal family
-P=c_0+P_c. On any c_0-independent amplitude Q, the joint source satisfies
-
-    (partial_(c_0)-t)[Q]=0.
-
-Under partial Fourier transform use y=partial_t, partial_y=-t. In every
-quotient supported on y=0, y is locally nilpotent on each section, while
-
-    B[Q]=0,  B=partial_(c_0)+partial_y,  [B,y]=1.
-
-If y^N[Q]=0, applying B gives N*y^(N-1)[Q]=0; induction gives [Q]=0.
-These amplitudes span the source, so its **largest joint quotient supported
-on y=0 is zero**, in every degree and dimension. The same proof applies to
-the actual joint cyclic period module. Nevertheless its coefficient fibers
-include the safe zero phase. Taking a global supported quotient and then
-restricting is therefore the wrong order. The argument uses no regularity
-assumption and does not depend on a finite sample or on holonomic duality.
-
-Pure Gaussian phases satisfy E(P)=0, so one may first eliminate c_0 by this
-linear equation. That removes this particular translation obstruction, but
-the centered linear example above still prevents automatic relative Hom
-base change. The remaining task is a specialization-valid fiberwise Hom
-construction, not a global quotient of the unnormalized ambient module.
-
-## 6. The May2026 indicial source: a useful replacement with an explicit limit
-
-[Oaku,2605.27797v1](https://arxiv.org/html/2605.27797v1), Sections1,4,7.2--7.6
-and Example12, provides parameter-dependent indicial ideals and restriction
-complexes, including graph-defined loci. Theorem6 uses adapted resolutions,
-localization and integer-root bounds. Section7.4 works with central parameters
-D[y]; it does not supply their differential equations. Example12 likewise
-uses D_3[beta_1,beta_2]. Its degree stratification alone bounds neither roots
-nor marked scalar periods. No producer was run. This can replace a scalar
-b-function in an explicitly certified local restriction calculation; it is
-not a finite Gaussian infinity/Hom chart cover or an irregular base-change theorem.
-
-There is a concrete obstruction already in the paper's displayed example.
-At p=(1,2,1), its degree-two indicial polynomial is
-
-    s*(s-beta_1-1/2).
-
-For beta_1=N-1/2 the roots are0,N. Thus one fixed degree-two stratum has
-unbounded integer root cutoffs. This arithmetic observation does not refute
-Gaussian uniformity. It shows why replacing a scalar b-function by a
-parameter-dependent indicial polynomial still needs a root bound. The source
-also does not identify its restriction output with an actual period image.
-For our exact Gaussian source, (5) now removes that selected-image ambiguity
-**pointwise**; uniform fiberwise Hom behavior is still missing.
-
-The next genuine gate is constructibility, or a finite specialization-valid
-stratification, of
-
-    {c : dim Hom_Dt(H_(P_c),O)=1}.
-
-By the retained [closed-cutoff-locus equivalence](HOLONOMIC_SOURCES_AND_CUTOFF_LOCI.md),
-constructibility on the fixed-degree pure locus would force its closedness
-and a common field cutoff. No general constructibility theorem or full
-indicial/Hom chart construction is claimed here. Ordinary nonreduced cutoff
-geometry and the protected ternary/operator/SIC frontiers remain separate.
-
-The [small exact certificate generator](verify_gaussian_completion_hom.py),
-[receipt](gaussian_completion_hom_verification.json) and
-[source audit](gaussian_completion_hom_source_audit.json) bind the evidence.
-The implemented tool produces finite t-adic reduction primitives, not a
-general holonomic source, Hom, indicial or uniformity solver.

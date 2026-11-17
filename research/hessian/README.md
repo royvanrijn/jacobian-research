@@ -1,15 +1,13 @@
 # Hessian and Schur reductions
 
-We study HC4, polynomial graph reductions and formal termination connected to the Jacobian conjecture.
+Restricted Hessian classes, polynomial graphs and formal termination.
 
-**Closed:** several low-degree and quintic graph branches have exact exclusions. Their hypotheses remain essential.
+**Status:** The selected quintic, Ricci-flat and trace classes are closed; global coverage and polynomial termination remain open.
 
-**Open:** global normal-form coverage, HC4 Schur descent and formal termination. The restricted exclusions do not settle HC4.
+| Current result | Status | Main proof |
+|---|---|---|
+| Complete quintic graph exclusion with an explicit nilpotent algebra | Internal result | [Proof](../jacobian/affine-complements/FULL_COMPLEX_QUINTIC_GRAPH_EXCLUSION_AND_CUBIC_NILPOTENCE.md) |
+| Ricci-flat HC4 inversion and the plane shear lemma | Internal result | [Proof](hc4-triangular-graphs/RICCI_FLAT_HC4_AND_ONE_DIMENSIONAL_JACOBIAN_IMAGES.md) |
+| Even-moment lattices and the sixth-moment trace criterion | Internal result | [Proof](hc4-triangular-graphs/EVEN_MOMENT_LATTICES_AND_SIXTH_MOMENT_TRACE_TEST.md) |
 
-- [Tang audit](tang-hc4-audit/README.md): source-level analysis and the surviving gap.
-- [Degree-five audit](hc4-degree-five-audit/README.md): a restricted degree frontier.
-- [Polynomial graphs](hc4-polynomial-graphs/README.md) and [triangular graphs](hc4-triangular-graphs/README.md): graph reductions and retained outputs.
-- [Affine complement connection](../jacobian/affine-complements/README.md): the current coverage boundary.
-- [Earlier Hessian sources](../index/hessian.md): canonical proofs in the foundational library.
-
-[Open work](../knowledge/WORK_LEDGER.md) · [Mathematical ledger](../MATH_STATUS.json)
+The [current result catalogue](../STATUS.md) records exact scopes, open questions and verification limits. Publication, formal verification and independent review are separate statuses.

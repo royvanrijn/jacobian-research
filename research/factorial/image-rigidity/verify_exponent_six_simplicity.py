@@ -139,10 +139,7 @@ audit={'analytic_cutoff':N,'root_annulus_for_n_ge_cutoff':[60,240],
  'unrestricted_SFC_closed':False,'general_FC_closed':False,'other_Gamma_shapes_claimed':False,
  'independent_replay':False,'formal_verification':False,'external_review':False,'novelty_claim':False}
 (HERE/'exponent_six_simplicity_audit.json').write_text(json.dumps(audit,indent=2)+'\n')
-files=('EFFECTIVE_EXPONENT_SIX_SIMPLICITY.tex','verify_exponent_six_simplicity.py',
-       'exponent_six_prefix_certificates.json','exponent_six_simplicity_audit.json',
-       'EFFECTIVE_SADDLE_ANNULUS.tex','PRIME_GAPS_AND_SMALL_KERNELS.tex',
-       'MIXED_PRIME_RESIDUAL_WINDOWS.tex','QUANTITATIVE_SQUAREFREENESS_ALL_EXPONENTS.tex')
+files=('EFFECTIVE_EXPONENT_SIX_SIMPLICITY.tex', 'verify_exponent_six_simplicity.py', 'exponent_six_prefix_certificates.json', 'exponent_six_simplicity_audit.json', 'EFFECTIVE_SADDLE_ANNULUS.tex', 'QUANTITATIVE_SQUAREFREENESS_ALL_EXPONENTS.tex')
 receipt={'status':'pass','total':len(ineq)+len(identities)+len(records),
  'checks':{'exact_analytic_inequalities':len(ineq),'symbolic_identities':len(identities),'finite_prefix_Bezout_certificates':len(records)},
  'files':{name:hashlib.sha256((HERE/name).read_bytes()).hexdigest() for name in files},

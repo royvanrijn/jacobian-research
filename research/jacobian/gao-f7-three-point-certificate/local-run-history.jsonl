@@ -1,2 +1,0 @@
-{"phase": "first eight-worker batch", "cap_seconds": 300, "terminal_observation": "tool handle84038 completed at the time cap", "proved_nodes": 627, "remaining_nodes": 108, "next_action": "Resume from proved identity journals; no completed identity will be recomputed."}
-{"phase": "streamed exact local run", "terminal_observation": "handle11486 completed after300-second bound", "proved_nodes": 727, "remaining_nodes": 8, "next_action": "Resume only unproved local identities from journals."}

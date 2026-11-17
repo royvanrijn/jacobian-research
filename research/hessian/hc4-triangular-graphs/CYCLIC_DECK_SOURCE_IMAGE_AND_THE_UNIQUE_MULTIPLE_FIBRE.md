@@ -246,4 +246,4 @@ with the full finite normalization/trace-dual remains the hard step.
 The trivial-deck case also remains. Free Ga actions, surjectivity and
 the unique multiple fibre do not prove inversion or target Ga descent.
 Full HC4/JC2 stays OPEN, the published quartic PLANE exclusion remains
-retained, and external review/outreach is DEFERRED.
+retained, and external independent external review is unclaimed.

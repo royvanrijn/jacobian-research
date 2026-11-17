@@ -1,7 +1,0 @@
-{
-  "status": "PASS",
-  "scope": "Independent scalar identities only",
-  "RT_symmetric_h3": "-3*x**8*(3*q*x - 2)*(3*q*x - 1)/2",
-  "QRF2_bezout": "v*f+w*cubic=1",
-  "missing_replay_artifact": "degree_five_cubic_h7_unit_certificate.sing"
-}

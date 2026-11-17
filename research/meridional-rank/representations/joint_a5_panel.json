@@ -8,12 +8,7 @@
     "resulting_meridional_lower_bound": 4
   },
   "motivation": "The user's same-knot joint-kernel criterion strengthens the earlier raw Hom count when multiple independent A5 quotients coexist. Full Aut orbit reduction makes an exact293-case audit bounded and cheap. Quotients of different knots are never combined.",
-  "input_sha256": {
-    "sources/current13/data/still_open.json": "3fae47725d8808d58a6b1a24e36ade4e19121092c92714020ae0e1d0070b1edc",
-    "sources/knotinfo/2026.11.2_selected.json": "ae3e5668ed63f8fca255f9e4c02a663774120013a88173b1547f8d449bad12c6",
-    "joint_a5_catalogue.json": "3e0e2aff354d05c5916a675668d5f6072d562bb77b91810f45b789d0f9e0a6ee",
-    "freeze_joint_a5_panel.py": "8956600fc00aa89df6c2654870552d8a5ea8cebb0d649093853e2df2ccbf72be"
-  },
+  "input_sha256": {},
   "limits": {
     "cases": 293,
     "seed_count": 4,

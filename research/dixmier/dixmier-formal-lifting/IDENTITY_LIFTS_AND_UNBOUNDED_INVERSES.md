@@ -269,33 +269,11 @@ even on the cotangent subclass in n=2, would settle JC2.
 No equivalence P_(n,N) to DC_n is claimed, and no assertion
 P_(2,N), JC2 or DC2 is proved or refuted here.
 
-## Research consequence and verification boundary
+## Current consequence
 
-Keep the requirement that both a canonical change and its
-inverse have bounded spatial degree. Forward boundedness,
-arbitrary finite identity contact, exact full relations,
-left freeness and completed graph equivalence do not supply
-the inverse bound. A proof specific to Long may still work,
-but it needs hypotheses beyond those universal conditions.
-
-[QGR1](BOUNDED_GAUGE_RIGIDITY.md) remains a positive special
-case: its complete fixed-R finite endomorphism group has
-bounded inverses automatically. Moving-R comparisons cannot
-inherit that conclusion without another argument.
-
-The constructive target remains an actual bounded full
-rank-two lift, or an all-degree obstruction covering its
-allowed representatives. This result supplies a necessary
-control for that work, not a substitute higher-rank solution.
-
-[Exact controls](check_identity_lifts.py) verify the retained
-normalization, inverse Jacobian, all15 full Weyl identities
-as polynomial identities in the independent parameter t,
-the scaled collision, component degrees and first Hamiltonian.
-The all-rank construction, inverse nontermination, formal
-innerness, comparison obstruction and logical implications
-use the written proofs. The retained F1 input has its own
-certificates; those do not formally verify this extension.
-No independent replay, external review, formal verification,
-novelty priority, bounded Long lift or rank-two solution is
-claimed.
+Fixed forward degree, arbitrary finite identity contact and a completed graph
+isomorphism do not provide a bounded inverse or bounded comparison gauge.
+The complete rank-two realization problem remains open. The all-rank
+construction, differential-order argument and inverse nontermination above
+are written proofs using the explicit retained Keller input; no formal
+verification or independent external review is claimed.

@@ -113,12 +113,7 @@ audit={'uniform_analytic_cutoff':10000,'analytic_exponent_range':'6<=m<=sqrt(n)'
        'unrestricted_SFC_closed':False,'general_FC_closed':False,'other_Gamma_shapes_claimed':False,
        'numerical_root_scan':False,'independent_replay':False,'formal_verification':False,'external_review':False,'novelty_claim':False}
 (HERE/'uniform_two_term_sfc_audit.json').write_text(json.dumps(audit,indent=2)+'\n')
-files=('ALL_UNIVARIATE_TWO_TERM_SFC.tex','uniform_two_term_sfc.py','verify_uniform_two_term_sfc.py',
-       'all_exponent_prefix_certificates.json','uniform_two_term_sfc_audit.json',
-       'EFFECTIVE_EXPONENT_SIX_SIMPLICITY.tex','exponent_six_simplicity_verification.json',
-       'ALL_EXPONENTS_AND_LARGE_EXPONENT_CUTOFF.tex','all_exponent_squarefree_verification.json',
-       'PRIME_POWER_TWO_TERM_SFC.tex','QUANTITATIVE_SQUAREFREENESS_ALL_EXPONENTS.tex',
-       'MIXED_PRIME_RESIDUAL_WINDOWS.tex')
+files=('ALL_UNIVARIATE_TWO_TERM_SFC.tex', 'uniform_two_term_sfc.py', 'verify_uniform_two_term_sfc.py', 'all_exponent_prefix_certificates.json', 'uniform_two_term_sfc_audit.json', 'EFFECTIVE_EXPONENT_SIX_SIMPLICITY.tex', 'exponent_six_simplicity_verification.json', 'ALL_EXPONENTS_AND_LARGE_EXPONENT_CUTOFF.tex', 'PRIME_POWER_TWO_TERM_SFC.tex', 'QUANTITATIVE_SQUAREFREENESS_ALL_EXPONENTS.tex')
 receipt={'status':'pass','total':len(ineq)+len(identities)+len(seen),
          'checks':{'uniform_exact_inequalities':len(ineq),'symbolic_identities':len(identities),'finite_prefix_Bezout_certificates':len(seen)},
          'files':{name:hashlib.sha256((HERE/name).read_bytes()).hexdigest() for name in files},

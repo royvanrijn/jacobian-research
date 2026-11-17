@@ -181,8 +181,11 @@ in PF151/PF157, the remaining necessary ruling degrees are
     max(5,2g)<=r<s, neither r nor s divides the other.            (12)
 
 All original target automorphisms preserve B,F,S,Lambda and every prime.
-For g=2, the next degree is r=5; both-even pairs now begin at r>=6.
-The higher-degree common-leading-divisor problem remains open.
+The stronger [ruling-five theorem](POLYNOMIAL_RESIDUE_RAMIFIED_LINE_AND_QUADRATIC_RULING_FIVE_CLOSURE.md)
+also excludes actual r=5 quadratic coordinates. Thus actual quadratic
+targets satisfy max(6,2g)<=r<s; the weaker bound(12) remains the direct
+consequence of the half-specialization argument. Higher-degree common
+leading divisors and the full ruling-six class remain open.
 
 ## 5. Sharp local boundaries and a genuine new surface test family
 

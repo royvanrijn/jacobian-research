@@ -225,7 +225,7 @@ must still prove, on a precisely specified remaining quotient:
 The first-jet equations alone supply neither statement. If both hold,
 (12) gives termination for k>4095c_0. A valid proof may use a finite
 module closed under the ENTIRE recurrence, as in
-[PF152](RODRIGUES_NILPOTENCE_TRANSFER_AND_HC4_LINEARIZED_TAIL.md), or a direct
+the separate Rodrigues certificate, or a direct
 weight argument. Checking a longer coefficient prefix cannot replace it.
 
 PF152's unit-propagation control remains a necessary guard for any

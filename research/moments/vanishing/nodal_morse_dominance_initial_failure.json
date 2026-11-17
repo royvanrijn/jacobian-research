@@ -1,8 +1,0 @@
-{
-  "terminal": true,
-  "completed": false,
-  "exit_code": 1,
-  "input": "nodal_morse_dominance_initial_checker_input.py",
-  "input_sha256": "e1a36e8c5dd5d001280d1b86cdd796bfb2661bac7bdd283cf8407d97f229e85c",
-  "failure": "SymPy inferred a coefficient field from the quartic root relation that omitted d, present in the action numerator. Exact reduction rejected the coefficient. Corrected to an explicit common rational function field before theorem registration."
-}

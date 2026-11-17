@@ -2,12 +2,9 @@
 
 2026-11-16. HC4MYLW0/1. ALL DEGREES, complex polynomial PLANE Keller maps.
 
-FULL THEOREM TARGET: prove HC4/JC2 or construct an actual counterexample.
-CURRENT LAST UNSOLVED IMPLICATION: ACTUAL polynomial plane source forces
+HC4 and the plane Jacobian conjecture remain open.
+The remaining unproved implication is: ACTUAL polynomial plane source forces
 Tr(Lambda_L*Lambda_L) subset B, or full marked-energy integrality; OPEN.
-The previous goal turn made PROGRESS with LV0/1. External review/outreach
-is DEFERRED; the parity lead remains unadopted.
-
 This note addresses multiplication of the ACTUAL finite trace dual directly.
 It proves that ordinary square integrability is automatic, identifies the
 missing fourth-power estimate, and shows exactly how a polynomial that is

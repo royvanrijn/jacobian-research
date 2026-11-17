@@ -15,4 +15,4 @@ Exhaustive exact computation of 59,535 supports, followed by all-order arguments
 - [Evidence 1](../../research/foundations/scripts/verify_three_real_gmc_sparse_pareto.py)
 - [Evidence 2](../../research/foundations/extended-geometry/THREE_REAL_GMC_MINIMAL_FAILURES.md)
 
-Build the deposited source from this directory with `latexmk -pdf main.tex`. Formal packages and broader research notes remain under `research/`.
+Build the deposited source from this directory by running `pdflatex -interaction=nonstopmode -halt-on-error main.tex` twice, using the supplied main.bbl. Formal packages and broader research notes remain under `research/`.

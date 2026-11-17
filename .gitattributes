@@ -1,1 +1,4 @@
 * text=auto eol=lf
+
+# Deposited editions must preserve their exact published bytes.
+/results/** -text -eol

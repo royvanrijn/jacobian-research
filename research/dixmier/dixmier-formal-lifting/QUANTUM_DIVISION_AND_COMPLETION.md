@@ -201,8 +201,8 @@ module is finite, projective, or formally free.
 
 ## Application to every full Long lift
 
-Use the actual retained coordinates of [QPA1](RAMIFICATION_AND_POSITION_AVOIDANCE.md)
-and [QEI1](ELLIPTIC_ISOGENY_AND_QUANTUM_ENERGY.md):
+Use the actual Long polynomials in the [retained source checker](../dixmier-audit/verify_long_pbw.py).
+The rational coordinate change is displayed explicitly here:
 \[
  r=R,\quad v=1/x,\quad a=v+Y,\quad d=D,\qquad
  s=2v+4a-3ra^2,\quad t=(ra^3-a^2-va)/2.
@@ -374,7 +374,7 @@ classical map has a position-preserving form already excluded
 for Long. A Long-specific global argument might exclude its
 boundary mechanism. Generic index symmetry alone cannot.
 
-## Consequences for the next route
+## Consequences and current boundary
 
 The completed cubic degree is already determined; recomputing
 more formal jets cannot determine the missing finite indices.
@@ -400,14 +400,8 @@ candidate, not a replacement for constructing those images.
 
 ## Verification boundary
 
-[Exact controls](check_division_indices.py) check the cubic
-field charts, the retained full polynomial-control hashes,
-the rational Weyl relation and selected companion-matrix
-derivation identities. The all-degree valuation-basis theorem,
-PBW bounds, lattice equivalence, stabilization and generic
-degree arguments are written proofs. The checker does not
-enumerate candidate lifts or certify nonexistence.
-
-No independent theorem replay, formal verification, external
-review, novelty priority, bounded Long lift, all-representative
-nonlifting theorem, or DC2 solution is claimed.
+The cubic relation and the complete valuation arguments above are written
+proofs. The retained [etale centralizer controls](check_etale_centralizers.py)
+check the explicit cubic discriminant and related field identities.
+They do not independently prove the general division-index theorem.
+No formal verification or external review is claimed.

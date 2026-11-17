@@ -26,10 +26,9 @@ of normal affine planes. A generically finite map with a contracted
 curve does not suffice: (x,xy) has y in K intersect S but not in A.
 
 We use Gwozdziewicz's Theorem1.1, *Injectivity on one line* (1993):
-a Keller map injective on one affine line is an automorphism. The exact
-two-page primary paper, including its proof and hypotheses, is retained
-and visually checked in the [manifest](sources/source-symmetry-gate/manifest.json).
-It was already used in PF2RULED38; no new line-embedding theorem is assumed.
+a Keller map injective on one affine line is an automorphism. The primary statement is
+[Gwozdziewicz, Theorem1.1](https://arxiv.org/abs/alg-geom/9305008).
+It is an imported line-injectivity theorem.
 
 In particular, if ANY element of A restricts to a nonconstant affine-linear
 function on ONE source-coordinate line, F is an automorphism. The element
@@ -195,16 +194,7 @@ the desired noninvertible map. The missing weight components (4), coupled
 norms and trace-dual condition give explicit finite-algebra tests that do
 not assume descent. They apply uniformly in n and in field degree.
 
-The [checker](verify_source_symmetry_gate.py) writes the
-[receipt](source_symmetry_gate_receipt.json). Exact controls cover spectral
-projectors, source weight modules and axis restrictions, automorphic and
-non-Keller counter-controls, primitive-field necessity, divisor/norm
-identities and tame trace cancellation. The universal conclusions rest on
-the written arguments and the imported one-line theorem, not on the finite
-control set. The 2026 graded-Keller preprint is related context only; its
-abstract is not imported as proof of field-level descent rigidity.
-
-Common rulings, the remaining minimal complementary configurations and
-the full quartic/higher-degree goal remain open. No finite Keller pair,
-normal monogenic algebra, full exclusion, independent full reproof,
-formal verification, external review or novelty priority is claimed.
+The field obstruction and the trace/norm gate above are written proofs
+under their stated source-model hypotheses. They do not classify all
+Keller maps on those models. No formal verification or independent external
+review is claimed.

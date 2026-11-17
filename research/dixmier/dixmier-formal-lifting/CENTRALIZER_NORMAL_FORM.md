@@ -206,7 +206,10 @@ powers of R have distinct total degrees.
 
 For Long, keeping R exact is possible at the formal level. Begin
 with any full formal lift supplied by [QFL1](PROOF.md). In the
-polynomial coordinates (x,q,B,D_0) from [QCC1](CUBIC_CORE_NONCOMPLETION.md),
+polynomial coordinates (x,q,B,D_0), where
+B=3*x^2*p+2*(1-3*x*q)*z and D_0=(1+3*x*q)*p/2-3*q^2*z,
+with inverse p=2*(1-3*x*q)*D_0+3*q^2*B and
+z=-3*x^2*D_0+(1+3*x*q)*B/2,
 the classical operation {-,R} is partial_(D_0), hence is surjective
 on the polynomial ring by integration in D_0.
 
@@ -262,31 +265,11 @@ degrees. The identity formal gauge class still has the bounded
 representative (x,p). This is failure of the specified first-image
 choice, not intrinsic nonliftability of its formal class.
 
-## The remaining constructive question
+## Current boundary
 
-The search for another polynomial H with the same classical
-R,S,T is closed by (4). For a fixed quantized triple with R
-undeformed, the only remaining D ambiguity is removed by (7).
-What remains is to construct bounded S,T and a completing
-normalized D, or to prove an obstruction covering all such
-choices. The normalization makes D-growth meaningful within
-one fixed triple; it does not make it invariant under arbitrary
-formal gauges or changes of the other images.
-
-The [cubic-core obstruction](CUBIC_CORE_NONCOMPLETION.md) explains
-why replacing corrected D by D_0 is not such a simplification.
-The [scalar-anomaly criterion](SCALAR_ANOMALY_AND_CUBIC_LIFTS.md)
-and [bounded realization theorem](BOUNDED_REALIZATION.md) remain
-positive construction gates. Neither is proved for Long by
-this centralizer classification.
-
-[Exact controls](check_centralizer_normal_form.py) verify the
-retained support and degree witnesses, projection identities,
-polynomial R ambiguities of several degrees, the exact quantum
-inverse-coordinate control and its finite Catalan truncation.
-The general centralizer theorem uses the stated published
-polynomial-dependence result. Formal centralizer exhaustion,
-normalization optimality and all-degree conclusions use written
-proofs. No independent theorem replay, formal verification,
-external review, novelty priority, bounded Long lift or DC2
-solution is claimed.
+The normalized fourth-image test applies to the fixed compatible quantum
+triple with the stated undeformed-R hypothesis. It does not prove a bounded
+Long lift or a bounded gauge fixing R for every representative.
+[Formal existence and bounded realization](BOUNDED_REALIZATION.md) retain
+those separate hypotheses. The general centralizer statements above are
+written proofs; no formal verification or independent external review is claimed.

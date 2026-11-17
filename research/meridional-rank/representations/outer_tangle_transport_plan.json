@@ -1,8 +1,0 @@
-{
-  "date":"2026-11-17","frozen_before_execution":true,
-  "selection":["13a_129","13a_135"],
-  "motivation":"Both fixed outside6crossing formal normalized core groups have exact2generator1relator reductions, with relation length7; their diagrams have one cyclic-order-reversing dart isomorphism. This does not prove the closed groups2generated. A graph series/parallel network can represent a nonrational algebraic tangle, so its conductance must not be treated as a filling slope.",
-  "method":"Map every outside semiarc class into the original13arc labeling. Initialize all their normalized core words using the recorded2generator reduction, based at the outside class1. Propagate only the exact core crossing equation y_b=y_o*y_a^-1*y_o whenever overarc and one underarc are already known. Record every successful step, unresolved arc and which missing data prevent further propagation. A full13arc closure would be an algebraic2generator upper certificate after independent replay; a stall only excludes this specific boundary-generation deduction.",
-  "limits":{"targets":2,"crossings_each":13,"maximum_new_arc_steps_each":13},
-  "acceptance":"Do not infer actual rank2 from a2generator fragment or actual rank3 from a stalled propagation. Every arc transport, base change and substitution must replay before a group-rank claim. No rational-tangle or common once-cusped filling theorem without separate geometric proof."
-}

@@ -1,4 +1,0 @@
-ring R=0,(g2,g3),dp;
-option(redSB);
-ideal I=39 - 2*g3,g2,g2^2,0,6*g3^2 + 54*g3 + 161,14*g2*g3 + 87*g2,148*g2^2*g3 + 3627*g2^2;
-ideal K; ideal G; int i; for(i=1;i<=7;i++){K=K,I[i];G=std(K);print("PREFIX "+string(i+3)+" SIZE "+string(size(G))+" DIM "+string(dim(G)));if(G[1]==1){break;}};quit;

@@ -1,4 +1,4 @@
-# First-jet-admissible HC4 nontermination and the next trace quotient
+# First-jet-admissible HC4 nontermination and the second-jet quotient
 
 PF2RULED154. 17 November 2026.
 
@@ -7,7 +7,7 @@ is valid, but its first-jet quotient A_plane is too large for ANY uniform
 nilpotent-ideal termination certificate. There are exact characteristic-zero
 points of A_plane with cone-deviation ideal J=0 whose unique formal graph is
 nonpolynomial. The same points admit the square-zero unit-propagation control
-of [PF152](RODRIGUES_NILPOTENCE_TRANSFER_AND_HC4_LINEARIZED_TAIL.md), now INSIDE
+of the separate Rodrigues certificate, now INSIDE
 A_plane/J. These are controls for the proposed transfer, not a counterexample
 on the full surviving polynomial-graph locus.
 
@@ -245,11 +245,13 @@ without claiming that A_2 is the full surviving locus, is nonempty, or
 has a polynomial reduced formal graph. Other retained normal-form and
 higher-jet equations still apply.
 
-The next transfer test belongs on such a further candidate quotient,
-with actual multiplication and full recurrence closure. No uniform
-increasing-power certificate or positive termination theorem is proved.
+The larger candidate quotient still lacks a uniform increasing-power
+certificate and a positive termination theorem. The
+[complete quintic residual proof](FULL_COMPLEX_QUINTIC_GRAPH_EXCLUSION_AND_CUBIC_NILPOTENCE.md)
+closes the bounded degree-five graph locus after its additional necessary
+constraints; it does not identify this partial-jet ring with that locus.
 The global [PF151 coverage obligations](NORMAL_FORM_COVERAGE_AND_COMMON_LEADING_DIVISORS.md)
-remain a priority over further coordinate architecture expansion. The
+remain unproved. The
 marked polynomial-graph collision route stays closed separately. Full
 finite normalization S, its codifferent and every ramified boundary prime
 are retained; no Artin parameter algebra is identified with S. The 3D

@@ -52,8 +52,9 @@ $\Re\eta\ge1/2$ so the cuts
 are disjoint for $R>R_1$, except at identical grouped endpoints.
 There are only finitely many forbidden choices: every nonzero
 difference of two algebraic critical values has one limiting
-direction. The cut angle is independent of $\theta$. In
-particular a supporting $t$ ray need not be a generic ray.
+direction. Choose this auxiliary cut direction after fixing
+$\theta$; it imposes no genericity condition on $\theta$ itself.
+In particular a supporting $t$ ray need not be a generic ray.
 
 Along a cut, normalized complex gradient transport is
 \[
@@ -76,13 +77,24 @@ flow itself need not be semialgebraic. Instead compactify $x$
 by $x/\sqrt{1+\|x\|^2}$ and $s$ by $s/(1+s)$. Take the closure
 of each constrained cut carrier and mark its rapid boundary
 $G$, where $s=\infty$. Inequality~\eqref{eq:uniformcarrier}
-forbids spatial infinity at finite $s$. For fixed $R$, the
-relative chains of this compact pair are precisely locally
-finite cut chains with their ends allowed only at rapid
-infinity. This follows also by a compatible triangulation of
-the compact pair: its relative simplices restrict to the usual
-locally finite chain model in the open carrier. The exponential
-there is exactly $e^{c_i-\eta s}$.
+forbids spatial infinity at finite $s$. A compatible
+semialgebraic triangulation computes the relative homology of
+this compact pair by locally finite semialgebraic cut chains,
+with boundary allowed only in $G$. These representatives are
+admissible rapid-decay chains: on the carrier,
+\[
+ s\geq(\|x\|^2-A)/B,\qquad
+ |e^{-\eta s}|\leq e^{-s/2}
+       \leq \exp\!\left(-\frac{\|x\|^2-A}{2B}\right).
+\]
+Semialgebraic approach to a boundary has at most power-law rates,
+so this decay dominates every boundary pole of a polynomial form.
+The chain-current boundary identity applies on finite phase bands;
+the tail estimate below justifies passage to the improper integral.
+Thus the compact-pair calculation supplies admissible cycle
+representatives, without identifying arbitrary singular chains
+with integration chains. Their exponential is exactly
+$e^{c_i-\eta s}$.
 
 For the full unconstrained cut carrier, mark and remove any
 spatial boundary at finite $s$; it is not a rapid boundary.

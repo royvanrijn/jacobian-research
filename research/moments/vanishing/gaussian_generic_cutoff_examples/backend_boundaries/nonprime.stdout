@@ -1,3 +1,0 @@
-/home/royvanrijn/src/jacobian-research/research/jacobian-followup/moment-vanishing-audit/gaussian_generic_cutoff_examples/backend_boundaries/nonprime.m2:4:24:(3):[1]: error: generic coefficient ideal must be PRIME
-/usr/share/Macaulay2/Core/startup.m2:572:26:(0):[1]: --back trace--
-/usr/share/Macaulay2/Core/startup.m2:662:6:(0): --back trace--

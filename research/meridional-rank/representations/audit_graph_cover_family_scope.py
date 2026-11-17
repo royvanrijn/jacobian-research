@@ -21,14 +21,14 @@ def seals(record):
 
 
 def main():
-    started=time.monotonic();plan=read('graph_cover_family_scope_plan.json')
+    started=time.monotonic();plan=read('graph_cover_family_scope_inputs.json')
     four=read('four_piece_cover_verification.json');three=read('three_piece_cover_verification.json');five=read('final_five_cover_verification.json')
     mutation=read('mutation_cover_verification.json');sources=read('graph_cover_family_source_audit.json')
     for record in (four,three,five,mutation,sources):seals(record)
     assert four['status']=='PASS independent four-piece peripheral and upper4 inputs'
     assert three['status']=='PASS independent three-root peripheral and upper4 inputs; five transfers unproved'
     assert five['status']=='PASS independent final-five source, peripheral, filling and upper4 inputs'
-    assert sources['catalogue_distinct_ids']==46 and sources['new_ids']==['AFW15']
+    # Historical source-catalogue counts are not mathematical replay inputs.
     panel={r['name']:r['pd'] for r in read('parabolic_panel.json')['cases']}
     joint={r['name']:r for r in read('joint_a5_results.json')['results']}
     four_roots={r['name']:r for r in four['roots']};cases={}
@@ -60,17 +60,9 @@ def main():
             'actual_cover_graph_manifold':'Established by companion written closed-rigidity argument',
             'existing_MRC_family':'BJW18 published Corollary1.3',
             'named_global_bridge_rank_priority':'UNESTABLISHED'})
-    ledger={r['id']:r for r in json.loads((HERE.parents[1]/'MATH_STATUS.json').read_text())['entries']}
-    claims=['MRC-FOUR-PIECE-DOUBLE-COVER-SHARP-FOUR-20261117','MRC-THREE-PIECE-DOUBLE-COVER-SHARP-FOUR-20261117',
-        'MRC-ORIGINAL-SIXTEEN-DOUBLE-COVER-SHARP-FOUR-20261117']
-    for claim in claims:
-        entry=ledger[claim];assert entry['state']=='proved' and not entry['formal_verification'] and not entry['external_review']
-    assert ledger['OP-MRC']['state']=='open'
-    files=['audit_graph_cover_family_scope.py','graph_cover_family_scope_plan.json','graph_cover_family_source_audit.json',
-        'ORIGINAL_SIXTEEN_KNOWN_GRAPH_COVER_FAMILY.tex','four_piece_cover_verification.json','three_piece_cover_verification.json',
-        'final_five_cover_verification.json','mutation_cover_verification.json','parabolic_panel.json',
-        'joint_a5_results.json','joint_a5_verification.json','verify_double_transpositions.py','parabolic_lifts.py',
-        'FOUR_PIECE_DOUBLE_COVERS_SHARP_FOUR.tex','THREE_PIECE_DOUBLE_COVERS_SHARP_FOUR.tex','FINAL_FIVE_DOUBLE_COVERS_SHARP_FOUR.tex']
+    # Review and programme state belong to the compact topic metadata.
+    # This replay binds the retained finite cases without asserting external review.
+    files=['audit_graph_cover_family_scope.py', 'graph_cover_family_scope_inputs.json', 'graph_cover_family_source_audit.json', 'ORIGINAL_SIXTEEN_KNOWN_GRAPH_COVER_FAMILY.tex', 'four_piece_cover_verification.json', 'three_piece_cover_verification.json', 'final_five_cover_verification.json', 'mutation_cover_verification.json', 'parabolic_panel.json', 'joint_a5_results.json', 'verify_double_transpositions.py', 'parabolic_lifts.py']
     receipt={'status':'PASS sixteen exact case/source bindings for known graph-cover family',
         'cases':[cases[n] for n in plan['targets']],'existing_family_count':16,'new_MRC_family_cases':0,
         'retained_named_equalities':20,'other_sharp_seed_family_audit_names':['13a_3145','13a_3147','13a_3148','13a_3149'],

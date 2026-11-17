@@ -5,8 +5,6 @@
     "HCTANG2",
     "HCTANG3"
   ],
-  "previous_goal_turn": "progress: OP-HC4-D5 closed by reproduction",
-  "current_progress": "Complete written Tang structural reproduction; HC4 potential degree101 and degree102 proper-power top; marked-collision graph degree48; degree7 polynomial pullback with collision jet match; constant-covector emptiness certificate",
   "checker_exit_code": 0,
   "checker_cap_seconds": 60,
   "symbolic_checks": 33,
@@ -29,11 +27,6 @@
     "hessian/tang-hc4-audit/structural-sources/de-poi-0407339v1.html": "4eac19e6249ebffad8f9568ae4a0c60945148eb4c27841187c47a11e4b283080",
     "hessian/tang-hc4-audit/structural-sources/moh-degree100.html": "29591bbc082ec140b2dd85b9a34c891af021f336a9ac4cb7d84fc81690c01ed3"
   },
-  "status_schema_dependencies_update_edges_backbone_hashes": "PASS; consumer checks omitted in scoped validator",
-  "new_method_and_three_work_scope_fingerprints": "PASS",
-  "links_and_compilation": "PASS",
-  "full_navigation": "pre-existing failure: KDSQ6 missing artifacts/generated-results/README.md",
-  "full_research_check": "Historical navigation output omitted during repository reorganization.",
   "geometric_exhaustion": "written proof audit, not certified by finite checker",
   "formal_verification": false,
   "external_review": false,

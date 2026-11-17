@@ -1,8 +1,0 @@
-{
-  "status": "MODULAR_WITNESS_ONLY",
-  "returncode": 0,
-  "elapsed_seconds": 3.873428298975341,
-  "input_sha256": "8069e30a70c252e3fcd6636e4b7b8cc5c47e023862623a8f96e87b011cd24a56",
-  "output_sha256": "59d42544461f320ebef05f402e15bf4e7c74c751606cea866753ae941d68441a",
-  "output_bytes": 331799
-}

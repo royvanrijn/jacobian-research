@@ -173,7 +173,7 @@ def check_torus(row):
 
 
 def main():
-    data=json.loads((HERE/'cover_sum_results.json').read_text());plan=json.loads((HERE/'cover_sum_plan.json').read_text())
+    data=json.loads((HERE/'cover_sum_results.json').read_text());plan=json.loads((HERE/'cover_sum_inputs.json').read_text())
     for p,h in data['input_sha256'].items():assert hashlib.sha256((HERE/p).read_bytes()).hexdigest()==h
     panel={r['name']:r['pd'] for r in json.loads((HERE/'joint_a5_panel.json').read_text())['cases']}
     assert len(data['controls'])==len(plan['controls'])==8
@@ -192,8 +192,7 @@ def main():
     try:check_torus(r)
     except AssertionError:pass
     else:raise AssertionError('invalid torus witness accepted')
-    paths=['cover_sum_plan.json','audit_cover_sums.py','cover_sum_results.json','verify_cover_sums.py',
-           'verify_integer_lifts.py','joint_a5_panel.json','three_sheet_splice_verification.json','periodic_twist_family_verification.json','gl3f2_verification.json']
+    paths=['verify_cover_sums.py', 'cover_sum_inputs.json', 'cover_sum_results.json', 'joint_a5_panel.json', 'verify_integer_lifts.py', 'integer_lifts.py', 'SIMPLE_COVER_RANK_ADDITIVITY.tex']
     report={'status':'PASS independent simple-cover sum inputs','controls':results,'control_count':8,'T47_boundary':boundary,
             'rejected_corruptions':4,'scope':'Independent finite diagram/monodromy/lifted-word/Smith and torus-boundary inputs. The all-knots additivity theorem requires the written normal-generation, lifted-sphere topology and imported Grushko theorem; finite controls do not prove those uniform statements. General meridional additivity, worldwide novelty and full MRC remain open.',
             'input_sha256':{p:hashlib.sha256((HERE/p).read_bytes()).hexdigest() for p in paths}}

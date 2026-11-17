@@ -8,6 +8,20 @@ unbounded spatial growth of an identity lift, and arithmetic center changes.
 from collections import defaultdict
 from math import comb, prod
 from pathlib import Path
+
+import tempfile as _check_tempfile
+
+_CHECK_OUTPUT_DIRECTORY = None
+
+def _check_output(original):
+    """Write new runs to a temporary directory; preserve deposited receipts."""
+    global _CHECK_OUTPUT_DIRECTORY
+    if _CHECK_OUTPUT_DIRECTORY is None:
+        _CHECK_OUTPUT_DIRECTORY = Path(_check_tempfile.mkdtemp(prefix="math-check-"))
+        print("Verification output:", _CHECK_OUTPUT_DIRECTORY)
+    return _CHECK_OUTPUT_DIRECTORY / Path(original).name
+
+
 import hashlib
 import json
 import sympy as sp
@@ -77,7 +91,7 @@ def main():
         "hashes":{p.name:hashlib.sha256(p.read_bytes()).hexdigest() for p in
                   [HERE/"BOUNDED_REALIZATION.md",HERE/"check_realization_controls.py"]}
     }
-    (HERE/"realization_controls.json").write_text(json.dumps(result,indent=2)+"\n")
+    (_check_output(HERE/"realization_controls.json")).write_text(json.dumps(result,indent=2)+"\n")
     print(json.dumps(result,indent=2))
 
 if __name__=="__main__":

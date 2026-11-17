@@ -1,6 +1,20 @@
 #!/usr/bin/env python3
 """Selected exact controls, not independent replay of the written general proofs."""
 from pathlib import Path
+
+import tempfile as _check_tempfile
+
+_CHECK_OUTPUT_DIRECTORY = None
+
+def _check_output(original):
+    """Write new runs to a temporary directory; preserve deposited receipts."""
+    global _CHECK_OUTPUT_DIRECTORY
+    if _CHECK_OUTPUT_DIRECTORY is None:
+        _CHECK_OUTPUT_DIRECTORY = Path(_check_tempfile.mkdtemp(prefix="math-check-"))
+        print("Verification output:", _CHECK_OUTPUT_DIRECTORY)
+    return _CHECK_OUTPUT_DIRECTORY / Path(original).name
+
+
 from fractions import Fraction
 from math import prod
 import hashlib,json,platform,time
@@ -78,7 +92,7 @@ def main():
         ck('reviewed primary source '+src['path'],len(blob)==src['bytes'] and hashlib.sha256(blob).hexdigest()==src['sha256'])
     receipt={'schema_version':1,'result':'pass','check_count':len(checks),'checks':checks,'python':platform.python_version(),'sympy':s.__version__,'runtime_seconds':round(time.monotonic()-begun,3),
         'assurance':'Selected exact chart, source self-map, sheet-loss, arithmetic/geometric fibre, hypothesis-boundary, group-tree and dihedral controls accompany three written general claims. Classical surface fibration, topology, orbifold quotient and normal extension inputs are credited. Not independent whole-proof replay, formal verification, external review or novelty evidence. No ruling descent theorem for every geometric intermediate, JC(2) solution, compatible target atlas or canonical atomic receiver is constructed.',
-        'sha256':{f:hashlib.sha256((HERE/f).read_bytes()).hexdigest() for f in ['PROOF.md','LITERATURE_AND_GAPS.md','verify.py','sources.json']}}
-    (HERE/'receipt.json').write_text(json.dumps(receipt,indent=2,ensure_ascii=False)+'\n')
+        'sha256':{f:hashlib.sha256((HERE/f).read_bytes()).hexdigest() for f in ['PROOF.md', 'verify.py', 'sources.json']}}
+    (_check_output(HERE/'receipt.json')).write_text(json.dumps(receipt,indent=2,ensure_ascii=False)+'\n')
     print(json.dumps({'result':'pass','checks':len(checks),'seconds':receipt['runtime_seconds']}))
 if __name__=='__main__':main()

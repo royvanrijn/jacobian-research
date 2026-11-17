@@ -284,75 +284,11 @@ Therefore \(\mathrm{HC}_5\) is false.  Stabilization gives falsehood in
 every dimension at least five; together with the known truth in dimensions
 at most three, this leaves only \(\mathrm{HC}_4\) unresolved.
 
-The July 24 arXiv v1 displayed the equally constant-Hessian representative
-\(A^2+11A+2B\), with its collision at nonzero dual coordinates.  The
-current v2 uses \(A^2+13A+2B\) because the collision is visible at \(y=0\).
-The repository's
-[nonlinear toric descent audit](HC5_NONLINEAR_TORIC_DESCENT.md) is pinned
-to the v1 representative; that convention does not change its exact
-calculation.
-
-## 5. Import rule and limits
-
-The projective invariant transported by this bridge is presently the top
-degree of the actual affine-gradient compactification, not the full
-multidegree list and not the polar degree of the homogenized potential.
-The doubled and descended potentials have the same generic degree three,
-but their ambient dimensions and gradient degrees are respectively
-\((6,7)\) and \((5,13)\).  Their aggregate Segre corrections are therefore
-\(7^6-3\) and \(13^5-3\); no componentwise Segre transform under Schur
-descent is claimed.  See
-[`PROJECTIVE_GRADIENT_SEGRE_MACHINERY.md`](PROJECTIVE_GRADIENT_SEGRE_MACHINERY.md)
-for the canonical all-dimensional convention and registry.
-
-When a proposed one-variable descent has the form \(\Phi=tA+B\), the first
-test should be the two structural hypotheses
-
-\[
- \det\operatorname{Hess}_{t,w}\Phi\in K^\times,
- \qquad
- \det\operatorname{Hess}_w(B+sA)\equiv0.
-\]
-
-Once they hold, (1.1) is the determinant proof.  Homogeneous Hessian-face
-calculations may still be needed to establish one of those hypotheses in a
-different setting, but should not be used to rediscover the rank-one update
-identity.
-
-The next direct descent audit is
-[`HC4_MENG_YANG_GRAPH_OBSTRUCTIONS.md`](HC4_MENG_YANG_GRAPH_OBSTRUCTIONS.md).
-It proves that every affine four-plane restriction of the scaled family is
-degenerate or has nonconstant Hessian determinant, and that every graph
-\(y_3=R(x_1,x_2,y_1,y_2)\) of degree at most three has nonconstant Hessian
-determinant.  The full two-slope jet also excludes degree four over every
-characteristic-zero field by ending in two coprime quadratic equations for
-the same cubic graph coefficient.  In degree five, the determinant on
-\(x_1=0\) becomes a unit-affine equation for the first normal graph jet; the
-leading trace is forced to \(\kappa x_2^5\), and one complete sparse trace
-family is excluded by first-transverse coefficients.  A complementary
-rational top-cone calculation leaves only two constant-kernel charts.  The
-first \(\partial_{y_2}\)-kernel transverse slice is now excluded by an exact
-calculation with the complete degree-at-most-two lower trace.  The generic
-branch gives a three-equation unit ideal, a square in the forced quartic
-normal jet kills the \(y_2^2\) term, the nonzero \(x_2y_2\) branch ends in two
-coprime transverse polynomials, and a separate resultant removes the
-exceptional denominator chart.  This is recorded in
-[`HC4_MENG_YANG_QUINTIC_SCHUR_FRONTIER.md`](HC4_MENG_YANG_QUINTIC_SCHUR_FRONTIER.md).
-Thus degree five remains open, but its next calculation is a joint
-plane/top-cone/transverse ideal with broader lower traces rather than another
-unrestricted graph enumeration.  The same frontier note excludes every
-relative-linear unit-pivot correction through degree 89.
-
-The lemma does **not** make a second descent automatic.  The term \(A^2\)
-usually consumes the dual-linearity that forced (3.2), so the descended
-potential need not have another affine pivot with a singular reduced
-Hessian pencil.  In particular, the bridge explains the passage from six
-to five variables but does not settle \(\mathrm{HC}_4\).
-
-The [continuation note](SCHUR_DESCENT_CONTINUATIONS.md) records the exact
-remainder when the reduced pencil is not identically singular, a simultaneous
-multi-pivot extension, and the codimension-one block-affine obstruction that
-closes the apparent pure-source one-shot route to \(\mathrm{HC}_4\).
+The v2 representative above is the fixed parent used by the retained
+[normal-jet formulas](HC4_MENG_YANG_GRAPH_OBSTRUCTIONS.md) and
+[quintic graph exclusion](../jacobian/affine-complements/FULL_COMPLEX_QUINTIC_GRAPH_EXCLUSION_AND_CUBIC_NILPOTENCE.md).
+The Schur theorem retains its explicit structural hypotheses; arbitrary
+variable elimination is not justified by these formulas.
 
 ## References
 

@@ -262,8 +262,8 @@ one-sided generation, or an arithmetic transfer with the needed
 uniformity, is a substantial remaining theorem.
 
 Accordingly, further positional degree sweeps and a search for an
-unrestricted formal mixed-polarization residue are poor next targets.
-The next useful theorem must identify a finite-realization condition,
+unrestricted formal mixed-polarization residue do not address the missing finite bound.
+The unproved finite-realization question concerns a finite-realization condition,
 prove it is necessary for the intended Weyl endomorphisms, and establish
 its invariance under the allowed changes of coordinates. QRT3 can then
 serve as a restricted obstruction test rather than as an asserted

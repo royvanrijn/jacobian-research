@@ -1,11 +1,13 @@
 # Meridional rank
 
-We use exact knot-group representations, branched covers and homology to compare meridional rank with bridge number.
+Knot-group representations, branched-cover bounds and explicit sharp families.
 
-**Closed:** exact equalities and representation bounds for specified known families. The current sixteen graph-cover examples belong to an established family; they are not evidence of new cases outside it.
+**Status:** Explicit sharp examples, infinite families and lower bounds are established. The full conjecture and global novelty claims remain open.
 
-**Open:** the full Meridional Rank Conjecture, sharper methods beyond the excluded representation classes, and precise novelty comparisons.
+| Current result | Status | Main proof |
+|---|---|---|
+| Twenty named equalities and established-family scope | Internal result | [Proof](representations/ORIGINAL_SIXTEEN_KNOWN_GRAPH_COVER_FAMILY.tex) |
+| Infinite periodic families and connected sums | Internal result | [Proof](representations/PERIODIC_TWIST_FAMILIES.tex) |
+| Representation and branched-cover lower bounds | Internal result | [Proof](representations/PROOF.tex) |
 
-The [representations directory](representations/) contains proofs, diagrams, source audits and checkers. Its [detailed research record](representations/RESEARCH_LOG.md) states the current frontier.
-
-[Mathematical ledger](../MATH_STATUS.json) · [Open work](../knowledge/WORK_LEDGER.md)
+The [current result catalogue](../STATUS.md) records exact scopes, open questions and verification limits. Publication, formal verification and independent review are separate statuses.

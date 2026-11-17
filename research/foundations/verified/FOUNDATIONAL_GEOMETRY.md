@@ -57,39 +57,14 @@ Since `r=2/x`, their product is `-2`.  Both sides are polynomials, so equality
 on the dense open proves the determinant identity everywhere.  The collision
 is exact substitution, and the three displayed source points are distinct.
 
-This proof is intentionally confined to the foundational map.  The
-nonduplicated continuation of the core chain is:
+## Role and assurance
 
-- [Normalized factorization model](NORMALIZED_FACTORIZATION_MODEL.md): the
-  canonical algebraic construction and unequal-degree extension;
-- [Foundational incidence construction](FOUNDATIONAL_INCIDENCE_CONSTRUCTION.md):
-  projective hyperplane geometry and the exceptional `(2,1)` orbit;
-- [Cubic marked-root model](MARKED_ROOT_MODEL.md): the marked-root
-  interpretation and its two reconstruction charts;
-- [Exact image and nonproperness](IMAGE_AND_NONPROPERNESS.md);
-- [Arithmetic dynamics of the foundational map](../arithmetic/ARITHMETIC_DYNAMICS_OF_KELLER_MAPS.md):
-  exact degree growth, generic preimage trees, and an exceptional escaping
-  orbit;
-- [Weighted marked-root theorem](WEIGHTED_SEED_THEOREM.md).
+This is the established Keller counterexample used as an explicit input to
+the retained constructions. The determinant identity and rational collision
+are proved directly above. The
+[Archive of Formal Proofs entry](https://isa-afp.org/entries/Jacobian_Counterexample.html)
+provides the separately authored formal reference.
 
-## Reproduction
-
-Run
-
-```bash
-make verify-minimal
-make verify-core
-```
-
-The minimal target uses a dependency-free exact implementation.  The full
-core target adds the normalized factorization, marked-root, and image
-regressions.  External formal verification is supplied both by the separately
-authored pinned [Lean certificate](LEAN_FOUNDATIONAL_MAP.md) and by the
-refereed [Archive of Formal Proofs Isabelle/HOL
-entry](https://isa-afp.org/entries/Jacobian_Counterexample.html).  The AFP
-entry independently verifies the determinant, exact collision,
-determinant-one normalization, identity-padded stabilization in every finite
-dimension at least three, and nonexistence of a polynomial inverse.
-
-The former all-in-one derivation and presentation-invariance audit are
-retained in [archive/core-support](../archive/core-support/README.md).
+The current applications include
+[bounded forward lifts with unbounded inverses](../../dixmier/dixmier-formal-lifting/IDENTITY_LIFTS_AND_UNBOUNDED_INVERSES.md)
+and the [integral cubic constructions](../../jacobian/cubic-reduction/PROOF12.md).

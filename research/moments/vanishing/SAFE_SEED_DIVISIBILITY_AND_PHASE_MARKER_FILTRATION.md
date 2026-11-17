@@ -5,7 +5,6 @@ supplied by the user. This note records its consequences and an elementary
 reversible Gaussian construction. These are written proofs and reductions;
 general field safety implies purity remains OPEN. Independent replay,
 formal verification and external review remain false; priority unassessed.
-No earlier sealed proof, operator certificate or checker is changed.
 
 ## 1. Safety is already a rank-one problem
 
@@ -254,26 +253,20 @@ the vanishing t coefficient. The time-dependent amplitude 1-tP in
 product with X^2 has expectation 0. This is an all-ring normalization
 boundary and a safe nilpotent nonpure example, not a field counterexample.
 
-## 7. Proof and credit boundaries; next obligation
+## 7. Proof boundaries and the open assertion
 
-The user supplied (2)-(3) and the divisibility target. Derivative
-ideals, the PID argument and Wick contraction above are elementary
-written derivations. The intrinsic Stein/full-lattice results and
-the unsafe compensator controls are imported only from their retained
-canonical notes. No new finite experiment, kernel computation,
-Bernstein operator or arithmetic/analytic theorem is required here.
+The derivative ideals, PID argument and Wick contraction above are written
+algebraic derivations. The imported source results are the
+[Stein/full-lattice theorem](STEIN_ACTION_AND_RANK_ONE_LATTICES.md) and
+[polynomial-seed constructions](POLYNOMIAL_SEEDS_AND_PURE_MARKER_DELAY.md).
 
-The Oaku operator identities, torsion witnesses, denominators and
-specialization thresholds remain in the sealed
-[graph-certificate packet](OAKU_GRAPH_CERTIFICATES_AND_ACTUAL_POLYNOMIAL_DECISION.md).
-Sabbah/Maisonobe retain credit for the convergent rational-slope
-mechanism; arbitrary nonconvergent formal and all-ring extensions
-remain separately scoped, with priority unassessed. See the
-[credit note](BERNSTEIN_CLASSICAL_CREDIT_AND_FORMAL_EXTENSIONS.md).
+The primitive original-vacuum assertion remains open: exclude a nonconstant
+f in a genuinely safe unweighted image, or construct an all-marker-safe
+counterexample. The original marker filtration and its finite allowed pole
+bounds must be preserved. Higher-rank regular transcendental realization
+is a separate question.
 
-NEXT: prove the primitive ORIGINAL vacuum assertion, equivalently
-exclude a nonconstant f in a genuinely safe unweighted image, or give
-a genuine all-marker safe counterexample. Preserve the original
-marker filtration and its finite allowed pole bounds. Investigating
-rank-at-least-two regular transcendental Gaussian realization is
-separate and cannot settle this rank-one obstruction by itself.
+Classical rational-slope inputs and the current polynomial implementation
+are described in the [credit note](BERNSTEIN_CLASSICAL_CREDIT_AND_FORMAL_EXTENSIONS.md)
+and [graph-certificate proof](OAKU_GRAPH_CERTIFICATES_AND_ACTUAL_POLYNOMIAL_DECISION.md).
+No independent mathematical review or formal verification is claimed.

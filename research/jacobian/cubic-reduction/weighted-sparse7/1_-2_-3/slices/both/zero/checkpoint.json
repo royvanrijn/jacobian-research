@@ -1,8 +1,0 @@
-{
-  "case": "both",
-  "input_sha256": "538423c41142d8b162d5df6b227b2c64a34a137e8d94c8b5ce8cc74308a90673",
-  "mode": "zero",
-  "seconds": 0.014,
-  "source_sha256": "1122095cdf38fdc79cf4b2d2ccc7756d82d6710e3d2f899b7866ca90048fb1ed",
-  "status": "primary-slice-basis"
-}

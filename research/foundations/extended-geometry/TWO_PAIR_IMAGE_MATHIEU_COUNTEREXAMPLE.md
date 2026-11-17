@@ -728,8 +728,8 @@ forms.
 Run
 
 ```bash
-python3 scripts/verify_two_pair_image_mathieu_counterexample.py
-python3 scripts/audit_two_pair_image_mathieu_coefficient_extraction.py
+python3 research/foundations/scripts/verify_two_pair_image_mathieu_counterexample.py
+python3 research/foundations/scripts/audit_two_pair_image_mathieu_coefficient_extraction.py
 cd formal/finite-etale-keller
 lake build FiniteEtaleKeller.SIC2C4FiniteSum
 ```

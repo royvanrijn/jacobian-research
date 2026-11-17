@@ -324,7 +324,7 @@ not exclude a full action using other noncommuting operators in a
 larger idealizer, or identify this algebra with every projective
 Long carrier.
 
-The next useful scalar construction must leave the excluded
+The remaining scalar constructions lie outside the excluded
 v-linear Laurent class or have leading H of degree at most one
 and satisfy this stronger rank cost, together with the full
 right action and global admission.

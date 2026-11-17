@@ -1,13 +1,13 @@
-# Dixmier conjecture
+# Dixmier and Weyl algebras
 
-We study Weyl-algebra endomorphisms through formal lifting and residue transport.
+Formal Weyl-algebra lifts, finite scalar mates and centralizers.
 
-**Status:** partial reductions, finite controls and obstructions are retained. The full Dixmier conjecture remains open.
+**Status:** Formal lifting and restricted classifications are established; finite realization and the full Dixmier conjecture remain open.
 
-| Subtopic | Evidence |
-|---|---|
-| [Proof audit](dixmier-audit/README.md) | Claimed proof mechanisms and their exact limitations. |
-| [Formal lifting](dixmier-formal-lifting/README.md) | Formal reductions and finite exact controls. |
-| [Residue transport](dixmier-residue-transport/README.md) | Compatibility and transport constraints. |
+| Current result | Status | Main proof |
+|---|---|---|
+| Formal quantum lifting and the finite-degree realization criterion | Internal result | [Proof](dixmier-formal-lifting/PROOF.md) |
+| Completed scalar finite-mate classification | Internal result | [Proof](dixmier-formal-lifting/ALGEBRAIC_INFINITY_LIMITS.md) |
+| Finite centralizers, Taylor rigidity and quantum completion | Internal result | [Proof](dixmier-formal-lifting/FINITE_CENTRALIZERS_AND_COMPLETION.md) |
 
-[Mathematical ledger](../MATH_STATUS.json) · [Open work](../knowledge/WORK_LEDGER.md)
+The [current result catalogue](../STATUS.md) records exact scopes, open questions and verification limits. Publication, formal verification and independent review are separate statuses.

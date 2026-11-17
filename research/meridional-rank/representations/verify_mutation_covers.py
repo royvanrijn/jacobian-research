@@ -128,7 +128,7 @@ def replay(source,target,certificate):
 
 def main():
     result=json.loads((HERE/'mutation_cover_results.json').read_text())
-    plan=json.loads((HERE/'mutation_cover_plan.json').read_text())
+    plan=json.loads((HERE/'mutation_cover_inputs.json').read_text())
     panel={c['name']:c for c in json.loads((HERE/'parabolic_panel.json').read_text())['cases']}
     assert result['status']=='COMPLETE_CERTIFICATES'
     for path,digest in result['input_sha256'].items():assert sha(path)==digest,path
@@ -172,7 +172,7 @@ def main():
     reject('wrong final vertex transport',lambda:replay(a,b,bad))
     badpd=deepcopy(result['diagrams'][first['source']]['pd']);badpd[0]=badpd[0][1:]+badpd[0][:1]
     reject('single crossing change breaks alternating convention',lambda:regions_and_graph(badpd,a))
-    files=['verify_mutation_covers.py','mutation_cover_results.json','mutation_cover_plan.json','parabolic_panel.json']
+    files=['verify_mutation_covers.py', 'mutation_cover_inputs.json', 'mutation_cover_results.json', 'parabolic_panel.json', 'MUTATION_COMMON_DOUBLE_COVERS.tex']
     receipt={'status':'PASS independent mutation/common-cover inputs','diagrams':diagrams,'pairs':pairs,'controls':controls,
         'corruptions_rejected':rejected,'blocks':selection,'actual_rank3_proved':False,
         'assurance':'Independent corner unions, tree enumeration and all8192 edge-subsets per13-edge graph. No producer graph/search imports. Actual mutation/common-cover theorem additionally uses read Greene Cor4.5 and Morton Thm3, explicitly imported in the written proof; no bridge or meridional-rank mutation invariance assumed.',

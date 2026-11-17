@@ -1,8 +1,6 @@
 # Bernstein credit, formal extensions and novelty boundaries
 
-16 November 2026. Provenance addendum requested by the user. It supplements
-the sealed proof packets without changing their hashes or assurance flags.
-No historical priority or novelty is established by this note.
+This note records the classical inputs used by the current polynomial Gaussian certificate constructions. No novelty or independent review is claimed.
 
 The convergent rational-slope mechanism belongs to classical multivariate
 Bernstein theory. In [Sabbah, Proximite evanescente II](https://www.numdam.org/item/CM_1987__64_2_213_0/),
@@ -34,15 +32,10 @@ The scope distinctions to preserve are:
 |---|---|
 | Polynomial/convergent Bernstein slopes | Classical Sabbah/Maisonobe mechanism; no novelty claim. |
 | Generalized b-function computation, including torsion | Oaku1609.04676, Algorithms3.6-3.8 and Proposition3.7; present code is an application. |
-| Arbitrary possibly NONCONVERGENT formal symbol | Separate [formal actual-module proof](GENERIC_BERNSTEIN_EQUATIONS_AND_FORMAL_GAP_CLOSURE.md), using Mebkhout--Narvaez-Macarro1991 formal hypotheses, faithful descent and uniform specialization on original powers. This exceeds the cited convergent scope; priority remains unassessed. |
-| Arbitrary Q-algebra, including non-Noetherian/nonreduced bases | Separate [all-ring descent](FORMAL_SAFETY_OVER_ALL_COEFFICIENT_RINGS.md): constructible finite-certificate compactness and finite nilpotent-core lifting. Not a consequence of an analytic field theorem alone; priority remains unassessed. |
 | Current rational finite-input implementation | [Explicit Fourier/graph certificates](OAKU_GRAPH_CERTIFICATES_AND_ACTUAL_POLYNOMIAL_DECISION.md), operators, torsion witnesses and specialization bounds retained; no full actual-image kernel needed. |
 
-Any future novelty discussion should isolate the arbitrary nonconvergent
-formal extension and all-ring descent, compare them against the formal and coefficient-
-ring literature, and distinguish a repository application from a new theorem.
-An independent review or full priority search has not occurred. The claim
-registry's independent replay, formal verification and external review
-flags remain unchanged. Unrestricted positive GVC is false; the formal
-linearity theorem is conditional on actual safety, not a revived positive
-conjecture.
+The polynomial implementation is an application of these classical inputs.
+Independent mathematical review and a full priority comparison are outstanding.
+The current source and polynomial-Hom arguments are in the
+[exact completion proof](GAUSSIAN_FORMAL_COMPLETION_AND_POLYNOMIAL_HOM.md)
+and [whole-source construction](WHOLE_GAUSSIAN_SOURCE_HOM_AND_EFFECTIVE_CUTOFFS.md).

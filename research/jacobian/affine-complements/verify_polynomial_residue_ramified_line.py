@@ -1,6 +1,20 @@
 #!/usr/bin/env python3
 """PF161 narrow replay: coefficient-ring Hensel and full ramified-prime data."""
 from pathlib import Path
+
+import tempfile as _check_tempfile
+
+_CHECK_OUTPUT_DIRECTORY = None
+
+def _check_output(original):
+    """Write new runs to a temporary directory; preserve deposited receipts."""
+    global _CHECK_OUTPUT_DIRECTORY
+    if _CHECK_OUTPUT_DIRECTORY is None:
+        _CHECK_OUTPUT_DIRECTORY = Path(_check_tempfile.mkdtemp(prefix="math-check-"))
+        print("Verification output:", _CHECK_OUTPUT_DIRECTORY)
+    return _CHECK_OUTPUT_DIRECTORY / Path(original).name
+
+
 import hashlib
 import json
 import math
@@ -164,5 +178,5 @@ receipt={'claim':'PF2RULED161','outcome':'PASS','check_count':len(checks),'check
     'new_external_theorem_imports':[],'retained_Chau_component_input_rechecked':True,
     'registered_predecessor_checkers_replayed':[],
     'full_goal_complete':False,'independent_replay':False,'formal_verification':False,'external_review':False}
-RECEIPT.write_text(json.dumps(receipt,indent=2)+'\n')
+_check_output(RECEIPT).write_text(json.dumps(receipt,indent=2)+'\n')
 print(json.dumps({'outcome':'PASS','check_count':len(checks),'elapsed_seconds':receipt['elapsed_seconds']},indent=2))

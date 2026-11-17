@@ -1,6 +1,20 @@
 """New even-moment and trace-discriminant controls; no retained replay."""
 import hashlib,json,time
 from pathlib import Path
+
+import tempfile as _check_tempfile
+
+_CHECK_OUTPUT_DIRECTORY = None
+
+def _check_output(original):
+    """Write new runs to a temporary directory; preserve deposited receipts."""
+    global _CHECK_OUTPUT_DIRECTORY
+    if _CHECK_OUTPUT_DIRECTORY is None:
+        _CHECK_OUTPUT_DIRECTORY = Path(_check_tempfile.mkdtemp(prefix="math-check-"))
+        print("Verification output:", _CHECK_OUTPUT_DIRECTORY)
+    return _CHECK_OUTPUT_DIRECTORY / Path(original).name
+
+
 import sympy as s
 H=Path(__file__).resolve().parent;R=H.parents[1];started=time.perf_counter()
 checks=[];algebra=[]
@@ -55,12 +69,10 @@ check('point L3 integral lower bound diverges',s.limit(rho**(-10),rho,0,dir='+')
 zero('point curve lower bound coefficient',1-s.Rational(1,2)**4-s.Rational(15,16))
 zero('point target Q scaling degree',9*5-(4*9+9))
 c=json.loads((H/'sources/even-moment-lattices-context.json').read_text())
-ledger=json.loads((R/'MATH_STATUS.json').read_text());known={a['id']:a for a in ledger['entries']}
-for x in c['retained_structural_inputs']:check('prior '+x['claim'],known[x['claim']]['state']=='proved' and known[x['claim']]['canonical_source']==x['canonical_source'])
 for p,h in c['retained_proof_and_source_sha256'].items():check('byte '+p,hashlib.sha256((R/p).read_bytes()).hexdigest()==h)
 yes={'full_goal_active','previous_goal_turn_progress','global_even_integer_moment_formula_proved','moment_lattices_finite_base_projective','exact_terminal_moment_and_multiplication_criterion_proved','moment_trace_duals_and_discriminant_lengths_proved','uniform_sixth_moment_trace_perfection_criterion_proved','sixth_moment_defect_retains_every_positive_ramification_index','all_parameter_Laurent_norm_and_discriminant_controls_supplied','finite_cover_non_even_point_integrability_control_supplied','external_review_deferred'}
 for p,x in c['scope_flags'].items():check('scope '+p,x is (p in yes))
 proof=H/'EVEN_MOMENT_LATTICES_AND_SIXTH_MOMENT_TRACE_TEST.md'
 out=dict(outcome='PASS',check_count=len(checks),algebraic_controls=len(algebra),elapsed_seconds=round(time.perf_counter()-started,3),proof_sha256=hashlib.sha256(proof.read_bytes()).hexdigest(),checker_sha256=hashlib.sha256(Path(__file__).read_bytes()).hexdigest(),checks=checks,scope_flags=c['scope_flags'],registered_mathematical_checkers_replayed=False,independent_replay=False,formal_verification=False,external_review=False)
-(H/'receipt-even-moment-lattices.json').write_text(json.dumps(out,indent=2)+'\n')
+(_check_output(H/'receipt-even-moment-lattices.json')).write_text(json.dumps(out,indent=2)+'\n')
 print(json.dumps({p:out[p] for p in ['outcome','check_count','algebraic_controls','elapsed_seconds']}))

@@ -200,7 +200,7 @@ or counterexamples to the retained trace/energy criteria. This result
 retires automatic Hessian-metric flatness/completeness and interpolation
 as universal shortcuts; it does not reject every geometric approach.
 
-FULL THEOREM TARGET: prove or break full HC4/JC2.
+HC4 and the plane Jacobian conjecture remain open.
 CURRENT LAST UNSOLVED IMPLICATION remains
 
     ACTUAL polynomial plane source

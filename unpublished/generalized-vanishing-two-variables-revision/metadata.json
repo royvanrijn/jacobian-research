@@ -9,7 +9,7 @@
   "status": "revision",
   "source": "main.tex",
   "pdf": "paper.pdf",
-  "build": "latexmk -pdf -interaction=nonstopmode -halt-on-error main.tex",
+  "build": "latexmk -pdf -interaction=nonstopmode -halt-on-error -jobname=paper main.tex",
   "verification": "The added results have written proofs and local exact checks. The full binary theorem remains only partly formalized in Lean.",
   "next_steps": [
     "Review the added support-certificate and cutoff section.",

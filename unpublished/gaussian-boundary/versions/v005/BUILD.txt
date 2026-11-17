@@ -1,6 +1,0 @@
-Revision v005,17November2026.
-Compile manuscript.tex twice with pdflatex and all seven TeX inputs in the same directory. No external images or bibliography processor required.
-27pages;no overfull boxes or undefined references. Three harmless hyperref mathematical-heading metadata warnings remain.
-All27pages rendered and visually reviewed;layout review is not mathematical assurance.
-New full logarithmic proof is WRITTEN:marked model,full nearby-cycle comparison and chain gluing,then separate uniform contour bounds. No new mathematical checker was run. Old successful controls and sealed registration scripts were not replayed.
-PAPER-B-R and PAPER-B-L are closed within the written manuscript. The affine-linear-coordinate proof is complete;PAPER-A geometric frame extraction remains open. Goal ACTIVE;not submission-ready.

@@ -1,17 +1,11 @@
-# Foundational proof library
+# Formal verification and shared proofs
 
-Earlier source proofs, exact checkers, formal projects and failed routes supporting the current [research topics](../README.md) live here. Published manuscripts have moved to [results](../../results/README.md); drafts live in [unpublished](../../unpublished/README.md).
+This topic contains current formal source projects and supporting proofs for the papers. Each project states its exact assumptions and remaining formal boundary.
 
-| Collection | Scope and status |
-|---|---|
-| [Verified core](verified/README.md) | Scoped Keller, cancellation and arithmetic results; global extensions remain open. |
-| [Geometry sources](extended-geometry/README.md) | GVC, Gaussian moments and Image-space proofs, with partial frontiers retained. |
-| [Plane Jacobian](plane-jc/README.md) | Earlier plane reductions and closed branches; the full conjecture is open. |
-| [Formal projects](formal/README.md) | Exact Lean scopes and remaining bridges. |
-| [Arithmetic](arithmetic/) | Construction specifications and certificates. |
-| [Checkers](scripts/) | Explicit replay programs, including bounded controls. |
-| [Hessian catalogue](../index/hessian.md) | Canonical HC4 and Schur source notes in this directory. |
+- [Formal projects](formal/README.md): GVC, GMC(2), finite etale Keller fibres and tangent pencils.
+- [Sparse Gaussian minimality](extended-geometry/THREE_REAL_GMC_MINIMAL_FAILURES.md): the retained proof and exact support certificate.
+- [Two-pair Image counterexample](extended-geometry/TWO_PAIR_IMAGE_MATHIEU_COUNTEREXAMPLE.md): the explicit counterexample beyond the published three-pair paper.
 
-[MATH_STATUS.json](../MATH_STATUS.json) is the sole current claim authority. Historical notes and outputs do not change a claim's state or certify external review.
+**Open:** full binary GVC formalization, removal of GMC imported-input interfaces, and the remaining geometric formalization bridges.
 
-For a selected retained proof target, inspect [Makefile](Makefile) and run `make -C research/foundations TARGET`. Default repository maintenance is described in the [replay guide](../REPRODUCE.md).
+[Current result catalogue](../STATUS.md) · [Published papers](../../results/README.md)

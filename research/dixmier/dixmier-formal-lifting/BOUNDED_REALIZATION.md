@@ -203,7 +203,7 @@ formal solution may use increasing spatial degrees and never factor
 through a single finite M_(n,D).
 
 This is a structural reformulation, not a proposal to compute the
-saturations for increasing D. A useful next theorem would control
+saturations for increasing D. The remaining unproved condition concerns
 horizontal membership or its failure for all D simultaneously.
 
 The property "some bounded-degree formal lift exists" is preserved by

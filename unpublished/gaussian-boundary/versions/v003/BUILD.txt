@@ -1,7 +1,0 @@
-Revision v003,17 November2026.
-Compile manuscript.tex with pdflatex twice,with all five TeX inputs in the same directory. No external images or bibliography processor required.
-20 pages. Zero overfull boxes or undefined references. Three harmless hyperref metadata warnings for math in subsection titles.
-PDF visually reviewed after final edit. This is not a mathematical assurance upgrade.
-New exact controls:check_stationary_ball_controls.py and stationary_ball_controls.json. Already run successfully;do not rerun solely for a new receipt.
-Old check_formal_identities.py and sealed checkers were not replayed.
-PAPER-B-R closed by a new written formal proof. PAPER-A and PAPER-B-L remain open;paper goal active and draft not submission-ready.

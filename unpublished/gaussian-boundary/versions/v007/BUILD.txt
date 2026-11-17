@@ -1,5 +1,0 @@
-Revision v007,17November2026.
-Compile manuscript.tex twice with pdflatex and all NINE TeX inputs in the same directory. No external images or bibliography processor required.
-35pages;no overfull boxes or undefined references;three benign hyperref metadata warnings remain. All35pages rendered;contact sheets and full new pages29-32 visually reviewed. Layout QA is not mathematical verification.
-New proof covers ALL finite-critical no-frame ordinary-node cubics,including isolated degeneracies,equal actions and all a/d zero faces. Exact q=-S-rSprime replaces escape-scale case tables. Full regular rank uses precisely credited Roucairol NONRAMIFIED Section1.2 after base change,plus explicit local A_mu characters and unramified monodromy. No actual-period or image-kernel computation needed here.
-No mathematical checker run or old checker replay. Critical conics,center axes,hyperbolas and five other geometric families remain OPEN. Full affine-W proof and smooth row retained. Paper goal ACTIVE;not submission-ready.

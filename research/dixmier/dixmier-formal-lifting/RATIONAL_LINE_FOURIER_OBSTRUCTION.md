@@ -319,26 +319,16 @@ to all-representative nonlifting. A candidate may have additional
 generic connection branches invisible in the formal classical frame.
 One must prove or construct the relevant rank and lattice properties.
 
-The next useful Fourier construction must leave the rational line
-ansatz, or establish an actual carrier using separately controlled
-boundary constituents. A higher-rank pre-Fourier connection is a
-remaining structural possibility. The full bounded scalar target
-and [QMC1's finite-left graph carrier](FINITE_GRAPH_CARRIERS_AND_MATRIX_REALIZATION.md)
-remain open.
+## Current boundary
 
-[Exact controls](check_rational_fourier.py) verify the Fourier normal
-ordering, two distinct rational behaviors at infinity, a mixed logarithmic
-amplitude and its flatness identities, apparent-pole removal, the uniform
-three-trace identities, the indicial formula in declared controls,
-the rank-two split and the rank-jump control. Clean minimal extension,
-absolute irreducibility, all finite covers and the application to all
-rational deformations use written proofs and the cited standard
-Picard--Vessiot correspondence. No independent theorem replay, formal
-verification, external review, novelty priority, bounded Long lift,
-finite-left Long carrier, all-representative nonlifting or DC2 solution
-is claimed.
+Higher-rank pre-Fourier connections remain outside the rational-line
+obstruction. An actual full compatible finite carrier or bounded Long lift
+has not been constructed. The clean minimal extension, all-cover
+irreducibility and rational-deformation results above use written proofs
+and the stated Picard-Vessiot correspondence.
 
-For the wider local Fourier framework see
-[Bloch--Esnault](https://arxiv.org/html/math/0312343).
-The normal-order and monodromy arguments above do not assume that
-a local Fourier model is globally left finite.
+For the wider local Fourier framework, see
+[Bloch-Esnault](https://arxiv.org/html/math/0312343).
+The normal-order and monodromy arguments do not assume that a local Fourier
+model is globally left finite. No formal verification or independent
+external review is claimed.

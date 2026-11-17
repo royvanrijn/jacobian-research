@@ -9,10 +9,9 @@ of completeness of the CAS integration relations. It does not complete the
 broader Gaussian classification or coefficient-family work.
 
 The [producer](gaussian_source_hom_producer.py),
-[controls](verify_gaussian_source_hom_producer.py),
-[receipt](gaussian_source_hom_producer_verification.json),
-[source audit](gaussian_source_hom_producer_source_audit.json) and retained
-`gaussian_source_hom_examples/` bind this implementation.
+[controls](verify_gaussian_source_hom_producer.py) and
+[receipt](gaussian_source_hom_producer_verification.json) bind the current
+implementation and its checked source examples.
 
 ## 1. Exact source and the direction of the decision
 
@@ -291,12 +290,10 @@ The executed interface supports QQ and simple number fields. It does
 not implement transcendental parameter stratification, specialization of
 relative Hom, coefficient-ring normalization ideals, all-ring ordinary
 ideal producers, least cutoffs or a classification of safe normal forms.
-Existing field-uniformity and all-ring formal theorems remain closed at
-their recorded scopes. This producer does not replace them by finite tests.
+These finite-input computations do not prove coefficient-ring uniformity or a safe-phase classification.
 
 The [Oaku graph polynomial-symbol backend](OAKU_GRAPH_CERTIFICATES_AND_ACTUAL_POLYNOMIAL_DECISION.md)
 and its retained torsion witnesses/specialization thresholds stay intact.
 The [credit boundary](BERNSTEIN_CLASSICAL_CREDIT_AND_FORMAL_EXTENSIONS.md)
 continues to credit Sabbah/Maisonobe for the convergent rational-slope
-mechanism. Arbitrary nonconvergent formal extension and all-ring descent
-are separate candidate extension scopes with priority unassessed.
+mechanism. Independent mathematical review remains outstanding.

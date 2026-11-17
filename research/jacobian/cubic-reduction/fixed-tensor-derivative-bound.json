@@ -1,6 +1,0 @@
-{
-  "status": "primary-exact-diagnostic",
-  "rank": 34,
-  "ambient_quadratic_monomials": 52,
-  "scope": "For the fixed padded18-output cubic tensor, any shared-cube representation needs at least this derivative-space rank. Not a lower bound for arbitrary cubic-linear Keller counterexamples; no independent replay yet."
-}

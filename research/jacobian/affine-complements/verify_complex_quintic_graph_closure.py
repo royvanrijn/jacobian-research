@@ -2,6 +2,20 @@
 The field coverage import is PF155; no higher normal prefix is extrapolated.
 """
 from pathlib import Path
+
+import tempfile as _check_tempfile
+
+_CHECK_OUTPUT_DIRECTORY = None
+
+def _check_output(original):
+    """Write new runs to a temporary directory; preserve deposited receipts."""
+    global _CHECK_OUTPUT_DIRECTORY
+    if _CHECK_OUTPUT_DIRECTORY is None:
+        _CHECK_OUTPUT_DIRECTORY = Path(_check_tempfile.mkdtemp(prefix="math-check-"))
+        print("Verification output:", _CHECK_OUTPUT_DIRECTORY)
+    return _CHECK_OUTPUT_DIRECTORY / Path(original).name
+
+
 import hashlib
 import importlib.util
 import json
@@ -93,7 +107,7 @@ def main():
              full_128_variable_Bezout_vector_computed=False,A2_alone_empty_claimed=False,
              normal_tail_power_containment_proved=False,global_coverage_proved=False,new_external_paper_imports=[],
              registered_predecessor_checkers_replayed=[],full_goal_complete=False,independent_replay=False,formal_verification=False,external_review=False)
-    (HERE/'complex_quintic_graph_closure_receipt.json').write_text(json.dumps(out,indent=2)+'\n')
+    (_check_output(HERE/'complex_quintic_graph_closure_receipt.json')).write_text(json.dumps(out,indent=2)+'\n')
     print(json.dumps({key:out[key] for key in ['claim','outcome','check_count','elapsed_seconds']}))
 
 if __name__=='__main__':main()
