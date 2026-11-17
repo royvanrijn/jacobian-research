@@ -7,7 +7,7 @@
 \newcommand{\F}{\mathbb F}
 \title{Meridional rank conjecture literature and construction gates}
 \author{Primary source research map}
-\date{Evidence checked through 17 November 2026}
+\date{Evidence checked through 18 November 2026}
 \begin{document}
 \maketitle
 
@@ -15,7 +15,7 @@ The classical meridional rank conjecture remains open. It asks whether
 $\mr(K)=b(K)$ for every knot $K\subset S^3$; the usual link formulation asks
 the same equality for links. The 2026 problem list retains it as Problem
 1.18 \cite{k3}. No general proof or classical counterexample was found in
-this search. The catalogue \texttt{sources.json} records 69 sources,
+this search. The catalogue \texttt{sources.json} records 71 sources,
 their precise claimed scope and audit depth. This is a broad map of the
 main results and recent developments, with outstanding source audits
 retained rather than an assertion of exhaustive bibliographic coverage.
@@ -177,9 +177,24 @@ $N=0$ certificate excludes graph type. The reduced-JSJ filling analysis
 \cite[pp.50--51]{bc04}, applied only to nongraph one-boundary primes,
 then retains a hyperbolic piece outside finitely many slopes.
 The product/cable exceptions are explicitly excluded in that domain.
-This supplies infinitely many prime augmentation-gap knots outside
-all graph-double-cover hypotheses. It gives no explicit exceptional
-set, no claim for every $N$, and no whole-cover hyperbolicity theorem.
+That qualitative argument supplies an independent cofinite route.
+The new companion \path{ALL_PARAMETER_HYPERBOLIC_DOUBLE_COVERS.tex}
+proves that every actual $\Sigma_2(K_N)$ is closed hyperbolic, including
+$N=0$. An explicit crossing-circle disk and its lifted annulus identify
+these covers with fillings $(-1,2+6N)$ of one marked parent.
+Exact oriented peripheral chains and marked permanent filling bind
+the fourteen-tetrahedron triangulation to that topological parent.
+Verified interval shapes certify completeness. On an embedded cusp
+of exact area $11$, ordinary slope lengths exceed $10+19N>6$.
+Lackenby's six-theorem \cite[Theorem3.1,p.12]{lackenby00}, independently
+proved by Agol \cite[Theorem6.2,p.440]{agol00}, and geometrization
+\cite[Theorem1.7.6,p.19]{afw} give closed hyperbolicity for every $N$.
+Thus the exceptional set is empty for this family, and every member
+lies outside graph-double-cover hypotheses. The old representation
+volume and qualitative persistence theorem remain separate proofs;
+no sampled filling recognitions or numerical isometries are premises.
+The actual software implementations and rigorous arithmetic remain
+explicit trusted imports, with no formal or external proof assurance.
 
 The companion \path{ALTERNATING_TARGET_PRIME_FAMILIES.tex} gives
 unbounded prime sharp equalities using larger simple targets.
@@ -2268,6 +2283,8 @@ Pacific J. Math. 292(1), Theorem1.2 and Corollary1.3.
 EMS (2015), \url{https://doi.org/10.4171/154}.
 Read final author manuscript Theorems2.1.2--2.1.3,
 printedpp30--31; earlier author-v3 Theorems2.2--2.3 compared.
+Geometrization alternative Theorem1.7.6, printedp19/PDFp23,
+read for the closed hyperbolic-cover application.
 \bibitem{bdjw} Boileau--Dutra--Jang--Weidmann (2017).
 \url{https://arxiv.org/abs/1608.01570}.
 \bibitem{cornwell} Cornwell (2014).
@@ -2332,6 +2349,15 @@ The theorem and later geometric proof explicitly credit
 W. Menasco, Closed incompressible surfaces in alternating knot
 and link complements, Topology 23 (1984), 37--44.
 \url{https://users.monash.edu/~jpurcell/book/11Alternating.pdf}.
+\bibitem{lackenby00} M. Lackenby, Word hyperbolic Dehn surgery,
+Invent. Math. 140 (2000), 243--282.
+Retained arXiv:math/9808120v2 (7 September 1999), Theorem3.1,
+printedp12, proof pp17--19; ordinary cusp-length setup pp1--2.
+\url{https://arxiv.org/abs/math/9808120v2}.
+\bibitem{agol00} I. Agol, Bounds on exceptional Dehn filling,
+Geometry \& Topology 4 (2000), 431--449.
+Definition of hyperbolike p432 and Theorem6.2 p440.
+\url{https://doi.org/10.2140/gt.2000.4.431}.
 \end{thebibliography}
 }
 \end{document}

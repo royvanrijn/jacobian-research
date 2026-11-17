@@ -1,0 +1,151 @@
+{
+  "status": "PASS",
+  "claim": "Finite Ore controls for formal scalar-unit corner shifts and a written rational scalar-gauge polynomial-admission obstruction",
+  "environment": {
+    "python": "3.12.3",
+    "arithmetic": "Independent Python integers/Fraction finite Ore multiplication over Laurent coefficients"
+  },
+  "Weyl_ordering_control": "Sym(u^2D^2)=u^2D^2+2uD+1/2",
+  "corner_controls": [
+    {
+      "corners": [
+        8,
+        4,
+        12,
+        6
+      ],
+      "A": "49/3",
+      "B": "73/2",
+      "commutator_coefficient": "0",
+      "gamma": [
+        "-2",
+        "1/2",
+        "3"
+      ]
+    },
+    {
+      "corners": [
+        8,
+        4,
+        12,
+        6
+      ],
+      "A": "2",
+      "B": "-3",
+      "commutator_coefficient": "72",
+      "gamma": [
+        "-2",
+        "1/2",
+        "3"
+      ]
+    },
+    {
+      "corners": [
+        6,
+        4,
+        12,
+        8
+      ],
+      "A": "49/3",
+      "B": "73/2",
+      "commutator_coefficient": "121/3",
+      "gamma": [
+        "-2",
+        "1/2",
+        "3"
+      ]
+    },
+    {
+      "corners": [
+        6,
+        4,
+        12,
+        8
+      ],
+      "A": "2",
+      "B": "-3",
+      "commutator_coefficient": "62",
+      "gamma": [
+        "-2",
+        "1/2",
+        "3"
+      ]
+    },
+    {
+      "corners": [
+        4,
+        6,
+        6,
+        9
+      ],
+      "A": "49/3",
+      "B": "73/2",
+      "commutator_coefficient": "6",
+      "gamma": [
+        "-2",
+        "1/2",
+        "3"
+      ]
+    },
+    {
+      "corners": [
+        4,
+        6,
+        6,
+        9
+      ],
+      "A": "2",
+      "B": "-3",
+      "commutator_coefficient": "-30",
+      "gamma": [
+        "-2",
+        "1/2",
+        "3"
+      ]
+    }
+  ],
+  "genuine_pair_controls": [
+    {
+      "gamma": "-2",
+      "relation_preserved": true,
+      "D_loses_polynomial_admission": true
+    },
+    {
+      "gamma": "1/2",
+      "relation_preserved": true,
+      "D_loses_polynomial_admission": true
+    },
+    {
+      "gamma": "1",
+      "relation_preserved": true,
+      "D_loses_polynomial_admission": true
+    },
+    {
+      "gamma": "3",
+      "relation_preserved": true,
+      "D_loses_polynomial_admission": true
+    }
+  ],
+  "integer_conjugation_identity": [
+    -2,
+    1,
+    3
+  ],
+  "written_global_theorem": "For P,Q in A1(k), [Q,P]=kappa nonzero, rational f with bothf^-1Pf,f^-1Qf polynomial must be constant; proof uses invariant O,fO,intersection and finite quotient traces.",
+  "quotient_dimensions": [
+    "deg numerator",
+    "deg denominator"
+  ],
+  "written_matrix_position_extension": "For a polynomial Mat_r(A1) pair with scalar nonzero commutator, any rational position matrix gauge preserving polynomial admission lies in GL_r(k[x]); same invariant intersection and two finite quotient traces.",
+  "matrix_controls": {
+    "positive_unimodular": "[[1,u],[0,1]] sends DI to DI+E12",
+    "negative_nonunimodular": "diag(u,u^-1) sends DI to diag(D+u^-1,D-u^-1) and loses polynomial admission"
+  },
+  "hashes": {
+    "SCALAR_GAUGE_SUBPRINCIPAL_AND_POLYNOMIAL_ADMISSION.md": "e5d431e79f675fccb64010036f8c07cac949b20be552e1fa2ea78ded7e043f93",
+    "check_scalar_gauge_admission.py": "9b05241490c10e75e89418fe706443dc3f8722a669d381c53cdf3818228a1697"
+  },
+  "scope": "Corner controls are not Weyl pairs. Rational scalar and one-position matrix admission theorems are proved in writing, not inferred from tests. No absolute zero-subprincipal theorem, nonrational formal/algebraic gauge classification, multivariable extension or full Weyl-division gauge exclusion.",
+  "formal_verification": false,
+  "external_review": false
+}

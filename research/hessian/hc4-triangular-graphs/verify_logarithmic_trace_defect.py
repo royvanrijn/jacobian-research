@@ -47,6 +47,19 @@ def run():
   eq(f"second spectral moment e{e}",S.trace(M*M),
      S.Rational((e-1)*(2*e-1),6*e))
   check(f"fixed-factor logarithmic spectrum distinct e{e}",len(set(vals))==e-1)
+ # A unit in the reduced branch equation requires the FULL t^2D
+ # comparison, not merely a multiple tD. Exercise that distinction.
+ for e in range(2,9):
+  D=lambda f:S.cancel(S.diff(f,u)/(e*u**(e-1))+S.diff(f,z))
+  H=u**e*(1+z+u**e);c=1+z
+  difference=S.cancel(H/c-u**e)
+  eq(f"normalized full coefficient has order 2e e{e}",val(difference,u),2*e)
+  for i in range(1,e):
+   lam=u**(-i)
+   check(f"t squared comparison kills codifferent class e{e}i{i}",
+         val(difference*D(lam),u)>=0)
+   check(f"only t comparison would NOT kill the class e{e}i{i}",
+         val(u**e*D(lam),u)<0)
  # Finite packets retain residue degrees and repeated fractions across primes.
  for packet in [[(2,1),(4,2)],[(3,2),(5,1)],[(2,2),(3,1),(6,1)]]:
   eigen=[-S.Rational(i,e) for e,f in packet for _ in range(f) for i in range(1,e)]

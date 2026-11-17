@@ -121,5 +121,4 @@ the polynomial normalization, simple Hensel root and first coefficients,
 monicity/weighted top, and the heads (5), with \(c\) indeterminate.
 The all-orders branch and trace statements follow from the written
 proof. [The retained receipt](one_root_bc_curve_controls.json) pins
-this note, checker and exact primary PDF. No old audit or metadata
-is changed, and no formal verification or external review is claimed.
+this note, checker and exact primary PDF. No formal verification or external review is claimed.

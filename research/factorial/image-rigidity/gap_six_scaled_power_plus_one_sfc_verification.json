@@ -1,0 +1,157 @@
+{
+  "passed": true,
+  "kind": "internal exact finite-certificate replay; unrestricted digit depth comes from written proofs and periodicity",
+  "scope": {
+    "new_leading_digits": [
+      3,
+      4,
+      5,
+      6
+    ],
+    "new_terminal_family": "N=b*7^r+1,r>=0",
+    "unified_family_by_imports": "1<=b<=6,N=b*7^r+1,r>=0",
+    "every_digit_depth": true,
+    "ordinary_factorial": true,
+    "all_Gamma_shapes": false,
+    "all_index_gap_six_SFC": false,
+    "all_degree_seven_binomial_SFC": false,
+    "unrestricted_FC_or_SFC": false
+  },
+  "controls": {
+    "generic_P_seed_coefficient_identities": 14,
+    "selected_degree_excludes_all_carries": 14,
+    "generic_zero_row_seed_identities": 4,
+    "generic_b6_carry_T": 1,
+    "generic_b6_carry_A": 1,
+    "Artin_Hasse_low_section_integrality": 6,
+    "Artin_Hasse_degree7_unit": 1,
+    "generic_kappa_mod49_identity": 1,
+    "certificate_modulus_and_variable_order": 1,
+    "complete_four_cases": 1,
+    "complete_universal_matrix_entries": 120,
+    "complete_maximal_minor_identities": 24,
+    "quotient_degree_and_monic": 4,
+    "certificate_target_matches_orbit_input": 8,
+    "complete_six_minor_multipliers": 8,
+    "necessary_relation_sparse_identities": 8,
+    "quotient_parameter_unit": 4,
+    "quotient_squarefree_control": 4,
+    "complete_orbit_state_count": 4,
+    "every_orbit_state": 576,
+    "every_orbit_target_unit": 576,
+    "every_orbit_state_degree": 576,
+    "orbit_return_to_initial_state": 4,
+    "corrupted_membership_witness_rejected": 1,
+    "corrupted_orbit_state_rejected": 1,
+    "literal_global_division_integrality": 5200,
+    "complete_actual_boundary_entry_polynomials": 240,
+    "correct_b4_seed_is_constant": 1,
+    "incorrect_b4_seed_model_rejected": 1,
+    "Gamma_shift_bridge_coefficients": 5,
+    "lower_order_bridge_coefficients": 33
+  },
+  "total_controls": 7442,
+  "finite_algebra_cases": [
+    {
+      "b": 3,
+      "q_degree": 15,
+      "period": 90,
+      "all_target_gcds_are_one": true,
+      "all_transitions_and_return_verified": true,
+      "multiplier_monomials": 67
+    },
+    {
+      "b": 4,
+      "q_degree": 20,
+      "period": 30,
+      "all_target_gcds_are_one": true,
+      "all_transitions_and_return_verified": true,
+      "multiplier_monomials": 114
+    },
+    {
+      "b": 5,
+      "q_degree": 25,
+      "period": 420,
+      "all_target_gcds_are_one": true,
+      "all_transitions_and_return_verified": true,
+      "multiplier_monomials": 150
+    },
+    {
+      "b": 6,
+      "q_degree": 30,
+      "period": 36,
+      "all_target_gcds_are_one": true,
+      "all_transitions_and_return_verified": true,
+      "multiplier_monomials": 219
+    }
+  ],
+  "literal_actual_profiles": [
+    {
+      "b": 3,
+      "r": 1,
+      "terminal": 22,
+      "full_coefficient_controls": 106
+    },
+    {
+      "b": 3,
+      "r": 2,
+      "terminal": 148,
+      "full_coefficient_controls": 596
+    },
+    {
+      "b": 4,
+      "r": 1,
+      "terminal": 29,
+      "full_coefficient_controls": 139
+    },
+    {
+      "b": 4,
+      "r": 2,
+      "terminal": 197,
+      "full_coefficient_controls": 832
+    },
+    {
+      "b": 5,
+      "r": 1,
+      "terminal": 36,
+      "full_coefficient_controls": 174
+    },
+    {
+      "b": 5,
+      "r": 2,
+      "terminal": 246,
+      "full_coefficient_controls": 1077
+    },
+    {
+      "b": 6,
+      "r": 1,
+      "terminal": 43,
+      "full_coefficient_controls": 209
+    },
+    {
+      "b": 6,
+      "r": 2,
+      "terminal": 295,
+      "full_coefficient_controls": 1322
+    }
+  ],
+  "source_sha256": {
+    "GAP_SIX_SCALED_POWER_PLUS_ONE_SFC.tex": "5b74a52031f6bc2f43c5acc9feac50ebc616972c51c0eee923797ab0e3b6ef55",
+    "gap_six_scaled_power_plus_one_sfc.py": "8fe475898cdf5ad576ac24ee06e4765a78b776bd1a1a812272ebcd981df36de8",
+    "gap_six_scaled_power_plus_one_certificate.json": "7f40cf2202d81569c7b17de88679b1b1a9479a30f6768d437082e76b68719a91",
+    "GAP_SIX_TWO_POWER_PLUS_ONE_SFC.tex": "7c8b7be9cd416803f0d43e0f76248cb5006f94ffa9feafc5295115d9cf61ffc6",
+    "ARITHMETIC_FRONTIER_TERMINAL_ORDERS.tex": "9721978bcb795af9169c695c5fb8348974069c5148e5e0caa8bd3c4d65650e07",
+    "PHYSICAL_PRIME_TOTAL_DEGREE_REDUCTION.tex": "42c5fc615400a49dd3ae4f19a9a832381607e69ce4f6ff6d255b57ca4cfd156f",
+    "gap_three_hurwitz_structure.tex": "22c690a45976c9b72b210ff76bbcd3a7084ddba0aae4af0c7f40ce2b109f705c",
+    "GAP_SIX_THIN_DIGIT_SFC.tex": "c008b95285ed6c4cec7e89b922adc26a2ec3901f87bc636a165dffdf873ec4cf"
+  },
+  "python": "3.12.3",
+  "sympy": "1.14.0",
+  "orbit_verifier": "pure Python integer coefficient lists; no factorization or Groebner input",
+  "independent_replay": false,
+  "formal_verification": false,
+  "external_review": false,
+  "novelty_claim": false,
+  "priority_claim": false,
+  "command": ".venv/bin/python research/factorial/image-rigidity/gap_six_scaled_power_plus_one_sfc.py"
+}

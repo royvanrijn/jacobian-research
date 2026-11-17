@@ -241,11 +241,11 @@ The focused unresolved question is whether infinitely many points of
 this **existing** elliptic slice pass (3.1), equivalently whether its
 everywhere locally soluble, globally insoluble target count `A_E(B)`
 tends to infinity. The certified point (1.1), EEC1 and the
-[complete five-prime joint sieve](ELLIPTIC_EXCEPTION_JOINT_2_3_5_11_17_SIEVE.md)
+[complete six-prime joint sieve](ELLIPTIC_EXCEPTION_JOINT_2_3_5_11_17_53_SIEVE.md)
 give
 
 \[
- 1\le A_E(B)\le\frac{116302241}{531619620}C_E\log B+O_E(\sqrt{\log B})
+ 1\le A_E(B)\le\frac{2081912199403}{9893175318390}C_E\log B+O_E(\sqrt{\log B})
                 \qquad\text{for sufficiently large }B.         \tag{4.1}
 \]
 
@@ -261,10 +261,12 @@ same error order. It multiplies the class-one coefficient by
 `16/31` and leaves the other three coefficients unchanged.
 The complete test at eleven then multiplies the class-one and
 class-`5p_0` coefficients by `533/665`, leaving the other two
-unchanged. J23511173 gives the resulting five-prime coefficient
-`116302241/531619620` used in (4.1).
-The certified quadratic field has upper coefficient `1/8` at the
-same error order. The [explicit local criterion](ELLIPTIC_EXCEPTION_EXPLICIT_LOCAL_CRITERION.md)
+unchanged. [J23511173](ELLIPTIC_EXCEPTION_JOINT_2_3_5_11_17_SIEVE.md)
+gives the exact five-prime coefficient `116302241/531619620`.
+The correlated refinement at fifty-three, J533, gives the
+six-prime coefficient used in (4.1), and reduces the certified
+quadratic field's upper coefficient from `1/8` to `13361/114520`
+at the same error order. The [explicit local criterion](ELLIPTIC_EXCEPTION_EXPLICIT_LOCAL_CRITERION.md)
 replaces the varying tame tests by `v_p(128x-25865)=0 mod3` at every
 `p=2 mod3`, `p>=11`, together with the three local tests at `2,3,5`.
 Fixing a cubeclass of that rational function produces a genus-four
@@ -290,7 +292,7 @@ the whole set passing any fixed finite collection. The additional
 all-primes step is isolated in
 [EFA3](ELLIPTIC_EXCEPTION_FINITE_LOCAL_ASYMPTOTICS.md). For the certified
 quadratic class, the positive finite-place measures decrease to a limit
-`mu_infinity` between zero and `1/8`. This limit bounds the normalized
+`mu_infinity` between zero and `13361/114520`. This limit bounds the normalized
 all-places count from above. If it vanishes, that fixed-class count is
 `o(log B)`, which still leaves its infinitude open. If it is positive,
 the leading asymptotic requires the exact tail condition in EFA3:

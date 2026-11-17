@@ -72,4 +72,10 @@ python3 -m zipfile -c source.zip main.tex references.tex sections \
 
 Keep caches, build auxiliaries and regenerated witness arrays out of the archive; include any new essential proof inputs explicitly. `verify_certificate.py` is the retained earlier unrestricted verifier.
 
-Next: external specialist review of the spectral and ramified calculations, a complete novelty audit for primitive norm sumsets and basis bounds, external replay, and a persistent source-archive identifier before submission. Internal source and PDF-only review are recorded separately from external review. No public deposit or formal verification is claimed. The balanced-summand assertion remains conjectural beyond its checked finite range.
+Next: external specialist review of the spectral and ramified calculations, a complete novelty audit for primitive norm sumsets and basis bounds, external replay, and a persistent source-archive identifier before submission. Internal source and PDF-only review are recorded separately from external review. No public deposit or formal verification is claimed. The current PDF contains the finite balanced experiment. New canonical research
+now proves [eventual balanced representations and fixed-interval angular distribution](../../research/arithmetic/EISENSTEIN_SIFTED_ANGULAR_DISTRIBUTION.md)
+for both binary families, using this manuscript's odd-prime Hecke lemma and
+fixed-level harmonic theta series. That qualitative extension has received
+internal AI proof/source checks and is not yet incorporated into the PDF. It
+gives no effective onset, so identifying the complete finite balanced exception
+sets remains open, as do external review and historical priority.

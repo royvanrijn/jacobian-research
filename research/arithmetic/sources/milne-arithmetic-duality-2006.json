@@ -16,10 +16,31 @@
       "printed_pages": "41,43",
       "pdf_pages": "49,51",
       "scope": "Local Tate duality for abelian varieties in characteristic zero. With elliptic selfduality it identifies H^1(Q_ell,E)[p] with the dual of E(Q_ell)/p."
+    },
+    {
+      "locator": "Chapter I, Remark 6.7",
+      "printed_pages": "77",
+      "pdf_pages": "85",
+      "scope": "Finiteness of each bounded torsion Selmer and Sha group; each p-primary part is an extension of a finite group by finitely many Qp/Zp copies."
+    },
+    {
+      "locator": "Chapter I, Remark 6.10(b)",
+      "printed_pages": "79",
+      "pdf_pages": "87",
+      "scope": "Alternation of the Cassels-Tate pairing under a polarization induced by a rational divisor, applied to the canonical elliptic polarization."
+    },
+    {
+      "locator": "Chapter I, Theorem 6.13(a)",
+      "printed_pages": "82",
+      "pdf_pages": "90",
+      "scope": "The left and right kernels of the Cassels-Tate pairing are exactly the divisible subgroups, giving a perfect pairing on the finite reduced p-primary quotient."
     }
   ],
   "rendered_pages_visually_inspected": [
-    51
+    51,
+    85,
+    87,
+    90
   ],
   "role": "Primary global-cohomology spectral-sequence and local Tate-duality interfaces.",
   "retained_pdf": "milne-arithmetic-duality-2006.pdf",

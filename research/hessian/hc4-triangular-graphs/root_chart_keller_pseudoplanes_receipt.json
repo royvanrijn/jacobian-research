@@ -1,0 +1,1397 @@
+{
+  "claim": "WHOLE-ROOT-CHART-CYCLIC-KELLER-PSEUDOPLANES",
+  "outcome": "PASS",
+  "check_count": 335,
+  "checks": [
+    {
+      "name": "root equation is monic degree r1",
+      "passed": true
+    },
+    {
+      "name": "source-line constant term has exact order one r1",
+      "passed": true
+    },
+    {
+      "name": "all remaining nonleading coefficients divisible by source parameter r1",
+      "passed": true
+    },
+    {
+      "name": "root-character invariant basis r1 j0",
+      "passed": true
+    },
+    {
+      "name": "root equation is monic degree r2",
+      "passed": true
+    },
+    {
+      "name": "source-line constant term has exact order one r2",
+      "passed": true
+    },
+    {
+      "name": "all remaining nonleading coefficients divisible by source parameter r2",
+      "passed": true
+    },
+    {
+      "name": "root-character invariant basis r2 j0",
+      "passed": true
+    },
+    {
+      "name": "root-character invariant basis r2 j1",
+      "passed": true
+    },
+    {
+      "name": "root equation is monic degree r3",
+      "passed": true
+    },
+    {
+      "name": "source-line constant term has exact order one r3",
+      "passed": true
+    },
+    {
+      "name": "all remaining nonleading coefficients divisible by source parameter r3",
+      "passed": true
+    },
+    {
+      "name": "root-character invariant basis r3 j0",
+      "passed": true
+    },
+    {
+      "name": "root-character invariant basis r3 j1",
+      "passed": true
+    },
+    {
+      "name": "root-character invariant basis r3 j2",
+      "passed": true
+    },
+    {
+      "name": "root equation is monic degree r4",
+      "passed": true
+    },
+    {
+      "name": "source-line constant term has exact order one r4",
+      "passed": true
+    },
+    {
+      "name": "all remaining nonleading coefficients divisible by source parameter r4",
+      "passed": true
+    },
+    {
+      "name": "root-character invariant basis r4 j0",
+      "passed": true
+    },
+    {
+      "name": "root-character invariant basis r4 j1",
+      "passed": true
+    },
+    {
+      "name": "root-character invariant basis r4 j2",
+      "passed": true
+    },
+    {
+      "name": "root-character invariant basis r4 j3",
+      "passed": true
+    },
+    {
+      "name": "root equation is monic degree r6",
+      "passed": true
+    },
+    {
+      "name": "source-line constant term has exact order one r6",
+      "passed": true
+    },
+    {
+      "name": "all remaining nonleading coefficients divisible by source parameter r6",
+      "passed": true
+    },
+    {
+      "name": "root-character invariant basis r6 j0",
+      "passed": true
+    },
+    {
+      "name": "root-character invariant basis r6 j1",
+      "passed": true
+    },
+    {
+      "name": "root-character invariant basis r6 j2",
+      "passed": true
+    },
+    {
+      "name": "root-character invariant basis r6 j3",
+      "passed": true
+    },
+    {
+      "name": "root-character invariant basis r6 j4",
+      "passed": true
+    },
+    {
+      "name": "root-character invariant basis r6 j5",
+      "passed": true
+    },
+    {
+      "name": "root chart recovers original source x r1",
+      "passed": true
+    },
+    {
+      "name": "root chart recovers plane coordinate t r1",
+      "passed": true
+    },
+    {
+      "name": "root chart fixes original coordinate equation r1",
+      "passed": true
+    },
+    {
+      "name": "new Keller Jacobian chain factor r1",
+      "passed": true
+    },
+    {
+      "name": "original source translation lifts regularly on W r1",
+      "passed": true
+    },
+    {
+      "name": "divided field is whole-plane translation r1",
+      "passed": true
+    },
+    {
+      "name": "principal part has no logarithmic exponent r1",
+      "passed": true
+    },
+    {
+      "name": "principal part leading pole r1",
+      "passed": true
+    },
+    {
+      "name": "principal part strict pole inequality r1",
+      "passed": true
+    },
+    {
+      "name": "root rotation fixes ORIGINAL x r1",
+      "passed": true
+    },
+    {
+      "name": "root rotation fixes ORIGINAL y r1",
+      "passed": true
+    },
+    {
+      "name": "cyclic rotation has rth iterate identity on t r1",
+      "passed": true
+    },
+    {
+      "name": "new marked ramified valuation z order r1",
+      "passed": true
+    },
+    {
+      "name": "new marked ramified valuation t pole r1",
+      "passed": true
+    },
+    {
+      "name": "target normal parameter has ramification r1",
+      "passed": true
+    },
+    {
+      "name": "new source volume order at omitted line r1",
+      "passed": true
+    },
+    {
+      "name": "new marked transverse pole at least two r1",
+      "passed": true
+    },
+    {
+      "name": "r1 retained line stays UNRAMIFIED",
+      "passed": true
+    },
+    {
+      "name": "arbitrary original coordinate x is not regular in new plane r1",
+      "passed": true
+    },
+    {
+      "name": "rational-only coordinate pair still has nonzero chain Jacobian r1",
+      "passed": true
+    },
+    {
+      "name": "root chart recovers original source x r2",
+      "passed": true
+    },
+    {
+      "name": "root chart recovers plane coordinate t r2",
+      "passed": true
+    },
+    {
+      "name": "root chart fixes original coordinate equation r2",
+      "passed": true
+    },
+    {
+      "name": "new Keller Jacobian chain factor r2",
+      "passed": true
+    },
+    {
+      "name": "original source translation lifts regularly on W r2",
+      "passed": true
+    },
+    {
+      "name": "divided field is whole-plane translation r2",
+      "passed": true
+    },
+    {
+      "name": "principal part has no logarithmic exponent r2",
+      "passed": true
+    },
+    {
+      "name": "principal part leading pole r2",
+      "passed": true
+    },
+    {
+      "name": "principal part strict pole inequality r2",
+      "passed": true
+    },
+    {
+      "name": "root rotation fixes ORIGINAL x r2",
+      "passed": true
+    },
+    {
+      "name": "root rotation fixes ORIGINAL y r2",
+      "passed": true
+    },
+    {
+      "name": "cyclic rotation has rth iterate identity on t r2",
+      "passed": true
+    },
+    {
+      "name": "new marked ramified valuation z order r2",
+      "passed": true
+    },
+    {
+      "name": "new marked ramified valuation t pole r2",
+      "passed": true
+    },
+    {
+      "name": "target normal parameter has ramification r2",
+      "passed": true
+    },
+    {
+      "name": "new source volume order at omitted line r2",
+      "passed": true
+    },
+    {
+      "name": "new marked transverse pole at least two r2",
+      "passed": true
+    },
+    {
+      "name": "retained source line becomes RAMIFIED omitted prime r2",
+      "passed": true
+    },
+    {
+      "name": "arbitrary original coordinate x is not regular in new plane r2",
+      "passed": true
+    },
+    {
+      "name": "rational-only coordinate pair still has nonzero chain Jacobian r2",
+      "passed": true
+    },
+    {
+      "name": "root chart recovers original source x r3",
+      "passed": true
+    },
+    {
+      "name": "root chart recovers plane coordinate t r3",
+      "passed": true
+    },
+    {
+      "name": "root chart fixes original coordinate equation r3",
+      "passed": true
+    },
+    {
+      "name": "new Keller Jacobian chain factor r3",
+      "passed": true
+    },
+    {
+      "name": "original source translation lifts regularly on W r3",
+      "passed": true
+    },
+    {
+      "name": "divided field is whole-plane translation r3",
+      "passed": true
+    },
+    {
+      "name": "principal part has no logarithmic exponent r3",
+      "passed": true
+    },
+    {
+      "name": "principal part leading pole r3",
+      "passed": true
+    },
+    {
+      "name": "principal part strict pole inequality r3",
+      "passed": true
+    },
+    {
+      "name": "root rotation fixes ORIGINAL x r3",
+      "passed": true
+    },
+    {
+      "name": "root rotation fixes ORIGINAL y r3",
+      "passed": true
+    },
+    {
+      "name": "cyclic rotation has rth iterate identity on t r3",
+      "passed": true
+    },
+    {
+      "name": "new marked ramified valuation z order r3",
+      "passed": true
+    },
+    {
+      "name": "new marked ramified valuation t pole r3",
+      "passed": true
+    },
+    {
+      "name": "target normal parameter has ramification r3",
+      "passed": true
+    },
+    {
+      "name": "new source volume order at omitted line r3",
+      "passed": true
+    },
+    {
+      "name": "new marked transverse pole at least two r3",
+      "passed": true
+    },
+    {
+      "name": "retained source line becomes RAMIFIED omitted prime r3",
+      "passed": true
+    },
+    {
+      "name": "arbitrary original coordinate x is not regular in new plane r3",
+      "passed": true
+    },
+    {
+      "name": "rational-only coordinate pair still has nonzero chain Jacobian r3",
+      "passed": true
+    },
+    {
+      "name": "root chart recovers original source x r4",
+      "passed": true
+    },
+    {
+      "name": "root chart recovers plane coordinate t r4",
+      "passed": true
+    },
+    {
+      "name": "root chart fixes original coordinate equation r4",
+      "passed": true
+    },
+    {
+      "name": "new Keller Jacobian chain factor r4",
+      "passed": true
+    },
+    {
+      "name": "original source translation lifts regularly on W r4",
+      "passed": true
+    },
+    {
+      "name": "divided field is whole-plane translation r4",
+      "passed": true
+    },
+    {
+      "name": "principal part has no logarithmic exponent r4",
+      "passed": true
+    },
+    {
+      "name": "principal part leading pole r4",
+      "passed": true
+    },
+    {
+      "name": "principal part strict pole inequality r4",
+      "passed": true
+    },
+    {
+      "name": "root rotation fixes ORIGINAL x r4",
+      "passed": true
+    },
+    {
+      "name": "root rotation fixes ORIGINAL y r4",
+      "passed": true
+    },
+    {
+      "name": "cyclic rotation has rth iterate identity on t r4",
+      "passed": true
+    },
+    {
+      "name": "new marked ramified valuation z order r4",
+      "passed": true
+    },
+    {
+      "name": "new marked ramified valuation t pole r4",
+      "passed": true
+    },
+    {
+      "name": "target normal parameter has ramification r4",
+      "passed": true
+    },
+    {
+      "name": "new source volume order at omitted line r4",
+      "passed": true
+    },
+    {
+      "name": "new marked transverse pole at least two r4",
+      "passed": true
+    },
+    {
+      "name": "retained source line becomes RAMIFIED omitted prime r4",
+      "passed": true
+    },
+    {
+      "name": "arbitrary original coordinate x is not regular in new plane r4",
+      "passed": true
+    },
+    {
+      "name": "rational-only coordinate pair still has nonzero chain Jacobian r4",
+      "passed": true
+    },
+    {
+      "name": "root chart recovers original source x r6",
+      "passed": true
+    },
+    {
+      "name": "root chart recovers plane coordinate t r6",
+      "passed": true
+    },
+    {
+      "name": "root chart fixes original coordinate equation r6",
+      "passed": true
+    },
+    {
+      "name": "new Keller Jacobian chain factor r6",
+      "passed": true
+    },
+    {
+      "name": "original source translation lifts regularly on W r6",
+      "passed": true
+    },
+    {
+      "name": "divided field is whole-plane translation r6",
+      "passed": true
+    },
+    {
+      "name": "principal part has no logarithmic exponent r6",
+      "passed": true
+    },
+    {
+      "name": "principal part leading pole r6",
+      "passed": true
+    },
+    {
+      "name": "principal part strict pole inequality r6",
+      "passed": true
+    },
+    {
+      "name": "root rotation fixes ORIGINAL x r6",
+      "passed": true
+    },
+    {
+      "name": "root rotation fixes ORIGINAL y r6",
+      "passed": true
+    },
+    {
+      "name": "cyclic rotation has rth iterate identity on t r6",
+      "passed": true
+    },
+    {
+      "name": "new marked ramified valuation z order r6",
+      "passed": true
+    },
+    {
+      "name": "new marked ramified valuation t pole r6",
+      "passed": true
+    },
+    {
+      "name": "target normal parameter has ramification r6",
+      "passed": true
+    },
+    {
+      "name": "new source volume order at omitted line r6",
+      "passed": true
+    },
+    {
+      "name": "new marked transverse pole at least two r6",
+      "passed": true
+    },
+    {
+      "name": "retained source line becomes RAMIFIED omitted prime r6",
+      "passed": true
+    },
+    {
+      "name": "arbitrary original coordinate x is not regular in new plane r6",
+      "passed": true
+    },
+    {
+      "name": "rational-only coordinate pair still has nonzero chain Jacobian r6",
+      "passed": true
+    },
+    {
+      "name": "total support can be primitive r2",
+      "passed": true
+    },
+    {
+      "name": "nonprimitive full-root-invariant support rejected r2",
+      "passed": true
+    },
+    {
+      "name": "bad support is fixed by the whole root group r2",
+      "passed": true
+    },
+    {
+      "name": "bad support makes polynomial linear deck on entire plane r2",
+      "passed": true
+    },
+    {
+      "name": "bad support deck fixes whole-chart origin r2",
+      "passed": true
+    },
+    {
+      "name": "nonidentity root character cannot fix an etale target tangent r2",
+      "passed": true
+    },
+    {
+      "name": "leading pole alone need not be coprime r2",
+      "passed": true
+    },
+    {
+      "name": "proper subgroup can obstruct support primitivity r2",
+      "passed": true
+    },
+    {
+      "name": "total support can be primitive r3",
+      "passed": true
+    },
+    {
+      "name": "nonprimitive full-root-invariant support rejected r3",
+      "passed": true
+    },
+    {
+      "name": "bad support is fixed by the whole root group r3",
+      "passed": true
+    },
+    {
+      "name": "bad support makes polynomial linear deck on entire plane r3",
+      "passed": true
+    },
+    {
+      "name": "bad support deck fixes whole-chart origin r3",
+      "passed": true
+    },
+    {
+      "name": "nonidentity root character cannot fix an etale target tangent r3",
+      "passed": true
+    },
+    {
+      "name": "total support can be primitive r4",
+      "passed": true
+    },
+    {
+      "name": "nonprimitive full-root-invariant support rejected r4",
+      "passed": true
+    },
+    {
+      "name": "bad support is fixed by the whole root group r4",
+      "passed": true
+    },
+    {
+      "name": "bad support makes polynomial linear deck on entire plane r4",
+      "passed": true
+    },
+    {
+      "name": "bad support deck fixes whole-chart origin r4",
+      "passed": true
+    },
+    {
+      "name": "nonidentity root character cannot fix an etale target tangent r4",
+      "passed": true
+    },
+    {
+      "name": "leading pole alone need not be coprime r4",
+      "passed": true
+    },
+    {
+      "name": "proper subgroup can obstruct support primitivity r4",
+      "passed": true
+    },
+    {
+      "name": "total support can be primitive r6",
+      "passed": true
+    },
+    {
+      "name": "nonprimitive full-root-invariant support rejected r6",
+      "passed": true
+    },
+    {
+      "name": "bad support is fixed by the whole root group r6",
+      "passed": true
+    },
+    {
+      "name": "bad support makes polynomial linear deck on entire plane r6",
+      "passed": true
+    },
+    {
+      "name": "bad support deck fixes whole-chart origin r6",
+      "passed": true
+    },
+    {
+      "name": "nonidentity root character cannot fix an etale target tangent r6",
+      "passed": true
+    },
+    {
+      "name": "leading pole alone need not be coprime r6",
+      "passed": true
+    },
+    {
+      "name": "proper subgroup can obstruct support primitivity r6",
+      "passed": true
+    },
+    {
+      "name": "total support can be primitive r8",
+      "passed": true
+    },
+    {
+      "name": "nonprimitive full-root-invariant support rejected r8",
+      "passed": true
+    },
+    {
+      "name": "bad support is fixed by the whole root group r8",
+      "passed": true
+    },
+    {
+      "name": "bad support makes polynomial linear deck on entire plane r8",
+      "passed": true
+    },
+    {
+      "name": "bad support deck fixes whole-chart origin r8",
+      "passed": true
+    },
+    {
+      "name": "nonidentity root character cannot fix an etale target tangent r8",
+      "passed": true
+    },
+    {
+      "name": "leading pole alone need not be coprime r8",
+      "passed": true
+    },
+    {
+      "name": "proper subgroup can obstruct support primitivity r8",
+      "passed": true
+    },
+    {
+      "name": "all source-chart translates cover every copied boundary r1",
+      "passed": true
+    },
+    {
+      "name": "selected plane omits exactly r-1 copied lines r1",
+      "passed": true
+    },
+    {
+      "name": "whole source image includes central fibre r1",
+      "passed": true
+    },
+    {
+      "name": "whole source image includes every ordinary fibre r1",
+      "passed": true
+    },
+    {
+      "name": "r1 selected source map is its plane-chart isomorphism",
+      "passed": true
+    },
+    {
+      "name": "Picard localization relation has cyclic cokernel order r1",
+      "passed": true
+    },
+    {
+      "name": "Euler of universal cover from r-1 added lines r1",
+      "passed": true
+    },
+    {
+      "name": "finite-cover Euler gives quotient one r1",
+      "passed": true
+    },
+    {
+      "name": "central fibre pulls back with exact multiplicity r1",
+      "passed": true
+    },
+    {
+      "name": "all source-chart translates cover every copied boundary r2",
+      "passed": true
+    },
+    {
+      "name": "selected plane omits exactly r-1 copied lines r2",
+      "passed": true
+    },
+    {
+      "name": "whole source image includes central fibre r2",
+      "passed": true
+    },
+    {
+      "name": "whole source image includes every ordinary fibre r2",
+      "passed": true
+    },
+    {
+      "name": "selected source pseudo-cover is not finite-etale r2",
+      "passed": true
+    },
+    {
+      "name": "Picard localization relation has cyclic cokernel order r2",
+      "passed": true
+    },
+    {
+      "name": "Euler of universal cover from r-1 added lines r2",
+      "passed": true
+    },
+    {
+      "name": "finite-cover Euler gives quotient one r2",
+      "passed": true
+    },
+    {
+      "name": "central fibre pulls back with exact multiplicity r2",
+      "passed": true
+    },
+    {
+      "name": "all source-chart translates cover every copied boundary r3",
+      "passed": true
+    },
+    {
+      "name": "selected plane omits exactly r-1 copied lines r3",
+      "passed": true
+    },
+    {
+      "name": "whole source image includes central fibre r3",
+      "passed": true
+    },
+    {
+      "name": "whole source image includes every ordinary fibre r3",
+      "passed": true
+    },
+    {
+      "name": "selected source pseudo-cover is not finite-etale r3",
+      "passed": true
+    },
+    {
+      "name": "Picard localization relation has cyclic cokernel order r3",
+      "passed": true
+    },
+    {
+      "name": "Euler of universal cover from r-1 added lines r3",
+      "passed": true
+    },
+    {
+      "name": "finite-cover Euler gives quotient one r3",
+      "passed": true
+    },
+    {
+      "name": "central fibre pulls back with exact multiplicity r3",
+      "passed": true
+    },
+    {
+      "name": "all source-chart translates cover every copied boundary r4",
+      "passed": true
+    },
+    {
+      "name": "selected plane omits exactly r-1 copied lines r4",
+      "passed": true
+    },
+    {
+      "name": "whole source image includes central fibre r4",
+      "passed": true
+    },
+    {
+      "name": "whole source image includes every ordinary fibre r4",
+      "passed": true
+    },
+    {
+      "name": "selected source pseudo-cover is not finite-etale r4",
+      "passed": true
+    },
+    {
+      "name": "Picard localization relation has cyclic cokernel order r4",
+      "passed": true
+    },
+    {
+      "name": "Euler of universal cover from r-1 added lines r4",
+      "passed": true
+    },
+    {
+      "name": "finite-cover Euler gives quotient one r4",
+      "passed": true
+    },
+    {
+      "name": "central fibre pulls back with exact multiplicity r4",
+      "passed": true
+    },
+    {
+      "name": "all source-chart translates cover every copied boundary r7",
+      "passed": true
+    },
+    {
+      "name": "selected plane omits exactly r-1 copied lines r7",
+      "passed": true
+    },
+    {
+      "name": "whole source image includes central fibre r7",
+      "passed": true
+    },
+    {
+      "name": "whole source image includes every ordinary fibre r7",
+      "passed": true
+    },
+    {
+      "name": "selected source pseudo-cover is not finite-etale r7",
+      "passed": true
+    },
+    {
+      "name": "Picard localization relation has cyclic cokernel order r7",
+      "passed": true
+    },
+    {
+      "name": "Euler of universal cover from r-1 added lines r7",
+      "passed": true
+    },
+    {
+      "name": "finite-cover Euler gives quotient one r7",
+      "passed": true
+    },
+    {
+      "name": "central fibre pulls back with exact multiplicity r7",
+      "passed": true
+    },
+    {
+      "name": "root-of-unity fibre factorization r2",
+      "passed": true
+    },
+    {
+      "name": "selected root chart inverse denominator is a unit at chosen boundary r2",
+      "passed": true
+    },
+    {
+      "name": "smoothness candidate impossible on affine control r2",
+      "passed": true
+    },
+    {
+      "name": "r zero-fibre roots are reduced r2",
+      "passed": true
+    },
+    {
+      "name": "selected WHOLE plane chart is polynomial r2",
+      "passed": true
+    },
+    {
+      "name": "whole plane chart satisfies affine equation r2",
+      "passed": true
+    },
+    {
+      "name": "source inverse on u-open r2",
+      "passed": true
+    },
+    {
+      "name": "source inverse on H-open r2",
+      "passed": true
+    },
+    {
+      "name": "source volume in selected whole chart r2",
+      "passed": true
+    },
+    {
+      "name": "source volume on the boundary chart r2",
+      "passed": true
+    },
+    {
+      "name": "shared primitive is polynomial in whole plane chart r2",
+      "passed": true
+    },
+    {
+      "name": "shared primitive differentiates to unit form r2",
+      "passed": true
+    },
+    {
+      "name": "all r whole charts satisfy relation modulo root equation r2",
+      "passed": true
+    },
+    {
+      "name": "all whole charts have the same unit volume r2",
+      "passed": true
+    },
+    {
+      "name": "free cyclic action preserves affine equation r2",
+      "passed": true
+    },
+    {
+      "name": "cyclic action preserves global UNIT volume r2",
+      "passed": true
+    },
+    {
+      "name": "cyclic action preserves the global primitive r2",
+      "passed": true
+    },
+    {
+      "name": "nonidentity group element moves u unless u=0 r2 j1",
+      "passed": true
+    },
+    {
+      "name": "u=0 forces b nonzero so no fixed point r2 j1",
+      "passed": true
+    },
+    {
+      "name": "control Ga field preserves equation r2",
+      "passed": true
+    },
+    {
+      "name": "control Ga field is translation in the source chart r2",
+      "passed": true
+    },
+    {
+      "name": "free control Ga flow is polynomial r2",
+      "passed": true
+    },
+    {
+      "name": "free control Ga flow preserves affine equation r2",
+      "passed": true
+    },
+    {
+      "name": "control zero-line vector field never vanishes r2",
+      "passed": true
+    },
+    {
+      "name": "root-of-unity fibre factorization r3",
+      "passed": true
+    },
+    {
+      "name": "selected root chart inverse denominator is a unit at chosen boundary r3",
+      "passed": true
+    },
+    {
+      "name": "smoothness candidate impossible on affine control r3",
+      "passed": true
+    },
+    {
+      "name": "r zero-fibre roots are reduced r3",
+      "passed": true
+    },
+    {
+      "name": "selected WHOLE plane chart is polynomial r3",
+      "passed": true
+    },
+    {
+      "name": "whole plane chart satisfies affine equation r3",
+      "passed": true
+    },
+    {
+      "name": "source inverse on u-open r3",
+      "passed": true
+    },
+    {
+      "name": "source inverse on H-open r3",
+      "passed": true
+    },
+    {
+      "name": "source volume in selected whole chart r3",
+      "passed": true
+    },
+    {
+      "name": "source volume on the boundary chart r3",
+      "passed": true
+    },
+    {
+      "name": "shared primitive is polynomial in whole plane chart r3",
+      "passed": true
+    },
+    {
+      "name": "shared primitive differentiates to unit form r3",
+      "passed": true
+    },
+    {
+      "name": "all r whole charts satisfy relation modulo root equation r3",
+      "passed": true
+    },
+    {
+      "name": "all whole charts have the same unit volume r3",
+      "passed": true
+    },
+    {
+      "name": "free cyclic action preserves affine equation r3",
+      "passed": true
+    },
+    {
+      "name": "cyclic action preserves global UNIT volume r3",
+      "passed": true
+    },
+    {
+      "name": "cyclic action preserves the global primitive r3",
+      "passed": true
+    },
+    {
+      "name": "nonidentity group element moves u unless u=0 r3 j1",
+      "passed": true
+    },
+    {
+      "name": "u=0 forces b nonzero so no fixed point r3 j1",
+      "passed": true
+    },
+    {
+      "name": "nonidentity group element moves u unless u=0 r3 j2",
+      "passed": true
+    },
+    {
+      "name": "u=0 forces b nonzero so no fixed point r3 j2",
+      "passed": true
+    },
+    {
+      "name": "control Ga field preserves equation r3",
+      "passed": true
+    },
+    {
+      "name": "control Ga field is translation in the source chart r3",
+      "passed": true
+    },
+    {
+      "name": "free control Ga flow is polynomial r3",
+      "passed": true
+    },
+    {
+      "name": "free control Ga flow preserves affine equation r3",
+      "passed": true
+    },
+    {
+      "name": "control zero-line vector field never vanishes r3",
+      "passed": true
+    },
+    {
+      "name": "root-of-unity fibre factorization r4",
+      "passed": true
+    },
+    {
+      "name": "selected root chart inverse denominator is a unit at chosen boundary r4",
+      "passed": true
+    },
+    {
+      "name": "smoothness candidate impossible on affine control r4",
+      "passed": true
+    },
+    {
+      "name": "r zero-fibre roots are reduced r4",
+      "passed": true
+    },
+    {
+      "name": "selected WHOLE plane chart is polynomial r4",
+      "passed": true
+    },
+    {
+      "name": "whole plane chart satisfies affine equation r4",
+      "passed": true
+    },
+    {
+      "name": "source inverse on u-open r4",
+      "passed": true
+    },
+    {
+      "name": "source inverse on H-open r4",
+      "passed": true
+    },
+    {
+      "name": "source volume in selected whole chart r4",
+      "passed": true
+    },
+    {
+      "name": "source volume on the boundary chart r4",
+      "passed": true
+    },
+    {
+      "name": "shared primitive is polynomial in whole plane chart r4",
+      "passed": true
+    },
+    {
+      "name": "shared primitive differentiates to unit form r4",
+      "passed": true
+    },
+    {
+      "name": "all r whole charts satisfy relation modulo root equation r4",
+      "passed": true
+    },
+    {
+      "name": "all whole charts have the same unit volume r4",
+      "passed": true
+    },
+    {
+      "name": "free cyclic action preserves affine equation r4",
+      "passed": true
+    },
+    {
+      "name": "cyclic action preserves global UNIT volume r4",
+      "passed": true
+    },
+    {
+      "name": "cyclic action preserves the global primitive r4",
+      "passed": true
+    },
+    {
+      "name": "nonidentity group element moves u unless u=0 r4 j1",
+      "passed": true
+    },
+    {
+      "name": "u=0 forces b nonzero so no fixed point r4 j1",
+      "passed": true
+    },
+    {
+      "name": "nonidentity group element moves u unless u=0 r4 j2",
+      "passed": true
+    },
+    {
+      "name": "u=0 forces b nonzero so no fixed point r4 j2",
+      "passed": true
+    },
+    {
+      "name": "nonidentity group element moves u unless u=0 r4 j3",
+      "passed": true
+    },
+    {
+      "name": "u=0 forces b nonzero so no fixed point r4 j3",
+      "passed": true
+    },
+    {
+      "name": "control Ga field preserves equation r4",
+      "passed": true
+    },
+    {
+      "name": "control Ga field is translation in the source chart r4",
+      "passed": true
+    },
+    {
+      "name": "free control Ga flow is polynomial r4",
+      "passed": true
+    },
+    {
+      "name": "free control Ga flow preserves affine equation r4",
+      "passed": true
+    },
+    {
+      "name": "control zero-line vector field never vanishes r4",
+      "passed": true
+    },
+    {
+      "name": "root-of-unity fibre factorization r5",
+      "passed": true
+    },
+    {
+      "name": "selected root chart inverse denominator is a unit at chosen boundary r5",
+      "passed": true
+    },
+    {
+      "name": "smoothness candidate impossible on affine control r5",
+      "passed": true
+    },
+    {
+      "name": "r zero-fibre roots are reduced r5",
+      "passed": true
+    },
+    {
+      "name": "selected WHOLE plane chart is polynomial r5",
+      "passed": true
+    },
+    {
+      "name": "whole plane chart satisfies affine equation r5",
+      "passed": true
+    },
+    {
+      "name": "source inverse on u-open r5",
+      "passed": true
+    },
+    {
+      "name": "source inverse on H-open r5",
+      "passed": true
+    },
+    {
+      "name": "source volume in selected whole chart r5",
+      "passed": true
+    },
+    {
+      "name": "source volume on the boundary chart r5",
+      "passed": true
+    },
+    {
+      "name": "shared primitive is polynomial in whole plane chart r5",
+      "passed": true
+    },
+    {
+      "name": "shared primitive differentiates to unit form r5",
+      "passed": true
+    },
+    {
+      "name": "all r whole charts satisfy relation modulo root equation r5",
+      "passed": true
+    },
+    {
+      "name": "all whole charts have the same unit volume r5",
+      "passed": true
+    },
+    {
+      "name": "free cyclic action preserves affine equation r5",
+      "passed": true
+    },
+    {
+      "name": "cyclic action preserves global UNIT volume r5",
+      "passed": true
+    },
+    {
+      "name": "cyclic action preserves the global primitive r5",
+      "passed": true
+    },
+    {
+      "name": "nonidentity group element moves u unless u=0 r5 j1",
+      "passed": true
+    },
+    {
+      "name": "u=0 forces b nonzero so no fixed point r5 j1",
+      "passed": true
+    },
+    {
+      "name": "nonidentity group element moves u unless u=0 r5 j2",
+      "passed": true
+    },
+    {
+      "name": "u=0 forces b nonzero so no fixed point r5 j2",
+      "passed": true
+    },
+    {
+      "name": "nonidentity group element moves u unless u=0 r5 j3",
+      "passed": true
+    },
+    {
+      "name": "u=0 forces b nonzero so no fixed point r5 j3",
+      "passed": true
+    },
+    {
+      "name": "nonidentity group element moves u unless u=0 r5 j4",
+      "passed": true
+    },
+    {
+      "name": "u=0 forces b nonzero so no fixed point r5 j4",
+      "passed": true
+    },
+    {
+      "name": "control Ga field preserves equation r5",
+      "passed": true
+    },
+    {
+      "name": "control Ga field is translation in the source chart r5",
+      "passed": true
+    },
+    {
+      "name": "free control Ga flow is polynomial r5",
+      "passed": true
+    },
+    {
+      "name": "free control Ga flow preserves affine equation r5",
+      "passed": true
+    },
+    {
+      "name": "control zero-line vector field never vanishes r5",
+      "passed": true
+    },
+    {
+      "name": "written architecture retains scope: FULL finite normalization",
+      "passed": true
+    },
+    {
+      "name": "written architecture retains scope: Globally z need not be integral",
+      "passed": true
+    },
+    {
+      "name": "written architecture retains scope: generic deck SUBGROUP",
+      "passed": true
+    },
+    {
+      "name": "written architecture retains scope: The full",
+      "passed": true
+    },
+    {
+      "name": "written architecture retains scope: gcd(r, {q : a_q!=0})=1",
+      "passed": true
+    },
+    {
+      "name": "written architecture retains scope: SURJECTIVE ETALE",
+      "passed": true
+    },
+    {
+      "name": "written architecture retains scope: W_j->V is not finite for r>1",
+      "passed": true
+    },
+    {
+      "name": "written architecture retains scope: Pic(V)=Z/rZ",
+      "passed": true
+    },
+    {
+      "name": "written architecture retains scope: pi1(V)=mu_r",
+      "passed": true
+    },
+    {
+      "name": "written architecture retains scope: does NOT permit an application",
+      "passed": true
+    },
+    {
+      "name": "written architecture retains scope: same one-multiple-fibre",
+      "passed": true
+    },
+    {
+      "name": "written architecture retains scope: No etale target pair to A2 is supplied",
+      "passed": true
+    },
+    {
+      "name": "explicit geometric control is not a claimed Keller target",
+      "passed": true
+    }
+  ],
+  "elapsed_seconds": 0.18749370198929682,
+  "environment": {
+    "python": "3.12.3",
+    "sympy": "1.14.0"
+  },
+  "proof_sha256": "44f070eb3d48d3b7a45cf05ee158a1110775532293c339baed7eb4201d1f3560",
+  "checker_sha256": "2620d846cfa8320e39d1238cd201acb91552f5f8f26c70461672cc1cd73a7ead",
+  "retained_inputs": [
+    {
+      "path": "EXACT_VOLUME_BOUNDARY_MULTIPLICITIES_AND_COMMON_SOURCE_PENCIL.md",
+      "sha256": "1a9a234f84871ecfef48bfe0644c7b5e068a382b739959ec3b4753580b77e5d7"
+    },
+    {
+      "path": "COMMON_COORDINATE_FORCES_SMOOTH_BOUNDARY_AND_WHOLE_ROOT_CHARTS.md",
+      "sha256": "7eb2e4439847c2a0383eca058786c1a3b5ea775749934203f5d7052c7e4e0af6"
+    },
+    {
+      "path": "CANONICAL_ETALE_COMPLETION_BOUNDARY_TOPOLOGY_AND_FREE_DECK_ACTION.md",
+      "sha256": "71f4782d0c7b32dd78194a4bac125f29d72045a1e07a50c0ac1fda9cabb06fa8"
+    },
+    {
+      "path": "sources/root-chart-keller-pseudoplanes-source-audit.json",
+      "sha256": "153053666101a5dc03870982fe8d4aee6db4f1792574d26a816a7b50ca9df38d"
+    }
+  ],
+  "proved_scope": {
+    "starting_map_is_actual_polynomial_plane_Keller": true,
+    "all_original_full_normalization_primes_retained": true,
+    "new_actual_plane_Keller_Jacobian": "r",
+    "new_actual_generic_degree": "r*d",
+    "cyclic_generic_deck_SUBGROUP": "mu_r",
+    "full_target_field_extension_claimed_Galois": false,
+    "specified_affine_pseudo_plane_source_image": "M_i minus whole retained source line",
+    "selected_plane_surjective_etale_to_image": true,
+    "whole_central_scheme_fibre": "r*D",
+    "every_nonzero_fibre": "one reduced A1",
+    "Pic_and_pi1_image": "Z/rZ",
+    "finite_etale_universal_cover_union_of_r_plane_charts": true,
+    "necessary_Laurent_support_primitivity": true,
+    "leading_pole_coprime_to_r_required": false,
+    "new_marked_ramified_prime_index": "r when r>1",
+    "new_common_coordinate_order_there": 1,
+    "r1_same_field_source_switch": true,
+    "selected_open_identified_with_full_intermediate_normalization": false,
+    "torsion_canonical_full_order_theorem_applied_to_selected_open": false,
+    "explicit_geometric_control_has_Keller_target_pair": false,
+    "source_finiteness_or_integrality_of_common_coordinate_proved": false,
+    "cyclic_architecture_excluded_or_inverse_proved": false
+  },
+  "assurance": "Internal unrestricted written construction and exact controls; no formal verification or external human review."
+}

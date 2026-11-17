@@ -1,0 +1,78 @@
+{
+  "status": "PASS",
+  "claim": "Necessary polynomial Newton-face and next-half-face controls for centered order4/6 rectangle; method control only",
+  "environment": {
+    "python": "3.12.3",
+    "arithmetic": "Independent Fraction sparse polynomial identities; complete rectangle monomial enumeration"
+  },
+  "initial_rectangles": [
+    [
+      8,
+      4
+    ],
+    [
+      12,
+      6
+    ]
+  ],
+  "vanishings_P": [
+    [
+      7,
+      0
+    ],
+    [
+      7,
+      1
+    ]
+  ],
+  "vanishings_Q": [
+    [
+      11,
+      0
+    ],
+    [
+      11,
+      1
+    ],
+    [
+      11,
+      2
+    ],
+    [
+      11,
+      3
+    ],
+    [
+      10,
+      0
+    ],
+    [
+      10,
+      1
+    ]
+  ],
+  "weights": [
+    [
+      -1,
+      4
+    ],
+    [
+      -1,
+      3
+    ],
+    [
+      -1,
+      2
+    ]
+  ],
+  "critical_face": "p=x6(xxi\u00b2+t)\u00b2,q=x9(xxi\u00b2+t)\u00b3",
+  "field_condition": "(B-A\u00b2/4)\u00b2=0 implies B=A\u00b2/4 over fields",
+  "next_half_face": "underzeroWeylsubprincipal,q1=(3/2)s*p1; K remainsfree",
+  "hashes": {
+    "CENTERED_46_RECTANGLE_NEWTON_FACE_GATE.md": "c4e41b14b9538323bb20587f9fcb60c1e7f05a7e8c33855df0df461bdbf56192",
+    "check_centered_46_newton_face.py": "3095875557bc44d37e5891c32247e8d454163b10354fa0b5c4a243743c4be69e"
+  },
+  "scope": "Necessary conditions and method control, no exclusion of order4/6 case, new pair, operator square/cube, general normalization or DC1 theorem. No claim to go beyond published degree bounds.",
+  "formal_verification": false,
+  "external_review": false
+}

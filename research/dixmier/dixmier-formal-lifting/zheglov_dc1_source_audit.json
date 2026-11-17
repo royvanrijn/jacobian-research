@@ -1,5 +1,5 @@
 {
-  "purpose": "Scoped primary-source audit of a claimed DC1 proof; retain the root-count and conditional Laurent lemmas and a precise one-root normalization countercontrol without adopting or refuting the main theorem.",
+  "purpose": "Scoped primary-source audit: independent local proofs and exact PBW correction with explicit operator/global-admission gaps. The main DC1 theorem is neither adopted nor refuted.",
   "primary_source": {
     "author": "Alexander Zheglov",
     "title": "The Conjecture of Dixmier for the first Weyl algebra is true",
@@ -26,14 +26,15 @@
     "adoption_status": "Main DC1 theorem unverified and not adopted as a dependency.",
     "actual_import": [],
     "remaining_audit_dependencies": [
-      "All-stage Newton-shape and order-alignment arguments in Theorems 4.1 and 4.2.",
-      "Generalized-normal-form to ordinary-differential-operator correspondence in Theorem 5.1 and its invoked Schur/Sato results.",
-      "Supply the explicit shared-head, final-order, trace and exceptional missing-head hypotheses of the independent conditional Laurent-invariance lemma for every hypothetical DC pair. Its gap dichotomy follows from those order/integrality hypotheses.",
-      "Existence and compatibility of the required Schur/auxiliary conjugations and rank-one commuting curve with the asserted Puiseux branches.",
-      "Prove that an additional condition of the actual simultaneous Weyl pair/normal forms eliminates C, or repair the induction and terminal-edge transport while retaining it."
+      "All-stage Newton shape and order alignment in Theorems4.1/4.2, with the one-root homogeneous branch retained or correctly excluded.",
+      "Actual shared-head, final-order, commuting-curve and trace constructions; the stated monomial-face gap supplies the head-minus-one zero if its transport exists.",
+      "Generalized-normal-form to ordinary-operator reconstruction and Schur/Sato tail cutting in Theorem5.1.",
+      "The corrected PBW raw components and subsequent body-tail/averaging bridges. Determine the actual mixed source coefficient A and whether A=ab/2; the corrected final comparison gives no contradiction in that case.",
+      "Actual simultaneous global polynomial Weyl admission; local formal gauges, monic curve data and zero trace do not supply it."
     ],
     "indexing_resolution": "With D=d2*N+l2, the consistent compressed formula is c[n,D*j]=c[d2*j], or raw formula c[n,(D/d2)*i]=c[i] on the relevant divisible indices. Thresholds use the same convention. An independent conditional Laurent proof bypasses the ambiguous displayed source formula; no fatal gap or whole-proof verification is claimed.",
-    "conditional_step_verified": "All prefix distinguished coefficients are independent of N under the exact head, final-order, trace and exceptional normalization hypotheses stated in CONDITIONAL_LAURENT_COEFFICIENT_INVARIANCE.md. The gap dichotomy follows from integrality; the complete exceptional resonance is proved. Earlier constructions supplying those hypotheses remain unverified."
+    "conditional_step_verified": "Under the explicit common-head and order hypotheses, the restricted Laurent invariant and the general exceptional AB/trace-corrected invariant are proved. The gap-N transport, if constructed as stated, gives head-minus-one zero independently of centroid equality.",
+    "pbw_calculation_correction": "With Phi_N(x)=x+D^N and Gamma_1=xD, the raw coefficient includes N*binom(a,2); its terminal counterpart includes N*binom(c,2). Retaining both cancels the claimed leading N growth. Conditional on the later bridges, only (a-b)*(ab-2A)/(2a*(aN+b)) can vary with N."
   },
   "later_primary_assessment": {
     "authors": [
@@ -49,7 +50,7 @@
   },
   "proof": {
     "file": "ZHEGLOV_DC1_PRIMARY_SOURCE_AUDIT.md",
-    "sha256": "ccf1ff4d27c0ba8d2be3bea25c5eea5eeae6efc03150c0313c2940dbab157a5c"
+    "sha256": "98462bf89383a49268e5887919938761b0757911f6962a528d4e46be52464d0b"
   },
   "independent_result": {
     "statement": "For c*g^A=g*H'-(A-1+1/d)*g'*H with c nonzero, characteristic zero, and g of degree ell with s>=2 distinct roots, g^(A-1)*rad(g) divides H, deg(H)=(A-1+1/d)*ell, d divides ell, and ell/d>=s.",
@@ -60,7 +61,7 @@
   },
   "conditional_invariance_result": {
     "file": "CONDITIONAL_LAURENT_COEFFICIENT_INVARIANCE.md",
-    "sha256": "a70ef55803377e55d7172cf94281f7eb1a9a4f9d49164fd90f6d573cef9a33a0",
+    "sha256": "6216efdc1241e6691950ddeae24cb2646a86110e2e392d50d7abd627b25b2a8c",
     "statement": "For a fixed pth-power chopping chain with all intermediate heads on a common D-lattice, zero trace coefficient, prescribed final order and the exceptional missing-head normalization when applicable, every prefix distinguished Laurent coefficient is independent of N. The last gap is automatically>N+1 except for C=1,d0=2,l0=1, when it is N; boundaryN+1 is impossible.",
     "proof": "Compressed backward binomial head root; exact derivative coefficient; nonlinear-order induction; complete exceptional quadratic-term cancellation; separate cyclic-vector trace, filtered tail and Puiseux trace lemmas with explicit assumptions.",
     "nonresonant_control": "p=4,q0=6,q1=22,d0=2,l0=1 gives final distinguished coefficient -231/512 and prefix -231/2048 for N=3,5,9.",
@@ -71,7 +72,7 @@
     "file": "check_conditional_laurent_invariance.py",
     "sha256": "70abeb7ddd9d1d8d2d8750ef57d6bc691b95a2e4333cb8da5ae108e83a20cc8d",
     "receipt": "conditional_laurent_invariance_controls.json",
-    "receipt_sha256": "23ddf69589c917420f45e555aecddd19cf4db663ee3872b390351ff830ace19f"
+    "receipt_sha256": "dd77d1f248a3c214cb969d45cbeea0bf0eface4a0f66fe04ad339a0535109ee2"
   },
   "checker_scope": "Independent Fraction Laurent finite controls and cyclic-vector sums. The all-N claim follows from the written proof, not finite extrapolation. The local polynomial-ODE lemma has a complete written proof and sharp symbolic family.",
   "independent_whole_proof_replay": false,
@@ -80,17 +81,54 @@
   "novelty_priority_claim": false,
   "one_root_branch_control": {
     "file": "ONE_ROOT_CHOPPING_ODE_HOMOGENEOUS_BRANCH.md",
-    "sha256": "6bbd38c80bc7ae4a390990efabd59de064b67f0388da0cbcedc046c0e8b05b04",
+    "sha256": "b0599764fe478e25b5b555da6f24e70168c882ad90aa11ed0d8a9d3dfbfa005f",
     "checker": "check_one_root_chopping_ode.py",
     "checker_sha256": "cd9771a576d52409b279a9c83c02548b70966b93f562f37cd04cda4d57bdebdd",
     "receipt": "one_root_chopping_ode_controls.json",
-    "receipt_sha256": "f833ffd3718a8a22a8652d29af407cbb3e617bdefcb17d94bad24f4512dccf43",
+    "receipt_sha256": "5be12d2a4b9dea0156596e60e6fb3274358ad8e6405f8edb0a3de61cd50cfc3f",
     "source_locations": [
       "Theorem4.2, printed44-49",
       "Lemma6.1, printed64"
     ],
     "proved_local_statement": "The complete one-root polynomial ODE solution includes C*u^(d*beta+d/l) when l divides d. An exact two-stage coefficient recursion and both ODEs retain C and fit the displayed numerical order/gcd/distance data. For the l2,d4 example the simultaneous-centering difference is 3/(92*C), nonzero for C!=0.",
     "remaining_obligation": "Prove that an additional condition of the actual simultaneous Weyl pair/normal forms eliminates C, or repair the induction and terminal-edge transport while retaining it.",
-    "boundary": "No initial simultaneous Weyl pair or first chop is realized by these local controls; no theorem or main-proof refutation is asserted."
+    "boundary": "No initial simultaneous Weyl pair or first chop is realized by these local controls; no theorem or main-proof refutation is asserted.",
+    "order_distinction": "Centroid mismatch is transported at head minus N. The monomial-face gap gives head minus one zero for N>1, preserved by the specified conjugations and tail step if they exist. The local centering countercontrol therefore does not obstruct the conditional Laurent lemma."
+  },
+  "bc_result": {
+    "file": "ONE_ROOT_BC_CURVE_AND_ADMISSION_GAP.md",
+    "sha256": "8532fb6f9ad4f1f559e5f8aa8662743187e607090b4e43f642578f945c2c286c",
+    "checker": "check_one_root_bc_curve.py",
+    "checker_sha256": "38adf135baf02cbcb0d7c121710a339b6ae3fc2998e4140a0e864846cccf667e",
+    "receipt": "one_root_bc_curve_controls.json",
+    "receipt_sha256": "761c09ff3b17dd27b75510f5c015dd5b5bb1e8120b385ec62f4256ed71b47842",
+    "scope": "Explicit monic irreducible one-place curve, all-order Puiseux branch, heads and zero trace; no ordinary-operator or string-pair reconstruction."
+  },
+  "exceptional_result": {
+    "file": "EXCEPTIONAL_LAURENT_CORRECTION.md",
+    "sha256": "bd95eb2b8985e14640d340e6b73500bc227c3fe956da8e57f0f3ed257424b88f",
+    "checker": "check_exceptional_laurent_correction.py",
+    "checker_sha256": "374b3de760b8f53dc05431f8ffaae8d45993d224790d39b86ea59e878c9d40e3",
+    "receipt": "exceptional_laurent_correction_controls.json",
+    "receipt_sha256": "d1b9a7ea55d50e8aa446f31e3c7d2f16d9a9c570d68b200ed466f8e4a709f820",
+    "scope": "General conditional exceptional Laurent invariant with unrestricted trace and final head-minus-one coefficient."
+  },
+  "pbw_result": {
+    "file": "PBW_TRANSPORT_AND_FINAL_COEFFICIENT_COMPARISON.md",
+    "sha256": "00d1e2e3fc17b467de2b8247f9ad29017c470087d487615552485854148eeabb",
+    "checker": "check_pbw_transport_final_coefficient.py",
+    "checker_sha256": "7df305958ac4bd030f0577eb851d9a6a7e417304434641dac54fb840c8a20e07",
+    "receipt": "pbw_transport_final_coefficient_controls.json",
+    "receipt_sha256": "85144311fe386b45b41671dbd769d03718059a352eb6acb1b9977730eebb1317",
+    "scope": "Exact tame-shear raw components and Schur coefficient algebra; final rational comparison conditional on later source constructions."
+  },
+  "gauge_result": {
+    "file": "SCALAR_GAUGE_SUBPRINCIPAL_AND_POLYNOMIAL_ADMISSION.md",
+    "sha256": "e5d431e79f675fccb64010036f8c07cac949b20be552e1fa2ea78ded7e043f93",
+    "checker": "check_scalar_gauge_admission.py",
+    "checker_sha256": "9b05241490c10e75e89418fe706443dc3f8722a669d381c53cdf3818228a1697",
+    "receipt": "scalar_gauge_admission_controls.json",
+    "receipt_sha256": "0e2a799302f65bc8bad334fc8b4a1a133ee235d56a0370cc7b9481ece48c845a",
+    "scope": "Formal-unit residue shifts, necessary centered corner relation, and rational scalar/matrix position-gauge admission theorems; no absolute residue-zero claim."
   }
 }

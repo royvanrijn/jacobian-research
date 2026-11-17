@@ -26,8 +26,12 @@ Restricted Hessian classes, polynomial graphs and formal termination.
 | Exact volume forces one common polynomial source pencil | Internal result | proved | [Source](hc4-triangular-graphs/EXACT_VOLUME_BOUNDARY_MULTIPLICITIES_AND_COMMON_SOURCE_PENCIL.md) |
 | Unramified boundary residue degree and target normalization | Internal result | proved | [Source](hc4-triangular-graphs/UNRAMIFIED_BOUNDARY_RESIDUE_DEGREE_AND_TARGET_NORMALIZATION.md) |
 | Codifferent preimages under target derivations | Internal result | proved | [Source](hc4-triangular-graphs/CODIFFERENT_PREIMAGES_UNDER_TARGET_DERIVATIONS.md) |
+| Ramified folds and poles of the common source coordinate | Internal result | proved | [Source](hc4-triangular-graphs/RAMIFIED_FOLD_VALUATIONS_AND_COMMON_COORDINATE_POLES.md) |
+| Exact plinth ideal and invariant-replica extension | Internal result | proved | [Source](hc4-triangular-graphs/PLINTH_IDEALS_AND_INVARIANT_REPLICA_EXTENSION.md) |
+| Logarithmic trace-defect spectrum and missing derivative jets | Internal result | proved | [Source](hc4-triangular-graphs/LOGARITHMIC_TRACE_DEFECT_AND_NON_DENSE_DERIVATIVE_DOMAINS.md) |
+| Whole root charts produce actual cyclic Keller pseudo-planes | Internal result | proved | [Source](hc4-triangular-graphs/WHOLE_ROOT_CHARTS_CREATE_CYCLIC_KELLER_PSEUDOPLANES.md) |
 
-**Computed obligations:** 10 unresolved; 3 resolved within their exact scope.
+**Computed obligations:** 11 unresolved; 3 resolved within their exact scope.
 
 
 Scope limits:
@@ -42,6 +46,10 @@ Scope limits:
 - Direct given-replica differential trace proves index divisibility without arbitrary-LND triangularization. Every actual intermediate source intersection algebra is smooth affine etale; replica stability fills all point gaps and proves disjoint smooth A1 reduced fibres. None makes velocities integral over B.
 - Individual regular source coordinates now follow from the inspected Borisov minimality proof and an elementary positive-pullback sign argument. Actual unramified boundaries are smooth algebraic A1 with entire root charts. Exact volume gives a strict pole inequality; all-length multiplicity and cross-intersection bounds force ONE common source pencil, without adopting Xie or arbitrary-LND classification. This concerns the entire unramified completion, not ramified-prime integrality.
 - Ordinary codifferent differentiation now characterizes the full finite order: S={f in L:D_Pf,D_Qf in Lambda}, and one generic target D suffices uniformly on source polynomials. In source-finite frames, one generic first velocity in Lambda forces inversion. Its automatic membership remains open; common-coordinate regularity on the unramified completion does not supply it.
+- For a proper canonical completion the common source-coordinate frame is never source-finite. Its exact plinth/leading-coefficient ideal has at least double zeros on added fibres. An invariant source replica extends the full finite normalization or stabilizes the ordinary codifferent iff that invariant coordinate is already integral; local nilpotence alone supplies neither condition.
+- A nonempty unramified boundary anchors every polar ramified prime by n>q^2. Minimal Borisov Case2 folds are excluded; remaining polar folds have transverse degree one and types (2,1,5) or (p,p+1,p^2+p+1). A smooth affine noncontracting survivor, without a supplied Keller target pair, shows where finite-target trace compatibility is still required.
+- The ordinary trace defect has an intrinsic logarithmic spectrum -i/e and normalized trace -rank/2. A generic target derivative has a non-dense maximal Bergman domain in the ramified case; dense-domain arguments cannot supply automatic integrality without proving the inverse condition.
+- Whole root charts transfer any r>1 unramified multiplicity to an actual degree-rd plane Keller map with cyclic deck subgroup and a specified affine pseudo-plane source image. The new marked ramified prime has nonpolar common coordinate, and selected opens are not full finite intermediate normalizations. This architecture remains unexcluded.
 
 Tracked obligations (computed states):
 
@@ -50,5 +58,6 @@ Tracked obligations (computed states):
 - **mathematical / open:** [Automatic perfection or full codifferent multiplication is not proved; HC4 and the plane Jacobian conjecture remain open.](README.md) — GAP-AUTOMATIC-T3-PERFECTION
 - **mathematical / open:** [Global directional coordinate-conductor degrees2,4 and6 are fully excluded for actual noninvertible complex plane Keller maps in a monic source frame, including every genus-three ambient class and special degree drops. Noninvertibility therefore forces even global degree>=8. Every specialized source line still has only the lower bound2; special-line degrees2,4 or6 are not excluded. Higher conductor degrees, automatic first-velocity integrality over the original full target normalization, full codifferent multiplication, trace perfection, HC4 and JC2 remain unresolved.](hc4-triangular-graphs/GLOBAL_SEXTIC_CONDUCTOR_EXCLUSION_AND_PERIOD_POLE_REPAIR.md) — GAP-HESSIAN-HIGHER-COORDINATE-CONDUCTORS
 - **mathematical / open:** [Can actual Keller/source constraints force one generic first velocity into the ordinary codifferent in a source-finite frame, eliminating the exact polar marked traces at original omitted ramified primes?](hc4-triangular-graphs/CODIFFERENT_PREIMAGES_UNDER_TARGET_DERIVATIONS.md) — GAP-HESSIAN-AUTOMATIC-ONE-VELOCITY-CODIFFERENT
+- **mathematical / open:** [For actual plane Keller maps with nonempty unramified completion boundary, eliminate or realize the remaining polar index-two types (p,r,n)=(2,1,5) and (p,p+1,p^2+p+1) while preserving the FULL finite target normalization and trace pairing. The genuine affine geometric survivor is not a supplied Keller target. Empty-unramified-boundary maps, nonpolar folds and higher ramification indices remain separate parts of the original JC2/trace-integrality objective.](hc4-triangular-graphs/RAMIFIED_FOLD_VALUATIONS_AND_COMMON_COORDINATE_POLES.md) — GAP-HESSIAN-RAMIFIED-POLAR-FOLD-REALIZATION
 
 [Exact scopes and verification limits](../STATUS.md). Publication, formal verification and independent review are separate statuses. [Dependency routes](../DEPENDENCIES.md) and [scope audit](../SCOPES.md) expose remaining gaps.

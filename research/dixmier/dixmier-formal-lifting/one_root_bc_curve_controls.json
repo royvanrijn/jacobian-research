@@ -49,7 +49,7 @@
     ]
   },
   "hashes": {
-    "ONE_ROOT_BC_CURVE_AND_ADMISSION_GAP.md": "5ffb7bc519ca51ff0be66a2b69033ab7136464ea034cc35a5de79588acbcf9de",
+    "ONE_ROOT_BC_CURVE_AND_ADMISSION_GAP.md": "8532fb6f9ad4f1f559e5f8aa8662743187e607090b4e43f642578f945c2c286c",
     "check_one_root_bc_curve.py": "38adf135baf02cbcb0d7c121710a339b6ae3fc2998e4140a0e864846cccf667e",
     "sources/zheglov-2410.06959v5.pdf": "897913ef95e011332e86e348803c6c9da5dbd196db17a04f8f951110e9b095e3"
   },

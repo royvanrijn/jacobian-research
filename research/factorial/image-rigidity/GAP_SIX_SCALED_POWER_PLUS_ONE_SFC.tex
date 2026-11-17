@@ -1,0 +1,399 @@
+\documentclass[11pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb,amsthm,mathrsfs}
+\usepackage[hidelinks]{hyperref}
+\newtheorem{lemma}{Lemma}
+\newtheorem{theorem}[lemma]{Theorem}
+\newtheorem{corollary}[lemma]{Corollary}
+\title{Scaled single-digit terminal families for ordinary gap six}
+\author{Internal proof; no priority or external-review claim}
+\date{18 November 2026}
+\begin{document}\setlength{\emergencystretch}{1em}\maketitle
+We prove ordinary Strong Factorial for $X(A+BX^6)$ at every terminal
+$N=b7^r+1$, $3\le b\le6$, $r\ge0$.
+Together with the two smaller leading digits this covers
+$1\le b\le6$.  The argument retains every boundary row.
+A uniform formal generating-series calculation supplies their divided
+reductions; fixed polynomial identities and periodic finite-field
+orbits then exclude rank loss at every digit depth $r$.
+This is a terminal family, not all-index gap-six Strong Factorial.
+
+For now fix $3\le b\le6$, $r\ge1$, $L=7^r$, $N=bL+1$ and $c=N+5$.
+Work in a complete algebraically closed extension of $\mathbb Q_7$,
+with valuation ring $\mathcal O$ and residue field $k$; normalize
+$v_7(7)=1$.  Put $\mathcal A=c-zD_z+z$ and
+$\Pi_N(X)=\prod_{\ell=0}^{N-1}(X+6\ell)$.
+For $Q\in\mathcal O[X]$, $\deg Q\le4$, let
+\[
+ G_Q(X)=\binom{X/6+N-1}{N}Q(X),\qquad
+ d_j(Q)=\sum_{\ell=0}^j(-1)^\ell\binom j\ell G_Q(c-\ell).
+\]
+Every $d_j$ is integral: the binomial polynomial is integral on
+$\mathbb Z_7$ by continuity from nonnegative integers, and the
+coefficients of $Q$ are integral.
+Also $d_j=0$ for $j>N+4$.
+The finite formal conjugacy of $\mathcal A$ gives
+\[
+ \frac{\Pi_N(\mathcal A)Q(\mathcal A)1}{6^NN!}
+   =\sum_{j=0}^{N+4}\frac{d_j(Q)}{j!}z^j .
+\]
+No exponential is evaluated here.  At $u=z^6=7v$ define the six
+integral polynomial rows
+\[
+ V_a(Q;v)=\sum_{\ell\ge0}
+   \frac{7^\ell a!}{(a+6\ell)!}d_{a+6\ell}(Q)v^\ell,
+                \qquad0\le a<6.                         \tag{1}
+\]
+Their simultaneous zero is the actual cyclic relation.
+Integrality follows from the exact weight valuation
+$(s_7(a+6\ell)-a)/6\ge0$, with $s_7$ the base-seven digit sum.
+
+\begin{lemma}[The leading rows]\label{lem:digit-rows}
+Put
+\[
+ S=S_r(v)=1+\sum_{i=1}^r(-1)^iv^{(7^i-1)/6},\quad
+ f(x)=(x+1)\bar Q(6-x),\quad
+ D_a=\sum_{\ell=0}^a(-1)^\ell\binom a\ell f(\ell).
+\]
+Then $\bar V_a=0$ for $a<b$.  For $b\le a\le5$,
+\[
+ \bar V_a(Q)=\binom ab\sum_{j=0}^b
+                   \binom bj(-S)^jD_{a-j}.              \tag{2}
+\]
+In particular each entire row $V_a$, $a<b$, is coefficientwise
+divisible by seven.
+\end{lemma}
+\begin{proof}
+Only indices with $s_7(j)=a$ contribute to $\bar V_a$.
+For Lucas-allowed $\ell$ digitwise bounded by such $j$, its digit
+sum is at most five.
+The top binomial argument in $G_Q(c-\ell)$ is
+$1-\ell/6+b7^{r+1}/6$.
+Since $-1/6=1+7+7^2+\cdots$, its units digit is $1+\ell_0$
+and its $r$th digit is $s_7(\ell)$, without carries.
+Lucas' formula therefore gives
+\[
+ \overline{G_Q(c-\ell)}
+      =f(\ell_0)\binom{s_7(\ell)}b .
+\]
+Every relevant $j$ has positions at most $r$, since
+$j\le N+4=b7^r+5<7^{r+1}$.
+If $J=\sum_{i\ge1}j_i$, summing the higher digit differences gives
+the exact expression
+\[
+ \bar d_j=[\xi^b](-\xi)^J
+   \sum_{\ell=0}^{j_0}(-1)^\ell
+                 \binom{j_0}{\ell}f(\ell)(1+\xi)^\ell.   \tag{3}
+\]
+It vanishes when $a<b$.
+For completeness, the factorial unit is
+$7^{-v_7(j!)}j!\equiv(-1)^{v_7(j!)}\prod_i j_i!$.
+Thus the higher-digit weights at total higher degree $J$ sum to
+$(S-1)^J/J!$.
+Inserting (3), and using
+$\binom{j_0}{\ell}\binom{\ell}{b-J}
+ =\binom{j_0}{b-J}\binom{j_0-b+J}{\ell-b+J}$,
+gives
+\[
+ \binom ab(-1)^b
+   \sum_{J=0}^b\binom bJ(S-1)^J
+             E^{b-J}(1-E)^{a-b}f(0)
+ =\binom ab(1-E-S)^b(1-E)^{a-b}f(0),
+\]
+where $Ef(x)=f(x+1)$.
+Expansion is exactly (2).
+For $a=0$ the constant term also vanishes modulo seven, by the
+same Lucas calculation; every other coefficient has positive
+weight valuation.  This proves the whole-row divisibility.
+\end{proof}
+
+\begin{lemma}[Uniform divided-row seeds]\label{lem:divided-seeds}
+For $a<b$ write $R_a=\overline{V_a/7}$.
+At $Q=1$ these rows have the following values in $k[S,v]$:
+\[
+\begin{array}{c|l}
+ b&\text{divided-row values at }Q=1\\\hline
+3&(R_0,R_1,R_2)=(6,\ 4-S,\ 2+5S-S^2)\\
+4&(R_0,R_1,R_2,R_3)=(1,\ 4+S,\ 6+6S+S^2,\ S+3S^2+S^3)\\
+5&R_0=6+vS^5,\quad R_1=1-S,\\
+ &R_2=2+6S+6S^2,\quad R_3=3S+5S^2+6S^3,\\
+ &R_4=5S^2+3S^3+6S^4\\
+6&R_0=1-vS^5(S-1),\quad R_1=S-2+vS^6,\\
+ &R_a=S^{a-2}(1+5S+S^2),\quad 2\le a\le5
+\end{array}                                                     \tag{4}
+\]
+\end{lemma}
+\begin{proof}
+All following series are formal $t$-adic, not boundary values of
+analytic exponentials.
+Lemma \texttt{lem:diagonal} of
+\href{GAP_SIX_TWO_POWER_PLUS_ONE_SFC.tex}{the two-power-plus-one note}
+gives the exact series
+\[
+ \sum_{m\ge0}\frac{B_{m,m,6}(z)}{6^mm!}t^m
+ =\kappa e^{zH},\quad
+ R-R^7=t,\ R(0)=1,\ H=1-R,\quad
+ \kappa=\frac{6R}{7R^6-1}\equiv R-7t\pmod{49}.           \tag{5}
+\]
+The coefficient of $t^N$ in $a!\kappa\mathcal C_{6,a}e^{zH}$
+is precisely $V_a(1;v)$, where $\mathcal C_{6,a}$ extracts the
+coefficient of $z^a$ after $z^6=7v$.
+
+The Artin--Hasse series
+\[
+ \mathcal E_7(X)=\exp\left(\sum_{i\ge0}X^{7^i}/7^i\right)
+\]
+has integral coefficients by
+\href{ARITHMETIC_FRONTIER_TERMINAL_ORDERS.tex}
+{Lemma \texttt{lem:artin-hasse-closure} of the arithmetic note}.
+There is a unique integral series
+$\mathscr A\in t\mathbb Z_7[v][[t]]$ satisfying
+\[
+ \mathscr A+v\mathscr A^7+7^6v^8\mathscr A^{49}+\cdots=H
+\]
+has $e^{zH}=\mathcal E_7(z\mathscr A)$ in the formal cyclic quotient.
+Every fixed $t$ coefficient uses only finitely many $z$ powers.
+For $1\le a\le5$ this gives
+\[
+ a!\mathcal C_{6,a}e^{zH}
+ \equiv\mathscr A^a+7c_av\mathscr A^{a+6}\pmod{49},
+ \quad c_a=a![X^{a+6}]\mathcal E_7(X)\in\mathbb Z_7.
+\]
+For $a=0$ it gives $1+7v\mathscr A^6/6!$.
+Every subsequent section term is divisible by49, since
+Artin--Hasse coefficients are integral.
+
+Let $T=\sum_{i\ge0}t^{7^i}$, $a_0=-1$,
+$a_i=-1-va_{i-1}^7$, and $A_0=\sum_{i\ge0}a_it^{7^i}$.
+For $U=T$ or $A_0$ put
+$C(U)=(U^7-\operatorname{Fr}(U))/7$, with
+$\operatorname{Fr}(A_0)=\sum_i a_i^7t^{7^{i+1}}$.
+These carry series are integral and supported at exponents1 modulo6.
+The implicit equations give
+\[
+ R=1+T+7R_1,\quad R_1\equiv C(T)+P(T),\quad
+ \mathscr A=A_0+7A_1,\quad A_1\equiv-R_1-vC(A_0)\pmod7,
+\]
+where $P(T)=T+3T^2+5T^3+5T^4+3T^5+T^6$.
+Also $a_r\equiv-S_r(v)$.
+For $a<b$, the coefficient of $t^N$ in $(1+T)A_0^a$ is
+exactly zero: it uses at most $a+1\le b$ powers of seven, while
+$N$ has digit sum $b+1$.
+Consequently, for $1\le a<b$, division by seven gives
+\[
+ R_a(1)=[t^N]\{R_1A_0^{a-1}(A_0-a(1+T))
+ -tA_0^a-av(1+T)A_0^{a-1}C(A_0)
+ +c_av(1+T)A_0^{a+6}\}.                                \tag{6}
+\]
+For $a=0$ the expression is
+\[
+ R_0(1)=[t^N]\{C(T)+P(T)-t+6v(1+T)A_0^6\}.             \tag{7}
+\]
+
+If $b\le5$, all carry and Artin--Hasse terms in (6) have exponents
+$a$ or $a+1$ modulo6, so cannot contribute to $N\equiv b+1$.
+Only $P(T)A_0^{a-1}(A_0-a(1+T))$ survives.
+Its selected-power degree is at most $a+6<b+7$.
+A carry lowers digit sum by six, so only degree $b+1$ contributes.
+It is therefore computed exactly by substituting
+$T=x+y$, $A_0=-x-Sy$ and extracting $[xy^b]$.
+For $b=6$, this same calculation applies for $2\le a\le5$.
+At $a=1$ the extra carry contribution is
+\[
+ -[t^N]C(T)-v[t^N]C(A_0)=-1+vS^6.
+\]
+Indeed seven selected powers give exactly one copy of1 and six
+copies of$L$, with multinomial coefficient7; after division,
+$[t^N]C(T)=1$, $[t^N]C(A_0)=a_0a_r^6=-S^6$.
+The $a=1$ Artin--Hasse correction is zero here: modulo seven,
+$A_0^7$ is supported on powers of seven, and $N=6L+1$ is not
+a sum of one or two such powers.
+
+Finally (7) gives $(b+1)[T^{b+1}]P$ for $b\le4$.
+For $b=5$ its extra term is $6v[t^N]A_0^6=vS^5$.
+For $b=6$ its extra terms are
+\[
+ [t^N]C(T)+6v[t^N]TA_0^6=1-vS^5(S-1).
+\]
+The stated table follows by these finite polynomial extractions.
+No finite depth $r$ was substituted in the derivation.
+\end{proof}
+
+\begin{lemma}[The universal saturated matrix]\label{lem:universal-matrix}
+Let $\mathscr D=v\partial_v+(S-1)\partial_S$.
+Rows $R_a$ on $1,X,\ldots,X^4$ are determined from (4) by
+\[
+\begin{split}
+ R_a(XQ)&=(6-a+\mathscr D)R_a(Q)+aR_{a-1}(Q),
+                                      \quad1\le a<b,\\
+ R_0(XQ)&=(6+\mathscr D)R_0(Q)+v\bar V_5(Q).
+\end{split}                                                   \tag{8}
+\]
+For $b=6$ the last term is zero.
+Let $\mathcal M_b(S,v)$ be the six-by-five matrix using these
+divided rows for $a<b$ and (2) for $a\ge b$, with columns
+$Q=1,X,\ldots,X^4$.
+Its specialization $S=S_r(v)$ is exactly the reduction of the
+actual matrix after the globally seven-divisible rows have each
+been divided once by seven.
+\end{lemma}
+\begin{proof}
+Before evaluation, cyclic extraction of
+$\mathcal A F=(c-\theta_z)F+zF$ gives
+$V_a(XQ)=(c-a-6v\partial_v)V_a(Q)+aV_{a-1}(Q)$ for $a\ge1$.
+For row zero the last term is $7vV_5(Q)/5!$.
+Divide the rows for $a<b$ by seven and reduce; $c\equiv6$,
+$-6\equiv1$ and $5!\equiv1$.
+The chain rule is $\mathscr D$, since $vS_r'=S_r-1$.
+All operations act on entire polynomial rows before a root is chosen.
+In particular no Euler operator is applied to a fixed nonzero fibre.
+\end{proof}
+
+\begin{lemma}[A complete finite certificate]\label{lem:finite-certificate}
+For each $b=3,4,5,6$, choose polynomials
+$q_b,W_b\in\mathbb F_7[S]$, with $q_b$ monic.
+At every rank-drop point of $\mathcal M_b(S,v)$ over any extension
+field of $\mathbb F_7$, they satisfy
+\[
+                    q_b(S)=0,\qquad v=W_b(S).            \tag{9}
+\]
+In $\mathbb F_7[S]/(q_b)$, the recursion
+$x_0=1$, $x_{j+1}=1-W_bx_j^7$ satisfies
+\[
+ x_{P_b}=1,\qquad \gcd(x_j-S,q_b)=1\quad(0\le j<P_b),      \tag{10}
+\]
+with
+\[
+\begin{array}{c|rrrr}
+ b&3&4&5&6\\\hline
+ \deg q_b&15&20&25&30\\
+ P_b&90&30&420&36
+\end{array}
+\]
+Hence the actual specialization $\mathcal M_b(S_r(v),v)$ has
+rank five at every $v\in k$, for every $r\ge1$.
+\end{lemma}
+\begin{proof}
+The finite polynomial data are retained in
+\href{gap_six_scaled_power_plus_one_certificate.json}
+{the complete coefficient certificate}.
+Its monomials are triples $(\deg_v,\deg_S,\text{coefficient})$.
+It specifies all four matrices, their six maximal minors
+$\Delta_{b,i}$, the full coefficient vectors of $q_b,W_b$,
+and explicit multiplier polynomials with the identities
+\[
+\begin{aligned}
+ q_b(S)&=\sum_{i=0}^5H_{b,i}(S,v)\Delta_{b,i}(S,v),\\
+ v-W_b(S)&=\sum_{i=0}^5K_{b,i}(S,v)\Delta_{b,i}(S,v).
+\end{aligned}                                                   \tag{11}
+\]
+There are respectively $67,114,150,219$ nonzero multiplier monomials.
+Expansion over $\mathbb F_7[S,v]$ proves both identities, giving (9).
+No Groebner basis computation or factorization is an input to the
+verifier.
+
+The same file records every state of each orbit in (10).
+Polynomial multiplication, remainder and the Euclidean algorithm
+verify every transition, every target gcd and the return to1.
+This is a finite certificate for the fixed quotient algebras,
+not a prefix of the terminal indices.
+The return to the initial state makes the sequence periodic,
+so every $x_r-S$ is a unit for arbitrary $r\ge0$.
+
+Suppose an actual rank drop existed. By (9), evaluation at its
+value of $S$ induces a homomorphism
+$\mathbb F_7[S]/(q_b)\to k$, sending $W_b$ to $v$.
+Because $S_0=1$, $S_{j+1}=1-vS_j^7$, it sends $x_r$ to
+$S_r(v)=S$. It would therefore send the unit $x_r-S$ to zero,
+an impossibility. This proves full rank over the whole residue field,
+not just at its seven prime-field elements.
+\end{proof}
+
+\begin{theorem}[Four terminal families]\label{thm:families}
+For every $b\in\{3,4,5,6\}$ and integer $r\ge0$, at terminal
+$N=b7^r+1$ the ordinary factorial moments of every nonzero complex
+$X(A+BX^6)$ at orders $N-1,N$ cannot both vanish.
+\end{theorem}
+\begin{proof}
+For $r=0$, $N=4,5,6,7$ belong to the Eisenstein terminal family
+in \href{PHYSICAL_PRIME_TOTAL_DEGREE_REDUCTION.tex}
+{Corollary \texttt{cor:pair} of the physical-prime note}.
+Let $r\ge1$ and
+$T(t)=\sum_{j=0}^N\binom Nj(N)_{6j}t^j$.
+The same note's \texttt{thm:radius} confines any multiple root
+to $u=-1/t=7v$ with $v$ a7-adic unit.
+The \href{gap_three_hurwitz_structure.tex}{critical-ideal lemma},
+\texttt{lem:critical-ideal}, identifies a multiple root with rank
+below five for the cyclic auxiliary rows $B_N,\ldots,B_{N+4}$.
+For fixed integer shape $N$ these minors are rational polynomials:
+apply the complex lemma at an algebraic multiple root and transport
+the polynomial vanishing to a7-adic embedding.
+No exponential gauge is evaluated on the boundary.
+
+The identity
+$B_{N+j}=\Pi_N(\mathcal A)
+ \prod_{\ell=N}^{N+j-1}(\mathcal A+6\ell)1$
+makes the columns a unit triangular change of the monomials
+$Q=1,X,\ldots,X^4$.
+The normalizations (1), followed by the global row divisions,
+preserve characteristic-zero rank.
+If this actual matrix lost rank, reducing a primitive kernel vector
+would give a nonzero kernel of
+$\mathcal M_b(S_r(\bar v),\bar v)$ over $k$.
+Lemma~\ref{lem:finite-certificate} excludes it.
+Thus $T$ is squarefree.
+
+For $AB\ne0$ the normalized ordinary moment polynomials of the pair
+are $T+(6/N)tT'$ and $T-(1/N)tT'$.
+Their determinant in $T,tT'$ is $-7/N\ne0$ and $T(0)=1$;
+a common zero would be a multiple root of$T$.
+Degenerate nonzero monomials have no zero positive moment.
+\end{proof}
+
+\begin{corollary}[Every nonzero leading digit]\label{cor:scaled-family}
+For every $1\le b\le6$ and $r\ge0$, ordinary gap-six Strong
+Factorial holds at terminal $N=b7^r+1$.
+\end{corollary}
+\begin{proof}
+For $r=0$, all terminals $N=2,\ldots,7$ belong to the native
+Eisenstein family, \texttt{cor:pair} of the
+\href{PHYSICAL_PRIME_TOTAL_DEGREE_REDUCTION.tex}{physical-prime note}.
+Let $r\ge1$. Theorem~\ref{thm:families} supplies $b=3,4,5,6$.
+The cases $b=1$ and $b=2$ are, respectively,
+\texttt{thm:family} of the
+\href{GAP_SIX_THIN_DIGIT_SFC.tex}{thin-digit note} and
+\texttt{thm:family} of the
+\href{GAP_SIX_TWO_POWER_PLUS_ONE_SFC.tex}{two-power-plus-one note}.
+\end{proof}
+
+\begin{corollary}[The refined degree-seven frontier]\label{cor:degree-seven-frontier}
+Let
+\[
+ \mathcal U=\{b7^s:1\le b\le6,\ s\ge0\}
+          \cup\{b7^r+1:1\le b\le6,\ r\ge0\},\qquad
+ P_j(t)=\sum_{k=0}^j\binom jk(j+1)_{6k}t^k.
+\]
+Ordinary binomial Strong Factorial through degree seven is equivalent
+to $\gcd_{\mathbb Q[t]}(P_{N-1},P_N)=1$ for every terminal
+$N\ge6$ outside $\mathcal U$.
+Every hypothetical common root on those remaining tests still has
+$v_7(-1/t)=1$ at every algebraic embedding.
+\end{corollary}
+\begin{proof}
+The exact degree-seven equivalence and the critical radius are
+\texttt{cor:degree-seven-frontier} of the
+\href{GAP_SIX_THIN_DIGIT_SFC.tex}{thin-digit note}.
+Corollary~\ref{cor:scaled-family} supplies every additional omitted
+terminal. Removing already proved tests preserves sufficiency;
+necessity follows since the remaining tests are a subset of the
+degree-seven assertion.
+\end{proof}
+The remaining terminals, all-index gap-six and degree-seven
+binomial Strong Factorial, and unrestricted FC/SFC remain open.
+No every-positive-real-Gamma-shape extension is asserted here.
+The written digit and formal-series arguments give every depth $r$.
+The exact finite certificate verifies fixed matrix identities and
+complete periodic orbits, not an unrestricted assertion from a prefix.
+Internal replay and mathematical audit do not imply independent
+whole-proof replay, formal verification, external review or priority.
+\end{document}

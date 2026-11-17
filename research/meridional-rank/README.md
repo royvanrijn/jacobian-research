@@ -4,7 +4,7 @@
 
 Knot-group representations, branched-cover bounds and explicit sharp families.
 
-**Authored assessment:** An infinite prime four-bridge family has augmentation rank3 below mr=bridge4, exact genus7+3n/crossing17+6n, and nongraph-type double covers for all but finitely many parameters. Alternating targets also give prime sharp families at every bridge number>=5 and independent simple-target sums. The16 older generic seeds attain finite complex capacity3. The121 named certificates remain retained; full MRC and worldwide priority remain open.
+**Authored assessment:** Every actual double branched cover in the infinite prime four-bridge augmentation-gap family is closed hyperbolic, via one explicitly bound marked parent and a uniform certified ordinary slope-length bound>10+19n>6. Every member has ar_C3<mr=bridge4, genus7+3n and crossing17+6n. Prime sharp alternating-target families exist at every bridge number>=5. Full MRC, whole-proof external assurance and worldwide priority remain unresolved.
 
 | Current result | Evidence / publication | Graph status | Main source |
 |---|---|---|---|
@@ -48,6 +48,7 @@ Knot-group representations, branched-cover bounds and explicit sharp families.
 | An infinite prime four-bridge family beyond augmentation and Coxeter bounds | Internal result | proved | [Source](representations/PRIME_AUGMENTATION_GAP_FAMILY.tex) |
 | Prime sharp families at every bridge number from alternating targets | Internal result | proved | [Source](representations/ALTERNATING_TARGET_PRIME_FAMILIES.tex) |
 | Cofinitely many prime augmentation-gap knots have nongraph double covers | Internal result | proved | [Source](representations/COFINITE_PRIME_FAMILY_NONGRAPH.tex) |
+| Every double cover in the prime augmentation-gap family is closed hyperbolic | Internal result | proved | [Source](representations/ALL_PARAMETER_HYPERBOLIC_DOUBLE_COVERS.tex) |
 
 **Computed obligations:** 4 unresolved; 1 resolved within their exact scope.
 
@@ -75,7 +76,12 @@ Scope limits:
 - For every n>=0 the explicit prime twist knot K_n has ar_C=3<mr=bridge4 and best finite complex rank-one class bound3. Singular Gram extension bounds all finite or infinite Coxeter reflection class quotients by3. No uniform hyperbolicity or nongraph double-cover conclusion.
 - For every b>=5,n>=2 with gcd(n,b)=1, W_b^n gives a prime knot with mr=bridge=braidindexb and exact genus/crossing formulas. The simple target A_(2b) has ordinary rank2 and double-transposition class rankb. No augmentation-gap claim for these powers.
 - All48 retained full involutory GL3(F2)/A6 quotient knots have finite G24/G27 rank-three KCH positives. Exactly the16 generic seeds have finite capacities and complex augmentation rank3; no upper bound for the other32.
-- For all but finitely many n>=0, the prime twist knot K_n has double branched cover outside graph type, including graph prime sums. One fixed rational-tangle cover has pairwise slopes distance6|n-m|, and the actual n0 nonzero representation volume plus restricted later BC2004 filling analysis gives cofinite persistence. No explicit cutoff, empty-exception claim or closed-cover hyperbolicity result.
+- The all-parameter cover theorem identifies actual Sigma2(K_n)=N(-1,2+6n) by crossing-circle and annulus/pants topology. A complete14tetrahedron parent and an embeddedarea11 cusp give ordinary lengths>10+19n>6, hence every cover is closed hyperbolic by the six-theorem and geometrization. This route is independent of old n0 representation volume and qualitative filling persistence; E is empty for this family. Exact topological/analytic software correctness and arithmetic are explicit imports.
+- The earlier cofinite proof remains retained as an independent qualitative route; it does not independently compute E. Historical frozen manuscripts state their original proof scopes. The all-parameter theorem does not establish worldwide novelty or exclude all known equality-family hypotheses.
+- The all-parameter cover theorem identifies actual Sigma2(K_n)=N(-1,2+6n) by crossing-circle and annulus/pants topology. A complete14tetrahedron parent and an embeddedarea11 cusp give ordinary lengths>10+19n>6, hence every cover is closed hyperbolic by the six-theorem and geometrization. This route is independent of old n0 representation volume and qualitative filling persistence; E is empty for this family. Exact topological/analytic software correctness and arithmetic are explicit imports.
+- The earlier cofinite proof remains retained as an independent qualitative route; it does not independently compute E. Historical frozen manuscripts state their original proof scopes. The all-parameter theorem does not establish worldwide novelty or exclude all known equality-family hypotheses.
+- The all-parameter cover theorem identifies actual Sigma2(K_n)=N(-1,2+6n) by crossing-circle and annulus/pants topology. A complete14tetrahedron parent and an embeddedarea11 cusp give ordinary lengths>10+19n>6, hence every cover is closed hyperbolic by the six-theorem and geometrization. This route is independent of old n0 representation volume and qualitative filling persistence; E is empty for this family. Exact topological/analytic software correctness and arithmetic are explicit imports.
+- The earlier cofinite proof remains retained as an independent qualitative route; it does not independently compute E. Historical frozen manuscripts state their original proof scopes. The all-parameter theorem does not establish worldwide novelty or exclude all known equality-family hypotheses.
 
 **Verification:** Current exact replays include both modes of the new generic-fold/Q(phi) package; the independent symmetric unit-16 certificate; the main finite, topology and Sage interval modes; and earlier named/generic packages. Isolated internal PDF reviews retain exact edition hashes. Original theorem/software imports, formal verification and external specialist review remain separate. [Replay record](representations/new17_generic_kch_verification.json).
 

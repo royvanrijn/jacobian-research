@@ -1,0 +1,280 @@
+\documentclass[11pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb,amsthm,hyperref}
+\newtheorem{lemma}{Lemma}
+\newtheorem{theorem}[lemma]{Theorem}
+\title{The ordinary gap-six terminal family $N=7^r+2$}
+\author{Internal research note}
+\date{18 November 2026}
+\begin{document}\maketitle
+Fix $r\ge1$, $L=7^r$, $N=L+2$, and $c=N+5$.
+Throughout $N$ denotes the terminal order.
+Let $K=\mathbb C_7$, with valuation ring $\mathcal O$ and residue field
+$k=\mathcal O/\mathfrak m$.  Put $A=c-zD_z+z$ and
+$\Pi_N(X)=\prod_{\ell=0}^{N-1}(X+6\ell)$.
+For $Q\in\mathcal O[X]$, $\deg Q\le4$, define
+\[
+ G_Q(X)=\binom{X/6+N-1}{N}Q(X),\qquad
+ d_j(Q)=\sum_{\ell=0}^j(-1)^\ell\binom j\ell G_Q(c-\ell),
+\]
+and the six boundary rows at $z^6=7v$ by
+\[
+ V_a(Q;v)=\sum_{\ell\ge0}\frac{7^\ell a!}{(a+6\ell)!}
+                   d_{a+6\ell}(Q)v^\ell,\qquad0\le a<6.       \tag{1}
+\]
+All sums are finite. The binomial polynomial is integer-valued on
+$\mathbb Z_7$, by continuity from nonnegative integers.
+Its arguments at $c-\ell$ lie in $\mathbb Z_7$.
+Consequently $d_j(Q)\in\mathcal O$ and $V_a(Q)\in\mathcal O[v]$:
+the coefficient weight in (1) has valuation
+$(s_7(a+6\ell)-a)/6\ge0$.
+The basis-column matrix belongs to $\mathbb Z_7[v]$.
+The finite formal identity
+\[
+ \frac{\Pi_N(A)Q(A)1}{6^NN!}=\sum_jd_j(Q)\frac{z^j}{j!}
+\]
+shows that simultaneous vanishing of the six rows is precisely the
+corresponding cyclic rank relation.
+
+\begin{lemma}[Uniform seeds]\label{lem:seeds}
+Put
+\[
+ S=S_r(v)=1+\sum_{i=1}^r(-1)^i v^{(7^i-1)/6}.
+\]
+The rows $V_0,V_1$ are divisible by7 on all five basis columns.
+For $R_a=\overline{V_a/7}$, $a=0,1$, the six seeds are
+\[
+ R_0(1)=1,\quad R_1(1)=5+4S,\quad
+ \bar V_2(1)=1+2S,\quad \bar V_3(1)=4S,\quad
+                         \bar V_4(1)=\bar V_5(1)=0.           \tag{2}
+\]
+\end{lemma}
+\begin{proof}
+Use the exact diagonal generating function from
+\texttt{lem:diagonal} of
+\href{GAP_SIX_TWO_POWER_PLUS_ONE_SFC.tex}
+{the second thin-family note}:
+\[
+ \sum_{n\ge0}\frac{B_{n,n,6}(z)}{6^nn!}t^n
+   =\kappa\exp(z(1-R)),\quad
+ R-R^7=t,\ R(0)=1,\quad\kappa=\frac{6R}{7R^6-1}.
+                                                               \tag{3}
+\]
+Here $B_{n,\gamma,6}=\Pi_n(\gamma+5-zD_z+z)1$ and
+$\kappa\equiv R-7t\pmod{49}$.
+
+For completeness, we spell out the coefficient extraction needed
+at this new terminal family. All following equalities are formal
+$t$-adic identities, never evaluations of an exponential at the
+boundary. Set
+\[
+ T=\sum_{i\ge0}t^{7^i},\quad
+ C(T)=\frac{T^7-\sum_{i\ge0}t^{7^{i+1}}}{7},\quad
+ P(T)=T+3T^2+5T^3+5T^4+3T^5+T^6.
+\]
+Then $R=1+T+7R_1$ and $R_1\equiv C(T)+P(T)\pmod7$.
+Define integer polynomials
+$a_0=-1$, $a_i=-1-va_{i-1}^7$, and
+$A_0=\sum_i a_it^{7^i}$.
+Thus $\bar a_r=-S_r(v)$.
+The integral Artin--Hasse series, imported as
+\texttt{lem:artin-hasse-closure} of the
+\href{ARITHMETIC_FRONTIER_TERMINAL_ORDERS.tex}
+{arithmetic note}, gives a unique integral formal series $A_*$ with
+\[
+ A_*+vA_*^7+7^6v^8A_*^{49}+\cdots=1-R,\qquad
+ \exp(z(1-R))=\mathcal E_7(zA_*)\quad(z^6=7v).
+\]
+Writing $A_*=A_0+7A_1$, one obtains
+\[
+ A_1\equiv-R_1-vC(A_0),\qquad
+ C(A_0)=\frac{A_0^7-\sum_i a_i^7t^{7^{i+1}}}{7}.
+\]
+The cyclic sections of the exponential satisfy
+\[
+ \mathcal C_{6,0}\exp\equiv1+42vA_0^6\pmod{49},\qquad
+ \mathcal C_{6,1}\exp\equiv A_*+14vA_*^7\pmod{49};
+\]
+the second uses $[X^7]\mathcal E_7=103/720\equiv2\pmod7$.
+For $0\le a<6$, reduction of $a!\mathcal C_{6,a}\exp$ is $A_0^a$.
+
+The integer $N=L+2$ has base-seven digit sum3.
+It is not a sum of at most two powers of7, so
+$[t^N](1+T)=[t^N](1+T)A_0=0$ exactly. Hence
+\[
+ \begin{split}
+ R_0(1)&=[t^N]\{R_1-t+6v(1+T)A_0^6\},\\
+ R_1(1)&=[t^N]\{R_1(A_0-1-T)-v(1+T)C(A_0)
+                           +2v(1+T)A_0^7-tA_0\}.
+ \end{split}                                                   \tag{4}
+\]
+All equations in (4) are in characteristic7.
+The carry series $C(T),C(A_0)$ are supported at exponents1 modulo6.
+Their products here have exponents1 or2 modulo6, whereas $N=3$
+modulo6. Terms with $A_0^7$ reduce to sums of at most two powers
+of7 and also vanish. The $A_0^6$ terms have exponents0 or1 modulo6.
+Thus the first line of (4) is $[t^N]5T^3=15=1$.
+Only $-5T^3+3T^2(A_0-T)$ survives in the second line.
+There is no carry in selecting three powers of7, and
+\[
+ [t^N]T^3=3,\qquad [t^N]T^2A_0=a_r+2a_0=a_r-2.
+\]
+The result is $3a_r-30=5+4S$ in characteristic7.
+
+The ordinary seed formula is
+$\bar V_a(1)=[t^N](1+T)A_0^a$.
+For $a=2$ the term $TA_0^2$ gives $1-2a_r=1+2S$;
+for $a=3$ the term $A_0^3$ gives $3a_r=4S$;
+the remaining seeds vanish by their number of selected powers.
+
+Finally the exact raising recurrence is
+\[
+ \begin{split}
+ V_0(XQ)&=(c-6v\partial_v)V_0(Q)+7vV_5(Q)/5!,\\
+ V_a(XQ)&=(c-a-6v\partial_v)V_a(Q)+aV_{a-1}(Q),\quad1\le a<6.
+ \end{split}                                                   \tag{5}
+\]
+Starting from the two divisible seeds, (5) proves global
+7-divisibility for $V_0,V_1$ on every required basis column.
+\end{proof}
+
+\begin{lemma}[A fixed universal matrix]\label{lem:matrix}
+In the column basis $1,X,\ldots,X^4$, the six reduced rows
+$R_0,R_1,\bar V_2,\ldots,\bar V_5$ form
+\[
+ M(S,v)=
+ \begin{pmatrix}
+ 1&0&0&3Sv&Sv-v\\
+ -3S-2&-1&1&-1&3Sv+1\\
+ 2S+1&3-2S&2S+3&-2S-1&2S-3\\
+ -3S&-2S-1&-2S&3S-3&2S+3\\
+ 0&2S&1&3-S&S-2\\
+ 0&0&3S&2S+2&S+3
+ \end{pmatrix}.                                                \tag{6}
+\]
+\end{lemma}
+\begin{proof}
+One has $vS_r'(v)=S_r(v)-1$ in characteristic7.
+Apply (5) to (2), using
+$\delta=v\partial_v+(S-1)\partial_S$ and $c=0$ in the residue field.
+The recurrences for the six rows are respectively
+\[
+ R_0(XQ)=\delta R_0(Q)+v\bar V_5(Q),\quad
+ R_1(XQ)=(-1+\delta)R_1(Q)+R_0(Q),
+\]
+\[
+ \bar V_2(XQ)=(-2+\delta)\bar V_2(Q),\quad
+ \bar V_a(XQ)=(-a+\delta)\bar V_a(Q)+a\bar V_{a-1}(Q)
+                                                  \quad(3\le a<6).
+\]
+These generate exactly (6).
+\end{proof}
+
+\begin{lemma}[A complete six-state obstruction]\label{lem:certificate}
+For every $r\ge1$ and every $v\in\bar{\mathbb F}_7$,
+the matrix $M(S_r(v),v)$ has rank5.
+\end{lemma}
+\begin{proof}
+Let $m_i$ be the determinant obtained from (6) by omitting row $i$,
+numbered 0 through 5. Put
+\[
+ \begin{split}
+ W(S)&=S^6+S^5+2S^4+3S^3+4S^2+5S+5,\\
+ q(S)&=S^{10}+3S^9+4S^6+6S^5+6S^4+6S^3+5S^2+2S+3.
+ \end{split}
+\]
+Exact polynomial identities in $\mathbb F_7[S,v]$ are
+\[
+ \begin{split}
+ v-W&=S m_0+(6S+4)m_1,\\
+ q&=(6S^5+5S^4+4S^3+3S^2+2S+1)m_0\\
+   &\hspace{1cm}+(S^5+5S^4+2S^3+6S^2+3S)m_1.
+ \end{split}                                                   \tag{7}
+\]
+Hence rank drop forces $q(S)=0$ and $v=W(S)$.
+
+In $\mathbb F_7[S]/(q)$ one verifies $W^8+W+1=0$.
+Consequently the recurrence $x_0=1$,
+$x_{j+1}=1-Wx_j^7$ has the complete cycle
+\[
+ 1,\quad1-W,\quad-2W,\quad-1-2W,\quad-1-W,\quad0,\quad1.          \tag{8}
+\]
+Euclid's algorithm verifies
+$\gcd(q,S-x_j)=1$ for all six states in (8).
+The literal matrix, both six-minor multiplier lists, and the complete
+six-state orbit are retained in
+\texttt{gap\_six\_power\_plus\_two\_}\allowbreak\texttt{certificate.json}.
+The accompanying checker reconstructs all 30 matrix entries from
+the seeds, computes all six maximal minors, and checks both
+membership identities (7), every state transition, and the cycle return.
+For an actual root of $q$ and $v=W(S)$, the sequence $S_r(v)$
+is precisely the specialization of this recurrence.
+It can therefore never equal $S$. This contradicts rank drop.
+The quotient need not be a field; neither its irreducibility nor
+an unproved finite-orbit bound is used.
+\end{proof}
+
+\begin{theorem}[The terminal family]\label{thm:family}
+Every nonzero ordinary univariate binomial $X(A+BX^6)$ satisfies the
+consecutive-moment coprimality test at every terminal order
+$N=7^r+2$, $r\ge1$.
+Equivalently, when $AB\ne0$, the normalized factorial-moment
+polynomials at orders $N-1,N$ have no common complex root.
+\end{theorem}
+\begin{proof}
+Degenerate monomials satisfy the assertion directly; assume $AB\ne0$.
+The standard phase normalization is then nonzero.
+Write
+$T(t)=\sum_{j=0}^N\binom Nj(N)_{6j}t^j$.
+For the ordinary functional $\mathcal L(X^j)=j!$, and
+$\theta=tD_t$, the moment polynomials after putting $t=B/A$ are
+\[
+ \begin{split}
+ \mathcal L(f^{N-1})&=A^{N-1}(N-1)!\,(T-\theta T/N),\\
+ \mathcal L(f^N)&=A^NN!\,(T+6\theta T/N).
+ \end{split}
+\]
+Indeed $\binom{N-1}{j}=(1-j/N)\binom Nj$ and
+$(N+1)_{6j}=(1+6j/N)(N)_{6j}$.
+The two displayed combinations have determinant $7/N$ relative
+to $T,\theta T$.
+A common root is thus exactly a multiple root of$T$.
+By \texttt{thm:radius} of
+\href{PHYSICAL_PRIME_TOTAL_DEGREE_REDUCTION.tex}
+{the physical prime-total-degree note},
+every hypothetical multiple root has $u=-1/t$ of valuation1.
+Thus $v=u/7$ is a unit.
+
+The necessary cyclic rank relation is
+\texttt{lem:critical-ideal} of
+\href{gap_three_hurwitz_structure.tex}
+{the adjoint-structure note}, specialized to gap6 and
+the fixed physical shape$\gamma=N$.
+Although its exponential proof is over$\mathbb C$, the cyclic
+minors here are rational polynomials. Any multiple root is
+algebraic; embed it into$\mathbb C$, apply that necessary rank
+relation, and transport the resulting rational polynomial
+identities to its chosen embedding into$\mathbb C_7$.
+No exponential is evaluated at the 7-adic boundary.
+The polynomial basis used in (1) agrees with the consecutive
+moment basis by an integral triangular change: for $0\le j\le4$,
+\[
+ B_{N+j,N,6}
+ =\Pi_N(A)\prod_{\ell=N}^{N+j-1}(A+6\ell)1 .
+\]
+The empty product is 1 and each product is monic of degree $j$.
+The five relation coefficients can therefore be normalized to a
+primitive vector in$\mathcal O^5$.
+All six rows in (1) then vanish; division of the globally divisible
+first two rows preserves their vanishing.
+Reduction would give a nonzero kernel vector of
+$M(S_r(\bar v),\bar v)$.
+The preceding lemma excludes this.
+\end{proof}
+
+The theorem is an infinite terminal family, not all-index gap-six
+SFC. The remaining ordinary gap-six orders, unrestricted binomial
+SFC, and the full factorial conjectures remain open here.
+The checker verifies polynomial identities and complete finite
+certificates; it is not formal proof verification or external review.
+\end{document}

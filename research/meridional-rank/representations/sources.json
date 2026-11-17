@@ -1,5 +1,5 @@
 {
-  "as_of": "2026-11-17",
+  "as_of": "2026-11-18",
   "coverage": "Broad primary-source map, with explicit audit depth; not a claim that every publication or knot-table entry has been exhausted.",
   "sources": [
     {
@@ -617,7 +617,7 @@
       "url": "https://doi.org/10.1007/s00039-013-0247-2",
       "snapshot": "sources/kolpakov-martelli-one-cusp-1303.6122v7.pdf",
       "version_dates": "arXiv:1303.6122v7, 23 October 2013",
-      "location": "Figure 2 and Section 1.1, printed pages 5–6",
+      "location": "Figure 2 and Section 1.1, printed pages 5\u20136",
       "audit": "Exact quotient construction read and visually checked: minimally twisted six-chain exterior double-covers the punctured octahedral orbifold, all twelve edges have index two, and its six torus cusps correspond to six four-marked sphere ends. The full four-dimensional construction is not independently audited.",
       "scope": "Actual branched-cover model for arbitrary rational fillings of the punctured 6* medial core. Rational-tangle solid-torus filling and gluing identification are proved separately in the new topology note.",
       "sha256": "ca4c8aac66f01bfc56304e820a173bcb8bc933b32d0717839d4c8c132214ef12"
@@ -629,10 +629,10 @@
       "year": 2021,
       "url": "https://doi.org/10.4310/CAG.2021.v29.n7.a5",
       "snapshot": "sources/martelli-seven-chain-1808.08430v2.pdf",
-      "version_dates": "arXiv:1808.08430v2, 25 February 2019; CAG29 (2021),1597–1641",
-      "location": "Theorem 2.7 and its proof, preprint printed pages 15–16; following discussion of the two mixed pieces",
+      "version_dates": "arXiv:1808.08430v2, 25 February 2019; CAG29 (2021),1597\u20131641",
+      "location": "Theorem 2.7 and its proof, preprint printed pages 15\u201316; following discussion of the two mixed pieces",
       "audit": "The exact complete closed nonhyperbolic M6 filling statement, graph cases and two sporadic mixed cases were read and visually checked. The theorem's exhaustive classification and computational tables are imported; no independent enumeration replay is claimed.",
-      "scope": "Closed nonhyperbolic M6 fillings are graph cases or two mixed manifolds gluing the figure-eight exterior to the orientable Klein-bottle interval bundle. Both mixed cases are separately excluded as knot double covers by the written mod-two Mayer–Vietoris argument. No full M7 classification is used.",
+      "scope": "Closed nonhyperbolic M6 fillings are graph cases or two mixed manifolds gluing the figure-eight exterior to the orientable Klein-bottle interval bundle. Both mixed cases are separately excluded as knot double covers by the written mod-two Mayer\u2013Vietoris argument. No full M7 classification is used.",
       "sha256": "b2c8436322c80419d023d58eb8978ce7de10c9f9ad78a6c96e53b0b99685ed1f"
     },
     {
@@ -643,7 +643,7 @@
       "url": "https://dornsife.usc.edu/francis-bonahon/wp-content/uploads/sites/205/2023/06/BonSieb-compressed.pdf",
       "snapshot": "sources/bonahon-siebenmann-2016.pdf",
       "version_dates": "Author monograph, version 26 January 2016",
-      "location": "Introduction printed pages vi–vii; algebraic/arborescent terminology and branched graph-manifold cover consequence; Part V supplies the general theory",
+      "location": "Introduction printed pages vi\u2013vii; algebraic/arborescent terminology and branched graph-manifold cover consequence; Part V supplies the general theory",
       "audit": "The exact algebraic/arborescent correspondence and graph-manifold double-cover fact were read at their stated locations. Full proofs and the whole monograph are not independently audited. The new proper-four-vertex graph reduction is written separately and is not inferred from the canonical-projection uniqueness theorem.",
       "scope": "Classical arborescent-cover input for closures of algebraic tangles arising from explicit local graph reductions. Supplies no all-diagram preservation of a planar polyhedral core.",
       "sha256": "c887732f91421ce8bf424f32ab4c3b52b842a5c15f8bc95c62599b8d8baa88a6"
@@ -667,6 +667,71 @@
           "path": "sources/snappy-3.3.2-init.py",
           "sha256": "ec32a0e700665926426bc3a178680463f40c5a50695776b653caa99c2c112277",
           "locator": "_link_exterior: PD/KLP exterior wrapper; underlying triangulation algorithm imported"
+        },
+        {
+          "path": "sources/all-cover-snappy332-gcd.c",
+          "sha256": "32986e20bb38f0e2d13065408e9befc2e0b3a029a4b850feeca3357f94638be6",
+          "locator": "Oriented peripheral basis, marked filling, complete verified geometry or embedded-cusp implementation; exact role in all-parameter inputs"
+        },
+        {
+          "path": "sources/all-cover-snappy332-current-curve-basis.c",
+          "sha256": "0725fec94271d6e0814633f57e94cfb7a2b08a166c9cc8b9182e4fb169670c23",
+          "locator": "Oriented peripheral basis, marked filling, complete verified geometry or embedded-cusp implementation; exact role in all-parameter inputs"
+        },
+        {
+          "path": "sources/allcover-snappy332-simplex.py",
+          "sha256": "cfc1add4f2b8eaa1172e96dc4fadbcaea452b7a8f2c5bef8fcdb710e3623b5b2",
+          "locator": "Oriented peripheral basis, marked filling, complete verified geometry or embedded-cusp implementation; exact role in all-parameter inputs"
+        },
+        {
+          "path": "sources/allcover-snappy332-exceptions.py",
+          "sha256": "9fa759c655e9ae65965e9f797f5eeccc137fb5f06d016da586b66d8dfb26a00f",
+          "locator": "Oriented peripheral basis, marked filling, complete verified geometry or embedded-cusp implementation; exact role in all-parameter inputs"
+        },
+        {
+          "path": "sources/allcover-snappy332-sage-helper.py",
+          "sha256": "a754756851652038d353ac655625188a79530e4cac75160861b4f06099a8232f",
+          "locator": "Oriented peripheral basis, marked filling, complete verified geometry or embedded-cusp implementation; exact role in all-parameter inputs"
+        },
+        {
+          "path": "sources/allcover-snappy332-wheel-RECORD.csv",
+          "sha256": "85bbc9e3cc9495d5e870cee97141849f543dc23654a205b44c616ccd712df915",
+          "locator": "Oriented peripheral basis, marked filling, complete verified geometry or embedded-cusp implementation; exact role in all-parameter inputs"
+        },
+        {
+          "path": "sources/allcover-snappy332-complex-cusp-cross-section.py",
+          "sha256": "19928f3e62e379fc6fe082dd5865920f0c61d56590647f08a056b905f76f7c4f",
+          "locator": "Oriented peripheral basis, marked filling, complete verified geometry or embedded-cusp implementation; exact role in all-parameter inputs"
+        },
+        {
+          "path": "sources/allcover-snappy332-math-basics.py",
+          "sha256": "edc224578c7df4110edca9ebc735e227ee3ed65423f94107a0c5232c346d5f8b",
+          "locator": "Oriented peripheral basis, marked filling, complete verified geometry or embedded-cusp implementation; exact role in all-parameter inputs"
+        },
+        {
+          "path": "sources/allcover-snappy332-kernel-structures.py",
+          "sha256": "1ee686f3ac99714dc480e52102e9df553d0b55089c6f1267e07377ec78f3abb1",
+          "locator": "Oriented peripheral basis, marked filling, complete verified geometry or embedded-cusp implementation; exact role in all-parameter inputs"
+        },
+        {
+          "path": "sources/allcover-snappy332-verify-shapes.py",
+          "sha256": "befaec87bff58b2095743e56c906451b01456eb97e6dda8a29ed2515b09d818f",
+          "locator": "Oriented peripheral basis, marked filling, complete verified geometry or embedded-cusp implementation; exact role in all-parameter inputs"
+        },
+        {
+          "path": "sources/allcover-snappy332-edge-equations.py",
+          "sha256": "0fe58841201479772c6bcbff903da77c7eef2057005c4762bce90c33ffb63743",
+          "locator": "Oriented peripheral basis, marked filling, complete verified geometry or embedded-cusp implementation; exact role in all-parameter inputs"
+        },
+        {
+          "path": "sources/allcover-snappy332-cusp-cross-section-base.py",
+          "sha256": "37217fb52ba0d68228fde159dfe8bac81471e71d517ee518a4026c80c95ed83e",
+          "locator": "Oriented peripheral basis, marked filling, complete verified geometry or embedded-cusp implementation; exact role in all-parameter inputs"
+        },
+        {
+          "path": "sources/allcover-snappy332-init.py",
+          "sha256": "ec32a0e700665926426bc3a178680463f40c5a50695776b653caa99c2c112277",
+          "locator": "Oriented peripheral basis, marked filling, complete verified geometry or embedded-cusp implementation; exact role in all-parameter inputs"
         }
       ],
       "source_distribution": {
@@ -675,8 +740,8 @@
         "bytes": 17098571
       },
       "location": "C opening comments and fundamental_group; Cython generators_in_originals; Python _link_exterior.",
-      "audit": "Exact official source archive digest checked and three unchanged components retained. Cell-presentation construction comments, integer-move semantics and PD exterior wrapper read. Complete C extraction and underlying diagram triangulation are trusted combinatorial imports, not independently re-established. All algebra simplifications in the eight rank-three certificates are independently checked Nielsen/Tietze moves with current unit-relator witnesses; the C simplifier correctness is not imported.",
-      "scope": "Unfilled literal-PD exteriors give combinatorial triangulations and unsimplified fundamental-group cell presentations. Actual topology-mode replay reconstructs all eight PD exteriors and compares exact face pairings/peripheral rows, named-census planar maps and original presentations. No numerical isometry, volume or hyperbolicity acceptance. These imports plus independent algebra yield ordinary rank<=3; exact ordinary rank and worldwide priority are not asserted."
+      "audit": "Exact official source archive digest checked and three unchanged components retained. Cell-presentation construction comments, integer-move semantics and PD exterior wrapper read. Complete C extraction and underlying diagram triangulation are trusted combinatorial imports, not independently re-established. All algebra simplifications in the eight rank-three certificates are independently checked Nielsen/Tietze moves with current unit-relator witnesses; the C simplifier correctness is not imported. The generic _link_exterior accepts any Link diagram, including the present two-component augmentation; this extension of application is explicit. Version-pinned cover/curve-basis and cusp-geometry components are retained for the all-parameter certificate. Both standard-form and edge-separation checks are necessary for embeddedness; all502 installed distribution files match the retained wheel RECORD. Correctness of the complete solver, topological kernel, compiler and rigorous arithmetic remain trusted imports.",
+      "scope": "Unfilled literal-PD exteriors give combinatorial triangulations and unsimplified fundamental-group cell presentations. Actual topology-mode replay reconstructs all eight PD exteriors and compares exact face pairings/peripheral rows, named-census planar maps and original presentations. No numerical isometry, volume or hyperbolicity acceptance. These imports plus independent algebra yield ordinary rank<=3; exact ordinary rank and worldwide priority are not asserted. The same generic link-PD wrapper constructs the explicit two-component augmented-link exterior in ALL_PARAMETER_HYPERBOLIC_DOUBLE_COVERS; its actual diagram is reconstructed exactly in topology mode."
     },
     {
       "id": "COR15-CORD",
@@ -874,6 +939,37 @@
         "status": "Publisher metadata checked; correction text unread; impact unresolved"
       },
       "sha256": "f3f1abe38d62665f7697f235976efc4241fdaf05fc3464e49c3296dc51443c78"
+    },
+    {
+      "id": "LACK00",
+      "title": "Word hyperbolic Dehn surgery",
+      "authors": "Marc Lackenby",
+      "year": 2000,
+      "doi": "10.1007/s002220000047",
+      "arxiv": "math/9808120v2",
+      "url": "https://arxiv.org/abs/math/9808120v2",
+      "snapshot": "sources/lackenby-word-hyperbolic-math9808120v2.pdf",
+      "publication": "Invent.Math.140(2000),243-282",
+      "version_dates": "Retained exact arXivmath/9808120v2,7September1999,49pages; author homepage confirms published2000 metadata.",
+      "location": "Theorem3.1 printedp12; ordinary cusp-length setup pp1-2; proof pp17-19",
+      "audit": "Root and a separate internal source-audit agent read the exact theorem, cusp-length hypotheses and actual proof pages; root visually checked printedpp12,17-19. Complete upstream lemmas and Gabai/Thurston results remain imported; no full reproof audit.",
+      "scope": "On any embedded horoball cusp neighborhood of a complete finite-volume orientable hyperbolic interior, filling each selected slope of ordinary Euclidean length>6 yields an irreducible atoroidal non-Seifert manifold with infinite word-hyperbolic fundamental group. No maximal cusp or normalized-length hypothesis. Geometrization supplies closed hyperbolicity in the present application.",
+      "sha256": "4bfae0b3c00f2f3cce0caad57b04bed305b527e5b5276a97acc15e73e3dd07f4"
+    },
+    {
+      "id": "AGOL00",
+      "title": "Bounds on exceptional Dehn filling",
+      "authors": "Ian Agol",
+      "year": 2000,
+      "doi": "10.2140/gt.2000.4.431",
+      "url": "https://msp.org/gt/2000/4-1/gt-v4-n1-p15-p.pdf",
+      "snapshot": "sources/agol-bounds-exceptional-2000.pdf",
+      "publication": "Geometry&Topology4(2000),431-449",
+      "version_dates": "Published14November2000,19pages",
+      "location": "Definition of hyperbolike printedp432; cusp conventions pp432-433; Theorem6.2 printedp440/PDFp10",
+      "audit": "Exact primary definition and theorem read independently by root and source-audit agent; root visually checked theorem page. Full proof is imported. This published edition includes word-hyperbolicity and supersedes the historical qualification in Lackenby1999v2.",
+      "scope": "Independent six-theorem: a filling slope of ordinary length>6 on an embedded horocusp of a finite-volume hyperbolic manifold gives a hyperbolike filling. Attribution/background in the all-parameter proof; main adopted conclusion uses Lackenby Theorem3.1 plus geometrization.",
+      "sha256": "095e93ec443037cdc71252fe78dcd8918b6ac7785a65b327414d477cd8aa8482"
     }
   ],
   "unresolved_scope_extractions": [

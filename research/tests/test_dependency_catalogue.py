@@ -350,12 +350,15 @@ class RetainedDependencyTests(unittest.TestCase):
                            "MRC-NEW17-COR-TREFOILS"):
             self.assertEqual(scenario["nodes"][conclusion]["state"], "proved")
 
-    def test_new17_graph_volume_vanishing_is_only_a_classification_premise(self):
+    def test_new17_graph_volume_vanishing_has_an_independent_all_parameter_route(self):
         scenario = self.graph.simulate({"EXT-LTY-GRAPH-REPRESENTATION-VOLUME": "stale"})
-        self.assertEqual(scenario["nodes"]["MRC-NEW17-THM-NONGRAPH"]["state"], "stale")
-        for conclusion in ("MRC-NEW17-CLOSED-REPRESENTATION-VOLUME", "MRC-NEW17-THM-HYPERBOLIC",
+        for conclusion in ("MRC-NEW17-THM-NONGRAPH", "MRC-ALL-COVERS-THM-ALLCOVERS",
+                           "MRC-NEW17-CLOSED-REPRESENTATION-VOLUME", "MRC-NEW17-THM-HYPERBOLIC",
                            "MRC-NEW17-THM-SHARP", "MRC-NEW17-REFLECTION-COR-COXETER"):
             self.assertEqual(scenario["nodes"][conclusion]["state"], "proved")
+        both = self.graph.simulate({"EXT-LTY-GRAPH-REPRESENTATION-VOLUME": "stale",
+                                    "MRC-ALL-COVERS-ALL-NONGRAPH": "stale"})
+        self.assertEqual(both["nodes"]["MRC-NEW17-THM-NONGRAPH"]["state"], "stale")
 
     def test_new17_yamada_only_supplies_the_crossing_minimality_route(self):
         scenario = self.graph.simulate({"EXT-YAMADA-SEIFERT-BRAID": "stale"})
@@ -588,22 +591,31 @@ class RetainedDependencyTests(unittest.TestCase):
         for conclusion in ("MRC-ALT-PRIME-THM-TARGETS", "MRC-ALT-PRIME-LEM-CLOSURE"):
             self.assertEqual(scenario["nodes"][conclusion]["state"], "stale")
 
-    def test_cofinite_topology_requires_filling_persistence_but_not_rank_conversion(self):
+    def test_cofinite_topology_has_an_independent_all_parameter_route(self):
         scenario = self.graph.simulate({"EXT-BC-ONE-BOUNDARY-NONGRAPH-FILLING": "stale"})
-        for conclusion in ("MRC-COFINITE-LEM-PERSISTENCE", "MRC-COFINITE-THM-ONEFILLING",
-                           "MRC-COFINITE-THM-COFINITE"):
+        for conclusion in ("MRC-COFINITE-LEM-PERSISTENCE", "MRC-COFINITE-THM-ONEFILLING"):
             self.assertEqual(scenario["nodes"][conclusion]["state"], "stale")
-        for conclusion in ("MRC-COFINITE-LEM-TANGLE", "MRC-COFINITE-SPHERE-VOLUME-ADDITIVITY",
-                           "MRC-COFINITE-LEM-SUMVOLUME", "MRC-PRIME-GAP-THM-MAIN"):
+        for conclusion in ("MRC-COFINITE-THM-COFINITE", "MRC-COFINITE-LEM-TANGLE",
+                           "MRC-COFINITE-SPHERE-VOLUME-ADDITIVITY", "MRC-COFINITE-LEM-SUMVOLUME",
+                           "MRC-PRIME-GAP-THM-MAIN", "MRC-ALL-COVERS-THM-ALLCOVERS"):
             self.assertEqual(scenario["nodes"][conclusion]["state"], "proved")
+        both = self.graph.simulate({"EXT-BC-ONE-BOUNDARY-NONGRAPH-FILLING": "stale",
+                                    "MRC-ALL-COVERS-ALL-NONGRAPH": "stale"})
+        self.assertEqual(both["nodes"]["MRC-COFINITE-THM-COFINITE"]["state"], "stale")
 
-    def test_cofinite_initial_volume_is_not_a_general_topology_lemma_premise(self):
+    def test_cofinite_initial_volume_is_not_a_general_or_all_parameter_topology_premise(self):
         scenario = self.graph.simulate({"MRC-NEW17-CLOSED-REPRESENTATION-VOLUME": "stale"})
-        for conclusion in ("MRC-COFINITE-LEM-SUMVOLUME", "MRC-COFINITE-THM-COFINITE"):
+        for conclusion in ("MRC-NEW17-CLOSED-REPRESENTATION-VOLUME", "MRC-COFINITE-LEM-SUMVOLUME"):
             self.assertEqual(scenario["nodes"][conclusion]["state"], "stale")
-        for conclusion in ("MRC-COFINITE-LEM-PERSISTENCE", "MRC-COFINITE-THM-ONEFILLING",
-                           "MRC-COFINITE-GRAPH-TYPE-VOLUME-ZERO", "MRC-PRIME-GAP-THM-MAIN"):
+        for conclusion in ("MRC-NEW17-THM-NONGRAPH", "MRC-COFINITE-THM-COFINITE",
+                           "MRC-COFINITE-LEM-PERSISTENCE", "MRC-COFINITE-THM-ONEFILLING",
+                           "MRC-COFINITE-GRAPH-TYPE-VOLUME-ZERO", "MRC-PRIME-GAP-THM-MAIN",
+                           "MRC-ALL-COVERS-THM-ALLCOVERS"):
             self.assertEqual(scenario["nodes"][conclusion]["state"], "proved")
+        both = self.graph.simulate({"MRC-NEW17-CLOSED-REPRESENTATION-VOLUME": "stale",
+                                    "MRC-ALL-COVERS-ALL-NONGRAPH": "stale"})
+        for conclusion in ("MRC-NEW17-THM-NONGRAPH", "MRC-COFINITE-THM-COFINITE"):
+            self.assertEqual(both["nodes"][conclusion]["state"], "stale")
 
     def test_cofinite_topology_is_separate_from_augmentation_gap_consequences(self):
         scenario = self.graph.simulate({"EXT-CORNWELL-KCH-AUGMENTATION-CORRESPONDENCE": "stale"})
@@ -618,12 +630,116 @@ class RetainedDependencyTests(unittest.TestCase):
                            "MRC-COFINITE-THM-COFINITE", "MRC-COFINITE-PRIME-GAP-KNOTS"):
             self.assertEqual(scenario["nodes"][conclusion]["state"], "proved")
 
-    def test_fixed_rational_tangle_binding_is_essential_only_for_family_application(self):
+    def test_fixed_rational_tangle_binding_has_an_independent_all_parameter_route(self):
         scenario = self.graph.simulate({"EXT-MZ-RATIONAL-TANGLE-FILLINGS": "stale"})
-        for conclusion in ("MRC-COFINITE-LEM-TANGLE", "MRC-COFINITE-THM-COFINITE"):
+        self.assertEqual(scenario["nodes"]["MRC-COFINITE-LEM-TANGLE"]["state"], "stale")
+        for conclusion in ("MRC-COFINITE-THM-COFINITE", "MRC-COFINITE-LEM-SUMVOLUME",
+                           "MRC-COFINITE-THM-ONEFILLING", "MRC-PRIME-GAP-THM-MAIN",
+                           "MRC-ALL-COVERS-THM-BINDING", "MRC-ALL-COVERS-THM-ALLCOVERS"):
+            self.assertEqual(scenario["nodes"][conclusion]["state"], "proved")
+        both = self.graph.simulate({"EXT-MZ-RATIONAL-TANGLE-FILLINGS": "stale",
+                                    "MRC-ALL-COVERS-ALL-NONGRAPH": "stale"})
+        self.assertEqual(both["nodes"]["MRC-COFINITE-THM-COFINITE"]["state"], "stale")
+
+    def test_all_parameter_binding_is_separate_from_fixed_parent_geometry(self):
+        for premise in ("MRC-ALL-COVERS-THM-BINDING", "SRC-MRC-ALL-COVERS-TOPOLOGY-CERTIFICATES",
+                        "EXT-SNAPPY332-ORIENTED-CURVE-BASIS", "EXT-SNAPPY332-MARKED-PERMANENT-FILL"):
+            with self.subTest(premise=premise):
+                scenario = self.graph.simulate({premise: "stale"})
+                for conclusion in ("MRC-ALL-COVERS-THM-BINDING", "MRC-ALL-COVERS-THM-ALLCOVERS",
+                                   "MRC-ALL-COVERS-ALL-NONGRAPH", "MRC-ALL-COVERS-COR-FAMILY",
+                                   "MRC-ALL-COVERS-GAP-SUMS"):
+                    self.assertEqual(scenario["nodes"][conclusion]["state"], "stale")
+                for conclusion in ("MRC-ALL-COVERS-COMPLETE-PARENT", "MRC-ALL-COVERS-EMBEDDED-CUSP-LENGTH",
+                                   "MRC-ALL-COVERS-LEM-GEOMETRY", "MRC-NEW17-THM-NONGRAPH",
+                                   "MRC-COFINITE-THM-COFINITE", "MRC-PRIME-GAP-SHARP"):
+                    self.assertEqual(scenario["nodes"][conclusion]["state"], "proved")
+
+    def test_all_parameter_six_theorem_is_not_a_rank_or_fixed_geometry_premise(self):
+        scenario = self.graph.simulate({"EXT-LACKENBY-SIX-THEOREM": "stale"})
+        for conclusion in ("MRC-ALL-COVERS-THM-ALLCOVERS", "MRC-ALL-COVERS-ALL-NONGRAPH",
+                           "MRC-ALL-COVERS-COR-FAMILY", "MRC-ALL-COVERS-GAP-SUMS"):
             self.assertEqual(scenario["nodes"][conclusion]["state"], "stale")
-        for conclusion in ("MRC-COFINITE-LEM-SUMVOLUME", "MRC-COFINITE-THM-ONEFILLING",
-                           "MRC-PRIME-GAP-THM-MAIN"):
+        for conclusion in ("MRC-ALL-COVERS-THM-BINDING", "MRC-ALL-COVERS-COMPLETE-PARENT",
+                           "MRC-ALL-COVERS-EMBEDDED-CUSP-LENGTH", "MRC-ALL-COVERS-LEM-GEOMETRY",
+                           "MRC-PRIME-GAP-SHARP", "MRC-PRIME-GAP-AUGMENTATION",
+                           "MRC-NEW17-CLOSED-REPRESENTATION-VOLUME", "MRC-NEW17-THM-NONGRAPH",
+                           "MRC-COFINITE-THM-COFINITE"):
+            self.assertEqual(scenario["nodes"][conclusion]["state"], "proved")
+
+    def test_all_parameter_cusp_import_is_separate_from_complete_shapes_and_ranks(self):
+        scenario = self.graph.simulate({"EXT-SNAPPY332-EMBEDDED-CUSP": "stale"})
+        for conclusion in ("MRC-ALL-COVERS-EMBEDDED-CUSP-LENGTH", "MRC-ALL-COVERS-LEM-GEOMETRY",
+                           "MRC-ALL-COVERS-THM-ALLCOVERS", "MRC-ALL-COVERS-COR-FAMILY",
+                           "MRC-ALL-COVERS-GAP-SUMS"):
+            self.assertEqual(scenario["nodes"][conclusion]["state"], "stale")
+        for conclusion in ("MRC-ALL-COVERS-THM-BINDING", "MRC-ALL-COVERS-COMPLETE-PARENT",
+                           "MRC-PRIME-GAP-SHARP", "MRC-PRIME-GAP-AUGMENTATION",
+                           "MRC-NEW17-THM-NONGRAPH", "MRC-COFINITE-THM-COFINITE"):
+            self.assertEqual(scenario["nodes"][conclusion]["state"], "proved")
+
+    def test_all_parameter_new_analytic_imports_preserve_the_old_qualitative_route(self):
+        for premise in ("EXT-SNAPPY332-VERIFIED-COMPLETE", "SRC-MRC-ALL-COVERS-GEOMETRY-CERTIFICATES"):
+            with self.subTest(premise=premise):
+                scenario = self.graph.simulate({premise: "stale"})
+                for conclusion in ("MRC-ALL-COVERS-COMPLETE-PARENT", "MRC-ALL-COVERS-EMBEDDED-CUSP-LENGTH",
+                                   "MRC-ALL-COVERS-LEM-GEOMETRY", "MRC-ALL-COVERS-THM-ALLCOVERS",
+                                   "MRC-ALL-COVERS-ALL-NONGRAPH"):
+                    self.assertEqual(scenario["nodes"][conclusion]["state"], "stale")
+                for conclusion in ("MRC-ALL-COVERS-THM-BINDING", "MRC-NEW17-CLOSED-REPRESENTATION-VOLUME",
+                                   "MRC-NEW17-THM-NONGRAPH", "MRC-COFINITE-LEM-PERSISTENCE",
+                                   "MRC-COFINITE-THM-ONEFILLING", "MRC-COFINITE-THM-COFINITE"):
+                    self.assertEqual(scenario["nodes"][conclusion]["state"], "proved")
+
+    def test_all_parameter_theorem_does_not_use_old_seed_volume_or_qualitative_fillings(self):
+        scenario = self.graph.simulate({"MRC-NEW17-CLOSED-REPRESENTATION-VOLUME": "stale",
+                                       "EXT-BC-ONE-BOUNDARY-NONGRAPH-FILLING": "stale",
+                                       "EXT-MZ-RATIONAL-TANGLE-FILLINGS": "stale"})
+        for conclusion in ("MRC-ALL-COVERS-THM-BINDING", "MRC-ALL-COVERS-LEM-GEOMETRY",
+                           "MRC-ALL-COVERS-THM-ALLCOVERS", "MRC-ALL-COVERS-ALL-NONGRAPH",
+                           "MRC-ALL-COVERS-COR-FAMILY", "MRC-ALL-COVERS-GAP-SUMS",
+                           "MRC-NEW17-THM-NONGRAPH", "MRC-COFINITE-THM-COFINITE"):
+            self.assertEqual(scenario["nodes"][conclusion]["state"], "proved")
+        for conclusion in ("MRC-NEW17-CLOSED-REPRESENTATION-VOLUME", "MRC-COFINITE-LEM-SUMVOLUME",
+                           "MRC-COFINITE-LEM-PERSISTENCE", "MRC-COFINITE-THM-ONEFILLING",
+                           "MRC-COFINITE-LEM-TANGLE"):
+            self.assertEqual(scenario["nodes"][conclusion]["state"], "stale")
+
+    def test_all_parameter_augmentation_import_affects_gap_consequences_not_cover_topology(self):
+        scenario = self.graph.simulate({"EXT-CORNWELL-KCH-AUGMENTATION-CORRESPONDENCE": "stale"})
+        for conclusion in ("MRC-ALL-COVERS-COR-FAMILY", "MRC-ALL-COVERS-GAP-SUMS"):
+            self.assertEqual(scenario["nodes"][conclusion]["state"], "stale")
+        for conclusion in ("MRC-ALL-COVERS-THM-BINDING", "MRC-ALL-COVERS-LEM-GEOMETRY",
+                           "MRC-ALL-COVERS-THM-ALLCOVERS", "MRC-ALL-COVERS-ALL-NONGRAPH",
+                           "MRC-ALL-COVERS-TREFOIL-TOPOLOGY", "MRC-PRIME-GAP-SHARP",
+                           "MRC-NEW17-THM-NONGRAPH", "MRC-COFINITE-THM-COFINITE"):
+            self.assertEqual(scenario["nodes"][conclusion]["state"], "proved")
+
+    def test_all_parameter_shared_krawczyk_and_cover_imports_are_real_premises(self):
+        for premise in ("EXT-NEW17-KRAWCZYK-INTERVAL", "EXT-NEW17-COVER-PERIPHERAL"):
+            with self.subTest(premise=premise):
+                scenario = self.graph.simulate({premise: "stale"})
+                for conclusion in ("MRC-ALL-COVERS-THM-ALLCOVERS", "MRC-ALL-COVERS-ALL-NONGRAPH",
+                                   "MRC-ALL-COVERS-COR-FAMILY", "MRC-ALL-COVERS-GAP-SUMS",
+                                   "MRC-NEW17-THM-NONGRAPH"):
+                    self.assertEqual(scenario["nodes"][conclusion]["state"], "stale")
+                for conclusion in ("MRC-PRIME-GAP-SHARP", "MRC-PRIME-GAP-AUGMENTATION"):
+                    self.assertEqual(scenario["nodes"][conclusion]["state"], "proved")
+                if premise == "EXT-NEW17-KRAWCZYK-INTERVAL":
+                    self.assertEqual(scenario["nodes"]["MRC-ALL-COVERS-THM-BINDING"]["state"], "proved")
+                    self.assertEqual(scenario["nodes"]["MRC-ALL-COVERS-COMPLETE-PARENT"]["state"], "stale")
+                else:
+                    self.assertEqual(scenario["nodes"]["MRC-ALL-COVERS-THM-BINDING"]["state"], "stale")
+                    self.assertEqual(scenario["nodes"]["MRC-ALL-COVERS-LEM-GEOMETRY"]["state"], "proved")
+
+    def test_all_parameter_revocation_preserves_old_volume_and_general_filling_proofs(self):
+        scenario = self.graph.simulate({"MRC-ALL-COVERS-THM-ALLCOVERS": "stale"})
+        for conclusion in ("MRC-ALL-COVERS-ALL-NONGRAPH", "MRC-ALL-COVERS-COR-FAMILY",
+                           "MRC-ALL-COVERS-GAP-SUMS"):
+            self.assertEqual(scenario["nodes"][conclusion]["state"], "stale")
+        for conclusion in ("MRC-NEW17-CLOSED-REPRESENTATION-VOLUME", "MRC-NEW17-THM-NONGRAPH",
+                           "MRC-COFINITE-LEM-SUMVOLUME", "MRC-COFINITE-LEM-PERSISTENCE",
+                           "MRC-COFINITE-THM-ONEFILLING", "MRC-COFINITE-THM-COFINITE"):
             self.assertEqual(scenario["nodes"][conclusion]["state"], "proved")
 
     def test_real_multistep_progress_stays_hypothetical_and_preserves_assurance(self):

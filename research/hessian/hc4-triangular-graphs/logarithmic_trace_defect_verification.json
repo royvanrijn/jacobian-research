@@ -1,0 +1,2606 @@
+{
+  "claim": "Logarithmic trace-defect spectrum and non-dense derivative domains",
+  "outcome": "PASS",
+  "check_count": 642,
+  "checks": [
+    {
+      "name": "actual logarithmic Laurent eigenmode e2i1",
+      "passed": true
+    },
+    {
+      "name": "exact codifferent derivative pole e2i1",
+      "passed": true
+    },
+    {
+      "name": "branch factor restores original codifferent e2i1",
+      "passed": true
+    },
+    {
+      "name": "B-linearity correction regular e2i1d0",
+      "passed": true
+    },
+    {
+      "name": "B-linearity correction regular e2i1d1",
+      "passed": true
+    },
+    {
+      "name": "B-linearity correction regular e2i1d3",
+      "passed": true
+    },
+    {
+      "name": "ordinary square integrable pole e2i1",
+      "passed": true
+    },
+    {
+      "name": "derivative radial exponent diverges e2i1",
+      "passed": true
+    },
+    {
+      "name": "canonical forbidden derivative exponent e2i1",
+      "passed": true
+    },
+    {
+      "name": "logarithmic residue trace half rank e2",
+      "passed": true
+    },
+    {
+      "name": "logarithmic residue determinant e2",
+      "passed": true
+    },
+    {
+      "name": "second spectral moment e2",
+      "passed": true
+    },
+    {
+      "name": "fixed-factor logarithmic spectrum distinct e2",
+      "passed": true
+    },
+    {
+      "name": "actual logarithmic Laurent eigenmode e3i1",
+      "passed": true
+    },
+    {
+      "name": "exact codifferent derivative pole e3i1",
+      "passed": true
+    },
+    {
+      "name": "branch factor restores original codifferent e3i1",
+      "passed": true
+    },
+    {
+      "name": "B-linearity correction regular e3i1d0",
+      "passed": true
+    },
+    {
+      "name": "B-linearity correction regular e3i1d1",
+      "passed": true
+    },
+    {
+      "name": "B-linearity correction regular e3i1d3",
+      "passed": true
+    },
+    {
+      "name": "ordinary square integrable pole e3i1",
+      "passed": true
+    },
+    {
+      "name": "derivative radial exponent diverges e3i1",
+      "passed": true
+    },
+    {
+      "name": "canonical forbidden derivative exponent e3i1",
+      "passed": true
+    },
+    {
+      "name": "actual logarithmic Laurent eigenmode e3i2",
+      "passed": true
+    },
+    {
+      "name": "exact codifferent derivative pole e3i2",
+      "passed": true
+    },
+    {
+      "name": "branch factor restores original codifferent e3i2",
+      "passed": true
+    },
+    {
+      "name": "B-linearity correction regular e3i2d0",
+      "passed": true
+    },
+    {
+      "name": "B-linearity correction regular e3i2d1",
+      "passed": true
+    },
+    {
+      "name": "B-linearity correction regular e3i2d3",
+      "passed": true
+    },
+    {
+      "name": "ordinary square integrable pole e3i2",
+      "passed": true
+    },
+    {
+      "name": "derivative radial exponent diverges e3i2",
+      "passed": true
+    },
+    {
+      "name": "canonical forbidden derivative exponent e3i2",
+      "passed": true
+    },
+    {
+      "name": "logarithmic residue trace half rank e3",
+      "passed": true
+    },
+    {
+      "name": "logarithmic residue determinant e3",
+      "passed": true
+    },
+    {
+      "name": "second spectral moment e3",
+      "passed": true
+    },
+    {
+      "name": "fixed-factor logarithmic spectrum distinct e3",
+      "passed": true
+    },
+    {
+      "name": "actual logarithmic Laurent eigenmode e4i1",
+      "passed": true
+    },
+    {
+      "name": "exact codifferent derivative pole e4i1",
+      "passed": true
+    },
+    {
+      "name": "branch factor restores original codifferent e4i1",
+      "passed": true
+    },
+    {
+      "name": "B-linearity correction regular e4i1d0",
+      "passed": true
+    },
+    {
+      "name": "B-linearity correction regular e4i1d1",
+      "passed": true
+    },
+    {
+      "name": "B-linearity correction regular e4i1d3",
+      "passed": true
+    },
+    {
+      "name": "ordinary square integrable pole e4i1",
+      "passed": true
+    },
+    {
+      "name": "derivative radial exponent diverges e4i1",
+      "passed": true
+    },
+    {
+      "name": "canonical forbidden derivative exponent e4i1",
+      "passed": true
+    },
+    {
+      "name": "actual logarithmic Laurent eigenmode e4i2",
+      "passed": true
+    },
+    {
+      "name": "exact codifferent derivative pole e4i2",
+      "passed": true
+    },
+    {
+      "name": "branch factor restores original codifferent e4i2",
+      "passed": true
+    },
+    {
+      "name": "B-linearity correction regular e4i2d0",
+      "passed": true
+    },
+    {
+      "name": "B-linearity correction regular e4i2d1",
+      "passed": true
+    },
+    {
+      "name": "B-linearity correction regular e4i2d3",
+      "passed": true
+    },
+    {
+      "name": "ordinary square integrable pole e4i2",
+      "passed": true
+    },
+    {
+      "name": "derivative radial exponent diverges e4i2",
+      "passed": true
+    },
+    {
+      "name": "canonical forbidden derivative exponent e4i2",
+      "passed": true
+    },
+    {
+      "name": "actual logarithmic Laurent eigenmode e4i3",
+      "passed": true
+    },
+    {
+      "name": "exact codifferent derivative pole e4i3",
+      "passed": true
+    },
+    {
+      "name": "branch factor restores original codifferent e4i3",
+      "passed": true
+    },
+    {
+      "name": "B-linearity correction regular e4i3d0",
+      "passed": true
+    },
+    {
+      "name": "B-linearity correction regular e4i3d1",
+      "passed": true
+    },
+    {
+      "name": "B-linearity correction regular e4i3d3",
+      "passed": true
+    },
+    {
+      "name": "ordinary square integrable pole e4i3",
+      "passed": true
+    },
+    {
+      "name": "derivative radial exponent diverges e4i3",
+      "passed": true
+    },
+    {
+      "name": "canonical forbidden derivative exponent e4i3",
+      "passed": true
+    },
+    {
+      "name": "logarithmic residue trace half rank e4",
+      "passed": true
+    },
+    {
+      "name": "logarithmic residue determinant e4",
+      "passed": true
+    },
+    {
+      "name": "second spectral moment e4",
+      "passed": true
+    },
+    {
+      "name": "fixed-factor logarithmic spectrum distinct e4",
+      "passed": true
+    },
+    {
+      "name": "actual logarithmic Laurent eigenmode e5i1",
+      "passed": true
+    },
+    {
+      "name": "exact codifferent derivative pole e5i1",
+      "passed": true
+    },
+    {
+      "name": "branch factor restores original codifferent e5i1",
+      "passed": true
+    },
+    {
+      "name": "B-linearity correction regular e5i1d0",
+      "passed": true
+    },
+    {
+      "name": "B-linearity correction regular e5i1d1",
+      "passed": true
+    },
+    {
+      "name": "B-linearity correction regular e5i1d3",
+      "passed": true
+    },
+    {
+      "name": "ordinary square integrable pole e5i1",
+      "passed": true
+    },
+    {
+      "name": "derivative radial exponent diverges e5i1",
+      "passed": true
+    },
+    {
+      "name": "canonical forbidden derivative exponent e5i1",
+      "passed": true
+    },
+    {
+      "name": "actual logarithmic Laurent eigenmode e5i2",
+      "passed": true
+    },
+    {
+      "name": "exact codifferent derivative pole e5i2",
+      "passed": true
+    },
+    {
+      "name": "branch factor restores original codifferent e5i2",
+      "passed": true
+    },
+    {
+      "name": "B-linearity correction regular e5i2d0",
+      "passed": true
+    },
+    {
+      "name": "B-linearity correction regular e5i2d1",
+      "passed": true
+    },
+    {
+      "name": "B-linearity correction regular e5i2d3",
+      "passed": true
+    },
+    {
+      "name": "ordinary square integrable pole e5i2",
+      "passed": true
+    },
+    {
+      "name": "derivative radial exponent diverges e5i2",
+      "passed": true
+    },
+    {
+      "name": "canonical forbidden derivative exponent e5i2",
+      "passed": true
+    },
+    {
+      "name": "actual logarithmic Laurent eigenmode e5i3",
+      "passed": true
+    },
+    {
+      "name": "exact codifferent derivative pole e5i3",
+      "passed": true
+    },
+    {
+      "name": "branch factor restores original codifferent e5i3",
+      "passed": true
+    },
+    {
+      "name": "B-linearity correction regular e5i3d0",
+      "passed": true
+    },
+    {
+      "name": "B-linearity correction regular e5i3d1",
+      "passed": true
+    },
+    {
+      "name": "B-linearity correction regular e5i3d3",
+      "passed": true
+    },
+    {
+      "name": "ordinary square integrable pole e5i3",
+      "passed": true
+    },
+    {
+      "name": "derivative radial exponent diverges e5i3",
+      "passed": true
+    },
+    {
+      "name": "canonical forbidden derivative exponent e5i3",
+      "passed": true
+    },
+    {
+      "name": "actual logarithmic Laurent eigenmode e5i4",
+      "passed": true
+    },
+    {
+      "name": "exact codifferent derivative pole e5i4",
+      "passed": true
+    },
+    {
+      "name": "branch factor restores original codifferent e5i4",
+      "passed": true
+    },
+    {
+      "name": "B-linearity correction regular e5i4d0",
+      "passed": true
+    },
+    {
+      "name": "B-linearity correction regular e5i4d1",
+      "passed": true
+    },
+    {
+      "name": "B-linearity correction regular e5i4d3",
+      "passed": true
+    },
+    {
+      "name": "ordinary square integrable pole e5i4",
+      "passed": true
+    },
+    {
+      "name": "derivative radial exponent diverges e5i4",
+      "passed": true
+    },
+    {
+      "name": "canonical forbidden derivative exponent e5i4",
+      "passed": true
+    },
+    {
+      "name": "logarithmic residue trace half rank e5",
+      "passed": true
+    },
+    {
+      "name": "logarithmic residue determinant e5",
+      "passed": true
+    },
+    {
+      "name": "second spectral moment e5",
+      "passed": true
+    },
+    {
+      "name": "fixed-factor logarithmic spectrum distinct e5",
+      "passed": true
+    },
+    {
+      "name": "actual logarithmic Laurent eigenmode e6i1",
+      "passed": true
+    },
+    {
+      "name": "exact codifferent derivative pole e6i1",
+      "passed": true
+    },
+    {
+      "name": "branch factor restores original codifferent e6i1",
+      "passed": true
+    },
+    {
+      "name": "B-linearity correction regular e6i1d0",
+      "passed": true
+    },
+    {
+      "name": "B-linearity correction regular e6i1d1",
+      "passed": true
+    },
+    {
+      "name": "B-linearity correction regular e6i1d3",
+      "passed": true
+    },
+    {
+      "name": "ordinary square integrable pole e6i1",
+      "passed": true
+    },
+    {
+      "name": "derivative radial exponent diverges e6i1",
+      "passed": true
+    },
+    {
+      "name": "canonical forbidden derivative exponent e6i1",
+      "passed": true
+    },
+    {
+      "name": "actual logarithmic Laurent eigenmode e6i2",
+      "passed": true
+    },
+    {
+      "name": "exact codifferent derivative pole e6i2",
+      "passed": true
+    },
+    {
+      "name": "branch factor restores original codifferent e6i2",
+      "passed": true
+    },
+    {
+      "name": "B-linearity correction regular e6i2d0",
+      "passed": true
+    },
+    {
+      "name": "B-linearity correction regular e6i2d1",
+      "passed": true
+    },
+    {
+      "name": "B-linearity correction regular e6i2d3",
+      "passed": true
+    },
+    {
+      "name": "ordinary square integrable pole e6i2",
+      "passed": true
+    },
+    {
+      "name": "derivative radial exponent diverges e6i2",
+      "passed": true
+    },
+    {
+      "name": "canonical forbidden derivative exponent e6i2",
+      "passed": true
+    },
+    {
+      "name": "actual logarithmic Laurent eigenmode e6i3",
+      "passed": true
+    },
+    {
+      "name": "exact codifferent derivative pole e6i3",
+      "passed": true
+    },
+    {
+      "name": "branch factor restores original codifferent e6i3",
+      "passed": true
+    },
+    {
+      "name": "B-linearity correction regular e6i3d0",
+      "passed": true
+    },
+    {
+      "name": "B-linearity correction regular e6i3d1",
+      "passed": true
+    },
+    {
+      "name": "B-linearity correction regular e6i3d3",
+      "passed": true
+    },
+    {
+      "name": "ordinary square integrable pole e6i3",
+      "passed": true
+    },
+    {
+      "name": "derivative radial exponent diverges e6i3",
+      "passed": true
+    },
+    {
+      "name": "canonical forbidden derivative exponent e6i3",
+      "passed": true
+    },
+    {
+      "name": "actual logarithmic Laurent eigenmode e6i4",
+      "passed": true
+    },
+    {
+      "name": "exact codifferent derivative pole e6i4",
+      "passed": true
+    },
+    {
+      "name": "branch factor restores original codifferent e6i4",
+      "passed": true
+    },
+    {
+      "name": "B-linearity correction regular e6i4d0",
+      "passed": true
+    },
+    {
+      "name": "B-linearity correction regular e6i4d1",
+      "passed": true
+    },
+    {
+      "name": "B-linearity correction regular e6i4d3",
+      "passed": true
+    },
+    {
+      "name": "ordinary square integrable pole e6i4",
+      "passed": true
+    },
+    {
+      "name": "derivative radial exponent diverges e6i4",
+      "passed": true
+    },
+    {
+      "name": "canonical forbidden derivative exponent e6i4",
+      "passed": true
+    },
+    {
+      "name": "actual logarithmic Laurent eigenmode e6i5",
+      "passed": true
+    },
+    {
+      "name": "exact codifferent derivative pole e6i5",
+      "passed": true
+    },
+    {
+      "name": "branch factor restores original codifferent e6i5",
+      "passed": true
+    },
+    {
+      "name": "B-linearity correction regular e6i5d0",
+      "passed": true
+    },
+    {
+      "name": "B-linearity correction regular e6i5d1",
+      "passed": true
+    },
+    {
+      "name": "B-linearity correction regular e6i5d3",
+      "passed": true
+    },
+    {
+      "name": "ordinary square integrable pole e6i5",
+      "passed": true
+    },
+    {
+      "name": "derivative radial exponent diverges e6i5",
+      "passed": true
+    },
+    {
+      "name": "canonical forbidden derivative exponent e6i5",
+      "passed": true
+    },
+    {
+      "name": "logarithmic residue trace half rank e6",
+      "passed": true
+    },
+    {
+      "name": "logarithmic residue determinant e6",
+      "passed": true
+    },
+    {
+      "name": "second spectral moment e6",
+      "passed": true
+    },
+    {
+      "name": "fixed-factor logarithmic spectrum distinct e6",
+      "passed": true
+    },
+    {
+      "name": "actual logarithmic Laurent eigenmode e7i1",
+      "passed": true
+    },
+    {
+      "name": "exact codifferent derivative pole e7i1",
+      "passed": true
+    },
+    {
+      "name": "branch factor restores original codifferent e7i1",
+      "passed": true
+    },
+    {
+      "name": "B-linearity correction regular e7i1d0",
+      "passed": true
+    },
+    {
+      "name": "B-linearity correction regular e7i1d1",
+      "passed": true
+    },
+    {
+      "name": "B-linearity correction regular e7i1d3",
+      "passed": true
+    },
+    {
+      "name": "ordinary square integrable pole e7i1",
+      "passed": true
+    },
+    {
+      "name": "derivative radial exponent diverges e7i1",
+      "passed": true
+    },
+    {
+      "name": "canonical forbidden derivative exponent e7i1",
+      "passed": true
+    },
+    {
+      "name": "actual logarithmic Laurent eigenmode e7i2",
+      "passed": true
+    },
+    {
+      "name": "exact codifferent derivative pole e7i2",
+      "passed": true
+    },
+    {
+      "name": "branch factor restores original codifferent e7i2",
+      "passed": true
+    },
+    {
+      "name": "B-linearity correction regular e7i2d0",
+      "passed": true
+    },
+    {
+      "name": "B-linearity correction regular e7i2d1",
+      "passed": true
+    },
+    {
+      "name": "B-linearity correction regular e7i2d3",
+      "passed": true
+    },
+    {
+      "name": "ordinary square integrable pole e7i2",
+      "passed": true
+    },
+    {
+      "name": "derivative radial exponent diverges e7i2",
+      "passed": true
+    },
+    {
+      "name": "canonical forbidden derivative exponent e7i2",
+      "passed": true
+    },
+    {
+      "name": "actual logarithmic Laurent eigenmode e7i3",
+      "passed": true
+    },
+    {
+      "name": "exact codifferent derivative pole e7i3",
+      "passed": true
+    },
+    {
+      "name": "branch factor restores original codifferent e7i3",
+      "passed": true
+    },
+    {
+      "name": "B-linearity correction regular e7i3d0",
+      "passed": true
+    },
+    {
+      "name": "B-linearity correction regular e7i3d1",
+      "passed": true
+    },
+    {
+      "name": "B-linearity correction regular e7i3d3",
+      "passed": true
+    },
+    {
+      "name": "ordinary square integrable pole e7i3",
+      "passed": true
+    },
+    {
+      "name": "derivative radial exponent diverges e7i3",
+      "passed": true
+    },
+    {
+      "name": "canonical forbidden derivative exponent e7i3",
+      "passed": true
+    },
+    {
+      "name": "actual logarithmic Laurent eigenmode e7i4",
+      "passed": true
+    },
+    {
+      "name": "exact codifferent derivative pole e7i4",
+      "passed": true
+    },
+    {
+      "name": "branch factor restores original codifferent e7i4",
+      "passed": true
+    },
+    {
+      "name": "B-linearity correction regular e7i4d0",
+      "passed": true
+    },
+    {
+      "name": "B-linearity correction regular e7i4d1",
+      "passed": true
+    },
+    {
+      "name": "B-linearity correction regular e7i4d3",
+      "passed": true
+    },
+    {
+      "name": "ordinary square integrable pole e7i4",
+      "passed": true
+    },
+    {
+      "name": "derivative radial exponent diverges e7i4",
+      "passed": true
+    },
+    {
+      "name": "canonical forbidden derivative exponent e7i4",
+      "passed": true
+    },
+    {
+      "name": "actual logarithmic Laurent eigenmode e7i5",
+      "passed": true
+    },
+    {
+      "name": "exact codifferent derivative pole e7i5",
+      "passed": true
+    },
+    {
+      "name": "branch factor restores original codifferent e7i5",
+      "passed": true
+    },
+    {
+      "name": "B-linearity correction regular e7i5d0",
+      "passed": true
+    },
+    {
+      "name": "B-linearity correction regular e7i5d1",
+      "passed": true
+    },
+    {
+      "name": "B-linearity correction regular e7i5d3",
+      "passed": true
+    },
+    {
+      "name": "ordinary square integrable pole e7i5",
+      "passed": true
+    },
+    {
+      "name": "derivative radial exponent diverges e7i5",
+      "passed": true
+    },
+    {
+      "name": "canonical forbidden derivative exponent e7i5",
+      "passed": true
+    },
+    {
+      "name": "actual logarithmic Laurent eigenmode e7i6",
+      "passed": true
+    },
+    {
+      "name": "exact codifferent derivative pole e7i6",
+      "passed": true
+    },
+    {
+      "name": "branch factor restores original codifferent e7i6",
+      "passed": true
+    },
+    {
+      "name": "B-linearity correction regular e7i6d0",
+      "passed": true
+    },
+    {
+      "name": "B-linearity correction regular e7i6d1",
+      "passed": true
+    },
+    {
+      "name": "B-linearity correction regular e7i6d3",
+      "passed": true
+    },
+    {
+      "name": "ordinary square integrable pole e7i6",
+      "passed": true
+    },
+    {
+      "name": "derivative radial exponent diverges e7i6",
+      "passed": true
+    },
+    {
+      "name": "canonical forbidden derivative exponent e7i6",
+      "passed": true
+    },
+    {
+      "name": "logarithmic residue trace half rank e7",
+      "passed": true
+    },
+    {
+      "name": "logarithmic residue determinant e7",
+      "passed": true
+    },
+    {
+      "name": "second spectral moment e7",
+      "passed": true
+    },
+    {
+      "name": "fixed-factor logarithmic spectrum distinct e7",
+      "passed": true
+    },
+    {
+      "name": "actual logarithmic Laurent eigenmode e8i1",
+      "passed": true
+    },
+    {
+      "name": "exact codifferent derivative pole e8i1",
+      "passed": true
+    },
+    {
+      "name": "branch factor restores original codifferent e8i1",
+      "passed": true
+    },
+    {
+      "name": "B-linearity correction regular e8i1d0",
+      "passed": true
+    },
+    {
+      "name": "B-linearity correction regular e8i1d1",
+      "passed": true
+    },
+    {
+      "name": "B-linearity correction regular e8i1d3",
+      "passed": true
+    },
+    {
+      "name": "ordinary square integrable pole e8i1",
+      "passed": true
+    },
+    {
+      "name": "derivative radial exponent diverges e8i1",
+      "passed": true
+    },
+    {
+      "name": "canonical forbidden derivative exponent e8i1",
+      "passed": true
+    },
+    {
+      "name": "actual logarithmic Laurent eigenmode e8i2",
+      "passed": true
+    },
+    {
+      "name": "exact codifferent derivative pole e8i2",
+      "passed": true
+    },
+    {
+      "name": "branch factor restores original codifferent e8i2",
+      "passed": true
+    },
+    {
+      "name": "B-linearity correction regular e8i2d0",
+      "passed": true
+    },
+    {
+      "name": "B-linearity correction regular e8i2d1",
+      "passed": true
+    },
+    {
+      "name": "B-linearity correction regular e8i2d3",
+      "passed": true
+    },
+    {
+      "name": "ordinary square integrable pole e8i2",
+      "passed": true
+    },
+    {
+      "name": "derivative radial exponent diverges e8i2",
+      "passed": true
+    },
+    {
+      "name": "canonical forbidden derivative exponent e8i2",
+      "passed": true
+    },
+    {
+      "name": "actual logarithmic Laurent eigenmode e8i3",
+      "passed": true
+    },
+    {
+      "name": "exact codifferent derivative pole e8i3",
+      "passed": true
+    },
+    {
+      "name": "branch factor restores original codifferent e8i3",
+      "passed": true
+    },
+    {
+      "name": "B-linearity correction regular e8i3d0",
+      "passed": true
+    },
+    {
+      "name": "B-linearity correction regular e8i3d1",
+      "passed": true
+    },
+    {
+      "name": "B-linearity correction regular e8i3d3",
+      "passed": true
+    },
+    {
+      "name": "ordinary square integrable pole e8i3",
+      "passed": true
+    },
+    {
+      "name": "derivative radial exponent diverges e8i3",
+      "passed": true
+    },
+    {
+      "name": "canonical forbidden derivative exponent e8i3",
+      "passed": true
+    },
+    {
+      "name": "actual logarithmic Laurent eigenmode e8i4",
+      "passed": true
+    },
+    {
+      "name": "exact codifferent derivative pole e8i4",
+      "passed": true
+    },
+    {
+      "name": "branch factor restores original codifferent e8i4",
+      "passed": true
+    },
+    {
+      "name": "B-linearity correction regular e8i4d0",
+      "passed": true
+    },
+    {
+      "name": "B-linearity correction regular e8i4d1",
+      "passed": true
+    },
+    {
+      "name": "B-linearity correction regular e8i4d3",
+      "passed": true
+    },
+    {
+      "name": "ordinary square integrable pole e8i4",
+      "passed": true
+    },
+    {
+      "name": "derivative radial exponent diverges e8i4",
+      "passed": true
+    },
+    {
+      "name": "canonical forbidden derivative exponent e8i4",
+      "passed": true
+    },
+    {
+      "name": "actual logarithmic Laurent eigenmode e8i5",
+      "passed": true
+    },
+    {
+      "name": "exact codifferent derivative pole e8i5",
+      "passed": true
+    },
+    {
+      "name": "branch factor restores original codifferent e8i5",
+      "passed": true
+    },
+    {
+      "name": "B-linearity correction regular e8i5d0",
+      "passed": true
+    },
+    {
+      "name": "B-linearity correction regular e8i5d1",
+      "passed": true
+    },
+    {
+      "name": "B-linearity correction regular e8i5d3",
+      "passed": true
+    },
+    {
+      "name": "ordinary square integrable pole e8i5",
+      "passed": true
+    },
+    {
+      "name": "derivative radial exponent diverges e8i5",
+      "passed": true
+    },
+    {
+      "name": "canonical forbidden derivative exponent e8i5",
+      "passed": true
+    },
+    {
+      "name": "actual logarithmic Laurent eigenmode e8i6",
+      "passed": true
+    },
+    {
+      "name": "exact codifferent derivative pole e8i6",
+      "passed": true
+    },
+    {
+      "name": "branch factor restores original codifferent e8i6",
+      "passed": true
+    },
+    {
+      "name": "B-linearity correction regular e8i6d0",
+      "passed": true
+    },
+    {
+      "name": "B-linearity correction regular e8i6d1",
+      "passed": true
+    },
+    {
+      "name": "B-linearity correction regular e8i6d3",
+      "passed": true
+    },
+    {
+      "name": "ordinary square integrable pole e8i6",
+      "passed": true
+    },
+    {
+      "name": "derivative radial exponent diverges e8i6",
+      "passed": true
+    },
+    {
+      "name": "canonical forbidden derivative exponent e8i6",
+      "passed": true
+    },
+    {
+      "name": "actual logarithmic Laurent eigenmode e8i7",
+      "passed": true
+    },
+    {
+      "name": "exact codifferent derivative pole e8i7",
+      "passed": true
+    },
+    {
+      "name": "branch factor restores original codifferent e8i7",
+      "passed": true
+    },
+    {
+      "name": "B-linearity correction regular e8i7d0",
+      "passed": true
+    },
+    {
+      "name": "B-linearity correction regular e8i7d1",
+      "passed": true
+    },
+    {
+      "name": "B-linearity correction regular e8i7d3",
+      "passed": true
+    },
+    {
+      "name": "ordinary square integrable pole e8i7",
+      "passed": true
+    },
+    {
+      "name": "derivative radial exponent diverges e8i7",
+      "passed": true
+    },
+    {
+      "name": "canonical forbidden derivative exponent e8i7",
+      "passed": true
+    },
+    {
+      "name": "logarithmic residue trace half rank e8",
+      "passed": true
+    },
+    {
+      "name": "logarithmic residue determinant e8",
+      "passed": true
+    },
+    {
+      "name": "second spectral moment e8",
+      "passed": true
+    },
+    {
+      "name": "fixed-factor logarithmic spectrum distinct e8",
+      "passed": true
+    },
+    {
+      "name": "actual logarithmic Laurent eigenmode e9i1",
+      "passed": true
+    },
+    {
+      "name": "exact codifferent derivative pole e9i1",
+      "passed": true
+    },
+    {
+      "name": "branch factor restores original codifferent e9i1",
+      "passed": true
+    },
+    {
+      "name": "B-linearity correction regular e9i1d0",
+      "passed": true
+    },
+    {
+      "name": "B-linearity correction regular e9i1d1",
+      "passed": true
+    },
+    {
+      "name": "B-linearity correction regular e9i1d3",
+      "passed": true
+    },
+    {
+      "name": "ordinary square integrable pole e9i1",
+      "passed": true
+    },
+    {
+      "name": "derivative radial exponent diverges e9i1",
+      "passed": true
+    },
+    {
+      "name": "canonical forbidden derivative exponent e9i1",
+      "passed": true
+    },
+    {
+      "name": "actual logarithmic Laurent eigenmode e9i2",
+      "passed": true
+    },
+    {
+      "name": "exact codifferent derivative pole e9i2",
+      "passed": true
+    },
+    {
+      "name": "branch factor restores original codifferent e9i2",
+      "passed": true
+    },
+    {
+      "name": "B-linearity correction regular e9i2d0",
+      "passed": true
+    },
+    {
+      "name": "B-linearity correction regular e9i2d1",
+      "passed": true
+    },
+    {
+      "name": "B-linearity correction regular e9i2d3",
+      "passed": true
+    },
+    {
+      "name": "ordinary square integrable pole e9i2",
+      "passed": true
+    },
+    {
+      "name": "derivative radial exponent diverges e9i2",
+      "passed": true
+    },
+    {
+      "name": "canonical forbidden derivative exponent e9i2",
+      "passed": true
+    },
+    {
+      "name": "actual logarithmic Laurent eigenmode e9i3",
+      "passed": true
+    },
+    {
+      "name": "exact codifferent derivative pole e9i3",
+      "passed": true
+    },
+    {
+      "name": "branch factor restores original codifferent e9i3",
+      "passed": true
+    },
+    {
+      "name": "B-linearity correction regular e9i3d0",
+      "passed": true
+    },
+    {
+      "name": "B-linearity correction regular e9i3d1",
+      "passed": true
+    },
+    {
+      "name": "B-linearity correction regular e9i3d3",
+      "passed": true
+    },
+    {
+      "name": "ordinary square integrable pole e9i3",
+      "passed": true
+    },
+    {
+      "name": "derivative radial exponent diverges e9i3",
+      "passed": true
+    },
+    {
+      "name": "canonical forbidden derivative exponent e9i3",
+      "passed": true
+    },
+    {
+      "name": "actual logarithmic Laurent eigenmode e9i4",
+      "passed": true
+    },
+    {
+      "name": "exact codifferent derivative pole e9i4",
+      "passed": true
+    },
+    {
+      "name": "branch factor restores original codifferent e9i4",
+      "passed": true
+    },
+    {
+      "name": "B-linearity correction regular e9i4d0",
+      "passed": true
+    },
+    {
+      "name": "B-linearity correction regular e9i4d1",
+      "passed": true
+    },
+    {
+      "name": "B-linearity correction regular e9i4d3",
+      "passed": true
+    },
+    {
+      "name": "ordinary square integrable pole e9i4",
+      "passed": true
+    },
+    {
+      "name": "derivative radial exponent diverges e9i4",
+      "passed": true
+    },
+    {
+      "name": "canonical forbidden derivative exponent e9i4",
+      "passed": true
+    },
+    {
+      "name": "actual logarithmic Laurent eigenmode e9i5",
+      "passed": true
+    },
+    {
+      "name": "exact codifferent derivative pole e9i5",
+      "passed": true
+    },
+    {
+      "name": "branch factor restores original codifferent e9i5",
+      "passed": true
+    },
+    {
+      "name": "B-linearity correction regular e9i5d0",
+      "passed": true
+    },
+    {
+      "name": "B-linearity correction regular e9i5d1",
+      "passed": true
+    },
+    {
+      "name": "B-linearity correction regular e9i5d3",
+      "passed": true
+    },
+    {
+      "name": "ordinary square integrable pole e9i5",
+      "passed": true
+    },
+    {
+      "name": "derivative radial exponent diverges e9i5",
+      "passed": true
+    },
+    {
+      "name": "canonical forbidden derivative exponent e9i5",
+      "passed": true
+    },
+    {
+      "name": "actual logarithmic Laurent eigenmode e9i6",
+      "passed": true
+    },
+    {
+      "name": "exact codifferent derivative pole e9i6",
+      "passed": true
+    },
+    {
+      "name": "branch factor restores original codifferent e9i6",
+      "passed": true
+    },
+    {
+      "name": "B-linearity correction regular e9i6d0",
+      "passed": true
+    },
+    {
+      "name": "B-linearity correction regular e9i6d1",
+      "passed": true
+    },
+    {
+      "name": "B-linearity correction regular e9i6d3",
+      "passed": true
+    },
+    {
+      "name": "ordinary square integrable pole e9i6",
+      "passed": true
+    },
+    {
+      "name": "derivative radial exponent diverges e9i6",
+      "passed": true
+    },
+    {
+      "name": "canonical forbidden derivative exponent e9i6",
+      "passed": true
+    },
+    {
+      "name": "actual logarithmic Laurent eigenmode e9i7",
+      "passed": true
+    },
+    {
+      "name": "exact codifferent derivative pole e9i7",
+      "passed": true
+    },
+    {
+      "name": "branch factor restores original codifferent e9i7",
+      "passed": true
+    },
+    {
+      "name": "B-linearity correction regular e9i7d0",
+      "passed": true
+    },
+    {
+      "name": "B-linearity correction regular e9i7d1",
+      "passed": true
+    },
+    {
+      "name": "B-linearity correction regular e9i7d3",
+      "passed": true
+    },
+    {
+      "name": "ordinary square integrable pole e9i7",
+      "passed": true
+    },
+    {
+      "name": "derivative radial exponent diverges e9i7",
+      "passed": true
+    },
+    {
+      "name": "canonical forbidden derivative exponent e9i7",
+      "passed": true
+    },
+    {
+      "name": "actual logarithmic Laurent eigenmode e9i8",
+      "passed": true
+    },
+    {
+      "name": "exact codifferent derivative pole e9i8",
+      "passed": true
+    },
+    {
+      "name": "branch factor restores original codifferent e9i8",
+      "passed": true
+    },
+    {
+      "name": "B-linearity correction regular e9i8d0",
+      "passed": true
+    },
+    {
+      "name": "B-linearity correction regular e9i8d1",
+      "passed": true
+    },
+    {
+      "name": "B-linearity correction regular e9i8d3",
+      "passed": true
+    },
+    {
+      "name": "ordinary square integrable pole e9i8",
+      "passed": true
+    },
+    {
+      "name": "derivative radial exponent diverges e9i8",
+      "passed": true
+    },
+    {
+      "name": "canonical forbidden derivative exponent e9i8",
+      "passed": true
+    },
+    {
+      "name": "logarithmic residue trace half rank e9",
+      "passed": true
+    },
+    {
+      "name": "logarithmic residue determinant e9",
+      "passed": true
+    },
+    {
+      "name": "second spectral moment e9",
+      "passed": true
+    },
+    {
+      "name": "fixed-factor logarithmic spectrum distinct e9",
+      "passed": true
+    },
+    {
+      "name": "normalized full coefficient has order 2e e2",
+      "passed": true
+    },
+    {
+      "name": "t squared comparison kills codifferent class e2i1",
+      "passed": true
+    },
+    {
+      "name": "only t comparison would NOT kill the class e2i1",
+      "passed": true
+    },
+    {
+      "name": "normalized full coefficient has order 2e e3",
+      "passed": true
+    },
+    {
+      "name": "t squared comparison kills codifferent class e3i1",
+      "passed": true
+    },
+    {
+      "name": "only t comparison would NOT kill the class e3i1",
+      "passed": true
+    },
+    {
+      "name": "t squared comparison kills codifferent class e3i2",
+      "passed": true
+    },
+    {
+      "name": "only t comparison would NOT kill the class e3i2",
+      "passed": true
+    },
+    {
+      "name": "normalized full coefficient has order 2e e4",
+      "passed": true
+    },
+    {
+      "name": "t squared comparison kills codifferent class e4i1",
+      "passed": true
+    },
+    {
+      "name": "only t comparison would NOT kill the class e4i1",
+      "passed": true
+    },
+    {
+      "name": "t squared comparison kills codifferent class e4i2",
+      "passed": true
+    },
+    {
+      "name": "only t comparison would NOT kill the class e4i2",
+      "passed": true
+    },
+    {
+      "name": "t squared comparison kills codifferent class e4i3",
+      "passed": true
+    },
+    {
+      "name": "only t comparison would NOT kill the class e4i3",
+      "passed": true
+    },
+    {
+      "name": "normalized full coefficient has order 2e e5",
+      "passed": true
+    },
+    {
+      "name": "t squared comparison kills codifferent class e5i1",
+      "passed": true
+    },
+    {
+      "name": "only t comparison would NOT kill the class e5i1",
+      "passed": true
+    },
+    {
+      "name": "t squared comparison kills codifferent class e5i2",
+      "passed": true
+    },
+    {
+      "name": "only t comparison would NOT kill the class e5i2",
+      "passed": true
+    },
+    {
+      "name": "t squared comparison kills codifferent class e5i3",
+      "passed": true
+    },
+    {
+      "name": "only t comparison would NOT kill the class e5i3",
+      "passed": true
+    },
+    {
+      "name": "t squared comparison kills codifferent class e5i4",
+      "passed": true
+    },
+    {
+      "name": "only t comparison would NOT kill the class e5i4",
+      "passed": true
+    },
+    {
+      "name": "normalized full coefficient has order 2e e6",
+      "passed": true
+    },
+    {
+      "name": "t squared comparison kills codifferent class e6i1",
+      "passed": true
+    },
+    {
+      "name": "only t comparison would NOT kill the class e6i1",
+      "passed": true
+    },
+    {
+      "name": "t squared comparison kills codifferent class e6i2",
+      "passed": true
+    },
+    {
+      "name": "only t comparison would NOT kill the class e6i2",
+      "passed": true
+    },
+    {
+      "name": "t squared comparison kills codifferent class e6i3",
+      "passed": true
+    },
+    {
+      "name": "only t comparison would NOT kill the class e6i3",
+      "passed": true
+    },
+    {
+      "name": "t squared comparison kills codifferent class e6i4",
+      "passed": true
+    },
+    {
+      "name": "only t comparison would NOT kill the class e6i4",
+      "passed": true
+    },
+    {
+      "name": "t squared comparison kills codifferent class e6i5",
+      "passed": true
+    },
+    {
+      "name": "only t comparison would NOT kill the class e6i5",
+      "passed": true
+    },
+    {
+      "name": "normalized full coefficient has order 2e e7",
+      "passed": true
+    },
+    {
+      "name": "t squared comparison kills codifferent class e7i1",
+      "passed": true
+    },
+    {
+      "name": "only t comparison would NOT kill the class e7i1",
+      "passed": true
+    },
+    {
+      "name": "t squared comparison kills codifferent class e7i2",
+      "passed": true
+    },
+    {
+      "name": "only t comparison would NOT kill the class e7i2",
+      "passed": true
+    },
+    {
+      "name": "t squared comparison kills codifferent class e7i3",
+      "passed": true
+    },
+    {
+      "name": "only t comparison would NOT kill the class e7i3",
+      "passed": true
+    },
+    {
+      "name": "t squared comparison kills codifferent class e7i4",
+      "passed": true
+    },
+    {
+      "name": "only t comparison would NOT kill the class e7i4",
+      "passed": true
+    },
+    {
+      "name": "t squared comparison kills codifferent class e7i5",
+      "passed": true
+    },
+    {
+      "name": "only t comparison would NOT kill the class e7i5",
+      "passed": true
+    },
+    {
+      "name": "t squared comparison kills codifferent class e7i6",
+      "passed": true
+    },
+    {
+      "name": "only t comparison would NOT kill the class e7i6",
+      "passed": true
+    },
+    {
+      "name": "normalized full coefficient has order 2e e8",
+      "passed": true
+    },
+    {
+      "name": "t squared comparison kills codifferent class e8i1",
+      "passed": true
+    },
+    {
+      "name": "only t comparison would NOT kill the class e8i1",
+      "passed": true
+    },
+    {
+      "name": "t squared comparison kills codifferent class e8i2",
+      "passed": true
+    },
+    {
+      "name": "only t comparison would NOT kill the class e8i2",
+      "passed": true
+    },
+    {
+      "name": "t squared comparison kills codifferent class e8i3",
+      "passed": true
+    },
+    {
+      "name": "only t comparison would NOT kill the class e8i3",
+      "passed": true
+    },
+    {
+      "name": "t squared comparison kills codifferent class e8i4",
+      "passed": true
+    },
+    {
+      "name": "only t comparison would NOT kill the class e8i4",
+      "passed": true
+    },
+    {
+      "name": "t squared comparison kills codifferent class e8i5",
+      "passed": true
+    },
+    {
+      "name": "only t comparison would NOT kill the class e8i5",
+      "passed": true
+    },
+    {
+      "name": "t squared comparison kills codifferent class e8i6",
+      "passed": true
+    },
+    {
+      "name": "only t comparison would NOT kill the class e8i6",
+      "passed": true
+    },
+    {
+      "name": "t squared comparison kills codifferent class e8i7",
+      "passed": true
+    },
+    {
+      "name": "only t comparison would NOT kill the class e8i7",
+      "passed": true
+    },
+    {
+      "name": "whole packet characteristic polynomial [(2, 1), (4, 2)]",
+      "passed": true
+    },
+    {
+      "name": "whole packet trace [(2, 1), (4, 2)]",
+      "passed": true
+    },
+    {
+      "name": "spectral projector idempotent ([(2, 1), (4, 2)], -3/4)",
+      "passed": true
+    },
+    {
+      "name": "spectral projector aggregate multiplicity ([(2, 1), (4, 2)], -3/4)",
+      "passed": true
+    },
+    {
+      "name": "spectral projector correct eigenspace ([(2, 1), (4, 2)], -3/4)",
+      "passed": true
+    },
+    {
+      "name": "spectral projector idempotent ([(2, 1), (4, 2)], -1/2)",
+      "passed": true
+    },
+    {
+      "name": "spectral projector aggregate multiplicity ([(2, 1), (4, 2)], -1/2)",
+      "passed": true
+    },
+    {
+      "name": "spectral projector correct eigenspace ([(2, 1), (4, 2)], -1/2)",
+      "passed": true
+    },
+    {
+      "name": "spectral projector idempotent ([(2, 1), (4, 2)], -1/4)",
+      "passed": true
+    },
+    {
+      "name": "spectral projector aggregate multiplicity ([(2, 1), (4, 2)], -1/4)",
+      "passed": true
+    },
+    {
+      "name": "spectral projector correct eigenspace ([(2, 1), (4, 2)], -1/4)",
+      "passed": true
+    },
+    {
+      "name": "aggregate spectral projectors sum to identity [(2, 1), (4, 2)]",
+      "passed": true
+    },
+    {
+      "name": "whole packet characteristic polynomial [(3, 2), (5, 1)]",
+      "passed": true
+    },
+    {
+      "name": "whole packet trace [(3, 2), (5, 1)]",
+      "passed": true
+    },
+    {
+      "name": "spectral projector idempotent ([(3, 2), (5, 1)], -4/5)",
+      "passed": true
+    },
+    {
+      "name": "spectral projector aggregate multiplicity ([(3, 2), (5, 1)], -4/5)",
+      "passed": true
+    },
+    {
+      "name": "spectral projector correct eigenspace ([(3, 2), (5, 1)], -4/5)",
+      "passed": true
+    },
+    {
+      "name": "spectral projector idempotent ([(3, 2), (5, 1)], -2/3)",
+      "passed": true
+    },
+    {
+      "name": "spectral projector aggregate multiplicity ([(3, 2), (5, 1)], -2/3)",
+      "passed": true
+    },
+    {
+      "name": "spectral projector correct eigenspace ([(3, 2), (5, 1)], -2/3)",
+      "passed": true
+    },
+    {
+      "name": "spectral projector idempotent ([(3, 2), (5, 1)], -3/5)",
+      "passed": true
+    },
+    {
+      "name": "spectral projector aggregate multiplicity ([(3, 2), (5, 1)], -3/5)",
+      "passed": true
+    },
+    {
+      "name": "spectral projector correct eigenspace ([(3, 2), (5, 1)], -3/5)",
+      "passed": true
+    },
+    {
+      "name": "spectral projector idempotent ([(3, 2), (5, 1)], -2/5)",
+      "passed": true
+    },
+    {
+      "name": "spectral projector aggregate multiplicity ([(3, 2), (5, 1)], -2/5)",
+      "passed": true
+    },
+    {
+      "name": "spectral projector correct eigenspace ([(3, 2), (5, 1)], -2/5)",
+      "passed": true
+    },
+    {
+      "name": "spectral projector idempotent ([(3, 2), (5, 1)], -1/3)",
+      "passed": true
+    },
+    {
+      "name": "spectral projector aggregate multiplicity ([(3, 2), (5, 1)], -1/3)",
+      "passed": true
+    },
+    {
+      "name": "spectral projector correct eigenspace ([(3, 2), (5, 1)], -1/3)",
+      "passed": true
+    },
+    {
+      "name": "spectral projector idempotent ([(3, 2), (5, 1)], -1/5)",
+      "passed": true
+    },
+    {
+      "name": "spectral projector aggregate multiplicity ([(3, 2), (5, 1)], -1/5)",
+      "passed": true
+    },
+    {
+      "name": "spectral projector correct eigenspace ([(3, 2), (5, 1)], -1/5)",
+      "passed": true
+    },
+    {
+      "name": "aggregate spectral projectors sum to identity [(3, 2), (5, 1)]",
+      "passed": true
+    },
+    {
+      "name": "whole packet characteristic polynomial [(2, 2), (3, 1), (6, 1)]",
+      "passed": true
+    },
+    {
+      "name": "whole packet trace [(2, 2), (3, 1), (6, 1)]",
+      "passed": true
+    },
+    {
+      "name": "spectral projector idempotent ([(2, 2), (3, 1), (6, 1)], -5/6)",
+      "passed": true
+    },
+    {
+      "name": "spectral projector aggregate multiplicity ([(2, 2), (3, 1), (6, 1)], -5/6)",
+      "passed": true
+    },
+    {
+      "name": "spectral projector correct eigenspace ([(2, 2), (3, 1), (6, 1)], -5/6)",
+      "passed": true
+    },
+    {
+      "name": "spectral projector idempotent ([(2, 2), (3, 1), (6, 1)], -2/3)",
+      "passed": true
+    },
+    {
+      "name": "spectral projector aggregate multiplicity ([(2, 2), (3, 1), (6, 1)], -2/3)",
+      "passed": true
+    },
+    {
+      "name": "spectral projector correct eigenspace ([(2, 2), (3, 1), (6, 1)], -2/3)",
+      "passed": true
+    },
+    {
+      "name": "spectral projector idempotent ([(2, 2), (3, 1), (6, 1)], -1/2)",
+      "passed": true
+    },
+    {
+      "name": "spectral projector aggregate multiplicity ([(2, 2), (3, 1), (6, 1)], -1/2)",
+      "passed": true
+    },
+    {
+      "name": "spectral projector correct eigenspace ([(2, 2), (3, 1), (6, 1)], -1/2)",
+      "passed": true
+    },
+    {
+      "name": "spectral projector idempotent ([(2, 2), (3, 1), (6, 1)], -1/3)",
+      "passed": true
+    },
+    {
+      "name": "spectral projector aggregate multiplicity ([(2, 2), (3, 1), (6, 1)], -1/3)",
+      "passed": true
+    },
+    {
+      "name": "spectral projector correct eigenspace ([(2, 2), (3, 1), (6, 1)], -1/3)",
+      "passed": true
+    },
+    {
+      "name": "spectral projector idempotent ([(2, 2), (3, 1), (6, 1)], -1/6)",
+      "passed": true
+    },
+    {
+      "name": "spectral projector aggregate multiplicity ([(2, 2), (3, 1), (6, 1)], -1/6)",
+      "passed": true
+    },
+    {
+      "name": "spectral projector correct eigenspace ([(2, 2), (3, 1), (6, 1)], -1/6)",
+      "passed": true
+    },
+    {
+      "name": "aggregate spectral projectors sum to identity [(2, 2), (3, 1), (6, 1)]",
+      "passed": true
+    },
+    {
+      "name": "cross-factor one-half eigenvalue overlap is retained",
+      "passed": true
+    },
+    {
+      "name": "any endomorphism commutator trace vanishes",
+      "passed": true
+    },
+    {
+      "name": "ramified logarithmic trace is nonzero in characteristic zero",
+      "passed": true
+    },
+    {
+      "name": "canonical derivative regular iff first e-1 jets vanish e2k0",
+      "passed": true
+    },
+    {
+      "name": "first forbidden canonical exponent e2k0",
+      "passed": true
+    },
+    {
+      "name": "noncancelling forbidden coefficient e2k0",
+      "passed": true
+    },
+    {
+      "name": "canonical derivative regular iff first e-1 jets vanish e2k1",
+      "passed": true
+    },
+    {
+      "name": "canonical derivative regular iff first e-1 jets vanish e2k2",
+      "passed": true
+    },
+    {
+      "name": "canonical derivative regular iff first e-1 jets vanish e2k3",
+      "passed": true
+    },
+    {
+      "name": "canonical derivative regular iff first e-1 jets vanish e2k4",
+      "passed": true
+    },
+    {
+      "name": "canonical derivative regular iff first e-1 jets vanish e2k5",
+      "passed": true
+    },
+    {
+      "name": "critical e-1 coefficient has zero normal derivative e2",
+      "passed": true
+    },
+    {
+      "name": "codifferent mode detected by a continuous jet e2i1",
+      "passed": true
+    },
+    {
+      "name": "canonical derivative regular iff first e-1 jets vanish e3k0",
+      "passed": true
+    },
+    {
+      "name": "first forbidden canonical exponent e3k0",
+      "passed": true
+    },
+    {
+      "name": "noncancelling forbidden coefficient e3k0",
+      "passed": true
+    },
+    {
+      "name": "canonical derivative regular iff first e-1 jets vanish e3k1",
+      "passed": true
+    },
+    {
+      "name": "first forbidden canonical exponent e3k1",
+      "passed": true
+    },
+    {
+      "name": "noncancelling forbidden coefficient e3k1",
+      "passed": true
+    },
+    {
+      "name": "canonical derivative regular iff first e-1 jets vanish e3k2",
+      "passed": true
+    },
+    {
+      "name": "canonical derivative regular iff first e-1 jets vanish e3k3",
+      "passed": true
+    },
+    {
+      "name": "canonical derivative regular iff first e-1 jets vanish e3k4",
+      "passed": true
+    },
+    {
+      "name": "canonical derivative regular iff first e-1 jets vanish e3k5",
+      "passed": true
+    },
+    {
+      "name": "canonical derivative regular iff first e-1 jets vanish e3k6",
+      "passed": true
+    },
+    {
+      "name": "canonical derivative regular iff first e-1 jets vanish e3k7",
+      "passed": true
+    },
+    {
+      "name": "critical e-1 coefficient has zero normal derivative e3",
+      "passed": true
+    },
+    {
+      "name": "codifferent mode detected by a continuous jet e3i1",
+      "passed": true
+    },
+    {
+      "name": "codifferent mode detected by a continuous jet e3i2",
+      "passed": true
+    },
+    {
+      "name": "canonical derivative regular iff first e-1 jets vanish e4k0",
+      "passed": true
+    },
+    {
+      "name": "first forbidden canonical exponent e4k0",
+      "passed": true
+    },
+    {
+      "name": "noncancelling forbidden coefficient e4k0",
+      "passed": true
+    },
+    {
+      "name": "canonical derivative regular iff first e-1 jets vanish e4k1",
+      "passed": true
+    },
+    {
+      "name": "first forbidden canonical exponent e4k1",
+      "passed": true
+    },
+    {
+      "name": "noncancelling forbidden coefficient e4k1",
+      "passed": true
+    },
+    {
+      "name": "canonical derivative regular iff first e-1 jets vanish e4k2",
+      "passed": true
+    },
+    {
+      "name": "first forbidden canonical exponent e4k2",
+      "passed": true
+    },
+    {
+      "name": "noncancelling forbidden coefficient e4k2",
+      "passed": true
+    },
+    {
+      "name": "canonical derivative regular iff first e-1 jets vanish e4k3",
+      "passed": true
+    },
+    {
+      "name": "canonical derivative regular iff first e-1 jets vanish e4k4",
+      "passed": true
+    },
+    {
+      "name": "canonical derivative regular iff first e-1 jets vanish e4k5",
+      "passed": true
+    },
+    {
+      "name": "canonical derivative regular iff first e-1 jets vanish e4k6",
+      "passed": true
+    },
+    {
+      "name": "canonical derivative regular iff first e-1 jets vanish e4k7",
+      "passed": true
+    },
+    {
+      "name": "canonical derivative regular iff first e-1 jets vanish e4k8",
+      "passed": true
+    },
+    {
+      "name": "canonical derivative regular iff first e-1 jets vanish e4k9",
+      "passed": true
+    },
+    {
+      "name": "critical e-1 coefficient has zero normal derivative e4",
+      "passed": true
+    },
+    {
+      "name": "codifferent mode detected by a continuous jet e4i1",
+      "passed": true
+    },
+    {
+      "name": "codifferent mode detected by a continuous jet e4i2",
+      "passed": true
+    },
+    {
+      "name": "codifferent mode detected by a continuous jet e4i3",
+      "passed": true
+    },
+    {
+      "name": "canonical derivative regular iff first e-1 jets vanish e5k0",
+      "passed": true
+    },
+    {
+      "name": "first forbidden canonical exponent e5k0",
+      "passed": true
+    },
+    {
+      "name": "noncancelling forbidden coefficient e5k0",
+      "passed": true
+    },
+    {
+      "name": "canonical derivative regular iff first e-1 jets vanish e5k1",
+      "passed": true
+    },
+    {
+      "name": "first forbidden canonical exponent e5k1",
+      "passed": true
+    },
+    {
+      "name": "noncancelling forbidden coefficient e5k1",
+      "passed": true
+    },
+    {
+      "name": "canonical derivative regular iff first e-1 jets vanish e5k2",
+      "passed": true
+    },
+    {
+      "name": "first forbidden canonical exponent e5k2",
+      "passed": true
+    },
+    {
+      "name": "noncancelling forbidden coefficient e5k2",
+      "passed": true
+    },
+    {
+      "name": "canonical derivative regular iff first e-1 jets vanish e5k3",
+      "passed": true
+    },
+    {
+      "name": "first forbidden canonical exponent e5k3",
+      "passed": true
+    },
+    {
+      "name": "noncancelling forbidden coefficient e5k3",
+      "passed": true
+    },
+    {
+      "name": "canonical derivative regular iff first e-1 jets vanish e5k4",
+      "passed": true
+    },
+    {
+      "name": "canonical derivative regular iff first e-1 jets vanish e5k5",
+      "passed": true
+    },
+    {
+      "name": "canonical derivative regular iff first e-1 jets vanish e5k6",
+      "passed": true
+    },
+    {
+      "name": "canonical derivative regular iff first e-1 jets vanish e5k7",
+      "passed": true
+    },
+    {
+      "name": "canonical derivative regular iff first e-1 jets vanish e5k8",
+      "passed": true
+    },
+    {
+      "name": "canonical derivative regular iff first e-1 jets vanish e5k9",
+      "passed": true
+    },
+    {
+      "name": "canonical derivative regular iff first e-1 jets vanish e5k10",
+      "passed": true
+    },
+    {
+      "name": "canonical derivative regular iff first e-1 jets vanish e5k11",
+      "passed": true
+    },
+    {
+      "name": "critical e-1 coefficient has zero normal derivative e5",
+      "passed": true
+    },
+    {
+      "name": "codifferent mode detected by a continuous jet e5i1",
+      "passed": true
+    },
+    {
+      "name": "codifferent mode detected by a continuous jet e5i2",
+      "passed": true
+    },
+    {
+      "name": "codifferent mode detected by a continuous jet e5i3",
+      "passed": true
+    },
+    {
+      "name": "codifferent mode detected by a continuous jet e5i4",
+      "passed": true
+    },
+    {
+      "name": "canonical derivative regular iff first e-1 jets vanish e6k0",
+      "passed": true
+    },
+    {
+      "name": "first forbidden canonical exponent e6k0",
+      "passed": true
+    },
+    {
+      "name": "noncancelling forbidden coefficient e6k0",
+      "passed": true
+    },
+    {
+      "name": "canonical derivative regular iff first e-1 jets vanish e6k1",
+      "passed": true
+    },
+    {
+      "name": "first forbidden canonical exponent e6k1",
+      "passed": true
+    },
+    {
+      "name": "noncancelling forbidden coefficient e6k1",
+      "passed": true
+    },
+    {
+      "name": "canonical derivative regular iff first e-1 jets vanish e6k2",
+      "passed": true
+    },
+    {
+      "name": "first forbidden canonical exponent e6k2",
+      "passed": true
+    },
+    {
+      "name": "noncancelling forbidden coefficient e6k2",
+      "passed": true
+    },
+    {
+      "name": "canonical derivative regular iff first e-1 jets vanish e6k3",
+      "passed": true
+    },
+    {
+      "name": "first forbidden canonical exponent e6k3",
+      "passed": true
+    },
+    {
+      "name": "noncancelling forbidden coefficient e6k3",
+      "passed": true
+    },
+    {
+      "name": "canonical derivative regular iff first e-1 jets vanish e6k4",
+      "passed": true
+    },
+    {
+      "name": "first forbidden canonical exponent e6k4",
+      "passed": true
+    },
+    {
+      "name": "noncancelling forbidden coefficient e6k4",
+      "passed": true
+    },
+    {
+      "name": "canonical derivative regular iff first e-1 jets vanish e6k5",
+      "passed": true
+    },
+    {
+      "name": "canonical derivative regular iff first e-1 jets vanish e6k6",
+      "passed": true
+    },
+    {
+      "name": "canonical derivative regular iff first e-1 jets vanish e6k7",
+      "passed": true
+    },
+    {
+      "name": "canonical derivative regular iff first e-1 jets vanish e6k8",
+      "passed": true
+    },
+    {
+      "name": "canonical derivative regular iff first e-1 jets vanish e6k9",
+      "passed": true
+    },
+    {
+      "name": "canonical derivative regular iff first e-1 jets vanish e6k10",
+      "passed": true
+    },
+    {
+      "name": "canonical derivative regular iff first e-1 jets vanish e6k11",
+      "passed": true
+    },
+    {
+      "name": "canonical derivative regular iff first e-1 jets vanish e6k12",
+      "passed": true
+    },
+    {
+      "name": "canonical derivative regular iff first e-1 jets vanish e6k13",
+      "passed": true
+    },
+    {
+      "name": "critical e-1 coefficient has zero normal derivative e6",
+      "passed": true
+    },
+    {
+      "name": "codifferent mode detected by a continuous jet e6i1",
+      "passed": true
+    },
+    {
+      "name": "codifferent mode detected by a continuous jet e6i2",
+      "passed": true
+    },
+    {
+      "name": "codifferent mode detected by a continuous jet e6i3",
+      "passed": true
+    },
+    {
+      "name": "codifferent mode detected by a continuous jet e6i4",
+      "passed": true
+    },
+    {
+      "name": "codifferent mode detected by a continuous jet e6i5",
+      "passed": true
+    },
+    {
+      "name": "canonical derivative regular iff first e-1 jets vanish e7k0",
+      "passed": true
+    },
+    {
+      "name": "first forbidden canonical exponent e7k0",
+      "passed": true
+    },
+    {
+      "name": "noncancelling forbidden coefficient e7k0",
+      "passed": true
+    },
+    {
+      "name": "canonical derivative regular iff first e-1 jets vanish e7k1",
+      "passed": true
+    },
+    {
+      "name": "first forbidden canonical exponent e7k1",
+      "passed": true
+    },
+    {
+      "name": "noncancelling forbidden coefficient e7k1",
+      "passed": true
+    },
+    {
+      "name": "canonical derivative regular iff first e-1 jets vanish e7k2",
+      "passed": true
+    },
+    {
+      "name": "first forbidden canonical exponent e7k2",
+      "passed": true
+    },
+    {
+      "name": "noncancelling forbidden coefficient e7k2",
+      "passed": true
+    },
+    {
+      "name": "canonical derivative regular iff first e-1 jets vanish e7k3",
+      "passed": true
+    },
+    {
+      "name": "first forbidden canonical exponent e7k3",
+      "passed": true
+    },
+    {
+      "name": "noncancelling forbidden coefficient e7k3",
+      "passed": true
+    },
+    {
+      "name": "canonical derivative regular iff first e-1 jets vanish e7k4",
+      "passed": true
+    },
+    {
+      "name": "first forbidden canonical exponent e7k4",
+      "passed": true
+    },
+    {
+      "name": "noncancelling forbidden coefficient e7k4",
+      "passed": true
+    },
+    {
+      "name": "canonical derivative regular iff first e-1 jets vanish e7k5",
+      "passed": true
+    },
+    {
+      "name": "first forbidden canonical exponent e7k5",
+      "passed": true
+    },
+    {
+      "name": "noncancelling forbidden coefficient e7k5",
+      "passed": true
+    },
+    {
+      "name": "canonical derivative regular iff first e-1 jets vanish e7k6",
+      "passed": true
+    },
+    {
+      "name": "canonical derivative regular iff first e-1 jets vanish e7k7",
+      "passed": true
+    },
+    {
+      "name": "canonical derivative regular iff first e-1 jets vanish e7k8",
+      "passed": true
+    },
+    {
+      "name": "canonical derivative regular iff first e-1 jets vanish e7k9",
+      "passed": true
+    },
+    {
+      "name": "canonical derivative regular iff first e-1 jets vanish e7k10",
+      "passed": true
+    },
+    {
+      "name": "canonical derivative regular iff first e-1 jets vanish e7k11",
+      "passed": true
+    },
+    {
+      "name": "canonical derivative regular iff first e-1 jets vanish e7k12",
+      "passed": true
+    },
+    {
+      "name": "canonical derivative regular iff first e-1 jets vanish e7k13",
+      "passed": true
+    },
+    {
+      "name": "canonical derivative regular iff first e-1 jets vanish e7k14",
+      "passed": true
+    },
+    {
+      "name": "canonical derivative regular iff first e-1 jets vanish e7k15",
+      "passed": true
+    },
+    {
+      "name": "critical e-1 coefficient has zero normal derivative e7",
+      "passed": true
+    },
+    {
+      "name": "codifferent mode detected by a continuous jet e7i1",
+      "passed": true
+    },
+    {
+      "name": "codifferent mode detected by a continuous jet e7i2",
+      "passed": true
+    },
+    {
+      "name": "codifferent mode detected by a continuous jet e7i3",
+      "passed": true
+    },
+    {
+      "name": "codifferent mode detected by a continuous jet e7i4",
+      "passed": true
+    },
+    {
+      "name": "codifferent mode detected by a continuous jet e7i5",
+      "passed": true
+    },
+    {
+      "name": "codifferent mode detected by a continuous jet e7i6",
+      "passed": true
+    },
+    {
+      "name": "invertible-ball polynomial derivative stays polynomial m0n0",
+      "passed": true
+    },
+    {
+      "name": "invertible-ball polynomial derivative stays polynomial m0n1",
+      "passed": true
+    },
+    {
+      "name": "invertible-ball polynomial derivative stays polynomial m0n2",
+      "passed": true
+    },
+    {
+      "name": "invertible-ball polynomial derivative stays polynomial m0n3",
+      "passed": true
+    },
+    {
+      "name": "invertible-ball polynomial derivative stays polynomial m1n0",
+      "passed": true
+    },
+    {
+      "name": "invertible-ball polynomial derivative stays polynomial m1n1",
+      "passed": true
+    },
+    {
+      "name": "invertible-ball polynomial derivative stays polynomial m1n2",
+      "passed": true
+    },
+    {
+      "name": "invertible-ball polynomial derivative stays polynomial m1n3",
+      "passed": true
+    },
+    {
+      "name": "invertible-ball polynomial derivative stays polynomial m2n0",
+      "passed": true
+    },
+    {
+      "name": "invertible-ball polynomial derivative stays polynomial m2n1",
+      "passed": true
+    },
+    {
+      "name": "invertible-ball polynomial derivative stays polynomial m2n2",
+      "passed": true
+    },
+    {
+      "name": "invertible-ball polynomial derivative stays polynomial m2n3",
+      "passed": true
+    },
+    {
+      "name": "invertible-ball polynomial derivative stays polynomial m3n0",
+      "passed": true
+    },
+    {
+      "name": "invertible-ball polynomial derivative stays polynomial m3n1",
+      "passed": true
+    },
+    {
+      "name": "invertible-ball polynomial derivative stays polynomial m3n2",
+      "passed": true
+    },
+    {
+      "name": "invertible-ball polynomial derivative stays polynomial m3n3",
+      "passed": true
+    },
+    {
+      "name": "invertible-ball polynomial derivative stays polynomial m4n0",
+      "passed": true
+    },
+    {
+      "name": "invertible-ball polynomial derivative stays polynomial m4n1",
+      "passed": true
+    },
+    {
+      "name": "invertible-ball polynomial derivative stays polynomial m4n2",
+      "passed": true
+    },
+    {
+      "name": "invertible-ball polynomial derivative stays polynomial m4n3",
+      "passed": true
+    },
+    {
+      "name": "invertible-ball polynomial derivative stays polynomial m5n0",
+      "passed": true
+    },
+    {
+      "name": "invertible-ball polynomial derivative stays polynomial m5n1",
+      "passed": true
+    },
+    {
+      "name": "invertible-ball polynomial derivative stays polynomial m5n2",
+      "passed": true
+    },
+    {
+      "name": "invertible-ball polynomial derivative stays polynomial m5n3",
+      "passed": true
+    },
+    {
+      "name": "written scope retains B-LINEAR",
+      "passed": true
+    },
+    {
+      "name": "written scope retains Equal fractions from DIFFERENT",
+      "passed": true
+    },
+    {
+      "name": "written scope retains rank_(C(Gamma))(T_Gamma)/2",
+      "passed": true
+    },
+    {
+      "name": "written scope retains NO such commutator",
+      "passed": true
+    },
+    {
+      "name": "written scope retains sufficiently small target ball",
+      "passed": true
+    },
+    {
+      "name": "written scope retains No quotient-singularity L2 theorem",
+      "passed": true
+    },
+    {
+      "name": "written scope retains outer-boundary behavior",
+      "passed": true
+    },
+    {
+      "name": "written scope retains NON-DENSITY",
+      "passed": true
+    },
+    {
+      "name": "written scope retains separately established identity R intersect H=Lambda",
+      "passed": true
+    },
+    {
+      "name": "written scope retains No automatic codifferent multiplication",
+      "passed": true
+    }
+  ],
+  "proof_sha256": "21a0279a423b498c94069c58542f130d188b8ed17900ea8c439ea8829878b3c4",
+  "checker_sha256": "fbe07d91606db288390246af62d961b632f1aacc19283dfd369baa1af645ff81",
+  "retained_inputs": [
+    {
+      "path": "CODIFFERENT_PREIMAGES_UNDER_TARGET_DERIVATIONS.md",
+      "sha256": "da98e9b38b2958bc5bf810776122fd58138b6bfed4bbe1d6d205a1f19f2fcdf8"
+    },
+    {
+      "path": "BERGMAN_TRACE_DUAL_AND_MULTIPLIER_DOMAIN_RIGIDITY.md",
+      "sha256": "1f5527567df39fd944fb0104e2925db9369b3c62935a98abae44a0faedbfbb62"
+    },
+    {
+      "path": "REDUCED_BRANCH_PAIRING_AND_SIXTH_MOMENT_DEFECT.md",
+      "sha256": "9a0826fe9b75ea7d7f202230a4740b0b016b8fe1a2c88e1f01f1a295b34c6051"
+    }
+  ],
+  "environment": {
+    "python": "3.12.3",
+    "sympy": "1.14.0"
+  },
+  "scope": {
+    "ordinary_codifferent_log_endomorphism": true,
+    "generic_spectrum_with_residue_degrees": true,
+    "coincident_eigenvalues_from_distinct_primes_grouped": true,
+    "normalized_trace": "minus_half_generic_defect_rank",
+    "small_generic_ball_non_density_without_quotient_point_import": true,
+    "whole_ball_density_inverse_equivalence_uses_retained_LW0": true,
+    "source_Ga_commutator_representation_claimed": false,
+    "automatic_density_integrality_or_inverse_proved": false
+  },
+  "assurance": "Internal unrestricted written proof and exact controls. Finite mode/jet tests do not establish the global analytic proof; no formal verification or external human review."
+}

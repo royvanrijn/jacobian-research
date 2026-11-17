@@ -1,0 +1,512 @@
+\documentclass[11pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage[hidelinks]{hyperref}
+\usepackage{xurl}
+\setlength{\emergencystretch}{3em}
+\newtheorem{theorem}{Theorem}
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{corollary}[theorem]{Corollary}
+\newcommand{\mr}{\operatorname{mr}}
+\newcommand{\ar}{\operatorname{ar}}
+\newcommand{\Sig}{\Sigma_2}
+\title{Hyperbolic double covers of a prime four-bridge twist family}
+\author{}
+\date{18 November 2026}
+\begin{document}\maketitle
+\begin{abstract}
+Every double branched cover in an explicit prime four-bridge twist
+family is a closed hyperbolic manifold. We identify the covers as
+fillings of one marked fourteen-tetrahedron parent along slopes
+$(-1,2+6n)$, for all integers $n\ge0$. A crossing-circle surgery and
+its lifted annulus give the uniform topological identification.
+Verified interval geometry supplies an embedded horocusp of area
+eleven and ordinary slope lengths greater than $10+19n$.
+The six-theorem and geometrization then apply to every parameter,
+including zero. Combined with independent rank certificates, this
+gives prime knots with meridional rank four and complex augmentation
+rank three whose double covers are all outside graph type.
+\end{abstract}
+Let $B=\beta_{17}$ be the literal four-braid word
+\[
+ [1,2,-3,-3,2,-3,-3,2,1,1,2,2,2,-3,2,2,2].
+\]
+For $n\ge0$, let $K_n$ be the closure of $B\sigma_2^{6n}$, equivalently
+the closure of the first fourteen letters followed by $\sigma_2^{3+6n}$.
+Set
+\[
+ P=\sigma_4\sigma_3\sigma_2^2\sigma_3\sigma_4^{-1}\in B_5,
+ \qquad L=\widehat{BP},
+\]
+where $B$ uses only the first four strands.
+The fifth strand closes outside the other closing arcs.
+
+\begin{theorem}\label{thm:allcovers}
+For every integer $n\ge0$, the actual double branched cover
+$\Sig(K_n)$ is a closed orientable hyperbolic three-manifold.
+\end{theorem}
+
+The proof identifies one actual tangle cover before certifying its
+geometry. The added circle encircles the selected two braid strands;
+its spanning disk lifts to an annulus. The two lifted circle fillings
+can then be combined into one filling with twice the twisting
+parameter. Exact peripheral chains fix the resulting slope in the
+parent triangulation. One embedded cusp gives a linear length bound
+for the whole sequence, so a single geometric certificate and the
+six-theorem handle all parameters. No finite sample of filled
+manifolds is used to infer this conclusion.
+
+An independent theorem \cite[Theorem \texttt{thm:main}]{family}
+proves that these knots are prime with
+$\mr(K_n)=b(K_n)=4$, $\ar(K_n,\mathbb C)=3$,
+$g(K_n)=7+3n$ and $c(K_n)=17+6n$.
+The new assertion concerns the actual closed covers for every
+parameter. It strengthens the qualitative cofinite exclusion of
+graph covers by determining the exceptional set to be empty.
+The old nonzero representation-volume certificate at $n=0$ is not
+a premise of this proof.
+
+\begin{theorem}\label{thm:binding}
+Let $C$ be the marked three-cusp triangulation specified below.
+Its cusp $2$ already has
+filling $(1,0)$; cusps $0,1$ are unfilled. Form the marked manifold
+\[
+ N=\bigl(C\text{ with cusp }1\text{ filled by }(-1,2)\bigr)
+       \text{ with cusps }1,2\text{ permanently filled}.
+\]
+The surviving cusp retains the marking of source cusp $0$.
+This manifold is the double cover of a fixed outside two-string tangle.
+For every $n\ge0$,
+\begin{equation}\label{eq:uniform}
+                       \Sig(K_n)\cong N(-1,2+6n).
+\end{equation}
+\end{theorem}
+
+The fixed marked input is retained as
+\path{all_parameter_cover_fixed_lift.tri}.
+The directly constructed positive fourteen-tetrahedron parent is
+\path{all_parameter_cover_parent.tri}, with decorated signature
+\[
+\texttt{oLLLLALQLQccegeghklljmlmnnquqtrvatalrgwmn\_Bbba}.
+\]
+
+The finite triangulation binding uses the pinned exact diagram,
+covering, peripheral-curve and permanent-filling algorithms of
+Spherogram~2.4.1 and SnapPy~3.3.2. It is not a claim of formal
+verification of those programs. The all-parameter identity follows
+from the following geometric surgery arguments and linearity of the
+fixed peripheral covering maps, not from sampled isometries.
+
+\section{The augmented braid is a crossing-circle link}
+
+For $i<5$ put
+\[
+ A_{i,5}=\sigma_4\cdots\sigma_{i+1}\sigma_i^2
+             \sigma_{i+1}^{-1}\cdots\sigma_4^{-1}.
+\]
+Free cancellation gives the literal identity
+\begin{equation}\label{eq:pure}
+                       P=A_{2,5}A_{3,5}.
+\end{equation}
+Each factor pushes the fifth point once positively around the indicated
+puncture, leaving the other four points fixed up to isotopy.
+Choose the two lollipop paths with their common stem from the fifth
+point. Their product is the boundary loop enclosing exactly the
+adjacent second and third punctures. This is an explicit motion in the
+punctured disk, so \eqref{eq:pure} is also a geometric description of
+the local fifth-strand motion.
+
+The fifth closing arc can be brought into the augmentation slab
+through the region outside the original four-braid and its closing
+arcs. Slide this cap down the common lollipop stem. Its incoming and
+outgoing detour across the fourth strand have opposite signs and have
+the fifth component over the fourth strand in both crossings, with
+the literal positive convention used below. The detour therefore
+pulls above that strand and cancels. What remains is the small
+boundary circle of a disk enclosing the second and third vertical
+strands in this slab. Thus the fifth component $U$ bounds an embedded
+disk $D$ punctured positively once each by precisely these two strands.
+The braid $B$ is outside this slab and is unchanged. In particular $U$
+is a crossing circle with its zero longitude supplied by $D$.
+For a direct diagram check, the six suffix crossings have ordered
+strand roles
+$(4,U),(3,U),(2,U),(U,2),(U,3),(U,4)$ and over-components
+$U,U,U,2,3,U$. After removing the first and last detour, the circle
+passes over both selected strands and then under both. This is the
+standard oval bounding the transverse twice-punctured disk.
+All suffix crossings and over-components are retained and checked
+exactly; the full braid outside this slab is unchanged.
+
+The sign and the exact selected strands can also be checked
+symbolically. A positive braid generator acts on successive meridians
+by
+\[
+ T(a,b)=(b,b^{-1}ab),\qquad
+ T^{-1}(a,b)=(aba^{-1},a).
+\]
+Start the augmentation slab with labels $(x_1,a,b,d,c)$ and put $w=ab$.
+Exact free reduction after $P$ gives
+\[
+ \left(x_1,c^{-1}ac,c^{-1}bc,
+       c_{\rm out}c^{-1}dc\,c_{\rm out}^{-1},c_{\rm out}\right),
+ \qquad c_{\rm out}=(wc)^{-1}c(wc).
+\]
+Closing the fifth strand imposes $c_{\rm out}=c$, equivalently
+$[c,w]=1$, and restores the fourth-strand label $d$.
+The boundary word of the twice-punctured spanning disk is $w=ab$;
+there is no self-framing term in $c$. Hence the preferred longitude
+of $U$ is represented by $w$, up to the simultaneous orientation
+change of both peripheral generators.
+
+\begin{lemma}\label{lem:downstairs}
+Filling $U$ by slope $(1,-q)$, for any integer $q\ge0$, gives the
+exterior of the literal braid closure $\widehat{B\sigma_2^{2q}}$,
+with its actual knot meridian preserved.
+\end{lemma}
+\begin{proof}
+This is the local disk-twist surgery, with its sign determined here.
+The unknot exterior of $U$ is $D^2\times S^1$ and its meridional disk
+is $D$ truncated at $U$. In coordinates $(z,e^{it})$, the map
+\[
+                 h_q(z,e^{it})=(e^{iqt}z,e^{it})
+\]
+fixes the disk-boundary direction $\lambda$ and sends the circle
+meridian $\mu$ to $\mu+q\lambda$. It sends $\mu-q\lambda$ to $\mu$
+and thus extends over the solid-torus filling to an ambient
+homeomorphism of the filled $S^3$. Localize the rotation to the
+augmentation interval. Only the two disk-piercing strands are twisted.
+
+To identify the resulting crossing sign in the literal convention,
+filling imposes $cw^{-q}=1$, so $c=w^q$. The displayed augmentation
+action becomes
+\[
+                    (a,b)\longmapsto
+                    (w^{-q}aw^q,w^{-q}bw^q).
+\]
+On the other hand $T$ preserves $ab=w$ and $T^2$ conjugates both
+entries by $w^{-1}$. Induction gives exactly $T^{2q}$, identifying
+the disk motion as $2q$ positive half-twists. This is a sign check on
+the local surgery homeomorphism, not an inference of homeomorphism
+merely from a group presentation. Outside the slab the knot is
+unchanged. The homeomorphism extends over its tubular neighborhood
+and therefore preserves its meridional slope.
+\end{proof}
+
+Taking $q=3n$ proves that downstairs circle slope $(1,-3n)$ gives the
+actual $K_n$, uniformly for all $n\ge0$.
+
+\section{The branched cover and its exact peripheral map}
+
+Take the connected double cover of the complement of $K_0\cup U$
+whose meridional character is $1$ on $K_0$ and $0$ on $U$.
+Since $\operatorname{lk}(K_0,U)=2$, the longitude of $U$ also has
+character zero. The cover of its boundary torus therefore consists
+of two tori, each mapping by degree one to the downstairs torus.
+Branch filling over $K_0$ fills the primitive lift of its squared
+meridian. Equivalently declare the orbifold coefficient $(2,0)$ on
+the knot cusp before taking the cover. The lifted coefficient is then
+$(1,0)$. This produces the exterior $Z$ of the two lifts $U_0,U_1$
+in the actual closed double branched cover $\Sig(K_0)$.
+
+For the literal augmented PD, Spherogram indexes the circle by $0$
+and the knot by $1$. The fixed retained cover has circle cusps $0,1$
+and knot cusp $2$. The exact character on the fourteen original
+geometric generators of the retained base triangulation is
+\[
+                [1,0,0,0,1,1,1,1,0,0,1,0,1,1].
+\]
+Its triangulation has fifty-six tetrahedra.
+
+Let $(m_j,l_j)$ be the fixed basis on circle cusp $j$, and let
+$(\mu,\lambda)$ be the preferred downstairs meridian and zero longitude.
+The exact peripheral covering map, written as lifts to either torus,
+is
+\begin{equation}\label{eq:matrix}
+ \widetilde\mu=-m_j+2l_j,\qquad
+ \widetilde\lambda=-l_j,\qquad
+ \begin{pmatrix}-1&0\\2&-1\end{pmatrix}.
+\end{equation}
+Here is a finite basis certificate for this assertion, rather than
+an interpolation in the parameter. Rebuild the cover after declaring
+circle fillings $(1,0)$ and $(1,1)$ downstairs. In both cases the
+character on the original geometric generators, the raw tetrahedron
+gluings and the cusp indices are exactly identical to the fixed cover.
+The filling algorithm installs each primitive lifted filling curve as
+meridian. In literal raw normal-curve coordinates its meridian chain
+is respectively
+\[
+                   -m_j+2l_j,\qquad -m_j+l_j.
+\]
+The arrays agree entry by entry, without any isometry or nontrivial
+triangulation isomorphism. Their orientations are inherited from the
+declared downstairs curves: the source copies the oriented preimage,
+divides by a positive gcd, and installs those signed coefficients as
+the first basis row. No independent sign choice is made between the
+two runs. Subtraction therefore gives the lift of $\lambda$,
+namely $-l_j$. A degree-one torus covering induces a homomorphism
+on homology, so these two basis values prove
+\[
+        \widetilde{\mu+t\lambda}=-m_j+(2-t)l_j
+             \quad\text{for every integer }t.
+\]
+No primitive rescaling is possible: the matrix has determinant one.
+Thus downstairs slope $(1,-3n)$ lifts to $(-1,2+3n)$ on both cusps.
+
+The covering source copies the complete preimage of the declared
+filling curve, divides by its primitive gcd and tracks orbifold
+multiplicity. The raw arrays and source pins are retained in the
+binding certificate. The two runs above certify two generating
+curves for a fixed linear map; they are not a finite sample offered
+as proof of an infinite filling assertion.
+
+\section{The annulus and the sum of two filling parameters}
+
+The crossing disk $D$ meets the branch knot twice. Its double branched
+cover is an annulus $A$ with boundary $U_0\cup U_1$. Choose a slightly
+enlarged regular neighborhood of $D$, a ball $B_D$ containing the two
+local trivial branch arcs and the crossing circle. Its branched cover
+is a solid torus $V\cong A\times I$. The lifted circles can be placed
+inside $V$ as two disjoint parallel cores. The complement of $V$ is
+the double branched cover of the fixed outside two-string tangle.
+The pushoff of each $U_j$ along $A$ is exactly the lift of the
+zero longitude supplied by $D$; no unspecified framing is inserted.
+
+Removing neighborhoods of the two cores from $V$ gives
+\[
+                        Q\times S^1,
+\]
+where $Q$ is a disk with two holes. Let $f$ be the common fiber class,
+let $s_1,s_2$ be positive small meridians around its two holes, and let
+$s_0$ be the positive meridian around the outer disk. Thus
+$s_0=s_1+s_2$ in $H_1(Q)$. The pairs $(s_j,f)$ are the meridian and
+annulus-longitude pairs of the two parallel cores. The two lifts of
+the oriented downstairs circle may be oppositely oriented as cores
+of $V$. Reversing such a core reverses both its meridian and longitude,
+so does not change the unoriented slope $s_j+t_jf$ or its parameter.
+
+\begin{lemma}\label{lem:pants}
+Fill the two inner tori of $Q\times S^1$ along $s_j+t_jf$, with
+$t_1,t_2\in\mathbb Z$. The result is a solid torus whose outer
+meridian is $s_0+(t_1+t_2)f$. Consequently the result is
+boundary-relatively homeomorphic to filling one inner torus by its
+base meridian and the other by parameter $t_1+t_2$.
+\end{lemma}
+\begin{proof}
+Each inner slope has intersection one with the fiber. The product
+Seifert fibration therefore extends across its filling without an
+exceptional fiber. The capped base is a disk, so the result is a
+solid torus. The filling relations are
+\[
+                 s_1=-t_1f,\qquad s_2=-t_2f.
+\]
+Since $s_0=s_1+s_2$, its primitive outer meridian is
+$s_0+(t_1+t_2)f$. A solid-torus attachment relative to its boundary
+is determined by this unoriented primitive meridian; hence the
+claim is a relative homeomorphism, not just a homology comparison.
+\end{proof}
+
+For the actual covers, the two parameters are both $t=-3n$ in the
+lifted preferred pairs. Fill $U_1$ first by its base meridian $t_2=0$.
+The product piece becomes a torus collar. Hence the resulting exterior
+of $U_0$ is boundary-homeomorphic to the cover of the fixed outside
+tangle, proving the first topological assertion of
+Theorem~\ref{thm:binding}. Lemma~\ref{lem:pants} replaces the two
+parameters $(-3n,-3n)$ by $(-6n,0)$. In the fixed basis
+\eqref{eq:matrix}, the remaining slope is
+\[
+ (-1,2)+(-6n)(0,-1)=(-1,2+6n).
+\]
+This proves \eqref{eq:uniform} for every $n\ge0$.
+Our tangle ball contains the additional $6n$ twists in the presentation
+$B\sigma_2^{6n}$; its base tangle is trivial. Moving the old three
+terminal crossings into that ball changes only the fixed boundary
+marking and recovers the alternative $3+6n$ convention.
+
+\section{Provenance of the directly constructed triangulation}
+
+The marked parent is built
+by loading the fixed marked cover, filling circle cusp $1$ by $(-1,2)$,
+and applying \texttt{filled\_triangulation([1,2])}. The knot cusp $2$
+already has its tracked primitive filling $(1,0)$. The operation
+permanently fills only those two cusps and carries the peripheral
+curves on surviving cusp $0$ through its retriangulations. The source
+adjusts normal curves by homologically trivial peripheral isotopies
+when collapsing tetrahedra. Thus the remaining $(m_0,l_0)$ marking
+is preserved; no numerical isometry chooses the final marking.
+
+With the retained random seed this produces the stated positive
+fourteen-tetrahedron edition immediately, with no subsequent
+randomization. The generation script, input and output hashes, raw
+peripheral-basis checks and exact reconstruction are retained.
+The topological software dependence is the correctness of
+the pinned diagram-to-triangulation, cover and marked permanent-filling
+routines. The geometric all-parameter surgery identity is independent
+of numerical shape solving or sampled closed-manifold recognition.
+
+\section{A complete parent and an embedded cusp}
+
+\begin{lemma}\label{lem:geometry}
+The marked manifold $N$ in Theorem~\ref{thm:binding} has a complete
+finite-volume hyperbolic metric. It has an embedded horocusp whose
+boundary has Euclidean area $11$. In a rotation of that Euclidean
+plane, let $m,l$ be the translations of its actual marked meridian
+and longitude, with $l>0$ real. Then
+\begin{equation}\label{eq:bounds}
+                   \operatorname{Re}(-m+2l)>10,\qquad 6l>19.
+\end{equation}
+These are ordinary Euclidean lengths and translations at area $11$;
+there is no division by the square root of the cusp area.
+\end{lemma}
+\begin{proof}
+We specify the finite geometric certificate and its logical role.
+The exact input fixes all face pairings, edge classes, cusp triangles
+and integral peripheral curves of the fourteen-tetrahedron parent.
+The face pairings define an oriented triangulation, without reversed
+self-identifications of ideal edges. The cusp link is a connected
+oriented torus with $28$ vertices, $84$ edges and $56$ triangles.
+
+The pinned SnapPy~3.3.2/SageMath~10.9 verification engine runs at
+$100$-bit precision. It certifies existence of a complete hyperbolic
+shape solution by its Krawczyk interval method, and every shape has
+strictly positive imaginary part. The complete hyperbolicity engine,
+including its exact equation and logarithmic-branch checks, is an
+indispensable algorithmic premise. The retained intervals for all
+fourteen edge equations and both complete peripheral equations are
+additional consistency checks; merely enclosing small logarithmic
+residuals would not prove existence of a solution.
+
+Develop the Euclidean cusp triangles from those certified shapes and
+rescale to exactly area $11$. The certificate verifies directly,
+before any automatic shrinking, that every standard-form scale is
+strictly greater than $6/5$ and every exponentiated edge-separation
+distance is greater than $21/20$. The first inequalities keep the
+horospherical corners away from opposite tetrahedral faces; the
+second separate the horoballs at the ends of every ideal edge.
+Their face-compatible union is therefore an embedded horocusp.
+This does not require a maximal cusp.
+
+The peripheral rows satisfy the exact integral flux and glued-side
+conditions for two closed cycles. The ratio of their developed
+parallelogram area to the cusp area is their positive integral
+covolume index. Its interval isolates the integer one, certifying a
+primitive basis independently of its software label. Rotate the
+Euclidean plane so that the longitude translation is real and
+positive, without changing the area or lengths. The certified
+translations have approximate values, solely for readability,
+\[
+             m\simeq-3.994185506+3.455736321i,\qquad
+             l\simeq3.183113229.
+\]
+The retained rational interval endpoints imply the two exact strict
+inequalities \eqref{eq:bounds}.
+All shape intervals, exact cusp-area normalization, standard-form
+and separation inequalities, primitive-cycle checks, and source
+snapshots are supplied in the geometric supplement. Its verifier
+rejects eight corrupted controls, including a doubled meridian,
+wrong curve flux, negative tetrahedron orientation, excessive cusp
+area, reversed slope direction and a false stronger base bound.
+\end{proof}
+
+\begin{proof}[Proof of Theorem~\ref{thm:allcovers}]
+The actual-cover identification is Theorem~\ref{thm:binding}, whose
+proof did not use a geometric recognition of any closed filling.
+The slope $(-1,2+6n)$ is primitive for every $n$. On the single fixed
+embedded area-$11$ horotorus of Lemma~\ref{lem:geometry}, its ordinary
+length satisfies
+\begin{align*}
+ \ell(-1,2+6n)
+   &=|-m+(2+6n)l|\\
+   &\ge\operatorname{Re}(-m+2l)+n(6l)
+     >10+19n>6
+\end{align*}
+for every integer $n\ge0$. The same two translations occur for all
+parameters, so this is a uniform inequality rather than an
+extrapolation from selected fillings.
+
+Lackenby's six-theorem \cite[Theorem~3.1, printed p.~12]{lackenby}
+applies to a compact orientable manifold with complete finite-volume
+hyperbolic interior and an embedded horoball neighborhood. Its
+hypothesis is ordinary length greater than six, not normalized length
+or a maximal-cusp requirement. It implies that each fully filled
+$N(-1,2+6n)$ is irreducible, atoroidal and non-Seifert, with infinite
+word-hyperbolic fundamental group. Agol independently proved the
+six-theorem \cite[Theorem~6.2, p.~440]{agol}.
+The geometrization alternative
+\cite[Theorem~1.7.6, printed p.~19]{afw} decomposes a compact orientable
+irreducible manifold along incompressible tori into hyperbolic or
+Seifert pieces. Here atoroidality leaves no torus and the Seifert
+alternative is excluded, so the closed filling is hyperbolic.
+The actual branched-cover identity gives the claimed result.
+\end{proof}
+
+\section{Consequences and exact replay}
+
+\begin{corollary}\label{cor:family}
+For every $n\ge0$, $K_n$ is a prime knot with
+\[
+ \ar(K_n,\mathbb C)=3<4=\mr(K_n)=b(K_n),\qquad
+ g(K_n)=7+3n,\qquad c(K_n)=17+6n,
+\]
+and its actual double branched cover is hyperbolic.
+In particular the covers are outside graph type for every parameter.
+Here graph type allows connected sums of graph prime factors.
+\end{corollary}
+\begin{proof}
+The rank, primeness and size conclusions are the separate theorem
+\cite[Theorem \texttt{thm:main}]{family}. Apply
+Theorem~\ref{thm:allcovers} for the cover statement. A closed
+hyperbolic manifold is irreducible and is not graph, so it is
+outside the stated graph-type class.
+\end{proof}
+
+For every $s\ge0$, adding $s$ trefoils gives
+$\ar(K_n\#(\#^s3_1),\mathbb C)=3+s<4+s=\mr=b$ by the separate
+\cite[Corollary \texttt{cor:sums}]{family}. The double branched cover
+is the connected sum of $\Sig(K_n)$ with $s$ trefoil covers, since
+the connected-sum sphere lifts to a sphere. It retains the closed
+hyperbolic prime factor $\Sig(K_n)$ and is outside graph type.
+For $s>0$ no hyperbolicity claim is made for that connected sum.
+These conclusions exclude equality-family hypotheses requiring graph
+double covers; they do not exclude every prior equality theorem.
+
+The exact finite master replay uses standard-library free-word
+arithmetic and the retained PD and normal-chain arrays. It checks the
+pure-braid factorization, all augmentation overpasses, the signed
+$T^2$ identity, the literal PD, both oriented basis-curve lifts,
+the covering matrix and the doubled slope rule. Six corrupted controls
+are rejected. Optional topology replay reconstructs the actual
+augmented link and unique character, compares raw marked covering
+triangulations, and generates the parent anew. Both its face pairings
+and surviving peripheral normal chains agree exactly with the saved
+geometric input. Numerical isometries are not used.
+
+The separate Sage geometry replay supplies the indispensable analytic
+certificate in Lemma~\ref{lem:geometry}. Its eight rejecting controls
+also test primitivity and the embedded cusp. A default finite replay
+alone does not run the analytic certification. Edition hashes,
+source pins, individual replay modes and review records are retained
+separately. No statement of formal verification, external specialist
+review or worldwide priority is implied.
+
+\paragraph{AI assistance and review.}
+ChatGPT (OpenAI) assisted with mathematical arguments, literature checks,
+exposition, proof review and verification code.
+
+\begin{thebibliography}{9}\small\raggedright
+\bibitem{lackenby} M.~Lackenby, \emph{Word hyperbolic Dehn surgery},
+Invent.~Math.~140 (2000), 243--282. Retained author preprint
+arXiv:math/9808120v2 (7 September 1999), Theorem~3.1, printed p.~12,
+proof pp.~17--19. \url{https://arxiv.org/abs/math/9808120v2}.
+\bibitem{agol} I.~Agol, \emph{Bounds on exceptional Dehn filling},
+Geom.~Topol.~4 (2000), 431--449. Definition of hyperbolike p.~432,
+Theorem~6.2 p.~440.
+\bibitem{afw} M.~Aschenbrenner, S.~Friedl and H.~Wilton,
+\emph{3-Manifold Groups}, EMS (2015),
+\href{https://doi.org/10.4171/154}{doi:10.4171/154}.
+Retained final author manuscript, Theorem~1.7.6, printed p.~19
+(PDF p.~23).
+\bibitem{family} \emph{Prime four-bridge knots with augmentation rank
+three}, companion \path{PRIME_AUGMENTATION_GAP_FAMILY.tex},
+Theorem \texttt{thm:main} and Corollary \texttt{cor:sums}.
+\end{thebibliography}
+\end{document}

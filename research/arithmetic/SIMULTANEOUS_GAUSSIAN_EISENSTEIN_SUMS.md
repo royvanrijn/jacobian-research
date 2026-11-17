@@ -8,8 +8,10 @@ The main quantitative research target is now the
 S12 below is its weaker macroscopic existence consequence.
 
 The every-target assertion S12 is **open in this work**. Unconditional results
-include positive-proportion coverage in every fixed power-sized balance window,
-fixed-fraction balanced coverage, a uniform local sieve margin,
+include semigroup-scale density-one coverage for fixed power exponents above
+\(1/3\), full unweighted variance in fixed-width balanced windows,
+positive-proportion coverage for every fixed positive power exponent,
+a uniform local sieve margin,
 a large-prime tail bound, averaged coordinate counts before and after the full
 sieve, and an exact finite search. The fixed-fraction positive-proportion
 statement is a corollary of Loughran--Matthiesen's correlation theorem; the averaged statements
@@ -23,14 +25,23 @@ The general theorem FBS1 gives, for every fixed \(0<\theta<1\), at least
 \(|a-b|\leq X^\theta\). Its proof uses a block first moment and Henriot's
 corrected upper bound, without a short-interval asymptotic. These are unweighted
 pairs; this result does not extend the exact weighted average A12G to shrinking
-windows. The general note also records the known density-one range H12 for
-\(\theta>2/3\), using prime summands, and its distinct pair-count scale.
+windows. The stronger [semigroup theorem Dq](PRESCRIBED_PRIME_SEMIGROUP_DENSITY_ONE.md)
+gives, for every fixed \(1/3<\theta<1\), the same semigroup-scale lower
+bound outside \(O_{\theta,A}(X/(\log X)^A)\) compatible targets for each
+fixed \(A>0\). This is derived using prime times small allowed cofactors
+and the 2026 short-interval Fourier theorem. The [variance theorem Vq](PRESCRIBED_PRIME_BINARY_VARIANCE.md)
+also gives a target-dependent unweighted asymptotic for almost all compatible
+targets when \(H=\lambda X\), with fixed \(0<\lambda\le1\).
+These are different statements from the weighted coordinate average A12G.
+The older H12 prime-pair baseline has a smaller count scale and the range
+\(\theta>2/3\).
 For \(2/3<\theta<1\), the linked
 [ternary corollary Tq](BINARY_SUMS_WITH_PRESCRIBED_PRIME_FACTORS.md#an-every-target-ternary-baseline)
 also represents every sufficiently large \(N\equiv3\pmod {12}\) by three
 primes \(1\pmod {12}\), each within \(N^\theta\) of \(N/3\). These are
 established baselines; the remaining programme seeks binary estimates using
-the whole semigroup at its larger representation-count scale.
+the whole semigroup: full-count variance in shrinking windows and a uniform
+every-target lower bound.
 
 ## The target
 
@@ -690,9 +701,10 @@ The next mathematical task is to prove the pointwise balanced lower bound (H1)
 and the summed bad-prime estimate (H2), or find another argument for the
 positivity of (7). The local margin, sharper large-prime tail, and averaged
 counts before and after the full sieve have complete arguments with the stated
-ideal-counting input. Positive-proportion unweighted coverage follows from the
-stated Frobenian correlation theorem; the linked general theory gives the
-power-window extension. The required every-target binary estimates, an effective
-cutoff, and the uniform semigroup-scale family conjecture remain open here. Exceptional-set
-targets must specify the window: the known result H12 already gives density one
-for power exponents above \(2/3\), with a logarithmic exceptional bound.
+ideal-counting input. The linked general theory now gives unweighted
+semigroup-scale density one for \(\theta>1/3\), fixed-width variance, and
+exact first moments in every fixed power window. The remaining shrinking-window
+variance input is a sharp upper bound for the four-form energy. The required
+every-target binary estimates, an effective cutoff, and the uniform
+semigroup-scale family conjecture remain open here. Dq's arbitrary logarithmic
+savings neither give a power-saving exceptional count nor remove all exceptions.

@@ -400,9 +400,13 @@ has form
     P0=S H3(Y)+S^2(alpha Y+beta)+bY+c,
 
 with a nonzero cubic coefficient in H3 and (alpha,beta)!=(0,0).
-This records an analytic frontier, not a classification of every such
-parameter choice. Other parity-defined subfamilies retain their
-separate established results.
+The [quadratic-radial affine-coefficient theorem](GAUSSIAN_QUADRATIC_RADIAL_AFFINE_COEFFICIENT_FINITE_IMAGES.md)
+classifies this full-image support: no member with either displayed
+nonzero radial coefficient has finite M. Together with the boundary
+reduction it extends (V17) through original degree five. That extension
+retains the quadratic Gamma endpoint and its puncture loop; it does not
+infer a scalar-only or purity-only quintic classification. Other
+parity-defined subfamilies retain their separate established results.
 
 ## 8. Bounded internal support
 

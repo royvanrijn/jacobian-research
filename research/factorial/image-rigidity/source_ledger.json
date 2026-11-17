@@ -2183,6 +2183,284 @@
       "novelty_claim": false,
       "priority_claim": false,
       "assessment": "The written stage, offset-window, finite-difference, first-layer obstruction and conditional saturation proofs were audited internally. The internal receipt passes 4207 exact controls and the source has a clean two-pass five-page build. Written identities and conditional implications supply the quantifiers; finite profiles are not a noncollision theorem. No independent whole-proof replay, formal verification, external review, novelty or priority claim; dependency coverage remains partial."
+    },
+    "gap_six_two_power_plus_one_terminal_family": {
+      "scope": "For every integer r>=1 and terminal N=2*7^r+1, every nonzero complex ordinary phase X(A+B X^6) has a nonzero factorial moment at orders N-1,N, including degenerate monomials. Formal diagonal series and an all-digit Lucas calculation produce the saturated matrix; a complete thirty-state polynomial quotient-ring certificate proves full residual rank for every r. The r=0 endpoint is outside this theorem and is already covered by the separate native family. No Gamma extension, all-index fixed-support closure, degree-seven closure, unrestricted FC/SFC or full H3 assertion is made.",
+      "canonical_source": "factorial/image-rigidity/GAP_SIX_TWO_POWER_PLUS_ONE_SFC.tex",
+      "checker": "factorial/image-rigidity/gap_six_two_power_plus_one_sfc.py",
+      "receipt": "factorial/image-rigidity/gap_six_two_power_plus_one_sfc_verification.json",
+      "mandatory_orbit_certificate": "factorial/image-rigidity/gap_six_two_power_plus_one_orbit.json",
+      "orbit_certificate_sha256": "f368d277efd5a6345a75636f6d45745910dbe5f52ed9d04037290218a77ffb70",
+      "owned_source_sha256": {
+        "factorial/image-rigidity/GAP_SIX_TWO_POWER_PLUS_ONE_SFC.tex": "7c8b7be9cd416803f0d43e0f76248cb5006f94ffa9feafc5295115d9cf61ffc6",
+        "factorial/image-rigidity/gap_six_two_power_plus_one_sfc.py": "0913724a33b89efe658d596a385e7ffd6258acba2d7debf1c180eedcc4c4db5a",
+        "factorial/image-rigidity/gap_six_two_power_plus_one_orbit.json": "f368d277efd5a6345a75636f6d45745910dbe5f52ed9d04037290218a77ffb70",
+        "factorial/image-rigidity/gap_six_two_power_plus_one_sfc_verification.json": "94689416e28dfdd4fcae679868da6a77a23458efa47687ee300d4bc7ed5cc573"
+      },
+      "indispensable_input_sha256": {
+        "factorial/image-rigidity/ARITHMETIC_FRONTIER_TERMINAL_ORDERS.tex": "9721978bcb795af9169c695c5fb8348974069c5148e5e0caa8bd3c4d65650e07",
+        "factorial/image-rigidity/PHYSICAL_PRIME_TOTAL_DEGREE_REDUCTION.tex": "42c5fc615400a49dd3ae4f19a9a832381607e69ce4f6ff6d255b57ca4cfd156f",
+        "factorial/image-rigidity/gap_three_hurwitz_structure.tex": "22c690a45976c9b72b210ff76bbcd3a7084ddba0aae4af0c7f40ce2b109f705c"
+      },
+      "frontier_refinement_input_sha256": {
+        "factorial/image-rigidity/GAP_SIX_THIN_DIGIT_SFC.tex": "c008b95285ed6c4cec7e89b922adc26a2ec3901f87bc636a165dffdf873ec4cf"
+      },
+      "declarations": {
+        "lem:diagonal": "FACT-GAP-SIX-TWO-POWER-PLUS-ONE-SFC-LEM-DIAGONAL",
+        "lem:first-row": "FACT-GAP-SIX-TWO-POWER-PLUS-ONE-SFC-LEM-FIRST-ROW",
+        "lem:rows": "FACT-GAP-SIX-TWO-POWER-PLUS-ONE-SFC-LEM-ROWS",
+        "lem:orbit": "FACT-GAP-SIX-TWO-POWER-PLUS-ONE-SFC-LEM-ORBIT",
+        "lem:rank": "FACT-GAP-SIX-TWO-POWER-PLUS-ONE-SFC-LEM-RANK",
+        "thm:family": "FACT-GAP-SIX-TWO-POWER-PLUS-ONE-SFC-THM-FAMILY"
+      },
+      "mathematical_dependencies": {
+        "lem:diagonal": [],
+        "lem:first-row": [
+          "FACT-GAP-SIX-TWO-POWER-PLUS-ONE-SFC-LEM-DIAGONAL",
+          "FACT-ARITHMETIC-FRONTIER-TERMINAL-ORDERS-LEM-ARTIN-HASSE-CLOSURE"
+        ],
+        "lem:rows": [
+          "FACT-GAP-SIX-TWO-POWER-PLUS-ONE-SFC-LEM-FIRST-ROW"
+        ],
+        "lem:orbit": [],
+        "lem:rank": [
+          "FACT-GAP-SIX-TWO-POWER-PLUS-ONE-SFC-LEM-ROWS",
+          "FACT-GAP-SIX-TWO-POWER-PLUS-ONE-SFC-LEM-ORBIT"
+        ],
+        "thm:family": [
+          "FACT-GAP-SIX-TWO-POWER-PLUS-ONE-SFC-LEM-RANK",
+          "FACT-PHYSICAL-PRIME-TOTAL-DEGREE-REDUCTION-THM-RADIUS",
+          "FACT-GAP-THREE-HURWITZ-STRUCTURE-LEM-CRITICAL-IDEAL"
+        ]
+      },
+      "internal_controls": {
+        "orbit_denominator_and_rational_representative_controls": 2,
+        "complete_orbit_transition_and_unit_states": 60,
+        "complete_orbit_period_return": 1,
+        "corrupted_orbit_certificate_rejected": 1,
+        "universal_difference_hyperplane_controls": 15,
+        "universal_divided_row_raising_identities": 5,
+        "universal_rank_eliminant_identity": 1,
+        "universal_mod49_R_carry_identity": 1,
+        "universal_final_coefficient_reduction": 1,
+        "exact_Artin_Hasse_seventh_coefficient": 2,
+        "literal_complete_ordinary_boundary_rows": 60,
+        "literal_complete_divided_boundary_rows": 30,
+        "literal_diagonal_GF_normalization_profiles": 15
+      },
+      "total_internal_controls": 194,
+      "ordinary_terminal_alias": "FACTORIAL-GAP-SIX-TWO-POWER-PLUS-ONE-TERMINALS",
+      "ordinary_terminal_family": "N=2*7^r+1,r>=1",
+      "Gamma_extension": false,
+      "current_refined_test_rows": [
+        {
+          "a": 1,
+          "d": 6,
+          "support": [
+            1,
+            7
+          ],
+          "terminal_min": 6,
+          "terminal_restriction": "N not in {b*7^s:1<=b<=6,s>=0} UNION {7^r+1:r>=0} UNION {2*7^r+1:r>=1}",
+          "proved_excluded_families": [
+            {
+              "form": "b*7^s",
+              "b_min": 1,
+              "b_max": 6,
+              "s_min": 0
+            },
+            {
+              "form": "7^r+1",
+              "r_min": 0
+            },
+            {
+              "form": "2*7^r+1",
+              "r_min": 1
+            }
+          ],
+          "necessary_common_root_radius": {
+            "prime": 7,
+            "u": "-1/t",
+            "valuation": 1
+          }
+        }
+      ],
+      "strengthened_existing_conditional_routes": [
+        "DEGREE-SEVEN-RESIDUAL-TESTS-TO-FACTORIAL-ORDINARY-DEGREE-SEVEN-SFC",
+        "DEGREE-SEVEN-RESIDUAL-TESTS-TO-GAP-ORDINARY-DEGREE-SEVEN-FOUR-SUPPORT-FAMILIES",
+        "DEGREE-SEVEN-TWO-FAMILY-TESTS-TO-FACTORIAL-ORDINARY-DEGREE-SEVEN-SFC",
+        "DEGREE-SEVEN-TWO-FAMILY-TESTS-TO-GAP-ORDINARY-DEGREE-SEVEN-FOUR-SUPPORT-FAMILIES",
+        "DEGREE-SEVEN-GAP-SIX-TESTS-TO-FACTORIAL-ORDINARY-DEGREE-SEVEN-SFC",
+        "DEGREE-SEVEN-GAP-SIX-TESTS-TO-GAP-ORDINARY-DEGREE-SEVEN-FOUR-SUPPORT-FAMILIES",
+        "THIN-DIGIT-REFINED-TESTS-TO-FACTORIAL-ORDINARY-DEGREE-SEVEN-SFC",
+        "THIN-DIGIT-REFINED-TESTS-TO-GAP-ORDINARY-DEGREE-SEVEN-FOUR-SUPPORT-FAMILIES"
+      ],
+      "older_frontier_sources_and_statement_scopes_preserved": true,
+      "all_index_gap_six_SFC": false,
+      "ordinary_degree_seven_SFC": false,
+      "all_binomial_SFC": false,
+      "unrestricted_FC_or_SFC": false,
+      "uniform_H3_TN": false,
+      "independent_replay": false,
+      "formal_verification": false,
+      "external_review": false,
+      "novelty_claim": false,
+      "priority_claim": false
+    },
+    "gap_six_scaled_power_plus_one_terminal_families": {
+      "scope": "For every 1<=b<=6 and integer r>=0, ordinary gap-six SFC for every nonzero complex X(A+B X^6) holds at terminal N=b*7^r+1. The four new b3..6 depth families follow from uniform formal generating-series divided seeds, correct actual saturated matrices, eight explicit polynomial ideal witnesses and complete quotient-ring orbits. The b1/b2 families and r0 native terminals retain their separate proofs. The exact remaining degree-seven tests are N>=6 for which neither N nor N-1 is b*7^s,1<=b<=6,s>=0. All-index ordinary gap-six SFC, degree-seven and all-binomial SFC, unrestricted FC/SFC and full H3 positivity remain open; no positive-real-Gamma extension is asserted.",
+      "canonical_source": "factorial/image-rigidity/GAP_SIX_SCALED_POWER_PLUS_ONE_SFC.tex",
+      "checker": "factorial/image-rigidity/gap_six_scaled_power_plus_one_sfc.py",
+      "receipt": "factorial/image-rigidity/gap_six_scaled_power_plus_one_sfc_verification.json",
+      "mandatory_orbit_certificate": "factorial/image-rigidity/gap_six_scaled_power_plus_one_certificate.json",
+      "orbit_certificate_sha256": "7f40cf2202d81569c7b17de88679b1b1a9479a30f6768d437082e76b68719a91",
+      "owned_source_sha256": {
+        "factorial/image-rigidity/GAP_SIX_SCALED_POWER_PLUS_ONE_SFC.tex": "5b74a52031f6bc2f43c5acc9feac50ebc616972c51c0eee923797ab0e3b6ef55",
+        "factorial/image-rigidity/gap_six_scaled_power_plus_one_sfc.py": "8fe475898cdf5ad576ac24ee06e4765a78b776bd1a1a812272ebcd981df36de8",
+        "factorial/image-rigidity/gap_six_scaled_power_plus_one_certificate.json": "7f40cf2202d81569c7b17de88679b1b1a9479a30f6768d437082e76b68719a91",
+        "factorial/image-rigidity/gap_six_scaled_power_plus_one_sfc_verification.json": "e7d7f9ecbf6c61e45e30b547afe24ce43ab961f76afa721765433c9ed910f8f3"
+      },
+      "indispensable_input_sha256": {
+        "factorial/image-rigidity/ARITHMETIC_FRONTIER_TERMINAL_ORDERS.tex": "9721978bcb795af9169c695c5fb8348974069c5148e5e0caa8bd3c4d65650e07",
+        "factorial/image-rigidity/PHYSICAL_PRIME_TOTAL_DEGREE_REDUCTION.tex": "42c5fc615400a49dd3ae4f19a9a832381607e69ce4f6ff6d255b57ca4cfd156f",
+        "factorial/image-rigidity/gap_three_hurwitz_structure.tex": "22c690a45976c9b72b210ff76bbcd3a7084ddba0aae4af0c7f40ce2b109f705c",
+        "factorial/image-rigidity/GAP_SIX_THIN_DIGIT_SFC.tex": "c008b95285ed6c4cec7e89b922adc26a2ec3901f87bc636a165dffdf873ec4cf",
+        "factorial/image-rigidity/GAP_SIX_TWO_POWER_PLUS_ONE_SFC.tex": "7c8b7be9cd416803f0d43e0f76248cb5006f94ffa9feafc5295115d9cf61ffc6"
+      },
+      "frontier_refinement_input_sha256": {
+        "factorial/image-rigidity/GAP_SIX_THIN_DIGIT_SFC.tex": "c008b95285ed6c4cec7e89b922adc26a2ec3901f87bc636a165dffdf873ec4cf"
+      },
+      "declarations": {
+        "lem:digit-rows": "FACT-GAP-SIX-SCALED-POWER-PLUS-ONE-SFC-LEM-DIGIT-ROWS",
+        "lem:divided-seeds": "FACT-GAP-SIX-SCALED-POWER-PLUS-ONE-SFC-LEM-DIVIDED-SEEDS",
+        "lem:universal-matrix": "FACT-GAP-SIX-SCALED-POWER-PLUS-ONE-SFC-LEM-UNIVERSAL-MATRIX",
+        "lem:finite-certificate": "FACT-GAP-SIX-SCALED-POWER-PLUS-ONE-SFC-LEM-FINITE-CERTIFICATE",
+        "thm:families": "FACT-GAP-SIX-SCALED-POWER-PLUS-ONE-SFC-THM-FAMILIES",
+        "cor:scaled-family": "FACT-GAP-SIX-SCALED-POWER-PLUS-ONE-SFC-COR-SCALED-FAMILY",
+        "cor:degree-seven-frontier": "FACT-GAP-SIX-SCALED-POWER-PLUS-ONE-SFC-COR-DEGREE-SEVEN-FRONTIER"
+      },
+      "mathematical_dependencies": {
+        "lem:digit-rows": [],
+        "lem:divided-seeds": [
+          "FACT-GAP-SIX-SCALED-POWER-PLUS-ONE-SFC-LEM-DIGIT-ROWS",
+          "FACT-GAP-SIX-TWO-POWER-PLUS-ONE-SFC-LEM-DIAGONAL",
+          "FACT-ARITHMETIC-FRONTIER-TERMINAL-ORDERS-LEM-ARTIN-HASSE-CLOSURE"
+        ],
+        "lem:universal-matrix": [
+          "FACT-GAP-SIX-SCALED-POWER-PLUS-ONE-SFC-LEM-DIGIT-ROWS",
+          "FACT-GAP-SIX-SCALED-POWER-PLUS-ONE-SFC-LEM-DIVIDED-SEEDS"
+        ],
+        "lem:finite-certificate": [
+          "FACT-GAP-SIX-SCALED-POWER-PLUS-ONE-SFC-LEM-UNIVERSAL-MATRIX"
+        ],
+        "thm:families": [
+          "FACT-GAP-SIX-SCALED-POWER-PLUS-ONE-SFC-LEM-FINITE-CERTIFICATE",
+          "FACT-PHYSICAL-PRIME-TOTAL-DEGREE-REDUCTION-COR-PAIR",
+          "FACT-PHYSICAL-PRIME-TOTAL-DEGREE-REDUCTION-THM-RADIUS",
+          "FACT-GAP-THREE-HURWITZ-STRUCTURE-LEM-CRITICAL-IDEAL"
+        ],
+        "cor:scaled-family": [
+          "FACT-GAP-SIX-SCALED-POWER-PLUS-ONE-SFC-THM-FAMILIES",
+          "FACT-PHYSICAL-PRIME-TOTAL-DEGREE-REDUCTION-COR-PAIR",
+          "FACT-GAP-SIX-THIN-DIGIT-SFC-THM-FAMILY",
+          "FACT-GAP-SIX-TWO-POWER-PLUS-ONE-SFC-THM-FAMILY"
+        ],
+        "cor:degree-seven-frontier": [
+          "FACT-GAP-SIX-SCALED-POWER-PLUS-ONE-SFC-COR-SCALED-FAMILY",
+          "FACT-GAP-SIX-THIN-DIGIT-SFC-COR-DEGREE-SEVEN-FRONTIER"
+        ]
+      },
+      "internal_controls": {
+        "generic_P_seed_coefficient_identities": 14,
+        "selected_degree_excludes_all_carries": 14,
+        "generic_zero_row_seed_identities": 4,
+        "generic_b6_carry_T": 1,
+        "generic_b6_carry_A": 1,
+        "Artin_Hasse_low_section_integrality": 6,
+        "Artin_Hasse_degree7_unit": 1,
+        "generic_kappa_mod49_identity": 1,
+        "certificate_modulus_and_variable_order": 1,
+        "complete_four_cases": 1,
+        "complete_universal_matrix_entries": 120,
+        "complete_maximal_minor_identities": 24,
+        "quotient_degree_and_monic": 4,
+        "certificate_target_matches_orbit_input": 8,
+        "complete_six_minor_multipliers": 8,
+        "necessary_relation_sparse_identities": 8,
+        "quotient_parameter_unit": 4,
+        "quotient_squarefree_control": 4,
+        "complete_orbit_state_count": 4,
+        "every_orbit_state": 576,
+        "every_orbit_target_unit": 576,
+        "every_orbit_state_degree": 576,
+        "orbit_return_to_initial_state": 4,
+        "corrupted_membership_witness_rejected": 1,
+        "corrupted_orbit_state_rejected": 1,
+        "literal_global_division_integrality": 5200,
+        "complete_actual_boundary_entry_polynomials": 240,
+        "correct_b4_seed_is_constant": 1,
+        "incorrect_b4_seed_model_rejected": 1,
+        "Gamma_shift_bridge_coefficients": 5,
+        "lower_order_bridge_coefficients": 33
+      },
+      "total_internal_controls": 7442,
+      "ordinary_terminal_alias": "FACTORIAL-GAP-SIX-SCALED-POWER-PLUS-ONE-TERMINALS",
+      "ordinary_terminal_family": "N=b*7^r+1,1<=b<=6,r>=0",
+      "Gamma_extension": false,
+      "current_refined_test_rows": [
+        {
+          "a": 1,
+          "d": 6,
+          "support": [
+            1,
+            7
+          ],
+          "terminal_min": 6,
+          "terminal_restriction": "N not in {b*7^s:1<=b<=6,s>=0} UNION {b*7^r+1:1<=b<=6,r>=0}",
+          "proved_excluded_families": [
+            {
+              "form": "b*7^s",
+              "b_min": 1,
+              "b_max": 6,
+              "s_min": 0
+            },
+            {
+              "form": "b*7^r+1",
+              "b_min": 1,
+              "b_max": 6,
+              "r_min": 0
+            }
+          ],
+          "necessary_common_root_radius": {
+            "prime": 7,
+            "u": "-1/t",
+            "valuation": 1
+          }
+        }
+      ],
+      "strengthened_existing_conditional_routes": [
+        "DEGREE-SEVEN-RESIDUAL-TESTS-TO-FACTORIAL-ORDINARY-DEGREE-SEVEN-SFC",
+        "DEGREE-SEVEN-RESIDUAL-TESTS-TO-GAP-ORDINARY-DEGREE-SEVEN-FOUR-SUPPORT-FAMILIES",
+        "DEGREE-SEVEN-TWO-FAMILY-TESTS-TO-FACTORIAL-ORDINARY-DEGREE-SEVEN-SFC",
+        "DEGREE-SEVEN-TWO-FAMILY-TESTS-TO-GAP-ORDINARY-DEGREE-SEVEN-FOUR-SUPPORT-FAMILIES",
+        "DEGREE-SEVEN-GAP-SIX-TESTS-TO-FACTORIAL-ORDINARY-DEGREE-SEVEN-SFC",
+        "DEGREE-SEVEN-GAP-SIX-TESTS-TO-GAP-ORDINARY-DEGREE-SEVEN-FOUR-SUPPORT-FAMILIES",
+        "THIN-DIGIT-REFINED-TESTS-TO-FACTORIAL-ORDINARY-DEGREE-SEVEN-SFC",
+        "THIN-DIGIT-REFINED-TESTS-TO-GAP-ORDINARY-DEGREE-SEVEN-FOUR-SUPPORT-FAMILIES",
+        "B2-REFINED-TESTS-TO-FACTORIAL-ORDINARY-DEGREE-SEVEN-SFC",
+        "B2-REFINED-TESTS-TO-GAP-ORDINARY-DEGREE-SEVEN-FOUR-SUPPORT-FAMILIES"
+      ],
+      "older_frontier_sources_and_statement_scopes_preserved": true,
+      "all_index_gap_six_SFC": false,
+      "ordinary_degree_seven_SFC": false,
+      "all_binomial_SFC": false,
+      "unrestricted_FC_or_SFC": false,
+      "uniform_H3_TN": false,
+      "independent_replay": false,
+      "formal_verification": false,
+      "external_review": false,
+      "novelty_claim": false,
+      "priority_claim": false
     }
   },
   "open_bridge_assessments": {

@@ -283,6 +283,27 @@ indices divisible by \(d_0\), use
 Both the coefficient index and any threshold must follow the chosen
 convention. The proof above bypasses the ambiguous displayed formula.
 
+## Unrestricted exceptional coefficient and the transport order
+
+The [exact exceptional correction](EXCEPTIONAL_LAURENT_CORRECTION.md)
+removes the extra missing-head assumption from the scalar statement.
+For final leading and next coefficients \(A_N,B_N\), and trace
+\(\tau_N=[t^{-p_N}]Y_N\), the invariant is
+\[
+ C_N-\lambda_I\tau_N-\frac{p-1}{p\epsilon_{I-1}^p}A_NB_N.
+\]
+It equals the fixed final baseline in (11). Formula (10) remains the
+restricted \(\tau_N=B_N=0\) specialization proved here.
+
+The source transport's centroid coefficient is at head minus \(N\).
+Its monomial-face gap supplies zero at head minus one for \(N>1\),
+and the filtered conjugation/tail implications above preserve that
+zero if those constructions exist. A centroid mismatch therefore
+does not by itself violate this lemma's missing-head hypothesis.
+The [separate PBW audit](PBW_TRANSPORT_AND_FINAL_COEFFICIENT_COMPARISON.md)
+keeps those orders distinct and corrects the subsequent raw
+\(N\)-dependent coefficient calculation.
+
 ## Exact finite controls and their limits
 
 The [independent Fraction checker](check_conditional_laurent_invariance.py)
@@ -314,8 +335,8 @@ that omitting this hypothesis changes the conclusion.
 
 The main theorem of the primary paper is not adopted. The unresolved
 application inputs include production of the shared polynomial chain,
-all scaled head orders and the final-order equality (5), the exceptional
-missing-head normalization, the requisite Schur/auxiliary conjugations,
+all scaled head orders and the final-order equality (5), the monomial-face
+gap and requisite Schur/auxiliary conjugations,
 and the rank-one commuting curve with the stated branch/trace property.
 The gap dichotomy itself follows from the retained lemma's order and
 integrality hypotheses. No DC1 resolution, refutation,

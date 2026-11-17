@@ -280,12 +280,14 @@ from above gives
 \[
  \boxed{\mu_\infty:=\lim_{Y\to\infty}\mu_Y
         =\nu_\infty(\mathscr U_\infty),\qquad
-                     0\le\mu_\infty\le\tfrac18.}      \tag{4.3}
+                     0\le\mu_\infty\le\frac{13361}{114520}.}      \tag{4.3}
 \]
-The upper bound is retained by
-[J23511173](ELLIPTIC_EXCEPTION_JOINT_2_3_5_11_17_SIEVE.md): the
-fixed-class coefficient at `2,3,5,11,17` is `1/8`, already its value
-at `2,3,17` in [J2174](ELLIPTIC_EXCEPTION_JOINT_2_3_17_SIEVE.md).
+The upper bound follows from
+[J533](ELLIPTIC_EXCEPTION_JOINT_2_3_5_11_17_53_SIEVE.md): the
+fixed-class coefficient at `2,3,5,11,17,53` is `13361/114520`.
+Its earlier value at `2,3,5,11,17` is exactly `1/8` by
+[J23511173](ELLIPTIC_EXCEPTION_JOINT_2_3_5_11_17_SIEVE.md), already
+its value at `2,3,17` in [J2174](ELLIPTIC_EXCEPTION_JOINT_2_3_17_SIEVE.md).
 Larger prime sets impose additional conditions.
 Every finite \(\mu_Y\) is positive by EFA2. This does not show that
 \(\mu_\infty\) is positive.
@@ -387,10 +389,12 @@ the four classes, replace \(A_{K_0}(B)\) by the total Hasse count
 \(A_E(B)\), and replace \(\mu_Y\) by
 \(\mu_Y^{\rm tot}=\sum_{a\in A}\mu_{S_Y,a}\).
 The same proof gives (4.3)--(4.6) with
-\(0\le\mu_\infty^{\rm tot}\le116302241/531619620\), using
-[J23511173](ELLIPTIC_EXCEPTION_JOINT_2_3_5_11_17_SIEVE.md) at the
-finite set `2,3,5,11,17`. The earlier four-prime set `2,3,5,17`
-has its own exact coefficient `2300089/10392564` by
+\(0\le\mu_\infty^{\rm tot}\le2081912199403/9893175318390\), using
+[J533](ELLIPTIC_EXCEPTION_JOINT_2_3_5_11_17_53_SIEVE.md) at the
+finite set `2,3,5,11,17,53`. The earlier five-prime set
+`2,3,5,11,17` has exact coefficient `116302241/531619620` by
+[J23511173](ELLIPTIC_EXCEPTION_JOINT_2_3_5_11_17_SIEVE.md), and
+the four-prime set `2,3,5,17` has exact coefficient `2300089/10392564` by
 [J235173](ELLIPTIC_EXCEPTION_JOINT_2_3_5_17_SIEVE.md). The new bound
 uses the total normalization throughout; it does not mix a
 fixed-class numerator with a total-class coefficient.

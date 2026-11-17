@@ -169,12 +169,16 @@ normalized subleading coefficients become
 Their difference cannot be removed by translation. Thus the local
 family also fails the simultaneous centering claimed from the
 pure-power inference, without failing either ODE or the next chop.
-Here \(d_2=2,l_2=1\), exactly the exceptional arithmetic case relevant
-to the missing-head hypothesis in the
-[conditional Laurent lemma](CONDITIONAL_LAURENT_COEFFICIENT_INVARIANCE.md).
-This does not prove that the local family comes from the operators
-to which Lemma 6.1 is applied. It identifies the additional actual-pair
-input needed before that normalization can be used.
+Here \(d_2=2,l_2=1\), and the prior sequential gcd is \(2\), matching
+the source's exceptional arithmetic. The orders nevertheless differ:
+the centroid mismatch becomes a coefficient at head minus \(N\),
+whereas the [conditional Laurent lemma](CONDITIONAL_LAURENT_COEFFICIENT_INVARIANCE.md)
+uses head minus one. A monomial-face transport with gap \(N>1\)
+already supplies the latter zero, even with unequal centroids; see the
+[exact PBW transport calculation](PBW_TRANSPORT_AND_FINAL_COEFFICIENT_COMPARISON.md).
+Thus this control does not obstruct that local invariance statement.
+It remains a countercontrol to the displayed simultaneous-centering
+inference, without realizing the actual operators of Lemma 6.1.
 
 ## Concrete remaining obligation
 

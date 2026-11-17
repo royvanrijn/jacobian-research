@@ -172,7 +172,7 @@ On the matching-resolvent slice, globally soluble targets form a finite
 set. Its Hasse-target count `A_E(B)` satisfies, for all sufficiently large `B`,
 
 \[
- 1\le A_E(B)\le \frac{116302241}{531619620}C_E\log B
+ 1\le A_E(B)\le \frac{2081912199403}{9893175318390}C_E\log B
                          +O_E(\sqrt{\log B}).       \tag{9}
 \]
 
@@ -183,13 +183,25 @@ family is `A_E(B)+O_E(1)`. No leading asymptotic or infinitude of
 For the certified quadratic field `K0=Q(sqrt(-81275190))`, one also has
 
 \[
- A_{K_0}(B)\le\frac18 C_E\log B
+ A_{K_0}(B)\le\frac{13361}{114520} C_E\log B
                          +O_E(\sqrt{\log B}).       \tag{10}
 \]
 
-The [complete five-prime prefix at two, three, five, eleven and seventeen](ELLIPTIC_EXCEPTION_JOINT_2_3_5_11_17_SIEVE.md),
-J23511173, gives (9)--(10), using the square-root error theorem ESQ3.
-Write `q_0=2709173`. Eleven multiplies the class-one and class-`5q_0` coefficients by
+The [complete six-prime prefix at two, three, five, eleven, seventeen and fifty-three](ELLIPTIC_EXCEPTION_JOINT_2_3_5_11_17_53_SIEVE.md),
+J533, gives (9)--(10), using the square-root error theorem ESQ3.
+Fifty-three multiplies the previous certified-class coefficient by
+`13361/14315` and the class-one coefficient by
+`312824741/312825695`; the other two coefficients are unchanged.
+J531 proves five-saturation of the known rank-two subgroup from
+the unit character matrix at eleven. Together with the existing
+two-/three-saturation, this identifies the full finite image at
+fifty-three without asserting a displayed Mordell--Weil basis.
+J532 retains its correlations with the old eleven- and seventeen-
+adic tests explicitly.
+
+The earlier [five-prime prefix at two, three, five, eleven and seventeen](ELLIPTIC_EXCEPTION_JOINT_2_3_5_11_17_SIEVE.md)
+retains its exact coefficient `116302241/531619620` for that set.
+Write `q_0=2709173`. Eleven multiplies its preceding class-one and class-`5q_0` coefficients by
 `533/665`, giving `6724/8860327` and `533/55860`; the other two
 coefficients remain unchanged. The earlier
 [four-prime prefix at two, three, five and seventeen](ELLIPTIC_EXCEPTION_JOINT_2_3_5_17_SIEVE.md),
@@ -213,7 +225,7 @@ Hasse failures.
 all-primes limit of these finite-place measures and the exact additional
 tail condition needed to obtain its coefficient in the Hasse count.
 For the certified class the decreasing limit is between zero and
-`1/8`; if it is zero, the class's Hasse count is `o(log B)`.
+`13361/114520`; if it is zero, the class's Hasse count is `o(log B)`.
 Its value and, in the positive case, the required tail control remain
 open. The total-class version has the same distinction. Thus the full
 finite-`S` asymptotics do not establish Hasse infinitude or an all-places
@@ -326,14 +338,28 @@ hypothesis `Gal(Q(E[p])/Q)=GL_2(F_p)`, the
 identifies the level-one class-group maps with Selmer classes whose
 localization at `p` is zero. A second `E[p]` quotient copy occurs
 exactly when `e_p>1` or `Sha(E/Q)[p]!=0`. No finiteness or density
-claim for `Sha` is assumed or proved.
+claim for `Sha` is assumed or proved. The
+[adelic image theorem](ELLIPTIC_EXCEPTION_ADELIC_OPEN_IMAGE.md)
+supplies those image hypotheses outside a fixed finite prime set.
+The [multiplicity refinement](ELLIPTIC_EXCEPTION_CLASS_GROUP_MULTIPLICITIES.md)
+then recovers `dim Sha[p]=2 floor((c_p-1)/2)` from the actual
+class-group quotient multiplicity `c_p`. A third copy occurs exactly
+when `Sha[p]!=0`; exactly two copies certify deep formal image and
+zero `Sha[p]`, without assuming Sha finite.
 
 [Finite-primary separation](ELLIPTIC_EXCEPTION_FINITE_PRIMARY_SEPARATION.md)
 removes any prescribed finite set of primary correlations after
 refining a congruence cell and selecting a positive-density prime
 set. Its abstract countermodel shows that this separation and
 divergent fixed-cell means still do not prove recurrence: large
-common-quotient clustering remains uncontrolled.
+common-quotient clustering remains uncontrolled. The
+[fixed-character theorem](ELLIPTIC_EXCEPTION_FIXED_CHARACTER_DENSITIES.md)
+now gives arithmetic bounds for each fixed Fourier mode and, after
+forgetting finitely many exceptional primary coordinates, a weak
+limit of the normalized reweighted pole measures equivalent to Haar.
+It does not bound the complete finite-time Fourier energy or prove
+uniform integrability. The abstract countermodel also has Haar weak
+limit, so this averaged result alone still does not imply recurrence.
 
 Beyond this slice, [the fixed-plane local count](FIXED_MAP_PLANE_LOCAL_COUNTS.md)
 gives `O_P(B^2)` Hasse targets on every fixed rational affine plane.
@@ -355,8 +381,9 @@ targets. Partition the locally soluble targets into the globally soluble
 ones and the Hasse failures. The
 [explicit certified Hasse target](ELLIPTIC_EXCEPTION_HASSE_EXAMPLE.md)
 gives the lower bound once `B` exceeds its height. The upper bounds are
-J23511173, using the four-prime prefix, the exact joint five- and
-eleven-primary refinement and ESQ3.
+J533, using the five-prime prefix, its correlated finite image at
+fifty-three and the independent new formal coordinate, together
+with ESQ3.
 The rational local images are proved from two-descent,
 finite reductions at `41,53`, and formal-depth witnesses. Their
 correlations are retained; no full Mordell--Weil basis is assumed.

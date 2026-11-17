@@ -399,12 +399,13 @@ planes with order `B^3` local/global counts, and both have no Hasse
 failures. The argument uses degree-five-or-ten components of the
 quadratic-factor cover; the constant may depend on the plane.
 
-The [five-prime elliptic count](ELLIPTIC_EXCEPTION_JOINT_2_3_5_11_17_SIEVE.md)
-improves the Hasse upper coefficient to `116302241/531619620`, with
-`O_E(sqrt(log B))` error. This is the exact coefficient for tests at
-`2,3,5,11,17`. It replaces the four-prime coefficient as the current
-best upper bound while preserving that earlier exact prefix count.
-The certified quadratic field still has upper coefficient `1/8`.
+The [six-prime elliptic count](ELLIPTIC_EXCEPTION_JOINT_2_3_5_11_17_53_SIEVE.md)
+improves the Hasse upper coefficient to `2081912199403/9893175318390`,
+with `O_E(sqrt(log B))` error. This is the exact coefficient for tests
+at `2,3,5,11,17,53`. Its fifty-three-adic residue condition is correlated
+with the earlier tests at eleven and seventeen. The certified-field
+upper coefficient drops to `13361/114520`; the earlier four- and
+five-prime counts retain their exact prefix scopes.
 
 The elliptic sieve has an additional arithmetic support restriction.
 [Kummer branch exclusion](ELLIPTIC_EXCEPTION_KUMMER_BRANCH_EXCLUSION.md)
@@ -487,7 +488,7 @@ The [elliptic local sieve](ELLIPTIC_EXCEPTION_LOCAL_SIEVE.md) shows that any fix
 
 The [explicit elliptic criterion](ELLIPTIC_EXCEPTION_EXPLICIT_LOCAL_CRITERION.md) makes those varying tests concrete: outside `2,3,5`, they are exactly divisibility by three of `v_p(128x-25865)` for primes `p=2 mod3`, where `x=X+3552`. Any one cubeclass of this rational function gives a genus-four curve and only finitely many rational elliptic points. The [complete three-adic test](ELLIPTIC_EXCEPTION_COMPLETE_THREE_ADIC_CLASSIFICATION.md) and [two/five-adic test](ELLIPTIC_EXCEPTION_TWO_FIVE_ADIC_CLASSIFICATION.md) make the remaining small-prime conditions explicit and determine the rational local images. Exact finite-local logarithmic proportions are `55/156` at three, `4/7` at two, and `289/1092` jointly at two and three. The [joint sieve at two, three and seventeen](ELLIPTIC_EXCEPTION_JOINT_2_3_17_SIEVE.md) gives Hasse upper coefficient `1687/6936<1/4` with `O_E(sqrt(log B))` error, and exact local-only coefficient `5321/23946` with `o(log B)` error. J2174 separates this last coefficient among the four quadratic fields; the certified field has coefficient `1/8` relative to the whole-slice `C_E log B`. These finite-place counts give Hasse upper bounds; all-places infinitude remains open.
 
-The [quantitative finite-place theorem](ELLIPTIC_EXCEPTION_QUANTITATIVE_FINITE_LOCAL_ASYMPTOTICS.md) proves that every finite-place elliptic coefficient is rational. The [sharp error theorem](ELLIPTIC_EXCEPTION_SHARP_FINITE_LOCAL_ERROR.md) uses Hirata-Kohno--Takada's bound for two p-adic elliptic logarithms to give `O_(E,S)(sqrt(log B))` error for every fixed finite `S`. The [complete joint prefix at two, three, five and seventeen](ELLIPTIC_EXCEPTION_JOINT_2_3_5_17_SIEVE.md) has exact coefficient `2300089/10392564`. The [five-prime refinement](ELLIPTIC_EXCEPTION_JOINT_2_3_5_11_17_SIEVE.md) improves the Hasse upper coefficient to `116302241/531619620` with that error; the certified field retains coefficient `1/8`. Five changes only the class-one coefficient, multiplying it by `16/31`. The earlier coefficient `1687/6936` retains its direct finite-quotient proof. A nonempty finite-local field-target set has a positive rational coefficient. [Class-one positivity](ELLIPTIC_EXCEPTION_FINITE_LOCAL_CLASS_ONE.md) establishes this for every finite `S` in `Q(sqrt(-3))` without an all-places seed; two quadratic classes have that property. The [one-prime theorem](ELLIPTIC_EXCEPTION_ONE_PRIME_POSITIVITY.md) proves positivity at every individual place in all four classes, and cofinite one-prime extensions of any feasible finite set, without asserting simultaneous positivity for every finite set in the remaining classes. The [finite-quotient saturation theorem](ELLIPTIC_EXCEPTION_FINITE_QUOTIENT_SATURATION.md) computes the actual rational image and coefficients once a certified finite ambient quotient is supplied, without a full Mordell--Weil basis.
+The [quantitative finite-place theorem](ELLIPTIC_EXCEPTION_QUANTITATIVE_FINITE_LOCAL_ASYMPTOTICS.md) proves that every finite-place elliptic coefficient is rational. The [sharp error theorem](ELLIPTIC_EXCEPTION_SHARP_FINITE_LOCAL_ERROR.md) uses Hirata-Kohno--Takada's bound for two p-adic elliptic logarithms to give `O_(E,S)(sqrt(log B))` error for every fixed finite `S`. The [complete joint prefix at two, three, five and seventeen](ELLIPTIC_EXCEPTION_JOINT_2_3_5_17_SIEVE.md) has exact coefficient `2300089/10392564`. The [five-prime refinement](ELLIPTIC_EXCEPTION_JOINT_2_3_5_11_17_SIEVE.md) has exact coefficient `116302241/531619620`. The [six-prime refinement](ELLIPTIC_EXCEPTION_JOINT_2_3_5_11_17_53_SIEVE.md) improves the Hasse upper coefficient to `2081912199403/9893175318390` with that error; the certified-field upper coefficient is now `13361/114520`. Five changes only the class-one coefficient, multiplying it by `16/31`. The earlier coefficient `1687/6936` retains its direct finite-quotient proof. A nonempty finite-local field-target set has a positive rational coefficient. [Class-one positivity](ELLIPTIC_EXCEPTION_FINITE_LOCAL_CLASS_ONE.md) establishes this for every finite `S` in `Q(sqrt(-3))` without an all-places seed; two quadratic classes have that property. The [one-prime theorem](ELLIPTIC_EXCEPTION_ONE_PRIME_POSITIVITY.md) proves positivity at every individual place in all four classes, and cofinite one-prime extensions of any feasible finite set, without asserting simultaneous positivity for every finite set in the remaining classes. The [finite-quotient saturation theorem](ELLIPTIC_EXCEPTION_FINITE_QUOTIENT_SATURATION.md) computes the actual rational image and coefficients once a certified finite ambient quotient is supplied, without a full Mordell--Weil basis.
 
 The [class-specific eligibility sieve](ELLIPTIC_EXCEPTION_PRIME_ELIGIBILITY.md) erases every inert-prime test where the global class `a` is not locally square; numerator obstructions also require `51730` locally square. For each nontrivial class these eligible prime sets have densities `1/4` and `1/8`. The [ambient Haar diagnostic](ELLIPTIC_EXCEPTION_AMBIENT_HAAR_DIAGNOSTIC.md) proves that both the full-product all-soluble set and the rational closure have ambient measure zero. Its finite-prime support index grows at least as `2^(s-1)` for `s` good odd primes. The [triangular sieve](ELLIPTIC_EXCEPTION_TRIANGULAR_PRIME_SIEVE.md) proves independence of the fresh formal `p`-coordinate from all previous tests. Its all-depth conditional hazard kernel retains the correlated finite reduction and branch offset. The all-primes soluble set has finite accumulated predictable hazard almost surely, and a finite-cutoff hazard inequality gives explicit conditional count bounds. Proving weighted divergence for typical vectors remains open; no separate depth-one distribution assumption is required by that reduction. Katz's simultaneous elliptic Wieferich conjecture supplies context for a conditional depth-one-density statement, not an input to these unconditional results. The [branch-twist theorem](ELLIPTIC_EXCEPTION_BRANCH_TWIST.md) supplies a nontorsion branch point independent of the rational rank-two group over `Q(sqrt(51730))`, giving a rank-at-least-three input for future division-field work. The all-primes infinitude problem remains unresolved.
 
@@ -519,3 +520,27 @@ quotient `E[p]^2` exactly when `e_p>1` or `Sha(E/Q)[p]` is
 nonzero. No finiteness of `Sha` is assumed. This explains the
 possible extra source in the density problem without proving a
 prime-density estimate or a return-correlation bound.
+
+[Adelic openness](ELLIPTIC_EXCEPTION_ADELIC_OPEN_IMAGE.md) supplies
+the full Galois-image hypothesis outside a fixed finite prime set,
+using the proved non-CM property and Serre's theorem. Combined with
+the uniform Kummer index, it gives an open rank-two adelic affine
+image. The [multiplicity theorem](ELLIPTIC_EXCEPTION_CLASS_GROUP_MULTIPLICITIES.md)
+proves that the two-primary Sha group vanishes and that `dim Sha[p]`
+is even for every prime, using the proved all-prime Selmer-parity
+theorem. For sufficiently large `p`, if `c_p` is the largest number
+of actual `E[p]` quotient copies in `Cl(Q(E[p]))/p`, then
+`dim Sha[p]=2 floor((c_p-1)/2)`. In particular a third copy occurs
+exactly when `Sha[p]` is nonzero; exactly two copies certify deep
+formal image and zero `Sha[p]`. No finiteness of Sha is assumed.
+
+[Fixed-character densities](ELLIPTIC_EXCEPTION_FIXED_CHARACTER_DENSITIES.md)
+control every fixed coefficient character of order `n` outside a
+fixed finite primary set: its factoring-prime density is at most
+`1/J_2(n)`, and at prime order `ell` it is
+`ell^(-2)+O(ell^(-3))`. After forgetting those exceptional primary
+coordinates, normalized reweighted pole measures converge weakly
+to a measure equivalent to Haar, with a positive square-integrable
+density. This is an averaged measure theorem. It does not prove
+uniform integrability of the finite-time pole counts or recurrence;
+large common-quotient clustering remains the unresolved estimate.

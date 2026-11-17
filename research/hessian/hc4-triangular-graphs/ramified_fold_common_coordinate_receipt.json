@@ -1,7 +1,7 @@
 {
   "claim": "Ramified fold valuations and common-source-coordinate poles",
   "outcome": "PASS",
-  "check_count": 503,
+  "check_count": 527,
   "checks": [
     {
       "name": "all ancestral local recurrence controls",
@@ -1432,6 +1432,82 @@
       "passed": true
     },
     {
+      "name": "general transverse-degree necessary bound e2",
+      "passed": true
+    },
+    {
+      "name": "general transverse-degree necessary bound e3",
+      "passed": true
+    },
+    {
+      "name": "general transverse-degree necessary bound e4",
+      "passed": true
+    },
+    {
+      "name": "general transverse-degree necessary bound e5",
+      "passed": true
+    },
+    {
+      "name": "general transverse-degree necessary bound e6",
+      "passed": true
+    },
+    {
+      "name": "general transverse-degree necessary bound e7",
+      "passed": true
+    },
+    {
+      "name": "general transverse-degree necessary bound e8",
+      "passed": true
+    },
+    {
+      "name": "general transverse-degree necessary bound e9",
+      "passed": true
+    },
+    {
+      "name": "general transverse-degree necessary bound e10",
+      "passed": true
+    },
+    {
+      "name": "general transverse-degree necessary bound e11",
+      "passed": true
+    },
+    {
+      "name": "general transverse-degree necessary bound e12",
+      "passed": true
+    },
+    {
+      "name": "general transverse-degree necessary bound e13",
+      "passed": true
+    },
+    {
+      "name": "general transverse-degree necessary bound e14",
+      "passed": true
+    },
+    {
+      "name": "general transverse-degree necessary bound e15",
+      "passed": true
+    },
+    {
+      "name": "general transverse-degree necessary bound e16",
+      "passed": true
+    },
+    {
+      "name": "general transverse-degree necessary bound e17",
+      "passed": true
+    },
+    {
+      "name": "general transverse-degree necessary bound e18",
+      "passed": true
+    },
+    {
+      "name": "general transverse-degree necessary bound e19",
+      "passed": true
+    },
+    {
+      "name": "index3 also forces transverse degree one",
+      "passed": true
+    },
+    {
       "name": "independent inverse intersection Gram 0",
       "passed": true
     },
@@ -1896,6 +1972,22 @@
       "passed": true
     },
     {
+      "name": "localized D(a) inverse a",
+      "passed": true
+    },
+    {
+      "name": "localized D(a) inverse b",
+      "passed": true
+    },
+    {
+      "name": "localized D(a) inverse c",
+      "passed": true
+    },
+    {
+      "name": "localized D(a) inverse d",
+      "passed": true
+    },
+    {
       "name": "localized D(c+1) inverse a",
       "passed": true
     },
@@ -1957,6 +2049,10 @@
     },
     {
       "name": "written scope retains m=c=0 and d_2=-1",
+      "passed": true
+    },
+    {
+      "name": "written scope retains (m^2-2)*p<e-1",
       "passed": true
     },
     {
@@ -2301,8 +2397,8 @@
       ]
     }
   },
-  "proof_sha256": "87119ad21a318e5d50c43563b76065f8dc32248ced230db2d4a9cc174bd1c0e2",
-  "checker_sha256": "4d9aaeddc5e333637296fff98142cbfb5f8b582192497ad3e2887d11f72636fb",
+  "proof_sha256": "a22741215a62465805621346938f9c93fbcdd6cd76ad0aff3aebd21ffec3a4a0",
+  "checker_sha256": "0e4b089fdc8a3d960e2b8343a08884e0ba991c56b033873b570f716bcb4001ac",
   "retained_inputs": [
     {
       "path": "CANONICAL_BOUNDARY_AND_STABLE_COMPLETE_INTERSECTION_OBSTRUCTION.md",
@@ -2338,6 +2434,7 @@
     "polar_prime_anchor_requires_nonempty_unramified_boundary": true,
     "index_two_minimal_case2_excluded_with_anchor": true,
     "polar_case1_fold_transverse_degree_one": true,
+    "general_index_transverse_degree_inequality": true,
     "refined_two_necessary_fold_multiplicity_types": true,
     "genuine_affine_exact_volume_survivor_control": true,
     "ramified_whole_chart_assumed": false,

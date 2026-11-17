@@ -86,10 +86,18 @@ over k. Normalize Wbar by the scalar
     c_Gamma=D(H) mod Gamma,  c_Gamma!=0.
 
 Modulo regular elements this normalized operator equals
-(t/D(t))*D. Indeed H=t*h with h a unit; its leading normal
-coefficient is h*D(t), and any difference in the normalized
-coefficient divisible by t sends all modes in (3) into the
-regular ring.
+(t/D(t))*D. To check the required order precisely, write H=t*h
+with h a unit and let c lift c_Gamma. Since c is congruent to
+h*D(t) modulo t, one has
+
+    h/c-1/D(t) in t*B_Gamma,
+    H/c-t/D(t) in t^2*B_Gamma.
+
+Thus the FULL difference of the two vector fields is t^2 times
+a regular multiple of D. On a mode u^-i, D has pole i+e, whereas
+t^2 adds 2e; the resulting order e-i is positive. The difference
+therefore lands in the regular ring. A difference of only t*D
+would not suffice.
 
 In the strict coordinate t=u^e,
 

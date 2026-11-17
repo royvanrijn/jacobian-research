@@ -174,6 +174,15 @@ def run():
     check("index2 Case2 cannot meet common-coordinate anchor",
           all(not(1>aa*aa) for aa in range(1,40)))
 
+    for ee in range(2,20):
+        check(f"general transverse-degree necessary bound e{ee}",all(
+            (mm*mm-2)*pp<ee-1
+            for pp in range(1,25) for mm in range(1,12)
+            if mm*mm*pp*pp<pp*(2*pp+ee-1)))
+    check("index3 also forces transverse degree one",all(
+        not(mm*mm*pp*pp<pp*(2*pp+2))
+        for pp in range(1,80) for mm in range(2,15)))
+
     # Independent local intersection matrices: -inverse equals the
     # total-pullback row Gram matrix.
     for idx,parents in enumerate([
@@ -265,6 +274,9 @@ def run():
     for variable,expr in [(a,a),(b,a*d/c),(c,a*d*d/c**2-1),
                           (d,(d/c)*(a*d*d/c**2-1))]:
         eq("localized D(c) inverse "+str(variable),modideal(expr-variable),0)
+    for variable,expr in [(a,a),(b,b),(c,b*b/a-1),
+                          (d,(b/a)*(b*b/a-1))]:
+        eq("localized D(a) inverse "+str(variable),modideal(expr-variable),0)
     U=b/(c+1)
     for variable,expr in [(a,U*U*(1+U*d)),(b,U*(1+U*d)),
                           (c,U*d),(d,d)]:
@@ -297,6 +309,7 @@ def main():
         "D^vee . E^vee=p_D*a",
         "n_E > a^2",
         "m=c=0 and d_2=-1",
+        "(m^2-2)*p<e-1",
         "n_E<=p*(2p+1)<4p^2",
         "(p,r,n_E)=(2,1,5)",
         "r=p+1,       n_E=p^2+p+1",
@@ -331,6 +344,7 @@ def main():
             "polar_prime_anchor_requires_nonempty_unramified_boundary":True,
             "index_two_minimal_case2_excluded_with_anchor":True,
             "polar_case1_fold_transverse_degree_one":True,
+            "general_index_transverse_degree_inequality":True,
             "refined_two_necessary_fold_multiplicity_types":True,
             "genuine_affine_exact_volume_survivor_control":True,
             "ramified_whole_chart_assumed":False,

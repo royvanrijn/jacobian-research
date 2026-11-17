@@ -125,9 +125,15 @@ Finally
  \frac{2\kappa}{\lambda_I^2}
  =\frac{p-1}{p\epsilon^p}.
 \]
-Combining these exact contributions proves (1). Earlier distinguished
-prefix coefficients retain the original lemma's linear formula; their
-nonlinear terms are already strictly below the distinguished order.
+Combining these exact contributions proves (1). For an earlier prefix \(k<I\), put \(\ell_k=L_{N,k}/D\).
+The corresponding exact linear formula, including the unrestricted
+trace coefficient, is
+\[
+ [t^{L_{N,k}-p_N}]H_k(P_N,Y_N)-\lambda_k\tau_N
+ =[z^{\ell_k-p/2}]W_k-\lambda_k[z^{-p/2}]W.
+\]
+Its nonlinear terms are already strictly below the distinguished order.
+With \(\tau_N=0\), this is precisely the earlier restricted formula.
 
 ## Nonzero-head controls and application boundary
 

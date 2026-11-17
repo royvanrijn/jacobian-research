@@ -14,7 +14,7 @@ Polynomial Keller maps, their fibres, monodromy and boundary geometry.
 | Marked quadratic ruling closure through degree six | Internal result | proved | [Source](affine-complements/RULING_SIX_SQUARE_DEFORMATION_AND_MARKED_QUADRATIC_EXCLUSION.md) |
 | A polar zero excludes a uniform ruling-six family | Internal result | proved | [Source](affine-complements/RULING_SIX_POLAR_ZERO_AND_AFFINE_RESPONSE_FAMILY.md) |
 
-**Computed obligations:** 15 unresolved; 3 resolved within their exact scope.
+**Computed obligations:** 16 unresolved; 3 resolved within their exact scope.
 
 
 Scope limits:
@@ -28,6 +28,10 @@ Scope limits:
 - Source-regular H3 and the quadratic remainder remain source functions; formal half-powers only encode coefficient residues. No target landing, trace integrality, inverse or normal-tail termination follows from the ruling-six proof.
 - The retained marked quadratic model is closed through ruling six. Its explicit common-source-coordinate, complete smoothA1 boundary and whole-root-chart inputs are now proved. Partially expanded model/classification applicability, higher rulings, other deck classes and automatic target/ordinary-codifferent integrality remain separate.
 - Ordinary codifferent differentiation now characterizes the full finite order: S={f in L:D_Pf,D_Qf in Lambda}, and one generic target D suffices uniformly on source polynomials. In source-finite frames, one generic first velocity in Lambda forces inversion. Its automatic membership remains open; common-coordinate regularity on the unramified completion does not supply it.
+- For a proper canonical completion the common source-coordinate frame is never source-finite. Its exact plinth/leading-coefficient ideal has at least double zeros on added fibres. An invariant source replica extends the full finite normalization or stabilizes the ordinary codifferent iff that invariant coordinate is already integral; local nilpotence alone supplies neither condition.
+- A nonempty unramified boundary anchors every polar ramified prime by n>q^2. Minimal Borisov Case2 folds are excluded; remaining polar folds have transverse degree one and types (2,1,5) or (p,p+1,p^2+p+1). A smooth affine noncontracting survivor, without a supplied Keller target pair, shows where finite-target trace compatibility is still required.
+- The ordinary trace defect has an intrinsic logarithmic spectrum -i/e and normalized trace -rank/2. A generic target derivative has a non-dense maximal Bergman domain in the ramified case; dense-domain arguments cannot supply automatic integrality without proving the inverse condition.
+- Whole root charts transfer any r>1 unramified multiplicity to an actual degree-rd plane Keller map with cyclic deck subgroup and a specified affine pseudo-plane source image. The new marked ramified prime has nonpolar common coordinate, and selected opens are not full finite intermediate normalizations. This architecture remains unexcluded.
 
 Tracked obligations (computed states):
 
@@ -37,5 +41,6 @@ Tracked obligations (computed states):
 - **mathematical / open:** [Determine whether characteristic-zero Keller failures exist in dimension two (dimension-three examples are retained), and sharpen the separate cubic dimension and support upper bounds.](README.md) — GAP-JACOBIAN-4
 - **mathematical / open:** [Which actual plane Keller maps outside the now-closed retained marked quadratic ruling-six model satisfy its remaining structural/classification hypotheses? The common source pencil and whole boundary charts are now proved; higher rulings, other deck classes and ramified-prime integrality remain separate.](affine-complements/RULING_SIX_SQUARE_DEFORMATION_AND_MARKED_QUADRATIC_EXCLUSION.md) — GAP-RULING-SIX
 - **mathematical / open:** [Can actual Keller/source constraints force one generic first velocity into the ordinary codifferent in a source-finite frame, eliminating the exact polar marked traces at original omitted ramified primes?](../hessian/hc4-triangular-graphs/CODIFFERENT_PREIMAGES_UNDER_TARGET_DERIVATIONS.md) — GAP-HESSIAN-AUTOMATIC-ONE-VELOCITY-CODIFFERENT
+- **mathematical / open:** [For actual plane Keller maps with nonempty unramified completion boundary, eliminate or realize the remaining polar index-two types (p,r,n)=(2,1,5) and (p,p+1,p^2+p+1) while preserving the FULL finite target normalization and trace pairing. The genuine affine geometric survivor is not a supplied Keller target. Empty-unramified-boundary maps, nonpolar folds and higher ramification indices remain separate parts of the original JC2/trace-integrality objective.](../hessian/hc4-triangular-graphs/RAMIFIED_FOLD_VALUATIONS_AND_COMMON_COORDINATE_POLES.md) — GAP-HESSIAN-RAMIFIED-POLAR-FOLD-REALIZATION
 
 [Exact scopes and verification limits](../STATUS.md). Publication, formal verification and independent review are separate statuses. [Dependency routes](../DEPENDENCIES.md) and [scope audit](../SCOPES.md) expose remaining gaps.

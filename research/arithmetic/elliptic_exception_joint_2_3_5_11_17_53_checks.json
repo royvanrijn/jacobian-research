@@ -1,0 +1,387 @@
+{
+  "all_places_asymptotic_claimed": false,
+  "arithmetic": "standard-library exact integers and fractions",
+  "certified_pole_probability": "1/15",
+  "checks_passed": 48,
+  "coefficients": {
+    "1": "1251298964/1648862553065",
+    "13545865": "533/55860",
+    "2": "205/2456",
+    "27091730": "13361/114520"
+  },
+  "complete_group_pairs": 3600,
+  "conditional_five_zero_by_five_state": [
+    "1/533",
+    "1/533"
+  ],
+  "conditional_joint_zero_by_five_state": [
+    "1/327795",
+    "1/327795"
+  ],
+  "conditional_three_zero": "1/615",
+  "earlier_five_prime_controls": 29,
+  "exact_controls": [
+    "previous_five_prime_controls_pass",
+    "all_rational_points_on_curve",
+    "R_and_S_generate_same_subgroup_as_P_Q_with_T",
+    "fifty_three_good_active",
+    "complete_fifty_three_point_count",
+    "complete_group_closure",
+    "literal_generator_reductions",
+    "two_primary_projections",
+    "three_primary_projections",
+    "five_primary_projections",
+    "independent_two_torsion",
+    "three_generator_exact_order",
+    "five_generator_exact_order",
+    "complete_primary_product_equals_curve",
+    "no_finite_F_zero_branch",
+    "branch_squareclass_nonsquare",
+    "class_eligibility",
+    "three_saturation_41_character",
+    "three_saturation_53_character",
+    "three_saturation_matrix_unit",
+    "five_saturation_character_matrix",
+    "complete_five_saturation_character_image",
+    "R_three_formal_depth",
+    "S_three_formal_projection_depth",
+    "new_three_zero_equals_old_17_branch_on_n_zero",
+    "new_five_zero_equals_old_11_pole",
+    "exact_sixty_P_on_curve",
+    "sixty_P_reduces_to_O",
+    "formal_fifty_three_depth_one",
+    "formal_fifty_three_residue",
+    "class_one_old_parities_give_new_two_zero",
+    "certified_class_old_parities_give_new_two_zero",
+    "other_classes_never_two_zero",
+    "conditional_three_zero_ratio",
+    "old_five_first_digit_mass_False",
+    "conditional_five_zero_ratio_False",
+    "conditioned_joint_zero_ratio_False",
+    "old_five_first_digit_mass_True",
+    "conditional_five_zero_ratio_True",
+    "conditioned_joint_zero_ratio_True",
+    "certified_uniform_odd_zero_probability",
+    "formal_fifty_three_soluble_mass",
+    "exact_class_one_retention",
+    "exact_certified_retention",
+    "exact_six_prime_coefficients",
+    "exact_new_total",
+    "strict_total_improvement",
+    "strict_certified_improvement"
+  ],
+  "external_review": false,
+  "finite_weighted_states_per_five_state": 225,
+  "formal_soluble_fraction": "1/2863",
+  "formal_verification": false,
+  "full_basis_assumed": false,
+  "full_joint_image_proved_by_finite_controls": false,
+  "input_sha256": {
+    "ELLIPTIC_EXCEPTION_COMPLETE_THREE_ADIC_CLASSIFICATION.md": "16d07f196cdaa02dc6ff64624d423ef521399ed75a26f8f7c8dbd283624990ff",
+    "ELLIPTIC_EXCEPTION_EXPLICIT_LOCAL_CRITERION.md": "365561753071dfa0fc692c42ebc0d5c6ae88bf48038387de431527b1485faff5",
+    "ELLIPTIC_EXCEPTION_JOINT_2_3_17_SIEVE.md": "7ee7d83f46de89349c9c7623bdb16e47cd3d3119b62adf512679b0bb3105ec56",
+    "ELLIPTIC_EXCEPTION_JOINT_2_3_5_11_17_53_SIEVE.md": "b0cc040feec0879555d11afb04d425937b1d895a28573c0dc7ab6b9adeef3475",
+    "ELLIPTIC_EXCEPTION_JOINT_2_3_5_11_17_SIEVE.md": "65dd0d0f4b4c26ff3a0a2ba9cbe018458f2c14d0be8f2637e1db73add2e112ab",
+    "ELLIPTIC_EXCEPTION_JOINT_2_3_5_17_SIEVE.md": "6c58df79c977de80b8da5c338d3725684f2f443d5d58e92237a219aedf86d435",
+    "ELLIPTIC_EXCEPTION_SHARP_FINITE_LOCAL_ERROR.md": "4a104c26ac12be060a16f95b830c9a293e038fe18438568e205a4d436d3db90b",
+    "ELLIPTIC_EXCEPTION_TWO_FIVE_ADIC_CLASSIFICATION.md": "3e4c42c434119b380ebce53aa4ba58641e5d001b733608260c44c5323e885418",
+    "sources/milne-elliptic-curves-2006.pdf": "14a89055a0a7f52b08fad1d53786c9165caba8be837491024b9b210afa384486",
+    "verify_elliptic_exception_joint_2_3_5_11_17.py": "bb361338a186614d3c03f62c13b5dac4781c04f2f9eea02b9112fe3bfa6fdbd0",
+    "verify_elliptic_exception_joint_2_3_5_11_17_53.py": "5bc8ecff152746b1ca2ac20d4787bf4ee508d1043e2cdcaf3f8cb67dc2ec4be3",
+    "verify_elliptic_exception_joint_2_3_5_17.py": "53a611c15ab25f35a4123fe8094a8fdb194d679b1ebb8375eaca65140d3568ed",
+    "verify_elliptic_exception_one_prime_positivity.py": "6ce01583aae8236a0966be423f38d342f6f3c0be15b9f93251c7014e839930d4"
+  },
+  "new_total": "2081912199403/9893175318390",
+  "primary_projections": {
+    "five": [
+      [
+        36,
+        27
+      ],
+      [
+        36,
+        27
+      ],
+      null
+    ],
+    "three": [
+      [
+        13,
+        45
+      ],
+      null,
+      null
+    ],
+    "two": [
+      [
+        30,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ]
+    ]
+  },
+  "python_version": "3.12.3",
+  "reduction_points": [
+    null,
+    [
+      0,
+      0
+    ],
+    [
+      1,
+      6
+    ],
+    [
+      1,
+      47
+    ],
+    [
+      4,
+      3
+    ],
+    [
+      4,
+      50
+    ],
+    [
+      5,
+      9
+    ],
+    [
+      5,
+      44
+    ],
+    [
+      7,
+      12
+    ],
+    [
+      7,
+      41
+    ],
+    [
+      13,
+      8
+    ],
+    [
+      13,
+      45
+    ],
+    [
+      14,
+      12
+    ],
+    [
+      14,
+      41
+    ],
+    [
+      15,
+      14
+    ],
+    [
+      15,
+      39
+    ],
+    [
+      17,
+      9
+    ],
+    [
+      17,
+      44
+    ],
+    [
+      21,
+      16
+    ],
+    [
+      21,
+      37
+    ],
+    [
+      22,
+      11
+    ],
+    [
+      22,
+      42
+    ],
+    [
+      23,
+      18
+    ],
+    [
+      23,
+      35
+    ],
+    [
+      26,
+      0
+    ],
+    [
+      27,
+      5
+    ],
+    [
+      27,
+      48
+    ],
+    [
+      28,
+      10
+    ],
+    [
+      28,
+      43
+    ],
+    [
+      30,
+      0
+    ],
+    [
+      31,
+      7
+    ],
+    [
+      31,
+      46
+    ],
+    [
+      32,
+      15
+    ],
+    [
+      32,
+      38
+    ],
+    [
+      33,
+      2
+    ],
+    [
+      33,
+      51
+    ],
+    [
+      34,
+      9
+    ],
+    [
+      34,
+      44
+    ],
+    [
+      35,
+      12
+    ],
+    [
+      35,
+      41
+    ],
+    [
+      36,
+      26
+    ],
+    [
+      36,
+      27
+    ],
+    [
+      37,
+      26
+    ],
+    [
+      37,
+      27
+    ],
+    [
+      38,
+      16
+    ],
+    [
+      38,
+      37
+    ],
+    [
+      43,
+      4
+    ],
+    [
+      43,
+      49
+    ],
+    [
+      44,
+      8
+    ],
+    [
+      44,
+      45
+    ],
+    [
+      45,
+      23
+    ],
+    [
+      45,
+      30
+    ],
+    [
+      49,
+      1
+    ],
+    [
+      49,
+      52
+    ],
+    [
+      50,
+      16
+    ],
+    [
+      50,
+      37
+    ],
+    [
+      51,
+      13
+    ],
+    [
+      51,
+      40
+    ],
+    [
+      52,
+      8
+    ],
+    [
+      52,
+      45
+    ]
+  ],
+  "retention": {
+    "1": "312824741/312825695",
+    "13545865": "1",
+    "2": "1",
+    "27091730": "13361/14315"
+  },
+  "saturation_character_matrix_five": [
+    [
+      2,
+      1
+    ],
+    [
+      1,
+      1
+    ]
+  ],
+  "status": "pass"
+}

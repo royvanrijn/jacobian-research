@@ -1,0 +1,549 @@
+{
+  "date": "2026-11-18",
+  "scope": "Edition-specific internal primary-source application audit; no full underlying-proof audit or external assurance.",
+  "primary_imports": [
+    {
+      "id": "LACK00",
+      "snapshot": "sources/lackenby-word-hyperbolic-math9808120v2.pdf",
+      "sha256": "4bfae0b3c00f2f3cce0caad57b04bed305b527e5b5276a97acc15e73e3dd07f4",
+      "edition": "arXivmath/9808120v2,7September1999,49pages",
+      "read": "Exact Theorem3.1 printedp12; cusp definitions pp1-2; actual proof pp17-19",
+      "visual_pages": [
+        12,
+        17,
+        18,
+        19
+      ],
+      "statement": "Complete finite-volume orientable hyperbolic interior; any embedded horoball neighborhood; each filled ordinary slope length>6 implies irreducible, atoroidal, non-Seifert and infinite word-hyperbolic fundamental group.",
+      "application": "One marked parent N, exact embedded area11 cusp, all slopes(-1,2+6n) have ordinary length>10+19n>6.",
+      "limits": "Full upstream lemmas/Gabai/Thurston proofs imported; maximal cusp and normalized length not required."
+    },
+    {
+      "id": "AGOL00",
+      "snapshot": "sources/agol-bounds-exceptional-2000.pdf",
+      "sha256": "095e93ec443037cdc71252fe78dcd8918b6ac7785a65b327414d477cd8aa8482",
+      "edition": "PublishedGT4(2000),431-449,14November2000",
+      "read": "Definitions pp432-433 and Theorem6.2 p440/PDF10",
+      "visual_pages": [
+        10
+      ],
+      "statement": "Ordinary length>6 on an embedded horocusp yields hyperbolike filling, defined irreducible with infinite word-hyperbolic fundamental group.",
+      "application": "Independent six-theorem attribution; main route uses Lackenby explicit atoroidal/non-Seifert conclusions.",
+      "limits": "Full proof imported; published word-hyperbolicity supersedes earlier historical qualification in Lackenby1999v2."
+    },
+    {
+      "id": "AFW-GEOMETRIZATION",
+      "snapshot": "sources/afw-3manifold-groups-final-author-2015.pdf",
+      "sha256": "31551e1a7cb6ce01026ba33e56806bfecf2c3e4d3afbec4dbf6c6bf0b7ef28ae",
+      "read": "Theorem1.7.6 printedp19/PDFp23",
+      "statement": "Compact orientable irreducible3-manifold with empty/toroidal boundary has minimal decomposition into hyperbolic or Seifert pieces.",
+      "application": "Closed irreducible atoroidal non-Seifert filling has no JSJ tori and is wholly hyperbolic.",
+      "limits": "Geometrization imported; no independent proof of Perelman/Thurston."
+    }
+  ],
+  "independent_internal_statement_readers": [
+    "root",
+    "twist_cover_model"
+  ],
+  "software_scope": "Version-pinned exact PD/cover/oriented basis/permanent-fill algorithms and verified complete/cusp interval algorithms are trusted imports. Default exact controls, fresh actual topology and Sage modes each replayed; these do not confer whole-proof independent/formal/external assurance.",
+  "formal_verification": false,
+  "external_review": false,
+  "internal_pdf_review": {
+    "schema_version": 1,
+    "review_kind": "Blind internal mathematical review of frozen PDF",
+    "pdf": {
+      "path": "/home/royvanrijn/src/jacobian-research/research/meridional-rank/representations/ALL_PARAMETER_HYPERBOLIC_DOUBLE_COVERS.pdf",
+      "sha256": "77b332dc5ed8e70939b86b5421276d1b9bd695cd723574ffaab54d96e66dd536",
+      "page_count": 7,
+      "hash_and_page_count_verified": true
+    },
+    "scope": {
+      "material_read": [
+        "Complete text of all seven PDF pages",
+        "Rendered images of all seven PDF pages"
+      ],
+      "excluded_material": [
+        "Repository source files and history",
+        "Source TeX",
+        "Scripts and replay receipts",
+        "Retained supplements and certificate arrays",
+        "Cited external sources"
+      ],
+      "method": "Review the PDF's internal mathematical deductions. Accept the stated imported algorithm and theorem contracts as explicit premises, without independently verifying those contracts. Independently recompute the literal pure-braid cancellation, displayed augmentation free-word action, T-squared conjugation identity, and braid closure permutation in memory from the PDF.",
+      "writes": [
+        "This review artifact only"
+      ],
+      "review_status": "Internal AI-assisted review; not external specialist review or formal verification"
+    },
+    "verdict": {
+      "classification": "No substantive internal mathematical gap found, conditional on the stated topological binding and analytic certificate premises",
+      "theorem_1": "The actual-cover identification and all-n hyperbolicity conclusion follow if the stated signed raw-chain comparisons, marked triangulation binding, complete-shape verification, and embedded-cusp interval inequalities hold.",
+      "standalone_pdf_limit": "The PDF describes but does not reproduce the raw normal-chain arrays, complete exact triangulation data, interval endpoints, or verification source snapshots. This review does not independently authenticate those finite certificate claims.",
+      "substantive_blockers_found": 0,
+      "minor_notational_findings_found": 1
+    },
+    "findings": [
+      {
+        "id": "AC-01",
+        "status": "No internal gap found",
+        "pages": [
+          2,
+          3
+        ],
+        "topic": "Actual crossing circle, surgery, and sign",
+        "assessment": "The literal identity P=A_(2,5)A_(3,5) freely reduces correctly. The stated six crossing roles give a fifth component passing over both selected strands and then under both after its cancelling fourth-strand detour. Together with the explicitly outside closing arc and cap isotopy, this supplies an actual transverse twice-punctured spanning disk, not only a peripheral group relation. The disk gives the zero longitude. The disk-twist map sends mu-q lambda to mu; the displayed augmentation action and T-squared calculation identify the local braid as 2q positive half-twists. The argument explicitly extends over the knot neighborhood, preserving its meridian. Thus q=3n gives the literal K_n, uniformly.",
+        "independent_checks": [
+          "Pure-braid cancellation: passed",
+          "Displayed five-meridian augmentation action: passed",
+          "T squared equals conjugation by (ab)^(-1): passed",
+          "The literal B permutation is one four-cycle; adding the even exponent 6n preserves one component"
+        ],
+        "premise_boundary": "The diagram overpass and cap-isotopy description is assessed as written; no external diagram or PD array was consulted."
+      },
+      {
+        "id": "AC-02",
+        "status": "No internal gap found conditional on exact signed-chain premises",
+        "pages": [
+          3,
+          4
+        ],
+        "topic": "Branched cover and uniform peripheral map",
+        "assessment": "Character zero on both the circle meridian and its longitude, using linking number two, makes its boundary split into two degree-one torus covers. Branch filling along the primitive lift of the squared knot meridian produces the actual branched-cover exterior. The two downstairs classes mu and mu+lambda form an integral basis. Their claimed signed lifts (-1,2) and (-1,1), expressed in the same raw triangulation with orientations inherited rather than independently chosen, give lambda=(0,-1) by subtraction. The resulting matrix has determinant one. Linearity therefore proves the map for every integer parameter; this is not an extrapolation from sample fillings. In particular (1,-3n) lifts to (-1,2+3n) on each circle cusp.",
+        "premise_boundary": "The signed raw normal-chain identities, unchanged character/gluings/cusp indices, and orientation behavior of the pinned covering routine are asserted certificate data and algorithm contracts; their arrays/source were not read."
+      },
+      {
+        "id": "AC-03",
+        "status": "No internal gap found",
+        "pages": [
+          4,
+          5
+        ],
+        "topic": "Branched annulus framing and relative pants filling",
+        "assessment": "The double branched cover of the twice-punctured disk is an annulus. A disk-neighborhood ball with two trivial branch arcs lifts to A times I, a solid torus; its two lifted boundary circles are parallel cores. The annulus pushoff is locally the lift of the disk longitude, so it supplies the required framing with no extra integer term. Opposite orientations of the lifted cores reverse both meridian and longitude, preserving the unoriented parameter. Removing the cores gives Q times S1 with s0=s1+s2. Filling s_j+t_j f extends the product Seifert structure without exceptional fibers and leaves a solid torus with primitive outer meridian s0+(t1+t2)f. This proves the relative homeomorphism because a solid torus is determined relative to its boundary by its primitive meridian, not merely by its first homology."
+      },
+      {
+        "id": "AC-04",
+        "status": "Minor notation/order ambiguity; nonblocking",
+        "pages": [
+          5
+        ],
+        "topic": "Order of the replacement parameter pair",
+        "observation": "The text calls the meridionally filled U1 parameter t2=0 and retains U0, but then prints replacement of (-3n,-3n) by (0,-6n). In the immediately preceding ordered (t1,t2) convention this should be (-6n,0), unless the pair is explicitly reordered.",
+        "consequence": "Lemma 4 permits the intended choice, and the definition of N and the following remaining-slope calculation both use U1 filled meridionally and U0 carrying -6n. This is a local ordering ambiguity, not a substantive failure of the argument.",
+        "suggested_correction": "Print (-6n,0) in the existing (t1,t2) order, or explicitly label the tuple as (U1,U0)."
+      },
+      {
+        "id": "AC-05",
+        "status": "No internal gap found conditional on marked topological binding",
+        "pages": [
+          1,
+          4,
+          5
+        ],
+        "topic": "Outside tangle and actual marked parent",
+        "assessment": "Meridionally filling U1 caps one hole of Q and leaves an annulus times S1, a torus collar. The remaining exterior is therefore boundary-homeomorphic to the actual fixed outside-tangle cover. Combining the parameters into -6n on U0 and applying the fixed map gives (-1,2)+(-6n)(0,-1)=(-1,2+6n). Section 4 identifies the numerical parent by permanent fillings of the correct knot and circle cusps and asserts transport of the surviving exact peripheral curves. This is the needed bridge from topology to geometric slope lengths; a numerical isometry or an unmarked triangulation would not suffice.",
+        "premise_boundary": "The correctness of the pinned diagram-to-triangulation, covering, and marked permanent-filling routines, together with the asserted exact face-pairing/peripheral-chain binding to the fourteen-tetrahedron parent, is indispensable and was not independently replayed."
+      },
+      {
+        "id": "AC-06",
+        "status": "No internal gap found conditional on analytic certificate",
+        "pages": [
+          5,
+          6
+        ],
+        "topic": "Complete hyperbolic parent and genuinely embedded area-11 cusp",
+        "assessment": "The proof explicitly requires an existence certificate for a complete positive shape solution, including logarithmic-branch and exact equation checks. Small residual intervals alone are correctly identified as insufficient. The torus cusp link and exact oriented triangulation checks support the manifold interpretation. Face-compatible horospherical corners that stay clear of opposite faces and are disjoint along every ideal edge give an embedded cusp by assembling disjoint local corners; every pair of ideal vertices in a tetrahedron is joined by an edge. Thus the two asserted types of strict separation tests are sufficient in the geometric interpretation stated. The area-index test for two exact closed integral cycles isolates index one and establishes primitivity, while exact marking still depends separately on Section 4.",
+        "premise_boundary": "No complete shape intervals, standard-form scale formulae, edge-separation calculations, rational translation endpoints, or verifier source were present in the PDF for independent checking. The claims that these tests pass at area 11 and imply Re(-m+2l)>10 and 6l>19 are certificate premises of this review. The printed decimals and rejected controls are not substitutes for that certificate.",
+        "approximate_consistency_only": {
+          "Re(-m+2l)": 10.360411964,
+          "6l": 19.098679374,
+          "absolute_parallelogram_area": 10.999999999310889
+        }
+      },
+      {
+        "id": "AC-07",
+        "status": "No internal gap found conditional on stated theorem contracts",
+        "pages": [
+          6
+        ],
+        "topic": "Every-n length bound, six theorem, and hyperbolicity",
+        "assessment": "The coefficient -1 makes every slope primitive. On the same fixed embedded horotorus and with l positive real, its ordinary length is at least Re(-m+2l)+n(6l)>10+19n>6 for every integer n>=0, including zero. The n>=0 restriction is used correctly. This is one linear estimate, not a finite sampling argument. Under the six-theorem contract stated in the PDF, complete finite-volume orientable N and that embedded cusp satisfy the hypotheses; neither normalized length nor a maximal cusp is substituted. The claimed irreducibility, atoroidality, non-Seifert property and infinite word-hyperbolic group exclude the nonhyperbolic geometrization alternatives. Applying geometrization then gives a closed hyperbolic filling, and the already established actual-cover identity transfers the conclusion to Sigma_2(K_n).",
+        "premise_boundary": "External references [1]-[3] were not opened; their theorem statements are accepted only with the scope expressly stated in the PDF."
+      },
+      {
+        "id": "AC-08",
+        "status": "No internal gap found conditional on independent companion theorem",
+        "pages": [
+          6,
+          7
+        ],
+        "topic": "Rank, prime-knot, and graph-type consequences",
+        "assessment": "The rank, genus, crossing number, primeness, and connected-sum rank statements are clearly delegated to the independent companion theorem [4]. They are not consequences of the cusp calculation. A closed hyperbolic prime factor excludes the stated graph-type class, including after connected sums with trefoil covers. The text correctly makes no hyperbolicity claim for the nontrivial connected sums.",
+        "premise_boundary": "The companion result, its independence, and its proof were outside this blind review."
+      }
+    ],
+    "indispensable_unverified_premises": [
+      "Correctness of the stated pinned diagram, covering, peripheral-curve, and marked permanent-filling algorithms.",
+      "The stated exact signed raw-chain comparisons and identity binding of the topological parent to the saved geometric triangulation and marking.",
+      "The complete positive shape-solution certificate, including existence, branch checks, and complete peripheral equations.",
+      "The stated area-11 cusp embedding checks and exact strict translation inequalities.",
+      "The cited six-theorem and geometrization contracts as stated in the PDF, and the separate companion theorem for rank and primeness."
+    ],
+    "exclusions_from_verdict": [
+      "No assertion that the retained supplements or executable replay pass.",
+      "No claim that approximate floating-point values prove interval inequalities.",
+      "No claim that rejected corrupted controls prove verifier correctness.",
+      "No claim of formal verification, external specialist review, or worldwide priority."
+    ],
+    "followup_reviews": [
+      {
+        "pdf_sha256": "34bd041bc06350634db1bf009e1638417891c036e00f970b1eb869c4083b7e5f",
+        "page_count": 7,
+        "hash_and_page_count_verified": true,
+        "reviewed_scope": "Read the actual updated PDF's page 5 as extracted text and as a rendered image, plus PDF metadata; no source, repository history, scripts, receipts, or supplement was read.",
+        "edition_change_reported": "Only the page-5 replacement pair was changed from (0,-6n) to (-6n,0).",
+        "edition_change_observed": "Page 5 now explicitly replaces (-3n,-3n) by (-6n,0), consistently with its statement that U1 has t2=0 and U0 remains. The displayed remaining slope is still (-1,2)+(-6n)(0,-1)=(-1,2+6n).",
+        "finding_resolutions": [
+          {
+            "finding_id": "AC-04",
+            "status": "Resolved in this PDF edition",
+            "assessment": "The ordered replacement parameters now match the meridionally filled U1 and surviving U0. The corrected page has no residual ordering ambiguity."
+          }
+        ],
+        "verdict": "No internal mathematical gap found in the corrected passage. The initial no-substantive-gap conditional verdict carries forward for this described correction, with the same indispensable topological-binding, analytic-certificate, and imported-theorem premises. There are no unresolved findings from this blind review.",
+        "scope_limit": "This follow-up inspected the actual changed page rather than conducting a new all-page review or an independent full-edition text/byte diff."
+      }
+    ],
+    "latest_reviewed_pdf": {
+      "path": "/home/royvanrijn/src/jacobian-research/research/meridional-rank/representations/ALL_PARAMETER_HYPERBOLIC_DOUBLE_COVERS.pdf",
+      "sha256": "34bd041bc06350634db1bf009e1638417891c036e00f970b1eb869c4083b7e5f",
+      "page_count": 7,
+      "current_verdict": "No substantive internal mathematical gap found, conditional on the explicitly stated algorithm, certificate, and theorem premises",
+      "unresolved_substantive_findings": 0,
+      "unresolved_minor_findings": 0
+    }
+  },
+  "contextual_master_audit": {
+    "status": "No substantive checker/input inconsistency found; explicit algorithmic and written premises remain necessary",
+    "master_checker_sha256": "1eecdee15eb7458eabe42158ed52994fdf785904f997a36ea66b4090239bde76",
+    "master_inputs_sha256": "6a47eb8849d6e1a42ff0e3bcb55f42bf3c93b2cca5b403d49a5ad4c30694a008",
+    "read_scope": [
+      "entire current master checker",
+      "input family, basis, parent, geometry, source/assurance metadata and exact normal-chain checks",
+      "manuscript sections for topology/peripheral/annulus interpretation; contextual review, not blind",
+      "retained kernel source: cover.c lines200-328,330-431,485-507; current_curve_basis.c lines13-38,76-138; gcd.c lines27-48,94-140; close_cusps.c lines4-18,227-332,590-644,1134-1165,1728-1742"
+    ],
+    "finite_replay": {
+      "algebra": {
+        "pure_factorization": true,
+        "literal_free_word_Hurwitz_identity": true,
+        "T2_conjugates_by_ab_inverse": true,
+        "all_suffix_crossings_involve_circle": [
+          {
+            "letter": 4,
+            "roles": [
+              4,
+              5
+            ],
+            "over": 5
+          },
+          {
+            "letter": 3,
+            "roles": [
+              3,
+              5
+            ],
+            "over": 5
+          },
+          {
+            "letter": 2,
+            "roles": [
+              2,
+              5
+            ],
+            "over": 5
+          },
+          {
+            "letter": 2,
+            "roles": [
+              5,
+              2
+            ],
+            "over": 2
+          },
+          {
+            "letter": 3,
+            "roles": [
+              5,
+              3
+            ],
+            "over": 3
+          },
+          {
+            "letter": -4,
+            "roles": [
+              5,
+              4
+            ],
+            "over": 5
+          }
+        ],
+        "written_induction": "T^(2q) gives conjugation by(ab)^(-q); circle longitude is ab by the actual crossing disk."
+      },
+      "diagram": {
+        "literal_PD_crossings": 23,
+        "Euler_faces": 25,
+        "circle_segment_count": 6,
+        "knot_segment_count": 40,
+        "circle_has_no_self_crossings": true,
+        "circle_overpass_pattern": [
+          true,
+          true,
+          true,
+          false,
+          false,
+          true
+        ]
+      },
+      "basis": {
+        "two_oriented_basis_chains_verified_entrywise": true,
+        "fixed_circle_lift_matrix": [
+          [
+            -1,
+            0
+          ],
+          [
+            2,
+            -1
+          ]
+        ],
+        "determinant": 1,
+        "all_n_slope_constant": [
+          -1,
+          2
+        ],
+        "all_n_slope_coefficient": [
+          0,
+          6
+        ],
+        "basis_orientation_premise": "Copied oriented filling preimage, divided by positive gcd, installed as first basis row; no independent sign normalization.",
+        "uniform_proof": "Degree1 torus lift linearity and relative pants parameter sum; not fitted family values."
+      },
+      "corruptions": [
+        "PD_segment",
+        "suffix_sign",
+        "oriented_lifted_chain",
+        "covering_matrix_sign",
+        "base_filling",
+        "doubling_step"
+      ]
+    },
+    "fresh_topology_replay": {
+      "fresh_augmented_literal_PD": true,
+      "unique_character_and_oriented_original_face_images": [
+        1,
+        0,
+        0,
+        0,
+        1,
+        1,
+        1,
+        1,
+        0,
+        0,
+        1,
+        0,
+        1,
+        1
+      ],
+      "raw_fixed_marked_cover_identical": true,
+      "fresh_and_saved_cover_exact_fillings": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          0
+        ]
+      ],
+      "basis_curve_cover_primitive_fillings_verified": [
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ]
+      ],
+      "fresh_and_saved_parent_complete_unfilled": true,
+      "basis_lifts_freshly_reconstructed": [
+        0,
+        1
+      ],
+      "fresh_parent_raw_gluings_and_peripheral_chains_identical": true,
+      "parent_tetrahedra": 14,
+      "parent_signature": "oLLLLALQLQccegeghklljmlmnnquqtrvatalrgwmn_Bbba",
+      "numerical_isometry_used": false,
+      "separate_randomize_call_used": false,
+      "snappy_version": "3.3.2",
+      "spherogram_version": "2.4.1"
+    },
+    "independently_checked_filling_metadata": {
+      "base": [
+        [
+          0,
+          0
+        ],
+        [
+          2,
+          0
+        ]
+      ],
+      "cover": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          0
+        ]
+      ],
+      "saved_fixed": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          0
+        ]
+      ],
+      "basis_runs": {
+        "0": [
+          [
+            1,
+            0
+          ],
+          [
+            1,
+            0
+          ],
+          [
+            1,
+            0
+          ]
+        ],
+        "1": [
+          [
+            1,
+            0
+          ],
+          [
+            1,
+            0
+          ],
+          [
+            1,
+            0
+          ]
+        ]
+      },
+      "before_permanent_filling": [
+        [
+          0,
+          0
+        ],
+        [
+          -1,
+          2
+        ],
+        [
+          1,
+          0
+        ]
+      ],
+      "surviving_parent": [
+        [
+          0,
+          0
+        ]
+      ]
+    },
+    "topology_source_pins": {
+      "sources/new17-snappy332-cover.c": "748380e4bba64804601681d747730ba99230bfdc3d758a0b2acfd50c24bd8b04",
+      "sources/new17-snappy332-close-cusps.c": "0502e8448514e5344f9a9a94afb239d67046935f1f2013a97fb3dce2e3c6ba1f",
+      "sources/all-cover-snappy332-current-curve-basis.c": "0725fec94271d6e0814633f57e94cfb7a2b08a166c9cc8b9182e4fb169670c23",
+      "sources/all-cover-snappy332-gcd.c": "32986e20bb38f0e2d13065408e9befc2e0b3a029a4b850feeca3357f94638be6"
+    },
+    "assessment": [
+      "The literal suffix has exactly the claimed crossing roles and pure free-word action; the program correctly keeps the disk-twist/annulus geometric argument as written premises.",
+      "Both oriented q=0,q=1 normal chains are compared entrywise on the same raw cover gluing and cusp-index arrays; degree-one lift linearity and source-preserved orientation are necessary written/software premises, not interpolation from sampled knots.",
+      "Current master mechanically asserts source/saved filling metadata and primitive first curves in both runs. The declared branch coefficient(2,0) actually lifts to(1,0) on source cusp2. Both circle-basis test runs have(1,0) on both circle cusps, so their first normal curves really are the installed lifted filling meridians.",
+      "The exact fixed cover has fillings[[0,0],[0,0],[1,0]], and only cusps1,2 are permanently filled. The remaining parent has one unfilled cusp. Raw gluing and surviving peripheral chains are reproduced exactly; no numerical isometry occurs.",
+      "Default mode does not execute geometry and says so. Sage calls the separate certified routine. The preserved mode receipts are scoped by exact edition hashes and retain false formal/external whole-proof flags."
+    ],
+    "recommended_strengthening": [],
+    "source_contract_assessment": {
+      "oriented_lift": "cover.c copies m*mu+l*lambda into preimage chains, obtains coordinates by intersection, divides by positive gcd, then current_curve_basis installs this primitive signed vector as its first row; only the complementary longitude is shortened. No sign normalization intervenes.",
+      "branch_regularization": "cover.c divides the base singularity order by the primitive meridian orbit length; for the checked character this gives primitive filling on the branch cusp.",
+      "permanent_fill": "close_cusps.c explicitly fills the prescribed relatively prime slope and transfers signed curves across the moves, then only renumbers surviving cusp records. Correctness of the complete native fill/simplification implementation remains an imported software contract."
+    },
+    "limits": [
+      "No independent reimplementation of SnapPy diagram, cover or permanent-fill routines. Their inspected/pinned source contracts are trusted imports.",
+      "The universal crossing-disk homeomorphism and boundary-relative annulus surgery remain written geometric proofs.",
+      "No independent audit of the six-theorem source in this review; that is delegated separately.",
+      "Geometry code is my own separate component, so this audit is contextual internal review, not independent full-proof or blind review."
+    ],
+    "assurance": {
+      "formal_verification": false,
+      "external_specialist_review": false,
+      "whole_proof_independent_replay": false
+    }
+  },
+  "root_edition_review": {
+    "pdf_sha256": "34bd041bc06350634db1bf009e1638417891c036e00f970b1eb869c4083b7e5f",
+    "tex_sha256": "22e2f0e8fcc3340d0d19de74e1f38a6433f35a6edf3c15bb6a5fb0e2560c8564",
+    "full_tex_read": true,
+    "full_master_code_read": true,
+    "all_7_rendered_pages_inspected": true,
+    "all_modes_root_replayed_on_current_tex": true,
+    "modes": [
+      "default",
+      "topology",
+      "sage_geometry"
+    ],
+    "blind_review_conditional_no_gap": true,
+    "formal_verification": false,
+    "external_review": false
+  },
+  "root_replay_artifacts": [
+    ".scratch/mrc-prime-family/root_allcovers_default.json",
+    ".scratch/mrc-prime-family/root_allcovers_topology.json",
+    ".scratch/mrc-prime-family/root_allcovers_sage.json"
+  ],
+  "literature_visual_QA": {
+    "pages": 34,
+    "all_contact_pages_inspected": true,
+    "outside_text_blocks": 0,
+    "source_count": 71
+  }
+}

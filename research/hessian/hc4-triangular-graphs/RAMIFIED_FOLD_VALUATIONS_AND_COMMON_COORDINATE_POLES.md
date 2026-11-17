@@ -206,6 +206,17 @@ The formulas and the restriction m>=1 in (10) were read in that primary.
 
 ## 5. The remaining first-pattern fold: transverse degree one
 
+More generally, suppose an omitted prime of ANY index e has a source
+coordinate b as in(4), while common y is polar. Every local multiplicity
+is at most p, so(5) and the coordinate-monicity lemma give
+```
+n_E<=p*(2p+e-1),       n_E>m^2*p^2,
+(m^2-2)*p<e-1,         m=deg_a(y)>=1.                    (11a)
+```
+In particular e=2 or e=3 forces m=1. Conversely m>=2 requires
+e>=2p+2. This assertion assumes the individual nonpolar coordinate b;
+it does not prove one exists for arbitrary ramified primes.
+
 Suppose e=2 and E belongs to minimal Case1. Its first two centres are
 free, so it has source coordinates (a,b) satisfying (4).
 The multiplicities in (5) never increase and each is at most p.
@@ -369,7 +380,8 @@ a=x, b=x*y, c=x*y^2-1, d=x*y^3-y.
 ```
 It identifies X=A2 with D(a) union D(c). Its complement is
 E=(a,b,c), an affine line with coordinate d.
-On D(c) the inverse source coordinates are x=a,y=d/c.
+On D(a) the inverse source coordinates are x=a,y=b/a; on D(c)
+they are x=a,y=d/c.
 On D(c+1) put u=b/(c+1),t=d; the equations give
 ```
 c=u*t, b=u*(1+u*t), a=u^2*(1+u*t).

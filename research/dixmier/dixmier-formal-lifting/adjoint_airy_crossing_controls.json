@@ -1,0 +1,100 @@
+{
+  "claim": "Adjoint Airy polynomial solver and crossing cohomology H0=H1=0,H2=sl2(k)",
+  "status": "PASS",
+  "environment": {
+    "python": "3.12.3",
+    "arithmetic": "Fraction polynomial differentiation and products"
+  },
+  "one_variable_operator": "D=partial_t+ad([[0,1],[t,0]])",
+  "scalar_elimination": "L=-partial_t^3/2+2*t*partial_t+1",
+  "inverse_recurrence": "b_n=(r_n+(n+3)(n+2)(n+1)*b_(n+3)/2)/(2n+1)",
+  "one_variable_degree_bound": "inputdegree+2",
+  "crossing": "t=XQ",
+  "cohomology_basis_controls": [
+    {
+      "representative": [
+        [
+          [
+            [
+              1,
+              1
+            ],
+            "-1"
+          ]
+        ],
+        [],
+        []
+      ],
+      "obstruction": [
+        "0",
+        "1",
+        "0"
+      ]
+    },
+    {
+      "representative": [
+        [
+          [
+            [
+              0,
+              0
+            ],
+            "1"
+          ]
+        ],
+        [],
+        []
+      ],
+      "obstruction": [
+        "0",
+        "0",
+        "1"
+      ]
+    },
+    {
+      "representative": [
+        [],
+        [
+          [
+            [
+              0,
+              0
+            ],
+            "-2"
+          ]
+        ],
+        [
+          [
+            [
+              1,
+              1
+            ],
+            "2"
+          ]
+        ]
+      ],
+      "obstruction": [
+        "1",
+        "0",
+        "0"
+      ]
+    }
+  ],
+  "constant_H_curvature_obstruction": [
+    "0",
+    "0",
+    "1"
+  ],
+  "polynomial_closed_one_form_solver_verified": true,
+  "compatible_two_form_solver_verified": true,
+  "position_primitive_degree_bound": "inputdegree+3, written proof",
+  "Long_covariant_cochain_bound": "inputdegree+69 for canonical degree23 frame, conditional on closedness and the three vanishing crossing coordinates",
+  "scope": "Written all-polynomial cohomology and degree theorem; controls verify explicit inverse/primitive identities. No actual new finite Long tuple or bounded formal gauge is claimed.",
+  "hashes": {
+    "ADJOINT_AIRY_CROSSING_COHOMOLOGY_AND_SOLVER.md": "51ce8b5e63a557fe273c3717d1ff502189471e1e6cd3ad14b2be49f4677b447a",
+    "check_adjoint_airy_crossing.py": "11bc2d9bf3f384e668dfde66d251929816a25b3b407a7bb9df76c90dec1c978c"
+  },
+  "independent_replay": false,
+  "formal_verification": false,
+  "external_review": false
+}

@@ -3,7 +3,9 @@
 This note proves a fixed-width variance theorem and exact first moments in every
 fixed power window. It derives both from published results, without claiming
 priority for the corollaries. The remaining power-window variance problem is
-reduced to one sharp four-form energy estimate. The [general theory note](BINARY_SUMS_WITH_PRESCRIBED_PRIME_FACTORS.md)
+reduced to one sharp four-form energy estimate. A separate [large-prime cofactor
+argument](PRESCRIBED_PRIME_SEMIGROUP_DENSITY_ONE.md) gives semigroup-scale
+density-one lower bounds for every fixed power exponent above \(1/3\). The [general theory note](BINARY_SUMS_WITH_PRESCRIBED_PRIME_FACTORS.md)
 contains the every-target conjecture, the positive-proportion theorem and the
 prime-based binary and ternary baselines.
 
@@ -238,15 +240,15 @@ Both estimates follow by logarithms from the preceding prime sums. The dyadic on
 Put \(h_0=h/D_X\). Uniformly for \(H/2\le h\le 2H\), \(10\le h_0\le X/(10D_X)\) and \(\log h_0\asymp_\theta\log X\) once \(X\) is large. The normalized mean-square error in Theorem 1.7 is bounded by
 \[
 P_X^2\left\{\left(\frac{\log\log h_0}{\log h_0}\right)^\alpha+
-\left(\frac{\log\log X}{(\log X)^{\kappa}}\right)^\alpha\right\},
-\qquad \kappa=\min(1,\sigma)/29.
+\left(\frac{\log\log X}{(\log X)^{\varkappa}}\right)^\alpha\right\},
+\qquad \varkappa=\min(1,\sigma)/29.
 \]
 Thus, for some \(d>0\), with \(U_h(x)=h^{-1}\sum_{x-h<n\le x}f(n)\),
 \[
 \frac2X\int_{X/2}^X |U_h(x)-m_X|^2\,dx\ll m_X^2(\log X)^{-d}.
 \tag{2}
 \]
-For example \(d=\alpha\kappa/2\) works for large \(X\). All constants are permitted to depend on the fixed data.
+For example \(d=\alpha\varkappa/2\) works for large \(X\). All constants are permitted to depend on the fixed data.
 
 **From a local mean to the sharp binary first moment.** Let \(T(h)=\sum_{X<a+b\le2X}f(a)f(b)(h-|a-b|)_+\). Integrating \((hU_h(x))^2\) counts each ordered pair with weight
 \[
@@ -388,9 +390,10 @@ The fixed-width proof uses a fixed positive-volume convex body. At
 Loughran--Matthiesen theorem gives no error uniform in that shrinking body.
 Thus Vq cannot simply be applied with \(\lambda=X^{\theta-1}\).
 The Mangerel application supplies a logarithmic saving in Aq and Pq for each
-fixed projection; it supplies no thin four-form energy asymptotic. No
-power-window density-one theorem, power-saving exceptional set or every-target
-binary theorem is concluded here.
+fixed projection; it supplies no thin four-form energy asymptotic. This variance argument gives no power-window density-one conclusion by itself.
+The separate cofactor theorem Dq gives such a lower bound for \(\theta>1/3\),
+without a variance asymptotic. Power-saving exceptional sets and every-target
+binary coverage remain open here.
 
 A power-saving centered variance, at the same main-term scale, would bound the
 number of zero or very small representation counts by Chebyshev. Eliminating

@@ -166,7 +166,7 @@ Bounds retain their exact domains and assumptions. Numeric comparisons use ident
 | MRC-TERNARY-AFFINE-THM-GROUP | proved | conjugacy-class generating rank | Q=(sum-zero F3^7) semidirect GL3(F2), C=affine conjugacy class of a nonidentity GL3(F2) involution | exact: 4 |  |
 | ARITH-ELLIPTIC-EXCEPTION-MATCHING-COUNT | proved | matching field-product targets on one fixed elliptic slice | Fixed Phi overQ; fixed(pi,ell)=(128/25,9/10), admissible matching target family, actual H([1:y])<=B. | exact: C_E logB+O(sqrt(logB)) |  |
 | ARITH-ELLIPTIC-QUADRATIC-FIELD-EQUIDISTRIBUTION | proved | targets with one specified quadratic field on that slice | Fixed Phi overQ; fixed(pi,ell)=(128/25,9/10), admissible matching target family, actual H([1:y])<=B. | exact: (C_E/4)logB+O(sqrt(logB)) |  |
-| ARITH-ELLIPTIC-LOCAL-GLOBAL-COUNT-BOUNDS | proved | Hasse targets on the fixed elliptic slice | FixedPhi and exceptional elliptic slice overQ, actual targetheightB. | range: 1<=A_E(B)<=(116302241/531619620)C_ElogB+O_E(sqrtlogB); G_E=O(1) |  |
+| ARITH-ELLIPTIC-LOCAL-GLOBAL-COUNT-BOUNDS | proved | Hasse targets on the fixed elliptic slice | FixedPhi and exceptional elliptic slice overQ, actual targetheightB. | range: 1<=A_E(B)<=(2081912199403/9893175318390) C_E logB+O_E(sqrtlogB); G_E=O(1); certified coefficient13361/114520 |  |
 | JAC-PF172 | proved | regular-square-completion-remainder-ruling-degree | actual complex whole-plane Keller target of ruling6 in complete marked quadratic source-image class | lower: 1 |  |
 | JAC-PF173 | proved | degree-of-even-ruling-leading-coefficient | actual complex whole-plane Keller target of ruling6 in complete marked quadratic source-image class | lower: 24 |  |
 | JAC-PF174 | proved | quadratic-remainder-coefficient-degree | actual complex whole-plane Keller target of ruling6 in complete marked quadratic source-image class with nonzero coefficient d of z; {"S": "sum of slopes of distinct actual A-supporting base values, S>=5"} | lower: S |  |
@@ -293,6 +293,8 @@ Bounds retain their exact domains and assumptions. Numeric comparisons use ident
 | ARITH-ELLIPTIC-MIXED-LEVEL-CLASS-GROUP-QUOTIENT | proved | division-field class-number valuation from actual rational formal depth | FixedE/Q; p outsidefixedfiniteexceptions, allr>=1; K=Q(E[p^r]); no prime-density assertion. | lower: vp h(K)>=2r+2min(r,e_p-1) |  |
 | ARITH-FIXED-PLANE-LOCAL-HASSE-COUNTS | proved | local and Hasse targets on a fixed rational affine plane | Each fixedP and actual projective targetheightB; constantsdependonP. | range: A_P=O_P(B^2); L_P=O_P(B^2) exceptu0,c0; onsections L_P=G_P=4B^3/zeta3+O(B^2), A_P=0 |  |
 | ARITH-ELLIPTIC-EXACT-Q2-Q3-Q5-Q11-Q17-LOCAL-COUNT | proved | fiveprime local targets and Hasse upper count | Fixedellipticslice, fixedprefix{2,3,5,11,17}, actualtargetheightB. | exact: M_S=(116302241/531619620)C_ElogB+O_E(sqrtlogB); A_E<=same |  |
+| ARITH-ELLIPTIC-PRIME-ORDER-CHARACTER-SHARP-SCALE | proved | factoring-prime density of one fixed prime-order coefficient character | Each prime ell outside one fixed finite auxiliary set; density among good residue primes. | range: (ell-2)/ell^3 <=delta_chi<=1/(ell^2-1) |  |
+| ARITH-ELLIPTIC-EXACT-SIX-PRIME-LOCAL-COUNT | proved | six-prime local count and total/certified Hasse upper counts | Fixed exceptional elliptic slice, actual target heightB, fixed tests2/3/5/11/17/53. | exact: M_S=(2081912199403/9893175318390) C_E logB+O_E(sqrtlogB); A_E<=same; A_K0<=(13361/114520) C_E logB+O_E(sqrtlogB) |  |
 
 ## Comparable improvements
 

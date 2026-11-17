@@ -1,0 +1,65 @@
+{
+  "passed": true,
+  "kind": "internal exact finite-certificate replay; unrestricted depth is proved in the source",
+  "scope": {
+    "ordinary_terminal_family": "N=7^r+2,r>=1",
+    "every_digit_depth": true,
+    "positive_real_Gamma_extension": false,
+    "all_index_gap_six_SFC": false,
+    "ordinary_degree_seven_SFC": false,
+    "all_binomial_SFC": false,
+    "unrestricted_FC_or_SFC": false
+  },
+  "controls": {
+    "mandatory_certificate_schema": 1,
+    "exact_maximal_minors": 6,
+    "all_universal_matrix_entries_from_seeds": 30,
+    "explicit_necessary_ideal_membership_identities": 2,
+    "corrupted_ideal_witness_rejected": 1,
+    "complete_orbit_states_transitions_units": 14,
+    "corrupted_complete_orbit_rejected": 1,
+    "literal_full_entry_polynomial_profiles": 90,
+    "uniform_seed_coefficient_identities": 3,
+    "frozen_mathematical_imports": 4
+  },
+  "total_controls": 152,
+  "literal_profiles": [
+    {
+      "r": 1,
+      "terminal": 9,
+      "entries": 30,
+      "raw_auxiliary_coefficients": 60
+    },
+    {
+      "r": 2,
+      "terminal": 51,
+      "entries": 30,
+      "raw_auxiliary_coefficients": 270
+    },
+    {
+      "r": 3,
+      "terminal": 345,
+      "entries": 30,
+      "raw_auxiliary_coefficients": 1740
+    }
+  ],
+  "complete_orbit_period": 6,
+  "source_sha256": {
+    "GAP_SIX_POWER_PLUS_TWO_SFC.tex": "9e1a71cc23478907af3df8d62ea608f80c936846e18922a73df629d22587e426",
+    "gap_six_power_plus_two_sfc.py": "b2e84d483080841c196081bbdc8f1a66871d0a0df21ee69d9d369baf22378c5e",
+    "gap_six_power_plus_two_certificate.json": "0cccabc9293979cd9781bc7e3c399d69d7fff86d19d12a7f3b99c87e5eb3742c",
+    "GAP_SIX_TWO_POWER_PLUS_ONE_SFC.tex": "7c8b7be9cd416803f0d43e0f76248cb5006f94ffa9feafc5295115d9cf61ffc6",
+    "ARITHMETIC_FRONTIER_TERMINAL_ORDERS.tex": "9721978bcb795af9169c695c5fb8348974069c5148e5e0caa8bd3c4d65650e07",
+    "PHYSICAL_PRIME_TOTAL_DEGREE_REDUCTION.tex": "42c5fc615400a49dd3ae4f19a9a832381607e69ce4f6ff6d255b57ca4cfd156f",
+    "gap_three_hurwitz_structure.tex": "22c690a45976c9b72b210ff76bbcd3a7084ddba0aae4af0c7f40ce2b109f705c"
+  },
+  "python": "3.12.3",
+  "sympy": "1.14.0",
+  "orbit_verifier": "pure Python integer coefficient lists; no factorization or Groebner input",
+  "independent_replay": false,
+  "formal_verification": false,
+  "external_review": false,
+  "novelty_claim": false,
+  "priority_claim": false,
+  "command": ".venv/bin/python research/factorial/image-rigidity/gap_six_power_plus_two_sfc.py"
+}

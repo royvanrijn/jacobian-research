@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
-  "date": "2026-11-17",
-  "scope": "Both binary identities A+A and A+(3\u00b7A), exact primitive Eisenstein norm sumsets, sharp four- and seven-summand bounds, and the subgroup-orbit arithmetic criterion. Balanced summands remain conjectural beyond the finite range.",
+  "date": "2026-11-18",
+  "scope": "Both binary identities A+A and A+(3·A), exact primitive Eisenstein norm sumsets, sharp four- and seven-summand bounds, and the subgroup-orbit arithmetic criterion. The current17-page PDF contains the balanced finite experiment. Separate canonical research now proves qualitative eventual balance and angular distribution for both families, without an effective onset or complete exception classification.",
   "import": {
     "archive": "eisenstein_research_sources.zip",
     "archive_sha256": "ee4f4ed3ba5983c91a0d0a2c83a0acf464934b662288b7a5f04acf9aa3314103",
@@ -472,7 +472,7 @@
     "source_archive_build": {
       "passed": true,
       "command": "latexmk -pdf -jobname=paper -interaction=nonstopmode -halt-on-error main.tex",
-      "scope": "Clean extraction of the current59-member exploratory-edition source bundle; rebuilt17-page PDF matches all retained page text and dimensions, and PDF title agrees with metadata.",
+      "scope": "Clean extraction of the preceding59-member exploratory-edition source bundle; rebuilt17-page PDF matches all retained page text and dimensions, and PDF title agrees with metadata. The proof sources and PDF are unchanged by the subsequent documentary research-status update.",
       "calculation_replay_policy": "No new numerical run: all17 checker sources and22 receipt/provenance JSON inputs are byte-identical to the previously verified bundle. Prior complete finite replays remain evidence for those unchanged sources/inputs.",
       "statement_preservation": "All12 remaining formal statement bodies unchanged after removing only redundant displayed k-range tags; aggregate duplicate replaced by the same complete set of proved propositions."
     },
@@ -1150,7 +1150,7 @@
         "Its unfiltered form is stated also for odd targets, so it may be applied to n/4 when v2(n)=2.",
         "Primitive norm values are distinguished from the actual coordinate pairs of the surviving quaternion representation.",
         "The subgroup K is specified in the orbit lemma; d>0, uniform local constants and a strict exceptional-prime margin are explicit.",
-        "Dilation3\u00b7A is distinguished from the threefold sumset3A; primitive values use N rather than the inert-prime set P.",
+        "Dilation3·A is distinguished from the threefold sumset3A; primitive values use N rather than the inert-prime set P.",
         "Undefined and conflicting optional Chebyshev notation was removed; the explicit Satake coefficient proof remains."
       ],
       "assurance": "Internal source and exact computations only; no external specialist review or formal verification.",
@@ -1337,6 +1337,19 @@
         "findings": "No mathematical defect found in the effective criterion, explicitN_eta cutoff, t-leading-coefficient optimization, CRT finite-menu proposition or all-real wheel proof. No additional arithmetic family is asserted.",
         "final_layout_only_recheck": "Finalhash3aad...; pp14-17 checked after removing a forced page break. No clipping, orphan headings or indentation problems; appendix and references continue cleanly."
       }
+    },
+    "angular_research_extension": {
+      "date": "2026-11-18",
+      "canonical_proof": "../../research/arithmetic/EISENSTEIN_SIFTED_ANGULAR_DISTRIBUTION.md",
+      "scope": "All sufficiently large n=2mod6 have A+A representations, and n=4mod6 have oriented A+(3·A) representations, with actual first summand in any fixed positive-length share interval. Equidistribution is of signed ordered coordinate witnesses, with at least n^(1-epsilon) distinct value pairs up to interval/epsilon-dependent constants.",
+      "dependencies": "Existing manuscript all-ideal Hecke bound plus a new cubic theta derivation of the all-n ramified count, fixed-lattice harmonic theta cuspidality and fixed-level coefficient estimates.",
+      "internal_review": "Written derivation reconstructed by a separate analytic agent and inspected by the root agent with primary-source checks. This is internal AI review, not external specialist review.",
+      "limitations": "No effective onset, shrinking interval, unweighted angular equidistribution, full finite exception classification, or established novelty. No manuscript PDF revision or numerical certificate replay performed for this extension."
+    },
+    "documentary_bundle_refresh": {
+      "date": "2026-11-18",
+      "scope": "README, metadata and this verification record now distinguish new canonical research from the unchanged PDF. All source-bundle members were compared with their current filesystem bytes; the prior LaTeX/PDF build is not relabelled as a new build.",
+      "pdf_unchanged_sha256": "113afc901d365160123f8d1e85badd7c594f9bf66297ba931290c9b25c524a89"
     }
   },
   "assurance": {
@@ -1352,7 +1365,7 @@
     "Obtain specialist review of the odd-component Hecke estimate, six-point quotient at3 and the existing Jacquet-Langlands/weight-two specialization.",
     "Complete the literature audit for primitive Eisenstein norm sumsets and sharp additive-basis bounds; the orbit criterion abstracts an attributed method.",
     "Obtain external replay and a persistent source-archive identifier before submission.",
-    "Keep the balanced assertion conjectural beyond the finite range until a proof controls the ratio of the norms."
+    "Incorporate the canonical qualitative angular/balanced extension into a later manuscript revision; an effective onset and completeness of the finite balanced exception list remain open."
   ],
   "artifacts": {
     "VerifyEisenstein.java": {
@@ -1521,7 +1534,7 @@
     {
       "claim": "Infinite coverage at n>=1e8",
       "source": "sections/elementary-estimates.tex; sections/infinite-range.tex",
-      "method": "4M/p\u00b2 tail, exact prime bounds and591/625 union estimate."
+      "method": "4M/p² tail, exact prime bounds and591/625 union estimate."
     },
     {
       "claim": "Finite coverage for both classes below1e8",

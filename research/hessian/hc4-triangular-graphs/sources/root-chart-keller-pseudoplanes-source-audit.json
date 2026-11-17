@@ -1,0 +1,48 @@
+{
+  "review_date": "2026-11-18",
+  "scope": "Actual Keller root-chart transfer to cyclic generic deck/source-image pseudo-plane architecture; no exclusion or inversion claim.",
+  "retained_inputs": [
+    {
+      "path": "EXACT_VOLUME_BOUNDARY_MULTIPLICITIES_AND_COMMON_SOURCE_PENCIL.md",
+      "locator": "One actual common source coordinate, complete fibre data, exact principal parts and original ramified-prime scope."
+    },
+    {
+      "path": "COMMON_COORDINATE_FORCES_SMOOTH_BOUNDARY_AND_WHOLE_ROOT_CHARTS.md",
+      "locator": "Entire normalized cyclic cover, r disjoint copied A1 boundaries, affine whole W_j=A2, unit volume and Laurent transition."
+    },
+    {
+      "path": "CANONICAL_ETALE_COMPLETION_BOUNDARY_TOPOLOGY_AND_FREE_DECK_ACTION.md",
+      "locator": "Full normalization/canonical etale completion, affine component opens, Picard localization, loop general position, regular free generic deck action."
+    }
+  ],
+  "written_new_steps": [
+    "Full B-normalization in L(z), with z^r=y-lambda irreducible by the original retained source-line valuation, before any open is selected.",
+    "Whole W_j gives polynomial target pair with exact Jacobian r and degree rd, while root rotations are only a cyclic SUBGROUP over the target.",
+    "Finite etale normalized cover of V, entire source-image quotient, exact source-image algebra and variable fibre counts of its selected plane pseudo-cover.",
+    "Pic(V)=Z/r by removing the full retained source line; pi1(V)=Z/r from the actual simply connected r-chart universal cover.",
+    "The newly omitted original-source line has ramification index r and finite simple common-coordinate value z, with transverse pole p+1-r.",
+    "The r=1 same-field source switch is distinguished from creation of a cyclic subgroup.",
+    "The full finite intermediate normalization is the original Z, not V, so no torsion-canonical theorem is applied to the selected etale open.",
+    "The normalized Laurent support is primitive modulo r; otherwise a nonidentity root rotation stabilizes an entire plane chart and its selected copied boundary, or fixes a point of its etale target map. No leading-pole coprimality or sufficiency is claimed."
+  ],
+  "adopted_foundations": [
+    "Finiteness and localization of normalization for complex affine algebras; finite Galois normalization quotient.",
+    "Restriction of regular functions to an entire plane chart is polynomial.",
+    "Class-group localization for a removed Cartier divisor.",
+    "Surjective etale descent of regular functions, and finite etale topological covers of complex varieties.",
+    "Loop general position and Euler multiplicativity already used in the retained topology proof."
+  ],
+  "explicit_control": {
+    "family": "u^p a=b^r-1, r>=2,p=r+2",
+    "status": "Exact smooth affine geometric control with r whole plane charts, global exact unit form and free form-preserving cyclic action.",
+    "target_pair_supplied": false,
+    "role": "Guards the invalid inference from pseudo-plane/exact-volume/cyclic geometry alone to an etale target pair or inverse."
+  },
+  "not_claimed": [
+    "No generic Galois assertion for L(z)/F or polynomial deck action on one selected plane.",
+    "No equality V=U, V=Z, or V=the full finite normalization of an intermediate field.",
+    "No removal of original primes when the new normalization is constructed.",
+    "No source-finiteness or B-integrality of the common coordinate.",
+    "No injective source line, properness, exclusion of the cyclic realization architecture, formal verification, external review or HC4/JC2 resolution."
+  ]
+}

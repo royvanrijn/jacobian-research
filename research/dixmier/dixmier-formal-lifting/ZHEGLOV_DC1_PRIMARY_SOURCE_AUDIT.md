@@ -41,6 +41,7 @@ operators. In Section 6.2, Lemma 6.3 asserts independence of selected
 Puiseux coefficients from an auxiliary integer \(N\); Steps 4--7 calculate
 one of those coefficients as nonconstant in \(N\). The claimed contradiction
 depends on both assertions referring to the same normalized coefficient.
+The raw PBW correction below changes that final comparison.
 
 Reading those statements and the final formulas is not a complete audit
 of their dependencies. In particular, this audit has not independently
@@ -121,8 +122,10 @@ conditions. Its terminal polynomial has several powers. In the case
 \(d_2=2,l_2=1\), a common translation leaves a normalized subleading
 coefficient difference \(3/(92C)\ne0\). Thus the simultaneous centering
 used in Lemma 6.1 on printed page 64 does not follow from those local
-conditions alone. This is precisely relevant to the exceptional
-missing-head normalization required by the conditional Laurent lemma.
+conditions alone. The two orders must nevertheless be distinguished:
+the centroid mismatch transports to head minus \(N\), while the
+Laurent lemma uses head minus one. The monomial-face gap supplies the
+latter zero for \(N>1\), if the asserted transport exists.
 
 The control deliberately does not realize the initial simultaneous
 Weyl pair and first chop. The concrete remaining obligation is to show
@@ -131,6 +134,44 @@ that the actual pair or its normal forms force the extra coefficient
 while retaining it. This is a missing local justification to audit,
 not a counterexample to Theorem 4.2 under all its global hypotheses or
 a refutation of the main DC1 claim.
+
+## Raw PBW terms change the final comparison
+
+The [exact transport audit](PBW_TRANSPORT_AND_FINAL_COEFFICIENT_COMPARISON.md)
+checks the source conventions \(\Phi_N(x)=x+\partial^N\),
+\(\Gamma_1=x\partial\). Its raw component for a leading corner
+\(x^a\partial^b\) contains \(N\binom a2\) beside \(a\Gamma_1\).
+The terminal corner contributes the analogous \(N\binom c2\).
+These are unavoidable PBW contractions, whereas the raw scalars in
+Step 4 on printed page 72 are described as independent of \(N\).
+
+Retaining both contractions and conditionally using the later
+body-tail and averaging formulas cancels the claimed leading growth.
+For fixed source subcorner \(A\), the remaining possible dependence is
+\[
+                 \frac{(a-b)(ab-2A)}{2a(aN+b)}.
+\]
+For \(a>b>0\), the conditional comparison forces \(A=ab/2\);
+it supplies no contradiction in that case. The actual-pair/global
+polynomial constraint on this subprincipal corner and the earlier
+reconstruction bridges remain unverified. This is an exact local
+calculation correction, not a counterexample to the main theorem.
+
+The [scalar-gauge admission argument](SCALAR_GAUGE_SUBPRINCIPAL_AND_POLYNOMIAL_ADMISSION.md)
+separates local residue freedom from actual polynomial landing. Formal
+unit conjugation shifts the subprincipal corner while preserving local
+string equations and chopped orders. For an actual polynomial Weyl
+pair, a nonconstant rational position gauge cannot land both conjugates
+polynomially: invariant polynomial lattices give a finite-dimensional
+quotient whose scalar commutator has nonzero trace. This global constraint
+does not classify nonrational formal gauges or force the residue to zero.
+
+The [one-place algebraic curve control](ONE_ROOT_BC_CURVE_AND_ADMISSION_GAP.md)
+also retains the homogeneous coefficient with a full degree-eight
+Puiseux orbit and zero trace. Curve shape, heads and trace alone
+therefore do not force it away. Actual ordinary-operator reconstruction,
+string compatibility and global polynomial admission are separate
+requirements.
 
 ## Repaired indexing and a verified conditional invariance step
 
@@ -183,7 +224,8 @@ DC-pairs, and the all-\(N\) result follows from the written proof.
 
 The retained local results are (2), the complete one-root ODE
 classification and countercontrol, and the conditional invariance lemma. The earlier application inputs and the main DC1 claim remain
-unverified. The final rational expression's dependence on \(N\), by
-itself, cannot supply those inputs. No metadata is upgraded, and no
+unverified. The corrected final rational expression need not vary
+with \(N\); its potential residual requires the actual subprincipal
+coefficient. A final expression alone cannot supply the missing inputs. No metadata is upgraded, and no
 formal verification, independent whole-proof review, external review
 or novelty priority is claimed.

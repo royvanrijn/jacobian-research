@@ -226,9 +226,9 @@
   ],
   "scope": "All-N conditional theorem is written; finite scalar Laurent controls are not operator/DC-pair realizations.",
   "hashes": {
-    "EXCEPTIONAL_LAURENT_CORRECTION.md": "1c7fc7739cc39c0b42968837cf640d9787c5972d25a893437994e28d475e255a",
+    "EXCEPTIONAL_LAURENT_CORRECTION.md": "bd95eb2b8985e14640d340e6b73500bc227c3fe956da8e57f0f3ed257424b88f",
     "check_exceptional_laurent_correction.py": "374b3de760b8f53dc05431f8ffaae8d45993d224790d39b86ea59e878c9d40e3",
-    "CONDITIONAL_LAURENT_COEFFICIENT_INVARIANCE.md": "a70ef55803377e55d7172cf94281f7eb1a9a4f9d49164fd90f6d573cef9a33a0",
+    "CONDITIONAL_LAURENT_COEFFICIENT_INVARIANCE.md": "6216efdc1241e6691950ddeae24cb2646a86110e2e392d50d7abd627b25b2a8c",
     "sources/zheglov-2410.06959v5.pdf": "897913ef95e011332e86e348803c6c9da5dbd196db17a04f8f951110e9b095e3"
   },
   "formal_verification": false,

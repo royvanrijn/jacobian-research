@@ -1,0 +1,37 @@
+{
+  "title": "On the Birch-Swinnerton-Dyer quotients modulo squares",
+  "authors": "Tim Dokchitser and Vladimir Dokchitser",
+  "version": "arXiv:math/0610290v3, October 20, 2008. Later published in Annals of Mathematics 172 no.1 (2010), 567-596, DOI 10.4007/annals.2010.172.567; retained locators refer to the arXiv v3.",
+  "primary_url": "https://arxiv.org/pdf/math/0610290v3",
+  "retained_pdf": "dokchitser-dokchitser-2008-parity-v3.pdf",
+  "sha256": "e0f4e7b7d2fd715eabfb85da2acfb2beed6145e08e41ca6af19086bfd8e83442",
+  "bytes": 373644,
+  "pdf_pages": 29,
+  "accessed_utc_date": "2026-11-17",
+  "direct_read": true,
+  "used_locators": [
+    {
+      "locator": "Conjecture 1.2 and Theorem 1.4",
+      "printed_pages": "2",
+      "pdf_pages": "2",
+      "scope": "The p-infinity Selmer rank parity theorem for every elliptic curve over Q and every prime p; the theorem is unconditional, unlike the separate preceding theorem on algebraic rank."
+    },
+    {
+      "locator": "Notation, rkp(E/K)",
+      "printed_pages": "4",
+      "pdf_pages": "4",
+      "scope": "p-infinity Selmer rank equals the Mordell-Weil rank plus the number of Qp/Zp copies in Sha."
+    },
+    {
+      "locator": "Theorem 4.19 (=Theorem 1.4), section 4.6",
+      "printed_pages": "26-27",
+      "pdf_pages": "26-27",
+      "scope": "Same all-prime parity theorem, with its proof. No finiteness of Sha is assumed."
+    }
+  ],
+  "rendered_pages_visually_inspected": [
+    2,
+    26
+  ],
+  "role": "Primary external all-prime Selmer-parity theorem; proof imported, not replayed."
+}

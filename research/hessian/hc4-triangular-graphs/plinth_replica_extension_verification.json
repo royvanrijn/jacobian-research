@@ -1,0 +1,2423 @@
+{
+  "claim": "Plinth ideals and invariant replica extension",
+  "outcome": "PASS",
+  "check_count": 590,
+  "checks": [
+    {
+      "name": "unit root-chart volume r1p2",
+      "passed": true
+    },
+    {
+      "name": "strict primitive forces at least double plinth r1p2",
+      "passed": true
+    },
+    {
+      "name": "exact plinth threshold r1p2n0",
+      "passed": true
+    },
+    {
+      "name": "regular invariant cannot cancel a pole r1p2n0",
+      "passed": true
+    },
+    {
+      "name": "exact plinth threshold r1p2n1",
+      "passed": true
+    },
+    {
+      "name": "regular invariant cannot cancel a pole r1p2n1",
+      "passed": true
+    },
+    {
+      "name": "exact plinth threshold r1p2n2",
+      "passed": true
+    },
+    {
+      "name": "exact plinth threshold r1p2n3",
+      "passed": true
+    },
+    {
+      "name": "unit root-chart volume r1p3",
+      "passed": true
+    },
+    {
+      "name": "strict primitive forces at least double plinth r1p3",
+      "passed": true
+    },
+    {
+      "name": "exact plinth threshold r1p3n0",
+      "passed": true
+    },
+    {
+      "name": "regular invariant cannot cancel a pole r1p3n0",
+      "passed": true
+    },
+    {
+      "name": "exact plinth threshold r1p3n1",
+      "passed": true
+    },
+    {
+      "name": "regular invariant cannot cancel a pole r1p3n1",
+      "passed": true
+    },
+    {
+      "name": "exact plinth threshold r1p3n2",
+      "passed": true
+    },
+    {
+      "name": "regular invariant cannot cancel a pole r1p3n2",
+      "passed": true
+    },
+    {
+      "name": "exact plinth threshold r1p3n3",
+      "passed": true
+    },
+    {
+      "name": "exact plinth threshold r1p3n4",
+      "passed": true
+    },
+    {
+      "name": "unit root-chart volume r1p4",
+      "passed": true
+    },
+    {
+      "name": "strict primitive forces at least double plinth r1p4",
+      "passed": true
+    },
+    {
+      "name": "exact plinth threshold r1p4n0",
+      "passed": true
+    },
+    {
+      "name": "regular invariant cannot cancel a pole r1p4n0",
+      "passed": true
+    },
+    {
+      "name": "exact plinth threshold r1p4n1",
+      "passed": true
+    },
+    {
+      "name": "regular invariant cannot cancel a pole r1p4n1",
+      "passed": true
+    },
+    {
+      "name": "exact plinth threshold r1p4n2",
+      "passed": true
+    },
+    {
+      "name": "regular invariant cannot cancel a pole r1p4n2",
+      "passed": true
+    },
+    {
+      "name": "exact plinth threshold r1p4n3",
+      "passed": true
+    },
+    {
+      "name": "regular invariant cannot cancel a pole r1p4n3",
+      "passed": true
+    },
+    {
+      "name": "exact plinth threshold r1p4n4",
+      "passed": true
+    },
+    {
+      "name": "exact plinth threshold r1p4n5",
+      "passed": true
+    },
+    {
+      "name": "unit root-chart volume r1p5",
+      "passed": true
+    },
+    {
+      "name": "strict primitive forces at least double plinth r1p5",
+      "passed": true
+    },
+    {
+      "name": "exact plinth threshold r1p5n0",
+      "passed": true
+    },
+    {
+      "name": "regular invariant cannot cancel a pole r1p5n0",
+      "passed": true
+    },
+    {
+      "name": "exact plinth threshold r1p5n1",
+      "passed": true
+    },
+    {
+      "name": "regular invariant cannot cancel a pole r1p5n1",
+      "passed": true
+    },
+    {
+      "name": "exact plinth threshold r1p5n2",
+      "passed": true
+    },
+    {
+      "name": "regular invariant cannot cancel a pole r1p5n2",
+      "passed": true
+    },
+    {
+      "name": "exact plinth threshold r1p5n3",
+      "passed": true
+    },
+    {
+      "name": "regular invariant cannot cancel a pole r1p5n3",
+      "passed": true
+    },
+    {
+      "name": "exact plinth threshold r1p5n4",
+      "passed": true
+    },
+    {
+      "name": "regular invariant cannot cancel a pole r1p5n4",
+      "passed": true
+    },
+    {
+      "name": "exact plinth threshold r1p5n5",
+      "passed": true
+    },
+    {
+      "name": "exact plinth threshold r1p5n6",
+      "passed": true
+    },
+    {
+      "name": "unit root-chart volume r1p6",
+      "passed": true
+    },
+    {
+      "name": "strict primitive forces at least double plinth r1p6",
+      "passed": true
+    },
+    {
+      "name": "exact plinth threshold r1p6n0",
+      "passed": true
+    },
+    {
+      "name": "regular invariant cannot cancel a pole r1p6n0",
+      "passed": true
+    },
+    {
+      "name": "exact plinth threshold r1p6n1",
+      "passed": true
+    },
+    {
+      "name": "regular invariant cannot cancel a pole r1p6n1",
+      "passed": true
+    },
+    {
+      "name": "exact plinth threshold r1p6n2",
+      "passed": true
+    },
+    {
+      "name": "regular invariant cannot cancel a pole r1p6n2",
+      "passed": true
+    },
+    {
+      "name": "exact plinth threshold r1p6n3",
+      "passed": true
+    },
+    {
+      "name": "regular invariant cannot cancel a pole r1p6n3",
+      "passed": true
+    },
+    {
+      "name": "exact plinth threshold r1p6n4",
+      "passed": true
+    },
+    {
+      "name": "regular invariant cannot cancel a pole r1p6n4",
+      "passed": true
+    },
+    {
+      "name": "exact plinth threshold r1p6n5",
+      "passed": true
+    },
+    {
+      "name": "regular invariant cannot cancel a pole r1p6n5",
+      "passed": true
+    },
+    {
+      "name": "exact plinth threshold r1p6n6",
+      "passed": true
+    },
+    {
+      "name": "exact plinth threshold r1p6n7",
+      "passed": true
+    },
+    {
+      "name": "unit root-chart volume r2p3",
+      "passed": true
+    },
+    {
+      "name": "strict primitive forces at least double plinth r2p3",
+      "passed": true
+    },
+    {
+      "name": "exact plinth threshold r2p3n0",
+      "passed": true
+    },
+    {
+      "name": "regular invariant cannot cancel a pole r2p3n0",
+      "passed": true
+    },
+    {
+      "name": "exact plinth threshold r2p3n1",
+      "passed": true
+    },
+    {
+      "name": "regular invariant cannot cancel a pole r2p3n1",
+      "passed": true
+    },
+    {
+      "name": "exact plinth threshold r2p3n2",
+      "passed": true
+    },
+    {
+      "name": "exact plinth threshold r2p3n3",
+      "passed": true
+    },
+    {
+      "name": "unit root-chart volume r2p4",
+      "passed": true
+    },
+    {
+      "name": "strict primitive forces at least double plinth r2p4",
+      "passed": true
+    },
+    {
+      "name": "exact plinth threshold r2p4n0",
+      "passed": true
+    },
+    {
+      "name": "regular invariant cannot cancel a pole r2p4n0",
+      "passed": true
+    },
+    {
+      "name": "exact plinth threshold r2p4n1",
+      "passed": true
+    },
+    {
+      "name": "regular invariant cannot cancel a pole r2p4n1",
+      "passed": true
+    },
+    {
+      "name": "exact plinth threshold r2p4n2",
+      "passed": true
+    },
+    {
+      "name": "exact plinth threshold r2p4n3",
+      "passed": true
+    },
+    {
+      "name": "unit root-chart volume r2p5",
+      "passed": true
+    },
+    {
+      "name": "strict primitive forces at least double plinth r2p5",
+      "passed": true
+    },
+    {
+      "name": "exact plinth threshold r2p5n0",
+      "passed": true
+    },
+    {
+      "name": "regular invariant cannot cancel a pole r2p5n0",
+      "passed": true
+    },
+    {
+      "name": "exact plinth threshold r2p5n1",
+      "passed": true
+    },
+    {
+      "name": "regular invariant cannot cancel a pole r2p5n1",
+      "passed": true
+    },
+    {
+      "name": "exact plinth threshold r2p5n2",
+      "passed": true
+    },
+    {
+      "name": "regular invariant cannot cancel a pole r2p5n2",
+      "passed": true
+    },
+    {
+      "name": "exact plinth threshold r2p5n3",
+      "passed": true
+    },
+    {
+      "name": "exact plinth threshold r2p5n4",
+      "passed": true
+    },
+    {
+      "name": "unit root-chart volume r2p6",
+      "passed": true
+    },
+    {
+      "name": "strict primitive forces at least double plinth r2p6",
+      "passed": true
+    },
+    {
+      "name": "exact plinth threshold r2p6n0",
+      "passed": true
+    },
+    {
+      "name": "regular invariant cannot cancel a pole r2p6n0",
+      "passed": true
+    },
+    {
+      "name": "exact plinth threshold r2p6n1",
+      "passed": true
+    },
+    {
+      "name": "regular invariant cannot cancel a pole r2p6n1",
+      "passed": true
+    },
+    {
+      "name": "exact plinth threshold r2p6n2",
+      "passed": true
+    },
+    {
+      "name": "regular invariant cannot cancel a pole r2p6n2",
+      "passed": true
+    },
+    {
+      "name": "exact plinth threshold r2p6n3",
+      "passed": true
+    },
+    {
+      "name": "exact plinth threshold r2p6n4",
+      "passed": true
+    },
+    {
+      "name": "unit root-chart volume r2p7",
+      "passed": true
+    },
+    {
+      "name": "strict primitive forces at least double plinth r2p7",
+      "passed": true
+    },
+    {
+      "name": "exact plinth threshold r2p7n0",
+      "passed": true
+    },
+    {
+      "name": "regular invariant cannot cancel a pole r2p7n0",
+      "passed": true
+    },
+    {
+      "name": "exact plinth threshold r2p7n1",
+      "passed": true
+    },
+    {
+      "name": "regular invariant cannot cancel a pole r2p7n1",
+      "passed": true
+    },
+    {
+      "name": "exact plinth threshold r2p7n2",
+      "passed": true
+    },
+    {
+      "name": "regular invariant cannot cancel a pole r2p7n2",
+      "passed": true
+    },
+    {
+      "name": "exact plinth threshold r2p7n3",
+      "passed": true
+    },
+    {
+      "name": "regular invariant cannot cancel a pole r2p7n3",
+      "passed": true
+    },
+    {
+      "name": "exact plinth threshold r2p7n4",
+      "passed": true
+    },
+    {
+      "name": "exact plinth threshold r2p7n5",
+      "passed": true
+    },
+    {
+      "name": "unit root-chart volume r3p4",
+      "passed": true
+    },
+    {
+      "name": "strict primitive forces at least double plinth r3p4",
+      "passed": true
+    },
+    {
+      "name": "exact plinth threshold r3p4n0",
+      "passed": true
+    },
+    {
+      "name": "regular invariant cannot cancel a pole r3p4n0",
+      "passed": true
+    },
+    {
+      "name": "exact plinth threshold r3p4n1",
+      "passed": true
+    },
+    {
+      "name": "regular invariant cannot cancel a pole r3p4n1",
+      "passed": true
+    },
+    {
+      "name": "exact plinth threshold r3p4n2",
+      "passed": true
+    },
+    {
+      "name": "exact plinth threshold r3p4n3",
+      "passed": true
+    },
+    {
+      "name": "unit root-chart volume r3p5",
+      "passed": true
+    },
+    {
+      "name": "strict primitive forces at least double plinth r3p5",
+      "passed": true
+    },
+    {
+      "name": "exact plinth threshold r3p5n0",
+      "passed": true
+    },
+    {
+      "name": "regular invariant cannot cancel a pole r3p5n0",
+      "passed": true
+    },
+    {
+      "name": "exact plinth threshold r3p5n1",
+      "passed": true
+    },
+    {
+      "name": "regular invariant cannot cancel a pole r3p5n1",
+      "passed": true
+    },
+    {
+      "name": "exact plinth threshold r3p5n2",
+      "passed": true
+    },
+    {
+      "name": "exact plinth threshold r3p5n3",
+      "passed": true
+    },
+    {
+      "name": "unit root-chart volume r3p6",
+      "passed": true
+    },
+    {
+      "name": "strict primitive forces at least double plinth r3p6",
+      "passed": true
+    },
+    {
+      "name": "exact plinth threshold r3p6n0",
+      "passed": true
+    },
+    {
+      "name": "regular invariant cannot cancel a pole r3p6n0",
+      "passed": true
+    },
+    {
+      "name": "exact plinth threshold r3p6n1",
+      "passed": true
+    },
+    {
+      "name": "regular invariant cannot cancel a pole r3p6n1",
+      "passed": true
+    },
+    {
+      "name": "exact plinth threshold r3p6n2",
+      "passed": true
+    },
+    {
+      "name": "exact plinth threshold r3p6n3",
+      "passed": true
+    },
+    {
+      "name": "unit root-chart volume r3p7",
+      "passed": true
+    },
+    {
+      "name": "strict primitive forces at least double plinth r3p7",
+      "passed": true
+    },
+    {
+      "name": "exact plinth threshold r3p7n0",
+      "passed": true
+    },
+    {
+      "name": "regular invariant cannot cancel a pole r3p7n0",
+      "passed": true
+    },
+    {
+      "name": "exact plinth threshold r3p7n1",
+      "passed": true
+    },
+    {
+      "name": "regular invariant cannot cancel a pole r3p7n1",
+      "passed": true
+    },
+    {
+      "name": "exact plinth threshold r3p7n2",
+      "passed": true
+    },
+    {
+      "name": "regular invariant cannot cancel a pole r3p7n2",
+      "passed": true
+    },
+    {
+      "name": "exact plinth threshold r3p7n3",
+      "passed": true
+    },
+    {
+      "name": "exact plinth threshold r3p7n4",
+      "passed": true
+    },
+    {
+      "name": "unit root-chart volume r3p8",
+      "passed": true
+    },
+    {
+      "name": "strict primitive forces at least double plinth r3p8",
+      "passed": true
+    },
+    {
+      "name": "exact plinth threshold r3p8n0",
+      "passed": true
+    },
+    {
+      "name": "regular invariant cannot cancel a pole r3p8n0",
+      "passed": true
+    },
+    {
+      "name": "exact plinth threshold r3p8n1",
+      "passed": true
+    },
+    {
+      "name": "regular invariant cannot cancel a pole r3p8n1",
+      "passed": true
+    },
+    {
+      "name": "exact plinth threshold r3p8n2",
+      "passed": true
+    },
+    {
+      "name": "regular invariant cannot cancel a pole r3p8n2",
+      "passed": true
+    },
+    {
+      "name": "exact plinth threshold r3p8n3",
+      "passed": true
+    },
+    {
+      "name": "exact plinth threshold r3p8n4",
+      "passed": true
+    },
+    {
+      "name": "unit root-chart volume r4p5",
+      "passed": true
+    },
+    {
+      "name": "strict primitive forces at least double plinth r4p5",
+      "passed": true
+    },
+    {
+      "name": "exact plinth threshold r4p5n0",
+      "passed": true
+    },
+    {
+      "name": "regular invariant cannot cancel a pole r4p5n0",
+      "passed": true
+    },
+    {
+      "name": "exact plinth threshold r4p5n1",
+      "passed": true
+    },
+    {
+      "name": "regular invariant cannot cancel a pole r4p5n1",
+      "passed": true
+    },
+    {
+      "name": "exact plinth threshold r4p5n2",
+      "passed": true
+    },
+    {
+      "name": "exact plinth threshold r4p5n3",
+      "passed": true
+    },
+    {
+      "name": "unit root-chart volume r4p6",
+      "passed": true
+    },
+    {
+      "name": "strict primitive forces at least double plinth r4p6",
+      "passed": true
+    },
+    {
+      "name": "exact plinth threshold r4p6n0",
+      "passed": true
+    },
+    {
+      "name": "regular invariant cannot cancel a pole r4p6n0",
+      "passed": true
+    },
+    {
+      "name": "exact plinth threshold r4p6n1",
+      "passed": true
+    },
+    {
+      "name": "regular invariant cannot cancel a pole r4p6n1",
+      "passed": true
+    },
+    {
+      "name": "exact plinth threshold r4p6n2",
+      "passed": true
+    },
+    {
+      "name": "exact plinth threshold r4p6n3",
+      "passed": true
+    },
+    {
+      "name": "unit root-chart volume r4p7",
+      "passed": true
+    },
+    {
+      "name": "strict primitive forces at least double plinth r4p7",
+      "passed": true
+    },
+    {
+      "name": "exact plinth threshold r4p7n0",
+      "passed": true
+    },
+    {
+      "name": "regular invariant cannot cancel a pole r4p7n0",
+      "passed": true
+    },
+    {
+      "name": "exact plinth threshold r4p7n1",
+      "passed": true
+    },
+    {
+      "name": "regular invariant cannot cancel a pole r4p7n1",
+      "passed": true
+    },
+    {
+      "name": "exact plinth threshold r4p7n2",
+      "passed": true
+    },
+    {
+      "name": "exact plinth threshold r4p7n3",
+      "passed": true
+    },
+    {
+      "name": "unit root-chart volume r4p8",
+      "passed": true
+    },
+    {
+      "name": "strict primitive forces at least double plinth r4p8",
+      "passed": true
+    },
+    {
+      "name": "exact plinth threshold r4p8n0",
+      "passed": true
+    },
+    {
+      "name": "regular invariant cannot cancel a pole r4p8n0",
+      "passed": true
+    },
+    {
+      "name": "exact plinth threshold r4p8n1",
+      "passed": true
+    },
+    {
+      "name": "regular invariant cannot cancel a pole r4p8n1",
+      "passed": true
+    },
+    {
+      "name": "exact plinth threshold r4p8n2",
+      "passed": true
+    },
+    {
+      "name": "exact plinth threshold r4p8n3",
+      "passed": true
+    },
+    {
+      "name": "unit root-chart volume r4p9",
+      "passed": true
+    },
+    {
+      "name": "strict primitive forces at least double plinth r4p9",
+      "passed": true
+    },
+    {
+      "name": "exact plinth threshold r4p9n0",
+      "passed": true
+    },
+    {
+      "name": "regular invariant cannot cancel a pole r4p9n0",
+      "passed": true
+    },
+    {
+      "name": "exact plinth threshold r4p9n1",
+      "passed": true
+    },
+    {
+      "name": "regular invariant cannot cancel a pole r4p9n1",
+      "passed": true
+    },
+    {
+      "name": "exact plinth threshold r4p9n2",
+      "passed": true
+    },
+    {
+      "name": "regular invariant cannot cancel a pole r4p9n2",
+      "passed": true
+    },
+    {
+      "name": "exact plinth threshold r4p9n3",
+      "passed": true
+    },
+    {
+      "name": "exact plinth threshold r4p9n4",
+      "passed": true
+    },
+    {
+      "name": "unit root-chart volume r5p6",
+      "passed": true
+    },
+    {
+      "name": "strict primitive forces at least double plinth r5p6",
+      "passed": true
+    },
+    {
+      "name": "exact plinth threshold r5p6n0",
+      "passed": true
+    },
+    {
+      "name": "regular invariant cannot cancel a pole r5p6n0",
+      "passed": true
+    },
+    {
+      "name": "exact plinth threshold r5p6n1",
+      "passed": true
+    },
+    {
+      "name": "regular invariant cannot cancel a pole r5p6n1",
+      "passed": true
+    },
+    {
+      "name": "exact plinth threshold r5p6n2",
+      "passed": true
+    },
+    {
+      "name": "exact plinth threshold r5p6n3",
+      "passed": true
+    },
+    {
+      "name": "unit root-chart volume r5p7",
+      "passed": true
+    },
+    {
+      "name": "strict primitive forces at least double plinth r5p7",
+      "passed": true
+    },
+    {
+      "name": "exact plinth threshold r5p7n0",
+      "passed": true
+    },
+    {
+      "name": "regular invariant cannot cancel a pole r5p7n0",
+      "passed": true
+    },
+    {
+      "name": "exact plinth threshold r5p7n1",
+      "passed": true
+    },
+    {
+      "name": "regular invariant cannot cancel a pole r5p7n1",
+      "passed": true
+    },
+    {
+      "name": "exact plinth threshold r5p7n2",
+      "passed": true
+    },
+    {
+      "name": "exact plinth threshold r5p7n3",
+      "passed": true
+    },
+    {
+      "name": "unit root-chart volume r5p8",
+      "passed": true
+    },
+    {
+      "name": "strict primitive forces at least double plinth r5p8",
+      "passed": true
+    },
+    {
+      "name": "exact plinth threshold r5p8n0",
+      "passed": true
+    },
+    {
+      "name": "regular invariant cannot cancel a pole r5p8n0",
+      "passed": true
+    },
+    {
+      "name": "exact plinth threshold r5p8n1",
+      "passed": true
+    },
+    {
+      "name": "regular invariant cannot cancel a pole r5p8n1",
+      "passed": true
+    },
+    {
+      "name": "exact plinth threshold r5p8n2",
+      "passed": true
+    },
+    {
+      "name": "exact plinth threshold r5p8n3",
+      "passed": true
+    },
+    {
+      "name": "unit root-chart volume r5p9",
+      "passed": true
+    },
+    {
+      "name": "strict primitive forces at least double plinth r5p9",
+      "passed": true
+    },
+    {
+      "name": "exact plinth threshold r5p9n0",
+      "passed": true
+    },
+    {
+      "name": "regular invariant cannot cancel a pole r5p9n0",
+      "passed": true
+    },
+    {
+      "name": "exact plinth threshold r5p9n1",
+      "passed": true
+    },
+    {
+      "name": "regular invariant cannot cancel a pole r5p9n1",
+      "passed": true
+    },
+    {
+      "name": "exact plinth threshold r5p9n2",
+      "passed": true
+    },
+    {
+      "name": "exact plinth threshold r5p9n3",
+      "passed": true
+    },
+    {
+      "name": "unit root-chart volume r5p10",
+      "passed": true
+    },
+    {
+      "name": "strict primitive forces at least double plinth r5p10",
+      "passed": true
+    },
+    {
+      "name": "exact plinth threshold r5p10n0",
+      "passed": true
+    },
+    {
+      "name": "regular invariant cannot cancel a pole r5p10n0",
+      "passed": true
+    },
+    {
+      "name": "exact plinth threshold r5p10n1",
+      "passed": true
+    },
+    {
+      "name": "regular invariant cannot cancel a pole r5p10n1",
+      "passed": true
+    },
+    {
+      "name": "exact plinth threshold r5p10n2",
+      "passed": true
+    },
+    {
+      "name": "exact plinth threshold r5p10n3",
+      "passed": true
+    },
+    {
+      "name": "same-fibre max clears every component packet0p2r1",
+      "passed": true
+    },
+    {
+      "name": "same-fibre max clears every component packet0p5r2",
+      "passed": true
+    },
+    {
+      "name": "same-fibre max clears every component packet0p4r2",
+      "passed": true
+    },
+    {
+      "name": "same-fibre exponent is minimal packet0lambda0",
+      "passed": true
+    },
+    {
+      "name": "same-fibre exponent is minimal packet0lambda3",
+      "passed": true
+    },
+    {
+      "name": "same-fibre max clears every component packet1p3r2",
+      "passed": true
+    },
+    {
+      "name": "same-fibre max clears every component packet1p7r3",
+      "passed": true
+    },
+    {
+      "name": "same-fibre exponent is minimal packet1lambda1",
+      "passed": true
+    },
+    {
+      "name": "same-fibre exponent is minimal packet1lambda-2",
+      "passed": true
+    },
+    {
+      "name": "same-fibre max clears every component packet2p6r1",
+      "passed": true
+    },
+    {
+      "name": "same-fibre max clears every component packet2p8r3",
+      "passed": true
+    },
+    {
+      "name": "same-fibre max clears every component packet2p5r4",
+      "passed": true
+    },
+    {
+      "name": "same-fibre exponent is minimal packet2lambda0",
+      "passed": true
+    },
+    {
+      "name": "same-fibre exponent is minimal packet2lambda2",
+      "passed": true
+    },
+    {
+      "name": "leading coefficient is last Taylor derivative p2j0",
+      "passed": true
+    },
+    {
+      "name": "leading coefficient divisible by exact plinth p2j0",
+      "passed": true
+    },
+    {
+      "name": "leading coefficient is last Taylor derivative p2j1",
+      "passed": true
+    },
+    {
+      "name": "leading coefficient divisible by exact plinth p2j1",
+      "passed": true
+    },
+    {
+      "name": "leading coefficient is last Taylor derivative p2j2",
+      "passed": true
+    },
+    {
+      "name": "leading coefficient divisible by exact plinth p2j2",
+      "passed": true
+    },
+    {
+      "name": "leading coefficient is last Taylor derivative p2j3",
+      "passed": true
+    },
+    {
+      "name": "leading coefficient divisible by exact plinth p2j3",
+      "passed": true
+    },
+    {
+      "name": "leading coefficient is last Taylor derivative p2j4",
+      "passed": true
+    },
+    {
+      "name": "leading coefficient divisible by exact plinth p2j4",
+      "passed": true
+    },
+    {
+      "name": "plinth generator has degree-one antiderivative p2",
+      "passed": true
+    },
+    {
+      "name": "nontrivial leading cancellation remains in plinth p2",
+      "passed": true
+    },
+    {
+      "name": "complete source translation preserves affine relation p2",
+      "passed": true
+    },
+    {
+      "name": "leading coefficient is last Taylor derivative p3j0",
+      "passed": true
+    },
+    {
+      "name": "leading coefficient divisible by exact plinth p3j0",
+      "passed": true
+    },
+    {
+      "name": "leading coefficient is last Taylor derivative p3j1",
+      "passed": true
+    },
+    {
+      "name": "leading coefficient divisible by exact plinth p3j1",
+      "passed": true
+    },
+    {
+      "name": "leading coefficient is last Taylor derivative p3j2",
+      "passed": true
+    },
+    {
+      "name": "leading coefficient divisible by exact plinth p3j2",
+      "passed": true
+    },
+    {
+      "name": "leading coefficient is last Taylor derivative p3j3",
+      "passed": true
+    },
+    {
+      "name": "leading coefficient divisible by exact plinth p3j3",
+      "passed": true
+    },
+    {
+      "name": "leading coefficient is last Taylor derivative p3j4",
+      "passed": true
+    },
+    {
+      "name": "leading coefficient divisible by exact plinth p3j4",
+      "passed": true
+    },
+    {
+      "name": "plinth generator has degree-one antiderivative p3",
+      "passed": true
+    },
+    {
+      "name": "nontrivial leading cancellation remains in plinth p3",
+      "passed": true
+    },
+    {
+      "name": "complete source translation preserves affine relation p3",
+      "passed": true
+    },
+    {
+      "name": "leading coefficient is last Taylor derivative p4j0",
+      "passed": true
+    },
+    {
+      "name": "leading coefficient divisible by exact plinth p4j0",
+      "passed": true
+    },
+    {
+      "name": "leading coefficient is last Taylor derivative p4j1",
+      "passed": true
+    },
+    {
+      "name": "leading coefficient divisible by exact plinth p4j1",
+      "passed": true
+    },
+    {
+      "name": "leading coefficient is last Taylor derivative p4j2",
+      "passed": true
+    },
+    {
+      "name": "leading coefficient divisible by exact plinth p4j2",
+      "passed": true
+    },
+    {
+      "name": "leading coefficient is last Taylor derivative p4j3",
+      "passed": true
+    },
+    {
+      "name": "leading coefficient divisible by exact plinth p4j3",
+      "passed": true
+    },
+    {
+      "name": "leading coefficient is last Taylor derivative p4j4",
+      "passed": true
+    },
+    {
+      "name": "leading coefficient divisible by exact plinth p4j4",
+      "passed": true
+    },
+    {
+      "name": "plinth generator has degree-one antiderivative p4",
+      "passed": true
+    },
+    {
+      "name": "nontrivial leading cancellation remains in plinth p4",
+      "passed": true
+    },
+    {
+      "name": "complete source translation preserves affine relation p4",
+      "passed": true
+    },
+    {
+      "name": "leading coefficient is last Taylor derivative p5j0",
+      "passed": true
+    },
+    {
+      "name": "leading coefficient divisible by exact plinth p5j0",
+      "passed": true
+    },
+    {
+      "name": "leading coefficient is last Taylor derivative p5j1",
+      "passed": true
+    },
+    {
+      "name": "leading coefficient divisible by exact plinth p5j1",
+      "passed": true
+    },
+    {
+      "name": "leading coefficient is last Taylor derivative p5j2",
+      "passed": true
+    },
+    {
+      "name": "leading coefficient divisible by exact plinth p5j2",
+      "passed": true
+    },
+    {
+      "name": "leading coefficient is last Taylor derivative p5j3",
+      "passed": true
+    },
+    {
+      "name": "leading coefficient divisible by exact plinth p5j3",
+      "passed": true
+    },
+    {
+      "name": "leading coefficient is last Taylor derivative p5j4",
+      "passed": true
+    },
+    {
+      "name": "leading coefficient divisible by exact plinth p5j4",
+      "passed": true
+    },
+    {
+      "name": "plinth generator has degree-one antiderivative p5",
+      "passed": true
+    },
+    {
+      "name": "nontrivial leading cancellation remains in plinth p5",
+      "passed": true
+    },
+    {
+      "name": "complete source translation preserves affine relation p5",
+      "passed": true
+    },
+    {
+      "name": "leading coefficient is last Taylor derivative p6j0",
+      "passed": true
+    },
+    {
+      "name": "leading coefficient divisible by exact plinth p6j0",
+      "passed": true
+    },
+    {
+      "name": "leading coefficient is last Taylor derivative p6j1",
+      "passed": true
+    },
+    {
+      "name": "leading coefficient divisible by exact plinth p6j1",
+      "passed": true
+    },
+    {
+      "name": "leading coefficient is last Taylor derivative p6j2",
+      "passed": true
+    },
+    {
+      "name": "leading coefficient divisible by exact plinth p6j2",
+      "passed": true
+    },
+    {
+      "name": "leading coefficient is last Taylor derivative p6j3",
+      "passed": true
+    },
+    {
+      "name": "leading coefficient divisible by exact plinth p6j3",
+      "passed": true
+    },
+    {
+      "name": "leading coefficient is last Taylor derivative p6j4",
+      "passed": true
+    },
+    {
+      "name": "leading coefficient divisible by exact plinth p6j4",
+      "passed": true
+    },
+    {
+      "name": "plinth generator has degree-one antiderivative p6",
+      "passed": true
+    },
+    {
+      "name": "nontrivial leading cancellation remains in plinth p6",
+      "passed": true
+    },
+    {
+      "name": "complete source translation preserves affine relation p6",
+      "passed": true
+    },
+    {
+      "name": "invariant multiplier worsens exact pole e2q1d0",
+      "passed": true
+    },
+    {
+      "name": "no invariant multiplier gives ordinary dual landing e2q1d0",
+      "passed": true
+    },
+    {
+      "name": "invariant multiplier worsens exact pole e2q1d1",
+      "passed": true
+    },
+    {
+      "name": "no invariant multiplier gives ordinary dual landing e2q1d1",
+      "passed": true
+    },
+    {
+      "name": "invariant multiplier worsens exact pole e2q1d2",
+      "passed": true
+    },
+    {
+      "name": "no invariant multiplier gives ordinary dual landing e2q1d2",
+      "passed": true
+    },
+    {
+      "name": "invariant multiplier worsens exact pole e2q1d3",
+      "passed": true
+    },
+    {
+      "name": "no invariant multiplier gives ordinary dual landing e2q1d3",
+      "passed": true
+    },
+    {
+      "name": "invariant multiplier worsens exact pole e2q1d4",
+      "passed": true
+    },
+    {
+      "name": "no invariant multiplier gives ordinary dual landing e2q1d4",
+      "passed": true
+    },
+    {
+      "name": "invariant multiplier worsens exact pole e2q2d0",
+      "passed": true
+    },
+    {
+      "name": "no invariant multiplier gives ordinary dual landing e2q2d0",
+      "passed": true
+    },
+    {
+      "name": "invariant multiplier worsens exact pole e2q2d1",
+      "passed": true
+    },
+    {
+      "name": "no invariant multiplier gives ordinary dual landing e2q2d1",
+      "passed": true
+    },
+    {
+      "name": "invariant multiplier worsens exact pole e2q2d2",
+      "passed": true
+    },
+    {
+      "name": "no invariant multiplier gives ordinary dual landing e2q2d2",
+      "passed": true
+    },
+    {
+      "name": "invariant multiplier worsens exact pole e2q2d3",
+      "passed": true
+    },
+    {
+      "name": "no invariant multiplier gives ordinary dual landing e2q2d3",
+      "passed": true
+    },
+    {
+      "name": "invariant multiplier worsens exact pole e2q2d4",
+      "passed": true
+    },
+    {
+      "name": "no invariant multiplier gives ordinary dual landing e2q2d4",
+      "passed": true
+    },
+    {
+      "name": "invariant multiplier worsens exact pole e2q3d0",
+      "passed": true
+    },
+    {
+      "name": "no invariant multiplier gives ordinary dual landing e2q3d0",
+      "passed": true
+    },
+    {
+      "name": "invariant multiplier worsens exact pole e2q3d1",
+      "passed": true
+    },
+    {
+      "name": "no invariant multiplier gives ordinary dual landing e2q3d1",
+      "passed": true
+    },
+    {
+      "name": "invariant multiplier worsens exact pole e2q3d2",
+      "passed": true
+    },
+    {
+      "name": "no invariant multiplier gives ordinary dual landing e2q3d2",
+      "passed": true
+    },
+    {
+      "name": "invariant multiplier worsens exact pole e2q3d3",
+      "passed": true
+    },
+    {
+      "name": "no invariant multiplier gives ordinary dual landing e2q3d3",
+      "passed": true
+    },
+    {
+      "name": "invariant multiplier worsens exact pole e2q3d4",
+      "passed": true
+    },
+    {
+      "name": "no invariant multiplier gives ordinary dual landing e2q3d4",
+      "passed": true
+    },
+    {
+      "name": "invariant multiplier worsens exact pole e2q4d0",
+      "passed": true
+    },
+    {
+      "name": "no invariant multiplier gives ordinary dual landing e2q4d0",
+      "passed": true
+    },
+    {
+      "name": "invariant multiplier worsens exact pole e2q4d1",
+      "passed": true
+    },
+    {
+      "name": "no invariant multiplier gives ordinary dual landing e2q4d1",
+      "passed": true
+    },
+    {
+      "name": "invariant multiplier worsens exact pole e2q4d2",
+      "passed": true
+    },
+    {
+      "name": "no invariant multiplier gives ordinary dual landing e2q4d2",
+      "passed": true
+    },
+    {
+      "name": "invariant multiplier worsens exact pole e2q4d3",
+      "passed": true
+    },
+    {
+      "name": "no invariant multiplier gives ordinary dual landing e2q4d3",
+      "passed": true
+    },
+    {
+      "name": "invariant multiplier worsens exact pole e2q4d4",
+      "passed": true
+    },
+    {
+      "name": "no invariant multiplier gives ordinary dual landing e2q4d4",
+      "passed": true
+    },
+    {
+      "name": "invariant multiplier worsens exact pole e2q5d0",
+      "passed": true
+    },
+    {
+      "name": "no invariant multiplier gives ordinary dual landing e2q5d0",
+      "passed": true
+    },
+    {
+      "name": "invariant multiplier worsens exact pole e2q5d1",
+      "passed": true
+    },
+    {
+      "name": "no invariant multiplier gives ordinary dual landing e2q5d1",
+      "passed": true
+    },
+    {
+      "name": "invariant multiplier worsens exact pole e2q5d2",
+      "passed": true
+    },
+    {
+      "name": "no invariant multiplier gives ordinary dual landing e2q5d2",
+      "passed": true
+    },
+    {
+      "name": "invariant multiplier worsens exact pole e2q5d3",
+      "passed": true
+    },
+    {
+      "name": "no invariant multiplier gives ordinary dual landing e2q5d3",
+      "passed": true
+    },
+    {
+      "name": "invariant multiplier worsens exact pole e2q5d4",
+      "passed": true
+    },
+    {
+      "name": "no invariant multiplier gives ordinary dual landing e2q5d4",
+      "passed": true
+    },
+    {
+      "name": "invariant multiplier worsens exact pole e3q1d0",
+      "passed": true
+    },
+    {
+      "name": "no invariant multiplier gives ordinary dual landing e3q1d0",
+      "passed": true
+    },
+    {
+      "name": "invariant multiplier worsens exact pole e3q1d1",
+      "passed": true
+    },
+    {
+      "name": "no invariant multiplier gives ordinary dual landing e3q1d1",
+      "passed": true
+    },
+    {
+      "name": "invariant multiplier worsens exact pole e3q1d2",
+      "passed": true
+    },
+    {
+      "name": "no invariant multiplier gives ordinary dual landing e3q1d2",
+      "passed": true
+    },
+    {
+      "name": "invariant multiplier worsens exact pole e3q1d3",
+      "passed": true
+    },
+    {
+      "name": "no invariant multiplier gives ordinary dual landing e3q1d3",
+      "passed": true
+    },
+    {
+      "name": "invariant multiplier worsens exact pole e3q1d4",
+      "passed": true
+    },
+    {
+      "name": "no invariant multiplier gives ordinary dual landing e3q1d4",
+      "passed": true
+    },
+    {
+      "name": "invariant multiplier worsens exact pole e3q2d0",
+      "passed": true
+    },
+    {
+      "name": "no invariant multiplier gives ordinary dual landing e3q2d0",
+      "passed": true
+    },
+    {
+      "name": "invariant multiplier worsens exact pole e3q2d1",
+      "passed": true
+    },
+    {
+      "name": "no invariant multiplier gives ordinary dual landing e3q2d1",
+      "passed": true
+    },
+    {
+      "name": "invariant multiplier worsens exact pole e3q2d2",
+      "passed": true
+    },
+    {
+      "name": "no invariant multiplier gives ordinary dual landing e3q2d2",
+      "passed": true
+    },
+    {
+      "name": "invariant multiplier worsens exact pole e3q2d3",
+      "passed": true
+    },
+    {
+      "name": "no invariant multiplier gives ordinary dual landing e3q2d3",
+      "passed": true
+    },
+    {
+      "name": "invariant multiplier worsens exact pole e3q2d4",
+      "passed": true
+    },
+    {
+      "name": "no invariant multiplier gives ordinary dual landing e3q2d4",
+      "passed": true
+    },
+    {
+      "name": "invariant multiplier worsens exact pole e3q3d0",
+      "passed": true
+    },
+    {
+      "name": "no invariant multiplier gives ordinary dual landing e3q3d0",
+      "passed": true
+    },
+    {
+      "name": "invariant multiplier worsens exact pole e3q3d1",
+      "passed": true
+    },
+    {
+      "name": "no invariant multiplier gives ordinary dual landing e3q3d1",
+      "passed": true
+    },
+    {
+      "name": "invariant multiplier worsens exact pole e3q3d2",
+      "passed": true
+    },
+    {
+      "name": "no invariant multiplier gives ordinary dual landing e3q3d2",
+      "passed": true
+    },
+    {
+      "name": "invariant multiplier worsens exact pole e3q3d3",
+      "passed": true
+    },
+    {
+      "name": "no invariant multiplier gives ordinary dual landing e3q3d3",
+      "passed": true
+    },
+    {
+      "name": "invariant multiplier worsens exact pole e3q3d4",
+      "passed": true
+    },
+    {
+      "name": "no invariant multiplier gives ordinary dual landing e3q3d4",
+      "passed": true
+    },
+    {
+      "name": "invariant multiplier worsens exact pole e3q4d0",
+      "passed": true
+    },
+    {
+      "name": "no invariant multiplier gives ordinary dual landing e3q4d0",
+      "passed": true
+    },
+    {
+      "name": "invariant multiplier worsens exact pole e3q4d1",
+      "passed": true
+    },
+    {
+      "name": "no invariant multiplier gives ordinary dual landing e3q4d1",
+      "passed": true
+    },
+    {
+      "name": "invariant multiplier worsens exact pole e3q4d2",
+      "passed": true
+    },
+    {
+      "name": "no invariant multiplier gives ordinary dual landing e3q4d2",
+      "passed": true
+    },
+    {
+      "name": "invariant multiplier worsens exact pole e3q4d3",
+      "passed": true
+    },
+    {
+      "name": "no invariant multiplier gives ordinary dual landing e3q4d3",
+      "passed": true
+    },
+    {
+      "name": "invariant multiplier worsens exact pole e3q4d4",
+      "passed": true
+    },
+    {
+      "name": "no invariant multiplier gives ordinary dual landing e3q4d4",
+      "passed": true
+    },
+    {
+      "name": "invariant multiplier worsens exact pole e3q5d0",
+      "passed": true
+    },
+    {
+      "name": "no invariant multiplier gives ordinary dual landing e3q5d0",
+      "passed": true
+    },
+    {
+      "name": "invariant multiplier worsens exact pole e3q5d1",
+      "passed": true
+    },
+    {
+      "name": "no invariant multiplier gives ordinary dual landing e3q5d1",
+      "passed": true
+    },
+    {
+      "name": "invariant multiplier worsens exact pole e3q5d2",
+      "passed": true
+    },
+    {
+      "name": "no invariant multiplier gives ordinary dual landing e3q5d2",
+      "passed": true
+    },
+    {
+      "name": "invariant multiplier worsens exact pole e3q5d3",
+      "passed": true
+    },
+    {
+      "name": "no invariant multiplier gives ordinary dual landing e3q5d3",
+      "passed": true
+    },
+    {
+      "name": "invariant multiplier worsens exact pole e3q5d4",
+      "passed": true
+    },
+    {
+      "name": "no invariant multiplier gives ordinary dual landing e3q5d4",
+      "passed": true
+    },
+    {
+      "name": "invariant multiplier worsens exact pole e4q1d0",
+      "passed": true
+    },
+    {
+      "name": "no invariant multiplier gives ordinary dual landing e4q1d0",
+      "passed": true
+    },
+    {
+      "name": "invariant multiplier worsens exact pole e4q1d1",
+      "passed": true
+    },
+    {
+      "name": "no invariant multiplier gives ordinary dual landing e4q1d1",
+      "passed": true
+    },
+    {
+      "name": "invariant multiplier worsens exact pole e4q1d2",
+      "passed": true
+    },
+    {
+      "name": "no invariant multiplier gives ordinary dual landing e4q1d2",
+      "passed": true
+    },
+    {
+      "name": "invariant multiplier worsens exact pole e4q1d3",
+      "passed": true
+    },
+    {
+      "name": "no invariant multiplier gives ordinary dual landing e4q1d3",
+      "passed": true
+    },
+    {
+      "name": "invariant multiplier worsens exact pole e4q1d4",
+      "passed": true
+    },
+    {
+      "name": "no invariant multiplier gives ordinary dual landing e4q1d4",
+      "passed": true
+    },
+    {
+      "name": "invariant multiplier worsens exact pole e4q2d0",
+      "passed": true
+    },
+    {
+      "name": "no invariant multiplier gives ordinary dual landing e4q2d0",
+      "passed": true
+    },
+    {
+      "name": "invariant multiplier worsens exact pole e4q2d1",
+      "passed": true
+    },
+    {
+      "name": "no invariant multiplier gives ordinary dual landing e4q2d1",
+      "passed": true
+    },
+    {
+      "name": "invariant multiplier worsens exact pole e4q2d2",
+      "passed": true
+    },
+    {
+      "name": "no invariant multiplier gives ordinary dual landing e4q2d2",
+      "passed": true
+    },
+    {
+      "name": "invariant multiplier worsens exact pole e4q2d3",
+      "passed": true
+    },
+    {
+      "name": "no invariant multiplier gives ordinary dual landing e4q2d3",
+      "passed": true
+    },
+    {
+      "name": "invariant multiplier worsens exact pole e4q2d4",
+      "passed": true
+    },
+    {
+      "name": "no invariant multiplier gives ordinary dual landing e4q2d4",
+      "passed": true
+    },
+    {
+      "name": "invariant multiplier worsens exact pole e4q3d0",
+      "passed": true
+    },
+    {
+      "name": "no invariant multiplier gives ordinary dual landing e4q3d0",
+      "passed": true
+    },
+    {
+      "name": "invariant multiplier worsens exact pole e4q3d1",
+      "passed": true
+    },
+    {
+      "name": "no invariant multiplier gives ordinary dual landing e4q3d1",
+      "passed": true
+    },
+    {
+      "name": "invariant multiplier worsens exact pole e4q3d2",
+      "passed": true
+    },
+    {
+      "name": "no invariant multiplier gives ordinary dual landing e4q3d2",
+      "passed": true
+    },
+    {
+      "name": "invariant multiplier worsens exact pole e4q3d3",
+      "passed": true
+    },
+    {
+      "name": "no invariant multiplier gives ordinary dual landing e4q3d3",
+      "passed": true
+    },
+    {
+      "name": "invariant multiplier worsens exact pole e4q3d4",
+      "passed": true
+    },
+    {
+      "name": "no invariant multiplier gives ordinary dual landing e4q3d4",
+      "passed": true
+    },
+    {
+      "name": "invariant multiplier worsens exact pole e4q4d0",
+      "passed": true
+    },
+    {
+      "name": "no invariant multiplier gives ordinary dual landing e4q4d0",
+      "passed": true
+    },
+    {
+      "name": "invariant multiplier worsens exact pole e4q4d1",
+      "passed": true
+    },
+    {
+      "name": "no invariant multiplier gives ordinary dual landing e4q4d1",
+      "passed": true
+    },
+    {
+      "name": "invariant multiplier worsens exact pole e4q4d2",
+      "passed": true
+    },
+    {
+      "name": "no invariant multiplier gives ordinary dual landing e4q4d2",
+      "passed": true
+    },
+    {
+      "name": "invariant multiplier worsens exact pole e4q4d3",
+      "passed": true
+    },
+    {
+      "name": "no invariant multiplier gives ordinary dual landing e4q4d3",
+      "passed": true
+    },
+    {
+      "name": "invariant multiplier worsens exact pole e4q4d4",
+      "passed": true
+    },
+    {
+      "name": "no invariant multiplier gives ordinary dual landing e4q4d4",
+      "passed": true
+    },
+    {
+      "name": "invariant multiplier worsens exact pole e4q5d0",
+      "passed": true
+    },
+    {
+      "name": "no invariant multiplier gives ordinary dual landing e4q5d0",
+      "passed": true
+    },
+    {
+      "name": "invariant multiplier worsens exact pole e4q5d1",
+      "passed": true
+    },
+    {
+      "name": "no invariant multiplier gives ordinary dual landing e4q5d1",
+      "passed": true
+    },
+    {
+      "name": "invariant multiplier worsens exact pole e4q5d2",
+      "passed": true
+    },
+    {
+      "name": "no invariant multiplier gives ordinary dual landing e4q5d2",
+      "passed": true
+    },
+    {
+      "name": "invariant multiplier worsens exact pole e4q5d3",
+      "passed": true
+    },
+    {
+      "name": "no invariant multiplier gives ordinary dual landing e4q5d3",
+      "passed": true
+    },
+    {
+      "name": "invariant multiplier worsens exact pole e4q5d4",
+      "passed": true
+    },
+    {
+      "name": "no invariant multiplier gives ordinary dual landing e4q5d4",
+      "passed": true
+    },
+    {
+      "name": "invariant multiplier worsens exact pole e5q1d0",
+      "passed": true
+    },
+    {
+      "name": "no invariant multiplier gives ordinary dual landing e5q1d0",
+      "passed": true
+    },
+    {
+      "name": "invariant multiplier worsens exact pole e5q1d1",
+      "passed": true
+    },
+    {
+      "name": "no invariant multiplier gives ordinary dual landing e5q1d1",
+      "passed": true
+    },
+    {
+      "name": "invariant multiplier worsens exact pole e5q1d2",
+      "passed": true
+    },
+    {
+      "name": "no invariant multiplier gives ordinary dual landing e5q1d2",
+      "passed": true
+    },
+    {
+      "name": "invariant multiplier worsens exact pole e5q1d3",
+      "passed": true
+    },
+    {
+      "name": "no invariant multiplier gives ordinary dual landing e5q1d3",
+      "passed": true
+    },
+    {
+      "name": "invariant multiplier worsens exact pole e5q1d4",
+      "passed": true
+    },
+    {
+      "name": "no invariant multiplier gives ordinary dual landing e5q1d4",
+      "passed": true
+    },
+    {
+      "name": "invariant multiplier worsens exact pole e5q2d0",
+      "passed": true
+    },
+    {
+      "name": "no invariant multiplier gives ordinary dual landing e5q2d0",
+      "passed": true
+    },
+    {
+      "name": "invariant multiplier worsens exact pole e5q2d1",
+      "passed": true
+    },
+    {
+      "name": "no invariant multiplier gives ordinary dual landing e5q2d1",
+      "passed": true
+    },
+    {
+      "name": "invariant multiplier worsens exact pole e5q2d2",
+      "passed": true
+    },
+    {
+      "name": "no invariant multiplier gives ordinary dual landing e5q2d2",
+      "passed": true
+    },
+    {
+      "name": "invariant multiplier worsens exact pole e5q2d3",
+      "passed": true
+    },
+    {
+      "name": "no invariant multiplier gives ordinary dual landing e5q2d3",
+      "passed": true
+    },
+    {
+      "name": "invariant multiplier worsens exact pole e5q2d4",
+      "passed": true
+    },
+    {
+      "name": "no invariant multiplier gives ordinary dual landing e5q2d4",
+      "passed": true
+    },
+    {
+      "name": "invariant multiplier worsens exact pole e5q3d0",
+      "passed": true
+    },
+    {
+      "name": "no invariant multiplier gives ordinary dual landing e5q3d0",
+      "passed": true
+    },
+    {
+      "name": "invariant multiplier worsens exact pole e5q3d1",
+      "passed": true
+    },
+    {
+      "name": "no invariant multiplier gives ordinary dual landing e5q3d1",
+      "passed": true
+    },
+    {
+      "name": "invariant multiplier worsens exact pole e5q3d2",
+      "passed": true
+    },
+    {
+      "name": "no invariant multiplier gives ordinary dual landing e5q3d2",
+      "passed": true
+    },
+    {
+      "name": "invariant multiplier worsens exact pole e5q3d3",
+      "passed": true
+    },
+    {
+      "name": "no invariant multiplier gives ordinary dual landing e5q3d3",
+      "passed": true
+    },
+    {
+      "name": "invariant multiplier worsens exact pole e5q3d4",
+      "passed": true
+    },
+    {
+      "name": "no invariant multiplier gives ordinary dual landing e5q3d4",
+      "passed": true
+    },
+    {
+      "name": "invariant multiplier worsens exact pole e5q4d0",
+      "passed": true
+    },
+    {
+      "name": "no invariant multiplier gives ordinary dual landing e5q4d0",
+      "passed": true
+    },
+    {
+      "name": "invariant multiplier worsens exact pole e5q4d1",
+      "passed": true
+    },
+    {
+      "name": "no invariant multiplier gives ordinary dual landing e5q4d1",
+      "passed": true
+    },
+    {
+      "name": "invariant multiplier worsens exact pole e5q4d2",
+      "passed": true
+    },
+    {
+      "name": "no invariant multiplier gives ordinary dual landing e5q4d2",
+      "passed": true
+    },
+    {
+      "name": "invariant multiplier worsens exact pole e5q4d3",
+      "passed": true
+    },
+    {
+      "name": "no invariant multiplier gives ordinary dual landing e5q4d3",
+      "passed": true
+    },
+    {
+      "name": "invariant multiplier worsens exact pole e5q4d4",
+      "passed": true
+    },
+    {
+      "name": "no invariant multiplier gives ordinary dual landing e5q4d4",
+      "passed": true
+    },
+    {
+      "name": "invariant multiplier worsens exact pole e5q5d0",
+      "passed": true
+    },
+    {
+      "name": "no invariant multiplier gives ordinary dual landing e5q5d0",
+      "passed": true
+    },
+    {
+      "name": "invariant multiplier worsens exact pole e5q5d1",
+      "passed": true
+    },
+    {
+      "name": "no invariant multiplier gives ordinary dual landing e5q5d1",
+      "passed": true
+    },
+    {
+      "name": "invariant multiplier worsens exact pole e5q5d2",
+      "passed": true
+    },
+    {
+      "name": "no invariant multiplier gives ordinary dual landing e5q5d2",
+      "passed": true
+    },
+    {
+      "name": "invariant multiplier worsens exact pole e5q5d3",
+      "passed": true
+    },
+    {
+      "name": "no invariant multiplier gives ordinary dual landing e5q5d3",
+      "passed": true
+    },
+    {
+      "name": "invariant multiplier worsens exact pole e5q5d4",
+      "passed": true
+    },
+    {
+      "name": "no invariant multiplier gives ordinary dual landing e5q5d4",
+      "passed": true
+    },
+    {
+      "name": "invariant multiplier worsens exact pole e6q1d0",
+      "passed": true
+    },
+    {
+      "name": "no invariant multiplier gives ordinary dual landing e6q1d0",
+      "passed": true
+    },
+    {
+      "name": "invariant multiplier worsens exact pole e6q1d1",
+      "passed": true
+    },
+    {
+      "name": "no invariant multiplier gives ordinary dual landing e6q1d1",
+      "passed": true
+    },
+    {
+      "name": "invariant multiplier worsens exact pole e6q1d2",
+      "passed": true
+    },
+    {
+      "name": "no invariant multiplier gives ordinary dual landing e6q1d2",
+      "passed": true
+    },
+    {
+      "name": "invariant multiplier worsens exact pole e6q1d3",
+      "passed": true
+    },
+    {
+      "name": "no invariant multiplier gives ordinary dual landing e6q1d3",
+      "passed": true
+    },
+    {
+      "name": "invariant multiplier worsens exact pole e6q1d4",
+      "passed": true
+    },
+    {
+      "name": "no invariant multiplier gives ordinary dual landing e6q1d4",
+      "passed": true
+    },
+    {
+      "name": "invariant multiplier worsens exact pole e6q2d0",
+      "passed": true
+    },
+    {
+      "name": "no invariant multiplier gives ordinary dual landing e6q2d0",
+      "passed": true
+    },
+    {
+      "name": "invariant multiplier worsens exact pole e6q2d1",
+      "passed": true
+    },
+    {
+      "name": "no invariant multiplier gives ordinary dual landing e6q2d1",
+      "passed": true
+    },
+    {
+      "name": "invariant multiplier worsens exact pole e6q2d2",
+      "passed": true
+    },
+    {
+      "name": "no invariant multiplier gives ordinary dual landing e6q2d2",
+      "passed": true
+    },
+    {
+      "name": "invariant multiplier worsens exact pole e6q2d3",
+      "passed": true
+    },
+    {
+      "name": "no invariant multiplier gives ordinary dual landing e6q2d3",
+      "passed": true
+    },
+    {
+      "name": "invariant multiplier worsens exact pole e6q2d4",
+      "passed": true
+    },
+    {
+      "name": "no invariant multiplier gives ordinary dual landing e6q2d4",
+      "passed": true
+    },
+    {
+      "name": "invariant multiplier worsens exact pole e6q3d0",
+      "passed": true
+    },
+    {
+      "name": "no invariant multiplier gives ordinary dual landing e6q3d0",
+      "passed": true
+    },
+    {
+      "name": "invariant multiplier worsens exact pole e6q3d1",
+      "passed": true
+    },
+    {
+      "name": "no invariant multiplier gives ordinary dual landing e6q3d1",
+      "passed": true
+    },
+    {
+      "name": "invariant multiplier worsens exact pole e6q3d2",
+      "passed": true
+    },
+    {
+      "name": "no invariant multiplier gives ordinary dual landing e6q3d2",
+      "passed": true
+    },
+    {
+      "name": "invariant multiplier worsens exact pole e6q3d3",
+      "passed": true
+    },
+    {
+      "name": "no invariant multiplier gives ordinary dual landing e6q3d3",
+      "passed": true
+    },
+    {
+      "name": "invariant multiplier worsens exact pole e6q3d4",
+      "passed": true
+    },
+    {
+      "name": "no invariant multiplier gives ordinary dual landing e6q3d4",
+      "passed": true
+    },
+    {
+      "name": "invariant multiplier worsens exact pole e6q4d0",
+      "passed": true
+    },
+    {
+      "name": "no invariant multiplier gives ordinary dual landing e6q4d0",
+      "passed": true
+    },
+    {
+      "name": "invariant multiplier worsens exact pole e6q4d1",
+      "passed": true
+    },
+    {
+      "name": "no invariant multiplier gives ordinary dual landing e6q4d1",
+      "passed": true
+    },
+    {
+      "name": "invariant multiplier worsens exact pole e6q4d2",
+      "passed": true
+    },
+    {
+      "name": "no invariant multiplier gives ordinary dual landing e6q4d2",
+      "passed": true
+    },
+    {
+      "name": "invariant multiplier worsens exact pole e6q4d3",
+      "passed": true
+    },
+    {
+      "name": "no invariant multiplier gives ordinary dual landing e6q4d3",
+      "passed": true
+    },
+    {
+      "name": "invariant multiplier worsens exact pole e6q4d4",
+      "passed": true
+    },
+    {
+      "name": "no invariant multiplier gives ordinary dual landing e6q4d4",
+      "passed": true
+    },
+    {
+      "name": "invariant multiplier worsens exact pole e6q5d0",
+      "passed": true
+    },
+    {
+      "name": "no invariant multiplier gives ordinary dual landing e6q5d0",
+      "passed": true
+    },
+    {
+      "name": "invariant multiplier worsens exact pole e6q5d1",
+      "passed": true
+    },
+    {
+      "name": "no invariant multiplier gives ordinary dual landing e6q5d1",
+      "passed": true
+    },
+    {
+      "name": "invariant multiplier worsens exact pole e6q5d2",
+      "passed": true
+    },
+    {
+      "name": "no invariant multiplier gives ordinary dual landing e6q5d2",
+      "passed": true
+    },
+    {
+      "name": "invariant multiplier worsens exact pole e6q5d3",
+      "passed": true
+    },
+    {
+      "name": "no invariant multiplier gives ordinary dual landing e6q5d3",
+      "passed": true
+    },
+    {
+      "name": "invariant multiplier worsens exact pole e6q5d4",
+      "passed": true
+    },
+    {
+      "name": "no invariant multiplier gives ordinary dual landing e6q5d4",
+      "passed": true
+    },
+    {
+      "name": "regular-coordinate clearing on z",
+      "passed": true
+    },
+    {
+      "name": "regular-coordinate clearing on a1",
+      "passed": true
+    },
+    {
+      "name": "regular-coordinate clearing on a2",
+      "passed": true
+    },
+    {
+      "name": "cleared invariant replica is nilpotent on generator y",
+      "passed": true
+    },
+    {
+      "name": "cleared invariant replica is nilpotent on generator x*y**2",
+      "passed": true
+    },
+    {
+      "name": "cleared invariant replica is nilpotent on generator x*(x*y**2 - 1)",
+      "passed": true
+    },
+    {
+      "name": "cleared invariant replica is nilpotent on generator x**2*(x*y**2 - 1)",
+      "passed": true
+    },
+    {
+      "name": "multiplier-module commutator",
+      "passed": true
+    },
+    {
+      "name": "invariant replica preserves source volume divergence",
+      "passed": true
+    },
+    {
+      "name": "invariant replica finite Taylor identity n1",
+      "passed": true
+    },
+    {
+      "name": "invariant replica finite Taylor identity n2",
+      "passed": true
+    },
+    {
+      "name": "invariant replica finite Taylor identity n3",
+      "passed": true
+    },
+    {
+      "name": "invariant replica finite Taylor identity n4",
+      "passed": true
+    },
+    {
+      "name": "linked N generator regular at entire generic E j0",
+      "passed": true
+    },
+    {
+      "name": "linked N generator regular at entire generic E j1",
+      "passed": true
+    },
+    {
+      "name": "linked N generator regular at entire generic E j2",
+      "passed": true
+    },
+    {
+      "name": "linked N generator regular at entire generic E j3",
+      "passed": true
+    },
+    {
+      "name": "Taylor invariant from regular b is y",
+      "passed": true
+    },
+    {
+      "name": "Taylor derivative from regular c is y squared",
+      "passed": true
+    },
+    {
+      "name": "b Taylor chain terminates",
+      "passed": true
+    },
+    {
+      "name": "c Taylor chain terminates",
+      "passed": true
+    },
+    {
+      "name": "invariant y is in canonical M but not regular N",
+      "passed": true
+    },
+    {
+      "name": "derivative y squared leaves canonical M",
+      "passed": true
+    },
+    {
+      "name": "canonical local generator y has exactly simple pole",
+      "passed": true
+    },
+    {
+      "name": "linked control volume has one boundary zero",
+      "passed": true
+    },
+    {
+      "name": "linked global primitive is regular on other chart",
+      "passed": true
+    },
+    {
+      "name": "linked primitive differentiates to volume",
+      "passed": true
+    }
+  ],
+  "environment": {
+    "python": "3.12.3",
+    "sympy": "1.14.0"
+  },
+  "proof": "PLINTH_IDEALS_AND_INVARIANT_REPLICA_EXTENSION.md",
+  "proof_sha256": "c12abba1704e3b5287f452b9e3eb758a771207b036d4995fa84335284e4b2d8d",
+  "checker": "verify_plinth_replica_extension.py",
+  "checker_sha256": "9fee8333c3ea4e1410a3fd165547ade52fabf1f521f5af44085d41f76060c582",
+  "retained_inputs": [
+    {
+      "path": "EXACT_VOLUME_BOUNDARY_MULTIPLICITIES_AND_COMMON_SOURCE_PENCIL.md",
+      "sha256": "1a9a234f84871ecfef48bfe0644c7b5e068a382b739959ec3b4753580b77e5d7",
+      "locator": "Common actual source frame and strict p_i>r_i boundary inequality"
+    },
+    {
+      "path": "COMMON_COORDINATE_FORCES_SMOOTH_BOUNDARY_AND_WHOLE_ROOT_CHARTS.md",
+      "sha256": "7eb2e4439847c2a0383eca058786c1a3b5ea775749934203f5d7052c7e4e0af6",
+      "locator": "Whole root charts and same-volume primitive"
+    },
+    {
+      "path": "HAMILTONIAN_COMMON_COORDINATE_AND_ADDITIVE_COMPLETION.md",
+      "sha256": "35363abb607ed4ff1c268d0b0ccda05e2f6097f44f7a85669610ea6c248b55a6",
+      "locator": "Actual complete source translation and kernel"
+    },
+    {
+      "path": "CODIFFERENT_PREIMAGES_UNDER_TARGET_DERIVATIONS.md",
+      "sha256": "da98e9b38b2958bc5bf810776122fd58138b6bfed4bbe1d6d205a1f19f2fcdf8",
+      "locator": "Generic-target first-velocity pole formula; ordinary trace dual only"
+    },
+    {
+      "path": "CANONICAL_BOUNDARY_AND_STABLE_COMPLETE_INTERSECTION_OBSTRUCTION.md",
+      "sha256": "9284117aeb73df6331b0b7235a4bd9a713a9542666c45d44561c89739e77f1c8",
+      "locator": "Full finite source open and canonical coefficient identity"
+    },
+    {
+      "path": "RAMIFIED_FOLD_VALUATIONS_AND_COMMON_COORDINATE_POLES.md",
+      "sha256": "a22741215a62465805621346938f9c93fbcdd6cd76ad0aff3aebd21ffec3a4a0",
+      "locator": "Linked affine noncontracting survivor control only"
+    },
+    {
+      "path": "REGULAR_SOURCE_COORDINATE_COMPLETIONS_AND_PRIMITIVE_RESIDUES.md",
+      "sha256": "a138ac8d2b2c749007a02776f6cf00a23a84749194daf4f1734f00244ed0e7c4",
+      "locator": "Regular-coordinate denominator-clearing control"
+    }
+  ],
+  "scope": {
+    "ordinary_full_finite_S_and_canonical_etale_A_distinct": true,
+    "exact_A_plinth_and_leading_coefficient_ideal": true,
+    "proper_common_frame_never_source_finite": true,
+    "invariant_replica_preserves_S_or_Lambda_iff_y_in_S": true,
+    "given_source_coordinate_only_not_arbitrary_LND_classification": true,
+    "linked_control_canonical_module_not_claimed_trace_dual": true,
+    "automatic_velocity_or_coordinate_landing_proved": false,
+    "HC4_JC2_inverse_proved": false
+  },
+  "assurance": "Internal exact controls with written unrestricted proof; geometric controls have no supplied finite Keller plane target. No formal verification or external review."
+}

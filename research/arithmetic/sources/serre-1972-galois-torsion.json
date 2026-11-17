@@ -1,0 +1,20 @@
+{
+  "title": "Proprietes galoisiennes des points d'ordre fini des courbes elliptiques",
+  "authors": "Jean-Pierre Serre",
+  "citation": "Inventiones mathematicae 15 (1972), 259-331; DOI 10.1007/BF01405086",
+  "primary_url": "https://www.college-de-france.fr/media/jean-pierre-serre/UPL5874918517843398173_Serre_proprie_te_s_galoisiennes_des_courbes_elliptiques.pdf",
+  "retained_pdf": "serre-1972-galois-torsion.pdf",
+  "sha256": "93970ed93730194af8bed0f1f59d29cbed061d20f34f4bcffc079ad8aedf01d5",
+  "bytes": 6148034,
+  "pdf_pages": 74,
+  "format_note": "Scanned author-hosted paper with one added bibliographic cover page; theorem pages were rendered and read visually.",
+  "used_locators": [
+    {"locator": "Introduction, assertions (1)-(7)", "printed_pages": "259-260", "pdf_pages": "2-3", "scope": "Equivalent adelic openness and full-factor assertions, and mod-ell surjectivity outside finite exceptions."},
+    {"locator": "Section 4.2, Theorem 2", "printed_pages": "294", "pdf_pages": "37", "scope": "For a non-CM elliptic curve over a number field, mod-ell image is full outside finitely many ell."},
+    {"locator": "Section 4.4, Theorem 3 and Corollary 1", "printed_pages": "299-300", "pdf_pages": "42-43", "scope": "Adelic torsion image is open and contains the entire ell-adic factor outside finitely many ell."}
+  ],
+  "rendered_pages_visually_inspected": [2,3,4,5,36,37,42,43],
+  "accessed_utc_date": "2026-11-17",
+  "direct_read": true,
+  "role": "Precisely scoped primary open-image input; no numerical exceptional-prime bound or proof of the imported theorem is claimed."
+}

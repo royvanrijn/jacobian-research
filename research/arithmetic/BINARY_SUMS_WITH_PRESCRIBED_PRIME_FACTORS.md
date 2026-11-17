@@ -2,10 +2,11 @@
 
 The central research target is a uniform binary lower bound at the scale of the
 whole multiplicative semigroup, on every compatible large target. That is the
-open conjecture FBS-U below. Positive-proportion coverage, a known density-one
-range, and an every-target ternary result are established baselines. This note
-derives those corollaries from published tools and keeps the unproved binary
-estimates and their priority assessment separate.
+open conjecture FBS-U below. Positive-proportion coverage, semigroup-scale density one in a range of power
+windows, fixed-width variance, and an every-target ternary result are proved
+baselines. This note and its linked proofs derive these results from published
+tools and keep the remaining binary estimates and their priority assessment
+separate.
 
 The [simultaneous Gaussian--Eisenstein case study](SIMULTANEOUS_GAUSSIAN_EISENSTEIN_SUMS.md)
 keeps the exact norm identities, lifted local densities, conditional pointwise
@@ -402,6 +403,94 @@ theorem has no prescribed common arithmetic progression. Its stronger exponent
 is not imported into Tq, and Tq is not presented as a new ternary Goldbach
 breakthrough.
 
+## Semigroup-scale density one and the variance main term
+
+The prime-only result Hq is weaker than the following consequence of recent
+short-interval Fourier estimates and an elementary cofactor sieve.
+
+**Semigroup density-one theorem Dq.** Fix \(q\ge3\) and \(1/3<\theta<1\).
+There is \(c_{q,\theta}>0\), independent of \(A\), such that for every fixed
+\(A>0\), with \(H=X^\theta\),
+\[
+\#\left\{\begin{array}{c}
+X<N\le2X,\quad N\equiv2\pmod L:\\
+r_{q,H}(N)<c_{q,\theta}H/(\log X)^{\kappa_q}
+\end{array}\right\}
+\ll_{q,\theta,A}\frac{X}{(\log X)^A}.\tag{D}
+\]
+At \(q=12\), the lower bound has denominator \((\log X)^{3/2}\): a factor
+\(\sqrt{\log X}\) larger than the prime-pair scale. The
+[complete cofactor proof](PRESCRIBED_PRIME_SEMIGROUP_DENSITY_ONE.md) uses
+Matomäki--Radziwiłł--Shao--Tao--Teräväinen's published 2026 Theorem 1.1(ii),
+not merely an application of Hq. It counts numbers with a unique large prime
+factor times a small allowed cofactor, averages Fourier errors before summing
+cofactors, and proves a uniform lower bound for the modeled convolution.
+The cofactor divisor sum restores the semigroup logarithmic gain even on
+highly divisible targets. This is a derived consequence; originality remains
+unaudited. The exception bound is logarithmic, not a power saving.
+
+The [variance proof and reduction](PRESCRIBED_PRIME_BINARY_VARIANCE.md) also
+establish the explicit arithmetic model for \(C_q\). With
+\(\alpha=1/\varphi(q)\) and
+\(\mathcal B_q=\{p:p\nmid L,\ p\not\equiv1\pmod q\}\), put
+\[
+\mathfrak S_q(N)=L\mathbf1_{N\equiv2\ (L)}
+\prod_{p\in\mathcal B_q}
+\begin{cases}p/(p-1),&p\mid N,\\1-(p-1)^{-2},&p\nmid N.\end{cases}
+\]
+Define \(c_q>0\) by \(\sum_{n\le x}\mathbf1_{C_q}(n)
+\sim c_qx(\log x)^{\alpha-1}\), and set
+\[
+\mathcal M_q(N,H)=c_q^2H(\log X)^{-\kappa_q}\mathfrak S_q(N)
+\quad (X<N\le2X).
+\]
+The product has a uniform positive lower bound on compatible targets.
+The character calculation is supplied in that proof; the Euler product is
+not inferred just from the local forbidden residues. FBS2's upper-bound
+factor \(\mathcal S_C\) remains a different object.
+
+For every fixed \(0<\lambda\le1\), \(H=\lambda X\), theorem Vq proves
+\[
+\sum_{\substack{X<N\le2X\\N\equiv2\ (L)}}
+ |r_{q,H}(N)-\mathcal M_q(N,H)|^2
+=o\!\left(\frac{XH^2}{(\log X)^{2\kappa_q}}\right).\tag{V}
+\]
+This gives a full semigroup-scale asymptotic outside \(o(X)\) targets in
+fixed-width windows, including the balanced case. No quantitative rate or
+fixed-power shrinking window follows from this application of the fixed-body
+Loughran--Matthiesen theorem.
+
+For every fixed \(0<\theta<1\), including \(\theta\le1/3\), theorem Aq
+in that proof gives the exact first moment
+\[
+\sum_{X<N\le2X}r_{\mathcal P,X^\theta}(N)
+=c_{\mathcal P}^2\frac{XX^\theta}{(\log X)^{2-2\alpha}}
+\{1+O_{\mathcal P,\theta}((\log X)^{-\eta})\}
+\]
+for some \(\eta>0\) and every fixed Frobenian prime set of density
+\(\alpha>0\). Its short-interval input is Mangerel's published Theorem 1.7.
+For \(C_q\), fixed-prime projection theorem Pq and reduction Eq show that
+the only remaining input for (V) at \(H=X^\theta\) is the sharp upper bound
+\[
+\sum_{X<N\le2X}r_{q,H}(N)^2
+\le\{\mathcal K_q+o(1)\}
+ c_q^4\frac{XH^2}{(\log X)^{2\kappa_q}},\qquad
+\mathcal K_q=L\prod_{p\in\mathcal B_q}(1+(p-1)^{-3}).\tag{E}
+\]
+The matching lower bound and both mixed main-term moments are already proved.
+The current upper bound (F8) has an unspecified constant and does not prove
+(E). Dq proves a lower bound on almost all targets, while (E) would control
+deviations of the full count about its target-dependent model.
+
+The independent [Eisenstein angular theorem](EISENSTEIN_SIFTED_ANGULAR_DISTRIBUTION.md)
+settles the macroscopic balanced instance of FBS-G at \(q=3\), and also its
+mixed dilation \(A+(3\cdot A)\) on targets \(4\pmod6\). It places the first
+summand in any prescribed fixed interval of positive relative length for every
+sufficiently large compatible target. The onset and the complete finite balanced
+exception lists remain undetermined. Shrinking share intervals require further
+estimates. The simultaneous \(q=12\) problem retains its separate global
+counting obligation.
+
 ## The two binary research campaigns
 
 Retain the definitions of \(C_q,L,\kappa_q,r_{q,H}\) from FBS-U. A weaker
@@ -420,28 +509,22 @@ and eventually \(N^\theta\leq N/3\). A pair with difference at most \(N/3\)
 has both summands in \([N/3,2N/3]\). FBS-G supplies neither the shrinking
 window nor the representation-count lower bound in FBS-U.
 
-**Campaign A: semigroup-scale asymptotics for almost all targets.** Fix \(q\)
-and a window range, with \(H=N^\theta\). Derive an explicit main term
-\(\mathcal M_q(N,H)\), establish a lower bound at the scale
-\(H/(\log N)^{\kappa_q}\) on compatible targets, and seek
-\[
-r_{q,H}(N)=\mathcal M_q(N,H)(1+o(1))
-\]
-outside a quantified exceptional set in each dyadic interval. Neither this
-asymptotic nor the main term is supplied here. The error and the positivity
-claim require their own hypotheses and proofs. The relative error should be
-uniform on the retained targets in each dyadic interval. An \(o(X)\) exceptional set
-would give density one; a bound \(O(X^{1-\eta})\) for fixed \(\eta>0\) is a
-stronger quantitative objective.
+**Campaign A: full-count variance in shrinking windows.** Fix \(q\) and
+\(0<\theta<1\), put \(H=X^\theta\), and prove (E), initially for \(q=12\).
+By Eq this is equivalent to the centered variance (V). The main term and its
+uniform positive lower bound are now explicit, and the mixed moments are
+established. The unresolved estimate is a four-form upper bound on a thin
+region. A full-count variance would give a semigroup-scale asymptotic outside
+\(o(X)\) targets; that is stronger than the already proved lower bound Dq in
+its range \(\theta>1/3\).
 
-The main term must account for target-dependent arithmetic. For example, the
-two forbidden residues \(a=0,N\pmod p\) merge when \(p\mid N\). This exact
-local observation does not determine the global correlation coefficient.
-Conductor-class biases and character contributions must be derived, rather
-than replaced by an assumed constant or unproved single Euler product. The
-upper-bound factor \(\mathcal S_C(N)\) in FBS2 is not a proved main-term factor.
-Also, (F2) gives \(\#(C_q\cap[1,x])=o(x)\) for \(q\geq3\); results requiring
-positive natural density cannot be substituted without a new argument.
+The next quantitative milestone is a power-saving variance that yields
+\(O(X^{1-\eta})\) exceptions for some fixed \(\eta>0\). Neither the
+qualitative fixed-width result Vq nor Dq's arbitrary fixed logarithmic savings
+supplies this. Conductor/character biases have been resolved for the clean
+congruence semigroups here; an Euler product is not asserted for every
+Frobenian set. Also (F2) gives \(\#(C_q\cap[1,x])=o(x)\), so theorems
+requiring positive natural density cannot be substituted unchanged.
 
 **Campaign B: remove the exceptional targets.** Seek the uniform lower bound
 (U) for every compatible large target. A proof of this lower bound need not
@@ -457,13 +540,14 @@ r_{q,N^\theta}(N)=0\}.
 \]
 At the same exceptional-set rate, an existence estimate such as
 \(E_{q,\theta}(X)\ll X^{1-\eta}\) is weaker than semigroup-scale asymptotics.
-Hq already gives density one for every fixed \(q\) and \(\theta>2/3\), even
-in its narrower window \(X^\theta\leq N^\theta\), but only the prime-pair
-scale \(H/\log^2N\). Density-one binary coverage in
-smaller windows is unresolved in this programme; that is not a claim that its
-full literature frontier has been settled. Existing unrestricted AP prime-sum
-exceptional bounds, stronger counts, and narrower windows need range-specific
-priority audits before a new contribution is claimed.
+Dq already gives semigroup-scale density one for every fixed
+\(q\) and \(	heta>1/3\), even in its narrower window
+\(X^	heta\le N^	heta\). Its logarithmic exceptional bound is stronger than
+mere density one, but does not establish a full asymptotic for the count.
+The fixed-width asymptotic Vq is separate. Semigroup-scale density one for
+\(0<	heta\le1/3\) remains unresolved in this programme; that is not a
+claim that the complete literature frontier has been settled. Range-specific
+priority audits remain necessary before claiming a new result.
 
 For arbitrary Frobenian sets, no blanket assertion that local conditions
 suffice is made. Loughran--Matthiesen's Remark 1.11 explicitly explains global
@@ -472,13 +556,14 @@ here concern the stated clean congruence family.
 
 | Stage | Exact scope |
 |---|---|
-| Available here as a derived theorem | Positive-proportion coverage with many pairs for every fixed power window, for every fixed positive-density Frobenian prime set |
-| Existing stronger range for each \(C_q\) | Density-one coverage for \(\theta>2/3\) with the logarithmic exceptional bound Hq |
-| Existing ternary baseline | Every sufficiently large \(N\equiv3\pmod L\) has three prescribed-AP prime summands near \(N/3\) for \(\theta>2/3\), by Tq |
-| Smaller-window binary density one | Unresolved in this programme for specified \(q\) and \(0<\theta\leq2/3\); prior results must be audited before a frontier claim |
-| Campaign A | Almost-all binary asymptotics at semigroup scale, with an explicit target-dependent main term and quantified exceptional set |
-| Campaign B and main conjecture | The uniform semigroup-scale binary lower bound FBS-U for every compatible large target |
-| Weaker every-target consequence | FBS-G and its modulus-12 instance S12, still open here |
+| General Frobenian baselines | FBS1 gives positive-proportion coverage, and Aq an exact first moment, in every fixed power window |
+| Semigroup-scale binary density one | Dq proves many unweighted pairs for every fixed \(q\), \(\theta>1/3\), outside \(O_A(X/(\log X)^A)\) targets |
+| Fixed-width full-count variance | Vq proves the explicit semigroup asymptotic outside \(o(X)\) targets when \(H=\lambda X\) |
+| Existing ternary baseline | Tq gives every-target prescribed-AP prime triples for \(\theta>2/3\) |
+| Campaign A | Prove the sharp thin four-form upper bound (E), then quantitative centered variance |
+| Power-saving exceptions | Seek \(O(X^{1-\eta})\), beyond the logarithmic exception estimate Dq |
+| Campaign B and main conjecture | Prove FBS-U for every compatible large target; an excellent mean square alone does not eliminate every exception |
+| Weaker every-target consequence | FBS-G and its modulus-12 instance S12 remain open |
 | Effective completion | An effective pointwise cutoff, then finite verification through it or across any remaining gap |
 
 A larger first moment alone does not establish the next stages: one needs
@@ -488,9 +573,12 @@ also remains necessary before claiming novelty for an every-target theorem.
 
 ## Verification scope
 
-The proofs above use the precisely identified published inputs and elementary
-moment arguments. There is no new finite experiment, explicit numerical cutoff,
-formal verification or external human review claimed for FBS1, Hq or Tq. The
+The proofs above and in the linked variance/cofactor notes use the precisely
+identified published inputs. Their applications, character factors, arithmetic
+tails and interval geometry received internal AI proof/source checks. There is
+no effective numerical cutoff, formal verification or external human review
+claimed for these results; the linked notes describe the exact scope of their
+diagnostic checks. The
 \(C_{12}\) computation remains finite evidence with its original scope in the
 case study. Publication and originality are separate from the mathematical
 classification of these corollaries.
