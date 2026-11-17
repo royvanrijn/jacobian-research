@@ -126,6 +126,54 @@
       "url": "https://arxiv.org/pdf/1807.03271v2",
       "sha256": "37b51eb4c7b47951460c0287e88b295be366acf76db55b1bd594dc8120554c1c",
       "review": "Version2, May17,2020: Section2.3 definitions and Eqs2.26-2.27; Theorems9.8 and9.12 (ell=m) and following shifted-moment identity; Section9.4 LGV proof with the fully nonpermutable boundary sources/sinks; Section7.1/Proposition7.2 contraction product inspected. Applied only to Gamma-power formal contiguous ratios and the normalized cumulant Hankel matrix through the explicit m=d-1 weight substitution. No Wronskian-Hurwitz transfer, strict terminal-determinant positivity, binomial SFC, full-paper audit or external/independent review is imported."
+    },
+    {
+      "file": "sources/long-eit-ii-92db79e.tex",
+      "url": "https://raw.githubusercontent.com/long-mathematics/exponential-integral-theorem/92db79eedeb064694ff20e9201d73fc2bc0857f4/papers/02-compact-polynomial-line-kz/linear-kz-affine-line.tex",
+      "sha256": "4568771bc1113ed443a77ceea9c89ce211f40a471a18b525aa1e4e38acb6e26b",
+      "review": "Exact main theorem internally reproduced with full new linear/formal or affine-kernel/value-transfer chain checked and imported moment, lifting and PV inputs matched. Optional supplements/other declarations are not all separately audited. No external review or formal verification."
+    },
+    {
+      "file": "sources/long-eit-iii-92db79e.tex",
+      "url": "https://raw.githubusercontent.com/long-mathematics/exponential-integral-theorem/92db79eedeb064694ff20e9201d73fc2bc0857f4/papers/03-complete-polynomial-kz/polynomial-kz-affine-line.tex",
+      "sha256": "4f1cb54e3b6aab6af1add1da97635b165fe1df9f91e86a79078e588717caaa76",
+      "review": "Exact main theorem internally reproduced with full new linear/formal or affine-kernel/value-transfer chain checked and imported moment, lifting and PV inputs matched. Optional supplements/other declarations are not all separately audited. No external review or formal verification."
+    },
+    {
+      "file": "sources/long-eit-iv-92db79e.tex",
+      "url": "https://raw.githubusercontent.com/long-mathematics/exponential-integral-theorem/92db79eedeb064694ff20e9201d73fc2bc0857f4/papers/04-relative-exponential-nori-ayoub/relative-exponential-nori-ayoub.tex",
+      "sha256": "82bca80220ecf54a5f10f90951430cf6d14ae4df386a39a946985f719797ea55",
+      "review": "Actual constant-period field, generic relative functional main theorem and explicit numerical-specialization limitation read. Long realization/rank-one saturation chain not fully validated."
+    },
+    {
+      "file": "sources/long-eit-simplex-candidate-92db79e.tex",
+      "url": "https://raw.githubusercontent.com/long-mathematics/exponential-integral-theorem/92db79eedeb064694ff20e9201d73fc2bc0857f4/notes/candidates/2026-10-10-simplex-program/simplex-exponential-periods.tex",
+      "sha256": "8ee39ae10b0813d11985a9fd6e7123acc38fa8f414e02258b38a4747a5c3c7fd",
+      "review": "Conjecture, exact strictly-positive amplitude counterexample and open visibility/asymptotic obligations read. Counterexample independently checked algebraically; no general simplex theorem."
+    },
+    {
+      "file": "sources/long-eit-readme-92db79e.md",
+      "url": "https://raw.githubusercontent.com/long-mathematics/exponential-integral-theorem/92db79eedeb064694ff20e9201d73fc2bc0857f4/README.md",
+      "sha256": "5ea166a461741b6d13cc7988654796ccd1050fd45e7f93cf26f78eb767d20eff",
+      "review": "Full six-paper/supplement/companion/candidate scope and working-draft status inventory read. Author status description is not mathematical verification."
+    },
+    {
+      "file": "sources/kontsevich-zagier-periods-2001.pdf",
+      "url": "https://www.ihes.fr/~maxim/TEXTS/Periods.pdf",
+      "sha256": "d076c376c4d0ce5a4289c0700eef51587da57a0fa268d104a67b2680d9a8d3bf",
+      "review": "Original primary definition Section1.1, Conjecture1 Section1.2 and exponential extension Section4.3 read, exact printed/PDF page locators retained. No full-conjecture resolution claimed."
+    },
+    {
+      "file": "sources/compoint-singer-1999.pdf",
+      "url": "https://singer.math.ncsu.edu/papers/compoint_singer_99.pdf",
+      "sha256": "dd30ef9f4f8d5051c2321ae6562ebadcdc0f4cf5ab7bcf23b6966faae8411422",
+      "review": "Exact primary Proposition2.2, printedp477/PDFp5 read and matched to ordinary PV applications in the internal II–III reproduction. No general irregular specialization input."
+    },
+    {
+      "file": "sources/singer-differential-galois-lectures.pdf",
+      "url": "https://singer.math.ncsu.edu/papers/LMSlectures.pdf",
+      "sha256": "c805d45ed54e0e6734b4d7f125c197364b9eccab2a7e09a8c26c3bf63cf5db96",
+      "review": "Exact primary Theorem1.3.9 and Corollary1.3.10, printed/PDFpp13–14 read and matched to ordinary PV applications in the internal II–III reproduction. No general irregular specialization input."
     }
   ],
   "additional_primary_references": [
@@ -421,6 +469,120 @@
         "sources/iskander-jain-2020-delta-laguerre-polya.pdf"
       ],
       "historical_internal_check_count": 84
+    },
+    "quintic_five_adic_common_pair_radius": {
+      "canonical_source": "factorial/image-rigidity/ARITHMETIC_FRONTIER_TERMINAL_ORDERS.tex",
+      "claims": [
+        "FACT-ARITHMETIC-FRONTIER-TERMINAL-ORDERS-LEM-QUINTIC-ANNULUS-FLAGS",
+        "FACT-ARITHMETIC-FRONTIER-TERMINAL-ORDERS-LEM-QUINTIC-FIVE-ADIC-BOUNDARY",
+        "FACT-ARITHMETIC-FRONTIER-TERMINAL-ORDERS-THM-QUINTIC-FIVE-ADIC-PAIR-RADIUS",
+        "FACT-ORDINARY-QUINTIC-COMMON-ROOT-FIVE-ADIC-RADIUS"
+      ],
+      "scope": "For every integer m>=1, set B=B_(m,2m+1,3), C=B_(m+1,2m+1,3), D=B_(m+2,2m+1,3), and H=5(5m+4)D+3z^3B. A rank drop of the two three-section rows (C,H) at a nonzero cyclic argument u=z^3 over the algebraic closure of Q5 necessarily satisfies v5(u)>3/5. The valuation is normalized by v5(5)=1. The unit region, negative valuations, the entire open annulus 0<v5(u)<3/5, and its boundary v5(u)=3/5 are excluded uniformly in m.",
+      "ordinary_rank_bridge": "For every integer N>=2, any common root t of T_(N-1,2N-1,3) and T_(N,2N+1,3) must satisfy v5(1/t)>3/5 under every five-adic embedding of its algebraic number field. Here t!=0 because both moments have constant term1. This is a necessary condition, not a proof of noncollision inside that region. In particular it narrows the still-open ordinary support{2,5} ray N>=11,N2mod9.",
+      "mechanism": "Exact physical auxiliary generating functions and all15 residue flags; two additional cancellation flags; all-index associated Bessel reduction and period5; strict weighted wedge comparison; factorial-block boundary reduction to exactly25 profiles and literal polynomial Bezout identities overF5.",
+      "retained_evidence": [
+        "factorial/image-rigidity/ARITHMETIC_FRONTIER_TERMINAL_ORDERS.tex",
+        "factorial/image-rigidity/arithmetic_frontier_terminal_orders.py",
+        "factorial/image-rigidity/arithmetic_frontier_terminal_orders_verification.json",
+        "factorial/image-rigidity/arithmetic_frontier_quintic_boundary_profiles.json"
+      ],
+      "source_sha256": {
+        "factorial/image-rigidity/ARITHMETIC_FRONTIER_TERMINAL_ORDERS.tex": "9721978bcb795af9169c695c5fb8348974069c5148e5e0caa8bd3c4d65650e07",
+        "factorial/image-rigidity/arithmetic_frontier_terminal_orders.py": "f943d68e70663eea763900ca6c942154f3a3c7cf4e3abb9e950238d71009d3cd",
+        "factorial/image-rigidity/arithmetic_frontier_terminal_orders_verification.json": "e3b018ebb070a8fd20dc6cd961d6a27b14795a1bacd6e39d051c7d2b2fc74eb8",
+        "factorial/image-rigidity/arithmetic_frontier_quintic_boundary_profiles.json": "6b30c55de2c9df70885e77a8137e33b35b173c30b226f7b6f3233c8d8f93b838"
+      },
+      "all_terminal_quintic_SFC": false,
+      "open_region": "v5(u)>3/5, u=1/t; support{2,5}, N>=11,N2mod9 remains open",
+      "finite_prefix_extrapolation": false,
+      "boundary_profiles_exhaust_all_integer_indices": true,
+      "verification": "The quintic five-adic radius proof was audited internally: all fifteen generating-function flags, the two further flags, the all-index Bessel-period/unit-argument argument, strict annular wedge dominance, and the complete boundary reduction were checked. Boundary coverage is a proved reduction to the 25 states (m mod5, floor(m/5) mod5), using the factorial-block congruence, vanishing for k>=5, and only four series coefficients. The current matching receipt checks all 25 literal Bezout identities, 25 separately reconstructed actual auxiliary profiles, 1165 factorial-block controls and corruption rejection. These finite identities exhaust the boundary cases by the written reduction; no finite-prefix extrapolation is used. The default replay, all input pins and two-pass 21-page LaTeX build passed internally. No independent replay, external review, formal verification, novelty or all-terminal quintic SFC is claimed.",
+      "independent_replay": false,
+      "formal_verification": false,
+      "external_review": false,
+      "novelty_claim": false
+    },
+    "eit_compact_linear_and_polynomial_kz_reproduction": {
+      "canonical_source": "factorial/image-rigidity/EIT_KONTSEVICH_ZAGIER_AUDIT.md",
+      "source_sha256": "f296a4c3057eb9cb5b8d0c6541466b34e259270229e677876358f21089856c19",
+      "main_claims": [
+        "EXT-EIT-II-LINEAR-KZ",
+        "EXT-EIT-III-POLYNOMIAL-KZ"
+      ],
+      "explicit_inputs": [
+        "FACT-EIT-I-POLYNOMIAL-MOMENT-PACKAGE",
+        "EXT-EIT-BEUKERS-POLYNOMIAL-LIFTING",
+        "EXT-EIT-PV-CORRESPONDENCE-REDUCTIVITY",
+        "EXT-EIT-LINDEMANN-WEIERSTRASS"
+      ],
+      "scoped_proof_components": [
+        "FACT-EIT-II-MIXED-PHASE-TRANSFER",
+        "FACT-EIT-II-FUNCTIONAL-RELATIONS-FORMAL",
+        "EXT-EIT-III-FUNCTIONAL-LINEARITY",
+        "EXT-EIT-III-POLYNOMIAL-VALUE-TRANSFER"
+      ],
+      "review": "Root re-derived mixed-phase projector transfer/Cauchy/common-cover and nonlinear PV/gauge/translation/ring-descent/value-transfer. A second contextual internal audit checked both complete chains. Prior retained moment-package proof includes the geometric semisimplicity and compressed residue computations. Not external review or formalization.",
+      "unrestricted_FC": false,
+      "unrestricted_SFC": false,
+      "arbitrary_simplex_representability": false,
+      "IV_complete_proof_audit": false
+    },
+    "quintic_five_adic_inner_endpoint": {
+      "canonical_source": "factorial/image-rigidity/ARITHMETIC_FRONTIER_TERMINAL_ORDERS.tex",
+      "claims": [
+        "FACT-ARITHMETIC-FRONTIER-TERMINAL-ORDERS-THM-QUINTIC-FIVE-ADIC-INNER-ENDPOINT"
+      ],
+      "scope": "For every integer n>=8, put T_n(t)=sum_(k=0)^n binom(n,k)(2n+1)_(3k)t^k. If T_n and T_(n+1) have a common root t over Q5bar and u=1/t satisfies v5(u)=1, then either u/5=2 mod25 and n=3 mod5, or u/5=9 mod25 and n=1 mod5. Congruence in an algebraic extension means a difference of valuation at least the indicated power. Thus the whole annulus v5(u)=1 is excluded uniformly for n>=8,n=0,2,4 mod5. The other inner valuations and the two surviving index classes remain open.",
+      "remaining_ray_necessary_constraint": "At the specific inner annulus v5(1/t)=1, set n=N-1. The proved endpoint condition requires either (1/t)/5=2 mod25,N=4 mod5, or (1/t)/5=9 mod25,N=2 mod5. Thus this annulus is excluded for N=0,1,3 mod5. The progression N>=11,N=2 mod9 and the remaining inner regions are still open.",
+      "mechanism": "Exact finite reversed factorial coefficients; cancellation of all denominator multiples of5; a uniform linear tail bound; the13-term table modulo125; two simple residual root disks; a divided consecutive difference.",
+      "retained_evidence": [
+        "factorial/image-rigidity/ARITHMETIC_FRONTIER_TERMINAL_ORDERS.tex",
+        "factorial/image-rigidity/arithmetic_frontier_terminal_orders.py",
+        "factorial/image-rigidity/arithmetic_frontier_terminal_orders_verification.json"
+      ],
+      "source_sha256": {
+        "factorial/image-rigidity/ARITHMETIC_FRONTIER_TERMINAL_ORDERS.tex": "9721978bcb795af9169c695c5fb8348974069c5148e5e0caa8bd3c4d65650e07",
+        "factorial/image-rigidity/arithmetic_frontier_terminal_orders.py": "f943d68e70663eea763900ca6c942154f3a3c7cf4e3abb9e950238d71009d3cd",
+        "factorial/image-rigidity/arithmetic_frontier_terminal_orders_verification.json": "e3b018ebb070a8fd20dc6cd961d6a27b14795a1bacd6e39d051c7d2b2fc74eb8"
+      },
+      "verification": "The finite endpoint proof was audited internally, including exact factorial cancellation, the all-tail bound e_j>2 for j>=18 and five exceptions j=13..17, the n>=8 omitted-coefficient threshold, the full coefficient table modulo125, and Taylor lifting over algebraic five-adic extensions. A separate internal audit checked all125 index residue classes, literal indices8..19 and the root disks. The current full default replay passes13 coefficient identities, four evaluation/difference identities, two simple residual roots, 325 independent factorial coefficients,17 threshold polynomials and2500 unit-argument cases, with false-interpolation and corrupted-table rejection controls. All14 current receipt input pins match; LaTeX compilation is clean. The unbounded theorem follows from the written tail proof and exact identities, not finite-prefix extrapolation. Independent replay, external review, formal verification, novelty and all-terminal quintic closure are not claimed.",
+      "all_terminal_quintic_SFC": false,
+      "other_inner_valuations_resolved": false,
+      "finite_prefix_extrapolation": false,
+      "independent_replay": false,
+      "formal_verification": false,
+      "external_review": false,
+      "novelty_claim": false
+    },
+    "quintic_five_adic_descent": {
+      "canonical_source": "factorial/image-rigidity/QUINTIC_FIVE_ADIC_DESCENT.tex",
+      "source_sha256": {
+        "factorial/image-rigidity/QUINTIC_FIVE_ADIC_DESCENT.tex": "192c422332c27291e2be1d3cf262d589ff77162733a4545bc23d2d296452f0ba",
+        "factorial/image-rigidity/quintic_five_adic_descent.py": "04f831544c664c3e09bb5e9db92b3e8ed4e6510765e8debaacfc967ce1c919db",
+        "factorial/image-rigidity/quintic_five_adic_descent_verification.json": "1dfdd609bc5fc0e912f86bc05c4872915686261daeeb278f1cdea0b0ef859749"
+      },
+      "exact_claims": [
+        "FACT-QUINTIC-FIVE-ADIC-DESCENT-LEM-AH-GAUGE",
+        "FACT-QUINTIC-FIVE-ADIC-DESCENT-PROP-SEVEN-OFFSET",
+        "FACT-QUINTIC-FIVE-ADIC-DESCENT-LEM-CANCELLED-TATE",
+        "FACT-QUINTIC-FIVE-ADIC-DESCENT-LEM-INDEX-RESIDUALS",
+        "FACT-QUINTIC-FIVE-ADIC-DESCENT-THM-INDEX-OBSTRUCTION",
+        "FACT-QUINTIC-FIVE-ADIC-DESCENT-COR-INTEGER-INDEX-CLOSENESS",
+        "FACT-QUINTIC-FIVE-ADIC-DESCENT-PROP-SEED-BLIND-OBSTRUCTION"
+      ],
+      "falsified_stronger_claims": [
+        "FACT-QUINTIC-CANCELLED-Z5-INDEX-NONCOLLISION",
+        "FACT-QUINTIC-CONSTANT-UNIT-SEED-RANK-NONCOLLISION"
+      ],
+      "open_joint_rank_descent": "GAP-QUINTIC-FROBENIUS-JOINT-RANK-DESCENT",
+      "open_index_separation": "GAP-QUINTIC-FIVE-ADIC-INDEX-DIOPHANTINE-SEPARATION",
+      "scope": "Seven-offset exact scalar/seed transfer; precisely two common indices of the canceled analytic family; explicit finite-tail comparison and all-integer necessary closeness. No actual ordinary integer common pair identified.",
+      "replay": "Default checker passed;175 transitions,1085 factor identities,26 residual table entries,14 Hensel digits for each branch and explicit corruption controls.",
+      "independent_replay": false,
+      "external_review": false,
+      "formal_verification": false,
+      "all_terminal_quintic_SFC": false
     }
   },
   "open_bridge_assessments": {

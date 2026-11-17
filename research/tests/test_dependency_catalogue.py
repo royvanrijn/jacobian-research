@@ -116,6 +116,82 @@ class RetainedDependencyTests(unittest.TestCase):
         self.assertEqual(actual["GOAL-MRC"]["state"], "open")
         self.assertEqual(actual["GAP-MERIDIONAL-RANK-3"]["state"], "open")
 
+    def test_canonical_coxeter_import_does_not_underwrite_field_obstruction_or_equality(self):
+        actual = self.graph.evaluate()
+        self.assertEqual(actual["MRC-NO-SHARP-COXETER"]["state"], "proved")
+        self.assertEqual(actual["GAP-MRC-RATIONAL-REPLACEMENTS"]["state"], "proved")
+        scenario = self.graph.simulate({"EXT-COXETER-CANONICAL": "stale"})
+        for conclusion in ("MRC-NO-SHARP-COXETER", "MRC-UNIVERSAL-REFLECTION-COR-BBK"):
+            self.assertEqual(scenario["nodes"][conclusion]["state"], "stale")
+        for conclusion in ("MRC-UNIVERSAL-REFLECTION-THM-REFLECTION",
+                           "MRC-SEVEN-SHEET-EXAMPLES", "MRC-GENERAL-COVER-THM-GENERAL"):
+            self.assertEqual(scenario["nodes"][conclusion]["state"], "proved")
+        self.assertEqual(actual["GOAL-MRC"]["state"], "open")
+        self.assertEqual(actual["GAP-MERIDIONAL-RANK-3"]["state"], "open")
+        # The independent four-face topology argument still closes the narrow
+        # replacement comparison when the Coxeter import is revoked.
+        self.assertEqual(scenario["nodes"]["GAP-MRC-RATIONAL-REPLACEMENTS"]["state"], "proved")
+
+    def test_optional_reflection_discovery_certificates_are_not_a_field_scope_premise(self):
+        scenario = self.graph.simulate({"SRC-MRC-REFLECTION-ALGEBRA": "stale"})
+        # The retained identities15 are useful independent controls; the direct
+        # coefficient proof and exact diagram identity establish the theorem.
+        self.assertEqual(scenario["nodes"]["MRC-NO-SHARP-COXETER"]["state"], "proved")
+        scenario = self.graph.simulate({"SRC-MRC-REFLECTION-DIAGRAM": "stale"})
+        self.assertEqual(scenario["nodes"]["MRC-NO-SHARP-COXETER"]["state"], "stale")
+        self.assertEqual(scenario["nodes"]["MRC-UNIVERSAL-REFLECTION-LEM-SPAN"]["state"], "proved")
+
+    def test_classical_filling_import_blocks_topology_but_not_coxeter_or_equalities(self):
+        scenario = self.graph.simulate({"EXT-MARTELLI-M6-FILLINGS": "stale"})
+        self.assertEqual(scenario["nodes"]["MRC-RATIONAL-REPLACEMENT-TOPOLOGY"]["state"], "stale")
+        self.assertEqual(scenario["nodes"]["MRC-NO-SHARP-COXETER"]["state"], "proved")
+        self.assertEqual(scenario["nodes"]["MRC-SEVEN-SHEET-EXAMPLES"]["state"], "proved")
+        self.assertEqual(scenario["nodes"]["GAP-MRC-RATIONAL-REPLACEMENTS"]["state"], "proved")
+        both = self.graph.simulate({"EXT-MARTELLI-M6-FILLINGS": "stale",
+                                    "EXT-COXETER-CANONICAL": "stale"})
+        self.assertEqual(both["nodes"]["GAP-MRC-RATIONAL-REPLACEMENTS"]["state"], "stale")
+
+    def test_exterior_hyperbolicity_is_separate_from_cover_topology_and_reflections(self):
+        scenario = self.graph.simulate({"EXT-MENASCO-ALTERNATING-HYPERBOLIC": "stale"})
+        self.assertEqual(scenario["nodes"]["MRC-FOUR-ALTERNATING-HYPERBOLIC"]["state"], "stale")
+        for conclusion in ("MRC-SEED-COVER-TOPOLOGY", "MRC-NO-SHARP-COXETER",
+                           "MRC-RATIONAL-REPLACEMENT-TOPOLOGY", "MRC-SEVEN-SHEET-EXAMPLES"):
+            self.assertEqual(scenario["nodes"][conclusion]["state"], "proved")
+
+    def test_finite_affine_route_survives_cover_group_revocation(self):
+        scenario = self.graph.simulate({"SRC-MRC-SEVEN-SHEET-CERTIFICATES": "stale"})
+        for conclusion in ("MRC-TERNARY-AFFINE-QUOTIENTS",
+                           "MRC-GENERAL-COVER-THM-TWENTYFOUR",
+                           "MRC-RANK3-THM-RANK",
+                           "MRC-REFLECTIVE-AUGMENTATION-THM-UPPER"):
+            self.assertEqual(scenario["nodes"][conclusion]["state"], "proved")
+        # The older principal also asserts58 specific cover groups, so that
+        # broader data claim cannot inherit just the alternative equalities.
+        self.assertEqual(scenario["nodes"]["MRC-SEVEN-SHEET-EXAMPLES"]["state"], "stale")
+
+    def test_affine_controls_are_separate_from_uniform_realization_and_old_covers(self):
+        scenario = self.graph.simulate({"SRC-MRC-TERNARY-AFFINE-CONTROLS": "stale"})
+        self.assertEqual(scenario["nodes"]["MRC-TERNARY-AFFINE-QUOTIENTS"]["state"], "stale")
+        self.assertEqual(scenario["nodes"]["MRC-FINITE-AFFINE-COVER-REALIZATION"]["state"], "proved")
+        self.assertEqual(scenario["nodes"]["MRC-SEVEN-SHEET-EXAMPLES"]["state"], "proved")
+        scenario = self.graph.simulate({"SRC-MRC-TERNARY-AFFINE-DIAGRAMS": "stale"})
+        self.assertEqual(scenario["nodes"]["MRC-TERNARY-AFFINE-THM-KNOTS"]["state"], "stale")
+        self.assertEqual(scenario["nodes"]["MRC-TERNARY-AFFINE-THM-GROUP"]["state"], "proved")
+
+    def test_ordinary_rank_import_is_not_a_meridional_or_augmentation_premise(self):
+        scenario = self.graph.simulate({"EXT-SNAPPY332-CELL-AND-PD": "stale"})
+        self.assertEqual(scenario["nodes"]["MRC-RANK3-LEM-UPPER"]["state"], "stale")
+        for conclusion in ("MRC-TERNARY-AFFINE-QUOTIENTS",
+                           "MRC-REFLECTIVE-AUGMENTATION-GAP",
+                           "MRC-NO-SHARP-COXETER"):
+            self.assertEqual(scenario["nodes"][conclusion]["state"], "proved")
+
+    def test_deck_character_argument_does_not_import_cord_identification(self):
+        scenario = self.graph.simulate({"EXT-CORNWELL-REFLECTIVE-CORD-PRESENTATION": "stale"})
+        self.assertEqual(scenario["nodes"]["MRC-REFLECTIVE-AUGMENTATION-THM-UPPER"]["state"], "stale")
+        self.assertEqual(scenario["nodes"]["MRC-REFLECTIVE-AUGMENTATION-THM-DECK"]["state"], "proved")
+        self.assertEqual(scenario["nodes"]["MRC-TERNARY-AFFINE-QUOTIENTS"]["state"], "proved")
+
     def test_real_multistep_progress_stays_hypothetical_and_preserves_assurance(self):
         before = deepcopy(self.data)
         # Fine decomposition exposes a retained-input verification gap. A

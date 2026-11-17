@@ -388,6 +388,23 @@ provably outside F. The identity (25) consequently does not
 supply a lower-ruling target coordinate or a false closure of
 the remaining problem.
 
+The central leading identity of PF162 also gives
+A2(0)^2=4b2(0). Hence R's quadratic z coefficient vanishes at0,
+and its restriction to t=0 has degree at most one.
+
+R is outside F as well. Otherwise T^2=P-R belongs to
+F intersect C[x,t]=B. For a Keller map, the pullback of an
+irreducible reduced target divisor is reduced, because the map
+is etale. It is nonempty since its defining target polynomial
+has a nonconstant source pullback. Distinct target divisors have
+no common source component, since a source curve cannot map to
+their finite intersection under a quasi-finite map. Thus if a
+target polynomial pulls back to a square, every exponent in its
+irreducible target factorization is even. It is itself a square
+up to a nonzero constant. Applied to T^2, this would put T in B,
+contradicting (26). Both lower-ruling functions T and R therefore
+remain outside the actual target field.
+
 ## 9. Updated complete ledger and limits
 
 Every actual ruling-six coordinate must now have at least one A
@@ -404,6 +421,12 @@ The no-A subfamily is now CLOSED, stronger than its former necessary
 D>=48 estimate. Since D>=4*sum_i L_i, the infinity lower bound also
 shows that not all A slopes can equal three: at least one L_i>=4.
 
+The [strict retained-source infinity bounds](RULING_SIX_RETAINED_SOURCE_PACKETS_AND_STRICT_INFINITY_BOUNDS.md)
+strengthen the current remaining-class bounds to D>=22, b>=5
+and original generic map degree 2b>=10. They also retain the
+residue degree over each infinity image and the complete
+nonlinear infinity packet alternatives.
+
 The remaining A class has central degree two, arbitrary coefficient
 degrees, possible nonlinear infinity residues, arbitrary higher
 ramification and the full quadratic central image class. Neither
@@ -412,11 +435,13 @@ a missing trace-integrality or normal-tail termination step.
 
 The checker controls the full reductions (10),(12), all simple-root
 and exact coframe orders, weighted commutation identities, multiplicity
-lattice/divisibility, finite target-subduction mechanism, coupled degree/valuation identities, the reciprocal M-root
-p-response orders the global square/odd-companion normal form, and the regular
-square completion with its central source-line field obstruction. Uniform Hensel recursion, closed full-
-normalization images and integer weight descent establish the theorem;
-finite controls do not replace those arguments.
+lattice/divisibility, finite target-subduction mechanism, coupled
+degree/valuation identities, reciprocal M-root p-response orders,
+the global square/odd-companion normal form, and the regular
+square completion with its central source-line field obstruction.
+Uniform Hensel recursion, closed full-normalization images and
+integer weight descent establish the theorem. The checker passes
+191 exact controls; finite controls do not replace those arguments.
 
 Replay with
 

@@ -110,10 +110,12 @@
       "year": 2017,
       "url": "https://arxiv.org/abs/1310.7526v3",
       "snapshot_url": "https://arxiv.org/pdf/1310.7526v3",
+      "snapshot": "sources/cornwell-kch-1310.7526v3.pdf",
+      "snapshot_sha256": "991940273daed005b8af270233cceaa58c11d69168efb7006f3bfa9bd598bcbd",
       "publication": "Journal of Symplectic Geometry 15(4) (2017), 983-1017",
-      "location": "Theorems1.2/1.10, Corollary1.7; full proof of Theorem1.10 on arXiv p18",
-      "audit": "Primary statements read and original proof of Theorem1.10 read in full and visually checked. Its final determinant paragraph explicitly gives actual rank-n augmentations for all but finitely many meridian eigenvalues, stronger than a bare polynomial-factor assertion. The full representation/augmentation correspondence proof and the rest of the paper are imported, not independently audited.",
-      "scope": "KCH/augmentation correspondence and maximal-braid-index peripheral curve lambda=(-mu)^(-w). With nonzero writhe, a rank-n augmentation on an n-strand closure meets the recent GGLW iteration criterion; equality n*2^N is a source-derived corollary, dependent on that preprint."
+      "location": "Section2.2 braid action and Chain Rule; Theorem1.10 proof p18; symmetric quotient p19; rank-raising Theorem5.4 p20 and proof p23",
+      "audit": "Primary statements read and original proof of Theorem1.10 read in full and visually checked. Its final determinant paragraph gives rank-n augmentations for all but finitely many meridian eigenvalues. Section2.2 braid formulas and exact Theorem5.4 symmetry/size/parity hypotheses read. A separate written free-Gram transport proves that symmetric maximal-braid augmentations would give independent orthogonal reflection directions, even at singular Gram forms; all local formulas are checked by a stdlib replay. That transport is a comparison proved here, not attributed to the paper. The full representation/augmentation correspondence and rank-raising theorem proof remain imports, not independently re-established.",
+      "scope": "KCH/augmentation correspondence, maximal-braid peripheral curve lambda=(-mu)^(-w), and specified higher-braid rank-raising families with symmetric cord values. The eight knots13a_373/375/391/392/3264/3266/3275/3276 are excluded from every symmetric maximal-braid augmentation and the bridge-four rank-raising outputs by SYMMETRIC_AUGMENTATION_OBSTRUCTION. Arbitrary nonsymmetric rank-four augmentations remain open. With nonzero writhe, a maximal-braid augmentation also meets the GGLW iteration criterion, giving a source-derived satellite corollary dependent on that preprint."
     },
     {
       "id": "CH16",
@@ -121,8 +123,8 @@
       "authors": "Cornwell Hemminger",
       "year": 2016,
       "url": "https://arxiv.org/abs/1408.4110",
-      "audit": "primary introduction and satellite scope read",
-      "scope": "augmentation-rank multiplication under specified braid-pattern hypotheses, including large iterated torus families; not arbitrary satellites"
+      "audit": "Primary introduction and satellite scope read; Section5's concluding full-twist paragraph and explicit Question checked in authorv1 p22 and the published primary text. Its full-twist observation is not represented as a theorem.",
+      "scope": "Augmentation-rank multiplication under specified braid-pattern hypotheses, including large iterated torus families; not arbitrary satellites. The final Section5 discussion asks whether a Dehornoy full-twist threshold forces maximal augmentation rank, rather than proving that assertion."
     },
     {
       "id": "BDJW17",
@@ -269,7 +271,8 @@
       "commit": "06cbbb7e2737e1a11085b64e0ead021d63c550c3",
       "audit": "All243 algebraic/four-seed certificates pass separate standard-library replay and exact named-diagram matching to an independent HT census. All243 PDs match literally in KnotInfo snapshots2026.10.5 and2026.11.2; both uncertainty sets equal the author243+293 partition. Full paper and publication priority not independently audited.",
       "scope": "Author-deposited243 cases with mr=bridge=4 via transvections/reflections are independently replayed as named knot types;293 cases remain in that study. Both archived KnotInfo snapshots still list all536 as bridge[3,4], so database lag is distinguished from the certificate proof.",
-      "status": "Unrefereed author release; credit retained with author, named finite certificates independently checked, full paper not certified."
+      "status": "Unrefereed author release; credit retained with author, named finite certificates independently checked, full paper not certified.",
+      "open_list_audit": "Current main data/still_open.json reread via the repository connector17November2026:293 ordered names exactly match the retained sources/bhattacharjee-still-open.json, SHA256 3fae47725d8808d58a6b1a24e36ade4e19121092c92714020ae0e1d0070b1edc, Git blob01c7c332a0bf1565d7558aec4c769ff36cbd31a9. All eight alternating names13a_373/375/391/392/3264/3266/3275/3276 occur. This compares only the author243-case release, not worldwide priority."
     },
     {
       "id": "CESY14",
@@ -422,10 +425,12 @@
       "url": "https://doi.org/10.4153/S0008414X23000883",
       "published": "Canadian Journal of Mathematics77(1),282-299; online27Dec2023",
       "snapshot": "sources/joseph-pongtanapaisan-v2.html",
+      "snapshot_url": "https://arxiv.org/html/2111.09233v2",
+      "snapshot_sha256": "69d1e152c7806fd732950e599a240192749a0d36cb1d078906ff0818bbb6b0d4",
       "version_dates": "arXiv2111.09233v2,6Feb2023, under the title Bridge number and meridional rank of knotted surfaces; publication metadata checked separately",
       "location": "Preprint Section3, especially Construction3.5, Definition3.6 and Corollary3.12",
-      "audit": "Classical construction, periodic twist-box rules and sharpness argument read. The finite-cycle generation-capacity theorem remains an explicit source import. Entire published proof and four-dimensional/welded extensions not independently audited.",
-      "scope": "Specified classical families K_(p,n) have mr=bridge=n via symmetric/alternating quotients with meridians p-cycles. Periodic finite-quotient twist labellings have this precedent. No proof that our four seeds belong to or lie outside these families; knotted-sphere nonadditivity is not a classical MRC counterexample."
+      "audit": "Classical construction, periodic twist-box rules and sharpness argument read. A separate written construction comparison in LITERATURE shows that every integer-box K_(p,n) diagram also has a rank-n Coxeter quotient: adjacent exponents2p-1 and nonadjacent exponents2, with exact two-strand braid periodicity. This corollary is proved here, not attributed as a statement of the paper. The finite-cycle generation-capacity theorem remains an explicit source import. Entire published proof and four-dimensional/welded extensions not independently audited.",
+      "scope": "Specified classical families K_(p,n) have mr=bridge=n via symmetric/alternating quotients with meridians p-cycles. Periodic finite-quotient twist labellings have this precedent. The universal all-Coxeter obstruction excludes13a_373/375/391/392/3264/3266/3275/3276 from every integer-box K_(p,4) family, and from rational tangles assembled from the same permitted boxes as Figure5; no arbitrary rational-tangle exclusion is inferred. Knotted-sphere nonadditivity is not a classical MRC counterexample."
     },
     {
       "id": "STALL71",
@@ -581,6 +586,101 @@
       "location": "Section6.12, equations6.32-6.33, Lemma6.12.3 and Corollary6.12.4, printedpp108-109/PDF127-128; faithfulness statement Corollary6.12.11 printedp111/PDF130",
       "audit": "Author-hosted complete2025 second-edition PDF cached unchanged; identity, DOI and copyright edition checked on title/copyright pages. Canonical symmetric form, simple-root basis, finite-pair proof and representation-existence corollary read. Tits faithfulness statement read, but its full AppendixD proof not independently audited. The transport argument re-proves the needed representation existence and root-span property; it does not require faithfulness or nondegeneracy.",
       "scope": "Every rank-r Coxeter presentation has a canonical real reflection representation on an r-dimensional space with unit-length basis roots, including singular forms. Conjugate reflection directions spanning the image generate the full root space. Supplies a necessary Gram-model gate for all sharp Coxeter quotients, not a knot equality or a computed ideal certificate by itself."
+    },
+    {
+      "id": "PUR17-ALTERNATING",
+      "title": "Hyperbolic Knot Theory, Chapter11: Alternating knots and links",
+      "authors": "Jessica S. Purcell",
+      "year": 2017,
+      "version_dates": "Author-hosted chapter draft dated8September2017, printedpp189-206; retrieved17November2026. This is the retained draft's numbering, not a claim about the later published book pagination.",
+      "url": "https://users.monash.edu/~jpurcell/book/11Alternating.pdf",
+      "snapshot": "sources/purcell-alternating-chapter-2017.pdf",
+      "snapshot_sha256": "7efc1265ca4dc657d37c80eeb7c1d1fd976f806f3e98b6732f1f24ef34abbc22",
+      "location": "Theorem11.9 printedp194/PDF6; proof printedp201/PDF13; diagram prime definitionp190, anannularity Proposition11.18 and atoroidality Corollary11.21 printedpp199-201",
+      "audit": "Complete relevant Chapter11 geometric argument read: angled polyhedra, annulus normal-disk alternatives, meridian lemma for closed surfaces, atoroidality and final hyperbolicity deduction. The required normal-surface framework and Thurston hyperbolization theorem from Chapter8 remain explicit imports, not independently reproved. Purcell explicitly credits Menasco1984 and supplies a later proof. Original Menasco metadata and Corollaries1-2 read through a public article transcription, but the original PDF was unavailable from publisher/CORE and is not represented as cached or fully audited.",
+      "scope": "A knot admitting a connected prime alternating diagram is either a(2,q)-torus knot or hyperbolic. Applies to13a_373/375/391/392/3264/3266/3275/3276 after the retained literal PD one-component, alternating and minimum edge-cut4 checks; their certified bridge number4 excludes(2,q), whose bridge number is at most2. The independent complete Jones coefficient sums are10 for373/375/391/392 and9 for3264/3266/3275/3276, also excluding(2,q). Hence all eight knot exteriors are hyperbolic and cannot be genuine satellite outputs. This is distinct from the hyperbolic pieces in their double branched covers."
+    },
+    {
+      "id": "KM13",
+      "title": "Hyperbolic four-manifolds with one cusp",
+      "authors": "Alexander Kolpakov and Bruno Martelli",
+      "year": 2013,
+      "url": "https://doi.org/10.1007/s00039-013-0247-2",
+      "snapshot": "sources/kolpakov-martelli-one-cusp-1303.6122v7.pdf",
+      "version_dates": "arXiv:1303.6122v7, 23 October 2013",
+      "location": "Figure 2 and Section 1.1, printed pages 5–6",
+      "audit": "Exact quotient construction read and visually checked: minimally twisted six-chain exterior double-covers the punctured octahedral orbifold, all twelve edges have index two, and its six torus cusps correspond to six four-marked sphere ends. The full four-dimensional construction is not independently audited.",
+      "scope": "Actual branched-cover model for arbitrary rational fillings of the punctured 6* medial core. Rational-tangle solid-torus filling and gluing identification are proved separately in the new topology note.",
+      "sha256": "ca4c8aac66f01bfc56304e820a173bcb8bc933b32d0717839d4c8c132214ef12"
+    },
+    {
+      "id": "MAR21",
+      "title": "Dehn surgery on the minimally twisted seven-chain link",
+      "authors": "Bruno Martelli",
+      "year": 2021,
+      "url": "https://doi.org/10.4310/CAG.2021.v29.n7.a5",
+      "snapshot": "sources/martelli-seven-chain-1808.08430v2.pdf",
+      "version_dates": "arXiv:1808.08430v2, 25 February 2019; CAG29 (2021),1597–1641",
+      "location": "Theorem 2.7 and its proof, preprint printed pages 15–16; following discussion of the two mixed pieces",
+      "audit": "The exact complete closed nonhyperbolic M6 filling statement, graph cases and two sporadic mixed cases were read and visually checked. The theorem's exhaustive classification and computational tables are imported; no independent enumeration replay is claimed.",
+      "scope": "Closed nonhyperbolic M6 fillings are graph cases or two mixed manifolds gluing the figure-eight exterior to the orientable Klein-bottle interval bundle. Both mixed cases are separately excluded as knot double covers by the written mod-two Mayer–Vietoris argument. No full M7 classification is used.",
+      "sha256": "b2c8436322c80419d023d58eb8978ce7de10c9f9ad78a6c96e53b0b99685ed1f"
+    },
+    {
+      "id": "BS16",
+      "title": "New Geometric Splittings of Classical Knots and the Classification and Symmetries of Arborescent Knots",
+      "authors": "Francis Bonahon and L C Siebenmann",
+      "year": 2016,
+      "url": "https://dornsife.usc.edu/francis-bonahon/wp-content/uploads/sites/205/2023/06/BonSieb-compressed.pdf",
+      "snapshot": "sources/bonahon-siebenmann-2016.pdf",
+      "version_dates": "Author monograph, version 26 January 2016",
+      "location": "Introduction printed pages vi–vii; algebraic/arborescent terminology and branched graph-manifold cover consequence; Part V supplies the general theory",
+      "audit": "The exact algebraic/arborescent correspondence and graph-manifold double-cover fact were read at their stated locations. Full proofs and the whole monograph are not independently audited. The new proper-four-vertex graph reduction is written separately and is not inferred from the canonical-projection uniqueness theorem.",
+      "scope": "Classical arborescent-cover input for closures of algebraic tangles arising from explicit local graph reductions. Supplies no all-diagram preservation of a planar polyhedral core.",
+      "sha256": "c887732f91421ce8bf424f32ab4c3b52b842a5c15f8bc95c62599b8d8baa88a6"
+    },
+    {
+      "id": "SNAPPY332-CELL-GROUP",
+      "title": "SnapPy3.3.2 cell presentations and diagram-exterior constructor",
+      "authors": "Marc Culler, Nathan M. Dunfield, Matthias Goerner and Jeffrey R. Weeks; SnapPy/SnapPea contributors",
+      "year": 2026,
+      "version_dates": "Official3.3.2 source distribution uploaded6March2026; inspected17November2026.",
+      "url": "https://pypi.org/pypi/snappy/3.3.2/json",
+      "snapshot": "sources/snappy-3.3.2-fundamental_group.c",
+      "snapshot_sha256": "8b5e62b703d92672100feef7a5d2dcc3406b01929c4e2faf04428263e3b29191",
+      "additional_snapshots": [
+        {
+          "path": "sources/snappy-3.3.2-fundamental_group.pyx",
+          "sha256": "2537075b91b1b3d606fd7574fce4fa6c63d899cc2b4badb1827dcfd95ea8b1f5",
+          "locator": "generators_in_originals: exact integer move semantics"
+        },
+        {
+          "path": "sources/snappy-3.3.2-init.py",
+          "sha256": "ec32a0e700665926426bc3a178680463f40c5a50695776b653caa99c2c112277",
+          "locator": "_link_exterior: PD/KLP exterior wrapper; underlying triangulation algorithm imported"
+        }
+      ],
+      "source_distribution": {
+        "url": "https://files.pythonhosted.org/packages/d5/cb/8910087f9481103b09dfca6c64de125afdddd6cab1f2143f614b7ef78d90/snappy-3.3.2.tar.gz",
+        "sha256": "00252e8b65eeff52a5b9d8f2d01458465f51c7fe16d0cb796fe91b01efaba511",
+        "bytes": 17098571
+      },
+      "location": "C opening comments and fundamental_group; Cython generators_in_originals; Python _link_exterior.",
+      "audit": "Exact official source archive digest checked and three unchanged components retained. Cell-presentation construction comments, integer-move semantics and PD exterior wrapper read. Complete C extraction and underlying diagram triangulation are trusted combinatorial imports, not independently re-established. All algebra simplifications in the eight rank-three certificates are independently checked Nielsen/Tietze moves with current unit-relator witnesses; the C simplifier correctness is not imported.",
+      "scope": "Unfilled literal-PD exteriors give combinatorial triangulations and unsimplified fundamental-group cell presentations. Actual topology-mode replay reconstructs all eight PD exteriors and compares exact face pairings/peripheral rows, named-census planar maps and original presentations. No numerical isometry, volume or hyperbolicity acceptance. These imports plus independent algebra yield ordinary rank<=3; exact ordinary rank and worldwide priority are not asserted."
+    },
+    {
+      "id": "COR15-CORD",
+      "title": "Character varieties of knot complements and branched double-covers via the cord ring",
+      "authors": "Christopher R Cornwell",
+      "year": 2015,
+      "url": "https://arxiv.org/abs/1509.04962v1",
+      "snapshot": "sources/cornwell-character-cord-1509.04962v1.pdf",
+      "version_dates": "arXiv:1509.04962v1 (2015)",
+      "location": "Section3, Theorem3.2 and Definitions3.3-3.4; Theorems1.1 and5.5 are separate context",
+      "audit": "Exact positive-diagonal2 symmetric cord presentation and reflective augmentation/rank definitions read in the retained primary version. Theorem3.2 credits Ng; the original Ng proof is imported, not independently audited. The full Cornwell character-variety theorem is not an indispensable premise: deck invariance is derived directly in the new note.",
+      "scope": "Imported diagram-to-reflective-augmentation identification. The uniform rank bound, exact cyclotomic rank3 witnesses, abstract triangle quotients and direct deck-invariance proof are separate current arguments, without any unrestricted augmentation-rank bound.",
+      "sha256": "1845d56c7be1f824b22aceee6d26a816e84fab05d0baac80c15bb2bff16c067b"
     }
   ],
   "unresolved_scope_extractions": [
@@ -590,7 +690,8 @@
     "Original low-rank orbifold proof audit",
     "A repair or alternate proof for Dutra2022's broader main theorem; its original Lemma3.1 gap and invocation in Lemma3.8(2) are now directly checked",
     "Full proof audits of November and October2026 releases; October243 algebra, named-diagram and archived KnotInfo checks completed",
-    "Priority scope of fixed-fibre meridional bounds and general branched-cover rank inequalities; r2 core-group precedent identified and credited"
+    "Priority scope of fixed-fibre meridional bounds and general branched-cover rank inequalities; r2 core-group precedent identified and credited",
+    "Worldwide priority of the eight alternating sharp-four equalities: the author293-name open list and exact audited family exclusions are checked; a single targeted2024-2026 primary search found no additional direct four-bridge ordinary-rank/augmentation/non-Coxeter theorem or named certificate, but search non-hits prove no absence. Nonsymmetric rank-four augmentation existence and other independently verified non-Coxeter family membership remain unestablished."
   ],
   "not_exhaustive_claims": [
     "No all-knot proof",

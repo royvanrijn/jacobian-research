@@ -1,0 +1,105 @@
+{
+  "claim": "QCS1",
+  "status": "PASS",
+  "environment": {
+    "python": "3.12.3",
+    "sympy": "1.14.0"
+  },
+  "actual_finite_rational_pair": {
+    "f": "-y**3/(y + 1)",
+    "f_prime": "-y**2*(2*y + 3)/(y + 1)**2",
+    "T_coefficient_of_b": "-(y + 1)**2/(y**2*(2*y + 3))",
+    "commutator_T_f": "h",
+    "commutator_f_Z": "h",
+    "cubic_discriminant": "-u**2*(4*u + 27)",
+    "nonconstant_discriminant_factor": "4*u+27",
+    "normal_closure": "S3, written degree/discriminant argument",
+    "spatial_poles": [
+      "y=0",
+      "y=-1",
+      "2*y+3=0",
+      "infinity"
+    ],
+    "Long_global_admission": false
+  },
+  "classical_cover_square": {
+    "depressed_p": "s/r - 4/(3*r**2)",
+    "depressed_q": "4*t/r + 2*s/(3*r**2) - 16/(27*r**3)",
+    "bracket_p_q": "4/r^2",
+    "u": "p^3/q^2",
+    "w": "q/p",
+    "inverse_p": "u*w^2",
+    "inverse_q": "u*w^3",
+    "Jacobian_pq_uw": "u*w^4",
+    "zeta": "r^2*u*w^5/20",
+    "bracket_u_zeta": "1",
+    "eta": "f_prime(y)*zeta",
+    "bracket_y_eta": "1",
+    "horizontal_degrees": [
+      5,
+      5
+    ],
+    "vertical_degrees": [
+      3,
+      3
+    ],
+    "degrees_proof": "Written cubic function-field and quintic Eisenstein arguments",
+    "fixed_u_all_rational_conjugates": "zeta+g(u), written derivative argument"
+  },
+  "Long_source_inverse": {
+    "a": "w*y+2/(3*r)",
+    "v": "r*w^2*y^2*(2*y+3)/(2*(y+1))",
+    "kappa": "2*v/(r*(a-2/(3*r))^2)",
+    "y": "(3-kappa)/(kappa-2)",
+    "w": "(a-2/(3*r))/y",
+    "bracket_a_v": "1/v"
+  },
+  "actual_quantum_quintic_models": {
+    "target_U": "p^5 * [J*(J-beta*c*h)]^-1",
+    "target_Z": "U^-1*J/(5*c)",
+    "target_commutator": "[U,Z]=h",
+    "source_kappa": "(2/r)*v^5*[(H+alpha*h)*(H+gamma*h)]^-1",
+    "source_K": "-kappa^-1*H/5",
+    "source_commutator": "[kappa,K]=h",
+    "standard_ordering": "alpha=2,gamma=1 gives kappa=(2/r)*v^3*b^-2",
+    "cubic_transport_J": "c*R(kappa)*H",
+    "compatibility": "P^5=U*J*(J-beta*c*h)",
+    "classical_root": "2*v/r-3*b^2/v^2",
+    "beta_pole_residue": "2*h*(2*beta - 5)/r**4",
+    "pole_canceling_beta": "5/2",
+    "A_at_beta_5_over_2": {
+      "2": "16*(kappa - 3)**5/(kappa**4*r**4)",
+      "1": "40*h*(kappa - 3)**4*(kappa + 12)/(kappa**4*r**4)"
+    },
+    "individual_Weyl_division_models": true,
+    "individual_quintic_indices": "5 on both sides, written finite-basis/deck proof",
+    "conditional_relative_index": "3 on both sides, written dimension composition",
+    "compatible_root_P_constructed": false,
+    "displayed_root_gate": "All rational target roots and actual Euler pairs excluded by QQL1 exact spectrum",
+    "finite_global_admission": false
+  },
+  "conditional_fourth_connection": {
+    "positive_coefficient_field": "L(r), L=K0((h)), not K0(r)((h))",
+    "ordering_parameter_scope": "hregular and r-independent for full connection",
+    "Ds": "d+v^2*a/(5*r)+v^2/(5*r^2)",
+    "delta_S": "S/(5*r)-8/(5*r^2)",
+    "delta_T": "-T/(5*r)+S/(10*r^2)",
+    "F": "S*T/(5*r)-8*T/(5*r^2)-S^2/(20*r^2)",
+    "exact_quadratic_commutators": "PASS",
+    "classical_D_minus_d": "a^4/4-3*r*a^5/10+v*a^3/2",
+    "classical_fourth_image_exact_match": true,
+    "conditional_formula_only": true,
+    "displayed_root_nonexistence": "QQL1 written proof"
+  },
+  "hashes": {
+    "CLASSICAL_QUINTIC_COVER_SQUARE.md": "213dabacff305a9d1be5d8679bd1258b06c6340609749c486106773e587ab0b4",
+    "check_cubic_quintic_square.py": "5749ebf8aaeedb1e33cc494c58069af07bbb3681a9d11ee9dfd4e3b42a3f7dde",
+    "QUANTUM_DIVISION_AND_COMPLETION.md": "a00276fd4b746f090c14ca79c0c1c68182499a4417d69d2e3a5fb534a3ffffc9",
+    "QUANTUM_RADICAL_TOWERS_AND_LONG_OBSTRUCTION.md": "fca2b8deac0c686b56a4f326c12f74fb0bbd9ae67f0763fa0b076c89e19674fc",
+    "QUINTIC_ORDERING_LAURENT_OBSTRUCTION.md": "035a9d7ea9427ffdcbc174d99995a84cf213dc7c212388a1411b7df72c86ee3b"
+  },
+  "coverage_boundary": "Exact finite rational Weyl pair and source/target ordered radicand; classical cubic depression, discriminant, rational inverse, Poisson brackets, quintic identities, actual homogeneous Weyl division models, cubic transported radicand and beta=5/2 pole cancellation. All-field-degree and all-conjugate statements use written proofs. No actual quantum fifth root, Weyl compatible full Long division model, global polynomial admission or bounded Long lift.",
+  "independent_replay": false,
+  "formal_verification": false,
+  "external_review": false
+}

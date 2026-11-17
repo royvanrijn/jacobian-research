@@ -1,0 +1,152 @@
+{
+  "status": "PASS",
+  "cases": [
+    {
+      "name": "13a_373",
+      "original_seeds": [
+        1,
+        2,
+        6,
+        8
+      ],
+      "changed_seeds": [
+        1,
+        2,
+        6,
+        8
+      ],
+      "complete_trace_length": 9,
+      "unused_contradiction_crossings": [
+        [
+          11,
+          7,
+          8
+        ],
+        [
+          12,
+          5,
+          6
+        ]
+      ]
+    },
+    {
+      "name": "13a_375",
+      "original_seeds": [
+        1,
+        2,
+        6,
+        9
+      ],
+      "changed_seeds": [
+        1,
+        2,
+        6,
+        9
+      ],
+      "complete_trace_length": 9,
+      "unused_contradiction_crossings": [
+        [
+          9,
+          12,
+          0
+        ],
+        [
+          5,
+          8,
+          9
+        ]
+      ]
+    },
+    {
+      "name": "13a_391",
+      "original_seeds": [
+        1,
+        2,
+        5,
+        9
+      ],
+      "changed_seeds": [
+        1,
+        2,
+        6,
+        9
+      ],
+      "complete_trace_length": 9,
+      "unused_contradiction_crossings": [
+        [
+          10,
+          12,
+          0
+        ],
+        [
+          12,
+          8,
+          9
+        ]
+      ]
+    },
+    {
+      "name": "13a_392",
+      "original_seeds": [
+        1,
+        2,
+        5,
+        11
+      ],
+      "changed_seeds": [
+        1,
+        2,
+        6,
+        12
+      ],
+      "complete_trace_length": 9,
+      "unused_contradiction_crossings": [
+        [
+          9,
+          12,
+          0
+        ],
+        [
+          11,
+          8,
+          9
+        ]
+      ]
+    }
+  ],
+  "generic_Hermitian_roots": [
+    {
+      "name": "13a_373",
+      "generic_trace_roots": 5,
+      "all_root_norms": 2
+    },
+    {
+      "name": "13a_375",
+      "generic_trace_roots": 5,
+      "all_root_norms": 2
+    },
+    {
+      "name": "13a_391",
+      "generic_trace_roots": 5,
+      "all_root_norms": 2
+    },
+    {
+      "name": "13a_392",
+      "generic_trace_roots": 5,
+      "all_root_norms": 2
+    }
+  ],
+  "uniform_unit_phase_identity": {
+    "constant": 1,
+    "generators_with_conjugates": 12,
+    "unit_phases": "alpha,beta with Laurent inverses",
+    "multiplier_monomials": 26,
+    "corrupted_multiplier_rejected": true
+  },
+  "scope": "Exact generic conjugate-pair root formulas and norm identities for four literal trace systems; Laurent unit phases and constant1 identity. First-loop and final sibling cancellations are written arguments; finite complex averaging is proved in the note. No finite phase sampling, reflection-group classification or augmentation-rank specialization.",
+  "input_sha256": {
+    "HERMITIAN_REFLECTION_OBSTRUCTION.tex": "0b1350ab9cad33280fb66659945b20d8781e35bd98a24e01e94d6c627a20047a",
+    "verify_hermitian_reflection_obstruction.py": "3f7823f709cae5e8aac9226053cedcba70fe893785007c5ca07f820dbcaa4e83",
+    "seven_sheet_cover_inputs.json": "0cdaed4926bdf03eb399d572da98bf59b7bbbe0ea13ab66106ddc34724a85ef6"
+  }
+}

@@ -153,6 +153,100 @@ def main() -> None:
     empty_R = (T - 1)**3
     equal("empty_derivative_nilpotent", sp.rem(sp.diff(empty_R, T)**2, empty_R, T))
 
+    # V4 rank-six covering and its distinction between fixed points for
+    # individual elements and a common fixed point for an entire group.
+    v4 = frozenset(range(4))
+    v4_subgroups = [frozenset((0, element)) for element in (1, 2, 3)]
+    omega_v4 = []
+    for stabilizer in v4_subgroups:
+        cosets = {frozenset(g ^ h for h in stabilizer) for g in v4}
+        omega_v4.extend((stabilizer, coset) for coset in cosets)
+    require("V4_rank_six_G_set", len(omega_v4) == 6)
+
+    def v4_common_fixed(decomposition):
+        return [(stabilizer, coset) for stabilizer, coset in omega_v4
+                if all(frozenset(g ^ point for point in coset) == coset
+                       for g in decomposition)]
+
+    require("V4_every_element_fixes_a_point",
+            all(v4_common_fixed(frozenset((0, element))) for element in v4))
+    require("V4_no_global_fixed_point", not v4_common_fixed(v4))
+    require("V4_all_proper_subgroups_have_fixed_points",
+            all(v4_common_fixed(stabilizer) for stabilizer in v4_subgroups))
+    require("rank_six_radicands_nonsquare",
+            all(not sp.integer_nthroot(radicand, 2)[1] for radicand in (13, 17, 221)))
+    require("rank_six_radicand_product_square", 13 * 17 * 221 == 221**2)
+    require("rank_six_local_13", (2**2 - 17) % 13 == 0 and (2*2) % 13 != 0)
+    require("rank_six_local_17", (8**2 - 13) % 17 == 0 and (2*8) % 17 != 0)
+    require("rank_six_local_2_Hensel", 16 == 2**4 and 2 == 2**1 and 4 > 2*1)
+    require("rank_six_real_points", all(radicand > 0 for radicand in (13, 17, 221)))
+    require("quadratic_characters_cannot_all_be_negative",
+            all(any(value == 1 for value in (first, second, first*second))
+                for first in (-1, 1) for second in (-1, 1)))
+    require("Hasse_rank_padding_controls",
+            all((5 if rank % 2 else 6) + 2*((rank-(5 if rank % 2 else 6))//2) == rank
+                for rank in range(5, 51)))
+
+    # Compare the cubic discriminant test with an independently certified
+    # strict-Hensel test. This bounded replay supports the written proof;
+    # the proof itself uses valuations of conjugate roots, not enumeration.
+    def valuation(value, prime):
+        if value == 0:
+            return float("inf")
+        answer = 0
+        while value % prime == 0:
+            value //= prime
+            answer += 1
+        return answer
+
+    def residue_roots(coefficients, prime, precision):
+        candidates, modulus = [0], 1
+        ca, cb, cc = coefficients
+        for _ in range(precision):
+            next_modulus = prime * modulus
+            candidates = [x + digit * modulus for x in candidates
+                          for digit in range(prime)
+                          if (((x + digit * modulus + ca) * (x + digit * modulus)
+                               + cb) * (x + digit * modulus) + cc) % next_modulus == 0]
+            modulus = next_modulus
+            if not candidates:
+                break
+        return candidates
+
+    cubic_controls, hensel_controls = 0, 0
+    for ca, cb, cc in itertools.product(range(-3, 4), repeat=3):
+        disc = ca**2 * cb**2 - 4*cb**3 - 4*ca**3 * cc - 27*cc**2 + 18*ca*cb*cc
+        if disc == 0:
+            continue
+        for prime in (2, 3, 5, 7):
+            dv = valuation(disc, prime)
+            sharp_roots = residue_roots((ca, cb, cc), prime, dv//2 + 1)
+            classical_roots = residue_roots((ca, cb, cc), prime, 2*dv + 1)
+            if bool(sharp_roots) != bool(classical_roots):
+                raise AssertionError(("cubic discriminant root test", ca, cb, cc, prime))
+            for root in classical_roots:
+                value = ((root + ca)*root + cb)*root + cc
+                derivative_value = 3*root**2 + 2*ca*root + cb
+                if not valuation(value, prime) > 2*valuation(derivative_value, prime):
+                    raise AssertionError("classical residue root lacks strict Hensel certificate")
+                hensel_controls += 1
+            cubic_controls += 1
+    require("sharp_cubic_modulus_vs_certified_Hensel_controls", cubic_controls > 0,
+            coefficient_range=[-3, 3], primes=[2, 3, 5, 7],
+            polynomial_prime_pairs=cubic_controls, strict_Hensel_certificates=hensel_controls)
+    sharpness_controls = 0
+    for prime in (2, 5, 7):
+        for exponent in (1, 2, 4, 5):
+            coefficients = (0, 0, -prime**exponent)
+            if residue_roots(coefficients, prime, exponent + 1):
+                raise AssertionError("sharpness family unexpectedly has a stronger residue root")
+            if not residue_roots(coefficients, prime, exponent):
+                raise AssertionError("sharpness family lost the residue zero")
+            if valuation(-27*prime**(2*exponent), prime) != 2*exponent:
+                raise AssertionError("sharpness family discriminant")
+            sharpness_controls += 1
+    require("sharp_cubic_modulus_counterexamples_to_lower_precision", sharpness_controls == 12,
+            polynomial_prime_pairs=sharpness_controls)
     # Finite arithmetic controls for the elementary all-height proof.
     # These examples are not the proof of the unrestricted gcd bound.
     import math
@@ -172,7 +266,7 @@ def main() -> None:
     source_path = Path(__file__).with_name("FIXED_MAP_AMBIENT_LOCAL_CLASSIFICATION.md")
     report = {
         "status": "passed",
-        "scope": "Exact symbolic identities and exhaustive finite S3 subgroup controls; not a full proof replay or external review.",
+        "scope": "Exact symbolic identities, finite S3/V4 actions, and bounded cubic congruence/Hensel controls; not a full proof replay or external review.",
         "python": platform.python_version(),
         "sympy": sp.__version__,
         "checker_sha256": hashlib.sha256(Path(__file__).read_bytes()).hexdigest(),

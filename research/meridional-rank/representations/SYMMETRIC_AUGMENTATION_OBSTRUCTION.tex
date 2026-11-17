@@ -1,0 +1,208 @@
+\documentclass[11pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage[hidelinks]{hyperref}
+\usepackage{xurl}
+\newtheorem{lemma}{Lemma}
+\newtheorem{theorem}[lemma]{Theorem}
+\newtheorem{corollary}[lemma]{Corollary}
+\newcommand{\C}{\mathbb C}
+\title{Symmetric maximal-braid augmentations and free reflection directions}
+\author{Internal source comparison and written proof}
+\date{17 November 2026}
+\begin{document}
+\maketitle
+
+Cornwell's augmentation-rank raising theorem produces examples beyond
+the explicit three-braid family in his introduction. Its output has
+an additional symmetry condition on the cord values. That condition
+allows a direct comparison with the universal reflection obstruction
+for the eight knots
+$13a_{373},13a_{375},13a_{391},13a_{392},
+13a_{3264},13a_{3266},13a_{3275},13a_{3276}$.
+The comparison uses a free vector space with a possibly singular
+Gram form; it does not require an augmentation to retain its rank
+when the meridian parameter is specialized to minus one.
+
+\section{The exact imported algebra and construction}
+
+Use the conventions of \cite[Sections~2.2 and~5.2]{cornwell}.
+The free algebra $\mathcal A_n$ has generators $a_{ij}$,
+$i\ne j$. Its quotient $\mathcal A_n^{\mathrm{ab}}$ here is
+commutative and also imposes $a_{ij}=a_{ji}$; it is not just
+the ordinary commutative quotient. For a braid $B\in B_n$,
+the extended braid action defines $\Phi_B^L$ by
+\[
+ \phi_B(a_{i,n+1})=\sum_j(\Phi_B^L)_{ij}a_{j,n+1}.
+\]
+The Chain Rule is
+\[
+ \Phi_{BB'}^L=\phi_B(\Phi_{B'}^L)\Phi_B^L.
+\]
+Write $\Delta(B)=\operatorname{diag}((-1)^{w(B)},1,\ldots,1)$.
+Cornwell's Theorem~1.10 and its proof show that a rank-$n$
+augmentation of the closure of an $n$-braid satisfies
+$\epsilon(\Phi_B^L)=\Delta(B)$.
+
+Theorem~5.4, printed p.~20 of the retained author version,
+assumes that the closure of $B\in B_n$ has a rank-$n$
+augmentation descending to $\mathcal A_n^{\mathrm{ab}}$.
+For $|u|\ge2$, $|v|\ge3$, $\delta=\pm1$ and $1\le i<n$,
+it gives a rank-$(n+1)$ augmentation with the same symmetry
+for the closure of
+\[
+ B\sigma_n^\delta\sigma_{i,n}^u\sigma_n^v,
+ \qquad
+ \sigma_{i,n}=\sigma_i\cdots\sigma_{n-2}\sigma_{n-1}
+                 \sigma_{n-2}^{-1}\cdots\sigma_i^{-1},
+\]
+provided $u+v-1$ is even, or $i=1$ and $u$ is odd.
+This is a genuine higher-braid family; its bridge-four instances
+must be compared separately from Theorem~1.13's three-braid cases.
+The full augmentation-rank raising proof is imported, rather than
+reproved here.
+
+\section{A transport that does not divide by a Gram determinant}
+
+\begin{lemma}\label{lem:transport}
+Suppose a map $\epsilon:\mathcal A_n^{\mathrm{ab}}\to\C$
+satisfies $\epsilon(\Phi_B^L)=\Delta(B)$.
+Then the group of the closed braid has a representation on a free
+$n$-dimensional vector space, preserving a symmetric form, which
+sends the $n$ strand meridians to nonisotropic orthogonal reflections
+with linearly independent normal vectors. The form may be singular.
+\end{lemma}
+\begin{proof}
+Let $V$ have basis $e_1,\ldots,e_n$, and give it the symmetric form
+\[
+ G(e_i,e_i)=2,\qquad G(e_i,e_j)=\epsilon(a_{ij}).
+\]
+For a vector of norm two write $R_u(x)=x-G(u,x)u$.
+Its displacement image is $\C u$, even when $G$ is singular,
+because $(R_u-I)u=-2u$.
+
+Assign $R_{e_i}$ to the initial strand meridians. At a positive
+braid generator $\sigma_k$, propagate root vectors by
+\[
+ (u_k,u_{k+1})\longmapsto
+       (R_{u_k}u_{k+1},u_k).
+\]
+Conjugation of reflections makes this exactly the Artin action
+on the corresponding meridian images. The inverse move is
+$(u_k,u_{k+1})\mapsto(u_{k+1},R_{u_{k+1}}u_k)$.
+If $g=G(u_k,u_{k+1})$, the positive root coefficient block is
+\[
+                 \begin{pmatrix}-g&1\\1&0\end{pmatrix}.
+\]
+This is the $k,k+1$ block of $\epsilon(\Phi_{\sigma_k}^L)$
+in the source conventions. Directly pairing the new vectors gives
+\[
+ \begin{split}
+  g'_{k,k+1}&=-g_{k,k+1},\\
+  g'_{k,i}&=g_{k+1,i}-g_{k+1,k}g_{k,i},\\
+  g'_{k+1,i}&=g_{k,i}\qquad(i\ne k,k+1),
+ \end{split}
+\]
+with symmetry and all other pairings unchanged. These are precisely
+the displayed $\phi_{\sigma_k}$ rules of Section~2.2 after imposing
+$a_{ij}=a_{ji}$. The inverse move gives the inverse rules.
+Consequently the coefficient matrix for the final root vectors
+satisfies the same Chain Rule as $\Phi_B^L$, and is
+$\epsilon(\Phi_B^L)$.
+
+By hypothesis each final vector is its initial basis vector up
+to the diagonal sign in $\Delta(B)$. A sign does not change a
+reflection. All closed-braid relations therefore hold, yielding
+the required knot- or link-group representation.
+The initial vectors are independent by the definition of $V$;
+at no step have we inverted $G$ or quotiented out its radical.
+\end{proof}
+
+\section{The eight hyperbolic alternating knots}
+
+Let
+\[
+ \mathcal S=\{13a_{373},13a_{375},13a_{391},13a_{392},
+13a_{3264},13a_{3266},13a_{3275},13a_{3276}\}.
+\]
+The separate written proof
+\path{UNIVERSAL_REFLECTION_OBSTRUCTION.tex} shows that in any
+orthogonal reflection representation of a knot in $\mathcal S$,
+over characteristic different from two, its four specified
+generating meridian normals span a space of dimension at most three.
+This statement includes singular forms and arbitrary ambient
+dimensions. It is an explicit dependency of the following theorem.
+
+\begin{theorem}\label{thm:exclude}
+For $K\in\mathcal S$ and every $n$-braid $B$ whose closure is $K$,
+there is no map $\epsilon:\mathcal A_n^{\mathrm{ab}}\to\C$
+with $\epsilon(\Phi_B^L)=\Delta(B)$ when $n\ge4$.
+In particular no maximal-rank augmentation of such a braid closure
+descends to $\mathcal A_n^{\mathrm{ab}}$.
+\end{theorem}
+\begin{proof}
+If a map existed, Lemma~\ref{lem:transport} would give a representation
+with independent strand-meridian normals $e_1,\ldots,e_n$.
+Let $U$ be the span of the four specified meridian normals from
+the universal obstruction. It has dimension at most three.
+Every generating reflection preserves $U$ and displaces every
+ambient vector by an element of $U$. The same holds for every
+word in them. Since those four meridians generate the knot group,
+it holds in particular for each strand-meridian reflection $R_{e_i}$.
+But $(R_{e_i}-I)e_i=-2e_i$, so every $e_i$ belongs to $U$.
+Thus $n\le\dim U\le3$, a contradiction.
+
+For the augmentation assertion, apply the necessary identity from
+Cornwell's Theorem~1.10 to its symmetric cord values. This step
+uses the augmentation at its original parameter, not a claim about
+its rank at minus one.
+\end{proof}
+
+\begin{corollary}\label{cor:raising}
+None of the eight knots in $\mathcal S$ is a bridge-four output of
+Cornwell's Theorem~5.4. More generally it admits no full-rank
+four-braid augmentation descending to the source's symmetric
+quotient $\mathcal A_4^{\mathrm{ab}}$.
+\end{corollary}
+
+The symmetry hypothesis is essential to the comparison. The theorem
+does not bound the ordinary augmentation rank of these knots, exclude
+nonsymmetric rank-four augmentations, or exclude rank-four
+augmentations presented on more than four strands. No worldwide
+priority claim follows from this family exclusion.
+
+\section{Exact scope of the replay and source audit}
+
+The retained primary source is Cornwell's author version
+arXiv:1310.7526v3, dated 5 June 2017,
+\path{sources/cornwell-kch-1310.7526v3.pdf}.
+Section~2.2 supplies the braid action and Chain Rule;
+Theorem~1.10's proof is on printed p.~18; the symmetric quotient
+is defined on p.~19; Theorem~5.4 is on p.~20 and proved on p.~23.
+The primary formulas and these exact theorem hypotheses were read.
+The original construction theorem and knot-contact-homology
+correspondence are imports, not independently established by this
+comparison.
+
+The standard-library checker
+\path{verify_symmetric_augmentation_transport.py} verifies every
+positive and negative local move on a generic symmetric four-root
+Gram matrix, both inverse cancellations, the adjacent braid relation,
+and disjoint-generator commutation. It also verifies independent
+displacement directions for a rank-one Gram matrix, illustrating
+why a rank drop of a specialized Gram form is immaterial.
+It does not rerun the eight knot-specific universal obstructions;
+those have their own checker and retained inputs. The all-braid
+transport and the exclusion are the written arguments above,
+supported by these finite algebra controls, not formal verification
+or external specialist review.
+
+\begin{thebibliography}{9}
+\bibitem{cornwell} C. R. Cornwell,
+KCH representations, augmentations, and $A$-polynomials,
+Journal of Symplectic Geometry 15 (2017), 983--1017.
+Author version arXiv:1310.7526v3, Sections~2.2 and~5.2--5.3,
+Theorems~1.10 and~5.4.
+\url{https://arxiv.org/abs/1310.7526v3}.
+\end{thebibliography}
+\end{document}

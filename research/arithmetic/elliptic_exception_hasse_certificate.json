@@ -1,0 +1,47 @@
+{
+  "pi": "128/25",
+  "ell": "9/10",
+  "v": "39976591281/36871680400",
+  "target": [
+    "-128/25",
+    "95820387033679170183314/398297113921800046875",
+    "4611224705434499552560201273232737/962454086534234237899900108800000"
+  ],
+  "quadratic_radicand": "-81275190",
+  "quadratic_discriminant_multiplier": "2/9601",
+  "cubic_discriminant_multiplier": "684863008168809711969/890975561659019532697600",
+  "cubic_coefficients_low_to_high": [
+    "-346044364289717257088531/278429863018443603968000",
+    "85557356255259/75513201459200",
+    "-12/5",
+    "1"
+  ],
+  "integer_scale": "278429863018443603968000",
+  "integral_cubic_coefficients_low_to_high": [
+    "-26826462523882131227875243325944959137572304355400352703388319744000000",
+    "87834695638335309390968046192139663650324480000",
+    "-668231671244264649523200",
+    "1"
+  ],
+  "integral_cubic_discriminant_sign": -1,
+  "integral_cubic_discriminant_factorization": [
+    [2, 65], [3, 7], [5, 15], [7, 2], [13, 2], [353, 2],
+    [1321, 2], [2591, 2], [9601, 16], [2709173, 1], [230703199, 2]
+  ],
+  "irreducible_mod_prime": 17,
+  "quadratic_local_witnesses": [
+    {"prime": 7, "root": "2"},
+    {"prime": 13, "root": "2"},
+    {"prime": 1321, "root": "412"},
+    {"prime": 9601, "root": "2888"},
+    {"prime": 230703199, "root": "89353083"}
+  ],
+  "cubic_local_witnesses": [
+    {"prime": 2, "root": "2129920", "polynomial_valuation": 47, "derivative_valuation": 21},
+    {"prime": 3, "root": "2", "polynomial_valuation": 5, "derivative_valuation": 2},
+    {"prime": 5, "root": "3775", "polynomial_valuation": 12, "derivative_valuation": 5},
+    {"prime": 353, "root": "13", "polynomial_valuation": 1, "derivative_valuation": 0},
+    {"prime": 2591, "root": "2376", "polynomial_valuation": 1, "derivative_valuation": 0},
+    {"prime": 2709173, "root": "2124817", "polynomial_valuation": 1, "derivative_valuation": 0}
+  ]
+}

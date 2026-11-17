@@ -8,7 +8,7 @@
     "sympy": "1.14.0"
   },
   "checker_sha256": "53a5f233c463e684a106f047a9af163802cb1d6be89d8b7f11d0768fca2781be",
-  "proof_sha256": "96165336744f01c6e0a049122eca8596508eef99dfd7cae0c033532b0c7f1309",
+  "proof_sha256": "1449db0b915fd8abe58c627441e399a57446a7f0d8c98e2b715b780c50ca4492",
   "checks": {
     "kind": "exact structural identities and bounded independent Wick/source controls",
     "triangular_multibase": {

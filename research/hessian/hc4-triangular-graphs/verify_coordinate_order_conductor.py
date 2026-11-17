@@ -99,6 +99,9 @@ for m in [2,3,5]:
     zero("Keller conductor gradient V identity"+label,fv+a*ft)
     zero("Keller conductor trace ratio"+label,fv/a+ft)
     check("Keller inverse conductor is unit"+label,ft in [-1,1])
+    Delta=(-1)**(m*(m-1)//2)
+    zero("Keller exact signed norm-square certificate"+label,
+         (ft*s.eye(m)).det()-(-1)**m*Delta**2)
 
 # Necessary conductor restrictions distinguish two forbidden patterns.
 bad_missing=x*y+1
@@ -109,10 +112,98 @@ good=x*x-1
 check("nonempty finite fibre pattern retained",
       s.Poly(good,x).degree()==2 and s.gcd_list(s.Poly(good,x).all_coeffs())==1)
 
+
+# Index-square controls of arbitrary multiple-sheet order, including a
+# generic source shear. No reduced-conductor hypothesis is used.
+def matrix_eval(poly, variable, matrix):
+    result=s.zeros(matrix.rows)
+    for (power,),coefficient in s.Poly(poly,variable).terms():
+        result += coefficient*matrix**power
+    return result
+
+multiple_controls=[]
+for f,k,alpha in [(t**3-t,1,0),(t**3-t,2,5),(t**4-5*t*t+4,1,3)]:
+    M=s.degree(f,t)
+    label=f" M={M},k={k},alpha={alpha}"
+    coefficients=s.Poly(f-u,t)
+    W=s.zeros(M)
+    for j in range(M-1):
+        W[j+1,j]=1
+    for i in range(M):
+        W[i,M-1]=-coefficients.nth(i)
+    matrix_zero("companion polynomial identity"+label,
+                matrix_eval(f,t,W)-u*s.eye(M))
+    rU=u**k-alpha
+    Bq=W*rU+y*s.eye(M)
+    e0=s.eye(M)[:,0]
+    C=s.Matrix.hstack(*[Bq**j*e0 for j in range(M)])
+    Delta=s.factor(C.det())
+    zero("explicit multiple-order index determinant"+label,
+         Delta-rU**(M*(M-1)//2))
+    GR=s.Matrix([[s.trace(W**(i+j)) for j in range(M)] for i in range(M)])
+    GA=s.Matrix([[s.trace(Bq**(i+j)) for j in range(M)] for i in range(M)])
+    matrix_zero("multiple-order trace Gram index identity"+label,
+                GA-C.T*GR*C)
+    conductormatrix=rU**(M-1)*s.eye(M)
+    zero("multiple-order exact norm square"+label,
+         conductormatrix.det()-Delta**2)
+    rv=f**k-alpha
+    q=t*rv+y
+    FF=sum(s.Poly(f,t).nth(i)*(V-T)**i*(U**k-alpha)**(M-i)
+           for i in range(M+1))-U*(U**k-alpha)**M
+    substitution={U:f,V:q,T:y}
+    zero("multiple-order monic defining relation"+label,FF.subs(substitution))
+    check("multiple-order normalization unramified"+label,
+          s.gcd(s.diff(f,t),s.diff(q,t))==1)
+    ratio=s.cancel(s.diff(FF,V).subs(substitution)/s.diff(f,t))
+    zero("multiple-order exact conductor ratio"+label,ratio-rv**(M-1))
+    zero("multiple-order delta and conductor degrees"+label,
+         s.degree(rv**(M-1),t)-2*s.degree(Delta,u))
+    check("persistent multiple-sheet conductor is nonradical"+label,
+          s.gcd(rv**(M-1),s.diff(rv**(M-1),t))!=1)
+    zero("all generic source fibre points are collinear"+label,
+         q-y-rv*t)
+    multiple_controls.append({
+        "M":int(M),"k":k,"source_shear_alpha":alpha,
+        "index_delta":str(Delta),
+        "conductor":str(rv**(M-1)),
+        "conductor_degree":int(s.degree(rv**(M-1),t)),
+        "normalization_unramified":True,
+        "generic_triple_collinearity_persistent":True,
+        "Keller":False
+    })
+
+r1,r2,r3,Rcoef,TargetV=s.symbols("r1 r2 r3 Rcoef TargetV")
+zero("universal triple-collinearity identity",
+     s.det(s.Matrix([[1,r,TargetV-Rcoef*r] for r in [r1,r2,r3]])))
+
+# Necessary even-degree restrictions catch both generic and special failures.
+odd_generic=x**3+x+1
+odd_drop=y*x**4+x**3+x*x+1
+even_drop=y*x**4+x*x+1
+check("odd generic conductor degree rejected",s.degree(odd_generic,x)%2==1)
+check("odd special conductor degree rejected",
+      s.degree(odd_drop,x)%2==0 and s.degree(odd_drop.subs(y,0),x)%2==1)
+check("even special degree drop retained by parity filter",
+      s.degree(even_drop,x)==4 and s.degree(even_drop.subs(y,0),x)==2)
+
+# Exact quadratic classification transcription and nodal pinching model.
+shift=y*y-y
+quadratic=(x-shift)**2-3
+check("quadratic discriminant is constant nonzero",
+      s.discriminant(quadratic,x)==12)
+zero("quadratic polynomial shear recovers fixed nodal roots",
+     quadratic.subs(x,z+shift)-(z*z-3))
+node_p=z*z-1
+node_q=z*node_p
+zero("lowest-degree nodal product relation",
+     node_q**2-node_p**2*(node_p+1))
+for testpoly in [node_p,node_q,y,node_p*(z**5+y*z)]:
+    check("nodal-order paired-value restriction",testpoly.subs(z,1)==testpoly.subs(z,-1))
 proof=HERE/"GENERIC_COORDINATE_ORDER_CONDUCTOR_AND_CLOSED_COLLISIONS.md"
 record={
     "outcome":"PASS","check_count":len(checks),"checks":checks,
-    "controls":controls,"sympy_version":s.__version__,
+    "controls":controls,"multiple_order_controls":multiple_controls,"sympy_version":s.__version__,
     "elapsed_seconds":round(time.perf_counter()-started,3),
     "proof_sha256":hashlib.sha256(proof.read_bytes()).hexdigest(),
     "checker_sha256":hashlib.sha256(Path(__file__).read_bytes()).hexdigest(),
@@ -120,6 +211,12 @@ record={
         "universal_arguments_are_written_not_finitely_certified":True,
         "generic_raw_single_coordinate_reconstruction_proved":True,
         "exact_principal_coordinate_order_conductor_proved":True,
+        "explicit_conductor_norm_square_certificate_proved":True,
+        "even_conductor_degree_on_every_source_line_proved":True,
+        "degree_two_coordinate_order_is_nodal_product_proved":True,
+        "degree_two_conductor_case_excluded":False,
+        "generic_conductor_always_reduced":False,
+        "persistent_generic_triple_collinearity_non_Keller_controls_supplied":True,
         "entire_closed_same_line_collision_support_proved":True,
         "all_source_line_conductor_restrictions_proved_using_imported_one_line_theorem":True,
         "arbitrary_tangency_finite_unramified_controls_supplied":True,

@@ -11,6 +11,9 @@ large for a primitive with the available pole degree.
 
 This closes the displayed family, including every integer K>=62 and every
 complex tau!=0. It does not close all ruling-six functions or prove HC4/JC2.
+The later [simple-escape theorem](RULING_SIX_SIMPLE_ESCAPE_GRAPHS_AND_QUARTIC_FACE_REDUCTION.md)
+also excludes its entire B face class; the pole/zero proof here remains
+an independent obstruction for the displayed functions.
 
 ## 1. The regular family and the full geometric generic curve
 

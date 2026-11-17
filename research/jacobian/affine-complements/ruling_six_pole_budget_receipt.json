@@ -275,5 +275,57 @@
   "full_goal_complete": false,
   "independent_whole_proof_review": false,
   "formal_verification": false,
-  "external_review": false
+  "external_review": false,
+  "current_replay": {
+    "claim": "PF2RULED164",
+    "outcome": "PASS",
+    "check_count": 230,
+    "elapsed_seconds": 0.17479879700113088,
+    "environment": {
+      "python": "3.12.3",
+      "sympy": "1.14.0"
+    },
+    "proof_sha256": "b26c9004eaa6eeb6bc59db3a6b8b45318f598a31d89fd4f0a0068d423dcb6771",
+    "checker_sha256": "2e7f7ec044b453232cc79096ed12d89820d9b9e795b1a2836cfdab22bf3c7a7b",
+    "retained_proof_sources": {
+      "RULING_SIX_FINITE_END_COVERAGE_AND_QUADRATIC_BOUNDARY_ALGEBRA.md": "04feb8d7b93cd49b391acfa317b0c7a9339da19d2e123fdca9f4dced6db07133",
+      "POLYNOMIAL_MATE_RESPONSES_AND_QUADRATIC_RULING_FIVE_ESCAPE_COVERAGE.md": "b2c6a08cd0f144788cf841d0f399896c4894db0ee1f43515704011e2a9c5f7ee",
+      "MONIC_PARAMETER_POLE_BOUNDS_AND_EVEN_LEADING_CYCLIC_TARGETS.md": "340dd8af7e4fb97ab92346614038ea964f11bcce02d8fecb89d556a887238e81"
+    },
+    "uniform_proved_scope": {
+      "coefficient_degrees": "unrestricted",
+      "quadratic_source_models": "complete PF157 class",
+      "local_budget_A": "2*L-5",
+      "local_budget_B": "L-4",
+      "local_budget_C": "B0-4",
+      "actual_B_pole_slope_minimum": 5,
+      "actual_C_pole_B0_minimum": 5,
+      "intermediate_degree_global_upper": "floor(D/2)-5",
+      "no_A_intermediate_degree_global_upper": "floor(D/4)-4",
+      "infinity_local_degree_lower": "ceil(alpha*(D+3*m-6)/6)",
+      "intermediate_infinity_u_index_maximum": 2,
+      "no_A_intermediate_infinity_u_index": 1,
+      "original_source_infinity_t_index": 1,
+      "original_source_infinity_point_count": 6,
+      "leading_degree_minimum": 16,
+      "no_A_leading_degree_minimum": 48
+    },
+    "finite_control_completeness": {
+      "quartic_partitions": 11,
+      "cubic_partitions": 6,
+      "all_slope_extensions": "exact period2/3 with index-mass monotonicity"
+    },
+    "whole_ruling_six_class_closed": false,
+    "generic_first_derivative_integrality_proved": false,
+    "normal_tail_increasing_power_containment_proved": false,
+    "full_goal_complete": false,
+    "independent_whole_proof_review": false,
+    "formal_verification": false,
+    "external_review": false,
+    "date": "2026-11-17",
+    "command": ".venv/bin/python research/jacobian/affine-complements/verify_ruling_six_pole_budget.py",
+    "working_directory": "repository root",
+    "exit_code": 0,
+    "scope": "Current internal execution of retained exact controls after successor/status annotations. Original receipt fields remain historical; no independent whole-proof replay, formal verification or external review is asserted."
+  }
 }

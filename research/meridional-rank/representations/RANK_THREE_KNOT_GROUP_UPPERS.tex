@@ -1,0 +1,194 @@
+\documentclass[11pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb,amsthm,booktabs}
+\usepackage[hidelinks]{hyperref}
+\usepackage{xurl}
+\newtheorem{theorem}{Theorem}
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{corollary}[theorem]{Corollary}
+\title{Three-generator upper bounds for eight knot groups}
+\author{Exact presentation reductions with explicit combinatorial imports}
+\date{17 November 2026}
+\begin{document}
+\maketitle
+
+The eight alternating knots below have meridional rank four by
+their retained seven-sheeted branched covers. Their ordinary groups,
+however, have generating sets of size three. Every algebraic
+reduction in the certificates is independently replayed as a valid
+Nielsen or Tietze move. The connection between the initial cell
+presentations and the actual diagram exteriors uses the specified
+SnapPy combinatorial construction; it is an explicit software
+import, not a claim of formal verification.
+
+Put
+\[
+\mathcal S_8=\{13a_{373},13a_{375},13a_{391},13a_{392},
+       13a_{3264},13a_{3266},13a_{3275},13a_{3276}\},
+\]
+and separate the upper bound from the meridional comparison.
+
+\begin{lemma}\label{lem:upper}
+For every $K\in\mathcal S_8$,
+$\operatorname{rank}\pi_1(S^3\setminus K)\le3$.
+\end{lemma}
+
+\begin{theorem}\label{thm:rank}
+For every $K\in\mathcal S_8$, the ordinary group rank satisfies
+\[
+ \operatorname{rank}\pi_1(S^3\setminus K)\le3
+       <4=\operatorname{mr}(K)=b(K).
+\]
+No assertion that the ordinary rank is exactly three is made.
+\end{theorem}
+
+\section{Exact diagrams, triangulations and initial presentations}
+
+The finite inputs are the literal PDs already bound to the named
+knots in \path{seven_sheet_cover_inputs.json}. For each PD we set
+both the Python and SnapPy random seeds to the retained constructor
+seed, then call \texttt{Spherogram.Link(PD).exterior()}.
+No later randomization is used. The full SnapPea triangulation string
+is saved and reloaded as a \texttt{Triangulation}. This fixes the
+labelled combinatorial input and its presentation basis; an unlabelled
+isomorphism signature alone would not fix that basis.
+
+The unsimplified presentation is extracted with
+\texttt{fundamental\_group(False,False,False)}.
+SnapPea's source explains its construction: the thickened one-skeleton
+of the dual ideal complex supplies a handlebody, while original
+triangulation edges supply its two-cell relations. A spanning-tree
+and generator selection are combinatorial. There is no Dehn filling
+in these inputs. This cell-presentation extraction and the PD exterior
+constructor are the trusted exact combinatorial imports of the proof.
+Their full implementation has not been independently re-established.
+
+The retained version is SnapPy~3.3.2 with Spherogram~2.4.1.
+The exact original presentations, integer move streams, final
+presentations and both generator-word maps are retained in
+\path{rank_three_knot_group_inputs.json}. The input sizes are:
+\begin{center}
+\begin{tabular}{lrrrr}
+\toprule
+knot&tetrahedra&initial generators&Nielsen slides&unit deletions\\
+\midrule
+$13a_{373}$&25&13&58&10\\
+$13a_{375}$&25&14&84&11\\
+$13a_{391}$&26&14&61&11\\
+$13a_{392}$&25&18&96&15\\
+$13a_{3264}$&24&15&51&12\\
+$13a_{3266}$&24&13&65&10\\
+$13a_{3275}$&23&14&137&11\\
+$13a_{3276}$&24&14&63&11\\
+\bottomrule
+\end{tabular}
+\end{center}
+Generator inversions are also replayed. No generator introductions
+are needed in these eight certificates.
+
+\section{Why every retained algebra move preserves the group}
+
+Use signed integers for free words, with $-i$ representing $x_i^{-1}$.
+Free cancellation and cyclic conjugation preserve a relator's normal
+closure. For distinct current generators $x_a,x_b$, a Nielsen slide
+replaces $x_a$ by one of
+\[
+ x_ax_b,\quad x_ax_b^{-1},\quad x_bx_a,\quad x_b^{-1}x_a.
+\]
+In each case its inverse substitution is explicit. For example,
+if $y_a=x_ax_b$, then substitute $x_a=y_ax_b^{-1}$ into every
+relator and into every recorded original-generator word.
+The checker handles all four sign and left/right cases, and verifies
+their two free-group inverse compositions. Inversion
+$y_a=x_a^{-1}$ is handled in the same way.
+
+The decisive check occurs at every proposed deletion. The checker
+requires an actual current relator that freely and cyclically reduces
+to $x_a$ or $x_a^{-1}$. It deletes that one relator, substitutes
+$x_a=1$ in all the others, and relabels the final generator into
+the vacant slot. This is a Tietze elimination justified by its
+retained unit relator. A generator is never removed merely because
+the external move stream requests its removal. In particular,
+a power relation such as $x_a^2=1$ would not justify this operation.
+
+All recorded original-generator expressions are updated by the same
+inverse substitutions. At the end every original generator is an
+explicit word in three remaining generators. The three final
+generators are also recorded as words in the original cell generators.
+Thus the original group is generated by those three elements.
+The final relators need not equal SnapPy's shorter displayed relators:
+the external routine can additionally shorten its relators, while
+this proof needs only the group-preserving moves checked above.
+This proves Lemma~\ref{lem:upper}.
+The separate cover and four-seed proofs supply the meridional and
+bridge equalities, and therefore establish Theorem~\ref{thm:rank}. Independently,
+the explicit finite-group certificates in
+\path{TERNARY_AFFINE_QUOTIENTS.tex} supply the same equalities
+without a cover-group rank computation.
+
+\section{Replay, source pins and limitations}
+
+The standard-library command
+\begin{quote}\ttfamily
+python3 verify\_rank\_three\_knot\_groups.py
+\end{quote}
+checks all retained Tietze reductions and literal input bindings.
+It does not reconstruct a three-manifold or infer a name from a
+presentation. With \texttt{--snappy}, using the pinned topology
+environment, it additionally reconstructs every literal PD exterior,
+compares its face pairings, cusp labels and integral peripheral
+rows with the saved snapshot, and recomputes its unsimplified cell
+presentation. It also checks each PD against the packaged named
+HT census by exact planar-map normalization. Floating-point solution
+and shape entries in SnapPea strings are ignored in this acceptance;
+no numerical isometry, volume or hyperbolicity test is used.
+
+The retained receipt
+\path{rank_three_knot_group_verification.json} distinguishes these
+two replay modes. Its topology mode was actually run. A missing
+set of cell relators is rejected at the first unsupported deletion.
+The initial group extraction remains trusted even in topology mode;
+the independent part is the complete finite algebra reduction.
+
+The exact primary software source is the PyPI SnapPy~3.3.2 source
+distribution, whose SHA256 is
+\begin{quote}\ttfamily\small
+00252e8b65eeff52a5b9d8f2d01458465f51c7fe16d0cb796fe91b01efaba511.
+\end{quote}
+The relevant files are retained unchanged as
+\path{sources/snappy-3.3.2-fundamental_group.c} and
+\path{sources/snappy-3.3.2-fundamental_group.pyx}.
+The companion \path{sources/snappy-3.3.2-init.py} pins the
+\texttt{\_link\_exterior} wrapper used for the literal PD constructor;
+its underlying link-triangulation algorithm remains imported.
+The C file's opening comments describe the initial cell presentation
+and move encoding. The Cython method
+\texttt{generators\_in\_originals} specifies the integer stream's
+basis-update conventions. The checker implements those conventions
+independently, validates the corresponding inverse substitutions,
+and checks the deletion witnesses rather than importing the
+software simplifier's correctness.
+
+\begin{corollary}\label{cor:ordinary}
+The ordinary-rank inequality
+$\operatorname{rank}\pi_1(S^3\setminus K)\le\operatorname{mr}(K)$
+cannot prove meridional rank four for these eight knots. In particular,
+a known-family theorem whose sufficient hypotheses force ordinary
+group rank four cannot apply to them.
+\end{corollary}
+
+This does not exclude other meridian-sensitive lower bounds,
+nonsymmetric augmentations, or unrelated earlier proofs of their
+meridional ranks. Worldwide priority remains a separate question.
+The assurance is an internal exact algebra replay with stated
+combinatorial software imports, not formal verification or external
+specialist review.
+
+\begin{thebibliography}{9}
+\bibitem{snappy} M. Culler, N. M. Dunfield, M. Goerner and
+J. R. Weeks, SnapPy, version 3.3.2, based on the SnapPea kernel.
+\url{https://snappy.computop.org/}.
+Exact source distribution and its published digest:
+\url{https://pypi.org/pypi/snappy/3.3.2/json}.
+\end{thebibliography}
+\end{document}

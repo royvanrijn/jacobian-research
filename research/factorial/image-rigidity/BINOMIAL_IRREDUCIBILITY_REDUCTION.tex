@@ -1,0 +1,413 @@
+\documentclass[11pt]{article}
+\usepackage[T1]{fontenc}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb,amsthm,hyperref}
+\newtheorem{theorem}{Theorem}
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{corollary}[theorem]{Corollary}
+\theoremstyle{remark}
+\newtheorem{remark}[theorem]{Remark}
+\newcommand{\Q}{\mathbb Q}
+\newcommand{\C}{\mathbb C}
+\newcommand{\Z}{\mathbb Z}
+\newcommand{\vp}{v_p}
+\title{Irreducibility reductions for consecutive binomial moments}
+\author{}
+\date{}
+\begin{document}
+\maketitle
+\begin{abstract}
+Consecutive normalized moment polynomials of a univariate binomial never
+divide one another in the direction of increasing degree, for all
+nonnegative integral lower exponents, positive integral gaps, and positive
+real Gamma shapes. Thus irreducibility of either polynomial suffices for
+consecutive coprimality. For ordinary factorial moments we prove
+factor-degree divisibility under an explicit no-carry condition. It yields
+irreducibility at prime-power orders $p^r$ when $p$ exceeds the total support
+degree, and a further coprimality criterion using adjacent prime-power parts. An independent Eisenstein argument gives
+irreducibility over the rational function field of the Gamma shape and
+consecutive coprimality at every transcendental shape. No all-order
+irreducibility or coprimality claim is made at a fixed algebraic shape.
+\end{abstract}
+
+For integers $a\ge0$, $d\ge1$ and $n\ge1$, and a positive real number
+$\beta$, put
+\begin{equation}\label{eq:definition}
+ P_{n,a,d,\beta}(t)
+ =\sum_{k=0}^n\binom nk(an+\beta)_{dk}t^k,
+ \qquad
+ (x)_j=\prod_{i=0}^{j-1}(x+i),\quad (x)_0=1 .
+\end{equation}
+We abbreviate this polynomial by $P_n$ when the parameters are fixed.
+It has constant term one and exact degree $n$.
+For the functional $\mathcal L_\beta(X^j)=(\beta)_j$ and a genuine
+binomial $F(X)=X^a(A+BX^d)$, $A,B\in\C^\times$, one has
+\begin{equation}\label{eq:moment-normalization}
+ \mathcal L_\beta(F^n)=A^n(\beta)_{an}P_n(B/A).
+\end{equation}
+For positive $\beta$, the prefactor is nonzero; $\beta=1$ gives the
+ordinary factorial functional. Consecutive coprimality of $P_n,P_{n+1}$
+therefore rules out two consecutive zero moments for every binomial
+with the given support.
+
+\section{A strict leading-coefficient separation}
+
+\begin{theorem}[Consecutive nondivisibility]\label{thm:nondivisibility}
+For all integers $a\ge0$, $d\ge1$, $n\ge1$ and all real $\beta>0$,
+the polynomial $P_n$ does not divide $P_{n+1}$ in $\C[t]$.
+More precisely, if $c_n=[t]P_{n+1}-[t]P_n$ and
+$L_n=[t^{n+1}]P_{n+1}/[t^n]P_n$, then $L_n>c_n$.
+\end{theorem}
+\begin{proof}
+Set
+\[
+ x=an+\beta>0,\qquad r=a+d,\qquad
+ A_0=(x)_r,\qquad B_0=(x)_a(x)_d,\qquad f(s)=(x+s)_r .
+\]
+Direct comparison gives
+\begin{align}
+ c_n&=(n+1)(x+a)_d-n(x)_d,\label{eq:first-difference}\\
+ L_n&=\frac{(x+dn)_r}{(x)_a}.\label{eq:leading-ratio}
+\end{align}
+For the second identity, cancel the common factors in
+$(x+a)_{d(n+1)}/(x)_{dn}$, or use the identity
+$(x)_{a+dn+d}=(x)_a(x+a)_{d(n+1)}=(x)_{dn}(x+dn)_r$.
+Consequently,
+\begin{equation}\label{eq:numerator}
+ (x)_a(L_n-c_n)=f(dn)-(n+1)A_0+nB_0.
+\end{equation}
+
+The function $f$ is convex for $s\ge0$. Indeed, its factors are positive
+affine functions, so its second derivative is a sum of nonnegative
+products; when $r=1$, it is linear. Convexity at
+$d=(1-1/n)0+(1/n)dn$ gives
+\[
+ f(dn)\ge A_0+n\bigl(f(d)-A_0\bigr).
+\]
+The inequality is valid also for $n=1$.
+The elementary rising-factorial identities give
+\[
+ \frac{f(d)}{A_0}=\frac{(x+r)_d}{(x)_d}
+       >\frac{(x+a)_d}{(x)_d}=\frac{A_0}{B_0},
+\]
+because $r=a+d>a$ and every factor is positive.
+Thus
+\begin{equation}\label{eq:strict-core}
+ f(d)-2A_0+B_0
+ >\frac{A_0^2}{B_0}-2A_0+B_0
+ =\frac{(A_0-B_0)^2}{B_0}\ge0.
+\end{equation}
+Combining the last three displays shows
+\[
+ (x)_a(L_n-c_n)\ge n\bigl(f(d)-2A_0+B_0\bigr)>0.
+\]
+This proves the asserted strict inequality, including $a=0$ and $r=1$.
+
+If $P_n$ divided $P_{n+1}$, their degrees and constant terms would make
+the quotient $1+ct$. The coefficient of $t$ would force $c=c_n$,
+while the leading coefficient would force $c=L_n$. This contradicts
+$L_n>c_n$.
+\end{proof}
+
+\begin{corollary}[Irreducibility suffices]\label{cor:irreducible-pair}
+Fix the parameters of Theorem~\ref{thm:nondivisibility}, and let
+$K\subset\mathbb R$ be any subfield containing $\beta$.
+If either $P_n$ or $P_{n+1}$ is irreducible in $K[t]$, then
+$\gcd(P_n,P_{n+1})=1$ in $K[t]$ and in $\C[t]$.
+In particular, this applies over $\Q$ whenever $\beta$ is rational.
+The pair $P_1,P_2$ is coprime for every real $\beta>0$.
+\end{corollary}
+\begin{proof}
+If $P_n$ is irreducible, a nonconstant gcd in $K[t]$ would make $P_n$
+divide $P_{n+1}$, contrary to Theorem~\ref{thm:nondivisibility}.
+If $P_{n+1}$ is irreducible, no polynomial of degree at most $n$ can
+share a nonconstant factor with it over $K$.
+A Bezout identity for a coprime pair over $K$ remains valid over $\C$.
+Finally, $P_1$ has degree one; a shared complex root would make it
+divide $P_2$, which the theorem excludes.
+\end{proof}
+
+\section{Ordinary moments and prime-power factor degrees}
+
+The next theorem uses a prime-power part of the \emph{order}; the support
+gap $d$ need not be a prime power.
+
+\begin{theorem}[Factor degrees without a carry]\label{thm:factor-degrees}
+Let $a\ge0$, $d\ge1$ be integers. Let $p$ be prime, $r\ge1$, $b\ge1$,
+and suppose
+\begin{equation}\label{eq:no-carry}
+ (ab\bmod p)+db<p,
+\end{equation}
+where $ab\bmod p\in\{0,\ldots,p-1\}$. Put $P=p^r$ and $n=bP$.
+Every root of the ordinary normalized moment polynomial $P_{n,a,d,1}$
+in $\overline{\Q}_p$ has valuation
+\begin{equation}\label{eq:root-valuation}
+ -\frac{s}{P},\qquad
+ s=d\,\frac{p^r-1}{p-1},\qquad \gcd(s,P)=1,
+\end{equation}
+where $\vp(p)=1$. Consequently every nonconstant factor over $\Q$
+has degree divisible by $P$.
+\end{theorem}
+\begin{proof}
+Write
+\[
+ P_{n,a,d,1}(t)=\sum_{k=0}^n c_kt^k,\qquad
+ c_k=\binom nk(an+1)_{dk}.
+\]
+Condition~\eqref{eq:no-carry} implies $db<p$, and in particular
+$b<p$ and $d<p$. It also says that $(ab,(a+d)b]$ contains no
+multiple of $p$. Multiplication by $P=p^r$ shows that
+$(an,(a+d)n]$ contains no multiple of $p^{r+1}$. Thus the shorter
+interval $(an,an+dk]$ contains no multiple of $p^j$ for any $j>r$.
+For $1\le j\le r$, the integer $an$ is divisible by $p^j$.
+Legendre's formula therefore gives the exact identity
+\begin{equation}\label{eq:shifted-valuation}
+ \vp\bigl((an+1)_{dk}\bigr)
+ =\sum_{j=1}^r\left(
+     \left\lfloor\frac{an+dk}{p^j}\right\rfloor
+       -\left\lfloor\frac{an}{p^j}\right\rfloor\right)
+ =\sum_{j=1}^r\left\lfloor\frac{dk}{p^j}\right\rfloor
+ =\vp((dk)!).
+\end{equation}
+The last equality uses $dk\le dbP<p^{r+1}$.
+In particular, $\vp(c_0)=0$ and $\vp(c_n)=bs$.
+Also $s=d(1+p+\cdots+p^{r-1})\not\equiv0\pmod p$.
+
+For $0<k<n$, put $t=\vp(k)$, so $0\le t\le r$.
+For every $1\le j<n$, one has $\vp(n-j)=\vp(j)$:
+when $\vp(j)<r$ this follows from $\vp(n)=r$; otherwise
+$j=\ell P$, $1\le\ell<b<p$, and both valuations equal $r$.
+Consequently $\binom{n-1}{k-1}$ is a $p$-adic unit, and
+\[
+ \vp\binom nk=\vp\left(\frac nk\binom{n-1}{k-1}\right)=r-t.
+\]
+If $t<r$, the floors with $j\le t$ are exact and every remaining
+floor is strictly greater than its argument minus one. Hence
+\begin{equation}\label{eq:strict-chord}
+ \vp(c_k)
+ =r-t+\sum_{j=1}^r\left\lfloor\frac{dk}{p^j}\right\rfloor
+ >dk\sum_{j=1}^r p^{-j}
+ =\frac{sk}{P}.
+\end{equation}
+If $t=r$, all those arguments are integers, so
+$\vp(c_k)=sk/P$. Thus every coefficient lies on or above the line
+joining the two endpoint valuations.
+
+If a root $\xi$ had $\vp(\xi)>-s/P$, the constant term of
+$P_n(\xi)$ would have uniquely least valuation.
+If $\vp(\xi)<-s/P$, the leading term would have uniquely least
+valuation. The coefficient bounds just proved exclude cancellation
+in either case. This proves \eqref{eq:root-valuation}, without needing
+an additional Newton-polygon theorem.
+
+For a rational factor of degree $h$, the quotient of its nonzero
+constant coefficient by its leading coefficient has valuation
+$-hs/P$, the valuation of the product of its $h$ roots. This is an
+integer because the quotient is rational. Since $\gcd(s,P)=1$,
+one has $P\mid h$.
+\end{proof}
+
+\begin{corollary}[Prime-power-order irreducibility]\label{thm:prime-power-order}
+If $b=1$ in Theorem~\ref{thm:factor-degrees}, then
+$P_{p^r,a,d,1}$ is irreducible over $\Q$.
+Its sufficient no-carry condition is
+\[
+ (a\bmod p)+d<p.
+\]
+In particular, this holds whenever $p>a+d$.
+\end{corollary}
+\begin{proof}
+Every nonconstant rational factor has degree divisible by $p^r$,
+which is the degree of the whole polynomial.
+\end{proof}
+
+\begin{corollary}[Ordinary pairs from one irreducible order]\label{cor:ordinary-orders}
+For fixed integers $a\ge0$, $d\ge1$, let $N\ge2$.
+If either $N$ or $N-1$ is $p^r$ with $r\ge1$ and
+$(a\bmod p)+d<p$, then
+\[
+ \gcd(P_{N-1,a,d,1},P_{N,a,d,1})=1.
+\]
+This holds in particular if the indicated base prime satisfies $p>a+d$.
+The same conclusion holds for $N=2$ without any prime hypothesis.
+No binomial $X^a(A+BX^d)$, $AB\ne0$, can have zero ordinary
+moments at both orders in these cases.
+\end{corollary}
+\begin{proof}
+Apply Corollary~\ref{thm:prime-power-order} to the indicated order and
+Corollary~\ref{cor:irreducible-pair}. The case $N=2$ uses the last
+assertion of the latter corollary. Equation~\eqref{eq:moment-normalization}
+gives the moment conclusion.
+\end{proof}
+
+\begin{corollary}[Adjacent prime-power parts]\label{cor:adjacent-parts}
+Fix $a\ge0$, $d\ge1$. Suppose that for primes $p,q$, positive integers
+$r,s,b,c$, and some $n\ge1$,
+\[
+ n=bp^r,\qquad n+1=cq^s,\qquad
+ (ab\bmod p)+db<p,\qquad (ac\bmod q)+dc<q.
+\]
+Then $\gcd(P_{n,a,d,1},P_{n+1,a,d,1})=1$ over $\C$.
+The two orders need not themselves be prime powers.
+\end{corollary}
+\begin{proof}
+Put $P=p^r$, $Q=q^s$. The primes are distinct, since they divide
+consecutive integers. By Theorem~\ref{thm:factor-degrees}, a common
+rational factor of degree $h$ would satisfy $P\mid h$ and $Q\mid h$.
+The no-carry conditions give $P\ge p>db$ and $Q\ge q>dc$, hence
+\[
+ P^2>dn,\qquad Q^2>d(n+1),\qquad
+ PQ>d\sqrt{n(n+1)}>n .
+\]
+Thus $PQ\mid h$ is impossible for $0<h\le n$.
+A Bezout identity transfers coprimality to $\C$.
+\end{proof}
+
+\begin{remark}\label{rem:prime-power-scope}
+For the ordinary support $\{2,5\}$, take
+$n=145=5\cdot29$ and $n+1=146=2\cdot73$.
+The no-carry sums are $10+15=25<29$ and $4+6=10<73$.
+Corollary~\ref{cor:adjacent-parts} therefore applies although neither
+order is a prime power.
+
+For $a=0$, compare the valuation argument with Lemma~2.3 of
+Filaseta and Rocks~\cite{FR}. The proof above includes the shift $an$
+and proves the coefficient inequalities directly.
+Irreducibility and consecutive coprimality at every order remain open
+for a general fixed algebraic shape.
+\end{remark}
+
+\section{Generic and transcendental Gamma shapes}
+
+Here the symbol $b$ is an indeterminate; it is not a fixed positive
+real parameter.
+
+\begin{theorem}[Generic-shape Eisenstein argument]\label{thm:generic-shape}
+For every pair of integers $a\ge0$, $d\ge1$ and every $n\ge1$, the
+polynomial
+\[
+ P_{n,a,d,b}(t)\in\Q[b][t]
+\]
+is irreducible over $\Q(b)$. The same holds for its monic reciprocal
+\[
+ R_{n,a,d,b}(u)
+ =u^nP_{n,a,d,b}(u^{-1})
+ =\sum_{k=0}^n\binom nk(an+b)_{dk}u^{n-k}.
+\]
+\end{theorem}
+\begin{proof}
+Use the prime element $\pi=b+an$ in $\Q[b]$.
+Every nonleading coefficient of $R_n$ is divisible by $\pi$.
+Its constant coefficient is
+\[
+ (\pi)_{dn}=\pi\prod_{j=1}^{dn-1}(\pi+j),
+\]
+which is not divisible by $\pi^2$; its quotient by $\pi$ has value
+$(dn-1)!\ne0$ at $\pi=0$.
+
+This is the Eisenstein argument over $\Q[b]$.
+Explicitly, a factorization over $\Q(b)$ would, by Gauss' lemma,
+give monic positive-degree factors in $\Q[b][u]$.
+Their reductions modulo $\pi$ would be powers of $u$, since their
+product reduces to $u^n$. Both constant coefficients would then be
+divisible by $\pi$, forcing the constant coefficient of $R_n$ to be
+divisible by $\pi^2$, a contradiction.
+The nonzero constant and leading coefficients make reciprocal
+transformation preserve reducibility over $\Q(b)$.
+\end{proof}
+
+\begin{corollary}[Transcendental shapes]\label{cor:transcendental-shape}
+Let $\beta\in\C$ be transcendental over $\Q$.
+For fixed integers $a\ge0$, $d\ge1$, every polynomial
+$P_{n,a,d,\beta}$ is irreducible over $\Q(\beta)$, and
+\[
+ \gcd(P_{n,a,d,\beta},P_{n+1,a,d,\beta})=1
+ \qquad(n\ge1)
+\]
+over $\C$.
+For every positive real transcendental Gamma shape, this gives
+coprimality at every consecutive pair of orders.
+\end{corollary}
+\begin{proof}
+Evaluation $b\mapsto\beta$ is a field isomorphism
+$\Q(b)\simeq\Q(\beta)$, so it preserves the irreducibility in
+Theorem~\ref{thm:generic-shape}.
+The consecutive polynomials are irreducible over the same field and
+have different degrees, hence are coprime there.
+Their Bezout identity remains valid over $\C$.
+This conclusion uses neither specialization at an algebraic shape
+nor an assertion of irreducibility over $\C$.
+\end{proof}
+
+\begin{remark}\label{rem:algebraic-specialization}
+Theorem~\ref{thm:generic-shape} does not give irreducibility at a
+prescribed rational or algebraic value of $b$. This distinction is
+necessary: for $a=0$, $d=1$, $n=3$, $\beta=1/4$ one has
+\[
+ P_{3,0,1,1/4}(t)=\frac{(3t+4)(15t^2+16)}{64}.
+\]
+Thus it is reducible and has the rational root $-4/3$.
+At that root the adjacent polynomials have values
+$P_{2,0,1,1/4}(-4/3)=8/9$ and
+$P_{4,0,1,1/4}(-4/3)=32/9$, so this factorization is not a
+counterexample to consecutive coprimality.
+In particular, generic irreducibility does not resolve the remaining
+ordinary case $\beta=1$.
+\end{remark}
+
+\section{The support \texorpdfstring{$\{2,5\}$}{2,5}}
+
+\begin{corollary}[Explicit quintic coefficient separation]\label{cor:quintic}
+For $a=2$, $d=3$, $\beta=1$, one has
+\[
+ P_n(t)=\sum_{k=0}^n\binom nk\frac{(2n+3k)!}{(2n)!}t^k
+\]
+and the exact identity
+\[
+ L_n-c_n
+ =\frac{3n(3n+2)(9n+7)(37n+17)}{2(2n+1)}>0 .
+\]
+Thus irreducibility of either consecutive polynomial suffices for
+coprimality; this applies in particular when the corresponding
+order is $p^r$ with $p>5$.
+\end{corollary}
+\begin{proof}
+Here
+\[
+ c_n=4(n+1)(2n+3)(4n+5),\qquad
+ L_n=\frac{5\prod_{j=1}^4(5n+j)}{2(2n+1)}.
+\]
+Subtracting and clearing the denominator gives
+\[
+ 5\prod_{j=1}^4(5n+j)
+ -8(2n+1)(n+1)(2n+3)(4n+5)
+ =3n(3n+2)(9n+7)(37n+17).
+\]
+The remaining assertions follow from the preceding results.
+For $n=1$ explicitly, $P_1=1+60t$,
+$P_2=1+420t+151200t^2$, and $P_2(-1/60)=36$.
+\end{proof}
+
+The general nondivisibility proof is independent of irreducibility
+theorems for ordinary Bessel polynomials. The latter are
+$ {}_2F_0$ polynomials, whereas the displayed quintic family is
+$ {}_4F_0$ with three varying positive upper parameters in addition
+to $-n$. No Bessel irreducibility theorem is imported here.
+
+\paragraph{Exact replay.}
+The accompanying checker verifies the displayed algebraic identities,
+the defining coefficient and prime-power valuation formulas on explicit
+bounded inputs, and the generic Eisenstein coefficient conditions.
+These are regression controls on the written proofs.
+They do not constitute an all-order factorization search, an independent
+replay, or formal verification.
+
+\begin{thebibliography}{9}
+\bibitem{FR}
+M.~Filaseta and B.~Rocks,
+\emph{On the irreducibility of a polynomial associated with the Strong
+Factorial Conjecture},
+Colloq. Math. \textbf{145} (2016), 307--314.
+\href{https://doi.org/10.4064/cm6761-3-2016}{doi:10.4064/cm6761-3-2016}.
+\end{thebibliography}
+\end{document}

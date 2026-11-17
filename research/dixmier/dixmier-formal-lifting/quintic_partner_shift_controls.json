@@ -1,0 +1,128 @@
+{
+  "claim": "QPS1",
+  "status": "PASS",
+  "environment": {
+    "python": "3.12.3",
+    "sympy": "1.14.0"
+  },
+  "pole_split": [
+    {
+      "case": "regular_constant",
+      "g": "h*lambda",
+      "kappa_order": -2,
+      "leading_coefficient": "-6*H*c"
+    },
+    {
+      "case": "regular_polynomial",
+      "g": "h*kappa**3*lambda",
+      "kappa_order": -2,
+      "leading_coefficient": "-6*H*c"
+    },
+    {
+      "case": "simple_pole",
+      "g": "h*lambda/kappa",
+      "kappa_order": -2,
+      "leading_coefficient": "6*c*(-H + 5*h*lambda)"
+    },
+    {
+      "case": "double_pole",
+      "g": "h*lambda/kappa**2",
+      "kappa_order": -3,
+      "leading_coefficient": "30*c*h*lambda"
+    },
+    {
+      "case": "triple_pole",
+      "g": "h*lambda/kappa**3",
+      "kappa_order": -4,
+      "leading_coefficient": "30*c*h*lambda"
+    },
+    {
+      "case": "other_pole",
+      "g": "h*lambda/(kappa - 3)**2",
+      "kappa_order": -2,
+      "leading_coefficient": "-6*H*c"
+    },
+    {
+      "case": "mixed_poles",
+      "g": "h*mu/(kappa - 2) + h*lambda/kappa**2",
+      "kappa_order": -3,
+      "leading_coefficient": "30*c*h*lambda"
+    }
+  ],
+  "actual_first_pole_orders": "ell=0,1,2,3 verified in finite skewLaurent algebra",
+  "norm_coordinate": {
+    "B": "(H - 2*h)/(H + 3*h)",
+    "Fs": "C*product B(H+i*h), i=0..4",
+    "w": "v*B(H)^-1",
+    "p": "w^-1*H",
+    "w_fifth_power": "C*v^5/Fs",
+    "canonical_commutator": "[p,w]=h",
+    "recovers_original_v_H": true,
+    "signed_norm_divisor": "T**2 + T + 1 + 1/T + T**(-2) - 1/T**3 - 1/T**4 - 1/T**5 - 1/T**6 - 1/T**7",
+    "norm_character_mod_Phi5": "0",
+    "nonnorm_H_squared_character": "2"
+  },
+  "ambient_translations": [
+    {
+      "case": "regular_constant",
+      "canonical_translation": true,
+      "J0_to_Jg": true,
+      "U_eigenvalue": "-5*c*h"
+    },
+    {
+      "case": "regular_polynomial",
+      "canonical_translation": true,
+      "J0_to_Jg": true,
+      "U_eigenvalue": "-5*c*h"
+    },
+    {
+      "case": "simple_pole",
+      "canonical_translation": true,
+      "J0_to_Jg": true,
+      "U_eigenvalue": "-5*c*h"
+    },
+    {
+      "case": "double_pole",
+      "canonical_translation": true,
+      "J0_to_Jg": true,
+      "U_eigenvalue": "-5*c*h"
+    },
+    {
+      "case": "triple_pole",
+      "canonical_translation": true,
+      "J0_to_Jg": true,
+      "U_eigenvalue": "-5*c*h"
+    },
+    {
+      "case": "other_pole",
+      "canonical_translation": true,
+      "J0_to_Jg": true,
+      "U_eigenvalue": "-5*c*h"
+    },
+    {
+      "case": "mixed_poles",
+      "canonical_translation": true,
+      "J0_to_Jg": true,
+      "U_eigenvalue": "-5*c*h"
+    }
+  ],
+  "written_theorem_scope": {
+    "Fs": "any nonzero rational function of H",
+    "g": "any rational function of kappa",
+    "scalar_eigenvalue_set": "5*c*h*Z",
+    "Euler_factorization": "no actual P,Q with [P,Q]=c*h and Jg=Q*P+scalar",
+    "target_fifth_roots": "no actual root P^5=U*G(Jg), G nonzero rational",
+    "h_smallness_required": false,
+    "formal_completion_covered": false
+  },
+  "hashes": {
+    "QUINTIC_PARTNER_SHIFT_RIGIDITY.md": "13dab730c87c5a9719134b6836f907ea662109d61ea9d16e306899d3b881b6f6",
+    "check_quintic_partner_shifts.py": "76d87fbdd85e9d7000005c9d185cab82bab24548ff81583d2af77b41a3fca3dc",
+    "QUINTIC_ORDERING_LAURENT_OBSTRUCTION.md": "035a9d7ea9427ffdcbc174d99995a84cf213dc7c212388a1411b7df72c86ee3b",
+    "CLASSICAL_QUINTIC_COVER_SQUARE.md": "213dabacff305a9d1be5d8679bd1258b06c6340609749c486106773e587ab0b4"
+  },
+  "coverage_boundary": "Exact leading coefficients for regular/simple/higher partner poles, actual skewLaurent first pole cases, signed rational norm and Weyl coordinate identities, rational ambient momentum translations and U eigenrelations. All rational shifts are exhausted by the written divisor-character/norm dichotomy, fixed-field leading-coefficient argument and QQL1. No mixed source/partner correction or Long lift.",
+  "independent_replay": false,
+  "formal_verification": false,
+  "external_review": false
+}

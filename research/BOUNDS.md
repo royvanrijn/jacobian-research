@@ -11,6 +11,8 @@ Bounds retain their exact domains and assumptions. Numeric comparisons use ident
 | HESSIAN-FIRST-SOURCE-FIELD | proved | first-source-velocity-generator-count-over-full-target-normalization | actual complex plane Keller map in a generic monic source direction | upper: 2 |  |
 | HESSIAN-FIRST-SOURCE-FIELD | proved | first-source-derivative-generator-count-over-full-target-normalization | complex polynomial Keller map in n variables; {"n": "positive source dimension"} | upper: n^2 |  |
 | HESSIAN-FIRST-SOURCE-FIELD | proved | Hessian-entry-generator-count-over-gradient-normalization | complex four-variable polynomial potential with nonzero constant Hessian determinant | upper: 10 |  |
+| HESSIAN-COORDINATE-CONDUCTOR | proved | source-coordinate-generator-count-over-full-target-normalization | actual complex plane Keller map in a generic monic source direction | upper: 1 |  |
+| HESSIAN-COORDINATE-CONDUCTOR | proved | source-line-conductor-degree | actual noninvertible complex plane Keller map with P monic in the longitudinal source coordinate | lower: 2 |  |
 | BINOMIAL-INITIAL-BOUNDARY | proved | uniform separated initial terminal order | Nonzero complex X^a(A+B X^d),integers a>=0,d>=1,ordinary factorial shape beta=1 | lower: 5 |  |
 | BINOMIAL-INITIAL-BOUNDARY | proved | uniform separated initial terminal order | Nonzero complex X^a(A+B X^d),integers a>=0,d>=1,every positive Gamma shape beta | lower: 4 |  |
 | DIX-QCR1 | proved | total-degree | classical fourth image completing the fixed retained Long triple | lower: 23 |  |
@@ -133,7 +135,38 @@ Bounds retain their exact domains and assumptions. Numeric comparisons use ident
 | ARITH-AMBIENT-INTEGER-TARGET-BOUNDS | proved | ambient integer-target local and Hasse counts | Fixed Phi over Q, exact height/order and target family in node scope, B tending to infinity. | upper: AZ(B)<<B^(23/10)logB; LZ(B)<<B^(5/2)logB |  |
 | FACT-LOWER-EXPONENT-INITIAL-AND-BOUNDARY-THM-P3-INDEX-INTERPOLATION-OBSTRUCTION | proved | lower-interpolated-coefficient-Gauss-valuation | k>=2, coefficient f_k(tau) of w^k in the stated F | lower: (23*k-133)/54 |  |
 | FACT-LOWER-EXPONENT-INITIAL-AND-BOUNDARY-THM-P3-INDEX-INTERPOLATION-OBSTRUCTION | proved | upper-interpolated-coefficient-Gauss-valuation | k>=3, coefficient g_k(tau) of w^k in the stated G | lower: (23*k-135)/54 |  |
+| MRC-UNIVERSAL-REFLECTION-THM-REFLECTION | proved | normal-direction span of four retained meridian seeds | Every common-symmetric-form nonisotropic orthogonal reflection representation of13a373 over every field of characteristic different from2 | upper: 3 |  |
+| MRC-UNIVERSAL-REFLECTION-COR-COXETER | proved | maximum Coxeter reflection quotient rank | 13a373/375/391/392/3264/3266/3275/3276; every finite or infinite Coxeter system | upper: 3 |  |
+| MRC-UNIVERSAL-REFLECTION-THM-SIBLINGS | proved | normal-direction span of four retained meridian seeds | Every common-symmetric-form nonisotropic orthogonal reflection representation of13a375/391/392 over every field of characteristic different from2 | upper: 3 |  |
+| ARITH-RATIONAL-PLANE-SECTION-CLASSIFICATION | proved | globally soluble targets on one other fixed rational affine plane | Fixed Phi over Q; H([1:u:b:c])<=B; B tending to infinity. | upper: O_P(B^2) |  |
+| ARITH-TWO-PLANE-COUNT-LOWER | proved | ambient rational globally and locally soluble targets | Fixed Phi over Q; H([1:u:b:c])<=B; B tending to infinity. | lower: G(B),L(B)>=8 B^3/zeta(3)+O(B^2) |  |
+| MRC-RATIONAL-REPLACEMENT-THM-CLASS | proved | number of hyperbolic JSJ pieces | Irreducible nonhyperbolic double branched covers of knots obtained by arbitrary rational replacements on connected simple four-vertex plane medial bases R4 | exact: 0 |  |
+| JAC-PF165 | open | reduced-polynomial-companion-ruling-degree | actual complex whole-plane Keller target of ruling6 in complete marked quadratic source-image class | lower: 9 |  |
+| JAC-PF166 | open | degree-of-even-ruling-leading-coefficient | actual complex whole-plane Keller target of ruling6 in complete marked quadratic source-image class | lower: 22 |  |
+| JAC-PF166 | open | intermediate-generic-map-degree | actual complex whole-plane Keller target of ruling6 in complete marked quadratic source-image class | lower: 5 |  |
+| JAC-PF166 | open | original-generic-map-degree | actual complex whole-plane Keller target of ruling6 in complete marked quadratic source-image class | lower: 10 |  |
+| JAC-PF166 | open | sum-infinity-index-times-image-residue-degree | actual complex whole-plane Keller target of ruling6 in complete marked quadratic source-image class above any fixed infinity image | upper: 2 |  |
+| JAC-PF166 | open | closed-intermediate-infinity-prime-count | actual complex whole-plane Keller target of ruling6 in complete marked quadratic source-image class | upper: 3 |  |
+| JAC-PF166 | open | degree-of-even-ruling-leading-coefficient | actual complex whole-plane Keller target of ruling6 in complete marked quadratic source-image class with an infinity image of total alpha*f weight2 | lower: 42 |  |
+| JAC-PF166 | open | intermediate-generic-map-degree | actual complex whole-plane Keller target of ruling6 in complete marked quadratic source-image class with an infinity image of total alpha*f weight2 | lower: 15 |  |
+| DIX-QSO35-LONG-ORDER | proved | generic partner differential order | h-regular finite exact-R scalar Long pair with classical orders(2,3), generic first order3 and nonzero canonical commutator; {"classical_orders": "2,3", "generic_first_order": 3} | lower: 7 |  |
+| MRC-UNIVERSAL-REFLECTION-THM-ALTERNATING8 | proved | normal-direction span of four retained meridian seeds | 13a373/375/391/392/3264/3266/3275/3276; common symmetric form, every field of characteristic different from2 | upper: 3 |  |
+| MRC-HERMITIAN-REFLECTION-COR-FINITE | proved | essential dimension of finite complex order-two pseudo-reflection image | K=13a373/375/391/392, meridians nonidentity with rank(rho(m)-I)=1 and rho(m)^2=I | upper: 3 |  |
+| JAC-PF169 | open | regular-square-completion-remainder-ruling-degree | actual complex whole-plane Keller target of ruling6 in complete marked quadratic source-image class | upper: 3 |  |
+| ARITH-CUBIC-DISCRIMINANT-ROOT-TEST | proved | cubic local-root congruence precision | Exact field, fixed parameters and height domain of node scope. | upper: floor(vpDisc(H)/2)+1 |  |
+| ARITH-FIXED-INCIDENCE-SLICE-HEIGHT | proved | all factorized targets on a fixed noncentered curve | Exact field, fixed parameters and height domain of node scope. | range: Theta_pi,ell(B^(2/3)) |  |
+| ARITH-FIXED-RESOLVENT-SLICE-FINITENESS | proved | Hasse targets on one fixed smooth resolvent slice | Exact field, fixed parameters and height domain of node scope. | upper: O_pi,ell(1) |  |
+| DIX-QQL1-SPECTRUM | proved | scalar adjoint eigenvalue set | ad_J in the actual scalar Weyl division ring, kappa=c_v*v^5/F_s(H), J=c*R(kappa)*H, R=-(kappa-3)(kappa-2)/kappa^2; {"F_s": "arbitrary nonzero rational function of H", "c": "nonzero scalar", "h": "nonzero scalar"} | exact: 5*c*h*Z |  |
+| MRC-RANK3-LEM-UPPER | proved | ordinary knot-group rank | 13a373/375/391/392/3264/3266/3275/3276 | upper: 3 |  |
+| JAC-PF171 | open | regular-square-completion-remainder-ruling-degree | actual complex whole-plane Keller target of ruling6 in complete marked quadratic source-image class | upper: 2 |  |
+| HESSIAN-NODAL-ACTION | proved | minimum-target-reduced-source-directional-output-degree | actual noninvertible complex plane Keller map with P monic in the source direction and global coordinate-conductor directional degree2 | lower: 4 |  |
+| MRC-REFLECTIVE-AUGMENTATION-THM-UPPER | proved | reflective augmentation rank | 13a373/375/391/392/3264/3266/3275/3276; complex reflective augmentations, or symmetric cord matrices over any field of characteristic different from2 | upper: 3 |  |
+| MRC-REFLECTIVE-AUGMENTATION-THM-POSITIVE | proved | reflective augmentation rank | 13a373/375/391/392/3264/3266/3275/3276; complex reflective augmentations in the exact positive-diagonal2 cord convention | exact: 3 |  |
+| MRC-REFLECTIVE-AUGMENTATION-THM-TRIANGLE | proved | maximum Coxeter reflection quotient rank | 13a373/375/391/392/3264/3266/3275/3276; all finite or infinite Coxeter reflection quotients | exact: 3 |  |
+| MRC-TERNARY-AFFINE-THM-GROUP | proved | ordinary generating rank | Q=(sum-zero F3^7) semidirect GL3(F2), natural7-point module | exact: 2 |  |
+| MRC-TERNARY-AFFINE-THM-GROUP | proved | conjugacy-class generating rank | Q=(sum-zero F3^7) semidirect GL3(F2), C=affine conjugacy class of a nonidentity GL3(F2) involution | exact: 4 |  |
 
 ## Comparable improvements
 
 - FACTORIAL-ORDINARY-INITIAL-FOUR: 4 -> 5 via BINOMIAL-INITIAL-BOUNDARY, FACT-LOWER-EXPONENT-INITIAL-AND-BOUNDARY-THM-ORDINARY-FIFTH; structural consumers: none.
+- DIX-QSO34-LONG-ORDER: 5 -> 7 via DIX-QSO35-LONG-ORDER; structural consumers: DIXMIER-SCALAR-MATES.

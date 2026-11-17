@@ -1,0 +1,412 @@
+{
+  "status": "PASS",
+  "quadratic_rank3_control_certificates": [
+    {
+      "name": "13a_373",
+      "field": "Q(phi)",
+      "cord_matrix_rank": 3,
+      "nonzero_principal_minor": {
+        "indices": [
+          0,
+          1,
+          5
+        ],
+        "determinant": [
+          "2",
+          "2"
+        ]
+      },
+      "crossing_row_equations": 169
+    },
+    {
+      "name": "13a_392",
+      "field": "Q(phi)",
+      "cord_matrix_rank": 3,
+      "nonzero_principal_minor": {
+        "indices": [
+          0,
+          1,
+          6
+        ],
+        "determinant": [
+          "2",
+          "2"
+        ]
+      },
+      "crossing_row_equations": 169
+    },
+    {
+      "name": "13a_3264",
+      "field": "Q(phi)",
+      "cord_matrix_rank": 3,
+      "nonzero_principal_minor": {
+        "indices": [
+          0,
+          1,
+          5
+        ],
+        "determinant": [
+          "4",
+          "-2"
+        ]
+      },
+      "crossing_row_equations": 169
+    },
+    {
+      "name": "13a_3276",
+      "field": "Q(phi)",
+      "cord_matrix_rank": 3,
+      "nonzero_principal_minor": {
+        "indices": [
+          0,
+          1,
+          6
+        ],
+        "determinant": [
+          "2",
+          "2"
+        ]
+      },
+      "crossing_row_equations": 169
+    }
+  ],
+  "cyclotomic_rank3_positive_certificates": [
+    {
+      "name": "13a_373",
+      "cyclotomic_prime": 7,
+      "cord_matrix_rank": 3,
+      "principal_minor_indices": [
+        1,
+        2,
+        6
+      ],
+      "principal_minor_coefficients": [
+        2,
+        0,
+        -2,
+        0,
+        0,
+        -2
+      ],
+      "crossing_row_equations": 169,
+      "triangle_Coxeter_type": [
+        2,
+        3,
+        7
+      ],
+      "dihedral_conjugation_pairs_checked": 49
+    },
+    {
+      "name": "13a_375",
+      "cyclotomic_prime": 37,
+      "cord_matrix_rank": 3,
+      "principal_minor_indices": [
+        1,
+        2,
+        6
+      ],
+      "principal_minor_coefficients": [
+        2,
+        0,
+        -2,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        -2
+      ],
+      "crossing_row_equations": 169,
+      "triangle_Coxeter_type": [
+        2,
+        3,
+        37
+      ],
+      "dihedral_conjugation_pairs_checked": 1369
+    },
+    {
+      "name": "13a_391",
+      "cyclotomic_prime": 37,
+      "cord_matrix_rank": 3,
+      "principal_minor_indices": [
+        1,
+        2,
+        6
+      ],
+      "principal_minor_coefficients": [
+        2,
+        0,
+        -2,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        -2
+      ],
+      "crossing_row_equations": 169,
+      "triangle_Coxeter_type": [
+        2,
+        3,
+        37
+      ],
+      "dihedral_conjugation_pairs_checked": 1369
+    },
+    {
+      "name": "13a_392",
+      "cyclotomic_prime": 7,
+      "cord_matrix_rank": 3,
+      "principal_minor_indices": [
+        1,
+        2,
+        6
+      ],
+      "principal_minor_coefficients": [
+        2,
+        0,
+        -2,
+        0,
+        0,
+        -2
+      ],
+      "crossing_row_equations": 169,
+      "triangle_Coxeter_type": [
+        2,
+        3,
+        7
+      ],
+      "dihedral_conjugation_pairs_checked": 49
+    },
+    {
+      "name": "13a_3264",
+      "cyclotomic_prime": 7,
+      "cord_matrix_rank": 3,
+      "principal_minor_indices": [
+        1,
+        3,
+        6
+      ],
+      "principal_minor_coefficients": [
+        2,
+        0,
+        -2,
+        0,
+        0,
+        -2
+      ],
+      "crossing_row_equations": 169,
+      "triangle_Coxeter_type": [
+        2,
+        3,
+        7
+      ],
+      "dihedral_conjugation_pairs_checked": 49
+    },
+    {
+      "name": "13a_3266",
+      "cyclotomic_prime": 37,
+      "cord_matrix_rank": 3,
+      "principal_minor_indices": [
+        1,
+        3,
+        6
+      ],
+      "principal_minor_coefficients": [
+        2,
+        0,
+        -2,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        -2
+      ],
+      "crossing_row_equations": 169,
+      "triangle_Coxeter_type": [
+        2,
+        3,
+        37
+      ],
+      "dihedral_conjugation_pairs_checked": 1369
+    },
+    {
+      "name": "13a_3275",
+      "cyclotomic_prime": 37,
+      "cord_matrix_rank": 3,
+      "principal_minor_indices": [
+        1,
+        3,
+        6
+      ],
+      "principal_minor_coefficients": [
+        2,
+        0,
+        -2,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        -2
+      ],
+      "crossing_row_equations": 169,
+      "triangle_Coxeter_type": [
+        2,
+        3,
+        37
+      ],
+      "dihedral_conjugation_pairs_checked": 1369
+    },
+    {
+      "name": "13a_3276",
+      "cyclotomic_prime": 7,
+      "cord_matrix_rank": 3,
+      "principal_minor_indices": [
+        1,
+        3,
+        6
+      ],
+      "principal_minor_coefficients": [
+        2,
+        0,
+        -2,
+        0,
+        0,
+        -2
+      ],
+      "crossing_row_equations": 169,
+      "triangle_Coxeter_type": [
+        2,
+        3,
+        7
+      ],
+      "dihedral_conjugation_pairs_checked": 49
+    }
+  ],
+  "generic_matrix_identity_controls": [
+    "B(X,Y)=B(Y,X)",
+    "B(X,X)=2detX",
+    "X adjY X=B(X,Y)X-detX Y",
+    "XY+YX=tr(XY)I for tracelessX,Y",
+    "Mat2 and sl2 trace-form Gram determinants1,-2"
+  ],
+  "corrupt_symmetric_cord_matrix_rejected": true,
+  "scope": "Exact rank3 reflective cord matrices on all8 named knots in prime cyclotomic fields, with4 independent quadratic-field controls and universal2x2 polynomial identities. Uniform rank<=3 uses the written Gram-radical quotient and retained reflection theorem. Deck invariance uses its written proof. Explicit dihedral core colours and outer A2/commutation relations also prove onto triangle Coxeter quotients of rank3. No unrestricted augmentation-rank bound follows.",
+  "input_sha256": {
+    "verify_reflective_augmentation_gap.py": "7c57fbc5737cd77af0d7a313a8be960ebbafa6b536c71f7697bd3cb162e1e88f",
+    "reflective_augmentation_inputs.json": "962e09981efd2bbacb8ca71222c3a76fab793954e99d8c735ec344144d1517b9",
+    "seven_sheet_cover_inputs.json": "0cdaed4926bdf03eb399d572da98bf59b7bbbe0ea13ab66106ddc34724a85ef6",
+    "REFLECTIVE_AUGMENTATION_RANK_GAP.tex": "39a58c734e58f73902e7a3b5c4ead1aff89c486734841c808a253e4da08060de",
+    "UNIVERSAL_REFLECTION_OBSTRUCTION.tex": "42c1dd581a8887a2f4b6c777a76ee96ea998fb427a5b03ef31510b9e3f67dcd2",
+    "sources/cornwell-character-cord-1509.04962v1.pdf": "1845d56c7be1f824b22aceee6d26a816e84fab05d0baac80c15bb2bff16c067b"
+  }
+}

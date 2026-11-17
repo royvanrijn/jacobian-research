@@ -696,7 +696,7 @@
     "verify_finite_coxeter_exclusion.py": "7ecd72d88470d2df12b7c2c6afd7536caf18d0c619d1e3a2b885aafbc6ca3195",
     "seven_sheet_cover_inputs.json": "0cdaed4926bdf03eb399d572da98bf59b7bbbe0ea13ab66106ddc34724a85ef6",
     "verify_seven_sheet_covers.py": "fbba9f40f4956c4130da6eca93fd4d874d3661e31da18141d30780408f83ea49",
-    "FINITE_COXETER_EXCLUSION.tex": "899f11aa49ac714cc1e9b2536cacda06b737947e785dff6cdf5e38d2bb165271"
+    "FINITE_COXETER_EXCLUSION.tex": "20897878c87a5a998a84f495a047c4ccc64a33b1a71d525b2f38a91a861c7886"
   },
   "assurance": "Exact internal computation, without formal verification or external human review."
 }

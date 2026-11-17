@@ -1,0 +1,164 @@
+# Exponential Integral Theorem
+
+Research manuscripts on algebraic exponential integrals, E-functions, transcendence and algebraic independence, compact exponential periods, Kontsevich–Zagier relations, relative exponential fixed parts, polynomial boundary systems, simplex periods, and factorial moments.
+
+Authors: **Christopher D. Long and Antoine-Auguste Le Blanc**. Le Blanc cryptographic author identifier: `b604812530b3535b23d6dbb0f5abe32d1ed1a9de35fb4f7d04d62cff08ea19c8`.
+
+## Read the papers
+
+| Paper | Manuscript | PDF | LaTeX |
+| --- | --- | --- | --- |
+| I | Algebraic Exponential Integrals: Transcendence and Linear Relations | [Read PDF](output/pdf/exponential-integral-theorem.pdf) | [Source](papers/01-exponential-integral-theorem/exponential-integral-theorem.tex) |
+| II | A Linear Kontsevich–Zagier Theorem for Compact Exponential Periods on the Affine Line | [Read PDF](output/pdf/linear-kz-affine-line.pdf) | [Source](papers/02-compact-polynomial-line-kz/linear-kz-affine-line.tex) |
+| III | A Polynomial Kontsevich–Zagier Theorem for Compact Exponential Periods on the Affine Line | [Read PDF](output/pdf/polynomial-kz-affine-line.pdf) | [Source](papers/03-complete-polynomial-kz/polynomial-kz-affine-line.tex) |
+| IV | Relative Exponential Fixed Parts and Functional Periods: An Exponential Nori–Ayoub Theorem | [Read PDF](output/pdf/relative-exponential-nori-ayoub.pdf) | [Source](papers/04-relative-exponential-nori-ayoub/relative-exponential-nori-ayoub.tex) |
+| V | Relative Exponential Periods on Polynomial Chains: Algebraic Independence over Fixed Boundary Fields | [Read PDF](output/pdf/polynomial-flag-exponential-periods.pdf) | [Source](papers/05-polynomial-flags/polynomial-flag-exponential-periods.tex) |
+| VI | Exponential Periods and Factorial Moments | [Read PDF](output/pdf/exponential-factorial-moments.pdf) | [Source](papers/06-exponential-factorial-moments/exponential-factorial-moments.tex) |
+
+The PDFs are committed snapshots of the corresponding sources, not expiring build-artifact links. Access follows the repository's visibility.
+
+## Paper guide
+
+Papers I–III progress from transcendence of individual polynomial exponential integrals to linear and polynomial Kontsevich–Zagier completeness on the affine line. Paper IV treats functional relations over a varying algebraic base. Paper V separates linear comparison modulo fixed boundary spans from algebraic independence over fixed boundary fields, with rank-two, rank-three, and rank-six applications. Paper VI uses controlled simplex exponential periods to prove eventual factorial-moment nonvanishing for explicit flat and nonflat families in every dimension. Full statements, hypotheses, and references are in the linked manuscripts.
+
+### Paper I — Algebraic exponential integrals
+
+**Scope.** A nonconstant polynomial $q\in\overline{\mathbb{Q}}[x]$ and a compact chain $\Gamma$ whose boundary $\Delta$ is a finite degree-zero zero-cycle supported at algebraic points, with algebraic coefficients. Write $I_{q,\Delta}(z)=\int_\Gamma e^{zq(x)}\,dx$.
+
+**Main results.** Algebraic-value rigidity:
+
+$$
+I_{q,\Delta}(1)\in\overline{\mathbb{Q}}
+\quad\Longleftrightarrow\quad I_{q,\Delta}\equiv0.
+$$
+
+Every nonzero member of this family is a purely transcendental E-function: its value at every nonzero algebraic argument is transcendental. In particular, $\int_A^B e^{q(x)}\,dx$ is transcendental for distinct algebraic endpoints. For fixed $q$, all algebraic-coefficient linear relations among these values are characterized by inverse-branch densities on a finite tree. The rigidity statement is specific to $dx$ and does not extend unchanged to arbitrary polynomial amplitudes.
+
+### Paper II — Linear Kontsevich–Zagier completeness
+
+**Scope.** Compact integrals $\int_\Gamma r(x)e^{q(x)}\,dx$ with arbitrary $q,r\in\overline{\mathbb{Q}}[x]$ and the same algebraic boundary data, together with zero-dimensional exponential periods $e^\beta$ for algebraic $\beta$. Different phases may occur in one relation.
+
+**Main results.** The period map on their formal linear span is injective: every algebraic-coefficient numerical linear relation follows from bilinearity, functoriality through smooth affine curves, and twisted Stokes. Polynomial-amplitude reduction and a uniform transfer theorem reduce numerical relations to functional identities; a common-tree criterion and simultaneous algebraic cover realize those identities formally. This extends Paper I to amplitudes, mixed phases, and formal linear completeness, but does not assert completeness for arbitrary curves or noncompact rapid-decay periods.
+
+### Paper III — Polynomial Kontsevich–Zagier completeness
+
+**Scope.** The commutative, tensor-generated algebra of the compact affine-line periods and exponentials treated in Paper II, allowing products and polynomial relations of arbitrary degree.
+
+**Main results.** The formal period map on this algebra is injective. Every polynomial numerical relation is generated by Paper II's linear relations, multiplication, and the exponential multiplication and constant-phase-shift identities. After adjoining the required endpoint and shift exponentials, the functional relation ideal is generated by affine-linear relations; the differential Galois description separates constrained coordinates from an algebraically independent vector translation block. The theorem concerns the algebra generated by these one-dimensional periods, not arbitrary higher-dimensional integrals. It does not assert additional independence from Gamma values or $\sqrt{\pi}$.
+
+### Paper IV — Relative exponential Nori–Ayoub theorem
+
+**Scope.** Lisse relative exponential motives over a smooth connected quasi-projective base $S/\overline{\mathbb{Q}}$, with rapid-decay realizations at a nonzero algebraic exponential scale.
+
+The algebraic realization is constructed through arithmetic mixed sheaves, with an explicit tensor comparison and absolute period normalization.
+
+**Main results.** The paper constructs the relative exponential Nori category and identifies algebraic horizontal sections of the Gauss–Manin connection with the maximal constant exponential submotive. For each finite tensor-generated subcategory of the generic relative Kontsevich–Zagier envelope, it proves the exact sequence
+
+$$
+1\longrightarrow G_{\mathrm{diff}}\longrightarrow G_{\mathrm{mot}}
+\longrightarrow G_{\mathrm{const}}\longrightarrow1.
+$$
+
+Over the actual field of constant exponential periods, the comparison algebra is Picard–Vessiot and analytic evaluation is injective. This is a functional-period theorem after constant-period relations have been imposed, not a numerical specialization theorem or an elementary presentation of all categorical period relations.
+
+### Paper V — Two levels of single-chain comparison
+
+**Scope.** The polynomial boundary-system construction covers compact polynomial two-chains with algebraic parametrizations. The weighted phase class is
+
+```math
+q=\alpha x^a+\beta y^b+q_<,\qquad \gcd(a,b)=1,
+```
+
+with real algebraic coefficients and lower weighted degree for $q_<$. The moments use the basis $x^iy^j$, $0\le i\le a-2$, $0\le j\le b-2$, of rank $\mu=(a-1)(b-1)$.
+
+**Linear comparison and scalar transcendence.** Distinct Morse critical values and actual-chain detection suffice: detection can be an interior saddle, the stated density-continuation alternative, or a strict interior extremum on a positive domain. The basic moments are linearly independent modulo the **linear span** of the specified boundary coordinates, functionally and at every nonzero algebraic parameter. A polynomial amplitude has its value in that boundary span exactly when its specialized polynomial twisted class is zero. A nonzero remainder gives absolute transcendence and nonvanishing. Neither critical-difference separation nor boundary-field disjointness is needed for this linear theorem. The extremum test includes critical value zero but is not asserted for arbitrary signed chains.
+
+**Algebraic independence over the boundary field.** The stronger theorem additionally uses pairwise distinct ordered critical differences (R) and intrinsic adjoint disjointness from the boundary tensor category. The earlier rational-independence hypothesis (Q) is only a sufficient condition for (R). Spectral face separation (F), or the stated per-face rank test, certifies disjointness. The full conclusion remains algebraic independence over the fixed-face function field and over its value field at **every nonzero algebraic parameter**, with the polynomial twisted-exactness criterion for arbitrary amplitudes.
+
+The Morse and separated-difference conditions hold on a **nonempty Zariski-open subset of the full weighted coefficient family**. This does not assert generic real-chain detection or genericity in every sparse subfamily. A rational critical-value example shows that (R) is strictly weaker than (Q).
+
+**Examples.** The original elliptic triangle for $y^2-x^3+3x$ and the rank-six triangle for $x^4+y^3+xy-y$ are retained. A new noncoprime example $x^4+y^2+x$, on the triangle with vertices $(-1,-1),(0,-1/2),(-1/2,1)$, has a directly proved rank-three $\mathrm{SL}_3$ module and a full fixed-boundary comparison. Its literal Stokes and boundary-spectrum certificates are exact. This is not a theorem for all noncoprime phases.
+
+The proof uses direct simple-spectrum formal diagonalization and stable-lattice boundary obstruction. The fields use **only the specified faces**, not all compact line periods. Multiple chains/phases and unrestricted formal completeness are not claimed. The actual comparison does not depend on Paper IV or on companion formal-comparison theorems.
+
+The [October 10 integration audit](notes/provenance/papers-v-vi-audit-2026-10-10.md) records the new proof interfaces and scope. The [pre-two-level source/PDF archive](notes/archives/2026-10-10-paper-v-before-two-level/README.md) preserves the preceding canonical V unchanged. The [October 6 candidate and audit](notes/candidates/2026-10-06-single-chain/README.md), [corrected successor](notes/candidates/2026-10-06-single-chain/successor/generic-single-chain-theorem-v2.tex), and [integration record](notes/provenance/paper-v-single-chain-integration-2026-10-06.md) retain their historical status. The [earlier archived manuscript](notes/archives/2026-10-06-paper-v-before-single-chain/polynomial-flag-exponential-periods.tex) and [its PDF](notes/archives/2026-10-06-paper-v-before-single-chain/polynomial-flag-exponential-periods.pdf) retain the separate geometric and multicolumn material, which is not used as an unproved input to the current comparison.
+
+### Paper VI — Exponential periods and factorial moments
+
+**Scope.** Write $\mathcal L_n(x_1^{e_1}\cdots x_n^{e_n})=\prod_i e_i!$ and $S=x_1+\cdots+x_n$. An exact radial theorem, allowing arbitrary complex lower homogeneous layers, gives
+
+```math
+\lim_{m\to\infty}\frac{\mathcal L_n(f^m)}{\Gamma(Dm+n)}
+=\int_{\Delta_{n-1}}\exp\bigl(f_{D-1}(t)/D\bigr)\,dt,
+\qquad f=S^D+f_{D-1}+\cdots.
+```
+
+The simplex has coordinate volume $1/(n-1)!$. A nonzero limit proves that every sufficiently large factorial moment is nonzero, which is stronger than the Factorial Conjecture conclusion for that polynomial.
+
+**Explicit families.** An odd-degree weighted planar family works at every nonzero algebraic scale in every dimension, with degree increasing with dimension. A second elliptic construction gives degree-four flat-top families in every dimension. For it, a characteristic-five twisted-remainder argument proves an all-exponent nonexactness theorem whenever $v(\xi)\le0$ at some place above five; the same choice $\xi=101i$ works in every dimension. Exact polynomial gcd checks remove all algebraic parameter exceptions for dimensions $3\le n\le103$. This finite range is not extrapolated to all exponents.
+
+A block-radial theorem supplies nonflat families with arbitrarily many active angular blocks and arbitrary lower-degree cross-block couplings. The degree-next-to-top angular correction is controlled; arbitrary coupling in that layer is not established. The analytic limits and certificates are proved in VI; its transcendence/nonvanishing input is Paper V, not a re-audit of that paper's global geometry.
+
+**Complex scales and limits of the result.** Algebraic specialization extends the FC conclusion to complex scales outside the specified finite algebraic exception sets; power closure gives infinitely many nonzero moments. This does not prove eventual nonvanishing or a nonzero radial limit at every transcendental scale. Neither unrestricted FC(n), arbitrary algebraic polynomial-phase simplex nonvanishing, nor multicolumn independence is asserted.
+
+## Status
+
+These are working research drafts. Compilation and computational checks do not constitute independent peer review or formal verification.
+
+For the chronological development of the manuscripts, mathematical audit and repair records, and current review boundaries, see [Repository history and status](notes/repository-status.md).
+
+## Supplements and notes
+
+| Document | PDF | LaTeX |
+| --- | --- | --- |
+| Linear KZ: alternate presentations and extensions | [Read PDF](output/pdf/linear-kz-supplement.pdf) | [Source](papers/02-compact-polynomial-line-kz/linear-kz-supplement.tex) |
+| Polynomial KZ: quadratic normal forms, tensor-square residues, and entire exponential integrals | [Read PDF](output/pdf/polynomial-kz-supplement.pdf) | [Source](papers/03-complete-polynomial-kz/polynomial-kz-supplement.tex) |
+| EIT structural companion | [Read PDF](output/pdf/eit-structural-companion.pdf) | [Source](notes/eit-structural-companion.tex) |
+
+## Candidate research drafts
+
+These two unnumbered drafts separate proved reductions from research targets. They are **not Papers VII and VIII**, and their inclusion does not promote their open comparison problems to theorems.
+
+| Candidate | Scope and status | PDF | LaTeX |
+| --- | --- | --- | --- |
+| Simplex Exponential Periods: Reductions and Open Comparison Problems | E-function and conjugate-real reductions, fixed-phase exceptional sets, a positive-amplitude obstruction, and the still-open unrestricted simplex/visibility program | [Read PDF](output/pdf/simplex-exponential-periods.pdf) | [Source](notes/candidates/2026-10-10-simplex-program/simplex-exponential-periods.tex) |
+| Multicolumn Exponential Periods: Conditional Comparison and Geometric Realization | Proved elementary orbit and local-contraction statements; actual multichain realization, determinant normalization, and numerical hypotheses remain to be verified | [Read PDF](output/pdf/multicolumn-exponential-periods.pdf) | [Source](notes/candidates/2026-10-10-multicolumn-program/multicolumn-exponential-periods.tex) |
+
+## Build and check
+
+On Debian/Ubuntu, install the build dependencies:
+
+```sh
+sudo apt-get install latexmk texlive-latex-extra texlive-fonts-recommended texlive-science lmodern poppler-utils python3 python3-sympy make
+```
+
+From the repository root:
+
+```sh
+make pdf    # compile all 12 managed documents; refresh PDFs and manifest
+make check  # verify hashes, rebuild, compare PDF text, and check README links
+make test   # build regressions and exact comparison/factorial certificates
+```
+
+Each managed LaTeX source is standalone and has an embedded bibliography. The build explicitly selects the two new candidate drafts; it does not recursively compile historical archives or frozen candidates. PDFs live in `output/pdf/`; intermediate files stay in ignored `.build/`. The [manifest](output/pdf/manifest.json) records each source hash, PDF hash, and page count.
+
+The [LaTeX workflow](.github/workflows/latex.yml) runs on pull requests and pushes to `main`. It checks committed snapshots without writing back to the repository and uploads fresh PDFs and logs for inspection.
+
+### Papers V–VI computational certificates
+
+```sh
+python3 scripts/paper_v_certificate.py 'x**4 + 2*x*y**2 + 1/3'
+python3 scripts/check_paper_v.py  # optional broader exact elliptic suite
+python3 scripts/check_single_chain.py  # rank-six and formal certificates
+python3 scripts/check_comparison_factorial.py --max-k 100
+```
+
+The elliptic certificate routine uses only the Python standard library. The rank-six, formal-recursion, rank-three, characteristic-five, and finite coprimality suites require SymPy; `make test` runs all of them. The new checker also verifies simplex normalization and the positive-amplitude counterexample. The broader script writes its results under `.build/`. Neither finite checks nor a successful build constitute a formal proof certificate.
+
+## Contributing
+
+See the [contribution and PDF-update workflow](CONTRIBUTING.md). Mathematical changes should be separated from editorial and build changes.
+
+## License
+
+[MIT License](LICENSE).

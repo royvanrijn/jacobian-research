@@ -1,0 +1,525 @@
+\documentclass[11pt]{article}
+\usepackage{amsmath,amssymb,amsthm,geometry,hyperref}
+\geometry{margin=1in}
+\newtheorem{lemma}{Lemma}
+\newtheorem{proposition}{Proposition}
+\newtheorem{theorem}{Theorem}
+\newtheorem{corollary}{Corollary}
+\newcommand{\OO}{\mathcal O}
+\newcommand{\ZZ}{\mathbb Z}
+\newcommand{\QQ}{\mathbb Q}
+\newcommand{\ff}[2]{#1^{\underline{#2}}}
+\begin{document}
+\title{Five-adic block transfer and index-interpolation obstruction for the ordinary quintic}
+\author{Internal research note}
+\date{17 November 2026}
+\maketitle
+
+For the ordinary support $X^2(A+BX^3)$, this note retains an exact
+all-index Frobenius block transfer and a different, analytic
+index-family calculation on the circle $v_5(u)=1$.
+The block transfer preserves seven physical shape offsets and
+constant-unit seeds, but does not yet preserve the required
+joint three-cyclic rank relation.
+The cancelled analytic family has exactly two common five-adic
+indices. It differs from the actual finite moment polynomials
+by a small, generally nonzero, resonant tail.
+A hypothetical ordinary collision on that circle must consequently
+be exponentially close to one of those two analytic indices.
+An explicit constant-unit seed also gives a rank-one generalized
+mixed pair at $u=10$, refuting a seed-blind strengthening of the
+missing descent. Its seed differs from the actual seed $h=1$.
+None of these results proves all-terminal quintic SFC or identifies an
+ordinary integer counterexample.
+
+\section{Exact Artin--Hasse transfer for seven physical offsets}
+Let $K/\mathbb Q_5$ be a complete valued extension, let $\OO$ be its
+valuation ring, and normalize $v(5)=1$.  Work on $v(z)>0$ with
+\[
+ \theta_z=z\frac{d}{dz},\qquad
+ A=F(z)-\theta_z,\qquad
+ F(z)=z+\sum_{r\ge1}a_rz^{5^r},\quad a_r\in5\OO .
+\]
+The transfer is evaluated in the inner region $v(z)>1/5$, so that
+$v(w)>0$ after the substitution below.
+A seed means $h\in\OO[[z]]$ whose reduction modulo the maximal ideal
+is a nonzero constant.  For integers $n\ge0$ and $\delta$, define the commuting polynomial in $A$
+\[
+ P_{n,\delta}(A)=
+ \prod_{k=0}^{n-1}(A+5n+\delta-1-3k),\qquad P_{0,\delta}=1 .
+\]
+Define $B_{0,\gamma,3}=1$ and
+$B_{r+1,\gamma,3}=(z+3r+\gamma+2)B_{r,\gamma,3}-\theta_zB_{r,\gamma,3}$.
+For $F=z$ and $h=1$, the expression $P_{n,\delta}(A)h$ specializes exactly to
+$B_{n,\,2n+\delta,\,3}$, since reversing the factors gives
+$\prod_{k=0}^{n-1}(z-\theta_z+2n+\delta+2+3k)1$.
+
+Put
+\[
+ E(z)=\exp\left(\sum_{r\ge0}\frac{z^{5^r}}{5^r}\right),\qquad
+ b=a_1-1,\qquad w=\frac{bz^5}{5}.
+\]
+The Artin--Hasse series $E$ and $E^{-1}$ have coefficients in
+$\mathbb Z_5$.  For completeness, the coefficient identity
+\[
+ E(z)=\prod_{\substack{d\ge1\\5\nmid d}}
+                 (1-z^d)^{-\mu(d)/d}
+\]
+follows by taking formal logarithms: the coefficient of $z^N$ in
+the logarithm is $N^{-1}\sum_{d\mid N,\,5\nmid d}\mu(d)$,
+which is $1/N$ if $N$ is a power of five and zero otherwise.
+All exponents belong to $\mathbb Z_5$, so the factors and the
+locally finite product are integral.  Consequently the gauge is
+an analytic unit on the open unit disk.  Its first five inverse
+coefficients are $[z^j]E^{-1}=(-1)^j/j!$ for $0\le j<5$.
+
+\begin{lemma}[Exact gauge and potential closure]\label{lem:quintic-ah-gauge}
+The gauge gives
+\[
+ E^{-1}AE=-\theta_z+\sum_{r\ge1}(a_r-1)z^{5^r}.
+\]
+On the residue-$j$ subspace $z^j\OO[[z^5]]$, after $w=bz^5/5$,
+this operator is $-j+5L$, where
+\[
+ L=-\theta_w+w+\sum_{r\ge1}a'_rw^{5^r},\qquad
+ a'_r=\frac{(a_{r+1}-1)5^{\,5^r-1}}{b^{5^r}}\in5\OO .
+\]
+In fact $v(a'_r)\ge 5^r-1$.  Thus the same class of potentials
+is preserved.
+\end{lemma}
+\begin{proof}
+The derivative of $\log E$ is
+$\theta_z\log E=\sum_{r\ge0}z^{5^r}$.
+The residue-$j$ action of $-\theta_z$ is
+$-j-5\theta_{z^5}$.  Substitute $z^5=5w/b$.
+The linear term is $(a_1-1)z^5/5=w$, and the remaining
+coefficients are exactly those displayed.  Since $b\equiv-1\pmod5$,
+it is a unit.
+\end{proof}
+
+\begin{proposition}[Seven-offset transfer]\label{prop:quintic-seven-offset}
+Write $n=5\ell+s$, $0\le s<5$.  For $0\le j<5$ set
+\[
+ \begin{split}
+ k_j&=\langle2(\delta-1-j)\rangle_5,\qquad
+ \beta_j=\frac{j+3k_j-\delta+1}{5},\\
+ \epsilon_j&=\mathbf1_{k_j<s},\qquad t_j=\ell+\epsilon_j,\\
+ \delta'_j&=s-\beta_j+1-5\epsilon_j .
+ \end{split}                                                    \tag{F1}
+\]
+Here $\langle\,\rangle_5$ is the least residue in $\{0,\ldots,4\}$.
+Decompose the gauged seed exactly as
+\[
+ E^{-1}h=\sum_{j=0}^4z^jH_j(z^5).
+\]
+Define
+\[
+ \begin{split}
+ c_{j,k}&=5n+\delta-1-j-3k,\\
+ U_j(L)&=\prod_{\substack{0\le k<n\\k\not\equiv k_j\ (5)}}
+                   (c_{j,k}+5L),\\
+ h_j(w)&=U_j(L)H_j(5w/b).
+ \end{split}
+\]
+Then every $h_j$ is again a seed and there is the exact analytic
+identity
+\[
+ E^{-1}P_{n,\delta}(A)h
+   =\sum_{j=0}^4 z^j5^{t_j}
+                     P_{t_j,\delta'_j}(L)h_j(w).                 \tag{F2}
+\]
+Every $\delta\in\{-4,-3,-2,-1,0,1,2\}$ has all its descendants
+$\delta'_j$ in the same set.  For $n\ge2$ every nonzero descendant
+index $t_j$ is strictly smaller than $n$.
+\end{proposition}
+\begin{proof}
+By Lemma~\ref{lem:quintic-ah-gauge}, the block action is $-j+5L$.
+The factors divisible by five in block $j$ are exactly
+$k=k_j+5a$, $0\le a<t_j$.  Each such factor is
+\[
+ -j+5L+5n+\delta-1-3(k_j+5a)
+       =5(L+n-\beta_j-3a).
+\]
+The definition of $\delta'_j$ gives
+$5t_j+\delta'_j-1=n-\beta_j$.  Hence their product is
+$5^{t_j}P_{t_j,\delta'_j}(L)$.  The other factors are exactly
+$U_j(L)$.  These are all polynomials in the same $L$, so they
+commute.  This proves (F2) before evaluation on any cyclic fiber.
+
+The constant term of $H_j$ reduces to
+$h(0)(-1)^j/j!$, a unit.  The substitution $5w/b$ makes all
+higher terms vanish modulo the maximal ideal.  For each
+nonresonant factor $c_{j,k}$ is a five-adic unit and
+$c_{j,k}+5L\equiv c_{j,k}$ modulo five as an operator on
+$\OO[[w]]$.  Thus $h_j$ still has constant-unit reduction.
+
+For closure assume $-4\le\delta\le2$.  Since $\beta_j$ is an
+integer and
+$-1\le j+3k_j-\delta+1\le21$, one has $0\le\beta_j\le4$.
+If $\epsilon_j=0$, then $s\le k_j$ and
+\[
+ -3\le\delta'_j=s+1-\beta_j
+ \le k_j+1-\left\lceil(3k_j-1)/5\right\rceil\le2 .
+\]
+The final inequality is checked at the five integers $0\le k_j<5$.
+If $\epsilon_j=1$, then $1\le s\le4$, $k_j\le s-1$, and
+$\beta_j\le\lfloor(3s+6)/5\rfloor$.  Therefore
+\[
+ -4\le s-4-\lfloor(3s+6)/5\rfloor
+        \le\delta'_j=s-4-\beta_j\le0 .
+\]
+This proves closure.  Finally
+$t_j\le\lceil n/5\rceil<n$ for $n\ge2$.
+\end{proof}
+
+The smaller proposed set $\{-3,-2,-1,0,1,2\}$ is \emph{not}
+closed.  Already $\delta=-3$, $s=1$, $j=1$ gives
+$k_j=0$, $\beta_j=1$, $\epsilon_j=1$, hence $\delta'_j=-4$.
+The seven-offset correction is indispensable.
+
+For the original physical offset $\delta=1$, the descendants,
+in column order $j=0,\ldots,4$, are
+\[
+\begin{array}{c|rrrrr}
+s&\delta'_0&\delta'_1&\delta'_2&\delta'_3&\delta'_4\\\hline
+0&1&-1&0&-2&-1\\
+1&-3&0&1&-1&0\\
+2&-2&1&-3&0&1\\
+3&-1&2&-2&1&-3\\
+4&0&-2&-1&2&-2
+\end{array}.
+\]
+For the original potential $F=z$ one has $b=-1$ and
+$w=-z^5/5$.  Thus the cyclic argument $u=z^3$ transforms to
+\[
+ u'=w^3=-u^5/125,\qquad v(u')=5v(u)-3.                            \tag{F3}
+\]
+At later stages $u'=b^3u^5/125$, with the same valuation map.
+
+\paragraph{Exact scope and remaining obstruction.}
+This is an all-index operator and seed-closure identity, not a
+joint-rank descent.  The five descendant seeds depend on $j,n,\delta$
+through different polynomials $U_j(L)$; retaining only their
+constant-unit reductions loses their exact coupling.
+Moreover a rank relation at the three points
+$z,\omega z,\omega^2z$ does not separately annihilate the five
+residue blocks in (F2).  Since $5$ is coprime to $3$,
+$w(\omega z)=\omega^2w(z)$ permutes the same three cyclic points,
+but the five prefactors $z^j5^{t_j}$ remain coupled.
+No implication from a rank drop of the original ordinary mixed
+pair to a rank drop of a smaller physical mixed pair is proved.
+The normalized inner region $v(u)>3/5$ therefore remains open.
+No squarefreeness-preservation, SFC, independent/external review,
+formal verification, or novelty claim is made.
+
+
+\section{The cancelled analytic family and its exact scope}
+Normalize $v_5(5)=1$.  The actual reverse ordinary moment polynomial is
+\[
+ \widehat M_n(u)=
+ \sum_{j=0}^{n}\binom nj\frac{(5n-3j)!}{(5n)!}u^j,\qquad n\ge1.       \tag{I1}
+\]
+Indeed it is a nonzero scalar times
+$u^n T_{n,\,2n+1,\,3}(u^{-1})$.
+Thus consecutive ordinary quintic moments have a common reciprocal
+root $u$ precisely when $\widehat M_m(u)=\widehat M_{m+1}(u)=0$.
+We consider only the circle $v_5(u)=1$, so write $u=5w$ with $w$ a unit.
+
+For every $j\ge1$ put
+\[
+ t_j=\left\lceil\frac{3j}{5}\right\rceil,\qquad
+ b_j(M)=
+ \frac{5^{j-t_j}\ff{(M-t_j)}{j-t_j}}
+ {j!\displaystyle\prod_{\substack{1\le r<3j\\5\nmid r}}(5M-r)},
+ \qquad b_0=1,                                                     \tag{I2}
+\]
+and define the \emph{cancelled analytic family}
+\[
+                  Q(M,w)=\sum_{j\ge0}b_j(M)w^j.                    \tag{I3}
+\]
+It is essential that (I3) is an infinite analytic continuation, not
+the finite polynomial (I1).
+
+\begin{lemma}[Analyticity and exact finite-polynomial comparison]\label{lem:quintic-cancelled-tate}
+Each $b_j$ belongs to $\ZZ_5\langle M\rangle$, with coefficientwise bound
+\[
+ v_5(b_j)\ge e_j:=j-t_j-v_5(j!)\ge\frac{3j-11}{20}.                 \tag{I4}
+\]
+The $e_j$ are nonnegative and tend to infinity, so
+$Q\in\ZZ_5\langle M,w\rangle$.
+For an integer $m\ge1$, its first $m+1$ coefficients are exactly those
+of $\widehat M_m(5w)$.  Moreover
+\[
+ b_j(m)=0\quad\text{if}\quad m<j\le\lfloor5m/3\rfloor.              \tag{I5}
+\]
+For every $m\ge8$ and every integral $w$,
+\[
+ v_5\bigl(Q(m,w)-\widehat M_m(5w)\bigr)\ge L_m,\qquad
+ L_m=\max\{3,\lfloor m/4\rfloor\}.                                \tag{I6}
+\]
+\end{lemma}
+\begin{proof}
+Every factor $5M-r$ in (I2) has unit constant term and an inverse
+in $\ZZ_5\langle M\rangle$.  Remove the $5$-part of $j!$;
+the remaining prefactor has valuation $e_j$.
+Since $t_j\le(3j+4)/5$ and
+$v_5(j!)\le(j-1)/4$, (I4) follows.
+Directly $e_1=e_2=0$, $e_3=1$, and (I4) makes every $e_j$
+nonnegative for $j\ge4$.
+
+For $j\le m$, factor the denominator of
+\[
+ \binom mj\frac{(5m-3j)!}{(5m)!}5^j
+       =\frac{\ff m j\,5^j}{j!\,\ff{(5m)}{3j}} .
+\]
+Its factors divisible by five are exactly $5(m-a)$,
+$0\le a<t_j$, and cancel the corresponding numerator factors.
+This gives exactly (I2).  When $m<j$ and $t_j\le m$,
+the remaining falling factorial in (I2) contains zero, proving (I5).
+After (I5), every possible error index has $j>5m/3$.
+By (I4), $e_j>m/4-11/20$, which implies
+$e_j\ge\lfloor m/4\rfloor$.
+
+It remains to check the lower bound three in (I6).
+For $j=5q+s$, $0\le s<5$, the exact formula is
+\[
+ e_j=q-v_5(q!)+d_s,\qquad (d_0,d_1,d_2,d_3,d_4)=(0,0,0,1,1).
+\]
+For $j\ge13$ and $q=2$ the two possibilities $s=3,4$ give three.
+For $q\ge3$, the bound
+$q-v_5(q!)\ge(3q+1)/4$ gives at least three.
+When $m\ge8$, the first possible error index is at least fourteen.
+This proves (I6).
+\end{proof}
+
+\begin{lemma}[Exact first residuals]\label{lem:quintic-index-residuals}
+The following are coefficientwise identities in the indicated
+restricted power-series rings:
+\[
+ \begin{split}
+ Q(M,w)&\equiv1-2w+2w^2\pmod5,\\
+ Q(M,2)&\equiv25(M-1)^2\pmod{125},\\
+ Q(M,9)&\equiv25(2M^2-M-2)\pmod{125}.
+ \end{split}\tag{I7}
+\]
+In particular $Q(M,2)$ and $Q(M,9)$ are divisible by $25$.
+For $c=2,9$ define
+\[
+ F_c(M,Y)=\frac{Q(M,c+25Y)}{25},\qquad
+ G_c(M,Y)=\frac{Q(M+1,c+25Y)-Q(M,c+25Y)}{25}.                       \tag{I8}
+\]
+These belong to $\ZZ_5\langle M,Y\rangle$.  Their reductions are
+\[
+ \begin{array}{c|cc}
+ c&\overline F_c&\overline G_c\\\hline
+ 2&(M-1)^2+Y&2M-1\\
+ 9&2M^2-M-2-Y&1-M .
+ \end{array}                                                      \tag{I9}
+\]
+\end{lemma}
+\begin{proof}
+Lemma~\ref{lem:quintic-cancelled-tate} gives $e_j\ge3$ for $j\ge13$.
+Expand the unit denominators in (I2) and use only $0\le j\le12$.
+The following complete table gives $b_j(M)c^j$ modulo $125$:
+\[
+\begin{array}{c|l|l}
+ j&c=2&c=9\\\hline
+0&1&1\\
+1&-50M^2-55M+1&25M^2-60M-58\\
+2&-52&-53\\
+3&-50M^2+40M-5&-25M^2+20M+60\\
+4&25M^2-45M+35&25M^2+55M-15\\
+5&35M^2+5M+45&-5M^2+35M-60\\
+6&-50M^3-40M^2+35M-50&50M^3-10M^2+40M+50\\
+7&-45M^2-5M+25&-35M^2+10M-50\\
+8&25M^3+50M^2+50M&25M^3+50M^2+50M\\
+9&50M^3-50M^2+50M-50&-25M^3+25M^2-25M+25\\
+10&50M^4-50&50-50M^4\\
+11&50M^4+50M^3+50M^2+50M&25M^4+25M^3+25M^2+25M\\
+12&25M^4+50M^3-25M^2-50M&25M^4+50M^3-25M^2-50M
+\end{array}
+\]
+Each entry follows directly from
+$(5M-r)^{-1}\equiv-\sum_{a=0}^2(5M)^a/r^{a+1}\pmod{125}$.
+Summing the columns gives (I7) coefficientwise, not merely at
+integral test points. The retained symbolic verifier checks all
+twenty-six literal entries and both shifted differences in $M$.
+The first equation in (I7) has simple roots $w=2,4$ modulo five.
+The other two equations imply the divisibility in (I8);
+substitution of $c+25Y$ adds
+$Y Q_w(M,c)$ modulo five after division.
+At $c=2$ this derivative is $1$, and at $c=9$ it is $-1$.
+Taking the difference between $M+1$ and $M$ gives (I9).
+\end{proof}
+
+\begin{theorem}[A precise index-interpolation obstruction]\label{thm:quintic-five-adic-index-obstruction}
+There are exactly two pairs
+\[
+ (\alpha_2,\omega_2),\quad(\alpha_9,\omega_9)
+              \in\ZZ_5\times\ZZ_5^\times
+\]
+with
+\[
+                    Q(\alpha,w)=Q(\alpha+1,w)=0.                  \tag{I10}
+\]
+They are characterized uniquely by
+\[
+ \begin{split}
+ (\alpha_2,(\omega_2-2)/25)&\equiv(3,1)\pmod5,\\
+ (\alpha_9,(\omega_9-9)/25)&\equiv(1,4)\pmod5 .
+ \end{split}                                                      \tag{I11}
+\]
+Equivalently $(\alpha_2,\omega_2)\equiv(3,27)$ modulo $(5,125)$
+and $(\alpha_9,\omega_9)\equiv(1,109)$ modulo $(5,125)$.
+Thus a blanket noncollision theorem for all integral five-adic
+indices of the natural family (I3) is false.
+\end{theorem}
+\begin{proof}
+Apply Lemma~\ref{lem:quintic-index-residuals}.
+Every unit root of $Q(M,w)$ reduces to $2$ or $4$ modulo five,
+and its simple root lifts modulo twenty-five to $2$ or $9$,
+respectively, by (I7).  Hence any solution of (I10) belongs to
+one of the coordinates (I8).
+In the first row of (I9), the only common zero over the residue
+field is $(M,Y)=(3,1)$; in the second row it is $(1,4)$.
+The Jacobian matrices with columns $(M,Y)$ at those points are
+\[
+ \begin{pmatrix}4&1\\2&0\end{pmatrix},
+ \qquad
+ \begin{pmatrix}3&-1\\-1&0\end{pmatrix}\quad\bmod5 ,
+\]
+with determinants $-2$ and $-1$.
+At each successive precision, the two correction digits are
+therefore determined by an invertible linear system over $\mathbb F_5$.
+Completeness gives one lift in each residue disk and the same
+linear argument gives uniqueness.  There are no other residual
+solutions.
+\end{proof}
+
+\begin{corollary}[All-index necessary exponential closeness on this circle]\label{cor:quintic-integer-index-closeness}
+Let $m\ge8$ be an ordinary integer.  Suppose
+$\widehat M_m(u)=\widehat M_{m+1}(u)=0$ at $v_5(u)=1$,
+and put $w=u/5$.  Then for exactly one branch $c=2$ or $9$,
+with the notation above,
+\[
+ \begin{split}
+ v_5(m-\alpha_c)&\ge L_m-2,\\
+ v_5(w-\omega_c)&\ge L_m,\\
+ v_5(u-5\omega_c)&\ge L_m+1 .
+ \end{split}                                                       \tag{I12}
+\]
+In particular the only possible residue classes are
+$m\equiv3\pmod5$ on the branch $w\equiv27\pmod{125}$,
+and $m\equiv1\pmod5$ on the branch $w\equiv109\pmod{125}$.
+\end{corollary}
+\begin{proof}
+Lemma~\ref{lem:quintic-cancelled-tate}, also at $m+1$, gives
+$v_5(Q(m,w)),v_5(Q(m+1,w))\ge L_m$.
+The residual calculation (I7) first places $w$ in
+$c+25\OO$ for one of the two branches.
+Set $Y=(w-c)/25$.
+Then both entries of $(F_c(m,Y),G_c(m,Y))$ have
+valuation at least $L_m-2\ge1$, so (I9) places $(m,Y)$
+in the residue disk of its unique exact root from
+Theorem~\ref{thm:quintic-five-adic-index-obstruction}.
+
+For an integral restricted analytic map with Jacobian invertible
+modulo five on one residue disk, Taylor expansion gives
+\[
+ \min_i v_5(\Phi_i(x)-\Phi_i(x_*))
+       =\min_i v_5(x_i-x_{*,i}).
+\]
+Indeed the linear term is multiplication by an invertible
+integral matrix, which preserves the minimum valuation, and
+every higher term has strictly larger valuation because
+$x-x_*$ has positive valuation.
+Apply this to $\Phi=(F_c,G_c)$ and its exact root.
+It gives both coordinate bounds at least $L_m-2$.
+Rescaling $w=c+25Y$ and $u=5w$ proves (I12).
+This argument remains valid in any complete algebraic extension
+containing the putative root.
+\end{proof}
+
+\paragraph{Scope boundary.}
+The family $Q$ is not the actual finite moment polynomial for
+all integral or ordinary indices: its coefficients can resume
+after the zero interval (I5).  The tail is small at any fixed
+precision when $m$ is sufficiently large, but is not identically
+zero.  Consequently (I10) does not identify an ordinary integer
+counterexample, or even a common zero of two actual finite
+polynomials at an integer index.
+The bounds (I12) do not imply all-integer exclusion: no
+Diophantine lower bound on $|m-\alpha_c|_5$, algebraicity or
+non-Liouville property of $\alpha_c$ has been proved.
+Valuations $v_5(u)\ne1$ in the already-confined inner region
+$v_5(u)>3/5$ are outside this result.
+No all-terminal quintic SFC, independent replay, external review,
+formal verification, or novelty claim is made.
+
+
+\section{A literal obstruction to forgetting the descendant seeds}
+\begin{proposition}[Constant-unit seeds do not preserve mixed-pair noncollision]
+\label{prop:quintic-seed-blind-obstruction}
+The following stronger assertion is false: for every constant-unit
+seed $h$ and every closed-class potential $F$, the generalized
+ordinary quintic mixed pair has rank two at every nonzero argument
+in the inner region.
+In fact take $F=z$, $X=z-\theta_z$, $m=2$, and
+\[
+ \begin{split}
+ d_0&=1349729058338,\\
+ h(z)&=\frac{d_0+270777950790z-19101814440z^2
+                         -542394950285z^3}{d_0}.
+ \end{split}
+\]
+Then $h\in1+5\ZZ_5[z]$.  Define
+\[
+ B=(X+10)(X+7)h,\quad C=(X+13)B,\quad
+ D=(X+16)C,\quad H=70D+3z^3B.
+\]
+At $u=z^3=10$, the two three-section rows of $(C,H)$ have
+rank exactly one.
+\end{proposition}
+\begin{proof}
+The denominator $d_0$ is a five-adic unit and each displayed
+nonconstant numerator coefficient is divisible by five.
+Direct integer polynomial multiplication gives
+\[
+ d_0(H-40C)=(z^3-10)R(z),
+\]
+where
+\[
+ \begin{aligned}
+ R(z)={}&-132651371853458640\\
+        &-62036179766657136z-11633463676444856z^2\\
+        &-1088171938849410z^3-54296800471820z^4\\
+        &-1627184850855z^5 .
+ \end{aligned}
+\]
+Thus the two rows are proportional in
+$\QQ_5[z]/(z^3-10)$.
+The three sections of $d_0C$ evaluated at $u=10$ are
+\[
+ (-296770817069940,\ -112236517464324,\ -13462409209854),
+\]
+so the first row is nonzero and the rank is exactly one.
+Since $v_5(10)=1>3/5$, this example lies in the inner region.
+\end{proof}
+This is a counterexample to a proposed stronger seed-blind invariant,
+not an ordinary factorial-moment counterexample: its seed is
+$h\ne1$.  The exact relationships among the descendant seeds in
+the block transfer cannot be replaced by their constant-unit
+reductions alone.
+
+\section*{Verification scope}
+The accompanying \href{quintic_five_adic_descent.py}{exact checker}
+and \href{quintic_five_adic_descent_verification.json}{matching receipt}
+check the complete finite offset transitions, exact polynomial
+factorizations and symbolic residual identities, literal factorial
+coefficients, seed and potential controls, rejection controls,
+and Hensel correction digits.
+The proofs above supply the stated unbounded quantifiers.
+The finite controls alone do not prove those quantifiers.
+No independent replay, external review, formal verification or
+novelty assertion is made.
+\end{document}

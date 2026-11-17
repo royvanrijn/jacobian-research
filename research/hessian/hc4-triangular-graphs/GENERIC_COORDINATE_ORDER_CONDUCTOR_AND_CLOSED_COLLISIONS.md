@@ -14,9 +14,10 @@ The ZERO SET of this conductor is exactly the locus of source points
 having a DISTINCT source mate with the SAME (P,Q,y). This includes
 special closed points. If K is noninvertible, every parallel source line
 y=c meets this locus, but no such line is an entire component of it.
-Thus its defining polynomial is nonzero and nonconstant on EVERY such
-line. These are necessary actual-source restrictions, not a proof of
-automatic trace integrality or JC2.
+Its defining polynomial has positive EVEN degree on EVERY such line,
+with an explicit norm-square certificate. The lowest degree two gives
+exactly a sheared nodal-curve product. Automatic trace integrality
+and JC2 remain open.
 
 ## 1. One generic source coordinate recovers the raw source over S
 
@@ -203,7 +204,83 @@ components, with a conductor fibre missing from the pencil, or with
 only a nonzero constant restriction on one source line.
 They do not classify every allowed conductor or prove its absence.
 
-## 6. Unramified normalization controls with arbitrarily thick conductor
+## 6. Index squares and even conductor degree on EVERY source line
+
+Let C(U,T) be the M-by-M inclusion matrix of the D-basis
+1,Q,...,Q^(M-1) of A into the D-basis 1,x,...,x^(M-1) of R.
+Its columns are computed by reducing Q^j modulo the MONIC polynomial
+P(X,T)-U. Put Delta(U,T)=det(C), which is nonzero because both bases
+span the same generic field.
+
+The two trace Gram matrices satisfy G_A=C^t*G_R*C. The monogenic
+discriminant identities therefore give
+
+    Norm_(L/C(P,y))(F_V/P_x)=Delta(P,y)^2,
+    Norm_(L/C(P,y))(kappa)=(-1)^M*Delta(P,y)^2.                (12)
+
+This is an EXACT polynomial square certificate over D, with a supplied
+finite matrix defining its square root. It concerns the finite
+coordinate order A over D, not the target trace defect Lambda/S.
+
+It specializes at EVERY y=c, not merely at generic c. Section5's
+finite polynomial-immersion argument makes Q(x,c) primitive over
+C(P(x,c)). Hence Delta(U,c) is nonzero. Thus the specialized basis
+inclusion is injective and identifies A/(y-c) with C[P_c,Q_c] inside
+C[x]. No unsupported general commutation of normalization with
+specialization is used: monicity and the line-specific field degree
+prove this specialization directly.
+
+Over the PID C[U], Smith normal form gives
+
+    delta(c)=dim_C(C[x]/C[P_c,Q_c])=deg_U Delta(U,c).
+
+Here the quotient is a VECTOR-SPACE quotient of the two rings. It is
+finite-dimensional. For any nonzero polynomial r(x), the norm from
+C(x) to C(P_c) has U-degree deg_x r: it is the resultant
+Res_X(P_c(X)-U,r(X)), and reversing the resultant expresses it as a
+product of the deg_x r factors P_c(alpha)-U, counted with multiplicity.
+Applying this to kappa(x,c) in(12) proves
+
+    deg_x kappa(x,c)=2*delta(c) for EVERY c in C.               (13)
+
+In particular this degree is EVEN on EVERY source line. Under
+noninvertibility it is at least TWO. Every degree drop at a special
+parameter is even. This excludes, for example, an odd generic
+conductor degree, any odd special-fibre degree, or a degree drop to one.
+It does not require simple double collisions or a radical conductor;
+higher tangencies and multiple coincident sheets retain the square.
+
+### The exact lowest positive-degree form
+
+Suppose K is noninvertible and deg_x kappa=2 globally. Write
+kappa=a(y)x^2+b(y)x+c(y). By(13), no special fibre can have degree less
+than two, so a(y) is a nonzero CONSTANT. By(7), every zero of a fibre
+has a distinct mate in that same fibre. A quadratic cannot therefore
+have just one distinct root. Its discriminant b(y)^2-4*a*c(y) never
+vanishes, so it too is a nonzero CONSTANT.
+
+After a polynomial shear and constant scale u=(x-h(y))/s, s!=0, one gets
+
+    kappa*R=(u^2-1)*R,
+    P(1,y)=P(-1,y), Q(1,y)=Q(-1,y).
+
+The conductor and its full closed collision description identify the
+ENTIRE raw coordinate order:
+
+    A={r in C[u,y]:r(1,y)=r(-1,y)}
+     =C[y,p=u^2-1,q=u*(u^2-1)],
+    q^2=p^2*(p+1).                                          (14)
+
+Indeed A contains y and its conductor (u^2-1)R. Modulo that conductor,
+its functions have the same values at the two branches, and all
+diagonal values C[y] already belong to A. This proves equality,
+not just inclusion into a pinching order.
+
+Thus the lowest positive conductor degree reduces to an explicit
+nodal-curve product. Excluding an actual Keller target pair inside
+this order would need another argument; no such exclusion is asserted.
+
+## 7. Unramified normalization controls with arbitrarily thick conductor
 
 For every integer k>=1 take source R_0=C[t,y] and
 
@@ -244,13 +321,59 @@ Polynomial automorphism controls P=H^m+y, Q=-H, H=x+h(y), m>=2,
 have Jac=1 and monic relation F=V^m+(-1)^m*(T-U).
 Their conductor F_T is a unit, as required.
 
-## 7. What remains for trace integrality
+### Higher multiple points and persistent generic collinearity
+
+The controls extend to ANY monic squarefree f(t) of degree M>=2:
+
+    P=f(t), Q=t*f(t)^k+y, A=C[P,Q,y], k>=1.
+
+Then R=C[t,y] is the finite birational normalization of A.
+The derivatives f'(t) and d(t*f(t)^k)/dt have no common zero, so this
+normalization is unramified. The defining polynomial is
+
+    F(U,V,T)=U^(kM)*(f((V-T)/U^k)-U),
+
+expanded as a polynomial, monic in V. Its exact conductor and index are
+
+    (A:R)=f(t)^(k(M-1))*R,
+    Delta(U,T)=U^(kM(M-1)/2).                                (15)
+
+The conductor follows either from the trace-dual ratio F_V/P_t or
+directly from the basis change Q^j=(t*U^k+y)^j, j<M.
+Its norm is the square Delta^2. The finite conductor degree is
+k*M*(M-1), including odd numbers of branches M>=3.
+
+For example f=t^3-t and k=1 give F=(V-T)^3-(V-T)U^2-U^4,
+Delta=U^3 and conductor f(t)^2. The three source points t=-1,0,1
+are identified on each y-line, with conductor order two at each branch.
+
+For target values (U,V), every generic source fibre lies on the line
+
+    y=V-U^k*t.
+
+Thus triple-collinearity is IDENTICAL when M>=3, although the direction
+of that line varies with the target. It is not excluded by nonconstancy
+of the source-difference direction map. After a generic constant source
+shear ell=y+alpha*t, the conductor is
+(f(t)^k-alpha)^(M-1) and the same persistent multiple collisions remain.
+The finitely many alpha at which f'(t) and f(t)^k-alpha have a common
+zero are omitted from that unramified control.
+
+The plane target map has Jacobian f'(t), which is nonconstant. These
+controls therefore do not refute a future argument exploiting the
+actual Keller condition to exclude persistent collinearity. They do
+block inferring generic reduced conductor from finite unramified
+normalization or from a nonconstant difference-direction map alone.
+
+## 8. What remains for trace integrality
 
 The full finite normalization S, its finite trace dual Lambda, and the
 nonnormal coordinate order A=B[y] remain different rings/modules.
 Formula(6) gives a new exact actual-source constraint on A and its
-entire closed collision locus. It does not make the generic velocities
-P_x,Q_x integral over B, or make Tr(Lambda*Lambda) regular.
+entire closed collision locus. The exact index square forces even
+conductor degree on every source line and classifies its degree-two
+boundary. Target integrality of P_x,Q_x and regularity of
+Tr(Lambda*Lambda) remain unproved.
 
 The finite trace-dual and conductor proofs above are algebraic.
 The line-fibre restriction uses the attributed one-line theorem.

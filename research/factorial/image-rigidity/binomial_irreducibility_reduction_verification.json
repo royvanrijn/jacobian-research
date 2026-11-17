@@ -1,0 +1,78 @@
+{
+  "kind": "internal bounded exact replay; universal proofs are the TeX source",
+  "scope": {
+    "consecutive_nondivisibility": "all integers a>=0,d>=1,n>=1 and real beta>0",
+    "generic_shape_irreducibility": "over Q(b), b an indeterminate; all a,d,n in stated integer domains",
+    "transcendental_shape_coprimality": "all complex beta transcendental over Q and all orders",
+    "ordinary_factor_degrees": "n=b*p^r with (a*b mod p)+d*b<p; all factor degrees divisible by p^r",
+    "ordinary_primepower_irreducibility": "b=1 in the no-carry theorem",
+    "ordinary_adjacent_parts": "both consecutive orders admit the stated no-carry representations",
+    "all_ordinary_orders_irreducible": false,
+    "all_ordinary_binomial_sfc": false,
+    "bounded_controls_are_not_an_all_index_factorization_proof": true
+  },
+  "controls": {
+    "rising_shift_identity_cases": 25,
+    "convex_second_derivative_cases": 25,
+    "nondivisibility_numerator_identity_cases": 25,
+    "quintic_symbolic_factor_identity": true,
+    "literal_positive_rational_shape_cases": 288,
+    "literal_consecutive_gcd_controls": 160,
+    "positive_algebraic_shape_reducibility_control": true,
+    "quintic_first_pair_control": true,
+    "generic_eisenstein_cases": 80,
+    "nonleading_coefficient_divisibility_controls": 240,
+    "no_carry_factor_degree_cases": 135,
+    "prime_power_order_cases": 77,
+    "literal_coefficient_valuation_controls": 6492,
+    "strict_interior_chord_controls": 6111,
+    "on_chord_coefficient_controls": 381,
+    "largest_checked_order": 343,
+    "large_lower_exponent_cases": [
+      {
+        "a": 100,
+        "d": 3,
+        "p": 7,
+        "r": 1,
+        "cofactor": 1
+      },
+      {
+        "a": 100,
+        "d": 3,
+        "p": 7,
+        "r": 2,
+        "cofactor": 1
+      },
+      {
+        "a": 37,
+        "d": 1,
+        "p": 3,
+        "r": 2,
+        "cofactor": 1
+      }
+    ],
+    "no_carry_hypothesis_failure_control": {
+      "a": 2,
+      "d": 3,
+      "p": 5,
+      "order": 5,
+      "actual_endpoint_valuation": 4,
+      "unjustified_formula": 3
+    },
+    "adjacent_nonprimepower_orders_control": [
+      145,
+      146
+    ]
+  },
+  "python": "3.12.3",
+  "sympy": "1.14.0",
+  "source_sha256": {
+    "BINOMIAL_IRREDUCIBILITY_REDUCTION.tex": "afce9d0417d60bc9db6da2925cc1b791ad35a734639727acb9dad4c867a328ac",
+    "binomial_irreducibility_reduction.py": "512e8eccdb786bf415929f6d67588a8167182a139f88850066970c5198cf7f07"
+  },
+  "independent_replay": false,
+  "formal_verification": false,
+  "external_review": false,
+  "passed": true,
+  "command": "python research/factorial/image-rigidity/binomial_irreducibility_reduction.py"
+}

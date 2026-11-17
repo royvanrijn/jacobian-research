@@ -31,6 +31,6 @@ Tracked obligations (computed states):
 - **mathematical / open:** [Canonical atomic or degree-controlled coupling and the specified existential bundle-freeness questions remain open; a natural automorphism-invariant fixed frame is obstructed.](README.md) — GAP-CANONICAL-ATOMIC-COUPLING
 - **mathematical / open:** [Complete-type ruling descent and existence of a genuine proper intermediate remain open.](README.md) — GAP-JACOBIAN-3
 - **mathematical / open:** [Determine whether characteristic-zero Keller failures exist in dimension two (dimension-three examples are retained), and sharpen the separate cubic dimension and support upper bounds.](README.md) — GAP-JACOBIAN-4
-- **mathematical / open:** [The entire ruling-six class, other cyclic or trivial-deck images, global normal-form coverage, full-normalization derivative integrality and all-order termination remain open.](README.md) — GAP-RULING-SIX
+- **mathematical / open:** [Exclude remaining A faces after P=H3^2+R2 with the full regular cubic approximate root and ruling<=2 remainder; target landing, central quadratic residue and trace integrality remain open.](affine-complements/RULING_SIX_REGULAR_CUBIC_APPROXIMATE_ROOT_AND_QUADRATIC_REMAINDER.md) — GAP-RULING-SIX
 
 [Exact scopes and verification limits](../STATUS.md). Publication, formal verification and independent review are separate statuses. [Dependency routes](../DEPENDENCIES.md) and [scope audit](../SCOPES.md) expose remaining gaps.

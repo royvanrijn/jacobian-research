@@ -103,6 +103,63 @@
     "finite_tests_prove_unbounded_scope": false,
     "all_real_positive_Gamma_shapes_claimed": false
   },
+  "quintic_five_adic_common_pair_radius": {
+    "complete_annulus_numerator_cases": 15,
+    "vanishing_residue_sections": 15,
+    "complete_further_flag_numerator_cases": 2,
+    "corrupted_further_flag_identity_rejected": true,
+    "physical_bessel_congruence_cases": 26,
+    "literal_further_flag_coefficient_cases": 20,
+    "complete_unit_argument_cyclic_ideal_cases": 5,
+    "uniform_claim": "outer argument excludes v5(u)<3/5",
+    "finite_tests_prove_unbounded_scope": false,
+    "boundary_exclusion_in_separate_profile_certificate": true,
+    "all_terminal_quintic_SFC": false
+  },
+  "quintic_boundary_profiles": {
+    "complete_profiles": 25,
+    "literal_Bezout_identities": 25,
+    "independent_actual_auxiliary_profiles": 25,
+    "factorial_block_reduction_cases": 1165,
+    "corrupted_Bezout_control_rejected": true,
+    "boundary_excluded": true,
+    "strict_uniform_common_pair_radius": "v5(u)>3/5",
+    "finite_reduction_exhausts_all_m": true,
+    "finite_prefix_extrapolation": false,
+    "all_terminal_quintic_SFC": false,
+    "certificate": "arithmetic_frontier_quintic_boundary_profiles.json"
+  },
+  "quintic_five_adic_inner_endpoint": {
+    "scope": "all n>=8, actual consecutive quintic moments, v5(u)=1",
+    "coefficient_table_identities": 13,
+    "root_disk_evaluation_and_difference_identities": 4,
+    "simple_residual_roots": 2,
+    "tail_bound_exception_indices": 5,
+    "tail_bound_all_j_ge18": "(3j-11)/20>2",
+    "literal_factorial_coefficient_cases": 325,
+    "finite_degree_threshold_cases": 17,
+    "complete_precision_three_unit_cases": 2500,
+    "necessary_disks": [
+      {
+        "u_over_5_mod25": 2,
+        "n_mod5": 3
+      },
+      {
+        "u_over_5_mod25": 9,
+        "n_mod5": 1
+      }
+    ],
+    "excluded_index_classes_mod5": [
+      0,
+      2,
+      4
+    ],
+    "false_infinite_interpolation_control_rejected": true,
+    "corrupted_coefficient_table_rejected": true,
+    "other_inner_valuations_resolved": false,
+    "all_terminal_quintic_SFC": false,
+    "finite_tests_prove_unbounded_scope": false
+  },
   "unshifted_resultant_hurwitz_counterexample": {
     "terminal_N": 8,
     "gap": 5,
@@ -146,8 +203,8 @@
   "formal_verification": false,
   "priority_claim": false,
   "input_sha256": {
-    "ARITHMETIC_FRONTIER_TERMINAL_ORDERS.tex": "7eaedb0f2f96fef505b7045d71c2f2a8ffb972d9a807272e5ac9defc62d22351",
-    "arithmetic_frontier_terminal_orders.py": "7fa198762655af61c5bbf9ffbbcc1bed842aa9c4108b0f79d0ab436ebb10655d",
+    "ARITHMETIC_FRONTIER_TERMINAL_ORDERS.tex": "9721978bcb795af9169c695c5fb8348974069c5148e5e0caa8bd3c4d65650e07",
+    "arithmetic_frontier_terminal_orders.py": "f943d68e70663eea763900ca6c942154f3a3c7cf4e3abb9e950238d71009d3cd",
     "prime_power_windows.py": "8f7ae47d1bf7d3d2c955c2d2868bfbf515b316f462a2a6ba7bef6b2faa24d752",
     "PRIME_POWER_TWO_TERM_SFC.tex": "0e94e91d7b60905e9ef4d1c42234b6ef5f5307cac7899d77b7c5ce6714243228",
     "HIGHER_GAP_ADJOINT_RANK.tex": "ec19415938c9b0b92e7d365fb4a4c66b701fdf36d73883b68f7cfb2971d7ec28",
@@ -157,6 +214,8 @@
     "ALL_UNIVARIATE_TWO_TERM_SFC.tex": "112d995972906353784af4f9ceb2b03eb7e71ce3e7bd52adc5a44c6869aeadc0",
     "UNIFORM_PADE_PARABOLA_SFC.tex": "ddb8155dcce6308db9d7fdcbc971898b9725e9ac23c83362d6c45a63f4177cc5",
     "CUBIC_ADJOINT_STABILITY_SFC.tex": "ea2510e511545b9dd7a49a0796d75c45575687e60770c3359d38c5bc99cb4125",
-    "DYADIC_BINOMIAL_SFC.tex": "9d4a5a3084c3a2d9956c83c444e216f528efa523d21006e20a0da00bf4011f61"
+    "DYADIC_BINOMIAL_SFC.tex": "9d4a5a3084c3a2d9956c83c444e216f528efa523d21006e20a0da00bf4011f61",
+    "lower_exponent_initial_and_boundary.tex": "e66e02d0354de5cd92d33eef54efea15c387b9f6a0c1b62ed379295e13f07d45",
+    "arithmetic_frontier_quintic_boundary_profiles.json": "6b30c55de2c9df70885e77a8137e33b35b173c30b226f7b6f3233c8d8f93b838"
   }
 }

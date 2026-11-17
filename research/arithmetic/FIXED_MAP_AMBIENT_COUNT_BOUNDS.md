@@ -108,7 +108,7 @@ More precisely the lower limits satisfy
 \[
  \liminf_{B\to\infty}\frac{A(B)\log B}{B^2}\ge C_\Phi,
  \qquad
- G(B)\ge\frac4{\zeta(3)}B^3+O(B^2).                   \tag{5}
+ G(B)\ge\frac8{\zeta(3)}B^3+O(B^2).                   \tag{5}
 \]
 
 The total number of rational targets in `A^3` at this height is
@@ -136,8 +136,11 @@ For rationally soluble targets, use the fixed map itself:
 has degree five by the fixed-map construction. The same theorem gives
 `G(B)<<B^3`, and hence `L(B)<<B^3` by the exact partition.
 
-Every rational target in the plane `u=0` has a rational source point, by
-FMA1. Its primitive projective representatives are `[q:0:m:n]` with
+Every rational target in either plane `u=0` or `c=0` has a rational source
+point, by [Proposition PS1](FIXED_MAP_PLANE_SECTIONS.md). On `c=0`, for
+example, the source point is
+`(0,b-40u/9,-u-(3/2)(b-40u/9)^2)`. The primitive projective
+representatives of either plane are `[q:m:n]` with
 `1<=q<=B`, `|m|,|n|<=B`, and `gcd(q,m,n)=1`. Mobius inversion gives
 
 \[
@@ -148,7 +151,13 @@ FMA1. Its primitive projective representatives are `[q:0:m:n]` with
 
 Indeed the main term uses the absolutely convergent sum `sum mu(d)/d^3`;
 the floor errors sum to `O(B^2 sum d^-2)`, and the completed main-term
-tail costs `O(B)`. This proves the lower bound for `G`, and hence `L`.
+tail costs `O(B)`. The two planes meet in a line with `O(B^2)` rational
+targets. Their union therefore gives the doubled coefficient in (5) for
+`G`, and hence `L`. [Theorem PS2](FIXED_MAP_PLANE_SECTIONS.md) further
+classifies these as the only rational affine planes with a generic
+rational section; every other fixed plane contributes `O_P(B^2)` globally
+soluble targets. This fixed-plane statement does not justify summing over
+all planes to obtain an ambient leading constant.
 The original-line Hasse count supplies (5) for `A` in exactly the same
 height. Repeating the primitive count with three signed numerator
 coordinates gives `8B^4/zeta(4)+O(B^3)`, proving the density statements.

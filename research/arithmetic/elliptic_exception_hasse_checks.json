@@ -1,0 +1,242 @@
+{
+  "status": "passed",
+  "scope": "Standard-library exact verification of one explicit target, integral cubic, irreducibility, discriminant factors and all required local witnesses; general reconstruction and local-cover theorems remain written inputs.",
+  "python": "3.12.3",
+  "checker_sha256": "ca4b5d7ac5c39865c6415ff420dbafafaa891f9e7097352f4d10d26bdc157a33",
+  "source_sha256": "37b4f5986ff142a4244ce27cb0d7e76281a5236f6f88099bd84bda2b2ee006d7",
+  "certificate_sha256": "2d7b357d58428c5be3b605f27ee949754e8b13061652bb6dc64f6085d46ff53a",
+  "check_count": 53,
+  "checks": [
+    {
+      "name": "original_cubic_coefficients",
+      "passed": true
+    },
+    {
+      "name": "exact_target_coordinates",
+      "passed": true
+    },
+    {
+      "name": "whole_inverse_factorization",
+      "passed": true
+    },
+    {
+      "name": "quadratic_discriminant_squareclass",
+      "passed": true
+    },
+    {
+      "name": "cubic_discriminant_squareclass",
+      "passed": true
+    },
+    {
+      "name": "quadratic_irreducible_over_Q",
+      "passed": true
+    },
+    {
+      "name": "nonzero_factor_discriminants",
+      "passed": true
+    },
+    {
+      "name": "factors_coprime",
+      "passed": true
+    },
+    {
+      "name": "quadratic_field_differs_from_minus_three",
+      "passed": true
+    },
+    {
+      "name": "integer_scale_is_exact_LCM",
+      "passed": true
+    },
+    {
+      "name": "scaled_cubic_is_monic_integral",
+      "passed": true
+    },
+    {
+      "name": "exact_integral_cubic",
+      "passed": true
+    },
+    {
+      "name": "discriminant_scaling",
+      "passed": true
+    },
+    {
+      "name": "distinct_discriminant_factors",
+      "passed": true
+    },
+    {
+      "name": "all_discriminant_factors_prime",
+      "passed": true
+    },
+    {
+      "name": "entire_discriminant_factorization",
+      "passed": true
+    },
+    {
+      "name": "irreducibility_prime_is_prime",
+      "passed": true
+    },
+    {
+      "name": "irreducible_cubic_mod_prime",
+      "passed": true,
+      "prime": 17,
+      "residues_checked": 17
+    },
+    {
+      "name": "quadratic_Hensel_prime_7",
+      "passed": true
+    },
+    {
+      "name": "quadratic_Hensel_prime_13",
+      "passed": true
+    },
+    {
+      "name": "quadratic_Hensel_prime_1321",
+      "passed": true
+    },
+    {
+      "name": "quadratic_Hensel_prime_9601",
+      "passed": true
+    },
+    {
+      "name": "quadratic_Hensel_prime_230703199",
+      "passed": true
+    },
+    {
+      "name": "nonzero_witness_value",
+      "passed": true
+    },
+    {
+      "name": "nonzero_witness_value",
+      "passed": true
+    },
+    {
+      "name": "cubic_strict_Hensel_prime_2",
+      "passed": true,
+      "polynomial_valuation": 47,
+      "derivative_valuation": 21
+    },
+    {
+      "name": "nonzero_witness_value",
+      "passed": true
+    },
+    {
+      "name": "nonzero_witness_value",
+      "passed": true
+    },
+    {
+      "name": "cubic_strict_Hensel_prime_3",
+      "passed": true,
+      "polynomial_valuation": 5,
+      "derivative_valuation": 2
+    },
+    {
+      "name": "nonzero_witness_value",
+      "passed": true
+    },
+    {
+      "name": "nonzero_witness_value",
+      "passed": true
+    },
+    {
+      "name": "cubic_strict_Hensel_prime_5",
+      "passed": true,
+      "polynomial_valuation": 12,
+      "derivative_valuation": 5
+    },
+    {
+      "name": "nonzero_witness_value",
+      "passed": true
+    },
+    {
+      "name": "nonzero_witness_value",
+      "passed": true
+    },
+    {
+      "name": "cubic_strict_Hensel_prime_353",
+      "passed": true,
+      "polynomial_valuation": 1,
+      "derivative_valuation": 0
+    },
+    {
+      "name": "nonzero_witness_value",
+      "passed": true
+    },
+    {
+      "name": "nonzero_witness_value",
+      "passed": true
+    },
+    {
+      "name": "cubic_strict_Hensel_prime_2591",
+      "passed": true,
+      "polynomial_valuation": 1,
+      "derivative_valuation": 0
+    },
+    {
+      "name": "nonzero_witness_value",
+      "passed": true
+    },
+    {
+      "name": "nonzero_witness_value",
+      "passed": true
+    },
+    {
+      "name": "cubic_strict_Hensel_prime_2709173",
+      "passed": true,
+      "polynomial_valuation": 1,
+      "derivative_valuation": 0
+    },
+    {
+      "name": "all_discriminant_primes_have_local_witnesses",
+      "passed": true
+    },
+    {
+      "name": "witness_categories_disjoint",
+      "passed": true
+    },
+    {
+      "name": "S3_unramified_cover_(0, 1, 2)",
+      "passed": true
+    },
+    {
+      "name": "S3_unramified_cover_(0, 2, 1)",
+      "passed": true
+    },
+    {
+      "name": "S3_unramified_cover_(1, 0, 2)",
+      "passed": true
+    },
+    {
+      "name": "S3_unramified_cover_(1, 2, 0)",
+      "passed": true
+    },
+    {
+      "name": "S3_unramified_cover_(2, 0, 1)",
+      "passed": true
+    },
+    {
+      "name": "S3_unramified_cover_(2, 1, 0)",
+      "passed": true
+    },
+    {
+      "name": "elliptic_normalization_exact_point",
+      "passed": true
+    },
+    {
+      "name": "short_Weierstrass_exact_point",
+      "passed": true
+    },
+    {
+      "name": "outside_two_counted_lines",
+      "passed": true
+    },
+    {
+      "name": "not_an_integral_target",
+      "passed": true
+    }
+  ],
+  "discriminant_prime_count": 11,
+  "elliptic_point": {
+    "X": "-154033449952/92179201",
+    "T": "-124884745613661600/885012508801"
+  }
+}

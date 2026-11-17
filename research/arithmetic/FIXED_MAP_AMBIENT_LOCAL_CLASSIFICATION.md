@@ -114,7 +114,7 @@ The final condition is a finite effective test. In particular, choose an integer
  H(T)=d^3h(T/d)\in\mathbb Z[T]
 \]
 
-is monic. It is enough to test primes dividing the nonzero integer `Disc(H)`. At each such prime `p`, put `v=v_p(Disc(H))`. The assertion that `H` has a `Q_p`-root is equivalent to the existence of a root modulo `p^(2v+1)`. Thus the criterion contains only rational polynomial factorization, rational-square testing, and finitely many finite congruence tests, although the displayed bound is not optimized.
+is monic. It is enough to test primes dividing the nonzero integer `Disc(H)`. At each such prime `p`, put `v=v_p(Disc(H))`. The assertion that `H` has a `Q_p`-root is equivalent to the existence of a root modulo `p^(floor(v/2)+1)`, by Lemma FMA3a below. Thus the criterion contains only rational polynomial factorization, rational-square testing, and finitely many finite congruence tests. The cubic discriminant exponent is optimal in general.
 
 More generally the fibre is everywhere locally soluble if and only if either it has a rational point or it satisfies the Hasse-failure criterion above. For `u=0` it always has a rational point. For `u!=0` it has a rational point exactly when `E_{-u,b,c}` has a **simple rational root**; a repeated rational root removed by (2) does not suffice.
 
@@ -122,9 +122,63 @@ More generally the fibre is everywhere locally soluble if and only if either it 
 
 For the finite prime set, `H` defines the same cubic field as `h`. At primes outside `Disc(H)` its three roots give an unramified étale algebra over `Z_p`; its splitting field is consequently unramified. Such decomposition groups are cyclic, and Theorem FMA2 makes the local condition automatic. Condition (5) also places the quadratic field inside that same splitting field. Extra primes dividing the index of `Z[T]/H` cause harmless extra tests.
 
-Here is the finite root bound. The integral resultant identity gives `U H+V H'=Disc(H)` up to sign, with `U,V in Z[T]`, because `H` is monic. If `H(x)=0 mod p^(2v+1)`, evaluation of this identity shows `v_p(H'(x))<=v`. The strict Hensel inequality `v_p(H(x))>2v_p(H'(x))` gives a `p`-adic root. Conversely a root of a monic integral polynomial is `p`-adically integral and reduces to a root modulo every power of `p`. The rational-point assertion is immediate from (2). ∎
+Lemma FMA3a supplies the sharper finite cubic test. A root of a monic integral polynomial is `p`-adically integral, so its reductions give the converse direction. The rational-point assertion is immediate from (2). ∎
 
 This is an arithmetic decision criterion for every rational target, not a parametrization of all targets and not a counting theorem. The condition that the fibre have a specified factorization and resolvent is essential; the generic quintic covering has symmetric monodromy.
+
+## 3a. Lemma FMA3a: optimal cubic discriminant root test
+
+Let `H in Z_p[T]` be monic, separable and cubic, and put
+`d=v_p(Disc(H))`. Then
+
+\[
+ H\text{ has a root in }\mathbb Q_p
+ \quad\Longleftrightarrow\quad
+ H\text{ has a root modulo }p^{\lfloor d/2\rfloor+1}.
+                                                        \tag{5a}
+\]
+
+The statement applies to every prime, including two and three. For
+`p!=3` its exponent cannot be decreased in general: the cubics
+`T^3-p^k`, with `k>0` not divisible by three, have `d=2k`, a root modulo
+`p^k`, and no `Q_p`-root.
+
+**Proof.** If there is a local root, monicity makes it integral and it
+reduces modulo every power of `p`. Suppose instead that there is no local
+root. A cubic with no root over a field is irreducible. In a finite Galois
+splitting field, extend `v_p` with its normalization `v_p(p)=1`; its value
+group need not be `Z`. Uniqueness of the extension makes it invariant
+under the Galois action. This exact valuation input is
+[Milne, *Algebraic Number Theory*, version 3.00, Theorem 7.38 and its proof,
+printed pp.116–117](https://www.jmilne.org/math/CourseNotes/ANT300.pdf),
+retained in [the source copy](sources/milne-ant300.pdf).
+
+For any `x in Z_p`, transitivity on the three roots `alpha_i` therefore
+makes all `v_p(x-alpha_i)` equal to a value `r`. Since `H` is monic,
+
+\[
+ v_p(H(x))=3r,
+ \qquad
+ v_p(\alpha_i-\alpha_j)\ge r.
+\]
+
+The second inequality is the nonarchimedean triangle inequality. Hence
+
+\[
+ d=2\sum_{i<j}v_p(\alpha_i-\alpha_j)
+       \ge6r=2v_p(H(x)).                              \tag{5b}
+\]
+
+An integer representative of a root modulo
+`p^(floor(d/2)+1)` contradicts (5b). Thus such a residue root forces a
+local root. For the sharpness family the discriminant is `-27p^(2k)`;
+a local root would have nonintegral valuation `k/3`, whereas the residue
+class zero is a root modulo `p^k`. This proves every assertion. ∎
+
+The older resultant/Hensel bound `p^(2d+1)` remains sufficient but is
+unnecessary here. The improvement uses the special fact that a cubic
+without a local root is irreducible. The same exponent is not asserted
+for arbitrary-degree polynomials.
 
 ## 4. Proposition FMA4: a second completely classified target line
 
@@ -282,15 +336,72 @@ By Proposition FMA4, a target in (9) has exactly two rational parameters, both i
 \]
 
 This proves (14). In particular no new Selberg–Delange limit theorem or uncomputed leading constant has been assumed. ∎
+
+## 6a. Theorem FMA7: unified fibre existence and Hasse rank spectrum
+
+Let `K` be a characteristic-zero field, and let `X` be a finite `K`-scheme.
+
+1. `X` occurs as an entire fibre over a `K`-rational target of a Jacobian-one polynomial map `A^3_K -> A^3_K` if and only if `X` is finite étale. This includes the empty scheme.
+2. If `X` has positive rank `N`, it occurs as a **full** fibre of such a map of geometric degree `N` if and only if it is finite étale and `N!=2`.
+3. Over `Q`, a full Hasse-failing fibre of rank `N` exists for such a map if and only if `N>=5`. The map can always be chosen on `A^3_Q` with geometric degree exactly `N`.
+
+The first two assertions also hold on every `A^m_K` with `m>=3`, by adjoining identity coordinates. They classify possible fibre schemes up to `K`-isomorphism while allowing the map to vary. The third assertion is an existence spectrum, not an assertion that every rank-`N` algebra is Hasse-failing.
+
+For a given finite étale algebra over a number field there is a simultaneous arithmetic classification. Let `M/K` be a finite Galois splitting field, `G=Gal(M/K)`, and
+
+\[
+ \Omega=\operatorname{Hom}_{K\text{-alg}}(A,M).
+\]
+
+For each place `v` choose a decomposition group `D_v` in `G`, well defined up to conjugacy. Then
+
+\[
+ \operatorname{Spec}A\text{ is Hasse-failing}
+ \quad\Longleftrightarrow\quad
+ \Omega^G=\varnothing\quad\text{and}\quad
+ \Omega^{D_v}\ne\varnothing\text{ for every place }v.    \tag{18}
+\]
+
+Equivalently, every element of `G` must fix some point of `Omega`, the finitely many ramified finite decomposition groups must each have a common fixed point, and the archimedean decomposition groups must each have a common fixed point, while `G` itself has none. This gives a finite group and local test once the splitting field and decomposition data are supplied. The element-cover condition alone does not replace the ramified-group tests.
+
+**Proof.** Assertion 1 is Corollary FMA5. For assertion 2, étaleness is necessary. The identity map gives the unique rank-one étale scheme. The characteristic-zero Common Arithmetic Fibers theorem realizes every étale algebra of rank at least three with geometric degree equal to its rank. A rank-two full fibre would require geometric degree two; its characteristic-zero function-field extension is Galois, which is excluded by the classical Campbell–Razar–Wright Galois case of the Jacobian theorem. This is exactly [the existing rank-classification corollary](../../unpublished/common-arithmetic-fibers/sections/01-keller-fibers.tex), `cor:rank-classification`; the classical exclusion is an imported written input separate from the end-to-end formalized construction. Empty schemes are entire fibres but cannot be full, since a dominant generically finite map has positive geometric degree. Stabilization by identity coordinates retains the fibre and generic degree.
+
+There is also a narrower written route for the degree-two exclusion, without the general Galois theorem. Over an algebraically closed characteristic-zero field `k`, [the divisor power-saturation identity (3.1)](../jacobian/monodromy-theory/THEORY.md) gives `b(F) in k(X)^{*2} => b in k(Y)^{*2}` for every whole-affine Keller map. A quadratic generic extension would have the form `k(Y)(sqrt(b))` for a nonsquare `b`, contradicting that identity. Generic degree is preserved by extension of the constant field, so this also excludes degree two over the original field `K`. The argument uses only the squarefree pullback of target prime divisors; it does not require the broader monodromy classification.
+
+For assertion 3, Lemma FMA0 gives the lower bound five. Here are rank-five and rank-six base algebras:
+
+\[
+ A_5=\mathbb Q(\sqrt{-3})\times\mathbb Q[Z]/(Z^3-19),
+ \qquad
+ A_6=\mathbb Q(\sqrt{13})\times\mathbb Q(\sqrt{17})
+                         \times\mathbb Q(\sqrt{221}).   \tag{19}
+\]
+
+The existing local criterion proves that `A_5` is Hasse-failing: `19` is a noncube, its sole prime divisor is `1 mod3`, and `19=1 mod9` is a three-adic cube. It has no rational factor.
+
+None of the three factors of `A_6` is `Q`, so it has no rational point. At `13`, the field `Q(sqrt(17))` supplies a point because `17=2^2 mod13` with nonzero derivative. At `17`, `Q(sqrt(13))` supplies a point because `13=8^2 mod17`. At `2`, `Q(sqrt(17))` supplies a point: for `f(T)=T^2-17`, `v_2(f(1))=4>2v_2(f'(1))=2`, so Hensel's lemma applies. At every other odd prime all three radicands are units. Their quadratic residue characters have product one, since `13*17*221=221^2`; they cannot all be minus one, and a quadratic residue gives a local point by Hensel's lemma. At the real place all three radicands are positive. Thus `A_6` is Hasse-failing.
+
+For odd `N>=5`, take `A_5` and `(N-5)/2` additional factors `Q(sqrt(2))`; for even `N>=6`, take `A_6` and `(N-6)/2` such factors. Products retain a local point at every place through their base algebra and gain no rational point, because every new field factor has degree two. Repeated isomorphic field factors are distinct étale components and cause no problem: the infinite-field monogenicity theorem chooses a separable presentation for the resulting product. The Common Arithmetic Fibers theorem now realizes the product as a full fibre on `A^3_Q` of geometric degree `N`. Conversely no rank below five can be Hasse-failing. More generally the fibre-rank bound in [the existing minimality proof](../../unpublished/fixed-map-hasse-failures/sections/05-minimality.tex) shows that any Keller map with a Hasse-failing fibre has generic degree at least five.
+
+Finally the finite étale/Galois-set correspondence identifies `K`-points with `Omega^G`, and `K_v`-points with `Omega^(D_v)`, proving (18). At an unramified finite place the decomposition group is cyclic, generated by Frobenius, so it fixes a point exactly when that element does. Chebotarev realizes every conjugacy class at unramified places; therefore the element-cover condition is both necessary and sufficient for all unramified places. The remaining ramified and archimedean tests are exactly those in (18). This is the fixed-point formulation of Sonn's Proposition 2.1 cited in section 2, applied to the supplied algebra.
+
+To see why testing individual elements is weaker at ramified places, let `G=V_4` and let `Omega` be the disjoint union of its two cosets for each of its three order-two subgroups. Every element fixes a point, because it lies in one of those subgroups. The whole group fixes no point. A decomposition group equal to `V_4` would therefore obstruct local solubility despite the element-cover condition. The explicit algebra `A_6` above avoids that obstruction, as the direct local proof established. ∎
+
+This theorem supplies the complete characteristic-zero classification of possible fibre schemes with a varying map, together with the exact Hasse rank spectrum over `Q` and the given-algebra local-global criterion. It does not classify Keller maps up to equivalence, prescribe their generic monodromy, solve arbitrary inverse-Galois/decomposition-group realization problems, or give an ambient counting asymptotic for a fixed map. The characteristic hypotheses and the distinction between entire and full fibres are essential. No extension to all characteristics or new formal verification or external review is claimed.
+
 ## 7. Counting and assurance boundaries
 
 The original-line target count, the [second-line count](FIXED_MAP_SECOND_LINE_COUNT.md), and the [full distinct-algebra count](FIXED_MAP_DISTINCT_ALGEBRA_COUNT.md) now all have leading asymptotics in their stated target heights. The last constant is given by a convergent finite-prime area limit rather than an asserted multiplicative Euler product. The [ambient bounds](FIXED_MAP_AMBIENT_COUNT_BOUNDS.md) prove `A(B)<<B^3` for Hasse failures and sharp order `Theta(B^3)` for both globally and everywhere locally soluble rational targets. The exact ambient Hasse order and the full ambient leading constants remain open, together with compatible integral-source conditions.
 
+The [general resolvent fibration](FIXED_MAP_RESOLVENT_FIBRATION.md) covers every noncentered Hasse target, retaining its singular specializations; centered targets give exactly the three known lines. Its generic fibres are genus two, with rational two-torsion on their Jacobians. For each fixed smooth base pair, Faltings' theorem makes the Hasse-target count finite, even though all factorized targets on the associated rational cubic curve have order `B^(2/3)`. This is an individual finiteness theorem, with no uniform or effective ambient bound. The [integral local analysis](FIXED_MAP_INTEGRAL_LOCAL_OBSTRUCTIONS.md) supplies exact three-adic conditions, two-adic exclusions and automatic local points, and proves that every integral Hasse target has a quadratic resolvent ramified at three. These restrictions leave integral existence unresolved.
+
 The [local-density note](FIXED_MAP_LOCAL_DENSITIES.md) classifies the original-line algebras and compares all, locally soluble, globally soluble, and Hasse-failing targets in the same height. The [integer-count note](FIXED_MAP_INTEGER_COUNT.md) counts every signed integer Hasse parameter, including a second asymptotic coefficient. These companion counts retain their explicit line and parameter domains.
 
-For the second line, `r=a+k/a` is degree two, with two rational preimages throughout its rational image. Its target height cannot be replaced by the original linear target height in `a`; the second-line count explicitly treats its quadratic height region and finite content corrections. The second-line count has a different domain from the original-line count. The [fixed-quadratic rigidity theorem](FIXED_QUADRATIC_LINE_RIGIDITY.md) proves that exactly these two affine target lines can contain Hasse failures while retaining one fixed irreducible quadratic factor. Its third fixed-quadratic line has local points exactly at its rational-point parameters. Moving quadratic factors remain a separate architecture.
+For the second line, `r=a+k/a` is degree two, with two rational preimages throughout its rational image. Its target height cannot be replaced by the original linear target height in `a`; the second-line count explicitly treats its quadratic height region and finite content corrections. The second-line count has a different domain from the original-line count. The [fixed-quadratic rigidity theorem](FIXED_QUADRATIC_LINE_RIGIDITY.md) proves that exactly these two affine target lines can contain Hasse failures while retaining one fixed irreducible quadratic factor. Its third fixed-quadratic line has local points exactly at its rational-point parameters.
 
-The script [verify_fixed_map_ambient.py](verify_fixed_map_ambient.py) checks exact polynomial identities for (7), (11)–(13), the algebra generator relation and involution; boundary reconstruction identities; and exhaustive subgroup controls for the `S_3` local criterion and the wrong-resolvent common derangements. It also checks the rank bound over all partitions of five and one rank-two localization example. These controls do not verify Chebotarev, the general Hensel lemma, all arithmetic local conditions, or the underlying all-degree Keller-map construction. No numerical sampling is used to justify the unrestricted statements.
+The [moving-factor quadric](FIXED_MAP_MOVING_QUADRATIC_FAMILY.md) supplies a rational surface of translated-pure-cubic factorizations, its exact local criterion, and an explicit Hasse target outside both lines. No Hasse target in that particular branch is three-adically integral; this does not settle integral existence for general cubic generators or quadratic fields. The [plane-section theorem](FIXED_MAP_PLANE_SECTIONS.md) proves that `u=0` and `c=0` are the only rational affine planes with generic rational sections. Their union doubles the known ambient lower coefficient to `8/zeta(3)`; every other fixed plane contributes `O_P(B^2)` globally soluble targets. Neither result determines the full ambient leading constants.
+
+The script [verify_fixed_map_ambient.py](verify_fixed_map_ambient.py) checks exact polynomial identities for (7), (11)–(13), the algebra generator relation and involution; boundary reconstruction identities; and exhaustive subgroup controls for the `S_3` local criterion and the wrong-resolvent common derangements. It also checks the rank bound over all partitions of five, one rank-two localization example, the rank-six `V_4` fixed-point action, and the displayed residue controls. These controls do not verify Chebotarev, the general Hensel lemma, all arithmetic local conditions, or the underlying all-degree Keller-map construction. No numerical sampling is used to justify the unrestricted statements.
 
 Run from the repository root with Python 3 and SymPy:
 

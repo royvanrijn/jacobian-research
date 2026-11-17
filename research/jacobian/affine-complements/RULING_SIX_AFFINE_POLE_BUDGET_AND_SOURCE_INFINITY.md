@@ -11,7 +11,10 @@ t. If none of the pole divisors has a quartic face, the intermediate
 projection is itself unramified over infinity.
 
 The theorem supplies necessary constraints on arbitrary coefficients.
-It does not exclude all surviving A, B and C faces or prove JC2.
+The later [simple-escape theorem](RULING_SIX_SIMPLE_ESCAPE_GRAPHS_AND_QUARTIC_FACE_REDUCTION.md)
+excludes B and C. The [strict infinity ledger](RULING_SIX_RETAINED_SOURCE_PACKETS_AND_STRICT_INFINITY_BOUNDS.md)
+strengthens the bounds using a retained source prime over each finite
+image. Face A and JC2 remain open; the inequalities below remain valid.
 
 ## 1. Actual setup and complete-end inputs
 
@@ -266,11 +269,11 @@ every complete quadratic source model (1), all companion degrees,
 and all original ramification. It improves the entire ruling-six
 necessary ledger rather than treating another selected family.
 
-Numerically compatible possibilities remain: A pole faces with intermediate
-infinity indices one or two, and B/C pole faces with index-one
-infinity. Equations (11),(18) need not themselves contradict one
-another for large D. No existence of a polynomial Keller mate in
-those possibilities is asserted.
+Equations (11),(18) alone do not contradict every large-D numerical
+ledger. PF165 separately closes the B/C alternatives, and PF166 sharpens
+the remaining A ledger. A pole faces with intermediate infinity indices
+one or two remain unresolved. No polynomial Keller mate in that class
+is constructed here.
 
 The checker verifies the strict multiplicity calculation,
 all finite ramification-index partitions allowed by ell=3,4

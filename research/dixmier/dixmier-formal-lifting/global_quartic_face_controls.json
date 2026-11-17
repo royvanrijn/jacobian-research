@@ -1,0 +1,540 @@
+{
+  "scope": "Exact global admission, general isolated-negative-pole divisor criterion, quartic application and square-ordered frontier",
+  "status": "PASS",
+  "environment": {
+    "python": "3.12.3",
+    "sympy": "1.14.0"
+  },
+  "global_coordinates": {
+    "A0": "Q+3XQ^2-XB/3=a-v",
+    "C": "R*A0-2/3=r*(centered_a-v)",
+    "seed": "-3R*A0^2+(18XQ-8)A0+9Q-3hRX=4a-3ra^2+2v"
+  },
+  "support_controls": [
+    {
+      "n": 2,
+      "m": -6,
+      "j": 4,
+      "least_weight": 0,
+      "unique_least_monomial": true
+    },
+    {
+      "n": 1,
+      "m": -3,
+      "j": 3,
+      "least_weight": 0,
+      "unique_least_monomial": true
+    },
+    {
+      "n": 2,
+      "m": -5,
+      "j": 4,
+      "least_weight": 2,
+      "unique_least_monomial": true
+    },
+    {
+      "n": 2,
+      "m": -7,
+      "j": 4,
+      "least_weight": -2,
+      "unique_least_monomial": true
+    },
+    {
+      "n": 3,
+      "m": -8,
+      "j": 5,
+      "least_weight": 2,
+      "unique_least_monomial": true
+    }
+  ],
+  "quartic_unique_critical_term": "epsilon*h^2*r^4*v^-6*centered_a^4",
+  "quartic_bottom": {
+    "N": 14,
+    "C": "H**4 - 12*H**3*h + 44*H**2*h**2 - 48*H*h**3",
+    "character": "t**6 + t**4 + t**2 + 1",
+    "primitive14_character_nonzero": true
+  },
+  "general_monomial_controls": [
+    [
+      -5,
+      2,
+      9
+    ],
+    [
+      -4,
+      2,
+      8
+    ],
+    [
+      -3,
+      2,
+      7
+    ],
+    [
+      -2,
+      2,
+      6
+    ],
+    [
+      -1,
+      2,
+      5
+    ],
+    [
+      -5,
+      3,
+      11
+    ],
+    [
+      -4,
+      3,
+      10
+    ],
+    [
+      -3,
+      3,
+      9
+    ],
+    [
+      -2,
+      3,
+      8
+    ],
+    [
+      -1,
+      3,
+      7
+    ],
+    [
+      -5,
+      4,
+      13
+    ],
+    [
+      -4,
+      4,
+      12
+    ],
+    [
+      -3,
+      4,
+      11
+    ],
+    [
+      -2,
+      4,
+      10
+    ],
+    [
+      -1,
+      4,
+      9
+    ],
+    [
+      -5,
+      5,
+      15
+    ],
+    [
+      -4,
+      5,
+      14
+    ],
+    [
+      -3,
+      5,
+      13
+    ],
+    [
+      -2,
+      5,
+      12
+    ],
+    [
+      -1,
+      5,
+      11
+    ],
+    [
+      -5,
+      6,
+      17
+    ],
+    [
+      -4,
+      6,
+      16
+    ],
+    [
+      -3,
+      6,
+      15
+    ],
+    [
+      -2,
+      6,
+      14
+    ],
+    [
+      -1,
+      6,
+      13
+    ],
+    [
+      -5,
+      7,
+      19
+    ],
+    [
+      -4,
+      7,
+      18
+    ],
+    [
+      -3,
+      7,
+      17
+    ],
+    [
+      -2,
+      7,
+      16
+    ],
+    [
+      -1,
+      7,
+      15
+    ]
+  ],
+  "degree_controls": [
+    [
+      2,
+      0,
+      3
+    ],
+    [
+      2,
+      0,
+      7
+    ],
+    [
+      2,
+      0,
+      14
+    ],
+    [
+      2,
+      1,
+      3
+    ],
+    [
+      2,
+      1,
+      7
+    ],
+    [
+      2,
+      1,
+      14
+    ],
+    [
+      2,
+      2,
+      3
+    ],
+    [
+      2,
+      2,
+      7
+    ],
+    [
+      2,
+      2,
+      14
+    ],
+    [
+      2,
+      3,
+      3
+    ],
+    [
+      2,
+      3,
+      7
+    ],
+    [
+      2,
+      3,
+      14
+    ],
+    [
+      2,
+      4,
+      3
+    ],
+    [
+      2,
+      4,
+      7
+    ],
+    [
+      2,
+      4,
+      14
+    ],
+    [
+      3,
+      0,
+      3
+    ],
+    [
+      3,
+      0,
+      7
+    ],
+    [
+      3,
+      0,
+      14
+    ],
+    [
+      3,
+      1,
+      3
+    ],
+    [
+      3,
+      1,
+      7
+    ],
+    [
+      3,
+      1,
+      14
+    ],
+    [
+      3,
+      2,
+      3
+    ],
+    [
+      3,
+      2,
+      7
+    ],
+    [
+      3,
+      2,
+      14
+    ],
+    [
+      3,
+      3,
+      3
+    ],
+    [
+      3,
+      3,
+      7
+    ],
+    [
+      3,
+      3,
+      14
+    ],
+    [
+      3,
+      4,
+      3
+    ],
+    [
+      3,
+      4,
+      7
+    ],
+    [
+      3,
+      4,
+      14
+    ],
+    [
+      4,
+      0,
+      3
+    ],
+    [
+      4,
+      0,
+      7
+    ],
+    [
+      4,
+      0,
+      14
+    ],
+    [
+      4,
+      1,
+      3
+    ],
+    [
+      4,
+      1,
+      7
+    ],
+    [
+      4,
+      1,
+      14
+    ],
+    [
+      4,
+      2,
+      3
+    ],
+    [
+      4,
+      2,
+      7
+    ],
+    [
+      4,
+      2,
+      14
+    ],
+    [
+      4,
+      3,
+      3
+    ],
+    [
+      4,
+      3,
+      7
+    ],
+    [
+      4,
+      3,
+      14
+    ],
+    [
+      4,
+      4,
+      3
+    ],
+    [
+      4,
+      4,
+      7
+    ],
+    [
+      4,
+      4,
+      14
+    ],
+    [
+      5,
+      0,
+      3
+    ],
+    [
+      5,
+      0,
+      7
+    ],
+    [
+      5,
+      0,
+      14
+    ],
+    [
+      5,
+      1,
+      3
+    ],
+    [
+      5,
+      1,
+      7
+    ],
+    [
+      5,
+      1,
+      14
+    ],
+    [
+      5,
+      2,
+      3
+    ],
+    [
+      5,
+      2,
+      7
+    ],
+    [
+      5,
+      2,
+      14
+    ],
+    [
+      5,
+      3,
+      3
+    ],
+    [
+      5,
+      3,
+      7
+    ],
+    [
+      5,
+      3,
+      14
+    ],
+    [
+      5,
+      4,
+      3
+    ],
+    [
+      5,
+      4,
+      7
+    ],
+    [
+      5,
+      4,
+      14
+    ]
+  ],
+  "power_difference_controls": [
+    1,
+    2,
+    3,
+    4
+  ],
+  "square_ordered_frontier": {
+    "candidate": "S_b+epsilon*h^2*(X^3*C^2)^2",
+    "bottom_roots_in_h_units": [
+      0,
+      2,
+      7,
+      9
+    ],
+    "character": "(t**2 + 1)*(t**7 + 1)",
+    "primitive14_character_zero": true,
+    "mate_constructed": false
+  },
+  "negative_control": "Character criterion deliberately fails for actual pair b^j+v,-b; corrupted quartic divisor rejected",
+  "hashes": {
+    "GLOBAL_ADMISSION_AND_QUARTIC_CRITICAL_FACE.md": "404c8057db2d2361d45a8be336b3b9b4e0de9b029891c88d359e358c814e473a",
+    "check_global_quartic_face.py": "a41bacccbefefe3d1e9f1ed19ae920ca231da1ae8cc047bf313e8ab1ee35ed70",
+    "EXACT_POSITION_CENTRALIZER_AND_COMPLETION.md": "e1c0e0ec66951325c1abbef5ed9b467a1229f1c3e1b74e2aea9a1cb2b41f9f33",
+    "CRITICAL_LAURENT_FACE_OBSTRUCTION.md": "b82ff8eb542f9543aad66184cc3b3dd6760cf1bf8e0556595b99fc8e334c385f"
+  },
+  "coverage_boundary": "Finite exact rational Ore identities and representative divisor/degree controls; unrestricted centralizer, no-mate, support realization and parameter-pole proofs are written. No actual Long mate or global completion.",
+  "independent_replay": false,
+  "formal_verification": false,
+  "external_review": false
+}

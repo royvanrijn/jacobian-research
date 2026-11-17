@@ -15,7 +15,7 @@ The classical meridional rank conjecture remains open. It asks whether
 $\mr(K)=b(K)$ for every knot $K\subset S^3$; the usual link formulation asks
 the same equality for links. The 2026 problem list retains it as Problem
 1.18 \cite{k3}. No general proof or classical counterexample was found in
-this search. The catalogue \texttt{sources.json} records 49 sources,
+this search. The catalogue \texttt{sources.json} records 56 sources,
 their precise claimed scope and audit depth. This is a broad map of the
 main results and recent developments, with outstanding source audits
 retained rather than an assertion of exhaustive bibliographic coverage.
@@ -37,6 +37,111 @@ The curated checkout retains the current graph-cover proofs and their
 listed finite inputs. Several earlier search panels and replay receipts
 summarized in this literature map are available only through Git history;
 those summaries do not provide a runnable replay of those older tests.
+
+\section{Current comparison for the eight alternating seeds}
+
+The following eight named knots have the same separation between
+meridional and ordinary generation. Write $G_K=\pi_1(S^3\setminus K)$,
+$c(K)$ for the largest rank of a Coxeter reflection quotient, and
+$a_{\rm ref}(K)$ for reflective augmentation rank, the specific
+unoriented symmetric cord quotient of \cite{cornwell15}.
+Every knot in the table has a hyperbolic exterior and an irreducible,
+toroidal, non-graph-manifold double branched cover.
+\begin{center}
+\begin{tabular}{lrrrrr}
+\hline
+$K$ & $\det K$ & $\operatorname{rank}G_K$ & $c(K)$ & $a_{\rm ref}(K)$ & $\mr(K)=b(K)$\\
+\hline
+$13a_{373}$  &431&$\le3$&3&3&4\\
+$13a_{375}$  &433&$\le3$&3&3&4\\
+$13a_{391}$  &433&$\le3$&3&3&4\\
+$13a_{392}$  &431&$\le3$&3&3&4\\
+$13a_{3264}$ &361&$\le3$&3&3&4\\
+$13a_{3266}$ &359&$\le3$&3&3&4\\
+$13a_{3275}$ &359&$\le3$&3&3&4\\
+$13a_{3276}$ &361&$\le3$&3&3&4\\
+\hline
+\end{tabular}
+\end{center}
+The seven-sheeted cover proofs give the sharp meridional lower bound;
+the ordinary-rank proof gives only the displayed upper bound, not
+equality with three. The uniform reflection obstruction includes
+infinite Coxeter targets and singular forms. Explicit triangle
+quotients and cyclotomic cord matrices attain the two ranks three.
+These statements are proved in
+\path{RANK_THREE_KNOT_GROUP_UPPERS.tex},
+\path{UNIVERSAL_REFLECTION_OBSTRUCTION.tex} and
+\path{REFLECTIVE_AUGMENTATION_RANK_GAP.tex}.
+The actual-cover topology and exterior hyperbolicity are separate
+certificates, explained below.
+
+The following comparison concerns the exact sufficient hypotheses in
+the cited sources. It does not infer nonmembership from one drawing.
+\begin{longtable}{p{0.30\linewidth}p{0.63\linewidth}}
+\hline
+Published mechanism & Comparison for all eight knots\\
+\hline
+Low bridge and explicit three-braid families
+& Bridge four excludes the bridge-at-most-three cases, including
+Cornwell's stated three-braid and three-bridge pretzel families
+\cite{bjw,cornwell,cornwell17}.\\[3pt]
+Torus, Montesinos, arborescent; BJW graph covers
+& Hyperbolicity excludes torus knots. Their actual non-graph double
+covers exclude the standard Montesinos/arborescent classes and the
+BJW graph-cover hypothesis \cite{rz,musick,bjw}.\\[3pt]
+Lustig--Moriah generalized Montesinos and nonunit plat gcd
+& The sharp-four hypotheses force ordinary group rank four,
+contradicting the proved upper bound three. The independent
+$p^3\mid\det K$ consequence also fails \cite{moriah}.\\[3pt]
+Graph exteriors, connected sums and genuine satellites
+& Prime hyperbolic exteriors exclude the nontrivial composite and
+satellite outputs, including braid-pattern and Whitehead-double
+outputs \cite{bdjw,ch,whitehead}. Meridional tameness of a base knot
+is a separate hypothesis, not a membership test established here.\\[3pt]
+Sharp Coxeter quotients, BBK twisted and rank-preserving replacements
+& $c(K)=3$ excludes every sharp rank-four Coxeter certificate.
+The crosscap obstruction separately excludes standard twisted
+diagrams; actual-cover topology excludes arbitrary rational
+substitutions on every four-face BBK base \cite{bbk,bkm}.\\[3pt]
+BKP sufficient fishnet gcd families
+& Their path quotient requires a determinant with at least three
+prime factors counted with multiplicity; every determinant above
+has at most two. The added-unknot theorem concerns a different link
+\cite{fishnet}.\\[3pt]
+Joseph--Pongtanapaisan integer $p$-cycle boxes
+& The written Coxeter transport below excludes the specified
+$\mathcal K_{p,4}$ boxes and tangles assembled from those boxes.
+This is not an exclusion of arbitrary rational tangles \cite{jp}.\\[3pt]
+Cornwell symmetric maximal-braid rank raising
+& Theorem~5.4's outputs carry symmetric maximal-braid augmentations.
+The free-Gram transport excludes them for every braid with at least
+four strands representing these knots \cite{cornwell17}.\\
+\hline
+\end{longtable}
+
+Existence of an unrestricted rank-four augmentation would itself
+supply a sharp lower bound, but it is a hypothesis, not a construction
+theorem or a known-family membership certificate for these knots.
+Neither reflective rank three nor the symmetric maximal-braid
+obstruction excludes nonsymmetric rank-four augmentations, including
+augmentations presented on more strands. The audited full-twist
+discussion poses a question rather than proving such existence
+\cite{ch}. No cited theorem here establishes all positive-braid knots
+as another applicable family.
+
+A fresh read on 17 November 2026 of the author's current
+\path{data/still_open.json} gives exactly the retained 293 names,
+including all eight table entries. Its retained bytes have Git blob
+\texttt{01c7c332a0bf1565d7558aec4c769ff36cbd31a9}.
+Thus these equalities extend that specific 243-certificate release
+\cite{deposit}; they are also outside the exact published sufficient
+families excluded above. One targeted primary-source search for
+2024--2026 direct four-bridge ordinary-rank, augmentation or other
+non-Coxeter MRC results found no additional theorem or named
+certificate. Search non-hits are not a mathematical exclusion.
+Worldwide priority remains unestablished: a prior named equality,
+an unrestricted augmentation certificate, or another verified
+non-Coxeter family theorem would have to be compared directly.
 
 \section{What must be proved and how existing methods do it}
 
@@ -106,12 +211,27 @@ For a prime knot with nontrivial JSJ decomposition they prove
 $\mr\ge4$ \cite{bjw}. The prime and nontrivial-JSJ hypotheses avoid an
 incorrect blanket claim for composites.
 
-\item \textbf{Augmentations.} Cornwell develops representation and
-augmentation lower bounds, with applications to torus knots and a
-three-bridge pretzel family \cite{cornwell}. Cornwell--Hemminger prove a
-multiplication theorem for specified braid-pattern satellites and obtain
-large iterated torus-knot classes \cite{ch}. The pattern and maximal-rank
-hypotheses are material; this is not a theorem for all satellites.
+\item \textbf{Augmentations.} Cornwell's 2014 explicit sharp families are
+torus knots and the three-bridge pretzels $P(-2,3,2k+1)$,
+$k\ne-1,0$ \cite[Theorems~1.3--1.4]{cornwell}.
+His later Theorem~1.13 treats the three-braid closures
+$\sigma_1^w\sigma_2^\delta\sigma_1^u\sigma_2^v$ with
+$|u|,|w|\ge2$, $|v|\ge3$, $\delta=\pm1$.
+Theorem~1.10 of that paper assumes an existing rank-$n$
+augmentation of an $n$-braid closure and constrains its peripheral
+curve; it does not construct a full-rank augmentation for an
+arbitrary four-braid or positive braid \cite{cornwell17}.
+The same paper's Theorem~5.4 gives a separate iterative construction
+of higher-braid maximal-rank augmentations, with a symmetry condition
+on the cord values. Its bridge-four instances are excluded for all eight alternating
+seeds in the comparison table by the direct transport
+in \path{SYMMETRIC_AUGMENTATION_OBSTRUCTION.tex}, as explained below.
+Cornwell--Hemminger's Theorem~1.2 multiplies augmentation ranks
+under a specified braid-pattern satellite operation, assuming that
+the companion and pattern augmentations attain their respective
+braid indices. Corollary~1.3 gives iterated torus knots with
+$|p_i|<|q_i|$ and $\gcd(p_i,q_i)=1$ \cite{ch}.
+The hypotheses are material; this is not a theorem for all satellites.
 
 \item \textbf{Coxeter, twisted and arborescent links.}
 Baader--Blair--Kjuchukova prove MRC for twisted links and for links from
@@ -815,10 +935,38 @@ families through finite-cycle quotient labellings with
 periodic twist-box rules \cite{jp}. Section 3 of their
 February 2023 preprint, especially Construction 3.5 and
 Corollary 3.12, has now been read; the published 2025 title
-and metadata are checked separately. Full published proof
-comparison and membership of our seeds in their families
-remain open. This source must be credited when discussing
-periodic finite-quotient constructions.
+and metadata are checked separately. This source must be
+credited when discussing periodic finite-quotient constructions.
+
+There is a direct Coxeter comparison for their classical
+integer-box construction. Put $d=2p-1$, and take the rank-$n$
+Coxeter system with $m_{i,i+1}=d$ and $m_{ij}=2$ when
+$|i-j|>1$. Replace the $i$th step $p$-cycle seed label by
+its standard reflection $s_i$. Equal or disjoint cycle labels
+become equal or commuting reflections; their local crossing
+transport therefore has the same parity routing. For adjacent
+reflections $a,b$, write $q=ab$. The involutory two-strand
+braid action $T(a,b)=(aba,a)$ satisfies
+\[
+ T^k(a,b)=(q^ka,q^{k-1}a),\qquad T^d(a,b)=(a,b).
+\]
+Their Rule~2 allows multiples of $d$ for coherently oriented
+strands and even multiples for oppositely oriented strands.
+Consequently every permitted twist box retains its boundary
+labels in this Coxeter system as well. All $n$ standard seed
+labels occur, so this is an epimorphism, not merely a colouring
+into a proper subgroup. Thus every classical integer-box
+$\mathcal K_{p,n}$ example has a sharp rank-$n$ Coxeter
+certificate. The obstruction in
+\path{UNIVERSAL_REFLECTION_OBSTRUCTION.tex} excludes
+all eight alternating seeds in the comparison table from every such
+$\mathcal K_{p,4}$ family.
+The same transport works for rational tangles assembled from
+the permitted boxes, as in their Figure~5 and Remark~3.11;
+this argument asserts no result for arbitrary rational
+tangle replacements. The proof just given is a written
+comparison of the constructions, rather than a claim that
+their paper states this Coxeter corollary.
 
 The known-family audit also retains a specific limitation:
 the published Stoimenow discussion distinguishes an
@@ -1211,7 +1359,7 @@ not a common-cover certificate.
 
 This three-piece argument treats three original targets. The five other
 direct cases
-$13a_{234},13a_{242},13a_{243},13a_{244},13a_{265}$ are covered in the next
+$13a_{234}$, $13a_{242}$, $13a_{243}$, $13a_{244}$, $13a_{265}$ are covered in the next
 section. All sixteen belong to the known graph-cover family by the final
 rigidity argument. The working proofs and classical imports remain
 unformalized and externally unreviewed; named global priority,
@@ -1306,6 +1454,132 @@ actual double-cover topology outside that class; a hyperbolic knot exterior
 or non-arborescence alone does not suffice. Full MRC, exhaustive literature,
 formal and external specialist review remain open.
 
+\section{An all-Coxeter comparison through canonical Gram forms}
+
+Finite target searches cannot by themselves exclude the infinite
+Coxeter quotients used by rational-tangle extensions.  There is a
+uniform algebraic gate for this remaining scope.  Davis's canonical
+construction \cite[Section~6.12]{davis25} assigns every rank-$r$
+Coxeter presentation a reflection representation on an $r$-dimensional
+real vector space with a symmetric form and a basis of simple roots.
+The form may be singular.  Its existence is Corollary~6.12.4;
+faithfulness, Corollary~6.12.11, is stronger than this application needs.
+
+If $r$ reflections generate the Coxeter group, their canonical-image
+root directions form a basis.  Indeed, their span is invariant and
+every word moves vectors only within that span.  Standard simple
+reflections belong to the generated image and have displacements
+spanning all the standard basis roots.  The span is therefore the
+entire canonical space, including when the form is degenerate.
+For a specified four-meridian generating trace, every sharp rank-four
+Coxeter quotient consequently lies in the four-dimensional symmetric Gram
+model with diagonal entries two and six unrestricted off-diagonal
+entries.  The precise written argument, with unused-crossing sign
+choices, is in \path{UNIVERSAL_REFLECTION_OBSTRUCTION.tex}.
+
+Any exact inconsistency certificate covering all these Gram and root-sign
+cases excludes every sharp rank-four Coxeter quotient, without a label
+bound or finite-target restriction.  This also excludes any application
+of the BBK Section~4 rational-tangle replacement method that preserves
+its rank-four Coxeter lower certificate.  The published paragraph
+retains boundary generator labels and preserves both bounds in the
+specified examples; it does not state that arbitrary rational replacement
+preserves bridge number.  The direct coefficient proofs now establish this obstruction for
+all eight alternating seeds in the comparison table over every field
+of characteristic different from two. Their seven-sheeted covers prove
+$\mr=b=4$, while every finite or infinite Coxeter reflection
+quotient has rank at most three. Singular forms are included.
+These obstructions do not by themselves exclude unrestricted
+augmentation or other representation methods. A symmetric
+augmentation comparison is proved next.
+
+All-Coxeter failure already has torus precedents: BKM Theorem~5.3,
+crediting Ryffel's 2019 thesis, gives an infinite odd torus family
+without noncyclic Coxeter quotients.  Its contrasting Example~5.2,
+$12a_{210}$, is alternating and has a sharp infinite rank-three
+quotient but no sharp finite one.  No source examined here asserts
+that every alternating knot must have a sharp Coxeter quotient;
+an obstruction should not be described as refuting an unsourced
+alternating-knot conjecture.
+
+\section{A symmetric augmentation comparison beyond Coxeter targets}
+
+Cornwell's Theorem~5.4 \cite{cornwell17} raises a maximal augmentation
+rank from $n$ to $n+1$ for closures of
+$B\sigma_n^\delta\sigma_{i,n}^u\sigma_n^v$, subject to explicit
+size and parity conditions. The input and output augmentations
+descend to the quotient $\mathcal A_n^{\mathrm{ab}}$, which imposes
+both commutativity and $a_{ij}=a_{ji}$. This higher-braid theorem
+is a necessary comparator in addition to the three-braid theorem
+from the paper's introduction.
+
+The direct proof in \path{SYMMETRIC_AUGMENTATION_OBSTRUCTION.tex}
+excludes all its bridge-four outputs for the eight knots
+in the comparison table.
+More generally, these knots admit no full-rank four-braid augmentation
+whose cord values descend to that symmetric quotient. A maximal-rank
+augmentation on an $n$-braid has
+$\epsilon(\Phi_B^L)=\Delta(B)$ by Theorem~1.10.
+For symmetric cord values, take the free $n$-root Gram space with
+diagonal two and off-diagonal entries $\epsilon(a_{ij})$.
+The local root move $(u_k,u_{k+1})\mapsto(R_{u_k}u_{k+1},u_k)$
+has the source's $\Phi^L$ matrix and Gram-coordinate action.
+Its Chain Rule gives the same coefficient matrix for the entire braid;
+the diagonal closure therefore makes every final reflection equal to
+its initial reflection. This is a group representation with $n$
+independent normal directions, including when the Gram form is singular.
+The four original generating meridian normals would have to contain
+every image displacement direction, contradicting the already proved
+dimension bound three.
+
+No step asserts that a generic rank-four augmentation retains its
+rank at $\mu=-1$. That rank can drop. The argument uses a free
+Gram realization and never passes to the quotient by its radical
+or to the irreducible KCH representation. The small standard-library
+checker verifies the positive and negative local formulas, inverse
+cancellations, braid relations and a singular-form control.
+Nonsymmetric rank-four augmentations and rank-four augmentations
+presented on more strands remain outside this exclusion.
+
+The full-twist discussion at the end of Cornwell--Hemminger's
+Section~5 \cite{ch} is explicitly computational observations and
+a question about a Dehornoy-order threshold. It is not a theorem
+there that adding sufficiently many full twists always gives
+maximal augmentation rank. The fresh read of the current
+Bhattacharjee open list still gives exactly the retained 293 names,
+including all eight alternating seeds; this excludes only that specific
+243-certificate release. Knot-specific nonsymmetric augmentations
+and other meridian-sensitive non-Coxeter proofs remain separate
+priority obligations.
+
+\section{Three ordinary generators for all eight alternating seeds}
+
+The proof \path{RANK_THREE_KNOT_GROUP_UPPERS.tex} establishes
+\[
+ \operatorname{rank}\pi_1(S^3\setminus K)\le3<4=\mr(K)=b(K)
+\]
+for all eight alternating seven-sheeted seeds. Literal PD exteriors
+give saved labelled triangulations and unsimplified cell presentations.
+Every generator deletion in the retained integer move stream is
+independently justified by a current relator reducing to that
+generator or its inverse. All Nielsen slides, inversions and the
+original-to-final generator words are replayed exactly, ending in
+three generators for every case. The ordinary rank is not claimed
+to equal three.
+
+The standard-library replay checks all these algebra reductions.
+The actual optional SnapPy replay additionally rebuilt every literal
+PD exterior, compared its face pairings and integral peripheral
+rows with the retained snapshot, checked its unfilled cusp, and
+recomputed the initial cell presentation. Exact named-census
+planar-map bindings pass. No numerical geometry is used.
+The diagram-to-exterior and original cell-presentation algorithms
+remain explicit trusted combinatorial imports; the group simplifier's
+correctness is not needed for the independently checked reductions.
+Thus no sufficient family hypothesis forcing ordinary group rank
+four can hold for these eight knots. Their meridional equalities
+require the stronger meridian-sensitive information.
+
 {\small
 
 \section{Arbitrary-cycle covers: twenty-four further sharp equalities}
@@ -1358,7 +1632,8 @@ normal-surface algorithms, with an explicit imported certified-census
 theorem. Numerical volume is not used. This settles the precise
 BJW18 comparison on these finite seeds. The exact fishnet, plat gcd,
 finite Coxeter and standard twisted comparisons below settle further
-scopes; global priority, rational-tangle extensions and every positive
+scopes. The four-face rational-replacement comparison is also settled
+below. Global priority, higher-face replacements and every positive
 periodic parameter remain separate obligations.
 
 Finally, \path{CONJUGACY_RESTRICTED_QUOTIENT_CAPACITY.tex} gives a
@@ -1406,7 +1681,49 @@ imported Kalfagianni--Lee inequality give crosscap at least four
 or five on these bridge-four knots. The obstruction concerns the
 knot itself, including higher-crossing twisted diagrams. It does not
 exclude the rational-tangle replacements described after BBK's
-Theorem~1.
+Theorem~1 by itself.
+
+The separate \path{RATIONAL_REPLACEMENT_TOPOLOGY.tex} now excludes
+all twenty-eight actual-cover seeds from arbitrary rational
+substitutions on every four-face BBK base, even when reflection
+labels and bridge upper bounds are not preserved. A proper simple
+four-vertex base reduces explicitly to algebraic tangles; the full
+$K_4$ base has the punctured $6^*$ branched cover $M_6$.
+Martelli's complete closed exceptional-filling classification leaves
+only graph cases and two mixed cases. The mixed cases have nonzero
+mod-two homology by Mayer--Vietoris, whereas every knot double
+branched cover has zero mod-two first homology. The retained toroidal
+non-graph covers are therefore excluded. The precise classical source
+statements and actual covering-pair identification are retained in
+that proof, with internal finite graph/homology controls. Substitutions
+on higher-face bases and arbitrary algebraic replacements remain
+outside its scope.
+
+The knot exteriors of all eight alternating seeds in the comparison
+table are hyperbolic. This is a separate assertion from the hyperbolic
+pieces found in their double branched covers. The literal diagram
+checks in \path{TWISTED_LINK_CROSSCAP_OBSTRUCTION.tex} establish
+connected prime alternating diagrams: each has one component,
+alternating over/under encounters and minimum projection edge-cut
+four. Their complete Jones sums give $T_K=10$ for
+$13a_{373},13a_{375},13a_{391},13a_{392}$ and $T_K=9$
+for $13a_{3264},13a_{3266},13a_{3275},13a_{3276}$.
+Purcell's Theorem~11.9 states that a knot with a connected prime
+alternating diagram is either a $(2,q)$-torus knot or hyperbolic
+\cite{purcell17}. The two-strand bracket recurrence gives absolute
+second and penultimate Jones coefficients at most one for a
+$(2,q)$-torus knot, so $T_K\le2$; alternatively its bridge number
+is at most two, whereas all eight knots have certified bridge four.
+Thus the torus alternative is excluded. This rules out genuine
+satellite outputs of the cited braid-pattern and Whitehead-double
+constructions on all eight knots. It does not exclude a separate
+non-Coxeter augmentation certificate. The retained source is
+Purcell's author-hosted chapter dated 8 September 2017, whose
+printed p.~194 states the theorem and p.~201 gives the proof,
+explicitly crediting Menasco's 1984 theorem. Its geometric proof is
+read; the Chapter~8 normal-surface and hyperbolization results are
+imports. An unavailable original Menasco PDF is not represented
+as cached or fully audited.
 
 Finally, the invariant $\mathcal I$ in
 \path{INVOLUTION_COVER_SUM_FORMULAS.tex} keeps the unrounded score
@@ -1500,6 +1817,11 @@ printedpp30--31; earlier author-v3 Theorems2.2--2.3 compared.
 \url{https://arxiv.org/abs/1608.01570}.
 \bibitem{cornwell} Cornwell (2014).
 \url{https://arxiv.org/abs/1303.4943}.
+\bibitem{cornwell15} C. R. Cornwell, Character varieties of knot
+complements and branched double-covers via the cord ring,
+author preprint arXiv:1509.04962v1 (2015), Section~3,
+Theorem~3.2 and Definitions~3.3--3.4.
+\url{https://arxiv.org/abs/1509.04962v1}.
 \bibitem{cornwell17} Cornwell, KCH representations, augmentations,
 and A-polynomials, J. Symplectic Geometry 15 (2017), 983--1017,
 Theorem 1.10 and its proof on arXiv p.~18.
@@ -1541,6 +1863,20 @@ tangles (2004), Theorem 1 and Lemma 2.
 \url{https://arxiv.org/abs/math/0311499v2}.
 \bibitem{preorder} Boileau--Kitano--Nozaki (2025), preprint.
 \url{https://arxiv.org/abs/2510.12372}.
+\bibitem{davis25} M. W. Davis, \emph{The Geometry and Topology of
+Coxeter Groups}, second edition, Springer Monographs in Mathematics
+(2025), Section~6.12, equations~(6.32)--(6.33), Lemma~6.12.3 and
+Corollaries~6.12.4 and~6.12.11, printed pp.~108--111.
+\url{https://doi.org/10.1007/978-3-031-91303-7}.
+Author-hosted complete edition:
+\url{https://people.math.osu.edu/davis.12/second_edition.pdf}.
+\bibitem{purcell17} J. S. Purcell, \emph{Hyperbolic Knot Theory},
+author chapter draft dated 8 September 2017, Chapter~11,
+Theorem~11.9, printed p.~194, with proof printed p.~201.
+The theorem and later geometric proof explicitly credit
+W. Menasco, Closed incompressible surfaces in alternating knot
+and link complements, Topology 23 (1984), 37--44.
+\url{https://users.monash.edu/~jpurcell/book/11Alternating.pdf}.
 \end{thebibliography}
 }
 \end{document}

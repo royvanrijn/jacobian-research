@@ -188,19 +188,108 @@
   "formal_verification": false,
   "external_review": false,
   "current_replay": {
+    "claim": "PF2RULED162",
+    "outcome": "PASS",
+    "check_count": 87,
+    "elapsed_seconds": 0.2897802710067481,
+    "environment": {
+      "python": "3.12.3",
+      "sympy": "1.14.0"
+    },
+    "proof_sha256": "04feb8d7b93cd49b391acfa317b0c7a9339da19d2e123fdca9f4dced6db07133",
+    "checker_sha256": "ad5d237260a288e30549c0de3dd53a29950e9337bbfdd5a87107c4e1c8486ebb",
+    "context_sha256": "451c4f3f5ec90a2356442f60c36b29161c817130b9b79be2370eec2ea08a9b27",
+    "formal_boundary_models": [
+      {
+        "m": 2,
+        "a": 0,
+        "initial_residue_polynomial": "lam**2",
+        "original_ramification": 2,
+        "source_pole": 3,
+        "source_volume_order": 1,
+        "formal_model_not_Keller_realization": true
+      },
+      {
+        "m": 2,
+        "a": 1,
+        "initial_residue_polynomial": "lam**2",
+        "original_ramification": 4,
+        "source_pole": 5,
+        "source_volume_order": 3,
+        "formal_model_not_Keller_realization": true
+      },
+      {
+        "m": 3,
+        "a": 1,
+        "initial_residue_polynomial": "lam**2",
+        "original_ramification": 4,
+        "source_pole": 7,
+        "source_volume_order": 3,
+        "formal_model_not_Keller_realization": true
+      },
+      {
+        "m": 3,
+        "a": 2,
+        "initial_residue_polynomial": "lam**2",
+        "original_ramification": 6,
+        "source_pole": 9,
+        "source_volume_order": 5,
+        "formal_model_not_Keller_realization": true
+      }
+    ],
+    "off_M_face_controls": [
+      {
+        "name": "A",
+        "L": 3,
+        "H0_over_alpha": 6,
+        "initial": "Y**6 - 4*Y**5 + 6*Y**4 - 4*Y**3 + Y**2",
+        "multiplicity": 4
+      },
+      {
+        "name": "B5",
+        "L": 4,
+        "H0_over_alpha": 8,
+        "initial": "Y**5 - 3*Y**4 + 3*Y**3 - Y**2",
+        "multiplicity": 3
+      },
+      {
+        "name": "B6",
+        "L": 4,
+        "H0_over_alpha": 8,
+        "initial": "Y**6 - 2*Y**5 + 2*Y**3 - Y**2",
+        "multiplicity": 3
+      },
+      {
+        "name": "C",
+        "L": 5,
+        "H0_over_alpha": 11,
+        "initial": "Y**6 - 3*Y**5 + 3*Y**4 - Y**3",
+        "multiplicity": 3
+      }
+    ],
+    "all_finite_M_root_ends_holomorphic": true,
+    "central_degree_two_residual_algebra_rank": 2,
+    "forced_original_ramification": "2*a+2",
+    "forced_source_pole": "2*(m+a)-1",
+    "forced_residue_extension": "C(lambda)/C(P),P=lambda^2",
+    "image_normal_form": "T^2=P*H(P)^2,H nonconstant",
+    "image_conductor": "H(P)*C(lambda)",
+    "finite_conductor_control_dimension": 6,
+    "finite_conductor_nilradical_index": 4,
+    "whole_ruling_six_target_class_closed": false,
+    "original_full_normalization_and_P_vertical_primes_retained": true,
+    "generic_first_derivative_integrality_proved": false,
+    "normal_tail_increasing_power_containment_proved": false,
+    "registered_predecessor_checkers_replayed": [],
+    "new_external_theorem_imports": [],
+    "full_goal_complete": false,
+    "independent_replay": false,
+    "formal_verification": false,
+    "external_review": false,
     "date": "2026-11-17",
     "command": ".venv/bin/python research/jacobian/affine-complements/verify_ruling_six_boundary.py",
     "working_directory": "repository root",
     "exit_code": 0,
-    "outcome": "PASS",
-    "check_count": 87,
-    "checker_sha256": "ad5d237260a288e30549c0de3dd53a29950e9337bbfdd5a87107c4e1c8486ebb",
-    "proof_sha256": "59b0863851992b80b04f274b999d56d739f78ead40a601746fcdf6c1eae48eda",
-    "context_sha256": "451c4f3f5ec90a2356442f60c36b29161c817130b9b79be2370eec2ea08a9b27",
-    "accepted_mathematical_payload_matches_historical_receipt": true,
-    "scope": "Internal execution of the existing bounded controls with current source/input pins, after recording the successful polynomial-residue replay. Original receipt fields and hashes above remain historical. This does not certify universal proofs or upgrade independent replay, formal verification or external review.",
-    "removed_historical_metadata_checks": [
-      "known3D nonproper control remains pinned"
-    ]
+    "scope": "Current internal execution of retained exact controls after successor/status annotations. Original receipt fields remain historical; no independent whole-proof replay, formal verification or external review is asserted."
   }
 }

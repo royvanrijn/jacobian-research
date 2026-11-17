@@ -632,7 +632,7 @@
   "scope": "64 finite component-matching controls and four full lifted-edge mod3 homology controls on one literal retained knot joined to0..3 trefoils. Uniform sum formulas, exact free-product ranks, bridge construction and all24 seeds use written proofs and retained dependencies; not an exhaustive cover search.",
   "input_sha256": {
     "verify_involution_cover_sums.py": "adeef95118e743ce727aad4324287f190932afad53bb25c6b2f7c221ce6142d5",
-    "INVOLUTION_COVER_SUM_FORMULAS.tex": "06d9d7015e292cfbaf9332a0481a36ef973c2da4bcfd266e3e36cc9203eb1dc1",
+    "INVOLUTION_COVER_SUM_FORMULAS.tex": "107ecb83fb307ed1fb8f968b61831e03982a122e326745ee3ac3db2cae791717",
     "verify_general_branched_covers.py": "55c1201156f78bccc7660a7e74b0b8e4fb441893a961156472570fade75315e6",
     "seven_sheet_cover_inputs.json": "0cdaed4926bdf03eb399d572da98bf59b7bbbe0ea13ab66106ddc34724a85ef6"
   }

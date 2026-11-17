@@ -1,0 +1,62 @@
+{
+  "schema_version": 1,
+  "scope": "All rational replacements of twist boxes on a connected BBK base with four faces and simple checkerboard dual. Excludes all28 retained mixed double-cover knots. No arbitrary algebraic replacements or rank-dropping higher-face bases.",
+  "expected_names": [
+    "13a_3145",
+    "13a_3147",
+    "13a_3148",
+    "13a_3149",
+    "13a_373",
+    "13a_375",
+    "13a_391",
+    "13a_392",
+    "13a_3264",
+    "13a_3266",
+    "13a_3275",
+    "13a_3276",
+    "13n_1005",
+    "13n_1006",
+    "13n_1007",
+    "13n_1011",
+    "13n_1012",
+    "13n_1013",
+    "13n_1043",
+    "13n_1044",
+    "13n_1045",
+    "13n_1046",
+    "13n_1047",
+    "13n_1048",
+    "13n_3842",
+    "13n_3844",
+    "13n_3855",
+    "13n_3856"
+  ],
+  "graph_counts": {
+    "connected": 38,
+    "K4": 1,
+    "tree_after_leaf_deletions": 16,
+    "triangle_with_leaf": 12,
+    "four_cycle": 3,
+    "diamond": 6
+  },
+  "mixed_exception_H1_F2_dimensions": {
+    "figure_eight": 1,
+    "Klein_bottle_I_bundle": 2,
+    "gluing_torus": 2,
+    "lower_bound": 1
+  },
+  "source_sha256": {
+    "seed_cover_topology_inputs.json": "44ed55f6107ee8fb8cd5ffa6558e0e6124339b21d8abb3a60b5c519c70886259",
+    "seed_cover_topology_verification.json": "18bcc6a93d680e23d983b132edb8bf987933e44a0bc78ec03be7600c9d4e5c8c",
+    "sources/bbk-coxeter-published-2021.html": "57475efdf6c7e40f6a14ba2da6a0141cc0e5f0ae8a48cc0a3d457ca02c3c9da8",
+    "sources/bonahon-siebenmann-2016.pdf": "c887732f91421ce8bf424f32ab4c3b52b842a5c15f8bc95c62599b8d8baa88a6",
+    "sources/kolpakov-martelli-one-cusp-1303.6122v7.pdf": "ca4c8aac66f01bfc56304e820a173bcb8bc933b32d0717839d4c8c132214ef12",
+    "sources/martelli-seven-chain-1808.08430v2.pdf": "b2c8436322c80419d023d58eb8978ce7de10c9f9ad78a6c96e53b0b99685ed1f"
+  },
+  "primary_imports": {
+    "KM13": "arXiv1303.6122v7 Fig2/Section1.1 pp5-6: actual degree2 branched covering with six four-marked cusp spheres",
+    "MAR21": "arXiv1808.08430v2 Thm2.7 pp15-16: complete closed nonhyperbolic M6 filling list",
+    "BS16": "26Jan2016 author monograph Intro ppvi-vii: algebraic/arborescent correspondence and graph-manifold double covers",
+    "BBK21": "Published Theorem1 and Section4: number of plane regions equals bridge number, dual graph simple"
+  }
+}

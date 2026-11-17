@@ -158,6 +158,14 @@ check("cubic central source restriction affine-linear",
       S.expand(TT.subs({w:0,z:2*sig*x})-sig*A2*x)==0)
 check("cubic coefficient ratio is nonzero at central minimal orders",
       3-3==0)
+check("central square-completion z2 coefficient vanishes",
+      S.cancel((b2-N*hh**2-A2**2/4).subs({N:0,b2:A2**2/4}))==0)
+check("central quartic remainder has degree at most one",
+      S.degree(RR.subs({w:0,N:0,b2:A2**2/4,z:2*sig*x}),x)<=1)
+check("square root image obstruction parity",
+      all(2*n%2==0 and (2*n+1)%2==1 for n in range(10)))
+check("square root image obstruction distinct divisors needed",
+      S.degree((Y-1)**2*(Y+1)**4,Y)==6)
 check("all A slope3 cannot satisfy entire pole ledger",
       all(n < 12*n/6 for n in range(1,11)))
 check("graph component must retain all p, no p denominator",

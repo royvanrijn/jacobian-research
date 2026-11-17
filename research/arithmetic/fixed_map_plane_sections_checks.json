@@ -1,0 +1,69 @@
+{
+  "ambient_lower_coefficient": "8/zeta(3)",
+  "checker_sha256": "46c37de5dd759a167bb1ad3970b80b8c9e86e1f57625a0baeb177405e9f1fdef",
+  "checks": {
+    "c_zero_section_coordinates": 3,
+    "finite_nontautological_plane_gcd_controls": 27,
+    "primitive_plane_union_height_controls": 6,
+    "root_incidence_identities": 2,
+    "special_plane_and_scalar_parameter_controls": 8,
+    "structural_generic_plane_resultant_controls": 3,
+    "u_zero_section_and_remaining_line_coordinates": 6
+  },
+  "command": ".venv/bin/python research/arithmetic/verify_fixed_map_plane_sections.py --write-receipt",
+  "exact_structural_resultant": {
+    "beta_zero_resultant": "81*(alpha*pi+delta)^2/1024",
+    "leading_pi_coefficient": "beta^5",
+    "leading_pi_degree": 10
+  },
+  "external_review": false,
+  "formal_verification": false,
+  "independent_whole_proof_replay": false,
+  "input_sha256": {
+    "research/arithmetic/sources/buggenhout-et-al-thin-projective-2506.13471v2.pdf": "b17dcc202fbacce051db03367f413003f8dbffbea1de3baa6b4a07e1147e6b77",
+    "unpublished/fixed-map-hasse-failures/sections/02-fixed-map.tex": "30bbf982bdef3fcdf609c230327a16968efd320cbf87d54309cc1e7f7206bfc1"
+  },
+  "primitive_counts": [
+    {
+      "height": 1,
+      "intersection_line": 3,
+      "one_plane": 9,
+      "two_plane_union": 15
+    },
+    {
+      "height": 2,
+      "intersection_line": 7,
+      "one_plane": 41,
+      "two_plane_union": 75
+    },
+    {
+      "height": 3,
+      "intersection_line": 15,
+      "one_plane": 129,
+      "two_plane_union": 243
+    },
+    {
+      "height": 5,
+      "intersection_line": 39,
+      "one_plane": 537,
+      "two_plane_union": 1035
+    },
+    {
+      "height": 10,
+      "intersection_line": 127,
+      "one_plane": 3617,
+      "two_plane_union": 7107
+    },
+    {
+      "height": 20,
+      "intersection_line": 511,
+      "one_plane": 28001,
+      "two_plane_union": 55491
+    }
+  ],
+  "proof_sha256": "49fc3b38cf46c99fdde607ec70c682705f9a44ed2027c6c11d05c080addab179",
+  "python": "3.12.3",
+  "scope": "Exact symbolic section and resultant identities, 27 bounded plane gcd controls, and primitive plane-union enumeration through height20. These do not prove the unrestricted irreducibility, projective thin-set theorem, or asymptotic.",
+  "status": "pass",
+  "sympy": "1.14.0"
+}

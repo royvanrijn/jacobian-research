@@ -1,0 +1,380 @@
+\documentclass[11pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb,amsthm,booktabs}
+\usepackage[hidelinks]{hyperref}
+\setlength{\emergencystretch}{2em}
+\newtheorem{theorem}{Theorem}
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{corollary}[theorem]{Corollary}
+\newcommand{\mr}{\operatorname{mr}}
+\newcommand{\rank}{\operatorname{rank}}
+\newcommand{\tr}{\operatorname{tr}}
+\newcommand{\adj}{\operatorname{adj}}
+\newcommand{\C}{\mathbb C}
+\newcommand{\Q}{\mathbb Q}
+\newcommand{\Z}{\mathbb Z}
+\title{Reflective augmentation rank below meridional rank}
+\author{Internal research working proof}
+\date{17 November 2026}
+\begin{document}
+\maketitle
+
+For eight retained knots of meridional rank four, every reflective
+augmentation has rank at most three. All eight have explicit reflective augmentations of rank exactly
+three, in prime cyclotomic fields. They also admit explicit
+rank-three Coxeter triangle quotients, so their maximum Coxeter
+reflection-quotient rank is exactly three. Every
+$SL_2\C$ character of each double branched cover is invariant under
+the deck involution. We give direct linear-algebra proofs of the
+upper bound and this character consequence.
+
+Reflective augmentations are a specific commutative unoriented cord
+quotient of knot contact homology. No upper bound on unrestricted
+augmentation rank is claimed. The character consequence is a concrete
+application, with an independent proof, of the conclusion of
+Cornwell's conditional theorem \cite[Theorems 1.1 and 5.5]{cornwell}.
+The uniform arguments and exact internal computations below have not
+received formal verification or external specialist review. No global
+priority claim is made.
+
+\section{The exact cord-matrix convention}
+
+We use Cornwell's positive sign convention for the unoriented abelian
+cord ring $HC_0^{\mathrm{ab}}(K)$ \cite[Definitions 3.1, 3.3 and 3.4]{cornwell}.
+For a diagram with arcs $0,\ldots,n-1$, an evaluation is specified by a
+symmetric matrix $C=(c_{ij})$ with
+\begin{equation}\label{eq:cord}
+ c_{ii}=2,\qquad c_{\ell j}+c_{\ell k}=c_{\ell i}c_{ij}
+ \quad\text{for every crossing }(i,j,k)\text{ and every }\ell.
+\end{equation}
+Here $i$ is the over-arc and $j,k$ are the two under-arcs.
+The diagrammatic presentation theorem quoted in
+\cite[Theorem 3.2]{cornwell}, with credit to Ng, identifies these
+solutions with evaluations of that cord ring.
+A reflective augmentation is an augmentation factoring through this
+quotient, and its rank is $\rank C$. We import that exact presentation
+and terminology; the upper-bound argument below is proved directly
+from \eqref{eq:cord}, without an augmentation--representation theorem.
+Write $a_{\mathrm{ref}}(K)$ for the largest reflective augmentation rank.
+
+Let
+\[
+\mathcal K_8=\{13a_{373},13a_{375},13a_{391},13a_{392},
+13a_{3264},13a_{3266},13a_{3275},13a_{3276}\}.
+\]
+The literal diagrams, arc numbering and original four-seed systems are
+those of the retained seven-sheet certificates and universal reflection
+obstruction. Knot identity and planarity are established by those
+separate certificates, rather than inferred from the labels here.
+
+\section{A Gram quotient converts cord matrices into reflections}
+
+\begin{lemma}\label{lem:gram}
+Let $k$ be any field of characteristic different from two, and let $C$
+be a symmetric cord matrix satisfying \eqref{eq:cord} on one of the
+retained diagrams. On
+\[
+                 V=k^n/\ker C,\qquad
+                 B([x],[y])=x^{\mathsf T}Cy,
+\]
+the classes $v_i=[e_i]$ have norm two and satisfy
+\[
+                   v_j+v_k=c_{ij}v_i,\qquad
+                   R_{v_i}(v_j)=-v_k,
+                   \quad R_u(x)=x-B(u,x)u.
+\]
+The reflections $R_{v_i}$ give a knot-group representation. The
+original four seed classes span $V$, whose dimension is $\rank C$.
+\end{lemma}
+\begin{proof}
+The displayed form is well defined and nondegenerate on the quotient.
+It has $B(v_i,v_i)=2$, so no $v_i$ vanishes. For each crossing,
+\eqref{eq:cord} says
+\[
+ B(v_\ell,v_j+v_k-c_{ij}v_i)=0\qquad\text{for every }\ell.
+\]
+The vector therefore lies in $\ker C$ before taking the quotient,
+and is zero afterwards. The reflection formula follows immediately.
+Thus
+\[
+ R_{v_i}R_{v_j}R_{v_i}=R_{R_{v_i}v_j}=R_{-v_k}=R_{v_k},
+\]
+which is the involutory form of either sign of a Wirtinger relation.
+Every retained propagation step expresses the new vector as a linear
+combination of two known vectors. Hence the four original seed
+classes span every $v_i$, and these classes span $V$.
+\end{proof}
+
+\begin{theorem}\label{thm:upper}
+For every $K\in\mathcal K_8$, every symmetric cord matrix over a
+field of characteristic different from two has rank at most three.
+In particular,
+\[
+                    a_{\mathrm{ref}}(K)\le3<4=\mr(K)=b(K).
+\]
+\end{theorem}
+\begin{proof}
+Lemma~\ref{lem:gram} gives a common-form reflection representation
+with the original four seed classes spanning a space of dimension
+$\rank C$. The retained universal reflection theorem says their normal
+directions are dependent for each of these eight diagrams, even if
+an intermediate Gram form is singular. Thus $\rank C\le3$.
+The meridional-rank and bridge equalities are supplied independently
+by the retained seven-sheet cover and four-seed upper certificates.
+The explicit finite-group epimorphisms in
+\path{TERNARY_AFFINE_QUOTIENTS.tex} provide a second proof of these
+equalities, without using a cover-group rank certificate.
+\end{proof}
+
+This proof never inverts a cord matrix or assumes that it is a Gram
+matrix of independent vectors before passing to its radical quotient.
+It concerns every complex solution of the cord equations, not just
+real, positive definite, or finite-image solutions.
+
+\section{Exact positive certificates and the remaining lower bound}
+
+\begin{theorem}\label{thm:positive}
+For every $K\in\mathcal K_8$,
+\[
+                      a_{\mathrm{ref}}(K)=3<4=\mr(K)=b(K).
+\]
+\end{theorem}
+\begin{proof}
+The following construction gives exact rank-three matrices. In each
+row of the table, use either knot name in the left column and let
+$p$ and the eight colours be as displayed. Columns are the reduced
+arc labels obtained by identifying $4$ with $0$ and $7$ with $6$.
+\[
+\begin{array}{c|r|rrrrrrrr}
+ K&p&0&5&6&8&9&10&11&12\\\hline
+13a_{373},13a_{3264}&7&0&2&1&1&3&6&1&5\\
+13a_{375},13a_{3266}&37&0&30&1&6&17&22&15&34\\
+13a_{391},13a_{3275}&37&0&8&1&4&23&16&21&32\\
+13a_{392},13a_{3276}&7&0&6&1&3&0&2&5&0
+\end{array}
+\]
+These satisfy $f_j+f_k=2f_i\pmod p$ at each of the eight reduced
+crossings. In particular, $f_0=0$ and $f_6=1$.
+
+Let $\zeta$ be a primitive $p$th root of unity and put
+$x=\zeta+\zeta^{-1}$. On a free three-dimensional space with basis
+$E_0,E_1,V$, take the symmetric form
+\[
+ G=\begin{pmatrix}2&1&x\\1&2&0\\x&0&2\end{pmatrix}
+ \quad\text{for }13a_{373},13a_{375},13a_{391},13a_{392},
+\]
+and
+\[
+ G=\begin{pmatrix}2&1&0\\1&2&-x\\0&-x&2\end{pmatrix}
+ \quad\text{for }13a_{3264},13a_{3266},13a_{3275},13a_{3276}.
+\]
+Put $U=E_0-E_1$. In both cases $U,V$ have norm two and
+$B(U,V)=x$. Define planar roots by
+\[
+                  r_0=U,\quad r_1=V,\quad
+                  r_{k+1}=xr_k-r_{k-1}.
+\]
+The characteristic roots of this recurrence are $\zeta,\zeta^{-1}$,
+so $r_{k+p}=r_k$. Their norms are two and
+$R_{r_i}(r_j)=-r_{2i-j}$.
+For arcs outside $\{1,2,3\}$ assign the raw vector $r_{f_a}$,
+using the two identifications above. Assign raw vectors $E_0$ to
+arc $1$, $E_1$ to arc $3$, and $E_1$ or $E_0$ to arc $2$ in the
+first or second Gram convention, respectively.
+Multiply these thirteen raw vectors by the signs
+\[
+                     (1,-1,1,-1,-1,-1,-1,1,1,1,1,1,1).
+\]
+Denote the resulting vectors by $v_a$ and set $c_{ab}=B(v_a,v_b)$.
+The eight reduced Fox equations, the local norm-two $A_2$ relations,
+and the displayed signs give $v_k=-R_{v_i}v_j$ at every crossing.
+The checker reconstructs all vectors and verifies every crossing-row
+identity in \eqref{eq:cord}, rather than assuming this sign compatibility.
+
+The factorization $C=RGR^{\mathsf T}$ gives rank at most three.
+The principal minor at arcs $(1,2,6)$ in the first convention or
+$(1,3,6)$ in the second is
+\[
+                            \det G=2(3-x^2)\ne0.
+\]
+For nonvanishing, $x^2=3$ would imply
+$\zeta^4-\zeta^2+1=0$, and hence $\zeta^{12}=1$, impossible for
+primitive order $7$ or $37$. Thus the matrices have rank exactly
+three over $\Q(\zeta)$, and any complex embedding gives the required
+reflective augmentation. Theorem~\ref{thm:upper} proves maximality.
+\end{proof}
+
+Four additional independent controls are retained over
+$\Q(\phi)$, where $\phi^2=\phi+1$, for
+$13a_{373},13a_{392},13a_{3264},13a_{3276}$.
+Each gives thirteen explicit vectors in $\Q(\phi)^4$ with norm four,
+sets $c_{ij}=(r_i\cdot r_j)/2$, and verifies all cord equations and
+rank three by exact field elimination. These witnesses were found
+from reflection colourings followed by a separate signed cord check.
+They are not needed for the uniform cyclotomic construction.
+
+\section{Explicit rank-three Coxeter triangle quotients}
+
+\begin{theorem}\label{thm:triangle}
+Every $K\in\mathcal K_8$ has a meridian-preserving epimorphism onto
+the Coxeter triangle group $W(2,3,p)$, where $p=7$ or $37$ is the
+prime assigned in the table above. Together with the universal
+reflection obstruction, this shows that its maximum Coxeter
+reflection-quotient rank is exactly three.
+\end{theorem}
+\begin{proof}
+Use generators $A,B,C$ of order two. In the first Gram convention,
+let the target presentation be
+\[
+       (AB)^3=(BC)^2=(AC)^p=1,
+\]
+and in the second let it be
+\[
+       (AB)^3=(AC)^2=(BC)^p=1.
+\]
+These are two labellings of the same rank-three Coxeter triangle
+system. Put $S=BAB=ABA$, the equality following from $(AB)^3=1$.
+In either presentation, $(CS)^p=1$: in the first, $B$ commutes with
+$C$ and conjugates $CA$ to $CS$; in the second, $A$ commutes with
+$C$ and conjugates $CB$ to $CS$.
+
+Set $q=CS$. The reflections $t_i=q^iS$, indexed modulo $p$, satisfy
+\[
+                           t_i t_j t_i=t_{2i-j}.
+\]
+Assign $t_{f_a}$ to every reduced arc in the table; the eight Fox
+congruences give all reduced Wirtinger relations. On the five local
+crossings, assign $A$ to arc $1$ and $B$ to arc $3$. Assign $B$ to
+arc $2$ in the first convention and $A$ in the second, while arcs
+$0,4$ are $S$ and arcs $6,7$ are $C$. The relations of the $A_2$
+pair $A,B$ and the indicated commuting pair verify those remaining
+crossings. Every assigned image is a Coxeter reflection: $S$ is a
+conjugate of a simple generator, and since $p$ is odd all $q^iS$
+are conjugate to $S$ in the dihedral subgroup.
+
+The images include all three standard generators $A,B,C$, so the
+homomorphism is onto the abstract Coxeter group. This argument does
+not infer an abstract quotient merely from a matrix image, and uses
+no faithfulness or specialization assertion. The universal
+reflection theorem gives the matching upper bound three on Coxeter
+reflection-quotient rank.
+\end{proof}
+
+The groups $W(2,3,7)$ and $W(2,3,37)$ are hyperbolic triangle
+Coxeter groups. These quotients are consistent with the absence of
+sharp finite Coxeter targets: their rank-three lower bounds still
+fall short of the seven-sheet lower bound four.
+
+\section{Deck invariance of every double-cover character}
+
+\begin{theorem}\label{thm:deck}
+For every $K\in\mathcal K_8$ and every
+$\rho:\pi_1(\Sigma_2K)\to SL_2\C$, the characters of $\rho$ and
+$\rho\circ\tau_*$ agree, where $\tau$ is the deck involution.
+Equivalently,
+\[
+                          X^\tau(\Sigma_2K)=X(\Sigma_2K).
+\]
+\end{theorem}
+\begin{proof}
+In the meridian-square orbifold group, fix a meridian $m_0$ and put
+$a_i=m_i m_0$, with $a_0=1$. Reidemeister--Schreier rewriting gives
+the double-cover presentation
+\[
+                 a_k=a_i a_j^{-1}a_i\quad\text{at }(i,j,k),
+                  \qquad \tau_*(a_i)=a_i^{-1}.
+\]
+The second transversal rewrite is the inverse of the first, so no
+additional relation is being omitted. Set $A_i=\rho(a_i)$ and
+consider $M_2(\C)$ with the nondegenerate symmetric form
+\[
+                          B(X,Y)=\tr(X\adj Y).
+\]
+It has $B(A_i,A_i)=2$. The generic two-by-two identity
+\begin{equation}\label{eq:adj}
+ X\adj(Y)X=B(X,Y)X-\det(X)Y
+\end{equation}
+shows
+\[
+                   A_k=B(A_i,A_j)A_i-A_j=-R_{A_i}(A_j).
+\]
+As in Lemma~\ref{lem:gram}, these normals define a knot-group
+reflection representation, and the four seed matrices span all
+$A_i$. The universal reflection theorem therefore gives
+\[
+                         E=\langle A_i\rangle,\qquad\dim E\le3.
+\]
+Since $I=A_0\in E$, all traceless parts
+$X_i=A_i-\frac12\tr(A_i)I$ lie in a subspace
+$W\subset\mathfrak{sl}_2(\C)$ of dimension at most two.
+
+Suppose first that $\rho$ is irreducible. If $\dim W\le1$, all
+$A_i$ are polynomials in a common matrix and have a common eigenline,
+a contradiction. Thus $\dim W=2$.
+The trace form $\tr(XY)$ is nondegenerate on $W$. Otherwise a nonzero
+radical vector $N\in W$ satisfies $\tr(N^2)=0$. As $N$ is traceless,
+Cayley--Hamilton gives $\det N=0$, so $N$ is nonzero nilpotent.
+Conjugate it to an upper triangular matrix supported at entry $(1,2)$.
+The equalities $\tr(NX_i)=0$ force every $X_i$ to be upper triangular,
+contradicting irreducibility.
+
+The orthogonal complement of $W$ in the nondegenerate
+three-dimensional trace space $\mathfrak{sl}_2(\C)$ is therefore a
+nonisotropic line. Choose a nonzero matrix $Z$ on this line. It is
+invertible, and the traceless two-by-two identity
+\[
+                         ZX+XZ=\tr(ZX)I
+\]
+gives $ZX_i=-X_iZ$. Consequently
+\[
+                 ZA_iZ^{-1}=\tfrac12\tr(A_i)I-X_i
+                              =\adj A_i=A_i^{-1}.
+\]
+Rescale $Z$ to determinant one, which is possible over $\C$.
+The resulting matrix conjugates $\rho$ to $\rho\circ\tau_*$ on the
+generators and therefore on the full group.
+
+If $\rho$ is reducible, replace it by its diagonal semisimplification,
+which has the same character. Its diagonal characters are $\eta$
+and $\eta^{-1}$. Since $\tau_*$ inverts every $a_i$, it interchanges
+these two diagonal characters. Swapping the two diagonal entries is
+conjugation in $SL_2\C$, so the character is again unchanged.
+\end{proof}
+
+Cornwell's Theorem 5.5 proves this conclusion under the general
+hypothesis $a_{\mathrm{ref}}(K)\le3$. The proof above independently
+derives its first character conclusion on the eight retained knots.
+No new general equivalence with arbitrary character varieties is
+claimed, and no assertion about their reduced coordinate rings is
+needed here.
+
+\section{Verification and scope}
+
+The standard-library checker reconstructs the canonical arc components
+of all eight literal diagrams. It verifies 2,028 exact crossing-row identities across eight prime
+cyclotomic witnesses and four independent quadratic-field controls,
+exact ranks or nonzero principal minors, and the cyclotomic root
+recurrences. The reduced colours and local $A_2$ pattern are checked
+against the literal diagrams. Dihedral conjugation is separately
+checked on all pairs of polygon reflections at orders seven and
+thirty-seven.
+It separately verifies \eqref{eq:adj}, symmetry and nondegeneracy of
+the matrix form, and the traceless anticommutator identity as generic
+integer polynomial identities. A deliberately corrupted symmetric
+cord matrix is rejected.
+
+The uniform upper bound uses the written Gram quotient and the
+retained universal reflection proof. The deck statement also uses
+the written presentation and irreducible/reducible linear-algebra
+arguments. The finite controls do not formally verify those arguments.
+Unrestricted augmentation rank, external review and complete
+worldwide priority remain open.
+
+\begin{thebibliography}{9}
+\bibitem{cornwell} C. R. Cornwell,
+Character varieties of knot complements and branched double-covers
+via the cord ring, arXiv:1509.04962v1 (2015), Sections 3--5,
+Theorem 3.2, Definitions 3.3--3.4, and Theorems 1.1 and 5.5.
+\url{https://arxiv.org/abs/1509.04962v1}.
+\end{thebibliography}
+\end{document}

@@ -1,0 +1,180 @@
+{
+  "status": "passed",
+  "scope": "Exact residue/discriminant controls and bounded Newton-hull controls; not a proof of unrestricted integral Hasse nonexistence or an independent whole-proof replay.",
+  "python": "3.12.3",
+  "sympy": "1.14.0",
+  "checker_sha256": "888cbd5efbcfa884a36993a9a4f94b21a297b55ba62ae9844c9232b5256822ca",
+  "source_sha256": "781e1b7320ddc7137078e195f0eb499ebaaf029bed249c56689c3ec43b1c13ec",
+  "check_count": 28,
+  "checks": [
+    {
+      "name": "mod_nine_factor_difference",
+      "passed": true
+    },
+    {
+      "name": "shifted_linear_coefficient",
+      "passed": true
+    },
+    {
+      "name": "shifted_constant",
+      "passed": true
+    },
+    {
+      "name": "cubic_discriminant_formula",
+      "passed": true
+    },
+    {
+      "name": "other_discriminant_terms_divisible_eighty_one",
+      "passed": true
+    },
+    {
+      "name": "all_unit_constant_classes",
+      "passed": true,
+      "unit_classes": [
+        1,
+        2,
+        4,
+        5,
+        7,
+        8
+      ],
+      "constant_residues": [
+        6,
+        6,
+        3,
+        3,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "shifted_linear_normalized_units",
+      "passed": true
+    },
+    {
+      "name": "shifted_cubic_discriminant_normalized_units",
+      "passed": true
+    },
+    {
+      "name": "finite_Hensel_discriminant_controls",
+      "passed": true,
+      "residue_cases": 486,
+      "modulus": 19683
+    },
+    {
+      "name": "divisible_pi_Newton_hull_controls",
+      "passed": true,
+      "hull_cases": 2730
+    },
+    {
+      "name": "supporting_line_index_two",
+      "passed": true
+    },
+    {
+      "name": "supporting_line_index_one",
+      "passed": true
+    },
+    {
+      "name": "supporting_line_index_zero",
+      "passed": true
+    },
+    {
+      "name": "two_adic_tame_cubic_Newton_controls",
+      "passed": true,
+      "hull_cases": 98,
+      "c_valuations": "0 through12 and zero constant",
+      "pi_valuations": "0 through3 and the three even-b cases"
+    },
+    {
+      "name": "two_adic_automatic_simple_root_residues",
+      "passed": true,
+      "residue_cases": 1596,
+      "pi_unit_controls": [
+        -3,
+        -1,
+        1,
+        3
+      ],
+      "odd_b_unit_controls": [
+        -5,
+        -3,
+        -1,
+        1,
+        3,
+        5
+      ],
+      "c_controls": "-3 through3 or twice this range"
+    },
+    {
+      "name": "two_adic_residual_quintic_irreducible",
+      "passed": true
+    },
+    {
+      "name": "two_adic_residual_quintic_no_linear",
+      "passed": true
+    },
+    {
+      "name": "two_adic_residual_quintic_no_quadratic",
+      "passed": true
+    },
+    {
+      "name": "two_adic_irreducible_quintic_residue_controls",
+      "passed": true,
+      "residue_cases": 144
+    },
+    {
+      "name": "two_adic_tame_cubic_discriminant",
+      "passed": true
+    },
+    {
+      "name": "two_adic_resolvent_nonsplit_residue",
+      "passed": true
+    },
+    {
+      "name": "two_adic_unit_cube_simple_root",
+      "passed": true
+    },
+    {
+      "name": "proper_S3_quadratic_orbit_controls",
+      "passed": true,
+      "proper_subgroups": 5
+    },
+    {
+      "name": "divisible_pi_theta_coefficient_valuations",
+      "passed": true
+    },
+    {
+      "name": "theta_unit_roots_simple_mod_three",
+      "passed": true
+    },
+    {
+      "name": "ramified_field_unit_minus_two_square",
+      "passed": true
+    },
+    {
+      "name": "unit_pi_resolvent_classes",
+      "passed": true
+    },
+    {
+      "name": "explicit_integral_low_prime_escape_example",
+      "passed": true,
+      "target": [
+        1,
+        4,
+        12
+      ],
+      "discriminant": "2^24*3^6*50260753",
+      "two_adic_Hensel_point_and_valuations": [
+        2,
+        3,
+        1
+      ],
+      "three_adic_Hensel_point_and_valuations": [
+        5,
+        4,
+        1
+      ],
+      "no_residue_roots_modulo": 11
+    }
+  ]
+}

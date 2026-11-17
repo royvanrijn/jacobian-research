@@ -16,6 +16,11 @@ completed families, this covers every ordinary univariate binomial of
 degree at most four. Additional Newton criteria give irreducibility
 and consecutive-moment certificates at other lower exponents. Arbitrary gaps,
 general lower exponents and unrestricted Strong Factorial remain open.
+For the remaining quintic support $X^2(A+BX^3)$, a uniform
+five-adic rank argument confines any common-pair root to
+$v_5(z^3)>3/5$. At $v_5(z^3)=1$ and indices $n\ge8$, we also
+exclude $n\equiv0,2,4\pmod5$ and restrict the other two root disks.
+The remaining inner region stays open.
 
 For integers $N\ge1$, $C\ge0$ and $d\ge1$, put
 \[
@@ -603,6 +608,441 @@ This proves the ordinary lower-one assertion at every prime-power gap,
 including the quartic binomial $X(A+BX^3)$.
 It does not prove all positive real Gamma shapes, arbitrary gaps,
 or general lower exponents.
+
+\section{A five-adic radius for the quintic mixed pair}
+The remaining ordinary quintic support is $X^2(A+BX^3)$.
+For $m\ge1$ put
+\[
+ B=B_{m,2m+1,3},\quad C=B_{m+1,2m+1,3},\quad
+ D=B_{m+2,2m+1,3},\qquad
+ H=5(5m+4)D+3z^3B .
+\]
+The exact \href{lower_exponent_initial_and_boundary.tex}{two-shape
+adjoint criterion} identifies a common zero of the ordinary moments
+at orders $m,m+1$ with a rank drop of the two cyclic-section rows
+of $(C,H)$ at a nonzero argument $u=z^3$.
+The following result confines that possible rank drop and excludes its first boundary. It does not prove the
+all-terminal quintic assertion.
+
+\begin{lemma}\label{lem:quintic-annulus-flags}
+Write $J_{n,\delta}=B_{n,2n+\delta,3}$ for
+$\delta\in\{1,-1,-3\}$, and let $n=5\ell+s$, $0\le s<5$.
+For $0<r=v_5(z)<1/5$, this polynomial has a unique
+least-valuation monomial, of degree $5\ell+e_{s,\delta}$ and
+with unit coefficient, where
+\[
+ \begin{array}{c|ccccc}
+ \delta\backslash s&0&1&2&3&4\\\hline
+ 1&0&1&1&1&3\\
+ -1&0&0&1&1&1\\
+ -3&0&0&0&2&4
+ \end{array} .                                           \tag{Q1}
+\]
+For $m=5\ell+s$ with $s=2$ or $3$, put $L=5\ell+1$.
+The further flag
+\[
+ F=C-(5m+3-L)B=(z-(zD_z-L))B
+\]
+has a unique least-valuation monomial of degree $L+2$ and
+unit coefficient throughout the same annulus.
+\end{lemma}
+\begin{proof}
+The exact auxiliary coefficient formula is
+\[
+ [z^j]J_{n,\delta}
+ =\frac{n!}{j!}[x^{n-j}]G_{n,\delta}(x),\quad
+ G_{n,\delta}=(1-x)^{-2n-\delta}
+             (1-x+x^2/3)^{-n-1}.
+\]
+Its ordinary coefficients are five-adic integral.
+Write $j=5(\ell-k)+i$, $0\le i<5$.
+For $j\le n$, $k\ge0$ and $v_5(n!/j!)\ge k$.
+
+In $\mathbb F_5[x]$ put $Q=1-x+2x^2$ and
+$a=\lceil(2s+\delta)/5\rceil$.
+The reduction of $G_{n,\delta}$ is
+\[
+ N_{s,\delta}(x)=(1-x)^{5a-2s-\delta}Q^{4-s}
+\]
+times a series in $x^5$ with constant coefficient one.
+For every $i<e_{s,\delta}$, the numerator has zero coefficients
+in the entire residue class $s-i$ modulo five; its coefficient
+at degree $s-e_{s,\delta}$ is nonzero.
+These fifteen finite polynomial calculations give (Q1).
+Consequently coefficients with $i<e$ gain an extra factor five,
+and $j=5\ell+e$ has unit coefficient.
+Relative to that monomial, every other term has valuation at least
+\[
+ k(1-5r)+(i-e)r+\mathbf1_{i<e}>0.
+\]
+This proves the first assertion for every $n$.
+
+For the further flag write $G_{m,1}=\sum c_jx^j$, with
+$c_j=0$ for $j<0$. Its coefficient is
+\[
+ [z^j]F=\frac{m!}{j!}
+       \bigl[jc_{m-j+1}-(j-L)c_{m-j}\bigr].
+\]
+The two relevant numerators modulo five are
+\[
+ N_{2,1}=1-2x+x^3-x^4,\qquad
+ N_{3,1}=1+x-2x^2+2x^4-2x^5.
+\]
+Both have zero section of residue $s$.
+Their sections also satisfy
+$2(N_{s,1})_{s-1}=(N_{s,1})_{s-2}$, where a section collects
+powers in the indicated residue class modulo five.
+These identities remain true after multiplication by a series
+in $x^5$.
+In the displayed flag coefficient the bracket therefore vanishes
+modulo five when $j\bmod5$ is zero, one, or two.
+Every such coefficient gains one beyond the bound $k$.
+The coefficient at $j=5\ell+3$ is a unit:
+for $s=2$ it is the monic top coefficient, and for $s=3$ it is
+congruent to $m(3m+2)-2\equiv1\pmod5$.
+The possible index $j=m+1$ has unit denominator $m+1$ in these
+two states. The preceding valuation argument, now with $e=3$,
+proves the second assertion.
+\end{proof}
+
+\begin{lemma}\label{lem:quintic-five-adic-boundary}
+For every $m\ge1$, the cyclic rows of $(C,H)$ have rank two
+at every $u$ with $v_5(u)=3/5$.
+\end{lemma}
+\begin{proof}
+Choose $\pi$ with $\pi^5=5$ and write $z=\pi x$, where $x$ is
+a unit. For $n=5\ell+s$ and $j=5(\ell-k)+i$, factorial blocks give
+\[
+ \frac{n!}{j!5^k}\equiv
+       (-1)^k\frac{s!}{i!}\ell^{\underline k}\pmod5.       \tag{Q4}
+\]
+This also holds at the index $j=n+1$ used by the further flag:
+its denominator is a unit in the relevant states.
+Negative indices are omitted.
+Every term with $k\ge5$ vanishes, because
+$\ell^{\underline k}$ contains a multiple of five.
+
+Write $\bar c_j=[X^j]N_{s,\delta}(X)
+\mathcal H_{\ell,s,\delta}(X^5)$, with negative indices zero, where
+\[
+ \mathcal H_{\ell,s,\delta}(y)
+ =(1-y)^{-2\ell-a}(1-y+2y^2)^{-\ell-1},\qquad
+ a=\lceil(2s+\delta)/5\rceil.
+\]
+These are the coefficients of $G_{n,\delta}$ modulo five.
+For a flag $e$ from (Q1), normalize the row by
+$\pi^{5\ell+e}$. Terms in the other four residue layers vanish:
+higher layers have a positive extra power of $\pi$, and lower
+layers have the extra five from the flag identity.
+Its residue is
+\[
+ x^{5\ell+e}\beta_{\ell,s,\delta,e}(x^{-5}),\qquad
+ \beta_{\ell,s,\delta,e}(t)
+ =\frac{s!}{e!}\sum_{k=0}^4
+        (-1)^k\ell^{\underline k}\bar c_{5k+s-e}t^k.      \tag{Q5}
+\]
+All factorial quotients in (Q5) are in $\mathbb F_5$.
+
+For $s<4$, put $e=e_{s,1}$ and use the row
+$F=C-(5m+3-5\ell-e)B$.
+Its flag is $e_F=1,2,3,3$ for $s=0,1,2,3$.
+The first two flags follow from the factor $j-L$ and the zero
+section in (Q1); the last two were proved above.
+The normalized residue of $F$ is $x^{5\ell+e_F}\phi(x^{-5})$,
+where
+\[
+ \phi(t)=\frac{s!}{e_F!}\sum_{k=0}^4(-1)^k\ell^{\underline k}
+ \bigl[e_F\bar c_{5k+s-e_F+1}
+       -(e_F-e)\bar c_{5k+s-e_F}\bigr]t^k.               \tag{Q6}
+\]
+For $s=4$, use $C=J_{m+1,-1}$ instead.
+Its normalized profile is $x^{5\ell+5}\beta(x^{-5})$,
+with (Q5) taken at $(\ell+1,0,-1,0)$.
+
+Only coefficients of $\mathcal H$ through degree four occur.
+Replacing $\ell$ by $\ell+5$ multiplies $\mathcal H$ by a series
+in $y^5$ with constant coefficient one.
+Together with $\ell^{\underline k}\bmod5$, this proves that all
+inputs depend only on $s$ and $\ell\bmod5$, giving exactly
+twenty-five profiles.
+
+Set $E=5(5m+4)D/(3u)$.
+For $s<4$, invertible row operations replace $(C,H)$ by
+$(B+E,F-(5m+3-5\ell-e)E)$.
+After normalization, the error has strictly positive valuation:
+the smaller gaps in the four states are
+$1/5,2/5,3/5,4/5$, respectively.
+For $s=4$, use $(H/(3u),C)=(B+E,C)$, whose error gap is $4/5$.
+These bounds use (Q1) at the boundary, where it remains a
+lower bound on every coefficient even if leading terms cancel.
+
+Remove the common unit column factor $x^{5\ell}$ and multiply
+both residual rows by the common unit $x^{20}$.
+The resulting ordinary polynomials are
+\[
+ U=x^{20+e}\beta(x^{-5}),\qquad
+ V=x^{20+e_F}\phi(x^{-5}),
+\]
+with the indicated $C$ profile and $e_F=5$ in state four.
+Their three sections are taken in $v=x^3$.
+For each of the twenty-five inputs, the retained
+\href{arithmetic_frontier_quintic_boundary_profiles.json}
+{literal polynomial certificate} supplies Bezout multipliers
+for the three maximal minors:
+\[
+ A_{01}M_{01}+A_{02}M_{02}+A_{12}M_{12}=v^{K_{s,a}}
+                  \quad\hbox{in }\mathbb F_5[v],        \tag{Q7}
+\]
+where $a=\ell\bmod5$ and the target exponents are
+\[
+ \begin{array}{c|ccccc}
+ s\backslash a&0&1&2&3&4\\\hline
+ 0&13&11&10&6&10\\
+ 1&14&14&12&9&12\\
+ 2&14&14&12&9&12\\
+ 3&14&12&9&12&14\\
+ 4&15&14&10&14&15
+ \end{array}.
+\]
+The verifier reconstructs the exact profiles from (Q5)--(Q6)
+and checks (Q7) literally, without a gcd computation.
+It also reconstructs them from actual auxiliary coefficients
+at representatives with $\ell$ increased by five.
+Thus no nonzero $v$ is a common zero of the minors over
+$\overline{\mathbb F}_5$.
+The normalized leading matrix has rank two, and the
+higher-valuation errors cannot change that conclusion.
+This proves the boundary assertion.
+\end{proof}
+
+\begin{theorem}\label{thm:quintic-five-adic-pair-radius}
+For every $m\ge1$, a nonzero cyclic argument $u=z^3$ at which
+the section rows of $(C,H)$ have rank less than two must satisfy
+\[
+                         v_5(u)>\frac35.              \tag{Q2}
+\]
+Thus any common ordinary-moment root for $X^2(A+BX^3)$ lies
+in this remaining five-adic region after reciprocal substitution.
+\end{theorem}
+\begin{proof}
+First consider $v_5(u)=0$.
+With $X=z-zD_z$, the actual physical sequence is
+\[
+ R_n=B_{n,2n+1,3}
+       =\prod_{k=0}^{n-1}(X+5n-3k)1.
+\]
+Modulo five this is $\prod_{k=0}^{n-1}(X+2k)1$,
+the associated Bessel sequence
+$B_{n,-1,2}=zB_{n-1,0,2}$ for $n\ge1$.
+The characteristic-five identity $X^5-X=z^5$ gives
+$R_{n+5}=z^5R_n$. Its first five polynomials are
+\[
+ b_0=1,\ b_1=z,\ b_2=z^2+z,\quad
+ b_3=z^3+3z^2+3z,\quad b_4=z^4+z^3 .
+\]
+The exact raising recurrence gives $C\equiv(X+3)B$,
+while $H\equiv3z^3B$.
+For $c_s=(X+3)b_s$, the ideals of the three cyclic maximal
+minors of $(c_s,b_s)$ are respectively
+\[
+                 (1),\ (1),\ (u),\ (u),\ (u^2).         \tag{Q3}
+\]
+Multiplication by $z^{5\ell}$ is invertible after inverting $u$.
+Thus (Q3) excludes rank loss at every nonzero residue value of
+$u$, uniformly in $m$.
+
+Now let $0<r=v_5(z)<1/5$, write $m=5\ell+s$, and put
+$L=5\ell+e_{s,1}$.
+The leading degrees of $(B,C,D)$ from (Q1) are
+\[
+ \begin{array}{c|ccccc}
+ s&0&1&2&3&4\\\hline
+ B&L&L&L&L&L\\
+ C&L&L&L&L&L+2\\
+ D&L&L+1&L+3&L+4&L+2
+ \end{array}.
+\]
+In every state $H$ has the unique least monomial of $3uB$.
+
+For $s=0,1$, one has $e_{s,1}=s$ and $\deg B=L$.
+The row $F=C-(5m+3-L)B=(z-(zD_z-L))B$ has unique least
+term $b_Lz^{L+1}$. Terms with the same residue $i=e$ gain
+an additional five from $j-L=-5k$.
+Terms with $i>e$ have $k\ge1$ and relative valuation
+at least $1-4r>r$, and terms with $i<e$ have the extra
+integer one from the coefficient argument above.
+For $s=2,3$, the second assertion of
+Lemma~\ref{lem:quintic-annulus-flags} instead gives least degree
+$L+2$ for $F$.
+
+The leading terms of $B$ and $F$ have different residues modulo
+three in all four states. Their cyclic wedge therefore has a
+unique least component of weighted valuation $(2L+1)r$
+for $s=0,1$, and $(2L+2)r$ for $s=2,3$.
+Here a component using sections $i,j$ is weighted by $(i+j)r$.
+For $C\wedge H=3u(C\wedge B)+5(5m+4)(C\wedge D)$,
+the corresponding valuations of the first term are
+$(2L+4)r$ and $(2L+5)r$, respectively.
+The second term has valuation at least
+\[
+ 1+2Lr,\quad 1+(2L+1)r,\quad
+ 1+(2L+3)r,\quad 1+(2L+4)r
+\]
+in states zero through three. Each is strictly larger, so that
+component cannot vanish.
+For $s=4$, the leading terms of $C,H$ have degrees $L+2,L+3$
+and different residues modulo three, which gives rank two directly.
+
+Finally, if $v_5(z)<0$, the highest-degree terms of $C,H$
+are uniquely least: they have degrees $m+1,m+3$ and unit
+coefficients. Their residues modulo three differ.
+This excludes negative valuations as well.
+Lemma~\ref{lem:quintic-five-adic-boundary} excludes the boundary
+$v_5(u)=3/5$, proving (Q2).
+\end{proof}
+The region $v_5(u)>3/5$ is not resolved uniformly. The following result
+restricts one inner annulus but does not establish all-terminal closure
+for $X^2(A+BX^3)$ or for all quintic binomials.
+
+\subsection{A necessary index condition at valuation one}
+Put
+\[
+ T_n(t)=\sum_{k=0}^n\binom nk(2n+1)_{3k}t^k
+       =\sum_{k=0}^n\binom nk\frac{(2n+3k)!}{(2n)!}t^k .
+\]
+These are the normalized ordinary moments of $X^2(A+BX^3)$.
+The two-shape adjoint reduction identifies
+a common root of $T_n,T_{n+1}$ with a cyclic rank drop of the actual
+quintic pair at $u=1/t=z^3$. The following calculation uses the finite moment polynomials.
+
+\begin{theorem}\label{thm:quintic-five-adic-inner-endpoint}
+Let $n\ge8$ be an integer. Suppose $T_n(t)=T_{n+1}(t)=0$ in
+$\overline{\mathbb Q}_5$, and put $u=1/t$. If $v_5(u)=1$, then
+precisely one of the following necessary conditions holds:
+\[
+ \begin{array}{c|c}
+ u/5\pmod{25}&n\pmod5\\ \hline
+ 2&3\\
+ 9&1
+ \end{array}.
+\]
+In particular the entire annulus $v_5(u)=1$ is excluded, uniformly
+in $n\ge8$, when $n\equiv0,2,4\pmod5$.
+A congruence modulo $5^a$ in an algebraic extension means a difference
+of valuation at least $a$.
+\end{theorem}
+
+\begin{proof}
+Write $u=5w$, so $w$ is a unit, and reverse the finite moment:
+\[
+ Q_n(w)=\frac{(5w)^n}{(2n+1)_{3n}}T_n((5w)^{-1})
+       =\sum_{j=0}^n a_j(n)w^j,\qquad
+ a_j(n)=\binom nj5^j\frac{(5n-3j)!}{(5n)!}.
+                                                        \tag{QE1}
+\]
+Both normalization factors are nonzero. For $1\le j\le n$ put
+$h=\lceil3j/5\rceil$. Cancel the factors indexed by the multiples
+of five in the denominator to obtain the exact identity
+\[
+ a_j(n)=
+ \frac{5^{j-h}(n-h)^{\underline{\,j-h\,}}}
+ {j!\displaystyle\prod_{\substack{0\le q<3j\\5\nmid q}}(5n-q)}.
+                                                        \tag{QE2}
+\]
+All factors in the displayed product are units. Consequently
+\[
+ v_5(a_j(n))\ge e_j:=j-\lceil3j/5\rceil-v_5(j!).
+                                                        \tag{QE3}
+\]
+Legendre's formula gives $v_5(j!)\le(j-1)/4$ for $j\ge1$,
+and $\lceil3j/5\rceil\le(3j+4)/5$, hence
+\[
+ e_j\ge\frac{3j-11}{20}.
+                                                        \tag{QE4}
+\]
+For $j\ge18$ this is greater than two; for $j=13,\ldots,17$
+the exact values of $e_j$ are all three. Thus every term
+$j\ge13$ of the finite polynomial is divisible by $125$.
+
+For $j\le12$ the right side of (QE2), considered as a rational
+function of $n$, is well defined on $\mathbb Z_5$, because its
+remaining denominators are units and $e_j\ge0$.
+If $j>n\ge8$, then $h\le8\le n<j$, so the falling product in
+(QE2) contains a zero. Thus these artificial low-degree
+coefficients also vanish. This is the point that permits a
+fixed-precision polynomial formula for every $n\ge8$: it does
+not identify an infinite interpolation with the finite moment.
+
+Modulo $125$, formula (QE2) gives the following coefficients
+$C_j(n)$. They may be obtained by replacing each unit reciprocal
+by its finite geometric expansion
+\[
+ (5n-q)^{-1}\equiv
+ -q^{-1}\sum_{a=0}^{2}(5n/q)^a\pmod{125},
+\]
+retaining only terms below the precision left after the explicit
+power of five in (QE2).
+\[
+\begin{array}{c|l}
+j&C_j(n)\pmod{125}\\ \hline
+0&1\\
+1&-25n^2+35n-62\\
+2&-13\\
+3&25n^2+5n+15\\
+4&25n^2+5n+10\\
+5&5n^2-35n+60\\
+6&50n^3+15n^2-60n+50\\
+7&-15n^2+40n+50\\
+8&25n^3+50n^2+50n\\
+9&25n^3-25n^2+25n-25\\
+10&50-50n^4\\
+11&-25n^4-25n^3-25n^2-25n\\
+12&25n^4+50n^3-25n^2-50n
+\end{array}                                             \tag{QE5}
+\]
+Equations (QE1)--(QE4) prove, uniformly for all integers $n\ge8$,
+\[
+ Q_n(w)\equiv\sum_{j=0}^{12}C_j(n)w^j\pmod{125}.
+                                                        \tag{QE6}
+\]
+In particular
+\[
+ Q_n(w)\equiv1+3w+2w^2=(1+w)(1+2w)\pmod5,                \tag{QE7}
+\]
+and direct substitution in (QE5) yields
+\[
+ \begin{split}
+ Q_n(2)&\equiv25(n-1)^2\pmod{125},\\
+ Q_n(9)&\equiv25(2n^2-n-2)\pmod{125}.
+ \end{split}                                            \tag{QE8}
+\]
+
+The two roots of (QE7) are $2,4\in\mathbb F_5$ and are simple.
+Because (QE8) is divisible by $25$, any unit root of $Q_n$
+lies either in $2+25\mathcal O$ or in $9+25\mathcal O$.
+This also follows directly from the Taylor expansion: the
+derivative is a unit on each residual disk, while its value at
+the indicated center has valuation at least two, so a root
+cannot have distance of valuation between zero and two from
+that center.
+
+Let $\Delta_n=Q_{n+1}-Q_n$. Equation (QE7) implies
+$\Delta_n\in5\mathbb Z_5[w]$. At a point $w$ congruent to
+$b=2$ or $9$ modulo $25$, therefore
+$\Delta_n(w)\equiv\Delta_n(b)\pmod{125}$.
+Subtracting (QE8) at consecutive indices gives
+\[
+ \frac{\Delta_n(2)}{25}\equiv2n-1\pmod5,\qquad
+ \frac{\Delta_n(9)}{25}\equiv1-n\pmod5.                   \tag{QE9}
+\]
+A common root must make the appropriate expression in (QE9)
+zero, giving $n\equiv3$ in the first disk and $n\equiv1$
+in the second.
+\end{proof}
+
+
+The annulus $v_5(u)=1$ is therefore excluded for three index classes,
+but the two displayed classes and other inner valuations remain open.
 
 \section{Terminal orders one below a single-digit index}
 The single-digit restriction on $N$ can also be removed on the
@@ -1311,7 +1751,17 @@ and literal lower-one pairs in finite ranges. For the prime-power
 descent it checks Artin--Hasse coefficients and seed normalization,
 the closed potential class, normalized block matrices, primitive
 polynomial degree contraction, stage-dependent parameter closure,
-and exact determinant values at negative integer centers.
+and exact determinant values at negative integer centers. For the
+quintic common-pair radius it verifies all fifteen numerator states,
+the two complete further-flag identities, the physical Bessel
+congruence and all five unit-argument cyclic ideals. It also checks
+all twenty-five boundary profiles and their literal Bezout identities,
+including an independent reconstruction from actual auxiliary
+coefficients and a corrupted-certificate control. For the inner
+valuation-one annulus it checks the complete coefficient table modulo
+$125$, its uniform tail bound, both root-disk evaluation identities,
+and literal finite factorial coefficients including the index threshold.
+It also rejects a false infinite interpolation and a corrupted table.
 These controls test the implementation; the unit-ideal and
 Frobenius proofs supply the unbounded theorems.
 Carry inputs are rejected as unsupported rather than classified as

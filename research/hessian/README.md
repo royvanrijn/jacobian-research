@@ -13,7 +13,8 @@ Restricted Hessian classes, polynomial graphs and formal termination.
 | Even-moment lattices and the sixth-moment trace criterion | Internal result | proved | [Source](hc4-triangular-graphs/EVEN_MOMENT_LATTICES_AND_SIXTH_MOMENT_TRACE_TEST.md) |
 | First source derivatives and finite source reconstruction | Internal result | proved | [Source](hc4-triangular-graphs/REPLICA_DEGREE_AND_SOURCE_DERIVATIVE_FIELD_RECONSTRUCTION.md) |
 | Reduced branch trace defects and symmetric matrix factorizations | Internal result | proved | [Source](hc4-triangular-graphs/REDUCED_BRANCH_PAIRING_AND_SIXTH_MOMENT_DEFECT.md) |
-| Regular source-coordinate completions and the primitive obstruction | Internal result | stale | [Source](hc4-triangular-graphs/REGULAR_SOURCE_COORDINATE_COMPLETIONS_AND_PRIMITIVE_RESIDUES.md) |
+| Regular source-coordinate completions and the primitive obstruction | Internal result | proved | [Source](hc4-triangular-graphs/REGULAR_SOURCE_COORDINATE_COMPLETIONS_AND_PRIMITIVE_RESIDUES.md) |
+| Generic coordinate order and exact closed-collision conductor | Internal result | proved | [Source](hc4-triangular-graphs/GENERIC_COORDINATE_ORDER_CONDUCTOR_AND_CLOSED_COLLISIONS.md) |
 
 **Computed obligations:** 10 unresolved; 0 resolved within their exact scope.
 

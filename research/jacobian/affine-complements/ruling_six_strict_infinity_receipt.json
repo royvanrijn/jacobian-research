@@ -1,0 +1,320 @@
+{
+  "claim": "PF2RULED166",
+  "outcome": "PASS",
+  "check_count": 141,
+  "checks": [
+    "transverse Gamma order e1",
+    "coframe/index exact equality e1",
+    "generic target Q derivative unit e1",
+    "transverse Gamma order e2",
+    "coframe/index exact equality e2",
+    "generic target Q derivative unit e2",
+    "transverse Gamma order e3",
+    "coframe/index exact equality e3",
+    "generic target Q derivative unit e3",
+    "transverse Gamma order e4",
+    "coframe/index exact equality e4",
+    "generic target Q derivative unit e4",
+    "transverse Gamma order e5",
+    "coframe/index exact equality e5",
+    "generic target Q derivative unit e5",
+    "transverse Gamma order e6",
+    "coframe/index exact equality e6",
+    "generic target Q derivative unit e6",
+    "transverse Gamma order e7",
+    "coframe/index exact equality e7",
+    "generic target Q derivative unit e7",
+    "transverse Gamma order e8",
+    "coframe/index exact equality e8",
+    "generic target Q derivative unit e8",
+    "local DVR quotient nilpotency e2 f1",
+    "distinct retained source projector e2 f1",
+    "complete local quotient rank e2 f1",
+    "strict omitted packet degree e2 f1",
+    "local DVR quotient nilpotency e3 f1",
+    "distinct retained source projector e3 f1",
+    "complete local quotient rank e3 f1",
+    "strict omitted packet degree e3 f1",
+    "local DVR quotient nilpotency e2 f2",
+    "distinct retained source projector e2 f2",
+    "complete local quotient rank e2 f2",
+    "strict omitted packet degree e2 f2",
+    "local DVR quotient nilpotency e4 f2",
+    "distinct retained source projector e4 f2",
+    "complete local quotient rank e4 f2",
+    "strict omitted packet degree e4 f2",
+    "local DVR quotient nilpotency e3 f3",
+    "distinct retained source projector e3 f3",
+    "complete local quotient rank e3 f3",
+    "strict omitted packet degree e3 f3",
+    "all-period ceiling shift residue0",
+    "all-period ceiling shift residue1",
+    "all-period ceiling shift residue2",
+    "all-period ceiling shift residue3",
+    "all-period ceiling shift residue4",
+    "all-period ceiling shift residue5",
+    "complete fractional ceiling product f1 rem0",
+    "complete fractional ceiling product f1 rem1",
+    "complete fractional ceiling product f1 rem2",
+    "complete fractional ceiling product f1 rem3",
+    "complete fractional ceiling product f1 rem4",
+    "complete fractional ceiling product f1 rem5",
+    "complete fractional ceiling product f2 rem0",
+    "complete fractional ceiling product f2 rem1",
+    "complete fractional ceiling product f2 rem2",
+    "complete fractional ceiling product f2 rem3",
+    "complete fractional ceiling product f2 rem4",
+    "complete fractional ceiling product f2 rem5",
+    "complete fractional ceiling product f3 rem0",
+    "complete fractional ceiling product f3 rem1",
+    "complete fractional ceiling product f3 rem2",
+    "complete fractional ceiling product f3 rem3",
+    "complete fractional ceiling product f3 rem4",
+    "complete fractional ceiling product f3 rem5",
+    "complete fractional ceiling product f4 rem0",
+    "complete fractional ceiling product f4 rem1",
+    "complete fractional ceiling product f4 rem2",
+    "complete fractional ceiling product f4 rem3",
+    "complete fractional ceiling product f4 rem4",
+    "complete fractional ceiling product f4 rem5",
+    "complete fractional ceiling product f5 rem0",
+    "complete fractional ceiling product f5 rem1",
+    "complete fractional ceiling product f5 rem2",
+    "complete fractional ceiling product f5 rem3",
+    "complete fractional ceiling product f5 rem4",
+    "complete fractional ceiling product f5 rem5",
+    "complete fractional ceiling product f6 rem0",
+    "complete fractional ceiling product f6 rem1",
+    "complete fractional ceiling product f6 rem2",
+    "complete fractional ceiling product f6 rem3",
+    "complete fractional ceiling product f6 rem4",
+    "complete fractional ceiling product f6 rem5",
+    "all rho>=3 strictly violate universal degree bound",
+    "complete infinity index/image-residue pairs",
+    "complete six nonlinear infinity packet types",
+    "exact total u degree packet((1, 2), (1, 2), (1, 2))",
+    "at most three closed infinity primes packet((1, 2), (1, 2), (1, 2))",
+    "all image degrees nonlinear packet((1, 2), (1, 2), (1, 2))",
+    "exact total u degree packet((1, 2), (1, 4))",
+    "at most three closed infinity primes packet((1, 2), (1, 4))",
+    "all image degrees nonlinear packet((1, 2), (1, 4))",
+    "exact total u degree packet((1, 2), (2, 2))",
+    "at most three closed infinity primes packet((1, 2), (2, 2))",
+    "all image degrees nonlinear packet((1, 2), (2, 2))",
+    "exact total u degree packet((1, 3), (1, 3))",
+    "at most three closed infinity primes packet((1, 3), (1, 3))",
+    "all image degrees nonlinear packet((1, 3), (1, 3))",
+    "exact total u degree packet((1, 6),)",
+    "at most three closed infinity primes packet((1, 6),)",
+    "all image degrees nonlinear packet((1, 6),)",
+    "exact total u degree packet((2, 3),)",
+    "at most three closed infinity primes packet((2, 3),)",
+    "all image degrees nonlinear packet((2, 3),)",
+    "mixed r2/r1 quadratic packets cannot share image",
+    "three quadratic r1 packets cannot all share image",
+    "nonlinear P residue remains compatible with f=1",
+    "nonlinear P residue remains compatible with f=2",
+    "polynomial leading image finite-pole guard degree2",
+    "polynomial leading image finite-pole guard degree3",
+    "polynomial leading image finite-pole guard degree6",
+    "strict source coverage global inequality elimination",
+    "rho-two global inequality elimination",
+    "all-count/all-m lower S residue n0 m0",
+    "all-count/all-m lower S residue n0 m1",
+    "all-count/all-m lower S residue n1 m0",
+    "all-count/all-m lower S residue n1 m1",
+    "all-count/all-m lower S residue n2 m0",
+    "all-count/all-m lower S residue n2 m1",
+    "all-count/all-m lower S residue n3 m0",
+    "all-count/all-m lower S residue n3 m1",
+    "rho-two all-period lower S n residue0",
+    "rho-two all-period lower S n residue1",
+    "global D lower22 endpoint",
+    "global b lower5 endpoint",
+    "global original degree lower10",
+    "two A divisor count lower S9",
+    "two A divisor count lower D38",
+    "two A divisor count lower b8",
+    "rho-two D lower42 endpoint",
+    "rho-two b lower15 endpoint",
+    "rho-two original degree lower30",
+    "one A complete scalar ledger compatibility",
+    "two A complete scalar ledger compatibility",
+    "rho2 permitted complete scalar ledger compatibility",
+    "rho2 strict field budget compatibility",
+    "two distinct r1 infinity packets use same joint bound",
+    "low regime two r1 packets cannot share image"
+  ],
+  "elapsed_seconds": 0.0408559039933607,
+  "environment": {
+    "python": "3.12.3",
+    "sympy": "1.14.0"
+  },
+  "proof_sha256": "7bfdfdbc81c103dd5ac09816bc4cd826aa92e15c264ca91f630019fa08062188",
+  "checker_sha256": "2b8f9113a42d64c1ce55ff045eba872d751c1c9c236ad16109aad0fd3f8f67da",
+  "retained_proof_sources": {
+    "RULING_SIX_AFFINE_POLE_BUDGET_AND_SOURCE_INFINITY.md": "b26c9004eaa6eeb6bc59db3a6b8b45318f598a31d89fd4f0a0068d423dcb6771",
+    "RULING_SIX_SIMPLE_ESCAPE_GRAPHS_AND_QUARTIC_FACE_REDUCTION.md": "14ecc852d3cfc10302230e996534f90f539be53a568bc7fe0a010bd340f1b59b",
+    "POLYNOMIAL_MATE_RESPONSES_AND_QUADRATIC_RULING_FIVE_ESCAPE_COVERAGE.md": "b2c6a08cd0f144788cf841d0f399896c4894db0ee1f43515704011e2a9c5f7ee"
+  },
+  "complete_local_packet_controls": [
+    {
+      "e": 2,
+      "f": 1,
+      "omitted_length": 2,
+      "retained_source_length": 1,
+      "complete_rank": 3
+    },
+    {
+      "e": 3,
+      "f": 1,
+      "omitted_length": 3,
+      "retained_source_length": 1,
+      "complete_rank": 4
+    },
+    {
+      "e": 2,
+      "f": 2,
+      "omitted_length": 4,
+      "retained_source_length": 1,
+      "complete_rank": 5
+    },
+    {
+      "e": 4,
+      "f": 2,
+      "omitted_length": 8,
+      "retained_source_length": 1,
+      "complete_rank": 9
+    },
+    {
+      "e": 3,
+      "f": 3,
+      "omitted_length": 9,
+      "retained_source_length": 1,
+      "complete_rank": 10
+    }
+  ],
+  "nonlinear_infinity_packet_types": [
+    [
+      [
+        1,
+        2
+      ],
+      [
+        1,
+        2
+      ],
+      [
+        1,
+        2
+      ]
+    ],
+    [
+      [
+        1,
+        2
+      ],
+      [
+        1,
+        4
+      ]
+    ],
+    [
+      [
+        1,
+        2
+      ],
+      [
+        2,
+        2
+      ]
+    ],
+    [
+      [
+        1,
+        3
+      ],
+      [
+        1,
+        3
+      ]
+    ],
+    [
+      [
+        1,
+        6
+      ]
+    ],
+    [
+      [
+        2,
+        3
+      ]
+    ]
+  ],
+  "uniform_proved_scope": {
+    "infinity_ramification_residue_budget": "e*f<=b-1",
+    "strict_infinity_lower": "f*ceil(alpha*(D+3*m-6)/6)+1<=b",
+    "image_group_infinity_index_residue_sum_maximum": 2,
+    "individual_infinity_index_residue_product_maximum": 2,
+    "image_P_degree_minimum": 2,
+    "closed_intermediate_infinity_prime_count_maximum": 3,
+    "A_slope_sum_lower": "ceil((15*n_A+2*m)/4)",
+    "leading_coefficient_degree_minimum": 22,
+    "intermediate_generic_degree_minimum": 5,
+    "original_generic_degree_minimum": 10,
+    "rho2_A_slope_sum_lower": "ceil((15*n_A+4*m-3)/2)",
+    "rho2_leading_coefficient_degree_minimum": 42,
+    "rho2_intermediate_generic_degree_minimum": 15,
+    "rho2_original_generic_degree_minimum": 30,
+    "rho2_bounds_apply_to_total_per_image_mass": true,
+    "low_regime_infinity_images_pairwise_distinct": true,
+    "residue_degrees_over_image_not_over_C_P": true
+  },
+  "whole_ruling_six_class_closed": false,
+  "generic_first_derivative_integrality_proved": false,
+  "normal_tail_increasing_power_containment_proved": false,
+  "full_goal_complete": false,
+  "independent_whole_proof_review": false,
+  "formal_verification": false,
+  "external_review": false,
+  "integration_validation": {
+    "date": "2026-11-17",
+    "scope": "Internal replay and DAG/navigation integration; contextual agent proof audit does not constitute independent whole-proof review.",
+    "mathematical_controls": {
+      "PF162": 87,
+      "PF163": 96,
+      "PF164": 230,
+      "PF165": 191,
+      "PF166": 141,
+      "coordinate_order_conductor": 89,
+      "source_coordinate_completions": 132
+    },
+    "mathematical_control_total": 966,
+    "tooling_unit_tests": {
+      "count": 78,
+      "outcome": "PASS"
+    },
+    "scoped_coverage_references_and_evidence": {
+      "topics": [
+        "jacobian",
+        "hessian"
+      ],
+      "outcome": "PASS"
+    },
+    "git_diff_check": "PASS",
+    "repository_commands": {
+      "make render-navigation": "FAIL: changed checker source BINOMIAL-ARITHMETIC-STARTS",
+      "make check-navigation": "FAIL: changed checker source BINOMIAL-ARITHMETIC-STARTS",
+      "make check": "FAIL: changed checker source BINOMIAL-ARITHMETIC-STARTS"
+    },
+    "navigation": "Existing navigation_outputs renderer executed without changing recorded assurance or unrelated evidence pins.",
+    "open_obligations": [
+      "remaining A ruling-six class",
+      "earlier global classification inputs",
+      "automatic derivative/trace integrality",
+      "JC2",
+      "HC4"
+    ]
+  }
+}

@@ -1,0 +1,73 @@
+{
+  "checker_sha256": "b306855b90f91833eb1108d24ea425809fbd99369d5803e11f40e404b1d088e3",
+  "command": ".venv/bin/python research/arithmetic/verify_fixed_map_two_adic_refinement.py --write-receipt",
+  "even_pi_controls": {
+    "automatic_adjacent_edges": 6032,
+    "automatic_e_one_f_one": 464,
+    "automatic_linear_residues": 19488,
+    "automatic_odd_b_residues": 2784,
+    "forbidden_tame_cubic_blocks": 1856
+  },
+  "even_pi_domain": {
+    "b_and_c_include_zero": true,
+    "b_valuations": [
+      0,
+      7
+    ],
+    "c_valuations": [
+      0,
+      6
+    ],
+    "pi_units": [
+      -3,
+      -1,
+      1,
+      3
+    ],
+    "pi_valuations": [
+      1,
+      8
+    ]
+  },
+  "external_review": false,
+  "formal_verification": false,
+  "independent_whole_proof_replay": false,
+  "input_sha256": {
+    "FIXED_MAP_INTEGRAL_LOCAL_OBSTRUCTIONS.md": "781e1b7320ddc7137078e195f0eb499ebaaf029bed249c56689c3ec43b1c13ec",
+    "milne-ant300.pdf": "bf9d308f7ec2cb8d1c3cf6f8ed68fa418aaaea036eb895991fedcdd6544d7819"
+  },
+  "odd_pi_even_c_controls": {
+    "automatic_simple_root_zero": 4624,
+    "forbidden_tame_cubic_blocks": 13056
+  },
+  "odd_pi_even_c_domain": {
+    "b": [
+      -32,
+      32
+    ],
+    "c": "even -16 through16",
+    "pi": "odd integers -15 through15"
+  },
+  "odd_pi_odd_c_controls": {
+    "case_one_simple_local_roots": 4352,
+    "case_two_unresolved_integral_reductions": 288,
+    "excluded_degree_3_block": 17408,
+    "excluded_degree_4_block": 34335,
+    "excluded_degree_5_block": 78752,
+    "excluded_rational_half_roots": 33
+  },
+  "odd_pi_odd_c_domain": {
+    "b": "multiples of8 from-128 through128",
+    "c": "odd -63 through63",
+    "pi": "odd -63 through63"
+  },
+  "proof_sha256": "46bc60eb87e9698b32c4e488bf76a2318c0bfae46724bfefdfec3897692f1cb9",
+  "python": "3.12.3",
+  "scope": "Exact coefficient and finite residue controls, plus bounded independent Newton certificates. They do not prove the unrestricted valuation cases, the local resolvent argument, any CaseII local criterion, or integral Hasse existence/nonexistence.",
+  "status": "passed",
+  "symbolic": {
+    "translated_coefficient_identities": 6,
+    "unit_and_parity_identities": 4
+  },
+  "sympy": "1.14.0"
+}

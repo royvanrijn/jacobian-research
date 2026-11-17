@@ -1,0 +1,15 @@
+{
+  "status": "PASS",
+  "scope": "local symmetric braid/Gram identities and singular-form control",
+  "generic_roots": 4,
+  "generic_gram_variables": 6,
+  "positive_negative_moves": 6,
+  "inverse_cancellations": 6,
+  "adjacent_braid_relations": 4,
+  "disjoint_commutations": 2,
+  "singular_gram_rank": 1,
+  "independent_displacement_directions": 4,
+  "source_sha256": "991940273daed005b8af270233cceaa58c11d69168efb7006f3bfa9bd598bcbd",
+  "knot_specific_obstruction_replayed": false,
+  "checker_sha256": "2f872fbf6f95e510fe7a74ce2d2869028992e5a59b88d5bbbec0d3401d419acd"
+}

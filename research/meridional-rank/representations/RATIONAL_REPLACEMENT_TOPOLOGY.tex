@@ -1,0 +1,500 @@
+\documentclass[11pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb,amsthm,booktabs}
+\usepackage[hidelinks]{hyperref}
+\usepackage{xurl}
+\setlength{\emergencystretch}{3em}
+\newtheorem{theorem}{Theorem}
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{corollary}[theorem]{Corollary}
+\newcommand{\F}{\mathbb F}
+\newcommand{\Sig}{\Sigma_2}
+\title{Rational replacements of four-face twisted diagrams\\
+and mixed double branched covers}
+\author{Topological proof with explicit classical imports}
+\date{17 November 2026}
+\begin{document}
+\maketitle
+
+A four-face twisted diagram has a simple checkerboard dual with four
+vertices. Arbitrary rational replacements of its twist boxes have a
+strong topological restriction: an irreducible double branched cover
+cannot have a mixed JSJ decomposition. This excludes all twenty-eight
+retained examples whose actual covers contain a hyperbolic component
+separated by an incompressible torus.
+
+The proof works directly with branched covers of the box construction.
+It makes no assumption that a nonalternating replacement diagram can be
+converted to a minimal alternating diagram while preserving its
+polyhedral core.
+
+\section{The exact class}
+
+Let $G$ be a connected, loopless, simple plane graph on four vertices.
+Its medial projection has one four-valent crossing site for each edge
+of $G$, with connections determined by the cyclic orders at vertices and
+faces. Remove a small disk around every site and insert an arbitrary
+rational two-string tangle, with the four ports glued in their prescribed
+cyclic order. Let $\mathcal R_4$ be the set of knots obtained in this way.
+All rational slopes, rotations and mirrors are allowed.
+
+For a BBK twisted diagram, let $\Gamma$ be its weighted fat-vertex
+graph and $G=\Gamma^*$ its simple plane dual; Section~4 of \cite{bbk}
+explicitly calls this dual a simple graph. Theorem~1 of that source
+gives $b=\#V(G)$. Hence every arbitrary rational replacement of the
+twist boxes of a sharp-four BBK base is in $\mathcal R_4$.
+We do not require the replacement to preserve reflection labels or the
+Wirtinger upper bound. This is a class of replacements on a four-face
+base, rather than an assertion about rank-dropping replacements on
+higher-face bases.
+
+\begin{theorem}\label{thm:class}
+If $K\in\mathcal R_4$ and $\Sig(K)$ is irreducible, then $\Sig(K)$
+is either hyperbolic or a graph manifold.
+In particular it cannot contain an incompressible torus which cuts
+off a finite-volume hyperbolic component.
+\end{theorem}
+
+\section{The proper subgraphs of \texorpdfstring{$K_4$}{K4}}
+
+Call a two-string tangle algebraic if it is built from rational tangles
+by Conway sums, products, rotations and mirrors.
+The closure of such a tangle is arborescent.
+We use the classical Conway--Montesinos fact that the double branched
+cover of an arborescent knot is assembled from Seifert pieces along
+tori, and therefore has no hyperbolic piece in its prime/JSJ
+decomposition \cite[Introduction, pp.~vi--vii]{bs}.
+Connected sums with two-bridge knots add lens-space prime factors and
+also add no hyperbolic pieces.
+
+Here is the local gluing used below, stated to fix the topology of the
+graph reductions. Number a box's ports cyclically as
+$0=\mathrm{NW},1=\mathrm{NE},2=\mathrm{SE},3=\mathrm{SW}$.
+Conway addition glues port $1$ of the left box to port $0$ of the right
+box, and port $2$ of the left box to port $3$ of the right box.
+The remaining four ports form the new box.
+Rotating either box or the whole neighborhood gives the corresponding
+vertical product. In both operations two adjacent ports from each box
+are joined by two untwisted arcs; algebraic tangles are closed under
+these gluings.
+
+\begin{lemma}\label{lem:proper}
+If $G\ne K_4$, every knot obtained by the above rational decoration
+of its medial projection has no hyperbolic piece in its double
+branched cover. If that cover is irreducible, it is a graph manifold.
+\end{lemma}
+\begin{proof}
+First suppose $G$ has a leaf. The leaf disk supplies a cap joining the
+two ports at one end of the rational box on its sole incident edge.
+A ball containing this box and cap meets the remaining diagram in two
+points. Because the final diagram is a knot, the ball contains a single
+proper arc, rather than a proper arc and a separate closed component.
+Closing that arc with the complementary cap gives a numerator or
+denominator closure of the rational tangle, hence a two-bridge knot
+(possibly the unknot). The original knot is the connected sum of this
+knot and the knot represented after deleting the leaf and its incident
+edge. Thus leaf deletion only removes a two-bridge summand.
+
+Delete leaves until none remains. A connected simple graph with at most
+four vertices and minimum degree at least two is, among the proper
+subgraphs under consideration, a triangle, a four-cycle, or the diamond
+$K_4-e$. Indeed, with four vertices it has four or five edges:
+four forces every degree to be two, while five is exactly $K_4-e$.
+With three vertices the only such graph is the triangle.
+If all edges disappear, only the two-bridge summands remain.
+
+In a cycle, a degree-two vertex and the two incident edge boxes have a
+regular neighborhood meeting the medial diagram in four points.
+Its two internal connections are exactly the two adjacent-port gluings
+just specified, up to rotations. Replace this neighborhood by the
+resulting algebraic box. Repeatedly doing so leaves two vertices joined
+by two parallel edges.
+
+For the diamond, write its edge set as
+\[
+                 ab,\quad ac,\quad bc,\quad ad,\quad bd.
+\]
+The degree-two vertices are $c$ and $d$. Absorb each with its two
+incident rational boxes. This leaves vertices $a,b$ joined by three
+parallel edges carrying algebraic boxes. No assumption that the sum
+of two rational tangles is rational is used.
+
+In either case the remaining plane graph has two vertices and two or
+three parallel edges, and no other edges or vertices.
+Choose consecutive parallel edges. The region between them is an empty
+bigon, so their two boxes again combine by the stated adjacent-port
+gluing, up to rotation. Continue until one algebraic box remains.
+The two vertex disks close its four ports in pairs, giving an
+arborescent knot. This argument accounts explicitly for the parallel
+edges created during degree-two reductions; it never collapses
+nonadjacent edges with other graph material between them.
+Together with the two-bridge leaf summands and the classical branched
+cover construction, this proves the lemma.
+\end{proof}
+
+There are $38$ connected labelled simple graphs on four vertices.
+One is $K_4$; the other $37$ follow the preceding cases.
+A complete enumeration gives $16$ trees, $12$ triangle-with-leaf
+graphs, $3$ four-cycles and $6$ diamonds.
+This finite check corroborates the elementary degree argument;
+it is not a substitute for the local tangle-gluing proof.
+
+\section{The full \texorpdfstring{$K_4$}{K4} case and its actual branched cover}
+
+The medial graph of the plane tetrahedral graph $K_4$ is the
+octahedral four-valent graph, conventionally denoted $6^*$.
+Let $Q$ be $S^3$ with disjoint open balls around its six crossing
+sites removed. The remaining medial edges are twelve disjoint properly
+embedded arcs in $Q$, lying on the projection sphere.
+Each boundary sphere of $Q$ has exactly four marked arc endpoints.
+
+\begin{lemma}\label{lem:m6}
+The double cover of this punctured $6^*$ pair, branched over all
+twelve arcs, is the exterior $M_6$ of the minimally twisted
+six-component chain link. Every rational decoration in the $K_4$ case
+therefore has double branched cover a closed Dehn filling of $M_6$.
+\end{lemma}
+\begin{proof}
+Kolpakov--Martelli \cite[Figure~2 and Section~1.1, printed pp.~5--6]{km}
+construct an involution of the six-chain-link exterior $N=M_6$.
+They identify its quotient as the octahedral orbifold with underlying
+space $S^3$ minus the six ideal vertices, and with all twelve
+octahedral edges labelled by index two.
+Their proof constructs four copies of the regular ideal octahedron
+and identifies the quotient by the involution as the double of one
+octahedron. The six cusps of $N$ correspond one-to-one to its vertices.
+
+Truncate the six cusp ends in this quotient. Its underlying space is
+$Q$, and its order-two singular set consists exactly of the twelve
+truncated octahedral edges. Thus the quotient map is an ordinary double
+branched cover of precisely the punctured $6^*$ pair described above.
+At each boundary sphere it is the double cover of a sphere with four
+simple branch points. Riemann--Hurwitz gives Euler characteristic
+$2\cdot2-4=0$, so the connected boundary cover is a torus.
+The order-two edge labels specify nontrivial branching at every marked
+point; this is the four-marked-sphere cover required by rational-tangle
+filling, rather than an unmarked orbifold resemblance.
+
+The double branched cover of a rational tangle is a solid torus.
+For the trivial tangle this follows by taking the double cover of a
+disk branched at two points, an annulus, and then taking its product
+with an interval. The general rational case is obtained by a
+homeomorphism of the tangle pair, with its boundary marking retained.
+The boundary cover of a four-marked sphere is uniquely determined by
+sending each puncture meridian to the nontrivial element of $C_2$.
+Consequently each prescribed boundary gluing lifts, and gluing the
+six covering solid tori to $N$ gives a connected double cover of $S^3$
+branched over the decorated knot. The two choices of a lift differ by
+the deck involution and do not change the filled manifold.
+By uniqueness of the double branched cover of a knot, this is
+$\Sig(K)$. Attaching each solid torus is precisely Dehn filling along
+a primitive slope. No restriction on these slopes is needed.
+\end{proof}
+
+The ordinary exterior of the Borromean rings, drawn by assigning
+single crossings to the six sites of $6^*$, is a different space.
+It is not the punctured branch pair in Lemma~\ref{lem:m6}.
+In particular the use of four octahedra for $M_6$ is not an assertion
+that the three-cusped Borromean exterior is six-cusped.
+The primary quotient diagram and its six four-marked cusp spheres
+fix the relevant construction.
+
+\section{The exceptional fillings and the mod-two obstruction}
+
+Martelli's classification \cite[Theorem~2.7, printed pp.~15--16]{mar}
+states that every closed nonhyperbolic filling of $M_6$ is a graph
+manifold, allowing the reducible cases specified in the subsequent
+discussion, or one of two sporadic mixed manifolds.
+Both mixed manifolds glue the figure-eight knot exterior $M_1$ to
+\[
+                      B=(D;(2,1),(2,1)),
+\]
+the orientable twisted interval bundle over the Klein bottle.
+The two gluing maps are specified in that theorem.
+We need no computation of their individual slopes.
+
+\begin{lemma}\label{lem:modtwo}
+Neither mixed exception can be the double branched cover of a knot.
+\end{lemma}
+\begin{proof}
+The first homology groups of $M_1$ and $B$ are respectively
+$\mathbb Z$ and $\mathbb Z\oplus\mathbb Z/2$.
+The latter follows at once from the Klein-bottle group presentation
+$\langle u,v\mid uvu^{-1}=v^{-1}\rangle$.
+The Mayer--Vietoris map from their common boundary torus has the form
+\[
+ H_1(T^2;\F_2)\longrightarrow
+ H_1(M_1;\F_2)\oplus H_1(B;\F_2).
+\]
+Its domain has dimension two and its target dimension three.
+Its cokernel embeds in the first homology of the glued manifold;
+in fact the connectedness terms make it the whole first homology.
+Thus either mixed exception has nonzero $H_1(-;\F_2)$, for any gluing.
+
+In contrast, every knot double branched cover has zero first
+homology over $\F_2$. Here is an elementary group proof.
+Take a Wirtinger presentation with meridians $m_i$, add $m_i^2=1$,
+and fix a meridian $m_0$. The parity kernel in this orbifold group
+is $\pi_1\Sig(K)$: take the unbranched double cover of the knot
+exterior and then fill the lifts of meridian squares.
+Put $a_i=m_i m_0$, so $a_0=1$.
+These elements generate the kernel, because every even word is a
+product of pairs $m_i m_j=a_i a_j^{-1}$.
+A crossing relation becomes $m_b=m_o m_a m_o$, independently of its
+original sign. Since $m_0a_i m_0=a_i^{-1}$, it rewrites as
+$a_b=a_o a_a^{-1}a_o$.
+In mod-two abelianization this gives $a_b=a_a$.
+Following the underarcs once around the knot identifies every
+$a_i$ with $a_0=0$. Thus $H_1(\Sig(K);\F_2)=0$.
+The crossing-free unknot case is immediate.
+This excludes both mixed exceptions.
+\end{proof}
+
+\begin{proof}[Proof of Theorem~\ref{thm:class}]
+For a proper subgraph use Lemma~\ref{lem:proper}.
+For $G=K_4$, Lemma~\ref{lem:m6} identifies the actual cover with a
+closed filling of $M_6$. If hyperbolic, the conclusion holds.
+Otherwise apply Martelli's exhaustive classification.
+Lemma~\ref{lem:modtwo} excludes its mixed cases.
+Irreducibility of $\Sig(K)$ removes the nontrivial connected-sum
+degeneracies among the graph cases. Its remaining pieces are all
+Seifert fibered, so it is a graph manifold.
+\end{proof}
+
+\section{Application and assurance}
+
+\begin{corollary}\label{cor:targets}
+All twenty-eight knots in the retained actual-cover topology
+certificate lie outside $\mathcal R_4$, and hence outside arbitrary
+rational replacements of the twist boxes of any sharp-four BBK base.
+\end{corollary}
+\begin{proof}
+The retained proof \path{SEED_COVER_TOPOLOGY.tex} and its exact inputs
+identify an irreducible actual double branched cover in each case.
+An incompressible separating torus cuts off a certified hyperbolic
+component, respectively m036, m121 or m189.
+Thus the closed cover is not hyperbolic and is not a graph manifold.
+Theorem~\ref{thm:class} gives the exclusion.
+\end{proof}
+
+The finite replay is \path{verify_rational_replacement_topology.py}.
+Its input is \path{rational_replacement_topology_inputs.json}.
+It enumerates all labelled four-vertex simple graphs, checks the
+tetrahedral medial graph and its six four-ended sites, verifies the
+Mayer--Vietoris dimension obstruction, and computes the mod-two
+homology of all twenty-eight retained closed triangulations.
+Those actual-cover bindings and incompressible-torus certificates
+remain separate dependencies, sealed by their retained receipt;
+they are not rerun by this smaller checker.
+The new receipt is \path{rational_replacement_topology_verification.json}.
+
+The quotient diagram in \cite{km} and the relevant classification
+statement in \cite{mar} were read and visually checked in the
+retained primary PDFs. The arborescent-cover construction, the complete
+exceptional-filling classification and its computational ingredients
+are classical imports, not independent replays here.
+The local graph-to-tangle argument, the actual branched-cover gluing
+and the mod-two exclusion are the written proof above.
+A passing finite check is not formal verification or external
+specialist review.
+
+The exclusion concerns rational substitutions on a four-face base.
+The next section shows why it cannot extend to arbitrary higher-face
+origins when no rank or bridge preservation is required. Arbitrary
+algebraic substitutions and other mechanisms proving MRC remain
+outside Theorem~\ref{thm:class}.
+
+\section{A concrete higher-face origin and the scope boundary}
+
+\begin{theorem}\label{thm:eightbase}
+There is a BBK twisted knot $J$ with $b(J)=\operatorname{mr}(J)=8$
+and a displayed $35$-crossing diagram such that arbitrary rational
+replacements of its twelve twist boxes give $13a_{373}$.
+These replacements do not preserve the bridge number or the Coxeter
+rank of the base. This is not a counterexample to the meridional rank
+conjecture.
+\end{theorem}
+\begin{proof}
+Start with the retained thirteen-crossing PD for $13a_{373}$, numbering
+crossings from zero. Crossings $3,4$ are
+\[
+                 (13,4,14,5),\qquad(5,14,6,15).
+\]
+They form a two-crossing rational box with external cyclic ports
+$(13,4,6,15)$. Replace this box by one crossing site, retaining its
+boundary marking. The resulting twelve-site shadow is
+\[
+\begin{split}
+ &(3,1,4,26),\ (1,7,2,6),\ (7,3,8,2),\ (13,4,6,15),\\
+ &(21,9,22,8),\ (9,17,10,16),\ (17,11,18,10),\\
+ &(11,25,12,24),\ (19,12,20,13),\ (15,22,16,23),\\
+ &(23,18,24,19),\ (25,21,26,20).
+\end{split}
+\]
+One of its checkerboard graphs $G$ has eight vertices and edge list
+\[
+ 12,\ 01,\ 20,\ 17,\ 52,\ 35,\ 63,\ 46,\ 47,\ 57,\ 67,\ 24.
+\]
+Here $ab$ denotes the edge with endpoints $a,b$; the shadow specifies
+its plane embedding. This graph is connected, loopless and simple.
+
+Use $G$ as the dual of the fat-vertex graph $\Gamma$.
+Put a twist band of absolute weight two at site $1$ and absolute
+weight three at each of the other eleven sites. The band direction is
+fixed by this duality. A band subdivides its edge in the full
+crossing graph of $\Gamma$; dually, the full $G$ crossing graph
+replaces each edge by its indicated number of parallel crossing edges.
+For an exact local convention, number the four ports of a row
+$(a,b,c,d)$ cyclically from zero. Let $p\in\{0,1\}$ be the index of
+one of its $G$-coloured corners, a corner $h$ lying between ports
+$h$ and $h+1$. One extra half-twist is inserted by
+\[
+\begin{array}{c|c}
+p=0&(a,x,y,d),\ (x,b,c,y)\\
+p=1&(a,b,x,y),\ (y,x,c,d),
+\end{array}
+\]
+with fresh edge labels $x,y$. Repetition at the first row gives the
+specified two- or three-crossing twist. The new bigon has the
+$\Gamma$ colour, so each insertion adds a parallel edge in $G$.
+For the displayed shadow the corner parities are
+\[
+                  (1,1,1,1,1,1,1,1,1,1,1,1).
+\]
+The exact input retains the resulting full $35$-crossing PD.
+The finite checker reconstructs all these rows, verifies a spherical
+connected rotation system and a single link component. It checks
+the twelve parallel bundles on eight vertices and reduces them to the
+simple dual $G$. The chosen crossing signs are uniform for this
+checkerboard colouring, so the full diagram is alternating.
+The full $G$ crossing graph is loopless, and has no bridges since
+every bundle has at least two edges. Hence neither checkerboard
+graph has a loop, excluding nugatory crossings and in particular
+Reidemeister~I moves. Alternation excludes Reidemeister~II moves.
+Thus the diagram is reduced as required by the definition, and
+this is a twisted knot in the precise sense of
+BBK Section~4: all band weights have absolute value at least two,
+and $\Gamma^*=G$ is simple. Their Theorem~1 gives
+$b(J)=\operatorname{mr}(J)=8$.
+
+Replace the rational twist box at site $3$ by the original two-crossing
+box displayed above, and replace every other box by its original
+single crossing with its original ports. This restores the retained
+PD literally. Every inserted box is rational. Since $13a_{373}$ has
+bridge number four by its retained certificate, the operation has
+dropped the bridge number from eight to four; the sharp lower and
+upper bounds of the base are not preserved.
+\end{proof}
+
+The exact files for this finite example are
+\path{higher_face_rational_origin_inputs.json},
+\path{verify_higher_face_rational_origin.py} and
+\path{higher_face_rational_origin_verification.json}.
+The checker uses the standard library. It independently traverses
+corner cycles, checks the parallel twist bundles, alternation, absence of loops and bridges, and strand connectivity, binds
+the target PD to the retained named-knot input, and rejects changes
+to the base or recovered diagram and a forbidden unit base weight.
+The interpretation of a twist band and the BBK bridge theorem are
+written dependencies; these finite checks are not formal verification.
+
+\begin{theorem}\label{thm:universalorigin}
+For every knot $K$ and every integer $N$, some BBK twisted knot $J$
+with $b(J)\ge N$ has arbitrary rational replacements of its twist
+boxes equal to $K$.
+\end{theorem}
+\begin{proof}
+Choose a connected nonempty diagram of $K$, allowing a nugatory
+crossing when $K$ is the unknot. Let $H$ be either checkerboard plane
+graph, with its inherited cyclic orders. Subdivide every edge into a
+path of length $\ell\ge3$, using different internal vertices for
+different edges. The resulting plane graph $G$ is simple: a loop of
+$H$ becomes a cycle of length at least three, and every edge of $G$
+contains an internal vertex private to its original edge. Distinct
+original edges therefore create no parallel pair. Increase $\ell$
+until $\#V(G)\ge N$.
+
+The medial box construction for $G$ is the medial construction for $H$
+with extra degree-two vertices along its edges. A subdivision glues
+two boxes by the adjacent-port Conway operation already described.
+In one box on each original edge put its original signed single
+crossing, and in every other box on that path put the identity for
+that operation: the zero tangle for addition, or its quarter-turn
+for the corresponding product. These are rational tangles. Removing
+the identity boxes restores the original diagram with the same
+four external ports on each original edge. Thus this rational
+decoration of $G$ is exactly $K$.
+
+It remains to choose a twisted \emph{knot} on the same base $G$.
+Let $\Gamma=G^*$ and put two half-twists in every band.
+Choose their handedness so that every crossing has the same
+checkerboard sign. The resulting diagram is alternating.
+The full crossing graph of the dual $G$ replaces every edge by
+two parallel edges. Since $G$ is loopless and each edge has at least
+two parallel copies, this crossing graph is loopless and bridge-free.
+Thus neither checkerboard graph has a loop, so there is no nugatory
+crossing or Reidemeister~I move. Alternation excludes a
+Reidemeister~II move. This verifies the reduced-diagram hypothesis
+in the BBK definition.
+
+At a box, changing its weight between two and three, while keeping
+the same checkerboard sign, changes its endpoint matching to a
+different perfect matching of the same four ports. The resulting diagram is a union
+of circuits in the connected medial shadow. If there is more than
+one circuit, some site is traversed by two different circuits:
+otherwise all four ports of each vertex would lie on one circuit,
+and the connected shadow would partition into disjoint vertex sets.
+At such a site, switch the weight from two to three or from three
+to two. Either alternative matching reconnects the two distinct
+circuits into a single circuit. No other circuit changes. Repeating
+this step strictly reduces the number of circuits until there is
+one. All band weights are still two or three in absolute value.
+The checkerboard signs remain uniform, and the full dual crossing
+graph still consists of parallel bundles of size at least two.
+Thus alternation and the absence of Reidemeister~I and~II moves
+hold throughout the circuit merges.
+Consequently the result is a BBK twisted knot $J$, and their
+Theorem~1 gives $b(J)=\#V(G)\ge N$.
+
+Finally replace its boxes by the rational decoration recovering $K$
+constructed in the first part. The base and its plane ports have not
+changed, so these are the permitted arbitrary rational replacements.
+\end{proof}
+
+Theorem~\ref{thm:universalorigin} concerns geometric origins under
+arbitrary rational replacement. It does not extend the rank-preserving
+equality proof of BBK: a construction preserving a Coxeter
+rank $r$ and a matching bridge upper bound still certifies that same
+$r$. In particular, a sharp-four application of that proof uses
+$r=4$. Starting from a higher-face base and allowing those bounds
+to drop supplies no prior sharp-four certificate for the target.
+
+\begin{thebibliography}{9}
+\bibitem{bbk}
+S. Baader, R. Blair and A. Kjuchukova,
+Coxeter groups and meridional rank of links,
+Math. Ann. 379 (2021), 1533--1551.
+Theorem~1, Section~4 definition and subsequent replacement paragraph.
+\url{https://doi.org/10.1007/s00208-020-02124-z}.
+\bibitem{bs}
+F. Bonahon and L. C. Siebenmann,
+New Geometric Splittings of Classical Knots and the Classification
+and Symmetries of Arborescent Knots, author monograph,
+version 26 January 2016. Introduction pp.~vi--vii and Part~V.
+\url{https://dornsife.usc.edu/francis-bonahon/wp-content/uploads/sites/205/2023/06/BonSieb-compressed.pdf}.
+\bibitem{km}
+A. Kolpakov and B. Martelli,
+Hyperbolic four-manifolds with one cusp,
+Geom. Funct. Anal. 23 (2013), 1904--1933.
+Author preprint arXiv:1303.6122v7,
+Figure~2 and Section~1.1, printed pp.~5--6.
+\url{https://doi.org/10.1007/s00039-013-0247-2}.
+\url{https://arxiv.org/abs/1303.6122v7}.
+\bibitem{mar}
+B. Martelli, Dehn surgery on the minimally twisted seven-chain link,
+Comm. Anal. Geom. 29 (2021), 1597--1641.
+Author preprint arXiv:1808.08430v2, Theorem~2.7, printed pp.~15--16,
+and the explanation of its two mixed pieces.
+\url{https://doi.org/10.4310/CAG.2021.v29.n7.a5}.
+\url{https://arxiv.org/abs/1808.08430v2}.
+\end{thebibliography}
+\end{document}

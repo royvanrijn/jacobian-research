@@ -11,6 +11,11 @@ of degree three has no extra horizontal central prime.
 
 The complete-curve argument confines every survivor to three off-M
 weighted-face classes, with the necessary affine-response condition.
+The subsequent [simple-escape theorem](RULING_SIX_SIMPLE_ESCAPE_GRAPHS_AND_QUARTIC_FACE_REDUCTION.md)
+excludes B, C and the central degree-three alternative; only A and the
+central degree-two residue case remain. The
+[retained-source ledger](RULING_SIX_RETAINED_SOURCE_PACKETS_AND_STRICT_INFINITY_BOUNDS.md)
+supplies the current degree and infinity restrictions.
 The ruling-six class remains open. All primes of the original full
 normalization, including P-vertical primes invisible to the generic
 P fibre, remain in scope. Neither generic derivative integrality nor
@@ -357,8 +362,9 @@ three-dimensional Keller controls continue to rule out dimension-free
 integrality conclusions.
 
 PF142's mixed minimal, PF156's fixed-v2 quintic graph, PF158's ruling-four
-and PF161's ruling-five actual-target branches remain closed. Ruling-six
-faces(22), their finite residue image class(18), higher cyclic images,
+and PF161's ruling-five actual-target branches remain closed. PF165 now
+excludes B/C in(22) and the central degree-three alternative. Ruling-six
+face A, its finite residue image class(18), higher cyclic images,
 trivial deck, full marked first-derivative regularity and normal-tail power
 growth remain OPEN. HC4/JC2 is not proved and no counterexample is constructed.
 The uniform arguments, not finite coefficient prefixes, justify the scopes.

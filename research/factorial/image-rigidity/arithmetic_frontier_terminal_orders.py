@@ -884,6 +884,407 @@ def prime_power_frobenius_replay():
         "all_real_positive_Gamma_shapes_claimed":False}
 
 
+
+def quintic_common_pair_radius_replay():
+    """Complete residue calculations supporting the uniform graded proof."""
+    x, y = s.symbols("x y")
+    e_table = {1: [0, 1, 1, 1, 3], -1: [0, 0, 1, 1, 1],
+               -3: [0, 0, 0, 2, 4]}
+    table_cases = 0
+    vanished_sections = 0
+    for delta, row in e_table.items():
+        for state, e in enumerate(row):
+            ceiling = (2 * state + delta + 4) // 5
+            numerator = s.Poly((1 - x) ** (5 * ceiling - 2 * state - delta)
+                * (1 - x + 2 * x ** 2) ** (4 - state), x, modulus=5)
+            for residue in range(e):
+                target = (state - residue) % 5
+                assert all(numerator.nth(j) == 0
+                           for j in range(target, numerator.degree() + 1, 5))
+                vanished_sections += 1
+            assert numerator.nth(state - e) % 5
+            table_cases += 1
+    def section(poly, residue):
+        return s.Poly(sum(poly.nth(j) * y ** ((j - residue) // 5)
+                         for j in range(residue, poly.degree() + 1, 5)),
+                      y, modulus=5)
+    further_flag_cases = 0
+    for state, expression in [(2, 1 - 2 * x + x ** 3 - x ** 4),
+        (3, 1 + x - 2 * x ** 2 + 2 * x ** 4 - 2 * x ** 5)]:
+        numerator = s.Poly(expression, x, modulus=5)
+        assert section(numerator, state).is_zero
+        assert (2 * section(numerator, state - 1)
+                - section(numerator, state - 2)).is_zero
+        further_flag_cases += 1
+    corrupted = s.Poly(1 - x + x ** 3 - x ** 4, x, modulus=5)
+    assert not (2 * section(corrupted, 1) - section(corrupted, 0)).is_zero
+    def raise_coefficients(row, constant):
+        return [(row[j - 1] if j else 0)
+                + (constant - j) * (row[j] if j < len(row) else 0)
+                for j in range(len(row) + 1)]
+    def auxiliary_coefficients(degree, gamma, gap):
+        row = [1]
+        for k in range(degree):
+            row = raise_coefficients(row, gap * k + gamma + gap - 1)
+        return row
+    physical_bessel_cases = 0
+    bessel = [1]
+    for n in range(26):
+        actual = auxiliary_coefficients(n, 2 * n + 1, 3)
+        assert all((a - b) % 5 == 0 for a, b in zip(actual, bessel))
+        bessel = raise_coefficients(bessel, 2 * n)
+        physical_bessel_cases += 1
+    flag_coefficient_cases = 0
+    for m in range(2, 49):
+        if m % 5 not in [2, 3]:
+            continue
+        ell, state = divmod(m, 5)
+        L = 5 * ell + 1
+        B = auxiliary_coefficients(m, 2 * m + 1, 3)
+        C = raise_coefficients(B, 5 * m + 3)
+        F = [C[j] - (5 * m + 3 - L) * (B[j] if j < len(B) else 0)
+             for j in range(len(C))]
+        assert F[5 * ell + 3] % 5
+        for j, coefficient in enumerate(F):
+            if coefficient:
+                k = ell - j // 5
+                assert valuation(coefficient, 5) >= k + (j % 5 < 3)
+        flag_coefficient_cases += 1
+    z, u = s.symbols("z u")
+    basic = [s.Integer(1), z, z ** 2 + z,
+             z ** 3 + 3 * z ** 2 + 3 * z, z ** 4 + z ** 3]
+    expected = [s.Integer(1), s.Integer(1), u, u, u ** 2]
+    unit_origin_cases = 0
+    for index, B in enumerate(basic):
+        C = s.Poly(s.expand((z + 3) * B - z * s.diff(B, z)), z)
+        B = s.Poly(B, z)
+        def cyclic(poly, residue):
+            return sum(poly.nth(j) * u ** ((j - residue) // 3)
+                       for j in range(residue, poly.degree() + 1, 3))
+        cr = [cyclic(C, j) for j in range(3)]
+        br = [cyclic(B, j) for j in range(3)]
+        minors = [s.Poly(cr[i] * br[j] - cr[j] * br[i], u, modulus=5)
+                  for i, j in [(0, 1), (0, 2), (1, 2)]]
+        common = minors[0]
+        for minor in minors[1:]:
+            common = s.gcd(common, minor)
+        assert common.monic() == s.Poly(expected[index], u, modulus=5)
+        unit_origin_cases += 1
+    return {
+        "complete_annulus_numerator_cases": table_cases,
+        "vanishing_residue_sections": vanished_sections,
+        "complete_further_flag_numerator_cases": further_flag_cases,
+        "corrupted_further_flag_identity_rejected": True,
+        "physical_bessel_congruence_cases": physical_bessel_cases,
+        "literal_further_flag_coefficient_cases": flag_coefficient_cases,
+        "complete_unit_argument_cyclic_ideal_cases": unit_origin_cases,
+        "uniform_claim": "outer argument excludes v5(u)<3/5",
+        "finite_tests_prove_unbounded_scope": False,
+        "boundary_exclusion_in_separate_profile_certificate": True,
+        "all_terminal_quintic_SFC": False,
+    }
+
+
+
+def quintic_inner_endpoint_replay():
+    """Exact coefficient controls for the uniform valuation-one restriction."""
+    n, w = s.symbols("n w")
+    modulus = 125
+
+    def reduce_coefficients(expression):
+        return s.Poly(expression, n, domain=s.ZZ).trunc(modulus).as_expr().expand()
+
+    def coefficient_formula(index):
+        if index == 0:
+            return s.Integer(1)
+        ceiling = (3 * index + 4) // 5
+        factorial_part = factorial(index)
+        order = index - ceiling - factorial_valuation(index, 5)
+        if order >= 3:
+            return s.Integer(0)
+        value = 5 ** order * pow(
+            factorial_part // 5 ** factorial_valuation(index, 5), -1, modulus)
+        for j in range(index - ceiling):
+            value = reduce_coefficients(value * (n - ceiling - j))
+        for j in range(3 * index):
+            if j % 5:
+                inverse = pow(j, -1, modulus)
+                reciprocal = -inverse * sum(
+                    (5 * inverse * n) ** a for a in range(3 - order))
+                value = reduce_coefficients(value * reciprocal)
+        return value
+
+    expected = [
+        1, -25 * n ** 2 + 35 * n - 62, -13,
+        25 * n ** 2 + 5 * n + 15, 25 * n ** 2 + 5 * n + 10,
+        5 * n ** 2 - 35 * n + 60,
+        50 * n ** 3 + 15 * n ** 2 - 60 * n + 50,
+        -15 * n ** 2 + 40 * n + 50,
+        25 * n ** 3 + 50 * n ** 2 + 50 * n,
+        25 * n ** 3 - 25 * n ** 2 + 25 * n - 25,
+        50 - 50 * n ** 4,
+        -25 * n ** 4 - 25 * n ** 3 - 25 * n ** 2 - 25 * n,
+        25 * n ** 4 + 50 * n ** 3 - 25 * n ** 2 - 50 * n,
+    ]
+    actual = [coefficient_formula(j) for j in range(13)]
+    assert all(reduce_coefficients(a - b) == 0 for a, b in zip(actual, expected))
+    truncated = sum(a * w ** j for j, a in enumerate(actual))
+    assert s.Poly(truncated, n, w).trunc(5).as_expr() == 1 - 2 * w + 2 * w ** 2
+    evaluated_two = reduce_coefficients(truncated.subs(w, 2))
+    evaluated_nine = reduce_coefficients(truncated.subs(w, 9))
+    assert evaluated_two == 25 * n ** 2 - 50 * n + 25
+    assert evaluated_nine == 50 * n ** 2 - 25 * n - 50
+    assert reduce_coefficients(evaluated_two.subs(n, n + 1) - evaluated_two) == (
+        50 * n - 25)
+    assert reduce_coefficients(evaluated_nine.subs(n, n + 1) - evaluated_nine) == (
+        25 - 25 * n)
+    for root in (2, 4):
+        assert (1 + 3 * root + 2 * root ** 2) % 5 == 0
+        assert (3 + 4 * root) % 5
+    tail_exceptions = 0
+    for j in range(13, 18):
+        assert j - (3 * j + 4) // 5 - factorial_valuation(j, 5) == 3
+        tail_exceptions += 1
+    # e_j >= (3j-11)/20 > 2 for j>=18 proves the remaining infinite tail.
+    assert Fraction(3 * 18 - 11, 20) > 2
+    assert max((3 * j + 4) // 5 for j in range(13)) == 8
+
+    def literal_coefficient(index, j):
+        if j > index:
+            return Fraction(0)
+        return Fraction(comb(index, j) * 5 ** j * factorial(5 * index - 3 * j),
+                        factorial(5 * index))
+
+    def modular_fraction(value):
+        assert value.denominator % 5
+        return value.numerator * pow(value.denominator, -1, modulus) % modulus
+
+    literal_cases = 0
+    for index in range(25, 50):
+        for j in range(13):
+            assert modular_fraction(literal_coefficient(index, j)) == (
+                int(actual[j].subs(n, index)) % modulus)
+            literal_cases += 1
+    threshold_cases = 0
+    for index in range(8, 25):
+        finite = sum(modular_fraction(literal_coefficient(index, j)) * w ** j
+                     for j in range(index + 1))
+        table = truncated.subs(n, index)
+        assert s.Poly(finite - table, w, domain=s.ZZ).trunc(modulus).is_zero
+        threshold_cases += 1
+
+    complete_residue_cases = 0
+    surviving_disks = set()
+    for index in range(25, 50):
+        rows = [
+            [modular_fraction(literal_coefficient(degree, j))
+             for j in range(degree + 1)]
+            for degree in (index, index + 1)
+        ]
+        for unit in range(1, modulus):
+            if unit % 5 == 0:
+                continue
+            values = [sum(a * pow(unit, j, modulus) for j, a in enumerate(row))
+                      % modulus for row in rows]
+            if values == [0, 0]:
+                condition = (unit % 25 == 2 and index % 5 == 3) or (
+                    unit % 25 == 9 and index % 5 == 1)
+                assert condition
+                surviving_disks.add((index % 5, unit % 25))
+            complete_residue_cases += 1
+    assert surviving_disks == {(3, 2), (1, 9)}
+
+    # The canceled infinite family is not the finite moment at small indices.
+    assert literal_coefficient(1, 2) == 0
+    assert int(actual[2].subs(n, 1)) % modulus != 0
+    corrupted = truncated + 25 * w ** 3
+    assert reduce_coefficients(corrupted.subs(w, 2) - evaluated_two) != 0
+    return {
+        "scope": "all n>=8, actual consecutive quintic moments, v5(u)=1",
+        "coefficient_table_identities": len(actual),
+        "root_disk_evaluation_and_difference_identities": 4,
+        "simple_residual_roots": 2,
+        "tail_bound_exception_indices": tail_exceptions,
+        "tail_bound_all_j_ge18": "(3j-11)/20>2",
+        "literal_factorial_coefficient_cases": literal_cases,
+        "finite_degree_threshold_cases": threshold_cases,
+        "complete_precision_three_unit_cases": complete_residue_cases,
+        "necessary_disks": [
+            {"u_over_5_mod25": 2, "n_mod5": 3},
+            {"u_over_5_mod25": 9, "n_mod5": 1},
+        ],
+        "excluded_index_classes_mod5": [0, 2, 4],
+        "false_infinite_interpolation_control_rejected": True,
+        "corrupted_coefficient_table_rejected": True,
+        "other_inner_valuations_resolved": False,
+        "all_terminal_quintic_SFC": False,
+        "finite_tests_prove_unbounded_scope": False,
+    }
+
+
+def quintic_boundary_profiles_replay():
+    """Literal complete boundary certificates; no gcd calculation is trusted."""
+    x, y, t, v = s.symbols("x y t v")
+    def falling(a, count):
+        value = 1
+        for j in range(count):
+            value = value * (a - j) % 5
+        return value
+    def gcoeff(a, state, delta):
+        ceiling = (2 * state + delta + 4) // 5
+        numerator = s.Poly((1 - x) ** (5 * ceiling - 2 * state - delta)
+            * (1 - x + 2 * x ** 2) ** (4 - state), x, modulus=5)
+        H = s.Poly(s.series((1 - y) ** (-(2 * a + ceiling))
+            * (1 - y + 2 * y ** 2) ** (-(a + 1)),
+            y, 0, 5).removeO().expand(), y, modulus=5)
+        return {j: sum(numerator.nth(j - 5 * k) * H.nth(k)
+                       for k in range(5) if j >= 5 * k) % 5
+                for j in range(24)}
+    def leading(a, state, delta, e):
+        G = gcoeff(a, state, delta)
+        scale = factorial(state) * pow(factorial(e), -1, 5) % 5
+        return s.Poly(sum(((-1) ** k * scale * falling(a, k)
+            * G.get(5 * k + state - e, 0)) % 5 * t ** k
+            for k in range(5)), t, modulus=5)
+    def further(a, state, e, ee):
+        G = gcoeff(a, state, 1)
+        scale = factorial(state) * pow(factorial(ee), -1, 5) % 5
+        return s.Poly(sum(((-1) ** k * scale * falling(a, k)
+            * (ee * G.get(5 * k + state - ee + 1, 0)
+               - (ee - e) * G.get(5 * k + state - ee, 0))) % 5 * t ** k
+            for k in range(5)), t, modulus=5)
+    def coefficients_mod5(poly):
+        if poly.is_zero:
+            return [0]
+        return [int(poly.nth(j)) % 5 for j in range(poly.degree() + 1)]
+    def sections(poly):
+        return [s.Poly(sum(poly.nth(j) * v ** ((j - residue) // 3)
+            for j in range(residue, poly.degree() + 1, 3)), v, modulus=5)
+            for residue in range(3)]
+    def from_coefficients(row):
+        return s.Poly(sum(int(c) * v ** j for j, c in enumerate(row)),
+                      v, modulus=5)
+    def raise_coefficients(row, constant):
+        return [(row[j - 1] if j else 0)
+            + (constant - j) * (row[j] if j < len(row) else 0)
+            for j in range(len(row) + 1)]
+    def actual_auxiliary(degree):
+        row = [1]
+        for k in range(degree):
+            row = raise_coefficients(row, 3 * k + 2 * degree + 3)
+        return row
+    def literal_profile(row, block, residue):
+        values = []
+        for k in range(block + 1):
+            j = 5 * (block - k) + residue
+            coefficient = row[j] if j < len(row) else 0
+            assert coefficient % 5 ** k == 0
+            values.append((coefficient // 5 ** k) % 5)
+        assert all(value == 0 for value in values[5:])
+        values = values[:5]
+        while len(values) > 1 and values[-1] == 0:
+            values.pop()
+        return values
+    certificate_path = Path(__file__).resolve().parent / (
+        "arithmetic_frontier_quintic_boundary_profiles.json")
+    data = json.loads(certificate_path.read_text())
+    assert len(data["profiles"]) == 25
+    flags = [0, 1, 1, 1, 3]
+    seen = set()
+    bezout_count = 0
+    literal_count = 0
+    profiles = []
+    for record in data["profiles"]:
+        state, a = record["m_mod5"], record["ell_mod5"]
+        assert state in range(5) and a in range(5)
+        assert (state, a) not in seen
+        seen.add((state, a))
+        e = flags[state]
+        b = leading(a, state, 1, e)
+        if state < 4:
+            ee = e + (1 if state in [0, 1] else 2)
+            c = further(a, state, e, ee)
+            kind = "F=C-(5m+3-L)B"
+        else:
+            ee = 5
+            c = leading((a + 1) % 5, 0, -1, 0)
+            kind = "C"
+        assert (e, ee, kind) == (record["B_exponent"],
+            record["other_exponent"], record["other_row"])
+        assert coefficients_mod5(b) == record["B_leading_t_coefficients"]
+        assert coefficients_mod5(c) == record["other_leading_t_coefficients"]
+        bp = s.Poly(s.expand(x ** (20 + e)
+            * b.as_expr().subs(t, x ** -5)), x, modulus=5)
+        cp = s.Poly(s.expand(x ** (20 + ee)
+            * c.as_expr().subs(t, x ** -5)), x, modulus=5)
+        br, cr = sections(bp), sections(cp)
+        minors = [br[i] * cr[j] - br[j] * cr[i]
+                  for i, j in [(0, 1), (0, 2), (1, 2)]]
+        assert [coefficients_mod5(f) for f in minors] == (
+            record["cyclic_minors_v_coefficients"])
+        multipliers = [from_coefficients(row)
+                       for row in record["Bezout_coefficients"]]
+        target = s.Poly(v ** record["Bezout_target_origin_power"],
+                        v, modulus=5)
+        assert sum((a * b for a, b in zip(multipliers, minors)),
+                   s.Poly(0, v, modulus=5)) == target
+        bezout_count += 1
+        profiles.append((multipliers, minors, target))
+        # Independent reconstruction from literal integer auxiliary coefficients.
+        ell = a + 5
+        m = 5 * ell + state
+        B = actual_auxiliary(m)
+        C = raise_coefficients(B, 5 * m + 3)
+        if state < 4:
+            L = 5 * ell + e
+            other = [C[j] - (5 * m + 3 - L)
+                * (B[j] if j < len(B) else 0) for j in range(len(C))]
+            block, residue = ell, ee
+        else:
+            other, block, residue = C, ell + 1, 0
+        assert literal_profile(B, ell, e) == record["B_leading_t_coefficients"]
+        assert literal_profile(other, block, residue) == (
+            record["other_leading_t_coefficients"])
+        literal_count += 1
+    assert seen == {(state, a) for state in range(5) for a in range(5)}
+    factorial_count = 0
+    for ell in range(10):
+        for state in range(5):
+            n = 5 * ell + state
+            for k in range(min(ell, 6) + 1):
+                for i in range(5):
+                    j = 5 * (ell - k) + i
+                    if j > n + 1:
+                        continue
+                    ratio = Fraction(factorial(n), factorial(j) * 5 ** k)
+                    assert ratio.denominator % 5
+                    actual = ratio.numerator * pow(ratio.denominator, -1, 5) % 5
+                    expected = ((-1) ** k * factorial(state)
+                        * pow(factorial(i), -1, 5) * falling(ell, k)) % 5
+                    assert actual == expected
+                    factorial_count += 1
+    # Changing a nonzero Bezout coefficient must destroy the retained identity.
+    aa, mm, target = profiles[0]
+    altered = aa[:]
+    index = next(j for j, poly in enumerate(altered) if not poly.is_zero)
+    altered[index] = altered[index] + s.Poly(1, v, modulus=5)
+    assert sum((a * b for a, b in zip(altered, mm)),
+               s.Poly(0, v, modulus=5)) != target
+    return {
+        "complete_profiles": len(seen),
+        "literal_Bezout_identities": bezout_count,
+        "independent_actual_auxiliary_profiles": literal_count,
+        "factorial_block_reduction_cases": factorial_count,
+        "corrupted_Bezout_control_rejected": True,
+        "boundary_excluded": True,
+        "strict_uniform_common_pair_radius": "v5(u)>3/5",
+        "finite_reduction_exhausts_all_m": True,
+        "finite_prefix_extrapolation": False,
+        "all_terminal_quintic_SFC": False,
+        "certificate": certificate_path.name,
+    }
+
+
 def integer_bareiss_determinant(matrix):
     """Fraction-free determinant with exact-division checks and row pivoting."""
     entries = [list(row) for row in matrix]
@@ -1229,6 +1630,9 @@ def replay():
     cubic_unit_operator = cubic_unit_operator_replay()
     prime_gap_units = prime_gap_unit_replay()
     prime_power_frobenius = prime_power_frobenius_replay()
+    quintic_pair_radius = quintic_common_pair_radius_replay()
+    quintic_boundary = quintic_boundary_profiles_replay()
+    quintic_inner_endpoint = quintic_inner_endpoint_replay()
     hurwitz_counterexample = resultant_hurwitz_counterexample_certificate()
     return {
         "status": "pass", "arithmetic": "exact rational and finite-field",
@@ -1249,6 +1653,9 @@ def replay():
         "cubic_factorial_unit_operator": cubic_unit_operator,
         "prime_gap_unit_determinant": prime_gap_units,
         "prime_power_frobenius_noncollision": prime_power_frobenius,
+        "quintic_five_adic_common_pair_radius": quintic_pair_radius,
+        "quintic_boundary_profiles": quintic_boundary,
+        "quintic_five_adic_inner_endpoint": quintic_inner_endpoint,
         "unshifted_resultant_hurwitz_counterexample": hurwitz_counterexample,
         "unsupported_inputs_rejected": rejected_count,
         "repeated_factor_countercontrol_detected": True,
@@ -1289,7 +1696,8 @@ if __name__ == "__main__":
                      "sources/dlmf-1-10-rouche.html",
                      "gap_three_hurwitz_structure.tex", "ALL_UNIVARIATE_TWO_TERM_SFC.tex",
                      "UNIFORM_PADE_PARABOLA_SFC.tex", "CUBIC_ADJOINT_STABILITY_SFC.tex",
-                     "DYADIC_BINOMIAL_SFC.tex")}
+                     "DYADIC_BINOMIAL_SFC.tex", "lower_exponent_initial_and_boundary.tex",
+                     "arithmetic_frontier_quintic_boundary_profiles.json")}
     destination = here / "arithmetic_frontier_terminal_orders_verification.json"
     destination.write_text(json.dumps(report, indent=2) + "\n", encoding="utf-8")
     print(json.dumps(report, indent=2))

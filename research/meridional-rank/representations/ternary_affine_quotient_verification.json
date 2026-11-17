@@ -1,0 +1,269 @@
+{
+  "status": "PASS",
+  "python": "3.12.3",
+  "scope": "Exact24 epimorphisms to Q=F3^6 semidirect GL3(F2), meridian class of size189 and class-generating rank4. Literal homogeneous7-dimensional matrices give rank(M-I)=2 and common fixed space0; independent four-seed bridge uppers yield mr=b=4. No cover-group or branched-cover-rank theorem is used in this proof.",
+  "results": [
+    {
+      "name": "13a_373",
+      "image_order": 122472,
+      "kernel_translation_rank": 6,
+      "meridian_displacement_rank": 2,
+      "common_fixed_dimension": 0,
+      "meridional_lower": 4,
+      "bridge_upper": 4,
+      "mr_equals_bridge": 4
+    },
+    {
+      "name": "13a_375",
+      "image_order": 122472,
+      "kernel_translation_rank": 6,
+      "meridian_displacement_rank": 2,
+      "common_fixed_dimension": 0,
+      "meridional_lower": 4,
+      "bridge_upper": 4,
+      "mr_equals_bridge": 4
+    },
+    {
+      "name": "13a_391",
+      "image_order": 122472,
+      "kernel_translation_rank": 6,
+      "meridian_displacement_rank": 2,
+      "common_fixed_dimension": 0,
+      "meridional_lower": 4,
+      "bridge_upper": 4,
+      "mr_equals_bridge": 4
+    },
+    {
+      "name": "13a_392",
+      "image_order": 122472,
+      "kernel_translation_rank": 6,
+      "meridian_displacement_rank": 2,
+      "common_fixed_dimension": 0,
+      "meridional_lower": 4,
+      "bridge_upper": 4,
+      "mr_equals_bridge": 4
+    },
+    {
+      "name": "13a_3264",
+      "image_order": 122472,
+      "kernel_translation_rank": 6,
+      "meridian_displacement_rank": 2,
+      "common_fixed_dimension": 0,
+      "meridional_lower": 4,
+      "bridge_upper": 4,
+      "mr_equals_bridge": 4
+    },
+    {
+      "name": "13a_3266",
+      "image_order": 122472,
+      "kernel_translation_rank": 6,
+      "meridian_displacement_rank": 2,
+      "common_fixed_dimension": 0,
+      "meridional_lower": 4,
+      "bridge_upper": 4,
+      "mr_equals_bridge": 4
+    },
+    {
+      "name": "13a_3275",
+      "image_order": 122472,
+      "kernel_translation_rank": 6,
+      "meridian_displacement_rank": 2,
+      "common_fixed_dimension": 0,
+      "meridional_lower": 4,
+      "bridge_upper": 4,
+      "mr_equals_bridge": 4
+    },
+    {
+      "name": "13a_3276",
+      "image_order": 122472,
+      "kernel_translation_rank": 6,
+      "meridian_displacement_rank": 2,
+      "common_fixed_dimension": 0,
+      "meridional_lower": 4,
+      "bridge_upper": 4,
+      "mr_equals_bridge": 4
+    },
+    {
+      "name": "13n_1005",
+      "image_order": 122472,
+      "kernel_translation_rank": 6,
+      "meridian_displacement_rank": 2,
+      "common_fixed_dimension": 0,
+      "meridional_lower": 4,
+      "bridge_upper": 4,
+      "mr_equals_bridge": 4
+    },
+    {
+      "name": "13n_1006",
+      "image_order": 122472,
+      "kernel_translation_rank": 6,
+      "meridian_displacement_rank": 2,
+      "common_fixed_dimension": 0,
+      "meridional_lower": 4,
+      "bridge_upper": 4,
+      "mr_equals_bridge": 4
+    },
+    {
+      "name": "13n_1007",
+      "image_order": 122472,
+      "kernel_translation_rank": 6,
+      "meridian_displacement_rank": 2,
+      "common_fixed_dimension": 0,
+      "meridional_lower": 4,
+      "bridge_upper": 4,
+      "mr_equals_bridge": 4
+    },
+    {
+      "name": "13n_1011",
+      "image_order": 122472,
+      "kernel_translation_rank": 6,
+      "meridian_displacement_rank": 2,
+      "common_fixed_dimension": 0,
+      "meridional_lower": 4,
+      "bridge_upper": 4,
+      "mr_equals_bridge": 4
+    },
+    {
+      "name": "13n_1012",
+      "image_order": 122472,
+      "kernel_translation_rank": 6,
+      "meridian_displacement_rank": 2,
+      "common_fixed_dimension": 0,
+      "meridional_lower": 4,
+      "bridge_upper": 4,
+      "mr_equals_bridge": 4
+    },
+    {
+      "name": "13n_1013",
+      "image_order": 122472,
+      "kernel_translation_rank": 6,
+      "meridian_displacement_rank": 2,
+      "common_fixed_dimension": 0,
+      "meridional_lower": 4,
+      "bridge_upper": 4,
+      "mr_equals_bridge": 4
+    },
+    {
+      "name": "13n_1043",
+      "image_order": 122472,
+      "kernel_translation_rank": 6,
+      "meridian_displacement_rank": 2,
+      "common_fixed_dimension": 0,
+      "meridional_lower": 4,
+      "bridge_upper": 4,
+      "mr_equals_bridge": 4
+    },
+    {
+      "name": "13n_1044",
+      "image_order": 122472,
+      "kernel_translation_rank": 6,
+      "meridian_displacement_rank": 2,
+      "common_fixed_dimension": 0,
+      "meridional_lower": 4,
+      "bridge_upper": 4,
+      "mr_equals_bridge": 4
+    },
+    {
+      "name": "13n_1045",
+      "image_order": 122472,
+      "kernel_translation_rank": 6,
+      "meridian_displacement_rank": 2,
+      "common_fixed_dimension": 0,
+      "meridional_lower": 4,
+      "bridge_upper": 4,
+      "mr_equals_bridge": 4
+    },
+    {
+      "name": "13n_1046",
+      "image_order": 122472,
+      "kernel_translation_rank": 6,
+      "meridian_displacement_rank": 2,
+      "common_fixed_dimension": 0,
+      "meridional_lower": 4,
+      "bridge_upper": 4,
+      "mr_equals_bridge": 4
+    },
+    {
+      "name": "13n_1047",
+      "image_order": 122472,
+      "kernel_translation_rank": 6,
+      "meridian_displacement_rank": 2,
+      "common_fixed_dimension": 0,
+      "meridional_lower": 4,
+      "bridge_upper": 4,
+      "mr_equals_bridge": 4
+    },
+    {
+      "name": "13n_1048",
+      "image_order": 122472,
+      "kernel_translation_rank": 6,
+      "meridian_displacement_rank": 2,
+      "common_fixed_dimension": 0,
+      "meridional_lower": 4,
+      "bridge_upper": 4,
+      "mr_equals_bridge": 4
+    },
+    {
+      "name": "13n_3842",
+      "image_order": 122472,
+      "kernel_translation_rank": 6,
+      "meridian_displacement_rank": 2,
+      "common_fixed_dimension": 0,
+      "meridional_lower": 4,
+      "bridge_upper": 4,
+      "mr_equals_bridge": 4
+    },
+    {
+      "name": "13n_3844",
+      "image_order": 122472,
+      "kernel_translation_rank": 6,
+      "meridian_displacement_rank": 2,
+      "common_fixed_dimension": 0,
+      "meridional_lower": 4,
+      "bridge_upper": 4,
+      "mr_equals_bridge": 4
+    },
+    {
+      "name": "13n_3855",
+      "image_order": 122472,
+      "kernel_translation_rank": 6,
+      "meridian_displacement_rank": 2,
+      "common_fixed_dimension": 0,
+      "meridional_lower": 4,
+      "bridge_upper": 4,
+      "mr_equals_bridge": 4
+    },
+    {
+      "name": "13n_3856",
+      "image_order": 122472,
+      "kernel_translation_rank": 6,
+      "meridian_displacement_rank": 2,
+      "common_fixed_dimension": 0,
+      "meridional_lower": 4,
+      "bridge_upper": 4,
+      "mr_equals_bridge": 4
+    }
+  ],
+  "group_control": {
+    "full_affine_closure_order": 122472,
+    "meridian_conjugacy_class_size": 189,
+    "ordinary_two_word_closure_order": 122472,
+    "ordinary_generating_rank": 2
+  },
+  "projected_involution_class_size": 21,
+  "class_generating_rank": 4,
+  "negative_controls": {
+    "changed_matrix": true,
+    "principal_zero_translation": true,
+    "changed_kernel_word": true,
+    "changed_named_census_map": true
+  },
+  "input_sha256": {
+    "ternary_affine_quotient_inputs.json": "8416247abb46c6591c24e1d1e2b58bc53fcfef5d1ccd624087a02cd14d54fa2e",
+    "verify_ternary_affine_quotients.py": "5120fa357113fa85e36785efb554fd5cd30c5667c4f481f77f47d11202bfb04f",
+    "seven_sheet_cover_inputs.json": "0cdaed4926bdf03eb399d572da98bf59b7bbbe0ea13ab66106ddc34724a85ef6",
+    "seven_sheet_census_verification.json": "f62503e0d0f5e0d238aba3be75daa764965907b576356f150f26186e4f4f474e",
+    "verify_seven_sheet_covers.py": "fbba9f40f4956c4130da6eca93fd4d874d3661e31da18141d30780408f83ea49"
+  },
+  "assurance": "Direct exact finite matrix, word, group and diagram replay. No branched-cover group or rank bound is used. Named-census read is bound to its separate retained receipt; the published geometric bridge-Wirtinger theorem is imported. Internal replay only, without formal verification or external specialist review."
+}

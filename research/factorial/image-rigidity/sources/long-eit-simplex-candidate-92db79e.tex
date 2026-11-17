@@ -1,0 +1,381 @@
+\documentclass[11pt]{article}
+
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{lmodern}
+\usepackage[margin=1.04in]{geometry}
+\usepackage{amsmath,amssymb,mathtools,amsthm}
+\usepackage{aliascnt}
+\usepackage{mathrsfs}
+\usepackage{microtype}
+\usepackage{enumitem}
+\usepackage{xcolor}
+\usepackage{booktabs}
+\usepackage{url}
+\usepackage{hyperref}
+\usepackage[capitalize,noabbrev]{cleveref}
+
+\hypersetup{
+  colorlinks=true,
+  linkcolor=blue!45!black,
+  citecolor=green!35!black,
+  urlcolor=blue!55!black,
+  pdftitle={Simplex Exponential Periods: Reductions and Open Comparison Problems},
+  pdfauthor={Christopher D. Long; Antoine-Auguste Le Blanc},
+  pdfsubject={Candidate simplex nonvanishing program and audited reductions},
+  pdfkeywords={exponential periods, candidate draft, comparison, open problems}
+}
+
+\numberwithin{equation}{section}
+\setlength{\emergencystretch}{3em}
+
+\newtheorem{theorem}{Theorem}[section]
+
+\newaliascnt{proposition}{theorem}
+\newtheorem{proposition}[proposition]{Proposition}
+\aliascntresetthe{proposition}
+
+\newaliascnt{lemma}{theorem}
+\newtheorem{lemma}[lemma]{Lemma}
+\aliascntresetthe{lemma}
+
+\newaliascnt{corollary}{theorem}
+\newtheorem{corollary}[corollary]{Corollary}
+\aliascntresetthe{corollary}
+
+\theoremstyle{definition}
+\newaliascnt{definition}{theorem}
+\newtheorem{definition}[definition]{Definition}
+\aliascntresetthe{definition}
+
+\newaliascnt{example}{theorem}
+\newtheorem{example}[example]{Example}
+\aliascntresetthe{example}
+
+\theoremstyle{remark}
+\newaliascnt{remark}{theorem}
+\newtheorem{remark}[remark]{Remark}
+\aliascntresetthe{remark}
+
+\newcommand{\C}{\mathbb C}
+\newcommand{\Q}{\mathbb Q}
+\newcommand{\Qbar}{\overline{\mathbb Q}}
+\newcommand{\R}{\mathbb R}
+\newcommand{\Z}{\mathbb Z}
+\newcommand{\N}{\mathbb N}
+\newcommand{\Aone}{\mathbb A^1}
+\newcommand{\Atwo}{\mathbb A^2}
+\newcommand{\Gm}{\mathbb G_m}
+\newcommand{\Spec}{\operatorname{Spec}}
+\newcommand{\Span}{\operatorname{span}}
+\newcommand{\trdeg}{\operatorname{trdeg}}
+\newcommand{\per}{\operatorname{per}}
+\newcommand{\ord}{\operatorname{ord}}
+\newcommand{\End}{\operatorname{End}}
+\newcommand{\Hom}{\operatorname{Hom}}
+\newcommand{\Ext}{\operatorname{Ext}}
+\newcommand{\Gal}{\operatorname{Gal}}
+\newcommand{\Lie}{\operatorname{Lie}}
+\newcommand{\Frac}{\operatorname{Frac}}
+\newcommand{\Sym}{\operatorname{Sym}}
+\newcommand{\SL}{\operatorname{SL}}
+\newcommand{\GL}{\operatorname{GL}}
+\newcommand{\Pic}{\operatorname{Pic}}
+\newcommand{\Div}{\operatorname{Div}}
+\newcommand{\Res}{\operatorname{Res}}
+\newcommand{\Tr}{\operatorname{Tr}}
+\newcommand{\Crit}{\operatorname{Crit}}
+\newcommand{\supp}{\operatorname{supp}}
+\newcommand{\rank}{\operatorname{rank}}
+\newcommand{\Ecal}{\mathcal E}
+\newcommand{\Fcal}{\mathcal F}
+\newcommand{\Hcal}{\mathcal H}
+\newcommand{\Lcal}{\mathcal L}
+\newcommand{\Mcal}{\mathcal M}
+\newcommand{\Ocal}{\mathcal O}
+\newcommand{\Pcal}{\mathcal P}
+\newcommand{\Rcal}{\mathcal R}
+\newcommand{\Vcal}{\mathcal V}
+\newcommand{\dd}{\,d}
+\newcommand{\KZ}{\mathrm{KZ}}
+
+\title{Simplex Exponential Periods: Reductions and Open Comparison Problems}
+\author{Christopher D. Long \and Antoine-Auguste Le Blanc\thanks{Le Blanc cryptographic author identifier: \texttt{b6048125\allowbreak{}30b3535b\allowbreak{}23d6dbb0\allowbreak{}f5abe32d\allowbreak{}1ed1a9de\allowbreak{}35fb4f7d\allowbreak{}04d62cff\allowbreak{}08ea19c8}}}
+\date{October 2026}
+
+
+\newcommand{\Hq}{H_q^2}
+\newcommand{\M}{\mathscr M}
+\newcommand{\Ncal}{\mathcal N}
+\newcommand{\Tcal}{\mathcal T}
+\newcommand{\A}{\mathbb A}
+
+\newcommand{\PGL}{\operatorname{PGL}}
+\newcommand{\wt}{\operatorname{wt}}
+\newcommand{\Bcal}{\mathcal B}
+
+\newtheorem{conjecture}[theorem]{Conjecture}
+\begin{document}
+\maketitle
+
+\begin{center}
+\small
+\texttt{galizur@gmail.com}
+\end{center}
+
+\begin{abstract}
+This candidate draft separates the unrestricted simplex exponential
+nonvanishing problem from the controlled higher-dimensional families proved
+in Paper VI. We record the E-function reduction, a conjugate-real case,
+fixed-phase effective exceptional sets, and an exact positive-amplitude
+counterexample to a tempting induction. We formulate the actual-chain
+visibility and higher-asymptotic-coefficient problems that remain.
+No unrestricted simplex nonvanishing theorem, general numerical period
+comparison, or new dimension-wide Factorial Conjecture is proved here.
+\end{abstract}
+
+\begin{center}
+\textbf{Candidate research draft; not a numbered paper in the series.}
+\end{center}
+\tableofcontents
+
+\section{The problem and its normalization}
+Let
+\[
+ \Delta_d=\{t\in\R_{\ge0}^{d}:t_1+\cdots+t_d\le1\},\qquad
+ F_Q(z)=\int_{\Delta_d}e^{zQ(t)}\,dt,
+ \quad Q\in\Qbar[t_1,\ldots,t_d].
+\]
+The measure is coordinate Lebesgue measure; $F_Q(0)=1/d!$.
+For $d=0$ the integral is the exponential of the constant phase.
+
+\begin{conjecture}[Simplex exponential nonvanishing]\label{conj:simplex}
+For every $d\ge1$ and every polynomial $Q\in\Qbar[t_1,\ldots,t_d]$,
+$F_Q(1)\ne0$.
+\end{conjecture}
+Absorbing a nonzero algebraic scale into $Q$ makes this equivalent to
+$F_Q(\xi)\ne0$ at every nonzero algebraic $\xi$. Positivity settles
+real-valued $Q$. For complex coefficients positivity alone says nothing
+about cancellation.
+
+The one-dimensional constant-amplitude result is covered by Paper I
+\cite{PaperI}. Paper V \cite{PaperV} treats explicit planar comparison
+systems; Paper VI \cite{PaperVI} converts controlled weighted planar
+periods into simplex integrals in every ambient dimension. Those statements
+do not imply \cref{conj:simplex}: the phase obtained by planar slicing
+still depends on only two active coordinates.
+
+\section{E-functions and a conjugate-real case}
+\begin{proposition}\label{prop:E}
+For each fixed algebraic polynomial $Q$, $F_Q$ is an $E$-function.
+Its Taylor coefficients and a nonzero linear differential annihilator over
+$\Qbar(z)$ can be computed from $Q$.
+\end{proposition}
+\begin{proof}
+Use the polynomial cube parametrization
+\[
+ t_j=u_j\prod_{i<j}(1-u_i)\quad(1\le j\le d),\qquad
+ J(u)=\prod_{i=1}^{d-1}(1-u_i)^{d-i}.
+\]
+It is a diffeomorphism on the interiors, apart from measure-zero boundary
+identifications. Thus
+\[
+ F_Q(z)=\int_{[0,1]^d}J(u)e^{z\widetilde Q(u)}\,du
+       =\sum_{m\ge0}a_m\frac{z^m}{m!},\qquad
+ a_m=\int_{[0,1]^d}J(u)\widetilde Q(u)^m\,du.
+\]
+All $a_m$ lie in one number field. Choose a positive integer $A$ clearing
+the algebraic coefficient denominators of $\widetilde Q$. Monomial
+integration divides by a product of $d$ positive integers bounded by
+$Cm+C_0$. Therefore
+\[
+ A^m\operatorname{lcm}(1,\ldots,Cm+C_0)^d a_m
+\]
+is an algebraic integer. These clearing integers, and the common clearing
+integer for $a_0,\ldots,a_m$, grow at most exponentially. Every conjugate
+of $a_m$ is bounded by an exponential, by integration over the fixed cube.
+These are the arithmetic $E$-function bounds.
+
+The integrand is holonomic: $e^{z\widetilde Q}$ is annihilated by its
+first-order polynomial connection, and multiplication by $J$ preserves
+holonomicity. Closure under definite integration, with boundary terms
+included, gives a univariate holonomic function. Iterated integration over
+constant endpoints $0,1$ can be carried out by holonomic elimination;
+see the holonomic integration framework in \cite{Zeilberger}. Endpoint
+terms remain holonomic, so an inhomogeneous telescoper can be homogenized.
+This gives a differential annihilator. Monomial integration computes
+any required finite list of initial coefficients. No claim that a chosen
+annihilator has its only finite singularity at zero is made.
+\end{proof}
+
+\begin{lemma}[Algebraic zeros survive coefficient conjugation]\label{lem:conjugation}
+Let $F$ be an $E$-function with algebraic coefficients. If $F(1)=0$, then
+$F^\tau(1)=0$ for every coefficient embedding $\tau$ into $\C$.
+\end{lemma}
+\begin{proof}
+The proof of Beukers' Proposition~4.1 \cite{Beukers} gives this statement
+explicitly: every local solution of the minimal differential equation
+vanishes at the algebraic zero, and the same holds for its coefficient
+conjugates. The conjugate $E$-function is one of those solutions. An
+embedding of its coefficient field extends to $\Qbar$.
+This is not the unjustified assertion that a field automorphism commutes
+with an infinite analytic sum.
+\end{proof}
+
+\begin{corollary}[Conjugate-real phases]\label{cor:real}
+Suppose the coefficients of $Q$ lie in a number field $K$ having an
+embedding $\tau:K\hookrightarrow\C$ for which $Q^\tau$ has real
+coefficients. Then $F_Q(1)\ne0$.
+\end{corollary}
+\begin{proof}
+The simplex monomial moments are rational, so coefficient conjugation of
+the Taylor series gives $(F_Q)^\tau=F_{Q^\tau}$.
+If $F_Q(1)$ vanished, \cref{lem:conjugation} would contradict
+$F_{Q^\tau}(1)>0$.
+\end{proof}
+This applies in particular when the whole coefficient field has a real
+embedding, not merely when each coefficient separately has some real
+conjugate. For a scaled integral, apply it to the coefficients of $\xi Q$
+together.
+
+\section{Fixed-phase exceptional sets are finite, not necessarily empty}
+\begin{proposition}\label{prop:exceptional}
+For fixed $Q$, the set of algebraic zeros of $F_Q$ is finite and can be
+determined effectively from differential and initial-value data.
+\end{proposition}
+\begin{proof}
+An algebraic entire $E$-function is a polynomial. If $F_Q$ is a polynomial,
+its algebraic zeros are computable and finite since $F_Q(0)=1/d!\ne0$.
+Otherwise apply Adamczewski--Rivoal's algorithm, Theorem~2 of \cite{AR},
+to compute all algebraic arguments where $F_Q$ takes an algebraic value,
+together with the values; retain those equal to zero. The required
+annihilator and initial coefficients are supplied by \cref{prop:E}.
+\end{proof}
+The algorithm may be expensive. This proposition neither makes the
+exceptional set empty nor proves that the specific argument $1$ is absent.
+In particular an ordinary-point lifting statement cannot be applied at an
+unexamined apparent singularity of an arbitrarily chosen scalar operator.
+
+\section{Why positive-amplitude induction fails}
+\begin{proposition}\label{prop:counterexample}
+There is a strictly positive rational polynomial $p$ on $[0,1]$ with
+$\int_0^1 p(t)e^{5it}\,dt=0$.
+\end{proposition}
+\begin{proof}
+Set $g(t)=t^2(1-t)^2$ and $p=g''+25g$. Direct expansion gives
+\[
+ p(t)=25\left((t-\tfrac12)^2-\tfrac1{100}\right)^2+\frac{14}{25}>0.
+\]
+On the other hand,
+\[
+ \frac{d}{dt}\bigl((g'-5ig)e^{5it}\bigr)=p(t)e^{5it}.
+\]
+Both $g$ and $g'$ vanish at $0$ and $1$, so the integral is zero.
+\end{proof}
+This is an exact polynomial twisted-Stokes cancellation. It is not a
+counterexample to \cref{conj:simplex}, which has constant amplitude and
+the standard simplex measure. It does prohibit an induction that replaces
+the simplex by an arbitrary positive polynomial weight and assumes
+nonvanishing for that broader class. Integrating out a coordinate often
+introduces an amplitude; that step must retain its specific algebraic
+structure.
+
+\section{Two distinct higher-dimensional extensions}
+\subsection{Ambient-dimension extension}
+For a polynomial phase in only $u=t_1,v=t_2$ and $n\ge3$,
+\[
+ \int_{\Delta_{n-1}}e^{Q(t_1,t_2)}\,dt
+ =\frac1{(n-3)!}\int_{\Delta_2}(1-u-v)^{n-3}e^{Q(u,v)}\,du\,dv.
+\]
+Here $\Delta_{n-1}$ can equivalently be represented by $n$ barycentric
+coordinates summing to one. Paper VI proves nonvanishing for two explicit
+families of these weights and phases. One uses standard twisted remainder
+basis elements and permits every nonzero algebraic scale; the other uses
+a characteristic-five nonexactness theorem for all exponents.
+
+\subsection{Genuine phase-dimension extension}
+For an arbitrary $Q(t_1,\ldots,t_d)$ the interior twisted module can have
+several constituents. Its relative extension by face systems and the
+actual simplex class must both be controlled. A larger tensor category or
+a formal comparison statement by itself does not ensure that this
+particular scalar period survives. The substantive questions are:
+\begin{enumerate}[leftmargin=2em]
+\item Which irreducible interior constituent is detected by the actual
+simplex integration map modulo the linear face span?
+\item Can a scalar relation created at an algebraic parameter be lifted
+in a closed nonsingular $E$-function system containing that constituent?
+\item When several constituents occur, what prevents cancellation of their
+contributions to the selected constant-amplitude coordinate?
+\end{enumerate}
+The elementary irreducible-module criterion in Paper V answers these
+questions only after irreducibility and nonzero detection have been proved.
+It is not a replacement for proving them.
+
+\section{A potentially weaker route to factorial nonvanishing}
+For the factorial functional of Paper VI, a flat highest form $S^D$ gives
+\[
+ \frac{\Lcal_n(f^m)}{\Gamma(Dm+n)}\longrightarrow F_Q(1),
+ \qquad Q=f_{D-1}/D\bigm|_{S=1}.
+\]
+If this leading coefficient vanishes, no counterexample to the Factorial
+Conjecture follows. Higher asymptotic coefficients involve polynomial
+amplitudes multiplying $e^Q$, with those amplitudes determined by the
+lower homogeneous layers and the gamma-ratio expansion.
+
+\begin{conjecture}[Asymptotic visibility target]\label{conj:visibility}
+For every nonzero polynomial with highest homogeneous form $S^D$, some
+coefficient in a justified factorial-moment asymptotic expansion is
+nonzero, or a separately controlled exponentially smaller contribution
+prevents all positive moments from vanishing.
+\end{conjecture}
+This is a research target, not a theorem or a claimed formal equivalence.
+An expansion with all power-series coefficients zero can still have
+nonzero exponentially small terms. Any proposed proof must control its
+remainder, not only manipulate a formal expansion.
+
+\section{Audit queue and relation to the series}
+The recovered FC(3) handoffs mention quadratic and cubic triangle
+nonvanishing drafts. Their complete original proof sources were not part
+of this integration. In particular, a manuscript claim about arbitrary
+cubic triangle phases and degenerations should not be promoted on the
+strength of a context summary. A dedicated audit must inspect the
+relation-row exclusion, the relevant local lattices, and value
+specialization. Homogeneous ternary-cubic factorial results are not the
+same assertion as arbitrary cubic exponential nonvanishing on a triangle.
+
+Papers II--III concern relations among compact affine-line periods, and
+Paper IV concerns relative functional periods with its stated constant
+field. They can organize face relations and relative systems, but do not
+automatically give a numerical theorem for arbitrary simplex chains.
+The candidate multicolumn workstream addresses another issue, namely
+actual realization of affine orbit equations, and is likewise separate.
+
+\paragraph{Reproducibility and status.}
+The polynomial identity in \cref{prop:counterexample} and the simplex
+Jacobians used in Paper VI are checked by
+\texttt{scripts/check\_comparison\_factorial.py}. Such finite checks do not
+prove the holonomic or transcendence inputs. This document preserves
+proved reductions and precise open targets, not a completed proof of
+\cref{conj:simplex}.
+
+\begin{thebibliography}{9}
+\raggedright
+\bibitem{Beukers} F. Beukers, \emph{A refined version of the
+Siegel--Shidlovskii theorem}, Ann. of Math. (2) \textbf{163} (2006), 369--379.
+\url{https://annals.math.princeton.edu/wp-content/uploads/annals-v163-n1-p08.pdf}.
+\bibitem{AR} B. Adamczewski and T. Rivoal, \emph{Exceptional values of
+$E$-functions at algebraic points}, Bull. Lond. Math. Soc. \textbf{50}
+(2018), 697--708. \url{https://adamczewski.perso.math.cnrs.fr/E-functions.pdf}.
+\bibitem{Zeilberger} D. Zeilberger, \emph{A holonomic systems approach to
+special functions identities}, J. Comput. Appl. Math. \textbf{32} (1990),
+321--368.
+\url{https://sites.math.rutgers.edu/~zeilberg/mamarimY/Zeilberger_y1991_p321.pdf}.
+\bibitem{PaperI} C. D. Long and A.-A. Le Blanc, \emph{Algebraic Exponential
+Integrals: Transcendence and Linear Relations}, Paper I, working manuscript.
+\bibitem{PaperV} C. D. Long and A.-A. Le Blanc, \emph{Relative Exponential
+Periods on Polynomial Chains: Algebraic Independence over Fixed Boundary
+Fields}, Paper V, September 2026, revised October 2026.
+\bibitem{PaperVI} C. D. Long and A.-A. Le Blanc, \emph{Exponential Periods
+and Factorial Moments}, Paper VI, October 2026, working manuscript.
+\end{thebibliography}
+\end{document}

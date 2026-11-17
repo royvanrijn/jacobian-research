@@ -1,0 +1,1084 @@
+{
+  "status": "PASS",
+  "python": "3.12.3",
+  "regina": "7.4",
+  "command": "python verify_rational_replacement_topology.py",
+  "scope": "All rational replacements of twist boxes on a connected BBK base with four faces and simple checkerboard dual. Excludes all28 retained mixed double-cover knots. No arbitrary algebraic replacements or rank-dropping higher-face bases.",
+  "graph_counts": {
+    "tree_after_leaf_deletions": 16,
+    "triangle_with_leaf": 12,
+    "four_cycle": 3,
+    "diamond": 6,
+    "K4": 1,
+    "connected": 38
+  },
+  "proper_graph_cases": [
+    {
+      "edge_mask": 7,
+      "edges": [
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          0,
+          3
+        ]
+      ],
+      "case": "tree_after_leaf_deletions"
+    },
+    {
+      "edge_mask": 13,
+      "edges": [
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          3
+        ],
+        [
+          1,
+          2
+        ]
+      ],
+      "case": "tree_after_leaf_deletions"
+    },
+    {
+      "edge_mask": 14,
+      "edges": [
+        [
+          0,
+          2
+        ],
+        [
+          0,
+          3
+        ],
+        [
+          1,
+          2
+        ]
+      ],
+      "case": "tree_after_leaf_deletions"
+    },
+    {
+      "edge_mask": 15,
+      "edges": [
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          0,
+          3
+        ],
+        [
+          1,
+          2
+        ]
+      ],
+      "case": "triangle_with_leaf"
+    },
+    {
+      "edge_mask": 19,
+      "edges": [
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          1,
+          3
+        ]
+      ],
+      "case": "tree_after_leaf_deletions"
+    },
+    {
+      "edge_mask": 22,
+      "edges": [
+        [
+          0,
+          2
+        ],
+        [
+          0,
+          3
+        ],
+        [
+          1,
+          3
+        ]
+      ],
+      "case": "tree_after_leaf_deletions"
+    },
+    {
+      "edge_mask": 23,
+      "edges": [
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          0,
+          3
+        ],
+        [
+          1,
+          3
+        ]
+      ],
+      "case": "triangle_with_leaf"
+    },
+    {
+      "edge_mask": 25,
+      "edges": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          3
+        ]
+      ],
+      "case": "tree_after_leaf_deletions"
+    },
+    {
+      "edge_mask": 26,
+      "edges": [
+        [
+          0,
+          2
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          3
+        ]
+      ],
+      "case": "tree_after_leaf_deletions"
+    },
+    {
+      "edge_mask": 27,
+      "edges": [
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          3
+        ]
+      ],
+      "case": "triangle_with_leaf"
+    },
+    {
+      "edge_mask": 28,
+      "edges": [
+        [
+          0,
+          3
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          3
+        ]
+      ],
+      "case": "tree_after_leaf_deletions"
+    },
+    {
+      "edge_mask": 29,
+      "edges": [
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          3
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          3
+        ]
+      ],
+      "case": "triangle_with_leaf"
+    },
+    {
+      "edge_mask": 30,
+      "edges": [
+        [
+          0,
+          2
+        ],
+        [
+          0,
+          3
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          3
+        ]
+      ],
+      "case": "four_cycle"
+    },
+    {
+      "edge_mask": 31,
+      "edges": [
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          0,
+          3
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          3
+        ]
+      ],
+      "case": "diamond"
+    },
+    {
+      "edge_mask": 35,
+      "edges": [
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          2,
+          3
+        ]
+      ],
+      "case": "tree_after_leaf_deletions"
+    },
+    {
+      "edge_mask": 37,
+      "edges": [
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          3
+        ],
+        [
+          2,
+          3
+        ]
+      ],
+      "case": "tree_after_leaf_deletions"
+    },
+    {
+      "edge_mask": 39,
+      "edges": [
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          0,
+          3
+        ],
+        [
+          2,
+          3
+        ]
+      ],
+      "case": "triangle_with_leaf"
+    },
+    {
+      "edge_mask": 41,
+      "edges": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          2,
+          3
+        ]
+      ],
+      "case": "tree_after_leaf_deletions"
+    },
+    {
+      "edge_mask": 42,
+      "edges": [
+        [
+          0,
+          2
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          2,
+          3
+        ]
+      ],
+      "case": "tree_after_leaf_deletions"
+    },
+    {
+      "edge_mask": 43,
+      "edges": [
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          2,
+          3
+        ]
+      ],
+      "case": "triangle_with_leaf"
+    },
+    {
+      "edge_mask": 44,
+      "edges": [
+        [
+          0,
+          3
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          2,
+          3
+        ]
+      ],
+      "case": "tree_after_leaf_deletions"
+    },
+    {
+      "edge_mask": 45,
+      "edges": [
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          3
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          2,
+          3
+        ]
+      ],
+      "case": "four_cycle"
+    },
+    {
+      "edge_mask": 46,
+      "edges": [
+        [
+          0,
+          2
+        ],
+        [
+          0,
+          3
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          2,
+          3
+        ]
+      ],
+      "case": "triangle_with_leaf"
+    },
+    {
+      "edge_mask": 47,
+      "edges": [
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          0,
+          3
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          2,
+          3
+        ]
+      ],
+      "case": "diamond"
+    },
+    {
+      "edge_mask": 49,
+      "edges": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          2,
+          3
+        ]
+      ],
+      "case": "tree_after_leaf_deletions"
+    },
+    {
+      "edge_mask": 50,
+      "edges": [
+        [
+          0,
+          2
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          2,
+          3
+        ]
+      ],
+      "case": "tree_after_leaf_deletions"
+    },
+    {
+      "edge_mask": 51,
+      "edges": [
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          2,
+          3
+        ]
+      ],
+      "case": "four_cycle"
+    },
+    {
+      "edge_mask": 52,
+      "edges": [
+        [
+          0,
+          3
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          2,
+          3
+        ]
+      ],
+      "case": "tree_after_leaf_deletions"
+    },
+    {
+      "edge_mask": 53,
+      "edges": [
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          3
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          2,
+          3
+        ]
+      ],
+      "case": "triangle_with_leaf"
+    },
+    {
+      "edge_mask": 54,
+      "edges": [
+        [
+          0,
+          2
+        ],
+        [
+          0,
+          3
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          2,
+          3
+        ]
+      ],
+      "case": "triangle_with_leaf"
+    },
+    {
+      "edge_mask": 55,
+      "edges": [
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          0,
+          3
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          2,
+          3
+        ]
+      ],
+      "case": "diamond"
+    },
+    {
+      "edge_mask": 57,
+      "edges": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          2,
+          3
+        ]
+      ],
+      "case": "triangle_with_leaf"
+    },
+    {
+      "edge_mask": 58,
+      "edges": [
+        [
+          0,
+          2
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          2,
+          3
+        ]
+      ],
+      "case": "triangle_with_leaf"
+    },
+    {
+      "edge_mask": 59,
+      "edges": [
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          2,
+          3
+        ]
+      ],
+      "case": "diamond"
+    },
+    {
+      "edge_mask": 60,
+      "edges": [
+        [
+          0,
+          3
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          2,
+          3
+        ]
+      ],
+      "case": "triangle_with_leaf"
+    },
+    {
+      "edge_mask": 61,
+      "edges": [
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          3
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          2,
+          3
+        ]
+      ],
+      "case": "diamond"
+    },
+    {
+      "edge_mask": 62,
+      "edges": [
+        [
+          0,
+          2
+        ],
+        [
+          0,
+          3
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          2,
+          3
+        ]
+      ],
+      "case": "diamond"
+    }
+  ],
+  "tetrahedral_medial_edges": [
+    [
+      0,
+      1
+    ],
+    [
+      0,
+      2
+    ],
+    [
+      0,
+      3
+    ],
+    [
+      0,
+      4
+    ],
+    [
+      1,
+      2
+    ],
+    [
+      1,
+      3
+    ],
+    [
+      1,
+      5
+    ],
+    [
+      2,
+      4
+    ],
+    [
+      2,
+      5
+    ],
+    [
+      3,
+      4
+    ],
+    [
+      3,
+      5
+    ],
+    [
+      4,
+      5
+    ]
+  ],
+  "mixed_exception_mod2_lower_bound": 1,
+  "cases": [
+    {
+      "name": "13a_3145",
+      "closed_cover_isosig": "tLLALQvzzMPPMkaceeggghjnooopqrqrssjkuxakwnnrtlhaepbwak",
+      "closed_H1": "Z_543",
+      "closed_H1_F2_dimension": 0,
+      "mixed_actual_cover_dependency_checked": true,
+      "excluded_from_four_face_rational_replacement_class": true
+    },
+    {
+      "name": "13a_3147",
+      "closed_cover_isosig": "tLvLLwQQAvLMQkcfgikjhjiklkqorrsqrsllxkugngkixdhxfohsfr",
+      "closed_H1": "Z_537",
+      "closed_H1_F2_dimension": 0,
+      "mixed_actual_cover_dependency_checked": true,
+      "excluded_from_four_face_rational_replacement_class": true
+    },
+    {
+      "name": "13a_3148",
+      "closed_cover_isosig": "tLvLwMMQAvLMQkcfegkihjiklkqorrsqrsllxcagcnkuxmhxfohsfk",
+      "closed_H1": "Z_543",
+      "closed_H1_F2_dimension": 0,
+      "mixed_actual_cover_dependency_checked": true,
+      "excluded_from_four_face_rational_replacement_class": true
+    },
+    {
+      "name": "13a_3149",
+      "closed_cover_isosig": "tLvALPQLMvLQPkbeffhjiijlllporqqrsstalxsirfqprshqvknvxw",
+      "closed_H1": "Z_537",
+      "closed_H1_F2_dimension": 0,
+      "mixed_actual_cover_dependency_checked": true,
+      "excluded_from_four_face_rational_replacement_class": true
+    },
+    {
+      "name": "13a_373",
+      "closed_cover_isosig": "rLLLLALQAvAQcaceghhijlkklnpopqqnkvjalmfjfvkvhrncj",
+      "closed_H1": "Z_431",
+      "closed_H1_F2_dimension": 0,
+      "mixed_actual_cover_dependency_checked": true,
+      "excluded_from_four_face_rational_replacement_class": true
+    },
+    {
+      "name": "13a_375",
+      "closed_cover_isosig": "rLLMPvLAwMPQccdedegijklomppoqqqpkxrnnovotqgmxodar",
+      "closed_H1": "Z_433",
+      "closed_H1_F2_dimension": 0,
+      "mixed_actual_cover_dependency_checked": true,
+      "excluded_from_four_face_rational_replacement_class": true
+    },
+    {
+      "name": "13a_391",
+      "closed_cover_isosig": "rLLAPvvPMMPQcaceeegkmnlnoqqoqppjkuxnrnqaateiajmrk",
+      "closed_H1": "Z_433",
+      "closed_H1_F2_dimension": 0,
+      "mixed_actual_cover_dependency_checked": true,
+      "excluded_from_four_face_rational_replacement_class": true
+    },
+    {
+      "name": "13a_392",
+      "closed_cover_isosig": "rLLMzvAvLQQQcacdeejiqqonmlnoppqjkakrknpjvvknknogr",
+      "closed_H1": "Z_431",
+      "closed_H1_F2_dimension": 0,
+      "mixed_actual_cover_dependency_checked": true,
+      "excluded_from_four_face_rational_replacement_class": true
+    },
+    {
+      "name": "13a_3264",
+      "closed_cover_isosig": "rLLAPLzvPwQQcbcedegijnmopmnpqpqtsqjswhbqgcaggmmlr",
+      "closed_H1": "Z_361",
+      "closed_H1_F2_dimension": 0,
+      "mixed_actual_cover_dependency_checked": true,
+      "excluded_from_four_face_rational_replacement_class": true
+    },
+    {
+      "name": "13a_3266",
+      "closed_cover_isosig": "rLLLLLLvQQMQcacfgjlmmkkplmqoppqnkgjdxrokotcvhrwnn",
+      "closed_H1": "Z_359",
+      "closed_H1_F2_dimension": 0,
+      "mixed_actual_cover_dependency_checked": true,
+      "excluded_from_four_face_rational_replacement_class": true
+    },
+    {
+      "name": "13a_3275",
+      "closed_cover_isosig": "rLLAzLzzzPQQcbcedejhmonqmonqqpptsqjshqqlaifgrcnrs",
+      "closed_H1": "Z_359",
+      "closed_H1_F2_dimension": 0,
+      "mixed_actual_cover_dependency_checked": true,
+      "excluded_from_four_face_rational_replacement_class": true
+    },
+    {
+      "name": "13a_3276",
+      "closed_cover_isosig": "rLLMzvQzzQzQcacdeehijkmlonoppqqjkakkbnjhavujlpsrn",
+      "closed_H1": "Z_361",
+      "closed_H1_F2_dimension": 0,
+      "mixed_actual_cover_dependency_checked": true,
+      "excluded_from_four_face_rational_replacement_class": true
+    },
+    {
+      "name": "13n_1005",
+      "closed_cover_isosig": "qLLALwvPPQPkaceefhlkknmnmooppnkuxprrwsrwgwxxwr",
+      "closed_H1": "Z_151",
+      "closed_H1_F2_dimension": 0,
+      "mixed_actual_cover_dependency_checked": true,
+      "excluded_from_four_face_rational_replacement_class": true
+    },
+    {
+      "name": "13n_1006",
+      "closed_cover_isosig": "qLLALvPwAQAkaceefhlinlnomnoppjkuxpkxulwddddwhw",
+      "closed_H1": "Z_221",
+      "closed_H1_F2_dimension": 0,
+      "mixed_actual_cover_dependency_checked": true,
+      "excluded_from_four_face_rational_replacement_class": true
+    },
+    {
+      "name": "13n_1007",
+      "closed_cover_isosig": "qLLAvAvAwQQkbddchgmkmnlomnoppdwjnluixmdcccwnrr",
+      "closed_H1": "Z_59",
+      "closed_H1_F2_dimension": 0,
+      "mixed_actual_cover_dependency_checked": true,
+      "excluded_from_four_face_rational_replacement_class": true
+    },
+    {
+      "name": "13n_1011",
+      "closed_cover_isosig": "qLLALvMwwQQkaceefjlikpnnmooopnkuxpphuctaxbilwk",
+      "closed_H1": "Z_137",
+      "closed_H1_F2_dimension": 0,
+      "mixed_actual_cover_dependency_checked": true,
+      "excluded_from_four_face_rational_replacement_class": true
+    },
+    {
+      "name": "13n_1012",
+      "closed_cover_isosig": "qLLALLvQPzQkaceefjimjknompoppjkuxpquhfwqegdosf",
+      "closed_H1": "Z_211",
+      "closed_H1_F2_dimension": 0,
+      "mixed_actual_cover_dependency_checked": true,
+      "excluded_from_four_face_rational_replacement_class": true
+    },
+    {
+      "name": "13n_1013",
+      "closed_cover_isosig": "qLLALLwPLPQkaceefhjmlonmpppoojkuxpfpfrhtbtlabg",
+      "closed_H1": "Z_85",
+      "closed_H1_F2_dimension": 0,
+      "mixed_actual_cover_dependency_checked": true,
+      "excluded_from_four_face_rational_replacement_class": true
+    },
+    {
+      "name": "13n_1043",
+      "closed_cover_isosig": "qLLALvMwwQQkaceefjlikpoommoppnkuxpplufdttrswwn",
+      "closed_H1": "Z_137",
+      "closed_H1_F2_dimension": 0,
+      "mixed_actual_cover_dependency_checked": true,
+      "excluded_from_four_face_rational_replacement_class": true
+    },
+    {
+      "name": "13n_1044",
+      "closed_cover_isosig": "qLLAvPLLMMQkbddcgiknmmkoonpopdwjnudahhlmsnwqfw",
+      "closed_H1": "Z_211",
+      "closed_H1_F2_dimension": 0,
+      "mixed_actual_cover_dependency_checked": true,
+      "excluded_from_four_face_rational_replacement_class": true
+    },
+    {
+      "name": "13n_1045",
+      "closed_cover_isosig": "qLLALvwAMQPkaceefjklkonnlopppjkuxppqxbhmaniurj",
+      "closed_H1": "Z_85",
+      "closed_H1_F2_dimension": 0,
+      "mixed_actual_cover_dependency_checked": true,
+      "excluded_from_four_face_rational_replacement_class": true
+    },
+    {
+      "name": "13n_1046",
+      "closed_cover_isosig": "qLLAwLwLQLQkbedeejhmjklnoopophhntexhuvvujogawj",
+      "closed_H1": "Z_151",
+      "closed_H1_F2_dimension": 0,
+      "mixed_actual_cover_dependency_checked": true,
+      "excluded_from_four_face_rational_replacement_class": true
+    },
+    {
+      "name": "13n_1047",
+      "closed_cover_isosig": "qLLALwvAMAQkaceefhjmjmnnomoppjkuxprtvrgpxdgrnr",
+      "closed_H1": "Z_221",
+      "closed_H1_F2_dimension": 0,
+      "mixed_actual_cover_dependency_checked": true,
+      "excluded_from_four_face_rational_replacement_class": true
+    },
+    {
+      "name": "13n_1048",
+      "closed_cover_isosig": "qLLALLAzMLQkaceefhjilknponnppjkuxpgpqwvpqgnbof",
+      "closed_H1": "Z_59",
+      "closed_H1_F2_dimension": 0,
+      "mixed_actual_cover_dependency_checked": true,
+      "excluded_from_four_face_rational_replacement_class": true
+    },
+    {
+      "name": "13n_3842",
+      "closed_cover_isosig": "uLLPvvPwwQMQLQccdcflhjkonmmpqrprstttqsnalqrstmgouvbjweqvc",
+      "closed_H1": "Z_11",
+      "closed_H1_F2_dimension": 0,
+      "mixed_actual_cover_dependency_checked": true,
+      "excluded_from_four_face_rational_replacement_class": true
+    },
+    {
+      "name": "13n_3844",
+      "closed_cover_isosig": "qLLALvALAQPkaceefjkjmlnnoppopnkuxpphcrcbgetxic",
+      "closed_H1": "Z_11",
+      "closed_H1_F2_dimension": 0,
+      "mixed_actual_cover_dependency_checked": true,
+      "excluded_from_four_face_rational_replacement_class": true
+    },
+    {
+      "name": "13n_3855",
+      "closed_cover_isosig": "qLLALvMPMzQkaceefjkllmnnpppoonkuxppqafrlmuqirs",
+      "closed_H1": "Z_11",
+      "closed_H1_F2_dimension": 0,
+      "mixed_actual_cover_dependency_checked": true,
+      "excluded_from_four_face_rational_replacement_class": true
+    },
+    {
+      "name": "13n_3856",
+      "closed_cover_isosig": "qLLAvwLMQPMkaceeilklnmlkmooppnkuxkimmuaojkdtnj",
+      "closed_H1": "Z_11",
+      "closed_H1_F2_dimension": 0,
+      "mixed_actual_cover_dependency_checked": true,
+      "excluded_from_four_face_rational_replacement_class": true
+    }
+  ],
+  "negative_controls": {
+    "K4_falsely_called_proper": true,
+    "RP3_falsely_called_mod2_sphere": true,
+    "changed_source_digest": true
+  },
+  "input_sha256": {
+    "rational_replacement_topology_inputs.json": "11f637a4e38a43970df9652080a2e70cc7e61d9ea07335d9ae2b77c8ac3b0990",
+    "verify_rational_replacement_topology.py": "e583e7d6b60143d4f11f1ad83faa9af1f72d1d742e93a0722b4ff585cab186a4",
+    "seed_cover_topology_inputs.json": "44ed55f6107ee8fb8cd5ffa6558e0e6124339b21d8abb3a60b5c519c70886259",
+    "seed_cover_topology_verification.json": "18bcc6a93d680e23d983b132edb8bf987933e44a0bc78ec03be7600c9d4e5c8c",
+    "sources/bbk-coxeter-published-2021.html": "57475efdf6c7e40f6a14ba2da6a0141cc0e5f0ae8a48cc0a3d457ca02c3c9da8",
+    "sources/bonahon-siebenmann-2016.pdf": "c887732f91421ce8bf424f32ab4c3b52b842a5c15f8bc95c62599b8d8baa88a6",
+    "sources/kolpakov-martelli-one-cusp-1303.6122v7.pdf": "ca4c8aac66f01bfc56304e820a173bcb8bc933b32d0717839d4c8c132214ef12",
+    "sources/martelli-seven-chain-1808.08430v2.pdf": "b2c8436322c80419d023d58eb8978ce7de10c9f9ad78a6c96e53b0b99685ed1f"
+  },
+  "assurance": "Internal finite checks of the inputs to the written universal topological proof. KM13 branched-cover model, Martelli's complete classification and the arborescent cover construction are imported. Prior actual-cover/tori certificate is bound, not replayed. No formal verification or external specialist review."
+}

@@ -1,0 +1,214 @@
+\documentclass[11pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage[hidelinks]{hyperref}
+\usepackage{xurl}
+\newtheorem{theorem}{Theorem}
+\newtheorem{corollary}[theorem]{Corollary}
+\newcommand{\barv}[1]{\overline{#1}}
+\title{A Hermitian reflection obstruction for four alternating knots}
+\author{Internal written proof and exact algebra controls}
+\date{17 November 2026}
+\begin{document}
+\maketitle
+
+The four knots
+\[
+ \mathcal S=\{13a_{373},13a_{375},13a_{391},13a_{392}\}
+\]
+have meridional rank four by their retained seven-sheeted cover
+certificates. Their orthogonal reflection obstruction extends to
+Hermitian reflections. This excludes sharp finite complex reflection
+certificates whose meridians have order two, including targets outside
+the real Coxeter classification. It asserts nothing about meridians
+of order three or higher.
+
+\section{Field, reflection and diagram conventions}
+
+Let $k$ be a field of characteristic different from two, with an
+involution $a\mapsto\bar a$, possibly trivial. Let $B$ be a Hermitian
+form, conjugate-linear in the first variable and linear in the second.
+It need not be nondegenerate or positive. For $B(u,u)=2$ set
+\[
+                         R_u(v)=v-B(u,v)u.
+\]
+This is an involution preserving $B$. Its displacement image is $ku$,
+because $(R_u-I)u=-2u$. Thus for norm-two roots,
+\[
+ R_u=R_v\quad\Longleftrightarrow\quad
+ v=\lambda u\text{ for some }\lambda\bar\lambda=1.
+\]
+Conjugate meridians have normals of one common nonzero norm, by
+transporting a chosen normal through their conjugating isometries.
+Rescaling $B$ by a scalar in its fixed field normalizes this norm to
+two. No square root is required.
+
+The literal PDs, arc numbering and original four-seed generating
+traces are those of \path{UNIVERSAL_REFLECTION_OBSTRUCTION.tex}.
+The present checker binds its four cases to
+\path{seven_sheet_cover_inputs.json} and reconstructs the required
+crossings. Named-census identification and the cover lower bounds
+are separate retained dependencies.
+
+\begin{theorem}\label{thm:hermitian}
+For every $K\in\mathcal S$ and every representation of its knot group
+by nonisotropic Hermitian reflections over $k$, the normal vectors
+of its four specified generating meridians span a space of dimension
+at most three. The form may be singular and the ambient dimension
+arbitrary.
+\end{theorem}
+
+\section{Common normalization}
+
+Suppose the original four normals are independent. For the three
+siblings use the changed seed systems
+\[
+\begin{array}{c|c|c}
+K&\text{original seeds}&\text{changed seeds}\\\hline
+13a_{375}&(1,2,6,9)&(1,2,6,9)\\
+13a_{391}&(1,2,5,9)&(1,2,6,9)\\
+13a_{392}&(1,2,5,11)&(1,2,6,12).
+\end{array}
+\]
+For $391$, putting $P=u_5,Q=u_9,z_0=B(P,Q)$ replaces the pair by
+$(P-\bar z_0Q,Q)$. For $392$ the new pair is
+\[
+ u_6=(1-z_0\bar z_0)P+\bar z_0Q,
+ \qquad u_{12}=Q-z_0P.
+\]
+Both changes have determinant one and consist of actual reflected
+normals. Independence is preserved even if the form is singular.
+
+Write the four new basis roots as $e_0=u_1,e_1=u_2,e_2=u_6,e_3$,
+where $e_3=u_8$ for $373$, $u_9$ for $375,391$, and $u_{12}$ for
+$392$. The common initial propagation is
+\[
+ (2,6,7),\ (7,2,3),\ (3,1,0),\ (1,3,4).
+\]
+With $t=B(e_1,e_2)$ this gives
+\[
+ u_3=(1-t\bar t)e_1+\bar t e_2,
+ \quad u_0=e_0-su_3,\quad s=B(u_3,e_0).
+\]
+The unused crossing $(0,1,2)$ says
+$R_{u_0}e_0=\varepsilon e_1$ with $\varepsilon\bar\varepsilon=1$.
+Writing $H=B(u_0,e_0)$, comparison of the three independent
+coefficients gives
+\[
+ H=1,\qquad s(1-t\bar t)=\varepsilon,\qquad s\bar t=0.
+\]
+Thus $s\ne0$, $t=0$ and $B(e_0,e_1)=\bar\varepsilon$.
+Replace $e_1$ by $\varepsilon e_1$. Recomputing the trace normalizes
+\[
+ B(e_0,e_1)=1,\qquad u_0=U=e_0-e_1,
+ \quad u_4=-U,\quad u_6=u_7=V=e_2.
+\]
+Put $W=e_3$. The roots $U,V,W$ are independent and have norm two.
+Every unused relation below has a unit-norm phase in place of a
+fixed sign; no phase is discarded.
+
+\section{The four coefficient contradictions}
+
+In all cases write $x=B(U,V)$, $y=B(U,W)$, $z=B(V,W)$.
+For $373$ set $h=1-y\bar y$, $v=\bar x y+zh$ and
+$w=B(U,u_{10})$. Its remaining trace gives
+\[
+\begin{aligned}
+u_5&=-U+\bar yW,&u_9&=yU+hW,\\
+u_{10}&=yU-vV+hW,&u_{11}&=(y-w)U-vV+hW,\\
+u_{12}&=(1-\bar w y)U+\bar w vV-\bar w hW.
+\end{aligned}
+\]
+The unused relation $R_{u_{11}}V=\beta W$, with $\beta\bar\beta=1$,
+gives, on putting $p=B(u_{11},V)$,
+\[
+ p(y-w)=0,\qquad 1+pv=0,\qquad -ph=\beta.
+\]
+Hence $p\ne0$, $w=y$ and $v=\bar\beta h$.
+The relation $R_{u_{12}}u_5=\alpha V$ now gives
+$qh=-1$ and $\bar y\bar\beta=\alpha$, where $q=B(u_{12},u_5)$.
+Since $\alpha\bar\alpha=\beta\bar\beta=1$, this forces
+$y\bar y=1$, so $h=0$, contradicting $qh=-1$.
+
+For $375$ put $T=R_VW=W-zV$, $t=B(U,T)$ and
+$A=R_UT=T-tU$. The trace gives
+\[
+ u_8=R_TV,\quad u_{11}=A,\quad
+ u_5=(t\bar t-1)U-\bar tT,\quad u_{12}=R_{u_8}A.
+\]
+As $u_8$ has no $U$-coefficient, $u_{12}$ has $U$-coefficient $-t$.
+The unused crossing $R_Wu_{12}=\gamma U$ gives $t=-\gamma$.
+Thus $t\bar t=1$ and $R_{u_5}=R_T$.
+The other unused crossing would give
+$\alpha W=R_{u_5}u_8=R_TR_TV=V$, a contradiction.
+
+For $391$ keep $T,A,t$ and put $D=R_WV=V-\bar zW$.
+The trace gives $u_5=D$, $u_{11}=A$, $u_{12}=R_DA$, and
+$u_8=R_AV$. The unused relation says
+\[
+ u_{12}=\gamma R_TU=\gamma(U-\bar tT).
+\]
+Its $U$-coefficient gives $t=-\gamma$ and hence
+$\gamma\bar t=-1$. The whole right side is therefore $A$.
+Thus $u_{12}=A$ and the other unused crossing gives
+$\beta W=R_Au_8=V$, a contradiction.
+
+For $392$ put $h=1-z\bar z$, $t=B(U,u_{11})$ and
+$k=B(V,u_{10})$. The trace gives
+\[
+\begin{aligned}
+u_5&=V-\bar zW,&u_{11}&=zV+hW,\\
+u_{10}&=-tU+zV+hW,&u_9&=-tU+(z-k)V+hW,\\
+u_8&=\bar k tU+(1-\bar k z)V-\bar k hW.
+\end{aligned}
+\]
+The relation $R_{u_9}W=\gamma U$ yields
+$pt=\gamma$, $p(z-k)=0$ and $ph=1$, so $p,t,h\ne0$ and $k=z$.
+The $U$-coefficient in $R_{u_{11}}u_8=\beta u_9$ gives
+$\bar k t=-\beta t$. Thus $\bar k=-\beta$ has unit norm,
+forcing $h=1-z\bar z=0$, again a contradiction.
+This proves Theorem~\ref{thm:hermitian}.
+
+\section{Finite complex images and exact assurance}
+
+\begin{corollary}\label{cor:finite}
+Let $K\in\mathcal S$. If a finite-image complex representation
+$\rho$ sends meridians to order-two rank-one pseudo-reflections,
+then
+\[
+ D=\sum_{g\in\rho(\pi_1)}\operatorname{im}(g-I)
+ \quad\text{has dimension at most three}.
+\]
+In particular such a representation on a four-dimensional space
+without a nonzero common fixed vector cannot exist. No finite
+complex reflection quotient of essential dimension four can give
+the sharp meridional bound for these knots.
+\end{corollary}
+\begin{proof}
+Average any positive definite Hermitian form over the finite image.
+Each meridian is then a unitary involution with a one-dimensional
+minus-one eigenspace, hence a Hermitian reflection. Theorem~\ref{thm:hermitian}
+gives a space $U$ of dimension at most three spanned by the four
+generating normals. Every generator preserves $U$ and displaces
+every vector into $U$; induction gives $D\subset U$.
+Conversely each normal belongs to $D$ because its reflection
+displaces it by minus twice itself. For a unitary representation,
+$D^\perp$ is exactly the common fixed space, proving the last claim.
+The averaging proof needs no classification of complex reflection
+groups. An order-three pseudo-reflection is outside these hypotheses.
+\end{proof}
+
+The checker \path{verify_hermitian_reflection_obstruction.py}
+uses exact sparse Laurent polynomials with independent conjugate
+pairs and unit phases satisfying $\bar\alpha=\alpha^{-1}$,
+$\bar\beta=\beta^{-1}$, $\bar\gamma=\gamma^{-1}$.
+It reconstructs the literal four trace systems, checks the root
+formulas and norm identities, and verifies a constant-one identity
+in the conjugation-stable ideal for $373$. This covers arbitrary
+unit phases, not a finite sample. The remaining coefficient
+cancellations are the written arguments above.
+The input identities and standard finite averaging argument are
+internal mathematical proofs with exact algebra controls, not
+formal verification or external specialist review. Worldwide priority
+and noninvolutory lower certificates remain separate questions.
+\end{document}

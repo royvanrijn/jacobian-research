@@ -1,0 +1,151 @@
+{
+  "checker_sha256": "34af820b8dcd054a56e8f68b7030e15558f44c9bcd52f8725e1a73bc6e7566a4",
+  "class_five_mod_sixteen": {
+    "primitive_projective_charts": 24,
+    "quartic_residues": [
+      5,
+      10,
+      15
+    ],
+    "soluble": false,
+    "square_residues": [
+      0,
+      1,
+      4,
+      9
+    ]
+  },
+  "command": ".venv/bin/python research/arithmetic/verify_elliptic_exception_arithmetic.py",
+  "cubic_root_cover": {
+    "degree_over_elliptic": 3,
+    "genus": 4,
+    "geometric_ramification_indices": [
+      3,
+      3,
+      3
+    ],
+    "ramification_degree": 6
+  },
+  "dual_descent": {
+    "all_candidates": [
+      -26446,
+      -13223,
+      -3778,
+      -1889,
+      -14,
+      -7,
+      -2,
+      -1,
+      1,
+      2,
+      7,
+      14,
+      1889,
+      3778,
+      13223,
+      26446
+    ],
+    "exact_image": [
+      1,
+      14,
+      1889,
+      26446
+    ],
+    "excluded_mod_sixteen": [
+      -26446,
+      -1889,
+      -14,
+      -1,
+      2,
+      7,
+      3778,
+      13223
+    ],
+    "excluded_mod_twenty_five_after_first_test": [
+      -13223,
+      -3778,
+      -7,
+      -2
+    ],
+    "rank": 2
+  },
+  "exact_controls": [
+    "specialized_linear_cubic_coefficient",
+    "specialized_constant_cubic_coefficient",
+    "complete_fixed_map_factorization",
+    "specialized_cubic_discriminant",
+    "specialized_quadratic_discriminant",
+    "matching_cover_normalization",
+    "translated_integral_elliptic_model",
+    "quadratic_discriminant_squareclass_coordinate",
+    "exact_prime_and_squarefree_coefficient_factorization",
+    "real_negativity_for_x_negative",
+    "chord_squareclass_product_identity",
+    "chord_through_two_torsion_product_identity",
+    "nontorsion_witness_on_translated_curve",
+    "nontorsion_witness_squareclass_two",
+    "full_positive_squareclass_partition_by_known_subgroup",
+    "primitive_class_five_quartic_obstruction_mod_sixteen",
+    "exact_four_quadratic_field_squareclasses",
+    "dual_isogeny_coefficients_and_factorization",
+    "complete_dual_descent_primitive_mod_sixteen_exclusions",
+    "complete_dual_descent_primitive_mod_twenty_five_exclusions",
+    "dual_descent_class_fourteen_witness_on_curve",
+    "dual_descent_class_fourteen_witness_squareclass",
+    "dual_descent_all_four_survivors_realized",
+    "imported_two_isogeny_rank_formula_gives_rank_two",
+    "exact_good_reduction_point_counts_three_and_eleven",
+    "torsion_reduction_bound_equals_known_two_torsion",
+    "exact_triple_root_local_expansion",
+    "triple_root_nonzero_transverse_derivative",
+    "two_distinct_simple_quadratic_discriminant_branches",
+    "all_elliptic_and_cubic_branch_values_separated",
+    "triple_branch_cubic_discriminant_order_two",
+    "infinity_newton_edge_coprime_degree_three",
+    "elliptic_cover_exactly_four_geometric_branch_values",
+    "cubic_root_cover_genus_four_riemann_hurwitz",
+    "finite_target_map_fibres_from_quadratic_coordinate",
+    "finite_deleted_quadratic_cubic_collision_parameters"
+  ],
+  "external_primary_sources": [
+    {
+      "path": "sources/dujella-number-theory-2021-section15-5.pdf",
+      "proof_imported_not_replayed": true,
+      "sha256": "3f0d2fc757ad74c0a4758b463980e196cbed7ffebedcd5d522e321d87eab6260",
+      "statement": "pp. 507--509, eqs. 15.29--15.31: two-isogeny squareclass maps, primitive quartics, and rank formula"
+    },
+    {
+      "path": "sources/dujella-number-theory-2021-section15-3.pdf",
+      "proof_imported_not_replayed": true,
+      "sha256": "02cf4d0550ad601d870d22f9b951094c3476db1a24216cb88b177ebaf4b912f9",
+      "statement": "Proposition 15.7, p. 490: rational torsion injects into odd good reduction"
+    },
+    {
+      "path": "sources/faltings-1983-endlichkeitssaetze.pdf",
+      "proof_imported_not_replayed": true,
+      "sha256": "0b7fb3e505d5d63e3e6c5913daf15bd843488e59f80f8d5176b154ac8faa3fc2",
+      "statement": "Satz 7, p. 365: genus at least two implies finitely many points over every fixed number field"
+    }
+  ],
+  "external_review": false,
+  "formal_verification": false,
+  "independent_whole_proof_replay": false,
+  "proof_sha256": "ecd474b0ad2d0ae7b4eed7904bfffc058b5c1cbab2371e4112db6e1a794d0602",
+  "python": "3.12.3",
+  "quadratic_field_radicands": [
+    -81275190,
+    -40637595,
+    -6,
+    -3
+  ],
+  "scope": "Exact identities and complete primitive residue controls support the written squareclass, valuation and ramification proofs. The classical rank formula and Faltings finiteness theorem are explicit imports. No Mordell--Weil basis, saturation, infinite Hasse family, uniform field multiplicity bound, or quantitative distinct-field asymptotic is asserted.",
+  "status": "pass",
+  "sympy": "1.14.0",
+  "torsion": {
+    "exact_order": 2,
+    "finite_field_counts": {
+      "3": 4,
+      "11": 10
+    }
+  }
+}

@@ -173,7 +173,7 @@
     }
   ],
   "sympy_version": "1.14.0",
-  "elapsed_seconds": 0.097,
+  "elapsed_seconds": 0.099,
   "proof_sha256": "a138ac8d2b2c749007a02776f6cf00a23a84749194daf4f1734f00244ed0e7c4",
   "checker_sha256": "b0a8fda34f206693cd825ce1c373715fbfbf12c43b4acc2216a4e616f77147c1",
   "scope": {

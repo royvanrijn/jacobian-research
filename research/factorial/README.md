@@ -20,8 +20,10 @@ Factorial moment functionals, composition rigidity and Strong Factorial families
 | All prime-power lower-one and degree-four binomial SFC | Internal result | proved | [Source](image-rigidity/ARITHMETIC_FRONTIER_TERMINAL_ORDERS.tex) |
 | All-index gap-two SFC at lower exponents two and three | Internal result | proved | [Source](image-rigidity/lower_exponent_initial_and_boundary.tex) |
 | Quintic binomial SFC outside one terminal residue class | Internal result | proved | [Source](image-rigidity/lower_exponent_initial_and_boundary.tex) |
+| EIT and Kontsevich–Zagier: exact scopes and open application bridges | Partial result | open | [Source](image-rigidity/EIT_KONTSEVICH_ZAGIER_AUDIT.md) |
+| Quintic Frobenius blocks and analytic-index obstruction | Internal result | proved | [Source](image-rigidity/QUINTIC_FIVE_ADIC_DESCENT.tex) |
 
-**Computed obligations:** 25 unresolved; 0 resolved within their exact scope.
+**Computed obligations:** 33 unresolved; 2 resolved within their exact scope.
 
 
 Scope limits:
@@ -38,6 +40,8 @@ Scope limits:
 - A uniform all-gap identity now normalizes the moment discriminant as an (n-1)-square cyclic Hurwitz determinant. Its nonnegativity is proved for every positive shape, giving the last three gap-three special minors nonnegative at all indices. Strictness is now proved at prime-power gaps for positive rational p-integral shapes; all-real-shape strictness and the remaining intermediate minors are open.
 - The all-order formal Gamma-power cumulant fraction and its positive tree coefficients are recorded separately from fixed-shape Hankel nonnegativity. The latter retains an explicit PSZ theorem/application verification input; transferring either structure to consecutive binomial moments at two different shapes remains an open mathematical gap.
 - The actual quintic index interpolation has a unique common three-adic unit-root point on m=1+27tau. Thus an all-three-adic-indices noncollision proof cannot work in that form; the ordinary-integer question and other annuli remain open.
+- EIT II–IV and original Kontsevich–Zagier are separately inventoried in EIT_KONTSEVICH_ZAGIER_AUDIT.md; compact line/tensor completeness, relative functional comparison, simplex visibility and FC/SFC implications have distinct scopes and open obligations.
+- Quintic five-adic scalar Frobenius closure is proved for seven offsets; the coupled joint-rank descent remains open. The canceled analytic index family has two common pairs and a controlled nonzero tail, yielding necessary integer proximity rather than an ordinary SFC counterexample.
 
 Tracked obligations (computed states):
 
@@ -51,5 +55,8 @@ Tracked obligations (computed states):
 - **mathematical / open:** [Exclude zero in the final independent special minor for the actual coupled gap-three family; full H3 total nonnegativity remains a separate route.](image-rigidity/gap_three_hurwitz_structure.tex) — FACTORIAL-GAP3-TERMINAL-MINOR-STRICT
 - **mathematical / open:** [All-index ordinary lower-one binomial SFC at non-prime-power gaps, starting with gap six.](image-rigidity/ARITHMETIC_FRONTIER_TERMINAL_ORDERS.tex) — FACTORIAL-LOWER-ONE-NON-PRIME-POWER-GAPS
 - **mathematical / open:** [Complete ordinary quintic binomial SFC by proving support{2,5} at every remaining terminal N>=11,N congruent2mod9.](image-rigidity/lower_exponent_initial_and_boundary.tex) — FACTORIAL-QUINTIC-SUPPORT-TWO-FIVE-RESIDUE-RAY
+- **mathematical / open:** [Can the exact compact line-generated KZ algebra represent the angular periods needed for FC, with a proved nonzero formal class and a justified numerical/finite-window application?](image-rigidity/EIT_KONTSEVICH_ZAGIER_AUDIT.md) — FACTORIAL-KZ-SIMPLEX-REPRESENTATION
+- **mathematical / open:** [Can an exact coupled invariant transfer the ordinary quintic joint rank relation through the seven-offset Frobenius blocks?](image-rigidity/QUINTIC_FIVE_ADIC_DESCENT.tex) — GAP-QUINTIC-FROBENIUS-JOINT-RANK-DESCENT
+- **mathematical / open:** [Can the two analytic index constants be separated sufficiently from ordinary integer indices to exclude the remaining valuation-one circle?](image-rigidity/QUINTIC_FIVE_ADIC_DESCENT.tex) — GAP-QUINTIC-FIVE-ADIC-INDEX-DIOPHANTINE-SEPARATION
 
 [Exact scopes and verification limits](../STATUS.md). Publication, formal verification and independent review are separate statuses. [Dependency routes](../DEPENDENCIES.md) and [scope audit](../SCOPES.md) expose remaining gaps.
