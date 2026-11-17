@@ -13,7 +13,7 @@ Precisely scoped Lean developments supporting published papers and current manus
 | Characteristic-zero finite etale Keller construction | Internal result | proved | [Source](formal/finite-etale-keller/README.md) |
 | Tangent-pencil algebra in Lean | Partial result | proved | [Source](formal/discriminant-pencils/README.md) |
 
-**Computed obligations:** 8 unresolved; 0 resolved within their exact scope.
+**Computed obligations:** 10 unresolved; 0 resolved within their exact scope.
 
 
 Scope limits:

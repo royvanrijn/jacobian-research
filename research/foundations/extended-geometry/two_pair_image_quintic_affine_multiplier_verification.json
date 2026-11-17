@@ -1,0 +1,77 @@
+{
+  "status": "passed",
+  "scope": "Exact symbolic first-four-moment and Bezout certificate for the specified four-parameter affine-multiplier ansatz. These finite identities force b=c=d=0 over characteristic zero. They do not classify arbitrary primitive quintics or establish independent review.",
+  "input": {
+    "R": "xi1*z1 + xi2*z2",
+    "Z": "xi1*z2",
+    "W": "2*xi2*z1",
+    "T": "xi1*z1 - xi2*z2",
+    "cubic_D": "-xi1*z2*(xi1*z1 - xi2*z2)**2 + 4*xi2*z1*(xi1*z1 + xi2*z2)**2 - (xi1*z1 - xi2*z2)**2*(2*xi1*z1 + 2*xi2*z2)",
+    "family": "F=(aR+bT+cZ+dW)(R+Z)D",
+    "sphere_quartic": "p0=(1+x)(2y-(2+x)t^2)",
+    "sphere_relation": "t^2+2xy=1",
+    "parameters": "a,b,c,d arbitrary over a characteristic-zero field",
+    "cutoff": 4
+  },
+  "arithmetic": "Exact rational polynomial arithmetic; symbolic parameters retained",
+  "command": ".venv/bin/python research/foundations/scripts/verify_two_pair_image_quintic_affine_multiplier.py",
+  "working_directory": "repository root",
+  "environment": {
+    "python": "3.12.3",
+    "sympy": "1.14.0"
+  },
+  "checker": {
+    "path": "research/foundations/scripts/verify_two_pair_image_quintic_affine_multiplier.py",
+    "sha256": "3f2a8364695cb2989d49627a1d089545ccf3f4e9f0c39da1357169b7b072cc82"
+  },
+  "assurance": {
+    "internal_replay": true,
+    "independent_replay": false,
+    "formal_verification": false,
+    "external_review": false
+  },
+  "moment_identity_checks": [
+    {
+      "order": 1,
+      "radial_factor": "(6)!",
+      "angular_moment_polynomial": "(10*c - 3*d)/15",
+      "original_four_variable_identity_passed": true
+    },
+    {
+      "order": 2,
+      "radial_factor": "(11)!",
+      "angular_moment_polynomial": "2*(56*a*c + 4*a*d + 4*b**2 + 28*c**2 - 4*c*d + 3*d**2)/105",
+      "original_four_variable_identity_passed": true
+    },
+    {
+      "order": 3,
+      "radial_factor": "(16)!",
+      "angular_moment_polynomial": "2*(3432*a**2*c + 6864*a*c**2 - 156*a*d**2 - 260*b**2*d + 1144*c**3 + 1716*c**2*d + 130*c*d**2 - 49*d**3)/5005",
+      "original_four_variable_identity_passed": true
+    },
+    {
+      "order": 4,
+      "radial_factor": "(21)!",
+      "angular_moment_polynomial": "8*(155584*a**3*c + 700128*a**2*c**2 + 1224*a**2*d**2 + 4896*a*b**2*d + 466752*a*c**3 + 233376*a*c**2*d - 2448*a*c*d**2 + 3672*a*d**3 + 816*b**4 - 4896*b**2*c*d + 8976*b**2*d**2 + 38896*c**4 + 233376*c**3*d + 1224*c**2*d**2 - 2584*c*d**3 + 711*d**4)/765765",
+      "original_four_variable_identity_passed": true
+    }
+  ],
+  "elimination": {
+    "first_moment": "c=3d/10",
+    "second_moment": "b^2=-(130ad+27d^2)/25",
+    "reduced_third": "8*d*(32175*a**2 + 56680*a*d + 14254*d**2)/625625",
+    "reduced_fourth": "256*d*(60775*a**3 + 79220*a**2*d + 1802*a*d**2 - 643*d**3)/31906875",
+    "d_nonzero_coordinate": "u=a/d",
+    "P": "32175*u**2 + 56680*u + 14254",
+    "Q": "60775*u**3 + 79220*u**2 + 1802*u - 643",
+    "bezout_A": "-1531111624900*u**2 - 1247587548025*u + 290136844604",
+    "bezout_B": "810588507300*u + 1031834055265",
+    "bezout_constant": 3472141285450021,
+    "bezout_identity_passed": true,
+    "conclusion": "d=0, c=0, b=0; only F=aR(R+Z)D remains"
+  },
+  "controls": {
+    "radial_padding_passes_first_four": true,
+    "naive_T_multiplier_second_angular_moment": "8/105"
+  }
+}

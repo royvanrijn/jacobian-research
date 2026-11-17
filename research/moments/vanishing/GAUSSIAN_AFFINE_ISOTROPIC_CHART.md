@@ -99,6 +99,10 @@ on the localization divisor preserves the original seed.
 The exceptional residual family
 Z^(2nu+1)W^2+Z^nu WY-W/2+k(Z) has no pure member for any integer nu>=1
 or polynomial k, by an elementary all-order coefficient-growth argument.
+An analytic-amplitude extension allows arbitrary constant a and
+u divisible by Z^nu. An exact Wick-residue and selected-inverse-branch
+argument then excludes the entire moving-nullsource-zero branch with
+e=kappa z and c(0)=0, without divisibility or multiplicity restrictions.
 A six-parameter mixed quartic family is completely classified by an exact
 algebraic certificate followed by an all-order weight proof. Polynomial
 cubic-phase examples realize nonpositive normalized-volume order for
@@ -1793,6 +1797,191 @@ example is not claimed pure; it is excluded from the theorem. Likewise
 e constant with R=0 is realizable. Those exceptional branches require a
 separate actual-seed retention argument.
 
+## The actual kernel at an unclean simple origin
+
+Let
+
+    P=ell(Z)W^2+W(h(Z)+c(Z)Y)+aY^2+u(Z)Y+k(Z),
+
+with polynomial coefficients, a constant, and
+
+    deg ell>=2,   ord_0 ell=1,   h(0)=c(0)=0.
+
+Choose the monic gcd and put
+
+    g=gcd(ell,c^2),   e=ell/g,   C=c^2/g,
+    f=4ae-C,         J0=-2e+t f,
+    Rmov=C[z f-2e h]+4e^2 c u.
+
+Assume every root of g has multiplicity at most two. If either e or C
+is spatially nonconstant, assume Rmov is not the zero polynomial; if
+both are constant there is no moving-source condition. Then purity of
+P forces
+
+    a=0,   u(0)=k(0)=0.                              (SK0)
+
+There is no degree bound on h,c,u,k and no multiplicity condition on ell
+outside g. In particular this reduction applies to the simple origin
+that was excluded by the clean-source hypothesis of the unified theorem.
+
+### An exact identity on the actual source
+
+Write ell=zL, h=zH, c=zC1, so L(0)!=0. Set
+
+    Q(z,Y)=aY^2+u(z)Y+k(z),       Q0(Y)=Q(0,Y),
+    fW=L(z)W^2+[H(z)+C1(z)Y]W,
+    Rker=partial_W fW=2L(z)W+H(z)+C1(z)Y,
+    Jker=1-t Rker.
+
+For every W-free polynomial marker A(Z,Y), the actual formal Wick
+functional satisfies
+
+    E[Jker A(Z,Y)e^(tP)]
+       =E_Y[A(0,Y)e^(tQ0(Y))].                      (SK1)
+
+This evaluates no rational marker. Introduce a scalar s and define
+
+    I(s)=E[(1-st partial_W fW) A(Z,Y)
+                     exp(st Z fW+tQ)].
+
+The derivative of its W-dependent integrand is exactly
+
+    [-t partial_W fW+t Z fW(1-st partial_W fW)] exp(st Z fW)
+       =-(partial_W-Z)[t fW exp(st Z fW)].           (SK2)
+
+Circular integration by parts E[partial_W B]=E[ZB] gives I'(s)=0
+coefficientwise. At s=0 the W-free circular contraction evaluates at
+Z=0. At s=1 the result is (SK1). All operations are polynomial at each
+formal t order. In particular,
+
+    E[Jker e^(tP)]=N(t),
+    N(t)=(1-2at)^(-1/2)
+       exp(t k(0)+t^2 u(0)^2/[2(1-2at)]),            (SK3)
+
+and E[Z^j Jker e^(tP)]=0 for every j>=1.
+
+### The localization kernel has rank one
+
+Put K=C(t), d=1-2at, and
+
+    S=-ZW-Y^2/2+tP,
+    M=[[-2t ell,-tc],[-tc,d]],
+    Delta=det M=t g J0.
+
+Because ord_0 ell=1 and c(0)=0, the factor g has a simple root at zero,
+and J0(0)=-2e(0)d!=0 in K. Thus D0={z=0} is one smooth component of
+the reduced determinant divisor, disjoint from all the other components.
+
+Every other fixed component z=alpha has alpha!=0, and its W-linear
+source th(alpha)-alpha is nonzero over K. Every moving component has
+nonzero null source by the exact Rmov criterion of the unified theorem.
+Those restricted exponential complexes are acyclic. The reduced-divisor
+logarithmic residue sequence and its higher-pole comparison therefore
+give
+
+    ker[H^3_dR(A3_K,e^S) -> H^3_dR(A3_K[Delta^-1],e^S)]
+
+as the image of H^1_dR(D0,e^(S|D0)); its rank is at most one.
+
+On D0, the W connection is ordinary and the Y phase is
+
+    -Y^2/2+tQ0(Y).
+
+The ordinary W-line contributes H^0=K and no H^1; the nondegenerate
+Gaussian Y-line contributes H^1 of rank one. Hence the displayed source
+is precisely the rank-one Gaussian differential module with normalized
+period N(t) in (SK3).
+
+This identification preserves the actual seed. With
+Omega=dz wedge dW wedge dY one has S_W=-zJker and
+
+    (d+dS)[(dz/z) wedge dY]=Jker Omega.              (SK4)
+
+Thus Jker Omega is its logarithmic Gysin image, with the same actual
+period (SK3). The inclusion into the meromorphic endpoint complex and
+the Gysin map commute with the parameter connection. Moving components
+cause no problem: the endpoint inclusion is horizontal, although a
+moving logarithmic lattice itself need not be preserved by partial_t.
+In fact the kernel has rank exactly one: (SK3) has constant coefficient
+one, so this Gysin image is nonzero in original cohomology.
+
+### Positive-volume exclusion after localization
+
+The unified theorem's valuation proof does not use source cleanliness.
+It applies here to the Gaussian-eliminated normalized cover
+
+    U^2=G+2r ell,   G=c^2-4aell,   eta=r dz/U,
+    r=1/t.
+
+Indeed the finite-centre estimate uses only
+
+    min(ord_alpha G,ord_alpha ell)
+       =min(ord_alpha c^2,ord_alpha ell)<=2,
+
+and the infinity estimate uses deg ell>=2. If G=0, the already retained
+fixed logarithmic-cover argument applies instead. At the origin, g has
+a simple root, so the generic normalized cover is branched there and
+eta is regular in its branch coordinate. All other generic horizontal
+volume poles are logarithmic or holomorphic, just as in the unified
+theorem. The same complete compact-piece, neck, and descending-tail
+bounds therefore give strict decay on every zero-exponential localized
+unit-seed period.
+
+The effective phase is spatially nonconstant. The total determinant has
+generic spatial degree at least deg ell>=2, while its zero at the origin
+is simple. It consequently has some other geometric component, which
+is clean by Section 2. If Lvec=(th-z,tu) and N0=Lvec^T adj(M)Lvec, then
+
+    d N0=[d(th-z)+t^2 c u]^2+Delta(tu)^2.
+
+The numerator is nonzero on that clean component, so the effective phase
+t k+N0/(2Delta) has an actual spatial pole there. The phase polar divisor
+is deleted before applying ordinary-parameter exponential comparison.
+
+Accordingly, a trivial horizontal quotient of the localized cyclic
+unit-seed module with seed value one is excluded by the retained complete
+comparison argument. This conclusion needs no transported actual
+functional on the full localized module.
+
+### The cyclic intersection forces a trivial Gaussian kernel
+
+Let T be original top cohomology, let Tloc be its localization, and let
+Cseed be the differential K-submodule of T generated by Omega. If P is
+pure, its actual source functional defines a horizontal K-linear map
+
+    pi:Cseed -> K,       pi(Omega)=1.
+
+This is a map over K, not just over formal series: every element of
+Cseed is a rational combination of parameter derivatives of Omega, and
+their actual periods are the corresponding derivatives of the constant
+function one. Put I=Cseed intersect ker(T->Tloc).
+
+If pi vanished on I, it would descend to the localized cyclic unit-seed
+module, contradicting Section 3. Hence I is nonzero and pi is nonzero
+on I. Section 2 gives rank ker(T->Tloc)<=1, so I equals that kernel and
+has rank one. The Gaussian rank-one module maps onto it nontrivially;
+both maps are isomorphisms over K. Its nonzero map to the trivial
+rank-one module makes it trivial over K.
+
+It follows that its actual nonzero scalar period N(t) in (SK3) is a
+rational function of t. Now exp(t k(0)+t^2 u(0)^2/[2d]) is algebraic,
+being N(t)sqrt(d). The exponential of a nonconstant rational function
+has an essential singularity at one of its poles, including infinity,
+and cannot be algebraic. Its exponent is therefore constant, hence zero
+by its value at t=0. The first two coefficients force k(0)=u(0)=0.
+Finally d^(-1/2) is rational only when a=0, since otherwise d has a
+simple zero. This proves (SK0).
+
+### The remaining extension problem
+
+When (SK0) holds, the origin kernel is trivial and can carry a unit
+quotient. The argument does not force the original unit class into that
+kernel, does not eliminate arbitrary positive angular counterterms, and
+does not control all marked periods. It therefore does not classify this
+simple-zero branch or construct an unsafe pure member. In particular it
+does not show that L is constant. Those are the unresolved extension and
+actual-seed questions.
+
 ## A uniform obstruction on the moving-null-source-zero locus
 
 For every integer nu>=1 and every polynomial k in C[Z], the phase
@@ -1941,6 +2130,468 @@ finite-difference and ratio identities. The coefficient extraction and
 uniform estimates above prove the assertion for every nu,N,j,q and
 every complex polynomial k; those quantifiers do not come from the
 finite controls. This theorem uses no analytic period comparison.
+
+## Analytic amplitudes, Gaussian tilts and polynomial translations
+
+For every integer nu>=1, every a in C, every v,k in C[Z], put
+
+    c=Z^nu, u=c v,
+    P=a(2ZW+Y^2)+Z(cW+u)^2+(cW+u)Y-W/2+k-Zu^2.
+
+Then P is not pure for the ordinary Gaussian Wick functional. Equivalently,
+this excludes the full residual-nullsource-zero family with
+
+    ell=Z^(2nu+1), c=Z^nu,
+    h=2aZ-1/2+2Zc u,
+
+whenever u is divisible by c, for arbitrary constant a and polynomial k.
+The proof uses the actual source. It does not assume clean localization
+on the moving divisor, whose null source vanishes.
+
+The next section removes the divisibility restriction using an exact
+actual-source inverse kernel and a uniform contour bound. The elementary
+analytic-amplitude argument here gives an independent proof of this
+subfamily.
+
+### An analytic-amplitude lemma
+
+Fix nu>=1. Define
+
+    B_N(T)=(-T/2)^N sum_(j>=0)(-1)^j (2j-1)!!
+              2^(-2(nu-1)j) binom(N+2nu*j,j)T^(2nu*j),
+    L_j=(2j-1)!!2^(-2(nu-1)j)binom(2nu*j,j), L_0=1.
+
+These are the exact marked Wick periods of
+P0=Z^(2nu+1)W^2+Z^nu WY-W/2. The finite-difference proof is the
+marked formula (K2) above. In particular the coefficient
+of T^(N+2nu*j) in B_N has absolute value at most L_j, because
+
+    2^(-N)binom(N+2nu*j,j)/binom(2nu*j,j)
+     =product_(ell=1)^N (2nu*j+ell)/(2((2nu-1)j+ell)) <= 1.   (AK1)
+
+Let A(T,Z)=sum_(s,N>=0) a_(s,N)T^s Z^N be analytic near (0,0), with
+A(0,0)=1. Its pairing with the base kernel is the well-defined formal series
+
+    F(T)=sum_(N>=0) [Z^N]A(T,Z) B_N(T).
+
+Then
+
+    [T^(2nu*q)]F(T)=(-1)^q L_q (1+O(1/q)),            (AK2)
+
+so F is not analytic at T=0 and cannot be an analytic unit series.
+All statements allow arbitrary complex coefficients of A.
+
+To prove this, put D_r=sum_(s+N=r)|a_(s,N)|. Joint analyticity and
+Cauchy bounds give constants M,B>0 with D_(2nu*r)<=M B^r for all r.
+The term a_(0,0) contributes (-1)^q L_q. Every other contributing
+term satisfies s+N=2nu(q-j)>0 and hence j<q. By (AK1), the error obeys
+
+    |E_q| <= M sum_(j=0)^(q-1) L_j B^(q-j).          (AK3)
+
+The exact product formula for L_q gives
+
+    (L_q/L_(q-1))/q ->
+      c_nu=2^(3-2nu)(2nu)^(2nu)/(2nu-1)^(2nu-1)>0.   (AK4)
+
+Choose c0>0 and J so L_j/L_(j-1)>=c0*j for j>=J. The sequence is
+eventually increasing and eventually exceeds all its initial terms.
+For q large, split (AK3) at j=floor(q/2). If j>=q/2 and r=q-j, then
+
+    L_j/L_q <= (2/(c0*q))^r,
+
+so this part of the normalized sum is bounded by a geometric series
+of order O(1/q). For j<q/2, eventual monotonicity and domination of the
+initial terms give L_j<=L_floor(q/2). Hence that part is bounded by
+
+    q max(1,B^q) (2/(c0*q))^floor(q/2),
+
+up to an absolute constant for rounding. It decays faster than any
+inverse power of q. This proves (AK2).
+
+Formula (AK4) also shows L_q grows faster than every fixed exponential.
+Consequently (AK2) contradicts analyticity, whose coefficients have
+exponential bounds. This argument uses analytic majorants only for A;
+the Wick series F itself is formal and need not converge.
+
+### Exact Gaussian tilt for arbitrary a
+
+Write Q=2ZW+Y^2, d=1-2at, and choose all fractional powers of d with
+constant coefficient one. Gaussian contraction gives
+
+    E[e^(atQ) f(Z,W,Y)]
+      =d^(-3/2) E[f(Z/sqrt(d),W/sqrt(d),Y/sqrt(d))].
+
+For monomials this follows from
+E[(ZW)^j exp(2atZW)]=j! d^(-j-1) and
+E[Y^(2r)exp(atY^2)]=(2r-1)!!d^(-r-1/2). Thus the identity is formal
+and applies coefficientwise to polynomial-exponential expansions.
+
+Let B_N^a(t)=E[Z^N exp(t(aQ+P0))]. Applying the tilt and the same
+finite-difference contraction as before yields the exact identity
+
+    B_N^a(t)=d^(-N-3/2)(-t/2)^N sum_(j>=0)(-1)^j
+      (2j-1)!!2^(-2(nu-1)j)binom(N+2nu*j,j)
+      t^(2nu*j)d^(-(2nu+1)j).                        (AK5)
+
+One can check the scaling directly: after tilt each marked Gaussian
+monomial contributes d^(-N-(2nu+1)j), in addition to d^(-3/2).
+Set
+
+    T=t d^(-(2nu+1)/(2nu)),     lambda=d^(1/(2nu)).
+
+The map t->T is analytic and has derivative one at zero, so it has an
+analytic inverse t=t(T). Formula (AK5) becomes
+
+    B_N^a(t)=d^(-3/2)lambda^N B_N(T).                (AK6)
+
+Therefore for every amplitude C(t,Z) analytic near (0,0), its actual
+pairing with aQ+P0 is
+
+    E[C(t,Z)exp(t(aQ+P0))]
+       =d^(-3/2) sum_N [Z^N]C(t,lambda Z) B_N(T).     (AK7)
+
+The pairing is well defined formally whenever the amplitude is analytic:
+B_N starts at T^N, and t(T) starts at T. If C(0,0)=1, the analytic-amplitude
+lemma proves the right side cannot be analytic in t. In particular,
+C(t,Z)=exp(tk(Z)) proves the all-a, u=0 exclusion for arbitrary k.
+No restriction on k(0) is needed; purity would imply k(0)=-3a, but the
+argument excludes all k at once.
+
+### Polynomial W translation covers every u divisible by c
+
+Let u=c v with polynomial v, and K=k-Zu^2. Put W'=W+v(Z). Then
+
+    P(Z,W,Y)=aQ(Z,W',Y)+P0(Z,W',Y)
+                +v/2+K-2aZv.
+
+The exact triangular Wick translation formula is
+
+    E[f(Z,W+v(Z),Y)]=E[e^(Z v(Z)) f(Z,W,Y)].
+
+It follows by checking W^m with arbitrary polynomial Z,Y markers:
+exp(Zv) has exactly the coefficients produced by binomially expanding
+(W+v)^m and contracting. For exponential series, every relevant
+coefficient is finite under the base-kernel pairing, since B_N starts
+at T^N. Thus it is valid here even though exp(Zv) has t-order zero.
+
+Combining translation with the displayed formula for P gives
+
+    Phi_P(t)=E[C(t,Z)exp(t(aQ+P0))],
+    C(t,Z)=exp(d Z v(Z)+t(v(Z)/2+K(Z))).              (AK8)
+
+This amplitude is analytic near (0,0) and C(0,0)=1. Applying (AK7), then
+the analytic-amplitude lemma to A(T,Z)=C(t(T),lambda(t(T))Z), proves
+that Phi_P is not analytic. In particular it cannot equal one. This
+proves the result for all a,v,k and every integer nu>=1.
+
+## A full exclusion for the moving-nullsource-zero branch at the origin
+
+Let a be any complex constant, let c,u,k be arbitrary complex polynomials,
+and assume c is nonzero and c(0)=0. Then
+
+    P=aY^2+(c(Z)W+u(Z))Y+Zc(Z)^2W^2
+                   +(2aZ-1/2+2Zc(Z)u(Z))W+k(Z)       (FR1)
+
+is not pure for E[Z^pW^qY^r]=delta_(p,q) p! E[Y^r], with Y an ordinary
+standard Gaussian. No degree restrictions are imposed. The residual
+moving null source vanishes, so this proof does not invoke localization
+at that moving divisor. It derives the actual seed from finite Wick
+contractions, then proves its nonanalyticity.
+
+Write c(z)=z^nu C(z), nu>=1, gamma=C(0)!=0. The case nu=0 is excluded:
+for constant c!=0, a=u=k=0 gives a strictly negative angular-weight
+phase zc^2w^2+cwY-w/2, which is pure and safe.
+
+### An exact Wick-residue identity
+
+For t-divisible polynomial/formal coefficients A(z),B(z) and
+D(t,z) with coefficients polynomial in z, circular Gaussian contraction gives
+
+    E_ZW[D(Z)exp(A(Z)W^2+B(Z)W)]
+      =sum_(j>=0) (2j)!/j! Res_z D(z)A(z)^j/(z-B(z))^(2j+1). (FR2)
+
+All denominators are expanded formally at t=0 before taking the z residue.
+To prove this, first expand exp(AW^2). For every m>=0,
+
+    E_ZW[F(Z)W^m exp(B(Z)W)]
+      =sum_(ell>=0) (m+ell)!/ell! [z^(m+ell)]F(z)B(z)^ell
+      =m! Res_z F(z)/(z-B(z))^(m+1).
+
+Apply m=2j and divide by j!. Each t coefficient involves only finitely
+many j,ell and polynomial coefficients. This proof concerns the actual
+Wick functional, before any localization or quotient.
+
+### A Gaussian inverse kernel for the original seed
+
+Put d=1-2at, L=dz+t/2, and
+
+    f(t,z)=1-2t c(z)u(z)/d,
+    D(t,z)=exp(t k(z)+t^2u(z)^2/(2d)).
+
+Exact Y integration in (FR1) gives d^(-1/2) times the left side of (FR2), with
+
+    A=(t/d)c(z)^2 L,
+    B=2atz-t/2+2tzc(z)u(z)+t^2c(z)u(z)/d,
+    z-B=L f.
+
+Cancellation in each term of (FR2), not formal inversion inside Wick
+expectation, yields
+
+    Phi_P(t)=d^(-3/2) sum_(j>=0)(2j-1)!!
+       Res_z [D(t,z)/f(t,z)] H(t,z)^j/(z+t/(2d))^(j+1),
+    H(t,z)=2t c(z)^2/(d^2 f(t,z)^2).                 (FR3)
+
+Indeed A^j/(z-B)^(2j+1)=(t/d)^j c^(2j)L^(-j-1)f^(-2j-1),
+and (2j)!/j!=2^j(2j-1)!!. All canceled expressions represent the
+same formal rational expansion in t.
+
+Set z=tZ and write
+
+    f_t(Z)=1-2t^(nu+1)Z^nu C(tZ)u(tZ)/d,
+    h_t(Z)=2Z^(2nu)C(tZ)^2/(d^2 f_t(Z)^2),
+    Z0(t)=-1/(2d).
+
+Let Z(t,X) be the unique analytic germ near (t,X)=(0,0) solving
+
+    Z=Z0(t)+X h_t(Z).                               (FR4)
+
+It exists by the analytic implicit-function theorem. The formal Lagrange
+residue formula, equivalently the expansion of 1/(Z-Z0-Xh_t(Z)), is
+
+    G(Z(t,X))/(1-X h_t'(Z(t,X)))
+       =sum_(j>=0) X^j Res_Z G(Z)h_t(Z)^j/(Z-Z0)^(j+1).
+
+This follows directly by expanding the geometric denominator and taking
+the residue at its simple root near Z0; both expansions have the same
+formal power series at X=0. Define
+
+    J(t,X)=D(t,tZ(t,X))
+      / [f_t(Z(t,X)) (1-X h_t'(Z(t,X)))].            (FR5)
+
+Then (FR3), after the z=tZ substitution, proves the exact actual-seed identity
+
+    Phi_P(t)=d^(-3/2) E_S[J(t,t^(2nu)S^2)],           (FR6)
+
+where S is a standard Gaussian. The right side is formal: if
+J(t,X)=sum_j J_j(t)X^j, it means
+sum_j (2j-1)!! t^(2nu*j)J_j(t). It is locally finite in t. Thus (FR6)
+retains the original unit source despite the moving localization kernel.
+
+More explicitly, the residue in each fixed-j summand of (FR3) is
+(1/j!) partial_z^j[(D/f)H^j] at z=-t/(2d), since these functions are
+jointly analytic near (t,z)=(0,0). Apply z=tZ to that finite derivative
+identity. Because H(t,tZ)=t^(2nu+1)h_t(Z), the result is exactly
+t^(2nu*j)(1/j!) partial_Z^j[(D(t,tZ)/f_t)h_t^j] at Z0(t).
+Thus this residue change requires no continuity assertion for
+substitution in a general Laurent-series ring. The sum is locally
+finite because nu>=1.
+
+At t=0, h_0(Z)=2 gamma^2 Z^(2nu), and the same residue identity gives
+
+    J(0,X)=sum_(j>=0)(-1)^j gamma^(2j)b_j X^j,
+    b_j=2^(-2(nu-1)j)binom(2nu*j,j)>0.              (FR7)
+
+### Fixing the selected critical value
+
+The inverse map in (FR4) is
+
+    G_t(Z)=(Z-Z0(t))/h_t(Z).
+
+At t=0 it has the unique finite nonzero critical point and value
+
+    Zstar=-nu/(2nu-1),
+    Xstar=-beta_nu/gamma^2,
+    beta_nu=(2nu-1)^(2nu-1)/(4nu^(2nu))>0.           (FR8)
+
+The critical point is simple: G_0'(Zstar)=0 and G_0''(Zstar)!=0.
+Analytic implicit inversion therefore supplies Zstar(t) and its
+nonzero critical value Xstar(t)=G_t(Zstar(t)). Set
+
+    T=t (Xstar(0)/Xstar(t))^(1/(2nu)),               (FR9)
+
+choosing the fractional power with constant term one. This is an
+analytic change of parameter with derivative one; let t=t(T). Define
+
+    Jtilde(T,X)=J(t(T), [Xstar(t(T))/Xstar(0)] X).
+
+Then the selected inverse branch has its critical point at the fixed
+X=Xstar(0), and (FR6) becomes
+
+    Phi_P(t(T))=d(t(T))^(-3/2)
+                  E_S[Jtilde(T,T^(2nu)S^2)].        (FR10)
+
+There is no change of Gaussian variable and no dependence of T on S.
+
+### A uniform bound on the selected inverse branch
+
+For all sufficiently small complex T, the coefficients of Jtilde satisfy
+
+    |[X^j]Jtilde(T,X)| <= M |gamma|^(2j)b_j,          (FR11)
+
+with M independent of j and T in a fixed small closed T disk.
+
+Here are the analytic-continuation and contour details. The selected
+unperturbed root of Z+1/2=2gamma^2 XZ^(2nu) is analytic on a disk
+of radius R>|Xstar| cut along the short outward radial slit from Xstar.
+Its only finite critical value away from X=0 is Xstar: solving the
+polynomial equation and its Z derivative gives exactly (FR8). At X=0,
+the selected root is the simple finite root -1/2. The other roots go
+to infinity there and do not affect this selected root. The selected
+branch meets the stated critical point: after replacing X by gamma^2 X,
+the inverse map takes the negative real interval
+[-nu/(2nu-1),-1/2] monotonically onto [-beta_nu,0]. Thus continuation
+from the root -1/2 reaches Zstar at Xstar.
+The selected
+root remains bounded on the closure of a slightly smaller slit disk;
+a finite nonzero X cannot send it to infinity, and the chosen root
+is finite at X=0.
+More explicitly, the punctured slit disk has fundamental group generated
+by a small loop around zero. Its monodromy fixes the selected simple
+finite root there. The branch is therefore single-valued on the
+punctured slit disk and fills zero by the ordinary implicit-function
+theorem. This supplies the compact bounded graph used below.
+
+Take a small disk around Xstar. Outside that disk, on the compact
+closure of the slit domain, the selected root is bounded, stays away
+from Z=0, and has a nonzero Z derivative of its defining equation.
+Uniform analytic implicit inversion around this compact graph gives
+joint analytic continuation for small T. These local branches glue by
+uniqueness of the root near the unperturbed graph. Extra roots or
+critical points created at unbounded Z by C(tZ),u(tZ) cannot enter
+these bounded isolated root neighborhoods, even if their critical
+values approach zero.
+
+Inside the critical disk, the simple quadratic critical point has a
+joint analytic square-root inverse after (FR9). The factors D and f_t
+are analytic and nonzero on the bounded graph for small T. Therefore
+Jtilde has the local form
+
+    P(T,X)+Q(T,X)(1-X/Xstar)^(-1/2),                 (FR12)
+
+with P,Q jointly analytic, uniformly bounded on a fixed smaller
+critical disk. The denominator in (FR5) has a simple zero in the square-root
+coordinate. In particular it produces no stronger singularity.
+
+Deform the Cauchy coefficient contour to an outer contour of radius
+R'>|Xstar| and the two banks of the short radial slit. On the slit
+choose R' close enough to |Xstar| that both banks stay in the critical
+disk where (FR12) holds. On the slit
+write X=Xstar(1+s), 0<s<delta. The jump bound from (FR12) is M s^(-1/2).
+Thus its coefficient contribution is at most
+
+    M |Xstar|^(-j) integral_0^delta
+                       s^(-1/2)(1+s)^(-j-1) ds
+      <= M' |Xstar|^(-j)(j+1)^(-1/2).
+
+The small circle around the branch point contributes O(epsilon^(1/2))
+and vanishes as its radius tends to zero. The outer contour contributes
+O(R'^(-j)), which obeys the same bound.
+This is uniform for T in a small closed disk. No transfer theorem is
+being assumed: the displayed contour estimate is the needed bound.
+
+Finally b_j is comparable to beta_nu^(-j)(j+1)^(-1/2). This follows
+without Stirling's formula from its exact factorial-product ratio:
+
+    b_j/b_(j-1)=beta_nu^(-1)(1-1/(2j)+O(1/j^2)).
+
+Indeed b_j beta_nu^j sqrt(j) then has successive ratio 1+O(1/j^2),
+whose product converges to a finite positive number. Since
+|Xstar|^(-1)=|gamma|^2/beta_nu, this proves (FR11).
+
+### Gaussian coefficient growth excludes purity
+
+Cauchy's estimate in T applied to (FR11) gives, for some rho>0,
+
+    |[T^m X^j]Jtilde(T,X)|
+      <=M rho^(-m)|gamma|^(2j)b_j.                  (FR13)
+
+Set L_j=|gamma|^(2j)(2j-1)!!b_j. Its factorial-product ratio satisfies
+
+    (L_j/L_(j-1))/j
+      -> |gamma|^2 2^(3-2nu)(2nu)^(2nu)/(2nu-1)^(2nu-1)>0.
+
+In E_S[Jtilde(T,T^(2nu)S^2)], the coefficient of T^(2nu*q) has
+unperturbed contribution (-1)^q gamma^(2q)(2q-1)!!b_q from j=q,m=0.
+Every other contribution has j<q. By (FR13), its total error is at most
+
+    M sum_(j<q) L_j (rho^(-2nu))^(q-j) = O(L_q/q).   (FR14)
+
+For completeness, the last convolution estimate follows by splitting
+j>=q/2 and j<q/2. On the first range, L_j/L_q <=(C/q)^(q-j) and the
+sum is geometric of order 1/q. On the second, eventual monotonicity
+and domination of the finite initial segment give L_j<=L_floor(q/2),
+and its ratio to L_q is at most (C/q)^floor(q/2). This beats every
+exponential coefficient majorant, even after summing q terms.
+
+Therefore
+
+    [T^(2nu*q)] E_S[Jtilde(T,T^(2nu)S^2)]
+      / [(-1)^q gamma^(2q)(2q-1)!!b_q] -> 1.         (FR15)
+
+These coefficients grow faster than every exponential, so this formal
+series is not analytic. If Phi_P were the unit series, (FR10) would make
+it equal d(t(T))^(3/2), an analytic germ. This contradiction proves
+the statement for every a,c,u,k satisfying c!=0,c(0)=0.
+
+### The general residual factor e=kappa z
+
+Let kappa!=0, and let c,C,u,k be complex polynomials with c!=0,
+c(0)=0, C(0)!=0. Suppose the following displayed coefficients are
+polynomials:
+
+    ell=kappa z c^2/C,
+    h=2az-C/(2kappa)+2kappa z c u/C.
+
+Then the full phase aY^2+(cW+u)Y+ell W^2+hW+k is not pure. This
+includes the residual-nullsource-zero locus e=kappa z with C=c^2/g
+coprime to e; coprimality supplies C(0)!=0. It leaves the e-constant
+case outside the statement.
+
+Here is a reduction to the analytic-germ version of the proof above.
+After exact Y integration put
+
+    L=dz+tC(z)/(2kappa),
+    F=1-2t kappa c(z)u(z)/(C(z)d),
+    A=(t kappa c(z)^2/(C(z)d)) L,
+    z-B=L F,
+    D=exp(tk+t^2u^2/(2d)).
+
+The Wick-residue identity (FR2) still applies. Use the analytic local
+coordinate zeta=kappa z/C(z), whose inverse z=z(zeta) exists because
+C(0)!=0. Then
+
+    L=(Cd/kappa)(zeta+t/(2d)),
+    gamma(zeta)=kappa c(z(zeta))/C(z(zeta)),
+    M(zeta)=kappa z'(zeta)/C(z(zeta)), M(0)=1.
+
+Cancellation in each residue term gives exactly
+
+    Phi=d^(-3/2) sum_j (2j-1)!! Res_zeta
+      [M(zeta)D(z(zeta))/F(z(zeta))]
+      [2t gamma(zeta)^2/(d^2F(z(zeta))^2)]^j
+      /(zeta+t/(2d))^(j+1).                         (FR16)
+
+The powers can be checked directly: after changing coordinates,
+A^j L^(-2j-1) is t^j kappa^(2j+1)c^(2j)/(C^(2j+1)d^(2j+1))
+times (zeta+t/(2d))^(-j-1). Multiplying dz and (2j)!/j! gives
+d^(-1)M(2j-1)!![2t gamma^2/d^2]^j, before the unchanged factor
+F^(-2j-1).
+This is a coordinate change of local residues coefficientwise after
+the t-adic expansion. Each coefficient is a meromorphic germ with
+finite pole order, so local residue invariance applies directly.
+No analytic or rational coefficient is inserted into the original
+polynomial Wick functional.
+
+Now gamma(zeta)=zeta^nu Gamma(zeta) for some nu>=1 and Gamma(0)!=0.
+The transformed u,k,M are analytic germs, and M(0)=1. The preceding inverse-kernel and contour proof
+requires only these analytic germ properties: after zeta=tZ, every
+selected branch remains in bounded Z, so all germs are evaluated
+inside their common convergence neighborhood for small t. The extra
+factor M(tZ) is an analytic amplitude with value one at t=0 and
+does not alter the unperturbed kernel or the contour bound. Thus the
+same actual-seed identity, fixed-critical-value normalization, and
+factorial-convolution contradiction apply to (FR16). This proves the
+corollary without a global change of polynomial coordinates.
 
 ## All-degree radial obstruction and angular support
 
@@ -2453,8 +3104,13 @@ It also checks the variable-precision determinant and source identities,
 the sharp four-level common-root factor and scale identities, and
 the representative cubic chart with its nonzero second moment,
 and the marked coefficient identities in the all-degree residual-source
-obstruction. The local common-root proof has symbolic controls for its
-phase groups and exact scale inequalities.
+obstruction. It also checks the Gaussian tilt, polynomial translation,
+actual Wick-residue cancellation, Lagrange inverse kernel and unperturbed
+critical-value identities. The contour argument has its full written
+selected-sheet and coefficient bounds; finite controls do not certify
+that complex-analytic argument. The local common-root proof has symbolic
+controls for its phase groups and exact scale inequalities. The actual
+simple-origin kernel has exact homotopy and Gysin-class controls.
 For the six-parameter quartic family it verifies the exact finite
 completeness certificate, including the nonzero modular Sylvester
 determinant and the final cross-product equations. The proof explains
@@ -2479,7 +3135,9 @@ common-root orders are precisely the strip
     m=ord_alpha c>=9,    ceil(2m/3)<=ord_alpha h<=m-3,
 
 at a nonzero common root, with a=0 and outside the direct zero-root case.
-All other root-order pairs are classified without a degree bound.
+At every other root-order pair the normalized volume is strictly positive.
+Thus the classification is complete when no common root lies in this strip,
+without a degree bound.
 The strip is sharp for a uniform strictly-positive-volume proof: the
 polynomial cubic barriers realize order zero or negative order at every
 pair there, while failing purity. Additional consequences of purity or
@@ -2489,9 +3147,13 @@ For polynomial ell(Z)W^2, the exclusion above leaves degree-one ell,
 roots of multiplicity at least three in gcd(ell,c^2), and the fixed or
 moving source exceptions. In the moving case the explicit failure
 condition is R=0 and requires ell/gcd(ell,c^2) to be constant or a
-scalar multiple of z. The monomial residual family in the uniform
-obstruction above is excluded independently, even for high multiplicity.
-The remaining cases also include the unclean zero-root source.
+scalar multiple of z. The latter branch is now excluded whenever c(0)=0,
+with arbitrary u,k and unrestricted shared multiplicities, by the
+actual inverse-kernel argument. Residual constant e and c(0)!=0 in
+the e=kappa z branch remain outside that exclusion.
+For a simple unclean origin under the stated volume hypotheses, purity
+now forces a=u(0)=k(0)=0, by the actual rank-one Gysin kernel. Its
+remaining trivial-extension problem is still unresolved.
 General W degree at least three in g, or
 at least two in B, also remains open beyond the exact six-parameter
 quartic classification. All statements continue to require the ordinary

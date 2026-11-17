@@ -14,7 +14,7 @@ Constructive finite etale fibres, arithmetic failures and discriminant geometry.
 | Generic Discriminants of Polynomial Tangent Pencils | Unpublished; independent review pending | proved | [Source](../../unpublished/discriminant-pencils/README.md) |
 | Exact Real Chamber Spectra of Explicit Keller Maps | Unpublished; independent review pending | proved | [Source](../../unpublished/exact-real-chamber-spectra/README.md) |
 
-**Computed obligations:** 11 unresolved; 1 resolved within their exact scope.
+**Computed obligations:** 22 unresolved; 1 resolved within their exact scope.
 
 
 Scope limits:

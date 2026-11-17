@@ -460,6 +460,240 @@ parameters \(a_2,\ldots,a_d\). Proposition 6.2 gives this reduction; a
 classification of those higher-degree residual ideals is outside the
 retained proof above.
 
+## 7. Real profiles with mixed height powers
+
+**Status and scope.** The results in this section are internal deductions,
+with no independent mathematical review, formalization or novelty claim.
+They extend the endpoint argument to real polynomials in the signed height.
+The real-coefficient hypothesis is essential to the nonvanishing argument
+used here; no classification for complex profile coefficients is asserted.
+The only proof inputs are the sphere relation (1.1), constant-term phase
+averaging, polynomial integration and the radial contraction identity in
+[the two-pair note, Sections 2 and 4](TWO_PAIR_IMAGE_MATHIEU_COUNTEREXAMPLE.md).
+Neither a bounded search nor a new external theorem is used.
+
+Let
+\[
+ A=\mathbb R[x,y,t]/(t^2+2xy-1),\qquad X=1+x,
+\]
+and write \(\Lambda\) for the normalized angular functional: substitute
+\(y=(1-t^2)/(2x)\), take the constant term in \(x\), and then integrate
+\(t\) against \(dt/2\) on \([-1,1]\). Fix
+\[
+ r\geq1,\quad q\geq1,\quad \gamma\in\mathbb R\setminus\{0\},\quad
+ 0\ne P\in\mathbb R[w],\qquad (1-w^2)^r\mid P(w),
+\]
+where \(r,q\) are integers, and set
+\[
+ p=\gamma x^{-r}X^qP(tX),\qquad
+ C_m=\frac12\int_{-1}^1P(w)^m\,dw.
+ \tag{7.1}
+\]
+This is a single affine phase profile, allowing arbitrary mixtures of
+height powers inside \(P\). It represents a polynomial in \(A\): if
+\(P(w)=(1-w^2)^rS(w)\), then
+\[
+ p=\gamma X^q\bigl(2y-(2+x)t^2\bigr)^r S(tX).
+ \tag{7.2}
+\]
+In particular \(C_{2j}>0\) for every \(j\geq1\).
+
+> **Theorem 7.1 (real signed-height profile classification).** For (7.1),
+> \[
+>  \Lambda(p^m)=\gamma^m\binom{qm-1}{rm}C_m
+>  \qquad(m\geq1).
+>  \tag{7.3}
+> \]
+> Thus all pure moments vanish exactly when \(q\leq r\). If \(q=r\),
+> \[
+>  \Lambda(xp^m)=\gamma^m C_m,
+>  \tag{7.4}
+> \]
+> which is nonzero at every even \(m\). If \(q<r\), then for every fixed
+> polynomial marker \(B\in A\),
+> \(\Lambda(Bp^m)=0\) for all sufficiently large \(m\).
+> The cutoff may depend on \(B\), as specified in Lemma 7.2.
+
+To prove (7.3)--(7.4), use the polynomial
+\[
+ H_m(X)=X^{qm-1}J_m(X),\qquad
+ J_m(X)=\frac12\int_{-X}^{X}P(w)^m\,dw.
+ \tag{7.5}
+\]
+Substitution \(w=tX\) and phase extraction give
+\[
+ \Lambda(p^m)=\gamma^m[x^{rm}]H_m(1+x),\qquad
+ \Lambda(xp^m)=\gamma^m[x^{rm-1}]H_m(1+x).
+ \tag{7.6}
+\]
+Because \(P\) has zeros of order at least \(r\) at both endpoints,
+\[
+ J_m'(X)=\frac{P(X)^m+P(-X)^m}{2}
+\]
+is divisible by \((X-1)^{rm}\). Consequently
+\[
+ H_m(X)\equiv C_mX^{qm-1}\pmod{(X-1)^{rm+1}}.
+ \tag{7.7}
+\]
+This proves (7.3). When \(q\leq r\), the binomial coefficient there is
+zero. When \(q>r\), it is positive, and the even moments are nonzero
+because \(\gamma^{2j}C_{2j}>0\). For \(q=r\), the coefficient of degree
+\(rm-1\) in (7.7) proves (7.4). No assertion that odd marked moments
+are nonzero is needed.
+
+> **Lemma 7.2 (all fixed polynomial markers when \(q<r\)).** Suppose
+> \(1\leq q<r\). For nonnegative integers \(a,b,h\),
+> \[
+>  \Lambda(x^ay^bt^h p^m)=0
+>  \quad\text{if}\quad
+>  m\geq\max\left\{1,
+>       \left\lceil\frac{h+2b+1}{q}\right\rceil,
+>       \left\lceil\frac{a}{r-q}\right\rceil\right\}.
+>  \tag{7.8}
+> \]
+> Therefore \(m\geq2D+1\) suffices for every marker having a polynomial
+> representative of total degree at most \(D\) in \(x,y,t\).
+
+Here is the endpoint estimate needed for arbitrary markers. Put
+\[
+\begin{aligned}
+ N&=rm-a+b,& e&=qm-h-2b-1,\\
+ K_m(X)&=\frac12\int_{-X}^{X}
+       w^h(X^2-w^2)^bP(w)^m\,dw,\\
+ K_m^0(X)&=\frac12\int_{-1}^{1}
+       w^h(X^2-w^2)^bP(w)^m\,dw.
+\end{aligned}
+ \tag{7.9}
+\]
+The superscript zero means fixed integration endpoints; it is not a
+constant in \(X\). It is a polynomial of degree at most \(2b\).
+After substituting for \(y\) and changing height variable,
+\[
+ \Lambda(x^ay^bt^h p^m)
+   =\gamma^m2^{-b}[x^N](1+x)^eK_m(1+x).
+ \tag{7.10}
+\]
+The endpoint difference has the stronger divisibility
+\[
+ K_m(X)-K_m^0(X)\quad\text{is divisible by}\quad
+ (X-1)^{rm+b+1}.
+ \tag{7.11}
+\]
+Indeed, split the difference into the integrals from \(1\) to \(X\)
+and from \(-X\) to \(-1\). In the first, put
+\(X=1+u\), \(w=1+v\). The factor \(P(1+v)^m\) is divisible by
+\(v^{rm}\), while
+\(X^2-w^2=(u-v)(2+u+v)\). Each term integrated from \(v=0\) to
+\(v=u\) therefore has a factor \(u^{rm+b+1}\). The second integral
+has the same estimate after putting \(w=-1-v\), using the zero of
+\(P\) at \(-1\). These are polynomial integrations, so the estimate
+is an exact divisibility statement.
+
+Under (7.8), \(e\geq0\), \(N\geq0\), and \(N\leq rm+b\).
+Thus (7.11) permits replacing \(K_m\) by \(K_m^0\) in (7.10).
+The resulting polynomial has degree at most
+\[
+ e+2b=qm-h-1,
+\]
+whereas
+\[
+ N-(qm-h-1)=(r-q)m-a+b+h+1>0
+\]
+by (7.8). Its coefficient of degree \(N\) is zero, proving the lemma.
+For \(a+b+h\leq D\), the simpler bound \(m\geq2D+1\) implies
+both inequalities in (7.8). A polynomial marker is a finite linear
+combination of these monomials. This completes Theorem 7.1.
+
+### Minimal balanced degree and the original Image condition
+
+Let \(n=\deg P\), \(s=n-2r=\deg S\), and write
+\(S(w)=\sum_{j=0}^s s_jw^j\), where \(s_s\ne0\). Use the original
+bilinears \(R,Z,W,T\), put \(L=R+Z\), and use
+\(D=2WR^2-2RT^2-ZT^2\), as in the two-pair note.
+
+> **Proposition 7.3 (primitive homogenization and degree parity).**
+> The least balanced degree of a homogeneous lift of (7.1) is
+> \[
+>  d=2n+q-r.
+>  \tag{7.12}
+> \]
+> Its lift in this degree is
+> \[
+>  F=\gamma L^qD^r
+>       \sum_{j=0}^s s_jR^{2(s-j)}T^jL^j.
+>  \tag{7.13}
+> \]
+> It is \(R\)-primitive. For \(q=r\), this is an Image failure
+> witness of even balanced degree \(d=2n\), with marker \(Z\) and
+> nonzero marked contractions at every even power. For \(q<r\), it
+> obeys the eventual Image conclusion for every fixed original
+> polynomial multiplier, including unbalanced multipliers. For a
+> multiplier of bidegree \(u,v\), \(m\geq2v+1\) suffices.
+
+Each term of (7.13) has balanced degree
+\(q+3r+2s=2n+q-r\), and setting \(R=1\) recovers (7.2).
+The highest total-degree term of (7.2), before sphere reduction, is
+\[
+ \gamma(-1)^rs_s x^{q+n-r}t^n.
+\]
+Its image is nonzero in the associated graded sphere ring
+\(\mathbb R[x,y,t]/(t^2+2xy)\), which is a domain. This proves the
+minimal degree assertion: the highest term cannot be removed by the
+sphere relation. Equivalently, reduction using \(t^2=1-2xy\) gives
+a nonzero term of that same degree in the unique representative of
+height degree at most one.
+
+At \((\xi_1,\xi_2,z_1,z_2)=(1,1,1,-1)\), one has
+\(R=0\), \(T=2\), \(L=-1\), \(D=4\). Only the \(j=s\) term
+in (7.13) remains, and its value is
+\(\gamma s_s(-1)^{q+s}2^{s+2r}\ne0\). Thus \(R\nmid F\).
+For \(q=r\), radial homogeneity and (7.4) give
+\[
+ \mathcal E_2(ZF^m)=(dm+2)!\,\gamma^m C_m,
+ \tag{7.14}
+\]
+which is nonzero at every even \(m\), while all pure contractions
+vanish. For \(q<r\), Lemma 7.2 first gives eventual zero contraction
+against every balanced marker: such a marker is a polynomial in the
+four bilinears, and its sphere restriction belongs to \(A\).
+
+To check arbitrary original multipliers, split a multiplier \(Q\) into
+its finitely many bihomogeneous parts, of bidegrees \((u,v)\). If
+\(u>v\), then \(\mathcal E_2(QF^m)=0\) automatically, since the
+number of differentiations exceeds the coordinate degree. If \(u\leq v\),
+this contraction is a homogeneous polynomial in \(z\) of degree
+\(v-u\). For each multi-index \(\alpha\) with \(|\alpha|=v-u\),
+\[
+ \partial_z^\alpha\mathcal E_2(QF^m)
+     =\mathcal E_2(\xi^\alpha QF^m).
+ \tag{7.15}
+\]
+The marker on the right is balanced. It eventually gives zero by the
+preceding paragraph. There are only finitely many such scalar tests;
+once all vanish, the homogeneous output polynomial is zero. Taking
+the maximum cutoff over the finitely many parts of \(Q\) proves the
+full eventual Image conclusion. More explicitly, the balanced markers
+in (7.15) have balanced degree \(v\), so they are sums of products of
+\(v\) bilinears. Their sphere restrictions have representatives of
+total degree at most \(v\). Lemma 7.2 therefore gives the sufficient
+cutoff \(m\geq2v+1\).
+
+The classification therefore rules out primitive odd-degree Image
+failures within (7.1): the only failing case is \(q=r\), whose least
+balanced degree is even. Homogenization in a higher degree introduces
+\(R\) padding and loses primitivity. This obstruction allows arbitrary
+mixed height powers in a single real profile, but makes no claim about
+multiple phase profiles or the full primitive degree-five space.
+
+
 ## Verification scope
 
-The written classification above is the all-order argument. The [rank-one Gaussian checker](../scripts/verify_three_real_gmc_rank_one_classification.py) verifies the associated exact coefficient identities. Finite checks do not replace the universal proof.
+The written classifications are the all-order arguments. The preexisting
+[rank-one Gaussian checker](../scripts/verify_three_real_gmc_rank_one_classification.py)
+is associated with the earlier classification material; it is not claimed
+to verify Section 7. That section rests on its displayed elementary proof.
+Its endpoint estimates, degree calculation and arbitrary-marker bridge
+received focused internal AI proof checks. No retained computational
+checker, independent replay, formal verification or external mathematical
+review is claimed for Section 7. Finite checks do not replace the
+universal proof.

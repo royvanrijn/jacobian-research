@@ -97,6 +97,19 @@ Zhao's image-kernel identity gives
 \tag{2.2}
 \]
 
+Here the identity has a direct proof over the stated field. For every
+polynomial \(H\),
+\(\mathcal E_2(\xi_iH)=\partial_{z_i}\mathcal E_2(H)
+=\mathcal E_2(\partial_{z_i}H)\), so \(\mathcal E_2\) annihilates
+\(\mathcal M_2\). Conversely, reducing \(\xi_iH\) to
+\(\partial_{z_i}H\) modulo the vector space \(\mathcal M_2\),
+and inducting on total \(\xi\)-degree, gives
+\(P-\mathcal E_2(P)\in\mathcal M_2\) for every \(P\). Thus a
+polynomial with zero contraction lies in \(\mathcal M_2\), proving
+(2.2) without an additional field-extension assumption.
+The same reduction proves the image-kernel identity with any finite
+number of contraction pairs.
+
 Both \(F^m\) and \(QF^m\) have equal dual and coordinate degrees.  Their
 contractions are therefore scalars.  If \(G_1,G_2\) are independent
 standard circular complex Gaussians, the Wick rule gives, for every
@@ -777,8 +790,8 @@ It also has the exact rational forms
 For the product formula, integration of the derivative of
 \(w^{a+1}(1-w^2)^m\), with \(a=km\), gives
 \((a+2m+1)I_{a,m}=2mI_{a,m-1}\) for
-\(I_{a,m}=\int_0^1w^a(1-w^2)^m\,dw\), starting from
-\(I_{a,0}=1/(a+1)\).
+\(I_{a,m}=\int_0^1w^a(1-w^2)^m\,dw\). Iterate with \(a\) held
+fixed, starting from \(I_{a,0}=1/(a+1)\), then set \(a=km\).
 
 There is no analytic assumption in the characteristic-zero extension:
 one may instead use the monomial coefficient formula (4.2) with
@@ -817,6 +830,14 @@ infinitely many nonzero marked contractions and therefore violates the
 eventual Image/Mathieu conclusion. The argument needs infinite survival;
 survival at every power is unnecessary.
 
+The earlier quartic identities are exact specializations: for \(k=0\),
+(5.17) is \(J_{0,m}(1)=2^m m!/(2m+1)!!\) and \(F_0=2F\).
+Dividing the contractions in (5.12) by \(2^m\) recovers Theorem 1.1.
+Combining this specialization with Lemma 5.1 recovers (5.3) in every
+balanced degree \(d\geq4\). These implications use the stated
+normalizations; no cubic positivity theorem is needed for the quartic
+counterexample or its padding.
+
 ### Invariant padding and the remaining primitive frontier
 
 There is a sharp obstruction internal to the invariant-multiplier
@@ -849,6 +870,109 @@ Invariant padding cannot solve this primitive question. A Cartan or
 trace-free projection would have to solve new moment identities rather
 than inherit them from the radial-shift lemma.
 
+### The affine-multiplier quintic family is excluded
+
+The first quintic deformation of the retained quartic is already rigid.
+In this subsection \(a,b,c,e\) are arbitrary coefficients in a
+characteristic-zero field; the letter \(e\) is used for the coefficient
+of \(W\) to keep it distinct from balanced degree. Put
+\[
+ G_{a,b,c,e}=(aR+bT+cZ+eW)(R+Z)D.
+ \tag{5.19}
+\]
+This is the complete four-parameter family obtained by multiplying the
+retained quartic by a bilinear form: \(R,T,Z,W\) span all four
+bilinears. Its elements have balanced degree five.
+
+> **Theorem 5.6 (internal deduction: affine quintic obstruction).**
+> If \(\mathcal E_2(G_{a,b,c,e}^{\,j})=0\) for \(j=1,2,3,4\),
+> then \(b=c=e=0\). Conversely, for every \(a\), the radial multiple
+> \(G_{a,0,0,0}=aR(R+Z)D\) has every pure contraction zero.
+> Consequently this entire affine-multiplier family contains no
+> \(R\)-primitive quintic Image witness. The unrestricted primitive
+> degree-five problem remains open.
+
+**Proof.** On the sphere write
+\[
+ p_0=(1+x)\bigl(2y-(2+x)t^2\bigr),\qquad
+ \ell=a+bt+cx+ey,
+\]
+and let \(M_j\) be the normalized sphere moment of \((\ell p_0)^j\).
+The contraction formula (4.2) gives
+\(\mathcal E_2(G^{\,j})=(5j+1)!M_j\). All calculations below are
+identities over \(\mathbb Q[a,b,c,e]\).
+
+For clarity, the exact monomial rule used to obtain the moments is
+\[
+ L(x^i y^j t^h)=0\quad(i\ne j\text{ or }h\text{ odd}),\qquad
+ L(x^i y^i t^{2s})
+   =\frac1{2^i}\sum_{v=0}^i
+       \frac{(-1)^v\binom iv}{2s+2v+1}.
+ \tag{5.20}
+\]
+It follows by substituting \(xy=(1-t^2)/2\), extracting the phase
+constant term and integrating the even height. The first two moments are
+\[
+ M_1=\frac{10c-3e}{15},\qquad
+ M_2=\frac{2(56ac+4ae+4b^2+28c^2-4ce+3e^2)}{105}.
+ \tag{5.21}
+\]
+Thus \(M_1=M_2=0\) forces
+\[
+ c=\frac{3e}{10},\qquad
+ b^2=-\frac{130ae+27e^2}{25}.
+ \tag{5.22}
+\]
+Odd powers of \(b\) vanish in each \(M_j\) by height parity. After
+these substitutions, the next two moments reduce to
+\[
+\begin{aligned}
+ M_3&=\frac{8e(32175a^2+56680ae+14254e^2)}{625625},\\
+ M_4&=\frac{256e(60775a^3+79220a^2e+1802ae^2-643e^3)}{31906875}.
+\end{aligned}
+ \tag{5.23}
+\]
+If \(e\ne0\), the ratio \(u=a/e\) would be a common root of
+\[
+ P(u)=32175u^2+56680u+14254,\qquad
+ Q(u)=60775u^3+79220u^2+1802u-643.
+\]
+The following integer identity rules this out over every
+characteristic-zero field:
+\[
+\begin{aligned}
+ A(u)P(u)+B(u)Q(u)&=3472141285450021,\\
+ A(u)&=-1531111624900u^2-1247587548025u+290136844604,\\
+ B(u)&=810588507300u+1031834055265.
+\end{aligned}
+ \tag{5.24}
+\]
+Therefore \(e=0\), and (5.22) gives \(c=0\) and \(b=0\). For the
+converse, (5.19) becomes a radial multiple of \(F_0=2F\), so Theorem
+5.5 and the radial-shift lemma give all pure contractions zero. Such a
+multiple is zero or divisible by \(R\), proving the stated obstruction.
+
+The [quintic verifier](../scripts/verify_two_pair_image_quintic_affine_multiplier.py)
+and [exact receipt](two_pair_image_quintic_affine_multiplier_verification.json)
+reconstruct (5.21)--(5.24), both from sphere moments and from the
+original four-variable contractions. Four moments suffice for this
+restricted family because the printed elimination proves the conclusion;
+this is not a finite-prefix claim for arbitrary quintics. The proof and
+computations are internal, with independent mathematical review pending.
+
+A broader obstruction is proved in the
+[real mixed-height profile classification](HOPF_LIFT_CLASSIFICATION.md#7-real-profiles-with-mixed-height-powers).
+For \(p=\gamma x^{-r}(1+x)^qP(t(1+x))\), with real coefficients,
+\(r,q\geq1\), and \((1-w^2)^r\mid P(w)\), all pure moments vanish
+exactly when \(q\leq r\). The case \(q<r\) satisfies eventual mixed
+vanishing for every fixed original multiplier; the failing case
+\(q=r\) has least balanced degree \(2\deg P\), which is even.
+Thus arbitrary mixed height powers inside this single real phase profile
+do not produce a primitive odd-degree witness. Theorem 5.6 separately
+excludes all complex affine multiples of the retained quartic. Multiple
+phase profiles and the rest of the full quintic coefficient space remain
+outside these obstructions.
+
 ## 6. Frontier consequences
 
 The family begins in balanced bidegree \((4,4)\). The complete
@@ -856,6 +980,10 @@ The family begins in balanced bidegree \((4,4)\). The complete
 the Image implication for the full bidegree-\((3,3)\) stratum, and for
 each lower balanced bidegree. Thus four is the exact least failing
 balanced degree among bihomogeneous forms in two pairs.
+Since \(F_0\) is \(R\)-primitive and not a proper power, four is also
+the exact least failing primitive balanced degree. The lower bound uses
+the cubic and lower-degree positivity theorem; the even-degree
+construction alone supplies the upper bound.
 
 The family also falsifies the proposed two-pair moment--nullcone equality
 in every degree \(d\geq4\): the pure moments of \(F_d\) all vanish, while
@@ -922,9 +1050,8 @@ the focused checks for Theorem 5.5. Original four-variable contractions are
 checked for \(k=0,1,2,3\), \(m=1,2,3\), and degree-six sphere
 calculations are checked through \(m=8\), including both parity cases.
 These are internal bounded checks with no independent-review or
-formalization claim. The separately reported checks in the supplied
-observation are not treated as an independently replayed bundle; the
-retained receipt identifies the actual local checker and run.
+formalization claim. The retained receipt identifies the actual local
+checker and run performed while recording the supplied observation.
 
 ## Source for the Image framework
 
@@ -932,4 +1059,28 @@ A. van den Essen, D. Wright, and W. Zhao,
 [*On the Image Conjecture*](https://arxiv.org/abs/1008.3962),
 J. Algebra 340 (2011), 211--224, supplies the contraction
 image-kernel identity and the one-pair positive theorem used for the sharp
-dimension conclusion.
+dimension conclusion. Definition 1.1 requires eventual membership for each
+fixed multiplier, so infinitely many nonzero marked contractions suffice
+to contradict that conclusion.
+
+For the one-pair lower bound, the precise input is Theorem 2.8 of the
+[retained primary edition](sources/van_den_essen_wright_zhao_1008_3962v2.pdf),
+arXiv:1008.3962v2, printed page 5, with its proof on pages 5--6.
+Apply it with \(A=k[\xi]\), \(a=\xi\), and \(B=A[z]\).
+The characteristic-zero assumption makes \(A\) a \(\mathbb Q\)-algebra;
+\(\xi\) is a non-zero-divisor and \((\xi)\) is radical because
+\(A/(\xi)=k\) is a field. Therefore
+\((\partial_z-\xi)k[\xi,z]\) is Mathieu. Together with the two-pair
+failure established above, this proves the minimum failing pair
+dimension is exactly two. The imported theorem uses the one-variable
+Factorial theorem, Theorem 4.9 in the same source; its hypotheses are not
+an extra assumption on the present construction. This records the exact
+source application, without asserting independent review of that source.
+
+The failure also persists in every pair dimension \(r\geq2\): view
+\(F\) and \(Z\) as polynomials in the first two pairs of the larger
+ring. The monomial contraction rule gives
+\(\mathcal E_r(F^m)=\mathcal E_2(F^m)\) and
+\(\mathcal E_r(ZF^m)=\mathcal E_2(ZF^m)\), since all exponents in
+the additional pairs are zero. The image-kernel identity therefore gives
+failure for every \(r\geq2\), alongside the positive one-pair theorem.

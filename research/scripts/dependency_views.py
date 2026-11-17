@@ -8,11 +8,47 @@ from __future__ import annotations
 
 from collections import Counter
 from html import escape
+import os
+from pathlib import Path
+import re
 from textwrap import wrap
 
 
 def _cell(value: object) -> str:
     return str(value).replace("|", "\\|").replace("\n", " ")
+
+
+
+def _scope_text(record, node, graph):
+    """Rebase quoted source links before placing the statement at research root."""
+    value = record["scope"]
+    sources = node.get("sources", [])
+    if not sources:
+        return value
+    origin = sources[0]["path"]
+    protected = []
+    pattern = r"(?s)(\\\(.*?\\\)|\\\[.*?\\\]|(?<!\\)\$\$?.*?(?<!\\)\$\$?|" + re.escape(chr(96)) + r"+.*?" + re.escape(chr(96)) + r"+)"
+    def hide(match):
+        protected.append(match.group(0))
+        return "\x00" + str(len(protected)-1) + "\x00"
+    masked = re.sub(pattern, hide, value)
+    def rebase(match):
+        label, target = match.group(1), match.group(2).strip()
+        if "://" in target or target.startswith(("mailto:", "data:")):
+            return match.group(0)
+        target = target.strip("<>")
+        path, marker, anchor = target.partition("#")
+        resolved = Path(os.path.normpath(str(Path(origin).parent / path))).as_posix() if path else origin
+        if not (graph.root / resolved).exists():
+            # A quoted comparison/example may mention an unavailable old source.
+            # Keep that fact visible without manufacturing a broken current link.
+            tick = chr(96)
+            return label + " (source reference: " + tick + target + tick + ")"
+        return "[" + label + "](" + resolved + ("#" + anchor if marker else "") + ")"
+    masked = re.sub(r"\[([^\]]+)\]\(([^)]+)\)", rebase, masked)
+    for index, text in enumerate(protected):
+        masked = masked.replace("\x00" + str(index) + "\x00", text)
+    return masked
 
 
 def _link(label: str, target: str) -> str:
@@ -298,7 +334,7 @@ def render_dependency_report(data: dict, graph) -> str:
                 state = _obligation_state(record["state"]) if node["kind"] == "gap" else record["state"]
                 kind = node.get("gap_kind", "mathematical") if node["kind"] == "gap" else node["kind"]
                 lines.append("| " + _cell(node_id) + " | " + kind + " | " + state + " | "
-                             + record["dependency_coverage"] + " | " + _cell(record["scope"])
+                             + record["dependency_coverage"] + " | " + _cell(_scope_text(record, node, graph))
                              + " | " + _cell(_blocker_text(record)) + " |")
             lines += [""]
         lines += _mermaid(topic, graph, evaluated)
@@ -358,7 +394,7 @@ def render_scope_report(data: dict, graph) -> str:
                                        for source in node.get("sources", []))
                 references = references or ("see incoming proof routes" if graph.incoming[node_id] else "no pinned source")
                 lines += ["| " + _cell(node_id) + " | " + node["kind"] + " | " + record["state"]
-                          + " / " + record["dependency_coverage"] + " | " + _cell(record["scope"])
+                          + " / " + record["dependency_coverage"] + " | " + _cell(_scope_text(record, node, graph))
                           + " | " + references + " |"]
             lines += [""]
         if gaps:
@@ -368,7 +404,7 @@ def render_scope_report(data: dict, graph) -> str:
                     record = evaluated[node_id]
                     kind = graph.nodes[node_id].get("gap_kind", "mathematical")
                     lines += ["- **" + node_id + "** (" + kind + "; " + _obligation_state(record["state"])
-                              + "): " + record["scope"]]
+                              + "): " + _scope_text(record, graph.nodes[node_id], graph)]
             lines += [""]
         if topic.get("open_questions"):
             lines += ["Tracked obligations from the catalogue:", ""]

@@ -60,6 +60,30 @@ def authored_external_links(graph):
     return found
 
 
+
+def own_publication_urls(repository):
+    """Own public identifiers remain authoritative in paper metadata."""
+    import json
+    urls = set()
+    for pattern in ("results/*/metadata.json", "results/*/published/metadata.json"):
+        for path in repository.glob(pattern):
+            meta = json.loads(path.read_text())
+            pending = [meta]
+            while pending:
+                value = pending.pop()
+                if isinstance(value, dict):
+                    for key, item in value.items():
+                        if key == "doi" and isinstance(item, str) and item.startswith("10."):
+                            urls.add(normalized_url("https://doi.org/" + item))
+                        elif key in {"zenodo", "hexagon", "publication_url"} and isinstance(item, str) and item.startswith(("http://", "https://")):
+                            urls.add(normalized_url(item))
+                        elif isinstance(item, (dict, list)):
+                            pending.append(item)
+                elif isinstance(value, list):
+                    pending.extend(value)
+    return urls
+
+
 def reference_state(data, graph, paths=None):
     """Check identity, current retained pins and complete explicit bibitem coverage."""
     from dependency_coverage import inventory_paths
@@ -106,6 +130,7 @@ def reference_state(data, graph, paths=None):
     for value, key in sorted(wanted - accounted):
         errors.append("unmapped bibliography item: " + value + " :: " + key)
     known_urls = {normalized_url(url) for paper in papers for url in paper.get("urls", [])}
+    known_urls.update(own_publication_urls(graph.repository))
     for value, url in sorted(authored_external_links(graph)):
         if url not in known_urls:
             errors.append("unmapped external URL: " + value + " :: " + url)

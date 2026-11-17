@@ -11,7 +11,7 @@
   },
   "checker": {
     "path": "research/foundations/scripts/verify_two_pair_image_even_primitive.py",
-    "sha256": "5a9910cfa7b7ea418866e7018513dd573d5738eb2f29fb5ccfbc5c2e685646cd"
+    "sha256": "33f6363f513a1af8f4599b3282a93e3a6dc336a0070e5b16b8a3cf4003dcbf19"
   },
   "assurance": {
     "internal_replay": true,
@@ -22,6 +22,7 @@
   "coverage": {
     "original_four_variable": "k=0,1,2,3; m=1,2,3",
     "sphere_and_binomial_constant_term": "k=0,1,2,3; m=1,...,8",
+    "integral_product_formula": "k=0,1,2,3; m=1,...,8; J(1)=2^m*m!/product(k*m+2*j+1,j=0,...,m)",
     "factor_multiplicities_and_R_zero_specialization": "k=0,1,2,3"
   },
   "original_four_variable_checks": [

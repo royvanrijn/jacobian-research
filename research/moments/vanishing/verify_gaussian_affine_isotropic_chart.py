@@ -992,6 +992,270 @@ def tilted_nullsource_zero_controls():
     }
 
 
+def simple_zero_source_kernel_controls():
+    """Actual source homotopy, Gysin image and rank-one Gaussian period."""
+    z, w, y, t, s, a = sp.symbols("z w y t s a")
+    F = sp.Function("F")(z, w, y)
+    A = sp.Function("A")(z, y)
+    Q = sp.Function("Q")(z, y)
+    exponential = sp.exp(s*t*z*F+t*Q)
+    jacobian_s = 1-s*t*sp.diff(F, w)
+    left = sp.diff(jacobian_s*A*exponential, s)
+    primitive = t*F*A*exponential
+    right = -sp.diff(primitive, w)+z*primitive
+    zero(left-right)
+
+    L, H, C, U, K = (sp.Function(name)(z)
+                     for name in ("L", "H", "C", "U", "K"))
+    ell, h, c = z*L, z*H, z*C
+    R = 2*L*w+H+C*y
+    jacobian = 1-t*R
+    P = ell*w**2+w*(h+c*y)+a*y**2+U*y+K
+    phase = -z*w-y**2/2+t*P
+    zero(sp.diff(phase, w)+z*jacobian)
+    # This is the coefficient of the logarithmic Gysin differential.
+    zero(-sp.diff(phase, w)/z-jacobian)
+    zero(phase.subs(z, 0)-(-y**2/2+t*(a*y**2+U.subs(z, 0)*y+K.subs(z, 0))))
+
+    d = 1-2*a*t
+    precision = sp.Matrix([[-2*t*ell, -t*c], [-t*c, d]])
+    determinant = precision.det()
+    zero(sp.diff(determinant, z).subs(z, 0)+2*t*d*L.subs(z, 0))
+    # The determinant's zero at the origin is simple over C(t) for L(0)!=0.
+    zero(determinant/z-(-2*t*L*d-t**2*z*C**2))
+
+    u0, k0 = sp.symbols("u0 k0")
+    exponent = t*k0+t**2*u0**2/(2*d)
+    normalized_period = sp.exp(exponent)/sp.sqrt(d)
+    gaussian_connection = a/d+a*t**2*u0**2/d**2+t*u0**2/d+k0
+    zero(sp.diff(normalized_period, t)/normalized_period-gaussian_connection)
+    zero(sp.diff(exponent, t).subs(t, 0)-k0)
+    zero(sp.diff(exponent, t, 2).subs(t, 0)-u0**2)
+
+    return {
+        "status": "passed",
+        "symbolic": [
+            "all-W-free-marker homotopy derivative identity",
+            "S_W=-z*Jker and logarithmic Gysin coefficient",
+            "restricted origin Gaussian phase",
+            "simple determinant zero at the origin",
+            "Gaussian kernel period logarithmic derivative",
+            "constant-exponent conditions k0=0 and u0^2=0",
+        ],
+        "scope": "Exact formal identities; no moment-prefix sampling.",
+    }
+
+
+def full_residual_inverse_kernel_controls():
+    """Original Wick source versus the exact Lagrange-residue inverse kernel.
+
+    The selected-sheet and uniform contour argument are written proofs;
+    these are exact algebraic controls with the bounds retained below.
+    """
+    z,w,y,t,Z,a=sp.symbols("z w y t Z a")
+
+
+    def zero(expr):
+        assert sp.cancel(sp.together(expr))==0,expr
+
+
+    def wick(expr):
+        answer=0
+        for (iz,iw,iy),coeff in sp.Poly(sp.expand(expr),z,w,y).terms():
+            if iz==iw and iy%2==0:
+                answer+=coeff*sp.factorial(iz)*sp.factorial2(iy-1)
+        return sp.expand(answer)
+
+
+    def direct_coefficients(phase,order):
+        if not (phase.free_symbols-{z,w,y}):
+            base={powers:Fraction(int(value.p),int(value.q))
+                  for powers,value in sp.Poly(sp.expand(phase),z,w,y).terms()}
+            power={(0,0,0):Fraction(1)}
+            coefficients=[]
+            for n in range(order+1):
+                if n:
+                    updated={}
+                    for left,lvalue in power.items():
+                        for right,rvalue in base.items():
+                            powers=tuple(left[i]+right[i] for i in range(3))
+                            updated[powers]=updated.get(powers,Fraction(0))+lvalue*rvalue
+                    power={powers:value for powers,value in updated.items() if value}
+                result=Fraction(0)
+                for (iz,iw,iy),value in power.items():
+                    if iz==iw and iy%2==0:
+                        dfac=math.prod(range(1,iy,2))
+                        result+=value*math.factorial(iz)*dfac
+                result/=math.factorial(n)
+                coefficients.append(sp.Rational(result.numerator,result.denominator))
+            return coefficients
+        power=sp.Integer(1)
+        coefficients=[]
+        for n in range(order+1):
+            if n:
+                power=sp.expand(power*phase)
+            coefficients.append(wick(power)/math.factorial(n))
+        return coefficients
+
+
+    def phase_for(c,u,k,aval):
+        return (aval*y*y+(c*w+u)*y+z*c*c*w*w
+                +(2*aval*z-sp.Rational(1,2)+2*z*c*u)*w+k)
+
+
+    def lagrange_coefficients(c,u,k,aval,nu,order,M=sp.Integer(1)):
+        # Exact truncated t-ring arithmetic avoids rational-series swelling.
+        size=order+1
+        one=[sp.Integer(1)]+[sp.Integer(0)]*order
+        def multiply(left,right):
+            return [sp.expand(sum(left[i]*right[n-i] for i in range(n+1)))
+                    for n in range(size)]
+        def shifted(values,power,scale=1):
+            return [sp.Integer(0) if n<power else sp.expand(scale*values[n-power])
+                    for n in range(size)]
+        def scalar(values,scale):
+            return [sp.expand(scale*value) for value in values]
+        def polynomial(poly,offset=0):
+            return [sp.expand(poly).coeff(z,n+offset)*Z**(n+offset)
+                    for n in range(size)]
+        def inverse(values):
+            assert values[0]==1
+            answer=[sp.Integer(1)]+[sp.Integer(0)]*order
+            for n in range(1,size):
+                answer[n]=sp.expand(-sum(values[i]*answer[n-i] for i in range(1,n+1)))
+            return answer
+        def exponential(values):
+            assert values[0]==0
+            answer=[sp.Integer(1)]+[sp.Integer(0)]*order
+            for n in range(1,size):
+                answer[n]=sp.expand(sum(i*values[i]*answer[n-i] for i in range(1,n+1))/n)
+            return answer
+        dinv=[(2*aval)**n for n in range(size)]
+        ct,ut,kt=polynomial(c),polynomial(u),polynomial(k)
+        cbar=polynomial(c,nu)
+        correction=shifted(multiply(multiply(ct,ut),dinv),1,-2)
+        f=[sp.expand(one[n]+correction[n]) for n in range(size)]
+        finv=inverse(f)
+        h=scalar(multiply(multiply(cbar,cbar),multiply(multiply(dinv,dinv),multiply(finv,finv))),2)
+        exponent1=shifted(kt,1)
+        exponent2=shifted(multiply(multiply(ut,ut),dinv),2,sp.Rational(1,2))
+        exponent=[sp.expand(exponent1[n]+exponent2[n]) for n in range(size)]
+        amplitude=multiply(polynomial(M),multiply(exponential(exponent),finv))
+        result=[sp.Integer(0) for _ in range(order+1)]
+        hpower=one
+        for j in range(order//(2*nu)+1):
+            budget=order-2*nu*j
+            coefficients=multiply(amplitude,hpower)
+            term=sum(coefficients[r]*t**r for r in range(budget+1))
+            # Evaluate the finite derivative at Z0 by its monomials. This avoids
+            # a large intermediate rational expression in (1-2at)^-1.
+            for (r,m),coefficient in sp.Poly(term,t,Z).terms():
+                if m<j:
+                    continue
+                first=2*nu*j+r
+                base=(coefficient*sp.binomial(m,j)*(-sp.Rational(1,2))**(m-j)
+                      *sp.factorial2(2*j-1))
+                exponent=m-j+sp.Rational(3,2)
+                for ell in range(order-first+1):
+                    result[first+ell]+=(base*(2*aval)**ell
+                                        *sp.rf(exponent,ell)/math.factorial(ell))
+            hpower=multiply(hpower,h)
+        return [sp.expand(value) for value in result]
+
+
+    def checks():
+        cval,uval=sp.symbols("c u")
+        d=1-2*a*t
+        L=d*z+t/2
+        f=1-2*t*cval*uval/d
+        A=t*z*cval*cval+t*t*cval*cval/(2*d)
+        B=2*a*t*z-t/2+2*t*z*cval*uval+t*t*cval*uval/d
+        zero(A-t*cval*cval*L/d)
+        zero(z-B-L*f)
+        # Compare every rational residue summand before and after cancellation.
+        for j in range(6):
+            H=2*t*cval*cval/(d*d*f*f)
+            left=sp.factorial(2*j)/sp.factorial(j)*A**j/(z-B)**(2*j+1)
+            right=(sp.factorial2(2*j-1)/d/f*H**j
+                   /(z+t/(2*d))**(j+1))
+            zero(left-right)
+
+        u0,k0,k1=sp.symbols("u0 k0 k1")
+        c=z*(2+z)
+        u=sp.Poly(u0,z).as_expr()
+        k=k0+k1*z
+        actual=direct_coefficients(phase_for(c,u,k,a),4)
+        formula=lagrange_coefficients(c,u,k,a,1,4)
+        assert all(sp.expand(left-right)==0 for left,right in zip(actual,formula))
+        zero(actual[1]-3*a-k0)
+
+        cases=[
+            (1,z*(2+z),1+z,-1+z*z,sp.Rational(1,3)),
+            (2,z*z*(1-z),2-z*z,z+z**3,-sp.Rational(1,2)),
+            (3,z**3*(1+2*z),1+z,-6+z,sp.Integer(2)),
+        ]
+        for nu,c,u,k,aval in cases:
+            actual=direct_coefficients(phase_for(c,u,k,aval),8)
+            formula=lagrange_coefficients(c,u,k,aval,nu,8)
+            assert all(sp.expand(left-right)==0 for left,right in zip(actual,formula))
+
+        # General C example: zeta=z/(1+z), z=zeta/(1-zeta),
+        # gamma=zeta/(1-zeta), M=1/(1-zeta). The first moment detects M.
+        c=z*(1+z)
+        C=1+z
+        u=1+z
+        k=z+z*z
+        aval=sp.Rational(1,3)
+        ell=z**3*(1+z)
+        h=2*aval*z-(1+z)/2+2*z*z*u
+        full=aval*y*y+(c*w+u)*y+ell*w*w+h*w+k
+        actual=direct_coefficients(full,4)
+        inverse_z=z/(1-z)
+        gamma=sp.series(inverse_z,z,0,6).removeO()
+        new_u=sp.series(u.subs(z,inverse_z),z,0,6).removeO()
+        new_k=sp.series(k.subs(z,inverse_z),z,0,6).removeO()
+        multiplier=sp.series(1/(1-z),z,0,6).removeO()
+        formula=lagrange_coefficients(gamma,new_u,new_k,aval,1,4,multiplier)
+        assert all(sp.expand(left-right)==0 for left,right in zip(actual,formula))
+        zero(actual[1]-sp.Rational(1,2))
+
+        # Unperturbed branchpoint and the coefficient-ratio asymptotics.
+        for nu in range(1,6):
+            gamma=sp.symbols("gamma",nonzero=True)
+            critical_z=-sp.Rational(nu,2*nu-1)
+            inverse=(Z+sp.Rational(1,2))/(2*gamma*gamma*Z**(2*nu))
+            beta=sp.Rational((2*nu-1)**(2*nu-1),4*nu**(2*nu))
+            zero(sp.diff(inverse,Z).subs(Z,critical_z))
+            assert sp.diff(inverse,Z,2).subs(Z,critical_z)!=0
+            zero(inverse.subs(Z,critical_z)+beta/(gamma*gamma))
+            p=sp.symbols("p",positive=True,integer=True)
+            ratio=(sp.Rational(1,2)**(2*(nu-1))
+                   *sp.prod(2*nu*p-index for index in range(2*nu))
+                   /(p*sp.prod((2*nu-1)*p-index for index in range(2*nu-1))))
+            q=sp.symbols("q")
+            reciprocal=sp.cancel(beta*ratio.subs(p,1/q))
+            zero(reciprocal.subs(q,0)-1)
+            zero(sp.diff(reciprocal,q).subs(q,0)+sp.Rational(1,2))
+
+        # nu=0 is an intentional negative control: the constant-c example is pure.
+        constant_phase=z*w*w+w*y-w/2
+        assert all(coeff==0 for coeff in direct_coefficients(constant_phase,8)[1:])
+        return {
+            "status":"passed",
+            "actual_seed":"finite Wick residue identity and Lagrange reduction",
+            "symbolic_control":{"c":"Z(2+Z)","u":"u0","k":"k0+k1 Z","a":"symbolic","orders":[0,4]},
+            "exact_case_controls":{"nu":[1,2,3],"orders":[0,8]},
+            "general_C_control":{"c":"Z(1+Z)","C":"1+Z","ell":"Z^3(1+Z)","u":"1+Z","a":"1/3","orders":[0,4],"M":"1/(1-zeta)"},
+            "cancellation_terms_j":[0,5],
+            "critical_geometry_and_ratio_nu":[1,5],
+            "negative_control":"nu=0,c=1,a=u=k=0 is pure by strict negative angular weights",
+            "scope":"Exact bounded source and critical-geometry controls. The full selected-sheet contour argument is proved in the canonical H21 note and is not certified by these finite controls.",
+            "external_review":False,
+            "formal_verification":False,
+        }
+    return checks()
+
+
 def checks():
     c, d = sp.symbols("c d", nonzero=True)
     ell = sp.Function("ell")(Z)
@@ -1158,6 +1422,8 @@ def checks():
     barrier_result = common_root_cubic_barrier()
     varying_result = varying_quadratic_controls()
     shared_result = shared_quadratic_source_controls()
+    simple_zero_result = simple_zero_source_kernel_controls()
+    full_r0_result = full_residual_inverse_kernel_controls()
     divisible_result = divisible_mixed_source_controls()
     sharp_range_result = common_root_sharp_range_controls()
     moving_nullsource_result = moving_nullsource_zero_controls()
@@ -1290,6 +1556,8 @@ def checks():
         "method_barriers": {"common_root_cubic_chart": barrier_result},
         "symbolic_identity_controls": {"varying_quadratic_source": varying_result,
                                        "shared_quadratic_source": shared_result,
+                                       "simple_zero_source_kernel": simple_zero_result,
+                                       "full_residual_inverse_kernel": full_r0_result,
                                        "regular_h_over_c": divisible_result,
                                        "common_root_sharp_range": sharp_range_result,
                                        "moving_nullsource_zero": moving_nullsource_result,

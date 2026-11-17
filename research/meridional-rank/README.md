@@ -8,7 +8,7 @@ Knot-group representations, branched-cover bounds and explicit sharp families.
 
 | Current result | Evidence / publication | Graph status | Main source |
 |---|---|---|---|
-| Twenty named equalities and established-family scope | Internal result | proved | [Source](representations/ORIGINAL_SIXTEEN_KNOWN_GRAPH_COVER_FAMILY.tex) |
+| Twenty named equalities and established-family scope | Internal result | open | [Source](representations/ORIGINAL_SIXTEEN_KNOWN_GRAPH_COVER_FAMILY.tex) |
 | Infinite periodic families and connected sums | Internal result | open | [Source](representations/PERIODIC_TWIST_FAMILIES.tex) |
 | Representation and branched-cover lower bounds | Internal result | proved | [Source](representations/PROOF.tex) |
 

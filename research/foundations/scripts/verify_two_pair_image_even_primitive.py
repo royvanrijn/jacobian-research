@@ -17,7 +17,7 @@ import hashlib
 import json
 import platform
 import sys
-from math import comb, factorial
+from math import comb, factorial, prod
 from pathlib import Path
 
 if not __debug__:
@@ -159,7 +159,10 @@ def main() -> None:
             expected = marked_integral(k, m) if k*m % 2 == 0 else sp.S.Zero
             assert pure == coefficient_sum(k, m, False) == 0
             assert marked == coefficient_sum(k, m, True) == expected
-            assert marked_integral(k, m) > 0
+            integral = marked_integral(k, m)
+            product_value = sp.Rational(2**m * factorial(m),
+                                        prod(k*m + 2*j + 1 for j in range(m + 1)))
+            assert integral == product_value > 0
             if k == 1:
                 sphere_rows.append({"k": k, "m": m, "pure_angular_moment": str(pure),
                                     "marked_angular_moment": str(marked)})
@@ -186,6 +189,7 @@ def main() -> None:
                       "formal_verification": False, "external_review": False},
         "coverage": {"original_four_variable": "k=0,1,2,3; m=1,2,3",
                      "sphere_and_binomial_constant_term": "k=0,1,2,3; m=1,...,8",
+                     "integral_product_formula": "k=0,1,2,3; m=1,...,8; J(1)=2^m*m!/product(k*m+2*j+1,j=0,...,m)",
                      "factor_multiplicities_and_R_zero_specialization": "k=0,1,2,3"},
         "original_four_variable_checks": direct_rows,
         "degree_six_sphere_checks": sphere_rows,
