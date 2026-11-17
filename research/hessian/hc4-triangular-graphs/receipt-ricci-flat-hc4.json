@@ -43,5 +43,29 @@
   "registered_mathematical_checkers_replayed": [],
   "independent_replay": false,
   "formal_verification": false,
-  "external_review": false
+  "external_review": false,
+  "current_replay": {
+    "date": "2026-11-17",
+    "command": ".venv/bin/python research/hessian/hc4-triangular-graphs/verify_ricci_flat_hc4.py",
+    "working_directory": "repository root",
+    "exit_code": 0,
+    "outcome": "PASS",
+    "check_count": 24,
+    "accepted_mathematical_payload_matches_historical_receipt": true,
+    "scope": "Internal execution of the existing bounded controls with current source/input pins. The original receipt fields and hashes above remain historical. This does not certify universal proofs or upgrade independent replay, formal verification or external review.",
+    "removed_historical_metadata_checks": [
+      "sealed hessian/tang-hc4-audit/verify_structural.py",
+      "sealed hessian/hc4-triangular-graphs/verify_hessian_connection_pencil.py",
+      "sealed hessian/hc4-triangular-graphs/ITERATED_DEFICIT_TRANSPORT_AND_FINITE_CENTER_LABELS.md",
+      "sealed hessian/hc4-triangular-graphs/verify_iterated_deficit.py",
+      "sealed hessian/hc4-triangular-graphs/CANONICAL_ENERGY_INTEGRALITY_AND_POWER_TRACES.md",
+      "sealed hessian/hc4-triangular-graphs/verify_canonical_energy_traces.py",
+      "sealed hessian/hc4-triangular-graphs/sources/hessian-connection-pencil-context.json",
+      "sealed hessian/hc4-triangular-graphs/receipt-hessian-connection-pencil.json"
+    ],
+    "algebraic_controls": 21,
+    "checker_sha256": "510d76f7d0b7a6ec3872fe0c5d5d68eebf5e32c66a3710d0d802dc80ffaa96e6",
+    "proof_sha256": "30d603e57091ff95d6d5586efe0f9213f8ef0633cb05e92f8f00e25711b2e528",
+    "context_sha256": "f6ad548c85dd43c4bddf5b09e032a3efa3f6926f8fc244e5b9269743b9748a3a"
+  }
 }

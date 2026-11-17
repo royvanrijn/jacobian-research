@@ -116,10 +116,12 @@
   "rejected_corruptions": 4,
   "scope": "Independent finite diagram/monodromy/lifted-word/Smith and torus-boundary inputs. The all-knots additivity theorem requires the written normal-generation, lifted-sphere topology and imported Grushko theorem; finite controls do not prove those uniform statements. General meridional additivity, worldwide novelty and full MRC remain open.",
   "input_sha256": {
+    "verify_cover_sums.py": "6dbff886fac38b199ca3f585df65405c0c6752207dc3e167c17f009a745f24f1",
     "cover_sum_inputs.json": "3c3482e3f101061d3aefadb0310073f51432a1ec4a7826aa6732529f6e7ca194",
     "cover_sum_results.json": "d0ce043201ee4155ad27b44dd604a1cd65181513abf17e8242eabb9e1a69f388",
-    "verify_cover_sums.py": "6dbff886fac38b199ca3f585df65405c0c6752207dc3e167c17f009a745f24f1",
-    "verify_integer_lifts.py": "4ef7d33a3ec593f8d43d0c897e14d22e70323657d380ee9c44b657cc636ab309",
-    "joint_a5_panel.json": "2a0ea8edf355067f05d1de90103edfcb7bf0508612031009e0b3eebdac87c906"
+    "joint_a5_panel.json": "2a0ea8edf355067f05d1de90103edfcb7bf0508612031009e0b3eebdac87c906",
+    "verify_integer_lifts.py": "5c76a33170d39cbfd6bf47acbd5d5b791c009a58d85fbf7c6d5e872e31175091",
+    "integer_lifts.py": "8f6d8280001a9d76897b2db69c12244b964fdc58abfccd41b415b5ac90d02c31",
+    "SIMPLE_COVER_RANK_ADDITIVITY.tex": "86ddd66f291a002841ce38dad571235d798aee4f7ee62b6cb0b57e9367cd906a"
   }
 }

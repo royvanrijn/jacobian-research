@@ -6,18 +6,27 @@
     {
       "path": "foundations/verified/UNIVERSAL_RELATIVE_KELLER_MAP.md",
       "locator": "UAM1 normalized cubic and generic degree3.",
-      "sha256": "4cced623c100a90859996e5aea69219a241c56c20ca087f1a9d4caa50209c1c5"
+      "sha256": "9d5811e16428bb1c1da5f766e6b537cae19ae76b29e7ac7acf5320b7211f34c5"
     },
     {
       "path": "jacobian/universal-keller-compression/verify.py",
       "locator": "Reuse only pure source_map by AST for exact controls.",
-      "sha256": "a8d9b280e09868e1b1abed24443541dc29daa94744e467517a5b3d6da85457a5"
+      "sha256": "9bc51cfb0e3cd93923d9ca6c4b2beae86453119b4828b86cecf33dd32ca62516"
     },
     {
       "path": "jacobian/universal-keller-receiver/PROOF.md",
       "locator": "UARECV1 line-decorated bundle receiver and UAINERT1 inertia boundary.",
-      "sha256": "8790916cd2c5e3f0458674dc50a37af18f1c1322eb2720c2071a819283cf639f"
+      "sha256": "a01f90deafeca47c4b47f5ca26e63910b2e29957e3d5b14e0e7901b429ded960"
     }
   ],
-  "external_sources": []
+  "external_sources": [],
+  "current_source_review": {
+    "date": "2026-11-17",
+    "scope": "Current imported-source byte identity after repository organization. Organization diffs were inspected; this metadata check does not replay mathematical arguments or upgrade independent replay, formal verification or external review.",
+    "updated_paths": [
+      "foundations/verified/UNIVERSAL_RELATIVE_KELLER_MAP.md",
+      "jacobian/universal-keller-compression/verify.py",
+      "jacobian/universal-keller-receiver/PROOF.md"
+    ]
+  }
 }

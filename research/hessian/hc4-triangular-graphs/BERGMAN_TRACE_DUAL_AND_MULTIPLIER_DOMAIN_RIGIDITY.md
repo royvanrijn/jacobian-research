@@ -283,4 +283,4 @@ domains for its generators. Neither improvement is proved automatic. A
 successful proof must use whole-plane KELLER structure beyond Runge geometry,
 finite volume, constant Jacobian on a punctured source, or bounded trace.
 The ordinary trace-pairing/full marked-energy implication and unrestricted
-HC4/JC2 remain OPEN. The user's full goal remains active.
+HC4/JC2 remain OPEN.

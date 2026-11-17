@@ -8,10 +8,13 @@ additional finite actual-jet certificate makes the **decision** independent
 of completeness of the CAS integration relations. It does not complete the
 broader Gaussian classification or coefficient-family work.
 
-The [producer](gaussian_source_hom_producer.py),
-[controls](verify_gaussian_source_hom_producer.py) and
-[receipt](gaussian_source_hom_producer_verification.json) bind the current
-implementation and its checked source examples.
+The [producer](gaussian_source_hom_producer.py) and
+[controls](verify_gaussian_source_hom_producer.py) provide the implementation
+and literal finite example inputs. The
+[receipt](gaussian_source_hom_producer_verification.json) records an earlier
+successful internal run. Its generated example bundles are not distributed;
+the control script's `--generate` mode creates them, and its default replay
+mode requires those generated files first.
 
 ## 1. Exact source and the direction of the decision
 
@@ -271,8 +274,12 @@ are exact rational expressions in a. The minimal polynomial must be
 irreducible over QQ. An arbitrary chosen complex root realizes an
 isomorphic coefficient field; no numerical root arithmetic is used.
 
-    .venv/bin/python gaussian_source_hom_producer.py input.json result.json
-    .venv/bin/python gaussian_source_hom_producer.py input.json result.json --timeout 0
+From the repository root, supply `input.json` in the format above; it is
+a caller-provided file, and `result.json` is generated. For example,
+`{"dimension":1,"phase_terms":[[[4],"1"]]}` specifies the quartic phase.
+
+    .venv/bin/python research/moments/vanishing/gaussian_source_hom_producer.py input.json result.json
+    .venv/bin/python research/moments/vanishing/gaussian_source_hom_producer.py input.json result.json --timeout 0
 
 The default stage cap is30seconds; a timeout returns UNKNOWN. Zero removes
 the cap. There is no dimension, phase-degree or ansatz-degree cutoff and

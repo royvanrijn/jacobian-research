@@ -12,8 +12,15 @@
     },
     {
       "path": "jacobian/universal-keller-plane-completion/PROOF.md",
-      "sha256": "d1882a55aa0f5182dc97533d7100ee6add71f20b9a6216423b73579bd5ff9fb8"
+      "sha256": "3705021d187f6d0ca2937c642883fd3ce482b56d566e46e1d63b5e1fe9ccd152"
     }
   ],
-  "external_sources": []
+  "external_sources": [],
+  "current_source_review": {
+    "date": "2026-11-17",
+    "scope": "Current imported-source byte identity after repository organization. Organization diffs were inspected; this metadata check does not replay mathematical arguments or upgrade independent replay, formal verification or external review.",
+    "updated_paths": [
+      "jacobian/universal-keller-plane-completion/PROOF.md"
+    ]
+  }
 }

@@ -8,9 +8,9 @@ Start with the repository [agent instructions](../AGENTS.md). This guide supplie
 
 1. State exactly what is proved, under which hypotheses, and where the proof is. Keep conjectures, conditional results, experiments, and proved statements distinguishable.
 2. Check the difficult mathematical steps and every dependency. Fluent prose, agreement between agents, a successful build, and a passing checker each provide limited evidence.
-3. Read the original source behind each substantive citation. Verify both its identity and its support for the statement being cited.
-4. Write a paper around its contribution and argument. Keep ongoing research, development history, repository paths, task names, and agent instructions out of manuscript prose. State necessary mathematical limitations directly.
-5. Give the reader definitions, examples, a proof strategy, and enough detail to check the hard step. Remove repetition and routine detail that conceal that step.
+3. Verify citation identity and support. Attribute authoritative secondary sources accurately; inspect the actual statement and justification of essential imported theorems.
+4. Write around the contribution and argument. Keep research updates, discovery chronology, repository paths, task names, and agent instructions out of manuscript prose. Explain failed natural approaches when they clarify an obstruction; state mathematical limitations directly.
+5. Explain the central idea before technical machinery and give enough detail to check the hard step. Every definition, lemma, and example must earn its place; remove repetition and routine detail that conceal the argument.
 6. Maintain one current account of a result and its evidence. Preserve necessary proof sources and exact replay inputs; use Git for superseded development history.
 7. Preserve deposited bytes and checksums. Keep revisions separate, and describe publication, mathematical review, computation, and formalization with their actual scopes.
 8. End with evidence: what changed, which checks ran, their outcomes, and any remaining obligations. Never claim a check, independent review, or publication that did not happen.
@@ -34,9 +34,9 @@ Start with the repository [agent instructions](../AGENTS.md). This guide supplie
 
 **Make the evidence reproducible.** Keep exact inputs and a small checker where computation matters. Explain what the computation certifies and how it connects to the proof. Pin the relevant environment and distinguish internal execution from independent replay.
 
-**Build the argument for a reader.** Choose the central contribution, identify the closest prior result, and plan the shortest clear route from definitions to the conclusion. Draft a proof overview and a representative example. Then write and revise the article using [the paper guide](PAPERS.md).
+**Build the argument for a reader.** Choose the contribution and compare exact statements with the closest theorem, testing specializations and known reductions before claiming novelty. Explain the central idea and a representative example before machinery. Write and revise using [the paper guide](PAPERS.md).
 
-**Review in separate passes.** Audit mathematical dependencies, source attribution, exposition, and the rendered document. A fresh agent can help find errors; record that as internal review. Ask a reader unfamiliar with the development to explain the contribution and locate the main step. Record any external review only when it occurs.
+**Review in separate passes.** Audit mathematical dependencies, source attribution, exposition, computation where applicable, and the rendered document. Apply [the PDF-only blind-reader procedure](PAPERS.md#review-the-actual-article), recording supplied context, findings, and revisions. An agent with workspace context does not qualify; isolated AI review remains internal. Record external human review only when it occurs.
 
 **Freeze the appropriate edition.** Use [the checklist](CHECKLIST.md), build the exact sources, inspect the PDF, and align the abstract and metadata with the final theorem. A draft may be ready for mathematical review while still awaiting that review. Submission and public deposit follow the user's authorization and the target's current requirements.
 

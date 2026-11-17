@@ -227,13 +227,40 @@ prime-power-monomial family. If one coefficient is zero its moments are
 directly all nonzero; otherwise factor out $A^n$ and use $x=B/A$.
 \end{theorem}
 
-By the checked independent-linear adjunction theorem, adding $t$ new
-nonzero linear variable terms to a two-term member gives a window of
-length $t+2$, equal to its factorial monomial count. The coefficients may
-be arbitrary complex numbers. This produces all-dimensional SFC classes
-with one prime-power term and otherwise constant and independent linear
-terms; no powers of this entire inhomogeneous phase are inferred to
-have their own monomial-count windows.
+The independent-variable construction is Rocks's Theorem 3.12 in the
+pinned \href{sources/rocks-2015-author-preprint.pdf}{2015 author preprint}.
+The required argument is reproduced here.
+
+\begin{lemma}[Independent linear adjunction]\label{lem:adjunction}
+Suppose a nonzero phase $F$ has a window bound $B$: every $B$ consecutive
+positive factorial moments contain a nonzero value. For a new independent
+exponential variable $U$ and $\lambda\ne0$, the phase
+$G=F+\lambda U$ has window bound $B+1$. Its factorial monomial count is
+one greater than that of $F$, so this construction preserves SFC.
+\end{lemma}
+\begin{proof}
+Set $f_k=\mathbb E[F^k]/k!$ and $g_k=\mathbb E[G^k]/k!$.
+Independence and $\mathbb E[U^j]=j!$ give
+\[
+ g_k=\sum_{j=0}^k\lambda^j f_{k-j},\qquad
+ f_k=g_k-\lambda g_{k-1}\quad(k\ge1).
+\]
+A length-$B+1$ zero block for $g$ would therefore give a length-$B$
+zero block for $f$, contradicting its window bound. Normalizing by the
+nonzero factorials does not change which moments vanish. The new term
+uses an independent variable and has nonzero coefficient, so it adds
+exactly one monomial to the support.
+\end{proof}
+
+Applying Lemma~\ref{lem:adjunction} repeatedly, adding $t$ new nonzero
+independent linear terms to a genuine two-term member ($AB\ne0$) gives
+a window of length $t+2$, equal to its factorial monomial count. If one
+base coefficient is zero, the nonzero monomial has window one and the
+same construction gives the support-count window $t+1$.
+The coefficients may be arbitrary complex numbers. This produces
+all-dimensional SFC classes with one prime-power term and otherwise
+constant and independent linear terms; no powers of this entire
+inhomogeneous phase are inferred to have their own monomial-count windows.
 
 \section{Low-degree marked moments}
 Write a rational marker in divided powers as
@@ -332,9 +359,11 @@ implementation; all $n,p,a$ quantifiers use the written proof above.
 Finite Groebner controls also check ordinary quotient lengths, all degree-
 $2n$ monomial containments and a surviving degree-$2n-1$ coefficient.
 
-For a non-prime-power exponent such as $d=6$, our coefficient-unit
-argument has not supplied an analogous theorem. General two-term SFC,
-unrestricted SFC, higher-dimensional FC outside the closed classes,
-remaining EIT V/VI audits and the complete primary bibliography remain
-open. The full original goal stays active.
+For a non-prime-power exponent such as $d=6$, this coefficient-unit
+argument does not supply the theorem. The separate
+\href{ALL_UNIVARIATE_TWO_TERM_SFC.tex}{all-index theorem} treats every
+ordinary constant-plus-power exponent. General both-nonconstant monomial
+pairs beyond the completed families, unrestricted SFC, higher-dimensional
+FC outside the closed classes, remaining EIT V/VI audits and the complete
+primary bibliography remain open.
 \end{document}

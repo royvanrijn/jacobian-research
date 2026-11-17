@@ -66,5 +66,32 @@
     "LITERATURE_AND_GAPS.md": "9892add43a17d8bbcd82d149e12c32191178812caaabd493b7d55858400e8cd4",
     "verify.py": "1795d486fb7ec844aaa5ac7627f67069a8add052969bef33ad6b44ebe7e95d70",
     "sources.json": "d80528a669f38f17a1cf7971dd7da00d8167f953bd8702686a168d400c11df57"
+  },
+  "current_replay": {
+    "date": "2026-11-17",
+    "command": ".venv/bin/python research/jacobian/universal-keller-intermediate-surfaces/verify.py",
+    "working_directory": "repository root",
+    "exit_code": 0,
+    "result": "pass",
+    "check_count": 46,
+    "python": "3.12.3",
+    "sympy": "1.14.0",
+    "current_input_sha256": {
+      "PROOF.md": "4b0bccee73b5af3e6fbe9b89cd76b61c40c5058e166226a023fa2cdc0c4cc47a",
+      "verify.py": "1ee2ea602b16a7f573259b2ae1f9e06015ff830710f272061d76166ea114034e",
+      "sources.json": "1bb5f07cd82f256a3391a56becb22db62104b1b63a8f51d16925302fccfe72cb"
+    },
+    "accepted_mathematical_payload_matches_historical_receipt": true,
+    "scope": "Internal execution of the existing bounded controls with current imported-source pins; historical fields above retain their original hashes and check list. This does not certify the universal proofs or upgrade independent replay, formal verification or external review.",
+    "removed_historical_metadata_checks": [
+      "retained local pin jacobian/universal-keller-native-orbits/PROOF.md",
+      "retained local pin jacobian/universal-keller-feedback-normal-form/PROOF.md",
+      "retained local pin hessian/hc4-triangular-graphs/CRITICAL_COORDINATE_JET.md",
+      "retained local pin hessian/hc4-triangular-graphs/sources/critical-jet-import.json",
+      "primary HTML pin sources/gwozdziewicz-line-v1.html",
+      "primary HTML pin sources/stacks-etale-02GH.html",
+      "primary HTML pin sources/stacks-sections-024T.html"
+    ],
+    "added_current_source_pin_checks": []
   }
 }

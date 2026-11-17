@@ -207,7 +207,8 @@
     "port_assembly_results.json": "cd5146f6906161012fee4b5249ce8165e19d4d21dc83ccd78f92e5cd93c331b6",
     "mutation_cover_results.json": "aaa7282c5b0de8478b03fb0d3e3913749b4f95398a4542d197f7d54456b11e8a",
     "joint_a5_results.json": "3952119118bcd127a0f6b786645b35ed79322972096715830c9ca6ba09349fcc",
-    "verify_double_transpositions.py": "43eaa8c10f8cb8e96d63f8ab01028aee853d592809c7e8eaa92f3ad283545702",
-    "parabolic_lifts.py": "18abf5886002d54f17b5ee8593f31fb1b339f66a36605b7ccec7863ff4648a27"
+    "verify_double_transpositions.py": "eb6ff0490c74553678ce9ef6790d081ebd2a3d53e2ab347de72854b4cce8e512",
+    "parabolic_lifts.py": "18abf5886002d54f17b5ee8593f31fb1b339f66a36605b7ccec7863ff4648a27",
+    "FOUR_PIECE_DOUBLE_COVERS_SHARP_FOUR.tex": "b0c18d9ae84716711e8dd57642545dabc54cd7ea98e8ca9896842641f5d400b8"
   }
 }

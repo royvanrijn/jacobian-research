@@ -9,7 +9,7 @@
   "status": "draft",
   "source": "main.tex",
   "pdf": "paper.pdf",
-  "build": "latexmk -pdf -interaction=nonstopmode -halt-on-error main.tex",
+  "build": "latexmk -pdf -jobname=paper -interaction=nonstopmode -halt-on-error main.tex",
   "verification": "The characteristic-zero polynomial-presentation theorem and abstract finite-etale corollary have a Lean development; broader supplied-presentation scope has a separate assurance boundary.",
   "next_steps": [
     "Review the manuscript against its formal theorem and external inputs.",

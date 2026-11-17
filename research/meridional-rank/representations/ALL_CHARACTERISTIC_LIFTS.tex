@@ -149,9 +149,11 @@ divisibility chain; it does not run the producer's Smith algorithm.
 The panel was frozen before the earlier binary search. It consists of
 the first sixteen source-order rows with diagram Wirtinger number five
 and no reported sharp finite Coxeter hit in the official BKM table
-\cite{bkm}. The workbook is pinned at commit
-{\small\texttt{74fe52e57de6f91988f63ac105cbc157534ad966}}; original bytes and
-source-row numbers are retained. No cases were replaced after testing.
+\cite{bkm}. The workbook was pinned at commit
+{\small\texttt{74fe52e57de6f91988f63ac105cbc157534ad966}}. Its original
+archive is in Git history; the selected Gauss codes, source-row numbers,
+explicit kernels and upper traces are retained in the compact certificates.
+No cases were replaced after testing.
 
 \begin{theorem}\label{thm:panel}
 For each knot diagram labelled by the following names in that table,
@@ -261,7 +263,7 @@ in Musick's Theorem 1; the entire 1985 proof has not been audited here.
 The F5 certificates give another direct verification of these known
 equalities, not a new knot-class theorem.
 
-\section{An unlimited-radical obstruction and a current uncertain panel}
+\section{An unlimited-radical obstruction and the retained panel}
 
 \begin{proposition}\label{prop:radical}
 Suppose a knot has a transitive affine representation on a binary vector
@@ -320,7 +322,9 @@ $k\le3$ and every nonzero alternating form has rank two. Proposition
 \ref{prop:radical} would then force the absent $S_3$ quotient. The
 earlier suggestion that higher-rank binary forms remain possible on
 this panel is withdrawn. Other quotient types and lower-bound methods
-remain possible; these exclusions do not resolve the targets' MRC status.
+remain possible. These exclusions alone do not resolve MRC; the targets
+are now settled by the graph-cover arguments in
+\path{ORIGINAL_SIXTEEN_KNOWN_GRAPH_COVER_FAMILY.tex}.
 
 We also froze these same sixteen targets with their oriented PD data
 from KnotInfo 2026.11.2 and tested positive transvections in
@@ -348,7 +352,7 @@ strategy. The retained receipt is
 
 \section{Verification and remaining gates}
 
-The new separate verifier checks all 512 lift matrices in the earlier
+The historical full-panel verifier checked all 512 lift matrices in the earlier
 panel by reverse affine point evaluation, replays integer elementary
 operations, and cross-checks dimensions by independent elimination in
 characteristics $2,3,5,7,11$. It enumerates projected permutation groups
@@ -356,11 +360,14 @@ and every normalized seed assignment independently. Smith controls
 cover all 625 two-by-two matrices with entries in $\{-2,-1,0,1,2\}$,
 using gcds of minors as a separate oracle. Both sixteen-case upper
 traces are checked. The earlier independent workbook-reader replay is
-retained. These are finite checks supporting the stated certificates,
-not a formal verification of the uniform proofs.
+recorded in Git history. The current compact sharp-five certificates and
+named-diagram audit retain their explicit positive witnesses;
+\path{verify_diagram_audit.py} checks those selected witnesses without the
+original workbook or the full 512-matrix campaign. These finite checks
+do not formally verify the uniform proofs.
 
-We also retained the October release's 243 matrix certificates and
-replayed all of them with a separate standard-library checker: column
+A historical audit retained the October release's 243 matrix certificates
+and replayed all of them with a separate standard-library checker: column
 rank elimination checks invertibility, rank-one differences, and zero
 common fixed space; direct multiplication checks the signed Wirtinger
 relations without matrix inversion; overstrand identifications check
@@ -371,15 +378,18 @@ packaged HT census. KnotInfo releases 2026.10.5 and 2026.11.2 each have
 exactly the same 536 thirteen-crossing $[3,4]$ entries as the author's
 243-plus-293 partition; all 243 published PD records agree literally
 with both snapshots. Original archive and CSV hashes and the selected
-source columns are retained. This checks those archived tables, not
+source columns remain in Git history, outside the current replay bundle.
+This historical audit checked those archived tables, not
 every subsequent live database update. The full paper remains unaudited
 and unrefereed; credit for these 243 cases remains with its author.
 
 The named-diagram and prior-family gates for the sixteen five-bridge
 cases are complete: all are known Montesinos cases. A no-hit in the
 finite Coxeter table was not evidence that MRC was previously open.
-The current thirteen-crossing panel requires a different lower-bound
-mechanism or a quotient outside the excluded symmetric root-lift route.
+The thirteen-crossing panel was later settled using nonabelian double-cover
+rank and graph-manifold models, rather than the excluded symmetric root-lift
+route. All sixteen belong to the existing BJW18 graph-cover MRC family, as
+proved in \path{ORIGINAL_SIXTEEN_KNOWN_GRAPH_COVER_FAMILY.tex}.
 The companion branched-cover proof identifies lift nullity as
 $r-1+\dim H_1(Y_\phi;F)$ and supplies a nonabelian cover-rank gate.
 Its separate $A_5$ core-colouring count gives no sharp certificate on

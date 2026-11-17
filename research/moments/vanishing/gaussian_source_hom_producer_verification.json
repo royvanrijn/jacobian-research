@@ -146,5 +146,14 @@
     "gaussian_source_hom_examples/quartic_coefficient_field/cas/source.sing": "c65dd2bd5c81e77d9e0178c9e41fde79ff1128414e09bb59c10bbe3c152743fd"
   },
   "scope": "finite controls of a general algorithm; no universal theorem inferred from these controls",
-  "assurance": "CAS integration completeness is not independently certified or needed for the decision: original IBP, actual origin jets, complete scalar indicial bounds and all-marker recurrence replayed exactly"
+  "assurance": "CAS integration completeness is not independently certified or needed for the decision: original IBP, actual origin jets, complete scalar indicial bounds and all-marker recurrence replayed exactly",
+  "record_scope": "Historical successful internal execution. The completed outcome, mathematical controls and original source/output hashes below describe that run; no new execution or hash refresh is recorded by this availability correction.",
+  "example_artifact_availability": {
+    "review_date": "2026-11-17",
+    "bundled_generated_example_files": [],
+    "historical_hash_map_scope": "The legacy retained_example_files_sha256 map identifies generated files from the historical run. It does not assert that every listed file is distributed in the current repository.",
+    "input_and_generation": "The finite example inputs are literal data in verify_gaussian_source_hom_producer.py. Its --generate mode creates the input/result/CAS bundles; its default replay mode requires those generated files first.",
+    "distribution_scope": "The six generated source/Hom example bundles are not distributed.",
+    "exact_byte_regeneration_claimed": false
+  }
 }

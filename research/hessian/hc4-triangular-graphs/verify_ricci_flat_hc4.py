@@ -1,4 +1,4 @@
-"""NEW MJ0 preregistration controls. Registered replay is forbidden."""
+"""Exact Ricci-flat subclass controls; universal claims use the written proof."""
 from pathlib import Path
 
 import tempfile as _check_tempfile

@@ -9,7 +9,7 @@
   "status": "draft",
   "source": "main.tex",
   "pdf": "paper.pdf",
-  "build": "latexmk -pdf -interaction=nonstopmode -halt-on-error main.tex",
+  "build": "latexmk -pdf -jobname=paper -interaction=nonstopmode -halt-on-error main.tex",
   "verification": "Written geometric arguments with an exact symbolic audit; these results are not part of the Lean formalization.",
   "next_steps": [
     "Review the geometric proof and exact symbolic audit.",

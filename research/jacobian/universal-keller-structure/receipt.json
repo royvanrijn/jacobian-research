@@ -248,5 +248,26 @@
     "LITERATURE_AND_GAPS.md": "41bf0be6c962810fe092e77cb07e34745158fb9800fa1217708eefc2fb02747f",
     "verify.py": "6f5e909a66f8b73e89fcb95075074328cce61941291e76e4f1c4e61c7f82c2e0",
     "sources.json": "1913d3d87ee7f019603e8dca732950570587afad4186021808fa1fb5f77fd0c5"
+  },
+  "current_replay": {
+    "date": "2026-11-17",
+    "command": ".venv/bin/python research/jacobian/universal-keller-structure/verify.py",
+    "working_directory": "repository root",
+    "exit_code": 0,
+    "result": "pass",
+    "check_count": 117,
+    "python": "3.12.3",
+    "sympy": "1.14.0",
+    "current_input_sha256": {
+      "PROOF.md": "1898b6c71619f81cca4d658409a5e804cee0fb5ad9a70bb0e40edf0a30197cb9",
+      "verify.py": "858127a137887a359058abfd9d401c2784ae3b20650b8e85b01f74c31829110a",
+      "sources.json": "e85ce5a87851fef1bdaf4ead9431b5d27b1f34a7b71408ec5beac94770bd82a7"
+    },
+    "accepted_mathematical_payload_matches_historical_receipt": true,
+    "scope": "Internal execution of the existing bounded controls with current imported-source pins; historical fields above retain their original hashes and check list. This does not certify the universal proofs or upgrade independent replay, formal verification or external review.",
+    "removed_historical_metadata_checks": [
+      "source pin jacobian/universal-keller-trace/PROOF.md"
+    ],
+    "added_current_source_pin_checks": []
   }
 }

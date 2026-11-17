@@ -77,5 +77,34 @@
     "LITERATURE_AND_GAPS.md": "bfef083b72aacf07fe373602238fe92bd0edf6601ebdfdaff0d7cbd415908525",
     "verify.py": "2b895db3ee648673cd863d38b8bd8352dd4fee8484ab7c262be9947b61a11a37",
     "sources.json": "cc2177e7cff9a6ec17ad725de08679fd39359d74681a1baa31e22f133f458103"
+  },
+  "current_replay": {
+    "date": "2026-11-17",
+    "command": ".venv/bin/python research/jacobian/universal-keller-ruling-descent/verify.py",
+    "working_directory": "repository root",
+    "exit_code": 0,
+    "result": "pass",
+    "check_count": 55,
+    "python": "3.12.3",
+    "sympy": "1.14.0",
+    "current_input_sha256": {
+      "PROOF.md": "ea568023eee4504709e4630aeb424d9d4ab0b34a81723c57bb1236776793526a",
+      "verify.py": "843cee4c7f5d4f5be7fbcb30db01d107b5c6d607b1280a9b9b97f46b8e84633e",
+      "sources.json": "0fc06c20ba3c63856843ebcf5d12864f99395c8d55f17a72e04292c322590c94"
+    },
+    "accepted_mathematical_payload_matches_historical_receipt": true,
+    "scope": "Internal execution of the existing bounded controls with current imported-source pins; historical fields above retain their original hashes and check list. This does not certify the universal proofs or upgrade independent replay, formal verification or external review.",
+    "removed_historical_metadata_checks": [
+      "retained local source jacobian/universal-keller-unit-rigidity/PROOF.md",
+      "retained local source jacobian/universal-keller-log-picard/PROOF.md",
+      "retained local source jacobian/universal-keller-plane-charts/PROOF.md",
+      "reviewed primary source sources/dubouloz-rulings-2020-v1.html",
+      "reviewed primary source sources/dubouloz-kishimoto-descent-v1.html",
+      "reviewed primary source sources/cogolludo-elduque-orbifold-v3.html",
+      "reviewed primary source sources/hatcher-chapter1.pdf",
+      "reviewed primary source sources/stacks-zariski-main-05K0.html",
+      "reviewed primary source sources/stacks-hartogs-031T.html"
+    ],
+    "added_current_source_pin_checks": []
   }
 }

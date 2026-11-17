@@ -381,5 +381,34 @@
     "verify.py": "1fd2924a653119f6badf9a89d7dd9f937ac192e2e7740637e9b7bd9819a7bb76",
     "sources.json": "307de968bc844997205862fc5e63d0e0d475691aa71bc449b75e5e3b56000960"
   },
-  "assurance": "Exact whole seed fibre ideals, symbolic inverse/unit identities, finite-algebra selectors, literal whole-source Jacobian blocks/covariance/factorization, universal nonsplit quadratic fibre, subgroup orbit controls, and good-characteristic controls. No formalization or independent whole-proof replay of arbitrary-base descent, all-rank receiver, volume functor or atomic-length arguments. The constructed map is explicitly non-atomic. No publication-priority certificate."
+  "assurance": "Exact whole seed fibre ideals, symbolic inverse/unit identities, finite-algebra selectors, literal whole-source Jacobian blocks/covariance/factorization, universal nonsplit quadratic fibre, subgroup orbit controls, and good-characteristic controls. No formalization or independent whole-proof replay of arbitrary-base descent, all-rank receiver, volume functor or atomic-length arguments. The constructed map is explicitly non-atomic. No publication-priority certificate.",
+  "current_replay": {
+    "date": "2026-11-17",
+    "command": ".venv/bin/python research/jacobian/universal-keller-canonical-filter/verify.py",
+    "working_directory": "repository root",
+    "exit_code": 0,
+    "result": "pass",
+    "check_count": 169,
+    "python": "3.12.3",
+    "sympy": "1.14.0",
+    "current_input_sha256": {
+      "PROOF.md": "5f2177076da7c8ae318258bdbfc39b445e393dbcb4a4dab397c82aeea9ad0da1",
+      "verify.py": "54e510ba7b51ecf4ae4f50f4c04b10bedd2339c87c4578fc03ee67e5df91f1d7",
+      "sources.json": "9938a273ff5c14f4f176e861202c54de97ffea4230b87ef075fb89f4bd3c2d53"
+    },
+    "accepted_mathematical_payload_matches_historical_receipt": true,
+    "scope": "Internal execution of the existing bounded controls with current imported-source pins; historical fields above retain their original hashes and check list. This does not certify the universal proofs or upgrade independent replay, formal verification or external review.",
+    "removed_historical_metadata_checks": [
+      "local pin foundations/verified/FOUNDATIONAL_GEOMETRY.md",
+      "local pin foundations/verified/IMAGE_AND_NONPROPERNESS.md",
+      "local pin jacobian/universal-keller-fixed-fibres/PROOF.md",
+      "local pin jacobian/universal-keller-torus-quotient-selfmaps/PROOF.md",
+      "local pin jacobian/universal-keller-atomic-cylinder/PROOF.md",
+      "local pin jacobian/universal-keller-versal-isogenies/PROOF.md",
+      "primary pin sources/stacks-05Y8.html",
+      "primary pin sources/shaska-2607.20210v2.html",
+      "primary pin sources/afp-jacobian-counterexample.html"
+    ],
+    "added_current_source_pin_checks": []
+  }
 }

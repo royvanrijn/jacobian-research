@@ -7,6 +7,7 @@ import argparse
 import ast
 import hashlib
 import json
+import os
 from pathlib import Path
 import re
 import subprocess
@@ -44,6 +45,8 @@ def validate(data: dict) -> tuple[int, int]:
         topic_ids.add(topic["id"])
         for key in ("id", "title", "summary", "status"):
             assert isinstance(topic[key], str) and topic[key].strip(), f"empty topic {key}"
+        assert re.fullmatch(r"[a-z0-9-]+", topic["id"]), "invalid topic identifier"
+        assert topic["readme"] == topic["id"] + "/README.md", "topic guide must be its own README"
         reference(topic["readme"])
         assert isinstance(topic["results"], list) and isinstance(topic["open_questions"], list)
         for result in topic["results"]:
@@ -105,6 +108,74 @@ def render(data: dict) -> str:
     lines += ["The [structured record](MATH_STATUS.json) names each retained source, checker, "
               "evidence file and assurance flag. This navigation check does not rerun mathematics.", ""]
     return "\n".join(lines)
+
+
+def markdown_cell(value: str) -> str:
+    return value.replace("|", "\\|").replace("\n", " ")
+
+
+def topic_link(topic: dict, source: str) -> str:
+    return Path(os.path.relpath(ROOT / source, (ROOT / topic["readme"]).parent)).as_posix()
+
+
+def render_topic(topic: dict) -> str:
+    lines = ["# " + topic["title"], "",
+             "<!-- Generated from research/MATH_STATUS.json; run make render-navigation. -->", "",
+             topic["summary"], "", "**Status:** " + topic["status"], "",
+             "| Current result | Status | Main source |", "|---|---|---|"]
+    for result in topic["results"]:
+        source = result["canonical_source"]
+        if source.startswith("../results/"):
+            state = "Published preprints"
+            source = "../results/README.md"
+        elif source.startswith("../unpublished/"):
+            state = "Unpublished; independent review pending"
+            readme = str(Path(source).parent / "README.md")
+            if (ROOT / readme).is_file():
+                source = readme
+        else:
+            state = {"proved": "Internal result", "partial": "Partial result",
+                     "falsified": "Counterexample"}[result["state"]]
+        lines.append("| " + markdown_cell(result["title"]) + " | " + state
+                     + " | [Source](" + topic_link(topic, source) + ") |")
+    if topic["open_questions"]:
+        lines += ["", "Open questions:", ""]
+        lines += ["- " + question["question"] for question in topic["open_questions"]]
+    lines += ["", "[Exact scopes and verification limits](" + topic_link(topic, "STATUS.md") + "). "
+              "Publication, formal verification and independent review are separate statuses.", ""]
+    return "\n".join(lines)
+
+
+def render_research_index(data: dict) -> str:
+    lines = ["# Research", "",
+             "<!-- Generated from MATH_STATUS.json; run make render-navigation. -->", "",
+             "Current AI-assisted mathematics, organized by topic. "
+             "[Published papers](../results/README.md) and "
+             "[unpublished manuscripts](../unpublished/README.md) have separate catalogues.", "",
+             "| Topic | Scope | Current status |", "|---|---|---|"]
+    for topic in data["topics"]:
+        lines.append("| [" + markdown_cell(topic["title"]) + "](" + topic["readme"] + ") | "
+                     + markdown_cell(topic["summary"]) + " | " + markdown_cell(topic["status"]) + " |")
+    lines += ["", "The [current result catalogue](STATUS.md) is generated from "
+              "[MATH_STATUS.json](MATH_STATUS.json). It records main statements, proof sources "
+              "and verification limits. Internal proof status does not imply publication.",
+              "", "[Verification commands](REPRODUCE.md)", ""]
+    return "\n".join(lines)
+
+
+def navigation_outputs(data: dict) -> dict[Path, str]:
+    outputs = {ROOT / "STATUS.md": render(data), ROOT / "README.md": render_research_index(data)}
+    for topic in data["topics"]:
+        assert re.fullmatch(r"[a-z0-9-]+", topic["id"]), "invalid topic identifier"
+        assert topic["readme"] == topic["id"] + "/README.md", "topic guide must be its own README"
+        outputs[ROOT / topic["readme"]] = render_topic(topic)
+    return outputs
+
+
+def check_navigation(data: dict) -> None:
+    for path, expected in navigation_outputs(data).items():
+        assert path.is_file() and path.read_text() == expected, (
+            f"{path.relative_to(ROOT)} is stale; run make render-navigation")
 
 
 def check_extracted_sources(meta: dict, directory: Path, sealed_names: set[str]) -> None:
@@ -228,7 +299,7 @@ def check_links() -> tuple[int, int]:
 def main() -> None:
     parser = argparse.ArgumentParser(description=__doc__)
     commands = parser.add_subparsers(dest="command", required=True)
-    commands.add_parser("render", help="render the current status page")
+    commands.add_parser("render", help="render current status, research index and topic guides")
     commands.add_parser("check", help="validate current sources, hashes, portfolio and local Markdown links")
     commands.add_parser("list", help="list the current research topics")
     show = commands.add_parser("show", help="read one topic or principal result")
@@ -239,12 +310,12 @@ def main() -> None:
     data = load()
     if args.command in {"render", "check"}:
         topics, results = validate(data)
-        expected = render(data)
         if args.command == "render":
-            (ROOT / "STATUS.md").write_text(expected)
-            print(f"Rendered {topics} topics and {results} principal results")
+            for path, text in navigation_outputs(data).items():
+                path.write_text(text)
+            print(f"Rendered current status, research index and {topics} topic guides ({results} principal results)")
         else:
-            assert (ROOT / "STATUS.md").read_text() == expected, "STATUS.md is stale; run make render-navigation"
+            check_navigation(data)
             published, drafts = check_portfolio()
             links, documents = check_links()
             print(f"PASS current research: {topics} topics, {results} principal results; sources, evidence and checker hashes exist")

@@ -9,7 +9,7 @@
   "status": "parked",
   "source": "main.tex",
   "pdf": "paper.pdf",
-  "build": "latexmk -pdf -interaction=nonstopmode -halt-on-error main.tex",
+  "build": "latexmk -pdf -jobname=paper -interaction=nonstopmode -halt-on-error main.tex",
   "verification": "The Lean development is partial and does not certify the complete main theorem.",
   "next_steps": [
     "Reassess the scope and complete the proof review before restarting publication work."

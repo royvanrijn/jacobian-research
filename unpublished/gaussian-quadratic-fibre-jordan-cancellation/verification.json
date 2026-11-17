@@ -1,26 +1,29 @@
 {
-  "status": "unpublished; written proof with internal review; independent mathematical review pending",
+  "status": "unpublished; restructured written proof with internal mathematical review; independent review pending",
   "checked_on": "2026-11-17",
   "source": "main.tex",
-  "pdf": "gaussian_quadratic_fibre_jordan_cancellation.pdf",
-  "pages": 10,
+  "pdf": "gaussian_moments_one_base_constant_quadratic_fibres.pdf",
+  "pages": 11,
   "source_hashes": {
-    "main.tex": "1a7064e5c9e676e9419d19e8122654ccba928f4cb8c3c914261be47eb605fba0"
+    "main.tex": "e5082ba126d57900831fa998940064d59d813dfa13ad1c635a5b0388f29ff95d"
   },
-  "pdf_sha256": "d4021c68ae03377acf360a65fcec5583c679c287febf6a9d76095d0763404e28",
-  "build": "latexmk -pdf -jobname=gaussian_quadratic_fibre_jordan_cancellation -interaction=nonstopmode -halt-on-error main.tex",
+  "pdf_sha256": "5bbc42baeedf960a698c67d2fcd17936c54f863fbdec7f64b8ddd56556756499",
+  "build": "latexmk -pdf -jobname=gaussian_moments_one_base_constant_quadratic_fibres -interaction=nonstopmode -halt-on-error main.tex",
   "checks": {
     "latexmk_cross_references_stable": true,
     "undefined_references": 0,
     "overfull_boxes": 0,
     "underfull_boxes": 0,
     "all_pages_rendered": true,
-    "visual_review": "Every page of the current edition rendered and inspected; the revised examples, stationary gauge and final references fit without clipping or nearly empty extra pages."
+    "visual_review": "All 11 pages rendered and visually inspected; no clipping, overlap, unresolved references or awkward theorem-list split observed.",
+    "standalone_source_bundle_build": true,
+    "rebuilt_pdf_text_and_pixels_match": true,
+    "rebuild_scope": "Internal clean build from the isolated source archive; all pages match retained PDF text and rendering. This is artifact reproduction, not independent mathematical review."
   },
-  "review_scope": "Editorial and internal mathematical review of the displayed arguments. No universal theorem is inferred from a finite experiment.",
+  "review_scope": "Complete internal source review of the restructured written proof, its exceptional coefficient or covariance cases, and the new corollaries. Builds and bounded controls are recorded separately and do not certify the universal theorems.",
   "remaining_review": [
-    "Review the full formal stationary theorem and its application to a polynomial unit period.",
-    "Review the Jordan-block rigidity, polynomial precision matrix, and sufficient mixed-moment bound."
+    "Independent review of the formal stationary theorem, Jordan-block rigidity and determinant-one cancellation.",
+    "Review the affine Gaussian extension and sufficient mixed-moment cutoffs."
   ],
   "independent_replay": false,
   "formal_verification": false,
@@ -34,9 +37,10 @@
     "pdflatex": "pdfTeX 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian)"
   },
   "review_findings": [
-    "Reconstructed polynomial-unit reduction, Jordan affine-source induction, determinant-one cancellation and sufficient degree bounds.",
-    "Expanded the stationary theorem into an explicit row-normalized evaluation matrix and invertible diagonal gauge; the quotient-extension step uses this constructed semisimplicity.",
-    "The duplicated stationary proof matches the boundary manuscript text; no general Turrittin-Levelt semisimplicity assertion is used."
+    "Applied the agreed descriptive title and kept the one ordinary base variable and constant fibre matrix restrictions explicit.",
+    "Integrated the unique semisimple scalar pole-cancellation certificates from the former boundary appendix as a corollary of the stronger all-Jordan theorem.",
+    "Proved transfer of the full equivalence and a sufficient cutoff to arbitrary means and correlated real Gaussian laws with positive-definite covariance. The normalized matrix index is used; no singular-covariance result is claimed.",
+    "The formal stationary subsection remains identical to the boundary source; all stronger Jordan and polynomial-unit results are preserved."
   ],
   "primary_sources_checked": [
     {

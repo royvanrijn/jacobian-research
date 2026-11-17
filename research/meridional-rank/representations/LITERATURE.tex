@@ -29,8 +29,13 @@ membership in the existing Boileau--Jang--Weidmann graph-cover MRC family,
 using closed-manifold rigidity to identify their actual covers.
 They are not cases outside known MRC families. Priority of the explicit
 named bridge/rank calculations remains unestablished.
-Earlier sixteen-open checkpoints below are historical; the final section
-supersedes them at this exact scope. Full MRC remains open.
+The sections below distinguish each method's scope from the current
+sixteen-case conclusion. Full MRC remains open.
+
+The curated checkout retains the current graph-cover proofs and their
+listed finite inputs. Several earlier search panels and replay receipts
+summarized in this literature map are available only through Git history;
+those summaries do not provide a runnable replay of those older tests.
 
 \section{What must be proved and how existing methods do it}
 
@@ -176,9 +181,10 @@ Bhattacharjee's unrefereed release claims that 243 of 536 bridge-uncertain
 13-crossing prime knots have $b=\mr=4$, using symplectic transvections in
 characteristic three or five, or orthogonal reflections. The deposit
 leaves 293 in that study and includes verifiers \cite{deposit}. All 243
-algebraic and four-seed certificates now pass a separate standard-library
-replay, retained in \texttt{current13\_certificate\_verification.json}.
-All 243 named diagrams also match the independently packaged HT census
+algebraic and four-seed certificates were reported to pass a separate
+standard-library replay. Its receipt is not distributed in this curated
+checkout. The same audit reported that all 243 named diagrams match the
+independently packaged HT census
 by exact planar-map bijections. The author's PD data agree literally
 with KnotInfo snapshots 2026.10.5 and 2026.11.2. Both snapshots still list
 the same 536 cases as $[3,4]$; this table state does not negate the
@@ -541,10 +547,10 @@ claim follows; uniform proofs remain unformalized and unreviewed.
 
 \section{Singular affine certificates and the full GL3 quotient panel}
 
-The new companion proof
-\texttt{GL3\_QUOTIENTS\_AND\_SINGULAR\_AFFINE\_CERTIFICATES.tex}
-separates a positive known-family certificate from a negative complete
-finite panel. Homogenizing a three-dimensional affine representation
+The singular affine construction below gives a positive known-family
+certificate. The reported negative finite-panel tests are separate from
+that written construction; their former companion proof and complete
+search inputs are not distributed in this curated checkout. Homogenizing a three-dimensional affine representation
 can give rank-one meridians and zero common fixed space in dimension
 four, even though every image direction lies in a three-space. A
 nonprincipal meridian-admissible cocycle supplies precisely this
@@ -560,8 +566,7 @@ Fox three-colouring, together with the retained rank-two theorem,
 excludes every realization of the original common-form criterion.
 This comparison has no novelty claim for the knot equalities.
 
-Inspection of the pinned external \texttt{search/glsearch.py}
-shows that it assumes four independent seed image directions and
+The source audit of the external binary search reports that it assumes four independent seed image directions and
 discards singular pairing matrices. All homogeneous affine
 extensions just described have pairing rank at most three, for
 every four-meridian choice. They can satisfy the valid rank-one
@@ -923,9 +928,11 @@ has size $210$, versus $105$ binary transvections $I+vf$.
 An isomorphism preserves conjugacy-class size. This precisely
 distinguishes the new test from the pinned external binary
 rank-one search without questioning its valid certificates.
-The uniform proof and exact scope are in
-\texttt{PERMUTATION\_INDEX\_GATE.tex}; full MRC and all sixteen
-targets remain open, and worldwide novelty is unclaimed.
+The edge-count argument above gives the uniform bound; the former
+permutation-index working note is not distributed in this checkout.
+These double-transposition tests do not settle the sixteen targets.
+Their equalities are established by the retained graph-cover proofs.
+Full MRC remains open, and worldwide novelty is unclaimed.
 
 \section{Complete ternary affine bases and new cover quotients}
 
@@ -977,10 +984,10 @@ preimage $F_6*(*_{12}C_3)$, with gain $18-3=15$ over
 $\mathbb F_3$. Finite cycle inputs pass; subgroup structure
 uses the classical graph-of-groups theorem \cite{serre}.
 That checkpoint is now completed by the thirteen-point audit
-below. The
-uniform proof and full scope are in
-\texttt{TERNARY\_AFFINE\_AND\_COVER\_CERTIFICATES.tex};
-full MRC and all sixteen targets remain open.
+below. The former ternary-affine working note and its exhaustive search
+inputs are not distributed in this checkout. This test does not determine
+the targets' cover ranks; the retained graph-cover proofs establish their
+equalities. Full MRC remains open.
 
 \section{Exact thirteen-point homology and the characteristic-thirteen boundary}
 
@@ -1027,12 +1034,14 @@ dual actions are inequivalent: the enumerated point
 stabilizer432 fixes no dual point. No cross-knot pooling or
 exhaustion of every index13 subgroup or quotient is inferred.
 
-Independent Smith/augmentation replay and known positive
-controls are documented in
-\texttt{PROJECTIVE\_THIRTEEN\_COVER\_HOMOLOGY.tex}.
+The earlier audit reported separate Smith/augmentation replay and known
+positive controls. The former projective-thirteen working note and full
+replay inputs are not distributed in this checkout, so these finite
+observations are not a current runnable certificate.
 
-Matching archived Conway polynomials motivated the structural
-audit completed next. All sixteen targets and full MRC remain open.
+These homology tests do not decide actual cover rank. The retained
+structural proofs below establish all sixteen equalities; full MRC
+remains open.
 
 \section{Two common double covers from exact mutation certificates}
 
@@ -1054,20 +1063,20 @@ Greene's Corollary4.5 supplies the graph-to-mutation implication;
 only its elementary Section4 argument and explicit classical graph
 inputs are used. Morton's Theorem3 gives the short torus-gluing proof
 that mutation preserves double branched covers, crediting Viro1976.
-The two primary reads bring the catalogue to42 sources. Neither the
-full Greene lattice/Floer proof nor Viro's original full proof has been
-audited. The exact scope is retained in
-\texttt{mutation\_source\_audit.json}.
+Neither the full Greene lattice/Floer proof nor Viro's original full proof
+has been audited. The source identities and stated scope remain in
+\texttt{sources.json}; the separate mutation-source audit is not
+distributed in this checkout.
 
 Thus these eight ordinary cover-rank questions reduce to two groups,
-with respective abelianizations $C_{391}$ and $C_{401}$. Each rank lies
-between two and three. Rank three for either shared group would settle
-all four knots in its block, using each knot's retained four-bridge
-upper and the double-cover inequality. No bridge or meridional-rank
-mutation invariance is assumed. No rank-three obstruction is provided
-here. The canonical proof is
-\texttt{MUTATION\_COMMON\_DOUBLE\_COVERS.tex}; the other original eight
-targets are untouched, and all original sixteen remain open.
+with respective abelianizations $C_{391}$ and $C_{401}$. The mutation
+argument alone bounds each rank between two and three. The four-piece
+proof below establishes rank three for both, settling all four knots in
+each block using their individual four-bridge uppers and the double-cover
+inequality. No bridge or meridional-rank mutation invariance is assumed.
+The mutation proof is
+\texttt{MUTATION\_COMMON\_DOUBLE\_COVERS.tex}; the other eight original
+targets use the direct three-piece proofs below.
 
 \section{Compact core presentations and a common four-port assembly}
 
@@ -1076,8 +1085,9 @@ generators with relator lengths $(9,13,15)$ and $(12,15,11)$. Every
 Tietze elimination, free automorphism with inverse, and relator-subword
 replacement is retained and independently replayed. Their integral
 abelianizations remain $C_{391},C_{401}$, and transported projective
-permutations still give nonabelian quotients of order5616. Neither
-actual rank is determined.
+permutations still give nonabelian quotients of order5616. Compact
+presentation alone does not determine rank; the four-piece argument below
+gives rank three for both groups.
 
 Cutting each source into the first seven and last six crossings gives
 four literal ports. Both inner formal normalized core groups reduce
@@ -1146,11 +1156,13 @@ is read as current context; the full hidden-symmetry proof is not audited
 and the eight-case piece bound already follows from the older necessary
 list. The original
 Jaco--Shalen/Johannson theory is credited through the latter exposition.
-The broad rank classification is classical; worldwide novelty or
-previously-unresolved status of these eight equalities is not established.
-The other original eight targets remain open. The retained293 panel now
-has twelve named equalities certified here and281 names without such a
-certificate; full classical MRC and exhaustive literature remain open.
+The broad rank classification is classical. These eight equalities and
+the other eight original targets are established by the retained case
+proofs, and their graph-cover family membership follows from the final
+rigidity argument below. The current retained293 panel has twenty named
+equalities and273 names without a certificate here. Worldwide priority of
+the explicit calculations, full classical MRC and exhaustive literature
+remain open.
 
 \clearpage
 \section{Three further cases from the actual central filling slopes}
@@ -1195,13 +1207,13 @@ pairs $403/389$, $361/359$, $361/337$, $361/311$, $337/311$.
 No equality is transferred to those targets. Similar PD prefixes are
 not a common-cover certificate.
 
-This supersedes the eight-remaining checkpoint above: eleven original
-targets, and fifteen of293 panel names in total, are certified here.
-The remaining original targets are
-$13a_{234},13a_{242},13a_{243},13a_{244},13a_{265}$.
-The working proofs and classical imports remain unformalized and externally
-unreviewed; worldwide novelty, prior-family coverage, exhaustive source
-audits and full MRC remain open.
+This three-piece argument treats three original targets. The five other
+direct cases
+$13a_{234},13a_{242},13a_{243},13a_{244},13a_{265}$ are covered in the next
+section. All sixteen belong to the known graph-cover family by the final
+rigidity argument. The working proofs and classical imports remain
+unformalized and externally unreviewed; named global priority,
+exhaustive source audits and full MRC remain open.
 
 \section{Completion of the original sixteen through five direct models}
 
@@ -1243,12 +1255,12 @@ from piece count or a failed quotient test alone.
 This completes the original sixteen-case panel here, giving twenty
 named equalities in the retained293 panel and273 names without a
 certificate in this programme. This is not a worldwide open/closed
-census. All proofs remain unformalized and externally unreviewed, and
-their previously-unresolved status, known-family membership and global
-priority need a separate source audit. Full MRC and exhaustive literature
-remain open. The next substantive gate is that family-scope audit and
-a structurally justified general extension, with the completed original
-panel retained as positive controls.
+census. All proofs remain unformalized and externally unreviewed. The
+known-family audit is supplied by the rigidity argument below; the
+sixteen are members of the existing BJW18 graph-cover family. Named global
+priority, full MRC and exhaustive literature remain open. A general
+extension beyond that family needs a separately justified new mechanism,
+with the completed original panel retained as positive controls.
 
 \section{Actual-cover rigidity resolves the sixteen-case known-family audit}
 
@@ -1280,13 +1292,12 @@ and the exact mutation aliases for the first eight are sealed separately.
 The finite binder does not prove rigidity or reprove the published MRC
 theorem. The AFW final author book Theorems2.1.2--2.1.3 and their earlier
 author-v3 counterparts were read at the precise lens/orientation scope;
-the source pages were visually checked. The new scoped reference brings
-the catalogue to46; older counts in checkpoints retain their dated scope.
+the source pages were visually checked. The current catalogue contains46
+sources.
 
-This supersedes the preceding unknown-family clauses for the sixteen,
-while preserving every equality and exact finite certificate. They are
-established members of a known MRC class, not evidence of new cases
-outside known families. Named global bridge/rank computational priority
+This establishes the known-family scope for all sixteen while preserving
+every equality and exact finite certificate. They are members of a known
+MRC class. Named global bridge/rank computational priority
 is still unaudited. The other four sharp simple-three-cover seeds require
 their own family audit. A prospective new target outside BJW18 needs
 actual double-cover topology outside that class; a hyperbolic knot exterior

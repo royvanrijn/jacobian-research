@@ -96,8 +96,9 @@ assert gcds=={0:92914,1:21} and max_kernel==35 and max_full==126
 # Verify source receipts before using the retained m6 and prime-power/large-m
 # proofs; do not reconstruct unrelated calculations.
 for receipt_name in ['exponent_six_simplicity_verification.json','all_exponent_squarefree_verification.json']:
-    source=json.loads((HERE/receipt_name).read_text());assert source['status']=='pass'
-    for name,digest in source['files'].items():assert hashlib.sha256((HERE/name).read_bytes()).hexdigest()==digest,(receipt_name,name)
+    source=json.loads((HERE/receipt_name).read_text())
+    checked=source.get('current_replay',source);assert checked['status']=='pass'
+    for name,digest in checked['files'].items():assert hashlib.sha256((HERE/name).read_bytes()).hexdigest()==digest,(receipt_name,name)
 audit={'uniform_analytic_cutoff':10000,'analytic_exponent_range':'6<=m<=sqrt(n)',
        'normalization':'z=n^m*(m/e)^m*v','root_annulus_in_analytic_range':['1/2','21/10'],
        'tail_disk':'|v|<=11/5','relative_error':'22/sqrt(m*n)','log_derivative_gap':'n/3-4',

@@ -649,15 +649,18 @@
     "final_five_structure_results.json": "c0f6126b5fa8b11796139e339a4408628078e0c1f0333709619cb1053b72565a",
     "final_five_peripheral_inputs.json": "2b3401e23303a9e838fdca5ae83289adc4552ba1c22810bf76b7ca649f11a21c",
     "final_five_peripheral_results.json": "72f16ad983ca0b81e52cdc20e820232e603e00d50da9bce44f39323d0850f30c",
+    "three_piece_cover_results.json": "ab30ccbf3434f93fbbfa79471bca083f2c2bc9b5adefb60b66ade36594970988",
+    "three_piece_cover_verification.json": "93a0a5d7d60d25443b3c95ff915eabd079b5b2725598667f4de9e2085769807a",
+    "remaining_cover_structure_results.json": "039a770fcabf99d254bed3f2c3cdbfe40e405e87a90f2dab136d73c46866a32d",
     "parabolic_panel.json": "fd300c9d04076c3eea911a104a810743f4d300ec60478c42f7ea97c115298286",
-    "verify_compact_covers.py": "a3791df7d81a6ce3f072cc19bf52efab78395376fae4d91ce0f12dce03770a2f",
-    "verify_port_assemblies.py": "d05cb9773dc4145bec2e88d3a2aadb2d86ec5c59d55d5030ba29fa0e036b07e2",
+    "joint_a5_results.json": "3952119118bcd127a0f6b786645b35ed79322972096715830c9ca6ba09349fcc",
+    "verify_compact_covers.py": "209d12d67cabae8d852db39c9b8ee313496bec9097f4e6f4e75c332b08c8f4cb",
+    "verify_port_assemblies.py": "7b1732da1612c2531546577596ea8762d38151c4a4f655051adcfbf79e51fc73",
     "verify_mutation_covers.py": "cbc25df27feb84f2c1ee9ce8b94e0bfb316c31202fd9e7bbd99708a80733f4ac",
     "verify_three_piece_covers.py": "a604ae66534c6daf5c42aacb00b15388bfad22f6be00167b076458ffdc6a8a4c",
     "verify_four_piece_covers.py": "e650a08836a6684eb40c71c2346c7347c95b65533824dc36d5ff6d651f47b75e",
-    "verify_double_transpositions.py": "43eaa8c10f8cb8e96d63f8ab01028aee853d592809c7e8eaa92f3ad283545702",
+    "verify_double_transpositions.py": "eb6ff0490c74553678ce9ef6790d081ebd2a3d53e2ab347de72854b4cce8e512",
     "parabolic_lifts.py": "18abf5886002d54f17b5ee8593f31fb1b339f66a36605b7ccec7863ff4648a27",
-    "three_piece_cover_results.json": "ab30ccbf3434f93fbbfa79471bca083f2c2bc9b5adefb60b66ade36594970988",
-    "joint_a5_results.json": "3952119118bcd127a0f6b786645b35ed79322972096715830c9ca6ba09349fcc"
+    "FINAL_FIVE_DOUBLE_COVERS_SHARP_FOUR.tex": "37fef1204e52d71bfe32722058532b54a815667f2c41389553b029eae8833d9e"
   }
 }

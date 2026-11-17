@@ -323,12 +323,68 @@
     "graph_cover_family_scope_inputs.json": "105e0232f68e85b5a868f60914dbf45625a01d2f3e8f0ce33d5c983d7cef16a0",
     "graph_cover_family_source_audit.json": "4af6af9ad5af1e8e182d7dab4cbe1f312cac8dbf57a42882fab2c7645322d5c6",
     "ORIGINAL_SIXTEEN_KNOWN_GRAPH_COVER_FAMILY.tex": "3a973b743b54fcd47842ab3542eac6c97cc7d4213a2609343293cd47996abe47",
+    "four_piece_cover_verification.json": "0e1b4d1d8facd7164595ab28346256921730b53eef834450c37604d30cd529e5",
+    "three_piece_cover_verification.json": "93a0a5d7d60d25443b3c95ff915eabd079b5b2725598667f4de9e2085769807a",
+    "final_five_cover_verification.json": "f40a5b3d86f04f47c6b8965ce94e2f0ef0f3f2183f02d8d118f48d9b60bb7128",
+    "mutation_cover_verification.json": "4c1f8cd88b1112c0ecf4247298283dfae50d7c9f2e45e418a37eb224d46870d2",
     "parabolic_panel.json": "fd300c9d04076c3eea911a104a810743f4d300ec60478c42f7ea97c115298286",
     "joint_a5_results.json": "3952119118bcd127a0f6b786645b35ed79322972096715830c9ca6ba09349fcc",
-    "verify_double_transpositions.py": "43eaa8c10f8cb8e96d63f8ab01028aee853d592809c7e8eaa92f3ad283545702",
-    "parabolic_lifts.py": "18abf5886002d54f17b5ee8593f31fb1b339f66a36605b7ccec7863ff4648a27",
-    "FOUR_PIECE_DOUBLE_COVERS_SHARP_FOUR.tex": "35b7b96c069a26c987ca95c936ccbb95754c0fc679e2795a80d2aabc02bfc08d",
-    "THREE_PIECE_DOUBLE_COVERS_SHARP_FOUR.tex": "91853bbc4566a7e7c2eda280f4373bef780b6731353aa5f7055cb557981c261d",
-    "FINAL_FIVE_DOUBLE_COVERS_SHARP_FOUR.tex": "24ad7b74f6df77bb9c67297b4fef9431487fc179e571c23d10b422a1d72b22af"
+    "verify_double_transpositions.py": "eb6ff0490c74553678ce9ef6790d081ebd2a3d53e2ab347de72854b4cce8e512",
+    "parabolic_lifts.py": "18abf5886002d54f17b5ee8593f31fb1b339f66a36605b7ccec7863ff4648a27"
+  },
+  "current_internal_replay": {
+    "date": "2026-11-17",
+    "executor": "Internal Codex replay in an isolated copy of current retained files",
+    "scope": "Eight declared finite certificate entry points and the restored compact sharp-five named-diagram audit. No search generator, 243/293-knot campaign, source workbook audit, formal build or external review was run.",
+    "outcome": "PASS: all nine entry points; existing non-provenance receipt values unchanged.",
+    "commands": [
+      {
+        "checker": "check_finite_cover_certificates.py",
+        "sha256": "336f3297412ae19ab96cc4c2572eb972f18da4d555dcc7ed37b9d7897902911f",
+        "exit_code": 0
+      },
+      {
+        "checker": "verify_mutation_covers.py",
+        "sha256": "cbc25df27feb84f2c1ee9ce8b94e0bfb316c31202fd9e7bbd99708a80733f4ac",
+        "exit_code": 0
+      },
+      {
+        "checker": "verify_four_piece_covers.py",
+        "sha256": "e650a08836a6684eb40c71c2346c7347c95b65533824dc36d5ff6d651f47b75e",
+        "exit_code": 0
+      },
+      {
+        "checker": "verify_three_piece_covers.py",
+        "sha256": "a604ae66534c6daf5c42aacb00b15388bfad22f6be00167b076458ffdc6a8a4c",
+        "exit_code": 0
+      },
+      {
+        "checker": "verify_final_five_covers.py",
+        "sha256": "88a48c6e1d46064e059c43bab308c903a1a815cb1a369fb4ebfe489a4cda1383",
+        "exit_code": 0
+      },
+      {
+        "checker": "audit_graph_cover_family_scope.py",
+        "sha256": "ff36bbb61044f5fa979001c6aa5f569e389677804a3871224177345823a26cb1",
+        "exit_code": 0
+      },
+      {
+        "checker": "verify_periodic_twist_families.py",
+        "sha256": "4c9f6fc4e65c8368aa621f4cd732c79f70c633be431a953fd94e3e2fd5fdcfe6",
+        "exit_code": 0
+      },
+      {
+        "checker": "verify_cover_sums.py",
+        "sha256": "6dbff886fac38b199ca3f585df65405c0c6752207dc3e167c17f009a745f24f1",
+        "exit_code": 0
+      },
+      {
+        "checker": "verify_diagram_audit.py",
+        "sha256": "41f7bb9e96b6863e845feaac2870fc7a734946715c82cda33055e7e7a276aec3",
+        "exit_code": 0
+      }
+    ],
+    "independent_replay": false,
+    "external_review": false
   }
 }

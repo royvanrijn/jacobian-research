@@ -1,0 +1,161 @@
+{
+  "status": "PASS",
+  "covers": 12,
+  "results": [
+    {
+      "name": "13a_129",
+      "A5_image_order": 60,
+      "degree": 5,
+      "H1_free_rank": 0,
+      "H1_torsion_factors": [
+        1173
+      ],
+      "maximum_H1_dimension_all_fields": 1,
+      "sharp_four": false
+    },
+    {
+      "name": "13a_135",
+      "A5_image_order": 60,
+      "degree": 5,
+      "H1_free_rank": 0,
+      "H1_torsion_factors": [
+        1203
+      ],
+      "maximum_H1_dimension_all_fields": 1,
+      "sharp_four": false
+    },
+    {
+      "name": "13a_136",
+      "A5_image_order": 60,
+      "degree": 5,
+      "H1_free_rank": 0,
+      "H1_torsion_factors": [
+        1173
+      ],
+      "maximum_H1_dimension_all_fields": 1,
+      "sharp_four": false
+    },
+    {
+      "name": "13a_137",
+      "A5_image_order": 60,
+      "degree": 5,
+      "H1_free_rank": 0,
+      "H1_torsion_factors": [
+        1203
+      ],
+      "maximum_H1_dimension_all_fields": 1,
+      "sharp_four": false
+    },
+    {
+      "name": "13a_194",
+      "A5_image_order": 60,
+      "degree": 5,
+      "H1_free_rank": 0,
+      "H1_torsion_factors": [
+        1173
+      ],
+      "maximum_H1_dimension_all_fields": 1,
+      "sharp_four": false
+    },
+    {
+      "name": "13a_196",
+      "A5_image_order": 60,
+      "degree": 5,
+      "H1_free_rank": 0,
+      "H1_torsion_factors": [
+        1203
+      ],
+      "maximum_H1_dimension_all_fields": 1,
+      "sharp_four": false
+    },
+    {
+      "name": "13a_197",
+      "A5_image_order": 60,
+      "degree": 5,
+      "H1_free_rank": 0,
+      "H1_torsion_factors": [
+        1173
+      ],
+      "maximum_H1_dimension_all_fields": 1,
+      "sharp_four": false
+    },
+    {
+      "name": "13a_198",
+      "A5_image_order": 60,
+      "degree": 5,
+      "H1_free_rank": 0,
+      "H1_torsion_factors": [
+        1203
+      ],
+      "maximum_H1_dimension_all_fields": 1,
+      "sharp_four": false
+    },
+    {
+      "name": "13a_234",
+      "A5_image_order": 60,
+      "degree": 5,
+      "H1_free_rank": 0,
+      "H1_torsion_factors": [
+        1167
+      ],
+      "maximum_H1_dimension_all_fields": 1,
+      "sharp_four": false
+    },
+    {
+      "name": "13a_242",
+      "A5_image_order": 60,
+      "degree": 5,
+      "H1_free_rank": 0,
+      "H1_torsion_factors": [
+        1077
+      ],
+      "maximum_H1_dimension_all_fields": 1,
+      "sharp_four": false
+    },
+    {
+      "name": "13a_244",
+      "A5_image_order": 60,
+      "degree": 5,
+      "H1_free_rank": 0,
+      "H1_torsion_factors": [
+        933
+      ],
+      "maximum_H1_dimension_all_fields": 1,
+      "sharp_four": false
+    },
+    {
+      "name": "13a_265",
+      "A5_image_order": 60,
+      "degree": 5,
+      "H1_free_rank": 0,
+      "H1_torsion_factors": [
+        933
+      ],
+      "maximum_H1_dimension_all_fields": 1,
+      "sharp_four": false
+    }
+  ],
+  "skipped_trivial": [
+    "13a_233",
+    "13a_239",
+    "13a_243",
+    "13a_253"
+  ],
+  "controls": [
+    "F2 index5 Schreier control",
+    "C3*C3 index5 Kurosh control"
+  ],
+  "invalid_relator_rejected": true,
+  "scope": "Independent permutation relations, Fox-prefix chain matrix and elementary Smith replay on exactly the retained first A5 witnesses. PD parser and Smith producer/replay shared; no exclusion of other witnesses or covers. No new sharp case.",
+  "input_sha256": {
+    "verify_core_subgroup_homology.py": "a7b4334409e747425af8ca87270b4b8a4efc07e75334e5fd63f76dc19922cf38",
+    "audit_core_subgroup_homology.py": "545e2a0b13ccc1bae0b8c07a477bb818ab05e099cf79a475b779c9462a3c5cac",
+    "core_subgroup_homology_plan.json": "4a7e0e119a76fad44e1b8b528b8266a7fb84d184a2f36cae47e62fd243d2faf4",
+    "core_subgroup_homology_results.json": "bcacf8980c1773f86b8505466f5aef78a4bdf7f3af4ca3588274f531ee5c771c",
+    "parabolic_panel.json": "fd300c9d04076c3eea911a104a810743f4d300ec60478c42f7ea97c115298286",
+    "nonabelian_core_results.json": "2b34c2ae9ab42cade51f993512ff2c7dc6e519f8b327d226b18b655ee72033dc",
+    "parabolic_lifts.py": "18abf5886002d54f17b5ee8593f31fb1b339f66a36605b7ccec7863ff4648a27",
+    "verify_integer_lifts.py": "4ef7d33a3ec593f8d43d0c897e14d22e70323657d380ee9c44b657cc636ab309",
+    "integer_lifts.py": "8f6d8280001a9d76897b2db69c12244b964fdc58abfccd41b415b5ac90d02c31"
+  }
+}

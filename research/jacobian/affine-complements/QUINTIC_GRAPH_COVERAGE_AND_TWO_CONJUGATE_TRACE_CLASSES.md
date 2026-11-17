@@ -10,9 +10,11 @@ such graph with rational coefficients, or over any characteristic-zero
 field not containing sqrt(34).
 
 This is coverage of the entire degree-five GRAPH ansatz, not an expansion
-of the excluded sparse architecture. The two complex residual classes are
-not excluded. Global coverage of hypothetical minimal plane counterexamples
-by these graph coordinates remains open, as do HC4/JC2. The result is
+of the excluded sparse architecture. This classification alone leaves
+two complex residual classes; both are excluded by the subsequent
+[full residual-algebra proof](FULL_COMPLEX_QUINTIC_GRAPH_EXCLUSION_AND_CUBIC_NILPOTENCE.md).
+Global coverage of hypothetical minimal plane counterexamples by these
+graph coordinates remains open, as do HC4/JC2. The result is
 field-valued: it does not set these coefficients to zero on a nonreduced
 trace scheme or provide a new uniform ideal nilpotence exponent.
 

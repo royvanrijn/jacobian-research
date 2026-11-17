@@ -1,5 +1,8 @@
 #!/usr/bin/env python3
-"""Independent fragment geometry, exact moves, ports and full-core assembly."""
+"""Independent fragment geometry, exact moves, ports and full-core assembly.
+
+Full-campaign standalone inputs are not bundled; current checks import these helpers.
+"""
 from collections import Counter,defaultdict
 from copy import deepcopy
 import hashlib
@@ -180,4 +183,10 @@ def main():
         'corruptions':len(rejected),'actual_rank_interval':[2,3]}))
 
 
-if __name__=='__main__':main()
+if __name__ == "__main__":
+    raise SystemExit(
+        'Full campaign inputs are not bundled in this curated checkout. '
+        'This module remains available for imported replay helpers. '
+        'Use the nine current certificate checks described in research/meridional-rank/README.md. '
+        'For named cases run python3 research/meridional-rank/representations/audit_graph_cover_family_scope.py; for sharp-five controls run python3 research/meridional-rank/representations/verify_diagram_audit.py.'
+    )

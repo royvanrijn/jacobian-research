@@ -116,7 +116,9 @@ make check
 ```
 
 Run `make render-navigation` after changing mathematical status, then
-`make check-navigation`. The renderer updates `research/STATUS.md`.
+`make check-navigation`. The renderer updates `research/STATUS.md`, `research/README.md`, and the topic
+README pages from `research/MATH_STATUS.json`. Edit that structured source for
+result labels and statuses so the summaries stay aligned.
 For documentation edits that leave status unchanged, run `make check-navigation`
 without regenerating unrelated files.
 

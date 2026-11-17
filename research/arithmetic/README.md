@@ -1,13 +1,28 @@
-# Arithmetic Keller fibres
+# Arithmetic fibres and discriminant geometry
 
-We construct prescribed finite etale fibres and study arithmetic failures in fibres of a fixed Keller map.
+<!-- Generated from research/MATH_STATUS.json; run make render-navigation. -->
 
-| Current result | Status | Manuscript |
+Constructive finite etale fibres, arithmetic failures and discriminant geometry.
+
+**Status:** Constructive theorem manuscripts remain unpublished and need the reviews stated in their metadata.
+
+| Current result | Status | Main source |
 |---|---|---|
-| Prescribed characteristic-zero finite etale fibres | Internally complete construction; review and publication pending. | [Common arithmetic fibres](../../unpublished/common-arithmetic-fibers/README.md) |
-| Quantitative fixed-map Hasse failures | Draft theorem and exact arithmetic/formal components; review pending. | [Fixed-map Hasse failures](../../unpublished/fixed-map-hasse-failures/README.md) |
-| Exact quadratic-gauge nonproperness locus | Companion draft; review pending. | [Quadratic-gauge nonproperness](../../unpublished/quadratic-gauge-nonproperness/README.md) |
+| Over Characteristic Zero, Every Finite Etale Algebra of Rank at Least Three Is a Full Keller Fiber | Unpublished; independent review pending | [Source](../../unpublished/common-arithmetic-fibers/README.md) |
+| Quantitative Hasse-Principle Failures in the Fibers of a Fixed Keller Map | Unpublished; independent review pending | [Source](../../unpublished/fixed-map-hasse-failures/README.md) |
+| The Exact Nonproperness Locus of the Quadratic-Gauge Keller Maps | Unpublished; independent review pending | [Source](../../unpublished/quadratic-gauge-nonproperness/README.md) |
+| Generic Discriminants of Polynomial Tangent Pencils | Unpublished; independent review pending | [Source](../../unpublished/discriminant-pencils/README.md) |
+| Exact Real Chamber Spectra of Explicit Keller Maps | Unpublished; independent review pending | [Source](../../unpublished/exact-real-chamber-spectra/README.md) |
 
-[Lean certificate scope](../foundations/formal/finite-etale-keller/README.md) · [Current result catalogue](../STATUS.md)
+Open questions:
 
-**Open:** broader marked stabilizer, descent and moduli problems; the formal certificate does not supply the separate analytic counting and geometric bridges.
+- Review the manuscript against its formal theorem and external inputs.
+- Complete editorial and priority review before submission.
+- Complete the priority and source review recorded in LITERATURE_AUDIT.md.
+- Review the counting argument and prepare a frozen submission bundle.
+- Review the geometric proof and exact symbolic audit.
+- Decide whether to develop this companion into a submission.
+- Reassess the scope and complete the proof review before restarting publication work.
+- Reassess the manuscript against the canonical fibre-spectrum proof and current literature.
+
+[Exact scopes and verification limits](../STATUS.md). Publication, formal verification and independent review are separate statuses.

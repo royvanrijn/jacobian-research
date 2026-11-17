@@ -2,15 +2,15 @@
 
 This file records the proof layer for every load-bearing claim in
 *Quantitative Hasse-Principle Failures in the Fibers of a Fixed Keller Map*.
-“Lean” means a theorem in the pinned `formal/finite-etale-keller` project
+“Lean” means a theorem in the pinned [finite-etale Keller project](../../research/foundations/formal/finite-etale-keller/)
 with no `sorry`, `admit`, or project-specific axiom. Exact symbolic and
-integer checks are independent audits; bounded enumeration is never used as
+integer checks are separate audits; bounded enumeration is never used as
 proof of an asymptotic.
 
 The isolated publication entry point is
 `FiniteEtaleKeller/FixedHassePaperCertificate.lean`.
 
-| Claim | Paper proof | Lean certificate | Independent audit / external input |
+| Claim | Paper proof | Lean certificate | Symbolic audit / external input |
 |---|---|---|---|
 | The displayed map is exactly `Φ = L ∘ F₀ ∘ A` | Definition (2.5) | `FixedHasseMap.lean`; definition `paperMap` | `verify_infinite_hasse_keller_fibers.py` expands the source and target scalings |
 | `det DΦ = 1` | Chain rule from the determinant `-2` base map and the two diagonal transformations | `jacobianDet_paperMap` | Exact symbolic Jacobian check |
@@ -29,24 +29,29 @@ The isolated publication entry point is
 | Full-family asymptotic `G₃(1) X/(3√π√log X)` | Euler product, Selberg–Delange, and explicit character orthogonality on `{1,4,7}` | Not formalized | External analytic input: character-twisted Selberg–Delange |
 | Clean-family asymptotic `G₉(1) X/(Γ(1/6)(log X)^(5/6))` | Euler product with exponent `1/6` and Selberg–Delange | Not formalized | External analytic input: Selberg–Delange |
 | Degree five is minimal | Low-degree factorization cases plus the Berend–Bilu fixed-point criterion / Chebotarev | Not formalized | External arithmetic input: Berend–Bilu |
-| Counts through `a = 10^6` | Not used as proof | Not applicable | Dependency-free enumeration reproduces the pinned JSON and SHA-256 digest |
+| Counts through `a = 10^6` | Not used as proof | Not applicable | Historical dependency-free enumeration with a recorded JSON digest; the checker and artifact are absent from the current checkout |
 
-## Reproduction commands
+## Current build commands
 
-From the repository root:
+From the repository root, build the focused Lean certificate with:
 
-```bash
-.venv/bin/python scripts/verify_infinite_hasse_keller_fibers.py
-.venv/bin/python scripts/verify_multiplicative_hasse_artifact.py
-cd formal/finite-etale-keller
+```sh
+cd research/foundations/formal/finite-etale-keller
 lake build FiniteEtaleKeller.FixedHassePaperCertificate
 ```
 
-Build the manuscript with:
+Build the manuscript from the repository root with:
 
-```bash
-latexmk -cd -pdf -interaction=nonstopmode -halt-on-error \
-  papers/fixed-map-hasse-failures/main.tex
-python3 scripts/check_latex_log.py \
-  papers/fixed-map-hasse-failures/main.log
+```sh
+latexmk -cd -pdf -jobname=paper -interaction=nonstopmode -halt-on-error \
+  unpublished/fixed-map-hasse-failures/main.tex
 ```
+
+The historical Python audits named in the matrix,
+`verify_infinite_hasse_keller_fibers.py` and
+`verify_multiplicative_hasse_artifact.py`, and their pinned count artifact
+are not present in the current checkout. Their recorded checks are not
+current replay instructions, and no fresh symbolic, Lean or manuscript build
+is claimed by this path correction. The written proof and retained Lean
+certificate remain the current proof support; the finite count was not used
+as proof of the asymptotic.

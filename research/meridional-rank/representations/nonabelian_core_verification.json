@@ -1,0 +1,96 @@
+{
+  "status": "PASS",
+  "targets": 16,
+  "results": [
+    {
+      "name": "13a_129",
+      "normalized_A5_core_colourings": 121,
+      "sharp_four": false
+    },
+    {
+      "name": "13a_135",
+      "normalized_A5_core_colourings": 241,
+      "sharp_four": false
+    },
+    {
+      "name": "13a_136",
+      "normalized_A5_core_colourings": 121,
+      "sharp_four": false
+    },
+    {
+      "name": "13a_137",
+      "normalized_A5_core_colourings": 241,
+      "sharp_four": false
+    },
+    {
+      "name": "13a_194",
+      "normalized_A5_core_colourings": 121,
+      "sharp_four": false
+    },
+    {
+      "name": "13a_196",
+      "normalized_A5_core_colourings": 241,
+      "sharp_four": false
+    },
+    {
+      "name": "13a_197",
+      "normalized_A5_core_colourings": 121,
+      "sharp_four": false
+    },
+    {
+      "name": "13a_198",
+      "normalized_A5_core_colourings": 241,
+      "sharp_four": false
+    },
+    {
+      "name": "13a_233",
+      "normalized_A5_core_colourings": 1,
+      "sharp_four": false
+    },
+    {
+      "name": "13a_234",
+      "normalized_A5_core_colourings": 121,
+      "sharp_four": false
+    },
+    {
+      "name": "13a_239",
+      "normalized_A5_core_colourings": 1,
+      "sharp_four": false
+    },
+    {
+      "name": "13a_242",
+      "normalized_A5_core_colourings": 121,
+      "sharp_four": false
+    },
+    {
+      "name": "13a_243",
+      "normalized_A5_core_colourings": 1,
+      "sharp_four": false
+    },
+    {
+      "name": "13a_244",
+      "normalized_A5_core_colourings": 121,
+      "sharp_four": false
+    },
+    {
+      "name": "13a_253",
+      "normalized_A5_core_colourings": 1,
+      "sharp_four": false
+    },
+    {
+      "name": "13a_265",
+      "normalized_A5_core_colourings": 121,
+      "sharp_four": false
+    }
+  ],
+  "independent_coefficient_group": "PSL2(F5) matrices modulo scalar +/-I; order and element-order distribution checked",
+  "known_control": "Trefoil:21 normalized core colourings = Hom(C3,A5)",
+  "scope": "Separate matrix coefficient group and partial-consistency propagation reproduce counts. PD parser is shared. No new sharp case and no exclusion of other coefficient groups.",
+  "input_sha256": {
+    "verify_nonabelian_core.py": "7dbacca5c296664d2e35d87cb06d875e24872e6661676b02ba0d1a746ad01565",
+    "nonabelian_core_results.json": "2b34c2ae9ab42cade51f993512ff2c7dc6e519f8b327d226b18b655ee72033dc",
+    "nonabelian_core_plan.json": "6fe82f59a3c41412e07281187f5e1fe666add29ffe89657e567b172ec322ce49",
+    "parabolic_panel.json": "fd300c9d04076c3eea911a104a810743f4d300ec60478c42f7ea97c115298286",
+    "parabolic_lifts.py": "18abf5886002d54f17b5ee8593f31fb1b339f66a36605b7ccec7863ff4648a27"
+  }
+}

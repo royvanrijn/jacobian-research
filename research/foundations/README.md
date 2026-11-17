@@ -1,11 +1,21 @@
-# Formal verification and shared proofs
+# Formal verification
 
-This topic contains current formal source projects and supporting proofs for the papers. Each project states its exact assumptions and remaining formal boundary.
+<!-- Generated from research/MATH_STATUS.json; run make render-navigation. -->
 
-- [Formal projects](formal/README.md): GVC, GMC(2), finite etale Keller fibres and tangent pencils.
-- [Sparse Gaussian minimality](extended-geometry/THREE_REAL_GMC_MINIMAL_FAILURES.md): the retained proof and exact support certificate.
-- [Two-pair Image counterexample](extended-geometry/TWO_PAIR_IMAGE_MATHIEU_COUNTEREXAMPLE.md): the explicit counterexample beyond the published three-pair paper.
+Precisely scoped Lean developments supporting published papers and current manuscripts.
 
-**Open:** full binary GVC formalization, removal of GMC imported-input interfaces, and the remaining geometric formalization bridges.
+**Status:** Formal scope varies by project; full-paper claims must respect the explicit imported hypotheses and unformalized portions.
 
-[Current result catalogue](../STATUS.md) · [Published papers](../../results/README.md)
+| Current result | Status | Main source |
+|---|---|---|
+| GVC counterexamples and binary supporting algebra | Partial result | [Source](formal/gvc/README.md) |
+| Binary Gaussian moments in Lean | Internal result | [Source](formal/gmc2/README.md) |
+| Characteristic-zero finite etale Keller construction | Internal result | [Source](formal/finite-etale-keller/README.md) |
+| Tangent-pencil algebra in Lean | Partial result | [Source](formal/discriminant-pencils/README.md) |
+
+Open questions:
+
+- Complete the binary GVC formal theorem and the full generic tangent-pencil geometric theorem.
+- Respect the named imported theorem inputs and the analytic statements outside the focused finite-etale certificate.
+
+[Exact scopes and verification limits](../STATUS.md). Publication, formal verification and independent review are separate statuses.

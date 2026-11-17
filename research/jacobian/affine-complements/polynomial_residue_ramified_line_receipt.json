@@ -194,5 +194,23 @@
   "full_goal_complete": false,
   "independent_replay": false,
   "formal_verification": false,
-  "external_review": false
+  "external_review": false,
+  "current_replay": {
+    "date": "2026-11-17",
+    "command": ".venv/bin/python research/jacobian/affine-complements/verify_polynomial_residue_ramified_line.py",
+    "working_directory": "repository root",
+    "exit_code": 0,
+    "outcome": "PASS",
+    "check_count": 80,
+    "accepted_mathematical_payload_matches_historical_receipt": true,
+    "scope": "Internal execution of the existing bounded controls with current source/input pins. The original receipt fields and hashes above remain historical. This does not certify universal proofs or upgrade independent replay, formal verification or external review.",
+    "removed_historical_metadata_checks": [
+      "retained source pin jacobian/affine-complements/HIGH_INDEX_COLLISION_EXCESS_AND_NEAR_MAXIMAL_EXCLUSION.md",
+      "retained source pin jacobian/affine-complements/sources/global-boundary-topology/manifest.json"
+    ],
+    "checker_sha256": "2735a36f07d18e688ffafbf11a466e1646d0ccdbb5f74783f4f9eb0cfe4e06af",
+    "proof_sha256": "59d5c2789645598b428d9737ba823dcbd769b7c583ef8471a492275206a314f5",
+    "context_sha256": "47947c095b1f6dbe8908d2e855dc369fcae79a8fdecfffb9b514419b7067d230",
+    "chau_import_audit_sha256": "0106b311f36ecdb8637cda6a1bbce3ebfec1a750b50ea363afb0340be307137a"
+  }
 }

@@ -9,7 +9,7 @@
   "status": "draft",
   "source": "main.tex",
   "pdf": "paper.pdf",
-  "build": "latexmk -pdf -interaction=nonstopmode -halt-on-error main.tex",
+  "build": "latexmk -pdf -jobname=paper -interaction=nonstopmode -halt-on-error main.tex",
   "verification": "Written proof, exact supporting checks and a claim-by-claim verification matrix; external arithmetic and analytic inputs require their stated hypotheses.",
   "next_steps": [
     "Complete the priority and source review recorded in LITERATURE_AUDIT.md.",

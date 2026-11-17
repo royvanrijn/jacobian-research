@@ -130,10 +130,10 @@
   "rejected_corruptions": 4,
   "uniform_proof_boundary": "Finite checks certify specific input permutations, diagrams, uniform outside traces and determinant coefficients. All-N conclusions require the written spanning-tree gauge, Hurwitz-period and integer-tangle induction proofs, not interpolation from the12 samples. Named seed provenance retained; family mutual disjointness and worldwide novelty unclaimed. Unformalized and externally unreviewed.",
   "input_sha256": {
-    "periodic_twist_family_results.json": "f7dc4d815a2a9d3b3147b0ec6bddca14b7407a395979136120d4298d025656cb",
     "verify_periodic_twist_families.py": "4c9f6fc4e65c8368aa621f4cd732c79f70c633be431a953fd94e3e2fd5fdcfe6",
-    "PERIODIC_TWIST_FAMILIES.tex": "c7176017856c1a3834a88c55e05ba13201bd5ec3e6ac7c5f5425a47fc0e514d0",
+    "periodic_twist_family_results.json": "f7dc4d815a2a9d3b3147b0ec6bddca14b7407a395979136120d4298d025656cb",
     "joint_a5_panel.json": "2a0ea8edf355067f05d1de90103edfcb7bf0508612031009e0b3eebdac87c906",
-    "parabolic_lifts.py": "18abf5886002d54f17b5ee8593f31fb1b339f66a36605b7ccec7863ff4648a27"
+    "parabolic_lifts.py": "18abf5886002d54f17b5ee8593f31fb1b339f66a36605b7ccec7863ff4648a27",
+    "PERIODIC_TWIST_FAMILIES.tex": "fe49eaccbf384ffcba8010f1d92876b82c7e21135b4047e912a7ff411e50fa0a"
   }
 }

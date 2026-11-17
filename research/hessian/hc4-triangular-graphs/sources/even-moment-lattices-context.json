@@ -1,11 +1,11 @@
 {
   "review_date": "2026-11-16",
   "retained_proof_and_source_sha256": {
-    "hessian/hc4-triangular-graphs/BERGMAN_TRACE_DUAL_AND_MULTIPLIER_DOMAIN_RIGIDITY.md": "87836ffc272fa0737ae594f59908f2fb3ef029870ca143408460cbc69c6ce11a",
-    "hessian/hc4-triangular-graphs/TRACE_LINKING_HALF_RAMIFICATION_AND_CUBIC_MULTIPLICATION.md": "2780fdec15aba73db8f0642f84124ec8fcd4208d72f96ec1c35e8b581998ab7e",
-    "hessian/hc4-triangular-graphs/CANONICAL_BOUNDARY_AND_STABLE_COMPLETE_INTERSECTION_OBSTRUCTION.md": "679c5f12083b9cdc657650417315c3e881974aee62c6a372c725d6d8193b657c",
-    "hessian/hc4-triangular-graphs/CANONICAL_TRACE_DUAL_ETALE_RECONSTRUCTION.md": "fef1bc4871537c9d073c424c9dbbd4f0296dd287728a0724c9101c5a7b5cf3c2",
-    "hessian/tang-hc4-audit/STRUCTURAL_REVIEW.md": "26a6a76eb579de05b8e71245b8b804bdd5f036602f2e3e6ad5d036fd9f5cd572"
+    "hessian/hc4-triangular-graphs/BERGMAN_TRACE_DUAL_AND_MULTIPLIER_DOMAIN_RIGIDITY.md": "226d5b0450367780118116d80e1f9cb3ff9e99fabb3615272daec103cbc8b6bd",
+    "hessian/hc4-triangular-graphs/TRACE_LINKING_HALF_RAMIFICATION_AND_CUBIC_MULTIPLICATION.md": "25b988e37b87bc9e425cc190fcce7fefb4c309ce5be0abd884b808861b5a7e69",
+    "hessian/hc4-triangular-graphs/CANONICAL_BOUNDARY_AND_STABLE_COMPLETE_INTERSECTION_OBSTRUCTION.md": "9284117aeb73df6331b0b7235a4bd9a713a9542666c45d44561c89739e77f1c8",
+    "hessian/hc4-triangular-graphs/CANONICAL_TRACE_DUAL_ETALE_RECONSTRUCTION.md": "1b8701950f1bd4c7acb58b154c26b59a3cc777a3f548115d34a6d9ef43d1a379",
+    "hessian/tang-hc4-audit/STRUCTURAL_REVIEW.md": "508a0fec2e84a856a99269be8f5f64f0401636842d5b07ff5015dcaa55686b6f"
   },
   "scope_flags": {
     "global_even_integer_moment_formula_proved": true,
@@ -55,5 +55,16 @@
       "elapsed_seconds": 0.144
     },
     "registered_checker_replays": 0
+  },
+  "current_input_review": {
+    "date": "2026-11-17",
+    "scope": "Current source and input bytes following inspected repository-organization and status/reference prose diffs. No displayed mathematical identities or accepted control values were changed. Historical receipts retain their original digests; this map identifies inputs for a current internal control run.",
+    "updated_paths": [
+      "hessian/hc4-triangular-graphs/BERGMAN_TRACE_DUAL_AND_MULTIPLIER_DOMAIN_RIGIDITY.md",
+      "hessian/hc4-triangular-graphs/TRACE_LINKING_HALF_RAMIFICATION_AND_CUBIC_MULTIPLICATION.md",
+      "hessian/hc4-triangular-graphs/CANONICAL_BOUNDARY_AND_STABLE_COMPLETE_INTERSECTION_OBSTRUCTION.md",
+      "hessian/hc4-triangular-graphs/CANONICAL_TRACE_DUAL_ETALE_RECONSTRUCTION.md",
+      "hessian/tang-hc4-audit/STRUCTURAL_REVIEW.md"
+    ]
   }
 }

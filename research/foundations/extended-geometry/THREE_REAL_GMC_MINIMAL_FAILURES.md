@@ -21,11 +21,13 @@ Long's witness is
  P=W+WZ-T^2-\frac32ZT^2-\frac12Z^2T^2.
 \]
 
-The global questions are whether five monomials and degree four are minimal,
-which supports allow failure, and whether the minimal locus has finitely many
-orbits.  This note proves the first exact local classification and specifies
-what an exhaustive global certificate must contain.  It does **not** claim
-global five-term or degree-four minimality.
+This note proves a rank-one classification and sparse Pareto minimality in
+circular Gaussian coordinates. The current
+[dimension-degree manuscript](../../../unpublished/gaussian-boundary/manuscript.tex)
+separately proves that every pure ternary cubic is safe, giving global
+degree-four minimality for a failure. That manuscript is unpublished and
+awaits independent mathematical review. The classification here does not
+establish global five-term minimality or classify all quartic failures.
 
 Consider the rank-one quadratic ansatz
 
@@ -136,9 +138,10 @@ sign.  They satisfy GMC by the same bounded-weight argument.  These
 observations prove the all-order and mixed-moment part of the theorem; the
 finite Gröbner cutoff alone would not.
 
-The scope of Theorem 2 is exact but bounded.  It does not exclude a dense
-cubic, and it does not exclude a four-term failure of degree greater than
-four.  It proves that no polynomial can improve on Long simultaneously in
+The scope of Theorem 2 is exact but bounded. It does not itself treat a
+dense cubic or exclude a four-term failure of degree greater than four.
+The separate dimension-degree manuscript treats all ternary cubics.
+Theorem 2 proves that no polynomial can improve on Long simultaneously in
 both displayed complexity coordinates.
 
 ## 3. Finite coefficient certificate
@@ -312,14 +315,14 @@ An exact search has four stages.
    one-sided torus support satisfy GMC and are not failures; a failure needs
    an explicit \(Q\) and infinitely many certified nonzero mixed moments.
 
-The first global targets are:
+The resulting scopes are:
 
 \[
 \begin{array}{c|c|c}
 \text{claim} & D & r\\ \hline
-\text{degree minimality} & 3 & \text{all supports}\\
-\text{term minimality at Long's degree} & 4 & r\le4\\
-\text{minimal-template classification} & 4 & r=5.
+\text{degree minimality: separate cubic manuscript} & 3 & \text{all supports}\\
+\text{term minimality at Long's degree: Theorem 2} & 4 & r\le4\\
+\text{remaining minimal-template classification} & 4 & r=5.
 \end{array}
 \]
 
@@ -345,7 +348,9 @@ global search:
 \ \longrightarrow\ \text{orthogonal orbit classification}.}
 \]
 
-The bounded sparse rectangle is now closed: there is no failure of degree at
-most four with at most four circular-coordinate monomials.  Global
-degree-three exclusion remains open because a cubic may have up to twenty
-terms.  Global four-term exclusion without a degree bound also remains open.
+The bounded sparse rectangle is closed: there is no failure of degree at
+most four with at most four circular-coordinate monomials. The current
+dimension-degree manuscript supplies the separate all-support ternary-cubic
+exclusion, with independent mathematical review pending. Global four-term
+exclusion without a degree bound and classification of all five-term
+quartic failures remain open.

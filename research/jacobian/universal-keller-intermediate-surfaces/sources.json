@@ -4,20 +4,30 @@
   "local_sources": [
     {
       "path": "jacobian/universal-keller-plane-completion/PROOF.md",
-      "sha256": "d1882a55aa0f5182dc97533d7100ee6add71f20b9a6216423b73579bd5ff9fb8"
+      "sha256": "3705021d187f6d0ca2937c642883fd3ce482b56d566e46e1d63b5e1fe9ccd152"
     },
     {
       "path": "jacobian/universal-keller-receiver/PROOF.md",
-      "sha256": "8790916cd2c5e3f0458674dc50a37af18f1c1322eb2720c2071a819283cf639f"
+      "sha256": "a01f90deafeca47c4b47f5ca26e63910b2e29957e3d5b14e0e7901b429ded960"
     },
     {
       "path": "jacobian/universal-keller-structure/PROOF.md",
-      "sha256": "a3dee93b955b9e449bae2fff3d2964262289572f22f0820309e6c56d8bb5cbd5"
+      "sha256": "1898b6c71619f81cca4d658409a5e804cee0fb5ad9a70bb0e40edf0a30197cb9"
     },
     {
       "path": "jacobian/universal-keller-compression/verify.py",
-      "sha256": "a8d9b280e09868e1b1abed24443541dc29daa94744e467517a5b3d6da85457a5"
+      "sha256": "9bc51cfb0e3cd93923d9ca6c4b2beae86453119b4828b86cecf33dd32ca62516"
     }
   ],
-  "external_sources": []
+  "external_sources": [],
+  "current_source_review": {
+    "date": "2026-11-17",
+    "scope": "Current imported-source byte identity after repository organization. Organization diffs were inspected; this metadata check does not replay mathematical arguments or upgrade independent replay, formal verification or external review.",
+    "updated_paths": [
+      "jacobian/universal-keller-plane-completion/PROOF.md",
+      "jacobian/universal-keller-receiver/PROOF.md",
+      "jacobian/universal-keller-structure/PROOF.md",
+      "jacobian/universal-keller-compression/verify.py"
+    ]
+  }
 }

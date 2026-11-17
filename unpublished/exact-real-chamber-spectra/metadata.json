@@ -9,7 +9,7 @@
   "status": "parked",
   "source": "main.tex",
   "pdf": "paper.pdf",
-  "build": "latexmk -pdf -interaction=nonstopmode -halt-on-error main.tex",
+  "build": "latexmk -pdf -jobname=paper -interaction=nonstopmode -halt-on-error main.tex",
   "verification": "Retained manuscript; excluded from the previous publication pipeline and not currently submission-ready.",
   "next_steps": [
     "Reassess the manuscript against the canonical fibre-spectrum proof and current literature."

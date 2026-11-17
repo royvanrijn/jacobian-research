@@ -321,12 +321,15 @@ any dimension-free integrality claim from constant Jacobian or derivative
 generation. No new external classification is imported.
 
 PF142's mixed minimal case, PF156's fixed-v2 quintic graph branch and
-PF158's quadratic ruling-four branch stay closed. The ruling-five
-residual is now localized by (21),(22) and the affine-response condition,
-but remains OPEN. Trivial deck, higher quadratic/cyclic targets, full
-marked quadratic regularity, generic first-derivative integrality and
-normal-tail increasing ideal powers remain OPEN. Full HC4/JC2 is not
-proved and no counterexample is constructed.
+PF158's quadratic ruling-four branch stay closed. Equations (21),(22)
+and the affine-response condition localize this note's ruling-five
+residual; the subsequent
+[polynomial-residue theorem](POLYNOMIAL_RESIDUE_RAMIFIED_LINE_AND_QUADRATIC_RULING_FIVE_CLOSURE.md)
+closes the entire quadratic ruling-five actual-target class. Trivial
+deck, higher quadratic/cyclic targets, full marked quadratic regularity,
+generic first-derivative integrality and normal-tail increasing ideal
+powers remain OPEN. Full HC4/JC2 is not proved and no counterexample is
+constructed.
 
 The universal proofs are (3)--(12) and the full-end audit (15)--(22).
 The checker passes 82 exact arithmetic and symbolic controls. Predecessor

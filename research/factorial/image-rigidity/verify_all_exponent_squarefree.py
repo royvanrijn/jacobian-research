@@ -136,7 +136,8 @@ audit={'canonical_proof':'ALL_EXPONENTS_AND_LARGE_EXPONENT_CUTOFF.tex','date':'2
     'finite_controls_are_not_numerical_density_evidence':True},indent=2)+'\n')
 files=('ALL_EXPONENTS_AND_LARGE_EXPONENT_CUTOFF.tex','all_exponent_squarefree.py','verify_all_exponent_squarefree.py',
     'all_exponent_squarefree_audit.json','all_exponent_squarefree_examples.json','prime_power_windows.py',
-    'PRIME_POWER_TWO_TERM_SFC.tex','SIMULTANEOUS_EXPONENTS_AND_POWER_SAVING.tex',
+    'PRIME_POWER_TWO_TERM_SFC.tex','QUANTITATIVE_SQUAREFREENESS_ALL_EXPONENTS.tex',
+    'STATUS_AND_LITERATURE.tex',
     'simultaneous_squarefree_verification.json','simultaneous_squarefree_audit.json',
     'sources/rocks-2015-author-preprint.pdf','sources/rocks-2015-author-preprint.txt')
 receipt={'status':'pass','checks':counts,'total':sum(counts.values()),

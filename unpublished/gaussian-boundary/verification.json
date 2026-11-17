@@ -2,7 +2,7 @@
   "status": "internally complete; independent mathematical review and publication pending",
   "source": "manuscript.tex",
   "pdf": "manuscript.pdf",
-  "pages": 58,
+  "pages": 56,
   "source_hashes": {
     "affine_classification_proof.tex": "9e5c41ad1239bdfa488969c9b861f3af866ad39c9ee051532690d2f4a842132b",
     "affine_coordinate_split.tex": "7cd07d2007478d52cde2655e83628f7afb527ed905ae06168840a3fc0400fd25",
@@ -10,14 +10,13 @@
     "analytic_core.tex": "630aa431b35e930680437ef4d666f71129f25187120bfb67302925f6c882b53b",
     "bounded_regular_reduction.tex": "c32a5f93ce171b012efad070443f56698c6e3ae522de475fe567d3c8ef9747d2",
     "concurrent_regular_exclusion.tex": "ae0579bbe1252d072e9a21c3e9e5ff0dce7b4e144938f11ceacb9bd39f48f866",
-    "constant_quadratic_fibres.tex": "90afcbfaec6ba639642088576b32de071b1b35fb2a1693aafbcb4d0ad5087e4b",
     "cusp_tangent_exclusion.tex": "3c009a2b6ee209fae6e7b93a4e48d81d20d00ca8f84226c5f12d959f2e951bb2",
     "formal_lemmas.tex": "756b6f2d0d7d3ec6661cc77af72836f79b2441d90194332ce0d089b3cd597e7d",
     "frame_extraction_cases.tex": "45b1e73111ee6c7f1c1aedd5de0958600f4cadef89a2dd06d7746a3a8f4427a4",
     "gradient_exclusion.tex": "476109105e47841add12c6b9157853566bfe4801a4e7cb0d6b5a394365aff4ca",
     "hyperbolic_suspension.tex": "12a67fd35be011ea1b515993ce1c91638dfc9be90cefc3fb5c98d17192b500dc",
     "laurent_logarithmic_bound.tex": "fdedd048f21c947935f40785fbbc24536173e39309b820f968deb35ecba5e6a6",
-    "manuscript.tex": "6b54296c62a2aa86ab9cb735c1beb3f65791fba66966935cbd1e8236a90fb5b4",
+    "manuscript.tex": "51870e75d2e99af3c6eae6414c42c20467f017cc7e2a52e36077f7a253789e75",
     "mixed_formal_exclusion.tex": "db2690329669c03a8ac3549da70ba4d4766db96ae7bffc618cf6d9ca00e99d13",
     "ordinary_axis_exclusion.tex": "1a6386300ace0a134963fab8a0b138068849b6d3fd4bd2d35619330d4a0f86c3",
     "ordinary_finite_exclusion.tex": "9da1cd85ef769a7218e728b8a01907f1b8eea60c7487ed716d02f8bd40c6077d",
@@ -28,7 +27,7 @@
     "seed_period_comparison.tex": "ded60022b51ecd34b1104e2c828947b8177e7e4a97f98c66324d3ca016e1450a",
     "uniform_cut_decay.tex": "dcd7c6d70c35feafb5ab1e4e8977f1b1b2fce78c5142d16ed7b00872fbbf0088"
   },
-  "pdf_sha256": "11f85304006460486876d6a6a09e9de5cbe06004ef58e4337d948a86992ab20c",
+  "pdf_sha256": "553a38fbc78b7b67eb04fd80813a775d53ad404ec208537c7d145d6e3e0e5293",
   "mathematical_review": "Internal written-proof walkthrough of the affine case split, stationary frames, all nine leading-cubic types and their critical-set subcases, and the global gradient/logarithmic/cut estimates. Clarified scaled-root multiplicities and the relative-homology/rapid-decay step. Selected exact algebra replayed by verify.py; no exhaustive or formal proof verification claimed.",
   "remaining_review": "Independent specialist review of the full formal and analytic proof and its external inputs before submission; no known omitted coefficient case was identified in this internal review.",
   "external_inputs": [
@@ -95,20 +94,11 @@
     }
   ],
   "layout_checks": {
-    "pages_rendered_and_inspected": 58,
+    "pages_rendered_and_inspected": 56,
     "unresolved_references": false,
     "overfull_boxes": false,
     "clean_rebuild_rendering_matches_retained_pdf": true,
-    "changed_pages_reinspected": [
-      3,
-      10,
-      11,
-      13,
-      14,
-      54,
-      58
-    ],
-    "notes": "All current pages rendered and inspected; changed guide, gauge, case-table and reference pages inspected at readable scale. A clean read-only rebuild matched text and pixels on all 58 pages without changing retained artifacts."
+    "notes": "All 56 pages rendered and visually inspected after focusing the abstract and removing the optional constant-fibre appendix; no clipping, overlap or unresolved references observed."
   },
   "independent_replay": false,
   "formal_verification": false,
@@ -142,8 +132,7 @@
       "analytic estimates",
       "full ternary-cubic classification",
       "independent external review"
-    ],
-    "support_identity_negative_control": "A valid but byte-altered support checker in an isolated copy was rejected; live sources were unchanged."
+    ]
   },
   "reviewed_on": "2026-11-17",
   "build_environment": {
@@ -154,9 +143,8 @@
     "pdflatex": "pdfTeX 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian)"
   },
   "review_findings": [
-    "Defined circular coordinates and differential-module terminology before the first use; every leading-cubic table row has an explicit proof reference.",
-    "Made the stationary-basis evaluation matrix and its diagonal gauge explicit, including the semisimple quotient-extension argument.",
-    "Replaced the formal Puiseux chapter locator with inspected Mannaa-Coquand Corollary 1.10 and stated the characteristic-zero separability check.",
-    "Removed an unused Bernstein attribution and unrelated programme terminology; no theorem hypothesis or conclusion changed."
+    "The abstract leads the new ternary-cubic classification and sharp cutoff; the boundary consequence follows with credited prior results.",
+    "Removed the optional constant-fibre appendix from the main paper. Its equivalence and cutoff are subsumed by the stronger one-base theorem; its scalar pole certificates are retained explicitly in the fibre paper.",
+    "All essential formal and analytic inputs and the nine leading-cubic cases remain in the 22-input source closure."
   ]
 }

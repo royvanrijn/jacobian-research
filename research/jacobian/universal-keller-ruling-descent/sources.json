@@ -8,12 +8,20 @@
     },
     {
       "path": "jacobian/universal-keller-structure/PROOF.md",
-      "sha256": "a3dee93b955b9e449bae2fff3d2964262289572f22f0820309e6c56d8bb5cbd5"
+      "sha256": "1898b6c71619f81cca4d658409a5e804cee0fb5ad9a70bb0e40edf0a30197cb9"
     },
     {
       "path": "jacobian/universal-keller-receiver/PROOF.md",
-      "sha256": "8790916cd2c5e3f0458674dc50a37af18f1c1322eb2720c2071a819283cf639f"
+      "sha256": "a01f90deafeca47c4b47f5ca26e63910b2e29957e3d5b14e0e7901b429ded960"
     }
   ],
-  "external_sources": []
+  "external_sources": [],
+  "current_source_review": {
+    "date": "2026-11-17",
+    "scope": "Current imported-source byte identity after repository organization. Organization diffs were inspected; this metadata check does not replay mathematical arguments or upgrade independent replay, formal verification or external review.",
+    "updated_paths": [
+      "jacobian/universal-keller-structure/PROOF.md",
+      "jacobian/universal-keller-receiver/PROOF.md"
+    ]
+  }
 }

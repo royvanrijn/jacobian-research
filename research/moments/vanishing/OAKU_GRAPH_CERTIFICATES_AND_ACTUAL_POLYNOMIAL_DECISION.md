@@ -25,8 +25,11 @@ classification of all Gaussian safe normal forms, and not an effective
 generator for arbitrary nonconvergent formal coefficient oracles.
 
 See the [checker](verify_algebraic_bernstein_generator.py),
-[receipt](algebraic_bernstein_generator_verification.json),
-[example](algebraic_bernstein_examples/unary_homogeneous/certificate.json)..
+[historical internal-run receipt](algebraic_bernstein_generator_verification.json)
+and [distributed unary certificate](algebraic_bernstein_examples/unary_homogeneous/certificate.json).
+The checker contains the literal example inputs and generates its other
+input, certificate, pipeline and CAS files; those generated files are not
+distributed.
 
 ## 1. The explicit Fourier exponential module maps to the actual image
 
@@ -267,11 +270,15 @@ P=x,lambda=zeta, the backend instead finds h(S)=S. This genuinely
 tests scalar torsion and the eventual-infinity branch.
 
 Input JSON contains dimension, phase_terms and symbol_terms. Each
-term is [exponent_vector,"rational coefficient"]. Run
+term is [exponent_vector,"rational coefficient"]. From the repository root,
+supply `input.json`; it is not a bundled demonstration file. For the
+example above its contents are
+`{"dimension":1,"phase_terms":[[[2],"1"]],"symbol_terms":[[[3],"1"]]}`.
+The commands generate their output files.
 
-    python algebraic_bernstein_generator.py input.json certificate.json
-    python algebraic_bernstein_generator.py input.json result.json --decide
-    python algebraic_bernstein_generator.py certificate.json verified.json --verify
+    .venv/bin/python research/moments/vanishing/algebraic_bernstein_generator.py input.json certificate.json
+    .venv/bin/python research/moments/vanishing/algebraic_bernstein_generator.py input.json result.json --decide
+    .venv/bin/python research/moments/vanishing/algebraic_bernstein_generator.py certificate.json verified.json --verify
 
 The output includes both full operators, explicit graph generators,
 both lists of left witnesses, cleared generic denominators, h(S),

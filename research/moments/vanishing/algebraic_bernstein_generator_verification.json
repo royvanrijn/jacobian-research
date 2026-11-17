@@ -288,5 +288,16 @@
   "universal_termination_and_specialization_verified_by": "written proof with precise classical imports;finite identities checked separately",
   "independent_replay": false,
   "formal_verification": false,
-  "external_review": false
+  "external_review": false,
+  "record_scope": "Historical successful internal execution. The completed outcome, mathematical controls and original source/output hashes below describe that run; no new execution or hash refresh is recorded by this availability correction.",
+  "example_artifact_availability": {
+    "review_date": "2026-11-17",
+    "bundled_generated_example_files": [
+      "algebraic_bernstein_examples/unary_homogeneous/certificate.json"
+    ],
+    "historical_hash_map_scope": "The legacy retained_example_files_sha256 map identifies generated files from the historical run. It does not assert that every listed file is distributed in the current repository.",
+    "input_and_generation": "The finite example inputs are literal data in verify_algebraic_bernstein_generator.py. That control script generates its input, certificate, pipeline and CAS files when run.",
+    "distribution_scope": "Only the unary_homogeneous certificate is distributed; the other generated example files are not distributed.",
+    "exact_byte_regeneration_claimed": false
+  }
 }

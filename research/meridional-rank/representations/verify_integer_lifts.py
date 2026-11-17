@@ -3,6 +3,9 @@
 
 Panel verification does not call the producer's matrix or Smith algorithms.
 Knot names are imported from the pinned primary table, not identified here.
+
+
+Full-campaign standalone inputs are not bundled; current checks import these helpers.
 """
 
 from collections import Counter
@@ -278,4 +281,9 @@ def main():
 
 
 if __name__ == "__main__":
-    main()
+    raise SystemExit(
+        'Full campaign inputs are not bundled in this curated checkout. '
+        'This module remains available for imported replay helpers. '
+        'Use the nine current certificate checks described in research/meridional-rank/README.md. '
+        'For named cases run python3 research/meridional-rank/representations/audit_graph_cover_family_scope.py; for sharp-five controls run python3 research/meridional-rank/representations/verify_diagram_audit.py.'
+    )

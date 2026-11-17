@@ -456,8 +456,9 @@ which evaluates to (6.14).  No term containing \(b_m^2\) can have degree
 For the rectangle \((\deg C,\deg D)\le(d,d+2)\), the first \(d+2\) pure
 jets therefore reconstruct all of \(D\).  After normalizing \(a_1=1\), the
 entire remaining problem is an elimination problem in the \(d-1\) weighted
-parameters \(a_2,\ldots,a_d\).  Theorems 7.1--7.4 identify those residual
-ideals for \(d=2,3,4,5\).
+parameters \(a_2,\ldots,a_d\). Proposition 6.2 gives this reduction; a
+classification of those higher-degree residual ideals is outside the
+retained proof above.
 
 ## Verification scope
 

@@ -7,7 +7,7 @@
       "id": "moments",
       "title": "Moments and vanishing",
       "summary": "Generalized vanishing, Gaussian moments and Image/Mathieu spaces.",
-      "status": "Four published preprints; complete Gaussian-boundary and reductive-Mathieu manuscripts await review. General Gaussian and Image extensions remain open.",
+      "status": "Four published preprints; the Gaussian-boundary and Mathieu counterexample manuscripts await independent review and publication. General Gaussian and Image extensions remain open.",
       "readme": "moments/README.md",
       "results": [
         {
@@ -75,7 +75,7 @@
           "id": "GAUSSIAN-STRUCTURE",
           "title": "All-degree Gaussian structure and safety gap",
           "state": "proved",
-          "scope": "Nonzero polynomial weights preserve Gaussian safety and optimal affine slopes while positive tilts expose the remaining unweighted-vacuum purity gap; General field safety-to-purity is equivalent to primitive original vacua in actual rank-one Gaussian images finite over the polynomial time ring; Rational primitives and nontrivial embedded unipotent modules cannot occur in actual Gaussian generic images over any characteristic-zero field; Nonzero Gaussian critical action excludes every globally regular actual submodule in all ranks and every characteristic-zero field; All-degree constant quadratic Gaussian fibres:arbitrary Jordan cancellation and polynomial-unit rigidity; Universal constant-quadratic-fibre base-marker certificates,content torsion and cutoff transfer",
+          "scope": "Nonzero polynomial weights preserve Gaussian safety and optimal affine slopes while positive tilts expose the remaining unweighted-vacuum purity gap; General field safety-to-purity is equivalent to primitive original vacua in actual rank-one Gaussian images finite over the polynomial time ring; Rational primitives and nontrivial embedded unipotent modules cannot occur in actual Gaussian generic images over any characteristic-zero field; Nonzero Gaussian critical action excludes every globally regular actual submodule in all ranks and every characteristic-zero field; All-degree constant quadratic Gaussian fibres:arbitrary Jordan cancellation and polynomial-unit rigidity; Constant-quadratic-fibre marker reduction over characteristic-zero fields, ambient coefficient-content torsion, actual generation for nilpotent source polynomials, and the exact scalar specialization defect; One-base constant-fibre purity/safety equivalence also holds for correlated real Gaussian laws with positive-definite covariance",
           "canonical_source": "moments/vanishing/GAUSSIAN_AMPLITUDE_IDEALS_AND_WEIGHT_INVARIANCE.md",
           "checker": "moments/vanishing/verify_gaussian_amplitude_content.py",
           "artifact_hash": "sha256:2f09dee3dbc4b97f4a2cda6926a22380b3349fda587b4173b2a463b689caf355",
@@ -84,8 +84,7 @@
             "moments/vanishing/GAUSSIAN_LOGARITHM_EXCLUSION_AND_RATIONAL_PRIMITIVES.md",
             "moments/vanishing/GAUSSIAN_G_FUNCTIONS_AND_GLOBAL_REGULAR_CORE.md",
             "../unpublished/gaussian-quadratic-fibre-jordan-cancellation/main.tex",
-            "../unpublished/gaussian-constant-fibre-base-marker-certificates/main.tex",
-            "../unpublished/gaussian-marker-generation-ring-defect/main.tex"
+            "../unpublished/gaussian-constant-fibre-base-marker-certificates/main.tex"
           ],
           "proof_type": "hybrid",
           "independent_replay": false,
@@ -101,7 +100,7 @@
               "sha256": "c72e17f84df7613b9ce471250560e02497905994d0a7b7442785e75016d661b1"
             }
           ],
-          "verification_note": "Recorded proof scope and assurance retained. Organization checked source identities and paths; no mathematical replay or new external review was performed."
+          "verification_note": "Current Gaussian companion manuscripts combine marker reduction with its scalar specialization obstruction and prove the nilpotent-source and correlated-Gaussian corollaries. Internal source review and current artifact checks are recorded in their verification files. Earlier finite checker receipts retain their original scope; no new external review or formal verification is claimed."
         },
         {
           "id": "TWO-PAIR-IMAGE",
@@ -305,13 +304,13 @@
           "scope": "A plane Keller map whose Jacobian matrix has one-dimensional image is an explicit affine shear. Together with the explicitly imported Tang structural theorem, vanishing Levi-Civita Ricci tensor forces polynomial gradient invertibility for complex HC4 potentials. Scalar curvature alone does not suffice.",
           "canonical_source": "hessian/hc4-triangular-graphs/RICCI_FLAT_HC4_AND_ONE_DIMENSIONAL_JACOBIAN_IMAGES.md",
           "checker": "hessian/hc4-triangular-graphs/verify_ricci_flat_hc4.py",
-          "artifact_hash": "sha256:ac1a0384cd0fb5efbaccc5d15013b3b94e837b6ef6a2aca0eee182b5e012fc4b",
+          "artifact_hash": "sha256:510d76f7d0b7a6ec3872fe0c5d5d68eebf5e32c66a3710d0d802dc80ffaa96e6",
           "evidence": [],
           "proof_type": "hybrid",
           "independent_replay": false,
           "formal_verification": false,
           "external_review": false,
-          "verification_note": "Recorded proof scope and assurance retained. Organization checked source identities and paths; no mathematical replay or new external review was performed."
+          "verification_note": "Recorded proof scope and assurance retained. Organization checked source identities and paths; no mathematical replay or new external review was performed. Current finite controls were replayed after removing obsolete task bookkeeping and rebinding current source inputs; mathematical predicates and assurance flags are unchanged."
         },
         {
           "id": "HESSIAN-MOMENT-TRACE",
@@ -320,13 +319,13 @@
           "scope": "In the actual complex plane Keller setting, every even integer moment space is a finite projective ramification lattice with exact divisors and trace discriminant lengths. The sixth-moment trace form detects every positive ramification index; perfection is equivalent to inversion under the stated canonical integrability and purity inputs.",
           "canonical_source": "hessian/hc4-triangular-graphs/EVEN_MOMENT_LATTICES_AND_SIXTH_MOMENT_TRACE_TEST.md",
           "checker": "hessian/hc4-triangular-graphs/verify_even_moment_lattices.py",
-          "artifact_hash": "sha256:d2ec6ecd8b741d68ee6129cb77927fc32f57685321b0d9e8fdf6b5b11a9d82cf",
+          "artifact_hash": "sha256:d642939e620110127f0762aabadd73fa6703b28a0cff8027555ded157c9e9821",
           "evidence": [],
           "proof_type": "hybrid",
           "independent_replay": false,
           "formal_verification": false,
           "external_review": false,
-          "verification_note": "Recorded proof scope and assurance retained. Organization checked source identities and paths; no mathematical replay or new external review was performed."
+          "verification_note": "Recorded proof scope and assurance retained. Organization checked source identities and paths; no mathematical replay or new external review was performed. Current finite controls were replayed after removing obsolete task bookkeeping and rebinding current source inputs; mathematical predicates and assurance flags are unchanged."
         }
       ],
       "open_questions": [
@@ -646,8 +645,8 @@
           "state": "proved",
           "scope": "All-field lift bounds and sixteen sharp five-bridge table certificates; Branched-cover interpretation, nonabelian lift bounds and complete panel exclusions; Rank-two affine certificates exactly equal three-sheeted homology and relative S4 kernel counts",
           "canonical_source": "meridional-rank/representations/PROOF.tex",
-          "checker": "meridional-rank/representations/verify_integer_lifts.py",
-          "artifact_hash": "sha256:4ef7d33a3ec593f8d43d0c897e14d22e70323657d380ee9c44b657cc636ab309",
+          "checker": "meridional-rank/representations/verify_diagram_audit.py",
+          "artifact_hash": "sha256:41f7bb9e96b6863e845feaac2870fc7a734946715c82cda33055e7e7a276aec3",
           "evidence": [
             "meridional-rank/representations/ALL_CHARACTERISTIC_LIFTS.tex",
             "meridional-rank/representations/BRANCHED_COVER_LIFT_BOUNDS.tex",
@@ -657,7 +656,7 @@
           "independent_replay": false,
           "formal_verification": false,
           "external_review": false,
-          "verification_note": "Recorded proof scope and assurance retained. Organization checked source identities and paths; no mathematical replay or new external review was performed."
+          "verification_note": "Current compact replay checks sixteen sharp-five diagram/certificate transfers and independent Montesinos constructions, including rejection of a corrupted crossing. General all-field and branched-cover lower bounds remain written proofs; retained older receipts have their stated historical scope. This checker is not a replay of the retired broad integer-lift campaign. No new independent mathematical or external review is claimed."
         }
       ],
       "open_questions": [
@@ -835,7 +834,7 @@
           "id": "FORMAL-GMC2",
           "title": "Binary Gaussian moments in Lean",
           "state": "proved",
-          "scope": "The complete bivariate theorem is formalized conditional on the explicit Duistermaat\u2013van der Kallen and finite-type specialization axiom interfaces.",
+          "scope": "The complete bivariate theorem is formalized conditional on the explicit Duistermaat–van der Kallen and finite-type specialization axiom interfaces.",
           "canonical_source": "foundations/formal/gmc2/README.md",
           "checker": null,
           "artifact_hash": null,

@@ -447,17 +447,19 @@
   "assurance": "All finite source traces, selected ports, complete amalgam normal forms, slopes, S3 filling quotients and eight uppers independently checked without producer imports. Five proposed transfers have no certificate and transfer no rank conclusion; all five unequal-determinant pairs cannot have homeomorphic covers. Legacy source parser used only for arc-index transport. Canonical JSJ, realization, two-bridge unknot/filling fact and BW05 case6 exclusion are written uniform arguments and explicit classical imports, not proved by this finite receipt.",
   "input_sha256": {
     "verify_three_piece_covers.py": "a604ae66534c6daf5c42aacb00b15388bfad22f6be00167b076458ffdc6a8a4c",
-    "three_piece_cover_results.json": "ab30ccbf3434f93fbbfa79471bca083f2c2bc9b5adefb60b66ade36594970988",
     "three_piece_cover_inputs.json": "ae30c9e01b70de6027574a4fdd4083b5eb6da39401c1fdb0f2211068a9d33ab3",
-    "remaining_cover_structure_results.json": "039a770fcabf99d254bed3f2c3cdbfe40e405e87a90f2dab136d73c46866a32d",
+    "three_piece_cover_results.json": "ab30ccbf3434f93fbbfa79471bca083f2c2bc9b5adefb60b66ade36594970988",
     "remaining_cover_structure_inputs.json": "fc3d0ed698f83cf1fbe6e7820da6e28e034cd89dbd95ced945fcf3caf0497715",
+    "remaining_cover_structure_results.json": "039a770fcabf99d254bed3f2c3cdbfe40e405e87a90f2dab136d73c46866a32d",
+    "compact_cover_results.json": "70072f8debac0a188e60c08b4724f9550a5795f57832632f0913390d88c32b96",
     "parabolic_panel.json": "fd300c9d04076c3eea911a104a810743f4d300ec60478c42f7ea97c115298286",
-    "verify_compact_covers.py": "a3791df7d81a6ce3f072cc19bf52efab78395376fae4d91ce0f12dce03770a2f",
-    "verify_port_assemblies.py": "d05cb9773dc4145bec2e88d3a2aadb2d86ec5c59d55d5030ba29fa0e036b07e2",
+    "joint_a5_results.json": "3952119118bcd127a0f6b786645b35ed79322972096715830c9ca6ba09349fcc",
+    "verify_compact_covers.py": "209d12d67cabae8d852db39c9b8ee313496bec9097f4e6f4e75c332b08c8f4cb",
+    "verify_port_assemblies.py": "7b1732da1612c2531546577596ea8762d38151c4a4f655051adcfbf79e51fc73",
     "verify_mutation_covers.py": "cbc25df27feb84f2c1ee9ce8b94e0bfb316c31202fd9e7bbd99708a80733f4ac",
     "verify_four_piece_covers.py": "e650a08836a6684eb40c71c2346c7347c95b65533824dc36d5ff6d651f47b75e",
-    "verify_double_transpositions.py": "43eaa8c10f8cb8e96d63f8ab01028aee853d592809c7e8eaa92f3ad283545702",
+    "verify_double_transpositions.py": "eb6ff0490c74553678ce9ef6790d081ebd2a3d53e2ab347de72854b4cce8e512",
     "parabolic_lifts.py": "18abf5886002d54f17b5ee8593f31fb1b339f66a36605b7ccec7863ff4648a27",
-    "joint_a5_results.json": "3952119118bcd127a0f6b786645b35ed79322972096715830c9ca6ba09349fcc"
+    "THREE_PIECE_DOUBLE_COVERS_SHARP_FOUR.tex": "48464366b7a0470887a2d15a46f8bbbe8fc8a47022f3d2ae1b8727a3b6472c1f"
   }
 }

@@ -245,6 +245,6 @@ The original S, Lambda, ALL ramified and unramified primes, and all
 final image identifications are retained. Automatic unscaled finite
 landing, full trace-dual multiplication/marked-energy integrality,
 cyclic/trivial-deck and non-equivariant cases, finite source-image point
-gaps and the full Wright/HC4/JC2 theorem remain OPEN. Goal ACTIVE.
+gaps and the full Wright/HC4/JC2 theorem remain OPEN.
 No novelty, formal verification, independent whole proof or external
 review is asserted.

@@ -1,0 +1,1268 @@
+{
+  "input_sha256": {
+    "nonabelian_core_plan.json": "6fe82f59a3c41412e07281187f5e1fe666add29ffe89657e567b172ec322ce49",
+    "parabolic_panel.json": "fd300c9d04076c3eea911a104a810743f4d300ec60478c42f7ea97c115298286",
+    "parabolic_panel_results.json": "2633b94cfaa829e620bc775a8f4b600205a9c8202428ced88fb4b4a918b48bad",
+    "search_nonabelian_core.py": "3fd20702ed95ee17d6890f8baf0a60ceb9ba22915fc5ad742a1dfea3ef2631fc",
+    "parabolic_lifts.py": "18abf5886002d54f17b5ee8593f31fb1b339f66a36605b7ccec7863ff4648a27"
+  },
+  "results": [
+    {
+      "name": "13a_129",
+      "status": "COMPLETE",
+      "normalized_assignments_tested": 216000,
+      "normalized_colourings": 121,
+      "sharp_four_count_certificate": false,
+      "first_nonconstant_colouring": {
+        "seed_assignment": [
+          0,
+          16,
+          0,
+          21
+        ],
+        "arc_labels": [
+          0,
+          16,
+          48,
+          16,
+          0,
+          32,
+          48,
+          45,
+          21,
+          1,
+          33,
+          45,
+          45
+        ]
+      },
+      "seeds": [
+        0,
+        1,
+        4,
+        8
+      ],
+      "seed_trace": [
+        [
+          1,
+          4,
+          5
+        ],
+        [
+          4,
+          1,
+          2
+        ],
+        [
+          5,
+          8,
+          9
+        ],
+        [
+          2,
+          0,
+          12
+        ],
+        [
+          0,
+          2,
+          3
+        ],
+        [
+          9,
+          12,
+          11
+        ],
+        [
+          11,
+          5,
+          6
+        ],
+        [
+          6,
+          9,
+          10
+        ],
+        [
+          10,
+          8,
+          7
+        ]
+      ],
+      "seconds": 0.133108
+    },
+    {
+      "name": "13a_135",
+      "status": "COMPLETE",
+      "normalized_assignments_tested": 216000,
+      "normalized_colourings": 241,
+      "sharp_four_count_certificate": false,
+      "first_nonconstant_colouring": {
+        "seed_assignment": [
+          0,
+          1,
+          31,
+          50
+        ],
+        "arc_labels": [
+          0,
+          1,
+          1,
+          2,
+          31,
+          31,
+          50,
+          15,
+          50,
+          50,
+          2,
+          47,
+          2
+        ]
+      },
+      "seeds": [
+        0,
+        1,
+        4,
+        9
+      ],
+      "seed_trace": [
+        [
+          1,
+          4,
+          5
+        ],
+        [
+          4,
+          1,
+          2
+        ],
+        [
+          5,
+          9,
+          10
+        ],
+        [
+          2,
+          0,
+          12
+        ],
+        [
+          0,
+          2,
+          3
+        ],
+        [
+          9,
+          12,
+          11
+        ],
+        [
+          11,
+          5,
+          6
+        ],
+        [
+          6,
+          9,
+          8
+        ],
+        [
+          10,
+          8,
+          7
+        ]
+      ],
+      "seconds": 0.132587
+    },
+    {
+      "name": "13a_136",
+      "status": "COMPLETE",
+      "normalized_assignments_tested": 216000,
+      "normalized_colourings": 121,
+      "sharp_four_count_certificate": false,
+      "first_nonconstant_colouring": {
+        "seed_assignment": [
+          0,
+          16,
+          0,
+          21
+        ],
+        "arc_labels": [
+          0,
+          16,
+          48,
+          16,
+          0,
+          32,
+          48,
+          45,
+          45,
+          21,
+          1,
+          33,
+          45
+        ]
+      },
+      "seeds": [
+        0,
+        1,
+        4,
+        9
+      ],
+      "seed_trace": [
+        [
+          1,
+          4,
+          5
+        ],
+        [
+          4,
+          1,
+          2
+        ],
+        [
+          5,
+          9,
+          10
+        ],
+        [
+          2,
+          0,
+          12
+        ],
+        [
+          0,
+          2,
+          3
+        ],
+        [
+          9,
+          12,
+          11
+        ],
+        [
+          11,
+          9,
+          8
+        ],
+        [
+          8,
+          5,
+          6
+        ],
+        [
+          10,
+          8,
+          7
+        ]
+      ],
+      "seconds": 0.132284
+    },
+    {
+      "name": "13a_137",
+      "status": "COMPLETE",
+      "normalized_assignments_tested": 216000,
+      "normalized_colourings": 241,
+      "sharp_four_count_certificate": false,
+      "first_nonconstant_colouring": {
+        "seed_assignment": [
+          0,
+          1,
+          31,
+          15
+        ],
+        "arc_labels": [
+          0,
+          1,
+          1,
+          2,
+          31,
+          31,
+          50,
+          15,
+          47,
+          15,
+          31,
+          31,
+          2
+        ]
+      },
+      "seeds": [
+        0,
+        1,
+        4,
+        9
+      ],
+      "seed_trace": [
+        [
+          1,
+          4,
+          5
+        ],
+        [
+          4,
+          1,
+          2
+        ],
+        [
+          2,
+          0,
+          12
+        ],
+        [
+          0,
+          2,
+          3
+        ],
+        [
+          9,
+          12,
+          11
+        ],
+        [
+          5,
+          11,
+          10
+        ],
+        [
+          11,
+          9,
+          8
+        ],
+        [
+          8,
+          5,
+          6
+        ],
+        [
+          10,
+          8,
+          7
+        ]
+      ],
+      "seconds": 0.132493
+    },
+    {
+      "name": "13a_194",
+      "status": "COMPLETE",
+      "normalized_assignments_tested": 216000,
+      "normalized_colourings": 121,
+      "sharp_four_count_certificate": false,
+      "first_nonconstant_colouring": {
+        "seed_assignment": [
+          0,
+          16,
+          0,
+          2
+        ],
+        "arc_labels": [
+          0,
+          16,
+          48,
+          16,
+          0,
+          32,
+          21,
+          2,
+          2,
+          48,
+          45,
+          55,
+          45
+        ]
+      },
+      "seeds": [
+        0,
+        1,
+        4,
+        7
+      ],
+      "seed_trace": [
+        [
+          1,
+          4,
+          5
+        ],
+        [
+          4,
+          1,
+          2
+        ],
+        [
+          5,
+          7,
+          8
+        ],
+        [
+          2,
+          0,
+          12
+        ],
+        [
+          0,
+          2,
+          3
+        ],
+        [
+          8,
+          12,
+          11
+        ],
+        [
+          11,
+          5,
+          6
+        ],
+        [
+          6,
+          8,
+          9
+        ],
+        [
+          7,
+          11,
+          10
+        ]
+      ],
+      "seconds": 0.132996
+    },
+    {
+      "name": "13a_196",
+      "status": "COMPLETE",
+      "normalized_assignments_tested": 216000,
+      "normalized_colourings": 241,
+      "sharp_four_count_certificate": false,
+      "first_nonconstant_colouring": {
+        "seed_assignment": [
+          0,
+          1,
+          31,
+          47
+        ],
+        "arc_labels": [
+          0,
+          1,
+          1,
+          2,
+          31,
+          31,
+          2,
+          47,
+          15,
+          50,
+          15,
+          15,
+          2
+        ]
+      },
+      "seeds": [
+        0,
+        1,
+        4,
+        7
+      ],
+      "seed_trace": [
+        [
+          1,
+          4,
+          5
+        ],
+        [
+          4,
+          1,
+          2
+        ],
+        [
+          5,
+          7,
+          8
+        ],
+        [
+          2,
+          0,
+          12
+        ],
+        [
+          0,
+          2,
+          3
+        ],
+        [
+          7,
+          12,
+          11
+        ],
+        [
+          8,
+          11,
+          10
+        ],
+        [
+          3,
+          10,
+          9
+        ],
+        [
+          11,
+          5,
+          6
+        ]
+      ],
+      "seconds": 0.133514
+    },
+    {
+      "name": "13a_197",
+      "status": "COMPLETE",
+      "normalized_assignments_tested": 216000,
+      "normalized_colourings": 121,
+      "sharp_four_count_certificate": false,
+      "first_nonconstant_colouring": {
+        "seed_assignment": [
+          0,
+          16,
+          0,
+          17
+        ],
+        "arc_labels": [
+          0,
+          16,
+          48,
+          16,
+          0,
+          32,
+          17,
+          17,
+          41,
+          48,
+          45,
+          7,
+          45
+        ]
+      },
+      "seeds": [
+        0,
+        1,
+        4,
+        7
+      ],
+      "seed_trace": [
+        [
+          1,
+          4,
+          5
+        ],
+        [
+          4,
+          1,
+          2
+        ],
+        [
+          5,
+          7,
+          8
+        ],
+        [
+          8,
+          5,
+          6
+        ],
+        [
+          2,
+          0,
+          12
+        ],
+        [
+          0,
+          2,
+          3
+        ],
+        [
+          7,
+          12,
+          11
+        ],
+        [
+          11,
+          8,
+          9
+        ],
+        [
+          3,
+          9,
+          10
+        ]
+      ],
+      "seconds": 0.133147
+    },
+    {
+      "name": "13a_198",
+      "status": "COMPLETE",
+      "normalized_assignments_tested": 216000,
+      "normalized_colourings": 241,
+      "sharp_four_count_certificate": false,
+      "first_nonconstant_colouring": {
+        "seed_assignment": [
+          0,
+          1,
+          31,
+          47
+        ],
+        "arc_labels": [
+          0,
+          1,
+          1,
+          2,
+          31,
+          31,
+          2,
+          47,
+          15,
+          50,
+          15,
+          2,
+          2
+        ]
+      },
+      "seeds": [
+        0,
+        1,
+        4,
+        7
+      ],
+      "seed_trace": [
+        [
+          1,
+          4,
+          5
+        ],
+        [
+          4,
+          1,
+          2
+        ],
+        [
+          5,
+          7,
+          8
+        ],
+        [
+          8,
+          5,
+          6
+        ],
+        [
+          2,
+          0,
+          12
+        ],
+        [
+          0,
+          2,
+          3
+        ],
+        [
+          6,
+          12,
+          11
+        ],
+        [
+          7,
+          11,
+          10
+        ],
+        [
+          11,
+          8,
+          9
+        ]
+      ],
+      "seconds": 0.132571
+    },
+    {
+      "name": "13a_233",
+      "status": "COMPLETE",
+      "normalized_assignments_tested": 216000,
+      "normalized_colourings": 1,
+      "sharp_four_count_certificate": false,
+      "first_nonconstant_colouring": null,
+      "seeds": [
+        0,
+        1,
+        4,
+        5
+      ],
+      "seed_trace": [
+        [
+          1,
+          5,
+          6
+        ],
+        [
+          5,
+          1,
+          2
+        ],
+        [
+          2,
+          0,
+          12
+        ],
+        [
+          0,
+          2,
+          3
+        ],
+        [
+          3,
+          6,
+          7
+        ],
+        [
+          4,
+          7,
+          8
+        ],
+        [
+          6,
+          12,
+          11
+        ],
+        [
+          8,
+          11,
+          10
+        ],
+        [
+          11,
+          8,
+          9
+        ]
+      ],
+      "seconds": 0.133439
+    },
+    {
+      "name": "13a_234",
+      "status": "COMPLETE",
+      "normalized_assignments_tested": 216000,
+      "normalized_colourings": 121,
+      "sharp_four_count_certificate": false,
+      "first_nonconstant_colouring": {
+        "seed_assignment": [
+          0,
+          1,
+          2,
+          31
+        ],
+        "arc_labels": [
+          0,
+          1,
+          1,
+          2,
+          2,
+          31,
+          31,
+          47,
+          31,
+          15,
+          2,
+          50,
+          2
+        ]
+      },
+      "seeds": [
+        0,
+        1,
+        4,
+        5
+      ],
+      "seed_trace": [
+        [
+          1,
+          5,
+          6
+        ],
+        [
+          5,
+          1,
+          2
+        ],
+        [
+          2,
+          0,
+          12
+        ],
+        [
+          0,
+          2,
+          3
+        ],
+        [
+          3,
+          6,
+          7
+        ],
+        [
+          4,
+          7,
+          8
+        ],
+        [
+          6,
+          12,
+          11
+        ],
+        [
+          8,
+          11,
+          10
+        ],
+        [
+          11,
+          8,
+          9
+        ]
+      ],
+      "seconds": 0.133768
+    },
+    {
+      "name": "13a_239",
+      "status": "COMPLETE",
+      "normalized_assignments_tested": 216000,
+      "normalized_colourings": 1,
+      "sharp_four_count_certificate": false,
+      "first_nonconstant_colouring": null,
+      "seeds": [
+        0,
+        1,
+        5,
+        9
+      ],
+      "seed_trace": [
+        [
+          1,
+          5,
+          6
+        ],
+        [
+          6,
+          1,
+          2
+        ],
+        [
+          5,
+          9,
+          10
+        ],
+        [
+          2,
+          0,
+          12
+        ],
+        [
+          0,
+          2,
+          3
+        ],
+        [
+          3,
+          6,
+          7
+        ],
+        [
+          10,
+          3,
+          4
+        ],
+        [
+          4,
+          7,
+          8
+        ],
+        [
+          7,
+          10,
+          11
+        ]
+      ],
+      "seconds": 0.134489
+    },
+    {
+      "name": "13a_242",
+      "status": "COMPLETE",
+      "normalized_assignments_tested": 216000,
+      "normalized_colourings": 121,
+      "sharp_four_count_certificate": false,
+      "first_nonconstant_colouring": {
+        "seed_assignment": [
+          0,
+          1,
+          31,
+          47
+        ],
+        "arc_labels": [
+          0,
+          1,
+          1,
+          2,
+          15,
+          31,
+          31,
+          47,
+          50,
+          47,
+          47,
+          15,
+          2
+        ]
+      },
+      "seeds": [
+        0,
+        1,
+        5,
+        9
+      ],
+      "seed_trace": [
+        [
+          1,
+          5,
+          6
+        ],
+        [
+          6,
+          1,
+          2
+        ],
+        [
+          2,
+          0,
+          12
+        ],
+        [
+          0,
+          2,
+          3
+        ],
+        [
+          3,
+          6,
+          7
+        ],
+        [
+          7,
+          9,
+          10
+        ],
+        [
+          9,
+          12,
+          11
+        ],
+        [
+          10,
+          3,
+          4
+        ],
+        [
+          4,
+          7,
+          8
+        ]
+      ],
+      "seconds": 0.135202
+    },
+    {
+      "name": "13a_243",
+      "status": "COMPLETE",
+      "normalized_assignments_tested": 216000,
+      "normalized_colourings": 1,
+      "sharp_four_count_certificate": false,
+      "first_nonconstant_colouring": null,
+      "seeds": [
+        0,
+        1,
+        4,
+        5
+      ],
+      "seed_trace": [
+        [
+          1,
+          5,
+          6
+        ],
+        [
+          6,
+          1,
+          2
+        ],
+        [
+          2,
+          0,
+          12
+        ],
+        [
+          0,
+          2,
+          3
+        ],
+        [
+          3,
+          6,
+          7
+        ],
+        [
+          4,
+          7,
+          8
+        ],
+        [
+          5,
+          12,
+          11
+        ],
+        [
+          8,
+          11,
+          10
+        ],
+        [
+          11,
+          8,
+          9
+        ]
+      ],
+      "seconds": 0.133336
+    },
+    {
+      "name": "13a_244",
+      "status": "COMPLETE",
+      "normalized_assignments_tested": 216000,
+      "normalized_colourings": 121,
+      "sharp_four_count_certificate": false,
+      "first_nonconstant_colouring": {
+        "seed_assignment": [
+          0,
+          1,
+          2,
+          31
+        ],
+        "arc_labels": [
+          0,
+          1,
+          1,
+          2,
+          2,
+          31,
+          31,
+          47,
+          31,
+          15,
+          2,
+          50,
+          2
+        ]
+      },
+      "seeds": [
+        0,
+        1,
+        4,
+        5
+      ],
+      "seed_trace": [
+        [
+          1,
+          5,
+          6
+        ],
+        [
+          6,
+          1,
+          2
+        ],
+        [
+          2,
+          0,
+          12
+        ],
+        [
+          0,
+          2,
+          3
+        ],
+        [
+          3,
+          6,
+          7
+        ],
+        [
+          4,
+          7,
+          8
+        ],
+        [
+          5,
+          12,
+          11
+        ],
+        [
+          8,
+          11,
+          10
+        ],
+        [
+          11,
+          8,
+          9
+        ]
+      ],
+      "seconds": 0.133306
+    },
+    {
+      "name": "13a_253",
+      "status": "COMPLETE",
+      "normalized_assignments_tested": 216000,
+      "normalized_colourings": 1,
+      "sharp_four_count_certificate": false,
+      "first_nonconstant_colouring": null,
+      "seeds": [
+        0,
+        1,
+        5,
+        8
+      ],
+      "seed_trace": [
+        [
+          1,
+          5,
+          6
+        ],
+        [
+          6,
+          1,
+          2
+        ],
+        [
+          2,
+          0,
+          12
+        ],
+        [
+          0,
+          2,
+          3
+        ],
+        [
+          3,
+          6,
+          7
+        ],
+        [
+          7,
+          3,
+          4
+        ],
+        [
+          4,
+          8,
+          9
+        ],
+        [
+          5,
+          9,
+          10
+        ],
+        [
+          8,
+          10,
+          11
+        ]
+      ],
+      "seconds": 0.134013
+    },
+    {
+      "name": "13a_265",
+      "status": "COMPLETE",
+      "normalized_assignments_tested": 216000,
+      "normalized_colourings": 121,
+      "sharp_four_count_certificate": false,
+      "first_nonconstant_colouring": {
+        "seed_assignment": [
+          0,
+          1,
+          31,
+          31
+        ],
+        "arc_labels": [
+          0,
+          1,
+          1,
+          2,
+          15,
+          31,
+          31,
+          47,
+          31,
+          31,
+          2,
+          50,
+          2
+        ]
+      },
+      "seeds": [
+        0,
+        1,
+        5,
+        8
+      ],
+      "seed_trace": [
+        [
+          1,
+          5,
+          6
+        ],
+        [
+          6,
+          1,
+          2
+        ],
+        [
+          5,
+          8,
+          9
+        ],
+        [
+          2,
+          0,
+          12
+        ],
+        [
+          0,
+          2,
+          3
+        ],
+        [
+          3,
+          6,
+          7
+        ],
+        [
+          7,
+          3,
+          4
+        ],
+        [
+          4,
+          9,
+          10
+        ],
+        [
+          8,
+          10,
+          11
+        ]
+      ],
+      "seconds": 0.134183
+    }
+  ],
+  "claim_boundary": "A positive needs independent group/count/seed/name replay and prior-resolution audit. A no-hit excludes only this coefficient group and does not bound all nonabelian quotients."
+}

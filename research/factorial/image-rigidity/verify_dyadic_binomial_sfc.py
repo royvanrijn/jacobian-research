@@ -161,6 +161,7 @@ audit={'proof':'DYADIC_BINOMIAL_SFC.tex','lower_one_equivalence':'For all positi
     'mechanism':'one common variable scaling; integral normalized coefficient polynomials; odd leading coefficients; Bessel/Fibonacci consecutive reductions; resultant odd',
     'source_scope':'Rocks2015 author draft Lemma3.8 for unshifted factorial units compared; every input rederived; no full final-publication or priority audit',
     'independent_of':['prior contour/simplicity results','parabola separation','MR/density','prime gaps','finite-prefix searches'],
+    'current_scope_note':'These cubic confinement controls are not the full cubic theorem; the completed X(A+B*X^2) family is proved in CUBIC_ADJOINT_STABILITY_SFC.tex.',
     'finite_parameter_extrapolation':False,'other_lower_exponents_or_gaps_proved':False,'all_positive_Gamma_shapes':False,
     'general_FC_closed':False,'unrestricted_SFC_closed':False,'independent_replay':False,'formal_verification':False,'external_review':False,'novelty_claim':False}
 (HERE/'dyadic_binomial_sfc_audit.json').write_text(json.dumps(audit,indent=2)+'\n')
@@ -169,6 +170,7 @@ receipt={'status':'pass','checks':counts,'total':sum(counts.values()),
     'files':{name:hashlib.sha256((HERE/name).read_bytes()).hexdigest() for name in files},
     'dyadic_equal_lower_exponent_and_gap_all_indices':True,'integer_Gamma_shapes_through_2q':True,
     'arbitrary_rational_unit_sequence_transfer':True,'same_variable_scaling_at_consecutive_orders':True,'exact_resultant_valuation_proved':True,'conditional_cubic_prime_confinement_proved':True,'cubic_residual_transfer_proved':True,'cubic_all_index_SFC_closed':False,'lower_one_multiple_root_equivalence_proved':True,'cubic_quarter_gap_square_degree_bound_proved':True,
+    'current_scope_note':'These cubic confinement controls are not the full cubic theorem; the completed X(A+B*X^2) family is proved in CUBIC_ADJOINT_STABILITY_SFC.tex.',
     'finite_parameter_extrapolation':False,'other_lower_exponents_or_gaps_proved':False,'all_positive_Gamma_shapes':False,
     'general_FC_closed':False,'unrestricted_SFC_closed':False,'independent_replay':False,'formal_verification':False,'external_review':False,'novelty_claim':False}
 (HERE/'dyadic_binomial_sfc_verification.json').write_text(json.dumps(receipt,indent=2)+'\n')

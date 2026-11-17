@@ -16,21 +16,22 @@ Use [Mathematical validity](MATHEMATICS.md) to decide what evidence each item ne
 
 ## References and contribution
 
-- [ ] The closest prior work has been read sufficiently to assess the stated advance. Known results, adapted ideas, and new contributions are distinguished.
+- [ ] The closest theorem and our result have been compared with exact hypotheses and conclusions. Specializations, changes of notation, and known reductions have been tested; the genuinely new proof step is identified, or the contribution is described accurately as a consequence, exposition, or new proof.
 - [ ] Each substantive citation has verified bibliographic identity and an inspected passage that supports its use under the required assumptions.
 - [ ] Preprint, published, corrected, and retracted versions are described accurately. Quotations and borrowed material are attributed.
 - [ ] Novelty and priority claims use language justified by the literature check. There are no fabricated references or review outcomes.
 
 ## Human readability
 
-- [ ] A reader can find the problem, main result, contribution, and proof idea early without knowing the repository or discovery history.
+- [ ] A mathematician can understand the problem, main result, and contribution from the introduction alone, without knowing the repository or discovery history.
 - [ ] Specialized notation is defined before use and stays consistent. Examples explain the construction or boundary where useful.
-- [ ] The proof overview identifies the obstacle and the key step; the proof itself supplies that step.
-- [ ] Necessary reasoning has enough detail; repeated motivation, routine expansions, promotional language, and unused terminology have been removed.
+- [ ] Before substantial machinery, the central explanation gives plausibility, obstacle, and insight, with a simple nontrivial example where possible. Intuition and sketches are distinguished from proofs; the hard step is visible and proved.
+- [ ] Every definition, lemma, and example earns its place. Trivial lemmas are combined where helpful; familiar terminology is preferred. Necessary reasoning has enough detail without padding, repetition, or promotional language.
 - [ ] The manuscript contains no ongoing research reports, repository paths, task IDs, agent instructions, draft comments, or promised future proofs. Required disclosures and substantive mathematical limits remain.
 - [ ] Appendices, figures, tables, and supplements are referenced and have a clear purpose.
+- [ ] A reviewer received only the compiled PDF and answered [the five blind-reader questions](PAPERS.md#review-the-actual-article). The edition, supplied context, answers, obstacles, revisions, and rechecks are recorded; an unperformed test remains open.
 
-An internal review can prepare a draft for human review. Record whether an unfamiliar reader actually assessed it and what that reader checked; do not substitute a generated approval for that event.
+An AI with workspace or research context does not qualify as a blind reader. Record isolated AI review as internal review, separately from actual external human review. An internal review can prepare a draft for human review; it cannot establish that human review occurred.
 
 ## Computation and formalization
 

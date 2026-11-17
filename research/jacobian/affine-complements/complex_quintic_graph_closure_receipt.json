@@ -73,5 +73,19 @@
   "full_goal_complete": false,
   "independent_replay": false,
   "formal_verification": false,
-  "external_review": false
+  "external_review": false,
+  "current_replay": {
+    "date": "2026-11-17",
+    "command": ".venv/bin/python research/jacobian/affine-complements/verify_complex_quintic_graph_closure.py",
+    "working_directory": "repository root",
+    "exit_code": 0,
+    "outcome": "PASS",
+    "check_count": 43,
+    "accepted_mathematical_payload_matches_historical_receipt": true,
+    "scope": "Internal execution of the existing bounded controls with current source/input pins. The original receipt fields and hashes above remain historical. This does not certify universal proofs or upgrade independent replay, formal verification or external review.",
+    "removed_historical_metadata_checks": [],
+    "checker_sha256": "89a53c0d132ab5f9bff820fe95919c8972dfc0dea9abc7a9683581a7d2d72e39",
+    "proof_sha256": "2970130bbcc636946a0f58f6430c04fcc3bdcb351f46e4724a4de02aadb0891b",
+    "context_sha256": "30bd4d53fdd8a5410d81553737d29a18c0e68f9533bed92508693b5a513c2995"
+  }
 }

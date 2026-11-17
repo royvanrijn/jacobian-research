@@ -44,8 +44,8 @@ the broader intersective-polynomial context. The paper’s explicit local
 argument does not depend on Sonn’s theorem.
 
 The prescribed-fiber mechanism is taken from the companion manuscript
-`papers/common-arithmetic-fibers`; the present paper rederives the
-specialized inverse calculation needed for its fixed map.
+[Common Arithmetic Fibers](../common-arithmetic-fibers/); the present paper
+rederives the specialized inverse calculation needed for its fixed map.
 
 ## Priority boundary
 

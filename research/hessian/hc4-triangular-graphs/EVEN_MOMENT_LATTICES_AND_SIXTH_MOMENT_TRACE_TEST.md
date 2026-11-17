@@ -243,4 +243,4 @@ regularity of Tr(Lambda Lambda) or the full marked-energy condition.
 The exact moment filtration and sixth-moment matrix retain this obstruction
 globally; neither supplies automatic trace perfection or multiplication
 closure of the full Lambda. Full HC4/JC2 remains OPEN, including all branch
-indices, and the original goal stays active.
+indices.

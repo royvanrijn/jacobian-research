@@ -4,14 +4,14 @@ This file records the proof layer for every load-bearing claim in
 *Over Characteristic Zero, Every Finite Étale Algebra of Rank at Least Three
 Is a Full Keller Fiber*.
 “Lean” means a theorem in the pinned
-`formal/finite-etale-keller` project with no `sorry` and no project-specific
-axiom.  Symbolic checks are exact independent audits, not substitutes for the
+[finite-etale Keller project](../../research/foundations/formal/finite-etale-keller/) with no `sorry` and no project-specific
+axiom.  Symbolic checks are exact separate audits, not substitutes for the
 corresponding mathematical argument.  The characteristic-zero
 polynomial-presentation theorem is the headline and is formalized end to end.
 The broader characteristic-not-two supplied-presentation result is a separate
 paper proposition and is not yet formalized at that generality.
 
-| Claim | Paper proof | Lean certificate | Independent audit / external input |
+| Claim | Paper proof | Lean certificate | Symbolic audit / external input |
 |---|---|---|---|
 | Characteristic-zero polynomial presentation from a separable `P` of degree at least three, including automatic translation, determinant one, natural literal fiber, geometric degree, finite étaleness, rank, and degree bound | Characteristic-zero polynomial realization theorem | `PaperCertificate.lean`; `paperPolynomialPresentation_pageOne` has the paper's exact `P.Separable` hypothesis and applies `automaticRealization_pageOne` through `Separable.squarefree` | Isolated certificate build and required axiom reports |
 | Supplied presentation with nonzero first and third Hasse coefficients in characteristic not two | Supplied-presentation realization proposition and its effective corollary | Not formalized end to end at this generality; current corresponding files retain `CharZero K` | Integral compact-gauge identities and the ordinary proof |
@@ -36,11 +36,13 @@ paper proposition and is not yet formalized at that generality.
 | Every finite étale algebra over an infinite field is monogenic | Monogenicity lemma, used only in the finite-étale realization corollary | `AbstractFiniteEtale.lean` proves the characteristic-zero case needed here and constructs `finiteEtalePresentation`; `paperAbstractFiniteEtale_pageOne` is the paper-facing endpoint | Paper's discriminant/Vandermonde proof; Lean uses translated primitive elements with distinct traces and the Chinese remainder theorem |
 | No characteristic-zero Keller map has generic degree two | Rank-classification corollary, explicitly separated from the constructive theorem | Not formalized | Campbell's unnumbered theorem on p. 244 (normal complex function-field extension), scalar-invariance of generic rank under extension, quadratic separability/normality, and faithfully flat descent; Razar and Wright are cited as later algebraic treatments |
 | Compatibility of the realization with extension of the ground field | Base-change proposition in Section 4 | `GeneralGaugeBaseChange.lean` proves coefficientwise compatibility of translation, the full supplied-parameter map, normalization, admissibility, squarefreeness, and distinguished target, together with `L ⊗[K] AdjoinRoot P ≃ₐ[L] AdjoinRoot (P.map f)` | Coefficientwise paper proof |
-| Explicit Berend--Bilu quintic Hasse fiber | Explicit arithmetic example: generated displayed map, inverse polynomial, output scalings, targets, quotient, and local/global root audit | `PaperExampleCorrespondence.lean` proves the generated paper definitions equal `p5`, `g5`, `integralMap`, the formal inverse equation, and both formal output normalizations; `ExplicitFiber.lean` and `ExplicitAllPadicPoints.lean` prove the fiber and Hasse endpoint | `verify_common_arithmetic_fibers_correspondence.py` checks freshness and the JSON-authenticated Lean/TeX/SymPy/Sage views; `verify_finite_etale_keller_fibers.py` independently expands the algebra |
+| Explicit Berend--Bilu quintic Hasse fiber | Explicit arithmetic example: generated displayed map, inverse polynomial, output scalings, targets, quotient, and local/global root audit | `PaperExampleCorrespondence.lean` proves the generated paper definitions equal `p5`, `g5`, `integralMap`, the formal inverse equation, and both formal output normalizations; `ExplicitFiber.lean` and `ExplicitAllPadicPoints.lean` prove the fiber and Hasse endpoint | Historical correspondence and finite-etale symbolic audits listed below; those checker sources are not in the current checkout |
 
-## Independent exact audits rerun
+## Historical exact audits
 
-The following independent commands were rerun successfully on 27 July 2026:
+This record reports successful runs of the following symbolic checkers on
+27 July 2026. Their source files are not present in the current checkout,
+so these are historical execution records rather than current replay commands:
 
 - `verify_universal_quadratic_gauge.py`: source-chart reciprocal identities,
   marked-line Jacobian cancellation, generic coefficient assembly, the
@@ -59,9 +61,10 @@ The following independent commands were rerun successfully on 27 July 2026:
   degree-six Jacobian over a rational function field in six independent
   coefficients, together with the `(7,38,36)` degree profile.
 
-These are exact symbolic computations from implementations independent of the
-Lean development. They audit the displayed algebra but do not replace the
-ordinary proof of the classical degree-two interface.
+These recorded computations used implementations separate from the Lean
+development. They audit the displayed algebra but do not replace the
+ordinary proof of the classical degree-two interface or establish independent
+external replay. They were not rerun during this repository cleanup.
 
 ## Formal theorem now obtained
 
@@ -135,3 +138,22 @@ The remaining formal boundaries of the focused paper are:
 Symmetric monodromy, stable atomicity, Hilbertian specialization, and exact
 nonproperness are maintained as companion results outside this paper and
 outside this verification matrix.
+
+## Current build commands
+
+From the repository root, build the manuscript with:
+
+```sh
+latexmk -cd -pdf -jobname=paper -interaction=nonstopmode -halt-on-error \
+  unpublished/common-arithmetic-fibers/main.tex
+```
+
+Build the focused Lean certificate from its pinned project:
+
+```sh
+cd research/foundations/formal/finite-etale-keller
+lake build FiniteEtaleKeller.PaperCertificate
+```
+
+These commands identify the current source locations; no fresh manuscript or
+Lean build is claimed by this path correction.

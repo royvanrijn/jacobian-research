@@ -1,26 +1,29 @@
 {
-  "status": "unpublished; written proof with internal review; independent mathematical review pending",
+  "status": "unpublished; restructured written proof with internal mathematical review; independent review pending",
   "checked_on": "2026-11-17",
   "source": "main.tex",
-  "pdf": "gaussian_constant_fibre_base_marker_certificates.pdf",
-  "pages": 5,
+  "pdf": "gaussian_marker_reduction_constant_quadratic_fibre.pdf",
+  "pages": 10,
   "source_hashes": {
-    "main.tex": "e00e2cc225a97ed9bb1e6edd90e306f7af93d1ad7448bf27209aad63037b0b70"
+    "main.tex": "f8ccb56a759851e1306c4e47b452826b71c18053f9f7baf4101bfc3bb88f1129"
   },
-  "pdf_sha256": "63a6b45576351b74df01d5e5a1ed5950ad7674efb691a14dd94ac0cabf67187c",
-  "build": "latexmk -pdf -jobname=gaussian_constant_fibre_base_marker_certificates -interaction=nonstopmode -halt-on-error main.tex",
+  "pdf_sha256": "cee408edeaa4e7f45eb77cabaed885502bd545b9c8a5b8bc74430eec810d9c78",
+  "build": "latexmk -pdf -jobname=gaussian_marker_reduction_constant_quadratic_fibre -interaction=nonstopmode -halt-on-error main.tex",
   "checks": {
     "latexmk_cross_references_stable": true,
     "undefined_references": 0,
     "overfull_boxes": 0,
     "underfull_boxes": 0,
     "all_pages_rendered": true,
-    "visual_review": "Every page of the current edition rendered and inspected; the revised examples, stationary gauge and final references fit without clipping or nearly empty extra pages."
+    "visual_review": "All 10 pages rendered and visually inspected; no clipping, overlap, unresolved references or awkward theorem-list split observed.",
+    "standalone_source_bundle_build": true,
+    "rebuilt_pdf_text_and_pixels_match": true,
+    "rebuild_scope": "Internal clean build from the isolated source archive; all pages match retained PDF text and rendering. This is artifact reproduction, not independent mathematical review."
   },
-  "review_scope": "Editorial and internal mathematical review of the displayed arguments. No universal theorem is inferred from a finite experiment.",
+  "review_scope": "Complete internal source review of the restructured written proof, its exceptional coefficient or covariance cases, and the new corollaries. Builds and bounded controls are recorded separately and do not certify the universal theorems.",
   "remaining_review": [
-    "Review the universal operator identities and sufficient degree bound.",
-    "Determine whether the two-base purity-to-safety question can be settled; base-marker generation alone does not settle it."
+    "Independent review of the universal even/odd certificates, nilpotent-content corollary and exact coefficient-ring defect.",
+    "Investigate purity-to-safety for one constant quadratic fibre over two ordinary base variables; the marker reduction alone does not settle it."
   ],
   "independent_replay": false,
   "formal_verification": false,
@@ -34,8 +37,28 @@
     "pdflatex": "pdfTeX 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian)"
   },
   "review_findings": [
-    "Added a universal first-even-marker identity with an explicit integration-by-parts witness.",
-    "Reconstructed the even/odd recurrences, coefficient-content proof and sufficient degree estimate, including zero coefficient faces.",
-    "Replaced undefined process terminology by finite expressions and stated the two-base question directly."
+    "Combined the universal marker-reduction proof and the exact scalar specialization obstruction; removed duplicate Gaussian setup and the scalar specialization of the general even recurrence.",
+    "Preserved the ambient quotient, Gaussian kernel, ground torsion, full point-module decomposition, actual quotient, idempotent criterion, finite Euler projector and specialization sequence.",
+    "Proved actual base-marker generation for B(U)^L=0, including nilpotent coefficient ideals, with a finite parity identity and central coefficient expansion. Idempotent patching is sufficient only for general B.",
+    "The field theorem and ambient general-ring theorem remain distinct; Gaussian parity at B=0 is not asserted to be a spatial integration-by-parts certificate.",
+    "The numerical degree-transfer bound retains its field/unit-content hypothesis; it is not claimed for the added nilpotent branch."
+  ],
+  "incorporated_note": {
+    "title": "A Specialization Obstruction in Gaussian Marker Generation",
+    "current_location": "Section 6 of main.tex",
+    "prior_source_sha256": "7e72520362cd313475f5cff21e4a368a9b5aa6cf7975939751c0cc87d1b75abc",
+    "coverage": "All mathematical proof ingredients retained; the specialized even recurrence is the explicit a=1, B=b, g=0, r=0 case of the universal recurrence."
+  },
+  "primary_sources_checked": [
+    {
+      "url": "https://arxiv.org/html/2607.23887v1",
+      "location": "Theorem 1",
+      "used_for": "Precise scope of the fixed-phase binary theorem; it is not applied to the parameter-dependent binary phase."
+    },
+    {
+      "url": "https://stacks.math.columbia.edu/tag/0AUW",
+      "location": "Lemma 15.22.11(1),(3)",
+      "used_for": "Flatness of the torsion-free actual module over Q[b] and freeness of its finitely generated submodules."
+    }
   ]
 }
