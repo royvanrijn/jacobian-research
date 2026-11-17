@@ -1,10 +1,10 @@
 {
   "review_date": "2026-11-16",
   "retained_proof_and_source_sha256": {
-    "hessian/hc4-triangular-graphs/BERGMAN_TRACE_DUAL_AND_MULTIPLIER_DOMAIN_RIGIDITY.md": "226d5b0450367780118116d80e1f9cb3ff9e99fabb3615272daec103cbc8b6bd",
+    "hessian/hc4-triangular-graphs/BERGMAN_TRACE_DUAL_AND_MULTIPLIER_DOMAIN_RIGIDITY.md": "1f5527567df39fd944fb0104e2925db9369b3c62935a98abae44a0faedbfbb62",
     "hessian/hc4-triangular-graphs/TRACE_LINKING_HALF_RAMIFICATION_AND_CUBIC_MULTIPLICATION.md": "25b988e37b87bc9e425cc190fcce7fefb4c309ce5be0abd884b808861b5a7e69",
     "hessian/hc4-triangular-graphs/CANONICAL_BOUNDARY_AND_STABLE_COMPLETE_INTERSECTION_OBSTRUCTION.md": "9284117aeb73df6331b0b7235a4bd9a713a9542666c45d44561c89739e77f1c8",
-    "hessian/hc4-triangular-graphs/CANONICAL_TRACE_DUAL_ETALE_RECONSTRUCTION.md": "1b8701950f1bd4c7acb58b154c26b59a3cc777a3f548115d34a6d9ef43d1a379",
+    "hessian/hc4-triangular-graphs/CANONICAL_TRACE_DUAL_ETALE_RECONSTRUCTION.md": "afd954e519a8d78b80ce20abc391a060f17609d5ded25e4c94871187ccc6d824",
     "hessian/tang-hc4-audit/STRUCTURAL_REVIEW.md": "508a0fec2e84a856a99269be8f5f64f0401636842d5b07ff5015dcaa55686b6f"
   },
   "scope_flags": {
@@ -24,16 +24,24 @@
     "new_Laurent_control_is_whole_plane_Keller": false,
     "full_finite_codifferent_pairing_proved_regular": false,
     "all_branch_indices_excluded": false,
-    "new_external_theorem_imported": false,
+    "new_external_theorem_imported": true,
     "Miyanishi_odd_plane_theorem_adopted": false,
-    "registered_mathematical_checker_replayed": false,
+    "registered_mathematical_checker_replayed": true,
     "unrestricted_HC4_or_JC2_resolved": false,
     "independent_replay": false,
     "formal_verification": false,
     "external_review": false
   },
-  "external_imports": [],
-  "new_primary_caches": [],
+  "external_imports": [
+    {
+      "source": "hessian/hc4-triangular-graphs/sources/flenner-zaidenberg-math-0109221v1.pdf",
+      "locator": "Theorem2.1, primary-source quotient-point application audited in FULL_NORMALIZATION_QUOTIENT_POINTS_AND_CANONICAL_L2_EXTENSION.md",
+      "role": "Supplies LW0 finite-quotient singularities only; no differential-source-layer or automatic trace regularity claim."
+    }
+  ],
+  "new_primary_caches": [
+    "hessian/hc4-triangular-graphs/sources/flenner-zaidenberg-math-0109221v1.pdf"
+  ],
   "literature_context_only": [
     {
       "url": "https://arxiv.org/abs/1107.2676",
@@ -66,5 +74,10 @@
       "hessian/hc4-triangular-graphs/CANONICAL_TRACE_DUAL_ETALE_RECONSTRUCTION.md",
       "hessian/tang-hc4-audit/STRUCTURAL_REVIEW.md"
     ]
+  },
+  "current_source_replay": {
+    "date": "2026-11-17",
+    "scope": "Current checker internally replayed after exact point-hypothesis audit and current LW/KU source inspection. No predecessor mathematical checker or independent whole proof replayed.",
+    "mathematical_control_predicates_changed": false
   }
 }

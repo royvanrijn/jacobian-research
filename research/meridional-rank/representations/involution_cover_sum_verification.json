@@ -1,0 +1,639 @@
+{
+  "status": "PASS",
+  "bipartite_scaling_controls": [
+    {
+      "a": 1,
+      "b": 1,
+      "copies_left": 1,
+      "copies_right": 1,
+      "common_delta": 1,
+      "degree_with_one_fixed_per_copy": 4,
+      "sphere_graph_beta": 0
+    },
+    {
+      "a": 1,
+      "b": 2,
+      "copies_left": 2,
+      "copies_right": 1,
+      "common_delta": 2,
+      "degree_with_one_fixed_per_copy": 7,
+      "sphere_graph_beta": 0
+    },
+    {
+      "a": 1,
+      "b": 3,
+      "copies_left": 3,
+      "copies_right": 1,
+      "common_delta": 3,
+      "degree_with_one_fixed_per_copy": 10,
+      "sphere_graph_beta": 0
+    },
+    {
+      "a": 1,
+      "b": 4,
+      "copies_left": 4,
+      "copies_right": 1,
+      "common_delta": 4,
+      "degree_with_one_fixed_per_copy": 13,
+      "sphere_graph_beta": 0
+    },
+    {
+      "a": 1,
+      "b": 5,
+      "copies_left": 5,
+      "copies_right": 1,
+      "common_delta": 5,
+      "degree_with_one_fixed_per_copy": 16,
+      "sphere_graph_beta": 0
+    },
+    {
+      "a": 1,
+      "b": 6,
+      "copies_left": 6,
+      "copies_right": 1,
+      "common_delta": 6,
+      "degree_with_one_fixed_per_copy": 19,
+      "sphere_graph_beta": 0
+    },
+    {
+      "a": 1,
+      "b": 7,
+      "copies_left": 7,
+      "copies_right": 1,
+      "common_delta": 7,
+      "degree_with_one_fixed_per_copy": 22,
+      "sphere_graph_beta": 0
+    },
+    {
+      "a": 1,
+      "b": 8,
+      "copies_left": 8,
+      "copies_right": 1,
+      "common_delta": 8,
+      "degree_with_one_fixed_per_copy": 25,
+      "sphere_graph_beta": 0
+    },
+    {
+      "a": 2,
+      "b": 1,
+      "copies_left": 1,
+      "copies_right": 2,
+      "common_delta": 2,
+      "degree_with_one_fixed_per_copy": 7,
+      "sphere_graph_beta": 0
+    },
+    {
+      "a": 2,
+      "b": 2,
+      "copies_left": 1,
+      "copies_right": 1,
+      "common_delta": 2,
+      "degree_with_one_fixed_per_copy": 6,
+      "sphere_graph_beta": 1
+    },
+    {
+      "a": 2,
+      "b": 3,
+      "copies_left": 3,
+      "copies_right": 2,
+      "common_delta": 6,
+      "degree_with_one_fixed_per_copy": 17,
+      "sphere_graph_beta": 2
+    },
+    {
+      "a": 2,
+      "b": 4,
+      "copies_left": 2,
+      "copies_right": 1,
+      "common_delta": 4,
+      "degree_with_one_fixed_per_copy": 11,
+      "sphere_graph_beta": 2
+    },
+    {
+      "a": 2,
+      "b": 5,
+      "copies_left": 5,
+      "copies_right": 2,
+      "common_delta": 10,
+      "degree_with_one_fixed_per_copy": 27,
+      "sphere_graph_beta": 4
+    },
+    {
+      "a": 2,
+      "b": 6,
+      "copies_left": 3,
+      "copies_right": 1,
+      "common_delta": 6,
+      "degree_with_one_fixed_per_copy": 16,
+      "sphere_graph_beta": 3
+    },
+    {
+      "a": 2,
+      "b": 7,
+      "copies_left": 7,
+      "copies_right": 2,
+      "common_delta": 14,
+      "degree_with_one_fixed_per_copy": 37,
+      "sphere_graph_beta": 6
+    },
+    {
+      "a": 2,
+      "b": 8,
+      "copies_left": 4,
+      "copies_right": 1,
+      "common_delta": 8,
+      "degree_with_one_fixed_per_copy": 21,
+      "sphere_graph_beta": 4
+    },
+    {
+      "a": 3,
+      "b": 1,
+      "copies_left": 1,
+      "copies_right": 3,
+      "common_delta": 3,
+      "degree_with_one_fixed_per_copy": 10,
+      "sphere_graph_beta": 0
+    },
+    {
+      "a": 3,
+      "b": 2,
+      "copies_left": 2,
+      "copies_right": 3,
+      "common_delta": 6,
+      "degree_with_one_fixed_per_copy": 17,
+      "sphere_graph_beta": 2
+    },
+    {
+      "a": 3,
+      "b": 3,
+      "copies_left": 1,
+      "copies_right": 1,
+      "common_delta": 3,
+      "degree_with_one_fixed_per_copy": 8,
+      "sphere_graph_beta": 2
+    },
+    {
+      "a": 3,
+      "b": 4,
+      "copies_left": 4,
+      "copies_right": 3,
+      "common_delta": 12,
+      "degree_with_one_fixed_per_copy": 31,
+      "sphere_graph_beta": 6
+    },
+    {
+      "a": 3,
+      "b": 5,
+      "copies_left": 5,
+      "copies_right": 3,
+      "common_delta": 15,
+      "degree_with_one_fixed_per_copy": 38,
+      "sphere_graph_beta": 8
+    },
+    {
+      "a": 3,
+      "b": 6,
+      "copies_left": 2,
+      "copies_right": 1,
+      "common_delta": 6,
+      "degree_with_one_fixed_per_copy": 15,
+      "sphere_graph_beta": 4
+    },
+    {
+      "a": 3,
+      "b": 7,
+      "copies_left": 7,
+      "copies_right": 3,
+      "common_delta": 21,
+      "degree_with_one_fixed_per_copy": 52,
+      "sphere_graph_beta": 12
+    },
+    {
+      "a": 3,
+      "b": 8,
+      "copies_left": 8,
+      "copies_right": 3,
+      "common_delta": 24,
+      "degree_with_one_fixed_per_copy": 59,
+      "sphere_graph_beta": 14
+    },
+    {
+      "a": 4,
+      "b": 1,
+      "copies_left": 1,
+      "copies_right": 4,
+      "common_delta": 4,
+      "degree_with_one_fixed_per_copy": 13,
+      "sphere_graph_beta": 0
+    },
+    {
+      "a": 4,
+      "b": 2,
+      "copies_left": 1,
+      "copies_right": 2,
+      "common_delta": 4,
+      "degree_with_one_fixed_per_copy": 11,
+      "sphere_graph_beta": 2
+    },
+    {
+      "a": 4,
+      "b": 3,
+      "copies_left": 3,
+      "copies_right": 4,
+      "common_delta": 12,
+      "degree_with_one_fixed_per_copy": 31,
+      "sphere_graph_beta": 6
+    },
+    {
+      "a": 4,
+      "b": 4,
+      "copies_left": 1,
+      "copies_right": 1,
+      "common_delta": 4,
+      "degree_with_one_fixed_per_copy": 10,
+      "sphere_graph_beta": 3
+    },
+    {
+      "a": 4,
+      "b": 5,
+      "copies_left": 5,
+      "copies_right": 4,
+      "common_delta": 20,
+      "degree_with_one_fixed_per_copy": 49,
+      "sphere_graph_beta": 12
+    },
+    {
+      "a": 4,
+      "b": 6,
+      "copies_left": 3,
+      "copies_right": 2,
+      "common_delta": 12,
+      "degree_with_one_fixed_per_copy": 29,
+      "sphere_graph_beta": 8
+    },
+    {
+      "a": 4,
+      "b": 7,
+      "copies_left": 7,
+      "copies_right": 4,
+      "common_delta": 28,
+      "degree_with_one_fixed_per_copy": 67,
+      "sphere_graph_beta": 18
+    },
+    {
+      "a": 4,
+      "b": 8,
+      "copies_left": 2,
+      "copies_right": 1,
+      "common_delta": 8,
+      "degree_with_one_fixed_per_copy": 19,
+      "sphere_graph_beta": 6
+    },
+    {
+      "a": 5,
+      "b": 1,
+      "copies_left": 1,
+      "copies_right": 5,
+      "common_delta": 5,
+      "degree_with_one_fixed_per_copy": 16,
+      "sphere_graph_beta": 0
+    },
+    {
+      "a": 5,
+      "b": 2,
+      "copies_left": 2,
+      "copies_right": 5,
+      "common_delta": 10,
+      "degree_with_one_fixed_per_copy": 27,
+      "sphere_graph_beta": 4
+    },
+    {
+      "a": 5,
+      "b": 3,
+      "copies_left": 3,
+      "copies_right": 5,
+      "common_delta": 15,
+      "degree_with_one_fixed_per_copy": 38,
+      "sphere_graph_beta": 8
+    },
+    {
+      "a": 5,
+      "b": 4,
+      "copies_left": 4,
+      "copies_right": 5,
+      "common_delta": 20,
+      "degree_with_one_fixed_per_copy": 49,
+      "sphere_graph_beta": 12
+    },
+    {
+      "a": 5,
+      "b": 5,
+      "copies_left": 1,
+      "copies_right": 1,
+      "common_delta": 5,
+      "degree_with_one_fixed_per_copy": 12,
+      "sphere_graph_beta": 4
+    },
+    {
+      "a": 5,
+      "b": 6,
+      "copies_left": 6,
+      "copies_right": 5,
+      "common_delta": 30,
+      "degree_with_one_fixed_per_copy": 71,
+      "sphere_graph_beta": 20
+    },
+    {
+      "a": 5,
+      "b": 7,
+      "copies_left": 7,
+      "copies_right": 5,
+      "common_delta": 35,
+      "degree_with_one_fixed_per_copy": 82,
+      "sphere_graph_beta": 24
+    },
+    {
+      "a": 5,
+      "b": 8,
+      "copies_left": 8,
+      "copies_right": 5,
+      "common_delta": 40,
+      "degree_with_one_fixed_per_copy": 93,
+      "sphere_graph_beta": 28
+    },
+    {
+      "a": 6,
+      "b": 1,
+      "copies_left": 1,
+      "copies_right": 6,
+      "common_delta": 6,
+      "degree_with_one_fixed_per_copy": 19,
+      "sphere_graph_beta": 0
+    },
+    {
+      "a": 6,
+      "b": 2,
+      "copies_left": 1,
+      "copies_right": 3,
+      "common_delta": 6,
+      "degree_with_one_fixed_per_copy": 16,
+      "sphere_graph_beta": 3
+    },
+    {
+      "a": 6,
+      "b": 3,
+      "copies_left": 1,
+      "copies_right": 2,
+      "common_delta": 6,
+      "degree_with_one_fixed_per_copy": 15,
+      "sphere_graph_beta": 4
+    },
+    {
+      "a": 6,
+      "b": 4,
+      "copies_left": 2,
+      "copies_right": 3,
+      "common_delta": 12,
+      "degree_with_one_fixed_per_copy": 29,
+      "sphere_graph_beta": 8
+    },
+    {
+      "a": 6,
+      "b": 5,
+      "copies_left": 5,
+      "copies_right": 6,
+      "common_delta": 30,
+      "degree_with_one_fixed_per_copy": 71,
+      "sphere_graph_beta": 20
+    },
+    {
+      "a": 6,
+      "b": 6,
+      "copies_left": 1,
+      "copies_right": 1,
+      "common_delta": 6,
+      "degree_with_one_fixed_per_copy": 14,
+      "sphere_graph_beta": 5
+    },
+    {
+      "a": 6,
+      "b": 7,
+      "copies_left": 7,
+      "copies_right": 6,
+      "common_delta": 42,
+      "degree_with_one_fixed_per_copy": 97,
+      "sphere_graph_beta": 30
+    },
+    {
+      "a": 6,
+      "b": 8,
+      "copies_left": 4,
+      "copies_right": 3,
+      "common_delta": 24,
+      "degree_with_one_fixed_per_copy": 55,
+      "sphere_graph_beta": 18
+    },
+    {
+      "a": 7,
+      "b": 1,
+      "copies_left": 1,
+      "copies_right": 7,
+      "common_delta": 7,
+      "degree_with_one_fixed_per_copy": 22,
+      "sphere_graph_beta": 0
+    },
+    {
+      "a": 7,
+      "b": 2,
+      "copies_left": 2,
+      "copies_right": 7,
+      "common_delta": 14,
+      "degree_with_one_fixed_per_copy": 37,
+      "sphere_graph_beta": 6
+    },
+    {
+      "a": 7,
+      "b": 3,
+      "copies_left": 3,
+      "copies_right": 7,
+      "common_delta": 21,
+      "degree_with_one_fixed_per_copy": 52,
+      "sphere_graph_beta": 12
+    },
+    {
+      "a": 7,
+      "b": 4,
+      "copies_left": 4,
+      "copies_right": 7,
+      "common_delta": 28,
+      "degree_with_one_fixed_per_copy": 67,
+      "sphere_graph_beta": 18
+    },
+    {
+      "a": 7,
+      "b": 5,
+      "copies_left": 5,
+      "copies_right": 7,
+      "common_delta": 35,
+      "degree_with_one_fixed_per_copy": 82,
+      "sphere_graph_beta": 24
+    },
+    {
+      "a": 7,
+      "b": 6,
+      "copies_left": 6,
+      "copies_right": 7,
+      "common_delta": 42,
+      "degree_with_one_fixed_per_copy": 97,
+      "sphere_graph_beta": 30
+    },
+    {
+      "a": 7,
+      "b": 7,
+      "copies_left": 1,
+      "copies_right": 1,
+      "common_delta": 7,
+      "degree_with_one_fixed_per_copy": 16,
+      "sphere_graph_beta": 6
+    },
+    {
+      "a": 7,
+      "b": 8,
+      "copies_left": 8,
+      "copies_right": 7,
+      "common_delta": 56,
+      "degree_with_one_fixed_per_copy": 127,
+      "sphere_graph_beta": 42
+    },
+    {
+      "a": 8,
+      "b": 1,
+      "copies_left": 1,
+      "copies_right": 8,
+      "common_delta": 8,
+      "degree_with_one_fixed_per_copy": 25,
+      "sphere_graph_beta": 0
+    },
+    {
+      "a": 8,
+      "b": 2,
+      "copies_left": 1,
+      "copies_right": 4,
+      "common_delta": 8,
+      "degree_with_one_fixed_per_copy": 21,
+      "sphere_graph_beta": 4
+    },
+    {
+      "a": 8,
+      "b": 3,
+      "copies_left": 3,
+      "copies_right": 8,
+      "common_delta": 24,
+      "degree_with_one_fixed_per_copy": 59,
+      "sphere_graph_beta": 14
+    },
+    {
+      "a": 8,
+      "b": 4,
+      "copies_left": 1,
+      "copies_right": 2,
+      "common_delta": 8,
+      "degree_with_one_fixed_per_copy": 19,
+      "sphere_graph_beta": 6
+    },
+    {
+      "a": 8,
+      "b": 5,
+      "copies_left": 5,
+      "copies_right": 8,
+      "common_delta": 40,
+      "degree_with_one_fixed_per_copy": 93,
+      "sphere_graph_beta": 28
+    },
+    {
+      "a": 8,
+      "b": 6,
+      "copies_left": 3,
+      "copies_right": 4,
+      "common_delta": 24,
+      "degree_with_one_fixed_per_copy": 55,
+      "sphere_graph_beta": 18
+    },
+    {
+      "a": 8,
+      "b": 7,
+      "copies_left": 7,
+      "copies_right": 8,
+      "common_delta": 56,
+      "degree_with_one_fixed_per_copy": 127,
+      "sphere_graph_beta": 42
+    },
+    {
+      "a": 8,
+      "b": 8,
+      "copies_left": 1,
+      "copies_right": 1,
+      "common_delta": 8,
+      "degree_with_one_fixed_per_copy": 18,
+      "sphere_graph_beta": 7
+    }
+  ],
+  "literal_trefoil_amalgam_controls": [
+    {
+      "seed": "13a_373",
+      "trefoil_factors": 0,
+      "orbifold_generators": 13,
+      "degree": 7,
+      "delta": 2,
+      "matrix_rows": 187,
+      "matrix_columns": 85,
+      "H1_F3_dimension": 1,
+      "meridional_lower_bound": 4,
+      "bridge_upper_bound": 4
+    },
+    {
+      "seed": "13a_373",
+      "trefoil_factors": 1,
+      "orbifold_generators": 14,
+      "degree": 7,
+      "delta": 2,
+      "matrix_rows": 201,
+      "matrix_columns": 92,
+      "H1_F3_dimension": 3,
+      "meridional_lower_bound": 5,
+      "bridge_upper_bound": 5
+    },
+    {
+      "seed": "13a_373",
+      "trefoil_factors": 2,
+      "orbifold_generators": 15,
+      "degree": 7,
+      "delta": 2,
+      "matrix_rows": 215,
+      "matrix_columns": 99,
+      "H1_F3_dimension": 5,
+      "meridional_lower_bound": 6,
+      "bridge_upper_bound": 6
+    },
+    {
+      "seed": "13a_373",
+      "trefoil_factors": 3,
+      "orbifold_generators": 16,
+      "degree": 7,
+      "delta": 2,
+      "matrix_rows": 229,
+      "matrix_columns": 106,
+      "H1_F3_dimension": 7,
+      "meridional_lower_bound": 7,
+      "bridge_upper_bound": 7
+    }
+  ],
+  "negative_control": "Replacing trefoil by unknot gives no Betti gain",
+  "scope": "64 finite component-matching controls and four full lifted-edge mod3 homology controls on one literal retained knot joined to0..3 trefoils. Uniform sum formulas, exact free-product ranks, bridge construction and all24 seeds use written proofs and retained dependencies; not an exhaustive cover search.",
+  "input_sha256": {
+    "verify_involution_cover_sums.py": "adeef95118e743ce727aad4324287f190932afad53bb25c6b2f7c221ce6142d5",
+    "INVOLUTION_COVER_SUM_FORMULAS.tex": "06d9d7015e292cfbaf9332a0481a36ef973c2da4bcfd266e3e36cc9203eb1dc1",
+    "verify_general_branched_covers.py": "55c1201156f78bccc7660a7e74b0b8e4fb441893a961156472570fade75315e6",
+    "seven_sheet_cover_inputs.json": "0cdaed4926bdf03eb399d572da98bf59b7bbbe0ea13ab66106ddc34724a85ef6"
+  }
+}

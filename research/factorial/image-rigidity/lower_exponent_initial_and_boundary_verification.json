@@ -17,6 +17,12 @@
     "gap_two_shape_offsets": "all m>=1,h2,3,gamma>2m-2; transformed adjoint Hurwitz proof",
     "gap_two_lower_exponents_two_three": "all consecutive orders and all positive Gamma shapes",
     "all_gap_two_lower_exponents_closed": false,
+    "mixed_quintic_rank_equivalence": "all m>=1,gamma>0; exactC,H cyclic rank iff common moment",
+    "ordinary_gap_three_lower_two": "all terminalN>=2 withN not2mod9",
+    "ordinary_degree_at_most_five_equivalence": "remaining single support{2,5} atN>=11,N2mod9; infinitely many consecutive tests remain",
+    "ordinary_all_quintic_binomials_closed": false,
+    "p3_physical_index_interpolation_noncollision": "false: unique common zero in the stated integral Tate polydisk",
+    "p3_interpolation_ordinary_integer_index_established": false,
     "formal_cumulant_branched_fraction": "all integer d>=1 and all orders; typed-tree formula over Q[gamma][[x]]",
     "normalized_cumulant_Hankel_nonnegativity": "all finite minors coefficientwise nonnegative in gamma; PSZ Theorem9.12 at ell=m=d-1",
     "branched_fraction_two_shape_resultant_transfer": false,
@@ -301,6 +307,167 @@
     "corrupted_derivative_coefficient_rejected": true,
     "all_gap_two_lower_exponents_proved": false
   },
+  "mixed_quintic_replay": {
+    "generic_Ore_component_identities": 4,
+    "generic_stripped_adjoint_identities": 2,
+    "literal_symbolic_Gamma_fourth_order_ODEs": 4,
+    "literal_symbolic_Gamma_upper_operator_identities": 4,
+    "algebraic_common_root_rank_control_minors": 3,
+    "corrupted_mixed_coefficient_rejected": true,
+    "complete_mod3_reduced_operator_residue_controls": 6,
+    "mod9_support_residue_controls": 9,
+    "bounded_ordinary_terminal_gcd_controls": [
+      3,
+      4,
+      8,
+      10,
+      12,
+      13
+    ],
+    "proved_ordinary_terminal_scope": "N>=2 andN not2mod9",
+    "degree_at_most_five_equivalent_remaining_scope": "support{2,5}, N>=11,N2mod9; consecutive gcd only",
+    "remaining_progression_closed": false
+  },
+  "p3_index_interpolation_replay": {
+    "scope": "actual quintic moment interpolation on m=1+27T, T,w in Z3; not all root-radius branches",
+    "universal_tail_proof": {
+      "lower_gauss_bound": "(23*k-133)/54",
+      "upper_gauss_bound": "(23*k-135)/54",
+      "cutoff": 13,
+      "valuation_at_least": 3
+    },
+    "exact_low_Gauss_profiles": {
+      "lower_k2_to12": [
+        3,
+        3,
+        3,
+        4,
+        4,
+        4,
+        5,
+        5,
+        5,
+        7,
+        7
+      ],
+      "upper_k3_to12": [
+        3,
+        3,
+        4,
+        4,
+        4,
+        6,
+        5,
+        5,
+        6,
+        7
+      ]
+    },
+    "coefficientwise_mod27_congruences_verified": true,
+    "two_stage_contraction_proved_in_companion_source": true,
+    "Hensel_digit_controls": [
+      {
+        "precision": 1,
+        "T_residue": 1
+      },
+      {
+        "precision": 2,
+        "T_residue": 7
+      },
+      {
+        "precision": 3,
+        "T_residue": 16
+      },
+      {
+        "precision": 4,
+        "T_residue": 70
+      },
+      {
+        "precision": 5,
+        "T_residue": 232
+      },
+      {
+        "precision": 6,
+        "T_residue": 718
+      },
+      {
+        "precision": 7,
+        "T_residue": 1447
+      },
+      {
+        "precision": 8,
+        "T_residue": 5821
+      },
+      {
+        "precision": 9,
+        "T_residue": 5821
+      },
+      {
+        "precision": 10,
+        "T_residue": 25504
+      },
+      {
+        "precision": 11,
+        "T_residue": 84553
+      },
+      {
+        "precision": 12,
+        "T_residue": 84553
+      },
+      {
+        "precision": 13,
+        "T_residue": 84553
+      },
+      {
+        "precision": 14,
+        "T_residue": 84553
+      },
+      {
+        "precision": 15,
+        "T_residue": 9650491
+      },
+      {
+        "precision": 16,
+        "T_residue": 9650491
+      },
+      {
+        "precision": 17,
+        "T_residue": 9650491
+      },
+      {
+        "precision": 18,
+        "T_residue": 9650491
+      },
+      {
+        "precision": 19,
+        "T_residue": 397070980
+      },
+      {
+        "precision": 20,
+        "T_residue": 2721593914
+      }
+    ],
+    "positive_integer_endpoint_T1_orders": [
+      28,
+      29
+    ],
+    "endpoint_gcd_degree": 0,
+    "T_star_is_ordinary_integer_established": false,
+    "SFC_counterexample": false,
+    "passed": true
+  },
+  "mixed_quintic_sources": [
+    {
+      "file": "HIGHER_GAP_ADJOINT_RANK.tex",
+      "sha256": "ec19415938c9b0b92e7d365fb4a4c66b701fdf36d73883b68f7cfb2971d7ec28",
+      "scope": "gap3 order4 equation, zero concomitants and full rank3; no simplicity assumption"
+    },
+    {
+      "file": "ARITHMETIC_FRONTIER_TERMINAL_ORDERS.tex",
+      "sha256": "7eaedb0f2f96fef505b7045d71c2f2a8ffb972d9a807272e5ac9defc62d22351",
+      "scope": "prime-power lower-one theorem for degree<=5 classification gaps2,3,4"
+    }
+  ],
   "gap_two_adjoint_source": {
     "file": "CUBIC_ADJOINT_STABILITY_SFC.tex",
     "sha256": "ea2510e511545b9dd7a49a0796d75c45575687e60770c3359d38c5bc99cb4125",
@@ -325,12 +492,14 @@
   "python": "3.12.3",
   "sympy": "1.14.0",
   "source_sha256": {
-    "lower_exponent_initial_and_boundary.tex": "41283fbe5b6ea86d0b9e487d035965b7482547a501eae43488961487866b822d",
-    "lower_exponent_initial_and_boundary.py": "3c8a86a4548692c6a4711bb25d54a1c8baed8cb6f5fddb690b31b183711aa58a",
+    "lower_exponent_initial_and_boundary.tex": "e66e02d0354de5cd92d33eef54efea15c387b9f6a0c1b62ed379295e13f07d45",
+    "lower_exponent_initial_and_boundary.py": "3217ee2ece7986ddf6e4b2c487391304ea0df8be78d75d1bd220456ecfc67799",
     "sources/wolfs-2024-multiple-orthogonal-2401.08312v1.pdf": "f067406cc088fbad56308b00d8add51117401379504a1109b30442b62cf82182",
     "lower_exponent_initial_and_boundary_terminal_five_certificates.json": "7c74ec9588ce6ae64ab04cab13848feec843f070368525997c40afa47c9cb784",
     "sources/petreolle-sokal-zhu-1807.03271v2.pdf": "37b51eb4c7b47951460c0287e88b295be366acf76db55b1bd594dc8120554c1c",
-    "CUBIC_ADJOINT_STABILITY_SFC.tex": "ea2510e511545b9dd7a49a0796d75c45575687e60770c3359d38c5bc99cb4125"
+    "CUBIC_ADJOINT_STABILITY_SFC.tex": "ea2510e511545b9dd7a49a0796d75c45575687e60770c3359d38c5bc99cb4125",
+    "HIGHER_GAP_ADJOINT_RANK.tex": "ec19415938c9b0b92e7d365fb4a4c66b701fdf36d73883b68f7cfb2971d7ec28",
+    "ARITHMETIC_FRONTIER_TERMINAL_ORDERS.tex": "7eaedb0f2f96fef505b7045d71c2f2a8ffb972d9a807272e5ac9defc62d22351"
   },
   "independent_replay": false,
   "formal_verification": false,

@@ -57,6 +57,72 @@ The classical reduction of \(S\) is
 Its generic \(a\)-order is positive, including when \(h\)-small
 higher-order coefficients increase that order.
 
+## A global finite Ore normal form for all admitted fixed-R images
+
+There is also an exact normal form before localizing. Put
+\[
+ B=3X^2P+2(1-3XQ)Z,\qquad
+ D_0=(1+3XQ)P/2-3Q^2Z .                                  \tag{15}
+\]
+Their coefficient matrix in \(P,Z\) has determinant \(-1\), and
+\[
+ [B,R]=0,\quad [D_0,R]=h,\quad
+ [D_0,B]=\tfrac92hQB,
+\]
+with exact inverses
+\[
+ P=2(1-3XQ)D_0+3Q^2B,\qquad
+ Z=-3X^2D_0+(1+3XQ)B/2.                                  \tag{16}
+\]
+These are polynomial vector fields, so these first-order commutators
+are verified by their ordinary derivation brackets. The same frame
+appears classically in QCR1; the assertions here concern the actual
+finite quantum algebra.
+
+Every finite operator has a unique finite expansion
+\[
+                    \sum_{i,j}f_{ij}(X,Q)B^iD_0^j.         \tag{17}
+\]
+Indeed differential-order associated graded is the polynomial algebra
+in the two momentum symbols. The invertible coefficient matrix in
+(15) makes the symbols of \(B,D_0\) another polynomial basis of that
+algebra. Lifting and subtracting its top homogeneous piece proves
+spanning by descending order; the same symbol independence proves
+uniqueness. This works over \(K[[h]]\) as well as \(K((h))\).
+Commutation with R in (17) is precisely
+\[
+ h^{-1}[R,-]=-\partial_{D_0}.
+\]
+Consequently the complete actual global centralizer of R is
+\[
+ \boxed{\quad
+ \operatorname{Cent}(R)=K[[h]][X,Q][B;h\Delta],\quad
+ \Delta=3X^2\partial_X+2(1-3XQ)\partial_Q .\quad}           \tag{18}
+\]
+The generic version replaces \(K[[h]]\) by \(K((h))\). Formula (18)
+classifies all globally admitted finite S and T commuting with R;
+it is not a condition checked only in a rational coefficient chart.
+It also gives a finite right inverse for the normalized commutator
+with R, by integrating (17) in \(D_0\) with a minus sign. It supplies
+no right inverse for commutation with an unknown S.
+
+The exceptional R-fiber clarifies what this normal form does not
+exclude. Since \(R=X(2-3XQ)\), its two factors generate comaximal
+ideals. Both ideals are preserved by \(\Delta\). Thus the quotient
+of (18) by R is exactly the product
+\[
+ A_1(K[[h]];h)\ \times\
+ K[[h]][v,v^{-1}][b;h\partial_v].                         \tag{19}
+\]
+On the first component \(X=0\), use position Q and momentum B/2.
+On the second, \(Q=2/(3X)\), use \(v=X^{-1}\), \(b=-B/3\).
+Over \(K((h))(r)\), the generic fiber R=r is just the second Laurent
+Weyl algebra: r nonzero makes X invertible. Both component algebras
+in (19) admit Weyl pairs, so their existence alone is no obstruction
+to the required global individual mates. The remaining search is for
+finite elements of the single algebra (18) with the prescribed Long
+reduction and the required spectral translation relations.
+
 ## A finite-order centralizer lemma
 
 For a characteristic-zero constant field \(C\) and \(h\in C^\times\),

@@ -1,0 +1,244 @@
+{
+  "status": "passed",
+  "scope": "Exact symbolic identities and exhaustive finite S3 subgroup controls; not a full proof replay or external review.",
+  "python": "3.12.3",
+  "sympy": "1.14.0",
+  "checker_sha256": "7fe32e173aabc52aee816307963716cca310a31bfd87fead317648cc6473b29a",
+  "source_sha256": "3df634ad0a4178c49a44bfee1fd89119dd86caebfcd01eabadd9a23117839a1d",
+  "check_count": 56,
+  "checks": [
+    {
+      "name": "second_line_inverse_factorization",
+      "passed": true
+    },
+    {
+      "name": "depressed_cubic_discriminant",
+      "passed": true
+    },
+    {
+      "name": "quadratic_discriminant",
+      "passed": true
+    },
+    {
+      "name": "cubic_remainder",
+      "passed": true
+    },
+    {
+      "name": "coprime_resultant",
+      "passed": true
+    },
+    {
+      "name": "resultant_positive_constant",
+      "passed": true
+    },
+    {
+      "name": "k_is_cube",
+      "passed": true
+    },
+    {
+      "name": "k_is_not_rational_square",
+      "passed": true
+    },
+    {
+      "name": "four_k_is_not_rational_square",
+      "passed": true
+    },
+    {
+      "name": "cubic_algebra_generator_relation",
+      "passed": true
+    },
+    {
+      "name": "cubic_algebra_basis_determinant",
+      "passed": true
+    },
+    {
+      "name": "parameter_discriminant",
+      "passed": true
+    },
+    {
+      "name": "parameter_involution",
+      "passed": true
+    },
+    {
+      "name": "parameter_fibres_exactly_two",
+      "passed": true
+    },
+    {
+      "name": "a19_parametrized_target_not_original_line",
+      "passed": true
+    },
+    {
+      "name": "a19_is_noncube",
+      "passed": true
+    },
+    {
+      "name": "a19_old_local_conditions",
+      "passed": true
+    },
+    {
+      "name": "boundary_t_zero",
+      "passed": true
+    },
+    {
+      "name": "boundary_t_zero_B",
+      "passed": true
+    },
+    {
+      "name": "boundary_t_zero_C_z_coefficient",
+      "passed": true
+    },
+    {
+      "name": "boundary_t_zero_rational_point_C",
+      "passed": true
+    },
+    {
+      "name": "boundary_t_zero_rational_point_Pi",
+      "passed": true
+    },
+    {
+      "name": "boundary_b_zero_Pi",
+      "passed": true
+    },
+    {
+      "name": "boundary_b_zero_B",
+      "passed": true
+    },
+    {
+      "name": "boundary_b_zero_C",
+      "passed": true
+    },
+    {
+      "name": "boundary_q_zero_B",
+      "passed": true
+    },
+    {
+      "name": "boundary_q_zero_C",
+      "passed": true
+    },
+    {
+      "name": "repeated_quintic_rank_(1, 1, 1, 2)",
+      "passed": true
+    },
+    {
+      "name": "repeated_quintic_rank_(1, 1, 3)",
+      "passed": true
+    },
+    {
+      "name": "repeated_quintic_rank_(1, 2, 2)",
+      "passed": true
+    },
+    {
+      "name": "repeated_quintic_rank_(1, 4)",
+      "passed": true
+    },
+    {
+      "name": "repeated_quintic_rank_(2, 3)",
+      "passed": true
+    },
+    {
+      "name": "repeated_quintic_rank_(5,)",
+      "passed": true
+    },
+    {
+      "name": "no_rational_factor_rank_five_partitions",
+      "passed": true
+    },
+    {
+      "name": "no_rational_factor_rank_four_partitions",
+      "passed": true
+    },
+    {
+      "name": "all_S3_subgroups_enumerated",
+      "passed": true,
+      "orders": [
+        1,
+        2,
+        2,
+        2,
+        3,
+        6
+      ]
+    },
+    {
+      "name": "S3_subgroup_local_fixed_point_0",
+      "passed": true
+    },
+    {
+      "name": "S3_subgroup_local_fixed_point_1",
+      "passed": true
+    },
+    {
+      "name": "S3_subgroup_local_fixed_point_2",
+      "passed": true
+    },
+    {
+      "name": "S3_subgroup_local_fixed_point_3",
+      "passed": true
+    },
+    {
+      "name": "S3_subgroup_local_fixed_point_4",
+      "passed": true
+    },
+    {
+      "name": "S3_subgroup_local_fixed_point_5",
+      "passed": true
+    },
+    {
+      "name": "diagonal_S3_element_has_fixed_point_(0, 1, 2)",
+      "passed": true
+    },
+    {
+      "name": "diagonal_S3_element_has_fixed_point_(0, 2, 1)",
+      "passed": true
+    },
+    {
+      "name": "diagonal_S3_element_has_fixed_point_(1, 0, 2)",
+      "passed": true
+    },
+    {
+      "name": "diagonal_S3_element_has_fixed_point_(1, 2, 0)",
+      "passed": true
+    },
+    {
+      "name": "diagonal_S3_element_has_fixed_point_(2, 0, 1)",
+      "passed": true
+    },
+    {
+      "name": "diagonal_S3_element_has_fixed_point_(2, 1, 0)",
+      "passed": true
+    },
+    {
+      "name": "wrong_quadratic_common_derangement",
+      "passed": true
+    },
+    {
+      "name": "cyclic_cubic_times_quadratic_common_derangement",
+      "passed": true
+    },
+    {
+      "name": "rank_two_derivative_inverse_mod_P",
+      "passed": true
+    },
+    {
+      "name": "rank_two_derivative_nilpotent_mod_double",
+      "passed": true
+    },
+    {
+      "name": "rank_two_admissible_translation",
+      "passed": true
+    },
+    {
+      "name": "empty_derivative_nilpotent",
+      "passed": true
+    },
+    {
+      "name": "height_gcd_finite_controls",
+      "passed": true,
+      "coprime_pairs": 510
+    },
+    {
+      "name": "height_valuation_ties_impossible",
+      "passed": true
+    }
+  ]
+}

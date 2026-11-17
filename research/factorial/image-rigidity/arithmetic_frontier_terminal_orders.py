@@ -838,10 +838,48 @@ def prime_power_frobenius_replay():
        disc=s.discriminant(T,x)
        fac=q**N*s.prod(k**k for k in range(1,n+1))*s.prod(s.rf(gamma,q*k) for k in range(1,n))
        assert vp(disc,p)-vp(fac,p)==e*N;checks+=1;valuation_cases+=1
+    prime_power_pair_cases=0
+    for p,stage,beta in [(2,2,s.Rational(1,3)),(2,3,s.Integer(1)),
+                          (3,2,s.Rational(1,2)),(3,2,s.Integer(1))]:
+        q=p**stage
+        for n in [5,7,10,13]:
+            upper=s.Poly(sum(comb(n,k)*s.rf(beta+n,q*k)*x**k
+                             for k in range(n+1)),x)
+            lower=s.Poly(sum(comb(n-1,k)*s.rf(beta+n-1,q*k)*x**k
+                             for k in range(n)),x)
+            assert s.gcd(upper,lower).degree()==0
+            checks+=1;prime_power_pair_cases+=1
+    parameter_closure_cases=0
+    eta=s.Symbol("eta")
+    for p in [2,3,5]:
+        for stage in [2,3,4]:
+            for center in range(p+2):
+                for j in range(p):
+                    residue=(center-j)%p
+                    descendant=(center+p**stage*eta-j-residue)/p
+                    expected=(center-j-residue)//p+p**(stage-1)*eta
+                    assert s.expand(descendant-expected)==0
+                    checks+=1;parameter_closure_cases+=1
+    exact_center_cases=0
+    u_center=s.Symbol("u_center")
+    for p,stage in [(2,2),(2,3),(3,2)]:
+        q=p**stage;C=(q-1)//(p-1)
+        for n in [2,3]:
+            delta=prime_gap_cyclic_determinant(n,q,g,x,u_center)
+            N=n*(n-1)//2
+            for m in range(q):
+                formula=Fraction(factorial(q*n-m-1)**(n-1),
+                    q**N*prod(k**k*factorial(q*k-m-1) for k in range(1,n)))
+                assert Fraction(int(delta.eval(-m)))==formula
+                assert vp(formula,p)==(C-stage)*N
+                checks+=1;exact_center_cases+=1
     return {"all_recorded_checks":checks,"profiles":profiles,
-        "sharper_valuation_diagnostic_cases":valuation_cases,
-        "sharper_valuation_status":"diagnostic conjecture; not used in noncollision proof",
-        "proof_scope":"all s>=1 via Artin-Hasse closure and strengthened Gauss-degree induction",
+        "prime_power_valuation_cases":valuation_cases,
+        "literal_prime_power_lower_one_pairs":prime_power_pair_cases,
+        "stage_parameter_closure_cases":parameter_closure_cases,
+        "negative_integer_center_formula_cases":exact_center_cases,
+        "valuation_status":"proved by root-free integer disks and exact center values",
+        "proof_scope":"all s>=1: stage-dependent Artin-Hasse closure, Gauss-degree induction, exact valuations on integer disks",
         "finite_tests_prove_unbounded_scope":False,
         "all_real_positive_Gamma_shapes_claimed":False}
 

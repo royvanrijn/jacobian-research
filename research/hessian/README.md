@@ -10,9 +10,10 @@ Restricted Hessian classes, polynomial graphs and formal termination.
 |---|---|---|---|
 | Complete quintic graph exclusion with an explicit nilpotent algebra | Internal result | proved | [Source](../jacobian/affine-complements/FULL_COMPLEX_QUINTIC_GRAPH_EXCLUSION_AND_CUBIC_NILPOTENCE.md) |
 | Ricci-flat HC4 inversion and the plane shear lemma | Internal result | proved | [Source](hc4-triangular-graphs/RICCI_FLAT_HC4_AND_ONE_DIMENSIONAL_JACOBIAN_IMAGES.md) |
-| Even-moment lattices and the sixth-moment trace criterion | Internal result | open | [Source](hc4-triangular-graphs/EVEN_MOMENT_LATTICES_AND_SIXTH_MOMENT_TRACE_TEST.md) |
-| Two first source derivatives reconstruct the full field | Internal result | proved | [Source](hc4-triangular-graphs/REPLICA_DEGREE_AND_SOURCE_DERIVATIVE_FIELD_RECONSTRUCTION.md) |
+| Even-moment lattices and the sixth-moment trace criterion | Internal result | proved | [Source](hc4-triangular-graphs/EVEN_MOMENT_LATTICES_AND_SIXTH_MOMENT_TRACE_TEST.md) |
+| First source derivatives and finite source reconstruction | Internal result | proved | [Source](hc4-triangular-graphs/REPLICA_DEGREE_AND_SOURCE_DERIVATIVE_FIELD_RECONSTRUCTION.md) |
 | Reduced branch trace defects and symmetric matrix factorizations | Internal result | proved | [Source](hc4-triangular-graphs/REDUCED_BRANCH_PAIRING_AND_SIXTH_MOMENT_DEFECT.md) |
+| Regular source-coordinate completions and the primitive obstruction | Internal result | stale | [Source](hc4-triangular-graphs/REGULAR_SOURCE_COORDINATE_COMPLETIONS_AND_PRIMITIVE_RESIDUES.md) |
 
 **Computed obligations:** 10 unresolved; 0 resolved within their exact scope.
 
@@ -22,7 +23,8 @@ Scope limits:
 - The degree-five graph exclusion concerns a fixed v2 parent and graph degree, not all potentials or embeddings.
 - Ricci-flat HC4 is a restricted sufficient theorem using the attributed Tang structural alternative. Scalar curvature does not substitute for Ricci flatness. Retained invertible cotangent examples have nonzero Ricci, so Ricci flatness is not necessary for invertibility.
 - The exact moment lattice/trace criterion retains LW0, LY0 and KN0. Automatic T3 perfection remains the missing implication to JC2; HC4 and JC2 are linked by the stated Tang/cotangent equivalence.
-- Two first source velocities already reconstruct the full function field in every source frame; their integral landing is still open. Reduced branch residue pairings and matrix factorizations are proved by finite-normal-surface algebra independently of KQ0. The analytic moment identification still retains the unverified quotient-singularity/source-layer input.
+- Two first source velocities already reconstruct the full function field in every source frame; their integral landing is still open. Reduced branch residue pairings and matrix factorizations are proved by finite-normal-surface algebra independently of KQ0. The analytic moment point hypothesis is now supplied by the audited Flenner-Zaidenberg quotient theorem; the separate differential source-layer input in KU2 remains unverified.
+- In generic source directions two first velocities give the finite normalization of the source first-jet image and R=S[P_v,Q_v] exactly. The open target-integrality step remains. Smooth exact-volume completions with a regular actual source coordinate and positive canonical class exist in every n>=2,q>=2 of the explicit control family; their displayed finite plane maps have Jacobian zeros.
 
 Tracked obligations (computed states):
 

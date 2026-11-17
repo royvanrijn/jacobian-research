@@ -1,0 +1,634 @@
+{
+  "status": "PASS",
+  "positive_knots": 24,
+  "BKP_proposition_1_4_exclusions": 24,
+  "Lustig_Moriah_nonunit_plat_gcd_exclusions": 24,
+  "maximum_prime_factor_multiplicity": 2,
+  "results": [
+    {
+      "name": "13a_373",
+      "determinant": 431,
+      "prime_factorization": {
+        "431": 1
+      },
+      "prime_factors_with_multiplicity": 1,
+      "maximal_minors": [
+        -431,
+        431,
+        -431,
+        431,
+        -431,
+        431,
+        -431,
+        431,
+        -431,
+        431,
+        -431,
+        431,
+        -431
+      ],
+      "tree_coxeter_rank_upper_bound": 2,
+      "excluded_from_BKP_proposition_1_4_at_bridge_four": true
+    },
+    {
+      "name": "13a_375",
+      "determinant": 433,
+      "prime_factorization": {
+        "433": 1
+      },
+      "prime_factors_with_multiplicity": 1,
+      "maximal_minors": [
+        433,
+        -433,
+        433,
+        -433,
+        433,
+        -433,
+        433,
+        -433,
+        433,
+        -433,
+        433,
+        -433,
+        433
+      ],
+      "tree_coxeter_rank_upper_bound": 2,
+      "excluded_from_BKP_proposition_1_4_at_bridge_four": true
+    },
+    {
+      "name": "13a_391",
+      "determinant": 433,
+      "prime_factorization": {
+        "433": 1
+      },
+      "prime_factors_with_multiplicity": 1,
+      "maximal_minors": [
+        433,
+        -433,
+        433,
+        -433,
+        433,
+        -433,
+        433,
+        -433,
+        433,
+        -433,
+        433,
+        -433,
+        433
+      ],
+      "tree_coxeter_rank_upper_bound": 2,
+      "excluded_from_BKP_proposition_1_4_at_bridge_four": true
+    },
+    {
+      "name": "13a_392",
+      "determinant": 431,
+      "prime_factorization": {
+        "431": 1
+      },
+      "prime_factors_with_multiplicity": 1,
+      "maximal_minors": [
+        -431,
+        431,
+        -431,
+        431,
+        -431,
+        431,
+        -431,
+        431,
+        -431,
+        431,
+        -431,
+        431,
+        -431
+      ],
+      "tree_coxeter_rank_upper_bound": 2,
+      "excluded_from_BKP_proposition_1_4_at_bridge_four": true
+    },
+    {
+      "name": "13a_3264",
+      "determinant": 361,
+      "prime_factorization": {
+        "19": 2
+      },
+      "prime_factors_with_multiplicity": 2,
+      "maximal_minors": [
+        361,
+        -361,
+        361,
+        -361,
+        361,
+        -361,
+        361,
+        -361,
+        361,
+        -361,
+        361,
+        -361,
+        361
+      ],
+      "tree_coxeter_rank_upper_bound": 3,
+      "excluded_from_BKP_proposition_1_4_at_bridge_four": true
+    },
+    {
+      "name": "13a_3266",
+      "determinant": 359,
+      "prime_factorization": {
+        "359": 1
+      },
+      "prime_factors_with_multiplicity": 1,
+      "maximal_minors": [
+        -359,
+        359,
+        -359,
+        359,
+        -359,
+        359,
+        -359,
+        359,
+        -359,
+        359,
+        -359,
+        359,
+        -359
+      ],
+      "tree_coxeter_rank_upper_bound": 2,
+      "excluded_from_BKP_proposition_1_4_at_bridge_four": true
+    },
+    {
+      "name": "13a_3275",
+      "determinant": 359,
+      "prime_factorization": {
+        "359": 1
+      },
+      "prime_factors_with_multiplicity": 1,
+      "maximal_minors": [
+        -359,
+        359,
+        -359,
+        359,
+        -359,
+        359,
+        -359,
+        359,
+        -359,
+        359,
+        -359,
+        359,
+        -359
+      ],
+      "tree_coxeter_rank_upper_bound": 2,
+      "excluded_from_BKP_proposition_1_4_at_bridge_four": true
+    },
+    {
+      "name": "13a_3276",
+      "determinant": 361,
+      "prime_factorization": {
+        "19": 2
+      },
+      "prime_factors_with_multiplicity": 2,
+      "maximal_minors": [
+        361,
+        -361,
+        361,
+        -361,
+        361,
+        -361,
+        361,
+        -361,
+        361,
+        -361,
+        361,
+        -361,
+        361
+      ],
+      "tree_coxeter_rank_upper_bound": 3,
+      "excluded_from_BKP_proposition_1_4_at_bridge_four": true
+    },
+    {
+      "name": "13n_1005",
+      "determinant": 151,
+      "prime_factorization": {
+        "151": 1
+      },
+      "prime_factors_with_multiplicity": 1,
+      "maximal_minors": [
+        151,
+        -151,
+        151,
+        -151,
+        151,
+        -151,
+        151,
+        -151,
+        151,
+        -151,
+        -151,
+        151,
+        -151
+      ],
+      "tree_coxeter_rank_upper_bound": 2,
+      "excluded_from_BKP_proposition_1_4_at_bridge_four": true
+    },
+    {
+      "name": "13n_1006",
+      "determinant": 221,
+      "prime_factorization": {
+        "13": 1,
+        "17": 1
+      },
+      "prime_factors_with_multiplicity": 2,
+      "maximal_minors": [
+        -221,
+        221,
+        -221,
+        221,
+        -221,
+        221,
+        -221,
+        221,
+        221,
+        -221,
+        -221,
+        221,
+        -221
+      ],
+      "tree_coxeter_rank_upper_bound": 3,
+      "excluded_from_BKP_proposition_1_4_at_bridge_four": true
+    },
+    {
+      "name": "13n_1007",
+      "determinant": 59,
+      "prime_factorization": {
+        "59": 1
+      },
+      "prime_factors_with_multiplicity": 1,
+      "maximal_minors": [
+        -59,
+        59,
+        -59,
+        59,
+        -59,
+        59,
+        -59,
+        59,
+        59,
+        -59,
+        59,
+        -59,
+        59
+      ],
+      "tree_coxeter_rank_upper_bound": 2,
+      "excluded_from_BKP_proposition_1_4_at_bridge_four": true
+    },
+    {
+      "name": "13n_1011",
+      "determinant": 137,
+      "prime_factorization": {
+        "137": 1
+      },
+      "prime_factors_with_multiplicity": 1,
+      "maximal_minors": [
+        137,
+        -137,
+        137,
+        -137,
+        137,
+        -137,
+        137,
+        -137,
+        137,
+        -137,
+        -137,
+        137,
+        -137
+      ],
+      "tree_coxeter_rank_upper_bound": 2,
+      "excluded_from_BKP_proposition_1_4_at_bridge_four": true
+    },
+    {
+      "name": "13n_1012",
+      "determinant": 211,
+      "prime_factorization": {
+        "211": 1
+      },
+      "prime_factors_with_multiplicity": 1,
+      "maximal_minors": [
+        211,
+        -211,
+        211,
+        -211,
+        211,
+        -211,
+        211,
+        -211,
+        -211,
+        211,
+        211,
+        -211,
+        211
+      ],
+      "tree_coxeter_rank_upper_bound": 2,
+      "excluded_from_BKP_proposition_1_4_at_bridge_four": true
+    },
+    {
+      "name": "13n_1013",
+      "determinant": 85,
+      "prime_factorization": {
+        "5": 1,
+        "17": 1
+      },
+      "prime_factors_with_multiplicity": 2,
+      "maximal_minors": [
+        -85,
+        85,
+        -85,
+        85,
+        -85,
+        85,
+        -85,
+        85,
+        85,
+        -85,
+        85,
+        -85,
+        85
+      ],
+      "tree_coxeter_rank_upper_bound": 3,
+      "excluded_from_BKP_proposition_1_4_at_bridge_four": true
+    },
+    {
+      "name": "13n_1043",
+      "determinant": 137,
+      "prime_factorization": {
+        "137": 1
+      },
+      "prime_factors_with_multiplicity": 1,
+      "maximal_minors": [
+        -137,
+        137,
+        -137,
+        137,
+        -137,
+        137,
+        -137,
+        137,
+        -137,
+        137,
+        137,
+        -137,
+        137
+      ],
+      "tree_coxeter_rank_upper_bound": 2,
+      "excluded_from_BKP_proposition_1_4_at_bridge_four": true
+    },
+    {
+      "name": "13n_1044",
+      "determinant": 211,
+      "prime_factorization": {
+        "211": 1
+      },
+      "prime_factors_with_multiplicity": 1,
+      "maximal_minors": [
+        211,
+        -211,
+        211,
+        -211,
+        211,
+        -211,
+        211,
+        -211,
+        -211,
+        211,
+        211,
+        -211,
+        211
+      ],
+      "tree_coxeter_rank_upper_bound": 2,
+      "excluded_from_BKP_proposition_1_4_at_bridge_four": true
+    },
+    {
+      "name": "13n_1045",
+      "determinant": 85,
+      "prime_factorization": {
+        "5": 1,
+        "17": 1
+      },
+      "prime_factors_with_multiplicity": 2,
+      "maximal_minors": [
+        85,
+        -85,
+        85,
+        -85,
+        85,
+        -85,
+        85,
+        -85,
+        -85,
+        85,
+        -85,
+        85,
+        -85
+      ],
+      "tree_coxeter_rank_upper_bound": 3,
+      "excluded_from_BKP_proposition_1_4_at_bridge_four": true
+    },
+    {
+      "name": "13n_1046",
+      "determinant": 151,
+      "prime_factorization": {
+        "151": 1
+      },
+      "prime_factors_with_multiplicity": 1,
+      "maximal_minors": [
+        -151,
+        151,
+        -151,
+        151,
+        -151,
+        151,
+        -151,
+        151,
+        -151,
+        151,
+        151,
+        -151,
+        151
+      ],
+      "tree_coxeter_rank_upper_bound": 2,
+      "excluded_from_BKP_proposition_1_4_at_bridge_four": true
+    },
+    {
+      "name": "13n_1047",
+      "determinant": 221,
+      "prime_factorization": {
+        "13": 1,
+        "17": 1
+      },
+      "prime_factors_with_multiplicity": 2,
+      "maximal_minors": [
+        -221,
+        221,
+        -221,
+        221,
+        -221,
+        221,
+        -221,
+        221,
+        221,
+        -221,
+        -221,
+        221,
+        -221
+      ],
+      "tree_coxeter_rank_upper_bound": 3,
+      "excluded_from_BKP_proposition_1_4_at_bridge_four": true
+    },
+    {
+      "name": "13n_1048",
+      "determinant": 59,
+      "prime_factorization": {
+        "59": 1
+      },
+      "prime_factors_with_multiplicity": 1,
+      "maximal_minors": [
+        59,
+        -59,
+        59,
+        -59,
+        59,
+        -59,
+        59,
+        -59,
+        -59,
+        59,
+        -59,
+        59,
+        -59
+      ],
+      "tree_coxeter_rank_upper_bound": 2,
+      "excluded_from_BKP_proposition_1_4_at_bridge_four": true
+    },
+    {
+      "name": "13n_3842",
+      "determinant": 11,
+      "prime_factorization": {
+        "11": 1
+      },
+      "prime_factors_with_multiplicity": 1,
+      "maximal_minors": [
+        -11,
+        11,
+        -11,
+        11,
+        -11,
+        11,
+        -11,
+        11,
+        11,
+        -11,
+        11,
+        -11,
+        11
+      ],
+      "tree_coxeter_rank_upper_bound": 2,
+      "excluded_from_BKP_proposition_1_4_at_bridge_four": true
+    },
+    {
+      "name": "13n_3844",
+      "determinant": 11,
+      "prime_factorization": {
+        "11": 1
+      },
+      "prime_factors_with_multiplicity": 1,
+      "maximal_minors": [
+        11,
+        -11,
+        11,
+        -11,
+        11,
+        -11,
+        11,
+        -11,
+        -11,
+        11,
+        -11,
+        11,
+        -11
+      ],
+      "tree_coxeter_rank_upper_bound": 2,
+      "excluded_from_BKP_proposition_1_4_at_bridge_four": true
+    },
+    {
+      "name": "13n_3855",
+      "determinant": 11,
+      "prime_factorization": {
+        "11": 1
+      },
+      "prime_factors_with_multiplicity": 1,
+      "maximal_minors": [
+        -11,
+        11,
+        -11,
+        11,
+        -11,
+        11,
+        -11,
+        11,
+        11,
+        -11,
+        11,
+        -11,
+        11
+      ],
+      "tree_coxeter_rank_upper_bound": 2,
+      "excluded_from_BKP_proposition_1_4_at_bridge_four": true
+    },
+    {
+      "name": "13n_3856",
+      "determinant": 11,
+      "prime_factorization": {
+        "11": 1
+      },
+      "prime_factors_with_multiplicity": 1,
+      "maximal_minors": [
+        11,
+        -11,
+        11,
+        -11,
+        11,
+        -11,
+        11,
+        -11,
+        -11,
+        11,
+        -11,
+        11,
+        -11
+      ],
+      "tree_coxeter_rank_upper_bound": 2,
+      "excluded_from_BKP_proposition_1_4_at_bridge_four": true
+    }
+  ],
+  "controls": {
+    "zero_pivot_integer_determinant": -6,
+    "path_3_5_7_orientation_abelianization_order": 105,
+    "cycle_3_5_7_11_maximal_minors": [
+      105,
+      -165,
+      231,
+      -385
+    ],
+    "cycle_orientation_abelianization_order": 1,
+    "sharp_weight_sum_control": 15,
+    "weight_sum_control_orientation_abelianization_order": 1,
+    "three_trefoils_not_excluded_by_multiplicity": true,
+    "corrupt_diagram_incidence_rejected": true
+  },
+  "scope": "Exact Fox determinant and prime-factor counts on the retained 24 positive seven-sheet diagrams. The written arguments exclude every presentation satisfying BKP2026 Proposition 1.4 or the Lustig-Moriah nonunit plat gcd criterion as reported in Moriah2007 Theorem 4.20. Arbitrary fishnets, cyclic twisted graphs and global prior coverage remain outside this conclusion.",
+  "input_sha256": {
+    "verify_fishnet_scope.py": "249ee2b3501fbed1a5d334071e55e2f0608de74fd840514cea65a247abf1d996",
+    "seven_sheet_cover_inputs.json": "0cdaed4926bdf03eb399d572da98bf59b7bbbe0ea13ab66106ddc34724a85ef6",
+    "FISHNET_SCOPE_AUDIT.tex": "26e119cc7e78e7612442d5f76b162034ad10c159a4167fbad2c68da35175fcf3"
+  }
+}

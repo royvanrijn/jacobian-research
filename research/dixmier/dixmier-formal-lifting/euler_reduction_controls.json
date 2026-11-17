@@ -1,0 +1,272 @@
+{
+  "claim": "QER1",
+  "status": "PASS",
+  "environment": {
+    "python": "3.12.3",
+    "sympy": "1.14.0"
+  },
+  "trace_continuations": [
+    {
+      "alpha": [
+        0,
+        0,
+        0
+      ],
+      "normalized_trace": "1"
+    },
+    {
+      "alpha": [
+        0,
+        0,
+        1
+      ],
+      "normalized_trace": "h*(z + 1)/2"
+    },
+    {
+      "alpha": [
+        0,
+        0,
+        2
+      ],
+      "normalized_trace": "h**2*(2*z**2 - 3)/8"
+    },
+    {
+      "alpha": [
+        0,
+        1,
+        0
+      ],
+      "normalized_trace": "-h/2"
+    },
+    {
+      "alpha": [
+        0,
+        1,
+        1
+      ],
+      "normalized_trace": "-h**2*(2*z + 1)/8"
+    },
+    {
+      "alpha": [
+        0,
+        1,
+        2
+      ],
+      "normalized_trace": "-h**3*(2*z**2 - 2*z - 3)/16"
+    },
+    {
+      "alpha": [
+        0,
+        2,
+        0
+      ],
+      "normalized_trace": "h**2/2"
+    },
+    {
+      "alpha": [
+        0,
+        2,
+        1
+      ],
+      "normalized_trace": "h**3*z/4"
+    },
+    {
+      "alpha": [
+        0,
+        2,
+        2
+      ],
+      "normalized_trace": "h**4*(z**2 - 2*z - 1)/8"
+    },
+    {
+      "alpha": [
+        1,
+        0,
+        0
+      ],
+      "normalized_trace": "-h/2"
+    },
+    {
+      "alpha": [
+        1,
+        0,
+        1
+      ],
+      "normalized_trace": "-h**2*(2*z + 1)/8"
+    },
+    {
+      "alpha": [
+        1,
+        0,
+        2
+      ],
+      "normalized_trace": "-h**3*(2*z**2 - 2*z - 3)/16"
+    },
+    {
+      "alpha": [
+        1,
+        1,
+        0
+      ],
+      "normalized_trace": "h**2/4"
+    },
+    {
+      "alpha": [
+        1,
+        1,
+        1
+      ],
+      "normalized_trace": "h**3*z/8"
+    },
+    {
+      "alpha": [
+        1,
+        1,
+        2
+      ],
+      "normalized_trace": "h**4*(z**2 - 2*z - 1)/16"
+    },
+    {
+      "alpha": [
+        1,
+        2,
+        0
+      ],
+      "normalized_trace": "-h**3/4"
+    },
+    {
+      "alpha": [
+        1,
+        2,
+        1
+      ],
+      "normalized_trace": "-h**4*(2*z - 1)/16"
+    },
+    {
+      "alpha": [
+        1,
+        2,
+        2
+      ],
+      "normalized_trace": "-h**5*z*(z - 3)/16"
+    },
+    {
+      "alpha": [
+        2,
+        0,
+        0
+      ],
+      "normalized_trace": "h**2/2"
+    },
+    {
+      "alpha": [
+        2,
+        0,
+        1
+      ],
+      "normalized_trace": "h**3*z/4"
+    },
+    {
+      "alpha": [
+        2,
+        0,
+        2
+      ],
+      "normalized_trace": "h**4*(z**2 - 2*z - 1)/8"
+    },
+    {
+      "alpha": [
+        2,
+        1,
+        0
+      ],
+      "normalized_trace": "-h**3/4"
+    },
+    {
+      "alpha": [
+        2,
+        1,
+        1
+      ],
+      "normalized_trace": "-h**4*(2*z - 1)/16"
+    },
+    {
+      "alpha": [
+        2,
+        1,
+        2
+      ],
+      "normalized_trace": "-h**5*z*(z - 3)/16"
+    },
+    {
+      "alpha": [
+        2,
+        2,
+        0
+      ],
+      "normalized_trace": "h**4/4"
+    },
+    {
+      "alpha": [
+        2,
+        2,
+        1
+      ],
+      "normalized_trace": "h**5*(z - 1)/8"
+    },
+    {
+      "alpha": [
+        2,
+        2,
+        2
+      ],
+      "normalized_trace": "h**6*(2*z**2 - 8*z + 3)/32"
+    }
+  ],
+  "finite_trace_interpolation": {
+    "alpha_box": "0<=alpha_i<=2",
+    "cases": 27,
+    "independent_finite_sums": true,
+    "interpolation_degree_bound": "|alpha|+2 from pole at +1",
+    "additional_points_per_case": 2
+  },
+  "sparse_Weyl_trace_controls": {
+    "invariant_operators": 11,
+    "pair_commutators": 55,
+    "nonzero_commutators_with_trace_zero": 36,
+    "Euler_level_relation": "PASS",
+    "normalized_identity": "1",
+    "H1": "-h/2",
+    "H2": "-h/2",
+    "H3": "(eta+h)/2",
+    "H1_squared": "0",
+    "H1_H2": "h^2/4"
+  },
+  "cotangent_descent_controls": {
+    "weights": [
+      1,
+      -1,
+      -2
+    ],
+    "normalized_Keller_determinant": "1",
+    "weighted_Euler_identity": "PASS",
+    "inverse_Jacobian_moment_preservation": "PASS",
+    "Fourier_moment": "E_plus+3*h",
+    "original_to_positive_level": "eta=lambda-3*h",
+    "quotient_positions": [
+      "A*B",
+      "A^2*C"
+    ],
+    "quotient_Jacobian": "(2-3*u-v)^2/4=A^2",
+    "localized_first_position": "x*A"
+  },
+  "hashes": {
+    "EULER_REDUCTION_TRACE_OBSTRUCTION.md": "8977723acf667871b6c8c514c50b14dfadca80488b7ca3051edbded6f962284e",
+    "check_euler_reduction_trace.py": "97b999db40895885fdbb3d183ba000f9ddd793142be363d4bb65f7f52cf77412",
+    "IDENTITY_LIFTS_AND_UNBOUNDED_INVERSES.md": "73a973afda64edd241676c898554d34a8563799e4bd9b17b79c4ca7bdc34b993"
+  },
+  "coverage_boundary": "Exact finite trace interpolation for the alpha box, sparse invariant Weyl commutators and Euler level relation, normalized Keller weights and moment identity, Fourier shift, and quotient Jacobian. The all-operator continuation, all scalar levels, matrix and full-corner obstructions, global chart faithfulness and reduced nonsurjectivity are written proofs. No bounded Weyl lift or DC1/DC2 resolution.",
+  "independent_replay": false,
+  "formal_verification": false,
+  "external_review": false
+}

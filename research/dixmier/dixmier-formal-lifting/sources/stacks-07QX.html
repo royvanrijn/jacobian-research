@@ -1,0 +1,485 @@
+<!doctype html>
+<html lang="en">
+<head>
+
+
+
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
+<meta name="theme-color" content="#d9d8d1">
+
+<title>Section 16.13 (07QX): The approximation property for G-rings&mdash;The Stacks project</title>
+
+<meta name="description" content="an open source textbook and reference work on algebraic geometry">
+
+<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+<link rel="stylesheet" type="text/css" href="/static/css/style.css">
+<link rel="stylesheet" type="text/css" href="/static/css/print.css">
+
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    extensions: ['tex2jax.js'],
+    jax: ['input/TeX','output/HTML-CSS'],
+    TeX: {
+      extensions: ['AMSmath.js', 'AMSsymbols.js', '/static/XyJax/extensions/TeX/xypic.js'],
+      Macros: {
+        linebreak: ["", 1, ""],
+        },
+      TagSide: 'left'
+    },
+    tex2jax: {
+      inlineMath: [['$','$']],
+      displayMath: [ ['$$','$$'], ["\\[","\\]"] ],
+    },
+    'HTML-CSS': {
+    	scale: 100,
+	availableFonts: [],
+    }
+  });
+</script>
+
+<script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js" integrity="sha384-crwIf/BuaWM9rM65iM+dWFldgQ1Un8jWZMuh3puxb8TOY9+linwLoI7ZHZT+aekW" crossorigin="anonymous"></script>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+<link rel="stylesheet" type="text/css" href="https://gitcdn.github.io/bootstrap-toggle/2.2.2/css/bootstrap-toggle.min.css" integrity="sha384-yBEPaZw444dClEfen526Q6x4nwuzGO6PreKpbRVSLFCci3oYGE5DnD1pNsubCxYW" crossorigin="anonymous">
+<script src="https://gitcdn.github.io/bootstrap-toggle/2.2.2/js/bootstrap-toggle.min.js" integrity="sha384-cd07Jx5KAMCf7qM+DveFKIzHXeCSYUrai+VWCPIXbYL7JraHMFL/IXaCKbLtsxyB" crossorigin="anonymous"></script>
+
+<link rel="icon" type="image/vnd.microsoft.icon" href="/static/stacks.ico">
+<link rel="shortcut icon" type="image/vnd.microsoft.icon" href="/static/stacks.ico">
+
+
+  <script type="text/javascript" src="/static/js/toggle.js"></script>
+  <script type="text/javascript" src="/static/js/comments.js"></script>
+
+  <link rel="stylesheet" type="text/css" href="https://unpkg.com/easymde@2.0.1/dist/easymde.min.css" integrity="sha384-IRbzB9px0sfIx90vkN+geaX3F4LVcg/M+k5vmVkfjs5TnRX3MIhGS8Ma06ALKVYp" crossorigin="anonymous">
+  <script src="https://unpkg.com/easymde@2.0.1/dist/easymde.min.js" integrity="sha384-v06sb0t0ToY1YRtVlfD/GCGpIZ/QHYyeH2Gzjvr0ZJI62/50DIzT8XRgQ6JvptVu" crossorigin="anonymous"></script>
+
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/jquery-bonsai@2.1.3/jquery.bonsai.css" integrity="sha384-8xTxM5sJRAUB0ckdBghB5am+aw+0kC5FfSUzMI+KI+UD8uBCNeSkdi8I1J4+Wjwu" crossorigin="anonymous">
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/jquery-bonsai@2.1.3/jquery.bonsai.js" integrity="sha384-gE5xOW4MVOjJL1A2SbxwvQw/qet6h8Vdv06j3JQGhBW4d1H5hXYB12WsrUBgU439" crossorigin="anonymous"></script>
+
+
+</head>
+
+<body>
+<div class="container-fluid bounded">
+  <div id="first-bar" class="row topbar inner-top top">
+    <header class="col">
+      <h1><a href="/">The Stacks project</a></h1>
+    </header>
+
+    <nav id="header">
+      <ul id="quicklinks">
+        <li><a href="/bibliography">bibliography</a>
+        <li><a href="https://www.math.columbia.edu/~dejong/wordpress/">blog</a>
+      </ul>
+
+      <form id="quicksearch" action="/search">
+        <span id="search-icon"><img src="/static/images/search.svg"></span>
+        <input type="search" name="query" size="16" placeholder="keywords or a tag" value="">
+      </form>
+    </nav>
+  </div>
+
+  <nav id="second-bar" class="row topbar sticky-top">
+    
+      <ul class="col-11 col-sm-11 col-md-11 col-lg-12 col-xl-12" id="crumbs">
+        <li><a href="/browse">Table of contents</a></li>
+        
+  
+  
+    <li>Part <a href="/tag/0ELQ" data-tag="0ELQ">1</a>: Preliminaries
+    
+  
+    <li>Chapter <a href="/tag/07BW" data-tag="07BW">16</a>: Smoothing Ring Maps
+    
+  
+    <li class="active">Section <a href="/tag/07QX" data-tag="07QX">16.13</a>: The approximation property for G-rings
+    <span id="citation">(<a href="/tag/07QX/cite">cite</a>)</span>
+  
+
+
+      </ul>
+    
+
+    
+      <div class="col-1 col-sm-1 col-md-1" id="burger">
+        <input type="checkbox" id="burger-input"></input>
+
+        <label id="burger-icon" for="burger-input">
+          <span id="top-bun"></span>
+          <span id="meat"></span>
+          <span id="bottom-bun"></span>
+        </label>
+
+        <div id="burger-content">
+          
+  
+  <div class="interaction">
+    
+  
+
+  <ul class="neighbours">
+  
+    <li class="left"><a href="/tag/07GB">previous section</a>
+  
+  
+    <li class="right"><a href="/tag/0AH4">next section</a>
+  
+  </ul>
+  <br style="clear:both">
+
+  </div>
+
+  
+
+
+        </div>
+      </div>
+    
+
+    
+  </nav>
+
+  <div class="row" id="content">
+    <section id="main" class="col-xs-12 col-sm-12 col-md-12 col-lg-8 col-xl-8">
+      
+<div class="html" id="tag">
+  
+
+  
+
+  
+
+  <h2 id="smoothing-section-approximation-G-rings" class="tex-section"><span data-tag="07QX">16.13</span> The approximation property for G-rings</h2>
+
+<p>
+Let $R$ be a Noetherian local ring. In this case $R$ is a G-ring if and only if the ring map $R \to R^\wedge $ is regular, see More on Algebra, Lemma <a href="/tag/07PT" data-tag="07PT">15.51.7</a>. In this case it is true that the henselization $R^ h$ and the strict henselization $R^{sh}$ of $R$ are G-rings, see More on Algebra, Lemma <a href="/tag/07QR" data-tag="07QR">15.51.8</a>. Moreover, any algebra essentially of finite type over a field, over a complete local ring, over $\mathbf{Z}$, or over a characteristic zero Dedekind ring is a G-ring, see More on Algebra, Proposition <a href="/tag/07PX" data-tag="07PX">15.51.12</a>. This gives an ample supply of rings to which the result below applies. 
+</p>
+<p>
+Let $R$ be a ring. Let $f_1, \ldots , f_ m \in R[x_1, \ldots , x_ n]$. Let $S$ be an $R$-algebra. In this situation we say a vector $(a_1, \ldots , a_ n) \in S^ n$ is a <em>solution in $S$</em> if and only if 
+</p>
+<div class="equation">
+  \[  f_ j(a_1, \ldots , a_ n) = 0 \text{ in } S, \text{ for } j = 1, \ldots , m  \]
+</div>
+<p>
+ Of course an important question in algebraic geometry is to see when systems of polynomial equations have solutions. The following theorem tells us that having solutions in the completion of a local Noetherian ring is often enough to show there exist solutions in the henselization of the ring. 
+</p>
+<p>
+<article class="env-theorem" id="07QY">
+  <p><a class="environment-identifier" href="/tag/07QY">Theorem <span data-tag="07QY">16.13.1</span>.</a> Let $R$ be a Noetherian local ring. Let $f_1, \ldots , f_ m \in R[x_1, \ldots , x_ n]$. Suppose that $(a_1, \ldots , a_ n) \in (R^\wedge )^ n$ is a solution in $R^\wedge $. If $R$ is a henselian G-ring, then for every integer $N$ there exists a solution $(b_1, \ldots , b_ n) \in R^ n$ in $R$ such that $a_ i - b_ i \in \mathfrak m^ NR^\wedge $. </p>
+</article> 
+</p>
+<article class="env-proof">
+    <p>
+      <strong>Proof.</strong>
+      Let $c_ i \in R$ be an element such that $a_ i - c_ i \in \mathfrak m^ N$. Choose generators $\mathfrak m^ N = (d_1, \ldots , d_ M)$. Write $a_ i = c_ i + \sum a_{i, l} d_ l$. Consider the polynomial ring $R[x_{i, l}]$ and the elements 
+    <p>
+      <div class="equation">
+  \[  g_ j = f_ j(c_1 + \sum x_{1, l} d_ l , \ldots , c_ n + \sum x_{n, l} d_{n, l}) \in R[x_{i, l}]  \]
+</div>
+    <p>
+       The system of equations $g_ j = 0$ has the solution $(a_{i, l})$. Suppose that we can show that $g_ j$ as a solution $(b_{i, l})$ in $R$. Then it follows that $b_ i = c_ i + \sum b_{i, l}d_ l$ is a solution of $f_ j = 0$ which is congruent to $a_ i$ modulo $\mathfrak m^ N$. Thus it suffices to show that solvability over $R^\wedge $ implies solvability over $R$. 
+    <p>
+      Let $A \subset R^\wedge $ be the $R$-subalgebra generated by $a_1, \ldots , a_ n$. Since we've assumed $R$ is a G-ring, i.e., that $R \to R^\wedge $ is regular, we see that there exists a factorization 
+    <p>
+      <div class="equation">
+  \[  A \to B \to R^\wedge  \]
+</div>
+    <p>
+       with $B$ smooth over $R$, see Theorem <a href="/tag/07GC" data-tag="07GC">16.12.1</a>. Denote $\kappa = R/\mathfrak m$ the residue field. It is also the residue field of $R^\wedge $, so we get a commutative diagram 
+    <p>
+      <div class="equation">
+  \[  \xymatrix{ B \ar[rd] \ar@{..>}[r] &  R' \ar@{..>}[d] \\  R \ar[r] \ar[u] &  \kappa }  \]
+</div>
+    <p>
+       Since the vertical arrow is smooth, More on Algebra, Lemma <a href="/tag/07M7" data-tag="07M7">15.9.14</a> implies that there exists an étale ring map $R \to R'$ which induces an isomorphism $R/\mathfrak m \to R'/\mathfrak mR'$ and an $R$-algebra map $B \to R'$ making the diagram above commute. Since $R$ is henselian we see that $R \to R'$ has a section, see Algebra, Lemma <a href="/tag/04GG" data-tag="04GG">10.153.3</a>. Let $b_ i \in R$ be the image of $a_ i$ under the ring maps $A \to B \to R' \to R$. Since all of these maps are $R$-algebra maps, we see that $(b_1, \ldots , b_ n)$ is a solution in $R$. 
+      <span class="qed">$\square$</span>
+    </p>
+</article>
+<p>
+Given a Noetherian local ring $(R, \mathfrak m)$, an étale ring map $R \to R'$, and a maximal ideal $\mathfrak m' \subset R'$ lying over $\mathfrak m$ with $\kappa (\mathfrak m) = \kappa (\mathfrak m')$, then we have inclusions 
+</p>
+<div class="equation">
+  \[  R \subset R_{\mathfrak m'} \subset R^ h \subset R^\wedge ,  \]
+</div>
+<p>
+ by Algebra, Lemma <a href="/tag/04GR" data-tag="04GR">10.155.5</a> and More on Algebra, Lemma <a href="/tag/06LJ" data-tag="06LJ">15.46.3</a>. 
+</p>
+<p>
+<article class="env-theorem" id="07QZ">
+  <p><a class="environment-identifier" href="/tag/07QZ">Theorem <span data-tag="07QZ">16.13.2</span>.</a> Let $R$ be a Noetherian local ring. Let $f_1, \ldots , f_ m \in R[x_1, \ldots , x_ n]$. Suppose that $(a_1, \ldots , a_ n) \in (R^\wedge )^ n$ is a solution. If $R$ is a G-ring, then for every integer $N$ there exist </p>
+  <p><ol>
+  <li><p>
+an étale ring map $R \to R'$, 
+</p>
+</li><li><p>
+a maximal ideal $\mathfrak m' \subset R'$ lying over $\mathfrak m$ 
+</p>
+</li><li><p>
+a solution $(b_1, \ldots , b_ n) \in (R')^ n$ in $R'$ 
+</p>
+</li>
+</ol></p>
+  <p> such that $\kappa (\mathfrak m) = \kappa (\mathfrak m')$ and $a_ i - b_ i \in (\mathfrak m')^ NR^\wedge $. </p>
+</article> 
+</p>
+<article class="env-proof">
+    <p>
+      <strong>Proof.</strong>
+      We could deduce this theorem from Theorem <a href="/tag/07QY" data-tag="07QY">16.13.1</a> using that the henselization $R^ h$ is a G-ring by More on Algebra, Lemma <a href="/tag/07QR" data-tag="07QR">15.51.8</a> and writing $R^ h$ as a directed colimit of étale extension $R'$. Instead we prove this by redoing the proof of the previous theorem in this case. 
+    <p>
+      Let $c_ i \in R$ be an element such that $a_ i - c_ i \in \mathfrak m^ N$. Choose generators $\mathfrak m^ N = (d_1, \ldots , d_ M)$. Write $a_ i = c_ i + \sum a_{i, l} d_ l$. Consider the polynomial ring $R[x_{i, l}]$ and the elements 
+    <p>
+      <div class="equation">
+  \[  g_ j = f_ j(c_1 + \sum x_{1, l} d_ l , \ldots , c_ n + \sum x_{n, l} d_{n, l}) \in R[x_{i, l}]  \]
+</div>
+    <p>
+       The system of equations $g_ j = 0$ has the solution $(a_{i, l})$. Suppose that we can show that $g_ j$ as a solution $(b_{i, l})$ in $R'$ for some étale ring map $R \to R'$ endowed with a maximal ideal $\mathfrak m'$ such that $\kappa (\mathfrak m) = \kappa (\mathfrak m')$. Then it follows that $b_ i = c_ i + \sum b_{i, l}d_ l$ is a solution of $f_ j = 0$ which is congruent to $a_ i$ modulo $(\mathfrak m')^ N$. Thus it suffices to show that solvability over $R^\wedge $ implies solvability over some étale ring extension which induces a trivial residue field extension at some prime over $\mathfrak m$. 
+    <p>
+      Let $A \subset R^\wedge $ be the $R$-subalgebra generated by $a_1, \ldots , a_ n$. Since we've assumed $R$ is a G-ring, i.e., that $R \to R^\wedge $ is regular, we see that there exists a factorization 
+    <p>
+      <div class="equation">
+  \[  A \to B \to R^\wedge  \]
+</div>
+    <p>
+       with $B$ smooth over $R$, see Theorem <a href="/tag/07GC" data-tag="07GC">16.12.1</a>. Denote $\kappa = R/\mathfrak m$ the residue field. It is also the residue field of $R^\wedge $, so we get a commutative diagram 
+    <p>
+      <div class="equation">
+  \[  \xymatrix{ B \ar[rd] \ar@{..>}[r] &  R' \ar@{..>}[d] \\  R \ar[r] \ar[u] &  \kappa }  \]
+</div>
+    <p>
+       Since the vertical arrow is smooth, More on Algebra, Lemma <a href="/tag/07M7" data-tag="07M7">15.9.14</a> implies that there exists an étale ring map $R \to R'$ which induces an isomorphism $R/\mathfrak m \to R'/\mathfrak mR'$ and an $R$-algebra map $B \to R'$ making the diagram above commute. Let $b_ i \in R'$ be the image of $a_ i$ under the ring maps $A \to B \to R'$. Since all of these maps are $R$-algebra maps, we see that $(b_1, \ldots , b_ n)$ is a solution in $R'$. 
+      <span class="qed">$\square$</span>
+    </p>
+</article>
+<p>
+<article class="env-example" id="0A1W">
+  <p><a class="environment-identifier" href="/tag/0A1W">Example <span data-tag="0A1W">16.13.3</span>.</a> Let $(R, \mathfrak m)$ be a Noetherian local ring with henselization $R^ h$. The map on completions $R^\wedge \to (R^ h)^\wedge $ is an isomorphism, see More on Algebra, Lemma <a href="/tag/06LJ" data-tag="06LJ">15.46.3</a>. Since also $R^ h$ is Noetherian (ibid.) we may think of $R^ h$ as a subring of its completion (because the completion is faithfully flat). In this way we see that we may identify $R^ h$ with a subring of $R^\wedge $. </p>
+  <p>Let us try to understand which elements of $R^\wedge $ are in $R^ h$. For simplicity we assume $R$ is a domain with fraction field $K$. Clearly, every element $f$ of $R^ h$ is algebraic over $R$, in the sense that there exists an equation of the form $a_ n f^ n + \ldots + a_1 f + a_0 = 0$ for some $a_ i \in R$ with $n > 0$ and $a_ n \not= 0$. </p>
+  <p>Conversely, assume that $f \in R^\wedge $, $n \in \mathbf{N}$, and $a_0, \ldots , a_ n \in R$ with $a_ n \not= 0$ such that $a_ n f^ n + \ldots + a_1 f + a_0 = 0$. If $R$ is a G-ring, then, for every $N > 0$ there exists an element $g \in R^ h$ with $a_ n g^ n + \ldots + a_1 g + a_0 = 0$ and $f - g \in \mathfrak m^ N R^\wedge $, see Theorem <a href="/tag/07QZ" data-tag="07QZ">16.13.2</a>. We'd like to conclude that $f = g$ when $N \gg 0$. If this is not true, then we find infinitely many roots $g$ of $P(T)$ in $R^ h$. This is impossible because (1) $R^ h \subset R^ h \otimes _ R K$ and (2) $R^ h \otimes _ R K$ is a finite product of field extensions of $K$. Namely, $R \to K$ is injective and $R \to R^ h$ is flat, hence $R^ h \to R^ h \otimes _ R K$ is injective and (2) follows from More on Algebra, Lemma <a href="/tag/07QQ" data-tag="07QQ">15.46.13</a>. </p>
+  <p>Conclusion: If $R$ is a Noetherian local domain with fraction field $K$ and a G-ring, then $R^ h \subset R^\wedge $ is the set of all elements which are algebraic over $K$. </p>
+</article> 
+</p>
+<p>
+Here is another variant of the main theorem of this section. 
+</p>
+<p>
+<article class="env-lemma" id="0CAR">
+  <p><a class="environment-identifier" href="/tag/0CAR">Lemma <span data-tag="0CAR">16.13.4</span>.</a> Let $R$ be a Noetherian ring. Let $\mathfrak p \subset R$ be a prime ideal. Let $f_1, \ldots , f_ m \in R[x_1, \ldots , x_ n]$. Suppose that $(a_1, \ldots , a_ n) \in ((R_\mathfrak p)^\wedge )^ n$ is a solution. If $R_\mathfrak p$ is a G-ring, then for every integer $N$ there exist </p>
+  <p><ol>
+  <li><p>
+an étale ring map $R \to R'$, 
+</p>
+</li><li><p>
+a prime ideal $\mathfrak p' \subset R'$ lying over $\mathfrak p$ 
+</p>
+</li><li><p>
+a solution $(b_1, \ldots , b_ n) \in (R')^ n$ in $R'$ 
+</p>
+</li>
+</ol></p>
+  <p> such that $\kappa (\mathfrak p) = \kappa (\mathfrak p')$ and $a_ i - b_ i \in (\mathfrak p')^ N(R'_{\mathfrak p'})^\wedge $. </p>
+</article> 
+</p>
+<article class="env-proof">
+    <p>
+      <strong>Proof.</strong>
+      By Theorem <a href="/tag/07QZ" data-tag="07QZ">16.13.2</a> we can find a solution $(b'_1, \ldots , b'_ n)$ in some ring $R''$ étale over $R_\mathfrak p$ which comes with a prime ideal $\mathfrak p''$ lying over $\mathfrak p$ such that $\kappa (\mathfrak p) = \kappa (\mathfrak p'')$ and $a_ i - b'_ i \in (\mathfrak p'')^ N(R''_{\mathfrak p''})^\wedge $. We can write $R'' = R' \otimes _ R R_\mathfrak p$ for some étale $R$-algebra $R'$ (see Algebra, Lemma <a href="/tag/00U2" data-tag="00U2">10.143.3</a>). After replacing $R'$ by a principal localization if necessary we may assume $(b'_1, \ldots , b'_ n)$ come from a solution $(b_1, \ldots , b_ n)$ in $R'$. Setting $\mathfrak p' = R' \cap \mathfrak p''$ we see that $R''_{\mathfrak p''} = R'_{\mathfrak p'}$ which finishes the proof. 
+      <span class="qed">$\square$</span>
+    </p>
+</article>
+
+
+  <script type="text/javascript">
+$(document).ready(function() {
+  // move extras from parent element to after environment name and number
+  $("article a[data-toggle]").each(function(index, element) {
+    $(element).insertAfter(($(element).parent().find("a.environment-identifier")));
+  });
+
+  $('article a[data-toggle="popover"]').popover()
+
+  // render mathematics in popovers
+  $("[data-toggle=popover]").on('shown.bs.popover', function () {
+    MathJax.Hub.Queue(["Typeset", MathJax.Hub, $("div.popover-body").html()]);
+  });
+});
+  </script>
+
+  
+
+  
+</div>
+
+
+<hr>
+
+<section id="comments">
+  <h2>Comments (0)</h2>
+
+  
+
+  
+</section>
+
+<hr>
+
+<section id="post-comment">
+  <h2>Post a comment</h2>
+  <p>Your email address will not be published. Required fields are marked.
+  <p>In your comment you can use <a href="/markdown">Markdown</a> and LaTeX style mathematics (enclose it like <code>$\pi$</code>). A preview option is available if you wish to see how it works out (just click on the eye in the toolbar).
+  <noscript><p>Unfortunately JavaScript is disabled in your browser, so the comment preview function will not work.</p></noscript>
+
+  <p>All contributions are licensed under the <a href="https://github.com/stacks/stacks-project/blob/master/COPYING">GNU Free Documentation License</a>.
+
+  <form name="comment" id="comment-form" action="/post-comment" method="post">
+    <label for="name">Name<sup>*</sup>:</label>
+    <input type="text" name="name" id="name" required><br>
+
+    <label for="mail">E-mail<sup>*</sup>:</label>
+    <input type="email" name="mail" id="mail" required><br>
+
+    <label for="site">Site:</label>
+    <input type="url" name="site" id="site"><br>
+
+    <label>Comment:</label>
+    <textarea name="comment" id="comment-textarea" cols="80" rows="10" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"></textarea>
+    <script type="text/javascript">
+var easymde = new EasyMDE({
+  autosave: {
+    enabled: true,
+    delay: 1000,
+    uniqueId: "comment-07QX",
+  },
+  element: $("#comment")[0],
+  forceSync: true,
+  insertTexts: { link: ["\\ref{", "}"], table: ["$", "$"], image: ["\\begin{equation}\n", "\n\\end{equation}\n"] }, // we hack into these insertion methods, I couldn't figure out how to write your own...
+  placeholder: "You can type your comment here, use the preview option to see what it will look like. If your comment is on a lemma, please leave your comment on the page of the lemma. Same with remarks, propositions, theorems, etc.",
+  previewRender: function(plaintext, preview) {
+    // deal with references
+    plaintext = plaintext.replace(/\\ref\{([0-9A-Z]{4})\}/g, "<span class=\"tag\">[$1](/tag/$1)</span>");
+    // deal with \[\] getting replaced to []
+    plaintext = plaintext.replace(/\\\[/g, "\\begin{equation}");
+    plaintext = plaintext.replace(/\\\]/g, "\\end{equation}");
+
+    output = this.parent.markdown(plaintext);
+
+    setTimeout(function() {
+      preview.innerHTML = output;
+      MathJax.Hub.Queue(["Typeset", MathJax.Hub]);
+    }, 0);
+
+    return "";
+  },
+  spellChecker: false,
+  status: false,
+  toolbar: [
+    "link", {name: "inline", action: EasyMDE.drawTable, className: "fa fa-usd"}, {name: "block", action: EasyMDE.drawImage, className: "fa fa-square"}, "|",
+    "bold", "italic", "|",
+    "ordered-list", "unordered-list", "|",
+    "preview"
+  ],
+});
+
+// make sure to show tags, not numbers
+var tagToggleHappened = false; // only do this once to not annoy the user too much
+easymde.codemirror.on("change", function() {
+  // if data-tag elements do not have tag attribute we need to make tags visible
+  if (!$("*[data-tag]").hasClass("tag") && !tagToggleHappened)
+    $("section#meta input.toggle").bootstrapToggle("toggle");
+  tagToggleHappened = true;
+});
+
+// prevent form submit when the captcha isn't correct
+// it's a bit silly to use HTML5 validation for this, as bots can figure that out
+// also save the author information to localStorage
+easymde.element.form.addEventListener("submit", function(event) {
+  if ($("#check").val() != $("#hidden-tag").val()) {
+    // explain captcha
+    $("#captcha-message").toggle();
+
+    // stop submit
+    event.preventDefault();
+    return false;
+  }
+
+  // save author information
+  localStorage.setItem("name", $("input#name").val());
+  localStorage.setItem("mail", $("input#mail").val());
+  localStorage.setItem("site", $("input#site").val());
+});
+    </script>
+
+    <p>In order to prevent bots from posting comments, we would like you to prove that you are human. You can do this by <em>filling in the name of the current tag</em> in the following input field. As a reminder, this is tag <span class="tag">07QX</span>. Beware of the difference between the letter&nbsp;'<span class="tag">O</span>' and the digit&nbsp;'<span class="tag">0</span>'.</p>
+    <!--<p>This <abbr title="Completely Automated Public Turing test to tell Computers and Humans Apart">captcha</abbr> seems more appropriate than the usual illegible gibberish, right?<br>-->
+    <label for="check">Tag:</label>
+    <input type="text" name="check" id="check" required autocomplete="off">
+    <button type="submit" class="btn btn-primary">Post comment</button>
+    <input type="hidden" name="tag" id="hidden-tag" value="07QX"><br>
+
+    <p id="captcha-message" style="display: none" class="alert alert-warning" role="alert">The tag you filled in for the captcha is wrong. You need to write <span class="tag">07QX</span>, in case you are confused.</p>
+
+    <script type="text/javascript">
+// enter in captcha fields causes \ref to appear (?!)
+$("input#check").on("keypress", function(e) {
+  if (e.which == 13) {
+    // always stop the event
+    e.preventDefault();
+
+    // perform clientside check as for actual submit
+    if ($("#check").val() != $("#hidden-tag").val()) {
+      // explain captcha
+      $("#captcha-message").toggle();
+    }
+    else {
+      $("form#comment-form").submit();
+    }
+  }
+});
+    </script>
+  </form>
+</section>
+
+
+
+
+    </section>
+	  <div class="col-lg-4 col-xl-4">
+	    <section id="meta" class="row topbar sticky-top">
+        
+  
+  <div class="interaction">
+    
+  
+
+  <ul class="neighbours">
+  
+    <li class="left"><a href="/tag/07GB">previous section</a>
+  
+  
+    <li class="right"><a href="/tag/0AH4">next section</a>
+  
+  </ul>
+  <br style="clear:both">
+
+  </div>
+
+  <hr>
+  
+    <a href="https://stacks.math.columbia.edu/download/smoothing.pdf#nameddest=07QX">View Section <span data-tag="07QX">16.13</span> as pdf</a>
+  
+
+  
+
+
+      </section>
+    </div>
+  </div>
+  <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.bundle.min.js" integrity="sha384-3ziFidFTgxJXHMDttyPJKDuTlmxJlwbSkojudK/CkRqKDOmeSbN6KLrGdrBQnT2n" crossorigin="anonymous"></script>
+</div>
+</body>
+</html>

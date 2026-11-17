@@ -1,0 +1,116 @@
+{
+  "claim": "QCL1",
+  "status": "PASS",
+  "rescaling": {
+    "t": "s^5",
+    "v": "s^(2e)*V",
+    "a": "s^e*A",
+    "S_scale": "s^(-2e)",
+    "T_scale": "s^(-3e)",
+    "input_terms": [
+      [
+        2,
+        0,
+        0,
+        "1"
+      ],
+      [
+        0,
+        1,
+        0,
+        "1"
+      ],
+      [
+        2,
+        -5,
+        2,
+        "2"
+      ],
+      [
+        2,
+        -10,
+        4,
+        "1"
+      ],
+      [
+        1,
+        -2,
+        1,
+        "1"
+      ],
+      [
+        0,
+        -4,
+        2,
+        "1/6"
+      ],
+      [
+        7,
+        0,
+        2,
+        "3"
+      ]
+    ],
+    "generic_a_order": 7,
+    "critical_a_order": 2,
+    "higher_order_correction_after_rescaling": "3*s^15*A^7",
+    "ramified_e2_control": true
+  },
+  "support_boundaries": {
+    "inverse_square_t2_vminus4_accepted": true,
+    "critical_t2_vminus6_a4_rejected": true,
+    "negative_weight_t2_vminus5_rejected": true,
+    "unrestricted_polynomial_mixed_shapes_accepted": true,
+    "polynomial_generic_order100_critical_order2": true
+  },
+  "quadratic_normalization": {
+    "rho": "1 + V**(-5)",
+    "P_equals_E1_squared_plus_U": true,
+    "U_over_V_limit": 1,
+    "epsilon_U_limit": 0,
+    "V_times_epsilon_U_limit": 1
+  },
+  "finite_Lenard_leading_controls": [
+    {
+      "j": 1,
+      "leading_coefficient": "1/4"
+    },
+    {
+      "j": 2,
+      "leading_coefficient": "3/16"
+    },
+    {
+      "j": 3,
+      "leading_coefficient": "5/32"
+    }
+  ],
+  "finite_pole_removal": {
+    "positive_control": "P=A^2+V^2/2, T=-A",
+    "initial_poles": [
+      3,
+      1
+    ],
+    "subtractions": [
+      "s^-3*P^2",
+      "s^-1*P"
+    ],
+    "final_mate": "-A",
+    "commutator": "1",
+    "boundary": "The positive potential has quadratic V growth, outside QCL1."
+  },
+  "positive_first_order_pair": {
+    "P": "A+V",
+    "commutator": "1"
+  },
+  "hashes": {
+    "CRITICAL_LAURENT_FACE_OBSTRUCTION.md": "b82ff8eb542f9543aad66184cc3b3dd6760cf1bf8e0556595b99fc8e334c385f",
+    "check_critical_laurent_face.py": "9a607e54cd58b08296c281ed2ad9fbadd9331565497d8fa3f497e08fd5b964e0",
+    "QUADRATIC_OPERATOR_MATE_CLASSIFICATION.md": "94504e12decd32f5056a43ae489e0d16df25da99c830ec3f378b5e0ae223b2a3",
+    "EXACT_POSITION_CENTRALIZER_AND_COMPLETION.md": "e1c0e0ec66951325c1abbef5ed9b467a1229f1c3e1b74e2aea9a1cb2b41f9f33",
+    "UNIVERSAL_P_POWER_OBSTRUCTION.md": "0ea9470f94a859ca038deec9d226ace821b2a48cf4648a242d182bab917f513c"
+  },
+  "coverage_boundary": "Exact finite rescaling, support boundaries, quadratic normalization, infinity limits, Lenard terms1,2,3, and positive canonical pairs/pole subtractions. All-order centralizer exhaustion and quadratic mate exclusion depend on QSO2; finite termination of pole descent and critical-root normalization are written proofs, not finite scans.",
+  "independent_replay": false,
+  "formal_verification": false,
+  "external_review": false
+}

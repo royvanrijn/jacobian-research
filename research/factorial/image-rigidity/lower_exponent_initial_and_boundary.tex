@@ -17,7 +17,10 @@ For $d\ge1$ an integer and $\gamma>0$, put
 At gap two, we prove the consecutive Gamma-moment assertion at every
 terminal order for $X^2(A+BX^2)$ and $X^3(A+BX^2)$, for every positive
 Gamma shape. The second family includes the degree-five support
-$\{3,5\}$. For each specified terminal order $N$, we also give explicit
+$\{3,5\}$. For $X^2(A+BX^3)$ we prove the ordinary assertion whenever
+$N\not\equiv2\pmod9$, and reduce the degree-at-most-five binomial
+objective to this single support on the remaining progression.
+For each specified terminal order $N$, we also give explicit
 bounds confining possible ordinary binomial Strong Factorial
 obstructions to a finite rectangle of lower exponents and gaps. Large gaps are handled uniformly
 in the lower exponent, and large lower exponents are handled at every
@@ -720,6 +723,280 @@ Gamma shape and proves the lower-exponent-three, gap-two family
 at every order. The argument makes no assertion for all lower
 exponents at gap two: the analogous transformed adjoints for
 larger offsets need not be Hurwitz.
+
+
+\section{A mixed-adjoint reduction for the remaining quintic support}
+In this section the auxiliary recurrence has gap three,
+\[
+ B_{r+1,\gamma,3}=(z+3r+\gamma+2)B_{r,\gamma,3}
+ -zB_{r,\gamma,3}',\qquad B_{0,\gamma,3}=1.
+\]
+Put $R_{r,\eta}=z^{3r}T_{r,\eta,3}(z^{-3})$ and, for $m\ge1$,
+\[
+ M=\gamma+3m,\quad A=(M+3)(M+4),\quad \kappa=3(m+1)/A,
+\]
+\[
+ B=B_{m,\gamma,3},\quad C=B_{m+1,\gamma,3},\quad
+ D=B_{m+2,\gamma,3},\quad H=D+\kappa z^3B.
+\]
+\begin{theorem}\label{thm:gap-three-offset-two-rank}
+For every real $\gamma>0$ and $z_0\ne0$, the two equalities
+$T_{m,\gamma,3}(z_0^{-3})=T_{m+1,\gamma+2,3}(z_0^{-3})=0$
+hold if and only if the matrix
+\[
+ \bigl[C(\omega^jz_0),H(\omega^jz_0)\bigr]_{j=0,1,2},
+       \qquad\omega=e^{2\pi i/3},                         \tag{Q1}\label{eq:mixed-quintic-rank}
+\]
+has rank less than two. No simplicity assumption on the lower
+moment is required.
+\end{theorem}
+\begin{proof}
+Write $R=R_{m,\gamma}$ and $E=M-zD_z$. Coefficient comparison gives
+\[
+ (\gamma)_2R_{m+1,\gamma+2}=[z^3(E)_2+(E)_5]R.
+\]
+The gap-three equation in the
+\href{HIGHER_GAP_ADJOINT_RANK.tex}{higher-gap adjoint note} is
+\[
+ R^{(4)}-\frac{3(M-1)}zR'''
+ +\frac{3M(M-1)}{z^2}R''
+ -\left(\frac{M(M-1)(M+1)}{z^3}+1\right)R'
+ +\frac{3m}zR=0.
+\]
+Reduction gives $(\gamma)_2R_{m+1,\gamma+2}=qR+bR'+cR''+dR'''$,
+with
+\[
+\begin{aligned}
+ q&=(M)_5+[M(M+1)-6m(M+2)]z^3,\\
+ b&=3z[-M(M+1)A+(m+1)z^3],\\
+ c&=3Mz^2A,\qquad d=-z^3A.
+\end{aligned}                                           \tag{Q2}\label{eq:mixed-quintic-reduction}
+\]
+For the three adjoints
+$f_\xi=e^{-\xi z}z^{1-M}B(\xi z)$, $\xi^3=1$,
+the cited note's zero concomitants have rank three on the jet
+$(R,R',R'',R''')$ at every $z\ne0$; their common nullspace
+is the one-dimensional span of the nonzero jet of $R$.
+This follows there from ordinary-point initial-value uniqueness.
+
+Set $a_3=-3(M-1)/z$, $a_2=3M(M-1)/z^2$.
+At $R=0$, the concomitant reads
+$f_\xi R'''+(a_3f_\xi-f_\xi')R''
++[f_\xi''-(a_3f_\xi)'+a_2f_\xi]R'=0$.
+At a common zero the upper equation adds
+$bR'+cR''+dR'''=0$. Since $d(z_0)\ne0$, eliminate $R'''$.
+The resulting two coefficients are
+\[
+ U_\xi=d(a_3f_\xi-f_\xi')-cf_\xi,\qquad
+ V_\xi=d[f_\xi''-(a_3f_\xi)'+a_2f_\xi]-bf_\xi .
+\]
+A common zero gives a nonzero nullvector $(R',R'')$:
+otherwise the upper equation would force $R'''=0$ as well.
+Conversely a nonzero nullvector determines $R'''$ by the upper
+equation, and the full concomitant nullspace identifies the resulting
+jet with that of $R$. Thus the elimination is an equivalence.
+
+Remove the nonzero exponential and power gauge in each row.
+Writing $x=\xi z$, direct differentiation then gives
+\[
+ U_\xi=-z^2A C(x),\qquad
+ V_\xi+\frac{3M+5}{z}U_\xi=-zA H(x).
+\]
+Here $C=(x+M+2)B-xB'$ and $D=(x+M+5)C-xC'$ cancel the
+higher derivatives. These row and column operations are invertible
+at $z_0$, proving (Q1).
+\end{proof}
+
+For $\alpha=e^{i\pi/3}$, define the real divided-difference polynomial
+\[
+ W_{r,\gamma}(x)=
+ \frac{B_{r+1,\gamma,3}(\alpha x)B_{r,\gamma,3}(\bar\alpha x)
+       -B_{r,\gamma,3}(\alpha x)B_{r+1,\gamma,3}(\bar\alpha x)}
+      {(\alpha-\bar\alpha)x}.
+\]
+The quotient extends across zero. Since $\alpha^3=\bar\alpha^3=-1$,
+the divided difference for the pair $H,C$ is exactly
+\[
+ \mathcal V_{m,\gamma}(x)
+   =W_{m+1,\gamma}(x)+\kappa x^3W_{m,\gamma}(x).           \tag{Q3}\label{eq:mixed-quintic-polynomial}
+\]
+Writing $\mathcal V=\sum_{j=0}^2x^j\mathcal V_j(x^3)$,
+the three minors in (Q1) vanish if and only if
+$\mathcal V_j(-z_0^3)=0$ for all $j$, by Fourier inversion.
+Thus coprimality of the two moments is equivalent to the absence
+of a common nonzero root of these three sections. This is the
+remaining exact mixed-adjoint target; no uniform sector or
+section-rootedness assertion is made here.
+
+\begin{corollary}\label{cor:gap-three-lower-two-eight-ninths}
+For every integer $N\ge2$ with $N\not\equiv2\pmod9$, the ordinary
+factorial moments of every nonzero $X^2(A+BX^3)$ cannot both vanish
+at orders $N-1,N$.
+\end{corollary}
+\begin{proof}
+Put $m=N-1$ and $\gamma=2m+1$. Then
+\[
+ \kappa=\frac3{5(5m+4)},\qquad
+ N\not\equiv2\pmod9\quad\Longleftrightarrow\quad
+                         v_3(5m+4)\le1,
+\]
+so $\kappa\in\mathbb Z_3$.
+Work in a complete algebraically closed extension $K$ of $\mathbb Q_3$.
+The rank identities apply there: after the gauges are removed they
+are algebraic characteristic-zero identities.
+Excluding a common root over $K$ gives a nonzero rational resultant,
+which excludes a common complex root as well.
+At a nonzero root $z$ of the lower $R$, put $u=z^3$.
+Every $(\gamma)_{3k}$ contains $k$ integer multiples of three, hence
+has valuation at least $k$. The monic $R$ therefore has
+$v_3(z)\ge1/3$, since otherwise its leading term is uniquely of
+least valuation. Thus $v_3(u)\ge1$.
+For $J=\sum_{j=0}^2z^jJ_j(z^3)$, evaluate its cyclic vector
+$(J_0(u),J_1(u),J_2(u))$. The two cyclic vectors of $C,H$
+have the same rank as (Q1), by invertible Fourier evaluation.
+They are integral. The term $\kappa uB$ in $H$ reduces to zero;
+reduction of $u$ gives the ring $k[z]/(z^3)$.
+
+On that ring the reduced auxiliary operator is
+\[
+ \mathsf A=z-zD_z+\bar\gamma-1,\qquad \mathsf A^3-\mathsf A=0,
+                       \qquad\bar\gamma\in\mathbb F_3.
+\]
+The vectors $1,\mathsf A1,\mathsf A^21$ are a basis because they
+are monic of degrees $0,1,2$. Thus $1$ is cyclic and has nonzero
+components in each of the three simple eigenspaces $0,1,-1$.
+The cyclic vectors of $C,H$ reduce to
+$\mathsf A^{m+1}1,\mathsf A^{m+2}1$.
+On the two nonzero eigenspaces they form a nonsingular two-by-two
+Vandermonde matrix. Their rank is two, so a unit minor stays
+nonzero over $K$. This contradicts (Q1).
+The monomial cases have nonzero factorial moments.
+\end{proof}
+
+\begin{corollary}\label{cor:ordinary-quintic-ray-reduction}
+Strong Factorial for every ordinary univariate binomial of degree
+at most five is equivalent to
+\[
+ \gcd(T_{N-1,\,2N-1,\,3},T_{N,\,2N+1,\,3})=1
+ \quad\hbox{for every }N\ge11,\quad N\equiv2\pmod9.        \tag{Q4}\label{eq:quintic-ray-target}
+\]
+These are consecutive tests for the single support $\{2,5\}$;
+infinitely many terminal orders remain.
+\end{corollary}
+\begin{proof}
+Write a nonmonomial phase as $X^a(A+BX^d)$ with $a+d\le5$.
+The cases $a=0$ and $d=1$ are the completed theorems cited in
+Corollary~\ref{cor:full-objective}. For $a=1$, the remaining gaps
+$2,3,4$ are covered by the
+\href{ARITHMETIC_FRONTIER_TERMINAL_ORDERS.tex}{prime-power lower-one theorem}
+with ordinary shape one.
+The remaining pairs are $(a,d)=(2,2),(3,2),(2,3)$.
+Corollary~\ref{cor:gap-two-lower-two-three} covers the first two;
+Corollary~\ref{cor:gap-three-lower-two-eight-ninths} covers the last
+outside the stated progression. Its terminal $N=2$ is covered
+by Corollary~\ref{cor:initial}, leaving (Q4).
+Normalization (2) identifies these gcds with the remaining moments.
+Conversely the tests form a subset of the degree-at-most-five
+binomial assertion.
+\end{proof}
+
+\section{A three-adic obstruction to stronger index interpolation}
+Normalize $v_3(3)=1$. Let $\tau,w$ be Tate-algebra variables, and put
+$m=1+27\tau$, $h=(2m+1)/3=1+18\tau$. Define
+\[
+ F(\tau,w)=\sum_{k\ge0}\binom mk\frac{(2m+1)_{3k}}{3^k}w^k,\qquad
+ G(\tau,w)=\sum_{k\ge0}\binom{m+1}k\frac{(2m+3)_{3k}}{3^k}w^k.
+\]
+For nonnegative integer $\tau$, these terminate and are exactly the two
+normalized ordinary moment polynomials for support $\{2,5\}$, at orders $m,m+1$,
+with coefficient ratio $w/3$:
+\[
+ F(\tau,w)=T_{m,2m+1,3}(w/3),\qquad
+ G(\tau,w)=T_{m+1,2m+3,3}(w/3).
+\]
+No noninteger index is an ordinary moment order.
+
+\begin{theorem}\label{thm:p3-index-interpolation-obstruction}
+Both series belong to $\mathbb Z_3\langle\tau,w\rangle$.
+There is a unique $\tau_*\in\mathbb Z_3$ for which they have a common
+zero $w_*\in\mathbb Z_3$. This zero is a unit, and
+\[
+ \tau_*\equiv1\pmod3,\qquad m_*=1+27\tau_*\equiv28\pmod{81}.
+\]
+The theorem does not establish whether $\tau_*$ is an ordinary integer.
+It therefore supplies no ordinary binomial SFC counterexample.
+\end{theorem}
+\begin{proof}
+Factor the coefficients into
+\[
+ f_k=\binom mk(h)_k
+  \prod_{j=0}^{k-1}(3(h+j)+1)(3(h+j)+2),
+\]
+\[
+ g_k=\binom{m+1}k(h+1)_k
+  \prod_{j=0}^{k-1}(3(h+j)+2)(3(h+j)+4).
+\]
+All unit-product factors have Gauss valuation zero. The Gauss
+valuation of a product is the sum of its factors' Gauss valuations:
+scale each to a primitive integral polynomial and reduce modulo three.
+For $k\ge2$ and $k\ge3$, respectively, the exact valuations are
+\[
+ a_k=\sum_{r=1}^3\left(\left\lfloor\frac{k-2}{3^r}\right\rfloor+1\right)
+       +\sum_{r=1}^2\left\lfloor\frac{k}{3^r}\right\rfloor-v_3(k!),
+\]
+\[
+ b_k=\sum_{r=1}^3\left(\left\lfloor\frac{k-3}{3^r}\right\rfloor+1\right)
+       +\sum_{r=1}^2\left\lfloor\frac{k+1}{3^r}\right\rfloor-v_3(k!).
+\]
+Indeed the falling-factorial slopes have valuation three, and the
+rising-factorial slopes have valuation two, so individual valuations
+are the corresponding integer valuations capped at three or two.
+The bounds $v_3(k!)\le(k-1)/2$ and $\lfloor x\rfloor>x-1$ give
+\[
+ a_k\ge(23k-133)/54,\qquad b_k\ge(23k-135)/54.
+\]
+Thus both are at least three for $k\ge13$ and tend to infinity.
+For $2\le k\le12$, the values of $a_k$ are
+$3,3,3,4,4,4,5,5,5,7,7$; for $3\le k\le12$, the values of $b_k$
+are $3,3,4,4,4,6,5,5,6,7$.
+The omitted low coefficients are integral by their displayed product
+formulas. This proves the Tate-algebra assertion and, coefficientwise,
+\[
+ F\equiv1+(20+9\tau)w\pmod{27},
+\quad
+ G\equiv1+(5+18\tau)w+(6+9\tau)w^2\pmod{27}.                 \tag{I3}\label{eq:p3-interpolation-congruences}
+\]
+
+Write $F=1-w+3J$, with $J$ integral restricted.
+Iteration $W_{r+1}=1+3J(\tau,W_r)$ from $W_0=1$ is a strict contraction
+in $\mathbb Z_3\langle \tau\rangle$: substitution of integral arguments
+is Lipschitz of constant one for the Gauss norm.
+It gives a unique $W(\tau)$ with $F(\tau,W(\tau))=0$ and $\|W\|\le1$.
+At each specialized $\tau\in\mathbb Z_3$, any integral zero must reduce
+to one, and the same contraction proves its uniqueness.
+Equation \eqref{eq:p3-interpolation-congruences} gives
+\[
+ W(\tau)\equiv4+9\tau\pmod{27},\qquad
+ D(\tau):=G(\tau,W(\tau))\equiv9(1-\tau)\pmod{27}.
+\]
+Hence $D/9=1-\tau+3L(\tau)$ for an integral restricted series $L$.
+The map $\tau\mapsto1+3L(\tau)$ is a strict contraction on $\mathbb Z_3$.
+Its unique fixed point $\tau_*$ gives $D(\tau_*)=0$ and $\tau_*\equiv1\pmod3$.
+Set $w_*=W(\tau_*)$. This proves existence and uniqueness in the stated
+integral polydisk.
+\end{proof}
+
+A uniform noncollision assertion for all three-adic indices in this
+physical interpolation is therefore false. A digit procedure can still
+exclude individual ordinary indices if it proves that they differ from
+the surviving index. The theorem does not supply such a proof for every
+ordinary index and does not rule out all three-adic methods.
+
+This interpolates only the indicated integral-parameter and integral-$w$
+polydisk. It does not exhaust common-root candidates in other valuation
+annuli. In particular it makes no nonvanishing or counterexample claim
+for the ordinary positive-integer orders left in (Q4).
+
 
 \section{A formal branched fraction for all Gamma-power cumulants}
 The Gamma-power family has an all-order structure stronger than separate

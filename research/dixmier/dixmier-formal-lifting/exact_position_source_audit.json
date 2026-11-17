@@ -3,7 +3,7 @@
   "record_type": "primary-source inspection and written-proof scope",
   "proof": {
     "file": "EXACT_POSITION_CENTRALIZER_AND_COMPLETION.md",
-    "sha256": "131537d7e47b4fd57ebbbab6e3516de2b7062a6651dadc5c3eaaa207222e5afc"
+    "sha256": "e1c0e0ec66951325c1abbef5ed9b467a1229f1c3e1b74e2aea9a1cb2b41f9f33"
   },
   "primary_source": {
     "title": "The Stacks Project, Section 53.12: Riemann-Hurwitz",
@@ -19,6 +19,7 @@
   },
   "written_arguments": [
     "Exact positional R centralizer embeds in a Laurent scalar one-variable Ore algebra by the finite quantum chart and explicit inverse.",
+    "The unimodular global differential frame B,D0 gives a unique finite PBW normal form, hence the exact global Ore presentation of Cent(R); its R=0 fiber is A1 times the Laurent Weyl algebra.",
     "Order-semigroup subtraction gives centralizer module finiteness over C[S] for every positive-order S, without an order cutoff or leading-coefficient unit assumption.",
     "The localized classical centralizer K(r)[s], h-Gauss ring and QFC1 give local polynomiality without importing Schur commutativity.",
     "Highest-order coefficient comparison descends K(r)((h))[S] to K((h))(r)[S].",
@@ -46,9 +47,10 @@
         "result": "[v,-v*a-h/(2*v)]=h checked exactly"
       }
     ],
-    "boundary": "Finite identity controls do not prove order-semigroup exhaustion, centralizer descent, denominator saturation or existence of Long mates. No independently retained replay executable or whole-proof computational verification is claimed."
+    "boundary": "The earlier six chart and order-drop identities were ephemeral. The newly retained checker verifies the global differential frame and coefficient-fiber identities; it does not computationally prove PBW exhaustion or construct Long mates.",
+    "retained_checker": "check_exact_position_centralizer.py"
   },
-  "mathematical_checker": null,
+  "mathematical_checker": "check_exact_position_centralizer.py",
   "independent_replay": false,
   "formal_verification": false,
   "external_review": false,

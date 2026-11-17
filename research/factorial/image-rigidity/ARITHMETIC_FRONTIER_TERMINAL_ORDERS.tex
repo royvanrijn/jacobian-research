@@ -13,8 +13,8 @@
 We prove the consecutive ordinary factorial-moment assertion at every
 terminal order for $X(A+BX^{p^s})$ at every prime-power gap $p^s$. Together with
 completed families, this covers every ordinary univariate binomial of
-degree at most four. Further arithmetic criteria cover infinite
-families at prime-power gaps and other lower exponents. Arbitrary gaps,
+degree at most four. Additional Newton criteria give irreducibility
+and consecutive-moment certificates at other lower exponents. Arbitrary gaps,
 general lower exponents and unrestricted Strong Factorial remain open.
 
 For integers $N\ge1$, $C\ge0$ and $d\ge1$, put
@@ -295,8 +295,8 @@ powers; the reduction of positive exponents above does not apply.
 
 \section{Frobenius descent at prime-power gaps}
 The prime unit congruence has a different extension at prime powers.
-The following argument proves nonvanishing without asserting an exact
-valuation for the determinant.
+A controlled-radius Frobenius descent gives nonvanishing on entire
+parameter disks and determines the exact determinant valuation.
 
 Fix a prime $p$ and normalize $v(p)=1$. Work in a complete
 algebraically closed extension $K$ of $\mathbb Q_p$, with valuation
@@ -306,9 +306,10 @@ Put
  q_s=p^s,\qquad b_s=\frac{p^s-1}{p-1},\qquad
  \Pi_{n,q}(t)=\prod_{\ell=0}^{n-1}(t+q\ell).
 \]
-Consider an operator and a seed of the form
+At stage $s\ge1$, consider an operator and a seed of the form
 \[
- A=c-\theta+F(z),\quad \theta=zD_z,\quad c\in\mathbb Z_p,\qquad
+ A=c-\theta+F(z),\quad \theta=zD_z,\quad
+ c\in\mathbb Z_p+p^s\mathcal O,\qquad
  F(z)=z+\sum_{r\ge1}a_rz^{p^r},\quad a_r\in p\mathbb Z_p,
 \]
 \[
@@ -329,7 +330,7 @@ evaluation; no action on a fixed characteristic-zero quotient by
 $z^q-u$ is assumed.
 
 \begin{lemma}\label{lem:artin-hasse-closure}
-The Artin--Hasse series
+The formal Artin--Hasse series
 \[
  E(z)=\exp\left(\sum_{r\ge0}\frac{z^{p^r}}{p^r}\right)
 \]
@@ -339,7 +340,8 @@ $v(z)>0$. Conjugation gives
  E^{-1}AE=c-\theta+\sum_{r\ge1}(a_r-1)z^{p^r}.
 \]
 For $s\ge2$, extract residue $j$ modulo $p$, put $y=z^p$, and
-choose $e_j\in\{0,\ldots,p-1\}$ congruent to $c-j$ modulo $p$.
+write $c=c_0+p^s\eta$, $c_0\in\mathbb Z_p$, $\eta\in\mathcal O$,
+and choose $e_j\in\{0,\ldots,p-1\}$ congruent to $c_0-j$ modulo $p$.
 With
 \[
  c_j=(c-j-e_j)/p,\quad b=a_1-1\in\mathbb Z_p^\times,
@@ -351,7 +353,8 @@ the block operator is $e_j+pL_j$, where
  F_*(w)=w+\sum_{r\ge1}
        \frac{(a_{r+1}-1)p^{p^r-1}}{b^{p^r}}w^{p^r}.
 \]
-It is again of the stated form. If
+Its constant satisfies $c_j\in\mathbb Z_p+p^{s-1}\mathcal O$,
+so it belongs to the stated class at stage $s-1$. If
 $E^{-1}h=\sum_{j=0}^{p-1}z^j\widetilde h_j(y)$, its new seed is
 $h_j^*(w)=\widetilde h_j(pw/b)$ and satisfies
 \[
@@ -378,7 +381,9 @@ $\theta\log E=\sum_{r\ge0}z^{p^r}$.
 On residue $j$, the conjugated operator is
 $c-j-p\theta_y+\sum_{r\ge1}(a_r-1)y^{p^{r-1}}$.
 Substitution $y=pw/b$ gives the displayed $L_j$.
-Its higher coefficients are $p$-divisible, also for $p=2$.
+Its higher coefficients are $p$-divisible, also for $p=2$, and
+$c_j=(c_0-j-e_j)/p+p^{s-1}\eta$ proves the stage-dependent
+constant condition.
 Through degree $p-1$, $E^{-1}$ agrees with $e^{-z}$.
 Thus the first $p$ coefficients of $E^{-1}h$ have the stated
 nonzero residues. Every higher coefficient of an extracted seed
@@ -470,48 +475,90 @@ $v(u_*)\ge b_{s-1}$. This contradicts the induction hypothesis.
 \end{proof}
 
 \begin{theorem}\label{thm:prime-power-lower-one}
-Let $q=p^s$, where $p$ is prime and $s\ge1$.
-For every $n\ge1$ and every positive rational
-$\gamma$ with $v_p(\gamma)\ge0$, $T_{n,\gamma,q}$ is squarefree
-over $\mathbb Q_p$ and over $\mathbb C$.
-The cyclic determinant defined above with $p$ replaced by $q$
-satisfies $\mathcal D_{n,q}(\gamma)>0$.
+Let $q=p^s$, where $p$ is prime and $s\ge1$, and put
+$N=\binom n2$. For every $n\ge1$ and every $\gamma\in\mathbb Z_p$,
+the cyclic determinant defined above with $p$ replaced by $q$
+satisfies the exact valuation
+\[
+ v_p\bigl(\mathcal D_{n,q}(\gamma)\bigr)
+       =(b_s-s)N.                                      \tag{F3}
+\]
+Consequently, for every positive rational $\gamma$ with
+$v_p(\gamma)\ge0$, $T_{n,\gamma,q}$ is squarefree over
+$\mathbb Q_p$ and over $\mathbb C$, and
+$\mathcal D_{n,q}(\gamma)>0$.
 \end{theorem}
 \begin{proof}
-The case $n=1$ is immediate.
+The case $n=1$ is immediate. We first exclude determinant roots
+on the closed disks
+\[
+ \gamma\in -m+p^s\mathcal O,\qquad 0\le m<q.             \tag{F4}
+\]
 Here the actual auxiliary operator is
-$A=z-zD_z+\gamma+q-1$, with seed $h=1$, and
-$B_{n,\gamma,q}=\Pi_{n,q}(A)1$.
+$A=z-zD_z+\gamma+q-1$, with seed $h=1$.
+Its constant lies in $\mathbb Z_p+p^s\mathcal O$, as required
+at stage $s$, and $B_{n,\gamma,q}=\Pi_{n,q}(A)1$.
+
 If $\mathcal D_{n,q}(\gamma)=0$, the square cyclic presentation
 has nonzero cokernel. Its finite quotient algebra therefore has
 a common root $u$ of the maximal minors.
 The all-gap no-origin lemma gives $u\ne0$.
-The critical-ideal identity then makes a $q$th root $z$ of $u$
-a critical root of
+The characteristic-zero critical-ideal identity then makes a
+$q$th root $z$ of $u$ a critical root of
 \[
  R(z)=z^{qn}T_{n,\gamma,q}((-1)^{q+1}z^{-q}).
 \]
-
-For $\gamma\in\mathbb Z_p$, the integer-valued binomial identity
-\[
- (\gamma)_{qk}=(qk)!\binom{\gamma+qk-1}{qk}
-\]
-gives $v((\gamma)_{qk})\ge b_sk$:
-the binomial polynomial is integral by continuity, and the first
-$s$ terms of the factorial valuation sum to $b_sk$.
-The monic polynomial $R$ consequently has every root in
-$v(z)\ge b_s/q$; otherwise its leading term would be uniquely
-of least valuation. Thus $v(u)\ge b_s$.
+These algebraic identities apply over $K$.
+For a parameter in (F4), at each level $1\le r\le s$
+exactly $qk/p^r$ factors among $\gamma,\ldots,\gamma+qk-1$
+are divisible by $p^r$. Thus
+$v((\gamma)_{qk})\ge b_sk$.
+The monic $R$ consequently has every nonzero root in
+$v(z)\ge b_s/q$; otherwise its leading term is uniquely of least
+valuation. Hence $v(u)\ge b_s$.
 
 A dependence of the $q-1$ cyclic rows
 $B_n,\ldots,B_{n+q-2}$ gives a nonzero coefficient polynomial $P$
-of degree at most $q-2$. Indeed each row is
-$\Pi_{n,q}(A)$ times a monic polynomial in $A$ of the indicated
-degree. Scale $P$ to make it primitive.
-The dependence contradicts Lemma~\ref{lem:frobenius-noncollision}
-at this $u$. Hence the determinant is nonzero.
+of degree at most $q-2$. Each row is $\Pi_{n,q}(A)$ times a
+monic polynomial in $A$ of the indicated degree.
+Scale $P$ to make it primitive.
+The dependence contradicts Lemma~\ref{lem:frobenius-noncollision}.
+This excludes determinant roots throughout every disk (F4).
+
+At the center $\gamma=-m$, all nonconstant coefficients of $T$
+vanish, and
+\[
+ \left.\frac{d}{d\gamma}(\gamma)_{qk}\right|_{\gamma=-m}
+       =(-1)^m m!(qk-m-1)!.
+\]
+Substitute $\gamma=-m+\varepsilon^n$ and
+$t=\varepsilon^{-1}y$ in the fixed-degree discriminant.
+Its lowest coefficient, compared with the all-gap discriminant
+identity, gives
+\[
+ \mathcal D_{n,q}(-m)=
+ \frac{((qn-m-1)!)^{n-1}}
+      {q^N\prod_{k=1}^{n-1}k^k(qk-m-1)!}.               \tag{F5}
+\]
+The factors $m!$ and their signs cancel.
+For $0\le m<q$, Legendre's formula gives
+\[
+ v_p((qk-m-1)!)
+       =b_sk-s+v_p((k-1)!)-v_p(m!).
+\]
+Inserting this into (F5), the factorial telescoping identity from
+the prime-gap proof cancels the remaining terms and yields
+$v_p(\mathcal D_{n,q}(-m))=(b_s-s)N$.
+
+Finally factor $\mathcal D_{n,q}$ over $K$.
+Every root $\rho$ lies outside each disk (F4), so
+$v(\rho+m)<s$. For every $\gamma$ in that disk,
+$v(\gamma-\rho)=v(-m-\rho)$.
+The polynomial therefore has constant valuation on each disk,
+equal to its value at the center. These disks cover
+$\mathbb Z_p$, proving (F3).
 The all-gap discriminant identity and its nonnegativity corollary
-prove squarefreeness over both fields and strict positivity.
+give the stated squarefreeness and strict positivity.
 \end{proof}
 
 \begin{corollary}\label{cor:prime-gap-lower-one}\label{cor:prime-power-lower-one}
@@ -1124,9 +1171,9 @@ units. Taking $q'=q+3^L$ also proves the precision necessity.
 A fixed finite lookup of offset residues therefore cannot recover
 these corrections at arbitrary precision. The exact operator can
 instead carry the offset or read further digits as needed.
-A squarefreeness argument still needs control in the successive
-local weighted coordinates; neither (U2) nor the unit congruences
-supply that implication.
+The operator identity and its unit congruences alone do not establish
+squarefreeness. The controlled-radius Frobenius argument above supplies
+a separate proof at prime-power gaps.
 
 \section{The lower-exponent resultant: positivity and a failed stability strengthening}
 For integers $N\ge2$, $d\ge1$ and indeterminate $a$, define
@@ -1260,8 +1307,13 @@ resultant counterexample by degree-bound interpolation and an integer
 Rouch\'e certificate. Its finite family tests check the implementation; all unbounded quantifiers use the proof above.
 It also checks the prime-gap characteristic matrix and its cyclic
 basis, the symbolic determinant congruence and its constant normalization,
-and literal lower-one pairs in finite ranges. These controls test the
-implementation; the unit-ideal proof supplies the unbounded theorem.
+and literal lower-one pairs in finite ranges. For the prime-power
+descent it checks Artin--Hasse coefficients and seed normalization,
+the closed potential class, normalized block matrices, primitive
+polynomial degree contraction, stage-dependent parameter closure,
+and exact determinant values at negative integer centers.
+These controls test the implementation; the unit-ideal and
+Frobenius proofs supply the unbounded theorems.
 Carry inputs are rejected as unsupported rather than classified as
 counterexamples to Strong Factorial.
 The ordinary lower-one theorem is proved at every prime-power gap,

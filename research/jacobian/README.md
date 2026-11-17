@@ -23,6 +23,7 @@ Scope limits:
 - JC2 remains a separate unresolved target. Ruling degree, generic map degree, graph degree and sparse support minima are distinct quantities.
 - A canonical non-atomic vector-bundle receiver already exists. Canonical atomic coupling remains open; an automorphism-invariant natural fixed frame is obstructed, not an unqualified existence gap.
 - The uniform PF163 family in ruling-six weighted-face classB is excluded for every K>=62 and nonzero complex parameter by a complete pole/zero budget, despite affine first responses and zero residues. The entire three-face ruling-six classification remains open.
+- PF164 now constrains every ruling-six survivor: strict affine responses bound the full primitive pole degree and force all six original source branches over t=infinity to be unramified. This does not force degree-one residue fields or close all three weighted faces.
 
 Tracked obligations (computed states):
 

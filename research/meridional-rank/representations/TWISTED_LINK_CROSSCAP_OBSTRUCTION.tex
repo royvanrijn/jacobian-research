@@ -1,0 +1,226 @@
+\documentclass[11pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb,amsthm,booktabs}
+\usepackage[hidelinks]{hyperref}
+\usepackage{xurl}
+\setlength{\emergencystretch}{3em}
+\newtheorem{proposition}{Proposition}
+\newtheorem{theorem}[proposition]{Theorem}
+\newcommand{\C}{\operatorname{C}}
+\title{A crosscap obstruction to twisted-link membership}
+\author{Primary-source comparison and exact finite inputs}
+\date{17 November 2026}
+\begin{document}
+\maketitle
+
+The standard twisted-link theorem of Baader--Blair--Kjuchukova imposes
+a crosscap restriction that excludes twelve retained sharp-four examples.
+The restriction concerns every possible twisted diagram of a knot,
+including diagrams with more crossings and arbitrary band signs.
+It does not exclude rational-tangle extensions of the theorem or
+arbitrary maximal-rank Coxeter quotients.
+
+\section{A consequence of the bridge formula}
+
+A twisted link in \cite{bbk} bounds a checkerboard surface $F$ built from
+disks and twisted bands. Its weighted planar fat-vertex graph $\Gamma$
+has one vertex per disk and one edge per band. All band weights have
+absolute value at least two, and the plane dual $\Gamma^*$ is simple.
+Theorem~1 of that paper states
+\[
+ b(K)=\#\{\text{regions of }\mathbb R^2\setminus\Gamma\}.
+\]
+Here $b$ is the actual bridge number, rather than the number of
+maxima of a particular diagram.
+
+\begin{proposition}\label{prop:crosscap}
+If a knot $K$ is a twisted link in the precise sense of \cite{bbk}
+and $b(K)$ is even, then
+\[
+                         \C(K)\le b(K)-1,
+\]
+where $\C(K)$ is the least nonorientable genus of a connected spanning
+surface for $K$. In particular a twisted knot of bridge number four
+has $\C(K)\le3$.
+\end{proposition}
+\begin{proof}
+The connected surface $F$ retracts to the connected planar graph
+$\Gamma$. Write $v,e,f$ for its vertex, edge and complementary-region
+counts, including the unbounded region. Euler's formula and the
+imported bridge formula give
+\[
+ \chi(F)=v-e=2-f=2-b(K).
+\]
+The surface has one boundary component because its boundary is the knot.
+An orientable connected surface with one boundary component has
+Euler characteristic $1-2g$, which is odd.
+For even $b(K)$ the displayed Euler characteristic is even;
+therefore $F$ is nonorientable.
+Its nonorientable genus is
+$1-\chi(F)=b(K)-1$, providing the required upper bound.
+\end{proof}
+
+This argument needs neither a classification of four-vertex Coxeter
+graphs nor a bound on the crossing number of a twisted diagram.
+It uses the topology of the spanning surface whose existence is part
+of the standard twisted-link hypothesis.
+
+\section{Twelve alternating examples}
+
+Write a knot's Jones polynomial as
+\[
+ J_K(t)=\alpha_Kt^n+\beta_Kt^{n-1}
+       +\cdots+\beta'_Kt^{s+1}+\alpha'_Kt^s,
+ \qquad T_K=|\beta_K|+|\beta'_K|.
+\]
+Missing intermediate coefficients are understood to be zero.
+Kalfagianni--Lee's Theorem~1.1 \cite{kl}
+states, for a non-split prime alternating link of $k$ components
+other than a $(2,p)$ torus link,
+\[
+                  \left\lceil\frac{T_K}{3}\right\rceil+2-k
+                    \le \C(K).
+\]
+The rounding is a \emph{ceiling}. For knots the added term is one.
+
+\begin{theorem}\label{thm:cases}
+Each knot in the table below has the indicated Jones coefficient sum
+and crosscap lower bound. Each has separately certified
+$b(K)=\operatorname{mr}(K)=4$, and none is a twisted link in the
+standard sense of \cite{bbk}.
+\begin{center}
+\small
+\begin{tabular}{p{9.1cm}rr}
+\toprule
+knots & $T_K$ & lower bound on $\C(K)$\\
+\midrule
+$13a_{373},13a_{375},13a_{391},13a_{392}$ &10&5\\
+$13a_{3264},13a_{3266},13a_{3275},13a_{3276}$ &9&4\\
+$13a_{3145},13a_{3147},13a_{3148},13a_{3149}$ &12&5\\
+\bottomrule
+\end{tabular}
+\end{center}
+\end{theorem}
+\begin{proof}
+The finite input consists of the twelve literal thirteen-crossing
+PDs in \path{twisted_link_crosscap_inputs.json}. Their named identities
+are bound literally to the previously checked census/topology inputs.
+The first eight bridge equalities use the seven-sheeted cover
+certificates; the last four use the retained periodic-family seed
+certificates at parameter zero. Those are separate dependencies.
+
+Tracing the opposite half-edge through every crossing proves that
+each PD has one component and alternating over/under encounters.
+For each projection graph, exhaustive checking of all vertex
+bipartitions, modulo complementation, finds minimum edge-cut size four.
+If a Jordan curve meeting the diagram in two edges separated crossings
+on both sides, those two edges would give a cut of size two.
+Thus these connected alternating diagrams are prime.
+The standard diagram of a $(2,13)$ torus knot has checkerboard vertex
+counts $\{2,13\}$ and $T_K=1$; neither occurs here.
+The passage from this prime alternating diagram criterion to the
+non-split prime non-torus hypotheses is explicitly stated in
+\cite[printed p.~2]{kl}, crediting Menasco. Its original proof is
+imported at that scope.
+
+For completeness, the coefficient computation is a full exact
+Kauffman bracket state sum. At each crossing choose the pairings
+$(a,b),(c,d)$ or $(b,c),(d,a)$ of the cyclically ordered PD ports.
+For a state $s$, let $j(s)$ count choices of the second pairing and
+let $\ell(s)$ be the number of resulting circles. The bracket is
+\[
+ \langle D\rangle=
+ \sum_{s\in\{0,1\}^{13}}
+ A^{13-2j(s)}(-A^2-A^{-2})^{\ell(s)-1}.
+\]
+Every one of the $8192$ states is evaluated with integer arithmetic.
+Circle counts come from connected components of the smoothing.
+The full Laurent polynomial is retained for each input.
+Writhe normalization changes only an overall sign and monomial,
+and substituting $t=A^{-4}$ therefore identifies the absolute
+second and penultimate Jones coefficients with bracket coefficients
+four exponent units from the two extremes.
+
+For the first row both absolute coefficients are five.
+For the second row they are four and five, in either order.
+For the third row both are six.
+The integer sums give the displayed $T_K$ values.
+An independent reconstruction of both checkerboard graphs agrees:
+if $v$ is the vertex count and $e'$ the edge count after parallel
+edges are identified, the two values $e'-v+1$ match the two
+computed absolute coefficients. The proof uses the full bracket
+sum; this graph agreement is an additional consistency check.
+
+Kalfagianni--Lee's inequality now supplies the displayed lower bounds,
+all strictly greater than three. Proposition~\ref{prop:crosscap} would
+give $\C(K)\le3$ if any of these bridge-four knots had a twisted diagram.
+This contradiction proves the exclusions.
+\end{proof}
+
+\section{Source and verification scope}
+
+The imported BBK statement was read in the published article's
+Theorem~1 and its Section~4 proof, including the disk-band definition.
+The full published HTML is retained as
+\path{sources/bbk-coxeter-published-2021.html}.
+The KL ceiling inequality and the following Menasco paragraph were
+read in arXiv:1408.4493v3, printed pp.~1--2, and compared with the
+published article's printed pp.~309--310 through the primary
+published PDF. The valid cached source is
+\path{sources/kalfagianni-lee-crosscaps-1408.4493v3.pdf}.
+The full imported proofs have not been independently re-established.
+
+The standard-library replay is
+\path{verify_twisted_link_crosscap.py}.
+It checks the literal PD bindings and the separately recorded
+bridge-four conclusions; it does not rerun their earlier group
+computations. It checks all diagram hypotheses and all complete
+state sums, compares the full retained polynomials, and reconstructs
+the checkerboard coefficients independently.
+The receipt \path{twisted_link_crosscap_verification.json}
+seals the actual inputs and source digests.
+Known trefoil and figure-eight bracket polynomials are positive
+controls. A changed bracket, a composite diagram falsely presented
+as prime, and a changed source digest are rejected.
+
+This is an internal exact finite replay with explicit classical
+imports, not formal verification or independent specialist review.
+Theorem~\ref{thm:cases} excludes all standard twisted diagrams for
+these twelve knots; it is stronger than failure of a search among
+minimal diagrams. The crosscap argument does not address the sixteen
+nonalternating new seven-sheeted examples, all positive-parameter
+members of the periodic families, or rational-tangle replacements.
+
+For $13a_{373}$, the separate proof in
+\path{UNIVERSAL_REFLECTION_OBSTRUCTION.tex} excludes every rank-four
+Coxeter quotient sending meridians to reflections, including infinite
+Coxeter groups. Consequently that knot is also excluded from every
+rank-four-preserving rational-tangle replacement to which the BBK
+reflection-label proof applies. The source's Section~2 defines the
+rank-two rational-tangle labels, and the paragraph after its
+Section~4 proof of Theorem~1 retains these labels to preserve the
+upper and lower bounds. The retained lower bound is precisely its
+Coxeter reflection quotient. This comparison does not assert that
+arbitrary rational substitutions retain the labels or the Wirtinger
+upper bound; the source expressly notes the latter difficulty.
+The corresponding unrestricted reflection comparison for the other
+eleven knots, arbitrary rational substitutions, and other earlier MRC
+methods remain separate obligations.
+
+\begin{thebibliography}{9}
+\bibitem{bbk}
+S. Baader, R. Blair and A. Kjuchukova,
+Coxeter groups and meridional rank of links,
+Mathematische Annalen 379 (2021), 1533--1551.
+Theorem~1 and Section~4.
+\url{https://doi.org/10.1007/s00208-020-02124-z}.
+\bibitem{kl}
+E. Kalfagianni and C. Ruey Shan Lee,
+Crosscap numbers and the Jones polynomial,
+Advances in Mathematics 286 (2016), 308--337.
+Theorem~1.1, printed p.~309; preceding/following diagram scope;
+author preprint arXiv:1408.4493v3, printed pp.~1--2.
+\url{https://doi.org/10.1016/j.aim.2015.09.017}.
+\url{https://arxiv.org/abs/1408.4493v3}.
+\end{thebibliography}
+\end{document}

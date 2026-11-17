@@ -239,8 +239,9 @@ contains the eliminated generator exactly once, so solving for it
 and substituting everywhere preserves the group. A small verifier
 reconstructs the folded presentation and replays every substitution.
 The separate full-directed-edge homology checker gives
-$H_1(Y_\rho;\mathbb Z)=\mathbb Z/3$ independently of these group
-simplifications. Neither calculation assumes that cyclic homology
+$b_1(Y_\rho;\F_3)=1$ independently of these group
+simplifications. The integral statement $H_1(Y_\rho;\mathbb Z)=\mathbb Z/3$
+follows from the proved cyclic cover-group presentation. Neither calculation assumes that cyclic homology
 implies a cyclic group.
 
 For each natural and dual action on the five other retained knots,
@@ -267,9 +268,14 @@ that the names were listed there, not an assertion that no earlier
 theorem covers them. No completeness of the retired broad
 $GL_3$ search is needed for the twenty-four positive statements.
 The assertion is a finite equality theorem with exact current
-certificates. Its relationship to previously established knot families
-and worldwide priority requires a separate source audit; the count of
-names alone does not establish twenty-four new MRC cases.
+certificates. The separate \path{FINITE_COXETER_EXCLUSION.tex} now
+excludes all sharp finite Coxeter reflection quotients on these cases.
+The audits \path{FISHNET_SCOPE_AUDIT.tex} and
+\path{TWISTED_LINK_CROSSCAP_OBSTRUCTION.tex} exclude the precise
+fishnet and plat gcd criteria on all twenty-four, and the standard
+twisted-link class on the eight alternating cases. Global priority
+and rational-tangle extensions remain unresolved; a count of names
+alone does not establish twenty-four globally new MRC cases.
 
 \section{Verification scope and next use}
 
@@ -293,6 +299,13 @@ Failure of the earlier rank-one cocycle test on the three-dimensional
 module does not exclude this different permutation-module or nonlinear
 cover-group test. Conversely, trivial first homology does not prove
 that a cover group is trivial.
+The normalized involutory score is treated separately in
+\path{INVOLUTION_COVER_SUM_FORMULAS.tex}. Its supremum is exactly
+additive under connected sum minus one, and one fractional-score
+seed can be joined sharply to arbitrarily many simple-cover-sharp
+summands. This does not assert unrestricted additivity of $D$ or
+of meridional rank.
+
 \section{Classical context}
 
 Homology calculations for arbitrary finite branched covers have a

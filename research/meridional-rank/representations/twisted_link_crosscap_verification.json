@@ -1,0 +1,183 @@
+{
+  "status": "PASS",
+  "python": "3.12.3",
+  "command": "python3 verify_twisted_link_crosscap.py",
+  "scope": "Twelve fixed prime alternating knot diagrams with separately certified bridge number4. Global exclusion of BBK21 standard twisted links by crosscap number. No exclusion of rational-tangle extensions or other quotient families.",
+  "cases": [
+    {
+      "name": "13a_373",
+      "prime_alternating_diagram": true,
+      "complete_bracket_states": 8192,
+      "Jones_second_coefficient_absolute_values": [
+        5,
+        5
+      ],
+      "T": 10,
+      "crosscap_lower_KL16": 5,
+      "crosscap_upper_if_twisted_and_bridge_four": 3,
+      "outside_standard_BBK21_twisted_link_class": true
+    },
+    {
+      "name": "13a_375",
+      "prime_alternating_diagram": true,
+      "complete_bracket_states": 8192,
+      "Jones_second_coefficient_absolute_values": [
+        5,
+        5
+      ],
+      "T": 10,
+      "crosscap_lower_KL16": 5,
+      "crosscap_upper_if_twisted_and_bridge_four": 3,
+      "outside_standard_BBK21_twisted_link_class": true
+    },
+    {
+      "name": "13a_391",
+      "prime_alternating_diagram": true,
+      "complete_bracket_states": 8192,
+      "Jones_second_coefficient_absolute_values": [
+        5,
+        5
+      ],
+      "T": 10,
+      "crosscap_lower_KL16": 5,
+      "crosscap_upper_if_twisted_and_bridge_four": 3,
+      "outside_standard_BBK21_twisted_link_class": true
+    },
+    {
+      "name": "13a_392",
+      "prime_alternating_diagram": true,
+      "complete_bracket_states": 8192,
+      "Jones_second_coefficient_absolute_values": [
+        5,
+        5
+      ],
+      "T": 10,
+      "crosscap_lower_KL16": 5,
+      "crosscap_upper_if_twisted_and_bridge_four": 3,
+      "outside_standard_BBK21_twisted_link_class": true
+    },
+    {
+      "name": "13a_3264",
+      "prime_alternating_diagram": true,
+      "complete_bracket_states": 8192,
+      "Jones_second_coefficient_absolute_values": [
+        4,
+        5
+      ],
+      "T": 9,
+      "crosscap_lower_KL16": 4,
+      "crosscap_upper_if_twisted_and_bridge_four": 3,
+      "outside_standard_BBK21_twisted_link_class": true
+    },
+    {
+      "name": "13a_3266",
+      "prime_alternating_diagram": true,
+      "complete_bracket_states": 8192,
+      "Jones_second_coefficient_absolute_values": [
+        4,
+        5
+      ],
+      "T": 9,
+      "crosscap_lower_KL16": 4,
+      "crosscap_upper_if_twisted_and_bridge_four": 3,
+      "outside_standard_BBK21_twisted_link_class": true
+    },
+    {
+      "name": "13a_3275",
+      "prime_alternating_diagram": true,
+      "complete_bracket_states": 8192,
+      "Jones_second_coefficient_absolute_values": [
+        4,
+        5
+      ],
+      "T": 9,
+      "crosscap_lower_KL16": 4,
+      "crosscap_upper_if_twisted_and_bridge_four": 3,
+      "outside_standard_BBK21_twisted_link_class": true
+    },
+    {
+      "name": "13a_3276",
+      "prime_alternating_diagram": true,
+      "complete_bracket_states": 8192,
+      "Jones_second_coefficient_absolute_values": [
+        4,
+        5
+      ],
+      "T": 9,
+      "crosscap_lower_KL16": 4,
+      "crosscap_upper_if_twisted_and_bridge_four": 3,
+      "outside_standard_BBK21_twisted_link_class": true
+    },
+    {
+      "name": "13a_3145",
+      "prime_alternating_diagram": true,
+      "complete_bracket_states": 8192,
+      "Jones_second_coefficient_absolute_values": [
+        6,
+        6
+      ],
+      "T": 12,
+      "crosscap_lower_KL16": 5,
+      "crosscap_upper_if_twisted_and_bridge_four": 3,
+      "outside_standard_BBK21_twisted_link_class": true
+    },
+    {
+      "name": "13a_3147",
+      "prime_alternating_diagram": true,
+      "complete_bracket_states": 8192,
+      "Jones_second_coefficient_absolute_values": [
+        6,
+        6
+      ],
+      "T": 12,
+      "crosscap_lower_KL16": 5,
+      "crosscap_upper_if_twisted_and_bridge_four": 3,
+      "outside_standard_BBK21_twisted_link_class": true
+    },
+    {
+      "name": "13a_3148",
+      "prime_alternating_diagram": true,
+      "complete_bracket_states": 8192,
+      "Jones_second_coefficient_absolute_values": [
+        6,
+        6
+      ],
+      "T": 12,
+      "crosscap_lower_KL16": 5,
+      "crosscap_upper_if_twisted_and_bridge_four": 3,
+      "outside_standard_BBK21_twisted_link_class": true
+    },
+    {
+      "name": "13a_3149",
+      "prime_alternating_diagram": true,
+      "complete_bracket_states": 8192,
+      "Jones_second_coefficient_absolute_values": [
+        6,
+        6
+      ],
+      "T": 12,
+      "crosscap_lower_KL16": 5,
+      "crosscap_upper_if_twisted_and_bridge_four": 3,
+      "outside_standard_BBK21_twisted_link_class": true
+    }
+  ],
+  "positive_controls": [
+    "trefoil exact bracket",
+    "figure-eight exact bracket"
+  ],
+  "negative_controls": {
+    "changed_bracket_polynomial": true,
+    "composite_diagram_as_prime": true,
+    "changed_source_digest": true
+  },
+  "input_sha256": {
+    "twisted_link_crosscap_inputs.json": "2812d84a4ae471d09cf0e49e5902f97ca87e74407f3cad70de7ecb98330397ee",
+    "verify_twisted_link_crosscap.py": "9e867ef4c62fdfbf955cd9e7a8f16ac23d3962c222b086fc72fd26c91729d6fc",
+    "seed_cover_topology_inputs.json": "44ed55f6107ee8fb8cd5ffa6558e0e6124339b21d8abb3a60b5c519c70886259",
+    "seven_sheet_cover_verification.json": "e5f267b850d46db89afb72f51d017f4968fbfb0648e64316439e91343dab15b8",
+    "periodic_twist_family_verification.json": "b2b0fc89c2f6fac65cb6d58c457dc58368256586ece5f1ada59a473bd146f361",
+    "sources/kalfagianni-lee-crosscaps-1408.4493v3.pdf": "8c38df9ee041bd9ef17b93e631ed1d5897ac6b16e042c9de883652add3070697",
+    "sources/bbk-coxeter-published-2021.html": "57475efdf6c7e40f6a14ba2da6a0141cc0e5f0ae8a48cc0a3d457ca02c3c9da8"
+  },
+  "assurance": "Internal exact finite replay; KL16, BBK21 and the stated diagram criterion imported. Earlier knot identity and bridge proofs are bound by retained inputs/receipts, not recomputed here. No formal or external review."
+}

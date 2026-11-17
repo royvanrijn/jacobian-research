@@ -22,7 +22,7 @@ Omega=dP wedge dQ and
 
 Keep LW0's ONE bounded target ball V meeting the image of EVERY omitted
 prime, U=K^-1(V), and its global theorem R intersect L2(U)=Lambda, including
-finite cyclic quotient points. Then for EVERY integer m>=1,
+finite quotient points. Then for EVERY integer m>=1,
 
     T_m={r in R:integral_U |r|^(2m)<infinity}
        ={r in R:r^m in Lambda}
@@ -222,18 +222,25 @@ the scope proved here.
 
 ## 7. Attribution, verification, and the still-open multiplication step
 
-LW0 supplies the global canonical L2 theorem. LY0 supplies trace duality
+LW0 supplies the global canonical L2 theorem, with its point hypothesis
+now justified by the
+[Flenner--Zaidenberg quotient-point application](FULL_NORMALIZATION_QUOTIENT_POINTS_AND_CANONICAL_L2_EXTENSION.md).
+The separate differential source-layer theorem is unnecessary here.
+LY0 supplies trace duality
 of reflexive divisorial surface modules and projectivity over the target.
 KN0 supplies the actual finite ramification class and final inverse
 criterion. The proof of (1) is the direct polynomial-power argument;
 it newly resolves global higher EVEN moments without importing a general
 Lp theorem for singular pairs. Literature on complex singularity exponents
-and log canonical thresholds was consulted for context only. No such
-theorem, new external classification, or primary PDF cache is adopted.
+and log canonical thresholds was consulted for context only. No general
+Lp or complex-singularity-exponent theorem is adopted. The separate
+quotient-point application retains its own exact primary source.
 
-New exact controls check the all-parameter norm, floor and trace-discriminant
+Exact controls check the all-parameter norm, floor and trace-discriminant
 identities, the uniform m>=3 distinction and the finite-cover scaling
-example. No registered mathematical checker is replayed. The universal
+example. The current checker was internally replayed after auditing the
+quotient-point input and rebinding its current source pins; no predecessor
+mathematical checker was replayed. The universal
 analytic/reflexive-module proofs are written, not certified by a finite
 test list. Independent replay, formal verification and external review
 remain absent.

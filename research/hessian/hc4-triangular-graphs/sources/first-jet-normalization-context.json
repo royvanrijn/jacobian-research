@@ -1,0 +1,20 @@
+{
+  "review_date": "2026-11-17",
+  "source": {
+    "path": "sources/stacks-0BXQ.html",
+    "sha256": "7fc401b609392d9dc1bf78bdd534a1dc0bf40fcbe6ddc2d97d15795a5b191737",
+    "url": "https://stacks.math.columbia.edu/tag/0BXQ",
+    "locator": "Lemma33.27.1 statement and proof",
+    "inspection": "Read statement and proof. Applied finite birational normalization to the finitely generated complex domain J_full; no finiteness of that algebra over the target B is inferred."
+  },
+  "mathematical_scope": "Section6.1 proves the transverse source coordinate integral over one-column first jets, an actual replica action on every such normalized image, and the full source as finite normalization of just two first velocities in every generic plane direction. Full first-jet normalization equals the polynomial source in every dimension. The proofs use a written characteristic-zero regular-differential pole lemma and generic source monicity; none proves integrality over target B.",
+  "control_scope": "Exact coframe/adjugate/pole transcriptions, bounded full jets for a non-Keller escaping arc, and the retained three-dimensional constant-Jacobian collision protect hypotheses and base-ring distinctions; finite controls are not the unbounded proof. Nodal finite normalization identifies two points and guards the essential open-immersion hypothesis.",
+  "assurance": {
+    "internal_checker_run": true,
+    "independent_external_review": false,
+    "formal_verification": false,
+    "jc2_resolved": false
+  },
+  "known_remaining_gate": "No first source velocity is proved integral over target B; target trace/codifferent perfection and all-order inversion remain open.",
+  "raw_reconstruction_corollary": "Section6.2: for every generic plane source direction, R=S[delta_v P,delta_v Q]=B[Lambda,delta_v P,delta_v Q]. In every dimension, R=S[all first source partial derivatives]. Proof uses finite-normalization finiteness plus the canonical open source immersion and finite lying-over, with no differential IC-socle premise. Landing of velocities in S or over B is not proved."
+}

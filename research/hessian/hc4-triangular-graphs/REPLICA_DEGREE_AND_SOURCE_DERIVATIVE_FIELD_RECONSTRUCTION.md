@@ -15,9 +15,15 @@ delta=p(y)*partial_x and an intermediate field E stable under delta,
 A bare source translation therefore preserves NO proper intermediate
 field. In fact its TWO FIRST derivatives of the target generators already
 recover the ENTIRE source function field, without a differential-stability
-assumption on their generated field (Section 6). This is field reconstruction, not
-regular coordinate reconstruction or inversion. Nonconstant replicas
-must not be divided out in an unknown intermediate field.
+assumption on their generated field (Section 6). Section6.1 also proves that the transverse coordinate is integral over
+this one-column jet algebra. In every generic source direction those
+two first velocities already have the whole source as finite normalization;
+the FULL first-jet algebra has that property in every dimension.
+Section6.2 gives the exact RAW equality R=S[delta_v P,delta_v Q] for
+generic v, with S the original full finite normalization of the target.
+These are reconstructions over the jet algebra or S, not integrality over
+the target ring B or inversion. Nonconstant replicas must not be divided
+out in an unknown intermediate field.
 
 ## 1. The actual smooth algebra in the intermediate field
 
@@ -301,22 +307,238 @@ is birational with differential rank two everywhere, yet identifies
 constant-Jacobian pair is claimed inside it. This guards the exact
 field-versus-global-algebra distinction in using (14).
 
+### 6.1. Regular differentials give integral coordinate recovery
+
+Here is a useful normal-domain lemma. Let A be a normal finitely generated
+complex domain, with fraction field M, and f in M. If df belongs to the
+image of Omega_(A/C) inside Omega_(M/C), then f belongs to A. At a
+smooth general point of any prime divisor choose a transverse parameter
+u. A pole f=u^-q*g, q>=1 and g a unit, would give
+
+    df=u^(-q-1)*(-q*g*du+u*dg).                              (15)
+
+Its transverse coefficient modulo u is nonzero in characteristic zero,
+so df is not regular there. Thus f has no height-one pole. The normal
+intersection-of-DVRs criterion gives f in A. This does not claim that
+every regular differential is exact; it treats a specified rational
+primitive, and is false in positive characteristic.
+
+For the fixed plane first-column algebra put
+
+    J_x=C[P,Q,P_x,Q_x], A_x=normalization of J_x in L.
+
+Section6 gives Frac(J_x)=L. Normality of R and J_x subset R give A_x
+subset R. Equation(14b) is a REGULAR differential expression over A_x,
+so the lemma proves
+
+    y belongs to A_x; equivalently y is INTEGRAL over J_x.     (16)
+
+This is stronger than its earlier field membership. It does not make
+the first velocities integral over B. It also does not put the other
+coordinate x into A_x.
+
+If P or Q has a nonzero CONSTANT leading coefficient as a polynomial
+in x over C[y], then x is integral over B[y]. Equation(16) and normality
+put both x,y in A_x. Hence
+
+    A_x=R and R is FINITE over J_x                           (16a)
+
+under that source-finiteness condition. This condition holds in EVERY
+generic constant source direction: if P has ordinary degree D and
+highest homogeneous part P_D, a direction v with P_D(v)!=0 makes the
+x^D coefficient exactly that nonzero constant, in any complementary
+linear source coordinate. The excluded projective directions are at
+most D. A translation or an arbitrary preselected polynomial source
+frame does not alter this argument within that frame. Genericity is
+only sufficient; some excluded directions may satisfy monicity too.
+
+Thus for every generic direction the FOUR-function first-column map
+(P,Q,partial_v P,partial_v Q) is finite and birational onto its closed
+image, and its normalization is the ENTIRE affine-plane source. Finiteness
+here uses the standard normalization theorem stated below. This result
+requires only the TWO FIRST velocities, not all higher source jets.
+The field statement(14a) keeps its stronger ALL-direction scope.
+
+There is a global geometric refinement. The source map X->Spec(A_x)
+is birational and quasi-finite, since its composite with the target map
+is the original quasi-finite Keller map. Zariski--Main therefore makes
+it an open immersion. Over C(y), one of P,Q has positive x-degree.
+Its leading coefficient is a unit in that field, so x is integral over
+C(y)[P,Q] and hence over (A_x)_(C[y] minus zero). Localization preserves
+normality, and x is in L; therefore
+
+    (A_x) tensor_(C[y]) C(y)=C(y)[x].                         (17)
+
+Consequently some nonzero h(y) satisfies
+
+    A_x[h^-1]=C[x,y,h^-1].                                   (18)
+
+Thus the normalized first-column image is an affine A1-fibration over
+the ACTUAL transverse source coordinate y; all its added boundary lies
+in finitely many fibres of y. This statement keeps the marked source
+open and does not turn that image into a finite normalization over B.
+
+A source replica extends to this entire normalized image. Choose finite
+C-algebra generators g_i of A_x. By(18), their derivatives partial_x g_i
+lie in A_x[h^-1]. A common power h^N clears these finitely many
+denominators, so
+
+    D=h(y)^N*partial_x preserves A_x.
+
+It is locally nilpotent because A_x subset C[x,y] and it kills h(y).
+Its invariant ring is exactly C[y]. This supplies an actual additive
+action on Spec(A_x), preserving the whole source open. The power N can
+depend on the map and direction. Bare partial_x need not preserve A_x,
+and neither this action nor its invariant coordinate is asserted to
+descend to B or F.
+
+For the FULL first-jet algebra the same finite-normalization conclusion
+holds in EVERY source dimension n, without a direction restriction. Let G be any complex polynomial Keller map and set
+
+    J_full=C[G_i,partial_j G_i : 1<=i,j<=n],
+    R=C[x_1,...,x_n], L=Frac(R).
+
+The general field result in Section6 gives Frac(J_full)=L. The inverse
+Jacobian is the adjugate divided by its nonzero CONSTANT determinant,
+so its entries belong to J_full. Hence every dx_i is a regular
+J_full-linear combination of dG_1,...,dG_n. Apply(15) in the normalization
+A_full: it contains every x_i. Conversely A_full subset R because R is
+normal and contains J_full. Therefore
+
+    A_full=R, R is FINITE over J_full.                        (19)
+
+The finiteness is the finite-normalization theorem for varieties over
+a field: [Stacks, Lemma33.27.1](https://stacks.math.columbia.edu/tag/0BXQ)
+applies to the finitely generated complex domain J_full. Its exact
+statement and proof were inspected; normality of a raw jet image was
+not assumed. Equivalently, the full first-jet map is finite and
+birational onto its closed image, and the original affine source is its
+normalization. This does not force that raw image to be normal or its
+projection to the first n target outputs to be finite.
+
+The constant-Jacobian restriction matters. For the NON-KELLER polynomial
+map G=(x^2*y^2,y), its full first-jet algebra is
+C[y,x*y^2,x^2*y]. Along x=t^-1,y=t^2, all its generators have nonnegative
+t-order but x has a pole. The t-adic valuation therefore proves x is
+not integral over that algebra, although its fraction field is C(x,y).
+Its Jacobian 2*x*y^2 is nonconstant. This is a failure of a more general
+polynomial-map assertion, not a plane Keller counterexample.
+
+No new conclusion about finite landing over B follows from(16)--(19),
+including the generic two-first-velocity conclusion(16a).
+In particular (19) is compatible with the retained noninvertible Keller
+maps in dimension at least three. The new integral extension has base
+J_full, while the unresolved finite-cover and trace questions have base
+B. Those two bases cannot be interchanged.
+
+### 6.2. Two generic velocities recover the raw source over the finite normalization
+
+Let S be the FULL finite normalization of B in L. For any direction v
+satisfying the sufficient monicity condition in(16a), put
+
+    a=delta_v P, b=delta_v Q.
+
+Then there is an exact equality of ACTUAL embedded source algebras,
+
+    R=S[a,b]=B[Lambda,a,b].                                  (20)
+
+The second equality uses the plane canonical trace-dual embedding
+S subset Lambda subset R, already proved by the finite normalization,
+trace and unramified source valuation arguments in KU0/1. No differential
+IC-socle or semisimple source-layer theorem is needed. Any finite
+B-generating family of Lambda suffices in(20).
+
+Here is the general open-immersion lemma proving the assertion. Suppose
+A subset C subset R are domains and Spec(R)->Spec(A) is an open
+immersion. If R is finite over C, then C=R. Indeed lying-over makes
+Spec(R)->Spec(C) surjective. Every point of Spec(C) thus maps into the
+specified open Spec(R) in Spec(A). The map Spec(C)->Spec(A) consequently
+factors through that open, giving a ring homomorphism R->C. Its composite
+with the given inclusion C->R is the identity: the corresponding source
+map becomes the identity after composition with the open immersion,
+which is a monomorphism. Hence that inclusion is surjective, proving
+C=R. No normality of C was assumed, and the factorization treats all
+points, not only prime divisors or the smooth locus.
+
+Apply this with A=S and C=S[a,b]. Equation(16a) says R is finite over
+J_v=B[a,b]. A finite J_v-module generating set of R also generates it
+as a C-module because J_v subset C subset R. Thus R is finite over C.
+KN0 supplies the canonical OPEN immersion X=Spec(R)->N=Spec(S), so
+the lemma gives the first equality in(20). Since
+
+    S[a,b] subset B[Lambda,a,b] subset R,
+
+the second equality follows immediately. Equivalently, one can apply
+the lemma to the actual canonical etale completion U=Spec(B[Lambda])
+using KU0/1. The finite-normalization argument already suffices.
+
+There is also an unrestricted-dimensional version. For ANY complex
+polynomial Keller map G in n variables, with full finite target
+normalization S, equation(19) and the same open immersion give
+
+    C[x_1,...,x_n]=S[partial_j G_i : 1<=i,j<=n].               (21)
+
+In particular, for an actual four-variable unit-Hessian potential h,
+apply (21) directly to G=grad(h). Symmetry leaves at most TEN generators:
+
+    C[x_1,x_2,x_3,x_4]=S[h_(ij) : 1<=i<=j<=4].              (22)
+
+Here S is the full finite normalization for the gradient map itself.
+No Tang classification is needed for (22). Integrality of these Hessian
+entries over the gradient target remains unproved.
+
+Thus raw source reconstruction over the ORIGINAL full finite normalization
+requires only first source derivatives, and in the plane only two first
+velocities in a generic direction. These statements keep S itself in
+the generators; they do not identify the raw first-jet image with its
+normalization or supply a new polynomial inverse.
+
+The open-immersion condition in the lemma is essential. The finite
+birational normalization
+
+    C[u,v]/(v^2-u^2(u+1)) subset C[y],
+    u=y^2-1, v=y(y^2-1),
+
+identifies y=1 and y=-1. It is finite because y^2=u+1, yet the two
+rings differ. Taking a product with A1 gives the nonnormal source-image
+control in Section6. Such a normalization map is not an open immersion,
+so it cannot be substituted for KN0 in the proof of(20).
+
+The remaining landing condition is now particularly exact. For a generic
+v as above,
+
+    a,b in S  iff R=S  iff K has a polynomial inverse.        (22)
+
+The forward direction follows from(20); R=S makes K finite etale, and
+characteristic-zero affine-space covering triviality gives the inverse.
+The converse is immediate. Similarly a,b in B[Lambda] is equivalent
+to R=B[Lambda], namely absence of omitted UNRAMIFIED primes; it can
+leave ramified omitted primes outside that completion. These are two
+different landing conditions. Generic first-velocity integrality over
+B, full trace-dual perfection and JC2 remain unproved.
+
 ## 7. What this changes in the main programme
 
 We read the complete retained KV0, KX0, LO0, MQ0 and PF53 proofs.
 The local slice, rational-curve and coordinate-primitive arguments
-are reproduced at the needed scope. No new external theorem is adopted.
-Primary literature on LND local slices and bracket width was screened;
+are reproduced at the needed scope. Section6.1 additionally inspects the standard finite-normalization input
+for varieties. Primary literature on LND local slices and bracket width was screened;
 it supplied no theorem making these field generators integral, making
 the raw algebra normal, or supplying a Darboux pair on an ML1 surface.
-No primary download/cache or predecessor mathematical replay is needed.
+The inspected finite-normalization statement and current application
+limits are retained in
+[sources/first-jet-normalization-context.json](sources/first-jet-normalization-context.json).
+No unrelated predecessor mathematical checker was replayed.
 
-The new preregistered checker checks degree/ramification arithmetic,
+The retained checker checks degree/ramification arithmetic,
 slice/volume transcriptions, finite derivative controls, the nonnormal
 birational control, source seals and scope. The unbounded arguments
 above establish the conclusions; finite examples do not classify maps.
+The open-immersion corollary in Section6.2 was independently checked
+internally; it uses finite lying-over and open factorization, not a
+finite symbolic census or the unverified differential KQ0 package.
 
-The field obstruction is now stronger than just failure of descent to
+The field obstruction is stronger than just failure of descent to
 F: bare translations cannot descend to ANY proper intermediate field,
 and already their two first target velocities generate the full field;
 and replica degree restricts every other additive-equivariant factor.

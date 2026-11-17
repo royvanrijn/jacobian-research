@@ -233,7 +233,7 @@ def main():
     files = [path, Path(__file__), snapshot]
     receipt = {"status": "PASS", "scope": data["scope"],
                "checks": "Full directed edge-cover matrices over F3, every lifted crossing and all fixed/moved meridian-cycle fillings; reverse tree, independent from folded Smith discovery. Exact retained named-census map bijections and four-seed traces.",
-               "input_sha256": {p.name: hashlib.sha256(p.read_bytes()).hexdigest() for p in files},
+               "input_sha256": {p.relative_to(HERE).as_posix(): hashlib.sha256(p.read_bytes()).hexdigest() for p in files},
                "results": results, "sharp_four_count": 24,
                "corruptions_rejected": corruptions,
                "external_census_reread_count": census,

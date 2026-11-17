@@ -52,11 +52,15 @@
     5
   ],
   "generic_affine_shear": "quadratic preservation and inverse checked symbolically",
+  "original_ideal_image_controls": {
+    "transverse_content_one": "P=z,J=(z+y); fixed markers (z+y)*y*z^m, m=0..5, original Wick orders 0..10",
+    "phase_content_degree_two": "P=z,J=(z^2); heat images of z^2..z^8 have rank 7 in degrees <=8; inverse-heat divisibility checked"
+  },
   "scope": "Finite exact replay; universal theorem follows from the written identities.",
   "python": "3.12.3",
   "sympy": "1.14.0",
-  "proof_sha256": "11640b56bbe9e0431518b20c6cecd36290982afd2215e4e8fe295b28564c6808",
-  "checker_sha256": "9ce0f01789f160accc13490d26491895c5eb5dca21ddf71d8d58b2bfa2b94867",
+  "proof_sha256": "650c2f422f8db94d963c00ac1ef30cc46a1efee4fb8fc9298bb10b21b5eb7cbd",
+  "checker_sha256": "9a806e160e656c4bd04d8c428826d2d0a38b25c8a4f7273c2e51d0f0301bcbf2",
   "independent_replay": false,
   "formal_verification": false,
   "external_review": false

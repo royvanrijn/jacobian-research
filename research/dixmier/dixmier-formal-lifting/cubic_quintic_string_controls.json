@@ -1,0 +1,170 @@
+{
+  "claim": "QSO35",
+  "status": "PASS",
+  "environment": {
+    "python": "3.12.3",
+    "sympy": "1.14.0"
+  },
+  "finite_normal_form_commutator_order_at_most_one": "PASS for B1,B2,B4,B5",
+  "leading_coefficient_extraction_for_orders_0_through_5": "3*fprime at order n+2",
+  "all_lower_flows": [
+    "c4*B4",
+    "c2*B2",
+    "c1*B1"
+  ],
+  "universal_commutator_identity": "[P,Q]=J1prime*E+J1second/2+J2prime",
+  "universal_commutator_check": "PASS",
+  "corrupted_B5_coefficient_rejected": true,
+  "principal_balance_exhaustion": [
+    [
+      2,
+      0
+    ],
+    [
+      4,
+      -4
+    ],
+    [
+      4,
+      4
+    ],
+    [
+      8,
+      -8
+    ],
+    [
+      8,
+      8
+    ],
+    [
+      16,
+      0
+    ]
+  ],
+  "resonance_matrix_rederived_by_ODE_first_variation": "PASS",
+  "resonance_determinants": {
+    "(2, 0)": {
+      "determinant": "-(r - 9)*(r - 7)*(r - 5)**2*(r - 3)**2*(r - 1)*(r + 1)/36",
+      "integer_roots_with_multiplicity": [
+        -1,
+        1,
+        3,
+        3,
+        5,
+        5,
+        7,
+        9
+      ]
+    },
+    "(4, -4)": {
+      "determinant": "-(r - 10)*(r - 9)*(r - 6)*(r - 5)*(r - 3)*(r - 2)*(r + 1)*(r + 2)/36",
+      "integer_roots_with_multiplicity": [
+        -2,
+        -1,
+        2,
+        3,
+        5,
+        6,
+        9,
+        10
+      ]
+    },
+    "(4, 4)": {
+      "determinant": "-(r - 10)*(r - 9)*(r - 6)*(r - 5)*(r - 3)*(r - 2)*(r + 1)*(r + 2)/36",
+      "integer_roots_with_multiplicity": [
+        -2,
+        -1,
+        2,
+        3,
+        5,
+        6,
+        9,
+        10
+      ]
+    },
+    "(8, -8)": {
+      "determinant": "-(r - 12)*(r - 10)*(r - 9)*(r - 5)*(r - 3)*(r + 1)*(r + 2)*(r + 4)/36",
+      "integer_roots_with_multiplicity": [
+        -4,
+        -2,
+        -1,
+        3,
+        5,
+        9,
+        10,
+        12
+      ]
+    },
+    "(8, 8)": {
+      "determinant": "-(r - 12)*(r - 10)*(r - 9)*(r - 5)*(r - 3)*(r + 1)*(r + 2)*(r + 4)/36",
+      "integer_roots_with_multiplicity": [
+        -4,
+        -2,
+        -1,
+        3,
+        5,
+        9,
+        10,
+        12
+      ]
+    },
+    "(16, 0)": {
+      "determinant": "-(r - 15)*(r - 12)*(r - 10)*(r - 9)*(r + 1)*(r + 2)*(r + 4)*(r + 7)/36",
+      "integer_roots_with_multiplicity": [
+        -7,
+        -4,
+        -2,
+        -1,
+        9,
+        10,
+        12,
+        15
+      ]
+    }
+  },
+  "bounded_jet_leading_matrix": [
+    [
+      "-1/6",
+      "0"
+    ],
+    [
+      "-c4/12",
+      "1/6"
+    ]
+  ],
+  "bounded_jet_matrix_determinant": "-1/36",
+  "primary_source": {
+    "author": "Nathan Hayford",
+    "arxiv": "2405.03260v2",
+    "url": "https://arxiv.org/pdf/2405.03260v2",
+    "cached_file": "sources/hayford-2405.03260v2.pdf",
+    "sha256": "3763cddb3e723b8685c7974ad54a0873323c7f076b7cc6cc96705d4d97824c5c",
+    "inspected_location": "Appendix A.2: positive fractional powers Q^(4/3), Q^(5/3), PDF page 39.",
+    "import_scope": "Comparison of displayed finite operator formulas only; no algebraic-solution exclusion theorem imported."
+  },
+  "hashes": {
+    "CUBIC_QUINTIC_STRING_OBSTRUCTION.md": "d08c960fed1966723788628190c698edc9c2f155b8311f70334890de90fc52d7",
+    "check_cubic_quintic_string.py": "50e23387efd084256fe51712ee25a4b401254878801254a97943b1a439ff88df",
+    "CUBIC_QUARTIC_STRING_OBSTRUCTION.md": "2c76aecb23b78519428dd63baf1b2e71137c99018adffcb346ccead302138d06",
+    "QUADRATIC_OPERATOR_MATE_CLASSIFICATION.md": "94504e12decd32f5056a43ae489e0d16df25da99c830ec3f378b5e0ae223b2a3",
+    "cubic_hierarchy_source_audit.json": "9b06460f996c49ae4617db4513b84f6523ac936a500a5095245ded59e7df7305"
+  },
+  "general_cubic_source_boundary": {
+    "source_audit": "cubic_hierarchy_source_audit.json",
+    "cached_source_pins": "PASS",
+    "Miwa_regular_nonresonance": "Section 2 equation (2.22) is required",
+    "Malgrange_scalar_reconstruction": "Application obligation; meromorphic connection forms alone do not give meromorphic normalized scalar coefficients"
+  },
+  "written_proof_coverage": [
+    "Arbitrary algebraic coefficient order-(3,5) normalization with every lower constant flow.",
+    "Time primitive constructed inside the coefficient field.",
+    "All finite-pole exponent balances exhausted by strict pole comparisons.",
+    "No fractional Puiseux exponent at a finite pole or bounded finite point.",
+    "Curve-cover rationality by Riemann-Hurwitz and rational infinity contradiction.",
+    "Exact-R h-regular prescribed Long cubic S requires mate order at least seven using polynomial leading-order subtraction and QSO2/QSO34/QSO35."
+  ],
+  "coverage_boundary": "Exact finite Ore identities, exhaustive principal-coefficient balances, resonance factors and bounded-jet leading matrix. Universal field normalization, all algebraic places, fractional-index induction, rationality, infinity and valued Long arguments are written proofs. No order-(3,7) theorem, all-cubic-partner exclusion, finite Long lift or DC1/DC2 resolution is claimed.",
+  "independent_replay": false,
+  "formal_verification": false,
+  "external_review": false
+}

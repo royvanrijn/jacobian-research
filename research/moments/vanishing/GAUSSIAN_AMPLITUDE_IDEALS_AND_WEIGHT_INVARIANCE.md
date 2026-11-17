@@ -432,6 +432,36 @@ deg_t(exp(-psi)Phi_P[A])<=q deg_X A; the displayed lifts have degree at most
 (deg phi)m. Both estimates retain the original marker degree.
 Safety here is equivalent to b=0 and l^T C l=0, and then the phase is pure.
 
+The ORIGINAL image of every nonzero spatial ideal J is also explicit.
+Write sigma2=l^T C l. If sigma2=0, apply Section 6 to the nonzero safe
+phase P-b to obtain Phi_P[J]=exp(bt)K[t]. If sigma2!=0, choose linear
+coordinates z=ell(X),Y with z Gaussian-orthogonal to the transverse Y.
+The transverse covariance is nonsingular. Express Jtilde=phi^-1(J) in
+K[z,Y], and let g(z) be the monic generator of the ideal of ALL its
+Y-coefficients in K[z]. Then
+
+    E_Y[Jtilde]=(g) as literal subsets of K[z].      (25a)
+
+Indeed the left side is a K[z]-ideal contained in that coefficient ideal.
+Conversely the transverse Hermite markers recover the coefficients of
+exp(Delta_Y/2)rho for every rho in Jtilde. This heat transform and its
+inverse preserve the coefficient ideal, so those original products
+H_beta(Y)rho recover the entire ideal (g). No time-dependent amplitude
+has been introduced. Put T_sigma=exp((sigma2/2)partial_z^2). One-variable
+Gaussian translation now gives
+
+    Phi_P[J]=exp(psi){(T_sigma B)(sigma2*t):B in gK[z]},
+    codim_(exp(psi)K[t]) Phi_P[J]=deg g.             (25b)
+
+For h=exp(psi)p with p in K[t], membership is exactly divisibility of
+T_sigma^-1[p(z/sigma2)] by g(z). Intrinsically g is the unique monic
+polynomial of greatest degree with J contained in (g(P-b)); this follows
+by applying phi to the common z-factor of Jtilde. Thus these formulas
+retain the original ideal-image defect that its K[t]-span loses. For
+example, P=X with an independent standard Gaussian Y and J=(X+Y) has
+g=1 and full image exp(t^2/2)K[t], whereas J=(X) has codimension one as
+in Section 7. The zero ideal has image zero throughout.
+
 For a concrete family use a Witt pair Z,W and an independent Y with
 E[ZW]=E[Y^2]=1. For any f(Z) in K[Z], define
 
@@ -489,6 +519,8 @@ cubic heat/kernel formulas with direct multinomial Wick contractions:
 20 transformed Hermite markers through original degree 9 and moment
 order 28, and image dimensions 3d+1 for d=0,...,4. They also test the
 heat inverse through degree 5 and the symbolic affine-shear inverse.
+Two additional ideal controls check transverse content one for (X+Y)
+and the degree-two defect for (X^2) under the nonisotropic phase P=X.
 These are finite internal controls of Section 8, not proofs of unrestricted
 safety, surjectivity or the finite-image theorem. Replay with
 `python verify_gaussian_original_marker_images.py --output gaussian_original_marker_images_verification.json`
@@ -499,3 +531,18 @@ period for an original unweighted safe phase, or construct one while controlling
 every original marker. Weighted positivity and ideal saturation alone do not
 settle it. Higher-rank regular transcendental realization and an exhaustive
 safe-phase classification with the original marker filtration are also open.
+
+The [multibase quadratic-fibre theorem](GAUSSIAN_MULTIBASE_QUADRATIC_FIBRE_PRIMITIVITY.md)
+does establish primitive vacuum for every finite actual image of
+P=W^T H(Z)+Y^T A(Z)Y+B(Z)^T Y+G(Z), where H depends only on the isotropic
+base Z. Its polynomial source-root and determinant criterion gives safety
+and all original marked periods in this class. Nonlinear momentum dependence
+and nonquadratic ordinary fibres remain outside that source-root criterion.
+The companion's angular-core extension separately permits arbitrary strictly
+positive-weight terms, including nonlinear momenta, when the zero-weight part
+is quadratic in (ZW,Y). More general zero-weight cores and mixed angular
+support remain outside these primitive-vacuum theorems.
+The [W-affine finite-image theorem](GAUSSIAN_W_AFFINE_FINITE_IMAGE_OBSTRUCTIONS.md)
+separately classifies both constant mixed-coefficient branches and the
+nonconstant branch whose common roots satisfy ord(h)>=ord(c). It retains
+the original mixed source and the earlier complete marked-curve comparison.

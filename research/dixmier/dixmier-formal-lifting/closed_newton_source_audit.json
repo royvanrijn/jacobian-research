@@ -1,0 +1,62 @@
+{
+  "claim": "QPN2",
+  "record_type": "primary-source inspection and written-proof scope",
+  "proof": {
+    "file": "CLOSED_NEWTON_CONE_OBSTRUCTION.md",
+    "sha256": "25231184fd0980887618fd906d99817209a47ae62517dc6ace2f11a87061e0d1"
+  },
+  "primary_sources": [
+    {
+      "title": "The Stacks Project, tag 07QX",
+      "url": "https://stacks.math.columbia.edu/tag/07QX",
+      "tag": "07QX",
+      "cached_file": "sources/stacks-07QX.html",
+      "sha256": "d1dc824995f464a25d6d4b30a4502ecbcd8aa6563be07c9a2fd807084fa86249",
+      "retrieved_utc": "2026-11-17T15:04:49.302780+00:00",
+      "exact_location": "Theorem 16.13.2 and introductory G-ring examples",
+      "inspected_by": "Internal AI-assisted primary-source inspection by dc1_route subagent via web extraction and cached HTML",
+      "used": "Apply to K[t]_(t): a finite polynomial system with a K[[t]] solution has a solution over an etale neighborhood with unchanged residue field, approximating a finite jet."
+    },
+    {
+      "title": "The Stacks Project, tag 00U0",
+      "url": "https://stacks.math.columbia.edu/tag/00U0",
+      "tag": "00U0",
+      "cached_file": "sources/stacks-00U0.html",
+      "sha256": "dbc89f1dab8d02b26705681c362a47c403f49046ab6fe7a0d40e348dd9238ad0",
+      "retrieved_utc": "2026-11-17T15:04:49.302834+00:00",
+      "exact_location": "Lemma 10.143.2 and Lemma 10.143.3(8)-(10)",
+      "inspected_by": "Internal AI-assisted primary-source inspection by dc1_route subagent via web extraction and cached HTML",
+      "used": "Use a Jacobian presentation for the etale neighborhood and descend finitely many presentation coefficients and localizations to a finite-type arithmetic model."
+    },
+    {
+      "title": "The Stacks Project, tag 00UP",
+      "url": "https://stacks.math.columbia.edu/tag/00UP",
+      "tag": "00UP",
+      "cached_file": "sources/stacks-00UP.html",
+      "sha256": "4682412fb4382fdc578fddc8453a98669e61e5a05cb048b07866830e29adbd8b",
+      "retrieved_utc": "2026-11-17T15:04:49.302857+00:00",
+      "exact_location": "Definition 10.150.1 and Lemma 10.150.3",
+      "inspected_by": "Internal AI-assisted primary-source inspection by dc1_route subagent via web extraction and cached HTML",
+      "used": "Finite-presentation etale maps are formally etale. Successive square-zero lifting from the reduced residue point gives a compatible k[[t]] point."
+    }
+  ],
+  "written_arguments": [
+    "The target deficit forces two odd boundary factors and p-2 even boundary factors; each extra boundary index requires an additional quantum-parameter contraction.",
+    "A regular closed-cone coefficient has nonzero leading parameter term gamma_n*g(0)^(p-2)*mu(0)^2 after dividing by eta^(p+1).",
+    "Under the strict even gate the factor g^(p-2) is common, so a parameter-small nonzero anchor also works.",
+    "A hypothetical finite rational mate defines a finite polynomial system after clearing parameter poles and a common position denominator.",
+    "Encode parameter orders and nonzero leading coefficients with explicit factors and inverse equations before approximation; the original arbitrary formal series are not reduced directly.",
+    "The finite etale model, residue point, unit equations and polynomial commutator identities spread over finitely generated characteristic-zero constants; good finite-field fibers lift formally and contradict the noncentral coefficient.",
+    "The nonperfect reduced constant field k((t)) is handled explicitly: delta^p=0, PBW center C(v^p)[a^p], normalization b=(v/eta)*a, and a truncated-polynomial splitting representation prove central degree p over arbitrary characteristic-p C."
+  ],
+  "dependencies_retained": [
+    "QPC1 universal coefficient and scalar p-central necessity",
+    "QPC1 normalized coefficient trace and finite-type good-reduction argument"
+  ],
+  "mathematical_checker": "check_closed_newton_obstruction.py",
+  "checker_scope": "Finite sparse exact controls only; no computational replay of Artin approximation or the universal word-selection proof.",
+  "independent_replay": false,
+  "formal_verification": false,
+  "external_review": false,
+  "remaining_obligation": "Negative Laurent terms, support above the closed cone, deformed first images and genuinely nonscalar carriers remain open; no universal bounded normalization of Long lifts is supplied."
+}

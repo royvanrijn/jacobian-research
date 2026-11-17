@@ -176,8 +176,9 @@
       "url": "https://doi.org/10.1007/s00208-020-02124-z",
       "snapshot_url": "https://arxiv.org/pdf/1907.02982",
       "location": "Section 2, Proposition 1, pretzel cycle presentation; Theorems 1 and 2",
-      "audit": "quotient convention, exact pretzel relations, reflection bound and class scopes read",
-      "scope": "twisted links; even-weight bipartite arborescent links; recovers pretzel and Montesinos cases; absent graph edges mean no added relation The introduction also records(-1)additivity of meridional rank for knots detected by Coxeter quotients, without assuming bridge equality; this conditional precedent is credited, not generalized to all knots."
+      "audit": "Published Theorem1 and disk-band bridge formula read in full HTML. Euler characteristic gives a crosscap obstruction;12 exact alternating examples fail all standard twisted diagrams. Rational-tangle extensions after Theorem1 remain separately open.",
+      "scope": "twisted links; even-weight bipartite arborescent links; recovers pretzel and Montesinos cases; absent graph edges mean no added relation The introduction also records(-1)additivity of meridional rank for knots detected by Coxeter quotients, without assuming bridge equality; this conditional precedent is credited, not generalized to all knots.",
+      "snapshot": "sources/bbk-coxeter-published-2021.html"
     },
     {
       "id": "SERRE80",
@@ -209,9 +210,10 @@
       "year": 2024,
       "url": "https://arxiv.org/abs/2208.09032",
       "snapshot_url": "https://arxiv.org/html/2208.09032",
-      "audit": "abstract, definitions, computational scope, Section 5 limitations read",
+      "audit": "Primary Sections2.1 and3.1.1 classification/target and complete-coloring logic read. Current24-case exhaustive transposition/H4 searches use independent root arithmetic, rather than trusting historical workbook non-hits.",
       "scope": "595515 of 1701936 knots through 16 crossings have explicit maximal rank Coxeter quotients in this computation; not all knots through 16",
-      "limits": "12a210 requires an infinite rather than finite maximal rank Coxeter quotient; Ryffel theorem supplies torus knots without nontrivial Coxeter quotients"
+      "limits": "12a210 requires an infinite rather than finite maximal rank Coxeter quotient; Ryffel theorem supplies torus knots without nontrivial Coxeter quotients",
+      "snapshot": "sources/bkm-coxeter-2208.09032v1.pdf"
     },
     {
       "id": "BKP26A",
@@ -221,8 +223,9 @@
       "url": "https://doi.org/10.1017/S030500412610214X",
       "snapshot_url": "https://arxiv.org/html/2411.10642",
       "location": "Theorem 1.1, Proposition 1.4, distance discussion",
-      "audit": "primary introduction, theorem and fishnet quotient read; 2024 arXiv version distinguished from 2026 publication",
-      "scope": "suitable fishnets include high-distance knots; for a b-bridge position with b>1 an added unknot gives bridge=meridional rank=ordinary rank=2b-1; does not imply MRC for the original sublink"
+      "audit": "Exact Definition1.2, Proposition1.4 and Section2.1 path quotient read; Section2.2 displayed multi-sublink and connected-sum operations separately compared. Current determinant obstruction excludes the gcd family on24 exact knots.",
+      "scope": "suitable fishnets include high-distance knots; for a b-bridge position with b>1 an added unknot gives bridge=meridional rank=ordinary rank=2b-1; does not imply MRC for the original sublink",
+      "snapshot": "sources/bkp-fishnet-2411.10642.html"
     },
     {
       "id": "BKP26B",
@@ -360,7 +363,7 @@
       "url": "https://doi.org/10.2140/gtm.2007.12.191",
       "snapshot": "sources/moriah-heegaard-2007.pdf",
       "location": "Theorems3.6,4.19,4.20; definitions of generalized Montesinos plats and the integral Burau matrices",
-      "audit": "Coauthor primary survey's numerical equality criterion extracted. Burau parameter visually checked as -1 because text extraction drops its minus sign. Original LM93 full proof not certified.",
+      "audit": "Published coauthor survey PDF cached and Theorem4.20 with L,M definitions read at printedp206. Its exact nonunit matrix-gcd criterion is imported; original LM93 full proof remains unaudited. Current Fox determinant obstruction excludes it on24 exact bridge-four knots.",
       "scope": "For a2n-plat braid B, let R be unreduced Burau at t=-1, L rows paired differences, M columns paired sums. If gcd entries of LRM is not1, then ordinary knot-group rank=exterior genus=bridge=n, hence MRC. Generalized Montesinos numerator-gcd condition is a specialization; beta congruences apply to additional tunnel inequivalence claims."
     },
     {
@@ -553,6 +556,31 @@
       "location": "Corollary1.2 and preceding no-false-positive paragraph,printedp2; exactauthor4/5or.dat in hypcensus.zip",
       "audit": "Exact primary Cor1.2 statement read; imported certified-census theorem, no census-wide interval rerun. Author signature tables retained with hashes; exact cutpiece triangulations match m036/m121/m189.",
       "scope": "Cusped census through8tetrahedra has no nonhyperbolic entries. Exact small-census signatures certify cutpieces in the retained28 double covers; no volume-only acceptance."
+    },
+    {
+      "id": "KL16-CROSSCAP",
+      "title": "Crosscap numbers and the Jones polynomial",
+      "authors": "Efstratia Kalfagianni and Christine Ruey Shan Lee",
+      "year": 2016,
+      "url": "https://doi.org/10.1016/j.aim.2015.09.017",
+      "snapshot_url": "https://arxiv.org/abs/1408.4493v3",
+      "snapshot": "sources/kalfagianni-lee-crosscaps-1408.4493v3.pdf",
+      "location": "Theorem1.1 and following Menasco diagram criterion, authorv3 printedpp1-2; publishedpp309-310",
+      "audit": "Primary ceiling inequality and exact hypotheses read; compared published article and authorv3. Complete bracket-state computations and prime alternating diagram checks performed on12 literal PDs. Original KL and Menasco proofs are imported, not independently re-established.",
+      "scope": "For prime non-split alternating non-(2,p) link withk components, crosscap>=ceil((abs beta+abs beta')/3)+2-k. Not an unrestricted nonalternating or smooth4-genus theorem."
+    },
+    {
+      "id": "DAVIS25-CANONICAL",
+      "title": "The Geometry and Topology of Coxeter Groups, Second Edition",
+      "authors": "Michael W. Davis",
+      "year": 2025,
+      "doi": "10.1007/978-3-031-91303-7",
+      "url": "https://people.math.osu.edu/davis.12/second_edition.pdf",
+      "snapshot": "sources/davis-coxeter-groups-second-edition-2025.pdf",
+      "snapshot_sha256": "617be601db21b79aa50f6ce551ea20f4409ec274817b86757168bc93f6554669",
+      "location": "Section6.12, equations6.32-6.33, Lemma6.12.3 and Corollary6.12.4, printedpp108-109/PDF127-128; faithfulness statement Corollary6.12.11 printedp111/PDF130",
+      "audit": "Author-hosted complete2025 second-edition PDF cached unchanged; identity, DOI and copyright edition checked on title/copyright pages. Canonical symmetric form, simple-root basis, finite-pair proof and representation-existence corollary read. Tits faithfulness statement read, but its full AppendixD proof not independently audited. The transport argument re-proves the needed representation existence and root-span property; it does not require faithfulness or nondegeneracy.",
+      "scope": "Every rank-r Coxeter presentation has a canonical real reflection representation on an r-dimensional space with unit-length basis roots, including singular forms. Conjugate reflection directions spanning the image generate the full root space. Supplies a necessary Gram-model gate for all sharp Coxeter quotients, not a knot equality or a computed ideal certificate by itself."
     }
   ],
   "unresolved_scope_extractions": [

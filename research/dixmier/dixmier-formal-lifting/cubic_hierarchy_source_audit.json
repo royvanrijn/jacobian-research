@@ -1,0 +1,44 @@
+{
+  "purpose": "Primary-source boundary for a possible all-order cubic string obstruction",
+  "inspected_utc": "2026-11-17T15:37:21Z",
+  "sources": [
+    {
+      "author": "Tetsuji Miwa",
+      "title": "Painleve Property of Monodromy Preserving Deformation Equations and the Analyticity of tau Functions",
+      "year": 1981,
+      "url": "https://www.jstage.jst.go.jp/article/kyotoms1969/17/2/17_2_703/_pdf/-char/en",
+      "cached_file": "sources/miwa-1981-painleve-property.pdf",
+      "sha256": "e3d3d29b09564ce53b93e67e97ba0ef5b5034dbb7e5d28a513fd229ae4b863b0",
+      "exact_locations": [
+        "Section 2, equations (2.3), (2.22), (2.24), printed pages 705,707-708",
+        "Theorem 1, printed page 708; start of its Fredholm proof, printed pages 709-714"
+      ],
+      "actual_statement": "The inverse monodromy-data map is meromorphic on its defined data space; the corresponding normalized solutions are meromorphic away from fixed singularity hyperplanes.",
+      "essential_hypotheses": "Distinct leading irregular eigenvalues; regular singular exponents distinct modulo integers in equation (2.22).",
+      "application_boundary": "The artificial regular singularity after cubic ramification/shearing is resonant, so the exact stated Miwa theorem cannot be applied directly without a new admission or replacement argument."
+    },
+    {
+      "author": "Bernard Malgrange",
+      "title": "Sur les deformations isomonodromiques. II. Singularites irregulieres",
+      "year": 1982,
+      "url": "https://numdam.org/item/CIF_1982__17__A3_0.pdf",
+      "cached_file": "sources/malgrange-1982-isomonodromic-II.pdf",
+      "sha256": "ab54e9539770d11b56c4ab05a0e4c46b29b824f242a8a3bd2ad7199d3f017e3d",
+      "exact_locations": [
+        "Condition (1.2) and its r=0 exception, printed page 2 (PDF page 3)",
+        "Theorem 3.1, printed page 9 (PDF page 10)",
+        "Meromorphic connection trivialization conclusion, printed page 10 (PDF page 11)",
+        "Question (3.2), printed page 11 (PDF page 12)"
+      ],
+      "actual_statement": "Universal integrable connection exists with the stated noncoalescing irregular leading type and logarithmic finite poles. For a trivial initial bundle the connection form in the constructed trivialization is meromorphic in parameters, outside/through the bundle's exceptional divisor.",
+      "essential_hypotheses": "Distinct irregular leading eigenvalues when r>=1; logarithmic regular poles are permitted without the additional eigenvalue nonresonance condition. The exposition writes the explicit universal parameter formulas for rank-one irregular poles and states higher irregular order analogues.",
+      "application_boundary": "Question (3.2) explicitly separates meromorphic connection families from meromorphic generalized Schlesinger coordinates in the resonant case. No direct meromorphic scalar-coefficient conclusion for every cubic string system is asserted by this audit."
+    }
+  ],
+  "proposed_bridge_obligation": "For every partner order m coprime to three and every lower constant flow, prove that the normalized scalar order-(3,m) string coefficients reconstruct single-valuedly and meromorphically from an admitted universal rank-three spectral connection over every finite time, including resonant apparent poles and degenerate monodromy data. Check the formal type, absence of finite fixed singularities, and the gauge/normalization reconstruction. Meromorphic connection coefficients alone do not prove this.",
+  "current_scope": "QSO34 and QSO35 have direct algebraic Puiseux proofs and do not depend on this all-order bridge. The audit does not claim that a modern general theorem is absent, or that Malgrange's 1982 question remains open today.",
+  "evidence": "Internal primary-PDF inspection via web and local pypdf extraction; exact cached bytes pinned.",
+  "independent_review": false,
+  "formal_verification": false,
+  "external_review": false
+}

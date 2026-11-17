@@ -1,0 +1,99 @@
+{
+  "affine_auxiliary_points": [
+    [
+      -1,
+      0
+    ],
+    [
+      0,
+      -1
+    ],
+    [
+      0,
+      1
+    ],
+    [
+      2,
+      -3
+    ],
+    [
+      2,
+      3
+    ]
+  ],
+  "checker_sha256": "aa92ad27a71527da6119aba68c9ea65085df203be25b992b88f71480a7563c86",
+  "classified_pi_v": [
+    [
+      "-2",
+      "-3/8"
+    ],
+    [
+      "-2",
+      "3/4"
+    ],
+    [
+      "1",
+      "3/4"
+    ]
+  ],
+  "command": ".venv/bin/python research/arithmetic/verify_fixed_quadratic_line_rigidity.py",
+  "external_review": false,
+  "formal_verification": false,
+  "independent_whole_proof_replay": false,
+  "primitive_mod_nine_controls": 72,
+  "proof_sha256": "052c7e6816324c4bc21591bb3c9336139d5a3127c0c5ee11e573b16c6cf0b015",
+  "python": "3.12.3",
+  "rejection_controls": 3,
+  "scope": "Exact polynomial, finite residue and finite Lutz-Nagell candidate controls. The imported general two-isogeny descent, Mordell-Weil, Lutz-Nagell and arithmetic local-global theorems are not formalized by this checker.",
+  "source_context_sha256": "4741f3382a999970273d0f4972f4fc705e9652401c58b9c944c22fae10ba0b28",
+  "source_pdfs": [
+    {
+      "locator": "Section15.5, printedpp507-509: 2-isogeny descent rank formula, isogeny-kernel description and quartic15.31",
+      "path": "dujella-number-theory-2021-section15-5.pdf",
+      "sha256": "3f0d2fc757ad74c0a4758b463980e196cbed7ffebedcd5d522e321d87eab6260",
+      "url": "https://web.math.pmf.unizg.hr/~duje/pdf/section15-5.pdf"
+    },
+    {
+      "locator": "Section15.3, printedpp486-490: Mordell-Weil Theorem15.3, Lutz-Nagell Theorem15.5 and Proposition15.6",
+      "path": "dujella-number-theory-2021-section15-3.pdf",
+      "sha256": "02cf4d0550ad601d870d22f9b951094c3476db1a24216cb88b177ebaf4b912f9",
+      "url": "https://web.math.pmf.unizg.hr/~duje/pdf/section15-3.pdf"
+    }
+  ],
+  "status": "pass",
+  "symbolic_controls": [
+    "normalized_inverse_polynomial",
+    "varying_pi_degree_five_obstruction",
+    "line_difference_centering",
+    "centered_factor_condition",
+    "line_factorization_modulo_constraint",
+    "elliptic_curve_reduction",
+    "elliptic_inverse_constraint",
+    "rank_zero_curve_translation",
+    "two_isogenous_integral_coefficients_and_nonsingularity",
+    "complete_primitive_mod_nine_descent_obstruction",
+    "complete_lutz_nagell_candidate_enumeration_after_rank_zero",
+    "elliptic_point_-1_0_line_constraint",
+    "elliptic_point_2_-3_line_constraint",
+    "elliptic_point_2_3_line_constraint",
+    "line_1_b_formula",
+    "line_1_c_formula",
+    "line_1_factorization",
+    "line_2_b_formula",
+    "line_2_c_formula",
+    "line_2_factorization",
+    "line_3_b_formula",
+    "line_3_c_formula",
+    "line_3_factorization",
+    "line_1_integral_target_obstruction",
+    "line_2_integral_target_obstruction",
+    "line_3_integral_target_obstruction",
+    "third_line_quadratic_discriminant",
+    "third_line_cubic_discriminant",
+    "third_line_coprime_resultant",
+    "third_line_wrong_quadratic_resolvent_squareclasses",
+    "noncentered_quadratic_incidence_chart",
+    "quadratic_K_minus_three_discriminant"
+  ],
+  "sympy": "1.14.0"
+}

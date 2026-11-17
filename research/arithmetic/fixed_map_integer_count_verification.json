@@ -1,0 +1,102 @@
+{
+  "bounds": {
+    "integer_and_index_bound": 50000,
+    "maximum_height": 1000000,
+    "sieve_limit": 150000
+  },
+  "checker_sha256": "671db5c3cebb483c65a10eb3122b9803de1da304e1aa708883e3585633b0c223",
+  "checks": {
+    "character_extension": 50000,
+    "character_projector": 6,
+    "euler_coefficient_controls": 37,
+    "height_index_bijection": 87180,
+    "rejection_controls": 4,
+    "signed_primitive_heights": 200000
+  },
+  "command": "python3 research/arithmetic/verify_fixed_map_integer_count.py --bound 50000 --maximum-height 1000000",
+  "enumeration": [
+    {
+      "height": 1000,
+      "positive_hasse_count": 1,
+      "signed_hasse_count": 2
+    },
+    {
+      "height": 10000,
+      "positive_hasse_count": 15,
+      "signed_hasse_count": 30
+    },
+    {
+      "height": 100000,
+      "positive_hasse_count": 139,
+      "signed_hasse_count": 278
+    },
+    {
+      "height": 1000000,
+      "positive_hasse_count": 1276,
+      "signed_hasse_count": 2552
+    }
+  ],
+  "exact_constants": {
+    "A3_at_1": "29/26",
+    "A3_log_derivative_over_minus_log_3": "165/754",
+    "C_int_rational_factor": "29/1248",
+    "signed_ratio_to_sufficient_without_J": "29/13"
+  },
+  "examples": [
+    {
+      "a": 19,
+      "hasse_failure": true,
+      "height": 608,
+      "local": true
+    },
+    {
+      "a": -19,
+      "hasse_failure": true,
+      "height": 608,
+      "local": true
+    },
+    {
+      "a": 152,
+      "hasse_failure": true,
+      "height": 4864,
+      "local": true
+    },
+    {
+      "a": 513,
+      "hasse_failure": true,
+      "height": 5472,
+      "local": true
+    },
+    {
+      "a": 7,
+      "hasse_failure": false,
+      "height": 224,
+      "local": false
+    },
+    {
+      "a": 8,
+      "hasse_failure": false,
+      "height": 256,
+      "local": true
+    },
+    {
+      "a": 27,
+      "hasse_failure": false,
+      "height": 288,
+      "local": true
+    },
+    {
+      "a": 54,
+      "hasse_failure": false,
+      "height": 576,
+      "local": false
+    }
+  ],
+  "external_review": false,
+  "formal_verification": false,
+  "independent_whole_proof_replay": false,
+  "proof_sha256": "bb3c28747768c15accba8e984397849ce6a3cb23f49c9f3d0c3c3f3b45e05997",
+  "python": "3.12.3",
+  "scope": "Exact bounded arithmetic and coefficient controls only; the written proof and imported Selberg-Delange theorem establish the asymptotic, not finite extrapolation.",
+  "status": "pass"
+}

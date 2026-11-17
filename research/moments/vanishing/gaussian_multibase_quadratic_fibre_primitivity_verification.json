@@ -1,0 +1,166 @@
+{
+  "status": "passed",
+  "checked_on": "2026-11-17",
+  "scope": "Exact finite controls supporting the written all-degree finite-image and primitive-vacuum classifications for multibase polynomial quadratic fibres, mixed zero-root W-affine phases, and quadratic angular cores with positive-weight perturbations and positive integer Gamma shapes.",
+  "command": ".venv/bin/python research/moments/vanishing/verify_gaussian_multibase_quadratic_fibre_primitivity.py --output research/moments/vanishing/gaussian_multibase_quadratic_fibre_primitivity_verification.json",
+  "environment": {
+    "python": "3.12.3",
+    "sympy": "1.14.0"
+  },
+  "checker_sha256": "53a5f233c463e684a106f047a9af163802cb1d6be89d8b7f11d0768fca2781be",
+  "proof_sha256": "96165336744f01c6e0a049122eca8596508eef99dfd7cae0c033532b0c7f1309",
+  "checks": {
+    "kind": "exact structural identities and bounded independent Wick/source controls",
+    "triangular_multibase": {
+      "source_orders": [
+        0,
+        3
+      ],
+      "markers": 8,
+      "sharp_all_order_cutoff": "3 deg Q; attained by Z1^d"
+    },
+    "variable_scalar_fibre": {
+      "source_orders": [
+        0,
+        3
+      ],
+      "markers": 8,
+      "A": "Z1-Z2-Z2^3; nonzero away from branch"
+    },
+    "coupled_feedback": {
+      "source_orders": [
+        0,
+        3
+      ],
+      "markers": 5,
+      "detJ": "1-t^2"
+    },
+    "nonnilpotent_matrix_fibre": {
+      "source_orders": [
+        0,
+        4
+      ],
+      "markers": 7,
+      "D_branch": [
+        [
+          "1",
+          "t"
+        ],
+        [
+          "t",
+          "1+t^2"
+        ]
+      ]
+    },
+    "exact_boundaries": [
+      "nonpolynomial source root",
+      "inverse-Jacobian pole ladder",
+      "nonzero polynomial generator exponent",
+      "Long pure unsafe linear-base marker",
+      "sharp base-marker degree L+1 for L=1,2"
+    ],
+    "encoding_obstruction": "(ZW)^2 unit coefficient ratio 2(2m+1), radius zero",
+    "quadratic_angular_core": {
+      "kind": "small exact quadratic-angular-core controls",
+      "isotropic_gamma": {
+        "A": 0,
+        "gamma": [
+          "1",
+          "i"
+        ],
+        "phase": "ZW(Y1+iY2)",
+        "unit_and_Y_marker_orders": [
+          0,
+          4
+        ],
+        "balanced_R_Y1_orders": [
+          0,
+          4
+        ]
+      },
+      "quadratic_R_factor": {
+        "phase": "(ZW)^2",
+        "unit_formula": "M0(2t)",
+        "orders": [
+          0,
+          4
+        ]
+      },
+      "pure_unsafe_vector_boundary": {
+        "A": "I2",
+        "eta": -2,
+        "gamma": [
+          "1",
+          "i"
+        ],
+        "u": [
+          "-2",
+          "2i"
+        ],
+        "unit": "1",
+        "Y1": "1+t-(1-2t)^-1",
+        "S_powers": "a!*(1-2t)^a, a=0..3",
+        "direct_orders": [
+          0,
+          3
+        ],
+        "full_image": "K[t,(1-2t)^-1] by the written all-marker formula"
+      },
+      "scope": "Finite Wick and exact source identities; no divergence or finite-image classification is inferred from these finite controls."
+    },
+    "gamma_shapes": {
+      "kind": "bounded exact Gamma-shape source and Wick controls",
+      "shapes": [
+        1,
+        2,
+        3
+      ],
+      "balanced_S_powers": [
+        0,
+        3
+      ],
+      "unit": "(1-2t)^(r-1)",
+      "balanced_source": "(r)_a*(1-2t)^(r+a-1)",
+      "Y1_powers": "D=0..r+1",
+      "pole_factor": "Phi[Y1^D]=(1-2t)^(r-1-D)*q_D(t), q_D(1/2)=(-1)^D",
+      "shape_two_direct_Wick": {
+        "variables": 6,
+        "moment_orders": [
+          0,
+          3
+        ],
+        "markers": [
+          "1",
+          "Y1^2",
+          "S"
+        ]
+      },
+      "scope": "Finite exact controls only. The written Gamma-shape and all-marker arguments prove the unrestricted image and least-bad-marker claims."
+    },
+    "zero_root_mixed_W_affine": {
+      "phase": "Y+Z^2 W Y",
+      "W_marker_powers": [
+        0,
+        3
+      ],
+      "moment_orders": [
+        0,
+        6
+      ],
+      "normalized_formula": "(2d)!/d!*t^d*E[(Y+t)^d]",
+      "gamma_control": {
+        "phase": "ZWY",
+        "unit_coefficient_t^(2m)": "(2m-1)!!",
+        "moment_orders": [
+          0,
+          6
+        ]
+      },
+      "scope": "Finite exact Wick controls. Scalar divergence and the all-degree finite-image classification use the written proof."
+    },
+    "scope": "The written residue, determinant and source-jet proofs establish all-degree classification. These controls do not infer safety or rank from finite moment prefixes."
+  },
+  "independent_replay": false,
+  "formal_verification": false,
+  "external_review": false
+}

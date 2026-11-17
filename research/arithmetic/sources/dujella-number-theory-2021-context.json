@@ -1,0 +1,25 @@
+{
+  "author": "Andrej Dujella",
+  "title": "Number Theory",
+  "publisher": "Skolska knjiga, Zagreb",
+  "year": 2021,
+  "isbn": "978-953-0-30897-8",
+  "translator": "Petra Svob",
+  "identity_url": "https://web.math.pmf.unizg.hr/~duje/numbertheorybook.html",
+  "inspected_date": "2026-11-17",
+  "sources": [
+    {
+      "path": "dujella-number-theory-2021-section15-5.pdf",
+      "url": "https://web.math.pmf.unizg.hr/~duje/pdf/section15-5.pdf",
+      "sha256": "3f0d2fc757ad74c0a4758b463980e196cbed7ffebedcd5d522e321d87eab6260",
+      "locator": "Section15.5, printedpp507-509: 2-isogeny descent rank formula, isogeny-kernel description and quartic15.31"
+    },
+    {
+      "path": "dujella-number-theory-2021-section15-3.pdf",
+      "url": "https://web.math.pmf.unizg.hr/~duje/pdf/section15-3.pdf",
+      "sha256": "02cf4d0550ad601d870d22f9b951094c3476db1a24216cb88b177ebaf4b912f9",
+      "locator": "Section15.3, printedpp486-490: Mordell-Weil Theorem15.3, Lutz-Nagell Theorem15.5 and Proposition15.6"
+    }
+  ],
+  "scope": "Author-hosted textbook treatments inspected at the stated locators. Classical Mordell-Weil, two-isogeny descent and Lutz-Nagell inputs are adopted; original foundational proofs and unrelated chapter claims are not newly verified. The line-rigidity note proves the exact application."
+}

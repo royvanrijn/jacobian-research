@@ -19,6 +19,10 @@ import sympy as sp
 HERE = Path(__file__).resolve().parent
 SOURCE = "sources/wolfs-2024-multiple-orthogonal-2401.08312v1.pdf"
 SOURCE_HASH = "f067406cc088fbad56308b00d8add51117401379504a1109b30442b62cf82182"
+HIGHER_ADJOINT_SOURCE = "HIGHER_GAP_ADJOINT_RANK.tex"
+HIGHER_ADJOINT_HASH = "ec19415938c9b0b92e7d365fb4a4c66b701fdf36d73883b68f7cfb2971d7ec28"
+ARITHMETIC_SOURCE = "ARITHMETIC_FRONTIER_TERMINAL_ORDERS.tex"
+ARITHMETIC_HASH = "7eaedb0f2f96fef505b7045d71c2f2a8ffb972d9a807272e5ac9defc62d22351"
 CUBIC_SOURCE = "CUBIC_ADJOINT_STABILITY_SFC.tex"
 CUBIC_SOURCE_HASH = "ea2510e511545b9dd7a49a0796d75c45575687e60770c3359d38c5bc99cb4125"
 FRACTION_SOURCE = "sources/petreolle-sokal-zhu-1807.03271v2.pdf"
@@ -591,6 +595,219 @@ def gap_two_shape_offset_replay():
             "corrupted_derivative_coefficient_rejected":True,
             "all_gap_two_lower_exponents_proved":False}
 
+
+def mixed_quintic_replay():
+    """Focused exact controls for the mixed rank theorem and 8/9 corollary."""
+    m,MM,gamma,omega,uu = sp.symbols("m M gamma omega u")
+    coeff = [3*m/z,-MM*(MM-1)*(MM+1)/z**3-1,
+             3*MM*(MM-1)/z**2,-3*(MM-1)/z,sp.Integer(1)]
+    def derivative(v):
+        out = [sp.diff(v[i],z)-coeff[i]*v[3] for i in range(4)]
+        for i in range(1,4):
+            out[i] += v[i-1]
+        return [sp.cancel(x) for x in out]
+    seq = [[sp.Integer(1),sp.Integer(0),sp.Integer(0),sp.Integer(0)]]
+    for j in range(5):
+        v = seq[-1];dv = derivative(v)
+        seq.append([sp.cancel((MM+j)*v[i]-z*dv[i]) for i in range(4)])
+    AA = (MM+3)*(MM+4)
+    expected = [rising(MM,5)+(MM*(MM+1)-6*m*(MM+2))*z**3,
+                3*z*(-MM*(MM+1)*AA+(m+1)*z**3),
+                3*MM*z**2*AA,-z**3*AA]
+    assert all(sp.cancel(z**3*seq[2][i]+seq[5][i]-expected[i])==0
+               for i in range(4))
+    _,bb,cc,dd = expected
+    B,B1,B2 = sp.symbols("B B1 B2")
+    ell = -omega+(1-MM)/z
+    f1 = omega*B1+ell*B
+    f2 = omega**2*B2+2*ell*omega*B1+(sp.diff(ell,z)+ell**2)*B
+    U = dd*(coeff[3]*B-f1)-cc*B
+    V = dd*(f2-coeff[3]*f1+(coeff[2]-sp.diff(coeff[3],z))*B)-bb*B
+    xi = omega*z
+    C = (xi+MM+2)*B-xi*B1
+    D = (xi+MM+5)*C-xi*(B+(xi+MM+1)*B1-xi*B2)
+    H = D+3*(m+1)/AA*xi**3*B
+    assert sp.cancel(U+z*z*AA*C)==0
+    residual = sp.together(V+(3*MM+5)/z*U+z*AA*H).as_numer_denom()[0]
+    assert sp.rem(residual,omega**3-1,omega)==0
+
+    def transformed(order,shape):
+        return sp.expand(sum(comb(order,k)*rising(shape,3*k)*z**(3*(order-k))
+                             for k in range(order+1)))
+    literal = 0
+    for order in range(1,5):
+        r = transformed(order,gamma);parameter = gamma+3*order
+        sub = {m:order,MM:parameter}
+        assert sp.cancel(sum(coeff[i].subs(sub)*sp.diff(r,z,i)
+                             for i in range(5)))==0
+        assert sp.expand(rising(gamma,2)*transformed(order+1,gamma+2)
+                         -sum(expected[i].subs(sub)*sp.diff(r,z,i)
+                              for i in range(4)))==0
+        literal += 1
+    def aux(order,shape):
+        values = [sp.Integer(1)]
+        for j in range(order):
+            values.append(sp.expand((z+3*j+shape+2)*values[-1]
+                                     -z*sp.diff(values[-1],z)))
+        return values
+    def cyclic(f):
+        p = sp.Poly(f,z)
+        return [sum(p.nth(j+3*k)*uu**k for k in range(p.degree()//3+1))
+                for j in range(3)]
+    def minors(left,right):
+        return [sp.expand(left[i]*right[j]-left[j]*right[i])
+                for i,j in [(0,1),(0,2),(1,2)]]
+    values = aux(3,gamma)
+    ap = (gamma+6)*(gamma+7)
+    left = cyclic(values[2])
+    right = cyclic(ap*values[3]+6*z**3*values[1])
+    quotient = sp.Poly(3*(gamma+2)**4+36*(gamma+2)**3
+                       +71*(gamma+2)**2+90*(gamma+2)+40,gamma)
+    assert sp.gcd(quotient,sp.Poly(ap*rising(gamma,3),gamma)).degree()==0
+    for minor in minors(left,right):
+        assert sp.rem(minor.subs(uu,-rising(gamma,3)),quotient.as_expr(),gamma)==0
+    bad = cyclic(ap*values[3]+7*z**3*values[1])
+    assert any(sp.rem(x.subs(uu,-rising(gamma,3)),quotient.as_expr(),gamma)!=0
+               for x in minors(left,bad))
+    # Complete finite residues of the reduced A: A^3=A and positive powers
+    # have period2, while gamma=2m+1 depends only on m mod3.
+    for order in range(1,7):
+        c0 = (2*order+3)%3
+        matrix = sp.Matrix([[c0,0,0],[1,(c0-1)%3,0],[0,1,(c0-2)%3]])
+        assert all(int(v)%3==0 for v in matrix**3-matrix)
+        vectors = [matrix**(order+1)*sp.Matrix([1,0,0]),
+                   matrix**(order+2)*sp.Matrix([1,0,0])]
+        assert any(int(v)%3 for v in minors(list(vectors[0]),list(vectors[1])))
+    for terminal in range(9):
+        assert ((5*terminal-1)%9==0)==(terminal==2)
+    tested = [3,4,8,10,12,13]
+    for terminal in tested:
+        assert terminal%9!=2
+        lower = ordinary_normalized_moment(terminal-1,2,3)
+        upper = ordinary_normalized_moment(terminal,2,3)
+        assert sp.gcd(lower,upper).degree()==0
+    return {"generic_Ore_component_identities":4,
+            "generic_stripped_adjoint_identities":2,
+            "literal_symbolic_Gamma_fourth_order_ODEs":literal,
+            "literal_symbolic_Gamma_upper_operator_identities":literal,
+            "algebraic_common_root_rank_control_minors":3,
+            "corrupted_mixed_coefficient_rejected":True,
+            "complete_mod3_reduced_operator_residue_controls":6,
+            "mod9_support_residue_controls":9,
+            "bounded_ordinary_terminal_gcd_controls":tested,
+            "proved_ordinary_terminal_scope":"N>=2 andN not2mod9",
+            "degree_at_most_five_equivalent_remaining_scope":"support{2,5}, N>=11,N2mod9; consecutive gcd only",
+            "remaining_progression_closed":False}
+
+def p3_index_interpolation_replay():
+    """Exact Gauss-tail, congruence and Hensel controls for the interpolation theorem."""
+    T,w=sp.symbols("T w")
+    def vp(a):
+        if a==0:return 10**9
+        q=Fraction(a);n,d=q.numerator,q.denominator;v=0
+        while n%3==0:v+=1;n//=3
+        while d%3==0:v-=1;d//=3
+        return v
+    def vf(k):
+        v=0
+        while k:k//=3;v+=k
+        return v
+    def gauss(p):
+        return min(vp(c) for c in sp.Poly(p,T).all_coeffs() if c)
+    def rise(a,k):
+        out=sp.Poly(1,T,domain=sp.QQ)
+        for j in range(k):out*=sp.Poly(a+j,T,domain=sp.QQ)
+        return out
+    def modpoly(p,modulus):
+        pp=sp.Poly(p,T,w,domain=sp.QQ)
+        return sp.Poly.from_dict({idx:(int(c.p)%modulus)*pow(int(c.q),-1,modulus)%modulus
+                                 for idx,c in pp.terms()},(T,w),domain=sp.ZZ).as_expr()
+    def equalmod(left,right,modulus):
+        return all(int(c)%modulus==0 for c in sp.Poly(left-right,T,w).coeffs())
+    m=1+27*T;h=1+18*T
+    f=[];g=[]
+    for k in range(13):
+        falling=sp.Poly(1,T,domain=sp.QQ)
+        falling_up=sp.Poly(1,T,domain=sp.QQ)
+        unit=sp.Poly(1,T,domain=sp.QQ);unit_up=unit
+        for j in range(k):
+            falling*=sp.Poly(m-j,T,domain=sp.QQ)
+            falling_up*=sp.Poly(m+1-j,T,domain=sp.QQ)
+            unit*=sp.Poly((3*(h+j)+1)*(3*(h+j)+2),T,domain=sp.QQ)
+            unit_up*=sp.Poly((3*(h+j)+2)*(3*(h+j)+4),T,domain=sp.QQ)
+        ff=falling*rise(h,k)*unit/sp.factorial(k)
+        gg=falling_up*rise(h+1,k)*unit_up/sp.factorial(k)
+        f.append(sp.Poly(ff,T).as_expr());g.append(sp.Poly(gg,T).as_expr())
+        assert gauss(f[-1])>=0 and gauss(g[-1])>=0
+    def aval(k):
+        return sum((k-2)//3**r+1 for r in range(1,4))+sum(k//3**r for r in range(1,3))-vf(k)
+    def bval(k):
+        return sum((k-3)//3**r+1 for r in range(1,4))+sum((k+1)//3**r for r in range(1,3))-vf(k)
+    for k in range(2,13):assert gauss(f[k])==aval(k)>=3
+    for k in range(3,13):assert gauss(g[k])==bval(k)>=3
+    assert Fraction(23*13-133,54)>3 and Fraction(23*13-135,54)>3
+    F=modpoly(sum(f[k]*w**k for k in range(13)),27)
+    G=modpoly(sum(g[k]*w**k for k in range(13)),27)
+    assert equalmod(F,1+(20+9*T)*w,27)
+    assert equalmod(G,1+(5+18*T)*w+(6+9*T)*w*w,27)
+    W=4+9*T
+    assert equalmod(F.subs(w,W),0,27)
+    assert equalmod(G.subs(w,W),9*(1-T),27)
+    assert not equalmod((G+9*w).subs(w,W),9*(1-T),27)
+
+    def literal_coeff(n,gamma,K):
+        modulus=3**K;out=[];raw=1
+        for k in range(min(n+1,3*K)):
+            if k:
+                for j in range(3):raw*=gamma+3*(k-1)+j
+            assert raw%3**k==0
+            out.append(comb(n,k)*(raw//3**k)%modulus)
+        return out
+    def ev(c,x,modulus):
+        out=0
+        for a in reversed(c):out=(out*x+a)%modulus
+        return out
+    def residual(index,K):
+        coeff=literal_coeff(index,2*index+1,K);root=1
+        for e in range(2,K+1):
+            modulus=3**e
+            der=sum(k*coeff[k]*pow(root,k-1,modulus) for k in range(1,len(coeff)))%modulus
+            root=(root-ev(coeff,root,modulus)*pow(der,-1,modulus))%modulus
+        assert ev(coeff,root,3**K)==0
+        return ev(literal_coeff(index+1,2*index+3,K),root,3**K)
+    rootT=0;digits=[]
+    for level in range(1,21):
+        place=3**(level-1)
+        candidates=[rootT+j*place for j in range(3)
+                    if residual(1+27*(rootT+j*place),level+2)==0]
+        assert len(candidates)==1
+        rootT=candidates[0];digits.append({"precision":level,"T_residue":rootT})
+    assert rootT%9==7
+    x=sp.Symbol("x")
+    def literal_moment(n,gamma):
+        raw=1;coeff=[]
+        for k in range(n+1):
+            if k:
+                for j in range(3):raw*=gamma+3*(k-1)+j
+            coeff.append(comb(n,k)*raw)
+        return sp.Poly.from_list(coeff[::-1],x,domain=sp.ZZ)
+    endpoint=[literal_moment(28,57),literal_moment(29,59)]
+    assert sp.gcd(*endpoint).degree()==0
+    report={"scope":"actual quintic moment interpolation on m=1+27T, T,w in Z3; not all root-radius branches",
+            "universal_tail_proof":{"lower_gauss_bound":"(23*k-133)/54",
+                                   "upper_gauss_bound":"(23*k-135)/54",
+                                   "cutoff":13,"valuation_at_least":3},
+            "exact_low_Gauss_profiles":{"lower_k2_to12":[aval(k) for k in range(2,13)],
+                                        "upper_k3_to12":[bval(k) for k in range(3,13)]},
+            "coefficientwise_mod27_congruences_verified":True,
+            "two_stage_contraction_proved_in_companion_source":True,
+            "Hensel_digit_controls":digits,
+            "positive_integer_endpoint_T1_orders":[28,29],
+            "endpoint_gcd_degree":0,
+            "T_star_is_ordinary_integer_established":False,
+            "SFC_counterexample":False,"passed":True}
+    return report
+
 def formal_cumulant_fraction_replay():
     """Compare raw-moment cumulants, typed trees, formal ratios and Dyck paths.
 
@@ -699,6 +916,8 @@ def replay():
     assert sha256((HERE/SOURCE).read_bytes()).hexdigest() == SOURCE_HASH
     assert sha256((HERE/FRACTION_SOURCE).read_bytes()).hexdigest() == FRACTION_SOURCE_HASH
     assert sha256((HERE/CUBIC_SOURCE).read_bytes()).hexdigest() == CUBIC_SOURCE_HASH
+    assert sha256((HERE/HIGHER_ADJOINT_SOURCE).read_bytes()).hexdigest() == HIGHER_ADJOINT_HASH
+    assert sha256((HERE/ARITHMETIC_SOURCE).read_bytes()).hexdigest() == ARITHMETIC_HASH
     cases = 0
     for n, d in product(range(2, 7), range(1, 5)):
         v = U(n-1, d, s, z)
@@ -758,6 +977,8 @@ def replay():
     fifth_counts = terminal_five_replay()
     fraction_counts = formal_cumulant_fraction_replay()
     gap_two_counts = gap_two_shape_offset_replay()
+    mixed_counts = mixed_quintic_replay()
+    interpolation_counts = p3_index_interpolation_replay()
     report = {
         "kind": "internal bounded exact replay; universal proof is the TeX source",
         "claims": {
@@ -777,6 +998,12 @@ def replay():
             "gap_two_shape_offsets": "all m>=1,h2,3,gamma>2m-2; transformed adjoint Hurwitz proof",
             "gap_two_lower_exponents_two_three": "all consecutive orders and all positive Gamma shapes",
             "all_gap_two_lower_exponents_closed": False,
+            "mixed_quintic_rank_equivalence": "all m>=1,gamma>0; exactC,H cyclic rank iff common moment",
+            "ordinary_gap_three_lower_two": "all terminalN>=2 withN not2mod9",
+            "ordinary_degree_at_most_five_equivalence": "remaining single support{2,5} atN>=11,N2mod9; infinitely many consecutive tests remain",
+            "ordinary_all_quintic_binomials_closed":False,
+            "p3_physical_index_interpolation_noncollision": "false: unique common zero in the stated integral Tate polydisk",
+            "p3_interpolation_ordinary_integer_index_established":False,
             "formal_cumulant_branched_fraction": "all integer d>=1 and all orders; typed-tree formula over Q[gamma][[x]]",
             "normalized_cumulant_Hankel_nonnegativity": "all finite minors coefficientwise nonnegative in gamma; PSZ Theorem9.12 at ell=m=d-1",
             "branched_fraction_two_shape_resultant_transfer": False,
@@ -797,6 +1024,14 @@ def replay():
         "ordinary_terminal_five_replay": fifth_counts,
         "formal_cumulant_fraction_replay": fraction_counts,
         "gap_two_shape_offset_replay":gap_two_counts,
+        "mixed_quintic_replay":mixed_counts,
+        "p3_index_interpolation_replay":interpolation_counts,
+        "mixed_quintic_sources":[
+            {"file":HIGHER_ADJOINT_SOURCE,"sha256":HIGHER_ADJOINT_HASH,
+             "scope":"gap3 order4 equation, zero concomitants and full rank3; no simplicity assumption"},
+            {"file":ARITHMETIC_SOURCE,"sha256":ARITHMETIC_HASH,
+             "scope":"prime-power lower-one theorem for degree<=5 classification gaps2,3,4"}
+        ],
         "gap_two_adjoint_source":{"file":CUBIC_SOURCE,"sha256":CUBIC_SOURCE_HASH,
             "scope":"Theorem1 simplicity, half-plane bound4 and zero-concomitant identity10; internal elementary derivations",
             "cached_source_hash_checked":True},
@@ -814,7 +1049,7 @@ def replay():
         "source_sha256": {
             name: sha256((HERE/name).read_bytes()).hexdigest()
             for name in ["lower_exponent_initial_and_boundary.tex",
-                         "lower_exponent_initial_and_boundary.py", SOURCE, TERMINAL_FIVE_CERTIFICATE, FRACTION_SOURCE, CUBIC_SOURCE]
+                         "lower_exponent_initial_and_boundary.py", SOURCE, TERMINAL_FIVE_CERTIFICATE, FRACTION_SOURCE, CUBIC_SOURCE, HIGHER_ADJOINT_SOURCE, ARITHMETIC_SOURCE]
         },
         "independent_replay": False,
         "formal_verification": False,

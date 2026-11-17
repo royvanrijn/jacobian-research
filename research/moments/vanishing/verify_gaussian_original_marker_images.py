@@ -40,6 +40,18 @@ def heat(poly, sign=1):
     return sp.expand(total)
 
 
+def standard_heat(poly, variable, sign=1):
+    total = sp.expand(poly)
+    derivative = sp.expand(poly)
+    j = 0
+    while derivative != 0:
+        j += 1
+        derivative = sp.expand(sp.diff(derivative, variable, 2))
+        if derivative != 0:
+            total += sign**j*derivative/(2**j*factorial(j))
+    return sp.expand(total)
+
+
 def dfac_odd(exponent):
     # exponent is the even Gaussian power; return (exponent-1)!!.
     if exponent % 2:
@@ -120,6 +132,30 @@ def checks():
     assert sp.expand(2*z*image_w+image_y**2-2*z*w-y**2) == 0
     assert sp.expand((w-f*y-z*f**2/2).subs({w: image_w, y: image_y}, simultaneous=True)-w) == 0
 
+    # Original ideal images for nonisotropic P=z and independent standard y.
+    # The ideal (z+y) has content one: (z+y)*y*z^m lifts a Hermite polynomial.
+    for m in range(6):
+        h_m = standard_heat(z**m, z).subs(z, t)
+        actual = 0
+        for k in range(11):
+            actual += sp.Rational(dfac_odd(m+k), factorial(k))*t**k
+        predicted = sp.series(sp.exp(t**2/2)*h_m, t, 0, 11).removeO()
+        assert sp.expand(actual-predicted) == 0
+        # E_y[(z+y)*y*z^m]=z^m, including the mass-zero weighted seed.
+        conditional = 0
+        for (iz, iy), scalar in sp.Poly((z+y)*y*z**m, z, y).terms():
+            conditional += scalar*z**iz*dfac_odd(iy)
+        assert sp.expand(conditional-z**m) == 0
+
+    # The ideal (z^2) has a two-dimensional defect under the heat map.
+    ideal_polys = [standard_heat(z**m, z) for m in range(2, 9)]
+    assert sp.Matrix([[poly.coeff(z, j) for j in range(9)]
+                      for poly in ideal_polys]).rank() == 7
+    for m, poly in enumerate(ideal_polys, 2):
+        assert standard_heat(poly, z, -1) == z**m
+    assert sp.rem(standard_heat(sp.Integer(1), z, -1), z**2, z) == 1
+    assert sp.rem(standard_heat(z, z, -1), z**2, z) == z
+
     return {
         "status": "passed",
         "original_monomial_markers": len(originals),
@@ -133,6 +169,10 @@ def checks():
         "heat_inverse_monomials": inverse_count,
         "heat_inverse_degree": [0, 5],
         "generic_affine_shear": "quadratic preservation and inverse checked symbolically",
+        "original_ideal_image_controls": {
+            "transverse_content_one": "P=z,J=(z+y); fixed markers (z+y)*y*z^m, m=0..5, original Wick orders 0..10",
+            "phase_content_degree_two": "P=z,J=(z^2); heat images of z^2..z^8 have rank 7 in degrees <=8; inverse-heat divisibility checked",
+        },
         "scope": "Finite exact replay; universal theorem follows from the written identities.",
     }
 

@@ -1,0 +1,23 @@
+{
+  "claim": "QEP1-global-Ore",
+  "status": "PASS",
+  "checked": [
+    "unimodular differential frame",
+    "both exact inverse vector-field formulas",
+    "R and frame commutators",
+    "Lie bracket [D0,B]=(9h/2)QB",
+    "Chinese-remainder fiber idempotents and preserved ideals",
+    "canonical first-component pair and Laurent second-component pair",
+    "exact generic coefficient chart"
+  ],
+  "hashes": {
+    "EXACT_POSITION_CENTRALIZER_AND_COMPLETION.md": "e1c0e0ec66951325c1abbef5ed9b467a1229f1c3e1b74e2aea9a1cb2b41f9f33",
+    "check_exact_position_centralizer.py": "7982af043d4333c1fb93bb5cd53bf4057622bef8300ad7f215eb5c2bfdbf7e29",
+    "CENTRALIZER_NORMAL_FORM.md": "d6d16b67667041b2813cb6b76befe70b7ecc4b3767213a871e3d169e9122e01c",
+    "QUINTIC_PHASE_AND_BRANCH_OBSTRUCTION.md": "7f23fed53e80380922b737978ea79105a5c05472d526321298fdf8680a47a014"
+  },
+  "boundary": "Unique finite PBW normal form, all-operator centralizer exhaustion and component algebra identifications use the written symbol and Ore arguments; finite identities do not establish the missing Long mates.",
+  "independent_replay": false,
+  "formal_verification": false,
+  "external_review": false
+}

@@ -4,8 +4,8 @@
   "checks": "Full directed edge-cover matrices over F3, every lifted crossing and all fixed/moved meridian-cycle fillings; reverse tree, independent from folded Smith discovery. Exact retained named-census map bijections and four-seed traces.",
   "input_sha256": {
     "seven_sheet_cover_inputs.json": "0cdaed4926bdf03eb399d572da98bf59b7bbbe0ea13ab66106ddc34724a85ef6",
-    "verify_seven_sheet_covers.py": "84cff234e0ad9d2cc4f2c59150f69dd015645efa2a2d1d2e5804bbc729998e5c",
-    "bhattacharjee-still-open.json": "3fae47725d8808d58a6b1a24e36ade4e19121092c92714020ae0e1d0070b1edc"
+    "verify_seven_sheet_covers.py": "fbba9f40f4956c4130da6eca93fd4d874d3661e31da18141d30780408f83ea49",
+    "sources/bhattacharjee-still-open.json": "3fae47725d8808d58a6b1a24e36ade4e19121092c92714020ae0e1d0070b1edc"
   },
   "results": [
     {

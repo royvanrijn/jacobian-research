@@ -1,0 +1,193 @@
+\documentclass[11pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage[hidelinks]{hyperref}
+\newtheorem{theorem}{Theorem}
+\newtheorem{lemma}[theorem]{Lemma}
+\newcommand{\mr}{\operatorname{mr}}
+\newcommand{\F}{\mathbb F}
+\title{Sharp cover certificates beyond finite Coxeter quotients}
+\author{Internal research working proof}
+\date{17 November 2026}
+\begin{document}
+\maketitle
+
+The twenty-four seven-sheeted cover certificates prove meridional rank
+four where no finite Coxeter reflection quotient gives that bound.
+Here the negative assertion has a complete small replay, independent
+of historical generating-set lists and workbook non-hits.
+Infinite Coxeter quotients and their geometric constructions are a
+different question. The computations and proofs below are internal,
+unformalized and externally unreviewed; global priority remains open.
+
+\section{The finite targets}
+
+Let $\mathcal S$ consist of $13a_j$ for
+\[
+ j=373,375,391,392,3264,3266,3275,3276
+\]
+and $13n_j$ for
+\[
+\begin{split}
+ j={}&1005,1006,1007,1011,1012,1013,1043,1044,\\
+     &1045,1046,1047,1048,3842,3844,3855,3856.
+\end{split}
+\]
+Each literal diagram has a retained four-seed propagation certificate.
+The separate seven-sheeted cover theorem proves $\mr(K)=b(K)=4$ on
+this exact set.
+
+\begin{theorem}\label{thm:finite}
+For every $K\in\mathcal S$ there is no epimorphism from its knot group
+onto a finite Coxeter group of Coxeter rank four sending meridians to
+Coxeter reflections. Consequently every finite Coxeter reflection
+lower bound for these knots is at most three, whereas the retained
+branched-cover bound is four.
+\end{theorem}
+
+The word \emph{reflection} is part of the statement. Arbitrary involutions
+in these finite groups are not covered by the exclusion.
+
+\begin{lemma}\label{lem:targets}
+The only rank-four finite Coxeter systems which can receive such a
+knot-group epimorphism are $A_4$, $D_4$ and $H_4$.
+Moreover, a $D_4$ reflection epimorphism would give an $S_3$
+transposition epimorphism.
+\end{lemma}
+\begin{proof}
+In a Coxeter presentation, abelianization identifies generators
+precisely along odd-labelled edges. Its abelianization is therefore
+one copy of $C_2$ per component of that odd-edge graph. A knot group
+has cyclic abelianization, so the odd-edge graph of a nontrivial
+Coxeter quotient must be connected. This excludes reducible systems.
+The finite irreducible rank-four classification leaves
+$A_4,B_4,D_4,F_4,H_4$; see the classification discussion in
+Blair--Kjuchukova--Morrison \cite[Section 2.1 and Section 3.1.1]{bkm}.
+For $B_4$ and $F_4$ the even edge disconnects the odd-edge graph.
+Their abelianization is $C_2^2$, so neither can occur.
+
+In the signed-permutation model of $D_4$, reflections are signed
+transpositions. The quotient $D_4\to S_4$ sends them to transpositions.
+The further quotient $S_4\to S_4/V_4=S_3$ again sends every
+transposition to a transposition. Surjectivity persists under
+composition. The $A_4$ case is $S_5$ with its transpositions.
+\end{proof}
+
+\section{Complete transposition searches}
+
+A fixed four-seed propagation plan determines every arc label from
+its four seed labels. For an $S_r$ transposition coloring, conjugating
+the target permits the first seed to be $(01)$. We exhaust all
+\[
+ \binom r2^3=27,\ 216,\ 1000
+ \qquad (r=3,4,5)
+\]
+ordered tails, including repeated labels. Every crossing is checked
+after propagation. On every one of the twenty-four literal PDs, in
+each of these three degrees, the sole accepted normalized coloring
+is the constant one. In particular there is no surjective coloring
+onto $S_3$, $S_4$ or $S_5$. This excludes $A_4$ and $D_4$ by
+Lemma~\ref{lem:targets}.
+
+The propagation plan is only an enumeration reduction. Knot identity,
+planarity, the one-component condition and every crossing relation
+are separately checked. A different meridional generating family
+cannot evade the enumeration: any knot-group homomorphism still
+assigns labels to these diagram meridians, and the four seeds
+generate them all.
+
+\section{An exact sixty-reflection model for H4}
+
+Put $\phi=(1+\sqrt5)/2$. Use twice unit normals $\mathbf U\in
+\mathbb Z[\phi]^4$. The signed root set consists of
+\[
+\begin{array}{ll}
+(\pm2,0,0,0)&\text{and all coordinate positions},\\
+(\pm1,\pm1,\pm1,\pm1),&\\
+(0,\pm1,\pm\phi,\pm(\phi-1))&\text{and all even coordinate permutations}.
+\end{array}
+\]
+There are $8+16+96=120$ vectors, all with squared norm four.
+Opposite vectors define the same reflection, leaving sixty labels.
+Conjugation of reflections acts on normals by
+\[
+ \mathbf V\longmapsto
+ \mathbf V-\tfrac12(\mathbf U\cdot\mathbf V)\mathbf U.
+\]
+The coefficient lies in $\mathbb Z[\phi]$. The checker verifies this
+integrality, closure on all roots and involutivity exactly, using
+$\phi^2=\phi+1$.
+
+For completeness the model supplies a representation of the
+abstract Coxeter presentation $H_4$ directly. Take
+\[
+\begin{split}
+ \mathbf U_1&=(-2,0,0,0),\\
+ \mathbf U_2&=(\phi,-1,\phi-1,0),\\
+ \mathbf U_3&=(0,\phi,1-\phi,-1),\\
+ \mathbf U_4&=(0,0,0,2).
+\end{split}
+\]
+Their Gram matrix divided by two has diagonal two and adjacent
+entries $-\phi,-1,-1$, with all other off-diagonal entries zero.
+The induced exact permutations of the 120 signed roots have product
+orders five, three, three on consecutive pairs, and two otherwise.
+Thus the defining Coxeter relations hold. The normals are linearly
+independent, so the four generating reflections have zero common
+fixed space. Their conjugation action reaches all sixty root lines.
+
+No faithfulness or computed group order is needed for the exclusion.
+Composing a hypothetical epimorphism onto $H_4$ with this explicit
+representation must generate those four reflections. All reflection
+images are among the sixty root lines, and they are conjugate there.
+The first seed can consequently be fixed to a single root label.
+
+The checker exhausts all $60^3=216000$ ordered tails on each knot.
+Among accepted colorings, the normalized counts are 121 on twelve
+knots, 25 on $13n_{1013},13n_{1045}$, and one on the remaining ten.
+Every accepted seed quartet has determinant zero in $\mathbb Z[\phi]$.
+The reflected arc normals remain in its span. Hence its generated
+reflection group fixes a nonzero vector in $\mathbb R^4$, and cannot
+be the full explicit image, whose common fixed space is zero.
+This excludes the final target and proves Theorem~\ref{thm:finite}.
+
+\section{Verification and limits}
+
+Run \texttt{verify\_finite\_coxeter\_exclusion.py} with standard Python.
+It constructs the exact root model, verifies its Coxeter relations
+and full-rank positive control, and enumerates every seed tail.
+The positive simple-root control also realizes the familiar pretzel
+cycle quotient with weights $(5,3,3,2)$, as in the pretzel construction
+of Baader--Blair--Kjuchukova \cite[Section 2]{bbk}.
+The checker rejects an invalid seed plan and dependent roots in its
+full-rank control.
+
+A second implementation, \texttt{verify\_finite\_coxeter\_modular.py},
+rebuilds arc components and propagation in a different order and
+uses arithmetic at the split primes eleven and thirty-one.
+A scaled-root quartet determinant and its Galois conjugate each
+have absolute value at most sixteen by Hadamard's inequality.
+Their algebraic norm is an integer of absolute value at most 256.
+Vanishing at a prime over eleven and a prime over thirty-one forces
+that integer to be divisible by $341>256$, hence zero. This gives
+an independent exact check of the determinant conclusion.
+The second replay also checks root descriptors and the positive
+control; its receipt states the precise modular-to-integral bridge.
+
+These are complete finite searches on the retained inputs.
+They do not exclude rank-four infinite Coxeter quotients,
+rational-tangle extensions of known constructions, or every
+previously resolved knot family. No global novelty inference follows
+merely from finite Coxeter nonexistence.
+
+\begin{thebibliography}{9}
+\bibitem{bkm} R. Blair, A. Kjuchukova and N. Morrison,
+Coxeter quotients of knot groups through 16 crossings,
+arXiv:2208.09032v1, Sections 2.1 and 3.1.1.
+\url{https://arxiv.org/abs/2208.09032v1}.
+\bibitem{bbk} S. Baader, R. Blair and A. Kjuchukova,
+Coxeter groups and meridional rank of links,
+Math. Ann. 379 (2021), 1533--1551, Section 2.
+\url{https://doi.org/10.1007/s00208-020-02124-z}.
+\end{thebibliography}
+\end{document}

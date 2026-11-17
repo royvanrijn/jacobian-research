@@ -64,21 +64,57 @@ class RetainedDependencyTests(unittest.TestCase):
             "MRC-THREE-PIECE-DOUBLE-COVERS-SHARP-FOUR-THEOREM-1",
             "MRC-MUTATION-COMMON-DOUBLE-COVERS-THM-BLOCKS",
             "MRC-ORIGINAL-SIXTEEN-KNOWN-GRAPH-COVER-FAMILY-THM-FAMILY",
+            "MRC-GENERAL-COVER-THM-TWENTYFOUR",
         )
-        # These conclusions include bridge upper bounds obtained from seed
-        # propagation; algebraic lift lower bounds do not use that conversion.
+        # The published upper-bound theorem is now cached and its coloring
+        # definition checked. Revoking that input must still block equalities,
+        # while leaving purely algebraic lower bounds available.
+        actual = self.graph.evaluate()
+        self.assertEqual(actual["EXT-WIRTINGER-BRIDGE"]["state"], "proved")
+        scenario = self.graph.simulate({"EXT-WIRTINGER-BRIDGE": "stale"})
         for conclusion in equality_claims:
             with self.subTest(conclusion=conclusion):
-                blockers = {blocker.get("id")
-                            for blocker in self.graph.blockers(conclusion)}
-                self.assertIn("EXT-WIRTINGER-BRIDGE", blockers)
-        lift_bound = "MRC-ALL-CHARACTERISTIC-LIFTS-THM-FIELD"
-        self.assertEqual(self.graph.evaluate()[lift_bound]["state"], "proved")
-        scenario = self.graph.simulate({"EXT-WIRTINGER-BRIDGE": "proved"})
-        panel = scenario["nodes"][equality_claims[0]]
-        self.assertEqual(panel["state"], "conditional")
-        self.assertEqual(panel["assumptions"], ["EXT-WIRTINGER-BRIDGE"])
-        self.assertEqual(scenario["nodes"][lift_bound]["state"], "proved")
+                self.assertEqual(actual[conclusion]["state"], "proved")
+                self.assertEqual(scenario["nodes"][conclusion]["state"], "stale")
+        for lower_bound in ("MRC-ALL-CHARACTERISTIC-LIFTS-THM-FIELD",
+                            "MRC-GENERAL-COVER-THM-GENERAL",
+                            "MRC-RESTRICTED-CAPACITY-THM-SEVEN"):
+            with self.subTest(lower_bound=lower_bound):
+                self.assertEqual(actual[lower_bound]["state"], "proved")
+                self.assertEqual(scenario["nodes"][lower_bound]["state"], "proved")
+
+    def test_seven_sheet_data_cannot_be_bypassed_or_invalidate_uniform_bound(self):
+        changed = deepcopy(self.data)
+        source = next(n for n in changed["graph"]["nodes"]
+                      if n["id"] == "SRC-MRC-SEVEN-SHEET-CERTIFICATES")
+        for pin in source["sources"]:
+            if pin["path"].endswith("seven_sheet_cover_inputs.json"):
+                pin["sha256"] = "0" * 64
+        graph = DependencyGraph(changed, ROOT)
+        states = graph.evaluate()
+        self.assertEqual(states["MRC-SEVEN-SHEET-EXAMPLES"]["state"], "stale")
+        self.assertEqual(states["MRC-GENERAL-COVER-THM-GENERAL"]["state"], "proved")
+        self.assertEqual(states["MRC-RESTRICTED-CAPACITY-THM-SEVEN"]["state"], "proved")
+
+    def test_twisted_family_import_does_not_underwrite_the_new_equalities(self):
+        scenario = self.graph.simulate({"EXT-BBK-TWISTED-BRIDGE": "stale"})
+        self.assertEqual(scenario["nodes"]["MRC-TWISTED-FAMILY-SCOPE"]["state"], "stale")
+        self.assertEqual(scenario["nodes"]["MRC-SEVEN-SHEET-EXAMPLES"]["state"], "proved")
+        self.assertEqual(scenario["nodes"]["MRC-FISHNET-AND-PLAT-SCOPE"]["state"], "proved")
+
+    def test_generalized_sum_rank_import_is_separate_from_finite_exclusion(self):
+        scenario = self.graph.simulate({"EXT-GRUSHKO": "stale"})
+        self.assertEqual(scenario["nodes"]["MRC-NORMALIZED-COVER-ADDITIVITY"]["state"], "stale")
+        self.assertEqual(scenario["nodes"]["MRC-NO-SHARP-FINITE-COXETER"]["state"], "proved")
+        self.assertEqual(scenario["nodes"]["MRC-SEVEN-SHEET-EXAMPLES"]["state"], "proved")
+
+    def test_scoped_family_exclusions_do_not_close_global_priority_or_mrc(self):
+        actual = self.graph.evaluate()
+        for result in ("MRC-FISHNET-AND-PLAT-SCOPE", "MRC-TWISTED-FAMILY-SCOPE",
+                       "MRC-NO-SHARP-FINITE-COXETER", "MRC-NORMALIZED-COVER-ADDITIVITY"):
+            self.assertEqual(actual[result]["state"], "proved")
+        self.assertEqual(actual["GOAL-MRC"]["state"], "open")
+        self.assertEqual(actual["GAP-MERIDIONAL-RANK-3"]["state"], "open")
 
     def test_real_multistep_progress_stays_hypothetical_and_preserves_assurance(self):
         before = deepcopy(self.data)

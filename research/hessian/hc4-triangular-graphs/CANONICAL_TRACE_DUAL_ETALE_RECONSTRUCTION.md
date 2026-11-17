@@ -317,3 +317,16 @@ plane-source constraint on its multiplication, or the full marked
 canonical-energy integrality criterion. Merely enlarging the etale algebra,
 normalizing a presentation, or importing a coframe/UFD replacement cannot
 finish that implication. Quartic realization remains retired by Domrina.
+
+The inverse criterion in this section uses no differential IC/source-layer
+claim from Section4. Its finite-etaleness step can also be checked
+directly: after Lambda=S, the finite projective trace form of S is
+perfect. In every geometric fibre, a nilpotent element is orthogonal to
+the whole fibre algebra, since its product with any element is nilpotent
+and has multiplication trace zero. Perfection therefore makes each fibre
+reduced. A finite reduced algebra over an algebraically closed
+characteristic-zero field is a product of that field, so all geometric
+fibres are etale. Finite flatness then makes S/B etale. Affine-space
+cover triviality and the actual birational Keller denominator-removal
+argument give the inverse, as above. The stronger unresolved differential
+input is unnecessary for this purely algebraic criterion.

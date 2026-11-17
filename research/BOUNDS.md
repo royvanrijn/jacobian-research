@@ -8,8 +8,11 @@ Bounds retain their exact domains and assumptions. Numeric comparisons use ident
 
 | Claim | State | Quantity | Domain | Bound | Assumptions |
 |---|---|---|---|---|---|
-| BINOMIAL-INITIAL-BOUNDARY | stale | uniform separated initial terminal order | Nonzero complex X^a(A+B X^d),integers a>=0,d>=1,ordinary factorial shape beta=1 | lower: 5 |  |
-| BINOMIAL-INITIAL-BOUNDARY | stale | uniform separated initial terminal order | Nonzero complex X^a(A+B X^d),integers a>=0,d>=1,every positive Gamma shape beta | lower: 4 |  |
+| HESSIAN-FIRST-SOURCE-FIELD | proved | first-source-velocity-generator-count-over-full-target-normalization | actual complex plane Keller map in a generic monic source direction | upper: 2 |  |
+| HESSIAN-FIRST-SOURCE-FIELD | proved | first-source-derivative-generator-count-over-full-target-normalization | complex polynomial Keller map in n variables; {"n": "positive source dimension"} | upper: n^2 |  |
+| HESSIAN-FIRST-SOURCE-FIELD | proved | Hessian-entry-generator-count-over-gradient-normalization | complex four-variable polynomial potential with nonzero constant Hessian determinant | upper: 10 |  |
+| BINOMIAL-INITIAL-BOUNDARY | proved | uniform separated initial terminal order | Nonzero complex X^a(A+B X^d),integers a>=0,d>=1,ordinary factorial shape beta=1 | lower: 5 |  |
+| BINOMIAL-INITIAL-BOUNDARY | proved | uniform separated initial terminal order | Nonzero complex X^a(A+B X^d),integers a>=0,d>=1,every positive Gamma shape beta | lower: 4 |  |
 | DIX-QCR1 | proved | total-degree | classical fourth image completing the fixed retained Long triple | lower: 23 |  |
 | DIX-QCR1 | proved | momentum-order | classical fourth image completing the fixed retained Long triple | exact: 5 |  |
 | DIX-QPH1 | proved | h-coefficient-total-spatial-degree | specific positive scalar branch of quintic phase Long lift, coefficient h^n for n>=2 | exact: 10*n-1 |  |
@@ -39,11 +42,11 @@ Bounds retain their exact domains and assumptions. Numeric comparisons use ident
 | FACT-ARITHMETIC-FRONTIER-TERMINAL-ORDERS-THM-PRECISIONOBSTRUCTION | proved | comparison discriminant valuation | Same precision-obstruction family N=9h+4,h>=0,3 does not divide h+1 | lower: N+1>3 |  |
 | FACT-GAP-THREE-HURWITZ-THM-BLOCK | proved | whole infinite H3 total-nonnegativity terminal range | Actual W_(n,n+beta-1),every real beta>=0 | range: 2<=n<=16 |  |
 | FACT-GAP-THREE-HURWITZ-THM-INITIAL | proved | uniform positive initial Euclidean pivots | Actual gap-three family,every integer n>=4 and real beta>=0 | lower: 9 |  |
-| FACT-LOWER-EXPONENT-INITIAL-AND-BOUNDARY-COR-INITIAL | stale | uniform separated initial terminal order | Nonzero complex X^a(A+B X^d),integers a>=0,d>=1,every positive Gamma shape beta | lower: 4 |  |
-| FACT-LOWER-EXPONENT-INITIAL-AND-BOUNDARY-THM-GAPBOUND | stale | sufficient binomial gap | Ordinary factorial M_(j,a,d),integer a>=1,1<=j<=N,N>=2 | upper: D_N=2(N-1)ceil(log2(4N(N-1))) |  |
-| FACT-LOWER-EXPONENT-INITIAL-AND-BOUNDARY-THM-LOWERBOUND | stale | sufficient lower exponent | Ordinary factorial M_(j,a,d),fixed N>=2,d>=2,1<=j<=N | upper: A(N,d) as defined in thm:lowerbound |  |
-| FACT-LOWER-EXPONENT-INITIAL-AND-BOUNDARY-COR-RECTANGLE | stale | remaining failure domain | Ordinary factorial binomial pairwise coprimality through fixed N>=2,integer a>=1,d>=2 | range: 1<=a<A_N;2<=d<D_N;A_N=(N D_N^2+D_N)(4N+1)^N |  |
-| FACT-LOWER-EXPONENT-INITIAL-AND-BOUNDARY-THM-SPARSE | stale | binomial squarefree and pairwise-coprime criterion | Ordinary factorial binomials,integers a>=1,d>=2,N>=2,orders1..N | criterion: d^2>=4(a+d)log(8N) |  |
+| FACT-LOWER-EXPONENT-INITIAL-AND-BOUNDARY-COR-INITIAL | proved | uniform separated initial terminal order | Nonzero complex X^a(A+B X^d),integers a>=0,d>=1,every positive Gamma shape beta | lower: 4 |  |
+| FACT-LOWER-EXPONENT-INITIAL-AND-BOUNDARY-THM-GAPBOUND | proved | sufficient binomial gap | Ordinary factorial M_(j,a,d),integer a>=1,1<=j<=N,N>=2 | upper: D_N=2(N-1)ceil(log2(4N(N-1))) |  |
+| FACT-LOWER-EXPONENT-INITIAL-AND-BOUNDARY-THM-LOWERBOUND | proved | sufficient lower exponent | Ordinary factorial M_(j,a,d),fixed N>=2,d>=2,1<=j<=N | upper: A(N,d) as defined in thm:lowerbound |  |
+| FACT-LOWER-EXPONENT-INITIAL-AND-BOUNDARY-COR-RECTANGLE | proved | remaining failure domain | Ordinary factorial binomial pairwise coprimality through fixed N>=2,integer a>=1,d>=2 | range: 1<=a<A_N;2<=d<D_N;A_N=(N D_N^2+D_N)(4N+1)^N |  |
+| FACT-LOWER-EXPONENT-INITIAL-AND-BOUNDARY-THM-SPARSE | proved | binomial squarefree and pairwise-coprime criterion | Ordinary factorial binomials,integers a>=1,d>=2,N>=2,orders1..N | criterion: d^2>=4(a+d)log(8N) |  |
 | MOM-MANUSCRIPT-THM-CUBIC | proved | uniform Gaussian mixed cutoff slope | Pure complex ternary phases of total degree<=3,arbitrary fixed polynomial marker Q | exact: 3 |  |
 | IMAGE2-CUBIC-ODD-CLASSIFICATION | proved | uniform Image mixed cutoff slope | Pure odd sphere cubic stratum,lifted to balanced two-pair Image phases,arbitrary multiplier Q | exact: 1 |  |
 | IMAGE2-CUBIC-TEN-PARAMETERS | proved | sufficient pure-moment prefix | Exact ten-parameter sphere cubic slice,all complex coefficients including a=0 | upper: 8 |  |
@@ -57,15 +60,15 @@ Bounds retain their exact domains and assumptions. Numeric comparisons use ident
 | MRC-PERMUTATION-INDEX-BOUND | proved | meridional rank | Knot with a transitive degree-r permutation quotient and meridian index delta=r-number_of_cycles | lower: ceil((r-1)/delta) |  |
 | MRC-ALL-CHARACTERISTIC-BETTI-GAIN | proved | group generator rank | Finitely generated group G,index-r subgroup H,r>=2,any coefficient field | lower: 1+ceil((b1(H)-b1(G))/(r-1)) |  |
 | MRC-WHITEHEAD-TORUS-APPLICATION | open | meridional rank and bridge number | Cited fixed untwisted Whitehead pattern iterated N times on coprime torus knot T(p,q),2<=p<q | exact: p*2^N |  |
-| FACT-LOWER-EXPONENT-INITIAL-AND-BOUNDARY-THM-ORDERED-INITIAL | stale | uniform separated initial terminal order | Nonzero complex X^a(A+B X^d),integers a>=0,d>=1,every positive Gamma shape beta | lower: 4 |  |
-| FACT-LOWER-EXPONENT-INITIAL-AND-BOUNDARY-THM-GAMMA-CONVOLUTION-OBSTRUCTION | stale | first displayed shared-root terminal order | Exact convolution X=Gamma(125/9,1/2)+Gamma(1/3249,19/2),independent,shape-scale convention | exact: 5 |  |
-| FACT-FINITE-GAMMA-CONVOLUTION-OBSTRUCTION | stale | terminal-order-of-a-consecutive-common-root-example | finite positive-shape positive-scale Gamma-convolution Appell polynomials | upper: 5 |  |
-| FACT-FINITE-GAMMA-CONVOLUTION-OBSTRUCTION | stale | common-factor-degree | the displayed explicit two-Gamma convolution, Pi4 andPi5 | exact: 2 |  |
+| FACT-LOWER-EXPONENT-INITIAL-AND-BOUNDARY-THM-ORDERED-INITIAL | proved | uniform separated initial terminal order | Nonzero complex X^a(A+B X^d),integers a>=0,d>=1,every positive Gamma shape beta | lower: 4 |  |
+| FACT-LOWER-EXPONENT-INITIAL-AND-BOUNDARY-THM-GAMMA-CONVOLUTION-OBSTRUCTION | proved | first displayed shared-root terminal order | Exact convolution X=Gamma(125/9,1/2)+Gamma(1/3249,19/2),independent,shape-scale convention | exact: 5 |  |
+| FACT-FINITE-GAMMA-CONVOLUTION-OBSTRUCTION | proved | terminal-order-of-a-consecutive-common-root-example | finite positive-shape positive-scale Gamma-convolution Appell polynomials | upper: 5 |  |
+| FACT-FINITE-GAMMA-CONVOLUTION-OBSTRUCTION | proved | common-factor-degree | the displayed explicit two-Gamma convolution, Pi4 andPi5 | exact: 2 |  |
 | GAUSSIAN-RESONANT-QUARTIC-SIX-PARAMETERS | proved | sufficient-pure-moment-prefix-length | the displayed six-parameter resonant Gaussianquartic family | upper: 8 |  |
 | GAUSSIAN-RESONANT-QUARTIC-SIX-PARAMETERS | proved | sufficient-test-moment-orders | the displayed six-parameter resonant Gaussianquartic family | criterion: {2,3,4,5,6,8} |  |
 | GAUSSIAN-RESONANT-QUARTIC-SIX-PARAMETERS | proved | mixed-moment-cutoff-slope | pure members ofthe displayed six-parameter resonant Gaussianquartic family, marker ordinarytotaldegree | upper: 1 |  |
-| FACT-LOWER-EXPONENT-INITIAL-AND-BOUNDARY-THM-ORDINARY-FIFTH | stale | uniform separated initial terminal order | Nonzero complex X^a(A+B X^d),integers a>=0,d>=1,ordinary factorial shape beta=1 | lower: 5 |  |
-| FACTORIAL-ORDINARY-INITIAL-FOUR | stale | uniform separated initial terminal order | Nonzero complex X^a(A+B X^d),integers a>=0,d>=1,ordinary factorial shape beta=1 | lower: 4 |  |
+| FACT-LOWER-EXPONENT-INITIAL-AND-BOUNDARY-THM-ORDINARY-FIFTH | proved | uniform separated initial terminal order | Nonzero complex X^a(A+B X^d),integers a>=0,d>=1,ordinary factorial shape beta=1 | lower: 5 |  |
+| FACTORIAL-ORDINARY-INITIAL-FOUR | proved | uniform separated initial terminal order | Nonzero complex X^a(A+B X^d),integers a>=0,d>=1,ordinary factorial shape beta=1 | lower: 4 |  |
 | GAUSSIAN-MOVING-NULL-SOURCE-NU1-EXPLICIT-BOUND | proved | sufficient-nonzero-moment-order | P=Z^3W²+ZWY-W/2+k(Z), k(0)=0, A=sum absolute nonconstant coefficients ofk | criterion: 2*q for any integer q>=1 with 2*q>exp(A)-1 |  |
 | GAUSSIAN-MOVING-NULL-SOURCE-NU1-EXPLICIT-BOUND | proved | relative-seed-coefficient-error | nu=1 monomial moving-null-source family at t^(2q), k(0)=0 | upper: (exp(A)-1)*q/[2*(2*q-1)^2] |  |
 | FACT-ARITHMETIC-FRONTIER-TERMINAL-ORDERS-THM-RESULTANT-HURWITZ-COUNTEREXAMPLE | proved | degree of fixed unshifted resultant | R_(8,5)(a)=Res_t(F_(8,5),F_(7,5)),F_(j,5)=sum binom(j,k)*(a*j+1)_(5*k)*t^k | exact: 280 |  |
@@ -83,9 +86,9 @@ Bounds retain their exact domains and assumptions. Numeric comparisons use ident
 | IMAGE-MINIMUM-PAIR-DIMENSION | proved | least failing contraction pair dimension | Special Image problem over characteristic-zero fields, polynomial ring in xi and z pairs, unrestricted polynomial degree | exact: 2 |  |
 | HOPF-HEIGHT-CRITICAL-IMAGE-FAILURE | proved | minimal balanced lift degree | Critical real signed-height one-profile family(7.1),q=r>=1,n=deg(P),nonzero real gamma,P divisible by(1-w^2)^r | exact: 2*n |  |
 | HOPF-HEIGHT-SUBCRITICAL-IMAGE-CUTOFF | proved | sufficient subcritical signed-height Image cutoff | Real signed-height one-profile family(7.1),1<=q<r,arbitrary nonzero original polynomial multiplier Q | upper: 2*deg_z(Q)+1 |  |
-| FACT-LOWER-EXPONENT-INITIAL-AND-BOUNDARY-THM-FORMAL-CUMULANT-FRACTION | stale | degree-in-shape-parameter | Gamma-power normalized cumulant forest coefficient u_n, d>=1,n>=0 | exact: (d-1)*n |  |
-| FACT-LOWER-EXPONENT-INITIAL-AND-BOUNDARY-THM-FORMAL-CUMULANT-FRACTION | stale | degree-in-shape-parameter | Gamma-power cumulant kappa_r, d>=1,r>=1 | exact: (d-1)*r+1 |  |
-| FACT-LOWER-EXPONENT-INITIAL-AND-BOUNDARY-THM-FORMAL-CUMULANT-FRACTION | stale | leading-coefficient-in-shape-parameter | Gamma-power normalized cumulant forest coefficient u_n | exact: d^n/(n+1)*binom(d*(n+1),n) |  |
+| FACT-LOWER-EXPONENT-INITIAL-AND-BOUNDARY-THM-FORMAL-CUMULANT-FRACTION | proved | degree-in-shape-parameter | Gamma-power normalized cumulant forest coefficient u_n, d>=1,n>=0 | exact: (d-1)*n |  |
+| FACT-LOWER-EXPONENT-INITIAL-AND-BOUNDARY-THM-FORMAL-CUMULANT-FRACTION | proved | degree-in-shape-parameter | Gamma-power cumulant kappa_r, d>=1,r>=1 | exact: (d-1)*r+1 |  |
+| FACT-LOWER-EXPONENT-INITIAL-AND-BOUNDARY-THM-FORMAL-CUMULANT-FRACTION | proved | leading-coefficient-in-shape-parameter | Gamma-power normalized cumulant forest coefficient u_n | exact: d^n/(n+1)*binom(d*(n+1),n) |  |
 | FACT-ARITHMETIC-FRONTIER-TERMINAL-ORDERS-LEM-CUBIC-UNIT-OPERATOR | proved | retained-logarithm-summand-orders | exact cubic factorial unit diagonal operator modulo3^K, q,k>=0,c=0,1,2 | criterion: retain r>=1 with 2*r-v3(r)<K and ell>=2 with ell-v3(ell)<K |  |
 | FACT-ARITHMETIC-FRONTIER-TERMINAL-ORDERS-LEM-CUBIC-UNIT-OPERATOR | proved | retained-exponential-powers | exact cubic factorial unit diagonal operator modulo3^K | criterion: retain j>=0 with 2*j-v3(j!)<K |  |
 | FACT-ARITHMETIC-FRONTIER-TERMINAL-ORDERS-LEM-CUBIC-UNIT-OPERATOR | proved | polynomial-degree-in-k | rth integer-valued cubic factorial-unit log summand at fixed q | upper: 2*r+1 |  |
@@ -97,7 +100,40 @@ Bounds retain their exact domains and assumptions. Numeric comparisons use ident
 | DIX-QPN1 | proved | good-prime gate for mixed p-power witness | QPN1 strict mixed polynomial support region with anchor momentum n>=2 over good finite-field reduction; {"g*mu*h": "nonzero", "n": ">=2"} | criterion: p prime, p>2*n+1 |  |
 | DIX-QPN1 | proved | mixed p-power witness coefficient | QPN1 strict mixed polynomial support region at good prime p>2*n+1; {"g*mu*h": "nonzero", "n": ">=2"} | exact: [v^(-2p)*a^((n-1)p-(2n+1))]S^p=(n^2-1)/(24n)*g^(p-2)*mu^2*h^(p+1) !=0 |  |
 | MRC-GENERAL-COVER-THM-GENERAL | proved | meridional rank | Classical knot with a fixed transitive degree-n permutation action, c meridian cycles, Y branched completion, n>=2 | lower: ceil((n-1+rank(pi1(Y)))/(n-c)) |  |
+| FACT-ARITHMETIC-FRONTIER-TERMINAL-ORDERS-LEM-FROBENIUS-NONCOLLISION | proved | reduced-relation-polynomial-degree | Stage s primitive P over the valuation ring; ordinary degree unrestricted | upper: p^s-2 |  |
+| FACT-ARITHMETIC-FRONTIER-TERMINAL-ORDERS-LEM-FROBENIUS-NONCOLLISION | proved | cyclic-argument-p-adic-valuation | Stage-s Frobenius noncollision invariant | lower: (p^s-1)/(p-1) |  |
+| FACT-ARITHMETIC-FRONTIER-TERMINAL-ORDERS-THM-PRIME-POWER-LOWER-ONE | proved | prime-power-terminal-determinant-p-adic-valuation | All primes p,s>=1,n>=1,q=p^s,gamma inZ_p; D the fixed-degree cyclic terminal determinant | exact: ((p^s-1)/(p-1)-s)*binom(n,2) |  |
+| ARITH-SECOND-LINE-COUNT-ORDER | proved | second-line rational Hasse targets | Fixed Phi over Q, actual projective target height<=B, B tending to infinity; exact family is in node scope.; {"height": "actual target projective height"} | range: Theta(B/log B) |  |
+| ARITH-ALL-LINE-TARGET-COUNT | proved | all original-line rational targets | Fixed Phi over Q, actual projective target height<=B, B tending to infinity; exact family is in node scope.; {"height": "actual target projective height"} | exact: 143 B^2/(864 zeta(2))+O(B log(2B)) |  |
+| ARITH-GLOBAL-LINE-COUNT | proved | globally soluble original-line targets | Fixed Phi over Q, actual projective target height<=B, B tending to infinity; exact family is in node scope.; {"height": "actual target projective height"} | exact: Cglob B^(2/3)+O(B^(1/3) log(2B)) |  |
+| ARITH-INTEGER-LINE-COUNT | proved | signed integer-parameter original-line Hasse targets | Fixed Phi over Q, actual projective target height<=B, B tending to infinity; exact family is in node scope.; {"height": "actual target projective height"} | exact: Cint B/sqrt(log B) (1+kappa/log B)+O(B/log(B)^(5/2)) |  |
+| ARITH-SQUAREFREE-ALGEBRA-COUNT | proved | squarefree split-supported fibre-algebra classes | Fixed Phi over Q, actual projective target height<=B, B tending to infinity; exact family is in node scope.; {"height": "actual target projective height"} | exact: Dsf(B)~Csf B^2/log B, Csf=55 G3(1)^2/(55296 pi) product_split(1-3p^-2+2p^-3) |  |
+| ARITH-DISTINCT-ALGEBRA-COUNT-ORDER | proved | all distinct original-line Hasse fibre-algebra classes | Fixed Phi over Q, actual projective target height<=B, B tending to infinity; exact family is in node scope.; {"height": "actual target projective height"} | range: Theta(B^2/log B) |  |
+| DIX-QPN2 | proved | closed-cone p-power coefficient valuation | QPN2 closed support, unit anchors g,mu and regular coefficients at good prime p>2n+1, eta=t^e*u; {"e": ">=1", "g,mu,u": "units", "n": ">=2"} | exact: ord_t([v^(-2p)*a^((n-1)p-(2n+1))]S^p)=e*(p+1) |  |
+| DIX-QPN2 | proved | closed Newton support finite-mate exclusion | Regular finite scalar deformations in L(v)[a;eta v^-1 partial_v], unit anchors a^n and v, n>=2; {"k,j": ">=0", "n": ">=2"} | criterion: even v^(2k): j-k<=n; odd v^(2k+1): j<=k; eta of positive parameter order |  |
+| DIX-QSO34-LONG-ORDER | proved | generic partner differential order | h-regular finite exact-R scalar Long pair with classical orders(2,3), generic first order3 and nonzero canonical commutator; {"classical_orders": "2,3", "generic_first_order": 3} | lower: 5 |  |
+| DIX-QER1-TRACE | proved | normalized trace of identity | Every scalar weighted Euler level for A3 weights(1,-1,-2), characteristic-zero K, h!=0; {"lambda": "arbitrary scalar"} | exact: 1 |  |
+| JAC-PF164 | open | degree-of-even-ruling-leading-coefficient | actual complex whole-plane Keller target of ruling6 in complete marked quadratic source-image class | lower: 16 |  |
+| JAC-PF164 | open | degree-of-even-ruling-leading-coefficient | actual complex whole-plane Keller target of ruling6 in complete marked quadratic source-image class with no A-type pole divisor | lower: 48 |  |
+| JAC-PF164 | open | intermediate-generic-map-degree | actual complex whole-plane Keller target of ruling6 in complete marked quadratic source-image class; {"D": "deg_u b3", "m": "deg M>=2"} | upper: floor(D/2)-5 |  |
+| JAC-PF164 | open | intermediate-generic-map-degree | actual complex whole-plane Keller target of ruling6 in complete marked quadratic source-image class with no A-type pole divisor; {"D": "deg_u b3", "m": "deg M>=2"} | upper: floor(D/4)-4 |  |
+| JAC-PF164 | open | u-projection-infinity-ramification-index | actual complex whole-plane Keller target of ruling6 in complete marked quadratic source-image class | upper: 2 |  |
+| JAC-PF164 | open | t-projection-infinity-ramification-index | actual complex whole-plane Keller target of ruling6 in complete marked quadratic source-image class | exact: 1 |  |
+| JAC-PF164 | open | original-source-points-over-t-infinity | actual complex whole-plane Keller target of ruling6 in complete marked quadratic source-image class | exact: 6 |  |
+| MRC-TREE-COXETER-THM-DET | proved | prime factor count of knot determinant with multiplicity | A classical knot admitting a reflection epimorphism onto a Coxeter group with finite-relation graph a tree on r vertices and all edge labels at least2; {"rank": "r"} | lower: r-1 |  |
+| MRC-TWISTED-CROSSCAP-PROP-CROSSCAP | proved | crosscap number | A standard BBK21 twisted knot with even bridge number b; {"bridge": "b", "parity": "even"} | upper: b-1 |  |
+| MRC-FINITE-COXETER-THM-FINITE | proved | maximum finite Coxeter reflection rank | The24 exact seven-sheet sharp-four knots in FINITE_COXETER_EXCLUSION | upper: 3 |  |
+| MRC-INVOLUTION-SUMS-THM-ADDITIVITY | proved | normalized involutory branched-cover rank invariant | Any classical knots K,L and all finite transitive involutory meridian covers | exact: I(K#L)=I(K)+I(L)-1 |  |
+| MRC-INVOLUTION-SUMS-THM-ADDITIVITY | proved | normalized involutory branched-cover homology invariant | Any classical knots K,L with one fixed coefficient field k on every cover; {"field": "fixed k"} | exact: I_k(K#L)=I_k(K)+I_k(L)-1 |  |
+| MRC-INVOLUTION-SUMS-SHARP-FAMILIES | proved | meridional rank and bridge number | One of the24 retained seven-sheet seeds K connected summed with s trefoils, integer s>=0; {"s": "nonnegative integer"} | exact: 4+s |  |
+| ARITH-SECOND-LINE-COUNT-ASYMPTOTIC | proved | second-line Hasse targets | Fixed Phi over Q, exact height/order and target family in node scope, B tending to infinity. | exact: N2(B)~C2 B/logB |  |
+| ARITH-SECOND-LINE-GLOBAL-COUNT | proved | second-line globally soluble targets | Fixed Phi over Q, exact height/order and target family in node scope, B tending to infinity. | exact: G2(B)=CG2 B^(2/3)+O(B^(1/3)logB) |  |
+| ARITH-DISTINCT-ALGEBRA-COUNT-ASYMPTOTIC | proved | distinct original-line Hasse fibre algebras | Fixed Phi over Q, exact height/order and target family in node scope, B tending to infinity. | exact: D(B)~Cstar B^2/logB; Cstar=lim C(Pz), with uniform square-prime tail |  |
+| ARITH-AMBIENT-LOCAL-GLOBAL-COUNT-ORDER | proved | ambient rational local/global and Hasse targets | Fixed Phi over Q, exact height/order and target family in node scope, B tending to infinity. | range: G(B),L(B)=Theta(B^3); B^2/logB<<A(B)<<B^3 |  |
+| ARITH-AMBIENT-INTEGER-TARGET-BOUNDS | proved | ambient integer-target local and Hasse counts | Fixed Phi over Q, exact height/order and target family in node scope, B tending to infinity. | upper: AZ(B)<<B^(23/10)logB; LZ(B)<<B^(5/2)logB |  |
+| FACT-LOWER-EXPONENT-INITIAL-AND-BOUNDARY-THM-P3-INDEX-INTERPOLATION-OBSTRUCTION | proved | lower-interpolated-coefficient-Gauss-valuation | k>=2, coefficient f_k(tau) of w^k in the stated F | lower: (23*k-133)/54 |  |
+| FACT-LOWER-EXPONENT-INITIAL-AND-BOUNDARY-THM-P3-INDEX-INTERPOLATION-OBSTRUCTION | proved | upper-interpolated-coefficient-Gauss-valuation | k>=3, coefficient g_k(tau) of w^k in the stated G | lower: (23*k-135)/54 |  |
 
 ## Comparable improvements
 
-No weaker registered numeric bound has an available stronger bound in an identical domain.
+- FACTORIAL-ORDINARY-INITIAL-FOUR: 4 -> 5 via BINOMIAL-INITIAL-BOUNDARY, FACT-LOWER-EXPONENT-INITIAL-AND-BOUNDARY-THM-ORDINARY-FIFTH; structural consumers: none.

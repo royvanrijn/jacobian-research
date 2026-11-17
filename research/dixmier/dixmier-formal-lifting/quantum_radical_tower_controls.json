@@ -1,0 +1,365 @@
+{
+  "claim": "QRG1",
+  "status": "PASS",
+  "environment": {
+    "python": "3.12.3",
+    "sympy": "1.14.0"
+  },
+  "Long_cubic": {
+    "polynomial": "a**3*r - 2*a**2 + a*s + 4*t",
+    "discriminant": "-4*(108*r**2*t**2 + r*s**3 + 36*r*s*t - s**2 - 32*t)",
+    "discriminant_as_quadratic_in_t": "-256*(3*r*s - 4)**3",
+    "delta_squarefree_in_t": true,
+    "geometric_normal_closure": "S3, by written cubic argument"
+  },
+  "actual_finite_monomial_covers": [
+    {
+      "k": 2,
+      "P": [
+        [
+          2,
+          0,
+          "1"
+        ]
+      ],
+      "Q": [
+        [
+          -1,
+          1,
+          "1/2"
+        ]
+      ],
+      "parameter_pole_shear_Q": [
+        [
+          -1,
+          1,
+          "1/2"
+        ],
+        [
+          2,
+          0,
+          "1/(2*h**3)"
+        ]
+      ],
+      "canonical_commutator": "h",
+      "internal_root": "v^k=P",
+      "ambient_b_recovery": "b=k*v^(k-1)*Q"
+    },
+    {
+      "k": 3,
+      "P": [
+        [
+          3,
+          0,
+          "1"
+        ]
+      ],
+      "Q": [
+        [
+          -2,
+          1,
+          "1/3"
+        ]
+      ],
+      "parameter_pole_shear_Q": [
+        [
+          -2,
+          1,
+          "1/3"
+        ],
+        [
+          1,
+          0,
+          "1/(3*h**3)"
+        ]
+      ],
+      "canonical_commutator": "h",
+      "internal_root": "v^k=P",
+      "ambient_b_recovery": "b=k*v^(k-1)*Q"
+    },
+    {
+      "k": 4,
+      "P": [
+        [
+          4,
+          0,
+          "1"
+        ]
+      ],
+      "Q": [
+        [
+          -3,
+          1,
+          "1/4"
+        ]
+      ],
+      "parameter_pole_shear_Q": [
+        [
+          -3,
+          1,
+          "1/4"
+        ],
+        [
+          0,
+          0,
+          "1/(4*h**3)"
+        ]
+      ],
+      "canonical_commutator": "h",
+      "internal_root": "v^k=P",
+      "ambient_b_recovery": "b=k*v^(k-1)*Q"
+    },
+    {
+      "k": 5,
+      "P": [
+        [
+          5,
+          0,
+          "1"
+        ]
+      ],
+      "Q": [
+        [
+          -4,
+          1,
+          "1/5"
+        ]
+      ],
+      "parameter_pole_shear_Q": [
+        [
+          -4,
+          1,
+          "1/5"
+        ],
+        [
+          -1,
+          0,
+          "1/(5*h**3)"
+        ]
+      ],
+      "canonical_commutator": "h",
+      "internal_root": "v^k=P",
+      "ambient_b_recovery": "b=k*v^(k-1)*Q"
+    },
+    {
+      "k": 6,
+      "P": [
+        [
+          6,
+          0,
+          "1"
+        ]
+      ],
+      "Q": [
+        [
+          -5,
+          1,
+          "1/6"
+        ]
+      ],
+      "parameter_pole_shear_Q": [
+        [
+          -5,
+          1,
+          "1/6"
+        ],
+        [
+          -2,
+          0,
+          "1/(6*h**3)"
+        ]
+      ],
+      "canonical_commutator": "h",
+      "internal_root": "v^k=P",
+      "ambient_b_recovery": "b=k*v^(k-1)*Q"
+    },
+    {
+      "k": 7,
+      "P": [
+        [
+          7,
+          0,
+          "1"
+        ]
+      ],
+      "Q": [
+        [
+          -6,
+          1,
+          "1/7"
+        ]
+      ],
+      "parameter_pole_shear_Q": [
+        [
+          -6,
+          1,
+          "1/7"
+        ],
+        [
+          -3,
+          0,
+          "1/(7*h**3)"
+        ]
+      ],
+      "canonical_commutator": "h",
+      "internal_root": "v^k=P",
+      "ambient_b_recovery": "b=k*v^(k-1)*Q"
+    }
+  ],
+  "noncommutative_Hensel": {
+    "root": "theta=v+h*b",
+    "radicand": [
+      [
+        0,
+        0,
+        "h**2"
+      ],
+      [
+        0,
+        2,
+        "h**2"
+      ],
+      [
+        1,
+        1,
+        "2*h"
+      ],
+      [
+        2,
+        0,
+        "1"
+      ]
+    ],
+    "initial_lift": "v",
+    "first_correction": "h*b",
+    "radicand_noncentral": true,
+    "finite_uniqueness_controls": [
+      {
+        "k": 2,
+        "first_difference_order": 1,
+        "leading_coefficient": "k*v^(k-1)*U",
+        "passed": true
+      },
+      {
+        "k": 2,
+        "first_difference_order": 2,
+        "leading_coefficient": "k*v^(k-1)*U",
+        "passed": true
+      },
+      {
+        "k": 2,
+        "first_difference_order": 3,
+        "leading_coefficient": "k*v^(k-1)*U",
+        "passed": true
+      },
+      {
+        "k": 3,
+        "first_difference_order": 1,
+        "leading_coefficient": "k*v^(k-1)*U",
+        "passed": true
+      },
+      {
+        "k": 3,
+        "first_difference_order": 2,
+        "leading_coefficient": "k*v^(k-1)*U",
+        "passed": true
+      },
+      {
+        "k": 3,
+        "first_difference_order": 3,
+        "leading_coefficient": "k*v^(k-1)*U",
+        "passed": true
+      },
+      {
+        "k": 4,
+        "first_difference_order": 1,
+        "leading_coefficient": "k*v^(k-1)*U",
+        "passed": true
+      },
+      {
+        "k": 4,
+        "first_difference_order": 2,
+        "leading_coefficient": "k*v^(k-1)*U",
+        "passed": true
+      },
+      {
+        "k": 4,
+        "first_difference_order": 3,
+        "leading_coefficient": "k*v^(k-1)*U",
+        "passed": true
+      },
+      {
+        "k": 5,
+        "first_difference_order": 1,
+        "leading_coefficient": "k*v^(k-1)*U",
+        "passed": true
+      },
+      {
+        "k": 5,
+        "first_difference_order": 2,
+        "leading_coefficient": "k*v^(k-1)*U",
+        "passed": true
+      },
+      {
+        "k": 5,
+        "first_difference_order": 3,
+        "leading_coefficient": "k*v^(k-1)*U",
+        "passed": true
+      },
+      {
+        "k": 6,
+        "first_difference_order": 1,
+        "leading_coefficient": "k*v^(k-1)*U",
+        "passed": true
+      },
+      {
+        "k": 6,
+        "first_difference_order": 2,
+        "leading_coefficient": "k*v^(k-1)*U",
+        "passed": true
+      },
+      {
+        "k": 6,
+        "first_difference_order": 3,
+        "leading_coefficient": "k*v^(k-1)*U",
+        "passed": true
+      }
+    ]
+  },
+  "completion_boundary": {
+    "u": "x+h*x^2",
+    "theta": "1+2*h*x",
+    "theta_squared": "1+4*h*u",
+    "binomial_jet_orders": [
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10
+    ],
+    "actual_extension": "quadratic",
+    "residue_extension_degree": 1,
+    "conclusion": "Root lies in completed image, not necessarily actual image."
+  },
+  "noncommutative_residue_boundary": {
+    "X": "diag(1,-1)",
+    "Y": "X+h*e12",
+    "squares_equal": "I",
+    "same_residue": true,
+    "distinct": true,
+    "conclusion": "Commutative residue is essential to root uniqueness."
+  },
+  "hashes": {
+    "QUANTUM_RADICAL_TOWERS_AND_LONG_OBSTRUCTION.md": "fca2b8deac0c686b56a4f326c12f74fb0bbd9ae67f0763fa0b076c89e19674fc",
+    "check_quantum_radical_towers.py": "73ce4c141394d3c941ad73a2baef73522cf8c1e9fd9285db1da489aa06c00edc",
+    "QUANTUM_DIVISION_AND_COMPLETION.md": "a00276fd4b746f090c14ca79c0c1c68182499a4417d69d2e3a5fb534a3ffffc9"
+  },
+  "coverage_boundary": "Exact cubic discriminants and squarefree certificate; finite monomial coverings and parameter-pole shears; noncentral Weyl root and finite first-difference controls; binomial completion jets and matrix residue countercontrol. Universal noncommutative Hensel existence/uniqueness, internal tower induction, scalar descent and all-coordinate-change transport use the written proof. No mixed Long mate or bounded lift.",
+  "independent_replay": false,
+  "formal_verification": false,
+  "external_review": false
+}

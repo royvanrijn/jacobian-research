@@ -1,0 +1,350 @@
+\documentclass[11pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb,amsthm,booktabs}
+\usepackage[hidelinks]{hyperref}
+\newtheorem{theorem}{Theorem}
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{corollary}[theorem]{Corollary}
+\newcommand{\mr}{\operatorname{mr}}
+\newcommand{\Z}{\mathbb Z}
+\newcommand{\F}{\mathbb F}
+\title{A determinant obstruction to tree Coxeter quotients and fishnet scope}
+\author{Internal research working proof}
+\date{17 November 2026}
+\begin{document}
+\maketitle
+
+The twenty-four sharp-four knots certified by seven-sheeted covers
+are outside the sufficient fishnet family in Blair--Kjuchukova--Pfaff,
+Proposition~1.4 \cite{bkp}.  The obstruction is an invariant of the
+knot, so it excludes every possible fishnet presentation satisfying
+that proposition.  Each such presentation would force the determinant
+to have at least three prime factors counted with multiplicity.
+The twenty-four determinants have at most two.
+
+The argument applies more generally to reflection quotients whose
+finite relation graph is a tree.  It does not exclude every fishnet
+construction, every twisted-link theorem, or all prior resolutions of
+these knots.  The group argument is a written proof; the finite
+determinant computation is internally replayed, without formal
+verification or external specialist review.  No global priority claim
+is made.
+
+\section{The orientation subgroup of a Coxeter presentation}
+
+Let $G$ be a connected finite simple graph with vertices
+$\{0,\ldots,r-1\}$.  Give each edge $e$ a finite integer label
+$m_e\ge2$, and set
+\[
+ W(G,m)=\langle a_0,\ldots,a_{r-1}\mid
+          a_v^2=1,\ (a_u a_v)^{m_{uv}}=1\text{ for }uv\in E(G)\rangle.
+\]
+There is \emph{no} relation on nonedges: their Coxeter exponent is
+infinite.  Thus an omitted edge in this finite-relation graph does
+not encode commuting generators.  Let $W^+$ be the kernel of the
+homomorphism $W\to C_2$ sending every $a_v$ to the nontrivial element.
+
+\begin{proposition}\label{prop:weighted}
+The abelianization of $W^+$ has the integral presentation
+\[
+ H_1(W^+;\Z)=\Z^{r-1}/
+ \langle m_{uv}(t_v-t_u):uv\in E(G)\rangle,
+ \qquad t_0=0.
+\]
+Its finite order is
+\[
+ h(G,m)=\gcd_{T\text{ spanning tree of }G}\ \prod_{e\in E(T)}m_e.
+\]
+If $G$ itself is a tree, then in fact
+\[
+                         W^+\cong *_{e\in E(G)} C_{m_e}.
+\]
+\end{proposition}
+\begin{proof}
+Before the edge relations, the even subgroup of $*_{v=0}^{r-1}C_2$
+is free on $t_v=a_0a_v$, $v\ne0$.  This follows directly by
+Reidemeister--Schreier rewriting with transversal $\{1,a_0\}$.
+Writing $t_0=1$ multiplicatively, an edge relation rewrites to
+$(t_u^{-1}t_v)^{m_{uv}}$.  Its other transversal rewrite is
+$(t_u t_v^{-1})^{m_{uv}}$, which is a conjugate of the inverse
+of the first: conjugate $(t_v^{-1}t_u)^{m_{uv}}$ by $t_u$.
+Hence only the first rewritten relation is needed for each edge.
+Abelianization gives the displayed weighted incidence presentation.
+
+Every maximal minor of the reduced incidence matrix is zero unless
+its selected edges form a spanning tree.  For a spanning tree the
+unweighted minor is $\pm1$, so the weighted minor is
+$\pm\prod_{e\in E(T)}m_e$.  The greatest common divisor of all
+maximal minors is the index of the full-rank relation lattice,
+giving $h(G,m)$.
+
+If $G$ is a rooted tree, orient its edges away from the root and
+put $x_{uv}=t_u^{-1}t_v$.  These edge words are a free basis:
+each $t_v$ is the ordered product of the $x_e$ along the root-to-$v$
+path.  Thus the only defining relation on $x_e$ is $x_e^{m_e}=1$,
+which proves the free-product assertion.
+\end{proof}
+
+\section{A necessary knot determinant condition}
+
+Suppose a knot group admits an epimorphism onto $W(G,m)$ taking
+meridians to reflections.  A reflection is conjugate to a standard
+Coxeter generator, so it is an involution of odd sign.  The map
+therefore factors through
+\[
+ \Pi_K=\pi_1(S^3\setminus K)/\langle\!\langle\mu^2\rangle\!\rangle
+\]
+and induces an epimorphism
+\[
+                       \pi_1(\Sigma_2K)\twoheadrightarrow W^+.
+\]
+Indeed the parity homomorphisms on source and target agree on every
+meridian, so the even subgroup maps onto the even subgroup.
+
+\begin{theorem}\label{thm:det}
+Every such reflection quotient satisfies
+\[
+                         h(G,m)\mid\det K.
+\]
+For a tree on $r$ vertices this gives
+\[
+ \prod_{e\in E(G)}m_e\mid\det K,
+ \qquad \Omega(\det K)\ge r-1,
+\]
+where $\Omega$ counts prime factors with multiplicity.  In particular,
+all tree labels are odd, and a knot with prime determinant has no
+tree reflection quotient of rank greater than two.
+\end{theorem}
+\begin{proof}
+Abelianization preserves the epimorphism.  The finite group
+$H_1(\Sigma_2K;\Z)$ has order $\det K$, while
+$H_1(W^+;\Z)$ has order $h(G,m)$ by
+Proposition~\ref{prop:weighted}.  The order of a finite quotient
+divides the source order.  For a tree there are $r-1$ labels, each
+at least two, so their product has at least $r-1$ prime factors
+counted with multiplicity.  A knot determinant is odd; hence no
+tree label can be even.
+\end{proof}
+
+The formula for general $G$ matters.  For a four-cycle with labels
+$3,5,7,11$, the four spanning-tree products have greatest common
+divisor one.  Such a cyclic relation graph supplies no determinant
+divisibility obstruction at all.  The tree conclusion must not be
+applied to arbitrary cyclic Coxeter diagrams.
+
+\begin{corollary}\label{cor:weight}
+If $3\nmid\det K$ and $K$ has a reflection quotient $W(G,m)$
+on $r$ vertices, then
+\[
+                           \sum_{e\in E(G)}m_e\ge5(r-1).
+\]
+Consequently every BBK twisted diagram of a knot with
+$3\nmid\det K$ has at least $5(b(K)-1)$ crossings.
+\end{corollary}
+\begin{proof}
+The abelianization of $W$ is the binary vector space whose basis
+is the set of connected components of the subgraph formed by the
+odd-labelled edges.  Since a knot group is normally generated by
+one meridian, this abelianization is cyclic, so that subgraph is
+connected.  Choose a spanning tree $T_o$ in it.
+
+By Theorem~\ref{thm:det}, $H_1(W^+;\F_3)=0$.  Reducing the
+weighted incidence matrix modulo three shows that the edges with
+$3\nmid m_e$ also form a connected graph.  Choose a spanning tree
+$T_3$ there.  Put $k=|E(T_o)\cap E(T_3)|$.
+An edge in the intersection has an odd label not divisible by
+three, and therefore has weight at least five.  Each of the other
+$r-1-k$ edges of $T_o$ has weight at least three, and each of the
+other $r-1-k$ edges of $T_3$ has weight at least two.  Summing over
+their union gives at least
+$5k+3(r-1-k)+2(r-1-k)=5(r-1)$.
+
+For a twisted diagram the edge weights are the absolute twist
+numbers, their sum is its number of crossings, and BBK identify
+$r$ with its knot's bridge number.
+\end{proof}
+
+All twenty-four determinants below are coprime to three, so any
+twisted diagram for one of these bridge-four knots would have at
+least fifteen crossings.  This statement does not assume that a
+twisted diagram minimizes crossing number and does not exclude
+a larger twisted diagram of a thirteen-crossing knot.
+
+\section{The exact fishnet theorem excluded here}
+
+In Definition~1.2 and Equation~(1.2) of \cite{bkp}, a regular fishnet
+of width $2b$ has nonzero twist parameters $t_{i,j}$, and $d_j$ is
+the positive greatest common divisor in column $j$.
+Proposition~1.4 assumes
+\[
+                         d_2,d_4,\ldots,d_{2b-2}>1
+\]
+and proves $\mr(K)=b(K)=b$.  Its proof, Section~2.1, constructs
+precisely the Coxeter quotient
+\[
+ \langle a_1,\ldots,a_b\mid a_i^2=1,
+              (a_i a_{i+1})^{d_{2i}}=1\ (1\le i<b)\rangle.
+\]
+This finite-relation graph is a path.  Nonconsecutive pairs have
+no imposed relation.
+
+\begin{corollary}\label{cor:fishnet}
+If a knot belongs to the sufficient family of Proposition~1.4 of
+\cite{bkp}, then
+\[
+                     \Omega(\det K)\ge b(K)-1.
+\]
+None of the twenty-four seven-sheet sharp-four knots belongs to
+that family, irrespective of the diagram or parameter choices.
+\end{corollary}
+\begin{proof}
+The quotient just displayed and Theorem~\ref{thm:det} prove the
+inequality.  For any of the twenty-four knots the independently
+certified bridge number is four.  Therefore any presentation
+satisfying Proposition~1.4 would have width eight and would force
+$\Omega(\det K)\ge3$.  The exact calculations below give at most two.
+\end{proof}
+
+The determinant values are grouped only to shorten the table; each
+literal PD is computed separately.
+\begin{center}
+\begin{tabular}{rlr}
+\toprule
+$\det K$ & Knot names & $\Omega$\\
+\midrule
+431 & $13a_{373},13a_{392}$ & 1\\
+433 & $13a_{375},13a_{391}$ & 1\\
+$19^2$ & $13a_{3264},13a_{3276}$ & 2\\
+359 & $13a_{3266},13a_{3275}$ & 1\\
+151 & $13n_{1005},13n_{1046}$ & 1\\
+$13\cdot17$ & $13n_{1006},13n_{1047}$ & 2\\
+59 & $13n_{1007},13n_{1048}$ & 1\\
+137 & $13n_{1011},13n_{1043}$ & 1\\
+211 & $13n_{1012},13n_{1044}$ & 1\\
+$5\cdot17$ & $13n_{1013},13n_{1045}$ & 2\\
+11 & $13n_{3842},13n_{3844},13n_{3855},13n_{3856}$ & 1\\
+\bottomrule
+\end{tabular}
+\end{center}
+
+\section{The nonunit plat gcd criterion is excluded as well}
+
+For a $2n$-plat with braid $B$, let $R=\widehat\rho(B)$ be the
+unreduced Burau representation evaluated at $t=-1$.  In the
+conventions of Moriah's coauthor survey, let the $i$th row of $L$
+be $e_{2i-1}^{\mathsf T}-e_{2i}^{\mathsf T}$ and the $i$th column
+of $M$ be $e_{2i-1}+e_{2i}$.  Theorem~4.20 of \cite{moriah},
+attributed there to Lustig--Moriah, says that if the greatest common
+divisor $\alpha$ of all entries of $LRM$ differs from one, then
+ordinary knot-group rank, exterior Heegaard genus and bridge number
+all equal $n$.  Additional determinant congruences in that theorem
+concern other conclusions and are not assumed here.
+
+\begin{corollary}\label{cor:plat}
+If a knot has a $2n$-plat for which $\alpha\ne1$, then
+$\Omega(\det K)\ge n-1$.  Consequently none of the twenty-four
+knots satisfies the nonunit plat gcd criterion of
+\cite[Theorem~4.20]{moriah}, in any plat presentation.
+\end{corollary}
+\begin{proof}
+Let $p$ be a prime dividing every entry of $LRM$; if all entries
+are zero, choose any prime.  Assign arbitrary colours in $\F_p$
+to the $n$ top cap pairs.  The map $M$ duplicates these colours,
+$R$ propagates them through the braid by the Fox crossing rule,
+and $L$ tests equality at the $n$ bottom cap pairs.  Hence the
+Fox-colouring vector space is $\ker(LRM\bmod p)$.  Under the
+divisibility assumption its dimension is $n$.
+
+The Fox/core-group interpretation gives
+\[
+ \dim_{\F_p}\operatorname{Col}_p(K)
+ =1+\dim_{\F_p}H_1(\Sigma_2K;\F_p).
+\]
+Thus $H_1(\Sigma_2K;\Z)$ has at least $n-1$ invariant factors
+divisible by $p$, so $p^{n-1}$ divides $\det K$ and
+$\Omega(\det K)\ge n-1$.
+
+For the twenty-four knots, the cited criterion would give
+$n=b(K)=4$, whereas the displayed determinants have
+$\Omega\le2$.  This is impossible.
+\end{proof}
+
+This excludes the exact matrix gcd theorem. Its scope includes, and
+extends beyond, the numerical criterion for generalized Montesinos knots.  It does
+not substitute for an audit of every geometric family called
+generalized Montesinos, or of results not requiring that gcd.
+
+\section{Scope and verification}
+
+The standard-library checker \texttt{verify\_fishnet\_scope.py}
+reads the positive literal diagrams from the retained seven-sheet
+inputs.  It constructs the integral Fox relation matrix
+$2x_{\rm over}-x_{\rm in}-x_{\rm out}=0$, fixes one arc colour,
+and computes all thirteen maximal minors by exact Bareiss
+elimination.  The greatest common divisor is the order of the
+presented finite abelian group $H_1(\Sigma_2K;\Z)$.
+The Fox/core-group interpretation is the classical one already
+sourced in the retained branched-cover proof \cite{core}.
+The checker separately factors every determinant by exact trial
+division and checks the tree and cyclic-graph controls above.
+
+These checks rely on the retained diagram identity and bridge-upper
+certificates for the named knots; they do not establish those
+bindings anew.  They establish the determinant obstruction for
+the supplied twenty-four knots, not an exhaustive Coxeter search.
+
+Remark~1.3 of \cite{bkp} says every link can be drawn as a loose
+fishnet.  Accordingly the conclusion is an exclusion from the
+specific gcd family, not an assertion that these knots admit no
+fishnet diagram.  Section~2.2 constructs other examples through
+sublink direct sums, connected-sum constructions, and interweaving
+fishnets.  Its displayed links and constructions require their own
+hypotheses; an arbitrary Coxeter graph arising there need not be
+a tree.  The determinant test applies whenever that finite-relation
+graph is a tree, but does not by itself exclude every extension
+described in that section.
+
+The explicit constructions in that section introduce no additional
+prime-knot cases beyond their input factors and the gcd family.
+The direct-sublink constructions in Section~2.2.1 and the interweaving
+construction in Section~2.2.2 retain at least two disjoint nonempty
+sublinks, so their outputs have more than one component.  Observation~3
+of Section~2.2.1 instead displays
+$L_1\#T(2,t)\#L_2$.  For this to be a knot, $t$ must be odd and
+both $L_i$ must be knots.  If the output is prime, all but at most
+one of the three connected-sum factors must be unknots.  The
+remaining factor is an input knot or the two-bridge torus knot.
+This accounts for the displayed operations; it is not a classification
+of every parameter generalization one might devise.
+
+For the twisted-link theorem of Baader--Blair--Kjuchukova
+\cite{bbk}, the Coxeter finite-relation graph is the weighted plane
+dual of a twisted checkerboard surface.  Tree duals are covered
+by Theorem~\ref{thm:det}; cyclic duals require the general weighted
+incidence criterion.  The present note makes no assumption that
+a twisted diagram realizes crossing number, and does not rule
+out cyclic dual graphs by a crossing-count heuristic.
+
+\begin{thebibliography}{9}
+\bibitem{bkp} R. Blair, A. Kjuchukova and E. Pfaff,
+Adding a suitable unknot to any link equates bridge number and
+meridional rank, Math. Proc. Cambridge Philos. Soc. 181 (2026),
+1339--1355. Definition~1.2, Equation~(1.2), Proposition~1.4
+and its Section~2.1 proof; Section~2.2 separately.
+\url{https://doi.org/10.1017/S030500412610214X}.
+\bibitem{bbk} S. Baader, R. Blair and A. Kjuchukova,
+Coxeter groups and meridional rank of links,
+Math. Ann. 379 (2021), 1533--1551.
+\url{https://doi.org/10.1007/s00208-020-02124-z}.
+\bibitem{moriah} Y. Moriah, Heegaard splittings of knot exteriors,
+Geometry \& Topology Monographs 12 (2007), 191--232,
+Theorem~4.20 and its preceding definitions, reporting
+Lustig--Moriah.  The coauthor survey's exact criterion is imported;
+the full original proof is not independently audited here.
+\url{https://doi.org/10.2140/gtm.2007.12.191}.
+\bibitem{core} D. Silver, L. Traldi and S. Williams,
+Core groups, J. Knot Theory Ramifications 33 (2024), 2450013,
+introduction and Section~7, crediting Kelly and Wada.
+\url{https://arxiv.org/abs/2311.02048v2}.
+\end{thebibliography}
+\end{document}

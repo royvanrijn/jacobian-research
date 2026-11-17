@@ -1,0 +1,158 @@
+{
+  "status": "passed",
+  "scope": "Exact coefficient and constant controls, finite content controls, and numerical independent area checks; not a full analytic proof replay or external review.",
+  "python": "3.12.3",
+  "sympy": "1.14.0",
+  "mpmath": "1.3.0",
+  "checker_sha256": "863a0147c9c4f9e814e72e525370428eba1b4d729b6f90474472be19c26c9b6e",
+  "source_sha256": "0e0be0cf276c9358761227e33153230083df912fb90849bf9736960733e6838e",
+  "check_count": 32,
+  "checks": [
+    {
+      "name": "coordinate_u",
+      "passed": true
+    },
+    {
+      "name": "coordinate_b",
+      "passed": true
+    },
+    {
+      "name": "coordinate_c",
+      "passed": true
+    },
+    {
+      "name": "coercive_combination",
+      "passed": true
+    },
+    {
+      "name": "primitive_content_bounded_control",
+      "passed": true,
+      "coprime_pairs": 12174
+    },
+    {
+      "name": "primitive_content_large_valuation_controls",
+      "passed": true,
+      "coprime_pairs": 1920
+    },
+    {
+      "name": "two_adic_weight",
+      "passed": true
+    },
+    {
+      "name": "three_adic_weight",
+      "passed": true
+    },
+    {
+      "name": "total_valuation_weight",
+      "passed": true
+    },
+    {
+      "name": "full_euler_prefactor",
+      "passed": true
+    },
+    {
+      "name": "log_and_involution_factors_cancel",
+      "passed": true
+    },
+    {
+      "name": "AM_GM_threshold",
+      "passed": true
+    },
+    {
+      "name": "lower_breakpoint",
+      "passed": true
+    },
+    {
+      "name": "upper_breakpoint",
+      "passed": true
+    },
+    {
+      "name": "breakpoint_order",
+      "passed": true
+    },
+    {
+      "name": "second_coordinate_dominated_positive",
+      "passed": true
+    },
+    {
+      "name": "logarithmic_integral_discriminant",
+      "passed": true
+    },
+    {
+      "name": "arctangent_integral_discriminant",
+      "passed": true
+    },
+    {
+      "name": "closed_area_matches_R_integral",
+      "passed": true
+    },
+    {
+      "name": "independent_polar_area",
+      "passed": true
+    },
+    {
+      "name": "both_parameter_signs_positive",
+      "passed": true
+    },
+    {
+      "name": "rational_point_cubic_height_controls",
+      "passed": true,
+      "coprime_pairs": 1959
+    },
+    {
+      "name": "injectivity_normalized_quadratic_form_odd",
+      "passed": true
+    },
+    {
+      "name": "injectivity_RHS_valuation_odd",
+      "passed": true
+    },
+    {
+      "name": "global_target_coordinate_b",
+      "passed": true
+    },
+    {
+      "name": "global_target_coordinate_c",
+      "passed": true
+    },
+    {
+      "name": "global_primitive_content_controls",
+      "passed": true,
+      "coprime_pairs": 12175
+    },
+    {
+      "name": "global_two_adic_weight",
+      "passed": true
+    },
+    {
+      "name": "global_three_adic_weight",
+      "passed": true
+    },
+    {
+      "name": "global_constant_weight",
+      "passed": true
+    },
+    {
+      "name": "rational_zero_target_height",
+      "passed": true
+    },
+    {
+      "name": "independent_global_cubic_area",
+      "passed": true
+    }
+  ],
+  "numerical_controls": {
+    "precision_decimal_digits": 60,
+    "area_closed": "0.000099194120294696963960650998109073935",
+    "area_R_integral": "0.000099194120294696963960650998109073935",
+    "area_polar": "0.000099194120294696963960650998109073935",
+    "negative_parameter_area": "0.000021234825637713962380165351782682611",
+    "positive_parameter_area": "0.000077959294656983001580485646326391324",
+    "global_cubic_area_t": "0.027254434951275784672701288471866613",
+    "global_cubic_area_polar": "0.027254434951275784672701288471866613",
+    "global_leading_constant": "0.117131634810207556294620808264",
+    "Euler_prime_cutoff": 100000,
+    "constant_Euler_prefix": "0.000897726547630154481024159542224",
+    "Euler_relative_tail_bound": "1.00000000005e-10"
+  }
+}

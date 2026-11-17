@@ -1,4 +1,4 @@
-"""New even-moment and trace-discriminant controls; no retained replay."""
+"""Even-moment controls; current source replay, no predecessor checker replay."""
 import hashlib,json,time
 from pathlib import Path
 
@@ -71,8 +71,9 @@ zero('point target Q scaling degree',9*5-(4*9+9))
 c=json.loads((H/'sources/even-moment-lattices-context.json').read_text())
 for p,h in c['retained_proof_and_source_sha256'].items():check('byte '+p,hashlib.sha256((R/p).read_bytes()).hexdigest()==h)
 yes={'global_even_integer_moment_formula_proved','moment_lattices_finite_base_projective','exact_terminal_moment_and_multiplication_criterion_proved','moment_trace_duals_and_discriminant_lengths_proved','uniform_sixth_moment_trace_perfection_criterion_proved','sixth_moment_defect_retains_every_positive_ramification_index','all_parameter_Laurent_norm_and_discriminant_controls_supplied','finite_cover_non_even_point_integrability_control_supplied'}
+yes.update({'new_external_theorem_imported', 'registered_mathematical_checker_replayed'})
 for p,x in c['scope_flags'].items():check('scope '+p,x is (p in yes))
 proof=H/'EVEN_MOMENT_LATTICES_AND_SIXTH_MOMENT_TRACE_TEST.md'
-out=dict(outcome='PASS',check_count=len(checks),algebraic_controls=len(algebra),elapsed_seconds=round(time.perf_counter()-started,3),proof_sha256=hashlib.sha256(proof.read_bytes()).hexdigest(),checker_sha256=hashlib.sha256(Path(__file__).read_bytes()).hexdigest(),checks=checks,scope_flags=c['scope_flags'],registered_mathematical_checkers_replayed=False,independent_replay=False,formal_verification=False,external_review=False)
+out=dict(outcome='PASS',check_count=len(checks),algebraic_controls=len(algebra),elapsed_seconds=round(time.perf_counter()-started,3),proof_sha256=hashlib.sha256(proof.read_bytes()).hexdigest(),checker_sha256=hashlib.sha256(Path(__file__).read_bytes()).hexdigest(),checks=checks,scope_flags=c['scope_flags'],predecessor_mathematical_checkers_replayed=False,internal_current_checker_replay=True,independent_replay=False,formal_verification=False,external_review=False)
 (_check_output(H/'receipt-even-moment-lattices.json')).write_text(json.dumps(out,indent=2)+'\n')
 print(json.dumps({p:out[p] for p in ['outcome','check_count','algebraic_controls','elapsed_seconds']}))

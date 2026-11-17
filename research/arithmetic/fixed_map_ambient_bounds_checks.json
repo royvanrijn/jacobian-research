@@ -1,0 +1,181 @@
+{
+  "status": "passed",
+  "python": "3.12.3",
+  "sympy": "1.14.0",
+  "checker_sha256": "4367f9ef1578ee01a6191f2326f5be72120f2b671e15730270083b0b79113b86",
+  "proof_sha256": "6a04b640486ff0817a58ca45d17f966682a3c1933eb4f93c4e028d772b6a3632",
+  "primary_sources": {
+    "zywina-quantitative-hit.pdf": "747448eb7e431066b9d0008486ac7032aaccc0aef88e643efb687befbb466d19",
+    "buggenhout-et-al-thin-projective-2506.13471v2.pdf": "b17dcc202fbacce051db03367f413003f8dbffbea1de3baa6b4a07e1147e6b77"
+  },
+  "check_count": 34,
+  "checks": [
+    {
+      "name": "S5_order",
+      "passed": true
+    },
+    {
+      "name": "quadratic_block_stabilizer",
+      "passed": true
+    },
+    {
+      "name": "resolvent_block_stabilizer",
+      "passed": true
+    },
+    {
+      "name": "all_H_permutations_even",
+      "passed": true
+    },
+    {
+      "name": "H_is_subgroup",
+      "passed": true
+    },
+    {
+      "name": "two_block_H_orbits",
+      "passed": true
+    },
+    {
+      "name": "quadratic_factor_cover_degree",
+      "passed": true
+    },
+    {
+      "name": "sign_refined_cover_degree",
+      "passed": true
+    },
+    {
+      "name": "conjugacy_union_exact",
+      "passed": true
+    },
+    {
+      "name": "allowed_class_sizes",
+      "passed": true
+    },
+    {
+      "name": "fixed_point_subset",
+      "passed": true
+    },
+    {
+      "name": "Zywina_Hasse_exponents",
+      "passed": true
+    },
+    {
+      "name": "quadratic_factor_action_transitive",
+      "passed": true
+    },
+    {
+      "name": "generic_monic_degree_five",
+      "passed": true
+    },
+    {
+      "name": "quadratic_tilt_nonzero_linear_term",
+      "passed": true
+    },
+    {
+      "name": "symbolic_factor_discriminant_identity",
+      "passed": true
+    },
+    {
+      "name": "original_line_square_discriminant",
+      "passed": true
+    },
+    {
+      "name": "scalar_discriminant_power_is_square",
+      "passed": true
+    },
+    {
+      "name": "primitive_plane_count_B1",
+      "passed": true
+    },
+    {
+      "name": "primitive_plane_count_B2",
+      "passed": true
+    },
+    {
+      "name": "primitive_plane_count_B3",
+      "passed": true
+    },
+    {
+      "name": "primitive_plane_count_B4",
+      "passed": true
+    },
+    {
+      "name": "primitive_plane_count_B5",
+      "passed": true
+    },
+    {
+      "name": "primitive_plane_count_B6",
+      "passed": true
+    },
+    {
+      "name": "primitive_plane_count_B7",
+      "passed": true
+    },
+    {
+      "name": "primitive_plane_count_B8",
+      "passed": true
+    },
+    {
+      "name": "primitive_plane_count_B9",
+      "passed": true
+    },
+    {
+      "name": "primitive_plane_count_B10",
+      "passed": true
+    },
+    {
+      "name": "primitive_plane_count_B11",
+      "passed": true
+    },
+    {
+      "name": "primitive_plane_count_B12",
+      "passed": true
+    },
+    {
+      "name": "primitive_plane_count_B13",
+      "passed": true
+    },
+    {
+      "name": "primitive_plane_count_B14",
+      "passed": true
+    },
+    {
+      "name": "primitive_plane_count_B15",
+      "passed": true
+    },
+    {
+      "name": "primitive_plane_count_B16",
+      "passed": true
+    }
+  ],
+  "S5_class_sizes": {
+    "(1, 1, 1, 1, 1)": 1,
+    "(1, 1, 1, 2)": 10,
+    "(1, 1, 3)": 20,
+    "(1, 2, 2)": 15,
+    "(1, 4)": 30,
+    "(2, 3)": 20,
+    "(5,)": 24
+  },
+  "plane_counts": [
+    {
+      "B": 1,
+      "rational_plane_targets": 9
+    },
+    {
+      "B": 4,
+      "rational_plane_targets": 265
+    },
+    {
+      "B": 8,
+      "rational_plane_targets": 1929
+    },
+    {
+      "B": 16,
+      "rational_plane_targets": 14369
+    }
+  ],
+  "scope": "Exact symbolic and complete finite permutation controls, and primitive plane counts through B16. No proof replay of the imported monodromy, sieve, or projective thin-set theorems; no asymptotic inferred from finite data.",
+  "formal_verification": false,
+  "independent_whole_proof_replay": false,
+  "external_review": false
+}

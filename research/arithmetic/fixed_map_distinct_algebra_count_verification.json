@@ -1,0 +1,191 @@
+{
+  "bounds": {
+    "cube_multiplier_maximum": 42,
+    "finite_prime_area_cutoff": 31,
+    "full_class_maximum_height": 1000,
+    "global_coefficient_bound": 80,
+    "maximum_height": 32000,
+    "sieve_limit": 3556,
+    "squarefree_pair_bound": 500
+  },
+  "checker_sha256": "3e651a7938308f92e2759c3a807ca381e4b2514a2b3fe8ada02635f6d46ae2b9",
+  "checks": {
+    "complete_class_enumerations": 3,
+    "constant_algebra": 10,
+    "constructive_optimal_heights": 36,
+    "cube_class_representatives": 8943,
+    "exact_finite_prime_area_sums": 5,
+    "global_coprime_convolution": 6400,
+    "optimal_height_cube_moves": 17640,
+    "rejection_controls": 3,
+    "signed_heights": 5962,
+    "twisted_euler_coefficients": 147
+  },
+  "command": "python3 research/arithmetic/verify_fixed_map_distinct_algebra_count.py --pair-bound 500 --coefficient-bound 80 --maximum-height 32000",
+  "enumeration": [
+    {
+      "distinct_restricted_classes": 18,
+      "height": 1000,
+      "rectangle_pairs_including_cube": 21,
+      "square_pairs_including_cube": 5
+    },
+    {
+      "distinct_restricted_classes": 1132,
+      "height": 10000,
+      "rectangle_pairs_including_cube": 1327,
+      "square_pairs_including_cube": 389
+    },
+    {
+      "distinct_restricted_classes": 10014,
+      "height": 32000,
+      "rectangle_pairs_including_cube": 11754,
+      "square_pairs_including_cube": 3479
+    }
+  ],
+  "exact_constants": {
+    "restricted_coefficient": "55/55296",
+    "split_local_product": "1-3/p^2+2/p^3",
+    "union_area": "55/9216"
+  },
+  "external_review": false,
+  "finite_prime_coefficients": [
+    {
+      "C_P_over_kappa_sf": "31/3888",
+      "primes": []
+    },
+    {
+      "C_P_over_kappa_sf": "1747/214326",
+      "primes": [
+        7
+      ]
+    },
+    {
+      "C_P_over_kappa_sf": "26155/3184272",
+      "primes": [
+        7,
+        13
+      ]
+    },
+    {
+      "C_P_over_kappa_sf": "18113057423/2196736908912",
+      "primes": [
+        7,
+        13,
+        19
+      ]
+    },
+    {
+      "C_P_over_kappa_sf": "2157454787546027/261244190971223460",
+      "primes": [
+        7,
+        13,
+        19,
+        31
+      ]
+    }
+  ],
+  "formal_verification": false,
+  "full_class_enumeration": [
+    {
+      "direct_and_normal_form_classes": 1,
+      "finite_prime_classes": [
+        {
+          "classes": 1,
+          "primes": []
+        },
+        {
+          "classes": 1,
+          "primes": [
+            7
+          ]
+        },
+        {
+          "classes": 1,
+          "primes": [
+            7,
+            13
+          ]
+        },
+        {
+          "classes": 1,
+          "primes": [
+            7,
+            13,
+            19,
+            31
+          ]
+        }
+      ],
+      "height": 100
+    },
+    {
+      "direct_and_normal_form_classes": 14,
+      "finite_prime_classes": [
+        {
+          "classes": 13,
+          "primes": []
+        },
+        {
+          "classes": 14,
+          "primes": [
+            7
+          ]
+        },
+        {
+          "classes": 14,
+          "primes": [
+            7,
+            13
+          ]
+        },
+        {
+          "classes": 14,
+          "primes": [
+            7,
+            13,
+            19,
+            31
+          ]
+        }
+      ],
+      "height": 300
+    },
+    {
+      "direct_and_normal_form_classes": 123,
+      "finite_prime_classes": [
+        {
+          "classes": 111,
+          "primes": []
+        },
+        {
+          "classes": 119,
+          "primes": [
+            7
+          ]
+        },
+        {
+          "classes": 123,
+          "primes": [
+            7,
+            13
+          ]
+        },
+        {
+          "classes": 123,
+          "primes": [
+            7,
+            13,
+            19,
+            31
+          ]
+        }
+      ],
+      "height": 1000
+    }
+  ],
+  "independent_whole_proof_replay": false,
+  "proof_sha256": "ea9c1186234ac8e88c410353691aaf6f15553cc045344f844cc838ecad932c07",
+  "python": "3.12.3",
+  "scope": "Exact bounded Euler, coprimality convolution, cube-class and height controls. Cube-class computations do not independently prove the pure-cubic field-isomorphism theorem; finite counts do not prove the asymptotic or either uniform tail bound. The finite-prime constants are exact area sums; bounded cube searches do not prove the global minimum-height theorem.",
+  "status": "pass"
+}

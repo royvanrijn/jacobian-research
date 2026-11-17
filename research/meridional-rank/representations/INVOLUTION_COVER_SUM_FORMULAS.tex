@@ -1,0 +1,262 @@
+\documentclass[11pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage[hidelinks]{hyperref}
+\newtheorem{theorem}{Theorem}
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{corollary}[theorem]{Corollary}
+\newcommand{\mr}{\operatorname{mr}}
+\newcommand{\rank}{\operatorname{rank}}
+\newcommand{\I}{\mathcal I}
+\newcommand{\Q}{\mathbb Q}
+\title{Additivity of normalized involutory cover bounds}
+\author{Internal research working proof}
+\date{17 November 2026}
+\begin{document}
+\maketitle
+
+The arbitrary-cycle cover bound can lose information when it is rounded
+before taking connected sums. Keeping its unrounded value gives an
+exactly additive quantity for involutory meridian actions. The gluing
+construction scales the number of moving pairs using a complete
+bipartite graph. In particular, one of the twenty-four retained
+seven-sheet sharp knots can be joined to any number of simple-cover
+sharp knots without losing sharpness. This proves infinite families of
+meridional-rank equalities from those certificates. These are written
+working proofs, without a claim of worldwide priority, formal
+verification, or external mathematical review.
+
+\section{Normalized bounds}
+
+For a knot $K$, consider finite transitive actions
+$\rho:\pi_1(S^3\setminus K)\to S_n$, $n\ge2$, in which meridians are
+nonidentity involutions. Write $Y_\rho$ for the connected branched cover.
+If the meridian has $\delta$ moving pairs and $n-2\delta$ fixed sheets,
+put
+\[
+ q(\rho)=\frac{n-1+\rank\pi_1(Y_\rho)}{\delta},\qquad
+ q_k(\rho)=\frac{n-1+b_1(Y_\rho;k)}{\delta},
+\]
+where $k$ is a fixed field. Define the real numbers
+\[
+       \I(K)=\sup_\rho q(\rho),\qquad
+       \I_k(K)=\sup_\rho q_k(\rho).
+\]
+Double covers supply nonempty sets. The retained arbitrary-cycle
+bound gives
+\[
+       1\le \I_k(K)\le\I(K)\le\mr(K)\le b(K).
+\]
+Thus the suprema are finite; their attainment and rationality are not
+assumed. The simple-cover rank invariant satisfies $C(K)\le\I(K)$.
+The corresponding integer lower bound is $\lceil\I(K)\rceil$; it is at
+most the retained arbitrary-cycle invariant $D(K)$.
+
+\begin{theorem}\label{thm:additivity}
+For any classical knots $K,L$ and any fixed field $k$,
+\[
+ \I(K\#L)=\I(K)+\I(L)-1,\qquad
+ \I_k(K\#L)=\I_k(K)+\I_k(L)-1.
+\]
+The assertion concerns these normalized cover invariants. It does not
+assert unrestricted additivity of meridional rank or of $D$.
+\end{theorem}
+
+\section{An arbitrary coloring of a connected sum}
+
+Fix a transitive $n$-sheet involutory coloring of $K\#L$ and identify
+the two meridians in its amalgamated knot-group presentation.
+Let their common permutation have $\delta$ moving pairs and
+$c=n-\delta$ cycles. The restrictions to the two summand groups may
+be disconnected. Denote their sheet orbits by $O_{j\alpha}$, for
+$j=1,2$, and let $N_j$ be the number of orbits. Write
+$n_{j\alpha}=|O_{j\alpha}|$, $\delta_{j\alpha}$ for the number of
+moving pairs in that orbit, and $Y_{j\alpha}$ for its branched cover.
+If $\delta_{j\alpha}=0$, normal generation by a meridian implies
+that the orbit is a singleton and its cover is $S^3$. Such an orbit
+has $n_{j\alpha}-1+\rank\pi_1(Y_{j\alpha})=0$.
+For each $j$,
+\[
+        \sum_\alpha n_{j\alpha}=n,\qquad
+        \sum_\alpha\delta_{j\alpha}=\delta.
+\]
+
+The decomposing sphere intersects the knot twice. Its lift consists
+of $c$ spheres: one for each fixed sheet and one double cover for each
+moving pair. A trivial proper arc similarly lifts to $c$ balls.
+Capping the summand covers along these balls gives the manifolds
+$Y_{j\alpha}$. The graph recording their sphere gluings has
+$N_1+N_2$ vertices and $c$ edges and is connected, since the original
+coloring is transitive. Its first Betti number is
+\[
+                         \beta=c-N_1-N_2+1.
+\]
+Consequently
+\[
+ Y\cong\left(\mathop{\#}_{j,\alpha}Y_{j\alpha}\right)
+          \#\left(\mathop{\#}^{\beta}S^1\times S^2\right).
+\]
+This is the same punctured-ball gluing argument as for the retained
+simple-cover formula; it uses no geometric recognition of the
+summand covers.
+
+Van Kampen and the classical Grushko theorem \cite[Theorem 1.B.5]{stallings}
+give
+\[
+ \rank\pi_1(Y)=\sum_{j,\alpha}\rank\pi_1(Y_{j\alpha})+\beta.
+\]
+Thus, writing $Q(Y)=n-1+\rank\pi_1(Y)$, one obtains the exact identity
+\begin{equation}\label{eq:numerator}
+ Q(Y)=\sum_{j,\alpha}
+  \bigl(n_{j\alpha}-1+\rank\pi_1(Y_{j\alpha})\bigr)-\delta.
+\end{equation}
+For the scalar version, the same identity holds with first Betti
+numbers and does not require Grushko's theorem.
+
+For $\delta_{j\alpha}>0$, each term in the sum is at most
+$\delta_{j\alpha}\I(K_j)$. Divide \eqref{eq:numerator} by $\delta$
+and use the displayed sums to obtain
+\[
+                         q(\rho)\le\I(K)+\I(L)-1.
+\]
+Taking suprema proves the upper inequality in Theorem~\ref{thm:additivity}.
+The scalar upper inequality follows identically with the same field
+on every component.
+
+\section{Scaling the moving pairs gives the reverse inequality}
+
+Choose arbitrary connected involutory covers of $K$ and $L$, with
+moving-pair counts $a,b$ and numerator values $Q_K,Q_L$.
+Put $g=\gcd(a,b)$ and $\delta=ab/g$.
+Take $b/g$ disjoint copies of the first cover and $a/g$ copies of
+the second. Their meridian permutations each have $\delta$ moving
+pairs. Arrange their common moving sheets as follows.
+
+Make the complete bipartite multigraph with $b/g$ left vertices,
+$a/g$ right vertices, and $g$ parallel edges between each left-right
+pair. Label its $ab/g=\delta$ edges by distinct pairs of sheets.
+Each left vertex has degree $a$, and each right vertex degree $b$.
+Assign the moving pairs of its corresponding cover copy to its
+incident edges. This makes the two meridian permutations identical.
+Give every nonmoving sheet of every copy a separate additional
+label, and let the other summand act trivially on that label.
+Both restricted actions now live on one finite set of sheets.
+They agree on the amalgamated meridian and define a coloring of
+$K\#L$.
+
+Each selected copy acts transitively on its active sheets. Two
+copies at the endpoints of a multigraph edge share that moving
+pair, so their active sets meet. The complete bipartite graph is
+connected, including when one side has one vertex. Hence the
+combined action is transitive. Its restriction components are
+exactly the selected copies and the added trivial singleton covers.
+By \eqref{eq:numerator},
+\[
+ \frac{Q(Y)}{\delta}
+ =\frac{(b/g)Q_K+(a/g)Q_L-\delta}{\delta}
+ =\frac{Q_K}{a}+\frac{Q_L}{b}-1.
+\]
+Choose the original covers arbitrarily close to the two suprema.
+This gives the reverse inequality and proves the group-rank identity.
+The construction and numerator identity also prove the scalar one.
+No compactness, bounded-degree enumeration, or maximizing cover is
+needed.
+
+\section{A sharp connected-sum consequence}
+
+\begin{corollary}\label{cor:onefraction}
+Suppose $K$ has a transitive involutory cover whose normalized rank or
+fixed-field scalar score exceeds $b(K)-1$, and let
+$J_1,\ldots,J_s$ admit matching simple-cover lower and bridge upper
+certificates $C(J_i)=b(J_i)=b_i$.
+Then
+\[
+ \mr(K\#J_1\#\cdots\#J_s)
+   =b(K\#J_1\#\cdots\#J_s)
+   =b(K)+\sum_i(b_i-1).
+\]
+For the scalar version, use simple-cover scalar certificates over the
+same field as the score on $K$.
+\end{corollary}
+\begin{proof}
+Theorem~\ref{thm:additivity} and $\I(J_i)\ge C(J_i)=b_i$ give a
+normalized score strictly greater than
+$b(K)-1+\sum_i(b_i-1)$. Since meridional rank is an integer, its lower
+bound is at least $b(K)+\sum_i(b_i-1)$. Joining bridge positions gives
+the matching upper bound. The scalar assertion is identical.
+\end{proof}
+
+For each of the twenty-four retained sharp-four knots in the
+seven-sheet input, the cover group is $C_3$ and its normalized
+score is $7/2$. Its bridge upper bound is four. Therefore, for any
+simple-cover-sharp summands as in Corollary~\ref{cor:onefraction},
+\[
+              \mr(K\#J_1\#\cdots\#J_s)
+               =b(K\#J_1\#\cdots\#J_s)
+               =4+\sum_i(b_i-1).
+\]
+In particular, for every such $K$ and every $s\ge0$,
+\[
+                      \mr(K\#^{s}T(2,3))
+                       =b(K\#^{s}T(2,3))=4+s.
+\]
+The trefoil's double branched cover has group $C_3$, giving its
+simple-cover bound two. This is an infinite equality family obtained
+from the retained finite certificates, without a global priority claim.
+
+An explicit cover avoids even taking suprema in this application.
+Choose a sharp simple cover of $J_i$ on $r_i$ sheets with group $G_i$.
+Use two copies on disjoint moving pairs. Align those two pairs with
+the two moving pairs of the seven-sheet cover of $K$, and give all
+other sheets new labels. The total degree is
+\[
+                         n=7+2\sum_i(r_i-2),\qquad\delta=2.
+\]
+The lifted sphere graph is a tree, so the cover group is
+\[
+               C_3*\mathop{*}_i(G_i*G_i).
+\]
+Its normalized score is exactly
+$7/2+\sum_i(b_i-1)$, whose ceiling is the asserted equality.
+For $s$ trefoils the degree stays seven and the cover group is the
+free product of $2s+1$ copies of $C_3$.
+
+For several seven-sheet sharp factors, the same invariant only gives
+\[
+       \mr(K_1\#\cdots\#K_t)
+                    \ge\left\lceil\frac{5t+2}{2}\right\rceil.
+\]
+Their available bridge upper bound is $3t+1$. For $t\ge2$ the two
+bounds differ. Exact normalized additivity explains this rounding
+loss; it does not prove MRC for arbitrary sums of those factors.
+
+\section{Finite controls and limits}
+
+The accompanying checker verifies the bipartite pair assignment for
+all $1\le a,b\le8$, using component intersections to test
+transitivity and the sphere-graph formula to check the normalized
+numerator identity. It also constructs literal presentations of the meridian-square
+quotients of amalgamated knot groups from the retained diagram for
+$13a_{373}$ and zero, one, two and three trefoil factors. Imposing
+meridian squares first is valid because these loops already die in
+the completed branched covers; fixed-sheet meridian cycles are still
+filled explicitly. The full lifted-edge
+homology construction gives mod-three Betti numbers $1,3,5,7$,
+respectively, and resulting lower bounds $4,5,6,7$. These are finite
+controls of the construction; the uniform statements require the
+written gluing, supremum and classical rank arguments above.
+
+The source knot equalities and diagram identities remain those of the
+retained seven-sheet certificates. These arguments do not audit their
+worldwide priority, identify all possible involutory covers, or settle
+the full Meridional Rank Conjecture. In particular no assumption that
+$\I(K)=7/2$ for a retained seed is made: its known cover only gives
+$\I(K)\ge7/2$.
+
+\begin{thebibliography}{9}
+\bibitem{stallings} J. Stallings, \emph{Group Theory and
+Three-Dimensional Manifolds}, Yale University Press (1971),
+Theorem 1.B.5, printed p.~6.
+\url{https://webhomes.maths.ed.ac.uk/~v1ranick/papers/stallings1.pdf}.
+\end{thebibliography}
+\end{document}
